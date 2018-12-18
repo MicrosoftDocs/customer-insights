@@ -2,5 +2,13 @@
   href: index.md
   - name: Testing1
     href: developers/quick-starts/index.md  
-  - name: Testing2
-    href: developers/quick-starts/index.md  
+  - name: Find and view data
+    href: 1_view.md
+  - name: Use dimensions to slice and dice
+    href: 2_slice.md
+  - name: Use transforms for more insights
+    href: 3_transform.md
+  - name:
+    href:
+  - name:
+    href:
