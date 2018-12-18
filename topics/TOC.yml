@@ -1,4 +1,4 @@
-- name: Index
+- name: Main
   href: index.md
   - name: Find and view data
     href: developers/quick-starts/1_view.md
