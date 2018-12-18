@@ -1,7 +1,5 @@
 - name: Index
   href: index.md
-  - name: Testing
-    href: developers/quick-starts/index.md  
   - name: Find and view data
     href: developers/quick-starts/1_view.md
   - name: Use dimensions to slice and dice
