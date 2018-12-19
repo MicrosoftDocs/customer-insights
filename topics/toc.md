@@ -7,7 +7,7 @@
 ### [[30s] How do I start?](xref:developers/quick-starts/1_view.md)
 ## Explore data
 ### [Find and view data TEST2](xref:developers/quick-starts/1_view)
-### [Use dimensions to slice and dice TEST2](xref:developers/quick-starts/2_slice)
+### [Use dimensions to slice and dice TEST3](xref:developers/quick-starts/2_slice)
 ### [Use transforms for more insights](xref:developers/quick-starts/3_transform)
 ### [Ask our AI for pointers](xref:developers/quick-starts/4_askai)
 ### [Draw conclusions](xref:/developers/get-started/5_insight)
