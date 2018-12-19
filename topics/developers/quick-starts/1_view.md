@@ -1,6 +1,6 @@
-----
+---
 uid: developers/quick-starts/1_view
-----
+---
 
 ## Find the dashboard! 
 
