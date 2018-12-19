@@ -10,7 +10,7 @@
 ### [2. Slice and dice data](xref:developers/quick-starts/2_slice)
 ### [3. Transform data](xref:developers/quick-starts/3_transform)
 ### [4. Ask AI](xref:developers/quick-starts/4_askai)
-### [5. Insight](xref:/developers/get-started/5_insight)
+### [5. Insight](xref:developers/get-started/5_insight)
 ## Create your own metrics
 ### [1. Collect more signals](xref:developers/quick-starts/1_view)
 ### [2. Create a metric](xref:developers/quick-starts/1_view)
