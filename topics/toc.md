@@ -6,7 +6,7 @@
 ### [[30s] How is it structured?](xref:developers/quick-starts/1_view.md)
 ### [[30s] How do I start?](xref:developers/quick-starts/1_view.md)
 ## Explore data
-### [Find and view data](xref:developers/quick-starts/1_view)
+### [Find and view data TEST](xref:developers/quick-starts/1_view)
 ### [Use dimensions to slice and dice](xref:developers/quick-starts/2_slice)
 ### [Use transforms for more insights](xref:developers/quick-starts/3_transform)
 ### [Ask our AI for pointers](xref:developers/quick-starts/4_askai)
