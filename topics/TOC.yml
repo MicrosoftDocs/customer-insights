@@ -1,2 +1,12 @@
 - name: Index
   href: index.md
+- name: Find and view data
+  href: developers/quick-starts/1_view.md
+- name: Use dimensions to slice and dice
+  href: developers/quick-starts/2_slice.md
+- name: Use transforms for more insights
+  href: developers/quick-starts/3_transform.md
+- name: Ask our AI for pointers
+  href: developers/quick-starts/4_askai.md
+- name: Draw conclusions
+  href: developers/quick-starts/5_insight.md
