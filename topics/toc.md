@@ -1,10 +1,10 @@
 # Quick starts
 ## Aria in 3 minutes 
-### [[30s] What is Aria?](xref:developers/quick-starts/1_view.md)
-### [[1m] How is it being used?](xref:developers/quick-starts/1_view.md)
-### [[30s] Who uses Aria?](xref:developers/quick-starts/1_view.md)
-### [[30s] How is it structured?](xref:developers/quick-starts/1_view.md)
-### [[30s] How do I start?](xref:developers/quick-starts/1_view.md)
+### [[30s] What is Aria?](xref:developers/quick-starts/projects)
+### [[1m] How is it being used?](xref:developers/quick-starts/access-roles)
+### [[30s] Who uses Aria?](xref:developers/quick-starts/service-limits)
+### [[30s] How is it structured?](xref:developers/quick-starts/adding-appid)
+### [[30s] How do I start?](xref:developers/quick-starts/adding-appid)
 ## Explore data
 ### [Find and view data TEST2](xref:developers/quick-starts/1_view)
 ### [Use dimensions to slice and dice TEST4](xref:developers/quick-starts/2_slice)
@@ -14,7 +14,7 @@
 
 # Tutorial 
 ## Overview 
-## Collect signals 
+## Create your own metrics 
 ### [See raw data](xref:/developers/how-to/1_raw_data)
 ### [Send CSV data](xref:/developers/how-to/1_raw_data)
 ### [Send with Python](xref:/developers/how-to/1_raw_data)
