@@ -1,5 +1,5 @@
 ---
-developers/quick-starts/2_slice
+uid: developers/quick-starts/2_slice
 ---
 
 ## Select dimensions to drill down  
