@@ -68,7 +68,7 @@
 ### [Data API reference](xref:developers/quick-starts/1_view)
 ### [Portal API reference](xref:developers/quick-starts/1_view)
 ### [Architecture whitepaper](xref:developers/quick-starts/1_view)
-### [Glossary]
+### [Glossary](xref:developers/quick-starts/1_view)
 ### [Best practice](xref:developers/quick-starts/1_view)
 ## Get service specifications
 ### [SLA](xref:developers/quick-starts/1_view)
