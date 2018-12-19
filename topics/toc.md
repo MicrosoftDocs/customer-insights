@@ -10,7 +10,7 @@
 ### [Use dimensions to slice and dice](xref:developers/quick-starts/2_slice.md)
 ### [Use transforms for more insights](xref:developers/quick-starts/3_transform.md)
 ### [Ask our AI for pointers](xref:developers/quick-starts/4_askai.md)
-### [Draw conclusions](xref:Draw conclusions)
+### [Draw conclusions](xref:/developers/get-started/5_insight/)
 
 # Tutorial 
 ## Overview 
