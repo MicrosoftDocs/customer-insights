@@ -24,10 +24,9 @@
 ### [4. Subscribe to metrics](xref:developers/quick-starts/1_view)
 ### [5. Collaborate with others](xref:developers/quick-starts/1_view)
 ## Do more
-### ["You are done!"](xref:developers/quick-starts/1_view)
+### [You are done!](xref:developers/quick-starts/1_view)
 ### [[Use case] Increase sales](xref:developers/quick-starts/1_view)
 ### [[Use case] Set up monitoring](xref:developers/quick-starts/1_view)
-### [Dimensional analysis](xref:developers/quick-starts/1_view)
 ### [[Use case] Funnels!](xref:developers/quick-starts/1_view)
 ### [[Use case] Query interactively](xref:developers/quick-starts/1_view)
 
