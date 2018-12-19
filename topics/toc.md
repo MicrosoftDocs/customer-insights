@@ -14,7 +14,9 @@
 
 # Tutorial 
 ## Overview 
-## Create your own metrics 
-### [See raw data](xref:/developers/how-to/1_raw_data)
-### [Send CSV data](xref:/developers/how-to/1_raw_data)
-### [Send with Python](xref:/developers/how-to/1_raw_data)
+## Collect signals
+### [See raw data](xref:/developers/tutorials/1_raw_data)
+### [Send CSV data](xref:/developers/tutorials/projects)
+### [Send with Python](xref:/developers/tutorials/access-roles)
+### [Send from elsewhere](xref:/developers/tutorials/service-limits)
+### [Import from elsewhere](xref:/developers/tutorials/adding-appid)
