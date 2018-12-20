@@ -65,8 +65,6 @@
 ### [Transform reference](xref:developers/quick-starts/1_view)
 ### [Property function reference](xref:developers/quick-starts/1_view)
 ## Explore reference
-### [Data API reference](xref:developers/quick-starts/1_view)
-### [Portal API reference](xref:developers/quick-starts/1_view)
 ### [Architecture whitepaper](xref:developers/quick-starts/1_view)
 ### [Glossary](xref:developers/quick-starts/1_view)
 ### [Best practice](xref:developers/quick-starts/1_view)
