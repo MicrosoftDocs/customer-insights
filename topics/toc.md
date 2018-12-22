@@ -58,20 +58,20 @@
 
 # Articles
 ## Collect signals better
-### [Signal collection API reference](xref:developers/quick-starts/1_view)
-### [Maximize SDK performance](xref:developers/quick-starts/1_view)
+### [Signal collection API reference](xref:developers/articles/signal-collection)
+### [Maximize SDK performance](xref:developers/articles/max-sdk-perf)
 ## Manipulate data better
-### [Transform reference](xref:developers/quick-starts/1_view)
-### [Property function reference](xref:developers/quick-starts/1_view)
+### [Transform reference](xref:developers/articles/transform-ref)
+### [Property function reference](xref:developers/articles/property-fn)
 ## Explore reference
-### [Architecture whitepaper](xref:developers/quick-starts/1_view)
-### [Glossary](xref:developers/quick-starts/1_view)
-### [Best practice](xref:developers/quick-starts/1_view)
+### [Architecture whitepaper](xref:developers/articles/architecture)
+### [Glossary](xref:developers/articles/glossary)
+### [Best practice](xref:developers/articles/best-practice)
 ## Get service specifications
-### [SLA](xref:developers/quick-starts/1_view)
-### [Service limits](xref:developers/quick-starts/1_view)
-### [Compliance](xref:developers/quick-starts/1_view)
-### [Security](xref:developers/quick-starts/1_view)
+### [SLA](xref:developers/articles/sla)
+### [Service limits](xref:developers/articles/service-limits)
+### [Compliance](xref:developers/articles/compliance)
+### [Security](xref:developers/articles/security)
 
 # Downloads
 ## Event SDK Downloads 

@@ -1,0 +1,4 @@
+---
+uid: developers/articles/glossary
+---
+
