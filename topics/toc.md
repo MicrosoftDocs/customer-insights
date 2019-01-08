@@ -31,7 +31,6 @@
 ### [[Use case] Query interactively](xref:developers/quick-starts/query)
 
 # Tutorials
-## [Overview](xref:developers/tutorials/overview)
 ## Collect signals
 ### [See raw data](xref:developers/tutorials/see-raw)
 ### [Send CSV data](xref:developers/tutorials/send-csv)
