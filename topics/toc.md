@@ -80,7 +80,6 @@
 ### [Calling app simulator](xref:developers/downloads/calling-app-sim)
 ### [Memory game](xref:developers/downloads/memory-game)
 ## Tutorials
-### [Overview](xref:developers/downloads/overview)
 ### [Android (Java)](xref:developers/downloads/android-java)
 ### [iOS (Objective-C)](xref:developers/downloads/ios-objc)
 ### [Web/React Native](xref:developers/downloads/webreact-native)
