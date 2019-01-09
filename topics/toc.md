@@ -11,13 +11,13 @@
 ### [3. Transform data](xref:developers/quick-starts/3_transform)
 ### [4. Ask AI](xref:developers/quick-starts/4_askai)
 ### [5. Insight](xref:developers/quick-starts/5_insight)
-## Create your own metrics
+## [Create your own metrics](xref:developers/create-own-metrics)
 ### [1. Collect more signals](xref:developers/quick-starts/1_collect)
 ### [2. Create a metric](xref:developers/quick-starts/2_create)
 ### [3. Use your metric](xref:developers/quick-starts/3_use)
 ### [4. Combine metrics](xref:developers/quick-starts/4_combine)
 ### [5. Add to your own dashboard](xref:developers/quick-starts/5_add)
-## Publish and share
+## [Publish and share](xref:developers/publish-share.md)
 ### [1. Save metric](xref:developers/quick-starts/1_save)
 ### [2. Add finishing touches](xref:developers/quick-starts/2_add)
 ### [3. Publish to a dashboard](xref:developers/quick-starts/3_publish)
