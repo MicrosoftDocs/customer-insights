@@ -1,5 +1,5 @@
 ---
-uid: create-own-metrics
+uid: developers/quick-starts/create-own-metrics
 title: Create metrics
 ---
 
