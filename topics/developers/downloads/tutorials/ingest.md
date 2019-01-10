@@ -25,6 +25,12 @@ You can run the Ingestion Tool in PowerShell as follows:
 The `-CsvFile` and `-ApiToken` parameters are mandatory, and the user
 must provide either the `-schema` or `-EventName` parameter.
 
+> **Note**: Provide a -schema parameter if you already have a data schema defined
+> according to the Ingestion Data Scheme (link). 
+> Alternatively, you can simply provide an event name for the data you are sending, and a schema will be auto-generated. 
+> To override the system timestamp, you will need a custom schema. 
+> Without a schema, all events will have the ingestion time set to the timestamp.
+
 If you run the Ingestion Tool in the directory where you put it, it
 will print the results on screen.
 
