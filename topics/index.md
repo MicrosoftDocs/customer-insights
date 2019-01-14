@@ -20,7 +20,7 @@ ms.custom:
                         <a href="#start-all"></a>
                         <ul id="start-all" class="cardsC">
                             <li>
-                                <a href="developers/quick-starts/what-is.md">
+                                <a href="/developers/quick-starts/what-is.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -39,7 +39,7 @@ ms.custom:
                                 </a>
                             </li>
                             <li>
-                                <a href="developers/quick-starts/1_view.md">
+                                <a href="/developers/quick-starts/1_view.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
