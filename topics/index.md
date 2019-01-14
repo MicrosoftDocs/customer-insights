@@ -1,3 +1,14 @@
+---
+layout: HubPage
+hide_bc: true
+title: Microsoft Dynamics 365 Documentation | Microsoft Docs
+description: 
+searchScope:
+  - "Dynamics 365"
+ms.service: dynamics-365-crossapp
+ms.custom:
+ - dyn365-hub
+---
 <div id="main" class="v2">
 <div class="container">
     <h1>Product Insights Documentation</h1>
