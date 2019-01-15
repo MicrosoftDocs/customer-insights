@@ -34,7 +34,6 @@
 ## Collect signals
 ### [See raw data](xref:developers/tutorials/see-raw)
 ### [Send CSV data](xref:developers/tutorials/send-csv)
-### [Send with Python](xref:developers/tutorials/send-python)
 ### [Send from elsewhere](xref:developers/tutorials/send-elsewhere)
 ### [Import from elsewhere](xref:developers/tutorials/import-elsewhere)
 ## Explore data 
