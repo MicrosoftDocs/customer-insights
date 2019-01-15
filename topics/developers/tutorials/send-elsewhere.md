@@ -3,4 +3,7 @@ uid: developers/tutorials/send-elsewhere
 title: Send from elsewhere
 ---
 
-In addition to sending data with the Ingestion Tool and Python, it's easy to send data to Product 360 with its event SDKs. For more information, see [Download SDKs](../../developers/downloads/).
+You can send a variety of data from the Web to Product Insights with JavaScript, as well as mobile data from iOS and Android,
+and services data with event SDKs. 
+
+For more information, see [Download SDKs](../../developers/downloads/).
