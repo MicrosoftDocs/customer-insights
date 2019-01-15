@@ -72,9 +72,7 @@
 ## Event SDK Downloads 
 ### [Downloads](xref:developers/downloads/downloads)
 ## Samples
-### [SDK samples](xref:developers/downloads/sdk-samples)
-### [Calling app simulator](xref:developers/downloads/calling-app-sim)
-### [Memory game](xref:developers/downloads/memory-game)
+### [Samples 1](xref:developers/downloads/sdk-samples)
 ## Tutorials
 ### [Android (mobile)](xref:developers/downloads/android-java)
 ### [C# (services)](xref:developers/downloads/csharp)
