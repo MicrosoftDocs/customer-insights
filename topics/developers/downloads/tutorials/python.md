@@ -1,4 +1,0 @@
----
-uid: developers/downloads/python
----
-
