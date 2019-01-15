@@ -55,7 +55,6 @@
 # Articles
 ## Collect signals better
 ### [Signal collection API reference](xref:developers/articles/signal-collection)
-### [Maximize SDK performance](xref:developers/articles/max-sdk-perf)
 ## Manipulate data better
 ### [Transform reference](xref:developers/articles/transform-ref)
 ### [Property function reference](xref:developers/articles/property-fn)
@@ -77,15 +76,8 @@
 ### [Calling app simulator](xref:developers/downloads/calling-app-sim)
 ### [Memory game](xref:developers/downloads/memory-game)
 ## Tutorials
-### [Android (Java)](xref:developers/downloads/android-java)
-### [iOS (Objective-C)](xref:developers/downloads/ios-objc)
-### [Web/React Native](xref:developers/downloads/webreact-native)
-### [CocoaPods for Aria SDK Static Library](xref:developers/downloads/cocoapods)
-### [macOS (Objective-C)](xref:developers/downloads/macos-objc)
-### [.NET Core Desktop](xref:developers/downloads/dotnet-core-desktop)
-### [Node.js Server](xref:developers/downloads/nodejs-server)
-### [Python](xref:developers/downloads/python)
-### [Windows (C++)](xref:developers/downloads/win-cpp)
-### [Web](xref:developers/downloads/web)
+### [Android (mobile)](xref:developers/downloads/android-java)
+### [C# (services)]
 ### [Ingestion Tool](xref:developers/downloads/ingest)
-### [More platforms](xref:developers/downloads/more)
+### [iOS (mobile)](xref:developers/downloads/ios-objc)
+### [JavaScript (Web)](xref:developers/downloads/web)
