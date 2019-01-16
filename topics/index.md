@@ -18,7 +18,7 @@ ms.custom:
             <ul id="users">
                 <li>
                     <a href="#start-all"></a>
-                    <ul id="start-all" class="cardsC">
+                    <ul id="start-all" class="cardsZ">
                         <li>
 							<a href="developers/quick-starts/what-is.md">
 								<div class="cardSize">
@@ -70,60 +70,7 @@ ms.custom:
             <ul id="developers">
                 <li>
                     <a href="#start-all"></a>
-                    <ul id="start-all" class="cardsC">
-                        <li>
-							<a href="developers/quick-starts/what-is.md">
-								<div class="cardSize">
-									<div class="cardPadding">
-										<div class="card">
-											<div class="cardText">
-												<h3>What is Product Insights?</h3>
-												<p>3 minute introduction to Product Insights. What is it? Who uses it? How do you get started? </p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</a>
-                        </li>
-                        <li>
-							<a href="">
-								<div class="cardSize">
-									<div class="cardPadding">
-										<div class="card">
-											<div class="cardText">
-												<h3></h3>
-												<p></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</a>							
-                        </li>
-                        <li>
-							<a href="">
-								<div class="cardSize">
-									<div class="cardPadding">
-										<div class="card">
-											<div class="cardText">
-												<h3></h3>
-												<p></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</a>							
-                        </li>
-            </ul>
-        </li>
-<li>
-            <a href="#managers">Managers</a>
-            <ul id="managers">
-                <li>
-                    <a href="#tools-all"></a>
-                    <ul id="tools-all" class="cardsC">
-                <li>
-                    <a href="#start-all"></a>
-                    <ul id="start-all" class="cardsC">
+                    <ul id="start-all" class="cardsZ">
                         <li>
 							<a href="developers/quick-starts/what-is.md">
 								<div class="cardSize">
@@ -167,7 +114,59 @@ ms.custom:
 							</a>							
                         </li>
                     </ul>
-                </li>
+                </li>			
+            </ul>
+        </li>
+        <li>
+            <a href="#managers">Managers</a>
+            <ul id="managers">
+                <li>
+                    <a href="#start-all"></a>
+                    <ul id="start-all" class="cardsZ">
+                        <li>
+							<a href="developers/quick-starts/what-is.md">
+								<div class="cardSize">
+									<div class="cardPadding">
+										<div class="card">
+											<div class="cardText">
+												<h3>What is Product Insights?</h3>
+												<p>3 minute introduction to Product Insights. What is it? Who uses it? How do you get started? </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+                        </li>
+                        <li>
+							<a href="">
+								<div class="cardSize">
+									<div class="cardPadding">
+										<div class="card">
+											<div class="cardText">
+												<h3></h3>
+												<p></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>							
+                        </li>
+                        <li>
+							<a href="">
+								<div class="cardSize">
+									<div class="cardPadding">
+										<div class="card">
+											<div class="cardText">
+												<h3></h3>
+												<p></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>							
+                        </li>
+                    </ul>
+                </li>			
             </ul>
         </li>		
     </ul>
