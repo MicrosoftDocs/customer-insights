@@ -17,8 +17,8 @@ ms.custom:
             <a href="#users">Users</a>
             <ul id="users">
                 <li>
-                    <a href="#start-all"></a>
-                    <ul id="start-all" class="cardsZ">
+                    <a href="#users-section"></a>
+                    <ul id="users-section" class="cardsZ">
                         <li>
 							<a href="developers/quick-starts/what-is.md">
 								<div class="cardSize">
@@ -39,7 +39,7 @@ ms.custom:
 									<div class="cardPadding">
 										<div class="card">
 											<div class="cardText">
-												<h3></h3>
+												<h3>Heading</h3>
 												<p></p>
 											</div>
 										</div>
@@ -69,8 +69,8 @@ ms.custom:
             <a href="#developers">Developers</a>
             <ul id="developers">
                 <li>
-                    <a href="#start-all"></a>
-                    <ul id="start-all" class="cardsZ">
+                    <a href="#dev-section"></a>
+                    <ul id="dev-section" class="cardsZ">
                         <li>
 							<a href="developers/quick-starts/what-is.md">
 								<div class="cardSize">
@@ -121,8 +121,8 @@ ms.custom:
             <a href="#managers">Managers</a>
             <ul id="managers">
                 <li>
-                    <a href="#start-all"></a>
-                    <ul id="start-all" class="cardsZ">
+                    <a href="#man-section"></a>
+                    <ul id="man-section" class="cardsZ">
                         <li>
 							<a href="developers/quick-starts/what-is.md">
 								<div class="cardSize">
