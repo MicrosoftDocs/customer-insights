@@ -79,3 +79,5 @@
 ### [Ingestion Tool](xref:developers/downloads/ingest)
 ### [iOS (mobile)](xref:developers/downloads/ios-objc)
 ### [JavaScript (Web)](xref:developers/downloads/web)
+
+# FAQ (Frequently Asked Questions)(xref:developers/faq)
