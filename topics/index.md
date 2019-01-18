@@ -152,13 +152,13 @@ ms.custom:
 							</a>							
                         </li>
                         <li>
-							<a href="developers/quick-starts/3_publish.md">
+							<a href="developers/faq">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
 											<div class="cardText">
-												<h3>Publish to a dashboard</h3>
-												<p>Publish the metrics you've created to a collaborative dashboard.</p>
+												<h3>FAQ</h3>
+												<p>Frequently asked questions about Product Insights</p>
 											</div>
 										</div>
 									</div>
