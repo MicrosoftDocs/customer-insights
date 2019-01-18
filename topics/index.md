@@ -14,7 +14,7 @@ ms.custom:
     <h1>Product Insights Documentation</h1>
     <ul class="pivots">
         <li>
-            <a href="#users">Users</a>
+            <a href="#users">Welcome</a>
             <ul id="users">
                 <li>
                     <a href="#users-section"></a>
@@ -66,7 +66,7 @@ ms.custom:
             </ul>
         </li>
         <li>
-            <a href="#developers">Developers</a>
+            <a href="#developers">User Guides</a>
             <ul id="developers">
                 <li>
                     <a href="#dev-section"></a>
@@ -118,7 +118,7 @@ ms.custom:
             </ul>
         </li>
         <li>
-            <a href="#managers">Managers</a>
+            <a href="#managers">Community</a>
             <ul id="managers">
                 <li>
                     <a href="#man-section"></a>
