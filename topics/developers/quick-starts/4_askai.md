@@ -6,4 +6,4 @@ uid: developers/quick-starts/4_askai
 
 Click the **Insights** button to see suggestions from Smart Analytics.
 
-![Smart Analytics button](insights.jpg)
+![Smart Analytics button](../tutorials/get-ai.png)
