@@ -6,7 +6,7 @@ uid: developers/quick-starts/1_view
 
 Visit the main dashboard to see how many vehicles Polaris is selling.
 
-![December sales](sales.png)
+![December sales](dashboard.png)
 
 
 
