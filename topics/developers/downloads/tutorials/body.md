@@ -1,5 +1,5 @@
 
-The Ingestion Tool can be used to send data from a CSV file to Aria.
+The Ingestion Tool can be used to send data from a CSV file to Product Insights.
 
 The first line of the CSV file must contain the header that specifies the field names.
 Each subsequent line in the CSV file must contain data (field values) for one event.
@@ -34,14 +34,14 @@ will print the results on screen.
 
 To find `YOUR_API_KEY`, you'll create a project (previously known as
 tenant), which generates a project key (a string of hexadecimal
-digits) that you'll use to authenticate your app to Aria. Visit the
-Aria Instrument Wizard and follow the instructions on the first page.
+digits) that you'll use to authenticate your app to Product Insights. Visit the
+Product Insights Instrument Wizard and follow the instructions on the first page.
 For **Project**, specify the name of your local project or solution.
 On the second page, select any platform and click **Skip this wizard**.
 On the third page, copy the Ingestion Key. Use it for your 
 API token.
 
-[Aria Instrument Wizard](https://portal.aria.ms/instrument/project)
+[Product Insights Instrument Wizard](https://portal.aria.ms/instrument/project)
 
 ## For more information
 

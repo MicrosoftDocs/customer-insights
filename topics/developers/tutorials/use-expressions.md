@@ -5,7 +5,8 @@ title: Use Expressions
 
 ## Computed datasets using expressions
 
-Aria supports creating computed datasets on the results of cube queries, using an expression language. You can watch a tutorial video (<8 min) describing the process below.
+Product Insights supports creating computed datasets on the results of cube queries, using an expression 
+language. You can watch a tutorial video (<8 min) describing the process below.
 
 {% include video.html src="UsingExpressions_short.mp4" %}
 

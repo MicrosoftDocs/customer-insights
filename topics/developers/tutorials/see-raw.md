@@ -20,6 +20,8 @@ The video below shows
 
 
 
-To run more complex queries, try out our [Kusto Explorer](). Kusto Explorer enables searching and queries over your raw Aria event data. 
+To run more complex queries, try out our [Kusto Explorer](). 
+Kusto Explorer enables searching and queries over your raw Product Insights event data. 
 
-To connect to your Aria project in Kusto, use this connection string: [https://kusto.aria.microsoft.com:443](https://kusto.aria.microsoft.com:443)
+To connect to your Product Insights project in Kusto, use this connection string: 
+[https://kusto.xaria.microsoft.com:443](https://kusto.aria.microsoft.com:443)
