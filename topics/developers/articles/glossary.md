@@ -5,7 +5,7 @@ title: Glossary of terms
 
 ## aggregated data
 
-Aria performs calculations as defined by your cubes, then stores the
+Product Insights performs calculations as defined by your cubes, then stores the
 aggregated results. You can use such calculated aggregation values for
 your visualisations.
 
@@ -32,7 +32,7 @@ percentiles, we advise that you keep your cardinality low.
 
 ## cardinality capping
 
-Cardinality capping is a configuration applied to cubes in the Aria
+Cardinality capping is a configuration applied to cubes in the Product Insights
 portal, to ensure that they can be served without any degradation in
 performance.
 
@@ -40,7 +40,7 @@ performance.
 
 The Collectors ingest event streams from the SDKs.  If event fields
 are tagged in the SDK, the Collectors scrub the PII (personally
-identifiable information) in the events. If they are within the Aria
+identifiable information) in the events. If they are within the Product Insights
 compliance boundary, the enterprise apps and services can maintain
 their compliance. They provide a compatibility layer to support legacy
 events and protocols. They are deployed worldwide in Azure behind a
@@ -48,8 +48,9 @@ DNS load-balanced endpoint. They are designed for low latency
 (important for mobile devices), high availability, and resiliency
 against data loss. They scale horizontally and can absorb spikes in
 the data volume.
-Aria Collectors are a group of Azure VMs that receive data from those
-who send Aria data, using Aria’s SDK.
+
+Product Insights Collectors are a group of Azure VMs that receive data from those
+who send Product Insights data, using the Product Insights SDK.
 
 ## cube
 
@@ -58,6 +59,12 @@ on streaming data. For example, you define a cube that gets a distinct
 count of users. The results are processed and stored by the Real-Time
 Aggregation service. Data created by cubes can be visualised in the
 portal, and saved as dashboards.
+
+## derived property
+
+A derived property is computed from one or more **signal properties**
+using custom functions.  Examples: a URL-normalizing function, or a
+string replace function.
 
 ## dimensions
 
@@ -69,6 +76,16 @@ divide the data.
 
 When defining dimensions, keep in mind that high cardinality will
 impact performance. See [cardinality](#cardinality).
+
+# drill down, drill into 
+
+See [split property](#split-property).
+
+## dynamic
+
+Properties such as App Version contain values that appear and
+disappear on a regular cadence.  A **derived property** can be used as
+a **split property**.
 
 ## e-tag
 
@@ -82,7 +99,7 @@ event explorer from the Portal in the taskbar on the left.
 
 ## event properties
 
-Data sent to Aria are essentially a collection of key-value
+Data sent to Product Insights are essentially a collection of key-value
 pairs. These are also referred to event properties. If you sent
 country code, action taken, and button pressed, these three are all
 event properties over which you can run aggregation operations, such
@@ -117,10 +134,10 @@ make the title of a page red for a specified group of users.
 
 ## funnel
 
-An Aria feature that can measure the conversion rate of users at
-various steps in a signon or purchase process (for example).  For
-example, what is the point in a signup process at which many people
-quit before converting?
+An Product Insights feature that can measure the conversion rate of
+users at various steps in a signon or purchase process (for example).
+For example, what is the point in a signup process at which many
+people quit before converting?
 
 ## GDPR
 
@@ -144,10 +161,10 @@ A token used by an app to pass data to the [Collector](#collector).
 ## Kusto
 
 [Kusto](https://aka.ms/csl) is an Azure service, a Big Data log search
-and text analytics cloud service, developed by a team split
-between ILDC (Microsoft Israel Development Center) and Redmond.  It is
-tightly integrated with Aria, and offered as part of Aria. It is a
-very fast in-memory database and a premium resource.
+and text analytics cloud service, developed by a team split between
+ILDC (Microsoft Israel Development Center) and Redmond.  It is tightly
+integrated with Product Insights, and offered as part of Product
+Insights. It is a very fast in-memory database and a premium resource.
 
 ## measures
 
@@ -167,9 +184,9 @@ See [measures](#measures).
 
 ## network provider
 
-In the context of Aria, this has the usual meaning.
-For example, the network provider for a specified
-phone might be AT&T or Verizon.
+In the context of Product Insights, this has the usual meaning.  For
+example, the network provider for a specified phone might be AT&T or
+Verizon.
 
 ## NGP
 
@@ -187,11 +204,11 @@ See [event properties](#event-properties).
 ## PII
 
 Personally Identifiable Information is any data that could potentially
-identify a specific individual. If your data to Aria contains any such
-data, you should use PII tagging to ensure data privacy.  [Find out
-how you can handle PII data](/developers/how-to/tag-pii-values/).
-Aria uses the nomenclature of _EUII_ and _OII_.  For more
-information, see
+identify a specific individual. If your data to Product Insights
+contains any such data, you should use PII tagging to ensure data
+privacy.  [Find out how you can handle PII data](/developers/how-to/tag-pii-values/).
+Product Insights uses the
+nomenclature of _EUII_ and _OII_.  For more information, see
 [/developers/articles/office-compliance/](/developers/articles/office-compliance/).
 
 ## project
@@ -204,13 +221,13 @@ Formerly, **tenant**.
 ## project ID
 
 A unique identifier for a [project](#project).
-Automatically assigned by the Aria service upon project creation.
+Automatically assigned by the Product Insights service upon project creation.
 Your project ID is also your Kusto (raw event) database ID.
 Formerly, **tenant ID**.
 
 ## property functions
 
-Aria property functions allow users to interact with incoming data
+Product Insights property functions allow users to interact with incoming data
 points (measures or dimensions) to extract and derive new values based
 on a pre-defined set of operations or conditions. Data output from
 property functions is then aggregated by RTA, and exposed for
@@ -223,7 +240,7 @@ Common scenarios for applying property functions:
 
 ## raw data
 
-Raw data refers to raw events sent by users to Aria.
+Raw data refers to raw events sent by users to Product Insights.
 See [event properties](#event-properties).
 
 ## resource
@@ -269,15 +286,50 @@ offers features optimized for the platform. For example, the Client
 SDKs support smart transmission of events to reduce power and metered
 network usage, as well as a census of device hardware.
 
+## segment
+
+A segment is a set of filters representing a subset of the data.  Examples:
+
+- North American Region: `Country IN (US, CA, MX, ...)`
+- All Regions:  <empty filter>
+- WA counties excluding Seattle metro area: `County NOT IN (King, Snohomish, Pierce)`
+
+One important difference between a **segment** and a **derived
+property** is that segments can represent overlapping subsets of data.
+This is because each segment is defined by its own set of filters.
+
 ## semantic context
 
 Semantic context is the data or metadata associated with specified
-Aria data, such as device fields, operating system fields, operating
+Product Insights data, such as device fields, operating system fields, operating
 system name, and so on.
+
+## signal property
+
+See [dimensions](#dimensions).
+
+## split combination
+
+Each distinct set of property values for a metric’s split properties
+represents a combination.  For example, if a metric contains split
+dimension `OS Platform and Country`, then two examples of combinations
+would include `Android, US` and `iOS, UK`.
+
+## split property
+
+A split property is a **signal property** (column or **dimension**),
+such as `OS Platform` or `Country`, used to **drill into** (split) a metric
+further.  Split property values may be **static** or **dynamic**.
 
 ## splits
 
 See [dimensions](#dimensions).
+
+## static
+
+A static property such as `OS Platform` or `Country` consists of a set
+of values that are generally unchanging or change very slowly (though
+their frequency of occurrence can change).
 
 ## tenant
 
@@ -289,10 +341,16 @@ See [project ID](#project-id).
 
 ## throttling
 
-Aria imposes quota on various aspects of data usage such as incoming
+Product Insights imposes quota on various aspects of data usage such as incoming
 data volume. When usage breaches the imposed limits, throttling occurs
 to avoid unexpectedly high costs to users as well as minimizing
 disruption to other clients.
 
 Please note that throttling is not triggered by temporary spikes.
 
+## top N query
+
+A top N (or bottom N) query is a query-time filter that first selects
+the first N combinations that are aggregated and ordered over the
+query time range, and then performs the query using those selected N
+combinations.
