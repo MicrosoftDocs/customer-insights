@@ -1,8 +1,8 @@
 # Quick starts
-## Aria in 3 minutes 
-### [[30s] What is Aria?](xref:developers/quick-starts/what-is)
+## Product Insights in 3 minutes 
+### [[30s] What is Product Insights?](xref:developers/quick-starts/what-is)
 ### [[1m] How is it being used?](xref:developers/quick-starts/how-used)
-### [[30s] Who uses Aria?](xref:developers/quick-starts/who-uses)
+### [[30s] Who uses Product Insights?](xref:developers/quick-starts/who-uses)
 ### [[30s] How is it structured?](xref:developers/quick-starts/how-structured)
 ### [[30s] How do I start?](xref:developers/quick-starts/how-start)
 ## Explore data
