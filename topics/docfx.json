@@ -35,14 +35,14 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/dynamics365/product360/breadcrumb/toc.json",
+      "breadcrumb_path": "/dynamics365/product-insights/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
       "author": "vroha"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "product360",
+    "dest": "product-insights",
     "markdownEngineName": "markdig"
   }
 }
