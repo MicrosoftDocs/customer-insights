@@ -17,7 +17,7 @@ The event viewer was designed to provide a quick sample of your events for you t
 
 ## Why are my metrics not working?
 
-TK
+TK: narrow question down
 
 ## What is an SDK?
 
@@ -47,7 +47,7 @@ If you are sending data to Product Insights with an SDK, make sure your applicat
 
 ## How do I see raw events?
 
-TK
+TK: need something like the Event Explorer, whatever it's called in the future
 
 ## Why is there a quota on my project? 
 
@@ -69,4 +69,3 @@ If the hacker knew the Product Insights schema, how to serialize to bond, and al
 ## What do I do if my tenant’s ingestion token is compromised?
 
 You can remove the compromised token from your code, and replace it with a new token.
-
