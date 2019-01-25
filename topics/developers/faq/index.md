@@ -43,9 +43,7 @@ TK
 
 ## I can't see my data!
 
-TK
-
-(Notes: SDK specific data - make sure integration with App Insights and App Center works) 
+If you are sending data to Product Insights with an SDK, make sure your application is correctly integrated with App Insights and App Center. 
 
 ## How do I see raw events?
 
