@@ -13,7 +13,7 @@ There is a default ingestion quota of 5,000 events per second and a Kusto databa
 
 ## Why are some of my events not showing up in the viewer?
 
-The event viewer was designed to provide a quick sample of your events for you to debug instrumentation and get examples of events.g cubes. It was not intended to be a generic query engine. At low volumes, it will capture and return every event. At high volumes, it will capture and return a sample of your recent events.
+The event viewer was designed to provide a quick sample of your events for you to debug instrumentation and get examples of events. It was not intended to be a generic query engine. At low volumes, it will capture and return every event. At high volumes, it will capture and return a sample of your recent events.
 
 ## Why are my metrics not working?
 
