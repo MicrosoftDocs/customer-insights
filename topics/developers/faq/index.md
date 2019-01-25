@@ -11,17 +11,19 @@ TK: narrow question down
 
 There is a default ingestion quota of 5,000 events per second and a Kusto database of 1 GiB.
 
-## Why are my events not showing up in the viewer?
+## Why are some of my events not showing up in the viewer?
 
-See TK (event viewer questions).
+The event viewer was designed to provide a quick sample of your events for you to debug instrumentation and get examples of events.g cubes. It was not intended to be a generic query engine. At low volumes, it will capture and return every event. At high volumes, it will capture and return a sample of your recent events.
 
-## Why are my metrics not working? 
+## Why are my metrics not working?
 
-## What is an SDK? 
+TK
 
-## How do I send data programmatically? 
+## What is an SDK?
 
-You can download an SDK to send data. Or check [here] for alternative ways of sending data. 
+An SDK is a Software Development Kit. Several SDKs are [available for Product Insights](../downloads/downloads.md), including ones for Android, C#, iOS, and JavaScript. These SDKs will enable you to send data programmatically to Product Insights from their respective platforms.
+
+For alternative ways of sending data, see TK.
 
 ## What is a project?
 
@@ -33,15 +35,21 @@ TK
 
 ## How do I create a project?
 
-TK: TBD
+TK
 
-## How do I send data for a specific project? 
+## How do I send data for a specific project?
 
-## I can't see my data! 
+TK
+
+## I can't see my data!
+
+TK
 
 (Notes: SDK specific data - make sure integration with App Insights and App Center works) 
 
-## How do I see raw events? 
+## How do I see raw events?
+
+TK
 
 ## Why is there a quota on my project? 
 
@@ -54,7 +62,7 @@ Once the project has exceeded its quota beyond some grace period, the Product In
 
 ## Which URLs do I need to list for the Aria Collectors?
 
-TK: TBD (table)
+TK (table)
 
 ## What would happen if a malicious hacker snooped and got my tenant’s ingestion token?
 
