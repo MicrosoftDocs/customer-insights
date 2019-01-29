@@ -15,70 +15,75 @@ ms.custom:
     <ul class="pivots">
         <li>
             <a href="#users">Welcome</a>
-			<ul id="users" class="cardsC">
-				<li>
-					<div class="container intro">
-						<p>Welcome message here</p>
-					</div>
-				</li>
-				<li>
-					<a href="">
-						<div class="cardSize">
-							<div class="cardPadding">
-								<div class="card">
-									<div class="cardImageOuter">
-										<div class="cardImage bgdAccent1">
-											<img src="https://docs.microsoft.com/media/hubs/dotnet/net-docs-web-1.svg" alt="" data-linktype="external">
+            <ul id="users">
+                <li>
+					<a href="#users-section">cardsC</a>
+					<ul id="users-section" class="cardsC">
+						<li>
+							<div class="container intro">
+								<p>Welcome message here</p>
+							</div>
+						</li>
+						<li>
+							<a href="developers/quick-starts/what-is.md">
+								<div class="cardSize">
+									<div class="cardPadding">
+										<div class="card">
+											<div class="cardImageOuter">
+												<div class="cardImage bgdAccent1">
+													<img src="https://docs.microsoft.com/media/hubs/dotnet/net-docs-web-1.svg" alt="" data-linktype="external">
+												</div>
+											</div>
+											<div class="cardText">
+												<h3>What is Product Insights?</h3>
+												<p>1 minute introduction</p>
+											</div>
 										</div>
 									</div>
-									<div class="cardText">
-										<h3>What is Product Insights?</h3>
-										<p>1 minute introduction</p>
-									</div>
 								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<div class="cardSize">
-							<div class="cardPadding">
-								<div class="card">
-									<div class="cardImageOuter">
-										<div class="cardImage bgdAccent1">
-											<img src="https://docs.microsoft.com/media/hubs/dotnet/net-docs-web-1.svg" alt="" data-linktype="external">
+							</a>
+						</li>
+						<li>
+							<a href="developers/quick-starts/who-uses.md">
+								<div class="cardSize">
+									<div class="cardPadding">
+										<div class="card">
+											<div class="cardImageOuter">
+												<div class="cardImage bgdAccent1">
+													<img src="https://docs.microsoft.com/media/hubs/dotnet/net-docs-web-1.svg" alt="" data-linktype="external">
+												</div>
+											</div>
+											<div class="cardText">
+												<h3>Who uses us?</h3>
+												<p>Learn about the users of Product Insights and what they do with the tool.</p>
+											</div>
 										</div>
 									</div>
-									<div class="cardText">
-										<h3>Who uses us?</h3>
-										<p>Learn about the users of Product Insights and what they do with the tool.</p>
-									</div>
 								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<div class="cardSize">
-							<div class="cardPadding">
-								<div class="card">
-									<div class="cardImageOuter">
-										<div class="cardImage bgdAccent1">
-											<img src="https://docs.microsoft.com/media/hubs/dotnet/net-docs-web-1.svg" alt="" data-linktype="external">
+							</a>
+						</li>
+						<li>
+							<a href="developers/quick-starts/how-start.md">
+								<div class="cardSize">
+									<div class="cardPadding">
+										<div class="card">
+											<div class="cardImageOuter">
+												<div class="cardImage bgdAccent1">
+													<img src="https://docs.microsoft.com/media/hubs/dotnet/net-docs-web-1.svg" alt="" data-linktype="external">
+												</div>
+											</div>
+											<div class="cardText">
+												<h3>How do I start?</h3>
+												<p>Find the quickest entries to getting started with Product Insights.</p>
+											</div>
 										</div>
 									</div>
-									<div class="cardText">
-										<h3>How do I start?</h3>
-										<p>Find the quickest entries to getting started with Product Insights.</p>
-									</div>
 								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-			</ul>
+							</a>
+						</li>
+					</ul>
+                </li>
+            </ul>
         </li>
         <li>
             <a href="#developers">User Guides</a>
