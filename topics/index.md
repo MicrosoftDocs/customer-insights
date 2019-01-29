@@ -31,7 +31,7 @@ ms.custom:
 										<div class="card">
 											<div class="cardImageOuter">
 												<div class="cardImage bgdAccent1">
-													<img src="../../images/MainPage.PNG" alt="" data-linktype="external">
+													<img src="../images/MainPage.PNG" alt="" data-linktype="external">
 												</div>
 											</div>
 											<div class="cardText">
