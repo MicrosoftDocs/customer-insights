@@ -15,7 +15,7 @@ ms.custom:
     <ul class="pivots">
         <li>
             <a href="#users">Welcome</a>
-			<ul id="users-section" class="cardsC">
+			<ul id="users" class="cardsC">
 				<li>
 					<div class="container intro">
 						<p>Welcome message here</p>
