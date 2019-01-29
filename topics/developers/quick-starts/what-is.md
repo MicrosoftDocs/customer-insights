@@ -7,5 +7,5 @@ uid: developers/quick-starts/what-is
 > [!VIDEO https://www.youtube.com/embed/UFgnpgYr66M]
 
 
-> [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
+
 
