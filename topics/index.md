@@ -31,7 +31,7 @@ ms.custom:
 										<div class="card">
 											<div class="cardImageOuter">
 												<div class="cardImage bgdAccent1">
-													<img src="https://docs.microsoft.com/media/hubs/dotnet/net-docs-web-1.svg" alt="" data-linktype="external">
+													<img src="../../images/MainPage.PNG" alt="" data-linktype="external">
 												</div>
 											</div>
 											<div class="cardText">
