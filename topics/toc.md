@@ -1,10 +1,10 @@
 # Quick starts
-## Product Insights in 3 minutes 
-### [[30s] What is Product Insights?](xref:developers/quick-starts/what-is)
-### [[1m] How is it being used?](xref:developers/quick-starts/how-used)
-### [[30s] Who uses Product Insights?](xref:developers/quick-starts/who-uses)
-### [[30s] How is it structured?](xref:developers/quick-starts/how-structured)
-### [[30s] How do I start?](xref:developers/quick-starts/how-start)
+## Product Insights in 5 minutes 
+### [What is Product Insights?](xref:developers/quick-starts/what-is)
+### [How is it being used?](xref:developers/quick-starts/how-used)
+### [Who uses Product Insights?](xref:developers/quick-starts/who-uses)
+### [How is it structured?](xref:developers/quick-starts/how-structured)
+### [How do I start?](xref:developers/quick-starts/how-start)
 ## Explore data
 ### [1. View data](xref:developers/quick-starts/1_view)
 ### [2. Slice and dice data](xref:developers/quick-starts/2_slice)
