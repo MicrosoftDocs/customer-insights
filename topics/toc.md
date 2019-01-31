@@ -58,11 +58,11 @@
 ## Transforming data    
 ### [Transform reference](xref:developers/articles/transform-ref)
 ### [Property function reference](xref:developers/articles/property-fn)
-## System knowledge 
+## Unerstanding the system  
 ### [Architecture whitepaper](xref:developers/articles/architecture)
 ### [Glossary](xref:developers/articles/glossary)
 ### [Best practice](xref:developers/articles/best-practice)
-## Service management 
+## Managing the system
 ### [SLA](xref:developers/articles/sla)
 ### [Service limits](xref:developers/articles/service-limits)
 ### [Compliance](xref:developers/articles/compliance)
