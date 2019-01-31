@@ -50,19 +50,19 @@
 ## Set goals and monitor
 ### [Create a scorecard](xref:developers/tutorials/create-scorecard)
 ### [Monitor health](xref:developers/tutorials/monitor-health)
-## More on graphs 
+## Advanced  
 
 # Articles
-## Collect signals better
+## Collecting signals  
 ### [Signal collection API reference](xref:developers/articles/signal-collection)
-## Manipulate data better
+## Transforming data    
 ### [Transform reference](xref:developers/articles/transform-ref)
 ### [Property function reference](xref:developers/articles/property-fn)
-## Explore reference
+## System knowledge 
 ### [Architecture whitepaper](xref:developers/articles/architecture)
 ### [Glossary](xref:developers/articles/glossary)
 ### [Best practice](xref:developers/articles/best-practice)
-## Get service specifications
+## Service management 
 ### [SLA](xref:developers/articles/sla)
 ### [Service limits](xref:developers/articles/service-limits)
 ### [Compliance](xref:developers/articles/compliance)
