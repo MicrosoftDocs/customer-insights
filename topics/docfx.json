@@ -41,7 +41,11 @@
       "author": "vroha",
       "ms.author": "v-roha",
       "date": "01/31/2019",
-      "ms.date": "01/31/2019"
+      "ms.date": "01/31/2019",
+      "ms.service": "product-insights",
+      "ms.topic": "article",
+      "uhfHeaderId": "MSDocsHeader-Dynamics365",
+      "titleSuffix": "Dynamics 365 Product Insights"
     },
     "fileMetadata": {},
     "template": [],
