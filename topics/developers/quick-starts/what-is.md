@@ -1,8 +1,9 @@
 ---
 uid: developers/quick-starts/what-is
+title: One minute introduction to Product Insights - Product Insights
 ---
 
-# 1 minute introduction to Product Insights 
+# One minute introduction to Product Insights 
 
 > [!VIDEO https://www.youtube.com/embed/UFgnpgYr66M]
 
