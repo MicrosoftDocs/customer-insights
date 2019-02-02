@@ -2,6 +2,7 @@
 uid: developers/tutorials/select-top
 title: Select top N
 ---
+# Select top N
 
 1. On the **Data** tab, expand **Options** to limit your graph to top or bottom N.
 1. The **Order By** item specifies which measure to use when ordering the series.
