@@ -1,5 +1,5 @@
 ---
 uid: developers/downloads/web
-title: JavaScript (Web) - Product Insights
+title: JavaScript (Web)
 ---
-
+# JavaScript (Web)
