@@ -1,4 +1,5 @@
 ---
 uid: developers/downloads/csharp
-title: C# (services) - Product Insights
+title: C# (services)
 ---
+# C# (services)
