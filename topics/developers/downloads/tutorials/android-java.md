@@ -1,5 +1,6 @@
 ---
 uid: developers/downloads/android-java
-title: Android (mobile) - Product Insights
+title: Android (mobile)
 ---
 
+# Android (mobile)
