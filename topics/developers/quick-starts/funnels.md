@@ -1,8 +1,8 @@
 ---
 uid: developers/quick-starts/funnels
-title: [Use case] Funnels!
+title: Use case: Funnels!
 ---
 
-# [Use case] Funnels!
+# Use case: Funnels!
 
 
