@@ -1,7 +1,8 @@
 ---
 uid: developers/downloads/downloads
-title: Event SDK downloads - Product Insights
+title: Event SDK downloads
 ---
+# Event SDK downloads
 
 * Android (mobile)
 * C# (services)
