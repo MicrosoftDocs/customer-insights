@@ -1,7 +1,8 @@
 ---
 uid: developers/tutorials/see-raw
+title: Use the Event Explorer to view raw data
 ---
-## Use the Event Explorer to view raw data
+# Use the Event Explorer to view raw data
 
 You have downloaded the SDK and sent data. To verify this, you can use Event Explorer to view incoming events. 
 
