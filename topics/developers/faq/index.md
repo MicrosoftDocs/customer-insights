@@ -1,7 +1,8 @@
 ---
 uid: developers/faq/index
-title: Product Insights FAQ
+title: FAQ (Frequently Asked Questions)
 ---
+# FAQ (Frequently Asked Questions)
 
 ## When do I use Product Insights?
 
