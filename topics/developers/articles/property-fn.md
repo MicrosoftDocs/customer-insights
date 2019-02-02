@@ -1,7 +1,8 @@
 ---
 uid: developers/articles/property-fn
-title: Property functions
+title: Property function reference
 ---
+# Property function reference
 
 ## Numeric Functions
 
