@@ -3,6 +3,8 @@ uid: developers/articles/transform-ref
 title: Series transforms
 ---
 
+# Series transforms
+
 ## Absolute value
 
 Calculates absolute value of each data point in each series.
