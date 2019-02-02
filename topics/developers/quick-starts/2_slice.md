@@ -1,6 +1,8 @@
 ---
 uid: developers/quick-starts/2_slice
+title: Slice and dice data
 ---
+# Slice and dice data
 
 ## Select dimensions to drill down  
 
