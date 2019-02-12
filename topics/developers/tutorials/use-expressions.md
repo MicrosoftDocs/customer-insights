@@ -8,13 +8,7 @@ title: Use expressions
 ## Computed datasets using expressions
 
 Product Insights supports creating computed datasets on the results of cube queries, using an expression 
-language. You can watch a tutorial video (<8 min) describing the process below.
-
-{% include video.html src="UsingExpressions_short.mp4" %}
-
-A slightly longer tutorial that walks through the whole process follows, including comparisons to transforms.
-
-{% include video.html src="UsingExpressions.mp4" %}
+language.
 
 First you must create data layers. After you have at least one layer with one data series, you can create expressions which reference them by adding an Expression query layer.
 
