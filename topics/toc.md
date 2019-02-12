@@ -80,4 +80,4 @@
 ### [iOS (mobile)](xref:developers/downloads/ios-objc)
 ### [JavaScript (Web)](xref:developers/downloads/web)
 
-# [FAQ (Frequently Asked Questions)](xref:developers/faq)
+# [FAQ (Frequently Asked Questions)](xref:developers/faq/index)
