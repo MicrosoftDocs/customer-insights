@@ -6,4 +6,4 @@ title: Save metric
 
 Save the metric you've created for future access.
 
-[Save metric](create-metrics.png)
+![Save metrics](renault-save-metric.png)
