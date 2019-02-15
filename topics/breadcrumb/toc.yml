@@ -1,3 +1,7 @@
-- name: Product Insights
-  tocHref: /dynamics365/product-insights/
-  topicHref: /dynamics365/product-insights/
+- name: Dynamics 365
+  tocHref: /dynamics365/
+  topicHref: /dynamics365/
+  items:
+  - name: Product Insights
+    tocHref: /dynamics365/product-insights/
+    topicHref: /dynamics365/product-insights/
