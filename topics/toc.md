@@ -67,7 +67,6 @@
 ### [Service limits](xref:developers/articles/service-limits)
 ### [Compliance](xref:developers/articles/compliance)
 ### [Security](xref:developers/articles/security)
-## [FAQ (Frequently Asked Questions)](xref:developers/faq/index)
 
 # Downloads
 ## Event SDK Downloads 
@@ -81,3 +80,5 @@
 ### [iOS (mobile)](xref:developers/downloads/ios-objc)
 ### [JavaScript (Web)](xref:developers/downloads/web)
 
+# FAQ 
+## [FAQ (Frequently Asked Questions)](xref:developers/faq/index)
