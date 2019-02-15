@@ -4,12 +4,12 @@ title: Sdk samples
 ---
 # Android sample 
 
-[Download the android sample here](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/Android_3P_sample.zip)
+[Download the Android sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/Android_3P_sample.zip)
 
 [Getting started guide](xref:developers/downloads/android-java) 
 
 # iOS sample 
 
-[Download the iOS sample here](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/Android_3P_sample.zip)
+[Download the iOS sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/Android_3P_sample.zip)
 
 [Getting started guide](xref:developers/downloads/ios-objc)
