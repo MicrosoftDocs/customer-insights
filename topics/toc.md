@@ -50,6 +50,7 @@
 ## Set goals and monitor
 ### [Create a scorecard](xref:developers/tutorials/create-scorecard)
 ### [Monitor health](xref:developers/tutorials/monitor-health)
+## [FAQ (Frequently Asked Questions)](xref:developers/faq/index)
 ## Advanced  
 
 # Articles
@@ -80,5 +81,3 @@
 ### [iOS (mobile)](xref:developers/downloads/ios-objc)
 ### [JavaScript (Web)](xref:developers/downloads/web)
 
-# FAQ 
-## [FAQ (Frequently Asked Questions)](xref:developers/faq/index)
