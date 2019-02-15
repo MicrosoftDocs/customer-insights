@@ -60,18 +60,18 @@ Save the file and run this command in the terminal:
 frameworks from the iOS folder. 
 - Create a new folder named Frameworks inside your project folder, and paste the frameworks into this.
 - Add the SDK frameworks to the project in Xcode: 
- * Drag and drop all the frameworks into Xcode's Project Navigator. 
- * A dialog will appear, make sure your app target is checked. Then click Finish. 
+    * Drag and drop all the frameworks into Xcode's Project Navigator. 
+    * A dialog will appear, make sure your app target is checked. Then click Finish. 
 - Make sure the .frameworks have been added to the project and target correctly. 
- * Select your project in Xcode's project navigator. 
- * Select your app target. 
- * In the General tab, verify that 
-  - None of the .frameworks have been added to Embedded Binaries. 
-  - The section about Linked Frameworks and Libraries contains all .frameworks. Remove duplicates and add missing frameworks if necessary. 
- * In the Build Phases tab, verify that 
-  - All .framework files have been added to Link Binary With Libraries. 
-  - None of the .frameworks have been added to Embed Frameworks. 
- * Note that all .frameworks are distributed as statically linked, "fake" frameworks.
+    * Select your project in Xcode's project navigator. 
+    * Select your app target. 
+    * In the General tab, verify that 
+        - None of the .frameworks have been added to Embedded Binaries. 
+        - The section about Linked Frameworks and Libraries contains all .frameworks. Remove duplicates and add missing frameworks if necessary. 
+    * In the Build Phases tab, verify that 
+        - All .framework files have been added to Link Binary With Libraries. 
+        - None of the .frameworks have been added to Embed Frameworks. 
+    * Note that all .frameworks are distributed as statically linked, "fake" frameworks.
 
 4. Open your AppDelegate.m file and add the following import statements:
 
