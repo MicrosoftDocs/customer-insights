@@ -70,11 +70,9 @@
 ### [Security](xref:developers/articles/security)
 
 # Downloads
-## Event SDK Downloads 
-### [Downloads](xref:developers/downloads/downloads)
-## Samples
-### [Samples 1](xref:developers/downloads/sdk-samples)
-## Tutorials
+## [Event SDK Downloads](xref:developers/downloads/downloads)
+## [SDK samples](xref:developers/downloads/sdk-samples)
+## SDK Tutorials
 ### [Android (mobile)](xref:developers/downloads/android-java)
 ### [C# (services)](xref:developers/downloads/csharp)
 ### [Ingestion Tool](xref:developers/downloads/ingest)
