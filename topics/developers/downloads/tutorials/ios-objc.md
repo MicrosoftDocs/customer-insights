@@ -8,7 +8,7 @@ title: iOS (mobile)
 This tutorial guides you through the process of using an Aria ingestion token and the 1DS SDK for your existing app, which will have you tracking events in about five minutes. 
  
 Prerequisites:
-- Xcode 8.3.3+ 
+- [Xcode 8.3.3+](https://developer.apple.com/xcode/downloads/) 
 - macOS 10.12+ 
 - iOS 9+ 
  
@@ -31,73 +31,73 @@ Prerequisites:
 
 ### Option 1: Integrate the SDK using CocoaPods
 
-If you haven't installed CocoaPods, run this command in the terminal to install CocoaPods and create a Podfile.
+1. If you haven't installed CocoaPods, run the following command in the terminal to install CocoaPods and create a Podfile:
 
 ```
 $ sudo gem install cocoapods 
 $ pod init 
 ```
 
-Add the following to your Podfile
+2. Add the following code snippet to your Podfile:
+
 ```
 Target 'SampleApp' do 
 pod 'AppCenter' 
 pod 'AppCenter/Analytics' 
 ```
 
-Save the file and run this command in the terminal:
-`$ pod install`
+3. Save the file and run the following command in the terminal:
+
+```
+$ pod install
+```
  
 ### Option 2: Integrate the SDK manually
 
 1. Download the 1DS SDK for iOS. 
 
-2. The SDK is available as a ZIP file. Click the following link to download it: [download the iOS SDK](https://github.com/Microsoft/AppCenter-SDK-Apple/releases/latest) 
+2. The SDK is available as a ZIP file. [Download the iOS SDK.](https://github.com/Microsoft/AppCenter-SDK-Apple/releases/latest) 
 
-3. Integrate the SDK into your project In this step, you’ll configure your project to link-in the 1DS SDK libraries. 
-- Make sure that your project has modules enabled. 
-- Unzip the SDK archive and copy the AppCenter.framework and AppCenterAnalytics.framework  
-frameworks from the iOS folder. 
-- Create a new folder named Frameworks inside your project folder, and paste the frameworks into this.
+3. Integrate the SDK into your project. In this step, you’ll configure your project to link the 1DS SDK libraries. 
+- Ensure that your project has modules enabled. 
+- Unzip the SDK archive and copy the `AppCenter.framework` and `AppCenterAnalytics.framework` frameworks from the iOS folder. 
+- Create a new folder named `Frameworks` inside your project folder, and paste the frameworks into it.
 - Add the SDK frameworks to the project in Xcode: 
     * Drag and drop all the frameworks into Xcode's Project Navigator. 
-    * A dialog will appear, make sure your app target is checked. Then click Finish. 
-- Make sure the .frameworks have been added to the project and target correctly. 
+    * A dialog will appear. Ensure your app target is checked, and then click **Finish**. 
+- Ensure the frameworks have been added to the project and target correctly. 
     * Select your project in Xcode's project navigator. 
     * Select your app target. 
-    * In the General tab, verify that 
-        - None of the .frameworks have been added to Embedded Binaries. 
-        - The section about Linked Frameworks and Libraries contains all .frameworks. Remove duplicates and add missing frameworks if necessary. 
-    * In the Build Phases tab, verify that 
-        - All .framework files have been added to Link Binary With Libraries. 
-        - None of the .frameworks have been added to Embed Frameworks. 
-    * Note that all .frameworks are distributed as statically linked, "fake" frameworks.
+    * In the **General** tab, verify that 
+        - None of the `.framework` files have been added to **Embedded Binaries**. 
+        - The section **Linked Frameworks and Libraries** contains all frameworks. Remove duplicates and add missing frameworks if necessary.
+    * In the **Build Phases** tab, verify that 
+        - All `.framework` files have been added to **Link Binary With Libraries**. 
+        - None of the `.framework` files have been added to **Embed Frameworks**. 
+    > Note that all `.framework` files are distributed as statically linked, "fake" frameworks.
 
-4. Open your AppDelegate.m file and add the following import statements:
+4. Open your `AppDelegate.m` file and add the following import statements:
 
-**Objective-C**
+**Objective-C:**
 
 ```
-// Objective-C 
 @import AppCenter; 
 @import AppCenterAnalytics;
 ```
 
-**Swift**
+**Swift:**
 ```
-// Swift 
 import AppCenter 
 import AppCenterAnalytics 
 ```
 
-5. Add the start method and start tracking events. 
- - Start the SDK from an app 
- - Insert the following line to start the SDK in your app's AppDelegate.m class in the didFinishLaunchingWithOptions: method. Use this if you only have a single target configured.
+5. Add the **start method** and **start tracking** events. 
+ - Start the SDK from an app. 
+ - Insert the following code to start the SDK in your app's `AppDelegate.m` class in the `didFinishLaunchingWithOptions:` method. Use this if you only have a single target configured.
 
-**Objective-C**
+**Objective-C:**
 
 ```
-// Objective-C 
 [MSAppCenter start:@"target={Your API Token}" withServices:@[[MSAnalytics class]]]; 
 
 // Do a simple trackEvent call 
@@ -113,9 +113,8 @@ MSEventProperties *properties = [MSEventProperties new];
 [MSAnalytics trackEvent:@"VideoClicked" withTypedProperties:properties]; 
 ```
 
-**Swift**
+**Swift:**
 ```   
-// Swift 
 MSAppCenter.start("target={Your API token}", withServices:[MSAnalytics.self]) 
  
 // Do a simple trackEvent call. 
@@ -133,10 +132,9 @@ MSAnalytics.trackEvent("VideoClicked", withProperties:properties)
  
  - Use this code to configure multiple projects or telemetry endpoints:
 
-**Objective-C**
+**Objective-C:**
 
 ```
-// Objective-C 
 // Create your first transmission target. 
 MSAnalyticsTransmissionTarget *appTarget1 = [MSAnalytics transmissionTargetForToken:@"Your API token 1"]; 
  
@@ -149,7 +147,7 @@ MSEventProperties *properties = [MSEventProperties new];
 [properties setDouble:3.23 forKey:@"LengthMinutes"]; 
 [appTarget1 trackEvent:@"VideoClicked" withTypedProperties:properties]; 
  
-// Create you a second transmission target. 
+// Create your second transmission target. 
 MSAnalyticsTransmissionTarget *appTarget2 = [MSAnalytics transmissionTargetForToken:@"Your API token 2"]; 
  
 // Do a simple trackEvent call for your second target. 
@@ -162,10 +160,9 @@ MSEventProperties *properties = [MSEventProperties new];
 [appTarget2 trackEvent:@"VideoClicked" withTypedProperties:properties]; 
 ```
 
-**Swift**
+**Swift:**
 
 ```
-// Swift 
 // Create your first transmission target. 
 let appTarget1 = MSAnalytics.transmissionTarget(forToken:"our API token 1") 
  
@@ -191,4 +188,4 @@ properties.setEventProperty(3.23, forKey:"LengthMinutes")
 appTarget2.trackEvent("eventName", withProperties:properties) 
 ```
  
-You’re done! When you run your app or library, it sends a telemetry event when it launches. 
+You’re done! When you run your app or library, it will send a telemetry event when it launches. 
