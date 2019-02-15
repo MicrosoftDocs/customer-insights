@@ -13,19 +13,19 @@ Prerequisites:
 - iOS 9+ 
  
 ## 1. Get an API token from Aria portal 
-a. From the **Home** screen in the Portal, select **Explorer** in the navigation pane on the left. The **Projects List** appears.
+1. From the **Home** screen in the Portal, select **Explorer** in the navigation pane on the left. The **Projects List** appears.
 
-b. Add a new project by clicking the plus sign at the bottom of the list. The **Instrument Wizard** appears, displaying the **Create a project** page.
+2. Add a new project by clicking the plus sign at the bottom of the list. The **Instrument Wizard** appears, displaying the **Create a project** page.
 
-c. Enter a name for your project.
+3. Enter a name for your project.
 
-d. Leave the default value of **Sandbox** as **Group**.
+4. Leave the default value of **Sandbox** as **Group**.
 
-e. Select **Create project**. The **What platform are you using?** page appears.
+5. Select **Create project**. The **What platform are you using?** page appears.
 
-f. Select a platform from the drop-down list, but don’t select **Next**. Click **Skip this wizard** instead, and the **Project Manager** page appears.
+6. Select a platform from the drop-down list, but don’t select **Next**. Click **Skip this wizard** instead, and the **Project Manager** page appears.
 
-g. Your API token appears on the right side of this page, under **Ingestion Key**. Leave this tab open in your web browser because you will come back to it and copy your token to the clipboard for use later. 
+7. Your API token appears on the right side of this page, under **Ingestion Key**. Leave this tab open in your web browser because you will come back to it and copy your token to the clipboard for use later. 
 
 ## 2. Integrate the 1DS iOS SDK into your project and instrument your app
 
@@ -52,63 +52,49 @@ Save the file and run this command in the terminal:
 
 1. Download the 1DS SDK for iOS. 
 
-1. The SDK is available as a ZIP file. Click the following link to download it. 
+2. The SDK is available as a ZIP file. Click the following link to download it: [download the iOS SDK](https://github.com/Microsoft/AppCenter-SDK-Apple/releases/latest) 
 
-1. Download the iOS SDK 
-
-1. Integrate the SDK into your project In this step, you’ll configure your project to link-in the 1DS SDK libraries. 
-
-1. Make sure that your project has modules enabled. 
-
-1. Unzip the SDK archive and copy the AppCenter.framework and AppCenterAnalytics.framework  
+3. Integrate the SDK into your project In this step, you’ll configure your project to link-in the 1DS SDK libraries. 
+- Make sure that your project has modules enabled. 
+- Unzip the SDK archive and copy the AppCenter.framework and AppCenterAnalytics.framework  
 frameworks from the iOS folder. 
+- Create a new folder named Frameworks inside your project folder, and paste the frameworks into this.
+- Add the SDK frameworks to the project in Xcode: 
+ * Drag and drop all the frameworks into Xcode's Project Navigator. 
+ * A dialog will appear, make sure your app target is checked. Then click Finish. 
+- Make sure the .frameworks have been added to the project and target correctly. 
+ * Select your project in Xcode's project navigator. 
+ * Select your app target. 
+ * In the General tab, verify that 
+  - None of the .frameworks have been added to Embedded Binaries. 
+  - The section about Linked Frameworks and Libraries contains all .frameworks. Remove duplicates and add missing frameworks if necessary. 
+ * In the Build Phases tab, verify that 
+  - All .framework files have been added to Link Binary With Libraries. 
+  - None of the .frameworks have been added to Embed Frameworks. 
+ * Note that all .frameworks are distributed as statically linked, "fake" frameworks.
 
-1. Create a new folder named Frameworks inside your project folder, and paste the frameworks into this.
+4. Open your AppDelegate.m file and add the following import statements:
 
-1. Add the SDK frameworks to the project in Xcode: 
-
-1. Drag and drop all the frameworks into Xcode's Project Navigator. 
-
-1. A dialog will appear, make sure your app target is checked. Then click Finish. 
-
-1. Make sure the .frameworks have been added to the project and target correctly. 
-
-1. Select your project in Xcode's project navigator. 
-
-1. Select your app target. 
-
-1. In the General tab, verify that 
-
-- None of the .frameworks have been added to Embedded Binaries. 
-
-- The section about Linked Frameworks and Libraries contains all .frameworks. Remove duplicates and add missing frameworks if necessary. 
-
-1. In the Build Phases tab, verify that 
-
-- All .framework files have been added to Link Binary With Libraries. 
-
-- None of the .frameworks have been added to Embed Frameworks. 
-
-Note that all .frameworks are distributed as statically linked, "fake" frameworks.
-
-Open your AppDelegate.m file and add the following import statements:
+**Objective-C**
 
 ```
 // Objective-C 
 @import AppCenter; 
 @import AppCenterAnalytics;
 ```
+
+**Swift**
 ```
 // Swift 
 import AppCenter 
 import AppCenterAnalytics 
 ```
 
-Add the start method and start tracking events. 
+5. Add the start method and start tracking events. 
+ - Start the SDK from an app 
+ - Insert the following line to start the SDK in your app's AppDelegate.m class in the didFinishLaunchingWithOptions: method. Use this if you only have a single target configured.
 
-Start the SDK from an app 
-
-Insert the following line to start the SDK in your app's AppDelegate.m class in the didFinishLaunchingWithOptions: method. Use this if you only have a single target configured.
+**Objective-C**
 
 ```
 // Objective-C 
@@ -127,6 +113,7 @@ MSEventProperties *properties = [MSEventProperties new];
 [MSAnalytics trackEvent:@"VideoClicked" withTypedProperties:properties]; 
 ```
 
+**Swift**
 ```   
 // Swift 
 MSAppCenter.start("target={Your API token}", withServices:[MSAnalytics.self]) 
@@ -144,7 +131,9 @@ properties.setEventProperty(Date(), forKey:"DateAdded")
 MSAnalytics.trackEvent("VideoClicked", withProperties:properties) 
 ```
  
-Use this code to configure multiple projects or telemetry endpoints:
+ - Use this code to configure multiple projects or telemetry endpoints:
+
+**Objective-C**
 
 ```
 // Objective-C 
@@ -172,6 +161,8 @@ MSEventProperties *properties = [MSEventProperties new];
 [properties setDouble:3.23 forKey:@"LengthMinutes"]; 
 [appTarget2 trackEvent:@"VideoClicked" withTypedProperties:properties]; 
 ```
+
+**Swift**
 
 ```
 // Swift 
