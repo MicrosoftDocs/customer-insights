@@ -1,9 +1,13 @@
 ---
 uid: developers/downloads/sdk-samples
-title: Sample 1
+title: Sdk samples 
 ---
-# Sample 1
+# Android sample 
 
-Sample to come in February 
+[Download the android sample here](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/Android_3P_sample.zip)
+[Getting started guide](xref:developers/downloads/tutorials/android-java)
 
-@Abhi
+# iOS sample 
+
+[Download the iOS sample here](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/Android_3P_sample.zip)
+[Getting started guide](xref:developers/downloads/tutorials/ios-objc)
