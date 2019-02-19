@@ -65,6 +65,6 @@ Analytics.track({
 ## Types
 
 The following types are supported for event properties: 
-* String 
-* Double 
-* boolean 
+* `String` 
+* `Double` 
+* `boolean` 
