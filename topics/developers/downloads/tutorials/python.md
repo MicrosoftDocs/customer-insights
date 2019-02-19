@@ -36,7 +36,7 @@ from aria import LogManager, EventProperties
 ```
  
 ## Using the SDK
-While a full example can be seen in the SDK's [sample.py` file](sample.py), the basic usage pattern is demonstrated here.
+While a full example can be seen in the SDK's [sample.py file](sample.py), the basic usage pattern is demonstrated here.
  
 ```python
 from aria import LogManager, EventProperties, PiiKind
