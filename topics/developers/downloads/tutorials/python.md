@@ -10,7 +10,8 @@ As this is the Python SDK, the only required dependency is Python! The SDK suppo
 ## Installing the SDK
 There are two primary ways to use the Python SDK:
 * Install the SDK to your Python interpreter's `site-packages` folder, or
-* Place the SDK `.egg` file somewhere and add it to `sys.path`
+* Place the [SDK `.egg` file](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/aria-2.0.0.egg) 
+somewhere and add it to `sys.path`
  
 This page describes how to do both.
 
