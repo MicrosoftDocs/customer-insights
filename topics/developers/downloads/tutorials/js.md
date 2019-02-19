@@ -40,7 +40,7 @@ The SDK requires that the project or webpage must be hosted to send telemetry. S
 ```javascript
 var analytics = new oneDS.ApplicationInsights(); 
 var config = { 
-instrumentationKey: "Your_Instrumentation_Key" 
+    instrumentationKey: "Your_Instrumentation_Key" 
 }; 
  
 Analytics.initialize(config, []); 
