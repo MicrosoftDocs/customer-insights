@@ -3,19 +3,17 @@ uid: developers/downloads/python
 title: Get Started with Python
 ---
 # Getting started with Python
-
-# Getting Started with Aria SDK
  
-## Installing Dependencies
+## Installing dependencies
 As this is the Python SDK, the only required dependency is Python! The SDK supports both Python 2.7 and 3.x. There are no further dependencies, as they are bundled with the SDK.
- 
+
 ## Installing the SDK
-There are 2 primary ways to use the Python SDK:
+There are two primary ways to use the Python SDK:
 * Install the SDK to your Python interpreter's `site-packages` folder, or
 * Place the SDK `.egg` file somewhere and add it to `sys.path`
  
-This file describes how to do both.
- 
+This page describes how to do both.
+
 #### Installing to site-packages
 1. Open your terminal and `cd` to the directory containing the file `aria-x.y.z.egg`.
 2. Run `python -m easy_install aria-x.y.z.egg`
@@ -24,10 +22,10 @@ This file describes how to do both.
 import aria
 from aria import LogManager, EventProperties
 ```
- 
+
 #### Adding to the Import Path
-The SDK can also be used without installation using only the .egg file.
-In any Python script, use the following code recipe to use the SDK:
+The SDK can also be used without installation using only the `.egg` file.
+In any Python script, add the following code recipe to use the SDK:
 ```python
 import sys
 sys.path.append('/path/to/aria-x.y.z.egg')
@@ -50,7 +48,7 @@ logger = LogManager.initialize('0123456789abcdef-01234567-89abcdef')
 # Create an event
 event = EventProperties('some_event_name')
  
-# fill the event values
+# Fill the event values
 event.set_property('rpm', 50)
 event.set_property('device_name', 'Test Device 9000')
 event.set_property('active', True)
@@ -59,18 +57,18 @@ event.set_property('active', True)
 # This value will be obfuscated on upload, and will be unreadable
 event.set_property('username', 'SuperCoolUsername_42', pii_kind=PiiKind.PiiKind_DistinguishedName)
  
-# log the event
+# Log the event
 logger.log_event(event)
 ```
  
-Keep in mind that the SDK batches events and uploads them periodically (by default, a little over 3 times a second) rather than immediately when calling `log_event()`.
+Keep in mind that the SDK batches events and uploads them periodically rather than immediately (by default, a little over three times per second) when calling `log_event()`.
  
 To force all events to be uploaded, call
 ```python
 LogManager.flush()
 ```
  
-Before your program exits, you should be sure to call
+Before your program exits, call
 ```python
 LogManager.flush_and_tear_down()
 ```
