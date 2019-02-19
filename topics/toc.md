@@ -77,5 +77,7 @@
 ### [C# (services)](xref:developers/downloads/csharp)
 ### [Ingestion Tool](xref:developers/downloads/ingest)
 ### [iOS (mobile)](xref:developers/downloads/ios-objc)
+### [JavaScript](xref:developers/downloads/js)
 ### [JavaScript (Web)](xref:developers/downloads/web)
+### [.NET](xref:developers/downloads/dotnet)
 ### [Python](xref:developers/downloads/python)
