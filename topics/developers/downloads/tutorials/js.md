@@ -10,54 +10,59 @@ This tutorial guides you through the process of using a Product Insights instrum
 
 The SDK requires that the project or webpage must be hosted to send telemetry. Sending telemetry from a local file will not be accepted by the server.  
  
-## Get an API token from Aria portal
+## 1. Get an API token from Aria portal
 
-From the Home screen in the Portal, click Explorer in the navigation pane on the left. The Projects List flies-out.
+1. On the **Home** screen in the Portal, select **Explorer** in the navigation pane on the left. The **Projects List** appears.
 
-Add a new project by clicking the plus sign at the bottom of the list. The Instrument Wizard appears, displaying the Create a project page.
+2. Add a new project by clicking the plus sign at the bottom of the list. The **Instrument Wizard** appears, displaying the **Create a project** page.
 
-Enter a name for your project.
+3. Enter a name for your project.
 
-Leave the default value of Sandbox for Group.
+4. Leave the default value of **Sandbox** for **Group**.
 
-Click Create project. The What platform are you using? page appears.
+5. Select **Create project**. The **What platform are you using?** page appears.
 
-Pick a platform from the drop-down list, but don’t click Next! Click Skip this wizard instead, and the Project Manager page appears.
+6. Select a platform from the drop-down list, but don’t select **Next**. Select **Skip this wizard** instead. The **Project Manager** page appears.
 
-Your API token appears on the right side of this page, under Ingestion Key. Leave this tab open in your web browser because you will come back to it and copy it to the clipboard for use later. 
+7. Your API token appears on the right side of the page, under **Ingestion Key**. Leave the tab open in your web browser because you will come back to it and copy the ingestion key to the clipboard for later use. 
  
-## Integrate the SDK into your webpage or project
+## 2. Integrate the SDK into your webpage or project
 
-Add the SDK to your page using the script tag like so: 
- 
-<script type="text/javascript"  
-src="https://1dsjssdk.blob.core.windows.net/scripts/latest/ms.analytics-1-beta.js"> 
+1. Add the SDK to your page using the `script` tag: 
+
+```javascript
+<script type="text/javascript" src="https://1dsjssdk.blob.core.windows.net/scripts/latest/ms.analytics-1-beta.js"> 
 </script> 
- 
-Start the SDK (Only required to start it once): 
- 
+```
+
+2. Start the SDK (you only need to do this once):
+
+```javascript
 var analytics = new oneDS.ApplicationInsights(); 
 var config = { 
 instrumentationKey: "Your_Instrumentation_Key" 
 }; 
  
 Analytics.initialize(config, []); 
- 
-Track events : 
- 
+```
+
+3. Track events: 
+
+```javascript
 // Do a simple track call. 
 Analytics.track({ 
-name: "my_simple_event_name", 
-data: { 
-"Name": "Ashley Smith", 
-"School": "Bellevue High School", 
-"Grade": 11, 
-"Gpa": 3.82, 
-"Suspended": false 
-} 
+    name: "my_simple_event_name", 
+    data: { 
+        "Name": "Ashley Smith", 
+        "School": "Bellevue High School", 
+        "Grade": 11, 
+        "Gpa": 3.82, 
+        "Suspended": false 
+    } 
 }); 
- 
-Following types are supported for event properties: 
-String 
-Double 
-boolean 
+```
+
+The following types are supported for event properties: 
+* String 
+* Double 
+* boolean 
