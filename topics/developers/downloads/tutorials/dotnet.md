@@ -54,18 +54,19 @@ static void SetUpTelemetrySinks()
     Var ariaChannel = new OneCollectorChannel(); 
     TelemetrySink sink = new TelemetrySink(config, ariaChannel) { Name = "AriaSink" }; 
   
-    // Initialize sink with Aria configuration 
+    // Initialize sink with Product Insights configuration 
     var ariaConfig = new TelemetryConfiguration(Constants.OneCollectorTenant); 
     sink.Initialize(ariaConfig); 
   
-    // Plug Aria sink 
+    // Plug Product Insights sink 
     config.TelemetrySinks.Add(sink); 
     config.TelemetryProcessorChainBuilder.Build(); 
 } 
 ```
 
-Track events : 
- 
+5. Track events: 
+
+```csharp
 static void SendTelemetry() 
 { 
     EventTelemetry test = new EventTelemetry("TestSink"); 
@@ -75,8 +76,11 @@ static void SendTelemetry()
     TelemetryConfiguration.Active.TelemetrySinks.First(sink => sink.Name == "AriaSink").TelemetryChannel.Flush();  
     ariaChannel.UploadNow(); 
 } 
- 
-Track mixed events: 
+```
+
+6. Track mixed events:
+
+```csharp
 private static void TestMixedEvents() 
 { 
     var telemetryClient = new TelemetryClient(); 
@@ -91,3 +95,4 @@ private static void TestMixedEvents()
     telemetryClient.TrackTrace("Fetched contact details.", SeverityLevel.Information); 
     TelemetryConfiguration.Active.TelemetrySinks.First(sink => sink.Name == "AriaSink").TelemetryChannel.Flush(); 
 } 
+```
