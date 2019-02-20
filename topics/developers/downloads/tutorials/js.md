@@ -10,7 +10,7 @@ This tutorial guides you through the process of using a Product Insights instrum
 
 The SDK requires that the project or webpage must be hosted to send telemetry. Sending telemetry from a local file will not be accepted by the server.  
  
-## 1. Get an API token from Aria portal
+## 1. Get an API token from the Product Insights portal
 
 1. On the **Home** screen in the Portal, select **Explorer** in the navigation pane on the left. The **Projects List** appears.
 
