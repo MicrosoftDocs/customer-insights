@@ -71,10 +71,10 @@ The following types are supported for event properties:
 
 ## Code sample
 
-[Download a JavaScript code sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/JavascriptSample.zip)
+[Download JavaScript code sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/JavascriptSample.zip)
 
 ### Running the sample
  
 1. Open the file in Visual Studio Code and add the instrumentation key. 
 2. [Install Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
-3. Type Alt+L, Alt+O to launch the HTML page in a local server and Alt+L, Alt+C to stop the server. (Under Mac OS type Cmd+L, Cmd+O and Cmd+L, Cmd+C.)
+3. Select Alt+L, Alt+O to launch the HTML page in a local server and Alt+L, Alt+C to stop the server. (Under Mac OS select Cmd+L, Cmd+O and Cmd+L, Cmd+C.)
