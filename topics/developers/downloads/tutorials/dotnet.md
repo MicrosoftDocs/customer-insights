@@ -96,3 +96,13 @@ private static void TestMixedEvents()
     TelemetryConfiguration.Active.TelemetrySinks.First(sink => sink.Name == "AriaSink").TelemetryChannel.Flush(); 
 } 
 ```
+
+## Code sample
+
+[Download .NET code sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/DotNetSample.zip)
+
+### Running the sample
+
+1. Unzip and open the project.
+2. Replace the API token in the `Constants` class with your own token. 
+3. Run the sample in Visual Studio.
