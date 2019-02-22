@@ -1,0 +1,20 @@
+---
+uid: developers/downloads/api-token
+title: Get your project's token to send signals 
+---
+
+## 1. Get an API token from Product Insights portal 
+
+a. From the **Home** screen in the Portal, click **Explorer** in the navigation pane on the left. The **Projects List** appears.
+
+b. Add a new project by clicking the plus sign at the bottom of the list. The **Instrument Wizard** appears, displaying the **Create a project** page.
+
+c. Enter a name for your project.
+
+d. Leave the default value of Sandbox for **Group**.
+
+e. Select **Create project**. The **What platform are you using?** page appears.
+
+f. Pick a platform from the drop-down list, but don’t click **Next**. Click **Skip this wizard** instead, and the **Project Manager** page appears.
+
+g. Your API token appears on the right side of this page, under **Ingestion Key**. Leave this tab open in your web browser because you will come back to it and copy it to the clipboard for use later.
