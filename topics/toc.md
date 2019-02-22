@@ -69,9 +69,9 @@
 ### [Compliance](xref:developers/articles/compliance)
 ### [Security](xref:developers/articles/security)
 
-# Downloads
-## [Event SDK Downloads](xref:developers/downloads/downloads)
-## [SDK samples](xref:developers/downloads/sdk-samples)
+# Signal senders
+## [Signal sender downloads](xref:developers/downloads/downloads)
+## [Signal sender samples](xref:developers/downloads/sdk-samples)
 ## Signal Sender Tutorials
 ### [Android (mobile)](xref:developers/downloads/android-java)
 ### [CSV Sender](xref:developers/downloads/ingest)
