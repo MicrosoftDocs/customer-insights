@@ -6,7 +6,7 @@ title: Get Started with Python
  
 ## Prerequisites
 * Python 2.7 or 3.x
-* [API token](./api-token.md)
+* [API token](api-token)
 
 ## Installing the SDK
 There are two primary ways to use the Python SDK:
