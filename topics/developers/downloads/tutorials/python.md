@@ -4,8 +4,9 @@ title: Get Started with Python
 ---
 # Getting started with Python
  
-## Installing dependencies
-As this is the Python SDK, the only required dependency is Python! The SDK supports both Python 2.7 and 3.x. There are no further dependencies, as they are bundled with the SDK.
+## Prerequisites
+* Python 2.7 or 3.x
+* [API token](api-token.md)
 
 ## Installing the SDK
 There are two primary ways to use the Python SDK:
