@@ -72,12 +72,10 @@
 # Downloads
 ## [Event SDK Downloads](xref:developers/downloads/downloads)
 ## [SDK samples](xref:developers/downloads/sdk-samples)
-## SDK Tutorials
+## Signal Sender Tutorials
 ### [Android (mobile)](xref:developers/downloads/android-java)
-### [C# (services)](xref:developers/downloads/csharp)
-### [Ingestion Tool](xref:developers/downloads/ingest)
+### [CSV Sender](xref:developers/downloads/ingest)
 ### [iOS (mobile)](xref:developers/downloads/ios-objc)
 ### [JavaScript](xref:developers/downloads/js)
-### [JavaScript (Web)](xref:developers/downloads/web)
 ### [.NET](xref:developers/downloads/dotnet)
 ### [Python](xref:developers/downloads/python)
