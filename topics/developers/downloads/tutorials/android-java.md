@@ -9,7 +9,7 @@ This tutorial will help you start sending signals in five minutes. Get the signa
 ## Prerequisites 
 - Android Studio 
 - Minimum Android API Level: 16 (Jelly Bean)  
-- [API Token](xref:developers/downloads/api-token)
+- [API token](xref:developers/downloads/api-token)
 
 ## Integrate the signal sender into your project 
 1. Open your project. If you don't have one, create a new project with **Empty Activity** in Android Studio.
