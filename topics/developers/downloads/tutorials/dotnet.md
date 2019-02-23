@@ -9,24 +9,9 @@ This tutorial guides you through the process of using a Product Insights ingesti
 ## Prerequisites 
 * Visual Studio 
 * .NET Standard 1.3  
+* [API Token](xref:developers/downloads/api-token)
 
-## 1. Get an API token from the Product Insights portal
-
-1. On the **Home** screen in the Portal, select **Explorer** in the navigation pane on the left. The **Projects List** appears.
-
-2. Add a new project by clicking the plus sign at the bottom of the list. The **Instrument Wizard** appears, displaying the **Create a project** page.
-
-3. Enter a name for your project.
-
-4. Leave the default value of **Sandbox** for **Group**.
-
-5. Select **Create project**. The **What platform are you using?** page appears.
-
-6. Select a platform from the drop-down list, but don’t select **Next**. Select **Skip this wizard** instead. The **Project Manager** page appears.
-
-7. Your API token appears on the right side of the page, under **Ingestion Key**. Leave the tab open in your web browser because you will come back to it and copy the ingestion key to the clipboard for later use. 
-
-## 2. Integrate the SDK into your project
+## Integrate the signal sender into your project
 
 1. Open your project. If you don't have one, create a new project with Empty Activity in Visual Studio. 
  
