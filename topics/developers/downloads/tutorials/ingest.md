@@ -1,23 +1,23 @@
 ---
 uid: developers/downloads/ingest
-title: Getting started with the Ingestion Tool
+title: Getting started with the CSV Sender
 ---
-# Getting started with the Ingestion Tool
+# Getting started with the CSV Sender
 
-The Ingestion Tool can be used to send data from a CSV file to Product Insights.
+The CSV Sender can be used to send data from a CSV file to Product Insights.
 
 The first line of the CSV file must contain the header that specifies the field names.
 Each subsequent line in the CSV file must contain data (field values) for one event.
 
-## Download the Ingestion Tool
+## Download the CSV Sender
 
 To download the tool, click the following link.
 
-[Download the Ingestion Tool](https://ariamediahost.blob.core.windows.net/sdk/aria-powershell.zip)
+[Download the CSV Sender](https://ariamediahost.blob.core.windows.net/sdk/aria-powershell.zip)
 
-## Run the Ingestion Tool
+## Run the CSV Sender
 
-You can run the Ingestion Tool in PowerShell as follows:
+You can run the CSV Sender in PowerShell as follows:
 
 ```powershell
 .\IngestionTool.ps1 -CsvFile YOUR_CSV_FILE -schema YOUR_SCHEMA_FILE -EventName YOUR_EVENT_NAME -ApiToken YOUR_API_KEY
@@ -32,7 +32,7 @@ must provide either the `-schema` or `-EventName` parameter.
 > To override the system timestamp, you will need a custom schema. 
 > Without a schema, all events will have the ingestion time set to the timestamp.
 
-If you run the Ingestion Tool in the directory where you put it, it
+If you run the CSV Sender in the directory where you put it, it
 will print the results on screen.
 
 ## Get a project key
