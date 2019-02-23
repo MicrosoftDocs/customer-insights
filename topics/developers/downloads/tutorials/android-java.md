@@ -21,7 +21,7 @@ dependencies {
     implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}" 
 } 
 ```
-3. Gradle Sync.
+3. Gradle sync.
 
 4. Open your app's main activity class and import: 
 ```
