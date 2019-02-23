@@ -4,7 +4,7 @@ title: Getting started with the CSV Sender
 ---
 # Getting started with the CSV Sender
 
-The CSV Sender can be used to send data from a CSV file to Product Insights.
+The CSV Sender can be used to send data from a comma-separated value file to Product Insights.
 
 The first line of the CSV file must contain the header that specifies the field names.
 Each subsequent line in the CSV file must contain data (field values) for one event.
