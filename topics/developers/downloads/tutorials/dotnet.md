@@ -1,10 +1,10 @@
 ---
 uid: developers/downloads/dotnet
-title: Get started with the 1DS SDK for .NET (C#) 
+title: Get started with .NET (C#) 
 ---
-# Getting started with the 1DS SDK for .NET (C#)
+# Getting started with .NET (C#)
 
-This tutorial guides you through the process of using a Product Insights ingestion token and the 1DS .NET Core SDK for your existing app, which will have you tracking events in about five minutes. 
+This tutorial guides you through the process of using a Product Insights API token and the 1DS .NET Core SDK with your existing app, which will have you sending signals in about five minutes. 
  
 ## Prerequisites 
 * Visual Studio 
