@@ -70,13 +70,13 @@
 ### [Security](xref:developers/articles/security)
 
 # Signal senders
-## [Signal sender downloads](xref:developers/downloads/downloads)
-## [Signal sender samples](xref:developers/downloads/sdk-samples)
-## Signal Sender Tutorials
+## [Downloads](xref:developers/downloads/downloads)
+## [Samples](xref:developers/downloads/sdk-samples)
+## Tutorials
 ### [Android (mobile)](xref:developers/downloads/android-java)
+### [API token](xref:developers/downloads/api-token)
 ### [CSV Sender](xref:developers/downloads/ingest)
 ### [iOS (mobile)](xref:developers/downloads/ios-objc)
 ### [JavaScript](xref:developers/downloads/js)
 ### [.NET](xref:developers/downloads/dotnet)
 ### [Python](xref:developers/downloads/python)
-### [API token](xref:developers/downloads/api-token)
