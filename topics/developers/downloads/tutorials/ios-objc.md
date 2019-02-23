@@ -11,6 +11,7 @@ Prerequisites:
 - [Xcode 8.3.3+](https://developer.apple.com/xcode/downloads/) 
 - macOS 10.12+ 
 - iOS 9+ 
+- [API token](xref:developers/downloads/api-token)
 
 ## Integrate the 1DS iOS SDK into your project and instrument your app
 
