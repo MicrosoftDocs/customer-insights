@@ -3,31 +3,16 @@ uid: developers/downloads/ios-objc
 title: iOS (mobile)
 ---
 
-# Getting started with the 1DS SDK for iOS (ObjC & Swift) 
+# Getting started with iOS (ObjC & Swift) 
  
-This tutorial guides you through the process of using an Aria ingestion token and the 1DS SDK for your existing app, which will have you tracking events in about five minutes. 
+This tutorial guides you through the process of using an Product Insights ingestion token and the 1DS SDK for your existing app, which will have you tracking events in about five minutes. 
  
 Prerequisites:
 - [Xcode 8.3.3+](https://developer.apple.com/xcode/downloads/) 
 - macOS 10.12+ 
 - iOS 9+ 
- 
-## 1. Get an API token from Aria portal 
-1. From the **Home** screen in the Portal, select **Explorer** in the navigation pane on the left. The **Projects List** appears.
 
-2. Add a new project by clicking the plus sign at the bottom of the list. The **Instrument Wizard** appears, displaying the **Create a project** page.
-
-3. Enter a name for your project.
-
-4. Leave the default value of **Sandbox** as **Group**.
-
-5. Select **Create project**. The **What platform are you using?** page appears.
-
-6. Select a platform from the drop-down list, but don’t select **Next**. Click **Skip this wizard** instead, and the **Project Manager** page appears.
-
-7. Your API token appears on the right side of this page, under **Ingestion Key**. Leave this tab open in your web browser because you will come back to it and copy your token to the clipboard for use later. 
-
-## 2. Integrate the 1DS iOS SDK into your project and instrument your app
+## Integrate the 1DS iOS SDK into your project and instrument your app
 
 ### Option 1: Integrate the SDK using CocoaPods
 
