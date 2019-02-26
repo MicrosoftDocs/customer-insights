@@ -30,7 +30,7 @@ using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.Applications.Events; 
 ```
 
-4. Start the SDK (you only need to do this once):
+4. Start the signal sender (you only need to do this once):
 
 ```csharp
 static void SetUpTelemetrySinks() 
