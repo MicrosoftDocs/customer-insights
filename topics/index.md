@@ -31,7 +31,7 @@ ms.custom:
 										<div class="card">
 											<div class="cardImageOuter">
 												<div class="cardImage bgdAccent1">
-													<img src="https://docs.microsoft.com/media/common/i_get-started.svg" x="5%" y="5%" height="5%" width="5%" alt="" data-linktype="external">
+													<img src="https://docs.microsoft.com/media/illustrations/bcs-user-management-add-customer-1.svg" alt="" data-linktype="external">
 												</div>
 											</div>
 											<div class="cardText">
@@ -50,7 +50,7 @@ ms.custom:
 										<div class="card">
 											<div class="cardImageOuter">
 												<div class="cardImage bgdAccent1">
-													<img src="https://docs.microsoft.com/media/common/i_blog.svg" width="5%" alt="" data-linktype="external">
+													<img src="https://docs.microsoft.com/media/illustrations/virtualization-hperv-server-community.svg" alt="" data-linktype="external">
 												</div>
 											</div>
 											<div class="cardText">
@@ -69,7 +69,7 @@ ms.custom:
 										<div class="card">
 											<div class="cardImageOuter">
 												<div class="cardImage bgdAccent1">
-													<img src="https://docs.microsoft.com/media/common/i_benefits.svg" width="5%" alt="" data-linktype="external">
+													<img src="https://docs.microsoft.com/media/illustrations/dynamics-training.svg" alt="" data-linktype="external">
 												</div>
 											</div>
 											<div class="cardText">
