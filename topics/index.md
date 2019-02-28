@@ -36,7 +36,7 @@ ms.custom:
 											</div>
 											<div class="cardText">
 												<h3>What is Product Insights?</h3>
-												<p>1 minute introduction</p>
+												<p>One minute introduction</p>
 											</div>
 										</div>
 									</div>
