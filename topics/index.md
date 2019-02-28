@@ -31,7 +31,7 @@ ms.custom:
 										<div class="card">
 											<div class="cardImageOuter">
 												<div class="cardImage bgdAccent1">
-													<img src="https://docs.microsoft.com/media/common/i_get-started.svg" height="10%" alt="" data-linktype="external">
+													<img src="https://docs.microsoft.com/media/common/i_get-started.svg" width="5%" alt="" data-linktype="external">
 												</div>
 											</div>
 											<div class="cardText">
@@ -50,7 +50,7 @@ ms.custom:
 										<div class="card">
 											<div class="cardImageOuter">
 												<div class="cardImage bgdAccent1">
-													<img src="https://docs.microsoft.com/media/common/i_blog.svg" height="10%" alt="" data-linktype="external">
+													<img src="https://docs.microsoft.com/media/common/i_blog.svg" width="5%" alt="" data-linktype="external">
 												</div>
 											</div>
 											<div class="cardText">
