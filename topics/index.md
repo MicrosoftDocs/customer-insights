@@ -50,7 +50,7 @@ ms.custom:
 										<div class="card">
 											<div class="cardImageOuter">
 												<div class="cardImage bgdAccent1">
-													<img src="https://docs.microsoft.com/media/illustrations/virtualization-hperv-server-community.svg" alt="" data-linktype="external">
+													<img src="https://docs.microsoft.com/media/common/i_blog.svg" width="20%" alt="" data-linktype="external">
 												</div>
 											</div>
 											<div class="cardText">
