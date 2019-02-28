@@ -69,7 +69,7 @@ ms.custom:
 										<div class="card">
 											<div class="cardImageOuter">
 												<div class="cardImage bgdAccent1">
-													<img src="https://docs.microsoft.com/media/illustrations/dynamics-training.svg" alt="" data-linktype="external">
+													<img src="https://docs.microsoft.com/media/common/i_benefits.svg" width="5%" alt="" data-linktype="external">
 												</div>
 											</div>
 											<div class="cardText">
