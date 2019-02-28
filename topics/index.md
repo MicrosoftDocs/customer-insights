@@ -74,7 +74,7 @@ ms.custom:
 											</div>
 											<div class="cardText">
 												<h3>How do I start?</h3>
-												<p>Find the quickest entries to getting started with Product Insights.</p>
+												<p>Find the quickest way to get started with Product Insights.</p>
 											</div>
 										</div>
 									</div>
