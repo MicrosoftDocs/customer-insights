@@ -90,7 +90,7 @@ ms.custom:
             <ul id="developers">
                 <li>
                     <a href="#dev-section"></a>
-                    <ul id="dev-section" class="cardsZ">
+                    <ul id="dev-section" class="cardsC">
                         <li>
 							<a href="developers/downloads/tutorials/web.md">
 								<div class="cardSize">
@@ -149,7 +149,7 @@ ms.custom:
             <ul id="managers">
                 <li>
                     <a href="#man-section"></a>
-                    <ul id="man-section" class="cardsZ">
+                    <ul id="man-section" class="cardsC">
                         <li>
 							<a href="developers/quick-starts/1_view.md">
 								<div class="cardSize">
