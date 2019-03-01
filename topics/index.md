@@ -21,7 +21,7 @@ ms.custom:
 					<ul id="users-section" class="cardsC">
 						<li>
 							<div class="container intro">
-								<p>Welcome message here</p>
+								<p>Welcome to Product Insights, the leading telemetry and data analytics software from Microsoft!</p>
 							</div>
 						</li>
 						<li>
@@ -36,7 +36,7 @@ ms.custom:
 											</div>
 											<div class="cardText">
 												<h3>What is Product Insights?</h3>
-												<p>1 minute introduction</p>
+												<p>One minute introduction</p>
 											</div>
 										</div>
 									</div>
