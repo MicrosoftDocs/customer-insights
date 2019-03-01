@@ -175,7 +175,7 @@ ms.custom:
 <img src="https://docs.microsoft.com/media/illustrations/system-center-virtual-machine.svg" alt="" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>Publish to a dashboard</h3>
-												<p>With Product Insights, you can use standard scientific and industry metrics or create your own.</p>
+												<p>Publish the metrics you've created to a collaborative dashboard.</p>
 											</div>
 										</div>
 									</div>
