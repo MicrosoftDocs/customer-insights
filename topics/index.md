@@ -96,6 +96,12 @@ ms.custom:
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
+<div class="cardImageOuter"><div class="cardImage bgdAccent1"><img src="https://docs.microsoft.com/" alt="" data-linktype="external"></div></div>										   
+											<div class="cardImageOuter">
+												<div class="cardImage bgdAccent1">
+													<img src="https://docs.microsoft.com/media/illustrations/biztalk-developer-documentation-1.svg" alt="" data-linktype="external">
+												</div>
+											</div>
 											<div class="cardText">
 												<h3>JavaScript (Web) tutorial</h3>
 												<p>Follow this short tutorial and have Product Insights telemetry running on the Web in minutes.</p>
@@ -110,6 +116,9 @@ ms.custom:
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
+<div class="cardImageOuter"><div class="cardImage bgdAccent1"><img src="https://docs.microsoft.com/media/illustrations/sql-get-started-download.svg" alt="" data-linktype="external"></div></div>
+								<div class="cardPadding">
+
 											<div class="cardText">
 												<h3>Download JavaScript (Web) SDK</h3>
 												<p>Download this software development kit to get Product Insights telemetry up and running.</p>
@@ -124,6 +133,7 @@ ms.custom:
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
+<div class="cardImageOuter"><div class="cardImage bgdAccent1"><img src="https://docs.microsoft.com/media/illustrations/nuget-tools-reference_2.svg" alt="" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>SDK samples</h3>
 												<p>Study code samples from Product Insights software development kits for a variety of languages and environments.</p>
@@ -148,6 +158,7 @@ ms.custom:
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
+<div class="cardImageOuter"><div class="cardImage bgdAccent1"><img src="https://docs.microsoft.com/media/illustrations/team-services-agile-track.svg" alt="" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>View data</h3>
 												<p>Visualize your data in a number of different ways, all of which are useful for different purposes.</p>
@@ -162,6 +173,7 @@ ms.custom:
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
+<div class="cardImageOuter"><div class="cardImage bgdAccent1"><img src="https://docs.microsoft.com/media/illustrations/sql-analytics-service.svg" alt="" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>Create a metric</h3>
 												<p>With Product Insights, you can use standard scientific and industry metrics or create your own.</p>
@@ -176,6 +188,7 @@ ms.custom:
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
+<div class="cardImageOuter"><div class="cardImage bgdAccent1"><img src="https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-faq-2.svg" alt="" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>FAQ</h3>
 												<p>Frequently asked questions about Product Insights</p>
