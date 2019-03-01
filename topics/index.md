@@ -92,7 +92,7 @@ ms.custom:
                     <a href="#dev-section"></a>
                     <ul id="dev-section" class="cardsC">
                         <li>
-							<a href="developers/downloads/tutorials/web.md">
+							<a href="developers/quick-starts/3_transform.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -101,7 +101,7 @@ ms.custom:
 <img src="https://docs.microsoft.com/media/illustrations/team-services-agile-track.svg" alt="" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>Transforming data</h3>
-												<p>Follow this short tutorial and have Product Insights telemetry running on the Web in minutes.</p>
+												<p>Are sales figures going up or down? What is the cumulative figure like? How about rolling averages?</p>
 											</div>
 										</div>
 									</div>
@@ -109,15 +109,15 @@ ms.custom:
 							</a>
                         </li>
                         <li>
-							<a href="developers/downloads/downloads.md">
+							<a href="developers/downloads/sdk-samples.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/nuget-tools-reference_2.svg" alt="" data-linktype="external"></div></div>
+<img src="https://docs.microsoft.com/media/illustrations/sql-get-started-download.svg" alt="" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>Signal sender samples</h3>
-												<p>Download this software development kit to get Product Insights telemetry up and running.</p>
+												<p>Download these signal senders to get Product Insights telemetry up and running in minutes.</p>
 											</div>
 										</div>
 									</div>
@@ -151,15 +151,15 @@ ms.custom:
                     <a href="#man-section"></a>
                     <ul id="man-section" class="cardsC">
                         <li>
-							<a href="developers/quick-starts/1_view.md">
+							<a href="developers/quick-starts/5_collaborate.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/virtualization-hperv-server-community.svg" alt="" data-linktype="external"></div></div>
+<img src="https://docs.microsoft.com/media/illustrations/biztalk-host-integration-popular-downloads.svg" alt="" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>Collaborate with others</h3>
-												<p>Visualize your data in a number of different ways, all of which are useful for different purposes.</p>
+												<p>Collaborate with others using the built-in communications features of Product Insights.</p>
 											</div>
 										</div>
 									</div>
@@ -167,7 +167,7 @@ ms.custom:
 							</a>
                         </li>
                         <li>
-							<a href="developers/quick-starts/2_create.md">
+							<a href="developers/quick-starts/3_publish">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
