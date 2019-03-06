@@ -5,7 +5,7 @@
 ### [Who uses Product Insights?](xref:developers/quick-starts/who-uses)
 ### [How is it structured?](xref:developers/quick-starts/how-structured)
 ### [How do I start?](xref:developers/quick-starts/how-start)
-## Explore data(xref:developers/quick-starts/explore-data)
+## Explore data
 ### [1. View data](xref:developers/quick-starts/1_view)
 ### [2. Slice and dice data](xref:developers/quick-starts/2_slice)
 ### [3. Transform data](xref:developers/quick-starts/3_transform)
@@ -36,7 +36,7 @@
 ### [Send CSV data](xref:developers/tutorials/send-csv)
 ### [Send from elsewhere](xref:developers/tutorials/send-elsewhere)
 ### [Connect IoT hub](xref:developers/tutorials/import-elsewhere)
-## Explore data 
+## [Explore data](xref:developers/tutorials/explore-data)
 ### [Create metrics](xref:developers/tutorials/create-metrics)
 ### [Transform data](xref:developers/tutorials/transform-data)
 ### [Get AI suggestions](xref:developers/tutorials/get-ai)
