@@ -4,6 +4,8 @@ title: Get an API token from the Product Insights portal
 ---
 # Get an API token from the Product Insights portal
 
+_With Product Insights, it’s easy to create a project with the Instrument Wizard and begin adding, checking, editing, and deleting its features with the Project Manager._
+
 1. From the **Home** screen in the Portal, click **Explorer** in the navigation pane on the left. The **Projects List** appears.
 
 2. Add a new project by clicking the plus sign at the bottom of the list. The **Instrument Wizard** appears, displaying the **Create a project** page.
