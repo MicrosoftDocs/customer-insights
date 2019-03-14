@@ -15,7 +15,8 @@ This tutorial will help you start sending signals in five minutes. Get the signa
 1. Open your project. If you don't have one, create a new project with **Empty Activity** in Android Studio.
 
 2. Open the app level `build.gradle` file (`app/build.gradle`) and add the following lines after "Apply plugin" to include the dependencies for the project:
-```
+
+```java
 dependencies { 
     def appCenterSdkVersion = '1.11.0' 
     implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}" 
@@ -24,19 +25,22 @@ dependencies {
 3. Gradle sync.
 
 4. Open your app's main activity class and import: 
-```
+
+```java
 import com.microsoft.appcenter.AppCenter; 
 import com.microsoft.appcenter.analytics.Analytics; 
 ```
 
 5. Start the sender (it's only required to start it once): 
-```
+
+```java
 // The first parameter is the application context, this examples assumes it is called from an Activity. 
 AppCenter.start(getApplication(), "target={Your-API-Token}", Analytics.class); 
 ```
 
 6. Create a signal : 
-```
+
+```java
 // Do a simple trackEvent call. 
 Analytics.trackEvent("my_simple_event_name"); 
  
