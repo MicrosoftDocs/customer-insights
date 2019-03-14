@@ -13,10 +13,6 @@ your visualisations.
 
 A metric that accumulates over time, such as a count of items.
 
-## Aqua
-
-A product within Shared Data. See [https://aka.ms/aqua](https://aka.ms/aqua) for more info.
-
 ## cardinality
 
 Number of total realized dimensions in a cube in a specified aggregation
