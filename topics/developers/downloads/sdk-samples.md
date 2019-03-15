@@ -3,7 +3,7 @@ uid: developers/downloads/sdk-samples
 title: Sdk samples 
 ---
 
-#SDK Samples
+# SDK Samples
 
 ## Android sample 
 
