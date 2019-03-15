@@ -21,7 +21,7 @@ The video below shows
 
 
 
-To run more complex queries, try out our Kusto Explorer. 
+To run more complex queries, try out our Kusto Explorer (link tbd). 
 Kusto Explorer enables searching and queries over your raw Product Insights event data. 
 
 To connect to your Product Insights project in Kusto, use this connection string: 
