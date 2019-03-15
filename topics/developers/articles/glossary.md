@@ -142,8 +142,7 @@ See [NGP](#ngp).
 ## Geneva
 
 [Geneva](https://aka.ms/geneva) is an Azure service.
-See [/developers/articles/telemetry/](/developers/articles/telemetry/)
-for more information.
+See /developers/articles/telemetry/ for more information.
 
 ## impression ID
 
@@ -202,10 +201,9 @@ See [event properties](#event-properties).
 Personally Identifiable Information is any data that could potentially
 identify a specific individual. If your data to Product Insights
 contains any such data, you should use PII tagging to ensure data
-privacy.  [Find out how you can handle PII data](/developers/how-to/tag-pii-values/).
+privacy.  Find out how you can handle PII data.
 Product Insights uses the
-nomenclature of _EUII_ and _OII_.  For more information, see
-[/developers/articles/office-compliance/](/developers/articles/office-compliance/).
+nomenclature of _EUII_ and _OII_.  For more information, see /developers/articles/office-compliance/.
 
 ## project
 
@@ -276,7 +274,7 @@ event with the specified name and event fields. The semantic APIs
 prescribe a standard set of fields for common types of events such as
 metrics, operations, page views, and user actions. The SDK
 auto-populates common fields about the application, user, device, platform, etc. (See
-[/developers/articles/common-properties/](/developers/articles/common-properties/).)
+/developers/articles/common-properties/.)
 Each SDK also
 offers features optimized for the platform. For example, the Client
 SDKs support smart transmission of events to reduce power and metered
