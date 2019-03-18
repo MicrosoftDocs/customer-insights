@@ -70,9 +70,9 @@
 ### [Security](xref:developers/articles/security)
 
 # Signal senders
-## [Downloads](xref:developers/downloads/downloads)
-## [Samples](xref:developers/downloads/sdk-samples)
-## [Tutorials](xref:developers/downloads/tutorials/index)
+## [Download senders](xref:developers/downloads/downloads)
+## [Sample senders](xref:developers/downloads/sdk-samples)
+## [Sender tutorials](xref:developers/downloads/tutorials/index)
 ### [Android (mobile)](xref:developers/downloads/android-java)
 ### [API token](xref:developers/downloads/api-token)
 ### [CSV Sender](xref:developers/downloads/ingest)
