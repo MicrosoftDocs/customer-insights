@@ -1,6 +1,6 @@
 ---
 uid: developers/downloads/downloads
-title: Event SDK downloads
+title: Download senders
 ---
 # Event SDK downloads
 
