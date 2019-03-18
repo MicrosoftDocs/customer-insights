@@ -98,7 +98,7 @@ ms.custom:
 										<div class="card">
 
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/team-services-agile-track.svg" alt="" data-linktype="external"></div></div>
+<img src="https://docs.microsoft.com/media/illustrations/team-services-agile-track.svg" alt="Transforming data" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>Transforming data</h3>
 												<p>Are sales figures going up or down? What is the cumulative figure like? How about rolling averages?</p>
@@ -114,7 +114,7 @@ ms.custom:
 									<div class="cardPadding">
 										<div class="card">
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/sql-get-started-download.svg" alt="" data-linktype="external"></div></div>
+<img src="https://docs.microsoft.com/media/illustrations/sql-get-started-download.svg" alt="Signal sender samples" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>Signal sender samples</h3>
 												<p>Download these signal senders to get Product Insights telemetry up and running in minutes.</p>
@@ -125,12 +125,12 @@ ms.custom:
 							</a>							
                         </li>
                         <li>
-							<a href="developers/downloads/tutorials.md">
+							<a href="developers/downloads/tutorials/index.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/ms365enterprise-partner-resource-training-1.svg" alt="" data-linktype="external"></div></div>
+<img src="https://docs.microsoft.com/media/illustrations/ms365enterprise-partner-resource-training-1.svg" alt="Tutorials" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>Tutorials</h3>
 												<p>Study code samples from Product Insights software development kits for a variety of languages and environments.</p>
@@ -156,7 +156,7 @@ ms.custom:
 									<div class="cardPadding">
 										<div class="card">
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/biztalk-host-integration-popular-downloads.svg" alt="" data-linktype="external"></div></div>
+<img src="https://docs.microsoft.com/media/illustrations/biztalk-host-integration-popular-downloads.svg" alt="Collaborate with others" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>Collaborate with others</h3>
 												<p>Collaborate with others using the built-in communications features of Product Insights.</p>
@@ -167,12 +167,12 @@ ms.custom:
 							</a>
                         </li>
                         <li>
-							<a href="developers/quick-starts/3_publish">
+							<a href="developers/quick-starts/3_publish.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/system-center-virtual-machine.svg" alt="" data-linktype="external"></div></div>
+<img src="https://docs.microsoft.com/media/illustrations/system-center-virtual-machine.svg" alt="Publish to a dashboard" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>Publish to a dashboard</h3>
 												<p>Publish the metrics you've created to a collaborative dashboard.</p>
@@ -183,12 +183,12 @@ ms.custom:
 							</a>							
                         </li>
                         <li>
-							<a href="developers/faq">
+							<a href="developers/faq/index.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-faq-2.svg" alt="" data-linktype="external"></div></div>
+<img src="https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-faq-2.svg" alt="FAQ" data-linktype="external"></div></div>
 											<div class="cardText">
 												<h3>FAQ</h3>
 												<p>Frequently asked questions about Product Insights</p>
