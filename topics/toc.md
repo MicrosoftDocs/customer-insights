@@ -72,7 +72,7 @@
 # Signal senders
 ## [Download senders](xref:developers/downloads/downloads)
 ## [Sample senders](xref:developers/downloads/sdk-samples)
-## [Getting started with the sender](xref:developers/downloads/tutorials/index)
+## [Sender tutorials](xref:developers/downloads/tutorials/index)
 ### [Android (mobile)](xref:developers/downloads/android-java)
 ### [API token](xref:developers/downloads/api-token)
 ### [CSV Sender](xref:developers/downloads/ingest)
