@@ -1,6 +1,6 @@
 ---
 uid: developers/downloads/api-token
-title: Get an API token from the Product Insights portal
+title: Get an API token from the portal
 ---
 # Get an API token from the Product Insights portal
 
