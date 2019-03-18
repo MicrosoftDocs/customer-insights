@@ -1,9 +1,9 @@
 ---
 uid: developers/downloads/sdk-samples
-title: Sdk samples 
+title: Sample senders
 ---
 
-# SDK Samples
+# Sample senders
 
 ## Android sample 
 
