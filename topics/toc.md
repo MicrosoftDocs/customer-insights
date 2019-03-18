@@ -3,7 +3,7 @@
 ### [What is Product Insights?](xref:developers/quick-starts/what-is)
 ### [How is it being used?](xref:developers/quick-starts/how-used)
 ### [Who uses Product Insights?](xref:developers/quick-starts/who-uses)
-### [How is it structured?](xref:developers/quick-starts/how-structured)
+### How is it structured?
 ### [How do I start?](xref:developers/quick-starts/how-start)
 ## Explore data
 ### [1. View data](xref:developers/quick-starts/1_view)

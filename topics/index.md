@@ -125,7 +125,7 @@ ms.custom:
 							</a>							
                         </li>
                         <li>
-							<a href="developers/downloads/tutorials.md">
+							<a href="developers/downloads/tutorials/index.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -167,7 +167,7 @@ ms.custom:
 							</a>
                         </li>
                         <li>
-							<a href="developers/quick-starts/3_publish">
+							<a href="developers/quick-starts/3_publish.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -183,7 +183,7 @@ ms.custom:
 							</a>							
                         </li>
                         <li>
-							<a href="developers/faq">
+							<a href="developers/faq/index.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
