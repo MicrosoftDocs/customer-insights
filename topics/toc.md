@@ -34,8 +34,7 @@
 ## Collect signals
 ### [See raw data](xref:developers/tutorials/see-raw)
 ### [Send CSV data](xref:developers/tutorials/send-csv)
-### [Send from elsewhere](xref:developers/tutorials/send-elsewhere)
-### [Connect IoT hub](xref:developers/tutorials/import-elsewhere)
+### [Send with senders](xref:developers/tutorials/send-using-senders)
 ## [Explore data](xref:developers/tutorials/explore-data)
 ### [Create metrics](xref:developers/tutorials/create-metrics)
 ### [Transform data](xref:developers/tutorials/transform-data)
