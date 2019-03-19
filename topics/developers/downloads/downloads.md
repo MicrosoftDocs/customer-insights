@@ -1,9 +1,8 @@
-| Web/React        | |Javascript|| Downloads() | Tutorial (link tbd) |
 ---
 uid: developers/downloads/downloads
 title: Download senders
 ---
-# Event SDK downloads
+# Download senders
 
 | Platform         | Target      | Language | Type  | Download | Tutorial |
 |------------------|-------------|----------|-------|----------|-------------|
