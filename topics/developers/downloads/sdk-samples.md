@@ -9,7 +9,7 @@ title: Sample senders
 
 [Download the Android sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsAndroidSample.zip)
 
-[Getting started with the sender](xref:developers/downloads/android-java) 
+[Getting started with the sender](./tutorials/android-java) 
 
 ## iOS sample 
 
