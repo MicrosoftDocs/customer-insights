@@ -9,7 +9,7 @@ title: Sample senders
 
 [Download the Android sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsAndroidSample.zip)
 
-[Getting started with the sender](tutorials/android-java.md) 
+[Getting started with the sender](xref:developers/downloads/android-java) 
 
 ## iOS sample 
 
@@ -21,16 +21,16 @@ title: Sample senders
 
 [Download the JavaScript sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsJavascriptSample.zip)
 
-[Getting started with the sender](xref:developers/downloads/android-java) 
+[Getting started with the sender](xref:developers/downloads/js)
 
 ## .NET sample 
 
 [Download the .NET sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsDotNetSample.zip)
 
-[Getting started with the sender](xref:developers/downloads/android-java) 
+[Getting started with the sender](xref:developers/downloads/dotnet) 
 
 ## Python sample 
 
 [Download the Python sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsPythonSample.egg)
 
-[Getting started with the sender](xref:developers/downloads/android-java) 
+[Getting started with the sender](xref:developers/downloads/python) 
