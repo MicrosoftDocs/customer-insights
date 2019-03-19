@@ -1,3 +1,4 @@
+| Web/React        | |Javascript|| Downloads() | Tutorial (link tbd) |
 ---
 uid: developers/downloads/downloads
 title: Download senders
@@ -6,10 +7,10 @@ title: Download senders
 
 | Platform         | Target      | Language | Type  | Download | Tutorial |
 |------------------|-------------|----------|-------|----------|-------------|
-| Android          |API level 15+|Java      |Release| [Download](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/Android_3P_sample.zip) | [Tutorial](xref:developers/downloads/android-java)|
-| iOS (Objective-C |ARMv7, ARM64, x86, x64|Objective-C|Release| [Download](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/Android_3P_sample.zip)| [Tutorial](xref:developers/downloads/ios-objc) | 
-| Python           | |Python||[Downloads](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/aria-2.0.0.egg)| [Tutorial](xref:developers/downloads/python) |
-| Services (C#)    | |C#|| Downloads (link tbd) | Tutorial (link tbd) |
-| Web/React        | |Javascript|| Downloads (link tbd) | Tutorial (link tbd) |
+| Android          |API level 15+|Java      |Release| [Download](https://github.com/Microsoft/AppCenter-SDK-Android) | [Tutorial](xref:developers/downloads/android-java)|
+| iOS (Objective-C |ARMv7, ARM64, x86, x64|Objective-C|Release| [Download](https://github.com/Microsoft/AppCenter-SDK-Apple/releases/latest)| [Tutorial](xref:developers/downloads/ios-objc) | 
+| Python           | |Python|| Download (link TBD)| [Tutorial](xref:developers/downloads/python) |
+| Services (C#)    | |C#||[Download](https://www.nuget.org/packages/Microsoft.ApplicationInsights/) | Tutorial (link tbd) |
+| Web/React        | |Javascript|| [Download](https://1dsjssdk.blob.core.windows.net/scripts/latest/ms.analytics-1-beta.js) | Tutorial (link tbd) |
 
 
