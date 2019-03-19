@@ -31,6 +31,6 @@ title: Sample senders
 
 ## Python sample 
 
-[Download the Python sample]()
+[Download the Python sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsPythonSample.egg)
 
 [Getting started with the sender](xref:developers/downloads/android-java) 
