@@ -7,7 +7,7 @@ title: Explore signals
 
 Follow the next five steps to discover hidden insight for Fabrikam Tech automobile company. 
 
-You will learn how to view raw signals, shape the signal, and use our AI to find a surprising trend in the data. 
+You will learn how to view raw signals, shape the signal, and use our AI to find surprising trends in the data. 
 
 ![Video](dashboard.png)
 
