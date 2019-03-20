@@ -1,10 +1,10 @@
 ---
 uid: developers/quick-starts/3_transform
-title: Try delta and cumulative sales 
+title: Try transforms 
 ---
 
-# Try delta and cumulative sales 
+# Try signal transforms   
 
-Are sales figures going up or down? What is the cumulative figure like? How about rolling averages?
+What is the MPG difference between gas and electric cars? Use delta transform to find out! 
 
-![Are sales figures going up or down?](../tutorials/transform-data.png)
+![Is there seasonality?](../tutorials/transform-data.png)
