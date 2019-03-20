@@ -1,8 +1,8 @@
 ---
 uid: developers/quick-starts/2_1_define-insight
-title: Insight into metrics 
+title: Define your insight
 ---
-# Insight into metrics 
+# Define your insight
 
 Let's see count of cars divided into fuel types. That would be distinct count of VIN numbers, split into fuel types. Then only select electric. Add another split - cities. 
 
