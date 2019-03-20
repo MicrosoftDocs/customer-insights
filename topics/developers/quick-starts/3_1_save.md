@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/1_save
+uid: developers/quick-starts/3_1_save
 title: Save metric
 ---
 # Save metric

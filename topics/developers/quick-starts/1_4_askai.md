@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/4_askai
+uid: developers/quick-starts/1_4_askai
 title: Try something new – Ask our AI
 ---
 

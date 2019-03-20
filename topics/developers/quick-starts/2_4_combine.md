@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/4_combine
+uid: developers/quick-starts/2_4_combine
 title: Combine metrics
 ---
 

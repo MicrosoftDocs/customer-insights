@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/5_insight
+uid: developers/quick-starts/1_5_insight
 title: What have we learned?  
 ---
 

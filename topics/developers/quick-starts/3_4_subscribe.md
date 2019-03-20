@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/4_subscribe
+uid: developers/quick-starts/3_4_subscribe
 title: Subscribe to metrics
 ---
 # Subscribe to metrics

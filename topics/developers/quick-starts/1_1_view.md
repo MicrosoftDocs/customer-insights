@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/1_view
+uid: developers/quick-starts/1_1_view
 title: See signals 
 ---
 

@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/5_add
+uid: developers/quick-starts/2_5_add
 title: Add to your own dashboard
 ---
 

@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/3_use
+uid: developers/quick-starts/2_3_use
 title: Use your metric
 ---
 # Use your metric

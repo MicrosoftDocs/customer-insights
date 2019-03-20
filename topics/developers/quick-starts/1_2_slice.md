@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/2_slice
+uid: developers/quick-starts/1_2_slice
 title: Slice and dice signals
 ---
 # Slice and dice signals

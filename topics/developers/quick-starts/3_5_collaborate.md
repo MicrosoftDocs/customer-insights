@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/5_collaborate
+uid: developers/quick-starts/3_5_collaborate
 title: Collaborate with others
 ---
 # Collaborate with others

@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/3_publish
+uid: developers/quick-starts/3_3_publish
 title: Publish to a dashboard
 ---
 # Publish to a dashboard

@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/2_add
+uid: developers/quick-starts/3_2_add
 title: Add finishing touches
 ---
 # Add finishing touches

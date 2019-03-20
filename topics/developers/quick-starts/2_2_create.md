@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/2_create
+uid: developers/quick-starts/2_2_create
 title: Create a metric
 ---
 # Create a metric
