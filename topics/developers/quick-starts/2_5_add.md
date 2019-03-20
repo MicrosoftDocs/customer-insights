@@ -1,10 +1,10 @@
 ---
 uid: developers/quick-starts/2_5_add
-title: Add to your own dashboard
+title: Publish to a dashboard
 ---
 
-# Add to your own dashboard
+# Publish to a dashboard
 
-You can add the metrics you've collected to your own comprehensive dashboard.
+You have new charts with insights that will be useful for all. Let's add this chart to your own dashboard so that the insight can be visible. 
 
 ![Dashboard](dashboard.png)
