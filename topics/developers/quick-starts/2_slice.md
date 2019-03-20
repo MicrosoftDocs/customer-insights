@@ -1,14 +1,14 @@
 ---
 uid: developers/quick-starts/2_slice
-title: Slice and dice data
+title: Slice and dice signals
 ---
-# Slice and dice data
+# Slice and dice signals
 
-## Select dimensions to drill down  
+## Select dimensions to drill down deeper 
 
-You've seen what the total sales figure is for the month of December. Try to calculate total sales figures per state.
+You can see MPG (miles per gallon) per vehicle fuel type. Using the vehicle_drive_end signal, select property 'mpg'. Then click 'Add Split'. Select 'vehicle_fuel_type'. Now you can see average MPG values for electric, hybrid, and gas vehicles. 
 
-![Sales by state for December](use-metric.png)
+![MPG per vehicle fuel type](use-metric.png)
 
 
 
