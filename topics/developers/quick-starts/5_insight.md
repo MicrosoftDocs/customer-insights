@@ -1,12 +1,12 @@
 ---
 uid: developers/quick-starts/5_insight
-title: What have we learned from the data?  
+title: What have we learned?  
 ---
 
-# What have we learned from the data?  
+# What have we learned?  
 
-We've learned that Contoso sells well in California, Florida, and Illinois, and that sales increase during summer, peaking around Thanksgiving. We've also learned that customers come from a variety of industries, most prominently agriculture, law enforcement, and hospitality.
+We've learned that electric cars are definitely more efficient, and that they are more popular in two big cities. Electric cars in big cities also do many short trips. Could that be... ride sharing vehicles? It would make sense! 
 
-![Adding the App ID in the Project Manager](../tutorials/topn.png)
+![Insight](../tutorials/topn.png)
 
 
