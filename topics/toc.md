@@ -3,10 +3,10 @@
 ### [What is Product Insights?](xref:developers/quick-starts/what-is)
 ### [Who uses Product Insights and how?](xref:developers/quick-starts/who-uses)
 ### [How do I start?](xref:developers/quick-starts/how-start)
-## Explore data
-### [1. View data](xref:developers/quick-starts/1_view)
-### [2. Slice and dice data](xref:developers/quick-starts/2_slice)
-### [3. Transform data](xref:developers/quick-starts/3_transform)
+## Explore signals
+### [1. View signals](xref:developers/quick-starts/1_view)
+### [2. Slice and dice signals](xref:developers/quick-starts/2_slice)
+### [3. Transform signals](xref:developers/quick-starts/3_transform)
 ### [4. Ask AI](xref:developers/quick-starts/4_askai)
 ### [5. Insight](xref:developers/quick-starts/5_insight)
 ## [Create your own metrics](xref:developers/quick-starts/create-own-metrics)
@@ -30,12 +30,12 @@
 
 # Tutorials
 ## Collect signals
-### [See raw data](xref:developers/tutorials/see-raw)
+### [See raw signals](xref:developers/tutorials/see-raw)
 ### [Send CSV data](xref:developers/tutorials/send-csv)
 ### [Send with senders](xref:developers/tutorials/send-using-senders)
-## [Explore data](xref:developers/tutorials/explore-data)
+## [Explore signals](xref:developers/tutorials/explore-data)
 ### [Create metrics](xref:developers/tutorials/create-metrics)
-### [Transform data](xref:developers/tutorials/transform-data)
+### [Transform signals](xref:developers/tutorials/transform-data)
 ### [Get AI suggestions](xref:developers/tutorials/get-ai)
 ### [Select top N](xref:developers/tutorials/select-top)
 ### [Use expressions](xref:developers/tutorials/use-expressions)
@@ -44,9 +44,6 @@
 ### [Add comments](xref:developers/tutorials/add-comments)
 ### [Add annotations](xref:developers/tutorials/add-annotations)
 ### [Get updates](xref:developers/tutorials/get-updates)
-## Set goals and monitor
-### [Create a scorecard](xref:developers/tutorials/create-scorecard)
-### [Monitor health](xref:developers/tutorials/monitor-health)
 ## [FAQ (Frequently Asked Questions)](xref:developers/faq/index)
 ## Advanced  
 
