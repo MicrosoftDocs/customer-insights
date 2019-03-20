@@ -1,15 +1,15 @@
 ---
-uid: developers/quick-starts/1_1_view
-title: See signals 
+uid: developers/quick-starts/1_explore-signals
+title: Explore signals  
 ---
 
-# See incoming signals
+# Get insight in five minutes! 
 
-_From the Signals View panel in Product Insights, you can view and analyze signals, events, and raw data from your software, as well as inspect metadata on schema properties._
+Follow the next five steps to discover hidden insight for Fabrikam Tech automobile company. 
 
-Navigate to the signals page(tbd) to view various signals flowing in from automobiles. You can see average miles per gallon for all automobiles on this chart(tbd). 
+You will learn how to view raw signals, shape the signal, and use our AI to find a surprising trend in the data. 
 
-![December sales](dashboard.png)
+![Video](dashboard.png)
 
 
 
