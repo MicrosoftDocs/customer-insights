@@ -4,8 +4,8 @@ title: Define your insight
 ---
 # Define your insight
 
-Let's see count of cars divided into fuel types. That would be distinct count of VIN numbers, split into fuel types. Then only select electric. Add another split - cities. 
+Create a count of cars divided into fuel types: a distinct count of VIN numbers, split into fuel types. Then select electric from the available fuel types. Add another split: cities.
 
-Now you have a chart that shows cities with the highest number of electric cars. You think this is a useful value you will re-use in the future. Then we can turn it into a metric. 
+Now you have a chart that shows cities with the highest number of electric cars. This seems like a useful value you can reuse in the future by turning it into a metric. 
 
 ![Insight into metrics](collect-more-signals.png)
