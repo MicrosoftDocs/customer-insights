@@ -1,13 +1,13 @@
 
 ---
 uid: developers/quick-starts/1_explore-signals
-title: #Required; page title displayed in search results. Include the word "quickstart". Include the brand.
-description: #Required; article description that is displayed in search results. Include the word "quickstart".
-author: #Required; your GitHub user alias, with correct capitalization.
-ms.author: #Required; microsoft alias of author; optional team alias.
-ms.service: #Required; service per approved list. service slug assigned to your service by ACOM.
-ms.topic: quickstart #Required
-ms.date: #Required; mm/dd/yyyy format.
+title: Explore signals
+author: vroha
+description: Explore signals
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 <!---Recommended: Remove all the comments in this template before you
