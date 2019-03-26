@@ -3,11 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Microsoft Dynamics 365 Documentation | Microsoft Docs
 description: 
-searchScope:
+searchScope: 
   - "Dynamics 365"
 ms.service: dynamics-365-crossapp
-ms.custom:
- - dyn365-hub
+ms.custom: 
+  - dyn365-hub
+author: vroha
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.topic: conceptual
 ---
 <div id="main" class="v2">
 <div class="container">

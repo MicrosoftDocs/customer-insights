@@ -1,6 +1,12 @@
 ---
 uid: developers/downloads/api-token
 title: Get an API token from the portal
+author: vroha
+description: Get an API token from the portal
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Get an API token from the Product Insights portal
 

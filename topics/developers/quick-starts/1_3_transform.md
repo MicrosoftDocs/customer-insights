@@ -1,6 +1,12 @@
 ---
 uid: developers/quick-starts/1_3_transform
-title: Try transforms 
+title: Try transforms
+author: vroha
+description: Try transforms
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 # Try signal transforms   

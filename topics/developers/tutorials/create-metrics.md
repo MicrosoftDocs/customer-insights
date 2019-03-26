@@ -1,6 +1,12 @@
 ---
 uid: developers/tutorials/create-metrics
 title: Create metrics
+author: vroha
+description: Create metrics
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Create metrics
 

@@ -1,6 +1,12 @@
 ---
 uid: developers/articles/transform-ref
 title: Series transforms
+author: vroha
+description: Series transforms
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 # Series transforms

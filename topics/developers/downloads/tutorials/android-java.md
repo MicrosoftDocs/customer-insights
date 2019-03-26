@@ -1,6 +1,12 @@
 ---
 uid: developers/downloads/android-java
 title: Get Started with Android (Java)
+author: vroha
+description: Get Started with Android (Java)
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Getting started with Android (Java) 
  

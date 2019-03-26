@@ -1,6 +1,12 @@
 ---
 uid: developers/quick-starts/1_2_slice
 title: Slice and dice signals
+author: vroha
+description: Slice and dice signals
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Slice and dice signals
 

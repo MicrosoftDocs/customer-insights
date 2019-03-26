@@ -1,6 +1,12 @@
 ---
 uid: developers/quick-starts/3_3_publish
 title: Publish to a dashboard
+author: vroha
+description: Publish to a dashboard
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Publish to a dashboard
 

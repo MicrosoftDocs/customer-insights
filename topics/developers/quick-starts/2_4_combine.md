@@ -1,6 +1,12 @@
 ---
 uid: developers/quick-starts/2_4_combine
 title: Combine metrics
+author: vroha
+description: Combine metrics
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 # Combine metrics

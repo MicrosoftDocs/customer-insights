@@ -1,6 +1,12 @@
 ---
 uid: developers/tutorials/select-top
 title: Select top N
+author: vroha
+description: Select top N
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Select top N
 

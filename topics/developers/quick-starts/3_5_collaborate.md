@@ -1,6 +1,12 @@
 ---
 uid: developers/quick-starts/3_5_collaborate
 title: Collaborate with others
+author: vroha
+description: Collaborate with others
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Collaborate with others
 

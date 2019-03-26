@@ -1,6 +1,12 @@
 ---
 uid: developers/tutorials/use-expressions
 title: Use expressions
+author: vroha
+description: Use expressions
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 # Use expressions

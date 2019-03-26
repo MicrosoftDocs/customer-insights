@@ -1,6 +1,12 @@
 ---
 uid: developers/tutorials/get-ai
 title: Get AI suggestions
+author: vroha
+description: Get AI suggestions
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Get AI suggestions
 

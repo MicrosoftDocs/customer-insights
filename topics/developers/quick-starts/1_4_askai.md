@@ -1,6 +1,12 @@
 ---
 uid: developers/quick-starts/1_4_askai
 title: Try something new – Ask our AI
+author: vroha
+description: Try something new – Ask our AI
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 # Try something new – Ask our AI
