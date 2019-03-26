@@ -11,6 +11,7 @@ ms.topic: conceptual
 
 # Try signal transforms   
 
-What is the MPGe (miles per gallon gasoline equivalent) difference between gas and electric cars? Use the delta transform to find out. 
+What is the MPG difference between gas and electric cars? Use the delta transform to find out. 
 
-![Is there seasonality?](../tutorials/transform-data.png)
+> [!div class="nextstepaction"]
+> [Next >>](1_4_ai.md)
