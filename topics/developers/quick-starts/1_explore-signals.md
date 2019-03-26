@@ -17,4 +17,4 @@ Follow the next five steps to discover hidden insights for the Fabrikam Tech aut
 You will learn how to view raw signals, shape them, and use the Product Insights AI to find surprising trends in the data. 
 
 > [!div class="nextstepaction"]
-> [Get started](1_1_view.md)
+> [1. View signals](1_1_view.md)
