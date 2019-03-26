@@ -96,7 +96,7 @@ ms.topic: conceptual
                     <a href="#dev-section"></a>
                     <ul id="dev-section" class="cardsC">
                         <li>
-							<a href="developers/quick-starts/3_3_transform.md">
+							<a href="developers/quick-starts/1_3_transform.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
