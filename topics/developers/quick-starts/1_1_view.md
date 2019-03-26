@@ -18,7 +18,7 @@ When a car completes a drive, it sends a lot of summary data. One of it is MPG -
 ![Signals page](1_1_view.PNG)
 
 > [!div class="nextstepaction"]
-> [Slice and dice!](1_2_slice.md)
+> [Next >>](1_2_slice.md)
 
 
 
