@@ -11,11 +11,14 @@ ms.topic: conceptual
 
 # See incoming signals
 
-_From the Signals View panel in Product Insights, you can view and analyze signals, events, and raw data from your software, as well as inspect metadata on schema properties._
+Let's start with raw data. Log in, navigate to Fabrikam automobiles project, and select signals. See all types of signals continuously flowing into the project. Select one to check exactly what is being reported from thousands of automobiles. 
 
-Visit the signals page(tbd) to view various signals flowing in from automobiles. You can see the average miles per gallon for all automobiles on this chart(tbd). 
+When a car completes a drive, it sends a lot of summary data. One of it is MPG - gas used per mile. We will explore this metric. Click "Explore" on top right corner. 
 
-![December sales](dashboard.png)
+![Signals page](1_1_view.PNG)
+
+> [!div class="nextstepaction"]
+> [Slice and dice!](1_2_slice.md)
 
 
 
