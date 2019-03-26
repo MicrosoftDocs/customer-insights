@@ -96,7 +96,7 @@ ms.topic: conceptual
                     <a href="#dev-section"></a>
                     <ul id="dev-section" class="cardsC">
                         <li>
-							<a href="developers/quick-starts/3_transform.md">
+							<a href="developers/quick-starts/3_3_transform.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -155,7 +155,7 @@ ms.topic: conceptual
                     <a href="#man-section"></a>
                     <ul id="man-section" class="cardsC">
                         <li>
-							<a href="developers/quick-starts/5_collaborate.md">
+							<a href="developers/quick-starts/3_5_collaborate.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -171,7 +171,7 @@ ms.topic: conceptual
 							</a>
                         </li>
                         <li>
-							<a href="developers/quick-starts/3_publish.md">
+							<a href="developers/quick-starts/3_3_publish.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
