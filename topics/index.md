@@ -1,5 +1,5 @@
 ---
-layout: LandingPage
+layout: HubPage
 hide_bc: true
 title: Microsoft Dynamics 365 Documentation | Microsoft Docs
 description: 
