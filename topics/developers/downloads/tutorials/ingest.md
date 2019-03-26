@@ -1,6 +1,12 @@
 ---
 uid: developers/downloads/ingest
 title: Getting started with the CSV Sender
+author: vroha
+description: Getting started with the CSV Sender
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Getting started with the CSV Sender
 

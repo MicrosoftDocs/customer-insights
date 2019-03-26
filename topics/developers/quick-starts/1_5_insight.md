@@ -1,6 +1,12 @@
 ---
 uid: developers/quick-starts/1_5_insight
-title: What have we learned?  
+title: What have we learned?
+author: vroha
+description: What have we learned?
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 # What have we learned?  

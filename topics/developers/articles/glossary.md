@@ -1,6 +1,12 @@
 ---
 uid: developers/articles/glossary
 title: Glossary of terms
+author: vroha
+description: Glossary of terms
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 ## aggregated data

@@ -1,6 +1,12 @@
 ---
 uid: developers/downloads/sdk-samples
 title: Sample senders
+author: vroha
+description: Sample senders
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 # Sample senders

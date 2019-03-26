@@ -1,6 +1,12 @@
 ---
 uid: developers/quick-starts/2_1_define-insight
 title: Define your insight
+author: vroha
+description: Define your insight
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Define your insight
 

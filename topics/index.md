@@ -3,11 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Microsoft Dynamics 365 Documentation | Microsoft Docs
 description: 
-searchScope:
+searchScope: 
   - "Dynamics 365"
 ms.service: dynamics-365-crossapp
-ms.custom:
- - dyn365-hub
+ms.custom: 
+  - dyn365-hub
+author: vroha
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.topic: conceptual
 ---
 <div id="main" class="v2">
 <div class="container">
@@ -92,7 +96,7 @@ ms.custom:
                     <a href="#dev-section"></a>
                     <ul id="dev-section" class="cardsC">
                         <li>
-							<a href="developers/quick-starts/3_transform.md">
+							<a href="developers/quick-starts/1_3_transform.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -151,7 +155,7 @@ ms.custom:
                     <a href="#man-section"></a>
                     <ul id="man-section" class="cardsC">
                         <li>
-							<a href="developers/quick-starts/5_collaborate.md">
+							<a href="developers/quick-starts/3_5_collaborate.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -167,7 +171,7 @@ ms.custom:
 							</a>
                         </li>
                         <li>
-							<a href="developers/quick-starts/3_publish.md">
+							<a href="developers/quick-starts/3_3_publish.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">

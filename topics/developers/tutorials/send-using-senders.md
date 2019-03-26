@@ -1,6 +1,12 @@
 ---
 uid: developers/tutorials/send-using-senders
-title: Send using dedicated senders 
+title: Send using dedicated senders
+author: vroha
+description: Send using dedicated senders
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Send using Product Insight's signal senders
 

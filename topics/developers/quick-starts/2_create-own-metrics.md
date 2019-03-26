@@ -1,6 +1,12 @@
 ---
 uid: developers/quick-starts/2_create-own-metrics
 title: Define your own insight
+author: vroha
+description: Define your own insight
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 # Define your own insight 

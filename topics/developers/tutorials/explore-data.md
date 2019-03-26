@@ -1,6 +1,12 @@
 ---
 uid: developers/tutorials/explore-data
 title: Explore data
+author: vroha
+description: Explore data
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 # Explore data

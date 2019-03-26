@@ -1,6 +1,12 @@
 ---
 uid: developers/quick-starts/1_explore-signals
-title: Explore signals  
+title: Explore signals
+author: vroha
+description: Explore signals
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 # Get insight in five minutes

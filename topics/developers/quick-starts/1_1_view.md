@@ -1,6 +1,12 @@
 ---
 uid: developers/quick-starts/1_1_view
-title: See signals 
+title: See signals
+author: vroha
+description: See signals
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 
 # See incoming signals

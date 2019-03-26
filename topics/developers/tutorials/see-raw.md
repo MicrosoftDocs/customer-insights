@@ -1,6 +1,12 @@
 ---
 uid: developers/tutorials/see-raw
 title: Use the Event Explorer to view raw data
+author: vroha
+description: Use the Event Explorer to view raw data
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
 ---
 # Use the Event Explorer to view raw data
 
