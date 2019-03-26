@@ -1,5 +1,5 @@
 ---
-layout: HubPage
+layout: LandingPage
 hide_bc: true
 title: Microsoft Dynamics 365 Documentation | Microsoft Docs
 description: 
@@ -13,6 +13,7 @@ ms.author: v-roha
 ms.date: 03/29/2019
 ms.topic: conceptual
 ---
+
 <div id="main" class="v2">
 <div class="container">
     <h1>Product Insights Documentation</h1>
