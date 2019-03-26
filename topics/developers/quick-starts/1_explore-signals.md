@@ -16,45 +16,5 @@ Follow the next five steps to discover hidden insights for the Fabrikam Tech aut
 
 You will learn how to view raw signals, shape them, and use the Product Insights AI to find surprising trends in the data. 
 
-
-<ul class="cardsF panelContent">
-    <li>
-        <a href="https://review.docs.microsoft.com/help/contribute/contribute-whats-new?branch=master">
-            <div class="cardSize">
-                <div class="cardPadding">
-                    <div class="card">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="https://docs.microsoft.com/media/common/i_whats-new.svg" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>What's new in the Contributor's Guide?</h3>
-                            <p>Here's a list of recent changes to our guidance.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://review.docs.microsoft.com/help/contribute/contribute-to-contributor-guide?branch=master">
-            <div class="cardSize">
-                <div class="cardPadding">
-                    <div class="card">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="https://docs.microsoft.com/media/common/i_article.svg" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Contribute to the contributor guide</h3>
-                            <p>Here's the process for adding content to the contributor guide.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
+> [!div class="nextstepaction"]
+> [Get started](1_1_view.md)
