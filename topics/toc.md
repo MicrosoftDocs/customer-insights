@@ -23,10 +23,10 @@
 ### [5. Collaborate with others](xref:developers/quick-starts/3_5_collaborate)
 ## Do more
 ### [You are done!](xref:developers/quick-starts/done)
-### [[Use case] Increase sales](xref:developers/quick-starts/increase-sales)
-### [[Use case] Set up monitoring](xref:developers/quick-starts/monitoring)
-### [[Use case] Funnels!](xref:developers/quick-starts/funnels)
-### [[Use case] Query interactively](xref:developers/quick-starts/query)
+### [Discover a new market](xref:developers/quick-starts/4-new-market)
+### [Find anomalies](xref:developers/quick-starts/4-anomalies)
+### [Detect faulty models](xref:developers/quick-starts/4-detect-faulty)
+### [Drill down to a specific car](xref:developers/quick-starts/4-query)
 
 # Tutorials
 ## Collect signals
