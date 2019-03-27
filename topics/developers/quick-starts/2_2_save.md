@@ -13,3 +13,6 @@ ms.topic: conceptual
 Select **Publish** to save the metric and make it available to others. 
 
 ![Creating metrics](create-metrics.png)
+
+> [!div class="nextstepaction"]
+> [Next >>](2_3_use.md)
