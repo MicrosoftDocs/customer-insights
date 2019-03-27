@@ -1,15 +1,15 @@
 # Quick starts
 ## Product Insights in 5 minutes 
 ### [What is Product Insights?](xref:developers/quick-starts/what-is)
-### [Who uses Product Insights and how?](xref:developers/quick-starts/who-uses)
+### [Who uses Product Insights?](xref:developers/quick-starts/who-uses)
 ### [How do I start?](xref:developers/quick-starts/how-start)
 ## [Explore signals](xref:developers/quick-starts/1_explore-signals)
 ### [1. View signals](xref:developers/quick-starts/1_1_view)
 ### [2. Slice and dice signals](xref:developers/quick-starts/1_2_slice)
 ### [3. Transform signals](xref:developers/quick-starts/1_3_transform)
 ### [4. Ask AI](xref:developers/quick-starts/1_4_askai)
-### [5. Insight](xref:developers/quick-starts/1_5_insight)
-## [Define your own insight](xref:developers/quick-starts/2_create-own-metrics)
+### [5. Get insight](xref:developers/quick-starts/1_5_get-insight)
+## [Define your metric](xref:developers/quick-starts/2_create-own-metrics)
 ### [1. Define insight](xref:developers/quick-starts/2_1_define-insight)
 ### [2. Turn it into a metric](xref:developers/quick-starts/2_2_save-metric)
 ### [3. Use your metric](xref:developers/quick-starts/2_3_use)
