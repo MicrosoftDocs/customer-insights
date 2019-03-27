@@ -58,7 +58,7 @@
 ### [Glossary](xref:developers/articles/glossary)
 ### [Best practice](xref:developers/articles/best-practice)
 ## Managing the system
-### [SLA](xref:developers/articles/sla)
+### [Terms of service](xref:developers/articles/terms-of-service)
 ### [Service limits](xref:developers/articles/service-limits)
 ### [Compliance](xref:developers/articles/compliance)
 ### [Security](xref:developers/articles/security)
