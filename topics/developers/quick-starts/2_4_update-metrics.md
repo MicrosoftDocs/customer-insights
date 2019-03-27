@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/2_4_update-metric
+uid: developers/quick-starts/2_4_update-metrics
 title: Tweak metrics
 author: vroha
 description: Tweak metrics
