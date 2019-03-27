@@ -3,7 +3,7 @@ uid: developers/quick-starts/1_2_slice
 title: Slice and dice signals
 author: vroha
 description: Slice and dice signals
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: product-insights
 ms.topic: conceptual
@@ -17,7 +17,7 @@ You can see the MPG*  for each vehicle fuel type. Using the `vehicle_drive_end` 
 ![MPG per vehicle fuel type](1_2_slice.PNG)
 
 
-* or MPGe (miles per gallon gasoline equivalent) for electric cars! 
+<sup> * or MPGe (miles per gallon gasoline equivalent) for electric cars! </sup>
 
 > [!div class="nextstepaction"]
 > [Next >>](1_3_transform.md)
