@@ -10,7 +10,7 @@ ms.topic: conceptual
 ---
 # Getting started with .NET (C#)
 
-This tutorial guides you through the process of using a Product Insights API token with C#, and will have you sending signals in about five minutes. The sample project is a C# console app that will send a signal to Product Insights every second until the user presses a key to stop it. Each signal is a student record containing the name of an imaginary student, their grade, GPA, school, and whether they're currently suspended.
+This tutorial guides you through the process of using a Product Insights API token with .NET and C#, and will have you sending signals in about five minutes. The sample project is a C# console app that will send a signal to Product Insights every second until the user presses a key to stop it. Each signal is a student record containing the name of an imaginary student, their grade, GPA, school, and whether they're currently suspended.
 
 ## Prerequisites
 
