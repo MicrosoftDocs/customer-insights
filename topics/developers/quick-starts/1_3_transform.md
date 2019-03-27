@@ -14,4 +14,4 @@ ms.topic: conceptual
 What is the MPG difference between gas and electric cars? Use the delta transform to find out. 
 
 > [!div class="nextstepaction"]
-> [Next >>](1_4_ai.md)
+> [Next >>](1_4_askai.md)
