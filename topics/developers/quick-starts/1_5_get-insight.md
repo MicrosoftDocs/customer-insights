@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/1_5_insight
+uid: developers/quick-starts/1_5_get-insight
 title: What have we learned?
 author: vroha
 description: What have we learned?
