@@ -11,4 +11,7 @@ ms.topic: conceptual
 
 # How do I start?
 
-_Sign into a limited preview of Product Insights with the Azure Active Directory project._
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/PI_HowToStart.mp4]
+
+> [!div class="nextstepaction"]
+> [5 minutes to insight >>](1_explore-signals.md)
