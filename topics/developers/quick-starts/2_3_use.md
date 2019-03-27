@@ -10,6 +10,13 @@ ms.topic: conceptual
 ---
 # Use your metric
 
-Use the metric you created to analyze trends in your data.
+You can now use the metric you created to analyze trends in your data.
+
+From your landing page, click on metrics. Your metric is available for use - your colleagues can also create charts based on this metric. 
+
+Let's create another chart. Remove the existing split, and select time of the day. As expected, MPG is much lower during rush hour. 
 
 ![Use your metric](use-metric.png)
+
+> [!div class="nextstepaction"]
+> [Next >>](2_4_update-metrics.md)
