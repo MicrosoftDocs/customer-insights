@@ -14,3 +14,7 @@ ms.topic: conceptual
 Select the **Insights** button to see suggestions from Smart Analytics.
 
 ![Smart Analytics button](../tutorials/get-ai.png)
+
+> [!div class="nextstepaction"]
+> [Next >>](1_5_get-insight.md)
+
