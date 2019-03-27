@@ -15,3 +15,6 @@ Create a count of cars divided into fuel types: a distinct count of VIN numbers,
 Now you have a chart that shows cities with the highest number of electric cars. This seems like a useful value you can reuse in the future by turning it into a metric. 
 
 ![Insight into metrics](collect-more-signals.png)
+
+> [!div class="nextstepaction"]
+> [Next >>](2_2_save.md)
