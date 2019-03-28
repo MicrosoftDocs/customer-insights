@@ -1,8 +1,5 @@
 # Quick starts
-## Product Insights in 5 minutes 
-### [What is Product Insights?](xref:developers/quick-starts/what-is)
-### [Who uses Product Insights?](xref:developers/quick-starts/who-uses)
-### [How do I start?](xref:developers/quick-starts/how-start)
+## [Product Insights in 5 minutes](xref:developers/quick-starts/what-is) 
 ## [Explore signals](xref:developers/quick-starts/1_explore-signals)
 ### [1. View signals](xref:developers/quick-starts/1_1_view)
 ### [2. Slice and dice signals](xref:developers/quick-starts/1_2_slice)
@@ -21,12 +18,6 @@
 ### [3. Publish to a dashboard](xref:developers/quick-starts/3_3_publish)
 ### [4. Subscribe to metrics](xref:developers/quick-starts/3_4_subscribe)
 ### [5. Collaborate with others](xref:developers/quick-starts/3_5_collaborate)
-## Do more
-### [You are done!](xref:developers/quick-starts/done)
-### [Discover a new market](xref:developers/quick-starts/4-new-market)
-### [Find anomalies](xref:developers/quick-starts/4-anomalies)
-### [Detect faulty models](xref:developers/quick-starts/4-detect-faulty)
-### [Drill down to a specific car](xref:developers/quick-starts/4-query)
 
 # Tutorials
 ## Collect signals
@@ -38,33 +29,24 @@
 ### [Transform signals](xref:developers/tutorials/transform-data)
 ### [Get AI suggestions](xref:developers/tutorials/get-ai)
 ### [Select top N](xref:developers/tutorials/select-top)
-### [Use expressions](xref:developers/tutorials/use-expressions)
-### [Query data](xref:developers/tutorials/query-data)
 ## Collaborate with others
 ### [Add comments](xref:developers/tutorials/add-comments)
 ### [Add annotations](xref:developers/tutorials/add-annotations)
 ### [Get updates](xref:developers/tutorials/get-updates)
 ## [FAQ (Frequently Asked Questions)](xref:developers/faq/index)
-## Advanced  
 
 # Articles
-## Collecting signals  
-### [Signal collection API reference](xref:developers/articles/signal-collection)
 ## Transforming data    
 ### [Transform reference](xref:developers/articles/transform-ref)
 ### [Property function reference](xref:developers/articles/property-fn)
-## Unerstanding the system  
+## Understanding the system  
 ### [Architecture whitepaper](xref:developers/articles/architecture)
 ### [Glossary](xref:developers/articles/glossary)
 ### [Best practice](xref:developers/articles/best-practice)
-## Managing the system
 ### [Terms of service](xref:developers/articles/terms-of-service)
-### [Service limits](xref:developers/articles/service-limits)
-### [Compliance](xref:developers/articles/compliance)
-### [Security](xref:developers/articles/security)
 
 # Signal senders
-## [Download senders](xref:developers/downloads/downloads)
+## [Download senders](xref:developers/downloads/sdks)
 ## [Sample senders](xref:developers/downloads/sdk-samples)
 ## [Sender tutorials](xref:developers/downloads/tutorials/index)
 ### [Android (mobile)](xref:developers/downloads/android-java)
