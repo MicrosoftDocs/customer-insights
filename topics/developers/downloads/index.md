@@ -1,3 +1,14 @@
+---
+uid: developers/downloads/index
+title: Download senders
+author: vroha
+description: Download senders
+ms.author: v-roha
+ms.date: 03/29/2019
+ms.service: product-insights
+ms.topic: conceptual
+---
+
 # Downloads
 
 Product Insights offers various ways of sending signals. Download a sender for your platform, and follow the tutorials to start sending signals. To see implemented code, you can take a look at samples. 
