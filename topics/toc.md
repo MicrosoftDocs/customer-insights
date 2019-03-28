@@ -24,7 +24,7 @@
 ### [See raw signals](xref:developers/tutorials/see-raw)
 ### [Send CSV data](xref:developers/tutorials/send-csv)
 ### [Send with senders](xref:developers/tutorials/send-using-senders)
-## [Explore signals](xref:developers/tutorials/explore-data)
+## Explore signals
 ### [Create metrics](xref:developers/tutorials/create-metrics)
 ### [Transform signals](xref:developers/tutorials/transform-data)
 ### [Get AI suggestions](xref:developers/tutorials/get-ai)
