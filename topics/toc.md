@@ -46,7 +46,7 @@
 ### [Terms of service](xref:developers/articles/terms-of-service)
 
 # Signal senders
-## [Download senders](xref:developers/downloads/)
+## [Download senders](xref:developers/downloads/index)
 ## [Sender tutorials](xref:developers/downloads/tutorials/index)
 ### [Android (mobile)](xref:developers/downloads/android-java)
 ### [API token](xref:developers/downloads/api-token)
