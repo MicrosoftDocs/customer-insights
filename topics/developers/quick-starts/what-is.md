@@ -11,10 +11,9 @@ ms.topic: conceptual
 
 # Product Insights in five minutes 
 
-_Product Insights software is high quality: powerful, robust, fast, and able to process billions of signals per second. There’s nothing else like it.
+_Product Insights software is powerful, robust, fast, and able to process billions of signals per second. There’s nothing else like it._
 
 Find out what it is, who is using us, and how you can get started! 
-_
 
 ## The shortest introduction to Product Insights 
 
