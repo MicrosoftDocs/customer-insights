@@ -27,6 +27,7 @@ You may not have heard of us. Within Microsoft, we do telemetry for the teams yo
 
 Ok so you are interested. You want a 1 minute recap on how to get started. Well, see below for a quick outline. 
 
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/PI_HowToGetStarted.mp4]
 
 Done? Now you know the plan. Let's get started! 
 
