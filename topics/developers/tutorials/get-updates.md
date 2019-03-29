@@ -10,3 +10,7 @@ ms.topic: conceptual
 ---
 
 # Get updates
+
+Updating the properties of a signal is a simple task with Product Insights.
+
+![Getting an update](updates.png)
