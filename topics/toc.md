@@ -40,9 +40,7 @@
 ### [Transform reference](xref:developers/articles/transform-ref)
 ### [Property function reference](xref:developers/articles/property-fn)
 ## Understanding the system  
-### [Architecture whitepaper](xref:developers/articles/architecture)
 ### [Glossary](xref:developers/articles/glossary)
-### [Best practice](xref:developers/articles/best-practice)
 ### [Terms of service](xref:developers/articles/terms-of-service)
 
 # Signal senders
