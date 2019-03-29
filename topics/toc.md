@@ -1,5 +1,5 @@
 # Quick starts
-## [Product Insights in 5 minutes](xref:developers/quick-starts/what-is) 
+## [Discover Product Insights in 5 mins](xref:developers/quick-starts/what-is) 
 ## [Explore signals](xref:developers/quick-starts/1_explore-signals)
 ### [1. View signals](xref:developers/quick-starts/1_1_view)
 ### [2. Slice and dice signals](xref:developers/quick-starts/1_2_slice)
