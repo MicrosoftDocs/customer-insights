@@ -1,15 +1,15 @@
 ---
-uid: developers/quick-starts/2_define-own-metric
-title: Define your metric
+uid: developers/quick-starts/2_create-own-metric
+title: Create your metric
 author: vroha
-description: Define your own metric
+description: Create your own metric
 ms.author: v-roha
 ms.date: 03/29/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Define your own metric  
+# Create your own metric  
 
 1. Open viz editor 
 2. Select a signal 
