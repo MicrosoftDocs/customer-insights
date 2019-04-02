@@ -11,7 +11,11 @@ ms.topic: conceptual
 
 # Define your own metric  
 
-When you were exploring, you shaped signals to calculate MPG per vehicle fuel type. This is a useful insight that can continue to be useful. You can add it to your arsenal of insights by turning it into a metric. 
+1. Open viz editor 
+2. Select a signal 
+3. Select 'average' 
+4. Select 'mileage' 
+5. Select split 
 
 Once it is published as a metric, you can easily share this insight with others. They can also use it in their charts.  
 
