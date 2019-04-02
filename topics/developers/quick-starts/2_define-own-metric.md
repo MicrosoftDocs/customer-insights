@@ -1,8 +1,8 @@
 ---
-uid: developers/quick-starts/2_create-own-metrics
+uid: developers/quick-starts/2_define-own-metric
 title: Define your metric
 author: vroha
-description: Define your own insight
+description: Define your own metric
 ms.author: v-roha
 ms.date: 03/29/2019
 ms.service: product-insights
@@ -18,4 +18,4 @@ Once it is published as a metric, you can easily share this insight with others.
 ![Creating metrics](create-metrics.png)
 
 > [!div class="nextstepaction"]
-> [Next >>](2_1_define-insight.md)
+> [Next >>](2_1_define-measure.md)
