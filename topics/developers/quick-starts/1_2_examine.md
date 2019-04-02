@@ -1,16 +1,15 @@
 ---
-uid: developers/quick-starts/1_2_slice
-title: Slice and dice signals
+uid: developers/quick-starts/1_2_examine
+title: Examine signals
 author: vroha
-description: Slice and dice signals
+description: Examine signals
 ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
-# Slice and dice signals
 
-## Select dimensions to drill down deeper 
+# Examine signals
 
 You can see the MPG*  for each vehicle fuel type. Using the `vehicle_drive_end` signal, select the property `mpg`. Then select **Add Split**. Select `vehicle_fuel_type`. Now you can see average MPG values for electric, hybrid, and gas vehicles. 
 
@@ -20,5 +19,5 @@ You can see the MPG*  for each vehicle fuel type. Using the `vehicle_drive_end` 
 <sup> * or MPGe (miles per gallon gasoline equivalent) for electric cars! </sup>
 
 > [!div class="nextstepaction"]
-> [Next >>](1_3_transform.md)
+> [Next >>](1_3_explore.md)
 
