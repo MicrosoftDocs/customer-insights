@@ -1,14 +1,14 @@
 ---
-uid: developers/quick-starts/2_3_use
-title: Use your metric
+uid: developers/quick-starts/2_3_publish
+title: Publish your metric
 author: vroha
-description: Use your metric
+description: Publish your metric
 ms.author: v-roha
 ms.date: 03/29/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
-# Use your metric
+# Publish your metric
 
 You can now use the metric you created to analyze trends in your data.
 
@@ -18,5 +18,4 @@ Let's create another chart. Remove the existing split, and select time of the da
 
 ![Use your metric](use-metric.png)
 
-> [!div class="nextstepaction"]
-> [Next >>](2_4_update-metrics.md)
+
