@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/1_1_view
+uid: developers/quick-starts/1_1_find
 title: See signals
 author: vroha
 description: See signals
@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# See incoming signals
+# Find incoming signals
 
 Let's start with raw data. Log in, navigate to Fabrikam automobiles project, and select signals. See all types of signals continuously flowing into the project. Select one to check exactly what is being reported from thousands of automobiles. 
 
