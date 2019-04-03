@@ -11,16 +11,20 @@ ms.topic: conceptual
 
 # Create your own metric  
 
-1. Open viz editor. We will try to get average mileage per city type 
-2. Select a signal 
-3. Select 'average' 
-4. Select 'mileage' 
-5. So far, we have average MPG for all the vehicles. We will try to get MPG per fuel type, e.g. electric, gas, sedan. Select split. 
-6. Select city types. 
-7. Select save to save it as a metric.
-8. Publish metric. Now you can re-use this metric in other charts, or share it with your colleagues. 
+The following steps will find the average MPGe* for each fuel type and city type.
 
-Once it is published as a metric, you can easily share this insight with others. They can also use it in their charts.  
+1. Open the visualization editor. 
+2. Select a signal from the visualization editor.
+3. Select **average**.
+4. Select **mileage**. 
+5. The visualization editor displays the average MPGe for all vehicles. To find the MPGe for each fuel type, such as electric or gasoline, select **split**. 
+6. Select **city types**. 
+7. Select **save** to save the result as a metric.
+8. Publish the metric.
+
+Once you publish your insight as a metric, you can share it with others, and they can use it in their charts.
+
+*MPGe: miles per gallon gasoline equivalent
 
 ![Creating metrics](create-metrics.png)
 
