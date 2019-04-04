@@ -10,8 +10,13 @@ ms.topic: conceptual
 ---
 
 # Explore signals   
+A signal is a continuous flow of data. If your team is using Product Insights, you will probably find signals for your team's projects. 
 
-What is the MPG difference between gas and electric cars? Use the delta transform to find out. 
+In this section, you will learn to find signals, examine their contents, and learn to interact with them to get insights. We will be working with sample data for the Fabrikam Tech automobile company. 
+
+6. Select **Explore** on the top right corner of the screen. You can investigate your signal further in the visualization editor. 
+
+![Signal details page](1_Explore.PNG)
 
 > [!div class="nextstepaction"]
 > [Next >>](2_1_create-own-metrics.md)
