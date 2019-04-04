@@ -8,7 +8,6 @@
 ### [1. Create measures and splits](xref:developers/quick-starts/2_1_create-measure)
 ### [2. Save metric](xref:developers/quick-starts/2_2_save-metric)
 ### [3. Publish metric](xref:developers/quick-starts/2_3_publish)
-## [Share and collaborate](xref:developers/quick-starts/3_share-collaborate)
 
 # Tutorials
 ## Collect signals
