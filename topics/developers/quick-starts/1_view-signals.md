@@ -21,4 +21,4 @@ In this section, you will learn to find signals, examine their contents, and lea
 ![Login page](1_Login.PNG)
 
 > [!div class="nextstepaction"]
-> [Next >>](examine-signals.md)
+> [Next >>](1_1_find.md)
