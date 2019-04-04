@@ -20,13 +20,5 @@ In this section, you will learn to find signals, examine their contents, and lea
 
 ![Login page](1_Login.PNG)
 
-2. Product Insights displays your landing page. Select the Fabrikam Automobiles project. 
-
-![Landing page](1_LandingPage.PNG)
-
-3. Select **Signals** from the side menu. You will see a list of all signals being sent for this project. 
-
-![Signals page](1_Signals.PNG)
-
 > [!div class="nextstepaction"]
 > [Next >>](examine-signals.md)
