@@ -33,7 +33,5 @@ The following steps will find the average MPGe* for each fuel type and city type
 
 *MPGe: miles per gallon gasoline equivalent
 
-![Creating metrics](create-metrics.png)
-
 > [!div class="nextstepaction"]
 > [Next >>](2_1_define-measure.md)
