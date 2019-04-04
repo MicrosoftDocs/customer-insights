@@ -11,12 +11,13 @@ ms.topic: conceptual
 
 # Examine signals
 
-You can see the MPG*  for each vehicle fuel type. Using the `vehicle_drive_end` signal, select the property `mpg`. Then select **Add Split**. Select `vehicle_fuel_type`. Now you can see average MPG values for electric, hybrid, and gas vehicles. 
+4. Select **vehicle_drive_end**. You will see what information this signal is sending and the volume of signals coming in. 
 
-![MPG per vehicle fuel type](1_2_slice.PNG)
+![Signal details page](1_Signal_detail1.PNG)
 
+5. Select the **Preview** tab at the top. You will see the actual values of signals. For example, you can see the city where the vehicle sending a signal is located. 
 
-<sup> * or MPGe (miles per gallon gasoline equivalent) for electric cars! </sup>
+![Signal details page](1_Signal_detail2.PNG)
 
 > [!div class="nextstepaction"]
 > [Next >>](1_3_explore.md)
