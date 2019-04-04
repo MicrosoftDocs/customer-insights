@@ -16,4 +16,4 @@ ms.topic: conceptual
 ![Signal details page](1_Explore.PNG)
 
 > [!div class="nextstepaction"]
-> [Next >>](2_create-own-metrics.md)
+> [Next >>](2_create-own-metric.md)
