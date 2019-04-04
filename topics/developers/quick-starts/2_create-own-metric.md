@@ -29,9 +29,7 @@ The following steps will find the average MPGe* for each fuel type and city type
 
 ![Select split](2_Split.PNG)
 
-8. Publish the metric.
-
-Once you publish your insight as a metric, you can share it with others, and they can use it in their charts.
+8. Select **Publish** at the top right corner of the chart to publish the metric. This means this metric (MPGe per city type) will appear on the list of metrics, and available to other users. Your colleagues can then comment on the metric and create their own metrics and charts based on your metric. 
 
 *MPGe: miles per gallon gasoline equivalent
 
