@@ -114,7 +114,7 @@ ms.topic: conceptual
 							</a>
                         </li>
                         <li>
-							<a href="developers/downloads/sdk-samples.md">
+							<a href="developers/downloads/index.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
