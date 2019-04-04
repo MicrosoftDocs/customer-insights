@@ -9,10 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Explore signals   
-A signal is a continuous flow of data. If your team is using Product Insights, you will probably find signals for your team's projects. 
-
-In this section, you will learn to find signals, examine their contents, and learn to interact with them to get insights. We will be working with sample data for the Fabrikam Tech automobile company. 
+# Explore signals
 
 6. Select **Explore** on the top right corner of the screen. You can investigate your signal further in the visualization editor. 
 
