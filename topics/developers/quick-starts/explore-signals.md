@@ -1,5 +1,5 @@
 ---
-uid: developers/quick-starts/1_view-signals
+uid: developers/quick-starts/explore-signals
 title: Explore signals
 author: vroha
 description: Explore signals
