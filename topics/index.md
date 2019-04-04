@@ -97,15 +97,15 @@ ms.topic: conceptual
                     <a href="#dev-section"></a>
                     <ul id="dev-section" class="cardsC">
                         <li>
-							<a href="developers/quick-starts/1_3_transform.md">
+							<a href="developers/quick-starts/1_view-signals.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
 
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/team-services-agile-track.svg" alt="Transforming data" data-linktype="external"></div></div>
+<img src="https://docs.microsoft.com/media/illustrations/team-services-agile-track.svg" alt="Demos" data-linktype="external"></div></div>
 											<div class="cardText">
-												<h3>Transforming data</h3>
+												<h3>Viewing signals</h3>
 												<p>Are sales figures going up or down? What is the cumulative figure like? How about rolling averages?</p>
 											</div>
 										</div>
@@ -121,8 +121,8 @@ ms.topic: conceptual
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
 <img src="https://docs.microsoft.com/media/illustrations/sql-get-started-download.svg" alt="Signal sender samples" data-linktype="external"></div></div>
 											<div class="cardText">
-												<h3>Signal sender samples</h3>
-												<p>Download these signal senders to get Product Insights telemetry up and running in minutes.</p>
+												<h3>Demos</h3>
+												<p>Download these demos to get Product Insights telemetry up and running in minutes.</p>
 											</div>
 										</div>
 									</div>
