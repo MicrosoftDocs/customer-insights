@@ -1,6 +1,6 @@
 ---
 uid: developers/quick-starts/1_view-signals
-title: Find signals
+title: View signals
 author: vroha
 description: View signals
 ms.author: v-roha
@@ -10,7 +10,7 @@ ms.topic: conceptual
 layout: LandingPage
 ---
 
-# Find signals 
+# View signals 
 
 A signal is a continuous flow of data. If your team is using Product Insights, you will probably find signals for your team's projects. 
 
