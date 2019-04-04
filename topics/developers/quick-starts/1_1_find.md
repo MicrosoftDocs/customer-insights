@@ -11,13 +11,13 @@ ms.topic: conceptual
 
 # Find incoming signals
 
-Let's start with raw data. Log in, navigate to Fabrikam automobiles project, and select signals. See all types of signals continuously flowing into the project. Select one to check exactly what is being reported from thousands of automobiles. 
+2. Product Insights displays your landing page. Select the Fabrikam Automobiles project. 
 
-When a car completes a drive, it sends a lot of summary data. One of it is MPG - gas used per mile. We will explore this metric. Click "Explore" on top right corner. 
+![Landing page](1_LandingPage.PNG)
 
-![Signals page](1_1_view.PNG)
+3. Select **Signals** from the side menu. You will see a list of all signals being sent for this project. 
 
-[![Login page](1_Login_inline.PNG)](1_Login.PNG#lightbox)
+![Signals page](1_Signals.PNG)
 
 > [!div class="nextstepaction"]
 > [Next >>](1_2_slice.md)
