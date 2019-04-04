@@ -20,7 +20,7 @@ ms.topic: conceptual
 ![Signals page](1_Signals.PNG)
 
 > [!div class="nextstepaction"]
-> [Next >>](1_2_slice.md)
+> [Next >>](1_2_examine.md)
 
 
 
