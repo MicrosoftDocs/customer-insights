@@ -1,10 +1,10 @@
 ---
-uid: developers/quick-starts/1_view-signals
+uid: developers/quick-starts/examine-signals
 title: Examine signals
 author: vroha
 description: Examine signals
 ms.author: v-roha
-ms.date: 03/29/2019
+ms.date: 04/04/2019
 ms.service: product-insights
 ms.topic: conceptual
 layout: LandingPage
