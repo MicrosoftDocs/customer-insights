@@ -10,11 +10,11 @@ ms.topic: conceptual
 ---
 # Publish your metric
 
-You can now use the metric you created to analyze trends in your data.
+7. Now you will see multiple lines representing average MPG for each fuel type. Select **Save** to save the result as a metric.
+
+![Select split](2_Split.PNG)
 
 From your landing page, click on metrics. Your metric is available for use - your colleagues can also create charts based on this metric. 
-
-Let's create another chart. Remove the existing split, and select time of the day. As expected, MPG is much lower during rush hour. 
 
 ![Use your metric](use-metric.png)
 
