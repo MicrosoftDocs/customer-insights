@@ -24,4 +24,4 @@ These instructions follow from the end of the previous section, [Explore signals
 *MPGe: miles per gallon gasoline equivalent
 
 > [!div class="nextstepaction"]
-> [Next >>](2_1_define-measure.md)
+> [Next >>](2_1_create-measure.md)
