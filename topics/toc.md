@@ -30,12 +30,12 @@
 ### [Property function reference](xref:developers/articles/property-fn)
 ## Understanding the system  
 ### [Glossary](xref:developers/articles/glossary)
+### [Ingestion Data Scheme](xref:developers/downloads/ingestion-data-scheme)
 ### [Terms of service](xref:developers/articles/terms-of-service)
 
 # Signal senders
 ## [Download senders](xref:developers/downloads/index)
 ## [Sender tutorials](xref:developers/downloads/tutorials/index)
-## [Ingestion Data Scheme](xref:developers/downloads/ingestion-data-scheme)
 ### [Android (mobile)](xref:developers/downloads/android-java)
 ### [API token](xref:developers/downloads/api-token)
 ### [CSV Sender](xref:developers/downloads/ingest)
