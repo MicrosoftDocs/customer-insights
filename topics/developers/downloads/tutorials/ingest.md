@@ -52,11 +52,11 @@ On the second page, select any platform and click **Skip this wizard**.
 On the third page, copy the Ingestion Key. Use it for your 
 API token.
 
-[Product Insights Instrument Wizard](https://portal.aria.ms/instrument/project)
+[Product Insights Instrument Wizard](xref:developers/downloads/ingestion-data-scheme.md)
 
 ## For more information
 
 For more details on running this program, type `help .\IngestionTool`
 in your PowerShell window.
 
-See also the [Ingestion Data Scheme](https://www.aria.ms/developers/downloads/IngestionDataScheme).
+See also the [Ingestion Data Scheme](xref:developers/downloads/ingestion-data-scheme.md).
