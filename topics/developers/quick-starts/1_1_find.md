@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 2. Product Insights displays your landing page. Select the Fabrikam Automobiles project. 
 
-![Landing page](1_LandingPage.PNG)
+![Landing page](1_FabrikamPage.PNG)
 
 3. Select **Signals** from the side menu. You will see a list of all signals being sent for this project. 
 
