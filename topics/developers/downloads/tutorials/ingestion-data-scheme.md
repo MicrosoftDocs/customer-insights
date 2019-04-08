@@ -10,7 +10,7 @@ ms.topic: conceptual
 ---
 # Ingestion Data Scheme
 
-This is a schema for Aria's Ingestion Tool.
+This is a schema for the Product Insights Ingestion Tool.
 
 > Please note that a schema file is not strictly required when sending data with the Ingestion Tool. If no schema is defined, defaults are used. 
 
