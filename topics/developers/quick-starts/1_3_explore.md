@@ -15,5 +15,7 @@ ms.topic: conceptual
 
 ![Signal details page](1_Explore.PNG)
 
+In the next section, you will learn to create metrics that uncover some insight in the signals. 
+
 > [!div class="nextstepaction"]
 > [Next >>](2_create-own-metric.md)
