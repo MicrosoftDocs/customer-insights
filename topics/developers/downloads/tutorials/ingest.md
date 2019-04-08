@@ -19,7 +19,7 @@ Each subsequent line in the CSV file must contain data (field values) for one ev
 
 To download the tool, click the following link.
 
-[Download the CSV Sender](https://ariamediahost.blob.core.windows.net/sdk/aria-powershell.zip)
+[Download the CSV Sender](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSenders/ProductInsights_PowerShellTool.zip)
 
 ## Run the CSV Sender
 
