@@ -35,6 +35,7 @@
 # Signal senders
 ## [Download senders](xref:developers/downloads/index)
 ## [Sender tutorials](xref:developers/downloads/tutorials/index)
+## [Ingestion Data Scheme](xref:developers/downloads/ingestion-data-scheme)
 ### [Android (mobile)](xref:developers/downloads/android-java)
 ### [API token](xref:developers/downloads/api-token)
 ### [CSV Sender](xref:developers/downloads/ingest)
