@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Create your own metric  
 
-The following steps will find the average MPGe* for each fuel type and city type. These instructions follow from the end of the previous section, [View signals](xref:developers/quick-starts/1_view-signals). 
+The following steps will find the average MPGe* for each fuel type and city type. These instructions follow from the end of the previous section, [Explore signals](xref:developers/quick-starts/1_3_Explore). 
 
 1. On the **Signals** details page, open the chart editor by selecting **Explore** at the top right corner of the screen. 
 2. Under **Signal**, select **vehicle_drive_end**.
