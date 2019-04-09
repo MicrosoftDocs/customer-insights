@@ -9,3 +9,5 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Find hidden insights
+
+![Insight](../tutorials/topn.png)
