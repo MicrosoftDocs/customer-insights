@@ -15,4 +15,4 @@ Product Insights continuously examines your data in the background to find hidde
 ![Insight](../tutorials/topn.png)
 
 > [!div class="nextstepaction"]
-> [Next >>](3_1_use-suggestions.md)
+> [Next >>]()
