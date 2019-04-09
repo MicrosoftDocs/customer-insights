@@ -1,10 +1,11 @@
 ---
-uid: developers/quick-starts/2_create-own-metric
-title: Create your metric
+uid: developers/quick-starts/3_get-insights
+title: Get insights
 author: vroha
-description: Create your own metric
+description: Get insights
 ms.author: v-roha
-ms.date: 03/29/2019
+ms.date: 04/09/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
+# Get insights
