@@ -11,8 +11,8 @@
 
 # Tutorials
 ## Collect signals
-### [API token](xref:developers/downloads/api-token)
 ### [Create a project](xref:developers/downloads/create-project)
+### [Get an API token](xref:developers/downloads/api-token)
 ### [Send CSV data](xref:developers/tutorials/send-csv)
 ### [Send with senders](xref:developers/tutorials/send-using-senders)
 ## Explore signals
