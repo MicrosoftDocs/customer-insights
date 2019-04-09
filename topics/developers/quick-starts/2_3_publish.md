@@ -16,8 +16,10 @@ ms.topic: conceptual
 
 ![Select split](2_Split.PNG)
 
+From your landing page, click on metrics. Your metric is available for use - your colleagues can also create charts based on this metric.
 
-From your landing page, click on metrics. Your metric is available for use - your colleagues can also create charts based on this metric. 
+> [!div class="nextstepaction"]
+> [Next >>](3_get-insights.md)
 
 
 
