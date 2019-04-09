@@ -9,3 +9,5 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Transform data
+
+![Insight](../tutorials/topn.png)
