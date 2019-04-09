@@ -10,4 +10,6 @@ ms.topic: conceptual
 ---
 # Use suggested insights
 
+When you are [exploring signals](), Product Insights will suggest further actions you can take to discover hidden insights. 
+
 ![Insight](../tutorials/topn.png)
