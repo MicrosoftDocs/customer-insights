@@ -15,4 +15,4 @@ You can apply transforms to signals on the fly. Try deltas to see how data compa
 ![Insight](../tutorials/topn.png)
 
 > [!div class="nextstepaction"]
-> [Next >>](3_3_publish.md)
+> [Next >>](3_3_find-hidden-insights.md)
