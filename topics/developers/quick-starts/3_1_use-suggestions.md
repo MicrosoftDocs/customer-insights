@@ -9,3 +9,5 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Use suggested insights
+
+![Insight](../tutorials/topn.png)
