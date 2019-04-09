@@ -19,7 +19,10 @@
 ### [Create metrics](xref:developers/tutorials/create-metrics)
 ### [Transform signals](xref:developers/tutorials/transform-data)
 ### [Get AI suggestions](xref:developers/tutorials/get-ai)
-
+## [Get insights](xref:developers/quick-starts/3_get-insights)
+### [Use suggested insights](xref:developers/quick-starts/3_1_use-suggestions)
+### [Transform data](xref:developers/quick-starts/3_2_transform-data)
+### [Find hidden insights](xref:developers/quick-starts/3_3_find-hidden-insights)
 ## Collaborate with others
 ### [Add comments](xref:developers/tutorials/add-comments)
 ### [Add annotations](xref:developers/tutorials/add-annotations)
