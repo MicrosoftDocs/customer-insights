@@ -9,9 +9,9 @@
 ### [2. Add splits](xref:developers/quick-starts/2_2_split-metric)
 ### [3. Save and publish](xref:developers/quick-starts/2_3_publish)
 ## [Get insights](xref:developers/quick-starts/3_get-insights)
-### [Use suggested insights](xref:developers/quick-starts/3_1_use-suggestions)
-### [Transform data](xref:developers/quick-starts/3_2_transform-data)
-### [Find hidden insights](xref:developers/quick-starts/3_3_find-hidden-insights)
+### [1. Use suggested insights](xref:developers/quick-starts/3_1_use-suggestions)
+### [2. Transform data](xref:developers/quick-starts/3_2_transform-data)
+### [3. Find hidden insights](xref:developers/quick-starts/3_3_find-hidden-insights)
 
 # Tutorials
 ## Collect signals
