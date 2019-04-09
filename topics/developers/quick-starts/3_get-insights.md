@@ -9,3 +9,10 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Get insights
+
+Discover hidden insights and trends with Product Insights. If you know what you are looking for, you can go ahead and create your own metric as in the previous section. 
+
+Product Insights helps you discover insights in data with which you may not be familiar. Use suggested insights on your explore screen. Try transforms. Check out the Product Insights anomaly detection. In the following sections, you will learn how to do all this. 
+
+
+
