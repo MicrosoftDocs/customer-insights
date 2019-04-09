@@ -10,4 +10,6 @@ ms.topic: conceptual
 ---
 # Transform data
 
+You can apply transforms to signals on the fly. Try deltas to see how data compares to last week. Try **Interpolate NaNs** to fill in missing data.
+
 ![Insight](../tutorials/topn.png)
