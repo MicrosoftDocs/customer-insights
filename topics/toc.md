@@ -11,6 +11,8 @@
 
 # Tutorials
 ## Collect signals
+### [API token](xref:developers/downloads/api-token)
+### [Create a project](xref:developers/downloads/create-project)
 ### [Send CSV data](xref:developers/tutorials/send-csv)
 ### [Send with senders](xref:developers/tutorials/send-using-senders)
 ## Explore signals
@@ -32,13 +34,11 @@
 ### [Glossary](xref:developers/articles/glossary)
 ### [Ingestion Data Scheme](xref:developers/downloads/ingestion-data-scheme)
 ### [Terms of service](xref:developers/articles/terms-of-service)
-
 # Signal senders
 ## [Download senders](xref:developers/downloads/index)
 ## [Sender tutorials](xref:developers/downloads/tutorials/index)
 ### [Android (mobile)](xref:developers/downloads/android-java)
-### [API token](xref:developers/downloads/api-token)
-### [Create a project](xref:developers/downloads/create-project)
+
 ### [CSV Sender](xref:developers/downloads/ingest)
 ### [iOS (mobile)](xref:developers/downloads/ios-objc)
 ### [JavaScript](xref:developers/downloads/js)
