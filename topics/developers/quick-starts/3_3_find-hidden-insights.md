@@ -10,4 +10,6 @@ ms.topic: conceptual
 ---
 # Find hidden insights
 
+Product Insights continuously examines your data in the background to find hidden anomalies and insights.
+
 ![Insight](../tutorials/topn.png)
