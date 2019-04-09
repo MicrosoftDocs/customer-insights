@@ -38,6 +38,7 @@
 ## [Sender tutorials](xref:developers/downloads/tutorials/index)
 ### [Android (mobile)](xref:developers/downloads/android-java)
 ### [API token](xref:developers/downloads/api-token)
+### [API token](xref:developers/downloads/create-project)
 ### [CSV Sender](xref:developers/downloads/ingest)
 ### [iOS (mobile)](xref:developers/downloads/ios-objc)
 ### [JavaScript](xref:developers/downloads/js)
