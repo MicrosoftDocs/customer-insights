@@ -16,9 +16,10 @@ A signal is a continuous flow of data. If your team is using Product Insights, y
 
 In this section, you will learn to find signals, examine their contents, and learn to interact with them to get insights. We will be working with sample data for the Fabrikam Tech automobile company. 
 
+> [!VIDEO https://www.youtube.com/embed/nm9UMSir0i4]
+
 1. Log into [Product Insights](pi.dynamics.com) to get started.
 
-![Login page](1_Login.PNG)
 
 > [!div class="nextstepaction"]
 > [Next >>](1_1_find.md)
