@@ -10,10 +10,6 @@ ms.topic: conceptual
 ---
 # FAQ (Frequently Asked Questions)
 
-## When do I use Product Insights?
-
-TK: narrow question down
-
 ## What are the service limits?
 
 There is a default ingestion quota of 5,000 events per second and a Kusto database of 1 GiB.
@@ -21,10 +17,6 @@ There is a default ingestion quota of 5,000 events per second and a Kusto databa
 ## Why are some of my events not showing up in the viewer?
 
 The event viewer was designed to provide a quick sample of your events for you to debug instrumentation and get examples of events. It was not intended to be a generic query engine. At low volumes, it will capture and return every event. At high volumes, it will capture and return a sample of your recent events.
-
-## Why are my metrics not working?
-
-TK: narrow question down
 
 ## What is an SDK?
 
@@ -36,25 +28,9 @@ For alternative ways of sending data, see TK.
 
 A project is a customer unit within Product Insights. A project sends data, owns its data, and uses its data. Once you create a project, you are the customer of Product Insights, and as that customer (project), you will be using Product Insights services. A project is usually a team, single service, application, or shared library.
 
-## Why do I need a project?
-
-TK
-
-## How do I create a project?
-
-TK
-
-## How do I send data for a specific project?
-
-TK
-
 ## I can't see my data!
 
 If you are sending data to Product Insights with an SDK, make sure your application is correctly integrated with App Insights and App Center. 
-
-## How do I see raw events?
-
-TK: need something like the Event Explorer, whatever it's called in the future
 
 ## Why is there a quota on my project? 
 
@@ -64,10 +40,6 @@ After that, events are billed on a linear scale.
 ## What happens when my project is throttled?
 
 Once the project has exceeded its quota beyond some grace period, the Product Insights Collector will start rejecting events from its clients. Transient spikes in traffic are unlikely to trigger throttling. The SDK on the client will retry the upload until it reaches the maximum queue size or it exceeds the max retry count.
-
-## Which URLs do I need to list for the Aria Collectors?
-
-TK (table)
 
 ## What would happen if a malicious hacker snooped and got my tenant’s ingestion token?
 
