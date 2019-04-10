@@ -4,7 +4,7 @@ title: Getting started with the CSV Sender
 author: vroha
 description: Getting started with the CSV Sender
 ms.author: hakrou
-ms.date: 03/29/2019
+ms.date: 04/12/2019
 ms.service: crm-online
 ms.topic: conceptual
 ---

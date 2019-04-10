@@ -4,7 +4,7 @@ title: Get an API token from the portal
 author: vroha
 description: Get an API token from the portal
 ms.author: hakrou
-ms.date: 03/29/2019
+ms.date: 04/12/2019
 ms.service: crm-online
 ms.topic: conceptual
 ---

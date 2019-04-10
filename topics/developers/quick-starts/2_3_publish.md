@@ -4,7 +4,7 @@ title: Publish your metric
 author: vroha
 description: Publish your metric
 ms.author: hakrou
-ms.date: 04/09/2019
+ms.date: 04/12/2019
 ms.service: crm-online
 ms.topic: conceptual
 ---

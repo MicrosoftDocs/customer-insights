@@ -4,7 +4,7 @@ title: Get AI suggestions
 author: vroha
 description: Get AI suggestions
 ms.author: hakrou
-ms.date: 03/29/2019
+ms.date: 04/12/2019
 ms.service: crm-online
 ms.topic: conceptual
 ---
