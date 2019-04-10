@@ -3,7 +3,7 @@ uid: developers/tutorials/transform-data
 title: Transform data
 author: vroha
 description: Transform data
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

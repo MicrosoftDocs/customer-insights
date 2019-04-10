@@ -3,7 +3,7 @@ uid: developers/tutorials/send-using-senders
 title: Send using dedicated senders
 author: vroha
 description: Send using dedicated senders
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

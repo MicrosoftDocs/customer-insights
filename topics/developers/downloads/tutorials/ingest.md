@@ -3,7 +3,7 @@ uid: developers/downloads/ingest
 title: Getting started with the CSV Sender
 author: vroha
 description: Getting started with the CSV Sender
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

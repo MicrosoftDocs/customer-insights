@@ -3,7 +3,7 @@ uid: developers/quick-starts/3_2_transform-data
 title: Transform data tutorial
 author: vroha
 description: Transform data tutorial
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 04/09/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

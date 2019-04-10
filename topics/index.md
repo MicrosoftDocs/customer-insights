@@ -9,7 +9,7 @@ ms.service: dynamics-365-crossapp
 ms.custom: 
   - dyn365-hub
 author: vroha
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.topic: conceptual
 ---

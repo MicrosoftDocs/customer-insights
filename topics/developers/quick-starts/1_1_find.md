@@ -3,7 +3,7 @@ uid: developers/quick-starts/1_1_find
 title: See signals
 author: vroha
 description: See signals
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

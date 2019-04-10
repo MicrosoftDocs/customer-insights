@@ -3,7 +3,7 @@ uid: developers/quick-starts/2_3_publish
 title: Publish your metric
 author: vroha
 description: Publish your metric
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 04/09/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

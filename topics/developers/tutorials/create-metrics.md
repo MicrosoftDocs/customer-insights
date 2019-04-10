@@ -3,7 +3,7 @@ uid: developers/tutorials/create-metrics
 title: Create metrics
 author: vroha
 description: Create metrics
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual
