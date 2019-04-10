@@ -17,7 +17,7 @@ This is a schema for the Product Insights Ingestion Tool.
 
 # 1. Schema Format 
 
-```
+```Schema
 {
 "ver":<version string>
 	"name": <event name>
@@ -122,7 +122,7 @@ Must be specified using a schema.
 
 ## 3.1 Sample CSV
 
-```
+```CSV
 Is_suspended,grade,GPA,student_name,student_id,school_district_id,age,birthday,record_id,phone
 TRUE,12,4.00,John Smith,1,405,16,12/21/1789,0b9b277c-7e19-4595-97cf-9c42098d4497,206-123-4567
 FALSE,11,3.27,Sumner Hilton,2,125,15,11/17/1790,8f853e36-1c71-4e21-80f3-0fa396095374,425-890-1234
@@ -132,7 +132,7 @@ TRUE,12,4.00,Jane Lee,3,430,17,10/28/1788,df5d93a3-85f6-4187-8ef8-ba9949389aeb,2
 
 ## 3.2 Sample Schema
 
-```
+```Schema
 {
   "name": "EventName",
   "flags": 513,
