@@ -18,7 +18,7 @@ In this section, you will learn to find signals, examine their contents, and lea
 
 > [!VIDEO https://www.youtube.com/embed/nm9UMSir0i4]
 
-1. Log into [Product Insights](pi.dynamics.com) to get started.
+Log into [Product Insights](pi.dynamics.com) to get started.
 
 
 > [!div class="nextstepaction"]
