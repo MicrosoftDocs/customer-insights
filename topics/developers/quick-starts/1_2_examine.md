@@ -5,7 +5,7 @@ author: vroha
 description: Examine signals
 ms.author: hakrou
 ms.date: 03/29/2019
-ms.service: product-insights
+ms.service: dynamics-365-crossapp
 ms.topic: conceptual
 ---
 
@@ -17,7 +17,7 @@ ms.topic: conceptual
 
 5. Select the **Preview** tab at the top. You will see the actual values of signals. For example, you can see the city where the vehicle sending a signal is located. 
 
-![Signal details page](1_Signal_detail2.PNG)
+![Signal details page preview tab](1_Signal_detail2.PNG)
 
 > [!div class="nextstepaction"]
 > [Next >>](1_3_explore.md)

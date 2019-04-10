@@ -5,7 +5,7 @@ author: vroha
 description: Find hidden insights
 ms.author: v-roha
 ms.date: 04/09/2019
-ms.service: product-insights
+ms.service: dynamics-365-crossapp
 ms.topic: conceptual
 ---
 # Find hidden insights
@@ -13,6 +13,3 @@ ms.topic: conceptual
 Product Insights continuously examines your data in the background to find hidden anomalies and insights.
 
 ![Insight](../tutorials/topn.png)
-
-> [!div class="nextstepaction"]
-> [Next >>]()

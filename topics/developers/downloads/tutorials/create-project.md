@@ -5,7 +5,7 @@ author: vroha
 description: Create a project
 ms.author: v-roha
 ms.date: 04/08/2019
-ms.service: product-insights
+ms.service: dynamics-365-crossapp
 ms.topic: conceptual
 ---
 # Create a project

@@ -5,7 +5,7 @@ author: vroha
 description: View signals
 ms.author: v-roha
 ms.date: 03/29/2019
-ms.service: product-insights
+ms.service: dynamics-365-crossapp
 ms.topic: conceptual
 layout: LandingPage
 ---
@@ -18,7 +18,7 @@ In this section, you will learn to find signals, examine their contents, and lea
 
 > [!VIDEO https://www.youtube.com/embed/nm9UMSir0i4]
 
-Log into [Product Insights](http://pi.dynamics.com) to get started.
+Log into [Product Insights](https://pi.dynamics.com) to get started.
 
 
 > [!div class="nextstepaction"]
