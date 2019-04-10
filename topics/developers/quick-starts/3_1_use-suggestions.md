@@ -5,7 +5,7 @@ author: vroha
 description: Use suggested insights
 ms.author: hakrou
 ms.date: 04/09/2019
-ms.service: dynamics-365-crossapp
+ms.service: crm-online
 ms.topic: conceptual
 ---
 # Use suggested insights

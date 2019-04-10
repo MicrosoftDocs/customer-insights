@@ -5,7 +5,7 @@ author: vroha
 description: Get Started with Android (Java)
 ms.author: hakrou
 ms.date: 03/29/2019
-ms.service: dynamics-365-crossapp
+ms.service: crm-online
 ms.topic: conceptual
 ---
 # Getting started with Android (Java) 

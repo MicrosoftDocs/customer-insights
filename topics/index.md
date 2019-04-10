@@ -5,7 +5,7 @@ title: Microsoft Dynamics 365 Documentation | Microsoft Docs
 description: Product Insights Documentation
 searchScope: 
   - "Dynamics 365"
-ms.service: dynamics-365-crossapp
+ms.service: crm-online
 ms.custom: 
   - dyn365-hub
 author: vroha

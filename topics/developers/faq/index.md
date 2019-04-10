@@ -5,7 +5,7 @@ author: vroha
 description: FAQ (Frequently Asked Questions)
 ms.author: hakrou
 ms.date: 03/29/2019
-ms.service: dynamics-365-crossapp
+ms.service: crm-online
 ms.topic: conceptual
 ---
 # FAQ (Frequently Asked Questions)
