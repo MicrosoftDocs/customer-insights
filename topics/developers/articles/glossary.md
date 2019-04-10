@@ -8,6 +8,7 @@ ms.date: 03/29/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
+# Glossary of terms
 
 ## aggregated data
 

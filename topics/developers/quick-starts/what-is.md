@@ -9,15 +9,26 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# One minute introduction to Product Insights 
+# <a id="what_is"></a>Product Insights in five minutes 
 
-_Product Insights software is high quality: powerful, robust, fast, and able to process billions of signals per second. There’s nothing else like it._
+Product Insights software is powerful, robust, fast, and able to process billions of signals per second. There’s nothing else like it.
 
-> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsightsIntro.mp4]
+Find out what it is, who is using it, and how you can get started.
 
-> [!div class="nextstepaction"]
-> [Next >>](who-uses.md)
+## The shortest introduction to Product Insights 
 
+> [!VIDEO https://www.youtube.com/embed/UFgnpgYr66M]
 
+## <a id="who_uses"></a>Who is using Product Insights and how?
 
+You may not have heard of Product Insights. Within Microsoft, our team does telemetry for the teams you have heard of! But all good things should be shared with the world. Watch the video below to learn how Windows, Office, and Skype are using Product Insights.
 
+> [!VIDEO https://www.youtube.com/embed/I3mTduI6auM]
+
+## <a id="how_start"></a>How do you get started? 
+
+See the video below for a one-minute overview.
+
+> [!VIDEO https://www.youtube.com/embed/_9Q0kbbAgrw]
+
+Now you know the plan, you're ready to get started!

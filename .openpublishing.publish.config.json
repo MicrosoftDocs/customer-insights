@@ -41,6 +41,9 @@
     "live": [
       "Publish",
       "Pdf"
+    ],
+    "master":[
+      "Publish"
     ]
   },
   "need_generate_pdf_url_template": true,

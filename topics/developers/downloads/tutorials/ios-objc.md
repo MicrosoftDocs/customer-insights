@@ -25,14 +25,14 @@ Prerequisites:
 
 1. If you haven't installed CocoaPods, run the following command in the terminal to install CocoaPods and create a Podfile:
 
-```
+```Terminal
 $ sudo gem install cocoapods 
 $ pod init 
 ```
 
 2. Add the following code snippet to your Podfile:
 
-```
+```Podfile
 Target 'SampleApp' do 
 pod 'AppCenter' 
 pod 'AppCenter/Analytics' 
@@ -40,7 +40,7 @@ pod 'AppCenter/Analytics'
 
 3. Save the file and run the following command in the terminal:
 
-```
+```Terminal
 $ pod install
 ```
  
@@ -72,13 +72,13 @@ $ pod install
 
 **Objective-C:**
 
-```
+```obj-c
 @import AppCenter; 
 @import AppCenterAnalytics;
 ```
 
 **Swift:**
-```
+```swift
 import AppCenter 
 import AppCenterAnalytics 
 ```
@@ -89,7 +89,7 @@ import AppCenterAnalytics
 
 **Objective-C:**
 
-```
+```obj-c
 [MSAppCenter start:@"target={Your API Token}" withServices:@[[MSAnalytics class]]]; 
 
 // Do a simple trackEvent call 
@@ -106,7 +106,7 @@ MSEventProperties *properties = [MSEventProperties new];
 ```
 
 **Swift:**
-```   
+```swift   
 MSAppCenter.start("target={Your API token}", withServices:[MSAnalytics.self]) 
  
 // Do a simple trackEvent call. 
@@ -126,7 +126,7 @@ MSAnalytics.trackEvent("VideoClicked", withProperties:properties)
 
 **Objective-C:**
 
-```
+```obj-c
 // Create your first transmission target. 
 MSAnalyticsTransmissionTarget *appTarget1 = [MSAnalytics transmissionTargetForToken:@"Your API token 1"]; 
  
@@ -154,7 +154,7 @@ MSEventProperties *properties = [MSEventProperties new];
 
 **Swift:**
 
-```
+```swift
 // Create your first transmission target. 
 let appTarget1 = MSAnalytics.transmissionTarget(forToken:"our API token 1") 
  

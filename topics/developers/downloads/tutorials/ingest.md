@@ -19,7 +19,7 @@ Each subsequent line in the CSV file must contain data (field values) for one ev
 
 To download the tool, click the following link.
 
-[Download the CSV Sender](https://ariamediahost.blob.core.windows.net/sdk/aria-powershell.zip)
+[Download the CSV Sender](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSenders/ProductInsights_PowerShellTool.zip)
 
 ## Run the CSV Sender
 
@@ -52,11 +52,11 @@ On the second page, select any platform and click **Skip this wizard**.
 On the third page, copy the Ingestion Key. Use it for your 
 API token.
 
-[Product Insights Instrument Wizard](https://portal.aria.ms/instrument/project)
+[Product Insights Instrument Wizard](xref:developers/downloads/ingestion-data-scheme)
 
 ## For more information
 
 For more details on running this program, type `help .\IngestionTool`
 in your PowerShell window.
 
-See also the [Ingestion Data Scheme](https://www.aria.ms/developers/downloads/IngestionDataScheme).
+See also the [Ingestion Data Scheme](xref:developers/downloads/ingestion-data-scheme).

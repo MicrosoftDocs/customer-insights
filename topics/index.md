@@ -30,7 +30,7 @@ ms.topic: conceptual
 							</div>
 						</li>
 						<li>
-							<a href="developers/quick-starts/what-is.md">
+							<a href="developers/quick-starts/what-is.md#what_is">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -49,7 +49,7 @@ ms.topic: conceptual
 							</a>
 						</li>
 						<li>
-							<a href="developers/quick-starts/who-uses.md">
+							<a href="developers/quick-starts/what-is.md#who_uses">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -68,7 +68,7 @@ ms.topic: conceptual
 							</a>
 						</li>
 						<li>
-							<a href="developers/quick-starts/how-start.md">
+							<a href="developers/quick-starts/what-is.md#how_start">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -97,15 +97,15 @@ ms.topic: conceptual
                     <a href="#dev-section"></a>
                     <ul id="dev-section" class="cardsC">
                         <li>
-							<a href="developers/quick-starts/1_3_transform.md">
+							<a href="developers/quick-starts/1_view-signals.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
 
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/team-services-agile-track.svg" alt="Transforming data" data-linktype="external"></div></div>
+<img src="https://docs.microsoft.com/media/illustrations/team-services-agile-track.svg" alt="Demos" data-linktype="external"></div></div>
 											<div class="cardText">
-												<h3>Transforming data</h3>
+												<h3>Viewing signals</h3>
 												<p>Are sales figures going up or down? What is the cumulative figure like? How about rolling averages?</p>
 											</div>
 										</div>
@@ -114,15 +114,15 @@ ms.topic: conceptual
 							</a>
                         </li>
                         <li>
-							<a href="developers/downloads/sdk-samples.md">
+							<a href="developers/downloads/index.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
 <div class="cardImageOuter"><div class="cardImage bgdAccent1">
 <img src="https://docs.microsoft.com/media/illustrations/sql-get-started-download.svg" alt="Signal sender samples" data-linktype="external"></div></div>
 											<div class="cardText">
-												<h3>Signal sender samples</h3>
-												<p>Download these signal senders to get Product Insights telemetry up and running in minutes.</p>
+												<h3>Demos</h3>
+												<p>Download these demos to get Product Insights telemetry up and running in minutes.</p>
 											</div>
 										</div>
 									</div>
@@ -155,38 +155,6 @@ ms.topic: conceptual
                 <li>
                     <a href="#man-section"></a>
                     <ul id="man-section" class="cardsC">
-                        <li>
-							<a href="developers/quick-starts/3_5_collaborate.md">
-								<div class="cardSize">
-									<div class="cardPadding">
-										<div class="card">
-<div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/biztalk-host-integration-popular-downloads.svg" alt="Collaborate with others" data-linktype="external"></div></div>
-											<div class="cardText">
-												<h3>Collaborate with others</h3>
-												<p>Collaborate with others using the built-in communications features of Product Insights.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</a>
-                        </li>
-                        <li>
-							<a href="developers/quick-starts/3_3_publish.md">
-								<div class="cardSize">
-									<div class="cardPadding">
-										<div class="card">
-<div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/system-center-virtual-machine.svg" alt="Publish to a dashboard" data-linktype="external"></div></div>
-											<div class="cardText">
-												<h3>Publish to a dashboard</h3>
-												<p>Publish the metrics you've created to a collaborative dashboard.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</a>							
-                        </li>
                         <li>
 							<a href="developers/faq/index.md">
 								<div class="cardSize">
