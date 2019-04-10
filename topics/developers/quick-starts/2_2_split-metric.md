@@ -5,7 +5,7 @@ author: hakrou
 description: Add splits
 ms.author: hakrou
 ms.date: 04/08/2019
-ms.service: product-insights
+ms.service: dynamics-365-crossapp
 ms.topic: conceptual
 ---
 # Add splits

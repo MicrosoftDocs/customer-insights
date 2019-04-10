@@ -5,7 +5,7 @@ author: vroha
 description: Ingestion Data Scheme
 ms.author: v-roha
 ms.date: 04/08/2019
-ms.service: product-insights
+ms.service: dynamics-365-crossapp
 ms.topic: conceptual
 ---
 # Ingestion Data Scheme
@@ -15,7 +15,7 @@ This is a schema for the Product Insights Ingestion Tool.
 > Please note that a schema file is not strictly required when sending data with the Ingestion Tool. If no schema is defined, defaults are used. 
 
 
-# 1. Schema Format 
+## 1. Schema Format 
 
 ```Schema
 {
@@ -59,7 +59,7 @@ This is a schema for the Product Insights Ingestion Tool.
 > **Note**: \<reserved bit:63-17\>
 
 
-# 2. DataType
+## 2. DataType
 
 Once a type is associated with the field then that field's type can't be changed. Thus, if the next value violates the type then that value is considered an invalid value. For example,
 
@@ -70,7 +70,7 @@ Once a type is associated with the field then that field's type can't be changed
 
 If the new value violates the type, then that new value will be rejected as invalid.
 
-## 2.1 bool
+### 2.1 bool
 
 Values that look like a `bool` data type such as
 
@@ -78,7 +78,7 @@ Values that look like a `bool` data type such as
 
 will be used to indicate that the field is of type `bool`.
 
-## 2.2 int32
+### 2.2 int32
 
 Values that look like an `int32` data type such as
 
@@ -86,7 +86,7 @@ Values that look like an `int32` data type such as
 
 will be used to indicate that the field is of type `int32`.
 
-## 2.3 double
+### 2.3 double
 
 Values that look like a `double` data type (that is, with decimal points), such as
 
@@ -94,33 +94,33 @@ Values that look like a `double` data type (that is, with decimal points), such 
 
 will be used to indicate that the field is of type `double`.
 
-## 2.4 string
+### 2.4 string
 
 All other values will indicate that the field is of type `string`.
 
-## 2.5 uint32
+### 2.5 uint32
 
 Must be specified using a schema.
 
-## 2.6 int64
+### 2.6 int64
 
 Must be specified using a schema.
 
-## 2.7 uint64
+### 2.7 uint64
 
 Must be specified using a schema.
 
-## 2.8 datetime
+### 2.8 datetime
 
 Must be specified using a schema.
 
-## 2.9 GUID
+### 2.9 GUID
 
 Must be specified using a schema.
 
-# 3. Sample 
+## 3. Sample 
 
-## 3.1 Sample CSV
+### 3.1 Sample CSV
 
 ```CSV
 Is_suspended,grade,GPA,student_name,student_id,school_district_id,age,birthday,record_id,phone
@@ -130,7 +130,7 @@ TRUE,12,4.00,Jane Lee,3,430,17,10/28/1788,df5d93a3-85f6-4187-8ef8-ba9949389aeb,2
 ,10,,Amy Brown,4,,,,,
 ```
 
-## 3.2 Sample Schema
+### 3.2 Sample Schema
 
 ```Schema
 {
@@ -162,9 +162,9 @@ TRUE,12,4.00,Jane Lee,3,430,17,10/28/1788,df5d93a3-85f6-4187-8ef8-ba9949389aeb,2
 
 6 (PII PhoneNumber) shifts to bits 12-5 | 1 (string datatype) = `110 0 0001` = `0xC1` = `193`
 
-# 4. Encoding
+## 4. Encoding
 
-## 4.1 Flags Encoding
+### 4.1 Flags Encoding
 
 From the [Flags encoding](https://osgwiki.com/wiki/CommonSchema/flags) wiki:
 
@@ -178,9 +178,9 @@ Flag                       | Value  | Meaning
 `EventLatency_RealTime`     | `0x0200` | Low [latency](https://osgwiki.com/wiki/Common_Schema_Event_Latency) event. The platform may restrict events that can use this flag.
 `EventLatency_CostDeferred` | `0x0300` | [Latency](https://osgwiki.com/wiki/Common_Schema_Event_Latency) depends on network cost. Functionally treated as \"Normal\" latency for N days, then becomes \"RealTime\" latency. The platform may restrict events that can use this flag.
 
-## 4.2 Attribute Encoding
+### 4.2 Attribute Encoding
 
-### 4.2.1 Attribute bits
+#### 4.2.1 Attribute bits
 
 Bits|Value|Meaning
 ----|-----|-------
@@ -189,7 +189,7 @@ Bits|Value|Meaning
 13-16 (0x1E000)|`Customer Content Type`|See Customer Content Types enumeration for details.
 17-63 (0xFFFFFFFFFFFE0000)|`Reserved`|Reserved for future use
 
-### 4.2.2 PII Types
+#### 4.2.2 PII Types
 
 Type|Value
 ----|-----
@@ -208,7 +208,7 @@ Type|Value
 `Fqdn`|12
 `IPV4AddressLegacy`|13
 
-### 4.2.3 Data Types
+#### 4.2.3 Data Types
 
 Type|Value|Notes
 ----|-----|-----
@@ -223,7 +223,7 @@ Type|Value|Notes
 `Guid`|8
 `DateTime`|9
 
-### 4.2.4 Customer Content Types
+#### 4.2.4 Customer Content Types
 
 Type|Value
 ----|-----
