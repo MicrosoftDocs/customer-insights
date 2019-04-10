@@ -5,7 +5,7 @@ author: vroha
 description: Glossary of terms
 ms.author: v-roha
 ms.date: 03/29/2019
-ms.service: product-insights
+ms.service: dynamics-365-crossapp
 ms.topic: conceptual
 ---
 # Glossary of terms
@@ -80,7 +80,7 @@ divide the data.
 When defining dimensions, keep in mind that high cardinality will
 impact performance. See [cardinality](#cardinality).
 
-# drill down, drill into 
+## drill down, drill into 
 
 See [split property](#split-property).
 

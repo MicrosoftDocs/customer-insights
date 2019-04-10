@@ -1,14 +1,14 @@
 ---
 uid: developers/quick-starts/3_2_transform-data
-title: Transform data
+title: Transform data tutorial
 author: vroha
-description: Transform data
+description: Transform data tutorial
 ms.author: v-roha
 ms.date: 04/09/2019
-ms.service: product-insights
+ms.service: dynamics-365-crossapp
 ms.topic: conceptual
 ---
-# Transform data
+# Transform data tutorial
 
 You can apply transforms to signals on the fly. Try deltas to see how data compares to last week. Try **Interpolate NaNs** to fill in missing data.
 

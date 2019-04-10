@@ -5,7 +5,7 @@ author: vroha
 description: Terms of Service 
 ms.author: v-roha
 ms.date: 03/29/2019
-ms.service: product-insights
+ms.service: dynamics-365-crossapp
 ms.topic: conceptual
 ---
 
@@ -238,7 +238,7 @@ The software is subject to United States export laws and regulations.
 You must comply with all domestic and international export laws and
 regulations that apply to the software. These laws include restrictions
 on destinations, end users and end use. For additional information, see
-http://www.microsoft.com/exporting.
+https://www.microsoft.com/exporting.
 
 Unless we notify you otherwise, your license to use the software
 provided by us as part of the Services will end when your right to use
