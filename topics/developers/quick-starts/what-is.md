@@ -17,19 +17,19 @@ Find out what it is, who is using it, and how you can get started.
 
 ## The shortest introduction to Product Insights 
 
-> [!VIDEO https://youtu.be/UFgnpgYr66M]
+> [!VIDEO https://www.youtube.com/embed/UFgnpgYr66M]
 
 ## <a id="who_uses"></a>Who is using Product Insights and how?
 
 You may not have heard of Product Insights. Within Microsoft, our team does telemetry for the teams you have heard of! But all good things should be shared with the world. Watch the video below to learn how Windows, Office, and Skype are using Product Insights.
 
-> [!VIDEO https://youtu.be/I3mTduI6auM]
+> [!VIDEO https://www.youtube.com/embed/I3mTduI6auM]
 
 ## <a id="how_start"></a>How do you get started? 
 
 See the video below for a one-minute overview.
 
-> [!VIDEO https://youtu.be/AROPRYKIM1E]
+> [!VIDEO https://www.youtube.com/embed/AROPRYKIM1E]
 
 Now you know the plan, you're ready to get started!
 
