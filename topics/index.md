@@ -156,38 +156,6 @@ ms.topic: conceptual
                     <a href="#man-section"></a>
                     <ul id="man-section" class="cardsC">
                         <li>
-							<a href="developers/quick-starts/3_5_collaborate.md">
-								<div class="cardSize">
-									<div class="cardPadding">
-										<div class="card">
-<div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/biztalk-host-integration-popular-downloads.svg" alt="Collaborate with others" data-linktype="external"></div></div>
-											<div class="cardText">
-												<h3>Collaborate with others</h3>
-												<p>Collaborate with others using the built-in communications features of Product Insights.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</a>
-                        </li>
-                        <li>
-							<a href="developers/quick-starts/3_3_publish.md">
-								<div class="cardSize">
-									<div class="cardPadding">
-										<div class="card">
-<div class="cardImageOuter"><div class="cardImage bgdAccent1">
-<img src="https://docs.microsoft.com/media/illustrations/system-center-virtual-machine.svg" alt="Publish to a dashboard" data-linktype="external"></div></div>
-											<div class="cardText">
-												<h3>Publish to a dashboard</h3>
-												<p>Publish the metrics you've created to a collaborative dashboard.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</a>							
-                        </li>
-                        <li>
 							<a href="developers/faq/index.md">
 								<div class="cardSize">
 									<div class="cardPadding">

@@ -32,6 +32,3 @@ See the video below for a one-minute overview.
 > [!VIDEO https://www.youtube.com/embed/_9Q0kbbAgrw]
 
 Now you know the plan, you're ready to get started!
-
-> [!div class="nextstepaction"]
-> [5 minutes to insight >>](1_explore-signals.md)
