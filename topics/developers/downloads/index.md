@@ -3,7 +3,7 @@ uid: developers/downloads/index
 title: Download senders
 author: vroha
 description: Download senders
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

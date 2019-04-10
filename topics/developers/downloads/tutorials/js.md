@@ -3,7 +3,7 @@ uid: developers/downloads/js
 title: Get started with the 1DS SDK for JavaScript
 author: vroha
 description: Get started with the 1DS SDK for JavaScript
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

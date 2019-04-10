@@ -3,7 +3,7 @@ uid: developers/quick-starts/1_view-signals
 title: View signals
 author: vroha
 description: View signals
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

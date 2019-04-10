@@ -3,7 +3,7 @@ uid: developers/quick-starts/3_3_find-hidden-insights
 title: Find hidden insights
 author: vroha
 description: Find hidden insights
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 04/09/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

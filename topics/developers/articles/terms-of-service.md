@@ -3,7 +3,7 @@ uid: developers/articles/terms-of-service
 title: SLA
 author: vroha
 description: Terms of Service 
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

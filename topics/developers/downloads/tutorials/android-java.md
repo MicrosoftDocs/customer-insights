@@ -3,7 +3,7 @@ uid: developers/downloads/android-java
 title: Get Started with Android (Java)
 author: vroha
 description: Get Started with Android (Java)
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 03/29/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual

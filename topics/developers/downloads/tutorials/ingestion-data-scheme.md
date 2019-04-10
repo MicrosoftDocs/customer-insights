@@ -3,7 +3,7 @@ uid: developers/downloads/ingestion-data-scheme
 title: Ingestion Data Scheme
 author: vroha
 description: Ingestion Data Scheme
-ms.author: v-roha
+ms.author: hakrou
 ms.date: 04/08/2019
 ms.service: dynamics-365-crossapp
 ms.topic: conceptual
