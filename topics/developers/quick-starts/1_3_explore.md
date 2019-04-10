@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Explore signals
 
-6. Select **Explore** on the top right corner of the screen. You can investigate your signal further in the visualization editor. 
+1. Select **Explore** on the top right corner of the screen. You can investigate your signal further in the visualization editor. 
 
 ![Signal details page](1_Explore.PNG)
 

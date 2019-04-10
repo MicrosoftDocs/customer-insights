@@ -12,8 +12,8 @@ ms.topic: conceptual
 
 The MPG value you see on the chart is for all vehicles. We can add a split. 
 
-5. To see MPGe values for different vehicle fuel types, such as electric or gasoline, select **Split** from the top left corner of the chart. 
-6. Under **Split by**, select **VehicleFuelType**. 
+1. To see MPGe values for different vehicle fuel types, such as electric or gasoline, select **Split** from the top left corner of the chart. 
+2. Under **Split by**, select **VehicleFuelType**. 
 
 ![Select split](2_VehicleFuelType.PNG)
 
