@@ -5,7 +5,7 @@ author: vroha
 description: Get an API token from the portal
 ms.author: hakrou
 ms.date: 03/29/2019
-ms.service: dynamics-365-crossapp
+ms.service: crm-online
 ms.topic: conceptual
 ---
 # Get an API token from the Product Insights portal

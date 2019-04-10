@@ -5,7 +5,7 @@ author: hakrou
 description: Create a measure
 ms.author: hakrou
 ms.date: 04/08/2019
-ms.service: dynamics-365-crossapp
+ms.service: crm-online
 ms.topic: conceptual
 ---
 # Create a metric 
