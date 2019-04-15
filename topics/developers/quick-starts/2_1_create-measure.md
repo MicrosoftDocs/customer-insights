@@ -5,7 +5,7 @@ author: hakrou
 description: Create a measure
 ms.author: hakrou
 ms.date: 04/12/2019
-ms.service: crm-online
+ms.service: product-insights
 ms.topic: conceptual
 ---
 # Create a metric 
