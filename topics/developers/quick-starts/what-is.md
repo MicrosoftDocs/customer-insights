@@ -15,9 +15,9 @@ Product Insights software is powerful, robust, fast, and able to process billion
 
 Find out what it is, who is using it, and how you can get started.
 
-## The shortest introduction to Product Insights 
+## Product Insights overview
 
-> [!VIDEO https://www.youtube.com/embed/UFgnpgYr66M]
+> [!VIDEO https://www.youtube.com/embed/rD8xnZTLQBY]
 
 ## <a id="who_uses"></a>Who is using Product Insights and how?
 
