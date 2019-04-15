@@ -5,7 +5,7 @@ author: vroha
 description: Get started with the 1DS SDK for JavaScript
 ms.author: hakrou
 ms.date: 04/12/2019
-ms.service: crm-online
+ms.service: product-insights
 ms.topic: conceptual
 ---
 # Getting started with the 1DS SDK for JavaScript

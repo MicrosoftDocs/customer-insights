@@ -5,19 +5,20 @@ author: vroha
 description: One minute introduction to Product Insights
 ms.author: hakrou
 ms.date: 04/12/2019
-ms.service: crm-online
+ms.service: product-insights
 ms.topic: conceptual
 ---
 
 # <a id="what_is"></a>Product Insights in five minutes 
 
-Product Insights software is powerful, robust, fast, and able to process billions of signals per second. There’s nothing else like it.
+Product Insights enables you to gain valuable business insights. 
+Use signals sent by your connected products to create metrics, and
+break them down with a wide variety of smart series transforms and property functions.
+Then put your insights to work to improve your products!
 
-Find out what it is, who is using it, and how you can get started.
+## Product Insights overview
 
-## The shortest introduction to Product Insights 
-
-> [!VIDEO https://www.youtube.com/embed/UFgnpgYr66M]
+> [!VIDEO https://www.youtube.com/embed/rD8xnZTLQBY]
 
 ## <a id="who_uses"></a>Who is using Product Insights and how?
 
