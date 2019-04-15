@@ -10,7 +10,10 @@ ms.topic: conceptual
 ---
 # Create metrics
 
-_Product Insights gives you the ability to create your own metrics, with a wide variety of series transforms and property functions._
+Gain important business insights with Product Insights.
+Create metrics based on signals sent by your connected products, and
+use a wide variety of intelligent series transforms and property functions to analyze them.
+Then put your insights to work to make your products better!
 
 ![Creating metrics](../quick-starts/create-metrics.png)
 
