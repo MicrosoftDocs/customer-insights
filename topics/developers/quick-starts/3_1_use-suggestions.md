@@ -5,7 +5,7 @@ author: vroha
 description: Use suggested insights
 ms.author: hakrou
 ms.date: 04/12/2019
-ms.service: crm-online
+ms.service: product-insights
 ms.topic: conceptual
 ---
 # Use suggested insights

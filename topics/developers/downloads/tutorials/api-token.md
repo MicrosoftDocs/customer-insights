@@ -5,7 +5,7 @@ author: vroha
 description: Get an API token from the portal
 ms.author: hakrou
 ms.date: 04/12/2019
-ms.service: crm-online
+ms.service: product-insights
 ms.topic: conceptual
 ---
 # Get an API token from the Product Insights portal
