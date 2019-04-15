@@ -11,9 +11,10 @@ ms.topic: conceptual
 
 # <a id="what_is"></a>Product Insights in five minutes 
 
-Product Insights software is powerful, robust, fast, and able to process billions of signals per second. There’s nothing else like it.
-
-Find out what it is, who is using it, and how you can get started.
+Product Insights enables you to gain valuable business insights. 
+Use signals sent by your connected products to create metrics, and
+break them down with a wide variety of smart series transforms and property functions.
+Then put your insights to work to improve your products!
 
 ## The shortest introduction to Product Insights 
 
