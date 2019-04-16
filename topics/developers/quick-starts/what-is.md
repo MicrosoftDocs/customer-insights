@@ -11,10 +11,7 @@ ms.topic: conceptual
 
 # <a id="what_is"></a>Product Insights in five minutes 
 
-Product Insights enables you to gain valuable business insights. 
-Use signals sent by your connected products to create metrics, and
-break them down with a wide variety of smart series transforms and property functions.
-Then put your insights to work to improve your products!
+Product Insights brings your products alive. Connect your products and let signals flow from your products. Craft crucial business metrics from the inflowing signals. Extract actionable insights. Find out how in five minutes. 
 
 ## Product Insights overview
 
