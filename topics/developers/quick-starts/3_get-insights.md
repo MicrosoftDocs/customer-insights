@@ -14,6 +14,10 @@ Discover hidden insights and trends with Product Insights. If you know what you 
 
 Product Insights helps you discover insights in data with which you may not be familiar. Use suggested insights on your explore screen. Try transforms. Check out the Product Insights anomaly detection. In the following sections, you will learn how to do all this.
 
+<br />
+
+> [!VIDEO https://www.youtube.com/embed/Z-vSiIkNp18]
+
 > [!div class="nextstepaction"]
 > [Next >>](3_1_use-suggestions.md)
 

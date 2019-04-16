@@ -26,7 +26,8 @@ ms.topic: conceptual
 					<ul id="users-section" class="cardsC">
 						<li>
 							<div class="container intro">
-								<p>Welcome to Product Insights, the leading telemetry and data analytics software from Microsoft!</p>
+								Welcome to Product Insights! Get your products connected and talking. Extract insight from the constant flow of signals sent by your products.
+								<br />
 							</div>
 						</li>
 						<li>

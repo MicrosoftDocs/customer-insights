@@ -4,7 +4,7 @@
 ### [1. Find signals](xref:developers/quick-starts/1_1_find)
 ### [2. Examine signals](xref:developers/quick-starts/1_2_examine)
 ### [3. Explore signals](xref:developers/quick-starts/1_3_explore)
-## [Create your metric](xref:developers/quick-starts/2_create-own-metric)
+## [Create metrics](xref:developers/quick-starts/2_create-own-metric)
 ### [1. Create a measure](xref:developers/quick-starts/2_1_create-measure)
 ### [2. Add splits](xref:developers/quick-starts/2_2_split-metric)
 ### [3. Save and publish](xref:developers/quick-starts/2_3_publish)

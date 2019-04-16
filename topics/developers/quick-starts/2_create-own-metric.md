@@ -17,9 +17,11 @@ We can find this value, create a persistent metric, and publish this metric to e
 
 These instructions follow from the end of the previous section, [Explore signals](xref:developers/quick-starts/1_3_explore). 
 
-1. On the **Signals** details page, open the chart editor by selecting **Explore** at the top right corner of the screen. 
+<br/>
 
-![Select explore](1_Signal_detail1.PNG)
+> [!VIDEO https://www.youtube.com/embed/RWuvBeS00oY]
+
+For a screen-by-screen guide, click Next. 
 
 *MPGe: miles per gallon gasoline equivalent
 
