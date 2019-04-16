@@ -14,4 +14,4 @@ When you create a visualization, Product Insights will present a **Drill downs**
 Click one of the alternatives for a new way of visualizing your data suggested by the AI.
 You can also click **Show more suggestions** to see further alternatives.
 
-![Get AI suggestions](get-ai.png)
+![Get AI suggestions](../quick-starts/3-anomaly.PNG)

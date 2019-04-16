@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 You can apply transforms to signals on the fly. Try deltas to see how data compares to last week. Try **Interpolate NaNs** to fill in missing data.
 
-![Insight](../tutorials/topn.png)
+![Insight](2-transforms.PNG)
 
 > [!div class="nextstepaction"]
 > [Next >>](3_3_find-hidden-insights.md)

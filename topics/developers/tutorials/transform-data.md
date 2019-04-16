@@ -12,4 +12,4 @@ ms.topic: conceptual
 
 Product Insights supports a wide variety of mathematical transforms that you can apply to your data.
 
-![Transform data](transform-data.png)
+![Transform data](../quick-starts/2-transforms.PNG)

@@ -12,4 +12,4 @@ ms.topic: conceptual
 
 Product Insights continuously examines your data in the background to find hidden anomalies and insights.
 
-![Insight](../tutorials/topn.png)
+![Insight](3-anomaly.PNG)
