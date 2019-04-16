@@ -20,8 +20,13 @@ In this section, you will learn to find signals, examine their contents, and lea
 
 > [!VIDEO https://www.youtube.com/embed/nm9UMSir0i4]
 
-Log into [Product Insights](https://pi.dynamics.com) to get started.
+Follow this tutorial! 
 
+<br/>
+
+> [!VIDEO https://www.youtube.com/embed/RDqqrvex1xg]
+
+For detailed screen-by-screen introduction, click next. 
 
 > [!div class="nextstepaction"]
 > [Next >>](1_1_find.md)
