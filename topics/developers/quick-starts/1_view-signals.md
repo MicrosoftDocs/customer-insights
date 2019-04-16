@@ -24,7 +24,7 @@ Follow this tutorial!
 
 <br/>
 
-> [!VIDEO https://www.youtube.com/embed/RDqqrvex1xg]
+> [!VIDEO https://www.youtube.com/embed/CzCbGUoc1Pg]
 
 For detailed screen-by-screen introduction, click next. 
 
