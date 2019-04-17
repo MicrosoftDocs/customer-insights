@@ -15,5 +15,7 @@ Create metrics based on signals sent by your connected products, and
 use a wide variety of intelligent series transforms and property functions to analyze them.
 Then put your insights to work to make your products better!
 
-![Creating metrics](../tutorials/create-metrics.png)
+<br/>
+
+> [!VIDEO https://www.youtube.com/embed/RWuvBeS00oY]
 
