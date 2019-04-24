@@ -15,7 +15,7 @@ Product Insights brings your products alive. Connect your products and let signa
 
 ## Product Insights overview
 
-> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ProductInsights-Intro.mp4]
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ProductInsights.mp4]
 
 > [!div class="nextstepaction"]
 > [Next >>](who-uses.md)
