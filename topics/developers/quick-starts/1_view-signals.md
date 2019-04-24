@@ -18,7 +18,7 @@ In this section, you will learn to find signals, examine their contents, and lea
 
 <br/>
 
-> [!VIDEO https://www.youtube.com/embed/nm9UMSir0i4]
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ViewSignals.mp4]
 
 Follow this tutorial! 
 
