@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 When you are [exploring signals](xref:developers/quick-starts/1_3_explore), Product Insights will suggest further actions you can take to discover hidden insights. 
 
-![Insight](1-Suggestions.PNG)
+![Insight](/images/quick-starts/1-Suggestions.png)
 
 > [!div class="nextstepaction"]
 > [Next >>](3_2_transform-data.md)

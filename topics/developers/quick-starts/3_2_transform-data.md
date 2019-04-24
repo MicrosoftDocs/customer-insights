@@ -1,10 +1,10 @@
 ---
 uid: developers/quick-starts/3_2_transform-data
 title: Transform data tutorial
-author: vroha
+author: hakrou
 description: Transform data tutorial
 ms.author: hakrou
-ms.date: 04/12/2019
+ms.date: 04/24/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 You can apply transforms to signals on the fly. Try deltas to see how data compares to last week. Try **Interpolate NaNs** to fill in missing data.
 
-![Insight](2-transforms.PNG)
+![Insight](/images/quick-starts/2-transforms.png)
 
 > [!div class="nextstepaction"]
 > [Next >>](3_3_find-hidden-insights.md)

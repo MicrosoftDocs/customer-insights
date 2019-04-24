@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 1. Select **Explore** on the top right corner of the screen. You can investigate your signal further in the visualization editor. 
 
-![Signal details page](1_Explore.PNG)
+![Signal details page](/images/quick-starts/1_Explore.png)
 
 In the next section, you will learn to create metrics that uncover some insight in the signals. 
 
