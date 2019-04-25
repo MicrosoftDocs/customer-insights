@@ -16,7 +16,7 @@ Product Insights helps you discover insights in data with which you may not be f
 
 <br />
 
-> [!VIDEO https://www.youtube.com/embed/Z-vSiIkNp18]
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/GetInsight.mp4]
 
 > [!div class="nextstepaction"]
 > [Next >>](3_1_use-suggestions.md)

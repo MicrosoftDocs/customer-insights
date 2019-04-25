@@ -19,7 +19,7 @@ These instructions follow from the end of the previous section, [Explore signals
 
 <br/>
 
-> [!VIDEO https://www.youtube.com/embed/RWuvBeS00oY]
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/CreateMetrics.mp4]
 
 For a screen-by-screen guide, click Next. 
 
