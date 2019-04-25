@@ -18,13 +18,13 @@ In this section, you will learn to find signals, examine their contents, and lea
 
 <br/>
 
-> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ViewSignals.mp4]
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ProductInsights-QuickStart.mp4]
 
 Follow this tutorial! 
 
 <br/>
 
-> [!VIDEO https://www.youtube.com/embed/CzCbGUoc1Pg]
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ViewSignals.mp4]
 
 For detailed screen-by-screen introduction, click next. 
 
