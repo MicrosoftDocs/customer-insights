@@ -15,7 +15,7 @@ You may not have heard of Product Insights. Within Microsoft, our team does tele
 
 <br/>
 
-> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ProductInsights-WhoUsesUs.mp4]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RWMK]
 
 > [!div class="nextstepaction"]
 > [Next >>](how-to-get-started.md)
