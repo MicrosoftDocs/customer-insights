@@ -13,7 +13,7 @@ See the video below for a one-minute overview.
 
 <br/>
 
-> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ProductInsights-HowToGetStarted.mp4]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RWMF]
 
 Now you know the plan, you're ready to get started!
 
