@@ -17,5 +17,5 @@ Then put your insights to work to make your products better!
 
 <br/>
 
-> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/CreateMetrics.mp4]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RWMD]
 
