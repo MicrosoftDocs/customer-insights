@@ -27,18 +27,20 @@ Sign in to Product Insights at https://pi.dynamics.com in a web browser. You ma
 ## Create Team
 1. Select **Create a team** in the center welcome tile, or **+New team** in bottom left-hand corner of the portal.
 1. Type *Test_Team* for the **Name** and anything for **Description**. Click **Create** to commit update.
-	![Create a new team](./images/quick-starts/create-team.png)
+
+	![Create a new team](../images/quick-starts/create-team.png)
   
 ## Add Members
 1. Select *Test_Team* from the left menu.  
 1. In the center pane, click **Members**, click **+Add Members**
 1. Enter emails from your AAD for any new members you would like to grant access, select **Role** of *Owner*. Click **Add** to commit update.
-	![Add new members](./images/quick-starts/add-member.png)
+
+	![Add new members](../images/quick-starts/add-members.png)
 
 ## Create Project 
 1. In the center pane, select **Projects**, click **+New project**
 1. Type *SampleProject* and anything for **Description**.  Click **Create** to commit update.
-	![Add new project](./images/quick-starts/add-project.png)
+	![Add new project](../images/quick-starts/add-project.png)
   
 ## Create Data
 1. Click *sampleproject* from center pane. 
@@ -53,6 +55,7 @@ Sign in to Product Insights at https://pi.dynamics.com in a web browser. You ma
 
 1. Click **Save** in top right in the tool bar
 1. Click **Generate** in top right in the tool bar, click **+Add** for each of the following properties:
+1. Click **Start** to begin generating data.
 
 |Property|Example value|Variation range|
 |--------|-------------|---------------|
@@ -60,16 +63,16 @@ Sign in to Product Insights at https://pi.dynamics.com in a web browser. You ma
 |speed|100|40%|
 |model|mazda, acura, bmw|
 
-1. Click **Start** to begin generating data.   
+   
 
 ## Preview signals
 1. Click **Explore** in top right in the tool bar.  You will see the "fake" data that is generated for the properties you provided. 
 1. Toggle **Raw data** to view the data as a visual chart.  You can begin exploring the data at this point. 
-   ![Preview new signals](./images/quick-starts/preview-signal.png)
+   ![Preview new signals](../images/quick-starts/preview-signal.png)
  
 ## Create Dashboard
 1. Click **Publish to new dashboard** in top right in the tool bar. Leave the default name, click **Publish** to commit update. 
-  ![Create a dashboard](./images/quick-starts/create-dashboard.png)
+  ![Create a dashboard](../images/quick-starts/create-dashboard.png)
 
 
 > [!div class="nextstepaction"]
