@@ -15,7 +15,7 @@ This quickstart shows you how to use the Product Insights portal to find actiona
 
 ## Product Insights overview
 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RZnI]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RZnI]
 
 ## Sign up for Product Insights preview
 Sign in to Product Insights at https://pi.dynamics.com in a web browser. You may need to login via a incognito window in your browser (Ctrl+Shirt+N).
@@ -40,6 +40,7 @@ Sign in to Product Insights at https://pi.dynamics.com in a web browser. You ma
 ## Create Project 
 1. In the center pane, select **Projects**, click **+New project**
 1. Type *SampleProject* and anything for **Description**.  Click **Create** to commit update.
+
 	![Add new project](../images/quick-starts/add-project.png)
   
 ## Create Data
@@ -68,10 +69,12 @@ Sign in to Product Insights at https://pi.dynamics.com in a web browser. You ma
 ## Preview signals
 1. Click **Explore** in top right in the tool bar.  You will see the "fake" data that is generated for the properties you provided. 
 1. Toggle **Raw data** to view the data as a visual chart.  You can begin exploring the data at this point. 
+
    ![Preview new signals](../images/quick-starts/preview-signal.png)
  
 ## Create Dashboard
 1. Click **Publish to new dashboard** in top right in the tool bar. Leave the default name, click **Publish** to commit update. 
+
   ![Create a dashboard](../images/quick-starts/create-dashboard.png)
 
 
