@@ -10,14 +10,11 @@ ms.topic: conceptual
 ---
 
 # <a id="what_is"></a>Quickstart: Setup to Insights in 5 minutes 
-[!includecc-beta-prerelease-disclaimer]
-[!IMPORTANT]
 
-[!INCLUDEcc-preview-features-definition]
-[!INCLUDEcc-preview-features-no-ms-support]
 This quickstart shows you how to use the Product Insights portal to find actionable insights in 5 minutes. 
 
 ## Product Insights overview
+
 [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RZnI]
 
 ## Sign up for Product Insights preview
@@ -47,18 +44,22 @@ Sign in to Product Insights at https://pi.dynamics.com in a web browser. You ma
 1. Click *sampleproject* from center pane. 
 1. Click **+Define a Signal**, type *SampleSignal* and anything for **Description**.  Click **Add** to commit update.  You will define the variuos properties in next steps.
 1. Click *SampleSignal*, click **+Add** for each of the following properties:
-Display name | Expected type
--------------|--------------
-command|String 
-speed|Number  
-model|String 
+
+|Display name | Expected type|
+|-------------|--------------|
+|command|String| 
+|speed|Number  |
+|model|String  |
+
 1. Click **Save** in top right in the tool bar
 1. Click **Generate** in top right in the tool bar, click **+Add** for each of the following properties:
-Property|Example value|Variation range
---------|-------------|---------------
-command|start,stop|
-speed|100|40%
-model|mazda, acura, bmw|
+
+|Property|Example value|Variation range|
+|--------|-------------|---------------|
+|command|start,stop|
+|speed|100|40%|
+|model|mazda, acura, bmw|
+
 1. Click **Start** to begin generating data.   
 
 ## Preview signals
