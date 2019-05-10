@@ -73,9 +73,9 @@ Sign in to Product Insights at https://pi.dynamics.com in a web browser. You ma
    ![Preview new signals](../images/quick-starts/preview-signal.png)
  
 ## Create Dashboard
-1. Click **Publish to new dashboard** in top right in the tool bar. Leave the default name, click **Publish** to commit update. 
+1. Click **Publish to new dashboard** in top right in the tool bar. Leave the default name, click **Publish** to commit update.
 
-  ![Create a dashboard](../images/quick-starts/create-dashboard.png)
+![Create a dashboard](../images/quick-starts/create-dashboard.png)
 
 
 > [!div class="nextstepaction"]
