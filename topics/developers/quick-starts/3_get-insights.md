@@ -14,7 +14,7 @@ Product Insights helps you discover insights in data with which you may not be f
 
 1. Log in. If signals are already flowing into your project, you will see notifications on your home page. Click to further explore the data. 
 
-![Home page notification](../images/quick-starts/get-insights-1-home-page.gif)
+   ![Home page notification](../images/quick-starts/get-insights-1-home-page.gif)
 
 2. Select a signal and click **Explore** (follow [this section](1_view-signals) to find out how). 
 3. [Create a metric](2_create-own-metric). See suggestions appear below the property dropdown. 
