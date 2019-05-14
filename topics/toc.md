@@ -3,17 +3,8 @@
 ## [Who is using Product Insights](xref:developers/quick-starts/who-uses) 
 ## [How do you get started](xref:developers/quick-starts/how-to-get-started) 
 ## [View signals](xref:developers/quick-starts/1_view-signals)
-### [1. Find signals](xref:developers/quick-starts/1_1_find)
-### [2. Examine signals](xref:developers/quick-starts/1_2_examine)
-### [3. Explore signals](xref:developers/quick-starts/1_3_explore)
 ## [Create metrics](xref:developers/quick-starts/2_create-own-metric)
-### [1. Create a measure](xref:developers/quick-starts/2_1_create-measure)
-### [2. Add splits](xref:developers/quick-starts/2_2_split-metric)
-### [3. Save and publish](xref:developers/quick-starts/2_3_publish)
 ## [Get insights](xref:developers/quick-starts/3_get-insights)
-### [1. Use suggested insights](xref:developers/quick-starts/3_1_use-suggestions)
-### [2. Transform data](xref:developers/quick-starts/3_2_transform-data)
-### [3. Find hidden insights](xref:developers/quick-starts/3_3_find-hidden-insights)
 
 # Tutorials
 ## Collect signals
