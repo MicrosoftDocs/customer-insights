@@ -23,7 +23,7 @@ In this section, you will learn how to find and explore signals sent to a sample
 5. You can see details of this signal, including all the properties that are sent in as part of this signal.
 6. Select **Explore** on the top right hand corner to start exploring this signal. 
 
-> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ViewSignals.mp4]
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ViewSignals_tutorial.mp4]
 
 > [!div class="nextstepaction"]
 > [Next >>](2_create-own-metric.md)
