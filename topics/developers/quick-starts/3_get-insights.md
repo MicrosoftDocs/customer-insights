@@ -1,25 +1,25 @@
 ---
 uid: developers/quick-starts/3_get-insights
 title: Get insights
-author: vroha
+author: hakrou
 description: Get insights
 ms.author: hakrou
-ms.date: 04/12/2019
+ms.date: 05/14/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 # Get insights
 
-Discover hidden insights and trends with Product Insights. If you know what you are looking for, you can go ahead and create your own metric as in the previous section. 
+Product Insights helps you discover insights in data with which you may not be familiar. There are two main ways Product Insights provides additional insight. One is on your home page when you log in. Our AI-powered engine picks up any interesting patterns or anomalies in your data, and displays on your home screen. When you are exploring data, you will see suggested splits and transforms you can perform on your data for insights. 
 
-Product Insights helps you discover insights in data with which you may not be familiar. Use suggested insights on your explore screen. Try transforms. Check out the Product Insights anomaly detection. In the following sections, you will learn how to do all this.
+1. Log in. If signals are already flowing into your project, you will see notifications on your home page. Click to further explore the data. 
 
-<br />
+![Home page notification](../images/quick-starts/get-insights-1-home-page.gif)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2S7bs]
+2. Select a signal and click **Explore** (follow [this section](1_view-signals) to find out how). 
+3. [Create a metric](2_create-own-metric). See suggestions appear below the property dropdown. 
+4. There are also a suite of transforms available. You can smooth spiky data, run comparisons to past data, and fix data gaps. 
 
-> [!div class="nextstepaction"]
-> [Next >>](3_1_use-suggestions.md)
-
+![Suggestions and transforms](../images/quick-starts/get-insights-2-suggestions-transforms.png)
 
 
