@@ -29,7 +29,7 @@ To get to this signal **vehicle_drive_end**, refer to the previous section [View
 
 ![Open chart editor from the signals page](../images/quick-starts/create-metrics-2-rawdata-off.png)
 
-3. Under Measured as, select **average**.
+3. Under **Measured as**, select **average**.
 4. Under **Property**, select **CurrentMileage**. This is what the vehicles reported as their MPGe for each trip. After these steps, you will see the chart showing average MPGe for all vehicles and all trips.
 
 ![Set up your metric](../images/quick-starts/create-metrics-3-vehicle_drive_end-explore.png)
