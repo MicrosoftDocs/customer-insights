@@ -1,4 +1,4 @@
-S-
+---
 uid: developers/quick-starts/2_create-own-metric
 title: Create your metric
 author: hakrou
