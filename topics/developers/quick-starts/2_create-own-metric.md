@@ -1,4 +1,4 @@
----
+S-
 uid: developers/quick-starts/2_create-own-metric
 title: Create your metric
 author: hakrou
@@ -21,23 +21,22 @@ In this article, you will learn how to build metrics from signals in seconds.
 To get to this signal **vehicle_drive_end**, refer to the previous section [View signals](1_view-signals). 
 
 
-1. On the Signals details page for **vehicle_drive_end signal**, open the chart editor by selecting Explore at the top right corner of the screen.
+1. Click **Explore** at the top right corner of the screen on the **vehicle_drive_end signal** Signals details page to open the chart editor. 
 
 ![Open chart editor from the signals page](../images/quick-starts/create-metrics-1-vehicle_drive_end.png)
 
-2. Turn off raw data. Under Signal, select **vehicle_drive_end**, if not already selected. 
+2. Turn off raw data. Select **vehicle_drive_end** in the Signal dropdown, if not already selected. 
 
 ![Open chart editor from the signals page](../images/quick-starts/create-metrics-2-rawdata-off.png)
 
-3. Under **Measured as**, select **average**.
-4. Under **Property**, select **CurrentMileage**. This is what the vehicles reported as their MPGe for each trip. After these steps, you will see the chart showing average MPGe for all vehicles and all trips.
+3. Select **average** in the **Measured as** dropdown.
+4. Select **CurrentMileage** in the **Property** dropdown. This is what the vehicles reported as their MPGe for each trip. After these steps, you will see the chart showing average MPGe for all vehicles and all trips.
 
 ![Set up your metric](../images/quick-starts/create-metrics-3-vehicle_drive_end-explore.png)
 
 So far this MPG value is for all types of vehicles. To see MPG values for different vehicle fuel types such as electric or gasoline, you need to add splits. 
 
-5. Select **Split** from the top left corner of the chart.
-6. Under **Split**, select **VehicleFuelType**.
+5. Click **Split** from the top left corner of the chart, and select *VehicleFuelType*
 
 ![Add a split](../images/quick-starts/create-metrics-4-add-split.png)
 
