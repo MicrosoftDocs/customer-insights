@@ -26,17 +26,11 @@ To download the tool, click the following link.
 You can run the CSV Sender in PowerShell as follows:
 
 ```powershell
-.\IngestionTool.ps1 -CsvFile YOUR_CSV_FILE -schema YOUR_SCHEMA_FILE -EventName YOUR_EVENT_NAME -ApiToken YOUR_API_KEY
+.\IngestionTool.ps1 -CsvFile YOUR_CSV_FILE -TimestampColumnName birthday -ApiKey Your_API_Key -EventName EventName -Timezone "Eastern Standard Time"
 ```
 
-The `-CsvFile` and `-ApiToken` parameters are mandatory, and the user
+The `-CsvFile` and `-ApiKey` parameters are mandatory, and the user
 must provide either the `-schema` or `-EventName` parameter.
-
-> **Note**: Provide a -schema parameter if you already have a data schema defined
-> according to the [Ingestion Data Scheme](https://www.aria.ms/developers/downloads/IngestionDataScheme). 
-> Alternatively, you can simply provide an event name for the data you are sending, and a schema will be auto-generated. 
-> To override the system timestamp, you will need a custom schema. 
-> Without a schema, all events will have the ingestion time set to the timestamp.
 
 If you run the CSV Sender in the directory where you put it, it
 will print the results on screen.
@@ -53,6 +47,12 @@ On the third page, copy the Ingestion Key. Use it for your
 API token.
 
 [Product Insights Instrument Wizard](xref:developers/downloads/ingestion-data-scheme)
+
+## Changing PowerShell script execution policy 
+
+Users are not able to run our tool directly after downloading because of the PowerShell security strategy on Windows computers. So user need to change it before running the tool.
+To change the execution policy for LocalMachine, start PowerShell with ‘Run as Administorator’, then run “Set-ExecutionPolicy Unrestricted” (this is one-time operation, don’t need to run it later), for more details please see: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6
+
 
 ## For more information
 
