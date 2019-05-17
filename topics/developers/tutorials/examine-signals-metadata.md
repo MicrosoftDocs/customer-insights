@@ -1,3 +1,14 @@
+---
+uid: developers/tutorials/examine-signals-metadata
+title: Examine signals metadata
+author: hakrou
+description: Examine signals metadata
+ms.author: hakrou
+ms.date: 05/16/2019
+ms.service: product-insights
+ms.topic: conceptual
+---
+
 ### Examine signals metadata
 
 Product Insights offers many ways to examine signals and their internal data.

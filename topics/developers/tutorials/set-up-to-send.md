@@ -1,3 +1,14 @@
+---
+uid: developers/tutorials/get-set-up
+title: Get set up to send signals
+author: hakrou
+description: Get set up to send signals
+ms.author: hakrou
+ms.date: 05/16/2019
+ms.service: product-insights
+ms.topic: conceptual
+---
+
 ### Get set up to send signals
 
 To start using Product Insights as a private preview partner, you need

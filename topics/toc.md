@@ -7,37 +7,68 @@
 ## [Get insights](xref:developers/quick-starts/3_get-insights)
 
 # Tutorials
-## Collect signals
-### [Create a project](xref:developers/downloads/create-project)
-### [Get an API token](xref:developers/downloads/api-token)
-### [Send CSV data](xref:developers/tutorials/send-csv)
-### [Send with senders](xref:developers/tutorials/send-using-senders)
-## Explore signals
-### [Create metrics](xref:developers/tutorials/create-metrics)
-### [Transform signals](xref:developers/tutorials/transform-data)
-### [Get AI suggestions](xref:developers/tutorials/get-ai)
+## Signals 
+### [Get set up](xref:developers/tutorial/set-up-to-send)
+### [Generate signals](xref:developers/tutorial/create-sample-signals)
+### [Explore signals](xref:developers/tutorial/examine-signals-metadata)
+### [Import signals](xref:developers/tutorial/import-signals)
+### [Send additional signals](xref:developers/tutorial/send-additional-signals)
 
-## Collaborate with others
-### [Add comments](xref:developers/tutorials/add-comments)
-### [Add annotations](xref:developers/tutorials/add-annotations)
-### [Get updates](xref:developers/tutorials/get-updates)
-## [FAQ (Frequently Asked Questions)](xref:developers/faq/index)
+## Metrics 
+### [Create metrics](xref:developers/tutorials/metrics-create-metrics)
+### [Add splits](xref:developers/tutorials/metrics-add-splits)
+### [Use filters](xref:developers/tutorials/metrics-use-filters)
+### [Drill down to instance level](xref:developers/tutorials/metrics-drill-down-to-instance)
+### [Select top N](xref:developers/tutorials/metrics-select-topN)
+### [Get percentiles](xref:developers/tutorials/metrics-get-percentiles)
+### [Apply transforms](xref:developers/tutorials/metrics-apply-transforms)
+### [Choose visualizations](xref:developers/tutorials/metrics-choose-visualizations)
+### [Set time granularity](xref:developers/tutorials/metrics-set-granularity)
+### [Publish metrics or add to dashboard](xref:developers/tutorials/metrics-publish-or-add-to-dashboard)
+### [Manage metrics](xref:developers/tutorials/metrics-manage-metrics)
+
+## Insights
+### [Discovery insights](xref:developers/tutorials/insights-discovery)
+### [Fix data gaps](xref:developers/tutorials/insights-fix-data-gaps)
+### [Smooth data](xref:developers/tutorials/insights-smooth-data)
+### [Run comparisons](xref:developers/tutorials/insights-run-comparisons)
+
+## Dashboards 
+### [Create a dashboard](xref:developers/tutorials/)
+### [Add pages](xref:developers/tutorials/)
 
 # Articles
-## Transforming data    
-### [Transform reference](xref:developers/articles/transform-ref)
-### [Property function reference](xref:developers/articles/property-fn)
-## Understanding the system  
-### [Glossary](xref:developers/articles/glossary)
-### [Ingestion Data Scheme](xref:developers/downloads/ingestion-data-scheme)
-### [Terms of service](xref:developers/articles/terms-of-service)
-# Signal SDKs
+## [Security](xref:developers/articles/security)
+## [Terms of Service](xref:developers/articles/terms-of-service)
+## [Compliance](xref:developers/articles/compliance)
+## [User permissions](xref:developers/articles/user-permissions) 
+## [Glossary](xref:developers/articles/glossary) 
+
+# Developer resources 
+## Send signals with SDKs 
 ## [Download SDKs](xref:developers/downloads/index)
 ## [SDK tutorials](xref:developers/downloads/tutorials/index)
 ### [Android (mobile)](xref:developers/downloads/android-java)
-
 ### [CSV Sender](xref:developers/downloads/ingest)
 ### [iOS (mobile)](xref:developers/downloads/ios-objc)
 ### [JavaScript](xref:developers/downloads/js)
 ### [.NET](xref:developers/downloads/dotnet)
 ### [Python](xref:developers/downloads/python)
+## Connect to other data sources
+### [Azure IoT](xref:developers/downloads/azure-iot)
+## Manage system 
+### [Manage access](xref:developers/downloads/manage-access)
+### [Manage teams](xref:developers/downloads/manage-teams)
+### [Manage projects](xref:developers/downloads/manage-projects)
+### [Manage ingestion](xref:developers/downloads/manage-ingestion)
+
+# Customer care 
+## FAQ 
+### [Onboarding](xref:developers/faq/onboarding)
+### [Sending signals](xref:developers/faq/sending-signals)
+### [Exploring signals](xref:developers/faq/exploring-signals)
+### [Visualizing signals](xref:developers/faq/visualizing-signals)
+### [Advanced topics](xref:developers/faq/advanced-topics)
+## [Get support](xref:developers/)
+## [Send feedback](xref:developers/)
+

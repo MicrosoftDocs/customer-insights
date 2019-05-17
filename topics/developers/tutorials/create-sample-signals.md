@@ -1,3 +1,14 @@
+---
+uid: developers/tutorials/create-sample-signals
+title: Create sample signals
+author: hakrou
+description: Create sample signals
+ms.author: hakrou
+ms.date: 05/16/2019
+ms.service: product-insights
+ms.topic: conceptual
+---
+
 ### Create sample signals
 
 You may find it useful to generate sample signals and data for test purposes.
