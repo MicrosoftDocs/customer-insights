@@ -8,11 +8,11 @@
 
 # Tutorials
 ## Signals 
-### [Get set up](xref:developers/tutorial/set-up-to-send)
-### [Generate signals](xref:developers/tutorial/create-sample-signals)
-### [Explore signals](xref:developers/tutorial/examine-signals-metadata)
-### [Import signals](xref:developers/tutorial/import-signals)
-### [Send additional signals](xref:developers/tutorial/send-additional-signals)
+### [Get set up](xref:developers/tutorials/set-up-to-send)
+### [Generate signals](xref:developers/tutorials/create-sample-signals)
+### [Explore signals](xref:developers/tutorials/examine-signals-metadata)
+### [Import signals](xref:developers/tutorials/import-signals)
+### [Send additional signals](xref:developers/tutorials/send-additional-signals)
 
 ## Metrics 
 ### [Create metrics](xref:developers/tutorials/metrics-create-metrics)
