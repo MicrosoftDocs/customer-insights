@@ -1,3 +1,14 @@
+---
+uid: developers/tutorials/explore-signals
+title: Explore signals
+author: hakrou
+description: Explore signals 
+ms.author: hakrou
+ms.date: 05/16/2019
+ms.service: product-insights
+ms.topic: conceptual
+---
+
 ### Explore signals
 
 You can select the **Explore** button on the **Signals** page
