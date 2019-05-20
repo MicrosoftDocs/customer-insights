@@ -8,6 +8,7 @@ ms.date: 05/09/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
+
 # Drill down to instance level 
 
 Using filters or splits, you can drill down to a single vehicle. 
@@ -18,8 +19,4 @@ Click the pencil icon to edit filter properties. Select "is equal to", then ente
 
 Select the average operation from the Measure dropdown, and select the CurrentMileage property. This should give you the average MPG for the car. If you do not see any data, you can change the time window to search for more values sent from this car. 
 
-
-<br/>
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RWMD]
 

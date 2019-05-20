@@ -20,7 +20,11 @@ Based on the signal you have selected, below are sample metrics you could create
 - To see the total number of unique cars, select distinct count, then select the VIN property. This will give you a distinct count of VIN numbers presented in the incoming vehicle_drive_end signals. 
 - To see average MPG for all completed drives, select the average operation, then choose the CurrentMileage property which represents MPG value for completed drives. Product Insights collects all CurrentMileage data reported, then works out the average value. 
 
-<br/>
+For detailed instructions, see below. 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RWMD]
+1. To create a metric, first verify that the **Project** and the **Signal** are correct. 
+1. Decide which operation to use. Do you simply want a count of signals sent in? Do you want an average of some numeric value such as MPG? 
+1. If you want 'average', specify which property is to be used. In this example, you can use CurrentMileage property. 
+
+
 

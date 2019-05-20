@@ -16,7 +16,6 @@ Splitting enables breakdown of a metric into reported categories. For example, t
 - To the distinc count of VIN numbers metric, add a split by clicking Split, then selecting CityType. Now you see the total unique vehicles reporting in, divided into types of cities where they are located. 
 - To the average MPG metric, add a split by selecting VehicleFuelType. Now you see average MPG values for electric, hybrid, and gas vehicles. 
 
-<br/>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RWMD]
+
 

@@ -8,10 +8,9 @@ ms.date: 05/09/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
-# 
 
+# Manage metrics 
 
-<br/>
+Create metrics will appear on the Metrics list, and can be edited or deleted. All metrics added by team members for the project will be viewable here.  
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RWMD]
-
+(screenshot)
