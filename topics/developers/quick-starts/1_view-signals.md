@@ -12,16 +12,16 @@ layout: LandingPage
 
 # View signals 
 
-Product Insights enables business to send data from a variety of sources such as products, websites, and mobile applications. This continuous flow of data is referred to as signals. A project typically has multiple signals flowing in, and a user who has permission can view, and explore the signals. 
+Product Insights enables business to send data from a variety of sources such as products, websites, and mobile applications. This continuous flow of data is referred to as *signals*. A project typically has multiple signals flowing in. A user who has permission can view and explore the signals. 
 
 In this section, you will learn how to find and explore signals sent to a sample project named Fabrikam Go.
 
-1. Log in. If you are not sure how, refer to [this section](what-is). 
-2. Click on **Product Summary** team on the left pane of the landing page. 
+1. Log in. Refer to [the instructions](what-is) if necessary. 
+2. Select the **Product Summary** team on the left pane of the landing page. 
 3. Select **Fabrikam Automobiles** from the list of **Product Summary** team's projects, 
 4. Select the **vehicle_drive_end** signal.
-5. You can see details of the **vehicle_drive_end** signal, including all the properties that are sent in as part of this signal.
-6. Select **Explore** on the top right hand corner to start exploring this signal. 
+5. You can see details of the **vehicle_drive_end** signal, including all the properties that are sent as part of this signal.
+6. Select **Explore** in the top right corner to start exploring this signal.
 
 > [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ViewSignals_tutorial.mp4]
 
