@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-### Examine signals metadata
+# Examine signals metadata
 
 Product Insights offers many ways to examine signals and their internal data.
 One of them is previewing raw signals, as explained below.
