@@ -18,20 +18,20 @@ This quickstart shows you how to use the Product Insights portal to find actiona
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RZnI]
 
 ## Sign up for a Product Insights preview
-Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com) in a web browser. You may need to log in via an incognito window in your browser.
+Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com) in a web browser. You may need to log in via an incognito window in your browser (Ctrl+Shift+N).
 > [!NOTE]
-> - An AAD (Azure Active Directory) account is required for the Product Insights preview. Contact [Jeff Hardie](email:jeffhar@microsoft.com) to enable a preview for your AAD.
-> - The Product Insights team may also provide a sample AAD account. Contact [Jeff Hardie](email:jeffhar@microsoft.com) to request yours.
+> - An AAD (Azure Active Directory) account is required for the Product Insights preview. Contact [Jeff Hardie](email:jefhar@microsoft.com) to enable a preview for your AAD.
+> - The Product Insights team may also provide a sample AAD account. Contact [Jeff Hardie](email:jefhar@microsoft.com) to request yours.
 > - Previews are not available to MSA accounts (example: [sample@outlook.com](sample@outlook.com)) at this time.
 
 ## Create a team
 1. Select **Create a team** in the center welcome tile, or **+New team** in the bottom left corner of the portal.
-1. Type `Test_Team` in the **Name** field and anything for **Description**. Select **Create** to commit the update.
+1. Type *Test_Team* in the **Name** field and anything for **Description**. Select **Create** to commit the update.
 
 	![Create a new team](../images/quick-starts/create-team.png)
   
 ## Add Members
-1. Select `Test_Team` from the left menu.  
+1. Select *Test_Team* from the left menu.  
 1. In the center pane, select **Members** and then **+Add Members**
 1. Enter email addresses from your AAD for any new members you would like to have access, and then select **Role** under **Owner**. Select **Add** to commit the update.
 
@@ -39,14 +39,14 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com
 
 ## Create a project 
 1. In the center pane, select **Projects** and then **+New project**.
-1. Type `SampleProject` and any other text for **Description**.  Select **Create** to commit the update.
+1. Type *SampleProject* and any other text for **Description**.  Select **Create** to commit the update.
 
 	![Add new project](../images/quick-starts/add-project.png)
   
 ## Create data
-1. Select `sampleproject` from the center pane. 
+1. Select *sampleproject* from the center pane. 
 1. Select **+Define a Signal**, and then type `SampleSignal` and any other text for **Description**.  Select **Add** to commit the update.  You will define the various properties in the next steps.
-1. Select `SampleSignal`, and then select **+Add** for each of the following properties:
+1. Select *SampleSignal*, and then select **+Add** for each of the following properties:
 
 |Display name | Expected type|
 |-------------|--------------|
