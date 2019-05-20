@@ -10,9 +10,9 @@ ms.topic: conceptual
 ---
 # Use filters to refine your data 
 
-Filters are used to fine-tune the signals that power your metrics. For example, the following filters can be used for deeper analysis. 
+Filters are used to fine-tune the signals that power your metrics. 
 
-In this example, we will use the metric that measures the total number of drives completed that we have used in the previous two sections.  
+In this example, we will use the metric that measures the total number of drives completed that we have used in the previous two sections ([Create metrics](metrics-create-metrics) and [Add splits](metrics-add-splits)).   
 
 Click 'Filter' and select 'City'. You will see a section added that shows a filter. 
 
@@ -23,10 +23,7 @@ Some use cases of filters are as follows:
 - Only see signals from devices whose phone number starts with a specific area code
 - Only see feedback from users where content contains the word "error" 
 
-There are use cases where you can use a split or a filter. For example, you can see the total number of reported drives in San Francisco using either option. Filter limits the 
+There are use cases where you can use a split or a filter. For example, you can see the total number of reported drives in San Francisco using either option. Filter limits the type of signals used for analysis. 
 
 
-<br/>
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RWMD]
 
