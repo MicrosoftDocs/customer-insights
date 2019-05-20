@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-### Send additional signals
+# Send additional signals
 
 Product Insights provides a variety of different options for setting up a data source service with Product Insights code 
 and sending or generating signals, including [various SDK options and environments](developers/downloads), such as

@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-### Import signals  
+# Import signals  
 
 Product Insights provides a variety of different options for connecting to data sources and importing signals,
 including [CSV import](developers/downloads/tutorials/ingest) and [importing from IoT hubs]().

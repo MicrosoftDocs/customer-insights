@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-### Explore signals
+# Explore signals
 
 You can select the **Explore** button on the **Signals** page
 to analyze and discover every aspect of a Product Insights signal.

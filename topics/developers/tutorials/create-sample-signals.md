@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-### Create sample signals
+# Create sample signals
 
 You may find it useful to generate sample signals and data for test purposes.
 Creating sample signals is a simple procedure with Product Insights.

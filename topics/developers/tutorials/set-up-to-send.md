@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-### Get set up to send signals
+# Get set up to send signals
 
 To start using Product Insights as a private preview partner, you need
 to sign up. Email
