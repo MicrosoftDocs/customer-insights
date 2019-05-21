@@ -21,7 +21,7 @@ From the team screen, select a project, such as "Command".
 On the project screen, select the **Define a Signal** button.
 
 The **Add new signal** window will appear. The **Display name** and **Actual name** fields
-for the signal will be filled automatically. You can fill the **Description** field with
+for the signal will fill automatically. You can fill the **Description** field with
 a description of the new signal.
 
 Select the new signal, in this case "Autopilot command". The **Signals** screen for the new
