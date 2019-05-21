@@ -27,14 +27,14 @@ Working out rolling averages, deltas, and other such common operations are extre
 * **Rate Normalization**: divide to get a number per second, minute, or hour
 * **Scale**: multiply a number
 * **Series Ordering**: order a series
-- **Clipping**: remove outliers by setting upper and lower bounds
-- **Gating**: convert values to binary. Linear values can be converted to `1` and `0`.
-- **Power/root**: square a value, cube a value, or get a root of the value
-- **Log/exponent**: get a log of the value or use the value as an exponent for base x
-- **NaN interpolation**: let Aria interpolate missing values
-- **Shift**: move values up and down the Y axis
-- **Rolling median**: addition to an existing rolling average
-- **Exponential rolling average**: give more weight to the latest data and react faster to recent changes; this is the preferred smoothing transform
+* **Clipping**: remove outliers by setting upper and lower bounds
+* **Gating**: convert values to binary. Linear values can be converted to `1` and `0`.
+* **Power/root**: square a value, cube a value, or get a root of the value
+* **Log/exponent**: get a log of the value or use the value as an exponent for base x
+* **NaN interpolation**: let Aria interpolate missing values
+* **Shift**: move values up and down the Y axis
+* **Rolling median**: addition to an existing rolling average
+* **Exponential rolling average**: give more weight to the latest data and react faster to recent changes; this is the preferred smoothing transform
 
 ## Detailed explanations of the transforms
 
