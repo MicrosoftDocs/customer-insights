@@ -11,8 +11,8 @@ ms.topic: conceptual
 
 # Publish metrics
 
-Once you have a metric that contains information you want to track, you can **Publish as metric**, or **Publish to dashboard**. The first option saves the metric to the project to be tracked continuously. With the dashboard publishing option, the chart as you have it will be added to a dashboard of your choice. 
+Once you have a metric that contains information you want to track, you can **Publish as metric** or **Publish to dashboard**. The first option saves the metric to the project to be tracked continuously. The second option adds your chart to the dashboard of your choice.
 
-[ Publish as metric dialogue box] 
+TK: [ Publish as metric dialogue box] 
 
-[Publish to a dashboard dialogue box] 
+TK: [Publish to a dashboard dialogue box] 
