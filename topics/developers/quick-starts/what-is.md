@@ -1,4 +1,4 @@
-hi---
+---
 uid: developers/quick-starts/what-is
 title: One minute introduction to Product Insights
 author: hakrou
