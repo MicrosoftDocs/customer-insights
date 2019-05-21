@@ -28,14 +28,14 @@
 ### [Manage metrics](xref:developers/tutorials/metrics-manage-metrics)
 
 ## Insights
-### [Discovery insights](xref:developers/tutorials/insights-discovery)
+### [Discover insights](xref:developers/tutorials/insights-discovery)
 ### [Fix data gaps](xref:developers/tutorials/insights-fix-data-gaps)
 ### [Smooth data](xref:developers/tutorials/insights-smooth-data)
 ### [Run comparisons](xref:developers/tutorials/insights-run-comparisons)
 
 ## Dashboards 
-### [Create a dashboard](xref:developers/tutorials/)
-### [Add pages](xref:developers/tutorials/)
+### [Create a dashboard](xref:developers/tutorials/create-dashboard)
+### [Add pages](xref:developers/tutorials/add-pages)
 
 # Articles
 ## [Security](xref:developers/articles/security)
