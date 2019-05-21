@@ -25,5 +25,12 @@ Some use cases of filters are as follows:
 
 There are use cases where you can use either a split or a filter. For example, you can see the total number of reported drives in San Francisco using either option. Filters limit the types of signal used for analysis.
 
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/UseFilter.mp4] 
 
+## Filter conditions 
 
+Filter offers different conditions you can use on your data. **Is equal to** and **Is not equal to** are used to include or exclude specific strings. Therefore, using this condition you could only see data where city is exactly equal to "San Francisco". Using "Begins with", you could only see cities that start with the word "San", to include San Diego as well. 
+
+The **Contains** condition allows you to filter regardless of where the target string may be. Only showing feedback from users where the content contains the word "error" is a good example. It won't matter where the word 'error' occurs in a possibly long body of text. 
+
+**Has one of** allows you to specify multiple possibilities. You can specify that you want any data that contains one of the following cities: "San Francisco", "Chicago", and "New York".
