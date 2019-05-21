@@ -10,20 +10,20 @@ ms.topic: conceptual
 ---
 # Use filters to refine your data 
 
-Filters are used to fine-tune the signals that power your metrics. 
+Filters fine-tune the signals that power your metrics. 
 
-In this example, we will use the metric that measures the total number of drives completed that we have used in the previous two sections ([Create metrics](metrics-create-metrics) and [Add splits](metrics-add-splits)).   
+This example uses the metric for the total number of drives completed that was used in the previous two sections ([Create metrics](metrics-create-metrics) and [Add splits](metrics-add-splits)).   
 
-Click 'Filter' and select 'City'. You will see a section added that shows a filter. 
+Select **Filter** and then **City**. You will see a new section that shows a filter. 
 
-Click the pencil icon that allows you to edit filter options. You could filter the signals so that you only see data for San Francisco, or cities whose names start with "S". There are many other options available. 
+Click the pencil icon to edit filter options. You can filter the signals so that you only see data for San Francisco, or cities whose names start with "C". There are many other options available. 
 
 Some use cases of filters are as follows: 
-- Property starts with "TEST" to only see test data. Or "Does not begin with" or filter out test data. 
-- Only see signals from devices whose phone number starts with a specific area code
-- Only see feedback from users where content contains the word "error" 
+- Create a filter that only shows properties starting with "TEST" to only see test data. Use **Does not begin with** or filter out test data. 
+- Only show signals from devices whose phone number starts with a specific area code
+- Only show feedback from users where the content contains the word "error" 
 
-There are use cases where you can use a split or a filter. For example, you can see the total number of reported drives in San Francisco using either option. Filter limits the type of signals used for analysis. 
+There are use cases where you can use either a split or a filter. For example, you can see the total number of reported drives in San Francisco using either option. Filters limit the types of signal used for analysis.
 
 
 
