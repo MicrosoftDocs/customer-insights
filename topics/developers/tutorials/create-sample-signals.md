@@ -14,6 +14,8 @@ ms.topic: conceptual
 You may find it useful to generate sample signals and data for test purposes.
 Creating sample signals is a simple procedure with Product Insights.
 
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/CreateSampleSignals.mp4]
+
 On the **Home** screen, select a team from the pane on the left, such as "Autopilot".
 
 From the team screen, select a project, such as "Command".
@@ -47,3 +49,5 @@ with a variation range of 40%.
 You might assign the "model" property the values "GEM, ATV, GoKart".
 
 Click **Start** when you are ready to generate data for the sample signal.
+
+
