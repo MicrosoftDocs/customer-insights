@@ -10,12 +10,8 @@ ms.topic: conceptual
 ---
 # Add splits to your metric 
 
-Splitting enables breakdown of a metric into reported categories. For example, the following split operations can be added to the previous metrics we have established: 
+Splitting a metric enables breaking it down into reported categories. For example, you can add the following split operations to the metrics previously established: 
 
-- To the total number of drives completed metric, add a split by clicking Split, then selecting VehicleType. Now you see total number of drives per vehicle type such as SUV, Sports, Minivan, and Sedan. 
-- To the distinc count of VIN numbers metric, add a split by clicking Split, then selecting CityType. Now you see the total unique vehicles reporting in, divided into types of cities where they are located. 
-- To the average MPG metric, add a split by selecting VehicleFuelType. Now you see average MPG values for electric, hybrid, and gas vehicles. 
-
-
-
-
+- Add a split to the "total number of drives completed metric" by selecting **Split** and then **VehicleType**. Now you can see the total number of drives for every vehicle type such as SUV, Sports, Minivan, and Sedan. 
+- Add a split to the "distinct count of VINs" metric by selecting **Split** and then **CityType**. Now you can see the total number of unique vehicles reporting in, divided into the types of their locations. 
+- Add a split to the average MPGe metric by selecting **VehicleFuelType**. Now you can see average MPGe values for gas, electric, and hybrid vehicles.
