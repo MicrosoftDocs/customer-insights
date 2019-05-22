@@ -20,7 +20,7 @@ The event viewer was designed to provide a quick sample of your events for you t
 
 ## What is an SDK?
 
-An SDK is a Software Development Kit. Several SDKs are [available for Product Insights](../downloads/index.md), including ones for Android, C#, iOS, and JavaScript. These SDKs will enable you to send data programmatically to Product Insights from their respective platforms.
+An SDK is a Software Development Kit. Several SDKs are [available for Product Insights](../dev-resources/index.md), including ones for Android, C#, iOS, and JavaScript. These SDKs will enable you to send data programmatically to Product Insights from their respective platforms.
 
 For alternative ways of sending data, see TK.
 
