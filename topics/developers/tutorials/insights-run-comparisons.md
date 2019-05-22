@@ -1,5 +1,5 @@
 ---
-uid: developers/tutorials/insights-run-comparisons.md
+uid: developers/tutorials/insights-run-comparisons
 title: Run comparisons
 author: vroha
 description: Run comparisons
