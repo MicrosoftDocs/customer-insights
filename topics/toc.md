@@ -28,7 +28,7 @@
 ### [Manage metrics](xref:developers/tutorials/metrics-manage-metrics)
 
 ## Insights
-### [Discover insights](xref:developers/tutorials/insights-discovery)
+### [Discover insights](xref:developers/tutorials/insights-discover)
 ### [Fix data gaps](xref:developers/tutorials/insights-fix-data-gaps)
 ### [Smooth data](xref:developers/tutorials/insights-smooth-data)
 ### [Run comparisons](xref:developers/tutorials/insights-run-comparisons)
