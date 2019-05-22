@@ -34,12 +34,11 @@ Good to see how much each segment takes is over time.
 
 * Column 
 
-Bar charts. To see total breakdown, switch to "all" 
-(Continuing from previous example), switch to Column, then change "Five mis" to All 
+Bar charts. To see total breakdown, switch to "all"  
 
-Then switc 
+(Continuing from previous example), switch to Column, then change "Five minutes" to All  
 
-TK: Fix previous two paragraphs
+Then switch granularity to "hour"  
 
 ![Visualizations: column](../images/tutorials/Visualizations-Column.png)
 
