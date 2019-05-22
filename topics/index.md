@@ -31,7 +31,7 @@ ms.topic: conceptual
 							</div>
 						</li>
 						<li>
-							<a href="developers/quick-starts/what-is.md#what_is">
+							<a href="developers/quick-starts/what-is.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -50,7 +50,7 @@ ms.topic: conceptual
 							</a>
 						</li>
 						<li>
-							<a href="developers/quick-starts/what-is.md#who_uses">
+							<a href="developers/quick-starts/who-uses">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -69,7 +69,7 @@ ms.topic: conceptual
 							</a>
 						</li>
 						<li>
-							<a href="developers/quick-starts/what-is.md#how_start">
+							<a href="developers/quick-starts/how-to-get-started">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -115,7 +115,7 @@ ms.topic: conceptual
 							</a>
                         </li>
                         <li>
-							<a href="developers/downloads/index.md">
+							<a href="developers/dev-resources/index.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -131,7 +131,7 @@ ms.topic: conceptual
 							</a>							
                         </li>
                         <li>
-							<a href="developers/downloads/tutorials/index.md">
+							<a href="developers/dev-resources/tutorials/index.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">

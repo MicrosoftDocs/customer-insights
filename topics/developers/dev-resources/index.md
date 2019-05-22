@@ -1,5 +1,5 @@
 ---
-uid: developers/downloads/index
+uid: developers/dev-resources/index
 title: Download senders
 author: vroha
 description: Download senders

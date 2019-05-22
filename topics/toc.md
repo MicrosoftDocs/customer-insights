@@ -35,7 +35,6 @@
 
 ## Dashboards 
 ### [Create a dashboard](xref:developers/tutorials/create-dashboard)
-### [Add pages](xref:developers/tutorials/add-pages)
 
 # Articles
 ## [Security](xref:developers/articles/security)
@@ -45,8 +44,7 @@
 ## [Glossary](xref:developers/articles/glossary) 
 
 # Developer resources 
-## Send signals with SDKs 
-## [Download SDKs](xref:developers/downloads/index)
+## [Download SDKs to send signals](xref:developers/downloads/index)
 ## [SDK tutorials](xref:developers/downloads/tutorials/index)
 ### [Android (mobile)](xref:developers/downloads/android-java)
 ### [CSV Sender](xref:developers/downloads/ingest)
@@ -55,12 +53,9 @@
 ### [.NET](xref:developers/downloads/dotnet)
 ### [Python](xref:developers/downloads/python)
 ## Connect to other data sources
-### [Azure IoT](xref:developers/downloads/azure-iot)
+### [Azure IoT](xref:developers/dev-resources/azure-iot)
 ## Manage system 
-### [Manage access](xref:developers/downloads/manage-access)
-### [Manage teams](xref:developers/downloads/manage-teams)
-### [Manage projects](xref:developers/downloads/manage-projects)
-### [Manage ingestion](xref:developers/downloads/manage-ingestion)
+### [Manage teams, projects, and members](xref:developers/dev-resources/manage-teams)
 
 # Customer care 
 ## FAQ 

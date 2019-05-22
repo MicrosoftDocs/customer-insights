@@ -1,5 +1,5 @@
 ---
-uid: developers/downloads/sdk-samples
+uid: developers/dev-resources/sdk-samples
 title: Sample senders
 author: vroha
 description: Sample senders
