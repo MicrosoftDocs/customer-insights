@@ -1,5 +1,5 @@
 ---
-uid: developers/tutorials/insights-fix-data-gaps.md
+uid: developers/tutorials/insights-fix-data-gaps
 title: Fix data gaps
 author: vroha
 description: Fix data gaps
