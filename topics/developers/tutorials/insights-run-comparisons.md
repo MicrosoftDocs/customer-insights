@@ -14,6 +14,8 @@ Explanation
 
 Comparison: compare with previous time windows (for example, week over week)
 
+Comparing the number of items such as calls to a previous period is often the first transform to try. Select a comparison, then choose which period you will compare it to. You can select the number of days or weeks. The graph will update with another series from the time period of your choice.
+
 ## Example
 
 Step by step instructions
