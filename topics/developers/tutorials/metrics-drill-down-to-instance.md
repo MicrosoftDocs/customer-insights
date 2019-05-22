@@ -17,6 +17,6 @@ Continuing from the [Fabrikam Go example](metrics-create-metrics), select **Filt
 
 Click the pencil icon to edit filter properties. Select **is equal to**, and then enter a VIN value such as 3896R0REU0PGPLAW8. You should now only see results for that specific vehicle. 
 
-Select the **average** operation from the **Measure** menu, and then select the **CurrentMileage** property. This will show the average MPGe for the car. If you do not see any data, you can change the time window to search for more values sent from this car. 
+Select the **average** operation from the **Measure** menu, and then select the **CurrentMileage** property. This will show the average MPGe for the car. If you do not see any data, you can change the time window to search for more values sent from this car.
 
-
+![Drilling down to instance level](../images/tutorials/DrillDownToInstanceLevel.png)
