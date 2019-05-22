@@ -18,4 +18,4 @@ Exponential rolling average: give more weight to the latest data and react faste
 
 Step by step instructions
 
-https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/insights-smoothing.mp4
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/insights-smoothing.mp4]
