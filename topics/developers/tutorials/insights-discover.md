@@ -1,5 +1,5 @@
 ---
-uid: developers/tutorials/insights-discover.md
+uid: developers/tutorials/insights-discover
 title: Discover insights
 author: vroha
 description: Discover insights
