@@ -14,6 +14,8 @@ Explanation
 
 Exponential rolling average: give more weight to the latest data and react faster to recent changes; this is the preferred smoothing transform
 
+Some signals are noisy. To reduce fluctuations and noise, you can use rolling averages to smooth out variability and outliers. It also makes trends much easier to spot. Choose automatic time grain to let the system find the optimal window size.
+
 ## Example
 
 Step by step instructions
