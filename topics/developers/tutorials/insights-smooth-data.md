@@ -1,5 +1,5 @@
 ---
-uid: developers/tutorials/insights-smooth-data.md
+uid: developers/tutorials/insights-smooth-data
 title: Smooth data
 author: vroha
 description: Smooth data
