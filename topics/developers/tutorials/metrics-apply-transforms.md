@@ -36,6 +36,8 @@ Working out rolling averages, deltas, and other such common operations are extre
 * **Rolling median**: addition to an existing rolling average
 * **Exponential rolling average**: give more weight to the latest data and react faster to recent changes; this is the preferred smoothing transform
 
+![Applying a transform](../images/tutorials/ApplyTransforms.png)
+
 ## Detailed explanations of the transforms
 
 ### Comparison
