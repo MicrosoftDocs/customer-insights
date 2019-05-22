@@ -18,4 +18,4 @@ NaN interpolation: let Aria interpolate missing values
 
 Step by step instructions
 
-https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/insights-fix-gaps.mp4
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/insights-fix-gaps.mp4]
