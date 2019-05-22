@@ -16,4 +16,4 @@ Explanation
 
 Step by step instructions
 
-https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/discover-insights.mp4
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/discover-insights.mp4]
