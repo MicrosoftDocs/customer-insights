@@ -15,6 +15,4 @@ Once you have a metric that contains information you want to track, you can **Pu
 
 ![Publish button](../images/tutorials/Publish-PublishButton.png)
 
-TK: [ Publish as metric dialogue box] 
 
-TK: [Publish to a dashboard dialogue box] 
