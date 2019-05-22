@@ -18,4 +18,4 @@ Comparison: compare with previous time windows (for example, week over week)
 
 Step by step instructions
 
-https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/insights-run-comparisons.mp4
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/insights-run-comparisons.mp4]
