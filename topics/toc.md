@@ -2,9 +2,9 @@
 ## [Product Insights in a minute](xref:developers/quick-starts/what-is) 
 ## [Who is using Product Insights](xref:developers/quick-starts/who-uses) 
 ## [How do you get started](xref:developers/quick-starts/how-to-get-started) 
-## [View signals](xref:developers/quick-starts/1_view-signals)
-## [Create metrics](xref:developers/quick-starts/2_create-own-metric)
-## [Get insights](xref:developers/quick-starts/3_get-insights)
+## [- View signals](xref:developers/quick-starts/1_view-signals)
+## [- Create metrics](xref:developers/quick-starts/2_create-own-metric)
+## [- Get insights](xref:developers/quick-starts/3_get-insights)
 
 # Tutorials
 ## Signals 
