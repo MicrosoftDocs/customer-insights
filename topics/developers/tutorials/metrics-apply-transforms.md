@@ -13,73 +13,297 @@ ms.topic: conceptual
 
 When exploring data, you can apply various transforms to your data for further insight. These are found above the data visualization pane. 
 
+![Applying a transform](../images/tutorials/ApplyTransforms.png)
+
 TK: -- Add as the transforms become available 
 
 Working out rolling averages, deltas, and other such common operations are extremely easy to add to your chart using the transform feature. Currently we support the following operations:
 
-* **Delta**: display delta or delta of deltas
-* **Comparison**: compare with previous time windows (for example, week over week)
-* **Rolling Average**: smooth a line by computing its rolling average
-* **Absolute Value**: show absolute values, instead of actual values
-* **Cumulative Sum**: cumulative sum for every series
-* **Dimension Aggregation**: aggregate by dimension
-* **Time Aggregation**: aggregate by time
-* **Rate Normalization**: divide to get a number per second, minute, or hour
-* **Scale**: multiply a number
-* **Series Ordering**: order a series
-* **Clipping**: remove outliers by setting upper and lower bounds
-* **Gating**: convert values to binary. Linear values can be converted to `1` and `0`.
-* **Power/root**: square a value, cube a value, or get a root of the value
-* **Log/exponent**: get a log of the value or use the value as an exponent for base x
-* **NaN interpolation**: let Product Insights interpolate missing values
-* **Shift**: move values up and down the Y axis
-* **Rolling median**: addition to an existing rolling average
-* **Exponential rolling average**: give more weight to the latest data and react faster to recent changes; this is the preferred smoothing transform
+## Absolute value
 
-![Applying a transform](../images/tutorials/ApplyTransforms.png)
+Calculates absolute value of each data point in each series.
 
-## Detailed explanations of the transforms
+## Anomalies
+Finds and marks anomalies in the time series (values that deviate from expected values based on historical patterns).
 
-### Comparison
+**Note** Health alerts based on anomaly detection coming soon. 
 
-Comparing the number of items such as calls to a previous period is often the first transform to try. Select a comparison, then choose which period you will compare it to. You can select the number of days or weeks. The graph will update with another series from the time period of your choice.
+Parameters:
+- Sensitivity - Represents how much evaluated data point has to deviate from expected value to be considered anomalous. High sensitivity means even small deviations are marked as anomalies. Low sensitivity marks only largest deviations.
+- Direction - Specifies whether to mark only anomalies where value is higher than expected (Up), only lower than expected (Down) or both.
 
-### Delta
+## Clipping
 
-With two graphs overlaid, it may not be clear what the difference in volume is. You can choose to chart the delta (difference) between two series with the delta transform. You will only see the difference between the original two series. For example, if calls are 30 today but were 40 last week, you'll see -10.
+The clipping transform "clips" the time series at configurable, optional, maximum and minimum limits. If both limits are present then top limit must be greater than the bottom limit. At least one limit must be specified.
 
-### Absolute value
+Parameters:
+-Top limit - this is an optional maximum limit to clip the value at (this means all values exceeding this limit are replaced with this limit)
+-Bottom limit - this is an optional minimum limit to clip the value at (this means all values less than this limit are replaced with this limit)
 
-If you're looking at the magnitude or variability of call volume, you can apply the absolute value transform on top of the delta transform. This removes the negative signs. If calls were 30 today but 40 last week, 10 will be plotted. If it was 40 today but 30 last week, it will also be 10.
+## Comparison
 
-### Cumulative sum
+Returns original series and specified number of series shifted by specified period for comparison (e.g. current week and last 2 weeks).
 
-Calculating total calls for the week or for the whole month is easy with cumulative sum transform. You can choose to aggregate daily values for a weekly reset for a weekly (or monthly) call volume. You can also add a comparison transform, to see if you have a higher number of total calls compared to last week.
+Parameters:
+Period - Period of time to shift back for comparison transform.
+Possible values:
+	- Hour over hour
+	- Day over day
+	- Week over week
+	- Month over month
+- Number of periods - Number of shift periods to move back. Each shift produces a series with data shifted by a period. Possible values: 1-6, default: 1.
 
-### Rolling average
+Example: day over day comparison with last 2 days.
 
-Some signals are noisy. To reduce fluctuations and noise, you can use rolling averages to smooth out variability and outliers. It also makes trends much easier to spot. Choose automatic time grain to let the system find the optimal window size.
+## Cumulative Sum
 
-### Scale
+Calculates cumulative sum resetting to 0 at specified interval. Weeks reset on Monday 12am.
 
-If your units are large and cause the axis to look cluttered, you can use the scale option to reduce the numbers. Values in the millions can be reduced to single digits by multiplying the x axis values by 0.00001.
+Parameters:
+- Reset period - Specifies how often to reset the summation for cumulative sum.
 
-### Series ordering
+Example: Cumulative sum of metrics with weekly reset.
 
-If you have selected multiple series, perhaps with multiple dimensions, you can order the series. For example, you can select the top five regions where call volume varies the most, and then toggle the top or bottom N with the toggle switch.
+## Delta
 
-### Rate normalization
+For each data point, calculates difference with another data point shifted back by specified period (e.g. previous data point, yesterday, last week).
 
-You know what the total calls are per hour, or per five minute bucket, which is usually the default time grain. So if you get 5000 calls per day, how many calls is that per minute? You can have a chart that tracks the minute rate with rate normalization. This is useful for scenarios such as failures per second for each hour, requests per second made for the day, and so on.
+Parameters:
+- From -  Represents how far back to calculate the delta with.
+Possible values:
+	- Previous data point
+	- 1 hour ago
+	- 1 day ago
+	- 1 week ago
+	- 2 weeks ago
+	- 3 weeks ago
+	- 4 weeks ago
+	- 8 weeks ago
+	- 12 weeks ago
+	- 1 quarter ago (13 weeks)
+	- 2 quarters ago (26 weeks)
+	- 1 year ago (52 weeks)
 
-### Dimension aggregation
+Example: change in metric from last week.
 
-Say you have selected all data from all regions in Europe and all manufacturers. Now you want to aggregate further. Choose `manufacturer`, and you can get maximum call volume per region. You used the `manufacturer` dimension to aggregate, or "squash" together, so that now you only see regions.
+## Dimension aggregation
 
-Another example. You select exam score data for students from all countries and universities. Choose countries to aggregate to get an average, and you will get the average score per university. The average has been calculated per country. If you choose to aggregate by both dimensions, you will get the average score for all selected students.
+Aggregates series for all combinations of specified dimensions using specified aggregation operator.
 
-### Time aggregation
+Parameters:
+- Operation -  Operation to perform to aggregate selected dimensions.
+Possible values:
+	- Average
+	- Max
+	- Min
+	- P01
+	- P05
+	- P50
+	- P95
+	- P99
+	- StDev
+	- Sum
+	- Variance
+- Dimensions - dimensions to aggregate for.
 
-By default, we store measures per five minute bucket. In an hour, you'd have 12 such values. If you choose to time-aggregate by 1 hour, you will select minimum, maximum, average, and so on from these values. So with an average, you'd get the average of the 12 values. With mininum, you'd get the number of calls recorded during the slowest time of that hour. Using the same example, you could pick the slowest, or the busiest number recorded per hour for that day. In a call center, that could help you decide the minimum number of people to handle calls to minimize the waiting period.
+Example: Dimension aggregation calculated for each metric aggregating 2 dimensions, Version and Network, using Max as aggregation operator.
 
+## Exponent
+
+The series becomes the exponent which the base is raised to.
+
+Parameters:
+-Base - this is the base that is raised to an exponent, for example: if the base were 2, a value of 3 would be transformed to 8
+
+## Exponential Rolling Average
+
+Smooths the time series by way of exponential moving average. This smoothing technique weights previous values in an exponentially decaying manner.
+
+Parameters:
+-Alpha - the degree of weighting decrease, a constant smoothing factor between 0 and 1, a higher alpha discounts older observations faster
+
+## Gating
+
+The time series is converted to a binary series whereby a value of 1 indicates that all gate conditions are satisfied, a value of 0 indicates that a gate has been crossed. At least one gate must be specified.
+
+Parameters:
+-Top gate - this is an optional maximum value to limit the time series to, if this value is exceeded then a value of 0 is returned (otherwise 1 is returned)
+-Bottom gate - this is an optional minimum value to limit the time series to, if a value is less than this value then a 0 is returned (otherwise 1 is returned)
+
+## Interpolate NaNs
+
+Interpolates / replaces NaN values in a time series
+
+Parameters:
+- Method -
+Represents how to interpolate / replace NaN values in the series.
+Possible values:
+	- Linearly interpolate - interpolates values as a straight line that connects to values that are present at the ends of the interval comprised of NaNs
+	- Replace with 0 - replaces all NaN values with 0
+
+## Logarithm
+
+Every point in the series is evaluated as a logarithm.
+
+Parameters:
+- Base
+This is the base of the logarithm that is taken for every point in the series, for example: if the base were 2, a value of 8 would be transformed to 3
+
+## Movers
+
+Identify segments which moved (changed its Count) significantly between the first half of the time window and the second half of the time window. Only segments which have a  minimum support threshold (fraction  of the overall population represented by the segment) of 0.5% of the query are shown. 
+
+The results indicate relative increases between the two halves of the time window, so it might pick a *decreasing combination* as an *increaser* or vice versa, if the overall population decreased a lot more than the decreasing combination. 
+
+Each segment result includes *percentage increase or decrease* between the half windows. New or disappearing segments are marked as well. 
+
+In cases where the time window is not an even multiple of the granularity of the chart, we extend it into the past by one time window so the time windows are of equal size.
+
+Parameters:
+- Direction
+This is either Increasers for increasing combinations or Decreasers for decreasing combinations.
+
+## Outliers
+
+Identify segments within the query which are more likely to have high or low outliers compared to the overall population in the current query. The analysis ignores segments which do not meet a minimum support threshold (fraction of the overall population in the query) of 0.5% of the data in the query. The results are presented with two metrics -- 
+ *support*, which indicates what percentage of the population the segment represents
+  *risk ratio*, which indicates how much more likely the segment was to be an outlier.  
+
+Parameters:
+- High outliers
+
+High outliers picks an outlier threshold of 99th percentile of the measure and finds segments which are much more likely to be high outliers compared to the overall population in the current query. 
+
+- Low outliers
+
+Low outliers picks an outlier threshold of the 1st percentile of the measure and finds segments which are  more likely to be low outliers compared to the overall population in the current query.
+
+## PopulationComparison
+
+Given a dimension name and a value (target) which are included in the current query, find segments which are relatively more likely in the target population compared to the overall population in current query. The target dimension must be selected in the filters section of the query as a 'Separate' dimension with at least one additional value beside the target dimension value. The values selected for the dimension in the filter identify the overall population for comparison.
+
+
+Example - For a cube with Country and AppVersion, comparing Country = UK vs Country = USA might tell you what application versions are more likely in UK over (UK, USA).
+
+The analysis ignores segments which do not meet a minimum support threshold (fraction of the overall population in the query) of 0.5% of the data in the query. The results are presented with two metrics -- 
+ *support*, which indicates what percentage of the population the segment represents
+  *[risk ratio](https://en.wikipedia.org/wiki/Relative_risk)*, which indicates how much more likely the segment was in the target.  
+
+Parameters:
+- Target - A predicate identifying a target population in the query
+	- fieldName - Dimension name
+	- operator - Operator for comparison
+	- value - Value of dimension name
+
+## Power
+
+Every point in the series is raised to a power.
+
+Parameters:
+-Power - this is the power that every point in the series is raised to, for example: a power of 2 would transform 10 to 100 (it would square it)
+
+## Rate normalization
+
+Converts each data point into a value per specified rate.
+
+Parameters:
+- Rate -  Represents time grain to normalize into.
+Possible values:
+	- One millisecond
+	- One second
+	- One minute
+	- Five minutes
+	- One hour
+	- One day
+	- One week
+
+Example: Rate normalization of metrics to "per 1 hour" rate.
+
+## RollingAverage
+
+Calculates rolling average on specified window size (in grains) or finds optimal window size for rolling average automatically (to reduce local outliers) and calculates rolling average on this window.
+
+Parameters:
+- Is automatic - Indicates whether to find optimal window size automatically.
+- Number of points - Specifies size of window in points to use for the rolling average (if not using automatic window size).
+
+Example: rolling average with automatically computed window size of 42.
+
+## Rolling Median
+
+Calculates rolling median on specified window size (in grains).
+
+Parameters:
+- Number of points - Specifies size of window in points to use for the rolling median.
+
+## Root
+
+The root of every point in the series (this can also be understood as raising every point to the 1/root power).
+
+Parameters:
+-Root - this is the root that is take, for example: a value of 2 would indicate a square root, this means 4 would be transformed to 2 on the y-axis
+
+## Scale
+
+Multiplies value of each data point in each series by a constant.
+
+Parameters:
+- Scalar - Constant to multiply value of each data point in each series.
+
+Example: scaling metrics by 1/1000000.
+
+## Series ordering
+
+Calculates top series aggregated using specified operation on specified interval and ordered either ascending or descending, up to specified limit.
+
+Parameters:
+- Operation -  Operation by which to aggregate and sort.
+Possible values:
+	- Average
+	- Max
+	- Min
+	- P01
+	- P05
+	- P50
+	- P95
+	- P99
+	- StDev
+	- Sum
+	- Variance
+- Sort - Sorting order of the series.
+Possible values:
+	- Ascending
+	- Descending
+- Limit - Limit of series to return. 1-50, default limit is 50.
+
+Example: Series sorted by max metric value.
+
+## Shift
+
+Shifts the series vertically on the y-axis by a constant value.
+
+Parameters:
+-Value - this is the amount that the series is shifted, for example: a value of -100 would shift a value in the series of 120 to 20 on the y-axis
+
+## Time aggregation
+
+Aggregates data points from a specified source grain (no greater than chart grain) using specified aggregation operator.
+
+Parameters:
+- Operation -  Operation to perform to aggregate data points into selected query grain.
+Possible values:
+	- Average
+	- Max
+	- Min
+	- P01
+	- P05
+	- P50
+	- P95
+	- P99
+	- StDev
+	- Sum
+	- Variance
+- Source grain - Grain to aggregate data points from by using selected aggregation operation.
+
+Example: Time aggregation calculating Min 5 minute window in each 1h grain.
 
