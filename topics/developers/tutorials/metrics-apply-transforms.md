@@ -31,7 +31,7 @@ Working out rolling averages, deltas, and other such common operations are extre
 * **Gating**: convert values to binary. Linear values can be converted to `1` and `0`.
 * **Power/root**: square a value, cube a value, or get a root of the value
 * **Log/exponent**: get a log of the value or use the value as an exponent for base x
-* **NaN interpolation**: let Aria interpolate missing values
+* **NaN interpolation**: let Product Insights interpolate missing values
 * **Shift**: move values up and down the Y axis
 * **Rolling median**: addition to an existing rolling average
 * **Exponential rolling average**: give more weight to the latest data and react faster to recent changes; this is the preferred smoothing transform
@@ -82,6 +82,4 @@ Another example. You select exam score data for students from all countries and 
 
 By default, we store measures per five minute bucket. In an hour, you'd have 12 such values. If you choose to time-aggregate by 1 hour, you will select minimum, maximum, average, and so on from these values. So with an average, you'd get the average of the 12 values. With mininum, you'd get the number of calls recorded during the slowest time of that hour. Using the same example, you could pick the slowest, or the busiest number recorded per hour for that day. In a call center, that could help you decide the minimum number of people to handle calls to minimize the waiting period.
 
-Please refer to [the transforms reference](/developers/deep-dives/series-transforms) for a complete list.
-Additional transforms are discussed [on the Aria blog](/2018/02/28/maths-transforms/).
 
