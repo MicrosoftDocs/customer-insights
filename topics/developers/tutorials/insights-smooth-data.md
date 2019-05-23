@@ -10,14 +10,14 @@ ms.topic: conceptual
 ---
 # Smooth data
 
-Explanation
+Some signals are noisy. To reduce fluctuations and noise, you can use the methods built into Product Insights, such as rolling averages, exponential rolling averages, and rolling medians, to smooth out variability and outliers. These methods work by giving more weight to the latest data and reacting faster to recent changes. They also make trends much easier to spot. 
 
-Exponential rolling average: give more weight to the latest data and react faster to recent changes; this is the preferred smoothing transform
-
-Some signals are noisy. To reduce fluctuations and noise, you can use rolling averages to smooth out variability and outliers. It also makes trends much easier to spot. Choose automatic time grain to let the system find the optimal window size.
+Choose an automatic time grain to let the system find the optimal window size.
 
 ## Example
 
-Step by step instructions
+1. Select the data set to smooth.
+2. Select a method from the **Smooth** menu such as **Rolling average**.
+3. Product Insights will smooth the data on your chart according to the method you have selected.
 
 > [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/insights-smoothing.mp4]
