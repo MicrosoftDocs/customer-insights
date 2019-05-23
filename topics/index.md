@@ -50,7 +50,7 @@ ms.topic: conceptual
 							</a>
 						</li>
 						<li>
-							<a href="developers/quick-starts/who-uses">
+							<a href="developers/quick-starts/who-uses.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -69,7 +69,7 @@ ms.topic: conceptual
 							</a>
 						</li>
 						<li>
-							<a href="developers/quick-starts/how-to-get-started">
+							<a href="developers/quick-starts/how-to-get-started.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">
@@ -157,7 +157,7 @@ ms.topic: conceptual
                     <a href="#man-section"></a>
                     <ul id="man-section" class="cardsC">
                         <li>
-							<a href="developers/faq/index.md">
+							<a href="developers/customer-care/faq.md">
 								<div class="cardSize">
 									<div class="cardPadding">
 										<div class="card">

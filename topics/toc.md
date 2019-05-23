@@ -43,7 +43,7 @@
 ## [Glossary](xref:developers/articles/glossary) 
 
 # Developer resources 
-## [Download SDKs to send signals](xref:developers/downloads/index)
+## [Download SDKs to send signals](xref:developers/dev-resources/index)
 ## [SDK tutorials](xref:developers/downloads/tutorials/index)
 ### [Android (mobile)](xref:developers/downloads/android-java)
 ### [CSV Sender](xref:developers/downloads/ingest)
