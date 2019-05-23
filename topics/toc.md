@@ -57,12 +57,7 @@
 ### [Manage teams, projects, and members](xref:developers/dev-resources/manage-teams)
 
 # Customer care 
-## FAQ 
-### [Onboarding](xref:developers/faq/onboarding)
-### [Sending signals](xref:developers/faq/sending-signals)
-### [Exploring signals](xref:developers/faq/exploring-signals)
-### [Visualizing signals](xref:developers/faq/visualizing-signals)
-### [Advanced topics](xref:developers/faq/advanced-topics)
-## [Get support](xref:developers/)
-## [Send feedback](xref:developers/)
+## [FAQ](xref:developers/customer-care/faq) 
+## [Get support](xref:developers/customer-care/support)
+## [Send feedback](xref:developers/customer-care/feedback)
 
