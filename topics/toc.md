@@ -54,7 +54,7 @@
 ## Connect to other data sources
 ### [Azure IoT](xref:developers/dev-resources/azure-iot)
 ## Manage system 
-### [Manage teams, projects, and members](xref:developers/dev-resources/manage-teams)
+### [Administration](xref:developers/dev-resources/manage-teams)
 
 # Customer care 
 ## [FAQ](xref:developers/customer-care/faq) 
