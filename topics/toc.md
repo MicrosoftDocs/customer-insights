@@ -51,8 +51,6 @@
 ### [JavaScript](xref:developers/downloads/js)
 ### [.NET](xref:developers/downloads/dotnet)
 ### [Python](xref:developers/downloads/python)
-## Connect to other data sources
-### [Azure IoT](xref:developers/dev-resources/azure-iot)
 ## Manage system 
 ### [Administration](xref:developers/dev-resources/manage-teams)
 
