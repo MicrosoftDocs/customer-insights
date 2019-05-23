@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 Dashboards are a way for you to collect information about various signals and metrics that are important to your business, primarily in the form of multiple charts. Once you have created a dashboard, you can keep it private or share it with your colleagues or your whole company.
 
-![Manage teams](../images/dev-resources/Manage-teams.png)
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/create-dashboard.mp4]
 
 ## Example
 
@@ -31,4 +31,3 @@ The following steps explain how to create a Project Insights dashboard. For furt
 1. Select **New chart** again to add a chart to the second page.
 1. Select the **Save** button to protect your changes.
 
-> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/create-dashboard.mp4]
