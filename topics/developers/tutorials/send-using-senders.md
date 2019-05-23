@@ -12,4 +12,4 @@ ms.topic: conceptual
 
 You can send a variety of data to Product Insights with our signal senders. From the Web, you can use our Javascript sender. For mobile signals we have senders for iOS and Android. We also have .Net signal sender for services, and Python sender for Python users.  
 
-For more information, see [Download senders](../dev-resources/index.md).
+For more information, see [Download senders](developers/dev-resources/index).
