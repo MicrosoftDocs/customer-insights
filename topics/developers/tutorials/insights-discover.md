@@ -14,7 +14,7 @@ Product Insights helps you discover insights in data with which you may not be f
 
 1. Log in. If signals are already flowing into your project, you will see notifications on your home page. Click to further explore the data. 
 1. Select a signal and click **Explore** (follow [this section](1_view-signals) to find out how). 
-1. [Create a metric](2_create-own-metric). See suggestions appear below the property dropdown. 
+1. [Create a metric](../quick-starts/2_create-own-metric). See suggestions appear below the property dropdown. 
 1. There are also a suite of transforms available. You can smooth spiky data, run comparisons to past data, and fix data gaps. 
 
 ## Example
