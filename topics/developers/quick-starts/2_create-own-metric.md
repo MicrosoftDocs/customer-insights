@@ -16,20 +16,20 @@ Metrics are meaningful measures that are extracted from signals. Your products w
 
 In this article, you will learn how to build metrics from signals in seconds. 
 
-**vehicle_drive_end** signal is sent after a vehicle completes a trip, and the signal contains MPG* value for the whole trip. Using this property, average MPG values for different vehicle fuel types can be determined. 
+To create a metric we start with a signal.  For this example, **vehicle_drive_end** signal is sent after a vehicle completes a trip, and the signal contains MPG* value for the whole trip. Using this property, average MPG values for different vehicle fuel types can be determined. 
 
 To get to this signal **vehicle_drive_end**, refer to the previous section [View signals](1_view-signals). 
 
 
-1. Click **Explore** at the top right corner of the screen on the **vehicle_drive_end signal** Signals details page to open the chart editor. 
+1. Click **Explore** at the top right corner of the screen to open the chart editor. 
 
 ![Open chart editor from the signals page](../images/quick-starts/create-metrics-1-vehicle_drive_end.png)
 
-2. Turn off raw data. Select **vehicle_drive_end** in the Signal dropdown, if not already selected. 
+2. Turn off **raw data**. Select **vehicle_drive_end** in the Signal dropdown, if not already selected. 
 
 ![Open chart editor from the signals page](../images/quick-starts/create-metrics-2-rawdata-off.png)
 
-3. Select **average** in the **Measured as** dropdown.
+3. Select **Average** in the **Operation** dropdown.
 4. Select **CurrentMileage** in the **Property** dropdown. This is what the vehicles reported as their MPGe for each trip. After these steps, you will see the chart showing average MPGe for all vehicles and all trips.
 
 ![Set up your metric](../images/quick-starts/create-metrics-3-vehicle_drive_end-explore.png)
