@@ -22,7 +22,7 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com
 > [!NOTE]
 > - An AAD (Azure Active Directory) account is required for the Product Insights preview. Contact [Jeff Hardie](email:jefhar@microsoft.com) to enable a preview for your AAD.
 > - The Product Insights team may also provide a sample AAD account. Contact [Jeff Hardie](email:jefhar@microsoft.com) to request yours.
-> - Previews are not available to MSA accounts (example: [sample@outlook.com](sample@outlook.com)) at this time.
+> - Previews are not available to MSA accounts (example: [sample@outlook.com](email:sample@outlook.com)) at this time.
 
 ## Create a team
 1. Select **Create a team** in the center welcome tile, or **+New team** in the bottom left corner of the portal.
