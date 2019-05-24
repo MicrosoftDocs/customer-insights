@@ -29,20 +29,11 @@ dimension by specifying which event property you would like to use to
 divide the data.
 
 When defining dimensions, keep in mind that high cardinality will
-impact performance. See [cardinality](#cardinality).
+impact performance.
 
 ## drill down, drill into 
 
 See [split property](#split-property).
-
-## signal properties
-
-Data sent to Product Insights are essentially a collection of key-value
-pairs. These are also referred to signal properties. If you sent
-country code, action taken, and button pressed, these three are all
-signal properties over which you can run aggregation operations, such
-as total number of events from the UK, or number of certain actions
-taken.
 
 ## filters
 
@@ -106,9 +97,14 @@ prescribe a standard set of fields for common types of events such as
 metrics, operations, page views, and user actions. The SDK
 auto-populates common fields about the application, user, device, platform, etc. 
 
-## signal property
+## signal properties
 
-See [dimensions](#dimensions).
+Data sent to Product Insights are essentially a collection of key-value
+pairs. These are also referred to signal properties. If you sent
+country code, action taken, and button pressed, these three are all
+signal properties over which you can run aggregation operations, such
+as total number of events from the UK, or number of certain actions
+taken. See [dimensions](#dimensions).
 
 ## split property
 
