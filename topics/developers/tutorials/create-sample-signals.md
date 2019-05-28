@@ -39,7 +39,7 @@ the **Expected type** drop-down menu such as "string". Select **Add** when you a
 
 1. Repeat the previous step for as many properties as you wish to add, such as "command", "model", and "speed".
 
-## Generate data
+## Generate a sample signal
 
 1. Select the **Generate** button. The **Generate test data** window will appear.
 
@@ -50,7 +50,5 @@ the **Expected type** drop-down menu such as "string". Select **Add** when you a
 |command|start,stop|
 |speed|100|40%|
 |model|GEM, ATV, GoKart|
-
-## Generate a sample signal
 
 1. Click **Start** to generate data for the sample signal.
