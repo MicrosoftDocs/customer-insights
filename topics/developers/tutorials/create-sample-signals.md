@@ -11,43 +11,46 @@ ms.topic: conceptual
 
 # Create sample signals
 
+A signal is data sent to Project Insights from a remote application or applications.
 You may find it useful to generate sample signals and data for test purposes.
-Creating sample signals is a simple procedure with Product Insights.
 
 > [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/CreateSampleSignals.mp4]
 
-On the **Home** screen, select a team from the pane on the left, such as "Autopilot".
+## Add a signal
 
-From the team screen, select a project, such as "Command".
+1. Select a team from the left pane of the **Home** screen, such as "Autopilot".
 
-On the project screen, select the **Define a Signal** button.
+1. Select a project from the team screen, such as "Command".
 
-The **Add new signal** window will appear. The **Display name** and **Actual name** fields
-for the signal will fill automatically. You can fill the **Description** field with
-a description of the new signal.
+1. Select the **Define a Signal** button from the project screen. The **Add new signal** window will appear.
 
-Select the new signal, in this case "Autopilot command". The **Signals** screen for the new
+1. Fill the **Description** field with a description of the new signal. The **Display name** and **Actual name** fields
+will fill automatically.
+
+1. Select the new signal, in this case "Autopilot command". The **Signals** screen for the new
 signal will appear.
 
-Click the **Add** button in the **Properties** pane.
+## Add properties
 
-The **Add new properties** window will appear.
-Enter values for the **Display name** and **Actual name** fields for the property, and select a value from
-the **Expected type** drop-down menu such as "string". Click **Add** when you are ready to proceed.
+1. Click the **Add** button in the **Properties** pane. The **Add new properties** window will appear.
 
-Repeat the previous step for as many properties as you would like to add, such as 
-"command", "model", and "speed".
+1. Enter values for the **Display name** and **Actual name** fields of the property, and select a value from
+the **Expected type** drop-down menu such as "string". Select **Add** when you are ready to proceed.
 
-Select the **Generate** button in the upper right corner.
+1. Repeat the previous step for as many properties as you wish to add, such as "command", "model", and "speed".
 
-The **Generate test data** window will appear.
-Enter example values for each of the properties, with 
-an optional variation range for each.
-For example, for the property name "command", you might enter
-"Start, Stop, Help", and for the property name "speed", you might enter 100,
-with a variation range of 40%.
-You might assign the "model" property the values "GEM, ATV, GoKart".
+## Generate data
 
-Click **Start** when you are ready to generate data for the sample signal.
+1. Select the **Generate** button. The **Generate test data** window will appear.
 
+1. Enter example values for each of the properties, with an optional variation range for each.
 
+|Property|Example value|Variation range|
+|--------|-------------|---------------|
+|command|start,stop|
+|speed|100|40%|
+|model|GEM, ATV, GoKart|
+
+## Generate a sample signal
+
+1. Click **Start** to generate data for the sample signal.
