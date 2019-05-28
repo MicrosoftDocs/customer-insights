@@ -43,7 +43,7 @@ the **Expected type** drop-down menu such as "string". Select **Add** when you a
 
 1. Select the **Generate** button. The **Generate test data** window will appear.
 
-1. Enter example values for each of the properties, with an optional variation range for each.
+2. Enter example values for each of the properties, with an optional variation range for each.
 
 |Property|Example value|Variation range|
 |--------|-------------|---------------|
@@ -51,4 +51,4 @@ the **Expected type** drop-down menu such as "string". Select **Add** when you a
 |speed|100|40%|
 |model|GEM, ATV, GoKart|
 
-1. Click **Start** to generate data for the sample signal.
+3. Click **Start** to generate data for the sample signal.
