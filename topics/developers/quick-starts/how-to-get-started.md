@@ -15,8 +15,6 @@ See the video below for a one-minute overview.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RWMF]
 
-Now you know the plan, you're ready to get started!
-
 <br/>
 
 > [!div class="nextstepaction"]
