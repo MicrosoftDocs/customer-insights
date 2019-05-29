@@ -45,12 +45,12 @@
 # Developer resources 
 ## [Download SDKs to send signals](xref:developers/dev-resources/index)
 ## [SDK tutorials](xref:developers/downloads/tutorials/index)
-### [Android (mobile)](xref:developers/downloads/android-java)
-### [CSV Sender](xref:developers/downloads/ingest)
-### [iOS (mobile)](xref:developers/downloads/ios-objc)
-### [JavaScript](xref:developers/downloads/js)
-### [.NET](xref:developers/downloads/dotnet)
+### [Android (mobile, Java)](xref:developers/downloads/android-java)
+### [iOS (mobile, Objective-C)](xref:developers/downloads/ios-objc)
+### [Services (C#/.NET)](xref:developers/downloads/dotnet)
 ### [Python](xref:developers/downloads/python)
+### [Web/React (Javascript)](xref:developers/downloads/js)
+## [CSV Sender](xref:developers/downloads/ingest)
 ## Manage system 
 ### [Administration](xref:developers/dev-resources/manage-teams)
 
