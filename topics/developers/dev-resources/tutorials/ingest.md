@@ -29,34 +29,26 @@ You can run the CSV Sender in PowerShell as follows:
 .\IngestionTool.ps1 -CsvFile YOUR_CSV_FILE -TimestampColumnName birthday -ApiKey Your_API_Key -EventName EventName -Timezone "Eastern Standard Time"
 ```
 
-The `-CsvFile` and `-ApiKey` parameters are mandatory, and the user
-must provide either the `-schema` or `-EventName` parameter.
+The `-CsvFile`, `-ApiKey`, and `-EventName` parameters are mandatory.
 
 If you run the CSV Sender in the directory where you put it, it
 will print the results on screen.
 
 ## Get a project key
 
-To find `YOUR_API_KEY`, you'll create a project (previously known as
-tenant), which generates a project key (a string of hexadecimal
-digits) that you'll use to authenticate your app to Product Insights. Visit the
-Product Insights Instrument Wizard and follow the instructions on the first page.
-For **Project**, specify the name of your local project or solution.
-On the second page, select any platform and click **Skip this wizard**.
-On the third page, copy the Ingestion Key. Use it for your 
-API token.
-
-[Product Insights Instrument Wizard](xref:developers/downloads/ingestion-data-scheme)
+To find `YOUR_API_KEY`, follow instructions [here](xref:developers/downloads/api-token)
 
 ## Changing PowerShell script execution policy 
 
-Users are not able to run our tool directly after downloading because of the PowerShell security strategy on Windows computers. So user need to change it before running the tool.
-To change the execution policy for LocalMachine, start PowerShell with ‘Run as Administorator’, then run “Set-ExecutionPolicy Unrestricted” (this is one-time operation, don’t need to run it later), for more details please see: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6
+Users may not able to run the tool directly due to PowerShell security strategy on Windows computers. 
 
+To change the execution policy for LocalMachine, start PowerShell with ‘Run as Administator’, then run “Set-ExecutionPolicy Unrestricted” (this is one-time operation). For more details please see: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6
+
+If this fails, you can try "Set-ExecutionPolicy -Scope CurrentUser", then specify "Unrestricted". Please note this should be a one-time operation, and should not be the default. 
 
 ## For more information
 
 For more details on running this program, type `help .\IngestionTool`
 in your PowerShell window.
 
-See also the [Ingestion Data Scheme](xref:developers/downloads/ingestion-data-scheme).
+To use a separate schema file, refer to the [Ingestion Data Scheme document](xref:developers/downloads/ingestion-data-scheme).
