@@ -53,7 +53,7 @@
 ## [CSV Sender](xref:developers/downloads/ingest)
 ## Manage system 
 ### [Administration](xref:developers/dev-resources/manage-teams)
-
+### [Get API key](xref:developers/downloads/api-token) 
 # Customer care 
 ## [FAQ](xref:developers/customer-care/faq) 
 ## [Get support](xref:developers/customer-care/support)
