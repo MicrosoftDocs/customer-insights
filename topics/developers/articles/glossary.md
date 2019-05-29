@@ -10,6 +10,10 @@ ms.topic: conceptual
 ---
 # Glossary of terms
 
+## AAD
+
+TK
+
 ## aggregated data
 
 Product Insights performs calculations as defined by your cubes, then stores the
@@ -19,6 +23,18 @@ your visualisations.
 ## aggregated metric
 
 A metric that accumulates over time, such as a count of items.
+
+## average
+
+TK
+
+## count
+
+TK
+
+## dashboard
+
+TK
 
 ## dimensions
 
@@ -31,9 +47,17 @@ divide the data.
 When defining dimensions, keep in mind that high cardinality will
 impact performance.
 
+## distinct
+
+TK
+
 ## drill down, drill into 
 
 See [split property](#split-property).
+
+## explore
+
+TK
 
 ## filters
 
@@ -70,6 +94,10 @@ privacy.  Find out how you can handle PII data.
 Product Insights uses the
 nomenclature of _EUII_ and _OII_.  
 
+## portal
+
+TK
+
 ## project
 
 A project is typically a team or a single user account that sends a
@@ -84,6 +112,10 @@ Automatically assigned by the Product Insights service upon project creation.
 Your project ID is also your Kusto (raw event) database ID.
 Formerly, **tenant ID**.
 
+## property
+
+TK
+
 ## raw data
 
 Raw data refers to raw signals sent by users to Product Insights.
@@ -96,6 +128,14 @@ event with the specified name and event fields. The semantic APIs
 prescribe a standard set of fields for common types of events such as
 metrics, operations, page views, and user actions. The SDK
 auto-populates common fields about the application, user, device, platform, etc. 
+
+## signal
+
+TK
+
+## signal count
+
+TK
 
 ## signal properties
 
@@ -116,6 +156,14 @@ further.  Split property values may be **static** or **dynamic**.
 
 See [dimensions](#dimensions).
 
+## standard deviation
+
+TK
+
+## team
+
+TK
+
 ## tenant
 
 See [project](#project).
@@ -133,4 +181,6 @@ disruption to other clients.
 
 Please note that throttling is not triggered by temporary spikes.
 
+## variation
 
+TK
