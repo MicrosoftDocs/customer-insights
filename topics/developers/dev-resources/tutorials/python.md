@@ -17,7 +17,7 @@ ms.topic: conceptual
 ## Installing the SDK
 There are two primary ways to use the Python SDK:
 * Install the SDK to your Python interpreter's `site-packages` folder, or
-* Place the [SDK `.egg` file](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/aria-2.0.0.egg) 
+* Place the [SDK `.egg` file](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSenders/product_insights-2.0.0.egg) 
 somewhere and add it to `sys.path`
  
 This page describes how to do both.
