@@ -62,7 +62,7 @@ The following types are supported for event properties:
 
 ## Code sample
 
-[Download JavaScript code sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/JavascriptSample.zip)
+[Download JavaScript code sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsJavascriptSample.zip)
 
 ### Running the sample
  
