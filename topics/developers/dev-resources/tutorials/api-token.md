@@ -20,4 +20,4 @@ ms.topic: conceptual
 
 1. Select **Copy key**. Product Insights will copy the ingestion key to your computer's clipboard.
 
-[!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/GetAPIKey.mp4]
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/GetAPIKey.mp4]
