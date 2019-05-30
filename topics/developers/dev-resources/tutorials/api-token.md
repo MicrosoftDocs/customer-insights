@@ -10,10 +10,14 @@ ms.topic: conceptual
 ---
 # Get an API token from the Product Insights portal
 
-1. On the **All Teams** page, select your team from the **Teams** menu. Your team's page will appear. 
+1. Select **All Teams** from the left pane of the [Product Insights home page](https://pi.dynamics.com/).
 
-2. Select your project from the **Projects** menu. Your project's page will appear.
+1. Select your team from the **Teams** menu on the **All Teams** page. Your team's page will appear. 
 
-3. Scroll down to the **Ingestion Key** panel.
+1. Select your project from the **Projects** menu. Your project's page will appear.
 
-4. Select **Copy key**. Product Insights will copy the ingestion key to your computer's clipboard.
+1. Scroll down to the **Ingestion Key** panel.
+
+1. Select **Copy key**. Product Insights will copy the ingestion key to your computer's clipboard.
+
+[!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/GetAPIKey.mp4]
