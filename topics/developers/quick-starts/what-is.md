@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # <a id="what_is"></a>Quickstart: Setup to Insights in five minutes 
 
-This quickstart shows you how to use the Product Insights portal to find actionable insights in five minutes. 
+This quickstart shows you how get started with the Product Insights portal in five minutes by signing up, creating a sample organization and a team, adding members to the team, creating sample signals, viewing the generated signals, and setting up dashboards for charts. 
 
 ## Product Insights overview
 
@@ -30,7 +30,7 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com
 
 	![Create a new team](../images/quick-starts/create-team.png)
   
-## Add Members
+## Add members
 1. Select *Test_Team* from the left menu.  
 1. In the center pane, select **Members** and then **+Add Members**
 1. Enter email addresses from your AAD for any new members you would like to have access, and then select **Role** under **Owner**. Select **Add** to commit the update.
@@ -44,6 +44,9 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com
 	![Add new project](../images/quick-starts/add-project.png)
   
 ## Create data
+Using this tool, you can create a new signal for the sample project by defining a schema of the signal. 
+
+### Define signal 
 1. Select *sampleproject* from the center pane. 
 1. Select **+Define a Signal**, and then type `SampleSignal` and any other text for **Description**.  Select **Add** to commit the update.  You will define the various properties in the next steps.
 1. Select *SampleSignal*, and then select **+Add** for each of the following properties:
@@ -55,6 +58,8 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com
 |model|String  |
 
 1. Select **Save** on the top right of the toolbar.
+
+### Generate data 
 1. Select **Generate** on the top right of the toolbar, and then select **+Add** for each of the following properties:
 1. Select **Start** to begin generating data.
 
@@ -68,11 +73,11 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com
 
 ## Preview signals
 1. Select **Explore** on the top right of the toolbar.  You will see the sample data that was generated for the properties you provided. 
-1. Toggle **Raw data** to view the data as a visual chart.  You can begin exploring the data at this point. 
+1. Toggle **Raw data** to view the data as a chart.  You can begin exploring the data at this point. 
 
    ![Preview new signals](../images/quick-starts/preview-signal.png)
  
-## Create a dashboard
+## Publish your metric to dashboard
 1. Select **Publish to new dashboard** on the top right of the toolbar. Leave the default name, and select **Publish** to commit the update.
 
 ![Create a dashboard](../images/quick-starts/create-dashboard.png)
