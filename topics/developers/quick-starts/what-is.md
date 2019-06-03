@@ -80,7 +80,7 @@ Using this tool, you can create a new signal for the sample project by defining 
 ## Publish your metric to dashboard
 1. Select **Publish to new dashboard** on the top right of the toolbar. Leave the default name, and select **Publish** to commit the update.
 
-![Create a dashboard](../images/quick-starts/create-dashboard.png)
+![Create a dashboard](../images/quick-starts/create-a-dashboard.png)
 
 
 > [!div class="nextstepaction"]
