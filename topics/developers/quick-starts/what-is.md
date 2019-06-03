@@ -28,7 +28,7 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com
 1. Select **Create a team** in the center welcome tile, or **+New team** in the bottom left corner of the portal.
 1. Type *Test_Team* in the **Name** field and anything for **Description**. Select **Create** to commit the update.
 
-	![Create a new team](../images/quick-starts/create-team.png)
+	![Create a new team](../images/quick-starts/create-a-team.png)
   
 ## Add members
 1. Select *Test_Team* from the left menu.  
