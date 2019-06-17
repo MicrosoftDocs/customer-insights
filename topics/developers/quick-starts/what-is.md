@@ -51,13 +51,11 @@ Generate a new signal for the sample project by defining a schema with this tool
 1. Select *SampleProject* from the center pane. 
 1. Select **+Define a Signal**, and then type *SampleSignal* for TK and any other text for **Description**.  Select **Add** to commit the update.
 1. Select *SampleSignal*, and then select **+Add** for each of the following properties:
-
-|Display name | Expected type|
-|-------------|--------------|
-|command|String| 
-|speed|Number  |
-|model|String  |
-
+     |Display name | Expected type|
+     |-------------|--------------|
+     |command|String| 
+     |speed|Number  |
+     |model|String  |
 1. Select **Save** on the top right of the toolbar.
 
 ### Generate data 
