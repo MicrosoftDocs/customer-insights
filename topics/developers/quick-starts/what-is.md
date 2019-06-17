@@ -34,7 +34,7 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com
 ## Add members
 1. Select *Test_Team* from the left menu.  
 1. Select **Members** and then **+Add Members** in the center pane.
-1. Enter email addresses from your AAD for any new members you would like to have access, and then select **Role** under **Owner**. Select **Add** to commit the update.
+1. Enter email addresses from your AAD for any new members you would like to have access, and then select **Owner** under **Role**. Select **Add** to commit the update.
 
 	![Add new members](../images/quick-starts/add-members.png)
 
