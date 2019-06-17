@@ -69,7 +69,7 @@ Generate a new signal for the sample project by defining a schema with this tool
 |speed|100|40%|
 |model|mazda, acura, bmw|
 
-1. Select **Start** to begin generating data.
+2. Select **Start** to begin generating data.
 
 ## Preview signals
 
