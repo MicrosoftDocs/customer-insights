@@ -40,7 +40,7 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com
 
 ## Create a project 
 1. Select **Projects** and then **+New project** in the center pane. 
-1. Type *SampleProject* for TK and any other text for **Description**.  Select **Create** to commit the update.
+1. Type *SampleProject* for **Name** and any other text for **Description**.  Select **Create** to commit the update.
 
 	![Add new project](../images/quick-starts/add-project.png)
   
@@ -49,7 +49,7 @@ Generate a new signal for the sample project by defining a schema with this tool
 
 ### Define signal 
 1. Select *SampleProject* from the center pane. 
-1. Select **+Define a Signal**, and then type *SampleSignal* for TK and any other text for **Description**.  Select **Add** to commit the update.
+1. Select **+Define a Signal**, and then type *SampleSignal* for **Display name** and any other text for **Description**.  Select **Add** to commit the update.
 1. Select *SampleSignal*, and then select **+Add** for each of the following properties:
 
 |Display name | Expected type|
