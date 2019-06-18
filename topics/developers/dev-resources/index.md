@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Downloads
 
-Product Insights offers various ways of sending signals. Download a sender for your platform, and follow the tutorials to start sending signals. To see implemented code, you can take a look at samples. 
+Download a signal sender for your platform and follow the tutorials. See the samples for implemented code. 
 
 | Platform         | Target                 | Language  | Type  | Download | Tutorial | Sample | 
 |------------------|------------------------|-----------|-------|----------|-------------|---------|
