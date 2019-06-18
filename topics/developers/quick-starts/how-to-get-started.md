@@ -7,9 +7,9 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-## <a id="how_start"></a>How do you get started? 
+## <a id="how_start"></a>Get started
 
-See the video below for a one-minute overview.
+See the video below for a one-minute overview on how to get started with Product Insights.
 
 <br/>
 
