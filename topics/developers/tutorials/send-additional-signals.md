@@ -11,10 +11,6 @@ ms.topic: conceptual
 
 # Send additional signals
 
-Product Insights provides a variety of different options for setting up a data source service with Product Insights code 
-and sending or generating signals, including [various SDK options and environments](../dev-resources), such as
-Android, iOS, Python, .NET, and JavaScript. It's also possible to use a self-contained 
-[CSV Sender](../dev-resources/tutorials/ingest) application to send comma-separated value data to Product Insights.
-
-
-
+Choose from many different ways to set up a data source and send or generate signals:
+* [SDKs](../dev-resources) including Android, iOS, Python, .NET, and JavaScript
+* [CSV Sender app](../dev-resources/tutorials/ingest) to send comma-separated value data
