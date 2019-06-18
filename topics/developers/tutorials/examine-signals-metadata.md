@@ -11,11 +11,9 @@ ms.topic: conceptual
 
 # Examine signals metadata
 
-Product Insights offers many ways to examine signals and their internal data.
-One of them is previewing raw signals, as explained below.
+Examine signals and their internal data by previewing raw signals.
 
-1. On the **Signals** page, select **Preview** from the top left menu.
-1. Product Insights will display a list of raw signals. Each row represents a single signal that was sent while each column is a key/value pair within the signal.
-1. Select the **Explore** button in the upper right of the screen to analyze the signals.
+1. Select **Preview** from the top left menu of the **Signals** page. A list of raw signals will appear. Each row represents a signal, and each column represents one of its key/value pairs.
+1. Select the **Explore** button in the upper right to analyze the signals.
 
 > [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/explore-signals.mp4]
