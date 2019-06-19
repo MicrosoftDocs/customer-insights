@@ -1,14 +1,14 @@
 ---
 uid: developers/downloads/tutorials/index
-title: Sender tutorials
+title: SDK for Product Insights
 author: vroha
-description: Sender tutorials
+description: SDK for Product Insights
 ms.author: hakrou
 ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Sender tutorials
+# SDK for Product Insights
 
-Ingest signals with your project, including ones from Android, iOS, JavaScript, .NET, and Python, as well as comma-separated value files from programs like Microsoft Excel.
+[Android (mobile, Java)](android-java)
