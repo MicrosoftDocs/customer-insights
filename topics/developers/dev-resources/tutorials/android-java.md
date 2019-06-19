@@ -10,27 +10,25 @@ ms.topic: conceptual
 ---
 # Getting started with Android (Java) 
  
-This tutorial will help you start sending signals in five minutes. Get the signal sender, get a token, then start sending. 
- 
 ## Prerequisites 
-- Android Studio 
-- Minimum Android API Level: 16 (Jelly Bean)  
-- [API token](xref:developers/downloads/api-token)
+Prerequisites
+* Android Studio
+* Minimum Android API Level: 16 (Jelly Bean)
+* Instrumentation Key (get from [pi.dynamics.com](http://pi.dynamics.com)>team>project>settings – copy the Ingestion Key)
 
-## Integrate the signal sender into your project 
+## Integrate
 1. Open your project. If you don't have one, create a new project with **Empty Activity** in Android Studio.
-
 2. Open the app level `build.gradle` file (`app/build.gradle`) and add the following lines after "Apply plugin" to include the dependencies for the project:
 
 ```java
 dependencies { 
     def appCenterSdkVersion = '1.11.0' 
     implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}" 
-} 
+}
 ```
-3. Gradle sync.
 
-4. Open your app's main activity class and import: 
+3. Gradle sync.
+4. Open your app's main activity class and import:
 
 ```java
 import com.microsoft.appcenter.AppCenter; 
@@ -38,13 +36,13 @@ import com.microsoft.appcenter.analytics.Analytics;
 ```
 
 5. Start the sender (it's only required to start it once): 
+6. Replace `Your-API-Token` with your project's instrumentation key.
 
 ```java
 // The first parameter is the application context, this examples assumes it is called from an Activity. 
 AppCenter.start(getApplication(), "target={Your-API-Token}", Analytics.class); 
 ```
-
-6. Create a signal : 
+7. Create a signal : 
 
 ```java
 // Do a simple trackEvent call. 
