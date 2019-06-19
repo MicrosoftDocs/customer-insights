@@ -11,4 +11,4 @@ ms.topic: conceptual
 
 # SDK for Product Insights
 
-[Android (mobile, Java)](android-java)
+[Android (mobile, Java)](android-java.md)
