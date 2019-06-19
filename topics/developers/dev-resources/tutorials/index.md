@@ -12,3 +12,15 @@ ms.topic: conceptual
 # SDK for Product Insights
 
 [Android (mobile, Java)](android-java.md)
+
+[iOS (mobile, Objective-C)()](ios-objc.md)
+
+[Services (C#/.NET)](dotnet.md)
+
+[Python](python.md)
+
+[Web/React (Javascript)](js.md)
+
+CSV files
+
+Please email your Microsoft contact for any questions
