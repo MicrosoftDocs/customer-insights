@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 [Android (mobile, Java)](android-java.md)
 
-[iOS (mobile, Objective-C)()](ios-objc.md)
+[iOS (mobile, Objective-C)](ios-objc.md)
 
 [Services (C#/.NET)](dotnet.md)
 
