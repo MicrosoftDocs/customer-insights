@@ -17,7 +17,7 @@ Prerequisites
 * Instrumentation Key (get from [pi.dynamics.com](http://pi.dynamics.com)>team>project>settings – copy the Ingestion Key)
 
 ## Integrate
-1. Open your project. If you don't have one, create a new project with **Empty Activity** in Android Studio.
+1. Open your project. If you don't have one, create a new project with Empty activity in Android Studio.
 2. Open the app level `build.gradle` file (`app/build.gradle`) and add the following lines after "Apply plugin" to include the dependencies for the project:
 
 ```java
@@ -60,8 +60,8 @@ Analytics.trackEvent("StudentInformation", properties);
 ```
 
 The following types are supported for event properties: 
-- `String` 
-- `Date` 
-- `double` 
-- `long` 
-- `boolean`
+- **String** 
+- **Date** 
+- **double** 
+- **long** 
+- **boolean**
