@@ -15,7 +15,7 @@ ms.topic: conceptual
 - [Xcode 8.3.3+](https://developer.apple.com/xcode/downloads/)
 - macOS 10.12+ 
 - iOS 9+ 
-- `Your API Token` (get from [pi.dynamics.com](http://pi.dynamics.com)>team>project>settings – copy the Ingestion Key)
+- `Your-API-Token` (get from [pi.dynamics.com](http://pi.dynamics.com)>team>project>settings – copy the Ingestion Key)
 
 ## SDK
 [Download the iOS SDK](https://github.com/Microsoft/AppCenter-SDK-Apple/releases/latest)
@@ -48,22 +48,22 @@ $ pod install
 1. [Download the iOS SDK](https://github.com/Microsoft/AppCenter-SDK-Apple/releases/latest).
 2. Integrate the SDK into your project. In this step, you’ll configure your project to link the 1DS SDK libraries.
     * Ensure that your project has modules enabled.
-    * Unzip the SDK archive and copy the `AppCenter.framework` and `AppCenterAnalytics.framework` frameworks from the iOS folder.
-    * Create a new folder named `Frameworks` inside your project folder, and paste the frameworks into it.
+    * Unzip the SDK archive and copy the AppCenter.framework and AppCenterAnalytics.framework frameworks from the iOS folder.
+    * Create a new folder named Frameworks inside your project folder, and paste the frameworks into it.
     * Add the SDK frameworks to the project in Xcode:
         * Drag and drop all the frameworks into Xcode's Project Navigator.
-        * A dialog will appear. Ensure your app target is checked, and then click **Finish**.
+        * A dialog will appear. Ensure your app target is checked, and then click Finish.
     * Ensure the frameworks have been added to the project and target correctly.
         * Select your project in Xcode's project navigator.
         * Select your app target.
-        * In the **General** tab, verify that
-            * None of the `.framework` files have been added to **Embedded Binaries**.
-            * The section **Linked Frameworks and Libraries** contains all frameworks. Remove duplicates and add missing frameworks if necessary.
-        * In the **Build Phases** tab, verify that
-            * All `.framework` files have been added to **Link Binary With Libraries**.
-            * None of the `.framework` files have been added to **Embed Frameworks**.
+        * In the General tab, verify that
+            * None of the .framework files have been added to Embedded Binaries.
+            * The section Linked Frameworks and Libraries contains all frameworks. Remove duplicates and add missing frameworks if necessary.
+        * In the Build Phases tab, verify that
+            * All .framework files have been added to Link Binary With Libraries.
+            * None of the .framework files have been added to Embed Frameworks.
 
-Note that all `.framework` files are distributed as statically linked, "fake" frameworks.
+Note that all .framework files are distributed as statically linked, "fake" frameworks.
 
 3. Open your AppDelegate.m file and add the following import statements:
 
@@ -84,7 +84,7 @@ import AppCenterAnalytics
 4. Add the **start method** and **start tracking** events.
 
 * Start the SDK from an app.
-* Insert the following code to start the SDK in your app's `AppDelegate.m` class in the `didFinishLaunchingWithOptions:` method. 
+* Insert the following code to start the SDK in your app's AppDelegate.m class in the **didFinishLaunchingWithOptions:** method. 
 * Replace `Your-API-Token` with your project's instrumentation key.
 
 **Objective-C:**
