@@ -13,7 +13,7 @@ ms.topic: conceptual
  
 ## Prerequisites
 
-* [API token](https://review.docs.microsoft.com/en-us/dynamics365/product-insights/developers/dev-resources/tutorials/api-token
+* [API token](https://review.docs.microsoft.com/en-us/dynamics365/product-insights/developers/dev-resources/tutorials/api-token)
 * Hosted project or webpage to send telemetry. Telemetry from a local file will not be accepted by the server.
 
 ## Code sample
@@ -63,11 +63,7 @@ analytics.track({
 }); 
 ```
 
-Before your program exits, you should be sure to call
-
-```
-analytics
-```
+Before your program exits, call **analytics**.
 
 (TBD)
 
@@ -75,6 +71,6 @@ analytics
 
 The following types are supported for event properties:
 
-* String
-* Double
-* boolean
+* **String**
+* **Double**
+* **boolean**
