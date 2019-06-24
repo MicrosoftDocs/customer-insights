@@ -24,10 +24,10 @@ ms.topic: conceptual
  
 1.	Unzip the sample and open the solution.
 2. Add a new package manage source pointing to the folder location of the sample.
-    1. Select **Tools > Nuget Package Manager > Package Manager Settings**. 
-    2. Select **Package Sources** and add a package source. For the source field add the folder location of the sample.
-3. Select **Tools > Nuget Package Manager > Package Manager Console**. Select **Restore** when the app prompts you to restore the missing NuGet package.
-4. Open `Program.cs` and replace `YOUR_INSTRUMENTATION_KEY` with your project's instrumentation key.
+    1. Select Tools > Nuget Package Manager > Package Manager Settings. 
+    2. Select Package Sources and add a package source. For the source field add the folder location of the sample.
+3. Select Tools > Nuget Package Manager > Package Manager Console. Select Restore when the app prompts you to restore the missing NuGet package.
+4. Open Program.cs and replace `YOUR_INSTRUMENTATION_KEY` with your project's instrumentation key.
 5. Start the program.
 
 ## Integrate
