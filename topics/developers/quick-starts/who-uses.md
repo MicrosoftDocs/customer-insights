@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 ## <a id="who_uses"></a>Who is using Product Insights and how?
 
-The Product Insights team at Microsoft handles telemetry data and provides insights for other teams. Watch the video below to learn how Windows, Office, and Skype are using Product Insights.
+Product Insights processes telemetry data and provides insights for Windows, Office, Skype, and other teams.
 
 <br/>
 
