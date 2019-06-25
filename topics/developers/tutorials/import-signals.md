@@ -12,5 +12,5 @@ ms.topic: conceptual
 # Import signals
 
 Connect to data sources and import signals:
-* [importing from CSV files](xref:developers/downloads/ingest)
-* [importing from IoT hubs]()
+* [Importing from CSV files](xref:developers/downloads/ingest)
+* [Importing from IoT hubs]()
