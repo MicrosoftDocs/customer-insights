@@ -13,4 +13,4 @@ ms.topic: conceptual
 
 Choose from many different ways to set up a data source and send or generate signals:
 * [SDKs](../dev-resources) including Android, iOS, Python, .NET, and JavaScript
-* [CSV Sender app](../dev-resources/tutorials/ingest) to send comma-separated value data
+* [CSV Sender app](../dev-resources/tutorials/ingest) for sending comma-separated value data
