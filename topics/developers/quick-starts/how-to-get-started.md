@@ -9,7 +9,7 @@ ms.topic: conceptual
 
 ## <a id="how_start"></a>Get started
 
-See the video below for a one-minute overview on how to get started with Product Insights.
+A one-minute overview on getting started with Product Insights.
 
 <br/>
 
