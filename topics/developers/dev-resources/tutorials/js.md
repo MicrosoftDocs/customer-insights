@@ -62,10 +62,9 @@ analytics.track({
     } 
 }); 
 ```
-
-Before your program exits, call **analytics**.
-
-(TBD)
+5. We recommend that you teardown the SDK when your application closes. This ensures that events currently in queue are sent. Note that if the browser supports HTML5 Beacons, we will use Beacons to send events for greater reliability.
+   
+```analytics.getPostChannel().teardown();```
 
 ## Types
 
