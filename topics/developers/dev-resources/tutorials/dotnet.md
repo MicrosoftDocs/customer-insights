@@ -18,7 +18,7 @@ ms.topic: conceptual
 
 ## Code sample
 
-[Download .NET code sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsDotNetSample.zip)
+[Download .NET code sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSenders/microsoft.applications.events.server.zip)
  
 ### Running the sample
  
