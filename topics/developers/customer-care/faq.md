@@ -14,8 +14,21 @@ ms.topic: conceptual
 ## Onboarding 
 
 
+## Concepts 
 
-## Sending signals 
+### What is a project?
+
+A project is a customer unit within Product Insights and belongs to a team. A project sends data, owns its data, and uses its data. Once you create a project, you are the customer of Product Insights, and as that customer (project), you will be using Product Insights services. A project is usually a team, single service, application, or shared library.
+
+### What is a signal?
+
+### What are metrics?
+
+### What are insights?
+
+
+
+## Sending Signals 
 
 ### What is an SDK?
 
@@ -25,19 +38,16 @@ An SDK is a Software Development Kit. Several SDKs are [available for Product In
 
 The signals page was designed to provide a quick sample of your signals for you to debug instrumentation and get examples of signals. It was not intended to be a generic query engine. At low volumes, it will capture and return every event. At high volumes, it will capture and return a sample of your recent signals.
 
-## I can't see my data!
+### Why can't I see my data?
 
 If you are sending data to Product Insights with an SDK, make sure your application is correctly integrated with App Insights and App Center. You should be receiving a 200 OK confirmation from the Product Insights server when sending data. 
 
-## Exploring signals 
+## Exploring Signals 
 
-## Visualizing signals 
 
-## Concepts 
+## Visualizing Signals 
 
-### What is a project?
 
-A project is a customer unit within Product Insights and belongs to a team. A project sends data, owns its data, and uses its data. Once you create a project, you are the customer of Product Insights, and as that customer (project), you will be using Product Insights services. A project is usually a team, single service, application, or shared library.
 
 ## Security 
 
