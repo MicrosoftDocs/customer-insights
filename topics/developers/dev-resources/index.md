@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Downloads
 
-Download a signal sender for your platform and follow the tutorials. See the samples for implemented code. 
+Download a signal sender for your platform and follow the tutorials. See the samples for implemented code: 
 
 | Platform         | Target                 | Language  | Type  | Download | Tutorial | Sample | 
 |------------------|------------------------|-----------|-------|----------|-------------|---------|
