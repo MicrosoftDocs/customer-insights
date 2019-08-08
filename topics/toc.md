@@ -1,4 +1,4 @@
-# Quick starts
+# Quick start
 ## [Product Insights in a minute](xref:developers/quick-starts/what-is) 
 ## [Who is using Product Insights?](xref:developers/quick-starts/who-uses) 
 ## [How do you get started?](xref:developers/quick-starts/how-to-get-started) 
