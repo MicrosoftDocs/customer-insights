@@ -11,6 +11,6 @@ ms.topic: conceptual
 
 # Add annotations
 
-Product Insights provides a thorough collaboration environment for annotating and commenting on metrics, important new signals, and data anomalies.
+Product Insights provides a rich, collaborative environment for annotating and commenting on metrics, important new signals, and data anomalies.
 
 ![How to annotate](annotations.png "How to annotate")
