@@ -45,7 +45,7 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com
 1. Type *SampleProject* in the **Name** field and any text for **Description**.  
 1. Select Create to commit the update.
 
-	![Add new project](../images/quick-starts/add-project.png "Add new project")
+	![Add new project](../images/quick-starts/add-project.png "Add project")
   
 ## Create data
 Generate a new signal for the sample project by defining a schema with this tool.
