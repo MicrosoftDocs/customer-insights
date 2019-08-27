@@ -2,53 +2,74 @@
 uid: developers/downloads/ingest
 title: Getting started with the CSV Sender
 author: vroha
-description: Getting started with the CSV Sender
-ms.author: hakrou
-ms.date: 04/12/2019
+description: Getting started with the Event Sender
+ms.author: ruthai
+ms.date: 08/27/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
-# Getting started with the CSV Sender
+# Getting Started with the Event Sender
+The event sender can be used to send both CSV and Key/Value Pair formatted signals to Product Insights.
 
-The CSV Sender application can be used to send data from a comma-separated value file to Product Insights.
 
-The first line of the CSV file must contain the header that specifies the field names.
-Each subsequent line in the CSV file must contain data (field values) for one event.
+## Download the Correct Sender
+Depending on your Operating System, you should download one of the following command-line executables:
 
-## Download the CSV Sender
+* [Windows (pi.exe)](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/Windows/pi.exe)
+* [Linux (pi)](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/Linux/pi)
+* [macOS (pi)](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/macOS/pi)
 
-To download the tool, click the following link.
 
-[Download the CSV Sender](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSenders/ProductInsights_PowerShellTool.zip)
+## Get Your Ingestion Key
+You can find the ingestion key for your Product Insights tenant on its settings page.
 
-## Get a project key
 
-To find your API key, follow instructions [here](xref:developers/downloads/api-token)
+## Log an Event
 
-## Run the CSV Sender
+### Log a CSV file
+With an open terminal in the same directory as the downloaded logger, run the following command to upload a CSV file.
 
-You can run the CSV Sender in PowerShell as follows:
-
-```powershell
-.\IngestionTool.ps1 -CsvFile YOUR_CSV_FILE -TimestampColumnName birthday -ApiKey Your_API_Key -EventName EventName -Timezone "Eastern Standard Time"
+```bash
+pi -t <ingestion_key> -s <signal_name> -f csv - 1st_file.csv 2nd_file.csv ... nth_file.csv
 ```
 
-The `-CsvFile`, `-ApiKey`, and `-EventName` parameters are mandatory.
+When uploading CSVs, the only required arguments are `-t` and the `- filenames...` options. If a signal name is provided, then all events get uploaded with the same signal name. If no signal name is provided, then a unique name will be generated for each detected signal following the pattern `signal_<hash>` (e.g. `signal_a4640af933fa4342`).
 
-If you run the CSV Sender in the directory where you put it, it
-will print the results on screen.
+Be sure to replace `<ingestion_key>` with your actual Product Insights ingestion key and `your_nth_file.csv` with the filename of your CSV file.
 
-> **Note**: Changing PowerShell script execution policy 
->
-> Users may not able to run the tool directly due to PowerShell security strategy on Windows computers. 
-> 
-> To change the execution policy for `LocalMachine`, start PowerShell with the **Run as Administator** option, then run `Set-ExecutionPolicy Unrestricted` (this is a one-time operation). For more details please see: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6
->
-> If this fails, try `Set-ExecutionPolicy -Scope CurrentUser`, and specify `Unrestricted`. Please note this is a one-time operation, and should not be the default. 
 
-## For more information
+### Log Key/Value Pairs
+When logging key/value pairs, a signal name must be provided and there must be as many keys as values provided. To log an event with a terminal open, run the following command:
+```bash
+pi -t <ingestion_key> -s <signal_name> some_key "some value" my_int 42 some_cool_value false
+``` 
 
-For more details on running this program, type `help .\IngestionTool`
-in your PowerShell window.
+In addition to generating an event from program arguments, it can also use stdin:
+```bash
+echo 'some_key "some value" my_int 42 some_cool_value false' | pt -t <ingestion_key> -s <signal_name> -
+```
 
-To use a separate schema file, refer to the [Ingestion Data Scheme document](xref:developers/downloads/ingestion-data-scheme).
+While not needed, as it's the default option, the format can be explicitly declared by passing `-f kvp` as an argument. In this case, the event being logged is equivalent to the following JSON object:
+```json
+{
+    "some_key": "some value",
+    "my_int": 42,
+    "some_cool_value": false
+}
+```
+
+
+## Optional Arguments
+While a full listing of arguments can be read by running `pi -h` (or `pi --help`), and more arguments exist, the following covers some useful or important options.
+
+* `-t <tenant>` or `--tenant <tenant>`: (Required) Sets the Product Insights ingestion key to log events to.
+
+* `-s <signal>` or `--signal <signal>`: (Sometimes required) Sets the signal name to log events as. If not specified, then signal names are generated.
+
+* `--skip <skip>`: Skips the first `<skip>` events before logging any to Product Insights.
+
+    Example: `pi -t <tenant> -f csv --skip 30 - data.csv` (skips the first 30 events).
+
+* `--count <count>`: Limits the number of events that get logged to at most `<count>`.
+
+    Example: `pi -t <tenant> -f csv --count 15 - data.csv` (logs at most 15 events).
