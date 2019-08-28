@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/metrics-publish-or-add-to-dashboard
 title: Publish metrics
-author: hakrou
+author: ruthaisabokhae
 description: Publish metrics
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/09/2019
 ms.service: product-insights
 ms.topic: conceptual

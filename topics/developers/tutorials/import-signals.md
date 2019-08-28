@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/import-signals
 title: Import signals
-author: hakrou
+author: ruthaisabokhae
 description: Import signals
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/16/2019
 ms.service: product-insights
 ms.topic: conceptual

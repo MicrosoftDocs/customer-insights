@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/create-dashboard
 title: Create a dashboard
-author: hakrou
+author: ruthaisabokhae
 description: Create a dashboard
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/22/2019
 ms.service: product-insights
 ms.topic: conceptual

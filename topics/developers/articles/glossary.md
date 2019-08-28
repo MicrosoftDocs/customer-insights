@@ -3,7 +3,7 @@ uid: developers/articles/glossary
 title: Glossary of terms
 author: vroha
 description: Glossary of terms
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual

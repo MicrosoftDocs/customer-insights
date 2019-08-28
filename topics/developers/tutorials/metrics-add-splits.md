@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/metrics-add-splits
 title: Add splits to your metric 
-author: hakrou
+author: ruthaisabokhae
 description: Add splits to your metric 
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/09/2019
 ms.service: product-insights
 ms.topic: conceptual

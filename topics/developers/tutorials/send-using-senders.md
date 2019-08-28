@@ -3,7 +3,7 @@ uid: developers/tutorials/send-using-senders
 title: Send using dedicated senders
 author: vroha
 description: Send using dedicated senders
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual

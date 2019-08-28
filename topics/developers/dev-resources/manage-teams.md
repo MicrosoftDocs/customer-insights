@@ -1,9 +1,9 @@
 ---
 uid: developers/dev-resources/manage-teams
 title: Manage teams
-author: hakrou
+author: ruthaisabokhae
 description: Manage teams
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/22/2019
 ms.service: product-insights
 ms.topic: conceptual

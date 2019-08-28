@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/metrics-apply-transforms
 title: Apply transforms 
-author: hakrou
+author: ruthaisabokhae
 description: Apply transforms 
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/09/2019
 ms.service: product-insights
 ms.topic: conceptual

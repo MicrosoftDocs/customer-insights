@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/metrics-drill-down-to-instance
 title: Drill down to instance level 
-author: hakrou
+author: ruthaisabokhae
 description: Drill down to instance level 
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/09/2019
 ms.service: product-insights
 ms.topic: conceptual

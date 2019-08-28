@@ -1,9 +1,9 @@
 ---
 uid: developers/quick-starts/what-is
 title: Introduction to Product Insights
-author: hakrou
+author: ruthaisabokhae
 description: Introduction to Product Insights
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/24/2019
 ms.service: product-insights
 ms.topic: conceptual

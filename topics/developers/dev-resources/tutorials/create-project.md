@@ -3,7 +3,7 @@ uid: developers/downloads/create-project
 title: Create a project
 author: vroha
 description: Create a project
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual

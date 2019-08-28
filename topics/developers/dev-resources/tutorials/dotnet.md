@@ -3,7 +3,7 @@ uid: developers/downloads/dotnet
 title: Get started with .NET (C#)
 author: vroha
 description: Get started with .NET (C#)
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual
