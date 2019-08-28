@@ -8,7 +8,7 @@ searchScope:
 ms.service: product-insights
 ms.custom: 
   - dyn365-hub
-author: vroha
+author: ruthaisabokhae
 ms.author: ruthai
 ms.date: 04/12/2019
 ms.topic: conceptual

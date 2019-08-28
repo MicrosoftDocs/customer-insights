@@ -1,7 +1,7 @@
 ---
 uid: developers/tutorials/send-csv
 title: Send CSV data
-author: vroha
+author: ruthaisabokhae
 description: Send CSV data
 ms.author: ruthai
 ms.date: 04/12/2019

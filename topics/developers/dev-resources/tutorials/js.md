@@ -1,7 +1,7 @@
 ---
 uid: developers/downloads/js
 title: Web/React (JavaScript)
-author: vroha
+author: ruthaisabokhae
 description: Web/React (JavaScript)
 ms.author: ruthai
 ms.date: 04/12/2019

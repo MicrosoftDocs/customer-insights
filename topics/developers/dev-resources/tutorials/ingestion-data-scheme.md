@@ -1,7 +1,7 @@
 ---
 uid: developers/downloads/ingestion-data-scheme
 title: Ingestion Data Scheme
-author: vroha
+author: ruthaisabokhae
 description: Ingestion Data Scheme
 ms.author: ruthai
 ms.date: 04/12/2019

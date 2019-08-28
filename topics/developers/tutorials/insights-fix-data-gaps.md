@@ -1,7 +1,7 @@
 ---
 uid: developers/tutorials/insights-fix-data-gaps
 title: Fix data gaps
-author: vroha
+author: ruthaisabokhae
 description: Fix data gaps
 ms.author: v-roha
 ms.date: 05/22/2019

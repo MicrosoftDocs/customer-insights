@@ -1,7 +1,7 @@
 ---
 uid: developers/dev-resources/sdk-samples
 title: Sample senders
-author: vroha
+author: ruthaisabokhae
 description: Sample senders
 ms.author: v-roha
 ms.date: 03/29/2019

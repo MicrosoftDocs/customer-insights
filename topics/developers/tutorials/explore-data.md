@@ -1,7 +1,7 @@
 ---
 uid: developers/tutorials/explore-data
 title: Explore data
-author: vroha
+author: ruthaisabokhae
 description: Explore data
 ms.author: v-roha
 ms.date: 03/29/2019

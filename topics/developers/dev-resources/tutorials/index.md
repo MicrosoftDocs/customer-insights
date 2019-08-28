@@ -1,7 +1,7 @@
 ---
 uid: developers/downloads/tutorials/index
 title: SDK for Product Insights
-author: vroha
+author: ruthaisabokhae
 description: SDK for Product Insights
 ms.author: ruthai
 ms.date: 04/12/2019

@@ -1,7 +1,7 @@
 ---
 uid: developers/downloads/dotnet
 title: Get started with .NET (C#)
-author: vroha
+author: ruthaisabokhae
 description: Get started with .NET (C#)
 ms.author: ruthai
 ms.date: 04/12/2019

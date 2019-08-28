@@ -1,7 +1,7 @@
 ---
 uid: developers/downloads/python
 title: Python
-author: vroha
+author: ruthaisabokhae
 description: Python
 ms.author: ruthai
 ms.date: 04/12/2019

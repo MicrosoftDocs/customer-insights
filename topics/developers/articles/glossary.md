@@ -1,7 +1,7 @@
 ---
 uid: developers/articles/glossary
 title: Glossary of terms
-author: vroha
+author: ruthaisabokhae
 description: Glossary of terms
 ms.author: ruthai
 ms.date: 04/12/2019

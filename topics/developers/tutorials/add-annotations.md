@@ -1,7 +1,7 @@
 ---
 uid: developers/tutorials/add-annotations
 title: Add annotations
-author: vroha
+author: ruthaisabokhae
 description: Add annotations
 ms.author: ruthai
 ms.date: 04/12/2019

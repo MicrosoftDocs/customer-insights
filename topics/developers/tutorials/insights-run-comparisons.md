@@ -1,7 +1,7 @@
 ---
 uid: developers/tutorials/insights-run-comparisons
 title: Run comparisons
-author: vroha
+author: ruthaisabokhae
 description: Run comparisons
 ms.author: v-roha
 ms.date: 05/22/2019
