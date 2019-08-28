@@ -1,7 +1,7 @@
 ---
 uid: developers/tutorials/insights-smooth-data
 title: Smooth data
-author: vroha
+author: ruthaisabokhae
 description: Smooth data
 ms.author: v-roha
 ms.date: 05/22/2019

@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/add-comments
 title: Add comments
-author: vroha
+author: ruthaisabokhae
 description: Add comments
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual

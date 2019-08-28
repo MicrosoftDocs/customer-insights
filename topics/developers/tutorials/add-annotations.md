@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/add-annotations
 title: Add annotations
-author: vroha
+author: ruthaisabokhae
 description: Add annotations
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual

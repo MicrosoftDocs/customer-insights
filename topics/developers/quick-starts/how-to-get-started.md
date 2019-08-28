@@ -1,7 +1,7 @@
 ---
 uid: developers/quick-starts/how-to-get-started
-author: hakrou
-ms.author: hakrou
+author: ruthaisabokhae
+ms.author: ruthai
 ms.date: 04/24/2019
 ms.service: product-insights
 ms.topic: conceptual

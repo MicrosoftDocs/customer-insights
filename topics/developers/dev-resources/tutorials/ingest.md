@@ -1,7 +1,7 @@
 ---
 uid: developers/downloads/ingest
 title: Getting started with the CSV Sender
-author: vroha
+author: ruthaisabokhae
 description: Getting started with the Event Sender
 ms.author: ruthai
 ms.date: 08/27/2019

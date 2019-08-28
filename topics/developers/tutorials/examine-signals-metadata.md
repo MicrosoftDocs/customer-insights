@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/examine-signals-metadata
 title: Examine signals metadata
-author: hakrou
+author: ruthaisabokhae
 description: Examine signals metadata
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/16/2019
 ms.service: product-insights
 ms.topic: conceptual

@@ -1,9 +1,9 @@
 ---
 uid: developers/downloads/api-token
 title: Get an API token from the portal
-author: vroha
+author: ruthaisabokhae
 description: Get an API token from the portal
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual

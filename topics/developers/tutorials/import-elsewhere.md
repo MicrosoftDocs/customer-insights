@@ -1,7 +1,7 @@
 ---
 uid: developers/tutorials/import-elsewhere
 title: Connect IoT hub
-author: vroha
+author: ruthaisabokhae
 description: Connect IoT hub
 ms.author: v-roha
 ms.date: 03/29/2019

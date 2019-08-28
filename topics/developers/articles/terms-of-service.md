@@ -1,9 +1,9 @@
 ---
 uid: developers/articles/terms-of-service
 title: SLA
-author: vroha
+author: ruthaisabokhae
 description: Terms of Service 
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual

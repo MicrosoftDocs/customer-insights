@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/get-set-up
 title: Get set up to send signals
-author: hakrou
+author: ruthaisabokhae
 description: Get set up to send signals
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/16/2019
 ms.service: product-insights
 ms.topic: conceptual

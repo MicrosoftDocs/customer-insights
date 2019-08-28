@@ -1,7 +1,7 @@
 ---
 uid: developers/tutorials/use-expressions
 title: Use expressions
-author: vroha
+author: ruthaisabokhae
 description: Use expressions
 ms.author: v-roha
 ms.date: 03/29/2019

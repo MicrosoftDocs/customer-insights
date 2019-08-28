@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/metrics-choose-visualizations
 title: Choose visualizations
-author: hakrou
+author: ruthaisabokhae
 description: Choose visualizations
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/09/2019
 ms.service: product-insights
 ms.topic: conceptual

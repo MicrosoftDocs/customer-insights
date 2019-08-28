@@ -1,7 +1,7 @@
 ---
 uid: developers/tutorials/select-top
 title: Select top N
-author: vroha
+author: ruthaisabokhae
 description: Select top N
 ms.author: v-roha
 ms.date: 03/29/2019

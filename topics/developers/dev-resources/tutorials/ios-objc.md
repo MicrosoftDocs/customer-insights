@@ -1,9 +1,9 @@
 ---
 uid: developers/downloads/ios-objc
 title: iOS (ObjC & Swift)
-author: vroha
+author: ruthaisabokhae
 description: iOS (ObjC & Swift)
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual

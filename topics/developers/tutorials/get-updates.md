@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/get-updates
 title: Get updates
-author: vroha
+author: ruthaisabokhae
 description: Get updates
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual

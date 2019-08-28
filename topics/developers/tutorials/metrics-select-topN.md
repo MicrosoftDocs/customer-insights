@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/metrics-select-topN
 title: Select topN 
-author: hakrou
+author: ruthaisabokhae
 description: Select topN
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/09/2019
 ms.service: product-insights
 ms.topic: conceptual

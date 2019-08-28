@@ -1,9 +1,9 @@
 ---
 uid: developers/tutorials/metrics-set-granularity
 title: Set time granularity
-author: hakrou
+author: ruthaisabokhae
 description: Set time granularity
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 05/09/2019
 ms.service: product-insights
 ms.topic: conceptual

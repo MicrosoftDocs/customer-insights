@@ -1,7 +1,7 @@
 ---
 uid: developers/tutorials/insights-discover
 title: Discover insights
-author: vroha
+author: ruthaisabokhae
 description: Discover insights
 ms.author: v-roha
 ms.date: 05/22/2019

@@ -1,9 +1,9 @@
 ---
 uid: developers/quick-starts/who-uses
 title: Who uses Product Insights?
-author: hakrou
+author: ruthaisabokhae
 description: Who uses Product Insights?
-ms.author: hakrou
+ms.author: ruthai
 ms.date: 04/24/2019
 ms.service: product-insights
 ms.topic: conceptual

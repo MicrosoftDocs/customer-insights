@@ -1,7 +1,7 @@
 ---
 uid: developers/dev-resources/index
 title: Download senders
-author: vroha
+author: ruthaisabokhae
 description: Download senders
 ms.author: ruthai
 ms.date: 08/27/2019
