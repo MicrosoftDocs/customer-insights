@@ -9,7 +9,9 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# SDK for Product Insights
+# SDKs for Product Insights
+
+Choose your preferred SDK from the options below:
 
 [Android (mobile, Java)](android-java.md)
 
