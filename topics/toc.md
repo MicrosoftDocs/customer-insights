@@ -50,10 +50,10 @@
 ### [Services (C#/.NET)](xref:developers/downloads/dotnet)
 ### [Python](xref:developers/downloads/python)
 ### [Web/React (Javascript)](xref:developers/downloads/js)
-## [CSV Sender](xref:developers/downloads/ingest)
+## [Event sender](xref:developers/downloads/ingest)
 ## Manage system 
 ### [Administration](xref:developers/dev-resources/manage-teams)
-### [Get API key](xref:developers/downloads/api-token) 
+### [Get API token/ ingestion key](xref:developers/downloads/api-token) 
 # Customer care 
 ## [FAQ](xref:developers/customer-care/faq) 
 ## [Get support](xref:developers/customer-care/support)
