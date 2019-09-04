@@ -21,6 +21,3 @@ ms.topic: conceptual
 
 [Web/React (Javascript)](js.md)
 
-CSV files
-
-Please email your Microsoft contact for any questions
