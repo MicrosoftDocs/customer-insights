@@ -13,30 +13,30 @@ ms.topic: conceptual
 
 ## Android sample 
 
-[Download the Android sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsAndroidSample.zip)
+[Download the Android sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_android_sample.zip)
 
 [Getting started with the sender](xref:developers/downloads/android-java) 
 
 ## iOS sample 
 
-[Download the iOS sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsiOSSample.zip)
+[Download the iOS sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_objc_sample.zip)
 
 [Getting started with the sender](xref:developers/downloads/ios-objc)
 
 ## JavaScript sample 
 
-[Download the JavaScript sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsJavascriptSample.zip)
+[Download the JavaScript sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_js_sample.zip)
 
 [Getting started with the sender](xref:developers/downloads/js)
 
 ## .NET sample 
 
-[Download the .NET sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsDotNetSample.zip)
+[Download the .NET sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_csharp_sample.zip)
 
 [Getting started with the sender](xref:developers/downloads/dotnet) 
 
 ## Python sample 
 
-[Download the Python sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsPythonSample.egg)
+[Download the Python sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_python_sample.zip)
 
 [Getting started with the sender](xref:developers/downloads/python) 
