@@ -4,7 +4,7 @@ title: Introduction to Product Insights
 author: ruthaisabokhae
 description: Introduction to Product Insights
 ms.author: ruthai
-ms.date: 04/24/2019
+ms.date: 09/04/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
