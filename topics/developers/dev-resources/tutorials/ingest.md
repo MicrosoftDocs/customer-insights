@@ -15,13 +15,13 @@ The event sender can be used to send both CSV and Key/Value Pair formatted signa
 ## Download the sender
 Depending on your Operating System, you should download one of the following command-line executables:
 
-* [Windows (pi.exe)](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/Windows/pi.exe)
-* [Linux (pi)](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/Linux/pi)
-* [macOS (pi)](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/macOS/pi)
+* [Windows](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/Windows/pi.exe)
+* [Linux](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/Linux/pi)
+* [macOS](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/macOS/pi)
 
 
 ## Get your API token/ ingestion key
-You can find the API token/ ingestion key for your Product Insights tenant on its settings page. [Here is how to find and copy your key.] (topics/developers/dev-resources/tutorials/api-token.md)
+You can find the API token/ ingestion key for your Product Insights tenant on its settings page. [Here is how to find and copy your key.](topics/developers/dev-resources/tutorials/api-token.md)
 
 
 ## Log an event
