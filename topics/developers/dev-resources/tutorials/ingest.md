@@ -8,11 +8,11 @@ ms.date: 08/27/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
-# Getting Started with the Event Sender
+# Getting started with the event sender
 The event sender can be used to send both CSV and Key/Value Pair formatted signals to Product Insights.
 
 
-## Download the Correct Sender
+## Download the sender
 Depending on your Operating System, you should download one of the following command-line executables:
 
 * [Windows (pi.exe)](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/Windows/pi.exe)
@@ -20,11 +20,11 @@ Depending on your Operating System, you should download one of the following com
 * [macOS (pi)](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/macOS/pi)
 
 
-## Get Your Ingestion Key
-You can find the ingestion key for your Product Insights tenant on its settings page.
+## Get your API token/ ingestion key
+You can find the API token/ ingestion key for your Product Insights tenant on its settings page. [Here is how to find and copy your key.] (topics/developers/dev-resources/tutorials/api-token.md)
 
 
-## Log an Event
+## Log an event
 
 ### Log a CSV file
 With an open terminal in the same directory as the downloaded logger, run the following command to upload a CSV file.
@@ -38,7 +38,7 @@ When uploading CSVs, the only required arguments are `-t` and the `- filenames..
 Be sure to replace `<ingestion_key>` with your actual Product Insights ingestion key and `your_nth_file.csv` with the filename of your CSV file.
 
 
-### Log Key/Value Pairs
+### Log key/value pairs
 When logging key/value pairs, a signal name must be provided and there must be as many keys as values provided. To log an event with a terminal open, run the following command:
 ```bash
 pi -t <ingestion_key> -s <signal_name> some_key "some value" my_int 42 some_cool_value false
@@ -59,7 +59,7 @@ While not needed, as it's the default option, the format can be explicitly decla
 ```
 
 
-## Optional Arguments
+## Optional arguments
 While a full listing of arguments can be read by running `pi -h` (or `pi --help`), and more arguments exist, the following covers some useful or important options.
 
 * `-t <tenant>` or `--tenant <tenant>`: (Required) Sets the Product Insights ingestion key to log events to.
