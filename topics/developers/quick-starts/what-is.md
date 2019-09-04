@@ -21,8 +21,7 @@ Sign up, create a sample team, generate and view sample signals, and configure d
 
 Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com). You may need to use an incognito window (Ctrl+Shift+N).
 > [!NOTE]
-> - An Azure Active Directory (AAD) account is required for the Product Insights preview. Contact [Jeff Hardie](email:jefhar@microsoft.com) to enable a preview for your AAD.
-> - The Product Insights team may also provide a sample AAD account. Contact [Jeff Hardie](email:jefhar@microsoft.com) to request yours.
+> - An Azure Active Directory (AAD) account is required for the Product Insights preview.   
 > - Previews are not available to MSA accounts (example: sample@outlook.com) at this time.
 
 ## Create a team
