@@ -1,6 +1,6 @@
 ---
 uid: developers/downloads/api-token
-title: Get an API token from the portal
+title: Get an API token (ingestion key) from the portal
 author: ruthaisabokhae
 description: Get an API token from the portal
 ms.author: ruthai
@@ -18,6 +18,6 @@ ms.topic: conceptual
 
 1. Scroll down to the **Ingestion Key** panel.
 
-1. Select **Copy key**. Product Insights will copy the ingestion key to your computer's clipboard.
+1. Select **Copy key**, which will copy the ingestion key to your computer's clipboard. You can now use your key to generate signals.
 
 > [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/GetAPIKey.mp4]
