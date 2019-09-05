@@ -79,4 +79,6 @@ b. Add the SDK file to your project and add it to your page using a script tag:
 			§ Boolean
 		
 5. Teardown the SDK when application closes to ensure all signals currently in queue are sent:   
-	```	analytics.getPostChannel().teardown();```
+	```	
+	analytics.getPostChannel().teardown();
+	```
