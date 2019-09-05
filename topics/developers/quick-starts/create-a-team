@@ -1,3 +1,14 @@
+---
+uid: developers/quick-starts/Create-a-team
+title: Create a team
+author: ruthaisabokhae
+description: How to create a team
+ms.author: ruthai
+ms.date: 09/05/2019
+ms.service: product-insights
+ms.topic: conceptual
+---
+
 ## Sign up for a Product Insights preview
 
 Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com). You may need to use an incognito window (Ctrl+Shift+N).
