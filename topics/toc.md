@@ -5,19 +5,18 @@
 
 # Quickstart
 ## [- Create a team](xref:developers/quick-starts/create-a-team)
-## [- Send signals](xref:developers/quick-starts/1_view-signals)
+## [- Send your signal](xref:developers/quick-starts/1_view-signals)
 ## [- Create a dashboard](xref:developers/quick-starts/2_create-dashboard)
 ## [- Get insights](xref:developers/quick-starts/3_get-insights)
 
 # User Guides
-
-## Send your signal 
+## Send signals 
 ### [Generate signals](xref:developers/tutorials/create-sample-signals)
 ### [Explore signals](xref:developers/tutorials/examine-signals-metadata)
 ### [Import signals](xref:developers/tutorials/import-signals)
 ### [Send additional signals](xref:developers/tutorials/send-additional-signals)
 
-## Create charts and dashboards
+## Create dashboards
 ### [Create a dashboard](xref:developers/tutorials/create-dashboard)
 
 ## Get insights
@@ -36,19 +35,20 @@
 ### [Web/React (Javascript)](xref:developers/downloads/js)
 ## [Event Sender](xref:developers/downloads/ingest)
 
-# Articles
-## [Security](xref:developers/articles/security)
-## [Terms of Service](xref:developers/articles/terms-of-service)
-## [GDPR/ Compliance](xref:developers/articles/compliance)
-## [User permissions](xref:developers/articles/user-permissions) 
-## [Glossary](xref:developers/articles/glossary) 
+
+# [Security](xref:developers/articles/security)
+# [Terms of Service](xref:developers/articles/terms-of-service)
+# [GDPR/ Compliance](xref:developers/articles/compliance)
+# [User permissions](xref:developers/articles/user-permissions) 
+
 
 ## Manage system 
 ### [Administration](xref:developers/dev-resources/manage-teams)
 ### [Get API token/ ingestion key](xref:developers/downloads/api-token) 
 
 # Customer care 
-## [FAQ](xref:developers/customer-care/faq) 
+## [FAQ](xref:developers/customer-care/faq)  
+## [Glossary](xref:developers/articles/glossary) 
 ## [Get support](xref:developers/customer-care/support)
 ## [Send feedback](xref:developers/customer-care/feedback)
 
