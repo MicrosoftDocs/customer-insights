@@ -40,10 +40,9 @@
 # [Terms of Service](xref:developers/articles/terms-of-service)
 # [GDPR/ Compliance](xref:developers/articles/compliance)
 # [User permissions](xref:developers/articles/user-permissions) 
-
 # Manage system 
-### [Administration](xref:developers/dev-resources/manage-teams)
-### [Get API token/ ingestion key](xref:developers/downloads/api-token) 
+## [Administration](xref:developers/dev-resources/manage-teams)
+## [Get API token/ ingestion key](xref:developers/downloads/api-token) 
 
 # Customer care 
 ## [FAQ](xref:developers/customer-care/faq)  
