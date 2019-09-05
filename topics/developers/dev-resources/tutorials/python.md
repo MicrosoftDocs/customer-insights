@@ -18,7 +18,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 
 ## Prerequisites
-	• Python 2.7 or 3+  
+	* Python 2.7 or 3+  
 	* Ingestion key (see below for instructions to obtain)
 	
 ## Get an ingestion key from Product Insights portal
