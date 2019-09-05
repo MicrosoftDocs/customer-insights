@@ -17,7 +17,7 @@
 ### [Import signals](xref:developers/tutorials/import-signals)
 ### [Send additional signals](xref:developers/tutorials/send-additional-signals)
 
-## Create charts and dasboards
+## Create charts and dashboards
 ### [Create a dashboard](xref:developers/tutorials/create-dashboard)
 
 ## Get insights
