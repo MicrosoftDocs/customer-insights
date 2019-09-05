@@ -1,12 +1,12 @@
 # Overview
 ## [What is Product Insights?](xref:developers/quick-starts/what-is) 
 ## [Who is using Product Insights?](xref:developers/quick-starts/who-uses) 
-## [How do you get started?](xref:developers/quick-starts/how-to-get-started) 
+## [How do I get started?](xref:developers/quick-starts/how-to-get-started) 
 
 # Quickstart
 ## [- Create a team](xref:developers/quick-starts/create-a-team)
 ## [- Send signals](xref:developers/quick-starts/1_view-signals)
-## [- Create charts and dashboards](xref:developers/quick-starts/2_create-own-metric)
+## [- Create a dashboard](xref:developers/quick-starts/2_create-dashboard)
 ## [- Get insights](xref:developers/quick-starts/3_get-insights)
 
 # User Guides
@@ -43,10 +43,10 @@
 ## [User permissions](xref:developers/articles/user-permissions) 
 ## [Glossary](xref:developers/articles/glossary) 
 
-
 ## Manage system 
 ### [Administration](xref:developers/dev-resources/manage-teams)
 ### [Get API token/ ingestion key](xref:developers/downloads/api-token) 
+
 # Customer care 
 ## [FAQ](xref:developers/customer-care/faq) 
 ## [Get support](xref:developers/customer-care/support)
