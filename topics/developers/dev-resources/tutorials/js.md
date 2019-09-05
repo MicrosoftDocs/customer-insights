@@ -4,72 +4,81 @@ title: Web/React (JavaScript)
 author: ruthaisabokhae
 description: Web/React (JavaScript)
 ms.author: ruthai
-ms.date: 04/12/2019
+ms.date: 09/05/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
 # Web/React (JavaScript)
  
+# Getting started with the Product Insights SDK for JavaScript
+
+This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing JavaScript project, which will allow you see signals in the portal in five minutes or less.
+
+The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company and the company has just released a new car. You want to know how the car is performing, the demographics of users and also their driving habits. Product Insight allows you to achieve these goals by sending real time signals and generating valuable insights with only a few simple steps. 
+
+
 ## Prerequisites
+* The SDK requires that the project or webpage must be hosted to send telemetry. Sending telemetry from a local file will not be accepted by the server.
+* Ingestion key (see below for instructions to obtain)	
 
-* [API token](https://review.docs.microsoft.com/en-us/dynamics365/product-insights/developers/dev-resources/tutorials/api-token)
-* Hosted project or webpage to send telemetry. Telemetry from a local file will not be accepted by the server.
-
-## Code sample
-
-[Download JavaScript code sample](https://ariamediahost.blob.core.windows.net/sdk/ProductInsightsSamples/ProductInsightsJavascriptSample.zip)
-
-### Running the sample
-
-1. Open the file in Visual Studio Code and add the instrumentation key.
-2. [Install Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
-3. Select Alt+L, Alt+O to launch the HTML page in a local server and Alt+L, Alt+C to stop the server. (Under Mac OS select Cmd+L, Cmd+O and Cmd+L, Cmd+C.)
-
-## Integrate
-
-1. Add the SDK to your page using the script tag: TBD:
-
-```
-<script type="text/javascript" src="https://1dsjssdk.blob.core.windows.net/scripts/latest/ms.analytics-1-beta.js"> 
-</script> 
-```
-
-2. Start the SDK (you only need to do this once)
-3. Replace `Your-API-Token` with your project's instrumentation key.
-
-```javascript
-Var analytics = new ApplicationInsights(); 
-var config = { 
-    instrumentationKey: "Your-API-Token" 
-};
-
-analytics.initialize(config, []); 
-```
-
-4. Track events:
-
-```javascript
-// Do a simple track call. 
-analytics.track({ 
-    name: "my_simple_event_name", 
-    data: { 
-        "Name": "Ashley Smith", 
-        "School": "Bellevue High School", 
-        "Grade": 11, 
-        "Gpa": 3.82, 
-        "Suspended": false 
-    } 
-}); 
-```
-5. We recommend that you teardown the SDK when your application closes. This ensures that events currently in queue are sent. Note that if the browser supports HTML5 Beacons, we will use Beacons to send events for greater reliability.
+## Get an ingestion key from Product Insights portal
+1. From the home screen, select your team from the left panel. If you do not already have a team, refer to [this documentation](topics/developers/quick-starts/what-is.md) to create a new team.
+2. Add a new project to your team by selecting the **"+ New Project"** button from the top right corner.
+3. Type in a name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
+4. Once your project is created, select the project.
+5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**. Leave this tab open in your web browser or copy the key to a clipboard because you will need to use it later.
+		
+## Integrate the Product Insights SDK into your webpage or project
+1. Add the Product Insights SDK to your page:    
+a. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_js_sdk.zip) the SDK.    
+b. Add the SDK file to your project and add it to your page using a script tag:  
+			
+	```<script type="text/javascript" src="pi_js_sdk-1.0.0.min.js">  
+		</script>
+	```
+			
+2. Add the 1DS SDK to your page using the script tag as shown:    
    
-```analytics.getPostChannel().teardown();```
-
-## Types
-
-The following types are supported for event properties:
-
-* **String**
-* **Double**
-* **boolean**
+   ```<script type="text/javascript" 
+		src="https://az416426.vo.msecnd.net/scripts/c/ms.analytics-2.min.js">
+		</script>
+	```
+		
+3. Start the SDKs (Only required to start once):  
+	```var analytics = new oneDS.ApplicationInsights();
+		var config = {
+			instrumentationKey: "Your_Ingestion_Key"
+		};
+		
+		analytics.initialize(config, []);
+		var pia = new PI.ProductInsightsAnalytics(analytics, "Your_Ingestion_Key");
+	```	
+		
+4. Track signals:
+	```	
+		// Do a simple track signals call.
+		pia.trackSignal({ name: "user_information"});
+		
+		// Track a signal with custom properties of various types.
+		pia.trackSignal({ 
+			name: "car_information",
+			properties: {
+				"engine_start": true,
+				"car_model": "Accord",
+				"model_year": "2018",
+				"rpm": 3000,
+				"temperature": 74.3
+			}
+		});
+		
+	```	
+		The following types are supported for event properties:
+			§ String
+			§ Double
+			§ Boolean
+		
+5. Teardown the SDK when application closes to ensure all signals currently in queue are sent:   
+	```	
+	analytics.getPostChannel().teardown();
+	```

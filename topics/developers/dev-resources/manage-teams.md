@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Manage teams
 
-Every user belongs to a team. When you log in, you should see at least one team. Select **All teams** to see all teams to which you belong. Depending on your permission settings, you can add a new team, edit or delete an existing team. 
+Every user belongs to a team. When you log in, you should see at least one team. Select **All teams** to see the teams to which you belong. Depending on your permission settings, you can add a new team, edit or delete an existing team. 
 
 ![Manage teams](../images/dev-resources/Manage-teams.png)
 
@@ -23,6 +23,6 @@ Select a team and you will see a list of projects that belong to the team. As wi
 
 # Manage members
 
-Select **Members** tab to manage members(or users). You can add members to your team, adjust their permission settings, or delete members, depending on your permissions. 
+Select the **Members** tab to manage members (or users). You can add members to your team, adjust their permission settings, or delete members, depending on your permissions. 
 
 ![Manage members](../images/dev-resources/Manage-members.png)

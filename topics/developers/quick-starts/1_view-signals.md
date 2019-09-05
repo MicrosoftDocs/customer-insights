@@ -10,7 +10,7 @@ ms.topic: conceptual
 layout: LandingPage
 ---
 
-# View signals 
+# Send signals 
 
 This section explains how to find and explore a continuous flow of data from a variety of sources such as products, websites, and mobile applications as sent to a sample project named Fabrikam Go.
 
