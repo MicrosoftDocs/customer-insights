@@ -26,12 +26,6 @@
 ### [Smooth data](xref:developers/tutorials/insights-smooth-data)
 ### [Run comparisons](xref:developers/tutorials/insights-run-comparisons)
 
-## [Security](xref:developers/articles/security)
-## [Terms of Service](xref:developers/articles/terms-of-service)
-## [GDPR/ Compliance](xref:developers/articles/compliance)
-## [User permissions](xref:developers/articles/user-permissions) 
-## [Glossary](xref:developers/articles/glossary) 
-
 # Developer resources 
 ## [Download SDKs to send signals](xref:developers/dev-resources/index)
 ## [SDK tutorials](xref:developers/downloads/tutorials/index)
@@ -40,7 +34,15 @@
 ### [Services (C#/.NET)](xref:developers/downloads/dotnet)
 ### [Python](xref:developers/downloads/python)
 ### [Web/React (Javascript)](xref:developers/downloads/js)
-## [CSV Sender](xref:developers/downloads/ingest)
+## [Event Sender](xref:developers/downloads/ingest)
+
+## [Security](xref:developers/articles/security)
+## [Terms of Service](xref:developers/articles/terms-of-service)
+## [GDPR/ Compliance](xref:developers/articles/compliance)
+## [User permissions](xref:developers/articles/user-permissions) 
+## [Glossary](xref:developers/articles/glossary) 
+
+
 ## Manage system 
 ### [Administration](xref:developers/dev-resources/manage-teams)
 ### [Get API key](xref:developers/downloads/api-token) 
