@@ -20,6 +20,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 ## Prerequisites
 * .NET Core
 * Visual Studio 2017
+* Ingestion key (see below for instructions to obtain)
 	
 ## Get an ingestion key from Product Insights portal
 1. From the home screen, select your team from the left panel. If you do not already have a team, refer to [this documentation](topics/developers/quick-starts/what-is.md) to create a new team.
