@@ -4,7 +4,7 @@
 ## [How do you get started?](xref:developers/quick-starts/how-to-get-started) 
 
 # Quickstart
-## [- Create a team]()
+## [- Create a team](xref:developers/quick-starts/create-a-team)
 ## [- Send signals](xref:developers/quick-starts/1_view-signals)
 ## [- Create charts and dashboards](xref:developers/quick-starts/2_create-own-metric)
 ## [- Get insights](xref:developers/quick-starts/3_get-insights)
