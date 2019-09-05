@@ -1,48 +1,33 @@
 ---
-uid: developers/quick-starts/2_create-own-metric
-title: Create your metric
+uid: developers/tutorials/create-dashboard
+title: Create a dashboard
 author: ruthaisabokhae
-description: Create your own metric
+description: Create a dashboard
 ms.author: ruthai
-ms.date: 05/14/2019
+ms.date: 05/22/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
+# Create a dashboard
 
-# Create metrics   
+Dashboards are a way for you to collect information about various signals and metrics that are important to your business, primarily in the form of multiple charts. Once you have created a dashboard, you can keep it private or share it with your colleagues or your whole company.
 
-In this article, you will learn how to build metrics from signals in seconds.  Metrics are measurements extracted from signals. Browse the signals that are being sent, select a signal of interest, then drill down to choose a specific property for a meaningful metric. 
+> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/create-dashboard.mp4]
 
-For this example, the **vehicle_drive_end** signal is sent after a vehicle completes a trip, and the signal contains the MPGe value for the whole trip. This property determines average MPGe values for different vehicle fuel types.
+## Example
 
-To find this signal, refer to the previous section, [View signals](1_view-signals). 
+The following steps explain how to create a Project Insights dashboard. For further information, see the following video.
 
-1. Select **Explore** at the top right corner of the screen to open the chart editor. 
+1. Select a project such as **Fabrikam Automobiles** from the projects list.
+1. From the selected project, select **Dashboards** and then the **New dashboard** button.
+1. The **New dashboard** window will appear. Enter the name of your new dashboard, such as _Test dashboard_, into the **Name** field, and optionally enter any text into the **Description** field.
+1. Select the **Create** button. Your project's screen will appear.
+1. Select your new dashboard's name from your project's screen. A screen will appear with the instructions, "Create the first chart." This screen is the first page of your new dashboard.
+1. Select **Rename page** from the menu at the top of the screen. The **Rename page** window will appear.
+1. Give your page a new name, such as _Main Charts_ and select the **Save** button.
+1. Back on the first page of your dashboard, select the **New chart** button. A default chart for your project will appear. You can customize this later.
+1. Select **New chart** again and an identical chart will appear on the same page.
+1. Select **New page** and a second page will appear in your dashboard. You can rename this page in the same way you did the first one.
+1. Select **New chart** again to add a chart to the second page.
+1. Select the **Save** button to protect your changes.
 
-![Open the chart editor from the signals page](../images/quick-starts/create-metrics-1-vehicle_drive_end.png)
-
-2. Turn off **raw data**. Select **vehicle_drive_end** in the **Signal** menu. 
-
-![Turn off raw data](../images/quick-starts/create-metrics-2-rawdata-off.png)
-
-3. Select **Average** from the **Operation** menu.
-4. Select **CurrentMileage** from the **Property** menu. This is what the vehicles reported as their MPGe for each trip. After these steps, you will see the chart showing the average MPGe for all vehicles and all trips.
-
-![Set up your metric](../images/quick-starts/create-metrics-3-vehicle_drive_end-explore.png)
-
-So far this MPG value is for all types of vehicles. To see MPG values for different vehicle fuel types such as electric or gasoline, you need to add splits. 
-
-5. Click **Split** from the top left corner of the chart, and select *VehicleFuelType*
-
-![Add a split](../images/quick-starts/create-metrics-4-add-split.png)
-
-Now you will see multiple lines representing average MPG for each fuel type.
-
-7. Select **Publish** at the top right corner of the chart to publish the metric.  That means this metric (MPG per city type) will appear on the list of metrics and be available to other users. Your colleagues can then comment on the metric and create their own metrics and charts based on your metric.
-
-![Add a split](../images/quick-starts/create-metrics-5-publish.png)
-
-*For electric vehicles, the value is *MPGe - miles per gallon gasoline equivalent
-
-> [!div class="nextstepaction"]
-> [Get insights >>](3_get-insights.md)
