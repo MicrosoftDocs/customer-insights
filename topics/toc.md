@@ -6,7 +6,7 @@
 # Quickstart
 ## [- Create a team](xref:developers/quick-starts/create-a-team)
 ## [- Send your signal](xref:developers/quick-starts/1_view-signals)
-## [- Create a dashboard](xref:developers/quick-starts/2_create-dashboard)
+## [- Create a dashboard](xref:developers/tutorials/create-dashboard)
 ## [- Get insights](xref:developers/quick-starts/3_get-insights)
 
 # User Guides
