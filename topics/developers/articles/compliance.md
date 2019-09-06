@@ -9,4 +9,4 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Compliance 
+# GDPR/ Compliance 
