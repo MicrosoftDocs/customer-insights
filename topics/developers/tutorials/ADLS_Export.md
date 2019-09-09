@@ -5,7 +5,7 @@ Product Insights signals export feature allows you to send the data that is gene
 
 Your signals will be available to you in format that is easy to consume, allowing you to perform advanced data analysis and other processing on raw data that was sent to Product Insights.
 
-Azure Data Lake Storage offers a wide variety of available integrations. You can learn more about ADLS Gen2 here: https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction.
+Azure Data Lake Storage offers a wide variety of available integrations. You can learn more about ADLS Gen2 [here](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction).
 
 ## How to set up the signals export  
 
@@ -40,14 +40,16 @@ You need to specify at least the name of the file system.
 
 ### Options  
 There are three settings to consider when exporting your signals:
+
 #### Export granularity
 This setting allows you to choose the granularity of files containing exported signals. Depending on this setting, your signals will be exported to files that are created per hour or per day.
 
 #### Data timestamp
-Based on this setting the file to save the signal to will be chosen either based on the time when data was generated (time when the signal was sent from the point of view of device emitting data) or using the time of when data is written to ADLS. Choosing the first option will require additional logic on the data consuming side as the signals may be written to older files. One example of such situation is when a device loses internet connection for a day and after establishing connection again it flushes all buffered events (and each event has timestamp of when it was attempted to be sent).
+Based on this setting, the file to save the signal to will be chosen either based on the time when data was generated (time when the signal was sent from the point of device emitting data) or using the time when data is written to the ADLS. Choosing the first option will require additional logic on the data consuming side as the signals may be written to older files. An example of the latter is when a device loses internet connection for a day and after establishing connection again, flushes all buffered events (and each event has a timestamp of when it attempted to be sent).
 
 #### Signals to be exported
-This option allows you to choose which signals should be exported. You can either choose all of them or simply list the names of desired signals.
+This option allows you to choose which signals should be exported. You can either choose all signals or simply list the names of desired signals.
+
 
 ## Data format of exported signals
 Signals will be exported using line delimited JSON format. Find out more about it [here](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON).  
