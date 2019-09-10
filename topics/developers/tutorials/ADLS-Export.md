@@ -1,3 +1,14 @@
+---
+uid: developers/tutorials/ADLS-Export
+title: Import signals
+author: ruthaisabokhae
+description: Export signals
+ms.author: ruthai
+ms.date: 09/10/2019
+ms.service: product-insights
+ms.topic: conceptual
+---
+
 # Export your signals to Azure Data Lake Storage Gen2
 
 ## Overview
