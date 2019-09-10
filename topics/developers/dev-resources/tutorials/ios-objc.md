@@ -9,118 +9,132 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# iOS (ObjC & Swift)
- 
-## Prerequisites:
-- [Xcode 8.3.3+](https://developer.apple.com/xcode/downloads/)
-- macOS 10.12+ 
-- iOS 9+ 
-- `Your-API-Token` (get from [pi.dynamics.com](http://pi.dynamics.com)>team>project>settings – copy the Ingestion Key)
+# Getting started with the Product Insights SDK for Objective-C
 
-## SDK
-[Download the iOS SDK](https://github.com/Microsoft/AppCenter-SDK-Apple/releases/latest)
+This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing Objective-C application, which will allow you to see signals in the portal in five minutes or less.
 
-## Integrate
-### Option 1: Integrate the SDK using CocoaPods
+The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company and the company has just released a new car. You want to know how the car is performing, the demographics of users and also their driving habits. Product Insight allows you to achieve these goals by sending real time signals and generating valuable insights with only a few simple steps.
 
-1. If you haven't installed CocoaPods, run the following command in the terminal to install CocoaPods and create a Podfile:
 
-```Terminal
-$ sudo gem install cocoapods 
-$ pod init
-```
+## Prerequisites
+* Xcode 10+
+* iOS 9+
+* MacOS 10.12+
+* Ingestion key (see below for instructions to obtain)
 
-2. Add the following code snippet to your Podfile:
+## Get an ingestion key from Product Insights portal
+1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [this documentation](topics/developers/quick-starts/what-is.md) to create a new team.
+2. Add a new project to your team by selecting the **"+ New Project"** button from the top right corner.
+3. Type in a name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
+4. Once your project is created, select the project.
+5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**. Leave this tab open in your web browser or copy the key to a clipboard because you will need to use it later.
 
-```Podfile
-Target 'SampleApp' do 
-pod 'AppCenter' 
-pod 'AppCenter/Analytics'
-```
+## Integrate the Product Insights SDK into your Objective-C project
 
-3. Save the file and run the following command in the terminal:
+### Option 1: Integrate the AppCenter SDK using CocoaPods
+1. If you haven't installed CocoaPods, run this command in the terminal to install CocoaPods and create a Podfile:
+	```
+	$ sudo gem install cocoapods
+	$ pod init
+	```
+2. Add the following to your Podfile:
+	```
+	target 'SampleApp' do
+		pod 'AppCenter/Analytics'
+	```
+3. Save the file and run this command in the terminal:
+	```
+	$ pod install
+	```
 
-```Terminal
-$ pod install
-```
+### Option 2: Integrate the AppCenter SDK manually
+1. Download the **1DS SDK** for iOS and macOS.
+	* The SDK is available as a ZIP file.
+2. Integrate the SDK into your project
+	* In this step, you'll configure your project to link-in the 1DS SDK libraries.
+	* Make sure that your project has modules enabled.
+	* Unzip the SDK archive
+		* For iOS: Copy the AppCenter.framework and AppCenterAnalytics.framework frameworks from the iOS folder.
+		* For macOS: Copy the AppCenter.framework and AppCenterAnalytics.framework frameworks from the macOS folder.
+3. Create a new folder named Frameworks inside your project folder, and paste the frameworks into this.
+4. Add the SDK frameworks to the project in Xcode:
+	* Drag and drop all the frameworks into Xcode's Project Navigator.
+	* A dialog will appear, make sure your app target is checked. Then click Finish.
+5. Make sure the .frameworks have been added to the project and target correctly. Follow these steps:
+	* Select your project in Xcode's project navigator.
+	* Select your app target.
+	* In the General tab, verify that
+		* None of the .frameworks have been added to Embedded Binaries.
+		* The section about Linked Frameworks and Libraries contains all .frameworks. Remove duplicates and add missing frameworks if necessary.
+	* In the Build Phases tab, verify that
+		* All .framework files have been added to Link Binary With Libraries.
+		 None of the .frameworks have been added to Embed Frameworks.
+6. Note that all .frameworks are distributed as statically linked, "fake" frameworks.
 
-### Option 2: Integrate the SDK manually
-1. [Download the iOS SDK](https://github.com/Microsoft/AppCenter-SDK-Apple/releases/latest).
-2. Integrate the SDK into your project. In this step, you’ll configure your project to link the 1DS SDK libraries.
-    * Ensure that your project has modules enabled.
-    * Unzip the SDK archive and copy the AppCenter.framework and AppCenterAnalytics.framework frameworks from the iOS folder.
-    * Create a new folder named Frameworks inside your project folder, and paste the frameworks into it.
-    * Add the SDK frameworks to the project in Xcode:
-        * Drag and drop all the frameworks into Xcode's Project Navigator.
-        * A dialog will appear. Ensure your app target is checked, and then click Finish.
-    * Ensure the frameworks have been added to the project and target correctly.
-        * Select your project in Xcode's project navigator.
-        * Select your app target.
-        * In the General tab, verify that
-            * None of the .framework files have been added to Embedded Binaries.
-            * The section Linked Frameworks and Libraries contains all frameworks. Remove duplicates and add missing frameworks if necessary.
-        * In the Build Phases tab, verify that
-            * All .framework files have been added to Link Binary With Libraries.
-            * None of the .framework files have been added to Embed Frameworks.
+### Integrate the Product Insights Analytics SDK Manually
+1. Download the **Product Insights Analytics Objective-C SDK** for iOS or macOS.
+2. Integrate the SDK into your project
+	* In this step, you'll configure your project to link-in the Product Insights Analytics Objective-C SDK framework.
+	* Unzip the SDK archive -
+		Copy the `ProductInsightsAnalytics.framework` (for iOS) or `ProductInsightsAnalyticsMacOS.framework` (for macOS)
+	* Create a new folder named Frameworks inside your project folder, and paste the framework into this.
+		* Skip this step if you have already created the folder named **Frameworks** in a previous step.
+	* Select your project in Xcode's project navigator.
+	* Select your app target.
+	* In the General tab add the `ProductInsightsAnalytics.framework` (for iOS) or `ProductInsightsAnalyticsMacOS.framework` (for macOS) to **Embedded Binaries**.
 
-Note that all .framework files are distributed as statically linked, "fake" frameworks.
+### Import Product Insights Analytics and AppCenter into your project
+1. Open your AppDelegate.m file and add the following import statements:
+	```objc
+	@import AppCenter;
+	@import AppCenterAnalytics;
 
-3. Open your AppDelegate.m file and add the following import statements:
+	// if iOS use:
+	#import <ProductInsightsAnalytics/ProductInsightsAnalytics.h>
 
-**Objective-C:**
+	// if macOS use:
+	#import <ProductInsightsAnalyticsMacOS/ProductInsightsAnalyticsMacOS.h>
+	```
 
-```obj-c
-@import AppCenter; 
-@import AppCenterAnalytics;
-```
 
-**Swift:**
+### Add the start method and start tracking events.
+1. Start the SDK from an app (only required to start once). Follow these steps:
+	* Insert the following lines to start the SDK in your app's `AppDelegate.m` class in the `didFinishLaunchingWithOptions:` method.
+		```objc
+		[MSAppCenter start:@"target={Your Ingestion Key}" withServices:@[[MSAnalytics class]]];
+		```
+		* If your application already uses the Microsoft AppCenter SDK to track telemetry:
+		```objc
+		[MSAppCenter start:@"app-secret={Your App Secret}; target={Your Ingestion Key}" withServices:@[[MSAnalytics class]]];
+		```
 
-```swift
-import AppCenter 
-import AppCenterAnalytics 
-```
+2. Insert the following line to initiate Product Insights Analytics.
+	```objc
+	PIAnalytics *piAnalytics = [[PIAnalytics new] initWithIngestionKey:{Your Ingestion Key}];
+	```
 
-4. Add the **start method** and **start tracking** events.
+3. Insert the following lines to track signals.
+	```objc
+	// Signal with name only
+	PISignal *sampleSignal = [[PISignal new] initWithName:@"sampleSignal"];
+	[piAnalytics trackSignal:sampleSignal];
 
-* Start the SDK from an app.
-* Insert the following code to start the SDK in your app's AppDelegate.m class in the **didFinishLaunchingWithOptions:** method. 
-* Replace `Your-API-Token` with your project's instrumentation key.
+	// Signal with custom properties of various types
+	PISignal *sampleSignal = [[PISignal new] initWithName:@"sampleSignal"];
+	SampleSignal.version = @"1.0.0";
 
-**Objective-C:**
+	[sampleSignal setStringValue:@"sampleStringValue" forProperty:@"stringProperty"];
+	[sampleSignal setDoubleValue:36.5 forProperty:@"doubleProperty"];
+	[sampleSignal setInt64Value:3000 forProperty:@"int64Property"];
+	[sampleSignal setDateValue:[NSDate new] forProperty:@"dateProperty"];
+	[sampleSignal setBoolValue:YES forProperty:@"boolProperty"];
 
-```obj-c
-[MSAppCenter start:@"target={Your API Token}" withServices:@[[MSAnalytics class]]]; 
+	[piAnalytics trackSignal:sampleSignal];
+	```
 
-// Do a simple trackEvent call 
-[MSAnalytics trackEvent:@"eventName"]; 
- 
-// Track an event with various property types 
-MSEventProperties *properties = [MSEventProperties new]; 
-[properties setString:@"Music" forKey:@"Category"]; 
-[properties setDouble:3.23 forKey:@"LengthMinutes"]; 
-[properties setInt64:193800 forKey:@"LenthMs"]; 
-[properties setBool:YES forKey:@"InLibrary"]; 
-[properties setDate:[NSDate new] forKey:@"DateAdded"]; 
-[MSAnalytics trackEvent:@"VideoClicked" withTypedProperties:properties]; 
-```
-
-**Swift:**
-
-```swift
-MSAppCenter.start("target={Your API token}", withServices:[MSAnalytics.self]) 
- 
-// Do a simple trackEvent call. 
-MSAnalytics.trackEvent("eventname") 
- 
-// Track an event with properties. 
-let properties = MSEventProperties() 
-properties.setEventProperty("Music", forKey:"Category") 
-properties.setEventProperty(3.23, forKey:"LengthMinutes") 
-properties.setEventProperty(193800, forKey:"LengthMs") 
-properties.setEventProperty(true, forKey:"InLibrary") 
-properties.setEventProperty(Date(), forKey:"DateAdded") 
-MSAnalytics.trackEvent("VideoClicked", withProperties:properties) 
-```
-
-You’re done! When you run your app or library, it will send a telemetry event when it launches.
+	The following types are supported for custom signal properties:
+	- **NSString**
+	- **NSDate**
+	- **double**
+	- **int64_t**
+	- **BOOL**
