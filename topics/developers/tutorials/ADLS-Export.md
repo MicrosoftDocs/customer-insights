@@ -1,6 +1,6 @@
 ---
 uid: developers/tutorials/ADLS-Export
-title: Import signals
+title: Export signals
 author: ruthaisabokhae
 description: Export signals
 ms.author: ruthai
