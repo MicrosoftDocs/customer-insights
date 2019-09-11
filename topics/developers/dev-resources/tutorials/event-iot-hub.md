@@ -1,3 +1,15 @@
+---
+uid: developers/dev-resources/tutorials/event-iot-hub
+title: Connecting IoT/Event Hubs to Product Insights
+author: ruthaisabokhae
+description: Connecting IoT/Event Hubs to Product Insights
+ms.author: ruthai
+ms.date: 09/11/2019
+ms.service: product-insights
+ms.topic: conceptual
+---
+
+
 # Connecting Event Hubs to Product Insights
 
 Creating an Event Hub or IoT Hub to Product Insights connection lets you use Product Insights with data being sent to an existing event hub. The process for connecting an Event Hub or IoT Hub to Product Insights consists of the following 3 steps:
