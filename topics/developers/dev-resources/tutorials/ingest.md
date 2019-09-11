@@ -20,17 +20,17 @@ Depending on your Operating System, you should download one of the following com
 * [macOS](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/macOS/pi)
 
 
-## Get your API token/ ingestion key
-You can find the API token/ ingestion key for your Product Insights tenant on its settings page. [Here is how to find and copy your key.](topics/developers/dev-resources/tutorials/api-token.md)
+## Get your ingestion key
+You can find the ingestion key for your Product Insights tenant on its settings page. [Here is how to find and copy your key.](topics/developers/dev-resources/tutorials/api-token.md)
 
 
 ## Log an event
 
 ### Log a CSV file
-With an open terminal in the same directory as the downloaded logger, run the following command to upload a CSV file.
+With an open terminal in the same directory as the downloaded sender, run the following command to upload a CSV file.
 
 ```bash
-pi -t <ingestion_key> -s <signal_name> -f csv - 1st_file.csv 2nd_file.csv ... nth_file.csv
+$ pi -t <ingestion_key> -s <signal_name> -f csv - 1st_file.csv 2nd_file.csv ... nth_file.csv
 ```
 
 When uploading CSVs, the only required arguments are `-t` and the `- filenames...` options. If a signal name is provided, then all events get uploaded with the same signal name. If no signal name is provided, then a unique name will be generated for each detected signal following the pattern `signal_<hash>` (e.g. `signal_a4640af933fa4342`).
@@ -41,12 +41,12 @@ Be sure to replace `<ingestion_key>` with your actual Product Insights ingestion
 ### Log key/value pairs
 When logging key/value pairs, a signal name must be provided and there must be as many keys as values provided. To log an event with a terminal open, run the following command:
 ```bash
-pi -t <ingestion_key> -s <signal_name> some_key "some value" my_int 42 some_cool_value false
+$ pi -t <ingestion_key> -s <signal_name> some_key "some value" my_int 42 some_cool_value false
 ``` 
 
 In addition to generating an event from program arguments, it can also use stdin:
 ```bash
-echo 'some_key "some value" my_int 42 some_cool_value false' | pt -t <ingestion_key> -s <signal_name> -
+$ echo 'some_key "some value" my_int 42 some_cool_value false' | pt -t <ingestion_key> -s <signal_name> -
 ```
 
 While not needed, as it's the default option, the format can be explicitly declared by passing `-f kvp` as an argument. In this case, the event being logged is equivalent to the following JSON object:
