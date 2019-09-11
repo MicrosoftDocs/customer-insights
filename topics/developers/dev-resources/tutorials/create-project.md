@@ -16,4 +16,4 @@ ms.topic: conceptual
 
 3. Select the **Create** button. The **New project** dialog will disappear.
 
-4. You can now select your newly created project from the **Projects** menu and get a copy of its ingestion key, as described in [Get an API token](xref:developers/downloads/api-token).
+4. You can now select your newly created project from the **Projects** menu and get a copy of its ingestion key, as described in [Get an API token](/topics/developers/downloads/api-token).
