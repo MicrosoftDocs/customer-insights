@@ -10,21 +10,24 @@ ms.topic: conceptual
 ---
 # Getting started with the Product Insights SDK for Android (Java)
 
-This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing Android application, which will allow you see signals in the portal in five minutes or less.
+This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing Android application, which will allow you to see signals in the portal in five minutes or sooner.
 
-The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company and the company has just released a new car. You want to know how the car is performing, the demographic of users and also their driving habits. Product Insight allows you to achieve these goals by sending real time signals and generating valuable insights with only a few simple steps.
+The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, the demographic of users, and their driving habits. Product Insight allows you to achieve these goals by sending real-time signals and generating valuable insights with only a few simple steps.
 
 ## Prerequisites
 * Android Studio
 * Minimum Android API Level: 16 (Jelly Bean)
-* Ingestion key (see below for instructions to obtain)
+* Ingestion key 
 
 ## Get an ingestion key from Product Insights portal
-1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [this documentation](topics/developers/quick-starts/what-is.md) to create a new team.
+1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [What is Product Insights?](topics/developers/quick-starts/what-is.md) to create a new team.
 2. Add a new project to your team by selecting the **+ New Project** button from the top right corner.
-3. Type in a name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
+3. Type in a project name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
 4. Once your project is created, select the project.
-5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**. Leave this tab open in your web browser or copy the key to a clipboard because you will need to use it later.
+5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**. 
+
+> ![NOTE]
+> Leave this tab open in your web browser or copy the key to a clipboard because you will need to use it later.
 
 ## Integrate
 1. Open your Android Studio project. If you don't have one, create a new project with **Empty Activity** in Android Studio.
@@ -33,7 +36,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
     * Unzip the compressed file `pi_android_sdk.zip`
     * Copy the Android archive file (extension: `.aar`) into your project's `app/libs` folder.
 
-3. Open the app level `build.gradle` file (`app/build.gradle`) and add the following lines after ```apply plugin``` to include the AppCenter SDK dependencies for the project:
+3. Open the app level `build.gradle` file (`app/build.gradle`), and add the following lines after ```apply plugin``` to include the AppCenter SDK dependencies for the project:
 
     ```java
     dependencies {
@@ -41,7 +44,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
         implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
     }
     ```
-4. Include the Product Insights SDK library as a dependency and declare the `/libs` folder as a dependency repository:
+4. Include the Product Insights SDK library as a dependency, and declare the `/libs` folder as a dependency repository:
 
     ```java
     dependencies {
