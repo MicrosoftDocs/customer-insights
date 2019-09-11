@@ -67,12 +67,12 @@ The following scenario will be used to construct the Product Insights SDK exampl
 		pia.track_signal(sig) 
 		
 		
-		**The following types are supported for custom signal properties**:
-			§ str
-			§ float, int
-			§ datetime
-			§ UUID
-			§ Bool
+		**The following types are supported for custom signal properties**:<br>
+			- § str
+			- § float, int
+			- § datetime
+			- § UUID
+			- § Bool
 			
 4. Teardown the SDK when the application closes to ensure all signals currently in the queue are sent: 
 		``` LogManager.flush_and_tear_down()```
