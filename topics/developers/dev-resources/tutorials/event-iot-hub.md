@@ -1,5 +1,5 @@
 ---
-uid: developers/dev-resources/tutorials/event-iot-hub
+uid:  developers/downloads/event-iot-hub
 title: Connecting IoT/Event Hubs to Product Insights
 author: ruthaisabokhae
 description: Connecting IoT/Event Hubs to Product Insights
