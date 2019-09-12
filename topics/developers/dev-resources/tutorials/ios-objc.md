@@ -11,23 +11,26 @@ ms.topic: conceptual
 
 # Getting started with the Product Insights SDK for Objective-C
 
-This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing Objective-C application, which will allow you to see signals in the portal in five minutes or less.
+This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing Objective-C application, which will allow you to see signals in the portal in five minutes or sooner.
 
-The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company and the company has just released a new car. You want to know how the car is performing, the demographics of users and also their driving habits. Product Insight allows you to achieve these goals by sending real time signals and generating valuable insights with only a few simple steps.
+The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, the demographics of users, and their driving habits. Product Insight allows you to achieve these goals by sending real time signals and generating valuable insights with only a few simple steps.
 
 
 ## Prerequisites
 * Xcode 10+
 * iOS 9+
 * MacOS 10.12+
-* Ingestion key (see below for instructions to obtain)
+* Ingestion key 
 
 ## Get an ingestion key from Product Insights portal
-1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [this documentation](topics/developers/quick-starts/what-is.md) to create a new team.
+1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [What is Product Insights?](topics/developers/quick-starts/what-is.md) to create a new team.
 2. Add a new project to your team by selecting the **"+ New Project"** button from the top right corner.
-3. Type in a name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
+3. Type in a project name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
 4. Once your project is created, select the project.
-5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**. Leave this tab open in your web browser or copy the key to a clipboard because you will need to use it later.
+5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**. 
+
+> [!NOTE]
+> Leave this tab open in your web browser, or copy the key to a clipboard because you will need to use it later.
 
 ## Integrate the Product Insights SDK into your Objective-C project
 
@@ -75,16 +78,17 @@ The following scenario will be used to construct the Product Insights SDK exampl
 1. Download the **Product Insights Analytics Objective-C SDK** for iOS or macOS.
 2. Integrate the SDK into your project
 	* In this step, you'll configure your project to link-in the Product Insights Analytics Objective-C SDK framework.
-	* Unzip the SDK archive -
-		Copy the `ProductInsightsAnalytics.framework` (for iOS) or `ProductInsightsAnalyticsMacOS.framework` (for macOS)
-	* Create a new folder named Frameworks inside your project folder, and paste the framework into this.
-		* Skip this step if you have already created the folder named **Frameworks** in a previous step.
+	* Unzip the SDK archive.
+		Copy the `ProductInsightsAnalytics.framework` (for iOS) or `ProductInsightsAnalyticsMacOS.framework` (for macOS).
+	* Create a new folder named **Frameworks** inside your project folder, and paste the framework into this.
+		> [!NOTE]
+		> Skip this step if you have already created the folder named **Frameworks** in a previous step.
 	* Select your project in Xcode's project navigator.
 	* Select your app target.
-	* In the General tab add the `ProductInsightsAnalytics.framework` (for iOS) or `ProductInsightsAnalyticsMacOS.framework` (for macOS) to **Embedded Binaries**.
+	* In the **General** tab add the `ProductInsightsAnalytics.framework` (for iOS) or `ProductInsightsAnalyticsMacOS.framework` (for macOS) to **Embedded Binaries**.
 
 ### Import Product Insights Analytics and AppCenter into your project
-1. Open your AppDelegate.m file and add the following import statements:
+1. Open your `AppDelegate.m* file`, and add the following import statements:
 	```objc
 	@import AppCenter;
 	@import AppCenterAnalytics;
@@ -98,7 +102,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 
 ### Add the start method and start tracking events.
-1. Start the SDK from an app (only required to start once). Follow these steps:
+1. Start the SDK from an app (only required once). Follow these steps:
 	* Insert the following lines to start the SDK in your app's `AppDelegate.m` class in the `didFinishLaunchingWithOptions:` method.
 		```objc
 		[MSAppCenter start:@"target={Your Ingestion Key}" withServices:@[[MSAnalytics class]]];
