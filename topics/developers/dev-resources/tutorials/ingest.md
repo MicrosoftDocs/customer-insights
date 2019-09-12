@@ -20,26 +20,28 @@ Depending on your Operating System, you should download one of the following com
 * [macOS](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/macOS/pi)
 
 
-## Get your API token/ ingestion key
-You can find the API token/ ingestion key for your Product Insights tenant on its settings page. [Here is how to find and copy your key.](topics/developers/dev-resources/tutorials/api-token.md)
+## Get your API token/ingestion key
+You can find the API token/ingestion key for your Product Insights tenant on its settings page. To learn how to find and copy your key, see [Get an API token from the Product Insights portal](topics/developers/dev-resources/tutorials/api-token.md)
 
 
 ## Log an event
+The following sections will show you how to log CSV files and key/value pairs. 
 
 ### Log a CSV file
-With an open terminal in the same directory as the downloaded logger, run the following command to upload a CSV file.
+With an open terminal in the same directory as the downloaded logger, run the following command to upload a CSV file:
 
 ```bash
 pi -t <ingestion_key> -s <signal_name> -f csv - 1st_file.csv 2nd_file.csv ... nth_file.csv
 ```
 
-When uploading CSVs, the only required arguments are `-t` and the `- filenames...` options. If a signal name is provided, then all events get uploaded with the same signal name. If no signal name is provided, then a unique name will be generated for each detected signal following the pattern `signal_<hash>` (e.g. `signal_a4640af933fa4342`).
+When uploading CSVs, the only required arguments are `-t` and the `- filenames...` options. If a signal name is provided, then all events get uploaded with the same signal name. If no signal name is provided, then a unique name will be generated for each detected signal following the pattern `signal_<hash>` (e.g., `signal_a4640af933fa4342`).
 
-Be sure to replace `<ingestion_key>` with your actual Product Insights ingestion key and `your_nth_file.csv` with the filename of your CSV file.
+> ![NOTE]
+> Be sure to replace `<ingestion_key>` with your actual Product Insights ingestion key and `your_nth_file.csv` with the filename of your CSV file.
 
 
 ### Log key/value pairs
-When logging key/value pairs, a signal name must be provided and there must be as many keys as values provided. To log an event with a terminal open, run the following command:
+When logging key/value pairs, a signal name must be provided, and there must be as many keys as values provided. To log an event with a terminal open, run the following command:
 ```bash
 pi -t <ingestion_key> -s <signal_name> some_key "some value" my_int 42 some_cool_value false
 ``` 
@@ -49,7 +51,7 @@ In addition to generating an event from program arguments, it can also use stdin
 echo 'some_key "some value" my_int 42 some_cool_value false' | pt -t <ingestion_key> -s <signal_name> -
 ```
 
-While not needed, as it's the default option, the format can be explicitly declared by passing `-f kvp` as an argument. In this case, the event being logged is equivalent to the following JSON object:
+While not needed since it's the default option, the format can be explicitly declared by passing `-f kvp` as an argument. In this case, the event being logged is equivalent to the following JSON object:
 ```json
 {
     "some_key": "some value",
@@ -60,7 +62,7 @@ While not needed, as it's the default option, the format can be explicitly decla
 
 
 ## Optional arguments
-While a full listing of arguments can be read by running `pi -h` (or `pi --help`), and more arguments exist, the following covers some useful or important options.
+While a full listing of arguments can be read by running `pi -h` (or `pi --help`), the following covers some useful or important options:
 
 * `-t <tenant>` or `--tenant <tenant>`: (Required) Sets the Product Insights ingestion key to log events to.
 
