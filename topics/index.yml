@@ -62,4 +62,4 @@ landingContent:
       - linkListType: download
         links:
           - text: Download the SDKs
-            url: developers/dev-resources.md
+            url: developers/dev-resources/index.md
