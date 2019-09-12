@@ -30,7 +30,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**. 
 
 > [!NOTE]
-> Leave this tab open in your web browser or copy the key to a clipboard because you will need to use it later.
+> Leave this tab open in your web browser, or copy the key to a clipboard because you will need to use it later.
 		
 ## Integrate the Product Insights SDK into your .NET Core Server project
 1. The 1DS SDK is available as a NuGet package. In your project's **NuGet Feed Sources**, add **OneSDK** as a source with the feed URL: https://msasg.pkgs.visualstudio.com/_packaging/OneSDK/nuget/v3/index.json
