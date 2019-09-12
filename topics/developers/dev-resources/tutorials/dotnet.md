@@ -29,7 +29,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 4. Once your project is created, select the project.
 5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**. 
 
-> ![NOTE]
+> [!NOTE]
 > Leave this tab open in your web browser or copy the key to a clipboard because you will need to use it later.
 		
 ## Integrate the Product Insights SDK into your .NET Core Server project
