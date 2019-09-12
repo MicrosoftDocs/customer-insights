@@ -36,7 +36,7 @@ pi -t <ingestion_key> -s <signal_name> -f csv - 1st_file.csv 2nd_file.csv ... nt
 
 When uploading CSVs, the only required arguments are `-t` and the `- filenames...` options. If a signal name is provided, then all events get uploaded with the same signal name. If no signal name is provided, then a unique name will be generated for each detected signal following the pattern `signal_<hash>` (e.g., `signal_a4640af933fa4342`).
 
-> ![NOTE]
+> [!NOTE]
 > Be sure to replace `<ingestion_key>` with your actual Product Insights ingestion key and `your_nth_file.csv` with the filename of your CSV file.
 
 
