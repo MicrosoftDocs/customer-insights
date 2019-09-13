@@ -17,7 +17,7 @@ Dynamics 365 **Product Insights** enables business users collect signals from th
 
 **Product Insights** integrates seamlessly with Dynamics 365 **Customer Insights** as well as the rest of the Dynamics 365 suite so that customers can gain holistic and actionable insights into their customers, products, customer service, sales, and marketing.<br>
 
-## Key features and capabilities of Product Insights include:
+### Key features and capabilities of Product Insights include:
 * 360-degree signals
 * Out-of-the-box insights
 * Deep integration
