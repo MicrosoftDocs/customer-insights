@@ -26,7 +26,7 @@ ms.topic: conceptual
 					<ul id="users-section" class="cardsC">
 						<li>
 							<div class="container intro">
-								Welcome to Product Insights! Get your products connected and talking. Extract insight from the constant flow of signals sent by your products.
+								Welcome to Product Insights! Get enabled to collect signals from your products and services, and gain actionable insights into your customers' usage and experiences.
 								<br />
 							</div>
 						</li>
