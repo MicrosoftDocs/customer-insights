@@ -1,4 +1,4 @@
-# [About Products Insights](xref:developers/quick-starts/about)
+## [About Products Insights](xref:developers/quick-starts/about)
 # Overview 
 ## [What is Product Insights?](xref:developers/quick-starts/what-is) 
 ## [Who is using Product Insights?](xref:developers/quick-starts/who-uses) 
