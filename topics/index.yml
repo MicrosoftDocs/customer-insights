@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Product Insights Documentation
-summary: Welcome to Product Insights! Get your products connected and talking. Extract insight from the constant flow of signals sent by your products.
+summary: Welcome to Product Insights! Get enabled to collect signals from your products and services, and gain actionable insights into your customers' usage and experiences.
 
 metadata:
   title: Product Insights Documentation
@@ -23,6 +23,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: About Product Insights
+            url: developers/quick-starts/about.md
           - text: What is Product Insights?
             url: developers/quick-starts/what-is.md
           - text: Who uses us?
