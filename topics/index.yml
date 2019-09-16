@@ -46,6 +46,7 @@ landingContent:
           - text: Get insights
             url: developers/quick-starts/3_get-insights.md
       - linkListType: video
+        links:
           - text: Link 1
             url: http://www.microsoft.com
 
