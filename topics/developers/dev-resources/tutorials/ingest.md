@@ -21,7 +21,7 @@ Depending on your Operating System, you should download one of the following com
 
 
 ## Get your API token/ingestion key
-You can find the API token/ingestion key for your Product Insights tenant on its settings page. To learn how to find and copy your key, see [Get an API token from the Product Insights portal](topics/developers/dev-resources/tutorials/api-token.md)
+You can find the API token/ingestion key for your Product Insights tenant on its settings page. To learn how to find and copy your key, see [Get an API token from the Product Insights portal](/topics/developers/dev-resources/tutorials/api-token.md)
 
 
 ## Log an event
