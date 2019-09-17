@@ -45,9 +45,13 @@ landingContent:
             url: developers/quick-starts/2_create-dashboard.md
           - text: Get insights
             url: developers/quick-starts/3_get-insights.md
+      - linkListType: how-to-guide
+        links:
+          - text: Do more
+            url: http://www.microsoft.com
       - linkListType: video
         links:
-          - text: Link 1
+          - text: Video curriculum 
             url: http://www.microsoft.com
 
   # Card
@@ -67,7 +71,7 @@ landingContent:
             url: developers/dev-resources/tutorials/js.md
       - linkListType: download
         links:
-          - text: Download the SDKs
+          - text: Download Product Insights SDKs
             url: developers/dev-resources/index.md
 
   # Card
