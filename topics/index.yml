@@ -33,7 +33,7 @@ landingContent:
             url: developers/quick-starts/how-to-get-started.md
 
   # Card (optional)
-  - title: Get started fast
+  - title: Get started
     linkLists:
       - linkListType: quickstart
         links:
