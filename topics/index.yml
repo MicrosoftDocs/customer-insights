@@ -1,0 +1,95 @@
+### YamlMime:Landing
+
+title: Product Insights Documentation
+summary: Welcome to Product Insights! Get enabled to collect signals from your products and services, and gain actionable insights into your customers' usage and experiences.
+
+metadata:
+  title: Product Insights Documentation
+  description: Product Insights Documentation
+  ms.service: product-insights
+  ms.topic: landing-page 
+  ms.collection: collection
+  author: buck1ey
+  ms.author: buckg
+  ms.date: 10/01/2019
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Meet Product Insights
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About Product Insights
+            url: developers/quick-starts/about.md
+          - text: What is Product Insights?
+            url: developers/quick-starts/what-is.md
+          - text: Who uses Product Insights?
+            url: developers/quick-starts/who-uses.md
+          - text: How do I start?
+            url: developers/quick-starts/how-to-get-started.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Create a team
+            url: developers/quick-starts/create-a-team.md
+          - text: Send signals
+            url: developers/quick-starts/1_view-signals.md
+          - text: Create a dashboard
+            url: developers/quick-starts/2_create-dashboard.md
+          - text: Get insights
+            url: developers/quick-starts/3_get-insights.md
+      
+  # Card
+  - title: User guides
+    linkLists:  
+      - linkListType: how-to-guide
+        links:
+          - text: Discover key features
+            url: http://www.microsoft.com
+          - text: Deleting and exporting signal data containing personal identifiable information (PII)
+            url: http://www.microsoft.com
+      - linkListType: video
+        links:
+          - text: Video curriculum 
+            url: http://www.microsoft.com
+
+  # Card
+  - title: Developer resources
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Android (Java) SDK
+            url: developers/dev-resources/tutorials/android-java.md
+          - text: Objective-C SDK
+            url: developers/dev-resources/tutorials/ios-objc.md
+          - text: .NET Core SDK
+            url: developers/dev-resources/tutorials/dotnet.md
+          - text: Python SDK
+            url: developers/dev-resources/tutorials/python.md
+          - text: Web/React (JavaScript) SDK
+            url: developers/dev-resources/tutorials/js.md
+      - linkListType: download
+        links:
+          - text: Download Product Insights SDKs
+            url: developers/dev-resources/index.md
+
+  # Card
+  - title: Community
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Community
+            url: https://community.dynamics.com/365/product-insights/
+          - text: Blog
+            url: https://community.dynamics.com/365/product-insights/b/product-insights-team-blog
+          - text: Forum
+            url: https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum
+          - text: Support
+            url: https://dynamics.microsoft.com/en-us/support/
