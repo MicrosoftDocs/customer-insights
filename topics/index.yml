@@ -27,7 +27,7 @@ landingContent:
             url: developers/quick-starts/about.md
           - text: What is Product Insights?
             url: developers/quick-starts/what-is.md
-          - text: Who uses us?
+          - text: Who uses Product Insights?
             url: developers/quick-starts/who-uses.md
           - text: How do I start?
             url: developers/quick-starts/how-to-get-started.md
@@ -45,9 +45,15 @@ landingContent:
             url: developers/quick-starts/2_create-dashboard.md
           - text: Get insights
             url: developers/quick-starts/3_get-insights.md
+      
+  # Card
+  - title: User guides
+    linkLists:  
       - linkListType: how-to-guide
         links:
-          - text: Do more
+          - text: Discover key features
+            url: http://www.microsoft.com
+          - text: Deleting and exporting signal data containing personal identifiable information (PII)
             url: http://www.microsoft.com
       - linkListType: video
         links:
