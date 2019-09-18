@@ -17,6 +17,7 @@
 ### [Import signals](xref:developers/tutorials/import-signals)
 ### [Send additional signals](xref:developers/tutorials/send-additional-signals)
 ### [Export signals](xref:developers/tutorials/ADLS-Export)
+### [Enrich your data with CDS](xref:developers/tutorials/enrichment)
 
 ## Create dashboards
 ### [Create a dashboard](xref:developers/tutorials/create-dashboard)
