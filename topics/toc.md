@@ -46,7 +46,8 @@
 # [User permissions](xref:developers/articles/user-permissions) 
 # Manage system 
 ## [Administration](xref:developers/dev-resources/manage-teams)
-## [Get API token/ ingestion key](xref:developers/downloads/api-token) 
+## [Get API token/ ingestion key](xref:developers/downloads/api-token)
+## [Product limitations for public preview](xref:developers/tutorials/product-preview-limitations)
 
 # Customer care 
 ## [FAQ](xref:developers/customer-care/faq)  
