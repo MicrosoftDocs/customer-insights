@@ -4,7 +4,7 @@ title: Compliance
 author: ruthaisabokhae
 description: Compliance
 ms.author: ruthai
-ms.date: 05/23/2019
+ms.date: 09/23/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -28,7 +28,7 @@ PII data is tagged on a **Signal property** level; therefore, it is necessary to
 To tag a signal property as containing PII, follow these steps.
 1.	Navigate to the project that the signal belongs to.
 
-![Project overview screenshot](ProjectOverview.png "Project overview")
+![Project overview screenshot](ProjectOverview.png)
   
 2.	Click on the signal you want to tag to get to the signal overview page.
 
