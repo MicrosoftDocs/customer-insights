@@ -40,7 +40,7 @@
 ## [IoT/ Event Hubs](xref:developers/downloads/event-iot-hub)
 
 
-# [Security](xref:developers/articles/security)
+# [Privacy statement](xref:developers/articles/privacy-statement)
 # [Terms of Service](xref:developers/articles/terms-of-service)
 # [GDPR/ Compliance](xref:developers/articles/compliance)
 # [User permissions](xref:developers/articles/user-permissions) 
