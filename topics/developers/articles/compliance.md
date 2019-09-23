@@ -28,7 +28,7 @@ PII data is tagged on a **Signal property** level; therefore, it is necessary to
 To tag a signal property as containing PII, follow these steps.
 1.	Navigate to the project that the signal belongs to.
 
-![Project overview screenshot](ProjectOverview.png)
+![Project overview screenshot](ProjectOverview.PNG)
   
 2.	Click on the signal you want to tag to get to the signal overview page.
 
