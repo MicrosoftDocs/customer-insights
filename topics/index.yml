@@ -19,12 +19,10 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Meet Product Insights
+  - title: Take a tour 
     linkLists:
       - linkListType: overview
         links:
-          - text: About Product Insights
-            url: developers/quick-starts/about.md
           - text: What is Product Insights?
             url: developers/quick-starts/what-is.md
           - text: Who uses Product Insights?
@@ -47,13 +45,13 @@ landingContent:
             url: developers/quick-starts/3_get-insights.md
       
   # Card
-  - title: User guides
+  - title: Do more
     linkLists:  
       - linkListType: how-to-guide
         links:
           - text: Discover key features
             url: http://www.microsoft.com
-          - text: Deleting and exporting signal data containing personal identifiable information (PII)
+          - text: GDPR: Deleting and exporting signal data
             url: http://www.microsoft.com
       - linkListType: video
         links:
