@@ -51,7 +51,7 @@ landingContent:
         links:
           - text: Discover key features
             url: http://www.microsoft.com
-          - text: GDPR: Deleting and exporting signal data
+          - text: "GDPR: Deleting and exporting signal data"
             url: http://www.microsoft.com
       - linkListType: video
         links:
