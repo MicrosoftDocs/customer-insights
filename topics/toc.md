@@ -22,7 +22,7 @@
 ### [Create and edit a chart](xref:developers/tutorials/examine-signals-metadata)
 
 
-## Get insights
+## Gain insights
 ### [Discover insights](xref:developers/tutorials/insights-discover)
 ### [Fix data gaps](xref:developers/tutorials/insights-fix-data-gaps)
 ### [Smooth data](xref:developers/tutorials/insights-smooth-data)
