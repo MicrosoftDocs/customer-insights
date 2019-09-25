@@ -6,8 +6,8 @@
 # Get started
 ## [Create your team](xref:developers/quick-starts/create-a-team)
 ## [Send your signal](xref:developers/quick-starts/1_view-signals)
-## [Create your dashboard](xref:developers/tutorials/create-dashboard)
-## [Get your insights](xref:developers/quick-starts/3_get-insights)
+## [Analyze your data](xref:developers/tutorials/create-dashboard)
+## [Gain insights](xref:developers/quick-starts/3_get-insights)
 
 # Do more
 ## Send signals 
@@ -16,9 +16,11 @@
 ### [Send signals using SDKs](xref:developers/tutorials/send-additional-signals)
 ### [Enrich your data with CDS](xref:developers/tutorials/enrichment)
 
-## Create dashboards
-### [Explore signals](xref:developers/tutorials/examine-signals-metadata)
+## Analyze data
 ### [Create a dashboard](xref:developers/tutorials/create-dashboard)
+### [Explore data with a draft](xref:developers/tutorials/examine-signals-metadata)
+### [Create and edit a chart](xref:developers/tutorials/examine-signals-metadata)
+
 
 ## Get insights
 ### [Discover insights](xref:developers/tutorials/insights-discover)
@@ -28,7 +30,8 @@
 ### [Analyze data using expressions](xref:developers/tutorials/insights-run-comparisons)
 
 ## Export signals and insights
-### [Export signals](xref:developers/tutorials/ADLS-Export)
+### [Export to Azure Data Lake Storage (ADLS)](xref:developers/tutorials/ADLS-Export)
+### [Export to Power BI](xref:developers/tutorials/ADLS-Export)
 
 # Manage your system 
 ## [Administration](xref:developers/dev-resources/manage-teams)
