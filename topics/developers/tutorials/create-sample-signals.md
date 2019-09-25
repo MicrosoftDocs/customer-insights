@@ -1,6 +1,6 @@
 ---
 uid: developers/tutorials/create-sample-signals
-title: Create sample signals
+title: Simulate sample signals
 author: ruthaisabokhae
 description: Create sample signals
 ms.author: ruthai
@@ -9,10 +9,11 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Create sample signals
+# Send signals
 
-Signals are data sent to Project Insights from remote applications.
-Generate sample signals for test purposes.
+## Simulate sample signals
+
+Signals are data sent to Project Insights from remote applications.You can send sample signals for test purposes.
 
 > [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/CreateSampleSignals.mp4]
 
