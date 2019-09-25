@@ -8,7 +8,7 @@ ms.date: 05/14/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
-# Get insights
+# Gain insights
 
 Product Insights helps you discover insights in data with which you may not be familiar. There are two main ways Product Insights provides additional insight. One is on your home page when you log in. Our AI-powered engine picks up any interesting patterns or anomalies in your data, and displays on your home screen. When you are exploring data, you will see suggested splits and transforms you can perform on your data for insights. 
 
