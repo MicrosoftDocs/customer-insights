@@ -61,7 +61,7 @@ If a property value matches one of the provided values, then the associated sign
 [Insert screenshot: ConfirmDeletion.png]
  
 #### Export
-The export process is identical to the deletion process when it comes to defining the signal property values in the **Export all PII contained in this team for user IDs specified** box. Additionally, it is necessary to provide an Azure Blob URL to specify the export destination. The Azure Blob URL also has to include a [Shared Access Signature (SAS)](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) as part of the URL.
+The export process is identical to the deletion process when it comes to defining the signal property values in the **Export all PII contained in this team for user IDs specified** box. Additionally, it is necessary to provide an Azure Blob URL to specify the export destination. The Azure Blob URL also has to include a [Shared Access Signature (SAS)](https://docs.microsoft.com/azure/storage/common/storage-sas-overview) as part of the URL.
 
 [Insert screenshot: Export.png]
  

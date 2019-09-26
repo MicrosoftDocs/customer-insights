@@ -16,11 +16,11 @@ Product Insights signals export feature allows you to send the data that is gene
 
 Your signals will be available to you in format that is easy to consume, allowing you to perform advanced data analysis and other processing on raw data that was sent to Product Insights.
 
-Azure Data Lake Storage offers a wide variety of available integrations. You can learn more about ADLS Gen2 [here](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction).
+Azure Data Lake Storage offers a wide variety of available integrations. You can learn more about ADLS Gen2 [here](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
 
 ## How to set up the signals export  
 
-1. Create an ADLS Gen2 storage account. You can skip this step if you already own an account. [Here](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account) is a guide describing how to create an account.
+1. Create an ADLS Gen2 storage account. You can skip this step if you already own an account. [Here](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account) is a guide describing how to create an account.
 
 2. Copy the **Azure Data Lake Storage URI** and **shared key** from the Azure Portal, as these will be needed in the next step.
     * Storage URI can be obtained after visiting the **Properties** pane of the storage account under the **Data Lake Storage** section.  

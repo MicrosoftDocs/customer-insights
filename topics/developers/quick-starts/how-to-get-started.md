@@ -13,7 +13,7 @@ A one-minute overview on getting started with Product Insights.
 
 <br/>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RWMF]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2RWMF]
 
 <br/>
 
