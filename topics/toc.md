@@ -10,6 +10,9 @@
 ## [Gain insights](xref:developers/quick-starts/3_get-insights)
 
 # Do more
+
+## Explore samples
+
 ## Send signals 
 ### [Simulate signals](xref:developers/tutorials/create-sample-signals)
 ### [Import signals from other fabrics](xref:developers/tutorials/import-signals)
@@ -30,7 +33,7 @@
 ### [Analyze data using expressions](xref:developers/tutorials/insights-run-comparisons)
 
 ## Export signals and insights
-### [Export to Azure Data Lake Storage (ADLS)](xref:developers/tutorials/ADLS-Export)
+### [Export to Azure Data Lake Storage](xref:developers/tutorials/ADLS-Export)
 ### [Export to Power BI](xref:developers/tutorials/ADLS-Export)
 
 # Manage your system 
@@ -46,11 +49,11 @@
 ### [iOS (mobile, Objective-C)](xref:developers/downloads/ios-objc)
 ### [Services (C#/.NET)](xref:developers/downloads/dotnet)
 ### [Python](xref:developers/downloads/python)
-### [Web/React (Javascript)](xref:developers/downloads/js)
+### [Web/React (JavaScript)](xref:developers/downloads/js)
 ## [Event Sender](xref:developers/downloads/ingest)
 ## [IoT/ Event Hubs](xref:developers/downloads/event-iot-hub)
 
-# Terms and Compliance 
+# Terms and compliance 
 ## [Privacy statement](xref:developers/articles/privacy-statement)
 ## [Terms of Service](xref:developers/articles/terms-of-service)
 ## [GDPR/ Compliance](xref:developers/articles/compliance)
@@ -61,3 +64,4 @@
 ## [Glossary](xref:developers/articles/glossary) 
 ## [Get support](xref:developers/customer-care/support)
 ## [Community](https://community.dynamics.com/365/product-insights/)
+## [Ask a question](https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum)
