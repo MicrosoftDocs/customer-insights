@@ -15,7 +15,7 @@ ms.topic: conceptual
 
 Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com). You may need to use an incognito window (Ctrl+Shift+N).
 > [!NOTE]
-> - An Azure Active Directory (AAD) or Microsoft account is required for signing up for the Product Insights preview.   
+> - An Azure Active Directory (AAD) or Microsoft account (example: sample@outlook.com) is required for signing up for the Product Insights preview.   
 
 ## Create a team
 1. If you are not already part of a team, select **+New team** in the bottom left corner of the portal.
