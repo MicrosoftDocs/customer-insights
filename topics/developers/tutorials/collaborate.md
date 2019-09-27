@@ -1,5 +1,5 @@
 ---
-uid: developers/tutorials/embed
+uid: developers/tutorials/collaborate
 title: Collaborate with others
 author: ruthaisabokhae
 description: Collaborate on a chart or dashboard
