@@ -16,6 +16,9 @@ This tutorial will guide you through the process of using a Product Insights Com
 
 The data ingested is limited to just two fields from CDS: `ProductId` from product entity and `AssetId` from asset entity.
 
+> [!NOTE]
+> Enrichment is limited to 1 per project and this feature is not available for MSA users.
+
 ## Prerequisites
 * Dynamics Field service subscription
   * To obtain free trial subscription:
@@ -50,6 +53,6 @@ The data ingested is limited to just two fields from CDS: `ProductId` from produ
             1. Log onto Field Service (`https://<tenant_name>.crm.dynamis.com`)
             2. Open new tab and launch `https://<tenant_name>.crm.dynamics.com/api/data/v9.0/msdyn_customerassets`
 
-10. Select **Create**. 
+10. Select **Create**.
 
 Based on the user token, the CDS enrichment will be scheduled.

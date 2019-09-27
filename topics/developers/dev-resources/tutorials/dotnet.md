@@ -16,12 +16,13 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 
 ## Prerequisites
-* .NET
+* .NET Core 1.0 and above
+	* *Or* .NET Framework 4.6 and above
 * Visual Studio 2017
 * Ingestion key (see below for instructions to obtain)
 
 ## Get an ingestion key from Product Insights portal
-1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [Create a team](/topics/developers/quick-starts/create-a-team.md).
+1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [Create a team](xref:developers/quick-starts/create-a-team).
 2. Add a new project to your team by selecting the **+ New Project** button from the top right corner.
 3. Type in a project name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
 4. Once your project is created, select the project.
@@ -38,9 +39,14 @@ The following scenario will be used to construct the Product Insights SDK exampl
     1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_csharp_sdk.zip) the **Product Insights .NET SDK**
 	2. Unzip the compressed file **pi_csharp_sdk.zip** to a local folder.
 	3. Go to your project in Visual Studio, and add a new **Nuget Package Source** to the local folder where you put the SDK.
-	4. Right click on **References**, and select **Manage Nuget Package...**.
-	5. Install the **ProductInsightsAnalytics** package.
+		1. On the **Tools** menu, select **Options**
+		2. Expand **NuGet Package Manager** and select **Package Sources**
+		3. Select the green plus in the upper right corner
+		4. At the bottom of the dialog box, enter the feed's name and the local folder path where you put the .NET SDK package
+		5. Select **Update**
+		6. Select **OK**
 
+		![Add Local NuGet Feed](add_local_nuget_feed.png "Add Local NuGet Feed")
 2. Import the Product Insights SDK by adding the following statement of your app's implementation file:
 	```csharp
 	using Microsoft.Dynamics.ProductInsights;
