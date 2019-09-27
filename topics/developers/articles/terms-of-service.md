@@ -15,7 +15,7 @@ ms.topic: conceptual
 ## PREVIEW TERMS OF SERVICE
 
 
-LAST UPDATED OCTOBER 2019 
+LAST UPDATED OCTOBER 2019<br> 
 By accessing or using the Services, you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.  If you are a subscriber of Dynamics 365 or other Microsoft services, your Dynamics 365 customer agreement or other Microsoft service agreement applies to your use of Dynamics 365 or other Microsoft services generally. This Agreement applies to your use of the Services specifically. 
 
 **1. WHAT THE AGREEMENT COVERS**
