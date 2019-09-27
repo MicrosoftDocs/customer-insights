@@ -23,6 +23,7 @@
 ### [Create a dashboard](xref:developers/tutorials/create-dashboard)
 ### [Explore data with a draft](xref:developers/tutorials/examine-signals-metadata)
 ### [Create and edit a chart](xref:developers/tutorials/examine-signals-metadata)
+### [Collaborate on a dashboard](xref:developers/tutorials/examine-signals-metadata)
 
 
 ## Gain insights
@@ -34,7 +35,9 @@
 
 ## Export signals and insights
 ### [Export to Azure Data Lake Storage](xref:developers/tutorials/ADLS-Export)
-### [Export to Power BI](xref:developers/tutorials/ADLS-Export)
+### [Export to Power BI](xref:developers/tutorials/exportpowerbi)
+### [Embed in Dynamics 365](xref:developers/tutorials/embed)
+
 
 # Manage your system 
 ## [Administration](xref:developers/dev-resources/manage-teams)
@@ -56,10 +59,8 @@
 ## [Privacy statement](xref:developers/articles/privacy-statement)
 ## [Terms of Service](xref:developers/articles/terms-of-service)
 ## [GDPR/ Compliance](xref:developers/articles/compliance)
-## [User permissions](xref:developers/articles/user-permissions) 
 
 
 # Customer care 
-## [Glossary](xref:developers/articles/glossary) 
 ## [Community](https://community.dynamics.com/365/product-insights/)
 ## [Ask a question](https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum)
