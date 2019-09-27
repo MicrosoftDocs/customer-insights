@@ -15,7 +15,7 @@ Product Insights processes telemetry data and provides insights for Windows, Off
 
 <br/>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2RWMK]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2RWMK]
 
 > [!div class="nextstepaction"]
 > [Next >>](how-to-get-started.md)
