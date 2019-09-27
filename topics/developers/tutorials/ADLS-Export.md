@@ -27,7 +27,8 @@ Azure Data Lake Storage offers a wide variety of available integrations. You can
     * Storage account shared key can be obtained after checking the **Access keys** pane of the storage account.
 
 3. Visit the management pane of your Product Insights project and create a new export.
-(Insert screenshot showing where the export can be created)
+
+![Export creation](export_creation.png "Export creation")
 
 
 
@@ -36,7 +37,6 @@ This section contains a brief description of all available configuration options
 
 ![Export settings](export_settings.png "Export settings")
 
-![Export creation](export_creation.png "Export creation")
 
 
 
