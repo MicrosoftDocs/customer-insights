@@ -33,7 +33,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 1. Open your Android Studio project. If you don't have one, create a new project with **Empty Activity** in Android Studio.
 
 2. Import the Product Insights Android SDK:
-    * [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_android_sdk.zip) the **Product Insights Android Java SDK**
+    * [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_android_sdk.zip) the **Product Insights Android Java SDK**.
     * Unzip the compressed file `pi_android_sdk.zip`
     * Copy the Android archive file (extension: `.aar`) into your project's `app/libs` folder.
 
