@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Embedding
+# Embed in secure applications
 Product Insights visuals from dashboards can be embedded into your business applications that are secure such as Dynamics 365, Teams, SharePoint, and more using iframes. Product insights will load the embedded visuals seamlessly using the current logged in user's permissions and scopes. Anonymous sharing of product insights visuals is not yet available.
 
 Below are the two ways visuals are embedded using Product insights.
