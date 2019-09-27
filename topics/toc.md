@@ -21,9 +21,9 @@
 
 ## Analyze data
 ### [Create a dashboard](xref:developers/tutorials/create-dashboard)
-### [Explore data with a draft](xref:developers/tutorials/examine-signals-metadata)
-### [Create and edit a chart](xref:developers/tutorials/examine-signals-metadata)
-### [Collaborate on a dashboard](xref:developers/tutorials/examine-signals-metadata)
+### [Explore data with a draft](xref:developers/tutorials/exploredraft)
+### [Create and edit a chart](xref:developers/tutorials/editchart)
+### [Collaborate on a dashboard](xref:developers/tutorials/collaborate)
 
 
 ## Gain insights
@@ -31,7 +31,7 @@
 ### [Fix data gaps](xref:developers/tutorials/insights-fix-data-gaps)
 ### [Smooth data](xref:developers/tutorials/insights-smooth-data)
 ### [Run comparisons](xref:developers/tutorials/insights-run-comparisons)
-### [Analyze data using expressions](xref:developers/tutorials/insights-run-comparisons)
+### [Analyze data using expressions](xref:developers/tutorials/expressions)
 
 ## Export signals and insights
 ### [Export to Azure Data Lake Storage](xref:developers/tutorials/ADLS-Export)
