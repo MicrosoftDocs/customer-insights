@@ -34,7 +34,7 @@ Azure Data Lake Storage offers a wide variety of available integrations. You can
 ## Export configuration  
 This section contains a brief description of all available configuration options that are needed to configure this feature.
 
-![Export settings](export_settings.png "Export settings)
+![Export settings](export_settings.png "Export settings")
 
 ![Export creation](export_creation.png "Export creation")
 
@@ -50,6 +50,7 @@ This section allows you to specify the authentication and export destination set
 
 * File system and path. It describes where the export files should be stored inside the file system and directory structure of the storage account. Each ADLS Gen 2 account may contain multiple file systems. Each file system has its own directory structure. If specified file system and/or directories do not exist, they will be created. Below is a sample value for this field:  
 *myfilesystem/directory1/directory2/*  
+
 You need to specify at least the name of the file system.
 
 ### Options  
@@ -63,5 +64,4 @@ This option allows you to choose which signals should be exported. You can eithe
 
 
 ## Data format of exported signals
-Signals will be exported using line delimited JSON format. Find out more about it [here](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON).  
-This means that every line in the output file will contain a JSON object with all the properties that were sent in a single signal. Directory structure and file names will be created using current UTC time of servers exporting the data.
+Signals will be exported using line delimited JSON format. Find out more about it [here](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON). This means that every line in the output file will contain a JSON object with all the properties that were sent in a single signal. Directory structure and file names will be created using current UTC time of servers exporting the data.
