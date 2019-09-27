@@ -19,7 +19,7 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com)
 
 ## Create a team
 1. If you are not already part of a team, select **+New team** in the bottom left corner of the portal.
-1. Type a team name of choice such as **insert team name** in the **Name** field and any text for **Description**. 
+1. Type a team name of choice in the **Name** field and any text for **Description**. 
 1. Select **Create** to save the update.
 
 	![Create a new team](INSERT IMAGE "Create a new team")
@@ -34,7 +34,7 @@ Sign into Product Insights at [https://pi.dynamics.com](https://pi.dynamics.com)
 
 ## Create a project 
 1. Select **Projects** and then **+New project** to the right of the portal. 
-1. Type a sample project name of choice such as **insert project name** in the **Name** field and any text for **Description**.  
+1. Type a project name of choice in the **Name** field and any text for **Description**.  
 1. Select **Create** to save the update.
 
 	![Add new project](INSERT IMAGE "Add project")
