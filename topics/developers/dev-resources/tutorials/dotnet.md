@@ -22,7 +22,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 * Ingestion key (see below for instructions to obtain)
 
 ## Get an ingestion key from Product Insights portal
-1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [Create a team](/topics/developers/quick-starts/create-a-team.md).
+1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [Create a team](xref:developers/quick-starts/create-a-team).
 2. Add a new project to your team by selecting the **+ New Project** button from the top right corner.
 3. Type in a project name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
 4. Once your project is created, select the project.
@@ -45,7 +45,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 		4. At the bottom of the dialog box, enter the feed's name and the local folder path where you put the .NET SDK package
 		5. Select **Update**
 		6. Select **OK**
-		
+
 		![Add Local NuGet Feed](add_local_nuget_feed.png "Add Local NuGet Feed")
 2. Import the Product Insights SDK by adding the following statement of your app's implementation file:
 	```csharp
