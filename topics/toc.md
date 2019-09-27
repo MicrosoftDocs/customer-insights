@@ -40,7 +40,6 @@
 ## [Administration](xref:developers/dev-resources/manage-teams)
 ## [Get API token/ ingestion key](xref:developers/downloads/api-token)
 ## [Product limitations for public preview](xref:developers/tutorials/product-preview-limitations)
-## [Throttling policy](xref:developers/tutorials/product-preview-limitations)
 
 # Developer resources 
 ## [Download SDKs to send signals](xref:developers/dev-resources/index)
@@ -62,6 +61,5 @@
 
 # Customer care 
 ## [Glossary](xref:developers/articles/glossary) 
-## [Get support](xref:developers/customer-care/support)
 ## [Community](https://community.dynamics.com/365/product-insights/)
 ## [Ask a question](https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum)
