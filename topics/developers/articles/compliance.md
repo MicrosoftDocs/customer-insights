@@ -32,16 +32,16 @@ To tag a signal property as containing PII, follow these steps.
   
 2.	Click on the signal you want to tag to get to the signal overview page.
 
-[See signal overview](SignalOverview.png)
+![See signal overview](SignalOverview.png)
   
 
 3.	Click on [...] and then edit to get to the **Update Property** window.
 
-[Update property](SignalSettings.png)
+![Update property](SignalSettings.png)
  
 4.	Inside the **Update Property** window, click on [...] in the upper right corner, and select the box “Contains PII." Click **Update** to save your changes.
 
-[Save your changes](SignalTagging.png)
+![Save your changes](SignalTagging.png)
 
  > [!NOTE]
  > Every time the signal schema changes or a new signal is being created, it is recommended to evaluate the associated signal properties and tag/untag them as containing PII data, if necessary.
@@ -49,12 +49,12 @@ To tag a signal property as containing PII, follow these steps.
 ### Delete/Export tagged signal data
 If all signal properties have been tagged appropriately as described in the previous step, a team administrator is then able to issue deletion requests against the tagged signal data from the **Team settings** page.
 
-[Team overview](TeamOverview.png)
+![Team overview](TeamOverview.png)
  
 #### Deletion
 For deletion, you can enter a list of comma-separated values in the **Delete PII for the user IDs specified** box. These properties will then be compared with all tagged signal properties of all projects underneath the current team via exact string matching. 
 
-[Delete your signal](Deletion.png)
+![Delete your signal](Deletion.png)
  
 If a property value matches one of the provided values, then the associated signal will be permanently deleted. Due to the irreversibility of this action, you must confirm the deletion after clicking the delete button.
 
@@ -62,7 +62,7 @@ If a property value matches one of the provided values, then the associated sign
 #### Export
 The export process is identical to the deletion process when it comes to defining the signal property values in the **Export all PII contained in this team for user IDs specified** box. Additionally, it is necessary to provide an Azure Blob URL to specify the export destination. The Azure Blob URL also has to include a [Shared Access Signature (SAS)](https://docs.microsoft.com/azure/storage/common/storage-sas-overview) as part of the URL.
 
-[Export your signal](Export.png)
+![Export your signal](Export.png)
  
 After clicking **Export**, all signals of the current team that contain matching tagged properties will be exported in CSV format to the destination Blob.
 
