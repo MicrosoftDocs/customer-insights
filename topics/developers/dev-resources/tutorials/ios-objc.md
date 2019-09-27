@@ -36,17 +36,17 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 ### Integrate the AppCenter SDK using CocoaPods
 1. If you haven't installed CocoaPods, run this command in the terminal to install CocoaPods and create a Podfile:
-	```
+	```bash
 	$ sudo gem install cocoapods
 	$ pod init
 	```
 2. Add the following to your Podfile:
-	```
+	```bash
 	target 'SampleApp' do
 		pod 'AppCenter/Analytics'
 	```
 3. Save the file and run this command in the terminal:
-	```
+	```bash
 	$ pod install
 	```
 
