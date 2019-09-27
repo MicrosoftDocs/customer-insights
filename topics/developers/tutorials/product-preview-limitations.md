@@ -25,6 +25,6 @@ ms.topic: conceptual
  
 6. Maximum number of dashboards in a project = 25  
 
-7. Maximum Charts in a dashboard page = 25  
+7. Maximum number of charts in a dashboard page = 25  
 
 8. Maximum file size for CSV uploads = 10 MB
