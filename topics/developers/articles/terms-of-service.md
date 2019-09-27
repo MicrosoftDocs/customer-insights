@@ -244,10 +244,15 @@ For the purposes of Article 26(2) of Directive 95/46/EC for the transfer of pers
 
 ## Clause 1: Definitions
 (a) 'personal data', 'special categories of data', 'process/processing', 'controller', 'processor', 'data subject' and 'supervisory authority' shall have the same meaning as in Directive 95/46/EC of the European Parliament and of the Council of 24 October 1995 on the protection of individuals with regard to the processing of personal data and on the free movement of such data; 
+
 (b) 'the data exporter' means the controller who transfers the personal data; 
+
 (c) 'the data importer' means the processor who agrees to receive from the data exporter personal data intended for processing on his behalf after the transfer in accordance with his instructions and the terms of the Clauses and who is not subject to a third country's system ensuring adequate protection within the meaning of Article 25(1) of Directive 95/46/EC; 
+
 (d) 'the subprocessor' means any processor engaged by the data importer or by any other subprocessor of the data importer who agrees to receive from the data importer or from any other subprocessor of the data importer personal data exclusively intended for processing activities to be carried out on behalf of the data exporter after the transfer in accordance with his instructions, the terms of the Clauses and the terms of the written subcontract; 
+
 (e) 'the applicable data protection law' means the legislation protecting the fundamental rights and freedoms of individuals and, in particular, their right to privacy with respect to the processing of personal data applicable to a data controller in the Member State in which the data exporter is established; 
+
 (f) 'technical and organisational security measures' means those measures aimed at protecting personal data against accidental or unlawful destruction or accidental loss, alteration, unauthorised disclosure or access, in particular where the processing involves the transmission of data over a network, and against all other unlawful forms of processing. 
 
 ## Clause 2: Details of the transfer
@@ -262,30 +267,48 @@ The details of the transfer and in particular the special categories of personal
 ## Clause 4: Obligations of the data exporter
 The data exporter agrees and warrants: 
 (a) that the processing, including the transfer itself, of the personal data has been and will continue to be carried out in accordance with the relevant provisions of the applicable data protection law (and, where applicable, has been notified to the relevant authorities of the Member State where the data exporter is established) and does not violate the relevant provisions of that State; 
+
 (b) that it has instructed and throughout the duration of the personal data processing services will instruct the data importer to process the personal data transferred only on the data exporter's behalf and in accordance with the applicable data protection law and the Clauses; 
+
 (c) that the data importer will provide sufficient guarantees in respect of the technical and organisational security measures specified in Appendix 2 below; 
+
 (d) that after assessment of the requirements of the applicable data protection law, the security measures are appropriate to protect personal data against accidental or unlawful destruction or accidental loss, alteration, unauthorised disclosure or access, in particular where the processing involves the transmission of data over a network, and against all other unlawful forms of processing, and that these measures ensure a level of security appropriate to the risks presented by the processing and the nature of the data to be protected having regard to the state of the art and the cost of their implementation; 
+
 (e) that it will ensure compliance with the security measures; 
+
 (f) that, if the transfer involves special categories of data, the data subject has been informed or will be informed before, or as soon as possible after, the transfer that its data could be transmitted to a third country not providing adequate protection within the meaning of Directive 95/46/EC; 
+
 (g) to forward any notification received from the data importer or any subprocessor pursuant to Clause 5(b) and Clause 8(3) to the data protection supervisory authority if the data exporter decides to continue the transfer or to lift the suspension; 
+
 (h) to make available to the data subjects upon request a copy of the Clauses, with the exception of Appendix 2, and a summary description of the security measures, as well as a copy of any contract for subprocessing services which has to be made in accordance with the Clauses, unless the Clauses or the contract contain commercial information, in which case it may remove such commercial information; 
-(i) that, in the event of subprocessing, the processing activity is carried out in accordance with Clause 11 by a subprocessor providing at least the same level of protection for the personal data and the rights of data subject as the data importer under the Clauses; and 
+
+(i) that, in the event of subprocessing, the processing activity is carried out in accordance with Clause 11 by a subprocessor providing at least the same level of protection for the personal data and the rights of data subject as the data importer under the Clauses; and
+
 (j) that it will ensure compliance with Clause 4(a) to (i).
 
 ## Clause 5: Obligations of the data importer
 The data importer agrees and warrants: 
 (a) to process the personal data only on behalf of the data exporter and in compliance with its instructions and the Clauses; if it cannot provide such compliance for whatever reasons, it agrees to inform promptly the data exporter of its inability to comply, in which case the data exporter is entitled to suspend the transfer of data and/or terminate the contract; 
+
 (b) that it has no reason to believe that the legislation applicable to it prevents it from fulfilling the instructions received from the data exporter and its obligations under the contract and that in the event of a change in this legislation which is likely to have a substantial adverse effect on the warranties and obligations provided by the Clauses, it will promptly notify the change to the data exporter as soon as it is aware, in which case the data exporter is entitled to suspend the transfer of data and/or terminate the contract; 
+
 (c) that it has implemented the technical and organisational security measures specified in Appendix 2 before processing the personal data transferred; 
-(d) that it will promptly notify the data exporter about: 
-(i) any legally binding request for disclosure of the personal data by a law enforcement authority unless otherwise prohibited, such as a prohibition under criminal law to preserve the confidentiality of a law enforcement investigation, 
-(ii) any accidental or unauthorised access, and 
-(iii) any request received directly from the data subjects without responding to that request, unless it has been otherwise authorised to do so; 
+
+(d) that it will promptly notify the data exporter about:<br><br>
+    (i) any legally binding request for disclosure of the personal data by a law enforcement authority unless otherwise prohibited, such         as a prohibition under criminal law to preserve the confidentiality of a law enforcement investigation,<br>
+    (ii) any accidental or unauthorised access, and<br> 
+    (iii) any request received directly from the data subjects without responding to that request, unless it has been otherwise                   authorised to do so;<br> 
+    
 (e) to deal promptly and properly with all inquiries from the data exporter relating to its processing of the personal data subject to the transfer and to abide by the advice of the supervisory authority with regard to the processing of the data transferred; 
+
 (f) at the request of the data exporter to submit its data processing facilities for audit of the processing activities covered by the Clauses which shall be carried out by the data exporter or an inspection body composed of independent members and in possession of the required professional qualifications bound by a duty of confidentiality, selected by the data exporter, where applicable, in agreement with the supervisory authority; 
+
 (g) to make available to the data subject upon request a copy of the Clauses, or any existing contract for subprocessing, unless the Clauses or contract contain commercial information, in which case it may remove such commercial information, with the exception of Appendix 2 which shall be replaced by a summary description of the security measures in those cases where the data subject is unable to obtain a copy from the data exporter; 
+
 (h) that, in the event of subprocessing, it has previously informed the data exporter and obtained its prior written consent; 
+
 (i) that the processing services by the subprocessor will be carried out in accordance with Clause 11; and
+
 (j) to send promptly a copy of any subprocessor agreement it concludes under the Clauses to the data exporter.
 
 ## Clause 6: Liability
@@ -296,8 +319,10 @@ The data importer may not rely on a breach by a subprocessor of its obligations 
 
 ## Clause 7: Mediation and jurisdiction
 1. The data importer agrees that if the data subject invokes against it third-party beneficiary rights and/or claims compensation for damages under the Clauses, the data importer will accept the decision of the data subject: 
+
 (a) to refer the dispute to mediation, by an independent person or, where applicable, by the supervisory authority; 
 (b) to refer the dispute to the courts in the Member State in which the data exporter is established. 
+
 2. The parties agree that the choice made by the data subject will not prejudice its substantive or procedural rights to seek remedies in accordance with other provisions of national or international law. 
 
 ## Clause 8: Cooperation with supervisory authorities
@@ -323,25 +348,38 @@ The parties undertake not to vary or modify the Clauses. This does not preclude 
 
 ## Appendix 1 to the Standard Contractual Clauses
 Data exporter: Participant is the data exporter. The data exporter is a user of the Services as defined in the Agreement.
+
 Data importer: The data importer is MICROSOFT CORPORATION, a global producer of software and services. 
+
 Data subjects: Data subjects include the data exporter’s representatives and end-users including employees, contractors, collaborators, and customers of the data exporter. Data subjects may also include individuals attempting to communicate or transfer personal information to users of the services provided by data importer. 
+
 Categories of data: The personal data transferred includes e-mail, documents and other data in an electronic form in the context of the Services. 
+
 Processing operations: The personal data transferred will be subject to the following basic processing activities: 
+
 a. Duration and Object of Data Processing. The duration of data processing shall be for the term designated in the Agreement. The objective of the data processing is the performance of Services. 
+
 b. Scope and Purpose of Data Processing. The scope and purpose of processing personal data is described in the Security Practices and Policies section of the Agreement. The data importer operates a global network of data centers and management/support facilities, and processing may take place in any jurisdiction where data importer or its sub-processors operate such facilities. 
+
 c. Customer Data Access. For the term designated under the Agreement data importer will at its election and as necessary under applicable law implementing Article 12(b) of the EU Data Protection Directive, either: (1) provide data exporter with the ability to correct, delete, or block Customer Data, or (2) make such corrections, deletions, or blockages on its behalf. 
+
 d. Data Exporter’s Instructions. For the Services, data importer will only act upon data exporter’s instructions as conveyed by Microsoft. 
+
 e. Customer Data Deletion or Return. Upon expiration or termination of data exporter’s use of the Services, it may extract Customer Data and data importer will delete Customer Data, each in accordance with the Agreement. 
+
 Subcontractors: The data importer may hire other companies to provide limited services on data importer’s behalf, such as providing customer support. Any such subcontractors will be permitted to obtain Customer Data only to deliver the services the data importer has retained them to provide, and they are prohibited from using Customer Data for any other purpose.
 
 ## Appendix 2 to the Standard Contractual Clauses
 Description of the technical and organizational security measures implemented by the data importer in accordance with Clauses 4(d) and 5(c):
+
 1. Personnel. Data importer’s personnel will not process Customer Data without authorization. Personnel are obligated to maintain the confidentiality of any Customer Data and this obligation continues even after their engagement ends. 
+
 2. Data Privacy Contact. The data privacy officer of the data importer can be reached at the following address: 
-Microsoft Corporation 
-Attn: Chief Privacy Officer 
-1 Microsoft Way 
+Microsoft Corporation <br>
+Attn: Chief Privacy Officer <br>
+1 Microsoft Way <br>
 Redmond, WA 98052 USA 
+
 3. Technical and Organization Measures. The data importer has implemented and will maintain appropriate technical and organizational measures, internal controls, and information security routines intended to protect Customer Data, as defined in the Security Practices and Policies section of the Agreement, against accidental loss, destruction, or alteration; unauthorized disclosure or access; or unlawful destruction.
 
 
