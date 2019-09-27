@@ -1,6 +1,6 @@
 ---
 uid: developers/tutorials/embed
-title: Exmbed in Dynamics 365
+title: Embed in secure applications
 author: ruthaisabokhae
 description: Embed chart or dashboard
 ms.author: ruthai
