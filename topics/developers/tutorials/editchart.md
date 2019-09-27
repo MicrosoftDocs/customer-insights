@@ -2,14 +2,14 @@
 uid: developers/tutorials/editchart
 title: Create and edit a chart
 author: ruthaisabokhae
-description:Create and edit a chart
+description: Create and edit a chart
 ms.author: ruthai
 ms.date: 09/27/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Draft<br>
+# Draft
 # Creat and edit a chart<br>
 
 [Insert video: Watch how to create and edit your chart]<br>

@@ -27,13 +27,16 @@ Azure Data Lake Storage offers a wide variety of available integrations. You can
     * Storage account shared key can be obtained after checking the **Access keys** pane of the storage account.
 
 3. Visit the management pane of your Product Insights project and create a new export.
-(Insert screenshot showing where the export can be created)
+
+![Export creation](export_creation.png "Export creation")
 
 
 
 ## Export configuration  
 This section contains a brief description of all available configuration options that are needed to configure this feature.
-(Insert screenshot showing the export configuration options)
+
+![Export settings](export_settings.png "Export settings")
+
 
 
 
@@ -47,6 +50,7 @@ This section allows you to specify the authentication and export destination set
 
 * File system and path. It describes where the export files should be stored inside the file system and directory structure of the storage account. Each ADLS Gen 2 account may contain multiple file systems. Each file system has its own directory structure. If specified file system and/or directories do not exist, they will be created. Below is a sample value for this field:  
 *myfilesystem/directory1/directory2/*  
+
 You need to specify at least the name of the file system.
 
 ### Options  
@@ -55,13 +59,9 @@ There are three settings to consider when exporting your signals:
 #### Export granularity
 This setting allows you to choose the granularity of files containing exported signals. Depending on this setting, your signals will be exported to files that are created per hour or per day.
 
-#### Data timestamp
-Based on this setting, the file to save the signal to will be chosen either based on the time when data was generated (time when the signal was sent from the point of device emitting data) or using the time when data is written to the ADLS. Choosing the first option will require additional logic on the data consuming side as the signals may be written to older files. An example of the latter is when a device loses internet connection for a day and after establishing connection again, flushes all buffered events (and each event has a timestamp of when it attempted to be sent).
-
 #### Signals to be exported
 This option allows you to choose which signals should be exported. You can either choose all signals or simply list the names of desired signals.
 
 
 ## Data format of exported signals
-Signals will be exported using line delimited JSON format. Find out more about it [here](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON).  
-This means that every line in the output file will contain a JSON object with all the properties that were sent in a single signal.
+Signals will be exported using line delimited JSON format. Find out more about it [here](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON). This means that every line in the output file will contain a JSON object with all the properties that were sent in a single signal. Directory structure and file names will be created using current UTC time of servers exporting the data.
