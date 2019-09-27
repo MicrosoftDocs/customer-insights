@@ -73,7 +73,6 @@ landingContent:
             url: https://community.dynamics.com/365/product-insights/
           - text: Blog
             url: https://community.dynamics.com/365/product-insights/b/product-insights-team-blog
-          - text: Forum
+          - text: Forum/ Support
             url: https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum
-          - text: Support
-            url: https://dynamics.microsoft.com/en-us/support/
+          
