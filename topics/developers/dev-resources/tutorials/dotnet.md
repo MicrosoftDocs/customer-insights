@@ -16,7 +16,8 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 
 ## Prerequisites
-* .NET
+* .NET Core 1.0 and above
+	* *Or* .NET Framework 4.6 and above
 * Visual Studio 2017
 * Ingestion key (see below for instructions to obtain)
 
@@ -38,9 +39,14 @@ The following scenario will be used to construct the Product Insights SDK exampl
     1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_csharp_sdk.zip) the **Product Insights .NET SDK**
 	2. Unzip the compressed file **pi_csharp_sdk.zip** to a local folder.
 	3. Go to your project in Visual Studio, and add a new **Nuget Package Source** to the local folder where you put the SDK.
-	4. Right click on **References**, and select **Manage Nuget Package...**.
-	5. Install the **ProductInsightsAnalytics** package.
-
+		1. On the **Tools** menu, select **Options**
+		2. Expand **NuGet Package Manager** and select **Package Sources**
+		3. Select the green plus in the upper right corner
+		4. At the bottom of the dialog box, enter the feed's name and the local folder path where you put the .NET SDK package
+		5. Select **Update**
+		6. Select **OK**
+		
+		![Add Local NuGet Feed](add_local_nuget_feed.png "Add Local NuGet Feed")
 2. Import the Product Insights SDK by adding the following statement of your app's implementation file:
 	```csharp
 	using Microsoft.Dynamics.ProductInsights;
