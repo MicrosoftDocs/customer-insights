@@ -109,18 +109,18 @@ The following scenario will be used to construct the Product Insights SDK exampl
 3. Insert the following lines to track signals.
 	```objc
 	// Signal with name only
-	PISignal *sampleSignal = [[PISignal new] initWithName:@"sampleSignal"];
-	[piAnalytics trackSignal:sampleSignal];
+	PISignal *signal = [[PISignal new] initWithName:@"user_information"];
+	[piAnalytics trackSignal:signal];
 
 	// Signal with custom properties of various types
-	PISignal *sampleSignal = [[PISignal new] initWithName:@"sampleSignal"];
-	SampleSignal.version = @"1.0.0";
+	PISignal *sampleSignal = [[PISignal new] initWithName:@"car_information"];
+	sampleSignal.version = @"1.0.0";
 
-	[sampleSignal setStringValue:@"sampleStringValue" forProperty:@"stringProperty"];
-	[sampleSignal setDoubleValue:36.5 forProperty:@"doubleProperty"];
-	[sampleSignal setInt64Value:3000 forProperty:@"int64Property"];
-	[sampleSignal setDateValue:[NSDate new] forProperty:@"dateProperty"];
-	[sampleSignal setBoolValue:YES forProperty:@"boolProperty"];
+	[sampleSignal setStringValue:@"Accord" forProperty:@"car_model"];
+	[sampleSignal setDoubleValue:76.5 forProperty:@"temperature"];
+	[sampleSignal setInt64Value:3000 forProperty:@"rpm"];
+	[sampleSignal setDateValue:[NSDate new] forProperty:@"engine_start_time"];
+	[sampleSignal setBoolValue:YES forProperty:@"engine_start"];
 
 	[piAnalytics trackSignal:sampleSignal];
 	```
