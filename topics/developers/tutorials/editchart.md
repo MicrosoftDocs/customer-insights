@@ -9,8 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Draft
-# Creat and edit a chart<br>
+# Draft: Create and edit a chart
 
 [Insert video: Watch how to create and edit your chart]<br>
 
