@@ -15,11 +15,10 @@ Choose your preferred SDK from the options below:
 
 [Android (mobile, Java)](android-java.md)
 
-[iOS (mobile, Objective-C)](ios-objc.md)
+[iOS/macOS (Objective-C)](ios-objc.md)
 
-[Services (C#/.NET)](dotnet.md)
+[.NET](dotnet.md)
 
 [Python](python.md)
 
 [Web/React (Javascript)](js.md)
-

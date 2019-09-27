@@ -17,26 +17,27 @@ The following scenario will be used to construct the Product Insights SDK exampl
 ## Prerequisites
 * Android Studio
 * Minimum Android API Level: 16 (Jelly Bean)
-* Ingestion key 
+* Ingestion key (see below for instructions to obtain)
 
 ## Get an ingestion key from Product Insights portal
 1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [Create a team](/topics/developers/quick-starts/create-a-team.md).
 2. Add a new project to your team by selecting the **+ New Project** button from the top right corner.
 3. Type in a project name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
 4. Once your project is created, select the project.
-5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**. 
+5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**.
 
 > [!NOTE]
 > Leave this tab open in your web browser, or copy the key to a clipboard because you will need to use it later.
 
-## Integrate
+## Integrate the Product Insights SDK into your Android project
 1. Open your Android Studio project. If you don't have one, create a new project with **Empty Activity** in Android Studio.
 
 2. Import the Product Insights Android SDK:
+    * [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_android_sdk.zip) the **Product Insights Android Java SDK**
     * Unzip the compressed file `pi_android_sdk.zip`
     * Copy the Android archive file (extension: `.aar`) into your project's `app/libs` folder.
 
-3. Open the app level `build.gradle` file (`app/build.gradle`), and add the following lines after ```apply plugin``` to include the AppCenter SDK dependencies for the project:
+3. Open the app level `build.gradle` file (`app/build.gradle`), and add the following lines after ```apply plugin``` to first include the AppCenter SDK dependencies for the project:
 
     ```java
     dependencies {
@@ -71,15 +72,16 @@ The following scenario will be used to construct the Product Insights SDK exampl
     import microsoft.dynamics.productinsights.Signals;
     ```
 
-7. Start the SDK (it's only required to start it once):
+7. Start the SDK (only required to start it once):
 
     ```java
     // The first parameter is the application context, this examples assumes it is called from an Activity.
-    AppCenter.start(getApplication(), "target={Your-Ingestion-Key}", Analytics.class);
+    AppCenter.start(getApplication(), "target=Your-Ingestion-Key", Analytics.class);
     ```
 
     If your application already uses the Microsoft AppCenter SDK to track telemetry:
     ```java
+    // The first parameter is the application context, this examples assumes it is called from an Activity.
     AppCenter.start(
         getApplication(),
         String.format("app-secret=%s;target=%s", appCenterSecret, ingestionKey),

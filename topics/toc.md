@@ -1,7 +1,7 @@
-# Take a tour 
-## [What is Product Insights?](xref:developers/quick-starts/what-is) 
-## [Who is using Product Insights?](xref:developers/quick-starts/who-uses) 
-## [How do I get started?](xref:developers/quick-starts/how-to-get-started) 
+# Take a tour
+## [What is Product Insights?](xref:developers/quick-starts/what-is)
+## [Who is using Product Insights?](xref:developers/quick-starts/who-uses)
+## [How do I get started?](xref:developers/quick-starts/how-to-get-started)
 
 # Get started
 ## [Create your team](xref:developers/quick-starts/create-a-team)
@@ -13,7 +13,7 @@
 
 ## Explore samples
 
-## Send signals 
+## Send signals
 ### [Simulate signals](xref:developers/tutorials/create-sample-signals)
 ### [Import signals from other fabrics](xref:developers/tutorials/import-signals)
 ### [Send signals using SDKs](xref:developers/tutorials/send-additional-signals)
@@ -36,30 +36,30 @@
 ### [Export to Azure Data Lake Storage](xref:developers/tutorials/ADLS-Export)
 ### [Export to Power BI](xref:developers/tutorials/ADLS-Export)
 
-# Manage your system 
+# Manage your system
 ## [Administration](xref:developers/dev-resources/manage-teams)
 ## [Get API token/ ingestion key](xref:developers/downloads/api-token)
 ## [Product limitations for public preview](xref:developers/tutorials/product-preview-limitations)
 
-# Developer resources 
+# Developer resources
 ## [Download SDKs to send signals](xref:developers/dev-resources/index)
 ## [SDK tutorials](xref:developers/downloads/tutorials/index)
 ### [Android (mobile, Java)](xref:developers/downloads/android-java)
-### [iOS (mobile, Objective-C)](xref:developers/downloads/ios-objc)
-### [Services (C#/.NET)](xref:developers/downloads/dotnet)
+### [iOS/macOS (Objective-C)](xref:developers/downloads/ios-objc)
+### [.NET](xref:developers/downloads/dotnet)
 ### [Python](xref:developers/downloads/python)
 ### [Web/React (JavaScript)](xref:developers/downloads/js)
 ## [Event Sender](xref:developers/downloads/ingest)
 ## [IoT/ Event Hubs](xref:developers/downloads/event-iot-hub)
 
-# Terms and compliance 
+# Terms and compliance
 ## [Privacy statement](xref:developers/articles/privacy-statement)
 ## [Terms of Service](xref:developers/articles/terms-of-service)
 ## [GDPR/ Compliance](xref:developers/articles/compliance)
-## [User permissions](xref:developers/articles/user-permissions) 
+## [User permissions](xref:developers/articles/user-permissions)
 
 
-# Customer care 
-## [Glossary](xref:developers/articles/glossary) 
+# Customer care
+## [Glossary](xref:developers/articles/glossary)
 ## [Community](https://community.dynamics.com/365/product-insights/)
 ## [Ask a question](https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum)
