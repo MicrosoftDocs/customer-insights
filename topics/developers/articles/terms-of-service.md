@@ -4,7 +4,7 @@ title: SLA
 author: ruthaisabokhae
 description: Terms of Service 
 ms.author: ruthai
-ms.date: 04/12/2019
+ms.date: 09/26/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -16,28 +16,11 @@ ms.topic: conceptual
 
 
 LAST UPDATED OCTOBER 2019 
-
-YOUR USE OF THE SERVICES IS CONFIDENTIAL AND GOVERNED BY THIS AGREEMENT
-AND THE TERMS OF YOUR NON-DISCLOSURE AGREEMENT WITH MICROSOFT. YOU MAY
-NOT DISCLOSE YOUR EXPERIENCES USING THE SERVICES EXCEPT IN ACCORDANCE
-WITH THAT NON-DISCLOSURE AGREEMENT.
+By accessing or using the Services, you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.  If you are a subscriber of Dynamics 365 or other Microsoft services, your Dynamics 365 customer agreement or other Microsoft service agreement applies to your use of Dynamics 365 or other Microsoft services generally. This Agreement applies to your use of the Services specifically. 
 
 **1. WHAT THE AGREEMENT COVERS**
 
-This is an agreement between you ("you," "your," or "Licensee") and
-Microsoft Corporation, ("Microsoft, "we," "us" or "our"). The terms and
-conditions of this agreement ("agreement") apply to your access and use
-of the Microsoft codename "DYNAMICS 365 PRODUCT INSIGHTS" services
-preview (together with any Microsoft provided data sources, the
-"Services"). The Services are optional evaluation services offered by
-Microsoft to select customers and partners to obtain feedback prior to
-general release. By accessing or using the Services, you accept the
-terms and conditions of this agreement. If you do not accept them, do
-not access or use the Services. If you are a subscriber of Dynamics 365
-or other Microsoft services, your Dynamics 365 customer agreement or
-other Microsoft service agreement applies to your use of Dynamics 365 or
-other Microsoft services generally. This agreement applies to your use
-of the Services specifically.
+This is an agreement between you (“you,” “your,” “Customer,” “Participant,” or “Licensee”) and Microsoft Corporation, (“Microsoft, “we,” “us” or “our”). The terms and conditions of this agreement (“Agreement”) apply to your access and use of Dynamics 365 Product Insights services preview (together with any Microsoft provided data sources, the “Services”). The Services are optional evaluation services to obtain feedback prior to general release. Certain Microsoft services or software may be necessary to use the Services (“Required Offerings”). Microsoft does not grant any rights under this Agreement to access or use Required Offerings; rather, Required Offerings are separately licensed under any respective Microsoft Licensing Agreement, and may require paying a fee. “Microsoft Licensing Agreement” or “MLA” means the Microsoft Online Services Terms (see http://microsoftvolumelicensing.com/) and Participant’s Microsoft volume licensing agreement, or any other applicable agreement, under which Participant subscribed or was granted a license to any Required Offerings. 
 
 **2. DATA**
 
