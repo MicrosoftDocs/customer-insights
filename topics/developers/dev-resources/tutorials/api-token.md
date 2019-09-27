@@ -20,5 +20,5 @@ ms.topic: conceptual
 
 1. Select **Copy key**, which will copy the ingestion key to your computer's clipboard. You can now use your key to generate signals.
 
-![Get ingestion key](../Gettoken.gif "Get ingestion key")
+![Get ingestion key](Gettoken.gif "Get ingestion key")
 
