@@ -105,7 +105,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
     signal.setVersion("1.0.0");
 
     signal.setProperty("engine_start", true);
-    signal.setProperty("car_model", "Accord");
+    signal.setProperty("car_model", "Star Car");
     signal.setProperty("model_year", "2017");
     signal.setProperty("rpm", 3000);
     signal.setProperty("temperature", 74.3);

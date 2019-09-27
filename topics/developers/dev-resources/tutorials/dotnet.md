@@ -61,7 +61,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 	signal.Version = "1.0.0";
 
 	signal.SetProperty("engine_start", true);
-	signal.SetProperty("car_model", "Accord");
+	signal.SetProperty("car_model", "Star Car");
 	signal.SetProperty("model_year", "2017");
 	signal.SetProperty("rpm", 3000);
 	signal.SetProperty("temperature", 74.3);

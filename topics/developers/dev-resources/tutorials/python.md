@@ -65,7 +65,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
     - Both indexing and `set_property()` are allowed
 		```python
 		sig.properties['engine_start'] = True
-		sig.properties['car_model'] = 'Accord'
+		sig.properties['car_model'] = 'Star Car'
 		sig.set_property('model_year', datetime.fromtimestamp(1565631527))
 		sig.set_property('rpm', 3000)
 		sig.set_property('temperature', 74.3)

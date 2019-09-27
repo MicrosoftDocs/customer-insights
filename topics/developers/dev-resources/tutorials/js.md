@@ -67,8 +67,8 @@ The following scenario will be used to construct the Product Insights SDK exampl
 	  name: "car_information",
 	  properties: {
 	    "engine_start": true,
-	    "car_model": "Accord",
-	    "model_year": "2018",
+	    "car_model": "Star Car",
+	    "model_year": "2017",
 	    "rpm": 3000,
 	    "temperature": 74.3
 	  }

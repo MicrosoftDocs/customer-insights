@@ -116,7 +116,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 	PISignal *sampleSignal = [[PISignal new] initWithName:@"car_information"];
 	sampleSignal.version = @"1.0.0";
 
-	[sampleSignal setStringValue:@"Accord" forProperty:@"car_model"];
+	[sampleSignal setStringValue:@"Star Car" forProperty:@"car_model"];
 	[sampleSignal setDoubleValue:76.5 forProperty:@"temperature"];
 	[sampleSignal setInt64Value:3000 forProperty:@"rpm"];
 	[sampleSignal setDateValue:[NSDate new] forProperty:@"engine_start_time"];
