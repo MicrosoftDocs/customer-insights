@@ -22,7 +22,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 ## Get an ingestion key from Product Insights portal
 1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [Create a team](/topics/developers/quick-starts/create-a-team.md).
-2. Add a new project to your team by selecting the **"+ New Project"** button from the top right corner.
+2. Add a new project to your team by selecting the **+ New Project** button from the top right corner.
 3. Type in a project name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
 4. Once your project is created, select the project.
 5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**.

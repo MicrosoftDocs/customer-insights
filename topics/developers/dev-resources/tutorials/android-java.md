@@ -106,10 +106,10 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
     signal.setProperty("engine_start", true);
     signal.setProperty("car_model", "Accord");
-	signal.setProperty("model_year", "2017");
-	signal.setProperty("rpm", 3000);
-	signal.setProperty("temperature", 74.3);
-	pia.trackSignal(signal);
+    signal.setProperty("model_year", "2017");
+    signal.setProperty("rpm", 3000);
+    signal.setProperty("temperature", 74.3);
+    pia.trackSignal(signal);
     ```
 
     The following types are supported for custom signal properties:
