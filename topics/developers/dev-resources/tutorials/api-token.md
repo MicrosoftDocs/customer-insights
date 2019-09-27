@@ -8,7 +8,7 @@ ms.date: 04/12/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
-# Get an API token from the Product Insights portal
+# Get an ingestion key (API token) from the Product Insights portal
 
 1. Select **All Teams** from the left pane of the [Product Insights home page](https://pi.dynamics.com/).
 
@@ -20,4 +20,5 @@ ms.topic: conceptual
 
 1. Select **Copy key**, which will copy the ingestion key to your computer's clipboard. You can now use your key to generate signals.
 
-> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/GetAPIKey.mp4]
+![Get ingestion key](Gettoken.gif "Get ingestion key")
+
