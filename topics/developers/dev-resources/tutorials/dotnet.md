@@ -32,7 +32,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 ## Integrate the Product Insights SDK into your .NET project
 > [!NOTE]
-> The Product Insights .NET SDK works for all languages supported by .NET. For convenience, we will use C# standard syntax in the code samples below.
+> The Product Insights .NET SDK works for all languages supported by .NET framework. For convenience, we will use C# standard syntax in the code samples below.
 
 1. Import the Product Insights SDK:
     1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_csharp_sdk.zip) the **Product Insights .NET SDK**
