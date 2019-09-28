@@ -92,7 +92,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 ### Add the start method and start tracking events.
 1. Start the SDK from an app (only required once). Follow these steps:
-	* Insert the following lines to start the SDK in your app's `AppDelegate.m` class in the `didFinishLaunchingWithOptions:` method.
+	* Insert the following lines to start the SDK in your app's `AppDelegate.m` class in the `didFinishLaunchingWithOptions:` method:
 		```objc
 		[MSAppCenter start:@"target={Your Ingestion Key}" withServices:@[[MSAnalytics class]]];
 		```
@@ -101,12 +101,12 @@ The following scenario will be used to construct the Product Insights SDK exampl
 		[MSAppCenter start:@"app-secret={Your App Secret}; target={Your Ingestion Key}" withServices:@[[MSAnalytics class]]];
 		```
 
-2. Insert the following line to initiate Product Insights Analytics.
+2. Insert the following line to initiate Product Insights Analytics:
 	```objc
 	PIAnalytics *piAnalytics = [[PIAnalytics new] initWithIngestionKey:{Your Ingestion Key}];
 	```
 
-3. Insert the following lines to track signals.
+3. Insert the following lines to track signals:
 	```objc
 	// Signal with name only
 	PISignal *signal = [[PISignal new] initWithName:@"user_information"];

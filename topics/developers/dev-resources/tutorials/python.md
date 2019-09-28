@@ -31,7 +31,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 > Leave this tab open in your web browser or copy the key to a clipboard because you will need to use it later.
 
 ## Integrate the Product Insights SDK into your Python project
-1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_python_sdk.zip) the **Product Insights Python SDK**
+1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_python_sdk.zip) the **Product Insights Python SDK**.
 
 2. Add the SDK to your project's site packages. This can either be done at runtime or permanently added to your site packages.
 

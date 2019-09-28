@@ -16,8 +16,8 @@ ms.topic: conceptual
 - Ingestion Key (See [here](python.md) for instructions on how to obtain)
 
 ## Run Sample
-1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_python_sample.zip) the **Product Insights Python SDK sample**
-2. Unzip the compressed file `pi_python_sample.zip`
-3. Open a CMD window and `cd` to the resulting directory
-4. Replace *your-ingestion-key* in `example.py` with the ingestion key you have created on Product Insights portal
-5. Run `python example.py` in the CMD window
+1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_python_sample.zip) the **Product Insights Python SDK sample**.
+2. Unzip the compressed file `pi_python_sample.zip`.
+3. Open a CMD window and `cd` to the resulting directory.
+4. Replace *your-ingestion-key* in `example.py` with the ingestion key you have created on Product Insights portal.
+5. Run `python example.py` in the CMD window.
