@@ -34,15 +34,15 @@ The following scenario will be used to construct the Product Insights SDK exampl
 1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_python_sdk.zip) the **Product Insights Python SDK**.
 
 2. Add the SDK to your project's site packages. This can either be done at runtime or permanently added to your site packages.
-	- **Permanently**: With the specific Python interpreter you want to use activated, `cd` to your project directory. Then, run `python -m easy_install pi_analytics-x.y.z.egg`
+    - **Permanently**: With the specific Python interpreter you want to use activated, `cd` to your project directory. Then, run `python -m easy_install pi_analytics-x.y.z.egg`
 
-	- **At Runtime**: Put the following code block before any `pi_analytics` import:
+    - **At Runtime**: Put the following code block before any `pi_analytics` import:
         ```python
         import sys
         sys.path.append('/path/to/pi_analytics-x.y.z.egg')
         ```
-	> [!NOTE]
-	> Replace the `x.y.z` with the version number found in the decompressed file
+    > [!NOTE]
+    > Replace the `x.y.z` with the version number found in the decompressed file
 
 3. Initialize the SDK:
     ```python
@@ -55,7 +55,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
     ```
 
 4. Track signals:
-	- Do a simple track signals call:
+    - Do a simple track signals call:
         ```python
         pia.track_signal(Signal('user_information'))
         sig = Signal('car_information')

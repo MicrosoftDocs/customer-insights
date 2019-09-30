@@ -32,54 +32,54 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 ## Integrate the Product Insights SDK into your webpage or project
 1. Add the Product Insights SDK to your page:
-	1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_js_sdk.zip) the **Product Insights JavaScript SDK**.
-	2. Add the SDK file to your project, and add it to your page using a script tag:
-		```javascript
-		<script type="text/javascript" src="pi_js_sdk-1.0.0.min.js">
-		</script>
-		```
+    1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_js_sdk.zip) the **Product Insights JavaScript SDK**.
+    2. Add the SDK file to your project, and add it to your page using a script tag:
+        ```javascript
+        <script type="text/javascript" src="pi_js_sdk-1.0.0.min.js">
+        </script>
+        ```
 
 2. Add the 1DS SDK to your page using the script tag, as shown:
-	```javascript
-   	<script type="text/javascript"
-   	src="https://az416426.vo.msecnd.net/scripts/c/ms.analytics-2.min.js">
-   	</script>
-	```
+    ```javascript
+       <script type="text/javascript"
+       src="https://az416426.vo.msecnd.net/scripts/c/ms.analytics-2.min.js">
+       </script>
+    ```
 
 3. Start the SDKs (only required once):
-	```javascript
-	var analytics = new oneDS.ApplicationInsights();
-	var config = {
-		instrumentationKey: "Your_Ingestion_Key"
-	};
+    ```javascript
+    var analytics = new oneDS.ApplicationInsights();
+    var config = {
+        instrumentationKey: "Your_Ingestion_Key"
+    };
 
-	analytics.initialize(config, []);
-	var pia = new PI.ProductInsightsAnalytics(analytics, "Your_Ingestion_Key");
-	```
+    analytics.initialize(config, []);
+    var pia = new PI.ProductInsightsAnalytics(analytics, "Your_Ingestion_Key");
+    ```
 
 4. Track signals:
-	```javascript
-	// Do a simple track signals call.
-	pia.trackSignal({ name: "user_information"});
+    ```javascript
+    // Do a simple track signals call.
+    pia.trackSignal({ name: "user_information"});
 
-	// Track a signal with custom properties of various types.
-	pia.trackSignal({
-	  name: "car_information",
-	  properties: {
-	    "engine_start": true,
-	    "car_model": "Star Car",
-	    "model_year": "2017",
-	    "rpm": 3000,
-	    "temperature": 74.3
-	  }
-	});
-	```
-	The following types are supported for event properties:
-	- **String**
-	- **Double**
-	- **Boolean**
+    // Track a signal with custom properties of various types.
+    pia.trackSignal({
+      name: "car_information",
+      properties: {
+        "engine_start": true,
+        "car_model": "Star Car",
+        "model_year": "2017",
+        "rpm": 3000,
+        "temperature": 74.3
+      }
+    });
+    ```
+    The following types are supported for event properties:
+    - **String**
+    - **Double**
+    - **Boolean**
 
 5. Teardown the SDK when application closes to ensure all signals currently in queue are sent:
-	```javascript
-	analytics.getPostChannel().teardown();
-	```
+    ```javascript
+    analytics.getPostChannel().teardown();
+    ```

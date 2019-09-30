@@ -17,7 +17,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 ## Prerequisites
 * .NET Core 1.0 and above
-	* *Or* .NET Framework 4.6 and above
+    * *Or* .NET Framework 4.6 and above
 * Visual Studio 2017
 * Ingestion key (see below for instructions to obtain)
 
@@ -37,52 +37,52 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 1. Import the Product Insights SDK:
     1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_csharp_sdk.zip) the **Product Insights .NET SDK**
-	2. Unzip the compressed file **pi_csharp_sdk.zip** to a local folder.
-	3. Go to your project in Visual Studio, and add a new **Nuget Package Source** to the local folder where you put the SDK.
-		1. On the **Tools** menu, select **Options**.
-		2. Expand **NuGet Package Manager** and select **Package Sources**.
-		3. Select the green plus in the upper right corner.
-		4. At the bottom of the dialog box, enter the feed's name and the local folder path where you put the .NET SDK package.
-		5. Select **Update**.
-		6. Select **OK**.
+    2. Unzip the compressed file **pi_csharp_sdk.zip** to a local folder.
+    3. Go to your project in Visual Studio, and add a new **Nuget Package Source** to the local folder where you put the SDK.
+        1. On the **Tools** menu, select **Options**.
+        2. Expand **NuGet Package Manager** and select **Package Sources**.
+        3. Select the green plus in the upper right corner.
+        4. At the bottom of the dialog box, enter the feed's name and the local folder path where you put the .NET SDK package.
+        5. Select **Update**.
+        6. Select **OK**.
 
-		![Add Local NuGet Feed](add_local_nuget_feed.png "Add Local NuGet Feed")
+        ![Add Local NuGet Feed](add_local_nuget_feed.png "Add Local NuGet Feed")
 2. Import the Product Insights SDK by adding the following statement of your app's implementation file:
-	```csharp
-	using Microsoft.Dynamics.ProductInsights;
-	using Microsoft.Applications.Events;
-	```
+    ```csharp
+    using Microsoft.Dynamics.ProductInsights;
+    using Microsoft.Applications.Events;
+    ```
 3. Initialize ProductInsightsAnalytics:
-	```csharp
-	LogManager.Start(new LogConfiguration());
-	ProductInsightsAnalytics pia = new ProductInsightsAnalytics("Your-Ingestion-Key");
-	```
+    ```csharp
+    LogManager.Start(new LogConfiguration());
+    ProductInsightsAnalytics pia = new ProductInsightsAnalytics("Your-Ingestion-Key");
+    ```
 4. Track signals:
-	```csharp
-	// Do a simple track signals call.
-	pia.TrackSignal(new Signal("user_information"));
+    ```csharp
+    // Do a simple track signals call.
+    pia.TrackSignal(new Signal("user_information"));
 
-	// Track a signal with custom properties of various types.
-	Signal signal = new Signal("car_information");
-	signal.Version = "1.0.0";
+    // Track a signal with custom properties of various types.
+    Signal signal = new Signal("car_information");
+    signal.Version = "1.0.0";
 
-	signal.SetProperty("engine_start", true);
-	signal.SetProperty("car_model", "Star Car");
-	signal.SetProperty("model_year", "2017");
-	signal.SetProperty("rpm", 3000);
-	signal.SetProperty("temperature", 74.3);
-	pia.TrackSignal(signal);
-	```
+    signal.SetProperty("engine_start", true);
+    signal.SetProperty("car_model", "Star Car");
+    signal.SetProperty("model_year", "2017");
+    signal.SetProperty("rpm", 3000);
+    signal.SetProperty("temperature", 74.3);
+    pia.TrackSignal(signal);
+    ```
 
-	Following types are supported for custom signal properties:
-	- **string**
-	- **DateTime**
-	- **double**
-	- **long**
-	- **Bool**
+    Following types are supported for custom signal properties:
+    - **string**
+    - **DateTime**
+    - **double**
+    - **long**
+    - **Bool**
 
 5. Teardown the SDK when the application closes to ensure all signals currently in queue are sent:
-	```csharp
-	LogManager.UploadNow();
-  	LogManager.Teardown();
-	```
+    ```csharp
+    LogManager.UploadNow();
+      LogManager.Teardown();
+    ```

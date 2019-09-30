@@ -36,97 +36,97 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 ### Integrate the AppCenter SDK using CocoaPods
 1. If you haven't installed CocoaPods, run this command in the terminal to install CocoaPods and create a Podfile:
-	```bash
-	$ sudo gem install cocoapods
-	$ pod init
-	```
+    ```bash
+    $ sudo gem install cocoapods
+    $ pod init
+    ```
 2. Add the following to your Podfile:
-	```bash
-	target 'SampleApp' do
-		pod 'AppCenter/Analytics'
-	```
+    ```bash
+    target 'SampleApp' do
+        pod 'AppCenter/Analytics'
+    ```
 3. Save the file and run this command in the terminal:
-	```bash
-	$ pod install
-	```
+    ```bash
+    $ pod install
+    ```
 
 ### Integrate the Product Insights Analytics SDK Manually
 1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_objc_sdk.zip) the **Product Insights Analytics Objective-C SDK** for iOS or macOS.
 2. Unzip the SDK archive and copy the corresponding framework:
-	* For iOS, navigate to the *iOS* folder
-		* For debug version, navigate to the *Debug* folder
-			* For simulator, navigate to the *Simulator* folder
-				* Copy the **ProductInsightsAnalytics.framework**
-			* For device, navigate to the *Device* folder
-				* Copy the **ProductInsightsAnalytics.framework**
-		* For release version, navigate to the *Device* folder
-			* For simulator, navigate to the *Simulator* folder
-				* Copy the **ProductInsightsAnalytics.framework**
-			* For device, navigate to the *Device* folder
-				* Copy the **ProductInsightsAnalytics.framework**
-	* For macOS, navigate to the *macOS* folder
-		* For debug version, navigate to the *Debug* folder
-			* Copy the **ProductInsightsAnalyticsMacOS.framework**
-		* For release version, navigate to the *Release* folder
-			* Copy the **ProductInsightsAnalyticsMacOS.framework**
+    * For iOS, navigate to the *iOS* folder
+        * For debug version, navigate to the *Debug* folder
+            * For simulator, navigate to the *Simulator* folder
+                * Copy the **ProductInsightsAnalytics.framework**
+            * For device, navigate to the *Device* folder
+                * Copy the **ProductInsightsAnalytics.framework**
+        * For release version, navigate to the *Device* folder
+            * For simulator, navigate to the *Simulator* folder
+                * Copy the **ProductInsightsAnalytics.framework**
+            * For device, navigate to the *Device* folder
+                * Copy the **ProductInsightsAnalytics.framework**
+    * For macOS, navigate to the *macOS* folder
+        * For debug version, navigate to the *Debug* folder
+            * Copy the **ProductInsightsAnalyticsMacOS.framework**
+        * For release version, navigate to the *Release* folder
+            * Copy the **ProductInsightsAnalyticsMacOS.framework**
 2. Integrate the SDK into your project
-	1. Copy the corresponding framework from the step above.
-	2. Create a new folder named **Frameworks** inside your project folder, and paste the framework into this.
-	3. Select your project in Xcode's project navigator.
-	4. Select your app target.
-	5. In the **General** tab add the `ProductInsightsAnalytics.framework` (for iOS) or `ProductInsightsAnalyticsMacOS.framework` (for macOS) to **Embedded Binaries**.
+    1. Copy the corresponding framework from the step above.
+    2. Create a new folder named **Frameworks** inside your project folder, and paste the framework into this.
+    3. Select your project in Xcode's project navigator.
+    4. Select your app target.
+    5. In the **General** tab add the `ProductInsightsAnalytics.framework` (for iOS) or `ProductInsightsAnalyticsMacOS.framework` (for macOS) to **Embedded Binaries**.
 
 ### Import Product Insights Analytics and AppCenter into your project
 1. Open your `AppDelegate.m` file, and add the following import statements:
-	```objc
-	@import AppCenter;
-	@import AppCenterAnalytics;
+    ```objc
+    @import AppCenter;
+    @import AppCenterAnalytics;
 
-	// if iOS use:
-	#import <ProductInsightsAnalytics/ProductInsightsAnalytics.h>
+    // if iOS use:
+    #import <ProductInsightsAnalytics/ProductInsightsAnalytics.h>
 
-	// if macOS use:
-	#import <ProductInsightsAnalyticsMacOS/ProductInsightsAnalyticsMacOS.h>
-	```
+    // if macOS use:
+    #import <ProductInsightsAnalyticsMacOS/ProductInsightsAnalyticsMacOS.h>
+    ```
 
 
 ### Add the start method and start tracking events.
 1. Start the SDK from an app (only required once). Follow these steps:
-	* Insert the following lines to start the SDK in your app's `AppDelegate.m` class in the `didFinishLaunchingWithOptions:` method:
-		```objc
-		[MSAppCenter start:@"target={Your Ingestion Key}" withServices:@[[MSAnalytics class]]];
-		```
-	* If your application already uses the Microsoft AppCenter SDK to track telemetry:
-		```objc
-		[MSAppCenter start:@"app-secret={Your App Secret}; target={Your Ingestion Key}" withServices:@[[MSAnalytics class]]];
-		```
+    * Insert the following lines to start the SDK in your app's `AppDelegate.m` class in the `didFinishLaunchingWithOptions:` method:
+        ```objc
+        [MSAppCenter start:@"target={Your Ingestion Key}" withServices:@[[MSAnalytics class]]];
+        ```
+    * If your application already uses the Microsoft AppCenter SDK to track telemetry:
+        ```objc
+        [MSAppCenter start:@"app-secret={Your App Secret}; target={Your Ingestion Key}" withServices:@[[MSAnalytics class]]];
+        ```
 
 2. Insert the following line to initiate Product Insights Analytics:
-	```objc
-	PIAnalytics *piAnalytics = [[PIAnalytics new] initWithIngestionKey:{Your Ingestion Key}];
-	```
+    ```objc
+    PIAnalytics *piAnalytics = [[PIAnalytics new] initWithIngestionKey:{Your Ingestion Key}];
+    ```
 
 3. Insert the following lines to track signals:
-	```objc
-	// Signal with name only
-	PISignal *signal = [[PISignal new] initWithName:@"user_information"];
-	[piAnalytics trackSignal:signal];
+    ```objc
+    // Signal with name only
+    PISignal *signal = [[PISignal new] initWithName:@"user_information"];
+    [piAnalytics trackSignal:signal];
 
-	// Signal with custom properties of various types
-	PISignal *sampleSignal = [[PISignal new] initWithName:@"car_information"];
-	sampleSignal.version = @"1.0.0";
+    // Signal with custom properties of various types
+    PISignal *sampleSignal = [[PISignal new] initWithName:@"car_information"];
+    sampleSignal.version = @"1.0.0";
 
-	[sampleSignal setStringValue:@"Star Car" forProperty:@"car_model"];
-	[sampleSignal setDoubleValue:76.5 forProperty:@"temperature"];
-	[sampleSignal setInt64Value:3000 forProperty:@"rpm"];
-	[sampleSignal setBoolValue:YES forProperty:@"engine_start"];
+    [sampleSignal setStringValue:@"Star Car" forProperty:@"car_model"];
+    [sampleSignal setDoubleValue:76.5 forProperty:@"temperature"];
+    [sampleSignal setInt64Value:3000 forProperty:@"rpm"];
+    [sampleSignal setBoolValue:YES forProperty:@"engine_start"];
 
-	[piAnalytics trackSignal:sampleSignal];
-	```
+    [piAnalytics trackSignal:sampleSignal];
+    ```
 
-	The following types are supported for custom signal properties:
-	- **NSString**
-	- **NSDate**
-	- **double**
-	- **int64_t**
-	- **BOOL**
+    The following types are supported for custom signal properties:
+    - **NSString**
+    - **NSDate**
+    - **double**
+    - **int64_t**
+    - **BOOL**
