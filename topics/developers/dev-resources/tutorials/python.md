@@ -37,10 +37,10 @@ The following scenario will be used to construct the Product Insights SDK exampl
 	- **Permanently**: With the specific Python interpreter you want to use activated, `cd` to your project directory. Then, run `python -m easy_install pi_analytics-x.y.z.egg`
 
 	- **At Runtime**: Put the following code block before any `pi_analytics` import:
-		```python
-		import sys
-		sys.path.append('/path/to/pi_analytics-x.y.z.egg')
-		```
+        ```python
+        import sys
+        sys.path.append('/path/to/pi_analytics-x.y.z.egg')
+        ```
 	> [!NOTE]
 	> Replace the `x.y.z` with the version number found in the decompressed file
 
