@@ -40,7 +40,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
     - **At Runtime**: Put the following code block before any `pi_analytics` import:
 		```python
 		import sys
-    	sys.path.append('/path/to/pi_analytics-x.y.z.egg')
+		sys.path.append('/path/to/pi_analytics-x.y.z.egg')
 		```
 	> [!NOTE]
 	> Replace the `x.y.z` with the version number found in the decompressed file
