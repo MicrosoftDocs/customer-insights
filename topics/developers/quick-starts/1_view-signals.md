@@ -22,10 +22,9 @@ You can send signals using a variety of ways:
 
 
 ## Simulate sample signals
-Watch this video to learn how to similate signals.  
-
->[!VIDEO https://youtube.com/embed/8oehlTygiEk]  
-
+Learn how to similate signals.  
+ 
+![Simulate signals](Simulate_Signal.gif "Simulate signal")
 
 ### Add a signal
 
