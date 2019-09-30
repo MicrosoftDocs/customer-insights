@@ -33,7 +33,8 @@ ms.topic: conceptual
 		6. Select **OK**.
 
 		![Add Local NuGet Feed](add_local_nuget_feed.png "Add Local NuGet Feed")
-7. Replace *{YOUR_INGESTION_KEY}* with the ingestion key you have created on Product Insights portal.
-8. On the menu, choose **Build > Build Solution** to build the entire solution.
-9. On the menu, choose **Debug > Start Debugging** to run the sample.
-10. Wait a few minutes and you should now be able to see signals under your project on the Product Insights portal.
+7. Open **Program.cs** file in project
+8. Replace *{YOUR_INGESTION_KEY}* with the ingestion key you have created on Product Insights portal
+9. On the menu, choose **Build > Build Solution** to build the entire solution
+10. On the menu, choose **Debug > Start Debugging** to run the sample
+11. Wait a few minutes and you should now be able to see signals under your project on the Product Insights portal
