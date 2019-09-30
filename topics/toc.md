@@ -11,7 +11,8 @@
 
 # Do more
 
-## Explore samples
+## Explore samples 
+### [Explore in-built samples](xref:developers/tutorials/explore-samples)
 
 ## Send signals
 ### [Simulate signals](xref:developers/quick-starts/1_view-signals)
