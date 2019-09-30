@@ -14,7 +14,7 @@
 ## Explore samples
 
 ## Send signals
-### [Simulate signals](xref:developers/tutorials/create-sample-signals)
+### [Simulate signals](xref:developers/quick-starts/1_view-signals)
 ### [Import signals from other fabrics](xref:developers/tutorials/import-signals)
 ### [Send signals using SDKs](xref:developers/tutorials/send-additional-signals)
 ### [Enrich your data with CDS](xref:developers/tutorials/enrichment)
