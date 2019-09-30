@@ -45,40 +45,40 @@ The following scenario will be used to construct the Product Insights SDK exampl
 	> Replace the `x.y.z` with the version number found in the decompressed file
 
 3. Initialize the SDK:
-	```python
-	from pi_analytics, import PIAnalytics, Signal
-	from product_insights, import LogManager
-	from datetime import datetime
+    ```python
+    from pi_analytics, import PIAnalytics, Signal
+    from product_insights, import LogManager
+    from datetime import datetime
 
-	LogManager.initialize('your-ingestion-key')
-	pia = PIAnalytics('your-ingestion-key')
-	```
+    LogManager.initialize('your-ingestion-key')
+    pia = PIAnalytics('your-ingestion-key')
+    ```
 
 4. Track signals:
 	- Do a simple track signals call:
-		```python
-		pia.track_signal(Signal('user_information'))
-		sig = Signal('car_information')
-		```
+        ```python
+        pia.track_signal(Signal('user_information'))
+        sig = Signal('car_information')
+        ```
 
     - Both indexing and `set_property()` are allowed
-    	```python
-    	sig.properties['engine_start'] = True
-    	sig.properties['car_model'] = 'Star Car'
-    	sig.set_property('model_year', datetime.fromtimestamp(1565631527))
-    	sig.set_property('rpm', 3000)
-    	sig.set_property('temperature', 74.3)
-    	pia.track_signal(sig)
-    	```
+        ```python
+        sig.properties['engine_start'] = True
+        sig.properties['car_model'] = 'Star Car'
+        sig.set_property('model_year', datetime.fromtimestamp(1565631527))
+        sig.set_property('rpm', 3000)
+        sig.set_property('temperature', 74.3)
+        pia.track_signal(sig)
+        ```
 
-	The following types are supported for custom signal properties:
-	- **str**
-	- **float, int**
-	- **datetime**
-	- **UUID**
-	- **Bool**
+    The following types are supported for custom signal properties:
+    - **str**
+    - **float, int**
+    - **datetime**
+    - **UUID**
+    - **Bool**
 
 5. Teardown the SDK when the application closes to ensure all signals currently in the queue are sent:
-	```python
-	LogManager.flush_and_tear_down()
-	```
+    ```python
+    LogManager.flush_and_tear_down()
+    ```
