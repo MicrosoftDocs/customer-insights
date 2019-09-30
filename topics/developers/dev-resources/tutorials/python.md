@@ -58,7 +58,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 4. Track signals:
 
 	- Do a simple track signals call:
-	  ```python
+	```python
     pia.track_signal(Signal('user_information'))
     sig = Signal('car_information')
     ```
@@ -73,12 +73,12 @@ The following scenario will be used to construct the Product Insights SDK exampl
     pia.track_signal(sig)
     ```
 
-		The following types are supported for custom signal properties:
-		- **str**
-		- **float, int**
-		- **datetime**
-		- **UUID**
-		- **Bool**
+	The following types are supported for custom signal properties:
+	- **str**
+	- **float, int**
+	- **datetime**
+	- **UUID**
+	- **Bool**
 
 5. Teardown the SDK when the application closes to ensure all signals currently in the queue are sent:
 	```python
