@@ -20,9 +20,10 @@ You can send signals using a variety of ways:
 3. Simulating sample signals for test purposes (follow instructions below).  
 
 
-## Simulate sample signals
-Watch this video to learn how to similate signals. [INSERT VIDEO]
+## Simulate sample signals  
+Watch this video to learn how to similate signals.  
 
+>[!VIDEO https://youtube.com/embed/TR3IEk_rTAw] 
 
 ### Add a signal
 
