@@ -66,7 +66,7 @@ The export process is identical to the deletion process when it comes to definin
  
 After clicking **Export**, all signals of the current team that contain matching tagged properties will be exported in CSV format to the destination Blob.
 
-##### Good Practices
+#### Good Practices
 * Avoid sending any signals that contain PII data.
 * If you do need to send signals containing PII data, make sure to limit the number of signals and signal properties containing PII data as much as possible. Ideally, stick to only one signal that sends PII data.
 * Make sure that as few people as possible have access to the sent PII data.

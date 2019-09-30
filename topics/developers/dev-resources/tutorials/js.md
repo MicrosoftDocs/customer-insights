@@ -32,7 +32,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 ## Integrate the Product Insights SDK into your webpage or project
 1. Add the Product Insights SDK to your page:
-	1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_js_sdk.zip) the **Product Insights JavaScript SDK**
+	1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_js_sdk.zip) the **Product Insights JavaScript SDK**.
 	2. Add the SDK file to your project, and add it to your page using a script tag:
 		```javascript
 		<script type="text/javascript" src="pi_js_sdk-1.0.0.min.js">

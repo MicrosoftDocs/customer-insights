@@ -3,8 +3,8 @@ uid: developers/tutorials/insights-smooth-data
 title: Smooth data
 author: ruthaisabokhae
 description: Smooth data
-ms.author: v-roha
-ms.date: 05/22/2019
+ms.author: ruthai
+ms.date: 09/29/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -20,4 +20,4 @@ Choose an automatic time grain to let the system find the optimal window size.
 2. Select a method from the **Smooth** menu such as **Rolling average**.
 3. Product Insights will smooth the data on your chart according to the method you have selected.
 
-> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/insights-smoothing.mp4]
+>[!VIDEO https://youtube.com/embed/28Z7mSn8ta0] 

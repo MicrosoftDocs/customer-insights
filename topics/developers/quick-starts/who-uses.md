@@ -11,11 +11,11 @@ ms.topic: conceptual
 
 ## <a id="who_uses"></a>Who is using Product Insights and how?
 
-Product Insights processes telemetry data and provides insights for Windows, Office, Skype, and other teams.
+Product Insights processes telemetry data and provides insights for Windows, Office, Xbox, Skype, and other teams.
 
 <br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2RWMK]
+[INSERT VIDEO]
 
 > [!div class="nextstepaction"]
 > [Next >>](how-to-get-started.md)
