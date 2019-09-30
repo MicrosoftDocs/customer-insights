@@ -22,7 +22,8 @@ You can send signals using a variety of ways:
 
 
 ## Simulate sample signals
-Watch this video to learn how to similate signals. [INSERT VIDEO]
+Watch this video to learn how to similate signals.  
+>[!VIDEO https://youtube.com/embed/TR3IEk_rTAw] 
 
 
 ### Add a signal
