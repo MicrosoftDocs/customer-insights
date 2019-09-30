@@ -47,13 +47,13 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 3. Initialize the SDK:
 	```python
-	from pi_analytics, import PIAnalytics, Signal
-	from product_insights, import LogManager
-	from datetime import datetime
+    from pi_analytics, import PIAnalytics, Signal
+    from product_insights, import LogManager
+    from datetime import datetime
 
-	LogManager.initialize('your-ingestion-key')
-	pia = PIAnalytics('your-ingestion-key')
-	```
+    LogManager.initialize('your-ingestion-key')
+    pia = PIAnalytics('your-ingestion-key')
+    ```
 
 4. Track signals:
 
