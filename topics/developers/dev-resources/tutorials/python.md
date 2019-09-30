@@ -40,15 +40,16 @@ The following scenario will be used to construct the Product Insights SDK exampl
     - **At Runtime**: Put the following code block before any `pi_analytics` import:
 		```python
 		import sys
-		sys.path.append('/path/to/pi_analytics-x.y.z.egg')
+    	sys.path.append('/path/to/pi_analytics-x.y.z.egg')
 		```
 	> [!NOTE]
 	> Replace the `x.y.z` with the version number found in the decompressed file
 
 3. Initialize the SDK:
 	```python
-	From pi_analytics, import PIAnalytics, Signal
-	From product_insights, import LogManager
+	from pi_analytics, import PIAnalytics, Signal
+	from product_insights, import LogManager
+	from datetime import datetime
 
 	LogManager.initialize('your-ingestion-key')
 	pia = PIAnalytics('your-ingestion-key')
@@ -57,20 +58,20 @@ The following scenario will be used to construct the Product Insights SDK exampl
 4. Track signals:
 
 	- Do a simple track signals call:
-		```python
-		pia.track_signal(Signal('user_information'))
-		sig = Signal('car_information')
-		```
+	  ```python
+    pia.track_signal(Signal('user_information'))
+    sig = Signal('car_information')
+    ```
 
     - Both indexing and `set_property()` are allowed
-		```python
-		sig.properties['engine_start'] = True
-		sig.properties['car_model'] = 'Star Car'
-		sig.set_property('model_year', datetime.fromtimestamp(1565631527))
-		sig.set_property('rpm', 3000)
-		sig.set_property('temperature', 74.3)
-		pia.track_signal(sig)
-		```
+    ```python
+    sig.properties['engine_start'] = True
+    sig.properties['car_model'] = 'Star Car'
+    sig.set_property('model_year', datetime.fromtimestamp(1565631527))
+    sig.set_property('rpm', 3000)
+    sig.set_property('temperature', 74.3)
+    pia.track_signal(sig)
+    ```
 
 		The following types are supported for custom signal properties:
 		- **str**

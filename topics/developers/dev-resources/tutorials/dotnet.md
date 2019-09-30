@@ -55,7 +55,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 3. Initialize ProductInsightsAnalytics:
 	```csharp
 	LogManager.Start(new LogConfiguration());
-	ProductInsightsAnalytics pia = new ProductInsightsAnalytics(ingestionKey);
+	ProductInsightsAnalytics pia = new ProductInsightsAnalytics("Your-Ingestion-Key");
 	```
 4. Track signals:
 	```csharp

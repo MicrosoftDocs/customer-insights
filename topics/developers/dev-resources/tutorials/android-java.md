@@ -84,14 +84,14 @@ The following scenario will be used to construct the Product Insights SDK exampl
     // The first parameter is the application context, this examples assumes it is called from an Activity.
     AppCenter.start(
         getApplication(),
-        String.format("app-secret=%s;target=%s", appCenterSecret, ingestionKey),
+        "app-secret=Your-AppCenter-Secret;target=Your-Ingestion-Key",
         Analytics.class);
     ```
 
 8. Initialize `ProductInsightsAnalytics`:
 
     ```java
-    ProductInsightsAnalytics pia = new ProductInsightsAnalytics(ingestionKey);
+    ProductInsightsAnalytics pia = new ProductInsightsAnalytics("Your-Ingestion-Key");
     ```
 
 9. Track signals:
