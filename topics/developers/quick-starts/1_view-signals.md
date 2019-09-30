@@ -4,7 +4,7 @@ title: View signals
 author: ruthaisabokhae
 description: View signals
 ms.author: ruthai
-ms.date: 05/14/2019
+ms.date: 09/30/2019
 ms.service: product-insights
 ms.topic: conceptual
 layout: LandingPage
@@ -12,15 +12,50 @@ layout: LandingPage
 
 # Send signals 
 
-This section explains how to find and explore a continuous flow of data from a variety of sources such as products, websites, and mobile applications as sent to a sample project named Fabrikam Go.
+Signals are data sent to Project Insights from remote applications. You can find and explore a continuous flow of data from a variety of sources such as products, websites, and mobile applications.    
 
-1. [Log into Product Insights](what-is). 
-2. Select the **Product Summary** team on the left pane of the landing page. 
-3. Select **Fabrikam Automobiles** from the list of the team's projects, 
-4. Select the **vehicle_drive_end** signal to see the details of this signal, including all properties that are sent with it.
-5. Select **Explore** in the top right corner to begin investigating and analyzing this signal.
+You can send signals using a variety of ways:  
 
-> [!VIDEO https://ariamediahost.blob.core.windows.net/media/videos/ProductInsights/ViewSignals_tutorial.mp4]
+1. Using Product Insights [SDKs](https://review.docs.microsoft.com/en-us/dynamics365/product-insights/developers/dev-resources/?branch=master).  
+2. Exploring our [samples](www.microsoft.com).  
+3. Simulating sample signals for test purposes (follow instructions below).  
 
-> [!div class="nextstepaction"]
-> [Next >>](2_create-own-metric.md)
+
+## Simulate sample signals
+Watch this video to learn how to similate signals. [INSERT VIDEO]
+
+
+### Add a signal
+
+1. Select a team from the left pane of the Home screen, such as **insert name**.
+
+1. Select a project from the team screen, such as **insert name**.
+
+1. Select the **Define a Signal** button from the project screen. The **Add new** signal window will appear.
+
+1. Enter a name for the new signal into the Display name field (in this case, **insert name**). Enter any text into **Description**. The **Display name** field will fill automatically.
+
+1. Select the new signal. The Signals screen will appear.
+
+### Add properties
+
+1. Select the **Add** button in the Properties pane. The **Add new** properties window will appear.
+
+1. Enter values for the **Display name** field of the property, and select a value from
+the **Expected type** drop-down menu such as **String**. Select **Add** when you're ready to proceed.
+
+1. Repeat the previous step for as many properties as you wish to add, such as **insert name**, **insert name**, and **insert name**.
+
+### Generate a sample signal
+
+1. Select the **Generate** button. The **Generate test data** window will appear.
+
+2. Enter sample values for each of the properties, with an optional **variation range** for each.
+
+|Property|Example value|Variation range|
+|--------|-------------|---------------|
+|command|start,stop|
+|speed|100|40%|
+|model|GEM, ATV, GoKart|
+
+3. Click **Start** to generate data for the sample signal.
