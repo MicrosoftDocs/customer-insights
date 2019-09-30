@@ -4,7 +4,7 @@ title: Get an API token (ingestion key) from the portal
 author: ruthaisabokhae
 description: Get an API token from the portal
 ms.author: ruthai
-ms.date: 04/12/2019
+ms.date: 09/30/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
