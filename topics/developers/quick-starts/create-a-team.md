@@ -17,6 +17,8 @@ First, sign into Product Insights at [https://pi.dynamics.com](https://pi.dynami
 > [!NOTE]
 > - An Azure Active Directory (AAD) or Microsoft account (example: sample@outlook.com) is required for signing up for the Product Insights preview.   
 
+>[!VIDEO https://youtube.com/embed/wTLSpr5kecQ] 
+
 ## Create a team<br>
 To create a team, follow these steps:
 1. If you are not already part of a team, select **+New team** in the bottom left corner of the portal.
