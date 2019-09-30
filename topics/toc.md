@@ -64,7 +64,7 @@
 # Terms and compliance
 ## [Privacy statement](xref:developers/articles/privacy-statement)
 ## [Terms of Service](xref:developers/articles/terms-of-service)
-## [GDPR/ Compliance](xref:developers/articles/compliance)
+## [GDPR/ Compliance]
 ### [Deleting and exporting signal data containing personal identifiable information](xref:developers/articles/delete-export)
 ### [How to control the lifecycle of user content and application usage data](xref:developers/articles/user-content)
 
