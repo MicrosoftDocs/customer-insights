@@ -8,11 +8,11 @@ ms.date: 08/27/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
-# Getting started with the event sender
-The event sender can be used to send both CSV and Key/Value Pair formatted signals to Product Insights.
+# Getting started with the event sending tool
+The event sending tool can be used to send both CSV and Key/Value Pair formatted signals to Product Insights.
 
 
-## Download the sender
+## Download the event sending tool
 Depending on your Operating System, you should download one of the following command-line executables:
 
 * [Windows](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/EventSender/Windows/pi.exe)
