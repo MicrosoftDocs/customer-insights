@@ -58,7 +58,7 @@
 #### [Python SDK Sample](xref:developers/downloads/python-sample)
 #### [Web/React SDK Sample](xref:developers/downloads/js-sample)
 
-## [Event Sender tool](xref:developers/downloads/ingest)
+## [Event Sending tool](xref:developers/downloads/ingest)
 
 ## [Azure IoT/ Event Hubs](xref:developers/downloads/event-iot-hub)
 
