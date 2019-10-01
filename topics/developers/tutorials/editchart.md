@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Create and edit a chart
+# Create charts and dashboards
 
 ![Creat and edit a chart](Createchart.gif "Create and edit a chart")
 
