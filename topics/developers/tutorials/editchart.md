@@ -1,8 +1,8 @@
 ---
 uid: developers/tutorials/editchart
-title: Create and edit a chart
+title: Create charts and dashboards
 author: ruthaisabokhae
-description: Create and edit a chart
+description: Create charts and dashboards
 ms.author: ruthai
 ms.date: 09/27/2019
 ms.service: product-insights
@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Create charts and dashboards
 
-![Creat and edit a chart](Createchart.gif "Create and edit a chart")
+![Create charts and dashboards](Createchart.gif "Create charts and dashboards")
 
 To create a chart, first select the signal you want to view in chart form, then proceed to “slice and dice” your data by selecting **measure**, **filter(s)**, **Group by**, and transforming your data using **Smooth**. If you would like to measure your data's rate change, you could use **Show change**. There are more utilities to support your exploration under the **More** section.<br> 
 
