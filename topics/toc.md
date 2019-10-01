@@ -15,10 +15,10 @@
 ### [Explore in-built samples](xref:developers/tutorials/explore-samples)
 
 ## Send signals
-### [Simulate signals](xref:developers/quick-starts/1_view-signals)
 ### [Import signals from other fabrics](xref:developers/tutorials/import-signals)
 ### [Send signals using SDKs](xref:developers/tutorials/send-additional-signals)
 ### [Enrich your data with CDS](xref:developers/tutorials/enrichment)
+### [Get API token/ Ingestion key](xref:developers/downloads/api-token) 
 
 ## Analyze data
 ### [Explore your data](xref:developers/tutorials/exploredraft)
@@ -72,5 +72,5 @@
 
 
 # Help and Support
-## [Contact us](https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum)
-## [Engage community](https://community.dynamics.com/365/product-insights/)
+## [Contact us](xref:developers/customer-care/support)
+## [Engage community](xref:developers/customer-care/community)
