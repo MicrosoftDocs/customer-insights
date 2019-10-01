@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Collaborate on a chart or dashboard
+# Collaborate on your insights
 
 With Product Insight’s built-in collaboration capabilities, you can easily go from insight to action. When you discover an important insight while exploring your data, comment on your findings right away and assign a colleague to take a look.  You can even set a due date if necessary. The individual you name in the task will automatically receive a notification and can comment on the insight via the same interface.
 
