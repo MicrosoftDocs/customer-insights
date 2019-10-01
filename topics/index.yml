@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Product Insights Documentation
-summary: Welcome to Product Insights! Get enabled to collect signals from your products and services, and gain actionable insights into your customers' usage and experiences.
+title: Product Insights
+summary: Welcome to Product Insights! Collect signals from your products and services, and gain actionable insights into your customers' usage and experiences.
 
 metadata:
   title: Product Insights Documentation
@@ -61,7 +61,7 @@ landingContent:
             url: developers/dev-resources/tutorials/js.md
       - linkListType: download
         links:
-          - text: Download Product Insights SDKs
+          - text: Download Signal SDKs
             url: developers/dev-resources/index.md
 
   # Card
