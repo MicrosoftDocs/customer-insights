@@ -9,13 +9,11 @@ ms.topic: conceptual
 
 ## <a id="how_start"></a>Get started
 
-To help you make the best of Product Insights fast, we organized the documentation site to be goal and task oriented. 
+To help you make the best of Product Insights, we've organized this site to be goal and task oriented.
 
-We expect you to watch all the videos in the **Get Started** section, which should take less than 5 minutes, 
-before you start using Product Insights.
+We recommend that you watch all the videos in the **Get Started** section before you start using Product Insights.
 
- 
-The **Do More** section teaches you all the possible ways you can achieve each of the tasks you learned in the "Get Started" section.
+The **Do More** section teaches you all the possible ways you can achieve each of the tasks you learned in the **Get Started** section.
   
 The remaining sections contain reference material that you can use as the need arises.
 
