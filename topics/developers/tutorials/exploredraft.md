@@ -9,9 +9,10 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Explore data with a draft
+# Explore data
 
-Drafts are personal explorations which are private and only viewable by you. Drafts gives you as a user, the opportunity to explore your data and choose to share your findings at will. Once ready to share, you can then publish your draft to a dashboard so that your team can view and further collaborate on it.  
+Product Insights makes it easy to see the data coming in from your products in real-time. You can see all your signals and their properties, and then drill down to a specific signal to see the data as it arrives in real-time. To further investigate the signal, click on **Explore**. Explore your data to slice, dice, and group the data to derive insights. Once you have the view you want, publish to a dashboard and share the insights with your team.  
+
 
 View this video to learn how to explore data.  
 
