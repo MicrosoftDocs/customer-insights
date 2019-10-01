@@ -11,4 +11,4 @@ ms.topic: conceptual
 
 # Engage community 
 
-## [Engage community](https://community.dynamics.com/365/product-insights/) to engage with other users, read our blog and make feature requests.
+## [Engage community](https://community.dynamics.com/365/product-insights/) to interact with other users, read our blog and make feature requests.
