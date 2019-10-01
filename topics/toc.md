@@ -66,9 +66,10 @@
 # Terms and compliance
 ## [Privacy statement](xref:developers/articles/privacy-statement)
 ## [Terms of Service](xref:developers/articles/terms-of-service)
+
 ## GDPR/ Compliance
 ### [Delete and export user data](xref:developers/articles/delete-export)
-### [Manage the lifecycle of user data](xref:developers/articles/user-content)
+### [Manage lifecycle of user data](xref:developers/articles/user-content)
 ## [Product limitations for public preview](xref:developers/tutorials/product-preview-limitations)
 
 
