@@ -18,7 +18,7 @@
 ### [Import signals from other fabrics](xref:developers/tutorials/import-signals)
 ### [Send signals using SDKs](xref:developers/tutorials/send-additional-signals)
 ### [Enrich your data with CDS](xref:developers/tutorials/enrichment)
-### [Get API token/ Ingestion key](xref:developers/downloads/api-token)
+### [Get API token/Ingestion key](xref:developers/downloads/api-token)
 
 ## Analyze data
 ### [Explore your data](xref:developers/tutorials/exploredraft)
