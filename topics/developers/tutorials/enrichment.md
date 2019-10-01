@@ -16,8 +16,7 @@ This tutorial will guide you through the process of using a Product Insights Com
 
 The data ingested is limited to just two fields from CDS: `ProductId` from product entity and `AssetId` from asset entity.
 
-> [!NOTE]
-> Enrichment is limited to 1 per project and this feature is not available for MSA users.
+Note that enrichment is limited to one per project, and this feature is not available for Microsoft account users (MSA accounts).
 
 ## Prerequisites
 * Dynamics Field service subscription
