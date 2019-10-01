@@ -8,7 +8,7 @@ ms.date: 09/29/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
-# Create a dashboard
+# Analyze your data by creating a dashboard
 
 Dashboards are a way for you to organize analysis on various signals that are important to your business or organization, primarily in the form of multiple charts. Share your dashboard with individuals within your organization or your whole team, and collaborate on this dashboard.  
 
