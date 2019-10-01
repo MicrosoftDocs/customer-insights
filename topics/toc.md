@@ -11,14 +11,14 @@
 
 # Do more
 
-## Explore samples 
+## Explore samples
 ### [Explore in-built samples](xref:developers/tutorials/explore-samples)
 
 ## Send signals
 ### [Import signals from other fabrics](xref:developers/tutorials/import-signals)
 ### [Send signals using SDKs](xref:developers/tutorials/send-additional-signals)
 ### [Enrich your data with CDS](xref:developers/tutorials/enrichment)
-### [Get API token/ Ingestion key](xref:developers/downloads/api-token) 
+### [Get API token/Ingestion key](xref:developers/downloads/api-token)
 
 ## Analyze data
 ### [Explore your data](xref:developers/tutorials/exploredraft)
@@ -60,14 +60,16 @@
 
 ## [Event Sending tool](xref:developers/downloads/ingest)
 
-## [Azure IoT/ Event Hubs](xref:developers/downloads/event-iot-hub)
+## [Azure IoT Hubs](xref:developers/downloads/iot-hub)
+## [Azure Event Hubs](xref:developers/downloads/event-hub)
 
 # Terms and compliance
 ## [Privacy statement](xref:developers/articles/privacy-statement)
 ## [Terms of Service](xref:developers/articles/terms-of-service)
+
 ## GDPR/ Compliance
 ### [Delete and export user data](xref:developers/articles/delete-export)
-### [Manage the lifecycle of user data](xref:developers/articles/user-content)
+### [Manage lifecycle of user data](xref:developers/articles/user-content)
 ## [Product limitations for public preview](xref:developers/tutorials/product-preview-limitations)
 
 

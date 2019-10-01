@@ -84,5 +84,5 @@ The following scenario will be used to construct the Product Insights SDK exampl
 5. Teardown the SDK when the application closes to ensure all signals currently in queue are sent:
     ```csharp
     LogManager.UploadNow();
-      LogManager.Teardown();
+    LogManager.Teardown();
     ```
