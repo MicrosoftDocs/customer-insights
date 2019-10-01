@@ -21,14 +21,12 @@
 ### [Enrich your data with CDS](xref:developers/tutorials/enrichment)
 
 ## Analyze data
-### [Create a dashboard](xref:developers/tutorials/create-dashboard)
-### [Explore data with a draft](xref:developers/tutorials/exploredraft)
-### [Create and edit a chart](xref:developers/tutorials/editchart)
-### [Collaborate on a dashboard](xref:developers/tutorials/collaborate)
+### [Explore your data](xref:developers/tutorials/exploredraft)
+### [Create charts and dashboards](xref:developers/tutorials/editchart)
+### [Collaborate on your insights](xref:developers/tutorials/collaborate)
 
 
 ## Gain insights
-### [Discover insights](xref:developers/tutorials/insights-discover)
 ### [Fix data gaps](xref:developers/tutorials/insights-fix-data-gaps)
 ### [Smooth data](xref:developers/tutorials/insights-smooth-data)
 ### [Run comparisons](xref:developers/tutorials/insights-run-comparisons)
@@ -39,36 +37,40 @@
 ### [Export to Power BI](xref:developers/tutorials/exportpowerbi)
 ### [Embed in Dynamics 365](xref:developers/tutorials/embed)
 
-
-# Manage your system
-## [Administration](xref:developers/dev-resources/manage-teams)
-## [Get API token/ ingestion key](xref:developers/downloads/api-token)
-## [Product limitations for public preview](xref:developers/tutorials/product-preview-limitations)
+## [Manage teams and projects](xref:developers/dev-resources/manage-teams)
 
 # Developer resources
-## [Download SDKs to send signals](xref:developers/dev-resources/index)
-## [SDK tutorials](xref:developers/downloads/tutorials/index)
-### [Android (mobile, Java)](xref:developers/downloads/android-java)
-### [Android SDK Sample](xref:developers/downloads/android-java-sample)
-### [iOS/macOS (Objective-C)](xref:developers/downloads/ios-objc)
-### [iOS/macOS SDK Sample](xref:developers/downloads/ios-objc-sample)
-### [.NET](xref:developers/downloads/dotnet)
-### [.NET SDK Sample](xref:developers/downloads/dotnet-sample)
-### [Python](xref:developers/downloads/python)
-### [Python SDK Sample](xref:developers/downloads/python-sample)
-### [Web/React (JavaScript)](xref:developers/downloads/js)
-### [Web/React SDK Sample](xref:developers/downloads/js-sample)
-## [Event Sender](xref:developers/downloads/ingest)
-## [IoT/ Event Hubs](xref:developers/downloads/event-iot-hub)
+
+## Signals SDKs
+### [Downloads](xref:developers/dev-resources/index)
+
+### [Tutorials](xref:developers/downloads/tutorials/index)
+#### [Android (mobile, Java)](xref:developers/downloads/android-java)
+#### [iOS/macOS (Objective-C)](xref:developers/downloads/ios-objc)
+#### [.NET](xref:developers/downloads/dotnet)
+#### [Python](xref:developers/downloads/python)
+#### [Web/React (JavaScript)](xref:developers/downloads/js)
+
+### Samples
+#### [Android SDK Sample](xref:developers/downloads/android-java-sample)
+#### [iOS/macOS SDK Sample](xref:developers/downloads/ios-objc-sample)
+#### [.NET SDK Sample](xref:developers/downloads/dotnet-sample)
+#### [Python SDK Sample](xref:developers/downloads/python-sample)
+#### [Web/React SDK Sample](xref:developers/downloads/js-sample)
+
+## [Event Sender tool](xref:developers/downloads/ingest)
+
+## [Azure IoT/ Event Hubs](xref:developers/downloads/event-iot-hub)
 
 # Terms and compliance
 ## [Privacy statement](xref:developers/articles/privacy-statement)
 ## [Terms of Service](xref:developers/articles/terms-of-service)
-## [GDPR/ Compliance]
-### [Deleting and exporting signal data containing personal identifiable information](xref:developers/articles/delete-export)
-### [How to control the lifecycle of user content and application usage data](xref:developers/articles/user-content)
+## GDPR/ Compliance
+### [Delete and export user data](xref:developers/articles/delete-export)
+### [Manage the lifecycle of user data](xref:developers/articles/user-content)
+## [Product limitations for public preview](xref:developers/tutorials/product-preview-limitations)
 
 
-# Customer care
-## [Community](https://community.dynamics.com/365/product-insights/)
-## [Ask a question](https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum)
+# Help and Support
+## [Contact us](https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum)
+## [Engage community](https://community.dynamics.com/365/product-insights/)
