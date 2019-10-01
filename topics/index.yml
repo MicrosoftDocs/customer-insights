@@ -7,7 +7,7 @@ metadata:
   title: Product Insights Documentation
   description: Product Insights Documentation
   ms.service: product-insights
-  ms.topic: landing-page 
+  ms.topic: landing-page
   ms.collection: collection
   author: buck1ey
   ms.author: buckg
@@ -19,7 +19,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Take a tour 
+  - title: Take a tour
     linkLists:
       - linkListType: overview
         links:
@@ -43,7 +43,7 @@ landingContent:
             url: developers/quick-starts/2_create-dashboard.md
           - text: Gain insights
             url: developers/quick-starts/3_get-insights.md
- 
+
   # Card
   - title: Developer resources
     linkLists:
@@ -53,7 +53,7 @@ landingContent:
             url: developers/dev-resources/tutorials/android-java.md
           - text: Objective-C SDK
             url: developers/dev-resources/tutorials/ios-objc.md
-          - text: .NET Core SDK
+          - text: .NET SDK
             url: developers/dev-resources/tutorials/dotnet.md
           - text: Python SDK
             url: developers/dev-resources/tutorials/python.md
@@ -75,4 +75,3 @@ landingContent:
             url: https://community.dynamics.com/365/product-insights/b/product-insights-team-blog
           - text: Forum/ Support
             url: https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum
-          
