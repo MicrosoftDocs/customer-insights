@@ -21,12 +21,9 @@ Charts that are published to dashboards can be embedded with the following steps
 3.	Click on the **(…)** on the title of the chart and select the **Embed chart** option.
 5.	Copy the URL from the dialog box. This will be the source URL for your iframe.
  
-[Add screenshot showing a embedded chart in Field Service]
-
 ## How to embed a dashboard page
 A full page (collection of visuals/charts) from a dashboard can also be embedded following these steps:
 1.	Login to Product Insights.
 2.	Go to a dashboard that which contains the page you would like to embed.
 3.	Click on **Embed Page(</>)** and copy the URL from the dialog. This will be the source URL for your iframe.
 
- [Add screenshots from Field Service showing a whole embed page]
