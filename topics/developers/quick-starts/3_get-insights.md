@@ -12,8 +12,7 @@ ms.topic: conceptual
 
 Product Insights helps you discover insights in data with which you may not be familiar. There are two main ways Product Insights provides additional insight. One is on your home page when you log in. Our AI-powered engine picks up any interesting patterns or anomalies in your data, and displays on your home screen. When you are exploring data, you will see suggested splits and transforms you can perform on your data for insights.  
 
-Watch this video to learn more about how Product Insights highlights the insights you need to pay attention to, and gives you ideas on how to get started understanding your data.   
- [INSERT VIDEO]
+Learn more about how Product Insights highlights the insights you need to pay attention to, and gives you ideas on how to get started understanding your data.   
  
  
 ### Follow these simple steps to discover insights:
