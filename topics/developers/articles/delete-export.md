@@ -12,7 +12,7 @@ ms.topic: conceptual
 # GDPR/ Compliance 
 
 ## Background
-The European Union’s General Data Protection Regulation (GDPR) that has been applied since May 25, 2018, gives significant rights to individuals with regards to their data. The GDPR is fundamentally about protecting and enabling the privacy rights of individuals. You can read more about the Microsoft commitment to security at the Microsoft Trust Center.
+The European Union’s General Data Protection Regulation (GDPR) that has been applied since May 25, 2018, gives significant rights to individuals with regards to their data. The GDPR is fundamentally about protecting and enabling the privacy rights of individuals. You can read more about the Microsoft commitment to security at the [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center).
 
 ## Deleting and exporting signal data containing personal identifiable information (PII)
 The following sections describe how to delete and export signal data that may contain PII.
