@@ -70,8 +70,8 @@ landingContent:
       - linkListType: learn
         links:
           - text: Community
-            url: developers/customer-care/community
+            url: developers/customer-care/community.md
           - text: Blog
-            url: developers/customer-care/community
+            url: developers/customer-care/community.md
           - text: Forum/ Support
-            url: developers/customer-care/support
+            url: developers/customer-care/support.md
