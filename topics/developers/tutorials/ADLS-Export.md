@@ -54,7 +54,7 @@ This section allows you to specify the authentication and export destination set
 You need to specify at least the name of the file system.
 
 ### Options  
-There are three settings to consider when exporting your signals:
+There are two settings to consider when exporting your signals:
 
 #### Export granularity
 This setting allows you to choose the granularity of files containing exported signals. Depending on this setting, your signals will be exported to files that are created per hour or per day.

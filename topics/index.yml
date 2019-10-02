@@ -70,8 +70,8 @@ landingContent:
       - linkListType: learn
         links:
           - text: Community
-            url: https://community.dynamics.com/365/product-insights/
+            url: developers/customer-care/community
           - text: Blog
-            url: https://community.dynamics.com/365/product-insights/b/product-insights-team-blog
+            url: developers/customer-care/community
           - text: Forum/ Support
-            url: https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum
+            url: developers/customer-care/support
