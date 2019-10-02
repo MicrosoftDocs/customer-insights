@@ -19,7 +19,7 @@ While using Product Insights two different kinds of user related content will ev
 
 The following sections describe how you can manage the lifecycle of your data.
 
-### User content
+## User content
 When you use Product Insights, you create several documents, such as dashboards, user settings etc. All of the content you create can be viewed modified and deleted through the [Product Insights User Interface](https://pi.dynamics.com/).
 
 ## Usage data
