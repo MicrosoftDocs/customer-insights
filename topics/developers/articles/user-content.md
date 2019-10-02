@@ -33,7 +33,8 @@ Most of this data has a retention of less than 30 days and will automatically be
 ### Azure Active Directory Accounts
 Only Azure Active Directory (AAD) Tenant Admins can issue export/delete requests on behalf of the organization they manage. Please contact your ADD Tenant Admin to assist you. If you are an AAD Tenant Admin you can find the detailed documentation in how to create export/delete requests [here](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-azure).
 
-[!NOTE] Deletion requests for Usage Data are triggered by deleting the associated user from the AAD Tenant.
+> [!NOTE] 
+> Deletion requests for Usage Data are triggered by deleting the associated user from the AAD Tenant.
 
 ### Microsoft Accounts
 You can delete/export your data by logging into your Microsoft Account and following the instructions on the [Privacy Dashboard](https://account.microsoft.com/privacy).
