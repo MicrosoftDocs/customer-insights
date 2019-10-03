@@ -51,7 +51,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
     ```
 
 ### Integrate the Product Insights Analytics SDK Manually
-1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_objc_sdk.zip) the **Product Insights Analytics Objective-C SDK** for iOS or macOS.
+1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_objc_sdk.zip) the **Product Insights Analytics Objective-C SDK** for iOS and macOS.
 2. Unzip the SDK archive and copy the corresponding framework:
     * For iOS, navigate to the *iOS* folder
         * For debug version, navigate to the *Debug* folder
@@ -94,16 +94,16 @@ The following scenario will be used to construct the Product Insights SDK exampl
 1. Start the SDK from an app (only required once). Follow these steps:
     * Insert the following lines to start the SDK in your app's `AppDelegate.m` class in the `didFinishLaunchingWithOptions:` method:
         ```objc
-        [MSAppCenter start:@"target={Your Ingestion Key}" withServices:@[[MSAnalytics class]]];
+        [MSAppCenter start:@"target=Your_Ingestion_Key" withServices:@[[MSAnalytics class]]];
         ```
     * If your application already uses the Microsoft AppCenter SDK to track telemetry:
         ```objc
-        [MSAppCenter start:@"app-secret={Your App Secret}; target={Your Ingestion Key}" withServices:@[[MSAnalytics class]]];
+        [MSAppCenter start:@"app-secret=Your_App_Secret; target=Your_Ingestion_Key" withServices:@[[MSAnalytics class]]];
         ```
 
 2. Insert the following line to initiate Product Insights Analytics:
     ```objc
-    PIAnalytics *piAnalytics = [[PIAnalytics new] initWithIngestionKey:{Your Ingestion Key}];
+    PIAnalytics *piAnalytics = [[PIAnalytics new] initWithIngestionKey:Your_Ingestion_Key];
     ```
 
 3. Insert the following lines to track signals:
