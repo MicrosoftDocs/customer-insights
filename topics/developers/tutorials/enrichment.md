@@ -16,7 +16,8 @@ This tutorial will guide you through the process of using a Product Insights Com
 
 The data ingested is limited to just two fields from CDS: `ProductId` from product entity and `AssetId` from asset entity.
 
-Note that enrichment is limited to one per project, and this feature is not available for Microsoft account users (MSA accounts).
+> [!NOTE]
+> Enrichment is limited to one per project, and this feature is not available for Microsoft account users (MSA accounts). The maximum supported enrichment size is 10MB and the generated enrichment rule will be in effect after 15 minutes for the new signals.
 
 ## Prerequisites
 * Dynamics Field service subscription
