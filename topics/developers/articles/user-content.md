@@ -59,6 +59,8 @@ You could also copy your choice of the following statements into the text box, d
 6. Finally, click "Submit" to submit your request to the Microsoft Privacy Team. 
 ![Submit your request](ExportDeleteRequest_marked.png)
 
->[!NOTE] We are currently working on making the usage data we gather about you 
-accessible on your Microsoft Account Privacy Settings page. The data will be available by the end of October 2019 and will include all data gathered from October 1st 2019 onwards.
+> [!NOTE] 
+> We are currently working on making the usage data we gather about you 
+accessible on your Microsoft Account Privacy Settings page. The data will be available by the end of October 2019 and will include all data gathered from October 1st 2019 onwards.  
+
 For more information regarding Microsoft's commitment towards protecting your privacy, please read the [Microsoft Privacy Statement](https://privacy.microsoft.com/).
