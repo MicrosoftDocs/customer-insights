@@ -58,6 +58,7 @@ Once you have your **connection string** and, optionally, your **consumer group 
 1. Go to the default **Signals** page in your project
 2. Select **+ Add Signals** button on the upper right corner
 3. Select **Connect to IoT Hub**
-4. Enter your **connection string**, a connection name, and optionally a **consumer group name**.
-5.Click the highlighted **Connect** button, and the connection will be made.
+4. The same form will appear as the form in Option 1, please refer to Option 1 for screenshot on how to fill out the form.
+5. Enter your **connection string**, a connection name, and optionally a **consumer group name**.
+6. Click the highlighted **Connect** button, and the connection will be made.
     ![IoT Hub connection signals screenshot](iot-connection-signals.png)
