@@ -13,5 +13,5 @@ ms.topic: conceptual
 
 Connect to data sources and import signals:
 * [Importing from CSV files (file size &ge; 10MB)](xref:developers/downloads/ingest)
-* [Importing from CSV files (file size &lt; 10MB)](xref:developers/downloads/csv-drag-drop)
+* [Importing from CSV files (file size &lt; 10MB)](xref:developers/tutorials/csv-drag-drop)
 * [Importing from Azure IoT Hub or Event Hub](xref:developers/downloads/iot-hub)
