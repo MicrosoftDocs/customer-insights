@@ -15,8 +15,8 @@ Signals are data sent to Project Insights from remote applications. You can find
 
 You can send signals using a variety of ways:  
 
-1. Using Product Insights [SDKs](https://review.docs.microsoft.com/en-us/dynamics365/product-insights/developers/dev-resources/?branch=master).  
-2. Exploring our [samples](www.microsoft.com).  
+1. Using Product Insights [SDKs](../dev-resources/index.md).  
+2. Exploring our [samples](../dev-resources/sdk-samples.md).  
 3. Simulating sample signals for test purposes (follow instructions below).  
 
 
