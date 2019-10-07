@@ -31,11 +31,15 @@ Endpoint=sb://your-endpoint.servicebus.windows.net/;SharedAccessKeyName=key-name
 
 ### Option 2: Obtaining an Event Hub Connection String
 These instructions assume you have already created an event hub instance inside your Event Hubs Namespace.	These instructions assume you have already created an event hub instance inside your Event Hubs Namespace.
+> [!NOTE]
+> You must be on the Shared access policies page for an Event Hub, **not** an Event Hub *Namespace*. If you only have an Event Hub Namespace, you must first create an Event Hub within that Namespace.
 
 1. On your Event Hub's page in the [Azure Portal](https://portal.azure.com/), click on **Shared access policies** on the left pane, under "Settings"
 2. If you haven't created any access policies yet, click the "Add" button to add a policy. Make sure it has **Listen** permission.
     ![SAS Policy screenshot](eventhub-sas-policy.png)
 3. Click on the access policy you want to use and copy the **Connection string** (primary or secondary key)
+    > [!NOTE]
+    > If you do not see an `EntityPath=...` section at the end of the connection string, you have created a connection string for an Event Hub *Namespace*, not an Event Hub. Please create an Event Hub within that Namespace.
 4. (Optional) Use the "Consumer groups" page to create a new consumer group.
     ![Event Hub connection string screenshot](eventhub-connection-string.png)
 
