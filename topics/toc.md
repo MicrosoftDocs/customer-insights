@@ -60,8 +60,7 @@
 
 ## [Event Sending tool](xref:developers/downloads/ingest)
 
-## [Azure IoT Hubs](xref:developers/downloads/iot-hub)
-## [Azure Event Hubs](xref:developers/downloads/event-hub)
+## [Azure IoT/Event Hubs](xref:developers/downloads/iot-hub)
 
 # Terms and compliance
 ## [Privacy statement](xref:developers/articles/privacy-statement)
