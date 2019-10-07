@@ -18,7 +18,7 @@ You can send signals using a variety of ways:
 
 1. Create a team using the instructions found [here](create-a-team.md).
 1. Using Product Insights [SDKs](../dev-resources/index.md).  
-1. Exploring our [samples](../dev-resources/sdk-samples.md).  
+1. Exploring our [samples](explore-samples.md).  
 1. Simulating sample signals for test purposes (follow instructions below).  
 
 
