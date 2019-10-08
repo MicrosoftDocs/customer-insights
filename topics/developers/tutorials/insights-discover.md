@@ -20,5 +20,4 @@ Watch this video to learn more about how Product Insights highlights the insight
 1. If signals are already flowing into your project, you will see notifications on your home page. Click to further explore the data.   
 2. Select a signal and click **Explore** to analyze it.    
 3. See the suggestions that appear below the property dropdown menu and take advantage of the suite of transforms available.  
-4. You can [smooth spiky data](https://review.docs.microsoft.com/en-us/dynamics365/product-insights/developers/tutorials/insights-smooth-data?branch=master), [run comparisons with past data](https://review.docs.microsoft.com/en-us/dynamics365/product-insights/developers/tutorials/insights-run-comparisons?branch=master), and [fix data gaps](https://review.docs.microsoft.com/en-us/dynamics365/product-insights/developers/tutorials/insights-fix-data-gaps?branch=master). 
-
+4. You can [smooth spiky data](insights-smooth-data.md), [run comparisons with past data](insights-run-comparisons.md), and [fix data gaps](insights-fix-data-gaps.md). 
