@@ -1,5 +1,5 @@
 ---
-uid: developers/dev-resources/index
+uid: developers/dev-resources/downloads
 title: Download senders
 author: ruthaisabokhae
 description: Download senders
@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Developer Resources
+# Downloads
 
 Download a signal sender for your platform and follow the tutorials. See the samples for implemented code:
 
