@@ -25,7 +25,7 @@ Download a signal sender for your platform and follow the tutorials. See the sam
 
 
 ## Event Sending tool
-Send signals using our [Event Sending tool](xref:developers/downloads/ingest).
+Send signals using our [Event Sending tool](xref:developers/downloads/ingest)
 
 ## Azure IoT/Event Hubs
-Connect an IoT Hub or Event Hub to Product Insights using [these steps](xref:developers/downloads/iot-hub).
+Connect an IoT Hub or Event Hub to Product Insights using [these steps](xref:developers/downloads/iot-hub)
