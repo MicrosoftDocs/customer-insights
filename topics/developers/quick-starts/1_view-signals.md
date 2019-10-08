@@ -14,7 +14,7 @@ layout: LandingPage
 
 Signals are data sent to Project Insights from remote applications. You can find and explore a continuous flow of data from a variety of sources, such as products, websites, and mobile applications.    
 
-**First, create a team (if you do not have one already) using the instructions found [here](create-a-team.md)** before sending signals.
+**First, create a team (if you do not have one) using the instructions found [here](create-a-team.md)** before sending signals.
 
 You can send signals using a variety of ways:  
 
