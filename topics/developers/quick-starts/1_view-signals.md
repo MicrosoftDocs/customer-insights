@@ -14,12 +14,13 @@ layout: LandingPage
 
 Signals are data sent to Project Insights from remote applications. You can find and explore a continuous flow of data from a variety of sources, such as products, websites, and mobile applications.    
 
+**First, create a team (if you do not have one already) using the instructions found [here](create-a-team.md)** before sending signals.
+
 You can send signals using a variety of ways:  
 
-1. Create a team using the instructions found [here](create-a-team.md).
-1. Using Product Insights [SDKs](../dev-resources/index.md).  
-1. Exploring our [samples](explore-samples.md).  
-1. Simulating sample signals for test purposes (follow instructions below).  
+1. Use Product Insights [SDKs](../dev-resources/index.md).  
+1. Explore our [samples](../tutorials/explore-samples.md).  
+1. Simulate sample signals for test purposes (follow instructions below).  
 
 
 ## Simulate sample signals
@@ -35,11 +36,11 @@ Watch to learn how to simulate signals.
 
 1. Select a project from the team screen, such as **2000 Series**.
 
-1. Select the **Add New Signal** button from the project screen. The **Add Signals** window will appear.
+1. Select the **Add Signals** button from the project screen. The **Add Signals** window will appear.
 
-1. Select **Define a Signal."
+1. Select **Add Signals**.
 
-1. Select **Add** button. The signal will now appear on the list.
+1. Select **Add** button. The signal will appear on the list after you have entered in a name, description (optional) and clicked on **Create**.
 
 1. Enter a name for the new signal into the **Display name** field (in this case, **Sample Signal**). Enter any text into **Description**. 
 
@@ -47,11 +48,13 @@ Watch to learn how to simulate signals.
 
 ### Add properties
 
+#### Ensure you click on your new signal before you add properties following the steps below:
+
 1. Select the **Add Property** button, and the **Add Property** window will appear. 
 
 1. Enter values for the **DetergentConsumption** field of the property, and select a value type from the **Expected type** drop-down menu, such as **Number**. Select **Add** when you're ready to proceed. 
 
-1. Repeat the previous step for as many properties as you wish to add, such as **Firmware**, **Model**, and **WaterConsumptiom**.
+1. Repeat the previous step for as many properties as you wish to add, such as **Firmware**, **Model**, and **WaterConsumption**.
 
 ### Generate a sample signal
 
