@@ -14,7 +14,7 @@ layout: LandingPage
 
 Signals are data sent to Project Insights from remote applications. You can find and explore a continuous flow of data from a variety of sources, such as products, websites, and mobile applications.    
 
-**First, create a team (if you do not have one) using the instructions found [here](create-a-team.md)** before sending signals.
+**First, create a team (if you do not have one) using the instructions found [here](create-a-team.md) before sending signals.
 
 You can send signals using a variety of ways:  
 
@@ -38,7 +38,7 @@ Watch to learn how to simulate signals.
 
 1. Select the **Add Signals** button from the project screen. The **Add Signals** window will appear.
 
-1. Select **Add Signals**.
+1. Select **Define a Signal**.
 
 1. Select **Add** button. The signal will appear on the list after you have entered in a name, description (optional) and clicked on **Create**.
 
