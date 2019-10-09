@@ -1,5 +1,5 @@
 ---
-uid: developers/dev-resources/index
+uid: developers/dev-resources/downloads
 title: Download senders
 author: ruthaisabokhae
 description: Download senders
@@ -9,9 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Developer Resources
-
-## Signal SDKs
+# Downloads
 
 Download a signal sender for your platform and follow the tutorials. See the samples for implemented code:
 
@@ -22,10 +20,3 @@ Download a signal sender for your platform and follow the tutorials. See the sam
 | Python           |                        |Python     |Release| [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_python_sdk.zip) | [Tutorial](xref:developers/downloads/python)        |[Sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_python_sample.zip)| [Run Sample](xref:developers/downloads/python-sample) |
 | .NET |                       |C#         |Release| [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_csharp_sdk.zip)                                     | [Tutorial](xref:developers/downloads/dotnet)        |[Sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_csharp_sample.zip)| [Run Sample](xref:developers/downloads/dotnet-sample) |
 | Web/React (Javascript)        |                        |Javascript |Release| [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_js_sdk.zip)                      | [Tutorial](xref:developers/downloads/js)            |[Sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_js_sample.zip)| [Run Sample](xref:developers/downloads/js-sample) |
-
-
-## Event Sending tool
-Send signals using our [Event Sending tool](xref:developers/downloads/ingest)
-
-## Azure IoT/Event Hubs
-Connect an IoT Hub or Event Hub to Product Insights using [these steps](xref:developers/downloads/iot-hub)

@@ -40,9 +40,10 @@
 ## [Manage teams and projects](xref:developers/dev-resources/manage-teams)
 
 # Developer resources
+## [Quick Links](xref:developers/dev-resources/index)
 
 ## Signals SDKs
-### [Downloads](xref:developers/dev-resources/index)
+### [Downloads](xref:developers/dev-resources/downloads)
 
 ### [Tutorials](xref:developers/downloads/tutorials/index)
 #### [Android (mobile, Java)](xref:developers/downloads/android-java)
