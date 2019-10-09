@@ -25,7 +25,8 @@ Download a signal sender for your platform and follow the tutorials. See the sam
 
 
 ## Event Sending tool
-Send signals using our [Event Sending tool](xref:developers/downloads/ingest)
+Send signals using our [Event Sending tool](xref:developers/downloads/ingest).<br>
+Use the [Drag and drop tool](xref:developers/tutorials/csv-drag-drop) to ingest signals into Product Insights (for CSV files <10 MB).
 
 ## Azure IoT/Event Hubs
-Connect an IoT Hub or Event Hub to Product Insights using [these steps](xref:developers/downloads/iot-hub)
+Connect an IoT Hub or Event Hub to Product Insights using [these steps](xref:developers/downloads/iot-hub).

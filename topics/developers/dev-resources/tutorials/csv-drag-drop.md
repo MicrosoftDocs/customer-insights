@@ -8,7 +8,7 @@ ms.date: 10/07/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
-# CSV Drag and Drop
+# CSV drag and drop
 Use the drag and drop tool to ingest signals into Product Insights for CSV files that are less than 10 MB.
 
 ## Get an ingestion key from Product Insights portal
