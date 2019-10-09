@@ -40,11 +40,13 @@ Watch to learn how to simulate signals.
 
 1. Select **Define a Signal**.
 
-1. Select **Add** button. The signal will appear on the list after you have entered in a name, description (optional) and clicked on **Create**.
+1. Select **Add** button. 
 
 1. Enter a name for the new signal into the **Display name** field (in this case, **Sample Signal**). Enter any text into **Description**. 
 
-1. Select the new signal. The **Signals** screen will appear.
+1. The signal will appear on the list after you have entered in a name, description (optional) and clicked on **Create**.
+
+1. Select the new signal you just created. The **Signals** screen will appear.
 
 ### Add properties
 
