@@ -61,6 +61,8 @@
 
 ## [Event Sending tool](xref:developers/downloads/ingest)
 
+## [Drag and drop tool](xref:developers/tutorials/csv-drag-drop)
+
 ## [Azure IoT/Event Hubs](xref:developers/downloads/iot-hub)
 
 # Terms and compliance
