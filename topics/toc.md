@@ -59,7 +59,7 @@
 #### [Python SDK Sample](xref:developers/downloads/python-sample)
 #### [Web/React SDK Sample](xref:developers/downloads/js-sample)
 
-## [Event Sending tool](xref:developers/downloads/ingest)
+## [Event sending tool](xref:developers/downloads/ingest)
 
 ## [Drag and drop tool](xref:developers/tutorials/csv-drag-drop)
 
@@ -78,3 +78,6 @@
 # Help and Support
 ## [Contact us](xref:developers/customer-care/support)
 ## [Engage community](xref:developers/customer-care/community)
+## [Pricing](xref:developers/customer-care/pricing)
+## [Supported languages](xref:developers/customer-care/supported-lang)
+## [Signal volume](xref:developers/customer-care/signal-volume)
