@@ -1,5 +1,5 @@
 ---
-uid: developers/customer-care/signal-vol
+uid: developers/customer-care/signal-volume
 title: Signal volume
 author: ruthaisabokhae
 description: Signal volume
