@@ -24,7 +24,7 @@ ms.topic: conceptual
 ### How to create dashboards
 [!VIDEO https://youtube.com/embed/plbxupcXN9M]	
 
-## How to collaborate 
+### How to collaborate 
 [!VIDEO https://youtube.com/embed/q4gX8FeP8W0]	
 
 
@@ -37,7 +37,7 @@ ms.topic: conceptual
 ### Fix data gaps
 [!VIDEO https://youtube.com/embed/CmMKYdmvfsk]	
 
-### RUn comparisons
+### Run comparisons
 [!VIDEO https://youtube.com/embed/ECEb8HiuONY]	
 
 ### Smooth data
