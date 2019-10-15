@@ -39,6 +39,8 @@
 
 ## [Manage teams and projects](xref:developers/dev-resources/manage-teams)
 
+# [Video curriculum](xref:developers/tutorials/video-curriculum)
+
 # Developer resources
 ## [Quick Links](xref:developers/dev-resources/index)
 
