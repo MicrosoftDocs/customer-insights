@@ -19,6 +19,7 @@
 ### [Send signals using SDKs](xref:developers/tutorials/send-additional-signals)
 ### [Enrich your data with CDS](xref:developers/tutorials/enrichment)
 ### [Get API token/Ingestion key](xref:developers/downloads/api-token)
+### [Understand our ingestion schema](xref:developers/tutorials/ingestion-schema)
 
 ## Analyze data
 ### [Explore your data](xref:developers/tutorials/exploredraft)
