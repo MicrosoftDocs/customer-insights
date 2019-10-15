@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 ## Discover Product Insights through our videos:
 
-### Take a tour
+### Take a quick tour
 >[!VIDEO https://www.youtube.com/embed/l4yoIES_iN0]
 
 
