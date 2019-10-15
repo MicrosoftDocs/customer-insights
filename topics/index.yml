@@ -80,3 +80,14 @@ landingContent:
             url: developers/customer-care/community.md
           - text: Forum/ Support
             url: developers/customer-care/support.md
+            
+            
+            
+  # Card
+  - title: Videos
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Video curriculum
+            url: developers/tutorials/video-curriculum.md        
+            
