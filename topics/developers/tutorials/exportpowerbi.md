@@ -1,6 +1,6 @@
 ---
 uid: developers/tutorials/exportpowerbi
-title: Exmbed in Dynamics 365
+title: Power BI Connector
 author: ruthaisabokhae
 description: Export data to Power BI
 ms.author: ruthai
