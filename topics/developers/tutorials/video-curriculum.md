@@ -12,6 +12,9 @@ ms.topic: conceptual
 
 ## Discover Product Insights through our videos:
 
+### Take a tour
+>[!VIDEO https://www.youtube.com/embed/l4yoIES_iN0]
+
 
 ### Create a team
 >[!VIDEO https://youtube.com/embed/wTLSpr5kecQ]	
