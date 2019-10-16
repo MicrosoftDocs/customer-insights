@@ -28,6 +28,10 @@ Dynamics 365 **Product Insights** enables business users to collect signals from
 * Sharing and discovery
 
 
+### Take a quick tour
+>[!VIDEO https://www.youtube.com/embed/l4yoIES_iN0]
+
+
 
 > [!div class="nextstepaction"]
 > [Next >>](who-uses.md)
