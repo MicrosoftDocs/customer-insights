@@ -63,16 +63,12 @@
 #### [Web/React SDK Sample](xref:developers/downloads/js-sample)
 
 ## [Event sending tool](xref:developers/downloads/ingest)
-
 ## [Drag and drop tool](xref:developers/tutorials/csv-drag-drop)
-
 ## [Azure IoT/Event Hubs](xref:developers/downloads/iot-hub)
 
 # Terms and compliance
-## [Privacy statement](xref:developers/articles/privacy-statement)
 ## [Terms of Service](xref:developers/articles/terms-of-service)
-
-## GDPR/ Compliance
+## GDPR
 ### [Delete and export user data](xref:developers/articles/delete-export)
 ### [Manage lifecycle of user data](xref:developers/articles/user-content)
 ## [Product limitations for public preview](xref:developers/tutorials/product-preview-limitations)
@@ -81,6 +77,5 @@
 # Help and Support
 ## [Contact us](xref:developers/customer-care/support)
 ## [Engage community](xref:developers/customer-care/community)
-## [Pricing](xref:developers/customer-care/pricing)
 ## [Supported languages](xref:developers/customer-care/supported-lang)
 ## [Signal volume](xref:developers/customer-care/signal-volume)
