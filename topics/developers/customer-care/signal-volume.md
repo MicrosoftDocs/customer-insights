@@ -1,8 +1,8 @@
 ---
 uid: developers/customer-care/signal-volume
-title: Signal volume
+title: Signal throttling volume
 author: ruthaisabokhae
-description: Signal volume
+description: Signal throttling volume
 ms.author: ruthai
 ms.date: 10/14/2019
 ms.service: product-insights
