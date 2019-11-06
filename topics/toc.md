@@ -56,15 +56,15 @@
 #### [Web/React (JavaScript)](xref:developers/downloads/js)
 
 ### Samples
-#### [Android SDK Sample](xref:developers/downloads/android-java-sample)
-#### [iOS/macOS SDK Sample](xref:developers/downloads/ios-objc-sample)
-#### [.NET SDK Sample](xref:developers/downloads/dotnet-sample)
-#### [Python SDK Sample](xref:developers/downloads/python-sample)
-#### [Web/React SDK Sample](xref:developers/downloads/js-sample)
+#### [Android SDK sample](xref:developers/downloads/android-java-sample)
+#### [iOS/macOS SDK sample](xref:developers/downloads/ios-objc-sample)
+#### [.NET SDK sample](xref:developers/downloads/dotnet-sample)
+#### [Python SDK sample](xref:developers/downloads/python-sample)
+#### [Web/React SDK sample](xref:developers/downloads/js-sample)
 
 ## [Event sending tool](xref:developers/downloads/ingest)
 ## [Drag and drop tool](xref:developers/tutorials/csv-drag-drop)
-## [Azure IoT/Event Hubs](xref:developers/downloads/iot-hub)
+## [Azure IoT/Event hubs](xref:developers/downloads/iot-hub)
 
 # Terms and compliance
 ## [Terms of Service](xref:developers/articles/terms-of-service)
@@ -78,4 +78,4 @@
 ## [Contact us](xref:developers/customer-care/support)
 ## [Engage community](xref:developers/customer-care/community)
 ## [Supported languages](xref:developers/customer-care/supported-lang)
-## [Signal volume](xref:developers/customer-care/signal-volume)
+## [Signal throttling volume](xref:developers/customer-care/signal-volume)
