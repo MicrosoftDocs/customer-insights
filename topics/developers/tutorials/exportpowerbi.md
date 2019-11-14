@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Product Insights PowerBI Connector
+# Product Insights Power BI Connector
 
 The Power BI connector accesses aggregated signal data (metrics) from Product Insights, making it possible to construct Power BI reports and dashboards from Product Insights data.  
 
