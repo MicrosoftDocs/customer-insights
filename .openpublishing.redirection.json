@@ -52,7 +52,7 @@
     },
     {
       "source_path": "topics/developers/dev-resources/sdk-samples.md",
-      "redirect_url": "/dynamics365/product-insights/sdk-samples",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
@@ -72,7 +72,7 @@
     },
     {
       "source_path": "topics/developers/dev-resources/tutorials/create-project.md",
-      "redirect_url": "/dynamics365/product-insights/create-project",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
@@ -167,12 +167,12 @@
     },
     {
       "source_path": "topics/developers/tutorials/add-annotations.md",
-      "redirect_url": "/dynamics365/product-insights/add-annotations",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/add-comments.md",
-      "redirect_url": "/dynamics365/product-insights/add-comments",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
@@ -192,7 +192,7 @@
     },
     {
       "source_path": "topics/developers/tutorials/create-sample-signals.md",
-      "redirect_url": "/dynamics365/product-insights/create-sample-signals",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
@@ -212,12 +212,12 @@
     },
     {
       "source_path": "topics/developers/tutorials/examine-signals-metadata.md",
-      "redirect_url": "/dynamics365/product-insights/examine-signals-metadata",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/explore-data.md",
-      "redirect_url": "/dynamics365/product-insights/explore-data",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
@@ -227,7 +227,7 @@
     },
     {
       "source_path": "topics/developers/tutorials/explore-signals.md",
-      "redirect_url": "/dynamics365/product-insights/explore-signals",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
@@ -247,12 +247,12 @@
     },
     {
       "source_path": "topics/developers/tutorials/get-updates.md",
-      "redirect_url": "/dynamics365/product-insights/get-updates",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/import-elsewhere.md",
-      "redirect_url": "/dynamics365/product-insights/import-elsewhere",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
@@ -267,7 +267,7 @@
     },
     {
       "source_path": "topics/developers/tutorials/insights-discover.md",
-      "redirect_url": "/dynamics365/product-insights/insights-discover",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
@@ -287,57 +287,57 @@
     },
     {
       "source_path": "topics/developers/tutorials/metrics-add-splits.md",
-      "redirect_url": "/dynamics365/product-insights/metrics-add-splits",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/metrics-apply-transforms.md",
-      "redirect_url": "/dynamics365/product-insights/metrics-apply-transforms",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/metrics-choose-visualizations.md",
-      "redirect_url": "/dynamics365/product-insights/metrics-choose-visualizations",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/metrics-create-metrics.md",
-      "redirect_url": "/dynamics365/product-insights/metrics-create-metrics",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/metrics-drill-down-to-instance.md",
-      "redirect_url": "/dynamics365/product-insights/metrics-drill-down-to-instance",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/metrics-get-percentiles.md",
-      "redirect_url": "/dynamics365/product-insights/metrics-get-percentiles",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/metrics-manage-metrics.md",
-      "redirect_url": "/dynamics365/product-insights/metrics-manage-metrics",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/metrics-publish-or-add-to-dashboard.md",
-      "redirect_url": "/dynamics365/product-insights/metrics-publish-or-add-to-dashboard",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/metrics-select-topN.md",
-      "redirect_url": "/dynamics365/product-insights/metrics-select-topN",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/metrics-set-granularity.md",
-      "redirect_url": "/dynamics365/product-insights/metrics-set-granularity",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/metrics-use-filters.md",
-      "redirect_url": "/dynamics365/product-insights/metrics-use-filters",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
@@ -347,7 +347,7 @@
     },
     {
       "source_path": "topics/developers/tutorials/select-top.md",
-      "redirect_url": "/dynamics365/product-insights/select-top",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
@@ -357,22 +357,22 @@
     },
     {
       "source_path": "topics/developers/tutorials/send-csv.md",
-      "redirect_url": "/dynamics365/product-insights/send-csv",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/send-using-senders.md",
-      "redirect_url": "/dynamics365/product-insights/send-using-senders",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/set-up-to-send.md",
-      "redirect_url": "/dynamics365/product-insights/set-up-to-send",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/use-expressions.md",
-      "redirect_url": "/dynamics365/product-insights/use-expressions",
+      "redirect_url": "/dynamics365/product-insights",
       "redirect_document_id": "false"
     },
     {
