@@ -16,4 +16,4 @@ What are percentiles? If you have 100 cars reporting MPG values, you may be inte
 
 To see percentile value, select 99th or 95th percentile operation, then the property such as CurrentMileage.
 
-![Getting a percentile](../images/tutorials/GetPercentiles.png)
+![Getting a percentile](media/GetPercentiles.png)

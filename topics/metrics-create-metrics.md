@@ -18,15 +18,15 @@ Here are some sample metrics you can create based on the signal you have selecte
 
 - Total number of drives completed. To create this metric, simply select **Signal count** operation. 
 
-    ![Total no of drives completed](../images/tutorials/create-metrics-signalcount.png)
+    ![Total no of drives completed](media/create-metrics-signalcount.png)
 
 - To see the total number of unique cars, select **distinct count**, and then select the **VIN** property. This will give you a distinct count of vehicle identification numbers presented in the incoming **vehicle_drive_end** signals. 
 
-    ![Total no of unique cars](../images/tutorials/create-metrics-distinctcount.png)
+    ![Total no of unique cars](media/create-metrics-distinctcount.png)
 
 - To see average MPGe for all completed drives, select the **average** operation, then choose the **CurrentMileage** property, which represents MPGe value for completed drives. Product Insights collects all **CurrentMileage** data reported, and then calculates the average value. 
 
-    ![Avg MPGe for all completed drives](../images/tutorials/create-metrics-averagemileage.png)
+    ![Avg MPGe for all completed drives](media/create-metrics-averagemileage.png)
 
 For further instructions, see below. 
 

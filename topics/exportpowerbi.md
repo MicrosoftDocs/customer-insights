@@ -24,21 +24,21 @@ By connecting through the PowerBI Desktop navigation table, the data for a selec
 1. From PowerBI Desktop, select **Get Data** ->**More...**.
 
 2. Select **Product Insights (Beta)** connector.  
-![get data window](getdatawindow.PNG)
+![get data window](media/getdatawindow.PNG)
 
 3. Click **Connect**.
 
 4. Sign in with your Microsoft account.  
-![sigin](signin.PNG)
+![sigin](media/signin.PNG)
 
 5. Navigate through your project's dashboards to find the chart data you would like to import.  
-![nav table](navtable.PNG)
+![nav table](media/navtable.PNG)
 
 6. Check the box next to your chart data and click **Load** to load the data into PowerBI. Once the data is loaded, it will appear in the **data** tab, as shown in the screenshot below.  
-![data tab](loadeddata.PNG)
+![data tab](media/loadeddata.PNG)
 
 7. Now the data is available for creating visualizations, reports, and dashboards.  
-![powerbi chart](powerbichart.PNG)
+![powerbi chart](media/powerbichart.PNG)
 	
 
 ## Connect through Product Insights UI
@@ -48,15 +48,15 @@ This mode of connecting involves copying a query directly from the UI and pastin
 1. Navigate to the dashboard which contains the chart data you would like to load.
 
 2. Click the "..." at the right side of the chart header to show the **Connect to PowerBI** option.  
-![portal connect](portalconnect.jpg)
+![portal connect](media/portalconnect.jpg)
 
 3. Copy the query to your clipboard.  
-![portal query copy](portalcopyquery.jpg)  
+![portal query copy](media/portalcopyquery.jpg)  
 
 4. Launch PowerBI Desktop.
 
 5. Select **Get Data** -> **Blank Query** to launch the query editor.
 
 6. Paste the copied query from the UI into the query editor and press enter.  
-![paste query editor](pastequeryeditor.PNG)
+![paste query editor](media/pastequeryeditor.PNG)
 

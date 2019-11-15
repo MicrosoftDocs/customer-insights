@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Create charts and dashboards
 
-![Create charts and dashboards](Createchart.gif "Create charts and dashboards")
+![Create charts and dashboards](media/Createchart.gif "Create charts and dashboards")
 
 First, select the signal you want to view in chart form. Proceed to “slice and dice” your data by selecting **measure**, **filter(s)**, **Group by**, and transforming your data using **Smooth**. Measure your data's rate change using **Show change**. Check out other utilities to support your exploration under the **More** section.<br> 
 

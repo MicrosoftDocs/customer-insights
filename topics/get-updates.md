@@ -13,4 +13,4 @@ ms.topic: conceptual
 
 Updating the properties of a signal is a simple task with Product Insights.
 
-![Getting an update](updates.png)
+![Getting an update](media/updates.png)

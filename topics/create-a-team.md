@@ -25,7 +25,7 @@ To create a team, follow these steps:
 1. Type a team name of choice in the **Name** field and any text for **Description**. 
 1. Select **Create** to save the update.
 
-	![Create a new team](New_Team.png "Create a new team")
+	![Create a new team](media/New_Team.png "Create a new team")
   
 ## Add members<br>
 To add members to your team, follow these steps:
@@ -34,7 +34,7 @@ To add members to your team, follow these steps:
 1. Enter email addresses from your organization for any new members you would like to have access, and then select **Owner** under **Role**. 
 1. Select **Add** to save the update.
 
-	![Add new members](Add_Member.png "Add new members")
+	![Add new members](media/Add_Member.png "Add new members")
 
 ## Create a project<br>
 To create a project within your team, follow these steps:
@@ -42,5 +42,5 @@ To create a project within your team, follow these steps:
 1. Type a project name of choice in the **Name** field and any text for **Description**.  
 1. Select **Create** to save the update.
 
-	![Add new project](New_Project.png "Add project")
+	![Add new project](media/New_Project.png "Add project")
   

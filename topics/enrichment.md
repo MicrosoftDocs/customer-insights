@@ -30,10 +30,10 @@ The data ingested is limited to just two fields from CDS: `ProductId` from produ
 1. Select your project.
 2. Select **Settings** under your project.
 3. Scroll to **Enrichment Sources**.
-![Enrichment Sources screenshot](enrichment_sources.png "Enrichment Sources")
+![Enrichment Sources screenshot](media/enrichment_sources.png "Enrichment Sources")
 
 4. Select **Add**. The **Signal Enrichment from CDS** screen appears.
-![Signal Enrichment from CDS screenshot](signal_enrichment_cds.png "Signal Enrichment from CDS")
+![Signal Enrichment from CDS screenshot](media/signal_enrichment_cds.png "Signal Enrichment from CDS")
 
 5. Enter the name for CDS enrichment.
 6. Enter CDS endpoint URL (`https://<tenant_name>.api.crm.dynamics.com`) and replace `<tenant_name>` with field service tenant name.

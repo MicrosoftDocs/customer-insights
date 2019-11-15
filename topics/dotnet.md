@@ -46,7 +46,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
         5. Select **Update**.
         6. Select **OK**.
 
-        ![Add Local NuGet Feed](add_local_nuget_feed.png "Add Local NuGet Feed")
+        ![Add Local NuGet Feed](media/add_local_nuget_feed.png "Add Local NuGet Feed")
 2. Import the Product Insights SDK by adding the following statement of your app's implementation file:
     ```csharp
     using Microsoft.Dynamics.ProductInsights;

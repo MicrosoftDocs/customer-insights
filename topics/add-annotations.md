@@ -13,4 +13,4 @@ ms.topic: conceptual
 
 Product Insights provides a rich, collaborative environment for annotating and commenting on metrics, important new signals, and data anomalies.
 
-![How to annotate](annotations.png "How to annotate")
+![How to annotate](media/annotations.png "How to annotate")

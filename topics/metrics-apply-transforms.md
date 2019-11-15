@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 When exploring data, you can apply various transforms to your data for further insight. These are found above the data visualization pane. 
 
-![Applying a transform](../images/tutorials/ApplyTransforms.png)
+![Applying a transform](media/ApplyTransforms.png)
 
 TK: -- Add as the transforms become available 
 

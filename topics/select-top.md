@@ -15,4 +15,4 @@ ms.topic: conceptual
 1. The **Sort order** toggle switches between the top or bottom N.
 1. **Limit to dropdown** sets the N value. For the top three, **Sort order Z-A**, **Limit to 3** option works.
 
-![Select top N](topn.png)
+![Select top N](media/topn.png)

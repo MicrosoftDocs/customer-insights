@@ -13,4 +13,4 @@ ms.topic: conceptual
 
 Create metrics will appear on the Metrics list, and can be edited or deleted. All metrics added by team members for the project will be viewable here.  
 
-![Managing metrics](../images/tutorials/ManageMetrics.png)
+![Managing metrics](media/ManageMetrics.png)

@@ -19,4 +19,4 @@ Click the pencil icon to edit filter properties. Select **is equal to**, and the
 
 Select the **average** operation from the **Measure** menu, and then select the **CurrentMileage** property. This will show the average MPGe for the car. If you do not see any data, you can change the time window to search for more values sent from this car.
 
-![Drilling down to instance level](../images/tutorials/DrillDownToInstanceLevel.png)
+![Drilling down to instance level](media/DrillDownToInstanceLevel.png)

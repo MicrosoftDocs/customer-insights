@@ -24,7 +24,7 @@ You can find the ingestion key for your Product Insights tenant on its settings 
 5. Select the CSV file you want to upload from your local storage.
 6. Enter in the header name for the timestamp column in your CSV file.
 7. Select **Add**
-    ![CSV drag drop settings screenshot](csv-drag-drop-settings.png)
+    ![CSV drag drop settings screenshot](media/csv-drag-drop-settings.png)
 
 ### Option 2
 1. Select your team and project.
@@ -32,4 +32,4 @@ You can find the ingestion key for your Product Insights tenant on its settings 
 3. Select **+ Add signals** button on the top right corner.
 4. Select **Import from a CSV file**.
 5. The same form as the form in Option 1 above will appear. Please refer to Option 1 to fill out the form.
-    ![CSV drag drop signals screenshot](csv-drag-drop-signals.png)
+    ![CSV drag drop signals screenshot](media/csv-drag-drop-signals.png)

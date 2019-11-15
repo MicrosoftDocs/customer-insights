@@ -1,0 +1,384 @@
+{
+  "redirections": [
+    {
+      "source_path": "topics/developers/articles/delete-export.md",
+      "redirect_url": "/dynamics365/product-insights/delete-export",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/articles/terms-of-service.md",
+      "redirect_url": "/dynamics365/product-insights/terms-of-service",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/articles/user-content.md",
+      "redirect_url": "/dynamics365/product-insights/user-content",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/customer-care/community.md",
+      "redirect_url": "/dynamics365/product-insights/community",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/customer-care/signal-volume.md",
+      "redirect_url": "/dynamics365/product-insights/signal-volume",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/customer-care/support.md",
+      "redirect_url": "/dynamics365/product-insights/support",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/customer-care/supported-lang.md",
+      "redirect_url": "/dynamics365/product-insights/supported-lang",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/downloads.md",
+      "redirect_url": "/dynamics365/product-insights/downloads",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/index.md",
+      "redirect_url": "/dynamics365/product-insights/dev-resources",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/manage-teams.md",
+      "redirect_url": "/dynamics365/product-insights/manage-teams",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/sdk-samples.md",
+      "redirect_url": "/dynamics365/product-insights/sdk-samples",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/android-java.md",
+      "redirect_url": "/dynamics365/product-insights/android-java",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/android-sample.md",
+      "redirect_url": "/dynamics365/product-insights/android-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/api-token.md",
+      "redirect_url": "/dynamics365/product-insights/api-token",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/create-project.md",
+      "redirect_url": "/dynamics365/product-insights/create-project",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/csv-drag-drop.md",
+      "redirect_url": "/dynamics365/product-insights/csv-drag-drop",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/dotnet-sample.md",
+      "redirect_url": "/dynamics365/product-insights/dotnet-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/dotnet.md",
+      "redirect_url": "/dynamics365/product-insights/dotnet",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/index.md",
+      "redirect_url": "/dynamics365/product-insights/tutorials",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/ingest.md",
+      "redirect_url": "/dynamics365/product-insights/ingest",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/ios-obj-sample.md",
+      "redirect_url": "/dynamics365/product-insights/ios-obj-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/ios-objc.md",
+      "redirect_url": "/dynamics365/product-insights/ios-objc",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/iot-hub.md",
+      "redirect_url": "/dynamics365/product-insights/iot-hub",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/js-sample.md",
+      "redirect_url": "/dynamics365/product-insights/js-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/js.md",
+      "redirect_url": "/dynamics365/product-insights/js",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/python-sample.md",
+      "redirect_url": "/dynamics365/product-insights/python-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/dev-resources/tutorials/python.md",
+      "redirect_url": "/dynamics365/product-insights/python",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/quick-starts/1_view-signals.md",
+      "redirect_url": "/dynamics365/product-insights/1_view-signals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/quick-starts/3_get-insights.md",
+      "redirect_url": "/dynamics365/product-insights/3_get-insights",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/quick-starts/create-a-team.md",
+      "redirect_url": "/dynamics365/product-insights/create-a-team",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/quick-starts/how-to-get-started.md",
+      "redirect_url": "/dynamics365/product-insights/how-to-get-started",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/quick-starts/what-is.md",
+      "redirect_url": "/dynamics365/product-insights/what-is",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/quick-starts/who-uses.md",
+      "redirect_url": "/dynamics365/product-insights/who-uses",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/add-annotations.md",
+      "redirect_url": "/dynamics365/product-insights/add-annotations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/add-comments.md",
+      "redirect_url": "/dynamics365/product-insights/add-comments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/ADLS-Export.md",
+      "redirect_url": "/dynamics365/product-insights/ADLS-Export",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/collaborate.md",
+      "redirect_url": "/dynamics365/product-insights/collaborate",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/create-dashboard.md",
+      "redirect_url": "/dynamics365/product-insights/create-dashboard",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/create-sample-signals.md",
+      "redirect_url": "/dynamics365/product-insights/create-sample-signals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/editchart.md",
+      "redirect_url": "/dynamics365/product-insights/editchart",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/embed.md",
+      "redirect_url": "/dynamics365/product-insights/embed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/enrichment.md",
+      "redirect_url": "/dynamics365/product-insights/enrichment",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/examine-signals-metadata.md",
+      "redirect_url": "/dynamics365/product-insights/examine-signals-metadata",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/explore-data.md",
+      "redirect_url": "/dynamics365/product-insights/explore-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/explore-samples.md",
+      "redirect_url": "/dynamics365/product-insights/explore-samples",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/explore-signals.md",
+      "redirect_url": "/dynamics365/product-insights/explore-signals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/exploredraft.md",
+      "redirect_url": "/dynamics365/product-insights/exploredraft",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/exportpowerbi.md",
+      "redirect_url": "/dynamics365/product-insights/exportpowerbi",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/expressions.md",
+      "redirect_url": "/dynamics365/product-insights/expressions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/get-updates.md",
+      "redirect_url": "/dynamics365/product-insights/get-updates",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/import-elsewhere.md",
+      "redirect_url": "/dynamics365/product-insights/import-elsewhere",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/import-signals.md",
+      "redirect_url": "/dynamics365/product-insights/import-signals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/ingestion-schema.md",
+      "redirect_url": "/dynamics365/product-insights/ingestion-schema",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/insights-discover.md",
+      "redirect_url": "/dynamics365/product-insights/insights-discover",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/insights-fix-data-gaps.md",
+      "redirect_url": "/dynamics365/product-insights/insights-fix-data-gaps",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/insights-run-comparisons.md",
+      "redirect_url": "/dynamics365/product-insights/insights-run-comparisons",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/insights-smooth-data.md",
+      "redirect_url": "/dynamics365/product-insights/insights-smooth-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/metrics-add-splits.md",
+      "redirect_url": "/dynamics365/product-insights/metrics-add-splits",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/metrics-apply-transforms.md",
+      "redirect_url": "/dynamics365/product-insights/metrics-apply-transforms",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/metrics-choose-visualizations.md",
+      "redirect_url": "/dynamics365/product-insights/metrics-choose-visualizations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/metrics-create-metrics.md",
+      "redirect_url": "/dynamics365/product-insights/metrics-create-metrics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/metrics-drill-down-to-instance.md",
+      "redirect_url": "/dynamics365/product-insights/metrics-drill-down-to-instance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/metrics-get-percentiles.md",
+      "redirect_url": "/dynamics365/product-insights/metrics-get-percentiles",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/metrics-manage-metrics.md",
+      "redirect_url": "/dynamics365/product-insights/metrics-manage-metrics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/metrics-publish-or-add-to-dashboard.md",
+      "redirect_url": "/dynamics365/product-insights/metrics-publish-or-add-to-dashboard",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/metrics-select-topN.md",
+      "redirect_url": "/dynamics365/product-insights/metrics-select-topN",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/metrics-set-granularity.md",
+      "redirect_url": "/dynamics365/product-insights/metrics-set-granularity",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/metrics-use-filters.md",
+      "redirect_url": "/dynamics365/product-insights/metrics-use-filters",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/product-preview-limitations.md",
+      "redirect_url": "/dynamics365/product-insights/product-preview-limitations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/select-top.md",
+      "redirect_url": "/dynamics365/product-insights/select-top",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/send-additional-signals.md",
+      "redirect_url": "/dynamics365/product-insights/send-additional-signals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/send-csv.md",
+      "redirect_url": "/dynamics365/product-insights/send-csv",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/send-using-senders.md",
+      "redirect_url": "/dynamics365/product-insights/send-using-senders",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/set-up-to-send.md",
+      "redirect_url": "/dynamics365/product-insights/set-up-to-send",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/use-expressions.md",
+      "redirect_url": "/dynamics365/product-insights/use-expressions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/developers/tutorials/video-curriculum.md",
+      "redirect_url": "/dynamics365/product-insights/video-curriculum",
+      "redirect_document_id": "false"
+    }
+  ]
+}

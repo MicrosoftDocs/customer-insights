@@ -14,12 +14,12 @@ Splitting a metric enables breaking it down into reported categories. For exampl
 
 - Add a split to the "total number of drives completed metric" by selecting **Split** and then **VehicleType**. Now you can see the total number of drives for every vehicle type such as SUV, Sports, Minivan, and Sedan. 
 
-    ![Total no of drives completed by vehicletype](../images/tutorials/add-split-vehicletype.png)
+    ![Total no of drives completed by vehicletype](media/add-split-vehicletype.png)
 
 - Add a split to the "distinct count of VINs" metric by selecting **Split** and then **CityType**. Now you can see the total number of unique vehicles reporting in, divided into the types of their locations. 
 
-    ![Total no of unique cars by city type](../images/tutorials/add-split-citytype.png)
+    ![Total no of unique cars by city type](media/add-split-citytype.png)
 
 - Add a split to the average MPGe metric by selecting **VehicleFuelType**. Now you can see average MPGe values for gas, electric, and hybrid vehicles.
 
-    ![Avg MPGe for all completed drives by vehicle fuel type](../images/tutorials/add-split-vehiclefueltype.png)
+    ![Avg MPGe for all completed drives by vehicle fuel type](media/add-split-vehiclefueltype.png)

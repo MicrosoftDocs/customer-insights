@@ -28,14 +28,14 @@ Azure Data Lake Storage offers a wide variety of available integrations. You can
 
 3. Visit the management pane of your Product Insights project and create a new export.
 
-![Export creation](export_creation.png "Export creation")
+![Export creation](media/export_creation.png "Export creation")
 
 
 
 ## Export configuration  
 This section contains a brief description of all available configuration options that are needed to configure this feature.
 
-![Export settings](export_settings.png "Export settings")
+![Export settings](media/export_settings.png "Export settings")
 
 
 

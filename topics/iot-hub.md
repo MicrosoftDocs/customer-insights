@@ -27,7 +27,7 @@ Endpoint=sb://your-endpoint.servicebus.windows.net/;SharedAccessKeyName=key-name
 1. On your IoT Hub's page in the [Azure Portal](https://portal.azure.com/), click on **Built-in endpoints** on the left pane, under "Settings"
 2. Select and copy or click the "Copy" button for the **Event Hub-compatible endpoint**
 3. (Optional) Use this page to create a new Consumer Group
-    ![IoT Hub endpoint screenshot](iothub-connection-string.png)
+    ![IoT Hub endpoint screenshot](media/iothub-connection-string.png)
 
 ### Option 2: Obtaining an Event Hub Connection String
 These instructions assume you have already created an event hub instance inside your Event Hubs Namespace.	These instructions assume you have already created an event hub instance inside your Event Hubs Namespace.
@@ -36,12 +36,12 @@ These instructions assume you have already created an event hub instance inside 
 
 1. On your Event Hub's page in the [Azure Portal](https://portal.azure.com/), click on **Shared access policies** on the left pane, under "Settings"
 2. If you haven't created any access policies yet, click the "Add" button to add a policy. Make sure it has **Listen** permission.
-    ![SAS Policy screenshot](eventhub-sas-policy.png)
+    ![SAS Policy screenshot](media/eventhub-sas-policy.png)
 3. Click on the access policy you want to use and copy the **Connection string** (primary or secondary key)
     > [!NOTE]
     > If you do not see an `EntityPath=...` section at the end of the connection string, you have created a connection string for an Event Hub *Namespace*, not an Event Hub. Please create an Event Hub within that Namespace.
 4. (Optional) Use the "Consumer groups" page to create a new consumer group.
-    ![Event Hub connection string screenshot](eventhub-connection-string.png)
+    ![Event Hub connection string screenshot](media/eventhub-connection-string.png)
 
 
 ## Making an IoT Hub or Event Hub Connection
@@ -52,7 +52,7 @@ Once you have your **connection string** and, optionally, your **consumer group 
 2. Scroll down to **Data Sources** and select "**Add Source**"
 3. Enter your **connection string**, a connection name, and optionally a **consumer group name**.
 4. Click the highlighted **Connect** button, and the connection will be made.
-    ![IoT Hub connection settings screenshot](iot-connection-settings.png)
+    ![IoT Hub connection settings screenshot](media/iot-connection-settings.png)
 
 ### Option 2
 1. Go to the default **Signals** page in your project
@@ -61,4 +61,4 @@ Once you have your **connection string** and, optionally, your **consumer group 
 4. The same form will appear as the form in Option 1, please refer to Option 1 for screenshot on how to fill out the form.
 5. Enter your **connection string**, a connection name, and optionally a **consumer group name**.
 6. Click the highlighted **Connect** button, and the connection will be made.
-    ![IoT Hub connection signals screenshot](iot-connection-signals.png)
+    ![IoT Hub connection signals screenshot](media/iot-connection-signals.png)

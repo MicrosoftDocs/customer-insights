@@ -32,7 +32,7 @@ ms.topic: conceptual
 		5. Select **Update**.
 		6. Select **OK**.
 
-		![Add Local NuGet Feed](add_local_nuget_feed.png "Add Local NuGet Feed")
+		![Add Local NuGet Feed](media/add_local_nuget_feed.png "Add Local NuGet Feed")
 7. Open **Program.cs** file in project
 8. Replace *{YOUR_INGESTION_KEY}* with the ingestion key you have created on Product Insights portal
 9. On the menu, choose **Build > Build Solution** to build the entire solution

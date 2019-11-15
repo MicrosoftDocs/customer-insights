@@ -17,7 +17,7 @@ Product Insights has many visualization options. By default, data will be displa
 
 Line charts display data as a series of points connected by straight lines. They are useful to visualize data over time (usually represented by the x axis). Line charts are the simplest option.
 
-![Visualizations: line](../images/tutorials/Visualizations-Line.png)
+![Visualizations: line](media/Visualizations-Line.png)
 
 * Area
 
@@ -27,7 +27,7 @@ Stacked area charts represent cumulative totals over time, with greater values a
 
 TK: Stacked: vehicle_drive_end, Sum operation, CurrentTripDistance
 
-![Visualizations: stacked](../images/tutorials/Visualizations-Stacked.png)
+![Visualizations: stacked](media/Visualizations-Stacked.png)
 
 Then add a split on VehicleFuelType
 
@@ -35,7 +35,7 @@ Then add a split on VehicleFuelType
 
 **Example**: Switch to %stacked area charts to learn what percentage of trips each fuel type contributes.
 
-![Visualizations: %stacked](../images/tutorials/Visualizations-Stacked100.png)
+![Visualizations: %stacked](media/Visualizations-Stacked100.png)
 
 * Column 
 
@@ -45,22 +45,22 @@ TK: Bar charts. To see a total breakdown by fuel type, switch to **All**.
 
 **Example**: Continuing from the previous example, switch the chart type to **Column**, then change "Five minutes" to **All**, and **Granularity** to "hour".
 
-![Visualizations: column](../images/tutorials/Visualizations-Column.png)
+![Visualizations: column](media/Visualizations-Column.png)
 
 * Pie
 
 Pie charts are circular graphs divided into slices like a pie. The area of each slice is proportional to the fraction represented of the total. Time is not represented as one of the dimensions of the graph. Pie charts are useful to see the distribution of various elements.
 
-![Visualizations: pie](../images/tutorials/Visualizations-Pie.png)
+![Visualizations: pie](media/Visualizations-Pie.png)
 
 * Scatter 
 
 Scatter charts graph data sets as collections of points with one variable along the x axis and another along the y axis. They are good for obtaining a general picture, because they do not force a trend on the data. 
 
-![Visualizations: scatter](../images/tutorials/Visualizations-Scatter.png)
+![Visualizations: scatter](media/Visualizations-Scatter.png)
 
 * Table 
 
 Tables are collections of data arranged into columns and rows. They are useful for understanding raw data. 
 
-![Visualizations: table](../images/tutorials/Visualizations-Table.png)
+![Visualizations: table](media/Visualizations-Table.png)
