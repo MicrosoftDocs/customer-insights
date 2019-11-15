@@ -42,21 +42,21 @@ This is the main portal through with you can export and delete your usage data.
 
 ##### Deletion
 To delete your usage data navigate to "Activity History" and select "Apps and services" in the "Filter by data type" dropdown on the left handside.
-![Select Apps and services](images/PrivacyPortal_marked.png)
+![Select Apps and services](images/user-content/PrivacyPortal_marked.png)
 
 On the right side you should now see an activity log of your Microsoft Account, listing all Applications that have gathered data about your account grouped by date.
 You can delete individual entries by clicking the "Clear" button next to each entry or you can clear all of them by clicking on the "Clear activity" button in the upper right hand corner.
-![Select Clear or Clear activity](images/PrivacyPortal_deletion_marked.png)
+![Select Clear or Clear activity](images/user-content/PrivacyPortal_deletion_marked.png)
 
 ##### Export
 To export your usage data navigate to "Download your data" and click on the "CREATE NEW ARCHIVE" button.
-![Create New Archive](images/MsaExport_marked.png)
+![Create New Archive](images/user-content/MsaExport_marked.png)
 
 In the selection screen mark the tick box next to "App & service usage JSON" and then click on the "Create archive" button.
-![Tick App & service usage JSON](images/MsaExportSelection.png)
+![Tick App & service usage JSON](images/user-content/MsaExportSelection.png)
 
 After a few minutes your archive will be ready and you can download it by clicking on the "Download" button next to it.
-![Download Archive](images/MsaExportDownload_marked.png)
+![Download Archive](images/user-content/MsaExportDownload_marked.png)
 
 > [!NOTE]
  > The archives you created will expire within 7 days
