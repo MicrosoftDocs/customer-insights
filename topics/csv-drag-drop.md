@@ -12,7 +12,7 @@ ms.topic: conceptual
 Use the drag and drop tool to ingest signals into Product Insights for CSV files that are less than 10 MB.
 
 ## Get an ingestion key from Product Insights portal
-You can find the ingestion key for your Product Insights tenant on its settings page. [Here is how to find and copy your key.](api-token)
+You can find the ingestion key for your Product Insights tenant on its settings page. [Here is how to find and copy your key.](api-token.md)
 
 ## Upload a CSV file
 

@@ -1,5 +1,6 @@
 ---
 uid: developers/quick-starts/how-to-get-started
+title: Get started
 author: ruthaisabokhae
 ms.author: ruthai
 ms.date: 09/30/2019

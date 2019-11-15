@@ -93,7 +93,7 @@ As part of your use of the Services, we grant you a limited right to: (a) instal
 ### 6.2. Limitations of License.
 We reserve all other rights to such Software. You may not disassemble, decompile, or reverse engineer any such Software included in the Services, except and only to the extent that the law expressly permits this activity. Notwithstanding these restrictions, you may (a) incorporate applicable binary portions of the Software into Licensee’s programs, solely as contemplated by the documentation; or (b) creating custom events during Licensee’s use of the Software.
 
-The Software is subject to United States export laws and regulations. You must comply with all domestic and international export laws and regulations that apply to the Software. These laws include restrictions on destinations, end users and end use. For additional information, see http://aka.ms/exporting.
+The Software is subject to United States export laws and regulations. You must comply with all domestic and international export laws and regulations that apply to the Software. These laws include restrictions on destinations, end users and end use. For additional information, see https://aka.ms/exporting.
 
 Unless we notify you otherwise, your license to use the Software provided by us as part of the Services will end when your right to use the Services ends, and you must promptly uninstall the Software. We may disable the Software at this time.
 
@@ -221,7 +221,7 @@ From time to time, Microsoft may engage new Subprocessors. Microsoft will give P
 If Participant does not approve of a new Subprocessor, then Participant may terminate any subscription for the Services without penalty by providing, before the end of the relevant notice period, written notice of termination that includes an explanation of the grounds for non-approval. 
 
 ## How to Contact Microsoft
-If Participant believes that Microsoft is not adhering to its privacy or security commitments, Participant may contact customer support or use Microsoft’s Privacy web form, located at http://go.microsoft.com/?linkid=9846224. Microsoft’s mailing address is: 
+If Participant believes that Microsoft is not adhering to its privacy or security commitments, Participant may contact customer support or use Microsoft’s Privacy web form, located at https://go.microsoft.com/?linkid=9846224. Microsoft’s mailing address is: 
 Microsoft Enterprise Service Privacy
 Microsoft Corporation
 One Microsoft Way

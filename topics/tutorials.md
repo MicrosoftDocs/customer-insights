@@ -27,7 +27,7 @@ You can refer to the corresponding SDK tutorial below on how to run a sample pro
 
 [Android (mobile, Java) SDK Sample](android-sample.md)
 
-[iOS/macOS (Objective-C) SDK Sample](ios-objc-sample.md)
+[iOS/macOS (Objective-C) SDK Sample](ios-obj-sample.md)
 
 [.NET Sample](dotnet-sample.md)
 

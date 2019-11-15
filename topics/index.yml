@@ -39,8 +39,6 @@ landingContent:
             url: create-a-team.md
           - text: Send signals
             url: 1_view-signals.md
-          - text: Analyze your data
-            url: 2_create-dashboard.md
           - text: Gain insights
             url: 3_get-insights.md
 
@@ -62,7 +60,7 @@ landingContent:
       - linkListType: download
         links:
           - text: Download Signal SDKs
-            url: index.md
+            url: downloads.md
       - linkListType: reference
         links:
           - text: Import signals from other fabrics
