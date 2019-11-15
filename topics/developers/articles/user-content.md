@@ -37,30 +37,28 @@ Only Azure Active Directory (AAD) Tenant Admins can issue export/delete requests
 > Deletion requests for Usage Data are triggered by deleting the associated user from the AAD Tenant.
 
 ### Microsoft Accounts
-Send a request to view/delete your information to the Microsoft Privacy team by following these steps:
-1. Go to the Microsoft privacy concern page [here](https://www.microsoft.com/en-us/concern/privacy).
+Go to the [Microsoft Account Privacy Dashboard](https://account.microsoft.com/privacy/) and log into your Microsoft Account if you have not done so already.
+This is the main portal through with you can export and delete your usage data.
 
-2. Click on "I want to make a request regarding my personal data".         
-![Make request](MakeRequest_marked.png)
+##### Deletion
+To delete your usage data navigate to "Activity History" and select "Apps and services" in the "Filter by data type" dropdown on the left handside.
+![Select Apps and services](images/user-content/PrivacyPortal_marked.png)
 
-3. Select "I want to make a request regarding personal data Microsoft has about me related to my Microsoft account".  
- ![Select first option](PersonalDataRequest_marked.png)
+On the right side you should now see an activity log of your Microsoft Account, listing all Applications that have gathered data about your account grouped by date.
+You can delete individual entries by clicking the "Clear" button next to each entry or you can clear all of them by clicking on the "Clear activity" button in the upper right hand corner.
+![Select Clear or Clear activity](images/user-content/PrivacyPortal_deletion_marked.png)
 
-4. Click the "Login" button and log into your Microsoft Account.
-  ![Login into your account](Login_marked.png)
+##### Export
+To export your usage data navigate to "Download your data" and click on the "CREATE NEW ARCHIVE" button.
+![Create New Archive](images/user-content/MsaExport_marked.png)
 
-5. Select your country of residence from the drop down menu and make your request in the text box. 
-You could also copy your choice of the following statements into the text box, depending on whether you want your data exported or deleted:   
+In the selection screen mark the tick box next to "App & service usage JSON" and then click on the "Create archive" button.
+![Tick App & service usage JSON](images/user-content/MsaExportSelection.png)
 
-    a. To delete: "I would like to delete my product and   service usage data regarding Dynamics 365 Product Insights."
+After a few minutes your archive will be ready and you can download it by clicking on the "Download" button next to it.
+![Download Archive](images/user-content/MsaExportDownload_marked.png)
 
-    b. To export: "I would like to export my product and service usage data regarding Dynamics 365 Product Insights."
-
-6. Finally, click "Submit" to submit your request to the Microsoft Privacy Team. 
-![Submit your request](ExportDeleteRequest_marked.png)
-
-> [!NOTE] 
-> We are currently working on making the usage data we gather about you 
-accessible on your Microsoft Account Privacy Settings page. The data will be available by the end of October 2019 and will include all data gathered from October 1st 2019 onwards.  
+> [!NOTE]
+ > The archives you created will expire within 7 days
 
 For more information regarding Microsoft's commitment towards protecting your privacy, please read the [Microsoft Privacy Statement](https://privacy.microsoft.com/).
