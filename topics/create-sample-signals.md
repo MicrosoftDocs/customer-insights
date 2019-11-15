@@ -15,7 +15,7 @@ Signals are data sent to Project Insights from remote applications. You can find
 
 You can send signals using a variety of ways:  
 
-1. Using Product Insights [SDKs](../dev-resources/index.md).  
+1. Using Product Insights [SDKs](dev-resources.md).  
 2. Exploring our [samples](explore-samples.md).  
 3. Simulating sample signals for test purposes (follow instructions below).  
 
