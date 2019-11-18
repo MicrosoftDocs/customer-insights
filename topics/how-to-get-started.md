@@ -21,4 +21,4 @@ The remaining sections contain reference material that you can use as the need a
 <br/>
 
 > [!div class="nextstepaction"]
-> [Next >>](1_view-signals.md)
+> [Next >>](view-signals.md)

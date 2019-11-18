@@ -32,7 +32,7 @@
     },
     {
       "source_path": "topics/developers/customer-care/supported-lang.md",
-      "redirect_url": "/dynamics365/product-insights/supported-lang",
+      "redirect_url": "/dynamics365/product-insights/supported-languages",
       "redirect_document_id": "false"
     },
     {
@@ -137,12 +137,12 @@
     },
     {
       "source_path": "topics/developers/quick-starts/1_view-signals.md",
-      "redirect_url": "/dynamics365/product-insights/1_view-signals",
+      "redirect_url": "/dynamics365/product-insights/view-signals",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/quick-starts/3_get-insights.md",
-      "redirect_url": "/dynamics365/product-insights/3_get-insights",
+      "redirect_url": "/dynamics365/product-insights/get-insights",
       "redirect_document_id": "false"
     },
     {
@@ -197,7 +197,7 @@
     },
     {
       "source_path": "topics/developers/tutorials/editchart.md",
-      "redirect_url": "/dynamics365/product-insights/editchart",
+      "redirect_url": "/dynamics365/product-insights/edit-chart",
       "redirect_document_id": "false"
     },
     {
@@ -232,12 +232,12 @@
     },
     {
       "source_path": "topics/developers/tutorials/exploredraft.md",
-      "redirect_url": "/dynamics365/product-insights/exploredraft",
+      "redirect_url": "/dynamics365/product-insights/explore-draft",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/developers/tutorials/exportpowerbi.md",
-      "redirect_url": "/dynamics365/product-insights/exportpowerbi",
+      "redirect_url": "/dynamics365/product-insights/export-powerbi",
       "redirect_document_id": "false"
     },
     {
