@@ -1,5 +1,5 @@
 ---
-uid:  developers/dev-resources/signal-schema
+uid:  signal-schema
 title: Signal Schema for Product Insights
 author: ruthaisabokhae
 description: Signal Schema for Product Insights
