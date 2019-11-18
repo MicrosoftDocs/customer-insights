@@ -38,9 +38,9 @@ landingContent:
           - text: Create a team
             url: create-a-team.md
           - text: Send signals
-            url: 1_view-signals.md
+            url: view-signals.md
           - text: Gain insights
-            url: 3_get-insights.md
+            url: get-insights.md
 
   # Card
   - title: Developer resources
