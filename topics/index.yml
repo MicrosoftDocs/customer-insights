@@ -24,11 +24,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Product Insights?
-            url: developers/quick-starts/what-is.md
+            url: what-is.md
           - text: Who uses Product Insights?
-            url: developers/quick-starts/who-uses.md
+            url: who-uses.md
           - text: How do I start?
-            url: developers/quick-starts/how-to-get-started.md
+            url: how-to-get-started.md
 
   # Card (optional)
   - title: Get started
@@ -36,13 +36,11 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Create a team
-            url: developers/quick-starts/create-a-team.md
+            url: create-a-team.md
           - text: Send signals
-            url: developers/quick-starts/1_view-signals.md
-          - text: Analyze your data
-            url: developers/quick-starts/2_create-dashboard.md
+            url: view-signals.md
           - text: Gain insights
-            url: developers/quick-starts/3_get-insights.md
+            url: get-insights.md
 
   # Card
   - title: Developer resources
@@ -50,23 +48,23 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Android (Java) SDK
-            url: developers/dev-resources/tutorials/android-java.md
+            url: android-java.md
           - text: Objective-C SDK
-            url: developers/dev-resources/tutorials/ios-objc.md
+            url: ios-objc.md
           - text: .NET SDK
-            url: developers/dev-resources/tutorials/dotnet.md
+            url: dotnet.md
           - text: Python SDK
-            url: developers/dev-resources/tutorials/python.md
+            url: python.md
           - text: Web/React (JavaScript) SDK
-            url: developers/dev-resources/tutorials/js.md
+            url: js.md
       - linkListType: download
         links:
           - text: Download Signal SDKs
-            url: developers/dev-resources/index.md
+            url: downloads.md
       - linkListType: reference
         links:
           - text: Import signals from other fabrics
-            url: developers/tutorials/import-signals.md
+            url: import-signals.md
 
 
   # Card
@@ -75,11 +73,11 @@ landingContent:
       - linkListType: learn
         links:
           - text: Community
-            url: developers/customer-care/community.md
+            url: community.md
           - text: Blog
-            url: developers/customer-care/community.md
+            url: community.md
           - text: Forum/ Support
-            url: developers/customer-care/support.md
+            url: support.md
             
             
             
