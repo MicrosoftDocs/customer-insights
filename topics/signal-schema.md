@@ -9,9 +9,9 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Signal schema for Product Insights
+# Signal Schema for Product Insights
 
-The following schema is adopted for use by Product Insights signals. 
+The following schema is adopted for use by Product Insights signals.
 
 ## Signal schema
 This contains the minimal set of attributes for Product Insights data, which is also the base class for all signals.
