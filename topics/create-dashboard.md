@@ -19,4 +19,4 @@ There are two paths to publishing to a dashboard:
 Watch how to create a dashboard and publish a draft and chart to your dashboard.
 
 
-[!VIDEO https://youtube.com/embed/plbxupcXN9M]
+>[!VIDEO https://youtube.com/embed/plbxupcXN9M]
