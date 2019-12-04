@@ -29,7 +29,7 @@ Dynamics 365 **Product Insights** enables business users to collect signals from
 
 
 ### Watch this video to get an introduction to Product Insights Preview, learn how to set up a free trial, and find out how it integrates with other Microsoft businesses. 
->[!VIDEO https://www.youtube.com/embed/watch?v=m9WxF0Vq0TY] 
+>[!VIDEO https://www.youtube.com/embed/m9WxF0Vq0TY] 
 
 
 
