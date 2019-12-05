@@ -40,6 +40,8 @@
 
 ## [Manage teams and projects](xref:developers/dev-resources/manage-teams)
 
+## [Administer organizations with Microsoft accounts](xref:topics/msa-organization-administration)
+
 # [Video curriculum](xref:developers/tutorials/video-curriculum)
 
 # Developer resources

@@ -41,14 +41,14 @@ The **Product** extension refers to the *class* of products, such as a specific 
 | Property Name        | Description           |
 | ------------- |:-------------:|
 | productId     | This field is generally populated by the enrichment service. When available in signal this field enables enrichment service joins. Value is a GUID. |
-| partNumber | This field is shown as the value in trasactions like opportunities, orders, cases, etc. This field is generally populated by enrichment service. When available in signal this field enables enrichment service joins. It is important to note that CDS does not enforce uniqueness on this field, although they typically tend to be unique.     |
-| modelNumber     | Manufacturer model number. This field coupled with manufacturer can help locate the right product record, although there's no unique index. |
+| partNumber | This field is shown as the value in trasactions like opportunities, orders, cases, etc. This field is generally populated by enrichment service. When available in signal, this field enables enrichment service joins. It is important to note that CDS does not enforce uniqueness on this field, although they typically tend to be unique.     |
+| modelNumber     | Manufacturer model number. This field coupled with **manufacturer** can help locate the right product record, although there's no unique index. |
 
 ## Asset Extension
-The **Asset** extension refers to a single instance of a particular product. E.g. in the case of vehicles, it can be an actual specific vehicle with a VIN number, which is equivalent to a serial number.
+The **Asset** extension refers to a single instance of a particular product. For example, in the case of vehicles, it can be an actual specific vehicle with a VIN number, which is equivalent to a serial number.
 
 | Property Name        | Description           |
 | ------------- |:-------------:|
 | deviceID     | Unique device ID as referred to within IoT and CDS platforms. |
-| serialNumber | A unique end-user friendly reference ID generally found within most devices. For a car it would be a VIN. This field is generally populated by enrichment service. When available in signal this field enables enrichment service joins.     |
-| assetId     | This field is generally populated by enrichment service. When available in signal this field enables enrichment service joins. |
+| serialNumber | A unique end-user friendly reference ID generally found within most devices. For a car, it would be a VIN. This field is generally populated by enrichment service. When available in signal, this field enables enrichment service joins.     |
+| assetId     | This field is generally populated by enrichment service. When available in signal, this field enables enrichment service joins. |
