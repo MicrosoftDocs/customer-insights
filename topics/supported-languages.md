@@ -10,5 +10,6 @@ ms.topic: conceptual
 ---
 
 # Supported languages 
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Coming soon!

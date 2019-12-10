@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Getting started with the Product Insights SDK for Python
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 This tutorial will guide you through the process of using a Product Insights ingestion token and the Product Insights SDK for your existing Python application, which will allow you to see signals in the portal in five minutes or sooner.
 

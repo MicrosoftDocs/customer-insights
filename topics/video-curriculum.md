@@ -9,6 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Video curriculum
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Discover Product Insights Preview through our videos:
 

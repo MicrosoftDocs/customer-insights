@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # <a id="who_uses"></a>Who is using Product Insights and how?
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Microsoft products and services like Xbox, Skype, Office, and Bing use Product Insights to transform product-related business processes. Slow, reactive processes that are driven by manual customer feedback turn into fast, proactive processes. These processes are powered by automated observational data from the product itself. 
 

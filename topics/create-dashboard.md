@@ -9,6 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Create a dashboard
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Dashboards are a way for you to organize analysis on various signals that are important to your business or organization, primarily in the form of multiple charts. Once you have created a dashboard, you can share it with individuals within your organization or your whole team can collaborate on this dashboard.  
 

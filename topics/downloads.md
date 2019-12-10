@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Downloads
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Download a signal sender for your platform and follow the tutorials. See the samples for implemented code:
 

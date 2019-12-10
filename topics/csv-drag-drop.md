@@ -9,6 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # CSV drag and drop
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 Use the drag and drop tool to ingest signals into Product Insights for CSV files that are less than 10 MB.
 
 ## Get an ingestion key from Product Insights portal

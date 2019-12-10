@@ -9,6 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Getting started with the event sending tool
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 The event sending tool can be used to send both CSV and Key/Value Pair formatted signals to Product Insights.
 
 

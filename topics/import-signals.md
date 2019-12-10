@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Import signals
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Connect to data sources and import signals:
 * Event Sending tool: [Importing from CSV files (file size &ge; 10MB)](xref:developers/downloads/ingest)

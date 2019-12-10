@@ -9,6 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Run comparisons
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 To compare the current trends in your data with a past period or its historic trend on the same chart, use the configurable **Compare** feature.    
 

@@ -9,6 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Getting started with the Product Insights SDK for Android (Java)
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing Android application, which will allow you to see signals in the portal in five minutes or sooner.
 
