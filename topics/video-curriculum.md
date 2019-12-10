@@ -10,11 +10,20 @@ ms.topic: conceptual
 ---
 # Video curriculum
 
-## Discover Product Insights through our videos:
+## Discover Product Insights Preview through our videos:
+
+### Get an overview, learn how to set up a free trial, and find out how Product Insights Preview integrates with other Microsoft businesses. 
+>[!VIDEO https://www.youtube.com/embed/m9WxF0Vq0TY] 
+
 
 ### Take a quick tour
 >[!VIDEO https://www.youtube.com/embed/l4yoIES_iN0]
 
+
+### Explore samples projects
+>[!VIDEO https://www.youtube.com/embed/qiZv_CCJnQQ]
+ 
+ 
 
 ### Create a team
 >[!VIDEO https://youtube.com/embed/wTLSpr5kecQ]	
@@ -63,4 +72,15 @@ ms.topic: conceptual
 
 ### Analyze data using expressions
 >[!VIDEO https://youtube.com/embed/VH8SXAkbDMQ]	
+
+
+ 
+### Sample SDK Hello World
+>[!VIDEO https://www.youtube.com/embed/p2VZjYaOqzo]
+ 
+ 
+### Smart Advisor
+>[!VIDEO https://www.youtube.com/embed/tW28EMMd1qI]
+
+
 

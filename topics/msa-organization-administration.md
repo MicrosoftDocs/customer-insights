@@ -16,7 +16,7 @@ A Microsoft Service Account (MSA) user can have access to multiple organizations
 
 Click on **Settings** (the gear icon) to load the organization administration page.
 
-Insert screenshot
+![Organization administration](media/SwitchingOrgSettings.png "Organization administration")
 
 Organization owners can do the following tasks:
 -	Delete an existing member from the organization
@@ -26,9 +26,9 @@ Organization owners can do the following tasks:
 ## Deleting existing members
 Organization owners can delete existing members by clicking on the delete button on the organization members page. 
 
-Insert screenshot
+![Delete member](media/SwitchingOrgDelete.png "Delete member")
 
-The following restrictions hold when deleting a user:
+The following restrictions hold when deleting a user who is an existing member of an organization:
 -	The user cannot delete himself or herself.
 -	The user cannot delete the individual who created the organization.
 
@@ -36,20 +36,16 @@ The following restrictions hold when deleting a user:
 
 To add new members, organization owners can click on the **Add members** button, enter an MSA email address and then add the new member.
 
-Insert screenshot
+![Add member](media/SwitchingOrgAdd.png "Add member")
 
 One of the two roles below could be chosen when adding new members:
 -	**Organization owner** – This role will have admin rights to the organization, which include: the ability to update the organization, and to add and delete members. Organization owners are automatically added to new teams.
 
 -	**Organization member** – This role will have read-only rights to the organization. Members must be explicitly added to new teams. 
 
-Insert screenshot
+![Choose role](media/SwitchingOrgAddMembers.png "Choose role")
 
 ## Updating the name and description of an organization
 Organization owners can update the name and the description of the organization from the settings tab. 
 
-
-
-
-
-Insert screenshot
+![Update name and description](media/SwitchingOrgUpdate.png "Update name and description")
