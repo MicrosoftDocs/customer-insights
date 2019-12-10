@@ -1,8 +1,8 @@
 ---
 uid: topics/msa-organization-administration
-title: Administering organizations using MSA accounts
+title: Administering organizations with MSA accounts
 author: ruthaisabokhae
-description: How to administer an organization using a Microsoft account
+description: How to administer an organization with a Microsoft account
 ms.author: ruthai
 ms.date: 12/04/2019
 ms.service: product-insights
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ---
 
 
-# How to administer an organization using a Microsoft account
+# How to administer an organization with a Microsoft account
 
 A Microsoft Service Account (MSA) user can have access to multiple organizations in Product Insights. Users can switch organizations by clicking on the **Organization Switcher** component on the home page. The organization switcher will list all organizations users as either owners or members. 
 
