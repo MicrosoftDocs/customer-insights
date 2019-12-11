@@ -11,8 +11,6 @@
 ## [Gain insights](xref:developers/quick-starts/3_get-insights)
 
 # Do more
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
-
 ## Explore samples
 ### [Explore in-built samples](xref:developers/tutorials/explore-samples)
 
@@ -45,10 +43,8 @@
 ## [Administer organizations with Microsoft accounts](xref:topics/msa-organization-administration)
 
 # [Video curriculum](xref:developers/tutorials/video-curriculum)
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 # Developer resources
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 ## [Quick Links](xref:developers/dev-resources/index)
 
 ## Signals SDKs
@@ -73,7 +69,6 @@
 ## [Azure IoT/Event hubs](xref:developers/downloads/iot-hub)
 
 # Terms and compliance
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 ## [Terms of Service](xref:developers/articles/terms-of-service)
 ## GDPR
 ### [Delete and export user data](xref:developers/articles/delete-export)
@@ -82,7 +77,6 @@
 
 
 # Help and Support
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 ## [Contact us](xref:developers/customer-care/support)
 ## [Engage community](xref:developers/customer-care/community)
 ## [Supported languages](xref:developers/customer-care/supported-lang)
