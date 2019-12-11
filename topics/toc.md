@@ -4,13 +4,13 @@
 ## [How do I get started?](xref:developers/quick-starts/how-to-get-started)
 
 # Get started
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 ## [Create your team](xref:developers/quick-starts/create-a-team)
 ## [Send your signal](xref:developers/quick-starts/1_view-signals)
 ## [Analyze your data](xref:developers/tutorials/create-dashboard)
 ## [Gain insights](xref:developers/quick-starts/3_get-insights)
 
 # Do more
+
 ## Explore samples
 ### [Explore in-built samples](xref:developers/tutorials/explore-samples)
 
