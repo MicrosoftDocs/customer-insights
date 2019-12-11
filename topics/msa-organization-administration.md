@@ -1,14 +1,13 @@
 ---
 uid: topics/msa-organization-administration
-title: Administering organizations using MSA accounts
+title: Administering organizations with MSA accounts
 author: ruthaisabokhae
-description: How to administer an organization using a Microsoft account
+description: How to administer an organization with a Microsoft account
 ms.author: ruthai
 ms.date: 12/04/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
-
 
 # How to administer an organization using a Microsoft account
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
