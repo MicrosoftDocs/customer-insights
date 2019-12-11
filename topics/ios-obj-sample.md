@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Run Product Insights iOS/macOS (Objective-C) SDK Sample
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 ## Prerequisites
 - XCode
 - Ingestion Key (See [here](ios-objc.md) for instructions on how to obtain)

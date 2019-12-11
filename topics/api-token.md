@@ -9,6 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Get an ingestion key (API token) from the Product Insights portal
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 1. Select **All Teams** from the left pane of the [Product Insights home page](https://pi.dynamics.com/).
 

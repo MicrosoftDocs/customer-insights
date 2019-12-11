@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Run Product Insights Web/React (JavaScript) SDK Sample
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Prerequisites
 - Visual Studio Code

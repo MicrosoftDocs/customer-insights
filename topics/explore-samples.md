@@ -9,4 +9,5 @@ ms.service: product-insights
 ---
 
 # Explore Product Insights in-built samples
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 ## Coming soon!

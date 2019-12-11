@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # SDKs for Product Insights
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Choose your preferred SDK from the options below:
 

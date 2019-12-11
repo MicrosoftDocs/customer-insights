@@ -10,5 +10,6 @@ ms.topic: conceptual
 ---
 
 # Contact us 
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## [Contact us](https://community.dynamics.com/365/product-insights/f/dynamics-365-product-insights-forum) to share your experience or ask questions.

@@ -11,6 +11,7 @@ ms.topic: conceptual
 
 
 # Getting Started with the Product Insights CDS Enrichment
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 This tutorial will guide you through the process of using a Product Insights Common Data Service (CDS) enrichment capability, which will allow you to enrich the real-time signals from sources like IoT with additional fields that are sourced from CDS.
 

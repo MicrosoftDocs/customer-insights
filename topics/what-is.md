@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # What is Product Insights?
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Dynamics 365 **Product Insights** enables business users to collect signals from their products and services and gain actionable insights into their customers’ usage and experiences. Powered by these signals and insights, businesses can transform not only their product development, sales, manufacturing, and customer care but also their business models and the types of experiences, products, and services that they can deliver.<br>
 

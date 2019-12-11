@@ -9,6 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Smooth data
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Some signals are noisy. To reduce fluctuations and noise, you can use the methods built into Product Insights, such as rolling averages, exponential rolling averages, and rolling medians, to smooth out variability and outliers. These methods work by giving more weight to the latest data and reacting faster to recent changes. They also make trends much easier to spot. 
 

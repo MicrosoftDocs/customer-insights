@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Create a team 
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Sign up for a Product Insights preview
 

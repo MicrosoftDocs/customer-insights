@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Manage teams
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Every user belongs to a team so when you log in, you should see at least one team. Select **All teams** to see the teams to which you belong. Depending on your permission settings, you can add a new team or edit/delete an existing team. 
 

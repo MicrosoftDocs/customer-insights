@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # How to control the lifecyle of user content and application usage data
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Overview
 While using Product Insights, two different kinds of user related content will eventually be created: 

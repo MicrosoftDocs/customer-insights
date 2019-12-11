@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Run Product Insights Android (Java) SDK Sample
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 ## Prerequisites
 - Android Studio
 - Ingestion Key (See [here](android-java.md) for instructions on how to obtain)

@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Run Product Insights Python SDK Sample
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Prerequisites
 - Python (2 or 3)
