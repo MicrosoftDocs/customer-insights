@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Product limitations for public preview  
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 #### Please find below limits for Product Insights while in public preview:
 

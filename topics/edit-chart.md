@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Create charts and dashboards
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ![Create charts and dashboards](media/Createchart.gif "Create charts and dashboards")
 

@@ -9,6 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Fix data gaps
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 If you have a data set that is missing values, you can use the interpolation feature of Product Insights to fill them in.
 

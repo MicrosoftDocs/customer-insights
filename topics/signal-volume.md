@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Signal Throttling Volume
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 Product Insights is a highly scalable application, capable of supporting millions of signals per second. During public preview, however, a project has a limit of 10 signals per second.
 
 [Here](xref:developers/tutorials/product-preview-limitations) is the document detailing service specifications for Product Insights public preview.

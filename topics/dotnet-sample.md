@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Run Product Insights .NET SDK Sample
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 ## Prerequisites
 - Visual Studio
 - .NET Core 1.0+

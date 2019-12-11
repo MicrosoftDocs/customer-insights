@@ -9,5 +9,6 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 # Understand Product Insights ingestion schema
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Coming soon!

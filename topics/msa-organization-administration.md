@@ -9,8 +9,8 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-
-# How to administer an organization with a Microsoft account
+# How to administer an organization using a Microsoft account
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 A Microsoft Service Account (MSA) user can have access to multiple organizations in Product Insights. Users can switch organizations by clicking on the **Organization Switcher** component on the home page. The organization switcher will list all organizations users as either owners or members. 
 

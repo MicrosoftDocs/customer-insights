@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Developer Resources
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Signal SDKs
 

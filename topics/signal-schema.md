@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Signal Schema for Product Insights
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 The following schema is adopted for use by Product Insights signals.
 
