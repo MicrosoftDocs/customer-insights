@@ -10,10 +10,11 @@ ms.topic: conceptual
 layout: LandingPage
 ---
 
-# Send signals 
+# Send signals
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-Signals are data sent to Project Insights from remote applications. You can find and explore a continuous flow of data from a variety of sources, such as products, websites, and mobile applications.    
+Signals are data sent to Project Insights from remote applications. You can find and explore a continuous flow of data from a variety of sources, such as products, websites, and mobile applications.
 
 **First, create a team (if you do not have one) using the instructions found [here](create-a-team.md) before sending signals.
 
@@ -23,13 +24,11 @@ You can send signals using a variety of ways:
 1. Explore our [samples](explore-samples.md).  
 1. Simulate sample signals for test purposes (follow instructions below).  
 
-
 ## Simulate sample signals
 
-Watch to learn how to simulate signals. 
+Watch to learn how to simulate signals.
 
->[!VIDEO https://youtube.com/embed/nZc5a8uNE-8]
-
+>[!VIDEO <https://youtube.com/embed/nZc5a8uNE-8]>
 
 ### Add a signal
 
@@ -41,9 +40,9 @@ Watch to learn how to simulate signals.
 
 1. Select **Define a Signal**.
 
-1. Select **Add** button. 
+1. Select **Add** button.
 
-1. Enter a name for the new signal into the **Display name** field (in this case, **Sample Signal**). Enter any text into **Description**. 
+1. Enter a name for the new signal into the **Display name** field (in this case, **Sample Signal**). Enter any text into **Description**.
 
 1. The signal will appear on the list after you have entered in a name, description (optional) and clicked on **Create**.
 
@@ -51,11 +50,11 @@ Watch to learn how to simulate signals.
 
 ### Add properties
 
-#### Ensure you click on your new signal before you add properties following the steps below:
+Ensure you click on your new signal before you add properties following the steps below.
 
-1. Select the **Add Property** button, and the **Add Property** window will appear. 
+1. Select the **Add Property** button, and the **Add Property** window will appear.
 
-1. Enter values for the **DetergentConsumption** field of the property, and select a value type from the **Expected type** drop-down menu, such as **Number**. Select **Add** when you're ready to proceed. 
+1. Enter values for the **DetergentConsumption** field of the property, and select a value type from the **Expected type** drop-down menu, such as **Number**. Select **Add** when you're ready to proceed.
 
 1. Repeat the previous step for as many properties as you wish to add, such as **Firmware**, **Model**, and **WaterConsumption**.
 
@@ -63,14 +62,13 @@ Watch to learn how to simulate signals.
 
 1. Select the **Simulate** button. The **Generate test data** window will appear.
 
-2. Enter sample values for each of the properties, with a **variation range** for each.
+1. Enter sample values for each of the properties, with a **variation range** for each.
 
-|Property|Example value|Variation range|
-|--------|-------------|---------------|
-|Model|V30, V40, V50, V60|
-|Firmware|F1, F2, F3|
-|DetergentConsumption|100|25%|
-|WaterConsumption|8000|35%|
+   |Property|Example value|Variation range|
+   |--------|-------------|---------------|
+   |Model|V30, V40, V50, V60|
+   |Firmware|F1, F2, F3|
+   |DetergentConsumption|100|25%|
+   |WaterConsumption|8000|35%|
 
-
-3. Click **Start** to generate data for the sample signal.
+1. Click **Start** to generate data for the sample signal.
