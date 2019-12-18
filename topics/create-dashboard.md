@@ -4,7 +4,7 @@ title: Create a dashboard
 author: ruthaisabokhae
 description: Create a dashboard
 ms.author: ruthai
-ms.date: 09/29/2019
+ms.date: 12/18/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -12,13 +12,15 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-Dashboards are a way for you to organize analysis on various signals that are important to your business or organization, primarily in the form of multiple charts. Once you have created a dashboard, you can share it with individuals within your organization or your whole team can collaborate on this dashboard.  
+Dashboards let you organize analyses on a variety of signals that matter to your business or organization. This primarily takes the form of charts.
 
-There are two paths to publishing to a dashboard:
+Once you've created a dashboard, you can share it and collaborate with other individuals in your organization.  
 
-1. You could explore your data through a draft and then promote it to become a dashboard chart.
-2. You could create a chart directly and then publish to a dashboard.
+There are two ways to publish to a dashboard:
 
-Watch how to create a dashboard and publish a draft and chart to your dashboard.
+1. Explore your data through a draft, then promote it to a dashboard chart.
+2. Create and publish a chart directly.
+
+Watch the following video to see the dashboard creation and publishing processes.
 
 >[!VIDEO <https://youtube.com/embed/plbxupcXN9M]>
