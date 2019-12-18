@@ -4,12 +4,13 @@ title: Signal throttling volume
 author: ruthaisabokhae
 description: Signal throttling volume
 ms.author: ruthai
-ms.date: 10/14/2019
+ms.date: 12/17/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
 # Signal Throttling Volume
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 Product Insights is a highly scalable application, capable of supporting millions of signals per second. During public preview, however, a project has a limit of 10 signals per second.
 
