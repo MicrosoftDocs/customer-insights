@@ -4,12 +4,13 @@ title: Download senders
 author: ruthaisabokhae
 description: Download senders
 ms.author: ruthai
-ms.date: 08/27/2019
+ms.date: 12/19/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
 # Developer Resources
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Signal SDKs
@@ -24,10 +25,12 @@ Download a signal sender for your platform and follow the tutorials. See the sam
 | .NET |                       |C#         |Release| [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_csharp_sdk.zip)                                     | [Tutorial](xref:developers/downloads/dotnet)        |[Sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_csharp_sample.zip)| [Run Sample](xref:developers/downloads/dotnet-sample) |
 | Web/React (Javascript)        |                        |Javascript |Release| [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_js_sdk.zip)                      | [Tutorial](xref:developers/downloads/js)            |[Sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_js_sample.zip)| [Run Sample](xref:developers/downloads/js-sample) |
 
-
 ## Event Sending tool
-Send signals using our [Event Sending tool](xref:developers/downloads/ingest).<br>
+
+Send signals using our [Event Sending tool](xref:developers/downloads/ingest).
+
 Use the [Drag and drop tool](xref:developers/tutorials/csv-drag-drop) to ingest signals into Product Insights (for CSV files <10 MB).
 
 ## Azure IoT/Event Hubs
+
 Connect an IoT Hub or Event Hub to Product Insights using [these steps](xref:developers/downloads/iot-hub).

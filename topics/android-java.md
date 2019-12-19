@@ -4,11 +4,12 @@ title: Get Started with Android (Java)
 author: ruthaisabokhae
 description: Get Started with Android (Java)
 ms.author: ruthai
-ms.date: 09/04/2019
+ms.date: 12/19/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 # Getting started with the Product Insights SDK for Android (Java)
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing Android application, which will allow you to see signals in the portal in five minutes or sooner.
@@ -16,11 +17,13 @@ This tutorial will guide you through the process of using a Product Insights ing
 The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, the demographic of users, and their driving habits. Product Insight allows you to achieve these goals by sending real-time signals and generating valuable insights with only a few simple steps.
 
 ## Prerequisites
+
 * Android Studio
 * Minimum Android API Level: 16 (Jelly Bean)
 * Ingestion key (see below for instructions to obtain)
 
 ## Get an ingestion key from Product Insights portal
+
 1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [Create a team](xref:developers/quick-starts/create-a-team).
 2. Add a new project to your team by selecting the **+ New Project** button from the top right corner.
 3. Type in a project name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
@@ -31,6 +34,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 > Leave this tab open in your web browser, or copy the key to a clipboard because you will need to use it later.
 
 ## Integrate the Product Insights SDK into your Android project
+
 1. Open your Android Studio project. If you don't have one, create a new project with **Empty Activity** in Android Studio.
 
 2. Import the Product Insights Android SDK:
@@ -46,6 +50,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
         implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
     }
     ```
+
 4. Include the Product Insights SDK library as a dependency, and declare the `/libs` folder as a dependency repository:
 
     ```java
@@ -61,6 +66,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
         }
     }
     ```
+
 5. Gradle sync.
 
 6. Open your app's main activity class and import:
@@ -81,6 +87,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
     ```
 
     If your application already uses the Microsoft AppCenter SDK to track telemetry:
+
     ```java
     // The first parameter is the application context, this examples assumes it is called from an Activity.
     AppCenter.start(
@@ -114,8 +121,8 @@ The following scenario will be used to construct the Product Insights SDK exampl
     ```
 
     The following types are supported for custom signal properties:
-    - **String**
-    - **Date**
-    - **double**
-    - **long**
-    - **boolean**
+    * **String**
+    * **Date**
+    * **double**
+    * **long**
+    * **boolean**

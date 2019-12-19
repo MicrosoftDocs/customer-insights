@@ -4,12 +4,13 @@ title: SDK for Product Insights
 author: ruthaisabokhae
 description: SDK for Product Insights
 ms.author: ruthai
-ms.date: 04/12/2019
+ms.date: 12/29/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
 # SDKs for Product Insights
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Choose your preferred SDK from the options below:

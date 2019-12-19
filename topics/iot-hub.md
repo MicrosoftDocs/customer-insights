@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Connecting Event Hubs to Product Insights
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Creating an Event Hub or IoT Hub to Product Insights connection lets you use Product Insights with data being sent to an existing event hub. The process for connecting an Event Hub or IoT Hub to Product Insights consists of the following 3 steps:
@@ -19,8 +20,6 @@ Creating an Event Hub or IoT Hub to Product Insights connection lets you use Pro
 2. Access your Product Insights project's **Settings** screen
 3. Add a data source with your **connection string**, optionally using your **consumer group**.
 
-
-
 ## Obtaining your Connection String
 
 This step differs depending on whether you're connecting to an Event Hub or an IoT Hub; instructions for both are shown below. Your connection string should look like this:
@@ -29,7 +28,6 @@ This step differs depending on whether you're connecting to an Event Hub or an I
 Endpoint=sb://your-endpoint.servicebus.windows.net/;SharedAccessKeyName=key-name;SharedAccessKey=your-access-key;EntityPath=your-entity-path
 ```
 
-
 ### Obtaining an IoT Hubs Connection String
 
 1. On your IoT Hub's page in the [Azure Portal](https://portal.azure.com/), click on **Built-in endpoints** on the left pane, under "Settings"
@@ -37,8 +35,6 @@ Endpoint=sb://your-endpoint.servicebus.windows.net/;SharedAccessKeyName=key-name
 3. (**Recommended**) Use this page to create a new Consumer Group
 
 ![IoT Hub endpoint screenshot](media/iothub-connection-string.png)
-
-
 
 ### Obtaining an Event Hub Connection String
 
@@ -57,8 +53,6 @@ These instructions assume you have already created an event hub instance inside 
 4. (**Recommended**) Use the "Consumer groups" page to create a new consumer group.
 
 ![Event Hub connection string screenshot](media/eventhub-connection-string.png)
-
-
 
 ## Making an Event Hub / IoT Hub Connection
 

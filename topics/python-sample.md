@@ -4,19 +4,22 @@ title: Run Python SDK Sample
 author: ruthaisabokhae
 description: Run Python SDK Sample
 ms.author: ruthai
-ms.date: 09/27/2019
+ms.date: 12/19/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
 # Run Product Insights Python SDK Sample
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Prerequisites
+
 - Python (2 or 3)
 - Ingestion Key (See [here](python.md) for instructions on how to obtain)
 
 ## Run Sample
+
 1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_python_sample.zip) the **Product Insights Python SDK sample**.
 2. Unzip the compressed file `pi_python_sample.zip`.
 3. Open a CMD window and `cd` to the resulting directory.

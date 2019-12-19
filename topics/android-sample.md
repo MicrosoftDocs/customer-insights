@@ -4,18 +4,22 @@ title: Run Android (Java) SDK Sample
 author: ruthaisabokhae
 description: Run Android (Java) SDK Sample
 ms.author: ruthai
-ms.date: 09/27/2019
+ms.date: 12/19/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
 # Run Product Insights Android (Java) SDK Sample
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+
 ## Prerequisites
+
 - Android Studio
 - Ingestion Key (See [here](android-java.md) for instructions on how to obtain)
 
 ## Run Sample
+
 1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_android_sample.zip) the **Product Insights Android (Java) SDK sample**.
 2. Unzip the compressed file `pi_android_sample.zip`.
 3. Open Android Studio.
