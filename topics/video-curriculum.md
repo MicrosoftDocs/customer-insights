@@ -4,7 +4,7 @@ title: Video Curriculum
 author: ruthaisabokhae
 description: Videos
 ms.author: ruthai
-ms.date: 10/14/2019
+ms.date: 12/19/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -12,9 +12,9 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-Discover Product Insights Preview through our videos:
+Product Insights Preview is packed with features that can help you make sense of your important business data and drive decision-making. Learn more through the following videos.
 
-## Learn how Product Insights uses data to help you make smarter business decisions
+## Learn how Product Insights uses your business data to inform smarter decisions, and how to start your free trial
 
 >[!VIDEO <https://www.youtube.com/embed/m9WxF0Vq0TY]>
 
@@ -22,7 +22,7 @@ Discover Product Insights Preview through our videos:
 
 >[!VIDEO <https://www.youtube.com/embed/l4yoIES_iN0]>
 
-## Explore samples projects
+## Explore sample projects
 
 >[!VIDEO <https://www.youtube.com/embed/qiZv_CCJnQQ]>
 
@@ -30,7 +30,7 @@ Discover Product Insights Preview through our videos:
 
 >[!VIDEO <https://youtube.com/embed/wTLSpr5kecQ]>
 
-## Get ingestion key/ API token
+## Get ingestion key / API token
 
 >[!VIDEO <https://youtube.com/embed/FOmu0FUUT-0]>
 
