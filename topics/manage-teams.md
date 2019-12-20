@@ -9,21 +9,24 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Manage teams
+# Manage teams and projects
+
+## Manage teams
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-Every user belongs to a team so when you log in, you should see at least one team. Select **All teams** to see the teams to which you belong. Depending on your permission settings, you can add a new team or edit/delete an existing team. 
+Every user belongs to a team so when you log in, you should see at least one team. Select **All teams** to see the teams to which you belong. Depending on your permission settings, you can add a new team or edit/delete an existing team.
 
 ![Manage teams](media/Manage-teams.png "Manage teams")
 
-# Manage projects 
+## Manage projects
 
-Select a team, and you will see a list of projects that belong to the team. You can add a new project or edit/delete an existing project, depending on your permissions. 
+Select a team, and you will see a list of projects that belong to the team. You can add a new project or edit/delete an existing project, depending on your permissions.
 
 ![Manage projects](media/Manage-projects.png "Manage projects")
 
-# Manage members
+## Manage members
 
-Select the **Members** tab to manage members (or users). You can add members to your team, adjust their permission settings, or delete members, depending on your permissions. 
+Select the **Members** tab to manage members (or users). You can add members to your team, adjust their permission settings, or delete members, depending on your permissions.
 
 ![Manage members](media/Manage-members.png "Manage members")

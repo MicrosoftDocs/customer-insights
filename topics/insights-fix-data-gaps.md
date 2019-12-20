@@ -8,7 +8,9 @@ ms.date: 09/27/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
+
 # Fix data gaps
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 If you have a data set that is missing values, you can use the interpolation feature of Product Insights to fill them in.
@@ -20,8 +22,4 @@ If you have a data set that is missing values, you can use the interpolation fea
 3. Enable the **Fix data** feature to automatically configure your chart and fix any data gaps.
 4. Product Insights will interpolate missing data points according to the current operation (such as **Average**) and complete your chart.
 
->[!VIDEO https://youtube.com/embed/CmMKYdmvfsk]
-
-
-
-
+>[!VIDEO <https://youtube.com/embed/CmMKYdmvfsk>]

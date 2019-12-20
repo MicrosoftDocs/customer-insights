@@ -10,8 +10,10 @@ ms.topic: conceptual
 ---
 
 # Send additional signals
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Choose from many different ways to set up a data source and send or generate signals:
+
 * [SDKs](dev-resources.md) including Android, iOS, Python, .NET, and JavaScript
 * [Event Sending tool](ingest.md) for sending comma-separated value data

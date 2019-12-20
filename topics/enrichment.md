@@ -9,8 +9,8 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-
 # Getting Started with the Product Insights CDS Enrichment
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 This tutorial will guide you through the process of using a Product Insights Common Data Service (CDS) enrichment capability, which will allow you to enrich the real-time signals from sources like IoT with additional fields that are sourced from CDS.
@@ -21,6 +21,7 @@ The data ingested is limited to just two fields from CDS: `ProductId` from produ
 > Enrichment is limited to one per project, and this feature is not available for Microsoft account users (MSA accounts). The maximum supported enrichment size is 10MB and the generated enrichment rule will be in effect after 15 minutes for the new signals.
 
 ## Prerequisites
+
 * Dynamics Field service subscription
   * To obtain free trial subscription:
     1. Sign up at [Microsoft Dynamics 365](https://trials.dynamics.com).
@@ -28,6 +29,7 @@ The data ingested is limited to just two fields from CDS: `ProductId` from produ
     3. To view the environment, go to `https://<tenant_name>.crm.dynamics.com`
 
 ## Configuring CDS Enrichment
+
 1. Select your project.
 2. Select **Settings** under your project.
 3. Scroll to **Enrichment Sources**.
