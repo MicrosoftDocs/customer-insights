@@ -4,7 +4,7 @@ title: View signals
 author: ruthaisabokhae
 description: View signals
 ms.author: ruthai
-ms.date: 09/30/2019
+ms.date: 12/23/2019
 ms.service: product-insights
 ms.topic: conceptual
 layout: LandingPage
@@ -16,59 +16,49 @@ layout: LandingPage
 
 Signals are data sent to Project Insights from remote applications. You can find and explore a continuous flow of data from a variety of sources, such as products, websites, and mobile applications.
 
-**First, create a team (if you do not have one) using the instructions found [here](create-a-team.md) before sending signals.
+To start sending signals to an existing project:  
 
-You can send signals using a variety of ways:  
-
-1. Use Product Insights [SDKs](dev-resources.md).  
-1. Explore our [samples](explore-samples.md).  
-1. Simulate sample signals for test purposes (follow instructions below).  
+1. Download the Product Insights [SDK](dev-resources.md) for your platform of choice.
+1. Explore our usage [samples](explore-samples.md).
 
 ## Simulate sample signals
 
-Watch to learn how to simulate signals.
+Learn how to send sample signals for testing purposes.
 
 >[!VIDEO <https://youtube.com/embed/nZc5a8uNE-8]>
 
 ### Add a signal
 
-1. Select a team from the left pane of the Home screen, such as **Smart Dishwashers**.
+Create your sample signal using the following steps:
 
-1. Select a project from the team screen, such as **2000 Series**.
+1. Select a team from the left pane of the **Home** screen.
 
-1. Select the **Add Signals** button from the project screen. The **Add Signals** window will appear.
+1. Select a project from the team screen.
 
-1. Select **Define a Signal**.
+1. Select the **Add signals** button from the project screen.
 
-1. Select **Add** button.
+1. Select **Define a signal**.
 
-1. Enter a name for the new signal into the **Display name** field (in this case, **Sample Signal**). Enter any text into **Description**.
+1. Enter a name for the new signal into the **Name** field. Optionally, enter a description into the **Description** field.
 
-1. The signal will appear on the list after you have entered in a name, description (optional) and clicked on **Create**.
-
-1. Select the new signal you just created. The **Signals** screen will appear.
+1. Select **Create**. Your signal will appear on your project's **Signals** list.
 
 ### Add properties
 
-Ensure you click on your new signal before you add properties following the steps below.
+You'll need to define properties for your new signal before you can start generating sample data.
 
-1. Select the **Add Property** button, and the **Add Property** window will appear.
+1. Select the signal you just created from your project's **Signals** list. The **Properties** screen will appear.
 
-1. Enter values for the **DetergentConsumption** field of the property, and select a value type from the **Expected type** drop-down menu, such as **Number**. Select **Add** when you're ready to proceed.
+1. Select **Add Property**.
 
-1. Repeat the previous step for as many properties as you wish to add, such as **Firmware**, **Model**, and **WaterConsumption**.
+1. Enter a name and expected data type for your signal. Optionally, enter a description as well. Select **Add** when you're ready to proceed.
+
+1. Repeat steps 2–3 for any additional properties as you wish to add.
 
 ### Generate a sample signal
 
 1. Select the **Simulate** button. The **Generate test data** window will appear.
 
-1. Enter sample values for each of the properties, with a **variation range** for each.
-
-   |Property|Example value|Variation range|
-   |--------|-------------|---------------|
-   |Model|V30, V40, V50, V60|
-   |Firmware|F1, F2, F3|
-   |DetergentConsumption|100|25%|
-   |WaterConsumption|8000|35%|
+1. Enter an **Example value** and **Variation range** percentage for each of your properties.
 
 1. Click **Start** to generate data for the sample signal.
