@@ -12,15 +12,15 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing Android application, which will allow you to see signals in the portal in five minutes or sooner.
+This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing Android application. You'll start seeing signals in your portal within five minutes.
 
-The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, the demographic of users, and their driving habits. Product Insight allows you to achieve these goals by sending real-time signals and generating valuable insights with only a few simple steps.
+For this example, picture the following scenario: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, your users' demographics, and their driving habits. Product Insight allows you to achieve these goals by sending real-time signals and generating valuable insights in just a few simple steps.
 
 ## Prerequisites
 
 * Android Studio
 * Minimum Android API Level: 16 (Jelly Bean)
-* Ingestion key (see below for instructions to obtain)
+* Ingestion key (see below for instructions on how to obtain)
 
 ## Get an ingestion key from Product Insights portal
 
@@ -39,10 +39,10 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 2. Import the Product Insights Android SDK:
     * [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_android_sdk.zip) the **Product Insights Android Java SDK**.
-    * Unzip the compressed file `pi_android_sdk.zip`
+    * Unzip the compressed file `pi_android_sdk.zip`.
     * Copy the Android archive file (extension: `.aar`) into your project's `app/libs` folder.
 
-3. Open the app level `build.gradle` file (`app/build.gradle`), and add the following lines after ```apply plugin``` to first include the AppCenter SDK dependencies for the project:
+3. Open the app level `build.gradle` file (`app/build.gradle`), and add the following lines after ```apply plugin``` to include the AppCenter SDK dependencies for the project:
 
     ```java
     dependencies {
@@ -69,7 +69,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 5. Gradle sync.
 
-6. Open your app's main activity class and import:
+6. Open your app's main activity class and add the following import statements:
 
     ```java
     import com.microsoft.appcenter.AppCenter;
@@ -79,7 +79,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
     import microsoft.dynamics.productinsights.Signals;
     ```
 
-7. Start the SDK (only required to start it once):
+7. Start the SDK (only required once):
 
     ```java
     // The first parameter is the application context, this examples assumes it is called from an Activity.
