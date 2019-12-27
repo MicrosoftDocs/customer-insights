@@ -4,7 +4,7 @@ title: Web/React (JavaScript)
 author: ruthaisabokhae
 description: Web/React (JavaScript)
 ms.author: ruthai
-ms.date: 12/19/2019
+ms.date: 12/27/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -13,14 +13,14 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing JavaScript project, which will allow you to see signals in the portal in five minutes or sooner.
+This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing JavaScript project. You'll start seeing signals in your portal in five minutes or sooner.
 
-The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, the demographics of users, and their driving habits. Product Insight allows you to achieve these goals by sending real time signals and generating valuable insights with only a few simple steps.
+For this example, picture the following scenario: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, your users' demographics, and their driving habits. Product Insight allows you to achieve these goals by sending real time signals and generating valuable insights in just a few simple steps.
 
 ## Prerequisites
 
-* The SDK requires that the project or webpage must be hosted to send telemetry. Sending telemetry from a local file will not be accepted by the server.
-* Ingestion key (see below for instructions to obtain)
+* The SDK requires  the project or webpage to be hosted in order to send telemetry. Telemetry sent from a local file will not be accepted by the server.
+* Ingestion key (see below for instructions on how to obtain)
 
 ## Get an ingestion key from Product Insights portal
 
@@ -37,15 +37,14 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
 1. Add the Product Insights SDK to your page:
     1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_js_sdk.zip) the **Product Insights JavaScript SDK**.
-    2. Add the SDK file to your project, and add it to your page using a script tag:
-    s
+    2. Add the SDK file to your project directory, and add it to your page using a script tag:
 
     ```javascript
        <script type="text/javascript" src="pi_js_sdk-1.0.0.min.js">
        </script>
     ```
 
-2. Add the 1DS SDK to your page using the script tag, as shown:
+2. Add the 1DS SDK to your page using a script tag, as shown:
 
     ```javascript
        <script type="text/javascript"
