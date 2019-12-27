@@ -4,7 +4,7 @@ title: Run Android (Java) SDK Sample
 author: ruthaisabokhae
 description: Run Android (Java) SDK Sample
 ms.author: ruthai
-ms.date: 12/19/2019
+ms.date: 12/27/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -16,7 +16,7 @@ ms.topic: conceptual
 ## Prerequisites
 
 - Android Studio
-- Ingestion Key (See [here](android-java.md) for instructions on how to obtain)
+- Ingestion key (see [here](android-java.md) for instructions on how to obtain)
 
 ## Run Sample
 
@@ -28,6 +28,6 @@ ms.topic: conceptual
 6. Gradle sync should happen automatically. If not, select **File > Sync Project with Gradle Files**.
 7. Wait until Gradle successfully finishes building.
 8. Go to **app/java/microsoft.dynamics.productinsights.androidsample/MainActivity**.
-9. Replace *YOUR_INGESTION_KEY* with the ingestion key you have created on Product Insights portal.
+9. Replace *YOUR_INGESTION_KEY* with your ingestion key from the Product Insights portal.
 10. Select **Run > Run 'app'**.
 11. Wait a few minutes and you should be able to see signals under your project on the Product Insights portal.
