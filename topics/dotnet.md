@@ -4,24 +4,25 @@ title: Get started with .NET (C#)
 author: ruthaisabokhae
 description: Get started with .NET (C#)
 ms.author: ruthai
-ms.date: 12/19/2019
+ms.date: 12/27/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
+
 # Getting started with the Product Insights SDK for .NET
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial will guide you through the process of using a Product Insights ingestion token and the Product Insights SDK for your existing .NET application, which will allow you to see signals in the portal in five minutes or sooner.
+This tutorial will guide you through the process of using a Product Insights ingestion token and the Product Insights SDK for your existing .NET application. You'll start seeing signals in your portal within five minutes.
 
-The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, the demographic of users, and their driving habits. Product Insight allows you to achieve these goals by sending real-time signals and generating valuable insights with only a few simple steps.
+For this example, picture the following scenario: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, your users' demographic, and their driving habits. Product Insight allows you to achieve these goals by sending real-time signals and generating valuable insights in just a few simple steps.
 
 ## Prerequisites
 
 * .NET Core 1.0 and above
   * *Or* .NET Framework 4.6 and above
 * Visual Studio 2017
-* Ingestion key (see below for instructions to obtain)
+* Ingestion key (see below for instructions on how to obtain)
 
 ## Get an ingestion key from Product Insights portal
 
@@ -40,18 +41,18 @@ The following scenario will be used to construct the Product Insights SDK exampl
 > The Product Insights .NET SDK works for all languages supported by .NET framework. For convenience, we will use C# standard syntax in the code samples below.
 
 1. Import the Product Insights SDK:
-    1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_csharp_sdk.zip) the **Product Insights .NET SDK**
+    1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_csharp_sdk.zip) the **Product Insights .NET SDK**.
     2. Unzip the compressed file **pi_csharp_sdk.zip** to a local folder.
-    3. Go to your project in Visual Studio, and add a new **Nuget Package Source** to the local folder where you put the SDK.
+    3. Go to your project in Visual Studio, and add a new **NuGet Package Source** to the local folder where you put the SDK.
         1. On the **Tools** menu, select **Options**.
         2. Expand **NuGet Package Manager** and select **Package Sources**.
-        3. Select the green plus in the upper right corner.
+        3. Select the green plus sign in the upper right corner.
         4. At the bottom of the dialog box, enter the feed's name and the local folder path where you put the .NET SDK package.
         5. Select **Update**.
         6. Select **OK**.
 
         ![Add Local NuGet Feed](media/add_local_nuget_feed.png "Add Local NuGet Feed")
-2. Import the Product Insights SDK by adding the following statement of your app's implementation file:
+2. Import the Product Insights SDK by adding the following statements to your app's implementation file:
 
     ```csharp
     using Microsoft.Dynamics.ProductInsights;
@@ -88,7 +89,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
     * **DateTime**
     * **double**
     * **long**
-    * **Bool**
+    * **bool**
 
 5. Teardown the SDK when the application closes to ensure all signals currently in queue are sent:
 
