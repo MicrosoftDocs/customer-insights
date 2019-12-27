@@ -4,7 +4,7 @@ title: Python
 author: ruthaisabokhae
 description: Python
 ms.author: ruthai
-ms.date: 12/19/2019
+ms.date: 12/27/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -13,14 +13,14 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial will guide you through the process of using a Product Insights ingestion token and the Product Insights SDK for your existing Python application, which will allow you to see signals in the portal in five minutes or sooner.
+This tutorial will guide you through the process of using a Product Insights ingestion token and the Product Insights SDK for your existing Python application. You'll start seeing signals in your portal in five minutes or sooner.
 
-The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, the demographics of users, and their driving habits. Product Insight allows you to achieve these goals by sending real time signals and generating valuable insights with only a few simple steps.
+For this example, picture the following scenario: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, your users' demographics, and their driving habits. Product Insight allows you to achieve these goals by sending real time signals and generating valuable insights in just a few simple steps.
 
 ## Prerequisites
 
 - Python 2.7 or 3+
-- Ingestion key (see below for instructions to obtain)
+- Ingestion key (see below for instructions on how to obtain)
 
 ## Get an ingestion key from Product Insights portal
 
@@ -31,16 +31,16 @@ The following scenario will be used to construct the Product Insights SDK exampl
 5. Select **Settings** under your project. Your ingestion key is available under **Ingestion Key**.
 
 > [!NOTE]
-> Leave this tab open in your web browser or copy the key to a clipboard because you will need to use it later.
+> Leave this tab open in your web browser, or copy the key to a clipboard because you will need to use it later.
 
 ## Integrate the Product Insights SDK into your Python project
 
 1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_python_sdk.zip) the **Product Insights Python SDK**.
 
-2. Add the SDK to your project's site packages. This can either be done at runtime or permanently added to your site packages.
+2. Add the SDK to your project's site packages. This can either be done permanently or at runtime or permanently added to your `site-packages` directory.
     - **Permanently**: With the specific Python interpreter you want to use activated, `cd` to your project directory. Then, run `python -m easy_install pi_analytics-x.y.z.egg`
 
-    - **At Runtime**: Put the following code block before any `pi_analytics` import:
+    - **At runtime**: Put the following code block before any `pi_analytics` import:
 
     ```python
         import sys
@@ -48,7 +48,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
     ```
 
     > [!NOTE]
-    > Replace the `x.y.z` with the version number found in the decompressed file
+    > Replace the `x.y.z` with the version number found in the decompressed file.
 
 3. Initialize the SDK:
 
@@ -69,7 +69,7 @@ The following scenario will be used to construct the Product Insights SDK exampl
         sig = Signal('car_information')
         ```
 
-    - Both indexing and `set_property()` are allowed
+    - Both indexing and `set_property()` are allowed:
 
         ```python
         sig.properties['engine_start'] = True
@@ -82,10 +82,11 @@ The following scenario will be used to construct the Product Insights SDK exampl
 
     The following types are supported for custom signal properties:
     - **str**
-    - **float, int**
+    - **float**
+    - **int**
     - **datetime**
     - **UUID**
-    - **Bool**
+    - **bool**
 
 5. Teardown the SDK when the application closes to ensure all signals currently in the queue are sent:
 
