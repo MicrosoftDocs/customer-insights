@@ -4,7 +4,7 @@ title: Collaborate with others
 author: ruthaisabokhae
 description: Collaborate on a chart or dashboard
 ms.author: ruthai
-ms.date: 09/27/2019
+ms.date: 01/03/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -13,6 +13,8 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-With Product Insight’s built-in collaboration capabilities, you can easily go from insight to action. When you discover an important insight while exploring your data, comment on your findings right away and assign a colleague to take a look.  You can even set a due date if necessary. The individual you name in the task will automatically receive a notification and can comment on the insight via the same interface.
+With Product Insight’s built-in collaboration capabilities, you can easily go from insights to action.
+
+When you discover an important insight, or simply have questions about the data you're seeing, you can comment on your findings and assign tasks to colleagues from within the data view. You can even set a due date, if desired. Your team members will be automatically notified when you request their attention, and can respond via the same interface.
 
 >[!VIDEO <https://youtube.com/embed/q4gX8FeP8W0>]
