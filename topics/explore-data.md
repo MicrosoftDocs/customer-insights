@@ -4,7 +4,7 @@ title: Explore data with a draft
 author: ruthaisabokhae
 description: Explore data using drafts
 ms.author: ruthai
-ms.date: 09/27/2019
+ms.date: 01/03/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -13,7 +13,11 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-Product Insights makes it easy to see the data coming in from your products in real-time. You can see all your signals and their properties, and then drill down to a specific signal to see the data as it arrives in real-time. To further investigate the signal, click on **Explore**. Explore your data to slice, dice, and group the data to derive insights. Once you have the view you want, publish to a dashboard and share the insights with your team.  
+Product Insights makes it easy to see and understand the data coming in from your products in real-time.
+
+Get an overview of all your signals and their properties in your project's **Signals** tab, and then drill down to a specific signal to observe the data as it arrives.
+
+To further investigate a signal, select **Explore** from the signal's **Overview** page. Here you can slice, dice, and group your data to derive insights. Views created in this way can be published to a dashboard and shared with your team.  
 
 View this video to learn how to explore your data.  
 
