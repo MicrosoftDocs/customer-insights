@@ -4,7 +4,7 @@ title: Run comparisons
 author: ruthaisabokhae
 description: Run comparisons
 ms.author: ruthai
-ms.date: 09/29/2019
+ms.date: 01/06/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -13,8 +13,8 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-To compare the current trends in your data with a past period or its historic trend on the same chart, use the configurable **Compare** feature.
+Product Insights makes it easy to compare current trends in your signal data with historic trends. From the signal's **Overview** page, select **Explore**, and then select **Compare** from the **Overlay** dropdown. Your comparison will be overlaid onto your existing chart.
 
-Comparing the number of items (such as calls) to a previous period is often the first transform to try. Select a comparison, then choose which period you will compare it to. You can select the number of days or weeks. The graph will update with another series from the time period of your choice.
+Try comparing the number of items (such as calls) from one period to a previous period. Change the duration of the comparison by again selecting **Compare** in the top left corner of the chart.
 
 >[!VIDEO <https://youtube.com/embed/ECEb8HiuONY>]
