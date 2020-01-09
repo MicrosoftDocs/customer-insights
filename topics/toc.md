@@ -26,7 +26,6 @@
 ### [Create charts and dashboards](xref:developers/tutorials/editchart)
 ### [Collaborate on your insights](xref:developers/tutorials/collaborate)
 
-
 ## Gain insights
 ### [Fix data gaps](xref:developers/tutorials/insights-fix-data-gaps)
 ### [Smooth data](xref:developers/tutorials/insights-smooth-data)
@@ -45,7 +44,7 @@
 # [Video curriculum](xref:developers/tutorials/video-curriculum)
 
 # Developer resources
-## [Quick Links](xref:developers/dev-resources/index)
+## [Quick links](xref:developers/dev-resources/index)
 
 ## Signals SDKs
 ### [Downloads](xref:developers/dev-resources/downloads)
@@ -69,14 +68,13 @@
 ## [Azure IoT/Event hubs](xref:developers/downloads/iot-hub)
 
 # Terms and compliance
-## [Terms of Service](xref:developers/articles/terms-of-service)
+## [Terms of service](xref:developers/articles/terms-of-service)
 ## GDPR
 ### [Delete and export user data](xref:developers/articles/delete-export)
 ### [Manage lifecycle of user data](xref:developers/articles/user-content)
 ## [Product limitations for public preview](xref:developers/tutorials/product-preview-limitations)
 
-
-# Help and Support
+# Help and support
 ## [Contact us](xref:developers/customer-care/support)
 ## [Engage community](xref:developers/customer-care/community)
 ## [Supported languages](xref:developers/customer-care/supported-lang)
