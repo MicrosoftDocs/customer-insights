@@ -4,21 +4,35 @@ title: Create charts and dashboards
 author: ruthaisabokhae
 description: Create charts and dashboards
 ms.author: ruthai
-ms.date: 09/27/2019
+ms.date: 01/03/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
 # Create charts and dashboards
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+
+With Product Insights, it's easy to visualize your important business data and to create insightful, collaborative charts and graphics.
 
 ![Create charts and dashboards](media/Createchart.gif "Create charts and dashboards")
 
-First, select the signal you want to view in chart form. Proceed to “slice and dice” your data by selecting **measure**, **filter(s)**, **Group by**, and transforming your data using **Smooth**. Measure your data's rate change using **Show change**. Check out other utilities to support your exploration under the **More** section.<br> 
+First, select the signal you want to view in chart form. The **Data** tab on the left side of the screen contains options to help you filter and manipulate relevant information:
 
-Select **Line** and choose a different chart type from the drop down to see a different view of your data. Similarly, the time range and grain can be adjusted to your desired frequency.  
+* Filter your properties of interest with **Where**.
+* Choose the values you want to **Measure**.
+* Create smart property groupings with **Group by**.
+* Transform your data with **Smooth**.
+* Measure your data's change rates with **Show change**.
 
-Our AI-powered engine provides hints or suggestions to help you view your data from additional dimensions and therewith, provide potential next steps for your consideration. 
+Other utilities to support your exploration are available under **More**.
 
-Apply a suggestion by selecting it, and with the **undo** button at the top right of the chart, go back in time on your action. The **redo** button simply reapplies your settings.<br> 
+## Change your chart's properties
 
+Data is displayed as a line chart by default. For a different view of your data, select **Line** from the dropdown and choose an alternate chart type. Similarly, the time range and increment values can be adjusted to your desired frequency.
+
+## Automated insight suggestions
+
+Below your chart, our AI-powered engine provides **Suggestions** to help you view your data through additional lenses and discover new insights.
+
+To apply a suggestion, simply select it. You can always **Undo** or **Redo** changes to your chart.

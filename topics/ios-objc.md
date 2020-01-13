@@ -4,26 +4,28 @@ title: iOS (ObjC & Swift)
 author: ruthaisabokhae
 description: iOS (ObjC & Swift)
 ms.author: ruthai
-ms.date: 04/12/2019
+ms.date: 12/26/2019
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
 # Getting started with the Product Insights SDK for Objective-C
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing Objective-C application, which will allow you to see signals in the portal in five minutes or sooner.
+This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing Objective-C application. You'll start seeing signals in your portal within five minutes.
 
-The following scenario will be used to construct the Product Insights SDK example: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, the demographics of users, and their driving habits. Product Insight allows you to achieve these goals by sending real time signals and generating valuable insights with only a few simple steps.
-
+For this example, picture the following scenario: you work at a car manufacturing company, and the company has just released a new car. You want to know how the car is performing, your users' demographics, and their driving habits. Product Insight allows you to achieve these goals by sending real time signals and generating valuable insights in just a few simple steps.
 
 ## Prerequisites
+
 * Xcode 10+
 * iOS 9+
 * MacOS 10.12+
-* Ingestion key (see below for instructions to obtain)
+* Ingestion key (see below for instructions on how to obtain)
 
 ## Get an ingestion key from Product Insights portal
+
 1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your team from the left panel. If you do not already have a team, refer to [Create a team](xref:developers/quick-starts/create-a-team).
 2. Add a new project to your team by selecting the **+ New Project** button from the top right corner.
 3. Type in a project name in the **Name** field and any other text for **Description**. Select **Create** to commit the update.
@@ -36,22 +38,29 @@ The following scenario will be used to construct the Product Insights SDK exampl
 ## Integrate the Product Insights SDK into your Objective-C project
 
 ### Integrate the AppCenter SDK using CocoaPods
+
 1. If you haven't installed CocoaPods, run this command in the terminal to install CocoaPods and create a Podfile:
+
     ```bash
     $ sudo gem install cocoapods
     $ pod init
     ```
+
 2. Add the following to your Podfile:
+
     ```bash
     target 'SampleApp' do
         pod 'AppCenter/Analytics'
     ```
+
 3. Save the file and run this command in the terminal:
+
     ```bash
     $ pod install
     ```
 
 ### Integrate the Product Insights Analytics SDK Manually
+
 1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSenders/pi_objc_sdk.zip) the **Product Insights Analytics Objective-C SDK** for iOS and macOS.
 2. Unzip the SDK archive and copy the corresponding framework:
     * For iOS, navigate to the *iOS* folder
@@ -70,15 +79,16 @@ The following scenario will be used to construct the Product Insights SDK exampl
             * Copy the **ProductInsightsAnalyticsMacOS.framework**
         * For release version, navigate to the *Release* folder
             * Copy the **ProductInsightsAnalyticsMacOS.framework**
-2. Integrate the SDK into your project
-    1. Copy the corresponding framework from the step above.
-    2. Create a new folder named **Frameworks** inside your project folder, and paste the framework into this.
-    3. Select your project in Xcode's project navigator.
-    4. Select your app target.
-    5. In the **General** tab add the `ProductInsightsAnalytics.framework` (for iOS) or `ProductInsightsAnalyticsMacOS.framework` (for macOS) to **Embedded Binaries**.
+3. Integrate the SDK into your project
+    1. Create a new folder named **Frameworks** inside your project folder, and paste the copied framework in it.
+    2. Select your project in Xcode's project navigator.
+    3. Select your app target.
+    4. In the **General** tab, add the `ProductInsightsAnalytics.framework` (for iOS) or `ProductInsightsAnalyticsMacOS.framework` (for macOS) to **Embedded Binaries**.
 
 ### Import Product Insights Analytics and AppCenter into your project
+
 1. Open your `AppDelegate.m` file, and add the following import statements:
+
     ```objc
     @import AppCenter;
     @import AppCenterAnalytics;
@@ -90,24 +100,29 @@ The following scenario will be used to construct the Product Insights SDK exampl
     #import <ProductInsightsAnalyticsMacOS/ProductInsightsAnalyticsMacOS.h>
     ```
 
+### Add the start method and start tracking events
 
-### Add the start method and start tracking events.
 1. Start the SDK from an app (only required once). Follow these steps:
     * Insert the following lines to start the SDK in your app's `AppDelegate.m` class in the `didFinishLaunchingWithOptions:` method:
+
         ```objc
         [MSAppCenter start:@"target=Your_Ingestion_Key" withServices:@[[MSAnalytics class]]];
         ```
+
     * If your application already uses the Microsoft AppCenter SDK to track telemetry:
+
         ```objc
         [MSAppCenter start:@"app-secret=Your_App_Secret; target=Your_Ingestion_Key" withServices:@[[MSAnalytics class]]];
         ```
 
 2. Insert the following line to initiate Product Insights Analytics:
+
     ```objc
     PIAnalytics *piAnalytics = [[PIAnalytics new] initWithIngestionKey:Your_Ingestion_Key];
     ```
 
 3. Insert the following lines to track signals:
+
     ```objc
     // Signal with name only
     PISignal *signal = [[PISignal new] initWithName:@"user_information"];
@@ -126,8 +141,8 @@ The following scenario will be used to construct the Product Insights SDK exampl
     ```
 
     The following types are supported for custom signal properties:
-    - **NSString**
-    - **NSDate**
-    - **double**
-    - **int64_t**
-    - **BOOL**
+    * **NSString**
+    * **NSDate**
+    * **double**
+    * **int64_t**
+    * **BOOL**
