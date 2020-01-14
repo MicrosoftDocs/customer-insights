@@ -70,7 +70,7 @@ This option allows you to choose which signals should be exported. You can eithe
 Signals will be exported using line delimited JSON format. Find out more about it [here](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON). This means that every line in the output file will contain a JSON object with all the properties that were sent in a single signal. Directory structure and file names will be created using current UTC time of servers exporting the data.
 
 ## Automatic pausing (postponing) of your export
-Product Insights constantly monitors the health of your exports- the success rate at which the product is able to write to your ADLS Gen2 storage account. In case of an unfavorable health state, your export may paused or postponed. This may happen if, for example, you regenerate the storage account shared key or the storage account gets deleted.
+Product Insights constantly monitors the health of your exports- the success rate at which the product is able to write to your ADLS Gen2 storage account. In case of an unfavorable health state, your export may be paused. This may happen if, for example, you regenerate the storage account shared key or the storage account gets deleted.
 
 Postponing means that Product Insights will stop attempting to write data to your storage account. Instead, your data will be buffered, waiting for the export configuration to be fixed. Each signal is buffered for 7 days only. If your export configuration is not fixed and resumed in this time frame, a data loss will occur.
 
