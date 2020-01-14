@@ -44,11 +44,11 @@ Product Insights Preview is packed with features that can help you make sense of
 
 ## Create charts and dashboards
 
->[!VIDEO <https://youtube.com/embed/plbxupcXN9M>]
+>[!VIDEO https://youtube.com/embed/plbxupcXN9M]
 
 ## Collaborate on insights
 
->[!VIDEO <https://youtube.com/embed/q4gX8FeP8W0>]
+>[!VIDEO https://youtube.com/embed/q4gX8FeP8W0]
 
 ## Fix data gaps
 
