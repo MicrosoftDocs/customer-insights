@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Product Insights Power BI Connector
+
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 The Power BI connector accesses aggregated signal data (metrics) from Product Insights, making it possible to construct Power BI reports and dashboards from Product Insights data.  
@@ -20,6 +21,7 @@ You can access Product Insights data through the PowerBI Connector in two ways:
 2. Through copy/paste from the Product Insights user interface (UI).
 
 ## Connect using the navigation table
+
 By connecting through the PowerBI Desktop navigation table, the data for a selected chart will be brought into PowerBI from Product Insights. Currently, the interval and granularity of the data will adhere to the settings in the Product Insights UI.
 
 1. From PowerBI Desktop, select **Get Data** ->**More...**.
@@ -40,7 +42,6 @@ By connecting through the PowerBI Desktop navigation table, the data for a selec
 
 7. Now the data is available for creating visualizations, reports, and dashboards.  
 ![powerbi chart](media/powerbichart.PNG)
-	
 
 ## Connect through Product Insights UI
 
@@ -52,7 +53,7 @@ This mode of connecting involves copying a query directly from the UI and pastin
 ![portal connect](media/portalconnect.jpg)
 
 3. Copy the query to your clipboard.  
-![portal query copy](media/portalcopyquery.jpg)  
+![portal query copy](media/portalcopyquery.jpg)
 
 4. Launch PowerBI Desktop.
 
@@ -60,4 +61,3 @@ This mode of connecting involves copying a query directly from the UI and pastin
 
 6. Paste the copied query from the UI into the query editor and press enter.  
 ![paste query editor](media/pastequeryeditor.PNG)
-
