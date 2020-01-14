@@ -68,3 +68,21 @@ This option allows you to choose which signals should be exported. You can eithe
 ## Data format of exported signals
 
 Signals will be exported using line delimited JSON format. Find out more about it [here](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON). This means that every line in the output file will contain a JSON object with all the properties that were sent in a single signal. Directory structure and file names will be created using current UTC time of servers exporting the data.
+
+## Automatic pausing (postponing) of your export
+Product Insights constantly monitors the health of your exports- the success rate at which the product is able to write to your ADLS Gen2 storage account. In case of an unfavorable health state, your export may paused or postponed. This may happen if, for example, you regenerate the storage account shared key or the storage account gets deleted.
+
+Postponing means that Product Insights will stop attempting to write data to your storage account. Instead, your data will be buffered, waiting for the export configuration to be fixed. Each signal is buffered for 7 days only. If your export configuration is not fixed and resumed in this time frame, a data loss will occur.
+
+### Troubleshooting
+To troubleshoot issues with your export, please double-check the following:
+
+* The storage account that was provided still exists.
+* The storage account key that was provided is correct.
+* The transactions per second limit for storage accounts is not reached. You can verify by visiting **Metrics** pane of the storage account in the Azure Portal.
+
+### Resuming
+To resume the export, please visit the **Management** pane of your project and select the **Resume** button. After resuming, all buffered data will be written to your storage account. This will also enable the export of new signals sent.
+
+### Disabling
+If the export configuration is not fixed for 7 days, your export may be fully disabled. This implies that buffering will be disabled. However, it is still possible to resume the export similar to when the export is paused.
