@@ -8,7 +8,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-## Get started
+# Get started
 
 To help you make the best of Product Insights, we've organized this site to be goal and task oriented.
 
