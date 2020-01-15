@@ -159,15 +159,15 @@ If any court of competent jurisdiction determines that any provision of this Agr
 
 Licensee may not assign this Agreement, or any rights or duties under it, directly or indirectly (e.g., by merger, consolidation, reorganization, or transfer of control), by operation of contract, law, or otherwise, except with Microsoft’s express written consent.
 
-# Exhibit A - Data Protection Terms
+## Exhibit A - Data Protection Terms
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-## Processing of Customer Data; Ownership
+### Processing of Customer Data; Ownership
 
 Customer Data will be used or otherwise Processed only to provide Participant the Services including purposes compatible with providing those services. Microsoft will not use or otherwise Process Customer Data or derive information from it for any advertising or similar commercial purposes. As between the parties, Participant retains all right, title and interest in and to Customer Data. Microsoft acquires no rights in Customer Data, other than the rights Participant grants to Microsoft to provide the Services to Participant. This paragraph does not affect Microsoft’s rights in software or services Microsoft licenses to Participant.
 
-## Disclosure of Customer Data
+### Disclosure of Customer Data
 
 Microsoft will not disclose Customer Data outside of Microsoft or its controlled subsidiaries and affiliates except (1) as Participant directs, (2) as described in this Agreement, or (3) as required by law.
 
@@ -179,33 +179,33 @@ Microsoft will not provide any third party: (a) direct, indirect, blanket or unf
 
 In support of the above, Microsoft may provide Participant’s basic contact information to the third party.
 
-## Processing of Personal Data; GDPR
+### Processing of Personal Data; GDPR
 
 Personal Data provided to Microsoft by, or on behalf of, Participant through use of the Services is also Customer Data. Pseudonymized identifiers may also be generated through Participant’s use of the Services and are also Personal Data.
 
-## Processor and Controller Roles and Responsibilities
+### Processor and Controller Roles and Responsibilities
 
 Participant and Microsoft agree that Participant is the Controller of Personal Data and Microsoft is the Processor of such data, except when Participant acts as a Processor of Personal Data, in which case Microsoft is a Subprocessor. Microsoft will Process Personal Data only on documented instructions from Participant. Participant agrees that this Agreement along with Participant’s use and configuration of features in the Services are Participant’s complete and final documented instructions to Microsoft for the Processing of Personal Data. In any instance where the GDPR applies and Participant is a Processor, Participant warrants to Microsoft that Participant’s instructions, including appointment of Microsoft as a Processor or Subprocessor, have been authorized by the relevant Controller.
 
-## Data Subject Rights; Assistance with Requests
+### Data Subject Rights; Assistance with Requests
 
 Microsoft will make available to Participant in a manner consistent with the functionality of the Services and Microsoft’s role as a Processor Personal Data of data subjects and the ability to fulfill data subject requests to exercise their rights under the GDPR. Microsoft shall comply with reasonable requests by Participant to assist with Participant’s response to such a data subject request. If Microsoft receives a request from Participant’s data subject to exercise one or more of its rights under the GDPR in connection with the Services, Microsoft will redirect the data subject to make its request directly to Participant. Participant will be responsible for responding to any such request including, where necessary, by using the functionality of the Services. Microsoft shall comply with reasonable requests by Participant to assist with Participant’s response to such a data subject request.
 
-## Records of Processing Activities
+### Records of Processing Activities
 
 Microsoft shall maintain all records required by Article 30(2) of the GDPR and, to the extent applicable to the Processing of Personal Data on behalf of Participant, make them available to Participant upon request.
 
-## Data Security
+### Data Security
 
-### Security Practices and Policies
+#### Security Practices and Policies
 
 Microsoft will implement and maintain appropriate technical and organizational measures to protect Customer Data and Personal Data. Those measures shall be set forth in a Microsoft Security Policy. Microsoft will make that policy available to Participant, along with descriptions of the security controls in place for the Services and other information reasonably requested by Participant regarding Microsoft security practices and policies.
 
-## Participant Responsibilities
+### Participant Responsibilities
 
 Participant is solely responsible for making an independent determination as to whether the technical and organizational measures for a Service meets Participant’s requirements, including any of its security obligations under the GDPR or other applicable data protection laws and regulations. Participant acknowledges and agrees that (taking into account the state of the art, the costs of implementation, and the nature, scope, context and purposes of the Processing of its Personal Data as well as the risks to individuals) the security practices and policies implemented and maintained by Microsoft provide a level of security appropriate to the risk with respect to its Personal Data. Participant is responsible for implementing and maintaining privacy protections and security measures for components that Participant provides or controls (such as devices enrolled with Microsoft Intune or within a Microsoft Azure customer’s virtual machine or application).
 
-## Auditing Compliance
+### Auditing Compliance
 
 Microsoft will conduct audits of the security of the computers, computing environment and physical data centers that it uses in Processing Customer Data and Personal Data, as follows:
 
@@ -222,7 +222,7 @@ If the Standard Contractual Clauses apply, then this section is in addition to C
 
 Nothing in this section of the Agreement varies or modifies the Standard Contractual Clauses or affects any supervisory authority’s or data subject’s rights under the Standard Contractual Clauses or GDPR. Microsoft Corporation is an intended third-party beneficiary of this section.
 
-## Security Incident Notification
+### Security Incident Notification
 
 If Microsoft becomes aware of a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Customer Data or Personal Data while Processed by Microsoft (each a “Security Incident”), Microsoft will promptly and without undue delay (1) notify Participant of the Security Incident; (2) investigate the Security Incident and provide Participant with detailed information about the Security Incident; (3) take reasonable steps to mitigate the effects and to minimize any damage resulting from the Security Incident.
 
@@ -233,9 +233,9 @@ Microsoft’s obligation to report or respond to a Security Incident under this 
 
 Participant must notify Microsoft promptly about any possible misuse of its accounts or authentication credentials or any security incident related to the Services.
 
-## Data Transfers and Location
+### Data Transfers and Location
 
-### Data Transfers
+#### Data Transfers
 
 Except as described elsewhere in this Agreement, Customer Data and Personal Data that Microsoft Processes on Participant’s behalf may be transferred to, and stored and Processed in, the United States or any other country in which Microsoft or its Subprocessors operate. Participant appoints Microsoft to perform any such transfer of Customer Data and Personal Data to any such country and to store and Process Customer Data and Personal Data to provide the Participant Services.
 
@@ -243,7 +243,7 @@ Microsoft will abide by the requirements of European Economic Area and Swiss dat
 
 In addition, Microsoft is certified to the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks and the commitments they entail. Microsoft agrees to notify Participant in the event that it makes a determination that it can no longer meet its obligation to provide the same level of protection as is required by the Privacy Shield principles.
 
-## Data Retention and Deletion
+### Data Retention and Deletion
 
 At all times during the term of Participant’s subscription, Participant will have the ability to access, extract and delete Customer Data stored in the Services.
 
@@ -251,11 +251,11 @@ Except for free trials and LinkedIn services, Microsoft will retain Customer Dat
 
 The Services may not support retention or extraction of software provided by Participant. Microsoft has no liability for the deletion of Customer Data or Personal Data as described in this section.
 
-## Processor Confidentiality Commitment
+### Processor Confidentiality Commitment
 
 Microsoft will ensure that its personnel engaged in the Processing of Customer Data and Personal Data (i) will Process such data only on instructions from Participant, and (ii) will be obligated to maintain the confidentiality and security of such data even after their engagement ends.
 
-## Notice and Controls on use of Subprocessors
+### Notice and Controls on use of Subprocessors
 
 Microsoft may hire third parties to provide certain limited or ancillary services on its behalf. Participant consents to the engagement of these third parties and Microsoft Affiliates as Subprocessors. The above authorizations will constitute Participant’s prior written consent to the subcontracting by Microsoft of the processing of Customer Data and Personal Data if such consent is required under the Standard Contractual Clauses.
 
@@ -264,7 +264,7 @@ From time to time, Microsoft may engage new Subprocessors. Microsoft will give P
 
 If Participant does not approve of a new Subprocessor, then Participant may terminate any subscription for the Services without penalty by providing, before the end of the relevant notice period, written notice of termination that includes an explanation of the grounds for non-approval.
 
-## How to Contact Microsoft
+### How to Contact Microsoft
 
 If Participant believes that Microsoft is not adhering to its privacy or security commitments, Participant may contact customer support or use Microsoft’s Privacy web form, located at <https://go.microsoft.com/?linkid=9846224>. Microsoft’s mailing address is:
 Microsoft Enterprise Service Privacy
@@ -281,7 +281,7 @@ Leopardstown
 Dublin 18
 D18 P521
 
-# Attachment 1 to Exhibit A - The Standard Contractual Clauses (Processors)
+## Attachment 1 to Exhibit A - The Standard Contractual Clauses (Processors)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -289,7 +289,7 @@ Beginning May 25, 2018 and thereafter, references to various Articles from the D
 
 For the purposes of Article 26(2) of Directive 95/46/EC for the transfer of personal data to processors established in third countries which do not ensure an adequate level of data protection, Participant (as data exporter) and Microsoft Corporation (as data importer, whose signature appears below), each a “party,” together “the parties,” have agreed on the following Contractual Clauses (the “Clauses” or “Standard Contractual Clauses”) in order to adduce adequate safeguards with respect to the protection of privacy and fundamental rights and freedoms of individuals for the transfer by the data exporter to the data importer of the personal data specified in Appendix 1.
 
-## Clause 1: Definitions
+### Clause 1: Definitions
 
 (a) 'personal data', 'special categories of data', 'process/processing', 'controller', 'processor', 'data subject' and 'supervisory authority' shall have the same meaning as in Directive 95/46/EC of the European Parliament and of the Council of 24 October 1995 on the protection of individuals with regard to the processing of personal data and on the free movement of such data;
 
@@ -303,18 +303,18 @@ For the purposes of Article 26(2) of Directive 95/46/EC for the transfer of pers
 
 (f) 'technical and organisational security measures' means those measures aimed at protecting personal data against accidental or unlawful destruction or accidental loss, alteration, unauthorised disclosure or access, in particular where the processing involves the transmission of data over a network, and against all other unlawful forms of processing.
 
-## Clause 2: Details of the transfer
+### Clause 2: Details of the transfer
 
 The details of the transfer and in particular the special categories of personal data where applicable are specified in Appendix 1 below which forms an integral part of the Clauses.
 
-## Clause 3: Third-party beneficiary clause
+### Clause 3: Third-party beneficiary clause
 
 1. The data subject can enforce against the data exporter this Clause, Clause 4(b) to (i), Clause 5(a) to (e), and (g) to (j), Clause 6(1) and (2), Clause 7, Clause 8(2), and Clauses 9 to 12 as third-party beneficiary.
 2. The data subject can enforce against the data importer this Clause, Clause 5(a) to (e) and (g), Clause 6, Clause 7, Clause 8(2), and Clauses 9 to 12, in cases where the data exporter has factually disappeared or has ceased to exist in law unless any successor entity has assumed the entire legal obligations of the data exporter by contract or by operation of law, as a result of which it takes on the rights and obligations of the data exporter, in which case the data subject can enforce them against such entity.
 3. The data subject can enforce against the subprocessor this Clause, Clause 5(a) to (e) and (g), Clause 6, Clause 7, Clause 8(2), and Clauses 9 to 12, in cases where both the data exporter and the data importer have factually disappeared or ceased to exist in law or have become insolvent, unless any successor entity has assumed the entire legal obligations of the data exporter by contract or by operation of law as a result of which it takes on the rights and obligations of the data exporter, in which case the data subject can enforce them against such entity. Such third-party liability of the subprocessor shall be limited to its own processing operations under the Clauses.
 4. The parties do not object to a data subject being represented by an association or other body if the data subject so expressly wishes and if permitted by national law.
 
-## Clause 4: Obligations of the data exporter
+### Clause 4: Obligations of the data exporter
 
 The data exporter agrees and warrants:
 
@@ -338,7 +338,7 @@ The data exporter agrees and warrants:
 
 (j) that it will ensure compliance with Clause 4(a) to (i).
 
-## Clause 5: Obligations of the data importer
+### Clause 5: Obligations of the data importer
 
 The data importer agrees and warrants:
 
@@ -368,14 +368,14 @@ The data importer agrees and warrants:
 
 (j) to send promptly a copy of any subprocessor agreement it concludes under the Clauses to the data exporter.
 
-## Clause 6: Liability
+### Clause 6: Liability
 
 1. The parties agree that any data subject who has suffered damage as a result of any breach of the obligations referred to in Clause 3 or in Clause 11 by any party or subprocessor is entitled to receive compensation from the data exporter for the damage suffered.
 2. If a data subject is not able to bring a claim for compensation in accordance with paragraph 1 against the data exporter, arising out of a breach by the data importer or his subprocessor of any of their obligations referred to in Clause 3 or in Clause 11, because the data exporter has factually disappeared or ceased to exist in law or has become insolvent, the data importer agrees that the data subject may issue a claim against the data importer as if it were the data exporter, unless any successor entity has assumed the entire legal obligations of the data exporter by contract of by operation of law, in which case the data subject can enforce its rights against such entity.
 The data importer may not rely on a breach by a subprocessor of its obligations in order to avoid its own liabilities.
 3. If a data subject is not able to bring a claim against the data exporter or the data importer referred to in paragraphs 1 and 2, arising out of a breach by the subprocessor of any of their obligations referred to in Clause 3 or in Clause 11 because both the data exporter and the data importer have factually disappeared or ceased to exist in law or have become insolvent, the subprocessor agrees that the data subject may issue a claim against the data subprocessor with regard to its own processing operations under the Clauses as if it were the data exporter or the data importer, unless any successor entity has assumed the entire legal obligations of the data exporter or data importer by contract or by operation of law, in which case the data subject can enforce its rights against such entity. The liability of the subprocessor shall be limited to its own processing operations under the Clauses.
 
-## Clause 7: Mediation and jurisdiction
+### Clause 7: Mediation and jurisdiction
 
 1. The data importer agrees that if the data subject invokes against it third-party beneficiary rights and/or claims compensation for damages under the Clauses, the data importer will accept the decision of the data subject:
 
@@ -385,33 +385,33 @@ The data importer may not rely on a breach by a subprocessor of its obligations 
 
 1. The parties agree that the choice made by the data subject will not prejudice its substantive or procedural rights to seek remedies in accordance with other provisions of national or international law.
 
-## Clause 8: Cooperation with supervisory authorities
+### Clause 8: Cooperation with supervisory authorities
 
 1. The data exporter agrees to deposit a copy of this contract with the supervisory authority if it so requests or if such deposit is required under the applicable data protection law.
 2. The parties agree that the supervisory authority has the right to conduct an audit of the data importer, and of any subprocessor, which has the same scope and is subject to the same conditions as would apply to an audit of the data exporter under the applicable data protection law.
 3. The data importer shall promptly inform the data exporter about the existence of legislation applicable to it or any subprocessor preventing the conduct of an audit of the data importer, or any subprocessor, pursuant to paragraph 2. In such a case the data exporter shall be entitled to take the measures foreseen in Clause 5 (b).
 
-## Clause 9: Governing Law
+### Clause 9: Governing Law
 
 The Clauses shall be governed by the law of the Member State in which the data exporter is established.
 
-## Clause 10: Variation of the contract
+### Clause 10: Variation of the contract
 
 The parties undertake not to vary or modify the Clauses. This does not preclude the parties from adding clauses on business related issues where required as long as they do not contradict the Clause.
 
-## Clause 11: Subprocessing
+### Clause 11: Subprocessing
 
 1. The data importer shall not subcontract any of its processing operations performed on behalf of the data exporter under the Clauses without the prior written consent of the data exporter. Where the data importer subcontracts its obligations under the Clauses, with the consent of the data exporter, it shall do so only by way of a written agreement with the subprocessor which imposes the same obligations on the subprocessor as are imposed on the data importer under the Clauses. Where the subprocessor fails to fulfil its data protection obligations under such written agreement the data importer shall remain fully liable to the data exporter for the performance of the subprocessor's obligations under such agreement.
 2. The prior written contract between the data importer and the subprocessor shall also provide for a third-party beneficiary clause as laid down in Clause 3 for cases where the data subject is not able to bring the claim for compensation referred to in paragraph 1 of Clause 6 against the data exporter or the data importer because they have factually disappeared or have ceased to exist in law or have become insolvent and no successor entity has assumed the entire legal obligations of the data exporter or data importer by contract or by operation of law. Such third-party liability of the subprocessor shall be limited to its own processing operations under the Clauses.
 3. The provisions relating to data protection aspects for subprocessing of the contract referred to in paragraph 1 shall be governed by the law of the Member State in which the data exporter is established.
 4. The data exporter shall keep a list of subprocessing agreements concluded under the Clauses and notified by the data importer pursuant to Clause 5 (j), which shall be updated at least once a year. The list shall be available to the data exporter's data protection supervisory authority.
 
-## Clause 12: Obligation after the termination of personal data processing services
+### Clause 12: Obligation after the termination of personal data processing services
 
 1. The parties agree that on the termination of the provision of data processing services, the data importer and the subprocessor shall, at the choice of the data exporter, return all the personal data transferred and the copies thereof to the data exporter or shall destroy all the personal data and certify to the data exporter that it has done so, unless legislation imposed upon the data importer prevents it from returning or destroying all or part of the personal data transferred. In that case, the data importer warrants that it will guarantee the confidentiality of the personal data transferred and will not actively process the personal data transferred anymore.
 2. The data importer and the subprocessor warrant that upon request of the data exporter and/or of the supervisory authority, it will submit its data processing facilities for an audit of the measures referred to in paragraph 1.
 
-## Appendix 1 to the Standard Contractual Clauses
+### Appendix 1 to the Standard Contractual Clauses
 
 Data exporter: Participant is the data exporter. The data exporter is a user of the Services as defined in the Agreement.
 
@@ -435,7 +435,7 @@ e. Customer Data Deletion or Return. Upon expiration or termination of data expo
 
 Subcontractors: The data importer may hire other companies to provide limited services on data importer’s behalf, such as providing customer support. Any such subcontractors will be permitted to obtain Customer Data only to deliver the services the data importer has retained them to provide, and they are prohibited from using Customer Data for any other purpose.
 
-## Appendix 2 to the Standard Contractual Clauses
+### Appendix 2 to the Standard Contractual Clauses
 
 Description of the technical and organizational security measures implemented by the data importer in accordance with Clauses 4(d) and 5(c):
 

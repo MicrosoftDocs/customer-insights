@@ -23,4 +23,4 @@ There are two ways to publish to a dashboard:
 
 Watch the following video to see the dashboard creation and publishing processes.
 
->[!VIDEO <https://youtube.com/embed/plbxupcXN9M]>
+>[!VIDEO https://youtube.com/embed/plbxupcXN9M]
