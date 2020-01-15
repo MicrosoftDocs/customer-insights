@@ -34,7 +34,7 @@ With these data-driven insights, businesses can transform everything from produc
 
 Learn how Product Insights can turn your business data into actionable insights in real-time, and how to start your free trial.
 
->[!VIDEO <https://www.youtube.com/embed/m9WxF0Vq0TY]>
+>[!VIDEO https://www.youtube.com/embed/m9WxF0Vq0TY]
 
 > [!div class="nextstepaction"]
 > [Next >>](who-uses.md)

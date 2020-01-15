@@ -19,7 +19,7 @@ First, sign into Product Insights at [https://pi.dynamics.com](https://pi.dynami
 
 An Azure Active Directory (AAD) or Microsoft account (example: sample@outlook.com) is required.
 
->[!VIDEO <https://youtube.com/embed/wTLSpr5kecQ]>
+>[!VIDEO https://youtube.com/embed/wTLSpr5kecQ]
 
 ## Create a team
 

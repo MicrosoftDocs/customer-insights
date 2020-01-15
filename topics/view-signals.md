@@ -25,7 +25,7 @@ To start sending signals to an existing project:
 
 Learn how to send sample signals for testing purposes.
 
->[!VIDEO <https://youtube.com/embed/nZc5a8uNE-8]>
+>[!VIDEO https://youtube.com/embed/nZc5a8uNE-8]
 
 ### Add a signal
 
