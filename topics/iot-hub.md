@@ -61,8 +61,8 @@ These instructions assume you have already created an event hub instance inside 
 Once you have your **connection string** (and optionally, your **consumer group**), open your project on [pi.dynamics.com](https://pi.dynamics.com/) to set up the connection. Once you make a connection, your project will be backfilled with any data in the hub, depending on its retention settings. Any future events pushed to the hub will also be sent to Product Insights.
 
 1. Go to the **Settings** page.
-2. Scroll down to **Data Sources** and select **Add Source**.
-3. Enter your connection's **Name**, the **Connection String**, and optionally a **Consumer group name**.
-4. Select the **Add** button to create the connection.
+2. Scroll down to **Data Sources** and select **+ Add**.
+3. Enter your connection's **Name**, the **Azure IoT Hub Connection String**, and optionally a **Consumer group name**.
+4. Select the **Connect** button to create the connection.
 
-![IoT Hub connection screenshot](media/iot-connection.png)
+![IoT Hub connection screenshot](media/iot-hub-screenshot-annotated.png)

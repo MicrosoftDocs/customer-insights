@@ -16,7 +16,7 @@ layout: LandingPage
 
 Signals are data sent to Project Insights from remote applications. You can find and explore a continuous flow of data from a variety of sources, such as products, websites, and mobile applications.
 
-To start sending signals to an existing project:  
+To start sending signals to an existing project:
 
 1. Download the Product Insights [SDK](dev-resources.md) for your platform of choice.
 1. Explore our usage [samples](explore-samples.md).
@@ -35,11 +35,15 @@ Create your sample signal using the following steps:
 
 1. Select a project from the team screen.
 
-1. Select the **Add signals** button from the project screen.
+1. Select the **+ Add signals** button from the project screen.
 
 1. Select **Define a signal**.
 
-1. Enter a name for the new signal into the **Name** field. Optionally, enter a description into the **Description** field.
+1. Select "Next".
+
+1. Enter a name for the new signal into the **Name** field.
+
+1. The **Actual name** field for the signal will get automatically populated. You can modify it if you wish to do so.
 
 1. Select **Create**. Your signal will appear on your project's **Signals** list.
 
@@ -59,6 +63,6 @@ You'll need to define properties for your new signal before you can start genera
 
 1. Select the **Simulate** button. The **Generate test data** window will appear.
 
-1. Enter an **Example value** and **Variation range** percentage for each of your properties.
+1. Enter an **Example value** and **Variation range** percentage if the property is a number for each of your properties.
 
 1. Click **Start** to generate data for the sample signal.
