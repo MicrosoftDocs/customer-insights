@@ -22,7 +22,7 @@ Connect an Event Hub or IoT Hub to Product Insights to backfill existing data in
 
 ## Obtaining your Connection String
 
-This step differs depending on whether you're connecting to an Event Hub or an IoT Hub; instructions for both are shown below. Your connection string should look like this:
+This step differs depending on whether you're connecting to an Event Hub or an IoT Hub. Instructions for both are shown below. Your connection string should look like this:
 
 ```
 Endpoint=sb://your-endpoint.servicebus.windows.net/;SharedAccessKeyName=key-name;SharedAccessKey=your-access-key;EntityPath=your-entity-path
@@ -38,11 +38,11 @@ Endpoint=sb://your-endpoint.servicebus.windows.net/;SharedAccessKeyName=key-name
 
 ### Obtaining an Event Hub Connection String
 
-These instructions assume you have already created an event hub instance inside your Event Hubs Namespace.
+The instructions below assume you've already created an event hub instance inside your Event Hubs Namespace.
 
 1. On your Event Hub's page in the [Azure Portal](https://portal.azure.com/), select **Shared access policies** on the left pane, under **Settings**.
 
-   Note that you must be on the **Shared access policies** page for an Event Hub, not an Event Hub Namespace. If you only have an Event Hub Namespace, you must first create an Event Hub within that Namespace.
+   You must be on the **Shared access policies** page for an Event Hub, not an Event Hub Namespace. If you only have an Event Hub Namespace, you must first create an Event Hub within that Namespace.
 
 2. If you haven't created any access policies yet, select **Add** to add a policy. Make sure it has **Listen** permission.
 
@@ -50,7 +50,7 @@ These instructions assume you have already created an event hub instance inside 
 
 3. Select the access policy you want to use and copy the **Connection string** (primary or secondary key).
 
-   If you don't see an `EntityPath=...` section at the end of the connection string, you have created a connection string for an Event Hub Namespace, not an Event Hub.
+   If you don't see an `EntityPath=...` section at the end of the connection string, you've created a connection string for an Event Hub Namespace, not an Event Hub.
 
 4. (Recommended) Use the **Consumer groups** page to create a new consumer group.
 

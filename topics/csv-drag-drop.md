@@ -37,5 +37,5 @@ Your ingestion key is located on your Product Insights project's **Settings** pa
 3. Select **+ Add signals**.
 4. Check **Import a CSV**.
 5. Select **Next** Button.
-6. The same form as in Option 1 above will appear. Please refer to Option 1 to fill out the form.
+6. The same form as in Option 1 above will appear. Refer to Option 1 to fill out the form.
     ![CSV drag drop signals screenshot](media/add-signals-wizard-screenshot-annotated.png)
