@@ -23,18 +23,19 @@ Your ingestion key is located on your Product Insights project's **Settings** pa
 
 1. Select your team and project.
 2. Go to the **Settings** page.
-3. Scroll down to **CV Files**.
+3. Scroll down to **CSV Files**.
 4. Select **+ Upload** or **+ Add** if CSV files already exist.
 5. Select the CSV file you want to upload from your local storage.
 6. In the **Timestamp column** field, enter the header name of your CSV file's timestamp column.
-7. Select **Add**.
-    ![CSV drag drop settings screenshot](media/csv-drag-drop-settings.png)
+7. Select **Create**.
+    ![CSV drag drop settings screenshot](media/csv-uploader-screenshot-annotated.png)
 
 ### Option 2
 
 1. Select your team and project.
 2. Go to the default **Signals** page.
 3. Select **+ Add signals**.
-4. Select **Import from a CSV file**.
-5. The same form as in Option 1 above will appear. Please refer to Option 1 to fill out the form.
-    ![CSV drag drop signals screenshot](media/csv-drag-drop-signals.png)
+4. Check **Import a CSV**.
+5. Select **Next** Button.
+6. The same form as in Option 1 above will appear. Refer to Option 1 to fill out the form.
+    ![CSV drag drop signals screenshot](media/add-signals-wizard-screenshot-annotated.png)
