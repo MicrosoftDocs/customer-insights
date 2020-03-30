@@ -7,7 +7,6 @@ ms.author: ruthai
 ms.date: 12/23/2019
 ms.service: product-insights
 ms.topic: conceptual
-layout: LandingPage
 ---
 
 # Send signals
