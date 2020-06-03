@@ -33,7 +33,7 @@ The following configuration options can be passed to the SDK:
 
 ## Get an ingestion key from the Product Insights portal
 
-1. From the [pi.dynamics.com](http://pi.dynamics.com) home screen, select your project from the project dropdown on the left navigation menu. If you don't already have a project, select the **+ New Project** option instead and create one.
+1. From the Product Insights home screen, select your project from the project dropdown on the left navigation menu. If you don't already have a project, select the **+ New Project** option instead and create one.
 2. Once you've selected a project, navigate to **Settings > Basics** in the left panel.
 3. Copy your key from the **Ingestion key** field.
 
