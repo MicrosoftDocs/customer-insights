@@ -54,6 +54,6 @@ The following configuration options can be passed to the SDK:
     });
     ```
 
-2. Replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at "window["Contoso"]" or simply "Contoso".
+2. Replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**.
 
 3. Replace the string "INGESTION_KEY" with your ingestion key from the Product Insights portal.
