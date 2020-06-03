@@ -16,22 +16,13 @@ ms.topic: conceptual
 ## Prerequisites
 
 - Visual Studio Code
-- Ingestion key (see [here](js.md) for instructions on how to obtain)
+- Ingestion key (see [here](getting-started-websdk.md) for instructions on how to obtain)
 
 ## Run Sample
 
-1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_js_sample.zip) the **Product Insights Web/React (JavaScript) SDK sample**.
+1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_websdk_sample.zip) the **Product Insights Web SDK sample**.
 2. [Install](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) the Live Server extension in Visual Studio Code.
-3. Unzip the compressed file `pi_js_sample.zip`.
-4. Open the folder in Visual Studio Code.
-5. Replace *Your_Ingestion_Key* with your ingestion key from the Product Insights portal.
-6. Right click on the HTML file and select **Open with Live Server**.
-...............................................................
-
-
-
-
-•	Open the unzipped folder in Visual Studio Code.
-o	Install Live Server extension for Visual Studio Code.
-•	In the pi_js_sample.html file, replace the string “INGESTION_KEY” with the your ingestion key and the string “NAME” with the global name that you want the SDK to be instantiated in (replace all occurrences).
-•	Open the pi_js_sample.html file using Live Server. 
+3. Unzip the compressed file `pi_websdk_sample.zip`.
+4. Open the unzipped folder in Visual Studio Code.
+5. In the `pi_websdk_sample.html` file, replace the string “INGESTION_KEY” with the your ingestion key from the Product Insights portal, and the string “NAME” with the global name that you want the SDK to be instantiated in. BE sure to replace all occurrences.
+6. Open the `pi_websdk_sample.html` file using **Live Server**.
