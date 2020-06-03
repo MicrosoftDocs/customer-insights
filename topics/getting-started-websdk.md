@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for your existing website. You'll start seeing signals in your portal in five minutes or sooner.
+This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for instrumenting your existing website. You'll start seeing signals in your portal in five minutes or sooner.
 
 ## Configuration options
 
