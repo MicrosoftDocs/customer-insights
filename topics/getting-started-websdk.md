@@ -1,6 +1,6 @@
 ---
-uid: developers/downloads/js
-title: Getting started with the web SDK
+uid: topics/getting-started-websdk
+title: Getting started with the Web SDK
 author: ruthaisabokhae
 description: Web SDK
 ms.author: ruthai
@@ -39,7 +39,7 @@ The following configuration options can be passed to the SDK:
 
 ## Integrate the Product Insights SDK into your webpage
 
-1. Add the following script to your page:
+1. Add the following script to your webpage:
     ```javascript
     (function(i,t,a){var e="MSPI";var c="Analytics";var u=e+"queue";i[u]=i[u]||[];var n=i[e]||function(r){var t={};t[c]={};function e(e){while(e.length){var n=e.pop();t[c][n]=function(e){return function(){i[u].push([e,r,arguments])}}(n)}}var n="track";var a="set";e([n+"Signal",n+"View",n+"Action",a+"Property",a+"User","initialize","teardown"]);return t}(a.name);var r=a.name;if(!i[e]){i[r]=n[c];i[u].push(["new",r]);setTimeout(function(){var e="script";var n=t.createElement(e);n.async=1;n.src=a.src;var r=t.getElementsByTagName(e)[0];r.parentNode.insertBefore(n,r)},1)}else{i[r]=new n[c]}i[r].initialize(a.cfg)})  (window,document,{
     src:"https://download.pi.dynamics.com/sdk/web/mspi-0.js",
@@ -54,6 +54,6 @@ The following configuration options can be passed to the SDK:
     });
     ```
 
-2. Replace the string "NAME" with the global variable name where the SDK is instantiated.
+2. Replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at "window["Contoso"]" or simply "Contoso".
 
 3. Replace the string "INGESTION_KEY" with your ingestion key from the Product Insights portal.
