@@ -50,6 +50,7 @@
 ### [Downloads](xref:developers/dev-resources/downloads)
 
 ### [Tutorials](xref:developers/downloads/tutorials/index)
+#### [Web SDK](xref:topics/getting-started-websdk)
 #### [Android (mobile, Java)](xref:developers/downloads/android-java)
 #### [iOS/macOS (Objective-C)](xref:developers/downloads/ios-objc)
 #### [.NET](xref:developers/downloads/dotnet)
