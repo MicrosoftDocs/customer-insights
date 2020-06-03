@@ -2,7 +2,7 @@
 uid: topics/preview-terms
 title: SLA
 author: ruthaisabokhae
-description: Terms of Service 
+description: Terms of Service for preview
 ms.author: ruthai
 ms.date: 06/03/2020
 ms.service: product-insights
@@ -31,7 +31,14 @@ Certain Microsoft services or software may be necessary to use the Services (“
 
 You acknowledge that:
 
-(i) The Services provided under this Agreement are in a pre-release stage and are only available for a limited time. (ii) The Services may not work correctly or the way a commercial version of the Services may function. (iii) The Services may experience interruptions and extended downtime during which you may not be able to access Customer Data or other functionality. (iv) Updates may be provided throughout the term and such updates may result in deleting the Customer Data or changing of Services functionality. (v) In general, due to the pre-release nature of the Services, some or all of the Customer Data may be lost. (vi) Your Customer Data may not be migrated from the Services to any future pre-release or commercial versions that may be released. (vii) Microsoft may choose not to make the Services generally available. (viii) You are solely responsible for determining the appropriateness of using the Services and assume all risks associated with using the Services, including but not limited to risks and costs of program errors, compliance with applicable laws, damage to or loss of, programs or equipment, and unavailability or interruption of operations. 
+(i) The Services provided under this Agreement are in a pre-release stage and are only available for a limited time.  
+(ii) The Services may not work correctly or the way a commercial version of the Services may function.   
+(iii) The Services may experience interruptions and extended downtime during which you may not be able to access Customer Data or other functionality.   
+(iv) Updates may be provided throughout the term and such updates may result in deleting the Customer Data or changing of Services functionality.   
+(v) In general, due to the pre-release nature of the Services, some or all of the Customer Data may be lost.   
+(vi) Your Customer Data may not be migrated from the Services to any future pre-release or commercial versions that may be released.  
+(vii) Microsoft may choose not to make the Services generally available.  
+(viii) You are solely responsible for determining the appropriateness of using the Services and assume all risks associated with using the Services, including but not limited to risks and costs of program errors, compliance with applicable laws, damage to or loss of, programs or equipment, and unavailability or interruption of operations. 
 
 ### 2.2. Future Releases
 
