@@ -24,5 +24,5 @@ ms.topic: conceptual
 2. [Install](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) the Live Server extension in Visual Studio Code.
 3. Unzip the compressed file `pi_websdk_sample.zip`.
 4. Open the unzipped folder in Visual Studio Code.
-5. In the `pi_websdk_sample.html` file, replace the string “INGESTION_KEY” with the your ingestion key from the Product Insights portal, and the string “NAME” with the global name that you want the SDK to be instantiated in. BE sure to replace all occurrences.
+5. In the `pi_websdk_sample.html` file, replace the string “INGESTION_KEY” with the your ingestion key from the Product Insights portal, and the string “NAME” with the global name that you want the SDK to be instantiated in. Be sure to replace all occurrences.
 6. Open the `pi_websdk_sample.html` file using **Live Server**.
