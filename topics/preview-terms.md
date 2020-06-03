@@ -1,5 +1,5 @@
 ---
-uid: developers/articles/terms-of-service
+uid: topics/preview-terms
 title: SLA
 author: ruthaisabokhae
 description: Terms of Service 
