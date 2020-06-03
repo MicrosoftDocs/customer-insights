@@ -71,6 +71,8 @@
 
 # Terms and compliance
 ## [Terms of service](xref:developers/articles/terms-of-service)
+## [Partner Preview Agreement](xref:topics/preview-terms)
+
 ## GDPR
 ### [Delete and export user data](xref:developers/articles/delete-export)
 ### [Manage lifecycle of user data](xref:developers/articles/user-content)
