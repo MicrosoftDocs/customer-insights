@@ -63,6 +63,7 @@
 #### [.NET SDK sample](xref:developers/downloads/dotnet-sample)
 #### [Python SDK sample](xref:developers/downloads/python-sample)
 #### [Web/React SDK sample](xref:developers/downloads/js-sample)
+#### [Web SDK sample](xref:topics/websdk-sample)
 
 ## [Event sending tool](xref:developers/downloads/ingest)
 ## [Drag and drop tool](xref:developers/tutorials/csv-drag-drop)
