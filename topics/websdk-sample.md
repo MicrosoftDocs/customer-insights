@@ -1,15 +1,15 @@
 ---
-uid: developers/downloads/js-sample
-title: Run Web/React (JavaScript) SDK Sample
+uid: topics/websdk-sample
+title: Run Web SDK Sample
 author: ruthaisabokhae
-description: Run Web/React (JavaScript) SDK Sample
+description: How to run the Web SDK Sample
 ms.author: ruthai
-ms.date: 12/27/2019
+ms.date: 06/03/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Run Product Insights Web/React (JavaScript) SDK Sample
+# Run Product Insights Web SDK Sample
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -31,10 +31,6 @@ ms.topic: conceptual
 
 
 
-Sample
-
-<Sample is attached as a zip to the email>
-Instructions:-
 •	Open the unzipped folder in Visual Studio Code.
 o	Install Live Server extension for Visual Studio Code.
 •	In the pi_js_sample.html file, replace the string “INGESTION_KEY” with the your ingestion key and the string “NAME” with the global name that you want the SDK to be instantiated in (replace all occurrences).
