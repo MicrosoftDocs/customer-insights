@@ -34,4 +34,4 @@ If no user consent value is specified, the SDK will assume that the user has con
 
 ## Deleting cookies
 
-Customers can manually delete cookies at any time through their browser.
+Customers can manually delete cookies and local storage keys at any time through their browser's settings.
