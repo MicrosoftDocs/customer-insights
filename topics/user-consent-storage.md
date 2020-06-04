@@ -1,3 +1,14 @@
+---
+uid: topics/manage-cookies-user-consent
+title: Manage cookies and user consent
+author: ruthaisabokhae
+description: Cookies and user consent
+ms.author: ruthai
+ms.date: 06/04/2020
+ms.service: product-insights
+ms.topic: conceptual
+---
+
 # Manage cookies and user consent
 
 Dynamics 365 Product Insights uses cookies to identify website visitors.
