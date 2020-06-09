@@ -74,6 +74,7 @@
 ## [Preview Terms of Service](xref:topics/preview-terms)
 
 ## GDPR
+### [Manage cookies and user consent](xref:topics/manage-cookies-user-consent)
 ### [Delete and export user data](xref:developers/articles/delete-export)
 ### [Manage lifecycle of user data](xref:developers/articles/user-content)
 ## [Product limitations for public preview](xref:developers/tutorials/product-preview-limitations)
