@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Manage cookies and user consent
 
-Dynamics 365 Product Insights uses cookies and localStorage to identify website visitors.
+Dynamics 365 Product Insights uses cookies and local storage (`localStorage`) to identify website visitors.
 
 Cookies are small files that store bits of information about a user’s interactions with the website. They are stored in the browser. When you visit a website for which you have stored cookies, the browser sends that information to the server, which returns information that is unique to you. This is the technology that allows, for example, an online shopping cart to keep selected items in it even if a customer navigates away from the website.
 
@@ -32,17 +32,17 @@ If no user consent value is specified, the SDK will assume that the user has con
 -	_mspi
     -	Stores the anonymous user ID. This cookie is set in the customer domain and expires in 365 days.
 
-### localStorage
+### Local storage
 
-Product Insights also makes use of localStorage to track non-sensitive data. This data is fully stored in the browser itself, with no traffic sent to or from your servers.
+Product Insights also makes use of local storage (`localStorage`) to track non-sensitive data. This data is fully stored in the browser itself, with no traffic sent to or from your servers.
 
--	PISession.Id 
+-	*PISession.Id* 
     - Stores information about the ongoing user session, such as session ID, when it started, and when it expires.
-- PISession.Previous
+- *PISession.Previous*
     - Stores the URL of the previously visited page in the current session.
     
-Keys in localStorage don't expire automatically. They'll be reset during the next session by the SDK.
+Keys in local storage don't expire automatically. They'll be reset during the next session by the SDK.
 
 ## Deleting cookies
 
-Your customers can manually delete cookies and localStorage keys at any time through their browser's settings.
+Your customers can manually delete cookies and local storage keys at any time through their browser's settings.
