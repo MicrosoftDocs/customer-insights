@@ -43,7 +43,7 @@ The following configuration options can be passed to the SDK:
     ```javascript
     <script>
     (function(i,t,a){var e="MSPI";var c="Analytics";var u=e+"queue";i[u]=i[u]||[];var n=i[e]||function(r){var t={};t[c]={};function e(e){while(e.length){var n=e.pop();t[c][n]=function(e){return function(){i[u].push([e,r,arguments])}}(n)}}var n="track";var a="set";e([n+"Signal",n+"View",n+"Action",a+"Property",a+"User","initialize","teardown"]);return t}(a.name);var r=a.name;if(!i[e]){i[r]=n[c];i[u].push(["new",r]);setTimeout(function(){var e="script";var n=t.createElement(e);n.async=1;n.src=a.src;var r=t.getElementsByTagName(e)[0];r.parentNode.insertBefore(n,r)},1)}else{i[r]=new n[c]}i[r].initialize(a.cfg)})  (window,document,{
-    src:"https://download.pi.dynamics.com/sdk/web/mspi-0.js",
+    src:"https://download.pi.dynamics.com/sdk/web/mspi-0.min.js",
     name:"NAME",
     cfg:{
       ingestionKey:"INGESTION_KEY",
