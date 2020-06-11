@@ -14,3 +14,39 @@ ms.topic: conceptual
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 This list defines selected terms that appear frequently in Product Insights and in its supporting documentation.
+
+## Company
+
+Placeholder.
+
+## Dimension
+
+Placeholder.
+
+## Environment
+
+Placeholder.
+
+## Metric
+
+Placeholder.
+
+## Role
+
+Placeholder.
+
+## Segment
+
+Placeholder.
+
+## Signal
+
+Placeholder.
+
+## Team
+
+Placeholder.
+
+## Workspace
+
+Placeholder.
