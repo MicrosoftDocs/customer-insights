@@ -4,7 +4,7 @@ title: Getting started with the Web SDK
 author: ruthaisabokhae
 description: Web SDK
 ms.author: ruthai
-ms.date: 06/02/2020
+ms.date: 06/25/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -60,3 +60,17 @@ The following configuration options can be passed to the SDK:
 2. Replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**.
 
 3. Replace the string "INGESTION_KEY" with your ingestion key from the Product Insights portal.
+
+## Setting user details for your signal
+
+The PI SDK allows you to define user information that can be sent with every signal. This can be done by specifying the user details in a property called `user` (the expected data for this property is the IUser object), similar to `src`, `name`, and `cfg` in the code snippet configuration. Alternatively, user information can be specified by calling the setUser(user: IUser) API on the SDK.
+
+Specifying user details in the code snippet means that all telemetry will have this information. However, if specified by the setUser API, telemetry sent before the setUser API will not contain this information.
+
+The IUser interface contains the following string properties:
+
+- **localId?**: The user's local ID.
+- **authId?**: The authenticated user ID.
+- **authType?**: The authentication type used to the get authenticated user ID.
+- **name?**: The user's name.
+- **email?**: The user's email address.
