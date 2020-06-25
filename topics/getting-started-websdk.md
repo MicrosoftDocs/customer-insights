@@ -63,14 +63,14 @@ The following configuration options can be passed to the SDK:
 
 ## Setting user details for your signal
 
-The PI SDK allows you to define user information that can be sent with every signal. This can be done by specifying the user details in a property called `user` (the expected data for this property is the IUser object), similar to `src`, `name`, and `cfg` in the code snippet configuration. Alternatively, user information can be specified by calling the setUser(user: IUser) API on the SDK.
+The PI SDK allows you to define user information that can be sent with every signal. This can be done by specifying the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration. Alternatively, user information can be specified by calling the `setUser(user: IUser)` API on the SDK.
 
-Specifying user details in the code snippet means that all telemetry will have this information. However, if specified by the setUser API, telemetry sent before the setUser API will not contain this information.
+Specifying user details in the code snippet means that all telemetry will have this information. However, if specified by the `setUser API`, telemetry sent before the `setUser API` will not contain this information.
 
-The IUser interface contains the following string properties:
+The `IUser` interface contains the following string properties:
 
-- **localId?**: The user's local ID.
-- **authId?**: The authenticated user ID.
-- **authType?**: The authentication type used to the get authenticated user ID.
-- **name?**: The user's name.
-- **email?**: The user's email address.
+- **localId**: The user's local ID.
+- **authId**: The authenticated user ID.
+- **authType**: The authentication type used to the get authenticated user ID.
+- **name**: The user's name.
+- **email**: The user's email address.
