@@ -101,8 +101,9 @@
 ## [Product limitations for public preview](xref:developers/tutorials/product-preview-limitations)
 -->
 
-<!--
 # Help and support
+## [Concepts and terms](xref:topics/concepts-terminology)
+<!--
 ## [Contact us](xref:developers/customer-care/support)
 ## [Engage community](xref:developers/customer-care/community)
 ## [Supported languages](xref:developers/customer-care/supported-lang)
