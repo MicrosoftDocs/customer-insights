@@ -1,5 +1,5 @@
 ---
-uid: topics/manage-cookies-user-consent
+uid: topics/user-consent-storage
 title: Manage cookies and user consent
 author: ruthaisabokhae
 description: Cookies and user consent
