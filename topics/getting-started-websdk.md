@@ -44,7 +44,7 @@ The following configuration options can be passed to the SDK:
     <script>
 	(function(a,t,i){var e="MSPI";var c="Analytics";var u=e+"queue";a[u]=a[u]||[];var n=a[e]||function(r){var t={};t[c]={};function e(e){while(e.length){var n=e.pop();t[c][n]=function(e){return function(){a[u].push([e,r,arguments])}}(n)}}var n="track";var i="set";e([n+"Signal",n+"View",n+"Action",i+"Property",i+"User","initialize","teardown"]);return t}(i.name);var r=i.name;if(!a[e]){a[r]=n[c];a[u].push(["new",r]);setTimeout(function(){var e="script";var n=t.createElement(e);n.async=1;n.src=i.src;var r=t.getElementsByTagName(e)[0];r.parentNode.insertBefore(n,r)},1)}else{a[r]=new n[c]}if(i.user){a[r].setUser(i.user)}a[r].initialize(i.cfg)})
 	  (window,document, {
-	    src:"SDK_SRC",
+	    src:"https://download.pi.dynamics.com/sdk/web/mspi-0.min.js",
 	    name:"NAME",
 	    cfg:{
 	      ingestionKey:"INGESTION_KEY",
@@ -57,7 +57,17 @@ The following configuration options can be passed to the SDK:
 	</script>
     ```
 
-2. Replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**.
+2. Replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**. See sample code for track signal, for instance:
+
+```window["Contoso"].trackSignal({
+    name: "video_log",
+    properties: {
+        "duration": 320,
+        "name": "getting_started",
+        "ad_shown": true
+    }
+});
+```
 
 3. Replace the string "INGESTION_KEY" with your ingestion key from the Product Insights portal.
 
