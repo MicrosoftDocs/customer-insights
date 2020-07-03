@@ -59,7 +59,8 @@ The following configuration options can be passed to the SDK:
 
 2. Replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**. See sample code for track signal, for instance:
 
-```window["Contoso"].trackSignal({
+```
+window["Contoso"].trackSignal({
     name: "video_log",
     properties: {
         "duration": 320,
