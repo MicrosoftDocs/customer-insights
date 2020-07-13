@@ -57,7 +57,10 @@
 
 <!-- # [Video curriculum](xref:developers/tutorials/video-curriculum) -->
 
+# [Onboard to the Private Preview](xref:topics/onboarding-guidance)
+
 # Get started
+## [First run experience](xref:topics/first-run-experience)
 ## [Create a project](xref:topics/create-project)
 
 # User guides
