@@ -34,8 +34,6 @@ landingContent:
         links:
           - text: First run experience
             url: first-run-experience.md
-          - text: Create a project
-            url: create-project.md
       
 
   # Card (optional)
@@ -45,6 +43,8 @@ landingContent:
         links:
           - text: Create and export derived signals
             url: derived-signals.md
+          - text: Create a project
+            url: create-project.md
       - linkListType: reference
         links:
           - text: Concepts and terms
