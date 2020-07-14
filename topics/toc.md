@@ -61,10 +61,10 @@
 
 # Get started
 ## [First run experience](xref:topics/first-run-experience)
-## [Create a project](xref:topics/create-project)
 
 # User guides
 ## [Create and export derived signals](xref:topics/derived-signals)
+## [Create a project](xref:topics/create-project)
 
 # Developer resources
 <!-- ## [Quick links](xref:developers/dev-resources/index) -->
