@@ -7,7 +7,7 @@ ms.author: ruthai
 ms.date: 07/15/2020
 ms.service: product-insights
 ms.topic: conceptual
-
+---
 
 # Create and export derived signals
 
