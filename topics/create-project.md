@@ -35,9 +35,8 @@ To add members to your project, follow these steps:
 
 ### Member permissions
 
-Customer Analytics for Private Preview has only one role currently available, with the following permissions enabled:
+Customer Analytics for Private Preview has only the role of **Owner** currently available, with the following permissions enabled:
 
-**Owner**
 - Configure company
 - Create projects
 - Configure projects (billing, quotas, members, OOB reports, delete)
