@@ -100,7 +100,7 @@
 
 # Terms and compliance
 <!-- ## [Terms of service](xref:developers/articles/terms-of-service) -->
-## [Preview Terms of Service](xref:topics/preview-terms)
+## [Preview Terms of Service](xref:developers/articles/terms-of-service)
 
 ## GDPR
 ### [Manage cookies and user consent](xref:topics/user-consent-storage)
