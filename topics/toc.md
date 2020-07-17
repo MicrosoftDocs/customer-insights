@@ -65,6 +65,7 @@
 # User guides
 ## [Create and export derived signals](xref:topics/derived-signals)
 ## [Create a project](xref:topics/create-project)
+## [Real time usage report](xref:topics/real-time-usage-report)
 
 # Developer resources
 <!-- ## [Quick links](xref:developers/dev-resources/index) -->
