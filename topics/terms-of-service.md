@@ -4,7 +4,7 @@ title: SLA
 author: ruthaisabokhae
 description: Terms of Service 
 ms.author: ruthai
-ms.date: 09/26/2019
+ms.date: 07/17/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -15,19 +15,23 @@ ms.topic: conceptual
 
 ## PREVIEW TERMS OF SERVICE
 
-LAST UPDATED OCTOBER 2019
+LAST UPDATED MAY 2020
 
-By accessing or using the Services, you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.  If you are a subscriber of Dynamics 365 or other Microsoft services, your Dynamics 365 customer agreement or other Microsoft service agreement applies to your use of Dynamics 365 or other Microsoft services generally. This Agreement applies to your use of the Services specifically.
+By accessing or using the Dynamics 365 Product Insights services preview (together with any Microsoft provided data sources, the "Services"), you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.
 
-## 1. WHAT THE AGREEMENT COVERS
+## 1. WHAT THIS AGREEMENT COVERS
 
-This is an agreement between you (“you,” “your,” “Customer,” “Participant,” or “Licensee”) and Microsoft Corporation, (“Microsoft, “we,” “us” or “our”). The terms and conditions of this agreement (“Agreement”) apply to your access and use of Dynamics 365 Product Insights services preview (together with any Microsoft provided data sources, the “Services”). The Services are optional evaluation services to obtain feedback prior to general release. Certain Microsoft services or software may be necessary to use the Services (“Required Offerings”). Microsoft does not grant any rights under this Agreement to access or use Required Offerings; rather, Required Offerings are separately licensed under any respective Microsoft Licensing Agreement, and may require paying a fee. “Microsoft Licensing Agreement” or “MLA” means the Microsoft Online Services Terms (see <http://microsoftvolumelicensing.com/>) and Participant’s Microsoft volume licensing agreement, or any other applicable agreement, under which Participant subscribed or was granted a license to any Required Offerings.
+This is an agreement between you (“you,” “your,” “Customer,” “Participant,” or “Licensee”) and Microsoft Corporation, (“Microsoft, “we,” “us” or “our”). The terms and conditions of this agreement (“Agreement”) apply to your access and use of the Services. The Services are optional evaluation services to obtain feedback prior to general release. Certain Microsoft services or software may be necessary to use the Services (“Required Offerings”). Microsoft does not grant any rights under this Agreement to access or use Required Offerings. Rather, Required Offerings are separately licensed under any respective Microsoft Licensing Agreement, and may require paying a fee. If you are a subscriber of Dynamics 365 or other Microsoft services, your Dynamics 365 customer agreement or other Microsoft service agreement applies to your use of Dynamics 365 or other Microsoft services generally. This Agreement applies to your use of the Services specifically.
+
+“Microsoft Licensing Agreement” or “MLA” means the Microsoft Online Services Terms (see <http://microsoftvolumelicensing.com/>) and Participant’s Microsoft volume licensing agreement, or any other applicable agreement, under which Participant subscribed or was granted a license to any Required Offerings.
 
 ## 2. THE SERVICES
 
 ### 2.1. Pre-Release Services and Updates
 
-You acknowledge that (i) The Services provided under this Agreement are in a pre-release stage and are only available for a limited time. (ii) The Services may not work correctly or the way a commercial version of the Services may function. (iii) The Services may experience interruptions and extended downtime during which you may not be able to access Customer Data or other functionality. (iv) Updates may be provided throughout the term and such updates may result in deleting the Customer Data or changing of Services functionality. (v) In general, due to the pre-release nature of the Services, some or all of the Customer Data may be lost. (vi) Your Customer Data may not be migrated from the Services to any future pre-release or commercial versions that may be released. (vii) Microsoft may choose not to make the Services generally available. (viii) You are solely responsible for determining the appropriateness of using the Services and assume all risks associated with using the Services, including but not limited to risks and costs of program errors, compliance with applicable laws, damage to or loss of, programs or equipment, and unavailability or interruption of operations.
+You acknowledge that:
+
+**(i)** The Services provided under this Agreement are in a pre-release stage and are only available for a limited time. **(ii)** The Services may not work correctly or the way a commercial version of the Services may function. **(iii)** The Services may experience interruptions and extended downtime during which you may not be able to access Customer Data or other functionality. **(iv)** Updates may be provided throughout the term and such updates may result in deleting the Customer Data or changing of Services functionality. **(v)** In general, due to the pre-release nature of the Services, some or all of the Customer Data may be lost. **(vi)** Your Customer Data may not be migrated from the Services to any future pre-release or commercial versions that may be released. **(vii)** Microsoft may choose not to make the Services generally available. **(viii)** You are solely responsible for determining the appropriateness of using the Services and assume all risks associated with using the Services, including but not limited to risks and costs of program errors, compliance with applicable laws, damage to or loss of, programs or equipment, and unavailability or interruption of operations.
 
 ### 2.2. Future Releases
 
