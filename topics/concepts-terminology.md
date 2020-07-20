@@ -4,7 +4,7 @@ title: Concepts and terminology
 author: ruthaisabokhae
 description: Concepts and terminologies
 ms.author: ruthai
-ms.date: 06/12/2020
+ms.date: 07/19/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -14,6 +14,14 @@ ms.topic: conceptual
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 This list defines selected terms that appear frequently in Product Insights and in its supporting documentation.
+
+## Attribute
+
+Metadata for a property of an object, element, or file.
+
+## Audience
+
+An organization's active, inactive, and potential customers. Product Insights also uses *Segment* to refer to subsets of an audience that share specific attributes.
 
 ## Company
 
@@ -29,13 +37,17 @@ Placeholder.
 
 ## Environment
 
-Placeholder.
+A space in which to store, manage, and share an organization's business data, apps, and flows.
 
 ## Event
 
 A single occurance of data sent to Product Insights. If you think of a **signal** as a flowing stream of data, an event is that stream at a specific point in time.
 
 ## Funnel
+
+Placeholder.
+
+## Journey
 
 Placeholder.
 
