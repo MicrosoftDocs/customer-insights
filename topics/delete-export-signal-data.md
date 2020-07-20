@@ -38,12 +38,10 @@ To tag a signal property as containing PII, follow these steps.
 
 1. Navigate to the project that the signal belongs to.
 
-   ![Project overview](media/ProjectOverview.png)
   
 1. Select the signal you want to tag to reach the signal's **Overview** page.
 
-   ![See signal overview](media/SignalOverview.png)
-  
+     
 1. Select **[...]** and then **Edit** to reach the **Update Property** window.
 
    ![Update property](media/SignalSettings.png)
