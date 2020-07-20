@@ -106,7 +106,7 @@
 ## GDPR
 ### [Manage cookies and user consent](xref:topics/user-consent-storage)
 ### [Delete and export user data](xref:topics/delete-export-signal-data)
-### [Control lifecycle of user data](xref:topics/control-lifecycle)
+<!-- ### [Control lifecycle of user data](xref:topics/control-lifecycle) -->
 <!--
 ### [Delete and export user data](xref:developers/articles/delete-export)
 ### [Manage lifecycle of user data](xref:developers/articles/user-content)
