@@ -49,7 +49,7 @@ The goal of this onboarding document is to give Private Preview customers visibi
 * The Out-of-the-Box reports showing the events coming through from the Web SDK is pre-defined visualizations and dashboards.
 
 ### Derived signals
-* The ability to create a derived signal from the web analytics data, filter it and export it to ADLS. That then allows for importing the data into [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/en-us/ai/customer-insights/).
+* The ability to create a derived signal from the web analytics data, filter it and export it to ADLS. That then allows for importing the data into Customer Insights.
 
 ## Product use cases for customers to test
 ### First run experience
@@ -58,7 +58,7 @@ The goal of this onboarding document is to give Private Preview customers visibi
   *	View web real time report showing active users by device, page view trend, top pages, top referrers, and users’ geographic locations.
 
 ### Exporting from Product Insights
-  *	Custom website instrumentation – ensure to send an authid for your customers logging into your site.
+  *	Custom website instrumentation – be sure to send an *authid* for each customer logging into your site.
   *	Create a derived signal for export activities data.
   *	Export the data into your ADLS gen 2 storage.
   *	Optional: Consume Product Insights data export as activities in Customer Insights and view it as part of a customer profile.
