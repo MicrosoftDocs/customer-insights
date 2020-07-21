@@ -19,6 +19,10 @@ This list defines selected terms that appear frequently in Product Insights and 
 
 Metadata for a property of an object, element, or file.
 
+## Derived signal
+
+A derived signal is a virtual view of a base signal. These are generally used for scoping down a base signal for export, or for cleaning up a signal containing properties that aren't necessary for exposure or export.
+
 ## Environment
 
 A space in which to store, manage, and share an organization's business data, apps, and flows.
