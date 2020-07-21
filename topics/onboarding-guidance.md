@@ -33,9 +33,9 @@ The goal of this onboarding document is to give Private Preview customers visibi
 *	Access to (or ability to create) an ADLS storage account (for export).
 
 ## User consent for your site
-•	Please refer to the “Manage cookies and user consent” section TODO add in doc hyperlink
-•	The “Getting started” section highlights that the code auto collects view and actions. TODO update in doc hyperlink
-•	After reviewing these documents, you must evaluate if there is need for an update to your user consent notification. If you previously had no "non-essential" cookies, then this will likely require an update to your site policy, etc.
+*	Please refer to the **Manage cookies and user consent** section.
+*	The **Getting started** section highlights that the code auto collects view and actions.
+*	After reviewing these documents, you must evaluate if there is need for an update to your user consent notification. If you previously had no "non-essential" cookies, then this will likely require an update to your site policy, etc.
 
 ## Public Preview Features
 
@@ -45,26 +45,33 @@ The goal of this onboarding document is to give Private Preview customers visibi
 ### Web SDK
 * The JavaScript library to be instrumented on your website to measure user interaction also provides sample code.
 
-### Web analytics  and reports
+### Web analytics and reports
 * The Out-of-the-Box reports showing the events coming through from the Web SDK is pre-defined visualizations and dashboards.
 
 ### Derived signals
 * The ability to create a derived signal from the web analytics data, filter it and export it to ADLS. That then allows for importing the data into [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/en-us/ai/customer-insights/)
 
 ## Product use cases for customers to test
-1. First run experience
-* Follow the account creation process - setting up your organization, environment, and workspace creation, and adding members.
-* Instrument website with the SDK to see telemetry arriving into your workspace.
-*	Web real time report showing active users by device, page view trend, top pages, top referrers, and users’ geographic locations.
+### First run experience
+  * Follow the account creation process - set up your organization and environment, creat your workspace and add members.
+  * Instrument website with the SDK to see telemetry arriving into your workspace.
+  *	View web real time report showing active users by device, page view trend, top pages, top referrers, and users’ geographic locations.
 
-•	Exporting from Product Insights
-•	Custom website instrumentation – ensure to send an authid for your customers logging into your site.
-•	Create a derived signal for export activities data.
-•	Export the data into your ADLS gen 2 storage.
-•	Optional step: Consume PI data export as activities in CI and view it as part of a customer profile.
+### Exporting from Product Insights
+  *	Custom website instrumentation – ensure to send an authid for your customers logging into your site.
+  *	Create a derived signal for export activities data.
+  *	Export the data into your ADLS gen 2 storage.
+  *	Optional: Consume Product Insights data export as activities in Customer Insights and view it as part of a customer profile.
 
-## Setup/Provisioning Steps
-*	Before you start, please ensure you have read and agree to the Preview Terms of Service provided.
-*	Login to the Dynamics 365 Product Insights portal using your Microsoft AAD user accounts
-*	Follow the process defined in the “Getting Started” section of the document to setup your organization, environment, and workspace
-*	Please refer to the Known Issues section
+## Setup/ProvisioningsSteps
+*	Before you start, please ensure you have read and agree to the **Preview Terms of Service** provided.
+*	Login to the Dynamics 365 Product Insights portal using your Microsoft AAD user accounts.
+*	Follow the process defined in the**Getting Started** section of the document to setup your organization environment, and workspace.
+*	Please refer to the **Known Issues** section.
+
+## Known issues
+As we continue to work on the product and refine the experience, we are aware of a few outstanding issues, so please bear these in mind as you experience the product.
+
+**Note: A list of the known bugs and workaround will be made available before this documentation is provided to the customer.**
+
+
