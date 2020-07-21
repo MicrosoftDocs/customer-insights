@@ -11,6 +11,8 @@ ms.topic: conceptual
 
 # Create and export derived signals
 
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+
 A derived signal is a virtual view of a base signal. These are generally used for scoping down a base signal for export, or for cleaning up a signal containing properties that aren't necessary for exposure or export.
 
 Admins can define derived signals by removing and adding properties, as well as filtering events based on property values.
