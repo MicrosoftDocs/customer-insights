@@ -40,7 +40,7 @@ The goal of this onboarding document is to give Private Preview customers visibi
 ## Public Preview Features
 
 ### First run experience
-* The starting point for any user logging into Product Insights in which the Organization is generated and your own environment and workspace are created. This is where you will be able to start sending you web analytics data into
+* The starting point for any user logging into Product Insights in which the Organization is generated and your own environment and workspace are created. This is where you will be able to start sending you web analytics data into.
 
 ### Web SDK
 * The JavaScript library to be instrumented on your website to measure user interaction also provides sample code.
@@ -49,7 +49,7 @@ The goal of this onboarding document is to give Private Preview customers visibi
 * The Out-of-the-Box reports showing the events coming through from the Web SDK is pre-defined visualizations and dashboards.
 
 ### Derived signals
-* The ability to create a derived signal from the web analytics data, filter it and export it to ADLS. That then allows for importing the data into [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/en-us/ai/customer-insights/)
+* The ability to create a derived signal from the web analytics data, filter it and export it to ADLS. That then allows for importing the data into [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/en-us/ai/customer-insights/).
 
 ## Product use cases for customers to test
 ### First run experience
