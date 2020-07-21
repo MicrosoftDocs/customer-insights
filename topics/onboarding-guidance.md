@@ -20,16 +20,16 @@ The goal of this onboarding document is to give Private Preview customers visibi
 *	Validate the core scenarios and provide feedback to Microsoft.
 
 ## Private Preview Expectations 
-*	Private Preview exists for testing purposes only. Environments may be torn down at the end of the testing period to make way for a Public Preview release.  
+*	Private Preview exists for testing purposes only. Environments may be torn down at the end of the testing period to make way for future releases.  
 *	Private Preview is not for production use, and strictly for prototyping and providing feedback. We are likely to delete data and rebuild environments at any point during the Private Preview but will ensure communication of any changes to avoid disruption in testing.  
 *	We will work closely with you to seek feedback, incorporate product changes. We expect to establish a cadence for this interaction during the period of Private Preview and will communicate that subsequently.  
 *	Private Preview is expected to run approximately for two months (August and September 2020) during which time we appreciate your active participation. We plan to take all relevant feedback into our future releases.  
-*	Please reach out to your assigned PM first or use the alias pirequest@microsoft.com to provide feedback and report issues. We will triage reported issues, prioritize, and track them, and share status with you regularly.  
+*	Please reach out to your assigned Product Manager first or use the email **pirequest@microsoft.com** to provide feedback and report issues. We will triage reported issues, prioritize, and track them, and share status with you regularly.  
 
 
 ## Prerequisites
 *	Access to a production website with authentication for your customers to instrument the Product Insights SDK.
-*	Access to a Test environment for Customer Insights to be able to test the full customer 360 integration of data.
+*	Access to a Test environment for [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/en-us/ai/customer-insights/) to be able to test the full customer 360 integration of data.
 *	Access to (or ability to create) an ADLS storage account (for export).
 
 ## User consent for your site
