@@ -63,10 +63,10 @@ The goal of this onboarding document is to give Private Preview customers visibi
   *	Export the data into your ADLS gen 2 storage.
   *	Optional: Consume Product Insights data export as activities in Customer Insights and view it as part of a customer profile.
 
-## Setup/ProvisioningsSteps
+## Setup/ Provisionings Steps
 *	Before you start, please ensure you have read and agree to the **Preview Terms of Service** provided.
 *	Login to the Dynamics 365 Product Insights portal using your Microsoft AAD user accounts.
-*	Follow the process defined in the**Getting Started** section of the document to setup your organization environment, and workspace.
+*	Follow the process defined in the **Getting Started** section of the document to setup your organization environment, and workspace.
 *	Please refer to the **Known Issues** section.
 
 ## Known issues
