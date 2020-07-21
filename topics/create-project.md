@@ -11,6 +11,8 @@ ms.topic: conceptual
 
 # Create a project
 
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+
 To create a new project, follow these steps:
 
 1. Select **+New Project** in the bottom-left corner of the portal.
