@@ -19,70 +19,36 @@ This list defines selected terms that appear frequently in Product Insights and 
 
 Metadata for a property of an object, element, or file.
 
-## Audience
-
-An organization's active, inactive, and potential customers. Product Insights also uses *Segment* to refer to subsets of an audience that share specific attributes.
-
-## Company
-
-Placeholder.
-
-## Dimension
-
-Placeholder.
-
-## Enrichment
-
-Placeholder.
-
 ## Environment
 
 A space in which to store, manage, and share an organization's business data, apps, and flows.
 
 ## Event
 
-A single occurance of data sent to Product Insights. If you think of a **signal** as a flowing stream of data, an event is that stream at a specific point in time.
+A single occurance of data sent to Product Insights. If you think of a **signal** as a flowing stream of data, an event is that stream at a specific point in time. 
 
-## Funnel
+## Member
 
-Placeholder.
-
-## Journey
-
-Placeholder.
+A member is assigned as a way of managing users’ permission to a Project. Currently Product Insights only has the role of “Owner”, which allows the user to manage the project, view reports, and manage data. 
 
 ## Metric
 
-A quantifiable measurement of data, used to track or assess a process. Examples of relevant metrics in Product Insights include revenue, page views, and average time spent on site.
-
-## Organization
-
-Placeholder.
-
-## Path
-
-Placeholder.
+A quantifiable measurement of data, used to track or assess a process. Examples of relevant metrics in Product Insights include page views, and average time spent on site.
 
 ## Project
 
-Placeholder. New projects include preconfigured reports and insights based on the type of product you want to analyze.
+A Project is a way of grouping of data and reports in Product Insights. New projects include preconfigured reports and insights based on the type of product you want to analyze. New projects include preconfigured reports and insights based on the type of product you want to analyze.
 
-## Segment
+## Report
 
-A subset of data, useful for analyzing the behavior or interactions that a specific group of customers has with your product. Examples might include looking at users from a specific geographical area, or those referred to your website from another specific source.
+A report is a collection of charts. There are several out-of-the-box reports defined for a web Project. 
 
 ## Signal
 
 Data sent to Product Insights from an outside source, such as a website, mobile app, or IoT device. Signals provide a continuous flow of data that can be analyzed for real-time insights into how customers use and experience your product.
 
-## Team
 
-Placeholder.
 
-## Traffic
 
-Placeholder.
 
-## Workspace
 
-Placeholder.
