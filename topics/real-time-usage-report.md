@@ -11,6 +11,8 @@ ms.topic: conceptual
 
 # Real-time usage report
 
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+
 The **Real-time usage** report shows an overview of current activity on your site, auto-refreshing every minute. You can use this to monitor the impact that marketing campaigns, press events, and other scenarios have on your site's traffic.
 
 The report will automatically display when you first sign in to Product Insights. You can also find it by navigating to **Reports** -> **Key metrics** -> **Real-time usage** in the left-hand menu.
