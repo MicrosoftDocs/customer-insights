@@ -15,14 +15,14 @@ ms.topic: conceptual
 
 The goal of this onboarding document is to give Private Preview customers visibility to our product features, documentation, scenarios to validate, known issues and how to engage with Microsoft throughout the Private Preview. Nothing in this documentation is meant to, or should be construed to, modify the terms of your agreements with Microsoft, including your Preview Terms.
 
-## Onboarding Guidance 
+## Onboarding Overview 
 
 *	Review and agree to NDA/ Preview Agreement with Microsoft.  
 *	Review capabilities outlined in this document for Private Preview.  
 *	Review and understand the limitations/known issues of our Private Preview.  
 *	Validate the core scenarios and provide feedback to Microsoft.
 
-## Private Preview Expectations 
+## Private Preview expectations 
 
 *	Private Preview exists for testing purposes only. Environments may be torn down at the end of the testing period to make way for future releases. See the Preview Terms for more disclosures and limitations.  
 *	Private Preview is not for production use, and strictly for prototyping and providing feedback. We are likely to delete data and rebuild environments at any point during the Private Preview but will make reasonable efforts to ensure communication of any changes to avoid disruption in testing.  
@@ -43,7 +43,7 @@ The goal of this onboarding document is to give Private Preview customers visibi
 *	The **Getting started** section highlights that the code auto collects view and actions.
 *	After reviewing these documents, you must evaluate if there is need for an update to your user consent notification. If you previously had no "non-essential" cookies, then this will likely require an update to your site policy, etc.
 
-## Public Preview Features
+## Public Preview features
 
 ### First run experience
 
@@ -76,7 +76,7 @@ The goal of this onboarding document is to give Private Preview customers visibi
   *	Export the data into your ADLS gen 2 storage.
   *	Optional: Consume Product Insights data export as activities in Customer Insights and view it as part of a customer profile.
 
-## Setup/ Provisioning Steps
+## Setup and provisioning steps
 
 *	Before you start, please ensure you have read and agree to the **Preview Terms of Service** provided.
 *	Login to the Dynamics 365 Product Insights portal using your Microsoft AAD user accounts.
