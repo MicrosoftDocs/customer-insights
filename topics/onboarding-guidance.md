@@ -1,5 +1,5 @@
 ---
-uid: topics/onboarding-overview
+uid: topics/onboarding-guidance
 title: Onboarding to the Private Preview
 author: ruthaisabokhae
 description: Framework for onboarding
