@@ -9,13 +9,13 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Onboarding to the Private Preview
+# Onboard to the Private Preview
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 The goal of this onboarding document is to give Private Preview customers visibility to our product features, documentation, scenarios to validate, known issues and how to engage with Microsoft throughout the Private Preview. Nothing in this documentation is meant to, or should be construed to, modify the terms of your agreements with Microsoft, including your Preview Terms.
 
-## Onboarding Overview 
+## Onboarding overview 
 
 *	Review and agree to NDA/ Preview Agreement with Microsoft.  
 *	Review capabilities outlined in this document for Private Preview.  
