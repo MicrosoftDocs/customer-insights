@@ -4,7 +4,7 @@ title: Run Web SDK Sample
 author: ruthaisabokhae
 description: How to run the Web SDK Sample
 ms.author: ruthai
-ms.date: 06/03/2020
+ms.date: 07/27/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -15,12 +15,12 @@ ms.topic: conceptual
 
 ## Prerequisites
 
-- Visual Studio Code
-- Ingestion key (see [here](getting-started-websdk.md) for instructions on how to obtain)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- You have the [ingestion key](getting-started-websdk.md)
 
 ## Run Sample
 
-1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_websdk_sample.zip) the **Product Insights Web SDK sample**.
+1. [Download the Product Insights Web SDK sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_websdk_sample.zip).
 2. [Install](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) the Live Server extension in Visual Studio Code.
 3. Unzip the compressed file `pi_websdk_sample.zip`.
 4. Open the unzipped folder in Visual Studio Code.
