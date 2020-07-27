@@ -13,7 +13,7 @@ robots: noindex,nofollow
 Welcome to the Product Insights private preview documentation. 
 
 ## Topics
-[Private preview onboarding](../topics/onboarding-guidance)
+[Private preview onboarding](../topics/onboarding-guidance.md)
 
 [Get started](/topics/first-run-experience)
 
