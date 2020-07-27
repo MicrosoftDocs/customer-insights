@@ -4,7 +4,7 @@ title: Getting started with the Web SDK
 author: ruthaisabokhae
 description: Web SDK
 ms.author: ruthai
-ms.date: 07/24/2020
+ms.date: 07/27/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -29,7 +29,7 @@ The following configuration options can be passed to the SDK:
 ## Prerequisites
 
 * The SDK requires the project or webpage to be hosted in order to send telemetry. Telemetry sent from a local file will not be accepted by the server.
-* Ingestion key (see below for instructions on how to obtain).
+* You have an ingestion key.
 
 ## Get an ingestion key from the Product Insights portal
 
@@ -60,7 +60,7 @@ window["Contoso"].trackSignal({
 
 ## Setting user details for your signal
 
-The PI SDK allows you to define user information that can be sent with every signal. This can be done by specifying the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration. Alternatively, user information can be specified by calling the `setUser(user: IUser)` API on the SDK.
+The Product Insights SDK allows you to define user information that can be sent with every signal. You can do this by specifying the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration. Alternatively, user information can be specified by calling the `setUser(user: IUser)` API on the SDK.
 
 Specifying user details in the code snippet means that all telemetry will have this information. However, if specified by the `setUser API`, telemetry sent before the `setUser API` will not contain this information.
 
