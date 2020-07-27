@@ -33,13 +33,14 @@ Welcome to the Product Insights private preview documentation.
 
 [Web SDK sample](../topics/websdk-sample.md)
 
-## Terms and compliance
-[Terms of service for preview](../developers/articles/terms-of-service.md)
-
-## GDPR 
+## GDPR requests 
 [Manage cookies and user consent](../topics/user-consent-storage.md)
 
 [Delete and export user data](../topics/delete-export-signal-data.md)
+
+## Terms and compliance
+[Terms of service for preview](../developers/articles/terms-of-service.md)
+
 
 
 
