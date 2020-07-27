@@ -12,10 +12,12 @@ robots: noindex,nofollow
 # Private preview documentation
 Welcome to the Product Insights private preview documentation. 
 
-## Topics
+## Get started
 [Private preview onboarding](../topics/onboarding-guidance.md)
 
-[Get started](../topics/first-run-experience.md)
+[Private preview steps](../topics/first-run-experience.md)
+
+## Topics
 
 [Concepts and terms](../topics/concepts-terminology.md)
 
@@ -32,7 +34,7 @@ Welcome to the Product Insights private preview documentation.
 [Web SDK sample](../topics/websdk-sample.md)
 
 ## Terms and compliance
-[Preview terms of service](../developers/articles/terms-of-service.md)
+[Terms of service for preview](../developers/articles/terms-of-service.md)
 
 ## GDPR 
 [Manage cookies and user consent](../topics/user-consent-storage.md)
