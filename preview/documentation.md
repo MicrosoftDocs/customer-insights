@@ -13,19 +13,19 @@ robots: noindex,nofollow
 Welcome to the Product Insights private preview documentation. 
 
 ## Get started
-[Private preview onboarding](../topics/onboarding-guidance.md)
+[Private preview onboarding -- read first](../topics/onboarding-guidance.md)
 
 [Private preview steps](../topics/first-run-experience.md)
 
 ## Topics
-
-[Concepts and terms](../topics/concepts-terminology.md)
 
 [Create and export derived signals](../topics/derived-signals.md)
 
 [Create a project](../topics/create-project.md)
 
 [Real-time usage report](../topics/real-time-usage-report.md)
+
+[Concepts and terms](../topics/concepts-terminology.md)
 
 
 ## Extensibility
