@@ -13,9 +13,9 @@ robots: noindex,nofollow
 Welcome to the Product Insights private preview documentation. 
 
 ## Topics
-[Private preview onboarding](xref:topics/onboarding-guidance)
-[Get started](xref:topics/first-run-experience)
-[Concepts and terms](xref:topics/concepts-terminology)
+[Private preview onboarding](topics/onboarding-guidance)
+[Get started](topics/first-run-experience)
+[Concepts and terms](topics/concepts-terminology)
 
 [Create and export derived signals](xref:topics/derived-signals)
 [Create a project](xref:topics/create-project)
