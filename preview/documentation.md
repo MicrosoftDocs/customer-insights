@@ -13,8 +13,10 @@ robots: noindex,nofollow
 Welcome to the Product Insights private preview documentation. 
 
 ## Topics
-[Private preview onboarding](/topics/onboarding-guidance)
+[Private preview onboarding](./topics/onboarding-guidance)
+
 [Get started](/topics/first-run-experience)
+
 [Concepts and terms]/(topics/concepts-terminology)
 
 [Create and export derived signals](xref:topics/derived-signals)
