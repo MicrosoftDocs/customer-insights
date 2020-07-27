@@ -4,7 +4,7 @@ title: Create a project
 author: ruthaisabokhae
 description: How to create a project
 ms.author: ruthai
-ms.date: 07/13/2020
+ms.date: 07/27/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -17,13 +17,13 @@ To create a new project, follow these steps:
 
 1. Select **+New Project** in the bottom-left corner of the portal.
 
-2. Enter your project's **Name** and any **Description** text you desire.
+2. Enter your project's **Name** and an optional **Description** text.
 
-3. Select **Create** to confirm.
+3. Select **Create** to confirm and create the project.
 
 ## Add members
 
-The **Members** page is where you'll assign members to your projects, and define their roles and permissions for using Dynamics 365 Customer Analytics across your organization.
+The **Members** page is where you'll assign members to your projects, and define their roles and permissions.
 
 To add members to your project, follow these steps:
 
@@ -31,7 +31,8 @@ To add members to your project, follow these steps:
 
 2. Use the **Members** field to find users in your organization who you want to add to your team. You can search by name or email address. Under **Role**, the only currently available option is **Owner**.
 
-**Note:** Security and Distribution Groups are not supported at this time.
+   > [!NOTE]
+   > Security groups and distribution groups currently not supported.
 
 3. When you are done adding users, select **Add** to confirm.
 
