@@ -4,7 +4,7 @@ title: Concepts and terminology
 author: ruthaisabokhae
 description: Concepts and terminologies
 ms.author: ruthai
-ms.date: 07/19/2020
+ms.date: 07/27/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -21,7 +21,7 @@ Metadata for a property of an object, element, or file.
 
 ## Derived signal
 
-A derived signal is a virtual view of a base signal. These are generally used for scoping down a base signal for export, or for cleaning up a signal containing properties that aren't necessary for exposure or export.
+A virtual view of a base signal. These are generally used for scoping down a base signal for export, or for cleaning up a signal containing properties that aren't necessary for exposure or export.
 
 ## Environment
 
@@ -33,19 +33,19 @@ A single occurance of data sent to Product Insights. If you think of a **signal*
 
 ## Member
 
-A member is assigned as a way of managing users’ permission to a Project. Currently Product Insights only has the role of “Owner”, which allows the user to manage the project, view reports, and manage data. 
+A member is assigned as a way of managing users’ project permissions. Currently, the only role available in Product Insights is “Owner”, which allows the user to manage the project and its data, and to view reports. 
 
 ## Metric
 
-A quantifiable measurement of data, used to track or assess a process. Examples of relevant metrics in Product Insights include page views, and average time spent on site.
+A quantifiable measurement of data, used to track or assess a process. Examples of relevant metrics in Product Insights include page views and average time spent on site.
 
 ## Project
 
-A Project is a way of grouping of data and reports in Product Insights. New projects include preconfigured reports and insights based on the type of product you want to analyze. New projects include preconfigured reports and insights based on the type of product you want to analyze.
+A grouping of data and reports in Product Insights. New projects include preconfigured reports and insights based on the type of product you want to analyze.
 
 ## Report
 
-A report is a collection of charts. There are several out-of-the-box reports defined for a web Project. 
+A collection of data visualizations. Product Insights includes several predefined reports for web projects. 
 
 ## Signal
 
