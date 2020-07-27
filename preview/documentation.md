@@ -20,11 +20,15 @@ Welcome to the Product Insights private preview documentation.
 [Concepts and terms](../topics/concepts-terminology.md)
 
 [Create and export derived signals](../topics/derived-signals.md)
+
 [Create a project](../topics/create-project.md)
+
 [Real-time usage report](../topics/real-time-usage-report.md)
 
-## For developers
+
+## Extensibility
 [Web SDK](../topics/getting-started-websdk.md)
+
 [Web SDK sample](../topics/websdk-sample.md)
 
 ## Terms and compliance
@@ -32,6 +36,8 @@ Welcome to the Product Insights private preview documentation.
 
 ## GDPR 
 [Manage cookies and user consent](../topics/user-consent-storage.md)
+
 [Delete and export user data](../topics/delete-export-signal-data.md)
+
 
 
