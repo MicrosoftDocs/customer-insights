@@ -1,15 +1,15 @@
 ---
-uid: topics/first-run-experience
-title: First run experience
+title: Quickstart for private preview in Dynamics 365 Product Insights 
 author: ruthaisabokhae
 description: First run experience through the product
 ms.author: ruthai
-ms.date: 07/28/2020
+ms.date: 07/31/2020
 ms.service: product-insights
 ms.topic: conceptual
+robots: noindex,nofollow
 ---
 
-# First run experience
+# Quickstart for private preview
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
