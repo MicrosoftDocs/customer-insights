@@ -85,4 +85,4 @@ The capability to create a derived signal from the web analytics data, filter it
 
 We'll add a list of known issues in the coming days.
 
-<!-- As we continue to work on the product and refine the experience, we are aware of a few outstanding issues, so please bear these in mind as you experience the product. -->
+<!-- As we continue to work on the product and refine the experience, we are aware of a few outstanding issues, so bear these in mind as you experience the product. -->
