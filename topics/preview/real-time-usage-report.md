@@ -1,12 +1,12 @@
 ---
-uid: topics/real-time-usage-report
 title: Real-time usage report
 author: ruthaisabokhae
-description: Real time usage report
+description: Use the real-time usage report to monitor current activity on your site.
 ms.author: ruthai
-ms.date: 07/27/2020
+ms.date: 07/31/2020
 ms.service: product-insights
 ms.topic: conceptual
+robots: noindex,nofollow
 ---
 
 # Real-time usage report
