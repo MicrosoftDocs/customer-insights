@@ -1,12 +1,12 @@
 ---
-uid: topics/derived-signals
 title: Create and export derived signals
 author: ruthaisabokhae
 description: How to create and export derived signals
 ms.author: ruthai
-ms.date: 07/27/2020
+ms.date: 07/31/2020
 ms.service: product-insights
 ms.topic: conceptual
+robots: noindex,nofollow
 ---
 
 # Create and export derived signals
