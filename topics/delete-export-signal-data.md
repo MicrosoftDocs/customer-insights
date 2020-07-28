@@ -1,21 +1,21 @@
 ---
 uid: topics/delete-export-signal-data
-title: Deleting and exporting signal data 
+title: Delete and export signal data 
 author: ruthaisabokhae
 description: Deleting and exporting signal data containing personal identifiable information
 ms.author: ruthai
-ms.date: 07/09/2020
+ms.date: 07/28/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# GDPR/ Compliance
+# Delete and export signal data
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Background
 
-The European Union’s General Data Protection Regulation (GDPR) that has been applied since May 25, 2018, gives significant rights to individuals with regards to their data. The GDPR is fundamentally about protecting and enabling the privacy rights of individuals. You can read more about Microsoft's commitment to security at the [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center).
+The European Union’s General Data Protection Regulation (GDPR) that has been applied since May 25, 2018, gives significant rights to individuals with regards to their data. The GDPR is fundamentally about protecting and enabling the privacy rights of individuals. You can read more about Microsoft's commitment to security at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 ## Deleting and exporting signal data containing personal identifiable information
 
@@ -23,21 +23,20 @@ The following sections describe how to delete and export signal data that may co
 
 ### Overview
 
-Dynamics 365 Product Insights is committed to helping our customers meet their GDPR requirements, such as the right to delete and export data that includes PII (like user IDs, phone numbers, and email addresses). Team administrators are enabled to execute user requests regarding the deleting or exporting of their personal data, ensuring that Product Insights complies with GDPR requirements.
+Dynamics 365 Product Insights is committed to helping our customers meet their GDPR requirements, such as the right to delete and export data that includes personal information (like user IDs, phone numbers, and email addresses). Team administrators are enabled to execute user requests regarding the deleting or exporting of their personal data, ensuring that Product Insights complies with GDPR requirements.
 
 There is a two-step process to delete or export data:
 
-1. Tag signal properties that contain PII data.
-2. Delete or export data associated with specific PII values (for example: a specified user ID).
+1. Tag signal properties that contain data with personal information.
+2. Delete or export data associated with specific values (for example: a specified user ID).
 
 ### Tag signal properties
 
 PII data is tagged on a signal property level. You'll first need to tag the properties being considered for deletion or export.
 
-To tag a signal property as containing PII, follow these steps.
+To tag a signal property as containing personal information, follow these steps.
 
 1. Navigate to the project that the signal belongs to.
-
   
 1. Select the signal you want to tag to reach the signal's **Overview** page.
 
@@ -56,7 +55,7 @@ To tag a signal property as containing PII, follow these steps.
 
 ### Delete or export tagged signal data
 
-For Private Preview, please email delete requests to **ariapm@microsoft.com**. We are currently working on the functionality that will enable you delete tagged signal data on your own. Stay tuned!
+For Private Preview, please email delete requests to **[pirequest@microsoft.com](mailto:pirequest@microsoft.com)**. We are currently working on the functionality that will enable you delete tagged signal data on your own. Stay tuned!
 
 #### Good Practices
 

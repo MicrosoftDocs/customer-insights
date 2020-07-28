@@ -15,12 +15,12 @@ ms.topic: conceptual
 
 ## Prerequisites
 
-- Visual Studio Code
-- Ingestion key (see [Getting started with the Product Insights Web SDK](getting-started-websdk.md) for instructions on how to obtain this)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- You have the [ingestion key](getting-started-websdk.md)
 
 ## Run Sample
 
-1. [Download](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_websdk_sample.zip) the Product Insights Web SDK sample.
+1. [Download the Product Insights Web SDK sample](https://download.pi.dynamics.com/sdk/ProductInsightsSamples/pi_websdk_sample.zip).
 2. [Install](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) the Live Server extension in Visual Studio Code.
 3. Unzip the compressed file `pi_websdk_sample.zip`.
 4. Open the unzipped folder in Visual Studio Code.

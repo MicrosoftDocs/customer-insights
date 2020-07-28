@@ -24,7 +24,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Onboard to the Private Preview
-            url: onboarding-guidance.md
+            url: onboarding-overview.md
 
 
   # Card (optional)
