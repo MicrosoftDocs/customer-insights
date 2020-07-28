@@ -1,15 +1,15 @@
 ---
-uid: topics/getting-started-websdk
-title: Getting started with the Web SDK
+title: Get started with the web SDK for Dynamics 365 Product Insights
 author: ruthaisabokhae
-description: Web SDK
+description: Learn how to use an ingestion key and tools in the Dynamics 365 Product Insights SDK to instrument your website.
 ms.author: ruthai
-ms.date: 07/28/2020
+ms.date: 07/31/2020
 ms.service: product-insights
 ms.topic: conceptual
+robots: noindex,nofollow
 ---
 
-# Getting started with the Product Insights Web SDK
+# Get started with the web SDK
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
