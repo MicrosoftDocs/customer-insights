@@ -33,19 +33,19 @@ A single occurrence of data sent to Product Insights. If you think of a **signal
 
 ## Member
 
-A member is assigned as a way of managing users’ permission to a Project. Currently Product Insights only has the role of “Owner”, which allows the user to manage the project, view reports, and manage data.
+A member is assigned as a way of managing users’ project permissions. Currently, the only role available in Product Insights is “Owner”, which allows the user to manage the project and its data, and to view reports.
 
 ## Metric
 
-A quantifiable measurement of data, used to track or assess a process. Examples of relevant metrics in Product Insights include page views or average time spent on site.
+A quantifiable measurement of data, used to track or assess a process. Examples of relevant metrics in Product Insights include page views and average time spent on site.
 
 ## Project
 
-A project is a way of grouping data and reports in Product Insights. New projects include pre-configured reports and insights based on the type of product you want to analyze.
+A grouping of data and reports in Product Insights. New projects include preconfigured reports and insights based on the type of product you want to analyze.
 
 ## Report
 
-A report is a collection of charts. There are several out-of-the-box reports defined for a web project.
+A collection of data visualizations. Product Insights includes several predefined reports for web projects.
 
 ## Signal
 
