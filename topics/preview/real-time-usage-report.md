@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Real-time usage report
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 The **Real-time usage** report shows an overview of current activity on your site and it's auto-refreshing every minute. You can use this to monitor the impact that marketing campaigns, press events, and other scenarios that have and impact on your site's traffic.
 

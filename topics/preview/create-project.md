@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Create a project
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 To create a new project, follow these steps:
 

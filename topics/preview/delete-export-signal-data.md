@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Delete and export signal data
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Background
 

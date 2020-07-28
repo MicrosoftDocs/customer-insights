@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # First run experience
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 This article explains how to create a Dynamics 365 Product Insights instance and how to set up an environment.
 

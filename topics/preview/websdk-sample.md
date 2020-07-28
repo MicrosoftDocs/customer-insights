@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Run the Product Insights Web SDK sample
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Prerequisites
 

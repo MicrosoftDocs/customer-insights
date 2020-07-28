@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Getting started with the Product Insights Web SDK
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for instrumenting your existing website. You'll start seeing signals in your portal in five minutes or sooner.
 

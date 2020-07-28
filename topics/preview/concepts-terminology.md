@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Concepts and common terms
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 This list defines selected terms that appear frequently in Product Insights and in its supporting documentation.
 
