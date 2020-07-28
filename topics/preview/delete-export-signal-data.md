@@ -55,7 +55,7 @@ To tag a signal property as containing personal information, follow these steps.
 
 ### Delete or export tagged signal data
 
-For Private Preview, please email delete requests to **[pirequest@microsoft.com](mailto:pirequest@microsoft.com)**. We are currently working on the functionality that will enable you delete tagged signal data on your own. Stay tuned!
+For private preview, please email delete requests to **[pirequest@microsoft.com](mailto:pirequest@microsoft.com)**. We are currently working on the functionality that will enable you delete tagged signal data on your own. Stay tuned!
 
 #### Good Practices
 

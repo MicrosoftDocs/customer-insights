@@ -1,5 +1,5 @@
 ---
-title: Onboarding to the Private Preview
+title: Onboarding to the private preview
 author: ruthaisabokhae
 description: Learn what you need to do to take advantage of the private preview capabilities of Dynamics 365 Product Insights
 ms.author: ruthai
@@ -17,16 +17,16 @@ This onboarding article gives organizations participating in private preview vis
 
 ## Onboarding overview
 
-*	Review and agree to the [NDA and preview agreement](../preview/preview-terms.md) with Microsoft.  
+*	Review and agree to the [NDA and preview agreement](../preview/terms-of-service.md) with Microsoft.  
 *	Review [capabilities outlined in this article](#private-preview-capabilities) for private preview.  
 *	Review and understand the [expectations](#private-preview-expectations) and [known issues](#known-issues) of the private preview.  
 *	Validate the [core scenarios](#product-use-cases-to-test) and provide feedback to Microsoft.
 
 ## Private preview expectations
 
-*	Private preview is for testing purposes only. Environments may be taken down at the end of the testing period to make way for future releases. See the [Preview Terms of Service](../preview/preview-terms.md) for more disclosures and limitations.  
+*	Private preview is for testing purposes only. Environments may be taken down at the end of the testing period to make way for future releases. See the [Preview Terms of Service](../preview/terms-of-service.md) for more disclosures and limitations.  
 *	Private preview is not for production use, but rather is strictly for prototyping and providing feedback. We are likely to delete data and rebuild environments at any point during the private preview, but will make reasonable efforts to ensure communication of any changes to avoid disruption in testing.   
-*	We will work closely with you to seek feedback and incorporate product changes. We expect to establish a cadence for this interaction during the period of Private Preview and will communicate that subsequently.  
+*	We will work closely with you to seek feedback and incorporate product changes. We expect to establish a cadence for this interaction during the period of private preview and will communicate that subsequently.  
 *	Private preview is expected to run approximately for two months (August - September 2020) and we appreciate your active participation. We plan to consider all relevant feedback  in developing future releases.  
 *	Reach out to your assigned product manager first or use the email **[pirequest@microsoft.com](mailto:pirequest@microsoft.com)** to provide feedback and report issues. We will use reasonable efforts to triage reported issues, prioritize them, track them, and share a status with you regularly.  
 	
@@ -63,7 +63,7 @@ The capability to create a derived signal from the web analytics data, filter it
 
 ## Setup and provisioning steps
 
-*	Before you start, ensure you have read and agree to the [Preview Terms of Service](../preview/preview-terms.md) provided.
+*	Before you start, ensure you have read and agree to the [Preview Terms of Service](../preview/terms-of-service.md) provided.
 *	Sign in to the [Dynamics 365 Product Insights portal](https://pi.dynamics.com) using your Microsoft Azure Active Directory user accounts.
 *	Follow the steps in the [quickstart](quickstart-product-insights.md) article to set up your organization, environment, and project.
 *	Review the [known issues](#known-issues).
