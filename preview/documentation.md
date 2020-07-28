@@ -13,33 +13,33 @@ robots: noindex,nofollow
 Welcome to the Product Insights private preview documentation. 
 
 ## Get started
-[Private preview onboarding -- read first](../topics/onboarding-overview.md)
+[Private preview onboarding -- read first](../preview/onboarding-overview.md)
 
-[Private preview steps](../topics/first-run-experience.md)
+[Private preview quickstart](../preview/first-run-experience.md)
 
 ## Topics
 
-[Create and export derived signals](../topics/derived-signals.md)
+[Create and export derived signals](../preview/derived-signals.md)
 
-[Create a project](../topics/create-project.md)
+[Create a project](../preview/create-project.md)
 
-[Real-time usage report](../topics/real-time-usage-report.md)
+[Real-time usage report](../preview/real-time-usage-report.md)
 
-[Concepts and terms](../topics/concepts-terminology.md)
+[Concepts and terms](../preview/concepts-terminology.md)
 
 
 ## Extensibility
-[Web SDK](../topics/getting-started-websdk.md)
+[Web SDK quickstart](../preview/getting-started-websdk.md)
 
-[Web SDK sample](../topics/websdk-sample.md)
+[Web SDK sample](../preview/websdk-sample.md)
 
 ## GDPR requests 
-[Manage cookies and user consent](../topics/user-consent-storage.md)
+[Manage cookies and user consent](../preview/user-consent-storage.md)
 
-[Delete and export user data](../topics/delete-export-signal-data.md)
+[Delete and export user data](../preview/delete-export-signal-data.md)
 
 ## Terms and compliance
-[Terms of service for preview](../developers/articles/terms-of-service.md)
+[Terms of service for preview](../preview/terms-of-service.md)
 
 
 
