@@ -1,15 +1,15 @@
 ---
-uid: topics/websdk-sample
-title: Run Web SDK Sample
+title: Run the web SDK sample for Product Insights
 author: ruthaisabokhae
-description: How to run the Web SDK Sample
+description: How to run the web SDK sample for Dynamics 365 Product Insights
 ms.author: ruthai
-ms.date: 07/27/2020
+ms.date: 07/31/2020
 ms.service: product-insights
 ms.topic: conceptual
+robots: noindex,nofollow
 ---
 
-# Run the Product Insights Web SDK sample
+# Run the web SDK sample for Product Insights
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
