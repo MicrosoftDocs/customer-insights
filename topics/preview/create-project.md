@@ -1,12 +1,12 @@
 ---
-uid: topics/create-project
 title: Create a project
 author: ruthaisabokhae
-description: How to create a project
+description: How to create a project in Dynamics 365 Product Insights
 ms.author: ruthai
-ms.date: 07/28/2020
+ms.date: 07/31/2020
 ms.service: product-insights
 ms.topic: conceptual
+robots: noindex,nofollow
 ---
 
 # Create a project
