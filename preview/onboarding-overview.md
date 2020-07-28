@@ -4,12 +4,13 @@ title: Onboarding to the Private Preview
 author: ruthaisabokhae
 description: Framework for onboarding
 ms.author: ruthai
-ms.date: 07/28/2020
+ms.date: 07/31/2020
 ms.service: product-insights
 ms.topic: conceptual
+robots: noindex,nofollow
 ---
 
-# Onboard to the Private Preview of Product Insights
+# Onboard to the Product Insights private preview
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
