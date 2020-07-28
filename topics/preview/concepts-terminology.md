@@ -1,12 +1,12 @@
 ---
-uid: topics/concepts-terminology
 title: Concepts and terminology
 author: ruthaisabokhae
-description: Concepts and terminology
+description: Learn basic concepts and terminology for Dynamics 365 Product Insights
 ms.author: ruthai
-ms.date: 07/28/2020
+ms.date: 07/31/2020
 ms.service: product-insights
 ms.topic: conceptual
+robots: noindex,nofollow
 ---
 
 # Concepts and common terms
