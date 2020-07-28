@@ -18,7 +18,7 @@ This onboarding article gives organizations participating in private preview vis
 ## Onboarding overview
 
 *	Review and agree to the [NDA and preview agreement](../preview/preview-terms.md) with Microsoft.  
-*	Review [capabilities outlined in this article](#private-preview-features) for private preview.  
+*	Review [capabilities outlined in this article](#private-preview-capabilities) for private preview.  
 *	Review and understand the [expectations](#private-preview-expectations) and [known issues](#known-issues) of the private preview.  
 *	Validate the [core scenarios](#product-use-cases-to-test) and provide feedback to Microsoft.
 
