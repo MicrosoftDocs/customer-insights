@@ -1,12 +1,12 @@
 ---
-uid: topics/preview-terms
-title: SLA
+title: Preview terms of service for Dynamics 365 Product Insights
 author: ruthaisabokhae
 description: Terms of Service for preview
 ms.author: ruthai
-ms.date: 06/03/2020
+ms.date: 07/31/2020
 ms.service: product-insights
 ms.topic: conceptual
+robots: noindex,nofollow
 ---
 
 # MICROSOFT DYNAMICS 365 PRODUCT INSIGHTS  
