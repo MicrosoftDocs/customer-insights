@@ -1,8 +1,7 @@
 ---
-uid: topics/onboarding-overview
 title: Onboarding to the Private Preview
 author: ruthaisabokhae
-description: Framework for onboarding
+description: Learn what you need to do to take advantage of the private preview capabilities of Dynamics 365 Product Insights
 ms.author: ruthai
 ms.date: 07/31/2020
 ms.service: product-insights
