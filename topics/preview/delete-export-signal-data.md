@@ -1,12 +1,12 @@
 ---
-uid: topics/delete-export-signal-data
 title: Delete and export signal data 
 author: ruthaisabokhae
-description: Deleting and exporting signal data containing personal identifiable information
+description: How to delete and exportsignal data containing personally identifiable information (PII)
 ms.author: ruthai
-ms.date: 07/28/2020
+ms.date: 07/31/2020
 ms.service: product-insights
 ms.topic: conceptual
+robots: noindex,nofollow
 ---
 
 # Delete and export signal data
