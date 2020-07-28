@@ -12,10 +12,10 @@ robots: noindex,nofollow
 # Private preview documentation
 Welcome to the Product Insights private preview documentation. 
 
-## Get started
-[Private preview onboarding -- read first](../preview/onboarding-overview.md)
+## Get started with private preview
+[Onboarding overview -- read first](../preview/onboarding-overview.md)
 
-[Private preview quickstart](../preview/first-run-experience.md)
+[Private preview quickstart](../preview/quickstart-private-preview.md)
 
 ## Topics
 
@@ -29,7 +29,7 @@ Welcome to the Product Insights private preview documentation.
 
 
 ## Extensibility
-[Web SDK quickstart](../preview/getting-started-websdk.md)
+[Web SDK quickstart](../preview/get-started-websdk.md)
 
 [Web SDK sample](../preview/websdk-sample.md)
 
