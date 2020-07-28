@@ -2,14 +2,14 @@
 uid: topics/concepts-terminology
 title: Concepts and terminology
 author: ruthaisabokhae
-description: Concepts and terminologies
+description: Concepts and terminology
 ms.author: ruthai
 ms.date: 07/28/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Concepts and terminology
+# Concepts and common terms
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 

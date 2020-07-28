@@ -1,15 +1,15 @@
 ---
 uid: topics/delete-export-signal-data
-title: Deleting and exporting signal data 
+title: Delete and export signal data 
 author: ruthaisabokhae
 description: Deleting and exporting signal data containing personal identifiable information
 ms.author: ruthai
-ms.date: 07/27/2020
+ms.date: 07/28/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# GDPR/ Compliance
+# Delete and export signal data
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
