@@ -1,10 +1,10 @@
 ---
-uid: topics/onboarding-guidance
+uid: topics/onboarding-overview
 title: Onboarding to the Private Preview
 author: ruthaisabokhae
 description: Framework for onboarding
 ms.author: ruthai
-ms.date: 07/27/2020
+ms.date: 07/28/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -17,7 +17,7 @@ The goal of this onboarding document is to give Private Preview customers visibi
 
 ## Onboarding overview
 
-*	Review and agree to NDA and Preview Agreement with Microsoft.  
+*	Review and agree to the [NDA and Preview Agreement](preview-terms.md) with Microsoft.  
 *	Review [capabilities outlined in this article](#private-preview-features) for Private Preview.  
 *	Review and understand the [expectations](#private-preview-expectations) and [known issues](#known-issues) of the Private Preview.  
 *	Validate the [core scenarios](#product-use-cases-to-test) and provide feedback to Microsoft.
@@ -45,7 +45,7 @@ The goal of this onboarding document is to give Private Preview customers visibi
 
 ### First run experience
 
-The starting point for any user signing in to Product Insights in which the organization is generated and your own environment and workspace are created. This is where you'll be able to start ingesting you web analytics data.
+The starting point for any user signing in to Product Insights in which the organization is generated and your own environment and projects are created. This is where you'll be able to start ingesting you web analytics data.
 
 ### Web SDK
 
@@ -64,14 +64,14 @@ The capability to create a derived signal from the web analytics data, filter it
 ## Setup and provisioning steps
 
 *	Before you start, please ensure you have read and agree to the [Preview Terms of Service](preview-terms.md) provided.
-*	Sign in to the Dynamics 365 Product Insights portal using your Microsoft Azure Active Directory user accounts.
-*	Follow the steps in the [Getting started](first-run-experience.md) article to set up your organization, environment, and workspace.
+*	Sign in to the [Dynamics 365 Product Insights portal](https://pi.dynamics.com) using your Microsoft Azure Active Directory user accounts.
+*	Follow the steps in the [Getting started](first-run-experience.md) article to set up your organization, environment, and project.
 *	Review the [Known issues](#known-issues) section.
 
 ### First run experience
 
-* Follow the account creation process. Set up your organization and environment, create your workspace, and add members.
-* Instrument website with the SDK to see telemetry arriving into your workspace.
+* Follow the account creation process. Set up your organization and environment, create your project, and add members.
+* Instrument website with the SDK to see telemetry arriving into your project.
 *	View the real-time report showing active users by device, page view trend, top pages, top referrers, and users’ geographic locations.
 
 ### Export data from Product Insights

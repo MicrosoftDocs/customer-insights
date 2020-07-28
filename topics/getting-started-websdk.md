@@ -4,7 +4,7 @@ title: Getting started with the Web SDK
 author: ruthaisabokhae
 description: Web SDK
 ms.author: ruthai
-ms.date: 07/27/2020
+ms.date: 07/28/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -54,7 +54,7 @@ window["Contoso"].trackSignal({
 });
 ```
 
-3. In the code snippet, replace the string "INGESTION_KEY" with your ingestion key from the Product Insights portal.
+3. In the code snippet, ensure the [ingestion key](#get-an-ingestion-key-from-the-product-insights-portal) is added to your code.
 
 4. Add the modified code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
 

@@ -4,7 +4,7 @@ title: First run experience
 author: ruthaisabokhae
 description: First run experience through the product
 ms.author: ruthai
-ms.date: 07/27/2020
+ms.date: 07/28/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -48,7 +48,7 @@ You can edit the details of existing projects at any time.
 
 ## Add another new project
 
-You can create additional projects to separate your data.
+You can create additional projects to classify your data.
 
 1. Select the organization name symbol in the bottom-left corner of Product Insights.
 2. Select **+ New project**.

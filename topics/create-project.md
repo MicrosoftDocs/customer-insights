@@ -4,7 +4,7 @@ title: Create a project
 author: ruthaisabokhae
 description: How to create a project
 ms.author: ruthai
-ms.date: 07/27/2020
+ms.date: 07/28/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -38,7 +38,7 @@ To add members to your project, follow these steps:
 
 ### Member permissions
 
-Customer Analytics for Private Preview has only the role of **Owner** currently available, with the following permissions enabled:
+Product Insights has only the role of **Owner** currently available, with the following permissions enabled:
 
 - Configure company
 - Create projects

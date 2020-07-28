@@ -4,7 +4,7 @@ title: Concepts and terminology
 author: ruthaisabokhae
 description: Concepts and terminologies
 ms.author: ruthai
-ms.date: 07/27/2020
+ms.date: 07/28/2020
 ms.service: product-insights
 ms.topic: conceptual
 ---
@@ -33,7 +33,7 @@ A single occurrence of data sent to Product Insights. If you think of a **signal
 
 ## Member
 
-A member is assigned as a way of managing users’ project permissions. Currently, the only role available in Product Insights is “Owner”, which allows the user to manage the project and its data, and to view reports.
+A member of a project is a user in Product Insights who can access a project. Members can have roles. Currently, the only role available in Product Insights is “Owner”, which allows the user to manage the project and its data, and to view reports.
 
 ## Metric
 
