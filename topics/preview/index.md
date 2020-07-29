@@ -41,7 +41,7 @@ Welcome to the Dynamics 365 Product Insights private preview documentation.
 [Delete and export user data](../preview/delete-export-signal-data.md)
 
 ## Terms and compliance
-[Terms of service for preview](../preview/terms-of-service.md)
+[Terms of service for preview](../preview/preview-terms-of-service.md)
 
 
 
