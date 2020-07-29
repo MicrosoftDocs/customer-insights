@@ -1,7 +1,9 @@
+# [Dynamics 365 Product Insights preview documentation](documentation.md)
+
 # [Onboarding overview](onboarding-overview.md)
 
 # Get started
-## [First run experience](first-run-experience.md)
+## [First run experience](quickstart-product-insights.md)
 ## [Concepts and terms](concepts-terminology.md)
 
 # User guides
@@ -10,7 +12,7 @@
 ## [Real time usage report](real-time-usage-report.md)
 
 # Developer resources
-## [Web SDK](getting-started-websdk.md)
+## [Web SDK](get-started-websdk.md)
 ## [Web SDK sample](websdk-sample.md)
 
 # [Preview Terms of Service](terms-of-service.md)
