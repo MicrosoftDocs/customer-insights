@@ -40,15 +40,15 @@ To tag a signal property as containing personal information, follow these steps.
   
 1. Select the signal you want to tag to reach the signal's **Overview** page.
 
-   ![Select signal](media/SignalsOverview.png)
+   ![Select signal](../media/SignalsOverview.png)
      
 1. Select **[...]** and then **Edit** to reach the **Update Property** window.
 
-   ![Edit signal](media/EditSignal.png)
+   ![Edit signal](../media/EditSignal.png)
 
 1. In the **Update Property** window, select **[...]** in the upper right corner, and check the **Contains PII** box. Select **Update** to save your changes.
 
-   ![Save your changes](media/UpdateSignal.png)
+   ![Save your changes](../media/UpdateSignal.png)
 
    > [!NOTE]
    > Every time the signal schema changes or a new signal is created, it's recommended that you evaluate the associated signal properties and tag or untag them as containing PII data, if necessary.

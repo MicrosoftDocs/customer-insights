@@ -16,7 +16,7 @@ robots: noindex,nofollow
 ## Prerequisites
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-- You have the [ingestion key](getting-started-websdk.md)
+- You have the [ingestion key](get-started-websdk.md)
 
 ## Run Sample
 
