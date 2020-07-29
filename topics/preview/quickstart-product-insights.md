@@ -19,7 +19,7 @@ This article explains how to create a Dynamics 365 Product Insights instance and
 
 1. In your browser, go to the [Dynamics 365 Product Insights](https://pi.dynamics.com/) website. Create a new account, or sign in with your existing credentials.
 2. Once signed in, you'll see the **Get started with Product Insights!** dialog box. Select your current region, and use the checkbox to indicate whether you want to opt in to receive updates and offers via email.
-3. Review the **Product Insights Preview Terms of Service** and **Privacy Statement**, then select **Next** to accept them.
+3. Review the **Product Insights Preview terms of service** and **Privacy Statement**, then select **Next** to accept them.
 4. Select the type of activity that you want your project to measure. Currently, **Website activity** is the only available choice. **App activity** and **Device activity** will become available in future releases. Select **Next** to confirm and create the project.
 5. You'll see a success message, and a code snippet that must be added to your website to start receiving data in Product Insights. You can implement this right away, or **share the code** and instructions for implementing it with your webmaster via email. You can always find this code again later by going to **Admin** > **Data** > **Code** in Product Insights.
 6. Select **Done** to go to your Product Insights instance.

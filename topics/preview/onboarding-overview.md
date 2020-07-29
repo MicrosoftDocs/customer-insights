@@ -24,7 +24,7 @@ This onboarding article gives organizations participating in private preview vis
 
 ## Private preview expectations
 
-*	Private preview is for testing purposes only. Environments may be taken down at the end of the testing period to make way for future releases. See the [Preview Terms of Service](../preview/preview-terms-of-service.md) for more disclosures and limitations.  
+*	Private preview is for testing purposes only. Environments may be taken down at the end of the testing period to make way for future releases. See the [Preview terms of service](../preview/preview-terms-of-service.md) for more disclosures and limitations.  
 *	Private preview is not for production use, but rather is strictly for prototyping and providing feedback. We are likely to delete data and rebuild environments at any point during the private preview, but will make reasonable efforts to ensure communication of any changes to avoid disruption in testing.   
 *	We will work closely with you to seek feedback and incorporate product changes. We expect to establish a cadence for this interaction during the period of private preview and will communicate that subsequently.  
 *	Private preview is expected to run approximately for two months (August - September 2020) and we appreciate your active participation. We plan to consider all relevant feedback  in developing future releases.  
@@ -63,7 +63,7 @@ The capability to create a derived signal from the web analytics data, filter it
 
 ## Setup and provisioning steps
 
-*	Before you start, ensure you have read and agree to the [Preview Terms of Service](../preview/preview-terms-of-service.md) provided.
+*	Before you start, ensure you have read and agree to the [Preview terms of service](../preview/preview-terms-of-service.md) provided.
 *	Sign in to the [Dynamics 365 Product Insights portal](https://pi.dynamics.com) using your Microsoft Azure Active Directory user accounts.
 *	Follow the steps in the [quickstart](quickstart-product-insights.md) article to set up your organization, environment, and project.
 *	Review the [known issues](#known-issues).
