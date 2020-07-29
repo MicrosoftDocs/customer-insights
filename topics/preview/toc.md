@@ -13,9 +13,8 @@
 ## [Web SDK](getting-started-websdk.md)
 ## [Web SDK sample](websdk-sample.md)
 
-# Terms and compliance
-## [Preview Terms of Service](terms-of-service.md)
+# [Preview Terms of Service](terms-of-service.md)
 
-## GDPR and compliance
-### [Manage cookies and user consent](user-consent-storage.md)
-### [Delete and export user data](delete-export-signal-data.md)
+# GDPR and compliance
+## [Manage cookies and user consent](user-consent-storage.md)
+## [Delete and export user data](delete-export-signal-data.md)
