@@ -23,7 +23,7 @@ This is an agreement between you (“you,” “your,” “Customer,” “Part
 
 Certain Microsoft services or software may be necessary to use the Services (“Required Offerings”). Microsoft does not grant any rights under this Agreement to access or use Required Offerings. Rather, Required Offerings are separately licensed under any respective Microsoft Licensing Agreement, and may require paying a fee. If you are a subscriber of Dynamics 365 or other Microsoft services, your Dynamics 365 customer agreement or other Microsoft service agreement applies to your use of Dynamics 365 or other Microsoft services generally. This Agreement applies to your use of the Services specifically.
 
-“Microsoft Licensing Agreement” or “MLA” means the Microsoft Online Services Terms (see http://microsoftvolumelicensing.com/) and Participant’s Microsoft volume licensing agreement, or any other applicable agreement, under which Participant subscribed or was granted a license to any Required Offerings.
+“Microsoft Licensing Agreement” or “MLA” means the Microsoft Online Services Terms (see https://microsoftvolumelicensing.com/) and Participant’s Microsoft volume licensing agreement, or any other applicable agreement, under which Participant subscribed or was granted a license to any Required Offerings.
 
 ## 2. THE SERVICES 
 
@@ -136,7 +136,7 @@ As part of your use of the Services, we grant you a limited right to: (a) instal
 
 We reserve all other rights to such Software. You may not disassemble, decompile, or reverse engineer any such Software included in the Services, except and only to the extent that the law expressly permits this activity. Notwithstanding these restrictions, you may (a) incorporate applicable binary portions of the Software into Licensee’s programs, solely as contemplated by the documentation; or (b) creating custom events during Licensee’s use of the Software.
 
-The Software is subject to United States export laws and regulations. You must comply with all domestic and international export laws and regulations that apply to the Software. These laws include restrictions on destinations, end users and end use. For additional information, see http://aka.ms/exporting.
+The Software is subject to United States export laws and regulations. You must comply with all domestic and international export laws and regulations that apply to the Software. These laws include restrictions on destinations, end users and end use. For additional information, see https://aka.ms/exporting.
 
 Unless we notify you otherwise, your license to use the Software provided by us as part of the Services will end when your right to use the Services ends, and you must promptly uninstall the Software. We may disable the Software at this time.
 
@@ -298,7 +298,7 @@ If Participant does not approve of a new Subprocessor, then Participant may term
 
 ### How to Contact Microsoft
 
-If Participant believes that Microsoft is not adhering to its privacy or security commitments, Participant may contact customer support or use Microsoft’s Privacy web form, located at http://go.microsoft.com/?linkid=9846224. Microsoft’s mailing address is:
+If Participant believes that Microsoft is not adhering to its privacy or security commitments, Participant may contact customer support or use Microsoft’s Privacy web form, located at https://go.microsoft.com/?linkid=9846224. Microsoft’s mailing address is:
 
 Microsoft Enterprise Service Privacy
 Microsoft Corporation
