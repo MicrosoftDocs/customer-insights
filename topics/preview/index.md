@@ -28,7 +28,6 @@ Welcome to the Dynamics 365 Product Insights private preview documentation.
 
 [Real-time usage report](real-time-usage-report.md)
 
-[Concepts and terms](concepts-terminology.md)
 
 ## Developer resources
 
@@ -44,4 +43,7 @@ Welcome to the Dynamics 365 Product Insights private preview documentation.
 
 ## Terms of service
 [Terms of service for preview](preview-terms-of-service.md)
+
+## Terminology
+[Concepts and terms](concepts-terminology.md)
 
