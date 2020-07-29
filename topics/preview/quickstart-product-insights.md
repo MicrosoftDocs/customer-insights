@@ -31,6 +31,8 @@ This article explains how to create a Dynamics 365 Product Insights instance and
 
 By default, only the person who created the Product Insights instance will have access. You can add other users from your organization to an existing project at any time.
 
+:::image type="content" source="media/add-members.png" alt-text="Members page with callout on Add Members button":::
+
 1. Go to **Admin** > **Settings** > **Members**.
 2. Select **+ Add members**. Use the **Members** field to search for other people in your organization. You can add multiple members at once.
 3. Select a **Role** to assign to the new members. Currently, **Owner** is the only available selection. Other roles will be added in future releases.
@@ -41,6 +43,8 @@ To remove members from a project, select **...** next to their name on the **Mem
 ## Edit an existing project
 
 You can edit the details of existing projects at any time.
+
+:::image type="content" source="media/change-project-settings.png" alt-text="Project settings page with callout on project name and description":::
 
 1. Select **Admin** > **Settings** > **General** in the navigation menu.
 1. Enter the new **Name** or **Description** for your project

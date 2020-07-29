@@ -25,6 +25,8 @@ To create a new project, follow these steps:
 
 The **Members** page is where you'll assign members to your projects, and define their roles and permissions.
 
+:::image type="content" source="media/add-members.png" alt-text="Members page with callout on Add Members button":::
+
 To add members to your project, follow these steps:
 
 1. Select **Settings** > **Members**, then select the **+Add members** button.

@@ -37,9 +37,13 @@ The following configuration options can be passed to the SDK:
 2. Once you've selected a project, navigate to **Admin > Settings > General** in the left panel.
 3. Copy your key from the **Ingestion key** field.
 
+   :::image type="content" source="media/ingestion-key.png" alt-text="Settings page with callout on the ingestion key area":::
+
 ## Integrate the Product Insights SDK into your webpage
 
 1. In Product Insights, navigate to **Admin > Data > Code** in the left panel. Copy the code snippet on this page.
+
+   :::image type="content" source="media/get-code.png" alt-text="Code page with callout on code snippet":::
 
 2. In the code snippet, replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**. For example:
 
