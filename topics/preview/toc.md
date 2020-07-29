@@ -19,4 +19,4 @@
 
 # [Preview terms of service](preview-terms-of-service.md)
 
-## [Concepts and terms](concepts-terminology.md)
+# [Concepts and terms](concepts-terminology.md)
