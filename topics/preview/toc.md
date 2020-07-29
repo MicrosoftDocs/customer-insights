@@ -14,7 +14,7 @@
 ## [Web SDK](get-started-websdk.md)
 ## [Web SDK sample](websdk-sample.md)
 
-# GDPR and compliance
+# GDPR requests and compliance
 ## [Manage cookies and user consent](user-consent-storage.md)
 ## [Delete and export user data](delete-export-signal-data.md)
 

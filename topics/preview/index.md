@@ -15,34 +15,33 @@ Welcome to the Dynamics 365 Product Insights private preview documentation.
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Get started with private preview
-[Onboarding overview -- read first](../preview/onboarding-overview.md)
 
-[Quickstart for private preview](../preview/quickstart-product-insights.md)
+[Onboarding overview -- read first](/onboarding-overview.md)
 
-## Topics
+[Get started with private preview](quickstart-product-insights.md)
 
-[Create and export derived signals](../preview/derived-signals.md)
+## How-tos
 
-[Create a project](../preview/create-project.md)
+[Create and export derived signals](derived-signals.md)
 
-[Real-time usage report](../preview/real-time-usage-report.md)
+[Create a project](create-project.md)
 
-[Concepts and terms](../preview/concepts-terminology.md)
+[Real-time usage report](real-time-usage-report.md)
 
+[Concepts and terms](concepts-terminology.md)
 
-## Extensibility
-[Web SDK quickstart](../preview/get-started-websdk.md)
+## Developer resources
 
-[Web SDK sample](../preview/websdk-sample.md)
+[Web SDK](get-started-websdk.md)
 
-## GDPR requests 
-[Manage cookies and user consent](../preview/user-consent-storage.md)
+[Web SDK sample](websdk-sample.md)
 
-[Delete and export user data](../preview/delete-export-signal-data.md)
+## GDPR requests and compliance
 
-## Terms and compliance
-[Terms of service for preview](../preview/preview-terms-of-service.md)
+[Manage cookies and user consent](user-consent-storage.md)
 
+[Delete and export user data](delete-export-signal-data.md)
 
-
+## Terms of service
+[Terms of service for preview](preview-terms-of-service.md)
 
