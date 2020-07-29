@@ -9,7 +9,7 @@ ms.topic: conceptual
 robots: noindex,nofollow
 ---
 
-# MICROSOFT DYNAMICS 365 PRODUCT INSIGHTS
+# MICROSOFT DYNAMICS 365 PRODUCT INSIGHTS PREVIEW TERMS OF SERVICE
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -25,7 +25,7 @@ This is an agreement between you (“you,” “your,” “Customer,” or “P
 
 Certain Microsoft services or software may be necessary to use the Services (“Required Offerings”). Microsoft does not grant any rights under this Agreement to access or use Required Offerings. Rather, Required Offerings are separately licensed under any respective Microsoft Licensing Agreement, and may require paying a fee. If you are a subscriber of Dynamics 365 or other Microsoft services, your Dynamics 365 customer agreement or other Microsoft service agreement applies to your use of Dynamics 365 or other Microsoft services generally. This Agreement applies to your use of the Services specifically.
 
-“Microsoft Licensing Agreement” or “MLA” means the Microsoft Online Services Terms (see <http://microsoftvolumelicensing.com/>) and Participant’s Microsoft volume licensing agreement, or any other applicable agreement, under which Participant subscribed or was granted a license to any Required Offerings.
+“Microsoft Licensing Agreement” or “MLA” means the Microsoft Online Services Terms (see <https://microsoftvolumelicensing.com/>) and Participant’s Microsoft volume licensing agreement, or any other applicable agreement, under which Participant subscribed or was granted a license to any Required Offerings.
 
 ## 2. THE SERVICES
 
