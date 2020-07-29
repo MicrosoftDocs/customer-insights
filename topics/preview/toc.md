@@ -8,7 +8,6 @@
 ## [Create and export derived signals](derived-signals.md)
 ## [Create a project](create-project.md)
 ## [Real-time usage report](real-time-usage-report.md)
-## [Concepts and terms](concepts-terminology.md)
 
 # Developer resources
 ## [Web SDK](get-started-websdk.md)
@@ -19,3 +18,5 @@
 ## [Delete and export user data](delete-export-signal-data.md)
 
 # [Preview terms of service](preview-terms-of-service.md)
+
+## [Concepts and terms](concepts-terminology.md)
