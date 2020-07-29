@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Product Insights
-summary: Welcome to Product Insights! Gain actionable insights into your customers' usage and experiences for data-driven decision making.
+summary: Welcome to Product Insights! Collect signals from your products and services, and gain actionable insights into your customers' usage and experiences.
 
 metadata:
   title: Product Insights Documentation
@@ -19,48 +19,73 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Onboarding guidance
+  - title: Take a tour
     linkLists:
       - linkListType: overview
         links:
-          - text: Onboard to the Private Preview
-            url: onboarding-overview.md
-
+          - text: What is Product Insights?
+            url: what-is.md
+          - text: Who uses Product Insights?
+            url: who-uses.md
+          - text: How do I start?
+            url: how-to-get-started.md
 
   # Card (optional)
   - title: Get started
     linkLists:
       - linkListType: quickstart
         links:
-          - text: First run experience
-            url: first-run-experience.md
-      
+          - text: Create a team
+            url: create-a-team.md
+          - text: Send signals
+            url: view-signals.md
+          - text: Gain insights
+            url: get-insights.md
 
-  # Card (optional)
-  - title: User guides
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Create and export derived signals
-            url: derived-signals.md
-          - text: Create a project
-            url: create-project.md
-      - linkListType: reference
-        links:
-          - text: Concepts and terms
-            url: concepts-terminology.md            
-  
-  
-  # Card (optional)
+  # Card
   - title: Developer resources
     linkLists:
       - linkListType: tutorial
         links:
-          - text: Web SDK
-            url: getting-started-websdk.md
+          - text: Android (Java) SDK
+            url: android-java.md
+          - text: Objective-C SDK
+            url: ios-objc.md
+          - text: .NET SDK
+            url: dotnet.md
+          - text: Python SDK
+            url: python.md
+          - text: Web/React (JavaScript) SDK
+            url: js.md
       - linkListType: download
         links:
-          - text: Web SDK Sample
-            url: websdk-sample.md
-          
-                  
+          - text: Download Signal SDKs
+            url: downloads.md
+      - linkListType: reference
+        links:
+          - text: Import signals from other fabrics
+            url: import-signals.md
+
+
+  # Card
+  - title: Community
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Community
+            url: community.md
+          - text: Blog
+            url: community.md
+          - text: Forum/ Support
+            url: support.md
+            
+            
+            
+  # Card
+  - title: Videos
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Video curriculum
+            url: developers/tutorials/video-curriculum.md        
+            

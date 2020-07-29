@@ -1,102 +1,79 @@
 ---
-title: Preview terms of service for Dynamics 365 Product Insights
+uid: developers/articles/terms-of-service
+title: SLA
 author: ruthaisabokhae
-description: Terms of Service for preview
+description: Terms of Service 
 ms.author: ruthai
-ms.date: 07/31/2020
+ms.date: 09/26/2019
 ms.service: product-insights
 ms.topic: conceptual
-robots: noindex,nofollow
 ---
 
-# MICROSOFT DYNAMICS 365 PRODUCT INSIGHTS  
+# MICROSOFT DYNAMICS 365 PRODUCT INSIGHTS
 
-## PREVIEW TERMS OF SERVICE 
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-LAST UPDATED MAY 2020 
+## PREVIEW TERMS OF SERVICE
 
-By accessing or using the Dynamics 365 Product Insights services preview (together with any Microsoft provided data sources, the “Services”), you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.   
+LAST UPDATED OCTOBER 2019
 
-## 1. WHAT THIS AGREEMENT COVERS
+By accessing or using the Services, you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.  If you are a subscriber of Dynamics 365 or other Microsoft services, your Dynamics 365 customer agreement or other Microsoft service agreement applies to your use of Dynamics 365 or other Microsoft services generally. This Agreement applies to your use of the Services specifically.
 
-This is an agreement between you (“you,” “your,” “Customer,” “Participant,” or “Licensee”) and Microsoft Corporation, (“Microsoft, “we,” “us” or “our”). The terms and conditions of this agreement (“Agreement”) apply to your access and use of Services. The Services are optional evaluation services to obtain feedback prior to general release.
+## 1. WHAT THE AGREEMENT COVERS
 
-Certain Microsoft services or software may be necessary to use the Services (“Required Offerings”). Microsoft does not grant any rights under this Agreement to access or use Required Offerings. Rather, Required Offerings are separately licensed under any respective Microsoft Licensing Agreement, and may require paying a fee. If you are a subscriber of Dynamics 365 or other Microsoft services, your Dynamics 365 customer agreement or other Microsoft service agreement applies to your use of Dynamics 365 or other Microsoft services generally. This Agreement applies to your use of the Services specifically.
+This is an agreement between you (“you,” “your,” “Customer,” “Participant,” or “Licensee”) and Microsoft Corporation, (“Microsoft, “we,” “us” or “our”). The terms and conditions of this agreement (“Agreement”) apply to your access and use of Dynamics 365 Product Insights services preview (together with any Microsoft provided data sources, the “Services”). The Services are optional evaluation services to obtain feedback prior to general release. Certain Microsoft services or software may be necessary to use the Services (“Required Offerings”). Microsoft does not grant any rights under this Agreement to access or use Required Offerings; rather, Required Offerings are separately licensed under any respective Microsoft Licensing Agreement, and may require paying a fee. “Microsoft Licensing Agreement” or “MLA” means the Microsoft Online Services Terms (see <http://microsoftvolumelicensing.com/>) and Participant’s Microsoft volume licensing agreement, or any other applicable agreement, under which Participant subscribed or was granted a license to any Required Offerings.
 
-“Microsoft Licensing Agreement” or “MLA” means the Microsoft Online Services Terms (see https://microsoftvolumelicensing.com/) and Participant’s Microsoft volume licensing agreement, or any other applicable agreement, under which Participant subscribed or was granted a license to any Required Offerings.
-
-## 2. THE SERVICES 
+## 2. THE SERVICES
 
 ### 2.1. Pre-Release Services and Updates
 
-You acknowledge that:
-
-(i) The Services provided under this Agreement are in a pre-release stage and are only available for a limited time.  
-(ii) The Services may not work correctly or the way a commercial version of the Services may function.   
-(iii) The Services may experience interruptions and extended downtime during which you may not be able to access Customer Data or other functionality.   
-(iv) Updates may be provided throughout the term and such updates may result in deleting the Customer Data or changing of Services functionality.   
-(v) In general, due to the pre-release nature of the Services, some or all of the Customer Data may be lost.   
-(vi) Your Customer Data may not be migrated from the Services to any future pre-release or commercial versions that may be released.  
-(vii) Microsoft may choose not to make the Services generally available.  
-(viii) You are solely responsible for determining the appropriateness of using the Services and assume all risks associated with using the Services, including but not limited to risks and costs of program errors, compliance with applicable laws, damage to or loss of, programs or equipment, and unavailability or interruption of operations. 
+You acknowledge that (i) The Services provided under this Agreement are in a pre-release stage and are only available for a limited time. (ii) The Services may not work correctly or the way a commercial version of the Services may function. (iii) The Services may experience interruptions and extended downtime during which you may not be able to access Customer Data or other functionality. (iv) Updates may be provided throughout the term and such updates may result in deleting the Customer Data or changing of Services functionality. (v) In general, due to the pre-release nature of the Services, some or all of the Customer Data may be lost. (vi) Your Customer Data may not be migrated from the Services to any future pre-release or commercial versions that may be released. (vii) Microsoft may choose not to make the Services generally available. (viii) You are solely responsible for determining the appropriateness of using the Services and assume all risks associated with using the Services, including but not limited to risks and costs of program errors, compliance with applicable laws, damage to or loss of, programs or equipment, and unavailability or interruption of operations.
 
 ### 2.2. Future Releases
 
-Microsoft may change the Services at any time, including without limitation for a future pre-release or commercial version, and we may not release a future pre-release or commercial version.  
+Microsoft may change the Services at any time, including without limitation for a future pre-release or commercial version, and we may not release a future pre-release or commercial version.
 
 ### 2.3. Pre-release Limitations
 
-Because of their pre-release status, the Services may employ lesser or different privacy and security measures than those typically present in a Microsoft enterprise online service.  You may not use the Services to process other data that is subject to heightened compliance requirements.
+Because of their pre-release status, the Services may employ lesser or different privacy and security measures than those typically present in a Microsoft enterprise online service.  You may not use the Services to process other data that is subject to heightened compliance requirements.  
 
 ### 2.4. Access and Use Rights
 
-You may access and use the Services only through the means we designate for the Services and only in accordance with the terms of this agreement and the policies and procedures we designate for use of the Services. Subject to your acceptance and compliance with this agreement, you may use the Services for the sole purposes of testing the Services internally and providing feedback to Microsoft. 
+You may access and use the Services only through the means we designate for the Services and only in accordance with the terms of this agreement and the policies and procedures we designate for use of the Services. Subject to your acceptance and compliance with this agreement, you may use the Services for the sole purposes of testing the Services internally and providing feedback to Microsoft.
 
 ### 2.5. Restrictions
 
 In using the Services, you may not access or use the Services:
 
 - to design or build a competitive service or to otherwise copy the design, functionality or user interfaces within the Services;
-
 - to work around any technical limitations in the Services that only allow you to use it in certain ways;
-
 - to share, publish, rent, lease, lend, sell or transfer the Services to any third party; or for commercial hosting services;
-
 - in a way prohibited by law, regulation, governmental order or decree;
-
 - to violate the rights of others;
-
 - to try to gain unauthorized access to or disrupt any service, device, data, account or network;
-
 - to spam or distribute malware;
-
 - in a way that could harm the Services or impair anyone else’s use of it; or
-
 - in any application or situation where failure of the Service could lead to the death or serious bodily injury of any person, or to severe physical or environmental damage.
 
 If you are using the Services in a shared or sandbox environment with other users who do not belong to your organization, you may not interfere with the use of the environment by other users and you may not access, delete, or modify any data, software, information or other materials placed in the environment by other users.
 
 ## 3. DATA
 
-“GDPR” means Regulation 2016/679 of the European Parliament and of the Council on the protect~ion of natural persons with regard to the Processing of Personal Data and on the free movement of such data. The terms “Personal Data,” “Data Subject,” “Controller,” “Personal Data Breach,” “Processor,” “Processing,” and “Supervisory Authority” have meaning as defined in the GDPR or other applicable law. “Subprocessor” means a Processor appointed by another Processor.
+“GDPR” means Regulation 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the Processing of Personal Data and on the free movement of such data. The terms “Personal Data,” “Data Subject,” “Controller,” “Personal Data Breach,” “Processor,” “Processing,” and “Supervisory Authority” have meaning as defined in the GDPR or other applicable law. “Subprocessor” means a Processor appointed by another Processor.
 
-### 3.1. Your Responsibility
+### 3.1 Your Responsibility
 
 You bear sole responsibility for any and all data provided to Microsoft through your access to or use of the Services (“Customer Data”), and any software programs or services you use in connection with your access to or use of the Services, including without limitation taking the steps necessary to back up such Customer Data, software programs or services.
 
-### 3.2. Processing of Personal Data; GDPR
+### 3.2 Processing of Personal Data; GDPR
 
 To the extent Microsoft is a Processor or Subprocessor of Personal Data in connection with the Services, the commitments in Exhibit A apply. You agree that your Customer Data may be transferred, stored and Processed in the United States or any other country in which Microsoft or its affiliates, subsidiaries or service providers maintain facilities. Participant hereby instructs Microsoft to Process Customer Data to provide the Services and for purposes compatible with providing the Services. To the extent Microsoft Processes Personal Data on behalf of Participant with respect to the Customer Data, Microsoft will Process such Customer Data only on the documented instructions of Participant as set forth in this Agreement and in Participant’s authorized use and configuration of the Services.
-
 The parties acknowledge and agree that:
 
 - the subject-matter of the Processing is limited to Personal Data within the scope of the GDPR;
-
-- the duration of the Processing shall be for the duration of the Customer’s right to use the Services and until all Personal Data is deleted or returned in accordance with Customer instructions or the terms of this Agreement;
-
+- 5the duration of the Processing shall be for the duration of the Customer’s right to use the Services and until all Personal Data is deleted or returned in accordance with Customer instructions or the terms of this Agreement;
 - the nature and purpose of the Processing shall be to provide the Service pursuant to this Agreement; and
-
-- the types of Personal Data Processed by the Service include those expressly identified in Article 4 of the GDPR. 
+- the types of Personal Data Processed by the Service include those expressly identified in Article 4 of the GDPR.
 
 ## 4. PROPRIETARY RIGHTS
 
@@ -112,13 +89,7 @@ Microsoft claims no ownership of or control over the Customer Data you provide t
 
 You represent, and agree to ensure, that you have the necessary rights to any Customer Data, including Personal Data, software programs or services that you use in connection with the Services, and that such activities do not infringe or violate the intellectual property, personal or other proprietary rights of any third party. You agree to obtain all necessary rights, and comply with all licenses or other terms, from the rightful owner of such Customer Data, software programs or services that you do not own. You agree to access or use the Services (a) without purporting to subject Microsoft to any other obligations to you or any third party, and (b) solely in a manner that complies with all applicable laws and regulations.
 
-Unless expressly noted, Customer will own any enrichments to the Customer Data. Unless the Services or Service documentation expressly prohibits doing so, Customer may export enriched data from the Service. Customer is solely responsible for ensuring that any system receiving such data complies with Customer’s legal obligations relating to that data.
-
-Microsoft will solely own any enhancements or improvements to the Services arising from access to and use of Customer Data. Microsoft may also use information derived from Customer Data if such use does not include Customer Data and no Customer Data can be reverse engineered from such use.
-
-### 4.4. Confidentiality
-
-The Services, including their user interface, features, documentation and output, are confidential and proprietary to Microsoft and its suppliers. This and all other information shared under this agreement is confidential information subject to the nondisclosure agreement (“NDA”) between you and Microsoft. In the event there is no existing NDA, or if such existing NDA is terminated or otherwise ceases to be in effect, then the remainder of this section applies. For five years after access and use of the Services, you may not disclose confidential information to third parties. You may disclose confidential information only to your employees and consultants who need to know the information. You must have written agreements with them that protect the confidential information at least as much as this agreement. You may disclose confidential information in response to a judicial or governmental order. You must first give written notice to Microsoft to allow it to seek a protective order or otherwise protect the information. Confidential information does not include information that: (i) becomes publicly known through no wrongful act; (ii) you received from a third party who did not breach confidentiality obligations to Microsoft or its suppliers; or (iii) you developed independently. Your duty to protect confidential information survives this agreement.
+Microsoft will solely own any enhancements or improvements to the Preview arising from access to and use of Customer Data. Microsoft may also use information derived from Customer Data if such use does not include Customer Data and no Customer Data can be reverse engineered from such use.
 
 ## 5. NO SUPPORT
 
@@ -126,7 +97,7 @@ We have no obligation to provide any support services for the Services. The Serv
 
 FOR THESE REASONS, THE SERVICES ARE EXCLUDED FROM ANY COMMITMENTS MICROSOFT MAKES IN ITS SERVICE LEVEL AGREEMENTS GENERALLY, INCLUDING WITHOUT LIMITATION ANY COMMITMENTS MICROSOFT MAKES IN SERVICE LEVEL AGREEMENTS APPLICABLE TO MICROSOFT POWER BI OR DYNAMICS 365.
 
-## 6. SOFTWARE  
+## 6. SOFTWARE
 
 ### 6.1. Scope of License
 
@@ -136,7 +107,7 @@ As part of your use of the Services, we grant you a limited right to: (a) instal
 
 We reserve all other rights to such Software. You may not disassemble, decompile, or reverse engineer any such Software included in the Services, except and only to the extent that the law expressly permits this activity. Notwithstanding these restrictions, you may (a) incorporate applicable binary portions of the Software into Licensee’s programs, solely as contemplated by the documentation; or (b) creating custom events during Licensee’s use of the Software.
 
-The Software is subject to United States export laws and regulations. You must comply with all domestic and international export laws and regulations that apply to the Software. These laws include restrictions on destinations, end users and end use. For additional information, see https://aka.ms/exporting.
+The Software is subject to United States export laws and regulations. You must comply with all domestic and international export laws and regulations that apply to the Software. These laws include restrictions on destinations, end users and end use. For additional information, see <https://aka.ms/exporting>.
 
 Unless we notify you otherwise, your license to use the Software provided by us as part of the Services will end when your right to use the Services ends, and you must promptly uninstall the Software. We may disable the Software at this time.
 
@@ -168,7 +139,7 @@ TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL MICROSOFT BE LIABLE FOR
 
 ### 11.1. Term
 
-This Agreement is effective on the date you first agree to it. This Agreement replaces any previous agreement under which you have been using Dynamics 365 Product Insights or any precursor services. This Agreement will terminate on the earlier of (i) the date of first availability of a commercial release of the Services (if ever) or (ii) the date on which Microsoft provides notice of termination to you. Microsoft may suspend or cancel your use of and access to all or any part of the Services, or terminate this Agreement, at any time for any reason and in its sole discretion.
+This Agreement is effective on the date you first agree to it. This Agreement replaces any previous agreement under which you have been using Dynamics 365 Product Insights or any precursor services. This Agreement will terminate on the earlier of (i) the date of first availability of a commercial release of the Services (if ever) or (ii) the date on which Microsoft provides notice of termination to you. Microsoft may suspend or cancel your use of and access to all or any part of the Services, or terminate this Agreement, at any time for any reason and in its sole discretion.  
 
 ### 11.2. Effect of Termination
 
@@ -186,9 +157,11 @@ If any court of competent jurisdiction determines that any provision of this Agr
 
 ### 12.3. No assignment
 
-Licensee may not assign this Agreement, or any rights or duties under it, directly or indirectly (e.g., by merger, consolidation, reorganization, or transfer of control), by operation of contract, law, or otherwise, except with Microsoft’s express written consent. 
+Licensee may not assign this Agreement, or any rights or duties under it, directly or indirectly (e.g., by merger, consolidation, reorganization, or transfer of control), by operation of contract, law, or otherwise, except with Microsoft’s express written consent.
 
-## Exhibit A – Data Protection Terms
+## Exhibit A - Data Protection Terms
+
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 ### Processing of Customer Data; Ownership
 
@@ -210,9 +183,9 @@ In support of the above, Microsoft may provide Participant’s basic contact inf
 
 Personal Data provided to Microsoft by, or on behalf of, Participant through use of the Services is also Customer Data. Pseudonymized identifiers may also be generated through Participant’s use of the Services and are also Personal Data.
 
-### Processor and Controller Roles and Responsibilities 
+### Processor and Controller Roles and Responsibilities
 
-Participant and Microsoft agree that Participant is the Controller of Personal Data and Microsoft is the Processor of such data, except when Participant acts as a Processor of Personal Data, in which case Microsoft is a Subprocessor. Microsoft will Process Personal Data only on documented instructions from Participant. Participant agrees that this Agreement along with Participant’s use and configuration of features in the Services are Participant’s complete and final documented instructions to Microsoft for the Processing of Personal Data. In any instance where the GDPR applies and Participant is a Processor, Participant warrants to Microsoft that Participant’s instructions, including appointment of Microsoft as a Processor or Subprocessor, have been authorized by the relevant Controller. 
+Participant and Microsoft agree that Participant is the Controller of Personal Data and Microsoft is the Processor of such data, except when Participant acts as a Processor of Personal Data, in which case Microsoft is a Subprocessor. Microsoft will Process Personal Data only on documented instructions from Participant. Participant agrees that this Agreement along with Participant’s use and configuration of features in the Services are Participant’s complete and final documented instructions to Microsoft for the Processing of Personal Data. In any instance where the GDPR applies and Participant is a Processor, Participant warrants to Microsoft that Participant’s instructions, including appointment of Microsoft as a Processor or Subprocessor, have been authorized by the relevant Controller.
 
 ### Data Subject Rights; Assistance with Requests
 
@@ -230,19 +203,16 @@ Microsoft will implement and maintain appropriate technical and organizational m
 
 ### Participant Responsibilities
 
-Participant is solely responsible for making an independent determination as to whether the technical and organizational measures for a Service meets Participant’s requirements, including any of its security obligations under the GDPR or other applicable data protection laws and regulations. Participant acknowledges and agrees that (taking into account the state of the art, the costs of implementation, and the nature, scope, context and purposes of the Processing of its Personal Data as well as the risks to individuals) the security practices and policies implemented and maintained by Microsoft provide a level of security appropriate to the risk with respect to its Personal Data. Participant is responsible for implementing and maintaining privacy protections and security measures for components that Participant provides or controls (such as devices enrolled with Microsoft Intune or within a Microsoft Azure customer’s virtual machine or application). 
+Participant is solely responsible for making an independent determination as to whether the technical and organizational measures for a Service meets Participant’s requirements, including any of its security obligations under the GDPR or other applicable data protection laws and regulations. Participant acknowledges and agrees that (taking into account the state of the art, the costs of implementation, and the nature, scope, context and purposes of the Processing of its Personal Data as well as the risks to individuals) the security practices and policies implemented and maintained by Microsoft provide a level of security appropriate to the risk with respect to its Personal Data. Participant is responsible for implementing and maintaining privacy protections and security measures for components that Participant provides or controls (such as devices enrolled with Microsoft Intune or within a Microsoft Azure customer’s virtual machine or application).
 
 ### Auditing Compliance
 
 Microsoft will conduct audits of the security of the computers, computing environment and physical data centers that it uses in Processing Customer Data and Personal Data, as follows:
 
 - Where a standard or framework provides for audits, an audit of such control standard or framework will be initiated at least annually.
-
 - Each audit will be performed according to the standards and rules of the regulatory or accreditation body for each applicable control standard or framework.
-
 - Each audit will be performed by qualified, independent, third party security auditors at Microsoft’s selection and expense.
-
-- Each audit will result in the generation of an audit report (“Microsoft Audit Report”), which Microsoft will make available at https://servicetrust.microsoft.com/ or another location identified by Microsoft. The Microsoft Audit Report will be Microsoft’s Confidential Information and will clearly disclose any material findings by the auditor. Microsoft will promptly remediate issues raised in any Microsoft Audit Report to the satisfaction of the auditor.
+Each audit will result in the generation of an audit report (“Microsoft Audit Report”), which Microsoft will make available at <https://servicetrust.microsoft.com/> or another location identified by Microsoft. The Microsoft Audit Report will be Microsoft’s Confidential Information and will clearly disclose any material findings by the auditor. Microsoft will promptly remediate issues raised in any Microsoft Audit Report to the satisfaction of the auditor.
 
 If Participant requests, Microsoft will provide Participant with each Microsoft Audit Report. The Microsoft Audit Report will be subject to non-disclosure and distribution limitations of Microsoft and the auditor.
 
@@ -252,13 +222,12 @@ If the Standard Contractual Clauses apply, then this section is in addition to C
 
 Nothing in this section of the Agreement varies or modifies the Standard Contractual Clauses or affects any supervisory authority’s or data subject’s rights under the Standard Contractual Clauses or GDPR. Microsoft Corporation is an intended third-party beneficiary of this section.
 
-### Security Incident Notification 
+### Security Incident Notification
 
-If Microsoft becomes aware of a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Customer Data or Personal Data while Processed by Microsoft (each a “Security Incident”), Microsoft will promptly and without undue delay (1) notify Participant of the Security Incident; (2) investigate the Security Incident and provide Participant with detailed information about the Security Incident; (3) take reasonable steps to mitigate the effects and to minimize any damage resulting from the Security Incident. 
+If Microsoft becomes aware of a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Customer Data or Personal Data while Processed by Microsoft (each a “Security Incident”), Microsoft will promptly and without undue delay (1) notify Participant of the Security Incident; (2) investigate the Security Incident and provide Participant with detailed information about the Security Incident; (3) take reasonable steps to mitigate the effects and to minimize any damage resulting from the Security Incident.
 
-Notification(s) of Security Incidents will be delivered to one or more of Participant’s administrators by any means Microsoft selects, including via email. It is Participant’s sole responsibility to ensure Participant’s administrators maintain accurate contact information on each applicable Services portal. Participant is solely responsible for complying with its obligations under incident notification laws applicable to Participant and fulfilling any third-party notification obligations related to any Security Incident. 
-
-Microsoft shall make reasonable efforts to assist Participant in fulfilling Participant’s obligation under GDPR Article 33 or other applicable law or regulation to notify the relevant supervisory authority and data subjects about such Security Incident. 
+Notification(s) of Security Incidents will be delivered to one or more of Participant’s administrators by any means Microsoft selects, including via email. It is Participant’s sole responsibility to ensure Participant’s administrators maintain accurate contact information on each applicable Services portal. Participant is solely responsible for complying with its obligations under incident notification laws applicable to Participant and fulfilling any third-party notification obligations related to any Security Incident.
+Microsoft shall make reasonable efforts to assist Participant in fulfilling Participant’s obligation under GDPR Article 33 or other applicable law or regulation to notify the relevant supervisory authority and data subjects about such Security Incident.
 
 Microsoft’s obligation to report or respond to a Security Incident under this section is not an acknowledgement by Microsoft of any fault or liability with respect to the Security Incident.
 
@@ -291,22 +260,19 @@ Microsoft will ensure that its personnel engaged in the Processing of Customer D
 Microsoft may hire third parties to provide certain limited or ancillary services on its behalf. Participant consents to the engagement of these third parties and Microsoft Affiliates as Subprocessors. The above authorizations will constitute Participant’s prior written consent to the subcontracting by Microsoft of the processing of Customer Data and Personal Data if such consent is required under the Standard Contractual Clauses.
 
 Microsoft is responsible for its Subprocessors’ compliance with Microsoft’s obligations in the Agreement. Microsoft makes available information about Subprocessors on a Microsoft website. When engaging any Subprocessor, Microsoft will ensure via a written contract that the Subprocessor may access and use Customer Data or Personal Data only to deliver the services Microsoft has retained them to provide and is prohibited from using Customer Data or Personal Data for any other purpose. Microsoft will ensure that Subprocessors are bound by written agreements that require them to provide at least the level of data protection required of Microsoft by this Agreement.
-
 From time to time, Microsoft may engage new Subprocessors. Microsoft will give Participant notice (by updating the website and provide Participant with a mechanism to obtain notice of that update) of any new Subprocessor at least 14-days in advance of providing that Subprocessor with access to Customer Data or Personal Data.
 
 If Participant does not approve of a new Subprocessor, then Participant may terminate any subscription for the Services without penalty by providing, before the end of the relevant notice period, written notice of termination that includes an explanation of the grounds for non-approval.
 
 ### How to Contact Microsoft
 
-If Participant believes that Microsoft is not adhering to its privacy or security commitments, Participant may contact customer support or use Microsoft’s Privacy web form, located at https://go.microsoft.com/?linkid=9846224. Microsoft’s mailing address is:
-
+If Participant believes that Microsoft is not adhering to its privacy or security commitments, Participant may contact customer support or use Microsoft’s Privacy web form, located at <https://go.microsoft.com/?linkid=9846224>. Microsoft’s mailing address is:
 Microsoft Enterprise Service Privacy
 Microsoft Corporation
 One Microsoft Way
 Redmond, Washington 98052 USA
- 
-Microsoft Ireland Operations Limited is Microsoft’s data protection representative for the European Economic Area and Switzerland. The privacy representative of Microsoft Ireland Operations Limited can be reached at the following address: 
 
+Microsoft Ireland Operations Limited is Microsoft’s data protection representative for the European Economic Area and Switzerland. The privacy representative of Microsoft Ireland Operations Limited can be reached at the following address:
 Microsoft Ireland Operations, Ltd.
 Attn: Data Protection
 One Microsoft Place
@@ -315,7 +281,9 @@ Leopardstown
 Dublin 18
 D18 P521
 
-## Attachment 1 to Exhibit A – The Standard Contractual Clauses (Processors)
+## Attachment 1 to Exhibit A - The Standard Contractual Clauses (Processors)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
 Beginning May 25, 2018 and thereafter, references to various Articles from the Directive 95/46/EC in the Standard Contractual Clauses below will be treated as references to the relevant and appropriate Articles in the GDPR.
 
@@ -342,11 +310,8 @@ The details of the transfer and in particular the special categories of personal
 ### Clause 3: Third-party beneficiary clause
 
 1. The data subject can enforce against the data exporter this Clause, Clause 4(b) to (i), Clause 5(a) to (e), and (g) to (j), Clause 6(1) and (2), Clause 7, Clause 8(2), and Clauses 9 to 12 as third-party beneficiary.
-
 2. The data subject can enforce against the data importer this Clause, Clause 5(a) to (e) and (g), Clause 6, Clause 7, Clause 8(2), and Clauses 9 to 12, in cases where the data exporter has factually disappeared or has ceased to exist in law unless any successor entity has assumed the entire legal obligations of the data exporter by contract or by operation of law, as a result of which it takes on the rights and obligations of the data exporter, in which case the data subject can enforce them against such entity.
-
 3. The data subject can enforce against the subprocessor this Clause, Clause 5(a) to (e) and (g), Clause 6, Clause 7, Clause 8(2), and Clauses 9 to 12, in cases where both the data exporter and the data importer have factually disappeared or ceased to exist in law or have become insolvent, unless any successor entity has assumed the entire legal obligations of the data exporter by contract or by operation of law as a result of which it takes on the rights and obligations of the data exporter, in which case the data subject can enforce them against such entity. Such third-party liability of the subprocessor shall be limited to its own processing operations under the Clauses.
-
 4. The parties do not object to a data subject being represented by an association or other body if the data subject so expressly wishes and if permitted by national law.
 
 ### Clause 4: Obligations of the data exporter
@@ -373,7 +338,7 @@ The data exporter agrees and warrants:
 
 (j) that it will ensure compliance with Clause 4(a) to (i).
 
-### Clause 5: Obligations of the data importer 
+### Clause 5: Obligations of the data importer
 
 The data importer agrees and warrants:
 
@@ -385,11 +350,11 @@ The data importer agrees and warrants:
 
 (d) that it will promptly notify the data exporter about:
 
-(i) any legally binding request for disclosure of the personal data by a law enforcement authority unless otherwise prohibited, such as a prohibition under criminal law to preserve the confidentiality of a law enforcement investigation,
+  (i) any legally binding request for disclosure of the personal data by a law enforcement authority unless otherwise prohibited, such as a prohibition under criminal law to preserve the confidentiality of a law enforcement investigation,
 
-(ii) any accidental or unauthorised access, and
-
-(iii) any request received directly from the data subjects without responding to that request, unless it has been otherwise authorised to do so;
+  (ii) any accidental or unauthorised access, and
+  
+  (iii) any request received directly from the data subjects without responding to that request, unless it has been otherwise authorised to do so;
 
 (e) to deal promptly and properly with all inquiries from the data exporter relating to its processing of the personal data subject to the transfer and to abide by the advice of the supervisory authority with regard to the processing of the data transferred;
 
@@ -406,29 +371,24 @@ The data importer agrees and warrants:
 ### Clause 6: Liability
 
 1. The parties agree that any data subject who has suffered damage as a result of any breach of the obligations referred to in Clause 3 or in Clause 11 by any party or subprocessor is entitled to receive compensation from the data exporter for the damage suffered.
-
 2. If a data subject is not able to bring a claim for compensation in accordance with paragraph 1 against the data exporter, arising out of a breach by the data importer or his subprocessor of any of their obligations referred to in Clause 3 or in Clause 11, because the data exporter has factually disappeared or ceased to exist in law or has become insolvent, the data importer agrees that the data subject may issue a claim against the data importer as if it were the data exporter, unless any successor entity has assumed the entire legal obligations of the data exporter by contract of by operation of law, in which case the data subject can enforce its rights against such entity.
-
 The data importer may not rely on a breach by a subprocessor of its obligations in order to avoid its own liabilities.
-
 3. If a data subject is not able to bring a claim against the data exporter or the data importer referred to in paragraphs 1 and 2, arising out of a breach by the subprocessor of any of their obligations referred to in Clause 3 or in Clause 11 because both the data exporter and the data importer have factually disappeared or ceased to exist in law or have become insolvent, the subprocessor agrees that the data subject may issue a claim against the data subprocessor with regard to its own processing operations under the Clauses as if it were the data exporter or the data importer, unless any successor entity has assumed the entire legal obligations of the data exporter or data importer by contract or by operation of law, in which case the data subject can enforce its rights against such entity. The liability of the subprocessor shall be limited to its own processing operations under the Clauses.
 
 ### Clause 7: Mediation and jurisdiction
 
 1. The data importer agrees that if the data subject invokes against it third-party beneficiary rights and/or claims compensation for damages under the Clauses, the data importer will accept the decision of the data subject:
 
-(a) to refer the dispute to mediation, by an independent person or, where applicable, by the supervisory authority;
+   (a) to refer the dispute to mediation, by an independent person or, where applicable, by the supervisory authority;
 
-(b) to refer the dispute to the courts in the Member State in which the data exporter is established.
+   (b) to refer the dispute to the courts in the Member State in which the data exporter is established.
 
-2. The parties agree that the choice made by the data subject will not prejudice its substantive or procedural rights to seek remedies in accordance with other provisions of national or international law.
+1. The parties agree that the choice made by the data subject will not prejudice its substantive or procedural rights to seek remedies in accordance with other provisions of national or international law.
 
 ### Clause 8: Cooperation with supervisory authorities
 
-1. The data exporter agrees to deposit a copy of this contract with the supervisory authority if it so requests or if such deposit is required under the applicable data protection law.  
-
+1. The data exporter agrees to deposit a copy of this contract with the supervisory authority if it so requests or if such deposit is required under the applicable data protection law.
 2. The parties agree that the supervisory authority has the right to conduct an audit of the data importer, and of any subprocessor, which has the same scope and is subject to the same conditions as would apply to an audit of the data exporter under the applicable data protection law.
-
 3. The data importer shall promptly inform the data exporter about the existence of legislation applicable to it or any subprocessor preventing the conduct of an audit of the data importer, or any subprocessor, pursuant to paragraph 2. In such a case the data exporter shall be entitled to take the measures foreseen in Clause 5 (b).
 
 ### Clause 9: Governing Law
@@ -442,17 +402,13 @@ The parties undertake not to vary or modify the Clauses. This does not preclude 
 ### Clause 11: Subprocessing
 
 1. The data importer shall not subcontract any of its processing operations performed on behalf of the data exporter under the Clauses without the prior written consent of the data exporter. Where the data importer subcontracts its obligations under the Clauses, with the consent of the data exporter, it shall do so only by way of a written agreement with the subprocessor which imposes the same obligations on the subprocessor as are imposed on the data importer under the Clauses. Where the subprocessor fails to fulfil its data protection obligations under such written agreement the data importer shall remain fully liable to the data exporter for the performance of the subprocessor's obligations under such agreement.
-
 2. The prior written contract between the data importer and the subprocessor shall also provide for a third-party beneficiary clause as laid down in Clause 3 for cases where the data subject is not able to bring the claim for compensation referred to in paragraph 1 of Clause 6 against the data exporter or the data importer because they have factually disappeared or have ceased to exist in law or have become insolvent and no successor entity has assumed the entire legal obligations of the data exporter or data importer by contract or by operation of law. Such third-party liability of the subprocessor shall be limited to its own processing operations under the Clauses.
-
 3. The provisions relating to data protection aspects for subprocessing of the contract referred to in paragraph 1 shall be governed by the law of the Member State in which the data exporter is established.
-
 4. The data exporter shall keep a list of subprocessing agreements concluded under the Clauses and notified by the data importer pursuant to Clause 5 (j), which shall be updated at least once a year. The list shall be available to the data exporter's data protection supervisory authority.
 
 ### Clause 12: Obligation after the termination of personal data processing services
 
 1. The parties agree that on the termination of the provision of data processing services, the data importer and the subprocessor shall, at the choice of the data exporter, return all the personal data transferred and the copies thereof to the data exporter or shall destroy all the personal data and certify to the data exporter that it has done so, unless legislation imposed upon the data importer prevents it from returning or destroying all or part of the personal data transferred. In that case, the data importer warrants that it will guarantee the confidentiality of the personal data transferred and will not actively process the personal data transferred anymore.
-
 2. The data importer and the subprocessor warrant that upon request of the data exporter and/or of the supervisory authority, it will submit its data processing facilities for an audit of the measures referred to in paragraph 1.
 
 ### Appendix 1 to the Standard Contractual Clauses
@@ -479,17 +435,17 @@ e. Customer Data Deletion or Return. Upon expiration or termination of data expo
 
 Subcontractors: The data importer may hire other companies to provide limited services on data importer’s behalf, such as providing customer support. Any such subcontractors will be permitted to obtain Customer Data only to deliver the services the data importer has retained them to provide, and they are prohibited from using Customer Data for any other purpose.
 
-### Appendix 2 to the Standard Contractual Clauses 
+### Appendix 2 to the Standard Contractual Clauses
 
 Description of the technical and organizational security measures implemented by the data importer in accordance with Clauses 4(d) and 5(c):
 
 1. Personnel. Data importer’s personnel will not process Customer Data without authorization. Personnel are obligated to maintain the confidentiality of any Customer Data and this obligation continues even after their engagement ends.
 
-2. Data Privacy Contact. The data privacy officer of the data importer can be reached at the following address:
+1. Data Privacy Contact. The data privacy officer of the data importer can be reached at the following address:
 
-Microsoft Corporation
-Attn: Chief Privacy Officer
-1 Microsoft Way
-Redmond, WA 98052 USA
+   Microsoft Corporation <br>
+   Attn: Chief Privacy Officer <br>
+   1 Microsoft Way <br>
+   Redmond, WA 98052 USA
 
-3. Technical and Organization Measures. The data importer has implemented and will maintain appropriate technical and organizational measures, internal controls, and information security routines intended to protect Customer Data, as defined in the Security Practices and Policies section of the Agreement, against accidental loss, destruction, or alteration; unauthorized disclosure or access; or unlawful destruction.
+1. Technical and Organization Measures. The data importer has implemented and will maintain appropriate technical and organizational measures, internal controls, and information security routines intended to protect Customer Data, as defined in the Security Practices and Policies section of the Agreement, against accidental loss, destruction, or alteration; unauthorized disclosure or access; or unlawful destruction.
