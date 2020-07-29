@@ -1,6 +1,6 @@
 ---
 uid: topics/control-lifecycle
-title: Control lifecyle of user content and application usage data
+title: Control lifecyle of user content and application usage data in Product Insights
 author: ruthaisabokhae
 description: Control lifecyle of user content and application usage data
 ms.author: ruthai
@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# How to control the lifecycle of user content and application usage data
+# Control the lifecycle of user content and application usage data
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
