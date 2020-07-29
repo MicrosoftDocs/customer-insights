@@ -1,21 +1,21 @@
-# [Onboarding overview](xref:topics/preview/onboarding-overview)
+# [Onboarding overview](onboarding-overview.md)
 
 # Get started
-## [First run experience](xref:topics/preview/first-run-experience)
-## [Concepts and terms](xref:topics/preview/concepts-terminology)
+## [First run experience](first-run-experience.md)
+## [Concepts and terms](concepts-terminology.md)
 
 # User guides
-## [Create and export derived signals](xref:topics/preview/derived-signals)
-## [Create a project](xref:topics/preview/create-project)
-## [Real time usage report](xref:topics/preview/real-time-usage-report)
+## [Create and export derived signals](derived-signals.md)
+## [Create a project](create-project.md)
+## [Real time usage report](real-time-usage-report.md)
 
 # Developer resources
-## [Web SDK](xref:topics/preview/getting-started-websdk)
-## [Web SDK sample](xref:topics/preview/websdk-sample)
+## [Web SDK](getting-started-websdk.md)
+## [Web SDK sample](websdk-sample.md)
 
 # Terms and compliance
-## [Preview Terms of Service](xref:topics/preview/terms-of-service)
+## [Preview Terms of Service](terms-of-service.md)
 
 ## GDPR and compliance
-### [Manage cookies and user consent](xref:topics/preview/user-consent-storage)
-### [Delete and export user data](xref:topics/preview/delete-export-signal-data)
+### [Manage cookies and user consent](user-consent-storage.md)
+### [Delete and export user data](delete-export-signal-data.md)
