@@ -1,7 +1,7 @@
 ---
-title: Real-time usage report
+title: View reports in Product Insights
 author: ruthaisabokhae
-description: Use the real-time usage report to monitor current activity on your site.
+description: Use the available reports to monitor activity on your site.
 ms.author: ruthai
 ms.date: 07/31/2020
 ms.service: product-insights
@@ -9,20 +9,33 @@ ms.topic: conceptual
 robots: noindex,nofollow
 ---
 
-# Real-time usage report
+# View reports
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Real-time usage** report shows an overview of current activity on your site and it's auto-refreshing every minute. You can use this to monitor the impact that marketing campaigns, press events, and other scenarios that have and impact on your site's traffic.
+Product Insights comes with a set of project-based reports using the data collected through the SDK.
 
-The report will automatically display when you first sign in to Product Insights. You can also find it by navigating to **Reports** > **Key metrics** > **Real-time usage** in the left-hand menu.
+Select **Reports** > **Visitor profile** or **Reports** > **Key metrics** to access the reports.
 
-## Reading the report
+:::image type="content" source="media/reports-list.png" alt-text="Navigation showing the list of available reports":::
 
-The real-time usage report consists of five visualizations:
+Select the time frame of a reports by choosing a value from the drop-down in the top-right corner of a report.
 
-1. Active visitors by device type
-2. Page view trend
-3. Top referring domains
-4. Top pages
-5. Visitors by country
+Select a value in a chart or list to filter the report for the selected value.
+
+## Visitor profile reports
+
+The visitor profile section contains three reports:
+
+- **Browsers** shows a breakdown of the Browsers that visitor of your site used to access it.
+- **Devices** lists the physical devices that were used to access your site.
+- **Operating systems** provides insights in which operation system the devices run when accessing you site.
+
+:::image type="content" source="media/operating-system-report.png" alt-text="Screenshot of an Operating Systems report":::
+
+## Key metrics reports
+
+- **Real-time usage** shows an overview of current activity on your site and it's auto-refreshing every minute. You can use this to monitor the impact that marketing campaigns, press events, and other scenarios that have and impact on your site's traffic.
+- **Page views** lists the pages view for individual pages along with the number of total page views over the selected time frame.
+
+:::image type="content" source="media/real-time-usage-report.png" alt-text="Screenshot of the real-time usage report":::
