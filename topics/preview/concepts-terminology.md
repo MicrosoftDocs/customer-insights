@@ -15,10 +15,6 @@ robots: noindex,nofollow
 
 This list defines selected terms that appear frequently in Product Insights and in its supporting documentation.
 
-## Attribute
-
-Metadata for a property of an object, element, or file.
-
 ## Derived signal
 
 A derived signal is a virtual view of a base signal. Derived signals are generally used for scoping down a base signal for export, or for cleaning up a signal containing properties that aren't necessary for exposure or export.
