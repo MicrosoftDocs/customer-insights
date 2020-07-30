@@ -2,7 +2,7 @@
 
 # [Onboarding overview](onboarding-overview.md)
 
-# [Get started with private preview](quickstart-product-insights.md)
+# [Quickstart for private preview](quickstart-product-insights.md)
 
 # How-tos
 ## [Create a project](create-project.md)
