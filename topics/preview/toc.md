@@ -5,12 +5,12 @@
 # [Get started with private preview](quickstart-product-insights.md)
 
 # How-tos
-## [Create and export derived signals](derived-signals.md)
 ## [Create a project](create-project.md)
 ## [View reports](reports.md)
+## [Create and export derived signals](derived-signals.md)
 
 # Developer resources
-## [Web SDK](get-started-websdk.md)
+## [Web SDK tutorial](get-started-websdk.md)
 ## [Web SDK sample](websdk-sample.md)
 
 # GDPR requests and compliance
