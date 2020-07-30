@@ -30,7 +30,7 @@ There is a two-step process to delete or export data:
 1. Tag signal properties that contain data with personal information.
 2. Delete or export data associated with specific values (for example: a specified user ID).
 
-### Tag signal properties
+### Tag and update signal properties
 
 PII data is tagged on a signal property level. You'll first need to tag the properties being considered for deletion or export.
 
