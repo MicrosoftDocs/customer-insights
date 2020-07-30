@@ -7,7 +7,7 @@
 # How-tos
 ## [Create and export derived signals](derived-signals.md)
 ## [Create a project](create-project.md)
-## [Real-time usage report](real-time-usage-report.md)
+## [View reports](reports.md)
 
 # Developer resources
 ## [Web SDK](get-started-websdk.md)

@@ -26,7 +26,7 @@ Welcome to the Dynamics 365 Product Insights private preview documentation.
 
 [Create a project](create-project.md)
 
-[Real-time usage report](real-time-usage-report.md)
+[View reports](reports.md)
 
 
 ## Developer resources
