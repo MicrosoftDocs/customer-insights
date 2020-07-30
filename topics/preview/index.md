@@ -18,7 +18,7 @@ Welcome to the Dynamics 365 Product Insights private preview documentation.
 
 [Onboarding overview -- read first](/onboarding-overview.md)
 
-[Get started with private preview](quickstart-product-insights.md)
+[Quickstart for private preview](quickstart-product-insights.md)
 
 ## How-tos
 
