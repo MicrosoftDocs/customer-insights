@@ -31,7 +31,7 @@ To add members to your project, follow these steps:
 
 1. Select **Settings** > **Members**, then select the **+Add members** button.
 
-2. Use the **Members** field to find users in your company who you want to add to your team. You can search by name or email address. Under **Role**, the only currently available option is **Owner**.
+2. Use the **Members** field to find users who you want to add to your team. You can search by name or email address. Under **Role**, the only currently available option is **Owner**.
 
    > [!NOTE]
    > Security groups and distribution groups are currently not supported.
