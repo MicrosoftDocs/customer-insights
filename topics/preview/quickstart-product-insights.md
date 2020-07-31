@@ -61,4 +61,4 @@ You can create additional projects to classify your data.
 
 ## Switch between projects
 
-If you are a member of multiple projects, you can switch between them by selecting the organization name symbol in the bottom-left corner of Product Insights, and selecting your desired project from the list.
+If you are a member of multiple projects, you can switch between them by selecting the project switcher at the bottom-left corner of Product Insights, and choosing your desired project from the list.
