@@ -65,14 +65,14 @@ The capability to create a derived signal from the web analytics data, filter it
 
 *	Before you start, ensure you have read and agree to the [Preview terms of service](../preview/preview-terms-of-service.md) provided.
 *	Sign in to the [Dynamics 365 Product Insights portal](https://pi.dynamics.com) using your Microsoft Azure Active Directory user accounts.
-*	Follow the steps in the [quickstart](quickstart-product-insights.md) article to set up your organization, environment, and project.
+*	Follow the steps in the [quickstart](quickstart-product-insights.md) article to set up your environment and project.
 *	Review the [known issues](#known-issues).
 
 ### First run experience
 
-* Follow the account creation process. Set up your organization and environment, create your project, and add members.
+* Follow the account creation process. Set up your environment, create your project, and add members.
 * Instrument website with the SDK to see telemetry arriving into your project.
-*	View the real-time report showing active users by device, page view trend, top pages, top referrers, and users’ geographic locations.
+* View the real-time report showing active users by device, page view trend, top pages, top referrers, and users’ geographic locations.
 
 ### Export data from Product Insights
 
