@@ -1,6 +1,6 @@
 ---
 uid: developers/dev-resources/index
-title: Download senders
+title: Download senders in Product Insights
 author: ruthaisabokhae
 description: Download senders
 ms.author: ruthai
@@ -9,7 +9,7 @@ ms.service: product-insights
 ms.topic: conceptual
 ---
 
-# Developer Resources
+# Developer resources for Product Insights
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
