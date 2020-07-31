@@ -31,10 +31,10 @@ To add members to your project, follow these steps:
 
 1. Select **Settings** > **Members**, then select the **+Add members** button.
 
-2. Use the **Members** field to find users in your organization who you want to add to your team. You can search by name or email address. Under **Role**, the only currently available option is **Owner**.
+2. Use the **Members** field to find users who you want to add to your team. You can search by name or email address. Under **Role**, the only currently available option is **Owner**.
 
    > [!NOTE]
-   > Security groups and distribution groups currently not supported.
+   > Security groups and distribution groups are currently not supported.
 
 3. When you are done adding users, select **Add** to confirm.
 
@@ -42,9 +42,7 @@ To add members to your project, follow these steps:
 
 Product Insights has only the role of **Owner** currently available, with the following permissions enabled:
 
-- Configure company
 - Create projects
-- Configure projects (billing, quotas, members, OOB reports, delete)
+- Configure projects (members, delete)
 - Configure signals and derived signals
-- View project resources (reports, segments, and metrics)
-- Create personal assets (reports, segments, and metrics)
+- View project resources (reports)

@@ -15,7 +15,7 @@ robots: noindex,nofollow
 
 Dynamics 365 Product Insights uses cookies and local storage (`localStorage`) to identify website visitors.
 
-Cookies are small files that store bits of information about a user’s interactions with the website. They are stored in the browser. When you visit a website for which you have stored cookies, the browser sends that information to the server, which returns information that is unique to you. This is the technology that allows, for example, an online shopping cart to keep selected items in it even if a customer navigates away from the website.
+Cookies are small files that store bits of information about a user’s interactions with the website. They are stored in web browsers. When you visit a website for which you have stored cookies, the browser sends that information to the server, which returns information that is unique to you. This is the technology that allows, for example, an online shopping cart to keep selected items in it even if a customer navigates away from the website.
 
 ## User consent
 
