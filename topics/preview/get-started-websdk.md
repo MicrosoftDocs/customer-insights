@@ -29,7 +29,7 @@ The following configuration options can be passed to the SDK:
 ## Prerequisites
 
 * The SDK requires the project or webpage to be hosted in order to send telemetry. Telemetry sent from a local file will not be accepted by the server.
-* You have an ingestion key.
+* You have an ingestion key (embeedded in your code snippet).
 
 ## Get an ingestion key from the Product Insights portal
 
