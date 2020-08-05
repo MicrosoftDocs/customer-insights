@@ -3,7 +3,7 @@ title: Get started with the web SDK for Dynamics 365 Product Insights
 author: ruthaisabokhae
 description: Learn how to use the Product Insights SDK to instrument your website.
 ms.author: ruthai
-ms.date: 07/31/2020
+ms.date: 08/05/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
@@ -52,7 +52,7 @@ window["Contoso"].trackSignal({
 });
 ```
 
-4. In the code snippet, ensure the ingestion key is embedded within your code.
+4. Ensure your ingestion key is embedded within the code snippet.
 
 5. Add the copied code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
 
