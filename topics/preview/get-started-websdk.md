@@ -35,7 +35,7 @@ The following configuration options can be passed to the SDK:
 
 1. From the Product Insights home screen, select your project from the project dropdown on the left navigation menu. If you don't already have a project, select the **+ New Project** option instead and create one.
 
-2. In Product Insights, navigate to **Admin > Data > Code** in the left panel. Copy the code snippet on this page.
+2. Navigate to **Admin > Data > Code** in the left panel. Copy the code snippet on this page.
 
    :::image type="content" source="media/get-code.png" alt-text="Code page with callout on code snippet":::
 
