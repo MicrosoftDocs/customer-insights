@@ -1,7 +1,7 @@
 ---
 title: Get started with the web SDK for Dynamics 365 Product Insights
 author: ruthaisabokhae
-description: Learn how to use an ingestion key and the Product Insights SDK to instrument your website.
+description: Learn how to use the Product Insights SDK to instrument your website.
 ms.author: ruthai
 ms.date: 07/31/2020
 ms.service: product-insights
@@ -13,7 +13,7 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial will guide you through the process of using a Product Insights ingestion key and the Product Insights SDK for instrumenting your existing website. You'll start seeing signals in your portal in five minutes or sooner.
+This tutorial will guide you through the process of using a Product Insights SDK for instrumenting your existing website. You'll start seeing signals in your portal in five minutes or sooner.
 
 ## Configuration options
 
@@ -29,23 +29,17 @@ The following configuration options can be passed to the SDK:
 ## Prerequisites
 
 * The SDK requires the project or webpage to be hosted in order to send telemetry. Telemetry sent from a local file will not be accepted by the server.
-* You have an ingestion key (embeedded in your code snippet).
-
-## Get an ingestion key from the Product Insights portal
-
-1. From the Product Insights home screen, select your project from the project dropdown on the left navigation menu. If you don't already have a project, select the **+ New Project** option instead and create one.
-2. Once you've selected a project, navigate to **Admin > Settings > General** in the left panel.
-3. Copy your key from the **Ingestion key** field.
-
-   :::image type="content" source="media/ingestion-key.png" alt-text="Settings page with callout on the ingestion key area":::
+* You have an ingestion key (already embedded in your code snippet).
 
 ## Integrate the Product Insights SDK into your webpage
 
-1. In Product Insights, navigate to **Admin > Data > Code** in the left panel. Copy the code snippet on this page.
+1. From the Product Insights home screen, select your project from the project dropdown on the left navigation menu. If you don't already have a project, select the **+ New Project** option instead and create one.
+
+2. In Product Insights, navigate to **Admin > Data > Code** in the left panel. Copy the code snippet on this page.
 
    :::image type="content" source="media/get-code.png" alt-text="Code page with callout on code snippet":::
 
-2. In the code snippet, replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**. For example:
+3. In the code snippet, replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**. See illustration in the code snippet below:
 
 ```
 window["Contoso"].trackSignal({
@@ -58,9 +52,9 @@ window["Contoso"].trackSignal({
 });
 ```
 
-3. In the code snippet, ensure the [ingestion key](#get-an-ingestion-key-from-the-product-insights-portal) is added to your code.
+4. In the code snippet, ensure the ingestion key is embedded within your code.
 
-4. Add the modified code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
+5. Add the copied code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
 
 ## Setting user details for your signal
 
