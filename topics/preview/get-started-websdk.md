@@ -33,13 +33,13 @@ The following configuration options can be passed to the SDK:
 
 ## Integrate the Product Insights SDK into your webpage
 
-1. From the Product Insights home screen, select your project from the project dropdown on the left navigation menu. If you don't already have a project, select the **+ New Project** option instead and create one.
+1. From the Product Insights home screen, select your project from the project dropdown on the left navigation pane. If you don't already have a project, select the **+ New Project** option instead and create one.
 
-2. Navigate to **Admin > Data > Code** in the left panel. Copy the code snippet on this page.
+2. Go to **Admin** > **Data** > **Code**  and copy the code snippet on this page.
 
    :::image type="content" source="media/get-code.png" alt-text="Code page with callout on code snippet":::
 
-3. In the code snippet, replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**. See illustration in the code snippet below:
+3. In the code snippet, replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**. See the example below:
 
 ```
 window["Contoso"].trackSignal({
@@ -52,7 +52,7 @@ window["Contoso"].trackSignal({
 });
 ```
 
-4. Ensure your ingestion key is embedded within the code snippet.
+4. Ensure your ingestion key is embedded in the code snippet.
 
 5. Add the copied code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
 
