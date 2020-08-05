@@ -13,22 +13,22 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial will guide you through the process of using a Product Insights SDK for instrumenting your existing website. You'll start seeing signals in your portal in five minutes or sooner.
+This tutorial guides you through the process of instrumenting your website with a Product Insights SDK. You'll start seeing signals in your portal in five minutes or sooner.
 
 ## Configuration options
 
 The following configuration options can be passed to the SDK:
 
-- **ingestionKey**: This is the key used to send signals to your project.
--	**autoCapture**: This specifies the auto capture instructions for the SDK to collect page views and clicks. It has two options:
-    - **view**: Set this to true if you want the SDK to capture page views automatically. Note that single page applications need to instrument views manually, and must instrument the trackView() API whenever they route to a new page.
-    - **click**: Set this to true if you want the SDK to capture page clicks automatically.
--	**userConsent**: This specifies whether the user has consented to let the SDK add data to browser storage (localstorage or cookies) that will be used by Product Insights to track user behavior. By default, this is assumed to be true.
--	**endpointUrl**: This can be used to specify the destination URL for your signals. Only override this if you need to send data to a specific endpoint.
+- **ingestionKey**: The ingestion key used to send signals to your project.
+-	**autoCapture**: Specifies the auto capture instructions for the SDK to collect page views and clicks. It has two options:
+    - **view**: Set to true if you want the SDK to capture page views automatically. Single page applications need to instrument views manually, and must instrument the trackView() API whenever they route to a new page.
+    - **click**: Set to true if you want the SDK to capture page clicks automatically.
+-	**userConsent**: Specifies whether the user has consented to let the SDK add data to browser storage (local storage or cookies). Product Insights uses this data to track user behavior. By default, it's assumed to be true.
+-	**endpointUrl**: Used to specify the destination URL for your signals. Only override this option if you need to send data to a specific endpoint.
 
 ## Prerequisites
 
-* The SDK requires the project or webpage to be hosted in order to send telemetry. Telemetry sent from a local file will not be accepted by the server.
+* The SDK requires the project or webpage to be hosted to send telemetry. Telemetry sent from a local file will not be accepted by the server.
 * You have an ingestion key (already embedded in your code snippet).
 
 ## Integrate the Product Insights SDK into your webpage
@@ -58,9 +58,9 @@ window["Contoso"].trackSignal({
 
 ## Setting user details for your signal
 
-The Product Insights SDK allows you to define user information that can be sent with every signal. You can do this by specifying the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration. Alternatively, user information can be specified by calling the `setUser(user: IUser)` API on the SDK.
+The Product Insights SDK lets you define user information that can be sent with every signal. You can specify the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration. You can also specify user information by calling the `setUser(user: IUser)` API on the SDK.
 
-Specifying user details in the code snippet means that all telemetry will have this information. However, if specified by the `setUser API`, telemetry sent before the `setUser API` will not contain this information.
+Specifying user details in the code snippet means that all telemetry will have this information. However, if specified by the `setUser API`, telemetry sent before the `setUser API` won't contain this information.
 
 The `IUser` interface contains the following string properties:
 
