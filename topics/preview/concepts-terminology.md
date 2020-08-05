@@ -19,10 +19,6 @@ This list defines selected terms that appear frequently in Product Insights and 
 
 A derived signal is a virtual view of a base signal. Derived signals are generally used for scoping down a base signal for export, or for cleaning up a signal containing properties that aren't necessary for exposure or export.
 
-## Environment
-
-A space in which to store, manage, and share an organization's business data, apps, and flows.
-
 ## Event
 
 A single occurrence of data sent to Product Insights. If you think of a **signal** as a flowing stream of data, an event is that stream at a specific point in time.
