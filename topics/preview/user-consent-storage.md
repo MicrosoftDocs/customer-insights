@@ -3,7 +3,7 @@ title: Manage cookies and user consent
 author: ruthaisabokhae
 description: Understand how cookies and user consent are used in Dynamics 365 Product Insights
 ms.author: ruthai
-ms.date: 07/31/2020
+ms.date: 08/10/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
