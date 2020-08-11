@@ -4,6 +4,8 @@
 
 # [Quickstart for private preview](quickstart-product-insights.md)
 
+# [Known issues](known-issues.md)
+
 # How-tos
 ## [Create a project](create-project.md)
 ## [View reports](reports.md)
