@@ -11,7 +11,7 @@ robots: noindex,nofollow
 
 # Known issues
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 As we continue to work on the product and refine the experience, we are aware of a few outstanding issues, so bear these in mind as you experience the product. Some of these known issues and workarounds include:
 
