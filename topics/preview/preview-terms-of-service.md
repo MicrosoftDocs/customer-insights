@@ -3,7 +3,7 @@ title: Microsoft Dynamics 365 Product Insights preview terms of service
 author: ruthaisabokhae
 description: Understand the terms of service for the preview of Dynamics 365 Product Insights 
 ms.author: ruthai
-ms.date: 07/31/2020
+ms.date: 08/10/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
@@ -15,7 +15,7 @@ robots: noindex,nofollow
 
 ## PREVIEW TERMS OF SERVICE
 
-LAST UPDATED JULY 2020
+LAST UPDATED AUGUST 2020
 
 By accessing or using the Dynamics 365 Product Insights services preview (together with any Microsoft provided data sources, the "Services"), you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.
 
@@ -140,7 +140,7 @@ In connection with your access and use of the Services, Microsoft may create doc
 
 ### 8.1. Rights
 
-You grant Microsoft the non-exclusive right to use your name, trademarks and service marks, likeness, and logos (“Marks”) in such Publicity Materials.
+Subject to your approval right described in Section 8.2, you grant Microsoft the non-exclusive right to use your name, trademarks and service marks, likeness, and logos (“Marks”) in such Publicity Materials.
 
 ### 8.2. Approvals
 
