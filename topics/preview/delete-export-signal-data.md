@@ -1,9 +1,9 @@
 ---
 title: Delete and export signal data 
 author: ruthaisabokhae
-description: How to delete and exportsignal data containing personally identifiable information (PII)
+description: How to delete and export signal data containing end user identifiable information (PII)
 ms.author: ruthai
-ms.date: 07/31/2020
+ms.date: 08/11/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
@@ -19,7 +19,7 @@ The European Union’s General Data Protection Regulation (GDPR) that has been a
 
 ## Deleting and exporting signal data containing personal identifiable information
 
-The following sections describe how to delete and export signal data that may contain personal identifiable information (PII).
+The following sections describe how to delete and export signal data that may contain end user identifiable information (EUII).
 
 ### Overview
 
@@ -32,7 +32,7 @@ There is a two-step process to delete or export data:
 
 ### Tag and update signal properties
 
-PII data is tagged on a signal property level. You'll first need to tag the properties being considered for deletion or export.
+EUII data is tagged on a signal property level. You'll first need to tag the properties being considered for deletion or export.
 
 To tag a signal property as containing personal information, follow these steps.
 
@@ -46,12 +46,12 @@ To tag a signal property as containing personal information, follow these steps.
 
    ![Edit signal](../media/EditSignal.png)
 
-1. In the **Update Property** window, select **[...]** in the upper right corner, and check the **Contains PII** box. Select **Update** to save your changes.
+1. In the **Update Property** window, select **[...]** in the upper right corner, and check the **Contains EUII** box. Select **Update** to save your changes.
 
-   ![Save your changes](../media/UpdateSignal.png)
+   ![Save your changes](../media/UpdateEvent.png)
 
    > [!NOTE]
-   > Every time the signal schema changes or a new signal is created, it's recommended that you evaluate the associated signal properties and tag or untag them as containing PII data, if necessary.
+   > Every time the signal schema changes or a new signal is created, it's recommended that you evaluate the associated signal properties and tag or untag them as containing EUII data, if necessary.
 
 ### Delete or export tagged signal data
 
@@ -59,9 +59,9 @@ For private preview, email delete requests to **[pirequest@microsoft.com](mailto
 
 #### Good Practices
 
-* Try to avoid sending any signals that contain PII data.
-* If you do need to send signals containing PII data, make sure to limit the number of signals and signal properties containing PII data as much as possible. Ideally, limit yourself to one such signal.
-* Make sure that as few people as possible have access to the sent PII data.
-* For signals containing PII data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example: a user ID). This makes it much easier to segregate data, and to export or delete the right data.
-* Only tag one property per signal as containing PII data, ideally one that only contains a unique identifier
+* Try to avoid sending any signals that contain EUII data.
+* If you do need to send signals containing EUII data, make sure to limit the number of signals and signal properties containing EUII data as much as possible. Ideally, limit yourself to one such signal.
+* Make sure that as few people as possible have access to the sent EUII data.
+* For signals containing EUII data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example: a user ID). This makes it much easier to segregate data, and to export or delete the right data.
+* Only tag one property per signal as containing EUII data, ideally one that only contains a unique identifier
 * Do not tag properties containing verbose values (for example: an entire request body). Product Insights uses exact string matching when deciding which signals to delete or export.
