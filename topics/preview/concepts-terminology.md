@@ -39,6 +39,6 @@ A grouping of data and reports in Product Insights. New projects include preconf
 
 A collection of data visualizations. Product Insights includes several predefined reports for web projects.
 
-## Signal
+## Event
 
 Data sent to Product Insights from an outside source, such as a website, mobile app, or IoT device. Signals provide a continuous flow of data to get real-time insights how customers use and experience your product.
