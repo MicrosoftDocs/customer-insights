@@ -3,7 +3,7 @@ title: Onboarding to the private preview
 author: ruthaisabokhae
 description: Learn what you need to do to take advantage of the private preview capabilities of Dynamics 365 Product Insights
 ms.author: ruthai
-ms.date: 07/31/2020
+ms.date: 08/11/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
@@ -19,7 +19,7 @@ This onboarding article gives organizations participating in private preview vis
 
 *	Review and agree to the [NDA and preview agreement](../preview/preview-terms-of-service.md) with Microsoft.  
 *	Review [capabilities outlined in this article](#private-preview-capabilities) for private preview.  
-*	Review and understand the [expectations](#private-preview-expectations) and [known issues](#known-issues) of the private preview.  
+*	Review and understand the [expectations](#private-preview-expectations) and [known issues](known-issues.md) of the private preview.  
 *	Validate the [core scenarios](#product-use-cases-to-test) and provide feedback to Microsoft.
 
 ## Private preview expectations
@@ -66,7 +66,7 @@ The capability to create a derived signal from the web analytics data, filter it
 *	Before you start, ensure you have read and agree to the [Preview terms of service](../preview/preview-terms-of-service.md) provided.
 *	Sign in to the [Dynamics 365 Product Insights portal](https://pi.dynamics.com) using your Microsoft Azure Active Directory user accounts.
 *	Follow the steps in the [quickstart](quickstart-product-insights.md) article to set up your environment and project.
-*	Review the [known issues](#known-issues).
+*	Review the [known issues](known-issues.md).
 
 ### First run experience
 
@@ -80,9 +80,4 @@ The capability to create a derived signal from the web analytics data, filter it
   *	Create a derived signal for export activities data.
   *	Export the data into your ADLS Gen 2 storage.
   *	Optional: Ingest Product Insights data export as activities in Customer Insights and view it as part of a customer profile.
-
-## Known issues
-
-We'll add a list of known issues in the coming days.
-
-<!-- As we continue to work on the product and refine the experience, we are aware of a few outstanding issues, so bear these in mind as you experience the product. -->
+  
