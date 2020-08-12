@@ -56,9 +56,9 @@ window["Contoso"].trackSignal({
 
 5. Add the copied code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
 
-## Setting user details for your signal
+## Setting user details for your event
 
-The Product Insights SDK lets you define user information that can be sent with every signal. You can specify the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration. You can also specify user information by calling the `setUser(user: IUser)` API on the SDK.
+The Product Insights SDK lets you define user information that can be sent with every event. You can specify the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration. You can also specify user information by calling the `setUser(user: IUser)` API on the SDK.
 
 Specifying user details in the code snippet means that all telemetry will have this information. However, if specified by the `setUser API`, telemetry sent before the `setUser API` won't contain this information.
 

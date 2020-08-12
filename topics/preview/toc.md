@@ -17,7 +17,7 @@
 
 # GDPR requests and compliance
 ## [Manage cookies and user consent](user-consent-storage.md)
-## [Delete and export user data](delete-export-signal-data.md)
+## [Delete and export user data](delete-export-event-data.md)
 
 # [Preview terms of service](preview-terms-of-service.md)
 

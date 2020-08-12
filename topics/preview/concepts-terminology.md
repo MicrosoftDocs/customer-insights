@@ -15,13 +15,13 @@ robots: noindex,nofollow
 
 This list defines selected terms that appear frequently in Product Insights and in its supporting documentation.
 
-## Derived signal
+## Derived event
 
-A derived signal is a virtual view of a base signal. Derived signals are used for scoping down a base signal for export, or for cleaning up a signal containing properties that aren't necessary for exposure or export.
+A derived event is a virtual view of a base event. Derived signals are used for scoping down a base event for export, or for cleaning up a event containing properties that aren't necessary for exposure or export.
 
 ## Event
 
-A single occurrence of data sent to Product Insights. If you think of a **signal** as a flowing stream of data, an event is that stream at a specific moment.
+A single occurrence of data sent to Product Insights. If you think of a **event** as a flowing stream of data, an event is that stream at a specific moment.
 
 ## Member
 
