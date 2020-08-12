@@ -1,7 +1,7 @@
 ---
 title: Delete and export signal data 
 author: ruthaisabokhae
-description: How to delete and export signal data containing end user identifiable information (PII)
+description: How to delete and export signal data containing end user identifiable information (EUII)
 ms.author: ruthai
 ms.date: 08/11/2020
 ms.service: product-insights
