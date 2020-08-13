@@ -55,7 +55,7 @@ The JavaScript library for your website to measure user interaction with the pro
 
 The out-of-the-box reports show the events coming through from the Web SDK with predefined visualizations and dashboards.
 
-### Derived signals
+### Derived events
 
 The capability to create a derived event from the web analytics data, filter it and export it to your Azure Data Lake Storage. The exported data in ADLS can get imported into Customer Insights as a data source.
 

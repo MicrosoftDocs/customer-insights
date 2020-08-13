@@ -44,5 +44,5 @@ Product Insights has only the role of **Owner** currently available, with the fo
 
 - Create projects
 - Configure projects (members, delete)
-- Configure signals and derived signals
+- Configure events and derived events
 - View project resources (reports)

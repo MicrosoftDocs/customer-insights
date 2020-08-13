@@ -17,7 +17,7 @@ This list defines selected terms that appear frequently in Product Insights and 
 
 ## Derived event
 
-A derived event is a virtual view of a base event. Derived signals are used for scoping down a base event for export, or for cleaning up a event containing properties that aren't necessary for exposure or export.
+A derived event is a virtual view of a base event. Derived events are used for scoping down a base event for export, or for cleaning up a event containing properties that aren't necessary for exposure or export.
 
 ## Event
 
@@ -41,4 +41,4 @@ A collection of data visualizations. Product Insights includes several predefine
 
 ## Event
 
-Data sent to Product Insights from an outside source, such as a website, mobile app, or IoT device. Signals provide a continuous flow of data to get real-time insights how customers use and experience your product.
+Data sent to Product Insights from an outside source, such as a website, mobile app, or IoT device. Events provide a continuous flow of data to get real-time insights how customers use and experience your product.

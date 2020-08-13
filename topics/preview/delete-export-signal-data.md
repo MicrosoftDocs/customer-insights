@@ -59,9 +59,9 @@ For private preview, email delete requests to **[pirequest@microsoft.com](mailto
 
 #### Good Practices
 
-* Try to avoid sending any signals that contain EUII data.
-* If you do need to send signals containing EUII data, make sure to limit the number of signals and event properties containing EUII data as much as possible. Ideally, limit yourself to one such event.
+* Try to avoid sending any events that contain EUII data.
+* If you do need to send events containing EUII data, make sure to limit the number of events and event properties containing EUII data as much as possible. Ideally, limit yourself to one such event.
 * Make sure that as few people as possible have access to the sent EUII data.
-* For signals containing EUII data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example: a user ID). This makes it much easier to segregate data, and to export or delete the right data.
+* For events containing EUII data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example: a user ID). This makes it much easier to segregate data, and to export or delete the right data.
 * Only tag one property per event as containing EUII data, ideally one that only contains a unique identifier
-* Do not tag properties containing verbose values (for example: an entire request body). Product Insights uses exact string matching when deciding which signals to delete or export.
+* Do not tag properties containing verbose values (for example: an entire request body). Product Insights uses exact string matching when deciding which events to delete or export.
