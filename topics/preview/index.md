@@ -26,7 +26,7 @@ Welcome to the Dynamics 365 Product Insights private preview documentation.
 
 [View reports](reports.md)
 
-[Create and export refined events](derived-events.md)
+[Create and export refined events](derived-signals.md)
 
 
 ## Developer resources
@@ -39,7 +39,7 @@ Welcome to the Dynamics 365 Product Insights private preview documentation.
 
 [Manage cookies and user consent](user-consent-storage.md)
 
-[Delete and export user data](delete-export-event-data.md)
+[Delete and export user data](delete-export-signal-data.md)
 
 ## Terms of service
 [Terms of service for preview](preview-terms-of-service.md)
