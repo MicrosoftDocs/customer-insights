@@ -9,7 +9,7 @@
 # How-tos
 ## [Create a project](create-project.md)
 ## [View reports](reports.md)
-## [Create and export refined events](derived-events.md)
+## [Create and export refined events](derived-signals.md)
 
 # Developer resources
 ## [Web SDK tutorial](get-started-websdk.md)
@@ -17,7 +17,7 @@
 
 # GDPR requests and compliance
 ## [Manage cookies and user consent](user-consent-storage.md)
-## [Delete and export user data](delete-export-event-data.md)
+## [Delete and export user data](delete-export-signal-data.md)
 
 # [Preview terms of service](preview-terms-of-service.md)
 
