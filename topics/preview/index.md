@@ -26,7 +26,7 @@ Welcome to the Dynamics 365 Product Insights private preview documentation.
 
 [View reports](reports.md)
 
-[Create and export derived events](derived-events.md)
+[Create and export refined events](derived-events.md)
 
 
 ## Developer resources

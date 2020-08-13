@@ -98,7 +98,7 @@ You represent, and agree to ensure, that you have the necessary rights to any Cu
 
 Unless expressly noted, Customer will own any enrichments to the Customer Data. Unless the Services or documentation for the Services expressly prohibits doing so, Customer may export enriched data from the Services. Customer is solely responsible for ensuring that any system receiving such data complies with Customer’s legal obligations relating to that data.
 
-Microsoft will solely own any enhancements or improvements to the Preview arising from your access to and use of Customer Data and the Services. Microsoft may also use information derived from Customer Data if such use does not include Customer Data and no Customer Data can be reverse engineered from such use.
+Microsoft will solely own any enhancements or improvements to the Preview arising from your access to and use of Customer Data and the Services. Microsoft may also use information refined from Customer Data if such use does not include Customer Data and no Customer Data can be reverse engineered from such use.
 
 ### 4.4.  Confidentiality.  
 

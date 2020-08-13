@@ -15,9 +15,9 @@ robots: noindex,nofollow
 
 This list defines selected terms that appear frequently in Product Insights and in its supporting documentation.
 
-## Derived event
+## Refined event
 
-A derived event is a virtual view of a base event. Derived events are used for scoping down a base event for export, or for cleaning up a event containing properties that aren't necessary for exposure or export.
+A refined event is a virtual view of a base event. Refined events are used for scoping down a base event for export, or for cleaning up a event containing properties that aren't necessary for exposure or export.
 
 ## Event
 

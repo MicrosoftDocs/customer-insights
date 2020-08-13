@@ -9,7 +9,7 @@
 # How-tos
 ## [Create a project](create-project.md)
 ## [View reports](reports.md)
-## [Create and export derived events](derived-events.md)
+## [Create and export refined events](derived-events.md)
 
 # Developer resources
 ## [Web SDK tutorial](get-started-websdk.md)
