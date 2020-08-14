@@ -23,7 +23,7 @@ The [General Data Protection Regulation (GDPR)](https://docs.microsoft.com/dynam
 
 To allow the Product Insights SDK to store cookies or other sensitive information, you must specify whether your users have consented. This occurs on initialization of the SDK.
 
-If you indicate that there is no user consent, the SDK will not store any data, and will not send signals that can be used to track user behavior. Any previously stored data will be deleted from the browser.
+If you indicate that there is no user consent, the SDK will not store any data, and will not send events that can be used to track user behavior. Any previously stored data will be deleted from the browser.
 
 If no user consent value is specified, the SDK will assume that the user has consented. What this means is that if you (as our customer) don't specify a value for user consent in the SDK, data will be collected. However, if you specify that the value for user consent needs to be “true,” data won't be collected if a user declines or fails to provide explicit consent.
 

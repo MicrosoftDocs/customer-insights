@@ -55,9 +55,9 @@ The JavaScript library for your website to measure user interaction with the pro
 
 The out-of-the-box reports show the events coming through from the Web SDK with predefined visualizations and dashboards.
 
-### Derived signals
+### Refined events
 
-The capability to create a derived signal from the web analytics data, filter it and export it to your Azure Data Lake Storage. The exported data in ADLS can get imported into Customer Insights as a data source.
+The capability to create a refined event from the web analytics data, filter it and export it to your Azure Data Lake Storage. The exported data in ADLS can get imported into Customer Insights as a data source.
 
 ## Product use cases to test
 
@@ -77,7 +77,7 @@ The capability to create a derived signal from the web analytics data, filter it
 ### Export data from Product Insights
 
   *	Custom website instrumentation: ensure to send an *authid* for each user signing in to your site.
-  *	Create a derived signal for export activities data.
+  *	Create a refined event for export activities data.
   *	Export the data into your ADLS Gen 2 storage.
   *	Optional: Ingest Product Insights data export as activities in Customer Insights and view it as part of a customer profile.
   

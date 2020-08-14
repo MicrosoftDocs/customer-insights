@@ -15,13 +15,13 @@ robots: noindex,nofollow
 
 This list defines selected terms that appear frequently in Product Insights and in its supporting documentation.
 
-## Derived signal
+## Refined event
 
-A derived signal is a virtual view of a base signal. Derived signals are used for scoping down a base signal for export, or for cleaning up a signal containing properties that aren't necessary for exposure or export.
+A refined event is a virtual view of a base event. Refined events are used for scoping down a base event for export, or for cleaning up a event containing properties that aren't necessary for exposure or export.
 
 ## Event
 
-A single occurrence of data sent to Product Insights. If you think of a **signal** as a flowing stream of data, an event is that stream at a specific moment.
+A single occurrence of data sent to Product Insights. If you think of a **event** as a flowing stream of data, an event is that stream at a specific moment.
 
 ## Member
 
@@ -39,6 +39,6 @@ A grouping of data and reports in Product Insights. New projects include preconf
 
 A collection of data visualizations. Product Insights includes several predefined reports for web projects.
 
-## Signal
+## Event
 
-Data sent to Product Insights from an outside source, such as a website, mobile app, or IoT device. Signals provide a continuous flow of data to get real-time insights how customers use and experience your product.
+Data sent to Product Insights from an outside source, such as a website, mobile app, or IoT device. Events provide a continuous flow of data to get real-time insights how customers use and experience your product.

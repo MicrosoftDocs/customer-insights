@@ -13,18 +13,18 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial guides you through the process of instrumenting your website with a Product Insights SDK. You'll start seeing signals in your portal in five minutes or sooner.
+This tutorial guides you through the process of instrumenting your website with a Product Insights SDK. You'll start seeing events in your portal in five minutes or sooner.
 
 ## Configuration options
 
 The following configuration options can be passed to the SDK:
 
-- **ingestionKey**: The ingestion key used to send signals to your project.
+- **ingestionKey**: The ingestion key used to send events to your project.
 -	**autoCapture**: Specifies the auto capture instructions for the SDK to collect page views and clicks. It has two options:
     - **view**: Set to true if you want the SDK to capture page views automatically. Single page applications need to instrument views manually, and must instrument the trackView() API whenever they route to a new page.
     - **click**: Set to true if you want the SDK to capture page clicks automatically.
 -	**userConsent**: Specifies whether the user has consented to let the SDK add data to browser storage (local storage or cookies). Product Insights uses this data to track user behavior. By default, it's assumed to be true.
--	**endpointUrl**: Used to specify the destination URL for your signals. Only override this option if you need to send data to a specific endpoint.
+-	**endpointUrl**: Used to specify the destination URL for your events. Only override this option if you need to send data to a specific endpoint.
 
 ## Prerequisites
 
@@ -56,9 +56,9 @@ window["Contoso"].trackSignal({
 
 5. Add the copied code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
 
-## Setting user details for your signal
+## Setting user details for your event
 
-The Product Insights SDK lets you define user information that can be sent with every signal. You can specify the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration. You can also specify user information by calling the `setUser(user: IUser)` API on the SDK.
+The Product Insights SDK lets you define user information that can be sent with every event. You can specify the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration. You can also specify user information by calling the `setUser(user: IUser)` API on the SDK.
 
 Specifying user details in the code snippet means that all telemetry will have this information. However, if specified by the `setUser API`, telemetry sent before the `setUser API` won't contain this information.
 

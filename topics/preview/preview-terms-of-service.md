@@ -41,7 +41,7 @@ Microsoft may substantially change, rebrand, or suspend the Services at any time
 
 ### 2.3. Pre-release Limitations
 
-Because of their pre-release status, the Services may employ lesser or different privacy, security, and compliance measures than those typically present in a Microsoft enterprise online service.  You may not use the Services to process other data that is subject to heightened compliance requirements, including without limitation protected health information in the United States. Except as required by applicables laws, Microsoft has no obligation to retain, store, export, or return any Customer Data to the Services.
+Because of their pre-release status, the Services may employ lesser or different privacy, security, and compliance measures than those typically present in a Microsoft enterprise online service.  You may not use the Services to process other data that is subject to heightened compliance requirements, including without limitation protected health information in the United States. Except as required by applicable laws, Microsoft has no obligation to retain, store, export, or return any Customer Data to the Services.
 
 ### 2.4. Access and Use Rights
 
@@ -98,13 +98,13 @@ You represent, and agree to ensure, that you have the necessary rights to any Cu
 
 Unless expressly noted, Customer will own any enrichments to the Customer Data. Unless the Services or documentation for the Services expressly prohibits doing so, Customer may export enriched data from the Services. Customer is solely responsible for ensuring that any system receiving such data complies with Customer’s legal obligations relating to that data.
 
-Microsoft will solely own any enhancements or improvements to the Preview arising from your access to and use of Customer Data and the Services. Microsoft may also use information derived from Customer Data if such use does not include Customer Data and no Customer Data can be reverse engineered from such use.
+Microsoft will solely own any enhancements or improvements to the Preview arising from your access to and use of Customer Data and the Services. Microsoft may also use information refined from Customer Data if such use does not include Customer Data and no Customer Data can be reverse engineered from such use.
 
 ### 4.4.  Confidentiality.  
 
 “Confidential Information” means non-public information, know-how, or trade secrets in any form that are designated confidential or that a reasonable person knows or reasonably should know to be confidential. Confidential Information does not include any information, however designated, that: (i) is or becomes publicly available without a breach of this Agreement; (ii) was lawfully known to the receiver of the information without an obligation to keep it confidential; (iii) is received from another source who can disclose it lawfully and without an obligation to keep it confidential; (iv) is independently developed; or (v) is Feedback. 
 
-The Services, including their user interface, features, documentation and output, are confidential and proprietary to Microsoft and its suppliers. This and all other information shared under this Agreement is Cconfidential Information subject to the nondisclosure agreement between you and Microsoft (“NDA”). In the event there is no existing NDA, or if such existing NDA is terminated or otherwise ceases to be in effect, then the remainder of this section applies. For 5 years after the date of disclosure, neither party will disclose the other’s Confidential Information to third parties.  
+The Services, including their user interface, features, documentation and output, are confidential and proprietary to Microsoft and its suppliers. This and all other information shared under this Agreement is Confidential Information subject to the nondisclosure agreement between you and Microsoft (“NDA”). In the event there is no existing NDA, or if such existing NDA is terminated or otherwise ceases to be in effect, then the remainder of this section applies. For 5 years after the date of disclosure, neither party will disclose the other’s Confidential Information to third parties.  
 
 Each party may disclose Confidential Information only to its affiliates, employees and consultants who need to know the information. Each party must have written agreements with them that protect the confidential information at least as much as this Agreement. Each party may disclose confidential information in response to a judicial or governmental order. Each party must first give written notice to the other to allow it to seek a protective order or otherwise protect the information.
 
