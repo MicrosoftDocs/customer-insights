@@ -13,7 +13,7 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-This onboarding article describes Dynamics 365 Product Insights' private preview product features, documentation, scenarios to validate, and known issues, and explains how to engage with Microsoft throughout the private preview. Nothing in this documentation is meant to&mdash; or should be construed to&mdash; modify the terms of your agreements with Microsoft, including your preview terms.
+This onboarding article describes Dynamics 365 Product Insights private preview product features, documentation, scenarios to validate, and known issues, and explains how to engage with Microsoft throughout the private preview. Nothing in this documentation is meant to&mdash; or should be construed to&mdash; modify the terms of your agreements with Microsoft, including your preview terms.
 
 ## Onboarding overview
 
