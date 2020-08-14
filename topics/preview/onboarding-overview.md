@@ -26,9 +26,9 @@ This onboarding article describes Dynamics 365 Product Insights private preview 
 
 *	Private preview is for testing purposes only. Environments might be taken down at the end of the testing period to make way for future releases. See the [Preview terms of service](../preview/preview-terms-of-service.md) for more disclosures and limitations.  
 *	Private preview isn't for production use, but rather is strictly for prototyping and providing feedback. We're likely to delete data and rebuild environments at any point during the private preview, but we'll make reasonable effort to ensure that we communicate any changes to avoid disruption in testing.   
-*	We',ll work closely with you to seek feedback and incorporate product changes. We expect to establish a cadence for this interaction during the period of private preview and we'll communicate that when we do.  
+*	We'll work closely with you to seek feedback and incorporate product changes. We expect to establish a cadence for this interaction during the period of private preview and we'll communicate that when we do.  
 *	Private preview is expected to run for approximately two months (August through September, 2020). We appreciate your active participation, and plan to consider all relevant feedback  in developing future releases.  
-*	Reach out to your assigned product manager first, or use the email **[pirequest@microsoft.com](mailto:pirequest@microsoft.com)**, to provide feedback and report issues. We 'll use reasonable effort to triage reported issues, prioritize them, track them, and share their status with you regularly.  
+*	Reach out to your assigned product manager first, or use the email **[pirequest@microsoft.com](mailto:pirequest@microsoft.com)**, to provide feedback and report issues. We'll use reasonable effort to triage reported issues, prioritize them, track them, and share their status with you regularly.  
 	
 ## Prerequisites
 
