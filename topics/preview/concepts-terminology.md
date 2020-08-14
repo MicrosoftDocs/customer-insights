@@ -3,7 +3,7 @@ title: Concepts and terminology
 author: ruthaisabokhae
 description: Learn basic concepts and terminology for Dynamics 365 Product Insights
 ms.author: ruthai
-ms.date: 08/05/2020
+ms.date: 08/13/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
