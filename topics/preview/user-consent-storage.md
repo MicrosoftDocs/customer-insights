@@ -35,6 +35,10 @@ If no user consent value is specified, the SDK will assume that the user has con
 
 ### Cookies
 
+
+<!-- from editor: Do you want mspi to be in italics like the items under Local storage? It's not currently italic, although it looks that way. -->
+
+
 -	_mspi
     -	Stores the anonymous user ID. This cookie is set in the customer domain and expires in 365 days.
 
