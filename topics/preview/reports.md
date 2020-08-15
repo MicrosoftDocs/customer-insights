@@ -13,7 +13,7 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-Product Insights comes with a set of project-based reports using the data collected through the SDK.
+Dynamics 365 Product Insights comes with a set of project-based reports using the data collected through the SDK.
 
 Select **Reports** > **Visitor profile** or **Reports** > **Key metrics** to access the reports.
 
