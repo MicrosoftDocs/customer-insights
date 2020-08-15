@@ -71,7 +71,7 @@ The capability to create a refined event from the web analytics data, filter it,
 ### First-run experience
 
 1.	 Follow the account creation process. Set up and create your project, and then add members.
-2.	 Instrument website with the SDK to see telemetry arriving into your project.
+2.	 Instrument the website with the SDK to see telemetry arriving into your project.
 3.	 View the real-time report showing active users by device, page view trend, top pages, top referrers, and users’ geographic locations.
 
 
