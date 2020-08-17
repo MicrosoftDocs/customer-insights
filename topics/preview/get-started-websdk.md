@@ -33,13 +33,13 @@ The following configuration options can be passed to the SDK:
 
 ## Integrate the Product Insights SDK into your webpage
 
-1. From the Product Insights home screen, select your project from the project dropdown on the left navigation pane. If you don't already have a project, select the **+ New Project** option instead and create one.
+1. From the Product Insights home screen, select your project from the project drop-down list on the left navigation pane. If you don't already have a project, select the **+ New Project** option instead and create one.
 
 2. Go to **Admin** > **Data** > **Code**  and copy the code snippet on this page.
 
    :::image type="content" source="media/get-code.png" alt-text="Code page with callout on code snippet":::
 
-3. In the code snippet, replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**. See the example below:
+3. In the code snippet, replace the string "NAME" with a global variable name in the window object where the SDK is instantiated. For example, if you replace "NAME" with "Contoso", then the SDK can be accessed at **window["Contoso"]** or simply **Contoso**. See the following example:
 
 ```
 window["Contoso"].trackSignal({
@@ -66,6 +66,6 @@ The `IUser` interface contains the following string properties:
 
 - **localId**: The user's local ID.
 - **authId**: The authenticated user ID.
-- **authType**: The authentication type used to the get authenticated user ID.
+- **authType**: The authentication type used to get the authenticated user ID.
 - **name**: The user's name.
 - **email**: The user's email address.

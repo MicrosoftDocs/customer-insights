@@ -18,7 +18,7 @@ robots: noindex,nofollow
 - [Visual Studio Code](https://code.visualstudio.com/)
 - You have the [ingestion key](get-started-websdk.md)
 
-## Run Sample
+## Run sample
 
 1. [Download the Product Insights web SDK sample](https://download.microsoft.com/download/f/e/c/fec76936-6440-414d-b75a-7be644f82892/pi_websdk_sample.zip).
 2. [Install the Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code.

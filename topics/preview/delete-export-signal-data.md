@@ -15,11 +15,11 @@ robots: noindex,nofollow
 
 ## Background
 
-The European Union’s General Data Protection Regulation (GDPR) that has been applied since May 25, 2018, gives significant rights to individuals with regards to their data. The GDPR is fundamentally about protecting and enabling the privacy rights of individuals. You can read more about Microsoft's commitment to security at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
+The European Union’s General Data Protection Regulation (GDPR) that has been applied since May 25, 2018, gives significant rights to individuals with regard to their data. The GDPR is fundamentally about protecting and enabling the privacy rights of individuals. You can read more about Microsoft's commitment to security at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 ## Deleting and exporting event data containing personal identifiable information
 
-The following sections describe how to delete and export event data that may contain end user identifiable information (EUII).
+The following sections describe how to delete and export event data that might contain end user identifiable information (EUII).
 
 ### Overview
 
@@ -32,36 +32,36 @@ There is a two-step process to delete or export data:
 
 ### Tag and update event properties
 
-EUII data is tagged on a event property level. You'll first need to tag the properties being considered for deletion or export.
+EUII data is tagged on an event property level. You'll first need to tag the properties being considered for deletion or export.
 
-To tag a event property as containing personal information, follow these steps.
+To tag an event property as containing personal information, follow these steps:
 
 1. Navigate to the project that the event belongs to.
   
 1. Select the event you want to tag to reach the event's **Overview** page.
 
-   ![Select event](../media/SignalsOverview.png)
+   ![Select event](../media/SignalsOverview.png "Select event")
      
-1. Select **[...]** and then **Edit** to reach the **Update Property** window.
+1. Select **...** and then select **Edit** to reach the **Update Property** window.
 
-   ![Edit event](../media/EditSignal.png)
+   ![Edit event](../media/EditSignal.png "Edit event")
 
-1. In the **Update Property** window, select **[...]** in the upper right corner, and check the **Contains EUII** box. Select **Update** to save your changes.
+1. In the **Update Property** window, select **...** in the upper right corner, and then select the **Contains EUII** box. Select **Update** to save your changes.
 
-   ![Save your changes](../media/UpdateEvent.png)
+   ![Save your changes](../media/UpdateEvent.png "Save your changes")
 
    > [!NOTE]
    > Every time the event schema changes or a new event is created, it's recommended that you evaluate the associated event properties and tag or untag them as containing EUII data, if necessary.
 
 ### Delete or export tagged event data
 
-For private preview, email delete requests to **[pirequest@microsoft.com](mailto:pirequest@microsoft.com)**. We are currently working on the functionality that will enable you delete tagged event data on your own. Stay tuned!
+For private preview, you can email delete requests to **[pirequest@microsoft.com](mailto:pirequest@microsoft.com)**. We are currently working on the functionality that will enable you to delete tagged event data on your own. Stay tuned!
 
-#### Good Practices
+#### Good practices
 
 * Try to avoid sending any events that contain EUII data.
 * If you do need to send events containing EUII data, make sure to limit the number of events and event properties containing EUII data as much as possible. Ideally, limit yourself to one such event.
 * Make sure that as few people as possible have access to the sent EUII data.
 * For events containing EUII data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example: a user ID). This makes it much easier to segregate data, and to export or delete the right data.
-* Only tag one property per event as containing EUII data, ideally one that only contains a unique identifier
+* Only tag one property per event as containing EUII data, ideally one that only contains a unique identifier.
 * Do not tag properties containing verbose values (for example: an entire request body). Product Insights uses exact string matching when deciding which events to delete or export.
