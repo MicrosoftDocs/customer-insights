@@ -13,11 +13,11 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-This list defines selected terms that appear frequently in Product Insights and in its supporting documentation.
+This list defines selected terms that appear frequently in Dynamics 365 Product Insights and in its supporting documentation.
 
 ## Events
 
-Data sent to Product Insights from an outside source, such as a website, mobile app, or IoT device. Events provide a continuous flow of data to get real-time insights how customers use and experience your product. An event is a single occurrence of data sent to Product Insights. If you think of an **event** as a flowing stream of data, an event is that stream at a specific moment.
+Data sent to Product Insights from an outside source, such as a website, mobile app, or IoT device. Events provide a continuous flow of data to get real-time insights into how customers use and experience your product. An event is a single occurrence of data sent to Product Insights. If you think of an **event** as a flowing stream of data, an event is that stream at a specific moment.
 
 ## Member
 
@@ -33,7 +33,7 @@ A grouping of data and reports in Product Insights. New projects include preconf
 
 ## Refined event
 
-A refined event is a virtual view of a base event. Refined events are used for scoping down a base event for export, or for cleaning up a event containing properties that aren't necessary for exposure or export.
+A refined event is a virtual view of a base event. Refined events are used for scoping down a base event for export, or for cleaning up an event containing properties that aren't necessary for exposure or export.
 
 ## Report
 
