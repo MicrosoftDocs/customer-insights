@@ -23,7 +23,7 @@ Cookies are small files that store bits of information about a user’s interact
 <!-- from editor: Wonder if we should say "residents" instead of "citizens," because you could live in the EU and not be a citizen. Probably a legal question. -->
 
 
-The [General Data Protection Regulation (GDPR)](https://docs.microsoft.com/dynamics365/get-started/gdpr/) is a European Union (EU) regulation that mandates how organizations should handle their users’ privacy and security. Cookies often store or collect “personal data,” such as an online identifier, which are covered by the GDPR. If your business employs and/or sells to EU citizens, the GDPR affects you. [Learn more about how Microsoft can help you comply with the GDPR](https://www.microsoft.com/trust-center/privacy/gdpr-faqs).
+The [General Data Protection Regulation (GDPR)](https://docs.microsoft.com/dynamics365/get-started/gdpr/) is a European Union (EU) regulation that mandates how organizations should handle their users’ privacy and security. Cookies often store or collect “personal data,” such as an online identifier, which are covered by the GDPR. If your business employs and/or sells to EU data subjects, the GDPR affects you. [Learn more about how Microsoft can help you comply with the GDPR](https://www.microsoft.com/trust-center/privacy/gdpr-faqs).
 
 To allow the Product Insights SDK to store cookies or other sensitive information, you must specify whether your users have consented. This occurs on initialization of the SDK.
 
