@@ -3,7 +3,7 @@ title: Manage cookies and user consent
 author: ruthaisabokhae
 description: Understand how cookies and user consent are used in Dynamics 365 Product Insights
 ms.author: ruthai
-ms.date: 08/10/2020
+ms.date: 08/20/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
@@ -15,7 +15,7 @@ robots: noindex,nofollow
 
 Dynamics 365 Product Insights uses cookies and local storage (`localStorage`) to identify website visitors.
 
-Cookies are small files that store bits of information about a user’s interactions with the website. They are stored in web browsers. When users visit a website for which you users have stored cookies, the browser sends that information to the server, which returns information that is unique to the user. This is the technology that allows, for example, an online shopping cart to keep selected items in it even if a user navigates away from the website.
+Cookies are small files that store bits of information about a user’s interactions with the website. They are stored in web browsers. When users visit a website for which your users have stored cookies, the browser sends that information to the server, which returns information that is unique to the user. This is the technology that allows, for example, an online shopping cart to keep selected items in it even if a user navigates away from the website.
 
 ## User consent
 
