@@ -1,6 +1,20 @@
 {
   "docsets_to_publish": [
     {
+      "docset_name": "customer-insights",
+      "build_source_folder": "ci-docs",
+      "build_output_subfolder": "customer-insights",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "product360",
       "build_source_folder": "topics",
       "build_output_subfolder": "product360",
@@ -46,7 +60,7 @@
       "Publish",
       "Pdf"
     ],
-    "PrivatePreview":[
+    "PrivatePreview": [
       "Publish",
       "Pdf"
     ]
