@@ -1,1 +1,1 @@
-# Welcome to customer-insights!
+# Welcome to Customer Insights!
