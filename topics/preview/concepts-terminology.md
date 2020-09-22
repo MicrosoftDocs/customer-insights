@@ -1,7 +1,7 @@
 ---
 title: Concepts and terminology
 author: ruthaisabokhae
-description: Learn basic concepts and terminology for Dynamics 365 Engagement Insights
+description: Learn basic concepts and terminology for Dynamics 365 Customer Insights engagement insights
 ms.author: ruthai
 ms.date: 9/22/2020
 ms.service: product-insights
@@ -21,7 +21,7 @@ Data sent to the engagement insights capability from an outside source, such as 
 
 ## Member
 
-A member of a project is a user in engagement insights capability who can access a project. Members can have roles. Currently, “Owner” is the only role available in engagement insights capability. It allows the user to manage the project and its data, and to view reports.
+A member of a project is a user in the engagement insights capability who can access a project. Members can have roles. Currently, “Owner” is the only role available in engagement insights capability. It allows the user to manage the project and its data, and to view reports.
 
 ## Metric
 
