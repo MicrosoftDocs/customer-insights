@@ -25,7 +25,7 @@ A member of a project is a user in the engagement insights capability who can ac
 
 ## Metric
 
-A quantifiable measurement of data, used to track or assess a process. Page views and average time spent on site are examples of relevant metrics in engagement insights capability.
+A quantifiable measurement of data, used to track or assess a process. Page views and average time spent on site are examples of relevant metrics.
 
 ## Project
 
