@@ -1,10 +1,10 @@
 ---
 title: Create a project
 author: ruthaisabokhae
-description: How to create a project in Dynamics 365 Product Insights
+description: How to create a project in Dynamics 365 Customer Insights engagement insights
 ms.author: ruthai
 ms.date: 07/31/2020
-ms.service: product-insights
+ms.service: engagement-insights
 ms.topic: conceptual
 robots: noindex,nofollow
 ---
@@ -39,8 +39,7 @@ To add members to your project, follow these steps:
 3. When you are done adding users, select **Add** to confirm.
 
 ### Member permissions
-
-Product Insights has only the role of **Owner** currently available, with the following permissions enabled:
+Dynamics 365 Customer Insights engagement insights has only the role of **Owner** currently available, with the following permissions enabled:
 
 - Create projects
 - Configure projects (members, delete)
