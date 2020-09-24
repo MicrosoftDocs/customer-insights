@@ -15,7 +15,7 @@ robots: noindex,nofollow
 
 As we continue to work on Dynamics 365 Customer Insights engagement insights capability private preview and refine the experience, we have become aware of some outstanding issues for you to keep in mind. These issues are summarized in the following table.
 
-|  | Issue and impact | Workaround | 
+| No. | Issue and impact | Workaround | 
 |------------------|------------------------|------------------------|
 | 1 | Engagement insights capability is working to change a schema of events by the end of August 2020. | After the new schema is rolled out, you'll need to create a new project, get new code (copied from the snippet), and update it on your site. |
 | 2 | The first project you create after you sign in might take up to two minutes to create and it might fail. | Retry a few times. If it takes longer, please contact us at [pirequest@microsoft.com](mailto:pirequest@microsoft.com). |
