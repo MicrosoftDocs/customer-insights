@@ -1,7 +1,7 @@
 ---
-title: Get started with the web SDK for Dynamics 365 Product Insights
+title: Get started with the web SDK for Dynamics 365 Customer Insights engagement insights capability
 author: ruthaisabokhae
-description: Learn how to use the Product Insights SDK to instrument your website.
+description: Learn how to use the engagement insights capability SDK to instrument your website.
 ms.author: ruthai
 ms.date: 08/05/2020
 ms.service: product-insights
@@ -13,7 +13,7 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial guides you through the process of instrumenting your website with a Product Insights SDK. You'll start seeing events in your portal in five minutes or sooner.
+This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insight engagement insights capability SDK. You start seeing events in your portal in five minutes or sooner.
 
 ## Configuration options
 
@@ -31,9 +31,9 @@ The following configuration options can be passed to the SDK:
 * The SDK requires the project or webpage to be hosted to send telemetry. Telemetry sent from a local file will not be accepted by the server.
 * You have an ingestion key (already embedded in your code snippet).
 
-## Integrate the Product Insights SDK into your webpage
+## Integrate the engagement insights capability SDK into your webpage
 
-1. From the Product Insights home screen, select your project from the project drop-down list on the left navigation pane. If you don't already have a project, select the **+ New Project** option instead and create one.
+1. From the engagement insights capability home screen, select your project from the project drop-down list on the left navigation pane. If you don't already have a project, select the **+ New Project** option instead and create one.
 
 2. Go to **Admin** > **Data** > **Code**  and copy the code snippet on this page.
 
@@ -58,7 +58,7 @@ window["Contoso"].trackEvent({
 
 ## Setting user details for your event
 
-The Product Insights SDK lets you define user information that can be sent with every event. You can specify the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration. You can also specify user information by calling the `setUser(user: IUser)` API on the SDK.
+The engagement insights capability SDK lets you define user information that can be sent with every event. You can specify the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration. You can also specify user information by calling the `setUser(user: IUser)` API on the SDK.
 
 Specifying user details in the code snippet means that all telemetry will have this information. However, if specified by the `setUser API`, telemetry sent before the `setUser API` won't contain this information.
 
