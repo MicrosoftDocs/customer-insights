@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "topics/index.yml",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "topics/ADLS-Export.md",
       "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
       "redirect_document_id": "false"
