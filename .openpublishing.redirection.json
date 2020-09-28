@@ -1,5 +1,6 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
       "source_path": "topics/ADLS-Export.md",
       "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
       "redirect_document_id": "false"
@@ -221,11 +222,6 @@
     },
     {
       "source_path": "topics/terms-of-service.md",
-      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "topics/toc.md",
       "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
       "redirect_document_id": "false"
     },
