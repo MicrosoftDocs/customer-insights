@@ -1,7 +1,7 @@
 ---
-title: Microsoft Dynamics 365 Product Insights preview terms of service
+title: Microsoft Dynamics 365 Customer Insights engagement insights capability preview terms of service
 author: ruthaisabokhae
-description: Understand the terms of service for the preview of Dynamics 365 Product Insights 
+description: Understand the terms of service for the preview of Dynamics 365 Customer Insights engagement insights capability 
 ms.author: ruthai
 ms.date: 08/10/2020
 ms.service: product-insights
@@ -9,7 +9,7 @@ ms.topic: conceptual
 robots: noindex,nofollow
 ---
 
-# MICROSOFT DYNAMICS 365 PRODUCT INSIGHTS PREVIEW TERMS OF SERVICE
+# MICROSOFT DYNAMICS 365 CUSTOMER INSIGHTS ENGAGEMENT INSIGHTS CAPABILITY PREVIEW TERMS OF SERVICE
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -17,7 +17,7 @@ robots: noindex,nofollow
 
 LAST UPDATED AUGUST 2020
 
-By accessing or using the Dynamics 365 Product Insights services preview (together with any Microsoft provided data sources, the "Services"), you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.
+By accessing or using the Dynamics 365 Customer Insights engagement insights capability services preview (together with any Microsoft provided data sources, the "Services"), you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.
 
 ## 1. WHAT THIS AGREEMENT COVERS
 
