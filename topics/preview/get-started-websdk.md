@@ -69,3 +69,25 @@ The `IUser` interface contains the following string properties:
 - **authType**: The authentication type used to get the authenticated user ID.
 - **name**: The user's name.
 - **email**: The user's email address.
+[10:51 AM] Ruth Aisabokhae
+    
+The following examle shows a code snippet sending user information:
+
+```
+window, document 
+{
+    src:"https://download.pi.dynamics.com/sdk/web/mspi-0.min.js", 
+    name:"myproject", 
+    user:{authId:getLoggedInUserId()*, email:getLoggedInUserEmail()*, authType:”4”,
+      “name: John Doe”}, 
+        cfg:{ 
+        ingestionKey:"ebbcgadfsdfsdf6c74cdba81a0fdcd3196c8-4100c7asdab-5sd70-4e6c-
+        8bdb-86f5asdf152a46f-7589", 
+         autoCapture:{ 
+       view:true, 
+      click:true 
+    }
+[…]
+```
+
+
