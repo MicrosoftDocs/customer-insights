@@ -71,7 +71,7 @@ The `IUser` interface contains the following string properties:
 - **email**: The user's email address.
 [10:51 AM] Ruth Aisabokhae
     
-The following examle shows a code snippet sending user information:
+The following example shows a code snippet sending user information:
 
 ```
 window, document 
