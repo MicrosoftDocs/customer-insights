@@ -69,7 +69,6 @@ The `IUser` interface contains the following string properties:
 - **authType**: The authentication type used to get the authenticated user ID.
 - **name**: The user's name.
 - **email**: The user's email address.
-[10:51 AM] Ruth Aisabokhae
     
 The following example shows a code snippet sending user information:
 
