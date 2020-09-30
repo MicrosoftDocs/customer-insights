@@ -80,8 +80,7 @@ window, document
     user:{authId:getLoggedInUserId()*, email:getLoggedInUserEmail()*, authType:”4”,
       “name: John Doe”}, 
         cfg:{ 
-        ingestionKey:"ebbcgadfsdfsdf6c74cdba81a0fdcd3196c8-4100c7asdab-5sd70-4e6c-
-        8bdb-86f5asdf152a46f-7589", 
+        ingestionKey:<paste your ingestion key>", 
          autoCapture:{ 
        view:true, 
       click:true 
