@@ -1,7 +1,7 @@
 ---
 title: Private preview documentation 
 author: shellyhaverkamp
-description: Product Insights private preview documentation landing page
+description: Dynamics 365 Customer Insights engagement insights capability private preview documentation landing page
 ms.author: shellyha
 ms.date: 07/31/2020
 ms.service: product-insights
@@ -10,7 +10,7 @@ robots: noindex,nofollow
 ---
 
 # Private preview documentation
-Welcome to the Dynamics 365 Product Insights private preview documentation.
+Welcome to the Dynamics 365 Customer Insights engagement insights capability private preview documentation.
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 

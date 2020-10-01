@@ -1,5 +1,5 @@
 ---
-title: View reports in Product Insights
+title: View reports in Dynamics 365 Customer Insights engagement insights capability
 author: ruthaisabokhae
 description: Use the available reports to monitor activity on your site.
 ms.author: ruthai
@@ -13,7 +13,7 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Product Insights comes with a set of project-based reports using the data collected through the SDK.
+Dynamics 365 Customer Insights engagement insights capability comes with a set of project-based reports using the data collected through the SDK.
 
 Select **Reports** > **Visitor profile** or **Reports** > **Key metrics** to access the reports.
 
