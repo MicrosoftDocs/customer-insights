@@ -39,9 +39,20 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "contributors_to_exclude": [
+        "buck1ey",
+        "bishalgoswami",
+        "kathleenmcgrath",
+        "marycc",
+        "tinaburden",
+        "almostdunh",
+        "AshleyWoodruff"
+      ],
       "breadcrumb_path": "/dynamics365/customer-insights/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "uhfHeaderId": "MSDocsHeader-Dynamics365",
+      "titleSuffix": "Dynamics 365 Customer Insights"
     },
     "fileMetadata": {},
     "template": [],
