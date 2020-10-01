@@ -1,6 +1,267 @@
 {
   "redirections": [
     {
+      "source_path": "topics/index.yml",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/ADLS-Export.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/android-java.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/android-sample.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/api-token.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/collaborate.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/community.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/create-a-team.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/create-dashboard.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/csv-drag-drop.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/delete-export.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/dev-resources.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/dotnet-sample.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/dotnet.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/downloads.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/edit-chart.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/embed.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/enrichment.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/explore-data.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/explore-samples.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/export-powerbi.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/expressions.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/get-insights.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/how-to-get-started.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/import-signals.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/ingest.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/ingestion-schema.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/insights-fix-data-gaps.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/insights-run-comparisons.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/insights-smooth-data.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/ios-obj-sample.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/ios-objc.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/iot-hub.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/js-sample.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/js.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/manage-teams.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/msa-organization-administration.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/product-preview-limitations.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/python-sample.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/python.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/send-additional-signals.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/signal-schema.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/signal-volume.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/support.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/supported-languages.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/terms-of-service.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/tutorials.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/user-content.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/video-curriculum.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/view-signals.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/what-is.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/who-uses.md",
+      "redirect_url": "https://dynamics.microsoft.com/ai/product-insights/",
+      "redirect_document_id": "false"
+    },
+
+    {
       "source_path": "topics/developers/articles/delete-export.md",
       "redirect_url": "/dynamics365/product-insights/delete-export",
       "redirect_document_id": "false"
