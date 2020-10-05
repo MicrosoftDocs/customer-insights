@@ -12,7 +12,7 @@ robots: noindex,nofollow
 # Private preview documentation
 Welcome to the Dynamics 365 Customer Insights engagement insights capability private preview documentation.
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Get started with private preview
 

@@ -11,7 +11,7 @@ robots: noindex,nofollow
 
 # View reports
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Dynamics 365 Customer Insights engagement insights capability comes with a set of project-based reports using the data collected through the SDK.
 

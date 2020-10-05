@@ -11,7 +11,7 @@ robots: noindex,nofollow
 
 # Create and export refined events
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 A refined event is a virtual view of a base event. It is generally used for reducing the scope of a base event for export or for cleaning up an event that contains properties that aren't necessary for exposure or export.
 

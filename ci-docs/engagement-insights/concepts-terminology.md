@@ -11,7 +11,7 @@ robots: noindex,nofollow
 
 # Concepts and common terms
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 This list defines selected terms that appear in Dynamics 365 Customer Insights engagement insights capability and in its supporting documentation.
 

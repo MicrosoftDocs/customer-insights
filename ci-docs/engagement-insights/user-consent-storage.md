@@ -11,7 +11,7 @@ robots: noindex,nofollow
 
 # Manage cookies and user consent
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Dynamics 365 Customer Insights engagment insights capability uses cookies and local storage (`localStorage`) to identify website visitors.
 
