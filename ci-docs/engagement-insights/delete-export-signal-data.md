@@ -40,15 +40,15 @@ To tag an event property as containing personal information, follow these steps:
   
 1. Select the event you want to tag to reach the event's **Overview** page.
 
-   ![Select event](../media/SignalsOverview.png "Select event")
+   ![Select event](media/SignalsOverview.png "Select event")
      
 1. Select **...** and then select **Edit** to reach the **Update Property** window.
 
-   ![Edit event](../media/EditSignal.png "Edit event")
+   ![Edit event](media/EditSignal.png "Edit event")
 
 1. In the **Update Property** window, select **...** in the upper right corner, and then select the **Contains EUII** box. Select **Update** to save your changes.
 
-   ![Save your changes](../media/UpdateEvent.png "Save your changes")
+   ![Save your changes](media/UpdateEvent.png "Save your changes")
 
    > [!NOTE]
    > Every time the event schema changes or a new event is created, it's recommended that you evaluate the associated event properties and tag or untag them as containing EUII data, if necessary.
