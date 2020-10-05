@@ -3,7 +3,7 @@ title: Get started with the web SDK for Dynamics 365 Customer Insights engagemen
 author: ruthaisabokhae
 description: Learn how to use the engagement insights capability SDK to instrument your website.
 ms.author: ruthai
-ms.date: 08/05/2020
+ms.date: 10/05/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
@@ -87,5 +87,9 @@ window, document
     }
 […]
 ```
+## Adding custom properties for each event
 
+The SDK lets you specify custom properties that can be sent with every event. You can specify the custom properties as an object containing property names as keys and property values as values. The object can be added in a property called `props`, similar to `src`, `name`, and `cfg` in the code snippet configuration. 
+
+You can also specify custom properties one by one by calling the `setProperty(name: string, value: string | number | boolean)` API on the SDK.
 
