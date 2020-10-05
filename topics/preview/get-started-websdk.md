@@ -3,7 +3,7 @@ title: Get started with the web SDK for Dynamics 365 Customer Insights engagemen
 author: ruthaisabokhae
 description: Learn how to use the engagement insights capability SDK to instrument your website.
 ms.author: ruthai
-ms.date: 08/05/2020
+ms.date: 10/05/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
