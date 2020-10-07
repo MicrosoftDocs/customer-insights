@@ -6,9 +6,8 @@ ms.author: v-salash
 ms.date: 10/07/2020
 ms.service: product-insights
 ms.topic: how-to
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: NOINDEX
 ---
-
 # Run the web SDK sample for Dynamics 365 Customer Insights engagment insights capability
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
