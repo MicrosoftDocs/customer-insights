@@ -34,7 +34,7 @@
     - name: Get started
       items:
         - name: Create a new project
-          href: /engagement-insights/index.md
+          href: engagement-insights/index.md
         - name: Collect events
           href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
         - name: View reports
