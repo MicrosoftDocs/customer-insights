@@ -30,7 +30,7 @@ landingContent:
 
   - title: Sign up
     linkLists:
-      - linkListType:
+      - linkListType: tutorial
         links: 
           - text: Create an oranization
             url: audience-insights/index.md
@@ -41,7 +41,7 @@ landingContent:
 
   - title: Get in touch
     linkLists:
-      - linkListType:
+      - linkListType: tutorial
         links: 
           - text: Join the Dynamics 365 community
             url: audience-insights/index.md
@@ -52,7 +52,7 @@ landingContent:
 
   - title: Audience insights
     linkLists:
-      - linkListType:
+      - linkListType: tutorial
         links: 
           - text: Help hub
             url: audience-insights/index.md
@@ -65,7 +65,7 @@ landingContent:
 
   - title: Engagement insights
     linkLists:
-      - linkListType:
+      - linkListType: tutorial
         links: 
           - text: Help hub
             url: engagement-insights/index.md
