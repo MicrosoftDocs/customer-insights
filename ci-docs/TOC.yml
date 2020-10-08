@@ -7,13 +7,13 @@
 - name: Audience insights
   items:
     - name: Capability overview
-      href: /audience-insights/index.md
+      href: audience-insights/index.md
     - name: New and updated features
-      href: /audience-insights/index.md
+      href: audience-insights/index.md
     - name: Get started
       items:
         - name: Create a new environment
-          href: /audience-insights/index.md
+          href: audience-insights/index.md
         - name: Create a unified customer profile
           href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
         - name: Work with the app
@@ -21,16 +21,16 @@
     - name: Data sources
       items:
        - name: Data sources overview
-         href: /audience-insights/index.md
+         href: audience-insights/index.md
        - name: Add data sources via Power Query connectors
-         href: /audience-insights/index.md
+         href: audience-insights/index.md
 
 - name: Engagement insights
   items:
     - name: Capability overview
-      href: /engagement-insights/index.md
+      href: engagement-insights/index.md
     - name: New and updated features
-      href: /engagement-insights/index.md
+      href: engagement-insights/index.md
     - name: Get started
       items:
         - name: Create a new project
@@ -42,17 +42,17 @@
     - name: SKDs
       items:
        - name: Web SDK tutorial
-         href: /engagement-insights/index.md
+         href: engagement-insights/index.md
        - name: Web SDK sample
-         href: /engagement-insights/index.md
+         href: engagement-insights/index.md
 
 - name: Known issues
-  href: /audience-insights/index.md
+  href: audience-insights/index.md
 
 - name: Contact support
-  href: /audience-insights/index.md
+  href: audience-insights/index.md
 
 - name: GDPR
-  href: /audience-insights/index.md
+  href: audience-insights/index.md
 
  
