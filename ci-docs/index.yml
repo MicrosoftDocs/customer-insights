@@ -1,3 +1,5 @@
+### YamlMime:Landing
+
 metadata:
   title: Help hub for Dynamics 365 Customer Insights
   author: m-hartmann
@@ -6,7 +8,6 @@ metadata:
   ms.date: 10/08/2020
   ms.service: product-insights
   ms.topic: 
-
 
 title: Welcome to Dynamics 365 Customer Insights documentation
 summary: The Microsoft customer data platform (CDP) powers personalized experiences with a holistic view of customers and unmatched time to insight.
