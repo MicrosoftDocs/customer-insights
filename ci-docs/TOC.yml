@@ -143,32 +143,62 @@
     - name: DSR requests under GDPR
       href: audience-insights/gdpr.md
 
-- name: Engagement insights
+- name: Engagement insights (preview)
   items:
     - name: Capability overview
       href: engagement-insights/index.md
-    - name: New and updated features
+      
+    - name: New and updated features (later)
       href: engagement-insights/index.md
+
     - name: Get started
       items:
-        - name: Create a new project
+        - name: Quistart
           href: engagement-insights/index.md
-        - name: Collect events
-          href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
-        - name: View reports
-          href: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
-    - name: SKDs
+        - name: Create a project
+          href: engagement-insights/index.md
+        - name: Create and export user data
+          href: engagement-insights/index.md
+        - name: View out-of-the-box reports
+          href: engagement-insights/index.md
+
+    - name: Work with data
+      items: 
+        - name: Create custom reports
+          href: engagement-insights/index.md
+        - name: Collect additional data (advanced SDK implementation?)
+          href: engagement-insights/index.md
+        - name: Export events
+          href: engagement-insights/index.md
+
+    - name: Manage environments and projects
+      items: 
+        - name: Manage environments, workspaces, and roles
+          href: engagement-insights/index.md
+        - name: Create and export refined events
+          href: engagement-insights/index.md
+        - name: Ingest customer profiles
+          href: engagement-insights/index.md
+        - name: Use cross-channel funnel
+          href: engagement-insights/index.md
+
+    - name: Developer resources
       items:
         - name: Web SDK tutorial
           href: engagement-insights/index.md
         - name: Web SDK sample
           href: engagement-insights/index.md
 
-- name: Known issues
-  href: audience-insights/index.yml
+    
+    - name: Manage GDPR compliance
+      href: engagement-insights/index.md
+
+    - name: Known issues
+      href: audience-insights/index.yml
+
+    - name: Terms of Service
+      href: engagement-insights/index.md
 
 - name: Contact support
   href: audience-insights/index.yml
 
-- name: GDPR
-  href: audience-insights/index.yml
