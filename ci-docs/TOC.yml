@@ -1,6 +1,9 @@
 - name: Dynamics 365 Customer Insights
   href: index.yml
 
+- name: Product overview
+  href: overview.md
+
 - name: Free trial
   href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
 
@@ -147,7 +150,7 @@
   items:
     - name: Capability overview
       href: engagement-insights/index.md
-      
+
     - name: New and updated features (later)
       href: engagement-insights/index.md
 
