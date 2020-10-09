@@ -1,5 +1,5 @@
 ---
-title: Overview about Dynamics 365 Customer Insights
+title: Product overview
 author: m-hartmann
 description: Get an overview for Dynamics 365 Customer Insights and its capabilites.
 ms.author: mhart

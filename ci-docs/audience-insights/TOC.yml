@@ -1,0 +1,145 @@
+- name: Dynamics 365 Customer Insights
+  href: index.yml
+
+- name: Product overview
+  href: overview.md
+
+- name: New and updated features
+  href: whats-new-customer-insights.md
+
+- name: Free trial
+  href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+
+- name: Access your instance
+  href: https://home.ci.ai.dynamics.com/
+
+- name: Get started
+  items:
+    - name: Create a new environment
+      href: home.md
+    - name: Create a unified customer profile
+      href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - name: Work with the app
+      href: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+
+- name: Data sources
+  items:
+    - name: Data sources overview
+      href: data-sources.md
+    - name: Add data sources via Power Query connectors
+      href: connect-power-query.md
+    - name: Add a Common Data Model folder as a data source
+      href: connect-common-data-model.md
+    - name: Add Common Data Service managed data lake
+      href: connect-common-data-service-lake.md
+    - name: Incremental refresh for data sources
+      href: incremental-refresh-data-sources.md
+    - name: Real-time data ingestion
+      href: real-time-data-ingestion.md
+    - name: Understand entities and datasets
+      href: entities.md
+
+- name: Data unification
+  items: 
+    - name: Unification overview
+      href: data-unification.md
+    - name: Map entities and attributes
+      href: map-entities.md
+    - name: Match entities
+      href: match-entities.md
+    - name: Merge entities
+      href: merge-entities.md
+    - name: Review unified customer profiles
+      href: customer-profiles.md
+    - name: Filter unified customer profiles
+      href: search-filter-index.md
+    - name: Build relationships and connected entities
+      href: relationships.md
+    - name: List customer activities
+      href: activities.md
+
+- name: Data enrichment
+  items: 
+  - name: Enrich customer profiles
+    href: enrichment-hub.md
+  - name: Brand and interest affinities
+    href: enrichment-microsoft-graph.md
+  - name: Enrich with Leadspace
+    href: enrichment-leadspace.md
+  - name: Enrich with Experian
+    href: enrichment-experian.md
+
+- name: Segments and measures
+  items: 
+  - name: Create segments and customer groups
+    href: segments.md
+  - name: Get insights on segments
+    href: segment-insights.md
+  - name: Find similar customers
+    href: find-similar-customer-segments.md
+  - name: Define measures and KPIs
+    href: measures.md
+
+- name: Predictions
+  items: 
+  - name: Complete data using value predictions
+    href: predictions.md
+  - name: Predict subscription churn
+    href: predict-subscription-churn.md
+  - name: Implement custom machine learning models
+    href: custom-models.md
+  - name: Experiments with Azure Machine learning
+    href: azure-machine-learning-experiments.md
+
+
+- name: Export options
+  items: 
+    - name: Discover export destinations
+      href: export-destinations.md
+    - name: Azure Blob Storage
+      href: export-azure-blob-storage.md
+    - name: Dynamics 365 Customer Service (Add-in)
+      href: customer-card-add-in.md
+    - name: Dynamics 365 Marketing
+      href: export-dynamics365-marketing.md
+    - name: Dynamics 365 Sales
+      href: export-dynamics365-sales.md
+    - name: Dynamics 365 Sales Hub (Add-in)
+      href: customer-card-add-in.md
+    - name: Facebook Ads Manager
+      href: export-facebook.md
+    - name: LiveRamp
+      href: export-liveramp.md
+    - name: Microsoft Teams (bot) 
+      href: export-teams-bot.md
+    - name: Power BI
+      href: export-power-bi.md
+    - name: Power Apps
+      href: export-power-apps.md
+    - name: Power Automate
+      href: power-automate-connector.md
+    - name: SFTP
+      href: export-sftp.md
+
+- name: Administration
+  items:
+    - name: Set up the system configuration
+      href: system.md
+    - name: Assign user permissions
+      href: permissions.md
+    - name: Manage multiple environments
+      href: manage-environments.md
+    - name: Supported languages
+      href: supported-languages.md
+
+- name: Extensibility
+  items:
+    - name: Review the entity schemas in Common Data Model
+      href: entity-schemas.md
+    - name: Work with APIs
+      href: apis.md
+
+- name: DSR requests under GDPR
+  href: gdpr.md
+
+ 
