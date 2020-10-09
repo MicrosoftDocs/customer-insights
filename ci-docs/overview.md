@@ -23,6 +23,6 @@ Maximize customer lifetime value with AI-driven insights based on unified custom
 
 Customer Insights is grouped in two main capabilites: 
 
-- [Audience insights](audience-insights/index.md) -- link goes to overview for AUI or hub page for AUI
+- [Audience insights](audience-insights/index.yml) -- link goes to overview for AUI or hub page for AUI
 
 - [Engagmement insights (preview)](engagement-insights/index.md) -- link goes to overview for EI or hub page for AUI

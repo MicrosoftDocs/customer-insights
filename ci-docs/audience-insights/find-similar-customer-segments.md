@@ -53,7 +53,7 @@ Select **View** in the action bar to open the segment detail. This view contains
 
 ## Use the output of a similar segment
 
-You can [work with the output of a similar segment](pm-segments.md) as you do with other segments. For example, export the segment or build a measure.
+You can [work with the output of a similar segment](segments.md) as you do with other segments. For example, export the segment or build a measure.
 
 ## Refresh and edit a similar segment
 

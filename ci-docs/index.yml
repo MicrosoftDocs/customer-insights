@@ -24,44 +24,44 @@ landingContent:
           - text: Product overview
             url: overview.md
           - text: Release plans
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
           - text: What's new
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
 
   - title: Sign up
     linkLists:
       - linkListType: tutorial
         links: 
           - text: Create an oranization
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
           - text: Manage users
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
           - text: Manage permissions
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
 
   - title: Get in touch
     linkLists:
       - linkListType: tutorial
         links: 
           - text: Join the Dynamics 365 community
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
           - text: Share your ideas
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
           - text: Report an issue
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
 
   - title: Audience insights
     linkLists:
       - linkListType: tutorial
         links: 
           - text: Help hub
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
           - text: Top task 1
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
           - text: Top task 2
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
           - text: Top task 3
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
 
   - title: Engagement insights
     linkLists:
@@ -70,8 +70,8 @@ landingContent:
           - text: Help hub
             url: engagement-insights/index.md
           - text: Top task 1
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
           - text: Top task 2
-            url: audience-insights/index.md
+            url: audience-insights/index.yml
           - text: Top task 3
-            url: audience-insights/index.md
+            url: audience-insights/index.yml

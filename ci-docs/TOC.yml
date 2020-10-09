@@ -118,7 +118,7 @@
         - name: Power Apps
           href: audience-insights/export-power-apps.md
         - name: Power Automate
-          href: audience-insights/power-automate-connector.md
+          href: audience-insights/export-power-automate.md
         - name: SFTP
           href: audience-insights/export-sftp.md
 
@@ -165,10 +165,10 @@
           href: engagement-insights/index.md
 
 - name: Known issues
-  href: audience-insights/index.md
+  href: audience-insights/index.yml
 
 - name: Contact support
-  href: audience-insights/index.md
+  href: audience-insights/index.yml
 
 - name: GDPR
-  href: audience-insights/index.md
+  href: audience-insights/index.yml
