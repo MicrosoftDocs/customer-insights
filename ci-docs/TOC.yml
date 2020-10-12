@@ -156,7 +156,7 @@
 
     - name: Get started
       items:
-        - name: Quistart
+        - name: Quikstart
           href: engagement-insights/index.md
         - name: Create a project
           href: engagement-insights/index.md
@@ -173,6 +173,10 @@
           href: engagement-insights/index.md
         - name: Export events
           href: engagement-insights/index.md
+        - name: Web SDK tutorial
+          href: engagement-insights/index.md
+        - name: Web SDK sample
+          href: engagement-insights/index.md
 
     - name: Manage environments and projects
       items: 
@@ -185,22 +189,12 @@
         - name: Use cross-channel funnel
           href: engagement-insights/index.md
 
-    - name: Developer resources
-      items:
-        - name: Web SDK tutorial
-          href: engagement-insights/index.md
-        - name: Web SDK sample
-          href: engagement-insights/index.md
-
     
     - name: Manage GDPR compliance
       href: engagement-insights/index.md
 
     - name: Known issues
       href: audience-insights/index.yml
-
-    - name: Terms of Service
-      href: engagement-insights/index.md
 
 - name: Contact support
   href: audience-insights/index.yml
