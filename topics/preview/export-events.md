@@ -1,21 +1,20 @@
 ---
 title: export refined events
 description: How to export refined and base events
-ms.reviewer: ruthaisabokhae
-author: pickwick129
+ms.reviewer: ruthai
 ms.author: v-salash
-manager: shellyha
-ms.date: 10/09/2020
+author: pickwick129
+ms.date: 10/12/2020
 ms.service: product-insights
-ms.topic: how-to
-ROBOTS: NOINDEX 
+ms.topic: conceptual
+ms.manager: shellyha 
 ---
 
 # Export refined events
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-You can export both events and refined events to an external storage. An export is a forward data stream. You can't refill the stream. Additionally, exports have fixed schemas. If you add custom properties <to an event?>, they won’t be included and you will need to create a new export.
+An event is a single occurrence of data sent to engagement insights capability. A refined event is virtual view of an event that you can use to adjust its properties. You can export both events and refined events to an external storage. An export is a forward data stream. You can't refill the stream. Additionally, exports have fixed schemas. If you add custom properties <to an event?>, they won’t be included and you will need to create a new export.
 
 ## Export a refined event
 
