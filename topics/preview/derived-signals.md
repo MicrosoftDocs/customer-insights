@@ -1,5 +1,5 @@
 ---
-title:Created and modify refined events
+title: Created and modify refined events
 description: How to create and modify refined events
 ms.reviewer: ruthai
 ms.author: v-salash
