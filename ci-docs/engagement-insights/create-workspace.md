@@ -1,45 +1,50 @@
 ---
-title: Create a project
-author: ruthaisabokhae
-description: How to create a project in Dynamics 365 Customer Insights engagement insights capability
-ms.author: ruthai
-ms.date: 07/31/2020
+title: About workspace and members
+description: How to create a workspace and add members
+author: pickwick129
+ms.reviewer: ruthai
+ms.author: v-salash
+ms.date: 10/13/2020
 ms.service: product-insights
 ms.topic: conceptual
-robots: noindex,nofollow
+ms.manager: shellyha
 ---
 
-# Create a project
+# Workspaces and members
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-To create a new project, follow these steps:
+A workspace is how you group data and reports in Dynamics 365 Customer Insight engagement insights capability. It's where you can view user activity in real time. You can add members to an existing project at any time. 
 
-1. Select **+New Project** in the lower-left corner of the portal.
+## Create a workspace
 
-2. Enter your project's **Name** and an optional **Description** text.
 
-3. Select **Create** to confirm and create the project.
+1. In the navigation pane, choose **+New workspace**. 
+
+2. Enter a name for your workspace in the **Name** box and optionally add text in **Description**.
+
+3. Choose **Create** to confirm and create the workspace.
+
 
 ## Add members
 
-The **Members** page is where you'll assign members to your projects, and define their roles and permissions.
+The **Members** page is where you can assign members to your projects, and define their roles and permissions.
 
 :::image type="content" source="media/add-members.png" alt-text="Members page with callout on Add Members button":::
 
 To add members to your project, follow these steps:
 
-1. Select **Settings** > **Members**, and then select **+Add members**.
+1. In the navigation pane, choose **Settings** > **Members**, and then select **+Add members**.
 
-2. Use the **Members** field to find users who you want to add to your team. You can search by name or email address. Under **Role**, the only currently available option is **Owner**.
+2. In the **Members** box, enter the name of the person that you want to add to the workspace. You can search by name or email address.
 
    > [!NOTE]
-   > Security groups and distribution groups are currently not supported.
+   > The only **Role** currently available is **Owner**. Security groups and distribution groups are currently not supported.
 
-3. When you are done adding users, select **Add** to confirm.
+3. When you are done adding users, choose **Add members** to confirm.
 
 ### Member permissions
-Dynamics 365 Customer Insights  engagement insights capability has only the role of **Owner** currently available, with the following permissions enabled:
+**Owner** is only role currently available. It has the following permissions enabled:
 
 - Create projects
 - Configure projects (members, delete)
