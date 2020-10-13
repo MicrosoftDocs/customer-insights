@@ -4,12 +4,6 @@
 - name: Product overview
   href: overview.md
 
-- name: Free trial
-  href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-
-- name: Access your instance
-  href: https://home.ci.ai.dynamics.com/
-
 - name: Audience insights
   items:
     - name: Capability overview
@@ -151,51 +145,61 @@
     - name: Capability overview
       href: engagement-insights/index.md
 
-    - name: New and updated features (later)
-      href: engagement-insights/index.md
+    - name: Quickstart
+      items: 
+        - name: Quickstart for public preview
+          href: engagement-insights/index.md
 
     - name: Get started
       items:
-        - name: Quikstart
-          href: engagement-insights/index.md
-        - name: Create a project
+        - name: Create a workspace
           href: engagement-insights/index.md
         - name: Create and export user data
           href: engagement-insights/index.md
-        - name: View out-of-the-box reports
+
+    - name: Reports
+      items: 
+        - name: View reports
           href: engagement-insights/index.md
 
-    - name: Work with data
+    - name: Developer resources
       items: 
-        - name: Create custom reports
-          href: engagement-insights/index.md
-        - name: Collect additional data (advanced SDK implementation?)
-          href: engagement-insights/index.md
-        - name: Export events
+        - name: Developer resources overview
           href: engagement-insights/index.md
         - name: Web SDK tutorial
           href: engagement-insights/index.md
         - name: Web SDK sample
           href: engagement-insights/index.md
 
-    - name: Manage environments and projects
+    - name: Events
       items: 
-        - name: Manage environments, workspaces, and roles
+        - name: Create and modify events
           href: engagement-insights/index.md
-        - name: Create and export refined events
-          href: engagement-insights/index.md
-        - name: Ingest customer profiles
-          href: engagement-insights/index.md
-        - name: Use cross-channel funnel
+        - name: Export events
           href: engagement-insights/index.md
 
-    
+    - name: Administration
+      items: 
+        - name: Manage cookies and user consent
+          href: engagement-insights/index.md
+        - name: Manage environments, workspaces, and roles
+          href: engagement-insights/index.md
+
     - name: Manage GDPR compliance
+      href: engagement-insights/index.md
+
+    - name: Delete and export signal data??
       href: engagement-insights/index.md
 
     - name: Known issues
       href: audience-insights/index.yml
 
+- name: Free trial
+  href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+
+- name: Access your instance
+  href: https://home.ci.ai.dynamics.com/
+  
 - name: Contact support
   href: audience-insights/index.yml
 
