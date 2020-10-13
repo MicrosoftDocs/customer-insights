@@ -185,11 +185,12 @@
         - name: Manage environments, workspaces, and roles
           href: engagement-insights/index.md
 
-    - name: Manage GDPR compliance
-      href: engagement-insights/index.md
-
-    - name: Delete and export signal data??
-      href: engagement-insights/index.md
+    - name: GDPR
+      items: 
+        - name: Manage GDPR compliance
+          href: engagement-insights/index.md
+        - name: Delete and export signal data??
+          href: engagement-insights/index.md
 
     - name: Known issues
       href: audience-insights/index.yml
@@ -199,7 +200,7 @@
 
 - name: Access your instance
   href: https://home.ci.ai.dynamics.com/
-  
+
 - name: Contact support
   href: audience-insights/index.yml
 
