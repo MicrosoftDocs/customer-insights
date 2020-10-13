@@ -1,10 +1,10 @@
 ---
-title: "Custom machine learning models | Microsoft Docs"
+title: "Custom machine learning models"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
 ms.date: 08/19/2020
-ms.reviewer: wameng
+ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: "article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -12,7 +12,7 @@ manager: shellyha
 
 # Custom machine learning models
 
-**Intelligence** > **Custom Models** lets you manage workflows based on Azure Machine Learning models. Workflows help you choose the data you want to generate from insights and map the results to your Customer Insights data. [Read the blog about extending Customer Insights with custom models](https://cloudblogs.microsoft.com/dynamics365/it/2019/10/04/extending-dynamics-365-customer-insights-with-azure-ml-based-custom-models/) and the [blog with examples of custom models](https://cloudblogs.microsoft.com/dynamics365/it/2019/10/05/examples-of-extending-dynamics-365-customer-insights-with-azure-ml/).
+**Intelligence** > **Custom models** lets you manage workflows based on Azure Machine Learning models in audience insights. Workflows help you choose the data you want to generateand map the results to your Dynamics 365 Customer Insights data. For more information about building custom ML models, see [Use Azure Machine Learning-based models](azure-machine-learning-experiments.md).
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ manager: shellyha
 
 ## Add a new workflow
 
-1. Go to **Intelligence** > **Custom Models** and select **New Workflow**.
+1. In audience insights, go to **Intelligence** > **Custom Models** and select **New Workflow**.
 
 1. Give your custom model a recognizable name in the **Name** field.
 
@@ -33,11 +33,11 @@ manager: shellyha
 
 1. Select the organization that contains the web service in **Tenant that contains your web service**.
 
-1. If your Azure Machine Learning subscription is in a different tenant than Customer Insights, select **Sign in** with your credentials for the selected organization.
+1. If your Azure Machine Learning subscription is in a different organization than Customer Insights, select **Sign in** with your credentials for the selected organization.
 
-1. Choose the [web service you've published using Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service) in the **Web service that contains your model** dropdown. Then, select **Next**.
+1. Choose the [web service you've published using Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service) in the **Web service that contains your model** dropdown and select **Next**.
 
-1. For each **Web service input**, select the matching **Entity** from Customer Insights and select **Next**.
+1. For each **Web service input**, select the matching **Entity** and select **Next**.
 
    > [!div class="mx-imgBorder"]
    > ![Configure a workflow](media/intelligence-screen2.png "Configure a workflow")
@@ -54,7 +54,7 @@ manager: shellyha
 
 2. You can update your workflow's recognizable name in the **Display name** field, but you can't change the web service. Select **Next**.
 
-3. For each **Web service input**, select the matching **Entity** from Customer Insights.  Then, select **Next**.
+3. For each **Web service input**, select the matching **Entity** and select **Next**.
 
 4. Select the matching attribute from the **Customer ID in results** drop-down list.  When you're done, select **Save**.
 

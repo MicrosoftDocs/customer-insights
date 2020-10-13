@@ -1,10 +1,10 @@
 ---
-title: "Ingest data through a Power Query connector | Microsoft Docs"
+title: "Ingest data through a Power Query connector"
 description: "Connectors for data sources based on Power Query."
 ms.date: 09/29/2020
 ms.reviewer: adkuppa
 ms.service: dynamics-365-ai
-ms.topic: "article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -16,7 +16,7 @@ Power Query offers a broad set of connectors to ingest data. Most of these conne
 
 ## Create a new data source
 
-1. Go to **Data** > **Data sources**.
+1. In audience insights, go to **Data** > **Data sources**.
 
 1. Select **Add data source**.
 
@@ -61,7 +61,7 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
 >
 > Using the **Settings** page, you can track the progress of each of the active processes. When a process completes, you can return to the **Data Sources** page and make your changes.
 
-1. Go to **Data** > **Data sources**.
+1. In audience insights, go to **Data** > **Data sources**.
 
 2. Select the vertical ellipsis next to the data source you want to change and select **Edit** from the drop-down menu.
 

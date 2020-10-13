@@ -1,10 +1,10 @@
 ---
-title: "Customer Card Add-in | Microsoft Docs"
+title: "Install and configure the Customer Card Add-in"
 description: "Install and configure the Customer Card add-in for Dynamics 365 Customer Insights."
 ms.date: 08/04/2020
 ms.reviewer: philk
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.topic: conceptual    
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -12,19 +12,19 @@ manager: shellyha
 
 # Customer Card Add-in (preview)
 
-Get a 360-degree view of your customers inside Dynamics 365 apps. View demographics, insights, and activity timelines with the Customer Card Add-in.
+Get a 360-degree view of your customers directly in Dynamics 365 apps. View demographics, insights, and activity timelines with the Customer Card Add-in.
 
 ## Prerequisites
 
 - Dynamics 365 app (such as Sales Hub or Customer Service Hub), version 9.0 and later with Unified Interface enabled.
-- Customer profiles [from the Dynamics 365 app ingested to Customer Insights using Common Data Service](pm-common-connectors.md#dynamics-365-apps-using-common-data-service).
-- Users of the Customer Card Add-in need to be [added as users](permissions.md) in Customer Insights.
-- [Configured search and filter capabilities](search-filter-index.md) in Customer Insights.
-- Demographic control: Demographic fields, such as age or genders are available in the unified customer profile.
+- Customer profiles [ingested from the Dynamics 365 app using Common Data Service](connect-power-query.md).
+- Users of the Customer Card Add-in need to be [added as users](permissions.md) in audience insights.
+- [Configured search and filter capabilities](search-filter-index.md).
+- Demographic control: Demographic fields, such as age or gender are available in the unified customer profile.
 - Enrichment control: Requires active [enrichments](enrichment-hub.md) applied to customer profiles.
-- Intelligence control: Requires data in Customer Insights generated using Azure Machine Learning ([Predictions](predictions.md) or [Custom Models](custom-models.md))
-- Measure control: Requires [configured measures](measures.md) in Customer Insights.
-- Timeline control: Requires [configured activities](activities.md) in Customer Insights.
+- Intelligence control: Requires data generated using Azure Machine Learning ([Predictions](predictions.md) or [Custom Models](custom-models.md))
+- Measure control: Requires [configured measures](measures.md).
+- Timeline control: Requires [configured activities](activities.md).
 
 ## Install the Customer Card Add-in
 
@@ -48,11 +48,11 @@ It can take some time for the solution to be installed to your environment.
    > [!NOTE]
    > Check that the browser pop-up blocker does not block the authentication window when you select the **Sign in** button.
 
-1. Select the Customer Insights instance you want to fetch data from.
+1. Select the instance you want to fetch data from.
 
-1. Now you define which field from Customer Insights maps to a record in the Dynamics 365 app.
-   - To map with a contact, select the field in the Customer Insights Customer entity that matches the ID of your contact entity.
-   - To map with an account, select the field in the Customer Insights Customer entity that matches the ID of your account entity.
+1. Define which the field mapping to records in the Dynamics 365 app.
+   - To map with a contact, select the field in the Customer entity that matches the ID of your contact entity.
+   - To map with an account, select the field in the Customer entity that matches the ID of your account entity.
 
    > [!div class="mx-imgBorder"]
    > ![Contact ID field](media/contact-id-field.png "Contact ID field")
@@ -63,7 +63,7 @@ It can take some time for the solution to be installed to your environment.
 
 1. Assign the **Customer Insights Card Customizer** role to users who will customize the content shown on the card for the whole organization.
 
-## Add Customer Insights controls to forms
+## Add Customer Card controls to forms
   
 1. To add the Customer Card controls to your Contact form, go to the **Settings** > **Customizations** in Dynamics 365.
 
