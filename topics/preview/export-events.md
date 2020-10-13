@@ -35,6 +35,6 @@ Before export, be sure that you have access and an active subscription to the Az
 To get Azure Data Lake Storage (ADLS) settings
 1. Create a new storage account. 
 2. From the **Advanced** tab, enable **Hierachical namespace**. 
-:::image type="content" source="media/add-members.png" alt-text="Azure Data Lake Storage account setup":::
+:::image type="content" source="media/ADLS.png" alt-text="Azure Data Lake Storage account setup":::
 3. Once it has been deployed, go to the newly created storage account and from the navigation pane, go to **Settings** > **Access keys**. 
 4. Copy the **Account name** and **Key** to use them in **Export** settings in engagement insights capability.
