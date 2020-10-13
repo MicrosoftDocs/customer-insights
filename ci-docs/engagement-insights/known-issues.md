@@ -11,7 +11,7 @@ robots: noindex,nofollow
 
 # Known issues
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 As we continue to work on Dynamics 365 Customer Insights engagement insights capability private preview and refine the experience, we have become aware of some outstanding issues for you to keep in mind. These issues are summarized in the following table.
 

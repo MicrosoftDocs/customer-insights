@@ -11,7 +11,7 @@ robots: noindex,nofollow
 
 # Onboard to the Dynamics 365 Customer Insights engagement insights capability private preview
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 This onboarding article describes Dynamics 365 Customer Insights engagement insights capability private preview product features, documentation, scenarios to validate, and known issues. It explains how to engage with Microsoft throughout the private preview. Nothing in this documentation is meant &mdash; or should be construed &mdash;to modify the terms of your agreements with Microsoft, including your preview terms.
 
@@ -24,7 +24,7 @@ This onboarding article describes Dynamics 365 Customer Insights engagement insi
 
 ## Private preview expectations
 
-*	Private preview is for testing purposes only. Environments might be taken down at the end of the testing period to make way for future releases. See the [Preview terms of service](preview-terms-of-service.md) for more disclosures and limitations.  
+*	Private preview is for testing purposes only. Environments might be taken down at the end of the testing period to make way for future releases. See the [Preview terms of service](../preview/preview-terms-of-service.md) for more disclosures and limitations.  
 *	Private preview isn't for production use, but is strictly for prototyping and providing feedback. We're likely to delete data and rebuild environments at any point during the private preview, but we'll make reasonable effort to ensure that we communicate any changes to avoid disruption in testing.   
 *	We'll work closely with you to seek feedback and incorporate product changes. We expect to establish a cadence for this interaction during the period of private preview and we'll communicate that when we do.  
 *	Private preview is expected to run for a few months. We appreciate your active participation and plan to consider all relevant feedback in developing future releases.  

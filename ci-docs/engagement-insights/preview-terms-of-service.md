@@ -11,7 +11,7 @@ robots: noindex,nofollow
 
 # MICROSOFT DYNAMICS 365 CUSTOMER INSIGHTS ENGAGEMENT INSIGHTS CAPABILITY PREVIEW TERMS OF SERVICE
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 ## PREVIEW TERMS OF SERVICE
 
@@ -184,7 +184,7 @@ This Agreement constitutes the entire agreement between the parties with respect
 
 ## Exhibit A - Data Protection Terms
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 ### Processing of Customer Data; Ownership
 
@@ -306,7 +306,7 @@ D18 P521
 
 ## Attachment 1 to Exhibit A - The Standard Contractual Clauses (Processors)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 Beginning May 25, 2018 and thereafter, references to various Articles from the Directive 95/46/EC in the Standard Contractual Clauses below will be treated as references to the relevant and appropriate Articles in the GDPR.
 
