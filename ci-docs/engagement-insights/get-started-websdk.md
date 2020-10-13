@@ -1,19 +1,20 @@
 ---
-title: Get started with the web SDK for Dynamics 365 Customer Insights engagement insights capability
-author: ruthaisabokhae
+title: Work with the web SDK
 description: Learn how to use the engagement insights capability SDK to instrument your website.
-ms.author: ruthai
-ms.date: 10/05/2020
+author: pickwick129
+ms.reviewer: ruthai
+ms.author: v-salash
+ms.date: 10/13/2020
 ms.service: product-insights
 ms.topic: conceptual
-robots: noindex,nofollow
+ms.manager: shellyha
 ---
 
 # Get started with the web SDK
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insight engagement insights capability SDK. You start seeing events in your portal in five minutes or sooner.
+This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insight engagement insights capability SDK. You'll start seeing events in your portal in five minutes or sooner.
 
 ## Configuration options
 
@@ -28,12 +29,12 @@ The following configuration options can be passed to the SDK:
 
 ## Prerequisites
 
-* The SDK requires the project or webpage to be hosted to send telemetry. Telemetry sent from a local file will not be accepted by the server.
+* The SDK requires a hosted workspace or webpage to send telemetry. Telemetry sent from a local file will not be accepted by the server.
 * You have an ingestion key (already embedded in your code snippet).
 
 ## Integrate the engagement insights capability SDK into your webpage
 
-1. From the engagement insights capability home screen, select your project from the project drop-down list on the left navigation pane. If you don't already have a project, select the **+ New Project** option instead and create one.
+1. From the engagement insights capability home screen, select your workspace from the workspace drop-down list in the left navigation pane. If you don't already have a workspace, select **+ New workspace** and create one.
 
 2. Go to **Admin** > **Data** > **Code**  and copy the code snippet on this page.
 
@@ -52,7 +53,7 @@ window["Contoso"].trackEvent({
 });
 ```
 
-4. Ensure your ingestion key is embedded in the code snippet.
+4. Ensure that your ingestion key is embedded in the code snippet.
 
 5. Add the copied code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
 

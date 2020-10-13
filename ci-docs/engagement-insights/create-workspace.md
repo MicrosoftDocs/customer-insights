@@ -18,7 +18,6 @@ A workspace is how you group data and reports in Dynamics 365 Customer Insight e
 
 ## Create a workspace
 
-
 1. In the navigation pane, choose **+New workspace**. 
 
 2. Enter a name for your workspace in the **Name** box and optionally add text in **Description**.
