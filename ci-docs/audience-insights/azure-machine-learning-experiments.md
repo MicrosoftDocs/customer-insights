@@ -1,24 +1,24 @@
 ---
-title: "Azure Machine Learning experiments in Customer Insights | Microsoft Docs"
-description: "Use Azure Machine Learning-based custom models in Dynamics 365 Customer Insights."
+title: "Azure Machine Learning experiments"
+description: "Use Azure Machine Learning-based models in Dynamics 365 Customer Insights."
 ms.date: 07/09/2020
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: ameetj
 manager: shellyha
 ---
 
-# Use Azure Machine Learning-based custom models in Customer Insights
+# Use Azure Machine Learning-based models
 
-The unified data in Dynamics 365 Customer Insights is an ideal source for building machine learning models that can generate additional business insights. Customer Insights integrates with Azure Machine Learning to use your own custom models.
+The unified data in Dynamics 365 Customer Insights is a source for building machine learning models that can generate additional business insights. Customer Insights integrates with Azure Machine Learning to use your own custom models.
 
 ## Prerequisites
 
 - Access to Customer Insights
 - Active Azure Enterprise subscription
-- [Unified customer profiles](data-unification.md) in Customer Insights
+- [Unified customer profiles](data-unification.md)
 - [Entity export to Azure Blob storage](export-azure-blob-storage.md) set up
 
 ## Set up Azure Machine Learning Studio
@@ -31,7 +31,7 @@ In a first step, we need to create a workspace for and open the Azure Machine Le
 
 1. Search **Machine Learning Studio Workspace** and select **Create**.
 
-1. Enter the required details to [create the workspace](https://docs.microsoft.com/azure/machine-learning/studio/create-workspace). Choose the **Web service plan pricing tier** based on the amount of data you plan to import from Customer Insights. For best performance, select the **Location** that is geographically closest to you.
+1. Enter the required details to [create the workspace](https://docs.microsoft.com/azure/machine-learning/studio/create-workspace). Choose the **Web service plan pricing tier** based on the amount of data you plan to import. For best performance, select the **Location** that is geographically closest to you.
 
 1. After creating the resource, the Machine Learning Studio workspace dashboard will appear. Select **Launch Machine Learning Studio**.
 
@@ -39,7 +39,7 @@ In a first step, we need to create a workspace for and open the Azure Machine Le
 
 ## Work with Azure Machine Learning Studio
 
-You can now create a new experiment, or import an existing experiment template from the sample gallery. Customer Insights includes sample experiments for three standard scenarios:
+You can now create a new experiment, or import an existing experiment template from the sample gallery. There are sample experiments for three standard scenarios:
 
 - [Churn prediction](#churn-analysis)
 
@@ -47,7 +47,7 @@ You can now create a new experiment, or import an existing experiment template f
 
 - [Product recommendation or next best action](#productrecommendation-or-next-best-action)
 
-1. If you create a new experiment or use an experiment template from the gallery, you need to configure the **Import Data** properties. Use the guided experience or directly provide details to access the Azure Blob Storage with your Customer Insights data.  
+1. If you create a new experiment or use an experiment template from the gallery, you need to configure the **Import Data** properties. Use the guided experience or directly provide details to access the Azure Blob Storage that contains your data.  
 
    ![Azure Machine Learning Studio experiment](media/azure-machine-learning-studio-experiment.png)
 
@@ -85,7 +85,7 @@ The experiment template can be imported from the gallery. First, ensure that 
 
 ### Featurization
 
-Based on the definition of churn, we first identify the raw features that will influence the label. Then, we process these raw features into numerical features that can be used with machine learning models. Data integration happens in Customer Insights so we can join these tables by using the *Customer ID* created by Customer Insights.
+Based on the definition of churn, we first identify the raw features that will influence the label. Then, we process these raw features into numerical features that can be used with machine learning models. Data integration happens in Customer Insights so we can join these tables by using the *Customer ID*.
 
    ![Join imported data](media/join-imported-data.png)
 
@@ -160,8 +160,8 @@ Looking further on the distributions of the recommendations on the entire servic
 
 The entire [product recommendation experiment can be accessed in Azure AI Gallery.](https://gallery.azure.ai/Experiment/Recommendation-4)
 
-## Integrate custom models in Customer Insights
+## Integrate custom models
 
-To use these predictions in Customer Insights, you need to **export** the predictions along with the customer IDs. [Export them to the same Azure Blob storage location](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs) that you export the Customer Insights data to. The predictive web service can be scheduled to run regularly and update the scores.
+To use these predictions in Customer Insights, you need to **export** the predictions along with the customer IDs. [Export them to the same Azure Blob storage location](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs) that you export the source data to. The predictive web service can be scheduled to run regularly and update the scores.
 
-Data generated by the custom model can be used in Customer Insights to further enrich your customer data. [Learn about using custom models in Customer Insights.](custom-models.md)
+Data generated by the custom model can be used to further enrich your customer data. For more information, see [Custom machine learning models](custom-models.md).

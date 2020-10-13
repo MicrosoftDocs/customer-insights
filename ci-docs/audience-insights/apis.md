@@ -1,10 +1,10 @@
 ---
-title: "Work with APIs in Customer Insights | Microsoft Docs"
-description: "APIs and functionalities for Dynamics 365 Customer Insights."
+title: "Work with APIs"
+description: "APIs and available methods for Dynamics 365 Customer Insights."
 ms.date: 04/17/2020
 ms.reviewer: nimagen
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -12,20 +12,20 @@ manager: shellyha
 
 # Work with APIs
 
-There are currently several types of APIs you can use with Dynamics 365 Customer Insights. Details of these APIs, including parameters and responses, can be found on the [Customer Insights Swagger UI webpage](https://global.api.ci.ai.dynamics.com/swagger/index.html).
+There are currently several APIs you can use with Dynamics 365 Customer Insights. Details of these APIs, including parameters and responses, can be found on the [Customer Insights Swagger UI webpage](https://global.api.ci.ai.dynamics.com/swagger/index.html).
 
-The goal of this section isn't to cover all the Customer Insights APIs, but rather to:
+The goal of this article isn't to cover all the APIs, but rather to:
 
-- Provide guidance on how to use the Swagger tool.
-- Provide explanations around some of the most important functionalities that you, as a user, can take advantage of through our APIs.
+- Explain on how to use the Swagger UI app
+- Highlight the most important functionalities of the APIs
 
-## How to use the Customer Insights Swagger webpage
+## How to use the API reference
 
 If you aren't familiar with Swagger, see the following step-by-step tutorial: [Swagger UI tutorial](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html).
 
 ## Use Swagger UI
 
-1. Go to the [Customer Insights Swagger UI webpage](https://global.api.ci.ai.dynamics.com/swagger/index.html).
+1. Go to the [API reference](https://global.api.ci.ai.dynamics.com/swagger/index.html).
 
 2. Select **Authorize** and use your Customer Insights credentials.
 
@@ -33,7 +33,7 @@ If you aren't familiar with Swagger, see the following step-by-step tutorial: [S
 
 4. Copy the value from **scaleUnitUri** and replace the server address (https://global.api.ci.ai.dynamics.com) in your address bar with it.
 
-## Functionalities served with the Customer Insights Open Data Protocol APIs
+## Functionalities served through Open Data Protocol APIs
 
 - PUT API: /api/instances/{instanceId}/data/{relativePath}
 
@@ -45,9 +45,9 @@ If you aren't familiar with Swagger, see the following step-by-step tutorial: [S
 | 4. **Search and query** other ingested datasets. | Use the **$Search** command. For more information, see [Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/). | 1. Can be done only if **Customer ID** is present in the queried dataset. <br/><br/> 2. Can't be executed along with functionality #1. |
 | 5. **Filter** other ingested datasets. | Use the **$Filter** command. For more information, see [Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/). | 1. Can be done only if **Customer ID** is present in the queried dataset. <br/><br/> 2. Can't be executed along with functionality #1. |
 
-## Limitations involved with using the Customer Insights Conflation APIs
+## Limitations with using Conflation APIs
 
-See the **Conflation** table on the [Customer Insights Swagger webpage](https://global.api.ci.ai.dynamics.com/swagger/index.html).
+See the **Conflation** table on the [API reference](https://global.api.ci.ai.dynamics.com/swagger/index.html).
 
 ### Limitations by field (across all Conflation APIs)
 
@@ -68,9 +68,9 @@ See the **Conflation** table on the [Customer Insights Swagger webpage](https://
 | PATCH<br/>/api/instances/{instanceId}/conflations/{conflationId}/conflationPlan | 1. Any entity that appears in the plan must have been ingested in the referenced data source. <br/><br/> 2. Any attribute that appears in the plan must actually exist as an attribute as the referenced entity. <br/><br/> 3. Any entity that appears in the plan must have a primary key defined. <br/><br/> 4. All entities in the ConflationOrder must have corresponding EntityConflationInformation. <br/><br/> 5. At least 1 rule and criteria must be defined. <br/><br/> 6. No copy criteria may be included in the plan. <br/><br/> 7. All entities in the plan must appear in the entity conflation order. <br/><br/> 8. Entities can't appear in the plan out of the order defined in ConflationOrder. <br/><br/> 9. All matched attributes must have the same type. |
 | PATCH<br/>/api/instances/{instanceId}/conflations/{conflationId}/conflictResolutionRules | 1. Same as above. <br/><br/> 2. Same as above. <br/><br/> 3. Same as above <br/><br/> 4. At least 1 resolution policy must be defined against at least 1 source attribute. <br/><br/> All entities defined in the resolution policy must be part of the conflation plan.
 
-## Limitations involved with using the Customer Insights Relationship APIs
+## Limitations with Relationship APIs
 
-See the **EntityMetadata** table on the [Customer Insights Swagger webpage](https://global.api.ci.ai.dynamics.com/swagger/index.html).
+See the **EntityMetadata** table on the [API reference](https://global.api.ci.ai.dynamics.com/swagger/index.html).
 
 ### Limitations common to all APIs
 
@@ -93,10 +93,10 @@ For relationship APIs specifically, anytime {relationshipName} is provided, a re
 | PATCH<br/>/api/instances/{instanceId}/manage/relationships | 1. Relationship name can only include letters, numbers, and underscores. <br/><br/> 2. Relationship name must be unique.<br/><br/> 3. Cardinality can have only two values: "OneToMany" or "ManyToOne". <br/><br/> 4. There are only four possible relationship types: SingleKeyRelationshipOrigin, SingleKeyRelationshipDestination, DataSourceLineageOrigin, DataSourceLineageDestination. <br/><br/> 5. Both the FromEntity and ToEntity must be the names of entities that actually exist in the instance. <br/><br/> 6. Both the FromAttribute and ToAttribute must actually exist as attributes of the FromEntity and ToEntity. |
 | PATCH<br/>/api/instances/{instanceId}/manage/relationships/{relationshipName} | Same limitations as above, except #2 doesn't apply here, since the name was already validated during creation (while this action is an update). |
 
-## Functionalities served with the Customer Insights Segmentation APIs
+## Functionalities served through Segmentation APIs
 
 1. Use APIs for managing segments: Create, update, get, and delete segment definitions. Also activate and deactivate segments.
 2. Use APIs for querying: Get specific parts of a segment.
 3. Use APIs for searching and querying specific segment member data.
 
-See the **SegmentManagement** table on the [Customer Insights Swagger webpage](https://global.api.ci.ai.dynamics.com/swagger/index.html).
+See the **SegmentManagement** table on the [API reference](https://global.api.ci.ai.dynamics.com/swagger/index.html).
