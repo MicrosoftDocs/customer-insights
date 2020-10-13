@@ -1,5 +1,5 @@
 ---
-title: Product overview
+title: Engagement insights capability overview
 author: m-hartmann
 description: Get an overview for Dynamics 365 Customer Insights and its capabilites.
 ms.author: mhart

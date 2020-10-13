@@ -148,52 +148,52 @@
     - name: Quickstart
       items: 
         - name: Quickstart for public preview
-          href: engagement-insights/index.md
+          href: engagement-insights/quickstart-product-insights.md
 
     - name: Get started
       items:
         - name: Create a workspace
+          href: engagement-insights/create-workspace.md
+        - name: Create and export user data - tbc
           href: engagement-insights/index.md
-        - name: Create and export user data
-          href: engagement-insights/index.md
+        - name: Concepts and terminology
+          href: engagement-insights/concepts-terminology.md
 
     - name: Reports
       items: 
         - name: View reports
-          href: engagement-insights/index.md
+          href: engagement-insights/reports.md
 
     - name: Developer resources
       items: 
-        - name: Developer resources overview
+        - name: Developer resources overview - tbc
           href: engagement-insights/index.md
         - name: Web SDK tutorial
-          href: engagement-insights/index.md
+          href: engagement-insights/get-started-websdk.md
         - name: Web SDK sample
-          href: engagement-insights/index.md
+          href: engagement-insights/websdk-sample.md
 
     - name: Events
       items: 
         - name: Create and modify events
-          href: engagement-insights/index.md
+          href: engagement-insights/derived-signals.md
         - name: Export events
-          href: engagement-insights/index.md
+          href: engagement-insights/export-events.md
 
     - name: Administration
       items: 
         - name: Manage cookies and user consent
-          href: engagement-insights/index.md
-        - name: Manage environments, workspaces, and roles
+          href: engagement-insights/user-consent-storage.md
+        - name: Manage environments, workspaces, and roles - tbc
           href: engagement-insights/index.md
 
     - name: GDPR
       items: 
-        - name: Manage GDPR compliance
-          href: engagement-insights/index.md
         - name: Delete and export signal data??
-          href: engagement-insights/index.md
+          href: engagement-insights/delete-export-signal-data.md
 
     - name: Known issues
-      href: audience-insights/index.yml
+      href: engagement-insights/known-issues.md
 
 - name: Free trial
   href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
