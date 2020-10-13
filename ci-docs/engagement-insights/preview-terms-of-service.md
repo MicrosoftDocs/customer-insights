@@ -184,8 +184,6 @@ This Agreement constitutes the entire agreement between the parties with respect
 
 ## Exhibit A - Data Protection Terms
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
-
 ### Processing of Customer Data; Ownership
 
 Customer Data will be used or otherwise Processed only to provide Participant the Services including purposes compatible with providing those services. Microsoft will not use or otherwise Process Customer Data or derive information from it for any advertising or similar commercial purposes. As between the parties, Participant retains all right, title and interest in and to Customer Data. Microsoft acquires no rights in Customer Data, other than the rights Participant grants to Microsoft to provide the Services to Participant. This paragraph does not affect Microsoft’s rights in software or services Microsoft licenses to Participant.
@@ -305,8 +303,6 @@ Dublin 18
 D18 P521
 
 ## Attachment 1 to Exhibit A - The Standard Contractual Clauses (Processors)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
 Beginning May 25, 2018 and thereafter, references to various Articles from the Directive 95/46/EC in the Standard Contractual Clauses below will be treated as references to the relevant and appropriate Articles in the GDPR.
 
