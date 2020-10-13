@@ -75,7 +75,7 @@ For details about creating flows, see the [Power Automate documentation](https:/
 You can use the real-time capabilities by building your own pipeline and connecting directly to the Customer Insights real-time API.    
 You can post an activity in the format of your source system or in the UnifiedActivity format. Get the format by making an API call to /api/instances/{instanceId}/manage/entities/UnifiedActivity.
 
-Details of this API, including parameters and responses, can be found in the **EntityData** section on the [Swagger UI page](https://global.api.ci.ai.dynamics.com/swagger/index.html). [Learn more about how to use the Customer Insights Swagger webpage](apis.md#how-to-use-the-customer-insights-swagger-webpage).
+Details of this API, including parameters and responses, can be found in the **EntityData** section on the [Swagger UI page](https://global.api.ci.ai.dynamics.com/swagger/index.html). [Learn more about how to use the Customer Insights Swagger webpage](apis.md).
 
 ## Understand your real-time usage with telemetry
 
