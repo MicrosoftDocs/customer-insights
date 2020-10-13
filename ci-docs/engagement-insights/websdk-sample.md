@@ -10,7 +10,7 @@ ROBOTS: NOINDEX
 ---
 # Run the web SDK sample for Dynamics 365 Customer Insights engagment insights capability
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 The web SDK library is a JavaScript library with sample code that you can use on your website.
 ## Prerequisites
 

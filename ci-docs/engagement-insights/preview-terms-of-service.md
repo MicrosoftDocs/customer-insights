@@ -11,7 +11,7 @@ robots: noindex,nofollow
 
 # MICROSOFT DYNAMICS 365 CUSTOMER INSIGHTS ENGAGEMENT INSIGHTS CAPABILITY PREVIEW TERMS OF SERVICE
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 ## PREVIEW TERMS OF SERVICE
 

@@ -11,7 +11,7 @@ robots: noindex,nofollow
 
 # Quickstart for private preview
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 This article explains how to create a Dynamics 365 Customer Insights engagement insights capability instance and how to set up an environment.
 

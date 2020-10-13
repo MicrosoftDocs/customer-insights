@@ -12,7 +12,7 @@ ms.manager: shellyha
 
 # Export refined events
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 An event is a single occurrence of data sent to engagement insights capability. A refined event is virtual view of an event that you can use to adjust its properties. You can export both events and refined events to an external storage. An export is a forward data stream. You can't refill the stream. Additionally, exports have fixed schemas. If you add custom properties <to an event?>, they won’t be included and you will need to create a new export.
 

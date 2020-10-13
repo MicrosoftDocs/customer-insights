@@ -12,7 +12,7 @@ ms.manager: shellyha
 
 # Create and modify refined events
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 A refined event is a virtual view of a base event. Generally, use refined events to reduce the scope of a base event for export or to remove properties that aren't necessary for exposure or export.
 
