@@ -1,10 +1,9 @@
 ---
-title: "Use data sources to ingest data | Microsoft Docs"
+title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
 ms.date: 09/29/2020
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
-ms.assetid: 
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
@@ -13,7 +12,7 @@ manager: shellyha
 
 # Overview about data sources
 
-Dynamics 365 Customer Insights connects data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md) and take action on it.
+The audience insights capability in Dynamics 365 Customer Insights connects to data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md) and take action on it.
 
 ## Add a data source
 
@@ -46,7 +45,7 @@ Loading data can take some time. After a successful refresh, the ingested data c
 
 ## Delete a data source
 
-1. Go to **Data** > **Data sources**.
+1. In audience insights, go to **Data** > **Data sources**.
 
 2. Select the vertical ellipsis next to the data source you want to remove and select **Delete** from the drop-down menu.
 

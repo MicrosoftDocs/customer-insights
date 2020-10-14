@@ -1,10 +1,10 @@
 ---
-title: "Customer profiles | Microsoft Docs"
+title: "Customer profiles"
 description: "Get a consolidated view of your unified customer data in Dynamics 365 Customer Insights."
 ms.date: 04/16/2020
 ms.reviewer: nimagen
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
