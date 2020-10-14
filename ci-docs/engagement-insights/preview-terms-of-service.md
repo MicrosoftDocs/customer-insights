@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: shellyha
 ---
 
-# MICROSOFT DYNAMICS 365 CUSTOMER INSIGHTS ENGAGEMENT INSIGHTS CAPABILITY PREVIEW TERMS OF SERVICE
+# MICROSOFT DYNAMICS 365 CUSTOMER INSIGHTS – Engagement insights (preview) 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -18,11 +18,11 @@ ms.manager: shellyha
 
 LAST UPDATED SEPTEMBER 2020 
 
-By accessing or using the services preview of the Dynamics 365 Customer Insights – Engagement insights (together with any Microsoft provided data sources, the “Services”), you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.   
+By accessing or using the services preview of the Dynamics 365 Customer Insights – Engagement insights (together with any Microsoft provided data sources, the “Services”), you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.
 
 ## 1. WHAT THIS AGREEMENT COVERS
 
-his is an agreement between you (“you,” “your,” “Customer,” “Participant,” or “Licensee”) and Microsoft Corporation, (“Microsoft, “we,” “us” or “our”). The terms and conditions of this agreement (“Agreement”) apply to your access and use of Services. For clarity, the Services covered by this Agreement include only Customer Insights – Engagement insights, and not other features or functionality of Customer Insights, including but not limited to Audience insights. The Services are optional evaluation services to obtain feedback prior to general release.  
+This is an agreement between you (“you,” “your,” “Customer,” “Participant,” or “Licensee”) and Microsoft Corporation, (“Microsoft, “we,” “us” or “our”). The terms and conditions of this agreement (“Agreement”) apply to your access and use of Services. For clarity, the Services covered by this Agreement include only Customer Insights – Engagement insights, and not other features or functionality of Customer Insights, including but not limited to Audience insights. The Services are optional evaluation services to obtain feedback prior to general release.  
 
 Certain Microsoft services or software may be necessary to use the Services (“Required Offerings”). Microsoft does not grant any rights under this Agreement to access or use Required Offerings. Rather, Required Offerings are separately licensed under any respective Microsoft Licensing Agreement, and may require paying a fee. If you are a subscriber of Dynamics 365 or other Microsoft services, your Dynamics 365 customer agreement or other Microsoft service agreement applies to your use of Dynamics 365 or other Microsoft services generally. This Agreement applies to your use of the Services specifically.  
 
