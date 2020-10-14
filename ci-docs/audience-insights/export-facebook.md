@@ -1,10 +1,10 @@
 ---
-title: "Export Customer Insights data to Facebook Ads Manager | Microsoft Docs"
+title: "Export Customer Insights data to Facebook Ads Manager"
 description: "Learn how to configure the connection to Facebook Ads Manager."
 ms.date: 06/05/2020
 ms.reviewer: philk
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -29,7 +29,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 1. Select **Continue with Facebook** to sign in to your Facebook Ad Account.
 
-1. Allow the **ads_management** permission to Customer Insights after authenticating with Facebook.
+1. Allow the **ads_management** permission after authenticating with Facebook.
 
 1. Select the **Facebook Ads Account** that you want to work with.
 
