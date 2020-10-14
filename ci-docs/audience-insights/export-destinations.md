@@ -1,10 +1,10 @@
 ---
-title: "Export destinations | Microsoft Docs"
-description: "Export data and manage export destinations in Dynamics 365 Customer Insights."
+title: "Export destinations"
+description: "Export data and manage export destinations."
 ms.date: 07/21/2020
 ms.reviewer: philk
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -12,7 +12,7 @@ manager: shellyha
 
 # Export destinations (preview)
 
-The **Export destinations** page shows you all locations you've set up to export data to. You can also add new destinations for export. Additionally, it shows extensibility options currently available in Customer Insights. Get a quick overview, description, and find out what you can do with each extensibility option. Export unified profiles, measures, and segments to supported apps relevant for your business.
+The **Export destinations** page shows you all locations you've set up to export data to. You can also add new destinations for export. Additionally, it shows export currently available options. Get a quick overview, description, and find out what you can do with each extensibility option. Export unified profiles, measures, and segments to supported apps relevant for your business.
 
 Go to **Admin** > **Export destinations** to find the following extensibility options:
 
@@ -30,7 +30,7 @@ Go to **Admin** > **Export destinations** to find the following extensibility op
 
 ## Add a new export destination
 
-To add destinations, you'll need to be an administrator of your Dynamics 365 Customer Insights instance. If you export to Microsoft services, we assume both services are in the same organization.
+To add export destinations, you have [administrator permissions](permissions.md). If you export to Microsoft services, we assume both services are in the same organization.
 
 1. Go to **Admin** > **Export destinations**.
 

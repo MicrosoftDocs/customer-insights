@@ -1,18 +1,18 @@
 ---
-title: "Entities in Dynamics 365 Customer Insights | Microsoft Docs"
-description: "View ingested data on the Entities page in Dynamics 365 Customer Insights."
+title: "Entities and datasets"
+description: "View data on the Entities page."
 ms.date: 04/16/2020
 ms.reviewer: mukeshpo
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
 ---
 
-# Entities in Customer Insights
+# Entities in audience insights
 
-After [configuring your data sources](data-sources.md), go to the **Entities** page to evaluate the quality of the ingested data. In Dynamics 365 Customer Insights, entities are considered datasets. Multiple capabilities of Customer Insights are built around these entities. Reviewing them closely can help you validate the output of those capabilities.
+After [configuring your data sources](data-sources.md), go to the **Entities** page to evaluate the quality of the ingested data. Entities are considered datasets. Multiple capabilities of Dynamics 365 Customer Insights are built around these entities. Reviewing them closely can help you validate the output of those capabilities.
 
 The **Entities** page lists entities and includes several columns:
 
