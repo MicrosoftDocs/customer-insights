@@ -1,7 +1,7 @@
 ---
 title: "Match entities in Dynamics 365 Customer Insights | Microsoft Docs"
 description: "Match entities to create unified customer profiles in Dynamics 365 Customer Insights."
-ms.date: 04/16/2020
+ms.date: 10/14/2020
 ms.service: dynamics-365-ai
 ms.topic: "get-started-article"
 author: m-hartmann
@@ -17,8 +17,6 @@ After completing the map phase, you're ready to match your entities. The match p
 ## Specify the match order
 
 Go to **Unify** > **Match** and select **Set order** to start the match phase.
-
-<!--remove example since it's not consistent?-->
 
 Each match unifies two or more entities into a single entity, while persisting each unique customer record. In the following example, we selected three entities: **ContactCSV: TestData** as the **Primary** entity, **WebAccountCSV: TestData** as **Entity 2**, and **CallRecordSmall: TestData** as **Entity 3**. The diagram above the selections illustrates how the match order will be executed.
 
@@ -98,9 +96,52 @@ Each condition applies to a single pair of attributes, while rules represent set
 > [!NOTE]
 > The rule order matters. The matching algorithm tries to match on the basis of your first rule and continues to the second rule only if no matches were identified under the first rule.
 
+## Define deduplication on a match entity
+
+Along with specifying cross entity matching rules as outlined in the above sections, you can also specify deduplications rules. *Deduplication* is a process. It identifies duplicate records, merges them into one record, and links all the source records to this merged record with alternate IDs to the merged record.
+
+After a deduplicated record is identified, that record will be used in the cross-entity matching process. Deduplication is implemented at the entity level and can be applied to every entity used in the Match process.
+
+### Add deduplication rules
+
+1. In Customer insights, go to **Data** > **Unify** > **Match**.
+
+1. In the **Merged duplicates** section, select **Set entities**.
+
+1. In the **Merge preferences** section, select the entities you want to apply deduplication to.
+
+1. Specify how to merge the duplicate records and choose one of three merge options:
+   - *Most filled*: Identifies the record with most filled attributes as the winner record. This is the default merge option.
+   - *Most recent*: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
+   - *Least recent*: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
+ 
+   > [!div class="mx-imgBorder"]
+   > ![Deduplication rules step 1](media/match-selfconflation.png "Deduplication rules step 1")
+ 
+1. Once the entities are selected and their merge preference is set, select **Create new rule** to define the deduplication rules at an entity level.
+   - **Select field** lists all the available fields from that entity you want to deduplicate source data on.
+   - Specify the normalization and precision settings in similar way as specified in the cross entity matching.
+   - You can define additional conditions by selecting **Add condition**.
+ 
+   > [!div class="mx-imgBorder"]
+   > ![Deduplication rules step 2](media/match-selfconflation-rules.png "Deduplication rules step 2")
+
+  You can create multiple deduplication rules for an entity. 
+
+1. Running the match process now groups the records based on the conditions defined in the deduplication rules. After grouping the records, the merge policy is applied to identify the winner record.
+
+1. This winner record is then passed on to the cross-entity matching.
+
+1. Any custom match rules defined for always match and never match overrule deduplication rules. If a deduplication rule identifies matching records, and a custom match rule is set to never match those records, then these two records won't be matched.
+
+1. After running the match process, you will see the deduplication stats.
+   
+> [!NOTE]
+> Specifying deduplication rules isn't mandatory. If no such rules are configured, the system-defined rules are applied. They collapse all records that share the same value combination (exact match) from primary key and the fields in the matching rules into a single record before passing the entity data to cross-entity matching for enhanced performance and system sanity.
+
 ## Run your match order
 
-After defining the match rules, you can run the match order. On the **Match** page, select **Run** to start the process. The matching algorithm might take some time to complete. You can't change properties on the **Match** page until the match process completes. You'll find the unified customer profile entity that was created on the **Entities** page. Your unified customer entity is called **ConflationMatchPairs : CustomerInsights**.
+After defining the match rules, including cross-entity matching and deduplication rules, you can run the match order. On the **Match** page, select **Run** to start the process. The matching algorithm might take some time to complete. You can't change properties on the **Match** page until the match process completes. You'll find the unified customer profile entity that was created on the **Entities** page. Your unified customer entity is called **ConflationMatchPairs:CustomerInsights**.
 
 To make additional changes and rerun the step, you can cancel a match in progress. Select the **Refreshing ...** text and select **Cancel job** at the bottom of the side pane that appears.
 
