@@ -1,10 +1,10 @@
 ---
-title: "Incremental refresh for Power Query-based data sources | Microsoft Docs"
+title: "Incremental refresh for Power Query-based data sources"
 description: "Refresh new and updated data for large data sources based on Power Query."
 ms.date: 09/28/2020
 ms.reviewer: adkuppa
 ms.service: dynamics-365-ai
-ms.topic: "article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -20,7 +20,7 @@ Incremental refresh for data sources provides the following advantages:
 
 ## Configure incremental refresh
 
-Dynamics 365 Customer Insights allows incremental refresh for data sources imported through Power Query that support incremental ingestion. For example, Azure SQL databases with date and time fields, which indicate when data records were last updated.
+Audience insights allows incremental refresh for data sources imported through Power Query that support incremental ingestion. For example, Azure SQL databases with date and time fields, which indicate when data records were last updated.
 
 1. [Create a new data source based on Power Query](connect-power-query.md).
 

@@ -1,10 +1,10 @@
 ---
-title: "Subscription churn prediction | Microsoft Docs"
+title: "Subscription churn prediction"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
 ms.date: 08/19/2020
 ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: "article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -16,9 +16,9 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 
 ## Prerequisites
 
-1. At least [Contributor permissions](permissions.md) in Customer Insights.
-1. Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription is ended.
-1. Data about your subscriptions and their history:
+- At least [Contributor permissions](permissions.md).
+- Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription is ended.
+- Data about your subscriptions and their history:
     - Subscription identifiers to distinguish subscriptions.
     - Customer identifiers to match subscriptions to your customers.
     - Subscription event dates, which define start dates, end dates, and the dates the subscription events occurred on.
@@ -31,7 +31,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
         - **Is it a recurring subscription:** A boolean true/false field that determines if the subscription will renew with the same subscription ID without customer intervention
         - **Recurrence Frequency (in months):** For recurring subscriptions, it's the period the subscription will renew for. It's represented in months. For example, a yearly subscription that automatically renews for a customer every year for another year has the value 12.
         - (Optional) **Subscription Amount:** The amount of currency a customer pays for the subscription renewal. It can help identify patterns for different levels of subscriptions.
-1. Data about customer activities:
+- Data about customer activities:
     - Activity identifiers to distinguish activities of the same type.
     - Customer identifiers to map activities to your customers.
     - Activity information containing the name and date of the activity.
@@ -45,7 +45,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 
 ## Create a subscription churn prediction
 
-1. In Customer Insights, go to **Intelligence** > **Predictions**.
+1. In audience insights, go to **Intelligence** > **Predictions**.
 1. Select the **Subscription churn model (preview)** tile and select **Use this model**.
    > [!div class="mx-imgBorder"]
    > ![Subscription Churn model tile with Use this model button](media/subscription-churn-usethismodel.PNG "Subscription Churn model tile with Use this model button")
@@ -91,7 +91,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 
 ### Set schedule and review configuration
 
-1. Set a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is imported into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. Set a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested in audience insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
 1. Select **Next**.
 1. Review the configuration. You can go back to any part of the prediction configuration by selecting **Edit** under the shown value. Or you can select a configuration step from the progress indicator.
 1. If all values are configured correctly, select **Save and run** to begin the prediction process. On the **My predictions** tab, you can see the status of your predictions. The process may take several hours to complete depending on the amount of data used in the prediction.
@@ -137,7 +137,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 1. Select the prediction you would like to view error logs for and select **Logs**.
    > [!div class="mx-imgBorder"]
    > ![View of results menu bar including close, edit model, and logs buttons](media/subscription-churn-logsbutton.PNG "View of results menu bar including close, edit model, and logs buttons")
-1. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading additional data into Customer Insights.
+1. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading additional data.
 
 ## Refresh a prediction
 
