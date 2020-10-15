@@ -4,8 +4,8 @@ author: m-hartmann
 description: Get an overview for Dynamics 365 Customer Insights and its capabilites.
 ms.author: mhart
 ms.date: 10/12/2020
-ms.service: product-insights
-ms.topic: 
+ms.service: customer-insights
+ms.topic: conceptual
 ---
 
 # Welcome to Customer Insights!
