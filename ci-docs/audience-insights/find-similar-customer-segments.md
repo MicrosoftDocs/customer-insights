@@ -2,7 +2,8 @@
 title: "Find similar customers with AI"
 description: "Find similar customer segments with artificial intelligence."
 ms.date: 06/25/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -2,7 +2,8 @@
 title: "Create and edit measures"
 description: "Define customer-related measures to analyze and reflect the performance of certain business areas."
 ms.date: 04/17/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

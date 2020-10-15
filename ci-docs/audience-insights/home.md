@@ -3,7 +3,8 @@ title: "Home page in audience insights"
 description: "Start exploring the app on the Home page."
 ms.date: 09/30/2020
 ms.reviewer: nimagen
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -2,7 +2,8 @@
 title: "Map entities for data unification"
 description: "Map data to create unified customer profiles."
 ms.date: 09/25/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -2,7 +2,8 @@
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
 ms.date: 10/14/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

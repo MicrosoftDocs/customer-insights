@@ -3,7 +3,8 @@ title: "Bot for Microsoft Teams"
 description: "Look up unified customer profiles in Microsoft Teams with the help of a bot."
 ms.date: 04/21/2020
 ms.reviewer: mhart
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: sthe

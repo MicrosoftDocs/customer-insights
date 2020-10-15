@@ -3,7 +3,8 @@ title: "Subscription churn prediction"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
 ms.date: 08/19/2020
 ms.reviewer: zacook
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

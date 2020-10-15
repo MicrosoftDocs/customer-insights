@@ -2,7 +2,8 @@
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
 ms.date: 10/08/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 ms.reviewer: nimagen
 author: m-hartmann

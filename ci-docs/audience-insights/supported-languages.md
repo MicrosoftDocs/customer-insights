@@ -2,7 +2,8 @@
 title: "Supported languages for audience insights"
 description: "Understand and configure language support."
 ms.date: 04/27/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

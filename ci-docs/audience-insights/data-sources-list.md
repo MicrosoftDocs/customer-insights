@@ -3,7 +3,8 @@ title: "Available data sources for Dynamics 365 Customer Insights | Microsoft Do
 description: "Inbound connectors for data sources in Dynamics 365 Customer Insights."
 ms.date: 03/20/2020
 ms.reviewer: adkuppa
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: "article"
 author: m-hartmann
 ms.author: mhart

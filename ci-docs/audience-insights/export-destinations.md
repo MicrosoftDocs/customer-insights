@@ -3,7 +3,8 @@ title: "Export destinations"
 description: "Export data and manage export destinations."
 ms.date: 07/21/2020
 ms.reviewer: philk
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

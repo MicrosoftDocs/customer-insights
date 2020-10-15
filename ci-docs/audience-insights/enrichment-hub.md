@@ -3,7 +3,8 @@ title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
 ms.date: 08/21/2020
 ms.reviewer: kishorem
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

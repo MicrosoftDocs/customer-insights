@@ -2,7 +2,8 @@
 title: "Customer activities"
 description: "Define customer activities and view them in customer timeline." 
 ms.date: 10/13/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.reviewer: adkuppa
 ms.topic: conceptual
 author: m-hartmann

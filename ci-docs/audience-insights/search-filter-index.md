@@ -3,7 +3,8 @@ title: "Search and filter customer profiles"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
 ms.date: 04/16/2020
 ms.reviewer: nimagen
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

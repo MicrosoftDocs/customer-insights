@@ -3,7 +3,8 @@ title: "Real-time data ingestion and limitations"
 description: "General information about real-time capabilities in audience insights."
 ms.date: 06/02/2020
 ms.reviewer: nikeller
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

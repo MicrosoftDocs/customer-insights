@@ -2,7 +2,8 @@
 title: "Complete partial data using predictions"
 description: "Use predictions to fill in incomplete customer data."
 ms.date: 05/05/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -3,7 +3,8 @@ title: "Work with APIs"
 description: "APIs and available methods for Dynamics 365 Customer Insights."
 ms.date: 04/17/2020
 ms.reviewer: nimagen
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

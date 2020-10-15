@@ -2,7 +2,8 @@
 title: "Create and manage segments"
 description: "Create segments of customers to group them based on various attributes."
 ms.date: 09/29/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

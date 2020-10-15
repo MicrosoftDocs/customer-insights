@@ -3,7 +3,8 @@ title: "Enrich customer profiles with Microsoft Graph"
 description: "Use proprietary data from the Microsoft Graph to enrich your customer data with brand and interest affinities."
 ms.date: 09/28/2020
 ms.reviewer: kishorem
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

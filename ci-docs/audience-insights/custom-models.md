@@ -3,7 +3,8 @@ title: "Custom machine learning models"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
 ms.date: 08/19/2020
 ms.reviewer: zacook
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

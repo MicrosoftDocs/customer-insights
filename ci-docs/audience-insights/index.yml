@@ -6,7 +6,8 @@ summary: Ingest, unify, and organize customer data from multiple sources. Create
 metadata:
   title: Audience insights documentation
   description: Help hub with key links for audience insights.
-  ms.service: dynamics-365-ai
+  ms.service: customer-insights
+ms.subservice: audience-insights
   ms.topic: landing-page
   ms.collection: collection
   author: m-hartmann

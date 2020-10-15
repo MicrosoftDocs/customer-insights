@@ -2,7 +2,8 @@
 title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
 ms.date: 09/29/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

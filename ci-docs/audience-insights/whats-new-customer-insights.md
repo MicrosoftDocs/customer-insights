@@ -2,7 +2,8 @@
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
 ms.date: 10/05/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -3,7 +3,8 @@ title: "Customer profiles"
 description: "Get a consolidated view of your unified customer data."
 ms.date: 04/16/2020
 ms.reviewer: nimagen
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

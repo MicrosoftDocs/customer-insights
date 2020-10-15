@@ -2,7 +2,8 @@
 title: "System configuration in audience insights"
 description: "Learn about system settings in Dynamics 365 Customer Insights audience insights capability."
 ms.date: 06/02/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

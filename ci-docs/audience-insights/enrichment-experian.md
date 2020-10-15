@@ -3,7 +3,8 @@ title: "Enrichment with the third-party enrichment Experian"
 description: "General information about the Experian third-party enrichment."
 ms.date: 09/17/2020
 ms.reviewer: kishorem
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

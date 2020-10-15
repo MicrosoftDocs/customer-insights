@@ -3,7 +3,8 @@ title: "Audience insights capability"
 description: "Overview of Dynamics 365 Customer Insights audience insights capability."
 ms.date: 02/05/2020
 ms.reviewer: nimagen
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

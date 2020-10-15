@@ -2,7 +2,8 @@
 title: "Merge entities in data unification"
 description: "Merge entities to create unified customer profiles."
 ms.date: 04/16/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
