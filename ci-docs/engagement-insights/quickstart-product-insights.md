@@ -28,7 +28,7 @@ This article explains how to create an engagement insights instance and set up a
 > [!IMPORTANT]
 > Data will not show in the workspace until the code has been implemented on your website.
 
-## Add members to an existing project
+## Add members to an existing workspace
 
 By default, only the person who created the workspace will have access. You can add other users from your organization to an existing workspace at any time.
 

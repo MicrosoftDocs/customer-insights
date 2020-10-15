@@ -18,7 +18,7 @@ ms.manager: shellyha
 
 The European Union’s General Data Protection Regulation (GDPR) has been in effect since May 25, 2018. It gives significant rights to individuals with regard to their data. The GDPR is about protecting and enabling the privacy rights of individuals. You can read more about Microsoft's commitment to security and compliance at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-## Deleting and exporting event data containing personal identifiable information
+## Deleting and exporting event data containing end user identifiable information
 
 The following sections describe how to delete and export event data that might contain end user identifiable information (EUII).
 
