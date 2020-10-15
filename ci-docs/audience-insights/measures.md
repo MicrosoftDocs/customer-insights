@@ -1,7 +1,7 @@
 ---
 title: "Create and edit measures"
 description: "Define customer-related measures to analyze and reflect the performance of certain business areas."
-ms.date: 04/17/2020
+ms.date: 10/15/2020
 ms.service: customer-insights
 ms.subservice:
 ms.topic: conceptual
@@ -17,7 +17,7 @@ manager: shellyha
 
 ## Create a measure
 
-This section walks you through creating a measure from scratch. You can build measures with data from multiple data sources that are connected through the Customer entity.
+This section walks you through creating a measure from scratch. You can build measures with data from multiple data sources that are connected through the Customer entity. Some [service limits](service-limits.md) apply.
 
 1. In audience insights, go to **Measures**.
 

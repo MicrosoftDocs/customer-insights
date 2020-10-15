@@ -1,7 +1,7 @@
 ---
 title: "Create and manage segments"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 09/29/2020
+ms.date: 10/15/2020
 ms.service: customer-insights
 ms.subservice:
 ms.topic: conceptual
@@ -15,7 +15,7 @@ manager: shellyha
 
 Segments let you group your customers based on demographic, transactional, or behavioral attributes. You can use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
 
-You can define complex filters around the Customer Profile entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on.
+You can define complex filters around the Customer Profile entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Some [service limits](service-limits.md) apply.
 
 Unless stated otherwise, all segments are **Dynamic segments**, which are refreshed on a recurring schedule.
 

@@ -137,6 +137,9 @@
         - name: Work with APIs
           href: audience-insights/apis.md
 
+    - name: Service limits
+      href: audience-insights/service-limits.md
+    
     - name: DSR requests under GDPR
       href: audience-insights/gdpr.md
 
