@@ -4,7 +4,7 @@ description: "Look up unified customer profiles in Microsoft Teams with the help
 ms.date: 04/21/2020
 ms.reviewer: mhart
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: sthe

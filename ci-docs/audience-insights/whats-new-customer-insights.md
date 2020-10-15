@@ -3,7 +3,7 @@ title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
 ms.date: 10/05/2020
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

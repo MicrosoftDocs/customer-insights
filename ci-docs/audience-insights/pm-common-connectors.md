@@ -4,7 +4,7 @@ description: "Learn how to work with frequently used connectors for data sources
 ms.date: 08/19/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: "get-started-article"
 author: m-hartmann
 ms.author: mhart

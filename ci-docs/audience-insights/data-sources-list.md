@@ -4,7 +4,7 @@ description: "Inbound connectors for data sources in Dynamics 365 Customer Insig
 ms.date: 03/20/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: "article"
 author: m-hartmann
 ms.author: mhart

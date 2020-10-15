@@ -4,7 +4,7 @@ description: "Use proprietary data from the Microsoft Graph to enrich your custo
 ms.date: 09/28/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

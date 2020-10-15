@@ -7,7 +7,7 @@ metadata:
   title: Audience insights documentation
   description: Help hub with key links for audience insights.
   ms.service: customer-insights
-  ms.subservice: audience-insights
+  ms.subservice:
   ms.topic: landing-page
   ms.collection: collection
   author: m-hartmann

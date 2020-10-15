@@ -4,7 +4,7 @@ description: "Predict whether a customer is at risk for no longer using your com
 ms.date: 08/19/2020
 ms.reviewer: zacook
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

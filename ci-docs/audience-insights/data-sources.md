@@ -3,7 +3,7 @@ title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
 ms.date: 09/29/2020
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

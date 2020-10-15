@@ -4,7 +4,7 @@ description: "General information about real-time capabilities in audience insig
 ms.date: 06/02/2020
 ms.reviewer: nikeller
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -3,7 +3,7 @@ title: "Find similar customers with AI"
 description: "Find similar customer segments with artificial intelligence."
 ms.date: 06/25/2020
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -3,7 +3,7 @@ title: "Create and manage segments"
 description: "Create segments of customers to group them based on various attributes."
 ms.date: 09/29/2020
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -3,7 +3,7 @@ title: "Connect to entities in the Common Data Service managed lake"
 description: "Import data from a Common Data Service managed data lake."
 ms.date: 09/29/2020
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

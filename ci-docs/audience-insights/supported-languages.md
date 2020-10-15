@@ -3,7 +3,7 @@ title: "Supported languages for audience insights"
 description: "Understand and configure language support."
 ms.date: 04/27/2020
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

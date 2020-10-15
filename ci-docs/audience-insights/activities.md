@@ -3,7 +3,7 @@ title: "Customer activities"
 description: "Define customer activities and view them in customer timeline." 
 ms.date: 10/13/2020
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.reviewer: adkuppa
 ms.topic: conceptual
 author: m-hartmann

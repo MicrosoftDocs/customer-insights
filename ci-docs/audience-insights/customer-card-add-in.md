@@ -4,7 +4,7 @@ description: "Install and configure the Customer Card add-in for Dynamics 365 Cu
 ms.date: 08/04/2020
 ms.reviewer: philk
 ms.service: customer-insights
-ms.subservice: audience-insights
+ms.subservice:
 ms.topic: conceptual    
 author: m-hartmann
 ms.author: mhart
