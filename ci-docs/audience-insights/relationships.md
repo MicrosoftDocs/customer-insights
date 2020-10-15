@@ -1,10 +1,10 @@
 ---
-title: "Relationships between entities | Microsoft Docs"
-description: "Create and manage relationships between entities from multiple data sources in Dynamics 365 Customer Insights."
+title: "Relationships between entities and entity paths"
+description: "Create and manage relationships between entities from multiple data sources."
 ms.date: 04/14/2020
 ms.reviewer: mukeshpo
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -29,7 +29,7 @@ During the match and merge processes, system relationships are created behind th
 
 Define custom relationships on the **Relationships** page. Each relationship consists of a Source entity (the entity that holds the foreign key) and a Target entity (the entity that the source entity's foreign key points to).
 
-1. In Customer Insights, go to **Data** > **Relationships**.
+1. In audience insights, go to **Data** > **Relationships**.
 
 2. Select **New relationship**.
 
@@ -52,7 +52,7 @@ Define custom relationships on the **Relationships** page. Each relationship con
 
 ## Delete a relationship
 
-1. In Customer Insights, go to **Data** > **Relationships**.
+1. In audience insights, go to **Data** > **Relationships**.
 
 2. Select check boxes for the relationships you want to delete.
 

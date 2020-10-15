@@ -1,9 +1,9 @@
 ---
-title: "Create and manage segments in Dynamics 365 Customer Insights | Microsoft Docs"
+title: "Create and manage segments"
 description: "Create segments of customers to group them based on various attributes."
 ms.date: 09/29/2020
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: jimsonc
@@ -12,22 +12,22 @@ manager: shellyha
 
 # Create and manage segments
 
-The segmentation capability in Dynamics 365 Customer Insights enables you to group your customers based on demographic, transactional, or behavioral attributes. You can use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
+Segments let you group your customers based on demographic, transactional, or behavioral attributes. You can use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
 
 You can define complex filters around the Customer Profile entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on.
 
-Unless stated otherwise, all segments in Customer Insights are **Dynamic segments**, which are refreshed on a recurring schedule.
+Unless stated otherwise, all segments are **Dynamic segments**, which are refreshed on a recurring schedule.
 
-The following example illustrates the depth of the Customer Insights segmentation capability. We've defined a segment for customers who ordered at least $500 of goods in the last 90 days *and* who were involved in a customer service call that got escalated.
+The following example illustrates the segmentation capability. We've defined a segment for customers who ordered at least $500 of goods in the last 90 days *and* who were involved in a customer service call that got escalated.
 
 > [!div class="mx-imgBorder"]
 > ![Multiple groups](media/segmentation-group1-2.png "Multiple groups")
 
 ## Create a new segment
 
-Segments are managed on the **Segments** page in Customer Insights.
+Segments are managed on the **Segments** page.
 
-1. Go to the **Segments** page in Customer Insights.
+1. In audience insights, go to the **Segments** page.
 
 2. Select **New** > **Blank segment**.
 
@@ -92,7 +92,7 @@ The following action are available when you select a segment:
 You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**.
 
 > [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes in Customer Insights. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
 
 ## Download and export segments
 
@@ -100,7 +100,7 @@ You can download your segments to a CSV file or export them to Dynamics 365 Sale
 
 ### Download segments to a CSV file
 
-1. Go to the **Segments** page.
+1. In audience insights, go to the **Segments** page.
 
 2. Select the ellipsis in a specific segment's tile.
 
@@ -110,7 +110,7 @@ You can download your segments to a CSV file or export them to Dynamics 365 Sale
 
 Before exporting segments to Dynamics 365 Sales, an admin needs to [create the export destination](export-destinations.md) for Dynamics 365 Sales.
 
-1. Go to the **Segments** page.
+1. In audience insights, go to the **Segments** page.
 
 2. Select the ellipsis in a specific segment's tile.
 
@@ -139,7 +139,7 @@ It's currently possible to nest an **OR** operator under an **AND** operator, bu
 
 Each group produces a specific set of customers. You can combine these groups to include the customers required for your business case.
 
-1. Open a segment on the **Segments** page.
+1. In audience insights, go to the **Segments** page and select a segment.
 
 2. Select **Add Group**.
 
@@ -181,7 +181,7 @@ The lower part contains a list of the segment members.
 
 ## Quick segments
 
-In addition to the segment builder, there's another path for creating segments in Customer Insights. Quick segments let you build simple segments with a single operator quickly and with instant insights.
+In addition to the segment builder, there's another path for creating segments. Quick segments let you build simple segments with a single operator quickly and with instant insights.
 
 1. On the **Segments** page, select **New** > **Quickly create from**.
 

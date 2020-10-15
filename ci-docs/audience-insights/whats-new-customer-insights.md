@@ -1,16 +1,16 @@
 ---
-title: "New and upcoming features (Dynamics 365 Customer Insights) | Microsoft Docs"
-description: "Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights releases."
+title: "New and upcoming features"
+description: "Information about new features, improvements, and bug fixes."
 ms.date: 10/05/2020
 ms.service: dynamics-365-ai
-ms.topic: "article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
 ---
 
-# What's new in Dynamics 365 Customer Insights
+# What's new in the audience insights capability of Dynamics 365 Customer Insights
 
 We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](https://docs.microsoft.com/dynamics365/release-plans/).
 
@@ -25,7 +25,7 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 ## September 2020 updates
 
-The Dynamics 365 Customer Insights updates in September 2020 include several features, performance upgrades, and bug fixes.
+The updates in September 2020 include several features, performance upgrades, and bug fixes.
 
 ### New and updated features in September 2020
 
@@ -72,7 +72,7 @@ When you cancel a task, for example, in the match process, it will revert back t
 
 ## August 2020 updates
 
-The Dynamics 365 Customer Insights updates in August 2020 include several features, performance upgrades, and bug fixes.
+The updates in August 2020 include several features, performance upgrades, and bug fixes.
 
 ### New and updated features in August 2020
 
@@ -98,7 +98,7 @@ The Dynamics 365 Customer Insights updates in August 2020 include several featur
 
 ## July 2020 updates
 
-The Dynamics 365 Customer Insights updates in July 2020 include several features, performance upgrades, and bug fixes.
+The updates in July 2020 include several features, performance upgrades, and bug fixes.
 
 ### New and updated features in July 2020
 
@@ -118,7 +118,7 @@ The Dynamics 365 Customer Insights updates in July 2020 include several features
 
 ## June 2020 updates
 
-The Dynamics 365 Customer Insights updates in June 2020 include several features, performance upgrades, and bug fixes.
+The updates in June 2020 include several features, performance upgrades, and bug fixes.
 
 ### New and updated features in June 2020
 
@@ -127,7 +127,7 @@ The Dynamics 365 Customer Insights updates in June 2020 include several features
 - **Enrichment with company data from Leadspace**
   
   Define fields in unified customer profiles that are used to look up related company data from Leadspace. After running the enrichment process, B2B profiles are enriched with additional attributes including company size, location, industry, and more.    
-  This collaboration allows you to improve the quality of your data with input from third-party services. To use this enrichment, you'll need a license from Leadspace to access its B2B company data. Customer Insights will use that license to keep your data enriched continuously.    
+  This collaboration allows you to improve the quality of your data with input from third-party services. To use this enrichment, you'll need a license from Leadspace to access its B2B company data. The system will use that license to keep your data enriched continuously.    
   For more information, see [Enrichment of company profiles with Leadspace](enrichment-leadspace.md).
 
 - **Enrichment hub page**
@@ -144,7 +144,7 @@ The Dynamics 365 Customer Insights updates in June 2020 include several features
 
 - **Clickable URLs for unified activities on the Dynamics 365 Customer Card Add-in**
 
-  The unified activities in the Customer Card Add-in are now showing clickable URLs if such URLs have been defined in Customer Insights during the configuration of activities.    
+  The unified activities in the Customer Card Add-in are now showing clickable URLs if such URLs have been defined during the configuration of activities.    
   For more information, see [Customer Card Add-in](customer-card-add-in.md).
 
 - **Brand and interest affinities available on the Dynamics 365 Customer Card Add-in**
@@ -161,7 +161,7 @@ The Dynamics 365 Customer Insights updates in June 2020 include several features
 
 - **Export to Facebook Ads Manager**
   
-  This capability lets you export segments from Customer Insights to Facebook Ads Manager. Segments are exported as custom audiences to use unified customer profiles from Customer Insights in Facebook marketing campaigns and ads. The custom audiences are also usable to create campaigns on Instagram through Facebook Ads Manager.    
+  This capability lets you export segments to Facebook Ads Manager. Segments are exported as custom audiences to use unified customer profiles in Facebook marketing campaigns and ads. The custom audiences are also usable to create campaigns on Instagram through Facebook Ads Manager.    
   For more information, see [Connector for Facebook Ads Manager](export-facebook.md).
 
 #### Predictions
@@ -170,7 +170,7 @@ The Dynamics 365 Customer Insights updates in June 2020 include several features
 
   Follow a guided experience to create churn prediction in subscription areas like cloud services, customer membership, and other sectors. 
 
-  The subscription churn prediction feature enables you to predict the likelihood of a customer stopping the use of subscription-based products or services without engaging a data scientist. Using the prediction score, you can combine other information about your customers to create segments of high churn risk. With the help of this segment, you can use integrations with Customer Insights to directly target customers in marketing, customer support, and other scenarios to reduce the risk of churn for specific customers to improve revenue and reduce cost.
+  The subscription churn prediction feature enables you to predict the likelihood of a customer stopping the use of subscription-based products or services without engaging a data scientist. Using the prediction score, you can combine other information about your customers to create segments of high churn risk. With the help of this segment, you can directly target customers in marketing, customer support, and other scenarios to reduce the risk of churn for specific customers to improve revenue and reduce cost.
 
   Within the experience, you can configure the definition of churn as a time-based window specific to your business. For example, a video streaming business that has a monthly subscription process might want to consider a customer to have churned after 15 days after the expiration of their subscription.
 
@@ -200,7 +200,7 @@ The Dynamics 365 Customer Insights updates in June 2020 include several features
 
 ## May 2020 updates
 
-The Dynamics 365 Customer Insights updates in May 2020 includes several features, performance upgrades, and bug fixes.
+The updates in May 2020 includes several features, performance upgrades, and bug fixes.
 
 ### New and updated features in May 2020
 
@@ -214,14 +214,14 @@ The Dynamics 365 Customer Insights updates in May 2020 includes several features
 - **Real-time data ingestion: profile updates**
 
   This extension of the real-time data ingestion lets you see, within seconds, changes to specific user profile fields.    
-  In addition to the real-time functionality for activities, Customer Insights supports low latency updates to profile fields. Real-time updates for profile fields have an expiration time and are therefore not a replacement for scheduled refreshes.    
+  In addition to the real-time functionality for activities, the system supports low latency updates to profile fields. Real-time updates for profile fields have an expiration time and are therefore not a replacement for scheduled refreshes.    
   For more information, see [Real-time data ingestion](real-time-data-ingestion.md).
 
 #### Extensibility
 
 - **Updated timeline and pagination on the Customer Card Add-in**
 
-  The timeline of the Customer Card Add-in solution matches the activity timeline in Customer Insights. The pagination of the timeline improved, showing up to 50 activities at once. It also allows loading additional activities in the timeline.    
+  The timeline of the Customer Card Add-in solution matches the activity timeline. The pagination of the timeline improved, showing up to 50 activities at once. It also allows loading additional activities in the timeline.    
   For more information, see [Customer Card Add-in](customer-card-add-in.md).
 
 - **Power Automate trigger for segment changes**
@@ -231,14 +231,14 @@ The Dynamics 365 Customer Insights updates in May 2020 includes several features
 
 - **Multitenant support for custom models**
 
-  Configure workflows for custom models with a web service of a different Azure Machine Learning tenant. You can sign in to the Azure Machine Learning tenant from Customer Insights when creating a new workflow for custom models. This capability is an addition to the existing capability of integrating with your own custom Azure Machine Learning web service.    
+  Configure workflows for custom models with a web service of a different Azure Machine Learning tenant. You can sign in to the Azure Machine Learning tenant when creating a new workflow for custom models. This capability is an addition to the existing capability of integrating with your own custom Azure Machine Learning web service.    
   For more information, see [Custom machine learning models](custom-models.md).
 
 #### Segments
 
 - **Entity path automation**
 
-  When creating a segment in Customer Insights, users need to define the entity path. This capability takes a first step at automating the entity path definition so you can focus on the segmentation criteria that you have in mind.    
+  When creating a segment, users need to define the entity path. This capability takes a first step at automating the entity path definition so you can focus on the segmentation criteria that you have in mind.    
   If the entity by which you want to segment your customers is directly related to the unified customer entity, you won't need to define the entity path anymore. However, if there is more than one possible entity path, you still need to define it manually.
 
 - **Actions on multiple segments**
@@ -268,7 +268,7 @@ The Dynamics 365 Customer Insights updates in May 2020 includes several features
 
 ## April 2020 updates
 
-The Dynamics 365 Customer Insights updates in April 2020 includes several features, performance upgrades, and bug fixes.
+The updates in April 2020 includes several features, performance upgrades, and bug fixes.
 
 ### New and updated features in April 2020
 
@@ -283,7 +283,7 @@ The Dynamics 365 Customer Insights updates in April 2020 includes several featur
 
 - **Real-time data ingestion: activities**
   
-  Real-time data ingestion provides data immediately for consumption in Customer Insights, until the subsequent scheduled refresh pulls this data from the data source.    
+  Real-time data ingestion provides data immediately for consumption, until the subsequent scheduled refresh pulls this data from the data source.    
   For more information, see [Real-time data ingestion](real-time-data-ingestion.md).
 
 - **Improvements to data preparation**
@@ -293,7 +293,7 @@ The Dynamics 365 Customer Insights updates in April 2020 includes several featur
 
 - **Ingest analytical data from Dynamics 365 with Common Data Service**
   
-  Common Data Service is available as a way to create data sources in Customer Insights. Existing Dynamics 365 customers can ingest analytical entities from Common Data Service to Customer Insights. A single data source can simultaneously use the same Common Data Service-managed lake in a Customer Insights instance.    
+  Common Data Service is available as a way to create data sources. Existing Dynamics 365 customers can ingest analytical entities from Common Data Service to Customer Insights. A single data source can simultaneously use the same Common Data Service-managed lake in a Customer Insights instance.    
   For more information, see [Connect to data in a Common Data Service managed data lake](connect-common-data-service-lake.md).
 
 #### Extensibility
@@ -330,5 +330,5 @@ The Dynamics 365 Customer Insights updates in April 2020 includes several featur
 
 - **Copy configuration settings to a new environment**
   
-  Copy your Customer Insights configuration from one environment to another. While creating a new environment, you can select an existing environment you want to copy the configuration from. We currently support data sources, data unification, relationships, measures, and segments to be copied. Data source credentials and actual data aren't copied.    
+  Copy your configuration from one environment to another. While creating a new environment, you can select an existing environment you want to copy the configuration from. We currently support data sources, data unification, relationships, measures, and segments to be copied. Data source credentials and actual data aren't copied.    
   For more information, see [Manage environments](manage-environments.md).

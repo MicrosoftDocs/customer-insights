@@ -22,7 +22,7 @@ With audience insights, organizations can:
 
 - **Eliminate data silos and unify customer data**
 
-  - Connect and unify your data with ease—bring in transactional, observational, and behavioral data from popular [data sources by using prebuilt connectors](data-sources-list.md).
+  - Connect and unify your data with ease—bring in transactional, observational, and behavioral data from popular [data sources by using prebuilt connectors](data-sources.md).
   - Transform customer data intelligently—build unified customer profiles conforming to the [Common Data Model](https://docs.microsoft.com/common-data-model/). Resolve customer identities with AI/ML-driven recommendations.
 
 - **Enrich with audience intelligence contained within Microsoft Graph**

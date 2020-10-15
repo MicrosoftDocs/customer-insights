@@ -33,10 +33,10 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: List of data sources
-            url: data-sources-list.md
           - text: Add data sources
             url: data-sources.md
+          - text: Incremental refresh
+            url: incremental-refresh-data-sources.md
           - text: Understand entities
             url: entities.md
 
