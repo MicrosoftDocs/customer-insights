@@ -1,9 +1,9 @@
 ---
-title: "Match entities in Dynamics 365 Customer Insights | Microsoft Docs"
-description: "Match entities to create unified customer profiles in Dynamics 365 Customer Insights."
+title: "Match entities for data unification"
+description: "Match entities to create unified customer profiles."
 ms.date: 10/14/2020
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
@@ -87,7 +87,7 @@ To match your entities only if multiple conditions are met, add more conditions 
 
 Each condition applies to a single pair of attributes, while rules represent sets of conditions. To have your entities matched by different sets of attributes, you can add more rules.
 
-1. In Customer Insights, go to the **Match** page.
+1. In audience insights, go to **Data** > **Unify** > **Match**.
 
 2. Select the entity you want to update and select **Add rules**.
 
@@ -104,7 +104,7 @@ After a deduplicated record is identified, that record will be used in the cross
 
 ### Add deduplication rules
 
-1. In Customer insights, go to **Data** > **Unify** > **Match**.
+1. In audience insights, go to **Data** > **Unify** > **Match**.
 
 1. In the **Merged duplicates** section, select **Set entities**.
 
@@ -150,7 +150,7 @@ When the match process is complete, the **Refreshing ...** text will change to *
 The first match process results in the creation of a unified master entity. All subsequent match runs result in the expansion of that entity.
 
 > [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes in Customer Insights. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
 
 ## Review and validate your matches
 
@@ -226,7 +226,7 @@ You can specify conditions that certain records should always match or never mat
 
 5. After adding all the overrides you want to apply, save the template file.
 
-6. In Customer Insights, go to **Data sources** and ingest the template files as new entities. Once ingested, you can use them to specify the Match configuration.
+6.Go to **Data** > **Data sources** and ingest the template files as new entities. Once ingested, you can use them to specify the Match configuration.
 
 7. After uploading the files and entities are available, select the **Custom match** option again. You'll see options to specify the entities you want to include. Select the required entities from the drop-down menu.
 

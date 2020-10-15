@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Dynamics 365 Customer Insights
-summary: Welcome to Customer Insights, your Customer Data Platform (CDP)! Ingest, unify, and organize customer data from multiple sources. Create and manage customer profiles and real-time segmentation. Integrate customer data with other systems to make it even more actionable.
+title: Audience insights capability in Dynamics 365 Customer Insights
+summary: Ingest, unify, and organize customer data from multiple sources. Create and manage customer profiles and real-time segmentation. Integrate customer data with other systems to make it even more actionable.
 
 metadata:
-  title: Customer Insights documentation
-  description: Help hub with key links for Dynamics 365 Customer Insights.
+  title: Audience insights documentation
+  description: Help hub with key links for audience insights.
   ms.service: dynamics-365-ai
   ms.topic: landing-page
   ms.collection: collection
@@ -18,7 +18,7 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  - title: About Customer Insights
+  - title: About audience insights
     linkLists:
       - linkListType: overview
         links:
@@ -74,7 +74,7 @@ landingContent:
           - text: Power BI connector
             url: export-power-bi.md
 
-  - title: Administer Customer Insights
+  - title: Administer the app
     linkLists:
       - linkListType: how-to-guide
         links:

@@ -1,9 +1,9 @@
 ---
-title: "Manage environments in Dynamics 365 Customer Insights | Microsoft Docs"
-description: "Create and manage environments in Dynamics 365 Customer Insights."
+title: "Create and manage environments"
+description: "Learn how to sign up for the service and how to manage environments."
 ms.date: 10/08/2020
 ms.service: dynamics-365-ai
-ms.topic: "article"
+ms.topic: conceptual
 ms.reviewer: nimagen
 author: m-hartmann
 ms.author: mhart
@@ -12,9 +12,9 @@ manager: shellyha
 
 # Manage environments
 
-This article explains how to create a Dynamics 365 Customer Insights instance and how to provision an environment.
+This article explains how to create a new organization and how to provision an environment.
 
-## Sign up for Customer Insights and create an organization
+## Sign up and create an organization
 
 1. Go to the [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) website.
 
@@ -30,7 +30,7 @@ This article explains how to create a Dynamics 365 Customer Insights instance an
 
 7. After specifying the environment settings, select **Create**.
 
-8. You'll be signed in to Customer Insights when the environment was created successfully.
+8. You'll be signed in after the environment was created successfully.
 
 ## Create an environment in an existing organization
 
@@ -50,7 +50,7 @@ To create an environment:
    If you want to [copy data from the current environment](#additional-considerations-for-copy-configuration-preview), select **Copy from existing environment**. You'll see a list of all available environments in your organization where you can copy data from.
 
 1. Provide the following details:
-   - **Name**: The name that represents this environment in the Customer Insights app. This field is already filled in if you've copied an existing environment, but you can change it.
+   - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
    - **Region**: The region into which the service is deployed and hosted.
    - **Type**: Select whether you want to create a Production or Sandbox environment.
 
@@ -62,16 +62,14 @@ To create an environment:
    > By saving data to Azure Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account, which may differ from where data is stored in Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)
    >
    > Currently, ingested entities are always stored in the Customer Insights managed data lake.
-   > We support only Azure Data Lake Gen2 storage accounts from the same Azure region you selected above to provision your Customer Insights environment. Specifying an Azure Data Lake from a different Azure region is not supported.
-   > We support only Azure Data Lake Gen2 Hierarchical Name Space (HNS) enabled storage accounts. Non-HNS storage accounts aren't supported yet.
+   > We support only Azure Data Lake Gen2 storage accounts from the same Azure region you selected when creating the environment.
+   > We support only Azure Data Lake Gen2 Hierarchical Name Space (HNS) enabled storage accounts.
 
    - For the Azure Data Lake Storage Gen2 option, you need to specify the **Account name** and **Account key** for your storage account. The **Container** name can't be changed.
    
+   - If you want to use [predictions](predictions.md), enter the Common Data Service instance URL in the **Server address** field under **Use predictions**.
 
-
-   - If you want to use [predictions](predictions.md), enter your Common Data Service instance URL in the **Server address** field under **Use predictions**.
-
-   When you run processes in Customer Insights, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to the respective subfolders based on the process you run.
+   When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to the respective subfolders based on the process you run.
 
    If you create multiple instances of Customer Insights and choose to save the output entities from those instances in your storage account, separate folders will be created for each instance with ci_<instanceid> in the container.
 

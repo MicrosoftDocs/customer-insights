@@ -1,9 +1,9 @@
 ---
-title: "Map data in Dynamics 365 Customer Insights | Microsoft Docs"
-description: "Map data to create unified customer profiles in Dynamics 365 Customer Insights."
+title: "Map entities for data unification"
+description: "Map data to create unified customer profiles."
 ms.date: 09/25/2020
 ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
@@ -12,17 +12,17 @@ manager: shellyha
 
 # Map entities and attributes
 
-**Map** is the first stage in the data unification process in Dynamics 365 Customer Insights. Mapping consists of three phases:
+**Map** is the first stage in the data unification process of audience insights. Mapping consists of three phases:
 
 - *Entity selection*: Identify the combinable entities that lead to a dataset with more complete information about your customers.
-- *Attribute selection*: For each entity, identify the columns you want to combine and reconcile in the *match* and *merge* phases. In Customer Insights, these columns are called *Attributes*.
+- *Attribute selection*: For each entity, identify the columns you want to combine and reconcile in the *match* and *merge* phases. These columns are called *Attributes*.
 - *Primary key and semantic type selection*: For each entity, identify an attribute you want to define as the primary key for that entity, and for each attribute, identify a semantic type that best describes that attribute.
 
 For more information about the general flow of data unification, see [Unify](data-unification.md).
 
 ## Select the first entities
 
-1. In Customer Insights, go to **Data** > **Unify** > **Map**.
+1. In audience insights, go to **Data** > **Unify** > **Map**.
 
 2. Start the map phase by selecting **Select entities**.
 
