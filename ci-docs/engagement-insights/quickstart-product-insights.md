@@ -16,7 +16,7 @@ ms.manager: shellyha
 
 This article explains how to create an engagement insights instance and set up an environment.
 
-## Sign up for  Dynamics 365 Customer Insights engagement insights capability and create a workspace
+## Sign up and create a workspace
 
 1. In your browser, go to the [Dynamics 365 Customer Insights](https://pi.dynamics.com/) website. Create a new account, or sign in with your existing credentials.
 2. Once signed in, you'll see the **Get started with engagement insights capability!** dialog box. Select your current region, and use the check box to indicate whether you want to opt in to receive updates and offers via email.
@@ -62,5 +62,4 @@ You can create additional workspaces to classify your data.
 
 ## Switch between workspaces
 
-To view your workspaces, select the **workspace switcher** at the bottom of the navigation pane
- and choose the workspace you want to open from the list.
+To view your workspaces, select the **workspace switcher** at the bottom of the navigation pane and choose the workspace you want to open from the list.
