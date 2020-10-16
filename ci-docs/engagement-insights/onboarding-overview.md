@@ -4,7 +4,8 @@ author: ruthaisabokhae
 description: Learn what you need to do to take advantage of the private preview capabilities of Dynamics 365 Customer Insights engagement insights capability
 ms.author: ruthai
 ms.date: 08/13/2020
-ms.service: product-insights
+ms.service: customer-insights
+ms.subservice: 
 ms.topic: conceptual
 robots: noindex,nofollow
 ---

@@ -5,7 +5,8 @@ ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
 ms.date: 10/12/2020
-ms.service: product-insights
+ms.service: customer-insights
+ms.subservice: 
 ms.topic: conceptual
 ms.manager: shellyha
 ---
