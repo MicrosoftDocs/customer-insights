@@ -26,7 +26,7 @@ landingContent:
           - text: Release plans
             url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
           - text: What's new
-            url: audience-insights/whats-new-audicene-insights.md
+            url: audience-insights/whats-new-audience-insights.md
 
   - title: Get started
     linkLists:
@@ -54,11 +54,11 @@ landingContent:
     linkLists:
       - linkListType: tutorial
         links: 
-          - name: Create a new environment
+          - text: Create a new environment
             url: audience-insights/home.md
-          - name: Create a unified customer profile
+          - text: Create a unified customer profile
             url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
-          - name: Work with the app
+          - text: Work with the app
             url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
 
   - title: Export customer data
@@ -66,19 +66,19 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Set up export destinations
-            url: export-destinations.md
+            url: audience-insights/export-destinations.md
           - text: Customer cards in Dynamics 365 apps 
-            url: customer-card-add-in.md
+            url: audience-insights/customer-card-add-in.md
           - text: Power BI connector
-            url: export-power-bi.md
+            url: audience-insights/export-power-bi.md
 
   - title: Administer audience insights
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Configure the system
-            url: system.md
+            url: audience-insights/system.md
           - text: Define user permissions 
-            url: permissions.md
+            url: audience-insights/permissions.md
           - text: Manage multiple environments
-            url: manage-environments.md
+            url: audience-insights/manage-environments.md

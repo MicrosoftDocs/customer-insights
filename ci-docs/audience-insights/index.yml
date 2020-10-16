@@ -25,7 +25,7 @@ landingContent:
           - text: Product overview
             url: overview.md
           - text: New and updated features
-            url: whats-new-customer-insights.md
+            url: whats-new-audience-insights.md
           - text: Community site
             url: https://go.microsoft.com/fwlink/?linkid=2073991
 
