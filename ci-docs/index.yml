@@ -5,38 +5,38 @@ metadata:
   author: m-hartmann
   description: Find relevant articles to start with help content.
   ms.author: mhart
-  ms.date: 10/08/2020
+  ms.date: 10/16/2020
   ms.service: product-insights
-  ms.topic: 
+  ms.topic: landing-page
 
-title: Welcome to Dynamics 365 Customer Insights documentation
-summary: The Microsoft customer data platform (CDP) powers personalized experiences with a holistic view of customers and unmatched time to insight.
+title: Dynamics 365 Customer Insights documentation
+summary: Find helpful resources to get started and learn about all the features and capabilites of Customer Insights.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  - title: Learn about Customer Insights
+  - title: Meet Customer Insights
     linkLists:
       - linkListType: overview
         links:
-          - text: Product overview
-            url: overview.md
+          - text: Audience insights overview
+            url: audience-insights/overview.md
           - text: Release plans
-            url: audience-insights/index.yml
+            url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
           - text: What's new
-            url: audience-insights/index.yml
+            url: audience-insights/whats-new-audicene-insights.md
 
-  - title: Sign up
+  - title: Get started
     linkLists:
-      - linkListType: tutorial
+      - linkListType: get-started
         links: 
-          - text: Create an oranization
-            url: audience-insights/index.yml
-          - text: Manage users
-            url: audience-insights/index.yml
-          - text: Manage permissions
+          - text: Sign up for a trial
+            url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+          - text: Access your instance
+            url: https://home.ci.ai.dynamics.com/
+          - text: Audience insights documentation
             url: audience-insights/index.yml
 
   - title: Get in touch
@@ -44,34 +44,41 @@ landingContent:
       - linkListType: tutorial
         links: 
           - text: Join the Dynamics 365 community
-            url: audience-insights/index.yml
+            url: https://go.microsoft.com/fwlink/?linkid=2073991
           - text: Share your ideas
-            url: audience-insights/index.yml
+            url: https://go.microsoft.com/fwlink/?linkid=2074172
           - text: Report an issue
-            url: audience-insights/index.yml
+            url: https://go.microsoft.com/fwlink/?linkid=2079641
 
-  - title: Audience insights
+  - title: Audience insights tutorials
     linkLists:
       - linkListType: tutorial
         links: 
-          - text: Help hub
-            url: audience-insights/index.yml
-          - text: Top task 1
-            url: audience-insights/index.yml
-          - text: Top task 2
-            url: audience-insights/index.yml
-          - text: Top task 3
-            url: audience-insights/index.yml
+          - name: Create a new environment
+            url: audience-insights/home.md
+          - name: Create a unified customer profile
+            url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+          - name: Work with the app
+            url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
 
-  - title: Engagement insights
+  - title: Export customer data
     linkLists:
-      - linkListType: tutorial
-        links: 
-          - text: Help hub
-            url: engagement-insights/index.md
-          - text: Top task 1
-            url: audience-insights/index.yml
-          - text: Top task 2
-            url: audience-insights/index.yml
-          - text: Top task 3
-            url: audience-insights/index.yml
+      - linkListType: how-to-guide
+        links:
+          - text: Set up export destinations
+            url: export-destinations.md
+          - text: Customer cards in Dynamics 365 apps 
+            url: customer-card-add-in.md
+          - text: Power BI connector
+            url: export-power-bi.md
+
+  - title: Administer audience insights
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Configure the system
+            url: system.md
+          - text: Define user permissions 
+            url: permissions.md
+          - text: Manage multiple environments
+            url: manage-environments.md
