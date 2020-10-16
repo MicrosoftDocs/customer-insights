@@ -4,8 +4,15 @@
 - name: Product overview
   href: overview.md
 
+- name: Access your instance
+  href: https://home.ci.ai.dynamics.com/
+
 - name: Audience insights
   items:
+
+    - name: Help hub
+      href: audience-insights/index.yml
+
     - name: Capability overview
       href: audience-insights/overview.md
 
@@ -143,67 +150,8 @@
     - name: DSR requests under GDPR
       href: audience-insights/gdpr.md
 
-- name: Engagement insights (preview)
-  items:
-    - name: Capability overview
-      href: engagement-insights/index.md
-
-    - name: Quickstart
-      items: 
-        - name: Quickstart for public preview
-          href: engagement-insights/index.md
-
-    - name: Get started
-      items:
-        - name: Create a workspace
-          href: engagement-insights/index.md
-        - name: Create and export user data
-          href: engagement-insights/index.md
-
-    - name: Reports
-      items: 
-        - name: View reports
-          href: engagement-insights/index.md
-
-    - name: Developer resources
-      items: 
-        - name: Developer resources overview
-          href: engagement-insights/index.md
-        - name: Web SDK tutorial
-          href: engagement-insights/index.md
-        - name: Web SDK sample
-          href: engagement-insights/index.md
-
-    - name: Events
-      items: 
-        - name: Create and modify events
-          href: engagement-insights/index.md
-        - name: Export events
-          href: engagement-insights/index.md
-
-    - name: Administration
-      items: 
-        - name: Manage cookies and user consent
-          href: engagement-insights/index.md
-        - name: Manage environments, workspaces, and roles
-          href: engagement-insights/index.md
-
-    - name: GDPR
-      items: 
-        - name: Manage GDPR compliance
-          href: engagement-insights/index.md
-        - name: Delete and export signal data??
-          href: engagement-insights/index.md
-
-    - name: Known issues
-      href: audience-insights/index.yml
-
 - name: Free trial
   href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
 
-- name: Access your instance
-  href: https://home.ci.ai.dynamics.com/
-
 - name: Contact support
-  href: audience-insights/index.yml
-
+  href: https://go.microsoft.com/fwlink/?linkid=2079641
