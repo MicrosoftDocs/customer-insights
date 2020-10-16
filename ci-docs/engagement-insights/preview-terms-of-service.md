@@ -116,7 +116,7 @@ As part of your use of the Services, we grant you a limited right to: (a) instal
 
 We reserve all other rights to such Software. You may not disassemble, decompile, or reverse engineer any such Software included in the Services, except and only to the extent that the law expressly permits this activity. Notwithstanding these restrictions, you may (a) incorporate applicable binary portions of the Software into Licensee’s programs, solely as contemplated by the documentation; or (b) creating custom events during Licensee’s use of the Software. 
 
-The Software is subject to United States export laws and regulations. You must comply with all domestic and international export laws and regulations that apply to the Software. These laws include restrictions on destinations, end users and end use. For additional information, see http://aka.ms/exporting. 
+The Software is subject to United States export laws and regulations. You must comply with all domestic and international export laws and regulations that apply to the Software. These laws include restrictions on destinations, end users and end use. For additional information, see https://aka.ms/exporting. 
 
 Unless we notify you otherwise, your license to use the Software provided by us as part of the Services will end when your right to use the Services ends, and you must promptly uninstall the Software. We may disable the Software at this time. 
 

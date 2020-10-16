@@ -157,12 +157,12 @@
         - name: Create and export user data - tbc
           href: engagement-insights/index.md
         - name: Concepts and terminology
-          href: engagement-insights/concepts-terminology.md
+          href: engagement-insights/glossary.md
 
     - name: Reports
       items: 
         - name: View reports
-          href: engagement-insights/reports.md
+          href: engagement-insights/view-reports.md
 
     - name: Developer resources
       items: 
@@ -176,7 +176,7 @@
     - name: Events
       items: 
         - name: Create and modify events
-          href: engagement-insights/derived-signals.md
+          href: engagement-insights/create-modify-refined-events.md
         - name: Export events
           href: engagement-insights/export-events.md
 
@@ -189,8 +189,8 @@
 
     - name: GDPR
       items: 
-        - name: Delete and export signal data??
-          href: engagement-insights/delete-export-signal-data.md
+        - name: Delete and export personal data
+          href: engagement-insights/delete-export-EUII-data.md
 
     - name: Known issues
       href: engagement-insights/known-issues.md
