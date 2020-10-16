@@ -41,7 +41,7 @@ landingContent:
 
   - title: Get in touch
     linkLists:
-      - linkListType: tutorial
+      - linkListType: overview
         links: 
           - text: Join the Dynamics 365 community
             url: https://go.microsoft.com/fwlink/?linkid=2073991
