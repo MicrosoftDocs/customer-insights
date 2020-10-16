@@ -76,7 +76,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 1. Select **Next**.
 1. Map the semantic fields to attributes within your subscription history entity and select **Save**. For descriptions of the fields, have a look at the [prerequisites](#prerequisites).
    > [!div class="mx-imgBorder"]
-   > ![Define the entity relationship](media/subscription-churn-subscriptionhistorymapping.PNG "Subscription history page showing semantic attributes that are mapped to fields in the selected subscription history entity")
+   > ![Subscription history page showing semantic attributes that are mapped to fields in the selected subscription history entity](media/subscription-churn-subscriptionhistorymapping.PNG "Subscription history page showing semantic attributes that are mapped to fields in the selected subscription history entity")
 1. Select **Add data** for **Customer activities** and choose the entity that provides the customer activity information as described in the prerequisites.
 1. Select an activity type that matches to the type of customer activity you're configuring.  Select **Create new** and provide a name if you don't see an option that matches the activity type you need.
 1. You'll need to configure the relationship from your customer activity entity to the Customer entity.
