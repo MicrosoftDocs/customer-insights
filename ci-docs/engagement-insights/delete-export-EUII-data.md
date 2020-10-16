@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: shellyha
 ---
 
-# Delete and export event data for personal protection
+# Delete and export event data containing personal information
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

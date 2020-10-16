@@ -36,9 +36,6 @@ The visitor profile section contains three reports:
 
 ## Key metrics reports
 
-
-<!-- From editor: Please make sure the wording change in the next sentence is accurate. --> 
-
 - **Real-time usage** provides an overview of current activity on your site that automatically refreshes every minute. Use real-time usage to monitor the impact of marketing campaigns, press events, and other scenarios on your site's traffic.
 - **Page views** list the page views for individual pages along with the number of total page views over the selected time frame.
 

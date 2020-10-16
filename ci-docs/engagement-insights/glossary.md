@@ -1,5 +1,5 @@
 ---
-title: engagement insights capability glossary
+title: Engagement insights capability glossary
 description: Glossary of terms and phrases
 author: pickwick129
 ms.reviewer: ruthai
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: shellyha
 ---
 
-# engagement insights capability glossary
+# Engagement insights capability glossary
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -40,4 +40,4 @@ A report is a collection of data visualizations. Engagement insights capability 
 
 ## Workspace
 
-A grouping of data and reports in engagement insights capability. New workspaces include pre-configured reports and insights based on the type of product you want to analyze.
+A grouping of data and reports. New workspaces include pre-configured reports and insights based on the type of product you want to analyze.

@@ -14,7 +14,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A refined event is a virtual view of a base event. Generally, use refined events to reduce the scope of a base event for export or to remove properties that aren't necessary for exposure or export.
+A refined event is a virtual view of a base event. Generally, use refined events to reduce the scope of a base event for [export](export-events.md) or to remove properties that aren't necessary for exposure or export.
 
 You can define refined events by removing and adding properties or by filtering events based on property values.
 
@@ -22,9 +22,9 @@ You can define refined events by removing and adding properties or by filtering 
 
 There are three ways to create a refined event from a base event. Select **Admin**> **Data** > **Events** and choose one of the following options:
 
-- Select **+ Add events** and choose **Create refined event**.
-- Select **...** from the table row containing a base event, and then select **Create refined event** from the drop-down menu.
-- Select a base event to open a detailed view, and then select **Create a refined event** from the top menu.
+1. Select **+ Add events** and choose **Create refined event**.
+1. Select **...** from the table row containing a base event, and then select **Create refined event** from the drop-down menu.
+1. Select a base event to open a detailed view, and then select **Create a refined event** from the top menu.
 
 ## Modify a refined event
 

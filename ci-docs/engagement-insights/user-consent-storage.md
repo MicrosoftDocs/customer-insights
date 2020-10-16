@@ -1,5 +1,5 @@
 ---
-title: Manage cookies and user consent and local storage
+title: Manage cookies, user consent, and local storage
 description: Understand how cookies and user consent are used to identify website visitors
 author: pickwick129
 ms.reviewer: ruthai
