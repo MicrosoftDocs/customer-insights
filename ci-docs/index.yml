@@ -1,0 +1,77 @@
+### YamlMime:Landing
+
+metadata:
+  title: Help hub for Dynamics 365 Customer Insights
+  author: m-hartmann
+  description: Find relevant articles to start with help content.
+  ms.author: mhart
+  ms.date: 10/08/2020
+  ms.service: product-insights
+  ms.topic: 
+
+title: Welcome to Dynamics 365 Customer Insights documentation
+summary: The Microsoft customer data platform (CDP) powers personalized experiences with a holistic view of customers and unmatched time to insight.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  - title: Learn about Customer Insights
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Product overview
+            url: overview.md
+          - text: Release plans
+            url: audience-insights/index.yml
+          - text: What's new
+            url: audience-insights/index.yml
+
+  - title: Sign up
+    linkLists:
+      - linkListType: tutorial
+        links: 
+          - text: Create an oranization
+            url: audience-insights/index.yml
+          - text: Manage users
+            url: audience-insights/index.yml
+          - text: Manage permissions
+            url: audience-insights/index.yml
+
+  - title: Get in touch
+    linkLists:
+      - linkListType: tutorial
+        links: 
+          - text: Join the Dynamics 365 community
+            url: audience-insights/index.yml
+          - text: Share your ideas
+            url: audience-insights/index.yml
+          - text: Report an issue
+            url: audience-insights/index.yml
+
+  - title: Audience insights
+    linkLists:
+      - linkListType: tutorial
+        links: 
+          - text: Help hub
+            url: audience-insights/index.yml
+          - text: Top task 1
+            url: audience-insights/index.yml
+          - text: Top task 2
+            url: audience-insights/index.yml
+          - text: Top task 3
+            url: audience-insights/index.yml
+
+  - title: Engagement insights
+    linkLists:
+      - linkListType: tutorial
+        links: 
+          - text: Help hub
+            url: engagement-insights/index.md
+          - text: Top task 1
+            url: audience-insights/index.yml
+          - text: Top task 2
+            url: audience-insights/index.yml
+          - text: Top task 3
+            url: audience-insights/index.yml

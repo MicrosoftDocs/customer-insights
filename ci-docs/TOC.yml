@@ -1,2 +1,206 @@
-- name: Index
-  href: index.md
+- name: Dynamics 365 Customer Insights
+  href: index.yml
+
+- name: Product overview
+  href: overview.md
+
+- name: Audience insights
+  items:
+    - name: Capability overview
+      href: audience-insights/overview.md
+
+    - name: New and updated features
+      href: audience-insights/whats-new-customer-insights.md
+
+    - name: Get started
+      items:
+        - name: Create a new environment
+          href: audience-insights/home.md
+        - name: Create a unified customer profile
+          href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+        - name: Work with the app
+          href: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+
+    - name: Data sources
+      items:
+        - name: Data sources overview
+          href: audience-insights/data-sources.md
+        - name: Add data sources via Power Query connectors
+          href: audience-insights/connect-power-query.md
+        - name: Add a Common Data Model folder as a data source
+          href: audience-insights/connect-common-data-model.md
+        - name: Add Common Data Service managed data lake
+          href: audience-insights/connect-common-data-service-lake.md
+        - name: Incremental refresh for data sources
+          href: audience-insights/incremental-refresh-data-sources.md
+        - name: Real-time data ingestion
+          href: audience-insights/real-time-data-ingestion.md
+        - name: Understand entities and datasets
+          href: audience-insights/entities.md
+
+    - name: Data unification
+      items:
+        - name: Unification overview
+          href: audience-insights/data-unification.md
+        - name: Map entities and attributes
+          href: audience-insights/map-entities.md
+        - name: Match entities
+          href: audience-insights/match-entities.md
+        - name: Merge entities
+          href: audience-insights/merge-entities.md
+        - name: Review unified customer profiles
+          href: audience-insights/customer-profiles.md
+        - name: Filter unified customer profiles
+          href: audience-insights/search-filter-index.md
+        - name: Build relationships and connected entities
+          href: audience-insights/relationships.md
+        - name: List customer activities
+          href: audience-insights/activities.md
+
+    - name: Data enrichment
+      items:
+        - name: Enrich customer profiles
+          href: audience-insights/enrichment-hub.md
+        - name: Brand and interest affinities
+          href: audience-insights/enrichment-microsoft-graph.md
+        - name: Enrich with Leadspace
+          href: audience-insights/enrichment-leadspace.md
+        - name: Enrich with Experian
+          href: audience-insights/enrichment-experian.md
+
+    - name: Segments and measures
+      items:
+        - name: Create segments and customer groups
+          href: audience-insights/segments.md
+        - name: Get insights on segments
+          href: audience-insights/segment-insights.md
+        - name: Find similar customers
+          href: audience-insights/find-similar-customer-segments.md
+        - name: Define measures and KPIs
+          href: audience-insights/measures.md
+
+    - name: Predictions
+      items:
+        - name: Complete data using value predictions
+          href: audience-insights/predictions.md
+        - name: Predict subscription churn
+          href: audience-insights/predict-subscription-churn.md
+        - name: Implement custom machine learning models
+          href: audience-insights/custom-models.md
+        - name: Experiments with Azure Machine learning
+          href: audience-insights/azure-machine-learning-experiments.md
+
+    - name: Export options
+      items:
+        - name: Discover export destinations
+          href: audience-insights/export-destinations.md
+        - name: Azure Blob Storage
+          href: audience-insights/export-azure-blob-storage.md
+        - name: Dynamics 365 Customer Service (Add-in)
+          href: audience-insights/customer-card-add-in.md
+        - name: Dynamics 365 Marketing
+          href: audience-insights/export-dynamics365-marketing.md
+        - name: Dynamics 365 Sales
+          href: audience-insights/export-dynamics365-sales.md
+        - name: Dynamics 365 Sales Hub (Add-in)
+          href: audience-insights/customer-card-add-in.md
+        - name: Facebook Ads Manager
+          href: audience-insights/export-facebook.md
+        - name: LiveRamp
+          href: audience-insights/export-liveramp.md
+        - name: Microsoft Teams (bot)
+          href: audience-insights/export-teams-bot.md
+        - name: Power BI
+          href: audience-insights/export-power-bi.md
+        - name: Power Apps
+          href: audience-insights/export-power-apps.md
+        - name: Power Automate
+          href: audience-insights/export-power-automate.md
+        - name: SFTP
+          href: audience-insights/export-sftp.md
+
+    - name: Administration
+      items:
+        - name: Set up the system configuration
+          href: audience-insights/system.md
+        - name: Assign user permissions
+          href: audience-insights/permissions.md
+        - name: Manage multiple environments
+          href: audience-insights/manage-environments.md
+        - name: Supported languages
+          href: audience-insights/supported-languages.md
+
+    - name: Extensibility
+      items:
+        - name: Review the entity schemas in Common Data Model
+          href: audience-insights/entity-schemas.md
+        - name: Work with APIs
+          href: audience-insights/apis.md
+
+    - name: DSR requests under GDPR
+      href: audience-insights/gdpr.md
+
+- name: Engagement insights (preview)
+  items:
+    - name: Capability overview
+      href: engagement-insights/index.md
+
+    - name: Quickstart
+      items: 
+        - name: Quickstart for public preview
+          href: engagement-insights/quickstart-product-insights.md
+
+    - name: Get started
+      items:
+        - name: Create a workspace
+          href: engagement-insights/create-workspace.md
+        - name: Create and export user data - tbc
+          href: engagement-insights/index.md
+        - name: Concepts and terminology
+          href: engagement-insights/glossary.md
+
+    - name: Reports
+      items: 
+        - name: View reports
+          href: engagement-insights/view-reports.md
+
+    - name: Developer resources
+      items: 
+        - name: Developer resources overview - tbc
+          href: engagement-insights/index.md
+        - name: Web SDK tutorial
+          href: engagement-insights/get-started-websdk.md
+        - name: Web SDK sample
+          href: engagement-insights/websdk-sample.md
+
+    - name: Events
+      items: 
+        - name: Create and modify events
+          href: engagement-insights/create-modify-refined-events.md
+        - name: Export events
+          href: engagement-insights/export-events.md
+
+    - name: Administration
+      items: 
+        - name: Manage cookies and user consent
+          href: engagement-insights/user-consent-storage.md
+        - name: Manage environments, workspaces, and roles - tbc
+          href: engagement-insights/index.md
+
+    - name: GDPR
+      items: 
+        - name: Delete and export personal data
+          href: engagement-insights/delete-export-EUII-data.md
+
+    - name: Known issues
+      href: engagement-insights/known-issues.md
+
+- name: Free trial
+  href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+
+- name: Access your instance
+  href: https://home.ci.ai.dynamics.com/
+
+- name: Contact support
+  href: audience-insights/index.yml
+

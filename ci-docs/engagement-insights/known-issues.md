@@ -1,19 +1,21 @@
 ---
-title: Known issues 
-author: ruthaisabokhae
+title: Known issues
 description: Learn about issues you might experience during private preview and how to work around them
-ms.author: ruthai
-ms.date: 08/13/2020
-ms.service: product-insights
+author: pickwick129
+ms.reviewer: ruthai
+ms.author: v-salash
+ms.date: 10/13/2020
+ms.service: customer-insights
+ms.subservice: 
 ms.topic: conceptual
-robots: noindex,nofollow
+ms.manager: shellyha
 ---
 
-# Known issues
+# Known issues for Dynamics 365 Customer Insights engagement insights capability
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-As we continue to work on Dynamics 365 Customer Insights engagement insights capability private preview and refine the experience, we have become aware of some outstanding issues for you to keep in mind. These issues are summarized in the following table.
+As we continue to work on  private preview and refine the experience, we have become aware of some outstanding issues for you to keep in mind. These issues are summarized in the following table.
 
 | No. | Issue and impact | Workaround | 
 |------------------|------------------------|------------------------|
