@@ -1,9 +1,9 @@
 ---
-title: Get started with the web SDK for Dynamics 365 Customer Insights engagement insights capability
+title: Get started with the web SDK
 author: ruthaisabokhae
 description: Learn how to use the engagement insights capability SDK to instrument your website.
 ms.author: ruthai
-ms.date: 10/14/2020
+ms.date: 10/19/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
@@ -13,7 +13,7 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insights (engagement insights capability) SDK. You start seeing events in your portal in five minutes or sooner.
+This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insights engagement insights capability SDK. You start seeing events in your portal in five minutes or sooner.
 
 ## Configuration options
 
@@ -33,15 +33,14 @@ The following configuration options can be passed to the SDK:
 
 ## Integrate the engagement insights capability SDK into your webpage
 
-1. From the engagement insights capability home screen, select your workspace from the workspace drop-down list on the left navigation pane. If you don't already have a workspace, select the **+ New Workspace** option instead and create one.
+1. From the engagement insights capability home screen, select your workspace from the workspace drop-down list on the left navigation pane. If you don't have a workspace, select **+ New Workspace** option to create one.
 
-2. Go to **Admin** > **Data** > **Code**  and copy the code snippet on this page.
+2. Go to **Admin** > **Data** > **Code**  and copy the code snippet. By default, your ingestion key is embedded in the code snippet.
 
-   :::image type="content" source="media/get-code.png" alt-text="Code page with callout on code snippet":::
+   :::image type="content" source="media/copycode.png" alt-text="Code page with callout on code snippet":::
 
-3. By default, your ingestion key is embedded in the code snippet.
 
-4. Add the copied code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
+3. Add the copied code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
 
 ## Considerations for Single Page Applications (SPAs)
 
