@@ -1,0 +1,84 @@
+### YamlMime:Landing
+
+metadata:
+  title: Help hub for Dynamics 365 Customer Insights
+  author: m-hartmann
+  description: Find relevant articles to start with help content.
+  ms.author: mhart
+  ms.date: 10/16/2020
+  ms.service: customer-insights
+  ms.topic: landing-page
+
+title: Dynamics 365 Customer Insights documentation
+summary: Find helpful resources to get started and learn about all the features and capabilites of Customer Insights.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  - title: Meet Customer Insights
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Audience insights overview
+            url: audience-insights/overview.md
+          - text: Release plans
+            url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+          - text: What's new
+            url: audience-insights/whats-new-audience-insights.md
+
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links: 
+          - text: Sign up for a trial
+            url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+          - text: Access your instance
+            url: https://home.ci.ai.dynamics.com/
+          - text: Audience insights documentation
+            url: audience-insights/index.yml
+
+  - title: Get in touch
+    linkLists:
+      - linkListType: overview
+        links: 
+          - text: Join the Dynamics 365 community
+            url: https://go.microsoft.com/fwlink/?linkid=2073991
+          - text: Share your ideas
+            url: https://go.microsoft.com/fwlink/?linkid=2074172
+          - text: Report an issue
+            url: https://go.microsoft.com/fwlink/?linkid=2079641
+
+  - title: Audience insights tutorials
+    linkLists:
+      - linkListType: tutorial
+        links: 
+          - text: Create a new environment
+            url: audience-insights/home.md
+          - text: Create a unified customer profile
+            url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+          - text: Work with the app
+            url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+
+  - title: Export customer data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set up export destinations
+            url: audience-insights/export-destinations.md
+          - text: Customer cards in Dynamics 365 apps 
+            url: audience-insights/customer-card-add-in.md
+          - text: Power BI connector
+            url: audience-insights/export-power-bi.md
+
+  - title: Administer audience insights
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Configure the system
+            url: audience-insights/system.md
+          - text: Define user permissions 
+            url: audience-insights/permissions.md
+          - text: Manage multiple environments
+            url: audience-insights/manage-environments.md
