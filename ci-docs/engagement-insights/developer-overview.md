@@ -13,7 +13,7 @@ ms.manager: shellyha
 
 # Developer resources overview
 
-This article lists all available code snippets and SDK samples for quick reference.
+This article lists all available code snippets and samples for quick reference. Get the code for an event sender for your platform and follow the tutorials. 
 
 ## SDKs
 
