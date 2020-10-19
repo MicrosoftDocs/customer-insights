@@ -48,8 +48,6 @@ landingContent:
             url: create-workspace.md
           - text: View reports
             url: view-reports.md
-          - text: Merge
-            url: merge-entities.md
 
   - title: Events
     linkLists:
