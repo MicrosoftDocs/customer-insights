@@ -1,7 +1,7 @@
 ---
-title: Advanced web SDK instrumentation for Dynamics 365 Customer Insights engagement insights capability
+title: Advanced web SDK instrumentation scenarios
 author: ruthaisabokhae
-description: Advanced scenarios to consider when instrumenting your website with a Dynamics 365 Customer Insight engagement insights capability SDK
+description: Advanced scenarios to consider when instrumenting your website with an SDK
 ms.author: ruthai
 ms.date: 10/16/2020
 ms.service: product-insights
@@ -27,7 +27,7 @@ The `IUser` object contains the following string properties:
 - **name**: The user's name.
 - **email**: The user's email address.
     
-The following example shows a code snippet sending user information. Functions denoted by * need to be replaced by customers' implementation of fetching those values:
+The following example shows a code snippet sending user information. Where you see Functions denoted by *, replace it with your implementation of calling those values:  
 
 ```
 […]
@@ -86,7 +86,7 @@ You can also specify custom properties one by one by calling the `setProperty(na
 
 The SDK can be used to send custom events. Customer must specify a name for the event and properties to be sent with the event.
 
-The following example shows a code snipped tracking a custom event. The "NAME" here would be the value in the `name` key in the snippet configuration. This is the variable name in the window object where the SDK is loaded.
+The following example shows a code snipped tracking a custom event. The "NAME" is the value in the `name` key in the snippet configuration. This is the variable name in the window object where the SDK is loaded.
 
 ```
 window["NAME"].trackEvent({
