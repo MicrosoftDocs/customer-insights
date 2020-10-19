@@ -1,0 +1,86 @@
+### YamlMime:Landing
+
+title: Audience insights capability in Dynamics 365 Customer Insights
+summary: Ingest, unify, and organize customer data from multiple sources. Create and manage customer profiles and real-time segmentation. Integrate customer data with other systems to make it even more actionable.
+
+metadata:
+  title: Audience insights documentation
+  description: Help hub with key links for audience insights.
+  ms.service: customer-insights
+  ms.subservice:
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  - title: About audience insights
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Product overview
+            url: overview.md
+          - text: New and updated features
+            url: whats-new-audience-insights.md
+          - text: Community site
+            url: https://go.microsoft.com/fwlink/?linkid=2073991
+
+  - title: Ingest data sources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Add data sources
+            url: data-sources.md
+          - text: Incremental refresh
+            url: incremental-refresh-data-sources.md
+          - text: Understand entities
+            url: entities.md
+
+  - title: Unify data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Map
+            url: map-entities.md
+          - text: Match
+            url: match-entities.md
+          - text: Merge
+            url: merge-entities.md
+
+  # Card
+  - title: Refine customer profiles
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Configure relationships
+            url: relationships.md
+          - text: List customer activities
+            url: activities.md
+          - text: Bring your own machine learning models
+            url: custom-models.md
+
+  - title: Export customer data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set up export destinations
+            url: export-destinations.md
+          - text: Customer cards in Dynamics 365 apps 
+            url: customer-card-add-in.md
+          - text: Power BI connector
+            url: export-power-bi.md
+
+  - title: Administer the app
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Configure the system
+            url: system.md
+          - text: Define user permissions 
+            url: permissions.md
+          - text: Manage multiple environments
+            url: manage-environments.md
