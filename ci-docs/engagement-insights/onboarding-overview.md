@@ -1,13 +1,14 @@
 ---
-title: Onboarding to the private preview
-author: ruthaisabokhae
-description: Learn what you need to do to take advantage of the private preview capabilities of Dynamics 365 Customer Insights engagement insights capability
-ms.author: ruthai
-ms.date: 08/13/2020
+title: Get started with Dynamics 365 Customer Insights engagement insights capability
+description: An overview of resources to get started quickly. 
+ms.reviewer: ruthai
+ms.author: v-salash
+author: pickwick129
+ms.date: 10/12/2020
 ms.service: customer-insights
 ms.subservice: 
 ms.topic: conceptual
-robots: noindex,nofollow
+ms.manager: shellyha
 ---
 
 # Onboard to the Dynamics 365 Customer Insights engagement insights capability private preview
