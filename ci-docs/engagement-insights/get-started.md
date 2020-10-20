@@ -21,7 +21,6 @@ Engagement insights capability enables business users to measure and understand 
 The following articles explain engagement insights capability prerequisites.
 
 1. Review and agree to the [terms of agreement](preview-terms-of-service.md) with Microsoft.  
-4. Review [known issues](known-issues.md).
 1. Read the [Manage cookies and user consent](user-consent-storage.md) article. After reviewing this article, you must evaluate whether you need to update your user consent notification. If you previously had no "non-essential" cookies, you'll likely need to update your site policy.
 
 ## Set up a workspace
