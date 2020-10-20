@@ -142,8 +142,8 @@
 
 - name: Engagement insights (preview)
   items:
-    - name: Capability overview
-      href: engagement-insights/index.md
+    - name: Capability overview - TODO
+      href: engagement-insights/index.yml
 
     - name: Quickstart
       items: 
@@ -152,10 +152,8 @@
 
     - name: Get started
       items:
-        - name: Create a workspace
-          href: engagement-insights/create-workspace.md
-        - name: Create and export user data - tbc
-          href: engagement-insights/index.md
+        - name: Get started
+          url: get-started.md
         - name: Concepts and terminology
           href: engagement-insights/glossary.md
 
@@ -184,16 +182,13 @@
       items: 
         - name: Manage cookies and user consent
           href: engagement-insights/user-consent-storage.md
-        - name: Manage environments, workspaces, and roles - tbc
-          href: engagement-insights/index.md
+        - name: Create a workspace
+          href: engagement-insights/create-workspace.md
 
     - name: GDPR
       items: 
         - name: Delete and export personal data
           href: engagement-insights/delete-export-EUII-data.md
-
-    - name: Known issues
-      href: engagement-insights/known-issues.md
 
 - name: Free trial
   href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights

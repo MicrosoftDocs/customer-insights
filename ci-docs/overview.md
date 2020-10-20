@@ -20,4 +20,4 @@ Customer Insights is grouped in two main capabilites:
 
 - [Audience insights](audience-insights/index.yml)
 
-- [Engagmement insights (preview)](engagement-insights/index.md)
+- [Engagmement insights (preview)](engagement-insights/index.yml)
