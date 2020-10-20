@@ -68,10 +68,10 @@ landingContent:
       - linkListType: tutorial
         links: 
           - text: Help hub
-            url: engagement-insights/index.md
+            url: engagement-insights/index.yml
           - text: Top task 1
-            url: audience-insights/index.yml
+            url: engagement-insights/index.yml
           - text: Top task 2
-            url: audience-insights/index.yml
+            url: engagement-insights/index.yml
           - text: Top task 3
-            url: audience-insights/index.yml
+            url: engagement-insights/index.yml

@@ -23,9 +23,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Capability overview TODO
-            url: index.md
-          - text: Known issues
-            url: known-issues.md
+            url: index.yml
           - text: Community site
             url: https://go.microsoft.com/fwlink/?linkid=2073991
 
@@ -33,8 +31,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Get started TODO
-            url: index.md
+          - text: Get started
+            url: get-started.md
           - text: Glossary
             url: glossary.md
           - text: Manage user consent
@@ -54,7 +52,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Instrument your website TODO
-            url: index.md
+            url: index.yml
           - text: Refined events
             url: create-modify-refined-events.md
           - text: Export events
