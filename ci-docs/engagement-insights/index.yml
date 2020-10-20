@@ -1,0 +1,72 @@
+### YamlMime:Landing
+
+title: Audience insights capability in Dynamics 365 Customer Insights
+summary: Ingest, unify, and organize customer data from multiple sources. Create and manage customer profiles and real-time segmentation. Integrate customer data with other systems to make it even more actionable.
+
+metadata:
+  title: Audience insights documentation
+  description: Help hub with key links for audience insights.
+  ms.service: customer-insights
+  ms.subservice:
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  - title: About engagement insights
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Capability overview TODO
+            url: index.md
+          - text: Known issues
+            url: known-issues.md
+          - text: Community site
+            url: https://go.microsoft.com/fwlink/?linkid=2073991
+
+  - title: Oboarding
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Get started TODO
+            url: index.md
+          - text: Glossary
+            url: glossary.md
+          - text: Manage user consent
+            url: user-consent-storage.md
+
+  - title: Workspace and reports
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create a workspace
+            url: create-workspace.md
+          - text: View reports
+            url: view-reports.md
+
+  - title: Events
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Instrument your website TODO
+            url: index.md
+          - text: Refined events
+            url: create-modify-refined-events.md
+          - text: Export events
+            url: export-events.md
+  
+  - title: Developer resources
+    linkLists:
+        - linkListType: reference
+          links: 
+            - text: Developer resources
+              url: developer-resources.md
+            - text: WebSDK tutorial
+              url: get-started-websdk.md
+            - text: WebSDK sample
+              url: websdk-sample.md

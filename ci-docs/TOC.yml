@@ -166,8 +166,8 @@
 
     - name: Developer resources
       items: 
-        - name: Developer resources overview - tbc
-          href: engagement-insights/index.md
+        - name: Developer resources overview
+          href: engagement-insights/developer-resources.md
         - name: Web SDK tutorial
           href: engagement-insights/get-started-websdk.md
         - name: Web SDK sample
