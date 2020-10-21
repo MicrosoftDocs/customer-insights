@@ -28,11 +28,11 @@ A workspace is how you group data and reports in Dynamics 365 Customer Insight e
 
 ## Add members
 
-The **Members** page is where you can assign members to your projects, and define their roles and permissions.
+The **Members** page is where you can assign members to your workspaces, and define their roles and permissions.
 
 :::image type="content" source="media/add-members.png" alt-text="Members page with callout on Add Members button":::
 
-To add members to your project, follow these steps:
+To add members to your workspace, follow these steps:
 
 1. In the navigation pane, choose **Settings** > **Members**, and then select **+Add members**.
 
