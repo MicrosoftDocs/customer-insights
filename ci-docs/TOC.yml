@@ -188,7 +188,7 @@
     - name: GDPR
       items: 
         - name: Delete and export personal data
-          href: engagement-insights/delete-export-EUII-data.md
+          href: engagement-insights/delete-export-personal-data.md
 
 - name: Free trial
   href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
