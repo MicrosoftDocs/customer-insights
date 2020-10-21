@@ -154,6 +154,8 @@
       items:
         - name: Get started
           href: engagement-insights/get-started.md
+        - name: Instrument your website
+          href: engagement-insights/instrument-website.md
         - name: Concepts and terminology
           href: engagement-insights/glossary.md
 
@@ -167,7 +169,7 @@
         - name: Developer resources overview
           href: engagement-insights/developer-resources.md
         - name: Web SDK tutorial
-          href: engagement-insights/get-started-websdk.md
+          href: engagement-insights/advanced-SDK-implementation.md
         - name: Web SDK sample
           href: engagement-insights/websdk-sample.md
 
