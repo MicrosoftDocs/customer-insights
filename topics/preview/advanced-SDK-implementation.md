@@ -3,7 +3,7 @@ title: Advanced web SDK instrumentation scenarios
 author: ruthaisabokhae
 description: Advanced scenarios to consider when instrumenting your website with an SDK
 ms.author: ruthai
-ms.date: 10/16/2020
+ms.date: 10/21/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
@@ -13,7 +13,7 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-This page guides you through advanced scenarios to consider when instrumenting your website with a Dynamics 365 Customer Insight engagement insights capability SDK.
+This page guides you through advanced scenarios to consider when instrumenting your website with a Dynamics 365 Customer Insights engagement insights capability SDK.
 
 ## Setting user details for your event
 
