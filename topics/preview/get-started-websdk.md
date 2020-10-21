@@ -3,7 +3,7 @@ title: Get started with the web SDK for Dynamics 365 Customer Insights engagemen
 author: ruthaisabokhae
 description: Learn how to use the engagement insights capability SDK to instrument your website.
 ms.author: ruthai
-ms.date: 10/05/2020
+ms.date: 10/21/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
@@ -13,7 +13,7 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insight engagement insights capability SDK. You start seeing events in your portal in five minutes or sooner.
+This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insights engagement insights capability SDK. You start seeing events in your portal in five minutes or sooner.
 
 ## Configuration options
 
