@@ -9,7 +9,7 @@ ms.topic: conceptual
 robots: noindex,nofollow
 ---
 
-# Introduction
+# Advanced web SDK instrumentation
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
