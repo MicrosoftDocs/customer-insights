@@ -17,5 +17,5 @@ This article lists all available code snippets and samples for quick reference. 
 
 ## SDKs
 
-- [WebSDK introdction](get-started-websdk.md)
+- [WebSDK introdction](instrument-website.md)
 - [WebSDK sample](websdk-sample.md)

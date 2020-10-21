@@ -17,7 +17,7 @@ The engagement insights capability web SDK library is a JavaScript library with 
 ## Prerequisites
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-- You must have the [ingestion key](get-started-websdk.md).
+- You must have the [ingestion key](instrument-website.md).
 
 ## Run sample
 

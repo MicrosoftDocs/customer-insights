@@ -4,7 +4,7 @@ description: How to delete and export event data containing end user identifiabl
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/13/2020
+ms.date: 10/21/2020
 ms.service: customer-insights
 ms.subservice: 
 ms.topic: conceptual
@@ -38,19 +38,21 @@ EUII data is tagged on an event property level. First, tag the properties being 
 
 To tag an event property as containing personal information, follow these steps:
 
-1. Navigate to the workspace for the event.
+1. Open the workspace containing the event.
+
+1. Go to **Admin** > **Events** to see the list of events in the selected workspace.
   
-1. Select the event you want to tag to reach the event's **Overview** page.
+1. Select the event you want to tag.
 
-   ![Select event](media/SignalsOverview.png "Select event")
+1. Select **Edit properties** to open the pane listing all properties of the selected event.
      
-1. Select **...** and then choose **Edit** to reach the **Update Property** window.
+1. Select **...** and then choose **Edit** to reach the **Update property** dialog.
 
-   ![Edit event](media/EditSignal.png "Edit event")
+   ![Edit event](media/edit-event.png "Edit event")
 
 1. In the **Update Property** window, choose **...** in the upper right corner, and then choose the **Contains EUII** box. Choose **Update** to save your changes.
 
-   ![Save your changes](media/UpdateEvent.png "Save your changes")
+   ![Save your changes](media/update-property.png "Save your changes")
 
    > [!NOTE]
    > Every time the event schema changes or you create a new event, it's recommended that you evaluate the associated event properties and tag or untag them as containing EUII data, if necessary.

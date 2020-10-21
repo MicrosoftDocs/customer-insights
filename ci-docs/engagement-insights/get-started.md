@@ -39,5 +39,5 @@ An event records when a user views a page (view event) or interacts with content
 
 1. Create a [refined event](create-modify-refined-events.md) for export activities data.
 2. Export the [data](export-events.md) to Data Lake Storage.
-3. Learn how to [delete export event data](delete-export-EUII-data.md) containing user personal information.
+3. Learn how to [delete export event data](delete-export-personal-data.md) containing user personal information.
   
