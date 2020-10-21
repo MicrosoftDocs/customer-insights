@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Advanced web SDK instrumentation
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 This page guides you through advanced scenarios to consider when instrumenting your website with a Dynamics 365 Customer Insights engagement insights capability SDK.
 
