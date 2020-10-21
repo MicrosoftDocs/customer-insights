@@ -3,7 +3,7 @@ title: Get started with the web SDK for Dynamics 365 Customer Insights engagemen
 author: ruthaisabokhae
 description: Learn how to use the engagement insights capability SDK to instrument your website.
 ms.author: ruthai
-ms.date: 10/05/2020
+ms.date: 10/21/2020
 ms.service: product-insights
 ms.topic: conceptual
 robots: noindex,nofollow
@@ -13,7 +13,7 @@ robots: noindex,nofollow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insight engagement insights capability SDK. You start seeing events in your portal in five minutes or sooner.
+This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insights engagement insights capability SDK. You start seeing events in your portal in five minutes or sooner.
 
 ## Configuration options
 
@@ -23,7 +23,7 @@ The following configuration options can be passed to the SDK:
 -	**autoCapture**: Specifies the auto capture instructions for the SDK to collect page views and clicks. It has two options:
     - **view**: Set to true if you want the SDK to capture page views automatically. Single page applications need to instrument views manually, and must instrument the trackView() API whenever they route to a new page.
     - **click**: Set to true if you want the SDK to capture page clicks automatically.
--	**userConsent**: Specifies whether the user has consented to let the SDK add data to browser storage (local storage or cookies). Product Insights uses this data to track user behavior. By default, it's assumed to be true.
+-	**userConsent**: Specifies whether the user has consented to let the SDK add data to browser storage (local storage or cookies). The engagement insights capability uses this data to track user behavior. By default, it's assumed to be true.
 -	**endpointUrl**: Used to specify the destination URL for your events. Only override this option if you need to send data to a specific endpoint.
 
 ## Prerequisites
