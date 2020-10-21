@@ -184,6 +184,8 @@
           href: engagement-insights/user-consent-storage.md
         - name: Create a workspace
           href: engagement-insights/create-workspace.md
+        - name: Manage workspace settings
+          href: engagement-insights/manage-workspace.md
 
     - name: GDPR
       items: 

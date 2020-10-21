@@ -46,7 +46,7 @@ To remove members from a workspace, select **...** next to their names on the **
 
 You can edit the details of existing workspaces at any time.
 
-:::image type="content" source="media/change-project-settings.png" alt-text="Workspace settings page with callout on workspace name and description":::
+:::image type="content" source="media/workspace-settings.png" alt-text="Workspace settings page with callout on workspace name and description":::
 
 1. In the navigation pane, choose **Admin** > **Settings** > **General**.
 1. Use the  **Name** box to enter a name and optionally add a **Description** for your workspace.
