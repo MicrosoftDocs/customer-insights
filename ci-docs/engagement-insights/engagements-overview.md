@@ -15,6 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
+[STILL A DRAFT]
 Engagement insights capability collects data for web, mobile apps and connected devices so you can understand your customer.  Use the data to personal campaigns and engagement to retain and gain customers. 
 
 - Use the engagement insights capability to surface, measure, and understand customer behavior on your website, in your mobile apps, and across your connected products.
