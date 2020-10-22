@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A workspace is how you group data and reports in Dynamics 365 Customer Insight engagement insights capability. It's where you can view user activity in real time. You can add members to an existing project at any time. 
+A workspace is how you group data and reports in Dynamics 365 Customer Insight engagement insights capability. It's where you can view user activity in real time. You can add members to an existing workspace at any time. 
 
 ## Create a workspace
 
@@ -25,7 +25,6 @@ A workspace is how you group data and reports in Dynamics 365 Customer Insight e
 
 3. Choose **Create** to confirm and create the workspace.
 
-
 ## Add members
 
 The **Members** page is where you can assign members to your projects, and define their roles and permissions.
@@ -34,17 +33,20 @@ The **Members** page is where you can assign members to your projects, and defin
 
 To add members to your project, follow these steps:
 
-1. In the navigation pane, choose **Settings** > **Members**, and then select **+Add members**.
+1. Go to **Admin** > **Settings** > **Members** and select **Add members**.
 
-2. In the **Members** box, enter the name of the person that you want to add to the workspace. You can search by name or email address.
+1. In the **Add members** pane, find the person that you want to add to the workspace. You can search by name or email address.
+
+1. Choose the new member's **Role** from the drop-down list.
 
    > [!NOTE]
-   > The only **Role** currently available is **Owner**. Security groups and distribution groups are currently not supported.
+   > The only **Role** currently available is **Workspace admin**. Security groups and distribution groups are currently not supported.
 
-3. When you are done adding users, choose **Add members** to confirm.
+1. When you are done adding members, select **Add members** to confirm.
 
 ### Member permissions
-**Owner** is only role currently available. It has the following permissions enabled:
+
+**Workspace admin** is only role currently available. It has the following permissions enabled:
 
 - Create projects
 - Configure projects (members, delete)

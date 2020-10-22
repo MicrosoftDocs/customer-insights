@@ -15,13 +15,13 @@ ms.manager: shellyha
 
 You can maintain multiple workspaces concurrently in your environment. You can rename existing workspaces, or delete them. 
 
+:::image type="content" source="media/workspace-settings.png" alt-text="Workspace settings":::
+
 ## Rename a workspace
 
 1. Go to **Admin** > **Settings** > **General**.
 1. In the **Workspace name** field, enter the new name.
 1. Select **Save**.
-
-:::image type="content" source="media/workspace-settings.png" alt-text="Workspace settings":::
 
 ## Delete a workspace
 
@@ -31,3 +31,5 @@ Deleting a workspace will permanently remove all of its content, data, settings,
 1. Select **Delete Workspace**. 
 1. In the **Delete workspace** dialog, enter **CONFIRM DELETE**. 
 1. Select **Delete** to permanently delete the workspace
+
+:::image type="content" source="media/manage-workspace.png" alt-text="Rename or delete a workspace":::
