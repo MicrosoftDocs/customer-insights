@@ -1,5 +1,5 @@
 ---
-title: User roles and permissions
+title: Roles and permissions
 description: An overview of the user roles and permissions available for public preview. 
 ms.reviewer: ruthai
 ms.author: v-salash
@@ -11,15 +11,14 @@ ms.topic: conceptual
 ms.manager: shellyha
 ---
 
-# User roles 
+# Member roles
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+You can assign members to your workspace and define their roles and permissions. For public preview, engagement insights capability supports **Environment admin** and **Workspace admin** roles.
 
 
-
-
-You can assign members to your workspace and define their roles and permissions. For public preview, engagement insights capability supports **Environment admin** and **Workspace admin** roles.  
-
+## Roles and permissions
+  
 The following chart identifies permissions for each role. 
 
 | Role | Environment admin | Workspace admin |
