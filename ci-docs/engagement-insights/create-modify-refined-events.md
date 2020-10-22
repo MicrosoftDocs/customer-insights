@@ -4,7 +4,7 @@ description: How to create and modify refined events
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/12/2020
+ms.date: 10/22/2020
 ms.service: customer-insights
 ms.subservice: 
 ms.topic: conceptual
@@ -15,40 +15,73 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A refined event is a virtual view of a base event. Generally, use refined events to reduce the scope of a base event for [export](export-events.md) or to remove properties that aren't necessary for exposure or export.
+Events represent user behavior. A base event records when a user views a page (view event) or interacts with content (action event). A refined event is a virtual view of a base event. Generally, use refined events to reduce the scope of a base event for [export](export-events.md) or to remove properties that aren't necessary for exposure or export.
 
 You can define refined events by removing and adding properties or by filtering events based on property values.
 
-## Create a refined event
+## Create refined events
 
-There are three ways to create a refined event from a base event. Select **Admin**> **Data** > **Events** and choose one of the following options:
+There are three ways to create a refined event from a base event. 
 
-1. Select **+ Add events** and choose **Create refined event**.
-1. Select **...** from the table row containing a base event, and then select **Create refined event** from the drop-down menu.
-1. Select a base event to open a detailed view, and then select **Create a refined event** from the top menu.
+1. Go to **Admin**> **Data** > **Events** and choose one of the following options:
+    - Select **New events** and choose **Create refined event**.
+    - Select **...** for a base event and select **Create refined event** from the drop-down menu.
+    - Select a base event to open a detailed view and select **Create a refined event** from the top menu.
+    
+    :::image type="content" source="media/create-refined-events-options.png" alt-text="Options to create refined events":::
 
-## Modify a refined event
+1. In the **Create refined events** dialog, provide a **Refined events display name** and optinally, update the suggested **Actual name** without using spaces.
+ 
+1. On the detailed view of your refined event, select **Add and remove properties** to open the **Edit properties** pane. 
 
-Once created, you're taken to a detailed view of your new refined event. By default, this event has the same properties as your base event.
+1. Use the check boxes to select the properties that you want to show and the ones you want to hide. 
+   :::image type="content" source="media/edit-properties-refined-events.png" alt-text="Edit properties for refined events":::
 
-### Add and remove properties
+1. Select **Confirm** to apply your selection.
 
-1. From the detailed view of your refined event, select **Add and remove properties** to open the **Edit properties** pane. 
-2. Use the check boxes to select the properties that you want to show and the ones you want to hide. 
-3. Select **Confirm** to apply your selection.
+1. Select **Save** to save the configuration.
 
-### Rename properties
+## Edit refined events
 
-1. From the detailed view of your refined event, select the arrow next to a property, and then select **Edit name** from the drop-down menu. 
-2. Enter a new name and select **Confirm** to apply your changes.
+You can change the properties and the name of refined events.
 
-> [!TIP]
-> Renaming doesn't change the initial property. It creates a copy with a new name and hides the original from view. You can use the **Add and remove** properties menu to access the original property.
+### Edit event details
 
-## Filter properties
+1. Go to **Admin**> **Data** > **Events**. 
+1. Select **...** for an event and select **Edit details**.
+1. Update the display name or the description of the event and select **Save**
 
-1. From the detailed view of your refined event, select the arrow next to a property, and then select **Add filters** from the drop-down menu.
-2. Select **+ Add filter** and choose an operation and a value. If you add multiple filters to an event, they're connected with a logical "AND" operator. 
-3. Select **Confirm** to apply the filters.
+### Edit selected properties
+
+1. Go to **Admin**> **Data** > **Events** and select the refined events to open the detailed view.
+1. Select ****Add and remove properties**. 
+1. Edit the selection of the check boxes.
+1. Select **Confirm** and then **Save** to apply the changes.
+
+## Manage properties of refined events
+
+You can filter, rename, and remove properties of refined events.
+
+1. Go to **Admin**> **Data** > **Events** and select the refined events to open the detailed view.
+1. Select the arrow next to a property name and choose an option from the drop-down menu. 
+   :::image type="content" source="media/manage-properties-refined-event.png" alt-text="Edit options of refiend events":::
+1. Select **Save** to apply the changes.
+
+> [!NOTE]
+> Renaming doesn't change the initial property. It creates a copy with a new name and hides the original property from the view. Removing a property doens't delete the data, it hides the removed property from the view. Select **Add and remove properties** to access the properties and recover hidden properties.
+
+### Filter property
+
+1. Choose **Add filters** and choose an operation and a value. If you add multiple filters to an event, they're connected with a logical "AND" operator. 
+1. Select **Confirm** to apply the filters.
 
 You see a filter icon next to the property's name in the detailed view if filters are successfully added.
+
+### Rename property
+
+1. Choose **Edit name** to change the name of a property.
+2. Enter a new name and select **Confirm** to apply your changes.
+
+### Remove property
+
+1. Choose **Remove property** to remove a property from the refined events.
