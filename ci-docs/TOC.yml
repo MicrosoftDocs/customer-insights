@@ -142,8 +142,8 @@
 
 - name: Engagement insights (preview)
   items:
-    - name: Capability overview - TODO
-      href: engagement-insights/index.yml
+    - name: Capability overview
+      href: engagement-insights/engagements-overview.md
 
     - name: Quickstart
       items: 
