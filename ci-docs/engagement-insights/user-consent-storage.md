@@ -33,7 +33,7 @@ If no user consent value is specified, the SDK will assume that the user has con
 
 ### Cookies
 
-- _mspi
+- _msei
     - Stores the anonymous user ID. This cookie is set in the customer domain and expires in 365 days.
 
 ### Local storage
