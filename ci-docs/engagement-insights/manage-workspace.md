@@ -1,5 +1,5 @@
 ---
-title: Rename and delete a workspave
+title: Rename and delete a workspace
 description: How to rename and delete a workspace
 author: pickwick129
 ms.reviewer: ruthai
