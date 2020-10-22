@@ -1,10 +1,10 @@
 ---
-title: Get started with Dynamics 365 Customer Insights engagement insights capability (public preview)
+title: Get started with engagement insights capability
 description: An overview of resources to get started quickly. 
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/18/2020
+ms.date: 10/21/2020
 ms.service: customer-insights
 ms.subservice: 
 ms.topic: conceptual
@@ -32,13 +32,13 @@ The starting point for any user is set up a workspace. The workspace is where yo
 
 ## Start viewing data
 
-1. Instrument your website with an SDK to see telemetry arriving into your workspace.
+1. [Instrument your website](instrument-website.md) with an SDK to see telemetry arriving into your workspace.
 1. View a [real-time report](view-reports.md) showing active users by browser, device, operating system, location, and language.
 	
 ## Export events
-An event records when a user views a page (view event) or interacts with content (action event). You can create a refined event from web analytics data, filter it, and export it to your Azure Data Lake Storage. You can bring the exported data back into an engagement insights capability as a data source.
+An event records when a user views a page (view event) or interacts with content (action event). You can create refined events from web analytics data, filter it, and export it to your Azure Data Lake Storage. You can bring the exported data back into an engagement insights capability as a data source.
 
-1. [Create a refined event](create-modify-refined-events.md) to export activities data.
-2. [Export the data](export-events.md) to Azure Data Lake Storage.
-3. Learn how to [delete export event data](delete-export-personal-data.md) containing user personal information.
+1. [Create refined events](create-modify-refined-events.md) for export.
+2. Export the [data](export-events.md) to Data Lake Storage.
+3. Learn how to [delete and export event data containing personal information](delete-export-personal-data.md).
   
