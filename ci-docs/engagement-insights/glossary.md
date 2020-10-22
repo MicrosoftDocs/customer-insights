@@ -17,10 +17,9 @@ ms.manager: shellyha
 
 This list defines selected terms that appear in Dynamics 365 Customer Insights engagement insights capability and in its supporting documentation.
 
-
 ## Events
 
- In digital analytics, an event represents user behavior. An event records when a user views a page (view event) or interacts with content (action event).  On a web page, as visitors view web pages, engagements insights sends page view events. As they interact with web page elements, it sends page action events.
+In digital analytics, an event represents user behavior. An event records when a user views a page (view event) or interacts with content (action event).  On a web page, as visitors view web pages, engagements insights sends page view events. As they interact with web page elements, it sends page action events.
 
 ## Member
 
@@ -37,7 +36,6 @@ A refined event is a virtual view of a base event. Use refined events to simplif
 ## Report
 
 A report is a collection of data visualizations. Engagement insights capability includes several predefined reports for web projects.
-
 
 ## Workspace
 
