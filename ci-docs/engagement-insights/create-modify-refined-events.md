@@ -4,7 +4,7 @@ description: How to create and modify refined events
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/12/2020
+ms.date: 10/21/2020
 ms.service: customer-insights
 ms.subservice: 
 ms.topic: conceptual
@@ -19,7 +19,7 @@ A refined event is a virtual view of a base event. Generally, use refined events
 
 You can define refined events by removing and adding properties or by filtering events based on property values.
 
-## Create a refined event
+## Create refined events
 
 There are three ways to create a refined event from a base event. Select **Admin**> **Data** > **Events** and choose one of the following options:
 
@@ -27,7 +27,7 @@ There are three ways to create a refined event from a base event. Select **Admin
 1. Select **...** from the table row containing a base event, and then select **Create refined event** from the drop-down menu.
 1. Select a base event to open a detailed view, and then select **Create a refined event** from the top menu.
 
-## Modify a refined event
+## Modify refined events
 
 Once created, you're taken to a detailed view of your new refined event. By default, this event has the same properties as your base event.
 
