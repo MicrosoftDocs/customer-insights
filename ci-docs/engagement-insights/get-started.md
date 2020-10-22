@@ -18,10 +18,11 @@ ms.manager: shellyha
 Engagement insights capability enables business users to measure and understand customer behavior on websites, in mobile apps, and across connected products. The links in this article help you quickly configure and set up your environment.
 
 ## Recommended preparations
-The following articles explain engagement insights capability prerequisites.
+Review the following articles before setting up a workspace.
 
-1. Review and agree to the [terms of agreement](terms-of-service.md) with Microsoft.  
+1. Review and agree to the [Terms of Service](terms-of-service.md) with Microsoft.  
 1. Read the [Manage cookies and user consent](user-consent-storage.md) article. After reviewing this article, you must evaluate whether you need to update your user consent notification. If you previously had no "non-essential" cookies, you'll likely need to update your site policy.
+1. Review the [glossary](glossary.md) to get a quick introduction about key terms and concepts. 
 
 ## Set up a workspace
 The starting point for any user is set up a workspace. The workspace is where you'll start ingesting web analytics data.
@@ -37,7 +38,7 @@ The starting point for any user is set up a workspace. The workspace is where yo
 ## Export events
 An event records when a user views a page (view event) or interacts with content (action event). You can create refined events from web analytics data, filter it, and export it to your Azure Data Lake Storage. You can bring the exported data back into an engagement insights capability as a data source.
 
-1. Create [refined events](create-modify-refined-events.md) for export.
+1. [Create refined events](create-modify-refined-events.md) for export.
 2. Export the [data](export-events.md) to Data Lake Storage.
-3. Learn how to [delete export event data](delete-export-personal-data.md) that contains user personal information.
+3. Learn how to [delete and export event data containing personal information](delete-export-personal-data.md).
   

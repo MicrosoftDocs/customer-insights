@@ -4,14 +4,14 @@ description: How to export refined and base events
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/12/2020
+ms.date: 10/22/2020
 ms.service: customer-insights
 ms.subservice: 
 ms.topic: conceptual
 ms.manager: shellyha 
 ---
 
-# Export refined events
+# Export events
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -19,23 +19,44 @@ An event records when a user views a page (view event) or interacts with content
 
 ## Prerequisite
 
-Before export, be sure that you have access and an active subscription to the Azure portal. You'll need the storage account information during the export process. 
+Before setting up an export, you need to have access and an active subscription to the Azure portal. You'll need the storage account information during the export process. 
 
-To get Azure Data Lake Storage (ADLS) settings
-1. [Create a new storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create). 
-2. From the **Advanced** tab, enable **Hierachical namespace**. 
-:::image type="content" source="media/ADLS.png" alt-text="Azure Data Lake Storage account setup":::
-3. Once it has been deployed, go to the newly created storage account and from the navigation pane, go to **Settings** > **Access keys**. 
-4. Copy the **Account name** and **Key** to use them in **Export** settings in engagement insights capability.
+### Create an Azure Data Lake Storage Gen 2 accounts
 
-## Export a refined event
+1. Sign in to the Azure portal and [create a new storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create). 
 
-From the **Events** page, select **...** next to the event you want to export and select **Export** from the drop-down menu. You are guided through the five steps of export creation:
+1. Make sure that you enable **Hierachical namespace** on the **Advanced** tab. 
 
-1. Choose a **Name** for the export.
-2. Select an event for export and an export cadence. The cadence informs how often an immutable folder with your event's information is created in Azure Data Lake Storage.
-3. Select the format for your export.
-4. Specify the Azure Data Lake Storage location and your credentials.
-5. Review and confirm your selections.
+   :::image type="content" source="media/enable-hierarchical-namespace.png" alt-text="Enable hierachichal namespace on the advanced tab":::
 
-Once you've set up an export, you can view it by navigating to **Admin** > **Data** > **Exports**. Use the **...** selections on the page to edit or delete an existing export.
+1. Once it has been deployed, go to the newly created storage account. In the navigation pane, select **Settings** > **Access keys**. 
+
+1. Copy the **Account name** and **Key** to use them when [creating a new export](#export-events).
+   :::image type="content" source="media/storage-account-access-keys.png" alt-text="Access keys in a storage account":::
+
+## Export events
+
+There are two ways to export events: 
+- Go to **Admin** > **Data** > **Exports** and select **New export**.
+- Go to **Admin** > **Data** > **Events**, select **...** next to the event you want to export and select **Export** from the drop-down menu. 
+
+You are guided through the five steps of export creation:
+
+1. Provide an **Export name**.
+
+1. In the **Events selection** drop-down list, choose the base events and refined events to include in the export. 
+
+1. Under **File structure**, select the cadence to create new files in the destination storage. Events are exported continously as they arrive.
+
+1. Select the format for your export. You can choose between **Common Data Model**, **CSV**, and **JSON** format. To use the export with other Dynamics 365 applications, we recommend using the Common Data Model format.
+
+1. In the **Choose destination** step, specify the Azure Data Lake Storage Gen 2 location.
+    1. **ADLS Gen 2 account name** is the name of the storage account you want to save the export to. 
+    1. **Folder path** defines where the export should be stored in the file system and sirectory structure of the storage account.
+    1. **Shared key** is available from the Azure portal for the storage account.
+
+1. Review and confirm your selections.
+
+## View and manage exports
+
+Once you've set up an export, go to **Admin** > **Data** > **Exports** to view it. Select **...** for any existing export to edit or delete it.

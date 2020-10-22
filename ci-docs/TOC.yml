@@ -148,7 +148,7 @@
     - name: Quickstart
       items: 
         - name: Quickstart for public preview
-          href: engagement-insights/quickstart-product-insights.md
+          href: engagement-insights/quickstart.md
 
     - name: Get started
       items:
