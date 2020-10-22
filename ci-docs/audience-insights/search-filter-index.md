@@ -1,10 +1,11 @@
 ---
-title: "Search and filter customer profiles | Microsoft Docs"
+title: "Search and filter customer profiles"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
 ms.date: 04/16/2020
 ms.reviewer: nimagen
-ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha

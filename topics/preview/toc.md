@@ -7,12 +7,13 @@
 # [Known issues](known-issues.md)
 
 # How-tos
+## [Instrument a website](instrument-your-website.md)
 ## [Create a project](create-project.md)
 ## [View reports](reports.md)
 ## [Create and export refined events](derived-signals.md)
 
 # Developer resources
-## [Web SDK tutorial](get-started-websdk.md)
+## [Advanced Web SDK implementation](advanced-SDK-implementation.md)
 ## [Web SDK sample](websdk-sample.md)
 
 # GDPR requests and compliance

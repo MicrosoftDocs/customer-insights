@@ -1,10 +1,11 @@
 ---
-title: "Power Apps connector | Microsoft Docs"
-description: "Connect Dynamics 365 Customer Insights with Power Apps and Power Automate."
+title: "Power Apps connector"
+description: "Connect with Power Apps and Power Automate."
 ms.date: 08/21/2020
 ms.reviewer: nikeller
-ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -14,7 +15,7 @@ manager: shellyha
 
 Bring unified customer profiles into your personalized apps with Power Apps.
 
-## Connect Power Apps to Customer Insights
+## Connect Power Apps and Dynamics 365 Customer Insights
 
 Customer Insights is one of the many [available sources for data in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-data-sources).
 
@@ -37,7 +38,7 @@ You can only retrieve the **Customer**, **UnifiedActivity**, and **Segments** en
 
 Delegation works for the Customer entity and UnifiedActivity entity. 
 
-- Delegation for **Customer** entity: To use delegation for this entity, the fields need to be indexed in [Search & filter index](search-filter-index.md) in Customer Insights.  
+- Delegation for **Customer** entity: To use delegation for this entity, the fields need to be indexed in [Search & filter index](search-filter-index.md).  
 
 - Delegation for **UnifiedActivity**: Delegation for this entity only works for the fields **ActivityId** and **CustomerId**.  
 
@@ -45,7 +46,7 @@ Delegation works for the Customer entity and UnifiedActivity entity.
 
 ## Example gallery control
 
-An example to use Customer Insights data, is to show customer profiles in a [gallery control](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-gallery).
+For example, you add customer profiles to a [gallery control](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-gallery).
 
 1. Add a **Gallery** control to an app you're building.
 

@@ -1,10 +1,11 @@
 ---
-title: "Customer profiles | Microsoft Docs"
-description: "Get a consolidated view of your unified customer data in Dynamics 365 Customer Insights."
+title: "Customer profiles"
+description: "Get a consolidated view of your unified customer data."
 ms.date: 04/16/2020
 ms.reviewer: nimagen
-ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -12,7 +13,7 @@ manager: shellyha
 
 # Customer profiles
 
-The **Customers** page presents a consolidated view of your customers, based on profile data gathered from [all data sources](data-sources-list.md). Customer profiles are available once you [create the unified Customer entity](data-unification.md). Make sure you complete the data unification process to get richer views of your customers. The page also lets you search for customers.
+The **Customers** page presents a consolidated view of your customers, based on profile data gathered from [all data sources](data-sources.md). Customer profiles are available once you [create the unified Customer entity](data-unification.md). Make sure you complete the data unification process to get richer views of your customers. The page also lets you search for customers.
 
 Customers can be individuals or organizations (preview). Each customer or organization profile is represented by a tile. Select a tile to see additional information on that specific customer or organization. Use the pagination controls at the bottom of the page to see additional records.
 

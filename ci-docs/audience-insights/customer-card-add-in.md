@@ -3,7 +3,8 @@ title: "Install and configure the Customer Card Add-in"
 description: "Install and configure the Customer Card add-in for Dynamics 365 Customer Insights."
 ms.date: 08/04/2020
 ms.reviewer: philk
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice:
 ms.topic: conceptual    
 author: m-hartmann
 ms.author: mhart

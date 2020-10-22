@@ -1,26 +1,25 @@
 ---
-title: "Measures in Dynamics 365 Customer Insights | Microsoft Docs"
+title: "Create and edit measures"
 description: "Define customer-related measures to analyze and reflect the performance of certain business areas."
-ms.date: 04/17/2020
-ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.date: 10/15/2020
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
-ms.reviewer: nimagen
+ms.reviewer: wameng
 manager: shellyha
 ---
 
 # Define and manage measures
 
-**Measures** represent key performance indicators (KPIs) that reflect the performance and health of specific business areas. Dynamics 365 Customer Insights provides an intuitive experience for building different types of measures, using a query builder that doesn't require you to code or validate your measures manually. You can track your business measures on the **Home** page, see measures for specific customers on the **Customer Card**, and use measures to define customer segments on the **Segments** page.
-
-[View this video - Getting Started: Creating Customer and Business Measures](https://youtu.be/aSM1YV84KUc).
+**Measures** represent key performance indicators (KPIs) that reflect the performance and health of specific business areas. Audience insights provides an intuitive experience for building different types of measures, using a query builder that doesn't require you to code or validate your measures manually. You can track your business measures on the **Home** page, see measures for specific customers on the **Customer Card**, and use measures to define customer segments on the **Segments** page.
 
 ## Create a measure
 
-This section walks you through creating a measure from scratch. You can build measures with data from multiple data sources that are connected through the Customer entity.
+This section walks you through creating a measure from scratch. You can build measures with data from multiple data sources that are connected through the Customer entity. Some [service limits](service-limits.md) apply.
 
-1. In Customer Insights, go to **Measures**.
+1. In audience insights, go to **Measures**.
 
 2. Select **New measure**.
 
@@ -55,7 +54,7 @@ This section walks you through creating a measure from scratch. You can build me
 9. Type an expression in the **Expression** area while choosing more fields to be included in your calculation.
 
    > [!NOTE]
-   > Currently, Customer Insights supports arithmetic expressions only. Additionally, variable calculation isn't supported for entities from different [entity paths](relationships.md).
+   > Currently, only arithmetic expressions are supported. Additionally, variable calculation isn't supported for entities from different [entity paths](relationships.md).
 
 10. Select **Done**.
 
@@ -83,7 +82,7 @@ This section walks you through creating a measure from scratch. You can build me
 
 ## Manage your measures
 
-After creating at least one measure, you'll see a list of measures on the **Measures** page in Customer Insights.
+After creating at least one measure, you'll see a list of measures on the **Measures** page.
 
 You'll find information about the measure type, the creator, creation date and time, last edit date and time, status (whether the measure is active, inactive, or failed), and last refresh date and time. When you select a measure from the list, you can see a preview of its output.
 
@@ -102,7 +101,7 @@ Alternatively, select a measure from the list and perform one of the following a
 - Select the ellipsis (...) and then **Download** to get a .CSV file of the measure.
 
 > [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes in Customer Insights. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
 
 ## Next step
 

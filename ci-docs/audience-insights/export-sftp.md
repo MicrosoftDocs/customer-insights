@@ -1,10 +1,11 @@
 ---
-title: "Export Customer Insights data to SFTP hosts | Microsoft Docs"
+title: "Export Customer Insights data to SFTP hosts"
 description: "Learn how to configure the connection to an SFTP host."
 ms.date: 06/05/2020
 ms.reviewer: philk
-ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha

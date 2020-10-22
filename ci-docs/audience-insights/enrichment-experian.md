@@ -1,10 +1,11 @@
 ---
-title: "Enrichment with the third-party enrichment Experian in Dynamics 365 Customer Insights | Microsoft Docs"
-description: "General information about the Experian third-party enrichment in Customer Insights."
+title: "Enrichment with the third-party enrichment Experian"
+description: "General information about the Experian third-party enrichment."
 ms.date: 09/17/2020
 ms.reviewer: kishorem
-ms.service: dynamics-365-ai
-ms.topic: "article"
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -20,7 +21,7 @@ To configure Experian, the following prerequisites must be met:
 
 - You have an active Experian subscription. To get a subscription, [contact Experian](https://www.experian.com/marketing-services/contact) directly. [Learn more about Experian Data Enrichment](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 - You have the User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
-- You have the [Administrator](permissions.md#administrator) role in Customer Insights.
+- You have [Administrator](permissions.md#administrator) permissions in audience insights.
 
 ## Configuration
 

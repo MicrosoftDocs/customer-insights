@@ -1,10 +1,11 @@
 ---
-title: "Home page in Dynamics 365 Customer Insights | Microsoft Docs"
-description: "Start exploring the app on the Home page in Dynamics 365 Customer Insights."
+title: "Home page in audience insights"
+description: "Start exploring the app on the Home page."
 ms.date: 09/30/2020
 ms.reviewer: nimagen
-ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha

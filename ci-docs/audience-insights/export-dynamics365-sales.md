@@ -1,10 +1,11 @@
 ---
-title: "Export Customer Insights data to Dynamics 365 Sales | Microsoft Docs"
+title: "Export Customer Insights data to Dynamics 365 Sales"
 description: "Learn how to configure the connection to Dynamics 365 Sales."
 ms.date: 08/21/2020
 ms.reviewer: philk
-ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -16,11 +17,11 @@ Use your customer data to create marketing lists, follow up workflows, and send 
 
 ## Prerequisite
 
-Contact records [from Dynamics 365 Sales ingested to Customer Insights using Common Data Service](pm-common-connectors.md#dynamics-365-apps-using-common-data-service).
+Contact records [from Dynamics 365 Sales ingested using Common Data Service](connect-power-query.md).
 
 ## Configure the connector for Sales
 
-1. In Customer Insights, go to **Admin** > **Export destinations**.
+1. In audience insights, go to **Admin** > **Export destinations**.
 
 1. Under **Dynamics 365 Sales**, select **Set up**.
 
@@ -30,7 +31,7 @@ Contact records [from Dynamics 365 Sales ingested to Customer Insights using Com
 
 1. In the **Server admin account** section, select **Sign in** and choose a Dynamics 365 Sales account.
 
-1. Map a Customer Insights field to the Dynamics 365 Contact ID.
+1. Map a customer ID field to the Dynamics 365 Contact ID.
 
 1. Select **Next**.
 

@@ -1,9 +1,10 @@
 ---
-title: "System configuration in Dynamics 365 Customer Insights | Microsoft Docs"
-description: "Learn about system settings in Dynamics 365 Customer Insights."
+title: "System configuration in audience insights"
+description: "Learn about system settings in Dynamics 365 Customer Insights audience insights capability."
 ms.date: 06/02/2020
-ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: nimagen
@@ -12,17 +13,14 @@ manager: shellyha
 
 # System configuration
 
-The **System** page contains everything that administrators need to closely monitor the various processes running behind the scenes of Customer Insights. It includes four tabs: **Status**, **Schedule**, **About**, and **General**.
+The **System** page includes four tabs: **Status**, **Schedule**, **About**, and **General**.
 
 > [!div class="mx-imgBorder"]
 > ![System page](media/system-tabs.png "System page")
 
-> [!NOTE]
-> If your data sources are updated on a regular basis, we highly recommend that you use the **Schedule** tab. Make sure to review the "Schedule tab" section later in this topic.
-
 ## Status tab
 
-The **Status tab** lets you track the progress of data ingestion, data exports, and several important product processes. Review the information on this tab to ensure the completeness of any major process you've defined in Customer Insights.
+The **Status tab** lets you track the progress of data ingestion, data exports, and several important product processes. Review the information on this tab to ensure the completeness of active processes.
 
 This tab includes status tables for **Data sources**, **System processes**, and **Data preparation**. Each table tracks the **Name** of the task and its corresponding entity, the **Status** of its most recent run, and when it was **Last updated**.
 
@@ -30,7 +28,7 @@ View the details of the tasks' last several runs by selecting its name.
 
 ### Status types
 
-There are six types of status for tasks in Customer Insights. The following status types also show on the *Match*, *Merge*, *Data sources*, *Segments*, *Measures*, *Enrichment*, *Activities*, and *Predictions* pages:
+There are six types of status for tasks. The following status types also show on the *Match*, *Merge*, *Data sources*, *Segments*, *Measures*, *Enrichment*, *Activities*, and *Predictions* pages:
 
 - **Processing:** Task is in progress. The status can change to Successful or Failure.
 - **Successful:** Task completed successfully.
@@ -41,7 +39,7 @@ There are six types of status for tasks in Customer Insights. The following stat
 
 ### Refresh policies
 
-This list shows the refresh policies for each of the main processes in Customer Insights:
+This list shows the refresh policies for each of the main processes:
 
 - **Data sources:** Runs according to the [configured schedule](#schedule-tab). Doesn't depend on any other process. Match depends on the successful completion of this process.
 - **Match:** Runs according to the [configured schedule](#schedule-tab). Depends on the processing of the data sources used in the match definition. Merge depends on the successful completion of this process.
@@ -58,9 +56,9 @@ Select the status of a task to see the progress details of the entire job it was
 
 ## Schedule tab
 
-Use the **Schedule** tab to schedule automatic refreshes of all your ingested Customer Insights data. Automatic refreshes help ensure that updates from your data sources are reflected in your unified customer profiles.
+Use the **Schedule** tab to schedule automatic refreshes of all your [ingested data sources](data-sources.md). Automatic refreshes help ensure that updates from your data sources are reflected in your unified customer profiles.
 
-1. In Customer Insights, go to **Admin** > **System** and select the **Schedule** tab.
+1. In audience insights, go to **Admin** > **System** and select the **Schedule** tab.
 
 2. The default state for the scheduled refresh is **Off**. To enable scheduled refreshes, change the toggle at the top of the screen to **On**.
 
@@ -78,9 +76,9 @@ The **About** tab contains your organization's **Display name**, the active **En
 
 There are two options on the **General** tab, **Language** and **Country/Region format**.
 
-Customer Insights [supports a number of languages](supported-languages.md). To change your preferred language, choose a **Language** from the dropdown.
+The app [supports a number of languages](supported-languages.md). To change your preferred language, choose a **Language** from the dropdown.
 
-To change your preferred formatting for dates, time, and numbers, use the **Country/Region format** dropdown. A formatting preview is displayed under this field. Customer Insights will automatically suggest a selection when you choose a new language.
+To change your preferred formatting for dates, time, and numbers, use the **Country/Region format** dropdown. A formatting preview is displayed under this field. The system will automatically suggest a selection when you choose a new language.
 
 Select **Save** to confirm your selections.
 

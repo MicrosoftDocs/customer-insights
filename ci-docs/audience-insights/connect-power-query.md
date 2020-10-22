@@ -3,7 +3,8 @@ title: "Ingest data through a Power Query connector"
 description: "Connectors for data sources based on Power Query."
 ms.date: 09/29/2020
 ms.reviewer: adkuppa
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice:
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -4,13 +4,20 @@
 - name: Product overview
   href: overview.md
 
+- name: Access your instance
+  href: https://home.ci.ai.dynamics.com/
+
 - name: Audience insights
   items:
+
+    - name: Help hub
+      href: audience-insights/index.yml
+
     - name: Capability overview
       href: audience-insights/overview.md
 
     - name: New and updated features
-      href: audience-insights/whats-new-customer-insights.md
+      href: audience-insights/whats-new-audience-insights.md
 
     - name: Get started
       items:
@@ -137,6 +144,9 @@
         - name: Work with APIs
           href: audience-insights/apis.md
 
+    - name: Service limits
+      href: audience-insights/service-limits.md
+    
     - name: DSR requests under GDPR
       href: audience-insights/gdpr.md
 
@@ -199,9 +209,5 @@
 - name: Free trial
   href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
 
-- name: Access your instance
-  href: https://home.ci.ai.dynamics.com/
-
 - name: Contact support
-  href: audience-insights/index.yml
-
+  href: https://go.microsoft.com/fwlink/?linkid=2079641

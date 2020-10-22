@@ -1,9 +1,10 @@
 ---
-title: "Predictions in Dynamics 365 Customer Insights | Microsoft Docs"
-description: "Use predictions to fill in incomplete customer data in Dynamics 365 Customer Insights."
+title: "Complete partial data using predictions"
+description: "Use predictions to fill in incomplete customer data."
 ms.date: 05/05/2020
-ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: zacook
@@ -12,30 +13,30 @@ manager: shellyha
 
 # Complete your partial data with predictions
 
-Predictions lets you easily create predicted values that can enhance your understanding of a customer. On the **Intelligence** > **Predictions** page, you can select **My predictions** to see predictions that you've configured in other parts of Customer Insights, and allow you to further customize them.
+Predictions lets you easily create predicted values that can enhance your understanding of a customer. On the **Intelligence** > **Predictions** page, you can select **My predictions** to see predictions that you've configured in other parts of audience insights, and allow you to further customize them.
 
 > [!NOTE]
 > You can't use this feature if your environment uses Azure Data Lake Gen 2 storage.
 >
-> The predictions feature uses automated means to evaluate data and make predictions based on that data, and therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Customer's use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Customer Insights, including predictions, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
+> The predictions feature uses automated means to evaluate data and make predictions based on that data, and therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Customer's use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including predictions, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
 ## Prerequisites
 
 Before your organization can use the predictions feature, the following prerequisites must be met:
 
-1. Your organization has an instance [set up in the Common Data Service](https://docs.microsoft.com/ai-builder/build-model#prerequisites). The credentials (user name and password) that you use in Common Data Service and in Dynamics 365 Customer Insights should match.
+1. Your organization has an instance [set up in the Common Data Service](https://docs.microsoft.com/ai-builder/build-model#prerequisites) and it's in the same organization as Customer Insights.
 
-2. Your Customer Insights environment is attached to your Common Data Service instance.
+2. Your environment is attached to your Common Data Service instance.
 
-If you're [creating a new environment](manage-environments.md), configure it in the **Create an environment** dialog and select **Advanced**. If you've already created an environment, go to its settings and select **Advanced**. Either way, in the **Use predictions** section, enter the Common Data Service instance URL to which you want to attach your Customer Insights instance.
+If you're [creating a new environment](manage-environments.md), configure it in the **Create an environment** dialog and select **Advanced**. If you've already created an environment, go to its settings and select **Advanced**. Either way, in the **Use predictions** section, enter the Common Data Service instance URL to which you want to attach your environment.
 
-## Create a prediction in the Customer Entity
+## Create a prediction in the Customer entity
 
-1. In Customer Insights, go to **Data** > **Entities**.
+1. In audience insights, go to **Data** > **Entities**.
 
 2. Select the **Customer** entity.
 
-3. In the **Customer: CustomerInsights** entity, select on the **Fields** tab.
+3. In the **Customer:CustomerInsights** entity, select on the **Fields** tab.
 
 4. Find the attribute name you wish to predict values for, then select the **Overview** icon in the **Summary** column.
    > [!div class="mx-imgBorder"]
@@ -59,7 +60,7 @@ Predicting missing values for a specific attribute of choice is also possible wh
 
 As part of this flow, you'll choose a specific attribute to base your segment on, such as Customer Satisfaction or Purchase Amount. Upon segment creation, the system will suggest a method for predicting any missing values for this attribute.
 
-1. In Customer Insights, go to **Segments** and select the **Profiles** tile.
+1. In audience insights, go to **Segments** and select the **Profiles** tile.
 
 2. Choose a **Field** to create a segment on and select an **Operator**, then select **Review**.
 
@@ -77,10 +78,7 @@ As part of this flow, you'll choose a specific attribute to base your segment on
 
 ## View a prediction
 
-> [!NOTE]
-> You can only find these predictions in Customer Insights, and will not be able to find these predictions in the AI Builder model list page.
-
-1. In Customer Insights, go to **Intelligence** > **Predictions** > **My predictions**.
+1. In audience insights, go to **Intelligence** > **Predictions** > **My predictions**.
 
 2. Select the prediction you want to review.
 
@@ -97,7 +95,7 @@ As part of this flow, you'll choose a specific attribute to base your segment on
 
 ## Update a prediction
 
-1. In Customer Insights, go to **Intelligence** > **Predictions** > **My predictions**.
+1. In audience insights, go to **Intelligence** > **Predictions** > **My predictions**.
 
 2. Select the prediction you want to update and select the **Update** icon.
 
@@ -107,7 +105,7 @@ As part of this flow, you'll choose a specific attribute to base your segment on
 
 After you've created a prediction, you can customize the model in the AI Builder to increase the effectiveness of your model.  
 
-1. In Customer Insights, go to **Intelligence** > **Predictions** > **My predictions**.
+1. In audience insights, go to **Intelligence** > **Predictions** > **My predictions**.
 
 2. Select the prediction you want to edit.
 
@@ -120,11 +118,11 @@ After you've created a prediction, you can customize the model in the AI Builder
 The next run of your prediction will use the updated model you've created.
 
 > [!NOTE]
-> New models created in AI Builder will not be displayed in Customer Insights unless the model was created from within Customer Insights experiences listed above.
+> New models created in AI Builder will not be displayed in audicen insights unless the model was created from the experiences listed above.
 
 ## Remove a prediction
 
-1. In Customer Insights, go to **Intelligence** > **Predictions** > **My predictions**.
+1. In audience insights, go to **Intelligence** > **Predictions** > **My predictions**.
 
 2. Select the prediction you want to delete.
 
@@ -136,10 +134,10 @@ The next run of your prediction will use the updated model you've created.
 
 If you can't complete the attach Common Data Service process due to an error, you can try to complete the process manually. There are two known issues that can occur in the attach process:
 
-- The Customer Insights Customer Card Add-in solution is not installed.
+- The Customer Card Add-in solution is not installed.
     1. Complete the instructions to [install and configure the solution](customer-card-add-in.md).
 
-- Customer Insights Application Permissions aren't granted.
+- App permissions aren't granted.
     1. Go to [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com).
     1. Select **Environments**.
     1. Select the ellipsis next to the environment you want to add the permission to and select **Settings**.
@@ -152,6 +150,6 @@ If you can't complete the attach Common Data Service process due to an error, yo
         - **Last Name:** Insights
         - **Primary Email:** cihelp@microsoft.com
     1. Select **Save & Close**.
-    1. Select the Customer Insights user you just created.
+    1. Select the user you just created.
     1. Select **Manage Roles** in the top menu bar.
     1. Select **System Administrator**, then select **OK**.

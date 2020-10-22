@@ -1,10 +1,11 @@
 ---
-title: "LiveRamp connector | Microsoft Docs"
-description: "Learn how to export Dynamics 365 Customer Insights data to LiveRamp."
+title: "LiveRamp connector"
+description: "Learn how to export data to LiveRamp."
 ms.date: 04/22/2020
 ms.reviewer: kishorem
-ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha

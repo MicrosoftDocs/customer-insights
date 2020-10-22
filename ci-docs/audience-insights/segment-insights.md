@@ -1,8 +1,9 @@
 ---
-title: "Segment insights in Dynamics 365 Customer Insights | Microsoft Docs"
-description: "Get insights on existing segments in Customer Insights."
+title: "Segment insights for existing segments"
+description: "Get insights on existing segments to see differences and commonalities."
 ms.date: 06/10/2020
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice:
 ms.topic: "article"
 author: m-hartmann
 ms.author: mhart

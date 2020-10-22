@@ -2,8 +2,9 @@
 title: "Power Automate connector | Microsoft Docs"
 description: "Create flows in Microsoft Power Automate from Dynamics 365 Customer Insights."
 ms.date: 08/03/2020
-ms.service: dynamics-365-ai
-ms.topic: "get-started-article"
+ms.service: customer-insights
+ms.subservice:
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: philk
@@ -22,7 +23,7 @@ You can use a variety of triggers that allow you to create flows to automate rep
 - Trigger when a data source refresh succeeds.
 - Trigger when a threshold is crossed on a segment. The trigger is limited to crossing above the threshold.
 - Trigger when a threshold is crossed on a business measure. The trigger is limited crossing above the threshold.
-- Trigger when a full refresh of Customer Insights (data sources, segments, measures,...) is completed.
+- Trigger when a full refresh of (data sources, segments, measures,...) is completed.
 - Trigger when a refresh of the unification process (map, match, merge) is completed.
 
 [Configure your triggers in Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).
@@ -30,9 +31,9 @@ You can use a variety of triggers that allow you to create flows to automate rep
 ## Power Automate actions
 The Power Automate connector provides other actions than the available triggers. For more information, see the [Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).
 
-## Create a Power Automate flow in Customer Insights
+## Create a Power Automate flow in audience insights
 
-1. In Customer Insights, go to **Admin** > **System**.
+1. In audience insights, go to **Admin** > **System**.
 
 1. On the **System** page, select the **Status** tab.
 
