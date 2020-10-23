@@ -1,49 +1,54 @@
 ---
-title: User roles and permissions
-description: An overview of the user roles and permissions available for public preview. 
+title: Roles and permissions
+description: Overview of avaialable roles and permissions for workspace members. 
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/21/2020
+ms.date: 10/23/2020
 ms.service: customer-insights
 ms.subservice: 
 ms.topic: conceptual
 ms.manager: shellyha
 ---
 
-# User roles 
+# Member roles
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+You can assign members to your workspace and define their roles and permissions. The engagement insights capability supports **Environment admin** and **Workspace admin** roles.
 
 
-
-
-You can assign members to your workspace and define their roles and permissions. For public preview, engagement insights capability supports **Environment admin** and **Workspace admin** roles.  
-
+## Permissions
+  
 The following chart identifies permissions for each role. 
 
-| Role | Environment admin | Workspace admin |
+| Permission | Environment admin | Workspace admin |
 |--|--|--|
-| Create Environments (Creator automatically made Environment admin) | X* | X* |  |
-| Configure Environment (Environment members, Delete)) | X |  |  |
-| Create Workspaces | X |  |  |
-| Configure Workspaces (Workspace members, Out-of-the-box (OOB) reports, Delete) | X | X |  |
-| Configure Events and Refined Events | X | X |
-| View Workspace Events and Refined events | X | X |
-| View Workspace Resources (Reports, Segments, and Metric)| X | X |
+| Create environments (creator automatically becomes environment admin) | X* | X* |  |
+| Configure environment (Add/remove environment members, delete environment) | X |  |  |
+| Create workspaces | X |  |  |
+| Configure workspaces (Add/remove workspace members, pre-defined reports, delete workspace) | X | X |  |
+| Configure events and refined events | X | X |
+| View workspace events and refined events | X | X |
+| View workspace resources (reports, segments, and metric)| X | X |
 
-*Can only create trial environments during public preview. 
+*Can only create trial environments in preview. 
 
 ## Workspace administration
 
-You can add and remove members from workspaces and environments. To access the Environment Members page, you need to be an Environment Administrator of at least one Environment. 
+You can add and remove members from workspaces and environments. To access the Environment Members page, you need to be an environment admin of at least one environment. 
 
-To add and remove Workspace admin members
+<!-- TODO - can we link this to the manage-workspace article and not duplicate the procedur? -->
+
+### Manage workspace members
+
 1. In the navigation pane, use the **Workspace picker** to select the workspace you want to work in.
 1. Select **Admin** > **Settings** to access **Workspace Settings**.
 1. Select **Members** and then **+Add members** to update members and assign roles.
 
-To add and remove Environment admin members
+<!-- TODO - create a new article to manage environments and link this there? I think it's in one of the drafts shared on 10/22 -->
+
+### Manage environment members
+
 1. In the navigation pane, select **Admin** > **Settings** to access **Workspace Settings**.
 1. Select **General** and then **Go to admin center**.
 1. Select the environment you want to work in and then select **Members** to update Environment administrators. 

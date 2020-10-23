@@ -40,9 +40,9 @@ If no user consent value is specified, the SDK will assume that the user has con
 
 Engagement insights capability also makes use of local storage (`localStorage`) to track non-sensitive data. This data is fully stored in the browser itself, with no traffic sent to or from your servers.
 
-- *PISession.Id* 
+- *EISession.Id* 
     - Stores information about the ongoing user session, such as session ID, when it started, and when it expires.
-- *PISession.Previous*
+- *EISession.Previous*
     - Stores the URL of the previously visited page in the current session.
     
 Keys in local storage don't expire automatically. They'll be reset during the next session by the SDK.
