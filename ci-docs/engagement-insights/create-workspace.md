@@ -15,9 +15,13 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A workspace is how you group data and reports in Dynamics 365 Customer Insight engagement insights capability. It's where you can view user activity in real time. You can add members to an existing workspace at any time. 
+A workspace is how you store and manage events and reports. When create a workspace, you select the type of data you will send to the workspace. During public preview, engagement insights capability only supports web workspaces.
+
+The workspace is where you can view user activity in real time. You can add members to an existing workspace at any time. 
 
 ## Create a workspace
+
+:::image type="content" source="media/workspace-switcher.png" alt-text="Customer insights page with callout on navigation pane and description":::
 
 1. In the navigation pane, choose **+New workspace**. 
 
