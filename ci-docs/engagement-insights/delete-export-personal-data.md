@@ -59,7 +59,25 @@ To tag an event property as containing personal information, follow these steps:
 
 ### Delete or export tagged event data
 
-For private preview, you can email delete requests to **[pirequest@microsoft.com](mailto:pirequest@microsoft.com)**. We are currently working on the functionality that enables you to delete tagged event data on your own. Stay tuned!
+If all event properties have been tagged appropriately as described in the previous step, a team administrator is then able to issue deletion requests against the tagged event data from the **Team settings** page.
+
+[TODO placeholder for screenshots]
+
+#### Deletion
+
+For deletion, you can enter a list of comma-separated values in the **Delete EUII for the user IDs specified** box. These properties will then be compared with all tagged event properties of all projects underneath the current team via exact string matching.
+
+[TODO placeholder for screenshots]
+
+If a property value matches one of the provided values, then the associated event will be permanently deleted. Due to the irreversibility of this action, you must confirm the deletion after clicking **Delete**.
+
+#### Export
+
+The export process is identical to the deletion process when it comes to defining  event property values in the **Export all EUII contained in this team for user IDs specified** field. Additionally, you'll need to provide an Azure Blob URL to specify the export destination. The Azure Blob URL must include a [Shared Access Signature (SAS)](https://docs.microsoft.com/azure/storage/common/storage-sas-overview).
+
+[TODO placeholder for screenshots]
+
+After selecting **Export**, all events of the current team that contain matching tagged properties will be exported in CSV format to the destination blob.
 
 #### Good practices
 
