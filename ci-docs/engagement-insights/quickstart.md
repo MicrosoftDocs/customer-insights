@@ -37,7 +37,7 @@ You can use the setup wizard to connect your own data.
 
 1. In engagement insights, select **Connect your data** to start the wizard. 
 
-:::image type="content" source="media/banner.png" alt-text="Customer Insights page with connect your data button":::
+:::image type="content" source="media/connect-your-data.png" alt-text="Customer Insights page with connect your data button":::
 
 1. Choose the type of activity that you want to measure in a new workspace. Currently, only **Website activity** is available. **App activity** and **Device activity** will become available in future releases.
 
