@@ -17,7 +17,7 @@ ms.manager: shellyha
 
 A workspace is how you store and manage events and reports. When create a workspace, you select the type of data you will send to the workspace. During public preview, engagement insights capability only supports web workspaces.
 
-The workspace is where you can view user activity in real time. You can add members to an existing workspace at any time. 
+The workspace is where you can view user activity in real time. You can add members to an existing workspace at any time.
 
 ## Create a workspace
 
