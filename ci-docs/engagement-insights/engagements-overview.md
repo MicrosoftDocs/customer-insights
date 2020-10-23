@@ -11,25 +11,22 @@ ms.topic: conceptual
 ms.manager: shellyha
 ---
 
-# Introducing Dynamics 365 Customer Insights engagement insights capability 
+# About Dynamics 365 Customer Insights engagement insights capability 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-[STILL A DRAFT]
-Engagement insights capability collects data for web, mobile apps and connected devices so you can understand your customer.  Use the data to personal campaigns and engagement to retain and gain customers. 
+Engagement insights capability collects data for web, mobile apps, and connected devices. It lets you understand customer behavior by acquiring a live stream of data for real-time analysis.
 
-- Use the engagement insights capability to surface, measure, and understand customer behavior on your website, in your mobile apps, and across your connected products.
-	
-- Provides you with real-time visibility into your connected physical product and digital experiences by collecting signals and acquiring a live stream of data for real-time analysis. As a result, you can monitor and learn from customer interactions in the moment, and proactively deliver more personalized and responsive end-to-end customer experiences.  (future capability?)
+## Features and benefits
 
-- Rich metrics: Aggregate signals (counts, averages, percentiles), filter and split by dimension (e.g., model or country), smooth and clean data, compute expressions, and perform comparisons (existing capability?)
+- Real-time visibility into your connected physical product and digital experiences.
+- Surface, measure, and understand customer behavior on your website, in mobile apps, and across connected products.
+- You can use the data for personal campaigns and engagements to keep and gain customers.
+- You can smooth and clean data, compute expressions, and perform comparisons.
+- Use rich metrics to aggregate events (counts, averages, percentiles), and filter and split by dimension (model or country).
+- Use the artificial intelligence (AI) and machine-learning components of Azure AI with the customer data platform (CDP) elements of Microsoft Dynamics 365 Customer Insights for engage with your customers. Transform your product development, sales, and support.
 
-- Leverages the AI and machine-learning components of Azure AI with the customer data platform (CDP) elements of Dynamics 365 Customer Insights to help you better engage with your customers and transform your product development, sales, and support. 
+ ## Next steps
 
-## Key benefits
-The following articles explain engagement insights capability prerequisites.
-
-
-
-## Next step
-Learn how to [get started with engagement insights capability](get-started.md).
+- Find out how to [set up engagement insights capability for the first time](quickstart.md).
+- Learn how to [configure and set up your environment](get-started.md).

@@ -4,7 +4,7 @@ description: First-run experience for the product
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/22/2020
+ms.date: 10/23/2020
 ms.service: customer-insights
 ms.subservice: 
 ms.topic: conceptual
@@ -17,10 +17,9 @@ ms.manager: shellyha
 
 This article explains how to sign up and do an initial setup of engagement insights, a capability of Dynamics 365 Customer Insights.
 
-<!-- TODO - Prereauisites in terms of license, SKU etc. I don't beleive anybody can simply open the pi website and sign in? -->
-
 ## Sign up for a demo of engagement insights
 
+You must have an active  Microsoft Azure Active Directory user account. 
 1. Open the [engagement insights capability](https://pi.dynamics.com/) website. 
 
 1. Sign in with your school or work account.
@@ -54,8 +53,6 @@ You can use the setup wizard to connect your own data.
 
 By default, only the person who created the workspace has access to it. You can add other users from your organization to an existing workspace at any time.
 
-<!-- TODO - can we link this to the manage-workspace article and nto duplicate the procedure and screenshot? -->
-
 :::image type="content" source="media/add-members.png" alt-text="Members page with callout on Add Members button":::
 
 1. Go to **Admin** > **Settings** > **Members**.
@@ -67,8 +64,6 @@ To remove members from a workspace, select **...** next to their names on the **
 
 ## Edit an existing workspace
 
-<!-- TODO - can we link this to the manage-workspace article and nto duplicate the procedure and screenshot? -->
-
 You can edit the details of existing workspaces at any time.
 
 :::image type="content" source="media/manage-workspace.png" alt-text="Workspace settings page with callout on workspace name and description":::
@@ -79,11 +74,10 @@ You can edit the details of existing workspaces at any time.
 
 ## Add another new workspace
 
-<!-- TODO - needs screenshot. "organization name symbol" is too vague -->
-
+:::image type="content" source="media/workspace-switcher.png" alt-text="Customer insights page with callout on navigation pane and description":::
 You can create additional workspaces to classify your data.
 
-1. Choose the organization name symbol in the navigation pane.
+1. Select the **workspace switcher** in the navigation pane.
 2. Select **+ New workspace**.
 3. Enter a **Name** and an optional **Description**.
 4. Select **Create**.
@@ -92,4 +86,3 @@ You can create additional workspaces to classify your data.
 
 To view your workspaces, select the **workspace switcher** in the navigation pane. You can switch between workspaces, create a new one, or select **Web Sample** to try our reports and features using sample data. 
 
-<!-- TODO - need screenshot -->
