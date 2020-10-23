@@ -37,11 +37,15 @@ The following chart identifies permissions for each role.
 
 You can add and remove members from workspaces and environments. To access the Environment Members page, you need to be an environment admin of at least one environment. 
 
+<!-- TODO - can we link this to the manage-workspace article and not duplicate the procedur? -->
+
 ### Manage workspace members
 
 1. In the navigation pane, use the **Workspace picker** to select the workspace you want to work in.
 1. Select **Admin** > **Settings** to access **Workspace Settings**.
 1. Select **Members** and then **+Add members** to update members and assign roles.
+
+<!-- TODO - create a new article to manage environments and link this there? I think it's in one of the drafts shared on 10/22 -->
 
 ### Manage environment members
 
