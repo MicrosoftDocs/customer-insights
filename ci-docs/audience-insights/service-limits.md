@@ -3,7 +3,7 @@ title: "Service limits"
 description: "Understand limits and restrictions."
 ms.date: 10/15/2020
 ms.service: customer-insights
-ms.subservice: 
+ms.subservice: audience-insights 
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
