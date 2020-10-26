@@ -41,4 +41,9 @@ An event records when a user views a page (view event) or interacts with content
 1. [Create refined events](create-modify-refined-events.md) for export.
 2. Export the [data](export-events.md) to Data Lake Storage.
 3. Learn how to [delete and export event data containing personal information](delete-export-personal-data.md).
-  
+ 
+## Stay connected
+We appreciate your active participation and plan to consider all relevant feedback in developing future releases. Reach out to us to provide feedback and report issues by one of these channels:
+- [Community](https://go.microsoft.com/fwlink/?linkid=2141648)
+- [Provide feedback](https://go.microsoft.com/fwlink/?linkid=2143222)
+- [Request support](https://go.microsoft.com/fwlink/?linkid=2145734) 

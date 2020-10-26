@@ -17,9 +17,13 @@ ms.manager: shellyha
 
 This list defines selected terms that appear in Dynamics 365 Customer Insights engagement insights capability and in its supporting documentation.
 
-## Events
+## Event
 
 In digital analytics, an event represents user behavior. An event records when a user views a page (view event) or interacts with content (action event).  On a web page, as visitors view web pages, engagements insights sends page view events. As they interact with web page elements, it sends page action events.
+
+## Environments
+
+ An environment can contain one or more workspaces. You can use this space to manage your workspaces and manage connections to Customer Insights audience insights capability.
 
 ## Member
 
@@ -39,4 +43,4 @@ A report is a collection of data visualizations. Engagement insights capability 
 
 ## Workspace
 
-A grouping of data and reports. New workspaces include pre-configured reports and insights based on the type of product you want to analyze.
+A workspace is how you store and manage events and reports. When you create a workspace, you select the type of data you will send to the workspace. The workspace is where you can view user activity in real time. 

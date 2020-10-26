@@ -4,7 +4,7 @@ description: How to create and modify refined events
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/22/2020
+ms.date: 10/23/2020
 ms.service: customer-insights
 ms.subservice: 
 ms.topic: conceptual
@@ -30,7 +30,7 @@ There are three ways to create a refined event from a base event.
     
     :::image type="content" source="media/create-refined-events-options.png" alt-text="Options to create refined events":::
 
-1. In the **Create refined events** dialog, provide a **Refined events display name** and optinally, update the suggested **Actual name** without using spaces.
+1. In the **Create refined events** dialog, provide a **Refined events display name** and optionally, update the suggested **Actual name** without using spaces.
  
 1. On the detailed view of your refined event, select **Add and remove properties** to open the **Edit properties** pane. 
 
