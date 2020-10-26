@@ -4,7 +4,7 @@ description: Use the available reports to monitor activity on your site.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/21/2020
+ms.date: 10/26/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,15 +15,19 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A report is a collection of data visualizations. Dynamics 365 Customer Insights engagement insights comes with a set of out-of-the-box reports, using the data collected through the SDK.
+A report is a collection of data visualizations. Dynamics 365 Customer Insights engagement insights comes with a set of out-of-the-box reports, using the data collected through the SDK. You can access them from the **Reports** page. The reports are grouped into four categories:
 
-Under **Reports**, select  **[Key metrics](#key-metrics-reports)**, **[Content](#content-reports)**, **[Traffic sources](#traffic-sources-reports)**, or **[Visitor profiles](#visitor-profiles-reports)** to access the reports.
+- **[Key metrics](#key-metrics-reports)**
+- **[Content](#content-reports)**
+- **[Traffic sources](#traffic-sources-reports)**
+- **[Visitor profiles](#visitor-profiles-reports)**
 
-:::image type="content" source="media/reports-list.png" alt-text="Navigation showing the list of available reports":::
 
-- Select a time frame for a report by choosing a value from the **time/date range** drop-down list.
+:::image type="content" source="media/ReportMenu.png" alt-text="Navigation showing the list of available reports":::
 
-- Select a value in a chart or list to filter the report for the selected value.
+- Select a time frame for a report by choosing a value from the **time/date range** drop-down list. The time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.” 
+
+- In most reports, select a value in a chart or list to filter the report for the selected value. 
 
 <!-- add the below when available?
 - Select **Add chart** to add more visualizations. Select **Save** to apply your changes.
@@ -37,14 +41,14 @@ Under **Reports**, select  **[Key metrics](#key-metrics-reports)**, **[Content](
 - **Page views** lists the page views for individual pages along with the number of total page views over the selected time frame.
 - **Visits** shows information about the number of visits and the visit duration.
 - **Visitors** informs about new and returning unique visitors to your site.
-:::image type="content" source="media/real-time-usage-report.png" alt-text="Real-time usage report":::
+:::image type="content" source="media/Real-timeusage.png" alt-text="Real-time usage report":::
 
 ## Content reports
 
 - **Links** show information about the number and type of clicks that were performed.
 - **Exit pages** lists the links that visitors clicked to exit your site.
 
-:::image type="content" source="media/exit-pages-report.png" alt-text="Exit pages report":::
+:::image type="content" source="media/Links.png" alt-text="Exit pages report":::
 
 
 ## Traffic sources reports
@@ -53,7 +57,7 @@ Under **Reports**, select  **[Key metrics](#key-metrics-reports)**, **[Content](
 - **Referring URLs** identifies the URLs that referred visitors to your site.
 - **Tracking codes** provides details about the tracking codes in the links that brought visitors to your site.
 
-:::image type="content" source="media/tracking-codes-report.png" alt-text="Tracking codes report":::
+:::image type="content" source="media/Referringdomains.png" alt-text="Tracking codes report":::
 
 ## Visitor profiles reports
 
@@ -63,4 +67,4 @@ Under **Reports**, select  **[Key metrics](#key-metrics-reports)**, **[Content](
 - **Locations** shows information about visitors by country and region.
 - **Language** lists the visitor's preferred languages.
 
-:::image type="content" source="media/operating-systems-report.png" alt-text="Operating systems report":::
+:::image type="content" source="media/Devices.png" alt-text="Operating systems report":::
