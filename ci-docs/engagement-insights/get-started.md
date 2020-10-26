@@ -25,7 +25,7 @@ Review the following articles before setting up a workspace.
 1. Review the [glossary](glossary.md) to get a quick introduction about key terms and concepts. 
 
 ## Set up a workspace
-The starting point for any user is set up a workspace. The workspace is where you'll start ingesting web analytics data.
+The starting point for any user is to set up a workspace. The workspace is where you'll start ingesting web analytics data.
 
 1. Sign in to the [engagement insights capability portal](https://pi.dynamics.com) using your Microsoft Azure Active Directory user account.
 1. [Create a workspace](create-workspace.md) and add members.
