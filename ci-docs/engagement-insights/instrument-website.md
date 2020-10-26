@@ -5,7 +5,7 @@ description: Learn how to use the engagement insights capability SDK to instrume
 ms.author: ruthai
 ms.date: 10/19/2020
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: engagement-insights
 ms.topic: conceptual
 ---
 
