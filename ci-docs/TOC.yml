@@ -152,6 +152,9 @@
 
 - name: Engagement insights (preview)
   items:
+    - name: Help hub
+      href: engagement-insights/index.yml
+
     - name: Capability overview
       href: engagement-insights/engagements-overview.md
 

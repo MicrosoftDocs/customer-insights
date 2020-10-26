@@ -22,8 +22,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Capability overview TODO
-            url: index.yml
+          - text: Capability overview
+            url: engagements-overview.md
           - text: Community site
             url: https://go.microsoft.com/fwlink/?linkid=2073991
 
@@ -51,8 +51,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Instrument your website TODO
-            url: index.yml
+          - text: Instrument your website
+            url: instrument-website.md
           - text: Refined events
             url: create-modify-refined-events.md
           - text: Export events
