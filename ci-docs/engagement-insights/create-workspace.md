@@ -1,10 +1,10 @@
 ---
-title: About workspace and members
+title: Create a workspace and add members
 description: How to create a workspace and add members
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/13/2020
+ms.date: 10/26/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -23,15 +23,15 @@ The workspace is where you can view user activity in real time. You can add memb
 
 :::image type="content" source="media/workspace-switcher.png" alt-text="Customer insights page with callout on navigation pane and description":::
 
-1. In the navigation pane, choose **+New workspace**. 
+1. In the workspace selector, select **New workspace**. 
 
-2. Enter a name for your workspace in the **Name** box and optionally add text in **Description**.
+2. Enter a **Name** for the new workspace and optionally add a **Description**.
 
-3. Choose **Create** to confirm and create the workspace.
+3. Select **Create** to confirm and create the workspace.
 
 ## Add members
 
-The **Members** page is where you can assign members to your workspaces, and define their roles and permissions.
+The **Members** page is where you add members to your workspaces, and define their roles and permissions.
 
 :::image type="content" source="media/add-members.png" alt-text="Members page with callout on Add Members button":::
 
@@ -41,20 +41,9 @@ To add members to your workspace, follow these steps:
 
 1. In the **Add members** pane, find the person that you want to add to the workspace. You can search by name or email address.
 
-1. Choose the new member's **Role** from the drop-down list.
+1. Choose the new member's **Role** from the drop-down list. For more information, see [Roles and permissions](user-roles.md)
 
    > [!NOTE]
    > The only **Role** currently available is **Workspace admin**. Security groups and distribution groups are currently not supported.
 
 1. When you are done adding members, select **Add members** to confirm.
-
-### Member permissions
-
-<!-- TODO - link to members article -->
-
-**Workspace admin** is only role currently available. It has the following permissions enabled:
-
-- Create projects
-- Configure projects (members, delete)
-- Configure events and refined events
-- View project resources (reports)

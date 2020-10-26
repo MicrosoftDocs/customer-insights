@@ -201,10 +201,12 @@
           href: engagement-insights/user-consent-storage.md
         - name: Create a workspace
           href: engagement-insights/create-workspace.md
-        - name: Manage workspace settings
-          href: engagement-insights/manage-workspace.md
-        - name: User roles and permissions
+        - name: Roles and permissions
           href: engagement-insights/user-roles.md
+        - name: Manage environments and workspaces
+          href: engagement-insights/manage-environments-workspaces.md
+        - name: Configure connections
+          href: engagement-insights/configure-connections.md
 
     - name: GDPR
       items: 
