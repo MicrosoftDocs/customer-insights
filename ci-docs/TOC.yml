@@ -176,6 +176,8 @@
       items: 
         - name: View reports
           href: engagement-insights/view-reports.md
+        - name: Create custom reports
+          href: engagement-insights/custom-reports.md
 
     - name: Developer resources
       items: 
