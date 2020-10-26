@@ -4,7 +4,7 @@ description: "Learn how to unify ingested data."
 ms.date: 04/16/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

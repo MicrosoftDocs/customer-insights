@@ -4,7 +4,7 @@ description: "View data on the Entities page."
 ms.date: 04/16/2020
 ms.reviewer: mukeshpo
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

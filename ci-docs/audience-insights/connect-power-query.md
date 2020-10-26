@@ -4,7 +4,7 @@ description: "Connectors for data sources based on Power Query."
 ms.date: 09/29/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
