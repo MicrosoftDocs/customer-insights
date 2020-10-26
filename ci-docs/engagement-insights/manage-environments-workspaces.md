@@ -19,7 +19,7 @@ Environments and workspaces are used to store and manage your reports, events, a
 
 ### Environments
 
-An environment is a space to manage your workspaces and manage connections to Dynamcis 365 Customer Insights audience insights. How you opt to use environments depends on your organization and the apps you're trying to build. 
+An environment is a space where you manage your workspaces and connections. How you use environments depends on your organization and your use case. 
 
 For example: 
 - Choose to have a single environment.
@@ -29,7 +29,7 @@ For example:
 
 ### Workspaces 
 
-A workspace is a space to store and manage events and reports. When you [create a workspace](create-workspace.md) you select what kind of data you will be sending the workspace. Currently, only web data is supported. Workspaces come with pre-defined reports and let you create custom reports using web metrics and dimensions.
+A workspace is a space to store and manage events and reports. When you create a workspace,](create-workspace.md) you select what kind of data you'll be sending the workspace. Currently, only web data is supported. Workspaces come with pre-defined reports and let you create custom reports using web metrics and dimensions.
 
 ## Manage a workspace
 
@@ -60,7 +60,7 @@ Deleting a workspace will permanently remove all of its content, data, settings,
 
 1. Go to **Admin** > **Settings** > **Members**.
 1. Select **Add members** to update members and [assign roles](user-roles.md). Currently, only **Workspace admin** is available.
-1. Select the check box if you want **Allow access to profile data**. This will enable the member to see reports based on user profiles if you set up the [connection to audience insights](configure-connections.md).
+1. Select the check box if you want **Allow access to profile data**. This selection enables the member to see reports based on user profiles if you set up the [connection to audience insights](configure-connections.md).
 1. Select **Add members** to add them to your workspace.
 
 ## Manage an environment
@@ -93,7 +93,7 @@ Switch between the different areas in the admin center by selecting the correspo
 1. Select **Go to admin center**.
 1. Select **Members**.
 1. Select **Add members** to update members and [assign roles](user-roles.md). Currently, only **Environment admin** is available.
-1. Select the check box if you want **Allow access to profile data**. This will enable the member to see reports based on user profiles if you set up the [connection to audience insights](configure-connections.md).
+1. Select the check box if you want **Allow access to profile data**. This selection enables the member to see reports based on user profiles if you set up the [connection to audience insights](configure-connections.md).
 1. Select **Add members** to add them to your environment.
 
 ### Manage workspaces
@@ -103,16 +103,16 @@ Switch between the different areas in the admin center by selecting the correspo
 1. Select **Workspaces**.
 1. Select **...** next to the workspace name and choose one of the available options:
    - Choose **Edit name** to change the name of a workspace.
-   - Choose **Delete**to remove a workspace.
+   - Choose **Delete** to remove a workspace.
 
 ### Manage connections
 
-Establishing connections to audience insights lets you see reports in engagement insigiths based on unified customer profiles. 
+Establishing connections to audience insights lets you see reports in engagement insights based on unified customer profiles. 
 
 For more information, see [Configure connections](configure-connections.md).
 
 ### Manage personal data
 
-To protect your customer's personal data, you can delete or export end user identifialble data.
+To protect your customer's personal data, you can delete or export end user identifiable data.
 
 For more information, see [Delete and export event data containing personal information](delete-export-personal-data.md)
