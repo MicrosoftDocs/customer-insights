@@ -1,17 +1,18 @@
 ### YamlMime:Landing
 
-title: Audience insights capability in Dynamics 365 Customer Insights
-summary: Ingest, unify, and organize customer data from multiple sources. Create and manage customer profiles and real-time segmentation. Integrate customer data with other systems to make it even more actionable.
+title: Engagement insights capability in Dynamics 365 Customer Insights
+summary: Collect data for web, mobile apps, and connected devices. Understand customer interactions and usage across channels and automatically enrich customer profiles with multi-dimensional signals. Transform your product development, sales, and support.
 
 metadata:
-  title: Audience insights documentation
-  description: Help hub with key links for audience insights.
+  title: Engagement insights documentation
+  description: Help hub with key links for engagement insights.
   ms.service: customer-insights
   ms.subservice: engagement-insights
   ms.topic: landing-page
   author: m-hartmann
   ms.author: mhart
-  ms.date: 10/16/2020
+  ms.reviewer: ruthai
+  ms.date: 10/26/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
