@@ -4,14 +4,14 @@ description: Overview of avaialable roles and permissions for workspace members.
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/23/2020
+ms.date: 10/26/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
 ms.manager: shellyha
 ---
 
-# Member roles
+# Roles and permissions
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 You can assign members to your workspace and define their roles and permissions. The engagement insights capability supports **Environment admin** and **Workspace admin** roles.
