@@ -43,7 +43,7 @@ An event records when a user views a page (view event) or interacts with content
 3. Learn how to [delete and export event data containing personal information](delete-export-personal-data.md).
  
 ## Stay connected
-We appreciate your active participation and plan to consider all relevant feedback in developing future releases. Reach out to us to provide feedback and report issues by  one of these channels:
+We appreciate your active participation and plan to consider all relevant feedback in developing future releases. Reach out to us to provide feedback and report issues by one of these channels:
 - [Community](https://go.microsoft.com/fwlink/?linkid=2141648)
 - [Provide feedback](https://go.microsoft.com/fwlink/?linkid=2143222)
-- [Request suppor](https://go.microsoft.com/fwlink/?linkid=2145734)t 
+- [Request support](https://go.microsoft.com/fwlink/?linkid=2145734) 
