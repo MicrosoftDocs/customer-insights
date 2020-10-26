@@ -27,6 +27,7 @@ Go to **Admin** > **Export destinations** to find the following extensibility op
 - [Azure Blob Storage](export-azure-blob-storage.md)
 - [LiveRamp&reg; connector](export-liveramp.md)
 - [Bot for Microsoft Teams](export-teams-bot.md)
+- [Mailchimp](export-mailchimp.md)
 - [Customer Insights API](apis.md)
 
 ## Add a new export destination
