@@ -45,8 +45,6 @@ To edit or delete a workspace, you have to select the workspace from the workspa
 1. In the **Workspace name** field, enter the new name.
 1. Select **Save**.
 
-:::image type="content" source="media/manage-workspace.png" alt-text="Rename or delete a workspace":::
-
 ### Delete a workspace
 
 Deleting a workspace will permanently remove all of its content, data, settings, and permissions. It can't be undone.
