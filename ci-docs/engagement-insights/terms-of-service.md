@@ -17,7 +17,7 @@ ms.manager: shellyha
 
 ## PREVIEW TERMS OF SERVICE
 
-LAST UPDATED SEPTEMBER 2020 
+LAST UPDATED OCTOBER 2020 
 
 By accessing or using the services preview of the Dynamics 365 Customer Insights – Engagement insights (together with any Microsoft provided data sources, the “Services”), you accept the terms and conditions of this Agreement. If you do not accept them, do not access or use the Services.
 
