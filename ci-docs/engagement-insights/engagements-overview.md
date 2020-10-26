@@ -21,10 +21,10 @@ Engagement insights capability collects data for web, mobile apps, and connected
 
 - Real-time visibility into your connected physical product and digital experiences.
 - Surface, measure, and understand customer behavior on your website, in mobile apps, and across connected products.
-- You can use the data for personal campaigns and engagements to keep and gain customers.
-- You can smooth and clean data, compute expressions, and perform comparisons.
+- Use the data for personal campaigns and engagements to keep and gain customers.
+- Smoothen and clean data, compute expressions, and perform comparisons.
 - Use rich metrics to aggregate events (counts, averages, percentiles), and filter and split by dimension (model or country).
-- Use the artificial intelligence (AI) and machine-learning components of Azure AI with the customer data platform (CDP) elements of Microsoft Dynamics 365 Customer Insights for engage with your customers. Transform your product development, sales, and support.
+- Use the artificial intelligence (AI) and machine-learning components of Azure AI with the customer data platform (CDP) elements of Microsoft Dynamics 365 Customer Insights to engage with your customers. Transform your product development, sales, and support.
 
  ## Next steps
 
