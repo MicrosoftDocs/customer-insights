@@ -60,5 +60,6 @@ Edit any existing custom report by accessing the custom report list (Reports > C
 
 Visualizations in existing custom reports can also be modified. To edit an existing visualization, open the custom report containing the visualization to be edited, and then select the three dots (More options) below the visual. Select the “Edit visual” option. Make the desired changes and then select “Save” in the top command bar. 
 
-:::image type="content" source="media/Editvisual.png" alt-text="Editing visualizations for custom reports"::
+:::image type="content" source="media/Editvisual.png" alt-text="Editing visualizations for custom reports":::
+
 
