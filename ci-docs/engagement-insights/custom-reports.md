@@ -50,7 +50,7 @@ Resize any visualization in the custom report by selecting the visualization and
 
 Reposition any visualization in the custom report by selecting the visualization and then dragging it to the new position. Alternatively, use the up, down, right, and left arrow keys to reposition the visualization.
 
-:::image type="content" source="media/ Design.png" alt-text="Visualizations for custom reports":::
+:::image type="content" source="media/Design.png" alt-text="Visualizations for custom reports":::
 
 Once editing is complete, save the report by selecting **Save** in the top command bar. Enter a name for the new custom report and then select **Save** 
 
