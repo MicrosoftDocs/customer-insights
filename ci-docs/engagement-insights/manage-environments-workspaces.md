@@ -69,6 +69,10 @@ The admin center lets you manage engagement insights environments. It currently 
 
 To access the environment admin center, you need to have an environment admin role.
 
+Switch between the different areas in the admin center by selecting the corresponding tabs.
+
+:::image type="content" source="media/environment-admin-center-tabs.png" alt-text="Environment admin center with callout on tabs":::
+
 ### Choose the environment to configure
 
 1. Go to **Admin** > **Settings** > **General**.
