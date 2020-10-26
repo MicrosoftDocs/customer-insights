@@ -43,4 +43,4 @@ A report is a collection of data visualizations. Engagement insights capability 
 
 ## Workspace
 
-A workspace is how you store and manage events and reports. When create a workspace, you select the type of data you will send to the workspace. The workspace is where you can view user activity in real time. 
+A workspace is how you store and manage events and reports. When you create a workspace, you select the type of data you will send to the workspace. The workspace is where you can view user activity in real time. 
