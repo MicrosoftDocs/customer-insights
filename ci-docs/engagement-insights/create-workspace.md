@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A workspace is how you store and manage events and reports. When create a workspace, you select the type of data you will send to the workspace. During public preview, engagement insights capability only supports web workspaces.
+A workspace is how you store and manage events and reports. When you create a workspace, you select the type of data you will send to the workspace. During public preview, engagement insights capability only supports web workspaces.
 
 The workspace is where you can view user activity in real time. You can add members to an existing workspace at any time.
 
@@ -49,6 +49,8 @@ To add members to your workspace, follow these steps:
 1. When you are done adding members, select **Add members** to confirm.
 
 ### Member permissions
+
+<!-- TODO - link to members article -->
 
 **Workspace admin** is only role currently available. It has the following permissions enabled:
 
