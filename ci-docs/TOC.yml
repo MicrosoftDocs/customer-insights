@@ -115,6 +115,8 @@
           href: audience-insights/export-facebook.md
         - name: LiveRamp
           href: audience-insights/export-liveramp.md
+        - name: Mailchimp
+          href: audience-insights/export-mailchimp.md
         - name: Microsoft Teams (bot)
           href: audience-insights/export-teams-bot.md
         - name: Power BI

@@ -4,7 +4,7 @@ description: "Overview of Dynamics 365 Customer Insights audience insights capab
 ms.date: 02/05/2020
 ms.reviewer: nimagen
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -4,7 +4,7 @@ description: "Learn about permissions and user roles."
 ms.date: 09/28/2020
 ms.reviewer: nimagen
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
