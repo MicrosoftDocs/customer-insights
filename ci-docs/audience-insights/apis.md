@@ -1,8 +1,8 @@
 ---
-title: "Work with APIs"
-description: "APIs and available methods for Dynamics 365 Customer Insights."
-ms.date: 04/17/2020
-ms.reviewer: nimagen
+title: Work with APIs
+description: Use APIs and understand limitations.
+ms.date: 10/27/2020
+ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,93 +11,128 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Work with APIs
+# Work with Customer Insights APIs
 
-There are currently several APIs you can use with Dynamics 365 Customer Insights. Details of these APIs, including parameters and responses, can be found on the [Customer Insights Swagger UI webpage](https://global.api.ci.ai.dynamics.com/swagger/index.html).
+Dynamics 365 Customer Insights provides APIs to build your own applications based you data in Customer Insights.
 
-The goal of this article isn't to cover all the APIs, but rather to:
+> [!IMPORTANT]
+> Details of these APIs, are listed on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.
 
-- Explain on how to use the Swagger UI app
-- Highlight the most important functionalities of the APIs
+This article guides you to access to the Customer Insights APIs, create an Azure App Registration, and help you get started with the available client libraries.
 
-## How to use the API reference
+## Get started trying the Customer Insights APIs
 
-If you aren't familiar with Swagger, see the following step-by-step tutorial: [Swagger UI tutorial](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html).
+1. [Sign in](https://home.ci.ai.dynamics.com) to Customer Insights. If you don't have a subscription yet, [sign up for a trial of Customer Insights](https://aka.ms/tryci).
 
-## Use Swagger UI
+1. To enable APIs on your Customer Insights environment, go to **Admin** > **Permissions**. You'll need admin permissions to do so.
 
-1. Go to the [API reference](https://global.api.ci.ai.dynamics.com/swagger/index.html).
+1. Go to the **APIs** tab and select the **Enable** button.    
+   Enabling the APIs creates a primary and secondary subscription key for your instance that gets used in the API requests. You can regenerate the keys by selecting the **Regenerate primary** or **Regenerate secondary** on **Admin** > **Permissions** > **APIs**.
 
-2. Select **Authorize** and use your Customer Insights credentials.
+   :::image type="content" source="media/enable-apis.png" alt-text="Enable Customer Insights APIs":::
 
-3. Open the **Instances** > **GET /api/instances** endpoint. Select **Try it out** and **Execute** the call.
+1. Select **Explore our APIs** to try out the APIs.
 
-4. Copy the value from **scaleUnitUri** and replace the server address (https://global.api.ci.ai.dynamics.com) in your address bar with it.
+1. Choose an API operation and select **Try it**.
 
-## Functionalities served through Open Data Protocol APIs
+1. In the side pane, set the value in the **Authorization** drop-down menu to **implicit**. The `Authorization` header gets with a bearer token added. Your subscription key will be automatically populated.
+  
+1. Optionally, add all necessary query parameters.
 
-- PUT API: /api/instances/{instanceId}/data/{relativePath}
+1. Scold to the bottom of the side pane and select **Send**.
 
-| Functionality | Guidance | Limitations |
-|---------|---------|---------|
-|1. **Export** any ingested dataset including the Master Customer Dataset that was created during the data configuration process (JSON/CSV formats). | Use the **$Search** command with conte-type: text/csv header. For more information, see [Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/). | 1. Can be done only if **Customer ID** is present in the queried dataset. <br/><br/>2. Can't be executed along with functionalities #2–5. |
-| 2. **Search and query** the Master Customer Dataset that was created during the data configuration process. | Use the **$Search** command. For more information, see [Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/). | Currently not available. |
-| 3. **Filter** the Master Customer Dataset. | Use the **$Filter** command. For more information, see [Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/). | Currently not available. |
-| 4. **Search and query** other ingested datasets. | Use the **$Search** command. For more information, see [Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/). | 1. Can be done only if **Customer ID** is present in the queried dataset. <br/><br/> 2. Can't be executed along with functionality #1. |
-| 5. **Filter** other ingested datasets. | Use the **$Filter** command. For more information, see [Basic Tutorial](https://www.odata.org/getting-started/basic-tutorial/). | 1. Can be done only if **Customer ID** is present in the queried dataset. <br/><br/> 2. Can't be executed along with functionality #1. |
+The HTTP response will soon appear below.
 
-## Limitations with using Conflation APIs
+## Create a new app registration in the Azure portal
 
-See the **Conflation** table on the [API reference](https://global.api.ci.ai.dynamics.com/swagger/index.html).
+These steps help you get started in using the Customer Insights APIs in an Azure application using delegated permissions. Make sure to have completed [Getting started section](#get-started-trying-the-customer-insights-apis) first.
 
-### Limitations by field (across all Conflation APIs)
+1. Sign in to the [Azure portal](https://portal.azure.com) with the account that can access the Customer Insights data.
 
-| Field | Limitation |
-|---------|---------|
-| {instanceId} | ID must be the ID of an existing instance, and the user issuing the request must have access to that instance. |
-| {entityName} | This should be an entity name that has data ingested for the given instance (and a data source, if given as well). |
-| {datasourceId} | ID must be the ID of a data source that exists in the given instance. |
-| {conflationId} | ID must be the ID of an existing conflation for the given instance. |
+1. On the left, select **App registrations**.
 
-### Additional limitations by API
+1. Select **New registration** provide an application name and choose the account type.
+   Optionally, add a redirect URL. http://localhost is sufficient for developing an application on your local computer.
 
-| API | Limitations |
-|---------|---------|
-| PATCH<br/>/api/instances/{instanceId}/conflations/{conflationId}/entityInformation | 1. Request body will have a list of entity names, per data source. These names must actually exist as ingested entities for the data source. <br/><br/> 2. Each entity named in request body must already have a primary key defined. |
-| PATCH<br/>/api/instances/{instanceId}/conflations/{conflationId}/entityInformation/{entityName} | Same limitations as above, except the request body will have a single entity name, not a list. |
-| PATCH<br/>/api/instances/{instanceId}/conflations/{conflationId}/datasources/<br/>{datasourceId}/entityInformation/{entityName} | Same limitations as above. |
-| PATCH<br/>/api/instances/{instanceId}/conflations/{conflationId}/conflationPlan | 1. Any entity that appears in the plan must have been ingested in the referenced data source. <br/><br/> 2. Any attribute that appears in the plan must actually exist as an attribute as the referenced entity. <br/><br/> 3. Any entity that appears in the plan must have a primary key defined. <br/><br/> 4. All entities in the ConflationOrder must have corresponding EntityConflationInformation. <br/><br/> 5. At least 1 rule and criteria must be defined. <br/><br/> 6. No copy criteria may be included in the plan. <br/><br/> 7. All entities in the plan must appear in the entity conflation order. <br/><br/> 8. Entities can't appear in the plan out of the order defined in ConflationOrder. <br/><br/> 9. All matched attributes must have the same type. |
-| PATCH<br/>/api/instances/{instanceId}/conflations/{conflationId}/conflictResolutionRules | 1. Same as above. <br/><br/> 2. Same as above. <br/><br/> 3. Same as above <br/><br/> 4. At least 1 resolution policy must be defined against at least 1 source attribute. <br/><br/> All entities defined in the resolution policy must be part of the conflation plan.
+1. On your new App registration, go to **API permissions**.
 
-## Limitations with Relationship APIs
+1. Select **Add a permission** and select **Customer Insights** in the side pane.
 
-See the **EntityMetadata** table on the [API reference](https://global.api.ci.ai.dynamics.com/swagger/index.html).
+1. For **Permission type**, select **Delegated permissions** and select the **user_impersonation** permission.
 
-### Limitations common to all APIs
+1. Select **Add permissions**. If you need to access the API without a user signing in, review the [Server-to-server application permissions](#server-to-server-application-permissions) section.
 
-Most of these APIs require that data has already been ingested, with the following exceptions:
+1. Select **Grant admin consent for...** to complete the app registration.
 
-- GET /api/instances/{instanceId}/manage/schema/entitySemanticLabels
-- GET /api/instances/{instanceId}/manage/schema/attributeSemanticLabels
-- GET /api/instances/{instanceId}/manage/relationships
-- GET /api/instances/{instanceId}/manage/relationships/{relationshipName}
-- DELETE /api/instances/{instanceId}/manage/relationships/{relationshipName}
+You can use the Application/Client ID for this app registration with the Microsoft Authentication Library (MSAL) to obtain a bearer token to send with your request to the API.
 
-For relationship APIs specifically, anytime {relationshipName} is provided, a relationship with that name in the given instance must actually exist.
+For more information about MSAL, see [Overview of Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
 
-### Additional limitations by API
+For more information about app registration in Azure, see [The new Azure portal app registration experience](https://docs.microsoft.com/azure/active-directory/develop/app-registration-portal-training-guide).
 
-| API | Limitations |
-|---------|---------|
-| PATCH<br/>/api/instances/{instanceId}/manage/datasources/{datasourceId}/<br/>entities/entityInfo | 1. Request body will have a list of entity names. These names must all have been ingested into the given data source. <br/><br/> 2. Request body will have a list of attribute names associated with each entity. These names must actually exist as attributes of the entity. <br/><br/> 3. The only allowed values for "EntityType" are "Activity" and "Unspecified". <br/><br/> 4. If EntityType = Activity, then the entity with this EntityType must have a relationship to an entity with type Profile. <br/><br/> 5. If the TimestampFieldName is provided for an entity, it must be the name of one of that entity's attributes. The attribute must have type DateTime or long. |
-| PATCH<br/>/api/instances/{instanceId}/manage/datasources/{datasourceId}/<br/>entities/{entityName}/entityInfo | 1. Same as above, but for a single entity rather than a list. <br/><br/> 2. Same as above. <br/><br/> 3. Same as above. <br/><br/> 4. Same as above. <br/><br/> 5. Same as above |
-| PATCH<br/>/api/instances/{instanceId}/manage/relationships | 1. Relationship name can only include letters, numbers, and underscores. <br/><br/> 2. Relationship name must be unique.<br/><br/> 3. Cardinality can have only two values: "OneToMany" or "ManyToOne". <br/><br/> 4. There are only four possible relationship types: SingleKeyRelationshipOrigin, SingleKeyRelationshipDestination, DataSourceLineageOrigin, DataSourceLineageDestination. <br/><br/> 5. Both the FromEntity and ToEntity must be the names of entities that actually exist in the instance. <br/><br/> 6. Both the FromAttribute and ToAttribute must actually exist as attributes of the FromEntity and ToEntity. |
-| PATCH<br/>/api/instances/{instanceId}/manage/relationships/{relationshipName} | Same limitations as above, except #2 doesn't apply here, since the name was already validated during creation (while this action is an update). |
+For information on using the APIs our client libraries, see [Customer Insights client libraries](#customer-insights-client-libraries).
 
-## Functionalities served through Segmentation APIs
+### Server-to-server application permissions
 
-1. Use APIs for managing segments: Create, update, get, and delete segment definitions. Also activate and deactivate segments.
-2. Use APIs for querying: Get specific parts of a segment.
-3. Use APIs for searching and querying specific segment member data.
+The [app registration section](#create-a-new-app-registration-in-the-azure-portal) outlines how to register an app that requires a user to sign in for authentication. Learn how to create an app registration that does not need user interaction and can be run on a server.
 
-See the **SegmentManagement** table on the [API reference](https://global.api.ci.ai.dynamics.com/swagger/index.html).
+1. On your App registration in the Azure portal, go to **API permissions**.
+
+1. Select **Add a permission** and select **Customer Insights** in the side pane.
+
+1. For **Permission type**, select **Application permissions** and select the **CustomerInsights.Api.All** permission.
+
+1. Select **Add permissions**.
+
+1. To give admin consent on this Application permission, you need to add a Service Principal.
+
+   1. Install the Azure Active Directory (AD) PowerShell module: `Install-Module -Name AzureAD -AllowClobber -Scope AllUsers`
+   1. Connect to your AD account: `Connect-AzureAD -TenantId <your tenant id>`. You can find your tenant ID on **Overview** > **Azure Active Directory**.
+   1. Run the following command to add an Azure AD Service Principal: `New-AzureADServicePrincipal -AppId "38c77d00-5fcb-4cce-9d93-af4738258e3c" -DisplayName "Microsoft Dynamics 365 Customer Insights"`
+      The AppId parameter pertains to the Customer Insights API app.
+
+   :::image type="content" source="media/azureAD-service-principal.png" alt-text="Service principal sample":::
+
+1. Go back to **API permissions** for your app registration.
+
+1. Select **Grant admin consent for...** to complete the app registration.
+
+1. To conclude, we have to add the name of the app registration as a user in Customer Insights.    
+   Open Customer Insights, go to **Admin** > **Permissions** and select **Add user**.
+
+1. Search for the name of your app registration, select it from the search results, and select **Save**.
+
+## Customer Insights client libraries
+
+This section helps you get started using the client libraries available for the Customer Insights APIs.
+
+### C# NuGet
+
+Learn how to get started using the C# client libraries from NuGet.org. For more information on the NuGet package, see [Microsoft.Dynamics.CustomerInsights.Api](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). Currently, this package targets the netstandard2.0 and netcoreapp2.0 frameworks.
+
+#### Add the C# client library to a C# project
+
+1. In Visual Studio, open the **NuGet Package Manager** for your project.
+
+1. Search for **Microsoft.Dynamics.CustomerInsights.Api**.
+
+1. Select **Install** to add the package to the project.
+   Alternatively, run this command in the **NuGet Package Manager Console**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
+
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project":::
+
+#### Use the C# client library
+
+1. Use the [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview) to get an `AccessToken` using your existing [Azure app registration](#create-a-new-app-registration-in-the-azure-portal).
+
+1. After successfully authenticating and acquiring a token, construct a new or use an existing `HttpClient` with the additional **DefaultRequestHeaders "Authorization"** set to **Bearer <access token>** and **Ocp-Apim-Subscription-Key** set to the [**subscription key** from your Customer Insights environment](#get-started-trying-the-customer-insights-apis).    
+   Reset the **Authorization** header when appropriate. For example, when the token expired.
+
+1. Pass this `HttpClient` into the construction of the `CustomerInsights` client.
+
+   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient":::
+
+1. Make calls with the client to the "extension methods", for example, `GetAllInstancesAsync`. If access to the underlying `Microsoft.Rest.HttpOperationResponse` is preferred, use the "http message methods", for example `GetAllInstancesWithHttpMessagesAsync`.
+
+1. The response will likely be of type `object` because the method can return multiple types (for example, `IList<InstanceInfo>` and `ApiErrorResult`). To check the return type, you can safely cast the objects into the response types specified on the [API details page](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) for that operation.    
+   If more information on the request is needed, use the **http message methods** to access the raw response object.

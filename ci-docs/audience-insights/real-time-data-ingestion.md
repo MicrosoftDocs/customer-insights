@@ -1,7 +1,7 @@
 ---
 title: "Real-time data ingestion and limitations"
 description: "General information about real-time capabilities in audience insights."
-ms.date: 06/02/2020
+ms.date: 10/27/2020
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -74,7 +74,7 @@ For details about creating flows, see the [Power Automate documentation](https:/
 You can use the real-time capabilities by building your own pipeline and connecting directly to the real-time API.    
 You can post an activity in the format of your source system or in the UnifiedActivity format. Get the format by making an API call to /api/instances/{instanceId}/manage/entities/UnifiedActivity.
 
-Details of this API, including parameters and responses, can be found in the **EntityData** section on the [API reference](apis.md).
+Details of this API, including parameters and responses, can be found in the **EntityData** section on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). For more information, see [Work with Customer Insights APIs](apis.md).
 
 ## Understand your real-time usage with telemetry
 
