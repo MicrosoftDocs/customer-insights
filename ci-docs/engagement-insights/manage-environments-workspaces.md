@@ -4,7 +4,7 @@ description: How to rename and delete a workspace
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/26/2020
+ms.date: 10/27/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -31,7 +31,7 @@ For example:
 
 ### Workspaces 
 
-A workspace is a space to store and manage events and reports. When you create a workspace,](create-workspace.md) you select what kind of data you'll be sending the workspace. Currently, only web data is supported. Workspaces come with pre-defined reports and let you create custom reports using web metrics and dimensions.
+A workspace is a space to store and manage events and reports. When you create a workspace, you select the kind of data you'll be sending the workspace. Currently, only web data is supported. Workspaces come with pre-defined reports. You can create custom reports using web metrics and dimensions.
 
 ## Manage a workspace
 

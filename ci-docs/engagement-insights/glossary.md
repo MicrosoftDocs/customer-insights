@@ -4,7 +4,7 @@ description: Glossary of terms and phrases
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/13/2020
+ms.date: 10/27/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -16,6 +16,11 @@ ms.manager: shellyha
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 This list defines selected terms that appear in Dynamics 365 Customer Insights engagement insights capability and in its supporting documentation.
+
+## Base event
+
+A base event is a set of data representing activity on a website, such as a page view or click. 
+
 
 ## Event
 
