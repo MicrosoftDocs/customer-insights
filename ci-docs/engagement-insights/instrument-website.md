@@ -1,29 +1,31 @@
 ---
 title: Get started with the web SDK
-author: ruthaisabokhae
 description: Learn how to use the engagement insights capability SDK to instrument your website.
-ms.author: ruthai
-ms.date: 10/19/2020
+author: pickwick129
+ms.reviewer: ruthai
+ms.author: v-salash
+ms.date: 10/26/2020
 ms.service: customer-insights
-ms.subservice: engagement-insights
+ms.subservice: engagement-insights 
 ms.topic: conceptual
+ms.manager: shellyha
 ---
 
 # Get started with the web SDK
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insights engagement insights capability SDK. You start seeing events in your portal in five minutes or sooner.
+This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insights engagement insights capability SDK. You start seeing events in your workspace in five minutes or sooner.
 
 ## Configuration options
 
 The following configuration options can be passed to the SDK:
 
-- **ingestionKey**: The ingestion key used to send events to your project.
+- **ingestionKey**: The ingestion key used to send events to your workspace.
 -	**autoCapture**: Specifies the auto capture instructions for the SDK to collect page views and clicks. It has two options:
     - **view**: Set to true if you want the SDK to capture page views automatically. Single page applications need to instrument views manually, and must instrument the trackView() API whenever they route to a new page.
     - **click**: Set to true if you want the SDK to capture page clicks automatically.
--	**userConsent**: Specifies whether the user has consented to let the SDK add data to browser storage (local storage or cookies). Product Insights uses this data to track user behavior. By default, it's assumed to be true.
+-	**userConsent**: Specifies whether the user has consented to let the SDK add data to browser storage (local storage or cookies). Engagement insights uses this data to track user behavior. By default, it's assumed to be true.
 -	**endpointUrl**: Used to specify the destination URL for your events. Only override this option if you need to send data to a specific endpoint.
 
 ## Prerequisites
