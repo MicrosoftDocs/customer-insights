@@ -158,6 +158,9 @@
     - name: Capability overview
       href: engagement-insights/engagements-overview.md
 
+    - name: Preview terms of service
+      href: engagement-insights/terms-of-service.md
+    
     - name: Quickstart
       items: 
         - name: Quickstart for public preview
@@ -217,4 +220,4 @@
   href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
 
 - name: Contact support
-  href: https://go.microsoft.com/fwlink/?linkid=2079641
+  href: https://go.microsoft.com/fwlink/?linkid=2145734
