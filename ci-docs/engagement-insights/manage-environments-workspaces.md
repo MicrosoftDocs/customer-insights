@@ -13,6 +13,8 @@ ms.manager: shellyha
 
 # Environments and workspaces
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 ## Overview
 
 Environments and workspaces are used to store and manage your reports, events, and other data assets. An environment can contain one or more workspaces. Workspaces are used to manage your analytics and store your data like reports and events. 

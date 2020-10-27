@@ -13,6 +13,8 @@ ms.manager: shellyha
 
 # Developer resources overview
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 This article lists all available code snippets and samples for quick reference. Get the code for an event sender for your platform and follow the tutorials. 
 
 ## SDKs

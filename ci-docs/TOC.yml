@@ -170,10 +170,19 @@
       items:
         - name: Get started
           href: engagement-insights/get-started.md
+        - name: Create a workspace
+          href: engagement-insights/create-workspace.md
         - name: Instrument your website
           href: engagement-insights/instrument-website.md
         - name: Concepts and terminology
           href: engagement-insights/glossary.md
+
+    - name: Events
+      items: 
+        - name: Create and modify events
+          href: engagement-insights/create-modify-refined-events.md
+        - name: Export events
+          href: engagement-insights/export-events.md
 
     - name: Reports
       items: 
@@ -191,25 +200,17 @@
         - name: Web SDK sample
           href: engagement-insights/websdk-sample.md
 
-    - name: Events
-      items: 
-        - name: Create and modify events
-          href: engagement-insights/create-modify-refined-events.md
-        - name: Export events
-          href: engagement-insights/export-events.md
-
     - name: Administration
       items: 
-        - name: Manage cookies and user consent
-          href: engagement-insights/user-consent-storage.md
-        - name: Create a workspace
-          href: engagement-insights/create-workspace.md
-        - name: Roles and permissions
-          href: engagement-insights/user-roles.md
+
         - name: Manage environments and workspaces
           href: engagement-insights/manage-environments-workspaces.md
+        - name: Roles and permissions
+          href: engagement-insights/user-roles.md
         - name: Configure connections
           href: engagement-insights/configure-connections.md
+        - name: Manage cookies and user consent
+          href: engagement-insights/user-consent-storage.md
 
     - name: GDPR
       items: 

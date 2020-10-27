@@ -13,6 +13,8 @@ ms.manager: shellyha
 
 # Configure connections
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 Connecting [Dynamics 365 Customer Insights audience insights](../audience-insights/index.yml) and engagement insights capabilities lets you perform interactive analysis on customer data.
 
 > [!IMPORTANT]
