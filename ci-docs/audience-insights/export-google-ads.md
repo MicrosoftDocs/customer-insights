@@ -30,9 +30,9 @@ Export segments of unified customer profiles to Google Ads audience list and use
 
 1. Give your export destination a recognizable name in the **Display name** field.
 
-1. Enter your **[Google Ads customer ID](https://support.google.com/google-ads/answer/1704344?hl=en)
+1. Enter your **[Google Ads customer ID](https://support.google.com/google-ads/answer/1704344)**.
 
-1. Enter your **[Google Ads approved developer token](https://developers.google.com/google-ads/api/docs/first-call/dev-token)
+1. Enter your **[Google Ads approved developer token](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**.
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
@@ -51,8 +51,6 @@ Export segments of unified customer profiles to Google Ads audience list and use
 1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. Repeat the same steps for **First name" and **Last name** fields.
 
 1. Select the segments you want to export. You can export up to 1 million customer profiles in total to Google Ads.
-
-   :::image type="content" source="media/export-segments-mailchimp.png" alt-text="Select fields and segments to export to Mailchimp":::
 
 1. Select **Save**.
 
