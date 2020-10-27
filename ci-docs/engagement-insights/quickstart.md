@@ -20,7 +20,7 @@ This article explains how to sign up and do an initial setup of engagement insig
 ## Sign up for a demo of engagement insights
 
 You must have an active  Microsoft Azure Active Directory user account. 
-1. Open the [engagement insights capability](https://pi.dynamics.com/) website. 
+1. Open the [engagement insights](https://pi.dynamics.com/) website. 
 
 1. Sign in with your school or work account.
 
