@@ -13,14 +13,14 @@ manager: shellyha
 
 # Connector for Google Ads (preview)
 
-Export segments of unified customer profiles to Google Ads audience list and use them to advertise on Google Search, Gmail, Youtube, and Google Display Network. 
+Export segments of unified customer profiles to Google Ads audience list and use them to advertise on Google Search, Gmail, YouTube, and Google Display Network. 
 
 ## Prerequisites
 
 -	You have a [Google Ads account](https://ads.google.com/) and corresponding administrator credentials.
 -	There are existing audiences in Google Ads and the corresponding IDs. For more information, see [Google Ads audiences](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
 -	You have [configured segments](segments.md)
--	Unified customer profiles in the exported segments contain fields representing an email address, first name and last name
+-	Unified customer profiles in the exported segments contain fields representing an email address, first name, and last name
 
 ## Connect to Google Ads
 
@@ -64,10 +64,10 @@ You can [export data on demand](export-destinations.md). The export will also ru
 
 - Up to 1 million profiles per export to Google Ads.
 - Exporting to Google Ads is limited to segments.
-- Exporting segments with a total of 1 million profiles can take up to 5 minutes due to limitations on the provider side. 
+- Exporting segments with a total of 1 million profiles can take up to 5 minutes because of limitations on the provider side. 
 - The matching in Google Ads can take up to 48 hours.
 
 ## Data privacy and compliance
 
-When you enable Dynamics 365 Customer Insights to transmit data to Google Ads, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Google Ads meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+When you enable Dynamics 365 Customer Insights to transmit data to Google Ads, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Google Ads meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
