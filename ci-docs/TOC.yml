@@ -136,6 +136,8 @@
           href: audience-insights/permissions.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
+        - name: Export diagnostic logs
+          href: audience-insights/diagnostics.md
         - name: Supported languages
           href: audience-insights/supported-languages.md
 
