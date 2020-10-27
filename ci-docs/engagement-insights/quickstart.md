@@ -4,7 +4,7 @@ description: First-run experience for the product
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/23/2020
+ms.date: 10/27/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -32,13 +32,13 @@ You must have an active  Microsoft Azure Active Directory user account.
 
 ## Set up your first workspace in engagement insights
 
-You can use the setup wizard to connect your own data.
+To create your first workspace
 
 1. In engagement insights, select **Connect your data** to start the wizard. 
 
-:::image type="content" source="media/connect-your-data.png" alt-text="Customer Insights page with connect your data button":::
+:::image type="content" source="banner.png" alt-text="Customer Insights page with connect your data button":::
 
-1. Choose the type of activity that you want to measure in a new workspace. Currently, only **Website activity** is available. **App activity** and **Device activity** will become available in future releases.
+2. Choose the type of activity that you want to measure in a new workspace. Currently, only **Website activity** is available. **App activity** and **Device activity** will become available in future releases.
 
 1. Select **Next** to confirm and create the workspace.
 
