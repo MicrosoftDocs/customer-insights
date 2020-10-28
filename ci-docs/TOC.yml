@@ -190,6 +190,8 @@
           href: engagement-insights/view-reports.md
         - name: Create custom reports
           href: engagement-insights/custom-reports.md
+        - name: Create unified profile reports
+          href: engagement-insights/profile-reports.md
 
     - name: Developer resources
       items: 
@@ -217,8 +219,11 @@
         - name: Delete and export personal data
           href: engagement-insights/delete-export-personal-data.md
 
-- name: Free trial
+- name: Free trial(Customer Insights)
   href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+  
+- name: Free trial(engagement insights preview)
+  href: https://pi.dynamics.com/
 
 - name: Contact support
   href: https://go.microsoft.com/fwlink/?linkid=2145734

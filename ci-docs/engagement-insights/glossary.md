@@ -4,7 +4,7 @@ description: Glossary of terms and phrases
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/13/2020
+ms.date: 10/27/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -17,9 +17,17 @@ ms.manager: shellyha
 
 This list defines selected terms that appear in Dynamics 365 Customer Insights engagement insights capability and in its supporting documentation.
 
+## Base event
+
+A base event is a set of data representing activity on a website, such as a page view or click. 
+
+## Dimensions
+
+Dimensions are attributes of events that can describe, filter, or group data. For example, you can select *operating system (OS)*, *browser*, or *page name* as a dimension in a report.
+
 ## Event
 
-In digital analytics, an event represents user behavior. An event records when a user views a page (view event) or interacts with content (action event).  On a web page, as visitors view web pages, engagements insights sends page view events. As they interact with web page elements, it sends page action events.
+In digital analytics, an event represents user behavior. An event records when a user views a page (view event) or interacts with content (action event). On a web page, as visitors view web pages, engagements insights sends page view events. As they interact with web page elements, it sends page action events.
 
 ## Environments
 
