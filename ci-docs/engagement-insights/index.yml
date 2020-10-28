@@ -55,7 +55,7 @@ landingContent:
           - text: Instrument your website
             url: instrument-website.md
           - text: Refined events
-            url: create-modify-refined-events.md
+            url: refined-events.md
           - text: Export events
             url: export-events.md
   
