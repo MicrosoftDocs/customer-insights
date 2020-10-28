@@ -41,7 +41,7 @@ The starting point for any user is to set up a workspace. The workspace is where
 
 An event records when a user views a page (view event) or interacts with content (action event). You can create refined events from web analytics data, filter it, and export it to your Azure Data Lake Storage. You can ingest the exported data as a data source in audience insights.
 
-1. [Create refined events](create-modify-refined-events.md) for export.
+1. [Create refined events](refined-events.md) for export.
 
 1. [Export the data](export-events.md) to Data Lake Storage.
 

@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Customer Insights engagement capability comes with an interactive custom report builder. You can combine available metrics and dimensions to create a report with the data you need, using the visualizations you want.
+Dynamics 365 Customer Insights engagement capability comes with an interactive custom report builder. You can combine available metrics and dimensions to create a report with the data you need, using the visualizations you want    .
 
 ## Create a custom report
 
@@ -23,18 +23,18 @@ Dynamics 365 Customer Insights engagement capability comes with an interactive c
 
 1. Select **New report** to start creating a custom report.
 
-   :::image type="content" source="media/Customreportnew.png" alt-text="New custom reports":::
+   :::image type="content" source="media/new-custom-report.png" alt-text="New custom reports":::
 
 1. In the **Report editor** pane, choose a **Visualization**.
 
-   :::image type="content" source="media/Step1.png" alt-text="First step for custom reports":::
+   :::image type="content" source="media/choose-visualization.png" alt-text="First step for custom reports":::
 
 1. Choose one of the available **Metrics** and choose the **Dimensions** to show on the visualization.
 
 1. To add another visualization, select **Add visual** in the command bar.     
    By default, the new visualization is a table. Select **Design** in the **Visual editor** pane to change the visualization type. Continue by choosing a metric and dimensions.
 
-   :::image type="content" source="media/Design.png" alt-text="Visualizations for custom reports":::
+   :::image type="content" source="media/set-metrics-dimensions.png" alt-text="Specify metrics and dimensions for a visualization":::
 
 1. You can change the size and position of a visualization:
    - Select the visualization and then drag one of the corners or borders to adjust its size.
@@ -56,7 +56,7 @@ Dynamics 365 Customer Insights engagement capability comes with an interactive c
 
 1. To change the properties of a visualization, select **...** and then select **Edit visual**.
 
-   :::image type="content" source="media/Editvisual.png" alt-text="Editing visualizations for custom reports":::
+   :::image type="content" source="media/edit-visual-control.png" alt-text="Editing visualizations for custom reports":::
 
 1. After editing the report, select **Save** to apply your changes. 
 

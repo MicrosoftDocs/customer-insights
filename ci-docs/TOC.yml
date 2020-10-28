@@ -187,7 +187,7 @@
     - name: Events
       items: 
         - name: Create and modify events
-          href: engagement-insights/create-modify-refined-events.md
+          href: engagement-insights/refined-events.md
         - name: Export events
           href: engagement-insights/export-events.md
 

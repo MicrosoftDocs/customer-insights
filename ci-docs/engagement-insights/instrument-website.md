@@ -39,7 +39,7 @@ The following configuration options can be passed to the SDK:
 
 2. Go to **Admin** > **Data** > **Code**  and copy the code snippet. By default, your ingestion key is embedded in the code snippet.
 
-   :::image type="content" source="media/copycode.png" alt-text="Code page screenshot":::
+   :::image type="content" source="media/copy-code.png" alt-text="Code page screenshot":::
 
 
 3. Add the copied code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
