@@ -15,10 +15,15 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Connecting [Dynamics 365 Customer Insights audience insights](../audience-insights/index.yml) and engagement insights capabilities lets you perform interactive analysis on customer data.
+Connecting [Dynamics 365 Customer Insights audience insights](../audience-insights/index.yml) and engagement insights capabilities lets you see [reports on customer data](profile-reports.md).
 
 > [!IMPORTANT]
 > The audience insights environment you plan to connect must write the data to a customer's own Azure Data Lake Stoarge Gen 2 account. Audience insights administrators define this in the advanced settings when [creating an environment](../audience-insights/manage-environments.md#create-an-environment-in-an-existing-organization).
+
+## Prerequisites
+
+- The person who sets up the connection has [environment admin](user-roles.md) permissions in engagement insights.
+- The same environment admin should be the admin for the storage account or have access to the storage account details such as shared keys.
 
 ## Set up the connection with audience insights
 
@@ -39,13 +44,15 @@ As an [environment admin](user-roles.md), you can set up connections from all en
    - **AUI Environment ID**:  The audience insights environment ID. You can find the ID in audience insights, under **Settings** > **About**.
    - **AUI Instance Folder name**: The folder path to the audience insights instance in the storage account. For example, `customerInsights/ci_xxxxxx-xxx-xxxxx`.
 
-1. Select Next.
+1. Select **Next**.
 
-1. Customer profile data often contains sensitive customer details such as age, gender, and income. Only the environment admins will have access to the customer profile data, unless explicitly granted.    
-   You can add or remove access to this data in the Connections area of the admin center.
+1. Customer profile data often contains sensitive customer details such as age, gender, and income. Only the environment admin who sets up the connection has access to the customer profile report automatically. Other members can't see the report unless explicitly granted access.    
+   You can add or remove members who have access to this data in the **Connections** area of the admin center.
  
-1. As a last step, review the settings before creating the connection. 
+1. Review the settings and select **Done** to create the connection. 
 
 > [!NOTE]
-> It may take several hours for the data to become available in engagement insights. You can check the status in the Connections area.
+> It may take several hours for the data to become available in engagement insights. You can check the status in the **Connections** area.
 
+To see the customer profiles report, go to **Reports** > **Profiles**. 
+For more information, see [Customer profile report](profile-reports.md).

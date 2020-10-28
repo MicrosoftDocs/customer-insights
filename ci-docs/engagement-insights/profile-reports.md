@@ -1,6 +1,6 @@
 ---
-title: Out-of-the box customer profile report
-description: How to create unified profile reports grouped by gender, age, and country of origin.
+title: Enable the customer profiles report
+description: How to create enable profile reports grouped by gender, age, and country/region of origin.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
@@ -15,27 +15,23 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Customer Insights engagement insights capability has the ability to view audience insights’ unified profile composition. The report includes the number of profiles you have and how they look when grouped by gender, age, and country of origin. 
+Dynamics 365 Customer Insights engagement insights can connect to audience insights and show a report with information about unified customer profiles. The report includes the number of profiles you have, grouped by gender, age, and geographical location. 
 
-## Prequisities
+## Prerequisites
 
 The audience insights environment must store data in a customer-managed Azure Data Lake Storage account.
 
-:::image type="content" source="media/new-audience-insights.png" alt-text="alt text":::
-
-If you're using a trial version of audience insights capability or an environment in an audience insights managed data lake, please [contact us](https://go.microsoft.com/fwlink/?linkid=2145734) for assistance.  
+If you're using a trial version of audience insights capability or an environment in a Customer Insights managed data lake, [contact us](https://go.microsoft.com/fwlink/?linkid=2145734) for assistance.  
 
 
 ## Enable the customer profile report
 
-1. An environment admin must a [create a connection to audience insights](configure-connections.md).  
+An environment admin must [create a connection to audience insights](configure-connections.md).  
 
-:::image type="content" source="media/ai-data-connection.png" alt-text="alt text":::
+After specifying the connection details, the admin can grant access to other people in the organization to see the report. The environment admin setting up the connection automatically has access to the report. 
 
-1. After specifying the connection details for th storage account, grant access to other people in the organization. The environment admin setting up the connection automatically has access to the report. 
+After completing the connection, go to **Reports** > **Profiles** to see the report.
 
-:::image type="content" source="media/manage-access.png" alt-text="alt text":::
-
-At the last screen – please review the entered data and click “Done”. This will kick off the process of loading audience insights profiles into engagement insights. Please note that it may take up to 2 hours depending on how many profiles your organization has. 
+The **Profiles** report contains visualizations about the gender, age, and geographical location of the connected customer profiles.
 
 :::image type="content" source="media/customer-profiles.png" alt-text="Customer profile report":::
