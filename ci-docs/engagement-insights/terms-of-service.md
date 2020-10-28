@@ -4,7 +4,7 @@ description: Understand the terms of service for public preview
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/16/2020
+ms.date: 10/28/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -13,7 +13,7 @@ ms.manager: shellyha
 
 # MICROSOFT DYNAMICS 365 CUSTOMER INSIGHTS – Engagement insights (preview) 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+Engagement insights (preview) is a pre-release preview capability, which means that it has less or different security, privacy, and data location measures than the features and capabilities that are made generally available in Dynamics 365 Customer Insights. Review the terms below and the product documentation to determine if engagement insights (preview) is appropriate for your data.
 
 ## PREVIEW TERMS OF SERVICE
 
