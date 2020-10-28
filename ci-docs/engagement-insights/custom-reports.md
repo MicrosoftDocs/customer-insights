@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Customer Insights engagement capability comes with an interactive custom report builder. You can combine available metrics and dimensions to create create a report with the data you need, using the visualizations you want.
+Dynamics 365 Customer Insights engagement capability comes with an interactive custom report builder. You can combine available metrics and dimensions to create a report with the data you need, using the visualizations you want.
 
 ## Create a custom report
 
@@ -32,15 +32,15 @@ Dynamics 365 Customer Insights engagement capability comes with an interactive c
 1. Choose one of the available **Metrics** and choose the **Dimensions** to show on the visualization.
 
 1. To add another visualization, select **Add visual** in the command bar.     
-   By default, the new visualization is a table. Select **Design** in the **Visual editor** pane to change the visualization type. Continue by choosing a metric and relevant dimensions.
+   By default, the new visualization is a table. Select **Design** in the **Visual editor** pane to change the visualization type. Continue by choosing a metric and dimensions.
 
    :::image type="content" source="media/Design.png" alt-text="Visualizations for custom reports":::
 
 1. You can change the size and position of a visualization:
    - Select the visualization and then drag one of the corners or borders to adjust its size.
-   - Select the visualization and move it to a new position. Alternatively, you can use the arrow keys to change the position.
+   - Select the visualization and move it to a new position. You can also use the arrow keys to change the position.
 
-1. After you have added all required visualizations, select **Save** in the command bar. 
+1. After adding all required visualizations, select **Save** in the command bar. 
 
 1. Provide a name for the custom report and select **Save** to create the custom report.
  
@@ -68,4 +68,4 @@ Dynamics 365 Customer Insights engagement capability comes with an interactive c
 
 1. Choose **Delete** to remove the report.
 
-1. Confirm your deletion to remove the report permananently.
+1. Confirm your deletion to remove the report permanently.
