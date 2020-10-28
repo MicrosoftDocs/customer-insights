@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial guides you through the process of instrumenting your website with a Dynamics 365 Customer Insights engagement insights capability SDK. You start seeing events in your workspace in five minutes or sooner.
+This tutorial guides you through the process of instrumenting your website with the web SDK. You start seeing events in your workspace in five minutes or sooner after implementing the code.
 
 ## Configuration options
 
@@ -25,7 +25,7 @@ The following configuration options can be passed to the SDK:
 -	**autoCapture**: Specifies the auto capture instructions for the SDK to collect page views and clicks. It has two options:
     - **view**: Set to true if you want the SDK to capture page views automatically. Single page applications need to instrument views manually, and must instrument the trackView() API whenever they route to a new page.
     - **click**: Set to true if you want the SDK to capture page clicks automatically.
--	**userConsent**: Specifies whether the user has consented to let the SDK add data to browser storage (local storage or cookies). Engagement insights uses this data to track user behavior. By default, it's assumed to be true.
+-	**userConsent**: Specifies whether the user has consented to let the SDK add data to browser storage (local storage or cookies). We use this data to track user behavior. By default, it's assumed to be true.
 -	**endpointUrl**: Used to specify the destination URL for your events. Only override this option if you need to send data to a specific endpoint.
 
 ## Prerequisites
@@ -48,9 +48,9 @@ The following configuration options can be passed to the SDK:
 
 For SPAs, the SDK can't autocollect view events. Customers must ensure that the autoCapture configuration setting has view set to *false* or *removed*.
 
-Customers should instead manually instrument view events. The SDK has a `trackView(view)` API which can be used to log a page view. The only required field in the view object is the `uri`.
+Customers should instead manually instrument view events. The SDK has a `trackView(view)` API that can be used to log a page view. The only required field in the view object is the `uri`.
 
-The following example shows a code snippet tracking a view event. The "NAME" here would be the value in the `name` key in the snippet configuration. This is the variable name in the window object where the SDK is loaded.
+The following example shows a code snippet tracking a view event. The "NAME" here would be the value in the `name` key in the snippet configuration. It's also the variable name in the window object where the SDK is loaded.
 
 ```
 

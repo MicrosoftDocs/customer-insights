@@ -3,10 +3,12 @@ title: Advanced web SDK instrumentation scenarios
 author: ruthaisabokhae
 description: Advanced scenarios to consider when instrumenting your website with an SDK
 ms.author: ruthai
-ms.date: 10/21/2020
+ms.reviewer: mhart
+ms.date: 10/28/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
+ms.manager: shellyha
 ---
 
 # Advanced web SDK instrumentation
@@ -80,13 +82,13 @@ window, document
 […]
 ```
 
-You can also specify custom properties one by one by calling the `setProperty(name: string, value: string | number | boolean)` API on the SDK.
+You can also specify custom properties individually by calling the `setProperty(name: string, value: string | number | boolean)` API on the SDK.
 
 ## Sending custom events
 
 The SDK can be used to send custom events. Customer must specify a name for the event and properties to be sent with the event.
 
-The following example shows a code snipped tracking a custom event. The "NAME" is the value in the `name` key in the snippet configuration. This is the variable name in the window object where the SDK is loaded.
+The following example shows a code snippet tracking a custom event. The "NAME" is the value in the `name` key in the snippet configuration. It's also the variable name in the window object where the SDK is loaded.
 
 ```
 window["NAME"].trackEvent({

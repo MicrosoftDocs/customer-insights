@@ -54,7 +54,7 @@ You can change the properties and the name of refined events.
 ### Edit selected properties
 
 1. Go to **Admin**> **Data** > **Events** and select the refined events to open the detailed view.
-1. Select ****Add and remove properties**. 
+1. Select **Add and remove properties**. 
 1. Edit the selection of the check boxes.
 1. Select **Confirm** and then **Save** to apply the changes.
 

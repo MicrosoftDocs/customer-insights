@@ -19,7 +19,7 @@ This article explains how to sign up and do an initial setup of engagement insig
 
 ## Sign up for a demo of engagement insights
 
-You must have an active  Microsoft Azure Active Directory user account. 
+You must have an active Microsoft Azure Active Directory user account. 
 
 1. Open the [engagement insights](https://pi.dynamics.com/) website. 
 
@@ -43,7 +43,7 @@ To create your first workspace
 
 1. Select **Next** to confirm and create the workspace.
 
-1. You must add a code snippet to your website to start receiving data in engagement insights. You can implement this right away or share the code and instructions with your website admin. To find the code snippet later, go to **Admin**>**Data**> **Code**.
+1. Add a code snippet to your website to start receiving data in engagement insights. You can implement this right away or share the code and instructions with your website admin. To find the code snippet later, go to **Admin**>**Data**> **Code**.
 
    > [!IMPORTANT]
    > Data will not show in the workspace until the code has been implemented on your website.
@@ -81,11 +81,12 @@ You can edit the details of existing workspaces at any time.
 ## Add another new workspace
 
 :::image type="content" source="media/workspace-switcher.png" alt-text="Customer insights page with callout on navigation pane and description":::
+
 You can create additional workspaces to classify your data.
 
 1. Select the **workspace switcher** in the navigation pane.
 
-2. Select **+ New workspace**.
+2. Select **New workspace**.
 
 3. Enter a **Name** and an optional **Description**.
 
@@ -93,5 +94,5 @@ You can create additional workspaces to classify your data.
 
 ## Switch between workspaces
 
-To view your workspaces, select the **workspace switcher** in the navigation pane. You can switch between workspaces, create a new one, or select **Web Sample** to try our reports and features using sample data. 
+To change between workspaces, select the **workspace switcher**. You can also create a new workspace, or select **Web Sample** to see reports and try features using sample data. 
 

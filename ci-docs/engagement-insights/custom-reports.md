@@ -4,7 +4,7 @@ description: Describes how to create custom reports.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/26/2020
+ms.date: 10/28/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -13,53 +13,59 @@ ms.manager: shellyha
 
 # Custom reports
 
-<!DRAFT CONTENT PLACEDHOLDER CONTENT IS NOT UPDATED, PROCEDURES NEED TO BE TESTED.>
-
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Customer Insights engagement capability comes with an interactive custom report builder. You can combine any available metric and dimension to create a view of the data you need and visualize the metric and dimension combinations in a table or in multiple chart types.   from the **Reports** page. The reports are grouped into four categories:
+Dynamics 365 Customer Insights engagement capability comes with an interactive custom report builder. You can combine available metrics and dimensions to create a report with the data you need, using the visualizations you want.
 
-To create a custom report
-Select **Reports** > **Custom** to access the custom report list.
+## Create a custom report
 
-:::image type="content" source="media/Customreportnav.png" alt-text="Customer reports navigations":::
+1. Go to **Reports** > **Custom** to access the custom report list.
 
-You can create a new report or use an existing report.
-- To create a custom report from the report list, select the **+ New report** button.
+1. Select **New report** to start creating a custom report.
 
-:::image type="content" source="media/Customreportlist.png" alt-text="Custom reports list":::
+   :::image type="content" source="media/Customreportnew.png" alt-text="New custom reports":::
 
-Create a custom report
-1. If no custom report has been created, select **New report** to build the first custom report.
+1. In the **Report editor** pane, choose a **Visualization**.
 
-:::image type="content" source="media/Customreportnew.png" alt-text="New custom reports":::
+   :::image type="content" source="media/Step1.png" alt-text="First step for custom reports":::
 
-1. Once the custom report builder is open, choose the desired visualization from the report editor pane on the right. 
+1. Choose one of the available **Metrics** and choose the **Dimensions** to show on the visualization.
 
-:::image type="content" source="media/Step1.png" alt-text="First step for custom reports":::
+1. To add another visualization, select **Add visual** in the command bar.     
+   By default, the new visualization is a table. Select **Design** in the **Visual editor** pane to change the visualization type. Continue by choosing a metric and dimensions.
 
-1. Now select the desired metric and dimensions to show within the visualization using the visual editor pane on the right.
+   :::image type="content" source="media/Design.png" alt-text="Visualizations for custom reports":::
 
-:::image type="content" source="media/Step2.png" alt-text="Second step for custom reports":::
+1. You can change the size and position of a visualization:
+   - Select the visualization and then drag one of the corners or borders to adjust its size.
+   - Select the visualization and move it to a new position. You can also use the arrow keys to change the position.
 
-1. To add another visualization, select the “+ Add visual” button in the top command bar. The new visualization added will default to a table visualization; change the visualization type by selecting “Design” in the Visual editor pane on the right. Once the desired visualization type is selected, repeat the process of selecting a metric and relevant dimension (or dimensions) to complete the new visualization. Repeat this process as often as necessary to create the total number of necessary visualizations. 
+1. After adding all required visualizations, select **Save** in the command bar. 
 
-:::image type="content" source="media/Step2.png" alt-text="Visualization editor for custom reports":::
+1. Provide a name for the custom report and select **Save** to create the custom report.
+ 
+## Edit a custom report
 
-Resize any visualization in the custom report by selecting the visualization and then dragging one of the corners or borders. 
+1. Go to **Reports** > **Custom** to access the custom report list.
 
-Reposition any visualization in the custom report by selecting the visualization and then dragging it to the new position. Alternatively, use the up, down, right, and left arrow keys to reposition the visualization.
+1. In the custom report list, select **...**. 
 
-:::image type="content" source="media/Design.png" alt-text="Visualizations for custom reports":::
+1. Choose **Edit details** to change the name of the report.
 
-Once editing is complete, save the report by selecting **Save** in the top command bar. Enter a name for the new custom report and then select **Save** 
+1. Select the name of the report to add, remove, reposition, or resize the visualizations on the custom report. 
 
-o exit the custom report builder, select Reports > Custom in the navigation pane on the left, or select any other item in the navigation. 
+1. To change the properties of a visualization, select **...** and then select **Edit visual**.
 
-Edit any existing custom report by accessing the custom report list (Reports > Custom) and then clicking on the name of the report to be edited. 
+   :::image type="content" source="media/Editvisual.png" alt-text="Editing visualizations for custom reports":::
 
-Visualizations in existing custom reports can also be modified. To edit an existing visualization, open the custom report containing the visualization to be edited, and then select the three dots (More options) below the visual. Select the “Edit visual” option. Make the desired changes and then select “Save” in the top command bar. 
+1. After editing the report, select **Save** to apply your changes. 
 
-:::image type="content" source="media/Editvisual.png" alt-text="Editing visualizations for custom reports":::
+## Delete a custom report
 
+1. Go to **Reports** > **Custom** to access the custom report list.
 
+1. In the custom report list, select **...**. 
+
+1. Choose **Delete** to remove the report.
+
+1. Confirm your deletion to remove the report permanently.
