@@ -1,7 +1,7 @@
 ---
 title: "Enrichment of company profiles with the third-party enrichment Leadspace"
 description: "General information about the Leadspace third-party enrichment."
-ms.date: 06/23/2020
+ms.date: 10/27/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -41,7 +41,7 @@ To configure Leadspace, the following prerequisites must be met:
 
 1. Select **Save** to complete the field mapping.
 
-1. Select **Run** to enrich the company profiles. How long refreshing an enrichment takes depends on the number of unified customer profiles. Expect it to take at least 1 minute per 1.000 profiles.
+1. Select **Run** to enrich the company profiles. How long refreshing an enrichment takes depends on the number of unified customer profiles.
 
 ## Enrichment results
 
@@ -50,3 +50,7 @@ After refreshing the enrichment, you can review the newly enriched company data 
 You can access a detailed view of each enriched profile by selecting **View enriched data**.
 
 For more information, see [Leadspace APIs](https://support.leadspace.com/hc/en-us/sections/201997649-API).
+
+## Next steps
+
+Build on top of your enriched customer data. Create [segments](segments.md), [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
