@@ -23,17 +23,11 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 - **[Visitor profiles](#visitor-profiles-reports)**
 
 
-:::image type="content" source="media/ReportMenu.png" alt-text="Navigation showing the list of available reports":::
+:::image type="content" source="media/report-menu.png" alt-text="Navigation showing the list of available reports":::
 
 - Select a time frame for a report by choosing a value from the **time/date range** drop-down list. The time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.” 
 
 - In most reports, select a value in a chart or list to filter the report for the selected value. 
-
-<!-- add the below when available?
-- Select **Add chart** to add more visualizations. Select **Save** to apply your changes.
-- Select **Edit** to change the order of visualizations or remove them. Select **Save** to apply your changes.
-- Select **Rename** to change the title of the report.  
-- -->
 
 ## Key metrics reports
 
@@ -42,22 +36,16 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 - **Visits** shows information about the number of visits and the visit duration.
 - **Visitors** informs about new and returning unique visitors to your site.
 
-
 ## Content reports
 
 - **Links** show information about the number and type of clicks that were performed.
 - **Exit pages** lists the links that visitors clicked to exit your site.
-
-
-
 
 ## Traffic sources reports
 
 - **Referring domains** lists the domains that referred visitors to your site.
 - **Referring URLs** identifies the URLs that referred visitors to your site.
 - **Tracking codes** provides details about the tracking codes in the links that brought visitors to your site.
-
-
 
 ## Visitor profiles reports
 
@@ -66,5 +54,3 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 - **Browsers** shows a breakdown of the browsers that visitors  used to access your site.
 - **Locations** shows information about visitors by country and region.
 - **Language** lists the visitor's preferred languages.
-
-
