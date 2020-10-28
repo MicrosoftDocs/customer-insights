@@ -21,13 +21,13 @@ Engagement insights capability enables organizations to understand interactively
 
 - Get started quickly: Collect, measure, and understand customer behavior on your website, in your mobile apps, and across your connected products.
 
-- Pre-defined reports: Use reports to interactively access your site metrics and see the size of your audience. Find details about visits, page views, referral traffic, and identify pages with the best performance.
+- Out-of-box reports: Use reports to interactively access your site metrics and see the size of your audience. Find details about visits, page views, referral traffic, and identify pages with the best performance.
 
 - Custom reports: Use the custom report builder to build your own visualizations. They can be based on metrics, dimensions, and segment combinations. Use these visualizations to curate the views you need to answer the business questions at hand.
 
 - Multi-channel analytics: Bring in data from multiple channels. For example, behavioral data from website interactions together with transactional and demographic data about your customers. Use this data to build and view interactive reports that include web activities, customer profiles, and customer activities for rich analytics. Create and export refined events and view your web activities alongside customer profiles, activities, and segments in Customer Insights for a 360-degree view on your customers.
 
- ## Next steps
+## Next steps
 
 - Find out how to [set up engagement insights capability for the first time](quickstart.md).
 - Learn how to [configure and set up your environment](get-started.md).
