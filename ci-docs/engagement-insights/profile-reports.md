@@ -25,17 +25,18 @@ If you're using a trial version of audience insights capability or an audience 
 
 An environment admin must a create a new audience insights connection.  
 
-:::image type="content" source="media/new-audience-insights.png" alt-text="Real-time usage report":::
+ :::image type="content" source="media/new-audience-insights.png" alt-text="Real-time usage report":::
+
 
 As a part of the connection, you will need to specify an Azure Data Lake Store storage account, audience insights environment id and shared access key for EI to access profiles managed by audience insights. 
 
-:::image type="content" source="media/ai-data-connection.png" alt-text="Real-time usage report":::
+ :::image type="content" source="media/ai-data-connection.png" alt-text="Real-time usage report":::
 
  
 In the second step of the wizard, optionally grant access to other people in organization (the administrator setting the connection will get access to the profile report automatically). 
 
-:::image type="content" source="media/manage-access.png" alt-text="Real-time usage report":::
+ :::image type="content" source="media/manage-access.png" alt-text="Real-time usage report":::
 
  At the last screen – please review the entered data and click “Done”. This will kick off the process of loading audience insights profiles into engagement insights. Please note that it may take up to 2 hours depending on how many profiles your organization has. 
 
-:::image type="content" source="media/customer-profiles.png" alt-text="Real-time usage report":::
+ :::image type="content" source="media/customer-profiles.png" alt-text="Real-time usage report":::
