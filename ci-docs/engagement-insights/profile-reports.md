@@ -21,12 +21,21 @@ Dynamics 365 Customer Insights engagement insights capability has the ability to
 
 The audience insights environment must store data in a customer-managed Azure Data Lake Storage account.
 
+:::image type="content" source="media/new-audience-insights.png" alt-text="alt text":::
+
 If you're using a trial version of audience insights capability or an environment in an audience insights managed data lake, please [contact us](https://go.microsoft.com/fwlink/?linkid=2145734) for assistance.  
+
 
 ## Enable the customer profile report
 
 1. An environment admin must a [create a connection to audience insights](configure-connections.md).  
 
+:::image type="content" source="media/ai-data-connection.png" alt-text="alt text":::
+
 1. After specifying the connection details for th storage account, grant access to other people in the organization. The environment admin setting up the connection automatically has access to the report. 
 
+:::image type="content" source="media/manage-access.png" alt-text="alt text":::
+
 At the last screen – please review the entered data and click “Done”. This will kick off the process of loading audience insights profiles into engagement insights. Please note that it may take up to 2 hours depending on how many profiles your organization has. 
+
+:::image type="content" source="media/customer-profiles.png" alt-text="Customer profile report":::
