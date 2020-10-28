@@ -28,7 +28,7 @@ landingContent:
           - text: Community site
             url: https://go.microsoft.com/fwlink/?linkid=2073991
 
-  - title: Oboarding
+  - title: Onboarding
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -36,7 +36,7 @@ landingContent:
             url: get-started.md
           - text: Glossary
             url: glossary.md
-          - text: Manage user consent
+          - text: Manage cookies and user consent
             url: user-consent-storage.md
 
   - title: Workspace and reports
@@ -55,7 +55,7 @@ landingContent:
           - text: Instrument your website
             url: instrument-website.md
           - text: Refined events
-            url: create-modify-refined-events.md
+            url: refined-events.md
           - text: Export events
             url: export-events.md
   
