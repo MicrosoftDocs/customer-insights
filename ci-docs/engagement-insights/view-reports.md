@@ -4,7 +4,7 @@ description: Use the available reports to monitor activity on your site.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/26/2020
+ms.date: 10/27/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -41,14 +41,14 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 - **Page views** lists the page views for individual pages along with the number of total page views over the selected time frame.
 - **Visits** shows information about the number of visits and the visit duration.
 - **Visitors** informs about new and returning unique visitors to your site.
-:::image type="content" source="media/Real-timeusage.png" alt-text="Real-time usage report":::
+
 
 ## Content reports
 
 - **Links** show information about the number and type of clicks that were performed.
 - **Exit pages** lists the links that visitors clicked to exit your site.
 
-:::image type="content" source="media/Links.png" alt-text="Exit pages report":::
+
 
 
 ## Traffic sources reports
@@ -57,7 +57,7 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 - **Referring URLs** identifies the URLs that referred visitors to your site.
 - **Tracking codes** provides details about the tracking codes in the links that brought visitors to your site.
 
-:::image type="content" source="media/Referringdomains.png" alt-text="Tracking codes report":::
+
 
 ## Visitor profiles reports
 
@@ -67,4 +67,4 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 - **Locations** shows information about visitors by country and region.
 - **Language** lists the visitor's preferred languages.
 
-:::image type="content" source="media/Devices.png" alt-text="Operating systems report":::
+
