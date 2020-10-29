@@ -4,7 +4,7 @@ description: "Work with entities in Common Data Model."
 ms.date: 04/17/2020
 ms.reviewer: mukeshpo
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

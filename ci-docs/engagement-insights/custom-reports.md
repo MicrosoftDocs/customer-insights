@@ -34,7 +34,7 @@ Dynamics 365 Customer Insights engagement insights capability comes with an inte
 1. To add another visualization, select **Add visual** in the command bar.     
    By default, the new visualization is a table. Select **Design** in the **Visual editor** pane to change the visualization type. Continue by choosing a metric and dimensions.
 
-   :::image type="content" source="media/set-metrics-dimensions-updated.png" alt-text="Specify metrics and dimensions for a visualization":::
+   :::image type="content" source="media/set-metrics-dimensions.png" alt-text="Specify metrics and dimensions for a visualization":::
 
 1. You can change the size and position of a visualization:
    - Select the visualization and then drag one of the corners or borders to adjust its size.
@@ -52,7 +52,7 @@ Dynamics 365 Customer Insights engagement insights capability comes with an inte
 
 1. Choose **Edit details** to change the name of the report.
 
-1. Select the name of the report to add, remove, reposition, or resize the visualizations on the custom report. 
+1. Select the name of the report and use the **Add visual** and **Edit** options to add, remove, reposition, or resize the visualizations. 
 
 1. To change the properties of a visualization, select **...** and then select **Edit visual**.
 

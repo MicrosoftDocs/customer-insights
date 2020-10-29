@@ -3,7 +3,7 @@ title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
 ms.date: 05/29/2020
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -41,7 +41,7 @@ This article provides information on how to ingest data from a Common Data Model
 
 6. In the **Select a Common Data Model folder** dialog, select the model.json file that to import data from and select **Next**.
    > [!NOTE]
-   > Any model.json file associated with another data source in the instance won't show in the list.
+   > Any model.json file associated with another data source in the environment won't show in the list.
 
 7. You'll get a list of available entities in the selected model.json file. You can review and select from the list of available entities and select **Save**. All of the selected entities will be ingested from the new data source.
    > [!div class="mx-imgBorder"]
@@ -50,7 +50,7 @@ This article provides information on how to ingest data from a Common Data Model
 8. After saving your selections, the **Data sources** page opens. You should now see the Common Data Model folder connection as a data source.
 
 > [!NOTE]
-> A model.json file can only associate with one data source in the same instance. However, the same model.json file can be used for data sources in multiple instances.
+> A model.json file can only associate with one data source in the same environment. However, the same model.json file can be used for data sources in multiple environments.
 
 ## Edit a Common Data Model folder data source
 

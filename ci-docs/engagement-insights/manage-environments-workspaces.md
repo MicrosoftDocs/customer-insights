@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.manager: shellyha
 ---
 
-# Environments and workspaces
+# Manage environments and workspaces
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -86,6 +86,8 @@ Switch between the different areas in the admin center by selecting the correspo
 1. Go to **Admin** > **Settings** > **General**.
 
 1. Select **Go to admin center**.
+
+   :::image type="content" source="media/open-admin-center.png" alt-text="Highlight on link to go to the admin center":::
 
 1. To change an environment, select **Environments** in the navigation pane.
 

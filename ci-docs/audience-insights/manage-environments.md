@@ -3,7 +3,7 @@ title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
 ms.date: 10/08/2020
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 ms.reviewer: nimagen
 author: m-hartmann
@@ -72,7 +72,7 @@ To create an environment:
 
    When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to the respective subfolders based on the process you run.
 
-   If you create multiple instances of Customer Insights and choose to save the output entities from those instances in your storage account, separate folders will be created for each instance with ci_<instanceid> in the container.
+   If you create multiple environments of Customer Insights and choose to save the output entities from those environments in your storage account, separate folders will be created for each environment with ci_<environmentid> in the container.
 
 ### Additional considerations for copy configuration (preview)
 

@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Events represent user behavior. A base event records when a user views a page (view event) or interacts with content (action event). A refined event is a virtual view of a base event. Generally, use refined events to reduce the scope of a base event for [export](export-events.md) or to remove properties that aren't necessary for exposure or export.
+Events represent user behavior. A base event records when a user views a page (view event) or interacts with content (action event). A refined event is a virtual view of a base event. Generally, use refined events to reduce the scope of a base event for [export](export-events.md) or to remove properties that aren't necessary for exposure or when [exporting events](export-events.md).
 
 You can define refined events by removing and adding properties or by filtering events based on property values.
 

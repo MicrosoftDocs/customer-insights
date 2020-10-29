@@ -4,7 +4,7 @@ description: "Install and configure the Customer Card add-in for Dynamics 365 Cu
 ms.date: 08/04/2020
 ms.reviewer: philk
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual    
 author: m-hartmann
 ms.author: mhart
@@ -49,7 +49,7 @@ It can take some time for the solution to be installed to your environment.
    > [!NOTE]
    > Check that the browser pop-up blocker does not block the authentication window when you select the **Sign in** button.
 
-1. Select the instance you want to fetch data from.
+1. Select the environment you want to fetch data from.
 
 1. Define which the field mapping to records in the Dynamics 365 app.
    - To map with a contact, select the field in the Customer entity that matches the ID of your contact entity.

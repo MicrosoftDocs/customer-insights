@@ -4,7 +4,7 @@ description: "General information about real-time capabilities in audience insig
 ms.date: 06/02/2020
 ms.reviewer: nikeller
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -54,7 +54,7 @@ There are two ways to connect to the real-time API:
 
 Both ways share the following prerequisites:
 
-- A Customer Insights instance
+- A Customer Insights environment
 - Unified customer profiles
 - Activities configured and run
 - Contributor or Administrator permissions to authenticate your account

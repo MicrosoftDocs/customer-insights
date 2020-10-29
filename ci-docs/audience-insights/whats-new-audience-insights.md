@@ -3,7 +3,7 @@ title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
 ms.date: 10/05/2020
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -294,7 +294,7 @@ The updates in April 2020 includes several features, performance upgrades, and b
 
 - **Ingest analytical data from Dynamics 365 with Common Data Service**
   
-  Common Data Service is available as a way to create data sources. Existing Dynamics 365 customers can ingest analytical entities from Common Data Service to Customer Insights. A single data source can simultaneously use the same Common Data Service-managed lake in a Customer Insights instance.    
+  Common Data Service is available as a way to create data sources. Existing Dynamics 365 customers can ingest analytical entities from Common Data Service to Customer Insights. A single data source can simultaneously use the same Common Data Service-managed lake in a Customer Insights environment.    
   For more information, see [Connect to data in a Common Data Service managed data lake](connect-common-data-service-lake.md).
 
 #### Extensibility

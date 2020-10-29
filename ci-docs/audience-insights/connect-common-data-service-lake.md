@@ -3,7 +3,7 @@ title: "Connect to entities in the Common Data Service managed lake"
 description: "Import data from a Common Data Service managed data lake."
 ms.date: 09/29/2020
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -44,7 +44,7 @@ Data stored in online services, such as Azure Data Lake Storage, may be stored i
 
 7. Save your selection to start syncing the selected entities to the Common Data Service managed lake. You'll find the newly added connection on the **Data sources** page. It will be queued for refresh and show the entities count as 0 until all the entities are synced.
 
-Only one data source of an instance can simultaneously use the same Common Data Service managed lake.
+Only one data source of an environment can simultaneously use the same Common Data Service managed lake.
 
 ## Edit a Common Data Service managed lake data source
 

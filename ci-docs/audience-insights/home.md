@@ -4,7 +4,7 @@ description: "Start exploring the app on the Home page."
 ms.date: 09/30/2020
 ms.reviewer: nimagen
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -49,7 +49,7 @@ Follow the steps as if you [create a trial environment](#create-a-trial-environm
 
 ## Explore the home page
 
-You can [access your Customer Insights instance](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
+You can [access your Customer Insights environment](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 The **Home** page shows an overview of your customer base and key metrics to track the health of your business.
 
 > [!div class="mx-imgBorder"] 
