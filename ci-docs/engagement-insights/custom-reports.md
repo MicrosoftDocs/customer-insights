@@ -52,7 +52,7 @@ Dynamics 365 Customer Insights engagement insights capability comes with an inte
 
 1. Choose **Edit details** to change the name of the report.
 
-1. Select the name of the report to add, remove, reposition, or resize the visualizations on the custom report. 
+1. Select the name of the report and use the **Add visual** and **Edit** options to add, remove, reposition, or resize the visualizations. 
 
 1. To change the properties of a visualization, select **...** and then select **Edit visual**.
 
