@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can assign members to your workspace and define their roles and permissions. The engagement insights capability supports **Environment admin** and **Workspace admin** roles.
+You can assign members to your workspace and define their roles and permissions. Engagement insights capability supports **Environment admin** and **Workspace admin** roles.
 
 ## Permissions
   
