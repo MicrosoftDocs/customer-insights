@@ -4,7 +4,7 @@ description: "Learn how to configure the connection to an SFTP host."
 ms.date: 06/05/2020
 ms.reviewer: philk
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -3,7 +3,7 @@ title: "Create and edit measures"
 description: "Define customer-related measures to analyze and reflect the performance of certain business areas."
 ms.date: 10/15/2020
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart

@@ -4,7 +4,7 @@ description: "Export data and manage export destinations."
 ms.date: 07/21/2020
 ms.reviewer: philk
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -27,6 +27,7 @@ Go to **Admin** > **Export destinations** to find the following extensibility op
 - [Azure Blob Storage](export-azure-blob-storage.md)
 - [LiveRamp&reg; connector](export-liveramp.md)
 - [Bot for Microsoft Teams](export-teams-bot.md)
+- [Mailchimp](export-mailchimp.md)
 - [Customer Insights API](apis.md)
 
 ## Add a new export destination

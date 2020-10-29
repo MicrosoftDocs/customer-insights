@@ -3,7 +3,7 @@ title: "Segment insights for existing segments"
 description: "Get insights on existing segments to see differences and commonalities."
 ms.date: 06/10/2020
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: "article"
 author: m-hartmann
 ms.author: mhart
