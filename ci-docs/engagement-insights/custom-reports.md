@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Customer Insights engagement capability comes with an interactive custom report builder. You can combine available metrics and dimensions to create a report with the data you need, using the visualizations you want    .
+Dynamics 365 Customer Insights engagement insights capability comes with an interactive custom report builder. You can combine available metrics and dimensions to create a report with the data you need, using the visualizations you want    .
 
 ## Create a custom report
 
