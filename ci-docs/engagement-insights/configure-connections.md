@@ -41,8 +41,8 @@ As an [environment admin](user-roles.md), you can set up connections from all en
 1. Provide the settings to your audience insights Azure Data Lake Storage Gen2. For more information about storage accounts, see [Create and manage storage accounts](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account).
    - **ADLS gen2 storage account**: Provide the storage account name. For example, my-storage-account.
    - **Shared Key**: The access key to authenticate your applications. The can be found in Azure portal under **Access keys** in the storage account settings.
-   - **AUI Environment ID**:  The audience insights environment ID. You can find the ID in audience insights, under **Settings** > **About**.
-   - **AUI Instance Folder name**: The folder path to the audience insights instance in the storage account. For example, `customerInsights/ci_xxxxxx-xxx-xxxxx`.
+   - **Audience insights Environment ID**:  The audience insights environment ID. You can find the ID in audience insights, under **Settings** > **About**.
+   - **Audience insights Environment Folder name**: The folder path to the audience insights environment in the storage account. For example, `ci_xxxxxx-xxx-xxxxx`.
 
 1. Select **Next**.
 
@@ -52,7 +52,7 @@ As an [environment admin](user-roles.md), you can set up connections from all en
 1. Review the settings and select **Done** to create the connection. 
 
 > [!NOTE]
-> It may take several hours for the data to become available in engagement insights. You can check the status in the **Connections** area.
+> It may take several hours for the data to become available in engagement insights. You can check if a connection has been made in the **Connections** area.
 
 To see the customer profiles report, go to **Reports** > **Profiles**. 
 For more information, see [Customer profile report](profile-reports.md).
