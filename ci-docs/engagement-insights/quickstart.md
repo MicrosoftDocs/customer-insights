@@ -60,7 +60,7 @@ By default, only the person who created the workspace has access to it. You can 
 
 2. Select **+ Add members**. Use the  **Members** box to add other people in your organization. You can add multiple members at once.
 
-3. Select a **Role** to assign to the new members. Currently, **Owner** is the only available selection. Other roles will be added in future releases.
+3. Select a **Role** to assign to the new members. Currently, **Workspace admin** is the only available selection. Other roles will be added in future releases.
 
 4. Choose **Add** to confirm.
 
