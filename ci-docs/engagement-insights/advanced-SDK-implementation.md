@@ -86,7 +86,7 @@ You can also specify custom properties individually by calling the `setProperty(
 
 ## Sending custom events
 
-The SDK can be used to send custom events. Customer must specify a name for the event and properties to be sent with the event.
+The SDK can be used to send custom events. You must specify a name for the event and properties to be sent with the event.
 
 The following example shows a code snippet tracking a custom event. The "NAME" is the value in the `name` key in the snippet configuration. It's also the variable name in the window object where the SDK is loaded.
 
