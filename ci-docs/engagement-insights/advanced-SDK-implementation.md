@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This page guides you through advanced scenarios to consider when instrumenting your website with a Dynamics 365 Customer Insights engagement insights capability SDK.
+This page guides you through advanced scenarios to consider when [instrumenting your website](instrument-website.md) with a Dynamics 365 Customer Insights engagement insights capability SDK.
 
 ## Setting user details for your event
 

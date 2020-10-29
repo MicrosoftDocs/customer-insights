@@ -164,13 +164,10 @@
       href: engagement-insights/index.yml
 
     - name: Capability overview
-      href: engagement-insights/engagements-overview.md
+      href: engagement-insights/overview.md
 
     - name: Free trial
       href: https://pi.dynamics.com/
-
-    - name: Preview terms of service
-      href: engagement-insights/terms-of-service.md
     
     - name: Quickstart
       items: 
