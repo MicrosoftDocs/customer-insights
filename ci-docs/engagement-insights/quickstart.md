@@ -60,7 +60,7 @@ By default, only the person who created the workspace has access to it. You can 
 
 2. Select **+ Add members**. Use the  **Members** box to add other people in your organization. You can add multiple members at once.
 
-3. Select a **Role** to assign to the new members. Currently, **Owner** is the only available selection. Other roles will be added in future releases.
+3. Select a **Role** to assign to the new members. Currently, **Workspace admin** is the only available selection. Other roles will be added in future releases.
 
 4. Choose **Add** to confirm.
 
@@ -70,7 +70,7 @@ To remove members from a workspace, select **...** next to their names on the **
 
 You can edit the details of existing workspaces at any time.
 
-:::image type="content" source="media/manage-workspace.png" alt-text="Workspace settings page with callout on workspace name and description":::
+:::image type="content" source="media/change-project-settings.png" alt-text="Workspace settings page with callout on workspace name and description":::
 
 1. Go to **Admin** > **Settings** > **General**.
 

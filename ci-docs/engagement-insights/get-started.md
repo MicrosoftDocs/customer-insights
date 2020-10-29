@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Engagement insights capability enables business users to measure and understand customer behavior on websites, in mobile apps, and across connected products. The links in this article help you quickly configure and set up your environment.
+Engagement insights capability enables business users to measure and understand customer behavior on websites. With the deep integration with audience insights, you can see rich real-time behavioral analytics alongside customer profile reports. The links in this article help you quickly configure and set up your environment.
 
 ## Recommended preparations
 

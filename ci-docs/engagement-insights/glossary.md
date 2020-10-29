@@ -29,7 +29,7 @@ Dimensions are attributes of events that can describe, filter, or group data. Fo
 
 In digital analytics, an event represents user behavior. An event records when a user views a page (view event) or interacts with content (action event). On a web page, as visitors view web pages, engagements insights sends page view events. As they interact with web page elements, it sends page action events.
 
-## Environments
+## Environment
 
  An environment can contain one or more workspaces. You can use this space to manage your workspaces and manage connections to Customer Insights audience insights capability.
 

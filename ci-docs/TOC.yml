@@ -211,11 +211,10 @@
 
     - name: Administration
       items: 
-
-        - name: Manage environments and workspaces
-          href: engagement-insights/manage-environments-workspaces.md
         - name: Roles and permissions
           href: engagement-insights/user-roles.md
+        - name: Manage environments and workspaces
+          href: engagement-insights/manage-environments-workspaces.md
         - name: Configure connections
           href: engagement-insights/configure-connections.md
         - name: Manage cookies and user consent
