@@ -87,6 +87,8 @@ Switch between the different areas in the admin center by selecting the correspo
 
 1. Select **Go to admin center**.
 
+   :::image type="content" source="media/open-admin-center.png" alt-text="Highlight on link to go to the admin center":::
+
 1. To change an environment, select **Environments** in the navigation pane.
 
 1. In the list, select the environment you want to configure.
