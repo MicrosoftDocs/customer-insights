@@ -3,7 +3,7 @@ title: "Create and manage segments"
 description: "Create segments of customers to group them based on various attributes."
 ms.date: 10/15/2020
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -152,13 +152,13 @@ Each group produces a specific set of customers. You can combine these groups to
    > [!div class="mx-imgBorder"]
    > ![Customer group add union](media/customer-group-union.png "Customer group add union")
 
-   Select a set operator to define a new group. Save different groups to determine what data gets maintained:
+   Select a set operator to define a new group. Save different groups to determine what data gets retained:
 
    - **Union** unites the two groups.
 
-   - **Intersect** overlaps the two groups. Only data that *is common* to both groups is maintained in the unified group.
+   - **Intersect** overlaps the two groups. Only data that *is common* to both groups is retained in the unified group.
 
-   - **Except** combines the two groups. Only data that *is not common* to both groups is maintained.
+   - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is retained.
 
 ## View processing history and segment members
 

@@ -4,7 +4,7 @@ description: "Connect with Power Apps and Power Automate."
 ms.date: 08/21/2020
 ms.reviewer: nikeller
 ms.service: customer-insights
-ms.subservice:
+ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
