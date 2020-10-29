@@ -168,9 +168,6 @@
 
     - name: Free trial
       href: https://pi.dynamics.com/
-
-    - name: Preview terms of service
-      href: engagement-insights/terms-of-service.md
     
     - name: Quickstart
       items: 
