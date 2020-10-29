@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.manager: shellyha
 ---
 
-# Environments and workspaces
+# Manage environments and workspaces
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

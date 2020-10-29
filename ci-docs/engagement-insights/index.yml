@@ -25,8 +25,10 @@ landingContent:
         links:
           - text: Capability overview
             url: engagements-overview.md
-          - text: Community site
-            url: https://go.microsoft.com/fwlink/?linkid=2073991
+          - text: Terms and concepts
+            url: glossary.md
+          - text: Terms of service
+            url: terms-of-service.md
 
   - title: Onboarding
     linkLists:
@@ -34,30 +36,32 @@ landingContent:
         links:
           - text: Get started
             url: get-started.md
-          - text: Glossary
-            url: glossary.md
-          - text: Manage cookies and user consent
-            url: user-consent-storage.md
+          - text: Create a workspace
+            url: create-workspace.md
+          - text: Instrument your website
+            url: instrument-website.md
 
-  - title: Workspace and reports
+  - title: Reports
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Create a workspace
-            url: create-workspace.md
           - text: View reports
             url: view-reports.md
+          - text: Create custom reports
+            url: custom-reports.md
+          - text: View unified profiles report
+            url: profiles-report.md
 
   - title: Events
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Instrument your website
-            url: instrument-website.md
-          - text: Refined events
+          - text: Create refined events
             url: refined-events.md
           - text: Export events
             url: export-events.md
+          - text: Delete and export personal data
+            url: delete-export-personal-data.md
   
   - title: Developer resources
     linkLists:
@@ -65,7 +69,18 @@ landingContent:
           links: 
             - text: Developer resources
               url: developer-resources.md
-            - text: WebSDK tutorial
-              url: instrument-website.md
             - text: WebSDK sample
               url: websdk-sample.md
+            - text: Advanced web SDK scenarios
+              url: advanced-SDK-implementation.md
+
+  - title: Administration
+    linkLists: 
+        - linkListType: how-to-guide
+          links:
+            - text: Manage environments and workspaces
+              url: manage-environments-workspaces.md
+            - text: Connect to audience insights 
+              url: configure-connections.md
+            - text: Manage cookies and user consent
+              url: user-consent-storage.md
