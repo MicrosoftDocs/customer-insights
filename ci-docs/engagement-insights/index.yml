@@ -50,7 +50,7 @@ landingContent:
           - text: Create custom reports
             url: custom-reports.md
           - text: View unified profiles report
-            url: profiles-report.md
+            url: profile-reports.md
 
   - title: Events
     linkLists:
