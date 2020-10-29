@@ -54,7 +54,7 @@ There are two ways to connect to the real-time API:
 
 Both ways share the following prerequisites:
 
-- A Customer Insights instance
+- A Customer Insights environment
 - Unified customer profiles
 - Activities configured and run
 - Contributor or Administrator permissions to authenticate your account

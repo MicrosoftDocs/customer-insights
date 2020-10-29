@@ -49,7 +49,7 @@ Follow the steps as if you [create a trial environment](#create-a-trial-environm
 
 ## Explore the home page
 
-You can [access your Customer Insights instance](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
+You can [access your Customer Insights environment](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 The **Home** page shows an overview of your customer base and key metrics to track the health of your business.
 
 > [!div class="mx-imgBorder"] 

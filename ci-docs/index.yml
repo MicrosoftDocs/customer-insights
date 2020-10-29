@@ -34,7 +34,7 @@ landingContent:
         links: 
           - text: Sign up for a trial
             url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-          - text: Access your instance
+          - text: Access your environment
             url: https://home.ci.ai.dynamics.com/
           - text: Audience insights documentation
             url: audience-insights/index.yml
