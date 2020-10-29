@@ -83,7 +83,7 @@ landingContent:
           - text: Manage multiple environments
             url: audience-insights/manage-environments.md
 
-  - title: About engagements insights(preview)
+  - title: About engagements insights (preview)
     linkLists:
       - linkListType: overview
         links:
@@ -94,7 +94,7 @@ landingContent:
           - text: Get started
             url: engagement-insights/get-started.md
 
-  - title: Reports for engagement insights
+  - title: Reports for engagement insights (preview)
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -105,7 +105,7 @@ landingContent:
           - text: View unified profiles report
             url: engagement-insights/profile-reports.md
 
-  - title: Events for engagement insights
+  - title: Events for engagement insights (preview)
     linkLists:
       - linkListType: how-to-guide
         links:
