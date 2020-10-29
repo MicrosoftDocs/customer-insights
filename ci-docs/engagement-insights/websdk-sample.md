@@ -34,6 +34,6 @@ The engagement insights capability web SDK library is a JavaScript library with 
 
 1. Open the `ei_websdk_sample.html` file using Live Server in Visual Studio Code by selecting **Go Live** from the status bar.
 
-1. On opening the page, a view event should be automatically sent. Clicking on any of the buttons on the page will send action events. The **TrackEvents** button will also send custom events. Selecting the **Go to Bing** button will send an action event before navigating to the Bing website.
+1. On opening the page, a view event should be automatically sent. Clicking on any of the buttons on the page will send action events. The **Track Events** button will also send custom events. Selecting the **Go to Bing** button will send an action event before navigating to the Bing website.
 
 1. Look at events flowing when you navigate to your workspace. This workspace is associated with the ingestion key entered in Step 4.
