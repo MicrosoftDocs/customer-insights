@@ -668,12 +668,12 @@
     },
     {
       "source_path": "topics/preview/index.md",
-      "redirect_url": "/dynamics365/customer-insights/engagement-insights/index.yml",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/index",
       "redirect_document_id": false
     },
     {
       "source_path": "topics/preview/known-issues.md",
-      "redirect_url": "/dynamics365/customer-insights/engagement-insights/index.yml",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/index",
       "redirect_document_id": false
     },
     {
