@@ -1,10 +1,10 @@
 ---
 title: Preview terms of service
-description: Understand the terms of service for public preview  
+description: Understand the terms of service for engagement insights.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/28/2020
+ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual

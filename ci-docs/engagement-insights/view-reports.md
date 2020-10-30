@@ -1,10 +1,10 @@
 ---
 title: View data reports
-description: Use the available reports to monitor activity on your site.
+description: Use the available reports to see real-time activity on your site.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/27/2020
+ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual

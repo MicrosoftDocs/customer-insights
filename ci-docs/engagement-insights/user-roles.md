@@ -4,7 +4,7 @@ description: Overview of available roles and permissions for workspace members.
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/26/2020
+ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual

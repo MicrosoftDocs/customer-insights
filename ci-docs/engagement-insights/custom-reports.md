@@ -1,17 +1,17 @@
 ---
 title: About custom reports
-description: Describes how to create custom reports.
+description: Learn how to create and custom reports.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/28/2020
+ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
 ms.manager: shellyha
 ---
 
-# Custom reports
+# Create and edit custom reports
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

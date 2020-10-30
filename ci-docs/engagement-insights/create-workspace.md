@@ -1,10 +1,10 @@
 ---
 title: Create a workspace and add members
-description: How to create a workspace and add members
+description: How to create a first workspace and add members to it.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/26/2020
+ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual

@@ -1,10 +1,10 @@
 ---
 title: Engagement insights capability glossary
-description: Glossary of terms and phrases
+description: Glossary of terms and concepts.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/27/2020
+ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual

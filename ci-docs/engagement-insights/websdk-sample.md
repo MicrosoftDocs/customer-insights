@@ -1,10 +1,10 @@
 ---
 title: Run a web SDK sample
-description: Learn how to personalize and run a web SDK sample
+description: Learn how to personalize and run a web SDK sample.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/28/2020
+ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual

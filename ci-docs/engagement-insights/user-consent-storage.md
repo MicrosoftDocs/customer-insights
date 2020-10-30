@@ -1,10 +1,10 @@
 ---
-title: Manage cookies, user consent, and local storage
-description: Understand how cookies and user consent are used to identify website visitors
+title: Manage cookies and user consent to store user data
+description: Understand how cookies and user consent are used to identify website visitors.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/14/2020
+ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual

@@ -1,10 +1,10 @@
 ---
-title: Rename and delete a workspace
-description: How to rename and delete a workspace
+title: Manage workspaces and environments
+description: How to create, rename, and delete a workspaces and environments.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/27/2020
+ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
