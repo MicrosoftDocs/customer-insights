@@ -5,12 +5,12 @@ metadata:
   author: m-hartmann
   description: Find relevant articles to start with help content.
   ms.author: mhart
-  ms.date: 10/16/2020
+  ms.date: 10/29/2020
   ms.service: customer-insights
   ms.topic: landing-page
 
 title: Dynamics 365 Customer Insights documentation
-summary: Find helpful resources to get started and learn about all the features and capabilites of Customer Insights.
+summary: Find helpful resources to get started and learn about features and capabilites of Customer Insights.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,21 +21,21 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Audience insights overview
-            url: audience-insights/overview.md
+          - text: Customer Insights overview
+            url: overview.md
           - text: Release plans
             url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
-          - text: What's new
-            url: audience-insights/whats-new-audience-insights.md
+          - text: Access your environment
+            url: https://home.ci.ai.dynamics.com/
 
-  - title: Get started
+  - title: Get started with audience insights
     linkLists:
       - linkListType: get-started
         links: 
           - text: Sign up for a trial
             url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-          - text: Access your instance
-            url: https://home.ci.ai.dynamics.com/
+          - text: What's new
+            url: audience-insights/whats-new-audience-insights.md
           - text: Audience insights documentation
             url: audience-insights/index.yml
 
@@ -61,7 +61,7 @@ landingContent:
           - text: Work with the app
             url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
 
-  - title: Export customer data
+  - title: Export audience insights data
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -82,3 +82,36 @@ landingContent:
             url: audience-insights/permissions.md
           - text: Manage multiple environments
             url: audience-insights/manage-environments.md
+
+  - title: About engagements insights (preview)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Capability overview
+            url: engagement-insights/overview.md
+          - text: Terms and concepts
+            url: engagement-insights/glossary.md
+          - text: Get started
+            url: engagement-insights/get-started.md
+
+  - title: Reports for engagement insights (preview)
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View reports
+            url: engagement-insights/view-reports.md
+          - text: Create custom reports
+            url: engagement-insights/custom-reports.md
+          - text: View unified profiles report
+            url: engagement-insights/profile-reports.md
+
+  - title: Events for engagement insights (preview)
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create refined events
+            url: engagement-insights/refined-events.md
+          - text: Export events
+            url: engagement-insights/export-events.md
+          - text: Delete and export personal data
+            url: engagement-insights/delete-export-personal-data.md
