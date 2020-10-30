@@ -710,6 +710,16 @@
       "source_path": "topics/preview/advanced-SDK-implementation.md",
       "redirect_url": "/dynamics365/customer-insights/engagement-insights/advanced-SDK-implementation",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/export-events.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/export-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/instrument-your-website.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/instrument-website",
+      "redirect_document_id": false
     }
   ]
 }
