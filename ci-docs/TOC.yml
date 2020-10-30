@@ -4,7 +4,7 @@
 - name: Product overview
   href: overview.md
 
-- name: Access your instance
+- name: Access your environment
   href: https://home.ci.ai.dynamics.com/
 
 - name: Audience insights
@@ -15,6 +15,10 @@
 
     - name: Capability overview
       href: audience-insights/overview.md
+    
+    - name: Free trial
+      href: https://dynamics.microsoft.com/get-started/?appname=customerinsights
+  
 
     - name: New and updated features
       href: audience-insights/whats-new-audience-insights.md
@@ -154,8 +158,73 @@
     - name: DSR requests under GDPR
       href: audience-insights/gdpr.md
 
-- name: Free trial
-  href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+- name: Engagement insights (preview)
+  items:
+    - name: Help hub
+      href: engagement-insights/index.yml
+
+    - name: Capability overview
+      href: engagement-insights/overview.md
+
+    - name: Free trial
+      href: https://pi.dynamics.com/
+    
+    - name: Quickstart
+      items: 
+        - name: Quickstart for public preview
+          href: engagement-insights/quickstart.md
+
+    - name: Get started
+      items:
+        - name: Get started
+          href: engagement-insights/get-started.md
+        - name: Create a workspace
+          href: engagement-insights/create-workspace.md
+        - name: Instrument your website
+          href: engagement-insights/instrument-website.md
+        - name: Concepts and terminology
+          href: engagement-insights/glossary.md
+
+    - name: Events
+      items: 
+        - name: Create and modify events
+          href: engagement-insights/refined-events.md
+        - name: Export events
+          href: engagement-insights/export-events.md
+
+    - name: Reports
+      items: 
+        - name: View reports
+          href: engagement-insights/view-reports.md
+        - name: Create custom reports
+          href: engagement-insights/custom-reports.md
+        - name: Create unified profile reports
+          href: engagement-insights/profile-reports.md
+
+    - name: Developer resources
+      items: 
+        - name: Developer resources overview
+          href: engagement-insights/developer-resources.md
+        - name: Web SDK tutorial
+          href: engagement-insights/advanced-SDK-implementation.md
+        - name: Web SDK sample
+          href: engagement-insights/websdk-sample.md
+
+    - name: Administration
+      items: 
+        - name: Roles and permissions
+          href: engagement-insights/user-roles.md
+        - name: Manage environments and workspaces
+          href: engagement-insights/manage-environments-workspaces.md
+        - name: Configure connections
+          href: engagement-insights/configure-connections.md
+        - name: Manage cookies and user consent
+          href: engagement-insights/user-consent-storage.md
+
+    - name: GDPR
+      items: 
+        - name: Delete and export personal data
+          href: engagement-insights/delete-export-personal-data.md
 
 - name: Contact support
-  href: https://go.microsoft.com/fwlink/?linkid=2079641
+  href: https://go.microsoft.com/fwlink/?linkid=2145734

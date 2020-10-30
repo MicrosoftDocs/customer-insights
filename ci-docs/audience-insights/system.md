@@ -70,7 +70,7 @@ Use the **Schedule** tab to schedule automatic refreshes of all your [ingested d
 
 ## About tab
 
-The **About** tab contains your organization's **Display name**, the active **Environment ID**, the **Region**, and your **Session ID**. If you have more than one work instance, you should give each an easily identifiable display name.
+The **About** tab contains your organization's **Display name**, the active **Environment ID**, the **Region**, and your **Session ID**. If you have more than one work environment, you should give each an easily identifiable display name.
 
 ## General tab
 

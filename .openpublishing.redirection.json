@@ -640,6 +640,76 @@
       "source_path": "topics/developers/tutorials/video-curriculum.md",
       "redirect_url": "/dynamics365/product-insights/video-curriculum",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "topics/preview/concepts-terminology.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/create-project.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/create-workspace",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/delete-export-signal-data.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/delete-export-personal-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/derived-signals.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/refined-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/get-started-websdk.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/instrument-website",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/index.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/known-issues.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/onboarding-overview.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/preview-terms-of-service.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/terms-of-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/quickstart-product-insights.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/reports.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/view-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/user-consent-storage.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/user-consent-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/websdk-sample.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/websdk-sample",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "topics/preview/advanced-SDK-implementation.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/advanced-SDK-implementation",
+      "redirect_document_id": false
     }
   ]
 }

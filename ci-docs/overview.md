@@ -16,4 +16,8 @@ Transform into a customer-centric organization where marketing, sales, and servi
 
 Derive out-of-the-box insights with quick-start templates. Rapidly build, test, and deploy custom AI/ML models using analytics solutions at scale. Activate real-time insights to drive actions. Maintain full control over your customer data to ensure the highest level of data governance and compliance. 
 
-For more information, see [Dynamics 365 Customer Insights audience insights capability](audience-insights/overview.md)
+There are two main capabilities: 
+
+- [Audience insights](audience-insights/overview.md)
+- [Engagmement insights (preview)](engagement-insights/index.yml)
+ 
