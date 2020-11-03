@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 10/05/2020
+ms.date: 11/02/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -15,7 +15,7 @@ manager: shellyha
 
 We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](https://docs.microsoft.com/dynamics365/release-plans/).
 
-You can also watch the following video to learn more about the capabilities planned for 2020 release wave 1.
+You can also watch the following video to learn more about the capabilities planned for the last six months.
 
 > [!VIDEO https://www.youtube.com/embed/jQh-7pscH30]
 
@@ -23,6 +23,36 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## October 2020 updates
+
+The updates in October 2020 include several features, performance upgrades, and bug fixes.
+
+### New and updated features in October 2020
+
+#### Extensibility
+
+- **Export to Mailchimp**
+
+Export segments to existing audience lists in Mailchimp to provide a personalized email experience for your customers.
+
+For more information, see [Connector for Mailchimp](export-mailchimp.md).
+
+#### Data enrichment
+
+- **Deduplicate the source records in a Match entity**
+
+Specify deduplication rules on entities used in the match process to identify duplicate records. Merge them into one record and link all the source records to this merged record. This deduplicated record will then be used in the cross-entity matching process.
+
+For more information, see [Define deduplication on a match entity](match-entities.md#define-deduplication-on-a-match-entity).
+
+#### System administration
+
+- **Orchestration: New refresh option in Merge**
+
+Until today, when you run the merge process, the system ran all the downstream processes that depend on merge and subsequent processes. 
+You can now verify the output of the merge process (the unified customer entity) before using it in downstream pro cessing like segments or measures.
+On the merge page, you can now choose to run only the merge step and run only this process. To refresh all the downstream processes too, you can choose run merge and downstream processes. 
 
 ## September 2020 updates
 
