@@ -21,9 +21,6 @@ In this example, we assume an environment that contains customer profiles that w
 
 We now want to know if a customer visits our web properties and understand their activities, such as visiting a website or viewing a product page through a link that was sent in email.
 
-![](media/b25feeac3fc13186fe2c8bed65930da5.png)
-
-
 ## Prerequisites
 
 To integrate data from engagement insights, a few prerequisites need to be met: 
