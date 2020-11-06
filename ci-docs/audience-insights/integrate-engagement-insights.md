@@ -28,88 +28,33 @@ We now want to know if a customer visits our web properties and understand their
 
 To integrate data from engagment insights, a few prerequisites need to be met: 
 
-- Integrate Engagement insights SDK with your website. For more information, see 
-- Exporting the refined web events requires access to an ADLS Gen 2 storage
-    account that you would use for ingesting the web events data in Audience
-    insights.
+- Integrate the engagement insights SDK with your website. For more information, see [Get started with the web SDK](../engagement-insights/instrument-website.md).
+- Exporting web events from engagement insights requires access to an ADLS Gen 2 storage account that will be used to ingest the web events data to audience
+    insights. For more information, see [Export events](../engagement-insights/export-events.md).
 
-# Setting up Engagement insights
+## Configure refined events in engagement insights
 
-1.  Define Refined Web Events
+After instrumenting a website with the engagement insights SDK, *base events* are gathered when a user views a web page or does an action by clicking a property. Base events tend to contain a lot of detais. Depending on your use case, you only need a subset of the data in a base event. Engagement insights lets you create *refined events* that contain only the properties of a base event that you select.     
 
-    With the web page wired up with Engagement insights, now you can go to the
-    workspace to define the Refined Events for integrating into Audience
-    insights. \<\<fwlink\>\> overview.
+For more information, see [Create and modify refined events](../engagement-insights/refined-events.md).
 
-    ![Graphical user interface, application Description automatically generated](media/b0751d1a46735d7509039a7dcdf4f16c.gif)
+Considerations when creating refined events: 
 
-2.  Create Refined Event by selecting “New events”.
+- Provide a meaningful name for the refined event. It's be used as an activity name in audience insights.
+- Select at least the following properties to create an activity in audience insights: 
+    - Signal Action Name - indicating the activity details
+    - Signal User AuthId - used to map with the customer ID
+    - Signal Action View Uri - used as a web address as a basis for segments or measures
+    - Signal Export Id - to use as a primary key for events
+    - Signal timestap - to determine the date and time for the actvity
 
-3.  Select a Base event and provide a meaningful name to the refined event.
-
-    TIP: Specify the Name of the event that you would want to see as an Activity
-    Name.
-
-4.  Select the properties that you want to use to relate in the Audience
-    insights.
-
-    I have selected the following minimum required properties to setup an
-    Activity to relate to a profile:
-
--   “Signal Action Name” which indicates the Activity Details i.e. Email
-    Promotion.
-
--   “Signal User AuthId” which I can join back to the contact ids of my
-    RetailCustomers entity in Audience insights.
-
--   “Signal Action View Uri” which I could use to map to the Web address, that I
-    may chose to segment or create a measure on.
-
--   Signal Export Id is a pre-selected field that is a primary key for all the
-    events that get captured.
-
--   Signal timestamp is a pre-selected field that will always be present to
-    indicate when that event has happened and you will definitely need that on
-    the activity timeline.
-
-1.  Select the filters:
-
--   Note that I have filtered the Signal Action Name to “Email Promotion” to be
-    laser focused on what activity I am setting up this export for. While you
-    can skip the filtering, but that would not be a good choice, as you could
-    end up bringing even a cursor up down or page up down as an event across 50+
-    products.
-
--   Similarly, I have filtered the Signal View Title to be able to filter on the
-    very specific page that I am interested to track.
+Select the filters to focus on the events and pages that matter for your use case. In this example, we'll use the "Email promotion" action name.
 
 ## Export the Refined Web Events 
 
->   After the Refined Event is defined, now you can setup the export of data
->   that will be exported on an ongoing basis as the events are collected from
->   the web application. \<\<fwlink\>\> overview.
+After defining the refined event is defined, you have to configure the export of the event data. Exports happen constantly as the events flow from the web property.
 
-![](media/a2f368f4fbe2f2eaf5546b20aab622fd.gif)
-
->   Graphical user interface, application Description automatically generated
-
-1.  Start with a New Export
-
-2.  Select the Refined Events to export: here we select “StartPageClicks” as
-    defined in the previous step.
-
-3.  There is an option to select the file structure which indicates how the data
-    will be stored.
-
-4.  Next, Select “Common Data Model” as that’s what enables Audience insights to
-    discover the event table as a data source.
-
-5.  Provide an ADLS Gen 2 account storage location and account key to store the
-    event data to be exported.
-
-6.  Provide the folder path, also sometimes referred to as a container. If you
-    want to create a sub folder in the container you can specify that as folder
-    path. If a folder does not exist, the export will create one.
+For more information, see [Export events](../engagement-insights/export-events.md).
 
 # Setting up Audience insights
 
