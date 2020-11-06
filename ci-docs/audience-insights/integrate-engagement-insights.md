@@ -56,39 +56,14 @@ After defining the refined event is defined, you have to configure the export of
 
 For more information, see [Export events](../engagement-insights/export-events.md).
 
-# Setting up Audience insights
+## Ingest event data to audience insights
 
-## Ingest Events data from Engagement insights
+Now that you have defined the refined event and configured its export, we move on to ingesting the data to audience insights. First, you need to create a new data sources based on a Common Data Model folder. Enter the details for the storage account you export the events to. In the default.cdm.json file, select the refined event to ingest and create the entity in audience insights.
 
->   Now that you have defined and setup the export of the Refined Event, you can
->   now discover it and integrate it with Audience insights. The first step here
->   is to setup as a data source.
+For more information, see [Connect to a Common Data Model folder using an Azure Data Lake account](connect-common-data-model.md)
 
-![](media/54a1a821ed8ddb6aa25369d8f55d214d.gif)
 
->   Graphical user interface, application Description automatically generated
-
-1.  In your existing environment, add a new Data Source.
-
-2.  Select the import method as “Connect to a Common Data Model Folder” and name
-    the data source.
-
-3.  Provide the ADLS Gen 2 storage location that was setup at the time of export
-    in Engagement insights.
-
-4.  You should be able to see the default.cdm.json. You should be able to select
-    the one for the events that you have configured for your scenario.
-
-5.  You should see the event and as the entity and you can click Save.
-
-    This completes the setup of the ingesting the Events Data.
-
-    The data source will show as Refreshing on the Data Sources page. Since this
-    is attaching a CDM folder, the refreshing state would not take long. Once
-    the refreshing is complete, you can proceed to relating the events data as
-    an Activity.
-
-## Relate the Events data as an Activity of a Customer Profile
+## Relate refined event data as an activity of a customer profile
 
 >   Now that the entity ingestion is complete, you should be able to configure
 >   the events to the customer profile.
