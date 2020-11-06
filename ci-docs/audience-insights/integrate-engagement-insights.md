@@ -1,6 +1,6 @@
 ---
 title: Integrate web data from engagement insights with audience insights.
-description: Bring web information about customers to fomr engagement insights to audience insights. 
+description: Bring web information about customers from engagement insights to audience insights. 
 ms.date: 11/06/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,20 +13,20 @@ manager: shellyha
 
 # Integrate web data from engagement insights with audience insights
 
-With customers doing their day to day transactions often online, it's helpful to use the engagement insights capability and integrate web data as a source. In addition to transactional, demographic, or behavioral data we can see activities on the web in a unfied customer profile. We can use this profile to gain additional insights like segments, measures, or predictions for audience activation.
+Customers often do their day to day transactions online using web sites. The engagement insights capability in Dynamics 365 Customer Insights is a handy solution to integrate web data as a source. In addition to transactional, demographic, or behavioral data we can see activities on the web in unified customer profiles. We can use this profile to gain additional insights like segments, measures, or predictions for audience activation.
 
 This article describes the steps to bring your customers’ web activity data from engagement insights into your existing audience insights environment.
 
-For this example, we assume an environment that contains customer profiles that were unified with sources from surveys, retail sales, and a ticketing system. It also shows the activities that the customer has performed. 
+In this example, we assume an environment that contains customer profiles that were unified with sources from surveys, retail sales, and a ticketing system. It also shows the activities that the customer has performed. 
 
-We now want to know if a customer visits our web properties and understand their activities, such as visiting a website or viewing a product page thru a link that was sent in email.
+We now want to know if a customer visits our web properties and understand their activities, such as visiting a website or viewing a product page through a link that was sent in email.
 
 ![](media/b25feeac3fc13186fe2c8bed65930da5.png)
 
 
-## Prerequisities
+## Prerequisites
 
-To integrate data from engagment insights, a few prerequisites need to be met: 
+To integrate data from engagement insights, a few prerequisites need to be met: 
 
 - Integrate the engagement insights SDK with your website. For more information, see [Get started with the web SDK](../engagement-insights/instrument-website.md).
 - Exporting web events from engagement insights requires access to an ADLS Gen 2 storage account that will be used to ingest the web events data to audience
@@ -34,7 +34,7 @@ To integrate data from engagment insights, a few prerequisites need to be met:
 
 ## Configure refined events in engagement insights
 
-After instrumenting a website with the engagement insights SDK, *base events* are gathered when a user views a web page or does an action by clicking a property. Base events tend to contain a lot of detais. Depending on your use case, you only need a subset of the data in a base event. Engagement insights lets you create *refined events* that contain only the properties of a base event that you select.     
+After instrumenting a website with the engagement insights SDK, *base events* are gathered when a user views a web page or does an action by clicking a property. Base events tend to contain numerous details. Depending on your use case, you only need a subset of the data in a base event. Engagement insights let you create *refined events* that contain only the properties of a base event that you select.     
 
 For more information, see [Create and modify refined events](../engagement-insights/refined-events.md).
 
@@ -46,7 +46,7 @@ Considerations when creating refined events:
     - Signal.User.Id - used to map with the customer ID
     - Signal.View.Uri - used as a web address as a basis for segments or measures
     - Signal.Export.Id - to use as a primary key for events <!-- system generated, do we need to list?-->
-    - Signal.Timestap - to determine the date and time for the actvity
+    - Signal.Timestamp - to determine the date and time for the activity
 
 Select the filters to focus on the events and pages that matter for your use case. In this example, we'll use the "Email promotion" action name.
 
@@ -58,7 +58,7 @@ For more information, see [Export events](../engagement-insights/export-events.m
 
 ## Ingest event data to audience insights
 
-Now that you have defined the refined event and configured its export, we move on to ingesting the data to audience insights. First, you need to create a new data sources based on a Common Data Model folder. Enter the details for the storage account you export the events to. In the default.cdm.json file, select the refined event to ingest and create the entity in audience insights.
+Now that you have defined the refined event and configured its export, we move on to ingesting the data to audience insights. First, you need to create a new data source based on a Common Data Model folder. Enter the details for the storage account you export the events to. In the default.cdm.json file, select the refined event to ingest and create the entity in audience insights.
 
 For more information, see [Connect to a Common Data Model folder using an Azure Data Lake account](connect-common-data-model.md)
 
@@ -73,7 +73,7 @@ For more information, see [Customer activities](activities.md).
 
 Configure the new activity with the following mapping: 
 
-- **Primary Key:** Signal.Export.Id, a unique id that is available for every event record in engagement insights. This property is automatically generated.
+- **Primary Key:** Signal.Export.Id, a unique ID that is available for every event record in engagement insights. This property is automatically generated.
 
 - **Timestamp:** Signal.Timestamp in the event property.
 
@@ -81,28 +81,18 @@ Configure the new activity with the following mapping:
 
 - **Web address:** Signal.View.Uri referring to the uri of the page that created the event.
 
-- **Details:** Signal.Action.Name to reprensent the information to associate with the event. The selected property in this case indicates that the event is for email promotion.
+- **Details:** Signal.Action.Name to represent the information to associate with the event. The selected property in this case indicates that the event is for email promotion.
 
 - **Activity type:** In this example, we choose the exsting activity type WebLog. This selection is a useful filter option to run prediction models or create segments based on this activity type.
 
-- **Set up relationship:** This important setting ties the activity to existing customer profiles. **Signal.User.Id** is the identifier configured in the SDK to be collected and that relates to the user id in other data sources that are configured in audience insights. In this example, we configure the relationship between Signal.User.Id and RetailCustomers:CustomerRetailId, which is the primary key that was deinfed in the map step of the data unification process.
+- **Set up relationship:** This important setting ties the activity to existing customer profiles. **Signal.User.Id** is the identifier configured in the SDK to be collected and that relates to the user ID in other data sources that are configured in audience insights. In this example, we configure the relationship between Signal.User.Id and RetailCustomers:CustomerRetailId, which is the primary key that was deinfed in the map step of the data unification process.
 
 
->   Once the Activities have finished processing, you should be able to check
->   the Customers and can find that the Customer Card shows the activities from
->   Engagement insights.
+After processing the activities, you can review customer records and open a customer card to see activities from engagement insights in the timeline. 
 
-
->   TIP: To find a customer id that has an Engagement insights activity, you can
->   check the Entities page and preview the data for UnifiedActivity entity. The
->   entity with ActivityTypeDisplay = WebLog will be the one with the
->   EngagementInsights activity as we just configured. You can copy the
->   customerid for one of those records and find that customer using the search
->   option on the Customers page.
+> [!TIP]
+> To find a customer id that has an engagement insights activity, go to **Entities** and preview the data for the UnifiedActivity entity. ActivityTypeDisplay = WebLog contain the engagement insights activity configured in the example above. Copy the customer ID for one of those records and for that ID on the **Customers** page.
 
 ## Next Steps
 
-With this unified customer profile built with the data integrated from
-Engagement insights with Audience insights, now you can further create more
-powerful segments (\<\<fwlink\>\>), measures (\<\<fwlink\>\>) and predictions
-(\<\<fwlink\>\>) to make a meaningful connection with your customers.
+You can now create [segments](segments.md), [measures, and [predictions](predictions.md) to make a meaningful connection with your customers.
