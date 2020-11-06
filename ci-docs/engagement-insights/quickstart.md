@@ -1,10 +1,10 @@
 ---
 title: Quickstart product introduction 
-description: First-run experience to set up engagmenet insights capability.
+description: First-run experience to set up engagement insights capability.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/30/2020
+ms.date: 11/05/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This article explains how to sign up and do an initial setup of engagement insights, a capability of Dynamics 365 Customer Insights.
+ Engagement insights, a capability of Dynamics 365 Customer Insights, lets you collect and measure customer behavior on your website. This article explains how to sign up for engagement insights, set up a workspace, add members to it, and make changes.
 
 ## Sign up for a demo of engagement insights
 
@@ -32,6 +32,8 @@ You must have an active Microsoft Azure Active Directory user account.
 1. Explore the product using a set of sample data. 
 
 ## Set up your first workspace in engagement insights
+
+A workspace is how you store and manage events and reports.
 
 To create your first workspace
 
