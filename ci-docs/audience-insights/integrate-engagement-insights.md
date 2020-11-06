@@ -43,8 +43,8 @@ Considerations when creating refined events:
 - Provide a meaningful name for the refined event. It's be used as an activity name in audience insights.
 - Select at least the following properties to create an activity in audience insights: 
     - Signal.Action.Name - indicating the activity details
-    - Signal.User.AuthId - used to map with the customer ID
-    - Signal.Action.View.Uri - used as a web address as a basis for segments or measures
+    - Signal.User.Id - used to map with the customer ID
+    - Signal.View.Uri - used as a web address as a basis for segments or measures
     - Signal.Export.Id - to use as a primary key for events <!-- system generated, do we need to list?-->
     - Signal.Timestap - to determine the date and time for the actvity
 
@@ -69,23 +69,24 @@ After completing the entity ingestion, you can configure the activity for the cu
 
 For more information, see [Customer activities](activities.md).
 
+:::image type="content" source="media/web-event-activity.png" alt-text="Activities page with expanded Edit activity pane and filled in fields.":::
+
 Configure the new activity with the following mapping: 
 
 - **Primary Key:** Signal.Export.Id, a unique id that is available for every event record in engagement insights. This property is automatically generated.
 
 - **Timestamp:** Signal.Timestamp in the event property.
 
-- **Event:** Signal.Action.Name, the event name that you want to track.
+- **Event:** Signal.Name, the event name that you want to track.
 
-- **Web address:** Signal.Action.View.Uri referring to the uri of the page that created the event.
+- **Web address:** Signal.View.Uri referring to the uri of the page that created the event.
 
-6.  **Details:** This is the info that you want to associate with the event. Here I have selected Signal.Action.Name as that’s the property which indicates that the event is for Email Promotion.
+- **Details:** Signal.Action.Name to reprensent the information to associate with the event. The selected property in this case indicates that the event is for email promotion.
 
-7.  **Activity Type:** As this is a web activity, I have selected WebLog. This would be useful during the activation or when you are looking to filter for runing any AI/ML models or creating weblog based segments, etc.
+- **Activity type:** In this example, we choose the exsting activity type WebLog. This selection is a useful filter option to run prediction models or create segments based on this activity type.
 
-8.  **Relationship:** This is the key part that will tie the data to the existing customer profile. As I mentioned at the time of defining the event properties, the Signal User Id is what user identifier was configured in the SDK to be collected and that relates to the user id in other data sources that are configured in Audience insights. So here we are configuring the relationship between Signal User Id and Retail Customers primary key which is CustomerRetailId defined in the Map during Unification.
+- **Set up relationship:** This important setting ties the activity to existing customer profiles. **Signal.User.Id** is the identifier configured in the SDK to be collected and that relates to the user id in other data sources that are configured in audience insights. In this example, we configure the relationship between Signal.User.Id and RetailCustomers:CustomerRetailId, which is the primary key that was deinfed in the map step of the data unification process.
 
-    Once you save, this finishes the setup of the Activities, and then you can Run the activities.
 
 >   Once the Activities have finished processing, you should be able to check
 >   the Customers and can find that the Customer Card shows the activities from
