@@ -42,11 +42,11 @@ Considerations when creating refined events:
 
 - Provide a meaningful name for the refined event. It's be used as an activity name in audience insights.
 - Select at least the following properties to create an activity in audience insights: 
-    - Signal Action Name - indicating the activity details
-    - Signal User AuthId - used to map with the customer ID
-    - Signal Action View Uri - used as a web address as a basis for segments or measures
-    - Signal Export Id - to use as a primary key for events
-    - Signal timestap - to determine the date and time for the actvity
+    - Signal.Action.Name - indicating the activity details
+    - Signal.User.AuthId - used to map with the customer ID
+    - Signal.Action.View.Uri - used as a web address as a basis for segments or measures
+    - Signal.Export.Id - to use as a primary key for events <!-- system generated, do we need to list?-->
+    - Signal.Timestap - to determine the date and time for the actvity
 
 Select the filters to focus on the events and pages that matter for your use case. In this example, we'll use the "Email promotion" action name.
 
@@ -65,49 +65,32 @@ For more information, see [Connect to a Common Data Model folder using an Azure 
 
 ## Relate refined event data as an activity of a customer profile
 
->   Now that the entity ingestion is complete, you should be able to configure
->   the events to the customer profile.
+After completing the entity ingestion, you can configure the activity for the customer profile.
 
-![](media/9e57473b5f0fb63bee52dca75c0668e2.png)
+For more information, see [Customer activities](activities.md).
 
-1.  You can add an Activity and select the newly created Entity.
+Configure the new activity with the following mapping: 
 
-2.  **Primary Key**: Signal.Export.id is a unique id that is always generated
-    with every event record in Engagement insights. This property is not visible
-    at the time of defining the event as it is system generated.
+- **Primary Key:** Signal.Export.Id, a unique id that is available for every event record in engagement insights. This property is automatically generated.
 
-3.  **Timestamp:** Signal.Timestamp is the timestamp in the events property that
-    you would select.
+- **Timestamp:** Signal.Timestamp in the event property.
 
-4.  **Event:** This is the Event name that you want to track, I have selected
-    Signal.Name as that indicates my page_clicks event.
+- **Event:** Signal.Action.Name, the event name that you want to track.
 
-5.  **Web address:** This is the uri of the page that is for tracking.
+- **Web address:** Signal.Action.View.Uri referring to the uri of the page that created the event.
 
-6.  **Details:** This is the info that you want to associate with the event.
-    Here I have selected Signal.Action.Name as that’s the property which
-    indicates that the event is for Email Promotion.
+6.  **Details:** This is the info that you want to associate with the event. Here I have selected Signal.Action.Name as that’s the property which indicates that the event is for Email Promotion.
 
-7.  **Activity Type:** As this is a web activity, I have selected WebLog. This
-    would be useful during the activation or when you are looking to filter for
-    runing any AI/ML models or creating weblog based segments, etc.
+7.  **Activity Type:** As this is a web activity, I have selected WebLog. This would be useful during the activation or when you are looking to filter for runing any AI/ML models or creating weblog based segments, etc.
 
-8.  **Relationship:** This is the key part that will tie the data to the
-    existing customer profile. As I mentioned at the time of defining the event
-    properties, the Signal User Id is what user identifier was configured in the
-    SDK to be collected and that relates to the user id in other data sources
-    that are configured in Audience insights. So here we are configuring the
-    relationship between Signal User Id and Retail Customers primary key which
-    is CustomerRetailId defined in the Map during Unification.
+8.  **Relationship:** This is the key part that will tie the data to the existing customer profile. As I mentioned at the time of defining the event properties, the Signal User Id is what user identifier was configured in the SDK to be collected and that relates to the user id in other data sources that are configured in Audience insights. So here we are configuring the relationship between Signal User Id and Retail Customers primary key which is CustomerRetailId defined in the Map during Unification.
 
-    Once you save, this finishes the setup of the Activities, and then you can
-    Run the activities.
+    Once you save, this finishes the setup of the Activities, and then you can Run the activities.
 
 >   Once the Activities have finished processing, you should be able to check
 >   the Customers and can find that the Customer Card shows the activities from
 >   Engagement insights.
 
-![](media/4d7c2a8192b6bf534885bfe87909226e.png)
 
 >   TIP: To find a customer id that has an Engagement insights activity, you can
 >   check the Entities page and preview the data for UnifiedActivity entity. The
@@ -116,7 +99,7 @@ For more information, see [Connect to a Common Data Model folder using an Azure 
 >   customerid for one of those records and find that customer using the search
 >   option on the Customers page.
 
-# Next Steps
+## Next Steps
 
 With this unified customer profile built with the data integrated from
 Engagement insights with Audience insights, now you can further create more
