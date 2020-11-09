@@ -1,5 +1,5 @@
 ---
-title: Integrate web data from engagement insights with audience insights.
+title: Integrate web data from engagement insights with audience insights
 description: Bring web information about customers from engagement insights to audience insights. 
 ms.date: 11/06/2020
 ms.service: customer-insights

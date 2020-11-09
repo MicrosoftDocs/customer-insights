@@ -31,6 +31,8 @@
           href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
         - name: Work with the app
           href: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+        - name: Integrate web data from engagement insights
+          href: audience-insights/integrate-engagement-insights.md
 
     - name: Data sources
       items:
