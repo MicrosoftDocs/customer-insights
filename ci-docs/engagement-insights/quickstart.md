@@ -64,7 +64,7 @@ By default, only the person who created the workspace has access to it. You can 
 
 3. Select a **Role** to assign to the new members. Currently, **Workspace admin** is the only available selection. Other roles will be added in future releases.
 
-4. Choose **Add** to confirm.
+4. Select **Add** to confirm.
 
 To remove members from a workspace, select **...** next to their names on the **Members** page and then select **Delete** from the drop-down menu.
 
@@ -76,9 +76,9 @@ You can edit the details of existing workspaces at any time.
 
 1. Go to **Admin** > **Settings** > **General**.
 
-1. Use the  **Name** box to enter a name and optionally add a **Description** for your workspace.
+1. In the  **Name** box, enter a name and optionally add a **Description** for your workspace.
 
-1. Choose **Save** to apply your changes.
+1. Select **Save** to apply your changes.
 
 ## Add another new workspace
 
