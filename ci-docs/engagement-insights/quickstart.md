@@ -94,5 +94,5 @@ You can create additional workspaces to classify your data.
 
 ## Switch between workspaces
 
-To change between workspaces, select the *workspace switcher. You can also create a new workspace, or select **Web Sample** to see reports and try features using sample data. 
+To change between workspaces, select the workspace switcher. You can also create a new workspace, or select **Web Sample** to see reports and try features using sample data. 
 
