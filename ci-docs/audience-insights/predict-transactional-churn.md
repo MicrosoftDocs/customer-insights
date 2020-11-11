@@ -31,7 +31,7 @@ If you're interested in trying this feature but don't have data to complete the 
     - (Optional) If a transaction is a return or not. -->
     - The semantic data schema for purchases/transactions requires the following information:
         - **Transaction ID:** A unique identifier of a purchase or transaction.
-        - **Transaction Date:** The date the of the purchase or transaction.
+        - **Transaction Date:** The date of the purchase or transaction.
         - **Value of the transaction:** The currency/numerical value amount of the transaction/item.
         <!-- - (Optional) **Unique product ID:** The ID of the product or service purchased if your data is at a line item level.
         - (Optional) **Whether this transaction was a return:** A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we will also use this information to infer a return. -->
@@ -65,7 +65,7 @@ If you're interested in trying this feature but don't have data to complete the 
 
 ### Define customer churn
 
-1. Set a window of days to predict churn for in the **Identify customers who may churn in the next** field. For example, predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for a longer or shorter period of time can make it more difficult to address the factors in your churn risk profile, but this is highly dependent on your specific business requirements. 
+1. Set a window of days to predict churn for in the **Identify customers who may churn in the next** field. For example, predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for a longer or shorter period of time can make it more difficult to address the factors in your churn risk profile, but it depends on your specific business requirements. 
    >[!TIP]
    > You can select **Save and close** at any time to save the prediction as a draft. You'll find the draft prediction in the **My predictions** tab to continue.
 
@@ -86,18 +86,19 @@ If you're interested in trying this feature but don't have data to complete the 
     1. Select the **Field** that identifies the customer in the purchase history entity. It needs to relate to the primary customer ID of your Customer entity.
     1. Select the **Customer entity** that matches your primary customer entity.
     1. Enter a name that describes the relationship.
+
     :::image type="content" source="media/model-purchase-join.PNG" alt-text="Purchase history page showing the creation of a relationship to customer.":::
    
 1. Select **Next**.
 
-1. Optionally, select **Add data** for **Customer activities** and choose the entity that provides the customer activity information as described in the prerequisites.
+1. Optionally, select **Add data** for **Customer activities**. Choose the entity that provides the customer activity information as described in the prerequisites.
 
 1. Map the semantic fields to attributes within your customer activity entity and select **Next**. For descriptions of the fields, have a look at the [prerequisites](#prerequisites).
 
-1. Select an activity type that matches to the type of customer activity you're configuring. Select **Create new** and provide a name if you don't see an option that matches the activity type you need.
+1. Select an activity type that matches to the type of customer activity you're configuring. Select **Create new** and choose an available activity type or create a new type.
 
 1. You'll need to configure the relationship from your customer activity entity to the Customer entity.
-    1. Select the field that identifies the customer in the customer activity table, which can be directly related to the primary customer ID of your Customer entity.
+    1. Select the field that identifies the customer in the customer activity table. It can be directly related to the primary customer ID of your Customer entity.
     1. Select the Customer entity that matches your primary Customer entity
     1. Enter a name that describes the relationship.
 
@@ -135,6 +136,7 @@ If you're interested in trying this feature but don't have data to complete the 
    - **Last refreshed:** The date the prediction refreshed results in the output entity.
 
 1. Select the vertical ellipses next to the prediction you want to review results for and select **View**.
+
    :::image type="content" source="media/model-subs-view.PNG" alt-text="View control to see results of a prediction.":::   
 
 1. There are three primary sections of data within the results page:
@@ -146,12 +148,11 @@ If you're interested in trying this feature but don't have data to complete the 
             
          - **C** when the model accurately predicted less 50% of the total predictions, or when the percentage of accurate predictions for customers who churned is less than the baseline.
                
-         - **Baseline** Using the prediction time window input for the model (for example, 1 year), the model takes different fractions of time by dividing it by 2 until it reaches 1 month or less. Then, the model uses these fractions and creates a business rule for customers who have not purchased within those periods - these customers are considered as churned. The time-based business rule with the highest ability to predict who is likely to churn is chosen as baseline model.
+         - **Baseline** takes the prediction time window input for the model (for example, one year) and the model creates different fractions of time by dividing it by 2 until it reaches one month or less. It uses these fractions to create a business rule for customers who have not purchased in this time frame. These customers are considered as churned. The time-based business rule with the highest ability to predict who is likely to churn is chosen as baseline model.
             
-        
     1. **Likelihood to churn (number of customers):** Groups of customers based on their predicted risk of churn. This data can help you later if you want to create a segment of customers with high churn risk. Such segments help to understand where your cutoff should be for segment membership.
        
-    1. **Most influential factors:** There are many factors that are taken into account when creating your prediction. Each of the factors has their importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. Or you can use this information later to [create segments](segments.md) that could help influence churn risk for customers.
+    1. **Most influential factors:** There are many factors that are taken into account when creating your prediction. Each of the factors has its importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. Or you can use this information later to [create segments](segments.md) that could help influence churn risk for customers.
 
 ## Troubleshoot a failed prediction
 
