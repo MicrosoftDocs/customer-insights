@@ -1,7 +1,7 @@
 ---
 title: Transactional churn prediction
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 10/15/2020
+ms.date: 11/12/2020
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
