@@ -27,14 +27,12 @@ If you're interested in trying this feature but don't have data to complete the 
     - Transaction identifiers to distinguish purchases/transactions.
     - Customer identifiers to match transactions to your customers.
     - Transaction event dates, which define the dates the transaction occurred on.
-    <!-- - (Optional) Product ID information for the transaction
-    - (Optional) If a transaction is a return or not. -->
     - The semantic data schema for purchases/transactions requires the following information:
         - **Transaction ID:** A unique identifier of a purchase or transaction.
         - **Transaction Date:** The date of the purchase or transaction.
         - **Value of the transaction:** The currency/numerical value amount of the transaction/item.
-        <!-- - (Optional) **Unique product ID:** The ID of the product or service purchased if your data is at a line item level.
-        - (Optional) **Whether this transaction was a return:** A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we will also use this information to infer a return. -->
+        - (Optional) **Unique product ID:** The ID of the product or service purchased if your data is at a line item level.
+        - (Optional) **Whether this transaction was a return:** A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we will also use this information to infer a return.
 - (Optional) Data about customer activities:
     - Activity identifiers to distinguish activities of the same type.
     - Customer identifiers to map activities to your customers.
@@ -142,7 +140,7 @@ If you're interested in trying this feature but don't have data to complete the 
 1. There are three primary sections of data within the results page:
     1. **Training model performance:** A, B, or C are possible scores. This score indicates the performance of the prediction, and can help you make the decision to use the results stored in the output entity. Scores are determined based on the following rules:
          
-         - - **A** when the model accurately predicted at least 50% of the total predictions, and when the percentage of accurate predictions for customers who churned is greater than the baseline rate by at least 10%.
+         - **A** when the model accurately predicted at least 50% of the total predictions, and when the percentage of accurate predictions for customers who churned is greater than the baseline rate by at least 10%.
             
          - **B** when the model accurately predicted at least 50% of the total predictions, and when the percentage of accurate predictions for customers who churned is up to 10% greater than the baseline.
             
