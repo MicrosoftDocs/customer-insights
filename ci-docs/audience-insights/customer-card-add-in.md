@@ -13,6 +13,8 @@ manager: shellyha
 
 # Customer Card Add-in (preview)
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Get a 360-degree view of your customers directly in Dynamics 365 apps. View demographics, insights, and activity timelines with the Customer Card Add-in.
 
 ## Prerequisites
