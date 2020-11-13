@@ -22,4 +22,4 @@ Engagement insights is a highly scalable application, capable of supporting mill
 
 - Maximum number of workspaces per organization = 100
 
-If you receive email that your workspace has exceeded the limit, you can [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) for a volume increase. You can also [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) to request a  volume increase before you exceed  the limit. We'll work with you to determine your need for a volume increase and support your request.
+Events over the volume threshold are dropped. This leads to data loss in the reports based on those events. You can [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) to request a  volume increase before you exceed limits. We'll work with you to determine your need for a volume increase and support your request.
