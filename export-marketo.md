@@ -11,7 +11,7 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Connector for Mailchimp (preview)
+# Connector for Marketo (preview)
 
 Export segments of unified customer profiles to generate campaigns, provide email marketing and use specific groups of customers with Marketo.
 
