@@ -19,7 +19,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 -	You have a [Marketo account](https://login.marketo.com/) and corresponding administrator credentials.
 -	There are existing lists in Marketo and the corresponding IDs. For more information, see [Marketo lists](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
--	You have [configured segments](segments.md)
+-	You have [configured segments](segments.md).
 -	Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Connect to Marketo
@@ -48,7 +48,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 1. Optionally, you can export **First name**, **Last name**, **City**, **State**, and **Country/Region**  as additional fields to create more personalized emails. Select **Add attribute** to map these fields.
 
-1. Select the segments you want to export. You can export up to 1 million customer profiles in total to Mailchimp.
+1. Select the segments you want to export. You can export up to 1 million customer profiles in total to Marketo.
 
    :::image type="content" source="media/export-segment-marketo.png" alt-text="Select fields and segments to export to Marketo":::
 
@@ -62,10 +62,10 @@ You can [export data on demand](export-destinations.md). The export will also ru
 
 - Up to 1 million profiles per export to Marketo.
 - Exporting to Marketo is limited to segments.
-- Exporting segments with a total of 1 million profiles can take up to 3 hours due to limitations on the provider side. 
+- Exporting segments with a total of 1 million profiles can take up to 3 hours. 
 - The number of profiles that you can export to Marketo is dependent and limited on your contract with Marketo.
 
 ## Data privacy and compliance
 
-When you enable Dynamics 365 Customer Insights to transmit data to Marketo, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Mailchimp meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+When you enable Dynamics 365 Customer Insights to transmit data to Marketo, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Marketo meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.

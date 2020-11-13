@@ -125,6 +125,8 @@
           href: audience-insights/export-mailchimp.md
         - name: Microsoft Teams (bot)
           href: audience-insights/export-teams-bot.md
+        - name: Marketo
+          href: audience-insights/export-marketo.md
         - name: Power BI
           href: audience-insights/export-power-bi.md
         - name: Power Apps
