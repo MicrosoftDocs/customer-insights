@@ -13,7 +13,7 @@ manager: shellyha
 
 # Connector for Mailchimp (preview)
 
-Export segments of unified customer profiles to generate campaigns, provide email marketing and leverage specific groups of customers with Marketo.
+Export segments of unified customer profiles to generate campaigns, provide email marketing and use specific groups of customers with Marketo.
 
 ## Prerequisites
 
