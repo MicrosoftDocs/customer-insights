@@ -14,7 +14,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer]( includes/cc-beta-prerelease-disclaimer.md)]
 
-Engagement insights are a highly scalable application, capable of supporting millions of events per second. During public preview, there are limits to both the ingestion volume in a workspace and the number of workspaces in an organization.
+Engagement insights is a highly scalable application, capable of supporting millions of events per second. During public preview, there are limits to both the ingestion volume in a workspace and the number of workspaces in an organization.
 
 ## Engagement insights limits
 
