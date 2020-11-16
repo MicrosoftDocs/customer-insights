@@ -48,7 +48,7 @@ Contoso is a company that produces high-quality coffee and coffee machines, whic
 
 ## Task 1 - Ingest Data
 
-<!--need only type of connector specified and transform outlined and can link to the PQ article to add a data source-->
+<!--need only type of connector specified and transform outlined and can link to the PQ article to add a data source--> 
 
 ### Ingest Customer Data from eCommerce Platform
 
@@ -269,7 +269,9 @@ Having ingested the raw data from your data sources into ‘entities’ you will
 
 ## Task 4 - Visualize Model Training Results and Explanation
 
-After the model has successfully completed the training and scoring of the data, you can view the Transaction Churn Model Explanation page by clicking on **view** next to the name of your model:
+After the model has successfully completed the training and scoring of the data, you can view the subscription Churn Model Explanation page by clicking on **view** next to the name of your model:
+
+<!--link to the sub churn article-->
 
 [!div class="mx-imgBorder"]
 ![View the model results](media/model-subs-view.PNG "view model results")
@@ -339,7 +341,7 @@ Observe that the Workflow upon setup, created an Entity. You can see this within
 
 4. Click **Save**
 
-
+<!-- consider adding export to retiention marketing tool -->
 
 Now you have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.  
 
