@@ -13,6 +13,8 @@ manager: shellyha
 
 # Manage environments
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 This article explains how to create a new organization and how to provision an environment.
 
 ## Sign up and create an organization
