@@ -4,7 +4,7 @@ description: Learn how to create and custom reports.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/30/2020
+ms.date: 11/17/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Customer Insights engagement insights capability comes with an interactive custom report builder. You can combine available metrics and dimensions to create a report with the data you need, using the visualizations you want    .
+ A report is a collection of data visualizations to help you understand how users behave. You can use the interactive custom report builder in engagement insights capability to combine metrics and dimensions. Create a report with the data you need, using the visualizations you want.
 
 ## Create a custom report
 
@@ -48,11 +48,11 @@ Dynamics 365 Customer Insights engagement insights capability comes with an inte
 
 1. Go to **Reports** > **Custom** to access the custom report list.
 
-1. In the custom report list, select **...**. 
+1. In the custom report list, 
 
 1. Choose **Edit details** to change the name of the report.
 
-1. Select the name of the report and use the **Add visual** and **Edit** options to add, remove, reposition, or resize the visualizations. 
+1. Select the name of the report and use the **Add visual** and **Edit** options to add, remove, reposition, or resize the visualizations.
 
 1. To change the properties of a visualization, select **...** and then select **Edit visual**.
 
@@ -64,7 +64,7 @@ Dynamics 365 Customer Insights engagement insights capability comes with an inte
 
 1. Go to **Reports** > **Custom** to access the custom report list.
 
-1. In the custom report list, select **...**. 
+1. In the custom report list,
 
 1. Choose **Delete** to remove the report.
 
