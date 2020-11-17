@@ -226,5 +226,8 @@
         - name: Delete and export personal data
           href: engagement-insights/delete-export-personal-data.md
 
+    - name: Service limits
+      href: engagement-insights/quotas.md
+
 - name: Contact support
   href: https://go.microsoft.com/fwlink/?linkid=2145734
