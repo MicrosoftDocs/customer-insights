@@ -4,7 +4,7 @@ description: How to create, rename, and delete a workspaces and environments.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/30/2020
+ms.date: 11/17/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -28,6 +28,7 @@ For example:
 - Create separate environments for test and production.
 - Create separate environments that correspond to specific teams or departments in your organization, containing the relevant events for each audience.
 - Create separate environments for different global branches of your company.
+- Create connections to Customer Insights audience insights capability.
 
 ### Workspaces 
 
