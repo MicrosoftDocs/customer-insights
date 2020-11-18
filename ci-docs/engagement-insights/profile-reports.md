@@ -4,7 +4,7 @@ description: How to create out-of-box profile reports grouped by gender, age, an
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/30/2020
+ms.date: 11/17/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Customer Insights engagement insights can connect to audience insights and show a report with information about unified customer profiles. The report includes the number of profiles you have, grouped by gender, age, and geographical location. 
+A report is a collection of data visualization to help you understand how users behave. By connecting to Customer Insights audience insights, engagement insights can show a report with information about unified customer profiles. The report includes the number of profiles you have, grouped by gender, age, and geographical location.
 
 ## Prerequisites
 
