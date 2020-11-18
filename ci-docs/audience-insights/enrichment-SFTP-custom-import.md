@@ -1,7 +1,7 @@
 ---
 title: Enrichment with SFTP custom import
 description: General information about the SFTP custom import enrichment.
-ms.date: 10/28/2020
+ms.date: 11/18/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -41,7 +41,7 @@ To configure SFTP custom import, the following prerequisites must be met:
 1. Confirm all inputs by selecting **Connect to Custom Import**.
 
    > [!div class="mx-imgBorder"]
-   > ![SFTP_Custom_Import_Configuration_flyout](media/SFTP_Custom_Import_Configuration_flyout.png "SFTP Custom Import Configuration flyout")
+   > ![SFTP Custom Import Configuration flyout](media/SFTP_Custom_Import_Configuration_flyout.png "SFTP Custom Import Configuration flyout")
 
 ## Defining field mappings 
 
