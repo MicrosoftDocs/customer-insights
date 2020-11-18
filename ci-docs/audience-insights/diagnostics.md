@@ -18,11 +18,12 @@ Dynamics 365 Customer Insights is integrated with Microsoft Azure Monitor. With 
 
 ### Prerequisites
 
-To configure the diagnostic setup in Customer Insights, the following prerequisites must be met: 
+To configure the diagnostic setup in Customer Insights, the following prerequisites must be met:
 
 - You have an active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - You have [Administrator](permissions.md#administrator) permissions in Customer Insights.
 - You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can either be an Azure Storage account or Azure Event Hub. For more information, see [Add or remove Azure role assignments using the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+- Ensure that the [Destination requirements](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage or Azure Event Hub are met.
 - You have at least the **Reader** role on the resource group the resource belongs to.
 
 ### Set up diagnostics with Azure Monitor
@@ -52,14 +53,13 @@ To configure the diagnostic setup in Customer Insights, the following prerequisi
 
 ### Remove a destination
 
-1. Go to **System** > **Diagnostics**. 
+1. Go to **System** > **Diagnostics**.
 
 1. Select the diagnostics destination in the list.
 
 1. In the **Actions** column, select the trash bin icon.
 
-1. Confirm the deletion to stop the log forwarding. The resource on the Azure subscription won't be deleted. You can select the link in the Actions column to open the Azure portal for the selected resource and delete it there. 
-
+1. Confirm the deletion to stop the log forwarding. The resource on the Azure subscription won't be deleted. You can select the link in the Actions column to open the Azure portal for the selected resource and delete it there.
 
 ## Log Categories and Schema
 
