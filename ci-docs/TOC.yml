@@ -80,6 +80,8 @@
           href: audience-insights/enrichment-leadspace.md
         - name: Enrich with Experian
           href: audience-insights/enrichment-experian.md
+        - name: Enrich with SFTP custom import
+          href: audience-insights/enrichment-SFTP-custom-import.md
 
     - name: Segments and measures
       items:
@@ -98,6 +100,8 @@
           href: audience-insights/predictions.md
         - name: Predict subscription churn
           href: audience-insights/predict-subscription-churn.md
+        - name: Predict transactional churn
+          href: audience-insights/predict-transactional-churn.md
         - name: Implement custom machine learning models
           href: audience-insights/custom-models.md
         - name: Experiments with Azure Machine learning
@@ -119,6 +123,8 @@
           href: audience-insights/customer-card-add-in.md
         - name: Facebook Ads Manager
           href: audience-insights/export-facebook.md
+        - name: Google Ads
+          href: audience-insights/export-google-ads.md
         - name: LiveRamp
           href: audience-insights/export-liveramp.md
         - name: Mailchimp
