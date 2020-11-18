@@ -121,6 +121,8 @@
           href: audience-insights/customer-card-add-in.md
         - name: Facebook Ads Manager
           href: audience-insights/export-facebook.md
+        - name: Google Ads
+          href: audience-insights/export-google-ads.md
         - name: LiveRamp
           href: audience-insights/export-liveramp.md
         - name: Mailchimp
