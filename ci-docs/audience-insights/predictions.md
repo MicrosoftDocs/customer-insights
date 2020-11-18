@@ -13,6 +13,8 @@ manager: shellyha
 
 # Complete your partial data with predictions
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Predictions lets you easily create predicted values that can enhance your understanding of a customer. On the **Intelligence** > **Predictions** page, you can select **My predictions** to see predictions that you've configured in other parts of audience insights, and allow you to further customize them.
 
 > [!NOTE]

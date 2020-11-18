@@ -1,12 +1,12 @@
 ---
 title: Advanced web SDK scenarios
-author: ruthaisabokhae
 description: Advanced scenarios to consider when instrumenting your website with an SDK.
-ms.author: ruthai
-ms.reviewer: mhart
-ms.date: 10/30/2020
+author: pickwick129
+ms.reviewer: ruthai
+ms.author: v-salash
+ms.date: 11/12/2020
 ms.service: customer-insights
-ms.subservice: engagement-insights
+ms.subservice: engagement-insights 
 ms.topic: conceptual
 ms.manager: shellyha
 ---
@@ -15,11 +15,11 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This page guides you through advanced scenarios to consider when [instrumenting your website](instrument-website.md) with a Dynamics 365 Customer Insights engagement insights capability SDK.
+This article guides you through advanced scenarios to consider when [instrumenting your website](instrument-website.md) with a Dynamics 365 Customer Insights engagement insights capability SDK.
 
 ## Setting user details for your event
 
-The engagement insights capability SDK lets you define user information that can be sent with every event. You can specify the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration.
+The SDK lets you define user information that can be sent with every event. You can specify the user details in a property called `user` (the expected data for this property is the `IUser` object), similar to `src`, `name`, and `cfg` in the code snippet configuration.
 
 The `IUser` object contains the following string properties:
 
@@ -86,7 +86,7 @@ You can also specify custom properties individually by calling the `setProperty(
 
 ## Sending custom events
 
-The SDK can be used to send custom events. You must specify a name for the event and properties to be sent with the event.
+You can use the SDK to send custom events. You must specify a name for the event and properties to be sent with the event.
 
 The following example shows a code snippet tracking a custom event. The "NAME" is the value in the `name` key in the snippet configuration. It's also the variable name in the window object where the SDK is loaded.
 

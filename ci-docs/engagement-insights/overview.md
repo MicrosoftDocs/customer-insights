@@ -4,7 +4,7 @@ description: An introduction of engagement insights capability features and bene
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/30/2020
+ms.date: 11/05/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,7 +15,9 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Engagement insights capability enables organizations to understand interactively, how customers are using their services and products both individually and holistically – through websites, mobile apps and connected products. Engagement insights capability combines behavioral analytics with transactional, demographic, survey, and other data types from Customer Insights to create rich insights that help drive next best actions and personalized experiences. 
+Engagement insights capability enables organizations to understand interactively, how customers are using their services and products – both individually and holistically – through websites, mobile apps, and connected products. 
+
+Engagement insights capability combines behavioral analytics with transactional, demographic, survey, and other data types from Microsoft Dynamics 365 Customer Insights. The combination creates rich insights that help drive next best actions and personalized experiences. 
 
 ## Features and benefits
 
@@ -25,7 +27,8 @@ Engagement insights capability enables organizations to understand interactively
 
 - Custom reports: Use the custom report builder to build your own visualizations. They can be based on metrics and dimensions combinations. Use these visualizations to curate the views you need to answer the business questions at hand.
 
-- Multi-channel analytics: Bring in data from multiple channels. For example, behavioral data from website interactions together with transactional and demographic data about your customers. Use this data to build and view interactive reports that include web activities and customer profiles for rich analytics. Create and export refined events and view your web activities alongside customer profiles, activities, and segments in Customer Insights for a 360-degree view on your customers. 
+- Multi-channel analytics: Bring in data from multiple channels. For example, behavioral data from website interactions with transactional and demographic data about your customers. Use the data to build and view interactive reports that include web activities and customer profiles for rich analytics. Create and export refined events. View web activities with customer profiles, activities, and segments in Customer Insights for a 360-degree view of your customers.
+
 
 ## Next steps
 
