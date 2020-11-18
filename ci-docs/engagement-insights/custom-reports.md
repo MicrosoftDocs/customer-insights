@@ -48,7 +48,7 @@ ms.manager: shellyha
 
 1. Go to **Reports** > **Custom** to access the custom report list.
 
-1. In the custom report list, 
+1. In the custom report list, select **...**. 
 
 1. Choose **Edit details** to change the name of the report.
 
@@ -64,7 +64,7 @@ ms.manager: shellyha
 
 1. Go to **Reports** > **Custom** to access the custom report list.
 
-1. In the custom report list,
+1. In the custom report list,select **...**.
 
 1. Choose **Delete** to remove the report.
 
