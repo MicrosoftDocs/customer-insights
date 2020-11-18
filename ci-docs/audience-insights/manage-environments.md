@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 10/08/2020
+ms.date: 11/10/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -122,6 +122,17 @@ You can edit some of the details of existing environments.
 1. You can update the environment's **Display name**, but you can't change the **Region** or **Type**.
 
 1. If an environment is configured to store data in Azure Data Lake Storage Gen2, you can update the **Account key**. However, you can't change the **Account name** or **Container** name.
+
+## Reset an existing environment
+
+You can reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
+
+1.	Go to **Admin** > **System** > **About**.
+
+2.	Select **Reset**. 
+
+3.	To confirm the deletion, enter the environment name and select **Reset**.
+
 
 ## Delete an existing environment
 
