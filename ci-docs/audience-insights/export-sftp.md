@@ -13,7 +13,7 @@ manager: shellyha
 
 # Connector for SFTP (preview)
 
-Use your customer data in third-party applications by exporting them to a Secure FTP (SFTP) host.
+Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol(SFTP) host.
 
 ## Prerequisites
 
