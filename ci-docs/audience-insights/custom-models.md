@@ -1,8 +1,8 @@
 ---
 title: "Custom machine learning models | Microsoft Docs"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
-ms.date: 08/19/2020
-ms.reviewer: wameng
+ms.date: 11/19/2020
+ms.reviewer: zacook
 ms.service: dynamics-365-ai
 ms.topic: "article"
 author: m-hartmann
@@ -12,11 +12,11 @@ manager: shellyha
 
 # Custom machine learning models
 
-**Intelligence** > **Custom Models** lets you manage workflows based on Azure Machine Learning models. Workflows help you choose the data you want to generate from insights and map the results to your Customer Insights data. [Read the blog about extending Customer Insights with custom models](https://cloudblogs.microsoft.com/dynamics365/it/2019/10/04/extending-dynamics-365-customer-insights-with-azure-ml-based-custom-models/) and the [blog with examples of custom models](https://cloudblogs.microsoft.com/dynamics365/it/2019/10/05/examples-of-extending-dynamics-365-customer-insights-with-azure-ml/).
+**Intelligence** > **Custom models** lets you manage workflows based on Azure Machine Learning models. Workflows help you choose the data you want to generate insights from and map the results to your unified customer data. For more information about building custom ML models, see [Use Azure Machine Learning-based models](azure-machine-learning-experiments.md).
 
 ## Responsible AI
 
-Predictions give substantial capabilities to business to create better customer experiences, improve business capabilities and revenue streams, and define completely new ways of doing business. This value can come at a cost to individuals and society, and we strongly recommend you balance the value of your prediction against the impact it has and biases that may be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai?activetab=pivot1%3aprimaryr6). You can also learn about [techniques and processes](https://docs.microsoft.com/en-us/azure/machine-learning/concept-responsible-ml) specific to Azure Machine Learning.
+Predictions offer capabilities to create better customer experiences, improve business capabilities, and revenue streams. We strongly recommend you balance the value of your prediction against the impact it has and biases that may be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). You can also learn about [techniques and processes for responsible machine learning](https://docs.microsoft.com/azure/machine-learning/concept-responsible-ml) specific to Azure Machine Learning.
 
 ## Prerequisites
 
@@ -94,33 +94,39 @@ Your workflow also runs automatically with every scheduled refresh. Learn more a
 
 Your workflow will be deleted. The [entity](entities.md) that was created when you created the workflow persists, and can be viewed from the **Entities** page.
 
-## Creating a Batch Pipeline in Designer and create parameters
+## Create a batch pipeline and parameters
 
 ### Prerequisites
 
 1. You have an experiment successfully running using the Azure Machine Learning
 
 1. In the experiment screen, select **Create inference pipeline** and select **Batch inference pipeline**
-[!NOTE] Realtime inference pipelines are not currently supported
+   > [!NOTE] 
+   > Real-time inference pipelines are currently not supported.
+
 1. Set the [input parameters](#inputparameters)
+
 1. Set the [output parameters](#outputparameters)
-1. Click **Submit**
-1. Select your existing experiment that you created as a part of the prerequisites
-1. Click **Submit**
+
+1. Select **Submit**.
+
+1. Select your existing experiment that you created as a part of the prerequisites.
+
+1. Select **Submit**.
 
 ### Input Parameters
 
 1. Select an input node of your pipeline and look for the **Parameters** section of your node
 1. Check the **Set as pipeline parameter** box in the Parameters section.
-1. Select a name that you can easily identify with the input requirement. This text will be displayed in the Workflow input creation screen later in your custom workflow.
+1. Select a name to recognize the input requirement. This text will be displayed in the Workflow input creation screen later in your custom workflow.
 1. Repeat this step for every input node.
 
 ### Output parameters
-1. Search for an **Export Data** node in the top left search box, then add it to the end of your pipeline ensuring a link is drawn between your last node and the Export Data node.
+1. Search for an **Export Data** node in the search box and add it to the end of your pipeline. Ensure a link is drawn between your last node and the Export Data node.
 1. Select the Export Data node and configure the datastore type to **Azure Blob Storage**
 1. Select the horizontal ellipses for the Datastore option and select **Add to pipeline parameter**
   1. Set the **Parameter Name** to something you'll recognize when selecting it in the custom workflow definition.
-  1. Click **Save**
+  1. Select **Save**
 1. Select the horizontal ellipses for the Path feature and select **Add to pipeline parameter**
   1. Set the **Parameter Name** to something you'll recognize when selecting it in the custom workflow definition.
-  1. Click **Save**
+  1. Select **Save**
