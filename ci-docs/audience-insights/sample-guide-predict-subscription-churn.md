@@ -1,7 +1,7 @@
 ---
 title: Subscription churn prediction sample guide
 description: Use this sample guide to try out the out of box subscription churn prediction model.
-ms.date: 11/11/2020
+ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,11 +13,11 @@ manager: shellyha
 
 # Subscription churn prediction (preview) sample guide
 
-This guide will walk you through an end to end example of subscription churn prediction in Customer Insights using the sample data provided below. All data used in this guide is not real customer data and is part of the Contoso dataset found in the *Demo* environment within your Customer Insights subscription.
+We'll walk you through an end to end example of subscription churn prediction using the sample data provided below. 
 
 ## Scenario
 
-Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website. They recently started a subscription business for their customers to get coffee on a regular basis. Their goal is to understan which subscribed customers will stop being an active customer and cancel their subscription in the next few months. Knowing which of their customers is **likely to churn**, can help them save a marketin efforts by focusing on retaining them.
+Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website. They recently started a subscription business for their customers to get coffee on a regular basis. Their goal is to understand, which subscribed customers might cancel their subscription in the next few months. Knowing which of their customers is **likely to churn**, can help them save marketing efforts by focusing on keeping them.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 ### Ingest customer data from eCommerce platform
 
-1. Create a data source named **eCommerce**, choose the import option and select the **Text/CSV** connector.
+1. Create a data source named **eCommerce**, choose the import option, and select the **Text/CSV** connector.
 
 1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasscontacts.
 
@@ -50,7 +50,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 ### Ingest customer data from loyalty scheme
 
-1. Create a data source named **LoyaltyScheme**, choose the import option and select the **Text/CSV** connector.
+1. Create a data source named **LoyaltyScheme**, choose the import option, and select the **Text/CSV** connector.
 
 1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.
 
@@ -66,9 +66,9 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. Save the data source.
 
-### Ingest Csubscription information
+### Ingest Subscription information
 
-1. Create a data source named **SubscriptionHistory**, choose the import option and select the **Text/CSV** connector.
+1. Create a data source named **SubscriptionHistory**, choose the import option, and select the **Text/CSV** connector.
 
 1. Enter the URL for eCommerce contacts https://aka.ms/ciadchurnsubscriptionhistory.
 
@@ -91,7 +91,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 ### Ingest customer data from website reviews
 
-1. Create a data source named **Website**, choose the import option and select the **Text/CSV** connector.
+1. Create a data source named **Website**, choose the import option, and select the **Text/CSV** connector.
 
 1. Enter the URL for eCommerce contacts https://aka.ms/ciadchurnsubscriptionhistory.
 
@@ -106,7 +106,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 ## Task 2 - Data unification
 
-Having ingested the raw data from your data sources into ‘entities’ you will now begin the **Map, Match, Merge** process to create a unified customer profile by merging data from each customer profile source. For more information, see [Data unification](data-unification.md).
+After ingesting the data we now begin the **Map, Match, Merge** process to create a unified customer profile. For more information, see [Data unification](data-unification.md).
 
 ### Map
 
@@ -164,7 +164,7 @@ Having ingested the raw data from your data sources into ‘entities’ you will
 
 ## Task 3 - Configuring the Out of Box Subscription Churn prediction
 
-With the unified customer profiles in plance, we can now run the subscription churn prediction. For detailed steps, see the [Subscription churn prediction (preview)](predict-subscription-churn.md) article. 
+With the unified customer profiles in place, we can now run the subscription churn prediction. For detailed steps, see the [Subscription churn prediction (preview)](predict-subscription-churn.md) article. 
 
 1. Go to **Intelligence** > **Discover** and select to use the **Customer churn model**.
 
@@ -174,9 +174,9 @@ With the unified customer profiles in plance, we can now run the subscription ch
 
 1. Define two conditions for the churn model:
 
-   * **Days since subscription ended**: **at least 60** days. If a customer has not renewed their subscription for this long after their subscription ended, then they are considered churned. 
+   * **Days since subscription ended**: **at least 60** days. If a customer doesn't renew the subscription in this period after their subscription ended, they are considered churned. 
 
-   * **Churn definition**: **at least 93** days. The model will try to predict this far into the future which customers may or may not churn. The further in the future you look, the less accurate the results.
+   * **Churn definition**: **at least 93** days. The duration the model predict which customers might churn. The further in the future you look, the less precise the results.
 
      :::image type="content" source="media/model-subs-levers.PNG" alt-text="Select the model levers Prediction Window and Churn Definition.":::
 
@@ -197,13 +197,13 @@ With the unified customer profiles in plance, we can now run the subscription ch
 
 1. Select **Next** to set the model schedule.
 
-   The model needs to train with certain frequency so that it learns new patterns when there is new data ingested. For this example, select **Monthly**.
+   The model needs to train regularly to learn new patterns when there is new data ingested. For this example, select **Monthly**.
 
 1. After reviewing all the details, select **Save and Run**.
 
-## Task 4 - View model results and explanations
+## Task 4 - Review model results and explanations
 
-After the model has successfully completed the training and scoring of the data, you can view the subscription churn model explanations. For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).
+Let the model complete the training and scoring of the data. You can now review the subscription churn model explanations. For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).
 
 ## Task 5 - Create a segment of high churn-risk customers
 

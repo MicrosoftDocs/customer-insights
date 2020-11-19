@@ -1,14 +1,14 @@
 ---
-title: "Transactional churn prediction Sample Guide | Microsoft Docs"
-description: "Use this sample guide to try out the Out of Box Transactional Churn prediction (preview) model."
-ms.date: 10/30/2020
+title: Transactional churn prediction sample guide
+description: Use this sample guide to try out the out of box transactional churn prediction model.
+ms.date: 11/19/2020
 ms.reviewer: digranad
-ms.service: dynamics-365-ai
-ms.topic: "article"
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-
 ---
 
 # Transactional churn prediction (preview) Sample Guide
