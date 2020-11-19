@@ -114,13 +114,11 @@ Having ingested the raw data from your data sources into ‘entities’ you will
 
 1. Select the entities that represent the customer profile – **eCommerceContacts** and **loyCustomers**. 
 
-   [!div class="mx-imgBorder"]
-   ![Unify eCommerce and Loyalty](media/unify-ecommerce-loyalty.PNG "unify ecommerce and loyalty datasources")
+   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="unify ecommerce and loyalty datasources.":::
 
 1. Select **ContactId** as the primary key for **eCommerceContacts** and **LoyaltyID** as the primary key for **loyCustomers**.
 
-   [!div class="mx-imgBorder"]
-   ![Unify LoyaltyId as primary key](media/unify-loyaltyid.PNG "unify loyaltyid primary key for loycustomers")
+   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="Unify LoyaltyId as primary key.":::
 
 ### Match
 
@@ -130,8 +128,7 @@ Having ingested the raw data from your data sources into ‘entities’ you will
 
 1. In the **Entity 2** drop-down list, choose **loyCustomers : LoyaltyScheme** and include all records.
 
-   [!div class="mx-imgBorder"]
-   ![Unify match eCommerce and Loyalty](media/unify-match-order.PNG "unify ecommerce and loyalty")
+   :::image type="content" source="media/unify-match-order.PNG" alt-text="Unify match eCommerce and Loyalty.":::
 
 1. Select **Create a new rule**
 
@@ -146,11 +143,11 @@ Having ingested the raw data from your data sources into ‘entities’ you will
 
    * Add a second condition for email address by selecting **Add Condition**
    * For entity eCommerceContacts, choose **EMail** in drop-down.
-   * For entity loyCustomers, choose **EMail** in Field drop-down - Leave Normalize blank 
+   * For entity loyCustomers, choose **EMail** in the drop-down. 
+   * Leave Normalize blank. 
    * Set **Precision Level**: **Basic** and **Value**: **High**.
 
-   [!div class="mx-imgBorder"]
-   ![Unify match rule for name and email](media/unify-match-rule.PNG "unify match rule with name and email")
+   :::image type="content" source="media/unify-match-rule.PNG" alt-text="Unify match rule for name and email.":::
 
 7. Select **Save** and **Run**.
 
@@ -160,8 +157,7 @@ Having ingested the raw data from your data sources into ‘entities’ you will
 
 1. On the **ContactId** for **loyCustomers** entity, change the display name to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.
 
-   [!div class="mx-imgBorder"]
-   ![Rename contactid ](media/unify-merge-contactid.PNG "rename contactid from loyaltyid")
+   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="rename contactid from loyaltyid.":::
 
 1. Select **Save** and **Run** to start the Merge Process.
 
@@ -172,49 +168,38 @@ With the unified customer profiles in plance, we can now run the subscription ch
 
 1. Go to **Intelligence** > **Discover** and select to use the **Customer churn model**.
 
-1.. Select the **Subscription** option and select **Get started**.
+1. Select the **Subscription** option and select **Get started**.
 
-   [!div class="mx-imgBorder"]
-   ![Setup Subscription Churn Model](media/select-subscription-churn.PNG "select subscription churn model")
+1. Name the model **OOB Subscription Churn Prediction** and the output entity **OOBSubscriptionChurnPrediction**.
 
-4. Name the model **OOB Subscription Churn Prediction** and the output entity **OOBSubscriptionChurnPrediction**.
-
-   [!div class="mx-imgBorder"]
-   ![Name the model](media/model-subs-name.PNG "add name to the model")
-
-5. Define two conditions for the churn model:
+1. Define two conditions for the churn model:
 
    * **Days since subscription ended**: **at least 60** days. If a customer has not renewed their subscription for this long after their subscription ended, then they are considered churned. 
 
    * **Churn definition**: **at least 93** days. The model will try to predict this far into the future which customers may or may not churn. The further in the future you look, the less accurate the results.
 
-     [!div class="mx-imgBorder"]
-     ![Select the model levers Prediction Window and Churn Definition](media/model-subs-levers.PNG "select model prediction window and churn definition")
+     :::image type="content" source="media/model-subs-levers.PNG" alt-text="Select the model levers Prediction Window and Churn Definition.":::
 
-6. Select **Add required data** and select **Add data** for subscription history.
+1. Select **Add required data** and select **Add data** for subscription history.
 
-7. Add the **Subscription : SubscriptionHistory** entity and map the fields from eCommerce to the corresponding fields required by the model.
+1. Add the **Subscription : SubscriptionHistory** entity and map the fields from eCommerce to the corresponding fields required by the model.
 
-8. Join the **Subscription : SubscriptionHistory** entity with **eCommerceContacts : eCommerce**, name the relationship **eCommerceSubscription**.
+1. Join the **Subscription : SubscriptionHistory** entity with **eCommerceContacts : eCommerce**, name the relationship **eCommerceSubscription**.
 
-   [!div class="mx-imgBorder"]
-   ![Join eCommerce entities](media/model-subscription-join.PNG "join ecommerce entities")
+   :::image type="content" source="media/model-subscription-join.PNG" alt-text="Join eCommerce entities.":::
 
-9. Under Customer Activities, add the **webReviews : Website** entity and map the fields from webReviews to the corresponding fields required by the model. 
+1. Under Customer Activities, add the **webReviews : Website** entity and map the fields from webReviews to the corresponding fields required by the model. 
+   - Primary key: ReviewId
+   - Timestamp: ReviewDate
+   - Event: ReviewRating
 
-   [!div class="mx-imgBorder"]
-   ![Map the Website Review entity](media/model-map-website-entity.PNG "map website review entity to model input")
+1. Configure an activity for website reviews. Select the activity **Review** and join the **webReviews : Website** entity with **eCommerceContacts : eCommerce**.
 
-11. Configure an activity for website reviews. Select the activity **Review** and join the **webReviews : Website** entity with **eCommerceContacts : eCommerce**.
+1. Select **Next** to set the model schedule.
 
-    [!div class="mx-imgBorder"]
-    ![Join eCommerce and webReviews entities](media/model-review-activity.PNG "join ecommerce entities")
+   The model needs to train with certain frequency so that it learns new patterns when there is new data ingested. For this example, select **Monthly**.
 
-12. Select **Next** to set the model schedule.
-
-    The model needs to train with certain frequency so that it learns new patterns when there is new data ingested. For this example, select **Monthly**.
-
-13. After reviewing all the details, select **Save and Run**.
+1. After reviewing all the details, select **Save and Run**.
 
 ## Task 4 - View model results and explanations
 
@@ -226,13 +211,16 @@ Running the production model creates a new entity that you can see in **Data** >
 
 You can create a new segment based on the entity created by the model.
 
-1.  go to **Segments**. Select **New** and choose **Create from** > **Intelligence**. 
+1.  Go to **Segments**. Select **New** and choose **Create from** > **Intelligence**. 
 
-   [!div class="mx-imgBorder"]
-   ![Creating a segment with the model output](media/segment-intelligence.PNG "Creating a segment with the model output")
+   :::image type="content" source="media/segment-intelligence.PNG" alt-text="Creating a segment with the model output.":::
 
-
-1. Select the **OOBSubscriptionChurnPrediction** endpoint and define the segment you like to create.
+1. Select the **OOBSubscriptionChurnPrediction** endpoint and define the segment: 
+   - Field: ChurnScore
+   - Operator: greater than
+   - Value: 0.6
+   
+   :::image type="content" source="media/segment-setup-subs.PNG" alt-text="Set up subscription churn segment.":::
 
 You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.
 
