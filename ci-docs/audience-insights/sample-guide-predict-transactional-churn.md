@@ -11,112 +11,77 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Transactional churn prediction (preview) Sample Guide
+# Transactional churn prediction (preview) sample guide
 
 This guide will walk you through an end to end example of Transactional Churn prediction in Customer Insights using the data provided below. All data used in this guide is not real customer data and is part of the Contoso dataset found in the *Demo* environment within your Customer Insights Subscription.
 
-
-
 ## Scenario
 
-Contoso is a company that produces high-quality coffee and coffee machines, which they retail through their Contoso Coffee Website. Their goal is to know which customers who typically purchase their products on a regular basis, will stop being an active customer within the next 60 days. Knowing which of their customers is **likely to churn**, can help them save a substantial amount of investment by knowing which customers to focus on and retain them.
-
-
+Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website. Their goal is to know which customers who typically purchase their products on a regular basis, will stop being active customers in the next 60 days. Knowing which of their customers is **likely to churn**, can help them save marketing efforts by focusing on keeping them.
 
 ## Prerequisites
 
 - At least [Contributor permissions](permissions.md) in Customer Insights.
-- For best results, it is recommended that you do this exercise in a new environment.
-
-## Data Sources
-
-**eCommerce Contacts** 
-
-* Extract of Customers who have made an online purchase
-  Text/CSV - https://aka.ms/ciadclasscontacts
-
-**Online Purchases**
-
-* Extract of purchases made via the Contoso Retail Website
-  Text/CSV - https://aka.ms/ciadclassonline
-
-**Loyalty Scheme** 
-
-* Extract of Customers who’ve signed-up for the Contoso Retail Loyalty Card Scheme 
-  Text/CSV - https://aka.ms/ciadclasscustomerloyalty
-
-
+- We recommend that you implement the following steps [in a new environment](manage-environments.md).
 
 ## Task 1 - Ingest Data
 
-### Ingest Customer Data from eCommerce Platform
+Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically. The following information assumes you familiarized with ingesting data in general. 
 
-1. Sign-in to Customer Insights (http://home.ci.ai.dynamics.com) and select your Environment from the drop-down in the top right-hand corner.
+### Ingest customer data from eCommerce platform
 
-2. Within Customer Insights, expand **Data** on the left menu and click **Data Sources**.
+1. Create a data source named **eCommerce**, choose the import option, and select the **Text/CSV** connector.
 
-3. Click **Add Data Sources**.
+1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasscontacts.
 
-4. Name the source **eCommerce**, then click **Next**
+1. While editing the data, select **Transform** and then **Use First Row as Headers**.
 
-   [!div class="mx-imgBorder"]
-   ![Adding eCommerce Data Source](media/add-source-ecommerce.PNG "adding data source ecommerce")
+1. Update the datatype for the columns listed below:
 
-5. Select the **Text/CSV** Connector.
-
-6. Enter the URL for eCommerce Contacts https://aka.ms/ciadclasscontacts and click **Next**.
-
-   [!div class="mx-imgBorder"]
-   ![Adding eCommerce contacts URL](media/ecommerce-contacts-url.PNG "adding data source ecommerce")
-
-7. While editing the data, click on **Transform** and then **Use First Row as Headers**.
-
-   [!div class="mx-imgBorder"]
-   ![Use first row of data as header](media/ecommerce-header.PNG "use first row as headers")
-
-8. Update the datatype for the columns listed below:
-
-   - **Column:** DateOfBirth	**New Data Type:** Date
-   - **Column:** CreatedOn	  **New Data Type:** Date/Time/Zone
+   - **DateOfBirth**: Date
+   - **CreatedOn**: Date/Time/Zone
 
    [!div class="mx-imgBorder"]
    ![Transform DoB to Date](media/ecommerce-dob-date.PNG "transform date of birth to date")
 
-9. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
+1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
 
-
+1. Save the data source.
 
 ### Ingest Online Purchase Data
 
-1. Before clicking **Save**, click on **Get Data** to add another data set to this same **eCommerce** data source.
+1. Add another data set to the same **eCommerce** data source. Choose the **Text/CSV** connector again.
 
-   [!div class="mx-imgBorder"]
-   ![Add another source of data](media/ecommerce-add-data.PNG "add a second data source to ecommerce")
+1. Enter the URL for **Online Purchases** data https://aka.ms/ciadclassonline.
 
-2. Select again the **Text/CSV** Connector. Enter the URL for **Online Purchases** data, https://aka.ms/ciadclassonline, and click **Next.** 
+1. While editing the data, select **Transform** and then **Use First Row as Headers**.
 
-3. While editing the data, click on **Transform** and then **Use First Row as Headers**.
+1. Update the datatype for the columns listed below:
 
-4. Update the datatype for the columns listed below:
+   - **PurchasedOn**: Date/Time
+   - **TotalPrice**: Currency
+   
+1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommercePurchases**.
 
-   - **Column:** PurchasedOn **New Data Type:** Date/Time
-   - **Column:** TotalPrice  	  **New Data Type:** Currency
+1. Save the data source.
 
-5. Name your query **eCommercePurchases** and click **Save**
+### Ingest customer data from loyalty schema
 
+1. Create a data source named **LoyaltyScheme**, choose the import option, and select the **Text/CSV** connector.
 
+1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.
 
-### Ingest Customer Data from Loyalty Scheme
+1. While editing the data, select **Transform** and then **Use First Row as Headers**.
 
-1. Click **Add Data Source** and name the source **LoyaltyScheme**, then click **Next button**.
-2. Select the **Text/CSV** Connector. Enter the URL for **Loyalty Contacts** data, https://aka.ms/ciadclasscustomerloyalty, and click **Next.** 
-3. While editing the data, click on **Transform** and then **Use First Row as Headers**.
-4. Update the datatype for the columns listed below:
-   - **Column:** DateOfBirth       **New Data Type:** Date
-   - **Column:** RewardsPoints  **New Data Type:** Whole Number
-   - **Column:** CreatedOn     	**New Data Type:** Date/Time
-5. Rename your data source from **Query** to **loyCustomers** and click **Save**.
+1. Update the datatype for the columns listed below:
 
+   - **DateOfBirth**: Date
+   - **RewardsPoints**: Whole Number
+   - **CreatedOn**: Date/Time
+
+1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
+
+1. Save the data source.
 
 
 ## Task 2 - Data Unification

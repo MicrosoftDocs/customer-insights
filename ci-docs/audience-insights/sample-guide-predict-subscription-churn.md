@@ -48,7 +48,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. Save the data source.
 
-### Ingest customer data from loyalty scheme
+### Ingest customer data from loyalty schema
 
 1. Create a data source named **LoyaltyScheme**, choose the import option, and select the **Text/CSV** connector.
 
