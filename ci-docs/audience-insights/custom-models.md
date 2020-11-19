@@ -20,13 +20,13 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 ## Prerequisites
 
-- Currently, this feature only supports web services published through [Azure Machine Learning Classic](https://studio.azureml.net) and **batch** pipelines deployed through the methods [described here](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=azcli).
+- Currently, this feature only supports web services published through [Azure Machine Learning Classic](https://studio.azureml.net) and batch pipelines deployed through the methods described in [Deploy models with Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where?tabs=azcli).
 
-- You need an Azure Data Lake Storage Gen2 storage account associated with your Azure Studio instance to use this feature. For more information, see [Create an Azure Data Lake Storage Gen2 storage account](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+- You need an Azure Data Lake Gen2 storage account associated with your Azure Studio instance to use this feature. For more information, see [Create an Azure Data Lake Storage Gen2 storage account](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account)
 
 ## Add a new workflow
 
-1. Go to **Intelligence** > **Custom Models** and select **New Workflow**.
+1. Go to **Intelligence** > **Custom models** and select **New workflow**.
 
 1. Give your custom model a recognizable name in the **Name** field.
 
@@ -37,24 +37,24 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 1. If your Azure Machine Learning subscription is in a different tenant than Customer Insights, select **Sign in** with your credentials for the selected organization.
 
-1. Select the Azure Machine Learning workspace associated with your web service. There are two sections listed, one for AMLv1 (Azure Machine Learning Classic) and AMLv2 (Azure Machine Learning). If you're not sure which workspace is the right one, select "Any".
+1. Select the **Workspaces** associated with your web service. There are two sections listed, one for Azure Machine Learning v1 (Azure Machine Learning Classic) and Azure Machine Learning v2. If you're not sure which workspace is the right one, select **Any**.
 
 1. Choose the [web service or pipeline you've published using Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service) in the **Web service that contains your model** dropdown. Then, select **Next**.
 
-1. For each **Web service input**, select the matching **Entity** from Customer Insights and select **Next**.
+1. For each **Web service input**, select the matching **Entity** from audience insights and select **Next**.
 
    > [!div class="mx-imgBorder"]
    > ![Configure a workflow](media/intelligence-screen2.png "Configure a workflow")
 
-1. Output mapping
-   1. AMLv1
+1. In the **Output mapping** step, set the following properties:
+   - Azure Machine Learning v1
       1. Enter the output **Entity name** you want web service output results to flow into.
-   1. AMLv2
+   - Azure Machine Learning v2
       1. Enter the output **Entity name** you want pipeline output results to flow into.
-      1. Select the **Output data store parameter name** from your pipeline that aligns to your pipeline output node. You can read more about creating parameters for output nodes [here](custom-model-parameterization.md).
-      1. Select the **Output Path parameter name** from your pipeline that aligns to your pipeline output node. You can read more about creating parameters for output nodes [here](custom-model-parameterization.md).
+      1. Select the **Output data store parameter name** from your [pipeline output node](#output-parameters).
+      1. Select the **Output Path parameter name** from your [pipeline output node](#output-parameters).
 
-1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers in Customer Insights and select **Save**.
+1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
 
 1. You'll see the **Workflow Saved** screen with details about the workflow.
 
@@ -68,13 +68,13 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 1. For each **Web service input**, select the matching **Entity** from Customer Insights.  Then, select **Next**.
 
-1. Output mapping
-   1. AMLv1
+1. In the **Output mapping** step, set the following properties:
+   - Azure Machine Learning v1
       1. Enter the output **Entity name** you want web service output results to flow into.
-   1. AMLv2
+   - Azure Machine Learning v2
       1. Enter the output **Entity name** you want pipeline output results to flow into.
-      1. Select the **Output data store parameter name** from your pipeline that aligns to your pipeline output node. You can read more about creating parameters for output nodes [here](custom-model-parameterization.md).
-      1. Select the **Output Path parameter name** from your pipeline that aligns to your pipeline output node. You can read more about creating parameters for output nodes [here](custom-model-parameterization.md).
+      1. Select the **Output data store parameter name** from your [pipeline output node](#output-parameters).
+      1. Select the **Output Path parameter name** from your [pipeline output node](#output-parameters).
 
 1. Select the matching attribute from the **Customer ID in results** drop-down list.  When you're done, select **Save**.
 
@@ -96,17 +96,15 @@ Your workflow will be deleted. The [entity](entities.md) that was created when y
 
 ## Create a batch pipeline and parameters
 
-### Prerequisites
+If you have an experiment running using Azure Machine Learning, you can create an betach inference pipeline.
 
-1. You have an experiment successfully running using the Azure Machine Learning
-
-1. In the experiment screen, select **Create inference pipeline** and select **Batch inference pipeline**
+1. In Azure Machine Learning, on the experiment page, select **Create inference pipeline** and select **Batch inference pipeline**
    > [!NOTE] 
    > Real-time inference pipelines are currently not supported.
 
-1. Set the [input parameters](#inputparameters)
+1. Set the [input parameters](#input-parameters)
 
-1. Set the [output parameters](#outputparameters)
+1. Set the [output parameters](#output-parameters)
 
 1. Select **Submit**.
 
@@ -117,16 +115,28 @@ Your workflow will be deleted. The [entity](entities.md) that was created when y
 ### Input Parameters
 
 1. Select an input node of your pipeline and look for the **Parameters** section of your node
+
 1. Check the **Set as pipeline parameter** box in the Parameters section.
+
 1. Select a name to recognize the input requirement. This text will be displayed in the Workflow input creation screen later in your custom workflow.
+
 1. Repeat this step for every input node.
 
 ### Output parameters
+
 1. Search for an **Export Data** node in the search box and add it to the end of your pipeline. Ensure a link is drawn between your last node and the Export Data node.
+
 1. Select the Export Data node and configure the datastore type to **Azure Blob Storage**
+
 1. Select the horizontal ellipses for the Datastore option and select **Add to pipeline parameter**
-  1. Set the **Parameter Name** to something you'll recognize when selecting it in the custom workflow definition.
-  1. Select **Save**
+
+1. Set the **Parameter Name** to something you'll recognize when selecting it in the custom workflow definition.
+
+1. Select **Save**
+
 1. Select the horizontal ellipses for the Path feature and select **Add to pipeline parameter**
-  1. Set the **Parameter Name** to something you'll recognize when selecting it in the custom workflow definition.
-  1. Select **Save**
+
+1. Set the **Parameter Name** to something you'll recognize when selecting it in the custom workflow definition.
+
+1. Select **Save**
+1. 
