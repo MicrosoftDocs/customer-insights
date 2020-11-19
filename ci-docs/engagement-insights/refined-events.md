@@ -4,7 +4,7 @@ description: How to create and modify refined events.
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/30/2020
+ms.date: 11/17/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,9 +15,9 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Events represent user behavior. A base event records when a user views a page (view event) or interacts with content (action event). A refined event is a virtual view of a base event. Generally, use refined events to reduce the scope of a base event for [export](export-events.md) or to remove properties that aren't necessary for exposure or when [exporting events](export-events.md).
+Events represent user behavior. A *base* event records when a user views a page (view event) or interacts with content (action event). A *refined* event is a virtual view of a base event. You define refined events by removing and adding properties or by filtering events based on property values.
 
-You can define refined events by removing and adding properties or by filtering events based on property values.
+Generally, use refined events to reduce the scope of a base event for [export](export-events.md) or to remove properties that aren't necessary for exposure.
 
 ## Create refined events
 
