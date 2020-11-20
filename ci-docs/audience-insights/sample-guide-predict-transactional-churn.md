@@ -167,7 +167,7 @@ With the unified customer profiles in place, we can now run the subscription chu
 
 1. Join the **eCommercePurchases : eCommerce** entity with **eCommerceContacts : eCommerce**.
 
-   :::image type="content" source="media/model-map-purchase-join.PNG" alt-text="Join eCommerce entities.":::
+   :::image type="content" source="media/model-purchase-join.PNG" alt-text="Join eCommerce entities.":::
 
 1. Select **Next** to set the model schedule.
 
