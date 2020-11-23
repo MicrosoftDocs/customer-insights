@@ -37,7 +37,7 @@ Before creating a new service principal for audience insights, check if it alrea
    
    :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="Screenshot showing the existing service principal.":::
    
-6. If no results are returned, [create a new service principal](#create-a-new-service-princpial).
+6. If no results are returned, create a new service principal.
 
 ### Create a new service principal
 
