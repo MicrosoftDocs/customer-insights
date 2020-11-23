@@ -68,7 +68,7 @@ To create an environment:
    > We support only Azure Data Lake Gen2 storage accounts from the same Azure region you selected when creating the environment.
    > We support only Azure Data Lake Gen2 Hierarchical Name Space (HNS) enabled storage accounts.
 
-   - For the Azure Data Lake Storage Gen2 option, select either Azure Resource based option or Azure Subscription based option from the "Connect your storage account using" field and fill in the details accordingly. Refer to this [document](connect-ADLS-SPN.md#enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights) on what are the prerequisites, how to capture the Azure artifact details and how to fill in. The **Container** name can't be changed and will be defaulted to "customerinsights".
+   - For the Azure Data Lake Storage Gen2 option, you can choose between a resource-based option and a subscription-based option. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-ADLS-SPN.md). The **Container** name can't be changed and will be "customerinsights".
    
    - If you want to use [predictions](predictions.md), enter the Common Data Service instance URL in the **Server address** field under **Use predictions**.
 
