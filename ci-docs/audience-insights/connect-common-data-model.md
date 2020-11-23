@@ -35,7 +35,7 @@ This article provides information on how to ingest data from a Common Data Model
 
 3. Select **Connect to a Common Data Model folder**, enter a **Name** for the data source and select **Next**.
 
-5. Select an option from the "Connect your storage account using" field and fill in the details accordingly. Refer to this [document](connect-ADLS-SPN.md#enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights) on what are the prerequisites, how to cpature the Azure artifact details and how to fill in. Enter the **Container** information and select **Next**.
+5. Select either Azure Resource based option or Azure Subscription based option from the "Connect your storage account using" field and fill in the details accordingly. Refer to this [document](connect-ADLS-SPN.md#enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights) on what are the prerequisites, how to capture the Azure artifact details and how to fill in. Enter the **Container** information and select **Next**.
    > [!div class="mx-imgBorder"]
    > ![Dialog box to enter connection details for Azure Data Lake](media/enter-new-storage-details.png)
 
