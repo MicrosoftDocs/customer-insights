@@ -7,83 +7,52 @@ ms.subservice: audience-insights
 ms.topic: conceptual
 author: adkuppa
 ms.author: adkuppa
-ms.reviewer: adkuppa
-manager: shefym
+ms.reviewer: mhart
+manager: shellyha
 ---
 
-# Connect to an Azure Data Lake Storage Gen2 account by provisioning Audience Insights Azure AD Service Principal Name (SPN) to your Azure AD tenant.
+# Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal
 
-This article provides information on how to connect to an Azure Data Lake Storage Gen2 account by provisioning Audience Insights Azure AD Service Principal Name (SPN) to your Azure AD tenant and not using storage account keys.
+Automated tools that use Azure services should always have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. This article provides information on how to connect audience insights with an Azure Data Lake Storage Gen2 account by an Azure service pricincap instead of storage account keys. 
+In addition to increased security when connecting with a service principal, you won't have to update your account keys if the are updated.
 
-This approach can be followed to connect to any new storage account or update your existing account keys based stroage account connections to connect using the Azure Resource Id or the Azure Subscription details. 
+You need admin permissions for your Azure subscription to create the service princpial.
 
-The main advantages of connecting to a storage account using the Service Principal based approach is
+## Create Azure service principal for audience insights
 
-1. This is in guidance and alignment with Azure security design principles to access Azure resources using resource information
+Before creating a new service principal for audience insights, check if it already exiss in your organization.
 
-2. Azure account key recycling is not secure and with this approach there will be no need to update the account keys in Audience Insights whenever account keys are updated on the Azure AD.
+### Look for an existing service principal
 
-### This process involves three steps
+1. Go to the [Azure admin portal(]https://portal.azure.com) and sign in to your organization.
 
-1. Provision Audience Insights Azure AD Service Principal in your Azure AD tenant
+2. Select **Azure Active Directory** from the Azure services.
 
-2. Grant permissions to the Audience Insights Azure AD Service Principal access on your storage account.
+3. Under **Manage**, select **Enterprise Applications**.
 
-3. Enter the Azure Resource Id or the Azure Subscription details in the storage account attachment to Audience Insights.
+4. Search for the audience insights first party application ID `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` or the name `Dynamics 365 AI for Customer Insights`.
 
-## Provision Audience Insights Azure AD Service Principal in your Azure AD tenant
-
-### Prerequisites
-- You should be a tenant admin to provision the Audience Insights Azure AD Service Principal in your Azure AD tenant.
-
-As a first step, check if Audience Insights Service Principal is already provisioned on your tenant by following the below steps.
-
-1. Go to https://portal.azure.com and login to your tenant.
-
-2. Select "Azure Active Directory" from the Azure Services to go to the tenant overview page.
-
-3. From the left side navigation under "Manage", select "Enterprise Applications".
-
-4. Search for the Audience Insights first party application id "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" or the name "Dynamics 365 AI for Customer Insights".
-
-5. If you find a matching record on either of the values, it means that the Audience Insights Service Principal is already provisioned in your tenant, and you can skip the steps to manually provision it.
-   > [!div class="mx-imgBorder"]
-   > ![Screen showing how to add a role assignment in Azure portal](media/ADLS-SP-AlreadyProvisioned.png)
+5. If you find a matching record, it means that the service principal for audience insights exists. You don't need to create it again..
    
-6. If no results are returned, follow the below steps to manually provision the Audience Insights Service Principal.
+   :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="Screenshot showing the existing service principal.":::
+   
+6. If no results are returned, [create a new service princpial](#create-a-new-service-princpial).
 
-### Instructions
+### Create a new service princpial
 
-1. Install the latest version of the “Azure Active Directory PowerShell for Graph” on your machine.
-- On your machine, select the Windows key on your keyboard and search for “Windows PowerShell” and select “Run as Administrator”.
+1. Install the latest version of the **Azure Active Directory PowerShell for Graph**. For more information, see [Install Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+   - On your PC, select the Windows key on your keyboard and search for **Windows PowerShell** and **Run as Administrator**.
+   
+   - In the PowerShell window that opens, enter `Install-Module AzureAD`.
 
-- In the PowerShell window that opens, type in / copy paste this instruction.
+2. Create the  service principal for audience insights with the Azure AD PowerShell Module.
+   - In the PowerShell window, enter `Connect-AzureAD -TenantId "[your tenant ID]" -AzureEnvironmentName Azure`. Replace “your tenant ID” with the actual ID of your tenant where you want create the service princpial. The environment name parameter `AzureEnvironmentName` is optional.
   
-  Install-Module AzureAD
-  
-- Refer to this document for more information on installing the PowerShell for Azure AD https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0
+   - Enter `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. This command create the service principal for audience insights on the selected tenant.  
 
-2. Tenant specific Service Principal Provisioning with Azure AD PowerShell Module
-- In the PowerShell window opened from step #1 above, copy/paste the following command to provision Audience Insights Service Principal in your tenant. Replace “The tenant id” with your tenant where you want provision the CI Service Principal.
+## Grant permissions to the service princpial to access the storage account
 
-- The environment name parameter ‘AzureEnvironmentName’ is an optional field so you can skip this parameter if you choose to.
-
-  Connect-AzureAD -TenantId "[your tenant Id]" -AzureEnvironmentName Azure
-  
-- Provision the Audience Insights App ID “0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff” and Display Name "Dynamics 365 AI for Customer Insights" by the following command.
-  
-  New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"
-  
-- You might be asked to login to the tenant using the user account from the tenant.
-
-## Grant permissions to the Audience Insights Service Principal to access the storage account
-
-### Prerequisites
-- You should be a an admin/co-admin/owner  on the storage account to grant required roles for the Audience Insights Service Principal on the storage account.
-
-### Instructions
-
-1. Once the Audience Insights Service Principal is granted access as above, go to your Azure portal to manually grant permissions to the Audience Insights SP on the storage account you wish to attach to Audience Insights.
+Go to the Azure portal to grant permissions to the service principal for the storage account you want to use in audience insights.
 
 2. Go to https://portal.azure.com and login to your tenant.
 
