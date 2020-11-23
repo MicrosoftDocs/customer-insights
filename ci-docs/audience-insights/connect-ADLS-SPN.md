@@ -13,8 +13,7 @@ manager: shellyha
 
 # Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal
 
-Automated tools that use Azure services should always have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. This article provides information on how to connect audience insights with an Azure Data Lake Storage Gen2 account by an Azure service pricincap instead of storage account keys. 
-In addition to increased security when connecting with a service principal, you won't have to update your account keys if the are updated.
+Automated tools that use Azure services should always have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. Read on to learn how to connect audience insights with an Azure Data Lake Storage Gen2 account using an Azure service principal instead of storage account keys. 
 
 You can use the service principal to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create a new or update an existing environment](manage-environments.md#create-an-environment-in-an-existing-organization).
 
@@ -58,7 +57,7 @@ Go to the Azure portal to grant permissions to the service principal for the sto
 
 1. Go to the [Azure admin portal](https://portal.azure.com) and sign in to your organization.
 
-1. Open the storage account you want the service princpial for audience insights to have access to.
+1. Open the storage account you want the service principal for audience insights to have access to.
 
 1. Select **Access control (IAM)** from the navigation pane and select **Add** > **Add role assignment**.
    
@@ -75,7 +74,7 @@ It can take up to 15 minutes to propagate the changes.
 
 ## Enter the Azure Resource ID or the Azure Subscription details in the storage account attachment to Audience Insights.
 
-You can attach an Azure Data Lake storage account in audience insights to either [store output data](manage-environments.md) or [use it as a data source](connect-common-data-service-lake.md). Choosing the Azure Data Lake option lets you choose between a resource-based or a subscription-based based approach.
+Attach an Azure Data Lake storage account in audience insights to [store output data](manage-environments.md) or [use it as a data source](connect-common-data-service-lake.md). Choosing the Azure Data Lake option lets you choose between a resource-based or a subscription-based based approach.
 
 <!-- move the below sections to the CDS and Manage Environment articles?-->
 
@@ -92,8 +91,8 @@ Follow the below steps to provide the required information on the selected appro
 
 <!--confusing, jumpls between portal and CI-->
 
-1. In audiience insights, insert the resource ID in the resource field displayed in the storage account connection screen.
-   :::image type="content" source="media/ADLS-SP-ResourceIdConnection.png" alt-text="Enter the storage account resource id information.":::   
+1. In audience insights, insert the resource ID in the resource field displayed in the storage account connection screen.
+   :::image type="content" source="media/ADLS-SP-ResourceIdConnection.png" alt-text="Enter the storage account resource ID information.":::   
    
 1. Continue with the remaining steps in audience insights to attach the storage account.
 
@@ -106,6 +105,6 @@ Follow the below steps to provide the required information on the selected appro
 1. Copy the **Subscription**, **Resource group**, and the **Name** of the storage account.
 
 1. In audience insights, insert the copied values or for the corresponding fields when attaching the storage account.
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Enter the storage account resource id information.":::
+   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Enter the storage account resource ID information.":::
    
 1. Continue with the remaining steps in audience insights to attach the storage account.
