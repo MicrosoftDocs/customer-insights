@@ -1,7 +1,7 @@
 ---
 title: "Enrichment of company profiles with the third-party enrichment Leadspace"
 description: "General information about the Leadspace third-party enrichment."
-ms.date: 10/27/2020
+ms.date: 11/24/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -29,18 +29,13 @@ To configure Leadspace, the following prerequisites must be met:
 
 1. Select **Enrich my data** on the Leadspace tile.
 
-   > [!div class="mx-imgBorder"]
-   > ![Leadspace tile](media/leadspace-tile.png "Leadspace tile")
+   :::image type="content" source="media/leadspace-tile.png" alt-text="Screenshot of the Leadspace tile.":::
 
 1. Select **Get Started** and then enter an active **Leadspace token** (perpetual key). Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox. Confirm both inputs by selecting **Connect to Leadspace**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Leadspace configuration page](media/enrichment-leadspace-configuration.png "Leadspace configuration page")
-
 1. Select **Map data** and define which fields from your unified profiles should be used to look for matching company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
 
-   > [!div class="mx-imgBorder"]
-   > ![Leadspace configuration page](media/enrichment-leadspace-field-mapping.png "Leadspace field mapping page")
+   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace field mapping pane.":::
    
 1. Select **Apply** to complete the field mapping.
 
