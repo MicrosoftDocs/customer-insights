@@ -27,7 +27,7 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 1. Give your destination a recognizable name in the **Display name** field.
 
-1. Provide a **Username**, **Password** and **Hostname** (example.com:1234/folderpath) for your SFTP account.
+1. Provide a **Username**, **Password** and **Hostname** for your SFTP account. Example: If your SFTP server's root folder is /root/folder, and you would like the data to be exported to /root/folder/ci_export_destination_folder, the the host should be sftp://<server_address>/ci_export_destination_folder".
 
 1. Select **Verify** to test the connection.
 
