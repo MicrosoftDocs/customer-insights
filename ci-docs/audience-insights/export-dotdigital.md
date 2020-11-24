@@ -30,6 +30,8 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 1. Give your export destination a recognizable name in the **Display name** field.
 
+   :::image type="content" source="media/DotDigital_config.PNG" alt-text="Configuration pane for DotDigital export.":::
+
 1. Enter your **DotDigital username and password**.
 
 1. Enter your **[DotDigital address book ID ](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)**.
