@@ -66,7 +66,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. Save the data source.
 
-### Ingest Subscription information
+### Ingest subscription information
 
 1. Create a data source named **SubscriptionHistory**, choose the import option, and select the **Text/CSV** connector.
 
@@ -162,7 +162,7 @@ After ingesting the data we now begin the **Map, Match, Merge** process to creat
 1. Select **Save** and **Run** to start the Merge Process.
 
 
-## Task 3 - Configuring the Out of Box Subscription Churn prediction
+## Task 3 - Configure the subscription churn prediction
 
 With the unified customer profiles in place, we can now run the subscription churn prediction. For detailed steps, see the [Subscription churn prediction (preview)](predict-subscription-churn.md) article. 
 

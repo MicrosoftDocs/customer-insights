@@ -24,7 +24,7 @@ Contoso is a company that produces high-quality coffee and coffee machines, whic
 - At least [Contributor permissions](permissions.md) in Customer Insights.
 - We recommend that you implement the following steps [in a new environment](manage-environments.md).
 
-## Task 1 - Ingest Data
+## Task 1 - Ingest data
 
 Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically. The following information assumes you familiarized with ingesting data in general. 
 
@@ -48,7 +48,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. Save the data source.
 
-### Ingest Online Purchase Data
+### Ingest online purchase data
 
 1. Add another data set to the same **eCommerce** data source. Choose the **Text/CSV** connector again.
 
@@ -84,7 +84,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 1. Save the data source.
 
 
-## Task 2 - Data Unification
+## Task 2 - Data unification
 
 After ingesting the data we now begin the **Map, Match, Merge** process to create a unified customer profile. For more information, see [Data unification](data-unification.md).
 
@@ -143,7 +143,7 @@ After ingesting the data we now begin the **Map, Match, Merge** process to creat
 
 
 
-## Task 3 - Configuring the Out of Box Transaction Churn prediction
+## Task 3 - Configure transaction churn prediction
 
 With the unified customer profiles in place, we can now run the subscription churn prediction. For detailed steps, see the [Subscription churn prediction (preview)](predict-subscription-churn.md) article. 
 
