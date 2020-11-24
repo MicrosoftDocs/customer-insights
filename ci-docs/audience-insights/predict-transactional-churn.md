@@ -15,9 +15,8 @@ manager: shellyha
 
 Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. You can create new churn predictions on **Intelligence** > **Predictions**. Select **My predictions** to see other predictions that you've created.
 
-<!-- ## Sample Guide
-
-If you're interested in trying this feature but don't have data to complete the requirements below, you can create a sample implementation by following [this guide](/guides/sample-guide-predict-transactional-churn). -->
+> [!TIP]
+> Try the tutorial for a translactional churn prediction using sample data: [Transactional churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
 
 ## Prerequisites
 
