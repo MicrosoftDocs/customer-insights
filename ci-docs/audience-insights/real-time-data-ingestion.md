@@ -78,6 +78,6 @@ Details of this API, including parameters and responses, can be found in the **E
 
 ## Understand your real-time usage with telemetry
 
-Get an overview of the volume of requests posted to the real-time API and information about issues the system may encounter. You can [access the real-time telemetry](system.md#api-usage-tab) by going to **Admin** > **System** > **API usage**.
+Get an overview of the volume of requests posted to the real-time API and information about issues the system may encounter. You can [access the real-time telemetry](system.md#api-usage-tab) by going to **Admin** > **System** > **API usage**. On this page scroll to "Operations" table. Table rows for API operations which use the real-time methods contain a button to view real-time API usage. The button is visualized with binoculars icon. Activating the button will open a side panel which contains usage details for this instance's real-time API usage.
 
 Use the **Group by** selector to choose how to best present your real-time interactions on a timeline ranging from the last 24 hours to the last 30 days. You can group the data by API method, entity qualified name (ingested entity), created by (source of the event), result (success or failure) or error codes. The data is available as a history chart and as a table.
