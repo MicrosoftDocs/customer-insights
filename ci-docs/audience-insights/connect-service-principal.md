@@ -1,7 +1,7 @@
 ---
-title: "Connect to Azure Data Lake Storage account by provisioning Audience Insights Service Principal Name (SPN)"
-description: "Connect to Azure Data Lake Storage account by provisioning Audience Insights Service Principal Name (SPN)."
-ms.date: 11/22/2020
+title: "Connect to an Azure Data Lake Storage Gen2 account with a service principal"
+description: "use an Azure service principal for audience insights to connect to your own data lake when attaching it to audience insights."
+ms.date: 11/24/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal
+# Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal for audience insights
 
 Automated tools that use Azure services should always have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. Read on to learn how to connect audience insights with an Azure Data Lake Storage Gen2 account using an Azure service principal instead of storage account keys. 
 
@@ -31,7 +31,7 @@ Before creating a new service principal for audience insights, check if it alrea
 
 3. Under **Manage**, select **Enterprise Applications**.
 
-4. Search for the audience insights first party application ID `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` or the name `Dynamics 365 Customer Insights`.
+4. Search for the audience insights first party application ID `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` or the name `Dynamics 365 AI for Customer Insights`.
 
 5. If you find a matching record, it means that the service principal for audience insights exists. You don't need to create it again.
    
@@ -49,7 +49,7 @@ Before creating a new service principal for audience insights, check if it alrea
 2. Create the  service principal for audience insights with the Azure AD PowerShell Module.
    - In the PowerShell window, enter `Connect-AzureAD -TenantId "[your tenant ID]" -AzureEnvironmentName Azure`. Replace “your tenant ID” with the actual ID of your tenant where you want to create the service principal. The environment name parameter `AzureEnvironmentName` is optional.
   
-   - Enter `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 Customer Insights"`. This command creates the service principal for audience insights on the selected tenant.  
+   - Enter `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. This command creates the service principal for audience insights on the selected tenant.  
 
 ## Grant permissions to the service principal to access the storage account
 
@@ -66,7 +66,7 @@ Go to the Azure portal to grant permissions to the service principal for the sto
 1. In the **Add role assignment** pane, set the following properties:
    - Role: *Storage Blob Data Contributor*
    - Assign access to: *User, group, or service principal*
-   - Select: *Dynamics 365 Customer Insights* (the [service principal you created](#create-a-new-service-principal))
+   - Select: *Dynamics 365 AI for Customer Insights* (the [service principal you created](#create-a-new-service-principal))
 
 1.	Select **Save**.
 
@@ -76,11 +76,9 @@ It can take up to 15 minutes to propagate the changes.
 
 Attach an Azure Data Lake storage account in audience insights to [store output data](manage-environments.md) or [use it as a data source](connect-common-data-service-lake.md). Choosing the Azure Data Lake option lets you choose between a resource-based or a subscription-based based approach.
 
-<!-- move the below sections to the CDS and Manage Environment articles?-->
-
 Follow the below steps to provide the required information on the selected approach.
 
-### Azure Resource based storage account connection
+### Resounce-based storage account connection
 
 1. Go to the [Azure admin portal](https://portal.azure.com), sign in to your subscription and open the storage account.
 
@@ -89,22 +87,20 @@ Follow the below steps to provide the required information on the selected appro
 1. Copy the storage account resource ID value.
    :::image type="content" source="media/ADLS-SP-ResourceId.png" alt-text="Copy the storage account resource ID.":::
 
-<!--confusing, jumpls between portal and CI-->
-
 1. In audience insights, insert the resource ID in the resource field displayed in the storage account connection screen.
    :::image type="content" source="media/ADLS-SP-ResourceIdConnection.png" alt-text="Enter the storage account resource ID information.":::   
    
 1. Continue with the remaining steps in audience insights to attach the storage account.
 
-### Azure Subscription based storage account connection
+### Subscription-based storage account connection
 
 1. Go to the [Azure admin portal](https://portal.azure.com), sign in to your subscription and open the storage account.
 
 1. Go to **Settings** > **Properties** on navigation pane.
 
-1. Copy the **Subscription**, **Resource group**, and the **Name** of the storage account.
+1. Review the **Subscription**, **Resource group**, and the **Name** of the storage account to make sure you select the right values in audience insights.
 
-1. In audience insights, insert the copied values or for the corresponding fields when attaching the storage account.
+1. In audience insights, choose the values or for the corresponding fields when attaching the storage account.
    :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Enter the storage account resource ID information.":::
    
 1. Continue with the remaining steps in audience insights to attach the storage account.

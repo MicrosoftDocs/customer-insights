@@ -151,7 +151,7 @@
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
         - name: Connect to an ADLS storage account using Service Principal
-          href: audience-insights/connect-ADLS-SPN.md
+          href: audience-insights/connect-service-principal.md
         - name: Supported languages
           href: audience-insights/supported-languages.md
 

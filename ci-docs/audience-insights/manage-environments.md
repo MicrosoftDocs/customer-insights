@@ -68,7 +68,7 @@ To create an environment:
    > We support only Azure Data Lake Gen2 storage accounts from the same Azure region you selected when creating the environment.
    > We support only Azure Data Lake Gen2 Hierarchical Name Space (HNS) enabled storage accounts.
 
-   - For the Azure Data Lake Storage Gen2 option, you can choose between a resource-based option and a subscription-based option. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-ADLS-SPN.md). The **Container** name can't be changed and will be "customerinsights".
+   - For the Azure Data Lake Storage Gen2 option, you can choose between a resource-based option and account key authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name can't be changed and will be "customerinsights".
    
    - If you want to use [predictions](predictions.md), enter the Common Data Service instance URL in the **Server address** field under **Use predictions**.
 
@@ -123,7 +123,7 @@ You can edit some of the details of existing environments.
 
 4. If an environment is configured to store data in Azure Data Lake Storage Gen2, you can update the **Account key**. However, you can't change the **Account name** or **Container** name.
 
-5. Optionally, you can update from storage account key based connection to a resource or a subscription based connection. Once upgraded, you cannot revert to account key as this is a one time update. Select either of these options from the "Connect your storage account using" options and refer to this [document](connect-ADLS-SPN.md#enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights) on what are the prerequisites, how to capture the Azure artifact details and how to fill in. Note that the **Container** information cannot be edited as we are only updating the connection mechanism to the storage account and not changing the container.
+5. Optionally, you can update from an account key based connection to a resource-based or subscription-based connection. Once upgraded, you cannot revert to account key after the update. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
 
 ## Reset an existing environment
 
