@@ -100,8 +100,12 @@
           href: audience-insights/predictions.md
         - name: Predict subscription churn
           href: audience-insights/predict-subscription-churn.md
+        - name: Sample guide for subscription churn prediction
+          href: audience-insights/sample-guide-predict-subscription-churn.md
         - name: Predict transactional churn
           href: audience-insights/predict-transactional-churn.md
+        - name: Sample guide for transactional churn prediction
+          href: audience-insights/sample-guide-predict-transactional-churn.md
         - name: Implement custom machine learning models
           href: audience-insights/custom-models.md
         - name: Experiments with Azure Machine learning
