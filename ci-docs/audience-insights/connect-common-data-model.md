@@ -35,7 +35,7 @@ This article provides information on how to ingest data from a Common Data Model
 
 1. Select **Connect to a Common Data Model folder**, enter a **Name** for the data source, and select **Next**.
 
-1. You can choose between using resource-based option and an account key for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Enter the **Container** information and select **Next**.
+1. You can choose between using a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Enter the **Container** information and select **Next**.
    > [!div class="mx-imgBorder"]
    > ![Dialog box to enter connection details for Azure Data Lake](media/enter-new-storage-details.png)
 
@@ -70,7 +70,7 @@ You can update the access key for the storage account containing the Common Data
 
    ![Dialog to edit and update an access key for an existing data source](media/edit-access-key.png)
 
-5. Optionally, you can update from an account key connection to a resource-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
+5. Optionally, you can update from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
    > [!div class="mx-imgBorder"]
    > ![Dialog box to enter connection details for Azure Data Lake](media/enter-existing-storage-details.png)
 

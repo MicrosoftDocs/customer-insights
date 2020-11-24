@@ -68,7 +68,7 @@ To create an environment:
    > We support only Azure Data Lake Gen2 storage accounts from the same Azure region you selected when creating the environment.
    > We support only Azure Data Lake Gen2 Hierarchical Name Space (HNS) enabled storage accounts.
 
-   - For the Azure Data Lake Storage Gen2 option, you can choose between a resource-based option and account key authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name can't be changed and will be "customerinsights".
+   - For the Azure Data Lake Storage Gen2 option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name can't be changed and will be "customerinsights".
    
    - If you want to use [predictions](predictions.md), enter the Common Data Service instance URL in the **Server address** field under **Use predictions**.
 
