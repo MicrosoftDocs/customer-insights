@@ -85,9 +85,11 @@ Follow the below steps to provide the required information on the selected appro
 1. Go to **Settings** > **Properties** on navigation pane.
 
 1. Copy the storage account resource ID value.
+
    :::image type="content" source="media/ADLS-SP-ResourceId.png" alt-text="Copy the storage account resource ID.":::
 
 1. In audience insights, insert the resource ID in the resource field displayed in the storage account connection screen.
+
    :::image type="content" source="media/ADLS-SP-ResourceIdConnection.png" alt-text="Enter the storage account resource ID information.":::   
    
 1. Continue with the remaining steps in audience insights to attach the storage account.
@@ -101,6 +103,7 @@ Follow the below steps to provide the required information on the selected appro
 1. Review the **Subscription**, **Resource group**, and the **Name** of the storage account to make sure you select the right values in audience insights.
 
 1. In audience insights, choose the values or for the corresponding fields when attaching the storage account.
+
    :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Enter the storage account resource ID information.":::
    
 1. Continue with the remaining steps in audience insights to attach the storage account.
