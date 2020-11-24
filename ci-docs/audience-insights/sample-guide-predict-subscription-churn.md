@@ -157,7 +157,7 @@ After ingesting the data we now begin the **Map, Match, Merge** process to creat
 
 1. On the **ContactId** for **loyCustomers** entity, change the display name to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.
 
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="rename contactid from loyaltyid.":::
+   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="rename contactid from loyalty id.":::
 
 1. Select **Save** and **Run** to start the Merge Process.
 
