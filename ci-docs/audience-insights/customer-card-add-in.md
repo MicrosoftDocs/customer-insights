@@ -13,6 +13,8 @@ manager: shellyha
 
 # Customer Card Add-in (preview)
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Get a 360-degree view of your customers directly in Dynamics 365 apps. View demographics, insights, and activity timelines with the Customer Card Add-in.
 
 ## Prerequisites
@@ -49,7 +51,7 @@ It can take some time for the solution to be installed to your environment.
    > [!NOTE]
    > Check that the browser pop-up blocker does not block the authentication window when you select the **Sign in** button.
 
-1. Select the instance you want to fetch data from.
+1. Select the environment you want to fetch data from.
 
 1. Define which the field mapping to records in the Dynamics 365 app.
    - To map with a contact, select the field in the Customer entity that matches the ID of your contact entity.

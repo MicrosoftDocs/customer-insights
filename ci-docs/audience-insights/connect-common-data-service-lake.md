@@ -13,6 +13,8 @@ ms.reviewer: adkuppa
 
 # Connect to data in a Common Data Service managed data lake
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 This article provides information on how existing Dynamics 365 customers can quickly connect to their analytical entities in the Common Data Service managed lake. You must be an admin on the Common Data Service organization to proceed and see the list of entities available in the managed lake.
 
 ## Important considerations
@@ -44,7 +46,7 @@ Data stored in online services, such as Azure Data Lake Storage, may be stored i
 
 7. Save your selection to start syncing the selected entities to the Common Data Service managed lake. You'll find the newly added connection on the **Data sources** page. It will be queued for refresh and show the entities count as 0 until all the entities are synced.
 
-Only one data source of an instance can simultaneously use the same Common Data Service managed lake.
+Only one data source of an environment can simultaneously use the same Common Data Service managed lake.
 
 ## Edit a Common Data Service managed lake data source
 

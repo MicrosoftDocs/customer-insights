@@ -17,8 +17,8 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 ## Prerequisites
 
-- You need to have a Facebook Ad Account which includes a Facebook Business Account.
-- You need to be an administrator on the Facebook Ad Account.
+- You need to have a [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) which includes a [**Facebook Business Account**](https://business.facebook.com/).
+- You need to be an administrator on the [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
 
 ## Connect to Facebook Ads Manager
 
@@ -58,3 +58,8 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 ## Export the data
 
 You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab).
+
+## Data privacy and compliance
+
+When you enable Dynamics 365 Customer Insights to transmit data to Facebook Ads Manager, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Facebook Ads meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
