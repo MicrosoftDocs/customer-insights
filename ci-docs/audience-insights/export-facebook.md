@@ -17,8 +17,8 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 ## Prerequisites
 
-- You need to have a Facebook Ad Account which includes a Facebook Business Account.
-- You need to be an administrator on the Facebook Ad Account.
+- You need to have a [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) which includes a [**Facebook Business Account**](https://business.facebook.com/).
+- You need to be an administrator on the [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
 
 ## Connect to Facebook Ads Manager
 
