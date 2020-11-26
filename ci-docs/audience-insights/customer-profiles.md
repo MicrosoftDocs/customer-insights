@@ -46,6 +46,17 @@ You can filter customers by the Customer Profile entity fields. Similar to searc
 
 3. Remove your filters by selecting **Clear filters** on the top right corner of the **Customers** screen.
 
+##  The Customer details page
+Clicking on any of the customers’ tiles will take you to the **Customer details page** whare you can view unified information for that specific customer.
+
+The Customer details page includes the following components: 
+-	**Customer profile tile:** Located at the left side, this tile shows the different values that were pulled from the unified customer profile entity. These details might include email address, name, city, etc. 
+-	**Potential interests, potential brands:** These tiles only show up if you have successfully ran a first-party enrichment. It represents potential interests and affinities for brands a customer with a profile similar to this customer might have. [Learn more about our data enrichments](enrichment-microsoft-graph.md).
+-	**Measures:** These tiles will show up if you have successfully ran one or more measures of a specific type called customer attribute measures. They include calculated KPIs around your customers on the individual customer level. [Learn more about measures](measures.md).
+-	**Activity timeline:** This component will show up if you have configured activities. The component shows the consolidated activities of this customer sorted by time starting with the most recent activity. [Learn more about activities](activities.md).
+
+To get back to the customer search page, click the button "Back to Customers" on the top of this page.
+
 ## Next steps
 
 [Add more data sources](data-sources.md) or [create customer segments](segments.md).
