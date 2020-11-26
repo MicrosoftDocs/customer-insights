@@ -120,7 +120,7 @@ After you've created a prediction, you can customize the model in the AI Builder
 The next run of your prediction will use the updated model you've created.
 
 > [!NOTE]
-> New models created in AI Builder will not be displayed in audicen insights unless the model was created from the experiences listed above.
+> New models created in AI Builder will not be displayed in audience insights unless the model was created from the experiences listed above.
 
 ## Remove a prediction
 
