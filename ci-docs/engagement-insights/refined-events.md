@@ -64,7 +64,7 @@ You can filter, rename, and remove properties of refined events.
 
 1. Go to **Admin**> **Data** > **Events** and select the refined events to open the detailed view.
 1. Select the arrow next to a property name and choose an option from the drop-down menu. 
-   :::image type="content" source="media/manage-properties-refined-event.png" alt-text="Edit options of refiend events":::
+   :::image type="content" source="media/manage-properties-refined-event.png" alt-text="Edit options of refined events":::
 1. Select **Save** to apply the changes.
 
 > [!NOTE]
