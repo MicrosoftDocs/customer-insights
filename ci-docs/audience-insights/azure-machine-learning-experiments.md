@@ -70,7 +70,7 @@ You will need to create datasets to bring in entity data from Customer Insights 
    > [!div class="mx-imgBorder"]
    > ![Export Data Module Configuration](media/intelligence-designer-importdata.png "Export Data Module Configuration")
    
-   * When writing the inference output using code, you may upload the Output to the a path within a **registered datastore** in the workspace. If the path and datastore are parameterized in the pipeline, Customer insights will be able to read the output. Currently, a single tabular output in csv format is supported. Please note that the path must include the directory and filename.
+   * When writing the inference output using code, you may upload the Output to the a path within a **registered datastore** in the workspace. If the path and datastore are parameterized in the pipeline, Customer insights will be able to read and import the inference output. Currently, a single tabular output in csv format is supported. Please note that the path must include the directory and filename.
    ```python
    # In Pipeline setup script
       OutputPathParameter = PipelineParameter(name="output_path", default_value="HotelChurnOutput/HotelChurnOutput.csv")
@@ -80,6 +80,9 @@ You will need to create datasets to bring in entity data from Customer Insights 
       run = Run.get_context()
       ws = run.experiment.workspace
       datastore = Datastore.get(ws, output_datastore) # output_datastore is parameterized
-      directory_name =  os.path.dirname(output_path)
-      datastore.upload(src_dir=<<working directory>>, target_path=directory_name, overwrite=False, show_progress=True) # output_path is parameterized.
+      directory_name =  os.path.dirname(output_path)  # output_path is parameterized.
+      
+      # Datastore.upload() or Dataset.File.upload_directory() are supported methods to uplaod the data
+      # datastore.upload(src_dir=<<working directory>>, target_path=directory_name, overwrite=False, show_progress=True)
+      output_dataset = Dataset.File.upload_directory(src_dir=<<working directory>>, target = (datastore, directory_name)) # Please strip trailing "/" if any from directory_name
    ```
