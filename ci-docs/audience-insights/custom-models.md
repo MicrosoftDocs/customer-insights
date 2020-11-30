@@ -55,8 +55,8 @@ Predictions offer capabilities to create better customer experiences, improve bu
       1. Enter the output **Entity name** you want web service output results to flow into.
    - Azure Machine Learning
       1. Enter the output **Entity name** you want pipeline output results to flow into.
-      1. Select the **Output data store parameter name** from your [pipeline output node](#output-parameters).
-      1. Select the **Output Path parameter name** from your [pipeline output node](#output-parameters).
+      1. Select the **Output data store parameter name** of your batch pipeline from the dropdown.
+      1. Select the **Output Path parameter name** of your batch pipeline from the dropdown.
       > [!div class="mx-imgBorder"]
       > ![Model Output Parameter Pane](media/intelligence-screen3-outputparameters.png "Model Output Parameter Pane")
 
