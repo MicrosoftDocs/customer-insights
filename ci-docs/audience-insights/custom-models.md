@@ -58,7 +58,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
       1. Select the **Output data store parameter name** from your [pipeline output node](#output-parameters).
       1. Select the **Output Path parameter name** from your [pipeline output node](#output-parameters).
       > [!div class="mx-imgBorder"]
-      > ![Model Output Parameter Pane](media/intelligence-screen3-outputparameters "Model Output Parameter Pane")
+      > ![Model Output Parameter Pane](media/intelligence-screen3-outputparameters.png "Model Output Parameter Pane")
 
 1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
    
