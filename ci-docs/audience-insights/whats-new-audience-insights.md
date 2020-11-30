@@ -34,11 +34,11 @@ The updates in November 2020 include several features, performance upgrades, and
 
 #### Data enrichment
 
-- **Bring your own enrichment data via SFTP custom import**
+- **Bring your own enrichment data via Secure File Transfer Protocol (SFTP) custom import**
   
-   Secure File Transfer Protocol (SFTP) custom import lets you to import enrichment data that doesn't have to go through the process of data unification. Learn more about SFTP custom import.
+  SFTP custom import lets you to import enrichment data that doesn't have to go through the process of data unification. Learn more about SFTP custom import.
 
-   For more information, see [Enrich customer profiles with custom data (preview)](enrichment-SFTP-custom-import.md).
+  For more information, see [Enrich customer profiles with custom data (preview)](enrichment-SFTP-custom-import.md).
  
 - **Enrich your customer data with location data from HERE Technologies**
 
@@ -46,7 +46,7 @@ The updates in November 2020 include several features, performance upgrades, and
 
   For more information, see [Enrichment of customer profiles with HERE Technologies](enrichment-here.md).
 
-#### Datas unification
+#### Data unification
 
 - **Flexibility to enable data profiling on selected entities and fields from your storage account**
 
@@ -128,7 +128,7 @@ For more information, see [Define deduplication on a match entity](match-entitie
 - **Orchestration: New refresh option in Merge**
 
 Until today, when you run the merge process, the system ran all the downstream processes that depend on merge and subsequent processes. 
-You can now verify the output of the merge process (the unified customer entity) before using it in downstream pro cessing like segments or measures.
+You can now verify the output of the merge process (the unified customer entity) before using it in downstream processing like segments or measures.
 On the merge page, you can now choose to run only the merge step and run only this process. To refresh all the downstream processes too, you can choose run merge and downstream processes. 
 
 ## September 2020 updates
