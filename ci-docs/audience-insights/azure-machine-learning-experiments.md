@@ -24,9 +24,9 @@ The unified data in Dynamics 365 Customer Insights is a source for building mach
 
 ## Set up Azure Machine Learning Workspace
 
-1. Follow instructions here on the different ways to [create a Azure Machine Learning workspace](https://docs.microsoft.com/en-us/azure/machine-learning/concept-workspace#-create-a-workspace). For best performance, create the workspace in an **Azure region** that is geographically closest to your Customer Insights environment.
+1. Follow instructions here on the different ways to [create a Azure Machine Learning workspace](https://docs.microsoft.com/azure/machine-learning/concept-workspace#-create-a-workspace). For best performance, create the workspace in an **Azure region** that is geographically closest to your Customer Insights environment.
 
-1. Access your workspace through the [Azure Machine Learning Studio](https://ml.azure.com/). There are several [different ways to interact](https://docs.microsoft.com/en-us/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) with your workspace.
+1. Access your workspace through the [Azure Machine Learning Studio](https://ml.azure.com/). There are several [different ways to interact](https://docs.microsoft.com/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) with your workspace.
 
 ## Work with Azure Machine Learning Designer
 
@@ -37,12 +37,12 @@ Azure Machine Learning Designer provides a visual canvas where you can drag and 
    
 ## Working with Azure Machine Learning SDK
 
-Data scientists and AI developers use the [Azure Machine Learning SDK](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/?view=azure-ml-py) to build machine learning workflows. Currently, models trained using the SDK can't be integrated directly with Customer Insights. A Batch inference pipeline that consumes that model is required for integration with Customer Insights.
+Data scientists and AI developers use the [Azure Machine Learning SDK](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) to build machine learning workflows. Currently, models trained using the SDK can't be integrated directly with Customer Insights. A Batch inference pipeline that consumes that model is required for integration with Customer Insights.
 
 ## Batch pipeline requirements for Customer Insights Integration
 
 ### Dataset Configuration
-You will need to create datasets to bring in entity data from Customer Insights to your Batch Inference pipeline. These datasets need to be registered in the workspace and currently we only support [Tabular datasets](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-register-datasets#tabulardataset) in csv format. The datasets that correspond to entity data need to be parameterized as a Pipeline parameter.
+You will need to create datasets to bring in entity data from Customer Insights to your Batch Inference pipeline. These datasets need to be registered in the workspace and currently we only support [Tabular datasets](https://docs.microsoft.com/azure/machine-learning/how-to-create-register-datasets#tabulardataset) in csv format. The datasets that correspond to entity data need to be parameterized as a Pipeline parameter.
    * Dataset parameters in Designer
    > [!div class="mx-imgBorder"]
    > ![Dataset Parameterization in Designer](media/intelligence-designer-dataset-parameters.png "Dataset Parameterization in Designer")
@@ -57,7 +57,6 @@ You will need to create datasets to bring in entity data from Customer Insights 
    * In the Designer experience, a training pipeline can be used to create or update an Inference pipeline. Currently, only Batch Inference pipelines are supported.
    > [!div class="mx-imgBorder"]
    > ![Batch Inference Pipeline from Designer](media/intelligence-designer-batchinferencecreate.png "Batch Inference Pipeline from Designer")
-intelligence-designer-batchinferencecreate
 
    * Using the SDK, you may publish the pipeline into an Endpoint. Currently, Customer insights will only integrate with the default pipeline in a Batch Pipeline Endpoint in the Azure Machine Learning workspace.
    ```python
@@ -67,7 +66,7 @@ intelligence-designer-batchinferencecreate
    ```
 
 ### Importing data into Customer Insights
-   * The designer provides the [Export Data Module](https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/export-data) that allows the output of an inference to be exported to Azure Storage. Currently, the module must use the Datastore type **Azure Blob Storage** and parameterize the **Datastore** and relative **Path** within the datastore to facilitate integration with Customer Insights.
+   * The designer provides the [Export Data Module](https://docs.microsoft.com/azure/machine-learning/algorithm-module-reference/export-data) that allows the output of an inference to be exported to Azure Storage. Currently, the module must use the Datastore type **Azure Blob Storage** and parameterize the **Datastore** and relative **Path** within the datastore to facilitate integration with Customer Insights.
    > [!div class="mx-imgBorder"]
    > ![Export Data Module Configuration](media/intelligence-designer-importdata.png "Export Data Module Configuration")
    
