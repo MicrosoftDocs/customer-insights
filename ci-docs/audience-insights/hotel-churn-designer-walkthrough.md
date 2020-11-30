@@ -1,3 +1,15 @@
+---
+title: "Hotel Churn AML Designer walkthrough"
+description: "Hotel Churn AML Designer walkthrough."
+ms.date: 11/30/2020
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: conceptual
+author: naravill
+ms.author: mhart
+ms.reviewer: m-hartmann
+manager: shellyha
+---
 
 |Sr.No|Step  |Description  |Details  |
 |--|--|--|--|
