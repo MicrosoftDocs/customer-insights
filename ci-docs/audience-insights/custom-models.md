@@ -37,13 +37,13 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 1. If your Azure Machine Learning subscription is in a different tenant than Customer Insights, select **Sign in** with your credentials for the selected organization.
 
-1. Select the **Workspaces** associated with your web service. There are two sections listed, one for Azure Machine Learning v1 (Machine Learning Studio Classic) and Azure Machine Learning v2 (Azure Machine Learning). If you're not sure which workspace is the right one for your Machine Learning Studio Classic web service, select **Any**.
+1. Select the **Workspaces** associated with your web service. There are two sections listed, one for Azure Machine Learning v1 (Machine Learning Studio Classic) and Azure Machine Learning v2 (Azure Machine Learning). If you're not sure which workspace is the right one for your Machine Learning Studio Classic web service, please select **Any**.
 
 1. Choose the Machine Learning Studio Classic web service or Azure Machine Learning Pipeline in the **Web service that contains your model** dropdown. Then, select **Next**.
    - Learn more about [publishing a web service in Machine Learning Studio Classic](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Learn more about publishing a pipeline in Azure Machine Learning using the [Designer](https://docs.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) or [SDK](https://docs.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
+   - Learn more about publishing a pipeline in Azure Machine Learning using the [Designer](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) or [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
       > [!NOTE]
-      > Please note, that your pipeline must be published under a [Pipeline Endpoint](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+      > Please note, that your pipeline must be published under a [Pipeline Endpoint](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. For each **Web service input**, select the matching **Entity** from audience insights and select **Next**.
 
