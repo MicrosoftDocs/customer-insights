@@ -85,10 +85,11 @@ Predictions offer capabilities to create better customer experiences, improve bu
       1. Enter the output **Entity name** you want web service output results to flow into.
    - Azure Machine Learning
       1. Enter the output **Entity name** you want pipeline output results to flow into.
-      1. Select the **Output data store parameter name** from your [pipeline output node](#output-parameters).
-      1. Select the **Output Path parameter name** from your [pipeline output node](#output-parameters).
+      1. Select the **Output data store parameter name** of your test pipeline from the dropdown.
+      1. Select the **Output Path parameter name** of your test pipeline from the dropdown.
 
 1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
+   - Please note that you need to pick an attribute from our Inference Output with values similar to the Customer ID column of the Customer Entity. If you are unable to pick such a column, please pick an attribute that uniquely identifies the row.
 
 ## Run a workflow
 
