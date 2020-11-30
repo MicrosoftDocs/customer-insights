@@ -70,10 +70,10 @@ You will need to create datasets to bring in entity data from Customer Insights 
    > [!div class="mx-imgBorder"]
    > ![Export Data Module Configuration](media/intelligence-designer-importdata.png "Export Data Module Configuration")
    
-   * When writing the inference output using code, you may upload the Output to the a path within a **registered datastore** in the workspace. If the path and datastore are parameterized in the pipeline, Customer insights will be able to read the output. Currently, tabular data in csv format is supported.
+   * When writing the inference output using code, you may upload the Output to the a path within a **registered datastore** in the workspace. If the path and datastore are parameterized in the pipeline, Customer insights will be able to read the output. Currently, a single tabular output in csv format is supported. Please note that the path must include the directory and filename.
    ```python
    # In Pipeline setup script
-      OutputPathParameter = PipelineParameter(name="output_path", default_value="HotelChurnOutput/")
+      OutputPathParameter = PipelineParameter(name="output_path", default_value="HotelChurnOutput/HotelChurnOutput.csv")
       OutputDatastoreParameter = PipelineParameter(name="output_datastore", default_value="workspaceblobstore")
    ...
    # In pipeline execution script
