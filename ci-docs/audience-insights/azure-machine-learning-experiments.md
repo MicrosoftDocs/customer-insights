@@ -80,5 +80,6 @@ You will need to create datasets to bring in entity data from Customer Insights 
       run = Run.get_context()
       ws = run.experiment.workspace
       datastore = Datastore.get(ws, output_datastore) # output_datastore is parameterized
-      datastore.upload(src_dir=<<working directory>>, target_path=output_path, overwrite=False, show_progress=True) # output_path is parameterized.
+      directory_name =  os.path.dirname(output_path)
+      datastore.upload(src_dir=<<working directory>>, target_path=directory_name, overwrite=False, show_progress=True) # output_path is parameterized.
    ```
