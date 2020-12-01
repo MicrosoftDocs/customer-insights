@@ -33,12 +33,14 @@ The unified data in Dynamics 365 Customer Insights is a source for building mach
 Azure Machine Learning Designer provides a visual canvas where you can drag and drop datasets and modules, similar to Machine Learning Studio Classic. A batch pipeline created from the designer can be integrated into Customer Insights if they are configured appropriately. 
 
    * We will attempt to calculate Churn of patrons of a fictional Contoso Hotel. Please refer to the [Churn Analysis experiment](machine-learning-studio-classic-experiments.md#churn-analysis) for additional context.
-   * This [walk through](hotel-churn-designer-walkthrough.md) has detailed steps to create the experiment using Azure Machine Learning Designer.
+   * This [walk through](https://github.com/naravill/CustomerInsightsML/blob/main/tutorials/aml/ci-hotelchurn-designer.md) has detailed steps to create the experiment using Azure Machine Learning Designer.
    
 ## Working with Azure Machine Learning SDK
 
 Data scientists and AI developers use the [Azure Machine Learning SDK](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) to build machine learning workflows. Currently, models trained using the SDK can't be integrated directly with Customer Insights. A Batch inference pipeline that consumes that model is required for integration with Customer Insights.
 
+   * Please refer to this Python Notebook that details how to create a [Azure Machine Learning Pipeline for Hotel Churn](https://github.com/naravill/CustomerInsightsML/blob/main/tutorials/aml/notebooks/HotelChurnInferencePipeline.ipynb) scenario above.
+   
 ## Batch pipeline requirements for Customer Insights Integration
 
 ### Dataset Configuration
