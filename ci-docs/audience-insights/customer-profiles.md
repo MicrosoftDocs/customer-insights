@@ -1,6 +1,6 @@
 ---
-title: "Customer profiles"
-description: "Get a consolidated view of your unified customer data."
+title: "View customer profiles"
+description: "Get a combined view of your unified customer data."
 ms.date: 12/01/2020
 ms.reviewer: nimagen
 ms.service: customer-insights
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Customer profiles
 
-The **Customers** page presents a consolidated view of your customers, based on profile data gathered from [all data sources](data-sources.md). Customer profiles are available once you [create the unified Customer entity](data-unification.md). Make sure you complete the data unification process to get richer views of your customers. The page also lets you search for customers.
+The **Customers** page shows a combined view of your customers, based on profile data gathered from [all data sources](data-sources.md). Customer profiles are available once you [create the unified Customer entity](data-unification.md). Make sure you complete the data unification process to get richer views of your customers. The page also lets you search for customers.
 
 Customers can be individuals or organizations (preview). Each customer or organization profile is represented by a tile. Select a tile to see additional information on that specific customer or organization. Use the pagination controls at the bottom of the page to see additional records.
 
@@ -37,14 +37,14 @@ As an admin, you can configure the searchable attributes using the **Search & fi
 
 You can filter customers by the Customer Profile entity fields. Similar to search, your admin will first need to define the fields as filterable using the **Search & filter index** page.
 
-1. Select **Filter** on the top right corner of the **Customers** page.
+1. Select **Filter** on the **Customers** page.
 
 2. Check the boxes next to the attributes you want to filter customers by.
 
    > [!div class="mx-imgBorder"] 
    > ![Customer profiles](media/profiles-customers3.png "Customer profiles")
 
-3. Remove your filters by selecting **Clear filters** on the top right corner of the **Customers** screen.
+3. Remove your filters by selecting **Clear filters** on the **Customers** page.
 
 ##  Customer details page
 
@@ -52,13 +52,13 @@ Select any of the customer tiles to open the **Customer details page**. This vie
 
 Customer details include:
 
--	**Customer profile tile:** This tile shows the different values from the unified customer profile entity. These details can include email address, name, city, etc. 
+-	**Customer profile tile:** This tile shows the different values from the unified customer profile entity. These details can include email address, name, city, and so on. 
 
 -	**Potential interests, potential brands:** Shows if you configured a first-party enrichment. It represents potential interests and affinities for brands a customer with a profile similar to this customer might have. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft-graph.md).
 
 -	**Measures:** Shows if you configured one or more measures of a specific type: customer attribute measures. They include calculated KPIs around your customers on the individual customer level. For more information, see [Define and manage measures](measures.md).
 
--	**Activity timeline:** Shows if you have configured activities. The timeline view contains consolidated activities of this customer sorted chornologically, starting with the most recent activity. For more information, see [Customer activities](activities.md).
+-	**Activity timeline:** Shows if you have configured activities. The timeline view contains chronologically sorted activities of this customer, starting with the most recent activity. For more information, see [Customer activities](activities.md).
 
 Select **Back to Customers** to return to the customer search page.
 
