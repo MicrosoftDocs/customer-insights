@@ -93,7 +93,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. Create a data source named **Website**, choose the import option, and select the **Text/CSV** connector.
 
-1. Enter the URL for eCommerce contacts https://aka.ms/ciadchurnsubscriptionhistory.
+1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasswebsite.
 
 1. While editing the data, select **Transform** and then **Use First Row as Headers**.
 
