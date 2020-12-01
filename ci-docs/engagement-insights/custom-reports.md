@@ -32,7 +32,7 @@ ms.manager: shellyha
 1. Choose one of the available **Metrics** and choose the **Dimensions** to show on the visualization.
 
 1. To add another visualization, select **Add visual** in the command bar.     
-   By default, the new visualization is a table. Select **Design** in the **Visual editor** pane to change the visualization type. Continue by choosing a metric and dimensions.
+   By default, the new visualization is a table. Select **Design** in the **Visualization editor** pane to change the visualization type. Continue by choosing a metric and dimensions.
 
    :::image type="content" source="media/set-metrics-dimensions.png" alt-text="Specify metrics and dimensions for a visualization":::
 
