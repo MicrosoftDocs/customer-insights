@@ -1,7 +1,7 @@
 ---
 title: "Customer profiles"
 description: "Get a consolidated view of your unified customer data."
-ms.date: 04/16/2020
+ms.date: 12/01/2020
 ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -46,16 +46,21 @@ You can filter customers by the Customer Profile entity fields. Similar to searc
 
 3. Remove your filters by selecting **Clear filters** on the top right corner of the **Customers** screen.
 
-##  The Customer details page
-Clicking on any of the customers’ tiles will take you to the **Customer details page** whare you can view unified information for that specific customer.
+##  Customer details page
 
-The Customer details page includes the following components: 
--	**Customer profile tile:** Located at the left side, this tile shows the different values that were pulled from the unified customer profile entity. These details might include email address, name, city, etc. 
--	**Potential interests, potential brands:** These tiles only show up if you have successfully ran a first-party enrichment. It represents potential interests and affinities for brands a customer with a profile similar to this customer might have. [Learn more about our data enrichments](enrichment-microsoft-graph.md).
--	**Measures:** These tiles will show up if you have successfully ran one or more measures of a specific type called customer attribute measures. They include calculated KPIs around your customers on the individual customer level. [Learn more about measures](measures.md).
--	**Activity timeline:** This component will show up if you have configured activities. The component shows the consolidated activities of this customer sorted by time starting with the most recent activity. [Learn more about activities](activities.md).
+Select any of the customer tiles to open the **Customer details page**. This view contains unified information for the selected customer.
 
-To get back to the customer search page, click the button "Back to Customers" on the top of this page.
+Customer details include:
+
+-	**Customer profile tile:** This tile shows the different values from the unified customer profile entity. These details can include email address, name, city, etc. 
+
+-	**Potential interests, potential brands:** Shows if you configured a first-party enrichment. It represents potential interests and affinities for brands a customer with a profile similar to this customer might have. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft-graph.md).
+
+-	**Measures:** Shows if you configured one or more measures of a specific type: customer attribute measures. They include calculated KPIs around your customers on the individual customer level. For more information, see [Define and manage measures](measures.md).
+
+-	**Activity timeline:** Shows if you have configured activities. The timeline view contains consolidated activities of this customer sorted chornologically, starting with the most recent activity. For more information, see [Customer activities](activities.md).
+
+Select **Back to Customers** to return to the customer search page.
 
 ## Next steps
 
