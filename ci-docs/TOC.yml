@@ -27,10 +27,15 @@
       items:
         - name: Create a new environment
           href: audience-insights/home.md
+        - name: Ingest data
+          href: https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/
         - name: Create a unified customer profile
           href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
         - name: Work with the app
           href: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+        - name: Enrich data and predictions
+          href: https://docs.microsoft.com/learn/modules/enrich-data/
+         
 
     - name: Data sources
       items:
@@ -100,8 +105,12 @@
           href: audience-insights/predictions.md
         - name: Predict subscription churn
           href: audience-insights/predict-subscription-churn.md
+        - name: Sample guide for subscription churn prediction
+          href: audience-insights/sample-guide-predict-subscription-churn.md
         - name: Predict transactional churn
           href: audience-insights/predict-transactional-churn.md
+        - name: Sample guide for transactional churn prediction
+          href: audience-insights/sample-guide-predict-transactional-churn.md
         - name: Implement custom machine learning models
           href: audience-insights/custom-models.md
         - name: Experiments with Azure Machine learning
@@ -115,6 +124,8 @@
           href: audience-insights/export-destinations.md
         - name: Azure Blob Storage
           href: audience-insights/export-azure-blob-storage.md
+        - name: DotDigital
+          href: audience-insights/export-dotdigital.md
         - name: Dynamics 365 Customer Service (Add-in)
           href: audience-insights/customer-card-add-in.md
         - name: Dynamics 365 Marketing
@@ -152,6 +163,8 @@
           href: audience-insights/permissions.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
+        - name: Connect to an ADLS storage account using Service Principal
+          href: audience-insights/connect-service-principal.md
         - name: Supported languages
           href: audience-insights/supported-languages.md
 

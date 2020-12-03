@@ -24,8 +24,10 @@ On the **Discover** tab, you'll find the following enrichments:
 
 - [Brands](enrichment-microsoft-graph.md) provided by Microsoft Graph
 - [Interests](enrichment-microsoft-graph.md) provided by Microsoft Graph
-- [Company data](enrichment-leadspace.md)  provided by Leadspace
+- [Company data](enrichment-leadspace.md) provided by Leadspace
 - [Demographics](enrichment-experian.md) provided by Experian
+- [Location data](enrichment-here.md) provided by HERE Technologies
+- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
 
 On the **My enrichments** tab, you can see the enrichments you've configured and edit their properties.
 

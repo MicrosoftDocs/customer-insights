@@ -42,4 +42,4 @@ Exported data is stored in the Azure Blob storage container you configured. The 
 
 ## Export the data
 
-You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab).
+You can [export data on demand](/export-destinations.md#export-data-on-demand). The export will also run with every [scheduled refresh](system.md#schedule-tab).
