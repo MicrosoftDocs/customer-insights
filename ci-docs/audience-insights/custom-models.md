@@ -31,52 +31,66 @@ Predictions offer capabilities to create better customer experiences, improve bu
 1. Give your custom model a recognizable name in the **Name** field.
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot of the New workflow pane](media/new-workflow.png "Screenshot of the New workflow pane")
+   > ![Screenshot of the New workflow pane](media/new-workflowv2.png "Screenshot of the New workflow pane")
 
 1. Select the organization that contains the web service in **Tenant that contains your web service**.
 
 1. If your Azure Machine Learning subscription is in a different tenant than Customer Insights, select **Sign in** with your credentials for the selected organization.
 
-1. Select the **Workspaces** associated with your web service. There are two sections listed, one for Azure Machine Learning v1 (Azure Machine Learning Classic) and Azure Machine Learning v2. If you're not sure which workspace is the right one, select **Any**.
+1. Select the **Workspaces** associated with your web service. There are two sections listed, one for Azure Machine Learning v1 (Machine Learning Studio (classic)) and Azure Machine Learning v2 (Azure Machine Learning). If you're not sure which workspace is the right one for your Machine Learning Studio (classic) web service, select **Any**.
 
-1. Choose the [web service or pipeline you've published using Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service) in the **Web service that contains your model** dropdown. Then, select **Next**.
+1. Choose the Machine Learning Studio (classic) web service or Azure Machine Learning pipeline in the **Web service that contains your model** dropdown. Then, select **Next**.
+   - Learn more about [publishing a web service in Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
+   - Learn more about [publishing a pipeline in Azure Machine Learning using the designer](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) or [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
+     > [!NOTE]
+     > Your pipeline must be published under a [pipeline endpoint](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. For each **Web service input**, select the matching **Entity** from audience insights and select **Next**.
 
    > [!div class="mx-imgBorder"]
-   > ![Configure a workflow](media/intelligence-screen2.png "Configure a workflow")
+   > ![Configure a workflow](media/intelligence-screen2-updated.png "Configure a workflow")
 
-1. In the **Output mapping** step, set the following properties:
-   - Azure Machine Learning v1
+1. In the **Model Output Parameters** step, set the following properties:
+   - Machine Learning Studio (classic)
       1. Enter the output **Entity name** you want web service output results to flow into.
-   - Azure Machine Learning v2
+   - Azure Machine Learning
       1. Enter the output **Entity name** you want pipeline output results to flow into.
-      1. Select the **Output data store parameter name** from your [pipeline output node](#output-parameters).
-      1. Select the **Output Path parameter name** from your [pipeline output node](#output-parameters).
+      1. Select the **Output data store parameter name** of your batch pipeline from the dropdown.
+      1. Select the **Output Path parameter name** of your batch pipeline from the dropdown.
+      
+      > [!div class="mx-imgBorder"]
+      > ![Model Output Parameter Pane](media/intelligence-screen3-outputparameters.png "Model Output Parameter Pane")
 
 1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
+   
+   > [!div class="mx-imgBorder"]
+   > ![Relate results to Customer data pane](media/intelligence-screen4-relatetocustomer.png "Relate results to Customer data pane")
 
-1. You'll see the **Workflow Saved** screen with details about the workflow.
+1. You'll see the **Workflow Saved** screen with details about the workflow.    
+   If you configured a workflow for an Azure Machine Learning pipeline, audience insights will attach to the workspace that contains the pipeline. Audience insights will get a **Contributor** role on the Azure workspace.
 
 1. Select **Done**.
+
+1. You can now run the workflow from the **Custom Models** page.
 
 ## Edit a workflow
 
 1. On the **Custom Models** page, select the vertical ellipsis in the **Actions** column next to a workflow you've previously created and select **Edit**.
 
-1. You can update your workflow's recognizable name in the **Display name** field, but you can't change the web service. Select **Next**.
+1. You can update your workflow's recognizable name in the **Display name** field, but you can't change the configured web service or pipeline. Select **Next**.
 
-1. For each **Web service input**, select the matching **Entity** from Customer Insights.  Then, select **Next**.
+1. For each **Web service input**, you can update the matching **Entity** from audience insights. Then, select **Next**.
 
-1. In the **Output mapping** step, set the following properties:
-   - Azure Machine Learning v1
+1. In the **Model Output Parameters** step, set the following properties:
+   - Machine Learning Studio (classic)
       1. Enter the output **Entity name** you want web service output results to flow into.
-   - Azure Machine Learning v2
+   - Azure Machine Learning
       1. Enter the output **Entity name** you want pipeline output results to flow into.
-      1. Select the **Output data store parameter name** from your [pipeline output node](#output-parameters).
-      1. Select the **Output Path parameter name** from your [pipeline output node](#output-parameters).
+      1. Select the **Output data store parameter name** for your test pipeline.
+      1. Select the **Output Path parameter name** for your test pipeline.
 
-1. Select the matching attribute from the **Customer ID in results** drop-down list.  When you're done, select **Save**.
+1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
+   You need to choose an attribute from the inference output with values similar to the Customer ID column of the Customer entity. If don't have such a column in your data set, choose an attribute that uniquely identifies the row.
 
 ## Run a workflow
 
@@ -93,50 +107,3 @@ Your workflow also runs automatically with every scheduled refresh. Learn more a
 1. Select **Delete** and confirm your deletion.
 
 Your workflow will be deleted. The [entity](entities.md) that was created when you created the workflow persists, and can be viewed from the **Entities** page.
-
-## Create a batch pipeline and parameters
-
-If you have an experiment running using Azure Machine Learning, you can create an betach inference pipeline.
-
-1. In Azure Machine Learning, on the experiment page, select **Create inference pipeline** and select **Batch inference pipeline**
-   > [!NOTE] 
-   > Real-time inference pipelines are currently not supported.
-
-1. Set the [input parameters](#input-parameters)
-
-1. Set the [output parameters](#output-parameters)
-
-1. Select **Submit**.
-
-1. Select your existing experiment that you created as a part of the prerequisites.
-
-1. Select **Submit**.
-
-### Input Parameters
-
-1. Select an input node of your pipeline and look for the **Parameters** section of your node
-
-1. Check the **Set as pipeline parameter** box in the Parameters section.
-
-1. Select a name to recognize the input requirement. This text will be displayed in the Workflow input creation screen later in your custom workflow.
-
-1. Repeat this step for every input node.
-
-### Output parameters
-
-1. Search for an **Export Data** node in the search box and add it to the end of your pipeline. Ensure a link is drawn between your last node and the Export Data node.
-
-1. Select the Export Data node and configure the datastore type to **Azure Blob Storage**
-
-1. Select the horizontal ellipses for the Datastore option and select **Add to pipeline parameter**
-
-1. Set the **Parameter Name** to something you'll recognize when selecting it in the custom workflow definition.
-
-1. Select **Save**
-
-1. Select the horizontal ellipses for the Path feature and select **Add to pipeline parameter**
-
-1. Set the **Parameter Name** to something you'll recognize when selecting it in the custom workflow definition.
-
-1. Select **Save**
-1. 
