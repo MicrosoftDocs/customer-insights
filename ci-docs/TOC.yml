@@ -106,7 +106,7 @@
           href: audience-insights/custom-models.md
         - name: Experiments with Azure Machine learning
           href: audience-insights/azure-machine-learning-experiments.md
-        - name: Experiments with Azure Machine Learning studio (classic)
+        - name: Experiments with Azure Machine Learning studio
           href: audience-insights/machine-learning-studio-experiments.md
 
     - name: Export options
