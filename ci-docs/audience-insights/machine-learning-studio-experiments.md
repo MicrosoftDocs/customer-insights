@@ -1,7 +1,7 @@
 ---
-title: "Machine Learning Studio Classic experiments"
-description: "Use Machine Learning Studio Classic-based models in Dynamics 365 Customer Insights."
-ms.date: 07/09/2020
+title: "Machine Learning Studio (classic) experiments"
+description: "Use Machine Learning Studio (classic) models in Dynamics 365 Customer Insights."
+ms.date: 12/03/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,9 +11,9 @@ ms.reviewer: ameetj
 manager: shellyha
 ---
 
-# Use Machine Learning Studio Classic-based models
+# Use models based on Azure Machine Learning Studio (classic)
 
-The unified data in Dynamics 365 Customer Insights is a source for building machine learning models that can generate additional business insights. Customer Insights integrates with Machine Learning Studio Classic to use your own custom models. To see how models developed in Azure Machine Learning are integrated with Customer Insights, please visit [Azure Machine Learning experiments](azure-machine-learning-experiments.md)
+The unified data in Dynamics 365 Customer Insights is a source for building machine learning models that can generate additional business insights. Customer Insights integrates with Machine Learning Studio (classic) to use your own custom models. To see how models developed in Azure Machine Learning are integrated with Customer Insights, see [Azure Machine Learning experiments](azure-machine-learning-experiments.md).
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ The unified data in Dynamics 365 Customer Insights is a source for building mach
 
 ## Set up Machine Learning Studio Classic
 
-In a first step, we need to create a workspace for and open the Machine Learning Studio Classic.
+In a first step, we need to create a workspace for and open the Machine Learning Studio (clssic).
 
 1. Go to [https://www.portal.azure.com](https://www.portal.azure.com/) and sign in.
 

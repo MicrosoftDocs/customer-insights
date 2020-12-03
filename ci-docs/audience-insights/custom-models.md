@@ -37,13 +37,13 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 1. If your Azure Machine Learning subscription is in a different tenant than Customer Insights, select **Sign in** with your credentials for the selected organization.
 
-1. Select the **Workspaces** associated with your web service. There are two sections listed, one for Azure Machine Learning v1 (Machine Learning Studio Classic) and Azure Machine Learning v2 (Azure Machine Learning). If you're not sure which workspace is the right one for your Machine Learning Studio Classic web service, please select **Any**.
+1. Select the **Workspaces** associated with your web service. There are two sections listed, one for Azure Machine Learning v1 (Machine Learning Studio (classic)) and Azure Machine Learning v2 (Azure Machine Learning). If you're not sure which workspace is the right one for your Machine Learning Studio (classic) web service, select **Any**.
 
-1. Choose the Machine Learning Studio Classic web service or Azure Machine Learning Pipeline in the **Web service that contains your model** dropdown. Then, select **Next**.
-   - Learn more about [publishing a web service in Machine Learning Studio Classic](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Learn more about publishing a pipeline in Azure Machine Learning using the [Designer](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) or [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
-      > [!NOTE]
-      > Please note, that your pipeline must be published under a [Pipeline Endpoint](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+1. Choose the Machine Learning Studio (classic) web service or Azure Machine Learning pipeline in the **Web service that contains your model** dropdown. Then, select **Next**.
+   - Learn more about [publishing a web service in Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
+   - Learn more about [publishing a pipeline in Azure Machine Learning using the designer](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) or [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
+     > [!NOTE]
+     > Your pipeline must be published under a [pipeline endpoint](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. For each **Web service input**, select the matching **Entity** from audience insights and select **Next**.
 
@@ -51,12 +51,13 @@ Predictions offer capabilities to create better customer experiences, improve bu
    > ![Configure a workflow](media/intelligence-screen2-updated.png "Configure a workflow")
 
 1. In the **Model Output Parameters** step, set the following properties:
-   - Machine Learning Studio Classic
+   - Machine Learning Studio (classic)
       1. Enter the output **Entity name** you want web service output results to flow into.
    - Azure Machine Learning
       1. Enter the output **Entity name** you want pipeline output results to flow into.
       1. Select the **Output data store parameter name** of your batch pipeline from the dropdown.
       1. Select the **Output Path parameter name** of your batch pipeline from the dropdown.
+      
       > [!div class="mx-imgBorder"]
       > ![Model Output Parameter Pane](media/intelligence-screen3-outputparameters.png "Model Output Parameter Pane")
 
@@ -65,12 +66,12 @@ Predictions offer capabilities to create better customer experiences, improve bu
    > [!div class="mx-imgBorder"]
    > ![Relate results to Customer data pane](media/intelligence-screen4-relatetocustomer.png "Relate results to Customer data pane")
 
-1. You'll see the **Workflow Saved** screen with details about the workflow.
-   - If you just configured a workflow for an Azure Machine Learning Pipeline, Audience Insights will **attach** the workspace that houses the pipeline. Attach allow the Audience Insights application will be provided with a **Contributor** Azure Role to the workspace.
+1. You'll see the **Workflow Saved** screen with details about the workflow.    
+   If you configured a workflow for an Azure Machine Learning pipeline, audience insights will attach to the workspace that contains the pipeline. Audience insights will get a **Contributor** role on the Azure workspace.
 
 1. Select **Done**.
 
-1. You may now run the workflow from the **Custom Models** page.
+1. You can now run the workflow from the **Custom Models** page.
 
 ## Edit a workflow
 
@@ -78,18 +79,18 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 1. You can update your workflow's recognizable name in the **Display name** field, but you can't change the configured web service or pipeline. Select **Next**.
 
-1. For each **Web service input**, you may update the matching **Entity** from Audience Insights. Then, select **Next**.
+1. For each **Web service input**, you can update the matching **Entity** from audience insights. Then, select **Next**.
 
 1. In the **Model Output Parameters** step, set the following properties:
-   - Machine Learning Studio Classic
+   - Machine Learning Studio (classic)
       1. Enter the output **Entity name** you want web service output results to flow into.
    - Azure Machine Learning
       1. Enter the output **Entity name** you want pipeline output results to flow into.
-      1. Select the **Output data store parameter name** of your test pipeline from the dropdown.
-      1. Select the **Output Path parameter name** of your test pipeline from the dropdown.
+      1. Select the **Output data store parameter name** for your test pipeline.
+      1. Select the **Output Path parameter name** for your test pipeline.
 
 1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
-   - Please note that you need to pick an attribute from our Inference Output with values similar to the Customer ID column of the Customer Entity. If you are unable to pick such a column, please pick an attribute that uniquely identifies the row.
+   You need to choose an attribute from the inference output with values similar to the Customer ID column of the Customer entity. If don't have such a column in your data set, choose an attribute that uniquely identifies the row.
 
 ## Run a workflow
 
