@@ -20,7 +20,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 ## Prerequisites
 
-- Currently, this feature only supports web services published through [Azure Machine Learning Classic](https://studio.azureml.net) and batch pipelines deployed through the methods described in [Deploy models with Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where?tabs=azcli).
+- Currently, this feature supports web services published through [Azure Machine Learning (classic)](https://studio.azureml.net) and [Azure Machine Learning batch pipelines](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines). 
 
 - You need an Azure Data Lake Gen2 storage account associated with your Azure Studio instance to use this feature. For more information, see [Create an Azure Data Lake Storage Gen2 storage account](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account)
 
