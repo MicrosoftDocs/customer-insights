@@ -34,7 +34,7 @@ Azure Machine Learning designer provides a visual canvas where you can drag and 
    
 ## Working with Azure Machine Learning SDK
 
-Data scientists and AI developers use the [Azure Machine Learning SDK](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py) to build machine learning workflows. Currently, models trained using the SDK can't be integrated directly with Customer Insights. A batch inference pipeline that consumes that model is required for integration with Customer Insights.
+Data scientists and AI developers use the [Azure Machine Learning SDK](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) to build machine learning workflows. Currently, models trained using the SDK can't be integrated directly with Customer Insights. A batch inference pipeline that consumes that model is required for integration with Customer Insights.
 
 ## Batch pipeline requirements to integrate with Customer Insights
 
@@ -90,5 +90,5 @@ You need to create datasets to use entity data from Customer Insights to your ba
       
       # Datastore.upload() or Dataset.File.upload_directory() are supported methods to uplaod the data
       # datastore.upload(src_dir=<<working directory>>, target_path=directory_name, overwrite=False, show_progress=True)
-      output_dataset = Dataset.File.upload_directory(src_dir=<<working directory>>, target = (datastore, directory_name)) # Please strip trailing "/" if any from directory_name
+      output_dataset = Dataset.File.upload_directory(src_dir=<<working directory>>, target = (datastore, directory_name)) # Remove trailing "/" from directory_name
    ```
