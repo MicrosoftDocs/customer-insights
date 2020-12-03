@@ -24,7 +24,7 @@ The unified data in Dynamics 365 Customer Insights is a source for building mach
 
 ## Set up Machine Learning Studio Classic
 
-In a first step, we need to create a workspace for and open the Machine Learning Studio (clssic).
+In a first step, we need to create a workspace for and open the Machine Learning Studio (classic).
 
 1. Go to [https://www.portal.azure.com](https://www.portal.azure.com/) and sign in.
 

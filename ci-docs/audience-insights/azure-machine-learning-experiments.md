@@ -13,14 +13,14 @@ manager: shellyha
 
 # Use Azure Machine Learning-based models
 
-The unified data in Dynamics 365 Customer Insights is a source for building machine learning models that can generate additional business insights. Customer Insights integrates with Machine Learning Studio (classic) and Azure Machine Learning to use your own custom models. Please refer to [Machine Learning Studio (classic) experiments](machine-learning-studio-experiments.md) for examples of experiments built on Machine Learning Studio (classic). 
+The unified data in Dynamics 365 Customer Insights is a source for building machine learning models that can generate additional business insights. Customer Insights integrates with Machine Learning Studio (classic) and Azure Machine Learning to use your own custom models. Refer to [Machine Learning Studio (classic) experiments](machine-learning-studio-experiments.md) for examples of experiments built on Machine Learning Studio (classic). 
 
 ## Prerequisites
 
 - Access to Customer Insights
 - Active Azure Enterprise subscription
 - [Unified customer profiles](data-unification.md)
-- [Entity export to Azure Blob storage](export-azure-blob-storage.md) set up
+- [Entity export to Azure Blob storage](export-azure-blob-storage.md) configured
 
 ## Set up Azure Machine Learning workspace
 
@@ -44,7 +44,7 @@ You need to create datasets to use entity data from Customer Insights to your ba
    
 * Dataset parameters in Designer
    
-     In the designer, open **Select Columuns in Dataset** and select **Set as pipeline parameter** where you provide a name for the parameter.
+     In the designer, open **Select Columns in Dataset** and select **Set as pipeline parameter** where you provide a name for the parameter.
 
      > [!div class="mx-imgBorder"]
      > ![Dataset parameterization in designer](media/intelligence-designer-dataset-parameters.png "Dataset parameterization in designer")
