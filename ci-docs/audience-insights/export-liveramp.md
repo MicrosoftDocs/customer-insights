@@ -1,7 +1,7 @@
 ---
 title: "LiveRamp connector"
 description: "Learn how to export data to LiveRamp."
-ms.date: 04/22/2020
+ms.date: 12/02/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -22,9 +22,9 @@ Activate your data in LiveRamp to connect with over 500 platforms across digital
 
 ## Connect to LiveRamp
 
-1. Go to **Admin** > **Export destinations**  and select **Add destination**.
+1. In audience insights, go to **Admin** > **Export destinations**.
 
-1. Select **LiveRamp** in the **Type** dropdown list.
+1. In the **LiveRamp** tile, select **Set up**.
 
 1. Give your destination a recognizable name in the **Display name** field.
 
