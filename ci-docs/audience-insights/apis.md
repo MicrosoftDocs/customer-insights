@@ -29,7 +29,7 @@ This article guides you to access to the Customer Insights APIs, create an Azure
 1. Go to the **APIs** tab and select the **Enable** button.    
    Enabling the APIs creates a primary and secondary subscription key for your instance that gets used in the API requests. You can regenerate the keys by selecting the **Regenerate primary** or **Regenerate secondary** on **Admin** > **Permissions** > **APIs**.
 
-   :::image type="content" source="media/enable-apis.png" alt-text="Enable Customer Insights APIs":::
+   :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs":::
 
 1. Select **Explore our APIs** to try out the APIs.
 
