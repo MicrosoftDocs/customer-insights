@@ -39,7 +39,7 @@ This article guides you to access to the Customer Insights APIs, create an Azure
   
 1. Optionally, add all necessary query parameters.
 
-1. Scold to the bottom of the side pane and select **Send**.
+1. Scroll to the bottom of the side pane and select **Send**.
 
 The HTTP response will soon appear below.
 
