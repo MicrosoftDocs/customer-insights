@@ -36,7 +36,7 @@ There are three ways to create a refined event from a base event.
 - Enter a name in the **Refined events display name** box.
 - Optionally, update the suggested **Actual name** without using spaces.
 
-1. Select **Create** to apply your settings.
+3. Select **Create** to apply your settings.
 
 1. In the detailed view of your refined event, select **Add and remove properties** to open the **Edit properties** pane. 
 
