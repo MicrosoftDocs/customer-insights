@@ -1,7 +1,7 @@
 ---
 title: "Manage user permissions"
 description: "Learn about permissions and user roles."
-ms.date: 09/28/2020
+ms.date: 10/27/2020
 ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -49,6 +49,7 @@ There are three types of roles:
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for all enrichments).
 - Install and use the **Customer Card Add-in**.
 - Add and use the **Power Apps connector**.
+- Enable usage of [Customer Insights APIs](apis.md).
 
 ## Assign roles and permissions
 

@@ -173,7 +173,9 @@
         - name: Review the entity schemas in Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Work with APIs
-          href: audience-insights/apis.md
+          href: audience-insights/apis.md 
+        - name: API references
+          href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
 
     - name: Service limits
       href: audience-insights/service-limits.md
