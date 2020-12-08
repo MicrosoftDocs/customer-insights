@@ -29,7 +29,7 @@ Export segments of unified customer profiles to Autopilot and use them for email
 
 1. Give your export destination a recognizable name in the **Display name** field.
 
-   :::image type="content":::
+   :::image type="content" source="media/export-autopilot.PNG" alt-text="Configuration pane for Autopilot connection.":::
 
 1. Enter your **Autopilot API key** [Autopilot API key](https://autopilot.docs.apiary.io/#).
 
@@ -51,14 +51,14 @@ Export segments of unified customer profiles to Autopilot and use them for email
 
 ## Export the data
 
-You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab). In DotDigital, you can now find your segments in [DotDigital address books](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
+You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab).
 
 ## Known limitations
 
-- Up to 100'000 profiles in total to Autopilot.
+- You can export up to 100'000 profiles in total to Autopilot.
 - Exporting to Autopilot is limited to segments.
 - Exporting up to 100'000 profiles to Autopilot can take up to a few hours to complete. 
-- The number of profiles that you can export to Autopilot is dependent and limited on your contract with SendGrid.
+- The number of profiles that you can export to Autopilot is dependent and limited on your contract with Autopilot.
 
 ## Data privacy and compliance
 
