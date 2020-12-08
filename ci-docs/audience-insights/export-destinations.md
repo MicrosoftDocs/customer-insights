@@ -26,6 +26,7 @@ Go to **Admin** > **Export destinations** to find the following extensibility op
 - [Dynamics 365 Sales](export-dynamics365-sales.md)
 - [Dynamics 365 Marketing](export-dynamics365-marketing.md)
 - [Azure Blob Storage](export-azure-blob-storage.md)
+- [SendGrid](export-sendgrid.md)
 - [LiveRamp&reg; connector](export-liveramp.md)
 - [Bot for Microsoft Teams](export-teams-bot.md)
 - [Mailchimp](export-mailchimp.md)

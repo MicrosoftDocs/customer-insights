@@ -30,7 +30,7 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 
 1. Give your export destination a recognizable name in the **Display name** field.
 
-   :::image type="content":::
+   :::image type="content" source="media/export-sendgrid.PNG" alt-text="SendGrid export configuration pane.":::
 
 1. Enter your **SendGrid API key** [SendGrid API key](https://sendgrid.com/docs/ui/account-and-settings/api-keys/).
 
@@ -46,7 +46,7 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 
 ## Configure the connector
 
-1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. Repeat the same steps for other optional fields such as **First name**, **Last name**, **Country/Region**, **State**, **City** and **Post code**.
+1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. Repeat the same steps for other optional fields such as **First name**, **Last name**, **Country/Region**, **State**, **City**, and **Post code**.
 
 1. Select the segments you want to export. We strongly **recommend to not export more than 100'000 customer profiles in total** to SendGrid. 
 
@@ -54,7 +54,7 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 
 ## Export the data
 
-You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab). In DotDigital, you can now find your segments in [DotDigital address books](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
+You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab).
 
 ## Known limitations
 
