@@ -151,7 +151,7 @@
         - name: Power Automate
           href: audience-insights/export-power-automate.md
         - name: SendGrid
-          href: audience-insights/export-sedngrid.md
+          href: audience-insights/export-sendgrid.md
         - name: SFTP
           href: audience-insights/export-sftp.md
 
