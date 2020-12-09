@@ -4,7 +4,7 @@ description: "Learn how to sign up for the service and how to manage environment
 ms.date: 11/10/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: nimagen
 author: m-hartmann
 ms.author: mhart
