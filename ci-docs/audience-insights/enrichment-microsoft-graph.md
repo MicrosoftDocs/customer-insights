@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with Microsoft Graph"
 description: "Use proprietary data from the Microsoft Graph to enrich your customer data with brand and interest affinities."
-ms.date: 09/28/2020
+ms.date: 12/10/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -15,7 +15,7 @@ manager: shellyha
 
 Use proprietary data from the Microsoft Graph to enrich your customer data with brand and interest affinities. These affinities are determined based on data from people with similar demographics to your customers. This information helps you to better understand and segment your customers based on their affinities to specific brands and interests.
 
-In ausience insights, go to **Data** > **Enrichment** to [configure and view enrichments](enrichment-hub.md).
+In audience insights, go to **Data** > **Enrichment** to [configure and view enrichments](enrichment-hub.md).
 
 To configure brand affinities enrichment, go to the **Discover** tab and select **Enrich my data** on the **Brands** tile.
 
@@ -30,16 +30,21 @@ We use online search data from the Microsoft Graph to find affinities for brands
 
 [Learn more about Microsoft Graph](https://docs.microsoft.com/graph/overview).
 
-## Affinity score and confidence
+## Affinity level and score
 
-The **affinity score** is calculated on a 100-point scale, with 100 representing the segment that has the highest affinity for a brand or interest.
+On every enriched customer profile, we provide two related values – affinity level and affinity score. These values help you determine how strong the affinity is for that profile’s demographic segment, for a brand or interest, as compared to other demographic segments.
 
-The **affinity confidence** is also calculated on a 100-point scale. It indicates the system's confidence level that a segment has an affinity for the brand or interest. Confidence level is based on the segment size and the segment granularity. Segment size is determined by the amount of data we have for a given segment. Segment granularity is determined by how many attributes (age, gender, location) are available in a profile.
+*Affinity level* consists of four levels and *affinity score* is calculated on a 100-point scale that maps to the affinity levels.
 
-We don't normalize the scores for your dataset. Consequently, you may not see all possible affinity score values for your dataset. For example, there may be no enriched customer profile with affinity score 100 in your data. That's possible if no customers exist in the demographic segment that scored 100 for a given brand or interest.
 
-> [!TIP]
-> When [creating segments](segments.md) using affinity scores, review the distribution of affinity scores for your dataset before deciding on the appropriate score thresholds. For example, an affinity score of 10 can be considered significant in a dataset that has a highest affinity score of only 25 for a given brand or interest.
+|Affinity level |Affinity score  |
+|---------|---------|
+|Very high     | 85-100       |
+|High     | 70-84        |
+|Medium     | 35-69        |
+|Low     | 1-34        |
+
+Depending on the granularity you would like for measuring the affinity, you can use either affinity level or score. Affinity scope gives you more precise control.
 
 ## Supported countries/regions
 
@@ -49,13 +54,11 @@ To select a country, open the **Brands enrichment** or **Interest enrichment** a
 
 ### Implications related to country selection
 
-- When [choosing your own brands](#define-your-brands-or-interests), we will provide suggestions based on the selected country/region.
+- When [choosing your own brands](#define-your-brands-or-interests), the system provides suggestions based on the selected country or region.
 
-- When [choosing an industry](#define-your-brands-or-interests), we will identify the most relevant brands or interests based on the selected country/region.
+- When [choosing an industry](#define-your-brands-or-interests), you'll get the most relevant brands or interests based on the selected country or region.
 
-- When [mapping your fields](#map-your-fields), if the Country/Region field isn't mapped, we'll use Microsoft Graph data from the selected country/region to enrich your customer profiles. We'll also use that selection to enrich your customer profiles that don't have country/region data available.
-
-- When [enriching profiles](#refresh-enrichment), we'll enrich all customer profiles for which we have Microsoft Graph data available for the selected brands and interests, including profiles that are not in the selected country/region. For example, if you selected Germany, we'll enrich profiles located in the United States if we have Microsoft Graph data available for the selected brands and interests in the US.
+- When [enriching profiles](#refresh-enrichment), we'll enrich all customer profiles for which we get data for the selected brands and interests. Including profiles that are not in the selected country or region. For example, if you selected Germany, we'll enrich profiles located in the United States if we have Microsoft Graph data available for the selected brands and interests in the US.
 
 ## Configure Enrichment
 
@@ -70,9 +73,16 @@ Select one of the following options:
 
 To add a brand or interest, enter it in the input area to get suggestions based on matching terms. If we don't list a brand or interest you're looking for, send us feedback using the **Suggest** link.
 
+## Review enrichment preferences
+
+Review your default enrichment preferences and update them as needed.
+
+:::image type="content" source="media/affinity-enrichment-preferences.png" alt-text="Screenshot of the enrichment preferences window.":::
+
+
 ### Map your fields
 
-Map fields from your unified customer entity to at least two attributes to define the demographic segment you want us to use for enriching your customer data. Select **Edit** to define the mapping of the fields and select **Apply** when you're done. Select **Save** to complete the field mapping.
+Map fields from your unified customer entity to define the demographic segment you want the system to use for enriching your customer data. Map Country/Region and at least Date of Birth or Gender attributes. Additionally, you must map at least one of City (and State/Province) or Postal code. Select **Edit** to define the mapping of the fields and select **Apply** when you're done. Select **Save** to complete the field mapping.
 
 The following formats and values are supported, values are not case-sensitive:
 
