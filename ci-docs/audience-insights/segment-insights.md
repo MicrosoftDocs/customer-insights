@@ -4,7 +4,7 @@ description: "Get insights on existing segments to see differences and commonali
 ms.date: 06/10/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: "article"
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: jimsonc

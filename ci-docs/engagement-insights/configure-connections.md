@@ -7,7 +7,7 @@ ms.author: mhart
 ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
-ms.topic: conceptual
+ms.topic: how-to
 ms.manager: shellyha
 ---
 

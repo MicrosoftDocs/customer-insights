@@ -5,7 +5,7 @@ ms.date: 11/18/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: jdahl
 ms.author: mhart
 manager: shellyha

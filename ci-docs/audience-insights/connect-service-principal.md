@@ -4,7 +4,7 @@ description: "use an Azure service principal for audience insights to connect to
 ms.date: 11/24/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
