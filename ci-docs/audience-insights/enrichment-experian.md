@@ -1,7 +1,7 @@
 ---
 title: "Enrichment with the third-party enrichment Experian"
 description: "General information about the Experian third-party enrichment."
-ms.date: 09/17/2020
+ms.date: 12/10/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -36,7 +36,9 @@ To configure Experian, the following prerequisites must be met:
 
 ## Map your fields
 
-1. Select **Add data** and choose your key identifiers from **Name and Address**, **E-mail**, or **Phone** to send to Experian for identity resolution.
+1.	Select **Add data** and choose the **Customer data set** you want to enrich with demographics data from Experian. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+
+1. Select your key identifiers from **Name and Address**, **E-mail**, or **Phone** to send to Experian for identity resolution.
 
    > [!TIP]
    > More key identifier attributes sent to Experian likely yield a higher match rate.
