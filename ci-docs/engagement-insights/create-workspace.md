@@ -21,7 +21,7 @@ When you create a workspace, you select the type of data that you want to focus 
 
 ## Create a workspace
 
-The process of creating a workspace includes setting up the [environment](glossary.md) to organize your workspace.
+The process of creating a workspace includes setting up the *environment* to organize your workspace. An environment is space that can contain one or more workspaces. You can use an environment to manage your workspaces and connections to Customer Insights audience insights capability.
 
 :::image type="content" source="media/workspace-switcher.png" alt-text="Customer insights page with callout on navigation pane and description":::
 
@@ -50,3 +50,5 @@ To add members to your workspace
 1. In the **Add members** pane, find the person that you want to add to the workspace. You can search by name or email address.
 1. Choose the new member's **Role** from the drop-down list. 
 1. When you're done adding members, select **Add members** to confirm.
+
+For more information, see [manage environments and workspaces](manage-environments-workspaces.md).
