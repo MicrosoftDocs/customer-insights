@@ -1,7 +1,7 @@
 ---
 title: "Enrichment of with the third-party enrichment HERE Technologies"
 description: "General information about the HERE Technologies third-party enrichment."
-ms.date: 10/27/2020
+ms.date: 12/10/2020
 ms.reviewer: jodahl
 ms.service: customer-insights
 ms.subservice: audience-insights
