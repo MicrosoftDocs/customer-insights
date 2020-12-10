@@ -4,7 +4,7 @@ description: "Use Azure Machine Learning-based models in Dynamics 365 Customer I
 ms.date: 11/30/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: naravill
 ms.author: mhart
 ms.reviewer: m-hartmann

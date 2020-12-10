@@ -7,7 +7,7 @@ author: pickwick129
 ms.date: 11/05/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
-ms.topic: conceptual
+ms.topic: overview
 ms.manager: shellyha
 ---
 

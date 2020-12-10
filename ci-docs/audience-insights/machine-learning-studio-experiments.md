@@ -4,7 +4,7 @@ description: "Use Machine Learning Studio (classic) models in Dynamics 365 Custo
 ms.date: 12/03/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: ameetj
