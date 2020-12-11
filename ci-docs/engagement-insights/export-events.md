@@ -4,10 +4,10 @@ description: How to export refined events and base events.
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/30/2020
+ms.date: 11/17/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
-ms.topic: conceptual
+ms.topic: how-to
 ms.manager: shellyha 
 ---
 
@@ -15,8 +15,9 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-An event records when a user views a page (view event) or interacts with content (action event). A refined event is virtual view of an event that you can use to adjust its properties. You can export both events and refined events to an external storage. An export is a forward data stream. You can't refill the stream. Additionally, exports have fixed schemas. If you add custom properties to an event, they won’t be included and you will need to create a new export.
+An event represents user behavior. It records when a user views a page (view event) or interacts with content(action event). When you can decide which properties of the data that you want to display in a report, this virtual view of the data is called a *refined event*. 
 
+You can export events and refined events to external storage. The exports are a forward data stream. You can't refill the stream. Additionally, exports have fixed schemas. If you add custom properties to an event, they won't be included. You'll need to create a new export.
 ## Prerequisite
 
 Before setting up an export, you need to have access and an active subscription to the Azure portal. You'll need the storage account information during the export process. 

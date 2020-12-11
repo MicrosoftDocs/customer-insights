@@ -27,12 +27,17 @@
       items:
         - name: Create a new environment
           href: audience-insights/home.md
+        - name: Ingest data
+          href: https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/
         - name: Create a unified customer profile
           href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
         - name: Work with the app
           href: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
         - name: Integrate web data from engagement insights
           href: audience-insights/integrate-engagement-insights.md
+        - name: Enrich data and predictions
+          href: https://docs.microsoft.com/learn/modules/enrich-data/
+         
 
     - name: Data sources
       items:
@@ -82,6 +87,8 @@
           href: audience-insights/enrichment-leadspace.md
         - name: Enrich with Experian
           href: audience-insights/enrichment-experian.md
+        - name: Enrich with SFTP custom import
+          href: audience-insights/enrichment-SFTP-custom-import.md
 
     - name: Segments and measures
       items:
@@ -100,10 +107,18 @@
           href: audience-insights/predictions.md
         - name: Predict subscription churn
           href: audience-insights/predict-subscription-churn.md
+        - name: Sample guide for subscription churn prediction
+          href: audience-insights/sample-guide-predict-subscription-churn.md
+        - name: Predict transactional churn
+          href: audience-insights/predict-transactional-churn.md
+        - name: Sample guide for transactional churn prediction
+          href: audience-insights/sample-guide-predict-transactional-churn.md
         - name: Implement custom machine learning models
           href: audience-insights/custom-models.md
         - name: Experiments with Azure Machine learning
           href: audience-insights/azure-machine-learning-experiments.md
+        - name: Experiments with Azure Machine Learning studio
+          href: audience-insights/machine-learning-studio-experiments.md
 
     - name: Export options
       items:
@@ -111,6 +126,8 @@
           href: audience-insights/export-destinations.md
         - name: Azure Blob Storage
           href: audience-insights/export-azure-blob-storage.md
+        - name: DotDigital
+          href: audience-insights/export-dotdigital.md
         - name: Dynamics 365 Customer Service (Add-in)
           href: audience-insights/customer-card-add-in.md
         - name: Dynamics 365 Marketing
@@ -121,12 +138,16 @@
           href: audience-insights/customer-card-add-in.md
         - name: Facebook Ads Manager
           href: audience-insights/export-facebook.md
+        - name: Google Ads
+          href: audience-insights/export-google-ads.md
         - name: LiveRamp
           href: audience-insights/export-liveramp.md
         - name: Mailchimp
           href: audience-insights/export-mailchimp.md
         - name: Microsoft Teams (bot)
           href: audience-insights/export-teams-bot.md
+        - name: Marketo
+          href: audience-insights/export-marketo.md
         - name: Power BI
           href: audience-insights/export-power-bi.md
         - name: Power Apps
@@ -144,6 +165,8 @@
           href: audience-insights/permissions.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
+        - name: Connect to an ADLS storage account using Service Principal
+          href: audience-insights/connect-service-principal.md
         - name: Supported languages
           href: audience-insights/supported-languages.md
 
@@ -152,7 +175,9 @@
         - name: Review the entity schemas in Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Work with APIs
-          href: audience-insights/apis.md
+          href: audience-insights/apis.md 
+        - name: API references
+          href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
 
     - name: Service limits
       href: audience-insights/service-limits.md
@@ -227,6 +252,9 @@
       items: 
         - name: Delete and export personal data
           href: engagement-insights/delete-export-personal-data.md
+
+    - name: Service limits
+      href: engagement-insights/quotas.md
 
 - name: Contact support
   href: https://go.microsoft.com/fwlink/?linkid=2145734

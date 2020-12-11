@@ -1,10 +1,10 @@
 ---
 title: Quickstart product introduction 
-description: First-run experience to set up engagmenet insights capability.
+description: First-run experience to set up engagement insights capability.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/30/2020
+ms.date: 11/05/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This article explains how to sign up and do an initial setup of engagement insights, a capability of Dynamics 365 Customer Insights.
+ Engagement insights, a capability of Dynamics 365 Customer Insights, lets you collect and measure customer behavior on your website. This article explains how to sign up for engagement insights, set up a workspace, add members to it, and make changes.
 
 ## Sign up for a demo of engagement insights
 
@@ -27,11 +27,13 @@ You must have an active Microsoft Azure Active Directory user account.
 
 1. Select your region, and use the check box to indicate whether you want to opt in to receive updates and offers via email.
 
-1. Review the **engagement insights (preview) Terms of Use** and **Privacy Statement**, and select **Explore the demo** to accept them.
+1. Review the **engagement insights (preview) Terms of Use** and **Privacy Statement**, and then select **Explore the demo** to accept them.
 
 1. Explore the product using a set of sample data. 
 
 ## Set up your first workspace in engagement insights
+
+A workspace is how you store and manage events and reports.
 
 To create your first workspace
 
@@ -62,11 +64,11 @@ By default, only the person who created the workspace has access to it. You can 
 
 3. Select a **Role** to assign to the new members. Currently, **Workspace admin** is the only available selection. Other roles will be added in future releases.
 
-4. Choose **Add** to confirm.
+4. Select **Add members** to confirm.
 
 To remove members from a workspace, select **...** next to their names on the **Members** page and then select **Delete** from the drop-down menu.
 
-## Edit an existing workspace
+## Edit a workspace
 
 You can edit the details of existing workspaces at any time.
 
@@ -74,9 +76,9 @@ You can edit the details of existing workspaces at any time.
 
 1. Go to **Admin** > **Settings** > **General**.
 
-1. Use the  **Name** box to enter a name and optionally add a **Description** for your workspace.
+1. In the **Name** box, enter a name and optionally add a **Description** for your workspace.
 
-1. Choose **Save** to apply your changes.
+1. Select **Save** to apply your changes.
 
 ## Add another new workspace
 
@@ -84,15 +86,13 @@ You can edit the details of existing workspaces at any time.
 
 You can create additional workspaces to classify your data.
 
-1. Select the **workspace switcher** in the navigation pane.
+1. Select **New workspace**.
 
-2. Select **New workspace**.
+1. Enter a **Name** and an optional **Description**.
 
-3. Enter a **Name** and an optional **Description**.
-
-4. Select **Create**.
+1. Select **Create**.
 
 ## Switch between workspaces
 
-To change between workspaces, select the **workspace switcher**. You can also create a new workspace, or select **Web Sample** to see reports and try features using sample data. 
+To change between workspaces, select the workspace switcher. You can also create a new workspace, or select **Web Sample** to see reports and try features using sample data. 
 

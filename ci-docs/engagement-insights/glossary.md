@@ -4,7 +4,7 @@ description: Glossary of terms and concepts.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 10/30/2020
+ms.date: 11/12/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -27,15 +27,15 @@ Dimensions are attributes of events that can describe, filter, or group data. Fo
 
 ## Event
 
-In digital analytics, an event represents user behavior. An event records when a user views a page (view event) or interacts with content (action event). On a web page, as visitors view web pages, engagements insights sends page view events. As they interact with web page elements, it sends page action events.
+In digital analytics, an event represents user behavior. An event records when a user views a page (view event) or interacts with content (action event). Activity data from your website is captured as *base events*. For reporting, you can decide the properties of the data that you want display. This virtual view of the data is called a *refined event*. 
 
 ## Environment
 
- An environment can contain one or more workspaces. You can use this space to manage your workspaces and manage connections to Customer Insights audience insights capability.
+ An environment is a space that can contain one or more workspaces. You can use an environment to manage your workspaces and connections to Customer Insights audience insights capability.
 
 ## Member
 
-A member of a workspace is a user in the engagement insights capability who can access a workspace. Members can have roles. Currently, “Owner” is the only role available in engagement insights capability. It allows the user to manage the workspace and its data, and to view reports.
+A member of a workspace is a user who can access a workspace. Members can have roles, which allow the user to manage the workspace, its data, and view reports. Currently, *Owner* is the only role available in engagement insights capability.
 
 ## Metric
 
@@ -43,12 +43,12 @@ A metric is a quantifiable measurement of data used to track or assess a process
 
 ## Refined event
 
-A refined event is a virtual view of a base event. Use refined events to simplify a base event for export or to remove properties from an event that aren't necessary for exposure or export.
+A refined event is a virtual view of a base event filtered by specific properties of the data. Use refined events to simplify a base event for export or to remove properties from an event that aren't necessary for exposure or export.
 
 ## Report
 
-A report is a collection of data visualizations. Engagement insights capability includes several predefined reports for web projects.
+A report is a collection of data visualizations that help you measure and understand user behavior. Engagement insights capability includes several predefined reports for web projects. You can also create custom reports. 
 
 ## Workspace
 
-A workspace is how you store and manage events and reports. When you create a workspace, you select the type of data you will send to the workspace. The workspace is where you can view user activity in real time. 
+A workspace is how you store and manage events and reports. It's where you can view user activity in real time. When you create a workspace, you select the type of data you will send to the workspace.

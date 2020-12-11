@@ -5,7 +5,7 @@ ms.date: 08/19/2020
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
@@ -14,6 +14,9 @@ manager: shellyha
 # Subscription churn prediction (preview)
 
 Subscription churn prediction helps predicting whether a customer is at risk for no longer using your company’s subscription products or services. You can create new subscription churn prediction on the **Intelligence** > **Predictions** page. Select **My predictions** to see other predictions that you've created.
+
+> [!TIP]
+> Try the tutorial for a subscription churn prediction using sample data: [Subscription churn prediction sample guide](sample-guide-predict-subscription-churn.md).
 
 ## Prerequisites
 

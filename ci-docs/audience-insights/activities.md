@@ -15,8 +15,6 @@ manager: shellyha
 
 Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights to create a customer timeline that lists the activities in chronological order. You can include the timeline in customer engagement apps in Dynamics 365 via the [Customer Card add-in](customer-card-add-in.md), or in a Power BI dashboard.
 
-This article covers the **Activities** page.
-
 ## Define an activity
 
 Your data sources include entities with transactional and activity data from multiple data sources. Identify these entities and select the activities you want to view on the customer's timeline. Choose the entity that includes your target activity or activities.
@@ -79,7 +77,3 @@ Your data sources include entities with transactional and activity data from mul
 3. Select on the **Delete** icon.
 
 4. Confirm your deletion.
-
-## Next steps
-
-You can review the [Customer Card add-in](customer-card-add-in.md) article to show activities in other apps. To build a Power BI dashboard, have a look at the [Power BI connector](export-power-bi.md) article.

@@ -4,7 +4,7 @@ description: "Merge entities to create unified customer profiles."
 ms.date: 04/16/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
