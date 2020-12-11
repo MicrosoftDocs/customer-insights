@@ -44,7 +44,7 @@ On every enriched customer profile, we provide two related values – affinity l
 |Medium     | 35-69        |
 |Low     | 1-34        |
 
-Depending on the granularity you would like for measuring the affinity, you can use either affinity level or score. Affinity scope gives you more precise control.
+Depending on the granularity you would like for measuring the affinity, you can use either affinity level or score. Affinity score gives you more precise control.
 
 ## Supported countries/regions
 

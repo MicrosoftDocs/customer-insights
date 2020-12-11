@@ -40,6 +40,8 @@ To configure HERE Technologies enrichments, the following prerequisites must be 
 
 1.	Select **Add data** and choose the **Customer data set** you want to enrich with location data from HERE Technologies. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
 
+   :::image type="content" source="media/enrichment-HERE-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
+
 1. Choose if you want to map fields to the primary and/or secondary address. You can specify a field mapping for both addresses (for example, a home and a business address) and enrich the profiles for both addresses separately. Select **Next**.
 
 1. Define which fields from your unified profiles should be used to look for matching location data from HERE Technologies. The **Street 1** and **Zip/Postal Code** fields are required for the selected primary and/or secondary address. For a higher match accuracy, more fields can be added.
