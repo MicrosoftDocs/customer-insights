@@ -49,8 +49,8 @@ To configure Experian, the following prerequisites must be met:
 
 1.	Select **Save** to complete the field mapping.
 
-   > [!div class="mx-imgBorder"]
-   > ![Experian field mapping](media/experian-field-mapping.png "Experian field mapping")
+    > [!div class="mx-imgBorder"]
+    > ![Experian field mapping](media/experian-field-mapping.png "Experian field mapping")
 
 ## Enrichment results
 
