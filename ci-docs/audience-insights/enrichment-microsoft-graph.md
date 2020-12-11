@@ -62,8 +62,6 @@ To select a country, open the **Brands enrichment** or **Interest enrichment** a
 
 ## Configure Enrichment
 
-Configuring brands or interests enrichment consists of two steps:
-
 ### Define your brands or interests
 
 Select one of the following options:
@@ -73,12 +71,11 @@ Select one of the following options:
 
 To add a brand or interest, enter it in the input area to get suggestions based on matching terms. If we don't list a brand or interest you're looking for, send us feedback using the **Suggest** link.
 
-## Review enrichment preferences
+### Review enrichment preferences
 
 Review your default enrichment preferences and update them as needed.
 
 :::image type="content" source="media/affinity-enrichment-preferences.png" alt-text="Screenshot of the enrichment preferences window.":::
-
 
 ### Map your fields
 
