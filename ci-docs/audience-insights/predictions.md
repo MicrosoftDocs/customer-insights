@@ -4,7 +4,7 @@ description: "Use predictions to fill in incomplete customer data."
 ms.date: 05/05/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: zacook
@@ -12,6 +12,8 @@ manager: shellyha
 ---
 
 # Complete your partial data with predictions
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Predictions lets you easily create predicted values that can enhance your understanding of a customer. On the **Intelligence** > **Predictions** page, you can select **My predictions** to see predictions that you've configured in other parts of audience insights, and allow you to further customize them.
 
@@ -118,7 +120,7 @@ After you've created a prediction, you can customize the model in the AI Builder
 The next run of your prediction will use the updated model you've created.
 
 > [!NOTE]
-> New models created in AI Builder will not be displayed in audicen insights unless the model was created from the experiences listed above.
+> New models created in AI Builder will not be displayed in audience insights unless the model was created from the experiences listed above.
 
 ## Remove a prediction
 

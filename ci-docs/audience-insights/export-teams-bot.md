@@ -5,7 +5,7 @@ ms.date: 04/21/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
@@ -44,6 +44,6 @@ The bot provides lookup capabilities for unified customer profiles.
 
   You'll get a card with up to 15 fields from the resulting customer profile. Multiple matches return a list of results where you can select a profile. You can add the search term in double quotes to look up an exact match.
 
-- If your organization maintains multiple Customer Insights instances in the same organization, you can enter **switchinstance** to choose which instance you want to connect the bot to.
+- If your organization maintains multiple Customer Insights environments in the same organization, you can enter **switchinstance** to choose which environment you want to connect the bot to.
 
 - Enter **help** to see a list of available commands for the bot.  

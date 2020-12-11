@@ -1,0 +1,86 @@
+### YamlMime:Landing
+
+title: Engagement insights (preview) capability in Dynamics 365 Customer Insights
+summary: Collect data for your websites. Understand customer interactions and usage across your sites, interactively. Use the deep integration between engagement insights and audience insights to enrich your real-time behavioral analytics with customer profile reports. Enrich customer profiles with web activities to get real-time behavioral data alongside relevant customer data. Transform your business to derive immediate value from your customer data.
+
+metadata:
+  title: Engagement insights(preview) documentation
+  description: Help hub with key links for engagement insights.
+  ms.service: customer-insights
+  ms.subservice: engagement-insights
+  ms.topic: hub-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.reviewer: ruthai
+  ms.date: 10/30/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  - title: About
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Capability overview
+            url: overview.md
+          - text: Terms and concepts
+            url: glossary.md
+          - text: Terms of service
+            url: terms-of-service.md
+
+  - title: Onboarding
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Get started
+            url: get-started.md
+          - text: Create a workspace
+            url: create-workspace.md
+          - text: Instrument your website
+            url: instrument-website.md
+
+  - title: Reports
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View reports
+            url: view-reports.md
+          - text: Create custom reports
+            url: custom-reports.md
+          - text: View unified profiles report
+            url: profile-reports.md
+
+  - title: Events
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create refined events
+            url: refined-events.md
+          - text: Export events
+            url: export-events.md
+          - text: Delete and export personal data
+            url: delete-export-personal-data.md
+  
+  - title: Developer resources
+    linkLists:
+        - linkListType: reference
+          links: 
+            - text: Developer resources
+              url: developer-resources.md
+            - text: WebSDK sample
+              url: websdk-sample.md
+            - text: Advanced web SDK scenarios
+              url: advanced-SDK-implementation.md
+
+  - title: Administration
+    linkLists: 
+        - linkListType: how-to-guide
+          links:
+            - text: Manage environments and workspaces
+              url: manage-environments-workspaces.md
+            - text: Connect to audience insights 
+              url: configure-connections.md
+            - text: Manage cookies and user consent
+              url: user-consent-storage.md

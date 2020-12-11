@@ -4,7 +4,7 @@
 - name: Product overview
   href: overview.md
 
-- name: Access your instance
+- name: Access your environment
   href: https://home.ci.ai.dynamics.com/
 
 - name: Audience insights
@@ -15,6 +15,10 @@
 
     - name: Capability overview
       href: audience-insights/overview.md
+    
+    - name: Free trial
+      href: https://dynamics.microsoft.com/get-started/?appname=customerinsights
+  
 
     - name: New and updated features
       href: audience-insights/whats-new-audience-insights.md
@@ -23,10 +27,15 @@
       items:
         - name: Create a new environment
           href: audience-insights/home.md
+        - name: Ingest data
+          href: https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/
         - name: Create a unified customer profile
           href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
         - name: Work with the app
           href: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+        - name: Enrich data and predictions
+          href: https://docs.microsoft.com/learn/modules/enrich-data/
+         
 
     - name: Data sources
       items:
@@ -70,10 +79,14 @@
           href: audience-insights/enrichment-hub.md
         - name: Brand and interest affinities
           href: audience-insights/enrichment-microsoft-graph.md
+        - name: Enrich with HERE Technologies
+          href: audience-insights/enrichment-here.md
         - name: Enrich with Leadspace
           href: audience-insights/enrichment-leadspace.md
         - name: Enrich with Experian
           href: audience-insights/enrichment-experian.md
+        - name: Enrich with SFTP custom import
+          href: audience-insights/enrichment-SFTP-custom-import.md
 
     - name: Segments and measures
       items:
@@ -92,10 +105,18 @@
           href: audience-insights/predictions.md
         - name: Predict subscription churn
           href: audience-insights/predict-subscription-churn.md
+        - name: Sample guide for subscription churn prediction
+          href: audience-insights/sample-guide-predict-subscription-churn.md
+        - name: Predict transactional churn
+          href: audience-insights/predict-transactional-churn.md
+        - name: Sample guide for transactional churn prediction
+          href: audience-insights/sample-guide-predict-transactional-churn.md
         - name: Implement custom machine learning models
           href: audience-insights/custom-models.md
         - name: Experiments with Azure Machine learning
           href: audience-insights/azure-machine-learning-experiments.md
+        - name: Experiments with Azure Machine Learning studio
+          href: audience-insights/machine-learning-studio-experiments.md
 
     - name: Export options
       items:
@@ -103,6 +124,8 @@
           href: audience-insights/export-destinations.md
         - name: Azure Blob Storage
           href: audience-insights/export-azure-blob-storage.md
+        - name: DotDigital
+          href: audience-insights/export-dotdigital.md
         - name: Dynamics 365 Customer Service (Add-in)
           href: audience-insights/customer-card-add-in.md
         - name: Dynamics 365 Marketing
@@ -113,12 +136,16 @@
           href: audience-insights/customer-card-add-in.md
         - name: Facebook Ads Manager
           href: audience-insights/export-facebook.md
+        - name: Google Ads
+          href: audience-insights/export-google-ads.md
         - name: LiveRamp
           href: audience-insights/export-liveramp.md
         - name: Mailchimp
           href: audience-insights/export-mailchimp.md
         - name: Microsoft Teams (bot)
           href: audience-insights/export-teams-bot.md
+        - name: Marketo
+          href: audience-insights/export-marketo.md
         - name: Power BI
           href: audience-insights/export-power-bi.md
         - name: Power Apps
@@ -138,6 +165,8 @@
           href: audience-insights/manage-environments.md
         - name: Export diagnostic logs
           href: audience-insights/diagnostics.md
+        - name: Connect to an ADLS storage account using Service Principal
+          href: audience-insights/connect-service-principal.md
         - name: Supported languages
           href: audience-insights/supported-languages.md
 
@@ -146,7 +175,9 @@
         - name: Review the entity schemas in Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Work with APIs
-          href: audience-insights/apis.md
+          href: audience-insights/apis.md 
+        - name: API references
+          href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
 
     - name: Service limits
       href: audience-insights/service-limits.md
@@ -154,8 +185,76 @@
     - name: DSR requests under GDPR
       href: audience-insights/gdpr.md
 
-- name: Free trial
-  href: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+- name: Engagement insights (preview)
+  items:
+    - name: Help hub
+      href: engagement-insights/index.yml
+
+    - name: Capability overview
+      href: engagement-insights/overview.md
+
+    - name: Free trial
+      href: https://pi.dynamics.com/
+    
+    - name: Quickstart
+      items: 
+        - name: Quickstart for public preview
+          href: engagement-insights/quickstart.md
+
+    - name: Get started
+      items:
+        - name: Get started
+          href: engagement-insights/get-started.md
+        - name: Create a workspace
+          href: engagement-insights/create-workspace.md
+        - name: Instrument your website
+          href: engagement-insights/instrument-website.md
+        - name: Concepts and terminology
+          href: engagement-insights/glossary.md
+
+    - name: Events
+      items: 
+        - name: Create and modify events
+          href: engagement-insights/refined-events.md
+        - name: Export events
+          href: engagement-insights/export-events.md
+
+    - name: Reports
+      items: 
+        - name: View reports
+          href: engagement-insights/view-reports.md
+        - name: Create custom reports
+          href: engagement-insights/custom-reports.md
+        - name: Create unified profile reports
+          href: engagement-insights/profile-reports.md
+
+    - name: Developer resources
+      items: 
+        - name: Developer resources overview
+          href: engagement-insights/developer-resources.md
+        - name: Web SDK tutorial
+          href: engagement-insights/advanced-SDK-implementation.md
+        - name: Web SDK sample
+          href: engagement-insights/websdk-sample.md
+
+    - name: Administration
+      items: 
+        - name: Roles and permissions
+          href: engagement-insights/user-roles.md
+        - name: Manage environments and workspaces
+          href: engagement-insights/manage-environments-workspaces.md
+        - name: Configure connections
+          href: engagement-insights/configure-connections.md
+        - name: Manage cookies and user consent
+          href: engagement-insights/user-consent-storage.md
+
+    - name: GDPR
+      items: 
+        - name: Delete and export personal data
+          href: engagement-insights/delete-export-personal-data.md
+
+    - name: Service limits
+      href: engagement-insights/quotas.md
 
 - name: Contact support
-  href: https://go.microsoft.com/fwlink/?linkid=2079641
+  href: https://go.microsoft.com/fwlink/?linkid=2145734

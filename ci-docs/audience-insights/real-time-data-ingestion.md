@@ -1,7 +1,7 @@
 ---
 title: "Real-time data ingestion and limitations"
 description: "General information about real-time capabilities in audience insights."
-ms.date: 06/02/2020
+ms.date: 10/27/2020
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -54,7 +54,7 @@ There are two ways to connect to the real-time API:
 
 Both ways share the following prerequisites:
 
-- A Customer Insights instance
+- A Customer Insights environment
 - Unified customer profiles
 - Activities configured and run
 - Contributor or Administrator permissions to authenticate your account
@@ -74,10 +74,10 @@ For details about creating flows, see the [Power Automate documentation](https:/
 You can use the real-time capabilities by building your own pipeline and connecting directly to the real-time API.    
 You can post an activity in the format of your source system or in the UnifiedActivity format. Get the format by making an API call to /api/instances/{instanceId}/manage/entities/UnifiedActivity.
 
-Details of this API, including parameters and responses, can be found in the **EntityData** section on the [API reference](apis.md).
+Details of this API, including parameters and responses, can be found in the **EntityData** section on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). For more information, see [Work with Customer Insights APIs](apis.md).
 
 ## Understand your real-time usage with telemetry
 
-Get an overview of the volume of requests posted to the real-time API and information about issues the system may encounter. You can [access the real-time telemetry](system.md#api-usage-tab) by going to **Admin** > **System** > **API usage**.
+Get an overview of the volume of requests to the real-time API and information about issues the system may encounter. You can [access the real-time telemetry](system.md#api-usage-tab) by going to **Admin** > **System** > **API usage**. In the **Operations** table, rows for API operations which use the real-time methods contain a button to view real-time API usage. The button is visualized with a binocular symbol. Select the button to open a side pane containing usage details for the real-time API usage in the current environment.
 
 Use the **Group by** selector to choose how to best present your real-time interactions on a timeline ranging from the last 24 hours to the last 30 days. You can group the data by API method, entity qualified name (ingested entity), created by (source of the event), result (success or failure) or error codes. The data is available as a history chart and as a table.

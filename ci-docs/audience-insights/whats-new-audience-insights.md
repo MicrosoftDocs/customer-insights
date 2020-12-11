@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 10/05/2020
+ms.date: 11/02/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -13,9 +13,11 @@ manager: shellyha
 
 # What's new in the audience insights capability of Dynamics 365 Customer Insights
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](https://docs.microsoft.com/dynamics365/release-plans/).
 
-You can also watch the following video to learn more about the capabilities planned for 2020 release wave 1.
+You can also watch the following video to learn more about the capabilities planned for the last six months.
 
 > [!VIDEO https://www.youtube.com/embed/jQh-7pscH30]
 
@@ -23,6 +25,111 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## November 2020 updates
+
+The updates in November 2020 include several features, performance upgrades, and bug fixes.
+
+### New and updated features in November 2020
+
+#### Data enrichment
+
+- **Bring your own enrichment data via Secure File Transfer Protocol (SFTP) custom import**
+  
+  SFTP custom import lets you to import enrichment data that doesn't have to go through the process of data unification. Learn more about SFTP custom import.
+
+  For more information, see [Enrich customer profiles with custom data (preview)](enrichment-SFTP-custom-import.md).
+ 
+- **Enrich your customer data with location data from HERE Technologies**
+
+  With HERE Technologies' data enrichment services, you can build a more precise location understanding of your customers with address normalization, latitude and longitude extraction, and more. Learn more about enriching with HERE Technologies.
+
+  For more information, see [Enrichment of customer profiles with HERE Technologies](enrichment-here.md).
+
+#### Data unification
+
+- **Flexibility to enable data profiling on selected entities and fields from your storage account**
+
+  You can indicate which data entities and fields from a Common Data Model folder in your Azure Data Lake storage account you want to enable data profiling as part of the data ingestion process.
+
+  For more information, see [Connect to a Common Data Model folder](connect-common-data-model.md#connect-to-a-common-data-model-folder).
+
+#### Extensibility
+
+- **Activate your segments through Google Ads**
+
+  Export segments from to Google Ads audience lists and use these lists to advertise on Google Search, Google Display Network, YouTube, and Gmail. Learn more about activating your segments through Google Ads.
+
+  For more information, see [Connector for Google Ads](export-google-ads.md).
+
+- **Activate your segments through Marketo**
+
+  Export segments to Marketo audiences and use these audiences for marketing automation. Learn more about activating your segments through Marketo. 
+
+  For more information, see [Connector for Marketo](export-marketo.md).
+
+- **Activate your segments through DotDigital**
+
+  Export segments to DotDigital and use them for marketing purposes. Learn more about activating your segments through DotDigital. 
+
+  For more information, see [Connector for DotDigital](export-dotdigital.md).
+
+#### Predictions
+
+- **Predict transactional churn**
+
+  The transaction churn prediction feature enables you, without the help of a data scientist, to predict the likelihood of a customer to stop purchasing products or services.  Using the prediction score, you can combine other information about your customers, like customer value, to create segments of high churn risk or high value customers. Use this segment to directly target customers through marketing activities, customer support, and other scenarios to reduce churn risk.
+ 
+  Configure the definition of churn as a time-based window specific to your business and define when customers are considered churned. For example, a grocery store may want to consider a customer churned if they have not purchased anything in the past 30 days.
+ 
+  As you continue creating the prediction, we'll guide you what data is needed, and enable you to map data about your business to fields required to predict churn for your customers. You can also set a schedule to retrain the model based on new information in your system to adapt to changing business circumstances.
+ 
+  For more information, see [Transactional churn prediction (preview)](predict-transactional-churn.md).
+
+#### System administration
+
+- **Reset environment**
+
+  Reset everything in an environment of a selected instance to start fresh.
+
+  For more information, see [Reset an existing environment](manage-environments.md#reset-an-existing-environment).
+
+
+- **Connect to your Azure Data Lake storage account using a service principal**
+
+  Write data output to and read data from your storage account using an Azure service principal. Existing storage account connections can continue to use the account key. They also offer an upgrade option to use the service principal moving forward. New connections will be based on the service principal authentication method for your storage account.
+
+  For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal for audience insights](connect-service-principal.md).
+
+## October 2020 updates
+
+The updates in October 2020 include several features, performance upgrades, and bug fixes.
+
+### New and updated features in October 2020
+
+#### Extensibility
+
+- **Export to Mailchimp**
+
+Export segments to existing audience lists in Mailchimp to provide a personalized email experience for your customers.
+
+For more information, see [Connector for Mailchimp](export-mailchimp.md).
+
+#### Data enrichment
+
+- **Deduplicate the source records in a Match entity**
+
+Specify deduplication rules on entities used in the match process to identify duplicate records. Merge them into one record and link all the source records to this merged record. This deduplicated record will then be used in the cross-entity matching process.
+
+For more information, see [Define deduplication on a match entity](match-entities.md#define-deduplication-on-a-match-entity).
+
+#### System administration
+
+- **Orchestration: New refresh option in Merge**
+
+Until today, when you run the merge process, the system ran all the downstream processes that depend on merge and subsequent processes. 
+You can now verify the output of the merge process (the unified customer entity) before using it in downstream processing like segments or measures.
+On the merge page, you can now choose to run only the merge step and run only this process. To refresh all the downstream processes too, you can choose run merge and downstream processes. 
 
 ## September 2020 updates
 
@@ -294,7 +401,7 @@ The updates in April 2020 includes several features, performance upgrades, and b
 
 - **Ingest analytical data from Dynamics 365 with Common Data Service**
   
-  Common Data Service is available as a way to create data sources. Existing Dynamics 365 customers can ingest analytical entities from Common Data Service to Customer Insights. A single data source can simultaneously use the same Common Data Service-managed lake in a Customer Insights instance.    
+  Common Data Service is available as a way to create data sources. Existing Dynamics 365 customers can ingest analytical entities from Common Data Service to Customer Insights. A single data source can simultaneously use the same Common Data Service-managed lake in a Customer Insights environment.    
   For more information, see [Connect to data in a Common Data Service managed data lake](connect-common-data-service-lake.md).
 
 #### Extensibility
