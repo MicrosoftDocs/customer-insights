@@ -4,7 +4,7 @@ description: How to create, rename, and delete a workspaces and environments.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 11/17/2020
+ms.date: 12/11/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -17,38 +17,55 @@ ms.manager: shellyha
 
 ## Overview
 
-Environments and workspaces are used to store and manage your reports, events, and other data assets. An environment can contain one or more workspaces. Workspaces are used to manage your analytics and store your data like reports and events. 
+A workspace is a space to store and manage events and reports. When you create a workspace, you select the type of data to send to the workspace. Currently, only web data is supported.
 
-### Environments
+An environment is a space where you manage your workspaces and connections. How you use environments depends on your organization and your use case.
 
-An environment is a space where you manage your workspaces and connections. How you use environments depends on your organization and your use case. 
+For example, you can create:
 
-For example: 
-- Choose to have a single environment.
-- Create separate environments for test and production.
-- Create separate environments that correspond to specific teams or departments in your organization, containing the relevant events for each audience.
-- Create separate environments for different global branches of your company.
-- Create connections to Customer Insights audience insights capability.
+- A single environment.
+- Separate environments for test and production.
+- Separate environments that correspond to specific teams or departments in your organization, containing the relevant events for each audience.
+- Separate environments for different global branches of your company.
+- Connections to Customer Insights audience insights capability.
 
-### Workspaces 
+## Connect your data
 
-A workspace is a space to store and manage events and reports. When you create a workspace, you select the kind of data you'll be sending the workspace. Currently, only web data is supported. Workspaces come with pre-defined reports. You can create custom reports using web metrics and dimensions.
+ When you set up your first workspace in engagement insights, you'll need to set up a connection to create a workspace and start to receive data.
+
+To create your first workspace
+
+1. In engagement insights, select **Connect your data** to start the wizard. 
+
+:::image type="content" source="media/banner.png" alt-text="Customer Insights page with connect your data button":::
+
+2. Choose the type of activity that you want to measure in a new workspace. Currently, only **Website activity** is available. **App activity** and **Device activity** will become available in future releases.
+
+1. Select **Next** to confirm and create the workspace.
+
+1. Add a code snippet to your website to start receiving data in engagement insights. You can implement this right away or share the code and instructions with your website admin. To find the code snippet later, go to **Admin**>**Data**> **Code**.
+
+   > [!IMPORTANT]
+   > Data will not show in the workspace until the code has been implemented on your website.
+
+1. Select **Done** to open your new workspace.  
+
 
 ## Manage a workspace
 
 You can maintain multiple workspaces concurrently in an environment. As a workspace admin, you can rename existing workspaces, or delete them. 
 
-To edit or delete a workspace, you have to select the workspace from the workspace switcher. 
+To edit, delete, or switch between workspaces, select the workspace from the workspace switcher.
 
 :::image type="content" source="media/select-workspace.png" alt-text="Workspace switcher highlighted in engagement insights user interface":::
 
-### Rename a workspace
+### Edit a workspace
 
 1. Go to **Admin** > **Settings** > **General**.
 
-1. In the **Workspace name** field, enter the new name.
+1. In the **Workspace name** box, enter a new name and optionally add a **Description** for your workspace.
 
-1. Select **Save**.
+1. Select **Save** to apply your changes.
 
 ### Delete a workspace
 
