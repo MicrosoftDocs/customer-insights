@@ -193,11 +193,6 @@
 
     - name: Free trial
       href: https://pi.dynamics.com/
-    
-    - name: Quickstart
-      items: 
-        - name: Quickstart for public preview
-          href: engagement-insights/quickstart.md
 
     - name: Get started
       items:
