@@ -4,7 +4,7 @@ description: An overview of help resources to get started quickly.
 ms.reviewer: ruthai
 ms.author: v-salash
 author: pickwick129
-ms.date: 10/30/2020
+ms.date: 12/10/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,18 +15,29 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Engagement insights capability enables business users to measure and understand customer behavior on websites. With the deep integration with audience insights, you can see rich real-time behavioral analytics alongside customer profile reports. The links in this article help you quickly configure and set up your environment.
+Engagement insights capability lets you collect and measure customer behavior on your website. It integrates with audience insights capability so you can see rich real-time behavioral analytics alongside customer profile reports. The links in this article help you quickly configure and set up your environment.
 
-## Recommended preparations
+## Sign up for a demo of engagement insights
 
-Review the following articles before setting up a workspace.
+You must have an active Microsoft Azure Active Directory user account. 
+
+1. Open the [engagement insights](https://pi.dynamics.com/) website. 
+
+1. Sign in with your school or work account.
+
+1. Select your region, and use the check box to indicate whether you want to opt in to receive updates and offers via email.
+
+1. Review the **engagement insights (preview) Terms of Use** and **Privacy Statement**, and then select **Explore the demo** to accept them.
+
+1. Explore the product using a set of sample data.
+
+## Set up your first workspace in engagement insights
+
+The starting point for any user is to set up a workspace. The workspace is where you'll start ingesting web analytics data. Review the following articles before setting up a workspace.
 
 - Review and agree to the [Terms of Service](terms-of-service.md) with Microsoft.  
 - Read the [Manage cookies and user consent](user-consent-storage.md) article. After reviewing this article, evaluate whether you need to update your user consent notification. If you previously had no "non-essential" cookies, you'll likely need to update your site policy.
 - Review the [glossary](glossary.md) to get a quick introduction about key terms and concepts. 
-
-## Set up a workspace
-The starting point for any user is to set up a workspace. The workspace is where you'll start ingesting web analytics data.
 
 1. Sign in to the [engagement insights capability portal](https://pi.dynamics.com) using your Microsoft Azure Active Directory user account.
 1. [Create a workspace](create-workspace.md) and add members.
@@ -39,7 +50,7 @@ The starting point for any user is to set up a workspace. The workspace is where
 	
 ## Export events
 
-An event records when a user views a page (view event) or interacts with content (action event). You can create refined events from web analytics data, filter it, and export it to your Azure Data Lake Storage. You can ingest the exported data as a data source in audience insights.
+An event records when a user views a page or interacts with content. You can create refined events from web analytics data, filter it, and export it to your Azure Data Lake Storage. You can ingest the exported data as a data source in audience insights.
 
 1. [Create refined events](refined-events.md) for export.
 
