@@ -40,7 +40,7 @@ You [switch to the environment](#change-between-environments) you created during
 
 ## Create a new production or sandbox environment
 
-In your environment, select the **Settings** icon in the header and select **New environment**.
+In your environment, select the **Environments** button in the header and select **New**.
 
 Follow the steps as if you [create a trial environment](#create-a-trial-environment). You get an additional option when selecting **Advanced settings** to store your data in your own Azure Data Lake. Provide your account name and account key to establish a connection to your Azure Data Lake. By default, data is stored in the Customer Insights managed data lake.
 
@@ -61,7 +61,7 @@ Under **Recent segments**, you see groups of customers based on demographic, beh
 
 The **Recent enrichments** section lists the results of the enrichment runs that completed recently. Enrichments add information about your customer base. For example, by understanding the interests and brands that they have affinity for. This information can be unlocked using the [enrichment](enrichment-microsoft-graph.md) capabilities, after completing the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
 
-## Change between environments
+## Switch environments
 
 Once you've set up and configured [data sources](data-sources.md), you'll want to switch from a demo environment to a live environment. Using the production environment lets you work with your own customer data. Select the **Environment** control in the upper-right corner of the page to change environments.
 
