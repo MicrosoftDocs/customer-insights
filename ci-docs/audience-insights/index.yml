@@ -29,39 +29,39 @@ landingContent:
           - text: Community site
             url: https://go.microsoft.com/fwlink/?linkid=2073991
 
-  - title: Ingest data sources
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Add data sources
-            url: data-sources.md
-          - text: Incremental refresh
-            url: incremental-refresh-data-sources.md
-          - text: Understand entities
-            url: entities.md
-
   - title: Unify data
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Map
-            url: map-entities.md
-          - text: Match
-            url: match-entities.md
-          - text: Merge
-            url: merge-entities.md
+          - text: Data sources overview
+            url: data-sources.md
+          - text: Unification overview
+            url: data-unificaiton.md
+          - text: Understand entities
+            url: entities.md
 
   # Card
-  - title: Refine customer profiles
+  - title: Enrich and refine data
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Enrich customer profiles
+            url: enrichment-hub.md
           - text: Configure relationships
             url: relationships.md
           - text: List customer activities
             url: activities.md
-          - text: Bring your own machine learning models
-            url: custom-models.md
+
+  - title: Get insights
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create segments
+            url: segments.md
+          - text: Create measures
+            url: measures.md
+          - text: Complete data with predictions
+            url: predictions.md
 
   - title: Export customer data
     linkLists:
