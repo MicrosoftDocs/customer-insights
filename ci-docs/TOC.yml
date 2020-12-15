@@ -56,7 +56,7 @@
 
     - name: Data unification
       items:
-        - name: Unification overview
+        - name: Data unification overview
           href: audience-insights/data-unification.md
         - name: Map entities and attributes
           href: audience-insights/map-entities.md
@@ -120,7 +120,7 @@
 
     - name: Export options
       items:
-        - name: Discover export destinations
+        - name: Export destinations overview
           href: audience-insights/export-destinations.md
         - name: Azure Blob Storage
           href: audience-insights/export-azure-blob-storage.md

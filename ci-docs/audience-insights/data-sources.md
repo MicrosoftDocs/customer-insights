@@ -11,7 +11,7 @@ ms.reviewer: adkuppa
 manager: shellyha
 ---
 
-# Overview about data sources
+# Data sources overview
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
