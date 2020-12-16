@@ -23,10 +23,11 @@
     - name: New and updated features
       href: audience-insights/whats-new-audience-insights.md
 
-    - name: Get started
+    - name: Create a new environment
+      href: audience-insights/home.md
+
+    - name: Learn modules
       items:
-        - name: Create a new environment
-          href: audience-insights/home.md
         - name: Ingest data
           href: https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/
         - name: Create a unified customer profile
