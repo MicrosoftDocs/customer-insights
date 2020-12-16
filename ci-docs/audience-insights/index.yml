@@ -36,7 +36,7 @@ landingContent:
           - text: Data sources overview
             url: data-sources.md
           - text: Unification overview
-            url: data-unificaiton.md
+            url: data-unification.md
           - text: Understand entities
             url: entities.md
 
