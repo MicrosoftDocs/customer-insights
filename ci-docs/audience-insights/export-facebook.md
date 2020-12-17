@@ -59,6 +59,12 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab).
 
+## Known limitations
+
+- Up to 10 million customer profile per export to Facebook Ads Manager 
+- Export to Facebook Ads Manager is limited to segments
+- Exporting segments with a total of 10 million profiles can take up to 90 minutes to complete
+
 ## Data privacy and compliance
 
 When you enable Dynamics 365 Customer Insights to transmit data to Facebook Ads Manager, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Facebook Ads meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).

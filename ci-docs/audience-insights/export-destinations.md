@@ -11,7 +11,7 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Export destinations (preview)
+# Export destinations (preview) overview
 
 The **Export destinations** page shows you all locations you've set up to export data to. You can also add new destinations for export. Additionally, it shows export currently available options. Get a quick overview, description, and find out what you can do with each extensibility option. Export unified profiles, measures, and segments to supported apps relevant for your business.
 
