@@ -1,7 +1,7 @@
 ---
 title: Integrate web data from engagement insights with audience insights
 description: Bring web information about customers from engagement insights to audience insights. 
-ms.date: 11/06/2020
+ms.date: 12/17/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -17,9 +17,9 @@ Customers often do their day to day transactions online using web sites. The eng
 
 This article describes the steps to bring your customers’ web activity data from engagement insights into your existing audience insights environment.
 
-In this example, we assume an environment that contains customer profiles that were unified with sources from surveys, retail sales, and a ticketing system. It also shows the activities that the customer has performed. 
+In this example, we assume an environment that contains unified customer profiles. The profiles were unified with sources from surveys, retail sales, and a ticketing system. It also shows the related activities of the customers. 
 
-We now want to know if a customer visits our web properties and understand their activities, such as visiting a website or viewing a product page through a link that was sent in email.
+We now want to know if a customer visits our web properties and understand their activities. Activities include, for example, visited websites or viewed product pages from a link received in an email.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ To integrate data from engagement insights, a few prerequisites need to be met:
 
 ## Configure refined events in engagement insights
 
-After instrumenting a website with the engagement insights SDK, *base events* are gathered when a user views a web page or does an action by clicking a property. Base events tend to contain numerous details. Depending on your use case, you only need a subset of the data in a base event. Engagement insights let you create *refined events* that contain only the properties of a base event that you select.     
+After an administrator instrumented a website with the engagement insights SDK, *base events* are gathered when a user views a web page or clicks somewhere. Base events tend to contain numerous details. Depending on your use case, you only need a subset of the data in a base event. Engagement insights let you create *refined events* that contain only the properties of a base event that you select.     
 
 For more information, see [Create and modify refined events](../engagement-insights/refined-events.md).
 
@@ -54,7 +54,7 @@ For more information, see [Export events](../engagement-insights/export-events.m
 
 ## Ingest event data to audience insights
 
-Now that you have defined the refined event and configured its export, we move on to ingesting the data to audience insights. First, you need to create a new data source based on a Common Data Model folder. Enter the details for the storage account you export the events to. In the default.cdm.json file, select the refined event to ingest and create the entity in audience insights.
+Now that you have defined the refined event and configured its export, we move on to ingesting the data to audience insights. First, you need to create a new data source based on a Common Data Model folder. Enter the details for the storage account you export the events to. In the *default.cdm.json* file, select the refined event to ingest and create the entity in audience insights.
 
 For more information, see [Connect to a Common Data Model folder using an Azure Data Lake account](connect-common-data-model.md)
 
@@ -91,4 +91,4 @@ After processing the activities, you can review customer records and open a cust
 
 ## Next Steps
 
-You can now create [segments](segments.md), [measures, and [predictions](predictions.md) to make a meaningful connection with your customers.
+You can now create [segments](segments.md), [measures](measures.md), and [predictions](predictions.md) to make a meaningful connection with your customers.
