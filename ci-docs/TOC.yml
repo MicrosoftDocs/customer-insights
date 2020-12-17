@@ -126,6 +126,8 @@
           href: audience-insights/export-destinations.md
         - name: Azure Blob Storage
           href: audience-insights/export-azure-blob-storage.md
+        - name: Autopilot
+          href: audience-insights/export-autopilot.md
         - name: DotDigital
           href: audience-insights/export-dotdigital.md
         - name: Dynamics 365 Customer Service (Add-in)
