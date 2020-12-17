@@ -48,13 +48,13 @@ Select the filters to focus on the events and pages that matter for your use cas
 
 ## Export the Refined Web Events 
 
-After defining the refined event is defined, you have to configure the export of the event data. Exports happen constantly as the events flow from the web property.
+After defining the refined event is defined, you have to configure the export of the event data to an Azure Data Lake Storage, that can be set as a data source for ingestion in audience insights. Exports happen constantly as the events flow from the web property.
 
 For more information, see [Export events](../engagement-insights/export-events.md).
 
 ## Ingest event data to audience insights
 
-Now that you have defined the refined event and configured its export, we move on to ingesting the data to audience insights. First, you need to create a new data source based on a Common Data Model folder. Enter the details for the storage account you export the events to. In the *default.cdm.json* file, select the refined event to ingest and create the entity in audience insights.
+Now that you have defined the refined event and configured its export, we move on to ingesting the data to audience insights. You need to create a new data source based on a Common Data Model folder. Enter the details for the storage account you export the events to. In the *default.cdm.json* file, select the refined event to ingest and create the entity in audience insights.
 
 For more information, see [Connect to a Common Data Model folder using an Azure Data Lake account](connect-common-data-model.md)
 
