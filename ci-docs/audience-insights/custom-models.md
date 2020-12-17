@@ -47,7 +47,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 1. For each **Web service input**, select the matching **Entity** from audience insights and select **Next**.
    > [!NOTE]
-   > Please note that the custom model workflow will apply heuristics to map the Web service input fields to the Entity attributes based on the name and data type of the field. An error is displayed if a Web service field can't be mapped to an Entity.
+   > The custom model workflow will apply heuristics to map the web service input fields to the entity attributes based on the name and data type of the field. You'll see and error if a web service field can't be mapped to an entity.
 
    > [!div class="mx-imgBorder"]
    > ![Configure a workflow](media/intelligence-screen2-updated.png "Configure a workflow")
