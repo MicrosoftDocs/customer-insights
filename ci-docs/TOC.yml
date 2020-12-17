@@ -23,10 +23,11 @@
     - name: New and updated features
       href: audience-insights/whats-new-audience-insights.md
 
-    - name: Get started
+    - name: Create a new environment
+      href: audience-insights/home.md
+
+    - name: Learn modules
       items:
-        - name: Create a new environment
-          href: audience-insights/home.md
         - name: Ingest data
           href: https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/
         - name: Create a unified customer profile
@@ -56,7 +57,7 @@
 
     - name: Data unification
       items:
-        - name: Unification overview
+        - name: Data unification overview
           href: audience-insights/data-unification.md
         - name: Map entities and attributes
           href: audience-insights/map-entities.md
@@ -120,7 +121,7 @@
 
     - name: Export options
       items:
-        - name: Discover export destinations
+        - name: Export destinations overview
           href: audience-insights/export-destinations.md
         - name: Azure Blob Storage
           href: audience-insights/export-azure-blob-storage.md

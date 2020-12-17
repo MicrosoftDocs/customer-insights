@@ -11,7 +11,7 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Data unification
+# Data unification overview
 
 After [setting up the data sources](data-sources.md), you can unify the data. Data unification includes three steps: **Map**, **Match**, and **Merge**.
 
