@@ -46,10 +46,12 @@ Predictions offer capabilities to create better customer experiences, improve bu
      > Your pipeline must be published under a [pipeline endpoint](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. For each **Web service input**, select the matching **Entity** from audience insights and select **Next**.
+   > [!NOTE]
+   > Please note that the custom model workflow will apply heuristics to map the Web service input fields to the Entity attributes based on the name and data type of the field. An error is displayed if a Web service field can't be mapped to an Entity.
 
    > [!div class="mx-imgBorder"]
    > ![Configure a workflow](media/intelligence-screen2-updated.png "Configure a workflow")
-
+   
 1. In the **Model Output Parameters** step, set the following properties:
    - Machine Learning Studio (classic)
       1. Enter the output **Entity name** you want web service output results to flow into.
