@@ -34,6 +34,7 @@
           href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
         - name: Work with the app
           href: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+
         - name: Enrich data and predictions
           href: https://docs.microsoft.com/learn/modules/enrich-data/
          
@@ -171,6 +172,8 @@
 
     - name: Extensibility
       items:
+        - name: Integrate web data from engagement insights
+          href: audience-insights/integrate-engagement-insights.md
         - name: Review the entity schemas in Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Work with APIs
