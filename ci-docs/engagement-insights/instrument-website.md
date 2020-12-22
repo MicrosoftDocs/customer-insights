@@ -1,10 +1,10 @@
 ---
-title: Get started with the web SDK
-description: How to use the engagement insights capability to capture events on your website.
+title: Add code to your website
+description: How to add code to capture events on your website.
 author: pickwick129
 ms.reviewer: m-hartmann
 ms.author: v-salash
-ms.date: 12/17/2020
+ms.date: 12/22/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,11 +15,11 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Once you add code to your website, data starts to appear in your workspace. You'll start seeing events in your workspace in five minutes or less after implementing the code.
+This article describes the steps that an administrator must take to add a code snippet to a website. You'll start seeing events in your workspace in five minutes or less after implementing the code.
 
 ## Prerequisites
 
-* Your webpage or project must be hosted to send telemetry data. Telemetry data sent from a local file will not be accepted by the server.
+* Your webpage or project must be hosted to send activity data. Data sent from a local file will not be accepted by the server.
 * You must have an ingestion key (already embedded in your code snippet).
 
 ## Integrate web code into your webpage
