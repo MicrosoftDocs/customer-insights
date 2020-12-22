@@ -19,7 +19,7 @@ Engagement insights capability lets you collect and measure customer behavior on
 
 ## Step 1: Prerequisites
 
-You must have an active Microsoft Azure Active Directory user account. Review the following articles before setting up an engagements insights workspace.
+First, you must have an active Microsoft Azure Active Directory user account. Then, review the following articles before setting up an engagements insights workspace.
 
 - Review and agree to the [Terms of Service](terms-of-service.md) with Microsoft.  
 - Read the [Manage cookies and user consent](user-consent-storage.md) article. After reviewing this article, evaluate whether you need to update your user consent notification. If you previously had no "non-essential" cookies, you'll likely need to update your site policy.
@@ -48,7 +48,7 @@ The workspace is where you can view user activity in real time, and store and ma
 	
 ## Step 4: Export data to other channels
 
-You can create *refined events* (a virtual view) from your web analytics data. Then filter and export the data to Azure Data Lake Storage. You can ingest the exported data as a data source into audience insights.
+You can create *refined events* (a virtual view) of your web analytics data. Then filter and export the data to Azure Data Lake Storage. You can ingest the exported data as a data source into audience insights.
 
 1. [Create refined events](refined-events.md) for export.
 
