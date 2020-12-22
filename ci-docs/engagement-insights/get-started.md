@@ -19,21 +19,17 @@ Engagement insights capability lets you collect and measure customer behavior on
 
 ## Step 1: Prerequisites
 
-First, review the following articles before setting up an engagements insights workspace.
+You must have an active Microsoft Azure Active Directory user account. Review the following articles before setting up an engagements insights workspace.
 
 - Review and agree to the [Terms of Service](terms-of-service.md) with Microsoft.  
 - Read the [Manage cookies and user consent](user-consent-storage.md) article. After reviewing this article, evaluate whether you need to update your user consent notification. If you previously had no "non-essential" cookies, you'll likely need to update your site policy.
-- Review the [glossary](glossary.md) to get a quick introduction about key terms and concepts. 
+- Review the [glossary](glossary.md) to get a quick introduction to key terms and concepts.
 
 ## Step 2: Explore engagement insights
 
-The first time you visit engagement insights you can  review the privacy statement, configure settings, and set up your workspace. The workspace is where you'll start ingesting web analytics data. You must have an active Microsoft Azure Active Directory user account.
+The first time you visit engagement insights you can configure settings, review policies, and explore the product.
 
-1. Sign in to the [engagement insights capability portal](https://pi.dynamics.com) using your Microsoft Azure Active Directory user account.
-
-1. Open the [engagement insights](https://pi.dynamics.com/) website. 
-
-1. Sign in with your school or work account.
+1. Sign in to the [engagement insights capability portal](https://pi.dynamics.com) using your Microsoft Azure Active Directory user account. (It can be your school or work account.)
 
 1. Select your region, and use the check box to indicate whether you want to opt in to receive updates and offers via email.
 
@@ -44,15 +40,15 @@ The first time you visit engagement insights you can  review the privacy stateme
 
 
 ##  Step 3: Set up a workspace and add code to your website
-The workspace is where you manage the data that comes in from users. 
+The workspace is where you can view user activity in real time, and store and manage reports. Add code to your website to start collecting *events*, the activity data that comes in from users.
 1. [Create a workspace](create-workspace.md) and add members.
-1. [Add code to your website](instrument-website.md) to see telemetry arriving into your workspace.
+1. [Add code to your website](instrument-website.md) to see user activity arriving into your workspace.
 
 1. View a [real-time report](view-reports.md) showing active users by browser, device, operating system, location, and language. You can also create [custom reports](custom-reports.md) to create your own visualizations.
 	
 ## Step 4: Export data to other channels
 
-When a user views a page or interacts with content, engagement insights records it as an *event*. You can create refined events (a virtual view) from web analytics data, that you can filter and export to your Azure Data Lake Storage. You can ingest the exported data as a data source in audience insights.
+You can create *refined events* (a virtual view) from your web analytics data. Then filter and export the data to Azure Data Lake Storage. You can ingest the exported data as a data source into audience insights.
 
 1. [Create refined events](refined-events.md) for export.
 
