@@ -24,13 +24,13 @@ This article describes the steps that an administrator takes to add a code snipp
 
 ## Add code to your webpage
 
-1. In the navigation pane, choose your workspace from the workspace drop-down list. If you don't have a workspace, select **+ New Workspace**  to create one.
-
-2. Go to **Admin** > **Code**  and copy the code snippet. By default, your ingestion key is embedded in the code snippet.
+1. Go to **Admin** > **Data** > **Code**  and copy the code snippet. By default, your ingestion key is embedded in the code snippet.
 
    :::image type="content" source="media/copy-code.png" alt-text="Code page screenshot":::
 
-3. Add the copied code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
+1. Add the copied code snippet to your webpage, near the top of the `<head>` tag and before any other script or CSS tags.
+
+1. To start seeing data, select your workspace from the workspace drop-down list in the navigation pane. If you don't have a workspace, select **+ New Workspace**  to create one.
 
 ## Configuration options
 
