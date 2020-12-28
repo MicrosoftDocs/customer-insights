@@ -2,9 +2,9 @@
 title: About custom reports
 description: Learn how to create and custom reports.
 author: pickwick129
-ms.reviewer: ruthai
+ms.reviewer: m-hartmann
 ms.author: v-salash
-ms.date: 11/17/2020
+ms.date: 12/28/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,7 +15,8 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
- A report is a collection of data visualizations to help you understand how users behave. You can use the interactive custom report builder in engagement insights capability to combine metrics and dimensions. Create a report with the data you need, using the visualizations you want.
+ In addition to out-of-box reports, you can build a custom report to help you understand user behavior. This article explain how to visualize (or design) a chart or table with data that you specify.
+
 
 ## Create a custom report
 
@@ -25,11 +26,11 @@ ms.manager: shellyha
 
    :::image type="content" source="media/new-custom-report.png" alt-text="New custom reports":::
 
-1. In the **Report editor** pane, choose a **Visualization**.
+1. Select **+ Add visual** in the command bar to create a table report or select a chart visualization from the **Report editor** pane.
 
    :::image type="content" source="media/choose-visualization.png" alt-text="First step for custom reports":::
 
-1. Choose one of the available **Metrics** and choose the **Dimensions** to show on the visualization.
+1. After you decide on a report, choose one of the available **Metrics** (e.g., page views) to display. Then add **Dimensions** to show on the visualization.
 
 1. To add another visualization, select **Add visual** in the command bar.     
    By default, the new visualization is a table. Select **Design** in the **Visualization editor** pane to change the visualization type. Continue by choosing a metric and dimensions.
