@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
- In addition to out-of-box reports, you can build a custom report to help you understand user behavior. This article explain how to visualize (or design) a chart or table with data that you specify.
+ In addition to out-of-box reports, you can build a custom report with chart and table visualizations to help you understand user behavior. This article explains how to create a report with the data you need using table and chart visualizations.
 
 
 ## Create a custom report
@@ -26,30 +26,34 @@ ms.manager: shellyha
 
    :::image type="content" source="media/new-custom-report.png" alt-text="New custom reports":::
 
-1. Select **+ Add visual** in the command bar to create a table report or select a chart visualization from the **Report editor** pane.
+1. Decide the type of report you want to build:
+
+    - Select **Add visual** in the command bar to create a default table visualization.
+    - Or, select a column, bar, line, area, pie, donut, or table visualization from the **Report editor** pane.
 
    :::image type="content" source="media/choose-visualization.png" alt-text="First step for custom reports":::
 
-1. After you decide on a report, choose one of the available **Metrics** (e.g., page views) to display. Then add **Dimensions** to show on the visualization.
-
-1. To add another visualization, select **Add visual** in the command bar.     
-   By default, the new visualization is a table. Select **Design** in the **Visualization editor** pane to change the visualization type. Continue by choosing a metric and dimensions.
+1. In the **Data** pane,  choose one of the available **Metrics** (for example, page views) to display. Then add **Dimensions** (for example, country) to show on the visualization.
 
    :::image type="content" source="media/set-metrics-dimensions.png" alt-text="Specify metrics and dimensions for a visualization":::
 
-1. You can change the size and position of a visualization:
+1. Select **Design** in the **Visualization editor** pane to add **Title text**, and set the **Position**, **Data labels**, and **axis**.  You can also change the visualization by selecting another chart type.
+
+  :::image type="content" source="media/set-designs.png" alt-text="Editing visualizations for custom reports":::
+
+6. You can change the size and position of a visualization:
    - Select the visualization and then drag one of the corners or borders to adjust its size.
    - Select the visualization and move it to a new position. You can also use the arrow keys to change the position.
+1. To add another visualization, select **Add visual** in the command bar.
+1. After adding the visualizations you want for the report, select **Save** in the command bar.
 
-1. After adding all required visualizations, select **Save** in the command bar. 
-
-1. Provide a name for the custom report and select **Save** to create the custom report.
+1. Provide a name for the custom report and select **Save** to create it.
  
 ## Edit a custom report
 
 1. Go to **Reports** > **Custom** to access the custom report list.
 
-1. In the custom report list, select **...**. 
+1. In the custom report list, select.... 
 
 1. Choose **Edit details** to change the name of the report.
 
@@ -65,7 +69,7 @@ ms.manager: shellyha
 
 1. Go to **Reports** > **Custom** to access the custom report list.
 
-1. In the custom report list, select **...**.
+1. In the custom report list, select....
 
 1. Choose **Delete** to remove the report.
 
