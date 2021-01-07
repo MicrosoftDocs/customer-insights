@@ -34,7 +34,7 @@ With audience insights, organizations can:
 
   - Drive personalized engagement across channels—empower marketing, sales, and service professionals with out-of-the-box, contextual customer insights and tailored customer profile cards infused into the business applications they already use every day
   - Automate customer-centric experiences and processes based on customizable profiles, business measures, and segments.
-  - Enable and extend line-of-business experiences built on the Microsoft Power Platform. Quickly build applications with embedded insights using a powerful low code approach from PowerApps.  
+  - Enable and extend line-of-business experiences built on Microsoft Power Platform. Quickly build applications with embedded insights using a powerful low code approach from PowerApps.  
 
 Audience insights includes capabilities for the following key users:
 
