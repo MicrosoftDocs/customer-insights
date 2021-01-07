@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 11/02/2020
+ms.date: 01/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -25,6 +25,47 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## December 2020 updates
+
+The updates in December 2020 include several features, performance upgrades, and bug fixes.
+
+### New and updated features in December 2020
+
+#### Data enrichment
+
+- **Improved Brand and Interest affinity enrichments**
+  
+  We have simplified our affinity scores to make them easier to understand and use. You can now quickly identify customers based on how much affinity they have for a given brand or interest.
+
+  Additionally, we have added new configuration options to better control how you want your customer profiles to be enriched. 
+
+  For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft-graph.md).
+
+- **Control which profiles to enrich**
+
+  You can now enrich only a subset of your customer profiles with the option to select a segment entity instead of the default customer entity. Simply create a segment with the customer profiles you would like to enrich and select it in the enrichment configuration for your customer data set.
+  This feature is currently available only for enrichments provided by Experian and HERE Technologies. We will be enabling this capability to more enrichments soon.
+
+  For more information, see [Enrich customer profiles with demographics from Experian](enrichment-experian.md) or [Enrichment of customer profiles with HERE Technologies](enrichment-here.md).
+
+#### Extensibility
+
+- **Activate your segments through Autopilot**
+
+  Export segments to Autopilot and use them for marketing purposes. For more information, see [Connector for Autopilot (preview)](export-autopilot.md).
+
+- **Activate your segments through SendGrid**
+
+  Export segments to SendGrid and use them for marketing purposes. For more information, see [Connector for SendGrid](export-sendgrid.md).
+
+#### System administration
+
+- **Updated environment management experience**
+  
+  You can now create, edit, delete and reset environments directly from the environment picker in the app header. 
+  
+  Additionally, the environment you are using will be pinned at the top of the environment panel so you don't need to search for it anymore.
 
 ## November 2020 updates
 
