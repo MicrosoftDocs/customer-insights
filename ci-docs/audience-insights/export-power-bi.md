@@ -47,3 +47,20 @@ The Customer Insights connector for Power BI is designed to work for data sets t
 ### Work with a subset of data
 
 Consider working with a subset of your data. For example, you can create [segments](segments.md) instead of exporting all customer records to Power BI.
+
+## Troubleshooting
+
+### Customer Insights instance not showing up in Power BI after configuring the connector
+
+Instances that have more than one [relationship](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/relationships) defined between identical two entities in Audience Insights will not be available in the Power BI connector.
+
+To identify and remove the duplicate relationships, follow these steps:
+
+1. Navigate to the **Relationships** page of your instance that is not showing up in Power BI.
+2. Identify any duplicate relationships:
+   Check if there is more than one relationship defined between the same two entities.
+   Check if there is a relationship created between two entities that are both included in the unification process. There is an implicit relationship defined between all entities included in the unification process. 	
+3. Remove any duplicate relationships identified.
+
+After having removed the duplicate relationships, configure the Power BI connector again and the instance should now show up.  
+
