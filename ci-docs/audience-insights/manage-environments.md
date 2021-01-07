@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 11/10/2020
+ms.date: 01/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -41,7 +41,7 @@ There are two ways to create a new environment. You can either specify an entire
 
 To create an environment:
 
-1. Select the **Environments" button in the header of the app.
+1. Select the **Environment** picker in the header of the app.
 
 1. Select **New**.
 
@@ -115,34 +115,35 @@ When the data unification is complete, go to **Measures** and **Segments** to re
 
 You can edit some of the details of existing environments.
 
-1.	Click the **Environments** button at the app header. 
+1.	Select the **Environment** picker in the header of the app.
 
-2.	Click the **pencil** button.  
+2.	Select the **Edit** icon.
 
-3. The module that will open up is similar to the new instance module. Note that you can update the environment's **Display name**, but you can't change the **Region** or **Type**.
+3. In the **Edit environment** box, you can update the environment's **Display name**, but you can't change the **Region** or **Type**.
 
 4. If an environment is configured to store data in Azure Data Lake Storage Gen2, you can update the **Account key**. However, you can't change the **Account name** or **Container** name.
 
 5. Optionally, you can update from an account key based connection to a resource-based or subscription-based connection. Once upgraded, you cannot revert to account key after the update. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
 
-## Reset an existing environment (available only for admins)
+## Reset an existing environment
 
-You can reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
+As an administrator, you can reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
 
-1.	Click the **Environments** button at the app header. 
+1.	Select the **Environment** picker in the header of the app. 
 
-2.	Identify the instance you would like to reset and click the **three ellipsis** button. 
+2.	Select the environment you want to reset and select the ellipsis **...**. 
 
 3. Choose the **Reset** option. 
 
 4.	To confirm the deletion, enter the environment name and select **Reset**.
 
-
 ## Delete an existing environment (available only for admins)
 
-1.	Click the **Environments** button at the app header. 
+As an administrator, you can delete an environment you administer.
 
-2.	Identify the instance you would like to delete and click the **three ellipsis** button. 
+1.	Select the **Environment** picker in the header of the app.
+
+2.	Select the environment you want to reset and select the ellipsis **...**. 
 
 3. Choose the **Delete** option. 
 

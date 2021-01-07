@@ -1,7 +1,7 @@
 ---
 title: "Home page in audience insights"
 description: "Start exploring the app on the Home page."
-ms.date: 09/30/2020
+ms.date: 01/07/2021
 ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -40,7 +40,7 @@ You [switch to the environment](#change-between-environments) you created during
 
 ## Create a new production or sandbox environment
 
-In your environment, select the **Environments** button in the header and select **New**.
+In your environment, select the **Environments** picker in the app header and select **New**.
 
 Follow the steps as if you [create a trial environment](#create-a-trial-environment). You get an additional option when selecting **Advanced settings** to store your data in your own Azure Data Lake. Provide your account name and account key to establish a connection to your Azure Data Lake. By default, data is stored in the Customer Insights managed data lake.
 
