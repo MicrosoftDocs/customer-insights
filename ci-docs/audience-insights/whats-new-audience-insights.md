@@ -67,6 +67,8 @@ The updates in December 2020 include several features, performance upgrades, and
   
   Additionally, the environment you are using will be pinned at the top of the environment panel so you don't need to search for it anymore.
 
+  For more information, see [Manage environments](manage-environments.md).
+
 ## November 2020 updates
 
 The updates in November 2020 include several features, performance upgrades, and bug fixes.
