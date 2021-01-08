@@ -1,7 +1,7 @@
 ---
 title: "Home page in audience insights"
 description: "Start exploring the app on the Home page."
-ms.date: 09/30/2020
+ms.date: 01/07/2021
 ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -36,11 +36,11 @@ You can sign up for a trial on the [trial sign up page](https://dynamics.microso
 
 After the environment was created, you'll see the **Demo** environment which lets you explore the app with fictitious data. You can change the sample data to match your industry. Select the **Settings** icon in the header and select **Demo settings**. Additionally, you can change the visual theme. 
 
-You [switch to the environment](#change-between-environments) you created during the sign-up process to work with your own data.
+You [switch to the environment](#switch-environments) you created during the sign-up process to work with your own data.
 
 ## Create a new production or sandbox environment
 
-In your environment, select the **Settings** icon in the header and select **New environment**.
+In your environment, select the **Environments** picker in the app header and select **New**.
 
 Follow the steps as if you [create a trial environment](#create-a-trial-environment). You get an additional option when selecting **Advanced settings** to store your data in your own Azure Data Lake. Provide your account name and account key to establish a connection to your Azure Data Lake. By default, data is stored in the Customer Insights managed data lake.
 
@@ -61,7 +61,7 @@ Under **Recent segments**, you see groups of customers based on demographic, beh
 
 The **Recent enrichments** section lists the results of the enrichment runs that completed recently. Enrichments add information about your customer base. For example, by understanding the interests and brands that they have affinity for. This information can be unlocked using the [enrichment](enrichment-microsoft-graph.md) capabilities, after completing the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
 
-## Change between environments
+## Switch environments
 
 Once you've set up and configured [data sources](data-sources.md), you'll want to switch from a demo environment to a live environment. Using the production environment lets you work with your own customer data. Select the **Environment** control in the upper-right corner of the page to change environments.
 

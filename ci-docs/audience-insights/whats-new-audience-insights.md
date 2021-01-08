@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 11/02/2020
+ms.date: 01/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -26,6 +26,49 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## December 2020 updates
+
+The updates in December 2020 include several features, performance upgrades, and bug fixes.
+
+### New and updated features in December 2020
+
+#### Data enrichment
+
+- **Improved Brand and Interest affinity enrichments**
+  
+  We simplified our affinity scores to make them easier to understand and use. You can now quickly identify customers based on how much affinity they have for a given brand or interest.
+
+  Additionally, we have added new configuration options to better control how you want your customer profiles to be enriched. 
+
+  For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft-graph.md).
+
+- **Control which profiles to enrich**
+
+  You can now enrich only a subset of your customer profiles with the option to select a segment entity instead of the default customer entity. Create a segment with the customer profiles you would like to enrich and select it in the enrichment configuration for your customer data set.
+  This feature is currently available only for enrichments provided by Experian and HERE Technologies. We will be enabling this capability to more enrichments soon.
+
+  For more information, see [Enrich customer profiles with demographics from Experian](enrichment-experian.md) or [Enrichment of customer profiles with HERE Technologies](enrichment-here.md).
+
+#### Extensibility
+
+- **Activate your segments through Autopilot**
+
+  Export segments to Autopilot and use them for marketing purposes. For more information, see [Connector for Autopilot (preview)](export-autopilot.md).
+
+- **Activate your segments through SendGrid**
+
+  Export segments to SendGrid and use them for marketing purposes. For more information, see [Connector for SendGrid](export-sendgrid.md).
+
+#### System administration
+
+- **Updated environment management experience**
+  
+  You can now create, edit, delete, and reset environments directly from the environment picker in the app header. 
+  
+  Additionally, the environment you are using will be pinned at the top of the environment panel so you don't need to search for it anymore.
+
+  For more information, see [Manage environments](manage-environments.md).
+
 ## November 2020 updates
 
 The updates in November 2020 include several features, performance upgrades, and bug fixes.
@@ -36,7 +79,7 @@ The updates in November 2020 include several features, performance upgrades, and
 
 - **Bring your own enrichment data via Secure File Transfer Protocol (SFTP) custom import**
   
-  SFTP custom import lets you to import enrichment data that doesn't have to go through the process of data unification. Learn more about SFTP custom import.
+  SFTP custom import lets you import enrichment data that doesn't have to go through the process of data unification. Learn more about SFTP custom import.
 
   For more information, see [Enrich customer profiles with custom data (preview)](enrichment-SFTP-custom-import.md).
  
@@ -161,7 +204,7 @@ For more information, see [Enrich customer profiles with demographics from Exper
 The task details pane enables you to see details about tasks that the system runs. It's a handy way to identify issues with the configuration and find solutions.
 Review the error messages see how you address potential issues.
  
-- **Processing information added to additional pages**
+- **Processing information added to more pages**
 
 This improvement adds information about the status of your entities on the **Entities** and **Customers** page.
  
@@ -198,9 +241,9 @@ The updates in August 2020 include several features, performance upgrades, and b
 
 #### Enrichment
 
-- **Interest affinities enrichment available in additional markets**
+- **Interest affinities enrichment available in more markets**
 
-  We're extending the availability of the interest affinities enrichment beyond the United States to five additional markets: Canada, Australia, United Kingdom, France, and Germany. With this extension, you can enrich your customer data with additional interests applicable to these markets. We'll also enrich your customer profiles that are located in these markets by using local proprietary data from Microsoft Graph.
+  We're extending the availability of the interest affinities enrichment beyond the United States to five other markets: Canada, Australia, United Kingdom, France, and Germany. With this extension, you can enrich your customer data with more interests applicable to these markets. We'll also enrich your customer profiles that are located in these markets by using local proprietary data from Microsoft Graph.
   For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft-graph.md)
 
 
@@ -219,9 +262,9 @@ The updates in July 2020 include several features, performance upgrades, and bug
 
 #### Enrichment
 
-- **Brand affinities enrichment available in additional markets**
+- **Brand affinities enrichment available in more markets**
 
-  We're extending the availability of the brand affinities enrichment beyond the United States to five additional markets: Canada, Australia, United Kingdom, France, and Germany. With this extension, you can enrich your customer data with local brands in these markets. We'll also enrich your customer profiles that are located in these markets by using local proprietary data from Microsoft Graph.
+  We're extending the availability of the brand affinities enrichment beyond the United States to five other markets: Canada, Australia, United Kingdom, France, and Germany. With this extension, you can enrich your customer data with local brands in these markets. We'll also enrich your customer profiles that are located in these markets by using local proprietary data from Microsoft Graph.
   For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft-graph.md)
 
 ## June 2020 updates
@@ -234,7 +277,7 @@ The updates in June 2020 include several features, performance upgrades, and bug
 
 - **Enrichment with company data from Leadspace**
   
-  Define fields in unified customer profiles that are used to look up related company data from Leadspace. After running the enrichment process, B2B profiles are enriched with additional attributes including company size, location, industry, and more.    
+  Define fields in unified customer profiles that are used to look up related company data from Leadspace. After running the enrichment process, B2B profiles are enriched with more attributes including company size, location, industry, and more.    
   This collaboration allows you to improve the quality of your data with input from third-party services. To use this enrichment, you'll need a license from Leadspace to access its B2B company data. The system will use that license to keep your data enriched continuously.    
   For more information, see [Enrichment of company profiles with Leadspace](enrichment-leadspace.md).
 
@@ -260,7 +303,7 @@ The updates in June 2020 include several features, performance upgrades, and bug
   A new control on the Dynamics 365 Customer Card Add-in lets you show brand and interest enrichments on your contacts in customer engagement apps in Dynamics 365.    
   For more information, see [Customer Card Add-in](customer-card-add-in.md).
 
-- **Additional Power Automate triggers**
+- **More Power Automate triggers**
 
   We have extended our triggers for Power Automate and added the following triggers:
   - Get a notification or perform an action when an automated full refresh (data sources, unification, segments, measures, exports) completes
@@ -291,12 +334,12 @@ The updates in June 2020 include several features, performance upgrades, and bug
   
   Find similar customers in your customer base using artificial intelligence. A binary classification machine learning model assigns a similarity score to customers in the expanded segment. The score is based on the similarity to customers in the source segment. Depending on the similarity score, customer profiles are added to a newly created segment.
 
-  Sometimes referred to as lookalike modeling in digital marketing, it uses an AI model to help find customers who are similar to another segment of your customers by factoring in additional attributes. It not only allows you to pick the attributes but also allows you to specify the maximum number of customers who should be in this new segment. The AI model will then compute similarity scores for each customer based on your selected attributes and find customers with the higher average similarity score. The resulting segment will include customers who look similar to the customer in your original segment.    
+  Sometimes referred to as lookalike modeling in digital marketing, it uses an AI model to help find customers who are similar to another segment of your customers by factoring in more attributes. It not only allows you to pick the attributes but also allows you to specify the maximum number of customers who should be in this new segment. The AI model will then compute similarity scores for each customer based on your selected attributes and find customers with the higher average similarity score. The resulting segment will include customers who look similar to the customer in your original segment.    
   For more information, see [Similar Customers](find-similar-customer-segments.md).
 
 - **Segment overlap and differentiators**
 
-  Segment overlap lets you see how many and which customers are common to two or more segments. For example, how a high-spenders segment overlaps with a high-satisfaction customers segment or how a churning customer segment overlaps with a low-satisfaction customers segment. Additionally, you can analyze how the overlap changes based on an additional attribute of your choice.
+  Segment overlap lets you see how many and which customers are common to two or more segments. For example, how a high-spenders segment overlaps with a high-satisfaction customers segment or how a churning customer segment overlaps with a low-satisfaction customers segment. Additionally, you can analyze how the overlap changes based on an extra attribute of your choice.
 
   Segment differentiators reveal what differentiates one segment from the rest of your customers or from another segment. All you need to do is identify a segment and the system will identify profile attributes and measures that distinguish the segment in the form of a ranked list of differentiators—from the strongest differentiator to the weakest.    
   For more information, see [Segment insights (preview)](segment-insights.md).
@@ -329,7 +372,7 @@ The updates in May 2020 includes several features, performance upgrades, and bug
 
 - **Updated timeline and pagination on the Customer Card Add-in**
 
-  The timeline of the Customer Card Add-in solution matches the activity timeline. The pagination of the timeline improved, showing up to 50 activities at once. It also allows loading additional activities in the timeline.    
+  The timeline of the Customer Card Add-in solution matches the activity timeline. The pagination of the timeline improved, showing up to 50 activities at once. It also allows loading more activities in the timeline.    
   For more information, see [Customer Card Add-in](customer-card-add-in.md).
 
 - **Power Automate trigger for segment changes**
@@ -408,7 +451,7 @@ The updates in April 2020 includes several features, performance upgrades, and b
 
 - **Export to LiveRamp**
 
-  Activate your data in LiveRamp® to connect with over 500 platforms across digital, social, and TV ecosystems. Leverage your data in LiveRamp for targeting, suppressing, and personalizing ad campaigns.    
+  Activate your data in LiveRamp® to connect with over 500 platforms across digital, social, and TV ecosystems. Use your data in LiveRamp for targeting, suppressing, and personalizing ad campaigns.    
   For more information, see [LiveRamp&reg; connector](export-liveramp.md).
 
 - **Customer Insights Teams Add-in**
@@ -429,7 +472,7 @@ The updates in April 2020 includes several features, performance upgrades, and b
 
 #### Segments
 
-- **Additional operator**
+- **Another operator**
   
   The In-set operator allows segmentation for customers by several possible string values. Before this operator was added, you had to construct such segments with multiple OR conditions. The In-set operator lets you do that with a single condition.    
   For more information, see [Create and manage segments](segments.md).
