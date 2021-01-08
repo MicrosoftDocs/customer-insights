@@ -60,7 +60,7 @@ ms.manager: shellyha
 
 1. To change the properties of a visualization, select **...** and then select **Edit visual**.
 
-   :::image type="content" source="media/edit-visual-control.png" alt-text="Editing chart properties for custom reports":::
+   :::image type="content" source="media/edit-visual-control.png" alt-text="Edit a visual in custom reports":::
 
 1. After editing the report, select **Save** to apply your changes. 
 
