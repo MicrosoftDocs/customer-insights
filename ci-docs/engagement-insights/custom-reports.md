@@ -39,7 +39,7 @@ ms.manager: shellyha
 
 1. Select **Design** in the **Visualization editor** pane to add **Title text**, and set the **Position**, **Data labels**, and **axis**.  You can also change the visualization by selecting another chart type.
 
-   :::image type="content" source="media/set-designs.png" alt-text="Editing chart properties for custom reports":::
+   :::image type="content" source="media/set-designs.png" alt-text="Change visualization type for custom reports":::
 6. You can change the size and position of a visualization:
    - Select the visualization and then drag one of the corners or borders to adjust its size.
    - Select the visualization and move it to a new position. You can also use the arrow keys to change the position.
@@ -52,7 +52,7 @@ ms.manager: shellyha
 
 1. Go to **Reports** > **Custom** to access the custom report list.
 
-1. In the custom report list, select.... 
+1. In the custom report list, select **...** 
 
 1. Choose **Edit details** to change the name of the report.
 
@@ -60,7 +60,7 @@ ms.manager: shellyha
 
 1. To change the properties of a visualization, select **...** and then select **Edit visual**.
 
-   :::image type="content" source="media/edit-visual-control.png" alt-text="Edit a visual in custom reports":::
+   :::image type="content" source="media/edit-visual-control.png" alt-text="Editing chart properties for custom reports":::
 
 1. After editing the report, select **Save** to apply your changes. 
 
@@ -68,7 +68,7 @@ ms.manager: shellyha
 
 1. Go to **Reports** > **Custom** to access the custom report list.
 
-1. In the custom report list, select...
+1. In the custom report list, select **...**
 
 1. Choose **Delete** to remove the report.
 
