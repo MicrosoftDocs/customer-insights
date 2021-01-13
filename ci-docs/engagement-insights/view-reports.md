@@ -2,9 +2,9 @@
 title: View data reports
 description: Use the available reports to see real-time activity on your site.
 author: pickwick129
-ms.reviewer: ruthai
+ms.reviewer: darrin.wood
 ms.author: v-salash
-ms.date: 10/30/2020
+ms.date: 01/13/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -25,9 +25,9 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 
 :::image type="content" source="media/report-menu.png" alt-text="Navigation showing the list of available reports":::
 
-- Select a time frame for a report by choosing a value from the **time/date range** drop-down list. The time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.” 
+- To select a time frame, select **...** from the drop-down list of the report. Time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.”
 
-- In most reports, select a value in a chart or list to filter the report for the selected value. 
+- In most reports, select a value in a chart or list to filter the report for the selected value.
 
 ## Key metrics reports
 
