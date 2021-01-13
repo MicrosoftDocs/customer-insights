@@ -43,14 +43,12 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 
 ## Traffic sources reports
 
-- **Referring domains** lists the domains that referred visitors to your site.
-- **Referring URLs** identifies the URLs that referred visitors to your site.
+- **Referrers** lists the domains and URLs that referred visitors to your site.
 - **Tracking codes** provides details about the tracking codes in the links that brought visitors to your site.
 
 ## Visitor profiles reports
 
 - **Devices** lists the physical devices that were used to access your site.
-- **Operating systems** provides insights into the operating systems the devices were running when accessing your site.
-- **Browsers** shows a breakdown of the browsers that visitors  used to access your site.
-- **Locations** shows information about visitors by country and region.
+- **OS & browsers** provide insights into which  operating systems and browsers were running when accessing your site.
+- **Locations** shows information about visitors by country, region, and city.
 - **Language** lists the visitor's preferred languages.
