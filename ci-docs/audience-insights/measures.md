@@ -60,16 +60,12 @@ This section walks you through creating a measure from scratch. You can build me
 
 11. In the **Measure definition** section, you'll define how your chosen entities and calculated variables are aggregated in a new measure entity or attribute.
 
-12. Select **New dimension**. You can think of a dimension as a *group by* function. The data output of your Measure entity or attribute will be grouped by all of your defined dimensions.
-
-    > [!div class="mx-imgBorder"]
-    > ![Choose aggregate cycle](media/measures-businessreport-measure-definition2.png "Choose aggregate cycle")
+12. Select **New value**. You can think of a dimension as a *group by* function. The data output of your Measure entity or attribute will be grouped by all of your defined dimensions.
 
     Select or enter the following information as part of your dimension's definition:
 
     - **Entity**: If you define a Measure entity, it should include at least one attribute. If you define a Measure attribute, it will include only one attribute by default. This selection is about choosing the entity that includes that attribute.
     - **Field**: Choose the specific attribute to be included either in your Measure entity or attribute.
-    - **Bucket**: Choose whether you want to aggregate data on a daily, monthly, or annual basis. It's a required selection only if you've selected a Date type attribute.
     - **As**: Defines the name of your new field.
     - **Display name**: Defines the display name of your field.
 
