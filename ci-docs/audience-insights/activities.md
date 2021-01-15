@@ -39,13 +39,13 @@ Your data sources include entities with transactional and activity data from mul
 
 1. In the **Set up relationship** section, configure the details to connect your activity data to its corresponding customer.
 
-   > [!div class="mx-imgBorder"]
-   > ![Define the entity relationship](media/activities-entities-define.png "Define the entity relationship")
-
     - **Activity entity field**: Select the field in your activity entity that will be used to establish a relationship with another entity.
     - **Customer entity**: Select the corresponding source customer entity with which your activity entity will be in relationship. You can relate to only those source customer entities that are used in the data unification process.
     - **Customer entity field**: This field shows the primary key of the source customer entity as selected in the map process. This primary key field in the source customer entity is used to establish a relationship with the activity entity.
     - **Name**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If there no such relationship exists, a new relationship will be created with the name provided here.
+   
+   > [!div class="mx-imgBorder"]
+   > ![Define the entity relationship](media/activities-entities-define.png "Define the entity relationship")
 
 1. Select **Save** to apply your changes.
 
