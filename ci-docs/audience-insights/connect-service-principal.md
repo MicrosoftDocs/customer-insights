@@ -78,7 +78,7 @@ Attach an Azure Data Lake storage account in audience insights to [store output 
 
 Follow the below steps to provide the required information on the selected approach.
 
-### Resounce-based storage account connection
+### Resource-based storage account connection
 
 1. Go to the [Azure admin portal](https://portal.azure.com), sign in to your subscription and open the storage account.
 
@@ -103,7 +103,5 @@ Follow the below steps to provide the required information on the selected appro
 1. Review the **Subscription**, **Resource group**, and the **Name** of the storage account to make sure you select the right values in audience insights.
 
 1. In audience insights, choose the values or for the corresponding fields when attaching the storage account.
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Enter the storage account resource ID information.":::
    
 1. Continue with the remaining steps in audience insights to attach the storage account.
