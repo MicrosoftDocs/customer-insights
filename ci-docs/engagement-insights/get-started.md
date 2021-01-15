@@ -17,13 +17,13 @@ ms.manager: shellyha
 
 Engagement insights capability lets you collect and measure customer behavior on your website. It integrates with audience insights capability so you can see rich real-time behavioral analytics alongside customer profile reports. The links in this article help you quickly configure and set up your environment.
 
-## Step 1: Prerequisites
+## Step 1: Review prerequisites
 
-First, you must have an active Microsoft Azure Active Directory user account. Then, review the following articles before setting up an engagements insights workspace.
+First, you must have an active Microsoft Azure Active Directory user account. Then, read the following articles before setting up an engagements insights workspace.
 
 - Review and agree to the [Terms of Service](terms-of-service.md) with Microsoft.  
 - Read the [Manage cookies and user consent](user-consent-storage.md) article. After reviewing this article, evaluate whether you need to update your user consent notification. If you previously had no "non-essential" cookies, you'll likely need to update your site policy.
-- Review the [glossary](glossary.md) to get a quick introduction to key terms and concepts.
+- Review the [glossary](glossary.md) for a quick introduction to key terms and concepts.
 
 ## Step 2: Explore engagement insights
 
