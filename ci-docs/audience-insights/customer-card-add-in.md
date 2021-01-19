@@ -94,3 +94,18 @@ It can take some time for the solution to be installed to your environment.
 1. Go to the published contact form. You'll see the newly added control. You might need to sign in the first time you use it.
 
 1. To customize what you want to show on the custom control, select the edit button in the upper-right corner.
+
+## Update Add-in to latest version
+The Customer card add-in does not update to the latest version on its own. To upgrade to the latest version follow these steps within your respective Dynamics app which has the add-in installed:
+1. Within Dynamics navigate to Settings and choose **Solutions** within Customization.
+
+1. In the table of add-ins look for "CustomerInsightsCustomerCard". Select this row which will show a check mark at the beginning of it.
+
+1. Within the list of actions positioned above the table you activate "Apply Solution Upgrade".
+
+1. Once triggered this will show a overlay window with a loading indicator until the upgrade finishes.
+
+Note: If there's no newer version the upgrade will show an error message.
+
+  > [!div class="mx-imgBorder"]
+  > ![Apply Solution Upgrade action](media/cardaddin-solution-upgrade.png "Apply Solution Upgrade in Dynamics customization solutions")
