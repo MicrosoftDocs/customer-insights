@@ -1,7 +1,7 @@
 ---
 title: "Search and filter customer profiles"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
-ms.date: 04/16/2020
+ms.date: 01/19/2021
 ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -23,14 +23,6 @@ The result of unifying your customer data is a Customer Profile entity that prov
 If it's the first time you define searchable attributes as an administrator, you need to define indexed fields first. We suggest you choose all the attributes by which users can search and filter customers on the **Customers** page. You can only specify attributes that exist in the Customer Profile entity that you created during the data unification process.
 
 1. Open the **Customers** page and select **Search & filter index**.
-
-> [!NOTE]
-> We create a default search index configuration on the available attributes in the Customer entity from the following semantic types as defined on the Map page.
-> - Person First name, Last name, Middle name, Full Name
-> - Organization Name
-> - Email address
-> - Phone number
-> - Location information
 
 2. Select **+ Add** to specify the indexed fields.
 
@@ -60,3 +52,7 @@ The **Filter** menu on the **Customers** page can include a varying number of at
 2. Select **Save** to apply your changes.
 
 3. Select **Run** once you're ready to apply your settings.
+
+## Next steps
+
+Go to the **Customers** page to search for customer profiles or use the indexed fields to see a subset of all customer profiles.
