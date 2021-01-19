@@ -41,4 +41,4 @@ The Power Automate connector provides other actions than the available triggers.
    > [!div class="mx-imgBorder"]
    > ![Power Automate connector showing Create a Flow action](media/power-automate-connector-create-flow.png "Power Automate connector showing Create a Flow action")
 
-1. In Power Automate, select one of the available triggers to create your preferred flow. If you're creating your first flow, you'll need to authenticate with the Power Automate connector first.
+1. In Power Automate, select one of the available triggers to create your preferred flow. If you're creating your first flow, you'll need to allow access for the Power Automate connector first.
