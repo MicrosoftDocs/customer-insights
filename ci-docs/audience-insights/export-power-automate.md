@@ -1,7 +1,7 @@
 ---
 title: "Power Automate connector | Microsoft Docs"
 description: "Create flows in Microsoft Power Automate from Dynamics 365 Customer Insights."
-ms.date: 08/03/2020
+ms.date: 01/20/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -17,7 +17,7 @@ Trigger specific events to occur automatically when your data changes and manage
 
 ## Power Automate triggers
 
-You can use a variety of triggers that allow you to create flows to automate repetitive tasks, such as notifications or more advanced actions. 
+Use triggers to create cloud flows and automate repetitive tasks, such as notifications or more advanced actions. 
 
 - Trigger when a data source refresh fails. 
 - Trigger when a data source refresh succeeds.
@@ -31,14 +31,17 @@ You can use a variety of triggers that allow you to create flows to automate rep
 ## Power Automate actions
 The Power Automate connector provides other actions than the available triggers. For more information, see the [Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).
 
-## Create a Power Automate flow in audience insights
+## Create a Power Automate flow
 
-1. In audience insights, go to **Admin** > **System**.
+1. In audience insights, go to **Admin** > **Export destinations**.
 
-1. On the **System** page, select the **Status** tab.
+1. On the **Power Automate** tile, select **Set up**.
 
-1. In the **Data Sources** section, select **Flows** and select **Create a flow** from the dropdown list.
-   > [!div class="mx-imgBorder"]
-   > ![Power Automate connector showing Create a Flow action](media/power-automate-connector-create-flow.png "Power Automate connector showing Create a Flow action")
+1. The Customer Insights Connector (preview) in Power Automate opens. **Sign in** to Power Automate.
 
-1. In Power Automate, select one of the available triggers to create your preferred flow. If you're creating your first flow, you'll need to allow access for the Power Automate connector first.
+1. Choose one of the available triggers and add more steps to your new flow. For more information, see [Create a cloud flow in Power Automate](https://docs.microsoft.com/power-automate/get-started-logic-flow).
+
+Examples how to use flows: 
+- Post a message to a Microsoft Teams channel if a data source refresh fails. 
+- Send an email to the data owners when a threshold on a segment is crossed.
+
