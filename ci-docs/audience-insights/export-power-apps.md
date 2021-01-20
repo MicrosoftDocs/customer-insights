@@ -1,7 +1,7 @@
 ---
 title: "Power Apps connector"
 description: "Connect with Power Apps and Power Automate."
-ms.date: 08/21/2020
+ms.date: 01/19/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -26,7 +26,7 @@ Refer to the Power Apps documentation to learn how to [add a data connection to 
 After adding Customer Insights as a data connection, you can choose the following entities in Power Apps:
 
 - Customer: to use data from the [unified customer profile](customer-profiles.md).
-- Unified Customer Activity: to display the [activity timeline](activities.md) on the app.
+- UnifiedActivity: to display the [activity timeline](activities.md) on the app.
 
 ## Limitations
 

@@ -23,16 +23,18 @@
     - name: New and updated features
       href: audience-insights/whats-new-audience-insights.md
 
-    - name: Get started
+    - name: Create a new environment
+      href: audience-insights/home.md
+
+    - name: Learn modules
       items:
-        - name: Create a new environment
-          href: audience-insights/home.md
         - name: Ingest data
           href: https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/
         - name: Create a unified customer profile
           href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
         - name: Work with the app
           href: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+
         - name: Enrich data and predictions
           href: https://docs.microsoft.com/learn/modules/enrich-data/
          
@@ -56,7 +58,7 @@
 
     - name: Data unification
       items:
-        - name: Unification overview
+        - name: Data unification overview
           href: audience-insights/data-unification.md
         - name: Map entities and attributes
           href: audience-insights/map-entities.md
@@ -120,10 +122,12 @@
 
     - name: Export options
       items:
-        - name: Discover export destinations
+        - name: Export destinations overview
           href: audience-insights/export-destinations.md
         - name: Azure Blob Storage
           href: audience-insights/export-azure-blob-storage.md
+        - name: Autopilot
+          href: audience-insights/export-autopilot.md
         - name: DotDigital
           href: audience-insights/export-dotdigital.md
         - name: Dynamics 365 Customer Service (Add-in)
@@ -152,6 +156,8 @@
           href: audience-insights/export-power-apps.md
         - name: Power Automate
           href: audience-insights/export-power-automate.md
+        - name: SendGrid
+          href: audience-insights/export-sendgrid.md
         - name: SFTP
           href: audience-insights/export-sftp.md
 
@@ -172,6 +178,8 @@
 
     - name: Extensibility
       items:
+        - name: Integrate web data from engagement insights
+          href: audience-insights/integrate-engagement-insights.md
         - name: Review the entity schemas in Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Work with APIs
@@ -195,11 +203,6 @@
 
     - name: Free trial
       href: https://pi.dynamics.com/
-    
-    - name: Quickstart
-      items: 
-        - name: Quickstart for public preview
-          href: engagement-insights/quickstart.md
 
     - name: Get started
       items:

@@ -11,7 +11,7 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Export destinations (preview)
+# Export destinations (preview) overview
 
 The **Export destinations** page shows you all locations you've set up to export data to. You can also add new destinations for export. Additionally, it shows export currently available options. Get a quick overview, description, and find out what you can do with each extensibility option. Export unified profiles, measures, and segments to supported apps relevant for your business.
 
@@ -22,10 +22,12 @@ Go to **Admin** > **Export destinations** to find the following extensibility op
 - [Power Automate connector](export-power-automate.md)
 - [Power Apps connector](export-power-apps.md)
 - [Power BI connector](export-power-bi.md)
+- [Autopilot](export-autopilot.md)
 - [DotDigital](export-dotdigital.md)
 - [Dynamics 365 Sales](export-dynamics365-sales.md)
 - [Dynamics 365 Marketing](export-dynamics365-marketing.md)
 - [Azure Blob Storage](export-azure-blob-storage.md)
+- [SendGrid](export-sendgrid.md)
 - [LiveRamp&reg; connector](export-liveramp.md)
 - [Bot for Microsoft Teams](export-teams-bot.md)
 - [Mailchimp](export-mailchimp.md)

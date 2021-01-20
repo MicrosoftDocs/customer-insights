@@ -11,7 +11,7 @@ ms.reviewer: adkuppa
 manager: shellyha
 ---
 
-# Overview about data sources
+# Data sources overview
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -44,7 +44,7 @@ You'll see the name of each ingested data source, its status, and the last time 
 |Refreshing    |Data ingestion is in progress. You can cancel this operation by selecting **Stop refreshing** in the **Actions** column. Stopping the refresh of a data source will revert it to its last refresh state.       |
 |Failed     |Data ingestion ran into errors.         |
 
-Select **Refresh status** to review more details on the refresh status, including error details and downstream process updates.
+Select the value in the **Status** column of any data source to review more details. In the **Progress details** pane, expand **Data sources**. Select **See details** for more information about the refresh status, including error details and downstream process updates.
 
 Loading data can take some time. After a successful refresh, the ingested data can be reviewed from the **Entities** page. For more information, see [Entities](entities.md).
 
