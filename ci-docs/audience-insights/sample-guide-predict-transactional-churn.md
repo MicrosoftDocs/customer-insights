@@ -161,7 +161,7 @@ With the unified customer profiles in place, we can now run the subscription chu
 
      :::image type="content" source="media/model-levers.PNG" alt-text="Select the model levers Prediction Window and Churn Definition.":::
 
-1. Select **Purchase History (required)** and select **Add data** for subscription history.
+1. Select **Purchase History (required)** and select **Add data** for purchase history.
 
 1. Add the **eCommercePurchases : eCommerce** entity and map the fields from eCommerce to the corresponding fields required by the model.
 
