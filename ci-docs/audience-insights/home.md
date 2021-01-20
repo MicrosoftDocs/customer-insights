@@ -24,6 +24,8 @@ You can sign up for a trial on the [trial sign up page](https://dynamics.microso
 
 1. Provide your work or school email address, tell us a more about yourself and select **Next**.
 
+   :::image type="content" source="media/trial-signup-dialog.png" alt-text="Dialog to sign up for a trial of Customer Insights":::
+
 1. Provide a **Name** for your new environment. 
 
 1. Select the trial type.
@@ -42,7 +44,7 @@ You [switch to the environment](#switch-environments) you created during the sig
 
 In your environment, select the **Environments** picker in the app header and select **New**.
 
-Follow the steps as if you [create a trial environment](#create-a-trial-environment). You get an additional option when selecting **Advanced settings** to store your data in your own Azure Data Lake. Provide your account name and account key to establish a connection to your Azure Data Lake. By default, data is stored in the Customer Insights managed data lake.
+Follow the steps as if you [create a trial environment](#create-a-trial-environment). By default, data is stored in the Customer Insights managed data lake. You get an additional option when selecting **Advanced settings** to store your data in your own Azure Data Lake. Provide your account name and account key to establish a connection to your Azure Data Lake. 
 
 > [!IMPORTANT]
 > By saving data to your Azure Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account, which may differ from where data is stored in Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)
@@ -50,20 +52,20 @@ Follow the steps as if you [create a trial environment](#create-a-trial-environm
 ## Explore the home page
 
 You can [access your Customer Insights environment](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
-The **Home** page shows an overview of your customer base and key metrics to track the health of your business.
+The **Home** page shows an overview of segments, measures, and enrichment data (if configured)after completing the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
 
 > [!div class="mx-imgBorder"] 
 > ![Insights on Home page](media/home-page-insights.png "Insights on Home page")
 
-Under **Recent segments**, you see groups of customers based on demographic, behavioral, or transactional attributes that you've defined. [Creating segments](segments.md) helps you to better target your business activities.
+Under **Recent segments**, you see groups of customers based on demographic, behavioral, or transactional attributes that you've defined. [Creating segments](segments.md) helps you to group your customer base and better target your business activities.
 
-**Recent measures** show tiles with [measures](measures.md). Measures are key performance indicators (KPIs) that you've defined. For example, average likelihood of customer churn or average online spend per customer.
+**Recent measures** show tiles with [key performance indicators (KPIs)](measures.md) that you've defined. For example, average likelihood of a customer to churn or the average online spend per customer.
 
-The **Recent enrichments** section lists the results of the enrichment runs that completed recently. Enrichments add information about your customer base. For example, by understanding the interests and brands that they have affinity for. This information can be unlocked using the [enrichment](enrichment-microsoft-graph.md) capabilities, after completing the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
+The **Recent enrichments** section lists the results of the enrichment runs that completed recently. [Enrichments](enrichment-hub.md) add information about your customer base. For example, by understanding the interests and brands that they have affinity for.
 
 ## Switch environments
 
-Once you've set up and configured [data sources](data-sources.md), you'll want to switch from a demo environment to a live environment. Using the production environment lets you work with your own customer data. Select the **Environment** control in the upper-right corner of the page to change environments.
+Select the **Environment** control in the upper-right corner of the page to change environments.
 
 > [!div class="mx-imgBorder"] 
 > ![Switch environment](media/home-page-environment-switcher.png "Switch environment")

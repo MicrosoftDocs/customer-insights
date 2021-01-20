@@ -1,7 +1,7 @@
 ---
 title: "System configuration in audience insights"
 description: "Learn about system settings in Dynamics 365 Customer Insights audience insights capability."
-ms.date: 06/02/2020
+ms.date: 01/18/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -13,16 +13,21 @@ manager: shellyha
 
 # System configuration
 
-The **System** page includes four tabs: **Status**, **Schedule**, **About**, and **General**.
+The **System** page includes the following tabs:
+- [Status](#status-tab)
+- [Schedule](#schedule-tab)
+- [API usage](#api-usage-tab)
+- [About](#about-tab)
+- [General](#general-tab)
 
 > [!div class="mx-imgBorder"]
 > ![System page](media/system-tabs.png "System page")
 
 ## Status tab
 
-The **Status tab** lets you track the progress of data ingestion, data exports, and several important product processes. Review the information on this tab to ensure the completeness of active processes.
+The **Status tab** lets you track the progress of data ingestion, data exports, and several other important product processes. Review the information on this tab to ensure the completeness of active processes.
 
-This tab includes status tables for **Data sources**, **System processes**, and **Data preparation**. Each table tracks the **Name** of the task and its corresponding entity, the **Status** of its most recent run, and when it was **Last updated**.
+This tab includes tables with status and processing information for various processes. Each table tracks the **Name** of the task and its corresponding entity, the **Status** of its most recent run, and when it was **Last updated**.
 
 View the details of the tasks' last several runs by selecting its name.
 
@@ -35,7 +40,7 @@ There are six types of status for tasks. The following status types also show on
 - **Skipped:** Task got skipped. One or more of the downstream processes this task depends on are failing or got skipped.
 - **Failure:** Processing  of the task has failed.
 - **Canceled:** Processing was canceled by the user before it finished.
-- **Queued:** Processing is queued and will start once all the downstream tasks are completed. For more information, see [Refresh policies](#refresh-policies).
+- **Queued:** Processing is queued and will start once all the upstream tasks are completed. For more information, see [Refresh policies](#refresh-policies).
 
 ### Refresh policies
 
