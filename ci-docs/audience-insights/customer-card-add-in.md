@@ -1,7 +1,7 @@
 ---
 title: "Install and configure the Customer Card Add-in"
 description: "Install and configure the Customer Card add-in for Dynamics 365 Customer Insights."
-ms.date: 08/04/2020
+ms.date: 01/20/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -23,7 +23,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. View demo
 - Customer profiles [ingested from the Dynamics 365 app using Common Data Service](connect-power-query.md).
 - Users of the Customer Card Add-in need to be [added as users](permissions.md) in audience insights.
 - [Configured search and filter capabilities](search-filter-index.md).
-- Demographic control: Demographic fields, such as age or gender are available in the unified customer profile.
+- Demographic control: Demographic fields(such as age or gender) are available in the unified customer profile.
 - Enrichment control: Requires active [enrichments](enrichment-hub.md) applied to customer profiles.
 - Intelligence control: Requires data generated using Azure Machine Learning ([Predictions](predictions.md) or [Custom Models](custom-models.md))
 - Measure control: Requires [configured measures](measures.md).
@@ -87,7 +87,7 @@ It can take some time for the solution to be installed to your environment.
 
 1. In the **Field Properties** dialog, clear the **Display label on the form** check box.
 
-1. Select the **Web** option for the control. For the Enrichment control, select which enrichment type you want to display by configuring the **enrichmentType** field. You need to add a separate enrichment control for each enrichment type.
+1. Select the **Web** option for the control. For the Enrichment control, select which enrichment type you want to display by configuring the **enrichmentType** field. Add a separate enrichment control for each enrichment type.
 
 1. Select **Save** and **Publish** to publish the updated contact form.
 
@@ -104,7 +104,6 @@ The Customer Card Add-in doesn't upgrade automatically. To upgrade to the latest
 
 1. Select the **Apply Solution Upgrade** in the action bar.
 
-1. After starting the updgrade process, you'll see a loading indicator until the upgrade completes. If there's no newer version, the upgrade will show an error message.
+   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="Upgrade the solution in the Customization area of Dynamics 365 apps":::
 
-  > [!div class="mx-imgBorder"]
-  > ![Apply Solution Upgrade action](media/cardaddin-solution-upgrade.png "Apply solution upgrade in Dynamics 365 customization area")
+1. After starting the upgrade process, you'll see a loading indicator until the upgrade completes. If there's no newer version, the upgrade will show an error message.
