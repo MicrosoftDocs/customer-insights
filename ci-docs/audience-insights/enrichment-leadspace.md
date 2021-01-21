@@ -33,7 +33,7 @@ To configure Leadspace, the following prerequisites must be met:
 
 1. Select **Get Started** and then enter an active **Leadspace token** (perpetual key). Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox. Confirm both inputs by selecting **Connect to Leadspace**.
 
-1. Select **Map data** and choose the Customer data set you want to enrich with company data from Leadspace. You can select the Customer entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+1. Select **Map data** and choose the data set you want to enrich with company data from Leadspace. You can select the *Customer* entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
 
    :::image type="content" source="media/enrichment-leadspace-select-segment.png" alt-text="Leadspace field mapping pane.":::
 
