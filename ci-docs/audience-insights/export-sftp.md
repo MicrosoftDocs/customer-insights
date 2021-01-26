@@ -27,29 +27,32 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 1. Give your destination a recognizable name in the **Display name** field.
 
-1. Provide a **Username**, **Password** and **Hostname** for your SFTP account. Example: If your SFTP server's root folder is /root/folder, and you would like the data to be exported to /root/folder/ci_export_destination_folder, the the host should be sftp://<server_address>/ci_export_destination_folder".
+1. Provide a **Username**, **Password**, **Hostname**, and **Export folder** for your SFTP account. Example: If your SFTP server's root folder is /root/folder, and you would like the data to be exported to /root/folder/ci_export_destination_folder, the the host should be sftp://<server_address>/ci_export_destination_folder".
 
 1. Select **Verify** to test the connection.
 
-1. After successful verification, choose if you want to export your data **Zipped** or **Unzipped**, and select the **field delimiter** for the exported files.
+1. After successful verification, choose if you want to export your data **Gzipped** or **Unzipped**, and select the **field delimiter** for the exported files.
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
 1. Select **Next** to start configuring the export.
 
-## Configure the connection
+## Configure the export
 
-1. Select the **customer attributes** you want to export. You can export one or multiple attributes.
+1. Select the entities such as segments you want to export.
 
-1. Select **Next**.
-
-1. Select the segments you want to export.
+**Note:** each selected entity will be split into up to 5 output files when exported. 
 
 1. Select **Save**.
 
 ## Export the data
 
 You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab).
+
+## Known limitations ##
+
+- The runtime of an export is dependent on your system performance. We recommend 2 CPU cores and 1Gb memory as minimal configuration of your server for optimal results. 
+- Exporting entities containing up to 100 million customer profiles can take up to 90 minutes when using the recommended minimal configuration of 2 CPU cores and 1Gb memory. 
 
 ## Data privacy and compliance
 
