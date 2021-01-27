@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to SFTP hosts"
 description: "Learn how to configure the connection to an SFTP host."
-ms.date: 06/05/2020
+ms.date: 01/27/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,11 +13,11 @@ manager: shellyha
 
 # Connector for SFTP (preview)
 
-Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol(SFTP) host.
+Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol (SFTP) host.
 
 ## Prerequisites
 
-- Availability of a SFTP host and corresponding credentials.
+- Availability of an SFTP host and corresponding credentials.
 
 ## Connect to SFTP
 
@@ -27,7 +27,7 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 1. Give your destination a recognizable name in the **Display name** field.
 
-1. Provide a **Username**, **Password**, **Hostname**, and **Export folder** for your SFTP account. Example: If your SFTP server's root folder is /root/folder, and you would like the data to be exported to /root/folder/ci_export_destination_folder, the the host should be sftp://<server_address>/ci_export_destination_folder".
+1. Provide a **Username**, **Password**, **Hostname**, and **Export folder** for your SFTP account.
 
 1. Select **Verify** to test the connection.
 
@@ -39,9 +39,10 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 ## Configure the export
 
-1. Select the entities such as segments you want to export.
+1. Select the entities, for example segments, you want to export.
 
-**Note:** each selected entity will be split into up to 5 output files when exported. 
+   > [!NOTE]
+   > Each selected entity will be up to five output files when exported. 
 
 1. Select **Save**.
 
@@ -49,10 +50,10 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab).
 
-## Known limitations ##
+## Known limitations
 
-- The runtime of an export is dependent on your system performance. We recommend 2 CPU cores and 1Gb memory as minimal configuration of your server for optimal results. 
-- Exporting entities containing up to 100 million customer profiles can take up to 90 minutes when using the recommended minimal configuration of 2 CPU cores and 1Gb memory. 
+- The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server. 
+- Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory. 
 
 ## Data privacy and compliance
 
