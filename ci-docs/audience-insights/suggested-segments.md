@@ -18,6 +18,8 @@ Discover interesting segments of your customers with the help of an AI model. Th
 > [!NOTE]
 > The suggested segments feature uses automated means to evaluate data and make predictions based on that data, and therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Your use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including this feature, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
+:::image type="content" source="media/suggested-segments-details.png" alt-text="Suggested segments page in Customer Insights showing details of a suggestion in a side pane.":::
+
 ## Measure based suggested segments
 
 Measures that capture customer interactions (purchases, reviews, etc.) help create suggestions based on customer activity information. Using common operators like SUM, AVG, MAX, MIN, and COUNT UNIQUE when creating a measure help you build specific measures. Identifying segments of your customers that influence a KPI (a [customer measure created](measures.md) in Customer Insights) can help you run a highly targeted campaign.  Based on budget and location constraints, it's important to understand how certain attributes influence this KPI.    
@@ -53,9 +55,11 @@ A categorical attribute like *education level* set as the primary attribute, res
 
 1. Select the **Suggestions (preview)** tab.
 
-1. Select **Get suggestions** to start the guided experience.
+1. Select **Get new suggestions** to start the guided experience.
 
 1. Choose a measure or a customer attribute as the primary attribute and select **Next**.
+
+   :::image type="content" source="media/suggested-segments-primary-attribute.png" alt-text="Choosing the primary attribute for suggestions on the suggested segments.":::
 
 1. Select the influencing attributes and select **Save**.
    
