@@ -60,9 +60,9 @@ A categorical attribute like *education level* set as the primary attribute, res
 1. Select the influencing attributes and select **Save**.
    
    > [!TIP]
-   > Selecting multiple influencing attributes improved the chances of evaluating how they influence the primary attribute.
+   > Selecting multiple influencing attributes improves the chances of evaluating how they influence the primary attribute. Don't include attributes that have no influence the primary attribute. For example, if all your customers are from a specific country, don't include the *country* attribute because it won't have any impact on the output.
 
-1. It will take moment to process the selected attributes. 
+1. Depending on the number of customer profiles and selected attributes, it can take a few minutes to process the selected attributes. 
 
 ## View details of a suggested segment
 
@@ -92,48 +92,5 @@ Select a suggested segment to review the details of that suggestion including a 
  
 2. Boolean type primary attributes don't work: Currently, we only support string and numeric types of data as the primary attribute.
 
-3. Suggested segments aren't distinct enough: Keep in mind that the selected attributes and the distribution of values of those attributes influences the results.
+3. Suggested segments aren't distinct enough: Keep in mind that the selected attributes and the distribution of values of those attributes influences the results. You can change your influencing attributes or even your primary attribute to get different results.
 
-
-<!-- turn into a troubleshooting section or remove. It's private preview focus
-
-## FAQ 
-
-**Why am I seeing only a few suggestions? I have lot of data/profiles**
-
-*The AI model used tries to determine if the suggestions shown to you are statistically significant. If deemed insignificant, the AI model will eliminate such suggestions from the output. We do this in order to present you with a set of suggestions that are likely to offer you the best value/outcome.* 
-
-*To try and get the AI model to give you better suggestions, you can try changing your influencing attributes or even your primary attribute.*
-
-**The suggestions I see does not make any sense or I’m not able to understand/interpret these suggestions?**
-
-*We’d be more than happy to understand why you feel so. Please contact us so that we can try and schedule some time to go over your observations and feedback*
-
-**Is it ok to just select all attributes and measures as influencing attributes?**
-
-*Recommendation would be to include all attributes that have a potential to influence the primary attribute. For instance, if all your customers are from the US and if country is an available attribute for selection, this attribute will not have any measurable impact on the outcome and can be left out.  Moreover, you should ensure that any attributes you select can and should be processed in a manner that is compliant with any laws applicable to your organization and consistent with your organization’s principles and privacy policies.*
-
-**How much time do I need to wait before I can see results?**
-
-*Depending on the number of customer profiles you have and the number of attributes you’ve selected, it can take several minutes. However if you do not see results after an hour and no error is shown, please contact us.*
-
-**I see this error that I don’t understand, what do I do?**
-
-*Please contact us with the following details*
-
-- *Your CI instance ID*
-- *A screenshot of the error you are seeing*
-- *A description of the steps you took before you encountered the error, preferably with the specific inputs you provided or selections you made on the page*
-- *Also mention if this was a 1 time occurrence*
-
-**This feature is not working for me, what do I do?**
-
-*Please contact us with the following details*
-
-- *Your CI instance ID*
-- *A screenshot of the error you are seeing*
-- *A description of the steps you took before you encountered the error, preferably with the specific inputs you provided or selections you made on the page*
-- *Also mention if this was a 1 time occurrence*
-
-
--->
