@@ -33,7 +33,7 @@ This section walks you through creating a new measure from scratch. You can buil
 
 1. In the configuration area, choose the aggregation function from the **Select Function** drop-down menu. Aggregation functions include: **Sum**, **Average**, **Count**, **Count Unique**, **Max**, **Min**, **First** (takes the first value of the data record), **Last** (takes the last value that was added to the data record). 
 
-<!-- screenshot-->
+   :::image type="content" source="media/measure-operators.png" alt-text="Operators for measure calcuations.":::
 
 1. Select **Add attribute** to map the data you need to create this measure.
    
@@ -43,20 +43,17 @@ This section walks you through creating a new measure from scratch. You can buil
    1. Alternatively, you can select a data attribute from an existing measure by selecting the **Measures** tab. Or, you can search for an entity or measure name. 
    1. Select **Add** to add the selected attribute to the measure.
 
-
-<!-- screenshot-->
+   :::image type="content" source="media/measure-attribute-selection.png" alt-text="Select an attribute to use in calculations.":::
 
 1. To build more complex measures, you can add more attributes or use math operators on your measure function.
 
-<!-- screenshot-->
+   :::image type="content" source="media/measure-math-operators.png" alt-text="Create a complex measure with math operators.":::
 
 1. To add filters, select the **Filter** in the configuration area. 
   
    1. In **Add attribute** section of the **Filters** pane, select the attribute you want to use to create filters.
    1. Set the filter operators to define the filter for every selected attribute.
    1. Select **Apply** to add the filters to the measure.
-
-<!-- screenshot-->
 
 1. To add dimensions, select **Dimension** in the configuration area. Dimensions will show as columns in the measure output entity.
    1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected.
@@ -66,7 +63,7 @@ This section walks you through creating a new measure from scratch. You can buil
    1. Select **Data preferences** and choose the entity path that should be used to identify your measure.
    1. Select **Done** to apply your selection. 
 
-<!-- screenshot-->
+   :::image type="content" source="media/measures-data-preferences.png" alt-text="Select the entity path for the measure.":::
 
 1. To add more calculations for the measure, select **New calculation**. You can only use entities on the same entity path for new calculations. More calculations will show as new columns in the measure output entity.
 
