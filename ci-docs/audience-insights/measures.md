@@ -15,7 +15,7 @@ manager: shellyha
 
 Measures help you to better understand customer behaviors and business performance by retrieving relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand individual customer’s purchase history. Or measure *total sales of the company* to understand the aggregate-level revenue in the whole business.  
 
-Measures are created using the measure builder, a data query platform with a variety of operators and easy data mapping functions. It also lets you filter the data, group results by attribute, detect [entity relationship paths](relationships.md), and preview the output.
+Measures are created using the measure builder, a data query platform with various operators and simple mapping options. It also lets you filter the data, group results by attribute, detect [entity relationship paths](relationships.md), and preview the output.
 
 Use the measure builder to query desired data and extract insights on customer data by creating different measures to plan business activities. For example, creating a measure of *total spend per customer* and *total return per customer* can you identify a group of customers with high spend yet high return for you to [create a segment](segments.md) for next best actions. 
 
@@ -31,7 +31,7 @@ This section walks you through creating a new measure from scratch. You can buil
    > [!NOTE]
    > If your new measure configuration has only two fields, for exmample, CustomerID and one calculation, the output will be added as a new column to the system generated entity called Customer_Measure. And you will be able to see the measure’s value in the unified customer profile. Other measures will generate their own entities.
 
-1. In the configuration area, choose the aggregation function from the **Select Function** drop-down menu. Aggregation functions include: **Sum**, **Average**, **Count**, **Count Unique**, **Max**, **Min**, **First** (takes the first value of the data record), **Last** (takes the last value added to the data record). 
+1. In the configuration area, choose the aggregation function from the **Select Function** drop-down menu. Aggregation functions include: **Sum**, **Average**, **Count**, **Count Unique**, **Max**, **Min**, **First** (takes the first value of the data record), **Last** (takes the last value that was added to the data record). 
 
 <!-- screenshot-->
 
@@ -50,7 +50,7 @@ This section walks you through creating a new measure from scratch. You can buil
 
 <!-- screenshot-->
 
-1. To add filters, select the **Filter** in the configuraiton area. 
+1. To add filters, select the **Filter** in the configuration area. 
   
    1. In **Add attribute** section of the **Filters** pane, select the attribute you want to use to create filters.
    1. Set the filter operators to define the filter for every selected attribute.
@@ -62,17 +62,17 @@ This section walks you through creating a new measure from scratch. You can buil
    1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected.
    1. Select **Done** to add the dimensions to the measure.
 
-1. If there are multiple paths between the data entity you mapped and the Customer entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results may wary depending on the the selected path.
+1. If there are multiple paths between the data entity you mapped and the Customer entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path.
    1. Select **Data preferences** and choose the entity path that should be used to identify your measure.
    1. Select **Done** to apply your selection. 
 
 <!-- screenshot-->
 
-1. To add more calculations for the measure, select **New calculation**. You can only use entities on the same entity path for new calculations. Additional calculations will show as new colums in the measure output entity.
+1. To add more calculations for the measure, select **New calculation**. You can only use entities on the same entity path for new calculations. More calculations will show as new columns in the measure output entity.
 
-1. Select **...** on the calucation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.
+1. Select **...** on the calculation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.
 
-1. In the **Preview** area, you'll see the data schema of the measure output entity, inlcuding filters and dimensions. The preview reacts dynamically to changes in the configuration.
+1. In the **Preview** area, you'll see the data schema of the measure output entity, including filters and dimensions. The preview reacts dynamically to changes in the configuration.
 
 1. Select **Run** to calculate results for the configured measure. Select **Save and close** if you want to keep the current configuration and run the measure later.
 
@@ -82,14 +82,14 @@ This section walks you through creating a new measure from scratch. You can buil
 
 After [creating a measure](#create-a-measure), you see a list of measures on the **Measures** page.
 
-You'll find information about the measure type, the creator, creation date , status, and state. When you select a measure from the list, you can see a preview of its output and download a .CSV file.
+You'll find information about the measure type, the creator, creation date, status, and state. When you select a measure from the list, you can see a preview of its output and download a .CSV file.
 
 To refresh all of your measures at the same time, select **Refresh all** without selecting a specific measure.
 
 > [!div class="mx-imgBorder"]
 > ![Actions to manage single measures](media/measure-actions.png "Actions to manage single measures")
 
-Alternatively, select a measure from the list and perform one of the following actions:
+You can also select a measure from the list and perform one of the following actions:
 
 - Select the measure name to see its details.
 - **Edit** the configuration of the measure.
