@@ -1,7 +1,7 @@
 ---
-title: "Create and edit measures"
-description: "Define customer-related measures to analyze and reflect the performance of certain business areas."
-ms.date: 10/15/2020
+title: "Create and manage measures"
+description: "Define measures to analyze and reflect the performance of your business."
+ms.date: 01/29/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -21,7 +21,7 @@ Use the measure builder to query desired data and extract insights on customer d
 
 ## Create a measure
 
-This section walks you through creating a new measure from scratch. You can build a measure by mapping data attributes from applicable data entities that have relationship set up to connect with the Customer entity. 
+This section walks you through creating a new measure from scratch. You can build a measure with data attributes from data entities that have a relationship set up to connect with the Customer entity. 
 
 1. In audience insights, go to **Measures**.
 
@@ -35,11 +35,11 @@ This section walks you through creating a new measure from scratch. You can buil
 
    :::image type="content" source="media/measure-operators.png" alt-text="Operators for measure calcuations.":::
 
-1. Select **Add attribute** to map the data you need to create this measure.
+1. Select **Add attribute** to select the data you need to create this measure.
    
    1. Select the **Attributes** tab. 
-   1. Choose the entity that includes the attribute you want to map. 
-   1. Choose the attribute you want to map. You can only map one attribute at a time.
+   1. Data entity: Choose the entity that includes the attribute you want to measure. 
+   1. Data attribute: Choose the attribute you want to use in the aggregation function to calculate the measure. You can only select one attribute at a time.
    1. Alternatively, you can select a data attribute from an existing measure by selecting the **Measures** tab. Or, you can search for an entity or measure name. 
    1. Select **Add** to add the selected attribute to the measure.
 
@@ -56,7 +56,7 @@ This section walks you through creating a new measure from scratch. You can buil
    1. Select **Apply** to add the filters to the measure.
 
 1. To add dimensions, select **Dimension** in the configuration area. Dimensions will show as columns in the measure output entity.
-   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected.
+   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected to create *customer-level measures*. You can remove the default dimension if you want to create *business-level measures*.
    1. Select **Done** to add the dimensions to the measure.
 
 1. If there are multiple paths between the data entity you mapped and the Customer entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path.
