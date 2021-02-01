@@ -96,9 +96,7 @@ The **API usage** contains three sections:
 
 - **Data transfer** - a chart that shows the amout of data that was transferred through the API in the selected time frame.
 
--  **Operations** - a table with rows for each available API operation and details about the usage of the operations. You can select an operation name to go to [the API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances). 
-   
-   <Screenshot>
+-  **Operations** - a table with rows for each available API operation and details about the usage of the operations. You can select an operation name to go to [the API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
    Operations which use [real-time data ingestion](real-time-data-ingestion.md) contain a button with a binocualr symbol to view real-time API usage. Select the button to open a side pane containing usage details for the real-time API usage in the current environment.   
-   Use the **Group by** selector to choose how to best present your real-time interactions on a timeline ranging from the last 24 hours to the last 30 days. You can group the data by API method, entity qualified name (ingested entity), created by (source of the event), result (success or failure) or error codes. The data is available as a history chart and as a table.
+   Use the **Group by** box in the **Real-time API usage** pane to choose how to best present your real-time interactions. You can group the data by API method, entity qualified name (ingested entity), created by (source of the event), result (success or failure) or error codes. The data is available as a history chart and as a table.
