@@ -35,11 +35,8 @@ This article provides information on how to ingest data from a Common Data Model
 
 1. Select **Connect to a Common Data Model folder**, enter a **Name** for the data source, and select **Next**. Follow the below guidelines to name a data source
    - Start with a letter.
-   - User letters and numbers only. Special characters like !$% etc. are not allowed.
-   - Don’t use more than 64 characters.
-   - Spaces aren’t allowed.
-   - Include atleast one letter.
-   - Atleast 3 characters are needed.
+   - Use letters and numbers only. Special characters and spaces are not allowed.
+   - Use between 3 and 64 characters.
 
 1. You can choose between using a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Enter the **Container** information and select **Next**.
    > [!div class="mx-imgBorder"]
