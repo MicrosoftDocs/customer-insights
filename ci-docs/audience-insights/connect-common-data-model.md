@@ -75,7 +75,7 @@ You can update the access key for the storage account containing the Common Data
 
 5. Optionally, you can update from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
    > [!div class="mx-imgBorder"]
-   > ![Dialog box to enter connection details for Azure Data Lake](media/enter-existing-storage-details.png)
+   > ![Dialog box to enter connection details for Azure Data Lake to an existing storage account](media/enter-existing-storage-details.png)
 
 6. Optionally, choose a different model.json file with a different set of entities from the container.
 
