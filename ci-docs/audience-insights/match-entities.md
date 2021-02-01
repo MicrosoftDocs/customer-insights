@@ -131,7 +131,7 @@ After a deduplicated record is identified, that record will be used in the cross
 
 1. Running the match process now groups the records based on the conditions defined in the deduplication rules. After grouping the records, the merge policy is applied to identify the winner record.
 
-1. This winner record is then passed on to the cross-entity matching, along with the non-winner records (i.e., alternate IDs) to improve the matching quality.
+1. This winner record is then passed on to the cross-entity matching, along with the non-winner records (for example, alternate IDs) to improve the matching quality.
 
 1. Any custom match rules defined for always match and never match overrule deduplication rules. If a deduplication rule identifies matching records, and a custom match rule is set to never match those records, then these two records won't be matched.
 
@@ -150,19 +150,19 @@ When the match process is complete, the **Refreshing ...** text will change to *
 
 The first match process results in the creation of a unified master entity. All subsequent match runs result in the expansion of that entity.
 
-### Deduplication  output as an entity
-Along with the unified master entity created as part of the cross entity matching, deduplication process also generates an entity per every entity from the match order to identify the deduplicated records. These entities can be found along with the **ConflationMatchPairs:CustomerInsights** in the **System** section in the **Entities** page, with the name Deduplication_Datasource_Entity.
-
-This deduplication output entity consists of four sections of fields.
-1. IDs / Keys
-- Primary key field and its alternate IDs field. Alternate IDs field consists of all the alternate IDs identified for a record.
-- Deduplication_GroupId: This field displays the group/cluster identified within an entity that groups all the similar records based on the deduplication fields specified. This is more used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the dedupliation output entity.
-- Deduplication_WinnerId: This field contains the winner ID from the groups/clusters identified. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
-2. Fields used to define the dedupliation rules.
-3. Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
-
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+
+## Deduplication output as an entity
+In addition to the unified master entity created as part of the cross entity matching, the deduplication process also generates a new entity for every entity from the match order to identify the deduplicated records. These entities can be found along with the **ConflationMatchPairs:CustomerInsights** in the **System** section in the **Entities** page, with the name **Deduplication_Datasource_Entity**.
+
+A deduplication output entity contains the following information:
+- IDs / Keys
+  - Primary key field and its alternate IDs field. Alternate IDs field consists of all the alternate IDs identified for a record.
+  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. This is  used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
+  - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
+- Fields used to define the deduplication rules.
+- Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
 
 ## Review and validate your matches
 
