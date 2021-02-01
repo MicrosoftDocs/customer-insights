@@ -22,7 +22,7 @@ Use [segments](segments.md) to generate campaigns and contact specific groups of
 - Contact records must be present in Dynamics 365 Marketing before you can export a segment from Customer Insights to Marketing. Read more on how to ingest contacts in [Dynamics 365 Marketing using Common Data Services](connect-power-query.md).
 
   > [!NOTE]
-  > Exporting segments from Customer Insights to Marketing will not create new contact record. Contacts must exist before exporting segments.
+  > Exporting segments from Customer Insights to Marketing will not create new contact records. Contacts must exist before exporting segments.
 
 ## Configure the connector for Marketing
 
