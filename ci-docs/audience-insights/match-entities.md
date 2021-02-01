@@ -195,10 +195,10 @@ Increase the quality by reconfiguring some of your match parameters:
   > [!div class="mx-imgBorder"]
   > ![Duplicate a rule](media/configure-data-duplicate-rule.png "Duplicate a rule")
 
-- **Deactivate a rule** if you wish you retain a match rule and exclude that rule in the Matching process.
+- **Deactivate a rule** to retain a match rule while excluding it from the matching process.
 
   > [!div class="mx-imgBorder"]
-  > ![Duplicate a rule](media/configure-data-deactivate-rule.png "Deactivate a rule")
+  > ![Deactivate a rule](media/configure-data-deactivate-rule.png "Deactivate a rule")
 
 - **Edit your rules** by selecting the **Edit** symbol. You can apply the following changes:
 
