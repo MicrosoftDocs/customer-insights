@@ -70,7 +70,15 @@ To create an environment:
 
    - For the Azure Data Lake Storage Gen2 option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name can't be changed and will be "customerinsights".
    
-   - If you want to use [predictions](predictions.md), enter the Common Data Service instance URL in the **Server address** field under **Use predictions**.
+   - If you want to use [predictions](predictions.md) or configure data sharing with Microsoft Dataverse based applications and solutions, provide the Microsoft Dataverse environment URL under **Configure data sharing with Microsoft Dataverse and enable additional capabilities**.
+      - You need to manually select the configuration to enable data sharing Customer Insight output with Microsoft Dataverse Managed Data Lake.
+
+> [!NOTE]
+> - Data sharing with Microsoft Dataverse Managed Data Lake is currently not supported if you save all data to your own Azure Data Lake Storage.
+> - [Prediction of missing value in an entity using AI] (predictions.md) will not be supported in Customer Insights is you enable data sharing with Microsoft Dataverse Managed Data Lake.
+
+   > [!div class="mx-imgBorder"]
+   > ![Datasharing-with-DataverseMDL](media/Datasharing-with-DataverseMDL.png)
 
    When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to the respective subfolders based on the process you run.
 
