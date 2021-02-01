@@ -33,7 +33,7 @@ This article provides information on how to ingest data from a Common Data Model
 
 1. Select **Add data source**.
 
-1. Select **Connect to a Common Data Model folder**, enter a **Name** for the data source, and select **Next**. Follow the below guidelines to name a data source
+1. Select **Connect to a Common Data Model folder**, enter a **Name** for the data source, and select **Next**. Name guidelines: 
    - Start with a letter.
    - Use letters and numbers only. Special characters and spaces are not allowed.
    - Use between 3 and 64 characters.
