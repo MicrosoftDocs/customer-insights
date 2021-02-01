@@ -77,7 +77,7 @@ To create an environment:
      > - [Prediction of missing values in an entity](predictions.md) is not currently supported when you enable data sharing with Microsoft Dataverse Managed Data Lake.
 
      > [!div class="mx-imgBorder"]
-     > ![Datasharing-with-DataverseMDL](media/Datasharing-with-DataverseMDL.png)
+     > ![Configuration options to enable data sharing with Microsoft Dataverse](media/Datasharing-with-DataverseMDL.png)
 
    When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to the respective subfolders based on the process you run.
 
