@@ -37,12 +37,12 @@ This article provides information on how to ingest data from a Common Data Model
 
 1. You can choose between using a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Enter the **Container** information and select **Next**.
    > [!div class="mx-imgBorder"]
-   > ![Dialog box to enter connection details for Azure Data Lake](media/enter-new-storage-details.png)
-      > [!NOTE]
-      > You should have any one of the following roles either to the container or the storage account referred above to be able to connect to and create a data source
-      >  - Storage Blob Data Reader. 
-      >  - Storage Blob Data Owner. 
-      >  - Storage Blob Data Contributor. 
+   > ![Dialog box to enter new connection details for Azure Data Lake](media/enter-new-storage-details.png)
+   > [!NOTE]
+   > You need one of the following roles either to the container or the storage account referred above to be able to connect to and create a data source:
+   >  - Storage Blob Data Reader
+   >  - Storage Blob Data Owner
+   >  - Storage Blob Data Contributor
 
 1. In the **Select a Common Data Model folder** dialog, select the model.json or manifest.json file to import data from, and select **Next**.
    > [!NOTE]
@@ -80,10 +80,10 @@ You can update the access key for the storage account containing the Common Data
    > ![Dialog box to enter connection details for Azure Data Lake](media/enter-existing-storage-details.png)
    
    > [!NOTE]
-      > You should have any one of the following roles either to the container or the storage account referred above to be able to connect to and continue with the data source
-      >  - Storage Blob Data Reader. 
-      >  - Storage Blob Data Owner. 
-      >  - Storage Blob Data Contributor. 
+   > You need one of the following roles either to the container or the storage account referred above to be able to connect to and create a data source:
+   >  - Storage Blob Data Reader
+   >  - Storage Blob Data Owner
+   >  - Storage Blob Data Contributo
 
 6. Optionally, choose a different model.json or manifest.json file with a different set of entities from the container.
 
