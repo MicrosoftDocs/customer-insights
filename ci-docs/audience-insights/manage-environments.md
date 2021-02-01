@@ -74,8 +74,8 @@ To create an environment:
       - You need to manually select the configuration to enable data sharing Customer Insight output with Microsoft Dataverse Managed Data Lake.
 
 > [!NOTE]
-> - Data sharing with Microsoft Dataverse Managed Data Lake is currently not supported if you save all data to your own Azure Data Lake Storage.
-> - [Prediction of missing value in an entity using AI] (predictions.md) will not be supported in Customer Insights is you enable data sharing with Microsoft Dataverse Managed Data Lake.
+> - Data sharing with Microsoft Dataverse Managed Data Lake is currently not supported when you save all data to your own Azure Data Lake Storage.
+> - [Prediction of missing value in an entity using AI] (predictions.md) is not currently supported when you enable data sharing with Microsoft Dataverse Managed Data Lake.
 
    > [!div class="mx-imgBorder"]
    > ![Datasharing-with-DataverseMDL](media/Datasharing-with-DataverseMDL.png)
@@ -89,7 +89,7 @@ To create an environment:
 The following configuration settings are copied:
 
 - Feature configurations
-- Inegsted/imported data sources
+- Ingested/imported data sources
 - Data unification (Map, Match, Merge) configuration
 - Segments
 - Measures
