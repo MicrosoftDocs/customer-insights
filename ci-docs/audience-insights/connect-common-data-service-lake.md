@@ -29,13 +29,10 @@ Data stored in online services, such as Azure Data Lake Storage, may be stored i
 
 3. Select **Connect to Common Data Service** and select **Next**.
 
-4. Enter a **Name** for the data source and select **Next**. Follow the below guidelines to name a data source
+4. Enter a **Name** for the data source and select **Next**. Name guidelines: 
    - Start with a letter.
-   - User letters and numbers only. Special characters like !$% etc. are not allowed.
-   - Don’t use more than 64 characters.
-   - Spaces aren’t allowed.
-   - Include atleast one letter.
-   - Atleast 3 characters are needed.
+   - Use letters and numbers only. Special characters and spaces are not allowed.
+   - Use between 3 and 64 characters.
 
 5. Provide the **Server address** for your Common Data Service organization, and select **Sign in**.
 
