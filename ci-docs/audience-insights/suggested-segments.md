@@ -1,7 +1,7 @@
 ---
 title: "Machine learning powered suggested segments"
 description: "Let machine learning help you find new and interesting segments based on customer attributes."
-ms.date: 01/27/2021
+ms.date: 02/01/2021
 ms.reviewer: jimsonc
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,22 +13,22 @@ manager: shellyha
 
 # Suggested segments (preview)
 
-Discover interesting segments of your customers with the help of an AI model. This machine learning powered feature suggests segments based on measures or customer attributes, to improve your KPIs. 
+Discover interesting segments of your customers with the help of an AI model. This machine learning powered feature suggests segments based on measures or customer attributes, to improve your KPIs or better understand the influence of attribute in context of other attributes. 
 
 > [!NOTE]
 > The suggested segments feature uses automated means to evaluate data and make predictions based on that data, and therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Your use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including this feature, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
 :::image type="content" source="media/suggested-segments-details.png" alt-text="Suggested segments page in Customer Insights showing details of a suggestion in a side pane.":::
 
-## Measure based suggested segments
+## Suggested segments to improve your KPIs
 
-Measures that capture customer interactions (purchases, reviews, etc.) help create suggestions based on customer activity information. Using common operators like SUM, AVG, MAX, MIN, and COUNT UNIQUE when creating a measure help you build specific measures. Identifying segments of your customers that influence a KPI (a [customer measure created](measures.md) in Customer Insights) can help you run a highly targeted campaign.  Based on budget and location constraints, it's important to understand how certain attributes influence this KPI.    
-For example, you track a measure called *TotalSpendPerCustomer*. As a business, you’d like to see this number grow. After choosing a measure as primary attribute, you can select the attributes that you want to assess for influence. For example, *membership tier*, *membership period*, and *occupation*. Customer Insights can then suggest a segment that tells you who are the biggest influence of that measure. For example, *Accountants* who are *Gold* members, and who have been with your business for *at least five years* are the biggest influencer of *TotalSpendPerCustomer*. For all suggestions, you’ll get an estimated segment size. This information helps determining what kind of campaign might work best for that audience in your business constraints.
+As a user of audience insights, you likely have a series of [measures created](measures.md) that help track your Key Performance Indicators (KPIs). It's important to understand how certain attributes influence this KPI to create segments and run a highly targeted campaign.   
+For example, you track a measure called *TotalSpendPerCustomer*. As a business, you’d like to see this number grow. After choosing a measure as primary attribute, you can select the attributes that you want to assess for influence. For example, *membership tier*, *membership period*, and *occupation*. Customer Insights can then suggest a segment that tells you who are the biggest influence of that measure. For example, *Accountants* who are *Gold* members, and who have been with your business for *at least five years* are the biggest influencer of *TotalSpendPerCustomer*. For all suggestions, you’ll get an estimated segment size. You can use this information to create campaigns for the targeted audiences.
 
-## Customer attribute based suggested segments
+## Understand what influences a customer attribute
 
-You can choose a customer attribute instead of a measure as the primary attribute. Based on your choice of influencing attributes, the AI model creates a series of suggestions that show how the selected attributes influence the primary attribute. 
-For example, you choose *Housing(Yes/No)* as the primary attribute. *annual income* and *education level* are set as influencing attributes. The AI model can suggest segments that indicate mostly people with and income over *$100,000* and a *Bachelor's degree* who own houses. 
+You can choose a customer attribute instead of a measure as the primary attribute. Based on your choice of influencing attributes, the AI model creates a series of suggestions that show how the selected attributes influence the primary attribute.   
+For example, you choose *Rewards Member (Yes/No)* as the primary attribute. *Tenure*, *Occupation*, and *Number of Support Tickets* are set as additional influencing attributes. The AI model could suggest segments indicating mostly IT professionals with tenure over two years are rewards members. Another suggestion could highlight that accountants with tenure over one year and fewer than three support tickets are rewards members. 
 
 ## Artificial intelligence usage
 
@@ -44,7 +44,7 @@ Segment suggestions are different if you choose a numeric attribute or a categor
 
 With a numeric attribute like *annual income* or *membership period* as the primary attribute, the system suggests segments that have a higher or lower average value of the numeric attribute when compared to all customers.
 
-A categorical attribute like *education level* set as the primary attribute, results in suggested segments that have a higher or lower percentage of customers belonging to a particular category when compared to the percentage of all customers belonging to that same category. For example,  *education level* consists of seven categories. *16%* of all customers have an education level of *Bachelor’s degree*. The system suggests segments that have a bigger or smaller proportion of customers with a *Bachelor's degree*. Additionally, segments will be suggested for all other, if they are statistically significant.
+A categorical attribute like *customer satisfaction* as the primary attribute results in suggested segments that have a higher or lower percentage of customers belonging to a particular category when compared to the percentage of all customers belonging to that same category. For example, *customer satisfaction* is chosen as the primary attribute and it consists of three categories (*Low*, *Medium* and *High*). For each category, segments will be suggested that have a significantly higher or lower percentage of customers belonging to that category as compared to the proportion of all customers belonging to the same category. If 22% of all customers have a *High* satisfaction, then, only segments that have a significantly higher or lower proportion of customers with a *High* satisfaction as compared to 22% will be suggested for that category. Similarly, segments will be suggested for each of the other categories (*Low* and *Medium*) if they are statistically significant.
 
 > [!IMPORTANT]
 > Only categorical attributes that have at most 10 categories are supported.
@@ -90,7 +90,7 @@ Select a suggested segment to review the details of that suggestion including a 
 
 1. Select **Refresh suggestions** to refresh the suggestions while keeping configured attributes. Or select **Edit attributes** to modify the configured attributes. The system will rerun the AI model, generate segment suggestions based on the latest data, and replace the current suggestions.
 
-### Known Issues
+## Limitations
 
 1. Estimated segment size mismatch: If you choose a primary attribute that contains empty values, it can affect the estimated segment size in the segment suggestions. When saving such segment, the actual segment size can be different to the original estimation.
  
