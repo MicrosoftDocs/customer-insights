@@ -33,7 +33,10 @@ This article provides information on how to ingest data from a Common Data Model
 
 1. Select **Add data source**.
 
-1. Select **Connect to a Common Data Model folder**, enter a **Name** for the data source, and select **Next**.
+1. Select **Connect to a Common Data Model folder**, enter a **Name** for the data source, and select **Next**. Name guidelines: 
+   - Start with a letter.
+   - Use letters and numbers only. Special characters and spaces are not allowed.
+   - Use between 3 and 64 characters.
 
 1. You can choose between using a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Enter the **Container** information and select **Next**.
    > [!div class="mx-imgBorder"]
@@ -77,13 +80,15 @@ You can update the access key for the storage account containing the Common Data
 
 5. Optionally, you can update from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
    > [!div class="mx-imgBorder"]
-   > ![Dialog box to enter connection details for Azure Data Lake](media/enter-existing-storage-details.png)
-   
+
+   > ![Dialog box to enter connection details for Azure Data Lake to an existing storage account](media/enter-existing-storage-details.png)
+
    > [!NOTE]
    > You need one of the following roles either to the container or the storage account referred above to be able to connect to and create a data source:
    >  - Storage Blob Data Reader
    >  - Storage Blob Data Owner
    >  - Storage Blob Data Contributo
+
 
 6. Optionally, choose a different model.json or manifest.json file with a different set of entities from the container.
 
