@@ -13,7 +13,7 @@ manager: shellyha
 
 # Suggested segments (preview)
 
-Discover interesting segments of your customers with the help of an AI model. This machine learning powered feature suggests segments based on measures or customer attributes, to improve your KPIs or better understand the influence of attribute in context of other attributes. 
+Discover interesting segments of your customers with the help of an AI model. This machine learning powered feature suggests segments based on measures or customer attributes. Io can help improve your KPIs or better understand the influence of attributes in context of other attributes. 
 
 > [!NOTE]
 > The suggested segments feature uses automated means to evaluate data and make predictions based on that data, and therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Your use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including this feature, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
@@ -23,12 +23,12 @@ Discover interesting segments of your customers with the help of an AI model. Th
 ## Suggested segments to improve your KPIs
 
 As a user of audience insights, you likely have a series of [measures created](measures.md) that help track your Key Performance Indicators (KPIs). It's important to understand how certain attributes influence this KPI to create segments and run a highly targeted campaign.   
-For example, you track a measure called *TotalSpendPerCustomer*. As a business, you’d like to see this number grow. After choosing a measure as primary attribute, you can select the attributes that you want to assess for influence. For example, *membership tier*, *membership period*, and *occupation*. Customer Insights can then suggest a segment that tells you who are the biggest influence of that measure. For example, *Accountants* who are *Gold* members, and who have been with your business for *at least five years* are the biggest influencer of *TotalSpendPerCustomer*. For all suggestions, you’ll get an estimated segment size. You can use this information to create campaigns for the targeted audiences.
+For example, you track a measure called *TotalSpendPerCustomer*. As a business, you’d like to see this number grow. Choosing a measure as primary attribute, lets you select the attributes that you want to assess for influence. Let's say *membership tier*, *membership period*, and *occupation*. Customer Insights can then suggest a segment that tells you who are the biggest influence of that measure. For example, *Accountants* who are *Gold* members, and who have been with your business for *at least five years* are the biggest influencer of *TotalSpendPerCustomer*. You’ll get an estimated segment size for every suggestion. You can use this information to create campaigns for the targeted audiences.
 
 ## Understand what influences a customer attribute
 
 You can choose a customer attribute instead of a measure as the primary attribute. Based on your choice of influencing attributes, the AI model creates a series of suggestions that show how the selected attributes influence the primary attribute.   
-For example, you choose *Rewards Member (Yes/No)* as the primary attribute. *Tenure*, *Occupation*, and *Number of Support Tickets* are set as additional influencing attributes. The AI model could suggest segments indicating mostly IT professionals with tenure over two years are rewards members. Another suggestion could highlight that accountants with tenure over one year and fewer than three support tickets are rewards members. 
+For example, you choose *Rewards Member (Yes/No)* as the primary attribute. *Tenure*, *Occupation*, and *Number of Support Tickets* are set as other influencing attributes. The AI model could suggest segments indicating mostly IT professionals with tenure over two years are rewards members. Another suggestion could highlight that accountants with tenure over one year and fewer than three support tickets are rewards members. 
 
 ## Artificial intelligence usage
 
@@ -36,7 +36,7 @@ Using the primary attribute and influencing attributes, a decision tree algorith
 
 ### Responsible AI
 
-Suggested segments lets you select attributes to create new segments will process the data you select. When choosing attributes, including sensitive attributes such as race, sexual orientation, or gender, you are responsible for ensuring that you can and should process that data in a manner that is compliant with any laws applicable to your organization and consistent with your organization’s principles and privacy policies.
+Suggested segments lets you select attributes to create new segments and process the data you select. When choosing attributes, including sensitive attributes like race, sexual orientation, or gender, you must ensure that you can and should process that data. You are responsible to comply with any laws applicable to your organization and adhere to your organization’s principles and privacy policies.
 
 ### Different results for primary attributes with categorical and numeric values
 
