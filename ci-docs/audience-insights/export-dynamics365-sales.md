@@ -22,7 +22,7 @@ Use your customer data to create marketing lists, follow up workflows, and send 
 1. Contact records must be present in Dynamics 365 Sales before you can export a segment from Customer Insights to Sales. Read more on how to ingest contacts in [Dynamics 365 Sales using Common Data Services](connect-power-query.md).
 
    > [!NOTE]
-   > Exporting segments from Customer Insights to Sales will not create new contact records. Contacts must exist before exporting segments.
+   > Exporting segments from audience insights to Sales will not create new contact records in the Sales instances. The contact records from Sales must be ingested in audience insights and used as a data source. They also need to be included in the unified Customer entity to map customer IDs to contact IDs before segments can be exported.
 
 ## Configure the connector for Sales
 
