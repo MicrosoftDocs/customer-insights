@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Dynamics 365 Marketing"
 description: "Learn how to configure the connection to Dynamics 365 Marketing."
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -19,7 +19,10 @@ Use [segments](segments.md) to generate campaigns and contact specific groups of
 
 ## Prerequisite
 
-Contact records [from Dynamics 365 Marketing ingested Common Data Service](connect-power-query.md).
+- Contact records must be present in Dynamics 365 Marketing before you can export a segment from Customer Insights to Marketing. Read more on how to ingest contacts in [Dynamics 365 Marketing using Common Data Services](connect-power-query.md).
+
+  > [!NOTE]
+  > Exporting segments from audience insights to Marketing will not create new contact records in the Marketing instances. The contact records from Marketing must be ingested in audience insights and used as a data source. They also need to be included in the unified Customer entity to map customer IDs to contact IDs before segments can be exported.
 
 ## Configure the connector for Marketing
 
