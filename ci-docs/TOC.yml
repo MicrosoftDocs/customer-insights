@@ -96,6 +96,8 @@
           href: audience-insights/segments.md
         - name: Get insights on segments
           href: audience-insights/segment-insights.md
+        - name: See suggested segments
+          href: audience-insights/suggested-segments.md
         - name: Find similar customers
           href: audience-insights/find-similar-customer-segments.md
         - name: Define measures and KPIs
