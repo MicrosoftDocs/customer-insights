@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 01/07/2021
+ms.date: 02/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -25,6 +25,40 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## January 2021 updates
+
+The updates in January 2021 include several features, performance upgrades, and bug fixes.
+
+#### Extensibility
+
+- **Extended functionality and enhanced performance for SFTP export**
+  You can now export all output entities from Customer Insights to an SFTP host. Previously, export was limited to segment entities. 
+  Additionally, the performance of the SFTP export allows more data volume in less time, depending on the performance of your SFTP host.    
+  For more information, see [Connector for SFTP (preview)](export-sftp.md).  
+
+#### Segments
+
+- **Machine learning powered suggested segments to improve metrics**
+  There's a new way do discover and create segments. The system uses an AI model to suggest segments that can help improve a KPI (measure) you are already tracking. We show the extent of influence of attributes that you select on a measure or another primary attribute. This information helps finding potential segments that present opportunities.    
+  For more information, see [Suggested segments (preview)](suggested-segments.md).
+
+#### Data unification
+
+- **Enhanced match experience**
+  In the data unification area, the match experience was updated. It lets you configure and view the match rules, including detailed stats to further explain how matching works. There are options to disable a match rule so it's no longer active while retaining the configuration, drag and drop match rules, and more.
+  For more information, see [Match entities](match-entities.md).
+
+- **Deduplication output from the match process is available as an entity**
+  Deduplication process output from the match process is now written into a separate entity for further analysis. This entity consists of the fields used in the deduplication process and the winner record and the corresponding alternate records that get merged with the winner record.
+  For more information, see [Deduplication output as an entity](match-entities.md#deduplication-output-as-an-entity).
+
+#### System administration
+
+- **Seamlessly share data to Microsoft Dataverse**
+  You can now share Customer Insights output with Microsoft Dataverse applications using the Microsoft Dataverse Managed Data Lake. Once you associate a Dataverse environment with Customer Insights, you get the option to enable data sharing.
+  For more information, see [Manage environments](manage-environments.md).
+
 
 ## December 2020 updates
 
