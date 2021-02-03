@@ -1,7 +1,7 @@
 ---
-title: "Create and edit measures"
-description: "Define customer-related measures to analyze and reflect the performance of certain business areas."
-ms.date: 10/15/2020
+title: "Create and manage measures"
+description: "Define measures to analyze and reflect the performance of your business."
+ms.date: 02/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -13,92 +13,99 @@ manager: shellyha
 
 # Define and manage measures
 
-**Measures** represent key performance indicators (KPIs) that reflect the performance and health of specific business areas. Audience insights provides an intuitive experience for building different types of measures, using a query builder that doesn't require you to code or validate your measures manually. You can track your business measures on the **Home** page, see measures for specific customers on the **Customer Card**, and use measures to define customer segments on the **Segments** page.
+Measures help you to better understand customer behaviors and business performance by retrieving relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand individual customer’s purchase history. Or measure *total sales of the company* to understand the aggregate-level revenue in the whole business.  
+
+Measures are created using the measure builder, a data query platform with various operators and simple mapping options. It lets you filter the data, group results, detect [entity relationship paths](relationships.md), and preview the output.
+
+Use the measure builder to plan business activities by querying customer data and extract insights. For example, creating a measure of *total spend per customer* and *total return per customer* helps identify a group of customers with high spend yet high return. You can [create a segment](segments.md) to drive next best actions. 
 
 ## Create a measure
 
-This section walks you through creating a measure from scratch. You can build measures with data from multiple data sources that are connected through the Customer entity. Some [service limits](service-limits.md) apply.
+This section walks you through creating a new measure from scratch. You can build a measure with data attributes from data entities that have a relationship set up to connect with the Customer entity. 
 
 1. In audience insights, go to **Measures**.
 
-2. Select **New measure**.
+1. Select **New**.
 
-3. Choose the measure **Type**:
-
-   - **Customer attribute**: A single field per customer that reflects a score, value, or state for the customer. Customer attributes are created as attributes in a new system-generated entity called **Customer_Measure**.
-
-   - **Customer measure**: Insights on customer behavior with breakdown by selected dimensions. A new entity is generated for each measure, potentially with multiple records per customer.
-
-   - **Business measure**: Tracks your business performance and health of the business. Business measures can have two different outputs: a numeric output that shows on the **Home** page or a new entity that you find on the **Entities** page.
-
-4. Provide a **Name** and an optional **Display name**, then select **Next**.
-
-5. In the **Entities** section, select the first entity from the drop-down list. At this point, you should decide whether additional entities are needed as part of your measure definition.
-
-   > [!div class="mx-imgBorder"]
-   > ![Measure definition](media/measure-definition.png "Measure definition")
-
-   To add more entities, select **Add entity** and select entities you want to use for the measure.
-
+1. Select **Edit name** and provide a **Name** for the measure. 
    > [!NOTE]
-   > You can select only entities that have relationships to your starting entity. For more information about defining relationships, see [Relationships](relationships.md).
+   > If your new measure configuration has only two fields, for exmample, CustomerID and one calculation, the output will be added as a new column to the system generated entity called Customer_Measure. And you will be able to see the measure’s value in the unified customer profile. Other measures will generate their own entities.
 
-6. Optionally, you can configure variables. In the **Variables** section, select **New variable**.
+1. In the configuration area, choose the aggregation function from the **Select Function** drop-down menu. Aggregation functions include: 
+   - **Sum**
+   - **Average**
+   - **Count**
+   - **Count Unique**
+   - **Max**
+   - **Min**
+   - **First**: takes the first value of the data record
+   - **Last**: takes the last value that was added to the data record
 
-   Variables are calculations that are made on each of your selected records. For example, summing point-of-sale (POS) and online sales for each of your customers' records.
+   :::image type="content" source="media/measure-operators.png" alt-text="Operators for measure calculations.":::
 
-7. Provide a **Name** for the variable.
+1. Select **Add attribute** to select the data you need to create this measure.
+   
+   1. Select the **Attributes** tab. 
+   1. Data entity: Choose the entity that includes the attribute you want to measure. 
+   1. Data attribute: Choose the attribute you want to use in the aggregation function to calculate the measure. You can only select one attribute at a time.
+   1. You can also select a data attribute from an existing measure by selecting the **Measures** tab. Or, you can search for an entity or measure name. 
+   1. Select **Add** to add the selected attribute to the measure.
 
-8. In the **Expression** area, choose a field to begin your calculation with.
+   :::image type="content" source="media/measure-attribute-selection.png" alt-text="Select an attribute to use in calculations.":::
 
-9. Type an expression in the **Expression** area while choosing more fields to be included in your calculation.
+1. To build more complex measures, you can add more attributes or use math operators on your measure function.
 
-   > [!NOTE]
-   > Currently, only arithmetic expressions are supported. Additionally, variable calculation isn't supported for entities from different [entity paths](relationships.md).
+   :::image type="content" source="media/measure-math-operators.png" alt-text="Create a complex measure with math operators.":::
 
-10. Select **Done**.
+1. To add filters, select the **Filter** in the configuration area. 
+  
+   1. In **Add attribute** section of the **Filters** pane, select the attribute you want to use to create filters.
+   1. Set the filter operators to define the filter for every selected attribute.
+   1. Select **Apply** to add the filters to the measure.
 
-11. In the **Measure definition** section, you'll define how your chosen entities and calculated variables are aggregated in a new measure entity or attribute.
+1. To add dimensions, select **Dimension** in the configuration area. Dimensions will show as columns in the measure output entity.
+   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected to create *customer-level measures*. You can remove the default dimension if you want to create *business-level measures*.
+   1. Select **Done** to add the dimensions to the measure.
 
-12. Select **New value**. You can think of a dimension as a *group by* function. The data output of your Measure entity or attribute will be grouped by all of your defined dimensions.
+1. If there are multiple paths between the data entity you mapped and the Customer entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path.
+   1. Select **Data preferences** and choose the entity path that should be used to identify your measure.
+   1. Select **Done** to apply your selection. 
 
-    Select or enter the following information as part of your dimension's definition:
+   :::image type="content" source="media/measures-data-preferences.png" alt-text="Select the entity path for the measure.":::
 
-    - **Entity**: If you define a Measure entity, it should include at least one attribute. If you define a Measure attribute, it will include only one attribute by default. This selection is about choosing the entity that includes that attribute.
-    - **Field**: Choose the specific attribute to be included either in your Measure entity or attribute.
-    - **As**: Defines the name of your new field.
-    - **Display name**: Defines the display name of your field.
+1. To add more calculations for the measure, select **New calculation**. You can only use entities on the same entity path for new calculations. More calculations will show as new columns in the measure output entity.
 
-    > [!NOTE]
-    > Your business measure will be saved as a single-number entity and will appear on the **Home** page unless you add more dimensions to your measure. After adding more dimensions, the measure will *not* show up on the **Home** page.
+1. Select **...** on the calculation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.
 
-13. Optionally, add aggregation functions. Any aggregation that you create results in a new value within your Measures entity or attribute. Supported aggregation functions are: **Min**, **Max**, **Average**, **Median**, **Sum**, **Count Unique**, **First** (takes the first record of a dimension value), and **Last** (takes the last record added to a dimension value).
+1. In the **Preview** area, you'll see the data schema of the measure output entity, including filters and dimensions. The preview reacts dynamically to changes in the configuration.
 
-14. Select **Save** to apply your changes to the measure.
+1. Select **Run** to calculate results for the configured measure. Select **Save and close** if you want to keep the current configuration and run the measure later.
+
+1. Go to **Measures** to see the newly created measure in the list.
 
 ## Manage your measures
 
-After creating at least one measure, you'll see a list of measures on the **Measures** page.
+After [creating a measure](#create-a-measure), you see a list of measures on the **Measures** page.
 
-You'll find information about the measure type, the creator, creation date and time, last edit date and time, status (whether the measure is active, inactive, or failed), and last refresh date and time. When you select a measure from the list, you can see a preview of its output.
+You'll find information about the measure type, the creator, creation date, status, and state. When you select a measure from the list, you can preview the output and download a .CSV file.
 
 To refresh all of your measures at the same time, select **Refresh all** without selecting a specific measure.
 
 > [!div class="mx-imgBorder"]
 > ![Actions to manage single measures](media/measure-actions.png "Actions to manage single measures")
 
-Alternatively, select a measure from the list and perform one of the following actions:
+Select a measure from the list for the following options:
 
 - Select the measure name to see its details.
 - **Edit** the configuration of the measure.
+- **Refresh** the measure based on the latest data.
 - **Rename** the measure.
 - **Delete** the measure.
-- Select the ellipsis (...) and then **Refresh** to start the refresh process for the measure.
-- Select the ellipsis (...) and then **Download** to get a .CSV file of the measure.
+- **Activate** or **Deactivate**. Inactive measures won't get refreshed during a [scheduled refresh](system.md#schedule-tab).
 
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
 
 ## Next step
 
-You cam use existing measures to create your first customer segment on the **Segments** page. For more information, see [Segments](segments.md).
+You cam use existing measures to create [a customer segment](segments.md).
