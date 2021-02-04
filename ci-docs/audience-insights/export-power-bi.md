@@ -56,7 +56,7 @@ Environments that have more than one [relationship](relationships.md) defined be
 
 You can identify and remove the duplicated relationships.
 
-1. In audience insights, go to **Relationships** on the environment you're missing in Power BI.
+1. In audience insights, go to **Data** > **Relationships** on the environment you're missing in Power BI.
 2. Identify duplicated relationships:
    - Check if there is more than one relationship defined between the same two entities.
    - Check if there is a relationship created between two entities that are both included in the unification process. There is an implicit relationship defined between all entities included in the unification process.
