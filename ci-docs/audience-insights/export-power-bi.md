@@ -50,17 +50,16 @@ Consider working with a subset of your data. For example, you can create [segmen
 
 ## Troubleshooting
 
-### Customer Insights instance not showing up in Power BI after configuring the connector
+### Customer Insights environment doesn't show in Power BI
 
-Instances that have more than one [relationship](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/relationships) defined between identical two entities in Audience Insights will not be available in the Power BI connector.
+Environments that have more than one [relationship](relationships.md) defined between two identical entities in audience insights will not be available in the Power BI connector.
 
-To identify and remove the duplicate relationships, follow these steps:
+You can identify and remove the duplicated relationships.
 
-1. Navigate to the **Relationships** page of your instance that is not showing up in Power BI.
-2. Identify any duplicate relationships:
-   Check if there is more than one relationship defined between the same two entities.
-   Check if there is a relationship created between two entities that are both included in the unification process. There is an implicit relationship defined between all entities included in the unification process. 	
+1. In audience insights, go to **Relationships** on the environment you're missing in Power BI.
+2. Identify duplicated relationships:
+   - Check if there is more than one relationship defined between the same two entities.
+   - Check if there is a relationship created between two entities that are both included in the unification process. There is an implicit relationship defined between all entities included in the unification process.
 3. Remove any duplicate relationships identified.
 
-After having removed the duplicate relationships, configure the Power BI connector again and the instance should now show up.  
-
+After removal of the duplicated relationships, try to configure the Power BI connector again. The environment should be available now.
