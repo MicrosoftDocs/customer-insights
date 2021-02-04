@@ -241,7 +241,7 @@ You can specify conditions that certain records should always match or never mat
 
    The same template file can specify custom match records from multiple entities.
    
-   If you want to specify custom matching for deduplication on an entity, provide the same entity as both Entity1 and Entity2 and mention the different primary key values.
+   If you want to specify custom matching for deduplication on an entity, provide the same entity as both Entity1 and Entity2 and set the different primary key values.
 
 5. After adding all the overrides you want to apply, save the template file.
 
