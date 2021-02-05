@@ -1,6 +1,6 @@
 ---
-title: Customer Lifetime Value (CLV) prediction
-description: "Predict revenue potential for acive customers in the future."
+title: Customer lifetime value (CLV) prediction
+description: "Predict revenue potential for active customers in the future."
 ms.date: 02/05/2021
 ms.reviewer: wameng
 ms.service: customer-insights
@@ -11,24 +11,24 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Customer Lifetime Value (CLV) prediction (Preview)
+# Customer lifetime value (CLV) prediction (Preview)
 
 Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This feature can help you achieve various goals: 
 - Identify high-value customers and process this insight
 - Create strategical customer segments based on their potential value to run personalized campaigns with targeted sales, marketing, and support efforts
 - Guide product development by focusing on features tht increase customer value
 - Optimize sales or marketing strategy and allocate budget more accurately for customer outreach
-- Recognize, reward, and incentivize high-value customers through loyalty or rewards programs 
+- Recognize and reward high-value customers through loyalty or rewards programs 
 
 ## Prerequisites
 
 Before getting started, reflect what CLV means for your business. Currently, we support transaction-based CLV prediction. The predicted value of a customer is based on history of business transactions. To create the prediction, you need at least [Contributor](permissions.md) permissions.
 
-Since configuring and running a CLV model doesn't take a lot of time, consider creating several models with varying input preferences and compare model results to see which model scenario best fits your business needs.
+Since configuring and running a CLV model doesn't take much time, consider creating several models with varying input preferences and compare model results to see which model scenario best fits your business needs.
 
 ###  Data requirements
 
-The following data is required, and where marked optional, recommended for increased model perfomance. The more data the model can process, the more accurate and holistic the prediction will be. Therefore, we encourage you to ingest additional customer activity data, if available.
+The following data is required, and where marked optional, recommended for increased model performance. The more data the model can process, the more accurate the prediction will be. Therefore, we encourage you to ingest more customer activity data, if available.
 
 - Customer Identifier: Unique identifier to match transactions to an individual customer
 
@@ -41,7 +41,7 @@ The following data is required, and where marked optional, recommended for incre
 
 - Additional data (optional), for example
     - Web activities: website visit history, email history
-    - Loyalty activities: loyalty reward points accrual andredemption history
+    - Loyalty activities: loyalty reward points accrual and redemption history
     - Customer service log, service call, complaint, or return history
 - Data about customer activities (optional):
     - Activity identifiers to distinguish activities of the same type
@@ -51,7 +51,7 @@ The following data is required, and where marked optional, recommended for incre
         - Primary key: A unique identifier for an activity
         - Timestamp: The date and time of the event identified by the primary key
         - Event (activity name):  The name of event you want to use
-        - Details (amount or value) : Details about the customer activity
+        - Details (amount or value): Details about the customer activity
 
 ## Create a Customer Lifetime Value prediction
 
@@ -68,27 +68,27 @@ The following data is required, and where marked optional, recommended for incre
 ### Define model preferences
 
 1. Set a **Prediction time period** to define how far into the future you want to predict the CLV.    
-   By default, the unit is set as months. You can change it to years and set the numbers accordingly.
+   By default, the unit is set as months. You can change it to years to look further in the future.
 
    > [!TIP]
    > To accurately predict CLV for the time period you set, you need a comparable period of historical data. For example, if you want to predict for the next 12 months, it is recommended that you have at least 18 – 24 months of historical data.
 
-1. Specify what **Active customers** means for your business. Set the time frame in which a customer must have had at least one transatction to be considered active. The model will only predict CLV for active customers. 
+1. Specify what **Active customers** mean for your business. Set the time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers. 
    - **Let model calculate purchase interval (recommended)**: The model analyzes your data and determines a time period based on historical purchases.
    - **Set interval manually**: If you have a specific business definition of an active customer, choose this option and set the time period accordingly.
 
 1. Define percentile of **High-value customer** to enable the model to provide results that fit your business definition.
-    - **Model calculation (recommended)**: The model analyzes your data and determines what a high value customer might be for your business based on your customers’ transaction history. The model uses a heuristic rule (inspired by the the 80/20 rule or pareto principle) to find the proportion of high-value customers. The percentage of customers that contributed to 80% cumulative revenue for your business in the historical period are considered high-value customers. Typically, less than 30-40% customers contribute to 80% cumulative revenue. However, this number might vary depending on your business and industry.    
+    - **Model calculation (recommended)**: The model analyzes your data and determines what a high value customer might be for your business based on your customers’ transaction history. The model uses a heuristic rule (inspired by the 80/20 rule or pareto principle) to find the proportion of high-value customers. The percentage of customers that contributed to 80% cumulative revenue for your business in the historical period are considered high-value customers. Typically, less than 30-40% customers contribute to 80% cumulative revenue. However, this number might vary depending on your business and industry.    
     - **Percent of top active customers**: Define high-value customers for your business as a percentile of top active paying customers. For example, you can use this option to define high-value customers as top 20% of future paying customers.
     - **Dollar amount**:  Set a monetary amount that a customer will spend at least in the projected time period.
 
-    If your business defines high value customers in a different way, [please reach out to us as we would love to know](https://go.microsoft.com/fwlink/?linkid=2074172).
+    If your business defines high value customers in a different way, [let us know as we would love to hear](https://go.microsoft.com/fwlink/?linkid=2074172).
 
 1. Select **Next** to proceed to the next step.
 
 ### Add required data
 
-1. In the **Requried data** step, select **Add data** for **Customer transaction history** and choose the entity that provides the transaction history information as described in the [prerequisites](#prerequisites).
+1. In the **Required data** step, select **Add data** for **Customer transaction history** and choose the entity that provides the transaction history information as described in the [prerequisites](#prerequisites).
 
 1. Map the semantic fields to attributes within your purchase history entity and select **Next**.
  
@@ -102,7 +102,7 @@ The following data is required, and where marked optional, recommended for incre
 
 ### Add optional data
 
-Data reflecting key customer interactions (like web, customer service, and event logs) adds context to transaction records. Additional patterns found in your customer activity data can improve the accuracy of the predictions. 
+Data reflecting key customer interactions (like web, customer service, and event logs) adds context to transaction records. More patterns found in your customer activity data can improve the accuracy of the predictions. 
 
 1. In the **Additional data (optional)** step, select **Add data**. Choose the customer activity entity that provides the customer activity information as described in the [prerequisites](#prerequisites).
 
@@ -117,20 +117,20 @@ Data reflecting key customer interactions (like web, customer service, and event
     -Enter a name that describes the relationship.
  
 1. Select **Save**.    
-    Add more additional data if there are other customer activities you want to include.
+    Add more data if there are other customer activities you want to include.
 
 1. Select **Next**.
 
 ### Set update schedule
 
-1. In the **Data udpate schedule** step, choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested in audience insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. In the **Data update schedule** step, choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested in audience insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 
 
 ### Review and run the model configuration
 
-1. In the **Review your model details** step, validate the the configuration of the prediction. You can go back to any part of the prediction configuration by selecting **Edit** under the shown value.You can also select a configuration step from the progress indicator.
+1. In the **Review your model details** step, validate the configuration of the prediction. You can go back to any part of the prediction configuration by selecting **Edit** under the shown value. You can also select a configuration step from the progress indicator.
 
 1. If all values are configured correctly, select **Save and run** to start running the model. On the **My predictions** tab, you can see the status of the prediction process. The process may take several hours to complete depending on the amount of data used in the prediction.
 
@@ -171,7 +171,7 @@ There are three primary sections of data within the results page.
   - B when the model accurately predicted between 0-5% more high-value customers as compared to the baseline model.
   - C when the model accurately predicted fewer high-value customers as compared to the baseline model.
 
-  The **Model rating** pane, shows additional details about the AI model performance and the baseline model. The baseline model uses a non-AI based approach to calculate customer lifetime value based primarily on historical purchases made by customers.     
+  The **Model rating** pane shows further details about the AI model performance and the baseline model. The baseline model uses a non-AI based approach to calculate customer lifetime value based primarily on historical purchases made by customers.     
   The standard formula used to calculate CLV by the baseline model:    
   *CLV for each customer = Average monthly purchase made by the customer in the active customer window * Number of months in the CLV prediction period * Overall retention rate of all customers*
 
@@ -185,13 +185,13 @@ There are three primary sections of data within the results page.
     
     Another metric lets you review the overall performance of the model in terms of error in predicting future values. We use the overall Root Mean Squared Error (RMSE) metric to assess this error. RMSE is a standard way to measure the error of a model in predicting quantitative data. The AI model’s RMSE is compared to the RMSE of the baseline model and the relative difference is reported.
 
-    The AI model prioritizes the accurate ranking of customers according to the value they bring to your business. So only the success rate of predicting high-value customers is used to derive the final model grade. The RMSE metric is sensitive to outliers. In scenarios where you have a very small percentage of customers with very high purchase values, the overall RMSE metric might not give the complete picture of the model performance.   
+    The AI model prioritizes the accurate ranking of customers according to the value they bring to your business. So only the success rate of predicting high-value customers is used to derive the final model grade. The RMSE metric is sensitive to outliers. In scenarios where you have a small percentage of customers with extraordinarily high purchase values, the overall RMSE metric might not give the full picture of the model performance.   
 
 - **Value of customers by percentile**: Using your definition of high-value customers, customers are grouped into low-value and high-value, based on their CLV predictions, and shown in a chart. By hovering over the bars in the histogram, you can see the number of customers in each group and the average CLV of that group. This data can help if you want to [create segments of customers](segments.md) based on their CLV predictions.
 
-- **Most influential factors**: A variety of factors is considered when creating your CLV prediction based on the input data provided to the AI model. Each of the factors has their importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. These factors also provide more insight about the most influential factors that contributed towards predicting CLV across all your customers.
+- **Most influential factors**: Various factors are considered when creating your CLV prediction based on the input data provided to the AI model. Each of the factors has their importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. These factors also provide more insight about the most influential factors that contributed towards predicting CLV across all your customers.
 
-## Refresh a prediciton
+## Refresh a prediction
 
 Predictions automatically refresh on the same [schedule your data refreshes](system.md#schedule-tab) as configured in settings. You can refresh them manually too.
 
@@ -212,4 +212,4 @@ Deleting a prediction also removes its output entity.
 1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
 2. Select the vertical ellipses next to the prediction you want to view error logs for.
 3. Select **Logs**.
-4. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading additional data into audience insights.
+4. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading more data into audience insights.
