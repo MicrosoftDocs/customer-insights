@@ -91,12 +91,16 @@ The following data is required, and where marked optional, recommended for incre
 1. In the **Required data** step, select **Add data** for **Customer transaction history** and choose the entity that provides the transaction history information as described in the [prerequisites](#prerequisites).
 
 1. Map the semantic fields to attributes within your purchase history entity and select **Next**.
+
+   :::image type="content" source="media/clv-add-customer-data-mapping.png" alt-text="Image of the configuration step to map data attributes for the required data.":::
  
 1. If the fields below aren't populated, configure the relationship from your purchase history entity to the *Customer* entity and select **Save**.
     - Select the transaction history entity.
     - Select the field that identifies a customer in the purchase history entity. It needs to relate to the primary customer ID of your Customer entity.
     - Select the entity that matches your primary customer entity.
     - Enter a name that describes the relationship.
+
+      :::image type="content" source="media/clv-add-customer-data-relationship.png" alt-text="Image of configuration step to define the relationship with the customer entity.":::
 
 1. Select **Next**.
 
@@ -108,6 +112,8 @@ Data reflecting key customer interactions (like web, customer service, and event
 
 1. Map the semantic fields to attributes within your customer activity entity and select **Next**.
 
+   :::image type="content" source="media/clv-additional-data-mapping.png" alt-text="Image of the configuration step to map fields for additional data.":::
+
 1. Select an activity type that matches the type of customer activity you're adding. Choose from existing activity types or add a new activity type.
 
 1. Configure the relationship from your customer activity entity to the *Customer* entity.
@@ -115,7 +121,9 @@ Data reflecting key customer interactions (like web, customer service, and event
     . Select the field that identifies the customer in the customer activity table. It can be directly related to the primary customer ID of your *Customer* entity.
     - Select the *Customer* entity that matches your primary *Customer* entity.
     -Enter a name that describes the relationship.
- 
+
+   :::image type="content" source="media/clv-additional-data.png" alt-text="Image of the step in the configuration flow to add additional data and configure the activity with filled in examples.":::
+
 1. Select **Save**.    
     Add more data if there are other customer activities you want to include.
 
@@ -163,7 +171,9 @@ Data reflecting key customer interactions (like web, customer service, and event
 There are three primary sections of data within the results page.
 
 - **Training model performance**: A, B, or C are possible grades. This grade indicates the performance of the prediction and can help you make the decision to use the results stored in the output entity. Select **Learn about this score** to better understand the underlying model performance metrics and how the final model performance grade was derived.
- 
+  
+  :::image type="content" source="media/clv-model-score.png" alt-text="Image of the model score information box with the grade A.":::
+
   Using the definition of high value customers provided while configuring the prediction, the system assess how the AI model performed in predicting the high value customers as compared to a baseline model.    
 
   Grades are determined based on the following rules:
