@@ -115,6 +115,8 @@
           href: audience-insights/predict-transactional-churn.md
         - name: Sample guide for transactional churn prediction
           href: audience-insights/sample-guide-predict-transactional-churn.md
+        - name: Predict customer lifetime value (CLV)
+          href: audience-insights/predict-customer-lifetime-value.md
         - name: Implement custom machine learning models
           href: audience-insights/custom-models.md
         - name: Experiments with Azure Machine learning
