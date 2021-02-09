@@ -171,7 +171,7 @@
           href: audience-insights/system.md
         - name: Assign user permissions
           href: audience-insights/permissions.md
-        - name: Set up connections
+        - name: Connections (preview) overview
           href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
