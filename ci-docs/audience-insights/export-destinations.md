@@ -13,7 +13,7 @@ manager: shellyha
 
 # Exports (preview) overview
 
-The **Exports** page shows you all configured exports. Exports share specific data with various business apps and tools, and can include customer profiles or entities and their related schemas and mapping details. Each export needs a connection, set up by an admin, to manage authentication and access.
+The **Exports** page shows you all configured exports. Exports share specific data with various business apps and tools, and can include customer profiles or entities and their related schemas and mapping details. Each export needs a [connection, set up by an admin, to manage authentication and access](connections.md).
 
 Go to **Data** > **Exports** to get to this page. All user roles have access to Exports page.
 
@@ -22,7 +22,7 @@ Go to **Data** > **Exports** to get to this page. All user roles have access to 
 
 To set up or edit an export, you need to have connections available to you. This depends on your [role](permissions.md):
 - Administrators have access to all connections. They can also create new connections when setting up an export.
-- Contributors can have access to specific connections. They depend on administrators to configure connection to be available to them. [Learn more about sharing connections](connections.md#allow-contributors-to-use-a-connection-for-exports)
+- Contributors can have access to specific connections. They depend on administrators to configure connection to be available to them. [Learn more about sharing connections](connections.md#allow-contributors-to-use-a-connection-for-exports).
 - Viewers cannot set up or edit exports.
 
 1. Go to **Data** > **Exports**.

@@ -126,7 +126,7 @@
 
     - name: Export options
       items:
-        - name: Export destinations overview
+        - name: Exports (preview) overview
           href: audience-insights/export-destinations.md
         - name: Azure Blob Storage
           href: audience-insights/export-azure-blob-storage.md
@@ -171,6 +171,8 @@
           href: audience-insights/system.md
         - name: Assign user permissions
           href: audience-insights/permissions.md
+        - name: Set up connections
+          href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
         - name: Connect to an ADLS storage account using Service Principal
