@@ -20,9 +20,9 @@ Go to **Data** > **Exports** to get to this page. All user roles have access to 
 
 ## Set up a new export
 
-To set up or edit an export, you need to have connections available to you. This depends on your permissions:
-- [Administrators](permissions.md) have access to all connections. They can also create new connections when setting up an export.
-- [Contributors](permissions.md) can have access to specific connections. They depend on administrators to configure connection to be available to them. [Learn more about sharing connections](connections.md#allow-contributors-to-use-a-connection-for-exports)
+To set up or edit an export, you need to have connections available to you. This depends on your [role](permissions.md):
+- Administrators have access to all connections. They can also create new connections when setting up an export.
+- Contributors can have access to specific connections. They depend on administrators to configure connection to be available to them. [Learn more about sharing connections](connections.md#allow-contributors-to-use-a-connection-for-exports)
 - Viewers cannot set up or edit exports.
 
 1. Go to **Data** > **Exports**.
@@ -35,24 +35,23 @@ To set up or edit an export, you need to have connections available to you. This
 
 1. Provide the required details and select **Save** to create the export.
 
-## View Exports and export details
-
-After creating export destinations, you'll find them in the list on the Exports page. All user roles have access to this page, so they understand what data is shared and its latest status.
-
-1. Go to **Data** > **Exports**.
-
-1. For user roles who cannot edit a specific export, the first action on each row will be **View** instead of edit. Select **View** to open a side panel.
-
-1. This side panel displays the set up of this export. You cannot change anything. To get back to the Exports page select **Close**. 
-
-
-## Edit an export
+### Edit an export
 
 1. Select the vertical ellipsis for the Export destination you want to edit.
 
 1. Select **Edit** from the dropdown menu.
 
 1. Change the values that require update and select **Save**.
+
+## View Exports and export details
+
+After creating export destinations, you'll find them in the list on the Exports page. All user roles have access to this page, so they understand what data is shared and its latest status.
+
+1. Go to **Data** > **Exports**.
+
+1. For user roles who cannot edit a specific export, the first action on each row is called **View** instead of Edit. Select **View** to open a side panel.
+
+1. This side panel displays the set up of this export. You cannot change anything. To get back to the Exports page select **Close**. 
 
 ## Run exports on demand
 
