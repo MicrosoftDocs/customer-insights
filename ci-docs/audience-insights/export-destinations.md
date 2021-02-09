@@ -1,6 +1,6 @@
 ---
-title: "Export destinations"
-description: "Export data and manage export destinations."
+title: "Exports"
+description: "Manage exports to share data."
 ms.date: 07/21/2020
 ms.reviewer: philk
 ms.service: customer-insights
@@ -11,84 +11,64 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Export destinations (preview) overview
+# Exports (preview) overview
 
-The **Export destinations** page shows you all locations you've set up to export data to. You can also add new destinations for export. Additionally, it shows export currently available options. Get a quick overview, description, and find out what you can do with each extensibility option. Export unified profiles, measures, and segments to supported apps relevant for your business.
+The **Exports** page shows you all configured exports. Exports share specific data with various business apps and tools, and can include customer profiles or entities and their related schemas and mapping details. Each export needs a connection, set up by an admin, to manage authentication and access.
 
-Go to **Admin** > **Export destinations** to find the following extensibility options:
+Go to **Data** > **Exports** to get to this page. All user roles have access to Exports page.
 
-- [Dynamics 365 Customer Card Add-in](customer-card-add-in.md)
-- [Facebook Ads Manager connector](export-facebook.md)
-- [Power Automate connector](export-power-automate.md)
-- [Power Apps connector](export-power-apps.md)
-- [Power BI connector](export-power-bi.md)
-- [Autopilot](export-autopilot.md)
-- [DotDigital](export-dotdigital.md)
-- [Dynamics 365 Sales](export-dynamics365-sales.md)
-- [Dynamics 365 Marketing](export-dynamics365-marketing.md)
-- [Azure Blob Storage](export-azure-blob-storage.md)
-- [SendGrid](export-sendgrid.md)
-- [LiveRamp&reg; connector](export-liveramp.md)
-- [Bot for Microsoft Teams](export-teams-bot.md)
-- [Mailchimp](export-mailchimp.md)
-- [Customer Insights API](apis.md)
 
-## Add a new export destination
+## Set up a new export
 
-To add export destinations, you have [administrator permissions](permissions.md). If you export to Microsoft services, we assume both services are in the same organization.
+To set up or edit an export, you need to have connections available to you. This depends on your permissions:
+- [Administrators](permissions.md) have access to all connections. They can also create new connections when setting up an export.
+- [Contributors](permissions.md) can have access to specific connections. They depend on administrators to configure connection to be available to them. [Learn more about sharing connections](connections.md#allow-contributors-to-use-a-connection-for-exports)
+- Viewers cannot set up or edit exports.
 
-1. Go to **Admin** > **Export destinations**.
+1. Go to **Data** > **Exports**.
 
-1. Switch to the **My export destinations** tab.
+1. Select **Add export** to create a new export destination.
 
-1. Select **Add destination** to create a new export destination.
+1. In the **Set up export** pane, select which connection to use. Picking a connection will define the type of export you are creating. [Connections](connections.md) are setup by administrators. 
 
-1. In the **Add destination** pane, select the **Type** of export destination in the drop-down.
+   1. If you are administrator you can choose to create a new connection.
 
-1. Provide the required details and select **Next** to create the export destination.
+1. Provide the required details and select **Save** to create the export.
 
-You can also select **Set up** on a tile on the **Discover** tab.
+## View Exports and export details
 
-## View Export destinations
+After creating export destinations, you'll find them in the list on the Exports page. All user roles have access to this page, so they understand what data is shared and its latest status.
 
-After creating export destinations, you'll find them in a table on the **My export destinations** tab. This table has three columns:
+1. Go to **Data** > **Exports**.
 
-- **Display name**: The name you entered when creating the destination.
-- **Type**: The export destination type you set when creating the destination.
-- **Created**: The date you created the destination.
+1. For user roles who cannot edit a specific export, the first action on each row will be **View** instead of edit. Select **View** to open a side panel.
 
-## Edit an export destination
+1. This side panel displays the set up of this export. You cannot change anything. To get back to the Exports page select **Close**. 
+
+
+## Edit an export
 
 1. Select the vertical ellipsis for the Export destination you want to edit.
-
-   > [!div class="mx-imgBorder"]
-   > ![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")
 
 1. Select **Edit** from the dropdown menu.
 
 1. Change the values that require update and select **Save**.
 
-## Export data on demand
+## Run exports on demand
 
-After configuring a connector for an export destination, exports will run with every [scheduled refresh](system.md#schedule-tab).
+After configuring an export, it will run with every [scheduled refresh](system.md#schedule-tab) as long as it has a connection.
 
-To export data without waiting for a scheduled refresh, go the **My export destinations** tab on **Admin** > **Export destinations**.
+To export data without waiting for a scheduled refresh, go to **Data** > **Exports**. You how two options:
 
-> [!div class="mx-imgBorder"]
-> ![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")
+- To run all exports simultaneously select **Run all** in the command bar. 
+- To run a single export select the ellipsis (...) on a list item and then choose the **Run** option.
 
-- Select **Export** above the list to run the export to all export destinations simultaneously.
-- Select the ellipsis (...) after a list item and then choose the **Export** option to run the export for a single export destination.
+## Remove an Export
 
-## Remove an Export destination
+To remove an Export, start from the main **Exports** page.
 
-To remove an Export destination, start from the main **Export destinations** page.
+1. Select the vertical ellipsis for the Export you want to remove.
 
-1. Select the vertical ellipsis for the Export destination you want to remove.
+1. Select **Remove** from the dropdown menu.
 
-   > [!div class="mx-imgBorder"]
-   > ![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")
-
-2. Select **Remove** from the dropdown menu.
-
-3. Confirm the removal by selecting **Remove** on the confirmation screen.
+1. Confirm the removal by selecting **Remove** on the confirmation screen.
