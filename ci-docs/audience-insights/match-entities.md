@@ -39,65 +39,66 @@ The primary entity *eCommerce:eCommerceContacts* is matched with the next entity
 > - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
 > - Choose the entity that hast several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-## Define rules for your first match pair
+After specifying the match order, you'll see the defined match pairs in the **Matched records details** section on **Data** > **Unify** > **Match**. The key metrics will be empty until the match process completes.
 
-After specifying the match order, you'll see the defined matches on the **Match** page. The tiles at the top of the screen will be empty until you run your match order.
+## Define rules for match pairs
+
+Match rules specify the logic by which a specific pair of entities will be matched.
 
 > [!div class="mx-imgBorder"]
 > ![Define rules](media/configure-data-match-need-rules.png "Define rules")
 
-The **Needs Rules** warning suggests that no match rule is defined for a match pair. Match rules specify the logic by which a specific pair of entities will be matched.
+The **Needs rules** warning next to an entity name suggests that no match rule is defined for a match pair. 
 
-1. To define your first rule, open the **Rule Definition** pane by selecting the corresponding match row in the matches table (1) and then selecting **Create new rule** (2).
+1. Select **Add rules** under an entity in the **Matched records details** section to define match rules.
 
    > [!div class="mx-imgBorder"]
    > ![Create new rule](media/configure-data-match-new-rule2.png "Create new rule")
 
-2. In the **Edit Rule** pane, configure the conditions for that rule. Each condition is represented by two rows that include mandatory selections.
+1. In the **Create rule** pane, configure the conditions for the rule.
 
    > [!div class="mx-imgBorder"]
    > ![New rule pane](media/configure-data-match-new-rule-condition.png "New rule pane")
 
-   Entity/Field (first) - An attribute that will be used for matching from the first match pair entity. Examples could include a phone number or email address. Choose an attribute that is likely to be unique to the customer.
+   - **Entity/Field (first row)**: Choose an related entitiy and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching on the basis of activity-type attributes. For example, a purchase ID will likely find no match in other record types.
 
-   > [!TIP]
-   > Avoid matching on the basis of activity-type attributes. In other words, if an attribute seems to be an activity, then it might be a poor criteria to match by.  
+   - **Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
 
-   Entity/Field (Second) - An attribute that will be used for matching from the second match pair entity.
-
-   Normalize - **Normalization method**: Various normalization options are available for the selected attributes. For example, removing punctuation or removing spaces
-
-   For Organization name normalization (Preview), you can also select **Type (Phone, Name, Organization)**
+   - **Normalize**: Select from various normalization options for the selected attributes. For example, removing punctuation, capitalization, or spaces.
 
    > [!div class="mx-imgBorder"]
    > ![Normalization-B2B](media/match-normalization-b2b.png "Normalization-B2B")
 
-   Precision level - The level of precision that will be used for this condition. Setting a precision level for a match condition can have two types: **Basic** and **Custom**.  
-   - Basic: Provides you with four options to select from: Low, Medium, High, and Exact. Select **Exact** to only match records that that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
-   - Custom: Use the slider to define the custom percentage that records need to match or enter a value in the **Custom** field. The system will only match records passing this threshold as conflated match pairs. Values on the slider are between 0 and 1. So 0.64 represents 64 percent.
+   - **Precision**: Set the level of precision to apply for this condition. 
+     - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
+     - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
 
-3. Select **Done** to save the rule.
+1. [Add more conditions](#add-conditions-to-a-rule) or select **Done** to finalize the rule.
 
-### Add multiple conditions
+1. Optionally, [add more rules](#add-rules-to-a-match-pair).
 
-To match your entities only if multiple conditions are met, add more conditions that are linked through an AND operator.
+1. Select **Save** to apply your changes.
 
-1. In the **Edit rule** pane, select **Add condition**. You can also delete conditions by selecting the remove button next to an existing condition.
+### Add conditions to a rule
 
-2. Select **Done** so save the rule.
+To match entities only if attributes meet multiple conditions, add more conditions to a match rule.
 
-## Add multiple rules
+1. Go to **Data** > **Unify** > **Match** and select **Edit** on the rule you want to add conditions to.
 
-Each condition applies to a single pair of attributes, while rules represent sets of conditions. To have your entities matched by different sets of attributes, you can add more rules.
+1. In the **Edit rule** pane, select **Add condition**.
 
-1. In audience insights, go to **Data** > **Unify** > **Match**.
+1. Select **Done** so save the rule.
 
-2. Select the entity you want to update and select **Add rules**.
+### Add rules to a match pair
 
-3. Follow the procedure as outlined in [Define rules for your first match pair](#define-rules-for-your-first-match-pair).
+Match rules represent sets of conditions. To match entities by conditions based on muliple attributes, add more rules
+
+1.  Go to **Data** > **Unify** > **Match** and select **Add rule** on the entity you want to add rules to.
+
+2. Follow the steps in [Define rules for match pairs](#define-rules-for-match-pairs).
 
 > [!NOTE]
-> The rule order matters. The matching algorithm tries to match on the basis of your first rule and continues to the second rule only if no matches were identified under the first rule.
+> The order of rules matters. The matching algorithm tries to match on the basis of your first rule and continues to the second rule only if no matches were identified with the first rule.
 
 ## Define deduplication on a match entity
 
@@ -189,7 +190,7 @@ Evaluate the quality of your match pairs and refine it:
 
      Get a rich understanding of the effects of different threshold levels. You can compare how many records will be matched under each of the threshold levels, and view the records under each option. Select each of the tiles and review the data in the table section.
 
-## Optimize your matches
+## Manage match rules
 
 Increase the quality by reconfiguring some of your match parameters:
 
