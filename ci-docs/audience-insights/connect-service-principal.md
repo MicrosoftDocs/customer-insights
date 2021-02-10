@@ -1,6 +1,6 @@
 ---
 title: "Connect to an Azure Data Lake Storage Gen2 account with a service principal"
-description: "use an Azure service principal for audience insights to connect to your own data lake when attaching it to audience insights."
+description: "Use an Azure service principal for audience insights to connect to your own data lake when attaching it to audience insights."
 ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
