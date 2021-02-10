@@ -44,7 +44,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    [!div class="mx-imgBorder"]
    ![Transform DoB to Date](media/ecommerce-dob-date.PNG "transform date of birth to date")
 
-1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
+1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
 
 1. Save the data source.
 
@@ -61,7 +61,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **PurchasedOn**: Date/Time
    - **TotalPrice**: Currency
    
-1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommercePurchases**.
+1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommercePurchases**.
 
 1. Save the data source.
 
@@ -79,7 +79,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **RewardsPoints**: Whole Number
    - **CreatedOn**: Date/Time
 
-1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
+1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
 
 1. Save the data source.
 
