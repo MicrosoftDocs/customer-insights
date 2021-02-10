@@ -13,7 +13,12 @@ manager: shellyha
 
 # Match entities
 
-After completing the map phase, you're ready to match your entities. The match phase specifies how to combine your datasets into a unified customer profile dataset. The match phase requires at least [two mapped entities](map-entities.md).
+The match phase specifies how to combine your datasets into a unified customer profile dataset. After completing the [map step](map-entities.md) in the data unification process, you're ready to match your entities. The match phase requires at least two mapped entities.
+
+The match page consists of three sections: 
+- Key metrics that summarize the number of matched records
+- Entities and rules that make up the match process
+- Entities that are processed for deduplication
 
 ## Specify the match order
 
