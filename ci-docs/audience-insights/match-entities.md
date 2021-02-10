@@ -17,30 +17,27 @@ The match phase specifies how to combine your datasets into a unified customer p
 
 The match page consists of three sections: 
 - Key metrics that summarize the number of matched records
-- Entities and rules that make up the match process
-- Entities that are processed for deduplication
+- Match order and rules for cross-entity matching
+- Entities for deduplication
 
 ## Specify the match order
 
-Go to **Data** > **Unify** > **Match** and select **Set order** to start the match phase.
+Go to **Data** > **Unify** > **Match** and select **Set order** to start the match phase. To change the order of entities in a configured match phase, select **Edit** in the **Matched records details** section.
 
-Each match unifies two or more entities into a single entity, while persisting each unique customer record. In the following example, we selected three entities: **ContactCSV: TestData** as the **Primary** entity, **WebAccountCSV: TestData** as **Entity 2**, and **CallRecordSmall: TestData** as **Entity 3**. The diagram above the selections illustrates how the match order will be executed.
+Each match unifies two or more entities describing a into a single entity. At the same time, it keeps the unique customer records. In the following example, we selected three entities: **eCommerce:eCommerceContacts** as the primary entity, **LoyaltyScheme:loyCustomers** as second entity, and **NewsletterSubscribers:Subscriptions** as third entity. The order of the entities specifies in which order the system will try to match the records.
 
 > [!div class="mx-imgBorder"]
 > ![Edit the data match order](media/configure-data-match-order-edit-page.png "Edit the data match order")
   
-The **Primary** entity is matched with **Entity 2**. The dataset that results from the first match is matched with **Entity 3**.
-In this example, we only selected two matches, but the system can support more.
+The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the followin entity *NewsletterSubscribers:Subscriptions*.
 
 > [!IMPORTANT]
-> The entity that you choose as your **Primary** entity will serve as the basis for your unified master dataset. Additional entities that are selected during the match phase will be added to this entity. At the same time, this doesn't mean that the unified entity will include *all* of the data included in this entity.
+> The entity that you choose as your primary entity will serve as the basis for your unified profiles dataset. Additional entities that are selected during the match phase will be added to this entity. At the same time, this doesn't mean that the unified entity will include *all* of the data included in this entity.
 >
 > There are two considerations that can help you choose the hierarchy of your entities:
 >
-> - What entity do you consider having the most complete and reliable data about your customers?
-> - Does the entity that you just identified have attributes that are also shared by other entities (for example, name, phone number, or email address)? If not, choose your second most reliable entity.
-
-Select **Done** to save your match order.
+> - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
+> - Choose the entity that hast several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
 ## Define rules for your first match pair
 
