@@ -1,7 +1,7 @@
 ---
 title: "Connect to an Azure Data Lake Storage Gen2 account with a service principal"
-description: "use an Azure service principal for audience insights to connect to your own data lake when attaching it to audience insights."
-ms.date: 11/24/2020
+description: "Use an Azure service principal for audience insights to connect to your own data lake when attaching it to audience insights."
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -17,7 +17,9 @@ Automated tools that use Azure services should always have restricted permission
 
 You can use the service principal to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create a new or update an existing environment](manage-environments.md#create-an-environment-in-an-existing-organization).
 
-You need admin permissions for your Azure subscription to create the service principal.
+> [!IMPORTANT]
+> - The Azure Data Lake Gen2 storage account that intends to use the service principal must have [Hierarchical Name Space (HNS) enabled](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - You need admin permissions for your Azure subscription to create the service principal.
 
 ## Create Azure service principal for audience insights
 
