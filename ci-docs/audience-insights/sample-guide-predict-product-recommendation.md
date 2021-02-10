@@ -137,25 +137,23 @@ After ingesting the data we now begin the **Map, Match, Merge** process to creat
 
 1. Select **Save** and **Run** to start the Merge Process.
 
-
-
 ## Task 3 - Configure Product Recommendation prediction
 
-With the unified customer profiles in place, we can now run the subscription churn prediction. For detailed steps, see the [Product Recommendation prediction (Preview)]((predict-subscription-churn.md) (preview)]) article.
+With the unified customer profiles in place, we can now run the subscription churn prediction.
 
-1. Go to **Intelligence** > **Prediction** and select to use the **Product Recommendation**.
+1. Go to **Intelligence** > **Prediction** choose **Product recommendation**.
 
 1. Select **Get started**.
 
-1. Name the model **OOB Prod Rec Model Prediction** and the output entity **OOBProdRecModelPrediction**.
+1. Name the model **OOB Product Recommendation Model Prediction** and the output entity **OOBProductRecommendationModelPrediction**.
 
-1. Define three conditions for the Product Recommendation model:
+1. Define three conditions for the model:
 
-   - **Number of products**: **select 5**. This setting defines how many products you want to recommend to your customers.
+   - **Number of products**: Set this value to **5**. This setting defines how many products you want to recommend to your customers.
 
-   - **Suggest products customers have recently purchased?**: **Select "Yes"**. This will indicate that you want to include products in the recommendation that your customers have purchased before.
+   - **Suggest products customers have recently purchased?**: Select **Yes** to indicate that you want to include products in the recommendation that your customers have purchased before.
 
-   - **Look back window:** **Select at least 365 days**. This setting defines how far the model will look back at customer's activity to use as input to their recommendations.
+   - **Look back window:** Select at least **365 days**. This setting defines how far the model will look back at the customer's activity to use it as input to their recommendations.
    
    :::image type="content" source="media/product-recommendation-model-preferences.png" alt-text="Model preferences for the product recommendation model.":::
 
@@ -188,11 +186,11 @@ You can create a new segment based on the entity created by the model.
 
    ![Creating a segment with the model output.](media/segment-intelligence.png)
 
-1. Select the **OOBProdRecModelPrediction** endpoint and define the segment:
+1. Select the **OOBProductRecommendationModelPrediction** endpoint and define the segment:
 
    - Field: ProductID
    - Operator: Value
-   - Value: Select the top 3 Products
+   - Value: Select the top three product IDs
 
    :::image type="content" source="media/product-recommendation-quick-segment.png" alt-text="Create a segment from the model results.":::
 
