@@ -123,7 +123,7 @@ After ingesting the data we now begin the **Map, Match, Merge** process to creat
    - Leave Normalize blank.
    - Set **Precision Level**: **Basic** and **Value**: **High**.
 
-   ![Unify match rule for name and email.](audience-insights/media/unify-match-rule.png)
+   ![Unify match rule for name and email.](media/unify-match-rule.png)
 
 7. Select **Save** and **Run**.
 
