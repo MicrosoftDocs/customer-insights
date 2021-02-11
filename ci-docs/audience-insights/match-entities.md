@@ -54,9 +54,6 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
 
    :::image type="content" source="media/match-rule-conditions.png" alt-text="Screenshot of an opened match rule with conditions added.":::
 
-   > [!div class="mx-imgBorder"]
-   > ![New rule pane](media/configure-data-match-new-rule-condition.png "New rule pane")
-
    - **Entity/Field (first row)**: Choose a related entity and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
 
    - **Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
