@@ -24,7 +24,7 @@ Contoso is a company that produces high-quality coffee and coffee machines, whic
 - At least [Contributor permissions](permissions.md) in Customer Insights.
 - We recommend that you implement the following steps [in a new environment](manage-environments.md).
 
-## Task 1 - Ingest Data
+## Task 1 - Ingest data
 
 Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically. The following information assumes you familiarized with ingesting data in general. 
 
