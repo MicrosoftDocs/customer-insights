@@ -1,7 +1,7 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 10/14/2020
+ms.date: 02/11/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -26,8 +26,7 @@ Go to **Data** > **Unify** > **Match** and select **Set order** to start the mat
 
 Each match unifies two or more entities into a single entity. At the same time, it keeps the unique customer records. In the following example, we selected two entities: **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity. The order of the entities specifies in which order the system will try to match the records.
 
-> [!div class="mx-imgBorder"]
-> ![Edit the data match order](media/configure-data-match-order-edit-page.png "Edit the data match order")
+:::image type="content" source="media/match-page.png" alt-text="Screenshot of the Match page in the Unify area of the data unification process.":::
   
 The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you have more than two entities.
 
@@ -45,17 +44,15 @@ After specifying the match order, you'll see the defined match pairs in the **Ma
 
 Match rules specify the logic by which a specific pair of entities will be matched.
 
-> [!div class="mx-imgBorder"]
-> ![Define rules](media/configure-data-match-need-rules.png "Define rules")
-
 The **Needs rules** warning next to an entity name suggests that no match rule is defined for a match pair. 
+
+:::image type="content" source="media/match-rule-add.png" alt-text="Screenshot of the Matched record details section with control to add rules highlighted.":::
 
 1. Select **Add rules** under an entity in the **Matched records details** section to define match rules.
 
-   > [!div class="mx-imgBorder"]
-   > ![Create new rule](media/configure-data-match-new-rule2.png "Create new rule")
-
 1. In the **Create rule** pane, configure the conditions for the rule.
+
+   :::image type="content" source="media/match-rule-conditions.png" alt-text="Screenshot of an opened match rule with conditions added.":::
 
    > [!div class="mx-imgBorder"]
    > ![New rule pane](media/configure-data-match-new-rule-condition.png "New rule pane")
@@ -66,12 +63,11 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
 
    - **Normalize**: Select from various normalization options for the selected attributes. For example, removing punctuation, capitalization, or spaces.
 
-   > [!div class="mx-imgBorder"]
-   > ![Normalization-B2B](media/match-normalization-b2b.png "Normalization-B2B")
-
    - **Precision**: Set the level of precision to apply for this condition. 
      - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
+
+1. Provide a **Name** for the rule.
 
 1. [Add more conditions](#add-conditions-to-a-rule) or select **Done** to finalize the rule.
 
@@ -167,26 +163,27 @@ You'll find the result of a successful run, the unified customer profile entity,
 
 ## Review and validate your matches
 
-Evaluate the quality of your match pairs and refine it:
+Go to **Data** > **Unify** > **Match** to evaluate the quality of your match pairs and refine them if neccessary.
 
-- On the **Match** page, you'll find two tiles showing initial insights about your data.
+The tiles on top of the page show key metrics, summarizing the number of matched records and duplicates.
 
-  - **Unique customers**: shows the number of unique profiles that the system identified.
-  - **Matched records**: shows the number of matches across all of your match pairs.
+:::image type="content" source="media/match-KPIs.png" alt-text="Cropped screenshot of the key metrics on the Match page with numbers and details.":::
 
-- In the **Match order** table, you can assess the results of each match pair by comparing the number of records that came from this match-pair entity against the percentage of successfully matched records.
+- **Unique source records** shows the number of individual source records that were processed in last match run.
+- **Matched and non-matched records** highlights how many unique records remain after processing the match rules.
+- **Matched records only** shows the number of matches across all of your match pairs.
 
-- In the **Rules** section of an entity in the **Match order** table, you'll find the percentage of successfully matched records at the rule level. By selecting the table symbol next to a rule, you can view all these records on the rule level. We recommend that you review a subset of the records to validate that they were matched correctly.
+You can assess the results of each match pair and its rules in the **Matched records details** table. Compare the number of records that came from a match pair against the percentage of successfully matched records.
 
-- Experiment with different precision thresholds around your conditions to identify the optimal value.
+Review the rules of a match pair to see the percentage of successfully matched records at the rule level. Select the ellipsis (...) and then select **Match preview** to view all these records on the rule level. We recommend that you tkae a look at some records to validate that they were matched correctly.
 
-  1. Select the ellipsis (...) for the match pair rule that you want to experiment with and select **Edit**.
+Try different precision thresholds on conditions to find the optimal value.
 
-  2. Select the condition that you want to experiment with. Each criterion is represented by one row in the **Match rule** pane.
+  1. Select the ellipsis (...) for the rule that you want to experiment with and select **Edit**.
 
-  3. What you'll see on the **Criteria preview** page depends on the precision level you've selected for a condition. Find the number of matched and unmatched records for the selected condition.
+  2. Change the precisions values in the conditions you want to revise.
 
-     Get a rich understanding of the effects of different threshold levels. You can compare how many records will be matched under each of the threshold levels, and view the records under each option. Select each of the tiles and review the data in the table section.
+  3. Select **Preview** so see the number of matched and unmatched records for the selected condition.
 
 ## Manage match rules
 
@@ -224,13 +221,9 @@ You can specify conditions that certain records should always match or never mat
 
 1. Go to **Data** > **Unify** > **Match** and select **Custom match** in the **Matched records details** section.
 
-   > [!div class="mx-imgBorder"]
-   > ![Create a custom match](media/custom-match-create.png "Create a custom match")
+  :::image type="content" source="media/custom-match-create.png" alt-text="Screenshot of the match rules section with Custom match contol highlighted.":::
 
 1. If you have no custom match rules set, you'll see a new **Custom match** pane with more details.
-
-   > [!div class="mx-imgBorder"]
-   > ![New custom match dialog box](media/custom-match-new-dialog-box.png "New custom match dialog box")
 
 1. Select **Fill in the template** to get a template file that can specify which records from which entities should always match or never match. You'll need to separately fill in the "always match" records and "never match" records in two different files.
 
@@ -250,8 +243,7 @@ You can specify conditions that certain records should always match or never mat
 
 1. After uploading the files and entities are available, select the **Custom match** option again. You'll see options to specify the entities you want to include. Select the required entities from the drop-down menu.
 
-   > [!div class="mx-imgBorder"]
-   > ![Custom match overrides](media/custom-match-overrides.png "Custom match overrides")
+   :::image type="content" source="media/custom-match-overrides.png" alt-text="Screenshot of the dialog to choose overrides for a custom match scenario.":::
 
 1. Select the entities you want to use for **Always match** and **Never match**, select **Done**.
 
