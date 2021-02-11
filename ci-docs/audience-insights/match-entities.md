@@ -24,7 +24,7 @@ The match page consists of three sections:
 
 Go to **Data** > **Unify** > **Match** and select **Set order** to start the match phase. To change the order of entities in a configured match phase, select **Edit** in the **Matched records details** section.
 
-Each match unifies two or more entities describing a into a single entity. At the same time, it keeps the unique customer records. In the following example, we selected two entities: **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity. The order of the entities specifies in which order the system will try to match the records.
+Each match unifies two or more entities into a single entity. At the same time, it keeps the unique customer records. In the following example, we selected two entities: **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity. The order of the entities specifies in which order the system will try to match the records.
 
 > [!div class="mx-imgBorder"]
 > ![Edit the data match order](media/configure-data-match-order-edit-page.png "Edit the data match order")
@@ -60,7 +60,7 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
    > [!div class="mx-imgBorder"]
    > ![New rule pane](media/configure-data-match-new-rule-condition.png "New rule pane")
 
-   - **Entity/Field (first row)**: Choose an related entitiy and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching on the basis of activity-type attributes. For example, a purchase ID will likely find no match in other record types.
+   - **Entity/Field (first row)**: Choose a related entity and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
 
    - **Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
 
@@ -91,7 +91,7 @@ To match entities only if attributes meet multiple conditions, add more conditio
 
 ### Add rules to a match pair
 
-Match rules represent sets of conditions. To match entities by conditions based on muliple attributes, add more rules
+Match rules represent sets of conditions. To match entities by conditions based on multiple attributes, add more rules
 
 1.  Go to **Data** > **Unify** > **Match** and select **Add rule** on the entity you want to add rules to.
 
@@ -106,7 +106,7 @@ In addition to [cross-entity match rules](#define-rules-for-match-pairs), you ca
 
 Deduplicated records will be used in the cross-entity matching process. Deduplication happens on individual entities and can be configured every entity used in match pairs.
 
-Specifying deduplication rules isn't mandatory. If no such rules are configured, the system-defined rules are applied. They collapse all records that share the same value combination (exact match) from primary key and the fields in the matching rules into a single record before passing the entity data to cross-entity matching for enhanced performance and system sanity.
+Specifying deduplication rules isn't mandatory. If no such rules are configured, the system-defined rules are applied. They combine all records into a single record before passing the entity data to cross-entity matching for enhanced performance.
 
 ### Add deduplication rules
 
@@ -117,7 +117,7 @@ Specifying deduplication rules isn't mandatory. If no such rules are configured,
 1. In the **Merge preferences** pane, choose the entities you want to run deduplication on.
 
 1. Specify how to combine the duplicate records and choose one of three options:
-   - **Most filled**: Identifies the record with most populated attribute fields as the winner record. This is the default merge option.
+   - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
    - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
    - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
  
@@ -127,7 +127,7 @@ Specifying deduplication rules isn't mandatory. If no such rules are configured,
 1. Once the entities are selected and their merge preference is set, select **Add rule** to define the deduplication rules at an entity level.
    - **Select field** lists all the available fields from that entity. Choose the field you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
    - Specify the normalization and precision settings.
-   - Define additional conditions by selecting **Add condition**.
+   - Define more conditions by selecting **Add condition**.
  
    > [!div class="mx-imgBorder"]
    > ![Deduplication rules step 2](media/match-selfconflation-rules.png "Deduplication rules step 2")
@@ -149,7 +149,7 @@ The deduplication process creates a new entity for every entity from the match p
 A deduplication output entity contains the following information:
 - IDs / Keys
   - Primary key field and its alternate IDs field. Alternate IDs field consists of all the alternate IDs identified for a record.
-  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. This is  used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
+  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
@@ -158,9 +158,9 @@ A deduplication output entity contains the following information:
 
 With configured match rules, including cross-entity matching and deduplication rules, you can run the match process. 
 
-Go to **Data** > **Unify** > **Match** and select **Run** to start the process. The matching algorithm takes some time to complete and you can't change the configuration until it completes. To make additional changes, you can cancel the run. Select the satus of the job and select **Cancel job** on the **Progress details** pane.
+Go to **Data** > **Unify** > **Match** and select **Run** to start the process. The matching algorithm takes some time to complete and you can't change the configuration until it completes. To make changes, you can cancel the run. Select the status of the job and select **Cancel job** on the **Progress details** pane.
 
-You'll find the result of a successful run, the unified customer profile entity, on the **Entities** page. Your unified customer entity is called **Customers** in the **Profiles** section. The first successful match run creates the unified master entity. All subsequent match runs expand that entity.
+You'll find the result of a successful run, the unified customer profile entity, on the **Entities** page. Your unified customer entity is called **Customers** in the **Profiles** section. The first successful match run creates the unified *Customer* entity. All subsequent match runs expand that entity.
 
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
@@ -227,7 +227,7 @@ You can specify conditions that certain records should always match or never mat
    > [!div class="mx-imgBorder"]
    > ![Create a custom match](media/custom-match-create.png "Create a custom match")
 
-1. If you have no custom match rules set, you'll see a new **Custom match** pane with addtional details.
+1. If you have no custom match rules set, you'll see a new **Custom match** pane with more details.
 
    > [!div class="mx-imgBorder"]
    > ![New custom match dialog box](media/custom-match-new-dialog-box.png "New custom match dialog box")
@@ -264,4 +264,4 @@ You can specify conditions that certain records should always match or never mat
 
 ## Next step
 
-After completing the match process for at least one match pair, you may resolve possible contradictions in your data by going through the [**Merge**](merge-entities.md) topic.
+After completing the match process for at least one match pair, you may resolve possible contradictions in your data by going through the [**Merge**](merge-entities.md) article.
