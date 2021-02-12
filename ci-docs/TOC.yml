@@ -117,7 +117,9 @@
           href: audience-insights/sample-guide-predict-transactional-churn.md
         - name: Predict customer lifetime value (CLV)
           href: audience-insights/predict-customer-lifetime-value.md
-        - name: Sample guide for product recommendation prediction
+        - name: Predict product recommendations
+          href: audience-insights/predict-product-recommendations.md
+        - name: Sample guide for product recommendations prediction
           href: audience-insights/sample-guide-predict-product-recommendation.md
         - name: Implement custom machine learning models
           href: audience-insights/custom-models.md
