@@ -148,8 +148,6 @@ If you're interested in trying this feature but don't have data to complete the 
 1. Go to the **My predictions** tab on **Intelligence** > **Predictions**.
 
 1. Select the prediction you would like to view error logs for and select **Logs**.
-   > [!div class="mx-imgBorder"]
-   > ![View of results menu bar including close, edit model, and logs buttons](media/model-logsbutton.PNG "View of results menu bar including close, edit model, and logs buttons")
 
 1. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading additional data into Customer Insights.
 
