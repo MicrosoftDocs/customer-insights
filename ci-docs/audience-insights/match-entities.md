@@ -160,7 +160,7 @@ You'll find the result of a successful run, the unified customer profile entity,
 
 ## Review and validate your matches
 
-Go to **Data** > **Unify** > **Match** to evaluate the quality of your match pairs and refine them if neccessary.
+Go to **Data** > **Unify** > **Match** to evaluate the quality of your match pairs and refine them if necessary.
 
 The tiles on top of the page show key metrics, summarizing the number of matched records and duplicates.
 
@@ -172,7 +172,7 @@ The tiles on top of the page show key metrics, summarizing the number of matched
 
 You can assess the results of each match pair and its rules in the **Matched records details** table. Compare the number of records that came from a match pair against the percentage of successfully matched records.
 
-Review the rules of a match pair to see the percentage of successfully matched records at the rule level. Select the ellipsis (...) and then select **Match preview** to view all these records on the rule level. We recommend that you tkae a look at some records to validate that they were matched correctly.
+Review the rules of a match pair to see the percentage of successfully matched records at the rule level. Select the ellipsis (...) and then select **Match preview** to view all these records on the rule level. We recommend that you take a look at some records to validate that they were matched correctly.
 
 Try different precision thresholds on conditions to find the optimal value.
 
@@ -184,33 +184,19 @@ Try different precision thresholds on conditions to find the optimal value.
 
 ## Manage match rules
 
-You can reconfigure and fine-tune most of the match parameters:
+You can reconfigure and fine-tune most of the match parameters.
 
-- **Change the match order** by selecting **Edit** and change the match order fields.
+:::image type="content" source="media/match-rules-management.png" alt-text="Screenshot of the drop-down menu with match rule options.":::
 
-  > [!div class="mx-imgBorder"]
-  > ![Edit data match order](media/configure-data-match-order-edit.png "Edit data match order")
+- **Change the order of your rules** if you defined multiple rules. You can reorder the match rules by selecting the **Move Up** and **Move Down** options or by drag and drop.
 
-- **Change the order of your rules** if you defined multiple rules. You can reorder the match rules by selecting the **Move Up** and **Move Down** options or with drag and drop.
-
-  > [!div class="mx-imgBorder"]
-  > ![Change rule order](media/configure-data-change-rule-order.png "Change rule order")
-
-- **Duplicate your rules** if you've defined a match rule and would like to create a similar rule with modifications, select **Duplicate**.
-
-  > [!div class="mx-imgBorder"]
-  > ![Duplicate a rule](media/configure-data-duplicate-rule.png "Duplicate a rule")
+- **Change rule conditions** by selecting **Edit** and choose different fields.
 
 - **Deactivate a rule** to retain a match rule while excluding it from the matching process.
 
-  > [!div class="mx-imgBorder"]
-  > ![Deactivate a rule](media/configure-data-deactivate-rule.png "Deactivate a rule")
+- **Duplicate your rules** if you've defined a match rule and would like to create a similar rule with modifications, select **Duplicate**.
 
-- **Edit your rules** by selecting the **Edit** symbol. You can apply the following changes:
-
-  - Change attributes for a condition: Select new attributes within the specific condition row.
-  - Change the threshold for a condition: Adjust the precision slider.
-  - Change the normalization method for a condition: Update the normalization method.
+- **Delete a rule** by selecting the **Delete** symbol.
 
 ## Specify custom match conditions
 
@@ -218,7 +204,7 @@ You can specify conditions that certain records should always match or never mat
 
 1. Go to **Data** > **Unify** > **Match** and select **Custom match** in the **Matched records details** section.
 
-  :::image type="content" source="media/custom-match-create.png" alt-text="Screenshot of the match rules section with Custom match contol highlighted.":::
+  :::image type="content" source="media/custom-match-create.png" alt-text="Screenshot of the match rules section with Custom match control highlighted.":::
 
 1. If you have no custom match rules set, you'll see a new **Custom match** pane with more details.
 
