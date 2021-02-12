@@ -32,7 +32,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 1. Select **Add connection** in command bar, choose **Facebook Ads Manager** from drop down menu. This opens the set up form for this connection.
 
-1. Give your connection a recognizable name in the **Display name** field.
+1. Give your connection a recognizable name in the **Display name** field. Note that this name plus the type of the connection are what describes this connection. We recommend choosing a name which explains the purpose and target of this connection.
 
 1. Choose who can use this connection. If you take no action the default will be **Administrators**. [Learn more about allowing contributors to use a connection](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
