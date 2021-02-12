@@ -1,7 +1,7 @@
 ---
 title: "System configuration in audience insights"
 description: "Learn about system settings in Dynamics 365 Customer Insights audience insights capability."
-ms.date: 01/29/2021
+ms.date: 02/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -94,9 +94,9 @@ Find details about the real-time API usage and see which events happened in a gi
 The **API usage** contains three sections: 
 - **API calls** - a chart that visualizes the aggregated number of calls to the API in the selected time frame.
 
-- **Data transfer** - a chart that shows the amout of data that was transferred through the API in the selected time frame.
+- **Data transfer** - a chart that shows the amount of data that was transferred through the API in the selected time frame.
 
 -  **Operations** - a table with rows for each available API operation and details about the usage of the operations. You can select an operation name to go to [the API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
-   Operations which use [real-time data ingestion](real-time-data-ingestion.md) contain a button with a binocualr symbol to view real-time API usage. Select the button to open a side pane containing usage details for the real-time API usage in the current environment.   
+   Operations which use [real-time data ingestion](real-time-data-ingestion.md) contain a button with a binocular symbol to view real-time API usage. Select the button to open a side pane containing usage details for the real-time API usage in the current environment.   
    Use the **Group by** box in the **Real-time API usage** pane to choose how to best present your real-time interactions. You can group the data by API method, entity qualified name (ingested entity), created by (source of the event), result (success or failure) or error codes. The data is available as a history chart and as a table.
