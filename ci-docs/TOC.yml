@@ -119,7 +119,7 @@
           href: audience-insights/predict-customer-lifetime-value.md
         - name: Predict product recommendations
           href: audience-insights/predict-product-recommendations.md
-        - name: Sample guide for product recommendations prediction
+        - name: Sample guide for product recommendation prediction
           href: audience-insights/sample-guide-predict-product-recommendation.md
         - name: Implement custom machine learning models
           href: audience-insights/custom-models.md
