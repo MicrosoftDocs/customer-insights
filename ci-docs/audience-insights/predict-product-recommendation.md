@@ -84,7 +84,7 @@ If you're interested in trying this feature but don't have data to complete the 
     1. Select the **Customer entity** that matches your primary customer entity.
     1. Enter a name that describes the relationship.
        > [!div class="mx-imgBorder"]
-       > ![Purchase history page showing the creation of a relationship to customer](media/product-recommendation-purchasehistoryrelationship.PNG "Purchase history page showing the creation of a relationship to customer")
+       > ![Purchase history page showing the creation of a relationship to customer](media/model-purchase-join.png "Purchase history page showing the creation of a relationship to customer")
 
 1. Select **Save**.
 
