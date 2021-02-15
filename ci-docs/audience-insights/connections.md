@@ -1,7 +1,7 @@
 ---
-title: "Connections"
+title: "Connections to other services from Customer Insights."
 description: "Share data to other services."
-ms.date: 01/03/2021
+ms.date: 02/15/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,48 +13,53 @@ manager: shellyha
 
 # Connections (preview) overview
 
-Connections are the key to enabling data sharing from Customer Insights. Each connection establishes data sharing with a specific target service. These connections are used as a foundation to define [exports](export-destinations.md). When defining these scenarios, the same connection can be used by several setups, e.g. a specific connection to Dynamics365 Marketing service is used by several exports. 
-While connections can only be configured by admins, they can grant access to specific connections to contributors. Administrators control where data can go, Contributors define the payload and frequency fitting their needs. [Learn more about empowering contributors.](#allow-contributors-to-use-a-connection-for-exports)
+Connections are the key to enable data sharing from Customer Insights. Each connection establishes data sharing with a specific service. Connections are the foundation to [configure exports](export-destinations.md). The same connection can be used by multiple times. For example, one connection to Dynamics 365 Marketing works for multiple exports.
+ 
+Only administrators can configure new connection but the can grant access to contributors for exisiting connections. Administrators control where data can go, contributors define the payload and frequency fitting their needs. For more information, see [Allow contributors to use a connection for exports](#allow-contributors-to-use-a-connection-for-exports).
 
-The **Connections** page shows you all connections you have setup. The list shows a row for each connection. The columns expose relevant information for you to compare connections. Get a quick overview, description, and find out what you can do with each extensibility option on the **Discover** pivot.
+Go to **Admin** > **Connections** to create adn view connections.
 
-Go to **Admin** > **Connections** to find possible connections under **Discover** and see the configured ones under **Connections**.
+The **Connections** tab shows you all active connections. The list shows a row for each connection. 
+
+Get a quick overview, description, and find out what you can do with each extensibility option on the **Discover** tab.
 
 ## Add a new connection
 
-To add connections, you need to have [administrator permissions](permissions.md). If you connect to Microsoft services, we assume both services are in the same organization.
+To add connections, you need to have [administrator permissions](permissions.md). If you connect to other Microsoft services, we assume both services are in the same organization.
 
 1. Go to **Admin** > **Connections (preview)**.
 
-1. Switch to the **Connections** tab.
+1. Go to the **Connections** tab.
 
-1. Select **Add connection** to create a new connection. Choose from the dropdown what kind of connection you want to set up.
+1. Select **Add connection** to create a new connection. Choose from the drop-down menu what type of connection you want to create.
 
 1. In the **Set up connection** pane provide the required details. 
-   1. When you are defining the **Display name**, note that this name plus the type of the connection are what describes this connection. We recommend choosing a name which explains the purpose and target of this connection.
-   1. The exact fields depend on what service you are connecting to. You can learn about details of specific connection type in the respective documentation page.
+   1. The **Display name** and the type of the connection describe a connection when using it to create exports. We recommend choosing a name which explains the purpose and target of this connection.
+   1. The exact fields depend on what service you are connecting to. You can learn about details of a specific connection type in the article about the target service.
 
 1. To create the connection select **Save**.
 
 You can also select **Set up** on a tile on the **Discover** tab.
 
 ### Allow contributors to use a connection for exports
-When setting up or editing a connection you choose which user roles are allowed to use this specific connection to define [exports](export-destinations.md). By default a connection is available to users with administrator role. The control **Choose who can use this connection** lets you change this to also allow users with role contributor to use this connection when they need to.
 
-- Note this will not give them access to the Connections page or allow them to edit the connection itself. Of these connections they will only see the display name and its type.
-- By sharing a connection you empower contributors to use a connection. Contributors will see these Connections when they set up exports. Any export using this specific connection will be editable by contributors. 
-- You can change this setting at anytime without loosing the exports defined by contributors.
+When setting up or editing a connection you choose which users are allowed to use this specific connection to define [exports](export-destinations.md). By default a connection is available to users with an administrator role. You can change this setting under **Choose who can use this connection** and allow users with contributor role to use this connection.
+Connections
+- Contributors won't be able to view or edit the connection. They will only see the display name and its type when creating an export..
+- By sharing a connection you allow contributors to use a connection. Contributors will see shared connections when they set up exports. They can manage every export using this specific connection.
+- You can change this setting while keeping the exports defined by contributors.
 
 ## Edit a connection
-1. Select the vertical ellipsis for the Connection you want to edit.
 
-1. Select **Edit** from the dropdown menu.
+1. Select the vertical ellipsis for the connection you want to edit.
 
-1. Change the values that require update and select **Save**.
+1. Select **Edit**.
+
+1. Change the values you want to update and select **Save**.
 
 ## Remove a connection
 
-If the connection you are removing is used by exports, these will become inactive. You can activate them once you added another connection to them on the [Exports](export-destinations.md) page.
+If the connection you are removing is used by exports, these exports become inactive. You can re-activate them after adding another connection to them on the [Exports](export-destinations.md) page.
 
 1. Select the vertical ellipsis for the Connection you want to edit.
 
