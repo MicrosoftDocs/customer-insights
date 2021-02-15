@@ -224,3 +224,6 @@ You can create a new segment based on the entity created by the model.
 You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.
 
 For more information, see [Create and manage segments](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -197,3 +197,6 @@ You can create a new segment based on the entity created by the model.
 You now have a segment that is dynamically updated which identifies the customers who are more willing to purchase the three most recommended products 
 
 For more information, see [Create and manage segments](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

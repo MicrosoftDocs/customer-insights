@@ -52,3 +52,6 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 - **OS & Browsers** provide insights into the operating systems and browsers that were running when accessing your site.
 - **Locations** shows information about visitors by country, region, and city.
 - **Language** lists the visitor's preferred languages.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

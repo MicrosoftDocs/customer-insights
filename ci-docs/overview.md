@@ -26,3 +26,6 @@ To choose a capability
 
 1. In the navigation pane, select **All apps** to open the **Choose your focus** window.
 1. Select **Go now** to navigate to the capability of your choice.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
