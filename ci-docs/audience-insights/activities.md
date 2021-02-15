@@ -77,3 +77,6 @@ Your data sources include entities with transactional and activity data from mul
 3. Select on the **Delete** icon.
 
 4. Confirm your deletion.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

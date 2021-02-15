@@ -109,3 +109,6 @@ Select a measure from the list for the following options:
 ## Next step
 
 You cam use existing measures to create [a customer segment](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

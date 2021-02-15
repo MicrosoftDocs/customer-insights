@@ -107,3 +107,6 @@ Follow the below steps to provide the required information on the selected appro
 1. In audience insights, choose the values or for the corresponding fields when attaching the storage account.
    
 1. Continue with the remaining steps in audience insights to attach the storage account.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

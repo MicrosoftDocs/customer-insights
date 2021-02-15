@@ -79,3 +79,6 @@ Details of this API, including parameters and responses, can be found in the **E
 ## Understand your real-time usage with telemetry
 
 Get an overview of the volume of requests to the real-time API and information about issues the system may encounter. You can [access the real-time telemetry](system.md#api-usage-tab). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Audience insights includes capabilities for the following key users:
 
   - Build customizable profiles, define measures, create segments, and benefit from predictive analytics to get a 360-degree view of your customer, specific to your organization.  
   - Use out-of-box connectors for several Microsoft and third-party applications or APIs to further process the insights.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

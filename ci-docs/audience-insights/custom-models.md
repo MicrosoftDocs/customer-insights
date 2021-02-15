@@ -107,3 +107,6 @@ Your workflow also runs automatically with every scheduled refresh. Learn more a
 1. Select **Delete** and confirm your deletion.
 
 Your workflow will be deleted. The [entity](entities.md) that was created when you created the workflow persists, and can be viewed from the **Entities** page.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

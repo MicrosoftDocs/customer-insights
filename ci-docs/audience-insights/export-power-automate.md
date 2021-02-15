@@ -45,3 +45,6 @@ Examples how to use flows:
 - Post a message to a Microsoft Teams channel if a data source refresh fails. 
 - Send an email to the data owners when a threshold on a segment is crossed.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

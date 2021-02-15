@@ -47,3 +47,6 @@ Use [segments](segments.md) to generate campaigns and contact specific groups of
 ## Export the data
 
 You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

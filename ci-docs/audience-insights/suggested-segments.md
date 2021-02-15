@@ -98,3 +98,6 @@ Select a suggested segment to review the details of that suggestion including a 
 
 3. Suggested segments aren't distinct enough: Keep in mind that the selected attributes and the distribution of values of those attributes influences the results. You can change your influencing attributes or even your primary attribute to get different results.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
