@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Facebook Ads Manager"
 description: "Learn how to configure the connection and export to Facebook Ads Manager."
-ms.date: 06/05/2020
+ms.date: 02/15/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -28,13 +28,15 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 ## Set up connection to Facebook Ads Manager
 
+Before users can create an export, an administrator must configure the connection to the service and allow contributors to use the connection.
+
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** in command bar, choose **Facebook Ads Manager** from drop down menu. This opens the set up form for this connection.
+1. Select **Add connection** and choose **Facebook Ads Manager** to configure the connection.
 
-1. Give your connection a recognizable name in the **Display name** field. Note that this name plus the type of the connection are what describes this connection. We recommend choosing a name which explains the purpose and target of this connection.
+1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name which explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action the default will be **Administrators**. [Learn more about allowing contributors to use a connection](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. If you take no action the default will be **Administrators**. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Authenticate with Facebook Ads: 
 
@@ -46,19 +48,19 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
    1. Select an **Existing custom audience** from the drop-down list or create a **New custom audience**. For more information, see [**Audiences in Facebook Ads Manager**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).
 
-1. Review the **Data privacy and compliance**. To confirm it, select **I agree**.
+1. Review the **Data privacy and compliance** and select **I agree**.
 
-1. Select **Save** to confirm this connection setup.
+1. Select **Save** to complete the connection.
 
 ## Configure an export
 
-You can configure this export if you have access to a connection of this type. [Learn about permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
 1. Go to **Data** > **Exports**.
 
-1. To create a new export select **Add destination** in command bar. 
+1. To create a new export, select **Add destination**. 
 
-1. Open menu for **Connection for export** and pick a connection from section **Facebook Ads Manager**. If you don't see this section name, then there are no connections of this type available to you.
+1. In **Connection for export** choose a connection from the **Facebook Ads Manager** section. If you don't see this section name, there are no connections of this type available to you.
 
 1. In the **Choose your key identifier field**, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager. 
 
@@ -75,12 +77,10 @@ You can configure this export if you have access to a connection of this type. [
 
 1. Select **Save**.
 
-Note that saving an export does not trigger the export. See below on how to run this export on demand.
+Saving an export doesn't run the export immediately.
 
-## Running an export
-
-The export run with every [scheduled refresh](system.md#schedule-tab). 
-You can choose to run an [export data on demand](export-destinations.md). 
+The export runs with every [scheduled refresh](system.md#schedule-tab). 
+You can also to [export data on demand](export-destinations.md#run-export-on-demand). 
 
 ## Data privacy and compliance
 
