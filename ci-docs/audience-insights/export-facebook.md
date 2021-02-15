@@ -17,7 +17,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 ## Prerequisites for connection
 
-- You need to have a [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) which includes a [**Facebook Business Account**](https://business.facebook.com/).
+- You need to have a [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) that includes a [**Facebook Business Account**](https://business.facebook.com/).
 - You need to be an administrator on the [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
 
 ## Known limitations
@@ -34,9 +34,9 @@ Before users can create an export, an administrator must configure the connectio
 
 1. Select **Add connection** and choose **Facebook Ads Manager** to configure the connection.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name which explains the purpose and target of the connection.
+1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action the default will be **Administrators**. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. If you take no action, the default will be **Administrators**. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Authenticate with Facebook Ads: 
 
@@ -70,7 +70,7 @@ You can configure this export if you have access to a connection of this type. F
    > [TIP]
    > The best chances for a match occur if you select **Email** as key identifier. Adding additional identifiers may improve the matching.
 
-1. Select **Add attribute** to map additional attributes to send to Facebook Ads Manager. Attributes from Facebook Ads Manager are mapping to the following user friendly names: 
+1. Select **Add attribute** to map more attributes to send to Facebook Ads Manager. Attributes from Facebook Ads Manager are mapping to the following user-friendly names: 
     **FN** = **First Name**, **LN** = **Last Name**, **FI** = **First Initial**, **PHONE** = **Phone**, **GEN** = **Gender**, **DOB** = **Date of birth**, **ST** = **State**, **CT** = **City**, **ZIP** = **Postal code / Zip code**, **COUNTRY** = **Country / Region**
 
 1. Select the segments you want to export.
@@ -80,7 +80,7 @@ You can configure this export if you have access to a connection of this type. F
 Saving an export doesn't run the export immediately.
 
 The export runs with every [scheduled refresh](system.md#schedule-tab). 
-You can also to [export data on demand](export-destinations.md#run-export-on-demand). 
+You can also [export data on demand](export-destinations.md#run-export-on-demand). 
 
 ## Data privacy and compliance
 
