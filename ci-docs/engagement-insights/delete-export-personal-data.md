@@ -84,3 +84,6 @@ After selecting **Export**, all events of the current team that contain matching
 * For events containing EUII data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example, a user ID). This makes it easier to segregate data and to export or delete the right data.
 * Only tag one property per event as containing EUII data—ideally one that only contains a unique identifier.
 * Do not tag properties containing verbose values (for example, an entire request body). Engagement insights capability uses exact string matching when deciding which events to delete or export.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

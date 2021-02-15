@@ -170,3 +170,6 @@ Deleting a prediction will also remove its output entity.
 1. Select the vertical ellipses next to the prediction you want to delete.
 
 1. Select **Delete**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

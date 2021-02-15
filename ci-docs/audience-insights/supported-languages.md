@@ -74,3 +74,6 @@ Because most features are based on your data, some items remain in their origina
 ## Choose your language settings  
 
 Change your preferred language [on the **System** page](system.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

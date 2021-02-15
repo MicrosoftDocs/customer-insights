@@ -75,3 +75,6 @@ Administrators can create and manage [multiple environments](manage-environments
 ## Next step
 
 To see your own insights on the home page, you'll first need to [add data sources](data-sources.md) and [unify](data-unification.md) your data to build customer profiles.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

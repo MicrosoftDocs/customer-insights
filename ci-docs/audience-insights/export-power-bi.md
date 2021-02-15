@@ -47,3 +47,6 @@ The Customer Insights connector for Power BI is designed to work for data sets t
 ### Work with a subset of data
 
 Consider working with a subset of your data. For example, you can create [segments](segments.md) instead of exporting all customer records to Power BI.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
