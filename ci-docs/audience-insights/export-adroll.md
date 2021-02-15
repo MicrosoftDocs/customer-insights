@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to AdRoll"
 description: "Learn how to configure the connection to AdRoll."
-ms.date: 12/08/2020
+ms.date: 02/15/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -43,9 +43,9 @@ Export segments of unified customer profiles to AdRoll and use them for advertis
 
 ## Configure the connector
 
-1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. AdRoll does not allow to export any other fields.
+1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to AdRoll.
 
-1. Select the segments you want to export. Note that you need to select a segment with a least 100 members. You can't export smaller segments. Additionally the maximum size of a segment to export is 250'000 members per export. 
+1. Select the segments you want to export. Select a segment with a least 100 members. You can't export smaller segments. Additionally the maximum size of a segment to export is 250'000 members per export. 
 
 1. Select **Save**.
 
@@ -56,9 +56,9 @@ You can [export data on demand](export-destinations.md). The export will also ru
 ## Known limitations
 
 - You can export up to 250'000 profiles in per export to AdRoll.
-- You cannot export segments with less than 100 profiles to AdRoll. 
+- You can't export segments with fewer than 100 profiles to AdRoll. 
 - Exporting to AdRoll is limited to segments.
-- Exporting up to 250'000 profiles to Adroll can take up to 10 minutes to complete. 
+- Exporting up to 250'000 profiles to AdRoll can take up to 10 minutes to complete. 
 - The number of profiles that you can export to AdRoll is dependent and limited on your contract with AdRoll.
 
 ## Data privacy and compliance
