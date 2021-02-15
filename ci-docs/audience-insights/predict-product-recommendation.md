@@ -1,7 +1,7 @@
 ---
 title: "Product recommendation prediction"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 02/12/2021
+ms.date: 02/15/2021
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -15,7 +15,7 @@ manager: shellyha
 
 The product recommendation model creates sets of predictive product recommendations. Recommendations are based on previous purchase behavior and customers with similar purchase patterns. You can create new product recommendation predictions on the **Intelligence** > **Predictions** page. Select **My predictions** to see other predictions that you've created.
 
-Product recommendations are often subject to local laws and regulations as well as customer expectations, and **this model does not take into account filtering of information the comply with these regulations or expectations**. As a user of this predictive capability, **you must review the recommendations prior to delivering them to your customers**.
+Product recommendations may be subject to local laws and regulations as well as customer expectations, which the model is not built to specifically take into account.  As a user of this predictive capability, **you must review the recommendations prior to delivering them to your customers** to ensure you are complying with any applicable laws or regulations, as well as customer expectations for what you may recommend. 
 
 Additionally, the output of this model will give you recommendations based on the product ID. Your delivery mechanism will need to take predicted product IDs and map them to appropriate content for your customers to account for localization, image content, and other business specific content or behavior.
 
