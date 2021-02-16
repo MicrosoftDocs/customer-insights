@@ -29,7 +29,7 @@ Export segments of unified customer profiles to AdRoll and use them for advertis
 
 1. Give your export destination a recognizable name in the **Display name** field.
 
-   :::image type="content" source="media/export-autopilot.PNG" alt-text="Configuration pane for Autopilot connection.":::
+   :::image type="content" source="media/AdRoll_config.PNG" alt-text="Configuration pane for AdRoll connection.":::
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
