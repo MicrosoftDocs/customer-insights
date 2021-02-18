@@ -93,3 +93,6 @@ To remove an Export destination, start from the main **Export destinations** pag
 2. Select **Remove** from the dropdown menu.
 
 3. Confirm the removal by selecting **Remove** on the confirmation screen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

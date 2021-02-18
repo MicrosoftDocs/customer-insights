@@ -91,3 +91,6 @@ You see a filter icon next to the property's name in the detailed view if filter
 ### Remove property
 
 1. Choose **Remove property** to remove a property from the refined events.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

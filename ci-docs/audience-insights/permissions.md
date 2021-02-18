@@ -69,3 +69,6 @@ In audience insights, go to **Admin** > **Permissions** to see what role assignm
 - Roles are specified under the **Role** column.
 - Select any column title to sort the results by that column's value.
 - Use the **Search** field at the top of the page to locate specific users.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

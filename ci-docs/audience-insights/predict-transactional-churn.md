@@ -92,6 +92,8 @@ Transactional churn prediction helps predict if a customer will no longer purcha
 
 1. Map the semantic fields to attributes within your customer activity entity and select **Next**. For descriptions of the fields, have a look at the [prerequisites](#prerequisites).
 
+   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="Map customer fields for transactional data.":::
+
 1. Select an activity type that matches to the type of customer activity you're configuring. Select **Create new** and choose an available activity type or create a new type.
 
 1. You'll need to configure the relationship from your customer activity entity to the Customer entity.
@@ -180,3 +182,6 @@ Deleting a prediction also removes its output entity.
 1. Select the vertical ellipses next to the prediction you want to delete.
 
 1. Select **Delete**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

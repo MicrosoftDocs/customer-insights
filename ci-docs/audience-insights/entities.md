@@ -52,3 +52,6 @@ Select the chart icon to see the summary of the data.
 ### Next step
 
 See the [Unify](data-unification.md) topic to learn how to *map*, *match*, and *merge* the ingested data.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

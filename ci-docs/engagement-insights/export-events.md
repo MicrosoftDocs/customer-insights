@@ -61,3 +61,6 @@ You're guided through the steps to create an export:
 ## View and manage exports
 
 Once you've set up an export, go to **Admin** > **Data** > **Exports** to view it. Select **...** for any existing export to edit or delete it.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

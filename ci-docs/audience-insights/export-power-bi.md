@@ -26,7 +26,7 @@ Create visualizations for your data with the Power BI Desktop. Generate addition
 
 1. Select **See more** and search for **Dynamics 365 Customer Insights**
 
-1. Select the result and select **Connect**.
+1. Select **Connect**.
 
 1. **Sign in** with the same organizational account you use for Customer Insights and select **Connect**.
    > [!NOTE]
@@ -63,3 +63,6 @@ You can identify and remove the duplicated relationships.
 3. Remove any duplicate relationships identified.
 
 After removal of the duplicated relationships, try to configure the Power BI connector again. The environment should be available now.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+
