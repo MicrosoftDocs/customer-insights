@@ -13,13 +13,9 @@ manager: shellyha
 
 # Audience insights for Dynamics 365 Customer Insights overview
 
-Customer experience is at the very core of every organization's digital transformation ambitions. To compete in today's market, organizations must build meaningful relationships with their customers on a personal level. Effectively personalizing at scale requires a complete, unified customer view.
+Audience insights helps you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
 
-Audience insights helps you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes.
-
-**Unify and understand customer data and harness it for intelligent insights and actions.**
-
-With audience insights, organizations can:  
+## Main benefits 
 
 - **Eliminate data silos and unify customer data**
 
@@ -34,9 +30,9 @@ With audience insights, organizations can:
 
   - Drive personalized engagement across channels—empower marketing, sales, and service professionals with out-of-the-box, contextual customer insights and tailored customer profile cards infused into the business applications they already use every day
   - Automate customer-centric experiences and processes based on customizable profiles, business measures, and segments.
-  - Enable and extend line-of-business experiences built on Microsoft Power Platform. Quickly build applications with embedded insights using a powerful low code approach from PowerApps.  
+  - Enable and extend line-of-business experiences built on [Microsoft Power Platform](https://powerplatform.microsoft.com/). Quickly build applications with embedded insights using a powerful low code approach from PowerApps.  
 
-Audience insights includes capabilities for the following key users:
+## Key audiences
 
 - **Data analysts / admins:**
 

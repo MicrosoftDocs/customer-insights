@@ -48,5 +48,21 @@ The Customer Insights connector for Power BI is designed to work for data sets t
 
 Consider working with a subset of your data. For example, you can create [segments](segments.md) instead of exporting all customer records to Power BI.
 
+## Troubleshooting
+
+### Customer Insights environment doesn't show in Power BI
+
+Environments that have more than one [relationship](relationships.md) defined between two identical entities in audience insights will not be available in the Power BI connector.
+
+You can identify and remove the duplicated relationships.
+
+1. In audience insights, go to **Data** > **Relationships** on the environment you're missing in Power BI.
+2. Identify duplicated relationships:
+   - Check if there is more than one relationship defined between the same two entities.
+   - Check if there is a relationship created between two entities that are both included in the unification process. There is an implicit relationship defined between all entities included in the unification process.
+3. Remove any duplicate relationships identified.
+
+After removal of the duplicated relationships, try to configure the Power BI connector again. The environment should be available now.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
