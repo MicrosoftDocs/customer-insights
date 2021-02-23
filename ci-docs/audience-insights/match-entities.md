@@ -58,7 +58,13 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
 
    - **Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
 
-   - **Normalize**: Select from various normalization options for the selected attributes. For example, removing punctuation, capitalization, or spaces.
+   - **Normalize**: Select from following normalization options for the selected attributes. 
+     - Whitespace: Removes all spaces. *Hello   World* becomes *HelloWorld*.
+     - Symbols: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
+     - Text to lower case: Converts all character to lower case. *ALLCAPS and CamelCase* becomes *allcaps and camelcase*.
+     - Unicode to ASCII: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
+     - Numerals: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
+     - Semantic types: Standardizes names, titles, phone numbers, addresses, etc. 
 
    - **Precision**: Set the level of precision to apply for this condition. 
      - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
