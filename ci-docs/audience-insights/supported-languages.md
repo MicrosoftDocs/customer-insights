@@ -20,7 +20,7 @@ Dynamics 365 Customer Insights audience insights capability supports a number of
 | Language name (English)| 	Language Name (native language) |
 | ------------- | ------------- |
 | Basque | euskara |
-| Bulgarian | Български |
+| Bulgarian | български |
 | Catalan | català |
 | Chinese (Simplified) | 中文(简体) |
 | Chinese (Traditional) | 中文(繁體) |
@@ -37,20 +37,20 @@ Dynamics 365 Customer Insights audience insights capability supports a number of
 | Greek | Ελληνικά |
 | Hindi | हिंदी |
 | Hungarian | magyar |
-| Indonesian | Bahasa Indonesia |
+| Indonesian | Indonesia |
 | Italian | italiano |
 | Japanese | 日本語 |
 | Kazakh | Қазақ |
 | Korean | 한국어 |
 | Latvian | latviešu |
 | Lithuanian | lietuvių |
-| Malay | Bahasa Melayu |
-| Norwegian (Bokmål) | norsk (bokmål) |
-| Polish | Polski |
+| Malay | Melayu |
+| Norwegian (Bokmål) | norsk bokmål |
+| Polish | polski |
 | Portuguese (Brazil) | português |
 | Portuguese (Portugal) | português |
 | Romanian | română |
-| Russian | Русский |
+| Russian | pусский |
 | Serbian (Cyrillic) | српски |
 | Serbian (Latin) | srpski |
 | Slovak | slovenčina |
