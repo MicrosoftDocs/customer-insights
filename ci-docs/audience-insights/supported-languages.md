@@ -40,7 +40,7 @@ Dynamics 365 Customer Insights audience insights capability supports a number of
 | Indonesian | Indonesia |
 | Italian | italiano |
 | Japanese | 日本語 |
-| Kazakh | Қазақ |
+| Kazakh | қазақ тілі |
 | Korean | 한국어 |
 | Latvian | latviešu |
 | Lithuanian | lietuvių |
