@@ -1,7 +1,7 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 02/11/2021
+ms.date: 02/23/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -18,13 +18,13 @@ The match phase specifies how to combine your datasets into a unified customer p
 The match page consists of three sections: 
 - Key metrics that summarize the number of matched records
 - Match order and rules for cross-entity matching
-- Entities for deduplication
+- Rules for deduplication of match entities
 
 ## Specify the match order
 
-Go to **Data** > **Unify** > **Match** and select **Set order** to start the match phase. To change the order of entities in a configured match phase, select **Edit** in the **Matched records details** section.
+Go to **Data** > **Unify** > **Match** and select **Set order** to start the match phase.
 
-Each match unifies two or more entities into a single entity. At the same time, it keeps the unique customer records. In the following example, we selected two entities: **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity. The order of the entities specifies in which order the system will try to match the records.
+Each match unifies two or more entities into a single, consolidated entity. At the same time, it keeps the unique customer records. For example, we selected two entities: **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity. The order of the entities specifies in which order the system will try to match the records.
 
 :::image type="content" source="media/match-page.png" alt-text="Screenshot of the Match page in the Unify area of the data unification process.":::
   
@@ -74,7 +74,7 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
 
 ### Add conditions to a rule
 
-To match entities only if attributes meet multiple conditions, add more conditions to a match rule.
+To match entities only if attributes meet multiple conditions, add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
 
 1. Go to **Data** > **Unify** > **Match** and select **Edit** on the rule you want to add conditions to.
 
