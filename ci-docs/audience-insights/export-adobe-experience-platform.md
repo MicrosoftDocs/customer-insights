@@ -1,8 +1,21 @@
-## Use Customer Insights segments in Adobe Experience Platform
+---
+title: "Export Customer Insights data to Adobe Experience Platform"
+description: "Learn how use audience insights segments in Adobe Experience Platform."
+ms.date: 02/24/2021
+ms.reviewer: antando
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
+manager: shellyha
+---
 
-As a user of audience insights for Dynamics 365 Customer Insights, you may have created segments to make your marketing campaigns more efficient by targeting relevant audiences. To use a segment from audience insights in Adobe Experience Platform and application like Adobe Campaign Standard, you need to follow a few steps outlined in this article.
+# Use Customer Insights segments in Adobe Experience Platform
 
-![Graphical user interface, application Description automatically generated](media/61297cd989c77b0685000c4221c03a7e.png)
+As a user of audience insights for Dynamics 365 Customer Insights, you may have created segments to make your marketing campaigns more efficient by targeting relevant audiences. To use a segment from audience insights in Adobe Experience Platform and applications like Adobe Campaign Standard, you need to follow a few steps outlined in this article.
+
+:::image type="content" source="media/AEP-flow.png" alt-text="Process diagram of the steps outlined in this article.":::
 
 ## Prerequisites
 
@@ -15,17 +28,17 @@ As a user of audience insights for Dynamics 365 Customer Insights, you may have 
 
 To better understand how you can use segments from audience insights in Adobe Experience Platform, let’s look at a fictitious sample campaign.
 
-Let’s assume that your company offers a monthly, subscription-based service to your customers in the United States. You want to identify customers whose subscriptions are due for renewal in the next 8 days but have not yet renewed their subscription. To retain these customers, you want to send them a promotional offer via email, using Adobe Experience Platform.
+Let’s assume that your company offers a monthly, subscription-based service to your customers in the United States. You want to identify customers whose subscriptions are due for renewal in the next eight days but haven't yet renewed their subscription. To keep these customers, you want to send them a promotional offer via email, using Adobe Experience Platform.
 
 In this example, we want to run the promotional email campaign once. This article doesn’t cover the use-case of running the campaign more than once.
 
 ## Identify your target audience
 
-In our scenario, we assume that the email addresses of the customers are available in audience insights and their promotional preferences were analyzed using the subscription churn prediction model to identify members of the segment.
+In our scenario, we assume that the email addresses of the customers are available in audience insights and their promotional preferences were analyzed to identify members of the segment.
 
-The segment you defined in audience insights is called **ChurnProneCustomers** and you plan to send these customers the email promotion.
+The [segment you defined in audience insights](segments.md) is called **ChurnProneCustomers** and you plan to send these customers the email promotion.
 
-![Graphical user interface, application Description automatically generated](media/0964e3bd8079e1264cb49c3d19840971.png)
+:::image type="content" source="media/churn-prone-customers-segment.png" alt-text="Screenshot of the segments page with the ChurnProneCustomers segment created.":::
 
 The offer email that you want to send out will contain the first name, last name, and the subscription end date of the customer. It informs the customers about the discount they’ll get if they renew their subscription before it ends.
 
@@ -37,59 +50,65 @@ With our target audience identified, we can configure the export from audience i
 
 1. In the **Azure Blob Storage** tile, select **Set up**.
 
-   ![Graphical user interface, text, application, email Description automatically generated](media/e0ed35ef156f7a667b5680c9cefee63a.png)
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Configuration tile for Azure Blob Storage.":::
 
-1. Provide a **Display name** for this new export destination and then enter the **Account name**, **Account key** and **Container** of the Azure Blob Storage account where you want to export the segment to.  
-
-   ![Graphical user interface, text, application, email Description automatically generated](media/75dd25e318d5105418c2f4c587e2e402.png)
+1. Provide a **Display name** for this new export destination and then enter the **Account name**, **Account key**, and **Container** of the Azure Blob Storage account where you want to export the segment to.  
+      
+   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration. "::: 
 
    - To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-manage).
-   - To learn how to create a container, see [Create a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+
+   - To learn how to create a container, see [Create a container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)
 
 1. Select **Next**.
 
 1. Choose the segment that you want to export. In this example, it’s **ChurnProneCustomers**.
 
-   ![Graphical user interface, text, application, email Description automatically generated](media/0adebaa6983b9b2eab0cb499554067a4.png)
+   :::image type="content" source="media/select-segment-churnpronecustomers.png" alt-text="Screenshot of the segment selection user interface with ChurnProneCustomers segment selected.":::
 
 1. Select **Save**.
 
 After saving the export destination, you find it on **Admin** > **Exports** > **My export destinations**.
 
-![Graphical user interface, text, application Description automatically generated](media/e85c303e147480b24f98d061a329a9a4.png)
+:::image type="content" source="media/export-destination-azure-blob-storage.png" alt-text="Screenshot with list of exports and sample segment highlighted.":::
 
-This export destination is now enabled and will automatically export data during each data refresh run.
+You can now [export the segment on demand](export-destinations.md#export-data-on-demand). The export will also run with every [scheduled refresh](system.md).
+
+> [!NOTE]
+> Ensure that the number of records in the exported segment are within the allowed limit of your Adobe Campaign Standard license.
 
 Exported data is stored in the Azure Blob storage container you configured above. The following folder path is automatically created in your container:
 
 *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
-Example: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/ChurnSegmentDemo/2021/02/16/1433/ChurnProneCustomers_1.csv
+Example: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/ChurnSegmentDemo/2021/02/16/1433/ChurnProneCustomers_1.csv
 
-The model.json for the exported entities will reside at the %ExportDestinationName% level.
+The *model.json* for the exported entities will reside at the *%ExportDestinationName%* level.
 
 Example: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
 
 ## Define Experience Data Model (XDM) in Adobe Experience Platform
 
-Before any of the data exported from Audience Insights can be used within Adobe Experience Platform, we would need to define the Experience Data Model schema.
+Before the exported data from audience insights can be used within Adobe Experience Platform, we need to define the Experience Data Model schema and [configure the data for the Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
 
-Learn [what XDM is](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en) and understand the [basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#schema).
+Learn [what XDM is](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) and understand the [basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema).
 
 ## Import data into Adobe Experience Platform
 
-Now that we have everything setup, we would need to import the Audience Insights’ audience data, that we have prepared, into Adobe Experience Platform.
+Now that everything is in place, we need to import the prepared audience data from audience insights into Adobe Experience Platform.
 
-To begin, [create an Azure Blob source connection](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html?lang=en#getting-started) in the UI. Once you have the source connection defined, [configure a dataflow](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html?lang=en#ui-tutorials) for a cloud storage batch connection in the UI to import the Audience Insights’ segment output into Adobe Experience Platform.
+First, [create an Azure Blob Storage source connection](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).    
+
+After defining the source connection, [configure a dataflow](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) for a cloud storage batch connection to import the segment output from audience insights into Adobe Experience Platform.
 
 ## Create an audience in Adobe Campaign Standard
 
-In order to send the email for this campaign, we will use Adobe Campaign Standard. Once the data is imported into Adobe Experience Platform, we would need to create an [audience](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html?lang=en#permission) in Adobe Campaign Standard using the data present in Adobe Experience Platform.
+To send the email for this campaign, we will use Adobe Campaign Standard. After importing the data into Adobe Experience Platform, we need to [create an audience](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) in Adobe Campaign Standard using the data in Adobe Experience Platform.
 
-Learn how to [use segment builder](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html?lang=en#building-a-segment) in Adobe Campaign Standard to define an audience based on the data present in Adobe Experience Platform.
+Learn how to [use segment builder](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment) in Adobe Campaign Standard to define an audience based on the data in Adobe Experience Platform.
 
 ## Create and send the email using Adobe Campaign Standard
 
-Create the email content and then [test and send](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html?lang=en#preparing-and-testing-messages) your email.
+Create the email content and then [test and send](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) your email.
 
-![Graphical user interface Description automatically generated](media/8f4abf66a452817d9f75a9b6444f7a96.jpg)
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Sample email with renewal offer from Adobe Campaign Standard.":::
