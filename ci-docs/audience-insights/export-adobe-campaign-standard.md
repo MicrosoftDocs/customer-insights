@@ -49,7 +49,7 @@ With our target audience identified, we can configure the export from audience i
 
 1. In the **Azure Blob Storage** tile, select **Set up**.
 
-   :::image type="content" source="media/adobe-campagin-standard-tile.png" alt-text="Configuration tile for Adobe Campaign Standard.":::
+   :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Configuration tile for Adobe Campaign Standard.":::
 
 1. Provide a **Display name** for this new export destination and then enter the **Account name**, **Account key**, and **Container** of the Azure Blob Storage account where you want to export the segment to.  
       
