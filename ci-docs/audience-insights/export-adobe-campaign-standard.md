@@ -11,7 +11,7 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Use Customer Insights segments in Adobe Experience Platform
+# Use Customer Insights segments in Adobe Campaign Standard
 
 As a user of audience insights for Dynamics 365 Customer Insights, you may have created segments to make your marketing campaigns more efficient by targeting relevant audiences. To use a segment from audience insights in Adobe Experience Platform and applications like Adobe Campaign Standard, you need to follow a few steps outlined in this article.
 
