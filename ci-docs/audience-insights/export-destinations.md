@@ -22,8 +22,6 @@ Go to **Admin** > **Export destinations** to find the following extensibility op
 - [Power Automate connector](export-power-automate.md)
 - [Power Apps connector](export-power-apps.md)
 - [Power BI connector](export-power-bi.md)
-- [Adobe Campaign Standard](export-adobe-campaign-standard.md)
-- [Adobe Experience Platform](export-adobe-experience-platform.md)
 - [Autopilot](export-autopilot.md)
 - [AdRoll](export-adroll.md)
 - [DotDigital](export-dotdigital.md)
