@@ -96,3 +96,6 @@ You can create additional workspaces to classify your data.
 
 To change between workspaces, select the workspace switcher. You can also create a new workspace, or select **Web Sample** to see reports and try features using sample data. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

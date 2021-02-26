@@ -223,3 +223,6 @@ Deleting a prediction also removes its output entity.
 2. Select the vertical ellipses next to the prediction you want to view error logs for.
 3. Select **Logs**.
 4. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading more data into audience insights.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

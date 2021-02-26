@@ -245,4 +245,7 @@ You can specify conditions that certain records should always match or never mat
 
 ## Next step
 
-After completing the match process for at least one match pair, you may resolve possible contradictions in your data by going through the [**Merge**](merge-entities.md) article.
+After completing the match process for at least one match pair, you may resolve possible contradictions in your data by going through the [**Merge**](merge-entities.md) topic.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
