@@ -83,3 +83,6 @@ Configure [activities](activities.md), [enrichment](enrichment-microsoft-graph.m
 If you already configured activities, enrichment, or relationships, or if you defined segments, they'll be processed automatically to use the latest customer data.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

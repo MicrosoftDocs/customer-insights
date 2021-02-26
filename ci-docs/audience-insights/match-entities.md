@@ -17,7 +17,7 @@ After completing the map phase, you're ready to match your entities. The match p
 
 ## Specify the match order
 
-Go to **Unify** > **Match** and select **Set order** to start the match phase.
+Go to **Data** > **Unify** > **Match** and select **Set order** to start the match phase.
 
 Each match unifies two or more entities into a single entity, while persisting each unique customer record. In the following example, we selected three entities: **ContactCSV: TestData** as the **Primary** entity, **WebAccountCSV: TestData** as **Entity 2**, and **CallRecordSmall: TestData** as **Entity 3**. The diagram above the selections illustrates how the match order will be executed.
 
@@ -131,7 +131,7 @@ After a deduplicated record is identified, that record will be used in the cross
 
 1. Running the match process now groups the records based on the conditions defined in the deduplication rules. After grouping the records, the merge policy is applied to identify the winner record.
 
-1. This winner record is then passed on to the cross-entity matching.
+1. This winner record is then passed on to the cross-entity matching, along with the non-winner records (for example, alternate IDs) to improve the matching quality.
 
 1. Any custom match rules defined for always match and never match overrule deduplication rules. If a deduplication rule identifies matching records, and a custom match rule is set to never match those records, then these two records won't be matched.
 
@@ -152,6 +152,17 @@ The first match process results in the creation of a unified master entity. All 
 
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+
+## Deduplication output as an entity
+In addition to the unified master entity created as part of the cross entity matching, the deduplication process also generates a new entity for every entity from the match order to identify the deduplicated records. These entities can be found along with the **ConflationMatchPairs:CustomerInsights** in the **System** section in the **Entities** page, with the name **Deduplication_Datasource_Entity**.
+
+A deduplication output entity contains the following information:
+- IDs / Keys
+  - Primary key field and its alternate IDs field. Alternate IDs field consists of all the alternate IDs identified for a record.
+  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. This is  used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
+  - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
+- Fields used to define the deduplication rules.
+- Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
 
 ## Review and validate your matches
 
@@ -195,6 +206,11 @@ Increase the quality by reconfiguring some of your match parameters:
   > [!div class="mx-imgBorder"]
   > ![Duplicate a rule](media/configure-data-duplicate-rule.png "Duplicate a rule")
 
+- **Deactivate a rule** to retain a match rule while excluding it from the matching process.
+
+  > [!div class="mx-imgBorder"]
+  > ![Deactivate a rule](media/configure-data-deactivate-rule.png "Deactivate a rule")
+
 - **Edit your rules** by selecting the **Edit** symbol. You can apply the following changes:
 
   - Change attributes for a condition: Select new attributes within the specific condition row.
@@ -224,10 +240,12 @@ You can specify conditions that certain records should always match or never mat
     - Entity2Key: 34567
 
    The same template file can specify custom match records from multiple entities.
+   
+   If you want to specify custom matching for deduplication on an entity, provide the same entity as both Entity1 and Entity2 and set the different primary key values.
 
 5. After adding all the overrides you want to apply, save the template file.
 
-6.Go to **Data** > **Data sources** and ingest the template files as new entities. Once ingested, you can use them to specify the Match configuration.
+6. Go to **Data** > **Data sources** and ingest the template files as new entities. Once ingested, you can use them to specify the Match configuration.
 
 7. After uploading the files and entities are available, select the **Custom match** option again. You'll see options to specify the entities you want to include. Select the required entities from the drop-down menu.
 
@@ -245,3 +263,6 @@ You can specify conditions that certain records should always match or never mat
 ## Next step
 
 After completing the match process for at least one match pair, you may resolve possible contradictions in your data by going through the [**Merge**](merge-entities.md) topic.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

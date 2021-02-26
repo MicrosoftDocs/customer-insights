@@ -70,3 +70,6 @@ A tenant administrator can follow these steps to export data:
 1. Send an email to D365CI@microsoft.com specifying the user’s email address in the request. The Customer Insights team will send an email to the registered tenant admin email address, asking for confirmation to export data.
 2. Acknowledge the confirmation to export the data for the requested user.
 3. Receive the exported data through the tenant admin email address.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -26,3 +26,6 @@ After completing the data unification, you can optionally
 - [set up relationships between entities](relationships.md) to create sophisticated segments
 - [enrich your data](enrichment-hub.md) to get a wider range of insights about your customers
 - [define activities](activities.md) from some of the ingested attributes
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
