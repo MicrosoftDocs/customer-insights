@@ -23,7 +23,10 @@ Power Query offers a broad set of connectors to ingest data. Most of these conne
 
 1. Choose the **Import data** method and select **Next**.
 
-1. Provide a **Name** for the data source, and select **Next** to create the data source.
+1. Provide a **Name** for the data source, and select **Next** to create the data source. Name guidelines: 
+   - Start with a letter.
+   - Use letters and numbers only. Special characters and spaces are not allowed.
+   - Use between 3 and 64 characters.
 
 1. Choose one of the [available connectors](#available-power-query-data-sources). For this example, we select the **Text/CSV** connector.
 
@@ -72,3 +75,6 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
 3. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
 4. Select **Save** in Power Query after completing your edits to save your changes.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

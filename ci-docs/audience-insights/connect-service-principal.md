@@ -1,7 +1,7 @@
 ---
 title: "Connect to an Azure Data Lake Storage Gen2 account with a service principal"
-description: "use an Azure service principal for audience insights to connect to your own data lake when attaching it to audience insights."
-ms.date: 11/24/2020
+description: "Use an Azure service principal for audience insights to connect to your own data lake when attaching it to audience insights."
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -17,7 +17,9 @@ Automated tools that use Azure services should always have restricted permission
 
 You can use the service principal to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create a new or update an existing environment](manage-environments.md#create-an-environment-in-an-existing-organization).
 
-You need admin permissions for your Azure subscription to create the service principal.
+> [!IMPORTANT]
+> - The Azure Data Lake Gen2 storage account that intends to use the service principal must have [Hierarchical Name Space (HNS) enabled](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - You need admin permissions for your Azure subscription to create the service principal.
 
 ## Create Azure service principal for audience insights
 
@@ -78,7 +80,7 @@ Attach an Azure Data Lake storage account in audience insights to [store output 
 
 Follow the below steps to provide the required information on the selected approach.
 
-### Resounce-based storage account connection
+### Resource-based storage account connection
 
 1. Go to the [Azure admin portal](https://portal.azure.com), sign in to your subscription and open the storage account.
 
@@ -103,7 +105,8 @@ Follow the below steps to provide the required information on the selected appro
 1. Review the **Subscription**, **Resource group**, and the **Name** of the storage account to make sure you select the right values in audience insights.
 
 1. In audience insights, choose the values or for the corresponding fields when attaching the storage account.
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Enter the storage account resource ID information.":::
    
 1. Continue with the remaining steps in audience insights to attach the storage account.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

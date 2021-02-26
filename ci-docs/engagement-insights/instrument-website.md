@@ -56,3 +56,6 @@ window["NAME"].trackView({
 });
 
 ```
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

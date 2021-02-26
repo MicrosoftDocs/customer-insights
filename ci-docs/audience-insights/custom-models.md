@@ -45,7 +45,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 1. For each **Web service input**, select the matching **Entity** from audience insights and select **Next**.
    > [!NOTE]
-   > The custom model workflow will apply heuristics to map the web service input fields to the entity attributes based on the name and data type of the field. You'll see and error if a web service field can't be mapped to an entity.
+   > The custom model workflow will apply heuristics to map the web service input fields to the entity attributes based on the name and data type of the field. You'll see an error if a web service field can't be mapped to an entity.
 
    > [!div class="mx-imgBorder"]
    > ![Configure a workflow](media/intelligence-screen2-updated.png "Configure a workflow")
@@ -107,3 +107,6 @@ Your workflow also runs automatically with every scheduled refresh. Learn more a
 1. Select **Delete** and confirm your deletion.
 
 Your workflow will be deleted. The [entity](entities.md) that was created when you created the workflow persists, and can be viewed from the **Entities** page.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

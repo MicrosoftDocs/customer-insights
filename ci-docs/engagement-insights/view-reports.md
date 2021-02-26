@@ -2,9 +2,9 @@
 title: View data reports
 description: Use the available reports to see real-time activity on your site.
 author: pickwick129
-ms.reviewer: ruthai
+ms.reviewer: darrin.wood
 ms.author: v-salash
-ms.date: 10/30/2020
+ms.date: 01/13/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -25,9 +25,9 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 
 :::image type="content" source="media/report-menu.png" alt-text="Navigation showing the list of available reports":::
 
-- Select a time frame for a report by choosing a value from the **time/date range** drop-down list. The time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.” 
+- To select a time frame, select **...** from the drop-down list of the report. Time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.”
 
-- In most reports, select a value in a chart or list to filter the report for the selected value. 
+- In most reports, select a value in a chart or list to filter the report for the selected value.
 
 ## Key metrics reports
 
@@ -43,14 +43,15 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 
 ## Traffic sources reports
 
-- **Referring domains** lists the domains that referred visitors to your site.
-- **Referring URLs** identifies the URLs that referred visitors to your site.
+- **Referrers** lists the domains and URLs that referred visitors to your site.
 - **Tracking codes** provides details about the tracking codes in the links that brought visitors to your site.
 
 ## Visitor profiles reports
 
 - **Devices** lists the physical devices that were used to access your site.
-- **Operating systems** provides insights into the operating systems the devices were running when accessing your site.
-- **Browsers** shows a breakdown of the browsers that visitors  used to access your site.
-- **Locations** shows information about visitors by country and region.
+- **OS & Browsers** provide insights into the operating systems and browsers that were running when accessing your site.
+- **Locations** shows information about visitors by country, region, and city.
 - **Language** lists the visitor's preferred languages.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

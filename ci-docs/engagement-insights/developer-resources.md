@@ -23,3 +23,6 @@ This article lists all available code snippets and samples for quick reference. 
 - [Web SDK sample](websdk-sample.md)
 - [Advanced SDK implementation](advanced-SDK-implementation.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

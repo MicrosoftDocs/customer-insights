@@ -77,6 +77,10 @@ Review your default enrichment preferences and update them as needed.
 
 :::image type="content" source="media/affinity-enrichment-preferences.png" alt-text="Screenshot of the enrichment preferences window.":::
 
+### Select entity to enrich
+
+Select **Enriched entity** and choose the data set you want to enrich with company data from the Microsoft Graph. You can select the Customer entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+
 ### Map your fields
 
 Map fields from your unified customer entity to define the demographic segment you want the system to use for enriching your customer data. Map Country/Region and at least Date of Birth or Gender attributes. Additionally, you must map at least one of City (and State/Province) or Postal code. Select **Edit** to define the mapping of the fields and select **Apply** when you're done. Select **Save** to complete the field mapping.
@@ -122,3 +126,6 @@ Brand and interest affinities can also be viewed on individual customer cards. G
 ## Next steps
 
 Build on top of your enriched customer data. Create [Segments](segments.md), [Measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

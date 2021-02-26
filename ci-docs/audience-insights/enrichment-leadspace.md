@@ -33,7 +33,11 @@ To configure Leadspace, the following prerequisites must be met:
 
 1. Select **Get Started** and then enter an active **Leadspace token** (perpetual key). Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox. Confirm both inputs by selecting **Connect to Leadspace**.
 
-1. Select **Map data** and define which fields from your unified profiles should be used to look for matching company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
+1. Select **Map data** and choose the data set you want to enrich with company data from Leadspace. You can select the *Customer* entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+
+   :::image type="content" source="media/enrichment-leadspace-select-segment.png" alt-text="Choose between customer profile and segment enrichment.":::
+
+1. Click **Next** and define which fields from your unified profiles should be used to look for matching company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
 
    :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace field mapping pane.":::
    
@@ -57,3 +61,6 @@ Build on top of your enriched customer data. Create [segments](segments.md), [me
 
 When you enable Dynamics 365 Customer Insights to transmit data to Leadspace, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Leadspace meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights Administrator can remove this enrichment at any time to discontinue use of this functionality.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

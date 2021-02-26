@@ -29,7 +29,10 @@ Data stored in online services, such as Azure Data Lake Storage, may be stored i
 
 3. Select **Connect to Common Data Service** and select **Next**.
 
-4. Enter a **Name** for the data source and select **Next**.
+4. Enter a **Name** for the data source and select **Next**. Name guidelines: 
+   - Start with a letter.
+   - Use letters and numbers only. Special characters and spaces are not allowed.
+   - Use between 3 and 64 characters.
 
 5. Provide the **Server address** for your Common Data Service organization, and select **Sign in**.
 
@@ -60,3 +63,6 @@ To connect to a different Common Data Service, [create a new data source](#conne
 3. Select the **Edit** option from the list.
 
 4. Select additional entities from the available list of entities and select **Save**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

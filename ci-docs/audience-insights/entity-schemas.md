@@ -40,3 +40,6 @@ For more information, see the documentation about the [Customer Insights entity 
 You can view entities in the [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). Select the **Load from GitHub!** button and navigate to **foundationCommon** > **crmCommon** > **solutions** > **customerInsights** where you'll find the list of Customer Insights entities and their definitions.
 > [!div class="mx-imgBorder"]
 > ![CDM Entity Navigator showing CustomerActivity entity](media/CDM-entity-navigator.png "CDM Entity Navigator showing CustomerActivity entity")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

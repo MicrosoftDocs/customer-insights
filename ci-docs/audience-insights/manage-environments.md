@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 11/10/2020
+ms.date: 02/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -41,9 +41,9 @@ There are two ways to create a new environment. You can either specify an entire
 
 To create an environment:
 
-1. Select the **Settings** symbol in the header of the app.
+1. Select the **Environment** picker in the header of the app.
 
-1. Select **New environment**.
+1. Select **New**.
 
    > [!div class="mx-imgBorder"]
    > ![Environment settings](media/environment-settings-dialog.png)
@@ -70,7 +70,14 @@ To create an environment:
 
    - For the Azure Data Lake Storage Gen2 option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name can't be changed and will be "customerinsights".
    
-   - If you want to use [predictions](predictions.md), enter the Common Data Service instance URL in the **Server address** field under **Use predictions**.
+   - If you want to use [predictions](predictions.md) or configure data sharing with applications and solutions based on Microsoft Dataverse, provide the Microsoft Dataverse environment URL under **Configure data sharing with Microsoft Dataverse and enable additional capabilities**. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
+
+     > [!NOTE]
+     > - Data sharing with Microsoft Dataverse Managed Data Lake is currently not supported when you save all data to your own Azure Data Lake Storage.
+     > - [Prediction of missing values in an entity](predictions.md) is not currently supported when you enable data sharing with Microsoft Dataverse Managed Data Lake.
+
+     > [!div class="mx-imgBorder"]
+     > ![Configuration options to enable data sharing with Microsoft Dataverse](media/Datasharing-with-DataverseMDL.png)
 
    When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to the respective subfolders based on the process you run.
 
@@ -81,7 +88,7 @@ To create an environment:
 The following configuration settings are copied:
 
 - Feature configurations
-- Inegsted/imported data sources
+- Ingested/imported data sources
 - Data unification (Map, Match, Merge) configuration
 - Segments
 - Measures
@@ -115,11 +122,11 @@ When the data unification is complete, go to **Measures** and **Segments** to re
 
 You can edit some of the details of existing environments.
 
-1. Go to **Admin** > **System** > **About**.
+1.	Select the **Environment** picker in the header of the app.
 
-2. Select **Edit**.
+2.	Select the **Edit** icon.
 
-3. You can update the environment's **Display name**, but you can't change the **Region** or **Type**.
+3. In the **Edit environment** box, you can update the environment's **Display name**, but you can't change the **Region** or **Type**.
 
 4. If an environment is configured to store data in Azure Data Lake Storage Gen2, you can update the **Account key**. However, you can't change the **Account name** or **Container** name.
 
@@ -127,19 +134,27 @@ You can edit some of the details of existing environments.
 
 ## Reset an existing environment
 
-You can reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
+As an administrator, you can reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
 
-1.	Go to **Admin** > **System** > **About**.
+1.	Select the **Environment** picker in the header of the app. 
 
-2.	Select **Reset**. 
+2.	Select the environment you want to reset and select the ellipsis **...**. 
 
-3.	To confirm the deletion, enter the environment name and select **Reset**.
+3. Choose the **Reset** option. 
+
+4.	To confirm the deletion, enter the environment name and select **Reset**.
+
+## Delete an existing environment (available only for admins)
+
+As an administrator, you can delete an environment you administer.
+
+1.	Select the **Environment** picker in the header of the app.
+
+2.	Select the environment you want to reset and select the ellipsis **...**. 
+
+3. Choose the **Delete** option. 
+
+4.	To confirm the deletion, enter the environment name and select **Delete**.
 
 
-## Delete an existing environment
-
-1. Go to **Admin** > **System** > **About**.
-
-1. Select **Delete**.
-
-1. To confirm the deletion, enter the environment name and select **Delete**.
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
