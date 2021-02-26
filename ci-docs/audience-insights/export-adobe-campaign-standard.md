@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Adobe Campaign Standard"
 description: "Learn how use audience insights segments in Adobe Campaign Standard."
-ms.date: 02/24/2021
+ms.date: 02/26/2021
 ms.reviewer: antando
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,7 +11,7 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Use Customer Insights segments in Adobe Campaign Standard
+# Use Customer Insights segments in Adobe Campaign Standard (preview)
 
 As a user of audience insights for Dynamics 365 Customer Insights, you may have created segments to make your marketing campaigns more efficient by targeting relevant audiences. To use a segment from audience insights in Adobe Experience Platform and applications like Adobe Campaign Standard, you need to follow a few steps outlined in this article.
 
