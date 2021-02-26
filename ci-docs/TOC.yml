@@ -132,8 +132,6 @@
       items:
         - name: Export destinations overview
           href: audience-insights/export-destinations.md
-        - name: Azure Blob Storage
-          href: audience-insights/export-azure-blob-storage.md
         - name: AdRoll
           href: audience-insights/export-adroll.md
         - name: Autopilot
