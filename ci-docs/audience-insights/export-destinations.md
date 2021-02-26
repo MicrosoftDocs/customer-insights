@@ -25,6 +25,7 @@ Go to **Admin** > **Export destinations** to find the following extensibility op
 - [Adobe Campaign Standard](export-adobe-campaign-standard.md)
 - [Adobe Experience Platform](export-adobe-experience-platform.md)
 - [Autopilot](export-autopilot.md)
+- [AdRoll](export-adroll.md)
 - [DotDigital](export-dotdigital.md)
 - [Dynamics 365 Sales](export-dynamics365-sales.md)
 - [Dynamics 365 Marketing](export-dynamics365-marketing.md)
