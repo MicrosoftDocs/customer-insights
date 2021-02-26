@@ -52,7 +52,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. To create a new export, select Add destination.
 
-1. In Connection for export choose a connection from the Autopilot section. If you don't see this section name, there are no connections of this type available to you.
+1. In Connection for export choose a connection from the SFTP section. If you don't see this section name, there are no connections of this type available to you.
 
 1. Select the entities, for example segments, you want to export.
 
