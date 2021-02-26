@@ -1,6 +1,6 @@
 ---
 title: "Export Customer Insights data to an Azure Blob storage"
-description: "Learn how to configure the connection to Azure Blob storage."
+description: "Learn how to configure the connection and export to Azure Blob storage."
 ms.date: 09/18/2020
 ms.reviewer: philk
 ms.service: customer-insights
@@ -11,27 +11,44 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Connector for Azure Blob storage (preview)
+# Export segment list and other data to Azure Blob storage (preview)
 
 Store your Customer Insights data in an Azure Blob storage or use it to transfer your data to other applications.
 
-## Configure the connector for Azure Blob storage
+## Setup connection to Azure Blob storage
 
-1. In audience insights, go to **Admin** > **Export destinations**.
+1. Go to **Admin** > **Connections**.
 
-1. Under **Azure Blob Storage**, select **Set up**.
+1. Select **Add connection** and choose **Azure Blob Storage** to configure the connection.
+
+1. Give your connection a recognizable name in the Display name field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+
+1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connection.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter **Account name**, **Account key**, and **Container** for your Azure Blob storage account.
     - To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](https://docs.microsoft.com/azure/storage/common/storage-account-manage).
     - To learn how to create a container, see [Create a container](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-1. Give your destination a recognizable name in the **Display name** field.
+1. Select **Save** to complete the connection. 
 
-1. Select **Next**.
+## Configure an export
+
+You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+
+1. Go to Data > Exports.
+
+1. To create a new export, select Add destination.
+
+1. In Connection for export choose a connection from the Azure Blob Storage section. If you don't see this section name, there are no connections of this type available to you.
 
 1. Select the box next to each of the entities you want to export to this destination.
 
 1. Select **Save**.
+
+Saving an export doesn't run the export immediately.
+
+The export runs with every [scheduled refresh](system.md#schedule-tab). 
+You can also [export data on demand](export-destinations.md#run-export-on-demand). 
 
 Exported data is stored in the Azure Blob storage container you configured. The following folder paths are automatically created in your container:
 
@@ -39,10 +56,5 @@ Exported data is stored in the Azure Blob storage container you configured. The 
   - Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
 - The model.json for the exported entities will reside at the %ExportDestinationName% level
   - Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
-
-## Export the data
-
-You can [export data on demand](export-destinations.md#export-data-on-demand). The export will also run with every [scheduled refresh](system.md#schedule-tab).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
