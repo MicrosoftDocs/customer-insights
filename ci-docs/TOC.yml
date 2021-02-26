@@ -132,12 +132,18 @@
       items:
         - name: Export destinations overview
           href: audience-insights/export-destinations.md
+        - name: AdRoll
+          href: audience-insights/export-adroll.md
         - name: Autopilot
           href: audience-insights/export-autopilot.md
         - name: Azure Blob Storage
           href: audience-insights/export-azure-blob-storage.md
         - name: Azure Data Lake Storage Gen2
           href: audience-insights/export-azure-data-lake-storage-gen2.md
+        - name: Adobe Campaign Standard
+          href: audience-insights/export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: audience-insights/export-adobe-experience-platform.md
         - name: DotDigital
           href: audience-insights/export-dotdigital.md
         - name: Dynamics 365 Customer Service (Add-in)
