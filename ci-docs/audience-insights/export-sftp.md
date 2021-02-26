@@ -1,6 +1,6 @@
 ---
 title: "Export Customer Insights data to SFTP hosts"
-description: "Learn how to configure the connection to an SFTP host."
+description: "Learn how to configure the connection and export to an SFTP location."
 ms.date: 01/27/2021
 ms.reviewer: philk
 ms.service: customer-insights
@@ -11,21 +11,28 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Connector for SFTP (preview)
+# Export segment lists and other data to SFTP (preview)
 
-Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol (SFTP) host.
+Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol (SFTP) location.
 
-## Prerequisites
+## Prerequisites for connection
 
 - Availability of an SFTP host and corresponding credentials.
 
-## Connect to SFTP
+## Known limitations
 
-1. Go to **Admin** > **Export destinations**.
+- The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server. 
+- Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory. 
 
-1. Under **SFTP**, select **Set up**.
+## Setup connection to SFTP
 
-1. Give your destination a recognizable name in the **Display name** field.
+1. Go to **Admin** > **Connections**.
+
+1. Select **Add connection** and choose **SFTP** to configure the connection.
+
+1. Give your connection a recognizable name in the Display name field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+
+1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connection.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Provide a **Username**, **Password**, **Hostname**, and **Export folder** for your SFTP account.
 
@@ -35,25 +42,30 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
-1. Select **Next** to start configuring the export.
+1. Select **Save** to complete the connection.
 
-## Configure the export
+## Configure an export
+
+You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+
+1. Go to Data > Exports.
+
+1. To create a new export, select Add destination.
+
+1. In Connection for export choose a connection from the Autopilot section. If you don't see this section name, there are no connections of this type available to you.
 
 1. Select the entities, for example segments, you want to export.
 
    > [!NOTE]
-   > Each selected entity will be up to five output files when exported. 
+   > Each selected entity will be split up into up to five output files when exported. 
 
 1. Select **Save**.
 
-## Export the data
+Saving an export doesn't run the export immediately.
 
-You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab).
+The export runs with every [scheduled refresh](system.md#schedule-tab). 
+You can also [export data on demand](export-destinations.md#run-export-on-demand). 
 
-## Known limitations
-
-- The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server. 
-- Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory. 
 
 ## Data privacy and compliance
 
