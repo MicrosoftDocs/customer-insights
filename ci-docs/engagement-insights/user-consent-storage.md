@@ -50,3 +50,6 @@ Keys in local storage don't expire automatically. They'll be reset during the ne
 ## Deleting cookies
 
 Your customers can manually delete cookies and local storage keys at any time through their browsers' settings.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

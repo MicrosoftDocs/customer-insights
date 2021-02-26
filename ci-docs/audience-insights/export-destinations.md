@@ -28,6 +28,7 @@ Go to **Admin** > **Export destinations** to find the following extensibility op
 - [Dynamics 365 Sales](export-dynamics365-sales.md)
 - [Dynamics 365 Marketing](export-dynamics365-marketing.md)
 - [Azure Blob Storage](export-azure-blob-storage.md)
+- [Azure Data Lake Storage Gen2](export-azure-data-lake-storage-gen2.md)
 - [SendGrid](export-sendgrid.md)
 - [LiveRamp&reg; connector](export-liveramp.md)
 - [Bot for Microsoft Teams](export-teams-bot.md)
@@ -93,3 +94,6 @@ To remove an Export destination, start from the main **Export destinations** pag
 2. Select **Remove** from the dropdown menu.
 
 3. Confirm the removal by selecting **Remove** on the confirmation screen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
