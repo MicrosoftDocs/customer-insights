@@ -1,7 +1,7 @@
 ---
 title: "Supported languages for audience insights"
 description: "Understand and configure language support."
-ms.date: 04/27/2020
+ms.date: 02/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Supported languages for audience insights capability
 
-Dynamics 365 Customer Insights audience insights capability supports a number of languages. This topic lists the available languages and provides support for changing between them, as well as an overview of what content is translated.
+Audience insights for Dynamics 365 Customer Insights is translated to many languages. The following list contains available languages and information on what's translated. You can also learn more about how to change the language settings. 
 
 ## Languages
 
