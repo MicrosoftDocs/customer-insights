@@ -61,7 +61,7 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
    - **Normalize**: Select from following normalization options for the selected attributes. 
      - Whitespace: Removes all spaces. *Hello   World* becomes *HelloWorld*.
      - Symbols: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
-     - Text to lower case: Converts all character to lower case. *ALLCAPS and CamelCase* becomes *allcaps and camelcase*.
+     - Text to lower case: Converts all character to lower case. *ALL CAPS and Title Case* becomes *all caps and title case*.
      - Unicode to ASCII: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
      - Numerals: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
      - Semantic types: Standardizes names, titles, phone numbers, addresses, etc. 
@@ -206,7 +206,7 @@ You can reconfigure and fine-tune most of the match parameters.
 
 ## Specify custom match conditions
 
-You can specify conditions that certain records should always match or never match. These rules can be uploaded to override the standard match process. For example, if there are John Doe I and John Doe II in our records, the system might match them as one person. Custom match rules let you speficy that their profiles refer to different people. 
+You can specify conditions that certain records should always match or never match. These rules can be uploaded to override the standard match process. For example, if there are John Doe I and John Doe II in our records, the system might match them as one person. Custom match rules let you specify that their profiles refer to different people. 
 
 1. Go to **Data** > **Unify** > **Match** and select **Custom match** in the **Matched records details** section.
 
