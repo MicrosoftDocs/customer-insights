@@ -1,7 +1,7 @@
 ---
 title: "Create and manage segments"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 10/15/2020
+ms.date: 03/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -80,6 +80,7 @@ The following action are available when you select a segment:
 
 - **View** the segment details, including member count trend a preview of segment members.
 - **Edit** the segment to change its properties.
+- **Create duplicate** of a segment. You can choose to edit its properties right away or simply save the duplicate.
 - **Refresh** the segment to include the latest data.
 - **Activate** or **Deactivate** the segment. Segments have two possible states - active or inactive. These states come in handy when editing a segment. For inactive segments, the segment definition exists but it doesn't contain any customers yet. When you activate a segment, its state changes from 'inactive' to 'active" and it starts looking for customers that match the segment definition. If a [scheduled refresh](system.md#schedule-tab) is configured, inactive segments have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. When an inactive segment is activated, it will refresh and will be included in scheduled refreshes.
   Alternatively, you can use the **Schedule later** functionality in the **Activate/Deactivate** dropdown to specify a future date and time for activation and deactivation of a particular segment.
