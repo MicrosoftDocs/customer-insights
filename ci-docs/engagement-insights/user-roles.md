@@ -36,3 +36,6 @@ The following chart identifies permissions for each role.
 ## Add members
 
 You can add and remove members from workspaces and environments. For more information, see [Environments and workspaces](manage-environments-workspaces.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ To add members to your workspace
 1. When you're done adding members, select **Add members** to confirm.
 
 For more information, see [manage environments and workspaces](manage-environments-workspaces.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ window["NAME"].trackEvent({
     }
 });
 ```
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

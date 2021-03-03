@@ -155,3 +155,6 @@ As an administrator, you can delete an environment you administer.
 3. Choose the **Delete** option. 
 
 4.	To confirm the deletion, enter the environment name and select **Delete**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

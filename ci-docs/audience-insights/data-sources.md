@@ -71,3 +71,6 @@ To refresh a data source on demand, follow these steps:
 2. Select the vertical ellipsis next to the data source you want to remove and select **Delete** from the drop-down menu.
 
 3. Confirm your deletion.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

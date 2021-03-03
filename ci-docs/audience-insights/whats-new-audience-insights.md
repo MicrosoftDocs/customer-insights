@@ -517,3 +517,6 @@ The updates in April 2020 includes several features, performance upgrades, and b
   
   Copy your configuration from one environment to another. While creating a new environment, you can select an existing environment you want to copy the configuration from. We currently support data sources, data unification, relationships, measures, and segments to be copied. Data source credentials and actual data aren't copied.    
   For more information, see [Manage environments](manage-environments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
