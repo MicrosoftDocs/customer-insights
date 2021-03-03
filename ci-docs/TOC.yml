@@ -130,7 +130,7 @@
 
     - name: Export options
       items:
-        - name: Export destinations overview
+        - name: Exports (preview) overview
           href: audience-insights/export-destinations.md
         - name: AdRoll
           href: audience-insights/export-adroll.md
@@ -183,6 +183,8 @@
           href: audience-insights/system.md
         - name: Assign user permissions
           href: audience-insights/permissions.md
+        - name: Connections (preview) overview
+          href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
         - name: Connect to an ADLS storage account using Service Principal

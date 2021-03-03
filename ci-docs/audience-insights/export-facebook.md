@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Facebook Ads Manager"
-description: "Learn how to configure the connection to Facebook Ads Manager."
-ms.date: 06/05/2020
+description: "Learn how to configure the connection and export to Facebook Ads Manager."
+ms.date: 02/15/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,59 +11,76 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Connector for Facebook Ads Manager (preview)
+# Export segments list to Facebook Ads Manager (preview)
 
 Export segments of unified customer profiles to Facebook Ads Manager to create campaigns on Facebook and Instagram.
 
-## Prerequisites
+## Prerequisites for connection
 
-- You need to have a [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) which includes a [**Facebook Business Account**](https://business.facebook.com/).
+- You need to have a [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) that includes a [**Facebook Business Account**](https://business.facebook.com/).
 - You need to be an administrator on the [**Facebook Ad Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
 
-## Connect to Facebook Ads Manager
+## Known limitations
 
-1. Go to **Admin** > **Export destinations**.
+- Up to 10 million customer profile per export to Facebook Ads Manager.
+- Export to Facebook Ads Manager is limited to segments.
+- Exporting segments with a total of 10 million profiles can take up to 90 minutes to complete.
 
-1. Under **Facebook Ads Manager**, select **Set up**.
+## Set up connection to Facebook Ads Manager
 
-1. Give your export destination a recognizable name in the **Display name** field.
+Before users can create an export, an administrator must configure the connection to the service and allow contributors to use the connection.
 
-1. Select **Continue with Facebook** to sign in to your Facebook Ad Account.
+1. Go to **Admin** > **Connections**.
 
-1. Allow the **ads_management** permission after authenticating with Facebook.
+1. Select **Add connection** and choose **Facebook Ads Manager** to configure the connection.
 
-1. Select the **Facebook Ads Account** that you want to work with.
+1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Select an **Existing custom audience** from the drop-down list or create a **New custom audience**. For more information, see [**Audiences in Facebook Ads Manager**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).
+1. Choose who can use this connection. If you take no action, the default will be **Administrators**. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Authenticate with Facebook Ads: 
 
-1. Select **Next** to configure the export.
+   1. Select **Continue with Facebook** to sign in to your Facebook Ad Account.
 
-## Configure the connector
+   1. Allow the **ads_management** permission after authenticating with Facebook.
 
-1. In the **Choose your key identifier field**, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager.
+   1. Select the **Facebook Ads Account** that you want to work with.
+
+   1. Select an **Existing custom audience** from the drop-down list or create a **New custom audience**. For more information, see [**Audiences in Facebook Ads Manager**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).
+
+1. Review the **Data privacy and compliance** and select **I agree**.
+
+1. Select **Save** to complete the connection.
+
+## Configure an export
+
+You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+
+1. Go to **Data** > **Exports**.
+
+1. To create a new export, select **Add destination**. 
+
+1. In **Connection for export** choose a connection from the **Facebook Ads Manager** section. If you don't see this section name, there are no connections of this type available to you.
+
+1. In the **Choose your key identifier field**, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager. 
+
+1. Give your connection a recognizable name in the **Display name** field.
 
 1. Map the corresponding attributes from your unified customer entity for the selected key identifier.
    > [TIP]
    > The best chances for a match occur if you select **Email** as key identifier. Adding additional identifiers may improve the matching.
 
-1. Select **Add attribute** to map additional attributes to send to Facebook Ads Manager. Attributes from Facebook Ads Manager are mapping to the following user friendly names: 
+1. Select **Add attribute** to map more attributes to send to Facebook Ads Manager. Attributes from Facebook Ads Manager are mapping to the following user-friendly names: 
     **FN** = **First Name**, **LN** = **Last Name**, **FI** = **First Initial**, **PHONE** = **Phone**, **GEN** = **Gender**, **DOB** = **Date of birth**, **ST** = **State**, **CT** = **City**, **ZIP** = **Postal code / Zip code**, **COUNTRY** = **Country / Region**
 
 1. Select the segments you want to export.
 
 1. Select **Save**.
 
-## Export the data
+Saving an export doesn't run the export immediately.
 
-You can [export data on demand](export-destinations.md). The export will also run with every [scheduled refresh](system.md#schedule-tab).
-
-## Known limitations
-
-- Up to 10 million customer profile per export to Facebook Ads Manager 
-- Export to Facebook Ads Manager is limited to segments
-- Exporting segments with a total of 10 million profiles can take up to 90 minutes to complete
+The export runs with every [scheduled refresh](system.md#schedule-tab). 
+You can also [export data on demand](export-destinations.md#run-export-on-demand). 
 
 ## Data privacy and compliance
 
