@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to DotDigital"
 description: "Learn how to configure the connection and export to DotDigital."
-ms.date: 11/14/2020
+ms.date: 03/03/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -15,7 +15,7 @@ manager: shellyha
 
 Export segments of unified customer profiles to DotDigital address books and use them for campaigns, email marketing, and to build customer segments with DotDigital. 
 
-## Prerequisites for connection
+## Prerequisites for a connection
 
 -	You have a [DotDigital account](https://dotdigital.com/) and corresponding administrator credentials.
 -	There are existing address books in DotDigital and the corresponding IDs. The ID can be found in the URL when you select and open an address book. For more information, see [DotDigital address books](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
@@ -29,19 +29,19 @@ Export segments of unified customer profiles to DotDigital address books and use
 - Exporting segments with a total of 1 million profiles can take up to 3 hours because of limitations on the provider side. 
 - The number of profiles that you can export to DotDigital is dependent and limited on your contract with DotDigital.
 
-## Setup connection to DotDigital
+## Set up connection to DotDigital
 
 1. Go to **Admin** > **Connections**.
 
 1. Select **Add connection** and choose **DotDigital** to configure the connection.
 
-1. Give your connection a recognizable name in the Display name field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connection.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter your **DotDigital username and password**.
 
-1. Enter your **[DotDigital address book ID ](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)**.
+1. Enter your **[DotDigital address book ID](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)**.
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
@@ -55,11 +55,11 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
-1. Go to Data > Exports.
+1. Go to **Data** > **Exports**.
 
-1. To create a new export, select Add destination.
+1. To create a new export, select **Add destination**.
 
-1. In Connection for export choose a connection from the DotDigital section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the DotDigital section. If you don't see this section name, there are no connections of this type available to you.
 
 
 1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. Repeat the same steps for other optional fields such as **First name**, **Last name**, **Full name**, **Gender**, and **Post code**.
