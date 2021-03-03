@@ -46,3 +46,6 @@ Select an enrichment to see the available options. Alternatively, you can select
 - **Delete** an enrichment.
 
 You can run or deactivate multiple enrichments at once by selecting them in the list. View and edit options aren't available as bulk action and only work for one enrichment at a time.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
