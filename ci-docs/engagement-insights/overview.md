@@ -33,3 +33,6 @@ You can combine behavioral analytics with transactional, demographic, survey, an
 ## Next steps
 
 - Learn how to [get started with engagement insights](get-started.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

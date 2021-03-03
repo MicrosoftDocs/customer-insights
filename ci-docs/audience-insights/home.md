@@ -24,7 +24,7 @@ You can sign up for a trial on the [trial sign up page](https://dynamics.microso
 
 1. Provide your work or school email address, tell us a more about yourself and select **Next**.
 
-   :::image type="content" source="media/trial-signup-dialog.png" alt-text="Dialog to sign up for a trial of Customer Insights":::
+   :::image type="content" source="media/trial-signup-dialog.png" alt-text="Dialog to sign up for a trial instance":::
 
 1. Provide a **Name** for your new environment. 
 
@@ -51,7 +51,7 @@ Follow the steps as if you [create a trial environment](#create-a-trial-environm
 
 ## Explore the home page
 
-You can [access your Customer Insights environment](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
+You can [access audience insights from Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 The **Home** page shows an overview of segments, measures, and enrichment data (if configured)after completing the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
 
 > [!div class="mx-imgBorder"] 
@@ -75,3 +75,6 @@ Administrators can create and manage [multiple environments](manage-environments
 ## Next step
 
 To see your own insights on the home page, you'll first need to [add data sources](data-sources.md) and [unify](data-unification.md) your data to build customer profiles.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

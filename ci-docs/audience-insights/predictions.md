@@ -155,3 +155,6 @@ If you can't complete the attach Common Data Service process due to an error, yo
     1. Select the user you just created.
     1. Select **Manage Roles** in the top menu bar.
     1. Select **System Administrator**, then select **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
