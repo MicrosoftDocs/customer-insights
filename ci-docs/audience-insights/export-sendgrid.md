@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to SendGrid"
 description: "Learn how to configure the connection and export to SendGrid."
-ms.date: 12/08/2020
+ms.date: 03/03/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,11 +11,11 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Export segment lists to SendGrid (preview)
+# Export segments to SendGrid (preview)
 
 Export segments of unified customer profiles to SendGrid contact lists and use them for campaigns and email marketing in SendGrid. 
 
-## Prerequisites for connection
+## Prerequisites for a connection
 
 -	You have a [SendGrid account](https://sendgrid.com/) and corresponding administrator credentials.
 -	There are existing contact lists in SendGrid and the corresponding IDs. For more information, see [SendGrid - Manage contacts](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts).
@@ -29,13 +29,13 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 - Exporting up to 100'000 profiles to SendGrid can take up to a few hours to complete. 
 - The number of profiles that you can export to SendGrid is dependent and limited on your contract with SendGrid.
 
-## Setup connection to SendGrid
+## Set up connection to SendGrid
 
 1. Go to **Admin** > **Connections**.
 
 1. Select **Add connection** and choose **SendGrid** to configure the connection.
 
-1. Give your connection a recognizable name in the Display name field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connection.md#allow-contributors-to-use-a-connection-for-exports).
 
@@ -53,11 +53,11 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 
 You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
-1. Go to Data > Exports.
+1. Go to **Data** > **Exports**.
 
-1. To create a new export, select Add destination.
+1. To create a new export, select **Add destination**.
 
-1. In Connection for export choose a connection from the SendGrid section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the SendGrid section. If you don't see this section name, there are no connections of this type available to you.
 
 1. Enter your **[SendGrid list ID](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts)**.
 
