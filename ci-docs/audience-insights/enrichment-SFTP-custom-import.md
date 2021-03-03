@@ -102,3 +102,6 @@ You can access a detailed view of each enriched profile by selecting **View enri
 Build on top of your enriched customer data. Create [segments](segments.md), [measures](measures.md), and [export the data](export-destinations.md) to deliver personalized experiences to your customers.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
