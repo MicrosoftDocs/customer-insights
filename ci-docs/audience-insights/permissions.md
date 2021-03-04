@@ -38,7 +38,7 @@ There are three types of roles:
 - Create segments using the **Segments** page.
 - Create measures using the **Measures** page.
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for first party enrichments only).
-- Manage and create exports based on connections shared with contributor role. [Learn more about how administrators allow contributors to use a connection for exports](connection.md#allow-contributors-to-use-a-connection-for-exports)
+- Manage and create exports based on connections shared with contributor role. [Learn more about how administrators allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports)
 
 ## Administrator
 
