@@ -1,8 +1,7 @@
 ---
 title: "Export Customer Insights data to Google Ads"
 description: "Learn how to configure the connection and export to Google Ads."
-ms.date: 11/18/2020
-ms.reviewer: philk
+ms.date: 03/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -11,7 +10,7 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Export segment lists to Google Ads (preview)
+# Export segments to Google Ads (preview)
 
 Export segments of unified customer profiles to Google Ads audience list and use them to advertise on Google Search, Gmail, YouTube, and Google Display Network. 
 
@@ -29,13 +28,13 @@ Export segments of unified customer profiles to Google Ads audience list and use
 - Exporting segments with a total of 1 million profiles can take up to 5 minutes because of limitations on the provider side. 
 - The matching in Google Ads can take up to 48 hours.
 
-## Setup connection to Google Ads
+## Set up connection to Google Ads
 
 1. Go to **Admin** > **Connections**.
 
 1. Select **Add connection** and choose **Google Ads** to configure the connection.
 
-1. Give your connection a recognizable name in the Display name field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connection.md#allow-contributors-to-use-a-connection-for-exports).
 
@@ -55,11 +54,11 @@ Export segments of unified customer profiles to Google Ads audience list and use
 
 You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
-1. Go to Data > Exports.
+1. Go to **Data** > **Exports**.
 
-1. To create a new export, select Add destination.
+1. To create a new export, select **Add destination**.
 
-1. In Connection for export choose a connection from the Google Ads section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the Google Ads section. If you don't see this section name, there are no connections of this type available to you.
 
 1. Enter your **[Google Ads audience ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** and select **Connect** to initialize the connection to Google Ads.
 
@@ -71,7 +70,6 @@ Saving an export doesn't run the export immediately.
 
 The export runs with every [scheduled refresh](system.md#schedule-tab). 
 You can also [export data on demand](export-destinations.md#run-export-on-demand). 
-
 
 ## Data privacy and compliance
 
