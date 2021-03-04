@@ -26,7 +26,7 @@ There are three types of roles:
 - View and explore the **Enrichment** page.
 - Explore and export entities using the **Entities** page.
 - View the status of system processes  using the **System** page.
-- Export segments from the **Segments** page.
+- View exports in **Exports** page.
 - Install and use the **Power BI Customer Insights** dashboard.
 
 ## Contributor
@@ -38,6 +38,7 @@ There are three types of roles:
 - Create segments using the **Segments** page.
 - Create measures using the **Measures** page.
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for first party enrichments only).
+- Manage and create exports based on connections shared with contributor role. [Learn more about how administrators allow contributors to use a connection for exports](connection.md#allow-contributors-to-use-a-connection-for-exports)
 
 ## Administrator
 
@@ -45,8 +46,9 @@ There are three types of roles:
 - Change settings on the **System** page, including the working language and refresh schedules for your system processes.
 - View and add permissions using the **Permissions** page.
 - Set search and filter definitions for the Customers page using the **Search & filter index** page (accessible via the **Customers** page).
-- Define Dynamics 365 Sales segment destinations using the **Export destinations** page.
+- Manage connections and allow them for other user roles on **Connections** page.
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for all enrichments).
+- Manage and create any exports on **Exports** page.
 - Install and use the **Customer Card Add-in**.
 - Add and use the **Power Apps connector**.
 - Enable usage of [Customer Insights APIs](apis.md).
@@ -69,3 +71,6 @@ In audience insights, go to **Admin** > **Permissions** to see what role assignm
 - Roles are specified under the **Role** column.
 - Select any column title to sort the results by that column's value.
 - Use the **Search** field at the top of the page to locate specific users.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

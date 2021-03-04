@@ -86,3 +86,6 @@ You can use the following options on your insights from the command bar:
 - **Back** to return the list of insights
 - **Refresh** to run the analysis again
 - **Delete** to remove this insight
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

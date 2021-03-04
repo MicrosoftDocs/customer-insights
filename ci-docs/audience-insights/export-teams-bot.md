@@ -47,3 +47,6 @@ The bot provides lookup capabilities for unified customer profiles.
 - If your organization maintains multiple Customer Insights environments in the same organization, you can enter **switchinstance** to choose which environment you want to connect the bot to.
 
 - Enter **help** to see a list of available commands for the bot.  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -126,3 +126,6 @@ Brand and interest affinities can also be viewed on individual customer cards. G
 ## Next steps
 
 Build on top of your enriched customer data. Create [Segments](segments.md), [Measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
