@@ -56,3 +56,6 @@ As an [environment admin](user-roles.md), you can set up connections from all en
 
 To see the customer profiles report, go to **Reports** > **Profiles**. 
 For more information, see [Customer profile report](profile-reports.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
