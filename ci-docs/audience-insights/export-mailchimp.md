@@ -26,7 +26,7 @@ Export segments of unified customer profiles to Mailchimp to create newsletters 
 
 - Up to 1 million profiles per export to Mailchimp.
 - Exporting to Mailchimp is limited to segments.
-- Exporting segments with a total of 1 million profiles can take up to three hours due to limitations on the provider side. 
+- Exporting segments with 1 million profiles can take up to three hours. 
 - The number of profiles that you can export to Mailchimp is dependent and limited on your contract with Mailchimp.
 
 ## Set up connection to Mailchimp
@@ -63,7 +63,7 @@ You can configure this export if you have access to a connection of this type. F
 
 3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. 
 
-1. Optionally, you can export **First name** and **Last name** as additional fields to create more personalized emails. Select **Add attribute** to map these fields.
+1. Optionally, you can export **First name** and **Last name** to create more personalized emails. Select **Add attribute** to map these fields.
 
 1. Select the segments you want to export. You can export up to 1 million customer profiles in total to Mailchimp.
 
