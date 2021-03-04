@@ -29,7 +29,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 - Exporting segments with a total of 1 million profiles can take up to 3 hours. 
 - The number of profiles that you can export to Marketo is dependent and limited on your contract with Marketo.
 
-## Setup connection to Marketo
+## Set up connection to Marketo
 
 1. Go to **Admin** > **Connections**.
 
@@ -39,7 +39,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connection.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your **[Marketo client ID, Client secret and REST Endpoint Hostname](https://developers.marketo.com/rest-api/authentication/)**.
+1. Enter your **[Marketo client ID, Client secret, and REST Endpoint Hostname](https://developers.marketo.com/rest-api/authentication/)**.
 
 1. Select **I agree** to confirm the **Data privacy and compliance** and select **Connect** to initialize the connection to Marketo.
 
@@ -61,7 +61,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. 
 
-1. Optionally, you can export **First name**, **Last name**, **City**, **State**, and **Country/Region**  as additional fields to create more personalized emails. Select **Add attribute** to map these fields.
+1. Optionally, you can export **First name**, **Last name**, **City**, **State**, and **Country/Region**  to create more personalized emails. Select **Add attribute** to map these fields.
 
 1. Select the segments you want to export. You can export up to 1 million customer profiles in total to Marketo.
 
