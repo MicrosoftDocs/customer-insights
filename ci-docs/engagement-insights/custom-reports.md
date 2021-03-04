@@ -73,3 +73,6 @@ ms.manager: shellyha
 1. Choose **Delete** to remove the report.
 
 1. Confirm your deletion to remove the report permanently.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

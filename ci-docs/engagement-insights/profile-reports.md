@@ -35,3 +35,5 @@ After completing the connection, go to **Reports** > **Profiles** to see the rep
 The **Profiles** report contains visualizations about the gender, age, and geographical location of the connected customer profiles.
 
 :::image type="content" source="media/customer-profiles.png" alt-text="Customer profile report":::
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

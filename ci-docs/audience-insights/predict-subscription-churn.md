@@ -159,3 +159,6 @@ Predictions will automatically refresh on the same [schedule your data refreshes
 
 > [!NOTE]
 > Deleting a prediction will remove its output entity.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
