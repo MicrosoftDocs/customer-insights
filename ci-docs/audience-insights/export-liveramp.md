@@ -1,6 +1,6 @@
 ---
 title: "LiveRamp connector"
-description: "Learn how to configur the connection and the export to LiveRamp."
+description: "Learn how to configure the connection and the export to LiveRamp."
 ms.date: 03/03/2021
 ms.reviewer: kishorem
 ms.service: customer-insights
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Export segments to LiveRamp&reg; (preview)
 
-Activate your data in LiveRamp to connect with over 500 platforms across digital, social, and TV ecosystems. Work with your data in LiveRamp to target, suppress, and personalize ad campaigns.
+Activate your data in LiveRamp to connect with over 500 platforms across digital, social, and TVs. Work with your data in LiveRamp to target, suppress, and personalize ad campaigns.
 
 ## Prerequisites for a connection
 
@@ -50,10 +50,12 @@ You can configure this export if you have access to a connection of this type. F
 1. In the **Connection for export** field, choose a connection from the LiveRamp section. If you don't see this section name, there are no connections of this type available to you.
 
 1. In the **Choose your key identifier** field, select **Email**,  **Name and address**, or **Phone** to send to LiveRamp for identity resolution.
+   > [!div class="mx-imgBorder"]
+   > ![LiveRamp connector with attribute mapping](media/export-liveramp-segments.png "LiveRamp connector with attribute mapping")
 
 1. Map the corresponding attributes from your unified customer entity for the selected key identifier.
 
-1. Select **Add attribute** to map additional attributes to send to LiveRamp.
+1. Select **Add attribute** to map more attributes to send to LiveRamp.
 
    > [!TIP]
    > Sending more key identifier attributes to LiveRamp is likely to get you a higher match rate.
@@ -63,10 +65,6 @@ You can configure this export if you have access to a connection of this type. F
 1. Select **Save**.
 
 Saving an export doesn't run the export immediately.
-
-> [!div class="mx-imgBorder"]
-> ![LiveRamp connector with attribute mapping](media/export-liveramp-segments.png "LiveRamp connector with attribute mapping")
-
 
 The export runs with every [scheduled refresh](system.md#schedule-tab). 
 You can also [export data on demand](export-destinations.md#run-export-on-demand). 
