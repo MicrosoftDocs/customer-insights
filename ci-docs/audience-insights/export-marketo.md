@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Marketo"
 description: "Learn how to configure the connection and export to Marketo."
-ms.date: 11/12/2020
+ms.date: 03/03/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,7 +11,7 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Export segment lists to Marketo (preview)
+# Export segments to Marketo (preview)
 
 Export segments of unified customer profiles to generate campaigns, provide email marketing and use specific groups of customers with Marketo.
 
@@ -35,7 +35,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 1. Select **Add connection** and choose **Marketo** to configure the connection.
 
-1. Give your connection a recognizable name in the Display name field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connection.md#allow-contributors-to-use-a-connection-for-exports).
 
@@ -51,11 +51,11 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
-1. Go to Data > Exports.
+1. Go to **Data** > **Exports**.
 
-1. To create a new export, select Add destination.
+1. To create a new export, select **Add destination**.
 
-1. In Connection for export choose a connection from the Marketo section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the Marketo section. If you don't see this section name, there are no connections of this type available to you.
 
 1. Enter your **[Marketo list ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
 
