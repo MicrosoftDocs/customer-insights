@@ -72,7 +72,7 @@ After saving the export destination, you find it on **Admin** > **Exports** > **
 
 :::image type="content" source="media/export-destination-azure-blob-storage.png" alt-text="Screenshot with list of exports and sample segment highlighted.":::
 
-You can now [export the segment on demand](export-destinations.md#export-data-on-demand). The export will also run with every [scheduled refresh](system.md).
+You can now [export the segment on demand](export-destinations.md#run-export-on-demand). The export will also run with every [scheduled refresh](system.md).
 
 > [!NOTE]
 > Ensure that the number of records in the exported segment are within the allowed limit of your Adobe Campaign Standard license.
