@@ -136,3 +136,6 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
 
 1. The response will likely be of type `object` because the method can return multiple types (for example, `IList<InstanceInfo>` and `ApiErrorResult`). To check the return type, you can safely cast the objects into the response types specified on the [API details page](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) for that operation.    
    If more information on the request is needed, use the **http message methods** to access the raw response object.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

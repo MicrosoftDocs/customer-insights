@@ -75,3 +75,6 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
 3. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
 4. Select **Save** in Power Query after completing your edits to save your changes.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

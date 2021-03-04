@@ -158,3 +158,6 @@ For more information, see [Configure connections](configure-connections.md).
 To protect your customer's personal data, you can delete or export end user identifiable data.
 
 For more information, see [Delete and export event data containing personal information](delete-export-personal-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

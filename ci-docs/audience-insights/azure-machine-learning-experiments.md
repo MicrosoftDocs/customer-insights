@@ -92,3 +92,6 @@ You need to create datasets to use entity data from Customer Insights to your ba
       # datastore.upload(src_dir=<<working directory>>, target_path=directory_name, overwrite=False, show_progress=True)
       output_dataset = Dataset.File.upload_directory(src_dir=<<working directory>>, target = (datastore, directory_name)) # Remove trailing "/" from directory_name
    ```
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

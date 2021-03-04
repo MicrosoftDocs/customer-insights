@@ -65,3 +65,6 @@ Select **Back to Customers** to return to the customer search page.
 ## Next steps
 
 [Add more data sources](data-sources.md) or [create customer segments](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
