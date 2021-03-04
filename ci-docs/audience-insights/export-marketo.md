@@ -29,7 +29,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 - Exporting segments with a total of 1 million profiles can take up to 3 hours. 
 - The number of profiles that you can export to Marketo is dependent and limited on your contract with Marketo.
 
-## Setup connection to Marketo
+## Set up connection to Marketo
 
 1. Go to **Admin** > **Connections**.
 
