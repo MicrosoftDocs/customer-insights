@@ -31,7 +31,7 @@ This article guides you to access to the Customer Insights APIs, create an Azure
 
    :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs":::
 
-1. Select **Explore our APIs** to try out the APIs.
+1. Select **Explore our APIs** to [try out the APIs](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
 1. Choose an API operation and select **Try it**.
 
