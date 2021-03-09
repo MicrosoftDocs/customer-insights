@@ -34,13 +34,13 @@ The updates in February 2021 include several features, performance upgrades, and
 
 - **Export segments to AdRoll**
 
-  We have extended our export destinations to include AdRoll. You can now export segments from Customer Insights to AdRoll audiences and use them as the baseline for your advertising. For more infomation, see [Connector for AdRoll](export-adroll.md).
+  We have extended our export destinations to include AdRoll. You can now export segments from Customer Insights to AdRoll audiences and use them as the baseline for your advertising. For more information, see [Connector for AdRoll](export-adroll.md).
 
 #### Segments
  
 - **Duplicate a segment**
   
-  To create a new segment based on an existing one, you can now duplicate a segment and edi the duplicated segment to refine it further. 
+  To create a new segment based on an existing one, you can now duplicate a segment and edit the duplicated segment to refine it further. 
 
 - **Add additional attributes to a segment**
 
@@ -56,7 +56,7 @@ The updates in February 2021 include several features, performance upgrades, and
 
 #### System administration
 
-- **Copy enviornment support more types of data sources**
+- **Copy environment support more types of data sources**
 
   Admins can copy environment configurations to a new environment in the same organization. This feature extends the copy environment functionality for cases in which data sources based on a Common Data Service data lake or a Common Data Model folder are used.
 
