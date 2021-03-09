@@ -45,7 +45,7 @@ To configure SFTP custom import, the following prerequisites must be met:
 
 ## Defining field mappings 
 
-The directory that contains the file to be imported on the SFTP server must also contain a *model.json* file. This file defines the schema to use for importing the data. The schema has to use [the Common Data Model](https://docs.microsoft.com/common-data-model/) to specify the field mapping. A simple example of a model.json file looks like this:
+The directory that contains the file to be imported on the SFTP server must also contain a *model.json* file. This file defines the schema to use for importing the data. The schema has to use [the Common Data Model](/common-data-model/) to specify the field mapping. A simple example of a model.json file looks like this:
 
 ```
 {

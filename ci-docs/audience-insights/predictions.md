@@ -26,7 +26,7 @@ Predictions lets you easily create predicted values that can enhance your unders
 
 Before your organization can use the predictions feature, the following prerequisites must be met:
 
-1. Your organization has an instance [set up in the Common Data Service](https://docs.microsoft.com/ai-builder/build-model#prerequisites) and it's in the same organization as Customer Insights.
+1. Your organization has an instance [set up in the Common Data Service](/ai-builder/build-model#prerequisites) and it's in the same organization as Customer Insights.
 
 2. Your environment is attached to your Common Data Service instance.
 
@@ -115,7 +115,7 @@ After you've created a prediction, you can customize the model in the AI Builder
 
 4. Select **Customize in AI Builder**.
 
-5. Update your model in the AI Builder. [Learn more about managing models in the AI builder](https://docs.microsoft.com/ai-builder/manage-model#retrain-and-republish-existing-models).
+5. Update your model in the AI Builder. [Learn more about managing models in the AI builder](/ai-builder/manage-model#retrain-and-republish-existing-models).
 
 The next run of your prediction will use the updated model you've created.
 
