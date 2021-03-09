@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 02/02/2021
+ms.date: 03/08/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -25,6 +25,40 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## February 2021 updates
+
+The updates in February 2021 include several features, performance upgrades, and bug fixes.
+
+#### Extensibility
+
+- **Export segments to AdRoll**
+
+  We have extended our export destinations to include AdRoll. You can now export segments from Customer Insights to AdRoll audiences and use them as the baseline for your advertising. For more information, see [Connector for AdRoll](export-adroll.md).
+
+#### Segments
+ 
+- **Duplicate a segment**
+  
+  To create a new segment based on an existing one, you can now duplicate a segment and edit the duplicated segment to refine it further. 
+
+- **Add additional attributes to a segment**
+
+  You can now include attributes in your segment output, even if these attributes are not part of the customer profile. For example, include subscription IDs in a segment even though it is part of the subscription entity that has a M:1 relation with the customer entity. As long as the attribute belongs to an entity related to the customer entity you can now include these attributes.  
+
+#### Predictions
+
+- **Create predictive product recommendations**
+
+  Understanding what customers are interested in purchasing is one of the first steps needed to improve business revenue and build customer loyalty through personalization and engagement. Providing recommendations for products that aren’t aligned to your customer’s interests can create a sense of disconnect between the customer and your business, and ultimately limit the overall potential revenue and experience for a customer. 
+
+  Using your own data, you can now create predictions for what products your customers are likely to purchase in the future. For more information, see [Product recommendation prediction](predict-product-recommendation.md).
+
+#### System administration
+
+- **Copy environment support more types of data sources**
+
+  Admins can copy environment configurations to a new environment in the same organization. This feature extends the copy environment functionality for cases in which data sources based on a Common Data Service data lake or a Common Data Model folder are used.
 
 ## January 2021 updates
 
