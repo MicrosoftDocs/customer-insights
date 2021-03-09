@@ -152,8 +152,6 @@
               href: audience-insights/export-dynamics365-marketing.md
             - name: Dynamics 365 Sales
               href: audience-insights/export-dynamics365-sales.md
-            - name: Dynamics 365 Sales Hub (Add-in)
-              href: audience-insights/customer-card-add-in.md
             - name: Facebook Ads Manager
               href: audience-insights/export-facebook.md
             - name: Google Ads
