@@ -134,6 +134,10 @@
           href: audience-insights/export-destinations.md
         - name: AdRoll
           href: audience-insights/export-adroll.md
+        - name: Adobe Campaign Standard
+          href: audience-insights/export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: audience-insights/export-adobe-experience-platform.md
         - name: Autopilot
           href: audience-insights/export-autopilot.md
         - name: Azure Blob Storage
