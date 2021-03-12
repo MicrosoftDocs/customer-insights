@@ -47,7 +47,7 @@ With our target audience identified, we can configure the export from audience i
 
 1. In audience insights, go to **Admin** > **Export destinations**.
 
-1. In the **Azure Blob Storage** tile, select **Set up**.
+1. In the **Adobe Campaign** tile, select **Set up**.
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Configuration tile for Adobe Campaign Standard.":::
 
