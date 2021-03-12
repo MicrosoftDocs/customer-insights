@@ -11,7 +11,7 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Create a segment based on a prediction model
+# Create a segment based on a prediction model (preview)
 
 The results of product recommendations, predicted customer churn, or predicted customer lifetime value can sometimes only apply to a subset of your customers. For example, identify customers that prefer a certain type of service and deliver specific recommendations to them. By creating segments based on model results, you can increase the personalization in the recommendations to your customers.
 
