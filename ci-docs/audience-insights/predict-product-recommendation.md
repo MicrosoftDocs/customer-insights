@@ -90,7 +90,32 @@ If you're interested in trying this feature but don't have data to complete the 
 
 1. Select **Next**.
 
-### Set schedule and review configuration
+### Configure product filters
+
+Sometimes, only certain products are beneficial or appropriate for the type of prediction you build. Product filters let you identify a subset of products with specific characteristics to recommend to your customers. This may increase the personalization of the recommendations to your customers. The model will use all the products available to learn patterns but only use the products matching the product filter in its output.
+
+1. In the **Product filters** step, choose between the following options.
+
+   * **No filters**: Use all products in the product recommendation prediction.
+
+   * **Define specific product filters**: Use specific products in the product recommendation prediction.
+
+1. Select **Next**.
+
+     [Product_Filter.png]
+
+1. If you choose to define a product filter, you need to define it now. In the **Product catalog attributes** pane, select the the attributes from your *Product Catalog entity* that you want include in the filter.
+
+<!-- please introduce the product catalog entity in the setup above and also list it as an optional data prerequisite-->
+
+   [Product_Filter_sidepanel.png]
+
+3. Choose if you want the product filter to use **and** or **or** connectors to logically combine your selection of attributes from product catalog.
+   [Product_Filter_And_Or.png]
+
+4. Select **Next**.
+
+### Set update schedule and review configuration
 
 1. Set a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is imported into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
