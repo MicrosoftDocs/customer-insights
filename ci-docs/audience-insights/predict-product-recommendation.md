@@ -102,18 +102,17 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
 
 1. Select **Next**.
 
-     [Product_Filter.png]
-
 1. If you choose to define a product filter, you need to define it now. In the **Product catalog attributes** pane, select the the attributes from your *Product Catalog entity* that you want include in the filter.
 
 <!-- please introduce the product catalog entity in the setup above and also list it as an optional data prerequisite-->
 
-   [Product_Filter_sidepanel.png]
+   :::image type="content" source="media/product-filters-sidepane.png" alt-text="Side pane showing attributed in the product catalog entity to select for product filters.":::
 
-3. Choose if you want the product filter to use **and** or **or** connectors to logically combine your selection of attributes from product catalog.
-   [Product_Filter_And_Or.png]
+1. Choose if you want the product filter to use **and** or **or** connectors to logically combine your selection of attributes from product catalog.
+   
+   :::image type="content" source="media/product-filters-sample.png" alt-text="Sample configuration of product filters combined with logical AND connectors.":::
 
-4. Select **Next**.
+1. Select **Next**.
 
 ### Set update schedule and review configuration
 
