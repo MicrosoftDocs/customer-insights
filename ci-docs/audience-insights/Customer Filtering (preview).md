@@ -1,3 +1,16 @@
+---
+title: Segments based on prediction output
+description: "Create a segments based on the output entity of a prediction model."
+ms.date: 03/12/2021
+ms.reviewer: zacook
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: how-to
+author: m-hartmann
+ms.author: mhart
+manager: shellyha
+---
+
 # Create a segment based on a prediction model
 
 The results of product recommendations, predicted customer churn, or predicted customer lifetime value can sometimes only apply to a subset of your customers. For example, identify customers that prefer a certain type of service and deliver specific recommendations to them. By creating segments based on model results, you can increase the personalization in the recommendations to your customers.
