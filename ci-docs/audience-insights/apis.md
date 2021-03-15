@@ -2,12 +2,12 @@
 title: Work with APIs
 description: Use APIs and understand limitations.
 ms.date: 12/04/2020
-ms.reviewer: wimohabb
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
+ms.author: wimohabb
 manager: shellyha
 ---
 

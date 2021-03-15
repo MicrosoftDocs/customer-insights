@@ -2,12 +2,12 @@
 title: "Export Customer Insights data to Mailchimp"
 description: "Learn how to configure the connection to Mailchimp."
 ms.date: 10/26/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
 ---
 
