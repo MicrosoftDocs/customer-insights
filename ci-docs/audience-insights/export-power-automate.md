@@ -29,7 +29,7 @@ Use triggers to create cloud flows and automate repetitive tasks, such as notifi
 [Configure your triggers in Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).
 
 ## Power Automate actions
-The Power Automate connector provides other actions than the available triggers. For more information, see the [Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).
+The Power Automate connector provides other actions than the available triggers. For more information, see the [Dynamics 365 Customer Insights Connector](/connectors/customerinsights/).
 
 ## Create a Power Automate flow
 
@@ -39,7 +39,7 @@ The Power Automate connector provides other actions than the available triggers.
 
 1. The Customer Insights Connector (preview) in Power Automate opens. **Sign in** to Power Automate.
 
-1. Choose one of the available triggers and add more steps to your new flow. For more information, see [Create a cloud flow in Power Automate](https://docs.microsoft.com/power-automate/get-started-logic-flow).
+1. Choose one of the available triggers and add more steps to your new flow. For more information, see [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow).
 
 Examples how to use flows: 
 - Post a message to a Microsoft Teams channel if a data source refresh fails. 

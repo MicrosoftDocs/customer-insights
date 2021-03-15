@@ -72,7 +72,7 @@ If a property value matches one of the provided IDs, the associated event will b
 
 #### Export
 
-The export process is identical to the deletion process when it comes to defining event property values in the **Export end user identifiable information (EUII)** section. Additionally, you'll need to provide an **Azure blob storage URL** to specify the export destination. The Azure Blob URL must include a [Shared Access Signature (SAS)](https://docs.microsoft.com/azure/storage/common/storage-sas-overview).
+The export process is identical to the deletion process when it comes to defining event property values in the **Export end user identifiable information (EUII)** section. Additionally, you'll need to provide an **Azure blob storage URL** to specify the export destination. The Azure Blob URL must include a [Shared Access Signature (SAS)](/azure/storage/common/storage-sas-overview).
 
 After selecting **Export**, all events of the current team that contain matching tagged properties will be exported in CSV format to the export destination.
 

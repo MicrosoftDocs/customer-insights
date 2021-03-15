@@ -28,7 +28,7 @@ To configure interest affinities enrichment, go to the **Discover** tab and sele
 
 We use online search data from the Microsoft Graph to find affinities for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest determines how much affinity a demographic segment, compared to other segments, has to that brand or interest.
 
-[Learn more about Microsoft Graph](https://docs.microsoft.com/graph/overview).
+[Learn more about Microsoft Graph](/graph/overview).
 
 ## Affinity level and score
 

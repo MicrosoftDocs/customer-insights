@@ -22,8 +22,8 @@ Store your Customer Insights data in an Azure Blob storage or use it to transfer
 1. Under **Azure Blob Storage**, select **Set up**.
 
 1. Enter **Account name**, **Account key**, and **Container** for your Azure Blob storage account.
-    - To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](https://docs.microsoft.com/azure/storage/common/storage-account-manage).
-    - To learn how to create a container, see [Create a container](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+    - To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
+    - To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 1. Give your destination a recognizable name in the **Display name** field.
 
