@@ -2,12 +2,12 @@
 title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
 ms.date: 11/02/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
 ---
 

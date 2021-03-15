@@ -2,12 +2,12 @@
 title: "Export destinations"
 description: "Export data and manage export destinations."
 ms.date: 07/21/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
 ---
 

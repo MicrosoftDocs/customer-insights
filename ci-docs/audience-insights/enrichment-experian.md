@@ -2,12 +2,12 @@
 title: "Enrichment with the third-party enrichment Experian"
 description: "General information about the Experian third-party enrichment."
 ms.date: 12/10/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-ms
+ms.author: kishorem
 manager: shellyha
 ---
 

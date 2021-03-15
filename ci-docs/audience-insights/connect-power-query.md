@@ -2,12 +2,12 @@
 title: "Ingest data through a Power Query connector"
 description: "Connectors for data sources based on Power Query."
 ms.date: 09/29/2020
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ---
 

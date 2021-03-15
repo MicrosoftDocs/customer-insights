@@ -5,10 +5,10 @@ ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ---
 
 # Connect to data in a Common Data Service managed data lake

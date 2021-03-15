@@ -2,12 +2,12 @@
 title: "Export Customer Insights data to AdRoll"
 description: "Learn how to configure the connection to AdRoll."
 ms.date: 02/15/2021
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: pkieffer
+ms.author: philk
 manager: shellyha
 ---
 

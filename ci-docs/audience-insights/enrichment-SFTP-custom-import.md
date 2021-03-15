@@ -2,12 +2,12 @@
 title: Enrichment with SFTP custom import
 description: General information about the SFTP custom import enrichment.
 ms.date: 11/18/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: jdahl
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
 ---
 
