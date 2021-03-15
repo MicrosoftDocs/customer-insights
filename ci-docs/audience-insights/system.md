@@ -5,9 +5,9 @@ ms.date: 02/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: nimagen
+author: NimrodMagen
+ms.author: nimagen
+ms.reviewer: mhart
 manager: shellyha
 ---
 

@@ -5,7 +5,7 @@ ms.date: 05/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author:adkuppa
+author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
