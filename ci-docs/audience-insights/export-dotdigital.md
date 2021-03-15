@@ -2,12 +2,12 @@
 title: "Export Customer Insights data to DotDigital"
 description: "Learn how to configure the connection to DotDigital."
 ms.date: 11/14/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
 ---
 

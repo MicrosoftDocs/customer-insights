@@ -2,12 +2,12 @@
 title: "Audience insights for Dynamics 365 Customer Insights overview"
 description: "Overview of audience insights for Dynamics 365 Customer Insights."
 ms.date: 01/18/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
 ---
 

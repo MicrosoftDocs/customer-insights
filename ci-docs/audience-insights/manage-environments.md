@@ -5,9 +5,9 @@ ms.date: 02/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-ms.reviewer: nimagen
-author: m-hartmann
-ms.author: mhart
+ms.reviewer: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
 ---
 

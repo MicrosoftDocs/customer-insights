@@ -2,12 +2,12 @@
 title: "Export Customer Insights data to SFTP hosts"
 description: "Learn how to configure the connection to an SFTP host."
 ms.date: 01/27/2021
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
 ---
 

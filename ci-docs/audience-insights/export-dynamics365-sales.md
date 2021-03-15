@@ -2,12 +2,12 @@
 title: "Export Customer Insights data to Dynamics 365 Sales"
 description: "Learn how to configure the connection to Dynamics 365 Sales."
 ms.date: 02/01/2021
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
 ---
 

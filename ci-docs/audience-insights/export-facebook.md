@@ -2,12 +2,12 @@
 title: "Export Customer Insights data to Facebook Ads Manager"
 description: "Learn how to configure the connection to Facebook Ads Manager."
 ms.date: 06/05/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
 ---
 
