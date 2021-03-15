@@ -2,12 +2,12 @@
 title: "Manage user permissions"
 description: "Learn about permissions and user roles."
 ms.date: 10/27/2020
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
 ---
 

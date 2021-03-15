@@ -2,12 +2,12 @@
 title: "Machine learning powered suggested segments"
 description: "Let machine learning help you find new and interesting segments based on customer attributes."
 ms.date: 02/01/2021
-ms.reviewer: jimsonc
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: JimsonChalissery
+ms.author: jimsonc
 manager: shellyha
 ---
 

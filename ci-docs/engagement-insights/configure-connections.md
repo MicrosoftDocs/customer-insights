@@ -38,7 +38,7 @@ As an [environment admin](user-roles.md), you can set up connections from all en
 1. If it's your first connection, select **Create a connection**. To create more connections, select **Add a connection**.
    :::image type="content" source="media/create-connection.png" alt-text="Create a new connection to Customer Insights":::
 
-1. Provide the settings to your audience insights Azure Data Lake Storage Gen2. For more information about storage accounts, see [Create and manage storage accounts](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account).
+1. Provide the settings to your audience insights Azure Data Lake Storage Gen2. For more information about storage accounts, see [Create and manage storage accounts](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
    - **ADLS gen2 storage account**: Provide the storage account name. For example, my-storage-account.
    - **Shared Key**: The access key to authenticate your applications. The can be found in Azure portal under **Access keys** in the storage account settings.
    - **Audience insights Environment ID**:  The audience insights environment ID. You can find the ID in audience insights, under **Settings** > **About**.

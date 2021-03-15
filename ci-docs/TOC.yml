@@ -29,14 +29,14 @@
     - name: Learn modules
       items:
         - name: Ingest data
-          href: https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/
+          href: /learn/modules/ingest-data-customer-insights/
         - name: Create a unified customer profile
-          href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+          href: /learn/modules/unified-customer-profile/
         - name: Work with the app
-          href: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+          href: /learn/modules/working-with-customer-insights/
 
         - name: Enrich data and predictions
-          href: https://docs.microsoft.com/learn/modules/enrich-data/
+          href: /learn/modules/enrich-data/
          
 
     - name: Data sources
@@ -181,9 +181,6 @@
               href: audience-insights/export-power-automate.md
             - name: Power BI
               href: audience-insights/export-power-bi.md
-
-
-
 
     - name: Administration
       items:

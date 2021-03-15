@@ -2,12 +2,12 @@
 title: "Export Customer Insights data to Azure Data Lake Storage Gen2"
 description: "Learn how to configure the connection to Azure Data Lake Storage Gen2."
 ms.date: 03/03/2021
-ms.reviewer: sthe
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
 ---
 
@@ -22,8 +22,8 @@ manager: shellyha
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter **Account name**, **Account key**, and **Container** for your Azure Data Lake Storage Gen2.
-    - To learn how to create a storage account to use with Azure Data Lake Storage Gen2, see [Create storage account](https://docs.microsoft.com/azure/storage/blobs/create-data-lake-storage-account). 
-    - To learn more about Azure Data Lake Gen2 storage account name and account key, see [Manage storage account settings in the Azure portal](https://docs.microsoft.com/azure/storage/common/storage-account-manage).
+    - To learn how to create a storage account to use with Azure Data Lake Storage Gen2, see [Create storage account](/azure/storage/blobs/create-data-lake-storage-account). 
+    - To learn more about Azure Data Lake Gen2 storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
 
 1. Select **Save** to complete the connection. 
 

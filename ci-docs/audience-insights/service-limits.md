@@ -5,9 +5,9 @@ ms.date: 10/15/2020
 ms.service: customer-insights
 ms.subservice: audience-insights 
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: jimsonc
+author: JimsonChalissery
+ms.author: jimsonc
+ms.reviewer: mhart
 manager: shellyha
 ---
 

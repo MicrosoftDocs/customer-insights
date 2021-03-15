@@ -6,8 +6,8 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: ameetj
+ms.author: ameetj
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -32,7 +32,7 @@ In a first step, we need to create a workspace for and open the Machine Learning
 
 1. Search **Machine Learning Studio Workspace** and select **Create**.
 
-1. Enter the required details to [create the workspace](https://docs.microsoft.com/azure/machine-learning/studio/create-workspace). Choose the **Web service plan pricing tier** based on the amount of data you plan to import. For best performance, select the **Location** that is geographically closest to you.
+1. Enter the required details to [create the workspace](/azure/machine-learning/studio/create-workspace). Choose the **Web service plan pricing tier** based on the amount of data you plan to import. For best performance, select the **Location** that is geographically closest to you.
 
 1. After creating the resource, the Machine Learning Studio workspace dashboard will appear. Select **Launch Machine Learning Studio**.
 
@@ -60,7 +60,7 @@ You can now create a new experiment, or import an existing experiment template f
 
    ![Set up a predictive web service](media/predictive-webservice-control.png)
 
-1. Once the predictive web service experiment is successful, you can deploy it for auto scheduling. To have the web service work with Customer Insights, select **Deploy Web Service** > **Deploy Web Service [New] Preview**. [Learn more about deploying a web service](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
+1. Once the predictive web service experiment is successful, you can deploy it for auto scheduling. To have the web service work with Customer Insights, select **Deploy Web Service** > **Deploy Web Service [New] Preview**. [Learn more about deploying a web service](/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
 
    ![Deploy a predictive web service](media/predictive-webservice-deploy.png)
 
@@ -111,7 +111,7 @@ The following image shows the model training and evaluation pipeline from Azure 
 
 ![Churn model in Azure Machine Learning Studio](media/azure-machine-learning-model.png)
 
-We also apply a technique called **Permutation Feature Importance**, an important aspect of model optimization. Built-in models have little to no insight into the impact of any specific feature on the final prediction. The feature importance calculator uses a custom algorithm to compute the influence of individual features on the outcome for a specific model. The feature importance is normalized between +1 to -1. A negative influence means the corresponding feature has counter-intuitive influence on the outcome and should be removed from the model. A positive influence indicates the feature is contributing heavily towards the prediction. These values aren't correlation coefficients as they are different metrics. For more information, see [Permutation Feature Importance](https://docs.microsoft.com/azure/machine-learning/studio-module-reference/permutation-feature-importance).
+We also apply a technique called **Permutation Feature Importance**, an important aspect of model optimization. Built-in models have little to no insight into the impact of any specific feature on the final prediction. The feature importance calculator uses a custom algorithm to compute the influence of individual features on the outcome for a specific model. The feature importance is normalized between +1 to -1. A negative influence means the corresponding feature has counter-intuitive influence on the outcome and should be removed from the model. A positive influence indicates the feature is contributing heavily towards the prediction. These values aren't correlation coefficients as they are different metrics. For more information, see [Permutation Feature Importance](/azure/machine-learning/studio-module-reference/permutation-feature-importance).
 
 The entire [churn experiment is available in the Azure AI Gallery](https://gallery.azure.ai/Experiment/Hotel-Churn-Predictive-Exp).
 
@@ -163,7 +163,7 @@ The entire [product recommendation experiment can be accessed in Azure AI Galle
 
 ## Integrate custom models
 
-To use these predictions in Customer Insights, you need to **export** the predictions along with the customer IDs. [Export them to the same Azure Blob storage location](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs) that you export the source data to. The predictive web service can be scheduled to run regularly and update the scores.
+To use these predictions in Customer Insights, you need to **export** the predictions along with the customer IDs. [Export them to the same Azure Blob storage location](/azure/storage/common/storage-import-export-data-from-blobs) that you export the source data to. The predictive web service can be scheduled to run regularly and update the scores.
 
 Data generated by the custom model can be used to further enrich your customer data. For more information, see [Custom machine learning models](custom-models.md).
 

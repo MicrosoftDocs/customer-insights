@@ -2,12 +2,12 @@
 title: "Export Customer Insights data to Autopilot"
 description: "Learn how to configure the connection and export to Autopilot."
 ms.date: 03/03/2021
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: pkieffer
+ms.author: philk
 manager: shellyha
 ---
 

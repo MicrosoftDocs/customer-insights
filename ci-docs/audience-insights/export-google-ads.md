@@ -5,8 +5,9 @@ ms.date: 03/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
 ---
 

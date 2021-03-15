@@ -2,12 +2,12 @@
 title: "LiveRamp connector"
 description: "Learn how to configure the connection and the export to LiveRamp."
 ms.date: 03/03/2021
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-ms
+ms.author: kishorem
 manager: shellyha
 ---
 

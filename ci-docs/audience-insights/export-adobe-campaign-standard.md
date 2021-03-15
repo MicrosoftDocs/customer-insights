@@ -2,12 +2,12 @@
 title: "Export Customer Insights data to Adobe Campaign Standard"
 description: "Learn how use audience insights segments in Adobe Campaign Standard."
 ms.date: 02/26/2021
-ms.reviewer: antando
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: stefanie-msft
+ms.author: antando
 manager: shellyha
 ---
 
@@ -47,7 +47,7 @@ With our target audience identified, we can configure the export from audience i
 
 1. In audience insights, go to **Admin** > **Export destinations**.
 
-1. In the **Azure Blob Storage** tile, select **Set up**.
+1. In the **Adobe Campaign** tile, select **Set up**.
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Configuration tile for Adobe Campaign Standard.":::
 
@@ -55,9 +55,9 @@ With our target audience identified, we can configure the export from audience i
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration. "::: 
 
-   - To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](https://docs.microsoft.com/azure/storage/common/storage-account-manage).
+   - To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
 
-   - To learn how to create a container, see [Create a container](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+   - To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 1. Select **Next**.
 

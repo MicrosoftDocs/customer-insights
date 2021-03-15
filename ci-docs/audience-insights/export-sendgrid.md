@@ -2,12 +2,12 @@
 title: "Export Customer Insights data to SendGrid"
 description: "Learn how to configure the connection and export to SendGrid."
 ms.date: 03/03/2021
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+ms.topic: how-to
+author: phkieffer
+ms.author: philk
 manager: shellyha
 ---
 
