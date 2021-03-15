@@ -81,7 +81,7 @@ After selecting **Export**, all events of the current team that contain matching
 * Try to avoid sending any events that contain personal data.
 * If you need to send events containing EUII data, limit the number of events and event properties that contain EUII data. Ideally, limit yourself to one such event.
 * Make sure that as few people as possible have access to the sent personal data.
-* For events containing persional data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example, a user ID). This makes it easier to segregate data and to export or delete the right data.
+* For events containing personal data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example, a user ID). This makes it easier to segregate data and to export or delete the right data.
 * Only tag one property per event as containing personal data. Ideally one that only contains a unique identifier.
 * Do not tag properties containing verbose values (for example, an entire request body). Engagement insights capability uses exact string matching when deciding which events to delete or export.
 
