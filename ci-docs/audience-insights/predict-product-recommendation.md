@@ -94,7 +94,9 @@ If you're interested in trying this feature but don't have data to complete the 
 
 Sometimes, only certain products are beneficial or appropriate for the type of prediction you build. Product filters let you identify a subset of products with specific characteristics to recommend to your customers. This may increase the personalization of the recommendations to your customers. The model will use all the products available to learn patterns but only use the products matching the product filter in its output.
 
-1. In the **Product filters** step, choose between the following options.
+1. In the **Add product information** step, add your product catalog with information for each product. Map the information required in select **Next**.
+
+3. In the **Product filters** step, choose between the following options.
 
    * **No filters**: Use all products in the product recommendation prediction.
 
