@@ -1,7 +1,7 @@
 ---
 title: "Export logs from Dynamics 365 Customer Insights | Microsoft Docs"
 description: "Learn how to export logs to Microsoft Azure Monitor."
-ms.date: 10/02/2020
+ms.date: 16/03/2021
 ms.reviewer: mhart
 ms.service: dynamics-365-ai
 ms.topic: "article"
@@ -23,7 +23,7 @@ To configure the diagnostic setup in Customer Insights, the following prerequisi
 - You have an active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - You have [Administrator](permissions.md#administrator) permissions in Customer Insights.
 - You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can either be an Azure Storage account or Azure Event Hub. For more information, see [Add or remove Azure role assignments using the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
-- Ensure that the [Destination requirements](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage or Azure Event Hub are met.
+- Ensure that the [Destination requirements](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage or Azure Event Hub are met.
 - You have at least the **Reader** role on the resource group the resource belongs to.
 
   > [!Warning]
@@ -192,7 +192,7 @@ Workflow events have following properties.
 | `properties.workflowJobId`                   | Yes      | Yes  | Identifier of the workflow run. All Workflow and Tasks events within the workflow execution have the same `workflowJobId`.                                                                                                                               | Completed events and all Tasks Started | Completed events executed in the workflow have the same `workflowJobId` |
 | `properties.operationType`                   | Yes      | Yes  | Identifier of the operation, see [Operation Types](#operation-types)                                                                                                                                                                                     |
 | `properties.tasksCount`                      | Yes      | No   | Workflow only. Number of tasks the Workflow triggers                                                                                                                                                                                                     |
-| `properties.submittedBy`                     | Yes      | No   | Optional. Workflow events only. The Azure Active Directory [objectId of the user](https://docs.microsoft.com/en-us/azure/marketplace/find-tenant-object-id#find-user-object-id) who triggered the workflow, see also `properties.workflowSubmissionKind` |
+| `properties.submittedBy`                     | Yes      | No   | Optional. Workflow events only. The Azure Active Directory [objectId of the user](https://docs.microsoft.com/azure/marketplace/find-tenant-object-id#find-user-object-id) who triggered the workflow, see also `properties.workflowSubmissionKind` |
 | `properties.workflowType`                    | Yes      | No   | `full` or `incremental` refresh                                                                                                                                                                                                                          |
 | `properties.workflowSubmissionKind`          | Yes      | No   | `OnDemand` or `Scheduled`                                                                                                                                                                                                                                |
 | `properties.workflowStatus`                  | Yes      | No   | `Running`, `Successful`                                                                                                                                                                                                                                  |
