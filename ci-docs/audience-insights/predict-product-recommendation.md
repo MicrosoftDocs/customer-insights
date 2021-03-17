@@ -145,10 +145,10 @@ If you're interested in trying this feature but don't have data to complete the 
         - **Customer similarity**: A recommended product was historically purchased by other customers who show similar purchase patterns. For example, John was recommended _Surface Headphones 2_ because Jennifer and Brad recently purchased _Surface Headphones 2_. The model believes John is similar to Jennifer and Brad because they have historically had similar purchase patterns.
         - **Product similarity**: A recommended product is similar to other products that the customer had previously purchased. The model considers two products to be similar if they were bought together or by similar customers. For example, someone gets a recommendation for a _USB Storage Drive_ because they previously purchased a _USB-C to USB Adapter_ and the model believes that _USB Storage Drive_ is similar to _USB-C to USB Adapter_ based on historical purchase patterns.
 
-      Every product recommendation is influenced by one or more of these factors. The percentage of recommendations where each influencing factor played a role is visualized in a chart. In the following example, 100% of the recommendations were influenced by past transactions, 60% by customer similarity and 22% by product similarity. Hover the bars in the chart to see the exact percentage where the influencing factors contributed.
+        Every product recommendation is influenced by one or more of these factors. The percentage of recommendations where each influencing factor played a role is visualized in a chart. In the following example, 100% of the recommendations were influenced by past transactions, 60% by customer similarity and 22% by product similarity. Hover the bars in the chart to see the exact percentage where the influencing factors contributed.
 
-      > [!div class="mx-imgBorder"]
-      > ![Key recommendation factors](media/product-recommendation-keyrecommendationfactors.png "Key recommendation factors learned by the model to generate product recommendations")
+        > [!div class="mx-imgBorder"]
+        > ![Key recommendation factors](media/product-recommendation-keyrecommendationfactors.png "Key recommendation factors learned by the model to generate product recommendations")
        
      
    1. **Data statistics**: Gives an overview of the number of transactions, customers, and products the model considered. It's based on the input data that was used to learn patterns and generate product recommendations.
