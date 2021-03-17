@@ -1,7 +1,7 @@
 ---
 title: "Product recommendation prediction"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 02/15/2021
+ms.date: 03/17/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -139,23 +139,22 @@ If you're interested in trying this feature but don't have data to complete the 
        > [!div class="mx-imgBorder"]
        > ![Graph showing the top 5 most recommended products](media/product-recommendation-topproducts.PNG "Graph showing the top 5 most recommended products")
     
-    1. **Key Recommendation Factors:** The AI model uses customer transaction history to make product recommendations. It learns patterns based on past purchases and implicitly finds similarities between customers and similarities between products, which it then utilizes to inform product recommendations.
-We break down what the AI model learned and utilized to generate recommendations, into three influencing factors: _past transactions, customer similarity_ and _product similarity_.
-        - **Past transactions** : A recommendation is influenced by past transactions if the customer&#39;s past purchase patterns were utilized by the model to generate the recommendation. Eg – John was recommended a _Surface Arc Mouse_ by the model as he recently purchased a _Surface Book 3_ and a _Surface Pen_. The model learned that historically, many customers had purchased a _Surface Arc Mouse_ after purchasing a _Surface Book 3_ and a _Surface Pen_.
-        - **Customer similarity** : A recommendation is influenced by customer similarity if the recommended product was historically purchased by other customers similar to the customer for whom the recommendation was made. The model considers two customers to be similar if they have very similar purchase patterns. Eg – John was recommended _Surface Headphones 2_ because Jennifer and Brad recently purchased _Surface Headphones 2_. The model believes John is similar to Jennifer and Brad as all of them have historically had very similar purchase patterns.
-        - **Product similarity** : A recommendation is influenced by product similarity if the recommended product was similar to other products that the customer had previously purchased. The model considers two products to be similar if they were bought together or by similar customers. Eg – John was recommended a _USB Storage Drive_ as he previously purchased a _Surface USB-C to USB Adapter_ and the model believes that _USB Storage Drive_ is similar to _Surface USB-C to USB Adapter_ based on historical purchase patterns.
+    1. **Key recommendation factors:** The model uses the customers' transaction history to make product recommendations. It learns patterns based on past purchases and finds similarities between customers products. It uses the similarities for product recommendations.
+    The following are the three influencing factors. 
+        - **Past transactions**: Purchase patterns in the past were utilized by the model to generate product recommendations. For example, the model can recommend a _Surface Arc Mouse_ if someone recently purchased a _Surface Book 3_ and a _Surface Pen_. The model learned that historically, many customers had purchased a _Surface Arc Mouse_ after purchasing a _Surface Book 3_ and a _Surface Pen_.
+        - **Customer similarity**: A recommended product was historically purchased by other customers who show similar purchase patterns. For example, John was recommended _Surface Headphones 2_ because Jennifer and Brad recently purchased _Surface Headphones 2_. The model believes John is similar to Jennifer and Brad because they have historically had very similar purchase patterns.
+        - **Product similarity**: A recommended product is similar to other products that the customer had previously purchased. The model considers two products to be similar if they were bought together or by similar customers. For example, someone gets a recommendation for a _USB Storage Drive_ because they previously purchased a _USB-C to USB Adapter_ and the model believes that _USB Storage Drive_ is similar to _USB-C to USB Adapter_ based on historical purchase patterns.
 
-Every product recommendation could be influenced by one or all three of these factors. The percentage of recommendations where each influencing factor played a role is highlighted as shown below. Eg – In the screenshot, 100% of the recommendations were influenced by past transactions, 60% by customer similarity and 22% by product similarity. On hovering over the horizontal bars, you will see the exact percentage of total recommendations where each of the influencing factors contributed.
+      Every product recommendation is influenced by one or more of these factors. The percentage of recommendations where each influencing factor played a role is viualized in a chart. In the follwing example, 100% of the recommendations were influenced by past transactions, 60% by customer similarity and 22% by product similarity. Hover the bars in the chart to see the exact percentage where the influencing factors contributed.
 
-   > [!div class="mx-imgBorder"]
-       > ![Key recommendation factors](media/product-recommendation-keyrecommendationfactors.png "Key recommendation factors learned by the model to generate product recommendations")
+      > [!div class="mx-imgBorder"]
+      > ![Key recommendation factors](media/product-recommendation-keyrecommendationfactors.png "Key recommendation factors learned by the model to generate product recommendations")
        
-This will help you understand how the model generated the product recommendations by highlighting the major factors that the model learned and to what degree those influencing factors contributed towards the model&#39;s recommendations.
+     
+   1. **Data statistics** : An overview of the number of transactions, customers and products considered by the model (based on the input data) to learn patterns to generate the product recommendations.
 
-   1. **Data Statistics** : An overview of the number of transactions, customers and products considered by the model (based on the input data) to learn patterns to generate the product recommendations.
-
-   > [!div class="mx-imgBorder"]
-       > ![Data statistics](media/product-recommendation-datastatistics.png "Data statistics around inout data used by the model to learn patterns")
+      > [!div class="mx-imgBorder"]
+      > ![Data statistics](media/product-recommendation-datastatistics.png "Data statistics around inout data used by the model to learn patterns")
 
 This card displays statistics around the data points that were used by the model to learn patterns to generate product recommendations. Any filtering applied during the model configuration will apply on the outputs generated by the model as necessary, however, the model will always utilize all the input data provided to it to learn patterns. For instance, if you use product filtering in the model configuration, this card will display the number of products that the model analyzed to learn patterns, which might differ from the number of products in your filtering criteria.
 
