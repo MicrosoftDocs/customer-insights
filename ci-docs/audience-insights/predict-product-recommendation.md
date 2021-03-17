@@ -147,6 +147,9 @@ We break down what the AI model learned and utilized to generate recommendations
 
 Every product recommendation could be influenced by one or all three of these factors. The percentage of recommendations where each influencing factor played a role is highlighted as shown below. Eg – In the screenshot, 100% of the recommendations were influenced by past transactions, 60% by customer similarity and 22% by product similarity. On hovering over the horizontal bars, you will see the exact percentage of total recommendations where each of the influencing factors contributed.
 
+> [!div class="mx-imgBorder"]
+    > > ![Key recommendation factors](media/product-recommendation-keyrecommendationfactors.PNG "Key recommendation factors learned by the product recommendations model")
+
 This will help you understand how the model generated the product recommendations by highlighting the major factors that the model learned and to what degree those influencing factors contributed towards the model&#39;s recommendations.
 
     1. **Data Statistics** : An overview of the number of transactions, customers and products considered by the model (based on the input data) to learn patterns to generate the product recommendations.
