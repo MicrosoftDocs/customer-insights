@@ -20,11 +20,11 @@ You can now use your Customer Insights data within Azure Synapse Analytics.
 To configure the connection from Customer Insights to Azure Synapse Analytics and use your Customer Insights data within Azure Synapse Analytics, the following reprequisites must be met:
 
   > [!NOTE]
-  > Using Customer Insihts data in Azure Synapse is only working if the following prerequisites, in particular the role assignments, are provided. 
+  > Using Customer Insights data in Azure Synapse Analytics is only working if the following prerequisites, in particular the role assignments, are respected.  
 
 ## Prerequisites in Customer Insights
 
-* You have an Administrator role in Customer Insights
+* You have an Administrator role in Customer Insights. Learn more about [setting user permissions in audience insights](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/permissions#assign-roles-and-permissions)
 
 ## Prerequisites in Azure 
 * You have an active Azure Subscription
