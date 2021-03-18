@@ -121,6 +121,8 @@
           href: audience-insights/predict-product-recommendation.md
         - name: Sample guide for product recommendation prediction
           href: audience-insights/sample-guide-predict-product-recommendation.md
+        - name: Create segments based on predictions
+          href: audience-insights/prediction-based-segments.md
         - name: Implement custom machine learning models
           href: audience-insights/custom-models.md
         - name: Experiments with Azure Machine learning
