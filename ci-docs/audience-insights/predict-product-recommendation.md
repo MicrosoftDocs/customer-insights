@@ -32,6 +32,7 @@ If you're interested in trying this feature but don't have data to complete the 
     - Customer identifiers to map transactions to your customers.
     - Transaction event dates that specify dates the transaction occurred on.
     - (Optional) Product ID information for the transaction.
+    - (Optional) Product catalog data entity to use a product filter.
     - (Optional) If a transaction is a return or not.
     - The semantic data schema requires the following information:
         - **Transaction ID:** A unique identifier of a purchase or transaction.
@@ -105,8 +106,6 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
 1. Select **Next**.
 
 1. If you choose to define a product filter, you need to define it now. In the **Product catalog attributes** pane, select the the attributes from your *Product Catalog entity* that you want include in the filter.
-
-<!-- please introduce the product catalog entity in the setup above and also list it as an optional data prerequisite-->
 
    :::image type="content" source="media/product-filters-sidepane.png" alt-text="Side pane showing attributed in the product catalog entity to select for product filters.":::
 
