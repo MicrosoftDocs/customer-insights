@@ -55,7 +55,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
    > [!div class="mx-imgBorder"]
    > ![Configure a workflow](media/intelligence-screen2-updated.png "Configure a workflow")
-   
+
 1. In the **Model Output Parameters** step, set the following properties:
    - Machine Learning Studio (classic)
       1. Enter the output **Entity name** you want web service output results to flow into.
@@ -63,12 +63,12 @@ Predictions offer capabilities to create better customer experiences, improve bu
       1. Enter the output **Entity name** you want pipeline output results to flow into.
       1. Select the **Output data store parameter name** of your batch pipeline from the dropdown.
       1. Select the **Output Path parameter name** of your batch pipeline from the dropdown.
-      
+
       > [!div class="mx-imgBorder"]
       > ![Model Output Parameter Pane](media/intelligence-screen3-outputparameters.png "Model Output Parameter Pane")
 
 1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
-   
+
    > [!div class="mx-imgBorder"]
    > ![Relate results to Customer data pane](media/intelligence-screen4-relatetocustomer.png "Relate results to Customer data pane")
 
