@@ -46,16 +46,16 @@ Your data sources can include entities with transactional and activity data from
 
 1. Select **Next** to go to the next step. 
 
-1. In the **Activity unification** step, choose the activity event and the start time of your activity. You can also choose to have activity details included in your timeline.  
-
-   - **Event activity**: Field that is the event for this activity
-   - **Timestamp**: Field that represents the start time of your activity.
-   - Set **Show this information in the timeline** to **Yes** to provide  additional information that will be shown in the timeline:
-             - **Additional detail**: Field with relevant information for this activity.
-             - **Icon**: Icon that best represents this activity type.
-             - **Web address**: Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* entity, which can be consumed downstream using [APIs](apis.md).
+1. In the **Activity unification** step, choose the activity event and the start time of your activity. 
+   -**Required fields**
+      1. **Event activity**: Field that is the event for this activity
+      2. **Timestamp**: Field that represents the start time of your activity.
+   - **Optional fields**
+      1. **Additional detail**: Field with relevant information for this activity.
+      2. **Icon**: Icon that best represents this activity type.
+      3. **Web address**: Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* entity, which can be consumed downstream using [APIs](apis.md).
    
-   :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity entity.":::
+   :::image type="content" source="media/Activity_Wizard3a.PNG" alt-text="Specify the customer activity data in a Unified Activity entity.":::
 
 1. Select **Next** to move to the next step. You can select **Finish and review** to save the activity now with the activity type set to **Other**. 
 
