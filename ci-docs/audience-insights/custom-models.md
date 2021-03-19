@@ -127,7 +127,7 @@ You can find more information on how to access the API here. For the specific OD
 
 1. Replace `<Custom model output entity>` with the entity name you provided during the Model Output Parameters step of configuration
 
-1. Replace `<guid value>` with the Customer ID of the customer you'd like to access the record for. This can typically be found by finding the customer in the [customer profiles page](customer-profiles.md) and copying the guid of the customer in the CustomerID field.
+1. Replace `<guid value>` with the Customer ID of the customer you'd like to access the record for. This can typically be found in the [customer profiles page](customer-profiles.md) and copying the guid of the customer in the CustomerID field.
 
 ## Frequently Asked Questions
 
