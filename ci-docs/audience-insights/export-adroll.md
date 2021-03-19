@@ -35,7 +35,7 @@ Export segments of unified customer profiles to AdRoll and use them for advertis
 
 1. Select **Connect** to initialize the connection to AdRoll.
 
-1. Select **Authenticate with AdRoll** and provide your Admin credentials for AdRoll. 
+1. Select **Authenticate with AdRoll** and provide your admin credentials for AdRoll. 
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
