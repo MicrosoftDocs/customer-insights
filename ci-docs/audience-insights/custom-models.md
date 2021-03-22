@@ -96,7 +96,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
       1. Select the **Output Path parameter name** for your test pipeline.
 
 1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
-   You need to choose an attribute from the inference output with values similar to the Customer ID column of the Customer entity. If don't have such a column in your data set, choose an attribute that uniquely identifies the row.
+   Choose an attribute from the inference output with values similar to the Customer ID column of the Customer entity. If don't have such a column in your data set, choose an attribute that uniquely identifies the row.
 
 ## Run a workflow
 
@@ -124,7 +124,7 @@ For the specific OData query to get data from a custom model entity, use the fol
 
 `https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
 
-1. Replace `<your instance id>` with the ID of your Customer Insights environment which you find in the in the address bar of your browser when accessing Customer Insights.
+1. Replace `<your instance id>` with the ID of your Customer Insights environment, which you find in the in the address bar of your browser when accessing Customer Insights.
 
 1. Replace `<custom model output entity>` with the entity name you provided during the Model Output Parameters step of the custom model configuration.
 
