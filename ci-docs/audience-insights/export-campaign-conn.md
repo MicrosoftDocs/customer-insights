@@ -42,7 +42,7 @@ Export segments of unified customer profiles to Campaign Monitor and use them fo
 
 1. Select **Connect** to initialize the connection to Campaign Monitor.
 
-1. Select **Authenticate with Campaign Monitor** and provide your Admin credentials for Campaign Monitor.
+1. Select **Authenticate with Campaign Monitor** and provide your admin credentials for Campaign Monitor.
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
@@ -58,8 +58,8 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Connection for export** field, choose a connection from the Campaign Monitor section. If you don't see this section name, there are no connections of this type available to you.
 
-1. Enter your [**Campaign Monitor List ID**](https://agileforms.io/support/campaignmonitor-list).
-  - Note: You need to generate an API key first under your Campaign Monitor Account Settings to be able to see the API list ID. 
+1. Enter your [**Campaign Monitor List ID**](https://www.campaignmonitor.com/api/getting-started/#your-list-id).    
+   [Generate the API key](https://www.campaignmonitor.com/api/getting-started/) from **Account Settings** in Campaign Monitor first to view the API list ID.  
 
 3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Campaign Monitor.
 
