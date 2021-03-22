@@ -122,7 +122,7 @@ Results from a workflow are stored in the entity configured during the Model Out
 
 For the specific OData query to get data from a custom model entity, use the following format:
 
-`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>?filter=CustomerId'<guid value>'`
+`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
 
 1. Replace `<your instance id>` with the ID of your Customer Insights environment which you find in the in the address bar of your browser when accessing Customer Insights.
 
