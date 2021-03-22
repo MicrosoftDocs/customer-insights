@@ -43,7 +43,7 @@ Export segments of unified customer profiles to AdRoll and use them for advertis
 
 1. Select **Connect** to initialize the connection to AdRoll.
 
-1. Select **Authenticate with AdRoll** and provide your Admin credentials for AdRoll. 
+1. Select **Authenticate with AdRoll** and provide your admin credentials for AdRoll. 
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
@@ -59,7 +59,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Connection for export** field, choose a connection from the AdRoll section. If you don't see this section name, there are no connections of this type available to you.
 
-1. Enter your **AdRoll Advertiser ID** [AdRoll Advertisable](https://help.adroll.com/hc/en-us/articles/212011838-Advertiser-Profiles).
+1. Enter your **AdRoll Advertiser ID** [AdRoll Advertisable](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
 3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to AdRoll.
 
