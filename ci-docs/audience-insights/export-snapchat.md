@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Snapchat"
 description: "Learn how to configure the connection and export to Snapchat."
-ms.date: 03/03/2021
+ms.date: 03/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -17,7 +17,7 @@ Export segments of unified customer profiles to Snapchat and use them for advert
 
 ## Prerequisites for a connection
 
--	You have a [Snapchat Business account](https://business.snapchat.com/), a [Snapchat Ads account](https://ads.snapchat.com/) and corresponding administrator credentials.
+-	You have a [Snapchat Business account](https://business.snapchat.com/), a [Snapchat Ads account](https://ads.snapchat.com/), and corresponding administrator credentials.
 -	You have [configured segments](segments.md) in audience insights.
 -	Unified customer profiles in the exported segments contain a field representing an email address.
 
@@ -40,7 +40,7 @@ Export segments of unified customer profiles to Snapchat and use them for advert
 
 1. Select **Connect** to initialize the connection to Snapchat.
 
-1. Select **Authenticate with Snapchat** and provide your Admin credentials for Snapchat. 
+1. Select **Authenticate with Snapchat** and provide your admin credentials for Snapchat. 
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
@@ -56,14 +56,13 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Connection for export** field, choose a connection from the Snapchat section. If you don't see this section name, there are no connections of this type available to you.
 
-1. Enter your [**Snapchat Audience ID**](https://businesshelp.snapchat.com/s/article/custom-audiences?language=en_US).
-  - Note: Open a list and you can find the list ID in the URL.
+1. Enter the [**Snapchat Audience ID**](https://businesshelp.snapchat.com/s/article/custom-audiences).
 
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Snapchat.
+1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Snapchat.
 
 1. Select the segments you want to export. 
 
-3. Select **Save**.
+1. Select **Save**.
 
 Saving an export doesn't run the export immediately.
 
