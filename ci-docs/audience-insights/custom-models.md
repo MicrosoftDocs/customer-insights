@@ -23,9 +23,9 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 - Currently, this feature supports web services published through [Machine Learning Studio (classic)](https://studio.azureml.net) and [Azure Machine Learning batch pipelines](/azure/machine-learning/concept-ml-pipelines).
 
-- You need an Azure Data Lake Gen2 storage account associated with your Azure Studio instance to use this feature. For more information, see [Create an Azure Data Lake Storage Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+- You need an Azure Data Lake Gen2 storage account associated with your Azure Studio instance to use this feature. For more information, see [Create an Azure Data Lake Storage Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
 
-- For Azure Machine Learning workspaces with pipelines, you will need to have Owner or User Access Administrator level permissions to the Azure Machine Learning Workspace
+- For Azure Machine Learning workspaces with pipelines, you need Owner or User Access Administrator permissions to the Azure Machine Learning Workspace.
 
    > [!NOTE]
    > Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
@@ -116,25 +116,26 @@ Your workflow will be deleted. The [entity](entities.md) that was created when y
 
 ## Results
 
-Results from a workflow are stored in the entity configured during the Model Output Parameter phase. You can access this data through the entities page, or through API access.
+Results from a workflow are stored in the entity configured during the Model Output Parameter phase. You can access this data from the [entities page](entities.md) or with [API access](apis.md).
 
 ### API Access
-You can find more information on how to access the API here. For the specific OData query to get data from a custom model entity, use the following format:
 
-`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<Custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
+For the specific OData query to get data from a custom model entity, use the following format:
 
-1. Replace `<your instance id>` with the instance ID of your Customer Insights instance. This can typically be found in the address bar of your browser when you're accessing Customer Insights.
+`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
 
-1. Replace `<Custom model output entity>` with the entity name you provided during the Model Output Parameters step of configuration
+1. Replace `<your instance id>` with the ID of your Customer Insights environment which you find in the in the address bar of your browser when accessing Customer Insights.
 
-1. Replace `<guid value>` with the Customer ID of the customer you'd like to access the record for. This can typically be found in the [customer profiles page](customer-profiles.md) and copying the guid of the customer in the CustomerID field.
+1. Replace `<custom model output entity>` with the entity name you provided during the Model Output Parameters step of the custom model configuration.
+
+1. Replace `<guid value>` with the Customer ID of the customer you'd like to access the record for. You can usually find this ID on the [customer profiles page](customer-profiles.md) in the CustomerID field.
 
 ## Frequently Asked Questions
 
-1. Why can't I see my pipeline when setting up a Custom Model workflow?
-    - This is frequently caused by a misconfiguration of your pipeline. Ensure the [input parameter is configured](azure-machine-learning-experiments#dataset-configuration), and the [output datastore and path parameters](azure-machine-learning-experiments#import-pipeline-data-into-customer-insights) are also configured.
+1. Why can't I see my pipeline when setting up a custom model workflow?
+    - This issue is frequently caused by a configuration issue in the pipeline. Ensure the [input parameter is configured](azure-machine-learning-experiments.md#dataset-configuration), and the [output datastore and path parameters](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) are also configured.
 
-1. You receive an error titled "Couldn't save intelligence workflow".
-    - This is typically caused by the user not having Owner or User Access Administrator privileges on the workspace. The user needs a higher level of permissions to enable Customer Insights to process the workflow as a service rather than using the user credentials for subsequent executions of the workflow.
+1. What does the error "Couldn't save intelligence workflow" mean?
+    - Users usually see this error message if they don't have Owner or User Access Administrator privileges on the workspace. The user needs a higher level of permissions to enable Customer Insights to process the workflow as a service rather than using the user credentials for subsequent runs of the workflow.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
