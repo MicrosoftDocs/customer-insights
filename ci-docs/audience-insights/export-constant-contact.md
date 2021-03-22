@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Constant Contact"
 description: "Learn how to configure the connection and export to Constant Contact."
-ms.date: 03/03/2021
+ms.date: 03/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -42,7 +42,7 @@ Export segments of unified customer profiles to Constant Contact and use them fo
 
 1. Select **Connect** to initialize the connection to Constant Contact.
 
-1. Select **Authenticate with AdRoll** and provide your Admin credentials for Constant Contact. 
+1. Select **Authenticate with AdRoll** and provide your admin credentials for Constant Contact. 
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
@@ -58,12 +58,11 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Connection for export** field, choose a connection from the Constant Contact section. If you don't see this section name, there are no connections of this type available to you.
 
-1. Enter your [**Constant Contact List ID**](https://app.constantcontact.com/pages/contacts/ui#lists).
-  - Note: Open a list and you can find the list ID in the URL.
+1. Enter your [**Constant Contact List ID**](https://app.constantcontact.com/pages/contacts/ui#lists). Open a list in Constant Contact to find the list ID in the URL.
 
 1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Constant Contact.
 
-1. Optionally, you can export First name and Last name as additional fields to create more personalized emails. Select Add attribute to map these fields.
+1. Optionally, you can export First name and Last name as additional fields to create more personalized emails. Select **Add attribute** to map these fields.
 
 1. Select the segments you want to export.
 
