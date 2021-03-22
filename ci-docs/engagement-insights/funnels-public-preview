@@ -1,0 +1,24 @@
+Funnels (Public Preview )
+
+Overview
+
+Use funnel reports to understand how well the audience progresses through the various steps of a process and to identify drop-off points. 
+You can use data from funnel reports to inform decisions and identify areas of potential optimization and process improvements. 
+
+
+Create a funnel report: 
+1. Go to Funnels tab to access the funnel report list
+2. Select New report to start creating a funnel report
+3. Select Add a step
+4. For each step choose the following: 
+  - Step title
+  - Activity 
+  - Dimension criteria 
+5. Select Add step 
+6. The funnel will update displaying the number of users who completed that step 
+
+Further settings: 
+- To inquire about a certain point in time - use the Time Range setting to change the time period in which your funnel report takes place
+
+
+Future enhancements to funnel reports include support for scenarios in which users transition from unauthenticated and authenticated.  
