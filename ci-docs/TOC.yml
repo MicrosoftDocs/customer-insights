@@ -162,6 +162,8 @@
               href: audience-insights/export-mailchimp.md
             - name: Marketo
               href: audience-insights/export-marketo.md
+            - name: RollWorks
+              href: audience-insights/export-rollworks.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
             - name: SFTP
