@@ -2,12 +2,12 @@
 title: "Entities and datasets"
 description: "View data on the Entities page."
 ms.date: 04/16/2020
-ms.reviewer: mukeshpo
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 ---
 

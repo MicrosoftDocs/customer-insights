@@ -1,26 +1,26 @@
 ---
 title: "Supported languages for audience insights"
 description: "Understand and configure language support."
-ms.date: 04/27/2020
+ms.date: 02/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: pkieffer
+ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
 ---
 
 # Supported languages for audience insights capability
 
-Dynamics 365 Customer Insights audience insights capability supports a number of languages. This topic lists the available languages and provides support for changing between them, as well as an overview of what content is translated.
+Audience insights for Dynamics 365 Customer Insights is translated to many languages. The following list contains available languages and information on what's translated. You can also learn more about how to change the language settings. 
 
 ## Languages
 
 | Language name (English)| 	Language Name (native language) |
 | ------------- | ------------- |
 | Basque | euskara |
-| Bulgarian | Български |
+| Bulgarian | български |
 | Catalan | català |
 | Chinese (Simplified) | 中文(简体) |
 | Chinese (Traditional) | 中文(繁體) |
@@ -37,20 +37,20 @@ Dynamics 365 Customer Insights audience insights capability supports a number of
 | Greek | Ελληνικά |
 | Hindi | हिंदी |
 | Hungarian | magyar |
-| Indonesian | Bahasa Indonesia |
+| Indonesian | Indonesia |
 | Italian | italiano |
 | Japanese | 日本語 |
-| Kazakh | Қазақ |
+| Kazakh | қазақ тілі |
 | Korean | 한국어 |
 | Latvian | latviešu |
 | Lithuanian | lietuvių |
-| Malay | Bahasa Melayu |
-| Norwegian (Bokmål) | norsk (bokmål) |
-| Polish | Polski |
+| Malay | Melayu |
+| Norwegian (Bokmål) | norsk bokmål |
+| Polish | polski |
 | Portuguese (Brazil) | português |
 | Portuguese (Portugal) | português |
 | Romanian | română |
-| Russian | Русский |
+| Russian | pусский |
 | Serbian (Cyrillic) | српски |
 | Serbian (Latin) | srpski |
 | Slovak | slovenčina |

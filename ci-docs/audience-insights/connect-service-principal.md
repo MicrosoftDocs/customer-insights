@@ -18,7 +18,7 @@ Automated tools that use Azure services should always have restricted permission
 You can use the service principal to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create a new or update an existing environment](manage-environments.md#create-an-environment-in-an-existing-organization).
 
 > [!IMPORTANT]
-> - The Azure Data Lake Gen2 storage account that intends to use the service principal must have [Hierarchical Name Space (HNS) enabled](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - The Azure Data Lake Gen2 storage account that intends to use the service principal must have [Hierarchical Name Space (HNS) enabled](/azure/storage/blobs/data-lake-storage-namespace).
 > - You need admin permissions for your Azure subscription to create the service principal.
 
 ## Create Azure service principal for audience insights
@@ -43,7 +43,7 @@ Before creating a new service principal for audience insights, check if it alrea
 
 ### Create a new service principal
 
-1. Install the latest version of the **Azure Active Directory PowerShell for Graph**. For more information, see [Install Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+1. Install the latest version of the **Azure Active Directory PowerShell for Graph**. For more information, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
    - On your PC, select the Windows key on your keyboard and search for **Windows PowerShell** and **Run as Administrator**.
    
    - In the PowerShell window that opens, enter `Install-Module AzureAD`.

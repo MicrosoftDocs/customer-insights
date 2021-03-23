@@ -6,8 +6,8 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: wameng
+ms.author: wameng
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -67,8 +67,8 @@ This section walks you through creating a new measure from scratch. You can buil
    1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected to create *customer-level measures*. You can remove the default dimension if you want to create *business-level measures*.
    1. Select **Done** to add the dimensions to the measure.
 
-1. If there are multiple paths between the data entity you mapped and the Customer entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path.
-   1. Select **Data preferences** and choose the entity path that should be used to identify your measure.
+1. If there are multiple paths between the data entity you mapped and the *Customer* entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path. 
+   1. Select **Data preferences** and choose the entity path that should be used to identify your measure. If there's only a single path to the *Customer* entity, this control won't show.
    1. Select **Done** to apply your selection. 
 
    :::image type="content" source="media/measures-data-preferences.png" alt-text="Select the entity path for the measure.":::

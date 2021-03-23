@@ -4,10 +4,10 @@ description: "Define customer activities and view them in customer timeline."
 ms.date: 03/23/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.reviewer: midevaney
+ms.reviewer: mhart
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: MichelleDevaney
+ms.author: midevane
 manager: shellyha
 ---
 

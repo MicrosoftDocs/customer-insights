@@ -2,12 +2,12 @@
 title: "LiveRamp connector"
 description: "Learn how to export data to LiveRamp."
 ms.date: 12/02/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-ms
+ms.author: kishorem
 manager: shellyha
 ---
 

@@ -2,12 +2,12 @@
 title: "Real-time data ingestion and limitations"
 description: "General information about real-time capabilities in audience insights."
 ms.date: 10/27/2020
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
 ---
 
@@ -49,7 +49,7 @@ The real-time API lets you publish a new activity from your source system (an in
 
 There are two ways to connect to the real-time API:
 
-- [indirectly](#connect-via-the-dynamics-365-customer-insights-connector), using the [Dynamics 365 Customer Insights connector](https://docs.microsoft.com/connectors/customerinsights/)
+- [indirectly](#connect-via-the-dynamics-365-customer-insights-connector), using the [Dynamics 365 Customer Insights connector](/connectors/customerinsights/)
 - [directly](#connect-directly-to-the-real-time-api), with code
 
 Both ways share the following prerequisites:
@@ -61,13 +61,13 @@ Both ways share the following prerequisites:
 
 ## Connect via the Dynamics 365 Customer Insights connector
 
-The real-time API can ingest data from a dedicated Power Platform connector, the [Dynamics 365 Customer Insights connector](https://docs.microsoft.com/connectors/customerinsights/), without the need to write and deploy any code.    
-The connector can do the same real-time actions as the API. You need a valid license for premium connectors. For more information, see [Power Apps and Power Automate licensing FAQs](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+The real-time API can ingest data from a dedicated Power Platform connector, the [Dynamics 365 Customer Insights connector](/connectors/customerinsights/), without the need to write and deploy any code.    
+The connector can do the same real-time actions as the API. You need a valid license for premium connectors. For more information, see [Power Apps and Power Automate licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps and/or Power Automate](https://docs.microsoft.com/connectors/)
-- Azure [Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
+- Power Platform [Power Apps and/or Power Automate](/connectors/)
+- Azure [Logic Apps](/azure/connectors/apis-list)
 
-For details about creating flows, see the [Power Automate documentation](https://docs.microsoft.com/power-automate/).
+For details about creating flows, see the [Power Automate documentation](/power-automate/).
 
 ## Connect directly to the real-time API
 

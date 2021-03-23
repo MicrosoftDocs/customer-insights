@@ -2,12 +2,12 @@
 title: "Export destinations"
 description: "Export data and manage export destinations."
 ms.date: 07/21/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
 ---
 
@@ -17,22 +17,29 @@ The **Export destinations** page shows you all locations you've set up to export
 
 Go to **Admin** > **Export destinations** to find the following extensibility options:
 
-- [Dynamics 365 Customer Card Add-in](customer-card-add-in.md)
-- [Facebook Ads Manager connector](export-facebook.md)
-- [Power Automate connector](export-power-automate.md)
-- [Power Apps connector](export-power-apps.md)
-- [Power BI connector](export-power-bi.md)
+- [Adobe Campaign Standard](export-adobe-campaign-standard.md)
+- [Adobe Experience Platform](export-adobe-experience-platform.md)
+- [AdRoll](export-adroll.md)
 - [Autopilot](export-autopilot.md)
-- [DotDigital](export-dotdigital.md)
-- [Dynamics 365 Sales](export-dynamics365-sales.md)
-- [Dynamics 365 Marketing](export-dynamics365-marketing.md)
 - [Azure Blob Storage](export-azure-blob-storage.md)
 - [Azure Data Lake Storage Gen2](export-azure-data-lake-storage-gen2.md)
-- [SendGrid](export-sendgrid.md)
-- [LiveRamp&reg; connector](export-liveramp.md)
 - [Bot for Microsoft Teams](export-teams-bot.md)
-- [Mailchimp](export-mailchimp.md)
 - [Customer Insights API](apis.md)
+- [DotDigital](export-dotdigital.md)
+- [Dynamics 365 Customer Service (Customer Card Add-in)](customer-card-add-in.md)
+- [Dynamics 365 Marketing](export-dynamics365-marketing.md)
+- [Dynamics 365 Sales](export-dynamics365-sales.md)
+- [Dynamics 365 Sales Hub (Customer Card Add-in)](customer-card-add-in.md)
+- [Facebook Ads Manager](export-facebook.md)
+- [Google Ads](export-google-ads.md)
+- [LiveRamp&reg;](export-liveramp.md)
+- [Mailchimp](export-mailchimp.md)
+- [Marketo](export-marketo.md)
+- [Power Automate](export-power-automate.md)
+- [Power Apps](export-power-apps.md)
+- [Power BI](export-power-bi.md)
+- [SendGrid](export-sendgrid.md)
+- [SFTP](export-sftp.md)
 
 ## Add a new export destination
 
