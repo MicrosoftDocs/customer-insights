@@ -168,6 +168,8 @@
               href: audience-insights/export-rollworks.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
+            - name: Snapchat
+              href: audience-insights/export-snapchat.md
             - name: SFTP
               href: audience-insights/export-sftp.md
 
