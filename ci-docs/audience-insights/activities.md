@@ -1,7 +1,7 @@
 ---
 title: "Customer activities"
 description: "Define customer activities and view them in customer timeline." 
-ms.date: 02/23/2021
+ms.date: 03/23/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: midevaney
@@ -32,7 +32,7 @@ Your data sources can include entities with transactional and activity data from
    - **Entity**: Select an entity that includes transactional or activity data.
    - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
-   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the actitvity data with name, entity, and primary key.":::
+   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with name, entity, and primary key.":::
 
 1. Select **Next** to go to the next step.
 
@@ -50,7 +50,7 @@ Your data sources can include entities with transactional and activity data from
    - **Required fields**
       1. **Event activity**: Field that is the event for this activity
       2. **Timestamp**: Field that represents the start time of your activity.
-      
+
    - **Optional fields**
       1. **Additional detail**: Field with relevant information for this activity.
       2. **Icon**: Icon that best represents this activity type.
@@ -64,7 +64,7 @@ Your data sources can include entities with transactional and activity data from
 
 1. Select **Next** to move to the next step. 
 
-1. In the **Review** step you can verify your selections. You go back to any of the previous steps and update the informaiton if neccesary.
+1. In the Review step, verify your selections. You go back to any of the previous steps and update the information if necessary.
 
    :::image type="content" source="media/Activity_Wizard5.PNG" alt-text="Review the specified fields for an activity.":::
    
@@ -76,9 +76,9 @@ Your data sources can include entities with transactional and activity data from
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
 
 
-## Manage exisiting activities
+## Manage existing activities
 
-On **Data** > **Activities**, you can view all your saved activities, and manage them. Each activity is represented by a row which also includes details about the source, the entity and the activity type.
+On **Data** > **Activities**, you can view all your saved activities, and manage them. Each activity is represented by a row that also includes details about the source, the entity, and the activity type.
 
 :::image type="content" source="media/Activity_Wizard8.PNG" alt-text="List of activities on the Activities page and options to manage them."::: 
 
