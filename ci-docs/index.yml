@@ -24,7 +24,7 @@ landingContent:
           - text: Customer Insights overview
             url: overview.md
           - text: Release plans
-            url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+            url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
           - text: Access your environment
             url: https://home.ci.ai.dynamics.com/
 
@@ -57,9 +57,9 @@ landingContent:
           - text: Create a new environment
             url: audience-insights/home.md
           - text: Create a unified customer profile
-            url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+            url: /learn/modules/unified-customer-profile/
           - text: Work with the app
-            url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+            url: /learn/modules/working-with-customer-insights/
 
   - title: Export audience insights data
     linkLists:

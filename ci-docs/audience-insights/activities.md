@@ -4,10 +4,10 @@ description: "Define customer activities and view them in customer timeline."
 ms.date: 10/13/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: MichelleDevaney
+ms.author: midevane
 manager: shellyha
 ---
 
@@ -77,3 +77,6 @@ Your data sources include entities with transactional and activity data from mul
 3. Select on the **Delete** icon.
 
 4. Confirm your deletion.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

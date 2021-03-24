@@ -2,12 +2,12 @@
 title: Transactional churn prediction sample guide
 description: Use this sample guide to try out the out of box transactional churn prediction model.
 ms.date: 11/19/2020
-ms.reviewer: digranad
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
+author: diegogranados117
+ms.author: digranad
 manager: shellyha
 ---
 
@@ -44,7 +44,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    [!div class="mx-imgBorder"]
    ![Transform DoB to Date](media/ecommerce-dob-date.PNG "transform date of birth to date")
 
-1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
+1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
 
 1. Save the data source.
 
@@ -61,7 +61,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **PurchasedOn**: Date/Time
    - **TotalPrice**: Currency
    
-1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommercePurchases**.
+1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommercePurchases**.
 
 1. Save the data source.
 
@@ -79,7 +79,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **RewardsPoints**: Whole Number
    - **CreatedOn**: Date/Time
 
-1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
+1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
 
 1. Save the data source.
 
@@ -199,3 +199,6 @@ You can create a new segment based on the entity created by the model.
 You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.
 
 For more information, see [Create and manage segments](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

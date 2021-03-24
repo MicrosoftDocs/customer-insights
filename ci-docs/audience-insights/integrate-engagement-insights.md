@@ -5,9 +5,9 @@ ms.date: 12/17/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: mukeshpo
+author: mukeshpo
+ms.author: mukeshpo
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -92,3 +92,6 @@ After processing the activities, you can review customer records and open a cust
 ## Next Steps
 
 You can now create [segments](segments.md), [measures](measures.md), and [predictions](predictions.md) to make a meaningful connection with your customers.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

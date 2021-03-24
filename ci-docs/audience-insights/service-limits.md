@@ -5,9 +5,9 @@ ms.date: 10/15/2020
 ms.service: customer-insights
 ms.subservice: audience-insights 
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: jimsonc
+author: JimsonChalissery
+ms.author: jimsonc
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -18,3 +18,6 @@ This article describes the built-in limits to the Customer Insights service, whi
 | Area  | Limits  | Notes |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Segments and measures | 100 segments or measures. | The total number of active [segments](segments.md) and [measures](measures.md) combined can't exceed 100.  |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

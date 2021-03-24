@@ -1,7 +1,7 @@
 ---
 title: "Connect to an Azure Data Lake Storage Gen2 account with a service principal"
-description: "use an Azure service principal for audience insights to connect to your own data lake when attaching it to audience insights."
-ms.date: 11/24/2020
+description: "Use an Azure service principal for audience insights to connect to your own data lake when attaching it to audience insights."
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -17,7 +17,9 @@ Automated tools that use Azure services should always have restricted permission
 
 You can use the service principal to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create a new or update an existing environment](manage-environments.md#create-an-environment-in-an-existing-organization).
 
-You need admin permissions for your Azure subscription to create the service principal.
+> [!IMPORTANT]
+> - The Azure Data Lake Gen2 storage account that intends to use the service principal must have [Hierarchical Name Space (HNS) enabled](/azure/storage/blobs/data-lake-storage-namespace).
+> - You need admin permissions for your Azure subscription to create the service principal.
 
 ## Create Azure service principal for audience insights
 
@@ -41,7 +43,7 @@ Before creating a new service principal for audience insights, check if it alrea
 
 ### Create a new service principal
 
-1. Install the latest version of the **Azure Active Directory PowerShell for Graph**. For more information, see [Install Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+1. Install the latest version of the **Azure Active Directory PowerShell for Graph**. For more information, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
    - On your PC, select the Windows key on your keyboard and search for **Windows PowerShell** and **Run as Administrator**.
    
    - In the PowerShell window that opens, enter `Install-Module AzureAD`.
@@ -105,3 +107,6 @@ Follow the below steps to provide the required information on the selected appro
 1. In audience insights, choose the values or for the corresponding fields when attaching the storage account.
    
 1. Continue with the remaining steps in audience insights to attach the storage account.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

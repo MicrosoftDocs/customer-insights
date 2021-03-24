@@ -21,7 +21,7 @@ Cookies are small files that store bits of information about a user’s interact
 
 ## User consent
 
-The [General Data Protection Regulation (GDPR)](https://docs.microsoft.com/dynamics365/get-started/gdpr/) is a European Union (EU) regulation that mandates how organizations should handle their users’ privacy and security. Cookies often store or collect “personal data,” such as an online identifier, which is covered by the GDPR. If your business employs and/or sells to EU data subjects, the GDPR affects you. [Learn more about how Microsoft can help you comply with the GDPR](https://www.microsoft.com/trust-center/privacy/gdpr-faqs).
+The [General Data Protection Regulation (GDPR)](/dynamics365/get-started/gdpr/) is a European Union (EU) regulation that mandates how organizations should handle their users’ privacy and security. Cookies often store or collect “personal data,” such as an online identifier, which is covered by the GDPR. If your business employs and/or sells to EU data subjects, the GDPR affects you. [Learn more about how Microsoft can help you comply with the GDPR](https://www.microsoft.com/trust-center/privacy/gdpr-faqs).
 
 To allow the engagement insights SDK to store cookies or other sensitive information, you must specify whether your users have consented. This occurs on initialization of the SDK.
 
@@ -50,3 +50,6 @@ Keys in local storage don't expire automatically. They'll be reset during the ne
 ## Deleting cookies
 
 Your customers can manually delete cookies and local storage keys at any time through their browsers' settings.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

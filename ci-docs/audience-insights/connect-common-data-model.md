@@ -5,9 +5,9 @@ ms.date: 05/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -98,3 +98,6 @@ You can update the access key for the storage account containing the Common Data
    > If there are dependencies on the existing model.json or manifest.json file and the set of entities, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
 
 8. Optionally, you can select additional attributes or entities to enable data profiling on or disable already selected ones.   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

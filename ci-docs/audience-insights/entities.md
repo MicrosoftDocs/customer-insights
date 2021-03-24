@@ -2,12 +2,12 @@
 title: "Entities and datasets"
 description: "View data on the Entities page."
 ms.date: 04/16/2020
-ms.reviewer: mukeshpo
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 ---
 
@@ -52,3 +52,6 @@ Select the chart icon to see the summary of the data.
 ### Next step
 
 See the [Unify](data-unification.md) topic to learn how to *map*, *match*, and *merge* the ingested data.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,9 +5,9 @@ ms.date: 02/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-ms.reviewer: nimagen
-author: m-hartmann
-ms.author: mhart
+ms.reviewer: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
 ---
 
@@ -155,3 +155,6 @@ As an administrator, you can delete an environment you administer.
 3. Choose the **Delete** option. 
 
 4.	To confirm the deletion, enter the environment name and select **Delete**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

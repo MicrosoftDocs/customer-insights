@@ -2,12 +2,12 @@
 title: "Machine learning powered suggested segments"
 description: "Let machine learning help you find new and interesting segments based on customer attributes."
 ms.date: 02/01/2021
-ms.reviewer: jimsonc
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: JimsonChalissery
+ms.author: jimsonc
 manager: shellyha
 ---
 
@@ -44,10 +44,10 @@ Segment suggestions are different if you choose a numeric attribute or a categor
 
 With a numeric attribute like *annual income* or *membership period* as the primary attribute, the system suggests segments that have a higher or lower average value of the numeric attribute when compared to all customers.
 
-A categorical attribute like *customer satisfaction* as the primary attribute results in suggested segments that have a higher or lower percentage of customers belonging to a particular category when compared to the percentage of all customers belonging to that same category. For example, *customer satisfaction* is chosen as the primary attribute and it consists of three categories (*Low*, *Medium* and *High*). For each category, segments will be suggested that have a significantly higher or lower percentage of customers belonging to that category as compared to the proportion of all customers belonging to the same category. If 22% of all customers have a *High* satisfaction, then, only segments that have a significantly higher or lower proportion of customers with a *High* satisfaction as compared to 22% will be suggested for that category. Similarly, segments will be suggested for each of the other categories (*Low* and *Medium*) if they are statistically significant.
+A categorical attribute like *customer satisfaction* as the primary attribute results in suggested segments that have a higher or lower percentage of customers belonging to a particular category when compared to the percentage of all customers belonging to that same category. For example, *customer satisfaction* is chosen as the primary attribute and it consists of three categories (*Low*, *Medium* and *High*). For each category, segments will be suggested that have a significantly higher or lower percentage of customers belonging to that category as compared to the proportion of all customers in same category. If 22% of all customers have a *High* satisfaction, then, only segments that have a significantly higher or lower proportion of customers with a *High* satisfaction as compared to 22% will be suggested for that category. Similarly, segments will be suggested for each of the other categories (*Low* and *Medium*) if they are statistically significant.
 
-> [!IMPORTANT]
-> Only categorical attributes that have at most 10 categories are supported.
+> [!NOTE]
+> Currently, we only support primary categorical attributes that have up to 10 categories. If you want to see segment suggestions based on a primary attribute with more than 10 categories, we recommend to group some of the categories to reduce the number of categories to 10 or fewer. This limitation only applies to primary attributes. For influencing categorical attributes, we currently support a maximum of 100 categories.
 
 ## Generate suggested segments
 
@@ -98,3 +98,6 @@ Select a suggested segment to review the details of that suggestion including a 
 
 3. Suggested segments aren't distinct enough: Keep in mind that the selected attributes and the distribution of values of those attributes influences the results. You can change your influencing attributes or even your primary attribute to get different results.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

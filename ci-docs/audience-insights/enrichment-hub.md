@@ -2,12 +2,12 @@
 title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
 ms.date: 11/02/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
 ---
 
@@ -46,3 +46,6 @@ Select an enrichment to see the available options. Alternatively, you can select
 - **Delete** an enrichment.
 
 You can run or deactivate multiple enrichments at once by selecting them in the list. View and edit options aren't available as bulk action and only work for one enrichment at a time.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

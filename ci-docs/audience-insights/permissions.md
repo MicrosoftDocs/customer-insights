@@ -2,12 +2,12 @@
 title: "Manage user permissions"
 description: "Learn about permissions and user roles."
 ms.date: 10/27/2020
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
 ---
 
@@ -69,3 +69,6 @@ In audience insights, go to **Admin** > **Permissions** to see what role assignm
 - Roles are specified under the **Role** column.
 - Select any column title to sort the results by that column's value.
 - Use the **Search** field at the top of the page to locate specific users.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

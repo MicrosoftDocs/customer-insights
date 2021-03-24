@@ -5,10 +5,10 @@ ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ---
 
 # Connect to data in a Common Data Service managed data lake
@@ -63,3 +63,6 @@ To connect to a different Common Data Service, [create a new data source](#conne
 3. Select the **Edit** option from the list.
 
 4. Select additional entities from the available list of entities and select **Save**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

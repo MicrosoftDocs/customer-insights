@@ -24,7 +24,7 @@ Before setting up an export, you need to have access and an active subscription 
 
 ### Create an Azure Data Lake Storage Gen 2 accounts
 
-1. Sign in to the Azure portal and [create a new storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create). 
+1. Sign in to the Azure portal and [create a new storage account](/azure/storage/common/storage-account-create). 
 
 1. Make sure that you enable **Hierarchical namespace** on the **Advanced** tab. 
 
@@ -61,3 +61,6 @@ You're guided through the steps to create an export:
 ## View and manage exports
 
 Once you've set up an export, go to **Admin** > **Data** > **Exports** to view it. Select **...** for any existing export to edit or delete it.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

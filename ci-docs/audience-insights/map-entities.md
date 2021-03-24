@@ -5,9 +5,9 @@ ms.date: 09/25/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -97,3 +97,6 @@ As part of the data unification process, go to the **Match** page. Visit [**Matc
 
 > [!TIP]
 > Check out the following video: [Getting Started: Creating a Unified Customer Profile](https://youtu.be/oBfGEhucAxs).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

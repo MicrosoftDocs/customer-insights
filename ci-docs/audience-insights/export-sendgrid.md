@@ -2,12 +2,12 @@
 title: "Export Customer Insights data to SendGrid"
 description: "Learn how to configure the connection to SendGrid."
 ms.date: 12/08/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+ms.topic: how-to
+author: phkieffer
+ms.author: philk
 manager: shellyha
 ---
 
@@ -67,3 +67,6 @@ You can [export data on demand](export-destinations.md). The export will also ru
 
 When you enable Dynamics 365 Customer Insights to transmit data to SendGrid, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that SendGrid meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

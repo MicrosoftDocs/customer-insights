@@ -52,3 +52,6 @@ A report is a collection of data visualizations that help you measure and unders
 ## Workspace
 
 A workspace is how you store and manage events and reports. It's where you can view user activity in real time. When you create a workspace, you select the type of data you will send to the workspace.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

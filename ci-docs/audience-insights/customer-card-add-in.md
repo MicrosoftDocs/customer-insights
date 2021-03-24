@@ -2,12 +2,12 @@
 title: "Install and configure the Customer Card Add-in"
 description: "Install and configure the Customer Card add-in for Dynamics 365 Customer Insights."
 ms.date: 01/20/2021
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual    
-author: m-hartmann
-ms.author: mhart
+author: pkieffer
+ms.author: philk
 manager: shellyha
 ---
 
@@ -107,3 +107,6 @@ The Customer Card Add-in doesn't upgrade automatically. To upgrade to the latest
    :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="Upgrade the solution in the Customization area of Dynamics 365 apps":::
 
 1. After starting the upgrade process, you'll see a loading indicator until the upgrade completes. If there's no newer version, the upgrade will show an error message.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,9 +5,9 @@ ms.date: 06/10/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: jimsonc
+author: JimsonChalissery
+ms.author: jimsonc
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -86,3 +86,6 @@ You can use the following options on your insights from the command bar:
 - **Back** to return the list of insights
 - **Refresh** to run the analysis again
 - **Delete** to remove this insight
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

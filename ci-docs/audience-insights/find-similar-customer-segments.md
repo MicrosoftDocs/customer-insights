@@ -5,9 +5,9 @@ ms.date: 06/25/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: jimsonc
+author: JimsonChalissery
+ms.author: jimsonc
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -74,3 +74,6 @@ The binary classification machine learning model assigns a score to customers in
 - Similarity scores between 0.85 – 1 are customers the system classified as *very similar*
 
 Customers with similarity scores below 0.4 aren't included in the model output. The system doesn't consider them similar enough to the source segment.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

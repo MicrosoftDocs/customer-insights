@@ -2,12 +2,12 @@
 title: "Incremental refresh for Power Query-based data sources"
 description: "Refresh new and updated data for large data sources based on Power Query."
 ms.date: 09/28/2020
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ---
 
@@ -49,3 +49,6 @@ Audience insights allows incremental refresh for data sources imported through P
    - **Check for updates every**: Specify how long you want the incremental refresh time frame to be.
 
 1. Select **Save** to complete the creation of the data source. The initial data refresh will be a full refresh. Afterwards, the incremental data refresh happens as configured in the previous step.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,9 +5,9 @@ ms.date: 11/03/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -71,3 +71,6 @@ To refresh a data source on demand, follow these steps:
 2. Select the vertical ellipsis next to the data source you want to remove and select **Delete** from the drop-down menu.
 
 3. Confirm your deletion.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

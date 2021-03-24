@@ -1,13 +1,13 @@
 ---
 title: "Create and manage segments"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 10/15/2020
+ms.date: 03/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: jimsonc
+author: JimsonChalissery
+ms.author: jimsonc
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -30,19 +30,19 @@ Segments are managed on the **Segments** page.
 
 1. In audience insights, go to the **Segments** page.
 
-2. Select **New** > **Blank segment**.
+1. Select **New** > **Blank segment**.
 
-3. In the **New segment** pane, choose a segment type and provide a **Name**.
+1. In the **New segment** pane, choose a segment type and provide a **Name**.
 
    Optionally, provide a display name, and a description that helps identifying the segment.
 
-4. Select **Next** to get to the **Segment builder** page where you define a group. A group is a set of customers.
+1. Select **Next** to get to the **Segment builder** page where you define a group. A group is a set of customers.
 
-5. Choose the entity that includes the attribute you want to segment by.
+1. Choose the entity that includes the attribute you want to segment by.
 
-6. Choose the attribute to segment by. This attribute can have one of four value types: numerical, string, date, or Boolean.
+1. Choose the attribute to segment by. This attribute can have one of four value types: numerical, string, date, or Boolean.
 
-7. Choose an operator and a value for the selected attribute.
+1. Choose an operator and a value for the selected attribute.
 
    > [!div class="mx-imgBorder"]
    > ![Custom group filter](media/customer-group-numbers.png "Customer group filter")
@@ -59,9 +59,14 @@ Segments are managed on the **Segments** page.
    > [!div class="mx-imgBorder"]
    > ![Relationship path during segment creation](media/segments-multiple-relationships.png "Relationship path during segment creation")
 
-9. Select **Save** to save your segment. Your segment will be saved and processed if all requirements are validated. Otherwise, it will be saved as a draft.
+1. By default, segments generate an output entity that contains all attributes of customer profiles which match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity.  
 
-10. Select **Back to segments** to go back to the **Segments** page.
+   
+   Example: A segment is based on an entity that contains customer activity data which is related to the *Customer* entity. The segment looks for all customers that called the help desk in the last 60 days. You can choose to append the call duration and the number of calls to all matching customer records in the output entity. This information might be useful to send an email with helpful links to online help articles and FAQs to customers who called frequently.
+
+1. Select **Save** to save your segment. Your segment will be saved and processed if all requirements are validated. Otherwise, it will be saved as a draft.
+
+1. Select **Back to segments** to go back to the **Segments** page.
 
 ## Manage existing segments
 
@@ -80,6 +85,7 @@ The following action are available when you select a segment:
 
 - **View** the segment details, including member count trend a preview of segment members.
 - **Edit** the segment to change its properties.
+- **Create duplicate** of a segment. You can choose to edit its properties right away or simply save the duplicate.
 - **Refresh** the segment to include the latest data.
 - **Activate** or **Deactivate** the segment. Segments have two possible states - active or inactive. These states come in handy when editing a segment. For inactive segments, the segment definition exists but it doesn't contain any customers yet. When you activate a segment, its state changes from 'inactive' to 'active" and it starts looking for customers that match the segment definition. If a [scheduled refresh](system.md#schedule-tab) is configured, inactive segments have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. When an inactive segment is activated, it will refresh and will be included in scheduled refreshes.
   Alternatively, you can use the **Schedule later** functionality in the **Activate/Deactivate** dropdown to specify a future date and time for activation and deactivation of a particular segment.
@@ -217,3 +223,6 @@ For the following scenarios, we advise using the segment builder rather than the
 ## Next steps
 
 [Export a segment](export-destinations.md) and explore the [Customer Card](customer-card-add-in.md) and [Connectors](export-power-bi.md) to get insights on the customer level.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

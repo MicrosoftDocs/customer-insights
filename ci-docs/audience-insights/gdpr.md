@@ -2,12 +2,12 @@
 title: "Data Subject Rights (DSR) requests under GDPR | Microsoft Docs"
 description: "Respond to Data Subject Requests for Dynamics 365 Customer Insights audience insights capability."
 ms.date: 05/14/2020
-ms.reviewer: wimohabb
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
+ms.author: wimohabb
 manager: shellyha
 ---
 
@@ -70,3 +70,6 @@ A tenant administrator can follow these steps to export data:
 1. Send an email to D365CI@microsoft.com specifying the user’s email address in the request. The Customer Insights team will send an email to the registered tenant admin email address, asking for confirmation to export data.
 2. Acknowledge the confirmation to export the data for the requested user.
 3. Receive the exported data through the tenant admin email address.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

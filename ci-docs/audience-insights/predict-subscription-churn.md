@@ -2,12 +2,12 @@
 title: "Subscription churn prediction"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
 ms.date: 08/19/2020
-ms.reviewer: zacook
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: zacookmsft
+ms.author: zacook
 manager: shellyha
 ---
 
@@ -159,3 +159,6 @@ Predictions will automatically refresh on the same [schedule your data refreshes
 
 > [!NOTE]
 > Deleting a prediction will remove its output entity.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

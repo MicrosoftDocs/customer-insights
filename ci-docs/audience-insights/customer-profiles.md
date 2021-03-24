@@ -2,12 +2,12 @@
 title: "View customer profiles"
 description: "Get a combined view of your unified customer data."
 ms.date: 12/01/2020
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
 ---
 
@@ -65,3 +65,6 @@ Select **Back to Customers** to return to the customer search page.
 ## Next steps
 
 [Add more data sources](data-sources.md) or [create customer segments](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
