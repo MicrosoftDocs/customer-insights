@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Azure Synapse Analytics"
+title: "(Preview) - Export Customer Insights data to Azure Synapse Analytics"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
 ms.date: 03/15/2021
 ms.reviewer: mhart
@@ -29,9 +29,9 @@ To configure the connection from Customer Insights to Azure Synapse Analytics an
 ## Prerequisites in Azure 
 * You have an active Azure Subscription
  
-* If using a new Azure Data Lake Storage Gen2 account, the service principal for Audience Insights needs to be assigned **Storage Blob Contributor** permissions. Learn more on [how to connect to an Azure Data Lake Storage Gen2 account with an Azure service principal for audience insights](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/connect-service-principal)
+* If using a new Azure Data Lake Storage Gen2 account, the service principal for Audience Insights and the user needs to be assigned **Storage Blob Contributor** permissions. Learn more on [how to connect to an Azure Data Lake Storage Gen2 account with an Azure service principal for audience insights](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/connect-service-principal)
 
-* On Synapse workspace, the service principal for Audience Insights needs to be assigned needs **Reader** permissions. Learn more on [How to set up access control for your Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/security/how-to-set-up-access-control) 
+* On Synapse workspace, the service principal for Audience Insights needs to be assigned **Reader** permissions. Learn more on [How to set up access control for your Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/security/how-to-set-up-access-control) 
 
 * On Synapse workspace api, the first party app needs **Admin** role assigned. Learn more on [How to set up access control for your Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/security/how-to-set-up-access-control) 
 
