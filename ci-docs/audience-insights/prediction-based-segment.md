@@ -1,7 +1,7 @@
 ---
 title: Segments based on prediction output
-description: "Create a segments based on the output entity of a prediction model."
-ms.date: 03/12/2021
+description: "Create segments based on the output entity of a prediction model."
+ms.date: 03/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Create a segment based on a prediction model (preview)
 
-The results of product recommendations, predicted customer churn, or predicted customer lifetime value can sometimes only apply to a subset of your customers. For example, identify customers that prefer a certain type of service and deliver specific recommendations to them. By creating segments based on model results, you can increase the personalization in the recommendations to your customers.
+The results of predictions sometimes only apply to a subset of your customers. Increase the personalization of recommendations by creating segments from results of prediction models. For example, you may want to give specific recommendations to customers that prefer a certain type of service. 
 
 ## Prerequisites
 
@@ -32,6 +32,8 @@ The results of product recommendations, predicted customer churn, or predicted c
 
 1. Select the vertical ellipses next to the model you want to review and select **View**.
 
-1. On the results page, select **Create a customer segment**. For more information about the results page, review the article about the model.
+1. On the results page, select **Create segment**. For more information about the results page, review the article about the model.
+
+   :::image type="content" source="media/prediction-create-segment.png" alt-text="Screenshot of the prediction results page with highlight on the Create segment action.":::
 
 1. Create a new segment based on the output entity of the selected model. For more information, see [Create and manage segments](segments.md).
