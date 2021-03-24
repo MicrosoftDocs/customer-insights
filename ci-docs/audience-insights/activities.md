@@ -13,7 +13,7 @@ manager: shellyha
 
 # Customer activities
 
-Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights to create a customer timeline that lists the activities in chronological order. You can include the timeline in customer engagement apps in Dynamics 365 via the [Customer Card add-in](customer-card-add-in.md), or in a Power BI dashboard.
+Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights to create a timeline that lists the activities chronologically. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution, or in a Power BI dashboard.
 
 ## Define an activity
 
@@ -60,7 +60,7 @@ Your data sources can include entities with transactional and activity data from
 
 1. Select **Next** to move to the next step. You can select **Finish and review** to save the activity now with the activity type set to **Other**. 
 
-1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Subscription* & *SalesOrderLine* activity types can be semantically mapped after agreeing to map the fields. If an activity type is not relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
+1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Subscription* & *SalesOrderLine* activity types can be semantically mapped after agreeing to map the fields. If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
 
 1. Select **Next** to move to the next step. 
 
@@ -68,7 +68,7 @@ Your data sources can include entities with transactional and activity data from
 
    :::image type="content" source="media/Activity_Wizard5.PNG" alt-text="Review the specified fields for an activity.":::
    
-1. Select **Save activity** to apply your changes and select **Done** to go back to **Data** > **Activities**. Here you will also see which activities are set show in the timeline. 
+1. Select **Save activity** to apply your changes and select **Done** to go back to **Data** > **Activities**. Here you see which activities are set to show in the timeline. 
 
 1. On the **Activities** page, select **Run** to process the activity. 
 
