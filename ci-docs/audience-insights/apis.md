@@ -148,10 +148,10 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
 
 ### NodeJS package
 
-Use the NodeJS client libraries avaiable through NPM: https://www.npmjs.com/package/@microsoft/customerinsights
+Use the NodeJS client libraries available through NPM: https://www.npmjs.com/package/@microsoft/customerinsights
 
 ### Python package
 
-Use the Python client libraries avaialble through PyPi: https://pypi.org/project/customerinsights/
+Use the Python client libraries available through PyPi: https://pypi.org/project/customerinsights/
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
