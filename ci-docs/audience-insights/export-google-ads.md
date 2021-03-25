@@ -18,6 +18,10 @@ Export segments of unified customer profiles to Google Ads audience list and use
 ## Prerequisites for connection
 
 -	You have a [Google Ads account](https://ads.google.com/) and corresponding administrator credentials.
+-	You have an [approved Google Ads Developer token](https://developers.google.com/google-ads/api/docs/first-call/dev-token) 
+-	You fulfill the requirements of the [Customer Match Policy](https://support.google.com/adspolicy/answer/6299717)
+-	You fulfill the requirements of the [remarketing list sizes](https://support.google.com/google-ads/answer/7558048) 
+
 -	There are existing audiences in Google Ads and the corresponding IDs. For more information, see [Google Ads audiences](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
 -	You have [configured segments](segments.md)
 -	Unified customer profiles in the exported segments contain fields representing an email address, first name, and last name
