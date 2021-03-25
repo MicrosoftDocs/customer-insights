@@ -51,6 +51,10 @@ Connections
 
 ## Edit a connection
 
+1. Go to **Admin** > **Connections (preview)**.
+
+1. Go to the **Connections** tab.
+
 1. Select the vertical ellipsis for the connection you want to edit.
 
 1. Select **Edit**.
@@ -59,18 +63,22 @@ Connections
 
 ## Remove a connection
 
-If the connection you are removing is used by exports, you first need to disconnect or remove these exports. The remove dialog will guide you to these exports. 
-Disconnected exports become inactive. You re-activate them by adding another connection to them on the [Exports](export-destinations.md) page.
+If the connection you are removing is used by exports, you first need to detatch the connection or delete these exports.    
+Detatched exports become inactive. You reactivate an export by adding another connection to it on the [Exports](export-destinations.md) page.
 
-1. Select the vertical ellipsis for the connection you want to edit.
+1. Go to **Admin** > **Connections (preview)**.
 
-1. Select **Remove** from the dropdown menu. A confirmation dialog will appear.
+1. Go to the **Connections** tab.
 
-   1. If there are exports using this connection you will see a corresponding message. Activate the button on the message to see these exports in the **Exports** page.
-   1. The Exports page will be filtered for the connection you tried to remove. You can choose to either remove or disconnect these exports to be able to remove the connection.
-   1. To disconnect any export administrators have access to the **Disconnect** action. This action is available for individual and multiple selected exports.
-   1. By disconnection you keep the export config, but it won't be run until another connection is added to it.
-   1. Once no export is using this connection navigate to **Connections** page and activate **Remove** again.
+1. Select the vertical ellipsis for the connection you want to remove.
 
-1. In the dialog window review the list of affected elements. To confirm the deletion select **Remove**.
+1. Select **Remove** from the dropdown menu. A confirmation dialog appears.
+
+   1. If there are exports using this connection, select the **See connected exports** button to go to the **Exports** page.
+   1. The Exports page shows all exports that use the connection want to remove. You can remove these exports or detatch the connection to them.
+   1. To detatch an export, administrators can select **Detatch connection** in the export options and confirm your selection. You can detatch a connection for one or more selected exports.
+   1. By detatching a connection, you keep the export configuration but make it inactiv. It won't be run until another connection is added to it.
+   1. When no export is using the connection anymore, go back to **Admin** > **Connections** and try removing the connection again.
+
+1. To confirm the deletion select **Remove**.
 
