@@ -1,7 +1,7 @@
 ---
 title: "Export data from Customer Insights"
 description: "Manage exports to share data."
-ms.date: 02/15/2021
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -15,7 +15,10 @@ manager: shellyha
 
 The **Exports** page shows you all configured exports. Exports share specific data with various applications. They can include customer profiles or entities, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md).
 
-Go to **Data** > **Exports** to view the exports page. All user roles have access to view configured exports. Use of the search field in the command bar to find exports by their name, connection name or connection type.
+> [!NOTE]
+> Until March 2021, exports created a connection to the corresponding service automatically. Exports now require a [connection, created and shared by an administrator](connections.md) before you can create them. Read on for additinal details.
+
+Go to **Data** > **Exports** to view the exports page. All user roles have access to view configured exports. Use of the search field in the command bar to find exports by their name, connection name, or connection type.
 
 ## Set up a new export
 
@@ -42,7 +45,7 @@ To set up or edit an export, you need to have connections available to you. Conn
 
 ## View Exports and export details
 
-After creating export destinations, you'll find them in the list on **Data** > **Exports**. All user roles have access to this page to view what data is shared and its latest status.
+After creating export destinations, they are listed on **Data** > **Exports**. All users can see which data is shared and its latest status.
 
 1. Go to **Data** > **Exports**.
 
