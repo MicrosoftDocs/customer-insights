@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 02/01/2021
+ms.date: 03/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -38,6 +38,9 @@ This article explains how to create a new organization and how to provision an e
 ## Create an environment in an existing organization
 
 There are two ways to create a new environment. You can either specify an entirely new configuration, or you can copy some configuration settings from an existing environment.
+
+> [!NOTE]
+> By default, organizations can create *two* environments for every Customer Insights license. If your organization owns more than once license, please [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments.
 
 To create an environment:
 
