@@ -45,11 +45,16 @@ The offer email that you want to send out will contain the first name, last name
 
 With our target audience identified, we can configure the export from audience insights to an Azure Blob Storage account.
 
-1. In audience insights, go to **Admin** > **Export destinations**.
+1. In audience insights, go to **Admin** > **Connections**.
 
-1. In the **Adobe Campaign** tile, select **Set up**.
+1. Select Add connection and choose **Adobe Campaign** to configure the connection or select **Set up** in the **Adobe Campaign** tile
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Configuration tile for Adobe Campaign Standard.":::
+
+1. Give your connection a recognizable name in the Display name field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+
+1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see Allow contributors to use a connection for exports.
+
 
 1. Provide a **Display name** for this new export destination and then enter the **Account name**, **Account key**, and **Container** of the Azure Blob Storage account where you want to export the segment to.  
       
@@ -59,7 +64,17 @@ With our target audience identified, we can configure the export from audience i
 
    - To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-1. Select **Next**.
+1. Select **Save** to complete the connection.
+
+## Configure an export
+
+You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+
+1. Go to **Data** > **Exports**.
+
+1. To create a new export, select **Add export**.
+
+1. In the **Connection for export** field, choose a connection from the Adobe Campaign section. If you don't see this section name, there are no connections of this type available to you.
 
 1. Choose the segment that you want to export. In this example, it’s **ChurnProneCustomers**.
 
