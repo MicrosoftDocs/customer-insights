@@ -46,6 +46,7 @@ The offer email that you want to send out will contain the first name, last name
 
 With our target audience identified, we can configure the export from audience insights to an Azure Blob Storage account.
 
+### Configure a connection
 
 1. Go to **Admin** > **Connections**.
 
@@ -66,7 +67,7 @@ With our target audience identified, we can configure the export from audience i
 
 1. Select **Save** to complete the connection. 
 
-## Configure an export
+### Configure an export
 
 You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
