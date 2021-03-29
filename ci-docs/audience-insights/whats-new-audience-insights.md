@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 03/08/2021
+ms.date: 03/31/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -17,14 +17,46 @@ manager: shellyha
 
 We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
 
-You can also watch the following video to learn more about the capabilities planned for the last six months.
-
-> [!VIDEO https://www.youtube.com/embed/jQh-7pscH30]
-
 We roll out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action and we'll update the app automatically with no downtime.
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## March 2021 updates
+
+The updates in March 2021 include several features, performance upgrades, and bug fixes.
+
+### Extensibility
+
+- **Export segments to Campaign Monitor**
+   We have extended our export destinations to include Campaign Monitor. You can now export segments from Customer Insights to Campaign Monitor lists and use them as the baseline for your marketing campaigns.    
+   For more information, see 
+
+- **Export segments to Constant Contact**
+   We have extended our export destinations to include Constant Contact. You can now export segments from Customer Insights to Constant Contact lists and use them as the baseline for your marketing campaigns.   
+   For more information, see   
+
+- **Export segments to RollWorks**
+   We have extended our export destinations to include RollWorks. You can now export segments from Customer Insights to RollWorks audiences and use them as the baseline for your B2B advertising.    
+   For more information, see
+
+- **Export segments to Snapchat**
+   We have extended our export destinations to include Snapchat. You can now export segments from Customer Insights to Snapchat audiences and use them as the baseline for your advertising.    
+   For more information, see 
+
+### Predictions
+
+- **Use product filters in predictive product recommendations**
+   We have added the capability to use product filters in our product recommendation model. You can now create a prediction that uses only a subset of your products.   
+   For more information, see
+
+- **Create segments from model predictions**
+  We have added a quick way to create segments using the results of a prediction model. From the model results page, you can easily create a new segment by selecting the new **Create segment** option.    
+  For more information, see
+
+- **Explanations for Product Recommendations**
+   We have added information explaining the key factors learned by the AI model to generate product recommendations and the degree to which those factors contribute towards the product recommendations. This information is added to the model results screen.    
+   For more information, see
 
 ## February 2021 updates
 
