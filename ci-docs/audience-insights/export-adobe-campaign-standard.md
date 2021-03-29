@@ -57,7 +57,7 @@ With our target audience identified, we can configure the export from audience i
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
-1. Provide a **Display name** for this new export destination and then enter the **Account name**, **Account key**, and **Container** of the Azure Blob Storage account where you want to export the segment to.  
+1. Enter the **Account name**, **Account key**, and **Container** of the Azure Blob Storage account where you want to export the segment to.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration. "::: 
 
@@ -95,8 +95,6 @@ You can configure this export if you have access to a connection of this type. F
 1. Select **Save**.
 
 After saving the export destination, you find it on **Data** > **Exports**.
-
-:::image type="content" source="media/export-destination-adobe-campaign-standard.png" alt-text="Screenshot with list of exports and sample segment highlighted.":::
 
 You can now [export the segment on demand](export-destinations.md#run-exports-on-demand). The export will also run with every [scheduled refresh](system.md).
 
