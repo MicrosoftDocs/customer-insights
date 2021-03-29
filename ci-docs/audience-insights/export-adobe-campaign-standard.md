@@ -43,6 +43,8 @@ The offer email that you want to send out will contain the first name, last name
 
 ## Export your target audience
 
+### Configure a connection
+
 With our target audience identified, we can configure the export from audience insights to an Azure Blob Storage account.
 
 1. In audience insights, go to **Admin** > **Connections**.
@@ -53,8 +55,7 @@ With our target audience identified, we can configure the export from audience i
 
 1. Give your connection a recognizable name in the Display name field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see Allow contributors to use a connection for exports.
-
+1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
 1. Provide a **Display name** for this new export destination and then enter the **Account name**, **Account key**, and **Container** of the Azure Blob Storage account where you want to export the segment to.  
       
@@ -66,7 +67,7 @@ With our target audience identified, we can configure the export from audience i
 
 1. Select **Save** to complete the connection.
 
-## Configure an export
+### Configure an export
 
 You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
@@ -93,7 +94,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Select **Save**.
 
-After saving the export destination, you find it on **Admin** > **Exports** > **My export destinations**.
+After saving the export destination, you find it on **Data** > **Exports**.
 
 :::image type="content" source="media/export-destination-adobe-campaign-standard.png" alt-text="Screenshot with list of exports and sample segment highlighted.":::
 
