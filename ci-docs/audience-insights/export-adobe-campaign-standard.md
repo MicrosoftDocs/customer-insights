@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Adobe Campaign Standard"
 description: "Learn how use audience insights segments in Adobe Campaign Standard."
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -49,11 +49,11 @@ With our target audience identified, we can configure the export from audience i
 
 1. In audience insights, go to **Admin** > **Connections**.
 
-1. Select Add connection and choose **Adobe Campaign** to configure the connection or select **Set up** in the **Adobe Campaign** tile
+1. Select **Add connection** and choose **Adobe Campaign** to configure the connection or select **Set up** in the **Adobe Campaign** tile
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Configuration tile for Adobe Campaign Standard.":::
 
-1. Give your connection a recognizable name in the Display name field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
