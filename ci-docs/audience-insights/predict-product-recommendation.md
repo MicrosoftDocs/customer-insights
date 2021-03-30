@@ -32,6 +32,7 @@ If you're interested in trying this feature but don't have data to complete the 
     - Customer identifiers to map transactions to your customers.
     - Transaction event dates that specify dates the transaction occurred on.
     - (Optional) Product ID information for the transaction.
+    - (Optional) Product catalog data entity to use a product filter.
     - (Optional) If a transaction is a return or not.
     - The semantic data schema requires the following information:
         - **Transaction ID:** A unique identifier of a purchase or transaction.
@@ -90,7 +91,31 @@ If you're interested in trying this feature but don't have data to complete the 
 
 1. Select **Next**.
 
-### Set schedule and review configuration
+### Configure product filters
+
+Sometimes, only certain products are beneficial or appropriate for the type of prediction you build. Product filters let you identify a subset of products with specific characteristics to recommend to your customers. This may increase the personalization of the recommendations to your customers. The model will use all the products available to learn patterns but only use the products matching the product filter in its output.
+
+1. In the **Add product information** step, add your product catalog with information for each product. Map the information required in select **Next**.
+
+3. In the **Product filters** step, choose between the following options.
+
+   * **No filters**: Use all products in the product recommendation prediction.
+
+   * **Define specific product filters**: Use specific products in the product recommendation prediction.
+
+1. Select **Next**.
+
+1. If you choose to define a product filter, you need to define it now. In the **Product catalog attributes** pane, select the the attributes from your *Product Catalog entity* that you want include in the filter.
+
+   :::image type="content" source="media/product-filters-sidepane.png" alt-text="Side pane showing attributed in the product catalog entity to select for product filters.":::
+
+1. Choose if you want the product filter to use **and** or **or** connectors to logically combine your selection of attributes from product catalog.
+   
+   :::image type="content" source="media/product-filters-sample.png" alt-text="Sample configuration of product filters combined with logical AND connectors.":::
+
+1. Select **Next**.
+
+### Set update schedule and review configuration
 
 1. Set a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is imported into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
