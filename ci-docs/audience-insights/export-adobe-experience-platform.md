@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Adobe Experience Platform"
 description: "Learn how use audience insights segments in Adobe Experience Platform."
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -46,21 +46,36 @@ The offer email that you want to send out will contain the first name, last name
 
 With our target audience identified, we can configure the export from audience insights to an Azure Blob Storage account.
 
-1. In audience insights, go to **Admin** > **Export destinations**.
+### Configure a connection
 
-1. In the **Azure Blob Storage** tile, select **Set up**.
+1. Go to **Admin** > **Connections**.
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Configuration tile for Azure Blob Storage.":::
+1. Select **Add connection** and choose **Azure Blob Storage** or select **Set up** in the **Azure Blob Storage** tile:
 
-1. Provide a **Display name** for this new export destination and then enter the **Account name**, **Account key**, and **Container** of the Azure Blob Storage account where you want to export the segment to.  
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Configuration tile for Azure Blob Storage."::: to configure the connection.
+
+1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+
+1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+
+1. Enter **Account name**, **Account key**, and **Container** for your Blob storage account where you want to export the segment to.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration. "::: 
+   
+    - To learn more about how to find the Blob storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
+    - To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-   - To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
+1. Select **Save** to complete the connection. 
 
-   - To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+### Configure an export
 
-1. Select **Next**.
+You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+
+1. Go to **Data** > **Exports**.
+
+1. To create a new export, select **Add export**.
+
+1. In the **Connection for export** field, choose a connection from the Azure Blob Storage section. If you don't see this section name, there are no connections of this type available to you.
 
 1. Choose the segment that you want to export. In this example, it’s **ChurnProneCustomers**.
 
@@ -68,11 +83,9 @@ With our target audience identified, we can configure the export from audience i
 
 1. Select **Save**.
 
-After saving the export destination, you find it on **Admin** > **Exports** > **My export destinations**.
+After saving the export destination, you find it on **Data** > **Exports**.
 
-:::image type="content" source="media/export-destination-azure-blob-storage.png" alt-text="Screenshot with list of exports and sample segment highlighted.":::
-
-You can now [export the segment on demand](export-destinations.md#export-data-on-demand). The export will also run with every [scheduled refresh](system.md).
+You can now [export the segment on demand](export-destinations.md#run-exports-on-demand). The export will also run with every [scheduled refresh](system.md).
 
 > [!NOTE]
 > Ensure that the number of records in the exported segment are within the allowed limit of your Adobe Campaign Standard license.
