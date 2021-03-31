@@ -1,6 +1,6 @@
 ---
-title: "Export Customer Insights data to AdRoll"
-description: "Learn how to configure the connection and export to AdRoll."
+title: "Export Customer Insights data to RollWorks"
+description: "Learn how to configure the connection and export to RollWorks."
 ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -11,29 +11,29 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to AdRoll (preview)
+# Export segment lists to RollWorks (preview)
 
-Export segments of unified customer profiles to AdRoll and use them for advertising. 
+Export segments of unified customer profiles to RollWorks and use them for advertising. 
 
 ## Prerequisites for a connection
 
--	You have an [AdRoll account](https://www.adroll.com/) and corresponding administrator credentials.
+-	You have an [RollWorks account](https://www.rollworks.com/) and corresponding administrator credentials.
 -	You have [configured segments](segments.md) in audience insights.
 -	Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- You can export up to 250'000 profiles in per export to AdRoll.
-- You can't export segments with fewer than 100 profiles to AdRoll. 
-- Exporting to AdRoll is limited to segments.
-- Exporting up to 250'000 profiles to AdRoll can take up to 10 minutes to complete. 
-- The number of profiles that you can export to AdRoll is dependent and limited on your contract with AdRoll.
+- You can export up to 250'000 profiles in per export to RollWorks.
+- You can't export segments with fewer than 100 profiles to RollWorks. 
+- Exporting to RollWorks is limited to segments.
+- Exporting up to 250'000 profiles to RollWorks can take up to 10 minutes to complete. 
+- The number of profiles that you can export to RollWorks is dependent and limited on your contract with RollWorks.
 
-## Set up connection to AdRoll
+## Set up connection to RollWorks
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **AdRoll** to configure the connection.
+1. Select **Add connection** and choose **RollWorks** to configure the connection.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
@@ -41,9 +41,9 @@ Export segments of unified customer profiles to AdRoll and use them for advertis
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
-1. Select **Connect** to initialize the connection to AdRoll.
+1. Select **Connect** to initialize the connection to RollWorks.
 
-1. Select **Authenticate with AdRoll** and provide your admin credentials for AdRoll. 
+1. Select **Authenticate with RollWorks** and provide your admin credentials for RollWorks.
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
@@ -57,11 +57,11 @@ You can configure this export if you have access to a connection of this type. F
 
 1. To create a new export, select **Add destination**.
 
-1. In the **Connection for export** field, choose a connection from the AdRoll section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the RollWorks section. If you don't see this section name, there are no connections of this type available to you.
 
-1. Enter your **AdRoll Advertiser ID** [AdRoll Advertisable](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
+1. Enter your **RollWorks Advertiser ID** [RollWorks Advertisable](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to AdRoll.
+3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to RollWorks.
 
 1. Select the segments you want to export. Select a segment with a least 100 members. You can't export smaller segments. Additionally the maximum size of a segment to export is 250'000 members per export. 
 
@@ -75,6 +75,6 @@ You can also [export data on demand](export-destinations.md#run-exports-on-deman
 
 ## Data privacy and compliance
 
-When you enable Dynamics 365 Customer Insights to transmit data to AdRoll, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that AdRoll meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+When you enable Dynamics 365 Customer Insights to transmit data to RollWorks, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that RollWorks meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 
 Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.

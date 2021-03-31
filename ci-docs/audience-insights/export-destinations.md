@@ -1,7 +1,7 @@
 ---
-title: "Export destinations"
-description: "Export data and manage export destinations."
-ms.date: 07/21/2020
+title: "Export data from Customer Insights"
+description: "Manage exports to share data."
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,95 +11,66 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export destinations (preview) overview
+# Exports (preview) overview
 
-The **Export destinations** page shows you all locations you've set up to export data to. You can also add new destinations for export. Additionally, it shows export currently available options. Get a quick overview, description, and find out what you can do with each extensibility option. Export unified profiles, measures, and segments to supported apps relevant for your business.
+The **Exports** page shows you all configured exports. Exports share specific data with various applications. They can include customer profiles or entities, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md).
 
-Go to **Admin** > **Export destinations** to find the following extensibility options:
+> [!NOTE]
+> Until March 2021, exports created a connection to the corresponding service automatically. Exports now require a [connection, created and shared by an administrator](connections.md) before you can create them. Read on for additinal details.
 
-- [Adobe Campaign Standard](export-adobe-campaign-standard.md)
-- [Adobe Experience Platform](export-adobe-experience-platform.md)
-- [AdRoll](export-adroll.md)
-- [Autopilot](export-autopilot.md)
-- [Azure Blob Storage](export-azure-blob-storage.md)
-- [Azure Data Lake Storage Gen2](export-azure-data-lake-storage-gen2.md)
-- [Bot for Microsoft Teams](export-teams-bot.md)
-- [Customer Insights API](apis.md)
-- [DotDigital](export-dotdigital.md)
-- [Dynamics 365 Customer Service (Customer Card Add-in)](customer-card-add-in.md)
-- [Dynamics 365 Marketing](export-dynamics365-marketing.md)
-- [Dynamics 365 Sales](export-dynamics365-sales.md)
-- [Dynamics 365 Sales Hub (Customer Card Add-in)](customer-card-add-in.md)
-- [Facebook Ads Manager](export-facebook.md)
-- [Google Ads](export-google-ads.md)
-- [LiveRamp&reg;](export-liveramp.md)
-- [Mailchimp](export-mailchimp.md)
-- [Marketo](export-marketo.md)
-- [Power Automate](export-power-automate.md)
-- [Power Apps](export-power-apps.md)
-- [Power BI](export-power-bi.md)
-- [SendGrid](export-sendgrid.md)
-- [SFTP](export-sftp.md)
+Go to **Data** > **Exports** to view the exports page. All user roles have access to view configured exports. Use of the search field in the command bar to find exports by their name, connection name, or connection type.
 
-## Add a new export destination
+## Set up a new export
 
-To add export destinations, you have [administrator permissions](permissions.md). If you export to Microsoft services, we assume both services are in the same organization.
+To set up or edit an export, you need to have connections available to you. Connections depend on your [user role](permissions.md):
+- Administrators have access to all connections. They can also create new connections when setting up an export.
+- Contributors can have access to specific connections. They depend on administrators to configure and share connections. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+- Viewers can only view existing exports but not create them.
 
-1. Go to **Admin** > **Export destinations**.
+1. Go to **Data** > **Exports**.
 
-1. Switch to the **My export destinations** tab.
+1. Select **Add export** to create a new export destination.
 
-1. Select **Add destination** to create a new export destination.
+1. In the **Set up export** pane, select which connection to use. [Connections](connections.md) are managed by administrators. 
 
-1. In the **Add destination** pane, select the **Type** of export destination in the drop-down.
+1. Provide the required details and select **Save** to create the export.
 
-1. Provide the required details and select **Next** to create the export destination.
+### Edit an export
 
-You can also select **Set up** on a tile on the **Discover** tab.
+1. Select the vertical ellipsis for the export destination you want to edit.
 
-## View Export destinations
+1. Select **Edit** from the drop-down menu.
 
-After creating export destinations, you'll find them in a table on the **My export destinations** tab. This table has three columns:
+1. Change the values you want to update and select **Save**.
 
-- **Display name**: The name you entered when creating the destination.
-- **Type**: The export destination type you set when creating the destination.
-- **Created**: The date you created the destination.
+## View Exports and export details
 
-## Edit an export destination
+After creating export destinations, they are listed on **Data** > **Exports**. All users can see which data is shared and its latest status.
 
-1. Select the vertical ellipsis for the Export destination you want to edit.
+1. Go to **Data** > **Exports**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")
+1. Users without edit permissions select **View** instead of **Edit** see the export details.
 
-1. Select **Edit** from the dropdown menu.
+1. This side pane shows the set up of this export. Without edit permissions, you can't change values. Select **Close** to return to the exports page.
 
-1. Change the values that require update and select **Save**.
+## Run exports on demand
 
-## Export data on demand
+After configuring an export, it will run with every [scheduled refresh](system.md#schedule-tab) as long as it has a working connection.
 
-After configuring a connector for an export destination, exports will run with every [scheduled refresh](system.md#schedule-tab).
+To export data without waiting for a scheduled refresh, go to **Data** > **Exports**. You have two options:
 
-To export data without waiting for a scheduled refresh, go the **My export destinations** tab on **Admin** > **Export destinations**.
+- To run all exports, select **Run all** in the command bar. 
+- To run a single export, select the ellipsis (...) on a list item and then choose **Run**.
 
-> [!div class="mx-imgBorder"]
-> ![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")
+## Remove an Export
 
-- Select **Export** above the list to run the export to all export destinations simultaneously.
-- Select the ellipsis (...) after a list item and then choose the **Export** option to run the export for a single export destination.
+1. Go to **Data** > **Exports**.
 
-## Remove an Export destination
+1. Select the vertical ellipsis for the Export you want to remove.
 
-To remove an Export destination, start from the main **Export destinations** page.
+1. Select **Remove** from the dropdown menu.
 
-1. Select the vertical ellipsis for the Export destination you want to remove.
-
-   > [!div class="mx-imgBorder"]
-   > ![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")
-
-2. Select **Remove** from the dropdown menu.
-
-3. Confirm the removal by selecting **Remove** on the confirmation screen.
+1. Confirm the removal by selecting **Remove** on the confirmation screen.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
