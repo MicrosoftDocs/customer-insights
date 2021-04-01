@@ -53,6 +53,9 @@
       "extendBreadcrumb": true,
       "feedback_system": "None",
       "feedback_github_repo": "MicrosoftDocs/customer-insights",
+      "feedback_product_url": {
+        "audience-insights/**.*": "https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights"
+      },
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "titleSuffix": "Dynamics 365 Customer Insights",
       "recommendations": "true"
