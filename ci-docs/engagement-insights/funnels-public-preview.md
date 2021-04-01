@@ -79,7 +79,7 @@ You also have the ability to delete and reorder funnel steps by clicking on the 
 
 ## Edit a funnel report
 
-From the funnels resource list, you can view, edit and load previously created funnel reports. <Kate, what are some of the reasons to update a report?>
+From the funnels resource list, you can view, edit and load previously created funnel reports. You can edit to see how your funnels change over time, and also compare previous funnel reports to future ones. <Kate, what are some of the reasons to update a report?>
 
 1. Go to **Funnels** to see the list of existing funnel reports in the **Funnels library**.
 1.  Select a name to open a report.
