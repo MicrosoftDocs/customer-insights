@@ -52,7 +52,7 @@
       "breadcrumb_path": "/dynamics365/customer-insights/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
-      "feedback_github_repo": "MicrosoftDocs/customer-insights",      
+      "feedback_github_repo": "MicrosoftDocs/customer-insights",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "titleSuffix": "Dynamics 365 Customer Insights",
       "recommendations": "true"
