@@ -53,6 +53,21 @@ To configure HERE Technologies enrichments, the following prerequisites must be 
 
 ## Configuring connection for HERE technologies 
 
+You need to be an administrator to be able to configure connections. You can click on **Add connection** in the wizard flow as described above *or* go to **Admin** > **Connections** and select HERE Technologies from the dropdown or click **Set up** on the HERE technologies tile.
+
+1. Enter a name for the connection in the **Display name** box.
+
+1. Provide a valid HERE Technologies API key.
+
+1. Review and provide your consent for Data privacy and compliance by selecting the **I agree** checkbox
+
+1. Click verify to get the configuration verified.
+
+1. Once the verification has completed the connection can be saved by clicking **Save**.
+
+> [!div class="mx-imgBorder"]
+   > ![HERE Technologies connection configuration page](media/enrichment-HERE-connection.png "HERE Technologies connection configuration page")
+
 ## Enrichment results
 
 To start the enrichment process, select **Run** from the command bar. You can also let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The processing time will depend on the size of your customer data and the API response times from HERE Technologies.
