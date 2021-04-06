@@ -62,6 +62,8 @@ To select a country, open the **Brands enrichment** or **Interest enrichment** a
 
 ## Configure Enrichment
 
+A wizard guides you through the configuration of the enrichments. 
+
 ### Define your brands or interests
 
 Select one of the following options:
@@ -100,6 +102,13 @@ The following formats and values are supported, values are not case-sensitive:
   - AU: Australia, AU, Common Wealth of Australia
   - FR: France, FR, French Republic
   - DE: Germany, German, Deutschland, Allemagne, DE, Federal Republic of Germany, Republic of Germany
+
+## Review and name the enrichment
+
+Finally, you get to review the entered information and you are prompted to provide a name for the enrichment.
+
+   > [!div class="mx-imgBorder"]
+   > ![Brands & Interests tiles](media/enrichment-interests-summary.png "Interest review and naming page")
 
 ## Refresh enrichment
 
