@@ -20,8 +20,8 @@ Leadspace is a data science company that provides a B2B Customer Data Platform. 
 To configure Leadspace, the following prerequisites must be met:
 
 - You have an active Leadspace license and the “perpetual key” (referred to as **Leadspace token**). Contact directly [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) for details about their product.
-- You have [Administrator](permissions.md#administrator) permissions.
 - You have [unified customer profiles](customer-profiles.md) for companies.
+- There is a Leadspace connection already been configured by an Administrator or you have [Administrator](permissions.md#administrator) permissions and the Leadspace token.
 
 ## Configuration
 
