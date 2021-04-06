@@ -47,5 +47,14 @@ Select an enrichment to see the available options. Alternatively, you can select
 
 You can run or deactivate multiple enrichments at once by selecting them in the list. View and edit options aren't available as bulk action and only work for one enrichment at a time.
 
+## Enrichments and Connections
+
+Third party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides concent for data transfers. The administrator can specify whether a connection can be used only by administrators or by both administrators and contributers to configure enrichments.  
+
+## Multiple enrichments of the same type
+
+The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles, e.g., only a specific segment. You can configure several enrichments of the same type and re-use the connection. Some enrichments will have limits to the number of enrichments of the same type that can ve created. The limits and current use can be seen on the enrichment hub page.
+
+:::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
