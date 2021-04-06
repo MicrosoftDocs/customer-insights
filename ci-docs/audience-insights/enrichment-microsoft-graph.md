@@ -108,7 +108,7 @@ The following formats and values are supported, values are not case-sensitive:
 Finally, you get to review the entered information and you are prompted to provide a name for the enrichment.
 
    > [!div class="mx-imgBorder"]
-   > ![Brands & Interests tiles](media/enrichment-interests-summary.png "Interest review and naming page")
+   > ![Interests review and naming](media/enrichment-interests-summary.png "Interests review and naming page")
 
 ## Refresh enrichment
 
