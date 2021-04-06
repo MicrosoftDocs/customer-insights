@@ -21,24 +21,22 @@ To configure HERE Technologies enrichments, the following prerequisites must be 
 
 - You have an active HERE Technologies subscription. To get a subscription, you can [sign-up here](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) or [contact HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you) directly. [Learn more about HERE Technologies Location Enrichment.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- You have the HERE Technologies API key.
-
-- You have [Administrator](permissions.md#administrator) permissions.
+- There is a HERE [connection](connections.md) available *or* you have [Administrator](permissions.md#administrator) permissions and the HERE Technologies API key.
 
 ## Configuration
 
-1. Go to **Data** > **Enrichment**.
+1. Go to **Data** > **Enrichment**. A wizard flow is initiated that guides you through the configuration steps.
 
-1. Select **Enrich my data** on the HERE Technologies tile.
+1. Select **Enrich my data** on the HERE Technologies tile and then click **Get started**.
 
    > [!div class="mx-imgBorder"]
    > ![HERE Technologies tile](media/HERE-tile.png "HERE Technologies tile")
 
-1. Enter an active **HERE Technologies API key**. Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox. 
+1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you will be able to create a connection by clicking **Add connection** and selecting HERE Technologies from the drop-down, see the section below. 
 
-1. Confirm both inputs by selecting **Connect to HERE**.
+1. Confirm connection selection by clicking **Connect to HERE Technologies**.
 
-1.	Select **Add data** and choose the **Customer data set** you want to enrich with location data from HERE Technologies. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+1.	Now, click **Next** and select the **Customer data set** you want to enrich with location data from HERE Technologies. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
 
     :::image type="content" source="media/enrichment-HERE-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
 
@@ -49,7 +47,11 @@ To configure HERE Technologies enrichments, the following prerequisites must be 
    > [!div class="mx-imgBorder"]
    > ![HERE Technologies enrichment configuration page](media/enrichment-HERE-configuration.png "HERE Technologies enrichment configuration page")
 
-1. Select **Apply** to complete the field mapping.
+1. Select **Next** to complete the field mapping.
+
+1. Finally, you provide a name for the enrichment. Save the enrichment by clicking on **Save enrichment** after reviewing your choices.
+
+## Configuring connection for HERE technologies 
 
 ## Enrichment results
 
