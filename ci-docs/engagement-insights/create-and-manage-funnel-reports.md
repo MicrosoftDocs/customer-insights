@@ -23,7 +23,7 @@ Before creating a funnel report, you must create a [workspace](manage-environmen
 
 ## Create a funnel report
 
-To create the funnel report, specify the steps that you want to include and the activity for each step. An activity is an [event](glossary.md) that represents user behavior. You can also set a time period for the report. The funnel report gathers data from the selected steps. <Kate, is this true?>
+To create the funnel report, specify the steps that you want to include and the activity for each step. An activity is an [event](glossary.md) that represents user behavior. You can also set a time period for the report. The funnel report displays the number of users who completed each defined step. 
 
 1. Go to **Funnels,** and select **+New funnel** to start a funnel report.
 1. In the **Funnel Editor**, under **Steps** select **+Add step.** 
@@ -52,7 +52,7 @@ This funnel lets you see the number of users who used the promotion code after a
 
 ## Manage funnel reports
 
-You can view previously created funnel reports in the **Funnels library** to see how your report changes over time and compare previous funnel reports to future ones. <Kate, How would I compare reports?>
+You can view previously created funnel reports in the **Funnels library** to see how your report changes over time and compare previous funnel reports to future ones. <Kate, How would I compare reports?> <You can't compare side-by-side, can only pull one up at a time right now. Can just go back and look at funnels :)>
 
  1. Go to **Funnels** to see the list of existing funnel reports in the **Funnels library**.
  1. Select a name to open a report.
@@ -71,4 +71,4 @@ You can also delete and reorder steps.
 1. Select **Save**  to update your changes.
 
 > [!NOTE]
-> Future enhancements to funnel reports include support for scenarios in which users transition from unauthenticated and authenticated (Kate, do you mean a user in Active Directory services?Can we supply a link for more information for users?). At this time, engagement insights funnel reports supports scenarios in which all users are anonymous OR all users in the funnel are authenticated.
+> Future enhancements to funnel reports include support for scenarios in which visitors transition from unauthenticated and authenticated (Kate, do you mean a user in Active Directory services?Can we supply a link for more information for users?)** no, visitors to your website. It will be solved with Unknown to known feature that will come in the fall**> . At this time, engagement insights funnel reports supports scenarios in which all users are anonymous OR all users in the funnel are authenticated.
