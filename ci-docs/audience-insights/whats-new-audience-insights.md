@@ -62,7 +62,7 @@ The updates in March 2021 include several features, performance upgrades, and bu
 ### Predictions
 
 - **Use product filters in predictive product recommendations**
-   We have added the capability to use product filters in our product recommendation model. You can now create a prediction that uses only a subset of your products.   
+   We have added the capability to use product filters in our product recommendation model. You can now create a prediction that uses only a subset of your products.    
    For more information, see [Configure product filters](predict-product-recommendation.md#configure-product-filters).
 
 - **Create segments from model predictions**
