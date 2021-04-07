@@ -33,6 +33,8 @@ To configure the connection from Customer Insights to Azure Synapse Analytics an
 
 * On Synapse workspace, the service principal for Audience Insights needs to be assigned **Reader** permissions. Learn more on [How to set up access control for your Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/security/how-to-set-up-access-control) 
 
+* On Synapse workspace, the user needs to be assigned **Storage Blob Data Contributor** permissions. Learn more on [How to set up access control for your Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/security/how-to-set-up-access-control) 
+
 * On Synapse workspace api, the first party app needs **Admin** role assigned. Learn more on [How to set up access control for your Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/security/how-to-set-up-access-control) 
 
 # Set up the connection to Azure Synapse Analytics from within Customer Insights
