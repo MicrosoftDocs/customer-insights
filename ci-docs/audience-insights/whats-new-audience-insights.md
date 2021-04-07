@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 03/31/2021
+ms.date: 04/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -26,7 +26,22 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 The updates in March 2021 include several features, performance upgrades, and bug fixes.
 
+### Activities
+
+- **Activity wizard and semantic types**
+  We have improved and updated our activity mapping experience to guide and simplify the creation of activity mapping. In this new experience, users get a guided experience to help completing of each step of the process. At the activity mapping step, in addition to choosing from many activity types, the user can choose to semantically map data for *Subscription* and/or *SalesOrderLine* to industry standard schemas, which can be used for downstream consumption.    
+  For more information, see
+
+### Data ingestion
+
+- **Connect to on-premises data sources using Power Platform dataflows and gateways**
+  We are pleased to announce the preview of Power Platform dataflows and on-premises connectivity using gateways in Customer Insights with an associated Power Platform or Dataverse environment. Any new data sources created in a Customer Insights environment with a linked Dataverse environment will default to Power Platform dataflows bringing in the on-premises data connectivity and a rich set of connectors and transformation capabilities.
+
 ### Extensibility
+
+- **Exports organized in connections and exports**
+  We have changed the name of the **Export destinations** page to **Connections** and added a separate page for **Exports**. As part of this update, we'll transition existing exports into pairs of a connection and an export using that connection. Administrators now have more clarity over outgoing data on the **Connections** page. All user roles have access to the **Exports** page, but only administrators can choose to allow contributors to edit specific exports with shared connections.     
+  For more information, see 
 
 - **Export segments to Campaign Monitor**
    We have extended our export destinations to include Campaign Monitor. You can now export segments from Customer Insights to Campaign Monitor lists and use them as the baseline for your marketing campaigns.    
