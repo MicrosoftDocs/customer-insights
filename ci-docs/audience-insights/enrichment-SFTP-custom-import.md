@@ -20,7 +20,7 @@ Secure File Transfer Protocol (SFTP) custom import enables you to import data th
 To configure SFTP custom import, the following prerequisites must be met:
 
 - You have the filename and location (path) of the file to be imported on the SFTP host.
-- There is a *model.json* file that specifies the [CDM schema](https://docs.microsoft.com/en-us/common-data-model/) for the data that are to be imported. This file must be in the same directory as the file to import.
+- There is a *model.json* file that specifies [the Common Data Model schema](/common-data-model/) for the data that are to be imported. This file must be in the same directory as the file to import.
 - A SFTP connection has already been configured by an Administrator *or* you have [Administrator](permissions.md#administrator) permissions and you have user credentials (user name and password), URL, and port number for the SFTP location where the data that is going to be imported from.
 
 
@@ -28,19 +28,38 @@ To configure SFTP custom import, the following prerequisites must be met:
 
 1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
-1. On the **SFTP custom import tile**, select **Enrich my data**.
+1. On the **SFTP custom import tile**, select **Enrich my data** and then click **Get started**.
 
    > [!div class="mx-imgBorder"]
    > ![SFTP Custom Import tile](media/SFTP_Custom_Import_tile.png "SFTP Custom Import tile")
 
-1. Select **Get started** and provide the credentials and the address for the SFTP server. For example, sftp://mysftpserver.com:22.
+1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you will be able to create a connection by clicking **Add connection** and selecting SFTP Custom Import from the drop-down, see the section below. 
 
-1. Enter the name of the file that contains the data and path to the file on the SFTP server if it's not in the root folder.
+1. Confirm connection selection by clicking **Connect to Custom Import**.
 
-1. Confirm all inputs by selecting **Connect to Custom Import**.
+1.	Now, click **Next** and enter the location (**Filename** and **Path**)  of the data file that you want to bring into Audience Insights.
 
-   > [!div class="mx-imgBorder"]
-   > ![SFTP Custom Import Configuration flyout](media/SFTP_Custom_Import_Configuration_flyout.png "SFTP Custom Import Configuration flyout")
+    :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Screenshot when entering data location.":::
+
+1. Click **Next** and provide a name for the enrichment and a name for the output entity. Notice that the entity name cannot be changed after saving. Save the enrichment by clicking on **Save enrichment** after reviewing your choices.
+
+## Configuring connection for SFTP Custom Import 
+
+You need to be an administrator to be able to configure connections. You can click on **Add connection** in the wizard flow as described above *or* go to **Admin** > **Connections** and select Custom Import from the dropdown or click **Set up** on the Custom Import tile.
+
+1. Enter a name for the connection in the **Display name** box.
+
+1. Enter valid user name, password, and host URL for the STFP server the data to be imported resides on.
+
+1. Review and provide your consent for Data privacy and compliance by selecting the **I agree** checkbox
+
+1. Click verify to get the configuration verified.
+
+1. Once the verification has completed the connection can be saved by clicking **Save**.
+
+> [!div class="mx-imgBorder"]
+   > ![Experian connection configuration page](media/enrichment-SFTP-connection.png "Experian connection configuration page")
+
 
 ## Defining field mappings 
 
