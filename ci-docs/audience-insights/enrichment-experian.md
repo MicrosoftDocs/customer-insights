@@ -20,8 +20,8 @@ Experian is a global leader in consumer and business credit reporting and market
 To configure Experian, the following prerequisites must be met:
 
 - You have an active Experian subscription. To get a subscription, [contact Experian](https://www.experian.com/marketing-services/contact) directly. [Learn more about Experian Data Enrichment](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
-- You have the User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
-- You have [Administrator](permissions.md#administrator) permissions in audience insights.
+
+- An Experian connection has already been configured by an Administrator *or* you have [Administrator](permissions.md#administrator) permissions and the User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
 
 ## Configuration
 
@@ -31,26 +31,50 @@ To configure Experian, the following prerequisites must be met:
 
    > [!div class="mx-imgBorder"]
    > ![Experian tile](media/experian-tile.png "Experian tile")
+   > 
 
-1. Select **Get started** and enter the User ID, Party ID, and Model Number for your Experian Secure Transport account. Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox. Confirm all inputs by selecting **Apply**.
+1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you will be able to create a connection by clicking **Add connection** and selecting Experian from the drop-down, see the section below. 
 
-## Map your fields
+1. Confirm connection selection by clicking **Connect to Experian**.
 
-1.	Select **Add data** and choose the **Customer data set** you want to enrich with demographics data from Experian. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+1.	Now, click **Next** and select the **Customer data set** you want to enrich with demographics data from Experian. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
 
-1. Select your key identifiers from **Name and Address**, **E-mail**, or **Phone** to send to Experian for identity resolution.
+    :::image type="content" source="media/enrichment-Experian-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
 
-   > [!TIP]
+1. Click **Next** and define which type of fields from your unified profiles should be used to look for matching demographics data from Experian. At least one of the fields **Name and address**, **Phone**, or **Email** is required. For a higher match accuracy, up to two other fields can be added. This selection will affect the mapping fields you have access to in the next step of the configuration wizard.
+
+   :::image type="content" source="media/enrichment-Experian-mapping.png" alt-text="Leadspace field mapping pane.":::
+   
+      > [!TIP]
    > More key identifier attributes sent to Experian likely yield a higher match rate.
 
-1. Select **Next** and map the corresponding attributes from your unified customer entity for the selected key identifier fields.
+1. Click **Next** to start the field mapping.
 
-1. Select **Add attribute** to map any additional attributes you would like to send to Experian.
+1. Define which fields from your unified profiles should be used to look for matching demographics data from Experian. The fields with an asterix are required.
 
-1.	Select **Save** to complete the field mapping.
+1. Click **Next** to start the field mapping.
 
-    > [!div class="mx-imgBorder"]
-    > ![Experian field mapping](media/experian-field-mapping.png "Experian field mapping")
+1. Finally, you provide a name for the enrichment and a name for the output entity. Notice that the entity name cannot be changed after saving. Save the enrichment by clicking on **Save enrichment** after reviewing your choices.
+
+## Configuring connection for Experian 
+
+You need to be an administrator to be able to configure connections. You can click on **Add connection** in the wizard flow as described above *or* go to **Admin** > **Connections** and select Experian from the dropdown or click **Set up** on the Experian tile.
+
+1. Select **Get Started**.
+
+1. Enter a name for the connection in the **Display name** box.
+
+1. Enter valid User ID, Party ID, and Model Number for your Experian Secure Transport account.
+
+1. Review and provide your consent for Data privacy and compliance by selecting the **I agree** checkbox
+
+1. Click verify to get the configuration verified.
+
+1. Once the verification has completed the connection can be saved by clicking **Save**.
+
+> [!div class="mx-imgBorder"]
+   > ![Experian connection configuration page](media/enrichment-Experian-connection.png "Experian connection configuration page")
+
 
 ## Enrichment results
 
