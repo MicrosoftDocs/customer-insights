@@ -30,7 +30,7 @@ The updates in March 2021 include several features, performance upgrades, and bu
 
 - **Activity wizard and semantic types**
   We have improved and updated our activity mapping experience to guide and simplify the creation of activity mapping. In this new experience, users get a guided experience to help completing of each step of the process. At the activity mapping step, in addition to choosing from many activity types, the user can choose to semantically map data for *Subscription* and/or *SalesOrderLine* to industry standard schemas, which can be used for downstream consumption.    
-  For more information, see
+  For more information, see [Customer activities](activities.md).
 
 ### Data ingestion
 
@@ -41,37 +41,37 @@ The updates in March 2021 include several features, performance upgrades, and bu
 
 - **Exports organized in connections and exports**
   We have changed the name of the **Export destinations** page to **Connections** and added a separate page for **Exports**. As part of this update, we'll transition existing exports into pairs of a connection and an export using that connection. Administrators now have more clarity over outgoing data on the **Connections** page. All user roles have access to the **Exports** page, but only administrators can choose to allow contributors to edit specific exports with shared connections.     
-  For more information, see 
+  For more information, see [Connections overview](connections.md) and [Exports overview](export-destinations.md).
 
 - **Export segments to Campaign Monitor**
    We have extended our export destinations to include Campaign Monitor. You can now export segments from Customer Insights to Campaign Monitor lists and use them as the baseline for your marketing campaigns.    
-   For more information, see 
+   For more information, see [Export to Campaign Monitor](export-campaign-monitor.md).
 
 - **Export segments to Constant Contact**
    We have extended our export destinations to include Constant Contact. You can now export segments from Customer Insights to Constant Contact lists and use them as the baseline for your marketing campaigns.   
-   For more information, see   
+   For more information, see [Export to Constant Contact](export-constant-contact.md).
 
 - **Export segments to RollWorks**
    We have extended our export destinations to include RollWorks. You can now export segments from Customer Insights to RollWorks audiences and use them as the baseline for your B2B advertising.    
-   For more information, see
+   For more information, see [Export to RollWorks ](export-rollworks.md).
 
 - **Export segments to Snapchat**
    We have extended our export destinations to include Snapchat. You can now export segments from Customer Insights to Snapchat audiences and use them as the baseline for your advertising.    
-   For more information, see 
+   For more information, see [Export to Snapchat](export-snapchat.md).
 
 ### Predictions
 
 - **Use product filters in predictive product recommendations**
    We have added the capability to use product filters in our product recommendation model. You can now create a prediction that uses only a subset of your products.   
-   For more information, see
+   For more information, see [Configure product filters](predict-product-recommendation.md#configure-product-filters).
 
 - **Create segments from model predictions**
   We have added a quick way to create segments using the results of a prediction model. From the model results page, you can easily create a new segment by selecting the new **Create segment** option.    
-  For more information, see
+  For more information, see [Create a segment based on a prediction model](prediction-based-segment.md).
 
-- **Explanations for Product Recommendations**
+- **Explanations for product recommendations**
    We have added information explaining the key factors learned by the AI model to generate product recommendations and the degree to which those factors contribute towards the product recommendations. This information is added to the model results screen.    
-   For more information, see
+   For more information, see [Review a prediction status and results](predict-product-recommendation.md#review-a-prediction-status-and-results).
 
 ## February 2021 updates
 
