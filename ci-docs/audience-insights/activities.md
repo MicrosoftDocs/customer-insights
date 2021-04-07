@@ -1,7 +1,7 @@
 ---
 title: "Customer activities"
 description: "Define customer activities and view them in customer timeline." 
-ms.date: 03/23/2021
+ms.date: 04/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -64,7 +64,7 @@ Your data sources can include entities with transactional and activity data from
 
 1. Select **Next** to move to the next step. 
 
-1. In the Review step, verify your selections. You go back to any of the previous steps and update the information if necessary.
+1. In the **Review** step, verify your selections. You go back to any of the previous steps and update the information if necessary.
 
    :::image type="content" source="media/Activity_Wizard5.PNG" alt-text="Review the specified fields for an activity.":::
    
@@ -79,8 +79,6 @@ Your data sources can include entities with transactional and activity data from
 ## Manage existing activities
 
 On **Data** > **Activities**, you can view all your saved activities, and manage them. Each activity is represented by a row that also includes details about the source, the entity, and the activity type.
-
-:::image type="content" source="media/Activity_Wizard8.PNG" alt-text="List of activities on the Activities page and options to manage them."::: 
 
 The following actions are available when you select an activity. 
 
