@@ -50,10 +50,10 @@ You can also select **Set up** on a tile on the **Discover** tab.
 ### Allow contributors to use a connection 
 
 When setting up or editing a connection you choose which users are allowed to use this specific connection to define [exports](export-destinations.md) or [enrichments](enrichment-hub.md). By default a connection is available to users with an administrator role. You can change this setting under **Choose who can use this connection** and allow users with contributor role to use this connection.
-Connections
-- Contributors won't be able to view or edit the connection. They will only see the display name and its type when creating an export.
-- By sharing a connection you allow contributors to use a connection. Contributors will see shared connections when they set up exports and enrichments. They can manage every export or enrichment using this specific connection.
-- You can change this setting while keeping the enrichments and exports already defined by contributors.
+
+- Contributors won't be able to view or edit the connection. They will only see the display name and its type when creating an export or enrichment.
+- By sharing a connection you allow contributors to use a connection. Contributors will see shared connections when they set up exports and enrichments. They can manage every export or enrichment that uses this specific connection.
+- You can change this setting while keeping the enrichments and exports that have already been defined by contributors.
 
 ## Edit a connection
 
