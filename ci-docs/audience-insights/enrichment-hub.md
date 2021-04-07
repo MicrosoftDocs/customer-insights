@@ -53,7 +53,7 @@ Third party enrichments are configured using [connections](connections.md), whic
 
 ## Multiple enrichments of the same type
 
-The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles, e.g., only a specific segment. You can configure several enrichments of the same type and re-use the connection. Some enrichments will have limits to the number of enrichments of the same type that can ve created. The limits and current use can be seen on the enrichment hub page.
+The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles, e.g., only a specific segment. You can configure several enrichments of the same type and re-use the connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on the enrichment hub page.
 
 :::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page":::
 
