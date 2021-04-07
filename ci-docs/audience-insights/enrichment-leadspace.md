@@ -27,9 +27,37 @@ To configure Leadspace, the following prerequisites must be met:
 
 1. In audience insights, go to **Data** > **Enrichment**.
 
-1. Select **Enrich my data** on the Leadspace tile.
+1. Select **Enrich my data** on the Leadspace tile and then click **Get started**.
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="Screenshot of the Leadspace tile.":::
+
+1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you will be able to create a connection by clicking **Add connection** and selecting Leadspace from the drop-down, see the section below. 
+
+1. Confirm connection selection by clicking **Connect to Leadspace**.
+
+1.	Now, click **Next** and select the **Customer data set** you want to enrich with company data from Leadspace. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+
+    :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
+
+1. Click **Next** and define which fields from your unified profiles should be used to look for matching company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
+
+   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace field mapping pane.":::
+
+1. Select **Next** to complete the field mapping.
+
+1. Finally, you provide a name for the enrichment. Save the enrichment by clicking on **Save enrichment** after reviewing your choices.
+
+
+## Configuring connection for Leadspace 
+
+You need to be an administrator to be able to configure connections. You can click on **Add connection** in the wizard flow as described above *or* go to **Admin** > **Connections** and select Leadspace from the dropdown or click **Set up** on the Leadspace tile.
+
+
+
+
+
+
+
 
 1. Select **Get Started** and then enter an active **Leadspace token** (perpetual key). Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox. Confirm both inputs by selecting **Connect to Leadspace**.
 
