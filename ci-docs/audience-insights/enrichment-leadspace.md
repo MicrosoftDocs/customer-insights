@@ -21,7 +21,7 @@ To configure Leadspace, the following prerequisites must be met:
 
 - You have an active Leadspace license.
 - You have [unified customer profiles](customer-profiles.md) for companies.
-- A Leadspace connection has already been configured by an Administrator or you have [Administrator](permissions.md#administrator) permissions and and the “perpetual key” (referred to as **Leadspace token**). Contact directly [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) for details about their product.
+- A Leadspace connection has already been configured by an Administrator or you have [Administrator](permissions.md#administrator) permissions and the “perpetual key” (referred to as **Leadspace token**). Contact directly [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) for details about their product.
 
 ## Configuration
 
