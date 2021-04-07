@@ -56,7 +56,7 @@ The updates in March 2021 include several features, performance upgrades, and bu
    For more information, see [Export to RollWorks ](export-rollworks.md).
 
 - **Export segments to Snapchat**
-   We have extended our export destinations to include Snapchat. You can now export segments from Customer Insights to Snapchat audiences and use them as the baseline for your advertising.    
+   We have extended our export destinations to include Snapchat. You can now export segments from Customer Insights to Snapchat audiences and use them as the baseline for your advertising.     
    For more information, see [Export to Snapchat](export-snapchat.md).
 
 ### Predictions
