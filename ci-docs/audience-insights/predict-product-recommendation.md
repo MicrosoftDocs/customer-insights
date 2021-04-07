@@ -42,7 +42,7 @@ If you're interested in trying this feature but don't have data to complete the 
         - (Optional) **Purchase or return:** A true/false field where true identifies that a transaction was a return. If the Purchase or Return data is not provided the model and the **Value of the transaction** is negative, we will also use this information to infer a return.
     - **Suggested data characteristics:**
         - <u>Sufficient history length</u>: At least 1 year of Transactional data, but preferably 2-3 years  of Transactional data so that some seasonality is captured in the data.
-        - <u>Multiple purchases per customer ID</u>: At least 2 transactions per Customer ID
+        - <u>Multiple purchases per customer ID</u>: At least 3 transactions per Customer ID
         - <u>Minimum data requirement</u>: At least 100 customers in the data (the model will fail with less than 100 customers), but preferably more than 10,000 customers.
         - Notes: 
           - Only one transaction history entity can be configured at this time. Multiple purchase entities can be unioned in PowerQuery before ingestion.
