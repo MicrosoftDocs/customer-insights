@@ -13,17 +13,16 @@ manager: shellyha
 
 # Enrich customer profiles with custom data (preview)
 
-Secure File Transfer Protocol(SFTP) custom import enables you to import data that doesn't have to go through the process of data unification. It's a flexible, secure, and easy way to bring in your data. SFTP custom import can be used in combination with [SFTP export](export-sftp.md) that lets you export the customer profile data that is needed for enrichment. The data can then be processed, enriched, and SFTP custom import can be used to bring the enriched data back to the audience insights capability of Dynamics 365 Customer Insights.
+Secure File Transfer Protocol (SFTP) custom import enables you to import data that does not have to go through the process of data unification. It is a flexible, secure, and easy way to bring in your data. SFTP custom import can be used in combination with [SFTP export](export-sftp.md) that lets you export the customer profile data that is needed for enrichment. The data can then be processed, enriched, and SFTP custom import can be used to bring the enriched data back to the audience insights capability of Dynamics 365 Customer Insights.
 
 ## Prerequisites
 
 To configure SFTP custom import, the following prerequisites must be met:
 
-- You have user credentials (user name and password) for the SFTP location where the data that is going to be imported from.
-- You have the URL and port number (usually 22) for the STFP host.
-- You have the filename and location of the file to be imported on the SFTP host.
-- There's a *model.json* file that specifies the schema for the data that are to be imported. This file must be in the same directory as the file to import.
-- You have [Administrator](permissions.md#administrator) permission.
+- You have the filename and location (path) of the file to be imported on the SFTP host.
+- There is a *model.json* file that specifies the [CDM schema](https://docs.microsoft.com/en-us/common-data-model/) for the data that are to be imported. This file must be in the same directory as the file to import.
+- A SFTP connection has already been configured by an Administrator *or* you have [Administrator](permissions.md#administrator) permissions and you have user credentials (user name and password), URL, and port number for the SFTP location where the data that is going to be imported from.
+
 
 ## Configuration
 
