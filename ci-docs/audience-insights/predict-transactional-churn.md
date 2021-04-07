@@ -41,7 +41,14 @@ Transactional churn prediction helps predict if a customer will no longer purcha
         - **Timestamp:** The date and time of the event identified by the primary key.
         - **Event:** The name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
         - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
-
+    - **Suggested data characteristics:**
+        - Sufficient history length: Preferred: At least 2-3 years of Transactional data or at least twice the **prediction time window** selected. 
+        - Multiple purchases per customer ID: ideally at least 2 transactions per customer ID.
+        - Minimum data requirement: At least 10 profiles in the data (the model will fail with less than 10 customers), but preferably more than 10,000 customers, and data range history at least twice the prediction window selected.
+        - Notes:
+            - For any additional data added, there should not be more than 20% of missing values in the data field of the entity provided.
+            - A business with high customer purchase frequency (purchases repeated every few weeks) it's recommended to select a shorter prediction window and churn definition
+            - A business with low customer purchase frequency (purchases repeared every few months or once a year) it's recommended to select a longer prediction window and churn definition.
 ## Create a transactional churn prediction
 
 1. In Customer Insights, go to **Intelligence** > **Predictions**.
@@ -125,6 +132,8 @@ Transactional churn prediction helps predict if a customer will no longer purcha
    - **Prediction name:** Name of the prediction provided when creating it.
    - **Prediction type:** Type of model used for the prediction
    - **Output entity:** Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.
+        - Note: In the output entity, "ChurnScore" is the predicted probability of churn and “IsChurn” is a binary label based on the “ChurnScore” with 0.5 threshold. The threshold might be too high or too low and not applicable to your actual use scenario. You can go to “Segments” to create a new high risk segment based on custom threshold. 
+        - Note: Customers in the customers entity are not necessarily active customers. Some of them may haven’t had any activities for a long time and are considered as churned already (based on the value of “churn definition”). It’s not very meaningful and useful to predict churn risk for customers who already churned (not your population of interest).
    - **Predicted field:** This field is populated only for some types of predictions, and isn't used in churn prediction.
    - **Status:** Status of the prediction run.
         - **Queued:** Prediction is waiting for other processes to run.
