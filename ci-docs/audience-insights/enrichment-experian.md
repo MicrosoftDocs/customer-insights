@@ -43,8 +43,6 @@ To configure Experian, the following prerequisites must be met:
 
 1. Click **Next** and define which type of fields from your unified profiles should be used to look for matching demographics data from Experian. At least one of the fields **Name and address**, **Phone**, or **Email** is required. For a higher match accuracy, up to two other fields can be added. This selection will affect the mapping fields you have access to in the next step of the configuration wizard.
 
-   :::image type="content" source="media/enrichment-Experian-mapping.png" alt-text="Leadspace field mapping pane.":::
-   
       > [!TIP]
    > More key identifier attributes sent to Experian likely yield a higher match rate.
 
