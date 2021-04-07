@@ -30,7 +30,7 @@ To create the funnel report, specify the steps that you want to include and the 
 :::image type="content" source="media/new-funnel-report.png" alt-text="New custom reports":::
 
 1. Enter a name in  **Step title**.
-1. Select an **Activity**. An activity records when a user views a page (view activity) or interacts with content (action activity).
+1. Select an **Activity**. An activity records when a user views a page (**View** activity) or interacts with content (**Action** activity).
 1. Use **Step criteria** to specify the activity's dimension. Dimensions are attributes that can describe, filter, or group data.
 
 1. Select **Add step** until you complete all the steps you want in the report.
