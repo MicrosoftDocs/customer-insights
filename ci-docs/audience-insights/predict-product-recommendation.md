@@ -31,15 +31,23 @@ If you're interested in trying this feature but don't have data to complete the 
     - Transaction identifiers to distinguish purchases or transactions.
     - Customer identifiers to map transactions to your customers.
     - Transaction event dates that specify dates the transaction occurred on.
-    - (Optional) Product ID information for the transaction.
-    - (Optional) Product catalog data entity to use a product filter.
+    - Product ID information for the transaction.
+    - (Optional) A Product catalog data entity to use a product filter.
     - (Optional) If a transaction is a return or not.
     - The semantic data schema requires the following information:
         - **Transaction ID:** A unique identifier of a purchase or transaction.
         - **Transaction date:** The date of the purchase or transaction.
         - **Value of the transaction:** The numerical value of the purchase or transaction.
         - **Unique product ID:** The ID of the product or service purchased if your data is at a line item level.
-        - (Optional) **Purchase or return:** A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we will also use this information to infer a return.
+        - (Optional) **Purchase or return:** A true/false field where true identifies that a transaction was a purchase. If the **Value of the transaction** is negative, we will also use this information to infer a return.
+    - **Suggested data characteristics:**
+        - <u>Sufficient history length</u>: At least 1 year of Transactional data, but preferably 2-3 years  of Transactional data so that some seasonality is captured in the data.
+        - <u>Multiple purchases per customer ID</u>: At least 2 transactions per Customer ID
+        - <u>Minimum data requirement</u>: At least 100 customers in the data (the model will fail with less than 100 customers), but preferably more than 10,000 customers.
+        - Notes: 
+          - Only one transaction history entity can be configured at this time. Multiple purchase entities can be unioned in PowerQuery before ingestion.
+          - If Order and Order-details entities are different, they should be joined before using in the model. The model cannot work with just Order ID or Receipt ID in the entity.
+          - The model requires the transaction history of your customers. The definition of transaction is quite flexible – any user-product interaction data can work as an input. For example, purchasing a product, taking a class, attending an event, etc.
 
 
 ## Create a product recommendation prediction
@@ -135,6 +143,7 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
    - **Prediction name:** The name of the prediction provided when creating it.
    - **Prediction type:** The type of model used for the prediction
    - **Output entity:** Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.
+        - Note: In the output entity, “Score” is a quantitative measure of the recommendation made. For any customer, if the model provides a higher score for Product 1 vs Product 2, it means that the model finds Product1 to be a better recommendation to the customer than Product2.
    - **Predicted field:** This field is populated only for some types of predictions, and isn't used in churn prediction.
    - **Status:** The current status of the prediction's run.
         - **Queued:** The prediction is currently waiting for other processes to run.
