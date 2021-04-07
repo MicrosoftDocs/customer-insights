@@ -52,26 +52,21 @@ To configure Leadspace, the following prerequisites must be met:
 
 You need to be an administrator to be able to configure connections. You can click on **Add connection** in the wizard flow as described above *or* go to **Admin** > **Connections** and select Leadspace from the dropdown or click **Set up** on the Leadspace tile.
 
-
-
-
-
-
-
-
 1. Select **Get Started** and then enter an active **Leadspace token** (perpetual key). Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox. Confirm both inputs by selecting **Connect to Leadspace**.
 
-1. Select **Map data** and choose the data set you want to enrich with company data from Leadspace. You can select the *Customer* entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+1. Enter a name for the connection in the **Display name** box.
 
-   :::image type="content" source="media/enrichment-leadspace-select-segment.png" alt-text="Choose between customer profile and segment enrichment.":::
+1. Provide a valid HERE Technologies API key.
 
-1. Click **Next** and define which fields from your unified profiles should be used to look for matching company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
+1. Review and provide your consent for Data privacy and compliance by selecting the **I agree** checkbox
 
-   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace field mapping pane.":::
-   
-1. Select **Apply** to complete the field mapping.
+1. Click verify to get the configuration verified.
 
-1. Select **Run** to enrich the company profiles. How long an enrichment takes depends on the number of unified customer profiles.
+1. Once the verification has completed the connection can be saved by clicking **Save**.
+
+
+> [!div class="mx-imgBorder"]
+   > ![Leadspace connection configuration page](media/enrichment-Leadspace-connection.png "Leadspace connection configuration page")
 
 ## Enrichment results
 
