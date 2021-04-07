@@ -52,18 +52,17 @@ To configure Leadspace, the following prerequisites must be met:
 
 You need to be an administrator to be able to configure connections. You can click on **Add connection** in the wizard flow as described above *or* go to **Admin** > **Connections** and select Leadspace from the dropdown or click **Set up** on the Leadspace tile.
 
-1. Select **Get Started** and then enter an active **Leadspace token** (perpetual key). Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox. Confirm both inputs by selecting **Connect to Leadspace**.
+1. Select **Get Started** 
 
 1. Enter a name for the connection in the **Display name** box.
 
-1. Provide a valid HERE Technologies API key.
+1. Provide a valid Leadspace token.
 
 1. Review and provide your consent for Data privacy and compliance by selecting the **I agree** checkbox
 
 1. Click verify to get the configuration verified.
 
 1. Once the verification has completed the connection can be saved by clicking **Save**.
-
 
 > [!div class="mx-imgBorder"]
    > ![Leadspace connection configuration page](media/enrichment-Leadspace-connection.png "Leadspace connection configuration page")
