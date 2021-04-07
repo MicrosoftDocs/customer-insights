@@ -39,7 +39,7 @@ If you're interested in trying this feature but don't have data to complete the 
         - **Transaction date:** The date of the purchase or transaction.
         - **Value of the transaction:** The numerical value of the purchase or transaction.
         - **Unique product ID:** The ID of the product or service purchased if your data is at a line item level.
-        - (Optional) **Purchase or return:** A true/false field where true identifies that a transaction was a purchase. If the **Value of the transaction** is negative, we will also use this information to infer a return.
+        - (Optional) **Purchase or return:** A true/false field where true identifies that a transaction was a return. If the Purchase or Return data is not provided the model and the **Value of the transaction** is negative, we will also use this information to infer a return.
     - **Suggested data characteristics:**
         - <u>Sufficient history length</u>: At least 1 year of Transactional data, but preferably 2-3 years  of Transactional data so that some seasonality is captured in the data.
         - <u>Multiple purchases per customer ID</u>: At least 2 transactions per Customer ID
@@ -144,7 +144,7 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
    - **Prediction type:** The type of model used for the prediction
    - **Output entity:** Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.
         - Note: In the output entity, “Score” is a quantitative measure of the recommendation made. For any customer, if the model provides a higher score for Product 1 vs Product 2, it means that the model finds Product1 to be a better recommendation to the customer than Product2.
-   - **Predicted field:** This field is populated only for some types of predictions, and isn't used in churn prediction.
+   - **Predicted field:** This field is populated only for some types of predictions, and isn't used in Product Recommendation prediction.
    - **Status:** The current status of the prediction's run.
         - **Queued:** The prediction is currently waiting for other processes to run.
         - **Refreshing:** The prediction is currently running the "score" stage of processing to produce results that will flow into the output entity.
