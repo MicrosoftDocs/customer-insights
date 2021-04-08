@@ -13,7 +13,7 @@ manager: shellyha
 
 # Connections (preview) overview
 
-Connections are the key to enable data sharing to and from Customer Insights. Each connection establishes data sharing with a specific service. Connections are the foundation to [configure 3rd party enrichments](enrichment-hub.md) and [configure exports](export-destinations.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Marketing works for multiple exports.
+Connections are the key to enable data sharing to and from Customer Insights. Each connection establishes data sharing with a specific service. Connections are the foundation to [configure 3rd party enrichments](enrichment-hub.md) and [configure exports](export-destinations.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Marketing works for multiple exports and one Leadspace connection can be used for several enrichments.
 
 Go to **Admin** > **Connections** to create and view connections.
 
