@@ -15,19 +15,17 @@ manager: shellyha
 
 Connections are the key to enable data sharing to and from Customer Insights. Each connection establishes data sharing with a specific service. Connections are the foundation to [configure 3rd party enrichments](enrichment-hub.md) and [configure exports](export-destinations.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Marketing works for multiple exports.
 
-### Exports
-Only administrators can configure new connections but they can grant access to contributors to use exisiting connections. Administrators control where data can go, contributors define the payload and frequency fitting their needs. For more information, see [Allow contributors to use a connection for exports](#allow-contributors-to-use-a-connection-for-exports).
-
-### Enrichments
-Only administrators can configure new connections but the created connections are always available to both administrators and contributors. Administrators manage credentials and give consent to data transfers. The connections can then be used for enrichments by both administrators and contributors.
- 
-
 Go to **Admin** > **Connections** to create and view connections.
 
 The **Connections** tab shows you all active connections. The list shows a row for each connection. 
 
 Get a quick overview, description, and find out what you can do with each extensibility option on the **Discover** tab.
- 
+
+### Exports
+Only administrators can configure new connections but they can grant access to contributors to use exisiting connections. Administrators control where data can go, contributors define the payload and frequency fitting their needs. For more information, see [Allow contributors to use a connection for exports](#allow-contributors-to-use-a-connection-for-exports).
+
+### Enrichments
+Only administrators can configure new connections but the created connections are always available to both administrators and contributors. Administrators manage credentials and give consent to data transfers. The connections can then be used for enrichments by both administrators and contributors.
 
 ## Add a new connection
 
