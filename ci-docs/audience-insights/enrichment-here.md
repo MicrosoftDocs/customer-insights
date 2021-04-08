@@ -25,7 +25,7 @@ To configure HERE Technologies enrichments, the following prerequisites must be 
 
 ## Configuration
 
-1. Go to **Data** > **Enrichment**. A wizard flow is initiated that guides you through the configuration steps.
+1. Go to **Data** > **Enrichment**. 
 
 1. Select **Enrich my data** on the HERE Technologies tile and then click **Get started**.
 
