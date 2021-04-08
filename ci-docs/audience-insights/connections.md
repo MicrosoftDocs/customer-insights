@@ -1,7 +1,7 @@
 ---
 title: "Connections to other services from Customer Insights."
 description: "Share data to other services."
-ms.date: 02/15/2021
+ms.date: 03/25/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -41,7 +41,7 @@ To add connections, you need to have [administrator permissions](permissions.md)
    1. The **Display name** and the type of the connection describe a connection. We recommend choosing a name which explains the purpose and target of this connection.
    1. The exact fields depend on what service you are connecting to. You can learn about details of a specific connection type in the article about the service.
 
-1. To create the connection select **Save**.
+1. To create the connection, select **Save**.
 
 You can also select **Set up** on a tile on the **Discover** tab.
 
@@ -55,6 +55,10 @@ When setting up or editing an export connection you choose which users are allow
 
 ## Edit a connection
 
+1. Go to **Admin** > **Connections (preview)**.
+
+1. Go to the **Connections** tab.
+
 1. Select the vertical ellipsis for the connection you want to edit.
 
 1. Select **Edit**.
@@ -63,15 +67,21 @@ When setting up or editing an export connection you choose which users are allow
 
 ## Remove a connection
 
-If the connection you are removing is used by enrichments or exports, you first need to disconnect or remove these. The remove dialog will guide you to the relevant enrichments or exports. 
-Disconnected enrichments and exports become inactive. You re-activate them by adding another connection to them on the [Enrichments](enrichment-hub.md) or [Exports](export-destinations.md) page.
+If the connection you are removing is used by enrichments or exports, you first need to detach or remove these. The remove dialog will guide you to the relevant enrichments or exports. 
+Detached enrichments and exports become inactive. You reactivate them by adding another connection to them on the [Enrichments](enrichment-hub.md) or [Exports](export-destinations.md) page.
 
-1. Select the vertical ellipsis for the connection you want to edit.
-1. Select **Remove** from the dropdown menu. A confirmation dialog will appear.
-   1. If there are enrichments or exports using this connection you will see a corresponding message. Click the button on the message to see the relevant exports in the **Exports** page or enrichments in the **Enrichments** page.
-   1. The page will be filtered for the connection you tried to remove. 
-     1. **Exports:** You can choose to either remove or disconnect the exports to be able to remove the connection. To disconnect any export, administrators have access to the **Disconnect** action. This action is available for individual and multiple selected exports. By disconnection you keep the export config, but it won't be run until another connection is added to it.
-     1. **Enrichments:** You can choose to either remove or deactivate the enrichments to be able to remove the connection. 
-   1. Once the connection has no more dependencies you can navigate to **Connections** page and activate **Remove** again.
-1. In the dialog window review the list of affected elements. To confirm the deletion select **Remove**.
+1. Go to **Admin** > **Connections (preview)**.
+
+1. Go to the **Connections** tab.
+
+1. Select the vertical ellipsis for the connection you want to remove.
+
+1. Select **Remove** from the dropdown menu. A confirmation dialog appears.
+
+   1. If there are enrichments or exports using this connection, select the button to see what's using the connection.
+      - **Exports:** You can choose to either remove or disconnect the exports to be able to remove the connection. To disconnect an export, administrators can use the **Disconnect** action. This action is available for individual and multiple selected exports. By disconnecting you keep the export config, but it won't be run until another connection is added to it.
+      - **Enrichments:** You can choose to either remove or deactivate the enrichments to be able to remove the connection. 
+   1. Once the connection has no more dependencies, go back to **Admin** > **Connections** and try removing the connection again.
+
+1. To confirm the deletion select **Remove**.
 

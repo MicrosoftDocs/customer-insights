@@ -1,7 +1,7 @@
 ---
 title: "Manage user permissions"
 description: "Learn about permissions and user roles."
-ms.date: 10/27/2020
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -38,7 +38,7 @@ There are three types of roles:
 - Create segments using the **Segments** page.
 - Create measures using the **Measures** page.
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for first party enrichments only).
-- Manage and create exports based on connections shared with contributor role. [Learn more about how administrators allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports)
+- Manage and create exports based on connections shared with contributors. [Learn more about how administrators allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 ## Administrator
 
@@ -48,7 +48,7 @@ There are three types of roles:
 - Set search and filter definitions for the Customers page using the **Search & filter index** page (accessible via the **Customers** page).
 - Manage connections and allow them for other user roles on **Connections** page.
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for all enrichments).
-- Manage and create any exports on **Exports** page.
+- Manage and create exports on **Exports** page.
 - Install and use the **Customer Card Add-in**.
 - Add and use the **Power Apps connector**.
 - Enable usage of [Customer Insights APIs](apis.md).
