@@ -1,7 +1,7 @@
 ---
 title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
-ms.date: 11/02/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -49,12 +49,10 @@ You can run or deactivate multiple enrichments at once by selecting them in the 
 
 ## Enrichments and Connections
 
-Third party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides concent for data transfers. The administrator can specify whether a connection can be used only by administrators or by both administrators and contributers to configure enrichments.  
+Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The administrator can specify whether a connection can be used only by administrators or by administrators and contributors to configure enrichments.  
 
 ## Multiple enrichments of the same type
 
-The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles, e.g., only a specific segment. You can configure several enrichments of the same type and re-use the connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on the enrichment hub page.
-
-:::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page":::
+The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For exmaple, enrich data only for a specific segment. You can configure several enrichments of the same type and re-use the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on the **Enrichment** page.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
