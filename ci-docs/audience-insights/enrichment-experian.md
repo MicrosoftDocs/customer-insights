@@ -1,7 +1,7 @@
 ---
 title: "Enrichment with the third-party enrichment Experian"
 description: "General information about the Experian third-party enrichment."
-ms.date: 12/10/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -21,7 +21,7 @@ To configure Experian, the following prerequisites must be met:
 
 - You have an active Experian subscription. To get a subscription, [contact Experian](https://www.experian.com/marketing-services/contact) directly. [Learn more about Experian Data Enrichment](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- An Experian connection has already been configured by an Administrator *or* you have [Administrator](permissions.md#administrator) permissions and the User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
+- An Experian connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You also need the the User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
 
 ## Configuration
 
@@ -33,26 +33,26 @@ To configure Experian, the following prerequisites must be met:
    > ![Experian tile](media/experian-tile.png "Experian tile")
    > 
 
-1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you will be able to create a connection by clicking **Add connection** and selecting Experian from the drop-down, see the section below. 
+1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you can create a connection by selecting **Add connection** and choosing Experian from the drop-down. 
 
-1. Confirm connection selection by clicking **Connect to Experian**.
+1. Select **Connect to Experian** to confirm the connection selection.
 
-1.	Now, click **Next** and select the **Customer data set** you want to enrich with demographics data from Experian. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+1.	Select **Next** and choose the **Customer data set** you want to enrich with demographics data from Experian. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
 
     :::image type="content" source="media/enrichment-Experian-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
 
-1. Click **Next** and define which type of fields from your unified profiles should be used to look for matching demographics data from Experian. At least one of the fields **Name and address**, **Phone**, or **Email** is required. For a higher match accuracy, up to two other fields can be added. This selection will affect the mapping fields you have access to in the next step of the configuration wizard.
+1. Select **Next** and define which type of fields from your unified profiles should be used to look for matching demographics data from Experian. At least one of the fields **Name and address**, **Phone**, or **Email** is required. For a higher match accuracy, up to two other fields can be added. This selection will affect the mapping fields you have access to in the next step.
 
-      > [!TIP]
-   > More key identifier attributes sent to Experian likely yield a higher match rate.
+    > [!TIP]
+    > More key identifier attributes sent to Experian likely yield a higher match rate.
 
-1. Click **Next** to start the field mapping.
+1. Select **Next** to start the field mapping.
 
-1. Define which fields from your unified profiles should be used to look for matching demographics data from Experian. The fields with an asterix are required.
+1. Define which fields from your unified profiles should be used to look for matching demographics data from Experian. Requied fields are marked.
 
-1. Click **Next** to start the field mapping.
+1. Provide a name for the enrichment and a name for the output entity.
 
-1. Finally, you provide a name for the enrichment and a name for the output entity. Notice that the entity name cannot be changed after saving. Save the enrichment by clicking on **Save enrichment** after reviewing your choices.
+1. Select **Save enrichment** after reviewing your choices.
 
 ## Configuring connection for Experian 
 
