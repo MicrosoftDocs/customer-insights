@@ -73,7 +73,7 @@ You can use the Application/Client ID for this app registration with the Microso
 
 :::image type="content" source="media/grant-admin-consent.gif" alt-text="Animated gif to grant admin consent.":::
 
-For more information about MSAL, see [Overview of Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
+For more information about MSAL, see [Overview of Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
 
 For more information about app registration in Azure, see [The new Azure portal app registration experience](/azure/active-directory/develop/app-registration-portal-training-guide).
 
