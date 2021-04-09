@@ -358,7 +358,7 @@ The updates in August 2020 include several features, performance upgrades, and b
 
 - **Interest affinities enrichment available in more markets**
 
-  We're extending the availability of the interest affinities enrichment beyond the United States to five other markets: Canada, Australia, United Kingdom, France, and Germany. With this extension, you can enrich your customer data with more interests applicable to these markets. We'll also enrich your customer profiles that are located in these markets by using local proprietary data from Microsoft Graph.
+  We're extending the availability of the interest affinities enrichment beyond the United States to five other markets: Canada, Australia, United Kingdom, France, and Germany. With this extension, you can enrich your customer data with more interests applicable to these markets. We'll also enrich your customer profiles that are located in these markets by using local proprietary data from Microsoft.
   For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md)
 
 
@@ -379,7 +379,7 @@ The updates in July 2020 include several features, performance upgrades, and bug
 
 - **Brand affinities enrichment available in more markets**
 
-  We're extending the availability of the brand affinities enrichment beyond the United States to five other markets: Canada, Australia, United Kingdom, France, and Germany. With this extension, you can enrich your customer data with local brands in these markets. We'll also enrich your customer profiles that are located in these markets by using local proprietary data from Microsoft Graph.
+  We're extending the availability of the brand affinities enrichment beyond the United States to five other markets: Canada, Australia, United Kingdom, France, and Germany. With this extension, you can enrich your customer data with local brands in these markets. We'll also enrich your customer profiles that are located in these markets by using local proprietary data from Microsoft.
   For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md)
 
 ## June 2020 updates
