@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with Microsoft Graph"
 description: "Use proprietary data from the Microsoft Graph to enrich your customer data with brand and interest affinities."
-ms.date: 04/08/2021
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights

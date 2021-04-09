@@ -23,7 +23,7 @@ Get a quick overview, description, and find out what you can do with each extens
 
 ### Exports
 
-Only administrators can configure new connections but they can grant access to contributors to use exisiting connections. Administrators control where data can go, contributors define the payload and frequency fitting their needs. For more information, see [Allow contributors to use a connection for exports](#allow-contributors-to-use-a-connection-for-exports).
+Only administrators can configure new connections but they can grant access to contributors to use existing connections. Administrators control where data can go, contributors define the payload and frequency fitting their needs. For more information, see [Allow contributors to use a connection for exports](#allow-contributors-to-use-a-connection-for-exports).
 
 ### Enrichments
 
@@ -39,8 +39,8 @@ To add connections, you need to have [administrator permissions](permissions.md)
 
 1. Select **Add connection** to create a new connection. Choose from the drop-down menu what type of connection you want to create.
 
-1. In the **Set up connection** pane provide the required details. 
-   1. The **Display name** and the type of the connection describe a connection. We recommend choosing a name which explains the purpose and target of this connection.
+1. In the **Set up connection** pane, provide the required details. 
+   1. The **Display name** and the type of the connection describe a connection. We recommend choosing a name that explains the purpose and target of this connection.
    1. The exact fields depend on what service you are connecting to. You can learn about details of a specific connection type in the article about the target service.
 
 1. To create the connection, select **Save**.
@@ -49,10 +49,10 @@ You can also select **Set up** on a tile on the **Discover** tab.
 
 ### Allow contributors to use a connection for exports
 
-When setting up or editing an export connection you choose which users are allowed to use this specific connection to define [exports](export-destinations.md). By default a connection is available to users with an administrator role. You can change this setting under **Choose who can use this connection** and allow users with contributor role to use this connection.
+When setting up or editing an export connection, you choose which users are allowed to use this specific connection to define [exports](export-destinations.md). By default a connection is available to users with an administrator role. You can change this setting under **Choose who can use this connection** and allow users with contributor role to use this connection.
 
 - Contributors won't be able to view or edit the connection. They will only see the display name and its type when creating an export.
-- By sharing a connection you allow contributors to use a connection. Contributors will see shared connections when they set up exports. They can manage every export that uses this specific connection.
+- By sharing a connection, you allow contributors to use a connection. Contributors will see shared connections when they set up exports. They can manage every export that uses this specific connection.
 - You can change this setting while keeping the exports that have already been defined by contributors.
 
 ## Edit a connection
@@ -69,7 +69,7 @@ When setting up or editing an export connection you choose which users are allow
 
 ## Remove a connection
 
-If the connection you are removing is used by enrichments or exports, you first need to detach or remove these. The remove dialog will guide you to the relevant enrichments or exports. 
+If the connection you are removing is used by enrichments or exports, you first need to detach or remove them. The remove dialog will guide you to the relevant enrichments or exports. 
 Detached enrichments and exports become inactive. You reactivate them by adding another connection to them on the [Enrichments](enrichment-hub.md) or [Exports](export-destinations.md) page.
 
 1. Go to **Admin** > **Connections (preview)**.

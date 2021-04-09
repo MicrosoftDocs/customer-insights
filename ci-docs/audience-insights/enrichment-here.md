@@ -32,7 +32,7 @@ To configure HERE Technologies enrichments, the following prerequisites must be 
    > [!div class="mx-imgBorder"]
    > ![HERE Technologies tile](media/HERE-tile.png "HERE Technologies tile")
 
-1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you can create a connection by selecting **Add connection**. Choose **HERE Technologies** from the drop-down. 
+1. Select a [connection](connections.md) from the drop-down. Contact  an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection**. Choose **HERE Technologies** from the drop-down. 
 
 1. Select **Connect to HERE Technologies** to confirm the selection.
 

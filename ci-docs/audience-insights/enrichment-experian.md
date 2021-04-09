@@ -21,7 +21,7 @@ To configure Experian, the following prerequisites must be met:
 
 - You have an active Experian subscription. To get a subscription, [contact Experian](https://www.experian.com/marketing-services/contact) directly. [Learn more about Experian Data Enrichment](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- An Experian connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You also need the the User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
+- An Experian connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You also need the User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
 
 ## Configure the enrichment
 
@@ -33,7 +33,7 @@ To configure Experian, the following prerequisites must be met:
    > ![Experian tile](media/experian-tile.png "Experian tile")
    > 
 
-1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you can create a connection by selecting **Add connection** and choosing Experian from the drop-down. 
+1. Select a [connection](connections.md) from the drop-down. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing Experian from the drop-down. 
 
 1. Select **Connect to Experian** to confirm the connection selection.
 
@@ -48,7 +48,7 @@ To configure Experian, the following prerequisites must be met:
 
 1. Select **Next** to start the field mapping.
 
-1. Define which fields from your unified profiles should be used to look for matching demographics data from Experian. Requied fields are marked.
+1. Define which fields from your unified profiles should be used to look for matching demographics data from Experian. Required fields are marked.
 
 1. Provide a name for the enrichment and a name for the output entity.
 

@@ -13,7 +13,7 @@ manager: shellyha
 
 # Enrichment of company profiles with Leadspace (preview)
 
-Leadspace is a data science company that provides a B2B Customer Data Platform. It enables customers with unified customer profiles for companies to enrich their data. Enrichments include additional attributes such as company size, location, industry, and more.
+Leadspace is a data science company that provides a B2B Customer Data Platform. It enables customers with unified customer profiles for companies to enrich their data. Enrichments include more attributes such as company size, location, industry, and more.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ To configure Leadspace, the following prerequisites must be met:
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="Screenshot of the Leadspace tile.":::
 
-1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you can create a connection by selecting **Add connection** and choosing **Leadspace**. 
+1. Select a [connection](connections.md) from the drop-down. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **Leadspace**. 
 
 1. Select **Connect to Leadspace** to confirm the connection.
 

@@ -35,7 +35,7 @@ On the **My enrichments** tab, you can see the enrichments you've configured and
 
 Go to the **My enrichments** to see all configured enrichments. Each enrichment is represented as a row that includes additional information about the enrichment.
 
-Select an enrichment to see the available options. Alternatively, you can select the ellipsis (...) on a list item to see the options.
+Select an enrichment to see the available options. You can also select the ellipsis (...) on a list item to see the options.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Options to manage enrichments in the list of enrichments":::
 
@@ -53,6 +53,6 @@ Third-party enrichments are configured using [connections](connections.md), whic
 
 ## Multiple enrichments of the same type
 
-The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For exmaple, enrich data only for a specific segment. You can configure several enrichments of the same type and re-use the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on the **Enrichment** page.
+The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For exmaple, enrich data only for a specific segment. You can configure several enrichments of the same type and reuse the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on the **Enrichment** page.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

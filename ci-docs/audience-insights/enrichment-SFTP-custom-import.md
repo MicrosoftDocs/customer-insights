@@ -21,7 +21,7 @@ To configure SFTP custom import, the following prerequisites must be met:
 
 - You have the filename and location (path) of the file to be imported on the SFTP host.
 - There is a *model.json* file that specifies [the Common Data Model schema](/common-data-model/) for the data to be imported. This file must be in the same directory as the file to import.
-- A SFTP connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You'll need the user credentials, URL, and port number for the SFTP location where you want to import data from.
+- An SFTP connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You'll need the user credentials, URL, and port number for the SFTP location where you want to import data from.
 
 
 ## Configure the import
@@ -32,7 +32,7 @@ To configure SFTP custom import, the following prerequisites must be met:
 
    :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="SFTP custom import tile.":::
 
-1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **SFTP Custom Import** from the drop-down.
+1. Select a [connection](connections.md) from the drop-down. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **SFTP Custom Import** from the drop-down.
 
 1. Select **Connect to Custom Import** to confirm the selected connection.
 
@@ -54,9 +54,9 @@ You need to be an administrator to configure connections. Select **Add connectio
 
 1. Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox.
 
-1. Click verify to get the configuration verified.
+1. Select **Verify** to validate the configuration.
 
-1. Once the verification has completed the connection can be saved by clicking **Save**.
+1. Once the verification has completed, the connection can be saved by clicking **Save**.
 
 > [!div class="mx-imgBorder"]
    > ![Experian connection configuration page](media/enrichment-SFTP-connection.png "Experian connection configuration page")
