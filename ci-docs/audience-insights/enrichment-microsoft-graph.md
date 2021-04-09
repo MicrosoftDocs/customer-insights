@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with Microsoft Graph"
 description: "Use proprietary data from the Microsoft Graph to enrich your customer data with brand and interest affinities."
-ms.date: 12/10/2020
+ms.date: 04/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -62,7 +62,7 @@ To select a country, open the **Brands enrichment** or **Interest enrichment** a
 
 ## Configure Enrichment
 
-A wizard guides you through the configuration of the enrichments. 
+A guided experience helps you through the configuration of the enrichments. 
 
 ### Define your brands or interests
 
@@ -105,10 +105,9 @@ The following formats and values are supported, values are not case-sensitive:
 
 ## Review and name the enrichment
 
-Finally, you get to review the entered information and you are prompted to provide a name for the enrichment.
+Finally, you get to review the information and provide a name for the enrichment.
 
-   > [!div class="mx-imgBorder"]
-   > ![Interests review and naming](media/enrichment-interests-summary.png "Interests review and naming page")
+:::image type="content" source="media/enrichment-interests-summary.png" alt-text="Interests review and naming page.":::
 
 ## Refresh enrichment
 
