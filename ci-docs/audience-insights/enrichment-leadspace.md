@@ -1,7 +1,7 @@
 ---
 title: "Enrichment of company profiles with the third-party enrichment Leadspace"
 description: "General information about the Leadspace third-party enrichment."
-ms.date: 11/24/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -21,36 +21,36 @@ To configure Leadspace, the following prerequisites must be met:
 
 - You have an active Leadspace license.
 - You have [unified customer profiles](customer-profiles.md) for companies.
-- A Leadspace connection has already been configured by an Administrator or you have [Administrator](permissions.md#administrator) permissions and the “perpetual key” (referred to as **Leadspace token**). Contact directly [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) for details about their product.
+- A Leadspace connection has already been configured by an administrator or you have [administrator](permissions.md#administrator) permissions and the “perpetual key” (referred to as **Leadspace token**). Contact [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) directly for details about their product.
 
-## Configuration
+## Configure the enrichment
 
 1. In audience insights, go to **Data** > **Enrichment**.
 
-1. Select **Enrich my data** on the Leadspace tile and then click **Get started**.
+1. Select **Enrich my data** on the Leadspace tile and select **Get started**.
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="Screenshot of the Leadspace tile.":::
 
-1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you will be able to create a connection by clicking **Add connection** and selecting Leadspace from the drop-down, see the section below. 
+1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you can create a connection by selecting **Add connection** and choosing **Leadspace**. 
 
-1. Confirm connection selection by clicking **Connect to Leadspace**.
+1. Select **Connect to Leadspace** to confirm the connection.
 
-1.	Now, click **Next** and select the **Customer data set** you want to enrich with company data from Leadspace. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+1. Select **Next** and choose the **Customer data set** you want to enrich with company data from Leadspace. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
 
     :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
 
-1. Click **Next** and define which fields from your unified profiles should be used to look for matching company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
+1. Select **Next** and define which fields from your unified profiles are used to look for matching company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
 
    :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace field mapping pane.":::
 
 1. Select **Next** to complete the field mapping.
 
-1. Finally, you provide a name for the enrichment. Save the enrichment by clicking on **Save enrichment** after reviewing your choices.
+1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
 
 
-## Configuring connection for Leadspace 
+## Configure the connection for Leadspace 
 
-You need to be an administrator to be able to configure connections. You can click on **Add connection** in the wizard flow as described above *or* go to **Admin** > **Connections** and select Leadspace from the dropdown or click **Set up** on the Leadspace tile.
+You need to be an administrator to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Leadspace tile.
 
 1. Select **Get Started** 
 
@@ -58,14 +58,13 @@ You need to be an administrator to be able to configure connections. You can cli
 
 1. Provide a valid Leadspace token.
 
-1. Review and provide your consent for Data privacy and compliance by selecting the **I agree** checkbox
+1. Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox
 
-1. Click verify to get the configuration verified.
+1. Select **Verify** to validate the configuration.
 
-1. Once the verification has completed the connection can be saved by clicking **Save**.
-
-> [!div class="mx-imgBorder"]
-   > ![Leadspace connection configuration page](media/enrichment-Leadspace-connection.png "Leadspace connection configuration page")
+1. After completing the verification, select **Save**.
+   
+   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="Leadspace connection configuration page.":::
 
 ## Enrichment results
 
