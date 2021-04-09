@@ -46,7 +46,7 @@ To configure SFTP custom import, the following prerequisites must be met:
 
 ## Configure the connection for SFTP Custom Import 
 
-You need to be an administrator to be able to configure connections. You can click on **Add connection** in the wizard flow as described above *or* go to **Admin** > **Connections** and select Custom Import from the dropdown or click **Set up** on the Custom Import tile.
+You need to be an administrator to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Custom Import tile.
 
 1. Enter a name for the connection in the **Display name** box.
 

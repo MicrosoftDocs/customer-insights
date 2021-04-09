@@ -23,7 +23,7 @@ To configure Experian, the following prerequisites must be met:
 
 - An Experian connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You also need the the User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
 
-## Configuration
+## Configure the enrichment
 
 1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
@@ -56,7 +56,7 @@ To configure Experian, the following prerequisites must be met:
 
 ## Configure the connection for Experian 
 
-You need to be an administrator to be able to configure connections. You can click on **Add connection** in the wizard flow as described above *or* go to **Admin** > **Connections** and select Experian from the dropdown or click **Set up** on the Experian tile.
+You need to be an administrator to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Experian tile.
 
 1. Select **Get Started**.
 
