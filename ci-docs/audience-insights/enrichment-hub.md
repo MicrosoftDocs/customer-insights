@@ -47,9 +47,11 @@ Select an enrichment to see the available options. Alternatively, you can select
 
 You can run or deactivate multiple enrichments at once by selecting them in the list. View and edit options aren't available as bulk action and only work for one enrichment at a time.
 
-## Enrichments and Connections
+## Enrichments and connections
 
 Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The administrator can specify whether a connection can be used only by administrators or by administrators and contributors to configure enrichments.  
+
+<!--- is the above correct?--->
 
 ## Multiple enrichments of the same type
 

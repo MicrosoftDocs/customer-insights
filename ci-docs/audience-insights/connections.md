@@ -1,7 +1,7 @@
 ---
 title: "Connections to other services from Customer Insights."
 description: "Share data to other services."
-ms.date: 03/25/2021
+ms.date: 04/09/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Connections (preview) overview
 
-Connections are the key to enable data sharing to and from Customer Insights. Each connection establishes data sharing with a specific service. Connections are the foundation to [configure 3rd party enrichments](enrichment-hub.md) and [configure exports](export-destinations.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Marketing works for multiple exports and one Leadspace connection can be used for several enrichments.
+Connections are the key to enable data sharing to and from Customer Insights. Each connection establishes data sharing with a specific service. Connections are the foundation to [configure third-party enrichments](enrichment-hub.md) and [configure exports](export-destinations.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Marketing works for multiple exports and one Leadspace connection can be used for several enrichments.
 
 Go to **Admin** > **Connections** to create and view connections.
 
@@ -22,9 +22,11 @@ The **Connections** tab shows you all active connections. The list shows a row f
 Get a quick overview, description, and find out what you can do with each extensibility option on the **Discover** tab.
 
 ### Exports
+
 Only administrators can configure new connections but they can grant access to contributors to use exisiting connections. Administrators control where data can go, contributors define the payload and frequency fitting their needs. For more information, see [Allow contributors to use a connection for exports](#allow-contributors-to-use-a-connection-for-exports).
 
 ### Enrichments
+
 Only administrators can configure new connections but the created connections are always available to both administrators and contributors. Administrators manage credentials and give consent to data transfers. The connections can then be used for enrichments by both administrators and contributors.
 
 ## Add a new connection
@@ -39,13 +41,13 @@ To add connections, you need to have [administrator permissions](permissions.md)
 
 1. In the **Set up connection** pane provide the required details. 
    1. The **Display name** and the type of the connection describe a connection. We recommend choosing a name which explains the purpose and target of this connection.
-   1. The exact fields depend on what service you are connecting to. You can learn about details of a specific connection type in the article about the service.
+   1. The exact fields depend on what service you are connecting to. You can learn about details of a specific connection type in the article about the target service.
 
 1. To create the connection, select **Save**.
 
 You can also select **Set up** on a tile on the **Discover** tab.
 
-### Exports: Allow contributors to use a connection 
+### Allow contributors to use a connection for exports
 
 When setting up or editing an export connection you choose which users are allowed to use this specific connection to define [exports](export-destinations.md). By default a connection is available to users with an administrator role. You can change this setting under **Choose who can use this connection** and allow users with contributor role to use this connection.
 
