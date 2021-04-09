@@ -24,7 +24,7 @@ Audience insights helps you build a deeper understanding of your customers. Conn
 
 - **Enrich with audience intelligence contained within Microsoft Graph**
 
-  - Build richer customer profiles by [incorporating audience intelligence contained within Microsoft Graph](enrichment-microsoft-graph.md).  
+  - Build richer customer profiles by [incorporating enriched data](enrichment-hub.md).  
 
 - **Power your business processes and personalized customer experiences**
 
