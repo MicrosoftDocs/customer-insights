@@ -24,7 +24,7 @@ To configure SFTP custom import, the following prerequisites must be met:
 - A SFTP connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You'll need the user credentials, URL, and port number for the SFTP location where you want to import data from.
 
 
-## Configuration
+## Configure the import
 
 1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
@@ -44,7 +44,7 @@ To configure SFTP custom import, the following prerequisites must be met:
 
 1. Select **Save enrichment** after reviewing your choices.
 
-## Configuring connection for SFTP Custom Import 
+## Configure the connection for SFTP Custom Import 
 
 You need to be an administrator to be able to configure connections. You can click on **Add connection** in the wizard flow as described above *or* go to **Admin** > **Connections** and select Custom Import from the dropdown or click **Set up** on the Custom Import tile.
 
@@ -52,7 +52,7 @@ You need to be an administrator to be able to configure connections. You can cli
 
 1. Enter valid user name, password, and host URL for the STFP server the data to be imported resides on.
 
-1. Review and provide your consent for Data privacy and compliance by selecting the **I agree** checkbox.
+1. Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox.
 
 1. Click verify to get the configuration verified.
 

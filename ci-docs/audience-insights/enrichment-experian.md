@@ -54,7 +54,7 @@ To configure Experian, the following prerequisites must be met:
 
 1. Select **Save enrichment** after reviewing your choices.
 
-## Configuring connection for Experian 
+## Configure the connection for Experian 
 
 You need to be an administrator to be able to configure connections. You can click on **Add connection** in the wizard flow as described above *or* go to **Admin** > **Connections** and select Experian from the dropdown or click **Set up** on the Experian tile.
 
@@ -64,15 +64,13 @@ You need to be an administrator to be able to configure connections. You can cli
 
 1. Enter valid User ID, Party ID, and Model Number for your Experian Secure Transport account.
 
-1. Review and provide your consent for Data privacy and compliance by selecting the **I agree** checkbox
+1. Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox
 
-1. Click verify to get the configuration verified.
+1. Select **Verify** to validate the configuration.
 
-1. Once the verification has completed the connection can be saved by clicking **Save**.
-
-> [!div class="mx-imgBorder"]
-   > ![Experian connection configuration page](media/enrichment-Experian-connection.png "Experian connection configuration page")
-
+1. After completing the verification, select **Save**.
+   
+   :::image type="content" source="media/enrichment-Experian-connection.png" alt-text="Experian connection configuration pane.":::
 
 ## Enrichment results
 
