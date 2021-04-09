@@ -52,7 +52,7 @@ You need to be an administrator to be able to configure connections. You can cli
 
 1. Enter valid user name, password, and host URL for the STFP server the data to be imported resides on.
 
-1. Review and provide your consent for Data privacy and compliance by selecting the **I agree** checkbox
+1. Review and provide your consent for Data privacy and compliance by selecting the **I agree** checkbox.
 
 1. Click verify to get the configuration verified.
 
