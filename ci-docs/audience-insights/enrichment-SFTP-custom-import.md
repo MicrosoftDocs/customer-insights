@@ -1,7 +1,7 @@
 ---
 title: Enrichment with SFTP custom import
 description: General information about the SFTP custom import enrichment.
-ms.date: 11/18/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,35 +13,36 @@ manager: shellyha
 
 # Enrich customer profiles with custom data (preview)
 
-Secure File Transfer Protocol (SFTP) custom import enables you to import data that does not have to go through the process of data unification. It is a flexible, secure, and easy way to bring in your data. SFTP custom import can be used in combination with [SFTP export](export-sftp.md) that lets you export the customer profile data that is needed for enrichment. The data can then be processed, enriched, and SFTP custom import can be used to bring the enriched data back to the audience insights capability of Dynamics 365 Customer Insights.
+Secure File Transfer Protocol (SFTP) custom import enables you to import data that does not have to go through the process of data unification. It's a flexible, secure, and easy way to bring in your data. SFTP custom import can be used in combination with [SFTP export](export-sftp.md) that lets you export the customer profile data that is needed for enrichment. The data can then be processed, enriched, and SFTP custom import can be used to bring the enriched data back to the audience insights capability of Dynamics 365 Customer Insights.
 
 ## Prerequisites
 
 To configure SFTP custom import, the following prerequisites must be met:
 
 - You have the filename and location (path) of the file to be imported on the SFTP host.
-- There is a *model.json* file that specifies [the Common Data Model schema](/common-data-model/) for the data that are to be imported. This file must be in the same directory as the file to import.
-- A SFTP connection has already been configured by an Administrator *or* you have [Administrator](permissions.md#administrator) permissions and you have user credentials (user name and password), URL, and port number for the SFTP location where the data that is going to be imported from.
+- There is a *model.json* file that specifies [the Common Data Model schema](/common-data-model/) for the data to be imported. This file must be in the same directory as the file to import.
+- A SFTP connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You'll need the user credentials, URL, and port number for the SFTP location where you want to import data from.
 
 
 ## Configuration
 
 1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
-1. On the **SFTP custom import tile**, select **Enrich my data** and then click **Get started**.
+1. On the **SFTP custom import tile**, select **Enrich my data** and then select **Get started**.
 
-   > [!div class="mx-imgBorder"]
-   > ![SFTP Custom Import tile](media/SFTP_Custom_Import_tile.png "SFTP Custom Import tile")
+   :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="SFTP custom import tile.":::
 
-1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator you will be able to create a connection by clicking **Add connection** and selecting SFTP Custom Import from the drop-down, see the section below. 
+1. Select a [connection](connections.md) from the drop-down. Reach out to an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **SFTP Custom Import** from the drop-down.
 
-1. Confirm connection selection by clicking **Connect to Custom Import**.
+1. Select **Connect to Custom Import** to confirm the selected connection.
 
-1.	Now, click **Next** and enter the location (**Filename** and **Path**)  of the data file that you want to bring into Audience Insights.
+1.	Select **Next** and enter the **Filename** and **Path** of the data file that you want to import.
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Screenshot when entering data location.":::
 
-1. Click **Next** and provide a name for the enrichment and a name for the output entity. Notice that the entity name cannot be changed after saving. Save the enrichment by clicking on **Save enrichment** after reviewing your choices.
+1. Select **Next** and provide a name for the enrichment and a name for the output entity. 
+
+1. Select **Save enrichment** after reviewing your choices.
 
 ## Configuring connection for SFTP Custom Import 
 
@@ -118,8 +119,5 @@ You can access a detailed view of each enriched profile by selecting **View enri
 ## Next steps
 
 Build on top of your enriched customer data. Create [segments](segments.md), [measures](measures.md), and [export the data](export-destinations.md) to deliver personalized experiences to your customers.
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
