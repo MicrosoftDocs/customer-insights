@@ -1,7 +1,7 @@
 ---
 title: "Create and manage measures"
 description: "Define measures to analyze and reflect the performance of your business."
-ms.date: 02/02/2021
+ms.date: 04/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -13,19 +13,19 @@ manager: shellyha
 
 # Define and manage measures
 
-Measures help you to better understand customer behaviors and business performance by retrieving relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand individual customer’s purchase history. Or measure *total sales of the company* to understand the aggregate-level revenue in the whole business.  
+Measures help you to better understand customer behaviors and business performance. They look at relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand individual customer’s purchase history or measure *total sales of the company* to understand the aggregate-level revenue in the whole business.  
 
 Measures are created using the measure builder, a data query platform with various operators and simple mapping options. It lets you filter the data, group results, detect [entity relationship paths](relationships.md), and preview the output.
 
 Use the measure builder to plan business activities by querying customer data and extract insights. For example, creating a measure of *total spend per customer* and *total return per customer* helps identify a group of customers with high spend yet high return. You can [create a segment](segments.md) to drive next best actions. 
 
-## Create a measure
+## Build your own measure from scratch
 
 This section walks you through creating a new measure from scratch. You can build a measure with data attributes from data entities that have a relationship set up to connect with the Customer entity. 
 
 1. In audience insights, go to **Measures**.
 
-1. Select **New**.
+1. Select **New** and choose **Build your own**.
 
 1. Select **Edit name** and provide a **Name** for the measure. 
    > [!NOTE]
@@ -67,6 +67,8 @@ This section walks you through creating a new measure from scratch. You can buil
    1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected to create *customer-level measures*. You can remove the default dimension if you want to create *business-level measures*.
    1. Select **Done** to add the dimensions to the measure.
 
+1. If there are values in your data that you need to replace with an integer, for example, replace *null* with *0*, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements.
+
 1. If there are multiple paths between the data entity you mapped and the *Customer* entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path. 
    1. Select **Data preferences** and choose the entity path that should be used to identify your measure. If there's only a single path to the *Customer* entity, this control won't show.
    1. Select **Done** to apply your selection. 
@@ -83,9 +85,57 @@ This section walks you through creating a new measure from scratch. You can buil
 
 1. Go to **Measures** to see the newly created measure in the list.
 
+## Use a template to build a measure
+
+You can use predefined templates of commonly used measures to create them. Detailed descriptions of the templates and a guided experience help you with efficient measure creation. Templates build on mapped data from the *Unified Activity* entity. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
+
+Available measure templates: 
+- Average transaction value (ATV)
+- Total transaction value
+- Average daily revenue
+- Average yearly revenue
+- Transaction count
+- Loyalty points earned
+- Loyalty points redeemed
+- Loyalty points balance
+- Active customer lifespan
+- Loyalty membership duration
+- Time since last purchase
+
+The following procedure outlines the steps to build a new measure using a template.
+
+1. In audience insights, go to **Measures**.
+
+1. Select **New** and select **Choose a template**.
+
+   :::image type="content" source="media/measure-use-template.png" alt-text="Screenshot of the drop-down menu when creating a new measure with highlight on template.":::
+
+1. Find the template that fits your need and select **Choose template**.
+
+1. Review the required data and select **Get started** if you have all the data in place.
+
+1. In the **Edit name** pane, set the name for your measure and the output entity. 
+
+1. Select **Done**.
+
+1. In the **Set time period** section, define the time frame of the data to use. Choose if you want the new measure to cover the entire data set by selecting **All time**. Or if you want the measure to focus on a **Specific time period**.
+
+   :::image type="content" source="media/measure-set-time-period.png" alt-text="Screenshot showing the time period section when configuring a measure from a template.":::
+
+1. In the next section, select **Add data** to choose the activities and map the corresponding data from your *Unified Activity* entity.
+
+    1. Step 1 of 2: Under **Activity type**, choose the type of the entity you want to use. For **Activities**, select the entities you want to map.
+    1. Step 2 of 2: Choose the attribute from the *Unified Activity* entity for the component required by the formula. For example, for Average transaction value, it's the attribute representing the Transaction value. For **Activity timestamp**, choose the attribute from the Unified Activity entity that represents the date and time of the activity.
+   
+1. Once the data mapping is successful, you can see the status as **Complete** and the name of the mapped activities and attributes.
+
+   :::image type="content" source="media/measure-template-configured.png" alt-text="Screenshot of a completed measure template configuration.":::
+
+1. You can now select **Run** to calculate the results of the measure. To refine it later, select **Save draft**.
+
 ## Manage your measures
 
-After [creating a measure](#create-a-measure), you see a list of measures on the **Measures** page.
+You can find the list of measures on the **Measures** page.
 
 You'll find information about the measure type, the creator, creation date, status, and state. When you select a measure from the list, you can preview the output and download a .CSV file.
 
