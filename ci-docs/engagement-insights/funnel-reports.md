@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A funnel report collects information about the steps that occur during a customer journey through your website. It helps you understand how an audience progresses through a process and identifies drop-off points. For example, you can use a funnel report to monitor the success rate of a purchase when customers land on your website. A funnel report provides data to inform decisions and identify areas for optimization and process improvements.
+A funnel report collects information about the steps that occur during a customer journey through your website. It helps you understand how an audience progresses through a process and identifies drop-off points. For example, you can use a funnel report to identify paths and touchpoints your customers are taking before they make a purchase. A funnel report provides data to inform decisions and identify areas for optimization and process improvements.
 
 ## Create a funnel report
 
