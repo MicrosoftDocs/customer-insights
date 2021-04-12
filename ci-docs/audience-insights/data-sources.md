@@ -1,7 +1,7 @@
 ---
 title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
-ms.date: 11/03/2020
+ms.date: 4/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -27,8 +27,16 @@ You can add a data source in three main ways:
 - [From a Common Data Model folder](connect-common-data-model.md)
 - [From your own Common Data Service lake](connect-common-data-service-lake.md)
 
-> [!NOTE]
-> You can't add data from on-premises data sources yet.
+## Add data from on-premises data sources
+
+Ingesting data from on-premises data sources in Audience Insights is supported based on the Power Platform dataflows (PPDF). Power Platform dataflows can be enabled in Customer Insights by [providing the Microsoft Dataverse environment](manage-environments.md#create-an-environment-in-an-existing-organization)
+
+Any new data sources created after associating a Microsoft Dataverse environment to Customer Insights will default to Power Platform dataflows and therefore can support on-prem connectivity using the data gateways. Existing data sources still cannot support on-prem gateways yet. You need to remove and recreate them to also start supporting on-prem connectivity or create new data sources altogether.
+
+Any existing data gateways from your existing Power BI and/or Power Apps will be visible and can be repurposed in Customer Insights as well. Data sources page will display links to go the Power Platform environment where you can view and configure on-premises data gateways.
+
+> [!div class="mx-imgBorder"]
+> ![Data source added](media/data-sources-onpremises-gateways.png "Data source added")
 
 ## Review ingested data
 
