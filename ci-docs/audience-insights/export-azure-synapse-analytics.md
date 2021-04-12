@@ -81,4 +81,4 @@ You can also [export data on demand](export-destinations.md#run-exports-on-deman
 ### Working with Audience Insights data in Synapse
 
 * **Question**: The setup is working fine but when other users are granted access to the workspace they can't query the database containing the Audience Insights data.
-* **Answer**: The users needs **Storage Blob Contributor** role assigned on the storage the data is exported to in addition to the Synapse workspace permissions.
+* **Answer**: The user needs **Storage Blob Contributor** role assigned on the storage the data is exported to in addition to the Synapse workspace permissions.
