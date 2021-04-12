@@ -59,9 +59,11 @@ You can review funnel reports to analyze data, track performance, and gather ins
 1. Go to **Funnels** to open the **Funnels library**.
 1. Select a name to open the report.    
 
-### See the data collected for a report
+### See the data collected for a report   
 
-- Hover over a step in the report to see information about that phase.
+To see information about a phase
+
+- Hover over a step in the report.
 
 :::image type="content" source="media/funnel-step-data.png" alt-text="funnel data":::
 
@@ -76,9 +78,8 @@ You can review funnel reports to analyze data, track performance, and gather ins
 
 1. Select a name to open the report.
 
-1. In the time range list, choose a new time period or select **Fixed date range** to specify a date range.
+1. Open the **time range** and select a new time period from the list or **Fixed date range** to specify a date range.
 
-1. Select **Apply**.
 
 > [!NOTE]
 > Engagement insights funnel currently only retains historical data for the last 30 days.
