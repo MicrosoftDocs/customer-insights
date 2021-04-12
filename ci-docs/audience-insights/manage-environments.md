@@ -73,7 +73,7 @@ To create an environment:
 
    - For the Azure Data Lake Storage Gen2 option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name can't be changed and will be "customerinsights".
    
-   - If you want to use [predictions](predictions.md) or configure data sharing with applications and solutions based on Microsoft Dataverse or enable data ingestion from on-premises data sources, provide the Microsoft Dataverse environment URL under **Configure data sharing with Microsoft Dataverse and enable additional capabilities**. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
+   - If you want to use [predictions](predictions.md), configure data sharing with applications and solutions based on Microsoft Dataverse, or enable data ingestion from on-premises data sources, provide the Microsoft Dataverse environment URL under **Configure data sharing with Microsoft Dataverse and enable additional capabilities**. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
 
      > [!NOTE]
      > - Data sharing with Microsoft Dataverse Managed Data Lake is currently not supported when you save all data to your own Azure Data Lake Storage.
@@ -86,7 +86,7 @@ To create an environment:
 
    If you create multiple environments of Customer Insights and choose to save the output entities from those environments in your storage account, separate folders will be created for each environment with ci_<environmentid> in the container.
 
-### Additional considerations for copy configuration (preview)
+### AConsiderations for copy configuration (preview)
 
 The following configuration settings are copied:
 
@@ -135,18 +135,17 @@ You can edit some of the details of existing environments.
 
 5. Optionally, you can update from an account key based connection to a resource-based or subscription-based connection. Once upgraded, you cannot revert to account key after the update. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
 
-6. Optionally, you can provide the Microsoft Dataverse environment URL under **Configure data sharing with Microsoft Dataverse and enable additional capabilities** to enable additional capabilities like configuring data sharing with applications and solutions based on Microsoft Dataverse or enable data ingestion from on-premises data sources or use [predictions](predictions.md). Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
+6. Optionally, you can provide a Microsoft Dataverse environment URL under **Configure data sharing with Microsoft Dataverse and enable additional capabilities**. These capabilities inlcude data sharing with applications and solutions based on Microsoft Dataverse, data ingestion from on-premises data sources, or the use [predictions](predictions.md). Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data lake.
 
-     > [!NOTE]
-     > - Data sharing with Microsoft Dataverse Managed Data Lake is currently not supported when you save all data to your own Azure Data Lake Storage.
-     > - [Prediction of missing values in an entity](predictions.md) is not currently supported when you enable data sharing with Microsoft Dataverse Managed Data Lake.
+   > [!NOTE]
+   > - Data sharing with Microsoft Dataverse Managed Data Lake is currently not supported when you save all data to your own Azure Data Lake Storage.
+   > - [Prediction of missing values in an entity](predictions.md) is currently not supported when you enable data sharing with Microsoft Dataverse Managed Data Lake.
 
-   Once you enable data sharing with Microsoft Dataverse, one time full refresh of your data sources and other processes will be triggered. Please note that if any processes are currently running and queued, you will not see the option to enable data sharing with Microsoft Dataverse. You can either wait for those processes to be complete or cancel them to enable data sharing. 
+   Once you enable data sharing with Microsoft Dataverse, a full refresh of your data sources and other processes will be triggered. If processes are currently running and queued, you will not see the option to enable data sharing with Microsoft Dataverse. You can wait for those processes to complete or cancel them to enable data sharing. 
    
-        > [!div class="mx-imgBorder"]
-     > ![Configuration options to enable data sharing with Microsoft Dataverse](media/Datasharing-with-DataverseMDL-migration.png)
+   :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
    
-   When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to the respective subfolders based on the process you run.
+   When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to the respective subfolders, depending on the process that's run.
 
 ## Reset an existing environment
 
