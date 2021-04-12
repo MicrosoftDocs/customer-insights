@@ -80,6 +80,9 @@ You can review funnel reports to analyze data, track performance, and gather ins
 
 1. Select **Apply**.
 
+> [!NOTE]
+> Engagement insights funnel currently only retains historical data for the last 30 days.
+
 ## Edit or delete funnel reports
 
 You can change the name of a funnel report, delete it, or modify the steps in the report.
