@@ -35,8 +35,7 @@ Data sources that are created after associating a Dataverse environment with Cus
 
 Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse in Customer Insights. The data sources page shows links to go the Power Platform environment where you can view and configure on-premises data gateways.
 
-> [!div class="mx-imgBorder"]
-> ![Data source added](media/data-sources-onpremises-gateways.png "Data source added")
+:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Screenshot of the data sources page shwoing links that point to the Power Platform environment.":::
 
 ## Review ingested data
 
