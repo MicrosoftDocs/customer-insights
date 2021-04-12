@@ -2,12 +2,12 @@
 title: "Search and filter customer profiles"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
 ms.date: 01/19/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
 ---
 

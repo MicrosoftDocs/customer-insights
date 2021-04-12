@@ -2,18 +2,18 @@
 title: "Ingest data through a Power Query connector"
 description: "Connectors for data sources based on Power Query."
 ms.date: 09/29/2020
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ---
 
 # Connect to a Power Query data source
 
-Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights. Adding data sources based on Power Query connectors generally follows the steps outlined in the next section. However, depending on the connector you use, different information is required. For more information, see the documentation about individual connectors in the [Power Query connector reference](https://docs.microsoft.com/power-query/connectors/).
+Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights. Adding data sources based on Power Query connectors generally follows the steps outlined in the next section. However, depending on the connector you use, different information is required. For more information, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
 
 ## Create a new data source
 
@@ -39,7 +39,7 @@ Power Query offers a broad set of connectors to ingest data. Most of these conne
    > [!div class="mx-imgBorder"]
    > ![Edit queries dialog](media/data-manager-configure-edit-queries.png "Edit queries dialog")
 
-1. You can also transform your data. Select an entity to edit or transform. Use the options in the Power Query window to apply transformations. Each transformation gets listed under **Applied steps**. Power Query provides numerous pre-built transformation options. For more information, see [Power Query Transformations](https://docs.microsoft.com/power-query/power-query-what-is-power-query#transformations).
+1. You can also transform your data. Select an entity to edit or transform. Use the options in the Power Query window to apply transformations. Each transformation gets listed under **Applied steps**. Power Query provides numerous pre-built transformation options. For more information, see [Power Query Transformations](/power-query/power-query-what-is-power-query#transformations).
 
 1. You can add additional entities to your data source by selecting **Get data** in the **Edit queries** dialog.
 
@@ -54,7 +54,7 @@ Power Query offers a broad set of connectors to ingest data. Most of these conne
 
 ## Available Power Query data sources
 
-See the [Power Query connector reference](https://docs.microsoft.com/power-query/connectors/) for an up-to-date list of connectors that you can select to import data to Customer Insights. 
+See the [Power Query connector reference](/power-query/connectors/) for an up-to-date list of connectors that you can select to import data to Customer Insights. 
 
 Connectors with a checkmark in the **Customer Insights (Dataflows)** column are available to create new data sources based on Power Query. Review the documentation of a specific connector to learn more about its prerequisites, limitations, and other details.
 

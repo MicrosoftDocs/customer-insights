@@ -2,12 +2,12 @@
 title: "Enrich customer profiles with Microsoft Graph"
 description: "Use proprietary data from the Microsoft Graph to enrich your customer data with brand and interest affinities."
 ms.date: 12/10/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-MS
+ms.author: kishorem
 manager: shellyha
 ---
 
@@ -28,7 +28,7 @@ To configure interest affinities enrichment, go to the **Discover** tab and sele
 
 We use online search data from the Microsoft Graph to find affinities for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest determines how much affinity a demographic segment, compared to other segments, has to that brand or interest.
 
-[Learn more about Microsoft Graph](https://docs.microsoft.com/graph/overview).
+[Learn more about Microsoft Graph](/graph/overview).
 
 ## Affinity level and score
 

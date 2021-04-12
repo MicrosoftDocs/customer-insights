@@ -2,12 +2,12 @@
 title: "Enrichment of company profiles with the third-party enrichment Leadspace"
 description: "General information about the Leadspace third-party enrichment."
 ms.date: 11/24/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-MS
+ms.author: kishorem
 manager: shellyha
 ---
 
