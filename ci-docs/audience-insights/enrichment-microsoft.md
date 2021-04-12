@@ -1,6 +1,6 @@
 ---
-title: "Enrich customer profiles with Microsoft Graph"
-description: "Use proprietary data from the Microsoft Graph to enrich your customer data with brand and interest affinities."
+title: "Enrich customer profiles with data from Microsoft"
+description: "Use proprietary data from Microsoft to enrich your customer data with brand and interest affinities."
 ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Enrich customer profiles with brand and interest affinities (preview)
 
-Use proprietary data from the Microsoft Graph to enrich your customer data with brand and interest affinities. These affinities are determined based on data from people with similar demographics to your customers. This information helps you to better understand and segment your customers based on their affinities to specific brands and interests.
+Use Microsoft's proprietary data to enrich your customer data with brand and interest affinities. These affinities are determined based on data from people with similar demographics to your customers. This information helps you to better understand and segment your customers based on their affinities to specific brands and interests.
 
 In audience insights, go to **Data** > **Enrichment** to [configure and view enrichments](enrichment-hub.md).
 
@@ -24,11 +24,9 @@ To configure interest affinities enrichment, go to the **Discover** tab and sele
    > [!div class="mx-imgBorder"]
    > ![Brands & Interests tiles](media/BrandsInterest-tile-Hub.png "Brands & Interest tiles")
 
-## About Microsoft Graph
+## How we determine affinities
 
-We use online search data from the Microsoft Graph to find affinities for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest determines how much affinity a demographic segment, compared to other segments, has to that brand or interest.
-
-[Learn more about Microsoft Graph](/graph/overview).
+We use Microsoft’s online search data to find affinities for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest determines how much affinity a demographic segment, compared to other segments, has to that brand or interest. brand or interest.
 
 ## Affinity level and score
 
@@ -58,7 +56,7 @@ To select a country, open the **Brands enrichment** or **Interest enrichment** a
 
 - When [choosing an industry](#define-your-brands-or-interests), you'll get the most relevant brands or interests based on the selected country or region.
 
-- When [enriching profiles](#refresh-enrichment), we'll enrich all customer profiles for which we get data for the selected brands and interests. Including profiles that are not in the selected country or region. For example, if you selected Germany, we'll enrich profiles located in the United States if we have Microsoft Graph data available for the selected brands and interests in the US.
+- When [enriching profiles](#refresh-enrichment), we'll enrich all customer profiles for which we get data for the selected brands and interests. Including profiles that are not in the selected country or region. For example, if you selected Germany, we'll enrich profiles located in the United States if we have data available for the selected brands and interests in the US.
 
 ## Configure Enrichment
 
@@ -81,7 +79,7 @@ Review your default enrichment preferences and update them as needed.
 
 ### Select entity to enrich
 
-Select **Enriched entity** and choose the data set you want to enrich with company data from the Microsoft Graph. You can select the Customer entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+Select **Enriched entity** and choose the data set you want to enrich with company data from the Microsoft. You can select the Customer entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
 
 ### Map your fields
 
