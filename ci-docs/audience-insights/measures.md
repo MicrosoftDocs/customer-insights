@@ -1,7 +1,7 @@
 ---
 title: "Create and manage measures"
 description: "Define measures to analyze and reflect the performance of your business."
-ms.date: 04/08/2021
+ms.date: 04/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Define and manage measures
 
-Measures help you to better understand customer behaviors and business performance. They look at relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand individual customer’s purchase history. Or measure *total sales of the company* to understand the aggregate-level revenue in the whole business.  
+Measures help you to better understand customer behaviors and business performance. They look at relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand individual customer’s purchase history or measure *total sales of the company* to understand the aggregate-level revenue in the whole business.  
 
 Measures are created using the measure builder, a data query platform with various operators and simple mapping options. It lets you filter the data, group results, detect [entity relationship paths](relationships.md), and preview the output.
 
@@ -26,8 +26,6 @@ This section walks you through creating a new measure from scratch. You can buil
 1. In audience insights, go to **Measures**.
 
 1. Select **New** and choose **Build your own**.
-
-   :::image type="content" source="media/build-own-measure.png" alt-text="Screenshot of drop-down menu with options to create a new measure.":::
 
 1. Select **Edit name** and provide a **Name** for the measure. 
    > [!NOTE]
@@ -109,6 +107,8 @@ The following procedure outlines the steps to build a new measure using a templa
 1. In audience insights, go to **Measures**.
 
 1. Select **New** and select **Choose a template**.
+
+   :::image type="content" source="media/measure-use-template.png" alt-text="Screenshot of the drop-down menu when creating a new measure with highlight on template.":::
 
 1. Find the template that fits your need and select **Choose template**.
 
