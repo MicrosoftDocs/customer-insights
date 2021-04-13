@@ -54,6 +54,10 @@ This funnel lets you see the number of users who used the promotion code after a
 
 You can review funnel reports to analyze data, track performance, and gather insights.
 
+> [!NOTE]
+> - Engagement insights funnel reports currently support scenarios in which all users in the funnel are anonymous or all users are authenticated. 
+> - Historical data in funnel reports is available for the last 30 days.
+
 ### View funnel reports
 
 1. Go to **Funnels** to open the **Funnels library**.
@@ -69,9 +73,6 @@ To see information about a phase
 
 <!---mhart: please use a screenshot that shows a funnel, not just a single step with data. ci-docs/engagement-insights/media/giftcard-example.png has this information. SS: I'll have to work with Kate on this--->
 
-> [!NOTE]
-> Engagement insights funnel currently reports supports scenarios in which all users in the funnel are anonymous *or* all users are authenticated.
-
 ### Change the date range for the funnel report
 
 1. Go to **Funnels** to open the **Funnels library**.
@@ -79,10 +80,6 @@ To see information about a phase
 1. Select a name to open the report.
 
 1. Open the **time range** and select a new time period from the list or **Fixed date range** to specify a date range.
-
-
-> [!NOTE]
-> Engagement insights funnel currently only retains historical data for the last 30 days.
 
 ## Edit or delete funnel reports
 
