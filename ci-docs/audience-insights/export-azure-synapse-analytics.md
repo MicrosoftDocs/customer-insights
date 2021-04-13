@@ -78,6 +78,16 @@ Saving an export doesn't run the export immediately.
 The export runs with every [scheduled refresh](system.md#schedule-tab).
 You can also [export data on demand](export-destinations.md#run-exports-on-demand).
 
+## Update an Export
+
+1. Go to **Data** > **Exports**.
+
+1. Click  **Edit** on the export which should be updated.
+
+* **Add** or **Remove** entities from the selection. If entities are removed from the selection they won't get deleted on the Azure Synapse database. But on the subsequent data refreshes the entities won't get updated on Synapse.
+
+* **Changing** the **Database Name** will create a new Database on Synapse. The Database withthe previous name in the configuration won't receive any updates in subsequent refreshes.
+
 ## FAQ
 
 ### Working with Audience Insights data in Synapse
