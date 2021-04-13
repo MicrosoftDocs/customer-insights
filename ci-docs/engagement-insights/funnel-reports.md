@@ -4,7 +4,7 @@ description: How to use funnel reports to understand how audience makes decision
 ms.reviewer: kamacdon
 ms.author: v-salash
 author: pickwick129
-ms.date: 04/08/2021
+ms.date: 04/13/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -50,7 +50,7 @@ Step 4: Subscription sign-up
   
 This funnel lets you see the number of users who used the promotion code after a one-time purchase to sign up for the subscription program.
 
-## Analyze funnel reports
+## Manage funnel reports
 
 You can review funnel reports to analyze data, track performance, and gather insights.
 
@@ -67,11 +67,10 @@ You can review funnel reports to analyze data, track performance, and gather ins
 
 To see information about a phase
 
-- Hover over a step in the report.
+- Point to a step in the report.
 
 :::image type="content" source="media/funnel-step-data.png" alt-text="funnel data":::
 
-<!---mhart: please use a screenshot that shows a funnel, not just a single step with data. ci-docs/engagement-insights/media/giftcard-example.png has this information. SS: I'll have to work with Kate on this--->
 
 ### Change the date range for the funnel report
 
@@ -89,7 +88,7 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 
 1. Go to **Funnels** to open the **Funnels library**. 
 
-1. Select the ellipsis **(...)** next to the report you want to change and choose **Edit name** or **Delete**.
+1. Select the ellipsis **More** next to the report you want to change and choose **Edit name** or **Delete**.
 
 ### Edit a funnel step  
 
@@ -97,7 +96,7 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 
 1. Select a name to open the report.
 
-1. Select the ellipsis **(...)** on the step that you want to edit.
+1. Select the step that you want to edit.
 
 1. Select **Edit**.
 
@@ -111,7 +110,7 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 
 1. Select a name to open the report.
 
-1. Select the ellipsis **(...)** on the step that you want to reorder.
+1. Select the step that you want to reorder.
 
 1. Select **Move**, and then **Up**, **Down**, **To top**, or **To bottom**, to move the step.
 
@@ -121,4 +120,4 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 
 1. Select a name to open the report.
 
-1. Select the ellipsis **(...)** on the step that you want to remove and select **Delete**.
+1. Select the step that you want to remove and select **Delete**.
