@@ -88,7 +88,7 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 
 1. Go to **Funnels** to open the **Funnels library**. 
 
-1. Select the ellipsis **More** next to the report you want to change and choose **Edit name** or **Delete**.
+1. Select **More** next to the report you want to change and choose **Edit name** or **Delete**.
 
 ### Edit a funnel step  
 
