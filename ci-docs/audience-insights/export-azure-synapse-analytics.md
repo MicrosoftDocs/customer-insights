@@ -36,7 +36,9 @@ To configure the connection from Customer Insights to Azure Synapse Analytics an
 
 * On the Resource Group the Synapse workspace is located, user needs to be assigned at least **Reader** permissions. Learn more on [Assign Azure roles using the Azure portal](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal).
 
-* On Azure Data Lake Storage Gen2 account where the data is located and linked to the Synapse workspace, the user needs to be assigned **Storage Blob Data Contributor** permissions. Learn more on [How to set up access control for your Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/security/how-to-set-up-access-control).
+* On Azure Data Lake Storage Gen2 account where the data is located and linked to the Synapse workspace, the user needs to be assigned **Storage Blob Data Contributor** permissions. Learn more on [Use the Azure portal to assign an Azure role for access to blob and queue data](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+
+* On Azure Data Lake Storage Gen2 account where the data is located and linked to the Synapse workspace, the [Azure Synapse workspace managed identity](https://docs.microsoft.com/azure/synapse-analytics/security/synapse-workspace-managed-identity) needs to be assigned **Storage Blob Data Contributor** permissions. Learn more on [Use the Azure portal to assign an Azure role for access to blob and queue data](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 * On Synapse workspace, the service principal for Audience Insight needs **Synapse Administrator** role assigned. Learn more on [How to set up access control for your Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/security/how-to-set-up-access-control).
 
