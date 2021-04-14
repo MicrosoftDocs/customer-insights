@@ -720,6 +720,11 @@
       "source_path": "topics/preview/instrument-your-website.md",
       "redirect_url": "/dynamics365/customer-insights/engagement-insights/instrument-website",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-microsoft-graph.md",
+      "redirect_url": "/dynamics365/customer-insights/audience-insights/enrichment-microsoft",
+      "redirect_document_id": false
     }
   ]
 }

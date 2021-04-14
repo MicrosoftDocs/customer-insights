@@ -41,7 +41,7 @@ Considerations when creating refined events:
     - Signal.Action.Name - indicating the activity details
     - Signal.User.Id - used to map with the customer ID
     - Signal.View.Uri - used as a web address as a basis for segments or measures
-    - Signal.Export.Id - to use as a primary key for events <!-- system generated, do we need to list?-->
+    - Signal.Export.Id - to use as a primary key for events
     - Signal.Timestamp - to determine the date and time for the activity
 
 Select the filters to focus on the events and pages that matter for your use case. In this example, we'll use the "Email promotion" action name.

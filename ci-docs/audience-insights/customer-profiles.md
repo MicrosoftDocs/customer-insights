@@ -54,7 +54,7 @@ Customer details include:
 
 -	**Customer profile tile:** This tile shows the different values from the unified customer profile entity. These details can include email address, name, city, and so on. 
 
--	**Potential interests, potential brands:** Shows if you configured a first-party enrichment. It represents potential interests and affinities for brands a customer with a profile similar to this customer might have. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft-graph.md).
+-	**Potential interests, potential brands:** Shows if you configured a first-party enrichment. It represents potential interests and affinities for brands a customer with a profile similar to this customer might have. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md).
 
 -	**Measures:** Shows if you configured one or more measures of a specific type: customer attribute measures. They include calculated KPIs around your customers on the individual customer level. For more information, see [Define and manage measures](measures.md).
 
