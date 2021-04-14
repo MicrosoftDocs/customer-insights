@@ -44,6 +44,12 @@ Subscription churn prediction helps predicting whether a customer is at risk for
         - **Timestamp:** The date and time of the event identified by the primary key.
         - **Event:** The name of the event you want to use. For example, a field called "UserAction" in a streaming video service could have the value of "Viewed".
         - **Details:** Detailed information about the event. For example, a field called "ShowTitle" in a streaming video service could have the value of a video a customer watched.
+    - Suggested data characteristics:
+        - Sufficient history length: Preferred: At least 2-3 years of Subscription data or at least twice the prediction time window selected.
+        - Data should include active and inactive subscriptions for each customer. i.e., multiple entries per customer ID
+        - Minimum data requirement: At least 10 profiles in the data (the model will fail with less than 10 customers), but preferably more than 1000 unique customers, and data range history at least twice the prediction window selected.
+        - Notes:
+            - For any data added, there should not be more than 20% of missing values in the data field of the entity provided.
    > [!NOTE]
    > You'll need at least two activity records for 50% of the customers you want to calculate churn for.
 
@@ -109,6 +115,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
    - **Prediction name:** The name of the prediction provided when creating it.
    - **Prediction type:** The type of model used for the prediction
    - **Output entity:** Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.
+       - Note: In the output entity, "ChurnScore" is the predicted probability of churn and “IsChurn” is a binary label based on the “ChurnScore” with 0.5 threshold. The threshold might be too high or too low and not applicable to your actual use scenario. You can go to “Segments” to create a new high risk segment based on custom threshold.
    - **Predicted field:** This field is populated only for some types of predictions, and isn't used in subscription churn prediction.
    - **Status:** The current status of the prediction's run.
         - **Queued:** The prediction is currently waiting for other processes to run.
