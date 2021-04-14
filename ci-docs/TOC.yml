@@ -80,7 +80,7 @@
         - name: Enrich customer profiles
           href: audience-insights/enrichment-hub.md
         - name: Brand and interest affinities
-          href: audience-insights/enrichment-microsoft-graph.md
+          href: audience-insights/enrichment-microsoft.md
         - name: Enrich with HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Enrich with Leadspace
