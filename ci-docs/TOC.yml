@@ -261,9 +261,12 @@
           href: engagement-insights/custom-reports.md
         - name: Create unified profile reports
           href: engagement-insights/profile-reports.md
+
+    - name: Journey analytics
+      items: 
         - name: Create and manage funnel reports
           href: engagement-insights/funnel-reports.md
-
+    
     - name: Developer resources
       items: 
         - name: Developer resources overview
