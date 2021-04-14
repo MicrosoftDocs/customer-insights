@@ -1,7 +1,7 @@
 ---
 title: "Custom machine learning models | Microsoft Docs"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
-ms.date: 11/19/2020
+ms.date: 03/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -23,7 +23,12 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 - Currently, this feature supports web services published through [Machine Learning Studio (classic)](https://studio.azureml.net) and [Azure Machine Learning batch pipelines](/azure/machine-learning/concept-ml-pipelines).
 
-- You need an Azure Data Lake Gen2 storage account associated with your Azure Studio instance to use this feature. For more information, see [Create an Azure Data Lake Storage Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+- You need an Azure Data Lake Gen2 storage account associated with your Azure Studio instance to use this feature. For more information, see [Create an Azure Data Lake Storage Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
+
+- For Azure Machine Learning workspaces with pipelines, you need Owner or User Access Administrator permissions to the Azure Machine Learning Workspace.
+
+   > [!NOTE]
+   > Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
 
 ## Add a new workflow
 
@@ -50,7 +55,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
    > [!div class="mx-imgBorder"]
    > ![Configure a workflow](media/intelligence-screen2-updated.png "Configure a workflow")
-   
+
 1. In the **Model Output Parameters** step, set the following properties:
    - Machine Learning Studio (classic)
       1. Enter the output **Entity name** you want web service output results to flow into.
@@ -58,12 +63,12 @@ Predictions offer capabilities to create better customer experiences, improve bu
       1. Enter the output **Entity name** you want pipeline output results to flow into.
       1. Select the **Output data store parameter name** of your batch pipeline from the dropdown.
       1. Select the **Output Path parameter name** of your batch pipeline from the dropdown.
-      
+
       > [!div class="mx-imgBorder"]
       > ![Model Output Parameter Pane](media/intelligence-screen3-outputparameters.png "Model Output Parameter Pane")
 
 1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
-   
+
    > [!div class="mx-imgBorder"]
    > ![Relate results to Customer data pane](media/intelligence-screen4-relatetocustomer.png "Relate results to Customer data pane")
 
@@ -91,7 +96,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
       1. Select the **Output Path parameter name** for your test pipeline.
 
 1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
-   You need to choose an attribute from the inference output with values similar to the Customer ID column of the Customer entity. If don't have such a column in your data set, choose an attribute that uniquely identifies the row.
+   Choose an attribute from the inference output with values similar to the Customer ID column of the Customer entity. If don't have such a column in your data set, choose an attribute that uniquely identifies the row.
 
 ## Run a workflow
 
@@ -109,5 +114,28 @@ Your workflow also runs automatically with every scheduled refresh. Learn more a
 
 Your workflow will be deleted. The [entity](entities.md) that was created when you created the workflow persists, and can be viewed from the **Entities** page.
 
+## Results
+
+Results from a workflow are stored in the entity configured during the Model Output Parameter phase. You can access this data from the [entities page](entities.md) or with [API access](apis.md).
+
+### API Access
+
+For the specific OData query to get data from a custom model entity, use the following format:
+
+`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
+
+1. Replace `<your instance id>` with the ID of your Customer Insights environment, which you find in the in the address bar of your browser when accessing Customer Insights.
+
+1. Replace `<custom model output entity>` with the entity name you provided during the Model Output Parameters step of the custom model configuration.
+
+1. Replace `<guid value>` with the Customer ID of the customer you'd like to access the record for. You can usually find this ID on the [customer profiles page](customer-profiles.md) in the CustomerID field.
+
+## Frequently Asked Questions
+
+- Why can't I see my pipeline when setting up a custom model workflow?    
+  This issue is frequently caused by a configuration issue in the pipeline. Ensure the [input parameter is configured](azure-machine-learning-experiments.md#dataset-configuration), and the [output datastore and path parameters](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) are also configured.
+
+- What does the error "Couldn't save intelligence workflow" mean?    
+  Users usually see this error message if they don't have Owner or User Access Administrator privileges on the workspace. The user needs a higher level of permissions to enable Customer Insights to process the workflow as a service rather than using the user credentials for subsequent runs of the workflow.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
