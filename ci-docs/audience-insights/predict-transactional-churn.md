@@ -133,7 +133,7 @@ Transactional churn prediction helps predict if a customer will no longer purcha
    - **Prediction type:** Type of model used for the prediction
    - **Output entity:** Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.
         - Note: In the output entity, "ChurnScore" is the predicted probability of churn and “IsChurn” is a binary label based on the “ChurnScore” with 0.5 threshold. The threshold might be too high or too low and not applicable to your actual use scenario. You can go to “Segments” to create a new high risk segment based on custom threshold. 
-        - Note: Customers in the customers entity are not necessarily active customers. Some of them may haven’t had any activities for a long time and are considered as churned already (based on the value of “churn definition”). It’s not very meaningful and useful to predict churn risk for customers who already churned (not your population of interest).
+        - Note: Customers in the customers entity are not necessarily active customers. Some of them may not have had any activities for a long time and are considered as churned already (based on the value of “churn definition”). It’s not very meaningful and useful to predict churn risk for customers who already churned (not your population of interest).
    - **Predicted field:** This field is populated only for some types of predictions, and isn't used in churn prediction.
    - **Status:** Status of the prediction run.
         - **Queued:** Prediction is waiting for other processes to run.
