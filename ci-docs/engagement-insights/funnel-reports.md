@@ -1,17 +1,17 @@
 ---
-title: Funnel reports (preview)
+title: Funnel reports
 description: How to use funnel reports to understand how audience makes decisions.
 ms.reviewer: kamacdon
 ms.author: v-salash
 author: pickwick129
-ms.date: 04/13/2021
+ms.date: 04/14/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
 ms.manager: shellyha 
 ---
 
-# Create and manage funnel reports (preview)
+# Create and manage funnel reports
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -70,7 +70,6 @@ To see information about a phase
 - Point to a step in the report.
 
 :::image type="content" source="media/funnel-step-data.png" alt-text="funnel data":::
-
 
 ### Change the date range for the funnel report
 
