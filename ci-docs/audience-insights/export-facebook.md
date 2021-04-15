@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Facebook Ads Manager"
 description: "Learn how to configure the connection and export to Facebook Ads Manager."
-ms.date: 02/15/2021
+ms.date: 04/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -24,6 +24,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 - Up to 10 million customer profile per export to Facebook Ads Manager.
 - Export to Facebook Ads Manager is limited to segments.
+- Create or update custom audiences in Facebook of type *customer list* only.
 - Exporting segments with a total of 10 million profiles can take up to 90 minutes to complete.
 
 ## Set up connection to Facebook Ads Manager
@@ -47,6 +48,8 @@ Before users can create an export, an administrator must configure the connectio
    1. Select the **Facebook Ads Account** that you want to work with.
 
    1. Select an **Existing custom audience** from the drop-down list or create a **New custom audience**. For more information, see [**Audiences in Facebook Ads Manager**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).
+      > [!NOTE]
+      > You can only create or update custom audiences on Facebook of the type *customer list* with this export. In some cases, you see custom audiences of different types in the drop-down list. Selecting a different type than *customer list* will result in a failing export. 
 
 1. Review the **Data privacy and compliance** and select **I agree**.
 
