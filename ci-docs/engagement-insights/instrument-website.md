@@ -19,13 +19,16 @@ This article describes the steps that an administrator takes to add a code snipp
 
 ## Prerequisite
 
-* Your webpage or project must be hosted to send activity data. Data sent from a local file will not be accepted by the server.
+* You have administator permissions for the workspace to store the data.
+* Your website or project must be hosted online to send activity data. Data sent from a local file will not be accepted by the server.
 
 ## Add code to your website
 
-1. Go to **Admin** > **Workspace** > **Installation guide** and select **Copy code** to copy the code snippet. By default, the ingestion key for your workspace is embedded in the code snippet.
+1. Go to **Admin** > **Workspace** > **Installation guide**.
 
-   :::image type="content" source="media/copy-code.png" alt-text="Code page screenshot":::
+1. Select **Copy code** to copy the code snippet. By default, the ingestion key for your workspace is embedded in the code snippet.
+
+   :::image type="content" source="media/copy-code.png" alt-text="Screenshot of the code snippet page":::
 
 1. Add the copied code snippet to your website, near the the `<head>` tag and before any other script or CSS tags.
 
