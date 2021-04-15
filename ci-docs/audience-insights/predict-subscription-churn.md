@@ -44,12 +44,12 @@ Subscription churn prediction helps predicting whether a customer is at risk for
         - **Timestamp:** The date and time of the event identified by the primary key.
         - **Event:** The name of the event you want to use. For example, a field called "UserAction" in a streaming video service could have the value of "Viewed".
         - **Details:** Detailed information about the event. For example, a field called "ShowTitle" in a streaming video service could have the value of a video a customer watched.
-    - Suggested data characteristics:
-        - Sufficient history length: Preferred: At least 2-3 years of Subscription data or at least twice the prediction time window selected.
-        - Data should include active and inactive subscriptions for each customer. i.e., multiple entries per customer ID
-        - Minimum data requirement: At least 10 profiles in the data (the model will fail with less than 10 customers), but preferably more than 1000 unique customers, and data range history at least twice the prediction window selected.
-        - Notes:
-            - For any data added, there should not be more than 20% of missing values in the data field of the entity provided.
+- Suggested data characteristics:
+    - Sufficient historical data: Subscription data for at least double the selected time window. Preferably, two to three years of subscription data.
+    - Subscription status: Data includes active and inactive subscriptions for each customer so there are multiple entries per customer ID.
+    - Number of customers: At least 10 customer profiles, preferably more than 1,000 unique customers. The model will fail with fewer than 10 customers and insufficient historical data.
+    - Data completeness: Less than 20% of missing values in the data field of the entity provided.
+   
    > [!NOTE]
    > You'll need at least two activity records for 50% of the customers you want to calculate churn for.
 
@@ -68,7 +68,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 ### Define customer churn
 
 1. Enter the number of **Days since subscription ended** that your business considers a customer to be in a churned state. This period is typically liked to business activities like offers or other marketing efforts trying to prevent losing the customer.
-1. Enter the number of **Days to look into future to predict churn** to set a window to predict churn for. For example, to predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for longer or shorter periods of time can make it more difficult to address the factors in your churn risk profile, but this is highly dependent on your specific business requirements. Select **Next** to continue
+1. Enter the number of **Days to look into future to predict churn** to set a window to predict churn for. For example, to predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for longer or shorter periods of time can make it more difficult to address the factors in your churn risk profile, depending on your specific business requirements. Select **Next** to continue
    >[!TIP]
    > You can select **Save and close** at any time to save the prediction as a draft. You'll find the draft prediction in the **My predictions** tab to continue.
 
@@ -115,7 +115,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
    - **Prediction name:** The name of the prediction provided when creating it.
    - **Prediction type:** The type of model used for the prediction
    - **Output entity:** Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.
-       - Note: In the output entity, "ChurnScore" is the predicted probability of churn and “IsChurn” is a binary label based on the “ChurnScore” with 0.5 threshold. The threshold might be too high or too low and not applicable to your actual use scenario. You can go to “Segments” to create a new high risk segment based on custom threshold.
+     In the output entity, *ChurnScore* is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. The default threshold might not work for your scenario. [Create a new segment](segments.md#create-a-new-segment) with your preferred threshold.
    - **Predicted field:** This field is populated only for some types of predictions, and isn't used in subscription churn prediction.
    - **Status:** The current status of the prediction's run.
         - **Queued:** The prediction is currently waiting for other processes to run.
