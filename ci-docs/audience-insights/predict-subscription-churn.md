@@ -114,7 +114,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 1. Select the prediction you want to review.
    - **Prediction name:** The name of the prediction provided when creating it.
    - **Prediction type:** The type of model used for the prediction
-   - **Output entity:** Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.
+   - **Output entity:** Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.    
      In the output entity, *ChurnScore* is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. The default threshold might not work for your scenario. [Create a new segment](segments.md#create-a-new-segment) with your preferred threshold.
    - **Predicted field:** This field is populated only for some types of predictions, and isn't used in subscription churn prediction.
    - **Status:** The current status of the prediction's run.
