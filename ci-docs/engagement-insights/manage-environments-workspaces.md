@@ -20,14 +20,14 @@ ms.manager: shellyha
 A workspace is a space to store and manage events and reports. When you create a workspace, you select the type of data to send to the workspace. Currently, only web data is supported.
 
 An environment is a space where you manage your workspaces and connections. How you use environments depends on your organization and your use case.
-
 For example, you can create:
 
-- A single environment.
-- Separate environments for test and production.
-- Separate environments that correspond to specific teams or departments in your organization, containing the relevant events for each audience.
-- Separate environments for different global branches of your company.
-- Connections to Customer Insights audience insights capability.
+-	A single environment.
+-	Separate environments for test and production.
+-	Separate environments that correspond to specific teams or departments in your organization, containing the relevant events for each audience.
+-	Separate environments for different global branches of your company.
+-	Connections to Customer Insights audience insights capability.
+
 
 ## Connect your data
 
