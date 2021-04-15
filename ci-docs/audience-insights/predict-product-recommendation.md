@@ -26,20 +26,31 @@ If you're interested in trying this feature but don't have data to complete the 
 ## Prerequisites
 
 - At least [Contributor permissions](permissions.md) in Customer Insights.
+
 - Business knowledge to understand different types of products for your business and how your customers interact with them. We support recommending products that have been previously purchased by your customers or recommendations for new products.
+
 - Data about transactions, purchases, and their history:
     - Transaction identifiers to distinguish purchases or transactions.
     - Customer identifiers to map transactions to your customers.
     - Transaction event dates that specify dates the transaction occurred on.
-    - (Optional) Product ID information for the transaction.
-    - (Optional) Product catalog data entity to use a product filter.
+    - Product ID information for the transaction.
+    - (Optional) A product catalog data entity to use a product filter.
     - (Optional) If a transaction is a return or not.
     - The semantic data schema requires the following information:
         - **Transaction ID:** A unique identifier of a purchase or transaction.
         - **Transaction date:** The date of the purchase or transaction.
         - **Value of the transaction:** The numerical value of the purchase or transaction.
         - **Unique product ID:** The ID of the product or service purchased if your data is at a line item level.
-        - (Optional) **Purchase or return:** A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we will also use this information to infer a return.
+        - (Optional) **Purchase or return:** A boolean field where the value *true* identifies that a transaction was a return. If the Purchase or Return data is not provided the model and the **Value of the transaction** is negative, we will also use this information to infer a return.
+- Suggested data characteristics:
+    - Sufficient historical data: At least one year of transactional data, preferably two to three years to include some seasonality.
+    - Multiple purchases per customer: Three or more transactions per Customer ID
+    - Number of customers: At least 100 customers, preferably more than 10,000 customers. The model will fail with fewer than 100 customers.
+
+> [!NOTE]
+> - The model requires the transaction history of your customers. The definition of a transaction is quite flexible. Any data that describes a user-product interaction can work as an input. For example, purchasing a product, taking a class, or attending an event.
+> - Only one transaction history entity can be configured currently. If there are multiple purchase entities, union them in Power Query before data ingestion.
+> - If order and order details are different entities, join them before using in the model. The model doesn't work with only an order ID or receipt ID in an entity.
 
 
 ## Create a product recommendation prediction
@@ -93,7 +104,7 @@ If you're interested in trying this feature but don't have data to complete the 
 
 ### Configure product filters
 
-Sometimes, only certain products are beneficial or appropriate for the type of prediction you build. Product filters let you identify a subset of products with specific characteristics to recommend to your customers. This may increase the personalization of the recommendations to your customers. The model will use all the products available to learn patterns but only use the products matching the product filter in its output.
+Sometimes, only certain products are beneficial or appropriate for the type of prediction you build. Product filters let you identify a subset of products with specific characteristics to recommend to your customers. The model will use all the products available to learn patterns but only use the products matching the product filter in its output.
 
 1. In the **Add product information** step, add your product catalog with information for each product. Map the information required in select **Next**.
 
@@ -105,11 +116,11 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
 
 1. Select **Next**.
 
-1. If you choose to define a product filter, you need to define it now. In the **Product catalog attributes** pane, select the the attributes from your *Product Catalog entity* that you want include in the filter.
+1. If you choose to define a product filter, you need to define it now. In the **Product catalog attributes** pane, select the attributes from your *Product Catalog entity* that you want include in the filter.
 
    :::image type="content" source="media/product-filters-sidepane.png" alt-text="Side pane showing attributed in the product catalog entity to select for product filters.":::
 
-1. Choose if you want the product filter to use **and** or **or** connectors to logically combine your selection of attributes from product catalog.
+1. Choose if you want the product filter to use **and** or** connectors to logically combine your selection of attributes from product catalog.
    
    :::image type="content" source="media/product-filters-sample.png" alt-text="Sample configuration of product filters combined with logical AND connectors.":::
 
@@ -134,8 +145,9 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
 1. Select the prediction you want to review.
    - **Prediction name:** The name of the prediction provided when creating it.
    - **Prediction type:** The type of model used for the prediction
-   - **Output entity:** Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.
-   - **Predicted field:** This field is populated only for some types of predictions, and isn't used in churn prediction.
+   - **Output entity:** Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.    
+      *Score* in the output entity is a quantitative measure of the recommendation. The model recommends products with a higher score over products with a lower score.
+   - **Predicted field:** This field is populated only for some types of predictions, and isn't used in Product Recommendation prediction.
    - **Status:** The current status of the prediction's run.
         - **Queued:** The prediction is currently waiting for other processes to run.
         - **Refreshing:** The prediction is currently running the "score" stage of processing to produce results that will flow into the output entity.
@@ -183,7 +195,8 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
 
       This section shows stats around the data points that were used by the model to learn patterns and generate product recommendations. Filtering, as configured in the model configuration, will apply on the output generated by the model. However, the model uses all available data to learn patterns. Therefore, if you use product filtering in the model configuration, this section will show the total number of products that the model analyzed to learn patterns, which might differ from the number of products that match the defined filtering criteria.
 
-   1. **High-confidence product recommendations:** A sample of recommendations provided to your customers that the model believes are likely to be purchased by the customer.
+   1. **High-confidence product recommendations:** A sample of recommendations provided to your customers that the model believes are likely to be purchased by the customer.    
+      If a product catalog is added, the product IDs get replaced with product names. Product names provide a more actionable and intuitive information about the predictions.
        > [!div class="mx-imgBorder"]
        > ![List showing high confidence suggestions for a select set of individual customers](media/product-recommendation-highconfidence.PNG "List showing high confidence suggestions for a select set of individual customers")
 
