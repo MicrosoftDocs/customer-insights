@@ -24,7 +24,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 - Up to 10 million customer profile per export to Facebook Ads Manager.
 - Export to Facebook Ads Manager is limited to segments.
-- Create or update custom audiences in Facbook of type *customer list* only.
+- Create or update custom audiences in Facebook of type *customer list* only.
 - Exporting segments with a total of 10 million profiles can take up to 90 minutes to complete.
 
 ## Set up connection to Facebook Ads Manager
