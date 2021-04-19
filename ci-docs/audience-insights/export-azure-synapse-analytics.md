@@ -13,14 +13,14 @@ manager: shellyha
 
 # Export data to Azure Synapse Analytics
 
-Azure Synapse is an enterprise analytics service that accelerates time to insight across data warehouses and big data systems. You can ingest and use your Customer Insights data in [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is).
+Azure Synapse is an analytics service that accelerates time to insight across data warehouses and big data systems. You can ingest and use your Customer Insights data in [Azure Synapse](/azure/synapse-analytics/overview-what-is).
 
 ## Prerequisites
 
-To configure the connection from Customer Insights to Azure Synapse and to use your Customer Insights data within Azure Synapse, the following prerequisites must be met.
+The following prerequisites must be met to configure the connection from Customer Insights to Azure Synapse.
 
-  > [!NOTE]
-  > Review the prerequisites thoroughly and set all **role assignments** as described.  
+> [!NOTE]
+> Make sure to set all **role assignments** as described.  
 
 ## Prerequisites in Customer Insights
 
@@ -30,15 +30,15 @@ In Azure:
 
 - An active Azure subscription.
 
-- If using a new Azure Data Lake Storage Gen2 account, the *service principal for audience insights* and the *user* need **Storage Blob Contributor** permissions. Learn more on [how to connect to an Azure Data Lake Storage Gen2 account with an Azure service principal for audience insights](connect-service-principal.md). The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
+- If using a new Azure Data Lake Storage Gen2 account, the *service principal for audience insights* and the *user* need **Storage Blob Contributor** permissions. Learn more on [connecting to an Azure Data Lake Storage Gen2 account with Azure service principal for audience insights](connect-service-principal.md). The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
 
 - On the resource group the Azure Synapse workspace is located, the **service principal and the user** for audience insights needs to be assigned at least **Reader** permissions. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
-- On Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace, the *user* needs to be assigned **Storage Blob Data Contributor** permissions. Learn more about [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- The *user* needs **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more about [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- On Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace, the *[Azure Synapse workspace managed identity](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* needs to be assigned **Storage Blob Data Contributor** permissions. Learn more on [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- The *[Azure Synapse workspace managed identity](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* needs **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more on [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-* On the Azure Synapse workspace, the *service principal for audience insights* needs **Synapse Administrator** role assigned. For more information, see [How to set up access control for your Synapse workspace](/azure/synapse-analytics/security/how-to-set-up-access-control).
+- On the Azure Synapse workspace, the *service principal for audience insights* needs **Synapse Administrator** role assigned. For more information, see [How to set up access control for your Synapse workspace](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
 ## Set up the connection and export to Azure Synapse
 
@@ -46,19 +46,19 @@ In Azure:
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Azure Synapse Analytics** or click the **Set up** on the **Azure Synapse Analytics** tile to configure the connection.
+1. Select **Add connection** and choose **Azure Synapse Analytics** or select the **Set up** on the **Azure Synapse Analytics** tile to configure the connection.
 
 1. Give your connection a recognizable name in the Display name field. The name and the type of the connection describes this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Select or search for the subscription you want the Customer Insights data use in. As soon as a subscription is selected, you can also select Workspace, Storage account and Container.
+1. Select or search for the subscription you want to use the Customer Insights data in. As soon as a subscription is selected, you can also select **Workspace**, **Storage account**, and **Container**.
 
 1. Select **Save** to save the connection.
 
 ### Configure an export
 
-You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+You can configure this export if you have access to a connection of this type. For more information, see [permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
 1. Go to **Data** > **Exports**.
 
@@ -80,8 +80,8 @@ The export runs with every [scheduled refresh](system.md#schedule-tab). You can 
 
 1. Go to **Data** > **Exports**.
 
-1. Click  **Edit** on the export which should be updated.
+1. Select **Edit** on the export you want to update.
 
-* **Add** or **Remove** entities from the selection. If entities are removed from the selection they won't get deleted on the Azure Synapse database. But on the subsequent data refreshes the entities won't get updated on Synapse.
+   - **Add** or **Remove** entities from the selection. If entities are removed from the selection, they aren't deleted from the Synapse Analytics database. However, future data refreshes won't update the removed entities in that database.
 
-* **Changing** the **Database Name** will create a new Database on Synapse. The Database withthe previous name in the configuration won't receive any updates in subsequent refreshes.
+   - **Changing the Database Name** creates a new Synapse Analytics database. The database with the name that was configured before won't receive any updates in future refreshes.
