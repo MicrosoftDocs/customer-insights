@@ -27,13 +27,26 @@ To set up or edit an export, you need to have connections available to you. Conn
 - Contributors can have access to specific connections. They depend on administrators to configure and share connections. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 - Viewers can only view existing exports but not create them.
 
+
+To define a new export:
+
 1. Go to **Data** > **Exports**.
 
-1. Select **Add export** to create a new export destination.
+1. Select **Add export** to create a new export.
 
 1. In the **Set up export** pane, select which connection to use. [Connections](connections.md) are managed by administrators. 
 
 1. Provide the required details and select **Save** to create the export.
+
+
+To define a new export based on an existing one:
+
+1. Select the export you want to base the new on on by activating it in the list of exports.
+
+1. Select **Create duplicate** action. This opens the panel to define a new export with the same setup as the export you activated it on.
+
+1. Review and adapt the export and select **Save** to create the export.
+
 
 ### Edit an export
 
