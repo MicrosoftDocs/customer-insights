@@ -53,10 +53,25 @@ After creating export destinations, they are listed on **Data** > **Exports**. A
 
 1. This side pane shows the set up of this export. Without edit permissions, you can't change values. Select **Close** to return to the exports page.
 
-## Run exports on demand
+## Schedule and run exports
 
-After configuring an export, it will run with every [scheduled refresh](system.md#schedule-tab) as long as it has a working connection.
+Each export you configure has a schedule. By default exports are run as part of the system every [scheduled refresh](system.md#schedule-tab). You can customize the schedule when this export should be run. If turned off, the export will only run if activated manually.
 
+### Schedule exports
+You can choose custom schedules for your exports. You can define this for individual or a several exports at once. 
+Note schedules for exports depend on the state of your instance. If there are dependencies being updated for scheduled exports when schedule should start, the system will wait until these have finished, then run the export.
+
+1. Go to **Data** > **Exports**.
+
+1. Select the vertical ellipsis for the Export you want to schedule.
+
+1. Select **Schedule** from the dropdown menu.
+
+1. Within the panel that opened choose between having this export run automatically or only manually with the toggle control "Schedule run". When toggle is set to off, this export will only be run if triggered by a user. Your previously defined schedule will remain stored. It only has an effect if the toggle is set to on.
+
+1. When editing a schedule choose recurrence type, then define details for it. The time defined applies to all instances of recurrence. This time app
+
+### Run exports manually
 To export data without waiting for a scheduled refresh, go to **Data** > **Exports**. You have two options:
 
 - To run all exports, select **Run all** in the command bar. 
