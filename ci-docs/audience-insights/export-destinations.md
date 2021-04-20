@@ -72,5 +72,7 @@ To export data without waiting for a scheduled refresh, go to **Data** > **Expor
 
 1. Confirm the removal by selecting **Remove** on the confirmation screen.
 
+## Schedule exports
+Each export you configure has a schedule. By default exports are run as part of the scheduled system data refresh. You can customize the schedule when this export should be run. If turned off, the export will only run if activated manually.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
