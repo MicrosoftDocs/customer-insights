@@ -58,7 +58,7 @@ After creating export destinations, they are listed on **Data** > **Exports**. A
 Each export you configure has a schedule. By default exports are run as part of the system every [scheduled refresh](system.md#schedule-tab). You can customize the schedule when this export should be run. If turned off, the export will only run if activated manually.
 
 ### Schedule exports
-You can choose custom schedules for your exports. You can define this for individual or a several exports at once. 
+You can choose custom schedules for your exports. You can define this for individual or a several exports at once. The exports page shows the current schedule in the column **Schedule**. The permission to change the schedule is the same as for [editing and defining exports](export-destinations.md#set-up-a-new-export). 
 Note schedules for exports depend on the state of your instance. If there are dependencies being updated for scheduled exports when schedule should start, the system will wait until these have finished, then run the export.
 
 1. Go to **Data** > **Exports**.
@@ -69,13 +69,15 @@ Note schedules for exports depend on the state of your instance. If there are de
 
 1. Within the panel that opened choose between having this export run automatically or only manually with the toggle control "Schedule run". When toggle is set to off, this export will only be run if triggered by a user. Your previously defined schedule will remain stored. It only has an effect if the toggle is set to on.
 
-1. When editing a schedule choose recurrence type, then define details for it. The time defined applies to all instances of recurrence. This time app
+1. When editing a schedule choose recurrence type, then define details for it. The time defined applies to all instances of a recurrence. This time reflects when that export should start not when it will finish.
+
+1. When done with defining a schedule save it by activating **Save**.
 
 ### Run exports manually
 To export data without waiting for a scheduled refresh, go to **Data** > **Exports**. You have two options:
 
-- To run all exports, select **Run all** in the command bar. 
-- To run a single export, select the ellipsis (...) on a list item and then choose **Run**.
+- To run all exports, select **Run all** in the command bar. This will only run exports which have an active schedule.
+- To run a single export, select it in the list, then active **Run**, which is available in the command bar at the top of the page or through the ellipsis (...) on a list item.
 
 ## Remove an Export
 
