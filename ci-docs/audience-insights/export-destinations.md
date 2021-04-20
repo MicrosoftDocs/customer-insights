@@ -59,13 +59,14 @@ Each export you configure has a schedule. By default exports are run as part of 
 
 ### Schedule exports
 You can choose custom schedules for your exports. You can define this for individual or a several exports at once. The exports page shows the current schedule in the column **Schedule**. The permission to change the schedule is the same as for [editing and defining exports](export-destinations.md#set-up-a-new-export). 
-Note schedules for exports depend on the state of your instance. If there are dependencies being updated for scheduled exports when schedule should start, the system will wait until these have finished, then run the export.
+
+Note that schedules for exports depend on the state of your instance. If there are [dependencies](system.md#refresh-policies) being updated for scheduled exports when schedule should start, the system will wait until these have finished, then run the export. You can see when an export was last refreshed in column **Refreshed**.
 
 1. Go to **Data** > **Exports**.
 
-1. Select the vertical ellipsis for the Export you want to schedule.
+1. Select the export you want to schedule in the list.
 
-1. Select **Schedule** from the dropdown menu.
+1. Select **Schedule** from the commandbar or the dropdown menu.
 
 1. Within the panel that opened choose between having this export run automatically or only manually with the toggle control "Schedule run". When toggle is set to off, this export will only be run if triggered by a user. Your previously defined schedule will remain stored. It only has an effect if the toggle is set to on.
 
@@ -89,7 +90,5 @@ To export data without waiting for a scheduled refresh, go to **Data** > **Expor
 
 1. Confirm the removal by selecting **Remove** on the confirmation screen.
 
-## Schedule exports
-Each export you configure has a schedule. By default exports are run as part of the scheduled system data refresh. You can customize the schedule when this export should be run. If turned off, the export will only run if activated manually.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
