@@ -4,7 +4,7 @@ description: How to create, rename, and delete workspaces and environments.
 author: pickwick129
 ms.reviewer:  m-hartmann
 ms.author: v-salash
-ms.date: 14/11/2021
+ms.date: 4/11/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
