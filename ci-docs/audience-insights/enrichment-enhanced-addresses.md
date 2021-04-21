@@ -33,7 +33,7 @@ Address information might be in a non-standard format and contain spelling error
 **Output**
 
 ```
-- Street 1: 4567 W Main St
+- Street1: 4567 W Main St
 - City: California
 - StateOrProvince: MO
 - ZipOrPostalCode: 54321
