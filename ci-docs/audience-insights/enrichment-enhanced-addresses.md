@@ -17,20 +17,20 @@ Addresses in your data can be unstructured, incomplete, or incorrect. Use Micros
 
 ## How we enhance addresses
 
-Our model performs a two-step process to enhance an address. First, it parses the address to identify its components puts them into a structured format. Then, we use our Microsoft proprietary data to correct, complete, and standardize the values in the address.
+Our model goes through a two-step process to enhance an address. First, it parses the address to identify its components puts them into a structured format. Then, we use our Microsoft proprietary data to correct, complete, and standardize the values in the address.
 
-For example, an address might be in a non-standard format and contain spelling errors. For countries/regions that are supported, we can fix these issues and create a consistent way to list addresses in unified customer profiles.
+For example, your address information might be in a non-standard format and contain spelling errors. The model can fix these issues and create consistent addresses in unified customer profiles.
 
-## Supported countries/regions
+## Supported countries or regions
 
-We currently support enriching addresses in these countries/regions: 
+We currently support enriching addresses in these countries or regions: 
 
 - Australia
 - Canada
 - United Kingdom
 - United States.
 
-Addresses must contain a country/region value. Addresses that don't contain country/region or contain a country/region that’s not supported will not be processed.
+Addresses must contain a country/region value. We don't process addresses for countries or regions that aren't supported and addresses that have no country or region provided.
 
 ## Configure the enrichment
 
@@ -42,11 +42,11 @@ Addresses must contain a country/region value. Addresses that don't contain coun
 
 1. Select the **Customer data set** and choose the entity containing the addresses you want to enrich. You can select the *Customer* entity to enrich addresses in all your customer profiles or select a segment entity to enrich addresses only in customer profiles contained in that segment.
 
-1. Select how addresses are formatted in your data set. Choose **Single-attribute address** if addresses in your data uses a single field. Choose **Multiple-attribute address** if addresses in your data use more than one data field.
+1. Select how addresses are formatted in your data set. Choose **Single-attribute address** if addresses in your data use a single field. Choose **Multiple-attribute address** if addresses in your data use more than one data field.
 
 1.	Map the address fields from your unified customer entity. The Country/Region field is mandatory for multiple-attribute addresses. 
 
-   :::image type="content" source="media/enhanced-address-mapping.png" alt-text="Enhanced address field mapping page.":::
+    :::image type="content" source="media/enhanced-address-mapping.png" alt-text="Enhanced address field-mapping page.":::
 
 1. Select **Next** to complete the field mapping.
 
