@@ -19,7 +19,29 @@ Addresses in your data can be unstructured, incomplete, or incorrect. Use Micros
 
 Our model goes through a two-step process to enhance an address. First, it parses the address to identify its components puts them into a structured format. Then, we use our Microsoft proprietary data to correct, complete, and standardize the values in the address.
 
-For example, your address information might be in a non-standard format and contain spelling errors. The model can fix these issues and create consistent addresses in unified customer profiles.
+### Example
+
+Address information might be in a non-standard format and contain spelling errors. The model can fix these issues and create consistent addresses in unified customer profiles.
+
+**Input**
+
+```
+4567 w main stret californa missouri 54321 us
+```
+
+
+**Output**
+
+```
+- Street 1: 4567 W Main St
+- City: California
+- StateOrProvince: MO
+- ZipOrPostalCode: 54321
+- CountryOrRegion: United States of America
+
+- Address: 4567 W Main St, California, MO, 54321, United States of America
+```
+
 
 ## Supported countries or regions
 
