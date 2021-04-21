@@ -1,10 +1,10 @@
 ---
 title: Manage workspaces and environments
-description: How to create, rename, and delete a workspaces and environments.
+description: How to create, rename, and delete workspaces and environments.
 author: pickwick129
-ms.reviewer: ruthai
+ms.reviewer:  m-hartmann
 ms.author: v-salash
-ms.date: 12/11/2020
+ms.date: 14/11/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -17,53 +17,47 @@ ms.manager: shellyha
 
 ## Overview
 
-A workspace is a space to store and manage events and reports. When you create a workspace, you select the type of data to send to the workspace. Currently, only web data is supported.
+A workspace is a space to store and manage events and reports. It’s where you can view user activity in real time. When you create a workspace, you select the type of data to send to the workspace. Currently, only web data is supported.
 
 An environment is a space where you manage your workspaces and connections. How you use environments depends on your organization and your use case.
 For example, you can create:
 
 -	A single environment.
 -	Separate environments for test and production.
--	Separate environments that correspond to specific teams or departments in your organization, containing the relevant events for each audience.
+-	Separate environments for specific teams or departments in your organization that contain relevant events for each audience.
 -	Separate environments for different global branches of your company.
 -	Connections to Customer Insights audience insights capability.
 
 
-## Connect your data
+## Choose an environment and create a workspace 
 
- When you set up your first workspace in engagement insights, you'll need to set up a connection to create a workspace and start to receive data.
+ Every workspace needs to be in an environment. You can select a pre-existing environment or make a new one when you create a workspace. Then you can choose to add workspace members and start collecting data.
 
 To create your first workspace
 
-1. In engagement insights, select **Connect your data** to start the wizard. 
+1. In engagement insights, select **New** from the workspace switcher. 
 
-:::image type="content" source="media/banner.png" alt-text="Customer Insights page with connect your data button":::
+:::image type="content" source="media/New-workspace.png" alt-text="Customer Insights page workspace tracker":::
 
-2. Choose the type of activity that you want to measure in a new workspace. Currently, only **Website activity** is available. **App activity** and **Device activity** will become available in future releases.
+2. Choose an environment from the list or select **Create new environment**.
+1. Enter a name in **Workspace name**. 
+1. You can add members and assign their permission level from the **Role** list. Then select **Finish** to create the workspace or **Next** to install code. 
+1. Install the code snippet to start receiving data and then select **Done**. 
 
-1. Select **Next** to confirm and create the workspace.
-
-1. Add a code snippet to your website to start receiving data in engagement insights. You can implement this right away or share the code and instructions with your website admin. To find the code snippet later, go to **Admin**>**Data**> **Code**.
-
-   > [!IMPORTANT]
-   > Data will not show in the workspace until the code has been implemented on your website.
-
-1. Select **Done** to open your new workspace.  
 
 
 ## Manage a workspace
 
-You can maintain multiple workspaces concurrently in an environment. As a workspace admin, you can rename existing workspaces, or delete them. 
+You can maintain multiple workspaces concurrently in an environment. Your  [role](user-roles.md)  determines how you can work in them. 
 
-To edit, delete, or switch between workspaces, select the workspace from the workspace switcher.
+ - As a Workspace admin, you can rename existing workspaces or delete them. 
+ - You must be an Environment admin or a Workspace admin to manage the workspace.
 
-:::image type="content" source="media/select-workspace.png" alt-text="Workspace switcher highlighted in engagement insights user interface":::
+### Edit a workspace name
 
-### Edit a workspace
+1. Go to **Admin** > **Workspace** > and select **Settings**.
 
-1. Go to **Admin** > **Settings** > **General**.
-
-1. In the **Workspace name** box, enter a new name and optionally add a **Description** for your workspace.
+1. In the **Workspace name** box, enter a new name.
 
 1. Select **Save** to apply your changes.
 
@@ -71,7 +65,7 @@ To edit, delete, or switch between workspaces, select the workspace from the wor
 
 Deleting a workspace will permanently remove all of its content, data, settings, and permissions. It can't be undone.
 
-1. Go to **Admin** > **Settings** > **General**.
+1. Go to **Admin** > **Workspace** > and select **Settings**.
 
 1. Select **Delete Workspace**. 
 
@@ -81,71 +75,39 @@ Deleting a workspace will permanently remove all of its content, data, settings,
 
 ### Manage workspace members
 
-1. Go to **Admin** > **Settings** > **Members**.
+1. Go to **Admin** > **Workspace** > and select **Members**.
 
-1. Select **Add members** to update members and [assign roles](user-roles.md). Currently, only **Workspace admin** is available.
+1. Select **Add members** to give access and [assign roles](user-roles.md). Currently, only **Workspace admin** is available.
 
-1. Select the check box if you want **Allow access to profile data**. This selection enables the member to see reports based on user profiles if you set up the [connection to audience insights](configure-connections.md).
+1. If you set up a [connection to audience insights](configure-connections.md), you can select **Allow access to profile data** to allow the member to see reports based on user profiles 
 
 1. Select **Add members** to add them to your workspace.
 
 ## Manage an environment
 
-The admin center lets you manage engagement insights environments. It currently includes options to configure general settings, other environment admins, workspaces, and [connections to audience insights](configure-connections.md).
+As an Environment admin, you can access an environment from the left navigation pane. You can configure environment settings, other Environment admins, workspaces, and [connections to audience insights](configure-connections.md). Select tabs to move between different areas in the admin center.
 
-To access the environment admin center, you need to have an environment admin role.
 
-Switch between the different areas in the admin center by selecting the corresponding tabs.
-
-:::image type="content" source="media/environment-admin-center-tabs.png" alt-text="Environment admin center with callout on tabs":::
-
-### Choose the environment to configure
-
-1. Go to **Admin** > **Settings** > **General**.
-
-1. Select **Go to admin center**.
-
-   :::image type="content" source="media/open-admin-center.png" alt-text="Highlight on link to go to the admin center":::
-
-1. To change an environment, select **Environments** in the navigation pane.
-
-1. In the list, select the environment you want to configure.
+:::image type="content" source="media/New-environment.png" alt-text="Environment admin center":::
 
 ### Rename an environment
 
-1. Go to **Admin** > **Settings** > **General**.
-
-1. Select **Go to admin center**.
-
-1. Select **General**.
+1. Go to **Admin** > **Environment** > and select **Settings**.
 
 1. Update the **Environment name** and select **Save** to apply your changes.
 
+1. Select **General**.
+
+
 ### Manage environment members
 
-1. Go to **Admin** > **Settings** > **General**.
-
-1. Select **Go to admin center**.
-
-1. Select **Members**.
+1. Go to **Admin** > **Environment** > and select **Members**.
 
 1. Select **Add members** to update members and [assign roles](user-roles.md). Currently, only **Environment admin** is available.
 
-1. Select the check box if you want **Allow access to profile data**. This selection enables the member to see reports based on user profiles if you set up the [connection to audience insights](configure-connections.md).
+1. If you set up a [connection to audience insights](configure-connections.md), you can select  **Allow access to profile data** to allow the member to see reports based on user profiles 
 
 1. Select **Add members** to add them to your environment.
-
-### Manage workspaces
-
-1. Go to **Admin** > **Settings** > **General**.
-
-1. Select **Go to admin center**.
-
-1. Select **Workspaces**.
-
-1. Select **...** next to the workspace name and choose one of the available options:
-   - Choose **Edit name** to change the name of a workspace.
-   - Choose **Delete** to remove a workspace.
 
 ### Manage connections
 
@@ -155,7 +117,7 @@ For more information, see [Configure connections](configure-connections.md).
 
 ### Manage personal data
 
-To protect your customer's personal data, you can delete or export end user identifiable data.
+To protect your customer's personal data, you can delete or export end-user identifiable data.
 
 For more information, see [Delete and export event data containing personal information](delete-export-personal-data.md)
 
