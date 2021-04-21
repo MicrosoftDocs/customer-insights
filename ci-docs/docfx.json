@@ -64,7 +64,7 @@
        },
       "feedback_product_url": {
         "audience-insights/**.*": "https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights",
-        "engagement-insights/**.*": "https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Engagement%20Insights"
+        "engagement-insights/**.*": "https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights"
       }
     },
     "template": [],
