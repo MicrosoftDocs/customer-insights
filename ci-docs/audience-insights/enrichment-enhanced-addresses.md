@@ -11,42 +11,48 @@ ms.author: kishorem
 manager: shellyha
 ---
 
-# Enrichment of company profiles with Leadspace (preview)
+# Enrichment of customer profiles with enhanced addresses
 
-Leadspace is a data science company that provides a B2B Customer Data Platform. It enables customers with unified customer profiles for companies to enrich their data. Enrichments include more attributes such as company size, location, industry, and more.
+Addresses in your data can be unstructured, incomplete, or incorrect. Use Microsoft proprietary data and models to normalize and enrich your addresses into the [Common Data Model format](/common-data-model/schema/core/applicationcommon/address) for better accuracy and insights.
 
-## Prerequisites
+## How we enhance addresses
 
-To configure Leadspace, the following prerequisites must be met:
+Our model performs a two-step process to enhance an address. First, it parses the address to identify its components puts them into a structured format. Then, we use our Microsoft proprietary data to correct, complete, and standardize the values in the address.
 
-- You have an active Leadspace license.
-- You have [unified customer profiles](customer-profiles.md) for companies.
-- A Leadspace connection has already been configured by an administrator or you have [administrator](permissions.md#administrator) permissions and the “perpetual key” (referred to as **Leadspace token**). Contact [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) directly for details about their product.
+For example, an address might be in a non-standard format and contain spelling errors. For countries/regions that are supported, we can fix these issues and create a consistent way to list addresses in unified customer profiles.
+
+## Supported countries/regions
+
+We currently support enriching addresses in these countries/regions: 
+
+- Australia
+- Canada
+- United Kingdom
+- United States.
+
+Addresses must contain a country/region value. Addresses that don't contain country/region or contain a country/region that’s not supported will not be processed.
 
 ## Configure the enrichment
 
-1. In audience insights, go to **Data** > **Enrichment**.
+1. Go to **Data** > **Enrichment**.
 
-1. Select **Enrich my data** on the Leadspace tile and select **Get started**.
+1. Select **Enrich my data** on the **Enhanced addresses** tile and select **Enrich my data**.
 
-   :::image type="content" source="media/leadspace-tile.png" alt-text="Screenshot of the Leadspace tile.":::
+   :::image type="content" source="media/enhanced-addresses-tile.png" alt-text="Screenshot of the Enhanced addresses tile.":::
 
-1. Select a [connection](connections.md) from the drop-down. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **Leadspace**. 
+1. Select the **Customer data set** and choose the entity containing the addresses you want to enrich. You can select the *Customer* entity to enrich addresses in all your customer profiles or select a segment entity to enrich addresses only in customer profiles contained in that segment.
 
-1. Select **Connect to Leadspace** to confirm the connection.
+1. Select how addresses are formatted in your data set. Choose **Single-attribute address** if addresses in your data uses a single field. Choose **Multiple-attribute address** if addresses in your data use more than one data field.
 
-1. Select **Next** and choose the **Customer data set** you want to enrich with company data from Leadspace. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+1.	Map the address fields from your unified customer entity. The Country/Region field is mandatory for multiple-attribute addresses. 
 
-    :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
-
-1. Select **Next** and define which fields from your unified profiles are used to look for matching company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
-
-   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace field mapping pane.":::
+   :::image type="content" source="media/enhanced-address-mapping.png" alt-text="Enhanced address field mapping page.":::
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
+1. Provide a name for the enrichment
 
+1. Select **Save enrichment** after reviewing your choices.
 
 ## Configure the connection for Leadspace 
 
