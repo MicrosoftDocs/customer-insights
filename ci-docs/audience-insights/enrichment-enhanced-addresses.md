@@ -13,11 +13,11 @@ manager: shellyha
 
 # Enrichment of customer profiles with enhanced addresses
 
-Addresses in your data can be unstructured, incomplete, or incorrect. Use Microsoft proprietary data and models to normalize and enrich your addresses into the [Common Data Model format](/common-data-model/schema/core/applicationcommon/address) for better accuracy and insights.
+Addresses in your data can be unstructured, incomplete, or incorrect. Use Microsoft's models to normalize and enrich your addresses into the [Common Data Model format](/common-data-model/schema/core/applicationcommon/address) for better accuracy and insights.
 
 ## How we enhance addresses
 
-Our model goes through a two-step process to enhance an address. First, it parses the address to identify its components puts them into a structured format. Then, we use our Microsoft proprietary data to correct, complete, and standardize the values in the address.
+Our model goes through a two-step process to enhance an address. First, it parses the address to identify its components and puts them into a structured format. Then, we use artificial intelligence to correct, complete, and standardize the values in the address.
 
 ### Example
 
@@ -42,6 +42,15 @@ Address information might be in a non-standard format and contain spelling error
 - Address: 4567 W Main St, California, MO, 54321, United States of America
 ```
 
+### Limitations
+
+Enhanced addresses only works with the values that already exist in your ingested address data. The model doesn't: 
+
+1. Verify if the address is a valid address.
+2. Verify if any of the values, such as ZIP codes or street names, are valid.
+3. Change values it doesn't recognize.
+
+The model uses machine learning-based techniques to enhance addresses. While we apply a high confidence threshold for when the model changes an input value, as with any ML-based model, 100% accuracy is not guaranteed.
 
 ## Supported countries or regions
 
@@ -58,7 +67,7 @@ Addresses must contain a country/region value. We don't process addresses for co
 
 1. Go to **Data** > **Enrichment**.
 
-1. Select **Enrich my data** on the **Enhanced addresses** tile and select **Enrich my data**.
+1. Select **Enrich my data** on the **Enhanced addresses** tile.
 
    :::image type="content" source="media/enhanced-addresses-tile.png" alt-text="Screenshot of the Enhanced addresses tile.":::
 
@@ -72,7 +81,7 @@ Addresses must contain a country/region value. We don't process addresses for co
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a name for the enrichment
+1. Provide a name for the enrichment and the output entity.
 
 1. Select **Save enrichment** after reviewing your choices.
 
