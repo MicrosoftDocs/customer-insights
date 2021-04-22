@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.manager: shellyha
 ---
 
-# Workspaces and members
+# Create the first workspaces and add members
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
