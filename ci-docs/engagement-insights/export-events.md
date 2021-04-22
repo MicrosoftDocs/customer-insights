@@ -38,8 +38,8 @@ Before setting up an export, you need to have access and an active subscription 
 ## Export events
 
 There are two ways to export events: 
-- Go to **Admin** > **Data** > **Exports** and select **New export**.
-- Go to **Admin** > **Data** > **Events**, select **...** next to the event you want to export and select **Export** from the drop-down menu. 
+- Go to **Data** > **Exports** and select **New export**.
+- Go to **Data** > **Events**, select **...** next to the event you want to export and select **Export** from the drop-down menu. 
 
 You're guided through the steps to create an export:
 
@@ -60,7 +60,7 @@ You're guided through the steps to create an export:
 
 ## View and manage exports
 
-Once you've set up an export, go to **Admin** > **Data** > **Exports** to view it. Select **...** for any existing export to edit or delete it.
+Once you've set up an export, go to **Data** > **Exports** to view it. Select **...** for any existing export to edit or delete it.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
