@@ -25,14 +25,14 @@ Address information might be in a non-standard format and contain spelling error
 
 **Input**
 
-```
+```Input
 4567 w main stret californa missouri 54321 us
 ```
 
 
 **Output**
 
-```
+```Output
 - Street1: 4567 W Main St
 - City: California
 - StateOrProvince: MO
