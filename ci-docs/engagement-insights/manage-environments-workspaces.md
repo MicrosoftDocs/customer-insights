@@ -90,6 +90,11 @@ As an Environment admin, you can access an environment from the left navigation 
 
 :::image type="content" source="media/New-environment.png" alt-text="Environment admin center":::
 
+### Configure an environment
+
+At this time, you must first select a workspace that belongs to the environment. 
+ - Go to **Admin** > **Environment**.
+
 ### Rename an environment
 
 1. Go to **Admin** > **Environment** > and select **Settings**.
