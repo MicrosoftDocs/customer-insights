@@ -23,14 +23,9 @@ Our model goes through a two-step process to enhance an address. First, it parse
 
 Address information might be in a non-standard format and contain spelling errors. The model can fix these issues and create consistent addresses in unified customer profiles.
 
-**Input**
-
 ```Input
 4567 w main stret californa missouri 54321 us
 ```
-
-
-**Output**
 
 ```Output
 - Street1: 4567 W Main St
