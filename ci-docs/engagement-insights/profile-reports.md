@@ -30,7 +30,7 @@ An environment admin must [create a connection to audience insights](configure-c
 
 After specifying the connection details, the admin can grant access to other people in the organization to see the report. The environment admin setting up the connection automatically has access to the report. 
 
-After completing the connection, go to **Reports** > **Profiles** to see the report.
+After completing the connection, go to **Discover** > **Profiles** to see the report.
 
 The **Profiles** report contains visualizations about the gender, age, and geographical location of the connected customer profiles.
 

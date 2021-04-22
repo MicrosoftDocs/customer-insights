@@ -37,11 +37,12 @@ The first time you visit engagement insights you can configure settings, review 
 
 1. Explore the product using a set of sample data.
 
-
-
 ##  Step 3: Set up a workspace and add code to your website
+
 The workspace is where you can view user activity in real time, and store and manage reports. Add code to your website to start collecting *events*, the activity data that comes in from users.
+
 1. [Create a workspace](create-workspace.md) and add members.
+
 1. [Add code to your website](instrument-website.md) to see user activity arriving into your workspace.
 
 1. View a [real-time report](view-reports.md) showing active users by browser, device, operating system, location, and language. You can also create [custom reports](custom-reports.md) to create your own visualizations.
