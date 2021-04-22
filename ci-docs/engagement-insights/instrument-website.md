@@ -2,7 +2,7 @@
 title: Add code to your website
 description: How to add a code snippet to capture events on your website.
 author: pickwick129
-ms.reviewer: m-hartmann
+ms.reviewer: mhart
 ms.author: v-salash
 ms.date: 04/15/2021
 ms.service: customer-insights
