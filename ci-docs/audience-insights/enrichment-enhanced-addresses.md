@@ -54,7 +54,7 @@ We currently support enriching addresses in these countries or regions:
 - Australia
 - Canada
 - United Kingdom
-- United States.
+- United States
 
 Addresses must contain a country/region value. We don't process addresses for countries or regions that aren't supported and addresses that have no country or region provided.
 
