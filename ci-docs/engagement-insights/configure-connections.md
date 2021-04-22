@@ -27,7 +27,7 @@ Connecting [Dynamics 365 Customer Insights audience insights](../audience-insigh
 
 ## Set up the connection with audience insights
 
-As an [environment admin](user-roles.md), you can set up connections from all environments you administer. To change to a different environment, see [Choose the environment to configure](manage-environments-workspaces.md#choose-the-environment-to-configure).
+As an [environment admin](user-roles.md), you can set up connections from all environments you administer. To change to a different environment, see [Choose the environment to configure](manage-environments-workspaces.md#choose-an-environment-and-create-a-workspace).
 
 1. Go to **Admin** > **Settings** > **General**.
 

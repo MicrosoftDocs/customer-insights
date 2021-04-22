@@ -2,7 +2,7 @@
 title: Manage workspaces and environments
 description: How to create, rename, and delete workspaces and environments.
 author: pickwick129
-ms.reviewer:  m-hartmann
+ms.reviewer: mhart
 ms.author: v-salash
 ms.date: 4/11/2021
 ms.service: customer-insights
