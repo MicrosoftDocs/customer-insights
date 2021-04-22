@@ -19,7 +19,7 @@ This article lists all available code snippets and samples for quick reference. 
 
 ## SDKs
 
-- [Web SDK introduction](instrument-website.md)
+- [How to add the code snippet on a website](instrument-website.md)
 - [Web SDK sample](websdk-sample.md)
 - [Advanced SDK implementation](advanced-SDK-implementation.md)
 
