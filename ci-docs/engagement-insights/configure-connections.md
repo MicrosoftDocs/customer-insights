@@ -29,11 +29,7 @@ Connecting [Dynamics 365 Customer Insights audience insights](../audience-insigh
 
 As an [environment admin](user-roles.md), you can set up connections from all environments you administer. To change to a different environment, see [Choose the environment to configure](manage-environments-workspaces.md#choose-an-environment-and-create-a-workspace).
 
-1. Go to **Admin** > **Settings** > **General**.
-
-1. Select **Go to admin center**.
-
-1. Select **Connections**.
+1. Go to **Admin** > **Environment**  and select **Connections**.
 
 1. If it's your first connection, select **Create a connection**. To create more connections, select **Add a connection**.
    :::image type="content" source="media/create-connection.png" alt-text="Create a new connection to Customer Insights":::
@@ -47,14 +43,14 @@ As an [environment admin](user-roles.md), you can set up connections from all en
 1. Select **Next**.
 
 1. Customer profile data often contains sensitive customer details such as age, gender, and income. Only the environment admin who sets up the connection has access to the customer profile report automatically. Other members can't see the report unless explicitly granted access.    
-   You can add or remove members who have access to this data in the **Connections** area of the admin center.
+   You can add or remove members who have access to this data in the **Connections** area of the environment settings.
  
 1. Review the settings and select **Done** to create the connection. 
 
 > [!NOTE]
 > It may take several hours for the data to become available in engagement insights. You can check if a connection has been made in the **Connections** area.
 
-To see the customer profiles report, go to **Reports** > **Profiles**. 
+To see the customer profiles report, go to **Discover** > **Profiles**. 
 For more information, see [Customer profile report](profile-reports.md).
 
 
