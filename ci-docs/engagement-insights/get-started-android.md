@@ -1,6 +1,18 @@
+---
+title: Get Started with Android SDK
+description: Getting started with the Android SDK
+author: britl
+ms.reviewer: m-hartmann
+ms.author: v-salash
+ms.date: 04/23/2021
+ms.service: customer-insights
+ms.subservice: engagement-insights 
+ms.topic: conceptual
+ms.manager: shellyha
+---
 # Get started with the Android SDK
 
-[!INCLUDE [cc-beta-prerelease-disclaimer]( ../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 This tutorial guides you through the process of instrumenting your Android application with an engagement insights SDK. You'll start seeing signals in your portal in five minutes or sooner.
 
