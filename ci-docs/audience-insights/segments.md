@@ -67,7 +67,7 @@ Segments are managed on the **Segments** page.
    > [!NOTE]
    > - Projected attributes only work for entities that have a one-to-many relationship with the customer entity. For example, one customer can have multiple subscriptions.
    > - You can only project attributes from an entity that is used in every group of segment query you are building.
-   > - Projected attributes can be used when matching customers of a segment.
+   > - Projected attributes are factored when using set operators.
 
 1. Select **Save** to save your segment. Your segment will be saved and processed if all requirements are validated. Otherwise, it will be saved as a draft.
 
