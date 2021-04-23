@@ -69,9 +69,6 @@ Segments are managed on the **Segments** page.
    > - You can only project attributes from an entity that is used in every group of segment query you are building.
    > - Projected attributes can be used when matching customers of a segment.
 
-2nd bullet, I don't understand, actually
-
-Projected attributes can be used when matching customers of a segment.
 1. Select **Save** to save your segment. Your segment will be saved and processed if all requirements are validated. Otherwise, it will be saved as a draft.
 
 1. Select **Back to segments** to go back to the **Segments** page.
