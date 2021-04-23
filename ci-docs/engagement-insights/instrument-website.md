@@ -15,26 +15,22 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This article describes how an administrator installs the code snippet on a website. You'll start seeing events in your workspace shortly after adding the script to your website.
+This article describes how an administrator installs the code snippet on a website. You'll start seeing events in your workspace shortly after adding the script to your website. For more information, see [Manage workspaces and environment](manage-enviroments-workspaces.md).
 
-## Prerequisite
 
-* You have administrator permissions for the workspace to store the data.
+### Prerequisites
+
+* You must have administrator permissions for the workspace to store the data.
 * Your website or project must be hosted online to send activity data. Data sent from a local file will not be accepted by the server.
 
+
 ## Add code to your website
-
-1. Go to **Admin** > **Workspace** > **Installation guide**.
-
+1.	Go to **Admin** > **Workspace**  and then select **Installation guide**.
 1. Select **Copy code** to copy the code snippet. By default, the ingestion key for your workspace is embedded in the code snippet.
-
-   :::image type="content" source="media/copy-code.png" alt-text="Screenshot of the code snippet page":::
-
-1. Add the copied code snippet to your website, near the `<head>` tag and before any other script or CSS tags.
-
-1. Publish your updated website and wait a few minutes to capture the incoming web traffic.
-
-1. To see your data, select your workspace from the workspace drop-down list in the navigation pane. Then, go to one of the reports in the **Discover** section.
+:::image type="content" source="media/copy-code.png" alt-text="Screenshot of the code snippet page":::
+3. Add the copied code snippet to your website, near the <head> tag and before any other script or CSS tags.
+4.	Publish your updated website and wait a few minutes to capture the incoming web traffic.
+5.	To see your data, select your workspace from the workspace drop-down list in the navigation pane. Then, go to one of the reports in the Discover section.
 
 ## Configuration options
 

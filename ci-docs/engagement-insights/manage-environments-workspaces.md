@@ -3,8 +3,8 @@ title: Manage workspaces and environments
 description: How to create, rename, and delete workspaces and environments.
 author: pickwick129
 ms.reviewer: mhart
-ms.author: v-salash
-ms.date: 4/11/2021
+ms.author: jusali
+ms.date: 4/23/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -37,7 +37,7 @@ To create your first workspace
 
 1. In engagement insights, select **New** from the workspace switcher. 
 
-:::image type="content" source="media/New-workspace.png" alt-text="Customer Insights page workspace tracker":::
+:::image type="content" source="media/New-workspace.png" alt-text="Customer Insights page workspace picker":::
 
 2. Choose an environment from the list or select **Create new environment**.
 1. Enter a name in **Workspace name**. 
@@ -79,7 +79,7 @@ Deleting a workspace will permanently remove all of its content, data, settings,
 
 1. Select **Add members** to give access and [assign roles](user-roles.md). Currently, only **Workspace admin** is available.
 
-1. If you set up a [connection to audience insights](configure-connections.md), you can select **Allow access to profile data** to allow the member to see reports based on user profiles 
+1. If you set up a [connection to audience insights](configure-connections.md), you can select **Allow access to profile data** to allow the member to see reports based on [user profiles](profile-reports.md).
 
 1. Select **Add members** to add them to your workspace.
 
@@ -101,7 +101,6 @@ At this time, you must first select a workspace that belongs to the environment.
 
 1. Update the **Environment name** and select **Save** to apply your changes.
 
-1. Select **General**.
 
 
 ### Manage environment members
@@ -110,21 +109,21 @@ At this time, you must first select a workspace that belongs to the environment.
 
 1. Select **Add members** to update members and [assign roles](user-roles.md). Currently, only **Environment admin** is available.
 
-1. If you set up a [connection to audience insights](configure-connections.md), you can select  **Allow access to profile data** to allow the member to see reports based on user profiles 
+1. If you set up a [connection to audience insights](configure-connections.md), you can select  **Allow access to profile data** to allow the member to see reports based on [user profiles](profile-reports.md).
 
 1. Select **Add members** to add them to your environment.
 
-### Manage connections
+## Manage connections
 
 Establishing connections to audience insights lets you see reports in engagement insights based on unified customer profiles. 
 
 For more information, see [Configure connections](configure-connections.md).
 
-### Manage personal data
+## Manage personal data
 
 To protect your customer's personal data, you can delete or export end-user identifiable data.
 
-For more information, see [Delete and export event data containing personal information](delete-export-personal-data.md)
+For more information, see [Delete and export event data containing personal information](delete-export-personal-data.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
