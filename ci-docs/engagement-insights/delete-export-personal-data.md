@@ -40,7 +40,7 @@ To tag an event property as containing personal information, follow these steps:
 
 1. Open the workspace containing the event.
 
-1. Go to **Admin** > **Events** to see the list of events in the selected workspace.
+1. Go to **Data** > **Events** to see the list of events in the selected workspace.
   
 1. Select the event you want to tag.
 
@@ -61,8 +61,11 @@ To tag an event property as containing personal information, follow these steps:
 
 If all event properties have been tagged appropriately as described in the previous step, an environment admin can issue a deletion request against the tagged event data.
 
-To manage EUII deletion or export requests, go to **Admin** > **Settings** > **General**. Select **Go to admin center** and select **Workspaces**.   
-In the **Manage end user identifiable information (EUII)**, select **Manage EUII**.
+To manage EUII deletion or export requests
+
+1. Go to **Admin** > **Environment** > **Settings**.
+
+1. In the **Manage end user identifiable information (EUII)** section, select **Manage EUII**.
 
 #### Deletion
 
