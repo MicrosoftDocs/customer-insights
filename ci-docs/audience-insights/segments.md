@@ -64,6 +64,11 @@ Segments are managed on the **Segments** page.
    
    Example: A segment is based on an entity that contains customer activity data which is related to the *Customer* entity. The segment looks for all customers that called the help desk in the last 60 days. You can choose to append the call duration and the number of calls to all matching customer records in the output entity. This information might be useful to send an email with helpful links to online help articles and FAQs to customers who called frequently.
 
+   > [!NOTE]
+   > - Projected attributes only work for entities that have a one-to-many relationship with the customer entity. For example, one customer can have multiple subscriptions.
+   > - You can only project attributes from an entity that is used in every group of segment query you are building.
+   > - Projected attributes are factored when using set operators.
+
 1. Select **Save** to save your segment. Your segment will be saved and processed if all requirements are validated. Otherwise, it will be saved as a draft.
 
 1. Select **Back to segments** to go back to the **Segments** page.
