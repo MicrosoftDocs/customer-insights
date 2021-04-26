@@ -54,7 +54,7 @@ The following data is required, and where marked optional, recommended for incre
         - **Details (amount or value)**: Details about the customer activity
 
 Following are some suggested input data characteristics to deploy a CLV model:
-- Sufficient historical data: At least one year of transactional data, preferrably at least 2-3 years of transactional data to predict CLV for period of 1 year
+- Sufficient historical data: At least one year of transactional data, preferrably at least 2-3 years of transactional data to predict CLV for a period of 1 year
 - Multiple purchases per customer: Ideally, at least 2-3 transactions per customer ID, preferably across multiple dates
 - Number of customers: At least 100 unique customers, preferably more than 10,000 customers. The model will fail with fewer than 100 customers and insufficient historical data
 - Data completeness: Less than 20% missing values in required fields in the input data   
