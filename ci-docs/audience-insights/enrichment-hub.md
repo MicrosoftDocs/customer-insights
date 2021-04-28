@@ -24,6 +24,7 @@ On the **Discover** tab, you'll find the following enrichments:
 
 - [Brands](enrichment-microsoft.md) provided by Microsoft
 - [Interests](enrichment-microsoft.md) provided by Microsoft
+- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
 - [Company data](enrichment-leadspace.md) provided by Leadspace
 - [Demographics](enrichment-experian.md) provided by Experian
 - [Location data](enrichment-here.md) provided by HERE Technologies
