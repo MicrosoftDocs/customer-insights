@@ -36,11 +36,14 @@ To create your first workspace
 
 1. In engagement insights, select **New** from the workspace switcher. 
 
-:::image type="content" source="media/New-workspace.png" alt-text="Customer Insights page workspace picker":::
+   :::image type="content" source="media/New-workspace.png" alt-text="Customer Insights page workspace picker":::
 
-2. Choose an environment from the list or select **Create new environment**.
+1. Choose an environment from the list or select **Create new environment**.
+
 1. Enter a name in **Workspace name**. 
+
 1. You can add members and assign their permission level from the **Role** list. Then select **Finish** to create the workspace or **Next** to install code. 
+
 1. Install the code snippet to start receiving data and then select **Done**. 
 
 ## Manage a workspace
