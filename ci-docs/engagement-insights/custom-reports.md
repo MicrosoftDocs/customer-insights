@@ -20,7 +20,7 @@ ms.manager: shellyha
 
 ## Create a custom report
 
-1. Go to **Reports** > **Custom** to access the custom report list.
+1. Go to **Analyze** > **Custom** to access the custom report list.
 
 1. Select **New report** to start creating a custom report.
 
@@ -50,7 +50,7 @@ ms.manager: shellyha
  
 ## Edit a custom report
 
-1. Go to **Reports** > **Custom** to access the custom report list.
+1. Go to **Analyze** > **Custom** to access the custom report list.
 
 1. In the custom report list, select **...** 
 
@@ -66,13 +66,12 @@ ms.manager: shellyha
 
 ## Delete a custom report
 
-1. Go to **Reports** > **Custom** to access the custom report list.
+1. Go to **Analyze** > **Custom** to access the custom report list.
 
 1. In the custom report list, select **...**
 
 1. Choose **Delete** to remove the report.
 
 1. Confirm your deletion to remove the report permanently.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

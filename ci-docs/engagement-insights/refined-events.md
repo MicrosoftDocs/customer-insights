@@ -23,7 +23,7 @@ Generally, use refined events to reduce the scope of a base event for [export](e
 
 There are three ways to create a refined event from a base event. 
 
-1. Go to **Admin**> **Data** > **Events** and choose one of the following options:
+1. Go to **Data** > **Events** and choose one of the following options:
     - Select **New events** and then select **Create refined events**.
     - Select a base event to open a detailed view and select **Create refined events** from the top menu.
     - Select **...** to open the shortcut menu for a base event. Then select **Create refined events**.
@@ -53,13 +53,13 @@ You can change the properties and the name of refined events.
 
 ### Edit event details
 
-1. Go to **Admin**> **Data** > **Events**. 
+1. Go to **Data** > **Events**. 
 1. Select **...** for an event and select **Edit details**.
 1. Update the display name or the description of the event and select **Save**
 
 ### Edit selected properties
 
-1. Go to **Admin**> **Data** > **Events** and select the refined events to open the detailed view.
+1. Go to **Data** > **Events** and select the refined events to open the detailed view.
 1. Select **Add and remove properties**. 
 1. Edit the selection of the check boxes.
 1. Select **Confirm** and then **Save** to apply the changes.
@@ -68,13 +68,13 @@ You can change the properties and the name of refined events.
 
 You can filter, rename, and remove properties of refined events.
 
-1. Go to **Admin**> **Data** > **Events** and select the refined events to open the detailed view.
+1. Go to **Data** > **Events** and select the refined events to open the detailed view.
 1. Select the arrow next to a property name and choose an option from the drop-down menu.
    :::image type="content" source="media/manage-properties-refined-event.png" alt-text="Edit options of refined events":::
 1. Select **Save** to apply the changes.
 
 > [!NOTE]
-> Renaming doesn't change the initial property. It creates a copy with a new name and hides the original property from the view. Removing a property doens't delete the data, it hides the removed property from the view. Select **Add and remove properties** to access the properties and recover hidden properties.
+> Renaming doesn't change the initial property. It creates a copy with a new name and hides the original property from the view. Removing a property doesn't delete the data, it hides the removed property from the view. Select **Add and remove properties** to access the properties and recover hidden properties.
 
 ### Filter property
 
@@ -91,6 +91,5 @@ You see a filter icon next to the property's name in the detailed view if filter
 ### Remove property
 
 1. Choose **Remove property** to remove a property from the refined events.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
