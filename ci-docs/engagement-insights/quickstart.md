@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
- Engagement insights, a capability of Dynamics 365 Customer Insights, lets you collect and measure customer behavior on your website. This article explains how to sign up for engagement insights, set up a workspace, add members to it, and make changes.
+Engagement insights, a capability of Dynamics 365 Customer Insights, lets you collect and measure customer behavior on your website. This article explains how to sign up for engagement insights, set up a workspace, add members to it, and make changes.
 
 ## Sign up for a demo of engagement insights
 
@@ -45,7 +45,7 @@ To create your first workspace
 
 1. Select **Next** to confirm and create the workspace.
 
-1. Add a code snippet to your website to start receiving data in engagement insights. You can implement this right away or share the code and instructions with your website admin. To find the code snippet later, go to **Admin**>**Data**> **Code**.
+1. Add a code snippet to your website to start receiving data in engagement insights. You can implement this right away or share the code and instructions with your website admin. To find the code snippet later, go to **Admin** > **Workspace** > **Installation guide**.
 
    > [!IMPORTANT]
    > Data will not show in the workspace until the code has been implemented on your website.
@@ -58,9 +58,9 @@ By default, only the person who created the workspace has access to it. You can 
 
 :::image type="content" source="media/add-members.png" alt-text="Members page with callout on Add Members button":::
 
-1. Go to **Admin** > **Settings** > **Members**.
+1. Go to **Admin** > **Workspace** > **Members**.
 
-2. Select **+ Add members**. Use the  **Members** box to add other people in your organization. You can add multiple members at once.
+2. Select **Add members**. Use the **Members** box to add other people in your organization. You can add multiple members at once.
 
 3. Select a **Role** to assign to the new members. Currently, **Workspace admin** is the only available selection. Other roles will be added in future releases.
 
@@ -74,9 +74,9 @@ You can edit the details of existing workspaces at any time.
 
 :::image type="content" source="media/change-workspace-settings.png" alt-text="Workspace settings page with callout on workspace name and description":::
 
-1. Go to **Admin** > **Settings** > **General**.
+1. Go to **Admin** > **Workspace** > **Settings**.
 
-1. In the **Name** box, enter a name and optionally add a **Description** for your workspace.
+1. Change the **Name** for your workspace.
 
 1. Select **Save** to apply your changes.
 
@@ -86,7 +86,7 @@ You can edit the details of existing workspaces at any time.
 
 You can create additional workspaces to classify your data.
 
-1. Select **New workspace**.
+1. In the workspace picker, select **New workspace**.
 
 1. Enter a **Name** and an optional **Description**.
 
