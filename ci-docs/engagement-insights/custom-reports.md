@@ -4,7 +4,7 @@ description: Learn how to create and custom reports.
 author: pickwick129
 ms.reviewer: m-hartmann
 ms.author: v-salash
-ms.date: 12/28/2020
+ms.date: 04/30/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -31,16 +31,11 @@ ms.manager: shellyha
     - Select **Add visual** in the command bar to create a default table visualization.
     - Or, select a column, bar, line, area, pie, donut, or table visualization from the **Report editor** pane.
 
-   :::image type="content" source="media/choose-visualization.png" alt-text="First step for custom reports":::
-
 1. In the **Data** pane,  choose one of the available **Metrics** (for example, page views) to display. Then add **Dimensions** (for example, country) to show on the visualization.
-
-   :::image type="content" source="media/set-metrics-dimensions.png" alt-text="Specify metrics and dimensions for a visualization":::
 
 1. Select **Design** in the **Visualization editor** pane to add **Title text**, and set the **Position**, **Data labels**, and **axis**.  You can also change the visualization by selecting another chart type.
 
-   :::image type="content" source="media/set-designs.png" alt-text="Change visualization type for custom reports":::
-6. You can change the size and position of a visualization:
+1. You can change the size and position of a visualization:
    - Select the visualization and then drag one of the corners or borders to adjust its size.
    - Select the visualization and move it to a new position. You can also use the arrow keys to change the position.
 1. To add another visualization, select **Add visual** in the command bar.
