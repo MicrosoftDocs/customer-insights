@@ -13,11 +13,7 @@ manager: shellyha
 
 # Create and manage segments
 
-Segments let you group your customers based on demographic, transactional, or behavioral attributes. You can use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
-
-You can define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. 
-
-Customer profiles that match the filters of a segment definition are referred as *members* of a segment. Some [service limits](service-limits.md) apply.
+Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. 
 
 The following example illustrates the segmentation capability. We've defined a segment for customers who ordered at least $500 of goods in the last 90 days *and* who were involved in a customer service call that got escalated.
 
