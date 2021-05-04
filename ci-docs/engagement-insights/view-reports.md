@@ -23,32 +23,23 @@ A report is a collection of data visualizations. Dynamics 365 Customer Insights 
 
 The  **Real-time usage** report provides an overview of current activity on your site that automatically refreshes every minute. Use real-time usage to monitor the impact of marketing campaigns, press events, and other scenarios on your site's traffic.
 
-## Additional reports
-
-Others OOB reports are grouped into four categories:
-
-- **[Key metrics](#key-metrics-reports)**
-- **[Content](#content-reports)**
-- **[Traffic sources](#traffic-sources-reports)**
-- **[Visitor profiles](#visitor-profiles-reports)**
-
-### Key metrics reports
+## Key metrics reports
 
 - **Page views** lists the page views for individual pages along with the number of total page views over the selected time frame.
 - **Visits** shows information about the number of visits and the visit duration.
 - **Visitors** informs about new and returning unique visitors to your site.
 
-### Content reports
+## Content reports
 
 - **Links** show information about the number and type of clicks that were performed.
 - **Exit pages** lists the links that visitors clicked to exit your site.
 
-### Traffic sources reports
+## Traffic sources reports
 
 - **Referrers** lists the domains and URLs that referred visitors to your site.
 - **Tracking codes** provides details about the tracking codes in the links that brought visitors to your site.
 
-### Visitor profiles reports
+## Visitor profiles reports
 
 - **Devices** lists the physical devices that were used to access your site.
 - **OS & Browsers** provide insights into the operating systems and browsers that were running when accessing your site.
