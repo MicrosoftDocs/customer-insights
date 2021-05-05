@@ -1,10 +1,10 @@
 ---
-title: Get Started with Android SDK
-description: Getting started with the Android SDK
+title: Get started with Android SDK
+description: Learn how to personalize and run the Android SDK
 author: britl
 ms.reviewer: m-hartmann
 ms.author: v-salash
-ms.date: 04/23/2021
+ms.date: 05/05/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -14,26 +14,37 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial guides you through the process of instrumenting your Android application with an engagement insights SDK. You'll start seeing signals in your portal in five minutes or sooner.
+This tutorial guides you through the process of instrumenting your Android application with a Dynamics 365 Customer Insights engagement insights SDK. You'll start seeing signals in your portal in five minutes or sooner.
 
 ## Configuration options
 The following configuration options can be passed to the SDK:
+
 - **ingestionKey**: The ingestion key used to send signals to your workspace.
 
 ## Prerequisites
-* Android Studio
-* Minimum Android API Level: 16 (Jelly Bean)
-* An ingestion key (see below for instructions on how to obtain)
 
-## Integrate the engagement ensights SDK into your application
+- Android Studio
 
-1. From the engagement insights home screen, select your workspace from the workspace dropdown on the left navigation pane. If you don't already have a workspace, select the **+ New Workspace** option instead and create one.
+- Minimum Android API Level: 16 (Jelly Bean)
 
-2. Once workspace is created, go to **Settings** and then **General**. The ingestion key will be available under **Ingestion Key**. Copy the ingestion key.
+- An ingestion key (see below for instructions on how to obtain)
 
-3. Download the [engagement insights Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), and place the `eiandroidsdk-debug.aar` file in the `libs` folder.
+## Step 1. Integrate the SDK into your application
+The process begins by selecting a workspace and downloading the Android SDK.
 
-4. Open your project level `build.gradle` file and add the following snippets:
+- Use the workspace switcher in the left navigation pane to select your workspace.
+
+ - If you don't have an existing workspace, select  **New Workspace** and follow the steps to create a [new workspace](create-workspace.md).
+
+## Step 2. Configure the SDK
+
+1. After you create a workspace, go to **Admin** > **Workspace** and then selection  **Installation guide**. 
+
+<Brittany, per your note, I deleted the ingestion key information. Does the user copy code or just download the SDK here?> 
+
+2. Download the [engagement insights Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), and place the `eiandroidsdk-debug.aar` file in the `libs` folder.
+
+1. Open your project level `build.gradle` file and add the following snippets:
     ```gradle
     dependencies {
         implementation(name: 'eiandroidsdk-debug', ext: 'aar')
@@ -47,9 +58,14 @@ The following configuration options can be passed to the SDK:
     }
     ```
 
-5. Set up the engagement insights SDK configuration through your `AndroidManifest.xml` file located under the `manifests` folder. Add the following lines under your `<application>` tag and replace `Your-Ingestion-Key` with the key created from Step 2:
+1. Set up the engagement insights SDK configuration through your `AndroidManifest.xml` file located under the `manifests` folder. Add the following lines under your `<application>` tag and replace `Your-Ingestion-Key` with the key created from Step 2:
 
-    NOTE: There is *no* need to replace the `${applicationId}` part as it is automatically populated.
+<Brittany, remove "replace `Your-Ingestion-Key` with the key created from Step 2" above?>
+
+> [!NOTE]
+> You don't need to replace the `${applicationId}` part as it is automatically populated.
+   
+
     ```xml
     <application
     ...
@@ -66,9 +82,9 @@ The following configuration options can be passed to the SDK:
     </application>
     ```
 
-6. Enable or disable autocapture of `View` events by setting the above `autoCapture` field to `true` or `false`.
+4. Enable or disable autocapture of `View` events by setting the above `autoCapture` field to `true` or `false`.
 
-6. (Optional) Other configurations include setting the endpoint collector URL. They can be added under the ingestion key metadata in `AndroidManifest.xml`:
+1. (Optional) Other configurations include setting the endpoint collector URL. They can be added under the ingestion key metadata in `AndroidManifest.xml`:
     ```xml
         <meta-data
             android:name="com.microsoft.engagementinsights.endpointUrl"
@@ -76,7 +92,7 @@ The following configuration options can be passed to the SDK:
     ```
 
 
-5. Initialize the engagement insights SDK from your MainActivity:
+## Step 3. Initialize the SDK from your MainActivity
     
     Java:
     ```java
@@ -88,7 +104,7 @@ The following configuration options can be passed to the SDK:
     var analytics = Analytics()
     ```
 
-6. (optional) Set property for all events:
+### Set property for all events (optional)
     
     Java:
     ```java
@@ -108,7 +124,7 @@ The following configuration options can be passed to the SDK:
     * Boolean
     * UUID
 
-6. Track an event:
+### Track an event
 
     Java:
     ```java
@@ -126,9 +142,9 @@ The following configuration options can be passed to the SDK:
     analytics.trackEvent(event)
     ```
 
-## Setting user details for your event
+## Set user details for your event
 
-The engagement insights SDK lets you define user information that can be sent with every event. You can specify user information by calling `setUser(user: User)` API on the `Analytics` level.
+The SDK lets you define user information that can be sent with every event. You can specify user information by calling `setUser(user: User)` API on the `Analytics` level.
 
     Java:
     ```java
@@ -153,3 +169,7 @@ The `User` data class contains the following string properties:
 - **authType**: The authentication type used to the get authenticated user ID.
 - **name**: The user's name.
 - **email**: The user's email address.
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
