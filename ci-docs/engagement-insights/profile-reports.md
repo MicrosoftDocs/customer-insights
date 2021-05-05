@@ -2,9 +2,9 @@
 title: Enable out-of-box profile reports
 description: How to create out-of-box profile reports grouped by gender, age, and county or region of origin.
 author: pickwick129
-ms.reviewer: ruthai
+ms.reviewer: m-hartmann
 ms.author: v-salash
-ms.date: 11/17/2020
+ms.date: 05/03/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A report is a collection of data visualization to help you understand how users behave. By connecting to Customer Insights audience insights, engagement insights can show a report with information about unified customer profiles. The report includes the number of profiles you have, grouped by gender, age, and geographical location.
+A report is a collection of data visualization to help you understand how users behave. By connecting to Customer Insights audience insights, engagement insights can show a report with information about unified customer profiles. This report includes the number of profiles you have, grouped by gender, age, and geographical location.
 
 ## Prerequisites
 
@@ -26,11 +26,13 @@ If you're using a trial version of audience insights capability or an environme
 
 ## Enable the customer profile report
 
-An environment admin must [create a connection to audience insights](configure-connections.md).  
+An environment admin must [create a connection to audience insights](configure-connections.md).
 
 After specifying the connection details, the admin can grant access to other people in the organization to see the report. The environment admin setting up the connection automatically has access to the report. 
 
-After completing the connection, go to **Discover** > **Profiles** to see the report.
+After completing the connection, the **Profiles** feature will be available in the left navigation pane. 
+
+- Go to **Discover** > **Profiles** to see the report.
 
 The **Profiles** report contains visualizations about the gender, age, and geographical location of the connected customer profiles.
 
