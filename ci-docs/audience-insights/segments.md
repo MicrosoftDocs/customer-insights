@@ -23,8 +23,8 @@ There are multiple ways to create a new segment:
 
 - Complex segment with segment builder: [Blank segment](segment-builder.md#create-a-new-segment)
 - Simple segments with one operator: [Quick segment](segment-builder.md#quick-segments)
-- AI-powered suggestions based on measures: [Suggested segments](suggested-segments.md)
-- AI-powered suggestions based on activities: RFM segments
+- AI-powered suggestions based on measures: [Suggested segments to improve measures](suggested-segments.md)
+- AI-powered suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md)
 
 <!-- needs links -->
 
