@@ -164,6 +164,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Klaviyo
+              href: audience-insights/export-klaviyo.md
             - name: LiveRamp
               href: audience-insights/export-liveramp.md
             - name: Mailchimp
