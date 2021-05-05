@@ -60,10 +60,7 @@ AlternateKey entity models the natural keys of the entities participated in the 
 |DataSourceName    |String         | Name of the data source. For example: datasource5        |
 |EntityName        | String        | Name of the entity in audience insights. For example: contact1        |
 |AlternateValue    |String         |Alternative ID that is mapped to the customer ID. Example: cntid_1078         |
-|KeyRing           | Multi line text        | JSON value  </br> Sample: ```[{"dataSourceName":" testdatasource ",
-"entityName":" contact1",
-"preferredKey":" cntid_1078",
-"keys":[" cntid_1078"]}]```       |
+|KeyRing           | Multi line text        | JSON value  </br> Sample: `[{"dataSourceName":" testdatasource ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]`       |
 |CustomerId         | String        | ID of the unified customer profile.         |
 |AlternateKeyId     | GUID         |  AlternateKey deterministic GUID based on msdynci_identifier       |
 |msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Sample: `testdatasource|contact1|cntid_1078`    |
