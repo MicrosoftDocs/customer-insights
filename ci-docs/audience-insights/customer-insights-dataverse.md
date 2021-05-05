@@ -13,7 +13,7 @@ manager: shellyha
 
 # Work with Customer Insights data in Microsoft Dataverse
 
-Customer Insights provides the option to make output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). This integration enables easy data sharing and custom development through a low code / no code approach. The output entities will be available as tables in Dataverse. These tables enable scenarios like [automated workflows through Power Automate](/power-automate/getting-started), [model-driven apps](/powerapps/maker/model-driven-apps/) and [canvas apps](/powerapps/maker/canvas-apps/) through Power Apps. Of course, you can use the data for any other application that is based on Dataverse tables. The current implementation mainly supports lookups where data from the available audience insights entities can be fetched for a given customer id.
+Customer Insights provides the option to make output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). This integration enables easy data sharing and custom development through a low code / no code approach. The output entities will be available as tables in Dataverse. These tables enable scenarios like [automated workflows through Power Automate](/power-automate/getting-started), [model-driven apps](/powerapps/maker/model-driven-apps/) and [canvas apps](/powerapps/maker/canvas-apps/) through Power Apps. You can use the data for any other application that is based on Dataverse tables. The current implementation mainly supports lookups where data from the available audience insights entities can be fetched for a given customer ID.
 
 ## Attach a Dataverse environment to Customer Insights
 
@@ -23,7 +23,7 @@ Organizations that already use Dataverse can choose to [use one of their existin
 
 **New organization**
 
-If a new organization is created when signing up for Customer Insights, it'll automatically get a new Dataverse environment during the provisioning process.
+If a new organization is created when signing up for Customer Insights, it will automatically get a new Dataverse environment during the provisioning process.
 
 <!-- Do new orgs still need to provide the DV env URL in the environment step or check the data sharing checkbox? might need to be more specific here.-->
 
@@ -34,7 +34,7 @@ If a new organization is created when signing up for Customer Insights, it'll au
 
 ## Output entities
 
-A set of output entities from audience insights are available as tables in Dataverse. 
+Some output entities from audience insights are available as tables in Dataverse. The sections below describe the expected schema of these tables.
 
 - [CustomerProfile](#customerprofile)
 - [AlternateKey](#alternatekey)
@@ -46,75 +46,75 @@ A set of output entities from audience insights are available as tables in Datav
 
 ### CustomerProfile
 
-This entity models the unified profile in CI. The shape and the schema for unified profile can vary from customer to customer based on the entities the customer brings in to participate the unify process and the attributes that they select in the merge process. A typical customer profile schema contains a subset of attributes from the CI standard [CDM definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile can vary based on the entities that are ingested, unified, and attributes that are used in the merge process. A typical customer profile schema contains a subset of attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
 
 ### AlternateKey
 
-AlternateKey entity models the natural keys of the entities participated in the unify process and has the following schema.
+The AlternateKey table contains keys of the entities, which participated in the unify process.
 
 |Column  |Type  |Description  |
 |---------|---------|---------|
 |DataSourceName    |String         | Name of the data source. For example: `datasource5`        |
 |EntityName        | String        | Name of the entity in audience insights. For example: `contact1`        |
 |AlternateValue    |String         |Alternative ID that is mapped to the customer ID. Example: `cntid_1078`         |
-|KeyRing           | Multi line text        | JSON value  </br> Sample: [{"dataSourceName":" testdatasource ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
+|KeyRing           | Multiline text        | JSON value  </br> Sample: [{"dataSourceName":" testdatasource ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
 |CustomerId         | String        | ID of the unified customer profile.         |
 |AlternateKeyId     | GUID         |  AlternateKey deterministic GUID based on msdynci_identifier       |
 |msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Sample: `testdatasource|contact1|cntid_1078`    |
 
 ### UnifiedActivity
 
-Unified Activity models an activity by the user that has observational value to the business. 
+This table contains activities by users that are available in Customer Insights.
 
 | Column            | Type        | Description                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
-| CustomerId        | String      | Customer Profile Id                                                                      |
-| ActivityId        | String      | Internal Id of the customer activity (primary key)                                       |
-| SourceEntityName  | String      | Source Entity name                                                                       |
-| SourceActivityId  | String      | Primary Key from the source entity                                                       |
+| CustomerId        | String      | Customer Profile ID                                                                      |
+| ActivityId        | String      | Internal ID of the customer activity (primary key)                                       |
+| SourceEntityName  | String      | Name of the source entity                                                                |
+| SourceActivityId  | String      | Primary key from the source entity                                                       |
 | ActivityType      | String      | Semantic activity type or name of custom activity                                        |
 | ActivityTimeStamp | DATETIME    | Activity Time stamp                                                                      |
-| Title             | String      | Title/Name of the activity                                                               |
-| Description       | String      | Activity Description                                                                     |
+| Title             | String      | Title or name of the activity                                                               |
+| Description       | String      | Activity description                                                                     |
 | URL               | String      | Link to an external URL specific to the activity                                         |
-| SemanticData      | JSON String | Includes a list of key value pairs for semantic mapping fields specific to Activity Type |
+| SemanticData      | JSON String | Includes a list of key value pairs for semantic mapping fields specific to the type of activity |
 | RangeIndex        | String      | Unix timestamp used for sorting activity timeline and effective range queries |
-| mydynci_unifiedactivityid   | GUID | Internal Id of the customer activity (ActivityId) |
+| mydynci_unifiedactivityid   | GUID | Internal ID of the customer activity (ActivityId) |
 
 ### CustomerMeasure
 
-CustomerMeasure entity keeps the customer attribute-based measures.
+This table contains the output data of customer attribute-based measures.
 
 | Column             | Type             | Description                 |
 |--------------------|------------------|-----------------------------|
-| CustomerId         | String           | Customer Profile Id         |
+| CustomerId         | String           | Customer profile ID        |
 | Measures           | JSON String      | Includes a list of key value pairs for measure name and values for the given customer | 
 | msdynci_identifier | String           | `Customer_Measure|CustomerId` |
-| msdynci_customermeasureid | GUID      | Customer Profile Id |
+| msdynci_customermeasureid | GUID      | Customer profile ID |
 
 
 ### Enrichment
 
-The output of the enrichment process is persisted in the Enrichment entity.
+This table contains the output of the enrichment process.
 
 | Column               | Type             |  Description                                          |
 |----------------------|------------------|------------------------------------------------------|
-| CustomerId           | String           | Customer Profile Id                                  |
-| EnrichmentProvider   | String           | Enrichment Provider                                  |
-| EnrichmentType       | String           | Enrichment Type                                      |
-| Values               | JSON String      | List of attributes produced by the enrichment process. |
+| CustomerId           | String           | Customer profile ID                                 |
+| EnrichmentProvider   | String           | Name of the provider for the enrichment                                  |
+| EnrichmentType       | String           | Type of enrichment                                      |
+| Values               | JSON String      | List of attributes produced by the enrichment process |
 | msdynci_enrichmentid | GUID             | Deterministic GUID generated from msdynci_identifier |
 | msdynci_identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
 
 ### Prediction
 
-The output of the model predictions is persisted in this entity.
+This table contains the output of the model predictions.
 
 | Column               | Type        | Description                                          |
 |----------------------|-------------|------------------------------------------------------|
-| CustomerId           | String      | Customer Profile Id                                  |
-| ModelProvider        | String      | Model Provider                                       |
-| Model                | String      | Model                                                |
-| Values               | JSON String | List of attributes produced by the model. |
+| CustomerId           | String      | Customer Profile ID                                  |
+| ModelProvider        | String      | Name of the provider of the model                                       |
+| Model                | String      | Model name                                                |
+| Values               | JSON String | List of attributes produced by the model |
 | msdynci_predictionid | GUID        | Deterministic GUID generated from msdynci_identifier | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
