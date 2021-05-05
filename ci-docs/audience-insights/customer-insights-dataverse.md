@@ -55,7 +55,6 @@ This entity models the unified profile in CI. The shape and the schema for unifi
 
 AlternateKey entity models the natural keys of the entities participated in the unify process and has the following schema.
 
-
 |Column  |Type  |Description  |
 |---------|---------|---------|
 |DataSourceName    |String         | Name of the data source. For example: datasource5        |
@@ -67,7 +66,7 @@ AlternateKey entity models the natural keys of the entities participated in the 
 "keys":[" cntid_1078"]}]```       |
 |CustomerId         | String        | ID of the unified customer profile.         |
 |AlternateKeyId     | GUID         |  AlternateKey deterministic GUID based on msdynci_identifier       |
-|msdynci_identifier |   String      |   DataSourceName|EntityName|AlternateValue  </br> Sample: `testdatasource|contact1|cntid_1078`    |
+|msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Sample: `testdatasource|contact1|cntid_1078`    |
 
 ### UnifiedActivity
 
@@ -96,7 +95,7 @@ CustomerMeasure entity keeps the customer attribute-based measures.
 |--------------------|------------------|-----------------------------|
 | CustomerId         | String           | Customer Profile Id         |
 | Measures           | JSON String      | Includes a list of key value pairs for measure name and values for the given customer | 
-| msdynci_identifier | String           | Customer_Measure|CustomerId |
+| msdynci_identifier | String           | `Customer_Measure|CustomerId` |
 | msdynci_customermeasureid | GUID      | Customer Profile Id |
 
 
@@ -111,7 +110,7 @@ The output of the enrichment process is persisted in the Enrichment entity.
 | EnrichmentType       | String           | Enrichment Type                                      |
 | Values               | JSON String      | List of attributes produced by the enrichment process. |
 | msdynci_enrichmentid | GUID             | Deterministic GUID generated from msdynci_identifier |
-| msdynci_identifier   | String           | EnrichmentProvider|EnrichmentType|CustomerId         |
+| msdynci_identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
 
 ### Prediction
 
@@ -124,7 +123,7 @@ The output of the model predictions is persisted in this entity.
 | Model                | String      | Model                                                |
 | Values               | JSON String | List of attributes produced by the model. |
 | msdynci_predictionid | GUID        | Deterministic GUID generated from msdynci_identifier | 
-| msdynci_identifier   | String      |  Model|ModelProvider|CustomerId                      |
+| msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
 
 
 
