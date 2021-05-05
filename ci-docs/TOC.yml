@@ -170,6 +170,8 @@
               href: audience-insights/export-mailchimp.md
             - name: Marketo
               href: audience-insights/export-marketo.md
+            - name: Microsoft Advertising
+              href: audience-insights/export-microsoft-advertising.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
             - name: SendGrid
