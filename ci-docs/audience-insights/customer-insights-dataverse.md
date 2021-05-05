@@ -13,7 +13,7 @@ manager: shellyha
 
 # Work with Customer Insights data in Microsoft Dataverse
 
-Customer Insights provides the option to make output entities available in Dataverse. This integration enables easy data sharing and custom development through a low code / no code approach. The output entities will be available as tables in Dataverse. These tables enable scenarios like [automated workflows through Power Automate](/power-automate/getting-started), [model-driven apps](/powerapps/maker/model-driven-apps/) and [canvas apps](/powerapps/maker/canvas-apps/) through Power Apps. Of course, you can use the data for any other application that is based on Dataverse tables. The current implementation mainly supports lookups where data from the available audience insights entities can be fetched for a given customer id.
+Customer Insights provides the option to make output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). This integration enables easy data sharing and custom development through a low code / no code approach. The output entities will be available as tables in Dataverse. These tables enable scenarios like [automated workflows through Power Automate](/power-automate/getting-started), [model-driven apps](/powerapps/maker/model-driven-apps/) and [canvas apps](/powerapps/maker/canvas-apps/) through Power Apps. Of course, you can use the data for any other application that is based on Dataverse tables. The current implementation mainly supports lookups where data from the available audience insights entities can be fetched for a given customer id.
 
 ## Attach a Dataverse environment to Customer Insights
 
@@ -21,19 +21,16 @@ Customer Insights provides the option to make output entities available in Datav
 
 Organizations that already use Dataverse can choose to [use one of their existing Dataverse environments](manage-environments.md#create-an-environment-in-an-existing-organization) when creating the audience insights environment. By providing the URL to the Dataverse environment, it's attaching to their new audience insights environment. To ensure the best possible performance, Customer Insights and Dataverse environments must be hosted in the same region.
 
-<!-- update/review configuration of environment articles-->
-
 **New organization**
 
 If a new organization is created when signing up for Customer Insights, it'll automatically get a new Dataverse environment during the provisioning process.
 
 <!-- Do new orgs still need to provide the DV env URL in the environment step or check the data sharing checkbox? might need to be more specific here.-->
 
-Trial specs: 
-For customers who already use Dataverse in their tenant, it’s important to remember that Dataverse environment creation is controlled by their admin. For example, if a customer is setting up a new trial AUI instance by using her organization account, and her tenant admin has disabled creation of Dataverse trial environments for everyone except admins (see screenshot below), then she will not be able to create an AUI trial instance. This is controlled by a setting in Power Platform admin center, under Power Platform settings as shown in the following screenshots:
-
-The trial Dataverse environments provisioned through AUI will all come with 3GB of storage so this will not have any impact on the overall capacity entitled to the tenant. The Dataverse entitlement for paid AUI instances is 15 GB for database and 20GB for file storage.
-
+> [!NOTE]
+> If your organizations already uses Dataverse in their tenant, it’s important to remember that [Dataverse environment creation is controlled by an admin](/power-platform/admin/control-environment-creation.md). For example, if a you're setting up a new audience insights environment with your organizational account and the admin has disabled the creation of Dataverse trial environments for everyone except admins, you can't create a new trial environment.
+> 
+> The Dataverse trial environments created in Customer Insights have 3gb of storage which won't count towards the overall capacity entitled to the tenant. Paid subscriptions get Dataverse entitlement of 15 GB for database and 20GB for file storage.
 
 ## Output entities
 
@@ -57,10 +54,10 @@ AlternateKey entity models the natural keys of the entities participated in the 
 
 |Column  |Type  |Description  |
 |---------|---------|---------|
-|DataSourceName    |String         | Name of the data source. For example: datasource5        |
-|EntityName        | String        | Name of the entity in audience insights. For example: contact1        |
-|AlternateValue    |String         |Alternative ID that is mapped to the customer ID. Example: cntid_1078         |
-|KeyRing           | Multi line text        | JSON value  </br> Sample: `[{"dataSourceName":" testdatasource ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]`       |
+|DataSourceName    |String         | Name of the data source. For example: `datasource5`        |
+|EntityName        | String        | Name of the entity in audience insights. For example: `contact1`        |
+|AlternateValue    |String         |Alternative ID that is mapped to the customer ID. Example: `cntid_1078`         |
+|KeyRing           | Multi line text        | JSON value  </br> Sample: [{"dataSourceName":" testdatasource ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
 |CustomerId         | String        | ID of the unified customer profile.         |
 |AlternateKeyId     | GUID         |  AlternateKey deterministic GUID based on msdynci_identifier       |
 |msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Sample: `testdatasource|contact1|cntid_1078`    |
@@ -121,6 +118,3 @@ The output of the model predictions is persisted in this entity.
 | Values               | JSON String | List of attributes produced by the model. |
 | msdynci_predictionid | GUID        | Deterministic GUID generated from msdynci_identifier | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
-
-
-
