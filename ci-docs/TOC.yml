@@ -138,6 +138,8 @@
           items:
             - name: Exports (preview) overview
               href: audience-insights/export-destinations.md
+            - name: Active Campaign
+              href: audience-insights/export-active-campaign.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
             - name: Autopilot
