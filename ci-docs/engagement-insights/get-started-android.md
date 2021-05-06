@@ -40,9 +40,9 @@ The process begins by selecting a workspace and downloading the Android SDK.
 
 1. After you create a workspace, go to **Admin** > **Workspace** and then selection  **Installation guide**. 
 
-<Brittany, per your note, I deleted the ingestion key information. Does the user copy code or just download the SDK here?> 
+<!-- Brittany, per your note, I deleted the ingestion key information. Does the user copy code or just download the SDK here?--> 
 
-2. Download the [engagement insights Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), and place the `eiandroidsdk-debug.aar` file in the `libs` folder.
+1. Download the [engagement insights Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), and place the `eiandroidsdk-debug.aar` file in the `libs` folder.
 
 1. Open your project level `build.gradle` file and add the following snippets:
     ```gradle
@@ -60,10 +60,10 @@ The process begins by selecting a workspace and downloading the Android SDK.
 
 1. Set up the engagement insights SDK configuration through your `AndroidManifest.xml` file located under the `manifests` folder. Add the following lines under your `<application>` tag and replace `Your-Ingestion-Key` with the key created from Step 2:
 
-<Brittany, remove "replace `Your-Ingestion-Key` with the key created from Step 2" above?>
+<!-- Brittany, remove "replace `Your-Ingestion-Key` with the key created from Step 2" above?-->
 
-> [!NOTE]
-> You don't need to replace the `${applicationId}` part as it is automatically populated.
+   > [!NOTE]
+   > You don't need to replace the `${applicationId}` part as it is automatically populated.
    
 
     ```xml
@@ -91,76 +91,75 @@ The process begins by selecting a workspace and downloading the Android SDK.
             android:value="https://some-endpoint-url.com" />
     ```
 
-
 ## Step 3. Initialize the SDK from your MainActivity
     
-    Java:
-    ```java
-    Analytics analytics = new Analytics();
-    ```
+Java:
+```java
+Analytics analytics = new Analytics();
+```
 
-    Kotlin:
-    ```kotlin
-    var analytics = Analytics()
-    ```
+Kotlin:
+```kotlin
+var analytics = Analytics()
+```
 
 ### Set property for all events (optional)
     
-    Java:
-    ```java
-    analytics.setProperty("year", 2021);
-    ```
+Java:
+```java
+analytics.setProperty("year", 2021);
+```
 
-    Kotlin:
-    ```kotlin
-    analytics.setProperty("year", 2021)
-    ```
+Kotlin:
+```kotlin
+analytics.setProperty("year", 2021)
+```
 
-    The following types are supported for context event properties:
-    * String
-    * Date
-    * Double
-    * Long
-    * Boolean
-    * UUID
+The following types are supported for context event properties:
+- String
+- Date
+- Double
+- Long
+- Boolean
+- UUID
 
 ### Track an event
 
-    Java:
-    ```java
-    Event event = new Event("video");
-    event.setProperty("duration", 320);
-    event.setProperty("ad_shown", true);
-    analytics.trackEvent(event);
-    ```
+Java:
+```java
+Event event = new Event("video");
+event.setProperty("duration", 320);
+event.setProperty("ad_shown", true);
+analytics.trackEvent(event);
+```
 
-    Kotlin:
-    ```kotlin
-    var event = Event("video")
-    event.setProperty("duration", 320)
-    event.setProperty("ad_shown", true)
-    analytics.trackEvent(event)
-    ```
+Kotlin:
+```kotlin
+var event = Event("video")
+event.setProperty("duration", 320)
+event.setProperty("ad_shown", true)
+analytics.trackEvent(event)
+```
 
 ## Set user details for your event
 
 The SDK lets you define user information that can be sent with every event. You can specify user information by calling `setUser(user: User)` API on the `Analytics` level.
 
-    Java:
-    ```java
-    User user = new User();
-    user.setName("testuser");
-    user.setEmail("testuser@mail.com");
-    analytics.setUser(user);
-    ```
+Java:
+```java
+User user = new User();
+user.setName("testuser");
+user.setEmail("testuser@mail.com");
+analytics.setUser(user);
+```
 
-    Kotlin:
-    ```kotiln
-    var user = User();
-    user.name = "testuser"
-    user.email = "abc@xyz.com"
-    analytics.setUser(user)
-    ```
+Kotlin:
+```kotiln
+var user = User();
+user.name = "testuser"
+user.email = "abc@xyz.com"
+analytics.setUser(user)
+```
 
 The `User` data class contains the following string properties:
 
