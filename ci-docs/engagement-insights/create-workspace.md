@@ -4,7 +4,7 @@ description: How to create a first workspace and add members to it.
 author: pickwick129
 ms.reviewer: ruthai
 ms.author: v-salash
-ms.date: 11/11/2020
+ms.date: 05/04/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to

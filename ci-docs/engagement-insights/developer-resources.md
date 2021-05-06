@@ -1,14 +1,14 @@
 ---
 title: Developer resources overview 
 description: Find information about SDKs and how to use them.
-author: m-hartmann
-ms.reviewer: ruthai
-ms.author: mhart
-ms.date: 10/30/2020
+ms.reviewer: britl
+ms.author: v-salash
+author: pickwick129
+ms.date: 05/06/2021
 ms.service: customer-insights
-ms.subservice: engagement-insights
-ms.topic: conceptual
-ms.manager: shellyha
+ms.subservice: engagement-insights 
+ms.topic: how-to
+ms.manager: shellyha 
 ---
 
 # Developer resources overview
@@ -21,8 +21,9 @@ This article lists all available code snippets and samples for quick reference. 
 
 - [How to add the code snippet on a website](instrument-website.md)
 - [Web SDK sample](websdk-sample.md)
-- [Advanced SDK implementation](advanced-SDK-implementation.md)
-
+- [Advanced web SDK instrumentation](advanced-SDK-implementation.md)
+- [Instrumenting an Android mobile application](get-started-android.md)
+- [Instrumenting an iOS mobile application](get-started-ios.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
