@@ -66,21 +66,21 @@ The process begins by selecting a workspace and downloading the Android SDK.
    > You don't need to replace the `${applicationId}` part as it is automatically populated.
    
 
-    ```xml
-    <application
-    ...
-        <provider
-            android:authorities="${applicationId}.com.microsoft.engagementinsights.AnalyticsContentProvider"
-            android:name="com.microsoft.engagementinsights.AnalyticsContentProvider" />
-        <meta-data
-            android:name="com.microsoft.engagementinsights.ingestionKey"
-            android:value="Your-Ingestion-Key" />
-        <meta-data
-            android:name="com.microsoft.engagementinsights.autoCapture"
-            android:value="true" />
-    ...
-    </application>
-    ```
+   ```xml
+   <application
+   ...
+       <provider
+           android:authorities="${applicationId}.com.microsoft.engagementinsights.AnalyticsContentProvider"
+           android:name="com.microsoft.engagementinsights.AnalyticsContentProvider" />
+       <meta-data
+           android:name="com.microsoft.engagementinsights.ingestionKey"
+           android:value="Your-Ingestion-Key" />
+       <meta-data
+           android:name="com.microsoft.engagementinsights.autoCapture"
+           android:value="true" />
+   ...
+   </application>
+   ```
 
 4. Enable or disable autocapture of `View` events by setting the above `autoCapture` field to `true` or `false`.
 
