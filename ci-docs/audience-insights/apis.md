@@ -85,9 +85,11 @@ The [app registration section](#create-a-new-app-registration-in-the-azure-porta
 
 1. On your App registration in the Azure portal, go to **API permissions**.
 
-1. Select **Add a permission** and select **Customer Insights** in the side pane.
+1. Select **Add a permission**. 
 
-1. For **Permission type**, select **Application permissions** and select the **CustomerInsights.Api.All** permission.
+1. Select the **APIs my organization uses** tab and choose **Dynamics 365 AI for Customer Insights** from the list. 
+
+1. For **Permission type**, select **Delegated permissions** and select the **user_impersonation** permission.
 
 1. Select **Add permissions**.
 
