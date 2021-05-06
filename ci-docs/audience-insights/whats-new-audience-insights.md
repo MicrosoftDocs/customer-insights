@@ -34,13 +34,13 @@ The updates in April 2021 include several features, performance upgrades, and bu
 
 - **Entity reordering and configure all source records into the Customer entity**  
       
-   You can now reorder and remove entities from an existing conflation plan in the data unification process. This provides flexibility to reorder the entities in the match process according to business needs. Additionally,we enable include all non-matched records into the final *Customer* entity, which lets them define their customer profile dataset definition.
+   You can now reorder and remove entities from an existing conflation plan in the data unification process. It gives flexibility to reorder the entities in the match process according to business needs. Additionally, we enable include all non-matched records into the final *Customer* entity, which lets them define their customer profile dataset definition.
 
 ### Enrichments
 
  - **New enrichment: Enhanced addresses**    
   
-   We are excited to introduce a new enrichment to enhance addresses in your customer data. Addresses in your data can be unstructured, incomplete, or incorrect. This feature uses Microsoft's models to normalize and enrich your addresses into the Common Data Model format for better accuracy and insights.
+   We're excited to introduce a new enrichment to enhance addresses in your customer data. Addresses in your data can be unstructured, incomplete, or incorrect. This feature uses Microsoft's models to normalize and enrich your addresses into the Common Data Model format for better accuracy and insights.
  
    For more information, see [Enrichment of customer profiles with enhanced addresses](enrichment-enhanced-addresses.md).
 
