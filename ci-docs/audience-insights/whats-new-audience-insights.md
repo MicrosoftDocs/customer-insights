@@ -30,32 +30,33 @@ The updates in April 2021 include several features, performance upgrades, and bu
  
 - **Enhanced merge experience for data unification**    
   
-  We now have an enhanced user experience in the merge configuration of the data unification process. The changes include intuitive ordering of the merged fields and detailed statistics on combined and singleton fields.
+   We now have an enhanced user experience in the merge configuration of the data unification process. The changes include intuitive ordering of the merged fields and detailed statistics on combined and singleton fields.
 
-- **Entity reordering and configure all source records into the Customer entity**         
-  You can now reorder and remove entities from an existing conflation plan in the data unification process. This provides flexibility to reorder the entities in the match process according to business needs. Additionally,we enable include all non-matched records into the final *Customer* entity, which lets them define their customer profile dataset definition.
+- **Entity reordering and configure all source records into the Customer entity**  
+      
+   You can now reorder and remove entities from an existing conflation plan in the data unification process. This provides flexibility to reorder the entities in the match process according to business needs. Additionally,we enable include all non-matched records into the final *Customer* entity, which lets them define their customer profile dataset definition.
 
 ### Enrichments
 
  - **New enrichment: Enhanced addresses**    
   
-  We are excited to introduce a new enrichment to enhance addresses in your customer data. Addresses in your data can be unstructured, incomplete, or incorrect. This feature uses Microsoft's models to normalize and enrich your addresses into the Common Data Model format for better accuracy and insights.
+   We are excited to introduce a new enrichment to enhance addresses in your customer data. Addresses in your data can be unstructured, incomplete, or incorrect. This feature uses Microsoft's models to normalize and enrich your addresses into the Common Data Model format for better accuracy and insights.
  
-  For more information, see [Enrichment of customer profiles with enhanced addresses](enrichment-enhanced-addresses.md).
+   For more information, see [Enrichment of customer profiles with enhanced addresses](enrichment-enhanced-addresses.md).
 
 - **Guided configuration experience for enrichments**    
   
-  We revisited the configuration experience for enrichments with a simple, guided experience. You now have a clear step-by-step process for creating and editing enrichments.
+   We revisited the configuration experience for enrichments with a simple, guided experience. You now have a clear step-by-step process for creating and editing enrichments.
  
-  Additionally, we separated the configuration of connections for third-party enrichments to enable the same connection to be used by multiple enrichments. Only administrators can configure new connections, but the created connections are available to both administrators and contributors.    
+   Additionally, we separated the configuration of connections for third-party enrichments to enable the same connection to be used by multiple enrichments. Only administrators can configure new connections, but the created connections are available to both administrators and contributors.    
 
-  For more information, see [Connections overview](connections.md).
+   For more information, see [Connections overview](connections.md).
 
 - **Multiple enrichments of the same type**    
   
-  We now allow users to create and manage multiple enrichments of the same enrichment type. For example, you can now create two separate address enrichments to enrich two different customer segments. Limits apply on how many enrichments of the same type can be created and vary depending on the enrichment type.
+   We now allow users to create and manage multiple enrichments of the same enrichment type. For example, you can now create two separate address enrichments to enrich two different customer segments. Limits apply on how many enrichments of the same type can be created and vary depending on the enrichment type.
   
-  For more information, see [Enrichment for customer profiles](enrichment-hub.md).
+   For more information, see [Enrichment for customer profiles](enrichment-hub.md).
 
 ## March 2021 updates
 
@@ -64,8 +65,10 @@ The updates in March 2021 include several features, performance upgrades, and bu
 ### Activities
 
 - **Activity wizard and semantic types**
-  We have improved and updated our activity mapping experience to guide and simplify the creation of activity mapping. In this new experience, users get a guided experience to help completing of each step of the process. At the activity mapping step, in addition to choosing from many activity types, the user can choose to semantically map data for *Subscription* and/or *SalesOrderLine* to industry standard schemas, which can be used for downstream consumption.    
-  For more information, see [Customer activities](activities.md).
+
+   We have improved and updated our activity mapping experience to guide and simplify the creation of activity mapping. In this new experience, users get a guided experience to help completing of each step of the process. At the activity mapping step, in addition to choosing from many activity types, the user can choose to semantically map data for *Subscription* and/or *SalesOrderLine* to industry standard schemas, which can be used for downstream consumption.   
+
+   For more information, see [Customer activities](activities.md).
 
 ### Data ingestion
 
