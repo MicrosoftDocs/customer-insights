@@ -13,7 +13,7 @@ manager: shellyha
 
 # Suggested segments based on activity data (preview)
 
-Discover interesting segments of your customers with the help of an AI model. Get suggested segments based on customer activity data that is ingested to Customer Insights. Examples of activity data are transactions, support call duration, purchases, or returns. To suggest segments, activity data gets analyzed for recency, frequency, and monetary value (or duration). Alternatively, you can generate [suggested segments to improve a measure or better understand what influences an attribute](suggested-segments.md).
+Discover interesting segments of your customers with [[the help of an AI model]] - [[this is not AI based, FYI]] . Get suggested segments based on customer activity data that is ingested to Customer Insights. Examples of activity data are transactions, support call duration, purchases, or returns. To suggest segments, activity data gets analyzed for recency, frequency, and monetary value (or duration). Alternatively, you can generate [suggested segments to improve a measure or better understand what influences an attribute](suggested-segments.md).
 
 ## Categorize customers by activity
 
