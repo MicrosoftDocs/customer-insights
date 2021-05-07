@@ -98,8 +98,10 @@
           href: audience-insights/segments.md
         - name: Create segments and customer groups
           href: audience-insights/segment-builder.md
-        - name: See suggested segments based on measures
+        - name: Suggested segments based on measures
           href: audience-insights/suggested-segments.md
+        - name: Suggested segments based on activity
+          href: audience-insights/suggested-segments-activity.md
         - name: Get insights on segments
           href: audience-insights/segment-insights.md
         - name: Find similar customers
