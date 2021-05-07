@@ -1,10 +1,10 @@
 ---
 title: Get Started with iOS SDK
-description: Getting started with the iOS SDK
+description: Learn how to personalize and run the iOS SDK
 author: britl
 ms.reviewer: m-hartmann
 ms.author: v-salash
-ms.date: 04/23/2021
+ms.date: 05/07/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -14,54 +14,84 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial guides you through the process of instrumenting your iOS application with an engagement insights SDK. You'll start seeing events in your portal in five minutes or sooner.
+This tutorial guides you through instrumenting your iOS application with a Dynamics 365 Customer Insights engagement insights SDK. You'll start seeing events in your portal in five minutes or sooner.
 
 ## Configuration options
+
 The following configuration options can be passed to the SDK through the provided `EIConfig.plist` file:
+
 - **ingestionKey**: The ingestion key used to send events to your project.
 - **autocollectAction**: A boolean value to enable/disable auto instrumentation of the action event.
 - **autocollectView**: A boolean value to enable/disable auto instrumentation of the view event.
 - **endpointUrl**: The endpoint url where the events will be directed.
 
 ## Prerequisites
-* Xcode 9+
-* iOS 8.2+
-* An ingestion key (see below for instructions on how to obtain)
 
-## Integrate the engagement insights SDK into your application
+- Xcode version 9+
+- iOS version 8.2+
+- An ingestion key (see the instructions below to obtain)
 
-1. From the engagement insights home screen, select your project from the project dropdown on the left navigation pane. If you don't already have a project, select the **+ New Project** option instead and create one.
+## Step 1. Integrate the SDK into your application
 
-2. Once a project is created, go to **Data** and then **Code**. The ingestion key will be available under **ingestionkey**. Copy the ingestion key.
+The process begins by selecting a workspace to work in, selecting the iOS mobile platform, and downloading the SDK.
 
-3. Download the [engagement insights iOS SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip), and place the `EIObjC.xcframework` file in the `Frameworks` folder.
-* If a `Frameworks` folder does not exist already create one in the project folder
+- Use the workspace switcher in the left navigation pane to select your workspace.
 
-### Zero code implementation with auto instrumentation
+- If you don't have an existing workspace, select  **New Workspace** and follow the steps to create a [new workspace](create-workspace.md).
 
-4. If you would like to enable auto instrumentation without any coding, update and include the provided `EIConfig.plist` file in your project directory folder for the following fields:
-    * ingestionKey = `"Your-Ingestion-Key"`
-    * autocollectView = YES
-    * autocollectAction = YES
+## Step 2. Configure the SDK
 
-5. Then add the `EIConfig.plist` file to your project in Xcode. When the project runs it will automatically track the Action and View events using the configured ingestion key.
+Once you download the SDK, you can work with it in Xcode to enable and define events.
 
-### Custom event implementation
+1. After you create a workspace, go to **Admin** > **Workspace** and then select **Installation guide**.
 
-4. Open your project in Xcode, and navigate to the 'General' settings. Add the `EIObjC.xcframework` to the project under the 'Frameworks, Libraries, and Embedded Content' section.
 
-5. Import the framework header file in AppDelegate.m with the following snippet:
+1. Download the [engagement insights iOS SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip), and place the `EIObjC.xcframework` file in the `Frameworks` folder.
+
+1. If a `Frameworks` folder does not exist, create one in the project folder.
+
+## Enable auto-instrumentation
+ 
+You can easily enable auto-instrumentation without coding. When the project runs, it will automatically track the `view` and `action` events using the configured ingestion key. 
+
+1. Update and include the provided `EIConfig.plist` file in your project directory folder for the following fields:
+    - ingestionKey = `"Your-Ingestion-Key"`
+    - autocollectView = YES
+    - autocollectAction = YES
+
+2. Then add the `EIConfig.plist` file to your project in Xcode. 
+
+
+
+To disable auto-instrumentation, update the following fields in the included `EIConfig.plist` file in your project directory folder. 
+
+```objectivec
+'autocollectView' = NO (to disable)
+'autocollectAction' = NO (to disable)
+```
+
+
+## Implement custom events
+
+1. Open your project in Xcode, and navigate to **General** settings. 
+1. Add the `EIObjC.xcframework` to the project under the 'Frameworks, Libraries, and Embedded Content' section.
+
+1. Import the framework header file in AppDelegate.m with the following snippet:
+
     ```objectivec
     #import <EIObjC/EIObjC.h>
     ```
 
-6. Initialize the engagement insights SDK from application:didFinishLaunchingWithOptions: and replace `"Your-Ingestion-Key"` with the one created from Step 2:
+1. Initialize the engagement insights SDK from application: didFinishLaunchingWithOptions.
+1. Copy the XML snippet from the **Installation guide**.  `Your-Ingestion-Key` should be automatically populated.
+
     ```objectivec
     NSError *error = [NSError new];
     id<EIIAnalytics> analytics = [EIAnalyticsProvider analyticsForIngestionKey:@"Your-Ingestion-Key" error:&error];
     ```
 
-7. Track an event:
+1. Track an event:
+
     ```objectivec
     EIEvent *event = [EIEvent new];
     event.name = @"video.log";
@@ -70,18 +100,11 @@ The following configuration options can be passed to the SDK through the provide
     [analytics trackEvent:event];
     ```
 
-## Enable/Disable auto instrumentation
-Engagement insights iOS SDK supports auto instrumentation and auto collection of `view` and `action` events. If you would like to enable or disable auto instrumentation, update the following fields in the included `EIConfig.plist` file in your project directory folder. 
-```objectivec
-'autocollectView' = YES (to enable) / NO (to disable)
-'autocollectAction' = YES (to enable) / NO (to disable)
-```
+## Set user details for your event
 
-## Setting user details for your signal
+The SDK lets you define user information that can be sent with every event. You can specify user information by calling the `setUser:(nonnull EIUser *)user` API on the SDK.
 
-The engagement insights SDK lets you define user information that can be sent with every event. You can specify user information by calling the `setUser:(nonnull EIUser *)user` API on the SDK.
-
-Specifying user details on the `Analytics` level means that all telemetry will have this information. However, if specified on the event level by calling the `setUser:(nonnull EIUser *)user` API on the EIEvent object, only that specific event will contain the information.
+Specifying user details on the `Analytics` level means that all telemetries will have this information. However, if you specify on the event level by calling the `setUser:(nonnull EIUser *)user` API on the EIEvent object, only that specific event will contain the information.
 
 The `EIUser` data class contains the following NSString properties:
 
@@ -90,3 +113,6 @@ The `EIUser` data class contains the following NSString properties:
 - **authType**: The authentication type used to the get authenticated user ID.
 - **name**: The user's name.
 - **email**: The user's email address.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn how to personalize and run the Android SDK
 author: britl
 ms.reviewer: m-hartmann
 ms.author: v-salash
-ms.date: 05/05/2021
+ms.date: 05/07/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial guides you through the process of instrumenting your Android application with a Dynamics 365 Customer Insights engagement insights SDK. You'll start seeing signals in your portal in five minutes or sooner.
+This tutorial guides you through the process of instrumenting your Android application with a Dynamics 365 Customer Insights engagement insights SDK. You'll start seeing events in your portal in five minutes or sooner.
 
 ## Configuration options
 The following configuration options can be passed to the SDK:
 
-- **ingestionKey**: The ingestion key used to send signals to your workspace.
+- **ingestionKey**: The ingestion key is used to send events to your workspace.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ The following configuration options can be passed to the SDK:
 - An ingestion key (see below for instructions on how to obtain)
 
 ## Step 1. Integrate the SDK into your application
-The process begins by selecting a workspace and downloading the Android SDK.
+The process begins by selecting a workspace, selecting the Android mobile platform, and downloading the Android SDK.
 
 - Use the workspace switcher in the left navigation pane to select your workspace.
 
@@ -38,9 +38,7 @@ The process begins by selecting a workspace and downloading the Android SDK.
 
 ## Step 2. Configure the SDK
 
-1. After you create a workspace, go to **Admin** > **Workspace** and then selection  **Installation guide**. 
-
-<!-- Brittany, per your note, I deleted the ingestion key information. Does the user copy code or just download the SDK here?--> 
+1. After you create a workspace, go to **Admin** > **Workspace** and then select  **Installation guide**. 
 
 1. Download the [engagement insights Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), and place the `eiandroidsdk-debug.aar` file in the `libs` folder.
 
@@ -58,12 +56,11 @@ The process begins by selecting a workspace and downloading the Android SDK.
     }
     ```
 
-1. Set up the engagement insights SDK configuration through your `AndroidManifest.xml` file located under the `manifests` folder. Add the following lines under your `<application>` tag and replace `Your-Ingestion-Key` with the key created from Step 2:
-
-<!-- Brittany, remove "replace `Your-Ingestion-Key` with the key created from Step 2" above?-->
+1. Set up the engagement insights SDK configuration through your `AndroidManifest.xml` file located under the `manifests` folder. 
+1. Copy the XML snippet from the **Installation guide**.  `Your-Ingestion-Key` should be automatically populated.
 
    > [!NOTE]
-   > You don't need to replace the `${applicationId}` part as it is automatically populated.
+   > You don't need to replace the  `${applicationId}` section. It is automatically populated.
    
 
    ```xml
@@ -91,7 +88,10 @@ The process begins by selecting a workspace and downloading the Android SDK.
             android:value="https://some-endpoint-url.com" />
     ```
 
-## Step 3. Initialize the SDK from your MainActivity
+## Step 3. Initialize the SDK from MainActivity 
+
+After you initialize the SDK, you can work with events and their properties in the MainActivity environment.
+
     
 Java:
 ```java
@@ -141,7 +141,7 @@ event.setProperty("ad_shown", true)
 analytics.trackEvent(event)
 ```
 
-## Set user details for your event
+### Set user details for your event (optional)
 
 The SDK lets you define user information that can be sent with every event. You can specify user information by calling `setUser(user: User)` API on the `Analytics` level.
 
