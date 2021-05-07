@@ -83,9 +83,14 @@ Note that schedules for exports depend on the state of your instance. If there a
 
 1. Within the panel that opened choose between having this export run automatically or only manually with the toggle control "Schedule run". When toggle is set to off, this export will only be run if triggered by a user. Your previously defined schedule will remain stored. It only has an effect if the toggle is set to on.
 
-1. When editing a schedule choose recurrence type, then define details for it. The time defined applies to all instances of a recurrence. This time reflects when that export should start not when it will finish.
+1. When editing a schedule choose recurrence type, then define details for it. The time defined applies to all instances of a recurrence. This time reflects when that export should start.
 
 1. When done with defining a schedule save it by activating **Save**.
+
+When editing the schedule for several exports, you need to make an additional choice in control **Keep or override schedules**:
+- If you only want to disable or enable if these exports should run on schedule, then choose **Keep individual schedules** option. This will preserve the previously definied schedule for each export.
+- If you want to define a new schedule for all selected exports, which will override existing schedules, then choose **Define new schedule for all selected** option. You will then see the same form as for single export.
+
 
 ### Run exports manually
 To export data without waiting for a scheduled refresh, go to **Data** > **Exports**. You have two options:
