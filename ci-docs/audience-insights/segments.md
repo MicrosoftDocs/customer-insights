@@ -23,8 +23,9 @@ There are multiple ways to create a new segment:
 
 - Complex segment with segment builder: [Blank segment](segment-builder.md#create-a-new-segment)
 - Simple segments with one operator: [Quick segment](segment-builder.md#quick-segments)
-- AI-powered suggestions based on measures: [Suggested segments to improve measures](suggested-segments.md)
-- AI-powered suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md)
+- [[Should we mention "Find similar customer" here since that is also an AI powered way to create a segment based on Look-alike modelling]]
+- AI-powered suggestions based on measures or attributes: [Suggested segments to improve measures](suggested-segments.md)
+- AI-powered suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md) [[This one is not AI-powered]]
 
 ## Get insights on existing segments
 
