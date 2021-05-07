@@ -92,6 +92,7 @@ The following action are available when you select a segment:
 - **Rename** the segment.
 - **Download** the list of members as a .CSV file.
 - **Add to** option sends the list of customer IDs in the segment for processing in another application.
+- **Manage exports** action opens a page in which you see all exports in context of this segment. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
 
 ## Refresh segments
@@ -113,15 +114,23 @@ You can download your segments to a CSV file or export them to Dynamics 365 Sale
 
 3. Select **Download as CSV** from the actions drop-down list.
 
-### Export segments to Dynamics 365 Sales
+### Export segments
 
-Before exporting segments to Dynamics 365 Sales, an admin needs to [create the export destination](export-destinations.md) for Dynamics 365 Sales.
+You can export a segment from the Segments page or go to Exports page for that. [Learn more about exports](export-destinations.md).
 
 1. In audience insights, go to the **Segments** page.
 
-2. Select the ellipsis in a specific segment's tile.
+1. Select the ellipsis in a specific segment's tile.
 
-3. Select **Add to** from the actions drop-down list and select the export destination you want to send the data to.
+1. Select **Manage exports** from the actions drop-down list.
+
+1. This opens the subpage **Exports (preview) for segment**. You will see all exports split into two groups by whether that export contains the current segment or not.
+
+1. If you wish to add the current segment to an existing export, use the action **Add segment** available an every export which doesn't contain that segment yet. If successful, that export will change position to be listed in the group of exports which contain this segment.
+
+1. If you which to add a new export, activate **Add export**. [More details about creating exports](export-destinations.md#set-up-a-new-export).
+
+1. To get back to the main page for segments, activate the button **Back** next to the page heading. 
 
 ## Draft mode for segments
 
