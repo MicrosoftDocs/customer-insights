@@ -1,7 +1,7 @@
 ---
 title: "Customer Insights data in Microsoft Dataverse"
 description: "Use Customer Insights entities as tables in Microsoft Dataverse."
-ms.date: 04/29/2021
+ms.date: 05/07/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -21,11 +21,13 @@ Customer Insights provides the option to make output entities available in [Micr
 
 Organizations that already use Dataverse can choose to [use one of their existing Dataverse environments](manage-environments.md#create-an-environment-in-an-existing-organization) when creating the audience insights environment. By providing the URL to the Dataverse environment, it's attaching to their new audience insights environment. To ensure the best possible performance, Customer Insights and Dataverse environments must be hosted in the same region.
 
+To attach a Dataverse environment, expand the **Advanced settings** when creating the audience insights environment. Provide the **Microsoft Dataverse environment URL** and select the checkbox to **Enable data sharing**.
+
+:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt":::
+
 **New organization**
 
 If a new organization is created when signing up for Customer Insights, it will automatically get a new Dataverse environment during the provisioning process.
-
-<!-- Do new orgs still need to provide the DV env URL in the environment step or check the data sharing checkbox? might need to be more specific here.-->
 
 > [!NOTE]
 > If your organizations already uses Dataverse in their tenant, it’s important to remember that [Dataverse environment creation is controlled by an admin](/power-platform/admin/control-environment-creation.md). For example, if a you're setting up a new audience insights environment with your organizational account and the admin has disabled the creation of Dataverse trial environments for everyone except admins, you can't create a new trial environment.
@@ -46,7 +48,7 @@ Some output entities from audience insights are available as tables in Dataverse
 
 ### CustomerProfile
 
-This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile can vary based on the entities that are ingested, unified, and attributes that are used in the merge process. A typical customer profile schema contains a subset of attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile can vary based on the entities that are ingested, unified, and attributes that are used in the merge process. A typical customer profile schema contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
 
 ### AlternateKey
 
