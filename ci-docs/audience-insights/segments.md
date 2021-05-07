@@ -17,7 +17,7 @@ Segments let you group your customers based on demographic, transactional, or be
 
 Customer profiles that match the filters of a segment definition are referred as *members* of a segment. Some [service limits](service-limits.md) apply.
 
-## Create new segments
+## Create a new segment
 
 There are multiple ways to create a new segment: 
 
