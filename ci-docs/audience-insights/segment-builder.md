@@ -21,11 +21,9 @@ The following example illustrates the segmentation capability. We've defined a s
 
 ## Create a new segment
 
-There are multiple ways to create a new segment. This section describes how to create a *blank segment* from scratch. You can also create a *quick segment* based on existing entities or make use of machine learning models to get *suggested segments*.
+There are multiple ways to create a new segment. This section describes how to create a *blank segment* from scratch. You can also create a *quick segment* based on existing entities or make use of machine learning models to get *suggested segments*. More information: [Segments overview](segments.md).
 
 While creating a segment, you can save a draft. It will be saved as an inactive segment, and can't be activated it finished with a valid configuration.
-
-<!-- needs a link to overview with types of segments -->
 
 1. Go to the **Segments** page.
 

@@ -26,8 +26,6 @@ There are multiple ways to create a new segment:
 - AI-powered suggestions based on measures: [Suggested segments to improve measures](suggested-segments.md)
 - AI-powered suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md)
 
-<!-- needs links -->
-
 ## Get insights on existing segments
 
 Discover additional information around your existing segments with [Segment insights](segment-insights.md). Find out what differentiates two segments or what they have in common.
@@ -35,8 +33,6 @@ Discover additional information around your existing segments with [Segment insi
 ## Find similar customers
 
 Find customers that are similar to the members of a selected segment with the help of artificial intelligence. For more information, see [similar customers ](find-similar-customer-segments.md).
-
-<!-- make the manage and refresh part a separate section? -->
 
 ## Manage existing segments
 
@@ -303,7 +299,7 @@ For the following scenarios, we advise using the segment builder rather than the
 
 ## Next steps
 
-[Export a segment](export-destinations.md) and explore the [Customer Card](customer-card-add-in.md) and [Connectors](export-power-bi.md) to get insights on the customer level.
+[Export a segment](export-destinations.md) and explore the [Customer Card](customer-card-add-in.md) and [Connectors](export-power-bi.md) to get insights on the customer level. -->
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)] -->
+[!INCLUDE[footer-include](../includes/footer-banner.md)] 
