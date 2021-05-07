@@ -28,7 +28,7 @@ To set up or edit an export, you need to have connections available to you. Conn
 - Viewers can only view existing exports but not create them.
 
 
-### To define a new export:
+### To define a new export
 
 1. Go to **Data** > **Exports**.
 
@@ -39,7 +39,7 @@ To set up or edit an export, you need to have connections available to you. Conn
 1. Provide the required details and select **Save** to create the export.
 
 
-### To define a new export based on an existing one:
+### To define a new export based on an existing one
 
 1. Select the export you want to base the new on on by activating it in the list of exports.
 
