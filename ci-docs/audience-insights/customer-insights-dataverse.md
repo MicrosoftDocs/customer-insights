@@ -32,7 +32,7 @@ If a new organization is created when signing up for Customer Insights, it will 
 > [!NOTE]
 > If your organizations already uses Dataverse in their tenant, it’s important to remember that [Dataverse environment creation is controlled by an admin](/power-platform/admin/control-environment-creation.md). For example, if a you're setting up a new audience insights environment with your organizational account and the admin has disabled the creation of Dataverse trial environments for everyone except admins, you can't create a new trial environment.
 > 
-> The Dataverse trial environments created in Customer Insights have 3gb of storage which won't count towards the overall capacity entitled to the tenant. Paid subscriptions get Dataverse entitlement of 15 GB for database and 20GB for file storage.
+> The Dataverse trial environments created in Customer Insights have 3 GB of storage which won't count towards the overall capacity entitled to the tenant. Paid subscriptions get Dataverse entitlement of 15 GB for database and 20 GB for file storage.
 
 ## Output entities
 
