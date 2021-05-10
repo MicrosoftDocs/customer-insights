@@ -87,7 +87,7 @@ To disable auto-instrumentation, update the following fields in the included `EI
 
     ```objectivec
     NSError *error = [NSError new];
-    id<EIIAnalytics> analytics = [EIAnalyticsProvider analyticsForIngestionKey:@"Your-Ingestion-Key" error:&error];
+    id<EIIAnalytics> analytics = [EIAnalyticsProvider analyticsForIngestionKey:nil error:&error];
     ```
 
 1. Track an event:

@@ -149,7 +149,7 @@ Java:
 ```java
 User user = new User();
 user.setName("testuser");
-user.setEmail("testuser@mail.com");
+user.setEmail("abc@xyz.com");
 analytics.setUser(user);
 ```
 
