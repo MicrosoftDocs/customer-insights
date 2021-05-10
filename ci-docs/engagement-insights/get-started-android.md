@@ -155,7 +155,7 @@ analytics.setUser(user);
 
 Kotlin:
 ```kotiln
-var user = User();
+var user = User()
 user.name = "testuser"
 user.email = "abc@xyz.com"
 analytics.setUser(user)
