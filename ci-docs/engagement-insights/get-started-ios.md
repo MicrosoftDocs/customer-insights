@@ -83,7 +83,7 @@ To disable auto-instrumentation, update the following fields in the included `EI
     ```
 
 1. Initialize the engagement insights SDK from application: didFinishLaunchingWithOptions.
-1. Copy the XML snippet from the **Installation guide**.  `Your-Ingestion-Key` should be automatically populated.
+1. Copy the XML snippet from the **Installation guide**.
 
     ```objectivec
     NSError *error = [NSError new];
