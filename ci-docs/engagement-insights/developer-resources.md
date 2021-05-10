@@ -4,7 +4,7 @@ description: Find information about SDKs and how to use them.
 ms.reviewer: britl
 ms.author: v-salash
 author: pickwick129
-ms.date: 05/06/2021
+ms.date: 05/10/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -23,7 +23,9 @@ This article lists all available code snippets and samples for quick reference. 
 - [Web SDK sample](websdk-sample.md)
 - [Advanced web SDK instrumentation](advanced-SDK-implementation.md)
 - [Instrumenting an Android mobile application](get-started-android.md)
+- [Android SDK sample](androidsdk-sample.md)
 - [Instrumenting an iOS mobile application](get-started-ios.md)
 
+- [iOS SDK sample](iossdk-sample.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

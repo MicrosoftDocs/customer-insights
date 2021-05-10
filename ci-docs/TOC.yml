@@ -277,6 +277,14 @@
           href: engagement-insights/advanced-SDK-implementation.md
         - name: Web SDK sample
           href: engagement-insights/websdk-sample.md
+        - name: Android SDK tutorial
+          href: engagement-insights/get-started-android.md
+        - name: Android SDK sample
+          href: engagement-insights/androidsdk-sample.md
+        - name: iOS SDK tutorial
+          href: engagement-insights/get-started-ios.md
+        - name: iOS SDK sample
+          href: engagement-insights/iossdk-sample.md
 
     - name: Administration
       items: 
