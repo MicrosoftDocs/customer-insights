@@ -64,7 +64,7 @@ The process begins by selecting a workspace, selecting the Android mobile platfo
    
 
    ```xml
-   <application
+   <application>
    ...
        <provider
            android:authorities="${applicationId}.com.microsoft.engagementinsights.AnalyticsContentProvider"

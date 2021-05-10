@@ -34,15 +34,19 @@ This sample Android project helps you understand how the SDK works in an app. Yo
    > You don't need to replace the  `${applicationId}` section. It is automatically populated.
 
 ```xml
-<provider
-    android:authorities="${applicationId}.microsoft.dynamics.engagementinsights.eiandroidsdk.AnalyticsContentProvider"
-    android:name="microsoft.dynamics.engagementinsights.eiandroidsdk.AnalyticsContentProvider" />
-<meta-data
-    android:name="microsoft.dynamics.engagementinsights.ingestionKey"
-    android:value="Your-Ingestion-Key" />
-<meta-data
-    android:name="microsoft.dynamics.engagementinsights.autoCapture"
-    android:value="true" />
+<application>
+...
+    <provider
+        android:authorities="${applicationId}.microsoft.dynamics.engagementinsights.eiandroidsdk.AnalyticsContentProvider"
+        android:name="microsoft.dynamics.engagementinsights.eiandroidsdk.AnalyticsContentProvider" />
+    <meta-data
+        android:name="microsoft.dynamics.engagementinsights.ingestionKey"
+        android:value="Your-Ingestion-Key" />
+    <meta-data
+        android:name="microsoft.dynamics.engagementinsights.autoCapture"
+        android:value="true" />
+...
+</application>
 ```
 
 5. Select **Run** to start the sample project.
