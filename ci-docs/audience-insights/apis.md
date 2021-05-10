@@ -1,7 +1,7 @@
 ---
 title: Work with APIs
 description: Use APIs and understand limitations.
-ms.date: 03/10/2021
+ms.date: 05/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -85,20 +85,13 @@ The [app registration section](#create-a-new-app-registration-in-the-azure-porta
 
 1. On your App registration in the Azure portal, go to **API permissions**.
 
-1. Select **Add a permission** and select **Customer Insights** in the side pane.
+1. Select **Add a permission**. 
+
+1. Select the **APIs my organization uses** tab and choose **Dynamics 365 AI for Customer Insights** from the list. 
 
 1. For **Permission type**, select **Application permissions** and select the **CustomerInsights.Api.All** permission.
 
 1. Select **Add permissions**.
-
-1. To give admin consent on this Application permission, you need to add a Service Principal.
-
-   1. Install the Azure Active Directory (AD) PowerShell module: `Install-Module -Name AzureAD -AllowClobber -Scope AllUsers`
-   1. Connect to your AD account: `Connect-AzureAD -TenantId <your tenant id>`. You can find your tenant ID on **Overview** > **Azure Active Directory**.
-   1. Run the following command to add an Azure AD Service Principal: `New-AzureADServicePrincipal -AppId "38c77d00-5fcb-4cce-9d93-af4738258e3c" -DisplayName "Microsoft Dynamics 365 Customer Insights"`
-      The AppId parameter pertains to the Customer Insights API app.
-
-   :::image type="content" source="media/azureAD-service-principal.png" alt-text="Service principal sample":::
 
 1. Go back to **API permissions** for your app registration.
 

@@ -38,21 +38,7 @@ You can change the following configuration options in the code snippet:
 
 - **ingestionKey**: The ingestion key used to send events to your workspace. You can change the ingestion key to send events to a different
 - **autoCapture**: Specifies if page views and interactions with the website are captured. It has two options:
-    - **view**: Set to *true* to capture page views. Page views are captured as *View* [events](glossary.md#event), a type of [base event](glossary.md#base-event). [Single page applications](#considerations-for-single-page-applications-spas) need to instrument views manually and must instrument the trackView() API whenever they route to a new page.
+    - **view**: Set to *true* to capture page views. Page views are captured as *View* [events](glossary.md#event), a type of [base event](glossary.md#base-event).
     - **click**: Set to *true* to capture visitor interactions on the website. Interactions are captured as *Action* [events](glossary.md#event), a type of [base event](glossary.md#base-event).
-
-## Considerations for Single Page Applications (SPAs)
-
-The script can't automatically collect view events for SPAs. Set `autoCapture` to *false* or remove the autoCapture option from the code snippet. You can manually instrument view events instead with the `trackView(view)` API that can be used to log a page view. The only required field in the *view* object is the `uri`.
-
-The following example shows a code snippet tracking a view event. The "NAME" is the value in the `name` key in the code snippet configuration. It's also the variable name in the window object where the SDK is loaded.
-
-```
-window["NAME"].trackView({
-  uri: "https://mywebsite.com/path/"
-});
-
-```
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
