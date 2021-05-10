@@ -1,7 +1,7 @@
 ---
 title: "Merge entities in data unification"
 description: "Merge entities to create unified customer profiles."
-ms.date: 04/16/2020
+ms.date: 05/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -15,50 +15,89 @@ manager: shellyha
 
 The merge phase is the last phase in the data unification process. Its purpose is reconciling conflicting data. Examples of conflicting data could include a customer name found in two of your datasets but that shows up a little differently in each ("Grant Marshall" versus "Grant Marshal"), or a phone number that differs in format (617-803-091X versus 617803091X). Merging those conflicting data points is done on an attribute-by-attribute basis.
 
+:::image type="content" source="media/merge-fields-page.png" alt-text="Merge page in the data unification process showing table with merged fields that define the unified customer profile.":::
+
 After completing the [match phase](match-entities.md), you start the merge phase by selecting the **Merge** tile on the **Unify** page.
 
 ## Review system recommendations
 
-On the **Merge** page, you choose and exclude attributes to merge within your unified customer profile entity (the result of the configuration process). Some attributes are automatically merged by the system.
+On **Data** > **Unify** > **Merge**, you choose and exclude attributes to merge within your unified customer profile entity. The unified customer profile is the result of the data unification process. Some attributes are automatically merged by the system.
 
-### View merged attributes
+To view the attributes that are included in one of your automatically merged attributes, select that merged attribute in the **Customer fields** tab of the table. The attributes that compose that merged attribute display in two new rows beneath the merged attribute.
 
-To view the attributes that are included in one of your automatically merged attributes, select that merged attribute. The two attributes that compose that merged attribute display in two new rows beneath the merged attribute.
+## Separate, rename, exclude, and edit merged fields
 
-> [!div class="mx-imgBorder"]
-> ![Select merged attribute](media/configure-data-merge-profile-attributes.png "Select merged attribute")
+You can change how the system processes merged attributes to generate the unified customer profile. Select **Show more** and choose what you want to change.
 
-### Separate merged attributes
+:::image type="content" source="media/manage-merged-attributes.png" alt-text="Options in the Show more drop-down menu to manage merged attributes.":::
 
-To separate or unmerge any of the automatically merged attributes, find the attribute in the **Profile attributes** table.
+For more information, see the following sections.
 
-1. Select the ellipsis (...) button.
+## Separate merged fields
+
+To separate merged fields, find the attribute in the table. Separated fields show as individual data points on the unified customer profile. 
+
+1. Select the merged field.
   
-2. In the dropdown list, select **Separate fields**.
+1. Select **Show more** and choose **Separate fields**.
+ 
+1. Confirm the separation.
 
-### Remove merged attributes
+1. Select **Save** and **Run** to process the changes.
 
-To exclude an attribute from the final customer profile entity, find it in the **Profile attributes** table.
+## Rename merged fields
 
-1. Select the ellipsis (...) button.
+Change the display name of merged attributes. You can't change the name of the output entity.
+
+1. Select the merged field.
   
-2. In the dropdown list, select **Don't merge**.
+1. Select **Show more** and choose **Rename**.
 
-   The attribute is moved to the **Removed from customer record** section.
+1. Confirm the changed display name. 
 
-## Manually add a merged attribute
+1. Select **Save** and **Run** to process the changes.
 
-To add a merged attribute, go to the **Merge** page.
+## Exclude merged fields
 
-1. Select **Add merged attribute**.
+Exclude an attribute from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile. 
 
-2. Provide a **Name** to identify it on the **Merge** page later.
+1. Select the merged field.
+  
+1. Select **Show more** and choose **Exclude**.
 
-3. Optionally, provide a **Display name** to appear in the unified Customer Profile entity.
+1. Confirm the exclusion.
 
-4. Configure **Select duplicate attributes** to select the attributes that you want to merge from the matched entities. You can also search for attributes.
+1. Select **Save** and **Run** to process the changes. 
 
-5. Set the **Rank by importance** to prioritize one attribute above the others. For example, if the *WebAccountCSV* entity includes the most accurate data about the *Full Names* attribute, you could prioritize this entity over *ContactCSV* by selecting *WebAccountCSV*. As a result, *WebAccountCSV* moves to first priority, while *ContactCSV* moves to second priority when pulling values for the *Full Name* attribute.
+On the **Merge** page, select **Excluded fields** to see the list of all excluded fields. This pane lets you add excluded fields back.
+
+## Manually combine fields
+
+Specify a merged attribute manually. 
+
+1. On the **Merge** page, select **Combine fields**.
+
+1. Provide a **Name** and an **Output field name**.
+
+1. Choose a field to add. Select **Add fields** to combine more fields.
+
+1. Confirm the exclusion.
+
+1. Select **Save** and **Run** to process the changes. 
+
+## Change the order of fields
+
+Some entities contain more details than others. If an entity includes the latest data about a field, you can prioritize it over other entities when merging values.
+
+1. Select the merged field.
+  
+1. Select **Show more** and choose **Edit**.
+
+1. In the **Combine fields** pane, select **Move up/down** to set the order.
+
+1. Confirm the change.
+
+1. Select **Save** and **Run** to process the changes.
 
 ## Run your merge
 
@@ -67,11 +106,11 @@ Whether you manually merge attributes or let the system merge them, you can alwa
 > [!div class="mx-imgBorder"]
 > ![Data merge Save and Run](media/configure-data-merge-save-run.png "Data merge Save and Run")
 
-To make additional changes and rerun the step, you can cancel an in-progress merge. Select **Refreshing ...** and select **Cancel job**  in the side pane that appears.
+Choose **Run only Merge** if you only want to see the output reflected in the unified customer entity. Downstream processes will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
-After the **Refreshing ...** text changes to **Successful**, merge has completed and resolved contradictions in your data according to the policies you defined. Merged and unmerged attributes are included in the unified profile entity. Excluded attributes aren't included in the unified profile entity.
+Choose **Run Merge and downstream processes** to refresh the system with your changes. All processes, including enrichment, segments, and measures will rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
 
-If it wasn't the first time you ran a merge successfully, all downstream processes, including enrichment, segmentation, and measures will rerun automatically. After all downstream processes have been rerun, the customer profiles reflect any changes you made.
+To make more changes and rerun the step, you can cancel an in-progress merge. Select **Refreshing ...** and select **Cancel job**  in the side pane that appears.
 
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
@@ -80,9 +119,6 @@ If it wasn't the first time you ran a merge successfully, all downstream process
 
 Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.
 
-If you already configured activities, enrichment, or relationships, or if you defined segments, they'll be processed automatically to use the latest customer data.
-
-
-
+If you already configured activities, enrichment, or segments, they'll be processed automatically to use the latest customer data.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
