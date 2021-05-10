@@ -1,7 +1,7 @@
 ---
 title: Work with APIs
 description: Use APIs and understand limitations.
-ms.date: 03/10/2021
+ms.date: 05/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -89,7 +89,7 @@ The [app registration section](#create-a-new-app-registration-in-the-azure-porta
 
 1. Select the **APIs my organization uses** tab and choose **Dynamics 365 AI for Customer Insights** from the list. 
 
-1. For **Permission type**, select **Delegated permissions** and select the **user_impersonation** permission.
+1. For **Permission type**, select **Application permissions** and select the **CustomerInsights.Api.All** permission.
 
 1. Select **Add permissions**.
 
