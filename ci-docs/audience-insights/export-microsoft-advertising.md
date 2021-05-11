@@ -1,6 +1,6 @@
 ---
-title: "Export Customer Insights data to Campaign Monitor"
-description: "Learn how to configure the connection and export to Campaign Monitor."
+title: "Export Customer Insights data to Microsoft Advertising"
+description: "Learn how to configure the connection and export to Microsoft Advertising."
 ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -11,28 +11,29 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Campaign Monitor (preview)
+# Export segment lists to Microsoft Advertising (preview)
 
-Export segments of unified customer profiles to Campaign Monitor and use them for marketing activities.
+Export segments of unified customer profiles to Microsoft Advertising to create Customer Match audiences, and use the audiences for your Advertising campaigns.
 
 ## Prerequisites
 
--	You have an [Campaign Monitor account](https://www.campaignmonitor.com/) and corresponding administrator credentials.
+-	You have an [Microsoft Advertising account](https://ads.microsoft.com/) and corresponding administrator credentials.
+-	You have accepted the Customer Match audiences Terms of Use. 
 -	You have [configured segments](segments.md) in audience insights.
 -	Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- You can export up to 1 million profiles per export to Campaign Monitor.
-- Exporting to Campaign Monitor is limited to segments.
-- Exporting up to 1 million profiles to Campaign Monitor can take up to 20 minutes to complete. 
-- The number of profiles that you can export to Campaign Monitor is dependent and limited on your contract with Campaign Monitor.
+- You can export up to 500k profiles per export to Microsoft Advertising.
+- Exporting to Microsoft Advertising is limited to segments.
+- Exporting up to 500k profiles to Microsoft Advertising can take up to 20 minutes to complete. 
 
-## Set up connection to Campaign Monitor
+
+## Set up connection to Microsoft Advertising
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Campaign Monitor** to configure the connection.
+1. Select **Add connection** and choose **Microsoft Advertising** to configure the connection.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
@@ -40,9 +41,9 @@ Export segments of unified customer profiles to Campaign Monitor and use them fo
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
-1. Select **Connect** to initialize the connection to Campaign Monitor.
+1. Select **Connect** to initialize the connection to Microsoft Advertising.
 
-1. Select **Authenticate with Campaign Monitor** and provide your admin credentials for Campaign Monitor.
+1. Select **Authenticate with Microsoft Advertising** and provide your admin credentials for Microsoft Advertising.
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
@@ -56,12 +57,12 @@ You can configure this export if you have access to a connection of this type. F
 
 1. To create a new export, select **Add destination**.
 
-1. In the **Connection for export** field, choose a connection from the Campaign Monitor section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the Microsoft Advertising section. If you don't see this section name, there are no connections of this type available to you.
 
-1. Enter your [**Campaign Monitor List ID**](https://www.campaignmonitor.com/api/getting-started/#your-list-id).    
-   [Generate the API key](https://www.campaignmonitor.com/api/getting-started/) from **Account Settings** in Campaign Monitor first to view the API list ID.  
+1. Enter your **Microsoft Advertising Customer ID and Account ID** - you can find the Customer ID and Account ID for example in the URL when logged into Microsoft Advertising: https://ui.ads-int.microsoft.com/campaign/vnext/campaigns?cid=hiwleng&aid=xyzertw   
 
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Campaign Monitor.
+3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Microsoft Advertising.
+4. Note: the emails are hashed before they are sent to Microsoft Advertising.
 
 1. Select **Save**.
 
@@ -73,6 +74,6 @@ You can also [export data on demand](export-destinations.md#run-exports-on-deman
 
 ## Data privacy and compliance
 
-When you enable Dynamics 365 Customer Insights to transmit data to Campaign Monitor, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Campaign Monitor meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+When you enable Dynamics 365 Customer Insights to transmit data to Microsoft Advertising, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Microsoft Advertising meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 
 Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
