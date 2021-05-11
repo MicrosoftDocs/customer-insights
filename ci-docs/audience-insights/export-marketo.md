@@ -71,7 +71,7 @@ Saving an export doesn't run the export immediately.
 
 The export runs with every [scheduled refresh](system.md#schedule-tab). 
 You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
-In Marketo, you can now find your segments under [Marketo lists](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
+In Marketo, you can now find your segments under [Marketo lists](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
 
 
 ## Data privacy and compliance
