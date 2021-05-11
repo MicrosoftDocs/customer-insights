@@ -2,12 +2,12 @@
 title: Customer lifetime value (CLV) prediction
 description: "Predict revenue potential for active customers in the future."
 ms.date: 02/05/2021
-ms.reviewer: wameng
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: m-hartmann
-ms.author: mhart
+ms.author: wameng
 manager: shellyha
 ---
 
@@ -33,11 +33,11 @@ The following data is required, and where marked optional, recommended for incre
 - Customer Identifier: Unique identifier to match transactions to an individual customer
 
 - Transaction History: Historical transactions log with below semantic data schema
-    - Transaction ID: Unique identifier of each transaction
-    - Transaction date: Date, preferably a time stamp of each transaction
-    - Transaction amount: Monetary value (for example, revenue or profit margin) of each transaction
-    - Label assigned to returns (optional): Boolean value signifying whether the transaction is a return 
-    - Product ID (optional): Product ID of product involved in the transaction
+    - **Transaction ID**: Unique identifier of each transaction
+    - **Transaction date**: Date, preferably a time stamp of each transaction
+    - **Transaction amount**: Monetary value (for example, revenue or profit margin) of each transaction
+    - **Label assigned to returns** (optional): Boolean value signifying whether the transaction is a return 
+    - **Product ID** (optional): Product ID of product involved in the transaction
 
 - Additional data (optional), for example
     - Web activities: website visit history, email history
@@ -48,10 +48,20 @@ The following data is required, and where marked optional, recommended for incre
     - Customer identifiers to map activities to your customers
     - Activity information containing the name and date of the activity
     - The semantic data schema for activities includes: 
-        - Primary key: A unique identifier for an activity
-        - Timestamp: The date and time of the event identified by the primary key
-        - Event (activity name):  The name of event you want to use
-        - Details (amount or value): Details about the customer activity
+        - **Primary key**: A unique identifier for an activity
+        - **Timestamp**: The date and time of the event identified by the primary key
+        - **Event (activity name)**:  The name of event you want to use
+        - **Details (amount or value)**: Details about the customer activity
+
+- Suggested data characteristics:
+    - Sufficient historical data: At least one year of transactional data. Preferably two to three years of transactional data to predict CLV for one year.
+    - Multiple purchases per customer: Ideally, at least two to three transactions per customer ID, preferably across multiple dates.
+    - Number of customers: At least 100 unique customers, preferably more than 10,000 customers. The model will fail with fewer than 100 customers and insufficient historical data
+    - Data completeness: Less than 20% missing values in required fields in the input data   
+
+> [!NOTE]
+> - The model requires the transaction history of your customers. Only one transaction history entity can be configured currently. If there are multiple purchase/transaction entities, you can union them in Power Query before data ingestion.
+> - For additional customer activity data (optional), however, you can add as many customer activity entities as you'd like for consideration by the model.
 
 ## Create a Customer Lifetime Value prediction
 
@@ -71,7 +81,7 @@ The following data is required, and where marked optional, recommended for incre
    By default, the unit is set as months. You can change it to years to look further in the future.
 
    > [!TIP]
-   > To accurately predict CLV for the time period you set, you need a comparable period of historical data. For example, if you want to predict for the next 12 months, it is recommended that you have at least 18 – 24 months of historical data.
+   > To accurately predict CLV for the time period you set, you need a comparable period of historical data. For example, if you want to predict CLV for the next 12 months, it is recommended that you have at least 18 – 24 months of historical data.
 
 1. Specify what **Active customers** mean for your business. Set the time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers. 
    - **Let model calculate purchase interval (recommended)**: The model analyzes your data and determines a time period based on historical purchases.
@@ -176,24 +186,24 @@ There are three primary sections of data within the results page.
   Using the definition of high value customers provided while configuring the prediction, the system assess how the AI model performed in predicting the high value customers as compared to a baseline model.    
 
   Grades are determined based on the following rules:
-  - A when the model accurately predicted at least 5% more high-value customers as compared to the baseline model.
-  - B when the model accurately predicted between 0-5% more high-value customers as compared to the baseline model.
-  - C when the model accurately predicted fewer high-value customers as compared to the baseline model.
+  - **A** when the model accurately predicted at least 5% more high-value customers as compared to the baseline model.
+  - **B** when the model accurately predicted between 0-5% more high-value customers as compared to the baseline model.
+  - **C** when the model accurately predicted fewer high-value customers as compared to the baseline model.
 
   The **Model rating** pane shows further details about the AI model performance and the baseline model. The baseline model uses a non-AI based approach to calculate customer lifetime value based primarily on historical purchases made by customers.     
   The standard formula used to calculate CLV by the baseline model:    
 
-  *CLV for each customer = Average monthly purchase made by the customer in the active customer window * Number of months in the CLV prediction period * Overall retention rate of all customers*
+  _**CLV for each customer** = Average monthly purchase made by the customer in the active customer window * Number of months in the CLV prediction period * Overall retention rate of all customers*_
 
   The AI model is compared to the baseline model based on two model performance metrics.
   
   - **Success rate in predicting high-value customers**
 
-  See the difference in predicting high-value customers using the AI model compared to the baseline model. For example, 84% success rate means that out of all the high-value customers in the training data, the AI model was able to accurately capture 84%. We then compare this success rate with the success rate of the baseline model to report the relative change. This value is used to assign a grade to the model.
+    See the difference in predicting high-value customers using the AI model compared to the baseline model. For example, 84% success rate means that out of all the high-value customers in the training data, the AI model was able to accurately capture 84%. We then compare this success rate with the success rate of the baseline model to report the relative change. This value is used to assign a grade to the model.
 
   - **Error metrics**
     
-  Another metric lets you review the overall performance of the model in terms of error in predicting future values. We use the overall Root Mean Squared Error (RMSE) metric to assess this error. RMSE is a standard way to measure the error of a model in predicting quantitative data. The AI model’s RMSE is compared to the RMSE of the baseline model and the relative difference is reported.
+    Another metric lets you review the overall performance of the model in terms of error in predicting future values. We use the overall Root Mean Squared Error (RMSE) metric to assess this error. RMSE is a standard way to measure the error of a model in predicting quantitative data. The AI model’s RMSE is compared to the RMSE of the baseline model and the relative difference is reported.
 
   The AI model prioritizes the accurate ranking of customers according to the value they bring to your business. So only the success rate of predicting high-value customers is used to derive the final model grade. The RMSE metric is sensitive to outliers. In scenarios where you have a small percentage of customers with extraordinarily high purchase values, the overall RMSE metric might not give the full picture of the model performance.   
 

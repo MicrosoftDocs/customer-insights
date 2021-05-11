@@ -5,9 +5,9 @@ ms.date: 04/16/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -78,7 +78,7 @@ If it wasn't the first time you ran a merge successfully, all downstream process
 
 ## Next Step
 
-Configure [activities](activities.md), [enrichment](enrichment-microsoft-graph.md), or [relationships](relationships.md) to gain more insights about your customers.
+Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.
 
 If you already configured activities, enrichment, or relationships, or if you defined segments, they'll be processed automatically to use the latest customer data.
 

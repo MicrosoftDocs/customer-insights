@@ -1,13 +1,13 @@
 ---
 title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
-ms.date: 11/02/2020
-ms.reviewer: kishorem
+ms.date: 04/09/2021
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
 ---
 
@@ -22,8 +22,9 @@ You need to have Contributor or Administrator permissions to create or edit enri
 
 On the **Discover** tab, you'll find the following enrichments:
 
-- [Brands](enrichment-microsoft-graph.md) provided by Microsoft Graph
-- [Interests](enrichment-microsoft-graph.md) provided by Microsoft Graph
+- [Brands](enrichment-microsoft.md) provided by Microsoft
+- [Interests](enrichment-microsoft.md) provided by Microsoft
+- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
 - [Company data](enrichment-leadspace.md) provided by Leadspace
 - [Demographics](enrichment-experian.md) provided by Experian
 - [Location data](enrichment-here.md) provided by HERE Technologies
@@ -35,7 +36,7 @@ On the **My enrichments** tab, you can see the enrichments you've configured and
 
 Go to the **My enrichments** to see all configured enrichments. Each enrichment is represented as a row that includes additional information about the enrichment.
 
-Select an enrichment to see the available options. Alternatively, you can select the ellipsis (...) on a list item to see the options.
+Select an enrichment to see the available options. You can also select the ellipsis (...) on a list item to see the options.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Options to manage enrichments in the list of enrichments":::
 
@@ -47,5 +48,12 @@ Select an enrichment to see the available options. Alternatively, you can select
 
 You can run or deactivate multiple enrichments at once by selecting them in the list. View and edit options aren't available as bulk action and only work for one enrichment at a time.
 
+## Enrichments and connections
+
+Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connection can be used by administrators and contributors to configure enrichments.  
+
+## Multiple enrichments of the same type
+
+The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For exmaple, enrich data only for a specific segment. You can configure several enrichments of the same type and reuse the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on the **Enrichment** page.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

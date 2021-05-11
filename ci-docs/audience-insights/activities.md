@@ -1,82 +1,91 @@
 ---
 title: "Customer activities"
 description: "Define customer activities and view them in customer timeline." 
-ms.date: 10/13/2020
+ms.date: 04/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: MichelleDevaney
+ms.author: midevane
 manager: shellyha
 ---
 
 # Customer activities
 
-Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights to create a customer timeline that lists the activities in chronological order. You can include the timeline in customer engagement apps in Dynamics 365 via the [Customer Card add-in](customer-card-add-in.md), or in a Power BI dashboard.
+Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights to create a timeline that lists the activities chronologically. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution, or in a Power BI dashboard.
 
 ## Define an activity
 
-Your data sources include entities with transactional and activity data from multiple data sources. Identify these entities and select the activities you want to view on the customer's timeline. Choose the entity that includes your target activity or activities.
+Your data sources can include entities with transactional and activity data from multiple data sources. Identify these entities and select the activities you want to view on the customer's timeline. Choose the entity that includes your target activity or activities.
+
+> [!NOTE]
+> An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields. The **Add activity** control is disabled if no such entity is found.
 
 1. In audience insights, go to **Data** > **Activities**.
 
-1. Select **Add activity**.
+1. Select **Add activity** to start the guided experience for the activity setup process.
 
-   > [!NOTE]
-   > An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields. The **Add activity** control is disabled if no such entity is found.
+1. In the **Activity data** step, set the values for the following fields:
 
-1. In the **Add activity** pane, set the values for the following fields:
-
+   - **Activity name**: Select a name for your activity.
    - **Entity**: Select an entity that includes transactional or activity data.
    - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
-   - **Timestamp**: Select the field that represents the start time of your activity.
-   - **Event**: Select the field that is the event for the activity.
-   - **Web address**: Select the field that represents a URL providing additional information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. This URL data will be stored in the Unified Activity entity, which can be consumed downstream using APIs.
-   - **Details**: Optionally, select the field that is added for additional details.
-   - **Icon**: Optionally, select the icon that represents this activity.
-   - **Activity Type**: Define the activity type reference to Common Data Model that best describes the semantic definition of the activity.
 
-1. In the **Set up relationship** section, configure the details to connect your activity data to its corresponding customer.
+   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with name, entity, and primary key.":::
 
-    - **Activity entity field**: Select the field in your activity entity that will be used to establish a relationship with another entity.
-    - **Customer entity**: Select the corresponding source customer entity with which your activity entity will be in relationship. You can relate to only those source customer entities that are used in the data unification process.
-    - **Customer entity field**: This field shows the primary key of the source customer entity as selected in the map process. This primary key field in the source customer entity is used to establish a relationship with the activity entity.
-    - **Name**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If there no such relationship exists, a new relationship will be created with the name provided here.
+1. Select **Next** to go to the next step.
+
+1. In the **Relationship** step, configure the details to connect your activity data to its corresponding customer. This step visualizes the connection between entities.  
+
+   - **First**: Foreign field in your activity entity that will be used to establish a relationship with another entity.
+   - **Second**: Corresponding source customer entity with which your activity entity will be in relationship. You can only relate to source customer entities that are used in the data unification process.
+   - **Third**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If there no such relationship exists, a new relationship will be created with the name you provide in this box.
+
+   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
+
+1. Select **Next** to go to the next step. 
+
+1. In the **Activity unification** step, choose the activity event and the start time of your activity. 
+   - **Required fields**
+      1. **Event activity**: Field that is the event for this activity
+      2. **Timestamp**: Field that represents the start time of your activity.
+
+   - **Optional fields**
+      1. **Additional detail**: Field with relevant information for this activity.
+      2. **Icon**: Icon that best represents this activity type.
+      3. **Web address**: Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* entity, which can be consumed downstream using [APIs](apis.md).
    
-   > [!div class="mx-imgBorder"]
-   > ![Define the entity relationship](media/activities-entities-define.png "Define the entity relationship")
+   :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity entity.":::
 
-1. Select **Save** to apply your changes.
+1. Select **Next** to move to the next step. You can select **Finish and review** to save the activity now with the activity type set to **Other**. 
 
-1. On the **Activities** page, select **Run**.
+1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Subscription* & *SalesOrderLine* activity types can be semantically mapped after agreeing to map the fields. If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
+
+1. Select **Next** to move to the next step. 
+
+1. In the **Review** step, verify your selections. You go back to any of the previous steps and update the information if necessary.
+
+   :::image type="content" source="media/Activity_Wizard5.PNG" alt-text="Review the specified fields for an activity.":::
+   
+1. Select **Save activity** to apply your changes and select **Done** to go back to **Data** > **Activities**. Here you see which activities are set to show in the timeline. 
+
+1. On the **Activities** page, select **Run** to process the activity. 
 
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
 
-## Edit an activity
 
-1. In audience insights, go to **Data** > **Activities**.
+## Manage existing activities
 
-2. Select the activity entity you want to edit and select **Edit**. Or, you can hover over the entity row and select the **Edit** icon.
+On **Data** > **Activities**, you can view all your saved activities, and manage them. Each activity is represented by a row that also includes details about the source, the entity, and the activity type.
 
-3. Click on the **Edit** icon.
+The following actions are available when you select an activity. 
 
-4. In the **Edit activity** pane, update the values and select **Save**.
+- **Edit**: Opens the activity setup on the review step. You can change any or all of the current configuration from this step. After changing the configuration, select **Save activity** and then select **Run** to process the changes.
 
-5. On the **Activities** page, select **Run**.
+- **Rename**: Opens a dialog where to enter a different name for the selected activity. Select **Save** to apply your changes.
 
-## Delete an activity
-
-1. In audience insights, go to **Data** > **Activities**.
-
-2. Select the activity entity you want to remove and select **Delete**. Or, you can hover over the entity row and select the **Delete** icon. Additionally, you can select multiple activity entities to be deleted at once.
-   > [!div class="mx-imgBorder"]
-   > ![Edit or delete the entity relationship](media/activities-entities-edit-delete.png "Edit or delete the entity relationship")
-
-3. Select on the **Delete** icon.
-
-4. Confirm your deletion.
-
+- **Delete**: Opens a dialog to confirm the deletion of the selected activity. You can also delete more than one activity at once by selecting the activities and then selecting the delete icon. Select **Delete** to confirm the deletion.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,13 +1,13 @@
 ---
 title: Work with APIs
 description: Use APIs and understand limitations.
-ms.date: 12/04/2020
+ms.date: 05/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
+ms.author: wimohabb
 manager: shellyha
 ---
 
@@ -31,7 +31,7 @@ This article guides you to access to the Customer Insights APIs, create an Azure
 
    :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs":::
 
-1. Select **Explore our APIs** to try out the APIs.
+1. Select **Explore our APIs** to [try out the APIs](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
 1. Choose an API operation and select **Try it**.
 
@@ -42,6 +42,9 @@ This article guides you to access to the Customer Insights APIs, create an Azure
 1. Scroll to the bottom of the side pane and select **Send**.
 
 The HTTP response will soon appear below.
+
+
+   :::image type="content" source="media/try-apis.gif" alt-text="Animated gif showing how to select test the APIs.":::
 
 ## Create a new app registration in the Azure portal
 
@@ -56,6 +59,8 @@ These steps help you get started in using the Customer Insights APIs in an Azure
 
 1. On your new App registration, go to **API permissions**.
 
+   :::image type="content" source="media/app-registration-1.gif" alt-text="Animated gif to set API permission in app registration.":::
+
 1. Select **Add a permission** and select **Customer Insights** in the side pane.
 
 1. For **Permission type**, select **Delegated permissions** and select the **user_impersonation** permission.
@@ -66,9 +71,11 @@ These steps help you get started in using the Customer Insights APIs in an Azure
 
 You can use the Application/Client ID for this app registration with the Microsoft Authentication Library (MSAL) to obtain a bearer token to send with your request to the API.
 
-For more information about MSAL, see [Overview of Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
+:::image type="content" source="media/grant-admin-consent.gif" alt-text="Animated gif to grant admin consent.":::
 
-For more information about app registration in Azure, see [The new Azure portal app registration experience](https://docs.microsoft.com/azure/active-directory/develop/app-registration-portal-training-guide).
+For more information about MSAL, see [Overview of Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
+
+For more information about app registration in Azure, see [The new Azure portal app registration experience](/azure/active-directory/develop/app-registration-portal-training-guide).
 
 For information on using the APIs our client libraries, see [Customer Insights client libraries](#customer-insights-client-libraries).
 
@@ -78,24 +85,19 @@ The [app registration section](#create-a-new-app-registration-in-the-azure-porta
 
 1. On your App registration in the Azure portal, go to **API permissions**.
 
-1. Select **Add a permission** and select **Customer Insights** in the side pane.
+1. Select **Add a permission**. 
+
+1. Select the **APIs my organization uses** tab and choose **Dynamics 365 AI for Customer Insights** from the list. 
 
 1. For **Permission type**, select **Application permissions** and select the **CustomerInsights.Api.All** permission.
 
 1. Select **Add permissions**.
 
-1. To give admin consent on this Application permission, you need to add a Service Principal.
-
-   1. Install the Azure Active Directory (AD) PowerShell module: `Install-Module -Name AzureAD -AllowClobber -Scope AllUsers`
-   1. Connect to your AD account: `Connect-AzureAD -TenantId <your tenant id>`. You can find your tenant ID on **Overview** > **Azure Active Directory**.
-   1. Run the following command to add an Azure AD Service Principal: `New-AzureADServicePrincipal -AppId "38c77d00-5fcb-4cce-9d93-af4738258e3c" -DisplayName "Microsoft Dynamics 365 Customer Insights"`
-      The AppId parameter pertains to the Customer Insights API app.
-
-   :::image type="content" source="media/azureAD-service-principal.png" alt-text="Service principal sample":::
-
 1. Go back to **API permissions** for your app registration.
 
 1. Select **Grant admin consent for...** to complete the app registration.
+
+   :::image type="content" source="media/grant-admin-consent.gif" alt-text="Animated gif to grant admin consent.":::
 
 1. To conclude, we have to add the name of the app registration as a user in Customer Insights.    
    Open Customer Insights, go to **Admin** > **Permissions** and select **Add user**.
@@ -104,7 +106,7 @@ The [app registration section](#create-a-new-app-registration-in-the-azure-porta
 
 ## Customer Insights client libraries
 
-This section helps you get started using the client libraries available for the Customer Insights APIs.
+This section helps you get started using the client libraries available for the Customer Insights APIs. All library source code and sample applications can be found on the [Customer Insights GitHub page](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries). 
 
 ### C# NuGet
 
@@ -123,7 +125,7 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
 
 #### Use the C# client library
 
-1. Use the [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview) to get an `AccessToken` using your existing [Azure app registration](#create-a-new-app-registration-in-the-azure-portal).
+1. Use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) to get an `AccessToken` using your existing [Azure app registration](#create-a-new-app-registration-in-the-azure-portal).
 
 1. After successfully authenticating and acquiring a token, construct a new or use an existing `HttpClient` with the additional **DefaultRequestHeaders "Authorization"** set to **Bearer <access token>** and **Ocp-Apim-Subscription-Key** set to the [**subscription key** from your Customer Insights environment](#get-started-trying-the-customer-insights-apis).    
    Reset the **Authorization** header when appropriate. For example, when the token expired.
@@ -137,5 +139,12 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
 1. The response will likely be of type `object` because the method can return multiple types (for example, `IList<InstanceInfo>` and `ApiErrorResult`). To check the return type, you can safely cast the objects into the response types specified on the [API details page](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) for that operation.    
    If more information on the request is needed, use the **http message methods** to access the raw response object.
 
+### NodeJS package
+
+Use the NodeJS client libraries available through NPM: https://www.npmjs.com/package/@microsoft/customerinsights
+
+### Python package
+
+Use the Python client libraries available through PyPi: https://pypi.org/project/customerinsights/
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

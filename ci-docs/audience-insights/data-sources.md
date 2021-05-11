@@ -1,13 +1,13 @@
 ---
 title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
-ms.date: 11/03/2020
+ms.date: 04/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
 ---
 
@@ -27,8 +27,15 @@ You can add a data source in three main ways:
 - [From a Common Data Model folder](connect-common-data-model.md)
 - [From your own Common Data Service lake](connect-common-data-service-lake.md)
 
-> [!NOTE]
-> You can't add data from on-premises data sources yet.
+## Add data from on-premises data sources
+
+Ingesting data from on-premises data sources in Audience Insights is supported based on Power Platform dataflows. Dataflows can be enabled in Customer Insights by [providing the Microsoft Dataverse environment URL](manage-environments.md#create-an-environment-in-an-existing-organization) when setting up the environment.
+
+Data sources that are created after associating a Dataverse environment with Customer Insights will use [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) by default. Dataflows support on-prem connectivity using the data gateways. Remove and recreate data sources that existed before a Dataverse environment was associated to use the on-premises data gateways.
+
+Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse in Customer Insights. The data sources page shows links to go the Power Platform environment where you can view and configure on-premises data gateways.
+
+:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Screenshot of the data sources page showing links that point to the Power Platform environment.":::
 
 ## Review ingested data
 
@@ -60,7 +67,7 @@ To refresh a data source on demand, follow these steps:
 
 2. Select the vertical ellipsis next to the data source you want to refresh and select **Refresh** from the drop-down list.
 
-3. The data source is now triggered for a manual refresh. Refreshing a data source will update both the entity schema as well as data for all the entities specified in the data source.
+3. The data source is now triggered for a manual refresh. Refreshing a data source will update both the entity schema and data for all the entities specified in the data source.
 
 4. Select **Stop refreshing** if you want to cancel an existing refresh and the data source will revert to its last refresh status.
 

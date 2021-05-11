@@ -2,12 +2,12 @@
 title: "Power BI connector"
 description: "Learn how to use the Dynamics 365 Customer Insights connector in Power BI."
 ms.date: 09/21/2020
-ms.reviewer: sthe
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
 ---
 
@@ -18,7 +18,7 @@ Create visualizations for your data with the Power BI Desktop. Generate addition
 ## Prerequisites
 
 - You have unified customer profiles.
-- The latest version of [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) is installed on your computer. [Learn more about Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-what-is-desktop).
+- The latest version of [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) is installed on your computer. [Learn more about Power BI Desktop](/power-bi/desktop-what-is-desktop).
 
 ## Configure the connector for Power BI
 
@@ -42,7 +42,7 @@ Create visualizations for your data with the Power BI Desktop. Generate addition
 
 ## Large data sets
 
-The Customer Insights connector for Power BI is designed to work for data sets that contain up to 1 million customer profiles. Importing larger data sets may work, but it takes a long time. Additionally, the process could run into a time-out because of Power BI limitations. For more information, see [Power BI: Recommendations for large data sets](https://docs.microsoft.com/power-bi/admin/service-premium-what-is#large-datasets). 
+The Customer Insights connector for Power BI is designed to work for data sets that contain up to 1 million customer profiles. Importing larger data sets may work, but it takes a long time. Additionally, the process could run into a time-out because of Power BI limitations. For more information, see [Power BI: Recommendations for large data sets](/power-bi/admin/service-premium-what-is#large-datasets). 
 
 ### Work with a subset of data
 
@@ -65,4 +65,3 @@ You can identify and remove the duplicated relationships.
 After removal of the duplicated relationships, try to configure the Power BI connector again. The environment should be available now.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

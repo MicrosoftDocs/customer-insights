@@ -29,14 +29,14 @@
     - name: Learn modules
       items:
         - name: Ingest data
-          href: https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/
+          href: /learn/modules/ingest-data-customer-insights/
         - name: Create a unified customer profile
-          href: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+          href: /learn/modules/unified-customer-profile/
         - name: Work with the app
-          href: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+          href: /learn/modules/working-with-customer-insights/
 
         - name: Enrich data and predictions
-          href: https://docs.microsoft.com/learn/modules/enrich-data/
+          href: /learn/modules/enrich-data/
          
 
     - name: Data sources
@@ -80,7 +80,9 @@
         - name: Enrich customer profiles
           href: audience-insights/enrichment-hub.md
         - name: Brand and interest affinities
-          href: audience-insights/enrichment-microsoft-graph.md
+          href: audience-insights/enrichment-microsoft.md
+        - name: Enhanced addresses
+          href: audience-insights/enrichment-enhanced-addresses.md
         - name: Enrich with HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Enrich with Leadspace
@@ -121,6 +123,8 @@
           href: audience-insights/predict-product-recommendation.md
         - name: Sample guide for product recommendation prediction
           href: audience-insights/sample-guide-predict-product-recommendation.md
+        - name: Create segments based on predictions
+          href: audience-insights/prediction-based-segment.md
         - name: Implement custom machine learning models
           href: audience-insights/custom-models.md
         - name: Experiments with Azure Machine learning
@@ -130,50 +134,67 @@
 
     - name: Export options
       items:
-        - name: Export destinations overview
-          href: audience-insights/export-destinations.md
-        - name: Azure Blob Storage
-          href: audience-insights/export-azure-blob-storage.md
-        - name: AdRoll
-          href: audience-insights/export-adroll.md
-        - name: Autopilot
-          href: audience-insights/export-autopilot.md
-        - name: Azure Blob Storage
-          href: audience-insights/export-azure-blob-storage.md
-        - name: Azure Data Lake Storage Gen2
-          href: audience-insights/export-azure-data-lake-storage-gen2.md
-        - name: DotDigital
-          href: audience-insights/export-dotdigital.md
-        - name: Dynamics 365 Customer Service (Add-in)
-          href: audience-insights/customer-card-add-in.md
-        - name: Dynamics 365 Marketing
-          href: audience-insights/export-dynamics365-marketing.md
-        - name: Dynamics 365 Sales
-          href: audience-insights/export-dynamics365-sales.md
-        - name: Dynamics 365 Sales Hub (Add-in)
-          href: audience-insights/customer-card-add-in.md
-        - name: Facebook Ads Manager
-          href: audience-insights/export-facebook.md
-        - name: Google Ads
-          href: audience-insights/export-google-ads.md
-        - name: LiveRamp
-          href: audience-insights/export-liveramp.md
-        - name: Mailchimp
-          href: audience-insights/export-mailchimp.md
-        - name: Microsoft Teams (bot)
-          href: audience-insights/export-teams-bot.md
-        - name: Marketo
-          href: audience-insights/export-marketo.md
-        - name: Power BI
-          href: audience-insights/export-power-bi.md
-        - name: Power Apps
-          href: audience-insights/export-power-apps.md
-        - name: Power Automate
-          href: audience-insights/export-power-automate.md
-        - name: SendGrid
-          href: audience-insights/export-sendgrid.md
-        - name: SFTP
-          href: audience-insights/export-sftp.md
+        - name: Exports
+          items:
+            - name: Exports (preview) overview
+              href: audience-insights/export-destinations.md
+            - name: AdRoll
+              href: audience-insights/export-adroll.md
+            - name: Autopilot
+              href: audience-insights/export-autopilot.md
+            - name: Azure Blob Storage
+              href: audience-insights/export-azure-blob-storage.md
+            - name: Azure Data Lake Storage Gen2
+              href: audience-insights/export-azure-data-lake-storage-gen2.md
+            - name: Azure Synapse Analytics
+              href: audience-insights/export-azure-synapse-analytics.md
+            - name: Adobe Campaign Standard
+              href: audience-insights/export-adobe-campaign-standard.md
+            - name: Adobe Experience Platform
+              href: audience-insights/export-adobe-experience-platform.md
+            - name: Campaign Monitor
+              href: audience-insights/export-campaign-monitor.md
+            - name: Constant Contact
+              href: audience-insights/export-constant-contact.md
+            - name: DotDigital
+              href: audience-insights/export-dotdigital.md
+            - name: Dynamics 365 Marketing
+              href: audience-insights/export-dynamics365-marketing.md
+            - name: Dynamics 365 Sales
+              href: audience-insights/export-dynamics365-sales.md
+            - name: Facebook Ads Manager
+              href: audience-insights/export-facebook.md
+            - name: Google Ads
+              href: audience-insights/export-google-ads.md
+            - name: LiveRamp
+              href: audience-insights/export-liveramp.md
+            - name: Mailchimp
+              href: audience-insights/export-mailchimp.md
+            - name: Marketo
+              href: audience-insights/export-marketo.md
+            - name: RollWorks
+              href: audience-insights/export-rollworks.md
+            - name: SendGrid
+              href: audience-insights/export-sendgrid.md
+            - name: Snapchat
+              href: audience-insights/export-snapchat.md
+            - name: SFTP
+              href: audience-insights/export-sftp.md
+
+        - name: Other uses
+          items: 
+            - name: Dynamics 365 Customer Service (Add-in)
+              href: audience-insights/customer-card-add-in.md
+            - name: Dynamics 365 Sales Hub (Add-in)
+              href: audience-insights/customer-card-add-in.md
+            - name: Microsoft Teams (bot)
+              href: audience-insights/export-teams-bot.md
+            - name: Power Apps
+              href: audience-insights/export-power-apps.md
+            - name: Power Automate
+              href: audience-insights/export-power-automate.md
+            - name: Power BI
+              href: audience-insights/export-power-bi.md
 
     - name: Administration
       items:
@@ -181,6 +202,8 @@
           href: audience-insights/system.md
         - name: Assign user permissions
           href: audience-insights/permissions.md
+        - name: Connections (preview) overview
+          href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
         - name: Export diagnostic logs
@@ -245,6 +268,11 @@
         - name: Create unified profile reports
           href: engagement-insights/profile-reports.md
 
+    - name: Journey analytics
+      items: 
+        - name: Create and manage funnel reports
+          href: engagement-insights/funnel-reports.md
+    
     - name: Developer resources
       items: 
         - name: Developer resources overview

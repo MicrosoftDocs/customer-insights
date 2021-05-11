@@ -7,7 +7,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       },
@@ -23,17 +23,21 @@
       "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
+        "Conceptual": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [],
-  "sync_notification_subscribers": [],
+  "notification_subscribers": [
+    "bigoswam@microsoft.com"
+  ],
+  "sync_notification_subscribers": [
+    "bigoswam@microsoft.com"
+  ],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/customer-insights",
+  "git_repository_branch_open_to_public_contributors": "main",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
@@ -54,7 +58,8 @@
   "branch_target_mapping": {
     "live": [
       "Publish",
-      "Pdf"
+      "Pdf",
+      "Intellisense"
     ],
     "master": [
       "Publish",
