@@ -1,7 +1,7 @@
 ---
 title: "Suggested segments based on activity."
 description: "Let machine learning help you find new and interesting segments based on customer activity."
-ms.date: 05/05/2021
+ms.date: 05/11/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -14,6 +14,8 @@ manager: shellyha
 # Suggested segments based on activity data (preview)
 
 Discover interesting segments of your customers based on customer activity data that is ingested to Customer Insights. Examples of activity data are transactions, support call duration, purchases, or returns. To suggest segments, activity data gets analyzed for recency, frequency, and monetary value (or duration). Alternatively, you can generate [suggested segments to improve a measure or better understand what influences an attribute](suggested-segments.md).
+
+:::image type="content" source="media/suggested-segments-tab.png" alt-text="Suggested segments tab showing segment suggestions for activity-based and attribute-based segments.":::
 
 ## Categorize customers by activity
 
@@ -50,11 +52,13 @@ Suggestions are generated based on the selected input data.
 
 1. Select **Find new suggestions** and choose **See or anticipate customer behavior**. Select **Start** to run the guided experience.
 
-<screenshot>
+   :::image type="content" source="media/suggested-segments-activity-wizard.png" alt-text="First step of the configuration wizard for a suggested segment based on activity.":::
 
-1. Provide the required input data and select **Next**.
+1. Provide the required input data and select **Next** proceed.
 
-<more detail>
+   - Choose customers: Include all customers or a specific segment.
+   - Choose activity: Select the activity type and the entities that describe the activity.
+   - Preferences: Set the time period to consider, the factors for suggestions, and map the attributes.
 
 1. Review your input and select **Run** to run the model and generate suggestions.
 
@@ -66,9 +70,9 @@ After generating the suggestions, you can filter them by the dimension or value 
 
 Once the AI model has generated the suggestions, you'll find them listed on **Segments** > **Suggestions (preview)** in the **Activity based suggestions** section.
 
-<screenshot>
+:::image type="content" source="media/suggested-segments-details.png" alt-text="Expanded side pane showing detailed data of a suggested segment.":::
 
-Select **See suggestion** on a suggested segment to view the details of that segment. The side pane provides details like the extent of each dimension in comparison to the target group. It also highlights the number of potential members in the segment and the corresponding percentage of the total customers. If you want to keep the suggestion as a segment, select **Save as segment**.    
+Select **See suggestion** on a suggested segment to view the details of that segment. The side pane provides details like the extent of each dimension in comparison to the target group. It also highlights the number of potential members in the segment and the corresponding percentage of the total customers. If you want to keep the suggestion as a segment, select **Create segment**.    
 
 ## Save a suggestion as a segment
 
