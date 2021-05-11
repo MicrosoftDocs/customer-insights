@@ -36,7 +36,7 @@ Suggestions are generated based on the selected input data.
 
 - Time period: Last month, last year, or any custom time frame.
 
-- Activity type: purchases, retail transactions, online transactions, customer support cases, subscriptions, and so on  
+- Activity type: purchases, retail transactions, online transactions, customer support cases, subscriptions, and so on.  
 
 - Entity in Customer Insights that contains the activity data: The UnifiedActivity entity for a specific activity. 
 
@@ -48,13 +48,15 @@ Suggestions are generated based on the selected input data.
 
 1. Select the **Suggestions (preview)** tab.
 
-1. Select **New** and choose **See or anticipate customer behavior** to start the guided experience.
+1. Select **Find new suggestions** and choose **See or anticipate customer behavior**. Select **Start** to run the guided experience.
+
+<screenshot>
 
 1. Provide the required input data and select **Next**.
 
-   :::image type="content" source="media/suggested-segments-primary-attribute.png" alt-text="Choosing the primary attribute for suggestions on the suggested segments.":::
+<more detail>
 
-1. Review your input and select **Save** to run the model and generate suggestions.
+1. Review your input and select **Run** to run the model and generate suggestions.
 
 1. Depending on the number of customer profiles and selected activities, it can take a few minutes to complete. 
 
@@ -66,7 +68,7 @@ Once the AI model has generated the suggestions, you'll find them listed on **Se
 
 <screenshot>
 
-Select any suggested segment to view the details of that segment. The side pane provides details like the extent of each dimension in comparison to the target group. It also highlights the number of potential members in the segment and the corresponding percentage of the total customers.    
+Select **See suggestion** on a suggested segment to view the details of that segment. The side pane provides details like the extent of each dimension in comparison to the target group. It also highlights the number of potential members in the segment and the corresponding percentage of the total customers. If you want to keep the suggestion as a segment, select **Save as segment**.    
 
 ## Save a suggestion as a segment
 
@@ -74,7 +76,7 @@ Select any suggested segment to view the details of that segment. The side pane 
 
 1. Select the segment you want to save. 
 
-1. In the side pane, select **Save as segment**. 
+1. In the side pane, select **Create segment**. 
 
 1. After saving the segment, it will show in the list of segments on the **All segments** tab. It can now be [refreshed, edited, or deleted like any other segment](segments.md).
 
@@ -82,6 +84,6 @@ Select any suggested segment to view the details of that segment. The side pane 
 
 1. Go to **Segments** > **Suggestions (preview)** and look for the segment in the **Activity based suggestions** section.
 
-1. Select **Refresh suggestions** to refresh the suggestions while keeping configured attributes. Or select **Edit attributes** to modify the configured attributes. The system will rerun the AI model, generate segment suggestions based on the latest data, and replace the current suggestions.
+1. Select **Refresh suggestions** to refresh the suggestions while keeping configured attributes. Or select **Edit suggestions** to modify the configured attributes. The system will rerun the AI model, generate segment suggestions based on the latest data, and replace the current suggestions.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
