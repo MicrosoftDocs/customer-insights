@@ -1,6 +1,6 @@
 ---
 title: "Address enhancement enrichment"
-description: "Enrich and normalize address information of customer profiles with Microsoft proprietary data."
+description: "Enrich and normalize address information of customer profiles with Microsoft's models."
 ms.date: 04/21/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -70,7 +70,10 @@ Addresses must contain a country/region value. We don't process addresses for co
 
 1. Select how addresses are formatted in your data set. Choose **Single-attribute address** if addresses in your data use a single field. Choose **Multiple-attribute address** if addresses in your data use more than one data field.
 
-1.	Map the address fields from your unified customer entity. The Country/Region field is mandatory for multiple-attribute addresses. 
+   > [!NOTE]
+   > Country/Region is mandatory in both single-attribute and multiple-attribute address. Addresses that don't contain valid or supported country/region values won't be enriched
+
+1.	Map the address fields from your unified customer entity.
 
     :::image type="content" source="media/enhanced-address-mapping.png" alt-text="Enhanced address field-mapping page.":::
 

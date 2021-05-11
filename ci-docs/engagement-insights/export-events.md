@@ -1,10 +1,10 @@
 ---
 title: Export refined events
 description: How to export refined events and base events.
-ms.reviewer: ruthai
+ms.reviewer: mhart
 ms.author: v-salash
 author: pickwick129
-ms.date: 11/17/2020
+ms.date: 04/30/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -17,8 +17,11 @@ ms.manager: shellyha
 
 An event represents user behavior. It records when a user views a page (view event) or interacts with content(action event). When you can decide which properties of the data that you want to display in a report, this virtual view of the data is called a *refined event*. 
 
-You can export events and refined events to external storage. The exports are a forward data stream. You can't refill the stream. Additionally, exports have fixed schemas. If you add custom properties to an event, they won't be included. You'll need to create a new export.
-## Prerequisite
+- You can export events and refined events to external storage. 
+- The exports are a forward data stream. You can't refill the stream. 
+- Exports have fixed schemas. If you add custom properties to an event, they won't be included. You'll need to create a new export.
+
+## Prerequisites
 
 Before setting up an export, you need to have access and an active subscription to the Azure portal. You'll need the storage account information during the export process. 
 
@@ -32,14 +35,14 @@ Before setting up an export, you need to have access and an active subscription 
 
 1. Once it has been deployed, go to the newly created storage account. In the navigation pane, select **Settings** > **Access keys**. 
 
-1. Copy the **Account name** and **Key** to use them when [creating a new export](#export-events).
+1. Copy the **Account name** and **Key** to use them when creating a new export.
    :::image type="content" source="media/storage-account-access-keys.png" alt-text="Access keys in a storage account":::
 
 ## Export events
 
 There are two ways to export events: 
 - Go to **Data** > **Exports** and select **New export**.
-- Go to **Data** > **Events**, select **...** next to the event you want to export and select **Export** from the drop-down menu. 
+- Go to **Data** > **Events**, select **More [...]** next to the event you want to export and select **Export** from the drop-down menu. 
 
 You're guided through the steps to create an export:
 
@@ -60,7 +63,7 @@ You're guided through the steps to create an export:
 
 ## View and manage exports
 
-Once you've set up an export, go to **Data** > **Exports** to view it. Select **...** for any existing export to edit or delete it.
+Once you've set up an export, go to **Data** > **Exports** to view it. Select **More [...]** for any existing export to edit or delete it.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
