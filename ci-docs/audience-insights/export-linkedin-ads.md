@@ -23,9 +23,9 @@ Export segments of unified customer profiles to LinkedIn Ads to create matched a
 
 ## Known limitations
 
-- You can export up to 100 K million profiles per export to LinkedIn Ads.
+- You can export up to 100K profiles per export to LinkedIn Ads.
 - Exporting to LinkedIn Ads is limited to segments.
-- Exporting up to 100 K million profiles to LinkedIn Ads can take up to 20 minutes to complete. 
+- Exporting up to 100K profiles to LinkedIn Ads can take up to 20 minutes to complete. 
 
 ## Set up the connection to LinkedIn Ads
 
