@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Microsoft Advertising"
 description: "Learn how to configure the connection and export to Microsoft Advertising."
-ms.date: 03/03/2021
+ms.date: 05/12/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,16 +11,16 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Microsoft Advertising (preview)
+# Export segments to Microsoft Advertising (preview)
 
-Export segments of unified customer profiles to Microsoft Advertising to create Customer Match audiences, and use the audiences for your Advertising campaigns.
+Export Customer Insights segments to Microsoft Advertising to create Customer Match audiences. Use these audiences for your ad campaigns.
 
 ## Prerequisites
 
--	You have an [Microsoft Advertising account](https://ads.microsoft.com/) and corresponding administrator credentials.
--	You have accepted the Customer Match audiences Terms of Use. 
--	You have [configured segments](segments.md) in audience insights.
--	Unified customer profiles in the exported segments contain a field representing an email address.
+-	An [Microsoft Advertising account](https://ads.microsoft.com/) and corresponding administrator credentials.
+-	You've accepted the Customer Match terms of use. 
+-	[Configured segments](segments.md) in audience insights.
+-	Unified customer profiles in the exported segments contain a field with an email address.
 
 ## Known limitations
 
@@ -29,7 +29,7 @@ Export segments of unified customer profiles to Microsoft Advertising to create 
 - Exporting up to 500k profiles to Microsoft Advertising can take up to 20 minutes to complete. 
 
 
-## Set up connection to Microsoft Advertising
+## Set up the connection to Microsoft Advertising
 
 1. Go to **Admin** > **Connections**.
 
@@ -37,7 +37,7 @@ Export segments of unified customer profiles to Microsoft Advertising to create 
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. The default is administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
@@ -59,10 +59,11 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Connection for export** field, choose a connection from the Microsoft Advertising section. If you don't see this section name, there are no connections of this type available to you.
 
-1. Enter your **Microsoft Advertising Customer ID and Account ID** - you can find the Customer ID and Account ID for example in the URL when logged into Microsoft Advertising: https://ui.ads-int.microsoft.com/campaign/vnext/campaigns?cid=hiwleng&aid=xyzertw   
+1. Select the segments to export. The Customer Match audiences in Microsoft Advertising are automatically created with the name of the segments selected for export. Each segment will result in a separate Customer Match audience. 
 
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Microsoft Advertising.
-4. Note: the emails are hashed before they are sent to Microsoft Advertising.
+1. Enter your **Microsoft Advertising Customer ID and Account ID**. You can find the Customer ID (cid) and Account ID (aid) in the parameters of the URL when you're signed in Microsoft Advertising.
+
+1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile with a customer's email address. It's required to export segments to Microsoft Advertising.
 
 1. Select **Save**.
 
