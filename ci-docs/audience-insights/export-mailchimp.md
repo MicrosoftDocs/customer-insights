@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Mailchimp (preview)
+# Export segments to Mailchimp (preview)
 
 Export segments of unified customer profiles to Mailchimp to create newsletters and email campaigns.
 
