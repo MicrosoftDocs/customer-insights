@@ -1,7 +1,7 @@
 ---
 title: "Export data from Customer Insights"
 description: "Manage exports to share data."
-ms.date: 03/25/2021
+ms.date: 05/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -27,7 +27,6 @@ To set up or edit an export, you need to have connections available to you. Conn
 - Contributors can have access to specific connections. They depend on administrators to configure and share connections. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 - Viewers can only view existing exports but not create them.
 
-
 ### Define a new export
 
 1. Go to **Data** > **Exports**.
@@ -37,7 +36,6 @@ To set up or edit an export, you need to have connections available to you. Conn
 1. In the **Set up export** pane, select which connection to use. [Connections](connections.md) are managed by administrators. 
 
 1. Provide the required details and select **Save** to create the export.
-
 
 ### Define a new export based on an existing export
 
@@ -91,26 +89,25 @@ You can define custom refresh schedules for individual exports or a several expo
 
 1. Apply and activate your changes by selecting **Save**.
 
-<-->
-
-When editing the schedule for several exports, you need to make an additional choice in control **Keep or override schedules**:
-- If you only want to disable or enable if these exports should run on schedule, then choose **Keep individual schedules** option. This will preserve the previously definied schedule for each export.
-- If you want to define a new schedule for all selected exports, which will override existing schedules, then choose **Define new schedule for all selected** option. You will then see the same form as for single export.
+When editing the schedule for several exports, you need to make an additional choice under **Keep or override schedules**:
+- **Keep individual schedules**: Persist the previously defined schedule for the selected exports and only disable or enable them.
+- **Define new schedule for all selected exports**: Override the existing schedules of the selected exports.
 
 
 ### Run exports manually
-To export data without waiting for a scheduled refresh, go to **Data** > **Exports**. You have two options:
+
+To export data without waiting for a scheduled refresh, go to **Data** > **Exports**.
 
 - To run all exports, select **Run all** in the command bar. This will only run exports which have an active schedule.
-- To run a single export, select it in the list, then active **Run**, which is available in the command bar at the top of the page or through the ellipsis (...) on a list item.
+- To run a single export, select it in the list and select **Run** in the command bar. That's how you run exports with no active schedule. 
 
 ## Remove an Export
 
 1. Go to **Data** > **Exports**.
 
-1. Select the vertical ellipsis for the Export you want to remove.
+1. Select the export you want to remove.
 
-1. Select **Remove** from the dropdown menu.
+1. Select **Remove** in the command bar.
 
 1. Confirm the removal by selecting **Remove** on the confirmation screen.
 
