@@ -28,7 +28,7 @@ To set up or edit an export, you need to have connections available to you. Conn
 - Viewers can only view existing exports but not create them.
 
 
-### To define a new export
+### Define a new export
 
 1. Go to **Data** > **Exports**.
 
@@ -39,24 +39,27 @@ To set up or edit an export, you need to have connections available to you. Conn
 1. Provide the required details and select **Save** to create the export.
 
 
-### To define a new export based on an existing one
+### Define a new export based on an existing export
 
-1. Select the export you want to base the new on on by activating it in the list of exports.
+1. Go to **Data** > **Exports**.
 
-1. Select **Create duplicate** action. This opens the panel to define a new export with the same setup as the export you activated it on.
+1. In the list of exports, select the export you want to duplicate.
 
-1. Review and adapt the export and select **Save** to create the export.
+1. Select **Create duplicate** in the command bar to open the **Set up export** pane with the details of the selected export.
 
+1. Review and adapt the export and select **Save** to create a new export.
 
 ### Edit an export
 
-1. Select the vertical ellipsis for the export destination you want to edit.
+1. Go to **Data** > **Exports**.
 
-1. Select **Edit** from the drop-down menu.
+1. In the list of exports, select the export you want to edit.
+
+1. Select **Edit** in the command bar.
 
 1. Change the values you want to update and select **Save**.
 
-## View Exports and export details
+## View exports and export details
 
 After creating export destinations, they are listed on **Data** > **Exports**. All users can see which data is shared and its latest status.
 
@@ -64,28 +67,31 @@ After creating export destinations, they are listed on **Data** > **Exports**. A
 
 1. Users without edit permissions select **View** instead of **Edit** see the export details.
 
-1. This side pane shows the set up of this export. Without edit permissions, you can't change values. Select **Close** to return to the exports page.
+1. The side pane shows the configuration of an export. Without edit permissions, you can't change values. Select **Close** to return to the exports page.
 
 ## Schedule and run exports
 
-Each export you configure has a schedule. By default exports are run as part of the system every [scheduled refresh](system.md#schedule-tab). You can customize the schedule when this export should be run. If turned off, the export will only run if activated manually.
+Each export you configure has a refresh schedule. During a refresh, the system looks for new or updated data to include in an export. By default, exports are run as part of every [scheduled system refresh](system.md#schedule-tab). You can customize the refresh schedule or turn it off to run exports manually.
+
+Export schedules depend on the state of your environment. If there are [dependencies](system.md#refresh-policies) being updated when a scheduled export should start, the system will first finish running the dependencies and then run the export. You can see when an export was last refreshed in column **Refreshed**.
 
 ### Schedule exports
-You can choose custom schedules for your exports. You can define this for individual or a several exports at once. The exports page shows the current schedule in the column **Schedule**. The permission to change the schedule is the same as for [editing and defining exports](export-destinations.md#set-up-a-new-export). 
 
-Note that schedules for exports depend on the state of your instance. If there are [dependencies](system.md#refresh-policies) being updated for scheduled exports when schedule should start, the system will wait until these have finished, then run the export. You can see when an export was last refreshed in column **Refreshed**.
+You can define custom refresh schedules for individual exports or a several exports at once. The currently defined schedule is listed in the **Schedule** column of the export list. The permission to change the schedule is the same as for [editing and defining exports](export-destinations.md#set-up-a-new-export). 
 
 1. Go to **Data** > **Exports**.
 
-1. Select the export you want to schedule in the list.
+1. Select the export you want to schedule.
 
-1. Select **Schedule** from the commandbar or the dropdown menu.
+1. Select **Schedule** in the command bar.
 
-1. Within the panel that opened choose between having this export run automatically or only manually with the toggle control "Schedule run". When toggle is set to off, this export will only be run if triggered by a user. Your previously defined schedule will remain stored. It only has an effect if the toggle is set to on.
+1. In the **Schedule export** pane, set the **Schedule run** to **On** to run the export automatically. Set it to **Off** to refresh it manually.
 
-1. When editing a schedule choose recurrence type, then define details for it. The time defined applies to all instances of a recurrence. This time reflects when that export should start.
+1. For automatically refreshed exports, choose a **Recurrence** value and specify the details for it. The time defined applies to all instances of a recurrence. This is the time when an export should start refreshing.
 
-1. When done with defining a schedule save it by activating **Save**.
+1. Apply and activate your changes by selecting **Save**.
+
+<-->
 
 When editing the schedule for several exports, you need to make an additional choice in control **Keep or override schedules**:
 - If you only want to disable or enable if these exports should run on schedule, then choose **Keep individual schedules** option. This will preserve the previously definied schedule for each export.
