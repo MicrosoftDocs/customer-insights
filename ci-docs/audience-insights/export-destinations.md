@@ -93,8 +93,7 @@ When editing the schedule for several exports, you need to make an additional ch
 - **Keep individual schedules**: Persist the previously defined schedule for the selected exports and only disable or enable them.
 - **Define new schedule for all selected exports**: Override the existing schedules of the selected exports.
 
-
-### Run exports manually
+### Run exports on demand
 
 To export data without waiting for a scheduled refresh, go to **Data** > **Exports**.
 
