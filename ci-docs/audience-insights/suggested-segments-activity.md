@@ -82,7 +82,7 @@ Select **See suggestion** on a suggested segment to view the details of that seg
 
 1. In the side pane, select **Create segment**. 
 
-1. After saving the segment, it will show in the list of segments on the **All segments** tab. It can now be [refreshed or deleted like any other segment](segments.md). You will not be able to edit these segment at this time, instead you can modify the input crieria for suggestions and generate another set of suggestion as desired.
+1. After saving the segment, it will show in the list of segments on the **All segments** tab. It can now be [refreshed or deleted like any other segment](segments.md). You can't edit the segment details. However, you can change the input criteria for the suggestions and generate different suggestions.
 
 ## Refresh or edit a set of suggestions
 
