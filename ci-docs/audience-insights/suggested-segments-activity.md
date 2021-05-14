@@ -40,7 +40,7 @@ Suggestions are generated based on the selected input data.
 
 - Activity type: purchases, retail transactions, online transactions, customer support cases, subscriptions, and so on.  
 
-- Entity in Customer Insights that contains the activity data: The UnifiedActivity entity for a specific activity. 
+- Entity in Customer Insights that contains the activity data: The UnifiedActivity entity or the entity for a specific activity. 
 
 - Dimensions to include: Recency, frequency, or monetary dimension, depending on your business requirements.
 
@@ -68,7 +68,7 @@ After generating the suggestions, you can filter them by the dimension or value 
 
 ## View details of a suggested segment
 
-Once the AI model has generated the suggestions, you'll find them listed on **Segments** > **Suggestions (preview)** in the **Activity based suggestions** section.
+Once the suggestions are generated, you'll find them listed on **Segments** > **Suggestions (preview)** in the **Activity based suggestions** section.
 
 :::image type="content" source="media/suggested-segments-details.png" alt-text="Expanded side pane showing detailed data of a suggested segment.":::
 
@@ -82,12 +82,12 @@ Select **See suggestion** on a suggested segment to view the details of that seg
 
 1. In the side pane, select **Create segment**. 
 
-1. After saving the segment, it will show in the list of segments on the **All segments** tab. It can now be [refreshed, edited, or deleted like any other segment](segments.md).
+1. After saving the segment, it will show in the list of segments on the **All segments** tab. It can now be [refreshed or deleted like any other segment](segments.md). You will not be able to edit these segment at this time, instead you can modify the input crieria for suggestions and generate another set of suggestion as desired.
 
 ## Refresh or edit a set of suggestions
 
 1. Go to **Segments** > **Suggestions (preview)** and look for the segment in the **Activity based suggestions** section.
 
-1. Select **Refresh suggestions** to refresh the suggestions while keeping configured attributes. Or select **Edit suggestions** to modify the configured attributes. The system will rerun the AI model, generate segment suggestions based on the latest data, and replace the current suggestions.
+1. Select **Refresh suggestions** to refresh the suggestions while keeping configured attributes. Or select **Edit suggestions** to modify the configured attributes. The system will rerun the process, generate segment suggestions based on the latest data, and replace the current suggestions.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
