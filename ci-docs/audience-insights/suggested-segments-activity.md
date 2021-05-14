@@ -68,7 +68,7 @@ After generating the suggestions, you can filter them by the dimension or value 
 
 ## View details of a suggested segment
 
-Once the suggestions are generated, you'll find them listed on **Segments** > **Suggestions (preview)** in the **Activity based suggestions** section.
+Once the suggestions are generated, you'll find them listed on **Segments** > **Suggestions (preview)** in the **Activity-based suggestions** section.
 
 :::image type="content" source="media/suggested-segments-details.png" alt-text="Expanded side pane showing detailed data of a suggested segment.":::
 
@@ -86,7 +86,7 @@ Select **See suggestion** on a suggested segment to view the details of that seg
 
 ## Refresh or edit a set of suggestions
 
-1. Go to **Segments** > **Suggestions (preview)** and look for the segment in the **Activity based suggestions** section.
+1. Go to **Segments** > **Suggestions (preview)** and look for the segment in the **Activity-based suggestions** section.
 
 1. Select **Refresh suggestions** to refresh the suggestions while keeping configured attributes. Or select **Edit suggestions** to modify the configured attributes. The system will rerun the process, generate segment suggestions based on the latest data, and replace the current suggestions.
 
