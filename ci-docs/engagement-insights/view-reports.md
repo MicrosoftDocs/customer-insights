@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A report is a collection of data visualizations, using the data collected through the SDK, that help you measure and understand user behavior. Dynamics 365 Customer Insights engagement insights includes out-of-the-box (OOB) reports for web and mobile projects.  
+A report is a collection of data visualizations, using the data collected through the SDK, that help you measure and understand user behavior. Dynamics 365 Customer Insights engagement insights include out-of-the-box (OOB) reports for web and mobile projects.  
 
 ## Web reports
 
@@ -29,32 +29,33 @@ The  **Real-time usage** report provides an overview of current activity on your
 
 ### Key metrics reports
 
-- **Page views** lists the page views for individual pages along with the number of total page views over the selected time frame.
-- **Visits** shows information about the number of visits and the visit duration.
-- **Visitors** informs about new and returning unique visitors to your site.
+- **Page views** list the page views for individual pages along with the number of total page views over the selected time frame.
+- **Visits show information about the number of visits and the visit duration.
+- **Visitors** inform about new and returning unique visitors to your site.
 
 ### Content reports
 
-- **Links** show information about the number and type of clicks that were performed.
-- **Exit pages** lists the links that visitors clicked to exit your site.
+- **Links** show information about the number and type of clicks.
+- 
+- **Exit pages** list the links that visitors clicked to exit your site.
 
 ### Traffic sources reports
 
-- **Referrers** lists the domains and URLs that referred visitors to your site.
-- **Tracking codes** provides details about the tracking codes in the links that brought visitors to your site.
+- **Referrers** list the domains and URLs that referred visitors to your site.
+- **Tracking codes** provide details about the tracking codes in the links that brought visitors to your site.
 
 ### Visitor profiles reports
 
-- **Devices** lists the physical devices that were used to access your site.
+- **Devices** list the physical devices that were used to access your site.
 - **OS & browsers** provide insights into the operating systems and browsers that were running when accessing your site.
-- **Locations** shows information about visitors by country, region, and city.
-- **Languages** lists page views by the visitor's preferred languages.
+- **Locations** show information about visitors by country, region, and city.
+- **Languages** list page views by the visitor's preferred languages.
 
 ## Mobile reports
 
 Mobile reports are grouped in real-time usage,  app, and usage categories. You can access the OOB mobile reports under **Discover** in the left navigation pane.   
 
-Screen shot: <<waiting on all reports to be available in order to screenshot the nav>>   
+Screenshot: <<waiting on all reports to be available in order to screenshot the nav>>   
 
 ### Real-time usage
 
@@ -62,23 +63,23 @@ Screen shot: <<waiting on all reports to be available in order to screenshot the
 
 ### App reports
 
-- **Screen views** lists screen views for individual screens and the total number of screen views over a selected time frame. You can view screen views by screen name or by screen title.
+- **Screen views** list screen views for individual screens and the total number of screen views over a selected time frame. You can view screen views by screen name or by screen title.
 
-- **Sessions** shows information about the number of sessions and the session duration.
+- **Sessions** show information about the number of sessions and the session duration.
 
 - **Return frequency** groups session counts by the number of days since the last session.
 
-- **Users** shows new and returning users in your mobile app.
+- **Users** show new and returning users in your mobile app.
 
-- **Events** lists all the events collected from your app, plus the total count for each event.
+- **Events** list all the events collected from your app, plus the total count for each event.
 
 ### User reports
 
-- **App versions** lists the versions of your mobile app in use by your user base.
+- **App versions** list the versions of your mobile app in use by your user base.
 
-- **Devices & OS versions** provides insights into which devices and operating systems are running your mobile app.
+- **Devices & OS versions** provide insights into which devices and operating systems are running your mobile app.
 
-- **Locations**  shows information about app users by country, region, and city.
+- **Locations**  show information about app users by country, region, and city.
 
 
 ## Filter by time or value
