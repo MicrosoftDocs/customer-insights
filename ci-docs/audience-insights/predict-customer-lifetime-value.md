@@ -33,11 +33,11 @@ The following data is required, and where marked optional, recommended for incre
 - Customer Identifier: Unique identifier to match transactions to an individual customer
 
 - Transaction History: Historical transactions log with below semantic data schema
-    - Transaction ID: Unique identifier of each transaction
-    - Transaction date: Date, preferably a time stamp of each transaction
-    - Transaction amount: Monetary value (for example, revenue or profit margin) of each transaction
-    - Label assigned to returns (optional): Boolean value signifying whether the transaction is a return 
-    - Product ID (optional): Product ID of product involved in the transaction
+    - **Transaction ID**: Unique identifier of each transaction
+    - **Transaction date**: Date, preferably a time stamp of each transaction
+    - **Transaction amount**: Monetary value (for example, revenue or profit margin) of each transaction
+    - **Label assigned to returns** (optional): Boolean value signifying whether the transaction is a return 
+    - **Product ID** (optional): Product ID of product involved in the transaction
 
 - Additional data (optional), for example
     - Web activities: website visit history, email history
@@ -48,10 +48,20 @@ The following data is required, and where marked optional, recommended for incre
     - Customer identifiers to map activities to your customers
     - Activity information containing the name and date of the activity
     - The semantic data schema for activities includes: 
-        - Primary key: A unique identifier for an activity
-        - Timestamp: The date and time of the event identified by the primary key
-        - Event (activity name):  The name of event you want to use
-        - Details (amount or value): Details about the customer activity
+        - **Primary key**: A unique identifier for an activity
+        - **Timestamp**: The date and time of the event identified by the primary key
+        - **Event (activity name)**:  The name of event you want to use
+        - **Details (amount or value)**: Details about the customer activity
+
+- Suggested data characteristics:
+    - Sufficient historical data: At least one year of transactional data. Preferably two to three years of transactional data to predict CLV for one year.
+    - Multiple purchases per customer: Ideally, at least two to three transactions per customer ID, preferably across multiple dates.
+    - Number of customers: At least 100 unique customers, preferably more than 10,000 customers. The model will fail with fewer than 100 customers and insufficient historical data
+    - Data completeness: Less than 20% missing values in required fields in the input data   
+
+> [!NOTE]
+> - The model requires the transaction history of your customers. Only one transaction history entity can be configured currently. If there are multiple purchase/transaction entities, you can union them in Power Query before data ingestion.
+> - For additional customer activity data (optional), however, you can add as many customer activity entities as you'd like for consideration by the model.
 
 ## Create a Customer Lifetime Value prediction
 
@@ -71,7 +81,7 @@ The following data is required, and where marked optional, recommended for incre
    By default, the unit is set as months. You can change it to years to look further in the future.
 
    > [!TIP]
-   > To accurately predict CLV for the time period you set, you need a comparable period of historical data. For example, if you want to predict for the next 12 months, it is recommended that you have at least 18 – 24 months of historical data.
+   > To accurately predict CLV for the time period you set, you need a comparable period of historical data. For example, if you want to predict CLV for the next 12 months, it is recommended that you have at least 18 – 24 months of historical data.
 
 1. Specify what **Active customers** mean for your business. Set the time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers. 
    - **Let model calculate purchase interval (recommended)**: The model analyzes your data and determines a time period based on historical purchases.
@@ -176,14 +186,14 @@ There are three primary sections of data within the results page.
   Using the definition of high value customers provided while configuring the prediction, the system assess how the AI model performed in predicting the high value customers as compared to a baseline model.    
 
   Grades are determined based on the following rules:
-  - A when the model accurately predicted at least 5% more high-value customers as compared to the baseline model.
-  - B when the model accurately predicted between 0-5% more high-value customers as compared to the baseline model.
-  - C when the model accurately predicted fewer high-value customers as compared to the baseline model.
+  - **A** when the model accurately predicted at least 5% more high-value customers as compared to the baseline model.
+  - **B** when the model accurately predicted between 0-5% more high-value customers as compared to the baseline model.
+  - **C** when the model accurately predicted fewer high-value customers as compared to the baseline model.
 
   The **Model rating** pane shows further details about the AI model performance and the baseline model. The baseline model uses a non-AI based approach to calculate customer lifetime value based primarily on historical purchases made by customers.     
   The standard formula used to calculate CLV by the baseline model:    
 
-  *CLV for each customer = Average monthly purchase made by the customer in the active customer window * Number of months in the CLV prediction period * Overall retention rate of all customers*
+  _**CLV for each customer** = Average monthly purchase made by the customer in the active customer window * Number of months in the CLV prediction period * Overall retention rate of all customers*_
 
   The AI model is compared to the baseline model based on two model performance metrics.
   
