@@ -33,8 +33,7 @@ Go to the **Segments** page, to view all your saved segments and manage them.
 
 Each segment is represented by a row that includes additional information about the segment.
 
-> [!div class="mx-imgBorder"]
-> ![Options to manage an existing segment](media/segments-selected-segment.png "Options to manage an existing segment")
+:::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options drop-down list and available options.":::
 
 The following action are available when you select a segment:
 
@@ -46,8 +45,7 @@ The following action are available when you select a segment:
   Alternatively, you can use the **Schedule later** functionality in the **Activate/Deactivate** dropdown to specify a future date and time for activation and deactivation of a particular segment.
 - **Rename** the segment.
 - **Download** the list of members as a .CSV file.
-- **Add to** option sends the list of customer IDs in the segment for processing in another application.
-- **Manage exports** action opens a page in which you see all exports in context of this segment. [Learn more about exports.](export-destinations.md)
+- **Manage exports** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
 
 ## Refresh segments
@@ -69,7 +67,7 @@ You can export a segment from the segments page or the [exports page](export-des
 
 1. The page **Exports (preview) for segment** opens. You can see all configured exports grouped by by exports that contain the current segment or don't contain it.
 
-   1. To add the selected segment to an export, select **Add segment**. That export will move to the group of exports which contain the selected segment.
+   1. To add the selected segment to an export, select the export in the list and select **Add segment**.
 
    1. To create a new export with the selected segment, select **Add export**. For more information about creating exports, see [Set up a new export](export-destinations.md#set-up-a-new-export).
 
