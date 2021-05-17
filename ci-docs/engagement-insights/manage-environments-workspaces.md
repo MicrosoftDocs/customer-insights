@@ -42,16 +42,18 @@ To create your first workspace
 
 1. Enter a name in **Workspace name**. 
 
+1. Select the type of environment you want to create, depending if you want to measure what happens on a website or in a mobile app. 
+
 1. You can add members and assign their permission level from the **Role** list. Then select **Finish** to create the workspace or **Next** to install code. 
 
 1. Install the code snippet to start receiving data and then select **Done**. 
 
 ## Manage a workspace
 
-You can maintain multiple workspaces concurrently in an environment. Your  [role](user-roles.md)  determines how you can work in them. 
+You can maintain multiple workspaces concurrently in an environment. Your [role](user-roles.md) determines how you can work in them. 
 
- - As a Workspace admin, you can rename existing workspaces or delete them. 
- - You must be an Environment admin or a Workspace admin to manage the workspace.
+ - As a workspace admin, you can rename existing workspaces or delete them. 
+ - You must be an environment admin or a workspace admin to manage the workspace.
 
 ### Edit a workspace name
 
@@ -99,8 +101,6 @@ At this time, you must first select a workspace that belongs to the environment.
 1. Go to **Admin** > **Environment** and select **Settings**.
 
 1. Update the **Environment name** and select **Save** to apply your changes.
-
-
 
 ### Manage environment members
 
