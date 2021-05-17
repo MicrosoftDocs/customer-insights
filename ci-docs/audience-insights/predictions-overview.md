@@ -6,7 +6,7 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: diegogranados
+author: diegogranados117
 ms.author: digranad
 manager: shellyha
 ---
@@ -14,6 +14,16 @@ manager: shellyha
 # Manage predictions
 
 This article discusses some tasks that most prediction scenarios share.
+
+## Troubleshoot a failed prediction
+
+1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
+
+1. Select the vertical ellipses next to the prediction you want to view error logs for.
+
+1. Select **Logs**.
+
+1. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading additional data into Customer Insights.
 
 ## Input data usability report
 
@@ -45,15 +55,6 @@ The following columns in the report contain helpful information to improve the d
 - Entity name: Name of the entity that needs to be modified to improve the model performance.
 - Details: Details about the error, warning, or recommendation.
 
-## Troubleshoot a failed prediction
-
-1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
-
-1. Select the vertical ellipses next to the prediction you want to view error logs for.
-
-1. Select **Logs**.
-
-1. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading additional data into Customer Insights.
 
 ## Refresh a prediction
 

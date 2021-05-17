@@ -107,6 +107,8 @@
 
     - name: Predictions
       items:
+        - name: Manage predictions
+          href: audience-insights/predictions-overview.md
         - name: Complete data using value predictions
           href: audience-insights/predictions.md
         - name: Predict subscription churn
