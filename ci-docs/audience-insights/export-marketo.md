@@ -40,6 +40,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter your **[Marketo client ID, Client secret, and REST Endpoint Hostname](https://developers.marketo.com/rest-api/authentication/)**.
+2. Note: the REST Endpoint Hostname needs to be entered without the https:// infront of the hostname, and look like this XYZ-XYZ-XYZ.mktorest.com 
 
 1. Select **I agree** to confirm the **Data privacy and compliance** and select **Connect** to initialize the connection to Marketo.
 
@@ -58,6 +59,7 @@ You can configure this export if you have access to a connection of this type. F
 1. In the **Connection for export** field, choose a connection from the Marketo section. If you don't see this section name, there are no connections of this type available to you.
 
 1. Enter your **[Marketo list ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
+2. Note: the Marketo list ID, that you need to provide, consists only of numerics. For example if your list ID says ST12345A7 in Marketo, then you need to strip away ST at the beginning and A7 at the end and only enter 1234. 
 
 1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. 
 
