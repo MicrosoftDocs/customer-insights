@@ -23,7 +23,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 - For your Dynamics 365 data to map to the audience insights customer profiles they need to be [ingested from the Dynamics 365 app using the Common Data Service connector](connect-power-query.md).
 - All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in audience insights to see the data.
 - [Configured search and filter capabilities](search-filter-index.md) in audience insights are required for lookup of data to work.
-- Each add-in control relies on specific data in audiences insights:
+- Each add-in control relies on specific data in audience insights:
   - Measure control: Requires [configured measures](measures.md).
   - Intelligence control: Requires data generated using [predictions](predictions.md) or [custom models](custom-models.md).
   - Demographic control: Demographic fields(such as age or gender) are available in the unified customer profile.
