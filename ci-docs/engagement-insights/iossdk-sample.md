@@ -18,9 +18,6 @@ ms.manager: shellyha
 
 This sample iOS project helps you understand how the SDK works in an app. You don’t have to write code. Just add your ingestion key and you can see events in your workspace right away.
 
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
 ## Prerequisites
 
 - [Xcode version 9+](https://developer.apple.com/xcode/downloads/)
