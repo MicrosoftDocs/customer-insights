@@ -54,7 +54,7 @@ It can take some time for the solution to be installed to your environment.
 
 1. Select the Customer Insights environment you want to fetch data from.
 
-1. Define which the field mapping to records in the Dynamics 365 app. Depending on your data in Customer Insights you can choose to map one of the following options:
+1. Define the field mapping to records in the Dynamics 365 app. Depending on your data in Customer Insights you can choose to map the following options:
    - To map with a contact, select the field in the Customer entity that matches the ID of your contact entity.
    - To map with an account, select the field in the Customer entity that matches the ID of your account entity.
 
