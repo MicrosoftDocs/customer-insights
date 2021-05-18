@@ -5,7 +5,7 @@ ms.date: 05/18/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
+ms.topic: get-started
 author: zacookmsft
 ms.author: zacook
 manager: shellyha

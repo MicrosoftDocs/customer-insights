@@ -144,7 +144,6 @@ Data reflecting key customer interactions (like web, customer service, and event
 
 1. Select **Next**.
 
-
 ### Review and run the model configuration
 
 1. In the **Review your model details** step, validate the configuration of the prediction. You can go back to any part of the prediction configuration by selecting **Edit** under the shown value. You can also select a configuration step from the progress indicator.
@@ -169,7 +168,6 @@ Data reflecting key customer interactions (like web, customer service, and event
     - **Succeeded**: Prediction has succeeded. Select **View** under the vertical ellipses to review the prediction results.
 - **Edited**: The date the configuration for the prediction was changed.
 - **Last refreshed**: The date the prediction refreshed results in the output entity.
-
 
 ### Review prediction results
 
@@ -211,28 +209,8 @@ There are three primary sections of data within the results page.
 
 - **Most influential factors**: Various factors are considered when creating your CLV prediction based on the input data provided to the AI model. Each of the factors has their importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. These factors also provide more insight about the most influential factors that contributed towards predicting CLV across all your customers.
 
-## Refresh a prediction
+## Manage predictions
 
-Predictions automatically refresh on the same [schedule your data refreshes](system.md#schedule-tab) as configured in settings. You can refresh them manually too.
-
-1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
-2. Select the vertical ellipses next to the prediction you want to refresh.
-3. Select **Refresh**.
-
-## Delete a prediction
-
-Deleting a prediction also removes its output entity.
-
-1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
-2. Select the vertical ellipses next to the prediction you want to delete.
-3. Select **Delete**.
-
-## Troubleshoot a failed prediction
-
-1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
-2. Select the vertical ellipses next to the prediction you want to view error logs for.
-3. Select **Logs**.
-4. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading more data into audience insights.
-
+It's possible to optimize, troubleshoot, refresh, or delete predictions. Review an input data usability report to find out how to make a prediction faster and more reliable. For more information, see [Manage predictions](manage-predictions.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
