@@ -49,7 +49,7 @@ This sample Android project helps you understand how the SDK works in an app. Yo
 </application>
 ```
 
-1. Select **Run** to start the sample project.
+5. Select **Run** to start the sample project.
 1. View the events in your workspace.
 
 
