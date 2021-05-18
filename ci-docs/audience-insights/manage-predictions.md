@@ -55,7 +55,6 @@ The following columns in the report contain helpful information to improve the d
 - Entity name: Name of the entity that needs to be modified to improve the model performance.
 - Details: Details about the error, warning, or recommendation.
 
-
 ## Refresh a prediction
 
 Predictions will automatically refresh on the same [schedule your data refreshes](system.md#schedule-tab) as configured in settings. You can refresh them manually too.
