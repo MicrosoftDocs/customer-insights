@@ -1,7 +1,7 @@
 ---
-title: "Install and configure the Customer Card Add-in"
-description: "Install and configure the Customer Card add-in for Dynamics 365 Customer Insights."
-ms.date: 01/20/2021
+title: "Customer Card Add-in for Dynamics 365 apps"
+description: "Show data from audience insights in Dynamics 365 apps with this add-in."
+ms.date: 05/18/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -15,19 +15,20 @@ manager: shellyha
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Get a 360-degree view of your customers directly in Dynamics 365 apps. View demographics, insights, and activity timelines with the Customer Card Add-in.
+Get a 360-degree view of your customers directly in Dynamics 365 apps. With the Customer Card Add-in installed in a supported Dynamics 365 app you can choose to display demographics, insights, and activity timelines. The add-in will retrieve data from Customer Insights without affecting the data in the connected Dynamics 365 app. 
 
 ## Prerequisites
 
-- Dynamics 365 app (such as Sales Hub or Customer Service Hub), version 9.0 and later with Unified Interface enabled.
-- Customer profiles [ingested from the Dynamics 365 app using Common Data Service](connect-power-query.md).
-- Users of the Customer Card Add-in need to be [added as users](permissions.md) in audience insights.
-- [Configured search and filter capabilities](search-filter-index.md).
-- Demographic control: Demographic fields(such as age or gender) are available in the unified customer profile.
-- Enrichment control: Requires active [enrichments](enrichment-hub.md) applied to customer profiles.
-- Intelligence control: Requires data generated using Azure Machine Learning ([Predictions](predictions.md) or [Custom Models](custom-models.md))
-- Measure control: Requires [configured measures](measures.md).
-- Timeline control: Requires [configured activities](activities.md).
+- The add-in only works with Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
+- For your Dynamics 365 data to map to the audience insights customer profiles they need to be [ingested from the Dynamics 365 app using the Common Data Service connector](connect-power-query.md).
+- All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in audience insights to see the data.
+- [Configured search and filter capabilities](search-filter-index.md) in audience insights are required for lookup of data to work.
+- Each add-in control relies on specific data in audiences insights:
+  - Measure control: Requires [configured measures](measures.md).
+  - Intelligence control: Requires data generated using [predictions](predictions.md) or [custom models](custom-models.md).
+  - Demographic control: Demographic fields(such as age or gender) are available in the unified customer profile.
+  - Enrichment control: Requires active [enrichments](enrichment-hub.md) applied to customer profiles.
+  - Timeline control: Requires [configured activities](activities.md).
 
 ## Install the Customer Card Add-in
 
@@ -51,9 +52,9 @@ It can take some time for the solution to be installed to your environment.
    > [!NOTE]
    > Check that the browser pop-up blocker does not block the authentication window when you select the **Sign in** button.
 
-1. Select the environment you want to fetch data from.
+1. Select the Customer Insights environment you want to fetch data from.
 
-1. Define which the field mapping to records in the Dynamics 365 app.
+1. Define the field mapping to records in the Dynamics 365 app. Depending on your data in Customer Insights you can choose to map the following options:
    - To map with a contact, select the field in the Customer entity that matches the ID of your contact entity.
    - To map with an account, select the field in the Customer entity that matches the ID of your account entity.
 
