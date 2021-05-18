@@ -10,6 +10,11 @@ ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ---
+
+
+<!-- See questions in lines 47 and 167. -->
+
+
 # Get started with the Android SDK
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
@@ -30,13 +35,17 @@ The following configuration options can be passed to the SDK:
 - An ingestion key (see below for instructions on how to obtain)
 
 ## Step 1. Integrate the SDK into your application
-The process begins by selecting a workspace, selecting the Android mobile platform, and downloading the Android SDK.
+Begin the process by selecting a workspace, selecting the Android mobile platform, and downloading the Android SDK.
 
 - Use the workspace switcher in the left navigation pane to select your workspace.
 
- - If you don't have an existing workspace, select  **New Workspace** and follow the steps to create a [new workspace](create-workspace.md).
+- If you don't have an existing workspace, select  **New Workspace** and follow the steps to create a [new workspace](create-workspace.md).
 
 ## Step 2. Configure the SDK
+
+
+<!-- Curious why it's called a "libs" folder. Sounds like a political slur. -->
+
 
 1. After you create a workspace, go to **Admin** > **Workspace** and then select  **Installation guide**. 
 
@@ -57,10 +66,10 @@ The process begins by selecting a workspace, selecting the Android mobile platfo
     ```
 
 1. Set up the engagement insights SDK configuration through your `AndroidManifest.xml` file located under the `manifests` folder. 
-1. Copy the XML snippet from the **Installation guide**.  `Your-Ingestion-Key` should be automatically populated.
+1. Copy the XML snippet from the **Installation guide**. `Your-Ingestion-Key` should be automatically populated.
 
    > [!NOTE]
-   > You don't need to replace the  `${applicationId}` section. It is automatically populated.
+   > You don't need to replace the `${applicationId}` section. It is automatically populated.
    
 
    ```xml
@@ -79,7 +88,7 @@ The process begins by selecting a workspace, selecting the Android mobile platfo
    </application>
    ```
 
-4. Enable or disable autocapture of `View` events by setting the above `autoCapture` field to `true` or `false`.
+1. Enable or disable autocapture of `View` events by setting the above `autoCapture` field to `true` or `false`.
 
 1. (Optional) Other configurations include setting the endpoint collector URL. They can be added under the ingestion key metadata in `AndroidManifest.xml`:
     ```xml
@@ -152,6 +161,11 @@ user.setName("testuser");
 user.setEmail("abc@xyz.com");
 analytics.setUser(user);
 ```
+
+
+
+<!-- See line 171. Change to kotlin or is the different spelling correct? -->
+
 
 Kotlin:
 ```kotiln
