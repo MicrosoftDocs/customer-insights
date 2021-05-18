@@ -107,32 +107,43 @@
 
     - name: Predictions
       items:
+        - name: Predict data with the help of AI
+          items: 
+            - name: Prediction models overview
+              href: audience-insights/predictions-overview.md
+            - name: Predict customer lifetime value (CLV)
+              href: audience-insights/predict-customer-lifetime-value.md
+            - name: Predict product recommendations
+              href: audience-insights/predict-product-recommendation.md
+            - name: Predict subscription churn
+              href: audience-insights/predict-subscription-churn.md
+            - name: Predict transactional churn
+              href: audience-insights/predict-transactional-churn.md
+            - name: Use custom models from Azure Machine Learning
+              href: audience-insights/custom-models.md
+            - name: Complete partially missing data
+              href: audience-insights/predictions.md
+
+        - name: Sample guides
+          items:    
+            - name: Sample guide for subscription churn prediction
+              href: audience-insights/sample-guide-predict-subscription-churn.md
+            - name: Sample guide for transactional churn prediction
+              href: audience-insights/sample-guide-predict-transactional-churn.md
+            - name: Sample guide for product recommendation prediction
+              href: audience-insights/sample-guide-predict-product-recommendation.md
+            - name: Experiments with Azure Machine learning
+              href: audience-insights/azure-machine-learning-experiments.md
+            - name: Experiments with Azure Machine Learning studio
+              href: audience-insights/machine-learning-studio-experiments.md
+        
         - name: Manage predictions
-          href: audience-insights/predictions-overview.md
-        - name: Complete data using value predictions
-          href: audience-insights/predictions.md
-        - name: Predict subscription churn
-          href: audience-insights/predict-subscription-churn.md
-        - name: Sample guide for subscription churn prediction
-          href: audience-insights/sample-guide-predict-subscription-churn.md
-        - name: Predict transactional churn
-          href: audience-insights/predict-transactional-churn.md
-        - name: Sample guide for transactional churn prediction
-          href: audience-insights/sample-guide-predict-transactional-churn.md
-        - name: Predict customer lifetime value (CLV)
-          href: audience-insights/predict-customer-lifetime-value.md
-        - name: Predict product recommendations
-          href: audience-insights/predict-product-recommendation.md
-        - name: Sample guide for product recommendation prediction
-          href: audience-insights/sample-guide-predict-product-recommendation.md
+          href: audience-insights/manage-predictions.md
+
         - name: Create segments based on predictions
           href: audience-insights/prediction-based-segment.md
-        - name: Implement custom machine learning models
-          href: audience-insights/custom-models.md
-        - name: Experiments with Azure Machine learning
-          href: audience-insights/azure-machine-learning-experiments.md
-        - name: Experiments with Azure Machine Learning studio
-          href: audience-insights/machine-learning-studio-experiments.md
+
+
 
     - name: Export options
       items:
