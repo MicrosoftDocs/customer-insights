@@ -139,7 +139,7 @@ Transactional churn prediction helps predict if a customer will no longer purcha
    - **Status:** Status of the prediction run.
         - **Queued:** Prediction is waiting for other processes to run.
         - **Refreshing:** Prediction is currently running to produce results that will flow into the output entity.
-        - **Failed:** Prediction run has failed. [Review the logs](#troubleshoot-a-failed-prediction) for more details.
+        - **Failed:** Prediction run has failed. [Review the logs](manage-predictions.md#troubleshoot-a-failed-prediction) for more details.
         - **Succeeded:** Prediction has succeeded. Select **View** under the vertical ellipses to review the prediction
    - **Edited:** The date the configuration for the prediction was changed.
    - **Last refreshed:** The date the prediction refreshed results in the output entity.
