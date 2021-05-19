@@ -106,7 +106,7 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
 
 Quick segments let you build simple segments with a single operator quickly for faster insights.
 
-1. On the **Segments** page, select **New** > **Quickly create from**.
+1. On the **Segments** page, select **New** > **Create from**.
 
    - Select the **Profiles** option to build a segment that is based on the *unified customer* entity.
    - Select the **Measures** option to build a segment around  measures you have previously created.
