@@ -43,34 +43,30 @@ Event and Workspace admins can create custom metrics. These *base* metrics are b
 1. Go to **Data** and then select **Metrics**.
 1. If the property is being sent, select **New metric**.
 
- :::image type="content" source="media/new-metric.png" alt-text="Add a metric to an event":::
+   :::image type="content" source="media/new-metric.png" alt-text="Add a metric to an event":::
 
-3. In the pane, select a property to base the metric on.
-1. To create a formula, select the **plus sign (+)** next to the property you want to add. Engagement insights currently only supports creating a formula based on one property. Then select one of the following aggregate functions. 
+1. In the pane, select a property to base the metric on.
+1. To create a formula, select the **plus sign (+)** next to the property you want to add. You can only create a formula based on one property. Then select one of the following aggregate functions. 
 
-- Sum: the arithmetic total of all values 
-- Average: the mean average of all values
-- Count: the total number of values
-- Distinct count: the total number of distinct values
+   - Sum: the arithmetic total of all values 
+   - Average: the mean average of all values
+   - Count: the total number of values
+   - Distinct count: the total number of distinct values
 
-5. For format, select the **Integer** or **Double** datatype. Integer is a whole number. For Double, you can pick between one and three decimal places.
+1. For format, select the **Integer** or **Double** datatype. Integer is a whole number. For Double, you can pick between one and three decimal places.
 1. Enter a display name for the metric and optionally a description.
 1. Select **Save**. 
 
-Once the formula is created, a preview of the chart shows the metric activity for the last hour. It can take up to a minute for the metric to show up in the list of metrics. Then it can be used in any report.
+Once the metric is created, you see a preview of the metric activity for the last hour. It can take up to a minute for the metric to show up in the list of metrics. Then it can be used in any report.
 
 ## Delete a custom metric
 
 1. Go to **Data** and then select **Metrics**.
 1. Select **More [...]** for a metric and then select **Delete**.
 
- :::image type="content" source="media/delete-metric.png" alt-text="Delete a metric to an event":::
+   :::image type="content" source="media/delete-metric.png" alt-text="Delete a metric to an event":::
 
-3. Enter **CONFIRM DELETE** to confirm the deletion. 
+1. Enter **CONFIRM DELETE** to confirm the deletion. 
 1. Enter **Delete**.
-
- 
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
