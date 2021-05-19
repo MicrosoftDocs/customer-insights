@@ -1,5 +1,5 @@
 ---
-title:  Android SDK Sample
+title:  Android SDK sample
 description: Sample project to learn about the Android SDK
 author: britl
 ms.reviewer: m-hartmann
@@ -30,24 +30,24 @@ This sample Android project helps you understand how the SDK works in an app. Yo
 1. Open the unzipped folder in Android Studio.
 1. In the `AndroidManifest.xml` file, replace the string `"Your-Ingestion-Key"` with your workspace ingestion key from engagement insights under **Admin** > **Workspace** > **Installation guide**. 
 
- > [!NOTE]
-   > You don't need to replace the  `${applicationId}` section. It is automatically populated.
+   > [!NOTE]
+   > You don't need to replace the `${applicationId}` section. It is automatically populated.
 
-```xml
-<application>
-...
-    <provider
-        android:authorities="${applicationId}.microsoft.dynamics.engagementinsights.eiandroidsdk.AnalyticsContentProvider"
-        android:name="microsoft.dynamics.engagementinsights.eiandroidsdk.AnalyticsContentProvider" />
-    <meta-data
-        android:name="microsoft.dynamics.engagementinsights.ingestionKey"
-        android:value="Your-Ingestion-Key" />
-    <meta-data
-        android:name="microsoft.dynamics.engagementinsights.autoCapture"
-        android:value="true" />
-...
-</application>
-```
+   ```xml
+   <application>
+   ...
+       <provider
+           android:authorities="${applicationId}.microsoft.dynamics.engagementinsights.eiandroidsdk.AnalyticsContentProvider"
+           android:name="microsoft.dynamics.engagementinsights.eiandroidsdk.AnalyticsContentProvider" />
+       <meta-data
+           android:name="microsoft.dynamics.engagementinsights.ingestionKey"
+           android:value="Your-Ingestion-Key" />
+       <meta-data
+           android:name="microsoft.dynamics.engagementinsights.autoCapture"
+           android:value="true" />
+   ...
+   </application>
+   ```
 
 5. Select **Run** to start the sample project.
 1. View the events in your workspace.

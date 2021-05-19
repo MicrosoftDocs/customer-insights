@@ -4,12 +4,13 @@ description: Learn how to personalize and run the Android SDK
 author: britl
 ms.reviewer: m-hartmann
 ms.author: v-salash
-ms.date: 05/07/2021
+ms.date: 05/19/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
 ms.manager: shellyha
 ---
+
 # Get started with the Android SDK
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
@@ -30,11 +31,11 @@ The following configuration options can be passed to the SDK:
 - An ingestion key (see below for instructions on how to obtain)
 
 ## Step 1. Integrate the SDK into your application
-The process begins by selecting a workspace, selecting the Android mobile platform, and downloading the Android SDK.
+Begin the process by selecting a workspace, selecting the Android mobile platform, and downloading the Android SDK.
 
 - Use the workspace switcher in the left navigation pane to select your workspace.
 
- - If you don't have an existing workspace, select  **New Workspace** and follow the steps to create a [new workspace](create-workspace.md).
+- If you don't have an existing workspace, select  **New Workspace** and follow the steps to create a [new workspace](create-workspace.md).
 
 ## Step 2. Configure the SDK
 
@@ -57,10 +58,10 @@ The process begins by selecting a workspace, selecting the Android mobile platfo
     ```
 
 1. Set up the engagement insights SDK configuration through your `AndroidManifest.xml` file located under the `manifests` folder. 
-1. Copy the XML snippet from the **Installation guide**.  `Your-Ingestion-Key` should be automatically populated.
+1. Copy the XML snippet from the **Installation guide**. `Your-Ingestion-Key` should be automatically populated.
 
    > [!NOTE]
-   > You don't need to replace the  `${applicationId}` section. It is automatically populated.
+   > You don't need to replace the `${applicationId}` section. It is automatically populated.
    
 
    ```xml
@@ -79,7 +80,7 @@ The process begins by selecting a workspace, selecting the Android mobile platfo
    </application>
    ```
 
-4. Enable or disable autocapture of `View` events by setting the above `autoCapture` field to `true` or `false`.
+1. Enable or disable autocapture of `View` events by setting the above `autoCapture` field to `true` or `false`.
 
 1. (Optional) Other configurations include setting the endpoint collector URL. They can be added under the ingestion key metadata in `AndroidManifest.xml`:
     ```xml
@@ -154,7 +155,7 @@ analytics.setUser(user);
 ```
 
 Kotlin:
-```kotiln
+```kotlin
 var user = User()
 user.name = "testuser"
 user.email = "abc@xyz.com"
@@ -168,7 +169,5 @@ The `User` data class contains the following string properties:
 - **authType**: The authentication type used to the get authenticated user ID.
 - **name**: The user's name.
 - **email**: The user's email address.
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
