@@ -11,10 +11,6 @@ ms.topic: how-to
 ms.manager: shellyha
 ---
 
-
-<!-- See question in line 72.  -->
-
-
 # Manage environments and workspaces
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
@@ -67,11 +63,6 @@ You can maintain multiple workspaces concurrently in an environment. Your [role]
 1. Select **Save** to apply your changes.
 
 ### Delete a workspace
-
-
-<!-- In line 82, does the user need to enter CONFIRM DELETE in all caps? -->
-
-
 
 Deleting a workspace will permanently remove all of its content, data, settings, and permissions. It can't be undone.
 

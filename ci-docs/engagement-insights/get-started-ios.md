@@ -11,11 +11,6 @@ ms.topic: conceptual
 ms.manager: shellyha
 ---
 
-
-<!-- Just checking ... There's a level## step 1 and step 2. Should the other level## headings also be steps? -->
-
-
-
 # Get started with the iOS SDK
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
@@ -37,7 +32,7 @@ The following configuration options can be passed to the SDK through the provide
 - iOS version 8.2+
 - An ingestion key (see the instructions below to obtain)
 
-## Step 1. Integrate the SDK into your application
+## Integrate the SDK into your application
 
 Begin the process by selecting a workspace to work in, selecting the iOS mobile platform, and downloading the SDK.
 
@@ -45,12 +40,11 @@ Begin the process by selecting a workspace to work in, selecting the iOS mobile 
 
 - If you don't have an existing workspace, select  **New Workspace** and follow the steps to create a [new workspace](create-workspace.md).
 
-## Step 2. Configure the SDK
+## Configure the SDK
 
 Once you download the SDK, you can work with it in Xcode to enable and define events.
 
 1. After you create a workspace, go to **Admin** > **Workspace** and then select **Installation guide**.
-
 
 1. Download the [engagement insights iOS SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip), and place the `EIObjC.xcframework` file in the `Frameworks` folder.
 

@@ -4,16 +4,12 @@ description: Learn how to personalize and run the Android SDK
 author: britl
 ms.reviewer: m-hartmann
 ms.author: v-salash
-ms.date: 05/07/2021
+ms.date: 05/19/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
 ms.manager: shellyha
 ---
-
-
-<!-- See questions in lines 47 and 167. -->
-
 
 # Get started with the Android SDK
 
@@ -42,10 +38,6 @@ Begin the process by selecting a workspace, selecting the Android mobile platfor
 - If you don't have an existing workspace, select  **New Workspace** and follow the steps to create a [new workspace](create-workspace.md).
 
 ## Step 2. Configure the SDK
-
-
-<!-- Curious why it's called a "libs" folder. Sounds like a political slur. -->
-
 
 1. After you create a workspace, go to **Admin** > **Workspace** and then select  **Installation guide**. 
 
@@ -162,13 +154,8 @@ user.setEmail("abc@xyz.com");
 analytics.setUser(user);
 ```
 
-
-
-<!-- See line 171. Change to kotlin or is the different spelling correct? -->
-
-
 Kotlin:
-```kotiln
+```kotlin
 var user = User()
 user.name = "testuser"
 user.email = "abc@xyz.com"
@@ -182,7 +169,5 @@ The `User` data class contains the following string properties:
 - **authType**: The authentication type used to the get authenticated user ID.
 - **name**: The user's name.
 - **email**: The user's email address.
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
