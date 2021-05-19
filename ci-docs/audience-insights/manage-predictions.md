@@ -32,7 +32,7 @@ The input data usability report provides a consolidated view of the errors and w
 The report is available after a model has completed its training process. It's created for each model separately, regardless if it completed successfully or not.
 
 > [!NOTE]
-> Currently, this feature only works for the CLV model.
+> Currently, this feature only works for the Transaction Churn model.
 
 ### View the input data usability report
 
