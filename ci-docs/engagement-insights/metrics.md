@@ -15,29 +15,29 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Metrics help understand behavior of your visitors. They aggregate event properties and measure how often an action was taken or a behavior occurred.  
+Metrics help understand behavior of your visitors. They aggregate event properties and measure statistics and performance of your web properties.  
 
-Suppose you’re running a marketing promotion on your website. You can use metrics to track the number of unique visitors or users who came to your website during the promotion. Analyzing metrics helps you better understand your website audience. You can separate visitors into new and returning categories to identify the differences in interest and intent between the groups.
+Suppose you’re running a marketing promotion on your website. You can use metrics to track the number of unique visitors or users who came to your website during the promotion. Analyzing metrics helps you better understand your website audience. Combining metrics with [dimensions](dimensions.md) on a [custom report](custom-reports.md) lets you measure behavior to understand your users. For example,you can separate visitors into new and returning categories to identify the differences in interest and intent between the groups.
 
 ## View metrics
 
-Engagement insights includes commonly used metrics for events, such as: 
+Engagement insights includes commonly used aggregations of event properties as system metrics: 
 
 - Visitors
 - Visits
 - Page views
 - Clicks
 
-By using the [web SDK](advanced-SDK-implementation.md), your events will automatically be sent with these metrics. These default metrics are based on existing event properties in base events. Combining metrics with [dimensions](dimensions.md) on a [custom report](custom-reports.md) lets you measure behavior to understand your users. 
+These system metrics are based on existing event properties in base events.
 
 1. Go to **Data** in the left navigation pane. 
-1. Select **Metrics** to see a list of all metrics in the workspace. 
+1. Select the **Metrics** tab to see a list of all metrics in the workspace. 
    > [!NOTE]
-   > System-generated metrics are read-only. You can’t edit them. You can only create and edit custom metrics.
+   > System-generated metrics are read-only. You can’t change or delete them. You can only create and edit custom metrics.
 
-## Create a custom metric
+## Create a metric
 
-Environment and workspace admins can create custom metrics. Event properties must be sent to the workspace before you create a metric. You can create metrics based on event properties that are sent by base events or use the web SDK to [send custom event properties](advanced-SDK-implementation.md).
+Environment and workspace admins can create metrics. Event properties must be sent to the workspace before you create a metric. You can create metrics based on event properties that are sent by base events or use the web SDK to [send custom event properties](advanced-SDK-implementation.md).
 
 1. Go to **Data** > **Metrics**.
 1. Select **New metric**.
@@ -61,21 +61,21 @@ Environment and workspace admins can create custom metrics. Event properties mus
 
 It can take up to a minute for the metric before you can use it to [create custom reports](../audience-insights/segments.md).
 
-## Edit a custom metric
+## Edit a metric
 
 1. Go to **Data** > **Metrics**.
 1. Select the metric in the list.
 1. Change the definition of the metric
 1. Select **Save**.
 
-## Change the name of a custom metric
+## Change the name of a metric
 
 1. Go to **Data** > **Metrics**.
 1. Select **More [...]** for a metric and choose **Edit name**.
 1. Change the name. 
 1. Select **Rename**.
 
-## Delete a custom metric
+## Delete a metric
 
 1. Go to **Data** > **Metrics**.
 1. Select **More [...]** for a metric and choose **Delete**.
