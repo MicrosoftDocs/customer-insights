@@ -99,6 +99,18 @@ Match rules represent sets of conditions. To match entities by conditions based 
 > [!NOTE]
 > The order of rules matters. The matching algorithm tries to match on the basis of your first rule and continues to the second rule only if no matches were identified with the first rule.
 
+### Change the entity order in match rules
+
+You can reorder entities for match rules to change the order in which they are processed. Rules that are conflicting because of a changed order will be removed. You have to recreate removed rules with an updated configuration.
+
+1. Go to **Data** > **Unify** > **Match** and select **Edit**.
+
+1. In the **Edit rule** pane, select the **Move up/down** control or drag and drop entities to change the order.
+
+   :::image type="content" source="media/reorder-match-rules.png" alt-text="Options to change in which order entities are processed in the match phase.":::
+
+1. Select **Done** so save the rule.
+
 ## Define deduplication on a match entity
 
 In addition to [cross-entity match rules](#define-rules-for-match-pairs), you can also specify deduplications rules. *Deduplication* is another process when matching records. It identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs.
