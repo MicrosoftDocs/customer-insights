@@ -93,7 +93,7 @@ Some entities contain more details than others. If an entity includes the latest
   
 1. Select **Show more** and choose **Edit**.
 
-1. In the **Combine fields** pane, select **Move up/down** to set the order.
+1. In the **Combine fields** pane, select **Move up/down** to set the order or drag and drop them in the desired position.
 
 1. Confirm the change.
 

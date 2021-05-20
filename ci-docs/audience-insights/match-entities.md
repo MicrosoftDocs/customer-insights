@@ -101,7 +101,7 @@ Match rules represent sets of conditions. To match entities by conditions based 
 
 ### Change the entity order in match rules
 
-You can reorder entities for match rules to change the order in which they are processed.
+You can reorder entities for match rules to change the order in which they are processed. Rules that are conflicting because of a changed order will be removed. You have to recreate removed rules with an updated configuration.
 
 1. Go to **Data** > **Unify** > **Match** and select **Edit**.
 
