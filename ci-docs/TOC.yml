@@ -269,6 +269,8 @@
           href: engagement-insights/dimensions.md
         - name: View and create metrics
           href: engagement-insights/metrics.md
+        - name: Create and manage segments
+          href: engagement-insights/segments.md
 
 
     - name: Journey analytics
