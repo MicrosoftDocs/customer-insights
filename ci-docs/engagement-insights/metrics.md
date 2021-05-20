@@ -59,7 +59,7 @@ Environment and workspace admins can create metrics. Event properties must be se
 1. Select **Save**. 
 1. Enter a name for the metric and select **Save**.
 
-It can take up to a minute for the metric before you can use it to [create custom reports](../audience-insights/segments.md).
+It can take up to a minute for the metric before you can use it to [create custom reports](custom-reports.md).
 
 ## Edit a metric
 
