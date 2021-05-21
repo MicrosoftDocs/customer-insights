@@ -151,7 +151,7 @@ With the unified customer profiles in place, we can now run the subscription chu
 
    - **Number of products**: Set this value to **5**. This setting defines how many products you want to recommend to your customers.
 
-   - **Suggest products customers have recently purchased?**: Select **Yes** to indicate that you want to include products in the recommendation that your customers have purchased before.
+   - **Repeat purchases expected**: Select **Yes** to indicate that you want to include products in the recommendation that your customers have purchased before.
 
    - **Look back window:** Select at least **365 days**. This setting defines how far the model will look back at the customer's activity to use it as input to their recommendations.
    
