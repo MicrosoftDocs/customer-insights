@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Omnisend"
 description: "Learn how to configure the connection and export to Omnisend."
-ms.date: 03/03/2021
+ms.date: 05/21/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Omnisend(preview)
+# Export segments to Omnisend (preview)
 
 Export segments of unified customer profiles to Omnisend and use them for marketing activities.
 
@@ -23,10 +23,9 @@ Export segments of unified customer profiles to Omnisend and use them for market
 
 ## Known limitations
 
-- You can export up to 1 million profiles per export to Omnisend.
+- You can export up to 1 million profiles per export to Omnisend and it can take up to 4 hours to complete.
 - Exporting to Omnisend is limited to segments.
-- Exporting up to 1 million profiles to Omnisend can take up to 4 hours to complete. 
-- The number of profiles that you can export to Omnisend is dependent and limited on your contract with Omnisend.
+- The number of profiles that you can export to Omnisend depends on your contract with Omnisend.
 
 ## Set up connection to Omnisend
 
@@ -36,7 +35,7 @@ Export segments of unified customer profiles to Omnisend and use them for market
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter your [Omnisend API key](https://support.omnisend.com/en/articles/1061890-generating-api-key).
 
@@ -58,8 +57,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Connection for export** field, choose a connection from the Omnisend section. If you don't see this section name, there are no connections of this type available to you.
 
-
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Omnisend. Optionally, you can export First name, Last name, Adress, Country/Region, State, City, and Post Code to create more personalized emails. Select **Add attribute** to map these fields.
+1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Omnisend. Optionally, you can export First name, Last name, Address, Country/Region, State, City, and Post Code to create more personalized emails. Select **Add attribute** to map these fields.
 
 1. Select **Save**.
 
@@ -73,4 +71,4 @@ You can also [export data on demand](export-destinations.md#run-exports-on-deman
 
 When you enable Dynamics 365 Customer Insights to transmit data to Ommisend, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Omnisend meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 
-Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
+Your Dynamics 365 Customer Insights administrator can remove this export destination at any time to discontinue use of this functionality.
