@@ -37,21 +37,20 @@ This sample Android project helps you understand how the SDK works in an app. Yo
    <application>
    ...
        <provider
-           android:authorities="${applicationId}.microsoft.dynamics.engagementinsights.eiandroidsdk.AnalyticsContentProvider"
+           android:authorities="${applicationId}.com.microsoft.engagementinsights.eiandroidsdk.AnalyticsContentProvider"
            android:name="microsoft.dynamics.engagementinsights.eiandroidsdk.AnalyticsContentProvider" />
        <meta-data
-           android:name="microsoft.dynamics.engagementinsights.ingestionKey"
+           android:name="com.microsoft.engagementinsights.ingestionKey"
            android:value="Your-Ingestion-Key" />
        <meta-data
-           android:name="microsoft.dynamics.engagementinsights.autoCapture"
+           android:name="com.microsoft.engagementinsights.autoCapture"
            android:value="true" />
    ...
    </application>
    ```
 
-5. Select **Run** to start the sample project.
+1. Select **Run** to start the sample project.
 1. View the events in your workspace.
-
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
