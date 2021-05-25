@@ -11,72 +11,92 @@ ms.author: yalundia
 manager: shellyha
 ---
 
-# **Customer lifetime value (CLV) prediction (preview) sample guide**
+# Customer lifetime value (CLV) prediction sample guide
 
-This guide will walk you through an end to end example of Customer lifetime value (CLV) prediction in Customer Insights using the data provided below. All data used in this guide is not real customer data and is part of the Contoso dataset found in the _Demo_ environment within your Customer Insights Subscription.
+This guide will walk you through an end to end example of Customer lifetime value (CLV) prediction in Customer Insights using sample data.
 
-**Scenario**
+## Scenario
 
 Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website. Their goal is to understand the value (revenue) that each of their customers could bring in the next 12 months. Knowing the expected value of their customers in the next 12 months will help them prioritize and focus their marketing efforts on high value customers.
 
-**Prerequisites**
+## Prerequisites
 
-- At least [Contributor permissions](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/permissions) in Customer Insights.
-- We recommend that you implement the following steps [in a new environment](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/manage-environments).
+- At least [Contributor permissions](permissions.md) in audience insights.
+- We recommend that you implement the following steps [in a new environment](manage-environments.md).
 
-**Task 1 - Ingest data**
+## Task 1 - Ingest data
 
-Review the articles [about data ingestion](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/data-sources) and [importing data sources using Power Query connectors](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/connect-power-query) specifically. The following information assumes you familiarized with ingesting data in general.
+Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md). The following information assumes you familiarized with ingesting data in general.
 
-**Ingest customer data from eCommerce platform**
+### Ingest customer data from eCommerce platform
 
-1. Create a data source named  **eCommerce** , choose the import option, and select the  **Text/CSV**  connector.
-2. Enter the URL for eCommerce contacts [https://aka.ms/ciadclasscontacts](https://aka.ms/ciadclasscontacts).
-3. While editing the data, select  **Transform**  and then  **Use First Row as Headers**.
-4. Update the datatype for the columns listed below:
-  - **DateOfBirth** : Date
-  - **CreatedOn** : Date/Time/Zone
+1. Create a data source named  **eCommerce** , choose the import option, and select the **Text/CSV** connector.
 
-[!div class=&quot;mx-imgBorder&quot;]  ![](RackMultipart20210502-4-11vawqk_html_fa7480cb4ad34fc1.png)
+1. Enter the URL for eCommerce contacts [https://aka.ms/ciadclasscontacts](https://aka.ms/ciadclasscontacts).
 
-1. In the &#39;Name&#39; field on the right-hand pane, rename your data source from  **Query**  to  **eCommerceContacts**
-2. Save the data source.
+1. While editing the data, select  **Transform**  and then  **Use First Row as Headers**.
 
-**Ingest online purchase data**
+1. Update the datatype for the columns listed below:
+   - **DateOfBirth** : Date
+   - **CreatedOn** : Date/Time/Zone
 
-1. Add another data set to the same  **eCommerce**  data source. Choose the  **Text/CSV**  connector again.
-2. Enter the URL for  **Online Purchases**  data [https://aka.ms/ciadclassonline](https://aka.ms/ciadclassonline).
-3. While editing the data, select  **Transform**  and then  **Use First Row as Headers**.
-4. Update the datatype for the columns listed below:
-  - **PurchasedOn** : Date/Time
-  - **TotalPrice** : Currency
-5. In the &#39;Name&#39; field on the right-hand pane, rename your data source from  **Query**  to  **eCommercePurchases**.
-6. Save the data source.
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Transform date of birth to date.":::
 
-**Ingest customer data from loyalty schema**
+1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
 
-1. Create a data source named  **LoyaltyScheme** , choose the import option, and select the  **Text/CSV**  connector.
-2. Enter the URL for eCommerce contacts [https://aka.ms/ciadclasscustomerloyalty](https://aka.ms/ciadclasscustomerloyalty).
-3. While editing the data, select  **Transform**  and then  **Use First Row as Headers**.
-4. Update the datatype for the columns listed below:
-  - **DateOfBirth** : Date
-  - **RewardsPoints** : Whole Number
-  - **CreatedOn** : Date/Time
-5. In the &#39;Name&#39; field on the right-hand pane, rename your data source from  **Query**  to  **loyCustomers**.
-6. Save the data source.
+1. **Save** the data source.
 
-**Ingest customer data from Website Reviews**
+### Ingest online purchase data
 
-1. Create a data source named  **Website** , choose the import option, and select the  **Text/CSV**  connector.
-2. Enter the URL for eCommerce contacts https://aka.ms/CI-ILT/[WebReviews](https://aka.ms/CI-ILT/WebReviews).
-3. While editing the data, select  **Transform**  and then  **Use First Row as Headers**.
-4. Update the datatype for the columns listed below:
-  - **ReviewRating** : Decimal number
-  - **ReviewDate** : Date
-5. In the &#39;Name&#39; field on the right-hand pane, rename your data source from  **Query**  to  **Reviews**.
-6. Save the data source.
+1. Add another data set to the same **eCommerce** data source. Choose the **Text/CSV** connector again.
 
-**Task 2 - Data unification**
+1. Enter the URL for **Online Purchases** data https://aka.ms/ciadclassonline.
+
+1. While editing the data, select **Transform** and then **Use First Row as Headers**.
+
+1. Update the datatype for the columns listed below:
+   - **PurchasedOn**: Date/Time
+   - **TotalPrice**: Currency
+
+1. In the **Name** field on the side pane, rename your data source from **Query** to **eCommercePurchases**.
+
+1. **Save** the data source.
+
+### Ingest customer data from loyalty schema
+
+1. Create a data source named **LoyaltyScheme**, choose the import option, and select the **Text/CSV** connector.
+
+1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.
+
+1. While editing the data, select **Transform** and then **Use First Row as Headers**.
+
+1. Update the datatype for the columns listed below:
+   - **DateOfBirth**: Date
+   - **RewardsPoints**: Whole Number
+   - **CreatedOn**: Date/Time
+
+1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
+
+1. **Save** the data source.
+
+### Ingest customer data from website reviews
+
+1. Create a data source named **Website**, choose the import option, and select the **Text/CSV** connector.
+
+1. Enter the URL for eCommerce contacts https://aka.ms/CI-ILT/WebReviews.
+
+1. While editing the data, select **Transform** and then **Use First Row as Headers**.
+
+1. Update the datatype for the columns listed below:
+
+   - **ReviewRating**: Decimal number
+   - **ReviewDate**: Date
+
+1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **Reviews**.
+
+1. **Save** the data source.
+
+## Task 2 - Data unification
 
 After ingesting the data we now begin the  **Map, Match, Merge**  process to create a unified customer profile. For more information, see [Data unification](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/data-unification).
 

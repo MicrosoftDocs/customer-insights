@@ -60,7 +60,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. In the **Name** field on the side pane, rename your data source from **Query** to **eCommercePurchases**.
 
-1. Save the data source.
+1. **Save** the data source.
 
 
 ### Ingest customer data from loyalty schema
@@ -78,7 +78,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
 
-1. Save the data source.
+1. **Save** the data source.
 
 ## Task 2 - Data unification
 
