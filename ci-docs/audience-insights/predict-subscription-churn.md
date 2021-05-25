@@ -142,30 +142,9 @@ Subscription churn prediction helps predicting whether a customer is at risk for
        > [!div class="mx-imgBorder"]
        > ![List showing influential factors and their importance in predicting the churn result](media/subscription-churn-influentialfactors.PNG "List showing influential factors and their importance in predicting the churn result")
 
-## Fix a failed prediction
+## Manage predictions
 
-1. Go to the **My predictions** tab on **Intelligence** > **Predictions**.
-1. Select the prediction you would like to view error logs for and select **Logs**.
-   > [!div class="mx-imgBorder"]
-   > ![View of results menu bar including close, edit model, and logs buttons](media/subscription-churn-logsbutton.PNG "View of results menu bar including close, edit model, and logs buttons")
-1. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading additional data.
-
-## Refresh a prediction
-
-Predictions will automatically refresh on the same [schedule your data refreshes](system.md#schedule-tab) as configured in settings.
-
-1. Go to the **My predictions** tab on **Intelligence** > **Predictions**.
-1. Select the vertical ellipses next to the prediction you want to refresh.
-1. Select **Refresh**.
-
-## Delete a prediction
-
-1. Go to the **My predictions** tab on **Intelligence** > **Predictions**.
-1. Select the vertical ellipses next to the prediction you want to delete.
-1. Select **Delete**.
-
-> [!NOTE]
-> Deleting a prediction will remove its output entity.
+It's possible to optimize, troubleshoot, refresh, or delete predictions. Review an input data usability report to find out how to make a prediction faster and more reliable. For more information, see [Manage predictions](manage-predictions.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
