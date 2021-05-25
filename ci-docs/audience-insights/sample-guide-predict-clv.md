@@ -1,3 +1,16 @@
+---
+title: Customer lifetime value prediction sample guide
+description: Use this sample guide to try out the customer lifetime value prediction model.
+ms.date: 05/25/2021
+ms.reviewer: mhart
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: tutorial
+author: yashlundia
+ms.author: yalundia        
+manager: shellyha
+---
+
 # **Customer lifetime value (CLV) prediction (preview) sample guide**
 
 This guide will walk you through an end to end example of Customer lifetime value (CLV) prediction in Customer Insights using the data provided below. All data used in this guide is not real customer data and is part of the Contoso dataset found in the _Demo_ environment within your Customer Insights Subscription.
