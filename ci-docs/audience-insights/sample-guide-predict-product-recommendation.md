@@ -82,7 +82,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 ## Task 2 - Data unification
 
-After ingesting the data we now begin the **Map, Match, Merge** process to create a unified customer profile. For more information, see [Data unification](data-unification.md).
+After ingesting the data, we now begin the data unification process to create a unified customer profile. For more information, see [Data unification](data-unification.md).
 
 ### Map
 

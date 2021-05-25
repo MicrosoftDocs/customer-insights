@@ -98,52 +98,66 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 ## Task 2 - Data unification
 
-After ingesting the data we now begin the  **Map, Match, Merge**  process to create a unified customer profile. For more information, see [Data unification](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/data-unification).
+After ingesting the data, we now begin the data unification process to create a unified customer profile. For more information, see [Data unification](data-unification.md).
 
-**Map**
+### Map
 
-1. After ingesting the data, map contacts from eCommerce and Loyalty data to common data types. Go to  **Data**  \&gt;  **Unify**  \&gt;  **Map**.
-2. Select the entities that represent the customer profile –  **eCommerceContacts**  and  **loyCustomers**.
+1. After ingesting the data, map contacts from eCommerce and Loyalty data to common data types. Go to **Data** > **Unify** > **Map**.
 
-![](RackMultipart20210502-4-11vawqk_html_a4bead166755f31a.png)
+1. Select the entities that represent the customer profile – **eCommerceContacts** and **loyCustomers**. Then, select **Apply**.
 
-1. Select  **ContactId**  as the primary key for  **eCommerceContacts**  and  **LoyaltyID**  as the primary key for  **loyCustomers**.
+   ![unify ecommerce and loyalty datasources.](media/unify-ecommerce-loyalty.png)
 
-![](RackMultipart20210502-4-11vawqk_html_9e861c286b64289b.png)
+1. Select **ContactId** as the primary key for **eCommerceContacts** and **LoyaltyID** as the primary key for **loyCustomers**.
 
-**Match**
+   ![Unify LoyaltyId as primary key.](media/unify-loyaltyid.png)
 
-1. Go to the  **Match**  tab and select  **Set Order**.
-2. In the  **Primary**  drop-down list, choose  **eCommerceContacts : eCommerce**  as the primary source and include all records.
-3. In the  **Entity 2**  drop-down list, choose  **loyCustomers : LoyaltyScheme**  and include all records.
+1. Select **Save**.
 
-![](RackMultipart20210502-4-11vawqk_html_7833e5505d2302a6.png)
+### Match
 
-1. Select  **Create a new rule**
-2. Add your first condition using FullName.
-  - For eCommerceContacts select  **FullName**  in the drop-down.
-  - For loyCustomers select  **FullName**  in the drop-down.
-  - Select the  **Normalize**  drop down and choose **Type (Phone, Name, Address, ...)**.
-  - Set  **Precision Level** :  **Basic**  and  **Value** :  **High**.
-3. Enter the name  **FullName, Email**  for the new rule.
-  - Add a second condition for email address by selecting  **Add Condition**
-  - For entity eCommerceContacts, choose  **EMail**  in drop-down.
-  - For entity loyCustomers, choose  **EMail**  in the drop-down.
-  - Leave Normalize blank.
-  - Set  **Precision Level** :  **Basic**  and  **Value** :  **High**.
+1. Go to the **Match** tab and select **Set Order**.
 
-![](RackMultipart20210502-4-11vawqk_html_772c0722c6a3fed7.png)
+1. In the **Primary** drop-down list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.
 
-1. Select  **Save**  and  **Run**.
+1. In the **Entity 2** drop-down list, choose **loyCustomers : LoyaltyScheme** and include all records.
 
-**Merge**
+   ![Unify match eCommerce and Loyalty.](media/unify-match-order.png)
 
-1. Go to the  **Merge**  tab.
-2. On the  **ContactId**  for  **loyCustomers**  entity, change the display name to  **ContactIdLOYALTY**  to differentiate it from the other IDs ingested.
+1. Select **Add rule**
 
-![](RackMultipart20210502-4-11vawqk_html_94381d100ad9cd6f.png)
+1. Add your first condition using FullName.
 
-1. Select  **Save**  and  **Run**  to start the Merge Process.
+   - For eCommerceContacts select **FullName** in the drop-down.
+   - For loyCustomers select **FullName** in the drop-down.
+   - Select the **Normalize** drop-down and choose **Type (Phone, Name, Address, ...)**.
+   - Set **Precision Level**: **Basic** and **Value**: **High**.
+
+1. Enter the name **FullName, Email** for the new rule.
+
+   - Add a second condition for email address by selecting **Add Condition**
+   - For entity eCommerceContacts, choose **EMail** in drop-down.
+   - For entity loyCustomers, choose **EMail** in the drop-down.
+   - Leave Normalize blank.
+   - Set **Precision Level**: **Basic** and **Value**: **High**.
+
+   ![Unify match rule for name and email.](media/unify-match-rule.png)
+
+1. Select **Done**.
+
+1. Select **Save** and **Run**.
+
+### Merge
+
+1. Go to the **Merge** tab.
+
+1. On the **ContactId** for **loyCustomers** entity, change the display name to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.
+
+   ![rename contactid from loyalty id.](media/unify-merge-contactid.png)
+
+1. Select **Save** and **Run merge and downstream processes**.
+
+---
 
 **Task 3 - Configure customer lifetime value prediction**
 
