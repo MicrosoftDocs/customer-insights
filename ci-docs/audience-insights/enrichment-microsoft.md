@@ -64,7 +64,7 @@ A guided experience helps you through the configuration of the enrichments.
 
 ### Define your brands or interests
 
-Select one of the following options:
+Choose from these options:
 
 - **Industry**: The system identifies the top brands or interests relevant to your industry and enriches your customer data with them.
 - **Choose your own**: Select up to five items from the list of brands or interests that are most relevant to your organization.
