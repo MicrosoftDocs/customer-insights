@@ -157,39 +157,46 @@ After ingesting the data, we now begin the data unification process to create a 
 
 1. Select **Save** and **Run merge and downstream processes**.
 
----
+## Task 3 - Configure customer lifetime value prediction
 
-**Task 3 - Configure customer lifetime value prediction**
+With the unified customer profiles in place, we can now run the customer lifetime value prediction. For detailed steps, see [Customer Lifetime Value prediction (preview)](predict-customer-lifetime-value.md).
 
-With the unified customer profiles in place, we can now run the customer lifetime value prediction. For detailed steps, see the [Customer Lifetime Value prediction (preview)](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/predict-customer-lifetime-value) article.
+1. Go to  **Intelligence**  > **Predictions**  and select the **Customer lifetime value model**.
 
-1. Go to  **Intelligence**  \&gt;  **Discover**  and select to use the  **Customer lifetime value model**.
-2. Go through the information in the side panel and select  **Get started**.
-3. Name the model  **OOB eCommerce CLV Prediction** and the output entity  **OOBeCommerceCLVPrediction**.
-4. Next, define model preferences for the CLV model:
-  - **Prediction time period** :  **12 months or 1 year**. This setting defines how far into the future do we want to predict customer lifetime value.
-  - **Active customers:** Specify what Active customers mean for your business. Set the historical time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers. From the dropdown, you can choose to either let the model calculate this time period based on your historical transaction data or you could choose to provide a specific time period. In this scenario, we will **let the model calculate purchase interval**.
-  - **High value customers:** Define High value customers as a percentile of top-paying customers – the model uses this input to provide results that fit your business definition of high value customers. You could choose to rely on the model to define high value customers for your business (the model uses a heuristic rule to derive the percentile of top paying customers for your business) or you could define high value customers in terms of a percentile of top future paying customers. For this scenario, we will define high value customers as **top 30% of active paying customers**.
+1. Go through the information in the side pane and select **Get started**.
 
-![](RackMultipart20210502-4-11vawqk_html_662fc29816adbc3.png)
+1. Name the model **OOB eCommerce CLV Prediction** and the output entity  **OOBeCommerceCLVPrediction**.
 
-1. Next, in the **Required Data** step, select **Add data**. This is where you map the required customer transaction history data for the model.
-2. Add the  **eCommercePurchases : eCommerce**  entity and map the fields from eCommerce to the corresponding fields required by the model.
-3. Join the  **eCommercePurchases : eCommerce**  entity with  **eCommerceContacts : eCommerce**.
+1. Define model preferences for the CLV model:
+   - **Prediction time period**: **12 months or 1 year**. This setting defines how far into the future to predict customer lifetime value.
+   - **Active customers**: Specify what active customers mean for your business. Set the historical time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers. From the drop-down menu, choose between letting the model calculate the time period based on your historical transaction data or you can choose to provide a specific time frame. In this sample guide, we **let the model calculate purchase interval**, which is the default option.
+  - **High value customers**: Define high value customers as a percentile of top-paying customers. The model uses this input to provide results that fit your business definition of high value customers. You can choose to let the model define high value customers. It uses a heuristic rule that derives the percentile. Alternatively, you can define high value customers as a percentile of top future paying customers. In this sample guide, we manually define high value customers as **top 30% of active paying customers** and select **Next**.
 
-![](RackMultipart20210502-4-11vawqk_html_d06876bcd8c971c.png)
+<screenshot>
 
-1. Next, the **Additional data (optional)** step allows you to add any other customer activity data that would help provide a holistic view of your customers&#39; interactions with your business. Adding key customer interactions like web logs, customer service logs, rewards program history, email click history, etc can improve the accuracy of predictions. Select **Add data** to map additional customer activity data.
-2. Add the **webReviews : Website** Entity and map the fields from the entity to the corresponding fields required by the Model. Click on Next when done.
-3. Select **Activity type = choose existing** and **Activity label = Review**. Join the **webReviews : Website** entity with **eCommerceContacts : eCommerce.**
+1. In the **Required Data** step, select **Add data**. This is where you map the required customer transaction history data for the model.
 
-![](RackMultipart20210502-4-11vawqk_html_c3beb90dbb854562.png)
+1. Add the  **eCommercePurchases : eCommerce**  entity and map the fields from eCommerce to the corresponding fields required by the model ans select **Next**.
 
-1. Click on  **Next**  to set the model schedule.
+<screenshot>
 
-The model needs to train regularly to learn new patterns when there is new data ingested. For this example, select  **Monthly**.
+1. Set up the relationship between the **eCommercePurchases : eCommerce** entity and  **eCommerceContacts : eCommerce**.
+
+1. The **Additional data (optional)** step allows you to add any other customer activity data that would help provide a holistic view of your customers’ interactions with your business which could in turn contribute to CLV. Adding key customer interactions like web logs, customer service logs, rewards program history, email click history, etc can improve the accuracy of predictions. Select **Add data** to map additional customer activity data.
+2. Add the **Reviews : Website** entity and map the fields from the entity to the corresponding fields required by the model. Select **Next** when done.
+3. Select **Activity type = choose existing** and **Activity label = Review**. Configure the relationship between the **webReviews : Website** entity and the **eCommerceContacts : eCommerce.** entity. Provide a **WebsiteReviews** as the name for the output entity in the **Relationship** field. 
+
+<screenshot>
+
+1. Select **Save**.
+
+1. Select  **Next**  to set the model schedule.
+
+   The model needs to train regularly to learn new patterns when there is new data ingested. For this example, choose **Monthly**.
 
 1. After reviewing all the details, select  **Save and Run**.
+
+---
 
 **Task 4 - Review model results and explanations**
 
