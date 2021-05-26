@@ -172,7 +172,7 @@ With the unified customer profiles in place, we can now run the customer lifetim
    - **Active customers**: Specify what active customers mean for your business. Set the historical time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers. Choose between letting the model calculate the time period based on historical transaction data or provide a specific time frame. In this sample guide, we **let the model calculate purchase interval**, which is the default option.
   - **High value customers**: Define high value customers as a percentile of top-paying customers. The model uses this input to provide results that fit your business definition of high value customers. You can choose to let the model define high value customers. It uses a heuristic rule that derives the percentile. You can also define high value customers as a percentile of top future paying customers. In this sample guide, we manually define high value customers as **top 30% of active paying customers** and select **Next**.
 
-   :::image type="content" source="media/clv-model-peferences.png" alt-text="Preferences step in the guided experience for the CLV model.":::
+    :::image type="content" source="media/clv-model-preferences.png" alt-text="Preferences step in the guided experience for the CLV model.":::
 
 1. In the **Required Data** step, select **Add data** to provide the transaction history data.
 
