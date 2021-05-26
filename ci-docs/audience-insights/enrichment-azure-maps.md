@@ -31,7 +31,7 @@ To configure Azure Maps enrichments, the following prerequisites must be met:
 
 1. Select **Enrich my data** on the Azure Maps tile.
 
-   :::image type="content" source="media/azure-maps-tile.png" alt-text="Azure Maps tile")
+   :::image type="content" source="media/azure-maps-tile.png" alt-text="Azure Maps tile":::
 
 1. Select a [connection](connections.md) from the drop-down. Contact  an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection**. Choose **Azure Maps** from the drop-down. 
 
@@ -45,7 +45,7 @@ To configure Azure Maps enrichments, the following prerequisites must be met:
 
 1. Define which fields from your unified profiles should be used to look for matching location data from Azure Maps. The **Street 1** and **Zip/Postal Code** fields are required for the selected primary and/or secondary address. For a higher match accuracy, more fields can be added.
 
-   :::image type="content" source="media/enrichment-azure-maps-configuration.png" alt-text="Azure Maps enrichment configuration page"):::
+   :::image type="content" source="media/enrichment-azure-maps-configuration.png" alt-text="Azure Maps enrichment configuration page":::
 
 1. Select **Next** to complete the field mapping.
 
@@ -67,7 +67,7 @@ You need to be an administrator to configure connections. Select **Add connectio
 
 1. After completing the verification, select **Save**.
 
-:::image type="content" source="media/enrichment-azure-maps-connection.png" alt-text="Azure Maps connection configuration page")
+:::image type="content" source="media/enrichment-azure-maps-connection.png" alt-text="Azure Maps connection configuration page":::
 
 ## Enrichment results
 
