@@ -172,27 +172,30 @@ With the unified customer profiles in place, we can now run the customer lifetim
    - **Active customers**: Specify what active customers mean for your business. Set the historical time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers. From the drop-down menu, choose between letting the model calculate the time period based on your historical transaction data or you can choose to provide a specific time frame. In this sample guide, we **let the model calculate purchase interval**, which is the default option.
   - **High value customers**: Define high value customers as a percentile of top-paying customers. The model uses this input to provide results that fit your business definition of high value customers. You can choose to let the model define high value customers. It uses a heuristic rule that derives the percentile. Alternatively, you can define high value customers as a percentile of top future paying customers. In this sample guide, we manually define high value customers as **top 30% of active paying customers** and select **Next**.
 
-   <screenshot>
+   :::image type="content" source="media/clv-model-peferences.png" alt-text="Preferences step in the guided experience for the CLV model.":::
 
-1. In the **Required Data** step, select **Add data**. This is where you map the required customer transaction history data for the model.
+1. In the **Required Data** step, select **Add data** to provide the transaction history data.
 
-1. Add the **eCommercePurchases : eCommerce** entity and map the fields from eCommerce to the corresponding fields required by the model ans select **Next**.
+1. Add the **eCommercePurchases : eCommerce** entity and map the attributes that are required by the model:
+   - Transaction ID: eCommerce.eCommercePurchases.PurchaseId
+   - Transaction date: eCommerce.eCommercePurchases.PurchasedOn
+   - Transaction amount: eCommerce.eCommercePurchases.TotalPrice
+   - Product ID: eCommerce.eCommercePurchases.ProductId
 
-   <screenshot>
+1. Select **Next**.
 
 1. Set up the relationship between the **eCommercePurchases : eCommerce** entity and  **eCommerceContacts : eCommerce**.
 
 1. The **Additional data (optional)** step allows you to add any other customer activity data that would help provide a holistic view of your customers’ interactions with your business which could in turn contribute to CLV. Adding key customer interactions like web logs, customer service logs, rewards program history, email click history, etc can improve the accuracy of predictions. Select **Add data** to map additional customer activity data.
 
-1. Add the **Reviews : Website** entity and map the fields from the entity to the corresponding fields required by the model. Select **Next** when done.
+1. Add the **Reviews : Website** entity and map the fields from the entity to the corresponding fields required by the model:
+   - Activity type: Choose existing
+   - Activity label: Review
+   - Corresponding label: Website.Reviews.UserId
+   - Customer entity: eCommerceContacts : eCommerce
+   - Relationship: WebsiteReviews
 
-1. Select **Activity type = choose existing** and **Activity label = Review**. Configure the relationship between the **webReviews : Website** entity and the **eCommerceContacts : eCommerce.** entity. Provide a **WebsiteReviews** as the name for the output entity in the **Relationship** field. 
-
-   <screenshot>
-
-1. Select **Save**.
-
-1. Select  **Next**  to set the model schedule.
+1. Select  **Next** to set the model schedule.
 
    The model needs to train regularly to learn new patterns when there is new data ingested. For this example, choose **Monthly**.
 
