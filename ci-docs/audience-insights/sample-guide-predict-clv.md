@@ -17,7 +17,7 @@ This guide will walk you through an end to end example of Customer lifetime valu
 
 ## Scenario
 
-Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website. Their goal is to understand the value (revenue) that each of their customers could bring in the next 12 months. Knowing the expected value of their customers in the next 12 months will help them prioritize and focus their marketing efforts on high value customers.
+Contoso is a company that produces high-quality coffee and coffee machines. They sell the products through their Contoso Coffee website. The company wants to understand the value (revenue) that their customers can generate in the next 12 months. Knowing the expected value of their customers in the next 12 months will help them steer their marketing efforts on high value customers.
 
 ## Prerequisites
 
@@ -169,8 +169,8 @@ With the unified customer profiles in place, we can now run the customer lifetim
 
 1. Define model preferences for the CLV model:
    - **Prediction time period**: **12 months or 1 year**. This setting defines how far into the future to predict customer lifetime value.
-   - **Active customers**: Specify what active customers mean for your business. Set the historical time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers. From the drop-down menu, choose between letting the model calculate the time period based on your historical transaction data or you can choose to provide a specific time frame. In this sample guide, we **let the model calculate purchase interval**, which is the default option.
-  - **High value customers**: Define high value customers as a percentile of top-paying customers. The model uses this input to provide results that fit your business definition of high value customers. You can choose to let the model define high value customers. It uses a heuristic rule that derives the percentile. Alternatively, you can define high value customers as a percentile of top future paying customers. In this sample guide, we manually define high value customers as **top 30% of active paying customers** and select **Next**.
+   - **Active customers**: Specify what active customers mean for your business. Set the historical time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers. Choose between letting the model calculate the time period based on historical transaction data or provide a specific time frame. In this sample guide, we **let the model calculate purchase interval**, which is the default option.
+  - **High value customers**: Define high value customers as a percentile of top-paying customers. The model uses this input to provide results that fit your business definition of high value customers. You can choose to let the model define high value customers. It uses a heuristic rule that derives the percentile. You can also define high value customers as a percentile of top future paying customers. In this sample guide, we manually define high value customers as **top 30% of active paying customers** and select **Next**.
 
    :::image type="content" source="media/clv-model-peferences.png" alt-text="Preferences step in the guided experience for the CLV model.":::
 
@@ -186,18 +186,18 @@ With the unified customer profiles in place, we can now run the customer lifetim
 
 1. Set up the relationship between the **eCommercePurchases : eCommerce** entity and  **eCommerceContacts : eCommerce**.
 
-1. The **Additional data (optional)** step allows you to add any other customer activity data that would help provide a holistic view of your customers’ interactions with your business which could in turn contribute to CLV. Adding key customer interactions like web logs, customer service logs, rewards program history, email click history, etc can improve the accuracy of predictions. Select **Add data** to map additional customer activity data.
+1. The **Additional data (optional)** step allows you to add more customer activity data. This data can help to get more insights for customer interactions with your business, which can contribute to CLV. Adding key customer interactions like web logs, customer service logs, or rewards program history can improve the accuracy of predictions. Select **Add data** to include more customer activity data.
 
 1. Add the **Reviews : Website** entity and map the fields from the entity to the corresponding fields required by the model:
    - Activity type: Choose existing
    - Activity label: Review
    - Corresponding label: Website.Reviews.UserId
-   - Customer entity: eCommerceContacts : eCommerce
+   - Customer entity: eCommerceContacts:eCommerce
    - Relationship: WebsiteReviews
 
-1. Select  **Next** to set the model schedule.
+1. Select **Next** to set the model schedule.
 
-   The model needs to train regularly to learn new patterns when there is new data ingested. For this example, choose **Monthly**.
+   The model needs to train regularly to learn new patterns when there's new data ingested. For this example, choose **Monthly**.
 
 1. After reviewing all the details, select  **Save and Run**.
 
@@ -222,6 +222,6 @@ Running the model creates a new entity, which is listed on **Data** > **Entities
 
 1. Select **Review** and **Save** the segment.
 
-You now have a segment that is dynamically updated and identifies customers that are predicted to generate more than $1500 of revenue in the next 12 months.
+You now have a segment that identifies customers who are predicted to generate more than $1500 of revenue in the next 12 months. This segment gets updated dynamically if more data is ingested.
 
-For more information, see [Create and manage segments](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/segments).
+For more information, see [Create and manage segments](segments.md).
