@@ -172,21 +172,23 @@ With the unified customer profiles in place, we can now run the customer lifetim
    - **Active customers**: Specify what active customers mean for your business. Set the historical time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers. From the drop-down menu, choose between letting the model calculate the time period based on your historical transaction data or you can choose to provide a specific time frame. In this sample guide, we **let the model calculate purchase interval**, which is the default option.
   - **High value customers**: Define high value customers as a percentile of top-paying customers. The model uses this input to provide results that fit your business definition of high value customers. You can choose to let the model define high value customers. It uses a heuristic rule that derives the percentile. Alternatively, you can define high value customers as a percentile of top future paying customers. In this sample guide, we manually define high value customers as **top 30% of active paying customers** and select **Next**.
 
-<screenshot>
+   <screenshot>
 
 1. In the **Required Data** step, select **Add data**. This is where you map the required customer transaction history data for the model.
 
-1. Add the  **eCommercePurchases : eCommerce**  entity and map the fields from eCommerce to the corresponding fields required by the model ans select **Next**.
+1. Add the **eCommercePurchases : eCommerce** entity and map the fields from eCommerce to the corresponding fields required by the model ans select **Next**.
 
-<screenshot>
+   <screenshot>
 
 1. Set up the relationship between the **eCommercePurchases : eCommerce** entity and  **eCommerceContacts : eCommerce**.
 
 1. The **Additional data (optional)** step allows you to add any other customer activity data that would help provide a holistic view of your customers’ interactions with your business which could in turn contribute to CLV. Adding key customer interactions like web logs, customer service logs, rewards program history, email click history, etc can improve the accuracy of predictions. Select **Add data** to map additional customer activity data.
-2. Add the **Reviews : Website** entity and map the fields from the entity to the corresponding fields required by the model. Select **Next** when done.
-3. Select **Activity type = choose existing** and **Activity label = Review**. Configure the relationship between the **webReviews : Website** entity and the **eCommerceContacts : eCommerce.** entity. Provide a **WebsiteReviews** as the name for the output entity in the **Relationship** field. 
 
-<screenshot>
+1. Add the **Reviews : Website** entity and map the fields from the entity to the corresponding fields required by the model. Select **Next** when done.
+
+1. Select **Activity type = choose existing** and **Activity label = Review**. Configure the relationship between the **webReviews : Website** entity and the **eCommerceContacts : eCommerce.** entity. Provide a **WebsiteReviews** as the name for the output entity in the **Relationship** field. 
+
+   <screenshot>
 
 1. Select **Save**.
 
@@ -196,31 +198,27 @@ With the unified customer profiles in place, we can now run the customer lifetim
 
 1. After reviewing all the details, select  **Save and Run**.
 
----
+## Task 4 - Review model results and explanations
 
-**Task 4 - Review model results and explanations**
+Let the model complete the training and scoring of the data. Next, you can review the CLV model results and explanations. For more information, see [Review a prediction status and results](predict-customer-lifetime-value.md#review-prediction-status-and-results).
 
-Let the model complete the training and scoring of the data. You can now review the subscription churn model explanations. For more information, see [Review a prediction status and results](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/predict-customer-lifetime-value#review-prediction-status-and-results).
+## Task 5 - Create a segment of high value customers
 
-**Task 5 - Create a segment of high value customers**
+Running the model creates a new entity, which is listed on **Data** > **Entities**. You can create a new customer segment based on the entity created by the model.
 
-Running the production model creates a new entity that you can see in  **Data**  \&gt;  **Entities**.
+1. Go to **Segments**. 
 
-You can create a new segment based on the entity created by the model.
+1. Select  **New** and choose **Create from** > **Intelligence**.
 
-1. Go to  **Segments**. Select  **New**  and choose  **Create from**  \&gt;  **Intelligence**.
+   ![Creating a segment with the model output.](media/segment-intelligence.png)
 
-![](RackMultipart20210502-4-11vawqk_html_7747f6d8d47fc353.png)
-
-1. Select the  **OOBeCommerceCLVPrediction**  entity and define the segment:
+1. Select the  **OOBeCommerceCLVPrediction** entity and define the segment:
   - Field: CLVScore
   - Operator: greater than
   - Value: 1500
 
-![](RackMultipart20210502-4-11vawqk_html_33bc538ab9fab1bc.png)
+1. Select **Review** and **Save** the segment.
 
-1. **Review** and **Save** the segment.
-
-You now have a segment that is dynamically updated which identifies high value customers (customers that are predicted to generated more than $1500 of revenue in the next 12 months).
+You now have a segment that is dynamically updated and identifies customers that are predicted to generate more than $1500 of revenue in the next 12 months.
 
 For more information, see [Create and manage segments](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/segments).
