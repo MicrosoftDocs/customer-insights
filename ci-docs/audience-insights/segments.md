@@ -27,22 +27,13 @@ There are multiple ways to create a new segment:
 - AI-powered suggestions based on measures or attributes: [Suggested segments to improve measures](suggested-segments.md)
 - Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md)
 
-## Get insights on existing segments
-
-Discover additional information around your existing segments with [Segment insights](segment-insights.md). Find out what differentiates two segments or what they have in common.
-
-## Find similar customers
-
-Find customers that are similar to the members of a selected segment with the help of artificial intelligence. For more information, see [similar customers ](find-similar-customer-segments.md).
-
 ## Manage existing segments
 
 Go to the **Segments** page, to view all your saved segments and manage them.
 
 Each segment is represented by a row that includes additional information about the segment.
 
-> [!div class="mx-imgBorder"]
-> ![Options to manage an existing segment](media/segments-selected-segment.png "Options to manage an existing segment")
+:::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options drop-down list and available options.":::
 
 The following action are available when you select a segment:
 
@@ -54,7 +45,7 @@ The following action are available when you select a segment:
   Alternatively, you can use the **Schedule later** functionality in the **Activate/Deactivate** dropdown to specify a future date and time for activation and deactivation of a particular segment.
 - **Rename** the segment.
 - **Download** the list of members as a .CSV file.
-- **Add to** option sends the list of customer IDs in the segment for processing in another application.
+- **Manage exports** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
 
 ## Refresh segments
@@ -63,6 +54,24 @@ You can refresh all segments at once by selecting **Refresh all** on the **Segme
 
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+
+## Export segments
+
+You can export a segment from the segments page or the [exports page](export-destinations.md). 
+
+1. Go to the **Segments** page.
+
+1. Select **Show more [...]** for the segment you want to export.
+
+1. Select **Manage exports** from the actions drop-down list.
+
+1. The page **Exports (preview) for segment** opens. You can see all configured exports grouped by by exports that contain the current segment or don't contain it.
+
+   1. To add the selected segment to an export, select the export in the list and select **Add segment**.
+
+   1. To create a new export with the selected segment, select **Add export**. For more information about creating exports, see [Set up a new export](export-destinations.md#set-up-a-new-export).
+
+1. Select **Back** to return to the main page for segments.
 
 ## View processing history and segment members
 
