@@ -188,7 +188,14 @@ With the unified customer profiles in place, we can now run the customer lifetim
 
 1. The **Additional data (optional)** step allows you to add more customer activity data. This data can help to get more insights for customer interactions with your business, which can contribute to CLV. Adding key customer interactions like web logs, customer service logs, or rewards program history can improve the accuracy of predictions. Select **Add data** to include more customer activity data.
 
-1. Add the **Reviews : Website** entity and map the fields from the entity to the corresponding fields required by the model:
+1. Add the customer activity entity and map its fields names to the corresponding fields required by the model:
+   - Customer activity entity: Reviews:Website
+   - Primary key: Website.Reviews.ReviewId
+   - Timestamp: Website.Reviews.ReviewDate
+   - Event (activity name): Website.Reviews.ActivityTypeDisplay
+   - Details (amount or value): Website.Reviews.ReviewRating
+
+1. Select **Next** and configure the activity and the relationship between the transaction data and the customer data:  
    - Activity type: Choose existing
    - Activity label: Review
    - Corresponding label: Website.Reviews.UserId
