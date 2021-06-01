@@ -13,9 +13,7 @@ manager: shellyha
 
 # Enrichment of customer profiles with Azure Maps (preview)
 
-Azure Maps provides location-centric data and services to deliver experiences based on geospatial data with built-in location intelligence.  Azure Maps data enrichment services help create a more precise location understanding of your customers. It brings capabilities like address normalization or latitude and longitude extraction to Customer Insights.
-
-<!-- Draft said "... and more" - what more? -->
+Azure Maps provides location-centric data and services to deliver experiences based on geospatial data with built-in location intelligence. Azure Maps data enrichment services help create a more precise location understanding of your customers. It brings capabilities like address normalization or latitude and longitude extraction to Customer Insights.
 
 ## Prerequisites
 
