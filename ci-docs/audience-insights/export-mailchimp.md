@@ -6,12 +6,12 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Mailchimp (preview)
+# Export segments to Mailchimp (preview)
 
 Export segments of unified customer profiles to Mailchimp to create newsletters and email campaigns.
 

@@ -26,7 +26,7 @@ To configure interest affinities enrichment, go to the **Discover** tab and sele
 
 ## How we determine affinities
 
-We use Microsoft’s online search data to find affinities for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest determines how much affinity a demographic segment, compared to other segments, has to that brand or interest. brand or interest.
+We use Microsoft’s online search data to find affinities for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest determines how much affinity a demographic segment, compared to other segments, has to that brand or interest.
 
 ## Affinity level and score
 

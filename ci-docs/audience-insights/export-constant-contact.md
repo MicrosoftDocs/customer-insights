@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Constant Contact (preview)
+# Export segments to Constant Contact (preview)
 
 Export segments of unified customer profiles to Constant Contact and use them for marketing activities. 
 

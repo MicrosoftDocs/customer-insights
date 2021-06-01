@@ -139,7 +139,7 @@ Transactional churn prediction helps predict if a customer will no longer purcha
    - **Status:** Status of the prediction run.
         - **Queued:** Prediction is waiting for other processes to run.
         - **Refreshing:** Prediction is currently running to produce results that will flow into the output entity.
-        - **Failed:** Prediction run has failed. [Review the logs](#troubleshoot-a-failed-prediction) for more details.
+        - **Failed:** Prediction run has failed. [Review the logs](manage-predictions.md#troubleshoot-a-failed-prediction) for more details.
         - **Succeeded:** Prediction has succeeded. Select **View** under the vertical ellipses to review the prediction
    - **Edited:** The date the configuration for the prediction was changed.
    - **Last refreshed:** The date the prediction refreshed results in the output entity.
@@ -163,35 +163,9 @@ Transactional churn prediction helps predict if a customer will no longer purcha
        
     1. **Most influential factors:** There are many factors that are taken into account when creating your prediction. Each of the factors has its importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. Or you can use this information later to [create segments](segments.md) that could help influence churn risk for customers.
 
-## Troubleshoot a failed prediction
+## Manage predictions
 
-1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
-
-1. Select the vertical ellipses next to the prediction you want to view error logs for.
-
-1. Select **Logs**.
-
-1. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading additional data into Customer Insights.
-
-## Refresh a prediction
-
-Predictions will automatically refresh on the same [schedule your data refreshes](system.md#schedule-tab) as configured in settings. You can refresh them manually too.
-
-1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
-
-1. Select the vertical ellipses next to the prediction you want to refresh.
-
-1. Select **Refresh**.
-
-## Delete a prediction
-
-Deleting a prediction also removes its output entity.
-
-1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
-
-1. Select the vertical ellipses next to the prediction you want to delete.
-
-1. Select **Delete**.
+It's possible to optimize, troubleshoot, refresh, or delete predictions. Review an input data usability report to find out how to make a prediction faster and more reliable. For more information, see [Manage predictions](manage-predictions.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

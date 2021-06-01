@@ -94,49 +94,69 @@
 
     - name: Segments and measures
       items:
-        - name: Create segments and customer groups
+        - name: Segments overview
           href: audience-insights/segments.md
+        - name: Create segments and customer groups
+          href: audience-insights/segment-builder.md
+        - name: Suggested segments based on measures
+          href: audience-insights/suggested-segments.md
+        - name: Suggested segments based on activity
+          href: audience-insights/suggested-segments-activity.md
         - name: Get insights on segments
           href: audience-insights/segment-insights.md
-        - name: See suggested segments
-          href: audience-insights/suggested-segments.md
         - name: Find similar customers
           href: audience-insights/find-similar-customer-segments.md
+    
+    - name: Measures
+      items: 
         - name: Define measures and KPIs
           href: audience-insights/measures.md
 
     - name: Predictions
       items:
-        - name: Complete data using value predictions
-          href: audience-insights/predictions.md
-        - name: Predict subscription churn
-          href: audience-insights/predict-subscription-churn.md
-        - name: Sample guide for subscription churn prediction
-          href: audience-insights/sample-guide-predict-subscription-churn.md
-        - name: Predict transactional churn
-          href: audience-insights/predict-transactional-churn.md
-        - name: Sample guide for transactional churn prediction
-          href: audience-insights/sample-guide-predict-transactional-churn.md
-        - name: Predict customer lifetime value (CLV)
-          href: audience-insights/predict-customer-lifetime-value.md
-        - name: Predict product recommendations
-          href: audience-insights/predict-product-recommendation.md
-        - name: Sample guide for product recommendation prediction
-          href: audience-insights/sample-guide-predict-product-recommendation.md
+        - name: Predict data with the help of AI
+          items: 
+            - name: Prediction models overview
+              href: audience-insights/predictions-overview.md
+            - name: Predict customer lifetime value (CLV)
+              href: audience-insights/predict-customer-lifetime-value.md
+            - name: Predict product recommendations
+              href: audience-insights/predict-product-recommendation.md
+            - name: Predict subscription churn
+              href: audience-insights/predict-subscription-churn.md
+            - name: Predict transactional churn
+              href: audience-insights/predict-transactional-churn.md
+            - name: Use custom models from Azure Machine Learning
+              href: audience-insights/custom-models.md
+            - name: Complete partially missing data
+              href: audience-insights/predictions.md
+
+        - name: Sample guides
+          items:    
+            - name: Sample guide for subscription churn prediction
+              href: audience-insights/sample-guide-predict-subscription-churn.md
+            - name: Sample guide for transactional churn prediction
+              href: audience-insights/sample-guide-predict-transactional-churn.md
+            - name: Sample guide for product recommendation prediction
+              href: audience-insights/sample-guide-predict-product-recommendation.md
+            - name: Experiments with Azure Machine learning
+              href: audience-insights/azure-machine-learning-experiments.md
+            - name: Experiments with Azure Machine Learning studio
+              href: audience-insights/machine-learning-studio-experiments.md
+        
+        - name: Manage predictions
+          href: audience-insights/manage-predictions.md
+
         - name: Create segments based on predictions
           href: audience-insights/prediction-based-segment.md
-        - name: Implement custom machine learning models
-          href: audience-insights/custom-models.md
-        - name: Experiments with Azure Machine learning
-          href: audience-insights/azure-machine-learning-experiments.md
-        - name: Experiments with Azure Machine Learning studio
-          href: audience-insights/machine-learning-studio-experiments.md
+
+
 
     - name: Export options
       items:
         - name: Exports
           items:
-            - name: Exports (preview) overview
+            - name: Exports overview
               href: audience-insights/export-destinations.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
@@ -146,6 +166,8 @@
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
+            - name: Azure Synapse Analytics
+              href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
             - name: Adobe Experience Platform
@@ -164,6 +186,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: LinkedIn Ads
+              href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
               href: audience-insights/export-liveramp.md
             - name: Mailchimp
@@ -172,6 +196,8 @@
               href: audience-insights/export-marketo.md
             - name: Microsoft Advertising
               href: audience-insights/export-microsoft-advertising.md
+            - name: Omnisend
+              href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
             - name: SendGrid
@@ -183,9 +209,7 @@
 
         - name: Other uses
           items: 
-            - name: Dynamics 365 Customer Service (Add-in)
-              href: audience-insights/customer-card-add-in.md
-            - name: Dynamics 365 Sales Hub (Add-in)
+            - name: Customer Card Add-in for Dynamics 365
               href: audience-insights/customer-card-add-in.md
             - name: Microsoft Teams (bot)
               href: audience-insights/export-teams-bot.md
@@ -202,7 +226,7 @@
           href: audience-insights/system.md
         - name: Assign user permissions
           href: audience-insights/permissions.md
-        - name: Connections (preview) overview
+        - name: Connections overview
           href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md

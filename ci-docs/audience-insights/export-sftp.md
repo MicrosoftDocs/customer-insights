@@ -6,12 +6,12 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists and other data to SFTP (preview)
+# Export segments and other data to SFTP (preview)
 
 Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol (SFTP) location.
 
