@@ -133,6 +133,8 @@
 
         - name: Sample guides
           items:    
+            - name: Sample guide for CLV prediction
+              href: audience-insights/sample-guide-predict-clv.md
             - name: Sample guide for subscription churn prediction
               href: audience-insights/sample-guide-predict-subscription-churn.md
             - name: Sample guide for transactional churn prediction
