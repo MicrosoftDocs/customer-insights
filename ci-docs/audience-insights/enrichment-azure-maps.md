@@ -1,7 +1,7 @@
 ---
-title: "Enrichment with the first-party enrichment Azure Maps"
+title: "Enrich customer profiles with location data from Azure Maps"
 description: "General information about the Azure Maps first-party enrichment."
-ms.date: 05/25/2021
+ms.date: 06/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Enrichment of customer profiles with Azure Maps (preview)
 
-Azure Maps provides location-centric data and services to deliver seamless experiences based on geospatial data with built-in location intelligence.  Azure Maps data enrichment services help create a more precise location understanding of your customers. It brings capabilities like address normalization or latitude and longitude extraction to Customer Insights.
+Azure Maps provides location-centric data and services to deliver experiences based on geospatial data with built-in location intelligence.  Azure Maps data enrichment services help create a more precise location understanding of your customers. It brings capabilities like address normalization or latitude and longitude extraction to Customer Insights.
 
 <!-- Draft said "... and more" - what more? -->
 
@@ -23,21 +23,21 @@ To configure Azure Maps enrichments, the following prerequisites must be met:
 
 - You have an active Azure Maps subscription. To get a subscription, you can [sign-up or get a free trial](https://azure.microsoft.com/en-us/services/azure-maps/).
 
-- There is an Azure Maps [connection](connections.md) available *or* you have [administrator](permissions.md#administrator) permissions and an active Azure Maps API key.
+- There's an Azure Maps [connection](connections.md) available *or* you have [administrator](permissions.md#administrator) permissions and an active Azure Maps API key.
 
 ## Configure the enrichment
 
 1. Go to **Data** > **Enrichment**. 
 
-1. Select **Enrich my data** on the Azure Maps tile.
+1. On the **Azure Maps** tile, select **Enrich my data**.
 
    :::image type="content" source="media/azure-maps-tile.png" alt-text="Azure Maps tile":::
 
-1. Select a [connection](connections.md) from the drop-down. Contact  an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection**. Choose **Azure Maps** from the drop-down. 
+1. Select a [connection](connections.md) from the drop-down list. Contact an administrator if no Azure Maps connection is available. If you're an administrator, you can [configure the connection for Azure Maps](#configure-the-connection-for-azure-maps). 
 
 1. Select **Next** to confirm the selection.
 
-1. Choose the **Customer data set** you want to enrich with location data from Azure Maps. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+1. Choose the **Customer data set** you want to enrich with location data from Azure Maps. You can select the **Customer** entity to enrich all your unified customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
 
     :::image type="content" source="media/enrichment-azure-maps-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
 
@@ -51,11 +51,11 @@ To configure Azure Maps enrichments, the following prerequisites must be met:
 
 1. Provide a name for the enrichment. 
 
-1.Select **Save enrichment** after reviewing your choices.
+1. Select **Save enrichment** after reviewing your choices.
 
 ## Configure the connection for Azure Maps
 
-You need to be an administrator to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Azure Maps tile.
+You need to be an administrator in audience insights to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Azure Maps tile.
 
 1. Enter a name for the connection in the **Display name** box.
 
@@ -71,7 +71,7 @@ You need to be an administrator to configure connections. Select **Add connectio
 
 ## Enrichment results
 
-To start the enrichment process, select **Run** from the command bar. You can also let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The processing time will depend on the size of your customer data and the API response times from Azure Maps.
+To start the enrichment process, select **Run** from the command bar. You can also let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The processing time will depend on the size of your customer data and the API response times.
 
 After the enrichment process completes, you can review the newly enriched customer profiles data under **My enrichments**. Additionally, you'll find the time of the last update and the number of enriched profiles.
 
@@ -87,6 +87,5 @@ Build on top of your enriched customer data. Create [segments](segments.md), [me
 
 When you enable Dynamics 365 Customer Insights to transmit data to Azure Maps, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Azure Maps meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights Administrator can remove this enrichment at any time to discontinue use of this functionality.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
