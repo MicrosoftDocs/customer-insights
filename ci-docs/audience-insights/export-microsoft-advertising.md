@@ -24,9 +24,9 @@ Export Customer Insights segments to Microsoft Advertising to create Customer Ma
 
 ## Known limitations
 
-- You can export up to 500K profiles per export to Microsoft Advertising.
+- You can export up to 500 K profiles per export to Microsoft Advertising.
 - Exporting to Microsoft Advertising is limited to segments.
-- Exporting up to 500K profiles to Microsoft Advertising can take up to 10 minutes to complete. 
+- Exporting up to 500 K profiles to Microsoft Advertising can take up to 10 minutes to complete. 
 
 
 ## Set up the connection to Microsoft Advertising
@@ -61,7 +61,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Select the segments to export. The Customer Match audiences in Microsoft Advertising are automatically created with the name of the segments selected for export. Each segment will result in a separate Customer Match audience. 
 
-1. Enter your **Microsoft Advertising Customer ID and Account ID**. You can find the Customer ID (cid) and Account ID (aid) in the parameters of the URL when you're signed in Microsoft Advertising.
+1. Enter your **Microsoft Advertising Customer ID and Account ID**. You can find the Customer ID (`cid`) and Account ID (`aid`) in the parameters of the URL when you're signed in Microsoft Advertising.
 
 1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile with a customer's email address. It's required to export segments to Microsoft Advertising.
 
@@ -77,4 +77,4 @@ You can also [export data on demand](export-destinations.md#run-exports-on-deman
 
 When you enable Dynamics 365 Customer Insights to transmit data to Microsoft Advertising, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Microsoft Advertising meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 
-Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
+Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to stop use of this functionality.
