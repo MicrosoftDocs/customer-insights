@@ -29,7 +29,7 @@ To configure Azure Maps enrichments, the following prerequisites must be met:
 
 1. Go to **Data** > **Enrichment**. 
 
-1. On the **Azure Maps** tile, select **Enrich my data**.
+1. On the **Location** tile, select **Enrich my data**.
 
    :::image type="content" source="media/azure-maps-tile.png" alt-text="Azure Maps tile":::
 
