@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to DotDigital (preview)
+# Export segments to DotDigital (preview)
 
 Export segments of unified customer profiles to DotDigital address books and use them for campaigns, email marketing, and to build customer segments with DotDigital. 
 

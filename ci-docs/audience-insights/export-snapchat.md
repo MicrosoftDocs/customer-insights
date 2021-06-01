@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Snapchat (preview)
+# Export segments to Snapchat (preview)
 
 Export segments of unified customer profiles to Snapchat and use them for advertising. 
 
