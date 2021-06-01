@@ -21,7 +21,9 @@ Go to **Data** > **Exports** to view the exports page. All user roles have acces
 
 To set up or edit an export, you need to have connections available to you. Connections depend on your [user role](permissions.md):
 - Administrators have access to all connections. They can also create new connections when setting up an export.
-- Contributors can have access to specific connections. They depend on administrators to configure and share connections. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+- Contributors can have access to specific connections. They depend on administrators to configure and share connections. 
+  - The exports list shows contributors whether they can edit or only view an export with an extra column called **Your permissions**.
+  - For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 - Viewers can only view existing exports but not create them.
 
 ### Define a new export
