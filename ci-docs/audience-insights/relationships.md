@@ -13,18 +13,18 @@ manager: shellyha
 
 # Relationships between entities
 
-Relationships help you connect entities and generate a graph of your data when entities share a common identifier (foreign key) that can be referenced from one entity to another. Connected entities enable the definition of segments and measures based on multiple data sources.
+Relationships connect entities and define a graph of your data when entities share a common identifier, a foreign key. This foreign key can be referenced from one entity to another. Connected entities enable the definition of segments and measures based on multiple data sources.
 
 There are three types of relationships: 
 - Non-editable system relationships, created by the system as part of the data unification process
-- Non-editable inherited relationship, which are created automatically from ingesting data sources 
+- Non-editable inherited relationships, which are created automatically from ingesting data sources 
 - Editable custom relationships, created and configured by users
 
 ## Non-editable system relationships
 
-During the match and merge processes, system relationships are created behind the scenes based on intelligent matching. These relationships help relate the customer profile records with other corresponding entities' records. The following diagram illustrates the creation of three system-based relationships when the customer entity is matched with additional entities to produce the unified *Customer* entity.
+During data unification, system relationships are created automatically based on intelligent matching. These relationships help relate the customer profile records with corresponding records. The following diagram illustrates the creation of three system-based relationships. The customer entity is matched with other entities to produce the unified *Customer* entity.
 
-:::image type="content" source="media/relationships-entities-merge.png" alt-text="Diagram with relationship paths for the customers entity with three 1-n relationships.":::
+:::image type="content" source="media/relationships-entities-merge.png" alt-text="Diagram with relationship paths for the customer entity with three 1-n relationships.":::
 
 - ***CustomerToContact* relationship** was created between the *Customer* entity and the *Contact* entity. The *Customer* entity gets the key field **Contact_contactID** to relate to the *Contact* entity key field **contactID**.
 - ***CustomerToAccount* relationship** was created between the *Customer* entity and the *Account* entity. The *Customer* entity gets the key field **Account_accountID** to relate to the *Account* entity key field **accountID**.
@@ -65,7 +65,7 @@ Relationship consists of a *source entity* containing the foreign key and a *tar
 
 ## View relationships
 
-The Relationships page lists all the relationships that have been created by the system or by a user. Each row represents a relationship which also includes details about the source entity, the target entity and the cardinality. 
+The Relationships page lists all the relationships that have been created. Each row represents a relationship, which also includes details about the source entity, the target entity, and the cardinality. 
 
 :::image type="content" source="media/relationships-list.png" alt-text="List of relationships and options in the action bar of the Relationships page.":::
 
@@ -96,7 +96,7 @@ Select a relationship and choose one of the following options:
  
 - **Edit**: Update properties of custom relationships in the edit pane and save changes.
 - **Delete**: Delete custom relationships.
-- **View**: View system-created and inherited relationships in a pane where you can change the details of the relationship. 
+- **View**: View system-created and inherited relationships. 
 
 ## Next step
 
