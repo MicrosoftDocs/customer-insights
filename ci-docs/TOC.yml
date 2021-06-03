@@ -291,6 +291,11 @@
           href: engagement-insights/custom-reports.md
         - name: Create unified profile reports
           href: engagement-insights/profile-reports.md
+        - name: View and create dimensions
+          href: engagement-insights/dimensions.md
+        - name: View and create metrics
+          href: engagement-insights/metrics.md
+
 
     - name: Journey analytics
       items: 
