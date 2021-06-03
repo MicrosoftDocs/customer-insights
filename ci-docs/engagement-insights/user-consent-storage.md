@@ -1,9 +1,9 @@
 ---
 title: Manage cookies and user consent to store user data
 description: Understand how cookies and user consent are used to identify website visitors.
-author: pickwick129
-ms.reviewer: ruthai
-ms.author: v-salash
+author: mochimochi016
+ms.reviewer: mhart
+ms.author: jeffhar
 ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 

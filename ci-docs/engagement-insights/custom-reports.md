@@ -1,9 +1,9 @@
 ---
 title: About custom reports
 description: Learn how to create and custom reports.
-author: pickwick129
-ms.reviewer: m-hartmann
-ms.author: v-salash
+author: mochimochi016
+ms.reviewer: mhart
+ms.author: jeffhar
 ms.date: 04/30/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 

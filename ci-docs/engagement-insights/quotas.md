@@ -1,9 +1,9 @@
 ---
 title: Ingestion limitations for engagement insights
 description: Restrictions for events and workspaces during public preview 
-author: pickwick129
-ms.reviewer: ruthai
-ms.author: v-salash
+author: mochimochi016
+ms.reviewer: mhart
+ms.author: jeffhar
 ms.date: 11/16/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 

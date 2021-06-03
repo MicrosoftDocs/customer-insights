@@ -1,9 +1,9 @@
 ---
 title: Preview terms of service
 description: Understand the terms of service for engagement insights.
-author: pickwick129
-ms.reviewer: ruthai
-ms.author: v-salash
+author: mochimochi016
+ms.reviewer: mhart
+ms.author: jeffhar
 ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 

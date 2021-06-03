@@ -1,9 +1,9 @@
 ---
 title: View and create dimensions
 description: How to create, edit, and delete dimensions.
-ms.reviewer: jusali
-ms.author: v-salash
-author: pickwick129
+ms.reviewer: mhart
+ms.author: jusali
+author: jusali
 ms.date: 06/02/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 

@@ -1,9 +1,9 @@
 ---
 title: Overview of engagement insights capability
 description: An introduction of engagement insights capability features and benefits. 
-ms.reviewer: m-hartmann
-ms.author: v-salash
-author: pickwick129
+ms.reviewer: mhart
+ms.author: jeffhar
+author: mochimochi016
 ms.date: 12/21/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 

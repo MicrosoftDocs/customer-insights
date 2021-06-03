@@ -39,7 +39,7 @@ This section describes how to create a *blank segment* from scratch.
 
 1. Select **New segment**.
 
-1. In the **Resource Library**, choose the attribute you want to filter by. Currently, you can only create segments based on dimensions.
+1. In the **Resource library**, choose the attribute you want to filter by. Currently, you can only create segments based on dimensions.
 
 1. Choose an operator and a value for the selected attribute. The following operations are supported.
    - **is**: requires an exact match to include values. Uses **equal to** for a single value or **any of** to include multiple values.

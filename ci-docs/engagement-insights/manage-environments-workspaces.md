@@ -1,7 +1,7 @@
 ---
 title: Manage workspaces and environments
 description: How to create, rename, and delete workspaces and environments.
-author: pickwick129
+author: jusali
 ms.reviewer: mhart
 ms.author: jusali
 ms.date: 4/23/2021
@@ -99,8 +99,6 @@ At this time, you must first select a workspace that belongs to the environment.
 1. Go to **Admin** > **Environment** and select **Settings**.
 
 1. Update the **Environment name** and select **Save** to apply your changes.
-
-
 
 ### Manage environment members
 

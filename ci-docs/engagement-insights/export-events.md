@@ -2,8 +2,8 @@
 title: Export refined events
 description: How to export refined events and base events.
 ms.reviewer: mhart
-ms.author: v-salash
-author: pickwick129
+ms.author: jusali
+author: jusali
 ms.date: 04/30/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 

@@ -1,9 +1,9 @@
 ---
 title: View and create metrics
 description: How to create, edit, and delete metrics.
-ms.reviewer: jusali
-ms.author: v-salash
-author: pickwick129
+ms.reviewer: mhart
+ms.author: jusali
+author: jusali
 ms.date: 05/20/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
