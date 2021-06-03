@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Segments allow you to identify subsets of visitors based on characteristics or website interactions. Segments let you apply filters and analyze those subsets so you can examine and respond to trends in your business. 
+Segments allow you to identify subsets of visitors based on characteristics or website interactions. Segments let you apply filters and analyze those subsets. The analysis can help examine and respond to trends in your business. 
 
 ## View dimensions
 
@@ -25,11 +25,11 @@ Segments allow you to identify subsets of visitors based on characteristics or w
 
 ## Create a segment
 
-Segment consist of rules and conditions that are connected with logical operators. Conditions apply filters to a selected dimension. Every segment can use up to five dimensions.
+Segments consist of rules and conditions that are connected with logical operators. Conditions apply filters to a selected dimension. Every segment can use up to five dimensions.
 
-The following example shows a segment with two conditions in a one rule. It filters all website events where the browser is Chrome and the operating system is iOS or Android.
+The following example shows a segment with two conditions in a one rule. It filters all website events where the browser is Chrome and the operating systems are iOS or Android.
 
-:::image type="content" source="media/segment-sample.png" alt-text="Example segments with two conditions in a ruleto filter for website events.":::
+:::image type="content" source="media/segment-sample.png" alt-text="Example segments with two conditions in a rule to filter for website events.":::
 
 This section describes how to create a *blank segment* from scratch.
 
@@ -37,7 +37,7 @@ This section describes how to create a *blank segment* from scratch.
 
 1. Select **New segment**.
 
-1. In the **Resource Library** choose the attribute you want to filter by. Currently, you can only create segments based on dimensions.
+1. In the **Resource Library**, choose the attribute you want to filter by. Currently, you can only create segments based on dimensions.
 
 1. Choose an operator and a value for the selected attribute. The following operations are supported.
    - **is**: requires an exact match to include values. Uses **equal to** for a single value or **any of** to include multiple values.
@@ -60,7 +60,7 @@ You can apply segments to a report or a funnel to filter them based on the condi
 
 :::image type="content" source="media/segment-reports-filter.png" alt-text="A page views report with an expanded drop-down list to choose which segments to apply.":::
 
-Too apply a segment, open the report or funnel. Select **Add condition** and choose **Filter by segment**. Choose the segment from the list that you want to apply. The segment gets be applied to the report. If a chart doesn't support the segment, it shows an error.
+To apply a segment, open the report or funnel. Select **Add condition** and choose **Filter by segment**. Choose the segment from the list that you want to apply. The segment gets be applied to the report. If a chart doesn't support the segment, it shows an error.
  
 You can apply *up to three segments* to a report or funnel.
 
