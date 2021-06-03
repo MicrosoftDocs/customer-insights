@@ -4,7 +4,7 @@ description: How to create, edit, and delete dimensions.
 ms.reviewer: jusali
 ms.author: v-salash
 author: pickwick129
-ms.date: 05/18/2021
+ms.date: 06/02/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -45,7 +45,7 @@ In addition to system-generated dimensions, environment and workspace admins can
 
 1. In the **Create a dimension** pane, select a property to base the dimension on. The properties list will show all the properties in the workspace not assigned to a dimension.
 1. Enter a name in the **Display name** box. Optionally, you can add a description.
-1. Select **Create** to save the dimension. It can take up to one minute before you can use the dimension in a [custom report](custom-reports.md) or segment. 
+1. Select **Create** to save the dimension. It can take up to one minute before you can use the dimension in a [custom report](custom-reports.md) or [segment](segments.md). 
 
 ## Edit a dimension
 
