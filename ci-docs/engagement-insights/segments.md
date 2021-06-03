@@ -17,7 +17,9 @@ ms.manager: shellyha
 
 Segments allow you to identify subsets of visitors based on characteristics or website interactions. Segments let you apply filters and analyze those subsets. The analysis can help examine and respond to trends in your business. 
 
-## View dimensions
+:::image type="content" source="media/segments-page.png" alt-text="Screenshot of the engagement insights application showing the list of existing segments in a workspace.":::
+
+## View segments
 
 1. Go to **Data** in the left navigation pane. 
 
