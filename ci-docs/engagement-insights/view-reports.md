@@ -38,7 +38,7 @@ The  **Real-time usage** report provides an overview of current activity on your
 ### Content reports
 
 - **Links** show information about the number and type of clicks.
-- 
+
 - **Exit pages** list the links that visitors clicked to exit your site.
 
 ### Traffic sources reports
