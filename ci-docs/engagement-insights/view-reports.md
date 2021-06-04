@@ -4,7 +4,7 @@ description: Use the available reports to see real-time activity on your site.
 author: pickwick129
 ms.reviewer: darrin.wood
 ms.author: v-salash
-ms.date: 05/14/2021
+ms.date: 06/04/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -19,7 +19,7 @@ A report is a collection of data visualizations, using the data collected throug
 
 ## Web reports
 
-You can access OOB web reports under **Discover** in the left navigation pane.
+You can access web reports under **Discover** in the left navigation pane.
 
 :::image type="content" source="media/report-menu.png" alt-text="Navigation showing the list of available reports":::
 
@@ -53,9 +53,9 @@ The  **Real-time usage** report provides an overview of current activity on your
 
 ## Mobile reports
 
-Mobile reports are grouped in real-time usage,  app, and usage categories. You can access the OOB mobile reports under **Discover** in the left navigation pane.   
+Mobile reports are grouped in real-time usage, app, and user categories. You can access mobile reports under **Discover** in the left navigation pane.   
 
-Screenshot: <<waiting on all reports to be available in order to screenshot the nav>>   
+:::image type="content" source="media/mobile-reports.png" alt-text="User interface of engagement insights showing the real-time usage report that renders data in charts and lists.":::   
 
 ### Real-time usage
 
@@ -63,7 +63,7 @@ Screenshot: <<waiting on all reports to be available in order to screenshot the 
 
 ### App reports
 
-- **Screen views** list screen views for individual screens and the total number of screen views over a selected time frame. You can view screen views by screen name or by screen title.
+- **Screen views** list screen views for individual screens in an app and the total number of screen views over a selected time frame. You can view screen views by screen name or by screen title.
 
 - **Sessions** show information about the number of sessions and the session duration.
 
@@ -79,8 +79,7 @@ Screenshot: <<waiting on all reports to be available in order to screenshot the 
 
 - **Devices & OS versions** provide insights into which devices and operating systems are running your mobile app.
 
-- **Locations**  show information about app users by country, region, and city.
-
+- **Locations** show information about app users by country, region, and city.
 
 ## Filter by time or value
 
