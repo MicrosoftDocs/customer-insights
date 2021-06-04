@@ -54,7 +54,7 @@ You can change the name and description of a dimension.
 1. Go to **Data** > **Dimensions**.
 1. Select the dimension you want to delete.
 1. In the **Edit dimension** pane, update the dimension.
-1. Select **Apply** sto save your changes.
+1. Select **Apply** to save your changes.
 
 ## Delete a dimension
 

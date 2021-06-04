@@ -167,11 +167,11 @@ If any court of competent jurisdiction determines that any provision of this Agr
 
 ### 12.3. No assignment
 
-LLicensee may not assign this Agreement, or any rights or duties under it, directly or indirectly (e.g., by merger, consolidation, reorganization, or transfer of control), by operation of contract, law, or otherwise, except with Microsoft’s express written consent. 
+Licensee may not assign this Agreement, or any rights or duties under it, directly or indirectly (e.g., by merger, consolidation, reorganization, or transfer of control), by operation of contract, law, or otherwise, except with Microsoft’s express written consent. 
 
 ### 12.4. Entire Agreement
  
-This Agreement constitutes the entire agreement between the parties ith respect to its subject matter, and supersedes all prior and contemporaneous communications (including all written or oral agreements, representations or understandings) regarding such subject matter. Each party irrevocably and unconditionally waives any right it may have to claim damages for, and/or to rescind this Agreement because of a breach of any warranty not contained in this Agreement, or any misrepresentation whether or not contained in this Agreement, unless such misrepresentation was made fraudulently. Nothing in this clause will exclude liability for a fraudulent misrepresentation.
+This Agreement constitutes the entire agreement between the parties with respect to its subject matter, and supersedes all prior and contemporaneous communications (including all written or oral agreements, representations or understandings) regarding such subject matter. Each party irrevocably and unconditionally waives any right it may have to claim damages for, and/or to rescind this Agreement because of a breach of any warranty not contained in this Agreement, or any misrepresentation whether or not contained in this Agreement, unless such misrepresentation was made fraudulently. Nothing in this clause will exclude liability for a fraudulent misrepresentation.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
