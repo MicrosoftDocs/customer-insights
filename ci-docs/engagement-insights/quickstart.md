@@ -3,7 +3,7 @@ title: Quickstart product introduction
 description: First-run experience to set up engagement insights capability.
 author: mochimochi016
 ms.reviewer: mhart
-ms.author: jeffhar
+ms.author: jefhar
 ms.date: 11/05/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 

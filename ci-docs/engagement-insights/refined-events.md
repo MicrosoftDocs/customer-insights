@@ -2,7 +2,7 @@
 title: Create and modify refined events
 description: How to create and modify refined events.
 ms.reviewer: mhart
-ms.author: jeffhar
+ms.author: jefhar
 author: mochimochi016
 ms.date: 04/30/2021
 ms.service: customer-insights

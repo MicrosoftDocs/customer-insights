@@ -3,7 +3,7 @@ title: Delete and export personal information
 description: How to delete and export event data containing personal data.
 author: mochimochi016
 ms.reviewer: mhart
-ms.author: jeffhar
+ms.author: jefhar
 ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
