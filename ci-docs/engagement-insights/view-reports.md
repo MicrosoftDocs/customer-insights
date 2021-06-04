@@ -30,7 +30,9 @@ The  **Real-time usage** report provides an overview of current activity on your
 ### Key metrics reports
 
 - **Page views** list the page views for individual pages along with the number of total page views over the selected time frame.
-- **Visits show information about the number of visits and the visit duration.
+
+- **Visits** show information about the number of visits and the visit duration.
+
 - **Visitors** inform about new and returning unique visitors to your site.
 
 ### Content reports
@@ -42,13 +44,17 @@ The  **Real-time usage** report provides an overview of current activity on your
 ### Traffic sources reports
 
 - **Referrers** list the domains and URLs that referred visitors to your site.
+
 - **Tracking codes** provide details about the tracking codes in the links that brought visitors to your site.
 
 ### Visitor profiles reports
 
 - **Devices** list the physical devices that were used to access your site.
+
 - **OS & browsers** provide insights into the operating systems and browsers that were running when accessing your site.
+
 - **Locations** show information about visitors by country, region, and city.
+
 - **Languages** list page views by the visitor's preferred languages.
 
 ## Mobile reports
