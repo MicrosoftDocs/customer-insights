@@ -1,10 +1,10 @@
 ---
 title: About custom reports
 description: Learn how to create and custom reports.
-author: pickwick129
-ms.reviewer: m-hartmann
-ms.author: v-salash
-ms.date: 04/30/2021
+author: mochimochi016
+ms.reviewer: mhart
+ms.author: jefhar
+ms.date: 06/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,8 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
- In addition to out-of-box reports, you can build a custom report with chart and table visualizations to help you understand user behavior. This article explains how to create a report with the data you need using table and chart visualizations.
-
+In addition to out-of-box reports, you can build a custom report with chart and table visualizations to help you understand user behavior. This article explains how to create a report with the data you need using table and chart visualizations. 
 
 ## Create a custom report
 
@@ -31,7 +30,7 @@ ms.manager: shellyha
     - Select **Add visual** in the command bar to create a default table visualization.
     - Or, select a column, bar, line, area, pie, donut, or table visualization from the **Report editor** pane.
 
-1. In the **Data** pane,  choose one of the available **Metrics** (for example, page views) to display. Then add **Dimensions** (for example, country) to show on the visualization.
+1. In the **Data** pane,  choose one of the available **Metrics** (for example, page views) to display. Then add **Dimensions** (for example, country) to show on the visualization. For more information about adding additional options to choose from, see [View and create metrics](metrics.md) and [View and create dimensions](dimensions.md).
 
 1. Select **Design** in the **Visualization editor** pane to add **Title text**, and set the **Position**, **Data labels**, and **axis**.  You can also change the visualization by selecting another chart type.
 

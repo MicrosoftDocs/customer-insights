@@ -1,10 +1,10 @@
 ---
 title: Roles and permissions
 description: Overview of available roles and permissions for workspace members. 
-ms.reviewer: ruthai
-ms.author: v-salash
-author: pickwick129
-ms.date: 10/30/2020
+ms.reviewer: mhart
+ms.author: jusali
+author: jusali
+ms.date: 06/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -23,10 +23,10 @@ The following chart identifies permissions for each role.
 
 | Permission | Environment admin | Workspace admin |
 |--|--|--|
-| Create environments (creator automatically becomes environment admin) | X* | X* |  |
-| Configure environment (environment members, delete environment) | X |  |  |
-| Create workspaces | X |  |  |
-| Configure workspaces (workspace members, pre-defined reports, delete workspace) | X | X |  |
+| Create environments (creator automatically becomes environment admin) | X* | X* |  
+| Configure environment (environment members, delete environment) | X |  |  
+| Create workspaces | X |  |  
+| Configure workspaces (workspace members, pre-defined reports, delete workspace) | X | X |  
 | Configure events and refined events | X | X |
 | View workspace events and refined events | X | X |
 | View workspace resources (reports, segments, and metric)| X | X |
