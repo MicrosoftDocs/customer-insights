@@ -4,7 +4,7 @@ description: Learn how to create and custom reports.
 author: mochimochi016
 ms.reviewer: mhart
 ms.author: jefhar
-ms.date: 04/30/2021
+ms.date: 06/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
