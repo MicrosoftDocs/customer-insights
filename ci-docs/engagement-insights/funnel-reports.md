@@ -120,3 +120,22 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 1. Select a name to open the report.
 
 1. Select the step that you want to remove and select **Delete**.
+
+### Multi-condition funnel steps 
+1. To create funnel steps with multiple conditions, select **Add Condition** 
+
+1. Multi-condition steps must be of the same activity type. 
+
+1. Select the operator for your multi-condition step; either AND or OR. 
+
+1. Identify the dimension for your multi-condition step. 
+
+1. Save the step. 
+
+### Advanced settings 
+
+1. Funnel reports offer an advanced setting that allows you to limit the maximum completion time for your funnel report. 
+
+For example: if you limit the time completion to 4 days, the funnel must have been completed within a 4 day time period. 
+
+1. Select advanced settings to turn ON maximum time completion, and then select the maximum time the funnel must have been completed in. 
