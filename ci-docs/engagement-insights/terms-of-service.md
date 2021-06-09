@@ -4,7 +4,7 @@ description: Understand the terms of service for engagement insights.
 author: mochimochi016
 ms.reviewer: mhart
 ms.author: jefhar
-ms.date: 10/30/2020
+ms.date: 06/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
