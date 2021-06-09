@@ -1,10 +1,10 @@
 ---
 title: Preview terms of service
 description: Understand the terms of service for engagement insights.
-author: pickwick129
-ms.reviewer: ruthai
-ms.author: v-salash
-ms.date: 10/30/2020
+author: mochimochi016
+ms.reviewer: mhart
+ms.author: jefhar
+ms.date: 06/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -23,7 +23,7 @@ By accessing or using the services preview of the Dynamics 365 Customer Insights
 
 ## 1. WHAT THIS AGREEMENT COVERS
 
-This is an agreement between you (“you,” “your,” “Customer,” “Participant,” or “Licensee”) and Microsoft Corporation, (“Microsoft, “we,” “us” or “our”). The terms and conditions of this agreement (“Agreement”) apply to your access and use of Services. For clarity, the Services covered by this Agreement include only Customer Insights – Engagement insights, and not other features or functionality of Customer Insights, including but not limited to Audience insights. The Services are optional evaluation services to obtain feedback prior to general release.  
+This is an agreement between you (“you,” “your,” “Customer,” “Participant,” or “Licensee”) and Microsoft Corporation (“Microsoft, “we,” “us”, or “our”). The terms and conditions of this agreement (“Agreement”) apply to your access and use of Services. For clarity, the Services covered by this Agreement include only Customer Insights – Engagement insights, and not other features or functionality of Customer Insights, including but not limited to Audience insights. The Services are optional evaluation services to obtain feedback prior to general release.  
 
 Certain Microsoft services or software may be necessary to use the Services (“Required Offerings”). Microsoft does not grant any rights under this Agreement to access or use Required Offerings. Rather, Required Offerings are separately licensed under any respective Microsoft Licensing Agreement, and may require paying a fee. If you are a subscriber of Dynamics 365 or other Microsoft services, your Dynamics 365 customer agreement or other Microsoft service agreement applies to your use of Dynamics 365 or other Microsoft services generally. This Agreement applies to your use of the Services specifically.  
 
@@ -53,17 +53,17 @@ You may access and use the Services only through the means we designate for the 
 
 In using the Services, you may not access or use the Services: 
 
-- to design or build a competitive service or to otherwise copy the design, functionality or user interfaces within the Services;  
+- to design or build a competitive service or to otherwise copy the design, functionality, or user interfaces within the Services;  
 
 - to work around any technical limitations in the Services that only allow you to use it in certain ways;  
 
-- to share, publish, rent, lease, lend, sell or transfer the Services to any third party; or for commercial hosting services; 
+- to share, publish, rent, lease, lend, sell, or transfer the Services to any third party; or for commercial hosting services; 
 
-- in a way prohibited by law, regulation, governmental order or decree; 
+- in a way prohibited by law, regulation, governmental order, or decree; 
 
 - to violate the rights of others;  
 
-- to try to gain unauthorized access to or disrupt any service, device, data, account or network;  
+- to try to gain unauthorized access to or disrupt any service, device, data, account, or network;  
 
 - to spam or distribute malware; 
 
@@ -71,11 +71,11 @@ In using the Services, you may not access or use the Services:
 
 - in any application or situation where failure of the Service could lead to the death or serious bodily injury of any person, or to severe physical or environmental damage. 
 
-If you are using the Services in a shared or sandbox environment with other users who do not belong to your organization, you may not interfere with the use of the environment by other users and you may not access, delete, or modify any data, software, information or other materials placed in the environment by other users.
+If you are using the Services in a shared or sandbox environment with other users who do not belong to your organization, you may not interfere with the use of the environment by other users and you may not access, delete, or modify any data, software, information, or other materials placed in the environment by other users.
 
 ## 3. DATA
 
-“GDPR” means Regulation 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the Processing of Personal Data and on the free movement of such data. The terms “Personal Data,” “Data Subject,” “Controller,” “Personal Data Breach,” “Processor,” “Processing,” and “Supervisory Authority” have meaning as defined in the GDPR or other applicable law. “Subprocessor” means a Processor appointed by another Processor.  
+“GDPR” means Regulation 2016/679 of the European Parliament and of the Council on the protection of natural persons about the Processing of Personal Data and on the free movement of such data. The terms “Personal Data,” “Data Subject,” “Controller,” “Personal Data Breach,” “Processor,” “Processing,” and “Supervisory Authority” have meaning as defined in the GDPR or other applicable law. “Subprocessor” means a Processor appointed by another Processor.  
 
 ### 3.1 Your Responsibility
 
@@ -83,13 +83,13 @@ You bear sole responsibility for any and all data provided to Microsoft through 
 
 ### 3.2 Processing of Personal Data; GDPR
 
-To the extent Microsoft is a Processor or Subprocessor of Personal Data in connection with the Services, any such Personal Data will be subject to Microsoft’s commitments relating to “Professional Services Data” in the Online Services Terms and Online Services Data Protection Addendum. You agree that you have appropriate consents from any data subjects for the transfer, storage and processing of Personal Data in the United States or any other country in which Microsoft or its affiliates, subsidiaries or service providers maintain facilities. 
+To the extent Microsoft is a Processor or Subprocessor of Personal Data in connection with the Services, any such Personal Data will be subject to Microsoft’s commitments relating to “Professional Services Data” in the Online Services Terms and Online Services Data Protection Addendum. You agree that you have appropriate consents from any data subjects for the transfer, storage, and processing of Personal Data in the United States or any other country in which Microsoft or its affiliates, subsidiaries, or service providers maintain facilities. 
 
 ## 4. PROPRIETARY RIGHTS
 
 ### 4.1. Reservation of Rights; No Other License
 
-Except for your limited use and access rights to the Services as set forth in this agreement, Microsoft reserves all other rights not expressly granted in this agreement. No additional rights (including implied licenses, rights or covenants) are granted by implication, estoppel or otherwise. 
+Except for your limited use and access rights to the Services as set forth in this agreement, Microsoft reserves all other rights not expressly granted in this agreement. No additional rights (including implied licenses, rights, or covenants) are granted by implication, estoppel or otherwise. 
 
 ### 4.2. No Claims of Ownership by Microsoft
 
@@ -103,7 +103,7 @@ Microsoft will solely own any enhancements or improvements to the Services arisi
 
 ## 5. NO SUPPORT
 
-We have no obligation to provide any support services for the Services. The Services may be inaccessible due to scheduled and unscheduled reasons, including maintenance updates, power outages, system failures, extended downtime and other interruptions. During such periods, you may be unable to access or use all of, or a portion of, the Services. Some or all of the Customer Data may be lost. In the event of an outage or interruption that Microsoft determines may cause risk to the Services, Microsoft may determine in its sole discretion to suspend the Services.  
+We have no obligation to provide any support services for the Services. The Services may be inaccessible due to scheduled and unscheduled reasons, including maintenance updates, power outages, system failures, extended downtime, and other interruptions. During such periods, you may be unable to access or use all of, or a portion of, the Services. Some or all of the Customer Data may be lost. In the event of an outage or interruption that Microsoft determines may cause risk to the Services, Microsoft may determine in its sole discretion to suspend the Services.  
 
 FOR THESE REASONS, THE SERVICES ARE EXCLUDED FROM ANY COMMITMENTS MICROSOFT MAKES IN ITS SERVICE LEVEL AGREEMENTS GENERALLY, INCLUDING WITHOUT LIMITATION ANY COMMITMENTS MICROSOFT MAKES IN SERVICE LEVEL AGREEMENTS APPLICABLE TO MICROSOFT POWER BI OR DYNAMICS 365. 
 
@@ -117,13 +117,13 @@ As part of your use of the Services, we grant you a limited right to: (a) instal
 
 We reserve all other rights to such Software. You may not disassemble, decompile, or reverse engineer any such Software included in the Services, except and only to the extent that the law expressly permits this activity. Notwithstanding these restrictions, you may (a) incorporate applicable binary portions of the Software into Licensee’s programs, solely as contemplated by the documentation; or (b) creating custom events during Licensee’s use of the Software. 
 
-The Software is subject to United States export laws and regulations. You must comply with all domestic and international export laws and regulations that apply to the Software. These laws include restrictions on destinations, end users and end use. For additional information, see https://aka.ms/exporting. 
+The Software is subject to United States export laws and regulations. You must comply with all domestic and international export laws and regulations that apply to the Software. These laws include restrictions on destinations, end users, and end use. For more information, see https://aka.ms/exporting. 
 
 Unless we notify you otherwise, your license to use the Software provided by us as part of the Services will end when your right to use the Services ends, and you must promptly uninstall the Software. We may disable the Software at this time.
 
 ## 7. FEEDBACK
 
-If you give feedback about the Services to Microsoft, you give to Microsoft, without charge, the right to use, share, and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any intellectual property rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because Microsoft includes your feedback in them. These rights survive expiration or termination of this agreement.
+If you give feedback about the Services to Microsoft, you give to Microsoft, without charge, the right to use, share, and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any intellectual property rights needed for their products, technologies, and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because Microsoft includes your feedback in them. These rights survive expiration or termination of this agreement.
 
 ## 8. PUBLICITY
 
@@ -135,7 +135,7 @@ You grant Microsoft the non-exclusive right to use your name, trademarks and ser
 
 ### 8.2. Approvals
 
-You will have the right to approve, before Microsoft’s first use, any Publicity Materials that include Marks or Name and Likeness. You will promptly review and either approve or disapprove them (such approval not to be unreasonably withheld) within 5 business days of receipt. Failure to respond within such 5-day period will be deemed approval. You are solely responsible for bringing to Microsoft’s attention any factual errors or removing your Confidential Information from Publicity Materials.
+You will have the right to approve, before Microsoft’s first use, any Publicity Materials that include Marks or Name and Likeness. You will promptly review and either approve or disapprove them (such approval not to be unreasonably withheld) within five business days of receipt. Failure to respond within such five-day period will be deemed approval. You are solely responsible for bringing to Microsoft’s attention any factual errors or removing your Confidential Information from Publicity Materials.
 
 ## 9. DISCLAIMER OF WARRANTIES
 
@@ -163,15 +163,15 @@ The laws of the State of Washington govern this Agreement. If federal jurisdicti
 
 ### 12.2. Severability
 
-If any court of competent jurisdiction determines that any provision of this Agreement is illegal, invalid or unenforceable, the remaining provisions will remain in full force and effect. 
+If any court of competent jurisdiction determines that any provision of this Agreement is illegal, invalid, or unenforceable, the remaining provisions will remain in full force and effect. 
 
 ### 12.3. No assignment
 
-LLicensee may not assign this Agreement, or any rights or duties under it, directly or indirectly (e.g., by merger, consolidation, reorganization, or transfer of control), by operation of contract, law, or otherwise, except with Microsoft’s express written consent. 
+Licensee may not assign this Agreement, or any rights or duties under it, directly or indirectly (for example by merger, consolidation, reorganization, or transfer of control), by operation of contract, law, or otherwise, except with Microsoft’s express written consent. 
 
 ### 12.4. Entire Agreement
  
-This Agreement constitutes the entire agreement between the parties ith respect to its subject matter, and supersedes all prior and contemporaneous communications (including all written or oral agreements, representations or understandings) regarding such subject matter. Each party irrevocably and unconditionally waives any right it may have to claim damages for, and/or to rescind this Agreement because of a breach of any warranty not contained in this Agreement, or any misrepresentation whether or not contained in this Agreement, unless such misrepresentation was made fraudulently. Nothing in this clause will exclude liability for a fraudulent misrepresentation.
+This Agreement constitutes the entire agreement between the parties with respect to its subject matter, and supersedes all prior and contemporaneous communications (including all written or oral agreements, representations, or understandings) regarding such subject matter. Each party irrevocably and unconditionally waives any right it may have to claim damages for, and/or to rescind this Agreement because of a breach of any warranty not contained in this Agreement, or any misrepresentation whether or not contained in this Agreement, unless such misrepresentation was made fraudulently. Nothing in this clause will exclude liability for a fraudulent misrepresentation.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

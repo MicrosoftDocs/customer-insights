@@ -1,9 +1,9 @@
 ---
 title: Funnel reports
 description: How to use funnel reports to understand how audience makes decisions.
-ms.reviewer: kamacdon
-ms.author: v-salash
-author: pickwick129
+ms.reviewer: mhart
+ms.author: kamacdon
+author: kamacdon
 ms.date: 04/14/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
