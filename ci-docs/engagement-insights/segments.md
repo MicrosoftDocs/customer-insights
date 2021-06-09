@@ -4,7 +4,7 @@ description: How to create, edit, and delete segments and where to use them.
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 06/02/2021
+ms.date: 06/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
