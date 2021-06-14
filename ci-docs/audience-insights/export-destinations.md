@@ -1,7 +1,7 @@
 ---
 title: "Export data from Customer Insights"
 description: "Manage exports to share data."
-ms.date: 05/14/2021
+ms.date: 06/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -21,7 +21,7 @@ Go to **Data** > **Exports** to view the exports page. All user roles have acces
 
 To set up or edit an export, you need to have connections available to you. Connections depend on your [user role](permissions.md):
 - Administrators have access to all connections. They can also create new connections when setting up an export.
-- Contributors can have access to specific connections. They depend on administrators to configure and share connections. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+- Contributors can have access to specific connections. They depend on administrators to configure and share connections. The exports list shows contributors whether they can edit or only view an export in the **Your permissions** column. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 - Viewers can only view existing exports but not create them.
 
 ### Define a new export
@@ -56,7 +56,7 @@ To set up or edit an export, you need to have connections available to you. Conn
 
 ## View exports and export details
 
-After creating export destinations, they are listed on **Data** > **Exports**. All users can see which data is shared and its latest status.
+After creating export destinations, they're listed on **Data** > **Exports**. All users can see which data is shared and its latest status.
 
 1. Go to **Data** > **Exports**.
 
@@ -68,11 +68,11 @@ After creating export destinations, they are listed on **Data** > **Exports**. A
 
 Each export you configure has a refresh schedule. During a refresh, the system looks for new or updated data to include in an export. By default, exports are run as part of every [scheduled system refresh](system.md#schedule-tab). You can customize the refresh schedule or turn it off to run exports manually.
 
-Export schedules depend on the state of your environment. If there are [dependencies](system.md#refresh-policies) being updated when a scheduled export should start, the system will first finish running the dependencies and then run the export. You can see when an export was last refreshed in column **Refreshed**.
+Export schedules depend on the state of your environment. If there are updates on [dependencies](system.md#refresh-policies) in progress when a scheduled export should start, the system will first complete the dependencies and then run the export. You can see when an export was last refreshed in column **Refreshed**.
 
 ### Schedule exports
 
-You can define custom refresh schedules for individual exports or a several exports at once. The currently defined schedule is listed in the **Schedule** column of the export list. The permission to change the schedule is the same as for [editing and defining exports](export-destinations.md#set-up-a-new-export). 
+You can define custom refresh schedules for individual exports or several exports at once. The currently defined schedule is listed in the **Schedule** column of the export list. The permission to change the schedule is the same as for [editing and defining exports](export-destinations.md#set-up-a-new-export). 
 
 1. Go to **Data** > **Exports**.
 
@@ -82,11 +82,11 @@ You can define custom refresh schedules for individual exports or a several expo
 
 1. In the **Schedule export** pane, set the **Schedule run** to **On** to run the export automatically. Set it to **Off** to refresh it manually.
 
-1. For automatically refreshed exports, choose a **Recurrence** value and specify the details for it. The time defined applies to all instances of a recurrence. This is the time when an export should start refreshing.
+1. For automatically refreshed exports, choose a **Recurrence** value and specify the details for it. The time defined applies to all instances of a recurrence. It's the time when an export should start refreshing.
 
 1. Apply and activate your changes by selecting **Save**.
 
-When editing the schedule for several exports, you need to make an additional choice under **Keep or override schedules**:
+When editing the schedule for several exports, you need to make a selection under **Keep or override schedules**:
 - **Keep individual schedules**: Persist the previously defined schedule for the selected exports and only disable or enable them.
 - **Define new schedule for all selected exports**: Override the existing schedules of the selected exports.
 
@@ -94,7 +94,7 @@ When editing the schedule for several exports, you need to make an additional ch
 
 To export data without waiting for a scheduled refresh, go to **Data** > **Exports**.
 
-- To run all exports, select **Run all** in the command bar. This will only run exports which have an active schedule.
+- To run all exports, select **Run all** in the command bar. This action will only run exports that have an active schedule.
 - To run a single export, select it in the list and select **Run** in the command bar. That's how you run exports with no active schedule. 
 
 ## Remove an Export
