@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A funnel report collects information about the steps that occur during a customer journey through your website. It helps you understand how an audience progresses through a process and identifies drop-off points. For example, you can use a funnel report to identify paths and touchpoints your customers are taking before they make a purchase. A funnel report provides data to inform decisions and identify areas for optimization and process improvements.
+A funnel report collects information about the steps that occur during a customer journey through your website. It helps you understand how an audience progresses through a process and identifies drop-off points. For example, you can use a funnel report to identify paths your customers take before they make a purchase. A funnel report provides data to inform decisions and identify areas for optimization and process improvements.
 
 ## Create a funnel report
 
@@ -33,7 +33,7 @@ To create the funnel report, specify the steps that you want to include and the 
 
 1. Use **Step criteria** to specify the activity's dimension. [Dimensions](dimensions.md) are attributes that can describe, filter, or group data.
 
-1. Optionally, You can configure multi-condition funnel steps. Select **Add criteria** to specify more dimensions in a step. Additional criteria must use the same activity type. You can choose if multiple conditions are connected with an AND or an OR operator.
+1. Optionally, you can configure multi-condition funnel steps. Select **Add condition** to specify more dimensions in a step. Additional criteria must use the same activity type. You can choose if multiple conditions are connected with an AND or an OR operator.
 
 1. Select **Add step** until you complete all the steps you want in the report.
 
@@ -41,7 +41,7 @@ To create the funnel report, specify the steps that you want to include and the 
 
 ### Example: Fourth Coffee company funnel report
 
-The following scenario demonstrates one way of using a funnel report. An analyst with the Fourth Coffee company wants to understand the impact of a recent promotion on subscription rates. She creates a funnel report to identify customer activity. It starts when customers arrive on the company home page until they use the subscription promotion code. The analyst creates a funnel report with the following steps:
+The following scenario demonstrates one way of using a funnel report. An analyst with the Fourth Coffee company wants to understand the influence of a recent promotion on subscription rates. The analyst creates a funnel report to identify customer activity. It starts when customers arrive on the company home page until they use the subscription promotion code. The analyst creates a funnel report with the following steps:
 
 Step 1: Customers who land on the homepage   
 Step 2: Customers who make a purchase   
@@ -54,7 +54,7 @@ This funnel lets you see the number of users who used the promotion code after a
 
 ### Configure advanced settings 
 
-Funnel reports let you define a limit on the time it takes to complete all steps of a funnel. For example, you can set the time to complete the funnel to four days. This setting will only count successful subscription sign-ups that ocurred within four days of a user visiting the homepage.
+Funnel reports let you define a limit on the time it takes to complete a funnel. For example, you can set the time to complete the funnel to four days. This setting will only count successful subscription sign-ups that occurred within four days of a user visiting the homepage.
 
 1. Go to **Funnels** to open the **Funnels library**.
 
