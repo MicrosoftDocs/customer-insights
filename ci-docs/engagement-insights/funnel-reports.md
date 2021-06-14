@@ -4,7 +4,7 @@ description: How to use funnel reports to understand how audience makes decision
 ms.reviewer: mhart
 ms.author: kamacdon
 author: kamacdon
-ms.date: 04/14/2021
+ms.date: 06/14/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -31,7 +31,9 @@ To create the funnel report, specify the steps that you want to include and the 
 
 1. Select an **Activity**. An activity records when a user views a page (**View** activity) or interacts with content (**Action** activity).
 
-1. Use **Step criteria** to specify the activity's dimension. Dimensions are attributes that can describe, filter, or group data.
+1. Use **Step criteria** to specify the activity's dimension. [Dimensions](dimensions.md) are attributes that can describe, filter, or group data.
+
+1. Optionally, You can configure multi-condition funnel steps. Select **Add criteria** to specify more dimensions in a step. Additional criteria must use the same activity type. You can choose if multiple conditions are connected with an AND or an OR operator.
 
 1. Select **Add step** until you complete all the steps you want in the report.
 
@@ -49,6 +51,22 @@ Step 4: Subscription sign-up
 :::image type="content" source="media/funnel-report-example.png" alt-text="funnel report example":::
   
 This funnel lets you see the number of users who used the promotion code after a one-time purchase to sign up for the subscription program.
+
+### Configure advanced settings 
+
+Funnel reports let you define a limit on the time it takes to complete all steps of a funnel. For example, you can set the time to complete the funnel to four days. This setting will only count successful subscription sign-ups that ocurred within four days of a user visiting the homepage.
+
+1. Go to **Funnels** to open the **Funnels library**.
+
+1. Select a name to open the report. 
+
+1. In the **Funnel Editor** pane, select **Advanced settings**. 
+
+1. Set Limit funnel completion time to **On**.
+
+1. Choose the time the funnel must have been completed in the **Set limit to** drop-down list.
+
+1. Select **Save** to apply your changes.
 
 ## Manage funnel reports
 
@@ -121,21 +139,3 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 
 1. Select the step that you want to remove and select **Delete**.
 
-### Multi-condition funnel steps 
-1. To create funnel steps with multiple conditions, select **Add Condition** 
-
-1. Multi-condition steps must be of the same activity type. 
-
-1. Select the operator for your multi-condition step; either AND or OR. 
-
-1. Identify the dimension for your multi-condition step. 
-
-1. Save the step. 
-
-### Advanced settings 
-
-1. Funnel reports offer an advanced setting that allows you to limit the maximum completion time for your funnel report. 
-
-For example: if you limit the time completion to 4 days, the funnel must have been completed within a 4 day time period. 
-
-1. Select advanced settings to turn ON maximum time completion, and then select the maximum time the funnel must have been completed in. 
