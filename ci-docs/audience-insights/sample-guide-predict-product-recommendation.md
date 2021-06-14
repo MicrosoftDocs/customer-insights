@@ -60,7 +60,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. In the **Name** field on the side pane, rename your data source from **Query** to **eCommercePurchases**.
 
-1. Save the data source.
+1. **Save** the data source.
 
 
 ### Ingest customer data from loyalty schema
@@ -78,11 +78,11 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
 
-1. Save the data source.
+1. **Save** the data source.
 
 ## Task 2 - Data unification
 
-After ingesting the data we now begin the **Map, Match, Merge** process to create a unified customer profile. For more information, see [Data unification](data-unification.md).
+After ingesting the data, we now begin the data unification process to create a unified customer profile. For more information, see [Data unification](data-unification.md).
 
 ### Map
 
@@ -151,7 +151,7 @@ With the unified customer profiles in place, we can now run the subscription chu
 
    - **Number of products**: Set this value to **5**. This setting defines how many products you want to recommend to your customers.
 
-   - **Suggest products customers have recently purchased?**: Select **Yes** to indicate that you want to include products in the recommendation that your customers have purchased before.
+   - **Repeat purchases expected**: Select **Yes** to indicate that you want to include products in the recommendation that your customers have purchased before.
 
    - **Look back window:** Select at least **365 days**. This setting defines how far the model will look back at the customer's activity to use it as input to their recommendations.
    

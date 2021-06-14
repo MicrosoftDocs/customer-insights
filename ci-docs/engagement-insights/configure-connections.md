@@ -1,9 +1,9 @@
 ---
 title: Configure connections
 description: How set up and manage connections to audience insights.
-author: m-hartmann
-ms.reviewer: ruthai
-ms.author: mhart
+author: mochimochi016
+ms.reviewer: mhart
+ms.author: jefhar
 ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 

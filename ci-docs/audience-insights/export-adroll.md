@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to AdRoll (preview)
+# Export segments to AdRoll (preview)
 
 Export segments of unified customer profiles to AdRoll and use them for advertising. 
 

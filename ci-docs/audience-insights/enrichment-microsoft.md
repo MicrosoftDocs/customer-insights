@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with data from Microsoft"
 description: "Use proprietary data from Microsoft to enrich your customer data with brand and interest affinities."
-ms.date: 04/09/2021
+ms.date: 06/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -26,7 +26,7 @@ To configure interest affinities enrichment, go to the **Discover** tab and sele
 
 ## How we determine affinities
 
-We use Microsoft’s online search data to find affinities for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest determines how much affinity a demographic segment, compared to other segments, has to that brand or interest. brand or interest.
+We use Microsoft’s online search data to find affinities for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest determines how much affinity a demographic segment, compared to other segments, has to that brand or interest.
 
 ## Affinity level and score
 
@@ -64,12 +64,10 @@ A guided experience helps you through the configuration of the enrichments.
 
 ### Define your brands or interests
 
-Select one of the following options:
+Choose up to five brands or interests using one or both of these options:
 
-- **Industry**: The system identifies the top brands or interests relevant to your industry and enriches your customer data with them.
-- **Choose your own**: Select up to five items from the list of brands or interests that are most relevant to your organization.
-
-To add a brand or interest, enter it in the input area to get suggestions based on matching terms. If we don't list a brand or interest you're looking for, send us feedback using the **Suggest** link.
+- **Industry**: Select your industry from the drop-down list and then choose from the top brands or interests for that industry.
+- **Choose your own**: Enter a brand or interest that is relevant to your organization and then choose from the matching suggestions. If we don't list a brand or interest you're looking for, send us feedback using the **Suggest** link.
 
 ### Review enrichment preferences
 

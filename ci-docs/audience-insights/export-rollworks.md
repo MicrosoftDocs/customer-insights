@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to RollWorks (preview)
+# Export segments to RollWorks (preview)
 
 Export segments of unified customer profiles to RollWorks and use them for advertising. 
 

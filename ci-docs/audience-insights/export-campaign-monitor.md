@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Campaign Monitor (preview)
+# Export segments to Campaign Monitor (preview)
 
 Export segments of unified customer profiles to Campaign Monitor and use them for marketing activities.
 
