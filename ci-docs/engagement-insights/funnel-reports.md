@@ -4,7 +4,7 @@ description: How to use funnel reports to understand how audience makes decision
 ms.reviewer: mhart
 ms.author: kamacdon
 author: kamacdon
-ms.date: 06/14/2021
+ms.date: 06/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -35,6 +35,8 @@ To create the funnel report, specify the steps that you want to include and the 
 
 1. Optionally, you can configure multi-condition funnel steps. Select **Add condition** to specify more dimensions in a step. Additional criteria must use the same activity type. You can choose if multiple conditions are connected with an AND or an OR operator.
 
+   :::image type="content" source="media/funnel-add-condition.png" alt-text="Funnel editor showing the step configuration with multi-condition steps.":::
+
 1. Select **Add step** until you complete all the steps you want in the report.
 
 1. Select **Save**, name the report, and **Save** again. 
@@ -63,6 +65,8 @@ Funnel reports let you define a limit on the time it takes to complete a funnel.
 1. In the **Funnel Editor** pane, select **Advanced settings**. 
 
 1. Set Limit funnel completion time to **On**.
+
+   :::image type="content" source="media/funnel-limit-time.png" alt-text="Funnel editor showing advanced setting and options to limit time to complete a funnel.":::
 
 1. Choose the time the funnel must have been completed in the **Set limit to** drop-down list.
 
