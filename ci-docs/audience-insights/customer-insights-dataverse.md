@@ -1,7 +1,7 @@
 ---
 title: "Customer Insights data in Microsoft Dataverse"
 description: "Use Customer Insights entities as tables in Microsoft Dataverse."
-ms.date: 05/07/2021
+ms.date: 06/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -19,7 +19,7 @@ Customer Insights provides the option to make output entities available in [Micr
 
 **Organizations with existing Dataverse environments**
 
-Organizations that already use Dataverse can choose to [use one of their existing Dataverse environments](manage-environments.md#create-an-environment-in-an-existing-organization) when creating the audience insights environment. By providing the URL to the Dataverse environment, it's attaching to their new audience insights environment. To ensure the best possible performance, Customer Insights and Dataverse environments must be hosted in the same region.
+Organizations that already use Dataverse can [use one of their existing Dataverse environments](manage-environments.md#create-an-environment-in-an-existing-organization) when an administrator sets up audience insights. By providing the URL to the Dataverse environment, it's attaching to their new audience insights environment. To ensure the best possible performance, Customer Insights and Dataverse environments must be hosted in the same region.
 
 To attach a Dataverse environment, expand the **Advanced settings** when creating the audience insights environment. Provide the **Microsoft Dataverse environment URL** and select the checkbox to **Enable data sharing**.
 
@@ -27,7 +27,7 @@ To attach a Dataverse environment, expand the **Advanced settings** when creatin
 
 **New organization**
 
-If a new organization is created when signing up for Customer Insights, it will automatically get a new Dataverse environment during the provisioning process.
+If you create a new organization when setting up Customer Insights, you'll automatically get a new Dataverse environment.
 
 > [!NOTE]
 > If your organizations already uses Dataverse in their tenant, it’s important to remember that [Dataverse environment creation is controlled by an admin](/power-platform/admin/control-environment-creation.md). For example, if a you're setting up a new audience insights environment with your organizational account and the admin has disabled the creation of Dataverse trial environments for everyone except admins, you can't create a new trial environment.
@@ -48,7 +48,7 @@ Some output entities from audience insights are available as tables in Dataverse
 
 ### CustomerProfile
 
-This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile can vary based on the entities that are ingested, unified, and attributes that are used in the merge process. A typical customer profile schema contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile depends on the entities and attributes used in the merge process. A customer profile schema usually contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
 
 ### AlternateKey
 
@@ -59,7 +59,7 @@ The AlternateKey table contains keys of the entities, which participated in the 
 |DataSourceName    |String         | Name of the data source. For example: `datasource5`        |
 |EntityName        | String        | Name of the entity in audience insights. For example: `contact1`        |
 |AlternateValue    |String         |Alternative ID that is mapped to the customer ID. Example: `cntid_1078`         |
-|KeyRing           | Multiline text        | JSON value  </br> Sample: [{"dataSourceName":" testdatasource ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
+|KeyRing           | Multiline text        | JSON value  </br> Sample: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
 |CustomerId         | String        | ID of the unified customer profile.         |
 |AlternateKeyId     | GUID         |  AlternateKey deterministic GUID based on msdynci_identifier       |
 |msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Sample: `testdatasource|contact1|cntid_1078`    |
@@ -115,7 +115,7 @@ This table contains the output of the model predictions.
 | Column               | Type        | Description                                          |
 |----------------------|-------------|------------------------------------------------------|
 | CustomerId           | String      | Customer Profile ID                                  |
-| ModelProvider        | String      | Name of the provider of the model                                       |
+| ModelProvider        | String      | Name of the provider of the model                                      |
 | Model                | String      | Model name                                                |
 | Values               | JSON String | List of attributes produced by the model |
 | msdynci_predictionid | GUID        | Deterministic GUID generated from msdynci_identifier | 
