@@ -11,14 +11,18 @@ ms.author: wimohabb
 manager: shellyha
 ---
 
+
+<!-- In first line (20), should it be "based on your"? -->
+
+
 # Work with Customer Insights APIs
 
 Dynamics 365 Customer Insights provides APIs to build your own applications based you data in Customer Insights.
 
 > [!IMPORTANT]
-> Details of these APIs, are listed on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.
+> Details of these APIs are listed on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.
 
-This article guides you to access to the Customer Insights APIs, create an Azure App Registration, and help you get started with the available client libraries.
+This article describes how to access the Customer Insights APIs, create an Azure App Registration, and get started with the available client libraries.
 
 ## Get started trying the Customer Insights APIs
 
@@ -27,6 +31,7 @@ This article guides you to access to the Customer Insights APIs, create an Azure
 1. To enable APIs on your Customer Insights environment, go to **Admin** > **Permissions**. You'll need admin permissions to do so.
 
 1. Go to the **APIs** tab and select the **Enable** button.    
+ 
    Enabling the APIs creates a primary and secondary subscription key for your instance that gets used in the API requests. You can regenerate the keys by selecting the **Regenerate primary** or **Regenerate secondary** on **Admin** > **Permissions** > **APIs**.
 
    :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs":::
