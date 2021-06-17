@@ -40,7 +40,11 @@ This article describes how to access the Customer Insights APIs, create an Azure
 
 1. Choose an API operation and select **Try it**.
 
-1. In the side pane, set the value in the **Authorization** drop-down menu to **implicit**. The `Authorization` header gets with a bearer token added. Your subscription key will be automatically populated.
+
+<!-- Please check the second sentence below. Should it be "header gets added with a bearer token"? -->
+
+
+1. In the side pane, set the value in the **Authorization** dropdown menu to **implicit**. The `Authorization` header gets with a bearer token added. Your subscription key will be automatically populated.
   
 1. Optionally, add all necessary query parameters.
 
@@ -49,26 +53,34 @@ This article describes how to access the Customer Insights APIs, create an Azure
 The HTTP response will soon appear below.
 
 
-   :::image type="content" source="media/try-apis.gif" alt-text="Animated gif showing how to select test the APIs.":::
+<!-- In the alt text, is "select test" correct, or should it be one or the other? -->
+
+
+   :::image type="content" source="media/try-apis.gif" alt-text="How to select test the APIs.":::
 
 ## Create a new app registration in the Azure portal
 
-These steps help you get started in using the Customer Insights APIs in an Azure application using delegated permissions. Make sure to have completed [Getting started section](#get-started-trying-the-customer-insights-apis) first.
+These steps help you get started with using the Customer Insights APIs in an Azure application using delegated permissions. Make sure to complete the [Getting started section](#get-started-trying-the-customer-insights-apis) first.
 
 1. Sign in to the [Azure portal](https://portal.azure.com) with the account that can access the Customer Insights data.
 
 1. On the left, select **App registrations**.
 
+
+<!-- Should there be a comma after "New registion", or is a word missing? -->
+
+
 1. Select **New registration** provide an application name and choose the account type.
+ 
    Optionally, add a redirect URL. http://localhost is sufficient for developing an application on your local computer.
 
 1. On your new App registration, go to **API permissions**.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="Animated gif to set API permission in app registration.":::
+   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration.":::
 
 1. Select **Add a permission** and select **Customer Insights** in the side pane.
 
-1. For **Permission type**, select **Delegated permissions** and select the **user_impersonation** permission.
+1. For **Permission type**, select **Delegated permissions** and then select the **user_impersonation** permission.
 
 1. Select **Add permissions**. If you need to access the API without a user signing in, review the [Server-to-server application permissions](#server-to-server-application-permissions) section.
 
@@ -76,13 +88,16 @@ These steps help you get started in using the Customer Insights APIs in an Azure
 
 You can use the Application/Client ID for this app registration with the Microsoft Authentication Library (MSAL) to obtain a bearer token to send with your request to the API.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="Animated gif to grant admin consent.":::
+:::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent.":::
 
 For more information about MSAL, see [Overview of Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
 
+
+<!-- Be aware that "The new Azure portal app registration experience" is not the name of the page that the link opens. Maybe the page title has changed. -->
+
 For more information about app registration in Azure, see [The new Azure portal app registration experience](/azure/active-directory/develop/app-registration-portal-training-guide).
 
-For information on using the APIs our client libraries, see [Customer Insights client libraries](#customer-insights-client-libraries).
+For information on using the APIs in our client libraries, see [Customer Insights client libraries](#customer-insights-client-libraries).
 
 ### Server-to-server application permissions
 
@@ -94,7 +109,7 @@ The [app registration section](#create-a-new-app-registration-in-the-azure-porta
 
 1. Select the **APIs my organization uses** tab and choose **Dynamics 365 AI for Customer Insights** from the list. 
 
-1. For **Permission type**, select **Application permissions** and select the **CustomerInsights.Api.All** permission.
+1. For **Permission type**, select **Application permissions** and then select the **CustomerInsights.Api.All** permission.
 
 1. Select **Add permissions**.
 
@@ -102,9 +117,10 @@ The [app registration section](#create-a-new-app-registration-in-the-azure-porta
 
 1. Select **Grant admin consent for...** to complete the app registration.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="Animated gif to grant admin consent.":::
+   :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent.":::
 
-1. To conclude, we have to add the name of the app registration as a user in Customer Insights.    
+1. To conclude, we have to add the name of the app registration as a user in Customer Insights.  
+   
    Open Customer Insights, go to **Admin** > **Permissions** and select **Add user**.
 
 1. Search for the name of your app registration, select it from the search results, and select **Save**.
@@ -124,6 +140,7 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
 1. Search for **Microsoft.Dynamics.CustomerInsights.Api**.
 
 1. Select **Install** to add the package to the project.
+ 
    Alternatively, run this command in the **NuGet Package Manager Console**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
    :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project":::
@@ -132,16 +149,18 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
 
 1. Use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) to get an `AccessToken` using your existing [Azure app registration](#create-a-new-app-registration-in-the-azure-portal).
 
-1. After successfully authenticating and acquiring a token, construct a new or use an existing `HttpClient` with the additional **DefaultRequestHeaders "Authorization"** set to **Bearer <access token>** and **Ocp-Apim-Subscription-Key** set to the [**subscription key** from your Customer Insights environment](#get-started-trying-the-customer-insights-apis).    
+1. After successfully authenticating and acquiring a token, construct a new or use an existing `HttpClient` with the additional **DefaultRequestHeaders "Authorization"** set to **Bearer <access token>** and **Ocp-Apim-Subscription-Key** set to the [**subscription key** from your Customer Insights environment](#get-started-trying-the-customer-insights-apis).   
+ 
    Reset the **Authorization** header when appropriate. For example, when the token expired.
 
 1. Pass this `HttpClient` into the construction of the `CustomerInsights` client.
 
    :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient":::
 
-1. Make calls with the client to the "extension methods", for example, `GetAllInstancesAsync`. If access to the underlying `Microsoft.Rest.HttpOperationResponse` is preferred, use the "http message methods", for example `GetAllInstancesWithHttpMessagesAsync`.
+1. Make calls with the client to the "extension methods"—for example, `GetAllInstancesAsync`. If access to the underlying `Microsoft.Rest.HttpOperationResponse` is preferred, use the "http message methods"—for example, `GetAllInstancesWithHttpMessagesAsync`.
 
 1. The response will likely be of type `object` because the method can return multiple types (for example, `IList<InstanceInfo>` and `ApiErrorResult`). To check the return type, you can safely cast the objects into the response types specified on the [API details page](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) for that operation.    
+   
    If more information on the request is needed, use the **http message methods** to access the raw response object.
 
 ### NodeJS package
