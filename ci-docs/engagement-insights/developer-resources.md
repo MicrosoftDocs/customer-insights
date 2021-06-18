@@ -1,9 +1,9 @@
 ---
 title: Developer resources overview 
 description: Find information about SDKs and how to use them.
-ms.reviewer: britl
-ms.author: v-salash
-author: pickwick129
+author: britl
+ms.reviewer: mhart
+ms.author: britl
 ms.date: 05/10/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 

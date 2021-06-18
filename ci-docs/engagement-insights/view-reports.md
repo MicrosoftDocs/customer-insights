@@ -1,10 +1,10 @@
 ---
 title: View data reports
 description: Use the available reports to see real-time activity on your site.
-author: pickwick129
-ms.reviewer: darrin.wood
-ms.author: v-salash
-ms.date: 06/04/2021
+author: darrinw-docs
+ms.reviewer: mhart
+ms.author: darrinw
+ms.date: 06/18/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual

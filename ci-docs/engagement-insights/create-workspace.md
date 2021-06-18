@@ -1,10 +1,10 @@
 ---
 title: Create a workspace
 description: The purpose of a workspace and how to create one.
-author: pickwick129
-ms.reviewer: jusali
-ms.author: v-salash
-ms.date: 05/04/2021
+author: jusali
+ms.reviewer: mhart
+ms.author: jusali
+ms.date: 06/18/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to

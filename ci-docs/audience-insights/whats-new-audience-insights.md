@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 05/06/2021
+ms.date: 06/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -21,6 +21,44 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## May 2021 updates
+
+The updates in May 2021 include several features, performance upgrades, and bug fixes.
+
+### Data ingestion
+
+- **View or modify metadata or entity definition when attaching data from your Azure Data Lake Storage**
+  You can now view and edit metadata or entity definition in audience insights when attaching data from a Common Data Model folder in your Azure Data Lake Storage. This capability provides real-time feedback, model validation, and error checking. It allows you to edit both model.json and manifest.json seamlessly.
+
+### Extensibility
+
+- **Improved segment exports, custom schedule, and duplication**
+  You can now [see all exports for a specific segment](export-destinations.md#view-exports-and-export-details) in a list. This new view helps to manage how a specific segment is used and adapt existing or create new exports.    
+  You can [define custom refresh schedules](export-destinations.md#schedule-and-run-exports) for individual exports or several exports at once. Until now, all exports were run with every system refresh.    
+  Rather than creating a new export from scratch, you can start based on an existing one to save some time.
+
+- **Export segments to Microsoft Advertising**
+  We have extended our export destinations to include Microsoft Advertising. Create Customer Match audiences on Microsoft Advertising with your unified customer profile data and use these audiences for your advertising campaigns. For more information, see [Export segments to Microsoft Advertising](export-microsoft-advertising.md).
+
+- **Export segments to LinkedIn Ads**
+  We have extended our export destinations to include LinkedIn Ads and enable you to unlock Contact Targeting as well as Company Targeting through LinkedIn by exporting your unified customer profile data. For more information, see [Export segments to LinkedIn Ads](export-linkedin-ads.md).
+
+
+- **Export segments to Omnisend**
+  We have extended our export destinations to include Omnisend. Use the segments created in audience insights to generate campaigns, provide email marketing, and use specific groups of customers with Omnisend. For more information, see [Export segments to Omnisend](export-omnisend.md)
+
+### Predictions
+
+- **Input Data Usability Report**
+  The input data usability report provides a consolidated view of the errors and warnings that your out-of-box predictions may be generating. It also gives recommendations how to improve the model performance.    
+  The report is available after a model has completed its training process. It's created for each model separately, regardless of whether it completed successfully or not.
+  Currently, this feature is only available for the Transaction Churn model. For more information, see [Input data usability report](manage-predictions.md#input-data-usability-report).
+
+### Relationships
+
+- **Relationship visualizer**
+  The relationship visualizer view allows you to see all existing relationships between entities and their cardinality. Relationships are now organized in groups: user created, system, and inherited relationships. You can also export a view as an image. For more information, see [View relationships](relationships.md#view-relationships). 
 
 ## April 2021 updates
 

@@ -1,9 +1,9 @@
 ---
 title: Enable out-of-box profile reports
 description: How to create out-of-box profile reports grouped by gender, age, and county or region of origin.
-author: pickwick129
-ms.reviewer: m-hartmann
-ms.author: v-salash
+author: darrinw-docs
+ms.reviewer: mhart
+ms.author: darrinw
 ms.date: 05/03/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 

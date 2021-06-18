@@ -1,9 +1,9 @@
 ---
 title: Get started with engagement insights capability
 description: An overview of help resources to get started quickly. 
-ms.reviewer:  m-hartmann
-ms.author: v-salash
-author: pickwick129
+ms.reviewer: mhart
+ms.author: jefhar
+author: mochimochi016
 ms.date: 12/21/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 

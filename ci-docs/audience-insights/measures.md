@@ -29,7 +29,7 @@ This section walks you through creating a new measure from scratch. You can buil
 
 1. Select **Edit name** and provide a **Name** for the measure. 
    > [!NOTE]
-   > If your new measure configuration has only two fields, for exmample, CustomerID and one calculation, the output will be added as a new column to the system generated entity called Customer_Measure. And you will be able to see the measure’s value in the unified customer profile. Other measures will generate their own entities.
+   > If your new measure configuration has only two fields, for example, CustomerID and one calculation, the output will be added as a new column to the system generated entity called Customer_Measure. And you will be able to see the measure’s value in the unified customer profile. Other measures will generate their own entities.
 
 1. In the configuration area, choose the aggregation function from the **Select Function** drop-down menu. Aggregation functions include: 
    - **Sum**
