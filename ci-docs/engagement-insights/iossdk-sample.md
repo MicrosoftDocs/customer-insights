@@ -2,15 +2,14 @@
 title:  Run the iOS SDK sample
 description: Sample project to learn about the iOS SDK
 author: britl
-ms.reviewer: m-hartmann
-ms.author: v-salash
-ms.date: 05/07/2021
+ms.reviewer: mhart
+ms.author: britl
+ms.date: 06/18/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
 ms.manager: shellyha
 ---
-
 
 # Run the iOS SDK sample
 
@@ -31,7 +30,5 @@ This sample iOS project helps you understand how the SDK works in an app. You do
 1. In the `EIConfig.plist` file, replace the string `“YOUR-INGESTION-KEY”` in the field `ingestionKey` with your workspace ingestion key from engagement insights under **Admin** > **Workspace** > **Installation guide**.
 1. Select **Run** to start the sample project.
 1. View the events in your workspace.
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

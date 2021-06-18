@@ -4,7 +4,7 @@ description: Sample project to learn about the Android SDK
 author: britl
 ms.reviewer: m-hartmann
 ms.author: v-salash
-ms.date: 05/07/2021
+ms.date: 06/18/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
