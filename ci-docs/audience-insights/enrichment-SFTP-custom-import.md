@@ -13,13 +13,13 @@ manager: shellyha
 
 # Enrich customer profiles with custom data (preview)
 
-Secure File Transfer Protocol (SFTP) custom import enables you to import data that does not have to go through the process of data unification. It's a flexible, secure, and easy way to bring in your data. SFTP custom import can be used in combination with [SFTP export](export-sftp.md) that lets you export the customer profile data that is needed for enrichment. The data can then be processed, enriched, and SFTP custom import can be used to bring the enriched data back to the audience insights capability of Dynamics 365 Customer Insights.
+Secure File Transfer Protocol (SFTP) custom import enables you to import data that doesn't have to go through the process of data unification. It's a flexible, secure, and easy way to bring in your data. SFTP custom import can be used in combination with [SFTP export](export-sftp.md) that lets you export the customer profile data that is needed for enrichment. The data can then be processed and enriched, and SFTP custom import can be used to bring the enriched data back to the audience insights capability of Dynamics 365 Customer Insights.
 
 ## Prerequisites
 
 To configure SFTP custom import, the following prerequisites must be met:
 
-- You have the filename and location (path) of the file to be imported on the SFTP host.
+- You have the file name and location (path) of the file to be imported on the SFTP host.
 - There is a *model.json* file that specifies [the Common Data Model schema](/common-data-model/) for the data to be imported. This file must be in the same directory as the file to import.
 - An SFTP connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You'll need the user credentials, URL, and port number for the SFTP location where you want to import data from.
 
@@ -32,11 +32,11 @@ To configure SFTP custom import, the following prerequisites must be met:
 
    :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="SFTP custom import tile.":::
 
-1. Select a [connection](connections.md) from the drop-down. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **SFTP Custom Import** from the drop-down.
+1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **SFTP Custom Import** from the dropdown list.
 
 1. Select **Connect to Custom Import** to confirm the selected connection.
 
-1.	Select **Next** and enter the **Filename** and **Path** of the data file that you want to import.
+1.	Select **Next** and enter the **Path** and **Filename** of the data file that you want to import.
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Screenshot when entering data location.":::
 
@@ -50,21 +50,21 @@ You need to be an administrator to configure connections. Select **Add connectio
 
 1. Enter a name for the connection in the **Display name** box.
 
-1. Enter valid user name, password, and host URL for the STFP server the data to be imported resides on.
+1. Enter a valid username, password, and host URL for the SFTP server that the data to be imported resides on.
 
 1. Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox.
 
 1. Select **Verify** to validate the configuration.
 
-1. Once the verification has completed, the connection can be saved by clicking **Save**.
+1. Once the verification has completed, the connection can be saved by selecting **Save**.
 
-> [!div class="mx-imgBorder"]
+   > [!div class="mx-imgBorder"]
    > ![Experian connection configuration page](media/enrichment-SFTP-connection.png "Experian connection configuration page")
 
 
 ## Defining field mappings 
 
-The directory that contains the file to be imported on the SFTP server must also contain a *model.json* file. This file defines the schema to use for importing the data. The schema has to use [the Common Data Model](/common-data-model/) to specify the field mapping. A simple example of a model.json file looks like this:
+The directory that contains the file to be imported on the SFTP server must also contain a *model.json* file. This file defines the schema to use for importing the data. The schema has to use [Common Data Model](/common-data-model/) to specify the field mapping. A simple example of a model.json file looks like this:
 
 ```
 {
