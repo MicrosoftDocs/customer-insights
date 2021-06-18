@@ -55,7 +55,7 @@ To configure HERE Technologies enrichments, the following prerequisites must be 
 
 1. Provide a name for the enrichment. 
 
-1.Select **Save enrichment** after reviewing your choices.
+1. Select **Save enrichment** after reviewing your choices.
 
 ## Configure the connection for HERE Technologies 
 
