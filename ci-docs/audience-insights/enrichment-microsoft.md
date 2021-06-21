@@ -85,6 +85,12 @@ Map fields from your unified customer entity to define the demographic segment y
 
 The following formats and values are supported (values are not case-sensitive):
 
+
+
+
+<!-- Just checking - is it correct to have a Z at the end here? yyyy-MM-ddTHH:mm:ssZ  -->
+
+
 - **Date of Birth**: We recommend that date of birth is converted to DateTime type during data ingestion. Alternatively, it can be a string in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format "yyyy-MM-dd" or "yyyy-MM-ddTHH:mm:ssZ".
 - **Gender**: Male, Female, Unknown.
 - **Postal code**: Five-digit ZIP codes for United States, standard postal code everywhere else.
