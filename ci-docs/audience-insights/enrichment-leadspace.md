@@ -31,7 +31,7 @@ To configure Leadspace, the following prerequisites must be met:
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="Screenshot of the Leadspace tile.":::
 
-1. Select a [connection](connections.md) from the drop-down. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **Leadspace**. 
+1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **Leadspace**. 
 
 1. Select **Connect to Leadspace** to confirm the connection.
 
@@ -52,13 +52,13 @@ To configure Leadspace, the following prerequisites must be met:
 
 You need to be an administrator to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Leadspace tile.
 
-1. Select **Get Started** 
+1. Select **Get Started**. 
 
 1. Enter a name for the connection in the **Display name** box.
 
 1. Provide a valid Leadspace token.
 
-1. Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox
+1. Review and provide your consent for **Data privacy and compliance** by selecting **I agree**.
 
 1. Select **Verify** to validate the configuration.
 
@@ -76,12 +76,12 @@ For more information, see [Leadspace APIs](https://support.leadspace.com/hc/en-u
 
 ## Next steps
 
-Build on top of your enriched customer data. Create [segments](segments.md), [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
+Build on top of your enriched customer data. Create [segments](segments.md) and [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
 
 ## Data privacy and compliance
 
 When you enable Dynamics 365 Customer Insights to transmit data to Leadspace, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Leadspace meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights Administrator can remove this enrichment at any time to discontinue use of this functionality.
+Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
