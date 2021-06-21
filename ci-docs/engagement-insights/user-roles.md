@@ -26,10 +26,13 @@ The following chart identifies permissions for each role.
 | Create environments (creator automatically becomes environment admin) | X* | X* | X* | X* |  
 | Configure environment (environment members, delete environment) | X |  |  |  |  
 | Create workspaces | X |  |  |  |  
-| Configure workspaces (workspace members, pre-defined reports, delete workspace) | X | X |  |  |  
+| Configure workspaces (workspace members, delete workspace) | X | X |  |  |  
 | Configure events and refined events | X | X | |  |  
 | View workspace events and refined events | X | X | |  |  
-| View workspace resources (reports, segments, and metric)| X | X |  |  |  
+| View workspace resources (reports, segments, and metric)| X | X | X | X |  
+| Create custom reports and funnels | X | X | X | X |  
+| Create base metrics and dimensions| X | X |  |  |  
+| Create segments| X | X | X | X |  
 
 *Can only create trial environments in preview. 
 
