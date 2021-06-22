@@ -79,9 +79,9 @@ Configure the new activity with the following mapping:
 
 - **Details:** Signal.Action.Name to represent the information to associate with the event. The selected property in this case indicates that the event is for email promotion.
 
-- **Activity type:** In this example, we choose the exsting activity type WebLog. This selection is a useful filter option to run prediction models or create segments based on this activity type.
+- **Activity type:** In this example, we choose the existing activity type WebLog. This selection is a useful filter option to run prediction models or create segments based on this activity type.
 
-- **Set up relationship:** This important setting ties the activity to existing customer profiles. **Signal.User.Id** is the identifier configured in the SDK to be collected and that relates to the user ID in other data sources that are configured in audience insights. In this example, we configure the relationship between Signal.User.Id and RetailCustomers:CustomerRetailId, which is the primary key that was deinfed in the map step of the data unification process.
+- **Set up relationship:** This important setting ties the activity to existing customer profiles. **Signal.User.Id** is the identifier configured in the SDK to be collected and that relates to the user ID in other data sources that are configured in audience insights. In this example, we configure the relationship between Signal.User.Id and RetailCustomers:CustomerRetailId, which is the primary key that was identified in the map step of the data unification process.
 
 
 After processing the activities, you can review customer records and open a customer card to see activities from engagement insights in the timeline. 
