@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A workspace is how you store and manage events and reports. A member is a user who can access a workspace. You can assign members to your workspace and define their roles and permissions. Engagement insights capability supports **Environment** and **Workspace admin** roles and **Environment** and **Workspace contributor** roles. The contributor roles are geared for an analyst who does not need to configure Engagement Insights.
+A workspace is how you store and manage events and reports. A member is a user who can access a workspace. You can assign members to your workspace and define their roles and permissions. Administrator roles manage workspaces and environments an configure engagement insights for other users. The contributor roles are geared towards analysts who don't not need to configure engagement insights but want to create their own reports, funnels, or segments.
 
 ## Permissions
   
