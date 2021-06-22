@@ -1,6 +1,6 @@
 ---
 title: "Export Customer Insights data to Adobe Experience Platform"
-description: "Learn how use audience insights segments in Adobe Experience Platform."
+description: "Learn how to use audience insights segments in Adobe Experience Platform."
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Use Customer Insights segments in Adobe Experience Platform (preview)
 
-As a user of audience insights for Dynamics 365 Customer Insights, you may have created segments to make your marketing campaigns more efficient by targeting relevant audiences. To use a segment from audience insights in Adobe Experience Platform and applications like Adobe Campaign Standard, you need to follow a few steps outlined in this article.
+As a user of audience insights in Dynamics 365 Customer Insights, you may have created segments to make your marketing campaigns more efficient by targeting relevant audiences. To use a segment from audience insights in Adobe Experience Platform and applications like Adobe Campaign Standard, you need to follow a few steps outlined in this article.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Process diagram of the steps outlined in this article.":::
 
@@ -50,19 +50,19 @@ With our target audience identified, we can configure the export from audience i
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Azure Blob Storage** or select **Set up** in the **Azure Blob Storage** tile:
+1. Select **Add connection** and choose **Azure Blob Storage** or select **Set up** in the **Azure Blob Storage** tile to configure the connection.
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Configuration tile for Azure Blob Storage."::: to configure the connection.
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Configuration tile for Azure Blob Storage."::: 
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter **Account name**, **Account key**, and **Container** for your Blob storage account where you want to export the segment to.  
+1. Enter **Account name**, **Account key**, and **Container** for your Blob Storage account where you want to export the segment to.  
       
-   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration. "::: 
+   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration."::: 
    
-    - To learn more about how to find the Blob storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
+    - To learn more about how to find the Blob Storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
     - To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 1. Select **Save** to complete the connection. 
@@ -75,7 +75,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. To create a new export, select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Azure Blob Storage section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the Azure Blob Storage section. If you don't see this section name, then no connections of this type are available to you.
 
 1. Choose the segment that you want to export. In this example, it’s **ChurnProneCustomers**.
 
@@ -90,7 +90,7 @@ You can now [export the segment on demand](export-destinations.md#run-exports-on
 > [!NOTE]
 > Ensure that the number of records in the exported segment are within the allowed limit of your Adobe Campaign Standard license.
 
-Exported data is stored in the Azure Blob storage container you configured above. The following folder path is automatically created in your container:
+Exported data is stored in the Azure Blob Storage container you configured above. The following folder path is automatically created in your container:
 
 *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
@@ -116,7 +116,7 @@ After defining the source connection, [configure a dataflow](https://experiencel
 
 ## Create an audience in Adobe Campaign Standard
 
-To send the email for this campaign, we will use Adobe Campaign Standard. After importing the data into Adobe Experience Platform, we need to [create an audience](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) in Adobe Campaign Standard using the data in Adobe Experience Platform.
+To send the email for this campaign, we'll use Adobe Campaign Standard. After importing the data into Adobe Experience Platform, we need to [create an audience](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) in Adobe Campaign Standard using the data in Adobe Experience Platform.
 
 Learn how to [use segment builder](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment) in Adobe Campaign Standard to define an audience based on the data in Adobe Experience Platform.
 
