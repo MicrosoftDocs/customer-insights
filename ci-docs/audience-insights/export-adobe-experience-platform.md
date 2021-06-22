@@ -118,6 +118,10 @@ After defining the source connection, [configure a dataflow](https://experiencel
 
 To send the email for this campaign, we'll use Adobe Campaign Standard. After importing the data into Adobe Experience Platform, we need to [create an audience](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) in Adobe Campaign Standard using the data in Adobe Experience Platform.
 
+
+<!-- The following link opens a 404 page. -->
+
+
 Learn how to [use segment builder](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment) in Adobe Campaign Standard to define an audience based on the data in Adobe Experience Platform.
 
 ## Create and send the email using Adobe Campaign Standard
