@@ -22,7 +22,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 ## Known limitations
 
-- Up to 10 million customer profile per export to Facebook Ads Manager.
+- Up to 10 million customer profiles per export to Facebook Ads Manager.
 - Export to Facebook Ads Manager is limited to segments.
 - Create or update custom audiences in Facebook of type *customer list* only.
 - Exporting segments with a total of 10 million profiles can take up to 90 minutes to complete.
@@ -41,15 +41,15 @@ Before users can create an export, an administrator must configure the connectio
 
 1. Authenticate with Facebook Ads: 
 
-   1. Select **Continue with Facebook** to sign in to your Facebook Ad Account.
+   1. Select **Continue with Facebook** to sign in to your Facebook Ads account.
 
    1. Allow the **ads_management** permission after authenticating with Facebook.
 
    1. Select the **Facebook Ads Account** that you want to work with.
 
-   1. Select an **Existing custom audience** from the drop-down list or create a **New custom audience**. For more information, see [**Audiences in Facebook Ads Manager**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).
+   1. Select an **Existing custom audience** from the dropdown list or create a **New custom audience**. For more information, see [**Audiences in Facebook Ads Manager**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).
       > [!NOTE]
-      > You can only create or update custom audiences on Facebook of the type *customer list* with this export. In some cases, you see custom audiences of different types in the drop-down list. Selecting a different type than *customer list* will result in a failing export. 
+      > You can only create or update custom audiences on Facebook of the type *customer list* with this export. In some cases, you see custom audiences of different types in the dropdown list. Selecting a different type than *customer list* will result in a failing export. 
 
 1. Review the **Data privacy and compliance** and select **I agree**.
 
@@ -63,18 +63,18 @@ You can configure this export if you have access to a connection of this type. F
 
 1. To create a new export, select **Add destination**. 
 
-1. In **Connection for export** choose a connection from the **Facebook Ads Manager** section. If you don't see this section name, there are no connections of this type available to you.
+1. In **Connection for export** choose a connection from the **Facebook Ads Manager** section. If you don't see this section name, then no connections of this type are available to you.
 
 1. In the **Choose your key identifier field**, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager. 
 
 1. Give your connection a recognizable name in the **Display name** field.
 
 1. Map the corresponding attributes from your unified customer entity for the selected key identifier.
-   > [TIP]
+   > [!TIP]
    > The best chances for a match occur if you select **Email** as key identifier. Adding additional identifiers may improve the matching.
 
 1. Select **Add attribute** to map more attributes to send to Facebook Ads Manager. Attributes from Facebook Ads Manager are mapping to the following user-friendly names: 
-    **FN** = **First Name**, **LN** = **Last Name**, **FI** = **First Initial**, **PHONE** = **Phone**, **GEN** = **Gender**, **DOB** = **Date of birth**, **ST** = **State**, **CT** = **City**, **ZIP** = **Postal code / Zip code**, **COUNTRY** = **Country / Region**
+    **FN** = **First Name**, **LN** = **Last Name**, **FI** = **First Initial**, **PHONE** = **Phone**, **GEN** = **Gender**, **DOB** = **Date of birth**, **ST** = **State**, **CT** = **City**, **ZIP** = **Postal code / ZIP Code**, **COUNTRY** = **Country / Region**
 
 1. Select the segments you want to export.
 
@@ -83,12 +83,13 @@ You can configure this export if you have access to a connection of this type. F
 Saving an export doesn't run the export immediately.
 
 The export runs with every [scheduled refresh](system.md#schedule-tab). 
+
 You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
 
 ## Data privacy and compliance
 
 When you enable Dynamics 365 Customer Insights to transmit data to Facebook Ads Manager, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Facebook Ads meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
+Your Dynamics 365 Customer Insights administrator can remove this export destination at any time to discontinue use of this functionality.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
