@@ -15,7 +15,7 @@ manager: shellyha
 
 The **Exports** page shows you all configured exports. Exports share specific data with various applications. They can include customer profiles or entities, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md).
 
-Go to **Data** > **Exports** to view the exports page. All user roles have access to view configured exports. Use of the search field in the command bar to find exports by their name, connection name, or connection type.
+Go to **Data** > **Exports** to view the exports page. All user roles can view configured exports. Use the search field in the command bar to find exports by their name, connection name, or connection type.
 
 ## Set up a new export
 
@@ -60,7 +60,7 @@ After creating export destinations, they're listed on **Data** > **Exports**. Al
 
 1. Go to **Data** > **Exports**.
 
-1. Users without edit permissions select **View** instead of **Edit** see the export details.
+1. Users without edit permissions select **View** instead of **Edit** to see the export details.
 
 1. The side pane shows the configuration of an export. Without edit permissions, you can't change values. Select **Close** to return to the exports page.
 
@@ -68,7 +68,11 @@ After creating export destinations, they're listed on **Data** > **Exports**. Al
 
 Each export you configure has a refresh schedule. During a refresh, the system looks for new or updated data to include in an export. By default, exports are run as part of every [scheduled system refresh](system.md#schedule-tab). You can customize the refresh schedule or turn it off to run exports manually.
 
-Export schedules depend on the state of your environment. If there are updates on [dependencies](system.md#refresh-policies) in progress when a scheduled export should start, the system will first complete the dependencies and then run the export. You can see when an export was last refreshed in column **Refreshed**.
+
+<!-- Please check the rewording below. -->
+
+
+Export schedules depend on the state of your environment. If there are updates in progress on [dependencies](system.md#refresh-policies) when a scheduled export should start, the system will first complete the updates and then run the export. You can see when an export was last refreshed in column **Refreshed**.
 
 ### Schedule exports
 
