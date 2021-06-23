@@ -4,7 +4,7 @@ description: The purpose of a workspace and how to create one.
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali
-ms.date: 04/29/2021
+ms.date: 06/18/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -25,11 +25,11 @@ The process of creating a workspace includes setting up the *environment* to org
 
 1. Select **New** from the workspace switcher.
 
-:::image type="content" source="media/new-workspace.png" alt-text="Customer insights page with callout on navigation pane and description":::
+   :::image type="content" source="media/new-workspace.png" alt-text="Customer insights page with callout on navigation pane and description":::
 
-
-2. Choose the environment from the list or select **Create new environment**.
+1. Choose the environment from the list or select **Create new environment**.
 1. Enter a **Workspace name**.
+1. Choose the platform you want to measure.
 1. Select **Finish** if you're done. 
 1. You can add members and assign their permission level from the **Role** list. For more information, see [Roles and permissions](user-roles.md). Then select **Finish** to create the workspace or **Next** to install code.
 1. Install the code snippet to start receiving data and then select **Done**.

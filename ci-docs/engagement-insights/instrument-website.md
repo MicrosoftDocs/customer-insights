@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This article describes how an administrator installs the code snippet on a website. You'll start seeing events in your workspace shortly after adding the script to your website. For more information, see [Manage workspaces and environment](manage-environments-workspaces.md).
+This article describes how an administrator installs the code snippet on a website. You'll start seeing events in your workspace shortly after adding the script to your website. For more information, see [Manage workspaces and environment](manage-environments-workspaces.md). To capture events in mobile apps, see [Developer resources overview](developer-resources.md).
 
 
 ### Prerequisites
