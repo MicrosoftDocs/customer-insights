@@ -4,7 +4,7 @@ description: How to create, rename, and delete workspaces and environments.
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali
-ms.date: 06/09/2021
+ms.date: 06/23/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -17,10 +17,9 @@ ms.manager: shellyha
 
 ## Overview
 
-A workspace is a space to store and manage events and reports. It’s where you can view user activity in real time. When you create a workspace, you select the type of data to send to the workspace. Currently, only web data is supported.
+A workspace is a space to store and manage events and reports. It’s where you can view user activity in real time. When you create a workspace, you select the type of data to send to the workspace. Currently, web data and mobile apps are supported.
 
-An environment is a space where you manage your workspaces and connections. How you use environments depends on your organization and your use case.
-For example, you can create:
+An environment is a space where you manage your workspaces and connections. How you use environments depends on your organization and your use case. For example, you can create:
 
 -	A single environment.
 -	Separate environments for test and production.
@@ -30,9 +29,9 @@ For example, you can create:
 
 ## Choose an environment and create a workspace 
 
- Every workspace needs to be in an environment. You can select a pre-existing environment or make a new one when you create a workspace. Then you can choose to add workspace members and start collecting data.
+Every workspace needs to be in an environment. You can select a pre-existing environment or make a new one when you create a workspace. Then you can choose to add workspace members and start collecting data.
 
-To create your first workspace
+**To create your first workspace**
 
 1. In engagement insights, select **New** from the workspace switcher. 
 
@@ -42,16 +41,18 @@ To create your first workspace
 
 1. Enter a name in **Workspace name**. 
 
+1. Select the type of environment you want to create, depending on whether you want to measure what happens on a website or in a mobile app. 
+
 1. You can add members and assign their permission level from the **Role** list. Then select **Finish** to create the workspace or **Next** to install code. 
 
 1. Install the code snippet to start receiving data and then select **Done**. 
 
 ## Manage a workspace
 
-You can maintain multiple workspaces concurrently in an environment. Your  [role](user-roles.md)  determines how you can work in them. 
+You can maintain multiple workspaces concurrently in an environment. Your [role](user-roles.md) determines how you can work in them. 
 
- - As a Workspace admin, you can rename existing workspaces or delete them. 
- - You must be an Environment admin or a Workspace admin to manage the workspace.
+ - You must be an environment admin or a workspace admin to manage the workspace.
+ - As a workspace admin, you can rename existing workspaces or delete them. 
 
 ### Edit a workspace name
 
@@ -106,7 +107,7 @@ At this time, you must first select a workspace that belongs to the environment.
 
 1. Select **Add members** to update members and [assign roles](user-roles.md). Currently, only **Environment admin** is available.
 
-1. If you set up a [connection to audience insights](configure-connections.md), you can select  **Allow access to profile data** to allow the member to see reports based on [user profiles](profile-reports.md).
+1. If you set up a [connection to audience insights](configure-connections.md), you can select **Allow access to profile data** to allow the member to see reports based on [user profiles](profile-reports.md).
 
 1. Select **Add members** to add them to your environment.
 
