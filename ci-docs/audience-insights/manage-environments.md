@@ -51,15 +51,15 @@ To create an environment:
    > [!div class="mx-imgBorder"]
    > ![Environment settings.](media/environment-settings-dialog.png)
 
-1. In the **Create new environment** dialog, select **New environment**.
+1. In the **Create an environment** dialog, select **New environment**.
 
    If you want to [copy data from the current environment](#considerations-for-copy-configuration-preview), select **Copy from existing environment**. You'll see a list of all available environments in your organization where you can copy data from.
 
 1. Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
-   - **Region**: The region into which the service is deployed and hosted.
    - **Type**: Select whether you want to create a Production or Sandbox environment.
-
+   - **Region**: The region into which the service is deployed and hosted.
+   
 1. Optionally, you can select **Advanced settings**:
 
    - **Save all data to**: Specifies where you want to store the output data generated from Customer Insights. You'll have two options: **Customer Insights storage** (an Azure Data Lake managed by the Customer Insights team) and **Azure Data Lake Storage** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
