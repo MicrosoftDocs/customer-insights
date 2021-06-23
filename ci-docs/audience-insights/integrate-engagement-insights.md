@@ -32,6 +32,9 @@ We now want to know if a customer visits our web properties and understand their
 
 To integrate data from engagement insights, a few prerequisites need to be met: 
 
+
+<!-- The following link opens a page titled "Install the code snippet on a website". Is that correct? -->
+
 - Integrate the engagement insights SDK with your website. For more information, see [Get started with the web SDK](../engagement-insights/instrument-website.md).
 - Exporting web events from engagement insights requires access to an Azure Data Lake Storage account that will be used to ingest the web events data to audience insights. For more information, see [Export events](../engagement-insights/export-events.md).
 
