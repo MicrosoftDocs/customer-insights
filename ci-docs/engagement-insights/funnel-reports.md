@@ -4,7 +4,7 @@ description: How to use funnel reports to understand how audience makes decision
 ms.reviewer: mhart
 ms.author: kamacdon
 author: kamacdon
-ms.date: 06/15/2021
+ms.date: 06/23/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A funnel report collects information about the steps that occur during a customer journey through your website. It helps you understand how an audience progresses through a process and identifies drop-off points. For example, you can use a funnel report to identify paths your customers take before they make a purchase. A funnel report provides data to inform decisions and identify areas for optimization and process improvements.
+A funnel report collects information about the steps that occur during a customer journey through your website or mobile app. It helps you understand how an audience progresses through a process and identifies drop-off points. For example, you can use a funnel report to identify paths your customers take before they make a purchase. A funnel report provides data to inform decisions and identify areas for optimization and process improvements.
 
 ## Create a funnel report
 
@@ -71,6 +71,17 @@ Funnel reports let you define a limit on the time it takes to complete a funnel.
 1. Choose the time the funnel must have been completed in the **Set limit to** drop-down list.
 
 1. Select **Save** to apply your changes.
+
+
+## Cross-channel funnel reports 
+
+Engagement insights can also to collect behavioral customer data on your mobile app. Once you have instrumented your mobile app with the engagement insights [Android SDK](get-started-android.md) or [iOS SDK](get-started-ios.md), you can create cross-channel funnel reports. 
+
+### Create a cross-channel funnel report 
+
+1. Follow the steps to [create a funnel report](#create-a-funnel-report).    
+
+1. To track how your customers are interacting with your brand across both your website and mobile app, or multiple websites, use the workspace switcher to create funnel steps with data from other workspaces. In the **Funnel Editor**, under **Steps** select which workspace the data for your funnel step should come from.
 
 ## Manage funnel reports
 
