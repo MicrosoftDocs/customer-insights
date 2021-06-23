@@ -4,7 +4,7 @@ description: Sample project to learn about the iOS SDK
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/18/2021
+ms.date: 06/23/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual

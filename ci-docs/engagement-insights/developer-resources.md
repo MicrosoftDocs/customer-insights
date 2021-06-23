@@ -4,7 +4,7 @@ description: Find information about SDKs and how to use them.
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/18/2021
+ms.date: 06/23/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
