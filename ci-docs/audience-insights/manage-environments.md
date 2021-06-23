@@ -62,14 +62,19 @@ To create an environment:
 
 1. Optionally, you can select **Advanced settings**:
 
-   - **Save all data to**: Specifies where you want to store the output data generated from Customer Insights. You'll have two options: **Customer Insights storage** (an Azure Data Lake managed by the Customer Insights team) and **Azure Data Lake Storage Gen2** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
+   - **Save all data to**: Specifies where you want to store the output data generated from Customer Insights. You'll have two options: **Customer Insights storage** (an Azure Data Lake managed by the Customer Insights team) and **Azure Data Lake Storage** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
 
-   > [!NOTE]
-   > By saving data to Azure Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account, which may differ from where data is stored in Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)
-   >
-   > Currently, ingested entities are always stored in the Customer Insights managed data lake.
-   > We support only Azure Data Lake Gen2 storage accounts from the same Azure region you selected when creating the environment.
-   > We support only Azure Data Lake Gen2 Hierarchical Name Space (HNS) enabled storage accounts.
+     > [!NOTE]
+     > By saving data to Azure Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account, which may differ from where data is stored in Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)
+     >
+     > Currently, ingested entities are always stored in the Customer Insights managed data lake. 
+     > 
+     > We support only Azure Data Lake Storage accounts from the same Azure region you selected when creating the environment. 
+     > 
+     > We support only Azure Data Lake Storage accounts that are hierarchical namespace (HNS) enabled.
+
+<!-- About the HNS reference, I don't find this in the style guide, but a web search did turn up "hierarchical namespace." OK to go with that? -->
+
 
    - For the Azure Data Lake Storage Gen2 option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name can't be changed and will be `customerinsights`.
    
