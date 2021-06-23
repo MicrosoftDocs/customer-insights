@@ -75,7 +75,7 @@ Funnel reports let you define a limit on the time it takes to complete a funnel.
 
 ## Cross-channel funnel reports 
 
-Engagement insights can also to collect behavioural customer data on your mobile app. Once you have instrumented your mobile app with the engagement insights Android SDK or iOS SDK, you can create cross-channel funnel reports. 
+Engagement insights can also to collect behavioural customer data on your mobile app. Once you have instrumented your mobile app with the engagement insights [Android SDK](get-started-android.md) or [iOS SDK](get-started-ios.md), you can create cross-channel funnel reports. 
 
 ### Create a cross-channel funnel report 
 
