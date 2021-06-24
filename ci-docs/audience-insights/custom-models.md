@@ -67,7 +67,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
       > [!div class="mx-imgBorder"]
       > ![Model Output Parameter Pane](media/intelligence-screen3-outputparameters.png "Model Output Parameter Pane")
 
-1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
+1. Select the matching attribute from the **Customer ID in results** dropdown list that identifies customers and select **Save**.
 
    > [!div class="mx-imgBorder"]
    > ![Relate results to Customer data pane](media/intelligence-screen4-relatetocustomer.png "Relate results to Customer data pane")
@@ -95,7 +95,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
       1. Select the **Output data store parameter name** for your test pipeline.
       1. Select the **Output Path parameter name** for your test pipeline.
 
-1. Select the matching attribute from the **Customer ID in results** drop-down list that identifies customers and select **Save**.
+1. Select the matching attribute from the **Customer ID in results** dropdown list that identifies customers and select **Save**.
    Choose an attribute from the inference output with values similar to the Customer ID column of the Customer entity. If don't have such a column in your data set, choose an attribute that uniquely identifies the row.
 
 ## Run a workflow

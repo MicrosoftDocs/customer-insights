@@ -42,13 +42,13 @@ Before setting up an export, you need to have access and an active subscription 
 
 There are two ways to export events: 
 - Go to **Data** > **Exports** and select **New export**.
-- Go to **Data** > **Events**, select **More [...]** next to the event you want to export and select **Export** from the drop-down menu. 
+- Go to **Data** > **Events**, select **More [...]** next to the event you want to export and select **Export** from the dropdown menu. 
 
 You're guided through the steps to create an export:
 
 1. Provide an **Export name**.
 
-1. In the **Events selection** drop-down list, choose the base events and refined events to include in the export. 
+1. In the **Events selection** dropdown list, choose the base events and refined events to include in the export. 
 
 1. Under **File structure**, select the cadence to create new files in the destination storage. Events are exported continuously as they arrive.
 

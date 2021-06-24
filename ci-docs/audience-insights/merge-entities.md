@@ -29,7 +29,7 @@ To view the attributes that are included in one of your automatically merged att
 
 You can change how the system processes merged attributes to generate the unified customer profile. Select **Show more** and choose what you want to change.
 
-:::image type="content" source="media/manage-merged-attributes.png" alt-text="Options in the Show more drop-down menu to manage merged attributes.":::
+:::image type="content" source="media/manage-merged-attributes.png" alt-text="Options in the Show more dropdown menu to manage merged attributes.":::
 
 For more information, see the following sections.
 
