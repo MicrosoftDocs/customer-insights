@@ -68,7 +68,7 @@ Funnel reports let you define a limit on the time it takes to complete a funnel.
 
    :::image type="content" source="media/funnel-limit-time.png" alt-text="Funnel editor showing advanced setting and options to limit time to complete a funnel.":::
 
-1. Choose the time the funnel must have been completed in the **Set limit to** drop-down list.
+1. Choose the time the funnel must have been completed in the **Set limit to** dropdown list.
 
 1. Select **Save** to apply your changes.
 

@@ -33,7 +33,7 @@ Go to the **Segments** page, to view all your saved segments and manage them.
 
 Each segment is represented by a row that includes additional information about the segment.
 
-:::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options drop-down list and available options.":::
+:::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options.":::
 
 The following action are available when you select a segment:
 
@@ -63,7 +63,7 @@ You can export a segment from the segments page or the [exports page](export-des
 
 1. Select **Show more [...]** for the segment you want to export.
 
-1. Select **Manage exports** from the actions drop-down list.
+1. Select **Manage exports** from the actions dropdown list.
 
 1. The page **Exports (preview) for segment** opens. You can see all configured exports grouped by by exports that contain the current segment or don't contain it.
 

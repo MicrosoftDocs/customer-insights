@@ -91,7 +91,7 @@ Mobile reports are grouped in real-time usage, app, and user categories. You can
 
 You can select the time frame or value in a web or mobile report to focus on a value or time period. 
 
-- To select a time frame, select **More [...]** from the drop-down list of the report. Time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.”
+- To select a time frame, select **More [...]** from the dropdown list of the report. Time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.”
 
 - In most reports, select a value in a chart or list to filter the report for the selected value.
 
