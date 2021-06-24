@@ -1,7 +1,7 @@
 ---
 title: Integrate web data from engagement insights with audience insights
 description: Bring web information about customers from engagement insights to audience insights. 
-ms.date: 12/17/2020
+ms.date: 06/24/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,14 +11,7 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-
-<!-- Should the date be updated? -->
-
-
 # Integrate web data from engagement insights with audience insights
-
-
-<!-- The style guide says to use "(preview)" with engagement insights, so I'm adding it here on first mention. -->
 
 Customers often do their day-to-day transactions online using web sites. The engagement insights (preview) capability in Dynamics 365 Customer Insights is a handy solution to integrate web data as a source. In addition to transactional, demographic, or behavioral data we can see activities on the web in unified customer profiles. We can use these profiles to gain additional insights like segments, measures, or predictions for audience activation.
 
@@ -32,14 +25,8 @@ We now want to know if a customer visits our web properties and understand their
 
 To integrate data from engagement insights, a few prerequisites need to be met: 
 
-
-<!-- The following link opens a page titled "Install the code snippet on a website". Is that correct? -->
-
-- Integrate the engagement insights SDK with your website. For more information, see [Get started with the web SDK](../engagement-insights/instrument-website.md).
+- Integrate the engagement insights SDK with your website. For more information, see [Developer resources overview](../engagement-insights/developer-resources.md).
 - Exporting web events from engagement insights requires access to an Azure Data Lake Storage account that will be used to ingest the web events data to audience insights. For more information, see [Export events](../engagement-insights/export-events.md).
-
-<!-- About Azure Data Lake Storage: You don't need to include Gen 2 unless the older version is also mentioned. -->
-
 
 ## Configure refined events in engagement insights
 

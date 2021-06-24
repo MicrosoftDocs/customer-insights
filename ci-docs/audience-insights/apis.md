@@ -11,13 +11,9 @@ ms.author: wimohabb
 manager: shellyha
 ---
 
-
-<!-- In first line (20), should it be "based on your"? -->
-
-
 # Work with Customer Insights APIs
 
-Dynamics 365 Customer Insights provides APIs to build your own applications based you data in Customer Insights.
+Dynamics 365 Customer Insights provides APIs to build your own applications based on your data in Customer Insights.
 
 > [!IMPORTANT]
 > Details of these APIs are listed on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.
@@ -40,11 +36,7 @@ This article describes how to access the Customer Insights APIs, create an Azure
 
 1. Choose an API operation and select **Try it**.
 
-
-<!-- Please check the second sentence below. Should it be "header gets added with a bearer token"? -->
-
-
-1. In the side pane, set the value in the **Authorization** dropdown menu to **implicit**. The `Authorization` header gets with a bearer token added. Your subscription key will be automatically populated.
+1. In the side pane, set the value in the **Authorization** dropdown menu to **implicit**. The `Authorization` header gets added with a bearer token. Your subscription key will be automatically populated.
   
 1. Optionally, add all necessary query parameters.
 
@@ -52,11 +44,7 @@ This article describes how to access the Customer Insights APIs, create an Azure
 
 The HTTP response will soon appear below.
 
-
-<!-- In the alt text, is "select test" correct, or should it be one or the other? -->
-
-
-   :::image type="content" source="media/try-apis.gif" alt-text="How to select test the APIs.":::
+   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs.":::
 
 ## Create a new app registration in the Azure portal
 
@@ -66,11 +54,7 @@ These steps help you get started with using the Customer Insights APIs in an Azu
 
 1. On the left, select **App registrations**.
 
-
-<!-- Should there be a comma after "New registion", or is a word missing? -->
-
-
-1. Select **New registration** provide an application name and choose the account type.
+1. Select **New registration**, provide an application name and choose the account type.
  
    Optionally, add a redirect URL. http://localhost is sufficient for developing an application on your local computer.
 
@@ -92,10 +76,7 @@ You can use the Application/Client ID for this app registration with the Microso
 
 For more information about MSAL, see [Overview of Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
 
-
-<!-- Be aware that "The new Azure portal app registration experience" is not the name of the page that the link opens. Maybe the page title has changed. -->
-
-For more information about app registration in Azure, see [The new Azure portal app registration experience](/azure/active-directory/develop/app-registration-portal-training-guide).
+For more information about app registration in Azure, see [Register an application](/azure/active-directory/develop/quickstart-register-app.md#register-an-application).
 
 For information on using the APIs in our client libraries, see [Customer Insights client libraries](#customer-insights-client-libraries).
 

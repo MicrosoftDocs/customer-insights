@@ -123,11 +123,7 @@ If there are no other records in Adobe Campaign Standard, other than what you ar
 
 Now that everything is in place, we need to import the prepared audience data from audience insights into Adobe Campaign Standard to create profiles. Learn [how to import profiles in Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) using a workflow.
 
-The import workflow in the image below has been configured to run every eight hours and look for exported audience insights segments (.csv file in Azure Blob Storage). The workflow extracts the .csv file content in a specified column order. This workflow has been built to perform basic error handling and ensure that each record has an email address before hydrating the data in Adobe Campaign Standard. The workflow also extracts the segment name from the filename before upserting into ACS Profile data.
-
-<!-- In the sentence just above, I think ACS is Adobe Campaign Standard. If correct, is there a reason not to use the full name here? I don't see ACS elsewhere. -->
-
-
+The import workflow in the image below has been configured to run every eight hours and look for exported audience insights segments (.csv file in Azure Blob Storage). The workflow extracts the .csv file content in a specified column order. This workflow has been built to perform basic error handling and ensure that each record has an email address before hydrating the data in Adobe Campaign Standard. The workflow also extracts the segment name from the filename before upserting into Adobe Campaign Standard profile data.
 
 :::image type="content" source="media/ACS-import-workflow.png" alt-text="Screenshot of an import workflow in the Adobe Campaign Standard user interface.":::
 

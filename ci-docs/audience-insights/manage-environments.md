@@ -71,9 +71,7 @@ To create an environment:
      > 
      > We support only Azure Data Lake Storage accounts from the same Azure region you selected when creating the environment. 
      > 
-     > We support only Azure Data Lake Storage accounts that are hierarchical namespace (HNS) enabled.
-
-<!-- About the HNS reference, I don't find this in the style guide, but a web search did turn up "hierarchical namespace." OK to go with that? -->
+     > We support only Azure Data Lake Storage accounts that have hierarchical namespace enabled.
 
 
    - For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name can't be changed and will be `customerinsights`.
@@ -113,10 +111,7 @@ The following settings are *not* copied:
 
 - Customer profiles.
 - Data source credentials. You'll have to provide the credentials for every data source and refresh the data sources manually.
-- Data sources from Common Data Model folder and Dataverse managed lake. You'll have to create those data sources manually with the same name as in the source environment.
-
-<!-- Above, I updated Common Data Service to Dataverse. Is "managed lake" supposed to be "Managed Data Lake"? -->
-
+- Data sources from Common Data Model folder and Dataverse managed Data Lake. You'll have to create those data sources manually with the same name as in the source environment.
 
 When you copy an environment, you'll see a confirmation message that the new environment has been created. Select **Go to data sources** to see the list of data sources.
 
@@ -157,9 +152,6 @@ You can edit some of the details of existing environments.
 
 ## Reset an existing environment
 
-<!-- Should the above heading say "(available only for admins) like the one below? -->
-
-
 As an administrator, you can reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
 
 1.	Select the **Environment** picker in the header of the app. 
@@ -170,7 +162,7 @@ As an administrator, you can reset an environment to an empty state if you want 
 
 4.	To confirm the deletion, enter the environment name and select **Reset**.
 
-## Delete an existing environment (available only for admins)
+## Delete an existing environment
 
 As an administrator, you can delete an environment you administer.
 

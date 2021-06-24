@@ -1,5 +1,5 @@
 ---
-title: "Enrichment of with the third-party enrichment HERE Technologies"
+title: "Enrichment with the third-party enrichment HERE Technologies"
 description: "General information about the HERE Technologies third-party enrichment."
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -10,10 +10,6 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ---
-
-<!-- The metadata title has an extra word - I can't tell which is correct. -->
-
-
 
 # Enrichment of customer profiles with HERE Technologies (preview)
 

@@ -13,10 +13,6 @@ manager: shellyha
 
 # Export segment list and other data to Azure Blob Storage (preview)
 
-
-<!-- Below, are you talking specifically about Azure Blob Storage, or just a blob? That affects the capitalization. Here's style guidance: https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=27921  -->
-
-
 Store your Customer Insights data in a Blob storage or use it to transfer your data to other applications.
 
 ## Set up the connection to Blob Storage

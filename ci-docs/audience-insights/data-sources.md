@@ -23,22 +23,15 @@ Refer to the detailed articles on how to add a data source, depending on which o
 
 You can add a data source in three main ways:
 
-<!-- for the third bullet below, it might be better to say "From your own Microsoft Dataverse lake," since it's not called Common Data Service anymore. -->
-
-
 - [Through dozens of Power Query connectors](connect-power-query.md)
 - [From a Common Data Model folder](connect-common-data-model.md)
-- [From your own Common Data Service lake](connect-common-data-service-lake.md)
+- [From your own Microsoft Dataverse lake](connect-common-data-service-lake.md)
 
 ## Add data from on-premises data sources
 
 Ingesting data from on-premises data sources in audience insights is supported based on Microsoft Power Platform dataflows. Dataflows can be enabled in Customer Insights by [providing the Microsoft Dataverse environment URL](manage-environments.md#create-an-environment-in-an-existing-organization) when setting up the environment.
 
-
-<!-- The data gateways link doesn't work. Could this be the right one? https://docs.microsoft.com/data-integration/gateway/service-gateway-app -->
-
-
-Data sources that are created after associating a Dataverse environment with Customer Insights will use [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) by default. Dataflows support on-premises connectivity using the data gateway. Remove and recreate data sources that existed before a Dataverse environment was associated to [use the on-premises data gateways](/powerapps/maker/data-platform/using-dataflows-with-on-premises-data.md).
+Data sources that are created after associating a Dataverse environment with Customer Insights will use [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) by default. Dataflows support on-premises connectivity using the data gateway. Remove and recreate data sources that existed before a Dataverse environment was associated to [use the on-premises data gateways](/data-integration/gateway/service-gateway-app.md).
 
 Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse in Customer Insights. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
 
