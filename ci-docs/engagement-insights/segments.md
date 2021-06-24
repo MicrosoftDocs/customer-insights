@@ -60,7 +60,7 @@ The segment will be listed on the Segments page and you can apply it to all repo
 
 You can apply segments to a report or a funnel to filter them based on the conditions in the segment. However, you can't apply segments to the real-time usage report.
 
-:::image type="content" source="media/segment-reports-filter.png" alt-text="A page views report with an expanded drop-down list to choose which segments to apply.":::
+:::image type="content" source="media/segment-reports-filter.png" alt-text="A page views report with an expanded dropdown list to choose which segments to apply.":::
 
 To apply a segment, open the report or funnel. Select **Add condition** and choose **Filter by segment**. Choose the segment from the list that you want to apply. The segment gets be applied to the report. If a chart doesn't support the segment, it shows an error.
  
@@ -77,14 +77,14 @@ You can apply *up to three segments* to a report or funnel.
 
 1. Go to **Data** > **Segments**.
 1. In the segment list, select **More [...]**. 
-1. From the drop-down list, choose **Edit name**.
+1. From the dropdown list, choose **Edit name**.
 1. Enter the new name and select **Rename**.
 
 ## Delete a segment
 
 1. Go to **Data** > **Segments**.
 1. In the segment list, select **More [...]**. 
-1. From the drop-down list, choose **Delete**.
+1. From the dropdown list, choose **Delete**.
 1. Select **Delete** to confirm.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

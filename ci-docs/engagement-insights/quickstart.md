@@ -66,7 +66,7 @@ By default, only the person who created the workspace has access to it. You can 
 
 4. Select **Add members** to confirm.
 
-To remove members from a workspace, select **...** next to their names on the **Members** page and then select **Delete** from the drop-down menu.
+To remove members from a workspace, select **...** next to their names on the **Members** page and then select **Delete** from the dropdown menu.
 
 ## Edit a workspace
 

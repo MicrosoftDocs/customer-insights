@@ -204,7 +204,7 @@ Try different precision thresholds on conditions to find the optimal value.
 
 You can reconfigure and fine-tune most of the match parameters.
 
-:::image type="content" source="media/match-rules-management.png" alt-text="Screenshot of the drop-down menu with match rule options.":::
+:::image type="content" source="media/match-rules-management.png" alt-text="Screenshot of the dropdown menu with match rule options.":::
 
 - **Change the order of your rules** if you defined multiple rules. You can reorder the match rules by selecting the **Move Up** and **Move Down** options or by drag and drop.
 
@@ -242,7 +242,7 @@ You can specify conditions that certain records should always match or never mat
 
 1. Go to **Data** > **Data sources** and ingest the template files as new entities. Once ingested, you can use them to specify the Match configuration.
 
-1. After uploading the files and entities are available, select the **Custom match** option again. You'll see options to specify the entities you want to include. Select the required entities from the drop-down menu.
+1. After uploading the files and entities are available, select the **Custom match** option again. You'll see options to specify the entities you want to include. Select the required entities from the dropdown menu.
 
    :::image type="content" source="media/custom-match-overrides.png" alt-text="Screenshot of the dialog to choose overrides for a custom match scenario.":::
 

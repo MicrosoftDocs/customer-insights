@@ -273,8 +273,8 @@
           href: engagement-insights/get-started.md
         - name: Create a workspace
           href: engagement-insights/create-workspace.md
-        - name: Instrument your website
-          href: engagement-insights/instrument-website.md
+        - name: Capture events from websites and mobile apps
+          href: engagement-insights/developer-resources.md
         - name: Concepts and terminology
           href: engagement-insights/glossary.md
 
