@@ -13,18 +13,17 @@ manager: shellyha
 
 # Export segments to Google Ads (preview)
 
-Export segments of unified customer profiles to Google Ads audience list and use them to advertise on Google Search, Gmail, YouTube, and Google Display Network. 
+Export segments of unified customer profiles to a Google Ads audience list and use them to advertise on Google Search, Gmail, YouTube, and Google Display Network. 
 
 ## Prerequisites for connection
 
 -	You have a [Google Ads account](https://ads.google.com/) and corresponding administrator credentials.
--	You have an [approved Google Ads Developer token](https://developers.google.com/google-ads/api/docs/first-call/dev-token) 
--	You fulfill the requirements of the [Customer Match Policy](https://support.google.com/adspolicy/answer/6299717)
--	You fulfill the requirements of the [remarketing list sizes](https://support.google.com/google-ads/answer/7558048) 
-
+-	You have an [approved Google Ads Developer token](https://developers.google.com/google-ads/api/docs/first-call/dev-token). 
+-	You fulfill the requirements of the [Customer Match Policy](https://support.google.com/adspolicy/answer/6299717).
+-	You fulfill the requirements of the [remarketing list sizes](https://support.google.com/google-ads/answer/7558048).
 -	There are existing audiences in Google Ads and the corresponding IDs. For more information, see [Google Ads audiences](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
--	You have [configured segments](segments.md)
--	Unified customer profiles in the exported segments contain fields representing an email address, first name, and last name
+-	You have [configured segments](segments.md).
+-	Unified customer profiles in the exported segments contain fields representing an email address, first name, and last name.
 
 ## Known limitations
 
@@ -63,23 +62,24 @@ You can configure this export if you have access to a connection of this type. F
 
 1. To create a new export, select **Add destination**.
 
-1. In the **Connection for export** field, choose a connection from the Google Ads section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the Google Ads section. If you don't see this section name, then no connections of this type are available to you.
 
 1. Enter your **[Google Ads audience ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** and select **Connect** to initialize the connection to Google Ads.
 
-1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. Repeat the same steps for **First name" and **Last name** fields.
+1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. Repeat the same steps for **First name** and **Last name** fields.
 
 1. Select the segments you want to export. You can export up to 1 million customer profiles in total to Google Ads.
 
 Saving an export doesn't run the export immediately.
 
 The export runs with every [scheduled refresh](system.md#schedule-tab). 
+
 You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
 
 ## Data privacy and compliance
 
 When you enable Dynamics 365 Customer Insights to transmit data to Google Ads, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Google Ads meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
+Your Dynamics 365 Customer Insights administrator can remove this export destination at any time to discontinue use of this functionality.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

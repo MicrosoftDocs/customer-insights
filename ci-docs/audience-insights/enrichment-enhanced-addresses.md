@@ -17,11 +17,11 @@ Addresses in your data can be unstructured, incomplete, or incorrect. Use Micros
 
 ## How we enhance addresses
 
-Our model goes through a two-step process to enhance an address. First, it parses the address to identify its components and puts them into a structured format. Then, we use artificial intelligence to correct, complete, and standardize the values in the address.
+Our model goes through a two-step process to enhance an address. First, it parses the address to identify its components and puts them into a structured format. Then, we use AI to correct, complete, and standardize the values in the address.
 
 ### Example
 
-Address information might be in a non-standard format and contain spelling errors. The model can fix these issues and create consistent addresses in unified customer profiles.
+Address information might be in a nonstandard format and contain spelling errors. The model can fix these issues and create consistent addresses in unified customer profiles.
 
 ```Input
 4567 w main stret californa missouri 54321 us
@@ -45,7 +45,7 @@ Enhanced addresses only works with the values that already exist in your ingeste
 2. Verify if any of the values, such as ZIP codes or street names, are valid.
 3. Change values it doesn't recognize.
 
-The model uses machine learning-based techniques to enhance addresses. While we apply a high confidence threshold for when the model changes an input value, as with any ML-based model, 100% accuracy is not guaranteed.
+The model uses machine learning-based techniques to enhance addresses. While we apply a high confidence threshold for when the model changes an input value, as with any machine learning-based model, 100 percent accuracy is not guaranteed.
 
 ## Supported countries or regions
 
@@ -71,7 +71,7 @@ Addresses must contain a country/region value. We don't process addresses for co
 1. Select how addresses are formatted in your data set. Choose **Single-attribute address** if addresses in your data use a single field. Choose **Multiple-attribute address** if addresses in your data use more than one data field.
 
    > [!NOTE]
-   > Country/Region is mandatory in both single-attribute and multiple-attribute address. Addresses that don't contain valid or supported country/region values won't be enriched
+   > Country/Region is mandatory in both single-attribute and multiple-attribute addresses. Addresses that don't contain valid or supported country/region values won't be enriched.
 
 1.	Map the address fields from your unified customer entity.
 
@@ -93,6 +93,6 @@ You can access a detailed view of each enriched profile by selecting **View enri
 
 ## Next steps
 
-Build on top of your enriched customer data. Create [segments](segments.md), [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
+Build on top of your enriched customer data. Create [segments](segments.md) and [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,7 +17,8 @@ Use data from sources like Microsoft and other partners to enrich your customer 
 
 :::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page":::
 
-In audience insights, go to **Data** > **Enrichment** to work with enrichment options.    
+In audience insights, go to **Data** > **Enrichment** to work with enrichment options.  
+
 You need to have Contributor or Administrator permissions to create or edit enrichments. For more information, see [Permissions](permissions.md).
 
 On the **Discover** tab, you'll find the following enrichments:
@@ -34,7 +35,7 @@ On the **My enrichments** tab, you can see the enrichments you've configured and
 
 ## Manage existing enrichments
 
-Go to the **My enrichments** to see all configured enrichments. Each enrichment is represented as a row that includes additional information about the enrichment.
+Go to the **My enrichments** tab to see all configured enrichments. Each enrichment is represented as a row that includes additional information about the enrichment.
 
 Select an enrichment to see the available options. You can also select the ellipsis (...) on a list item to see the options.
 
@@ -54,6 +55,6 @@ Third-party enrichments are configured using [connections](connections.md), whic
 
 ## Multiple enrichments of the same type
 
-The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For exmaple, enrich data only for a specific segment. You can configure several enrichments of the same type and reuse the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on the **Enrichment** page.
+The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For example, enrich data only for a specific segment. You can configure several enrichments of the same type and reuse the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on the **Enrichment** page.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
