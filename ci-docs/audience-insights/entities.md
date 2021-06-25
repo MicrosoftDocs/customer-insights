@@ -25,7 +25,7 @@ The **Entities** page lists entities and includes several columns:
 - **Last updated**: Date and time of the last update of the entity
 - **Last refresh**: Date and time of the last data refresh
 
-## Exploring a specific entity's data
+## Explore a specific entity's data
 
 Select an entity to explore the different fields and records included within that entity.
 
@@ -48,6 +48,22 @@ Select the chart icon to see the summary of the data.
 
 > [!div class="mx-imgBorder"]
 > ![Summary symbol](media/data-manager-entities-summary.png "Data summary table")
+
+## Entity-specific information
+
+The following section provides information about some system-created entities.
+
+### Corrupted data sources
+
+Some fields from an ingested data source might contain fields with corrupted data. Records with corrupted fields are exposed in separate system-created entities. This helps you to identify which data you can review and update on the source system. After the next refresh of the data source, the corrected records are ingested to Custoemr Insights and passed on to downstream processes. 
+
+Although the corrupted records are exposed, Customer Insights still processes them. However, they might cause issues when working with the unified data subsequently.
+
+The following checks run on the ingested data to expose corrupted records: 
+
+- The datatype of a column doesn't match with its schema.
+- Fields contain character that can cause the columns to not match the expected schema, such as incorrectly formatted quotes, un-escaped quotes, or newline characters.
+- If there are datetime/date/datetimeoffset columns, their format needs to be specified in the model if doesn't follow the standard ISO format.
 
 ### Next step
 
