@@ -55,13 +55,15 @@ The following section provides information about some system-created entities.
 
 ### Corrupted data sources
 
-Some fields from an ingested data source might contain fields with corrupted data. Records with corrupted fields are exposed in separate system-created entities. This helps you to identify which data you can review and update on the source system. After the next refresh of the data source, the corrected records are ingested to Custoemr Insights and passed on to downstream processes. 
+Some fields from an ingested data source might contain fields with corrupted data. Records with corrupted fields are exposed in separate system-created entities. Knowing about corrupted records helps you identify which data to review and update on the source system. After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes. 
 
-Although the corrupted records are exposed, Customer Insights still processes them. However, they might cause issues when working with the unified data subsequently.
+Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. Naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'.
+
+Customer Insights still processes corrupted records. However, they might cause issues when working with the unified data subsequently.
 
 The following checks run on the ingested data to expose corrupted records: 
 
-- The datatype of a column doesn't match with its schema.
+- The value of a field doesn't match with the datatype of its column.
 - Fields contain character that can cause the columns to not match the expected schema, such as incorrectly formatted quotes, un-escaped quotes, or newline characters.
 - If there are datetime/date/datetimeoffset columns, their format needs to be specified in the model if doesn't follow the standard ISO format.
 
