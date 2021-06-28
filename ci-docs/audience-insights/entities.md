@@ -37,7 +37,7 @@ Select an entity to explore the different fields and records included within tha
 > [!div class="mx-imgBorder"]
 > ![Fields table](media/data-manager-entities-fields.PNG "Fields table")
 
-- The **Attributes** tab is selected by default and shows a table to review details for the selected entity, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](map-entities.md) by users. These are semantic types that can differ from the attributes' data types—for example, the field *Email* below has a data type *Text* but its (semantic) Common Data Model type might be *Email* or *EmailAddress*.
+- The **Attributes** tab is selected by default and shows a table to review details for the selected entity, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](map-entities.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* below has a data type *Text* but its (semantic) Common Data Model type might be *Email* or *EmailAddress*.
 
 > [!NOTE]
 > Both tables show only a sample of your entity's data. To view the full data set, go to the **Data sources** page, select an entity, select **Edit**, and then view this entity's data with the Power Query editor as explained in [Data sources](data-sources.md).
@@ -55,21 +55,20 @@ The following section provides information about some system-created entities.
 
 ### Corrupted data sources
 
-Some fields from an ingested data source might contain fields with corrupted data. Records with corrupted fields are exposed in separate system-created entities. Knowing about corrupted records helps you identify which data to review and update on the source system. After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes. 
+Fields from an ingested data source can contain corrupted data. Records with corrupted fields are exposed in system-created entities. Knowing about corrupted records helps you identify which data to review and update on the source system. After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes. 
+
+For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system will flag this record as corrupted. Someone can now change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record will be removed from the corrupted entity. 
 
 Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. Naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'.
 
-Customer Insights still processes corrupted records. However, they might cause issues when working with the unified data subsequently.
+Customer Insights still processes corrupted records. However, they might cause issues when working with the unified data.
 
 The following checks run on the ingested data to expose corrupted records: 
 
-- The value of a field doesn't match with the datatype of its column.
-- Fields contain character that can cause the columns to not match the expected schema, such as incorrectly formatted quotes, un-escaped quotes, or newline characters.
+- The value of a field doesn't match with the data type of its column.
+- Fields contain characters that cause the columns to not match the expected schema. For example: incorrectly formatted quotes, unescaped quotes, or newline characters.
 - If there are datetime/date/datetimeoffset columns, their format needs to be specified in the model if doesn't follow the standard ISO format.
 
-### Next step
-
-See the [Unify](data-unification.md) topic to learn how to *map*, *match*, and *merge* the ingested data.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
