@@ -13,6 +13,11 @@ manager: shellyha
 
 # Set up a trial environment
 
+<to do>
+- Prerequisites
+- Limitations (DV storage, duration etc.)
+- Options to convert?
+
 ## Create a trial environment
 
 You can sign up for a trial on the [trial sign up page](https://dynamics.microsoft.com/get-started/free-trial/?appname=customerinsights). 
