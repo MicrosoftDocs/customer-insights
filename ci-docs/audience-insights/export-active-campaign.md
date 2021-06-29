@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to ActiveCampaign"
 description: "Learn how to configure the connection and export to ActiveCampaign."
-ms.date: 05/21/2021
+ms.date: 06/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
