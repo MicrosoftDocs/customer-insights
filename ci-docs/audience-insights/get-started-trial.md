@@ -36,6 +36,42 @@ You can sign up for a trial on the [trial sign up page](https://dynamics.microso
 
 1. Select **Create**. 
 
-After the environment was created, you'll see the **Demo** environment which lets you explore the app with fictitious data. You can change the sample data to match your industry. Select the **Settings** icon in the header and select **Demo settings**. Additionally, you can change the visual theme. 
+After the environment was created, you'll see the **Demo** environment which lets you explore the app with fictitious data.
 
-You [switch to the environment](#switch-environments) you created during the sign-up process to work with your own data.
+## Use scenario-specific demo data sets in audience insights
+
+Connecting real data sources is one of the critical steps in leveraging the power of Customer Insights. Sometimes, you might just want to try out some feature without interfering with your own data. There are a couple of demo data sets available at your disposal to quickly try a scenario or review a new feature with fictitious data for the following scenarios: 
+
+-	Automotive
+-	Banking
+-	Consumer goods
+-	Government
+-	Healthcare
+-	Hospitality
+-	Insurance
+-	Manufacturing
+-	Professional services
+-	Retail
+
+### See industry-specific demo data in trials
+
+For a read-only version of Customer Insights, tailored to a specific industry or scenario, go to the Demo environment. 
+ 
+1.	In audience insights, choose the Demo environment in the environment picker.
+2.	On Home, choose an option from the Select an industry demo drop-down menu.
+
+### Create scenario-specific demo data in your own environment
+
+For a fully customizable solution based on sample data, you first need to ingest the data in your environment. Administrator permissions are required to ingest data. 
+
+IMPORTANT: 
+Ingested demo data can’t be removed. We strongly recommend creating a new sandbox environment before ingesting demo data. 
+
+1.	In audience insights, go to Data > Data sources.
+2.	Choose the Import from Datahub option.
+3.	Select the card that suits your scenario. 
+4.	Review and optionally update the suggested name of the data source. 
+5.	Select Next to ingest the data source. 
+
+Repeat the steps above to ingest additional data sets.
+You can now use the ingested data to tailor Customer Insights to your scenario. To see an environment specific to the ingested demo data, choose the <Industry> Demo option in the environment picker.
