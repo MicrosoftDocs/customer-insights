@@ -13,49 +13,30 @@ manager: shellyha
 
 # Get started with a paid subscription
 
-This article explains how to create a new organization and how to provision an environment.
+This article explains how to create a new environment after your organization has purchased a Dynamics 365 Customer Insights subscription. Contact us to help you with the purchase. The contact options are listed on the [Dynamics 365 Customer Insights website](https://dynamics.microsoft.com/ai/customer-insights/). 
 
-## Sign up and create an organization
-
-1. Go to the [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) website.
-
-2. Select **Get Started**.
-
-3. Choose your preferred sign-up scenario and select the corresponding link.
-
-4. Accept the terms and conditions and select **Continue** to start creating the organization.
-
-5. After the environment is created, you'll be redirected to [Customer Insights](https://home.ci.ai.dynamics.com).
-
-6. Use the demo environment to explore the app, or create a new environment by following the steps in the next section.
-
-7. After specifying the environment settings, select **Create**.
-
-8. You'll be signed in after the environment was created successfully.
+If you're looking to try the service and the features, see [Set up a trial environment](get-started-trial.md).
 
 ## Create an environment in an existing organization
 
-There are two ways to create a new environment. You can either specify an entirely new configuration, or you can copy some configuration settings from an existing environment.
+After purchasing a license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.dynamics.com](https://home.ci.dynamics.com) to get started. 
 
 > [!NOTE]
-> Organizations can create *two* environments for every Customer Insights license. If your organization purchases more than once license, please [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, download [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+> Organizations can create *two* environments for every Customer Insights license. If your organization purchases more than once license, please [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, download the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+
+In case you already have an environment set up, there are two ways to create a new environment. You can either specify an entirely new configuration, or you can copy some configuration settings from an existing environment. Select the **Environment** picker in the header of the app and select **New**.
 
 To create an environment:
 
-1. Select the **Environment** picker in the header of the app.
-
-1. Select **New**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Environment settings.](media/environment-settings-dialog.png)
-
 1. In the **Create an environment** dialog, select **New environment**.
+
+   :::image type="content" source="media/environment-settings-dialog.png" alt-text="Dialog to create a new Customer Insights environment.":::
 
    If you want to [copy data from the current environment](manage-environments.md#copy-the-environment-configuration), select **Copy from existing environment**. You'll see a list of all available environments in your organization where you can copy data from.
 
 1. Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
-   - **Type**: Select whether you want to create a Production or Sandbox environment.
+   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for testing.
    - **Region**: The region into which the service is deployed and hosted.
    
 1. Optionally, you can select **Advanced settings**:
@@ -65,7 +46,7 @@ To create an environment:
      > [!NOTE]
      > By saving data to Azure Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account, which may differ from where data is stored in Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)
      >
-     > Currently, ingested entities are always stored in the Customer Insights Managed Data Lake. 
+     > Currently, ingested entities are always stored in the Customer Insights managed Data Lake. 
      > 
      > We support only Azure Data Lake Storage accounts from the same Azure region you selected when creating the environment. 
      > 
@@ -74,11 +55,11 @@ To create an environment:
 
    - For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name can't be changed and will be `customerinsights`.
    
-   - If you want to use [predictions](predictions.md), configure data sharing with Microsoft Dataverse, or enable data ingestion from on-premises data sources, provide the Microsoft Dataverse environment URL under **Configure data sharing with Microsoft Dataverse and enable additional capabilities**. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
+   - If you want to use [out-of-box models](predictions-overview.md#out-of-box-models), configure data sharing with Microsoft Dataverse, or enable data ingestion from on-premises data sources, provide the Microsoft Dataverse environment URL under **Configure data sharing with Microsoft Dataverse and enable additional capabilities**. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
 
      > [!NOTE]
      > - Data sharing with Microsoft Dataverse Managed Data Lake is currently not supported when you save all data to your own Azure Data Lake Storage.
-     > - [Prediction of missing values in an entity](predictions.md) is not currently supported when you enable data sharing with Microsoft Dataverse Managed Data Lake.
+     > - [Prediction of missing values in an entity](predictions.md) is currently not supported when you enable data sharing with Microsoft Dataverse Managed Data Lake.
 
      > [!div class="mx-imgBorder"]
      > ![Configuration options to enable data sharing with Microsoft Dataverse.](media/datasharing-with-DataverseMDL.png)
@@ -86,4 +67,16 @@ To create an environment:
    When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to folders based on the process name.
 
    If you create multiple environments of Customer Insights and choose to save the output entities from those environments in your storage account, separate folders will be created for each environment with ci_<environmentid> in the container.
+
+1. Select **Create** to set up the environment.
+
+## Configure an environment
+
+Review the following articles to help you getting started with configuring Customer Insights. 
+
+- [Add more users and assign permissions](permissions.md).
+- [Ingest your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
+- [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).
+- Create [segments](segments.md) to group customers and [measures](measures.md) review KPIs.
+- Set up [connections](connections.md) and [exports](export-destinations.md) to process subsets of your data in other applications.
 
