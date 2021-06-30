@@ -89,5 +89,5 @@ Generally, we recommend to start fresh with your own data when upgrading to the 
 
 However, if you're the administrator of the Customer Insights trial and the global admin of your Microsoft 365 tenant, or the Dynamics 365 administrator in your organization there's a way to migrate the settings from a trial environment to a paid environment. 
 
-
+After signing in to your paid instance of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. For more information, see [Copy the environment configuration](manage-environments.md#copy-the-environment-configuration).
 
