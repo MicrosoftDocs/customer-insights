@@ -1,6 +1,6 @@
 ---
 title: "Create and configure a paid license of Customer Insights"
-description: "Steps to get a licensed subscription for Dynamics 365 Customer Insights and configure it ."
+description: "Steps to get a licensed subscription for Dynamics 365 Customer Insights and configure it."
 ms.date: 06/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -64,7 +64,7 @@ To create an environment:
      > [!div class="mx-imgBorder"]
      > ![Configuration options to enable data sharing with Microsoft Dataverse.](media/datasharing-with-DataverseMDL.png)
 
-   When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to folders based on the process name.
+   When system processes like data ingestion complete, the system creates corresponding folders in the storage account you specified. Data files and model.json files are created and added to folders based on the process name.
 
    If you create multiple environments of Customer Insights and choose to save the output entities from those environments in your storage account, separate folders will be created for each environment with ci_<environmentid> in the container.
 
@@ -79,4 +79,3 @@ Review the following articles to help you getting started with configuring Custo
 - [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).
 - Create [segments](segments.md) to group customers and [measures](measures.md) review KPIs.
 - Set up [connections](connections.md) and [exports](export-destinations.md) to process subsets of your data in other applications.
-

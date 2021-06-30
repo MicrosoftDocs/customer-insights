@@ -1,6 +1,6 @@
 ---
 title: "Create and configure a trial of Customer Insights"
-description: "Steps to get a trial subscription for Dynamics 365 Customer Insights and configure it ."
+description: "Steps to get a trial subscription for Dynamics 365 Customer Insights and configure it."
 ms.date: 06/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -35,11 +35,11 @@ You can sign up for a trial on the [trial sign up page](https://dynamics.microso
 
 1. Select **Create**. 
 
-After setting up the trial, you'll see the **Demo** environment which lets you explore the app with fictitious data.
+After setting up the trial, you'll see the **Demo** environment that lets you explore the app with fictitious data.
 
 ## Use industry-specific demo data sets in audience insights
 
-Connecting real data sources is one of the critical steps in leveraging the power of Customer Insights. To try features without interfering with your own data, you can use industry-specific demo data. There are a couple of demo data sets available for the following industries: 
+Connecting real data sources is one of the critical steps in using the power of Customer Insights. To try features without interfering with your own data, you can use industry-specific demo data. There are a couple of demo data sets available for the following industries: 
 
 -	Automotive
 -	Banking
@@ -85,7 +85,7 @@ You can now use the ingested data to tailor Customer Insights to your scenario. 
 
 ## Copy data from a trial to a paid subscription
 
-Generally, we recommend to start fresh with your own data when upgrading to the paid version of Customer Insights. 
+Generally, we recommend starting fresh with your own data when upgrading to the paid version of Customer Insights. 
 
 However, if you're the administrator of the Customer Insights trial and the global admin of your Microsoft 365 tenant, or the Dynamics 365 administrator in your organization there's a way to migrate the settings from a trial environment to a paid environment. 
 
