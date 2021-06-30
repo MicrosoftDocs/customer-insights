@@ -6,7 +6,7 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: midevane
+author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ---
