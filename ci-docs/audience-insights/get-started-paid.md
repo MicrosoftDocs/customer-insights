@@ -51,7 +51,7 @@ To create an environment:
 
 1. In the **Create an environment** dialog, select **New environment**.
 
-   If you want to [copy data from the current environment](#considerations-for-copy-configuration-preview), select **Copy from existing environment**. You'll see a list of all available environments in your organization where you can copy data from.
+   If you want to [copy data from the current environment](manage-environments.md#copy-the-environment-configuration), select **Copy from existing environment**. You'll see a list of all available environments in your organization where you can copy data from.
 
 1. Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
@@ -87,37 +87,3 @@ To create an environment:
 
    If you create multiple environments of Customer Insights and choose to save the output entities from those environments in your storage account, separate folders will be created for each environment with ci_<environmentid> in the container.
 
-### Considerations for copy configuration (preview)
-
-The following configuration settings are copied:
-
-- Feature configurations
-- Ingested/imported data sources
-- Data unification (Map, Match, Merge) configuration
-- Segments
-- Measures
-- Relationships
-- Activities
-- Search & filter Index
-- Export destinations
-- Scheduled refresh
-- Enrichments
-- Model management
-- Role assignments
-
-The following settings are *not* copied:
-
-- Customer profiles.
-- Data source credentials. You'll have to provide the credentials for every data source and refresh the data sources manually.
-- Data sources from Common Data Model folder and Dataverse managed Data Lake. You'll have to create those data sources manually with the same name as in the source environment.
-
-When you copy an environment, you'll see a confirmation message that the new environment has been created. Select **Go to data sources** to see the list of data sources.
-
-All the data sources will show a **Credentials Required** status. Edit the data sources and enter the credentials to refresh them.
-
-> [!div class="mx-imgBorder"]
-> ![Data sources copied.](media/data-sources-copied.png)
-
-After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Run** to start the data unification process and create the unified customer entity.
-
-When the data unification is complete, go to **Measures** and **Segments** to refresh them too.

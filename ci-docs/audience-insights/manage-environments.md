@@ -15,8 +15,6 @@ manager: shellyha
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-
-
 ## Edit an existing environment
 
 You can edit some of the details of existing environments.
@@ -42,6 +40,46 @@ You can edit some of the details of existing environments.
    :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
    
    When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to the respective subfolders, depending on the process you run.
+
+## Copy the environment configuration
+
+When you create a new environment, you can choose to copy the configuration from an existing environment. 
+   > [!div class="mx-imgBorder"]
+   > ![Environment settings.](media/environment-settings-dialog.png)
+
+You'll see a list of all available environments in your organization where you can copy data from.
+
+The following configuration settings are copied:
+
+- Ingested/imported data sources
+- Data unification (Map, Match, Merge) configuration
+- Segments
+- Measures
+- Relationships
+- Activities
+- Search & filter Index
+- Export destinations
+- Scheduled refresh
+- Enrichments
+- Model management
+- Role assignments
+
+The following data is *not* copied:
+
+- Customer profiles.
+- Data source credentials. You'll have to provide the credentials for every data source and refresh the data sources manually.
+- Data sources from Common Data Model folder and Dataverse managed Data Lake. You'll have to create those data sources manually with the same name as in the source environment.
+
+When you copy an environment, you'll see a confirmation message that the new environment has been created. Select **Go to data sources** to see the list of data sources.
+
+All the data sources will show a **Credentials Required** status. Edit the data sources and enter the credentials to refresh them.
+
+> [!div class="mx-imgBorder"]
+> ![Data sources copied.](media/data-sources-copied.png)
+
+After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Run** to start the data unification process and create the unified customer entity.
+
+When the data unification is complete, go to **Measures** and **Segments** to refresh them too.
 
 ## Reset an existing environment
 
