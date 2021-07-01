@@ -37,7 +37,7 @@ On the **My enrichments** tab, you can see the enrichments you've configured and
 
 Go to the **My enrichments** tab to see all configured enrichments. Each enrichment is represented as a row that includes additional information about the enrichment.
 
-Select an enrichment to see the available options. You can also select the ellipsis (...) on a list item to see the options.
+Select an enrichment to see the available options. You can also select the ellipsis (...) on a list item to see the options. If you configured several enrichments, you can use the search box to find it quickly.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Options to manage enrichments in the list of enrichments":::
 
