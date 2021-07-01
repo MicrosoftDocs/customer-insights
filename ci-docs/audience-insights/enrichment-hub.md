@@ -37,7 +37,7 @@ On the **My enrichments** tab, you can see the enrichments you've configured and
 
 Go to the **My enrichments** tab to see all configured enrichments. Each enrichment is represented as a row that includes additional information about the enrichment.
 
-Select an enrichment to see the available options. You can also select the ellipsis (...) on a list item to see the options. If you configured several enrichments, you can use the search box to find it quickly.
+Select the enrichment to see the available options. You can also select the ellipsis (...) on a list item to see the options. If you configured several enrichments, you can use the search box to find it quickly.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Options to manage enrichments in the list of enrichments":::
 
@@ -45,9 +45,9 @@ Select an enrichment to see the available options. You can also select the ellip
 - **Edit** the enrichment configuration.
 - **Run** the enrichment to update customer profiles with the latest data.
 - **Deactivate** an existing enrichment to stop it from refreshing automatically with every scheduled refresh. Data from the last successful refresh will continue to be available. **Activate** an inactive enrichment to restart automatic refreshing with every scheduled refresh.
-- **Delete** an enrichment.
+- **Delete** the enrichment.
 
-You can run or deactivate multiple enrichments at once by selecting them in the list. View and edit options aren't available as bulk action and only work for one enrichment at a time.
+Run or deactivate multiple enrichments at once by selecting them in the list. View and edit options aren't available as bulk action. They only work for one enrichment at a time.
 
 ## Enrichments and connections
 
