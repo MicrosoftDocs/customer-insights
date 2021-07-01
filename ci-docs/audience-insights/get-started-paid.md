@@ -19,7 +19,9 @@ If you're looking to try the service and the features, see [Set up a trial envir
 
 ## Create an environment in an existing organization
 
-After purchasing a license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.dynamics.com](https://home.ci.dynamics.com) to get started. 
+After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.dynamics.com/start](https://home.ci.dynamics.com/start) to get started. 
+
+Customer Insights is not licensed per user, so it won't show in the Licenses area. If you're looking for the license in the Microsoft 365 admin center, go to **Your products**. 
 
 > [!NOTE]
 > Organizations can create *two* environments for every Customer Insights license. If your organization purchases more than once license, please [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, download the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
@@ -36,8 +38,8 @@ To create an environment:
 
 1. Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
-   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for testing.
    - **Region**: The region into which the service is deployed and hosted.
+   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for testing.
    
 1. Optionally, you can select **Advanced settings**:
 
@@ -68,7 +70,7 @@ To create an environment:
 
    If you create multiple environments of Customer Insights and choose to save the output entities from those environments in your storage account, separate folders will be created for each environment with ci_<environmentid> in the container.
 
-1. Select **Create** to set up the environment.
+1. Select **Create** to set up the environment. 
 
 ## Configure an environment
 
