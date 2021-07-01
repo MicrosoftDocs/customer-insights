@@ -18,7 +18,7 @@ ms.manager: shellyha
 Connecting [Dynamics 365 Customer Insights audience insights](../audience-insights/index.yml) and engagement insights capabilities lets you see [reports on customer data](profile-reports.md).
 
 > [!IMPORTANT]
-> The audience insights environment you plan to connect must write the data to a customer's own Azure Data Lake Stoarge Gen 2 account. Audience insights administrators define this in the advanced settings when [creating an environment](../audience-insights/manage-environments.md#create-an-environment-in-an-existing-organization).
+> The audience insights environment you plan to connect must write the data to a customer's own Azure Data Lake Storage Gen 2 account. Audience insights administrators define this in the advanced settings when [creating an environment](../audience-insights/get-started-paid.md).
 
 ## Prerequisites
 

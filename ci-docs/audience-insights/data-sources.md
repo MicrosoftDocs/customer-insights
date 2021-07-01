@@ -29,7 +29,7 @@ You can add a data source in three main ways:
 
 ## Add data from on-premises data sources
 
-Ingesting data from on-premises data sources in audience insights is supported based on Microsoft Power Platform dataflows. Dataflows can be enabled in Customer Insights by [providing the Microsoft Dataverse environment URL](manage-environments.md#create-an-environment-in-an-existing-organization) when setting up the environment.
+Ingesting data from on-premises data sources in audience insights is supported based on Microsoft Power Platform dataflows. Dataflows can be enabled in Customer Insights by [providing the Microsoft Dataverse environment URL](get-started-paid.md) when setting up the environment.
 
 Data sources that are created after associating a Dataverse environment with Customer Insights will use [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) by default. Dataflows support on-premises connectivity using the data gateway. Remove and recreate data sources that existed before a Dataverse environment was associated to [use the on-premises data gateways](/data-integration/gateway/service-gateway-app.md).
 
