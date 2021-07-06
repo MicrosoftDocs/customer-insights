@@ -33,7 +33,7 @@ Export segments of unified customer profiles to Mailchimp to create newsletters 
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Autopilot** to configure the connection.
+1. Select **Add connection** and choose **Mailchimp** to configure the connection.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
