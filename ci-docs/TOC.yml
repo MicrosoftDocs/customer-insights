@@ -160,6 +160,8 @@
           items:
             - name: Exports overview
               href: audience-insights/export-destinations.md
+            - name: Active Campaign
+              href: audience-insights/export-active-campaign.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
             - name: Autopilot
@@ -202,8 +204,12 @@
               href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
+            - name: Salesforce Marketing Cloud
+              href: audience-insights/export-salesforce.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
+            - name: SendInBlue
+              href: audience-insights/export-sendinblue.md
             - name: Snapchat
               href: audience-insights/export-snapchat.md
             - name: SFTP
@@ -273,8 +279,8 @@
           href: engagement-insights/get-started.md
         - name: Create a workspace
           href: engagement-insights/create-workspace.md
-        - name: Instrument your website
-          href: engagement-insights/instrument-website.md
+        - name: Capture events from websites and mobile apps
+          href: engagement-insights/developer-resources.md
         - name: Concepts and terminology
           href: engagement-insights/glossary.md
 
@@ -314,6 +320,14 @@
           href: engagement-insights/advanced-SDK-implementation.md
         - name: Web SDK sample
           href: engagement-insights/websdk-sample.md
+        - name: Android SDK tutorial
+          href: engagement-insights/get-started-android.md
+        - name: Android SDK sample
+          href: engagement-insights/androidsdk-sample.md
+        - name: iOS SDK tutorial
+          href: engagement-insights/get-started-ios.md
+        - name: iOS SDK sample
+          href: engagement-insights/iossdk-sample.md
 
     - name: Administration
       items: 

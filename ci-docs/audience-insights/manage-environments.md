@@ -49,29 +49,32 @@ To create an environment:
 1. Select **New**.
 
    > [!div class="mx-imgBorder"]
-   > ![Environment settings](media/environment-settings-dialog.png)
+   > ![Environment settings.](media/environment-settings-dialog.png)
 
-1. In the **Create new environment** dialog, select **New environment**.
+1. In the **Create an environment** dialog, select **New environment**.
 
    If you want to [copy data from the current environment](#considerations-for-copy-configuration-preview), select **Copy from existing environment**. You'll see a list of all available environments in your organization where you can copy data from.
 
 1. Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
-   - **Region**: The region into which the service is deployed and hosted.
    - **Type**: Select whether you want to create a Production or Sandbox environment.
-
+   - **Region**: The region into which the service is deployed and hosted.
+   
 1. Optionally, you can select **Advanced settings**:
 
-   - **Save all data to**: Specifies where you want to store the output data generated from Customer Insights. You'll have two options: **Customer Insights storage** (an Azure Data Lake managed by the Customer Insights team) and **Azure Data Lake Storage Gen2** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
+   - **Save all data to**: Specifies where you want to store the output data generated from Customer Insights. You'll have two options: **Customer Insights storage** (an Azure Data Lake managed by the Customer Insights team) and **Azure Data Lake Storage** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
 
-   > [!NOTE]
-   > By saving data to Azure Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account, which may differ from where data is stored in Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)
-   >
-   > Currently, ingested entities are always stored in the Customer Insights managed data lake.
-   > We support only Azure Data Lake Gen2 storage accounts from the same Azure region you selected when creating the environment.
-   > We support only Azure Data Lake Gen2 Hierarchical Name Space (HNS) enabled storage accounts.
+     > [!NOTE]
+     > By saving data to Azure Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account, which may differ from where data is stored in Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)
+     >
+     > Currently, ingested entities are always stored in the Customer Insights Managed Data Lake. 
+     > 
+     > We support only Azure Data Lake Storage accounts from the same Azure region you selected when creating the environment. 
+     > 
+     > We support only Azure Data Lake Storage accounts that have hierarchical namespace enabled.
 
-   - For the Azure Data Lake Storage Gen2 option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name can't be changed and will be `customerinsights`.
+
+   - For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name can't be changed and will be `customerinsights`.
    
    - If you want to use [predictions](predictions.md), configure data sharing with Microsoft Dataverse, or enable data ingestion from on-premises data sources, provide the Microsoft Dataverse environment URL under **Configure data sharing with Microsoft Dataverse and enable additional capabilities**. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
 
@@ -80,7 +83,7 @@ To create an environment:
      > - [Prediction of missing values in an entity](predictions.md) is not currently supported when you enable data sharing with Microsoft Dataverse Managed Data Lake.
 
      > [!div class="mx-imgBorder"]
-     > ![Configuration options to enable data sharing with Microsoft Dataverse](media/datasharing-with-DataverseMDL.png)
+     > ![Configuration options to enable data sharing with Microsoft Dataverse.](media/datasharing-with-DataverseMDL.png)
 
    When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to folders based on the process name.
 
@@ -108,14 +111,14 @@ The following settings are *not* copied:
 
 - Customer profiles.
 - Data source credentials. You'll have to provide the credentials for every data source and refresh the data sources manually.
-- Data sources from Common Data Model folder and Common Data Service managed lake. You'll have to create those data sources manually with the same name as in the source environment.
+- Data sources from Common Data Model folder and Dataverse managed Data Lake. You'll have to create those data sources manually with the same name as in the source environment.
 
 When you copy an environment, you'll see a confirmation message that the new environment has been created. Select **Go to data sources** to see the list of data sources.
 
 All the data sources will show a **Credentials Required** status. Edit the data sources and enter the credentials to refresh them.
 
 > [!div class="mx-imgBorder"]
-> ![Data sources copied](media/data-sources-copied.png)
+> ![Data sources copied.](media/data-sources-copied.png)
 
 After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Run** to start the data unification process and create the unified customer entity.
 
@@ -131,9 +134,9 @@ You can edit some of the details of existing environments.
 
 3. In the **Edit environment** box, you can update the environment's **Display name**, but you can't change the **Region** or **Type**.
 
-4. If an environment is configured to store data in Azure Data Lake Storage Gen2, you can update the **Account key**. However, you can't change the **Account name** or **Container** name.
+4. If an environment is configured to store data in Azure Data Lake Storage, you can update the **Account key**. However, you can't change the **Account name** or **Container** name.
 
-5. Optionally, you can update from an account key based connection to a resource-based or subscription-based connection. Once upgraded, you cannot revert to account key after the update. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
+5. Optionally, you can update from an account key-based connection to a resource-based or subscription-based connection. Once upgraded, you cannot revert to account key after the update. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
 
 6. Optionally, you can provide a Microsoft Dataverse environment URL under **Configure data sharing with Microsoft Dataverse and enable additional capabilities**. These capabilities include data sharing with applications and solutions based on Microsoft Dataverse, data ingestion from on-premises data sources, or the use [predictions](predictions.md). Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data lake.
 
@@ -153,19 +156,19 @@ As an administrator, you can reset an environment to an empty state if you want 
 
 1.	Select the **Environment** picker in the header of the app. 
 
-2.	Select the environment you want to reset and select the ellipsis **...**. 
+2.	Select the environment you want to reset and select the ellipsis (**...**). 
 
 3. Choose the **Reset** option. 
 
 4.	To confirm the deletion, enter the environment name and select **Reset**.
 
-## Delete an existing environment (available only for admins)
+## Delete an existing environment
 
 As an administrator, you can delete an environment you administer.
 
 1.	Select the **Environment** picker in the header of the app.
 
-2.	Select the environment you want to reset and select the ellipsis **...**. 
+2.	Select the environment you want to reset and select the ellipsis (**...**). 
 
 3. Choose the **Delete** option. 
 

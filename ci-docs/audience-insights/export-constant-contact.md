@@ -42,7 +42,7 @@ Export segments of unified customer profiles to Constant Contact and use them fo
 
 1. Select **Connect** to initialize the connection to Constant Contact.
 
-1. Select **Authenticate with AdRoll** and provide your admin credentials for Constant Contact. 
+1. Select **Authenticate with Constant Contact** and provide your admin credentials for Constant Contact. 
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 

@@ -4,7 +4,7 @@ description: Use the available reports to see real-time activity on your site.
 author: darrinw-docs
 ms.reviewer: mhart
 ms.author: darrinw
-ms.date: 04/30/2021
+ms.date: 06/18/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -15,42 +15,84 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-A report is a collection of data visualizations. Dynamics 365 Customer Insights engagement insights comes with a set of out-of-the-box (OOB) reports, using the data collected through the SDK. You can access them under **Discover** in the left navigation pane.
+A report is a collection of data visualizations, using the data collected through the SDK, that help you measure and understand user behavior. Dynamics 365 Customer Insights engagement insights include out-of-the-box (OOB) reports for web and mobile projects.  
+
+## Web reports
+
+You can access web reports under **Discover** in the left navigation pane.
 
 :::image type="content" source="media/report-menu.png" alt-text="Navigation showing the list of available reports":::
 
-## Real-time usage report
+### Real-time usage report
 
 The  **Real-time usage** report provides an overview of current activity on your site that automatically refreshes every minute. Use real-time usage to monitor the impact of marketing campaigns, press events, and other scenarios on your site's traffic.
 
-## Key metrics reports
+### Key metrics reports
 
-- **Page views** lists the page views for individual pages along with the number of total page views over the selected time frame.
-- **Visits** shows information about the number of visits and the visit duration.
-- **Visitors** informs about new and returning unique visitors to your site.
+- **Page views** list the page views for individual pages along with the number of total page views over the selected time frame.
 
-## Content reports
+- **Visits** show information about the number of visits and the visit duration.
 
-- **Links** show information about the number and type of clicks that were performed.
-- **Exit pages** lists the links that visitors clicked to exit your site.
+- **Visitors** inform about new and returning unique visitors to your site.
 
-## Traffic sources reports
+### Content reports
 
-- **Referrers** lists the domains and URLs that referred visitors to your site.
-- **Tracking codes** provides details about the tracking codes in the links that brought visitors to your site.
+- **Links** show information about the number and type of clicks.
 
-## Visitor profiles reports
+- **Exit pages** list the links that visitors clicked to exit your site.
 
-- **Devices** lists the physical devices that were used to access your site.
-- **OS & Browsers** provide insights into the operating systems and browsers that were running when accessing your site.
-- **Locations** shows information about visitors by country, region, and city.
-- **Languages** lists page views by the visitor's preferred languages.
+### Traffic sources reports
+
+- **Referrers** list the domains and URLs that referred visitors to your site.
+
+- **Tracking codes** provide details about the tracking codes in the links that brought visitors to your site.
+
+### Visitor profiles reports
+
+- **Devices** list the physical devices that were used to access your site.
+
+- **OS & browsers** provide insights into the operating systems and browsers that were running when accessing your site.
+
+- **Locations** show information about visitors by country, region, and city.
+
+- **Languages** list page views by the visitor's preferred languages.
+
+## Mobile reports
+
+Mobile reports are grouped in real-time usage, app, and user categories. You can access mobile reports under **Discover** in the left navigation pane.   
+
+:::image type="content" source="media/mobile-reports.png" alt-text="User interface of engagement insights showing the real-time usage report that renders data in charts and lists.":::   
+
+### Real-time usage
+
+**Real-time usage** provides an overview of current activity in your mobile app that automatically refreshes every minute. Use real-time usage to monitor the number of users and sessions currently active in your app and the top screen views.
+
+### App reports
+
+- **Screen views** list screen views for individual screens in an app and the total number of screen views over a selected time frame. You can view screen views by screen name or by screen title.
+
+- **Sessions** show information about the number of sessions and the session duration.
+
+- **Return frequency** groups session counts by the number of days since the last session.
+
+- **Users** show new and returning users in your mobile app.
+
+- **Events** list all the events collected from your app, plus the total count for each event.
+
+### User reports
+
+- **App versions** list the versions of your mobile app in use by your user base.
+
+- **Devices & OS versions** provide insights into which devices and operating systems are running your mobile app.
+
+- **Locations** show information about app users by country, region, and city.
 
 ## Filter by time or value
 
-You can select the time frame or value in a report to focus on a value or time period. 
+You can select the time frame or value in a web or mobile report to focus on a value or time period. 
 
-- To select a time frame, select **More [...]** from the drop-down list of the report. Time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.”
+- To select a time frame, select **More [...]** from the dropdown list of the report. Time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.”
 
 - In most reports, select a value in a chart or list to filter the report for the selected value.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

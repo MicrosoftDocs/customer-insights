@@ -89,7 +89,7 @@ Select **Save** to confirm your selections.
 
 ## API usage tab
 
-Find details about the real-time API usage and see which events happened in a given time frame. You choose the time frame in the **Select a time frame** drop-down menu. 
+Find details about the real-time API usage and see which events happened in a given time frame. You choose the time frame in the **Select a time frame** dropdown menu. 
 
 The **API usage** contains three sections: 
 - **API calls** - a chart that visualizes the aggregated number of calls to the API in the selected time frame.

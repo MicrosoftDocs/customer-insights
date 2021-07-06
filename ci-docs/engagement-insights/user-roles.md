@@ -4,7 +4,7 @@ description: Overview of available roles and permissions for workspace members.
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 06/09/2021
+ms.date: 07/06/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual

@@ -43,7 +43,7 @@ The workspace is where you can view user activity in real time, and store and ma
 
 1. [Create a workspace](create-workspace.md) and add members.
 
-1. [Add code to your website](instrument-website.md) to see user activity arriving into your workspace.
+1. [Add code to your website](instrument-website.md) or [mobile app](developer-resources.md#capture-events-from-mobile-apps) to see user activity arriving into your workspace.
 
 1. View a [real-time report](view-reports.md) showing active users by browser, device, operating system, location, and language. You can also create [custom reports](custom-reports.md) to create your own visualizations.
 	

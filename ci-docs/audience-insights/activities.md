@@ -40,7 +40,7 @@ Your data sources can include entities with transactional and activity data from
 
    - **First**: Foreign field in your activity entity that will be used to establish a relationship with another entity.
    - **Second**: Corresponding source customer entity with which your activity entity will be in relationship. You can only relate to source customer entities that are used in the data unification process.
-   - **Third**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If there no such relationship exists, a new relationship will be created with the name you provide in this box.
+   - **Third**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
 
@@ -48,23 +48,23 @@ Your data sources can include entities with transactional and activity data from
 
 1. In the **Activity unification** step, choose the activity event and the start time of your activity. 
    - **Required fields**
-      1. **Event activity**: Field that is the event for this activity
-      2. **Timestamp**: Field that represents the start time of your activity.
+      - **Event activity**: Field that is the event for this activity.
+      - **Timestamp**: Field that represents the start time of your activity.
 
    - **Optional fields**
-      1. **Additional detail**: Field with relevant information for this activity.
-      2. **Icon**: Icon that best represents this activity type.
-      3. **Web address**: Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* entity, which can be consumed downstream using [APIs](apis.md).
+      - **Additional detail**: Field with relevant information for this activity.
+      - **Icon**: Icon that best represents this activity type.
+      - **Web address**: Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* entity, which can be consumed downstream using [APIs](apis.md).
    
    :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity entity.":::
 
 1. Select **Next** to move to the next step. You can select **Finish and review** to save the activity now with the activity type set to **Other**. 
 
-1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Subscription* & *SalesOrderLine* activity types can be semantically mapped after agreeing to map the fields. If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
+1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Subscription* and *SalesOrderLine* activity types can be semantically mapped after agreeing to map the fields. If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
 
 1. Select **Next** to move to the next step. 
 
-1. In the **Review** step, verify your selections. You go back to any of the previous steps and update the information if necessary.
+1. In the **Review** step, verify your selections. Go back to any of the previous steps and update the information if necessary.
 
    :::image type="content" source="media/Activity_Wizard5.PNG" alt-text="Review the specified fields for an activity.":::
    
@@ -84,7 +84,7 @@ The following actions are available when you select an activity.
 
 - **Edit**: Opens the activity setup on the review step. You can change any or all of the current configuration from this step. After changing the configuration, select **Save activity** and then select **Run** to process the changes.
 
-- **Rename**: Opens a dialog where to enter a different name for the selected activity. Select **Save** to apply your changes.
+- **Rename**: Opens a dialog where you can enter a different name for the selected activity. Select **Save** to apply your changes.
 
 - **Delete**: Opens a dialog to confirm the deletion of the selected activity. You can also delete more than one activity at once by selecting the activities and then selecting the delete icon. Select **Delete** to confirm the deletion.
 

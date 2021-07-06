@@ -67,7 +67,7 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
 
 1. In audience insights, go to **Data** > **Data sources**.
 
-2. Select the vertical ellipsis next to the data source you want to change and select **Edit** from the drop-down menu.
+2. Select the vertical ellipsis next to the data source you want to change and select **Edit** from the dropdown menu.
 
    > [!div class="mx-imgBorder"]
    > ![Edit option](media/edit-option-data-sources.png "Edit option")
