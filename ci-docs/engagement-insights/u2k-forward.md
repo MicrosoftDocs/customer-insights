@@ -9,7 +9,7 @@ Unknown to known forward EI feature is in public preview now.
 ## How to enable
 :::image type="content" source="media/U2Ktoggle.PNG" alt-text="enable U2K forward":::
 ## Data Flow Diagram
-
+:::image type="content" source="media/U2Kdiagram.PNG" alt-text="enable U2K forward":::
 ## Adding JS Code to your site
 
 A web site user authId needs to be captured via the following javascript sample via EI SDK:
