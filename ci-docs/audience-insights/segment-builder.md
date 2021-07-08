@@ -1,7 +1,7 @@
 ---
 title: "Create and manage segments"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 05/03/2021
+ms.date: 07/08/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -12,6 +12,15 @@ manager: shellyha
 ---
 
 # Create and manage segments
+
+> [!IMPORTANT]
+> There are several changes getting rolled out to the segment creation experience in early August 2021: 
+> - The segment builder will look slightly different with restyled elements and an improved user flow.
+> - New datetime operators and an improved date picker are enabled in the segment builder.
+> - You'll be able to add or remove conditions and rules from segments. 
+> - Nested rules that start with an OR condition will become available. You no longer need an AND condition at the outermost layer.
+> - A side pane to select attributes will be constantly available.
+> - An option to select entity relationship paths.
 
 Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. 
 
