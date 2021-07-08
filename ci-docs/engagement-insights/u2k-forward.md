@@ -7,7 +7,7 @@ Unknown to known "forward" feature in Engagement Insights allows for an associat
 Unknown to known forward EI feature is in public preview now. 
 
 ## How to enable
-
+:::image type="content" source="media/U2Ktoggle.PNG" alt-text="enable U2K forward":::
 ## Data Flow Diagram
 
 ## Adding JS Code to your site
