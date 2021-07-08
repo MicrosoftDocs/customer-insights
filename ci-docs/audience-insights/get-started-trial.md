@@ -1,7 +1,7 @@
 ---
 title: "Create and configure a trial of Customer Insights"
 description: "Steps to get a trial subscription for Dynamics 365 Customer Insights and configure it."
-ms.date: 06/29/2021
+ms.date: 07/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,9 +11,9 @@ ms.author: midevane
 manager: shellyha
 ---
 
-# Set up a trial environment
+# Set up a trial environment 
 
-A trial of Dynamics 365 Customer Insights lets you review key capability and learn more about the various features. A trial subscription expires after 30 days and is automatically deleted afterwards. Trial organizations are created by individual users who become administrator of their trial environment. They can invite more users to their trial and configure the various features.
+A trial of Dynamics 365 Customer Insights lets you review key capability and learn more about the various features. A trial subscription is deleted after expiring. Trial environments are created by individual users who become administrator of their trial environment. They can invite more users to their trial and configure the various features.
 
 ## Create a trial environment
 
@@ -21,13 +21,17 @@ You can sign up for a trial on the [trial sign up page](https://dynamics.microso
 
 1. Choose the **Sign up for a free trial** option and select **Sign up now**.
 
-1. Provide your work or school email address, tell us a more about yourself and select **Next**.
+1. Provide your work or school email address, tell us a more about yourself and select **Get started**.
 
    :::image type="content" source="media/trial-signup-dialog.png" alt-text="Dialog to sign up for a trial instance":::
 
+1. Review the terms and conditions and select **Continue** to confirm.
+
 1. Provide a **Name** for your new environment. 
 
-1. Select the trial type.
+1. Set the environment **Type** as **Trial**.
+
+1. In the **Select an industry demo** field, you can optionally choose an industry-specific data set. You can also [change to an industry demo](#use-industry-specific-demo-data-sets-in-audience-insights) later and start with the default data set.
 
 1. Choose the **Region** for your environment.
 
@@ -35,11 +39,13 @@ You can sign up for a trial on the [trial sign up page](https://dynamics.microso
 
 1. Select **Create**. 
 
-After setting up the trial, you'll see the **Demo** environment that lets you explore the app with fictitious data.
+It takes a moment to complete the environment setup. After setting up the trial, you're redirected to your new environment. You can now explore the app with fictitious data.
+
+:::image type="content" source="media/trial-environment.png" alt-text="Screenshot of a newly created trial environment.":::
 
 ## Use industry-specific demo data sets in audience insights
 
-Connecting real data sources is one of the critical steps in using the power of Customer Insights. To try features without interfering with your own data, you can use industry-specific demo data. There are a couple of demo data sets available for the following industries: 
+Connecting real data sources is one of the critical steps in using the power of Customer Insights. To try features without interfering with your own data, you can optionally use industry-specific demo data. There are a couple of demo data sets available for the following industries: 
 
 -	Automotive
 -	Banking
@@ -80,14 +86,15 @@ You can now use the ingested data to tailor Customer Insights to your scenario. 
 
 ## Limitations in trials
 
+- Trials are active for 30 days by default. However, you can extend them after day 23 when you sign in to your trial.
 - You can't use your own Azure Data Lake storage account during a trial.
-- You can store a limited amount of data in Microsoft Dataverse. 
+<!-- You can store a limited amount of data in Microsoft Dataverse. -->
 
 ## Copy data from a trial to a paid subscription
 
 Generally, we recommend starting fresh with your own data when upgrading to the paid version of Customer Insights. 
 
-However, if you're the administrator of the Customer Insights trial and the global admin of your Microsoft 365 tenant, or the Dynamics 365 administrator in your organization there's a way to migrate the settings from a trial environment to a paid environment. 
+Optionally, you can copy your data from a trial environment if you purchase Customer Insights. You must be the administrator of the Customer Insights trial and the global admin of your Microsoft 365 tenant, or the Dynamics 365 administrator in your organization to migrate the settings from a trial environment to a paid environment. 
 
-After signing in to your paid instance of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. For more information, see [Copy the environment configuration](manage-environments.md#copy-the-environment-configuration).
+After signing in to your paid instance of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration](manage-environments.md#copy-the-environment-configuration).
 
