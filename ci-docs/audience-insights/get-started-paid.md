@@ -1,7 +1,7 @@
 ---
 title: "Create and configure a paid license of Customer Insights"
 description: "Steps to get a licensed subscription for Dynamics 365 Customer Insights and configure it."
-ms.date: 06/29/2021
+ms.date: 07/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Get started with a paid subscription
 
-This article explains how to create a new environment after your organization has purchased a Dynamics 365 Customer Insights subscription. Contact us to help you with the purchase. The contact options are listed on the [Dynamics 365 Customer Insights website](https://dynamics.microsoft.com/ai/customer-insights/). 
+This article explains how to create a new environment after your organization has purchased a Dynamics 365 Customer Insights subscription. If you'd like to purchase Customer Insights, our contact options are listed on the [Dynamics 365 Customer Insights website](https://dynamics.microsoft.com/ai/customer-insights/). 
 
 If you're looking to try the service and the features, see [Set up a trial environment](get-started-trial.md).
 
@@ -26,15 +26,13 @@ Customer Insights is not licensed per user, so it won't show in the Licenses are
 > [!NOTE]
 > Organizations can create *two* environments for every Customer Insights license. If your organization purchases more than once license, please [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, download the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-In case you already have an environment set up, there are two ways to create a new environment. You can either specify an entirely new configuration, or you can copy some configuration settings from an existing environment. Select the **Environment** picker in the header of the app and select **New**.
-
 To create an environment:
 
 1. In the **Create an environment** dialog, select **New environment**.
 
    :::image type="content" source="media/environment-settings-dialog.png" alt-text="Dialog to create a new Customer Insights environment.":::
 
-   If you want to [copy data from the current environment](manage-environments.md#copy-the-environment-configuration), select **Copy from existing environment**. You'll see a list of all available environments in your organization where you can copy data from.
+   We recommend to start setting up an environment from scratch. However, if you are an admin of a trial environment, you could [copy data from another environment](manage-environments.md#copy-the-environment-configuration), by choosing **Copy from existing environment**. You'll see a list of all available environments in your organization where you can copy data from.
 
 1. Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
