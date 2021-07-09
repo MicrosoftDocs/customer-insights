@@ -18,7 +18,7 @@ This article describes the built-in limits to the Customer Insights service, whi
 | Area  | Limits  | Notes |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Segments and measures | 100 segments or measures. | The total number of active [segments](segments.md) and [measures](measures.md) combined can't exceed 100.  |
-| Relationships | 20 levels of depth on relationships in entity paths. | When creating [segments](segments.md) or [measures](measures.md), entity paths can have up to 20 relationships between the start entity and the target entity.  |
+| Relationships | 20 levels of depth on relationships in entity paths. | When creating [segments](segments.md) or [measures](measures.md) using the builder interface, entity paths can have up to 20 relationship hops between the start entity and the target entity.  |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
