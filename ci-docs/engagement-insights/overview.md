@@ -9,6 +9,7 @@ ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: overview
 ms.manager: shellyha
+ms.custom: intro-internal
 ---
 
 # About Dynamics 365 Customer Insights engagement insights capability 

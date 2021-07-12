@@ -9,6 +9,7 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
+ms.custom: intro-internal
 ---
 
 # Enrichment for customer profiles (preview)
