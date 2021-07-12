@@ -9,6 +9,7 @@ ms.topic: how-to
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
+ms.custom: intro-internal
 ---
 
 # Get started with a paid subscription
