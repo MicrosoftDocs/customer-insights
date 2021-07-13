@@ -21,7 +21,7 @@ The **System** page includes the following tabs:
 - [General](#general-tab)
 
 > [!div class="mx-imgBorder"]
-> ![System page](media/system-tabs.png "System page")
+> ![System page.](media/system-tabs.png "System page")
 
 ## Status tab
 

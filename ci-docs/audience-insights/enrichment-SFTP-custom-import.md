@@ -59,7 +59,7 @@ You need to be an administrator to configure connections. Select **Add connectio
 1. Once the verification has completed, the connection can be saved by selecting **Save**.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian connection configuration page](media/enrichment-SFTP-connection.png "Experian connection configuration page")
+   > ![Experian connection configuration page.](media/enrichment-SFTP-connection.png "Experian connection configuration page")
 
 
 ## Defining field mappings 

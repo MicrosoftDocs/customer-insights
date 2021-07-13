@@ -45,7 +45,7 @@ This feature lets you find similar customers in your customer base using artific
 After processing the similar segment, you'll find the new segment listed on the **Segments** page.
 
 > [!div class="mx-imgBorder"]
-> ![Similar customers segment](media/expanded-segment.png "Similar customers segment")
+> ![Similar customers segment.](media/expanded-segment.png "Similar customers segment")
 
 Select **View** in the action bar to open the segment detail. This view contains information about the result distribution across [similarity scores](#about-similarity-scores). You'll also find the similarity score values in the **Segment members preview**.
 

@@ -84,7 +84,7 @@ The upper part of the page includes a trend graph that visualizes changes in mem
 You can update the time frame of the visualization.
 
 > [!div class="mx-imgBorder"]
-> ![Segment time range](media/segment-time-range.png "Segment time range")
+> ![Segment time range.](media/segment-time-range.png "Segment time range")
 
 The lower part contains a list of the segment members.
 

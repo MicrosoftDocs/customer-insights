@@ -25,7 +25,7 @@ The process of creating a workspace includes setting up the *environment* to org
 
 1. Select **New** from the workspace switcher.
 
-   :::image type="content" source="media/new-workspace.png" alt-text="Customer insights page with callout on navigation pane and description":::
+   :::image type="content" source="media/new-workspace.png" alt-text="Customer insights page with callout on navigation pane and description.":::
 
 1. Choose the environment from the list or select **Create new environment**.
 1. Enter a **Workspace name**.

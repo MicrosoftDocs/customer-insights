@@ -27,7 +27,7 @@ To create the funnel report, specify the steps that you want to include and the 
 
 1. Enter a name in  **Step title**.
 
-   :::image type="content" source="media/new-funnel-report.png" alt-text="New funnel report":::
+   :::image type="content" source="media/new-funnel-report.png" alt-text="New funnel report.":::
 
 1. Select an **Activity**. An activity records when a user views a page (**View** activity) or interacts with content (**Action** activity).
 
@@ -50,7 +50,7 @@ Step 2: Customers who make a purchase
 Step 3: Customers who use the promotion code to get a discount on a subscription   
 Step 4: Subscription sign-up   
 
-:::image type="content" source="media/funnel-report-example.png" alt-text="funnel report example":::
+:::image type="content" source="media/funnel-report-example.png" alt-text="funnel report example.":::
   
 This funnel lets you see the number of users who used the promotion code after a one-time purchase to sign up for the subscription program.
 
@@ -102,7 +102,7 @@ To see information about a phase
 
 - Point to a step in the report.
 
-:::image type="content" source="media/funnel-step-data.png" alt-text="funnel data":::
+:::image type="content" source="media/funnel-step-data.png" alt-text="funnel data.":::
 
 ### Change the date range for the funnel report
 
