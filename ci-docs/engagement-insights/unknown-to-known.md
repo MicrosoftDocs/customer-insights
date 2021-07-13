@@ -28,14 +28,6 @@ You need to be a [workspace admin](user-roles.md) to enable this feature.
 
 ![Enable unknown to known](media/U2Ktoggle.png "Enable unknown to known")
 
-## Data flow
-
-1. Website visitor signs in via special mapping event `(cookieId and authId)` which is sent to engagement insights and passed on to Azure Storage.
-2. Web events get ingested to engagement insights.
-3. Unauthenticated (unknown) web events are passed on to Azure Storage.
-4. Events get combined and enriched with authId for visitors who authenticated. These events are now known.
-5. Enriched events are stored in [Kusto](/azure/data-explorer/kusto/concepts.md) moving forward.
-
 ## Adding JavaScript code to your site's tracking snippet
 
 A website can capture **user authId** with the following JavaScript sample using the [engagement insights web SDK](advanced-SDK-implementation.md).
