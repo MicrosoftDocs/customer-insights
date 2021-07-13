@@ -32,10 +32,10 @@ You need to be a [workspace admin](user-roles.md) to enable this feature.
 
 ![Data flow diagram](media/U2Kdiagram.png "Dataflow diagram")
 
-1. Visitor signs in via special mapping event `(CookieId and AuthId)` which is sent to engagement insights and passed on to Azure Storage.
+1. Visitor signs in via special mapping event `(cookieId and authId)` which is sent to engagement insights and passed on to Azure Storage.
 2. Web events get ingested to engagement insights.
 3. Unauthenticated (unknown) web events are passed on to Azure Storage.
-4. Events get combined and enriched with AuthId for visitors who authenticated. These events are now known.
+4. Events get combined and enriched with authId for visitors who authenticated. These events are now known.
 5. Enriched events are stored in [Kusto](/azure/data-explorer/kusto/concepts.md) moving forward.
 
 ## Adding JavaScript code to your site's tracking snippet
@@ -50,7 +50,7 @@ user:{
 authId: getLoggedInUserId()*,
 email: getLoggedInUserEmail()*,
 authType: "MSA",
-name: "John Doe"
+name: "Alex	Serra"
 }
 ```
 
