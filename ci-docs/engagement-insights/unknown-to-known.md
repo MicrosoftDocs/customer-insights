@@ -30,9 +30,7 @@ You need to be a [workspace admin](user-roles.md) to enable this feature.
 
 ## Data flow
 
-![Data flow diagram](media/U2Kdiagram.png "Dataflow diagram")
-
-1. Visitor signs in via special mapping event `(cookieId and authId)` which is sent to engagement insights and passed on to Azure Storage.
+1. Website visitor signs in via special mapping event `(cookieId and authId)` which is sent to engagement insights and passed on to Azure Storage.
 2. Web events get ingested to engagement insights.
 3. Unauthenticated (unknown) web events are passed on to Azure Storage.
 4. Events get combined and enriched with authId for visitors who authenticated. These events are now known.
@@ -43,6 +41,16 @@ You need to be a [workspace admin](user-roles.md) to enable this feature.
 A website can capture **user authId** with the following JavaScript sample using the [engagement insights web SDK](advanced-SDK-implementation.md).
 
 ```
+[…]
+window, document
+{
+src:"https://download.pi.dynamics.com/sdk/web/mspi-0.min.js",
+name:"myproject",
+cfg:{
+ingestionKey:<paste your ingestion key>",
+autoCapture:{
+view:true,
+click:true
 },
 userMapping: true
 },
@@ -50,8 +58,9 @@ user:{
 authId: getLoggedInUserId()*,
 email: getLoggedInUserEmail()*,
 authType: "MSA",
-name: "Alex Serra"
+name: "John Doe"
 }
+[…]
 ```
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
