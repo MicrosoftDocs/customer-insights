@@ -58,7 +58,7 @@ user:{
 authId: getLoggedInUserId()*,
 email: getLoggedInUserEmail()*,
 authType: "MSA",
-name: "John Doe"
+name: "Alex Jensen"
 }
 […]
 ```
