@@ -23,15 +23,15 @@ For example, a person visited a website last week, signed into their user accoun
 You need to be a [workspace admin](user-roles.md) to enable this feature. 
 
 1. In engagement insights, go to **Admin > Workspace**. 
-
-1. In the **Unknown to known** section, set the toggle to **Enabled**.
+2. Select the **Settings** tab.
+3. In the **Unknown to known** section, set the toggle to **Enabled**.
 
 ![Enable U2K forward](media/U2Ktoggle.png "Enable U2K forward")
 
 ## Data flow
 
 1. Visitor signs in via special mapping event `(CookieId and AuthId)` which is sent to engagement insights and passed on to Azure Storage.
-2. Web events get sent via the website to engagement insights.
+2. Web events get ingested to engagement insights.
 3. Unauthenticated (unknown) web events are passed on to Azure Storage.
 4. Events get combined and enriched with AuthId for visitors who authenticated. These events are now known.
 5. Enriched events are stored in [Kusto](/azure/data-explorer/kusto/concepts.md) moving forward.
