@@ -26,7 +26,7 @@ You need to be a [workspace admin](user-roles.md) to enable this feature.
 2. Select the **Settings** tab.
 3. In the **Unknown to known** section, set the toggle to **Enabled**.
 
-![Enable U2K forward](media/U2Ktoggle.png "Enable U2K forward")
+![Enable unknown to known](media/U2Ktoggle.png "Enable unknown to known")
 
 ## Data flow
 
@@ -50,7 +50,7 @@ user:{
 authId: getLoggedInUserId()*,
 email: getLoggedInUserEmail()*,
 authType: "MSA",
-name: "Alex	Serra"
+name: "Alex Serra"
 }
 ```
 
