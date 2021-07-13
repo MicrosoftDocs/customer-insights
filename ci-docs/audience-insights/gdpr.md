@@ -35,7 +35,7 @@ A Customer Insights admin can follow these steps to remove customer data that wa
    2. Check the status of the data source under **Status**. A check mark means the refresh was successful. A warning triangle means something went wrong. If a warning triangle is displayed, contact D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
-> ![Handling GDPR delete requests for customer data](media/gdpr-data-sources.png "Handling GDPR delete requests for customer data")
+> ![Handling GDPR delete requests for customer data.](media/gdpr-data-sources.png "Handling GDPR delete requests for customer data")
 
 #### Manage delete requests for user data
 
@@ -47,7 +47,7 @@ A Customer Insights admin can follow these steps to delete Customer Insights use
 4. Select **Remove**.
 
 > [!div class="mx-imgBorder"]
-> ![Handling GDPR delete requests foruser data](media/gdpr-permissions.png "Handling GDPR delete requests for user data")
+> ![Handling GDPR delete requests foruser data.](media/gdpr-permissions.png "Handling GDPR delete requests for user data")
 
 ## Responding to GDPR data subject export requests
 

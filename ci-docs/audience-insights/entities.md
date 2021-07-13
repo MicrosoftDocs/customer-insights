@@ -30,12 +30,12 @@ The **Entities** page lists entities and includes several columns:
 Select an entity to explore the different fields and records included within that entity.
 
 > [!div class="mx-imgBorder"]
-> ![Select an entity](media/data-manager-entities-data.png "Select an entity")
+> ![Select an entity.](media/data-manager-entities-data.png "Select an entity")
 
 - The **Data** tab shows a table listing details about individual records of the entity.
 
 > [!div class="mx-imgBorder"]
-> ![Fields table](media/data-manager-entities-fields.PNG "Fields table")
+> ![Fields table.](media/data-manager-entities-fields.PNG "Fields table")
 
 - The **Attributes** tab is selected by default and shows a table to review details for the selected entity, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](map-entities.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* below has a data type *Text* but its (semantic) Common Data Model type might be *Email* or *EmailAddress*.
 
@@ -47,7 +47,7 @@ To learn more about the data ingested in the entity, the **Summary** column prov
 Select the chart icon to see the summary of the data.
 
 > [!div class="mx-imgBorder"]
-> ![Summary symbol](media/data-manager-entities-summary.png "Data summary table")
+> ![Summary symbol.](media/data-manager-entities-summary.png "Data summary table")
 
 ## Entity-specific information
 

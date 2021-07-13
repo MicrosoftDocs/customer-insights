@@ -104,7 +104,7 @@ Some entities contain more details than others. If an entity includes the latest
 Whether you manually merge attributes or let the system merge them, you can always run your merge. Select **Run** on the **Merge** page to start the process.
 
 > [!div class="mx-imgBorder"]
-> ![Data merge Save and Run](media/configure-data-merge-save-run.png "Data merge Save and Run")
+> ![Data merge Save and Run.](media/configure-data-merge-save-run.png "Data merge Save and Run")
 
 Choose **Run only Merge** if you only want to see the output reflected in the unified customer entity. Downstream processes will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 

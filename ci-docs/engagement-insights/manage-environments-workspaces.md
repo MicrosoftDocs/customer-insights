@@ -35,7 +35,7 @@ Every workspace needs to be in an environment. You can select a pre-existing env
 
 1. In engagement insights, select **New** from the workspace switcher. 
 
-   :::image type="content" source="media/New-workspace.png" alt-text="Customer Insights page workspace picker":::
+   :::image type="content" source="media/New-workspace.png" alt-text="Customer Insights page workspace picker.":::
 
 1. Choose an environment from the list or select **Create new environment**.
 
@@ -88,7 +88,7 @@ Deleting a workspace will permanently remove all of its content, data, settings,
 
 As an Environment admin, you can access an environment from the left navigation pane. You can configure environment settings, other Environment admins, workspaces, and [connections to audience insights](configure-connections.md). Select tabs to move between different areas in the admin center.
 
-:::image type="content" source="media/New-environment.png" alt-text="Environment admin center":::
+:::image type="content" source="media/New-environment.png" alt-text="Environment admin center.":::
 
 ### Configure an environment
 

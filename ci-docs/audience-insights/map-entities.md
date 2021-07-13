@@ -30,14 +30,14 @@ For more information about the general flow of data unification, see [Unify](dat
 3. Select the entities and attributes you want to use in the *match* and *merge* phases. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the **Include all fields** checkbox on the entity level. We recommend selecting at least two entities to benefit from the data unification process.
 
    > [!div class="mx-imgBorder"]
-   > ![Add entities example](media/data-manager-configure-map-add-entities-example.png "Add entities example")
+   > ![Add entities example.](media/data-manager-configure-map-add-entities-example.png "Add entities example")
 
    In this example, we're adding the **eCommerceContacts** and **loyCustomers** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
    
    You can search on keywords across all attributes and entities to select the required attributes you want to map.
    
      > [!div class="mx-imgBorder"]
-   > ![Search fields example](media/data-manager-configure-map-search-fields-example.png "Search fields example")
+   > ![Search fields example.](media/data-manager-configure-map-search-fields-example.png "Search fields example")
 
 4. Select **Apply** to confirm your selections.
 
@@ -50,7 +50,7 @@ After selecting your entities, the **Map** page lists the selected entities for 
 - **Attribute semantic type**: Categories of your attributes, such as email address or name. To use AI models for smart prediction of semantics, save time and improve accuracy, set **Intelligent mapping** to **ON**. Intelligent mapping highlights AI-based semantics recommendation in the **Type** field. If you set it to **OFF**, you will see our regular mapping recommendations. You can select any semantic type from the available list of options and override the suggested selection.
 
 > [!div class="mx-imgBorder"]
-> ![Attribute type and semantic prediction](media/data-manager-configure-map-add-attributes-semantic-prediction.png "Attribute type and semantic prediction")
+> ![Attribute type and semantic prediction.](media/data-manager-configure-map-add-attributes-semantic-prediction.png "Attribute type and semantic prediction")
 
 Adding a custom semantic type is also possible. Select the type field for an attribute, and type your custom semantic type name. This way, you can also change the attribute types that were identified by the system.
 
@@ -59,7 +59,7 @@ All attributes for which a semantic type is automatically identified are grouped
 Attributes that aren't automatically mapped to a semantic type are grouped in the **Define the data in the unmapped fields** section. Select the semantic type field for the unmapped attributes, or enter your custom attribute-type name.
 
 > [!div class="mx-imgBorder"]
-> ![Primary key and attribute type](media/data-manager-configure-map-add-attributes.png "Primary key and attribute type")
+> ![Primary key and attribute type.](media/data-manager-configure-map-add-attributes.png "Primary key and attribute type")
 
 > [!NOTE]
 > One field should map to the semantic type Person.FullName to populate the customer name in customer card. Otherwise, the customer cards will appear nameless. 
@@ -71,7 +71,7 @@ Attributes that aren't automatically mapped to a semantic type are grouped in th
 2. In the **Edit fields** pane, add or remove attributes and entities. Use the search or scroll to find and select your attributes and entities of interest. You can't remove an attribute or an entity if they've already been matched.
 
    > [!div class="mx-imgBorder"]
-   > ![Add or remove attributes](media/configure-data-map-edit.png "Add or remove attributes")
+   > ![Add or remove attributes.](media/configure-data-map-edit.png "Add or remove attributes")
 
 3. Select **Apply**.
 
@@ -89,7 +89,7 @@ Continue with the unification steps and ensure the attribute that contains the i
 
 For organizations (Preview), the attribute type should be mapped to "Organization.Name"
 > [!div class="mx-imgBorder"]
-> ![Primary key and attribute type B2B](media/configure-data-map-edit-b2b.png "Primary key and attribute type B2B")
+> ![Primary key and attribute type B2B.](media/configure-data-map-edit-b2b.png "Primary key and attribute type B2B")
 
 ## Next step
 
