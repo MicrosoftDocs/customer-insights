@@ -1,20 +1,41 @@
-# Unknown to Known  
+---
+title: Associate events with visitors' website activities with Unknown to known
+description:  The Unknown to known feature allows you to associate events on a website with visitors who authenticated previously. 
+ms.reviewer: mhart
+ms.author: mkisel
+author: mhart
+ms.date: 7/12/2021
+ms.service: customer-insights
+ms.subservice: engagement-insights 
+ms.topic: overview
+ms.manager: shellyha
+---
+# Associate events with visitors' website activities with **Unknown to known**
 
-## Introduction
+The **Unknown to known** feature in Engagement insights allows you to associate events on a website with visitors who authenticated previously. If the feature is disabled, visitors who authenticated during an earlier visit and then left are not identified if they don’t authenticate again when coming back. 
 
-Unknown to known  feature in Engagement Insights allows for an association of activities on a web site with customers who visited the site previously and authenticated at that time. Without U2K feature, customers who authenticated during a visit and then left the site would not be identified again if they do not authenticate again when coming back. For example, if John Doe had visited a customer’s site last week, authenticated and returned this week again to browse (and does not authenticate again when came back), a site owner using U2K feature would know that John had returned and what he had done on the site. This allows for more accurate reporting and analysis of web site activities performed by highly valuable visitors who have authenticated previously.
+For example, John visited a website last week, signed in his user account on the site, and browsed the product catalog. He returned the following week to browse more products without signing into his account. The site owner using the **Unknown to known** feature would know that John had returned and what he had done on the site. This allows for more accurate reporting and analysis of website activities.
 
-Unknown to known forward EI feature is in public preview now. 
+The **unknown to known** Engagement Insights feature is in public preview now. 
 
 ## How to enable
-:::image type="content" source="media/U2Ktoggle.PNG" alt-text="enable U2K forward":::
+
+You need to be a workspace admin to enable this feature. 
+
+1 In Engagement insights, go to **Admin > Workspace**.
+2 In the **Unknown to known** section, set the toggle to **Enabled**.
+
+![Enable U2K forward](media/U2Ktoggle.png "Enable U2K forward")
+
 ## Data Flow Diagram
-:::image type="content" source="media/U2Kdiagram.PNG" alt-text="enable U2K forward":::
+
+![Data flow diagram](media/U2Kdiagram.png "Data flow diagram")
+
 ## Adding JS Code to your site
 
-A web site user authId needs to be captured via the following javascript sample via EI SDK:
+A website **user authId** needs to be captured via the following Javascript sample in the Engagement insights SDK:
 
-[…]
+```
 window, document
 {
 src:"https://download.pi.dynamics.com/sdk/web/mspi-0.min.js",
@@ -33,4 +54,10 @@ email: getLoggedInUserEmail()*,
 authType: "MSA",
 name: "John Doe"
 }
-[…]
+```
+
+## Learn more
+[Advanced web SDK instrumentation](https://docs.microsoft.com/dynamics365/customer-insights/engagement-insights/advanced-sdk-implementation).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
