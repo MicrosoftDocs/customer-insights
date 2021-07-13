@@ -31,12 +31,12 @@ Before setting up an export, you need to have access and an active subscription 
 
 1. Make sure that you enable **Hierarchical namespace** on the **Advanced** tab. 
 
-   :::image type="content" source="media/enable-hierarchical-namespace.png" alt-text="Enable hierarchical namespace on the advanced tab":::
+   :::image type="content" source="media/enable-hierarchical-namespace.png" alt-text="Enable hierarchical namespace on the advanced tab.":::
 
 1. Once it has been deployed, go to the newly created storage account. In the navigation pane, select **Settings** > **Access keys**. 
 
 1. Copy the **Account name** and **Key** to use them when creating a new export.
-   :::image type="content" source="media/storage-account-access-keys.png" alt-text="Access keys in a storage account":::
+   :::image type="content" source="media/storage-account-access-keys.png" alt-text="Access keys in a storage account.":::
 
 ## Export events
 

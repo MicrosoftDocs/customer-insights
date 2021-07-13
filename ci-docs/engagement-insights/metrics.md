@@ -42,7 +42,7 @@ Environment and workspace admins can create metrics. Event properties must be se
 1. Go to **Data** > **Metrics**.
 1. Select **New metric**.
 
-   :::image type="content" source="media/new-metric.png" alt-text="Add a metric to an event":::
+   :::image type="content" source="media/new-metric.png" alt-text="Add a metric to an event.":::
 
 1. For format, select the **Integer** or **Double** datatype. Integer is a whole number. For Double, you can pick between one and three decimal places.
 1. In the **Resource library** pane, find the event property to base the metric on.
@@ -80,7 +80,7 @@ It can take up to a minute for the metric before you can use it to [create custo
 1. Go to **Data** > **Metrics**.
 1. Select **More [...]** for a metric and choose **Delete**.
 
-   :::image type="content" source="media/delete-metric.png" alt-text="Delete a metric to an event":::
+   :::image type="content" source="media/delete-metric.png" alt-text="Delete a metric to an event.":::
 
 1. Select **Delete** to confirm the deletion.
 

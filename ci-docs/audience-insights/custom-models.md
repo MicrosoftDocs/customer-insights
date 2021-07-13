@@ -37,7 +37,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 1. Give your custom model a recognizable name in the **Name** field.
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot of the New workflow pane](media/new-workflowv2.png "Screenshot of the New workflow pane")
+   > ![Screenshot of the New workflow pane.](media/new-workflowv2.png "Screenshot of the New workflow pane")
 
 1. Select the organization that contains the web service in **Tenant that contains your web service**.
 
@@ -54,7 +54,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
    > The custom model workflow will apply heuristics to map the web service input fields to the entity attributes based on the name and data type of the field. You'll see an error if a web service field can't be mapped to an entity.
 
    > [!div class="mx-imgBorder"]
-   > ![Configure a workflow](media/intelligence-screen2-updated.png "Configure a workflow")
+   > ![Configure a workflow.](media/intelligence-screen2-updated.png "Configure a workflow")
 
 1. In the **Model Output Parameters** step, set the following properties:
    - Machine Learning Studio (classic)
@@ -65,12 +65,12 @@ Predictions offer capabilities to create better customer experiences, improve bu
       1. Select the **Output Path parameter name** of your batch pipeline from the dropdown.
 
       > [!div class="mx-imgBorder"]
-      > ![Model Output Parameter Pane](media/intelligence-screen3-outputparameters.png "Model Output Parameter Pane")
+      > ![Model Output Parameter Pane.](media/intelligence-screen3-outputparameters.png "Model Output Parameter Pane")
 
 1. Select the matching attribute from the **Customer ID in results** dropdown list that identifies customers and select **Save**.
 
    > [!div class="mx-imgBorder"]
-   > ![Relate results to Customer data pane](media/intelligence-screen4-relatetocustomer.png "Relate results to Customer data pane")
+   > ![Relate results to Customer data pane.](media/intelligence-screen4-relatetocustomer.png "Relate results to Customer data pane")
 
 1. You'll see the **Workflow Saved** screen with details about the workflow.    
    If you configured a workflow for an Azure Machine Learning pipeline, audience insights will attach to the workspace that contains the pipeline. Audience insights will get a **Contributor** role on the Azure workspace.

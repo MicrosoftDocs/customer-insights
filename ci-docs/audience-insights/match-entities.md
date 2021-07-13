@@ -133,7 +133,7 @@ Specifying deduplication rules isn't mandatory. If no such rules are configured,
    - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
  
    > [!div class="mx-imgBorder"]
-   > ![Deduplication rules step 1](media/match-selfconflation.png "Deduplication rules step 1")
+   > ![Deduplication rules step 1.](media/match-selfconflation.png "Deduplication rules step 1")
  
 1. Once the entities are selected and their merge preference is set, select **Add rule** to define the deduplication rules at an entity level.
    - **Select field** lists all the available fields from that entity. Choose the field you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
@@ -141,7 +141,7 @@ Specifying deduplication rules isn't mandatory. If no such rules are configured,
    - Define more conditions by selecting **Add condition**.
  
    > [!div class="mx-imgBorder"]
-   > ![Deduplication rules step 2](media/match-selfconflation-rules.png "Deduplication rules step 2")
+   > ![Deduplication rules step 2.](media/match-selfconflation-rules.png "Deduplication rules step 2")
 
   You can create multiple deduplication rules for an entity. 
 

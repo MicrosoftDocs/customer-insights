@@ -41,7 +41,7 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 You'll see the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by every column.
 
 > [!div class="mx-imgBorder"]
-> ![Data source added](media/configure-data-datasource-added.png "Data source added")
+> ![Data source added.](media/configure-data-datasource-added.png "Data source added")
 
 |Status  |Description  |
 |---------|---------|
