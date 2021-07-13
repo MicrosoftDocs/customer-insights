@@ -26,9 +26,11 @@ You need to be a [workspace admin](user-roles.md) to enable this feature.
 2. Select the **Settings** tab.
 3. In the **Unknown to known** section, set the toggle to **Enabled**.
 
-![Enable U2K forward](media/U2Ktoggle.png "Enable U2K forward")
+![Enable U2K forward](media/U2Kdiagram.png "Enable U2K forward")
 
 ## Data flow
+
+![Data flow diagram](media/U2Ktoggle.png "Dataflow diagram")
 
 1. Visitor signs in via special mapping event `(CookieId and AuthId)` which is sent to engagement insights and passed on to Azure Storage.
 2. Web events get ingested to engagement insights.
