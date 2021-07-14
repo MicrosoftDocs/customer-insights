@@ -42,7 +42,7 @@ Transactional churn prediction helps predict if a customer will no longer purcha
         - **Event:** The name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
         - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
 - Suggested data characteristics:
-    - Sufficient historical data: Transaction data for at least double the selected time window. Preferably, two to three years of subscription data. 
+    - Sufficient historical data: Transaction data for at least double the selected time window. Preferably, two to three years of transaction history. 
     - Multiple purchases per customer: Ideally at least two transactions per customer.
     - Number of customers: At least 10 customer profiles, preferably more than 1,000 unique customers. The model will fail with fewer than 10 customers and insufficient historical data.
     - Data completeness: Less than 20% of missing values in the data field of the entity provided.
