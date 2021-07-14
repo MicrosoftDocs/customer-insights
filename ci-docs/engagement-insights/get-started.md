@@ -9,6 +9,7 @@ ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
 ms.manager: shellyha
+ms.custom: intro-internal
 ---
 
 # Get started with Dynamics 365 Customer Insights engagement insights capability (public preview)

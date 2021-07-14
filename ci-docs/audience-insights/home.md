@@ -17,7 +17,7 @@ You can [access audience insights from Dynamics 365 Customer Insights](https://h
 The **Home** page shows an overview of segments, measures, and enrichment data (if configured)after completing the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
 
 > [!div class="mx-imgBorder"] 
-> ![Insights on Home page](media/home-page-insights.png "Insights on Home page")
+> ![Insights on Home page.](media/home-page-insights.png "Insights on Home page")
 
 Under **Recent segments**, you see groups of customers based on demographic, behavioral, or transactional attributes that you've defined. [Creating segments](segments.md) helps you to group your customer base and better target your business activities.
 
@@ -30,7 +30,7 @@ The **Recent enrichments** section lists the results of the enrichment runs that
 Select the **Environment** control in the upper-right corner of the page to change environments.
 
 > [!div class="mx-imgBorder"] 
-> ![Switch environment](media/home-page-environment-switcher.png "Switch environment")
+> ![Switch environment.](media/home-page-environment-switcher.png "Switch environment")
 
 Administrators can create and manage [multiple environments](manage-environments.md). Maintaining more than one environment may be useful if, for example, your organization operates internationally and you need to segregate data and insights in different ways.
 

@@ -39,7 +39,7 @@ You can also analyze how the overlap changes for specific attributes.
 After completing the analysis, find details on this insight on **Segments** > **Insights (preview)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-overlap.png" alt-text="Segment overlap insight details":::
+> :::image type="content" source="media/segment-overlap.png" alt-text="Segment overlap insight details.":::
 
 Select an insight to see the analysis results:
 
@@ -72,7 +72,7 @@ Segment differentiators help you find out what differentiates a segment from the
 After completing the analysis, find details on this insight on **Segments** > **Insights (preview)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-differentiators.png" alt-text="Segment differentiator insight details":::
+> :::image type="content" source="media/segment-differentiators.png" alt-text="Segment differentiator insight details.":::
 
 Select an insight to see the analysis results. A differentiator analysis includes two tabs. The **Attributes** tab lists profile attributes considered as differentiators. The **Measures** tab lists differentiators. Each tab includes the following details:
 

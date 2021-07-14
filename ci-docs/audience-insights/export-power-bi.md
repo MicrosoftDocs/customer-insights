@@ -34,7 +34,7 @@ Create visualizations for your data with the Power BI Desktop. Generate addition
 
 1. In the **Navigator** dialog box. you see the list of all environments you have access to. Expand an environment and open any of the folders (entities, measures, segments, enrichments). For example, open the **Entities** folder, to see all entities you can import.
 
-   ![Power BI Connector Navigator](media/power-bi-navigator.png "Power BI Connector Navigator")
+   ![Power BI Connector Navigator.](media/power-bi-navigator.png "Power BI Connector Navigator")
 
 1. Select the check boxes next to the entities to include and **Load**. You can select multiple entities from multiple environments.
 

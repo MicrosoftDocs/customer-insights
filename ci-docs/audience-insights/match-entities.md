@@ -133,7 +133,7 @@ Specifying deduplication rules isn't mandatory. If no such rules are configured,
    - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
  
    > [!div class="mx-imgBorder"]
-   > ![Deduplication rules step 1](media/match-selfconflation.png "Deduplication rules step 1")
+   > ![Deduplication rules step 1.](media/match-selfconflation.png "Deduplication rules step 1")
  
 1. Once the entities are selected and their merge preference is set, select **Add rule** to define the deduplication rules at an entity level.
    - **Select field** lists all the available fields from that entity. Choose the field you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
@@ -141,7 +141,7 @@ Specifying deduplication rules isn't mandatory. If no such rules are configured,
    - Define more conditions by selecting **Add condition**.
  
    > [!div class="mx-imgBorder"]
-   > ![Deduplication rules step 2](media/match-selfconflation-rules.png "Deduplication rules step 2")
+   > ![Deduplication rules step 2.](media/match-selfconflation-rules.png "Deduplication rules step 2")
 
   You can create multiple deduplication rules for an entity. 
 
@@ -174,7 +174,8 @@ Go to **Data** > **Unify** > **Match** and select **Run** to start the process. 
 You'll find the result of a successful run, the unified customer profile entity, on the **Entities** page. Your unified customer entity is called **Customers** in the **Profiles** section. The first successful match run creates the unified *Customer* entity. All subsequent match runs expand that entity.
 
 > [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+> After running the match process, select the process status to open the **Task details** pane. It gives an overview about the processing time, the last processing date, and all errors and warnings associated with the task. Select **See details** to see which entities participated in the match process, which rules were applied to them, and if the updates were published successfully.  
+> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).  
 
 ## Review and validate your matches
 
