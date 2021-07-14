@@ -1,7 +1,7 @@
 ---
 title: "Create and configure a paid license of Customer Insights"
 description: "Steps to get a licensed subscription for Dynamics 365 Customer Insights and configure it."
-ms.date: 07/08/2021
+ms.date: 07/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -33,12 +33,12 @@ To create an environment:
 
    :::image type="content" source="media/environment-settings-dialog.png" alt-text="Dialog to create a new Customer Insights environment.":::
 
-   We recommend to start setting up an environment from scratch. However, if you are an admin of a trial environment, you could [copy data from another environment](manage-environments.md#copy-the-environment-configuration), by choosing **Copy from existing environment**. You'll see a list of all available environments in your organization where you can copy data from.
+   We recommend to start setting up an environment from scratch. However, if you are an admin or member of a trial environment, you could [copy data from another environment](manage-environments.md#copy-the-environment-configuration), by choosing **Copy from existing environment**. You'll see a list of all available environments in your organization where you can copy data from.
 
 1. Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
    - **Region**: The region into which the service is deployed and hosted.
-   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for testing.
+   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing.
    
 1. Optionally, you can select **Advanced settings**:
 
@@ -47,7 +47,7 @@ To create an environment:
      > [!NOTE]
      > By saving data to Azure Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account, which may differ from where data is stored in Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)
      >
-     > Currently, ingested entities are always stored in the Customer Insights managed Data Lake. 
+     > Currently, ingested entities from Power BI dataflows are stored in the Microsoft Dataverse-managed Data Lake. 
      > 
      > We support only Azure Data Lake Storage accounts from the same Azure region you selected when creating the environment. 
      > 

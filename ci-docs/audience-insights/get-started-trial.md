@@ -101,3 +101,12 @@ Optionally, you can copy your data from a trial environment if you purchase Cust
 
 After signing in to your paid instance of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration](manage-environments.md#copy-the-environment-configuration).
 
+## Next steps
+
+Review the following articles to help you getting started with configuring Customer Insights. 
+
+- [Add more users and assign permissions](permissions.md).
+- [Ingest your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
+- [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).
+- Create [segments](segments.md) to group customers and [measures](measures.md) review KPIs.
+- Set up [connections](connections.md) and [exports](export-destinations.md) to process subsets of your data in other applications.
