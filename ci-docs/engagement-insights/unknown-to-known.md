@@ -4,7 +4,7 @@ description:  The unknown to known feature allows you to associate events on a w
 ms.reviewer: mhart
 ms.author: mkisel
 author: mkisel11
-ms.date: 7/13/2021
+ms.date: 7/14/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: overview
@@ -30,7 +30,7 @@ You need to be a [workspace admin](user-roles.md) to enable this feature.
 
 ## Adding JavaScript code to your site's tracking snippet
 
-A website can capture **user authId** with the following JavaScript sample using the [engagement insights web SDK](advanced-SDK-implementation.md).
+A website can capture **user authId** with the following JavaScript sample using the [engagement insights web SDK](advanced-SDK-implementation.md). In order for **unknown to known** feature to work, you need to capture authId *and* enable userMapping:True in your JS snippet as in the sample below.
 
 ```
 […]
