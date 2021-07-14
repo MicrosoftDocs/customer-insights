@@ -76,7 +76,6 @@ As an administrator, select the the environment picker in the app header to crea
 1.	In audience insights, go to **Data** > **Data sources**.
 
 2.	To import your own data sources, go to the [guide on data ingestion](data-sources.md).     
-
    If you prefer working with sample data which lets you try out data ingestion, you can ingest the industry demo data in your environment. Choose the **Import from Datahub** option and follow the steps below.
 
 3.	Select the industry card that suits your scenario. 
