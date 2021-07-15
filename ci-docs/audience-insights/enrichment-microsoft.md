@@ -22,7 +22,7 @@ To configure brand affinities enrichment, go to the **Discover** tab and select 
 To configure interest affinities enrichment, go to the **Discover** tab and select **Enrich my data** on the **Interests** tile.
 
    > [!div class="mx-imgBorder"]
-   > ![Brands and Interests tiles](media/BrandsInterest-tile-Hub.png "Brands and Interest tiles")
+   > ![Brands and Interests tiles.](media/BrandsInterest-tile-Hub.png "Brands and Interest tiles")
 
 ## How we determine affinities
 
@@ -118,7 +118,7 @@ Depending on the size of your customer data, it may take several minutes for an 
 
 After running the enrichment process, go to **My enrichments** to review the total number of enriched customers and a breakdown of brands or interests in the enriched customer profiles.
 
-:::image type="content" source="media/my-enrichments.png" alt-text="Preview of results after running the enrichment process":::
+:::image type="content" source="media/my-enrichments.png" alt-text="Preview of results after running the enrichment process.":::
 
 Review the enriched data by selecting **View enriched data** in the chart. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** entity. Data for interests is in the **InterestAffinityFromMicrosoft** entity. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
 
@@ -126,7 +126,7 @@ Review the enriched data by selecting **View enriched data** in the chart. Enric
 
 Brand and interest affinities can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find charts for the brands or interests that people in that customer's demographic profile have affinity for.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="Customer card with enriched data":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="Customer card with enriched data.":::
 
 ## Next steps
 

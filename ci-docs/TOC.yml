@@ -288,7 +288,7 @@
       items: 
         - name: Create and modify events
           href: engagement-insights/refined-events.md
-        - name: Recognize web events from previously authenticated visitors 
+        - name: Recognize web events from previously authenticated visitors master
           href: engagement-insights/unknown-to-known.md
         - name: Export events
           href: engagement-insights/export-events.md
@@ -307,7 +307,6 @@
           href: engagement-insights/metrics.md
         - name: View and create segments
           href: engagement-insights/segments.md
-
 
     - name: Journey analytics
       items: 
@@ -346,6 +345,9 @@
       items: 
         - name: Delete and export personal data
           href: engagement-insights/delete-export-personal-data.md
+
+    - name: Regional availability
+      href: engagement-insights/regional-availability.md
 
     - name: Service limits
       href: engagement-insights/quotas.md

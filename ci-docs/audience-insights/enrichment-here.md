@@ -30,7 +30,7 @@ To configure HERE Technologies enrichments, the following prerequisites must be 
 1. Select **Enrich my data** on the HERE Technologies tile and select **Get started**.
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies tile](media/HERE-tile.png "HERE Technologies tile")
+   > ![HERE Technologies tile.](media/HERE-tile.png "HERE Technologies tile")
 
 1. Select a [connection](connections.md) from the dropdown list. Contact  an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection**. Choose **HERE Technologies** from the dropdown list. 
 
@@ -45,7 +45,7 @@ To configure HERE Technologies enrichments, the following prerequisites must be 
 1. Define which fields from your unified profiles should be used to look for matching location data from HERE Technologies. The **Street 1** and **Zip/Postal Code** fields are required for the selected primary and/or secondary address. For a higher match accuracy, more fields can be added.
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies enrichment configuration page](media/enrichment-HERE-configuration.png "HERE Technologies enrichment configuration page")
+   > ![HERE Technologies enrichment configuration page.](media/enrichment-HERE-configuration.png "HERE Technologies enrichment configuration page")
 
 1. Select **Next** to complete the field mapping.
 
@@ -68,7 +68,7 @@ You need to be an administrator to configure connections. Select **Add connectio
 1. After completing the verification, select **Save**.
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies connection configuration page](media/enrichment-HERE-connection.png "HERE Technologies connection configuration page")
+   > ![HERE Technologies connection configuration page.](media/enrichment-HERE-connection.png "HERE Technologies connection configuration page")
 
 ## Enrichment results
 

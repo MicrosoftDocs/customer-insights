@@ -21,7 +21,7 @@ A report is a collection of data visualizations, using the data collected throug
 
 You can access web reports under **Discover** in the left navigation pane.
 
-:::image type="content" source="media/report-menu.png" alt-text="Navigation showing the list of available reports":::
+:::image type="content" source="media/report-menu.png" alt-text="Navigation showing the list of available reports.":::
 
 ### Real-time usage report
 
