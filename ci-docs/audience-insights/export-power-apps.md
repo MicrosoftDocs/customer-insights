@@ -51,12 +51,12 @@ For example, you add customer profiles to a [gallery control](/powerapps/maker/c
 1. Add a **Gallery** control to an app you're building.
 
 > [!div class="mx-imgBorder"]
-> ![Add a gallery element](media/connector-powerapps9.png "Add a gallery element")
+> ![Add a gallery element.](media/connector-powerapps9.png "Add a gallery element")
 
 1. Select **Customer** as the data source for items.
 
     > [!div class="mx-imgBorder"]
-    > ![Select a data source](media/choose-datasource-powerapps.png "Select a data source")
+    > ![Select a data source.](media/choose-datasource-powerapps.png "Select a data source")
 
 1. You can change the data panel on the right to select which field for the Customer entity to show on the gallery.
 

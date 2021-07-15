@@ -1,9 +1,9 @@
 ---
 title: Configure connections
 description: How set up and manage connections to audience insights.
-author: m-hartmann
-ms.reviewer: ruthai
-ms.author: mhart
+author: mochimochi016
+ms.reviewer: mhart
+ms.author: jefhar
 ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
@@ -32,7 +32,7 @@ As an [environment admin](user-roles.md), you can set up connections from all en
 1. Go to **Admin** > **Environment**  and select **Connections**.
 
 1. If it's your first connection, select **Create a connection**. To create more connections, select **Add a connection**.
-   :::image type="content" source="media/create-connection.png" alt-text="Create a new connection to Customer Insights":::
+   :::image type="content" source="media/create-connection.png" alt-text="Create a new connection to Customer Insights.":::
 
 1. Provide the settings to your audience insights Azure Data Lake Storage Gen2. For more information about storage accounts, see [Create and manage storage accounts](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
    - **ADLS gen2 storage account**: Provide the storage account name. For example, my-storage-account.

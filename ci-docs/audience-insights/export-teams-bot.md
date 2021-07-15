@@ -16,7 +16,7 @@ manager: shellyha
 Connect with Microsoft Teams to let a bot look up unified customer profiles in Teams channels.
 
 > [!div class="mx-imgBorder"]
-> ![Teams bot showing a customer record](media/teams-bot.png "Teams bot showing a customer record")
+> ![Teams bot showing a customer record.](media/teams-bot.png "Teams bot showing a customer record")
 
 ## Prerequisites
 

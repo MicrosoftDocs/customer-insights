@@ -2,8 +2,8 @@
 title: Export refined events
 description: How to export refined events and base events.
 ms.reviewer: mhart
-ms.author: v-salash
-author: pickwick129
+ms.author: jusali
+author: jusali
 ms.date: 04/30/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
@@ -31,24 +31,24 @@ Before setting up an export, you need to have access and an active subscription 
 
 1. Make sure that you enable **Hierarchical namespace** on the **Advanced** tab. 
 
-   :::image type="content" source="media/enable-hierarchical-namespace.png" alt-text="Enable hierarchical namespace on the advanced tab":::
+   :::image type="content" source="media/enable-hierarchical-namespace.png" alt-text="Enable hierarchical namespace on the advanced tab.":::
 
 1. Once it has been deployed, go to the newly created storage account. In the navigation pane, select **Settings** > **Access keys**. 
 
 1. Copy the **Account name** and **Key** to use them when creating a new export.
-   :::image type="content" source="media/storage-account-access-keys.png" alt-text="Access keys in a storage account":::
+   :::image type="content" source="media/storage-account-access-keys.png" alt-text="Access keys in a storage account.":::
 
 ## Export events
 
 There are two ways to export events: 
 - Go to **Data** > **Exports** and select **New export**.
-- Go to **Data** > **Events**, select **More [...]** next to the event you want to export and select **Export** from the drop-down menu. 
+- Go to **Data** > **Events**, select **More [...]** next to the event you want to export and select **Export** from the dropdown menu. 
 
 You're guided through the steps to create an export:
 
 1. Provide an **Export name**.
 
-1. In the **Events selection** drop-down list, choose the base events and refined events to include in the export. 
+1. In the **Events selection** dropdown list, choose the base events and refined events to include in the export. 
 
 1. Under **File structure**, select the cadence to create new files in the destination storage. Events are exported continuously as they arrive.
 

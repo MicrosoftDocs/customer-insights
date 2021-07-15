@@ -11,8 +11,8 @@ metadata:
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
-  ms.reviewer: ruthai
-  ms.date: 10/30/2020
+  ms.reviewer: mhart
+  ms.date: 06/18/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -51,6 +51,8 @@ landingContent:
             url: custom-reports.md
           - text: View unified profiles report
             url: profile-reports.md
+          - text: Create funnel reports
+            url: funnel-reports.md
 
   - title: Events
     linkLists:
@@ -73,6 +75,10 @@ landingContent:
               url: websdk-sample.md
             - text: Advanced web SDK scenarios
               url: advanced-SDK-implementation.md
+            - text: Android SDK sample
+              url: get-started-android.md
+            - text: iOS SDK sample
+              url: get-started-ios.md
 
   - title: Administration
     linkLists: 

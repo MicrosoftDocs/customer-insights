@@ -1,9 +1,9 @@
 ---
 title: Enable out-of-box profile reports
 description: How to create out-of-box profile reports grouped by gender, age, and county or region of origin.
-author: pickwick129
-ms.reviewer: m-hartmann
-ms.author: v-salash
+author: darrinw-docs
+ms.reviewer: mhart
+ms.author: darrinw
 ms.date: 05/03/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
@@ -36,6 +36,6 @@ After completing the connection, the **Profiles** feature will be available in t
 
 The **Profiles** report contains visualizations about the gender, age, and geographical location of the connected customer profiles.
 
-:::image type="content" source="media/customer-profiles.png" alt-text="Customer profile report":::
+:::image type="content" source="media/customer-profiles.png" alt-text="Customer profile report.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

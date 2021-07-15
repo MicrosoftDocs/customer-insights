@@ -59,7 +59,7 @@ If you're interested in trying this feature but don't have data to complete the 
 
 1. Select the **Product recommendations model (preview)** tile and select **Use this model**.
    > [!div class="mx-imgBorder"]
-   > ![Product Recommendation model tile with Use this model button](media/product-recommendation-usethismodel.PNG "Product Recommendation model tile with Use this model button")
+   > ![Product Recommendation model tile with Use this model button.](media/product-recommendation-usethismodel.PNG "Product Recommendation model tile with Use this model button")
 
 1. Review the information about the model requirements. If you have the required data, select **Get started**.
 
@@ -88,7 +88,7 @@ If you're interested in trying this feature but don't have data to complete the 
 
 1. Map the semantic fields to attributes within your purchase history entity and select **Next**. For descriptions of the fields, have a look at the [prerequisites](#prerequisites).
    > [!div class="mx-imgBorder"]
-   > ![Define the entity relationship](media/product-recommendation-purchasehistorymapping.PNG "Purchase history page showing semantic attributes that are mapped to fields in the selected purchase history entity")
+   > ![Define the entity relationship.](media/product-recommendation-purchasehistorymapping.PNG "Purchase history page showing semantic attributes that are mapped to fields in the selected purchase history entity")
 
 1. If the fields aren't filled in, configure the relationship from your purchase history entity to the *Customer* entity.
     1. Select the **Purchase history entity**.
@@ -96,7 +96,7 @@ If you're interested in trying this feature but don't have data to complete the 
     1. Select the **Customer entity** that matches your primary customer entity.
     1. Enter a name that describes the relationship.
        > [!div class="mx-imgBorder"]
-       > ![Purchase history page showing the creation of a relationship to customer](media/model-purchase-join.png "Purchase history page showing the creation of a relationship to customer")
+       > ![Purchase history page showing the creation of a relationship to customer.](media/model-purchase-join.png "Purchase history page showing the creation of a relationship to customer")
 
 1. Select **Save**.
 
@@ -140,7 +140,7 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
 
 1. Go to the **My predictions** tab on **Intelligence** > **Predictions**.
    > [!div class="mx-imgBorder"]
-   > ![View of the My Predictions page](media/product-recommendation-mypredictions.PNG "View of the My Predictions page")
+   > ![View of the My Predictions page.](media/product-recommendation-mypredictions.PNG "View of the My Predictions page")
 
 1. Select the prediction you want to review.
    - **Prediction name:** The name of the prediction provided when creating it.
@@ -158,7 +158,7 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
 
 1. Select the vertical ellipses next to the prediction you want to review results for and select **View**.
    > [!div class="mx-imgBorder"]
-   > ![View of options in the vertical ellipses menu for a prediction including edit, refresh, view, logs, and delete](media/product-recommendation-verticalellipses.PNG "View of options in the vertical ellipses menu for a prediction including edit, refresh, view, logs, and delete")
+   > ![View of options in the vertical ellipses menu for a prediction including edit, refresh, view, logs, and delete.](media/product-recommendation-verticalellipses.PNG "View of options in the vertical ellipses menu for a prediction including edit, refresh, view, logs, and delete")
 
 1. There are five primary sections of data within the results page:
     1. **Training model performance:** A, B, or C are possible scores. This score indicates the performance of the prediction, and can help you make the decision to use the results stored in the output entity.
@@ -168,13 +168,13 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
             - **C** The model will be considered **C** quality if the "Success @ K" metric is less than the baseline.
                
                > [!div class="mx-imgBorder"]
-               > ![View of the model performance result](media/product-recommendation-modelperformance.PNG "View of the model performance result")
+               > ![View of the model performance result.](media/product-recommendation-modelperformance.PNG "View of the model performance result")
             - **Baseline**: The model takes the top most recommended products by purchase count across all customers, and uses learned rules identified by the model to create a set of recommendations for the customers. The predictions are then compared to the top products, as calculated by the number of customers that had purchased the product. If a customer has at least one product in their recommended products that was also seen in the top purchased products, they're considered a part of the baseline. If there were 10 of these customers that had a recommended product purchased out of 100 total customers, the baseline would be 10%.
             - **Success @ K**: Using a validation set of time period of transactions, recommendations are created for all customers and compared against the validation set of transactions. For example, in a 12-month period, month 12 might be set aside as a validation set of data. If the model predicts at least one thing you would purchase in month 12 based on what it learned from the previous 11 months, the customer would increase the "Success @ K" metric.
     
     1. **Most suggested products (with tally):** The top five products that were predicted for your customers.
        > [!div class="mx-imgBorder"]
-       > ![Graph showing the top 5 most recommended products](media/product-recommendation-topproducts.PNG "Graph showing the top 5 most recommended products")
+       > ![Graph showing the top 5 most recommended products.](media/product-recommendation-topproducts.PNG "Graph showing the top 5 most recommended products")
     
     1. **Key recommendation factors:** The model uses the customers' transaction history to make product recommendations. It learns patterns based on past purchases and finds similarities between customers and products. These similarities are then utilized to generate product recommendations.
     The following are the factors that could influence a product recommendation generated by the model. 
@@ -185,20 +185,20 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
         Every product recommendation is influenced by one or more of these factors. The percentage of recommendations where each influencing factor played a role is visualized in a chart. In the following example, 100% of the recommendations were influenced by past transactions, 60% by customer similarity and 22% by product similarity. Hover over the bars in the chart to see the exact percentage where the influencing factors contributed.
 
         > [!div class="mx-imgBorder"]
-        > ![Key recommendation factors](media/product-recommendation-keyrecommendationfactors.png "Key recommendation factors learned by the model to generate product recommendations")
+        > ![Key recommendation factors.](media/product-recommendation-keyrecommendationfactors.png "Key recommendation factors learned by the model to generate product recommendations")
        
      
    1. **Data statistics**: Gives an overview of the number of transactions, customers, and products the model considered. It's based on the input data that was used to learn patterns and generate product recommendations.
 
       > [!div class="mx-imgBorder"]
-      > ![Data statistics](media/product-recommendation-datastatistics.png "Data statistics around inout data used by the model to learn patterns")
+      > ![Data statistics.](media/product-recommendation-datastatistics.png "Data statistics around inout data used by the model to learn patterns")
 
       This section shows stats around the data points that were used by the model to learn patterns and generate product recommendations. Filtering, as configured in the model configuration, will apply on the output generated by the model. However, the model uses all available data to learn patterns. Therefore, if you use product filtering in the model configuration, this section will show the total number of products that the model analyzed to learn patterns, which might differ from the number of products that match the defined filtering criteria.
 
    1. **High-confidence product recommendations:** A sample of recommendations provided to your customers that the model believes are likely to be purchased by the customer.    
       If a product catalog is added, the product IDs get replaced with product names. Product names provide a more actionable and intuitive information about the predictions.
        > [!div class="mx-imgBorder"]
-       > ![List showing high confidence suggestions for a select set of individual customers](media/product-recommendation-highconfidence.PNG "List showing high confidence suggestions for a select set of individual customers")
+       > ![List showing high confidence suggestions for a select set of individual customers.](media/product-recommendation-highconfidence.PNG "List showing high confidence suggestions for a select set of individual customers")
 
 ## Manage predictions
 

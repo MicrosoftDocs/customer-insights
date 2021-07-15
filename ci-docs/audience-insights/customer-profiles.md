@@ -18,11 +18,11 @@ The **Customers** page shows a combined view of your customers, based on profile
 Customers can be individuals or organizations (preview). Each customer or organization profile is represented by a tile. Select a tile to see additional information on that specific customer or organization. Use the pagination controls at the bottom of the page to see additional records.
 
 > [!div class="mx-imgBorder"] 
-> ![B2C customer profiles](media/profiles-customers.png "B2C customer profiles")
+> ![B2C customer profiles.](media/profiles-customers.png "B2C customer profiles")
 
 Organizations (Preview)
 > [!div class="mx-imgBorder"] 
-> ![B2B customer profiles](media/profile-customers-b2b.png "B2B customer profiles")
+> ![B2B customer profiles.](media/profile-customers-b2b.png "B2B customer profiles")
 
 > [!NOTE]
 > If you can't see the tiles when you select **Customers** in navigation, your administrator needs to [define at least one searchable attribute](search-filter-index.md) on the **Search & filter index**.
@@ -42,7 +42,7 @@ You can filter customers by the Customer Profile entity fields. Similar to searc
 2. Check the boxes next to the attributes you want to filter customers by.
 
    > [!div class="mx-imgBorder"] 
-   > ![Customer profiles](media/profiles-customers3.png "Customer profiles")
+   > ![Customer profiles.](media/profiles-customers3.png "Customer profiles")
 
 3. Remove your filters by selecting **Clear filters** on the **Customers** page.
 
@@ -52,13 +52,13 @@ Select any of the customer tiles to open the **Customer details page**. This vie
 
 Customer details include:
 
--	**Customer profile tile:** This tile shows the different values from the unified customer profile entity. These details can include email address, name, city, and so on. 
+-	**Customer profile tile**: This tile shows the different values from the unified customer profile entity. These details can include email address, name, city, and so on. 
 
--	**Potential interests, potential brands:** Shows if you configured a first-party enrichment. It represents potential interests and affinities for brands a customer with a profile similar to this customer might have. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md).
+-	**Potential interests, potential brands**: Shows if you configured a first-party enrichment. It represents potential interests and affinities for brands a customer with a profile similar to this customer might have. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md).
 
--	**Measures:** Shows if you configured one or more measures of a specific type: customer attribute measures. They include calculated KPIs around your customers on the individual customer level. For more information, see [Define and manage measures](measures.md).
+-	**Measures**: Shows if you configured one or more measures of a specific type: customer attribute measures. They include calculated KPIs around your customers on the individual customer level. For more information, see [Define and manage measures](measures.md).
 
--	**Activity timeline:** Shows if you have configured activities. The timeline view contains chronologically sorted activities of this customer, starting with the most recent activity. For more information, see [Customer activities](activities.md).
+-	**Activity timeline**: Shows if you have configured activities. The timeline view contains chronologically sorted activities of this customer, starting with the most recent activity. For more information, see [Customer activities](activities.md).
 
 Select **Back to Customers** to return to the customer search page.
 

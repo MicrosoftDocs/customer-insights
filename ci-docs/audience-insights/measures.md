@@ -13,7 +13,7 @@ manager: shellyha
 
 # Define and manage measures
 
-Measures help you to better understand customer behaviors and business performance. They look at relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand individual customer’s purchase history or measure *total sales of the company* to understand the aggregate-level revenue in the whole business.  
+Measures help you to better understand customer behaviors and business performance. They look at relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand an individual customer’s purchase history or measure *total sales of the company* to understand the aggregate-level revenue in the whole business.  
 
 Measures are created using the measure builder, a data query platform with various operators and simple mapping options. It lets you filter the data, group results, detect [entity relationship paths](relationships.md), and preview the output.
 
@@ -29,9 +29,9 @@ This section walks you through creating a new measure from scratch. You can buil
 
 1. Select **Edit name** and provide a **Name** for the measure. 
    > [!NOTE]
-   > If your new measure configuration has only two fields, for example, CustomerID and one calculation, the output will be added as a new column to the system generated entity called Customer_Measure. And you will be able to see the measure’s value in the unified customer profile. Other measures will generate their own entities.
+   > If your new measure configuration has only two fields—for example, CustomerID and one calculation—the output will be added as a new column to the system-generated entity called Customer_Measure. And you will be able to see the measure’s value in the unified customer profile. Other measures will generate their own entities.
 
-1. In the configuration area, choose the aggregation function from the **Select Function** drop-down menu. Aggregation functions include: 
+1. In the configuration area, choose the aggregation function from the **Select Function** dropdown menu. Aggregation functions include: 
    - **Sum**
    - **Average**
    - **Count**
@@ -59,17 +59,19 @@ This section walks you through creating a new measure from scratch. You can buil
 
 1. To add filters, select the **Filter** in the configuration area. 
   
-   1. In **Add attribute** section of the **Filters** pane, select the attribute you want to use to create filters.
+   1. In the **Add attribute** section of the **Filters** pane, select the attribute you want to use to create filters.
    1. Set the filter operators to define the filter for every selected attribute.
    1. Select **Apply** to add the filters to the measure.
 
 1. To add dimensions, select **Dimension** in the configuration area. Dimensions will show as columns in the measure output entity.
+ 
    1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected to create *customer-level measures*. You can remove the default dimension if you want to create *business-level measures*.
    1. Select **Done** to add the dimensions to the measure.
 
-1. If there are values in your data that you need to replace with an integer, for example, replace *null* with *0*, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements.
+1. If there are values in your data that you need to replace with an integer—for example, replace *null* with *0*—select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements.
 
 1. If there are multiple paths between the data entity you mapped and the *Customer* entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path. 
+   
    1. Select **Data preferences** and choose the entity path that should be used to identify your measure. If there's only a single path to the *Customer* entity, this control won't show.
    1. Select **Done** to apply your selection. 
 
@@ -108,7 +110,7 @@ The following procedure outlines the steps to build a new measure using a templa
 
 1. Select **New** and select **Choose a template**.
 
-   :::image type="content" source="media/measure-use-template.png" alt-text="Screenshot of the drop-down menu when creating a new measure with highlight on template.":::
+   :::image type="content" source="media/measure-use-template.png" alt-text="Screenshot of the dropdown menu when creating a new measure with highlight on template.":::
 
 1. Find the template that fits your need and select **Choose template**.
 
@@ -118,7 +120,7 @@ The following procedure outlines the steps to build a new measure using a templa
 
 1. Select **Done**.
 
-1. In the **Set time period** section, define the time frame of the data to use. Choose if you want the new measure to cover the entire data set by selecting **All time**. Or if you want the measure to focus on a **Specific time period**.
+1. In the **Set time period** section, define the time frame of the data to use. Choose if you want the new measure to cover the entire dataset by selecting **All time**, or if you want the measure to focus on a **Specific time period**.
 
    :::image type="content" source="media/measure-set-time-period.png" alt-text="Screenshot showing the time period section when configuring a measure from a template.":::
 
@@ -137,12 +139,12 @@ The following procedure outlines the steps to build a new measure using a templa
 
 You can find the list of measures on the **Measures** page.
 
-You'll find information about the measure type, the creator, creation date, status, and state. When you select a measure from the list, you can preview the output and download a .CSV file.
+You'll find information about the measure type, the creator, creation date, status, and state. When you select a measure from the list, you can preview the output and download a CSV file.
 
 To refresh all of your measures at the same time, select **Refresh all** without selecting a specific measure.
 
 > [!div class="mx-imgBorder"]
-> ![Actions to manage single measures](media/measure-actions.png "Actions to manage single measures")
+> ![Actions to manage single measures.](media/measure-actions.png "Actions to manage single measures.")
 
 Select a measure from the list for the following options:
 
@@ -154,11 +156,11 @@ Select a measure from the list for the following options:
 - **Activate** or **Deactivate**. Inactive measures won't get refreshed during a [scheduled refresh](system.md#schedule-tab).
 
 > [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you'll find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
 
 ## Next step
 
-You cam use existing measures to create [a customer segment](segments.md).
+You can use existing measures to create [a customer segment](segments.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

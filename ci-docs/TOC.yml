@@ -133,6 +133,8 @@
 
         - name: Sample guides
           items:    
+            - name: Sample guide for CLV prediction
+              href: audience-insights/sample-guide-predict-clv.md
             - name: Sample guide for subscription churn prediction
               href: audience-insights/sample-guide-predict-subscription-churn.md
             - name: Sample guide for transactional churn prediction
@@ -158,6 +160,8 @@
           items:
             - name: Exports overview
               href: audience-insights/export-destinations.md
+            - name: Active Campaign
+              href: audience-insights/export-active-campaign.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
             - name: Autopilot
@@ -186,16 +190,26 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: LinkedIn Ads
+              href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
               href: audience-insights/export-liveramp.md
             - name: Mailchimp
               href: audience-insights/export-mailchimp.md
             - name: Marketo
               href: audience-insights/export-marketo.md
+            - name: Microsoft Advertising
+              href: audience-insights/export-microsoft-advertising.md
+            - name: Omnisend
+              href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
+            - name: Salesforce Marketing Cloud
+              href: audience-insights/export-salesforce.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
+            - name: SendInBlue
+              href: audience-insights/export-sendinblue.md
             - name: Snapchat
               href: audience-insights/export-snapchat.md
             - name: SFTP
@@ -235,6 +249,8 @@
           href: audience-insights/integrate-engagement-insights.md
         - name: Review the entity schemas in Common Data Model
           href: audience-insights/entity-schemas.md
+        - name: Customer Insights data in Dataverse
+          href: audience-insights/customer-insights-dataverse.md
         - name: Work with APIs
           href: audience-insights/apis.md 
         - name: API references
@@ -263,8 +279,8 @@
           href: engagement-insights/get-started.md
         - name: Create a workspace
           href: engagement-insights/create-workspace.md
-        - name: Instrument your website
-          href: engagement-insights/instrument-website.md
+        - name: Capture events from websites and mobile apps
+          href: engagement-insights/developer-resources.md
         - name: Concepts and terminology
           href: engagement-insights/glossary.md
 
@@ -283,6 +299,13 @@
           href: engagement-insights/custom-reports.md
         - name: Create unified profile reports
           href: engagement-insights/profile-reports.md
+        - name: View and create dimensions
+          href: engagement-insights/dimensions.md
+        - name: View and create metrics
+          href: engagement-insights/metrics.md
+        - name: View and create segments
+          href: engagement-insights/segments.md
+
 
     - name: Journey analytics
       items: 
@@ -297,6 +320,14 @@
           href: engagement-insights/advanced-SDK-implementation.md
         - name: Web SDK sample
           href: engagement-insights/websdk-sample.md
+        - name: Android SDK tutorial
+          href: engagement-insights/get-started-android.md
+        - name: Android SDK sample
+          href: engagement-insights/androidsdk-sample.md
+        - name: iOS SDK tutorial
+          href: engagement-insights/get-started-ios.md
+        - name: iOS SDK sample
+          href: engagement-insights/iossdk-sample.md
 
     - name: Administration
       items: 

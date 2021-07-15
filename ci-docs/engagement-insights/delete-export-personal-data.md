@@ -1,9 +1,9 @@
 ---
 title: Delete and export personal information  
 description: How to delete and export event data containing personal data.
-author: pickwick129
-ms.reviewer: ruthai
-ms.author: v-salash
+author: mochimochi016
+ms.reviewer: mhart
+ms.author: jefhar
 ms.date: 10/30/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 
@@ -48,11 +48,11 @@ To tag an event property as containing personal information, follow these steps:
      
 1. Select **...** and then choose **Edit** to reach the **Update property** dialog.
 
-   ![Edit event](media/edit-event.png "Edit event")
+   ![Edit event.](media/edit-event.png "Edit event")
 
 1. In the **Update Property** window, choose **...** in the upper right corner, and then choose the **Contains EUII** box. Choose **Update** to save your changes.
 
-   ![Save your changes](media/update-property.png "Save your changes")
+   ![Save your changes.](media/update-property.png "Save your changes")
 
    > [!NOTE]
    > Every time the event schema changes or you create a new event, it's recommended that you evaluate the associated event properties and tag or untag them as containing personal data, if necessary.

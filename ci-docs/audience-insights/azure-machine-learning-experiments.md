@@ -47,7 +47,7 @@ You need to create datasets to use entity data from Customer Insights to your ba
      In the designer, open **Select Columns in Dataset** and select **Set as pipeline parameter** where you provide a name for the parameter.
 
      > [!div class="mx-imgBorder"]
-     > ![Dataset parameterization in designer](media/intelligence-designer-dataset-parameters.png "Dataset parameterization in designer")
+     > ![Dataset parameterization in designer.](media/intelligence-designer-dataset-parameters.png "Dataset parameterization in designer")
    
 * Dataset parameter in SDK (Python)
    
@@ -73,7 +73,7 @@ You need to create datasets to use entity data from Customer Insights to your ba
 
 * The designer provides the [Export Data module](/azure/machine-learning/algorithm-module-reference/export-data) that allows the output of a pipeline to be exported to Azure storage. Currently, the module must use the datastore type **Azure Blob Storage** and parameterize the **Datastore** and relative **Path**. Customer Insights overrides both these parameters during pipeline execution with a datastore and path that is accessible to the product.
    > [!div class="mx-imgBorder"]
-   > ![Export Data Module Configuration](media/intelligence-designer-importdata.png "Export Data Module Configuration")
+   > ![Export Data Module Configuration.](media/intelligence-designer-importdata.png "Export Data Module Configuration")
    
 * When writing the inference output using code, you can upload the output to the a path within a *registered datastore* in the workspace. If the path and datastore are parameterized in the pipeline, Customer insights will be able to read and import the inference output. Currently, a single tabular output in csv format is supported. The path must include the directory and filename.
 

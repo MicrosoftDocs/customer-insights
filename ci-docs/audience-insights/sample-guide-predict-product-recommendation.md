@@ -60,7 +60,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. In the **Name** field on the side pane, rename your data source from **Query** to **eCommercePurchases**.
 
-1. Save the data source.
+1. **Save** the data source.
 
 
 ### Ingest customer data from loyalty schema
@@ -78,11 +78,11 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
 
-1. Save the data source.
+1. **Save** the data source.
 
 ## Task 2 - Data unification
 
-After ingesting the data we now begin the **Map, Match, Merge** process to create a unified customer profile. For more information, see [Data unification](data-unification.md).
+After ingesting the data, we now begin the data unification process to create a unified customer profile. For more information, see [Data unification](data-unification.md).
 
 ### Map
 
@@ -100,9 +100,9 @@ After ingesting the data we now begin the **Map, Match, Merge** process to creat
 
 1. Go to the **Match** tab and select **Set Order**.
 
-2. In the **Primary** drop-down list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.
+2. In the **Primary** dropdown list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.
 
-3. In the **Entity 2** drop-down list, choose **loyCustomers : LoyaltyScheme** and include all records.
+3. In the **Entity 2** dropdown list, choose **loyCustomers : LoyaltyScheme** and include all records.
 
    ![Unify match eCommerce and Loyalty.](media/unify-match-order.png)
 
@@ -110,16 +110,16 @@ After ingesting the data we now begin the **Map, Match, Merge** process to creat
 
 5. Add your first condition using FullName.
 
-   - For eCommerceContacts select **FullName** in the drop-down.
-   - For loyCustomers select **FullName** in the drop-down.
+   - For eCommerceContacts select **FullName** in the dropdown.
+   - For loyCustomers select **FullName** in the dropdown.
    - Select the **Normalize** drop down and choose **Type (Phone, Name, Address, ...)**.
    - Set **Precision Level**: **Basic** and **Value**: **High**.
 
 6. Enter the name **FullName, Email** for the new rule.
 
    - Add a second condition for email address by selecting **Add Condition**
-   - For entity eCommerceContacts, choose **EMail** in drop-down.
-   - For entity loyCustomers, choose **EMail** in the drop-down.
+   - For entity eCommerceContacts, choose **EMail** in dropdown.
+   - For entity loyCustomers, choose **EMail** in the dropdown.
    - Leave Normalize blank.
    - Set **Precision Level**: **Basic** and **Value**: **High**.
 

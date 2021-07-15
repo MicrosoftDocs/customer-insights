@@ -1,9 +1,9 @@
 ---
 title: Advanced web SDK scenarios
 description: Advanced scenarios to consider when instrumenting your website with an SDK.
-author: pickwick129
-ms.reviewer: ruthai
-ms.author: v-salash
+author: britl
+ms.reviewer: mhart
+ms.author: britl
 ms.date: 11/12/2020
 ms.service: customer-insights
 ms.subservice: engagement-insights 

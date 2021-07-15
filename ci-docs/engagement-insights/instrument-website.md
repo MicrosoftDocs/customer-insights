@@ -1,9 +1,9 @@
 ---
 title: Add code to your website
 description: How to add a code snippet to capture events on your website.
-author: pickwick129
+author: britl
 ms.reviewer: mhart
-ms.author: v-salash
+ms.author: britl
 ms.date: 04/30/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This article describes how an administrator installs the code snippet on a website. You'll start seeing events in your workspace shortly after adding the script to your website. For more information, see [Manage workspaces and environment](manage-environments-workspaces.md).
+This article describes how an administrator installs the code snippet on a website. You'll start seeing events in your workspace shortly after adding the script to your website. For more information, see [Manage workspaces and environment](manage-environments-workspaces.md). To capture events in mobile apps, see [Developer resources overview](developer-resources.md).
 
 
 ### Prerequisites
@@ -27,7 +27,7 @@ This article describes how an administrator installs the code snippet on a websi
 ## Add code to your website
 1.	Go to **Admin** > **Workspace**  and then select **Installation guide**.
 1. Select **Copy code** to copy the code snippet. By default, the ingestion key for your workspace is embedded in the code snippet.
-:::image type="content" source="media/copy-code.png" alt-text="Screenshot of the code snippet page":::
+:::image type="content" source="media/copy-code.png" alt-text="Screenshot of the code snippet page.":::
 3. Add the copied code snippet to your website, near the <head> tag and before any other script or CSS tags.
 4.	Publish your updated website and wait a few minutes to capture the incoming web traffic.
 5.	To see your data, select your workspace from the workspace switcher in the navigation pane. Then, select one of the reports in the **Discover** section.
