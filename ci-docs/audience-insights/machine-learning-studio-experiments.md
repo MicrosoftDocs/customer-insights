@@ -36,7 +36,7 @@ In a first step, we need to create a workspace for and open the Machine Learning
 
 1. After creating the resource, the Machine Learning Studio workspace dashboard will appear. Select **Launch Machine Learning Studio**.
 
-   ![Azure Machine Learning Studio user interface](media/azure-machine-learning-studio.png)
+   ![Azure Machine Learning Studio user interface.](media/azure-machine-learning-studio.png)
 
 ## Work with Azure Machine Learning Studio
 
@@ -50,7 +50,7 @@ You can now create a new experiment, or import an existing experiment template f
 
 1. If you create a new experiment or use an experiment template from the gallery, you need to configure the **Import Data** properties. Use the guided experience or directly provide details to access the Azure Blob Storage that contains your data.  
 
-   ![Azure Machine Learning Studio experiment](media/azure-machine-learning-studio-experiment.png)
+   ![Azure Machine Learning Studio experiment.](media/azure-machine-learning-studio-experiment.png)
 
 1. Now you can build a custom processing pipeline to clean and preprocess the data, extract features, and train a suitable model.
 
@@ -58,11 +58,11 @@ You can now create a new experiment, or import an existing experiment template f
 
 1. When you’re satisfied with the quality of a model, select **Set up web service** > **Predictive Web Service**. This option imports the trained model and the featurization pipeline from the training experiment to a predictive service. The predictive service can take another set of input data with the schema used in the training experiment to make predictions.
 
-   ![Set up a predictive web service](media/predictive-webservice-control.png)
+   ![Set up a predictive web service.](media/predictive-webservice-control.png)
 
 1. Once the predictive web service experiment is successful, you can deploy it for auto scheduling. To have the web service work with Customer Insights, select **Deploy Web Service** > **Deploy Web Service [New] Preview**. [Learn more about deploying a web service](/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
 
-   ![Deploy a predictive web service](media/predictive-webservice-deploy.png)
+   ![Deploy a predictive web service.](media/predictive-webservice-deploy.png)
 
 ## Sample models from the gallery
 
@@ -82,13 +82,13 @@ The definition of churn can differ based on the scenario. In this example, a gue
 
 The experiment template can be imported from the gallery. First, ensure that you import the data for **Hotel Stay Activity**, **Customer data**, and **Service Usage Data** from Azure Blob storage.
 
-   ![Import data for churn model](media/import-data-azure-blob-storage.png)
+   ![Import data for churn model.](media/import-data-azure-blob-storage.png)
 
 ### Featurization
 
 Based on the definition of churn, we first identify the raw features that will influence the label. Then, we process these raw features into numerical features that can be used with machine learning models. Data integration happens in Customer Insights so we can join these tables by using the *Customer ID*.
 
-   ![Join imported data](media/join-imported-data.png)
+   ![Join imported data.](media/join-imported-data.png)
 
 The featurization for building the model for churn analysis can be a little tricky. The data is a function of time with new hotel activity recorded on daily basis. During featurization, we want to generate static features from the dynamic data. In this case, we generate multiple features from hotel activity with a sliding window of one year. We also expand the categorical features like room type or booking type into separate features using one-hot encoding.  
 
@@ -109,7 +109,7 @@ Now we need to choose the optimal algorithm to use. In this case, most feature
 
 The following image shows the model training and evaluation pipeline from Azure Machine Learning Studio:
 
-![Churn model in Azure Machine Learning Studio](media/azure-machine-learning-model.png)
+![Churn model in Azure Machine Learning Studio.](media/azure-machine-learning-model.png)
 
 We also apply a technique called **Permutation Feature Importance**, an important aspect of model optimization. Built-in models have little to no insight into the impact of any specific feature on the final prediction. The feature importance calculator uses a custom algorithm to compute the influence of individual features on the outcome for a specific model. The feature importance is normalized between +1 to -1. A negative influence means the corresponding feature has counter-intuitive influence on the outcome and should be removed from the model. A positive influence indicates the feature is contributing heavily towards the prediction. These values aren't correlation coefficients as they are different metrics. For more information, see [Permutation Feature Importance](/azure/machine-learning/studio-module-reference/permutation-feature-importance).
 
@@ -143,7 +143,7 @@ We define the goal as maximizing the dollar amount of service usage by offering 
 
 Like the churn model, we are joining the hotel ServiceCustomerID with CustomerID in order to build recommendations consistently per CustomerID.
 
-![Featurization of the recommendation model](media/azure-machine-learning-model-featurization.png)
+![Featurization of the recommendation model.](media/azure-machine-learning-model-featurization.png)
 
 The data is sourced from three different entities and features are derived from them. The featurization for the problem of recommendation is different compared to churn or CLTV scenarios. The recommendation model needs input data in the form of three sets of features.
 
@@ -151,13 +151,13 @@ The data is sourced from three different entities and features are derived from
 
 We predict products or services by using the algorithm called **Train Matchbox Recommender** to train the recommendation model.
 
-![Product recommendation algorithm](media/azure-machine-learning-model-recommendation-algorithm.png)
+![Product recommendation algorithm.](media/azure-machine-learning-model-recommendation-algorithm.png)
 
 The three input ports for the **Train Matchbox Recommender** model takes in the training service usage data, customer description (optional), and service description. There are three different ways of scoring the model. One is for model evaluation where a Normalized Discounted Cumulative Gain (NDCG) score is calculated to rank the rated items. In this experiment, we have the NDCG score as 0.97. The other two options are scoring the model on the entire recommendable service catalog, or scoring only on items that users have not used before.
 
 Looking further on the distributions of the recommendations on the entire service catalog, we notice that phone, WiFi, and courier are the top services to be recommended. This is consistent with what we found from the distributions of the service consumption data:
 
-![Recommendation model output](media/azure-machine-learning-model-output.png)
+![Recommendation model output.](media/azure-machine-learning-model-output.png)
 
 The entire [product recommendation experiment can be accessed in Azure AI Gallery.](https://gallery.azure.ai/Experiment/Recommendation-4)
 

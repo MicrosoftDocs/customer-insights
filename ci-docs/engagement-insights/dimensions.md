@@ -41,7 +41,7 @@ In addition to system-generated dimensions, environment and workspace admins can
 1. Go to **Data** > **Dimensions**.
 1. Select **Add a dimension**.
 
-   :::image type="content" source="media/add-dimension.png" alt-text="Add a dimension to an event":::
+   :::image type="content" source="media/add-dimension.png" alt-text="Add a dimension to an event.":::
 
 1. In the **Create a dimension** pane, select a property to base the dimension on. The properties list will show all the properties in the workspace not assigned to a dimension.
 1. Enter a name in the **Display name** box. Optionally, you can add a description.
@@ -66,7 +66,7 @@ Deleting a dimension is permanent. Reports and segments that use a deleted dimen
 1. Select the dimension you want to delete.
 1. In the **Edit dimension** pane, select **Delete dimension**.
 
-   :::image type="content" source="media/delete-dimension.png" alt-text="Delete a dimension to an event":::
+   :::image type="content" source="media/delete-dimension.png" alt-text="Delete a dimension to an event.":::
 
 1. Enter **CONFIRM DELETE** (in all caps) to confirm the deletion. 
 1. Select **Delete**.

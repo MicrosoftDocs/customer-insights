@@ -23,7 +23,7 @@ In addition to out-of-box reports, you can build a custom report with chart and 
 
 1. Select **New report** to start creating a custom report.
 
-   :::image type="content" source="media/new-custom-report.png" alt-text="New custom reports":::
+   :::image type="content" source="media/new-custom-report.png" alt-text="New custom reports.":::
 
 1. Decide the type of report you want to build:
 
@@ -54,7 +54,7 @@ In addition to out-of-box reports, you can build a custom report with chart and 
 
 1. To change the properties of a visualization, select **...** and then select **Edit visual**.
 
-   :::image type="content" source="media/edit-visual-control.png" alt-text="Editing chart properties for custom reports":::
+   :::image type="content" source="media/edit-visual-control.png" alt-text="Editing chart properties for custom reports.":::
 
 1. After editing the report, select **Save** to apply your changes. 
 

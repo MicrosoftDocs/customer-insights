@@ -23,7 +23,7 @@ Organizations that already use Dataverse can [use one of their existing Datavers
 
 To attach a Dataverse environment, expand the **Advanced settings** when creating the audience insights environment. Provide the **Microsoft Dataverse environment URL** and select the checkbox to **Enable data sharing**.
 
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt":::
+:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt.":::
 
 **New organization**
 

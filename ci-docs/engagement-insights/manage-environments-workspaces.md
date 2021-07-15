@@ -4,7 +4,7 @@ description: How to create, rename, and delete workspaces and environments.
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali
-ms.date: 06/23/2021
+ms.date: 07/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -35,7 +35,7 @@ Every workspace needs to be in an environment. You can select a pre-existing env
 
 1. In engagement insights, select **New** from the workspace switcher. 
 
-   :::image type="content" source="media/New-workspace.png" alt-text="Customer Insights page workspace picker":::
+   :::image type="content" source="media/New-workspace.png" alt-text="Customer Insights page workspace picker.":::
 
 1. Choose an environment from the list or select **Create new environment**.
 
@@ -68,7 +68,7 @@ Deleting a workspace will permanently remove all of its content, data, settings,
 
 1. Go to **Admin** > **Workspace** and select **Settings**.
 
-1. Select **Delete Workspace**. 
+1. Select **Delete workspace**. 
 
 1. In the **Delete workspace** dialog, enter **CONFIRM DELETE**. 
 
@@ -88,12 +88,23 @@ Deleting a workspace will permanently remove all of its content, data, settings,
 
 As an Environment admin, you can access an environment from the left navigation pane. You can configure environment settings, other Environment admins, workspaces, and [connections to audience insights](configure-connections.md). Select tabs to move between different areas in the admin center.
 
-:::image type="content" source="media/New-environment.png" alt-text="Environment admin center":::
+:::image type="content" source="media/New-environment.png" alt-text="Environment admin center.":::
 
-### Configure an environment
+### Create an environment
 
-At this time, you must first select a workspace that belongs to the environment. 
- - Go to **Admin** > **Environment**.
+1. In the workspace picker, select **+New**.
+
+1. In the guided experience, open the **Environment** drop-down menu and select **Create new environment**. 
+
+1. Provide an **Environment name**.
+
+   :::image type="content" source="media/create-environment.png" alt-text="Step in the guided experience to specify the environment details.":::
+
+1. Choose the **Region** and select **Next**. 
+
+1. Provide a Workspace name and choose which type of workspace you want to create. 
+
+1.  Optionally, add members and copy the code snippet complete the creation process.
 
 ### Rename an environment
 
@@ -110,6 +121,18 @@ At this time, you must first select a workspace that belongs to the environment.
 1. If you set up a [connection to audience insights](configure-connections.md), you can select **Allow access to profile data** to allow the member to see reports based on [user profiles](profile-reports.md).
 
 1. Select **Add members** to add them to your environment.
+
+### Delete an environment
+
+Environment admins can delete environments. Before you can delete an environment, you must remove all workspaces under it.
+
+1. Go to **Admin** > **Environment** and select **Settings**.
+
+1. Select **Delete environment**. 
+
+1. In the **Delete workspace** dialog, enter **CONFIRM DELETE**. 
+
+1. Select **Delete** to permanently delete the environment.
 
 ## Manage connections
 

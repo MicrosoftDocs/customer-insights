@@ -308,7 +308,6 @@
         - name: View and create segments
           href: engagement-insights/segments.md
 
-
     - name: Journey analytics
       items: 
         - name: Create and manage funnel reports
@@ -346,6 +345,9 @@
       items: 
         - name: Delete and export personal data
           href: engagement-insights/delete-export-personal-data.md
+
+    - name: Regional availability
+      href: engagement-insights/regional-availability.md
 
     - name: Service limits
       href: engagement-insights/quotas.md

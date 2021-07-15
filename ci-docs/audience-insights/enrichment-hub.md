@@ -9,13 +9,14 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
+ms.custom: intro-internal
 ---
 
 # Enrichment for customer profiles (preview)
 
 Use data from sources like Microsoft and other partners to enrich your customer data.
 
-:::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page":::
+:::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page.":::
 
 In audience insights, go to **Data** > **Enrichment** to work with enrichment options.  
 
@@ -39,7 +40,7 @@ Go to the **My enrichments** tab to see all configured enrichments. Each enrichm
 
 Select the enrichment to see the available options. You can also select the ellipsis (...) on a list item to see the options. If you configured several enrichments, you can use the search box to find it quickly.
 
-:::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Options to manage enrichments in the list of enrichments":::
+:::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Options to manage enrichments in the list of enrichments.":::
 
 - **View** enrichment details with the number of enriched customer profiles.
 - **Edit** the enrichment configuration.

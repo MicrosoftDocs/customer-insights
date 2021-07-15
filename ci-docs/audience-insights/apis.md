@@ -30,7 +30,7 @@ This article describes how to access the Customer Insights APIs, create an Azure
  
    Enabling the APIs creates a primary and secondary subscription key for your instance that gets used in the API requests. You can regenerate the keys by selecting the **Regenerate primary** or **Regenerate secondary** on **Admin** > **Permissions** > **APIs**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs":::
+   :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs.":::
 
 1. Select **Explore our APIs** to [try out the APIs](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -124,7 +124,7 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
  
    Alternatively, run this command in the **NuGet Package Manager Console**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project.":::
 
 #### Use the C# client library
 
@@ -136,7 +136,7 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
 
 1. Pass this `HttpClient` into the construction of the `CustomerInsights` client.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient":::
+   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient.":::
 
 1. Make calls with the client to the "extension methods"—for example, `GetAllInstancesAsync`. If access to the underlying `Microsoft.Rest.HttpOperationResponse` is preferred, use the "http message methods"—for example, `GetAllInstancesWithHttpMessagesAsync`.
 
