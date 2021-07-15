@@ -1,7 +1,7 @@
 ---
 title: "Create and configure a trial of Customer Insights"
 description: "Steps to get a trial subscription for Dynamics 365 Customer Insights and configure it."
-ms.date: 07/14/2021
+ms.date: 07/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -90,7 +90,7 @@ You can now use the ingested data to tailor Customer Insights to your scenario. 
 
 - Trials are active for 30 days by default. However, you can extend them after day 23 when you sign in to your trial.
 - You can't use your own Azure Data Lake storage account to store output data during a trial. However, you can ingest data from a Data Lake storage account.
-<!-- You can store a limited amount of data in Microsoft Dataverse. -->
+- You can store a up to 3 GB data in the Dataverse environment that gets provisioned automatically when you start an Customer Insights trial.
 
 ## Copy data from a trial to a paid subscription
 
