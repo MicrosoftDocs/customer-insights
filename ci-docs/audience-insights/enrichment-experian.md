@@ -23,6 +23,10 @@ To configure Experian, the following prerequisites must be met:
 
 - An Experian connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You also need the User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
 
+## Supported countries/regions
+
+We currently support enriching customer profiles in the United States only.
+
 ## Configure the enrichment
 
 1. Go to **Data** > **Enrichment** and select the **Discover** tab.
@@ -30,10 +34,10 @@ To configure Experian, the following prerequisites must be met:
 1. Select **Enrich my data** on the Experian tile.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian tile](media/experian-tile.png "Experian tile")
+   > ![Experian tile.](media/experian-tile.png "Experian tile")
    > 
 
-1. Select a [connection](connections.md) from the drop-down. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing Experian from the drop-down. 
+1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing Experian from the dropdown list. 
 
 1. Select **Connect to Experian** to confirm the connection selection.
 
@@ -64,7 +68,7 @@ You need to be an administrator to configure connections. Select **Add connectio
 
 1. Enter valid User ID, Party ID, and Model Number for your Experian Secure Transport account.
 
-1. Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox
+1. Review and provide your consent for **Data privacy and compliance** by selecting **I agree**.
 
 1. Select **Verify** to validate the configuration.
 
@@ -82,12 +86,12 @@ You can access a detailed view of each enriched profile by selecting **View enri
 
 ## Next steps
 
-Build on top of your enriched customer data. Create [segments](segments.md), [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
+Build on top of your enriched customer data. Create [segments](segments.md) and [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
 
 ## Data privacy and compliance
 
 When you enable Dynamics 365 Customer Insights to transmit data to Experian, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Experian meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights Administrator can remove this enrichment at any time to discontinue use of this functionality.
+Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: "Create and manage segments"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 05/03/2021
+ms.date: 07/08/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -12,6 +12,15 @@ manager: shellyha
 ---
 
 # Create and manage segments
+
+> [!IMPORTANT]
+> There are several changes getting rolled out to the segment creation experience in early August 2021: 
+> - The segment builder will look slightly different with restyled elements and an improved user flow.
+> - New datetime operators and an improved date picker are enabled in the segment builder.
+> - You'll be able to add or remove conditions and rules from segments. 
+> - Nested rules that start with an OR condition will become available. You no longer need an AND condition at the outermost layer.
+> - A side pane to select attributes will be constantly available.
+> - An option to select entity relationship paths.
 
 Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. 
 
@@ -45,7 +54,7 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
 1. Choose an operator and a value for the selected attribute.
 
    > [!div class="mx-imgBorder"]
-   > ![Custom group filter](media/customer-group-numbers.png "Customer group filter")
+   > ![Custom group filter.](media/customer-group-numbers.png "Customer group filter")
 
    |Number |Definition  |
    |---------|---------|
@@ -61,7 +70,7 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
       - **OR** operator: Either one of the conditions needs to be met as part of the segmentation process. This option is most useful when you define multiple conditions for the same entity.
 
       > [!div class="mx-imgBorder"]
-      > ![OR operator where either condition needs to be met](media/segmentation-either-condition.png "OR operator where either condition needs to be met")
+      > ![OR operator where either condition needs to be met.](media/segmentation-either-condition.png "OR operator where either condition needs to be met")
 
       It's currently possible to nest an **OR** operator under an **AND** operator, but not the other way around.
 
@@ -69,12 +78,12 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
    Select **Add Group**.
 
       > [!div class="mx-imgBorder"]
-      > ![Customer group add group](media/customer-group-add-group.png "Customer group add group")
+      > ![Customer group add group.](media/customer-group-add-group.png "Customer group add group")
 
    1. Select one of the set operators: **Union**, **Intersect**, or **Except**.
 
    > [!div class="mx-imgBorder"]
-   > ![Customer group add union](media/customer-group-union.png "Customer group add union")
+   > ![Customer group add union.](media/customer-group-union.png "Customer group add union")
 
    - **Union** unites the two groups.
 
@@ -85,7 +94,7 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
 1. If the entity is connected to the unified customer entity through [relationships](relationships.md), you need to define the relationship path to create a valid segment. Add the entities from the relationship path until you can select the **Customer:CustomerInsights** entity from the dropdown. Then, choose **All records** for each step.
 
    > [!div class="mx-imgBorder"]
-   > ![Relationship path during segment creation](media/segments-multiple-relationships.png "Relationship path during segment creation")
+   > ![Relationship path during segment creation.](media/segments-multiple-relationships.png "Relationship path during segment creation")
 
 1. By default, segments generate an output entity that contains all attributes of customer profiles which match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity.  
   
@@ -122,7 +131,7 @@ Quick segments let you build simple segments with a single operator quickly for 
 4. The system will provide you with an **Estimated segment size**. You can choose whether to generate the segment you've defined, or first revisit it to get a different segment size.
 
     > [!div class="mx-imgBorder"]
-    > ![Name and estimation for a quick segment](media/quick-segment-name.png "Name and estimation for a quick segment")
+    > ![Name and estimation for a quick segment.](media/quick-segment-name.png "Name and estimation for a quick segment")
 
 5. Provide a **Name** for your segment. Optionally, provide a **Display name**.
 

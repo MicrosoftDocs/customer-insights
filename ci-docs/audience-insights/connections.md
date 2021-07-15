@@ -37,7 +37,7 @@ To add connections, you need to have [administrator permissions](permissions.md)
 
 1. Go to the **Connections** tab.
 
-1. Select **Add connection** to create a new connection. Choose from the drop-down menu what type of connection you want to create.
+1. Select **Add connection** to create a new connection. Choose from the dropdown menu what type of connection you want to create.
 
 1. In the **Set up connection** pane, provide the required details. 
    1. The **Display name** and the type of the connection describe a connection. We recommend choosing a name that explains the purpose and target of this connection.
@@ -70,6 +70,7 @@ When setting up or editing an export connection, you choose which users are allo
 ## Remove a connection
 
 If the connection you are removing is used by enrichments or exports, you first need to detach or remove them. The remove dialog will guide you to the relevant enrichments or exports. 
+
 Detached enrichments and exports become inactive. You reactivate them by adding another connection to them on the [Enrichments](enrichment-hub.md) or [Exports](export-destinations.md) page.
 
 1. Go to **Admin** > **Connections (preview)**.
@@ -85,5 +86,5 @@ Detached enrichments and exports become inactive. You reactivate them by adding 
       - **Enrichments:** You can choose to either remove or deactivate the enrichments to be able to remove the connection. 
    1. Once the connection has no more dependencies, go back to **Admin** > **Connections** and try removing the connection again.
 
-1. To confirm the deletion select **Remove**.
+1. To confirm the deletion, select **Remove**.
 
