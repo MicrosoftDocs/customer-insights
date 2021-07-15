@@ -37,6 +37,18 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
 1. Go to the **Segments** page.
 
 1. Select **New** > **Blank segment**.
+/// Build your own
+/// Pane on the right with attributes and segments
+/// no prompts for valid values, go check entities
+//any of: comma-seprataed
+//emnttity parth at rule level
+//rule is now group
+// three datatypes: string, number, datetime
+//floating reang vvs specific date
+//entity not in rule due to path, then create new rule
+//blue bar for seletted 
+//projectted will show onyl valid attributes. same logic as before
+//undo redo
 
 1. In the **New segment** pane, choose a segment type:
 
@@ -108,8 +120,6 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
 1. Select **Save** to save your segment. Your segment will be saved and processed if all requirements are validated. Otherwise, it will be saved as a draft.
 
 1. Select **Back to segments** to go back to the **Segments** page.
-
-
 
 ## Quick segments
 
