@@ -288,6 +288,8 @@
       items: 
         - name: Create and modify events
           href: engagement-insights/refined-events.md
+        - name: Recognize web events from previously authenticated visitors
+          href: engagement-insights/unknown-to-known.md
         - name: Export events
           href: engagement-insights/export-events.md
 
