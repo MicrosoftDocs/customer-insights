@@ -69,8 +69,10 @@ You can configure this export if you have access to a connection of this type. F
 1. Provide a recognizable **Display name** for your export and a **Database name**.
 
 1. Select which entities you want to export to Azure Synapse Analytics.
+   > [!NOTE]
+   > Data sources based on a [Common Data Model folder](connect-common-data-model.md) aren't supported.
 
-1. Select **Save**.
+2. Select **Save**.
 
 Saving an export doesn't run the export immediately.
 

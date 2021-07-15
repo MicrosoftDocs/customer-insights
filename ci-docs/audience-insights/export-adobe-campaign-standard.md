@@ -13,7 +13,7 @@ manager: shellyha
 
 # Use Customer Insights segments in Adobe Campaign Standard (preview)
 
-As a user of audience insights for Dynamics 365 Customer Insights, you may have created segments to make your marketing campaigns more efficient by targeting relevant audiences. To use a segment from audience insights in Adobe Experience Platform and applications like Adobe Campaign Standard, you need to follow a few steps outlined in this article.
+As a user of audience insights in Dynamics 365 Customer Insights, you may have created segments to make your marketing campaigns more efficient by targeting relevant audiences. To use a segment from audience insights in Adobe Experience Platform and applications like Adobe Campaign Standard, you need to follow a few steps outlined in this article.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="Process diagram of the steps outlined in this article.":::
 
@@ -23,7 +23,7 @@ As a user of audience insights for Dynamics 365 Customer Insights, you may have 
 -   Adobe Campaign Standard license
 -   Azure Blob Storage account
 
-## Campaign Overview
+## Campaign overview
 
 To better understand how you can use segments from audience insights in Adobe Experience Platform, let’s look at a fictitious sample campaign.
 
@@ -49,7 +49,7 @@ With our target audience identified, we can configure the export from audience i
 
 1. In audience insights, go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Adobe Campaign** to configure the connection or select **Set up** in the **Adobe Campaign** tile
+1. Select **Add connection** and choose **Adobe Campaign** to configure the connection or select **Set up** in the **Adobe Campaign** tile.
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Configuration tile for Adobe Campaign Standard.":::
 
@@ -59,9 +59,9 @@ With our target audience identified, we can configure the export from audience i
 
 1. Enter the **Account name**, **Account key**, and **Container** of the Azure Blob Storage account where you want to export the segment to.  
       
-   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration. "::: 
+   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration."::: 
 
-   - To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
+   - To learn more about how to find the Azure Blob Storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
 
    - To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
@@ -75,7 +75,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. To create a new export, select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Adobe Campaign section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the Adobe Campaign section. If you don't see this section name, then no connections of this type are available to you.
 
 1. Choose the segment that you want to export. In this example, it’s **ChurnProneCustomers**.
 
@@ -101,7 +101,7 @@ You can now [export the segment on demand](export-destinations.md#run-exports-on
 > [!NOTE]
 > Ensure that the number of records in the exported segment are within the allowed limit of your Adobe Campaign Standard license.
 
-Exported data is stored in the Azure Blob storage container you configured above. The following folder path is automatically created in your container:
+Exported data is stored in the Azure Blob Storage container you configured above. The following folder path is automatically created in your container:
 
 *%ContainerName%/CustomerInsights_%instanceID%/% exportdestination-name%_%segmentname%_%timestamp%.csv*
 
@@ -113,7 +113,7 @@ When a segment from audience insights is exported, it contains the columns you s
 
 To use the segment in Adobe Campaign Standard, we need to extend the profile schema in Adobe Campaign Standard to include two additional fields. Learn how to [extend the profile resource](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) with new fields in Adobe Campaign Standard.
 
-In our example, these fields are *Segment Name and Segment Date (optional).*
+In our example, these fields are *Segment Name and Segment Date (optional)*.
 
 We will use these fields to identify the profiles in Adobe Campaign Standard we want to target for this campaign.
 
@@ -123,7 +123,7 @@ If there are no other records in Adobe Campaign Standard, other than what you ar
 
 Now that everything is in place, we need to import the prepared audience data from audience insights into Adobe Campaign Standard to create profiles. Learn [how to import profiles in Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) using a workflow.
 
-The import workflow in the image below has been configured to run every 8 hours and looks for exported audience insights segments (.csv file in Azure Blob Storage). The workflow extracts the .csv file content in a specified column order. This workflow has been built to perform basic error handling and ensure that each record has an email address before hydrating the data in Adobe Campaign Standard. The workflow also extracts the segment name from the filename before upserting into ACS Profile data.
+The import workflow in the image below has been configured to run every eight hours and look for exported audience insights segments (.csv file in Azure Blob Storage). The workflow extracts the .csv file content in a specified column order. This workflow has been built to perform basic error handling and ensure that each record has an email address before hydrating the data in Adobe Campaign Standard. The workflow also extracts the segment name from the filename before upserting into Adobe Campaign Standard profile data.
 
 :::image type="content" source="media/ACS-import-workflow.png" alt-text="Screenshot of an import workflow in the Adobe Campaign Standard user interface.":::
 

@@ -39,7 +39,7 @@ To create your first workspace
 
 1. In engagement insights, select **Connect your data** to start the wizard. 
 
-:::image type="content" source="media/banner.png" alt-text="Customer Insights page with connect your data button":::
+:::image type="content" source="media/banner.png" alt-text="Customer Insights page with connect your data button.":::
 
 2. Choose the type of activity that you want to measure in a new workspace. Currently, only **Website activity** is available. **App activity** and **Device activity** will become available in future releases.
 
@@ -56,7 +56,7 @@ To create your first workspace
 
 By default, only the person who created the workspace has access to it. You can add other users from your organization to an existing workspace at any time.
 
-:::image type="content" source="media/add-members.png" alt-text="Members page with callout on Add Members button":::
+:::image type="content" source="media/add-members.png" alt-text="Members page with callout on Add Members button.":::
 
 1. Go to **Admin** > **Workspace** > **Members**.
 
@@ -66,13 +66,13 @@ By default, only the person who created the workspace has access to it. You can 
 
 4. Select **Add members** to confirm.
 
-To remove members from a workspace, select **...** next to their names on the **Members** page and then select **Delete** from the drop-down menu.
+To remove members from a workspace, select **...** next to their names on the **Members** page and then select **Delete** from the dropdown menu.
 
 ## Edit a workspace
 
 You can edit the details of existing workspaces at any time.
 
-:::image type="content" source="media/change-workspace-settings.png" alt-text="Workspace settings page with callout on workspace name and description":::
+:::image type="content" source="media/change-workspace-settings.png" alt-text="Workspace settings page with callout on workspace name and description.":::
 
 1. Go to **Admin** > **Workspace** > **Settings**.
 
@@ -82,7 +82,7 @@ You can edit the details of existing workspaces at any time.
 
 ## Add another new workspace
 
-:::image type="content" source="media/workspace-switcher.png" alt-text="Customer insights page with callout on navigation pane and description":::
+:::image type="content" source="media/workspace-switcher.png" alt-text="Customer insights page with callout on navigation pane and description.":::
 
 You can create additional workspaces to classify your data.
 

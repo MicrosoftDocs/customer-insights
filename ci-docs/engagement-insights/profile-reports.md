@@ -36,6 +36,6 @@ After completing the connection, the **Profiles** feature will be available in t
 
 The **Profiles** report contains visualizations about the gender, age, and geographical location of the connected customer profiles.
 
-:::image type="content" source="media/customer-profiles.png" alt-text="Customer profile report":::
+:::image type="content" source="media/customer-profiles.png" alt-text="Customer profile report.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

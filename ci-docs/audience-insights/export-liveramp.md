@@ -51,7 +51,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Choose your key identifier** field, select **Email**,  **Name and address**, or **Phone** to send to LiveRamp for identity resolution.
    > [!div class="mx-imgBorder"]
-   > ![LiveRamp connector with attribute mapping](media/export-liveramp-segments.png "LiveRamp connector with attribute mapping")
+   > ![LiveRamp connector with attribute mapping.](media/export-liveramp-segments.png "LiveRamp connector with attribute mapping")
 
 1. Map the corresponding attributes from your unified customer entity for the selected key identifier.
 

@@ -42,7 +42,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **CreatedOn**: Date/Time/Zone
 
    [!div class="mx-imgBorder"]
-   ![Transform DoB to Date](media/ecommerce-dob-date.PNG "transform date of birth to date")
+   ![Transform DoB to Date.](media/ecommerce-dob-date.PNG "transform date of birth to date")
 
 1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
 
@@ -104,9 +104,9 @@ After ingesting the data we now begin the **Map, Match, Merge** process to creat
 
 1. Go to the **Match** tab and select **Set Order**.
 
-1. In the **Primary** drop-down list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.
+1. In the **Primary** dropdown list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.
 
-1. In the **Entity 2** drop-down list, choose **loyCustomers : LoyaltyScheme** and include all records.
+1. In the **Entity 2** dropdown list, choose **loyCustomers : LoyaltyScheme** and include all records.
 
    :::image type="content" source="media/unify-match-order.PNG" alt-text="Unify match eCommerce and Loyalty.":::
 
@@ -114,16 +114,16 @@ After ingesting the data we now begin the **Map, Match, Merge** process to creat
 
 1. Add your first condition using FullName.
 
-   * For eCommerceContacts select **FullName** in the drop-down.
-   * For loyCustomers select **FullName** in the drop-down.
+   * For eCommerceContacts select **FullName** in the dropdown.
+   * For loyCustomers select **FullName** in the dropdown.
    * Select the **Normalize** drop down and choose **Type (Phone, Name, Address, ...)**.
    * Set **Precision Level**: **Basic** and **Value**: **High**.
 
 1. Enter the name **FullName, Email** for the new rule.
 
    * Add a second condition for email address by selecting **Add Condition**
-   * For entity eCommerceContacts, choose **EMail** in drop-down.
-   * For entity loyCustomers, choose **EMail** in the drop-down. 
+   * For entity eCommerceContacts, choose **EMail** in dropdown.
+   * For entity loyCustomers, choose **EMail** in the dropdown. 
    * Leave Normalize blank. 
    * Set **Precision Level**: **Basic** and **Value**: **High**.
 

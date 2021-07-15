@@ -37,7 +37,7 @@ Power Query offers a broad set of connectors to ingest data. Most of these conne
 1. The **Power Query - Edit queries** dialog lets you review and refine the data. The entities that the systems identified in your selected data source appear in the left pane.
 
    > [!div class="mx-imgBorder"]
-   > ![Edit queries dialog](media/data-manager-configure-edit-queries.png "Edit queries dialog")
+   > ![Edit queries dialog.](media/data-manager-configure-edit-queries.png "Edit queries dialog")
 
 1. You can also transform your data. Select an entity to edit or transform. Use the options in the Power Query window to apply transformations. Each transformation gets listed under **Applied steps**. Power Query provides numerous pre-built transformation options. For more information, see [Power Query Transformations](/power-query/power-query-what-is-power-query#transformations).
 
@@ -67,10 +67,10 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
 
 1. In audience insights, go to **Data** > **Data sources**.
 
-2. Select the vertical ellipsis next to the data source you want to change and select **Edit** from the drop-down menu.
+2. Select the vertical ellipsis next to the data source you want to change and select **Edit** from the dropdown menu.
 
    > [!div class="mx-imgBorder"]
-   > ![Edit option](media/edit-option-data-sources.png "Edit option")
+   > ![Edit option.](media/edit-option-data-sources.png "Edit option")
 
 3. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
