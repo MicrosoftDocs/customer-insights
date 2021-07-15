@@ -96,7 +96,7 @@
       items:
         - name: Segments overview
           href: audience-insights/segments.md
-        - name: Create segments and customer groups
+        - name: Create segments
           href: audience-insights/segment-builder.md
         - name: Suggested segments based on measures
           href: audience-insights/suggested-segments.md
@@ -288,6 +288,8 @@
       items: 
         - name: Create and modify events
           href: engagement-insights/refined-events.md
+        - name: Recognize web events from previously authenticated visitors 
+          href: engagement-insights/unknown-to-known.md
         - name: Export events
           href: engagement-insights/export-events.md
 
