@@ -1,10 +1,10 @@
 ---
 title: Engagement insights availability regions
 description: Learn more about the regions and geos that engagement insights is deployed.
-author: mkisel
+author: mkisel11
 ms.reviewer: mhart
 ms.author: mkisel
-ms.date: 07/01/2021
+ms.date: 07/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: article
