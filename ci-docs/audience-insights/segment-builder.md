@@ -13,7 +13,29 @@ manager: shellyha
 
 # Create and manage segments
 
-Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. 
+Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. To create a new segment navigate to Segment builder ( + New  -> Build your own )
+
+## Segment Builder
+
+The following image illustrates the various aspects of the segment builder.
+
+(insert image here)
+
+1. Organize your segment into rules and sub-rules. Each rule/sub-rule is compsed of conditions. Combine them via logical operators
+
+2. Select the Entity Relationship path (add a link to the docs on entity relationship path) that should apply to a rule. Entity relationship path dictates what attributes can be included in the rule
+
+3. Move rule or sub-rule up, down or under another rule, or delete a rule as appropriate
+
+4. Build the right level of nesting using sub-rules
+
+5. Apply set operation on adjoining rules
+
+6. Always-on attribute picker that is aware of the list of enitities that can participate in a rule based on the entity relationship path that is already selected in the rule being edited
+
+7. Add attributes to any existing rule or sub-rule or add it to a new rule
+
+8. Unlimited undo and redo to help you make any number of edits with adandon
 
 The following example illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
 
@@ -27,7 +49,7 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
 
 1. Go to the **Segments** page.
 
-1. Select **New** > **Blank segment**.
+1. Select **New** > **Build your own**.
 
 <!--1. In the **New segment** pane, choose a segment type:
 
