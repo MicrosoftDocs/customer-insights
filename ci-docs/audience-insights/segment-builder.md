@@ -1,7 +1,7 @@
 ---
-title: "Create and manage segments"
+title: "Create segments with the segment builder"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 07/08/2021
+ms.date: 07/30/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -24,21 +24,20 @@ manager: shellyha
 
 Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. 
 
-The following example illustrates the segmentation capability. We've defined a segment for customers who ordered at least $500 of goods in the last 90 days *and* who were involved in a customer service call that got escalated.
+The following example illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
 
-:::image type="content" source="media/segmentation-group1-2.png" alt-text="Screenshot of the segment builder UI with two groups that specify a customer segment.":::
+:::image type="content" source="media/segment-example.png" alt-text="Screenshot of the segment builder UI with two groups that specify a customer segment.":::
 
 ## Create a new segment
 
-There are multiple ways to create a new segment. This section describes how to create a *blank segment* from scratch. You can also create a *quick segment* based on existing entities or make use of machine learning models to get *suggested segments*. More information: [Segments overview](segments.md).
+There are multiple ways to create a new segment. This section describes how to build your own segment from scratch. You can also create a *quick segment* based on existing entities or make use of machine learning models to get *suggested segments*. More information: [Segments overview](segments.md).
 
 While creating a segment, you can save a draft. It will be saved as an inactive segment, and can't be activated it finished with a valid configuration.
 
 1. Go to the **Segments** page.
 
 1. Select **New** > **Blank segment**.
-/// Build your own
-/// Pane on the right with attributes and segments
+
 /// no prompts for valid values, go check entities
 //any of: comma-seprataed
 //emnttity parth at rule level
@@ -50,41 +49,44 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
 //projectted will show onyl valid attributes. same logic as before
 //undo redo
 
-1. In the **New segment** pane, choose a segment type:
+<!--1. In the **New segment** pane, choose a segment type:
 
    - **Dynamic segments** [refresh](segments.md#refresh-segments) on a recurring schedule.
    - **Static segments** run once when you create it.
+-->
 
-1. Provide an **Output entity name** for the segment. Optionally, provide a display name, and a description that helps identifying the segment.
+1. On to the segment builder page, you define the first rule. A rule consists of one or more conditions and defines a set of customers.
 
-1. Select **Next** to get to the **Segment builder** page where you define a group. A group is a set of customers.
+1. In the **Rule1** section, choose an attribute of an entity you want filter customers by. There are two ways to choose attributes: 
+   - Review the list of available entities and attributes in the **Add to Rule** pane and select the **+** icon next to the attribute to add. Choose if you want to add the attribute to an existing rule or use it to create a new rule.
+   - Type the name of the attribute in the rule section to see matching suggestions.
 
-1. Choose the entity that includes the attribute you want to segment by.
+1. Choose the operators to specify the matching values of the condition. Attribute can have one of four data types as value: numerical, string, date, or Boolean. Depending on the data type of the attribute, different operators are available to specify the condition.
 
-1. Choose the attribute to segment by. This attribute can have one of four value types: numerical, string, date, or Boolean.
 
-1. Choose an operator and a value for the selected attribute.
+1. Select **Add condition** to add more conditions to a rule. 
 
-   > [!div class="mx-imgBorder"]
-   > ![Custom group filter.](media/customer-group-numbers.png "Customer group filter")
+1. If a rule uses other entities than the *Customer* entity, you have to set the relationship path. The relationship path is required to inform the system over which relationships you want to access the unified customer entity. Select **Set relationship path** to map selected entity to the unified customer entity. If there's only one possible relationship path, the system will select it automatically. Different relationship paths can yield different results.
+<!-- Validate example --> 
 
-   |Number |Definition  |
-   |---------|---------|
-   |1     |Entity          |
-   |2     |Attribute          |
-   |3    |Operator         |
-   |4    |Value         |
+:::image type="content" source="media/relationship-path.png" alt-text="Potential relationship path when creating a rule based on an entity mapped to the unified customer entity.":::
 
-   1. To add more conditions to a group, you can use two logical operators:
+  For example, the *eCommerce_eCommercePurchases* entity in the screenshot has four options to map to the *Customer* entity: 
+  - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > Customer
+  - eCommerce_eCommercePurchases > Customer
+  - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
+  - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer
+  When choosing the last option, we can include attributes form all listed entities in the rule conditions. We will likely get fewer results because the matching customer records need to be part of all entities. In this example, they have purchased goods through e-commerce(*eCommerce_eCommercePurchases*), at a point of sale(*POS_posPurchases*), and participate in our loyalty program (*loyaltyScheme_loyCustomers*). When choosing the second option, we can only choose attributes from the *eCommerce_eCommercePurchases* and the *Customer* entity. This likely results in more resulting customer profiles.
 
-      - **AND** operator: Both conditions must be met as part of the segmentation process. This option is most useful when you define conditions across different entities.
+1. If you have multiple conditions in a rule, you can choose which logical operator connects them.
 
-      - **OR** operator: Either one of the conditions needs to be met as part of the segmentation process. This option is most useful when you define multiple conditions for the same entity.
+   - **AND** operator: All conditions must be met to include a record in the segment. This option is most useful when you define conditions across different entities.
 
-      > [!div class="mx-imgBorder"]
-      > ![OR operator where either condition needs to be met.](media/segmentation-either-condition.png "OR operator where either condition needs to be met")
+   - **OR** operator: Either one of the conditions must be met to include a record in the segment. This option is most useful when you define multiple conditions for the same entity.
 
-      It's currently possible to nest an **OR** operator under an **AND** operator, but not the other way around.
+   :::image type="content" source="media/segmentation-either-condition.png" alt-text="Rule with two AND conditions.":::
+
+   When using the OR operator, all conditions must be based on entities included in the relationship path and you can't create sub-rules.
 
    1. Each group matches set of customers. You can combine groups to include the customers required for your business case.    
    Select **Add Group**.
@@ -116,6 +118,8 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
    > - Projected attributes only work for entities that have a one-to-many relationship with the customer entity. For example, one customer can have multiple subscriptions.
    > - You can only project attributes from an entity that is used in every group of segment query you are building.
    > - Projected attributes are factored in when using set operators.
+
+1. Provide an **Output entity name** for the segment. Optionally, provide a display name, and a description that helps identifying the segment.
 
 1. Select **Save** to save your segment. Your segment will be saved and processed if all requirements are validated. Otherwise, it will be saved as a draft.
 
