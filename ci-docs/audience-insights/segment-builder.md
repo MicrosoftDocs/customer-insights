@@ -13,15 +13,6 @@ manager: shellyha
 
 # Create and manage segments
 
-> [!IMPORTANT]
-> There are several changes getting rolled out to the segment creation experience in early August 2021: 
-> - The segment builder will look slightly different with restyled elements and an improved user flow.
-> - New datetime operators and an improved date picker are enabled in the segment builder.
-> - You'll be able to add or remove conditions and rules from segments. 
-> - Nested rules that start with an OR condition will become available. You no longer need an AND condition at the outermost layer.
-> - A side pane to select attributes will be constantly available.
-> - An option to select entity relationship paths.
-
 Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. 
 
 The following example illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
@@ -109,6 +100,7 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
 > - The segment builder won't suggest valid values from entities when setting the operators for the conditions. You can go to **Data** > **Entities** and download the entity data to see which values are available.
 > - Conditions based on the dates let you switch between fixed dates and a floating date range.
 > - If you have multiple rules for your segment, you find a blue bar around the rule you are editing.
+> - You can move rules and conditions to other places in the segment definition. Select [...] next to a rule or condition and choose how and where to move it.
 > - The **Undo** and **Redo** controls in the command bar let you roll back back changes.
 
 ## Quick segments
