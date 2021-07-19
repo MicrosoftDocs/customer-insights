@@ -36,7 +36,7 @@ This article describes how an administrator installs the code snippet on a websi
 
 You can change the following configuration options in the code snippet:
 
-- **ingestionKey**: The ingestion key used to send events to your workspace. You can change the ingestion key to send events to a different
+- **ingestionKey**: The ingestion key used to send events to your workspace. You can change the ingestion key to send events to a different workspace. An ingestion key is unique to each workspace. 
 - **autoCapture**: Specifies if page views and interactions with the website are captured. It has two options:
     - **view**: Set to *true* to capture page views. Page views are captured as *View* [events](glossary.md#event), a type of [base event](glossary.md#base-event).
     - **click**: Set to *true* to capture visitor interactions on the website. Interactions are captured as *Action* [events](glossary.md#event), a type of [base event](glossary.md#base-event).

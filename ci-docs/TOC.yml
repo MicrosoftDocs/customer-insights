@@ -92,11 +92,11 @@
         - name: Enrich with SFTP custom import
           href: audience-insights/enrichment-SFTP-custom-import.md
 
-    - name: Segments and measures
+    - name: Segments
       items:
         - name: Segments overview
           href: audience-insights/segments.md
-        - name: Create segments and customer groups
+        - name: Create segments
           href: audience-insights/segment-builder.md
         - name: Suggested segments based on measures
           href: audience-insights/suggested-segments.md
