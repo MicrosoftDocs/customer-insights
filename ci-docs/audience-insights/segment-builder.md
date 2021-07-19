@@ -1,7 +1,7 @@
 ---
 title: "Create and manage segments"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 07/08/2021
+ms.date: 07/18/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -14,7 +14,7 @@ manager: shellyha
 # Create and manage segments
 
 > [!IMPORTANT]
-> There are several changes getting rolled out to the segment creation experience in early August 2021: 
+> There are several changes getting rolled out to the segment creation experience in September 2021: 
 > - The segment builder will look slightly different with restyled elements and an improved user flow.
 > - New datetime operators and an improved date picker are enabled in the segment builder.
 > - You'll be able to add or remove conditions and rules from segments. 
