@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 06/15/2021
+ms.date: 07/19/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -21,6 +21,33 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## June 2021 updates
+
+The updates in June 2021 include several features, performance upgrades, and bug fixes.
+
+### Data ingestion
+
+- **Improved data unification progress updates**
+  You can now view more granular, improved dynamic status updates on the [data unification process](data-unification.md) steps. This feature lets you keep track of the detailed progress to understand the process flow and take action if any step needs attention.
+
+### Extensibility
+
+- **Export segments and other data to Salesforce Marketing Cloud**
+  We have extended our export destinations to include [Salesforce Marketing Cloud](export-salesforce.md). You can now export segments and other types of data to Salesforce Marketing Cloud through a branded SFTP export. Data import can be fully automated in Salesforce and used to create more effective marketing campaigns.  
+ 
+- **Export segments to ActiveCampaign**
+  We have extended our export destinations to include [Active Campaign](export-active-campaign.md). You can now export segments to generate campaigns, run email marketing, and work with specific groups of customers in ActiveCampaign.
+ 
+- **Export segments to Sendinblue**
+  We have extended our export destinations to include [Sendinblue](export-sendinblue.md). You can now export segments to generate campaigns, run email marketing, and work with specific groups of customers with Sendinblue.
+ 
+### UX updates 
+
+- **New and enhanced Customers page and profile details page**
+  We have redesigned the Customers page and the profile detail pages for improved user experience and better performance. These changes let you view, sort, search, and filter customers. Filters are now represented in the URL to share the search results with other users seamlessly. Search results can also be saved as a segment.    
+  The details page for customer profiles now groups data in various subsections such as demographic data, IDs, and other profile attributes for improved readability. Other sections on the profile details page are now more interactive. For example the activities section now allows filtering and sorting.
+
 
 ## May 2021 updates
 
