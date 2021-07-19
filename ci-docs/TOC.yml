@@ -96,7 +96,7 @@
       items:
         - name: Segments overview
           href: audience-insights/segments.md
-        - name: Create segments and customer groups
+        - name: Create segments
           href: audience-insights/segment-builder.md
         - name: Suggested segments based on measures
           href: audience-insights/suggested-segments.md
