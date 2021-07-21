@@ -176,6 +176,7 @@ You'll find the result of a successful run, the unified customer profile entity,
 > [!TIP]
 > After running the match process, select the process status to open the **Task details** pane. It gives an overview about the processing time, the last processing date, and all errors and warnings associated with the task. Select **See details** to see which entities participated in the match process, which rules were applied to them, and if the updates were published successfully.  
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).  
+> :::image type="content" source="media/process-detail-path.png" alt-text="Drill-down path to get to process details from the task status link.":::
 
 ## Review and validate your matches
 
