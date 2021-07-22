@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 06/15/2021
+ms.date: 07/22/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -14,6 +14,15 @@ manager: shellyha
 # Manage environments
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+## Switch environments
+
+Select the **Environment** control in the upper-right corner of the page to change environments.
+
+> [!div class="mx-imgBorder"] 
+> ![Switch environment.](media/home-page-environment-switcher.png "Switch environment")
+
+Administrators can [create](get-started-paid.md) and manage environments.
 
 ## Edit an existing environment
 

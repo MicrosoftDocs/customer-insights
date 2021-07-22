@@ -1,7 +1,7 @@
 ---
 title: "Create and configure a paid license of Customer Insights"
 description: "Steps to get a licensed subscription for Dynamics 365 Customer Insights and configure it."
-ms.date: 07/14/2021
+ms.date: 07/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
