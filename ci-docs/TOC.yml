@@ -4,6 +4,9 @@
 - name: Product overview
   href: overview.md
 
+- name: Create a trial
+  href: audience-insights/get-started-trial.md
+
 - name: Access your environment
   href: https://home.ci.ai.dynamics.com/
 
@@ -16,15 +19,11 @@
     - name: Capability overview
       href: audience-insights/overview.md
     
-    - name: Free trial
-      href: https://dynamics.microsoft.com/get-started/?appname=customerinsights
-  
-
     - name: New and updated features
       href: audience-insights/whats-new-audience-insights.md
 
     - name: Create a new environment
-      href: audience-insights/home.md
+      href: audience-insights/get-started-paid.md
 
     - name: Learn modules
       items:
