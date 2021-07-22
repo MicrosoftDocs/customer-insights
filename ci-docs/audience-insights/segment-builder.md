@@ -13,33 +13,31 @@ manager: shellyha
 
 # Create and manage segments
 
-Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. To create a new segment navigate to Segment builder ( + New  -> Build your own )
+Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. You can [create new segments](#create-a-new-segment) using the [segment builder](#segment-builder) or [create quick segments](#quick-segments) from other areas of the app.
 
 ## Segment Builder
 
-The following image illustrates the various aspects of the segment builder.
+The following image illustrates the various aspects of the segment builder. It shows a segment that results in a group of customers who have ordered one of the popular drinks in a specific time frame or spend a specific amount on these drinks. 
 
-(insert image here)
+:::image type="content" source="media/segment-builder-overview.png" alt-text="Elements of the segment builder.":::
 
-1. Organize your segment into rules and sub-rules. Each rule/sub-rule is compsed of conditions. Combine them via logical operators
+1. Organize your segment with rules and sub-rules. Each rule or sub-rule is consists of conditions. Combine the conditions with logical operators
 
-2. Select the Entity Relationship path (add a link to the docs on entity relationship path) that should apply to a rule. Entity relationship path dictates what attributes can be included in the rule
+2. Choose the [relationship path](relationships.md) between entities that applies to a rule. The relationship path determines which attributes can be used in a condition.
 
-3. Move rule or sub-rule up, down or under another rule, or delete a rule as appropriate
+3. Manage rules and sub-rules. Change the position of a rule or delete it.
 
-4. Build the right level of nesting using sub-rules
+4. Add sub-rules and build the right level of nesting using sub-rules.
 
-5. Apply set operation on adjoining rules
+5. Apply set operations to connected rules.
 
-6. Always-on attribute picker that is aware of the list of enitities that can participate in a rule based on the entity relationship path that is already selected in the rule being edited
+6. Use the attribute pane to add available entity attributes or create conditions based on attributes. The pane shows the list of entities and attributes, based on the selected relationship path, that are available for the selected rule.
 
-7. Add attributes to any existing rule or sub-rule or add it to a new rule
+7. Add conditions based on attributes to existing rules and sub-rules or add it to a new rule.
 
-8. Unlimited undo and redo to help you make any number of edits with adandon
+8. Undo and redo changes while building the segment.
 
-The following example illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
-
-:::image type="content" source="media/segment-example.png" alt-text="Screenshot of the segment builder UI with two groups that specify a customer segment.":::
+The example above illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
 
 ## Create a new segment
 
