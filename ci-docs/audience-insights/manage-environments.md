@@ -19,8 +19,7 @@ manager: shellyha
 
 Select the **Environment** control in the upper-right corner of the page to change environments.
 
-> [!div class="mx-imgBorder"] 
-> ![Switch environment.](media/home-page-environment-switcher.png "Switch environment")
+:::image type="content" source="media/home-page-environment-switcher.png" alt-text="Screenshot of the control to switch environments.":::
 
 Administrators can [create](get-started-paid.md) and manage environments.
 
@@ -53,8 +52,8 @@ You can edit some of the details of existing environments.
 ## Copy the environment configuration
 
 When you create a new environment, you can choose to copy the configuration from an existing environment. 
-   > [!div class="mx-imgBorder"]
-   > ![Environment settings.](media/environment-settings-dialog.png)
+
+:::image type="content" source="media/environment-settings-dialog.png" alt-text="Screenshot of the settings options in the environment settings.":::
 
 You'll see a list of all available environments in your organization where you can copy data from.
 
@@ -83,8 +82,7 @@ When you copy an environment, you'll see a confirmation message that the new env
 
 All the data sources will show a **Credentials Required** status. Edit the data sources and enter the credentials to refresh them.
 
-> [!div class="mx-imgBorder"]
-> ![Data sources copied.](media/data-sources-copied.png)
+:::image type="content" source="media/data-sources-copied.png" alt-text="List of data sources that were copied and need authentication.":::
 
 After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Run** to start the data unification process and create the unified customer entity.
 

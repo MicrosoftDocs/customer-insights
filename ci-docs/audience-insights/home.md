@@ -16,8 +16,7 @@ manager: shellyha
 You can [access audience insights from Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 The **Home** page shows an overview of segments, measures, and enrichment data (if configured) after completing the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
 
-> [!div class="mx-imgBorder"] 
-> ![Insights on Home page.](media/home-page-insights.png "Insights on Home page")
+:::image type="content" source="media/home-page-insights.png" alt-text="Screenshot of the Home screen showing sample insights.":::
 
 Under **Recent segments**, you see groups of customers based on demographic, behavioral, or transactional attributes that you've defined. [Creating segments](segments.md) helps you to group your customer base and better target your business activities.
 
@@ -28,6 +27,5 @@ The **Recent enrichments** section lists the results of the enrichment runs that
 ## Next step
 
 To see your own insights on the home page, you'll first need to [add data sources](data-sources.md) and [unify](data-unification.md) your data to build customer profiles.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

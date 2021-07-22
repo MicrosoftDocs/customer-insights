@@ -62,8 +62,7 @@ To create an environment:
      > - Data sharing with Microsoft Dataverse Managed Data Lake is currently not supported when you save all data to your own Azure Data Lake Storage.
      > - [Prediction of missing values in an entity](predictions.md) is currently not supported when you enable data sharing with Microsoft Dataverse Managed Data Lake.
 
-     > [!div class="mx-imgBorder"]
-     > ![Configuration options to enable data sharing with Microsoft Dataverse.](media/datasharing-with-DataverseMDL.png)
+     :::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
    When system processes like data ingestion complete, the system creates corresponding folders in the storage account you specified. Data files and model.json files are created and added to folders based on the process name.
 
