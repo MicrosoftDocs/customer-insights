@@ -53,5 +53,10 @@ Audience insights helps you build a deeper understanding of your customers. Conn
   - Build customizable profiles, define measures, create segments, and benefit from predictive analytics to get a 360-degree view of your customer, specific to your organization.  
   - Use out-of-box connectors for several Microsoft and third-party applications or APIs to further process the insights.
 
+## Pricing and licensing
+
+Customer Insights is licensed per tenant and includes multiple capabilities. The entitled capacities include a number of profiles, daily system refreshes, POwer Platform requests, and a number of environments. You can purchase additional capacity and license to increase the default quota. 
+- Detailed capacity and entitlements: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
+- Pricing overview: [Dynamics 365 Pricing](https://dynamics.microsoft.com/pricing/#CustomerDataPlatform)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
