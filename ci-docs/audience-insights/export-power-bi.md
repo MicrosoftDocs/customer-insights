@@ -1,7 +1,7 @@
 ---
 title: "Power BI connector"
 description: "Learn how to use the Dynamics 365 Customer Insights connector in Power BI."
-ms.date: 09/21/2020
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -63,5 +63,11 @@ You can identify and remove the duplicated relationships.
 3. Remove any duplicate relationships identified.
 
 After removal of the duplicated relationships, try to configure the Power BI connector again. The environment should be available now.
+
+### Errors on date fields when loading entities in Power BI Desktop
+
+When loading entities that contain fields with a date format like MM/DD/YYYY, you can encounter errors due to mismatched locale formats. This mismatch happens when your Power BI Desktop file is set to another locale than English (United States), because date fields in audience insights are saved in US format.
+
+The Power BI Desktop file has a single locale setting, which is applied when retrieving data. The get these date fields interpreted correctly, set the locale of the .BPI file to English (United States). [Learn how to change the locale of a Power BI desktop file](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
