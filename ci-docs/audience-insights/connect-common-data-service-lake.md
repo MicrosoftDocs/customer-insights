@@ -36,16 +36,14 @@ Data stored in online services, such as Azure Data Lake Storage, may be stored i
 
 5. Provide the **Server address** for your Common Data Service organization, and select **Sign in**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Dialog box to enter Common Data Service server address.](media/enter-CDS-org-details.png)
+   :::image type="content" source="media/ingest-dataverse-server-address.png" alt-text="Screen in data ingestion step where a user can enter the Dataverse environment URL.":::
 
 6. Select the entities you want to ingest from the available list.    
 
    > [!NOTE]
    > If some entities are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights). You can't change the selection. These entities will be available once the data source is created.
 
-   > [!div class="mx-imgBorder"]
-   > ![Dialog box showing a list of entities in the Common Data Service org.](media/select-analytical-entities.png)
+   :::image type="content" source="media/select-dataverse-entities.png" alt-text="Dialog box showing a list of entities in the Dataverse environment.":::
 
 7. Save your selection to start syncing the selected entities to the Common Data Service managed lake. You'll find the newly added connection on the **Data sources** page. It will be queued for refresh and show the entities count as 0 until all the entities are synced.
 
