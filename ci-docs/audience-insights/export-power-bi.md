@@ -64,4 +64,10 @@ You can identify and remove the duplicated relationships.
 
 After removal of the duplicated relationships, try to configure the Power BI connector again. The environment should be available now.
 
+### When loading entities you receive errors on date fields
+When loading entities which contain fields of date format like MM/DD/YYYY, you can encounter errors due to mismatched locale formats. This mismatch happens when your Power BI file is set to another locale than US, because date fields in audience insights are saved in US locale format.
+
+When loading such entities in PowerBI, these date fields are read as is. Since a Power BI desktop file has a single local setting, which is applied when retrieving data, the only way to get these date fields read correctly, is to set the locale of the BPI file to US. [Learn how to change the locale of a Power BI desktop file](https://docs.microsoft.com/power-bi/fundamentals/supported-languages-countries-regions#choose-the-locale-for-importing-data-into-power-bi-desktop).
+
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
