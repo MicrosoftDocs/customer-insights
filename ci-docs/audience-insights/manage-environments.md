@@ -41,7 +41,7 @@ You can edit some of the details of existing environments.
 
    > [!NOTE]
    > - Data sharing with Microsoft Dataverse Managed Data Lake is currently not supported when you save all data to your own Azure Data Lake Storage.
-   > - [Prediction of missing values in an entity](predictions.md) is currently not supported when you enable data sharing with Microsoft Dataverse Managed Data Lake.
+   > - [Prediction of missing values in an entity](predictions.md) and PowerBI Embedded reports in Audience Insights (if enabled on your instance) are currently not supported when you enable data sharing with Microsoft Dataverse Managed Data Lake.
 
    After enabling data sharing with Microsoft Dataverse, a full refresh of your data sources and other processes starts. If processes are currently running, you don't see the option to enable data sharing with Microsoft Dataverse. Wait for those processes to complete or cancel them to enable data sharing. 
    
