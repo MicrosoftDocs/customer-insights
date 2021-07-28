@@ -21,6 +21,7 @@ manager: shellyha
 > - Nested rules that start with an OR condition will become available. You no longer need an AND condition at the outermost layer.
 > - A side pane to select attributes will be constantly available.
 > - An option to select entity relationship paths.
+> To try the new segment builder, send an email with the subject "Request to enable the new segment builder" to cihelp [at] microsoft.com. Include the name of your orgnization and the ID of you sandbox environment.
 
 Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. 
 
