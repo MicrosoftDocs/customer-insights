@@ -46,8 +46,8 @@
           href: audience-insights/connect-power-query.md
         - name: Add a Common Data Model folder as a data source
           href: audience-insights/connect-common-data-model.md
-        - name: Add Common Data Service managed data lake
-          href: audience-insights/connect-common-data-service-lake.md
+        - name: Add Dataverse managed data lake
+          href: audience-insights/connect-dataverse-managed-lake.md
         - name: Incremental refresh for data sources
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Real-time data ingestion
