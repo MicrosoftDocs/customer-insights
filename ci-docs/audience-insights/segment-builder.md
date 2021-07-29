@@ -19,7 +19,7 @@ Define complex filters around the unified customer entity and its related entiti
 
 The following image illustrates the various aspects of the segment builder. It shows a segment that results in a group of customers. The customers ordered one of the popular drinks in a specific time frame or spend a specific amount on these drinks. 
 
-:::image type="content" source="media/segment-builder-overview.png" alt-text="Elements of the segment builder.":::
+:::image type="content" source="media/segment-builder-overview.png" alt-text="Elements of the segment builder." lightbox="media/segment-builder-overview.png":::
 
 1. Organize your segment with rules and subrules. Each rule or subrule consists of conditions. Combine the conditions with logical operators
 
@@ -27,7 +27,7 @@ The following image illustrates the various aspects of the segment builder. It s
 
 3. Manage rules and subrules. Change the position of a rule or delete it.
 
-4. Add subrules and build the right level of nesting using subrules.
+4. Add conditions and build the right level of nesting using subrules.
 
 5. Apply set operations to connected rules.
 
