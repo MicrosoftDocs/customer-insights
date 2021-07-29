@@ -208,7 +208,7 @@ The updates in February 2021 include several features, performance upgrades, and
 
 - **Copy environment support more types of data sources**
 
-  Admins can copy environment configurations to a new environment in the same organization. This feature extends the copy environment functionality for cases in which data sources based on a Common Data Service data lake or a Common Data Model folder are used.
+  Admins can copy environment configurations to a new environment in the same organization. This feature extends the copy environment functionality for cases in which data sources based on a Microsoft Dataverse managed data lake or a Common Data Model folder are used.
 
 ## January 2021 updates
 
