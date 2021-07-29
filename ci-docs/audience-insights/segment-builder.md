@@ -17,25 +17,25 @@ Define complex filters around the unified customer entity and its related entiti
 
 ## Segment Builder
 
-The following image illustrates the various aspects of the segment builder. It shows a segment that results in a group of customers. The customers ordered one of the popular drinks in a specific time frame or spend a specific amount on these drinks. 
+The following image illustrates the various aspects of the segment builder. It shows a segment that results in a group of customers. The customers ordered goods in a specific time frame and gathered a number of reward points or spent a certain amount of money. 
 
 :::image type="content" source="media/segment-builder-overview.png" alt-text="Elements of the segment builder." lightbox="media/segment-builder-overview.png":::
 
-1. Organize your segment with rules and subrules. Each rule or subrule consists of conditions. Combine the conditions with logical operators
+1 - Organize your segment with rules and subrules. Each rule or subrule consists of conditions. Combine the conditions with logical operators
 
-2. Choose the [relationship path](relationships.md) between entities that applies to a rule. The relationship path determines which attributes can be used in a condition.
+2 - Choose the [relationship path](relationships.md) between entities that applies to a rule. The relationship path determines which attributes can be used in a condition.
 
-3. Manage rules and subrules. Change the position of a rule or delete it.
+3 - Manage rules and subrules. Change the position of a rule or delete it.
 
-4. Add conditions and build the right level of nesting using subrules.
+4 - Add conditions and build the right level of nesting using subrules.
 
-5. Apply set operations to connected rules.
+5 - Apply set operations to connected rules.
 
-6. Use the attribute pane to add available entity attributes or create conditions based on attributes. The pane shows the list of entities and attributes, based on the selected relationship path, that are available for the selected rule.
+6 - Use the attribute pane to add available entity attributes or create conditions based on attributes. The pane shows the list of entities and attributes, based on the selected relationship path, that are available for the selected rule.
 
-7. Add conditions based on attributes to existing rules and subrules or add it to a new rule.
+7 - Add conditions based on attributes to existing rules and subrules or add it to a new rule.
 
-8. Undo and redo changes while building the segment.
+8 - Undo and redo changes while building the segment.
 
 The example above illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
 
@@ -49,12 +49,6 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
 
 1. Select **New** > **Build your own**.
 
-<!--1. In the **New segment** pane, choose a segment type:
-
-   - **Dynamic segments** [refresh](segments.md#refresh-segments) on a recurring schedule.
-   - **Static segments** run once when you create it.
--->
-
 1. On to the segment builder page, you define the first rule. A rule consists of one or more conditions and defines a set of customers.
 
 1. In the **Rule1** section, choose an attribute of an entity you want filter customers by. There are two ways to choose attributes: 
@@ -66,16 +60,15 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
 1. Select **Add condition** to add more conditions to a rule. To create a rule under the current rule, select **Add sub-rule**.
 
 1. If a rule uses other entities than the *Customer* entity, you have to set the relationship path. The relationship path is required to inform the system over which relationships you want to access the unified customer entity. Select **Set relationship path** to map selected entity to the unified customer entity. If there's only one possible relationship path, the system will select it automatically. Different relationship paths can yield different results. Every rule can have its own relationship path.
-<!-- Validate example --> 
 
-:::image type="content" source="media/relationship-path.png" alt-text="Potential relationship path when creating a rule based on an entity mapped to the unified customer entity.":::
+   :::image type="content" source="media/relationship-path.png" alt-text="Potential relationship path when creating a rule based on an entity mapped to the unified customer entity.":::
 
-  For example, the *eCommerce_eCommercePurchases* entity in the screenshot has four options to map to the *Customer* entity: 
-  - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > Customer
-  - eCommerce_eCommercePurchases > Customer
-  - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
-  - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer
-  When choosing the last option, we can include attributes from all listed entities in the rule conditions. We will likely get fewer results because the matching customer records need to be part of all entities. In this example, they have purchased goods through e-commerce(*eCommerce_eCommercePurchases*), at a point of sale(*POS_posPurchases*), and participate in our loyalty program (*loyaltyScheme_loyCustomers*). When choosing the second option, we can only choose attributes from the *eCommerce_eCommercePurchases* and the *Customer* entity. This likely results in more resulting customer profiles.
+   For example, the *eCommerce_eCommercePurchases* entity in the screenshot has four options to map to the *Customer* entity: 
+   - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > Customer
+   - eCommerce_eCommercePurchases > Customer
+   - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
+   - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer
+   When choosing the last option, we can include attributes from all listed entities in the rule conditions. We will likely get fewer results because the matching customer records need to be part of all entities. In this example, they have purchased goods through e-commerce(*eCommerce_eCommercePurchases*), at a point of sale(*POS_posPurchases*), and participate in our loyalty program (*loyaltyScheme_loyCustomers*). When choosing the second option, we can only choose attributes from the *eCommerce_eCommercePurchases* and the *Customer* entity. This likely results in more resulting customer profiles.
 
 1. If you have multiple conditions in a rule, you can choose which logical operator connects them.
 
