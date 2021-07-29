@@ -17,23 +17,23 @@ Define complex filters around the unified customer entity and its related entiti
 
 ## Segment Builder
 
-The following image illustrates the various aspects of the segment builder. It shows a segment that results in a group of customers who have ordered one of the popular drinks in a specific time frame or spend a specific amount on these drinks. 
+The following image illustrates the various aspects of the segment builder. It shows a segment that results in a group of customers. The customers ordered one of the popular drinks in a specific time frame or spend a specific amount on these drinks. 
 
 :::image type="content" source="media/segment-builder-overview.png" alt-text="Elements of the segment builder.":::
 
-1. Organize your segment with rules and sub-rules. Each rule or sub-rule is consists of conditions. Combine the conditions with logical operators
+1. Organize your segment with rules and subrules. Each rule or subrule consists of conditions. Combine the conditions with logical operators
 
 2. Choose the [relationship path](relationships.md) between entities that applies to a rule. The relationship path determines which attributes can be used in a condition.
 
-3. Manage rules and sub-rules. Change the position of a rule or delete it.
+3. Manage rules and subrules. Change the position of a rule or delete it.
 
-4. Add sub-rules and build the right level of nesting using sub-rules.
+4. Add subrules and build the right level of nesting using subrules.
 
 5. Apply set operations to connected rules.
 
 6. Use the attribute pane to add available entity attributes or create conditions based on attributes. The pane shows the list of entities and attributes, based on the selected relationship path, that are available for the selected rule.
 
-7. Add conditions based on attributes to existing rules and sub-rules or add it to a new rule.
+7. Add conditions based on attributes to existing rules and subrules or add it to a new rule.
 
 8. Undo and redo changes while building the segment.
 
@@ -112,7 +112,7 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
 
 1. Before you save and run the segment, Select **Edit details** next to the segment name. Provide a name for your segment and  update the suggested **Output entity name** for the segment. You can also add a description to the segment.
 
-1. Select **Run** to save and process your segment if all requirements are validated. Otherwise, it will be saved as as an inactive segment draft.
+1. Select **Run** to save and process your segment if all requirements are validated. Otherwise, it will be saved as an inactive segment draft.
 
 1. Select **Back to segments** to go back to the **Segments** page.
 
