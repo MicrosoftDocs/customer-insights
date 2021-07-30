@@ -5,7 +5,7 @@ metadata:
   author: m-hartmann
   description: Find relevant articles to start with help content.
   ms.author: mhart
-  ms.date: 10/29/2020
+  ms.date: 07/30/2021
   ms.service: customer-insights
   ms.topic: landing-page
 
@@ -24,9 +24,9 @@ landingContent:
           - text: Customer Insights overview
             url: overview.md
           - text: Release plans
-            url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
-          - text: Access your environment
-            url: https://home.ci.ai.dynamics.com/
+            url: /dynamics365-release-plan/
+          - text: Discover the CDP
+            url: https://dynamics.microsoft.com/ai/customer-insights/
 
   - title: Get started with audience insights
     linkLists:
