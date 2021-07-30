@@ -368,8 +368,10 @@
 
     - name: Import consent data
       items: 
-        - name: Import subscription and purpose consent data
-          href: consent-management/import-consent-data.md
+        - name: Import subscription consent data
+          href: consent-management/import-subscription-consent-data.md
+        - name: Import purpose consent data
+          href: consent-management/import-purpose-consent-data.md
         - name: Map imported data to consent entity
           href: consent-management/map-consent-data.md
         - name: Set a refresh schedule
