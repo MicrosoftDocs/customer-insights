@@ -1,0 +1,27 @@
+metadata:
+  title: Help hub
+  author: m-hartmann
+  description: Find relevant articles to start with help content.
+  ms.author: mhart
+  ms.date: 07/30/2021
+  ms.service: customer-insights
+  ms.topic: landing-page
+
+title: Consent management, a capability of Dynamics 365 Customer Insights docs
+summary: Find helpful resources to get started and learn about features.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  - title: Meet consent management
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Consent management overview
+            url: overview.md
+          - text: Release plans
+            url: /dynamics365-release-plan/
+          - text: Discover the CDP
+            url: https://dynamics.microsoft.com/ai/customer-insights/
