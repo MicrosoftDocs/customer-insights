@@ -351,5 +351,48 @@
     - name: Service limits
       href: engagement-insights/quotas.md
 
+- name: Consent management (preview)
+  items:
+    - name: Help hub
+      href: consent-management/index.yml
+
+    - name: Capability overview
+      href: consent-management/overview.md
+
+    - name: Get started
+      items:
+        - name: Get started
+          href: consent-management/get-started.md
+        - name: Concepts and terminology
+          href: consent-management/glossary.md
+
+    - name: Import consent data
+      items: 
+        - name: Import subscription and purpose consent data
+          href: consent-management/import-consent-data.md
+        - name: Map imported data to consent entity
+          href: consent-management/map-consent-data.md
+        - name: Set a refresh schedule
+          href: consent-management/refresh-schedule.md
+
+    - name: Manage consent data
+      items: 
+        - name: Map consent to standard actions
+          href: consent-management/standard-actions.md
+        
+    - name: Admin guide
+      items: 
+        - name: Configure system settings
+          href: consent-management/system-settings.md
+        - name: Add and remove users
+          href: consent-management/manage-users.md
+        - name: Assign permissions and user roles
+          href: consent-management/permissions-roles.md
+    
+    - name: GDPR
+      items: 
+        - name: Respond to Data Subject Requests
+          href: consent-management/DSR-request.md
+
 - name: Get support
   href: https://dynamics.microsoft.com/en-us/support/
