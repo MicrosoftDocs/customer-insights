@@ -41,8 +41,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **DateOfBirth**: Date
    - **CreatedOn**: Date/Time/Zone
 
-   [!div class="mx-imgBorder"]
-   ![Transform DoB to Date.](media/ecommerce-dob-date.PNG "transform date of birth to date")
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Transform DoB to Date.":::
 
 1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
 
