@@ -9,17 +9,8 @@ With a newly provisioned consent management capability, the first run experience
 :::image type="content" source="media/first-run-consent-data-import.PNG" alt-text="First run experience for consent data import.":::
 
 1. In Consent management, go to **Consent**.
-1. Select the **Import consent data** control and choose **Subscription**.
+1. Select the **Import consent data** control and choose which consent type to import. You can choose between **Purpose** and **Subscription**. Depending on the selected type, the [requirements for consent data](#data-requirements-for-consent-data) are different.
    :::image type="content" source="media/import-consent-data-control.PNG" alt-text="Control option to start the import process for consent data.":::
-1. To import subscription consent data, your source table requires the following fields of data: 
-   - Subscription name
-   - Email or phone number
-   - Method of contact (email or phone)
-   - Consent status
-   - Consent start date
-   - Consent expiration date
-   - When the consent was captured
-   - Source of the captured consent
 1. Provide a **Name** to identify the data source and select **Next**.
    :::image type="content" source="media/data-source-name.PNG" alt-text="Name input field for the name of a new data source.":::
 1. Select which type of data source you want to import the consent data from. The list of available data sources is listed [HERE](tbd.md).
@@ -42,3 +33,31 @@ With a newly provisioned consent management capability, the first run experience
 1. Select **Publish** and choose if you want to publish the data source now or schedule it to publish later. 
    :::image type="content" source="media/publish-data-source.PNG" alt-text="Control to publish the data source.":::
 1. Depending on the size if the imported data set, it can take a moment to complete the import process
+
+## Data requirements for consent data
+
+Consent data will be mapped to a system-defined schema. The type of consent data you want to import determines the required data fields. 
+
+### Subscription consent data
+
+Required data fields: 
+
+- Subscription name
+- Email or phone number
+- Method of contact (email or phone)
+- Consent status
+- Consent start date
+- Consent expiration date
+- When the consent was captured
+- Source of the captured consent
+
+### Purpose consent data
+
+Required data fields: 
+
+- Data purpose name
+- Email or phone number
+- Method of contact (email or phone)
+- Consent status
+- When the consent was captured
+- Source of the captured consent
