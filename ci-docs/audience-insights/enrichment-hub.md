@@ -58,4 +58,18 @@ Third-party enrichments are configured using [connections](connections.md), whic
 
 The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For example, enrich data only for a specific segment. You can configure several enrichments of the same type and reuse the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on the **Enrichment** page.
 
+## See the progress of the enrichment process
+
+You can find details about the processing of an enrichment, including it status and potential issues while it's refreshing or after a refresh completed. Understand which processes are involved to refresh an enrichment and how long it took to run the processes. 
+
+To see the status of en enrichment
+
+1. Go to **Data** > **Entities**. 
+1. In the **Enrichments** section, select the status of an enrichment to open a side pane. 
+1. In the **Progress details** pane, expand the **Customer profiles** section. 
+1. Under the enrichment you want to see the progress, select **See details**. 
+1. In the **Task details** pane, select **Show details** to see the processes that are involved in updating the enrichment and their status. 
+
+:::image type="content" source="media/status-panes.png" alt-text="Process details and task details panes to see the processing status of entities.":::
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
