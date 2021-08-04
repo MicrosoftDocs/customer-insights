@@ -76,7 +76,7 @@ It can take up to 15 minutes to propagate the changes.
 
 ## Enter the Azure Resource ID or the Azure Subscription details in the storage account attachment to Audience Insights.
 
-Attach an Azure Data Lake storage account in audience insights to [store output data](manage-environments.md) or [use it as a data source](connect-common-data-service-lake.md). Choosing the Azure Data Lake option lets you choose between a resource-based or a subscription-based based approach.
+Attach an Azure Data Lake storage account in audience insights to [store output data](manage-environments.md) or [use it as a data source](connect-dataverse-managed-lake.md). Choosing the Azure Data Lake option lets you choose between a resource-based or a subscription-based based approach.
 
 Follow the below steps to provide the required information on the selected approach.
 

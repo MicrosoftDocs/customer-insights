@@ -19,7 +19,7 @@ Use [segments](segments.md) to generate campaigns and contact specific groups of
 
 ## Prerequisite for a connection
 
-- Contact records must be present in Dynamics 365 Marketing before you can export a segment from Customer Insights to Marketing. Read more on how to ingest contacts in [Dynamics 365 Marketing using Common Data Services](connect-power-query.md).
+- Contact records must be present in Dynamics 365 Marketing before you can export a segment from Customer Insights to Marketing. Read more on how to ingest contacts in [Dynamics 365 Marketing using Microsoft Dataverse](connect-power-query.md).
 
   > [!NOTE]
   > Exporting segments from audience insights to Marketing will not create new contact records in the Marketing instances. The contact records from Marketing must be ingested in audience insights and used as a data source. They also need to be included in the unified Customer entity to map customer IDs to contact IDs before segments can be exported.

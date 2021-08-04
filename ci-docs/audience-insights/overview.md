@@ -14,7 +14,7 @@ ms.custom: intro-internal
 
 # Audience insights for Dynamics 365 Customer Insights overview
 
-Audience insights can help you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive pleasant experiences and efficient processes. Unify and understand customer data and harness it for intelligent insights and actions.
+[Audience insights, a capability of Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/audience-insights-capability/) helps you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
 
 ## Main benefits 
 
