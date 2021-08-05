@@ -1,7 +1,7 @@
 ---
 title: "Connect to an Azure Data Lake Storage Gen2 account with a service principal"
-description: "Use an Azure service principal for audience insights to connect to your own data lake when attaching it to audience insights."
-ms.date: 02/10/2021
+description: "Use an Azure service principal for to connect to your own data lake."
+ms.date: 07/23/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -11,9 +11,9 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal for audience insights
+# Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal
 
-Automated tools that use Azure services should always have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. Read on to learn how to connect audience insights with an Azure Data Lake Storage Gen2 account using an Azure service principal instead of storage account keys. 
+Automated tools that use Azure services should always have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. Read on to learn how to connect Customer Insights with an Azure Data Lake Storage Gen2 account using an Azure service principal instead of storage account keys. 
 
 You can use the service principal to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create a new or update an existing environment](get-started-paid.md).
 
@@ -21,9 +21,9 @@ You can use the service principal to securely [add or edit a Common Data Model f
 > - The Azure Data Lake Gen2 storage account that intends to use the service principal must have [Hierarchical Name Space (HNS) enabled](/azure/storage/blobs/data-lake-storage-namespace).
 > - You need admin permissions for your Azure subscription to create the service principal.
 
-## Create Azure service principal for audience insights
+## Create Azure service principal for Customer Insights
 
-Before creating a new service principal for audience insights, check if it already exists in your organization.
+Before creating a new service principal for audience insights or engagement insights, check if it already exists in your organization.
 
 ### Look for an existing service principal
 
@@ -33,13 +33,15 @@ Before creating a new service principal for audience insights, check if it alrea
 
 3. Under **Manage**, select **Enterprise Applications**.
 
-4. Search for the audience insights first party application ID `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` or the name `Dynamics 365 AI for Customer Insights`.
+4. Search for the first party application ID.
+   - Audience insights: `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff`with the name `Dynamics 365 AI for Customer Insights`
+   - Engagement insights: `ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd` with the name `Dynamics 365 AI for Customer Insights engagement insights`
 
-5. If you find a matching record, it means that the service principal for audience insights exists. You don't need to create it again.
+5. If you find a matching record, it means that the service principal already exists. 
    
    :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="Screenshot showing the existing service principal.":::
    
-6. If no results are returned, create a new service principal.
+6. If no results are returned, create a new service principal. To make use of the full power of Customer Insights, we suggest that both apps are added to the service principal.
 
 ### Create a new service principal
 
@@ -48,10 +50,12 @@ Before creating a new service principal for audience insights, check if it alrea
    
    - In the PowerShell window that opens, enter `Install-Module AzureAD`.
 
-2. Create the  service principal for audience insights with the Azure AD PowerShell Module.
+2. Create the service principal for Customer Insights with the Azure AD PowerShell Module.
    - In the PowerShell window, enter `Connect-AzureAD -TenantId "[your tenant ID]" -AzureEnvironmentName Azure`. Replace “your tenant ID” with the actual ID of your tenant where you want to create the service principal. The environment name parameter `AzureEnvironmentName` is optional.
   
-   - Enter `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. This command creates the service principal for audience insights on the selected tenant.  
+   - Enter `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. This command creates the service principal for audience insights on the selected tenant. 
+   
+   - Enter `New-AzureADServicePrincipal -AppId "ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd" -DisplayName "Dynamics 365 AI for Customer Insights engagement insights"`. This command creates the service principal on the selected tenant.
 
 ## Grant permissions to the service principal to access the storage account
 
@@ -68,7 +72,7 @@ Go to the Azure portal to grant permissions to the service principal for the sto
 1. In the **Add role assignment** pane, set the following properties:
    - Role: *Storage Blob Data Contributor*
    - Assign access to: *User, group, or service principal*
-   - Select: *Dynamics 365 AI for Customer Insights* (the [service principal you created](#create-a-new-service-principal))
+   - Select: *Dynamics 365 AI for Customer Insights* and *Dynamics 365 AI for Customer Insights engagement insights* (the two [service principals you created](#create-a-new-service-principal))
 
 1.	Select **Save**.
 
@@ -76,7 +80,7 @@ It can take up to 15 minutes to propagate the changes.
 
 ## Enter the Azure Resource ID or the Azure Subscription details in the storage account attachment to Audience Insights.
 
-Attach an Azure Data Lake storage account in audience insights to [store output data](manage-environments.md) or [use it as a data source](connect-dataverse-managed-lake.md). Choosing the Azure Data Lake option lets you choose between a resource-based or a subscription-based based approach.
+Attach an Azure Data Lake storage account in audience insights to [store output data](manage-environments.md) or [use it as a data source](connect-common-data-service-lake.md). Choosing the Azure Data Lake option lets you choose between a resource-based or a subscription-based based approach.
 
 Follow the below steps to provide the required information on the selected approach.
 
