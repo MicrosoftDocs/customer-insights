@@ -14,17 +14,17 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Engagement and audience insights integration delivers an easy linkage between environments, enabling bi-directional sharing of data between audience insights and engagement insights. 
+The integration between engagement insights and audience insights links environments from both capabilities.  It enables bi-directional sharing of data between audience insights and engagement insights. 
 
-You can use unified profiles and segment data from audience insights for analysis of behavioral web activities in engagement insights. You can also share events that have a high business value from engagement insights and enrich unified profiles stored in audience insights.
+Use unified profiles and segments from audience insights for more analysis options in engagement insights. Export events that have a high business value from engagement insights. Use these events to add data to unified profiles in audience insights.
 
 ## Prerequisites
 
-For the self-service enablement of this feature to work properly, the source of the audience insights profiles is to be stored in an Azure Data Lake Storage (ADLS gen 2) account owned by a customer or in a [Dataverse](/powerapps/maker/data-platform/data-platform-intro.md) managed lake. 
+- Audience insights profiles must be stored in an Azure Data Lake Storage (ADLS gen 2) account owned by a customer or in a [Dataverse](/powerapps/maker/data-platform/data-platform-intro.md) managed lake. 
 
-To link environments, you need administrator permissions for both engagement insights and audience insights environments.
+- To link environments, you need administrator permissions for both engagement insights and audience insights environments.
 
-Linked environments must have the same type (production or sandbox) and the same geographical region.
+- Linked environments must have the same type (production or sandbox) and the same geographical region.
 
 > [!NOTE]
 > - If your audience insights subscription is a trial, which uses an audience insights internal managed data lake, contact [pirequest@microsoft.com](mailto:pirequest@microsoft.com) for assistance. 
@@ -36,41 +36,47 @@ You can create an environment link by updating the **Admin > Environment** setti
 
 To establish an active link between audience insights and engagement insights:
 
-1. Navigate to the **Enviromment admin** page, then go to the **Link environments** tab.
+1. Navigate to the **Environment admin** page, then go to the **Link environments** tab.
 
    ![Setup environment](media/integrate1.png "Setup environment")
 
-2. Select **Setup environments** at the top left or bottom link on the screen.
+1. Select **Setup environments** at the top left or bottom link on the screen.
 
    ![Select audience insights environment](media/integrate2.png "Select audience insights environment")
 
-2. Select an audience insights environment, and then **Next** to finish. Now you can select optional features for the linked environments.
+1. Select an audience insights environment, and then **Next** to finish. Now you can select optional features for the linked environments.
  
 ## Enable audience insights unified profiles attributes and segments
 
-After creating a link between environments, a new option becomes available to select optional features in the linked environments. These features enable unified profile attributes and segments from audience insights to perform interactive analysis on customer data.
+After [linking environments](#create-an-environment-link), you can select optional features for the linked environments. These features enable unified profile attributes and segments from audience insights for interactive analysis on customer data.
 
 To analyze web data in engagement insights: 
 
-1. In the **Enviromment admin** page, change the toggle for **Share data from audience insights with engagement insights** to the enabled position, then select **Next**.
+1. In the **Environment admin** page, change the toggle for **Share data from audience insights with engagement insights** to the enabled position, then select **Next**.
 
    ![Select features](media/integrate4.png "Select features")
 
-2. Select the attributes of the unified profiles that will become dimensions in engagement insights. (Not all attributes are useful dimensions. For example, it’s not likely that you would need “First name” or “Last name” as an attribute for analysis of your website events.)
+1. Select the attributes of the unified profiles that will become dimensions in engagement insights. (Not all attributes are useful dimensions. For example, it’s not likely that you would need “First name” or “Last name” as an attribute for analysis of your website events.)
 
    ![Curate dimensions](media/integrate5.png "Curate dimensions")
 
-3. When you're done selecting attributes, click **Next**.
-4. Add users who can view the audience insights profile dimensions and segments in engagement insights.
+1. When you're done selecting attributes, select **Next**.
+1. Add users who can view the audience insights profile dimensions and segments in engagement insights.
 
    ![Manage access to customer data](media/integrate6.png "Manage access to customer data")
 
   > [!IMPORTANT]
   > If you do not explicitly add users in this step, the data will be hidden from users in engagement insights.
 
-5. Review your selection and click **Finish**.
+5. Review your selection and select **Finish**.
 
    ![Review customer data settings](media/integrate7.png "Review customer data settings")
+
+## Export refined events to audience insights
+
+Once you create a link between environments, you can export refined events from engagement insights to audience insights and ingest them as a new data source. 
+
+For more information, see [Integrate web data from engagement insights with audience insights](../audience-insights/integrate-engagement-insights.md).
 
 <!--
 ## Share engagement insights refined events with audience insights
