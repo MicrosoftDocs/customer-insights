@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Salesforce Marketing Cloud"
 description: "Learn how to configure the connection and export to Salesforce Marketing Cloud."
-ms.date: 06/24/2021
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -18,11 +18,6 @@ Use your customer data in Salesforce Marketing Cloud by exporting them through a
 ## Prerequisites for connection
 
 - Availability of an SFTP host and corresponding admin credentials. [How to setup SFTP locations for Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) 
-
-## Known limitations
-
-- The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server. 
-- Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration. 
 
 ## Set up the connection to Salesforce Marketing Cloud
 

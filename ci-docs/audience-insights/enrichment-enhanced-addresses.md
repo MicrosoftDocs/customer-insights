@@ -1,7 +1,7 @@
 ---
 title: "Address enhancement enrichment"
 description: "Enrich and normalize address information of customer profiles with Microsoft's models."
-ms.date: 04/21/2021
+ms.date: 07/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -53,6 +53,10 @@ We currently support enriching addresses in these countries or regions:
 
 - Australia
 - Canada
+- France
+- Germany
+- Italy
+- Japan
 - United Kingdom
 - United States
 

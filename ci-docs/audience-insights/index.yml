@@ -11,7 +11,7 @@ metadata:
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
-  ms.date: 10/16/2020
+  ms.date: 07/30/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -26,8 +26,8 @@ landingContent:
             url: overview.md
           - text: New and updated features
             url: whats-new-audience-insights.md
-          - text: Community site
-            url: https://go.microsoft.com/fwlink/?linkid=2073991
+          - text: Discover audience insights
+            url: https://dynamics.microsoft.com/ai/customer-insights/audience-insights-capability/
 
   - title: Unify data
     linkLists:

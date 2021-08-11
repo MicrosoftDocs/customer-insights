@@ -1,7 +1,7 @@
 ---
 title: "Create and manage segments"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 07/08/2021
+ms.date: 07/18/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -14,13 +14,14 @@ manager: shellyha
 # Create and manage segments
 
 > [!IMPORTANT]
-> There are several changes getting rolled out to the segment creation experience in early August 2021: 
+> There are several changes getting rolled out to the segment creation experience in September 2021: 
 > - The segment builder will look slightly different with restyled elements and an improved user flow.
 > - New datetime operators and an improved date picker are enabled in the segment builder.
 > - You'll be able to add or remove conditions and rules from segments. 
 > - Nested rules that start with an OR condition will become available. You no longer need an AND condition at the outermost layer.
 > - A side pane to select attributes will be constantly available.
 > - An option to select entity relationship paths.
+> To try the new segment builder, send an email with the subject "Request to enable the new segment builder" to cihelp [at] microsoft.com. Include the name of your orgnization and the ID of you sandbox environment.
 
 Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. 
 
@@ -141,6 +142,6 @@ Quick segments let you build simple segments with a single operator quickly for 
 
 ## Next steps
 
-[Export a segment](export-destinations.md) and explore the [Customer Card](customer-card-add-in.md) and [Connectors](export-power-bi.md) to get insights on the customer level.
+[Export a segment](export-destinations.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

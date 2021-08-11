@@ -55,7 +55,7 @@ The **Filter** menu on the **Customers** page can include a varying number of at
 
 ## Next steps
 
-Go to the **Customers** page to search for customer profiles or use the indexed fields to see a subset of all customer profiles.
+Review the [unified profiles page](customer-profiles.md) to search for profiles or use the indexed fields to see a subset of all unified profiles.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
