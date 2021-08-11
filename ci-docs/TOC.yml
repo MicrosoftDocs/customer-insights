@@ -355,6 +355,8 @@
   items: 
     - name: DSR rights and requests
       href: dsr-rights-requests.md
+    - name: Service limits
+      href: service-limits.md
 
 - name: Get support
   href: https://dynamics.microsoft.com/en-us/support/
