@@ -30,7 +30,7 @@ Audience insights offers the following in-product experiences to delete personal
 - **Manage delete requests for customer data**: Customer data in Customer Insights is ingested from original data sources external to Customer Insights. All GDPR delete requests must be performed in the original data source.
 - **Manage delete requests for Customer Insights user data**: Data for users is created by Customer Insights. All GDPR delete requests must be performed in Customer Insights.
 
-##### Manage delete requests for customer data
+##### Manage requests to delete customer data
 
 A Customer Insights admin can follow these steps to remove customer data that was deleted in the data source:
 
