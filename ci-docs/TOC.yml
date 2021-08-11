@@ -351,5 +351,10 @@
     - name: Service limits
       href: engagement-insights/quotas.md
 
+- name: Service guidelines
+  items: 
+    - name: DSR rights and requests
+      href: dsr-rights-requests.md
+
 - name: Get support
   href: https://dynamics.microsoft.com/en-us/support/
