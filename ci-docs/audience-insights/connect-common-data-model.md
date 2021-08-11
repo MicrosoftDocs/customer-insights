@@ -40,7 +40,7 @@ This article provides information on how to ingest data from a Common Data Model
 
 1. You can choose between using a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Enter the **Container** information and select **Next**.
    > [!div class="mx-imgBorder"]
-   > ![Dialog box to enter new connection details for Azure Data Lake](media/enter-new-storage-details.png)
+   > ![Dialog box to enter new connection details for Azure Data Lake.](media/enter-new-storage-details.png)
    > [!NOTE]
    > You need one of the following roles either to the container or the storage account referred above to be able to connect to and create a data source:
    >  - Storage Blob Data Reader
@@ -53,11 +53,11 @@ This article provides information on how to ingest data from a Common Data Model
 
 1. You'll get a list of available entities in the selected model.json or manifest.json file. You can review and select from the list of available entities and select **Save**. All of the selected entities will be ingested from the new data source.
    > [!div class="mx-imgBorder"]
-   > ![Dialog box showing a list of entities from a model.json file](media/review-entities.png)
+   > ![Dialog box showing a list of entities from a model.json file.](media/review-entities.png)
 
 8. Indicate which data entities you want to enable data profiling and select **Save**. Data profiling enables analytics and other capabilities. You can select the whole entity, which selects all attributes from the entity, or select certain attributes of your choice. By default, no entity is enabled for data profiling.
    > [!div class="mx-imgBorder"]
-   > ![Dialog box showing a data profiling](media/dataprofiling-entities.png)
+   > ![Dialog box showing a data profiling.](media/dataprofiling-entities.png)
 
 9. After saving your selections, the **Data sources** page opens. You should now see the Common Data Model folder connection as a data source.
 
@@ -76,12 +76,12 @@ You can update the access key for the storage account containing the Common Data
 
 4. Optionally, update the **Access key** and select **Next**.
 
-   ![Dialog to edit and update an access key for an existing data source](media/edit-access-key.png)
+   ![Dialog to edit and update an access key for an existing data source.](media/edit-access-key.png)
 
 5. Optionally, you can update from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
    > [!div class="mx-imgBorder"]
 
-   > ![Dialog box to enter connection details for Azure Data Lake to an existing storage account](media/enter-existing-storage-details.png)
+   > ![Dialog box to enter connection details for Azure Data Lake to an existing storage account.](media/enter-existing-storage-details.png)
 
    > [!NOTE]
    > You need one of the following roles either to the container or the storage account referred above to be able to connect to and create a data source:

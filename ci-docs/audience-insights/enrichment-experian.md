@@ -34,7 +34,7 @@ We currently support enriching customer profiles in the United States only.
 1. Select **Enrich my data** on the Experian tile.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian tile](media/experian-tile.png "Experian tile")
+   > ![Experian tile.](media/experian-tile.png "Experian tile")
    > 
 
 1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing Experian from the dropdown list. 

@@ -9,6 +9,7 @@ ms.topic: get-started
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
+ms.custom: intro-internal
 ---
 
 # Predictions overview

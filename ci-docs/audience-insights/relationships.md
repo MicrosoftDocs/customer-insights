@@ -77,7 +77,7 @@ This page offers a set of options for existing and new relationships:
 
 ### Explore the relationship visualizer
 
-The relationship visualizer shows a network diagram of the existing relationships between connected entities and their cardinality.
+The relationship visualizer shows a network diagram of the existing relationships between connected entities and their cardinality. It also visualizes the relationship path.
 
 To customize the view, you can change the position of the boxes by dragging them on the canvas.
 
@@ -87,6 +87,20 @@ Available options:
 - **Export as image**: Save the current view as an image file.
 - **Change to horizontal/vertical layout**: Change the alignment of the entities and relationships.
 - **Edit**: Update properties of custom relationships in the edit pane and save changes.
+
+### Relationship path
+
+The relationship path describes the entities that are connected with relationships between a source entity and a target entity. It's used when creating a segment or a measure that includes other entities than the unified profile entity and there are multiple options to reach the unified profile entity.
+
+The relationship path informs the system over which relationships to access the unified profile entity. Different relationship paths can yield different results.
+
+For example, the entity *eCommerce_eCommercePurchases* has the following relationships to the unified profile *Customer* entity:
+
+- eCommerce_eCommercePurchases > Customer
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer 
+
+The relationship path determines which entities you can use when creating rules for measures or segments. Choosing the option with the longest relationship path will likely yield fewer results because the matching records need to be part of all entities. In this example, a customer has to have purchased goods through e-commerce(eCommerce_eCommercePurchases), at a point of sale(POS_posPurchases), and participate in our loyalty program (loyaltyScheme_loyCustomers). When choosing the first option, you'd likely get more results because customers only need to exist in one additional entity.
 
 ## Manage existing relationships 
 
@@ -100,6 +114,6 @@ Select a relationship and choose one of the following options:
 
 ## Next step
 
-System and custom relationships are used to [create segments](segments.md) based on multiple data sources that are no longer siloed.
+System and custom relationships are used to [create segments](segments.md) and [measures](measures.md) based on multiple data sources that are no longer siloed.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

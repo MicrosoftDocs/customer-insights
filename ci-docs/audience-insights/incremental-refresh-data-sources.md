@@ -39,8 +39,7 @@ Audience insights allows incremental refresh for data sources imported through P
 
 1. On **Incremental refresh settings**, you'll configure the incremental refresh for all entities that you selected when creating the data source.
 
-   > [!div class="mx-imgBorder"]
-   > ![Configure entities in a data source for incremental refresh](media/incremental-refresh-settings.png "Configure entities in a data source for incremental refresh")
+   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="Configure entities in a data source for incremental refresh.":::
 
 1. Select an entity, and provide the following details:
 

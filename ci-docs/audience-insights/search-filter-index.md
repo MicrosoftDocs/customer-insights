@@ -16,7 +16,7 @@ manager: shellyha
 The result of unifying your customer data is a Customer Profile entity that provides a unified view into your total customer base. To quickly [find information on a specific customer or group of customers](customer-profiles.md), you can configure the **Search** and **Filter** capabilities on the **Customers** page. Read on to learn how admins can edit the attributes on the **Search & filter index** page, which are available to users for searching and filtering.
 
 > [!div class="mx-imgBorder"]
-> ![Search filter](media/search-filter.png "Search filter")
+> ![Search filter.](media/search-filter.png "Search filter")
 
 ## Add fields and specify attributes
 
@@ -55,7 +55,7 @@ The **Filter** menu on the **Customers** page can include a varying number of at
 
 ## Next steps
 
-Go to the **Customers** page to search for customer profiles or use the indexed fields to see a subset of all customer profiles.
+Review the [unified profiles page](customer-profiles.md) to search for profiles or use the indexed fields to see a subset of all unified profiles.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

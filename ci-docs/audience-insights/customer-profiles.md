@@ -18,11 +18,11 @@ The **Customers** page shows a combined view of your customers, based on profile
 Customers can be individuals or organizations (preview). Each customer or organization profile is represented by a tile. Select a tile to see additional information on that specific customer or organization. Use the pagination controls at the bottom of the page to see additional records.
 
 > [!div class="mx-imgBorder"] 
-> ![B2C customer profiles](media/profiles-customers.png "B2C customer profiles")
+> ![B2C customer profiles.](media/profiles-customers.png "B2C customer profiles")
 
 Organizations (Preview)
 > [!div class="mx-imgBorder"] 
-> ![B2B customer profiles](media/profile-customers-b2b.png "B2B customer profiles")
+> ![B2B customer profiles.](media/profile-customers-b2b.png "B2B customer profiles")
 
 > [!NOTE]
 > If you can't see the tiles when you select **Customers** in navigation, your administrator needs to [define at least one searchable attribute](search-filter-index.md) on the **Search & filter index**.
@@ -42,7 +42,7 @@ You can filter customers by the Customer Profile entity fields. Similar to searc
 2. Check the boxes next to the attributes you want to filter customers by.
 
    > [!div class="mx-imgBorder"] 
-   > ![Customer profiles](media/profiles-customers3.png "Customer profiles")
+   > ![Customer profiles.](media/profiles-customers3.png "Customer profiles")
 
 3. Remove your filters by selecting **Clear filters** on the **Customers** page.
 
@@ -64,7 +64,7 @@ Select **Back to Customers** to return to the customer search page.
 
 ## Next steps
 
-[Add more data sources](data-sources.md) or [create customer segments](segments.md).
+[Add more data sources](data-sources.md), [enrich unified profiles](enrichment-hub.md), or [create segments](segments.md) to work with unified profiles in other applications.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

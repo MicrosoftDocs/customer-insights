@@ -20,7 +20,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 ## Prerequisites
 
 - The add-in only works with Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
-- For your Dynamics 365 data to map to the audience insights customer profiles they need to be [ingested from the Dynamics 365 app using the Common Data Service connector](connect-power-query.md).
+- For your Dynamics 365 data to map to the audience insights customer profiles they need to be [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md).
 - All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in audience insights to see the data.
 - [Configured search and filter capabilities](search-filter-index.md) in audience insights are required for lookup of data to work.
 - Each add-in control relies on specific data in audience insights:
@@ -45,7 +45,7 @@ It can take some time for the solution to be installed to your environment.
 1. Select the **Display Name** link for the **Dynamics 365 Customer Insights Customer Card Add-in (Preview)** solution.
 
    > [!div class="mx-imgBorder"]
-   > ![Select display name](media/select-display-name.png "Select display name")
+   > ![Select display name.](media/select-display-name.png "Select display name")
 
 1. Select **Sign in** and enter the credentials for the admin account you use to configure Customer Insights.
 
@@ -59,7 +59,7 @@ It can take some time for the solution to be installed to your environment.
    - To map with an account, select the field in the Customer entity that matches the ID of your account entity.
 
    > [!div class="mx-imgBorder"]
-   > ![Contact ID field](media/contact-id-field.png "Contact ID field")
+   > ![Contact ID field.](media/contact-id-field.png "Contact ID field")
 
 1. Select **Save configuration** to save the settings.
 
@@ -78,7 +78,7 @@ It can take some time for the solution to be installed to your environment.
 1. Select the contact form to which you want to add the Customer Card controls.
 
     > [!div class="mx-imgBorder"]
-    > ![Select Contact form](media/contact-active-forms.png "Select Contact form")
+    > ![Select Contact form.](media/contact-active-forms.png "Select Contact form")
 
 1. To add a control, in the form editor, drag any field from the **Field Explorer** to where you want the control to appear.
 
@@ -105,7 +105,7 @@ The Customer Card Add-in doesn't upgrade automatically. To upgrade to the latest
 
 1. Select the **Apply Solution Upgrade** in the action bar.
 
-   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="Upgrade the solution in the Customization area of Dynamics 365 apps":::
+   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="Upgrade the solution in the Customization area of Dynamics 365 apps.":::
 
 1. After starting the upgrade process, you'll see a loading indicator until the upgrade completes. If there's no newer version, the upgrade will show an error message.
 

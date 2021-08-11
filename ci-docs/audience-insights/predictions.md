@@ -26,11 +26,11 @@ Predictions lets you easily create predicted values that can enhance your unders
 
 Before your organization can use the predictions feature, the following prerequisites must be met:
 
-1. Your organization has an instance [set up in the Common Data Service](/ai-builder/build-model#prerequisites) and it's in the same organization as Customer Insights.
+1. Your organization has an instance [set up in Microsoft Dataverse](/ai-builder/build-model#prerequisites) and it's in the same organization as Customer Insights.
 
-2. Your environment is attached to your Common Data Service instance.
+2. Your audience insight environment is attached to your Dataverse instance.
 
-If you're [creating a new environment](manage-environments.md), configure it in the **Create an environment** dialog and select **Advanced**. If you've already created an environment, go to its settings and select **Advanced**. Either way, in the **Use predictions** section, enter the Common Data Service instance URL to which you want to attach your environment.
+If you're [creating a new environment](get-started-paid.md), configure it in the **Create an environment** dialog and select **Advanced**. If you've already created an environment, go to its settings and select **Advanced**. Either way, in the **Use predictions** section, enter the Dataverse instance URL to which you want to attach your environment.
 
 ## Create a prediction in the Customer entity
 
@@ -42,17 +42,17 @@ If you're [creating a new environment](manage-environments.md), configure it in 
 
 4. Find the attribute name you wish to predict values for, then select the **Overview** icon in the **Summary** column.
    > [!div class="mx-imgBorder"]
-   > ![Overview icon](media/intelligence-overviewicon.png "Overview icon")
+   > ![Overview icon.](media/intelligence-overviewicon.png "Overview icon")
 
 5. If there's a high rate of missing values for your attribute, select **Predict missing values** to continue with your prediction.
    > [!div class="mx-imgBorder"]
-   > ![Overview status with predict missing values button shown](media/intelligence-overviewpredictmissingvalues.png "Overview status with predict missing values button shown")
+   > ![Overview status with predict missing values button shown.](media/intelligence-overviewpredictmissingvalues.png "Overview status with predict missing values button shown")
 
 6. Provide a **Display name** and an **Output entity name** for the results of the prediction.
 
 7. A pre-populated list of options will show where you can map the values to a predicted category. In this case, your only category options will be 0 or 1, as they map to the true/false or binary nature of the prediction. In the Category column, map the field values you'd like to be classified as "0" in the final prediction to "0", and the items you'd like to be classified as "1" in the final prediction to "1".
    > [!div class="mx-imgBorder"]
-   > ![Example showing mapped field values to categories](media/intelligence-categorymapping.png "Example showing mapped field values to categories")
+   > ![Example showing mapped field values to categories.](media/intelligence-categorymapping.png "Example showing mapped field values to categories")
 
 8. Select **Done** and the prediction will be processed. The processing will take some time, depending on the size and complexity of data. Results will be available in a new entity based on the **Output entity name** of the prediction you created.
 
@@ -72,7 +72,7 @@ As part of this flow, you'll choose a specific attribute to base your segment on
 
 5. If the segment you created has incomplete data in the source field, you can choose to predict the missing values.
    > [!div class="mx-imgBorder"]
-   > ![Prediction button](media/segments-predictoption.png "Prediction button")
+   > ![Prediction button.](media/segments-predictoption.png "Prediction button")
 
 6. Provide a **Display name** and an **Output entity name** for the results of the prediction.
 
@@ -88,7 +88,7 @@ As part of this flow, you'll choose a specific attribute to base your segment on
 
 4. You'll see a number of data points in the view of your prediction.
    > [!div class="mx-imgBorder"]
-   > ![Predictions page](media/intelligence-predictionsviewpage.png "Predictions page")
+   > ![Predictions page.](media/intelligence-predictionsviewpage.png "Predictions page")
 
    - **Predicted values** shows the mapping you created during the Field value to Category mapping phase. These are the values in your dataset that have been mapped to a specific category.
    -**Top influencers** are the factors within your dataset that were most likely to influence the prediction's confidence of your Field value being mapped to a specific category.
@@ -134,7 +134,7 @@ The next run of your prediction will use the updated model you've created.
 
 ## Troubleshooting
 
-If you can't complete the attach Common Data Service process due to an error, you can try to complete the process manually. There are two known issues that can occur in the attach process:
+If you can't complete the attach Dataverse process due to an error, you can try to complete the process manually. There are two known issues that can occur in the attach process:
 
 - The Customer Card Add-in solution is not installed.
     1. Complete the instructions to [install and configure the solution](customer-card-add-in.md).

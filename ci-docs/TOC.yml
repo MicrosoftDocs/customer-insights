@@ -4,6 +4,9 @@
 - name: Product overview
   href: overview.md
 
+- name: Create a trial
+  href: audience-insights/get-started-trial.md
+
 - name: Access your environment
   href: https://home.ci.ai.dynamics.com/
 
@@ -16,15 +19,11 @@
     - name: Capability overview
       href: audience-insights/overview.md
     
-    - name: Free trial
-      href: https://dynamics.microsoft.com/get-started/?appname=customerinsights
-  
-
     - name: New and updated features
       href: audience-insights/whats-new-audience-insights.md
 
     - name: Create a new environment
-      href: audience-insights/home.md
+      href: audience-insights/get-started-paid.md
 
     - name: Learn modules
       items:
@@ -47,8 +46,8 @@
           href: audience-insights/connect-power-query.md
         - name: Add a Common Data Model folder as a data source
           href: audience-insights/connect-common-data-model.md
-        - name: Add Common Data Service managed data lake
-          href: audience-insights/connect-common-data-service-lake.md
+        - name: Add Dataverse managed data lake
+          href: audience-insights/connect-dataverse-managed-lake.md
         - name: Incremental refresh for data sources
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Real-time data ingestion
@@ -92,11 +91,11 @@
         - name: Enrich with SFTP custom import
           href: audience-insights/enrichment-SFTP-custom-import.md
 
-    - name: Segments and measures
+    - name: Segments
       items:
         - name: Segments overview
           href: audience-insights/segments.md
-        - name: Create segments and customer groups
+        - name: Create segments
           href: audience-insights/segment-builder.md
         - name: Suggested segments based on measures
           href: audience-insights/suggested-segments.md
@@ -294,6 +293,8 @@
       items: 
         - name: Create and modify events
           href: engagement-insights/refined-events.md
+        - name: Recognize web events from previously authenticated visitors
+          href: engagement-insights/unknown-to-known.md
         - name: Export events
           href: engagement-insights/export-events.md
 
@@ -311,7 +312,6 @@
           href: engagement-insights/metrics.md
         - name: View and create segments
           href: engagement-insights/segments.md
-
 
     - name: Journey analytics
       items: 
@@ -351,8 +351,11 @@
         - name: Delete and export personal data
           href: engagement-insights/delete-export-personal-data.md
 
+    - name: Regional availability
+      href: engagement-insights/regional-availability.md
+
     - name: Service limits
       href: engagement-insights/quotas.md
 
-- name: Contact support
-  href: https://admin.powerplatform.microsoft.com/support
+- name: Get support
+  href: https://dynamics.microsoft.com/en-us/support/
