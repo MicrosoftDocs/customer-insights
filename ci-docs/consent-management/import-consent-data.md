@@ -36,7 +36,7 @@ With a newly provisioned consent management capability, the first run experience
 
 ## Data requirements for consent data
 
-Consent data will be mapped to a system-defined schema. The type of consent data you want to import determines the required data fields. 
+Consent data will be mapped to a system-defined schema, the [consent entity](glossary.md#consent-entity). The type of consent data you want to import determines the required data fields. 
 
 ### Subscription consent data
 
