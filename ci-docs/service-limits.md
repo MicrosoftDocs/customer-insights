@@ -27,4 +27,4 @@ Engagement insights is a highly scalable application that can support millions o
 When events exceed the threshold, it can lead to loss of data in reports based on those events. You can [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) to request a  volume increase before you exceed limits. We'll work with you to determine your need for a volume increase and support your request.
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]
