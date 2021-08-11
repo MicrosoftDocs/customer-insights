@@ -41,7 +41,7 @@ A Customer Insights admin can follow these steps to remove customer data that wa
    2. Check the status of the data source under **Status**. A check mark means the refresh was successful. A warning triangle means something went wrong. If a warning triangle is displayed, contact D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
-> ![Handling GDPR delete requests for customer data.](media/gdpr-data-sources.png "Handling GDPR delete requests for customer data")
+> ![Handling GDPR delete requests for customer data.](audience-insights/media/gdpr-data-sources.png "Handling GDPR delete requests for customer data")
 
 ##### Manage delete requests for user data
 
@@ -53,7 +53,7 @@ A Customer Insights admin can follow these steps to delete Customer Insights use
 4. Select **Remove**.
 
 > [!div class="mx-imgBorder"]
-> ![Handling GDPR delete requests foruser data.](media/gdpr-permissions.png "Handling GDPR delete requests for user data")
+> ![Handling GDPR delete requests for user data.](audicene-insights/media/gdpr-permissions.png "Handling GDPR delete requests for user data")
 
 ### Responding to GDPR data subject export requests
 
@@ -104,11 +104,11 @@ To tag an event property as containing personal information, follow these steps:
      
 1. Select **...** and then choose **Edit** to reach the **Update property** dialog.
 
-   ![Edit event.](media/edit-event.png "Edit event")
+   ![Edit event.](engagement-insights/media/edit-event.png "Edit event")
 
 1. In the **Update Property** window, choose **...** in the upper right corner, and then choose the **Contains EUII** box. Choose **Update** to save your changes.
 
-   ![Save your changes.](media/update-property.png "Save your changes")
+   ![Save your changes.](engagement-insights/media/update-property.png "Save your changes")
 
    > [!NOTE]
    > Every time the event schema changes or you create a new event, it's recommended that you evaluate the associated event properties and tag or untag them as containing personal data, if necessary.
@@ -144,4 +144,4 @@ After selecting **Export**, all events of the current team that contain matching
 * Only tag one property per event as containing personal data. Ideally one that only contains a unique identifier.
 * Do not tag properties containing verbose values (for example, an entire request body). Engagement insights capability uses exact string matching when deciding which events to delete or export.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]
