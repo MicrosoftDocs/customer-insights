@@ -383,10 +383,8 @@
       items: 
         - name: Configure system settings
           href: consent-management/system-settings.md
-        - name: Add and remove users
+        - name: Manage users and permissions
           href: consent-management/manage-users.md
-        - name: Assign permissions and user roles
-          href: consent-management/permissions-roles.md
     
     - name: GDPR
       items: 
