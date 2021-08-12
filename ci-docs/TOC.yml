@@ -369,6 +369,7 @@
     - name: Import consent data
       items: 
         - name: Import consent data
+          href: consent-management/import-consent-data.md
         - name: Map imported data to consent entity
           href: consent-management/map-consent-data.md
         - name: Set a refresh schedule
