@@ -1,6 +1,6 @@
 ---
-title: "Export Customer Insights data to Campaign Monitor"
-description: "Learn how to configure the connection and export to Campaign Monitor."
+title: "Export Customer Insights data to Klaviyo"
+description: "Learn how to configure the connection and export to Klaviyo."
 ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -11,38 +11,40 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Campaign Monitor (preview)
+# Export segment lists to Klaviyo(preview)
 
-Export segments of unified customer profiles to Campaign Monitor and use them for marketing activities.
+Export segments of unified customer profiles to Klaviyo and use them for marketing activities.
 
 ## Prerequisites
 
--	You have an [Campaign Monitor account](https://www.campaignmonitor.com/) and corresponding administrator credentials.
+-	You have an [Klaviyo account](https://www.klaviyo.com/) and corresponding administrator credentials.
 -	You have [configured segments](segments.md) in audience insights.
 -	Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- You can export up to 1 million profiles per export to Campaign Monitor.
-- Exporting to Campaign Monitor is limited to segments.
-- Exporting up to 1 million profiles to Campaign Monitor can take up to 20 minutes to complete. 
-- The number of profiles that you can export to Campaign Monitor is dependent and limited on your contract with Campaign Monitor.
+- You can export up to 100'000 profiles per export to Klaviyo.
+- Exporting to Klaviyo Monitor is limited to segments.
+- Exporting up to 1 million profiles to Klaviyo can take up to 20 minutes to complete. 
+- The number of profiles that you can export to Klaviyo is dependent and limited on your contract with Klaviyo.
 
-## Set up connection to Campaign Monitor
+## Set up connection to Klaviyo
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Campaign Monitor** to configure the connection.
+1. Select **Add connection** and choose **Klaviyo** to configure the connection.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
+1. Provide your [Klaviyo API](https://help.klaviyo.com/hc/en-us/articles/115005062267-How-to-Manage-Your-Account-s-API-Keys) key to continue to sign in. 
+
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
-1. Select **Connect** to initialize the connection to Campaign Monitor.
+1. Select **Connect** to initialize the connection to Klaviyo.
 
-1. Select **Authenticate with Campaign Monitor** and provide your admin credentials for Campaign Monitor.
+1. Select **Authenticate with Klaviyo** and provide your admin credentials for Klaviyo.
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
@@ -56,12 +58,11 @@ You can configure this export if you have access to a connection of this type. F
 
 1. To create a new export, select **Add destination**.
 
-1. In the **Connection for export** field, choose a connection from the Campaign Monitor section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the Klaviyo section. If you don't see this section name, there are no connections of this type available to you.
 
-1. Enter your [**Campaign Monitor List ID**](https://www.campaignmonitor.com/api/getting-started/#your-list-id).    
-   [Generate the API key](https://www.campaignmonitor.com/api/getting-started/) from **Account Settings** in Campaign Monitor first to view the API list ID.  
+1. Enter your [**Klaviyo List ID**](https://help.klaviyo.com/hc/en-us/articles/115005078647-How-to-Find-a-List-ID).     
 
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Campaign Monitor.
+3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Klaviyo.
 
 1. Select **Save**.
 
@@ -73,6 +74,6 @@ You can also [export data on demand](export-destinations.md#run-exports-on-deman
 
 ## Data privacy and compliance
 
-When you enable Dynamics 365 Customer Insights to transmit data to Campaign Monitor, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Campaign Monitor meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+When you enable Dynamics 365 Customer Insights to transmit data to Klaviyo, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Klaviyo meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 
 Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
