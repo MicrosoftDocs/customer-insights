@@ -1,6 +1,6 @@
 ---
 title: Use demographic dimensions for splitting behavioral data (curated dimensions)
-description: Use unified profile curated dimensions to enable audience insights customer profile properties in interactive analyses of behavioral data.
+description: Use unified profile curated dimensions to enable audience insights customer profile properties.
 ms.date: 07/27/2021
 ms.service: customer-insights
 ms.topic: conceptual
@@ -14,7 +14,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Unified profile demographic dimensions allows engagement insights users to access audience insights profile properties for use in interactive analyses of behavioral data. This includes data captured by engagement insights on a customer’s website or mobile app.
+Unified profile demographic dimensions allow engagement insights users to access audience insights profile properties. You can then use these properties in interactive analyses of behavioral data, including data captured by engagement insights on a customer’s website or mobile app.
 
 >[!NOTE]
 > Engagement insights includes out-of-the-box dimensions for event properties. For more information, see [View and create dimensions](dimensions.md).
