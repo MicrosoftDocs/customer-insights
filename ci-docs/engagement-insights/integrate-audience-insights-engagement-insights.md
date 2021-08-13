@@ -36,13 +36,13 @@ You can create an environment link by updating the **Admin > Environment** setti
 
 To establish an active link between audience insights and engagement insights:
 
-1. Navigate to the **Environment admin** page, then go to the **Link environments** tab.
+1. Navigate to the **Environment admin** page, then select the **Link environments** tab.
 
-   ![Setup environment](media/integrate1.png "Setup environment")
+    :::image type="content" source="media/integrate1.png" alt-text="Setup environment":::
 
 1. Select **Setup environments** at the top left or bottom link on the screen.
 
-   ![Select audience insights environment](media/integrate2.png "Select audience insights environment")
+     :::image type="content" source="media/integrate2.png" alt-text="Select audience insights environment":::
 
 1. Select an audience insights environment, and then **Next** to finish. Now you can select optional features for the linked environments.
  
@@ -54,23 +54,26 @@ To analyze web data in engagement insights:
 
 1. In the **Environment admin** page, change the toggle for **Share data from audience insights with engagement insights** to the enabled position, then select **Next**.
 
-   ![Select features](media/integrate4.png "Select features")
+    :::image type="content" source="media/integrate4.png" alt-text="Select features":::
 
 1. Select the attributes of the unified profiles that will become dimensions in engagement insights. (Not all attributes are useful dimensions. For example, it’s not likely that you would need “First name” or “Last name” as an attribute for analysis of your website events.)
 
-   ![Curate dimensions](media/integrate5.png "Curate dimensions")
+    :::image type="content" source="media/integrate5.png" alt-text="Curate dimensions":::
+
+   >[!NOTE]
+   > All audience insights profile attributes representing identifiers (such as ID, alternate ID) are filtered out of the available attributes and become dimensions in engagement insights.
 
 1. When you're done selecting attributes, select **Next**.
 1. Add users who can view the audience insights profile dimensions and segments in engagement insights.
 
-   ![Manage access to customer data](media/integrate6.png "Manage access to customer data")
+    :::image type="content" source="media/integrate6.png" alt-text="Manage access to customer data":::
 
   > [!IMPORTANT]
   > If you do not explicitly add users in this step, the data will be hidden from users in engagement insights.
 
 5. Review your selection and select **Finish**.
 
-   ![Review customer data settings](media/integrate7.png "Review customer data settings")
+    :::image type="content" source="media/integrate7.png" alt-text="Review customer data settings":::
 
 ## Export refined events to audience insights
 
@@ -98,7 +101,7 @@ To share refined events:
 1. From the engagement insights menu, select **Data** and then **Events** tab.
 2. From the **Action** menu, select **Share as activity**.
 
-   ![Data shared events settings](media/integrate8.png "Data shared events settings")
+    :::image type="content" source="media/integrate8.png" alt-text="Data shared events settings":::
 
 3. You can view and stop actively shared events in the **Export and Sharing** tab.
 4. -- per Michael K, we need a mock here (Mukesh needs to update to reflect what happens in AUI once a user shares a refined event (i.e. no longer AUI, data wrangler needs to go discover data in the storage, the shared event is available as a DS and entity, correct?)
@@ -117,7 +120,7 @@ Next, you can relate event data from engagement insights as unified activities i
 
 After unifying the data, you can configure the activity for the customer profile. For more information, see [Customer activities](../audience-insights/activities.md).
 
-![Activities page with expanded Edit activity pane](media/web-event-activity.png "Activities page with expanded Edit activity pane")
+:::image type="content" source="media/web-event-activity.png" alt-text="Activities page with expanded Edit activity pane":::
 
 Next configure the new activity with mapping elements: 
 
