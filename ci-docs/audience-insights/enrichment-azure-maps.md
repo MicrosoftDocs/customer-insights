@@ -47,6 +47,8 @@ To configure Azure Maps enrichments, the following prerequisites must be met:
 
 1. Select **Next** to complete the field mapping.
 
+1. The **Advanced Settings** are provided to give maximum flexibility to handle advanced use cases. In most cases, the default values apply. Type of addresses: The default behavior is that the enrichment will return the best address match even if it is incomplete. If you want to only have complete addresses returned, i.e., addresses that are specified down to the house number, then you can deselect all the checkboxes except **Point Addresses**. Language: The default behavior is that the addresses will be returned in the detected language for the region that the address is determined to belong to. Some use cases, e.g., visualization and reporting, require standardized address language, which can be obtained by selecting the language from the drop-down. 
+
 1. Provide a name for the enrichment. 
 
 1. Select **Save enrichment** after reviewing your choices.
