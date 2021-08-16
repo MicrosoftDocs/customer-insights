@@ -50,7 +50,7 @@ The workspace is where you can view user activity in real time, and store and ma
 	
 ## Step 4: Export data to other channels
 
-You can create *refined events* (a virtual view) of your web analytics data. Then filter and export the data to Azure Data Lake Storage. You can ingest the exported data as a data source into [audience insights](dynamics365/customer-insights/audience-insights/integrate-engagement-insights.md).
+You can create *refined events* (a virtual view) of your web analytics data. Then filter and export the data to Azure Data Lake Storage. You can ingest the exported data as a data source into [audience insights](/dynamics365/customer-insights/audience-insights/integrate-engagement-insights.md).
 
 1. [Create refined events](refined-events.md) for export.
 
