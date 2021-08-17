@@ -48,8 +48,8 @@ To configure Azure Maps enrichments, the following prerequisites must be met:
 1. Select **Next** to complete the field mapping.
 
 1. The **Advanced Settings** are provided to give maximum flexibility to handle advanced use cases. In most cases, the default values are adequate. 
-   1. Type of addresses: The default behavior is that the enrichment will return the best address match even if it is incomplete. If you want to only have complete addresses returned, i.e., addresses that are specified down to the house number, then you can deselect all the checkboxes except **Point Addresses**. 
-   1. Language: The default behavior is that the addresses will be returned in the detected language for the region that the address is determined to belong to. Some use cases, e.g., visualization and reporting, require standardized address language, which can be obtained by selecting the language from the drop-down. For example, selecting *English* will return *Copenhagen, Denmark* instead of *København, Danmark*.
+   1. Type of addresses: The default behavior is that the enrichment will return the best address match even if it is incomplete. If you want to only have complete addresses returned, for example, addresses that are specified down to the house number, you can deselect all the checkboxes except **Point Addresses**. 
+   1. Language: The default behavior is that the addresses will be returned in the detected language for the region that the address is determined to belong to. Some use cases, visualization and reporting, require standardized address language, which can be obtained by selecting the language from the drop-down. For example, selecting *English* will return *Copenhagen, Denmark* instead of *København, Danmark*.
 
 1. Provide a name for the enrichment. 
 
@@ -85,7 +85,7 @@ Build on top of your enriched customer data. Create [segments](segments.md), [me
 
 ## Data privacy and compliance
 
-When you enable Dynamics 365 Customer Insights to transmit data to Azure Maps, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Azure Maps meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+When you enable Dynamics 365 Customer Insights to transmit data to Azure Maps, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Azure Maps meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights Administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
