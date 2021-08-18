@@ -22,7 +22,10 @@ Engagement insights environment in which you have audience insights segments dat
 
 ## Create audience insights segments 
 
-You can use audience insights segments for use in engagement insights out-of-the-box or custom reports. For more information, see [Out-of-box profile reports](profile-reports.md) or [Create and edit custom reports](custom-reports.md).
+> [!IMPORTANT]
+> For audience insights segments to show up in engagement insights, you must first [run merge and downstream processes](../audience-insights/merge-entities.md). Downstream processes are important because they generate a unique table that prepares audience insights segments to be shared with engagement insights. (If a system refresh is scheduled, this automatically includes downstream processes.)
+
+You can use audience insights segments in engagement insights out-of-the-box or custom reports. For more information, see [Out-of-box profile reports](profile-reports.md) or [Create and edit custom reports](custom-reports.md).
 
 To use audience insights segments in engagement insights reports:
 
