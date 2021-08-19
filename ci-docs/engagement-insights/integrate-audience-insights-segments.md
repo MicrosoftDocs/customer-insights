@@ -31,26 +31,26 @@ To use audience insights segments in engagement insights reports:
 
 1. From your **Workspace** page, select **Data**, then the **Segments** tab.
 
-    :::image type="content" source="media/segment-web-reports1.png" alt-text="Choose segments":::
+    :::image type="content" source="media/integrate-audience-insights-segments1.png" alt-text="Choose segments":::
 
   >[!NOTE]
   > Selecting an audience insights segment takes you to audience insights, so you can find out how that segment was created, in terms of the rules and logic. For more information about audience insights segments, see [Segments overview](../audience-insights/segments.md).
 
 2. Select an out-of-the-box report or [create a custom report](custom-reports.md), then select **Add condition**. (For this example, we chose the **Page views** report.)
 
-    :::image type="content" source="media/segment-web-reports2.png" alt-text="Add condition":::
+    :::image type="content" source="media/integrate-audience-insights-segments2.png" alt-text="Add condition":::
 
 3. Select **Filter by segment**, then click the dropdown list and select **Demographic**.
 
-    :::image type="content" source="media/segment-web-reports3.png" alt-text="Select demographic":::
+    :::image type="content" source="media/integrate-audience-insights-segments3.png" alt-text="Select demographic":::
 
 4. Select **Segment name** in the dropdown list, then choose an audience insights segment.
 
-    :::image type="content" source="media/segment-web-reports4.png" alt-text="Choose segment":::
+    :::image type="content" source="media/integrate-audience-insights-segments4.png" alt-text="Choose segment":::
 
 5. You can apply one or more segments, including behavioral (engagement insights) and demographic (audience insights) segments. 
 
-    :::image type="content" source="media/segment-web-reports6.png" alt-text="USA customers example":::
+    :::image type="content" source="media/integrate-audience-insights-segments6.png" alt-text="USA customers example":::
 
 In the above example, the *USA customers* and the *Homepage* segments are shown as restricting the **Page views** report to display only those two segments. 
 

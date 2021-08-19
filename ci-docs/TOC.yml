@@ -360,7 +360,7 @@
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
 
     - name: Use audience insights segments in engagement insights reports
-      href: engagement-insights/segment-web-reports.md
+      href: engagement-insights/integrate-audience-insights-segments.md
 
     - name: Use demographic dimensions for splitting behavioral data
       href: engagement-insights/curate-dimensions.md
