@@ -372,8 +372,8 @@
           href: consent-management/import-consent-data.md
         - name: Map imported data to consent entity
           href: consent-management/map-consent-data.md
-        - name: Set a refresh schedule
-          href: consent-management/refresh-schedule.md
+        - name: Manually refresh consent data
+          href: consent-management/refresh-consent-data.md
 
     - name: Manage consent data
       items: 
