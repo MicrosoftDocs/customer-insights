@@ -379,6 +379,7 @@
       items: 
         - name: Map consent to standard actions
           href: consent-management/standard-actions.md
+        - name: Configure rules for audience insights segments
         
     - name: Admin guide
       items: 
@@ -386,6 +387,8 @@
           href: consent-management/system-settings.md
         - name: Manage users and permissions
           href: consent-management/manage-users.md
+        - name: Activate global consent
+          href: audience-insights/activate-consent.md
     
     - name: GDPR
       items: 
