@@ -10,5 +10,13 @@ Integrating the unified consent data with other capabilities like audience insig
 
 ## Main personas
 
-TO DO: Smith to list key user personas.
+- Data analysts / admins:
+    - Integrate external consent data sources that will be mapped with the canonical consent data model.
+    - Define how customers should be included from data usage based on their preferences.
+    - Select data use purposes or subscriptions to have the consent rules applied to by default.
+    - Link customer profile with consent data to enforce default consent rules on segments
+    - Enable override for default consent rules for individual segment.
+- Business analysts:
+    - Request default consent rule override for individual segment and apply local consent rules.
+
 
