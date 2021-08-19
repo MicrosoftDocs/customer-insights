@@ -379,7 +379,8 @@
       items: 
         - name: Map consent to standard actions
           href: consent-management/standard-actions.md
-        - name: Configure rules for audience insights segments
+        - name: Manage default consent rules in audience insights segments
+          href: audience-insights/segments.md#disable-or-change-default-consent-rules
         
     - name: Admin guide
       items: 
