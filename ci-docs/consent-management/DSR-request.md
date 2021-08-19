@@ -1,5 +1,6 @@
-# GDPR  - To do 
+# Data subject rights request under GDPR
 
-Smith to share content that is vetted with CELA. 
+The consent management capability doesn't collect user data directly. It only imports and processes consent data that is provided by users in other applications.
 
-Should cover how admins in Verity can respond to a DSR of a user who gave consent. Inform user about the consent dat a they have about them and how to delete it, if necessary. Likely similar to AUI flow, where deletion must happen on data source. The deleted records will be removed with the next refresh of consent data and subsequently in AUI (and other integrations) too. 
+To remove consent data about specific users, the data has to be removed in the data sources tha gets imported to the consent management capability. After refreshing the data source, the removed data will be deleted in the Consent Center too. Applications that use the consent entity to build on existing consent data will also delete data that was removed on the data source after a scheduled refresh. We recommend to refresh data sources quickly after responding to a data subject request to ensure the user's data is removed from all subsequent processes and applications.
+
