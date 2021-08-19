@@ -122,6 +122,8 @@ After running the enrichment process, go to **My enrichments** to review the tot
 
 Review the enriched data by selecting **View enriched data** in the chart. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** entity. Data for interests is in the **InterestAffinityFromMicrosoft** entity. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
 
+You will see a chart with a history of the number of enriched customers over time as well as a preview of the enriched entity. Clicking show more in the top right hand corner of the preview tile will take you to the enriched entity.
+
 ## See enrichment data on the customer card
 
 Brand and interest affinities can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find charts for the brands or interests that people in that customer's demographic profile have affinity for.
