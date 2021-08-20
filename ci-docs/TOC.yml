@@ -353,5 +353,17 @@
     - name: Service limits
       href: engagement-insights/quotas.md
 
+- name: Integrate audience and engagement insights
+  items:
+
+    - name: Link audience insights and engagement insights
+      href: engagement-insights/integrate-audience-insights-engagement-insights.md
+
+    - name: Use audience insights segments in engagement insights reports
+      href: engagement-insights/integrate-audience-insights-segments.md
+
+    - name: Use demographic dimensions for splitting behavioral data
+      href: engagement-insights/curate-dimensions.md
+
 - name: Get support
   href: https://dynamics.microsoft.com/en-us/support/
