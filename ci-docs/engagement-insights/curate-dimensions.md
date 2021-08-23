@@ -14,33 +14,31 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Unified profile demographic dimensions allow engagement insights users to access audience insights profile properties. You can then use these properties in interactive analyses of behavioral data, including data captured by engagement insights on a customer’s website or mobile app.
+By using unified profile demographic dimensions, engagement insights users can access audience insights profile properties. You can then use these properties in interactive analyses of behavioral data, including data captured by engagement insights on your<!--note from editor: Edit okay? I assume that the audience is the customer here?--> website or mobile app.
 
 >[!NOTE]
-> Engagement insights includes out-of-the-box dimensions for event properties. For more information, see [View and create dimensions](dimensions.md).
+> Engagement insights includes out-of-the-box dimensions for event properties. More information: [View and create dimensions](dimensions.md)
 
-## Prerequisites
+## Prerequisite
 
-Engagement insights environment in which you have customer profile data linked to the audience insights environment where the customer profiles are created. For more information, see [Create a link between audience insights and engagement insights](integrate-audience-insights-engagement-insights.md).
+- An engagement insights environment in which you have customer profile data linked to the audience insights environment where the customer profiles are created. More information: [Create a link between audience insights and engagement insights](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> Once you create a link between the audience insights and engagement insights environment, refer to [Enable audience insights unified profiles attributes and segments](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments) if you only want data specific to customer profile properties, which can be useful as dimensions in engagement insights.
+> After you create a link between the audience insights and engagement insights environments, you might only want data specific to customer profile properties, which can be useful as dimensions in engagement insights. For more information, go to [Enable audience insights unified profiles attributes and segments](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).<!--note from editor: Suggested. -->
 
 ## Create a new custom report
 
-To create a new custom report in engagement insights:
+1. On the left pane, select **Custom** > **New report**, and then select the metric you want. (For this example, we chose **Page views by Hour**.)<!--note from editor: Edit okay? I wasn't sure where the metric got selected.-->
 
-1. Select a desired metric. (For this example, we chose Custom > New report.)
+    :::image type="content" source="media/curated-dimensions1.png" alt-text="Select a metric.":::
 
-    :::image type="content" source="media/curated-dimensions1.png" alt-text="Select a metric":::
+2. In the Visualization editor, select **Dimensions**, and then select **Demographic** in the **Dimension Type** dropdown menu.<!--note from editor: For the reasoning here, please see https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=28752 under "Don't use a comma."-->
 
-2. In the Visualization editor, select **Dimensions**, then **demographic** in the Dimension type dropdown box.
+    :::image type="content" source="media/curated-dimensions2.png" alt-text="Select demographic.":::
 
-    :::image type="content" source="media/curated-dimensions2.png" alt-text="Select demographic":::
+3. Select a **Signal.Customer.*xxx*** dimension. (This example shows Signal.Customer.Country.)
 
-3. Select a **signal.customer.xxx** dimension. (This example shows *signal.customer.country*.)
-
-    :::image type="content" source="media/curated-dimensions3.png" alt-text="Select a dimension":::
+    :::image type="content" source="media/curated-dimensions3.png" alt-text="Select a dimension.":::
   
 ## Limitations
 
