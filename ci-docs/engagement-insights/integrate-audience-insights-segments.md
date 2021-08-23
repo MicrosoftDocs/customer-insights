@@ -1,6 +1,6 @@
 ---
-title: Use audience insights segments in engagement insights reports
-description: Use audience insights segments in interactive analyses of behavioral data captured by engagement insights on a customer's website.
+title: Use audience insights segments to filter engagement insights reports
+description: Use audience insights segments in interactive analyses of behavioral data captured by engagement insights on a customer’s website.
 ms.date: 07/27/2021
 ms.service: customer-insights
 ms.topic: conceptual
@@ -10,7 +10,7 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Use audience insights segments in engagement insights reports
+# Use audience insights segments to filter engagement insights reports
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 <!--note from editor: Via MWSG, we want to avoid "enables" and "lets."-->

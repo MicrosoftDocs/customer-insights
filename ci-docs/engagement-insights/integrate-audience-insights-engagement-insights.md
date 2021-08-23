@@ -24,7 +24,7 @@ Use unified profiles and segments from audience insights for more analysis optio
 
 - You need administrator permissions for both the engagement insights and audience insights environments.
 
-- Linked environments must be the same type (production or sandbox) and have the same geographical region.
+- Linked environments must be in the same geographical region.
 
 > [!NOTE]
 > - If your audience insights subscription is a trial, which uses an audience insights internally managed data lake, contact [pirequest@microsoft.com](mailto:pirequest@microsoft.com) for assistance. 
