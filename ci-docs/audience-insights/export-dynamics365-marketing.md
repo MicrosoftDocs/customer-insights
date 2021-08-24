@@ -13,6 +13,9 @@ manager: shellyha
 
 # Use segments in Dynamics 365 Marketing (preview)
 
+ > [!IMPORTANT]
+  > If you are using the new capabilities of Dynamics 365 Marketing regarding real time customer journey orchestration, then you do not need to create a standard export to Dynamics 365 Marketing through audience insights, as the contacts and segments available in audience insights are also available directly in D365 Marketing. Before you delete any existing exports, please refer to the extensive documentation on [how to connect audience insights and Dynamics 365 Marketing customer journey orchestration] (https://docs.microsoft.com/en-us/dynamics365/marketing/real-time-marketing-ci-profile)
+
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Use [segments](segments.md) to generate campaigns and contact specific groups of customers with Dynamics 365 Marketing. For more information, see [Use segments from Dynamics 365 Customer Insights with Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
