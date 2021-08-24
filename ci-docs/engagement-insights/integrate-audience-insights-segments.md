@@ -13,8 +13,8 @@ manager: shellyha
 # Use audience insights segments to filter engagement insights reports
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-<!--note from editor: Via MWSG, we want to avoid "enables" and "lets."-->
-With engagement insights, you can use audience insights segments in interactive analyses of behavioral data captured by engagement insights on your websites.<!--note from editor: I assume that the audience is the customer here?-->
+
+With engagement insights, you can use audience insights segments in interactive analyses of behavioral data captured by engagement insights on your websites.
 
 ## Prerequisite
 
@@ -25,7 +25,7 @@ With engagement insights, you can use audience insights segments in interactive 
 > [!IMPORTANT]
 > For audience insights segments to show up in engagement insights, you must first [run merge and downstream processes](../audience-insights/merge-entities.md). Downstream processes are important because they generate a unique table that prepares audience insights segments to be shared with engagement insights. (If a system refresh is scheduled, it will automatically include downstream processes.)
 
-You can use audience insights segments in engagement insights out-of-the-box reports or custom reports you've created.<!--note from editor: Suggested.--> For more information, go to [Out-of-box profile reports](profile-reports.md) and [Create and edit custom reports](custom-reports.md).
+You can use audience insights segments in engagement insights out-of-the-box reports or custom reports you've created. For more information, go to [Out-of-box profile reports](profile-reports.md) and [Create and edit custom reports](custom-reports.md).
 
 **To use audience insights segments in engagement insights reports**
 

@@ -14,7 +14,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-By using unified profile demographic dimensions, engagement insights users can access audience insights profile properties. You can then use these properties in interactive analyses of behavioral data, including data captured by engagement insights on your<!--note from editor: Edit okay? I assume that the audience is the customer here?--> website or mobile app.
+By using unified profile demographic dimensions, engagement insights users can access audience insights profile properties. You can then use these properties in interactive analyses of behavioral data, including data captured by engagement insights on your website or mobile app.
 
 >[!NOTE]
 > Engagement insights includes out-of-the-box dimensions for event properties. More information: [View and create dimensions](dimensions.md)
@@ -28,11 +28,11 @@ By using unified profile demographic dimensions, engagement insights users can a
 
 ## Create a new custom report
 
-1. On the left pane, select **Custom** > **New report**, and then select the metric you want. (For this example, we chose **Page views by Hour**.)<!--note from editor: Edit okay? I wasn't sure where the metric got selected.-->
+1. On the left pane, select **Custom** > **New report**, and then select the metric you want. (For this example, we chose **Page views by Hour**.)
 
     :::image type="content" source="media/curated-dimensions1.png" alt-text="Select a metric.":::
 
-2. In the Visualization editor, select **Dimensions**, and then select **Demographic** in the **Dimension Type** dropdown menu.<!--note from editor: For the reasoning here, please see https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=28752 under "Don't use a comma."-->
+2. In the Visualization editor, select **Dimensions**, and then select **Demographic** in the **Dimension Type** dropdown menu.
 
     :::image type="content" source="media/curated-dimensions2.png" alt-text="Select demographic.":::
 

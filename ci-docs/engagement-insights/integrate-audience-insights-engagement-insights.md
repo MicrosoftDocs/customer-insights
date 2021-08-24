@@ -14,7 +14,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-The integration between engagement insights and audience insights links environments from both capabilities, and enables data to be shared bidirectionally between them.<!--note from editor: Suggested.-->
+The integration between engagement insights and audience insights links environments from both capabilities, and enables data to be shared bidirectionally between them.
 
 Use unified profiles and segments from audience insights for more analysis options in engagement insights. Export events that have a high business value from engagement insights. Use these events to add data to unified profiles in audience insights.
 
@@ -32,15 +32,15 @@ Use unified profiles and segments from audience insights for more analysis optio
 
 ## Create an environment link
 
-You can create an environment link by updating the **Admin** > **Environment** settings in engagement insights.<!--note from editor: Let me know if you'd like to talk about procedure headings!-->
-<!--markdownlint-disable MD036-->
+You can create an environment link by updating the **Admin** > **Environment** settings in engagement insights.
+
 **To establish an active link between audience insights and engagement insights**
 
 1. On the **Environment admin** page, select the **Link environments** tab.
 
     :::image type="content" source="media/integrate1.png" alt-text="Set up an environment.":::
 
-1. Select **Setup environments** in the upper-left corner or at the bottom of the screen.<!--note from editor: Just FYI, it's okay (preferable, even) to describe just one place for the user to click - our procedures don't have to cover every possible way to perform a step.-->
+1. Select **Setup environments** in the upper-left corner or at the bottom of the screen.
 
      :::image type="content" source="media/integrate2.png" alt-text="Select an audience insights environment.":::
 
@@ -48,20 +48,20 @@ You can create an environment link by updating the **Admin** > **Environment** s
  
 ## Enable audience insights unified profiles attributes and segments
 
-After linking environments,<!--note from editor: You don't need a link to the section immediately preceding this one. If these were long sections separated by pages' worth of text, the link would make sense (and in such a case I'd suggest using the phrase "earlier in this topic," so the reader knows that they'll be going to a place in the present article).-->, you can select optional features for the linked environments. These features enable unified profile attributes and segments from audience insights for interactive analysis on customer data.
+After linking environments, you can select optional features for the linked environments. These features enable unified profile attributes and segments from audience insights for interactive analysis on customer data.
 
 **To analyze web data in engagement insights**
 
-1. On the **Environment admin** page, turn on the **Share data from audience insights with engagement insights** toggle, and then select **Next**.<!--note from editor: Via MWSG. -->
+1. On the **Environment admin** page, turn on the **Share data from audience insights with engagement insights** toggle, and then select **Next**.
 
     :::image type="content" source="media/integrate4.png" alt-text="Select features.":::
 
-1. Select the attributes of the unified profiles that will become dimensions in engagement insights. (Not all attributes are useful dimensions. For example, it's not likely that you'd need **First name** or **Last name**<!--note from editor: MWSG likes attributes to be bold.--> as an attribute for analysis of your website events.)
+1. Select the attributes of the unified profiles that will become dimensions in engagement insights. (Not all attributes are useful dimensions. For example, it's not likely that you'd need **First name** or **Last name** as an attribute for analysis of your website events.)
 
     :::image type="content" source="media/integrate5.png" alt-text="Curate dimensions.":::
 
    >[!NOTE]
-   > All audience insights profile attributes that represent identifiers (such as **ID** and **alternate ID**<!--note from editor: Edit okay, or is this one attribute **ID, alternate ID**?-->) are filtered out of the available attributes and become dimensions in engagement insights.
+   > All audience insights profile attributes that represent identifiers (such as **ID** and **alternate ID**) are filtered out of the available attributes and become dimensions in engagement insights.
 
 1. When you're done selecting attributes, select **Next**.
 1. Add users who can view the audience insights profile dimensions and segments in engagement insights.
