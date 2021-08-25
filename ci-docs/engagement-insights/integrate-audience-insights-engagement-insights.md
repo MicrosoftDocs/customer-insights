@@ -28,7 +28,7 @@ Use unified profiles and segments from audience insights for more analysis optio
 
 > [!NOTE]
 > - If your audience insights subscription is a trial, which uses an audience insights internally managed data lake, contact [pirequest@microsoft.com](mailto:pirequest@microsoft.com) for assistance. 
-> - If your audience insights environment uses your own Azure Data Lake Storage to store data, you need to add an engagement insights Azure service principal to your storage account. For details, go to [Connect to an Azure Data Lake Storage account with an Azure service principal for audience insights](../audience-insights/connect-service-principal.md). 
+> - If your audience insights environment uses your own Azure Data Lake Storage to store data, you need to add an engagement insights Azure service principal to your storage account. For details, go to [Connect to an Azure Data Lake Storage account with an Azure service principal for audience insights](../audience-insights/connect-service-principal.md). Also, your audience insights environment should have an associated [Dataverse environment](../audience-insights/get-started-paid.md). 
 
 ## Create an environment link
 
