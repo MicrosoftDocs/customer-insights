@@ -4,7 +4,7 @@ description: An overview of help resources to get started quickly.
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 07/26/2021
+ms.date: 08/26/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -60,7 +60,7 @@ Now that your data is complete and contains a wide range of information about yo
 
 1. Browse a growing catalog of [export options](export-destinations.md) where you can use the customer data. For example, to manage promotions or to reach out with digital marketing.
 
-1. Take a look at the integration options, for example, with the direct connection to the engagement insights capability of Customer Insights. Or to other Dynamics 365 apps with the [Customer Card Add-in](customer-card-add-in.md).  
+1. Take a look at the integration options, for example, with the [direct connection to engagement insights](../engagement-insights/integrate-audience-insights-engagement-insights.md), a capability of Customer Insights. Or to other Dynamics 365 apps with the [Customer Card Add-in](customer-card-add-in.md).  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
