@@ -12,7 +12,7 @@ metadata:
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
-  ms.date: 06/18/2021
+  ms.date: 07/30/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -27,8 +27,8 @@ landingContent:
             url: overview.md
           - text: Terms and concepts
             url: glossary.md
-          - text: Terms of service
-            url: terms-of-service.md
+          - text: Discover engagement insights
+            url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
 
   - title: Onboarding
     linkLists:

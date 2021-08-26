@@ -21,6 +21,24 @@ manager: shellyha
 > - Nested rules that start with an OR condition will become available. You no longer need an AND condition at the outermost layer.
 > - A side pane to select attributes will be constantly available.
 > - An option to select entity relationship paths.
+> To try the new segment builder, send an email with the subject "Request to enable the new segment builder" to cihelp [at] microsoft.com. Include the name of your organization and the ID of you sandbox environment.
+> :::image type="content" source="media/segment-builder-overview.png" alt-text="Elements of the segment builder." lightbox="media/segment-builder-overview.png":::
+>
+> 1 - Organize your segment with rules and subrules. Each rule or subrule consists of conditions. Combine the conditions with logical operators
+>
+> 2 - Choose the [relationship path](relationships.md) between entities that applies to a rule. The relationship path determines which attributes can be used in a condition.
+>
+> 3 - Manage rules and subrules. Change the position of a rule or delete it.
+>
+> 4 - Add conditions and build the right level of nesting using subrules.
+>
+> 5 - Apply set operations to connected rules.
+>
+> 6 - Use the attribute pane to add available entity attributes or create conditions based on attributes. The pane shows the list of entities and attributes, based on the selected relationship path, that are available for the selected rule.
+>
+> 7 - Add conditions based on attributes to existing rules and subrules or add it to a new rule.
+>
+> 8 - Undo and redo changes while building the segment.
 
 Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. 
 
@@ -141,6 +159,6 @@ Quick segments let you build simple segments with a single operator quickly for 
 
 ## Next steps
 
-[Export a segment](export-destinations.md) and explore the [Customer Card](customer-card-add-in.md) and [Connectors](export-power-bi.md) to get insights on the customer level.
+[Export a segment](export-destinations.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
