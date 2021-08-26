@@ -34,33 +34,33 @@ The first time you sign in to audience insights, you can configure settings and 
 
 Unified profiles are at the core of most scenarios to get intelligent insights and take action. Bring in data from various sources and run the data unification process to consolidate it in unified profiles. Specify relationships between the ingested entities use enrichment features to add information to the profiles. 
 
-1. Ingest data by creating data sources based on Power Query connectors, a Common Data Model folder in your own Azure Data Lake Storage, or from Microsoft Dataverse. 
+1. Ingest data by creating data sources based on [Power Query connectors](connect-power-query.md), a [Common Data Model folder in your own Azure Data Lake Storage](connect-common-data-model.md), or from [Microsoft Dataverse](connect-common-data-service-lake.md). 
 
-1. Run the data unification process by going through eh map, match, and merge phases.
+1. Run the [data unification process](data-unification.md) by going through the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
 
-1. Get familiar with the entities the system creates and create additional relationships between the ingested entities.
+1. Get familiar with the [entities the system creates](entities.md) and create additional [relationships between the ingested entities](relationships.md).
 	
 ## Step 4: Enhance unified profiles with predictions, activities, and measures
 
 With unified profiles set up, you can enhance your data and further increase the information they provide.
 
-1. Choose from a growing library of enrichment providers to enrich your customer data.
+1. Choose from a growing library of enrichment providers to [enrich your customer data](enrichment-hub.md).
 
-1. Use out-of-box models to predict churn likelihood or expected revenues.
+1. Use [out-of-box models](predictions-overview.md) to predict churn likelihood or expected revenues.
 
-1. Configure activities based on ingested data and visualize interactions with your customers in a chronological timeline. 
+1. [Configure activities](activities.md) based on ingested data and visualize interactions with your customers in a chronological timeline. 
 
-1. Build measures to gauge your business goals and KPIs.
+1. [Build measures](measures.md) to gauge your business goals and KPIs.
  
 ## Step 5: Create segments and activate data through various export options
 
 Now that your data is complete and contains a wide range of information about your customers, it's time to look for ways to take action on that data. 
 
-1. Consider creating segments, subsets of your customer base, to ensure your actions are relevant for the targeted customers.
+1. [Create segments](segments.md), subsets of your customer base, to ensure your actions are relevant for the targeted customers.
 
-1. Browse a growing catalog of export options where you can use the customer data. For example, to manage promotions or to reach out with digital marketing.
+1. Browse a growing catalog of [export options](export-destinations.md) where you can use the customer data. For example, to manage promotions or to reach out with digital marketing.
 
-1. Take a look at the integration options, for example, with the direct connection to the engagement insights capability Customer Insights. Or to other Dynamics 365 apps with the Customer Card Add-in.  
+1. Take a look at the integration options, for example, with the direct connection to the engagement insights capability of Customer Insights. Or to other Dynamics 365 apps with the [Customer Card Add-in](customer-card-add-in.md).  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
