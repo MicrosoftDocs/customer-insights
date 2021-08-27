@@ -15,7 +15,7 @@ manager: shellyha
 
 The **Customers** page shows a combined view of your customers, based on profile data gathered from [all data sources](data-sources.md). Customer profiles are available once you [create the unified Customer entity](data-unification.md). Make sure you complete the data unification process to get richer views of your customers. The page also lets you search for customers.
 
-Customers can be individuals or organizations (preview). Each customer or organization profile is represented by a tile. Use the pagination controls to see additional records. Select a tile to see additional information to load more data for that customer displayed in a dedicated page. 
+Customers can be individuals or organizations (preview). Each customer or organization profile is represented by a tile. Use the pagination controls to see additional records. The card displays the profile fields defined in the search & filter index. Select a tile to see additional information to load more data for that customer displayed in a dedicated page. 
 
 > [!div class="mx-imgBorder"] 
 > ![B2C customer profiles.](media/profiles-customers.png "B2C customer profiles")
@@ -25,7 +25,7 @@ Customers can be individuals or organizations (preview). Each customer or organi
 
 ## Search for customers
 
-Search for customers by entering a name or some other attribute in the search box. The search only works within the Customer Profile entity created during the data unification process.
+Search for customers by entering a name or some other attribute in the search box. The search only works within the Customer Profile entity created during the data unification process. 
 
 As an admin, you can configure the searchable attributes using the **Search & filter index** page. For more information, see [Manage search & filter index](search-filter-index.md).
 
