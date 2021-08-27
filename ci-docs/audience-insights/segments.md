@@ -1,7 +1,7 @@
 ---
 title: "Segments in audience insights"
 description: "Overview on segments and how to create and manage them."
-ms.date: 05/03/2021
+ms.date: 08/27/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -21,11 +21,11 @@ Customer profiles that match the filters of a segment definition are referred as
 
 There are multiple ways to create a new segment: 
 
-- Complex segment with segment builder: [Blank segment](segment-builder.md#create-a-new-segment)
-- Simple segments with one operator: [Quick segment](segment-builder.md#quick-segments)
-- AI-powered way to find similar customers: [Similar Customers](find-similar-customer-segments.md)
-- AI-powered suggestions based on measures or attributes: [Suggested segments to improve measures](suggested-segments.md)
-- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md)
+- Complex segment with segment builder: [Blank segment](segment-builder.md#create-a-new-segment) (B2B and B2C environments)
+- Simple segments with one operator: [Quick segment](segment-builder.md#quick-segments) (B2C environments only)
+- AI-powered way to find similar customers: [Similar Customers](find-similar-customer-segments.md) (B2C environments only)
+- AI-powered suggestions based on measures or attributes: [Suggested segments to improve measures](suggested-segments.md) (B2C environments only)
+- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md) (B2C environments only)
 
 ## Manage existing segments
 
