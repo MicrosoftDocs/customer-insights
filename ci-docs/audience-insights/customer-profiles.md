@@ -15,14 +15,10 @@ manager: shellyha
 
 The **Customers** page shows a combined view of your customers, based on profile data gathered from [all data sources](data-sources.md). Customer profiles are available once you [create the unified Customer entity](data-unification.md). Make sure you complete the data unification process to get richer views of your customers. The page also lets you search for customers.
 
-Customers can be individuals or organizations (preview). Each customer or organization profile is represented by a tile. Select a tile to see additional information on that specific customer or organization. Use the pagination controls at the bottom of the page to see additional records.
+Customers can be individuals or organizations (preview). Each customer or organization profile is represented by a tile. Use the pagination controls to see additional records. Select a tile to see additional information to load more data for that customer displayed in a dedicated page. 
 
 > [!div class="mx-imgBorder"] 
 > ![B2C customer profiles.](media/profiles-customers.png "B2C customer profiles")
-
-Organizations (Preview)
-> [!div class="mx-imgBorder"] 
-> ![B2B customer profiles.](media/profile-customers-b2b.png "B2B customer profiles")
 
 > [!NOTE]
 > If you can't see the tiles when you select **Customers** in navigation, your administrator needs to [define at least one searchable attribute](search-filter-index.md) on the **Search & filter index**.
@@ -52,13 +48,13 @@ Select any of the customer tiles to open the **Customer details page**. This vie
 
 Customer details include:
 
--	**Customer profile tile**: This tile shows the different values from the unified customer profile entity. These details can include email address, name, city, and so on. 
+-	**Customer profile tile**: This tile shows the different values from the unified customer profile entity. If a field has no value for the currently shown customer profile it will not be shown. The tile is structured into sections: First section shows a predefined set of fields followed by all fields which are part of the search & index filter. Within this section our web interface will combine address relatd fields into a single line called “address”. This only happens if this profile contains such fields. The second section is called “additional fields” and shows the remaining fields, except for ids. These ids, which are identified by their semantics categorizing them as Ids, are grouped in the third section called “Ids”. Within the third section fields are further grouped by their entity.
 
--	**Potential interests, potential brands**: Shows if you configured a first-party enrichment. It represents potential interests and affinities for brands a customer with a profile similar to this customer might have. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md).
+-	**Activity timeline**: Shows if you have configured activities. The timeline view contains chronologically sorted activities of this customer, starting with the most recent activity. For more information, see [Customer activities](activities.md).
 
 -	**Measures**: Shows if you configured one or more measures of a specific type: customer attribute measures. They include calculated KPIs around your customers on the individual customer level. For more information, see [Define and manage measures](measures.md).
 
--	**Activity timeline**: Shows if you have configured activities. The timeline view contains chronologically sorted activities of this customer, starting with the most recent activity. For more information, see [Customer activities](activities.md).
+-	**Potential interests, potential brands**: Shows if you configured a first-party enrichment. It represents potential interests and affinities for brands a customer with a profile similar to this customer might have. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md).
 
 Select **Back to Customers** to return to the customer search page.
 
