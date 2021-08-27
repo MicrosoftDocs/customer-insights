@@ -84,23 +84,30 @@ If you're interested in trying this feature but don't have data to complete the 
 
 ### Add required data
 
-1. Select **Add data** for **Customer transaction history** and choose the entity that provides the transaction/purchase history information as described in the [prerequisites](#prerequisites).
+1. Select **Add data**, and in the side panel, choose the activity type that hosts the activity entity providing the transaction/purchase history information as described in the [prerequisites](#prerequisites).
 
-1. Map the semantic fields to attributes within your purchase history entity and select **Next**. For descriptions of the fields, have a look at the [prerequisites](#prerequisites).
-   > [!div class="mx-imgBorder"]
-   > ![Define the entity relationship.](media/product-recommendation-purchasehistorymapping.PNG "Purchase history page showing semantic attributes that are mapped to fields in the selected purchase history entity")
+ :::image type="content" source="media/Prod Rec_Select semantic type activity entity representing purchase history entity.PNG" alt-text="Side pane showing selecting acitivyt semantic type.":::
 
-1. If the fields aren't filled in, configure the relationship from your purchase history entity to the *Customer* entity.
-    1. Select the **Purchase history entity**.
-    1. Select the **Field** that identifies the customer in the purchase history entity. It needs to relate to the primary customer ID of your *Customer* entity.
-    1. Select the **Customer entity** that matches your primary customer entity.
-    1. Enter a name that describes the relationship.
-       > [!div class="mx-imgBorder"]
-       > ![Purchase history page showing the creation of a relationship to customer.](media/model-purchase-join.png "Purchase history page showing the creation of a relationship to customer")
+   * **Choose the activities**: You can choose the specific activities under the selected semantic type you'd like the calculation to focus on.
+
+ :::image type="content" source="media/Prod Rec_Select activities under the semantic type.PNG" alt-text="Side pane showing choosing specific activities under the semantic type.":::
+
+1. If you haven't mapped the acitivity to a semantic type yet, you can click on the 'edit' to do so. You will be prompted to the activity type setting wizard.
+
+ :::image type="content" source="media/Prod Rec_Map activity semantic type.PNG" alt-text="Page setting activity type.":::
+
+1. After complete mapping the activity to the correspondent semantic type, click **Next** to proceed 
+
+ :::image type="content" source="media/Prod Rec_Select activities under the semantic type_2.PNG" alt-text="Choose the desired activities and proceed.":::
+ 
+1. Map the semantic attributes to the fields required to run the model. After activities chosen are mapped to the semantic types, the fields are auto-populated.
+
+ :::image type="content" source="media/Prod Rec_Semantic attributes mapped to the required fields for the model.PNG" alt-text="Populating attributes to fields for model.":::
 
 1. Select **Save**.
 
 1. Select **Next**.
+
 
 ### Configure product filters
 
