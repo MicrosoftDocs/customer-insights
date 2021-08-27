@@ -6,39 +6,36 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: NimrodMagen
-ms.author: nimagen
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
 ---
 
 # Customer profiles
 
-The **Customers** page shows a combined view of your customers, based on profile data gathered from [all data sources](data-sources.md). Customer profiles are available once you [create the unified Customer entity](data-unification.md). Make sure you complete the data unification process to get richer views of your customers. The page also lets you search for customers.
+The **Customers** page shows a combined view of your customers, based on customer data gathered from [all data sources](data-sources.md). Customer profiles are available once you [create the unified Customer entity](data-unification.md). Make sure you complete the data unification process to get richer views of your customers. The page also lets you search for customers.
 
-Customers can be individuals or organizations (preview). Each customer or organization profile is represented by a tile. Use the pagination controls to see additional records. The card displays the profile fields defined in the search & filter index. Select a tile to see additional information to load more data for that customer displayed in a dedicated page. 
+Customers can be individuals or organizations (preview). Each customer profile is represented by a tile. Use the pagination controls to see additional records. The card displays the _Customer_ fields defined in the search & filter index. Select a tile to see additional information to load more data for that customer displayed in a dedicated page.
 
 > [!div class="mx-imgBorder"] 
-> ![B2C customer profiles.](media/profiles-customers.png "B2C customer profiles")
+> ![Customers page with search results](media/customers-page-result-tiles-B2C.png "Customers page showing result tiles")
 
 > [!NOTE]
 > If you can't see the tiles when you select **Customers** in navigation, your administrator needs to [define at least one searchable attribute](search-filter-index.md) on the **Search & filter index**.
 
 ## Search for customers
 
-Search for customers by entering a name or some other attribute in the search box. The search only works within the Customer Profile entity created during the data unification process. 
+Search for customers by entering a name or some other attribute in the search box. The search only works within the _Customer_ entity created during the data unification process.
 
 As an admin, you can configure the searchable attributes using the **Search & filter index** page. For more information, see [Manage search & filter index](search-filter-index.md).
 
 ## Filter customers
 
-You can filter customers by the Customer Profile entity fields. Similar to search, your admin will first need to define the fields as filterable using the **Search & filter index** page.
+You can filter customers by the _Customer_ entity fields. Similar to search, your admin will first need to define the fields as filterable using the **Search & filter index** page.
 
-1. Select **Filter** on the **Customers** page.
+1. Select **Show filters** on the **Customers** page.
 
 2. Check the boxes next to the attributes you want to filter customers by.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Customer profiles.](media/profiles-customers3.png "Customer profiles")
 
 3. Remove your filters by selecting **Clear filters** on the **Customers** page.
 
@@ -48,7 +45,7 @@ Select any of the customer tiles to open the **Customer details page**. This vie
 
 Customer details include:
 
--	**Customer profile tile**: This tile shows the different values from the unified customer profile entity. If a field has no value for the currently shown customer profile it will not be shown. The tile is structured into sections: First section shows a predefined set of fields followed by all fields which are part of the search & index filter. Within this section our web interface will combine address relatd fields into a single line called “address”. This only happens if this profile contains such fields. The second section is called “additional fields” and shows the remaining fields, except for ids. These ids, which are identified by their semantics categorizing them as Ids, are grouped in the third section called “Ids”. Within the third section fields are further grouped by their entity.
+-	**Customer profile tile**: This tile shows the different values from the unified _Customer_ entity. If a field has no value for the currently shown customer profile it will not be shown. The tile is structured into sections: First section shows a predefined set of fields followed by all fields which are part of the search & index filter. Within this section our web interface will combine address relatd fields into a single line called “address”. This only happens if this profile contains such fields. The second section is called “additional fields” and shows the remaining fields, except for ids. These ids, which are identified by their semantics categorizing them as Ids, are grouped in the third section called “Ids”. Within the third section fields are further grouped by their entity.
 
 -	**Activity timeline**: Shows if you have configured activities. The timeline view contains chronologically sorted activities of this customer, starting with the most recent activity. For more information, see [Customer activities](activities.md).
 
