@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to SendGrid"
 description: "Learn how to configure the connection and export to SendGrid."
-ms.date: 03/03/2021
+ms.date: 08/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -61,7 +61,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Enter your **[SendGrid list ID](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts)**.
 
-1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. Repeat the same steps for other optional fields such as **First name**, **Last name**, **Country/Region**, **State**, **City**, and **Post code**.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. Repeat the same steps for other optional fields such as **First name**, **Last name**, **Country/Region**, **State**, **City**, and **Post code**.
 
 1. Select the segments you want to export. We strongly **recommend to not export more than 100'000 customer profiles in total** to SendGrid. 
 

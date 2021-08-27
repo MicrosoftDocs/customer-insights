@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to ActiveCampaign"
 description: "Learn how to configure the connection and export to ActiveCampaign."
-ms.date: 06/29/2021
+ms.date: 08/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -59,7 +59,7 @@ You can configure an export if you have access to a connection of this type. For
 
 1. Enter your [**ActiveCampaign List ID**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).    
 
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to ActiveCampaign. Optionally, you can export First name, Last name, and Phone to create more personalized emails. Select Add attribute to map these fields.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to ActiveCampaign. Optionally, you can export First name, Last name, and Phone to create more personalized emails. Select Add attribute to map these fields.
 
 1. Select **Save**.
 

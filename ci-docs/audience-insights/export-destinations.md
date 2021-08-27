@@ -1,7 +1,7 @@
 ---
 title: "Export data from Customer Insights"
 description: "Manage exports to share data."
-ms.date: 06/14/2021
+ms.date: 08/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -17,6 +17,9 @@ ms.custom: intro-internal
 The **Exports** page shows you all configured exports. Exports share specific data with various applications. They can include customer profiles or entities, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md).
 
 Go to **Data** > **Exports** to view the exports page. All user roles can view configured exports. Use the search field in the command bar to find exports by their name, connection name, or connection type.
+
+> [!TIP]
+> Almost every export option supports B2B and B2C scenarios. You might need to choose different entities when configuring the export of data tables. In B2B scenarios, some segment exports have to map to the email address of the contacts that belong to a business account. The bot for Microsoft Teams can only look up individual customers so it works only in the B2C scenario.
 
 ## Set up a new export
 

@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to AdRoll"
 description: "Learn how to configure the connection and export to AdRoll."
-ms.date: 03/03/2021
+ms.date: 08/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -61,7 +61,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Enter your **AdRoll Advertiser ID**. For more information, see [AdRoll Advertiser Profiles](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to AdRoll.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to AdRoll.
 
 1. Select the segments you want to export. Select a segment with a least 100 members. You can't export smaller segments. Additionally the maximum size of a segment to export is 250,000 members per export. 
 

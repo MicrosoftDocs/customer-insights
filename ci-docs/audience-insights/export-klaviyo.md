@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Klaviyo"
 description: "Learn how to configure the connection and export to Klaviyo."
-ms.date: 08/13/2021
+ms.date: 08/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -62,7 +62,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Enter your [**Klaviyo List ID**](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).     
 
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Klaviyo.
+3. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Klaviyo.
 
 1. Select **Save**.
 
