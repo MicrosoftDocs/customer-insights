@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with location data from Azure Maps"
 description: "General information about the Azure Maps first-party enrichment."
-ms.date: 08/17/2021
+ms.date: 08/31/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Enrichment of customer profiles with Azure Maps (preview)
 
-Azure Maps provides location-centric data and services to deliver experiences based on geospatial data with built-in location intelligence. Azure Maps data enrichment services improve the precision of location information about your customers. <!--note from editor: Suggested.--> It brings capabilities like address normalization and latitude and longitude extraction to Dynamics 365 Customer Insights.
+Azure Maps provides location-centric data and services to deliver experiences based on geospatial data with built-in location intelligence. Azure Maps data enrichment services improve the precision of location information about your customers. It brings capabilities like address normalization and latitude and longitude extraction to Dynamics 365 Customer Insights.
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ To configure Azure Maps data enrichment, the following prerequisites must be met
 
 1. Select **Next** to confirm the selection.
 
-1. Choose the **Customer data set**<!--note from editor: The Cloud Style Guide says this is one word. I made it so in the alt text for the image below, but I'm not pleased about it. It would be nice for the UI to follow the style.--> you want to enrich with location data from Azure Maps. You can select the **Customer** entity to enrich all your unified customer profiles,<!--note from editor: Comma suggested.--> or select a segment entity to enrich only customer profiles contained in that segment.
+1. Choose the **Customer dataset** you want to enrich with location data from Azure Maps. You can select the **Customer** entity to enrich all your unified customer profiles, or select a segment entity to enrich only customer profiles contained in that segment.
 
     :::image type="content" source="media/enrichment-azure-maps-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer dataset.":::
 
@@ -47,17 +47,17 @@ To configure Azure Maps data enrichment, the following prerequisites must be met
 
 1. Select **Next** to complete the field mapping.
 
-1. Evaluate whether you want to modify **Advanced Settings**. These are provided to give maximum flexibility to handle advanced use cases, but the default values will be adequate in most cases:<!--note from editor: Edit suggested, so we can use wording that fits in with these steps rather than suddenly launch into exposition. The following bold formatting assumes that these settings are UI strings.--> 
+1. Evaluate whether you want to modify **Advanced Settings**. These are provided to give maximum flexibility to handle advanced use cases, but the default values will be adequate in most cases:
    - **Type of addresses**: The default behavior is that the enrichment will return the best address match even if it's incomplete. To get only complete addresses&mdash;for example, addresses that include the house number&mdash;clear all the checkboxes except **Point Addresses**. 
-   - **Language**: By default, addresses are returned in the language for the region that the address has been determined to belong to.<!--note from editor: Suggested.--> To apply a standardized address language, select the language from the dropdown menu. For example, selecting **English** will return **Copenhagen, Denmark** instead of **København, Danmark**.
+   - **Language**: By default, addresses are returned in the language for the region that the address has been determined to belong to. To apply a standardized address language, select the language from the dropdown menu. For example, selecting **English** will return **Copenhagen, Denmark** instead of **København, Danmark**.
 
-1. Provide a name for the enrichment.<!--note from editor: I know the UI calls these "enrichments," but is there any thought of finding a better term? It's an odd way to use the word.  -->
+1. Provide a name for the enrichment.
 
 1. Review your choices, and then select **Save enrichment**.
 
 ## Configure the connection for Azure Maps
 
-You need to be an administrator in audience insights to configure connections. Select **Add connection** when configuring an enrichment,<!--note from editor: Comma goes here, via Microsoft Writing Style Guide.--> or go to **Admin** > **Connections** and select **Set up** on the Azure Maps tile.
+You need to be an administrator in audience insights to configure connections. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the Azure Maps tile.
 
 1. In the **Display name** box, enter a name for the connection.
 
@@ -84,7 +84,7 @@ You can access a detailed view of each enriched profile by selecting **View enri
 Build on top of your enriched customer data. Create [segments](segments.md), [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
 
 ## Data privacy and compliance
-<!--note from editor: I assume the following paragraph was blessed by CELA? Even if so, I still think "Azure Maps" should be used as a product name (singular) and "see" should be "go to" in accordance with the MWSG.-->
+
 When you enable Dynamics 365 Customer Insights to transmit data to Azure Maps, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Azure Maps meets any privacy or security obligations you may have. For more information, go to [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights Administrator can remove this enrichment at any time to discontinue use of this functionality.
 
