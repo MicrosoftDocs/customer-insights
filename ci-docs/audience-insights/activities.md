@@ -44,7 +44,7 @@ An entity must have at least one attribute of type **Date** to be included in a 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
 
    > [!TIP]
-   > In B2B environments, you can select between account entities and other entities. If you select an account entity, the relationship path is automatically set. For other entities, you have to define the relationship path over on or more intermediate entities until you reach an account entity.
+   > In B2B environments, you can select between account entities and other entities. If you select an account entity, the relationship path is automatically set. For other entities, you have to define the relationship path over one or more intermediate entities until you reach an account entity.
 
 1. Select **Next** to go to the next step. 
 
