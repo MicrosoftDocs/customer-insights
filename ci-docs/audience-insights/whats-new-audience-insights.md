@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 07/19/2021
+ms.date: 08/31/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -21,6 +21,16 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## August 2021 updates
+
+The updates in July and August 2021 include a new feature, performance upgrades, and bug fixes.
+
+### Extensibility
+
+- **Export segments to Klaviyo**
+  We have extended our [export destinations to include Klaviyo](export-klaviyo.md). You can now export segments to crate campaigns, do email marketing, and use specific groups of customers with Klaviyo. 
+
 
 ## June 2021 updates
 
