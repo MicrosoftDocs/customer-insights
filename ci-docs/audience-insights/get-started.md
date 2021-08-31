@@ -4,7 +4,7 @@ description: An overview of audience insights help resources to get started quic
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 08/26/2021
+ms.date: 08/31/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
