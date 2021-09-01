@@ -1,7 +1,7 @@
 ---
 title: "Home page in audience insights"
 description: "Start exploring the app on the Home page."
-ms.date: 08/26/2021
+ms.date: 09/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -19,7 +19,7 @@ The **Home** page shows an overview of segments, measures, and enrichment data (
 :::image type="content" source="media/home-page.png" alt-text="Screenshot of the Home screen showing sample insights.":::
 
 1 - Switch between capabilities of Customer Insights
-2 - Use the left pane to navigation between different areas
+2 - Use the left pane to navigate between different areas and choose the primary target audience
 3 - Find out which environment you work in and manage environments as an administrator
 4 - Specify personal settings for Customer Insights
 
