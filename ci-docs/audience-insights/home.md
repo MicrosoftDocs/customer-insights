@@ -19,7 +19,7 @@ The **Home** page shows an overview of segments, measures, and enrichment data (
 :::image type="content" source="media/home-page.png" alt-text="Screenshot of the Home screen showing sample insights.":::
 
 1 - Switch between capabilities of Customer Insights
-2 - Use the left pane to navigation between different areas
+2 - Use the left pane to navigate between different areas
 3 - Find out which environment you work in and manage environments as an administrator
 4 - Specify personal settings for Customer Insights
 
