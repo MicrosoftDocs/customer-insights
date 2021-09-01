@@ -24,7 +24,7 @@ By using unified profile demographic dimensions, engagement insights users can a
 - An engagement insights environment in which you have customer profile data linked to the audience insights environment where the customer profiles are created. More information: [Create a link between audience insights and engagement insights](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> After you create a link between the audience insights and engagement insights environments, you might only want data specific to customer profile properties, which can be useful as dimensions in engagement insights. For more information, go to [Enable audience insights unified profiles attributes and segments](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).<!--note from editor: Suggested. -->
+> After you create a link between the audience insights and engagement insights environments, you might only want data specific to customer profile properties, which can be useful as dimensions in engagement insights. For more information, go to [Enable audience insights unified profiles attributes and segments](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).
 
 ## Create a new custom report
 
