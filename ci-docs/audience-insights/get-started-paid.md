@@ -1,7 +1,7 @@
 ---
 title: "Create and configure a paid license of Customer Insights"
 description: "Steps to get a licensed subscription for Dynamics 365 Customer Insights and configure it."
-ms.date: 07/22/2021
+ms.date: 09/001/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -38,7 +38,9 @@ To create an environment:
 1. Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
    - **Region**: The region into which the service is deployed and hosted.
-   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing.
+   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience like the production environment that's currently selected.
+
+1. Choose the primary audience for the new environment. You can work with individual customers (B-to-C) or [business accounts](work-with-business-accounts.md) (B-to-B).
    
 1. Optionally, you can select **Advanced settings**:
 
