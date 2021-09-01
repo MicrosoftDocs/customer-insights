@@ -1,7 +1,7 @@
 ---
 title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
-ms.date: 08/24/2021
+ms.date: 08/31/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -65,7 +65,7 @@ You can find details about the processing of an enrichment, including it status 
 To see the status of en enrichment
 
 1. Go to **Data** > **Enrichment**. 
-1. In the **my enrichments** tab, select the status of an enrichment to open a side pane. 
+1. In the **My enrichments** tab, select the status of an enrichment to open a side pane. 
 1. In the **Progress details** pane, expand the **Enrichments** section. 
 1. Under the enrichment you want to see the progress, select **See details**. 
 1. In the **Task details** pane, select **Show details** to see the processes that are involved in updating the enrichment and their status. 
