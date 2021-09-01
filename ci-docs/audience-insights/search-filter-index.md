@@ -51,7 +51,7 @@ The **Filter** menu on the **Customers** page can include a varying number of at
 
 2. Select **Save** to apply your changes.
 
-3. Select **Run** once you're ready to apply your settings.
+3. Select **Run** once you're ready to apply your settings. After the changes are processed, you find them in the [customer cards on the Customer page](customer-profiles.md). 
 
 ## Next steps
 
