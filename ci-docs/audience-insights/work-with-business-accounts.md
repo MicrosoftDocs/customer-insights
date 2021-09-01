@@ -8,7 +8,7 @@ Administrators can [Create an environment in an existing organization](get-start
 
 You can then [ingest data](data-sources.md) for business accounts and related contacts as data sources from all supported sources.
 
-After unifying the data, you can [specify account hierarchies](relationships.md) as part of the relationship configuration.
+After unifying the data, you can [specify account hierarchies](relationships.md#set-up-account-hierarchies) as part of the relationship configuration.
 
 ## Supported scenarios
 
