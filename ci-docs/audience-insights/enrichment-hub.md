@@ -24,6 +24,7 @@ You need to have Contributor or Administrator permissions to create or edit enri
 
 On the **Discover** tab, you'll find the following enrichments:
 
+- [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
 - [Brands](enrichment-microsoft.md) provided by Microsoft
 - [Interests](enrichment-microsoft.md) provided by Microsoft
 - [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
