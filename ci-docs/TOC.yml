@@ -83,6 +83,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Enhanced addresses
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Enrich with Azure Maps
+          href: audience-insights/enrichment-azure-maps.md
         - name: Enrich with HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Enrich with Leadspace
