@@ -4,7 +4,7 @@ description: An overview of help resources to get started quickly.
 ms.reviewer: mhart
 ms.author: jefhar
 author: mochimochi016
-ms.date: 12/21/2020
+ms.date: 08/31/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -55,6 +55,8 @@ You can create *refined events* (a virtual view) of your web analytics data. The
 1. [Create refined events](refined-events.md) for export.
 
 1. [Export the data](export-events.md) to Data Lake Storage.
+
+1. [Create a link between audience insights and engagement insights](integrate-audience-insights-engagement-insights.md) to share data between the two capabilities.
 
 1. Learn how to [delete and export event data containing personal information](delete-export-personal-data.md).
  

@@ -22,8 +22,14 @@
     - name: New and updated features
       href: audience-insights/whats-new-audience-insights.md
 
-    - name: Create a new environment
-      href: audience-insights/get-started-paid.md
+    - name: Get started
+      items: 
+        - name: Quickstart guide
+          href: audience-insights/get-started.md
+        - name: Create a new environment
+          href: audience-insights/get-started-paid.md
+        - name: Explore audience insights
+          href: audience-insights/home.md
 
     - name: Learn modules
       items:
@@ -276,7 +282,7 @@
 
     - name: Get started
       items:
-        - name: Get started
+        - name: Quickstart guide
           href: engagement-insights/get-started.md
         - name: Create a workspace
           href: engagement-insights/create-workspace.md
