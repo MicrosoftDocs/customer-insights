@@ -8,7 +8,7 @@ Administrators can [Create an environment in an existing organization](get-start
 
 You can then [ingest data](data-sources.md) for business accounts and related contacts as data sources from all supported sources.
 
-After unifying the data, you can specify account hierarchies as part of the relationship configuration.
+After unifying the data, you can [specify account hierarchies](relationships.md) as part of the relationship configuration.
 
 ## Supported scenarios
 
@@ -25,8 +25,6 @@ After unifying the data, you can specify account hierarchies as part of the rela
 
 ## Switch between primary target audience
 
-If your organization maintains environments for individual customers and business accounts, you can [use the switcher in the left pane](home.md) to choose the primary target audience.
+If your organization maintains environments for individual customers and business accounts, you can use the switcher in the left pane to choose the primary target audience.
 
-
-
-Hierarchy Mapping -> Relationships
+[Add screenshot]
