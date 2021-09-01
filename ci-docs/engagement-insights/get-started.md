@@ -32,7 +32,7 @@ The first time you visit engagement insights you can configure settings, review 
 
 1. Sign in the [engagement insights capability portal](https://pi.dynamics.com) using your Microsoft AAD user (school or work) account.
 
-1. Select your region, and check the box ic you want to opt in to receive email updates and offers.
+1. Select your region, and check the box if you want to opt in to receive email updates and offers.
 
 1. Review the **engagement insights (preview) Terms of use** and **Privacy statement**, and then select **Explore the demo** to accept these settings.
 
