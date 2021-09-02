@@ -31,6 +31,9 @@
         - name: Explore audience insights
           href: audience-insights/home.md
 
+    - name: Work with business accounts
+      href: audience-insights/work-with-business-accounts.md
+
     - name: Learn modules
       items:
         - name: Ingest data
