@@ -52,9 +52,6 @@ A Customer Insights admin can follow these steps to delete Customer Insights use
 3. Select the check box for the user you want to delete.
 4. Select **Remove**.
 
-> [!div class="mx-imgBorder"]
-> ![Handling GDPR delete requests for user data.](audicene-insights/media/gdpr-permissions.png "Handling GDPR delete requests for user data")
-
 ### Responding to GDPR data subject export requests
 
 As part of our commitment to partner with you on your journey to the General Data Protection Regulation (GDPR), we’ve developed documentation to help you prepare. This documentation describes steps you can take today to support GDPR compliance when using audience insights.
