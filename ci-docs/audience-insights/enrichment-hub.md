@@ -22,16 +22,19 @@ In audience insights, go to **Data** > **Enrichment** to work with enrichment op
 
 You need to have Contributor or Administrator permissions to create or edit enrichments. For more information, see [Permissions](permissions.md).
 
-On the **Discover** tab, you'll find the following enrichments:
+On the **Discover** tab, you'll find the following enrichments.
 
-- [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
-- [Brands](enrichment-microsoft.md) provided by Microsoft
-- [Interests](enrichment-microsoft.md) provided by Microsoft
-- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
-- [Company data](enrichment-leadspace.md) provided by Leadspace
-- [Demographics](enrichment-experian.md) provided by Experian
-- [Location data](enrichment-here.md) provided by HERE Technologies
-- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
+|Enrichment |Supports individual customers (B2C)  |Supports business accounts (B2B)  |
+|---------|---------|---------|
+|[Brands](enrichment-microsoft.md) provided by Microsoft   |    x     |         |
+|[Interests](enrichment-microsoft.md) provided by Microsoft    |    x     |         |
+|[Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft    |    x     |    x     |
+|[Company data](enrichment-leadspace.md) provided by Leadspace    |         |    x     |
+|[Demographics](enrichment-experian.md) provided by Experian     |    x     |    x    |
+|[Location data](enrichment-here.md) provided by HERE Technologies   |         |    x     |
+|[Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)   |    x     |     x    |
+|[Azure Maps](enrichment-azure-maps.md) provided by Microsoft   |         |   x      |
+|Row9     |         |         |
 
 On the **My enrichments** tab, you can see the enrichments you've configured and edit their properties.
 
