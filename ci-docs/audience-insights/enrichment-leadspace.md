@@ -25,7 +25,7 @@ To configure Leadspace, the following prerequisites must be met:
 
 ## Configure the enrichment
 
-1. In audience insights, go to **Data** > **Enrichment**.
+1. In Audience Insights, go to **Data** > **Enrichment**.
 
 1. Select **Enrich my data** on the Leadspace tile and select **Get started**.
 
