@@ -13,7 +13,7 @@ manager: shellyha
 
 # Enrichment of company profiles with Leadspace (preview)
 
-Leadspace is a data science company that provides a B2B Customer Data Platform. It enables customers with unified customer profiles for companies to enrich their data. Enrichments include more attributes such as company size, location, industry, and more.
+Leadspace is a data science company that provides a B2B Customer Data Platform. It enables customers with unified customer profiles for companies to enrich their data. Enrich *company records* with attributes including company size, location, industry and more. Enrich *contact records* with attributes including title, persona, email verification and more.
 
 ## Prerequisites
 
@@ -44,6 +44,10 @@ To configure Leadspace, the following prerequisites must be met:
    :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace field mapping pane.":::
 
 1. Select **Next** to complete the field mapping.
+
+1. (Optional) Click the checkbox if you have contact profiles that you would like to enrich. Audience Insights will automatically map the required fields.
+
+ :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace field mapping pane.":::
 
 1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
 
