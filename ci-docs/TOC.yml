@@ -370,15 +370,11 @@
       items: 
         - name: Import consent data
           href: consent-management/import-consent-data.md
-        - name: Map imported data to consent entity
-          href: consent-management/map-consent-data.md
-        - name: Manually refresh consent data
-          href: consent-management/refresh-consent-data.md
 
     - name: Manage consent data
       items: 
-        - name: Map consent to standard actions
-          href: consent-management/standard-actions.md
+        - name: Set consent data and apply consent preferences
+          href: consent-management/map-consent-data.md
         - name: Manage default consent rules in audience insights segments
           href: audience-insights/segments.md#disable-or-change-default-consent-rules
         
@@ -388,8 +384,6 @@
           href: consent-management/system-settings.md
         - name: Manage users and permissions
           href: consent-management/manage-users.md
-        - name: Activate global consent
-          href: audience-insights/activate-consent.md
     
     - name: GDPR
       items: 
