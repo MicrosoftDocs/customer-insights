@@ -48,7 +48,7 @@ To configure Leadspace, the following prerequisites must be met:
 1. Click the checkbox if you have contact profiles that you would like to enrich. Audience Insights will automatically map the required fields.
 
  :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace field mapping pane.":::
-
+ 
 1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
 
 
