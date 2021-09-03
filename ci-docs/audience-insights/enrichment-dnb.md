@@ -6,7 +6,7 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: jodahl-MS
+author: jodahlMSFT
 ms.author: jodahl
 manager: skummer
 ---
