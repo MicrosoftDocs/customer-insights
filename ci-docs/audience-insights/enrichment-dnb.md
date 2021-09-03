@@ -29,9 +29,9 @@ Click [here](https://sso.dnb.com/signin/forgot-password&lead_source=microsoft_au
 
 ## Setting up your Dun & Bradstreet project
 
-Once you have purchased a Dun & Bradstreet license you can set up a project in Dun & Bradstreet Connect. The first step is to download this [csv file](https://www.dnb.com/&lead_source=microsoft_audienceinsights) that will be used to map the Audience Insights fields to the corresponding Dun & Bradstreet fields. Use this file in the **Upload data** step of the Dun & Bradstreet project creation wizard. 
+Once you have purchased a Dun & Bradstreet license you can set up a project in [Dun & Bradstreet Connect](https://connect.dnb.com/). The first step is to download this [csv file](https://www.dnb.com/&lead_source=microsoft_audienceinsights) that will be used to map the Audience Insights fields to the corresponding Dun & Bradstreet fields. Use this file in the **Upload data** step of the Dun & Bradstreet project creation wizard. 
 
-Click the dots shown below to expose a menu and choose **Get S3 details** when you have successfully created a project
+Click the dots shown below to expose the menu and choose **Get S3 details** when you have successfully created a project.
 
  :::image type="content" source="media/enrichment-dnb-dots.png" alt-text="Screenshot of dots in a Dun & Bradstreet project.":::
  
