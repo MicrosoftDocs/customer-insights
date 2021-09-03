@@ -3,13 +3,12 @@ title: "Trial FAQ - Dynamics 365 Customer Insights"
 description: "Solutions to common questions related to Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues."
 author: m-hartmann
 ms.author: mhart
-ms.date: 09/31/2021
+ms.date: 09/30/2021
 ms.topic: get-started
 ms.service: customer-insights
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.custom: intro-internal
 ---
 
 # Dynamics 365 Customer Insights trial FAQ
@@ -20,9 +19,9 @@ ms.custom: intro-internal
 
 Generally, we recommend starting fresh with your own data when upgrading to the paid version of Customer Insights. 
 
-Optionally, you can copy your data from a trial environment if you purchase Customer Insights. You must be the administrator of the Customer Insights trial and the global admin of your Microsoft 365 tenant, or the Dynamics 365 administrator in your organization to migrate the settings from a trial environment to a paid environment. 
+Optionally, if you only use audience insights, you can copy your data from a trial environment if you purchase Customer Insights. You must be the administrator of the Customer Insights trial and the global admin of your Microsoft 365 tenant, or the Dynamics 365 administrator in your organization to migrate the settings from a trial environment to a paid environment. 
 
-After signing in to your paid instance of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration](manage-environments.md#copy-the-environment-configuration).
+After signing in to your paid instance of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration](audience-insights/manage-environments.md#copy-the-environment-configuration).
 
 ### What are the trial limits and quotas?
 

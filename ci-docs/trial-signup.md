@@ -9,7 +9,6 @@ ms.service: customer-insights
 ms.custom: template-trial-setup 
 ms.reviewer: jeffhar
 manager: shellyha
-ms.custom: intro-internal
 ---
 
 # Sign up for a free Dynamics 365 Customer Insights trial
