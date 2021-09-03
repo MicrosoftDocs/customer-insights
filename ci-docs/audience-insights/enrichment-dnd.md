@@ -25,11 +25,28 @@ To configure a Dun & Bradstreet enrichment, the following prerequisites must be 
 
 Click [here](https://www.dnb.com/&lead_source=microsoft_audienceinsights) for information about the data that Dun & Bradstreet provide and information about how to purchase a Dun & Bradstreet license.
 
-Click [here](https://sso.dnb.com/signin/forgot-password&lead_source=microsoft_audienceinsights) to retieve credentials if you are an existing Dun & Bradstreet customer.
+Click [here](https://sso.dnb.com/signin/forgot-password&lead_source=microsoft_audienceinsights) to retrieve credentials if you are an existing Dun & Bradstreet customer.
 
-## Setting up a Dun & Bradstreet project
+## Setting up your Dun & Bradstreet project
 
+Once you have purchased a license to Dun & Bradstreet connect you can set up a project in Dun & Bradstreet Connect. The first step is to download a [csv file] (https://www.dnb.com/&lead_source=microsoft_audienceinsights) that will be used to map the Audience Insights fields to the corresponding Dun & Bradstreet fields. Use this file in the **Upload data** step of the Dun & Bradstreet project creation wizard. 
 
+Click the dots shown below to expose a menu and choose **Get S3 details** when you have successfully created a project
+
+ :::image type="content" source="media/dnb-dots.png" alt-text="Screenshot of dots in a Dun & Bradstreet project.":::
+ 
+ :::image type="content" source="media/dnb-s3info.png" alt-text="Screenshot of selection of s3 information in a Dun & Bradstreet project.":::
+
+Store this information in a safe place as you will need it for setting up the enrichment in Audience Insights.
+
+<!---  
+In Dun & Bradstreet Connect follow these steps:
+
+1. Click *Create new project* and provide a project name.
+2. Click next, choose a name for your data, and upload the csv file that you downloaded above.
+3. 
+
+--->
 
 ## Configure the enrichment
 
