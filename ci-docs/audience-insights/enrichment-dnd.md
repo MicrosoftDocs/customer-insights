@@ -21,7 +21,7 @@ To configure a Dun & Bradstreet enrichment, the following prerequisites must be 
 
 - You have an active Dun & Bradstreet license.
 - You have [unified customer profiles](customer-profiles.md) for companies.
-- A Dun & Bradstreet connection has already been configured by an administrator or you have [administrator](permissions.md#administrator) permissions and the relevant credentials from Dun & Bradstreet connect. Contact [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) directly for details about their product.
+- A Dun & Bradstreet connection has already been configured by an administrator or you have [administrator](permissions.md#administrator) permissions and the relevant credentials from Dun & Bradstreet connect. Contact [Dun & Bradstreet](https://www.dnb.com/&lead_source=microsoft_audienceinsights) directly for details about their product.
 
 Click [here](https://www.dnb.com/&lead_source=microsoft_audienceinsights) for information about the data that Dun & Bradstreet provide and information about how to purchase a Dun & Bradstreet license.
 
@@ -75,8 +75,6 @@ You need to be an administrator to configure connections. Select **Add connectio
 After refreshing the enrichment, you can review the newly enriched company data under [My enrichments](enrichment-hub.md). You can find the time of the last update and the number of enriched profiles.
 
 You can access a detailed view of each enriched profile by selecting **View enriched data**.
-
-For more information, see [Leadspace APIs](https://support.leadspace.com/hc/en-us/sections/201997649-API).
 
 ## Next steps
 
