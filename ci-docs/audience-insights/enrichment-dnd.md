@@ -13,7 +13,7 @@ manager: skummer
 
 # Enrichment of company profiles with Dun & Bradstreet (preview)
 
-Dun & Bradstreet provides commercial data, analytics, and insights for businesses. It enables customers with unified customer profiles for companies to enrich their data. Enrichments include more attributes such as DUNS number, company size, location, industry, and more.
+Dun & Bradstreet provides commercial data, analytics, and insights for businesses. It enables customers with unified customer profiles for companies to enrich their data. Enrichments include attributes such as DUNS number, company size, location, industry, and more.
 
 ## Prerequisites
 
@@ -31,36 +31,36 @@ Click [here](https://sso.dnb.com/signin/forgot-password&lead_source=microsoft_au
 
 1. In audience insights, go to **Data** > **Enrichment**.
 
-1. Select **Enrich my data** on the Leadspace tile and select **Get started**.
+1. Select **Enrich my data** on the Dun & Bradstreet tile and select **Get started**.
 
-   :::image type="content" source="media/leadspace-tile.png" alt-text="Screenshot of the Leadspace tile.":::
+   :::image type="content" source="media/dnb-tile.png" alt-text="Screenshot of the Dun & Bradstreet tile.":::
 
-1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **Leadspace**. 
+1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **Dun & Bradstreet**. 
 
-1. Select **Connect to Leadspace** to confirm the connection.
+1. Select **Connect to Dun & Bradstreet** to confirm the connection.
 
-1. Select **Next** and choose the **Customer data set** you want to enrich with company data from Leadspace. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+1. Select **Next** and choose the **Customer data set** you want to enrich with company data from Dun & Bradstreet. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
 
-    :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
+    :::image type="content" source="media/enrichment-dnb-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
 
-1. Select **Next** and define which fields from your unified profiles are used to look for matching company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
+1. Select **Next** and define which fields from your unified profiles are used to look for matching company data from Dun & Bradstreet. Either **DUNS number** *or* **Name of company** and **Country** field are required. 
 
-   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace field mapping pane.":::
+   :::image type="content" source="media/enrichment-dnb-mapping.png" alt-text="Dun & Bradstreet field mapping pane.":::
 
 1. Select **Next** to complete the field mapping.
 
 1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
 
 
-## Configure the connection for Leadspace 
+## Configure a connection for Dun & Bradstreet 
 
-You need to be an administrator to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Leadspace tile.
+You need to be an administrator to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Dun & Bradstreet tile.
 
 1. Select **Get Started**. 
 
 1. Enter a name for the connection in the **Display name** box.
 
-1. Provide a valid Leadspace token.
+1. Provide valid Dun & Bradstreet credentials.
 
 1. Review and provide your consent for **Data privacy and compliance** by selecting **I agree**.
 
@@ -68,7 +68,7 @@ You need to be an administrator to configure connections. Select **Add connectio
 
 1. After completing the verification, select **Save**.
    
-   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="Leadspace connection configuration page.":::
+   :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Dun & Bradstreet connection configuration page.":::
 
 ## Enrichment results
 
@@ -84,7 +84,7 @@ Build on top of your enriched customer data. Create [segments](segments.md) and 
 
 ## Data privacy and compliance
 
-When you enable Dynamics 365 Customer Insights to transmit data to Leadspace, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Leadspace meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+When you enable Dynamics 365 Customer Insights to transmit data to Dun & Bradstreet, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Dun & Bradstreet meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 
