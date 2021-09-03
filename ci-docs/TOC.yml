@@ -151,8 +151,6 @@
         - name: Create segments based on predictions
           href: audience-insights/prediction-based-segment.md
 
-
-
     - name: Export options
       items:
         - name: Exports
@@ -255,11 +253,6 @@
         - name: API references
           href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
 
-    - name: Service limits
-      href: audience-insights/service-limits.md
-    
-    - name: DSR requests under GDPR
-      href: audience-insights/gdpr.md
 
 - name: Engagement insights (preview)
   items:
@@ -340,23 +333,14 @@
         - name: Manage cookies and user consent
           href: engagement-insights/user-consent-storage.md
 
-    - name: GDPR
-      items: 
-        - name: Delete and export personal data
-          href: engagement-insights/delete-export-personal-data.md
-
     - name: Regional availability
       href: engagement-insights/regional-availability.md
 
-    - name: Service limits
-      href: engagement-insights/quotas.md
+- name: Service limits
+  href: service-limits.md
 
-- name: Service guidelines
-  items: 
-    - name: DSR rights and requests
-      href: dsr-rights-requests.md
-    - name: Service limits
-      href: service-limits.md
+- name: DSR rights and requests
+  href: dsr-rights-requests.md
 
 - name: Get support
   href: https://dynamics.microsoft.com/en-us/support/
