@@ -27,6 +27,10 @@ Click [here](https://www.dnb.com/&lead_source=microsoft_audienceinsights) for in
 
 Click [here](https://sso.dnb.com/signin/forgot-password&lead_source=microsoft_audienceinsights) to retieve credentials if you are an existing Dun & Bradstreet customer.
 
+## Setting up a Dun & Bradstreet project
+
+
+
 ## Configure the enrichment
 
 1. In audience insights, go to **Data** > **Enrichment**.
@@ -60,7 +64,7 @@ You need to be an administrator to configure connections. Select **Add connectio
 
 1. Enter a name for the connection in the **Display name** box.
 
-1. Provide valid Dun & Bradstreet credentials.
+1. Provide valid Dun & Bradstreet credentials and Dun & Bradstreet project details *Region, Drop folder path, and Drop folder name*.
 
 1. Review and provide your consent for **Data privacy and compliance** by selecting **I agree**.
 
