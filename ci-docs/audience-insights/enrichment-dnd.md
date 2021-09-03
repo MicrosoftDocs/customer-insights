@@ -33,9 +33,9 @@ Once you have purchased a license to Dun & Bradstreet connect you can set up a p
 
 Click the dots shown below to expose a menu and choose **Get S3 details** when you have successfully created a project
 
- :::image type="content" source="media/dnb-dots.png" alt-text="Screenshot of dots in a Dun & Bradstreet project.":::
+ :::image type="content" source="media/enrichment-dnb-dots.png" alt-text="Screenshot of dots in a Dun & Bradstreet project.":::
  
- :::image type="content" source="media/dnb-s3info.png" alt-text="Screenshot of selection of s3 information in a Dun & Bradstreet project.":::
+ :::image type="content" source="media/enrichment-dnb-s3info.png" alt-text="Screenshot of selection of s3 information in a Dun & Bradstreet project.":::
 
 Store this information in a safe place as you will need it for setting up the enrichment in Audience Insights.
 
@@ -54,15 +54,13 @@ In Dun & Bradstreet Connect follow these steps:
 
 1. Select **Enrich my data** on the Dun & Bradstreet tile and select **Get started**.
 
-   :::image type="content" source="media/dnb-tile.png" alt-text="Screenshot of the Dun & Bradstreet tile.":::
+   :::image type="content" source="media/enrichment-dnb-tile.png" alt-text="Screenshot of the Dun & Bradstreet tile.":::
 
 1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **Dun & Bradstreet**. 
 
 1. Select **Connect to Dun & Bradstreet** to confirm the connection.
 
 1. Select **Next** and choose the **Customer data set** you want to enrich with company data from Dun & Bradstreet. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
-
-    :::image type="content" source="media/enrichment-dnb-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
 
 1. Select **Next** and define which fields from your unified profiles are used to look for matching company data from Dun & Bradstreet. Either **DUNS number** *or* **Name of company** and **Country** field are required. 
 
