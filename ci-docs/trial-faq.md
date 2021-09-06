@@ -25,8 +25,8 @@ After signing in to your paid instance of Customer Insights for the first time, 
 
 ### What are the trial limits and quotas?
 
-- You can't use your own Azure Data Lake storage account to store output data during a trial. However, you can ingest data from a Data Lake storage account.
-- You can store a up to 3 GB data in the Dataverse environment that gets provisioned automatically when you start a Customer Insights trial.
+- You can't use your own Azure Data Lake storage account to store output data during a trial of audience insights. However, you can ingest data from a Data Lake storage account.
+- You can store a up to 3 GB of data in the Dataverse environment that gets provisioned automatically when you start a Customer Insights trial.
 
 ## Customer Insights-specific questions
 
