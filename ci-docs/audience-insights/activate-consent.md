@@ -1,3 +1,16 @@
+---
+title: "Activate consent rules for segments in audience insights"
+description: "Steps to link consent data and activate consent checks in audience insights."
+ms.date: 09/30/2021
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: how-to
+author: smithy7
+ms.author: smithc
+ms.reviewer: mhart
+manager: shellyha
+---
+
 # Activate default consent rules
 
 The consent management capability helps you to harmonize consent data across a variety of sources. Use the unified Consent entity to apply default consent checks].

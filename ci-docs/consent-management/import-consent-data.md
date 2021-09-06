@@ -1,3 +1,15 @@
+---
+title: "Import data to the consent management capability"
+description: "Ingest consent data in the consent management capability of Customer Insights."
+ms.date: 09/30/2021
+ms.service: customer-insights
+ms.topic: how-to
+author: smithy7
+ms.author: smithc
+ms.reviewer: mhart
+manager: shellyha
+---
+
 # Import subscription consent data
 
 Consent management lets you import data about the consent agreements from your customers. There are two types of consent data: subscriptions and purposes. Subscriptions are channels of communication to existing or prospective customers. 

@@ -1,4 +1,16 @@
-# Add and remove users
+---
+title: "Manage users in the consent management capability"
+description: "Introduction to user management to let admins access the consent center."
+ms.date: 09/30/2021
+ms.service: customer-insights
+ms.topic: how-to
+author: smithy7
+ms.author: smithc
+ms.reviewer: mhart
+manager: shellyha
+---
+
+# How to add users to consent management
 
 Consent management, a capability of Dynamics 365 Customer Insights is available on a subscription basis. All users in an organization that owns consent management can get access to the service. 
 

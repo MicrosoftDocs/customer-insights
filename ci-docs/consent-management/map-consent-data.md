@@ -1,3 +1,15 @@
+---
+title: "Configure the usage of customer data and consent preferences"
+description: "Map consent data and configure the default consent rules."
+ms.date: 09/30/2021
+ms.service: customer-insights
+ms.topic: how-to
+author: smithy7
+ms.author: smithc
+ms.reviewer: mhart
+manager: shellyha
+---
+
 # Set consent data and apply consent preferences
 
 Define how customer data is used based on a customer's consent preferences. You can choose to include or exclude customer data from business activities that involve usage of customer data. For example, you can exclude customers form your product announcements if the they haven't given consent for marketing emails.

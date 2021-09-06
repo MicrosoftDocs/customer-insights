@@ -1,3 +1,15 @@
+---
+title: "Overview for the consent management capability"
+description: "Understand the fundamentals of consent management in Dynamics 365 Customer Insights."
+ms.date: 09/30/2021
+ms.service: customer-insights
+ms.topic: how-to
+author: smithy7
+ms.author: smithc
+ms.reviewer: mhart
+manager: shellyha
+---
+
 # Consent management (preview) overview
 
 Modern marketing efforts collect data in various forms to provide unique experiences for new and existing customers. To create truly personalized experiences, organizations rely on customer data gathered through first-party and third-party sources. Privacy regulations and important evolutions around customer data control requires organizations to constantly adapt their marketing scenarios.
