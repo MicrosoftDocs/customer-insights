@@ -34,7 +34,6 @@ On the **Discover** tab, you'll find the following enrichments.
 |[Location data](enrichment-here.md) provided by HERE Technologies   |         |    x     |
 |[Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)   |    x     |     x    |
 |[Azure Maps](enrichment-azure-maps.md) provided by Microsoft   |         |   x      |
-|Row9     |         |         |
 
 On the **My enrichments** tab, you can see the enrichments you've configured and edit their properties.
 
