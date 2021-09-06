@@ -27,12 +27,13 @@ After adding Customer Insights as a data connection, you can choose the followin
 
 - Customer: to use data from the [unified customer profile](customer-profiles.md).
 - UnifiedActivity: to display the [activity timeline](activities.md) on the app.
+- ContactProfile: to display the contacts of a customer. This entity is only available in audience insights instance for business accounts.
 
 ## Limitations
 
 ### Retrievable entities
 
-You can only retrieve the **Customer**, **UnifiedActivity**, and **Segments** entities through the Power Apps connector. Other entities are shown because the underlying connector supports them through triggers in Power Automate.  
+You can only retrieve the **Customer**, **UnifiedActivity**, **Segments** and **ContatProfile** entities through the Power Apps connector. Note: ContactProfile is only available in audience insights instance for business accounts. Other entities are shown because the underlying connector supports them through triggers in Power Automate.  
 
 ### Delegation
 
@@ -41,8 +42,9 @@ Delegation works for the Customer entity and UnifiedActivity entity.
 - Delegation for **Customer** entity: To use delegation for this entity, the fields need to be indexed in [Search & filter index](search-filter-index.md).  
 
 - Delegation for **UnifiedActivity**: Delegation for this entity only works for the fields **ActivityId** and **CustomerId**.  
+- Delegation for **ContactProfile**: Delegation for this entity only works for the fields **ContactId** and **CustomerId**. Note: ContactProfile is only available in audience insights instance for business accounts.
 
-- For more information about delegation, see [Power Apps delegable functions and operations](/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps). 
+- For more information about delegation, see [Power Apps delegable functions and operations](https://docs.microsoft.com/powerapps/maker/canvas-apps/delegation-overview). 
 
 ## Example gallery control
 
