@@ -10,7 +10,7 @@ Once consent data is in the system, go to the **Consent** page in the Consent Ce
 
 ## Map consent data
 
-Mapping consent data creates mappings that will be available in audience insights where you can apply them as rules to individual segments or exports. In addition, you can assign these mappings to purposes and subscriptions as global rules that automatically apply to all segments. The app guides you through the steps to complete to map the consent data. 
+Mapping consent data creates mappings that will be available in audience insights where you can apply them as rules to individual segments or exports. In addition, you can assign these mappings to purposes and subscriptions as consent rules that automatically apply to all segments. The app guides you through the steps to complete to map the consent data. 
 
 1. Go to **Consent** and select **Map data**.
 1. In the Map data step, create the first rule: 
