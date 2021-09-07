@@ -26,11 +26,11 @@ Predictions lets you easily create predicted values that can enhance your unders
 
 Before your organization can use the predictions feature, the following prerequisites must be met:
 
-1. Your organization has an instance [set up in the Common Data Service](/ai-builder/build-model#prerequisites) and it's in the same organization as Customer Insights.
+1. Your organization has an instance [set up in Microsoft Dataverse](/ai-builder/build-model#prerequisites) and it's in the same organization as Customer Insights.
 
-2. Your environment is attached to your Common Data Service instance.
+2. Your audience insight environment is attached to your Dataverse instance.
 
-If you're [creating a new environment](manage-environments.md), configure it in the **Create an environment** dialog and select **Advanced**. If you've already created an environment, go to its settings and select **Advanced**. Either way, in the **Use predictions** section, enter the Common Data Service instance URL to which you want to attach your environment.
+If you're [creating a new environment](get-started-paid.md), configure it in the **Create an environment** dialog and select **Advanced**. If you've already created an environment, go to its settings and select **Advanced**. Either way, in the **Use predictions** section, enter the Dataverse instance URL to which you want to attach your environment.
 
 ## Create a prediction in the Customer entity
 
@@ -134,7 +134,7 @@ The next run of your prediction will use the updated model you've created.
 
 ## Troubleshooting
 
-If you can't complete the attach Common Data Service process due to an error, you can try to complete the process manually. There are two known issues that can occur in the attach process:
+If you can't complete the attach Dataverse process due to an error, you can try to complete the process manually. There are two known issues that can occur in the attach process:
 
 - The Customer Card Add-in solution is not installed.
     1. Complete the instructions to [install and configure the solution](customer-card-add-in.md).

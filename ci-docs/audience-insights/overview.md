@@ -1,7 +1,7 @@
 ---
 title: "Audience insights for Dynamics 365 Customer Insights overview"
 description: "Overview of audience insights for Dynamics 365 Customer Insights."
-ms.date: 01/18/2021
+ms.date: 08/04/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -14,7 +14,7 @@ ms.custom: intro-internal
 
 # Audience insights for Dynamics 365 Customer Insights overview
 
-Audience insights helps you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
+[Audience insights, a capability of Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/audience-insights-capability/) helps you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
 
 ## Main benefits 
 
@@ -29,9 +29,9 @@ Audience insights helps you build a deeper understanding of your customers. Conn
 
 - **Power your business processes and personalized customer experiences**
 
-  - Drive personalized engagement across channels—empower marketing, sales, and service professionals with out-of-the-box, contextual customer insights and tailored customer profile cards infused into the business applications they already use every day
-  - Automate customer-centric experiences and processes based on customizable profiles, business measures, and segments.
-  - Enable and extend line-of-business experiences built on [Microsoft Power Platform](https://powerplatform.microsoft.com/). Quickly build applications with embedded insights using a powerful low code approach from PowerApps.  
+  - Drive personalized engagement across channels—empower marketing, sales, and service professionals. Use out-of-the-box, insights and tailored customer profile cards that integrate with business applications they already use.
+  - Automate experiences and processes based on customizable profiles, business measures, and segments.
+  - Enable and extend line-of-business experiences built on [Microsoft Power Platform](https://powerplatform.microsoft.com/). Quickly build applications with embedded insights using a powerful low code approach from Power Apps.  
 
 ## Key audiences
 
@@ -45,13 +45,12 @@ Audience insights helps you build a deeper understanding of your customers. Conn
 
 - **Business users:**
 
-  - Insights into 360-degree customer profiles and end-to-end views of the customer journey.
-  - View 360-degree customer data within Dynamics 365 business processes with prebuild packages.
+  - Insights into 360-degree customer profiles and customer journeys.
+  - View 360-degree customer data within Dynamics 365 business processes with prebuilt packages.
 
 - **Business analysts:**
 
   - Build customizable profiles, define measures, create segments, and benefit from predictive analytics to get a 360-degree view of your customer, specific to your organization.  
-  - Use out-of-box connectors for several Microsoft and third-party applications or APIs to further process the insights.
-
+  - Use out-of-box connectors for several Microsoft and third-party applications or APIs to process the insights.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

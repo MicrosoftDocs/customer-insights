@@ -1,7 +1,7 @@
 ---
 title: "Customer Insights entity schemas in Common Data Model"
 description: "Work with entities in Common Data Model."
-ms.date: 04/17/2020
+ms.date: 08/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -19,7 +19,7 @@ manager: shellyha
 
 This shared data model allows applications and data integrators to collaborate more easily by providing a unified definition of data. Common Data Model includes a rich metadata system with standard entities, relationships, hierarchies, traits, and more. It originated from Dynamics 365 apps and is open-sourced on GitHub with over 260 standard entities. A large system of internal and external partners contributes industry-specific concepts to Common Data Model.
 
-Multiple systems and platforms implement Common Data Model today, including Power BI dataflows and Azure Data Services. It's already supported in the Common Data Service, Dynamics 365, Power Apps, Power BI, and upcoming Azure data services, directly accruing value towards the [Open Data Initiative](https://www.microsoft.com/open-data-initiative).
+Multiple systems and platforms implement the Common Data Model today, including Power BI dataflows and Azure Data Services. It's already supported in Microsoft Dataverse, Dynamics 365, Power Apps, Power BI, and upcoming Azure data services, directly accruing value towards the [Open Data Initiative](https://www.microsoft.com/open-data-initiative).
 
 ## Customer Insights entity schemas
 
@@ -37,7 +37,7 @@ For more information, see the documentation about the [Customer Insights entity 
 
 ## View entities using the Common Data Model Entity Navigator
 
-You can view entities in the [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). Select the **Load from GitHub!** button and navigate to **foundationCommon** > **crmCommon** > **solutions** > **customerInsights** where you'll find the list of Customer Insights entities and their definitions.
+You can view entities in the [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). Select an entity from the Insights Application section to get the list of Customer Insights entities and their definitions.
 > [!div class="mx-imgBorder"]
 > ![CDM Entity Navigator showing CustomerActivity entity.](media/CDM-entity-navigator.png "CDM Entity Navigator showing CustomerActivity entity")
 
