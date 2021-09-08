@@ -17,39 +17,23 @@ ms.manager: shellyha
 
 This topic defines selected terms that appear in Dynamics 365 Customer Insights, its capabilities, and in the supporting documentation.
 
-## Activity data
+## Audience insights
 
-Customers' activity data that is ingested to Customer Insights. Examples of activity data include transactions, support call duration, purchases, and returns. For tracking of demographic segments, activity data gets analyzed for recency, frequency, and monetary value (and duration).
+### Activity data
 
-## Affinity 
+Customers' [activity data](../audience-insights/activities.md) that is ingested to Customer Insights. Examples of activity data include transactions, support call duration, purchases, and returns. For tracking of demographic segments, activity data gets analyzed for recency, frequency, and monetary value (and duration).
 
-Affinities are customer preferences for brands and interests across various demographic
-segments (defined by age, gender, or location).The online search volume for a brand or interest determines how much affinity a demographic segment,compared to other segments, has to that brand or interest.
+### Affinity 
 
-## Attribute
+[Affinities](../audience-insights/enrichment-microsoft.md) are customer preferences for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest determines the affinity of a demographic segment, compared to other segments, has to that brand or interest.
 
-Attributes are custom semantic types that you set during the data unification process. You can only specify attributes that exist in Customer Profile entities that you've created. Attribiutes that aren't automatically mapped to a semantic type are grouped as unmapped fields.
+### Connections
 
-## Base event
-
-A base event is a set of data representing activity on a website, such as a page view or click. See also *refined event*.
-
-## Connections
-
-Connections are used to configure third-party enrichments, which admins set up with credentials and provides consent for data transfers. See also *enrichment*.
-
-## Custom model
-
-Custom models let you create and manage workflows based on Azure Machine Learning models.
+[Connections](../audience-insights/connections.md) are used to configure [enrichments](../audience-insights/enrichment-hub.md) and [exports](../audience-insights/export-destinations.md), which admins set up with credentials and provides consent for data transfers.
 
 ## Data ingestion
 
-Data ingestion is the process of connecting to a data source. After ingesting the
-data, you can unify and take action on it.
-
-## Dimensions
-
-Dimensions are attributes of events that can describe, filter, or group data. For example, you can select *operating system (OS)*, *browser*, or *page name* as a dimension in a report. See also *attribute* and *event*.
+Data ingestion is the process of connecting to a data source. After ingesting the data, you can unify and take action on it.
 
 ## Enrichment (of data)
 
@@ -58,6 +42,36 @@ Data enrichment refers to the process of appending or enhancing collected data w
 ## Entity 
 
 An entity in Customer Insights contains activity data. For example, the *UnifiedActivity* entity contains data for a specific activity. The entity that you choose as your primary entity serves as the basis for your unified profiles dataset.
+
+## Prediction
+
+Predictions help you better understand what customers are interested in purchasing. They can also help organizations improve business revenue and build customer loyalty through personalization and engagement. For example, using your own data, you can create predictions for what products your customers are likely to purchase in the future.
+
+## Relationships
+
+Relationships connect entities to define a graph of your data when entities share a common identifier, or a foreign key. You can reference foreign keys from one entity to another. Relationship-connected entities enable you to define segments and measures based on multiple data sources.
+
+## Segment
+
+A segment is a set of specific demographic characteristics (such as defined by age, gender, location, and so on). For example, you can map fields from your unified customer entity to define the demographic segment you want the system to use for enriching your customer data.
+
+## Unification (of data)
+
+The data unification process lets you unify once-disparate data sources into a single master dataset that provides a unified view of your customers. After setting up data sources, you can unify the data in three mandatory steps: Map, Match,and Merge.
+
+## Engagement insights
+
+### Base event
+
+A base event is a set of data representing activity on a website, such as a page view or click. See also *refined event*.
+
+### Custom model
+
+Custom models let you create and manage workflows based on Azure Machine Learning models.
+
+## Dimensions
+
+Dimensions are attributes of events that can describe, filter, or group data. For example, you can select *operating system (OS)*, *browser*, or *page name* as a dimension in a report. See also *attribute* and *event*.
 
 ## Environment
 
@@ -79,22 +93,13 @@ A member of a workspace is a user who can access a workspace. Members can have r
 
 A metric is a quantifiable measurement of data used to track or assess a process. Page views and average time spent on site are examples of relevant metrics.
 
-## Prediction
-
-Predictions help you better understand what customers are interested in purchasing. They can also help organizations improve business revenue and build customer loyalty through personalization and engagement. For example, using your own data, you can create predictions for what products your customers are likely to purchase in the future.
-
 ## Real-time usage
 
 Real-time usage provides an overview of current activity in your mobile app that automatically refreshes every minute. Use real-time usage to monitor the number of users and sessions currently active in your app and the top screen views.
 
-
 ## Refined event
 
 A refined event is a virtual view of a base event filtered by specific properties of the data. Use refined events to simplify a base event for export or to remove properties from an event that aren't necessary for exposure or export. See also *base event*.
-
-## Relationships
-
-Relationships connect entities to define a graph of your data when entities share a common identifier, or a foreign key. You can reference foreign keys from one entity to another. Relationship-connected entities enable you to define segments and measures based on multiple data sources.
 
 ## Report
 
@@ -107,14 +112,6 @@ Return frequency groups user session counts by the number of days since the user
 ## Screen view
 
 Screen views list screen views for individual screens in an app and thetotal number of screen views. You can view screen views by screen name or by screen title.
-
-## Segment
-
-A segment is a set of specific demographic characteristics (such as defined by age, gender, location, and so on). For example, you can map fields from your unified customer entity to define the demographic segment you want the system to use for enriching your customer data.
-
-## Unification (of data)
-
-The data unification process lets you unify once-disparate data sources into a single master dataset that provides a unified view of your customers. After setting up data sources, you can unify the data in three mandatory steps: Map, Match,and Merge.
 
 ## Visitor
 
