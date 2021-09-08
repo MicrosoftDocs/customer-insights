@@ -22,6 +22,8 @@ Use unified profiles and segments from audience insights for more analysis optio
 
 - Audience insights profiles must be stored in an Azure Data Lake Storage account that you own, or in a [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;managed data lake. 
 
+- Your audience insights environment should have an associated Dataverse environment. And if that environment is also using Dataverse for data storage, make sure you check the **Enable data sharing** option in audience insights. For more information, see [Create and configure a paid license of Customer Insights](../audience-insights/get-started-paid.md).
+
 - You need administrator permissions for both the engagement insights and audience insights environments.
 
 - Linked environments must be in the same geographical region.
@@ -29,7 +31,6 @@ Use unified profiles and segments from audience insights for more analysis optio
 > [!NOTE]
 > - If your audience insights subscription is a trial that uses an audience insights internally managed data lake, contact [pirequest@microsoft.com](mailto:pirequest@microsoft.com) for assistance. 
 > - If your audience insights environment uses your own Azure Data Lake Storage to store data, you need to add an engagement insights Azure service principal to your storage account. For details, go to [Connect to an Azure Data Lake Storage account with an Azure service principal for audience insights](../audience-insights/connect-service-principal.md). 
-> - Your audience insights environment should have an associated Dataverse environment. And if that environment is also using Dataverse for data storage, make sure you check the **Enable data sharing** option in audience insights. For more information, see [Create and configure a paid license of Customer Insights](../audience-insights/get-started-paid.md).
 
 ## Create an environment link
 
