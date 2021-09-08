@@ -346,12 +346,6 @@
     - name: Regional availability
       href: engagement-insights/regional-availability.md
 
-- name: Service limits
-  href: service-limits.md
-
-- name: DSR rights and requests
-  href: dsr-rights-requests.md
-
 - name: Integrate audience and engagement insights
   items:
 
@@ -364,5 +358,12 @@
     - name: Use demographic dimensions for splitting behavioral data
       href: engagement-insights/curate-dimensions.md
 
+- name: Service limits
+  href: service-limits.md
+
+- name: DSR rights and requests
+  href: dsr-rights-requests.md
+
+
 - name: Get support
-  href: https://dynamics.microsoft.com/en-us/support/
+  href: https://dynamics.microsoft.com/support/
