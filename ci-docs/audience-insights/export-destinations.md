@@ -18,11 +18,17 @@ The **Exports** page shows you all configured exports. Exports share specific da
 
 Go to **Data** > **Exports** to view the exports page. All user roles can view configured exports. Use the search field in the command bar to find exports by their name, connection name, or connection type.
 
-> [!TIP]
-> Almost every export option supports B2B and B2C scenarios. You might need to choose different entities when configuring the export of data tables. In B2B scenarios, some segment exports have to map to the email address of the contacts that belong to a business account. The bot for Microsoft Teams can only look up individual customers so it works only in the B2C scenario.
+**Exporting segments in B2B vs B2C scenarios**
+- Almost every export option supports B2B and B2C scenarios. **Exporting segments** to various target systems has specific requirements and can be summarized as a segment member having a contactable information. While this is usually the case for segments built upon contacts (B2C), this is not necessarily the case for segments build upon accounts (B2B). 
 
-## Set up a new export
+**Segment exports in B2B instance**
+- Segments in the context of B2B instance are build from accounts. To be able to export account segments as is, the target system needs to support pure account segments. This is the case for LinkedIn when selecting option "company" when defining the export.
+- All other target systems need fields from the contact entity. To ensure account segments can retrieve their respective contacts your segment definition needs to make them eligible. [Learn more how to configure eligible segments.]
 
+**Segment exports in B2C instance**
+- Segments in the context of B2C instance are build from contacts. Any segment can be exported as long as the segment fulfills the requirements of the target systems, for example an email address as contactable information.
+
+## Setup a new export
 To set up or edit an export, you need to have connections available to you. Connections depend on your [user role](permissions.md):
 - Administrators have access to all connections. They can also create new connections when setting up an export.
 - Contributors can have access to specific connections. They depend on administrators to configure and share connections. The exports list shows contributors whether they can edit or only view an export in the **Your permissions** column. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
