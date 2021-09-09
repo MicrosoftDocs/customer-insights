@@ -26,7 +26,7 @@ If you're using a trial version of audience insights capability or an environme
 
 ## Enable the customer profile report
 
-An environment admin must [create a connection to audience insights](configure-connections.md).
+An environment admin must [link engagement insights and audience insights](integrate-audience-insights-engagement-insights.md).
 
 After specifying the connection details, the admin can grant access to other people in the organization to see the report. The environment admin setting up the connection automatically has access to the report. 
 

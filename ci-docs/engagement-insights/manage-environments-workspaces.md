@@ -4,7 +4,7 @@ description: How to create, rename, and delete workspaces and environments.
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali
-ms.date: 07/01/2021
+ms.date: 09/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -80,13 +80,11 @@ Deleting a workspace will permanently remove all of its content, data, settings,
 
 1. Select **Add members** to give access and [assign roles](user-roles.md). Currently, only **Workspace admin** is available.
 
-1. If you set up a [connection to audience insights](configure-connections.md), you can select **Allow access to profile data** to allow the member to see reports based on [user profiles](profile-reports.md).
-
 1. Select **Add members** to add them to your workspace.
 
 ## Manage an environment
 
-As an Environment admin, you can access an environment from the left navigation pane. You can configure environment settings, other Environment admins, workspaces, and [connections to audience insights](configure-connections.md). Select tabs to move between different areas in the admin center.
+As an Environment admin, you can access an environment from the left navigation pane. You can configure environment settings, other environment admins, and workspaces. Select tabs to move between different areas in the admin center.
 
 :::image type="content" source="media/New-environment.png" alt-text="Environment admin center.":::
 
@@ -118,8 +116,6 @@ As an Environment admin, you can access an environment from the left navigation 
 
 1. Select **Add members** to update members and [assign roles](user-roles.md). Currently, only **Environment admin** is available.
 
-1. If you set up a [connection to audience insights](configure-connections.md), you can select **Allow access to profile data** to allow the member to see reports based on [user profiles](profile-reports.md).
-
 1. Select **Add members** to add them to your environment.
 
 ### Delete an environment
@@ -138,7 +134,7 @@ Environment admins can delete environments. Before you can delete an environment
 
 Establishing connections to audience insights lets you see reports in engagement insights based on unified customer profiles. 
 
-For more information, see [Configure connections](configure-connections.md).
+For more information, see [Create a link between audience insights and engagement insights](integrate-audience-insights-engagement-insights.md).
 
 ## Manage personal data
 
