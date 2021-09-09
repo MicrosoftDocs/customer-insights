@@ -732,6 +732,26 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "ci-docs/engagement-insights/quotas.md",
+      "redirect_url": "/dynamics365/customer-insights/service-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/service-limits.md",
+      "redirect_url": "/dynamics365/customer-insights/service-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/delete-export-personal-data.md ",
+      "redirect_url": "/dynamics365/customer-insights/dsr-rights-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/gdpr.md",
+      "redirect_url": "/dynamics365/customer-insights/dsr-rights-requests",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "ci-docs/engagement-insights/configure-connections.md",
       "redirect_url": "/dynamics365/customer-insights/engagement-insights/integrate-audience-insights-engagement-insights",
       "redirect_document_id": false
