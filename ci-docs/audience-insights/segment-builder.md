@@ -16,8 +16,8 @@ manager: shellyha
 Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. You can [create new segments](#create-a-new-segment) using the segment builder or [create quick segments](#quick-segments) from other areas of the app. 
 
 > [!TIP]
-> Quick segments are only supported in B2C environments.    
-> While segments in B2C are based on individual customers, their information is automatically included in new segments. For B2B environments, segments are based on accounts (companies or subsidiaries with related contacts). To include information in segments about the related contacts, use the projected attributes functionality when defining a segment.
+> Quick segments are only supported in Individual customers-focused environments.    
+> Segments based on individual customers automatically include available contact information for segment members. For business accounts-focused environments, segments are based on accounts (companies or subsidiaries with related contacts). To include information in segments about the related contacts, use the projected attributes functionality when defining a segment.
 
 ## Segment Builder
 
@@ -59,7 +59,7 @@ While creating a segment, you can save a draft. It will be saved as an inactive 
    - Review the list of available entities and attributes in the **Add to Rule** pane and select the **+** icon next to the attribute to add. Choose if you want to add the attribute to an existing rule or use it to create a new rule.
    - Type the name of the attribute in the rule section to see matching suggestions.
 
-1. Choose the operators to specify the matching values of the condition. Attribute can have one of four data types as value: numerical, string, date, or Boolean. Depending on the data type of the attribute, different operators are available to specify the condition. For B2B segments, two special operators are available to include potential hierarchies between the ingested accounts. Use the *child of* and *parent of* operators to include related accounts. 
+1. Choose the operators to specify the matching values of the condition. Attribute can have one of four data types as value: numerical, string, date, or Boolean. Depending on the data type of the attribute, different operators are available to specify the condition. For segments with business accounts, two special operators are available to include potential hierarchies between the ingested accounts. Use the *child of* and *parent of* operators to include related accounts. 
 
 1. Select **Add condition** to add more conditions to a rule. To create a rule under the current rule, select **Add sub-rule**.
 

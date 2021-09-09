@@ -21,11 +21,11 @@ Customer profiles that match the filters of a segment definition are referred as
 
 There are multiple ways to create a new segment: 
 
-- Complex segment with segment builder: [Blank segment](segment-builder.md#create-a-new-segment) (B2B and B2C environments)
-- Simple segments with one operator: [Quick segment](segment-builder.md#quick-segments) (B2C environments only)
-- AI-powered way to find similar customers: [Similar Customers](find-similar-customer-segments.md) (B2C environments only)
-- AI-powered suggestions based on measures or attributes: [Suggested segments to improve measures](suggested-segments.md) (B2C environments only)
-- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md) (B2C environments only)
+- Complex segment with segment builder: [Build our own](segment-builder.md#create-a-new-segment) (Individual customers and business accounts)
+- Simple segments with one operator: [Quick segment](segment-builder.md#quick-segments) (Individual customers only)
+- AI-powered way to find similar customers: [Similar Customers](find-similar-customer-segments.md) (Individual customers only)
+- AI-powered suggestions based on measures or attributes: [Suggested segments to improve measures](suggested-segments.md) (Individual customers only)
+- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md) (Individual customers only)
 
 ## Manage existing segments
 
