@@ -1,7 +1,7 @@
 ---
 title: "Create and manage measures"
 description: "Define measures to analyze and reflect the performance of your business."
-ms.date: 04/12/2021
+ms.date: 08/30/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -18,6 +18,9 @@ Measures help you to better understand customer behaviors and business performan
 Measures are created using the measure builder, a data query platform with various operators and simple mapping options. It lets you filter the data, group results, detect [entity relationship paths](relationships.md), and preview the output.
 
 Use the measure builder to plan business activities by querying customer data and extract insights. For example, creating a measure of *total spend per customer* and *total return per customer* helps identify a group of customers with high spend yet high return. You can [create a segment](segments.md) to drive next best actions. 
+
+> [!TIP]
+> When your environment is set up for B2B scenarios, measure templates aren't available. Also, measures can only have one calculation for B2B while they can have multiple calculations for B2C. However, you can specify multiple optional rules for a calculation. 
 
 ## Build your own measure from scratch
 
@@ -70,6 +73,10 @@ This section walks you through creating a new measure from scratch. You can buil
 
 1. If there are values in your data that you need to replace with an integer—for example, replace *null* with *0*—select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements.
 
+1. For B2B measures, you can set **Roll up sub-accounts** to on when you use accounts with hierarchies.
+   - If it's set to **Off**, the measure is calculated for every account. Every account gets own of result.
+   - If it's set to **On**, you can choose the account hierarchy according to the ingested hierarchies. The measure will yield only one result because it's aggregated with sub accounts.
+
 1. If there are multiple paths between the data entity you mapped and the *Customer* entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path. 
    
    1. Select **Data preferences** and choose the entity path that should be used to identify your measure. If there's only a single path to the *Customer* entity, this control won't show.
@@ -77,7 +84,7 @@ This section walks you through creating a new measure from scratch. You can buil
 
    :::image type="content" source="media/measures-data-preferences.png" alt-text="Select the entity path for the measure.":::
 
-1. To add more calculations for the measure, select **New calculation**. You can only use entities on the same entity path for new calculations. More calculations will show as new columns in the measure output entity.
+1. To add more calculations for the measure, select **New calculation**. You can only use entities on the same entity path for new calculations. More calculations will show as new columns in the measure output entity. Multiple calculations are only available for B2C measures.
 
 1. Select **...** on the calculation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.
 
@@ -88,6 +95,9 @@ This section walks you through creating a new measure from scratch. You can buil
 1. Go to **Measures** to see the newly created measure in the list.
 
 ## Use a template to build a measure
+
+> [!TIP]
+> This feature is only available for measures created in a B2C environment.
 
 You can use predefined templates of commonly used measures to create them. Detailed descriptions of the templates and a guided experience help you with efficient measure creation. Templates build on mapped data from the *Unified Activity* entity. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
 
