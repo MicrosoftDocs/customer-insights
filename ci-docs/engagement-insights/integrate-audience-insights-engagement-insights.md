@@ -70,6 +70,7 @@ After linking environments, you can select optional features for the linked envi
 
    > [!IMPORTANT]
    > If you don't explicitly add users in this step, the data will be hidden from users in engagement insights.
+   > For audience insights segments to show up in engagement insights, you must first [run merge and downstream processes](../audience-insights/merge-entities.md). Downstream processes are important because they generate a unique table that prepares audience insights segments to be shared with engagement insights. (If a system refresh is scheduled, it will automatically include downstream processes.)
 
 1. Review your selection, and then select **Finish**.
 
