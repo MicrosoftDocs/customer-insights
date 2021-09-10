@@ -1,31 +1,31 @@
 ---
 title: "Enrichment of company profiles with the third-party enrichment Leadspace"
 description: "General information about the Leadspace third-party enrichment."
-ms.date: 04/09/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: kishorem-MS
-ms.author: kishorem
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
 ---
 
 # Enrichment of company profiles with Leadspace (preview)
 
-Leadspace is a data science company that provides a B2B Customer Data Platform. It enables customers with unified customer profiles for companies to enrich their data. Enrich *company records* with attributes including company size, location, industry and more. Enrich *contact records* with attributes including title, persona, email verification and more.
+Leadspace is a data science company that provides a B2B Customer Data Platform. It enables environments with unified customer profiles based on accounts to enrich their data. Enrich *Customer profiles* with attributes such as company size, location, or industry. Enrich *Contact profiles* with attributes such as title, persona, or email verification.
 
 ## Prerequisites
 
 To configure Leadspace, the following prerequisites must be met:
 
 - You have an active Leadspace license.
-- You have [unified customer profiles](customer-profiles.md) for companies.
+- You have [unified customer profiles](customer-profiles.md) based on accounts.
 - A Leadspace connection has already been configured by an administrator or you have [administrator](permissions.md#administrator) permissions and the “perpetual key” (referred to as **Leadspace token**). Contact [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) directly for details about their product.
 
 ## Configure the enrichment
 
-1. In Audience Insights, go to **Data** > **Enrichment**.
+1. In audience insights, go to **Data** > **Enrichment**.
 
 1. Select **Enrich my data** on the Leadspace tile and select **Get started**.
 
@@ -41,13 +41,13 @@ To configure Leadspace, the following prerequisites must be met:
 
 1. Select **Next** and define which fields from your unified profiles are used to look for matching company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
 
-   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace field mapping pane.":::
+   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace field-mapping pane.":::
 
 1. Select **Next** to complete the field mapping.
 
-1. Click the checkbox if you have contact profiles that you would like to enrich. Audience Insights will automatically map the required fields.
+1. Select the checkbox if you have *Contact profiles* that you would like to enrich. Audience insights will automatically map the required fields.
 
- :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace field mapping pane.":::
+   :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace field-mapping pane.":::
  
 1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
 
