@@ -1,14 +1,14 @@
 ---
 title: "Enrichment of company profiles with Dun & Bradstreet"
 description: "General information about the Dun & Bradstreet third-party enrichment."
-ms.date: 04/09/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
-manager: skummer
+manager: shellyha
 ---
 
 # Enrichment of company profiles with Dun & Bradstreet (preview)
@@ -19,34 +19,24 @@ Dun & Bradstreet provides commercial data, analytics, and insights for businesse
 
 To configure a Dun & Bradstreet enrichment, the following prerequisites must be met:
 
-- You have an active Dun & Bradstreet license.
+- You have an active [Dun & Bradstreet](https://www.dnb.com/) license.
 - You have [unified customer profiles](customer-profiles.md) for companies.
-- A Dun & Bradstreet connection has already been configured by an administrator or you have [administrator](permissions.md#administrator) permissions and the relevant credentials from Dun & Bradstreet Connect. 
-
-Click [here](https://www.dnb.com/&lead_source=microsoft_audienceinsights) for information about the data that Dun & Bradstreet provide and information about how to purchase a Dun & Bradstreet license.
-
-Click [here](https://sso.dnb.com/signin/forgot-password&lead_source=microsoft_audienceinsights) to retrieve credentials if you are an existing Dun & Bradstreet customer.
+- A Dun & Bradstreet [connection](connections.md) has already been configured by an administrator or you have [administrator](permissions.md#administrator) permissions and the relevant credentials from Dun & Bradstreet Connect. 
 
 ## Setting up your Dun & Bradstreet project
 
-Once you have purchased a Dun & Bradstreet license you can set up a project in [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). The first step is to download this [csv file](media/DnBtemplate.csv) that will be used to map the Audience Insights fields to the corresponding Dun & Bradstreet fields. Use this file in the **Upload data** step of the Dun & Bradstreet project creation wizard. 
+As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). 
 
-When you have successfully created the project you can click the dots shown below to expose the menu and choose **Get S3 details**.
 
- :::image type="content" source="media/enrichment-dnb-dots.png" alt-text="Screenshot of dots in a Dun & Bradstreet project.":::
- 
- :::image type="content" source="media/enrichment-dnb-s3info.png" alt-text="Screenshot of selection of s3 information in a Dun & Bradstreet project.":::
+1. Sign in to [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). To retrieve credentials, [restore your password](https://sso.dnb.com/signin/forgot-password&lead_source=microsoft_audienceinsights).
+1. Download [our csv template file](tbd.md) that will be used to map the audience insights fields to the corresponding Dun & Bradstreet fields. 
+1. Upload the file in the **Upload data** step of the Dun & Bradstreet project creation experience. 
+1. When you have successfully created the project, select the horizontal dots in the Dun & Bradstreet project to see the available options.
+   :::image type="content" source="media/enrichment-dnb-dots.png" alt-text="Screenshot of dots in a Dun & Bradstreet project.":::
+1. Choose **Get S3 details**. Store this information in a safe place You'll it to [set up the connection for the enrichment](#configure-a-connection-for-dun--bradstreet) in audience insights. 
+   :::image type="content" source="media/enrichment-dnb-s3info.png" alt-text="Screenshot of selection of s3 information in a Dun & Bradstreet project.":::
 
-Store this information in a safe place as you will need it for setting up the enrichment in Audience Insights.
 
-<!---  
-In Dun & Bradstreet Connect follow these steps:
-
-1. Click *Create new project* and provide a project name.
-2. Click next, choose a name for your data, and upload the csv file that you downloaded above.
-3. 
-
---->
 
 ## Configure the enrichment
 
@@ -60,9 +50,9 @@ In Dun & Bradstreet Connect follow these steps:
 
 1. Select **Connect to Dun & Bradstreet** to confirm the connection.
 
-1. Select **Next** and choose the **Customer data set** you want to enrich with company data from Dun & Bradstreet. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+1. Select **Next** and choose the **Customer data set** you want to enrich with company data from Dun & Bradstreet. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only unified customer profiles contained in that segment.
 
-1. Select **Next** and define which fields from your unified profiles are used to look for matching company data from Dun & Bradstreet. Either **DUNS number** *or* **Name of company** and **Country** field are required. 
+1. Select **Next** and define which fields from your unified profiles are used to look for matching company data from Dun & Bradstreet. Either **DUNS number** or **Name of company** and **Country** field are required. 
 
    :::image type="content" source="media/enrichment-dnb-mapping.png" alt-text="Dun & Bradstreet field mapping pane.":::
 
@@ -79,7 +69,7 @@ You need to be an administrator to configure connections. Select **Add connectio
 
 1. Enter a name for the connection in the **Display name** box.
 
-1. Provide valid Dun & Bradstreet credentials and Dun & Bradstreet project details *Region, Drop folder path, and Drop folder name*.
+1. Provide valid Dun & Bradstreet credentials and Dun & Bradstreet project details *Region, Drop folder path, and Drop folder name*. You [get this information](#setting-up-your-dun--bradstreet-project) from the Dun & Bradstreet project.
 
 1. Review and provide your consent for **Data privacy and compliance** by selecting **I agree**.
 
