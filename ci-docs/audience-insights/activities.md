@@ -57,7 +57,7 @@ Your data sources can include entities with transactional and activity data from
       - **Web address**: Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* entity, which can be consumed downstream using [APIs](apis.md).
 
    - **Timeline view**
-      - If you would like the activity to be displayed in the timeline view on your customer profiles, select **Yes**. 
+      - If you would like this activity to be displayed in the timeline view on your customer profiles, select **Yes**. 
 
    :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity entity.":::
 
