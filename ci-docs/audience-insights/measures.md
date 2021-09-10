@@ -134,7 +134,7 @@ This section walks you through creating a new measure from scratch. You can buil
 
 1. If there are values in your data that you need to replace with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
 
-1. You can use the **Roll up sub-accounts** toggle if you use accounts with hierarchies.
+1. You can use the **Roll up sub-accounts** toggle if you [use accounts with hierarchies](tbd.md).
    - If it's set to **Off**, the measure is calculated for every account. Every account gets own of result.
    - If it's set to **On**, select **Edit** to choose the account hierarchy according to the ingested hierarchies. The measure will yield only one result because it's aggregated with sub accounts.
 
@@ -210,6 +210,7 @@ The following procedure outlines the steps to build a new measure using a templa
 # [Business accounts (B2B)](#tab/b2b)
 
 This feature is only available for measures created in a environments with individual customers as primary target audience.
+
 ---
 
 ## Manage your measures
@@ -238,6 +239,5 @@ Select a measure from the list for the following options:
 ## Next step
 
 You can use existing measures to create [a customer segment](segments.md).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
