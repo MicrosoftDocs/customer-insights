@@ -22,8 +22,14 @@
     - name: New and updated features
       href: audience-insights/whats-new-audience-insights.md
 
-    - name: Create a new environment
-      href: audience-insights/get-started-paid.md
+    - name: Get started
+      items: 
+        - name: Quickstart guide
+          href: audience-insights/get-started.md
+        - name: Create a new environment
+          href: audience-insights/get-started-paid.md
+        - name: Explore audience insights
+          href: audience-insights/home.md
 
     - name: Learn modules
       items:
@@ -82,6 +88,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Enhanced addresses
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Enrich with Azure Maps
+          href: audience-insights/enrichment-azure-maps.md
         - name: Enrich with HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Enrich with Leadspace
@@ -151,8 +159,6 @@
         - name: Create segments based on predictions
           href: audience-insights/prediction-based-segment.md
 
-
-
     - name: Export options
       items:
         - name: Exports
@@ -189,6 +195,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Klaviyo
+              href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
               href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
@@ -261,11 +269,6 @@
         - name: API references
           href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
 
-    - name: Service limits
-      href: audience-insights/service-limits.md
-    
-    - name: DSR requests under GDPR
-      href: audience-insights/gdpr.md
 
 - name: Engagement insights (preview)
   items:
@@ -280,7 +283,7 @@
 
     - name: Get started
       items:
-        - name: Get started
+        - name: Quickstart guide
           href: engagement-insights/get-started.md
         - name: Create a workspace
           href: engagement-insights/create-workspace.md
@@ -341,21 +344,30 @@
           href: engagement-insights/user-roles.md
         - name: Manage environments and workspaces
           href: engagement-insights/manage-environments-workspaces.md
-        - name: Configure connections
-          href: engagement-insights/configure-connections.md
         - name: Manage cookies and user consent
           href: engagement-insights/user-consent-storage.md
-
-    - name: GDPR
-      items: 
-        - name: Delete and export personal data
-          href: engagement-insights/delete-export-personal-data.md
 
     - name: Regional availability
       href: engagement-insights/regional-availability.md
 
-    - name: Service limits
-      href: engagement-insights/quotas.md
+- name: Integrate audience and engagement insights
+  items:
+
+    - name: Link audience insights and engagement insights
+      href: engagement-insights/integrate-audience-insights-engagement-insights.md
+
+    - name: Use audience insights segments in engagement insights reports
+      href: engagement-insights/integrate-audience-insights-segments.md
+
+    - name: Use demographic dimensions for splitting behavioral data
+      href: engagement-insights/curate-dimensions.md
+
+- name: Service limits
+  href: service-limits.md
+
+- name: DSR rights and requests
+  href: dsr-rights-requests.md
+
 
 - name: Get support
-  href: https://dynamics.microsoft.com/en-us/support/
+  href: https://dynamics.microsoft.com/support/

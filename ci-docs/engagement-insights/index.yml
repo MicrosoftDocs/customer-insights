@@ -87,6 +87,6 @@ landingContent:
             - text: Manage environments and workspaces
               url: manage-environments-workspaces.md
             - text: Connect to audience insights 
-              url: configure-connections.md
+              url: integrate-audience-insights-engagement-insights.md
             - text: Manage cookies and user consent
               url: user-consent-storage.md
