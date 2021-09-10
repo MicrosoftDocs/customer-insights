@@ -1,7 +1,18 @@
+---
+title: "Important terms and concepts for the consent management capability"
+description: "Learn about commonly used terms and concepts in the consent management capability of Customer Insights."
+ms.date: 09/30/2021
+ms.service: customer-insights
+ms.topic: how-to
+author: smithy7
+ms.author: smithc
+ms.reviewer: mhart
+manager: shellyha
+---
 
 # Terms and concepts
 
-<!-- content will be part of the all-up terms article for CI -->
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Subscription consent
 

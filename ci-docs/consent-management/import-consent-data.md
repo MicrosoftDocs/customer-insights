@@ -10,11 +10,13 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Import subscription consent data
+# Import consent data
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Consent management lets you import data about the consent agreements from your customers. There are two types of consent data: subscriptions and purposes. Subscriptions are channels of communication to existing or prospective customers. 
 
-## How to import subscription consent data
+## How to import consent data
 
 With a newly provisioned consent management capability, the first run experience guides you to start of the data import process. You can also start the process by going to Home or Consent in the navigation pane. The steps to import consent data are the same, wherever you start the process. 
 

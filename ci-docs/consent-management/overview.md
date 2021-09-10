@@ -12,6 +12,8 @@ manager: shellyha
 
 # Consent management (preview) overview
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 Modern marketing efforts collect data in various forms to provide unique experiences for new and existing customers. To create truly personalized experiences, organizations rely on customer data gathered through first-party and third-party sources. Privacy regulations and important evolutions around customer data control requires organizations to constantly adapt their marketing scenarios.
 
 As an organization that runs on trust, Microsoft empowers its customers to do the same. We provide organizations with tools to honor trust with their own customers to help they stay compliant with regulatory requirements. 

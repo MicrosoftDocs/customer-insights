@@ -1,4 +1,18 @@
+---
+title: "Respond to DSR requests under GDPR"
+description: "Learn how to remove personal data from the consent management capability of Customer Insights."
+ms.date: 09/30/2021
+ms.service: customer-insights
+ms.topic: how-to
+author: smithy7
+ms.author: smithc
+ms.reviewer: mhart
+manager: shellyha
+---
+
 # Data subject rights request under GDPR
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 The consent management capability doesn't collect user data directly. It only imports and processes consent data that is provided by users in other applications.
 

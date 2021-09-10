@@ -11,6 +11,12 @@ manager: shellyha
 ms.custom: intro-internal
 ---
 
+# Get started with consent management
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
+The consent management capability of Dynamics 365 Customer Insights enables organizations to manage how they use the data they gathered about their customers.
+
 You have to be an administrator in audience insights to work with the consent management capability.
 
 1. Open the Consent Center from audience insights. It might take a moment to provision the consent center if it's the first time you visit. 

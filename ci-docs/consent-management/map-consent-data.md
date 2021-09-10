@@ -12,6 +12,8 @@ manager: shellyha
 
 # Set consent data and apply consent preferences
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 Define how customer data is used based on a customer's consent preferences. You can choose to include or exclude customer data from business activities that involve usage of customer data. For example, you can exclude customers form your product announcements if the they haven't given consent for marketing emails.
 
 ## Start the consent mapping process
