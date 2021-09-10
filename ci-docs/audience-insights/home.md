@@ -1,7 +1,7 @@
 ---
 title: "Home page in audience insights"
 description: "Start exploring the app on the Home page."
-ms.date: 09/01/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
