@@ -28,6 +28,11 @@ Go to **Data** > **Exports** to view the exports page. All user roles can view c
 **Segment exports in B2C instance**
 - Segments in the context of B2C instance are build from contacts. Any segment can be exported as long as the segment fulfills the requirements of the target systems, for example an email address as contactable information.
 
+**Limits on exports**
+- When exporting to 3rd party target systems, limits on how many contacts you can export may occur. 
+- For B2C, you will see the actual number of contacts within a segment shown when selecting a segment for exporting. A warning will be displayed in case a segment is too large. 
+- For B2B, you will see the number of accounts within a segment, but not the number of contacts that may be projected to the account segments. In some cases this could lead to the exported segment actually containing more contacts than the target system, which will result in skipping the export. 
+
 ## Setup a new export
 To set up or edit an export, you need to have connections available to you. Connections depend on your [user role](permissions.md):
 - Administrators have access to all connections. They can also create new connections when setting up an export.
