@@ -1,7 +1,7 @@
 ---
 title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -22,18 +22,27 @@ In audience insights, go to **Data** > **Enrichment** to work with enrichment op
 
 You need to have Contributor or Administrator permissions to create or edit enrichments. For more information, see [Permissions](permissions.md).
 
-On the **Discover** tab, you'll find the following enrichments.
+On the **Discover** tab, you'll find all supported enrichment options.
 
-|Enrichment |Supports individual customers (B2C)  |Supports business accounts (B2B)  |
-|---------|---------|---------|
-|[Brands](enrichment-microsoft.md) provided by Microsoft   |    x     |         |
-|[Interests](enrichment-microsoft.md) provided by Microsoft    |    x     |         |
-|[Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft    |    x     |    x     |
-|[Company data](enrichment-leadspace.md) provided by Leadspace    |         |    x     |
-|[Demographics](enrichment-experian.md) provided by Experian     |    x     |    x    |
-|[Location data](enrichment-here.md) provided by HERE Technologies   |         |    x     |
-|[Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)   |    x     |     x    |
-|[Azure Maps](enrichment-azure-maps.md) provided by Microsoft   |         |   x      |
+# [Individual customers (B2C)](#tab/b2c)
+
+- [Brands](enrichment-microsoft.md) provided by Microsoft
+- [Interests](enrichment-microsoft.md) provided by Microsoft
+- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft 
+- [Demographics](enrichment-experian.md) provided by Experian
+- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
+- [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
+
+# [Business accounts (B2B)](#tab/b2b)
+
+- [Company data](enrichment-leadspace.md) provided by Leadspace
+- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft 
+- [Location data](enrichment-here.md) provided by HERE Technologies 
+- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
+- [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
+- [Company profiles](enrichment-dnb.md) provided by Dun & Bradstreet
+
+---
 
 On the **My enrichments** tab, you can see the enrichments you've configured and edit their properties.
 
