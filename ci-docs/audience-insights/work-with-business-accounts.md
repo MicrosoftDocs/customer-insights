@@ -6,7 +6,7 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: wimohab
+ms.author: wimohabb
 ms.reviewer: mhart
 manager: shellyha
 ---
