@@ -28,5 +28,10 @@ To choose a capability
 1. In the navigation pane, select **All apps** to open the **Choose your focus** window.
 1. Select **Go now** to navigate to the capability of your choice.
 
+## Pricing and licensing
+
+Customer Insights is licensed per tenant and includes multiple capabilities. You can purchase additional capacity and license to increase the default quota. 
+- [Pricing overview](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
+- Capacity and entitlements: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
