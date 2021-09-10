@@ -60,7 +60,7 @@ Your data sources can include entities with transactional and activity data from
 
 1. Select **Next** to move to the next step. You can select **Finish and review** to save the activity now with the activity type set to **Other**. 
 
-1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Subscription* and *SalesOrderLine* activity types can be semantically mapped after agreeing to map the fields. If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
+1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, and *Subscription* activity types can be semantically mapped after agreeing to map the fields. If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
 
 1. Select **Next** to move to the next step. 
 
