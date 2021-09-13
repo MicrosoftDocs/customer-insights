@@ -20,7 +20,7 @@ Subscription consent is a type of consent that a person can provide. It usually 
 
 ## Purpose consent
 
-Purpose consent is a type of consent that a person can provide. It indicates the purpose of how data can be used and processes. For example, a person can express consent to a website cookie policy which uses the cookie for targeted advertising. 
+Purpose consent is a type of consent that a person can provide. It indicates the purpose of how data can be used and processed. For example, a person can express consent to a website cookie policy which uses the cookie for targeted advertising. 
 
 ## Consent entity
 
