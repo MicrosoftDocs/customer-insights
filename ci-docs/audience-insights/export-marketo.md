@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Marketo"
 description: "Learn how to configure the connection and export to Marketo."
-ms.date: 03/03/2021
+ms.date: 08/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -59,7 +59,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Enter your **[Marketo list ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. The list ID is a purely numerical value. For example, if your Marketo list ID is ST12345A7, remove the character before and after the numerals and enter `12345`. 
 
-1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. 
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. 
 
 1. Optionally, you can export **First name**, **Last name**, **City**, **State**, and **Country/Region**  to create more personalized emails. Select **Add attribute** to map these fields.
 

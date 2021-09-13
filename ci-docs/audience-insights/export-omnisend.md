@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Omnisend"
 description: "Learn how to configure the connection and export to Omnisend."
-ms.date: 05/21/2021
+ms.date: 08/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -57,7 +57,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Connection for export** field, choose a connection from the Omnisend section. If you don't see this section name, there are no connections of this type available to you.
 
-1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Omnisend. Optionally, you can export First name, Last name, Address, Country/Region, State, City, and Post Code to create more personalized emails. Select **Add attribute** to map these fields.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Omnisend. Optionally, you can export First name, Last name, Address, Country/Region, State, City, and Post Code to create more personalized emails. Select **Add attribute** to map these fields.
 
 1. Select **Save**.
 

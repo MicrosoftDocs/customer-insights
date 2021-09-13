@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to DotDigital"
 description: "Learn how to configure the connection and export to DotDigital."
-ms.date: 03/03/2021
+ms.date: 08/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -62,7 +62,7 @@ You can configure this export if you have access to a connection of this type. F
 1. In the **Connection for export** field, choose a connection from the DotDigital section. If you don't see this section name, there are no connections of this type available to you.
 
 
-1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. Repeat the same steps for other optional fields such as **First name**, **Last name**, **Full name**, **Gender**, and **Post code**.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. Repeat the same steps for other optional fields such as **First name**, **Last name**, **Full name**, **Gender**, and **Post code**.
 
 1. Select the segments you want to export. You can export up to 1 million customer profiles in total to DotDigital.
 

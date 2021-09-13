@@ -15,7 +15,7 @@ manager: shellyha
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Get a 360-degree view of your customers directly in Dynamics 365 apps. With the Customer Card Add-in installed in a supported Dynamics 365 app you can choose to display demographics, insights, and activity timelines. The add-in will retrieve data from Customer Insights without affecting the data in the connected Dynamics 365 app. 
+Get a 360-degree view of your customers directly in Dynamics 365 apps. With the Customer Card Add-in installed in a supported Dynamics 365 app you can choose to display customer profile fields, insights, and activity timeline. The add-in will retrieve data from Customer Insights without affecting the data in the connected Dynamics 365 app.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 - Each add-in control relies on specific data in audience insights:
   - Measure control: Requires [configured measures](measures.md).
   - Intelligence control: Requires data generated using [predictions](predictions.md) or [custom models](custom-models.md).
-  - Demographic control: Demographic fields(such as age or gender) are available in the unified customer profile.
+  - Customer details control: All fields from the profile are available in the unified customer profile.
   - Enrichment control: Requires active [enrichments](enrichment-hub.md) applied to customer profiles.
   - Timeline control: Requires [configured activities](activities.md).
 

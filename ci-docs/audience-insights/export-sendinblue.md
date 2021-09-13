@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Sendinblue"
 description: "Learn how to configure the connection and export to Sendinblue."
-ms.date: 06/29/2021
+ms.date: 08/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -59,7 +59,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Enter your **Sendinblue list ID** 
 
-1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. 
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. 
 
 1. Optionally, you can export **First name**, **Last name**, and **Phone**  to create more personalized emails. Select **Add attribute** to map these fields.
 

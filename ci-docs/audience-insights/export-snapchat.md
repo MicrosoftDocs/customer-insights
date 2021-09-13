@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Snapchat"
 description: "Learn how to configure the connection and export to Snapchat."
-ms.date: 03/22/2021
+ms.date: 08/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -58,7 +58,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Enter the [**Snapchat Audience ID**](https://businesshelp.snapchat.com/s/article/custom-audiences).
 
-1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Snapchat.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Snapchat.
 
 1. Select the segments you want to export. 
 
