@@ -1,13 +1,13 @@
 ---
 title: "Product recommendation prediction"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 03/17/2021
+ms.date: 09/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: zacookmsft
-ms.author: zacook
+author: wmelewong 
+ms.author: wameng
 manager: shellyha
 ---
 
@@ -84,25 +84,19 @@ If you're interested in trying this feature but don't have data to complete the 
 
 ### Add required data
 
-1. Select **Add data**, and in the side panel, choose the activity type that hosts the activity entity providing the transaction/purchase history information as described in the [prerequisites](#prerequisites).
+1. Select **Add data** and choose the activity type in the side pane that contains the required transaction or purchase history information.
 
- :::image type="content" source="media/Prod Rec_Select semantic type activity entity representing purchase history entity.PNG" alt-text="Side pane showing selecting acitivyt semantic type.":::
+1. Under **Choose the activities**, choose the specific activities from the selected activity you'd like the calculation to focus on.
 
-   * **Choose the activities**: You can choose the specific activities under the selected semantic type you'd like the calculation to focus on.
+   :::image type="content" source="media/product-recommendation-select-semantic-activity.PNG" alt-text="Side pane showing choosing specific activities under the semantic type.":::
 
- :::image type="content" source="media/Prod Rec_Select activities under the semantic type.PNG" alt-text="Side pane showing choosing specific activities under the semantic type.":::
+1. If you haven't mapped the activity to a semantic type yet, select **Edit** to do so. The guided experience to map semantic activities opens. Map your data to the corresponding fields in the selected activity type.
 
-1. If you haven't mapped the acitivity to a semantic type yet, you can click on the 'edit' to do so. You will be prompted to the activity type setting wizard.
+   :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="Page setting activity type.":::
 
- :::image type="content" source="media/Prod Rec_Map activity semantic type.PNG" alt-text="Page setting activity type.":::
-
-1. After complete mapping the activity to the correspondent semantic type, click **Next** to proceed 
-
- :::image type="content" source="media/Prod Rec_Select activities under the semantic type_2.PNG" alt-text="Choose the desired activities and proceed.":::
+1. After mapping the activity to the corresponding semantic type, select **Next** to proceed 
  
-1. Map the semantic attributes to the fields required to run the model. After activities chosen are mapped to the semantic types, the fields are auto-populated.
-
- :::image type="content" source="media/Prod Rec_Semantic attributes mapped to the required fields for the model.PNG" alt-text="Populating attributes to fields for model.":::
+1. Map the semantic attributes to the fields that are required to run the model.
 
 1. Select **Save**.
 
