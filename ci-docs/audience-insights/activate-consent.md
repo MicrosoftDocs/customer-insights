@@ -13,7 +13,7 @@ manager: shellyha
 
 # Activate default consent rules
 
-The consent management capability helps you to harmonize consent data across a variety of sources. Use the unified Consent entity to apply default consent checks].
+The consent management capability helps you to harmonize consent data across a variety of sources. Use the unified Consent entity to apply default consent checks.
 
 ## Link consent data
 

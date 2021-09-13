@@ -5,7 +5,7 @@ metadata:
   author: m-hartmann
   description: Find relevant articles to start with help content.
   ms.author: mhart
-  ms.date: 07/30/2021
+  ms.date: 09/30/2021
   ms.service: customer-insights
   ms.topic: landing-page
 
@@ -25,5 +25,30 @@ landingContent:
             url: overview.md
           - text: Release plans
             url: /dynamics365-release-plan/
-          - text: Discover the CDP
-            url: https://dynamics.microsoft.com/ai/customer-insights/
+
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Quickstart guide
+            url: get-started.md
+          - text: Terms and concepts
+            url: glossary.md
+
+  - title: Import consent data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: How to import data
+            url: import-consent-data.md
+          - text: How to map consent data
+            url: map-consent-data.md
+
+  - title: Activate consent data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: How to enforce consent rules
+            url: ../audience-insights/activate-consent.md
+          - text: How override consent rules
+            url: ../audience-insights/segments#disable-or-change-default-consent-rules
