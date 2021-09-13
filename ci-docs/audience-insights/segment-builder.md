@@ -107,6 +107,7 @@ While creating a segment, you can save a draft. At the draft stage, a segment wi
    > - If the attribute you want to project is more than 1 hop away from the customer entity, as defined by the relationship, then that attribute should be used in every rule of segment query you are building. 
    > - If the attribute you want to project is just 1 hop away then that attribute need not be present in every rule of the segment query you are building. 
    > - _Projected attributes_ are factored in when using set operators.
+   > - For segments based on business accounts, details of 1 or more contacts of each account needs to be included in the segment to allow that segment to be activated or exported to destinations that require contact information.
 
 1. Before you save and run the segment, Select **Edit details** next to the segment name. Provide a name for your segment and  update the suggested **Output entity name** for the segment. You can also add a description to the segment.
 
