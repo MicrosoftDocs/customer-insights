@@ -1,7 +1,7 @@
 ---
 title: "Relationships between entities and entity paths"
 description: "Create and manage relationships between entities from multiple data sources."
-ms.date: 06/01/2020
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -63,6 +63,20 @@ Relationship consists of a *source entity* containing the foreign key and a *tar
 
 4. Select **Save** to create the custom relationship.
 
+## Set up account hierarchies
+
+Environments that are configured to use business accounts as primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units. 
+
+Organizations create account hierarchies to better manage accounts and their relationships with each other. The audience insights capability supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page in audience insights, under the account hierarchy tab.
+
+1. Go to **Data** > **Relationships**.
+1. Select the **Account hierarchy** tab.
+1. Select **New account hierarchy**. 
+1. In the **Account hierarchy** pane, provide a name for the hierarchy. The system creates a name for the output entity. You can change the name of the output name entity.
+1. Select the entity that contains your account hierarchy. It's usually in the same entity that contains the accounts.
+1. Select the **Account ID** and **Account Parent ID** from the selected entity 
+1. Select **Save** to apply the settings and finalize the account hierarchy.
+
 ## View relationships
 
 The Relationships page lists all the relationships that have been created. Each row represents a relationship, which also includes details about the source entity, the target entity, and the cardinality. 
@@ -100,7 +114,7 @@ For example, the entity *eCommerce_eCommercePurchases* has the following relatio
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer 
 
-The relationship path determines which entities you can use when creating rules for measures or segments. Choosing the option with the longest relationship path will likely yield fewer results because the matching records need to be part of all entities. In this example, a customer has to have purchased goods through e-commerce(eCommerce_eCommercePurchases), at a point of sale(POS_posPurchases), and participate in our loyalty program (loyaltyScheme_loyCustomers). When choosing the first option, you'd likely get more results because customers only need to exist in one additional entity.
+The relationship path determines which entities you can use when creating rules for measures or segments. Choosing the option with the longest relationship path will likely yield fewer results because the matching records need to be part of all entities. In this example, a customer has to have purchased goods through e-commerce(eCommerce_eCommercePurchases), at a point of sale(POS_posPurchases), and participate in our loyalty program (loyaltyScheme_loyCustomers). When choosing the first option, you likely get more results because customers only need to exist in one other entity.
 
 ## Manage existing relationships 
 

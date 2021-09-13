@@ -1,7 +1,7 @@
 ---
 title: "View customer profiles"
 description: "Get a combined view of your unified customer data."
-ms.date: 12/01/2020
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -58,7 +58,7 @@ Shows data if you have configured activities. The timeline view contains chronol
 **Insights**:
 - **Measures**: Shows if you configured one or more measures of a specific type: customer attribute measures. They include calculated KPIs around your customers on the individual customer level. For more information, see [Define and manage measures](measures.md).
 
--	**Potential interests, potential brands**: Shows if you configured a first-party enrichment. It represents potential interests and affinities for brands a customer with a profile similar to this customer might have. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md).
+-	**Potential interests, potential brands**: Shows if you configured a brand or interest affinity enrichment. It represents potential interests and affinities for brands a other customers whose profile is similar to the selected customer profile. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md).
 
 To return back to the customer search page select **Back to Customers**.
 
