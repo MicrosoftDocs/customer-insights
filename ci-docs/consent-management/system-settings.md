@@ -16,6 +16,8 @@ manager: shellyha
 
 The consent management capability in Dynamics 365 Customer Insights, lets you configure some system settings for your environments. 
 
+:::image type="content" source="media/system-settings.png" alt-text="Excerpt of the system settings view.":::
+
 ## Change the language
 
 During public preview, the app is only available in English and French. More languages are added when the capability is generally available. 
