@@ -19,16 +19,17 @@ Customer Insights offers a free 30-day trial. After a quick sign-up, you'll have
 
 1. Go to the [trial overview page](https://dynamics.microsoft.com/get-started/?appname=customerinsights) and select the **Sign up now** button.
 1. Follow the onscreen guidance to enter the [email associated with your Microsoft account](https://support.microsoft.com/windows/what-is-a-microsoft-account-4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa) and your contact information.
+1. Make selections and choose your focus until you get to the start page for your selected capability.
 
-The trial takes a few moments to load, then you can start choosing your focus and using the app.
+The trial takes a few moments to load, then you can start using the app.You'll see an environment with sample data to try out the product and its features. Select the button in the message bar on the top of the screen to set up the trial with your own data.
 
 ## What to try
 
-Your trial environment includes many of the same features as the paid version. The links below guide you through some of the key features.
+Your trial environment includes the same features as the paid version. The links below guide you through some of the key features.
 
 ### Audience insights
 
-- [Get started](audience-insights/get-started.md)
+- [Quickstart for audience insights](audience-insights/get-started.md)
 - [Add more users and assign permissions](audience-insights/permissions.md).
 - [Ingest your data sources](audience-insights/data-sources.md) and run them through the [data unification process](audience-insights/data-unification.md) to get [unified customer profiles](audience-insights/customer-profiles.md).
 - [Enrich the unified customer profiles](audience-insights/enrichment-hub.md) or [run predictive models](audience-insights/predictions-overview.md).
@@ -37,7 +38,7 @@ Your trial environment includes many of the same features as the paid version. T
 
 ### Engagement insights
 
-- [Get started](engagement-insights/get-started.md)
+- [Quickstart for engagement insights](engagement-insights/get-started.md)
 - [Create a workspace](engagement-insights/create-workspace.md) and add members.
 - [Add code to your website](engagement-insights/instrument-website.md) or [mobile app](engagement-insights/developer-resources.md#capture-events-from-mobile-apps).
 - View a [real-time report](engagement-insights/view-reports.md) or create [custom reports](engagement-insights/custom-reports.md).
@@ -48,3 +49,4 @@ Your trial environment includes many of the same features as the paid version. T
 
 - [Explore training on Microsoft Learn](/learn/browse/?filter-products=dynamics-dynamics-cust-insights)
 - [Trial FAQ](trial-faq.md)
+- [Dynamics 365 Customer Insights product details](https://dynamics.microsoft.com/ai/customer-insights/)
