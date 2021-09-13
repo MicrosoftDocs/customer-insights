@@ -13,9 +13,9 @@ manager: shellyha
 
 # Customer profiles
 
-The **Customers** page shows a combined view of your unified customer profiles. The customer profiles are available once you [created the unified Customer entity](data-unification.md). The page lets you search for customers and define the index for said search.
+The **Customers** page shows a combined view of your unified customer profiles. The customer profiles are available once you [created the unified Customer entity](data-unification.md). The page lets you search for customers and define the index for that search.
 
-Customers can be individuals or organizations (preview). Each customer profile is represented by a tile. Use the pagination controls to see additional records. The card displays the _Customer_ fields defined in the search & filter index. Select a tile to see data for that specific customer displayed in a dedicated page called [Customer details page](customer-profiles.md#Customer-details-page).
+Customers can be individuals or organizations. Each customer profile is represented by a tile. Use the pagination controls to get more records. The card displays fields from the *Customer* entity as defined in the search & filter index. Select a tile to see data for the selected customer in a dedicated page called [Customer details page](customer-profiles.md#customer-details-page).
 
 > [!div class="mx-imgBorder"] 
 > ![Customers page with search results](media/customers-page-result-tiles-B2C.png "Customers page showing result tiles")
@@ -35,32 +35,32 @@ You can filter customers by the _Customer_ entity fields. Similar to search, you
 
 1. Select **Show filters** on the **Customers** page.
 
-2. Check the boxes next to the attributes you want to filter customers by.
+1. Check the boxes next to the attributes you want to filter customers by.
 
-3. Remove your filters by selecting **Clear filters** on the **Customers** page.
+1. Remove your filters by selecting **Clear filters** on the **Customers** page.
 
-##  Customer details page
+## Customer details page
 
 Select any of the customer tiles to open the **Customer details page**. This view contains unified information for the selected customer.
 
 Customer details include the following content:
 
-**Customer profile tile**: 
-This tile shows the different values from the unified _Customer_ entity. If a field has no value for the currently shown customer profile it will not be shown. The tile is structured into sections: 
-- First section shows a predefined set of fields followed by all fields which are part of the search & index filter. Within this section our web interface will combine address related fields into a single line called “address”. This only happens if this profile contains such fields. 
-- **Contacts for this customer**: In environments for business accounts you will see all contacts for this customer as the second section. Each contact is shown with its field, hiding any empty field.
-- The next section is called “additional fields” and shows the remaining fields of this customer, except for ids. 
-- All ids are grouped in the last section called “Ids”. They are listed under their entity's name. Fields are identified as ids by their semantics categorizing them as such.
+**Customer profile tile** 
+This tile shows the different values from the unified _Customer_ entity. If a field has no value for the selected customer profile, it won't show. The tile is structured into sections: 
+- The first section shows a predefined set of fields followed by all fields that are part of the search & filter index. All address-related fields are combined into a single line if the profile contains such fields. 
+- **Contacts for this customer**: In environments for business accounts, you'll see all related contacts for this customer as the second section. Each contact is shown with their fields. Empty fields are hidden.
+- **Additional fields**: Shows the remaining fields of th selected customer, except IDs. 
+- **IDs**: lists all IDs under their corresponding entity name. Fields are identified as IDs by their semantics, which categorize them as such.
 
 **Activity timeline**: 
-Shows data if you have configured activities. The timeline view contains chronologically sorted activities of this customer, starting with the most recent activity. For more information, see [Customer activities](activities.md).
+Shows data if you have configured activities. The timeline view contains chronologically sorted activities of the selected customer, starting with the most recent activity. For more information, see [Customer activities](activities.md).
 
 **Insights**:
-- **Measures**: Shows if you configured one or more measures of a specific type: customer attribute measures. They include calculated KPIs around your customers on the individual customer level. For more information, see [Define and manage measures](measures.md).
+- **Measures**: Shows if you configured one or more measures customer attribute measures. They include calculated KPIs around your customers on the individual customer level. For more information, see [Define and manage measures](measures.md).
 
--	**Potential interests, potential brands**: Shows if you configured a brand or interest affinity enrichment. It represents potential interests and affinities for brands a other customers whose profile is similar to the selected customer profile. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md).
+-	**Potential interests, potential brands**: Shows if you configured a brand or interest affinity enrichment. It represents potential interests and affinities for brands based on other customers whose profile is similar to the selected customer profile. For more information, see [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md).
 
-To return back to the customer search page select **Back to Customers**.
+To return to the customer search page, select **Back to Customers**.
 
 ## Next steps
 
