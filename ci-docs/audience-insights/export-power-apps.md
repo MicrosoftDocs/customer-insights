@@ -27,7 +27,7 @@ After adding Customer Insights as a data connection, you can choose the followin
 
 - Customer: to use data from the [unified customer profile](customer-profiles.md).
 - UnifiedActivity: to display the [activity timeline](activities.md) on the app.
-- ContactProfile: to display the contacts of a customer. This entity is only available in audience insights instance for business accounts.
+- ContactProfile: to display the contacts of a customer. This entity is only available in audience insights environments for business accounts.
 
 ## Limitations
 
@@ -40,11 +40,10 @@ You can only retrieve the **Customer**, **UnifiedActivity**, **Segments** and **
 Delegation works for the Customer entity and UnifiedActivity entity. 
 
 - Delegation for **Customer** entity: To use delegation for this entity, the fields need to be indexed in [Search & filter index](search-filter-index.md).  
-
 - Delegation for **UnifiedActivity**: Delegation for this entity only works for the fields **ActivityId** and **CustomerId**.  
-- Delegation for **ContactProfile**: Delegation for this entity only works for the fields **ContactId** and **CustomerId**. Note: ContactProfile is only available in audience insights instance for business accounts.
+- Delegation for **ContactProfile**: Delegation for this entity only works for the fields **ContactId** and **CustomerId**. ContactProfile is only available in audience insights environments for business accounts.
 
-- For more information about delegation, see [Power Apps delegable functions and operations](https://docs.microsoft.com/powerapps/maker/canvas-apps/delegation-overview). 
+- For more information about delegation, see [Power Apps delegable functions and operations](/powerapps/maker/canvas-apps/delegation-overview). 
 
 ## Example gallery control
 

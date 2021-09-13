@@ -61,7 +61,7 @@ You can configure an export if you have access to a connection of this type. For
 
 1. Choose whether you want to export data to do [contact targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) or [company targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) on LinkedIn. 
 
-1. In the **Data matching** section, select at least one field that represents a customer's email address, Apple Ad ID, Google Ad ID, Google User ID, or First and last names, if you selected to export data to do contact targeting. If you selected to export data to do company targeting, select at least one field that represents a company's name, email domain, LinkedIn page URL, Stock symbol, or Website. Additional fields can be selected to further define your export. 
+1. In the **Data matching** section, for contact targeting, select at least one field that represents a customer's email address, Apple Ad ID, Google Ad ID, Google User ID, or first and last name. If you choose company targeting, select at least one field that represents a company name, email domain, LinkedIn page URL, Stock symbol, or Website. Additional fields can be selected to further define your export. 
 
 1. Select the segments you want to export. The matched audiences in LinkedIn Campaign Manager will automatically be created with the name of the segments that you selected to export. Each segment will result in a separate matched audience. 
 

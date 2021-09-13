@@ -20,28 +20,29 @@ Go to **Data** > **Exports** to view the exports page. All user roles can view c
 
 ## Export types
 
-We are separating between two main types of exports, data-out exports and segment exports. 
-- **Data-out exports** allow you to export any type of entity available in Dynamics 365 Customer Insights audience insights. The entities that you select for exporting are exported with all data fields, metadata, schemas and mapping details. 
-- **Segment exports** allow you to export the segment entity available in Dynamics 365 Customer Insights audience insights and represents a list of customer profiles. When exporting segments, you will configure which data fields are exported depending on the target system you are exporting to. 
+There are two main types of exports: data-out exports and segment exports. 
 
-## Exporting segments
+- **Data-out exports** let you export any type of entity available in audience insights. The entities that you select for export are exported with all data fields, metadata, schemas, and mapping details. 
+- **Segment exports** let you export segment entities from audience insights. Segments represent a list of customer profiles. When configuring the export, you select the included data fields, depending on the target system you are export data to. 
 
-**Exporting segments in B2B vs B2C scenarios**
-- Almost every export option supports B2B and B2C scenarios. **Exporting segments** to various target systems has specific requirements and can be summarized as a segment member (customer profile) having a contactable information. While this is usually the case for segments built upon contacts (B2C), this is not necessarily the case for segments build upon accounts (B2B). 
+### Export segments
 
-**Segment exports in B2B instance**
-- Segments in the context of B2B instance are build from accounts. To be able to export account segments as is, the target system needs to support pure account segments. This is the case for LinkedIn when selecting option "company" when defining the export.
-- All other target systems need fields from the contact entity. To ensure account segments can retrieve their respective contacts your segment definition needs to make them eligible. [Learn more how to configure eligible segments](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/segment-builder).
+**Exporting segments in environments for business accounts (B2B) or individual customers (B2C)**
+Most export option support both types of environments. Exporting segments to various target systems has specific requirements. Generally speaking, a segment member, the customer profile, contains contact information. While this is usually the case for segments built on individual customers (B2C), it's not necessarily the case for segments based on business accounts (B2B). 
 
-**Segment exports in B2C instance**
-- Segments in the context of B2C instance are build from contacts. Any segment can be exported as long as the segment fulfills the requirements of the target systems, for example an email address as contactable information.
+**Segment exports environments for business accounts (B2B)**
+- Segments in the context of environments for business accounts are built on the *account* entity. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](export-linkedin-ads.md) when you choose the **company** option while defining the export.
+- All other target systems require fields from the contact entity. To ensure account segments can retrieve data from related contacts, your segment definition needs to project attributes of the contact entity. [Learn more how to configure eligible segments](segment-builder.md).
+
+**Segment exports in environments for individual customers (B2C)**
+- Segments in the context of environments for individual customers are built on the *unified customer profile* entity. Every segment that meets the requirements of the target systems, for example an email address, can get exported.
 
 **Limits on segment exports**
-- When exporting to 3rd party target systems, limits on how many customer profiles you can export may occur. 
-- For B2C, you will see the actual number of contacts within a segment shown when selecting a segment for exporting. A warning will be displayed in case a segment is too large. 
-- For B2B, you will see the number of accounts within a segment, but not the number of contacts that may be projected to the account segments. In some cases this could lead to the exported segment actually containing more customer profiles than the target system, which will result in skipping the export. 
+- Third-party target systems may limit the number of customer profiles that you can export. 
+- For individual customers, you'll see the actual number of segment members when you select a segment for export. You'll get a warning is a segment is too large. 
+- For business accounts, you'll see the number of accounts in a segment. However, the number of contacts that may be projected doesn't show. In some cases this could lead to the exported segment actually containing more customer profiles than the target system accepts. Exceeding the limits of the target systems results will skip the export. 
 
-## Setup a new export
+## Set up a new export
 To set up or edit an export, you need to have connections available to you. Connections depend on your [user role](permissions.md):
 - Administrators have access to all connections. They can also create new connections when setting up an export.
 - Contributors can have access to specific connections. They depend on administrators to configure and share connections. The exports list shows contributors whether they can edit or only view an export in the **Your permissions** column. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).

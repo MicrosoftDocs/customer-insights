@@ -26,7 +26,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 - Each add-in control relies on specific data in audience insights:
   - Measure control: Requires [configured measures](measures.md).
   - Intelligence control: Requires data generated using [predictions](predictions.md) or [custom models](custom-models.md).
-  - Customer details control: Any fields from the profile are available in the unified customer profile.
+  - Customer details control: All fields from the profile are available in the unified customer profile.
   - Enrichment control: Requires active [enrichments](enrichment-hub.md) applied to customer profiles.
   - Timeline control: Requires [configured activities](activities.md).
 

@@ -26,7 +26,7 @@ To set up and configure the bot, the following prerequisites must be met:
 - The [unification process](data-unification.md) is complete.
 - Fields are added to the [search and filter index](search-filter-index.md).
 - Customer Insights and Teams are in the same organization.
-- Your environment in Customer Insights is a B2C environment.
+- Your environment has the primary target audience set to individual customers. Business accounts aren't supported.
 
 ## Configure the bot
 
