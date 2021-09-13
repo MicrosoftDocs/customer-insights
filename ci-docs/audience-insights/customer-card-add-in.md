@@ -1,7 +1,7 @@
 ---
 title: "Customer Card Add-in for Dynamics 365 apps"
 description: "Show data from audience insights in Dynamics 365 apps with this add-in."
-ms.date: 05/18/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -15,7 +15,7 @@ manager: shellyha
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Get a 360-degree view of your customers directly in Dynamics 365 apps. With the Customer Card Add-in installed in a supported Dynamics 365 app you can choose to display customer profile fields, insights, and activity timeline. The add-in will retrieve data from Customer Insights without affecting the data in the connected Dynamics 365 app.
+Get a 360-degree view of your customers directly in Dynamics 365 apps. With the Customer Card Add-in installed in a supported Dynamics 365 app, you can choose to display customer profile fields, insights, and activity timeline. The add-in will retrieve data from Customer Insights without affecting the data in the connected Dynamics 365 app.
 
 ## Prerequisites
 
@@ -23,11 +23,12 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 - For your Dynamics 365 data to map to the audience insights customer profiles they need to be [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md).
 - All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in audience insights to see the data.
 - [Configured search and filter capabilities](search-filter-index.md) in audience insights are required for lookup of data to work.
-- Each add-in control relies on specific data in audience insights:
-  - Measure control: Requires [configured measures](measures.md).
+- Each add-in control relies on specific data in audience insights. Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control is not available due to the selected environment type. Learn more about [environment use cases](work-with-business-accounts.md).
+  - Measure control: Requires [configured measures](measures.md) of type customer attributes.
   - Intelligence control: Requires data generated using [predictions](predictions.md) or [custom models](custom-models.md).
   - Customer details control: All fields from the profile are available in the unified customer profile.
   - Enrichment control: Requires active [enrichments](enrichment-hub.md) applied to customer profiles.
+  - Contacts control: Requires definition of semantic entity of type contacts.
   - Timeline control: Requires [configured activities](activities.md).
 
 ## Install the Customer Card Add-in
@@ -54,7 +55,7 @@ It can take some time for the solution to be installed to your environment.
 
 1. Select the Customer Insights environment you want to fetch data from.
 
-1. Define the field mapping to records in the Dynamics 365 app. Depending on your data in Customer Insights you can choose to map the following options:
+1. Define the field mapping to records in the Dynamics 365 app. Depending on your data in Customer Insights, you can choose to map the following options:
    - To map with a contact, select the field in the Customer entity that matches the ID of your contact entity.
    - To map with an account, select the field in the Customer entity that matches the ID of your account entity.
 
@@ -68,7 +69,8 @@ It can take some time for the solution to be installed to your environment.
 1. Assign the **Customer Insights Card Customizer** role to users who will customize the content shown on the card for the whole organization.
 
 ## Add Customer Card controls to forms
-  
+Depending on your scenario, you can choose to add controls to either the Contact form or Account form. If your audience insights environment is for business accounts, we recommended adding the controls to the Account form. In that case consider "contact" in the below steps replaced with "account".
+
 1. To add the Customer Card controls to your Contact form, go to the **Settings** > **Customizations** in Dynamics 365.
 
 1. Select **Customize the System**.
