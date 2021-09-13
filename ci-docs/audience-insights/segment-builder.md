@@ -103,20 +103,21 @@ While creating a segment, you can save a draft. At the draft stage, a segment wi
    Example: A segment is based on an entity that contains purchase data, which is related to the *Customer* entity. The segment looks for all customers from Spain that purchased goods in the current year. You can choose to append attributes like the price of the goods, or the purchase date to all matching customer records in the output entity. This information might be useful to analyze seasonal correlations to the total spending.
 
    > [!NOTE]
-   > - Projected attributes only work for entities that have a one-to-many relationship with the customer entity. For example, one customer can have multiple subscriptions.
-   > - You can only project attributes from an entity that is used in every rule of segment query you are building.
-   > - Projected attributes are factored in when using set operators.
+   > - _Project attributes_ only work for entities that have a one-to-many relationship with the customer entity. For example, one customer can have multiple subscriptions.
+   > - If the attribute you want to project is more than 1 hop away from the customer entity, as defined by the relationship, then that attribute should be used in every rule of segment query you are building. 
+   > - If the attribute you want to project is just 1 hop away then that attribute need not be present in every rule of the segment query you are building. 
+   > - _Projected attributes_ are factored in when using set operators.
 
 1. Before you save and run the segment, Select **Edit details** next to the segment name. Provide a name for your segment and  update the suggested **Output entity name** for the segment. You can also add a description to the segment.
 
-1. Select **Run** to save and process your segment if all requirements are validated. Otherwise, it will be saved as an inactive segment draft.
+1. Select **Run** to save the segment, activate it and begin processing your segment based on all the rules and conditions. Otherwise, it will be saved as an _inactive_ segment.
 
 1. Select **Back to segments** to go back to the **Segments** page.
 
 > [!TIP]
 > - The segment builder won't suggest valid values from entities when setting the operators for the conditions. You can go to **Data** > **Entities** and download the entity data to see which values are available.
 > - Conditions based on the dates let you switch between fixed dates and a floating date range.
-> - If you have multiple rules for your segment, you find a blue bar around the rule you are editing.
+> - If you have multiple rules for your segment, the one you are editing has a think blue vertical line next to it. 
 > - You can move rules and conditions to other places in the segment definition. Select [...] next to a rule or condition and choose how and where to move it.
 > - The **Undo** and **Redo** controls in the command bar let you roll back back changes.
 
