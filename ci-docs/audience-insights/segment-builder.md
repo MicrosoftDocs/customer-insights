@@ -16,8 +16,8 @@ manager: shellyha
 Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. You can [create new segments](#create-a-new-segment) using the segment builder or [create quick segments](#quick-segments) from other areas of the app. 
 
 > [!TIP]
-> Quick segments are only supported in environments that are based on individual customers.    
-> Segments based on individual customers automatically include available contact information for segment members. For business accounts-focused environments, segments are based on accounts (companies or subsidiaries with related contacts). To include information in segments about the related contacts, use the projected attributes functionality when defining a segment.
+> - Quick segments are only supported in environments that are based on _individual customers_.    
+> - Segments based on _individual customers_ automatically include available contact information for segment members. For _business accounts_-focused environments, segments are based on accounts (companies or subsidiaries). To include contact information in a segment, use the _Project attributes_ functionality in the segment builder.
 
 ## Segment Builder
 
@@ -47,13 +47,13 @@ The example above illustrates the segmentation capability. We've defined a segme
 
 There are multiple ways to create a new segment. This section describes how to build your own segment from scratch. You can also create a *quick segment* based on existing entities or make use of machine learning models to get *suggested segments*. More information: [Segments overview](segments.md).
 
-While creating a segment, you can save a draft. It will be saved as an inactive segment, and can't be activated it finished with a valid configuration.
+While creating a segment, you can save a draft. At the draft stage, a segment will be saved as an inactive segment. When the segment configuration is complete, _running_ the segment will activate it. Alternatively you can _activate_ a segment from the _all segments_ page.
 
 1. Go to the **Segments** page.
 
 1. Select **New** > **Build your own**.
 
-1. On to the segment builder page, you define the first rule. A rule consists of one or more conditions and defines a set of customers.
+1. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
 
 1. In the **Rule1** section, choose an attribute of an entity you want filter customers by. There are two ways to choose attributes: 
    - Review the list of available entities and attributes in the **Add to Rule** pane and select the **+** icon next to the attribute to add. Choose if you want to add the attribute to an existing rule or use it to create a new rule.
