@@ -13,15 +13,15 @@ manager: shellyha
 
 # Sign up for a free Dynamics 365 Customer Insights trial
 
-Customer Insights offers a free 30-day trial. After a quick sign-up, you'll have access to many of the app's key features. The trial allows you to test the app with sample data and even try out your own customer data. [Learn more about Customer Insights features](overview.md)
+Customer Insights offers a free 30-day trial. After a quick sign-up, you'll have access to many of the app's key features. The trial allows you to test the app with sample data and even try out your own customer data. [Learn more about Customer Insights features.](overview.md)
 
 **To sign up for the trial**:
 
-1. Go to the [trial overview page](https://dynamics.microsoft.com/get-started/?appname=customerinsights) and select the **Sign up now** button.
+1. Go to the [trial overview page](https://dynamics.microsoft.com/get-started/?appname=customerinsights) and select **Sign up now**.
 1. Follow the onscreen guidance to enter the [email associated with your Microsoft account](https://support.microsoft.com/windows/what-is-a-microsoft-account-4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa) and your contact information.
 1. Make selections and choose your focus until you get to the start page for your selected capability.
 
-The trial takes a few moments to load, then you can start using the app.You'll see an environment with sample data to try out the product and its features. Select the button in the message bar on the top of the screen to set up the trial with your own data.
+The trial takes a few moments to load, and then you can start using the app. You'll see an environment with sample data to try out the product and its features. Select the button in the message bar at the top of the screen to set up the trial with your own data.
 
 ## What to try
 
@@ -29,8 +29,8 @@ Your trial environment includes the same features as the paid version. The links
 
 ### Audience insights
 
-- [Quickstart for audience insights](audience-insights/get-started.md)
-- [Add more users and assign permissions](audience-insights/permissions.md).
+- [Quickstart for audience insights.](audience-insights/get-started.md)
+- [Add more users and assign permissions.](audience-insights/permissions.md)
 - [Ingest your data sources](audience-insights/data-sources.md) and run them through the [data unification process](audience-insights/data-unification.md) to get [unified customer profiles](audience-insights/customer-profiles.md).
 - [Enrich the unified customer profiles](audience-insights/enrichment-hub.md) or [run predictive models](audience-insights/predictions-overview.md).
 - Create [segments](audience-insights/segments.md) to group customers and [measures](audience-insights/measures.md) review KPIs.
@@ -38,7 +38,7 @@ Your trial environment includes the same features as the paid version. The links
 
 ### Engagement insights
 
-- [Quickstart for engagement insights](engagement-insights/get-started.md)
+- [Quickstart for engagement insights.](engagement-insights/get-started.md)
 - [Create a workspace](engagement-insights/create-workspace.md) and add members.
 - [Add code to your website](engagement-insights/instrument-website.md) or [mobile app](engagement-insights/developer-resources.md#capture-events-from-mobile-apps).
 - View a [real-time report](engagement-insights/view-reports.md) or create [custom reports](engagement-insights/custom-reports.md).
