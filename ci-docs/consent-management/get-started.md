@@ -31,7 +31,7 @@ In Consent Center, [import the consent data](import-consent-data.md) your organi
 
 ## Step 3: Configure default rules for consent data
 
-After successfully importing consent data, [configure consent data rules](map-consent-data.md) and set rules to apply by default.
+After successfully importing consent data, [configure consent data rules](set-consent-rules.md) and set rules to apply by default.
 
 ## Step 4: Apply consent rules to segments in audience insights
 

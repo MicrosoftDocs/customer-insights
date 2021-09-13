@@ -25,7 +25,7 @@ Before you can apply consent rules, you have to link the consent data to custome
 
 ## Activate consent checks
 
-After linking the data, you can choose which areas in audience insights enforce the [mapped consent](../consent-management/map-consent-data.md). 
+After linking the data, you can choose which areas in audience insights enforce the [mapped consent](../consent-management/set-consent-rules.md). 
 
 1. In audience insights, go to **Admin** > **System**.
 1. Select the **Consent** tab.

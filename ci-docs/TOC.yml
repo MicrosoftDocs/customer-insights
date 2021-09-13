@@ -374,7 +374,7 @@
     - name: Manage consent data
       items: 
         - name: Set consent data and apply consent preferences
-          href: consent-management/map-consent-data.md
+          href: consent-management/set-consent-rules.md
         - name: Manage default consent rules in audience insights segments
           href: audience-insights/segments.md#disable-or-change-default-consent-rules
         

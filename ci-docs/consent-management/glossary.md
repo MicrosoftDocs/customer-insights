@@ -28,5 +28,5 @@ A data table which results from importing consent data to the consent management
 
 ## Standard actions
 
-As part of the [data mapping step for consent data](map-consent-data.md), admins can define rules that apply to a type of consent. They can choose to include or exclude consent data according to a business logic. These mappings are then used in other applications to apply consent rules in business processes. For example, a mapping can exclude all contacts have set their contact preferences to not receive any information from all segments in audience insights that are used for sending newsletters.
+As part of the [data mapping step for consent data](set-consent-rules.md), admins can define rules that apply to a type of consent. They can choose to include or exclude consent data according to a business logic. These mappings are then used in other applications to apply consent rules in business processes. For example, a mapping can exclude all contacts have set their contact preferences to not receive any information from all segments in audience insights that are used for sending newsletters.
 

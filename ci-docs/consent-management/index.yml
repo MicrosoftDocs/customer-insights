@@ -42,7 +42,7 @@ landingContent:
           - text: How to import data
             url: import-consent-data.md
           - text: How to map consent data
-            url: map-consent-data.md
+            url: set-consent-rules.md
 
   - title: Activate consent data
     linkLists:
