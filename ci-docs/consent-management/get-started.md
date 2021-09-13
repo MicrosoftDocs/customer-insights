@@ -19,18 +19,20 @@ The consent management capability of Dynamics 365 Customer Insights enables orga
 
 ## Step 1: Set up consent management
 
-You have to be an administrator in audience insights to work with the consent management capability.
+You have to be an [administrator in audience insights](../audience-insights/permissions.md) to work with the consent management capability.
 
-1. Open the Consent Center from audience insights. It might take a moment to provision the consent center if it's the first time you visit. 
+Select **Go to Consent Center** from the **Home** page of audience insights. It might take a moment to provision the consent center if it's the first time you visit. 
+
+:::image type="content" source="media/consent-center-cta.png" alt-text="Lunch the Consent Center from th audience insights home page.":::
 
 ## Step 2: Import consent data
 
-1. Import consent data.
+In Consent Center, [import the consent data](import-consent-data.md) your organization collected through a broad set of available connectors.
 
 ## Step 3: Configure default rules for consent data
 
-1. Set consent data rules and apply rules as default.
+After successfully importing consent data, [configure consent data rules](map-consent-data.md) and set rules to apply by default.
 
 ## Step 4: Apply consent rules to segments in audience insights
 
-1. Export segments in audience insights with applied consent data rules.
+The rules you created automatically sync with audience insights. [Activate default consent rules](../audience-insights/activate-consent.md) for segments in audience insights. You can now [export segments](../audience-insights/export-destinations.md) in audience insights with applied consent data rules.
