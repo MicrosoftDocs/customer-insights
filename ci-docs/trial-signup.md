@@ -11,6 +11,10 @@ ms.reviewer: jeffhar
 manager: shellyha
 ---
 
+
+<!-- In line 40, should it be "to review KPIs"? -->
+
+
 # Sign up for a free Dynamics 365 Customer Insights trial
 
 Customer Insights offers a free 30-day trial. After a quick sign-up, you'll have access to many of the app's key features. The trial allows you to test the app with sample data and even try out your own customer data. [Learn more about Customer Insights features.](overview.md)
