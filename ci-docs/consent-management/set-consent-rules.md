@@ -14,11 +14,11 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Define how customer data is used based on a customer's consent preferences. You can choose to include or exclude customer data from business activities that involve usage of customer data. For example, you can exclude customers form your product announcements if the they haven't given consent for marketing emails.
+Define how customer data is used based on a customer's consent preferences. You can choose to include or exclude customer data from business activities that involve usage of customer data. For example, you can exclude customers from your product announcements if they haven't given consent for marketing emails.
 
 ## Start the consent rules process
 
-You have to [import consent data](import-consent-data.md) before your configure consent rules. 
+First, [import consent data](import-consent-data.md) before your configure consent rules. 
 
 Once consent data is in the system, go to the **Consent** page in the Consent Center and select **Set rules**.
 
@@ -26,7 +26,7 @@ Once consent data is in the system, go to the **Consent** page in the Consent Ce
 
 ## Set up rules
 
-Consent data rules will be available in audience insights where you can apply them as rules to individual segments or exports. In addition, you can assign these rules to purposes and subscriptions as default rules that automatically apply to all segments. The app guides you through the steps to complete to map the consent data. 
+Consent data rules will be available in audience insights where you can apply them as rules to individual segments or exports. You can assign these rules to purposes and subscriptions as default rules that automatically apply to all segments. The app guides you through the steps to complete to map the consent data. 
 
 1. Go to **Consent** and select **Set rules**. The **Set consent data rules** process starts.
 

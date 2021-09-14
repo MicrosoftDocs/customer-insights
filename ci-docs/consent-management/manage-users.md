@@ -18,4 +18,4 @@ Consent management, a capability of Dynamics 365 Customer Insights is available 
 
 Currently, all administrators of audience insights have access to the consent management capability. You can't add users in the Consent Center directly.
 
-Administrators add and remove other users and assign them the required permissions. Refer to the documentation about [user permissions](../audience-insights/permissions.md) in audience insights for details about managing users and user roles.
+Administrators add and remove other users and assign them the required permissions. Review the documentation about [user permissions](../audience-insights/permissions.md) in audience insights to manage users and user roles.

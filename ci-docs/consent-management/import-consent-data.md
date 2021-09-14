@@ -36,7 +36,7 @@ After setting up the consent management capability, the first-run experience gui
 1. In this example, we select the **Text/CSV** data source to import a .CSV file that is hosted in a shared OneDrive folder. Enter the path or URL to the hosted file and select **Next**. 
    :::image type="content" source="media/connection-settings-data-source.PNG" alt-text="Connection settings for the new data source.":::
 
-1. The **Preview file data** step shows the data that gets imported. Select **Next** to proceed. 
+1. The **Preview file data** step shows the data that gets imported. Select **Next** to continue. 
   
 1. The **Edit queries** step lets you rename the query and [apply data transformations using Power Query](/power-query/power-query-ui.md). After applying all necessary transformations, select **Next**.
    :::image type="content" source="media/data-transformations.PNG" alt-text="Options to transform data and assign data types.":::
@@ -50,7 +50,7 @@ After setting up the consent management capability, the first-run experience gui
 1. The final step to import a data source is the **Refresh settings** step where you tell the system when to look for updates on the data source. 
    :::image type="content" source="media/refresh-settings.PNG" alt-text="Set the refresh settings of the data source.":::
     1. Choose if you want to **Refresh manually** if the data source changed, or if you prefer the system to do the **Refresh automatically**.
-    1. For automated refresh choose between  **Frequency-based refresh** and a **Refresh on specific days and times** and set your preference for when a refresh should happen.
+    1. For automated refresh, choose between  **Frequency-based refresh** and a **Refresh on specific days and times** and set your preference for when a refresh should happen.
 
 1. Select **Publish** and choose if you want to publish the data source now or schedule it to publish later. 
    :::image type="content" source="media/publish-data-source.PNG" alt-text="Control to publish the data source.":::
