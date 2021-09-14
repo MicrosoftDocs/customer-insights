@@ -19,7 +19,7 @@ Dun & Bradstreet provides commercial data, analytics, and insights for businesse
 
 To configure a Dun & Bradstreet enrichment, the following prerequisites must be met:
 
-- You have an active [Dun & Bradstreet](https://www.dnb.com/) license.
+- You have an active [Dun & Bradstreet](https://www.dnb.com/products/master-data/dnb-connect.html?source=microsoft_audience_insights) license.
 - You have [unified customer profiles](customer-profiles.md) for companies.
 - A Dun & Bradstreet [connection](connections.md) is configured by an administrator. You can create it if you have [administrator](permissions.md#administrator) permissions and the credentials from Dun & Bradstreet Connect. 
 
@@ -28,13 +28,13 @@ To configure a Dun & Bradstreet enrichment, the following prerequisites must be 
 As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). 
 
 
-1. Sign in to [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). To retrieve credentials, [restore your password](https://sso.dnb.com/signin/forgot-password&lead_source=microsoft_audienceinsights).
+1. Sign in to [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). To retrieve credentials, [restore your password](https://sso.dnb.com/signin/forgot-password?lead_source=microsoft_audienceinsights).
 
 1. Download [our csv template file](tbd.md) that will be used to map the audience insights fields to the corresponding Dun & Bradstreet fields. 
 
 1. Upload the file in the **Upload data** step of the Dun & Bradstreet project creation experience. 
 
-1. Select the horizontal dots in the newly created Dun & Bradstreet project to see the available options.
+1. Select the horizontal dots under the relevant **source** in the newly created Dun & Bradstreet project to see the available options.
 
    :::image type="content" source="media/enrichment-dnb-dots.png" alt-text="Screenshot of dots in a Dun & Bradstreet project.":::
 
