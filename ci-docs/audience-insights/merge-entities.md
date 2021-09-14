@@ -1,7 +1,7 @@
 ---
 title: "Merge entities in data unification"
 description: "Merge entities to create unified customer profiles."
-ms.date: 05/10/2021
+ms.date: 09/14/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -61,7 +61,7 @@ Change the display name of merged attributes. You can't change the name of the o
 
 Exclude an attribute from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile. 
 
-1. Select the merged field.
+1. Select a merged field.
   
 1. Select **Show more** and choose **Exclude**.
 
@@ -70,6 +70,27 @@ Exclude an attribute from the unified customer profile. If the field is used in 
 1. Select **Save** and **Run** to process the changes. 
 
 On the **Merge** page, select **Excluded fields** to see the list of all excluded fields. This pane lets you add excluded fields back.
+
+## Edit a merged field
+
+1.	Select a merged field.
+
+1.	Select **Show more** and choose **Edit**.
+
+1.	Specify how to combine or merge the fields from one of three options:
+    - **Importance**: Identifies the winner value based on importance rank specified for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
+    :::image type="content" source="media/importance-merge-option.png" alt-text="Importance option in the merge fields dialog."::: 
+    - **Most recent**: Identifies the winner value based on the most recency. Requires a date or a numeric field for every participating entity in the merge fields scope to define the recency.
+    :::image type="content" source="media/recency-merge-option.png" alt-text="Recency option in the merge fields dialog.":::
+    - **Least recent**: Identifies the winner value based on the least recency. Requires a date or a numeric field for every participating entity in the merge fields scope to define the recency.
+
+1.	You can add additional fields to participate in the merge process.
+
+1.	You can rename the merged field.
+
+1. Select **Done** to apply your changes.
+
+1. Select **Save** and **Run** to process the changes. 
 
 ## Manually combine fields
 
