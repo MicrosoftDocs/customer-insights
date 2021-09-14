@@ -30,7 +30,7 @@ First, you must have an active Microsoft Azure Active Directory (AAD) user accou
 
 The first time you visit engagement insights you can configure settings, review policies, and explore the capability.
 
-1. Sign in the [engagement insights capability portal](https://pi.dynamics.com) using your Microsoft AAD user (school or work) account.
+1. Sign in the [engagement insights capability portal](https://home.ci.ai.dynamics.com/app/engagement-insights) using your Microsoft AAD user (school or work) account.
 
 1. Select your region, and check the box if you want to opt in to receive email updates and offers.
 
