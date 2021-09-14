@@ -27,15 +27,15 @@ landingContent:
             url: overview.md
           - text: Glossary of terms
             url: glossary.md
-          - text: Get started
-            url: get-started.md 
+          - text: New and updated features
+            url: https://docs.microsoft.com/dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features.md 
 
   - title: Onboarding
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Create an environment
-            url: ../get-started-paid.md
+          - text: Get started
+            url: get-started.md
           - text: Create a workspace
             url: create-workspace.md
           - text: Instrument your website
@@ -95,4 +95,4 @@ landingContent:
             - text: Delete and export personal data
               url: delete-export-personal-data.md
             - text: Service limits
-              url: service-limits.md
+              url: ../service-limits.md
