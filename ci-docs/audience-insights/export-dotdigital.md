@@ -24,10 +24,10 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 ## Known limitations
 
-- Up to 1 million profiles per export to DotDigital.
+- Up to 1 million customer profiles per export to DotDigital.
 - Exporting to DotDigital is limited to segments.
-- Exporting segments with a total of 1 million profiles can take up to 3 hours because of limitations on the provider side. 
-- The number of profiles that you can export to DotDigital is dependent and limited on your contract with DotDigital.
+- Exporting segments with a total of 1 million customer profiles can take up to 3 hours because of limitations on the provider side. 
+- The number of customer profiles that you can export to DotDigital is dependent and limited on your contract with DotDigital.
 
 ## Set up connection to DotDigital
 
