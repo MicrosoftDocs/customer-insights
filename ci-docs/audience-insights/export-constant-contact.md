@@ -23,10 +23,10 @@ Export segments of unified customer profiles to Constant Contact and use them fo
 
 ## Known limitations
 
-- You can export up to 1 million profiles per export to Constant Contact.
+- You can export up to 1 million customer profiles per export to Constant Contact.
 - Exporting to Constant Contact is limited to segments.
-- Exporting up to 1 million profiles to Constant Contact can take up to 1 hour to complete. 
-- The number of profiles that you can export to Constant Contact is dependent and limited on your contract with Constant Contact.
+- Exporting up to 1 million customer profiles to Constant Contact can take up to 1 hour to complete. 
+- The number of customer profiles that you can export to Constant Contact is dependent and limited on your contract with Constant Contact.
 
 ## Set up connection to Constant Contact
 

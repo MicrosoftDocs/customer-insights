@@ -27,9 +27,9 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 
 ## Known limitations
 
-- Up to 1 million profiles per export to Google Ads.
+- Up to 1 million customer profiles per export to Google Ads.
 - Exporting to Google Ads is limited to segments.
-- Exporting segments with a total of 1 million profiles can take up to 5 minutes because of limitations on the provider side. 
+- Exporting segments with a total of 1 million customer profiles can take up to 5 minutes because of limitations on the provider side. 
 - The matching in Google Ads can take up to 48 hours.
 
 ## Set up connection to Google Ads
