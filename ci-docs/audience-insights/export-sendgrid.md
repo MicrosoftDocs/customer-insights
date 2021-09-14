@@ -24,10 +24,10 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 
 ## Known limitations
 
-- Up to 100'000 profiles in total to SendGrid.
+- Up to 100'000 customer profiles in total to SendGrid.
 - Exporting to SendGrid is limited to segments.
-- Exporting up to 100'000 profiles to SendGrid can take up to a few hours to complete. 
-- The number of profiles that you can export to SendGrid is dependent and limited on your contract with SendGrid.
+- Exporting up to 100'000 customer profiles to SendGrid can take up to a few hours to complete. 
+- The number of customer profiles that you can export to SendGrid is dependent and limited on your contract with SendGrid.
 
 ## Set up connection to SendGrid
 
