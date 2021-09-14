@@ -40,11 +40,36 @@ Begin the process by selecting a workspace to work in, selecting the iOS mobile 
 
 - If you don't have an existing workspace, select  **New Workspace** and follow the steps to create a [new workspace](create-workspace.md).
 
+- After you create a workspace, go to **Admin** > **Workspace** and then select **Installation guide**.
+
 ## Configure the SDK
 
-Once you download the SDK, you can work with it in Xcode to enable and define events.
+Once you download the SDK, you can work with it in Xcode to enable and define events. There are two ways to do so
 
-1. After you create a workspace, go to **Admin** > **Workspace** and then select **Installation guide**.
+### Option 1: Using Cocoapods (recommended)
+CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects, and using it makes integrating the engagement insights (EI) SDK for iOS easier. CocoaPods also makes it easy for you to upgrade to the latest version of the EI SDK. Here’s how to use CocoaPods to integrate the EI SDK into your Xcode project. 
+
+1. Install CocoaPods (if you haven’t already done so). 
+
+1. Create a new file called Podfile inside your project’s root directory, and then add the following statements to it: Note: Replace YOUR_TARGET_PROJECT_NAME with the name of your Xcode project. 
+```objectivec
+platform :ios, '9.0'  
+
+ target '${YOUR_TARGET_PROJECT_NAME}' do 
+
+     use_frameworks!   
+
+     pod 'EIObjC.framework.debug' 
+
+     pod 'EIObjC.framework.release' 
+
+ end 
+```
+Note: The pod configuration above contains both the debug and release versions of the SDK. Please choose whichever one is best for your project’s needs.**
+
+1. Install the pod by executing the following command: `pod install --repo-update `
+
+### Option 2: Using download link
 
 1. Download the [engagement insights iOS SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip), and place the `EIObjC.xcframework` file in the `Frameworks` folder.
 
