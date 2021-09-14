@@ -73,9 +73,9 @@ You can export a segment from the segments page or the [exports page](export-des
 
 1. Select **Manage exports** from the actions dropdown list.
 
-1. The page **Exports (preview) for segment** opens. You can see all configured exports grouped by by exports that contain the current segment or don't contain it.
+1. The page **Exports (preview) for segment** opens. You can see all configured exports grouped by whether they contain the current segment or not.
 
-   1. To add the selected segment to an export, select the export in the list and select **Add segment**.
+   1. To add the selected segment to an export, **Edit** the respective export to select the corresponding segment, then save. In environments for individual customers you can instead select the export in the list and select **Add segment** to achieve the same outcome.
 
    1. To create a new export with the selected segment, select **Add export**. For more information about creating exports, see [Set up a new export](export-destinations.md#set-up-a-new-export).
 
