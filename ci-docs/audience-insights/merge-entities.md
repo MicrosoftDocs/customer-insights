@@ -99,6 +99,28 @@ Some entities contain more details than others. If an entity includes the latest
 
 1. Select **Save** and **Run** to process the changes.
 
+## Configure Customer ID generation 
+
+After configuring merging fields, you can define how to generate CustomerId values, the unique customer profile identifiers. 
+The merge step in the data unification process generates the unique customer profile identifier. The identifier is the CustomerId in the *Customer* entity that results from the data unification process. 
+
+The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in the match and merge phase and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. Consequently, the primary key value might not always represent the same customer.
+
+Configuring a stable customer Id enables you to avoid that behavior.
+
+**Configure a unique customer ID**
+
+1. Go to **Unify** > **Merge**.
+
+1. On the **Merge** page, select the **Keys** tab. 
+
+1. Hover on the **CustomerId** row and select the **Configure** option.
+   :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
+
+1. Select up to five fields that will comprise a unique customer ID and are more stable. Records that don’t match your configuration use a system-configured ID instead.  
+
+1. Select **Done** and run the merge process to apply your changes.
+
 ## Run your merge
 
 Whether you manually merge attributes or let the system merge them, you can always run your merge. Select **Run** on the **Merge** page to start the process.
