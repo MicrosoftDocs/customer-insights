@@ -77,11 +77,13 @@ Specify a merged attribute manually.
 
 1. On the **Merge** page, select **Combine fields**.
 
-1. Provide a **Name** and an **Output field name**.
+1. Specify the merge winner policy in the **Combine fields by** dropdown.
 
 1. Choose a field to add. Select **Add fields** to combine more fields.
 
-1. Confirm the exclusion.
+1. Provide a **Name** and an **Output field name**.
+
+1. Select **Done** to apply the changes.
 
 1. Select **Save** and **Run** to process the changes. 
 
