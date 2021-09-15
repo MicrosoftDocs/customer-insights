@@ -40,7 +40,7 @@ Your data sources can include entities with transactional and activity data from
 
    - **First**: Foreign field in your activity entity that will be used to establish a relationship with another entity.
    - **Second**: Corresponding source customer entity with which your activity entity will be in relationship. You can only relate to source customer entities that are used in the data unification process.
-   - **Third**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
+   - **Third**: 
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
 
