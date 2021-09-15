@@ -46,7 +46,7 @@ Begin the process by selecting a workspace to work in, selecting the iOS mobile 
 
 Once you download the SDK, you can work with it in Xcode to enable and define events. There are two ways to do so
 
-### Option 1: Using Cocoapods (recommended)
+### Option 1: Using CocoaPods (recommended)
 CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. Using it makes integrating the engagement insights SDK for iOS easier. CocoaPods also lets you upgrade to the latest version of the engagement insights SDK. Here’s how to use CocoaPods to integrate the engagement insights SDK into your Xcode project. 
 
 1. Install CocoaPods. 
