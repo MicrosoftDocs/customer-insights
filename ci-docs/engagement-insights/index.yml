@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Engagement insights capability in Dynamics 365 Customer Insights
+title: Engagement insights capability in Dynamics 365 Customer Insights (preview)
 summary: Collect data for your websites. Understand customer interactions and usage across your sites, interactively. Use the deep integration between engagement insights and audience insights to enrich your real-time behavioral analytics with customer profile reports. Enrich customer profiles with web activities to get real-time behavioral data alongside relevant customer data. Transform your business to derive immediate value from your customer data.
 
 metadata:
-  title: Engagement insights(preview) documentation
+  title: Engagement insights (preview) documentation
   description: Help hub with key links for engagement insights.
   ms.service: customer-insights
   ms.subservice: engagement-insights
@@ -12,7 +12,7 @@ metadata:
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
-  ms.date: 10/01/2021
+  ms.date: 09/15/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -28,7 +28,7 @@ landingContent:
           - text: Glossary of terms
             url: glossary.md
           - text: New and updated features
-            url: https://docs.microsoft.com/dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
+            url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 
   - title: Onboarding
     linkLists:
