@@ -79,6 +79,8 @@
           href: audience-insights/relationships.md
         - name: List customer activities
           href: audience-insights/activities.md
+        - name: Define Semantic Mappings
+          href: audience-insights/semantic-mappings.md
 
     - name: Data enrichment
       items:
