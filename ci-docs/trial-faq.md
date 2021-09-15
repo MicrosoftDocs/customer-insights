@@ -11,8 +11,6 @@ ms.reviewer: jeffhar
 manager: shellyha
 ---
 
-<!-- See the question I entered in line 83. -->
-
 # Dynamics 365 Customer Insights trial FAQ
 
 ## Sign-up
@@ -78,9 +76,6 @@ After you sign up for the trial, you will arrive on the app's main screen. The m
 ### What features are available in the trial?
 
 Most features of the Customer Insights capabilities are available in the trial.
-
-
-<!-- Is "you can't create new environments ..." a feature that's not available, or is it an action that you can't do in the trial? -->
 
 The following feature is not available: 
 - You can't create new environments that use your own Azure Data Lake storage account.
