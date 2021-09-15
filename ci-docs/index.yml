@@ -28,16 +28,16 @@ landingContent:
           - text: Discover the CDP
             url: https://dynamics.microsoft.com/ai/customer-insights/
 
-  - title: Get started with audience insights
+  - title: Get started with Customer Insights
     linkLists:
       - linkListType: get-started
         links: 
           - text: Sign up for a trial
             url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-          - text: What's new
+          - text: What's new in audience insights
             url: audience-insights/whats-new-audience-insights.md
-          - text: Audience insights documentation
-            url: audience-insights/index.yml
+          - text: What's new in engagement insights
+            url: https://docs.microsoft.com/dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 
   - title: Get in touch
     linkLists:
@@ -50,16 +50,16 @@ landingContent:
           - text: Report an issue
             url: https://go.microsoft.com/fwlink/?linkid=2079641
 
-  - title: Audience insights tutorials
+  - title: Share data between capabilities
     linkLists:
-      - linkListType: tutorial
+      - linkListType: how-to-guide
         links: 
-          - text: Create a new environment
-            url: audience-insights/home.md
-          - text: Create a unified customer profile
-            url: /learn/modules/unified-customer-profile/
-          - text: Work with the app
-            url: /learn/modules/working-with-customer-insights/
+          - text: Create a link between capabilities
+            url: engagement-insights/integrate-audience-insights-engagement-insights.md
+          - text: Create segments for use in reports 
+            url: engagement-insights/segment-web-reports.md
+          - text: Use profile properties for interactive analysis
+            url: engagement-insights/curate-dimensions.md
 
   - title: Export audience insights data
     linkLists:
