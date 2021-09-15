@@ -47,9 +47,9 @@ manager: shellyha
 
    :::image type="content" source="media/Semantic_Mapping_Wizard3.png" alt-text="Click apply to confirm and apply relationship definition steps.":::
 
-> [!NOTE]
-> You are able to configure additional relationships between the contact entity and other account entities, utilizing intermediate entities as needed.
->  :::image type="content" source="media/Semantic_Mapping_Wizard4.png" alt-text="Visualization of various relationships connect contact entities to account entities.":::
+   > [!NOTE]
+   > You are able to configure additional relationships between the contact entity and other account entities, utilizing intermediate entities as needed.
+   >  :::image type="content" source="media/Semantic_Mapping_Wizard4.png" alt-text="Visualization of various relationships connect contact entities to account entities.":::
 
 1. Once you are satisified with your relationship configurations, select **Next** to go to the next step.
 
@@ -67,11 +67,11 @@ manager: shellyha
 
 1. When you are satisfied with your configuration, select **Save** to save your new **Semantic mapping**.
 
-:::image type="content" source="media/Semantic_Mapping_Wizard6.png" alt-text="After confirming your configuration, select the save button.":::
+   :::image type="content" source="media/Semantic_Mapping_Wizard6.png" alt-text="After confirming your configuration, select the save button.":::
 
 1. After saving, you have the option of selecting **Run** to run the creation of your **Semantic mapping** or you can select **Close** to just save your **Semantic mapping** without running it.
 
-:::image type="content" source="media/Semantic_Mapping_Wizard7.png" alt-text="Run your new semantic mapping or select close to run it at a later point.":::
+   :::image type="content" source="media/Semantic_Mapping_Wizard7.png" alt-text="Run your new semantic mapping or select close to run it at a later point.":::
 
 1. To run a **Semantic mapping** at a later point, select the **Semantic mapping** of your choice and select **Refresh**.
 
