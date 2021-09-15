@@ -4,7 +4,7 @@ description: Learn how to personalize and run the Android SDK
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
