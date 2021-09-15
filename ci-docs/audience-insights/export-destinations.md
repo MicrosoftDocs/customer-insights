@@ -32,7 +32,7 @@ Most export option support both types of environments. Exporting segments to var
 
 **Segment exports environments for business accounts (B2B)**
 - Segments in the context of environments for business accounts are built on the *account* entity. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](export-linkedin-ads.md) when you choose the **company** option while defining the export.
-- All other target systems require fields from the contact entity. To ensure account segments can retrieve data from related contacts, your segment definition needs to project attributes of the contact entity. [Learn more how to configure eligible segments](segment-builder.md).
+- All other target systems require fields from the contact entity. To ensure account segments can retrieve data from related contacts, your segment definition needs to project attributes of the contact entity. [Learn more how to configure segments and project attributes](segment-builder.md).
 
 **Segment exports in environments for individual customers (B2C)**
 - Segments in the context of environments for individual customers are built on the *unified customer profile* entity. Every segment that meets the requirements of the target systems, for example an email address, can get exported.
