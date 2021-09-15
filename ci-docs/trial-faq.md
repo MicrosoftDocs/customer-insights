@@ -17,7 +17,7 @@ manager: shellyha
 
 ### What are the system requirements for the trial?
 
-This app is a cloud-based service that doesn't require special software other than an up-to-date web browser, though some restrictions apply. For the best trial experience, avoid accessing the trial site in incognito mode and choose the trial location closest to you. [Learn more about web application requirements](/power-platform/admin/web-application-requirements).
+This app is a cloud-based service that doesn't require special software other than an up-to-date web browser, although some restrictions apply. For the best trial experience, avoid accessing the trial site in incognito mode and choose the trial location closest to you. [Learn more about web application requirements.](/power-platform/admin/web-application-requirements)
 
 ### How do I sign up for the trial without a Microsoft 365 tenant?
 
@@ -33,8 +33,8 @@ Yes, you can. To view all available trials, [visit the trial hub page](https://d
 
 When you sign up for the trial, you'll receive an email with the trial details. If you don't see the email in your inbox, check your spam folder. Alternatively, use the following steps to access your app:
 
-1. Go to trial site and select Try for free.
-1. Enter the email ID that you used, to sign up for the trial. You'll be redirected to your trial app.
+1. Go to the trial site and select **Try for free**.
+1. Enter the email ID that you used to sign up for the trial. You'll be redirected to your trial app.
 
 ### How do I add more users to a trial?
 
@@ -71,13 +71,13 @@ After signing in to your paid instance of Customer Insights for the first time, 
 
 ### How do I start using the trial?
 
-After you sign up for the trial, you will arrive on the app's main screen. The main screen provides links to user guides and tutorials. To learn more, visit the links in the [Additional resources](trial-signup.md#additional-resources) on the trial set up page.
+After you sign up for the trial, you will arrive on the app's main screen. The main screen provides links to user guides and tutorials. To learn more, visit the links in the [Additional resources](trial-signup.md#additional-resources) on the trial sign-up page.
 
 ### What features are available in the trial?
 
 Most features of the Customer Insights capabilities are available in the trial.
 
-The following features are not available: 
+The following feature is not available: 
 - You can't create new environments that use your own Azure Data Lake storage account.
 
 ### How long does the trial last?
