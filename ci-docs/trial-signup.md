@@ -11,10 +11,6 @@ ms.reviewer: jeffhar
 manager: shellyha
 ---
 
-
-<!-- In line 40, should it be "to review KPIs"? -->
-
-
 # Sign up for a free Dynamics 365 Customer Insights trial
 
 Customer Insights offers a free 30-day trial. After a quick sign-up, you'll have access to many of the app's key features. The trial allows you to test the app with sample data and even try out your own customer data. [Learn more about Customer Insights features.](overview.md)
@@ -37,7 +33,7 @@ Your trial environment includes the same features as the paid version. The links
 - [Add more users and assign permissions.](audience-insights/permissions.md)
 - [Ingest your data sources](audience-insights/data-sources.md) and run them through the [data unification process](audience-insights/data-unification.md) to get [unified customer profiles](audience-insights/customer-profiles.md).
 - [Enrich the unified customer profiles](audience-insights/enrichment-hub.md) or [run predictive models](audience-insights/predictions-overview.md).
-- Create [segments](audience-insights/segments.md) to group customers and [measures](audience-insights/measures.md) review KPIs.
+- Create [segments](audience-insights/segments.md) to group customers and [measures](audience-insights/measures.md) to review KPIs.
 - Set up [connections](audience-insights/connections.md) and [exports](audience-insights/export-destinations.md) to process subsets of your data in other applications.
 
 ### Engagement insights
