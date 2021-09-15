@@ -4,7 +4,7 @@ description: Learn how to personalize and run the iOS SDK
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -47,11 +47,11 @@ Begin the process by selecting a workspace to work in, selecting the iOS mobile 
 Once you download the SDK, you can work with it in Xcode to enable and define events. There are two ways to do so
 
 ### Option 1: Using Cocoapods (recommended)
-CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects, and using it makes integrating the engagement insights (EI) SDK for iOS easier. CocoaPods also makes it easy for you to upgrade to the latest version of the EI SDK. Here’s how to use CocoaPods to integrate the EI SDK into your Xcode project. 
+CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. Using it makes integrating the engagement insights SDK for iOS easier. CocoaPods also lets you upgrade to the latest version of the engagement insights SDK. Here’s how to use CocoaPods to integrate the engagement insights SDK into your Xcode project. 
 
-1. Install CocoaPods (if you haven’t already done so). 
+1. Install CocoaPods. 
 
-1. Create a new file called Podfile inside your project’s root directory, and then add the following statements to it: Note: Replace YOUR_TARGET_PROJECT_NAME with the name of your Xcode project. 
+1. Create a new file called Podfile inside your project’s root directory and add the following statements to it. Replace YOUR_TARGET_PROJECT_NAME with the name of your Xcode project. 
 ```objectivec
 platform :ios, '9.0'  
 
@@ -65,7 +65,7 @@ platform :ios, '9.0'
 
  end 
 ```
-Note: The pod configuration above contains both the debug and release versions of the SDK. Please choose whichever one is best for your project’s needs.**
+The pod configuration above contains both the debug and release versions of the SDK. Choose whichever one is best for your project.
 
 1. Install the pod by executing the following command: `pod install --repo-update `
 
