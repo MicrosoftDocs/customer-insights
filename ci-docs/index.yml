@@ -57,7 +57,7 @@ landingContent:
           - text: Create a link between capabilities
             url: engagement-insights/integrate-audience-insights-engagement-insights.md
           - text: Create segments for use in reports 
-            url: engagement-insights/segment-web-reports.md
+            url: engagement-insights/integrate-audience-insights-segments.md
           - text: Use profile properties for interactive analysis
             url: engagement-insights/curate-dimensions.md
 
