@@ -63,24 +63,35 @@ manager: shellyha
 
 1. Select **Next** to go to the next step.
 
-1. In the **Review** step, take a look at the configuration you have created for your **Semantic mapping**. To make changes to your configuration, select the **Back**.
+1. In the **Review** step, take a look at the configuration you have created for your **Semantic mapping**. To make changes to your configuration, select **Edit** for the corresponding section or select **Back** as many times as needed.
 
 1. When you are satisfied with your configuration, select **Save** to save your new **Semantic mapping**.
 
    :::image type="content" source="media/Semantic_Mapping_Wizard6.png" alt-text="After confirming your configuration, select the save button.":::
 
-1. After saving, you have the option of selecting **Run** to run the creation of your **Semantic mapping** or you can select **Close** to just save your **Semantic mapping** without running it.
+1. After saving, you have the option of selecting **Run** to run the creation of your **Semantic mapping** or you can select **Close** to save your **Semantic mapping** without running it.
 
    :::image type="content" source="media/Semantic_Mapping_Wizard7.png" alt-text="Run your new semantic mapping or select close to run it at a later point.":::
 
 1. To run a **Semantic mapping** at a later point, select the **Semantic mapping** of your choice and select **Refresh**.
 
-> [!NOTE]
-> Refreshing any given **Semantic mapping** will refresh all **Semantic mappings** of the same type.
-
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
 
 ## Manage existing semantic mappings
+
+On **Data** > **Semantic mappings (preview)**, you can view all your saved semantic mappings, and manage them. Each semantic mapping is represented by a row that includes details about the source entity, semantic type, mapping type, and status for that semantic mapping.
+
+The following actions are available when you select a semantic mapping: 
+
+- **Edit**: Opens the semantic mapping setup on the review step. You can change any or all of the current configuration from this step. After changing the configuration, select **Save** and then select **Run** to process the changes.
+
+- **Refresh**: Regenerates the selected semantic mapping using the most up-to-date data from the respective entities utilized in the semantic mapping configuration.
+> [!NOTE]
+> Refreshing any given **Semantic mapping** will refresh all **Semantic mappings** of the same semantic type.
+
+- **Rename**: Opens a dialog where you can enter a different name for the selected semantic mapping. Select **Save** to apply your changes.
+
+- **Delete**: Opens a dialog to confirm the deletion of the selected semantic mapping. You can also delete more than one semantic mapping at once by selecting the semantic mappings and then selecting the delete icon. Select **Delete** to confirm the deletion.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
