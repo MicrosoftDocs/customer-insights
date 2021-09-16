@@ -53,7 +53,7 @@ manager: shellyha
 
 1. Once you are satisified with your relationship configurations, select **Next** to go to the next step.
 
-1. In the **Set the semantic type** step, start by selecting a **Semantic type**. Currently, there is one **Semantic Type** called *ContactProfile*.
+1. In the **Semantic type** step, start by selecting a **Semantic type**. Currently, there is one **Semantic Type** called *ContactProfile*.
 
 1. Map your data to the *ContactProfile* **Semantic type** for the fields shown.
    - **Required Field**: *Contact ID*
