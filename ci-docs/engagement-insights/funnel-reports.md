@@ -4,7 +4,7 @@ description: How to use funnel reports to understand how audience makes decision
 ms.reviewer: mhart
 ms.author: kamacdon
 author: kamacdon
-ms.date: 06/23/2021
+ms.date: 09/17/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -153,4 +153,22 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 1. Select a name to open the report.
 
 1. Select the step that you want to remove and select **Delete**.
+
+## Funnel insights 
+
+Engagement insights now offers funnel insights for customers. Use funnel insights to gain deeper insight into customer behavior about the steps in your funnel report. 
+When you create and save a new funnel report, funnel insights are automatically generated for your report. 
+
+You can view funnel insights from the following categories, at both the main and step levels: 
+
+ - Conversion rate 
+ - Transition time 
+ - Completion time 
+
+Use these insights to explore deeper into customer behavior and better understand drop-off points and conversions for your funnel report. 
+
+Funnel insights are recalculated every 24 hours, or when you **Save** your funnel report. 
+
+> [!NOTE]
+> In order to view insights for your funnel, you must save your report every time you make changes. 
 
