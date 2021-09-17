@@ -12,6 +12,8 @@ ms.manager: shellyha
 ms.custom: intro-internal
 ---
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 # About Dynamics 365 Customer Insights engagement insights capability 
 
 [Engagement insights, a capability of Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/) enables you to understand, using interactive metrics, how your customers are using your services and products. You can do this both individually and holistically, on websites, mobile apps, and connected products.
