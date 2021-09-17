@@ -157,14 +157,18 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 ### Funnel Insights 
 
 Engagement insights now offers Funnel Insights for customers. Use Funnel Insights to gain deeper insight into customer behavior about the steps in your funnel report. 
-When you create and save a new funnel report, funnel insights are automatically generated for your report. You will be shown insights from the following categories at both the step--level and overall funnel level: 
+When you create and save a new funnel report, funnel insights are automatically generated for your report. 
 
-   1. Conversion rate 
-   2. Transition time 
-   3. Completion time 
+You can view funnel insights from the following categories, at both the main and step levels: 
 
-Use these insights to dig deeper into customer behavior and better understand drop-off points and conversions for your funnel report. 
-Insights are recalculated every 24 hours, or when you SAVE your funnel report. 
+ - Conversion rate 
+ - Transition time 
+ - Completion time 
 
-**In order to view insights for your funnel, you must SAVE your report** 
+Use these insights to explore deeper into customer behavior and better understand drop-off points and conversions for your funnel report. 
+
+Funnel insights are recalculated every 24 hours, or when you **Save** your funnel report. 
+
+> [!NOTE]
+> In order to view insights for your funnel, you must SAVE your report every time you make changes. 
 
