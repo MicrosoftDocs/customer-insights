@@ -23,11 +23,29 @@ Cookies are small files that store bits of information about a user’s interact
 
 The [General Data Protection Regulation (GDPR)](/dynamics365/get-started/gdpr/) is a European Union (EU) regulation that mandates how organizations should handle their users’ privacy and security. Cookies often store or collect “personal data,” such as an online identifier, which is covered by the GDPR. If your business employs and/or sells to EU data subjects, the GDPR affects you. [Learn more about how Microsoft can help you comply with the GDPR](https://www.microsoft.com/trust-center/privacy/gdpr-faqs).
 
-To allow the engagement insights SDK to store cookies or other sensitive information, you must specify whether your users have consented. This occurs on initialization of the SDK.
+To allow the engagement insights SDK to store cookies or other sensitive information, you must specify whether your users have consented. This occurs on initialization of the SDK by setting a `userConsent` field in the configuration.
 
 If you indicate that there is no user consent, the SDK will not store any data, and will not send events that can be used to track user behavior. Any previously stored data will be deleted from the browser.
 
 If no user consent value is specified, the SDK will assume that the user has consented. This means that if you (as our customer) don't specify a value for user consent in the SDK, data will be collected. However, if you specify that the value for user consent needs to be “true,” data won't be collected if a user declines or fails to provide explicit consent.
+
+Below is a code snippet to initialize web SDK with user consent:
+```js
+<script>
+  (function(a,t,i){var e="MSEI";var s="Analytics";var o=e+"queue";a[o]=a[o]||[];var r=a[e]||function(n){var t={};t[s]={};function e(e){while(e.length){var r=e.pop();t[s][r]=function(e){return function(){a[o].push([e,n,arguments])}}(r)}}var r="track";var i="set";e([r+"Event",r+"View",r+"Action",i+"Property",i+"User","initialize","teardown"]);return t}(i.name);var n=i.name;if(!a[e]){a[n]=r[s];a[o].push(["new",n]);setTimeout(function(){var e="script";var r=t.createElement(e);r.async=1;r.src=i.src;var n=t.getElementsByTagName(e)[0];n.parentNode.insertBefore(r,n)},1)}else{a[n]=new r[s]}if(i.user){a[n].setUser(i.user)}if(i.props){for(var c in i.props){a[n].setProperty(c,i.props[c])}}a[n].initialize(i.cfg)})(window,document,{
+    src:"https://download.pi.dynamics.com/sdk/web/msei-1.min.js",
+    name:"EiJS",
+    cfg:{
+      ingestionKey:"YOUR-INGESTIONKEY",
+      autoCapture:{
+        view:true,
+        click:true
+      },
+      userConsent: true
+    }
+  });
+</script>
+```
 
 ## Visitor data storage in engagement insights capability
 
