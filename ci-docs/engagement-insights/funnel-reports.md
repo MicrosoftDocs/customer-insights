@@ -154,7 +154,7 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 
 1. Select the step that you want to remove and select **Delete**.
 
-### Funnel Insights 
+## Funnel Insights 
 
 Engagement insights now offers Funnel Insights for customers. Use Funnel Insights to gain deeper insight into customer behavior about the steps in your funnel report. 
 When you create and save a new funnel report, funnel insights are automatically generated for your report. 
