@@ -154,9 +154,9 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 
 1. Select the step that you want to remove and select **Delete**.
 
-## Funnel Insights 
+## Funnel insights 
 
-Engagement insights now offers Funnel Insights for customers. Use Funnel Insights to gain deeper insight into customer behavior about the steps in your funnel report. 
+Engagement insights now offers funnel insights for customers. Use funnel insights to gain deeper insight into customer behavior about the steps in your funnel report. 
 When you create and save a new funnel report, funnel insights are automatically generated for your report. 
 
 You can view funnel insights from the following categories, at both the main and step levels: 
@@ -170,5 +170,5 @@ Use these insights to explore deeper into customer behavior and better understan
 Funnel insights are recalculated every 24 hours, or when you **Save** your funnel report. 
 
 > [!NOTE]
-> In order to view insights for your funnel, you must SAVE your report every time you make changes. 
+> In order to view insights for your funnel, you must save your report every time you make changes. 
 
