@@ -18,7 +18,7 @@ Semantic mappings allow you to map your non-activity data to pre-defined schemas
    > [!NOTE]
    > To map your activity data to pre-defined schemas, follow the steps outlined in the [activites](activities.md) documentation.
 
-Semantic Mappings are currently in B2B instances only. There is currently one type of Semantic Mapping supported in Audience Insights: *ContactProfile*.
+**Semantic mappings are currently enabled in B2B instances only**. There is currently one type of Semantic Mapping supported in Audience Insights: *ContactProfile*.
 
 ## Define a *ContactProfile* semantic entity mapping
 
