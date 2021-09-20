@@ -156,8 +156,10 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 
 ## Funnel insights 
 
-Engagement insights now offers funnel insights for customers. Use funnel insights to gain deeper insight into customer behavior about the steps in your funnel report. 
-When you create and save a new funnel report, funnel insights are automatically generated for your report. Funnel insights can only be generated for funnel steps that do NOT include custom dimensions. To generate funnel insights for all steps in your funnel, use engagement insights out of box dimensions to create your funnel steps. 
+Engagement insights now offers funnel insights for customers. Use funnel insights to gain deeper insight into customer behavior about the steps in your funnel report. When you create and save a new funnel report, funnel insights are automatically generated for your report. 
+
+> [!NOTE]
+> Funnel insights can only be generated for funnel steps that **do not** include custom dimensions. To generate funnel insights for all steps in your funnel, use engagement insights out-of-box dimensions to create your funnel steps. 
 
 You can view funnel insights from the following categories, at both the main and step levels: 
 
