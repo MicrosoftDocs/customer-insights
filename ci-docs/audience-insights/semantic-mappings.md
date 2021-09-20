@@ -13,10 +13,10 @@ manager: shellyha
 
 # Semantic Mappings
 
-Semantic mappings allow you to map your non-activity data to pre-defined schemas, allowing Auidence Insights to better understand your data attributes. Depending on the type of Semantic Mapping created and the data your provide, you will be able to enable new insights and features throughout Audience Insights. 
+Semantic mappings allow you to map your non-activity data to pre-defined schemas, allowing Audience Insights to better understand your data attributes. Depending on the type of Semantic Mapping created and the data your provide, you will be able to enable new insights and features throughout Audience Insights. 
 
    > [!NOTE]
-   > To map your activity data to pre-defined schemas, follow the steps outlined in the [activites](activities.md) documentation.
+   > To map your activity data to pre-defined schemas, follow the steps outlined in the [activities](activities.md) documentation.
 
 **Semantic mappings are currently enabled in B2B instances only**. There is currently one type of Semantic Mapping supported in Audience Insights: *ContactProfile*.
 
@@ -45,7 +45,7 @@ Semantic mappings allow you to map your non-activity data to pre-defined schemas
 
    - **First**: Select **Add Relationship** to launch the relationship configuration steps.
    - **Second**: Select the attribute from your source entity that connects your contact entity to another entity.
-   - **Third**: Select the entity to connect your contact entity to. If your contact data directly relates to an account entity, choose an entity from the *Account entites* section. If your contact data indirectly relates to an account entity, choose an entity from the *Intermediate entities* section and define *Relationship 2* by selecting an attribute that connects your *Intermediate entity* to an *Account entity*.
+   - **Third**: Select the entity to connect your contact entity to. If your contact data directly relates to an account entity, choose an entity from the *Account entities* section. If your contact data indirectly relates to an account entity, choose an entity from the *Intermediate entities* section and define *Relationship 2* by selecting an attribute that connects your *Intermediate entity* to an *Account entity*.
 
    :::image type="content" source="media/Semantic_Mapping_Wizard2.png" alt-text="Select either an Account entity or an Intermediate entity.":::
 
@@ -58,7 +58,7 @@ Semantic mappings allow you to map your non-activity data to pre-defined schemas
    > You are able to configure additional relationships between the contact entity and other account entities, utilizing intermediate entities as needed.
    >  :::image type="content" source="media/Semantic_Mapping_Wizard4.png" alt-text="Visualization of various relationships connect contact entities to account entities.":::
 
-1. Once you are satisified with your relationship configurations, select **Next** to go to the next step.
+1. Once you are satisfied with your relationship configurations, select **Next** to go to the next step.
 
 1. In the **Semantic type** step, start by selecting a **Semantic type**. Currently, there is one **Semantic Type** called *ContactProfile*.
 
