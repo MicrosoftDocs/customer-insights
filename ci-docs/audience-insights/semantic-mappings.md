@@ -1,7 +1,7 @@
 ---
 title: "Semantic mappings (Preview)"
 description: "Overview of semantic mappings and how to use them." 
-ms.date: 09/12/2021
+ms.date: 09/20/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -12,6 +12,13 @@ manager: shellyha
 ---
 
 # Semantic Mappings
+
+Semantic mappings allow you to map your non-activity data to pre-defined schemas, allowing Auidence Insights to better understand your data attributes. Depending on the type of Semantic Mapping created and the data your provide, you will be able to enable new insights and features throughout Audience Insights. 
+
+   > [!NOTE]
+   > To map your activity data to pre-defined schemas, follow the steps outlined in the [activites](activities.md) documentation.
+
+Semantic Mappings are currently in B2B instances only. There is currently one type of Semantic Mapping supported in Audience Insights: *ContactProfile*.
 
 ## Define a *ContactProfile* semantic entity mapping
 
