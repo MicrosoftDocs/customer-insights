@@ -4,7 +4,7 @@ description: Understand how cookies and user consent are used to identify websit
 author: mochimochi016
 ms.reviewer: mhart
 ms.author: jefhar
-ms.date: 9/20/2021
+ms.date: 9/21/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
