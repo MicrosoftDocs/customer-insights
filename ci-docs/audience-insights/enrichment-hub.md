@@ -64,7 +64,7 @@ Run or deactivate multiple enrichments at once by selecting them in the list. Vi
 
 ## Enrichments and connections
 
-Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connection can be used by administrators and contributors to configure enrichments.  
+Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections can be used by administrators and contributors to configure enrichments.  
 
 ## Multiple enrichments of the same type
 
