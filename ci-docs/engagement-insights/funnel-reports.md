@@ -4,7 +4,7 @@ description: How to use funnel reports to understand how audience makes decision
 ms.reviewer: mhart
 ms.author: kamacdon
 author: kamacdon
-ms.date: 09/17/2021
+ms.date: 09/21/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -156,8 +156,10 @@ You can change the name of a funnel report, delete it, or modify the steps in th
 
 ## Funnel insights 
 
-Engagement insights now offers funnel insights for customers. Use funnel insights to gain deeper insight into customer behavior about the steps in your funnel report. 
-When you create and save a new funnel report, funnel insights are automatically generated for your report. 
+Engagement insights now offers funnel insights for customers. Use funnel insights to gain deeper insight into customer behavior about the steps in your funnel report. When you create and save a new funnel report, funnel insights are automatically generated for your report. 
+
+> [!NOTE]
+> Funnel insights can only be generated for funnel steps that **do not** include custom dimensions. To generate funnel insights for all steps in your funnel, use engagement insights out-of-box dimensions to create your funnel steps. 
 
 You can view funnel insights from the following categories, at both the main and step levels: 
 
