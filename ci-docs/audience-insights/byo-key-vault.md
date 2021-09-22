@@ -11,7 +11,7 @@ ms.author: bkief
 manager: sesilv
 ---
 
-# Bring your own Azure Key Vault - (Public Preview)
+# Bring your own Azure Key Vault (Preview)
 
 Linking a dedicated [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/basic-concepts) to an environment enables organizations to meet their compliance requirements.
 The dedicated Key Vault can be used to stage and bring in secrets from within the organizations compliance boundary into the environment which can then be used to [setup connections](https://docs.microsoft.com/dynamics365/customer-insights/audience-insights/connections) to third party systems.
