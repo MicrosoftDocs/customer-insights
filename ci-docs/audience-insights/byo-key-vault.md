@@ -98,7 +98,7 @@ The well-known `Key Vault Reader` and `Key Vault Secrets User` roles will be add
 
 ## Recommendations
 
-* Use a separate or dedicated Key Vault which is having only the secrets required for Audience Insights. Please read more here why [separate Key Vaults are recommended](https://docs.microsoft.com/azure/key-vault/general/best-practices#why-we-recommend-separate-key-vaults).
+* Use a separate or dedicated Key Vault which is having only the secrets required for Audience Insights. Read more about why [separate Key Vaults are recommended](https://docs.microsoft.com/azure/key-vault/general/best-practices#why-we-recommend-separate-key-vaults).
 
 * Follow the [Best practices to use Key Vault](https://docs.microsoft.com/azure/key-vault/general/best-practices#turn-on-logging) in regards of Control Access, Backup, Audit and Recovery options
 
