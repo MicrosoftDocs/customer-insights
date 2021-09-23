@@ -6,7 +6,7 @@ ms.reviewer: mhart
 ms.author: jefhar
 ms.date: 10/30/2020
 ms.service: customer-insights
-ms.subservice: engagement-insights 
+ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ---
@@ -58,11 +58,11 @@ Below is a code snippet to initialize web SDK with user consent:
 
 Engagement insights capability also makes use of local storage (`localStorage`) to track non-sensitive data. This data is fully stored in the browser itself, with no traffic sent to or from your servers.
 
-- *EISession.Id* 
+- *EISession.Id*
     - Stores information about the ongoing user session, such as session ID, when it started, and when it expires.
 - *EISession.Previous*
     - Stores the URL of the previously visited page in the current session.
-    
+
 Keys in local storage don't expire automatically. They'll be reset during the next session by the SDK.
 
 ## Deleting cookies

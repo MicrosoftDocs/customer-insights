@@ -6,7 +6,7 @@ ms.reviewer: mhart
 ms.author: britl
 ms.date: 11/12/2020
 ms.service: customer-insights
-ms.subservice: engagement-insights 
+ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ---
@@ -28,20 +28,20 @@ The `IUser` object contains the following string properties:
 - **authType**: The authentication type used to get the authenticated user ID.
 - **name**: The user's name.
 - **email**: The user's email address.
-    
-The following example shows a code snippet sending user information. Where you see Functions denoted by *, replace it with your implementation of calling those values:  
+
+The following example shows a code snippet sending user information. Where you see Functions denoted by *, replace it with your implementation of calling those values:
 
 ```
 […]
-window, document 
+window, document
 {
-    src:"https://download.pi.dynamics.com/sdk/web/mspi-0.min.js", 
-    name:"myproject",      
-    cfg:{ 
-      ingestionKey:<paste your ingestion key>", 
-      autoCapture:{ 
-        view:true, 
-        click:true 
+    src:"https://download.pi.dynamics.com/sdk/web/msei-1.min.js",
+    name:"myproject",
+    cfg:{
+      ingestionKey:<paste your ingestion key>",
+      autoCapture:{
+        view:true,
+        click:true
       }
     },
     user:{
@@ -57,21 +57,21 @@ You can also specify user information by calling the `setUser(user: IUser)` API 
 
 ## Adding custom properties for each event
 
-The SDK lets you specify custom properties that can be sent with every event. You can specify the custom properties as an object containing key-value pairs (the value can be of type `string | number | boolean`). The object can be added in a property called `props`, similar to `src`, `name`, and `cfg` in the code snippet configuration. 
+The SDK lets you specify custom properties that can be sent with every event. You can specify the custom properties as an object containing key-value pairs (the value can be of type `string | number | boolean`). The object can be added in a property called `props`, similar to `src`, `name`, and `cfg` in the code snippet configuration.
 
 The following example shows a code snippet sending custom properties:
 
 ```
 […]
-window, document 
+window, document
 {
-    src:"https://download.pi.dynamics.com/sdk/web/mspi-0.min.js", 
-    name:"myproject",      
-    cfg:{ 
-      ingestionKey:<paste your ingestion key>", 
-      autoCapture:{ 
-        view:true, 
-        click:true 
+    src:"https://download.pi.dynamics.com/sdk/web/msei-1.min.js",
+    name:"myproject",
+    cfg:{
+      ingestionKey:<paste your ingestion key>",
+      autoCapture:{
+        view:true,
+        click:true
       }
     },
     props:{
