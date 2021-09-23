@@ -59,7 +59,7 @@ When [setting up connections](https://docs.microsoft.com/dynamics365/customer-in
 
 **TODO** - ADD SCREENSHOTS
 
-#### Supported Connection Types
+## Supported Connection Types
 
 The following [export](export-destinations.md) connections are supported.
 
