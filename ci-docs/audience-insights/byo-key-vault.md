@@ -28,9 +28,9 @@ To configure the Key Vault in Audience Insights, the following prerequisites mus
 
 * You have the [Contributor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) and [User Access Administrator](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator) role on the Key Vault or the Resource Group the Key Vault is belonging to. For more information, see [Add or remove Azure role assignments using the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
 
-* The Key Vault you want to link **must have** Firewall disabled.
+* The Key Vault **must have** Firewall disabled.
 
-* The Key Vault must reside in the same location as your environment. The region of the environment can be found under `Admin > System >` Tab `About >`  `Region`
+* The Key Vault must reside in the same [Azure location](https://azure.microsoft.com/global-infrastructure/geographies/#overview) as the environment. The region of the environment can be found under `Admin > System >` Tab `About >`  `Region`
 
  Warning
 
@@ -80,15 +80,15 @@ For other export connections where the log in on the target system is required (
 
 ## Permissions granted on the Key Vault to Audience Insights
 
-If the Key Vault is linked to the Environment, Audience Insights will be granted following permissons on the Key Vault depending if [Vault access policy](https://docs.microsoft.com/azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](https://docs.microsoft.com/azure/key-vault/general/rbac-guide?tabs=azure-cli) is enabled.
+If the Key Vault is linked to the Environment, Audience Insights will be granted following permissions on the Key Vault depending if [Vault access policy](https://docs.microsoft.com/azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](https://docs.microsoft.com/azure/key-vault/general/rbac-guide?tabs=azure-cli) is enabled.
 
 ### Vault access policy
 
-| Type       | Permissions                                                                                                                                                        |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Key        | [Get Keys](https://docs.microsoft.com/rest/api/keyvault/get-keys), [Get Key](https://docs.microsoft.com/rest/api/keyvault/get-key)                                 |
-| Secret     | [Get Secrets](https://docs.microsoft.com/rest/api/keyvault/get-secrets), [Get Secret](https://docs.microsoft.com/rest/api/keyvault/get-secret)                     |
-| Certificat | [Get Certificates](https://docs.microsoft.com/rest/api/keyvault/get-certificates), [Get Certificate](https://docs.microsoft.com/rest/api/keyvault/get-certificate) |
+| Type        | Permissions                                                                                                                                                        |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Key         | [Get Keys](https://docs.microsoft.com/rest/api/keyvault/get-keys), [Get Key](https://docs.microsoft.com/rest/api/keyvault/get-key)                                 |
+| Secret      | [Get Secrets](https://docs.microsoft.com/rest/api/keyvault/get-secrets), [Get Secret](https://docs.microsoft.com/rest/api/keyvault/get-secret)                     |
+| Certificate | [Get Certificates](https://docs.microsoft.com/rest/api/keyvault/get-certificates), [Get Certificate](https://docs.microsoft.com/rest/api/keyvault/get-certificate) |
 
 This is the minimum to list and read during execution.
 
