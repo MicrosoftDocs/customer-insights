@@ -88,6 +88,6 @@ Detached enrichments and exports become inactive. You reactivate them by adding 
 
 1. To confirm the deletion, select **Remove**.
 
-## Setup Connections with Secrets from your own Key Vault
+## Setup Connections with Secrets managed by your own Key Vault
 
 Some connections do need secrets like API Keys, Passwords, etc. Connections support secret configuration with your own Key Vault. Learn more about supported connections and how to setup on [Bring Your Own Key Vault](byo-key-vault.md).
