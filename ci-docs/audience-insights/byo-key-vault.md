@@ -34,14 +34,14 @@ To configure the Key Vault in Audience Insights, the following prerequisites mus
 
  Warning
 
-If you don't have the **User Access Administrator** role the RBAC permissions for the Azure service principal for Customer Insights must be setup separatly. Please follow the steps in [Connect to an Azure Data Lake Storage account by using an Azure service principal](https://docs.microsoft.com/dynamics365/customer-insights/audience-insights/connect-service-principal) but do the action on the Key Vault which should be linked.
+If you don't have the **User Access Administrator** role on the Key Vault, the RBAC permissions for the Azure service principal for Customer Insights must be setup separatly. Please follow the steps in [Connect to an Azure Data Lake Storage account by using an Azure service principal](https://docs.microsoft.com/dynamics365/customer-insights/audience-insights/connect-service-principal) but do the action on the Key Vault which should be linked.
 
 ### Link a Key Vault to the Environment
 
 1. Go to `Admin > System >` Tab `Security`.
 1. Click on `Setup` on the Key Vault tile.
 1. Pick a `Subscription`.
-1. Pick a `Key Vault` from the drop down. If to many Key Vaults are showing up a Resource Group can be selected to narrow the search down.
+1. Pick a `Key Vault` from the drop down. If too many Key Vaults are showing up, a Resource Group can be selected to narrow down the search results.
 1. Accept the `Data privacy and compliance` statement.
 1. Click `Save`
 
@@ -61,7 +61,7 @@ When [setting up connections](https://docs.microsoft.com/dynamics365/customer-in
 
 #### Supported Connection Types
 
-Following [export](export-destinations.md) connections are supported.
+The following [export](export-destinations.md) connections are supported.
 
 * [ActiveCampaign](export-active-campaign.md)
 * [Autopilot](export-autopilot.md)
@@ -80,7 +80,7 @@ For other export connections where the log in on the target system is required (
 
 ## Permissions granted on the Key Vault to Audience Insights
 
-If the Key Vault is linked to the Environment Audience Insights will be granted following permissons on the Key Vault depending if [Vault access policy](https://docs.microsoft.com/azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](https://docs.microsoft.com/azure/key-vault/general/rbac-guide?tabs=azure-cli) is enabled.
+If the Key Vault is linked to the Environment, Audience Insights will be granted following permissons on the Key Vault depending if [Vault access policy](https://docs.microsoft.com/azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](https://docs.microsoft.com/azure/key-vault/general/rbac-guide?tabs=azure-cli) is enabled.
 
 ### Vault access policy
 
@@ -96,6 +96,12 @@ This is the minimum to list and read during execution.
 
 The well-known `Key Vault Reader` and `Key Vault Secrets User` roles will be added for Audience Insights. For details on the roles see [Azure built-in roles for Key Vault data plane operations](https://docs.microsoft.com/azure/key-vault/general/rbac-guide?tabs=azure-cli).
 
+## Recommendations
+
+* Use a separate or dedicated Key Vault which is having only the secrets required for Audience Insights. Please read more here why [separate Key Vaults are recommended](https://docs.microsoft.com/azure/key-vault/general/best-practices#why-we-recommend-separate-key-vaults).
+
+* Follow the [Best practices to use Key Vault](https://docs.microsoft.com/azure/key-vault/general/best-practices#turn-on-logging) in regards of Control Access, Backup, Audit and Recovery options
+
 ## FAQs
 
 ### Can Audience Insights write secrets or overwrite secrets into the Key Vault?
@@ -108,4 +114,16 @@ No. Once you decide on Connection creation to configure it with a secret from a 
 
 ### How can i revoke access for Audience Insights?
 
-Depending if if [Vault access policy](https://docs.microsoft.com/azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](https://docs.microsoft.com/azure/key-vault/general/rbac-guide?tabs=azure-cli) are enabled you need to remove the permissions for the Service Principal `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` with the name `Dynamics 365 AI for Customer Insights`. Be aware that all connections will become invalid and all scenarios using the connection will break.
+Depending on whether [Vault access policy](https://docs.microsoft.com/azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](https://docs.microsoft.com/azure/key-vault/general/rbac-guide?tabs=azure-cli) are enabled you need to remove the permissions for the Service Principal `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` with the name `Dynamics 365 AI for Customer Insights`. Be aware that all connections will become invalid and all scenarios using the connection will break.
+
+### A secret got removed from the Key Vault which is used in a connection, what can i do?
+
+Audience Insights will give you a message on the UI when a configured secret from the Key Vault is not accessible anymore. It is recommended to enable [soft-delete](https://docs.microsoft.com/azure/key-vault/general/soft-delete-overview) which gives you the option to restore secrets if they are accidentally removed.
+
+### A connection does not work but my secret is in the Key Vault, what might be the cause?
+
+Audience Insights will give you a message on the UI when it can't access the Key Vault and specify the reason which can be
+
+* The permissions for the Audience Insights Service Principal got removed. In this case they need to be manually restored. See [Prerequisites](#prerequisites) and [Permissions granted on the Key Vault to Audience Insights](#permissions-granted-on-the-key-vault-to-audience-insights).
+
+* The Firewall on the Key Vault is enabled. In this case the Firewall must be disabled to make the Key Vault accessible for Audience Insights again.
