@@ -160,14 +160,20 @@ Engagement insights now offers funnel insights for customers. Use funnel insight
 
 > [!NOTE]
 > Funnel insights can only be generated for funnel steps that **do not** include custom dimensions. To generate funnel insights for all steps in your funnel, use engagement insights out-of-box dimensions to create your funnel steps. 
+> 
+> ![image](https://user-images.githubusercontent.com/72953201/134722285-b1c22d95-1ba0-4143-8d88-0a4cee0ffd8e.png)
 
 You can view funnel insights from the following categories, at both the main and step levels: 
 
- - Conversion rate 
+ - Conversion rate
+ -    The conversion rate between Checkout and Buy is 22%.
  - Transition time 
+ -    The average transition time between Cart and Checkout is 23 minutes. 
  - Completion time 
+ -    The average amount of time it takes customers to complete the funnel is 47 minutes. 
 
 Use these insights to explore deeper into customer behavior and better understand drop-off points and conversions for your funnel report. 
+To compare insights across different steps, select **See step breakdown** or **Compare to other steps**, from the insights cards. These will display a bar graph comparing metrics for each step of the funnel. 
 
 Funnel insights are recalculated every 24 hours, or when you **Save** your funnel report. 
 
