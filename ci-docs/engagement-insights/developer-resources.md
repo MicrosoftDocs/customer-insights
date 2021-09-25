@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This article lists all available code snippets and samples for quick reference. Get the code for an event sender for your platform and follow the tutorials.
+This article lists all available software development toolkit (SDK) code snippets and samples for developers to share data with Dynamics 365 Customer Insights. Get the code for events specific to your platform by following the tutorials.
 
 ## Capture events from websites
 
