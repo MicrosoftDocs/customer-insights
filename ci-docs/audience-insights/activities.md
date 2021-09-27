@@ -103,7 +103,7 @@ After configuring your customer activities and selecting *show in activity timel
 
 - There are several ways to filter activities in the activity timeline display:
 
-   - You can select one or many of the icons for an activity type to refine your results to include the selected type(s) only.
+   - You can select one or many of the activity icons to refine your results to include the selected type(s) only.
 
    :::image type="content" source="media/Activity_Timeline2.PNG" alt-text="Filter activities by type using the icons.":::
 
