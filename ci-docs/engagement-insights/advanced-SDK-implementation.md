@@ -29,7 +29,7 @@ The `IUser` object contains the following string properties:
 - **name**: The user's name.
 - **email**: The user's email address.
 
-The following example shows a code snippet sending user information. Where you see functions preceeded by an asterisk * symbol, replace the function with your custom implementation:
+The following example shows a code snippet sending user information. Where you see functions preceded by an asterisk * symbol, replace the function with your custom implementation:
 
 ```
 […]
