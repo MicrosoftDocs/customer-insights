@@ -38,14 +38,14 @@ Semantic mappings allow you to map your non-activity data to pre-defined schemas
 
 1. In the **Relationships** step, configure the details to connect your contact data to its corresponding account data. This step visualizes the connection between entities.  
 
-   > [!NOTE]
-   > There are two types of relationships that can be implemented: **Direct relationships** and **Indirect relationships**.
-   >   - An **Indirect relationship** relies on the configuration of an *Intermediate entity*, while a **Direct Relationship** does not.
-   >   - If your contact data directly relates to your account data, you will not need to use an *Intermediate entity*.
+   > [!Tip]
+   > There are two types of relationship paths that can be implemented: **Direct relationships** and **Indirect relationships**.
+   >   - Learn more about [direct and indirect relationship paths](relationships.md#relationship-paths)
 
    - **First**: Select **Add Relationship** to launch the relationship configuration steps.
    - **Second**: Select the attribute from your source entity that connects your contact entity to another entity.
-   - **Third**: Select the entity to connect your contact entity to. If your contact data directly relates to an account entity, choose an entity from the *Account entities* section. If your contact data indirectly relates to an account entity, choose an entity from the *Intermediate entities* section and define *Relationship 2* by selecting an attribute that connects your *Intermediate entity* to an *Account entity*.
+   - **Third**: Select the entity to connect your contact entity to, either from the *Account entities* section or the *Intermediate entity* section. 
+      - If you select an intermediate entity, you need to define a second relationship to connect to your target account entity.
 
    :::image type="content" source="media/Semantic_Mapping_Wizard2.png" alt-text="Select either an Account entity or an Intermediate entity.":::
 
