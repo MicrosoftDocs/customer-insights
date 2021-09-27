@@ -1,7 +1,7 @@
 ---
 title: "Customer activities"
 description: "Define customer activities and view them in a timeline on customer profiles." 
-ms.date: 09/12/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
