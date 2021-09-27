@@ -34,17 +34,17 @@ The first time you visit engagement insights you can configure settings, review 
 
 1. Select your region, and check the box if you want to opt in to receive email updates and offers.
 
-1. Review the **engagement insights (preview) Terms of use** and **Privacy statement**, and then select **Explore the demo** to accept these settings.
+1. Review the engagement insights (preview) **Terms of use** and **Privacy statement**, and then select **Explore the demo** to accept these settings.
 
 1. Explore the product using a set of sample data.
 
-##  Step 3: Set up a workspace and create and manage reports
+##  Step 3: Set up a workspace and create reports
 
 A workspace is where you can view user activity in real time, and store and manage reports. Add code to your website to start collecting *events*, the activity data that comes in from users.
 
 1. [Create a workspace](create-workspace.md) and add members.
 
-1. [Add code to your website](instrument-website.md) or [mobile app](developer-resources.md#capture-events-from-mobile-apps) to see user activity arriving into your workspace.
+1. Add code to your [website](instrument-website.md) or [mobile app](developer-resources.md#capture-events-from-mobile-apps) to see user activity arriving into your workspace.
 
 1. View a [real-time report](view-reports.md) that shows active users by browser, device, operating system, location, and language. You can also create [custom reports](custom-reports.md) to create your own visualizations.
 
@@ -52,15 +52,15 @@ A workspace is where you can view user activity in real time, and store and mana
 	
 ## Step 4: Export data to other channels
 
-You can create *refined events* (a virtual view) of your web analytics data. Then filter and export the data to Azure Data Lake Storage. You can ingest the exported data as a data source. For more information, see [Create a link between audience insights and engagement insights](integrate-audience-insights-engagement-insights.md).
+You can create *refined events* (a virtual view) of your web analytics data. Then filter and export the data to Azure Data Lake Storage. You can ingest the exported data as a data source.
 
 1. [Create refined events](refined-events.md) for export.
 
-1. [Export the data](export-events.md) to Data Lake Storage.
+1. [Export the data](export-events.md) to Azure Data Lake Storage.
 
 1. [Create a link between audience insights and engagement insights](integrate-audience-insights-engagement-insights.md) to share data between the two capabilities.
 
-1. [Recognize web events from previously authenticated](unknown-to-known.md) using the **unknown to known** feature.
+1. [Recognize web events from previously authenticated users](unknown-to-known.md) with the **unknown to known** feature.
 
 1. Learn how to [delete and export event data containing personal information](delete-export-personal-data.md).
 
@@ -72,7 +72,7 @@ A funnel report collects information about the steps that occur during a custome
 
 1. Create cross-channel funnel reports, once you have instrumented your mobile app with the engagement insights [Android SDK](get-started-android.md) or [iOS SDK](get-started-ios.md).
 
-1. Use funnel insights to gain deeper insight into customer behavior about the steps in your funnel report.
+1. Use [funnel insights]((funnel-reports.md#funnel-insights) to gain deeper insight into customer behavior about the steps in your funnel report.
  
 ## Step 6: Stay connected
 
