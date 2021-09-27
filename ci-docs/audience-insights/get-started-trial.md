@@ -90,7 +90,7 @@ You can now use the ingested data to tailor Customer Insights to your scenario. 
 
 - Trials are active for 30 days by default. However, you can extend them after day 23 when you sign in to your trial.
 - You can't use your own Azure Data Lake storage account to store output data during a trial. However, you can ingest data from a Data Lake storage account.
-- You can store a up to 3 GB data in the Dataverse environment that gets provisioned automatically when you start a Customer Insights trial.
+- You can store up to 3 GB data in the Dataverse environment that gets provisioned automatically when you start a Customer Insights trial.
 
 ## Copy data from a trial to a paid subscription
 
