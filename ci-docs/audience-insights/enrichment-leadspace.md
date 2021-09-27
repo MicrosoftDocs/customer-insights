@@ -81,7 +81,7 @@ For more information, see [Leadspace APIs](https://support.leadspace.com/hc/en-u
 ## Next steps
 
 
-Build on top of your enriched customer data. Create [Segments](segments.md) and [Measures](measures.md) by clicking the icons on the top, and even [export the data](export-destinations.md) by navigating to exports to deliver personalized experiences to your customers.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## Data privacy and compliance
 
