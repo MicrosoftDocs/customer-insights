@@ -1,12 +1,12 @@
 ---
-title: Manage cookies and user consent to store user data
+title: Manage cookies and user consent to store user data in Dynamics 365 Customer Insights
 description: Understand how cookies and user consent are used to identify website visitors.
 author: mochimochi016
 ms.reviewer: mhart
 ms.author: jefhar
-ms.date: 9/21/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
-ms.subservice: engagement-insights 
+ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ---
@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Customer Insights engagement insights capability uses cookies and local storage (`localStorage`) to identify website visitors.
+Dynamics 365 Customer Insights engagement insights capability uses cookies and (`localStorage`) keys to identify website visitors.
 
 Cookies are small files that store bits of information about a user’s interactions with the website. They are stored in web browsers. When users visit a website for which your users have stored cookies, the browser sends that information to the server, which returns information that is unique to the user. This is the technology that allows, for example, an online shopping cart to keep selected items in it even if a user navigates away from the website.
 
@@ -56,14 +56,14 @@ Below is a code snippet to initialize web SDK with user consent:
 
 ### Local storage
 
-Engagement insights capability also makes use of local storage (`localStorage`) to track non-sensitive data. This data is fully stored in the browser itself, with no traffic sent to or from your servers.
+Engagement insights capability also makes use of (`localStorage`) keys to track non-sensitive data. This data is fully stored in the browser itself, with no traffic sent to or from your servers.
 
-- *EISession.Id* 
+- *EISession.Id*
     - Stores information about the ongoing user session, such as session ID, when it started, and when it expires.
 - *EISession.Previous*
     - Stores the URL of the previously visited page in the current session.
-    
-Keys in local storage don't expire automatically. They'll be reset during the next session by the SDK.
+
+Keys in local storage don't expire automatically, and they'll get reset during the next SDK session.
 
 ## Deleting cookies
 
