@@ -11,6 +11,9 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
+# Note
+Currently it is not possible to setup a new connection and export to Google Ads if you do not have an approved Google Ads Developer token. Due to policy changes, we will be updating the Google Ads export and provide an export without the need for developer token. 
+
 # Export segments to Google Ads (preview)
 
 Export segments of unified customer profiles to a Google Ads audience list and use them to advertise on Google Search, Gmail, YouTube, and Google Display Network. 
