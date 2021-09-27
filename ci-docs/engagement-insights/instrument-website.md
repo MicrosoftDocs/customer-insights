@@ -4,7 +4,7 @@ description: How to add a code snippet to capture Dynamics 365 Customer Insights
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 04/30/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
