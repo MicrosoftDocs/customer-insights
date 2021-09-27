@@ -91,4 +91,14 @@ The following actions are available when you select an activity.
 
 - **Delete**: Opens a dialog to confirm the deletion of the selected activity. You can also delete more than one activity at once by selecting the activities and then selecting the delete icon. Select **Delete** to confirm the deletion.
 
+## View activity timelines on customer profiles
+
+After configuring your customer activities and selecting *show in activity timeline* in the activity configuration, you can view all your customer's activities on their customer profile.
+
+1. In audience insights, go to **Customers** and select a customer that you would like to view.
+
+1. If a customer has participated in an activity that you have configured, it will be populated on the timeline.
+
+   :::image type="content" source="media/Activity_Timeline1.PNG" alt-text="View configured activities in Customer Profiles.":::
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
