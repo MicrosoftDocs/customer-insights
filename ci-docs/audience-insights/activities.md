@@ -95,10 +95,31 @@ The following actions are available when you select an activity.
 
 After configuring your customer activities and selecting *show in activity timeline* in the activity configuration, you can view all your customer's activities on their customer profile.
 
-1. In audience insights, go to **Customers** and select a customer that you would like to view.
+- In audience insights, go to **Customers** and select a customer that you would like to view.
 
-1. If a customer has participated in an activity that you have configured, it will be populated on the timeline.
+- If a customer has participated in an activity that you have configured, it will be populated on the *activity timeline*.
 
    :::image type="content" source="media/Activity_Timeline1.PNG" alt-text="View configured activities in Customer Profiles.":::
+
+- There are several ways to filter activities in the activity timeline display:
+
+   - You can select one or many of the icons for an activity type to refine your results to include the selected type(s) only.
+
+   :::image type="content" source="media/Activity_Timeline2.PNG" alt-text="Filter activities by type using the icons.":::
+
+   - You can select **Filter** to open a filter panel to configure your timeline filters.
+
+      - You can filter by *ActivityType* and *Date*
+
+      - After selecting **Apply**, your filters will appear on the activity timeline panel and your results will be populated in the timeline.
+
+   :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="Use the filter panel to configure filter conditions.":::
+
+- To remove filters, you can select the **'x'** next to each filter applied to the timeline or you can select **Clear filters**
+
+   :::image type="content" source="media/Activity_Timeline4.PNG" alt-text="Clear timeline view filters individually or all at once.":::
+
+> [!NOTE]
+> Activity filters do not save after you leave a customer profile. Activity timeline filters must be configured each time you click on a customer profile.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
