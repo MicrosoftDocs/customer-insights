@@ -1,13 +1,13 @@
 ---
 title: "Relationships between entities and entity paths"
 description: "Create and manage relationships between entities from multiple data sources."
-ms.date: 06/01/2020
+ms.date: 09/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
 ---
 
@@ -104,39 +104,39 @@ A relationship path determines which entities you can use when creating rules fo
 
 ### Direct relationship
 
-A relationship is classified as a *direct relationship* when a source entity relates to a target entity with only one relationship.
+A relationship is classified as a **direct relationship** when a source entity relates to a target entity with only one relationship.
 
-For example, if an activity entity called *eCommerce_eCommercePurchases* connects to a target entity *eCommerce_eCommerceContacts* entity through *ContactId* only, it is a *direct relationship*.
+For example, if an activity entity called *eCommerce_eCommercePurchases* connects to a target entity *eCommerce_eCommerceContacts* entity through *ContactId* only, it's a direct relationship.
 
-:::image type="content" source="Direct_Relationship.png" alt-text="Source entity connects directly to target entity":::
+:::image type="content" source="media/direct_Relationship.png" alt-text="Source entity connects directly to target entity.":::
 
 #### Multi-path relationship
 
-A *multi-path relationship* is a special type of *direct relationship* that allows you to connect a source entity to more than one target entity.
+A **multi-path relationship** is a special type of direct relationship that connects a source entity to more than one target entity.
 
-For example, if an activity entity called *eCommerce_eCommercePurchases* connects to two target entities, both *eCommerce_eCommerceContacts* and *loyaltyScheme_loyCustomers*, it is a *multi-path relationship*.
+For example, if an activity entity called *eCommerce_eCommercePurchases* relates to two target entities, both *eCommerce_eCommerceContacts* and *loyaltyScheme_loyCustomers*, it's a multi-path relationship.
 
-:::image type="content" source="multi-path_relationship.png" alt-text="Source entity connects directly to more than one target entity through a multi-hop relationship":::
+:::image type="content" source="media/multi-path_relationship.png" alt-text="Source entity connects directly to more than one target entity through a multi-hop relationship.":::
 
 ### Indirect relationship
 
-A relationship is classified as an *indirect relationship* when a source entity relates to one or more additional entities before relating to a target entity.
+A relationship is classified as an **indirect relationship** when a source entity relates to one or more additional entities before relating to a target entity.
 
 #### Multi-hop relationship
 
-A *multi-hop relationship* is an *indirect relationship* that allows you to connect a source entity to a target entity through the use of one or more other intermediary entities.
+A *multi-hop relationship* is an *indirect relationship* that allows you to connect a source entity to a target entity through one or more other intermediary entities.
 
-For example, if an activity entity called *eCommerce_eCommercePurchasesWest* connects to an intermediate entity called *eCommerce_eCommercePurchasesEast* and then connects to a target entity called *eCommerce_eCommerceContacts*, it is a *multi-hop relationship*.
+For example, if an activity entity called *eCommerce_eCommercePurchasesWest* connects to an intermediate entity called *eCommerce_eCommercePurchasesEast* and then connects to a target entity called *eCommerce_eCommerceContacts*, it's a multi-hop relationship.
 
-:::image type="content" source="multi-hop_relationship.png" alt-text="Source entity connects directly to a target entity with an intermediate entity.":::
+:::image type="content" source="media/multi-hop_relationship.png" alt-text="Source entity connects directly to a target entity with an intermediate entity.":::
 
 ### Multi-hop, multi-path relationship
 
-Multi-hop and multi-path relationships can be used together to create *multi-hop, multi-path relationships* that combine the functions of both *multi-hop* and *multi-path relationships*, allowing you to connect to more than one target entity while using intermediate entities.
+Multi-hop and multi-path relationships can be used together to create **multi-hop, multi-path relationships**. This special type combines the functions of **multi-hop** and **multi-path relationships**. It lets you connect to more than one target entity while using intermediate entities.
 
-For example, if an activity entity called *eCommerce_eCommercePurchasesWest* connects to an intermediate entity called *eCommerce_eCommercePurchasesEast* and then connects to two target entities, both *eCommerce_eCommerceContacts* and *loyaltyScheme_loyCustomers*, it is a *multi-hop, multi-path relationship*.
+For example, if an activity entity called *eCommerce_eCommercePurchasesWest* connects to an intermediate entity called *eCommerce_eCommercePurchasesEast* and then connects to two target entities, both *eCommerce_eCommerceContacts* and *loyaltyScheme_loyCustomers*, it's a multi-hop, multi-path relationship.
 
-:::image type="content" source="multi-hop_multi-path_relationship.png" alt-text="Source entity connects directly to one target entity and connects to another target entity through an intermediate entity.":::
+:::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="Source entity connects directly to one target entity and connects to another target entity through an intermediate entity.":::
 
 ## Manage existing relationships 
 
