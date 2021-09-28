@@ -50,6 +50,9 @@ You can create an environment link by updating the **Admin** > **Environment** s
 
 After linking environments, you can select optional features for the linked environments. These features enable unified profile attributes and segments from audience insights for interactive analysis on customer data.
 
+> [!IMPORTANT]
+> For audience insights segments to show up in engagement insights, you must first [run merge and downstream processes](../audience-insights/merge-entities.md). Downstream processes are important because they generate a unique table that prepares audience insights segments to be shared with engagement insights. (If a system refresh is scheduled, it will automatically include downstream processes.)
+
 **To analyze web data in engagement insights**
 
 1. On the **Environment admin** page, turn on the **Share data from audience insights with engagement insights** toggle, and then select **Next**.

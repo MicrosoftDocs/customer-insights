@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Google Ads"
 description: "Learn how to configure the connection and export to Google Ads."
-ms.date: 08/27/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -14,6 +14,9 @@ manager: shellyha
 # Export segments to Google Ads (preview)
 
 Export segments of unified customer profiles to a Google Ads audience list and use them to advertise on Google Search, Gmail, YouTube, and Google Display Network. 
+
+> [!IMPORTANT]
+> Currently, you can only create a new connection and export data to Google Ads if you already have an approved Google Ads Developer token. Due to policy changes, we'll update the Google Ads export shortly and provide an export option that won't require a developer token to ensure continuity of your experience and simplify the export to Google Ads. We recommend to not set up more connections to Google Ads to facilitate an easier switch to the new export option.
 
 ## Prerequisites for connection
 

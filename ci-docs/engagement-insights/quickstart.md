@@ -21,7 +21,7 @@ Engagement insights, a capability of Dynamics 365 Customer Insights, lets you co
 
 You must have an active Microsoft Azure Active Directory user account. 
 
-1. Open the [engagement insights](https://pi.dynamics.com/) website. 
+1. Open the [engagement insights](https://home.ci.ai.dynamics.com/app/engagement-insights) website. 
 
 1. Sign in with your school or work account.
 
