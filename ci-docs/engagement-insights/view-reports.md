@@ -4,7 +4,7 @@ description: Use the available reports to see real-time activity on your site.
 author: darrinw-docs
 ms.reviewer: mhart
 ms.author: darrinw
-ms.date: 06/18/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -87,12 +87,17 @@ Mobile reports are grouped in real-time usage, app, and user categories. You can
 
 - **Locations** show information about app users by country, region, and city.
 
-## Filter by time or value
+## Filter by time or date range
 
-You can select the time frame or value in a web or mobile report to focus on a value or time period. 
+You can select the time frame or date range in a web or mobile report to focus on a value or time period. 
 
-- To select a time frame, select **More [...]** from the dropdown list of the report. Time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.”
+- To select a time frame, in the upper-right corner of the report view, select a value from the dropdown list of the report. You can also choose a fixed date range by selecting a **From** and **To** date. 
 
-- In most reports, select a value in a chart or list to filter the report for the selected value.
+  :::image type="content" source="media/filter-by-time.png" alt-text="Filter by time or date range.":::   
+
+> [!NOTE]
+> Time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.”
+
+- For most reports, select a value in a chart or list to filter the report.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
