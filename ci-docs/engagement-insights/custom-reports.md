@@ -44,7 +44,7 @@ In addition to out-of-box (OOB) reports, you can build a custom report with char
 
 1. Provide a name for the custom report and select **Save** to create it.
  
-### Filter custom reports
+## Filter a custom report
 
 You can select the time frame or date range in a custom report to focus on a value or time period.
 
