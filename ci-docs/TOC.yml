@@ -251,8 +251,6 @@
           href: audience-insights/supported-languages.md
         - name: Security
           items: 
-            - name: Managed identity
-              href: audience-insights/managed-identity.md
             - name: Bring your own Key Vault
               href: audience-insights/byo-key-vault.md
 
