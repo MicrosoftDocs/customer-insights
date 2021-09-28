@@ -52,7 +52,7 @@ To select a time frame, in the upper-right corner of the report view, select a v
 
 :::image type="content" source="media/filter-time-date-range.png" alt-text="Filter by time or date range.":::
 
-For most reports, select **+ Add condition**, to select a dimension or segment to filter the report.
+For most reports, select **+ Add condition**, to select a dimension or segment to filter the report. For more information, see [View and create segments](segments.md).
 
 ## Edit a custom report
 
