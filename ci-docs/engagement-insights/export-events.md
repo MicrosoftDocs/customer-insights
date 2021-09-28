@@ -40,7 +40,7 @@ Before setting up an export, you need to have access and an active subscription 
 
 ## Export events
 
-There are two ways to export events: 
+There are two ways to bring up the **Export events** dialog: 
 - Go to **Data** > **Exports** and select **New export**.
 - Go to **Data** > **Events**, select **More [...]** next to the event you want to export and select **Export** from the dropdown menu. 
 
