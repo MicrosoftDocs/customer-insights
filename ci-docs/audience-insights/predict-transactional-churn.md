@@ -13,7 +13,9 @@ manager: shellyha
 
 # Transactional churn prediction (preview)
 
-Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. You can create new churn predictions on **Intelligence** > **Predictions**. Select **My predictions** to see other predictions that you've created.
+Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. You can create new churn predictions on **Intelligence** > **Predictions**. Select **My predictions** to see other predictions that you've created. 
+
+For Business accounts, Transactional churn can be predicted not just for an account but a combination of account and say product category. This can help answer questions like how likely is 'Contoso' likley to stop buying 'office stationary' from you. Here 'Contoso' is a business account and 'Office stationary' is a product category that they are currently a customer of. In addition, for business accounts we are also able to use AI to generate a list of potential reasons why an account is likely to churn for a given sub-classification (like product category)
 
 > [!TIP]
 > Try the tutorial for a transactional churn prediction using sample data: [Transactional churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
@@ -115,6 +117,14 @@ Transactional churn prediction helps predict if a customer will no longer purcha
 
 1. Select **Next**.
 
+### Provide an optional  list of benchmark accounts (applies to Business accounts only)
+
+1. Add a list of your business customers/accounts
+
+1. Select **+ Add customers**
+
+1. Once complete select **Next**
+
 ### Set schedule and review configuration
 
 1. Set a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested. Most businesses can retrain once per month and get a good accuracy for their prediction.
@@ -162,6 +172,11 @@ Transactional churn prediction helps predict if a customer will no longer purcha
     1. **Likelihood to churn (number of customers):** Groups of customers based on their predicted risk of churn. This data can help you later if you want to create a segment of customers with high churn risk. Such segments help to understand where your cutoff should be for segment membership.
        
     1. **Most influential factors:** There are many factors that are taken into account when creating your prediction. Each of the factors has its importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. Or you can use this information later to [create segments](segments.md) that could help influence churn risk for customers.
+
+
+1. For business accounts there is an additional page of information called **Influential feature analysis** next to **Summary**
+
+1. Here you can see the the potential reasons why a business account is likely to churn. 
 
 ## Manage predictions
 
