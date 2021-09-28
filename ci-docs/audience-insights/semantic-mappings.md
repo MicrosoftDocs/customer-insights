@@ -11,7 +11,7 @@ ms.author: cadesantha
 manager: shellyha
 ---
 
-# Semantic Mappings
+# Semantic mappings
 
 Semantic mappings let you map your non-activity data to pre-defined schemas. These schemas help audience insights to better understand your data attributes. Semantic mapping and the provided data enable new insights and features in audience insights. To map your activity data to the schemas, review the [activities](activities.md) documentation.
 
