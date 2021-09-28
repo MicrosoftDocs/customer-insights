@@ -74,11 +74,7 @@ Semantic mappings allow you to map your non-activity data to pre-defined schemas
 
 1. When you are satisfied with your configuration, select **Save** to save your new **Semantic mapping**.
 
-   :::image type="content" source="media/Semantic_Mapping_Wizard6.png" alt-text="After confirming your configuration, select the save button.":::
-
 1. After saving, you have the option of selecting **Run** to run the creation of your **Semantic mapping** or you can select **Close** to save your **Semantic mapping** without running it.
-
-   :::image type="content" source="media/Semantic_Mapping_Wizard7.png" alt-text="Run your new semantic mapping or select close to run it at a later point.":::
 
 1. To run a **Semantic mapping** at a later point, select the **Semantic mapping** of your choice and select **Refresh**.
 
@@ -89,7 +85,7 @@ Semantic mappings allow you to map your non-activity data to pre-defined schemas
 
 On **Data** > **Semantic mappings (preview)**, you can view all your saved semantic mappings, and manage them. Each semantic mapping is represented by a row that includes details about the source entity, semantic type, mapping type, and status for that semantic mapping.
 
-The following actions are available when you select a semantic mapping: 
+:::image type="content" source="media/semantic-mapping-options.png" alt-text="Options to manage semantic mappings.":::
 
 - **Edit**: Opens the semantic mapping setup on the review step. You can change any or all of the current configuration from this step. After changing the configuration, select **Save** and then select **Run** to process the changes.
 
