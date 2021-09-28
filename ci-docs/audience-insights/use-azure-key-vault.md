@@ -96,7 +96,7 @@ The **Key Vault Reader** and **Key Vault Secrets User** roles will be added for 
 
 * Use a separate or dedicated Key Vault, which contains only the secrets required for audience insights. Read more about why [separate Key Vaults are recommended](/azure/key-vault/general/best-practices#why-we-recommend-separate-key-vaults).
 
-* Follow the [Best practices to use Key Vault](/azure/key-vault/general/best-practices#turn-on-logging) for control access, backup, audit, and recovery options.
+* Follow the [Best practices to use Key Vault](/azure/key-vault/general/best-practices#turn-on-logging) for control access, backup, audit and recovery options.
 
 ## Frequently asked questions
 
