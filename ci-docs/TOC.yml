@@ -252,7 +252,7 @@
         - name: Security
           items: 
             - name: Bring your own Key Vault
-              href: audience-insights/byo-key-vault.md
+              href: audience-insights/use-azure-key-vault.md
 
     - name: Extensibility
       items:
