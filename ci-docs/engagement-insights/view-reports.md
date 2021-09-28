@@ -95,9 +95,10 @@ You can select the time frame or date range in a web or mobile report to focus o
 
   :::image type="content" source="media/filter-by-time.png" alt-text="Filter by time or date range.":::   
 
+- For most reports, select a value in a chart or list to filter the report.
+
 > [!NOTE]
 > Time range selection is disabled for a real-time usage report; the time range for a real-time usage report is “now.”
 
-- For most reports, select a value in a chart or list to filter the report.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
