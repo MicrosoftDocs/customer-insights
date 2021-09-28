@@ -22,9 +22,9 @@ An event is data that represents user behavior, like activity on a website.
 
 ## Prerequisites
 
-In order to see events, your website data needs to first be conneceted to engagement insights with a code snippet. For more information, see [Install the web SDK on a website](instrument-website.md). 
+In order to see events, your website data needs to first be conneceted to engagement insights with a code snippet. For more information, see [Install the web SDK on a website](instrument-website.md).
 
-:::image type="content" source="media/new-events-connect-data.png" alt-text="Connect your data first.":::
+ :::image type="content" source="media/new-events-connect-data.png" alt-text="Connect your data first.":::
 
 ## Create refined events
 
