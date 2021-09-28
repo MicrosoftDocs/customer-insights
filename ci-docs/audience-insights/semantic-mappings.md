@@ -1,7 +1,7 @@
 ---
 title: "Semantic mappings (Preview)"
 description: "Overview of semantic mappings and how to use them." 
-ms.date: 09/20/2021
+ms.date: 09/28/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -13,14 +13,11 @@ manager: shellyha
 
 # Semantic Mappings
 
-Semantic mappings allow you to map your non-activity data to pre-defined schemas, allowing Audience Insights to better understand your data attributes. Depending on the type of Semantic Mapping created and the data your provide, you will be able to enable new insights and features throughout Audience Insights. 
+Semantic mappings allow you to map your non-activity data to pre-defined schemas, allowing audience insights to better understand your data attributes. Depending on the type of semantic mapping created and the data you provide, you will be able to enable new insights and features throughout audience insights. To map your activity data to pre-defined schemas, follow the steps outlined in the [activities](activities.md) documentation.
 
-   > [!NOTE]
-   > To map your activity data to pre-defined schemas, follow the steps outlined in the [activities](activities.md) documentation.
+**Semantic mappings are currently enabled for environments based on business accounts**. *ContactProfile* is the only type of semantic mapping currently available in audience insights.
 
-**Semantic mappings are currently enabled in B2B instances only**. There is currently one type of Semantic Mapping supported in Audience Insights: *ContactProfile*.
-
-## Define a *ContactProfile* semantic entity mapping
+## Define a ContactProfile semantic entity mapping
 
 1. In audience insights, go to **Data** > **Semantic mappings (preview)**.
 
@@ -49,10 +46,10 @@ Semantic mappings allow you to map your non-activity data to pre-defined schemas
 
    :::image type="content" source="media/Semantic_Mapping_Wizard2.png" alt-text="Select either an Account entity or an Intermediate entity.":::
 
-   - **Fourth**: Name the defined relationship(s). If a relationship between your entities already exist, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
+   - **Fourth**: Name the defined relationship(s). If a relationship between your entities already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
    - **Fifth**: Once you are finished configuring your relationship(s), select **Apply**. You will now see a visualization of your relationship(s) between your contact entity and your account entity.
 
-   :::image type="content" source="media/Semantic_Mapping_Wizard3.png" alt-text="Click apply to confirm and apply relationship definition steps.":::
+   :::image type="content" source="media/Semantic_Mapping_Wizard3.png" alt-text="Select apply to confirm and apply relationship definition steps.":::
 
    > [!NOTE]
    > You are able to configure additional relationships between the contact entity and other account entities, utilizing intermediate entities as needed.
@@ -89,9 +86,7 @@ On **Data** > **Semantic mappings (preview)**, you can view all your saved seman
 
 - **Edit**: Opens the semantic mapping setup on the review step. You can change any or all of the current configuration from this step. After changing the configuration, select **Save** and then select **Run** to process the changes.
 
-- **Refresh**: Regenerates the selected semantic mapping using the most up-to-date data from the respective entities utilized in the semantic mapping configuration.
-> [!NOTE]
-> Refreshing any given **Semantic mapping** will refresh all **Semantic mappings** of the same semantic type.
+- **Refresh**: Refreshes the selected semantic mapping with the most up-to-date data from the respective entities used in the semantic mapping configuration. Refreshing any given **Semantic mapping** will refresh all **Semantic mappings** of the same type.
 
 - **Rename**: Opens a dialog where you can enter a different name for the selected semantic mapping. Select **Save** to apply your changes.
 
