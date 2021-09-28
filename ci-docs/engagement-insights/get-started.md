@@ -72,7 +72,7 @@ A funnel report collects information about the steps that occur during a custome
 
 1. Create cross-channel funnel reports, once you have instrumented your mobile app with the engagement insights [Android SDK](get-started-android.md) or [iOS SDK](get-started-ios.md).
 
-1. Use [funnel insights]((funnel-reports.md#funnel-insights) to gain deeper insight into customer behavior about the steps in your funnel report.
+1. Use [funnel insights](funnel-reports.md#funnel-insights) to gain deeper insight into customer behavior about the steps in your funnel report.
  
 ## Step 6: Stay connected
 
