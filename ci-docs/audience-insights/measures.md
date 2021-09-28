@@ -134,7 +134,7 @@ This section walks you through creating a new measure from scratch. You can buil
 
 1. If there are values in your data that you need to replace with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
 
-1. You can use the **Roll up sub-accounts** toggle if you [use accounts with hierarchies](tbd.md).
+1. You can use the **Roll up sub-accounts** toggle if you [use accounts with hierarchies](relationships.md#set-up-account-hierarchies).
    - If it's set to **Off**, the measure is calculated for every account. Every account gets own of result.
    - If it's set to **On**, select **Edit** to choose the account hierarchy according to the ingested hierarchies. The measure will yield only one result because it's aggregated with sub accounts.
 

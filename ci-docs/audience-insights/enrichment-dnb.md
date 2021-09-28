@@ -30,7 +30,7 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
 1. Sign in to [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). To retrieve credentials, [restore your password](https://sso.dnb.com/signin/forgot-password?lead_source=microsoft_audienceinsights).
 
-1. Download [our csv template file](tbd.md) that will be used to map the audience insights fields to the corresponding Dun & Bradstreet fields. 
+1. Download [our csv template file](https://c360devenrichment.blob.core.windows.net/mapping/DnBCIdatamapping.csv) that will be used to map the audience insights fields to the corresponding Dun & Bradstreet fields. 
 
 1. Upload the file in the **Upload data** step of the Dun & Bradstreet project creation experience. 
 
