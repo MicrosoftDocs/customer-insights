@@ -15,7 +15,7 @@ manager: shellyha
 
 Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. You can create new churn predictions on **Intelligence** > **Predictions**. Select **My predictions** to see other predictions that you've created. 
 
-For Business accounts, Transactional churn can be predicted not just for an account but a combination of account and say product category. This can help answer questions like how likely is 'Contoso' likley to stop buying 'office stationary' from you. Here 'Contoso' is a business account and 'Office stationary' is a product category that they are currently a customer of. In addition, for business accounts we are also able to use AI to generate a list of potential reasons why an account is likely to churn for a given sub-classification (like product category)
+For Business accounts, Transactional churn can be predicted not just for an account but a combination of account and say product category. This can help answer questions like how likely is 'Contoso' to stop buying 'office stationary' from you. Here 'Contoso' is a business account and 'Office stationary' is a product category that they are currently a customer of. In addition, for business accounts we are also able to use AI to generate a list of potential reasons why an account is likely to churn for a given sub-classification (like product category)
 
 > [!TIP]
 > Try the tutorial for a transactional churn prediction using sample data: [Transactional churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
@@ -174,9 +174,18 @@ For Business accounts, Transactional churn can be predicted not just for an acco
     1. **Most influential factors:** There are many factors that are taken into account when creating your prediction. Each of the factors has its importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. Or you can use this information later to [create segments](segments.md) that could help influence churn risk for customers.
 
 
-1. For business accounts there is an additional page of information called **Influential feature analysis** next to **Summary**
+1. For business accounts there is an additional page of information called **Influential feature analysis** next to **Summary** of results, with four sections of data:
 
-1. Here you can see the the potential reasons why a business account is likely to churn. 
+    1. Right pane: Content that shows up in the page is dictated by the item that is curretly selected in the right pane. In the right pane there are two lists **Top customers** and **Benchmark customers**.   Both lists are ordered by decreasing value of the churn score whether the score is just for the customer or a combined score for customers + a sub-classification like Product Category
+        
+        1. **Top customers**: List of 10 customers that are at highest risk of churn and lowest risk of churn based on their churn scores. 
+        2. **Benchmark customers**: List of 10 customers that were selected by you when you when you configured the model
+ 
+    1. **Churn score:** Shows the churn scrore for the selected item in the right pane.
+    
+    1. **Churn risk distribution:** Shows the churn risk distribution across customers while highlighting the percnetile in which the selected customer is. 
+    
+    1. **Top features increasing Churn risk:** For the selected item in the right pane, you can see the top reasons for why that item is likley to churn. Along with this you can also see the degree of impact this reason has on the churn score and they you get a comparison across the lows, mediums and highs.      
 
 ## Manage predictions
 
