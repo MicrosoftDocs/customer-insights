@@ -39,11 +39,10 @@ To add connections, you need to have [administrator permissions](permissions.md)
 
 1. Select **Add connection** to create a new connection. Choose from the dropdown menu what type of connection you want to create.
 
-<!-- step for key vault? -->
-
 1. In the **Set up connection** pane, provide the required details. 
    1. The **Display name** and the type of the connection describe a connection. We recommend choosing a name that explains the purpose and target of this connection.
    1. The exact fields depend on what service you are connecting to. You can learn about details of a specific connection type in the article about the target service.
+   1. If you [use your own Key Vault](use-azure-key-vault.md) to store secrets, activate **Use Key Vault** and choose the secret from the list.
 
 1. To create the connection, select **Save**.
 

@@ -35,13 +35,13 @@ To configure the Key Vault in audience insights, the following prerequisites mus
 ### Link a Key Vault to the Environment
 
 1. Go to **Admin** > **System** and select the **Security** tab.
-1. Select **Setup** on the Key Vault tile. <!-- set up?-->
+1. Select **Setup** on the Key Vault tile.
 1. Choose a **Subscription**.
 1. Choose a **Key Vault** from the drop-down list. If too many Key Vaults are showing up, select a resource group to limit the search results.
 1. Accept the **Data privacy and compliance** statement.
 1. Select **Save**.
 
-**TODO** - ADD SCREENSHOTS
+:::image type="content" source="media/set-up-azure-key-vault.png" alt-text="Steps to set up a linked Key Vault in audience insights.":::
 
 The Key Vault tile now shows the linked Key Vault name, resource group, and subscription. It's ready to be used in the connection setup.
 For details which permissions on the Key Vault are granted to audience insights see [Permissions granted on the Key Vault to audience insights](#permissions-granted-on-the-key-vault-to-audience-insights).
@@ -55,7 +55,7 @@ When [setting up connections](/dynamics365/customer-insights/audience-insights/c
 1. For the supported connection types, a **Use Key Vault** toggle is available if you linked a Key Vault.
 1. Instead of entering the secret manually, you can choose the secret name that points to the secret value in the Key Vault.
 
-**TODO** - ADD SCREENSHOTS
+:::image type="content" source="media/use-key-vault-secret.png" alt-text="Connection pane with SFTP connection that uses a Key Vault secret.":::
 
 ## Supported Connection Types
 
@@ -73,8 +73,6 @@ The following [export](export-destinations.md) connections are supported.
 * [Sendgrid](export-sendgrid.md)
 * [Sendinblue](export-sendinblue.md)
 * [SFTP](export-sftp.md)
-
-Export connections that require you to sign in on the target system, the connection secrets are kept in the service. <!-- in the service = in AUI DB? -->
 
 ## Permissions granted on the Key Vault to audience insights
 
