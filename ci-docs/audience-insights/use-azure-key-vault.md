@@ -13,7 +13,7 @@ manager: shellyha
 
 # Bring your own Azure Key Vault (Preview)
 
-Linking a dedicated [Azure Key Vault](/azure/key-vault/general/basic-concepts) to an audience insights environment helps organizations to meet compliance requirements.
+Linking a dedicated [Azure Key Vault](/azure/key-vault/general/basic-concepts.md) to an audience insights environment helps organizations to meet compliance requirements.
 The dedicated Key Vault can be used to stage and use secrets in an organization's compliance boundary. Audience insights can use the secrets in Key Vault to [set up connections](connections.md) to third-party systems.
 
 ## Link the Key Vault to the audience insights environment
@@ -26,7 +26,7 @@ To configure the Key Vault in audience insights, the following prerequisites mus
 
 * You have an [Administrator](permissions.md#administrator) role in audience insights. Learn more about [user permissions in audience insights](permissions.md#assign-roles-and-permissions).
 
-* You have the [Contributor](/azure/role-based-access-control/built-in-roles#contributor) and [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) role on the Key Vault or the Resource Group the Key Vault is belonging to. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal). If you don't have the **User Access Administrator** role on the Key Vault, the role-based access control permissions for the Azure service principal for Customer Insights must be set up separately. Follow the steps to [use an Azure service principal](connect-service-principal.md) for the Key Vault that should be linked.
+* You have the [Contributor](/azure/role-based-access-control/built-in-roles.md#contributor) and [User Access Administrator](/azure/role-based-access-control/built-in-roles.md#user-access-administrator) role on the Key Vault or the Resource Group the Key Vault is belonging to. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal.md). If you don't have the **User Access Administrator** role on the Key Vault, the role-based access control permissions for the Azure service principal for Customer Insights must be set up separately. Follow the steps to [use an Azure service principal](connect-service-principal.md) for the Key Vault that should be linked.
 
 * The Key Vault must have Key Vault firewall **disabled**.
 
@@ -48,7 +48,7 @@ For details which permissions on the Key Vault are granted to audience insights 
 
 ## Use the Key Vault in the Connection setup
 
-When [setting up connections](/dynamics365/customer-insights/audience-insights/connections) to third-party systems, the secrets from the linked Key Vault can be used to configure the connections.
+When [setting up connections](connections.md) to third-party systems, the secrets from the linked Key Vault can be used to configure the connections.
 
 1. Go to **Admin** > **Connections**.
 1. Select **Add connection**.
@@ -76,27 +76,27 @@ The following [export](export-destinations.md) connections are supported.
 
 ## Permissions granted on the Key Vault to audience insights
 
-The following permissions are granted to audience insights on a linked Key Vault if [Key Vault access policy](/azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](/azure/key-vault/general/rbac-guide?tabs=azure-cli) is enabled.
+The following permissions are granted to audience insights on a linked Key Vault if [Key Vault access policy](/azure/key-vault/general/assign-access-policy.md?tabs=azure-portal) or [Azure role-based access control](/azure/key-vault/general/rbac-guide.md?tabs=azure-cli) is enabled.
 
 ### Key Vault access policy
 
 | Type        | Permissions                                                                                                                                                        |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Key         | [Get Keys](/rest/api/keyvault/get-keys), [Get Key](/rest/api/keyvault/get-key)                                 |
-| Secret      | [Get Secrets](/rest/api/keyvault/get-secrets), [Get Secret](/rest/api/keyvault/get-secret)                     |
-| Certificate | [Get Certificates](/rest/api/keyvault/get-certificates), [Get Certificate](/rest/api/keyvault/get-certificate) |
+| Key         | [Get Keys](/rest/api/keyvault/get-keys.md), [Get Key](/rest/api/keyvault/get-key.md)                                 |
+| Secret      | [Get Secrets](/rest/api/keyvault/get-secrets.md), [Get Secret](/rest/api/keyvault/get-secret.md)                     |
+| Certificate | [Get Certificates](/rest/api/keyvault/get-certificates.md), [Get Certificate](/rest/api/keyvault/get-certificate.md) |
 
 The above values are the minimum to list and read during execution.
 
 ### Azure role-based access control
 
-The **Key Vault Reader** and **Key Vault Secrets User** roles will be added for audience insights. For details on the roles see [Azure built-in roles for Key Vault data plane operations](/azure/key-vault/general/rbac-guide?tabs=azure-cli).
+The **Key Vault Reader** and **Key Vault Secrets User** roles will be added for audience insights. For details on the roles see [Azure built-in roles for Key Vault data plane operations](/azure/key-vault/general/rbac-guide.md?tabs=azure-cli).
 
 ## Recommendations
 
-* Use a separate or dedicated Key Vault, which contains only the secrets required for audience insights. Read more about why [separate Key Vaults are recommended](/azure/key-vault/general/best-practices#why-we-recommend-separate-key-vaults).
+* Use a separate or dedicated Key Vault, which contains only the secrets required for audience insights. Read more about why [separate Key Vaults are recommended](/azure/key-vault/general/best-practices.md#why-we-recommend-separate-key-vaults).
 
-* Follow the [Best practices to use Key Vault](/azure/key-vault/general/best-practices#turn-on-logging) for control access, backup, audit, and recovery options.
+* Follow the [Best practices to use Key Vault](/azure/key-vault/general/best-practices.md#turn-on-logging) for control access, backup, audit, and recovery options.
 
 ## Frequently asked questions
 
@@ -110,11 +110,11 @@ No. You can't change back to a default connection after configuring it with a se
 
 ### How can I revoke access to a Key Vault for audience insights?
 
-Depending on whether [Vault access policy](/azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](/azure/key-vault/general/rbac-guide?tabs=azure-cli) are enabled, you need to remove the permissions for the Service Principal `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` with the name `Dynamics 365 AI for Customer Insights`. All connections using the Key Vault will stop working.
+Depending on whether [Vault access policy](/azure/key-vault/general/assign-access-policy.md?tabs=azure-portal) or [Azure role-based access control](/azure/key-vault/general/rbac-guide.md?tabs=azure-cli) are enabled, you need to remove the permissions for the Service Principal `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` with the name `Dynamics 365 AI for Customer Insights`. All connections using the Key Vault will stop working.
 
 ### A secret that is used in a connection got removed from the Key Vault, what can I do?
 
-A notification shows in audience insights when a configured secret from the Key Vault isn't accessible anymore. Enable [soft-delete](/azure/key-vault/general/soft-delete-overview) on the Key Vault to restore secrets if they're accidentally removed.
+A notification shows in audience insights when a configured secret from the Key Vault isn't accessible anymore. Enable [soft-delete](/azure/key-vault/general/soft-delete-overview.md) on the Key Vault to restore secrets if they're accidentally removed.
 
 ### A connection doesn't work but my secret is in the Key Vault, what might be the cause?
 
