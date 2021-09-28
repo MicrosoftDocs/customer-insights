@@ -41,9 +41,9 @@ To view your base events:
 
     :::image type="content" source="media/data-events.png" alt-text="View events.":::
 
-Create a refined event from a base event: 
+To create a refined event from a base event: 
 
-1. Go to **Data**> **Events** and select **+ New events** at the top of the screen.
+1. Go to **Data** > **Events** and select **+ New events** at the top of the screen.
 
 1. In the **New events** dialog, select **Create refined events** and then click **Next**.
    
