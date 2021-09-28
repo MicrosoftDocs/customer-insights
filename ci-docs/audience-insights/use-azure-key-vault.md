@@ -26,11 +26,11 @@ To configure the Key Vault in audience insights, the following prerequisites mus
 
 * You have an [Administrator](permissions.md#adminstrator) role in audience insights. Learn more about [user permissions in audience insights](permissions.md#assign-roles-and-permissions).
 
-* You have the [Contributor](azure/role-based-access-control/built-in-roles#contributor) and [User Access Administrator](azure/role-based-access-control/built-in-roles#user-access-administrator) role on the Key Vault or the Resource Group the Key Vault is belonging to. For more information, see [Add or remove Azure role assignments using the Azure portal](azure/role-based-access-control/role-assignments-portal). If you don't have the **User Access Administrator** role on the Key Vault, the role-based access control permissions for the Azure service principal for Customer Insights must be set up separately. Follow the steps in [Connect to an Azure Data Lake Storage account by using an Azure service principal](connect-service-principal.md) for the Key Vault that should be linked.
+* You have the [Contributor](azure/role-based-access-control/built-in-roles#contributor) and [User Access Administrator](azure/role-based-access-control/built-in-roles#user-access-administrator) role on the Key Vault or the Resource Group the Key Vault is belonging to. For more information, see [Add or remove Azure role assignments using the Azure portal](azure/role-based-access-control/role-assignments-portal). If you don't have the **User Access Administrator** role on the Key Vault, the role-based access control permissions for the Azure service principal for Customer Insights must be set up separately. Follow the steps to [use an Azure service principal](connect-service-principal.md) for the Key Vault that should be linked.
 
 * The Key Vault must have Key Vault firewall **disabled**.
 
-* The Key Vault resides in the same [Azure location](https://azure.microsoft.com/global-infrastructure/geographies/#overview) as the audience insights environment. The region of the environment in audience insights is listed under **Admin** > **System** > **About** > **Region**.
+* The Key Vault is in the same [Azure location](https://azure.microsoft.com/global-infrastructure/geographies/#overview) as the audience insights environment. The region of the environment in audience insights is listed under **Admin** > **System** > **About** > **Region**.
 
 ### Link a Key Vault to the Environment
 
@@ -78,7 +78,7 @@ Export connections that require you to sign in on the target system, the connect
 
 ## Permissions granted on the Key Vault to audience insights
 
-If the Key Vault is linked to an environment, audience insights will be granted following permissions on the Key Vault, depending if [Vault access policy](azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](azure/key-vault/general/rbac-guide?tabs=azure-cli) is enabled.
+The following permissions are granted to audience insights on a linked Key Vault if [Key Vault access policy](azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](azure/key-vault/general/rbac-guide?tabs=azure-cli) is enabled.
 
 ### Key Vault access policy
 
@@ -104,11 +104,11 @@ The **Key Vault Reader** and **Key Vault Secrets User** roles will be added for 
 
 ### Can audience insights write secrets or overwrite secrets into the Key Vault?
 
-No. Audience insights has only read and list permissions outlined in the [granted Permissions](#permissions-granted-on-the-key-vault-to-audience-insights) section. Audience insights can't add, delete, or overwrite secrets in the Key Vault. That's also the reason why you can't enter when a connection uses Key Vault.
+No. Only read and list permissions outlined in the [granted Permissions](#permissions-granted-on-the-key-vault-to-audience-insights) section are granted to audience insights. The system can't add, delete, or overwrite secrets in the Key Vault. That's also the reason why you can't enter when a connection uses Key Vault.
 
 ### Can I change a connection from using Key Vault secrets to default authentication?
 
-No. After configuring a connection with a secret from a linked Key Vault, it can't be switched back to a default connection. Create a separate connection and delete the old one if necessary.
+No. You can't change back to a default connection after configuring it with a secret from a linked Key Vault. Create a separate connection and delete the old one if necessary.
 
 ### How can I revoke access to a Key Vault for audience insights?
 
@@ -116,11 +116,11 @@ Depending on whether [Vault access policy](azure/key-vault/general/assign-access
 
 ### A secret that is used in a connection got removed from the Key Vault, what can I do?
 
-Audience insights shows a notification when a configured secret from the Key Vault is not accessible anymore. Enable [soft-delete](azure/key-vault/general/soft-delete-overview) on the Key Vault to restore secrets if they are accidentally removed.
+A notification shows in audience insights when a configured secret from the Key Vault isn't accessible anymore. Enable [soft-delete](azure/key-vault/general/soft-delete-overview) on the Key Vault to restore secrets if they're accidentally removed.
 
 ### A connection doesn't work but my secret is in the Key Vault, what might be the cause?
 
-Audience insights shows a notification when it can't access the Key Vault and specify the reason.
+A notification shows in audience insights when it can't access the Key Vault.
 
 * The permissions for the audience insights Service Principal got removed. They need to be manually restored.
 
