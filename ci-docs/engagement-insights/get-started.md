@@ -4,7 +4,7 @@ description: An overview of help resources to get started quickly.
 ms.reviewer: mhart
 ms.author: jefhar
 author: mochimochi016
-ms.date: 08/31/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
