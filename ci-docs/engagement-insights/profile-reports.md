@@ -19,17 +19,11 @@ A unified profile report is a collection of data visualization to help you under
 
 ## Prerequisites
 
-- The audience insights environment must store data in a customer-managed Azure Data Lake Storage account. For more information, see [Connect to an Azure Data Lake Storage account](../audience-insights/connect-service-principal.md).
-
-- If you're using a trial version of audience insights capability or an environment in a Customer Insights managed data lake, [contact customer service](https://go.microsoft.com/fwlink/?linkid=2145734) for assistance.  
-
-- An admin must enable the customer profile report.
+An environment admin must [create a link between engagement insights and audience insights](integrate-audience-insights-engagement-insights.md).
 
 ## Enable the customer profile report
 
-An environment admin must [link engagement insights and audience insights](integrate-audience-insights-engagement-insights.md).
-
-After specifying the connection details, the admin can grant access to other people in the organization to see the report. The environment admin setting up the connection automatically has access to the report. 
+After specifying the link between engagement insights and audience insights, the admin can then grant access to other people in the organization to see the report. The environment admin setting up the connection automatically has access to the report. 
 
 After completing the connection, the **Profiles** feature will be available in the left navigation pane. 
 
