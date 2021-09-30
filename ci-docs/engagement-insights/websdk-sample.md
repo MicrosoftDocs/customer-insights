@@ -34,7 +34,7 @@ The engagement insights capability web SDK library is a JavaScript library with 
 
 1. In the `ei_websdk_sample.html` file, paste the code snippet that you just copied under this line:
 
-  <-- PASTE THE JAVASCRIPT CODE SNIPPET FROM ENGAGMENT INSIGHTS PORTAL HERE BELOW THIS LINE -->
+   - <-- PASTE THE JAVASCRIPT CODE SNIPPET FROM ENGAGMENT INSIGHTS PORTAL HERE BELOW THIS LINE -->
 
 1. Open the `ei_websdk_sample.html` file using Live Server in Visual Studio Code by selecting **Go Live** from the status bar.
 
