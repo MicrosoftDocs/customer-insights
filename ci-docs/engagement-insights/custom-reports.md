@@ -30,7 +30,7 @@ In addition to out-of-box (OOB) reports, you can build a custom report with char
     - Select **Add visual** in the command bar to create a default table visualization.
     - Or, select a column, bar, line, area, pie, donut, or table visualization from the **Report editor** pane.
 
-1. In the **Data** section of the **Visualization editor** pane, click the **Metrics** box to choose one of the available options (for example, page views) to display. You can also add **Dimensions** (for example, country) to show on the visualization. For more information, see [View and create metrics](metrics.md) and [View and create dimensions](dimensions.md).
+1. In the **Data** section of the **Visualization editor** pane, choose one of the available options (for example, page views) from the **Metrics** dropdown. You can also add **Dimensions** (for example, country) to show on the visualization. For more information, see [View and create metrics](metrics.md) and [View and create dimensions](dimensions.md).
 
    :::image type="content" source="media/page-views.png" alt-text="Choose a metric for your report.":::
 
@@ -48,11 +48,11 @@ In addition to out-of-box (OOB) reports, you can build a custom report with char
 
 You can select the time frame or date range in a custom report to focus on a value or time period.
 
-To select a time frame, in the upper-right corner of the report view, select a value from the dropdown list of the report. You can also choose a fixed date range by selecting a From and To date.
+To select a time frame, in the upper-right corner of the report view, select a value from the dropdown list of the report. You can also choose a **Fixed date range*.
 
 :::image type="content" source="media/filter-time-date-range.png" alt-text="Filter by time or date range.":::
 
-For most reports, select **+ Add condition**, to select a dimension or segment to filter the report. For more information, see [View and create segments](segments.md).
+For most reports, select **+ Add condition**, to choose a dimension or segment to filter the report. For more information, see [View and create segments](segments.md).
 
 ## Edit a custom report
 

@@ -91,7 +91,7 @@ Mobile reports are grouped in real-time usage, app, and user categories. You can
 
 You can select the time frame or date range in a web or mobile report to focus on a value or time period. 
 
-- To select a time frame, in the upper-right corner of the report view, select a value from the dropdown list of the report. You can also choose a fixed date range by selecting a **From** and **To** date. 
+- To select a time frame, in the upper-right corner of the report view, select a value from the dropdown list of the report. You can also choose a **Fixed date range**. 
 
   :::image type="content" source="media/filter-by-time.png" alt-text="Filter by time or date range.":::   
 
