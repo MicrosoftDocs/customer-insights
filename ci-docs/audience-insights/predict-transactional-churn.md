@@ -15,7 +15,7 @@ manager: shellyha
 
 Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. You can create new churn predictions on **Intelligence** > **Predictions**. Select **My predictions** to see other predictions that you've created. 
 
-For environments based on business accounts, we can predict transactional churn for an account and also a combination of account and another subclassification like product category. Adding a dimension can help find out how likely it is that the account 'Contoso' will stop buying the product category 'office stationary'. In addition, for business accounts, we can also use AI to generate a list of potential reasons why an account is likely to churn for a given subclassification.
+For environments based on business accounts, we can predict transactional churn for an account and also a combination of account and another level of information like product category. Adding a dimension can help find out how likely it is that the account 'Contoso' will stop buying the product category 'office stationary'. In addition, for business accounts, we can also use AI to generate a list of potential reasons why an account is likely to churn for a category of secondary level information.
 
 > [!TIP]
 > Try the tutorial for a transactional churn prediction using sample data: [Transactional churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
@@ -178,7 +178,7 @@ Add a list of your business customers and accounts that you want to use as bench
 
 1. For business accounts, you'll find an **Influential feature analysis** information page. It contains four sections of data:
 
-    1. The item selected in the right pane determines the content on this page. Select an item from **Top customers** and **Benchmark customers**. Both lists are ordered by decreasing value of the churn score, whether the score is just for the customer or a combined score for customers and a subclassification like product category.
+    1. The item selected in the right pane determines the content on this page. Select an item from **Top customers** and **Benchmark customers**. Both lists are ordered by decreasing value of the churn score, whether the score is just for the customer or a combined score for customers and a secondary level like product category.
         
         1. **Top customers**: List of 10 customers that are at highest risk of churn and lowest risk of churn based on their churn scores. 
         2. **Benchmark customers**: List of 10 customers that were selected while configuring the model.
