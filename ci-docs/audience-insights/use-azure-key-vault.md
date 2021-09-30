@@ -48,7 +48,7 @@ For details about which permissions on the key vault are granted to audience ins
 
 ## Use the key vault in the connection setup
 
-When [setting up connections](connections.md) to third-party systems, the secrets from the linked key vault can be used to configure the connections.
+When [setting up connections](connections.md) to third-party systems, the secrets from the linked Key Vault can be used to configure the connections.
 
 1. Go to **Admin** > **Connections**.
 1. Select **Add connection**.
