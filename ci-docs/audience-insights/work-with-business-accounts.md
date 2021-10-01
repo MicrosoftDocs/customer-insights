@@ -38,7 +38,7 @@ If your organization maintains environments for individual customers and busines
 - [Data ingestion](data-sources.md): All features in this area are the same for business accounts and individual customers.
 - [Data unification](data-unification.md): All features in this area are the same for business accounts and individual customers.
 - [Enrichment](enrichment-hub.md): Some enrichment types are available only for individual customer scenarios while others are exclusively available for business accounts.
-- [Predictions and out-of-box models](predictions-overview.md): Some prediction features are only for individual customer scenarios while others are exclusively available for business accounts.
+- [Predictions and out-of-box models](predictions-overview.md): Transactional churn prediction contains an additional steps for business accounts. Other predictions are only available for individual customers.
 - [Activation and export](export-destinations.md): Exports are available for business accounts and individual customers. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts.
 - [System settings](system.md) and [user management](permissions.md): All features in this area are the same for business accounts and individual customers.
 
