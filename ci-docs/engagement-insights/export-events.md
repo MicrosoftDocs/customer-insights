@@ -4,7 +4,7 @@ description: How to export refined events and base events.
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 04/30/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -48,11 +48,11 @@ There are two ways to bring up the **Export events** dialog:
 
 You're guided through the steps to create an export:
 
-1. Provide an **Export name**, and then click **Next**.
+1. Provide an **Export name**, and then select **Next**.
 
 1. In the **Events selection** dropdown list, choose the base events and refined events to include in the export. 
 
-1. In the **File structure** section, select the cadence (houly or daily) to create new files in the destination storage, and then click **Next**. Events are exported continuously as they arrive.
+1. In the **File structure** section, select the cadence (houly or daily) to create new files in the destination storage, and then select **Next**. Events are exported continuously as they arrive.
 
 1. In the **Choose format** dialog, select the format for your export. Choose between **Common Data Model**, **CSV**, and **JSON** formats. To use the export with other Dynamics 365 applications, we recommend the **Common Data Model** format.
 
