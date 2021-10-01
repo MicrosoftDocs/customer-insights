@@ -119,7 +119,7 @@ For environments based on business accounts, we can predict transactional churn 
 
 ### Provide an optional list of benchmark accounts (business accounts only)
 
-Add a list of your business customers and accounts that you want to use as benchmarks.
+Add a list of your business customers and accounts that you want to use as benchmarks. You will be able to see additional details for these benchmark accounts (in the model results screen) including their churn score and most influential features that impacted their churn prediction.
 
 1. Select **+ Add customers**.
 
@@ -178,16 +178,25 @@ Add a list of your business customers and accounts that you want to use as bench
 
 1. For business accounts, you'll find an **Influential feature analysis** information page. It contains four sections of data:
 
-    1. The item selected in the right pane determines the content on this page. Select an item from **Top customers** and **Benchmark customers**. Both lists are ordered by decreasing value of the churn score, whether the score is just for the customer or a combined score for customers and a secondary level like product category.
+    1. The item selected in the right pane determines the content on this page. Select an item from **Top customers** or **Benchmark customers**. Both lists are ordered by decreasing value of the churn score, whether the score is just for the customer or a combined score for customers and a secondary level like product category.
         
         1. **Top customers**: List of 10 customers that are at highest risk of churn and lowest risk of churn based on their churn scores. 
-        2. **Benchmark customers**: List of 10 customers that were selected while configuring the model.
+        2. **Benchmark customers**: List of upto 10 customers that were selected while configuring the model.
  
     1. **Churn score:** Shows the churn score for the selected item in the right pane.
     
     1. **Churn risk distribution:** Shows the churn risk distribution across customers and the percentile in which the selected customer is. 
     
-    1. **Top features increasing churn risk:** For the selected item in the right pane, find the top reasons for why that item is likely to churn. You also find the degree of influence a reason has on the churn score.
+    1. **Top features increasing and decreasing churn risk:** For the selected item in the right pane, the top 5 features that increased and decreased the churn risk are highlighted. For every influential feature, you will be shown the value of the feature for that item as well as its impact or contribution towards the churn score. Moreover, the average value of each feature across low, medium and high churn customer segments is also shown. This will help you better contextualize the values of the top influential features for the selected item and compare it with low, medium and high churn customer segments.
+
+The low, medium and high churn segments are defined as follows:
+Low = All accounts or combinations of account and secondary level whose churn score lies between 0 and 0.33
+Medium = All accounts or combinations of accounts and secondary levels whose churn score lies between 0.33 and 0.66
+High = All accounts or combinations of accounts and secondary levels whose churn score is greater than 0.66
+
+When you choose to predict churn at the account level, all accounts are considered in deriving the average feature values for low, medium and high churn segments. When churn predictions are made at the secondary level (e.g. product category) for every account, then the derivation of low, medium and high churn segments depends on the secondary level of the item selected in the side panel. For instance, if an item has a secondary level of product category = office supplies, then only the items having office supplies as the product category are considered when deriving the average feature values for low, medium and high churn segments. This is done to ensure a fair comparison of the item's feature values with the average values across low, medium and high churn segments.
+
+Note: In some cases, you might see that the average value of low, medium or high churn segments is "-" or not available. This might be due to the fact that there are no items that belong to the corresponding low, medium or high churn segments based on the above definition.
 
 ## Manage predictions
 
