@@ -11,11 +11,11 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Create and manage segments
+# Create segments
 
 Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. You can [create new segments](#create-a-new-segment) using the [segment builder](#segment-builder) or [create quick segments](#quick-segments) from other areas of the app.
 
-## Segment Builder
+## Segment builder
 
 The following image illustrates the various aspects of the segment builder. It shows a segment that results in a group of customers. The customers ordered goods in a specific time frame and gathered a number of reward points or spent a certain amount of money. 
 

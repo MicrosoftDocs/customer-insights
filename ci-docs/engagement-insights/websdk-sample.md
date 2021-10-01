@@ -4,9 +4,9 @@ description: Learn how to personalize and run a web SDK sample.
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 10/30/2020
+ms.date: 10/01/2021
 ms.service: customer-insights
-ms.subservice: engagement-insights 
+ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ---
@@ -20,7 +20,7 @@ The engagement insights capability web SDK library is a JavaScript library with 
 
 - Install [Visual Studio Code](https://code.visualstudio.com/).
 - [Install the Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code and get familiar with how to run Live Server.
-- You must have the [ingestion key](instrument-website.md).
+- You must have an [engagement insights workspace](create-workspace.md).
 
 ## Run sample
 
@@ -30,7 +30,11 @@ The engagement insights capability web SDK library is a JavaScript library with 
 
 1. Open the unzipped folder in Visual Studio Code.
 
-1. In the `ei_websdk_sample.html` file, replace the string “INGESTION_KEY” with your ingestion key from the engagement insights capability portal, and the string “NAME” with the global name that you want the SDK to be instantiated in. Ensure you replace all occurrences.
+1. Go to the engagement insights portal for your workspace. Select **Admin** > **Workspace**  and then **Installation guide**. Follow the first option and select **Copy code** to copy the JavaScript code snippet.
+
+1. In the `ei_websdk_sample.html` file, paste the code snippet that you just copied under this line:
+
+   - <-- PASTE THE JAVASCRIPT CODE SNIPPET FROM ENGAGMENT INSIGHTS PORTAL HERE BELOW THIS LINE -->
 
 1. Open the `ei_websdk_sample.html` file using Live Server in Visual Studio Code by selecting **Go Live** from the status bar.
 

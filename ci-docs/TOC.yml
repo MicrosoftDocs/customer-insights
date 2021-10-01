@@ -271,11 +271,8 @@
     - name: Help hub
       href: engagement-insights/index.yml
 
-    - name: Capability overview
+    - name: About engagement insights
       href: engagement-insights/overview.md
-
-    - name: Free trial
-      href: https://pi.dynamics.com/
 
     - name: Get started
       items:
@@ -346,7 +343,7 @@
     - name: Regional availability
       href: engagement-insights/regional-availability.md
 
-- name: Integrate audience and engagement insights
+- name: Share data between capabilities
   items:
 
     - name: Link audience insights and engagement insights
@@ -365,5 +362,3 @@
   href: dsr-rights-requests.md
 
 
-- name: Get support
-  href: https://dynamics.microsoft.com/support/
