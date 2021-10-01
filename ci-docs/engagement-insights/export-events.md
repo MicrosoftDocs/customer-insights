@@ -52,7 +52,7 @@ You're guided through the steps to create an export:
 
 1. In the **Events selection** dropdown list, choose the base events and refined events to include in the export. 
 
-1. In the **File structure** section, select the cadence (houly or daily) to create new files in the destination storage, and then select **Next**. Events are exported continuously as they arrive.
+1. In the **File structure** section, select the cadence (hourly or daily) to create new files in the destination storage, and then select **Next**. Events are exported continuously as they arrive.
 
 1. In the **Choose format** dialog, select the format for your export. Choose between **Common Data Model**, **CSV**, and **JSON** formats. To use the export with other Dynamics 365 applications, we recommend the **Common Data Model** format.
 
