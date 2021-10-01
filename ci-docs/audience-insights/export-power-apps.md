@@ -1,7 +1,7 @@
 ---
 title: "Power Apps connector"
 description: "Connect with Power Apps and Power Automate."
-ms.date: 01/19/2021
+ms.date: 10/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -33,7 +33,7 @@ After adding Customer Insights as a data connection, you can choose the followin
 
 ### Retrievable entities
 
-You can only retrieve the **Customer**, **UnifiedActivity**, **Segments** and **ContactProfile** entities through the Power Apps connector. Note: ContactProfile is only available in audience insights instance for business accounts. Other entities are shown because the underlying connector supports them through triggers in Power Automate.
+You can only retrieve the **Customer**, **UnifiedActivity**, **Segments** and **ContactProfile** entities through the Power Apps connector. ContactProfile is only available in audience insights instance for business accounts. Other entities are shown because the underlying connector supports them through triggers in Power Automate.
 
 ### Delegation
 
