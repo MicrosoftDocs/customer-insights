@@ -22,7 +22,7 @@ An event is data that represents user behavior, like activity on a website.
 
 ## Prerequisites
 
-In order to see events, your website data needs to first be conneceted to engagement insights with a code snippet. For more information, see [Install the web SDK on a website](instrument-website.md).
+To get events, your website data needs to first be conneceted to engagement insights with a code snippet. For more information, see [Install the web SDK on a website](instrument-website.md).
 
  :::image type="content" source="media/new-events-connect-data.png" alt-text="Connect your data first.":::
 
@@ -45,7 +45,7 @@ To create a refined event from a base event:
 
 1. Go to **Data** > **Events** and select **+ New events** at the top of the screen.
 
-1. In the **New events** dialog, select **Create refined events** and then click **Next**.
+1. In the **New events** dialog, select **Create refined events** and then select **Next**.
    
      :::image type="content" source="media/new-events-wizard.png" alt-text="New events wizard.":::
      
@@ -73,7 +73,7 @@ You can change the name and the properties of a base or refined event.
 
 ### View the details of a refined event:
 
-1. In the **Event** list, click your base or refined event. 
+1. In the **Event** list, select your base or refined event. 
 
 1. Select **Add and remove properties** at the top of the screen to open the **Edit properties** pane. 
 
@@ -83,7 +83,7 @@ You can change the name and the properties of a base or refined event.
 
    :::image type="content" source="media/edit-properties-refined-events.png" alt-text="Edit properties for refined events.":::
 
-1. Select **Confirm** to apply your selection, and then click **Save**.
+1. Select **Confirm** to apply your selection, and then select **Save**.
 
 
 ### Edit selected properties for a refined event
