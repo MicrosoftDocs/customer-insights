@@ -21,7 +21,7 @@ This topic discusses how to manage workspaces and enviornments once they've alre
 
 - A *workspace* is a space to store and manage events and reports. It’s where you can view user activity in real time. When you create a workspace, you select the type of data to send to the workspace. Currently, web data and mobile apps are supported. For more information, see [Create a workspace and add members](create-workspace.md).
 
-- An *environment* is a space where you manage your workspaces and connections. For more information, see [Create a new environment](create-environment.md).
+- An *environment* is a space where you manage your workspaces and connections. For more information, see [Create a new environment](create-new-environment.md).
 
 ## Manage an existing workspace
 
