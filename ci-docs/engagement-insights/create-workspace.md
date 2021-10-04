@@ -40,11 +40,12 @@ The process of creating a workspace includes setting up the *environment* to org
 
 1. Select **Complete** when you're done. 
 
-1. Install the code snippet to start receiving data, and then select **Finish** to create the workspace. 
+1. Install the code snippet to start receiving data, and then select **Finish** to create the workspace. For more information, see [Developer resources overview](developer-resources.md).
 
 > [!NOTE]
 > You can now add members and assign their permission level from the **Role** list. For more information, see [Roles and permissions](user-roles.md). 
 
 For more information, see [Manage environments and workspaces](manage-environments-workspaces.md).
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
