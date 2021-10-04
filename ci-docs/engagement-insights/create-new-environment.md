@@ -14,7 +14,6 @@ ms.manager: shellyha
 # Create a new environment 
 
 ## Overview
-A workspace is a space to store and manage events and reports. It’s where you can view user activity in real time. When you create a workspace, you select the type of data to send to the workspace. Currently, web data and mobile apps are supported.
 
 An environment is a space where you manage your workspaces and connections. How you use environments depends on your organization and your use case. For example, you can create:
 
