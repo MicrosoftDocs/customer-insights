@@ -4,7 +4,7 @@ description: How to create, edit, and delete metrics.
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 06/09/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -33,21 +33,24 @@ These system metrics are based on existing event properties in base events.
 1. Go to **Data** in the left navigation pane. 
 1. Select the **Metrics** tab to see a list of all metrics in the workspace. 
    > [!NOTE]
-   > System-generated metrics are read-only. You can’t change or delete them. You can only create and edit custom metrics.
+   > System-generated metrics are read-only. You can’t edit or delete them. You can only create and edit custom metrics.
 
 ## Create a metric
 
 Environment and workspace admins can create metrics. Event properties must be sent to the workspace before you create a metric. You can create metrics based on event properties that are sent by base events or use the web SDK to [send custom event properties](advanced-SDK-implementation.md).
 
 1. Go to **Data** > **Metrics**.
-1. Select **New metric**.
+1. Select **New metric** to open the **Resource Library* and **New untitled metric** dialog.
 
    :::image type="content" source="media/new-metric.png" alt-text="Add a metric to an event.":::
 
-1. For format, select the **Integer** or **Double** datatype. Integer is a whole number. For Double, you can pick between one and three decimal places.
-1. In the **Resource library** pane, find the event property to base the metric on.
-1. Select the **plus sign (+)** next to the property to use it in the formula. You can only create a formula based on one property. 
-1. Choose one of the following aggregate functions. 
+1. In the **New untitled metric** dialog, select the **Format** dropdown list, and choose the **Integer** or **Double** datatype. Integer is a whole number. For Double, you can choose one and three decimal places.
+
+   :::image type="content" source="media/create-new-metric.png" alt-text="Create a new metric.":::
+   
+5. In the **Resource Library** pane, find the event property to base the metric on.
+6. Select the **plus sign (+)** next to the property to use it in the formula. You can only create a formula based on one property. 
+7. Choose one of the following aggregate functions. 
 
    - Sum: the arithmetic total of all values 
    - Average: the mean average of all values
@@ -63,12 +66,16 @@ It can take up to a minute for the metric before you can use it to [create custo
 
 ## Edit a metric
 
+You can only edit custom metrics.
+
 1. Go to **Data** > **Metrics**.
 1. Select the metric in the list.
 1. Change the definition of the metric
 1. Select **Save**.
 
 ## Change the name of a metric
+
+You can only change the name of custom metrics.
 
 1. Go to **Data** > **Metrics**.
 1. Select **More [...]** for a metric and choose **Edit name**.
@@ -77,11 +84,15 @@ It can take up to a minute for the metric before you can use it to [create custo
 
 ## Delete a metric
 
+You can only delete custom metrics.
+
 1. Go to **Data** > **Metrics**.
 1. Select **More [...]** for a metric and choose **Delete**.
 
    :::image type="content" source="media/delete-metric.png" alt-text="Delete a metric to an event.":::
 
 1. Select **Delete** to confirm the deletion.
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
