@@ -7,6 +7,9 @@
 - name: Create a trial
   href: audience-insights/get-started-trial.md
 
+- name: Start with a paid license
+  href: paid-license.md
+
 - name: Access your environment
   href: https://home.ci.ai.dynamics.com/
 
