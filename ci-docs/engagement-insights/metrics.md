@@ -40,7 +40,7 @@ These system metrics are based on existing event properties in base events.
 Environment and workspace admins can create metrics. Event properties must be sent to the workspace before you create a metric. You can create metrics based on event properties that are sent by base events or use the web SDK to [send custom event properties](advanced-SDK-implementation.md).
 
 1. Go to **Data** > **Metrics**.
-1. Select **New metric** to open the **Resource Library* and **New untitled metric** dialog.
+1. Select **New metric** to open the **Resource Library** and **New untitled metric** dialog.
 
    :::image type="content" source="media/new-metric.png" alt-text="Add a metric to an event.":::
 
