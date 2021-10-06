@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Azure Data Lake Storage Gen2"
 description: "Learn how to configure the connection to Azure Data Lake Storage Gen2."
-ms.date: 03/03/2021
+ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,7 +11,17 @@ ms.author: sthe
 manager: shellyha
 ---
 
-# Set up the connection to Azure Data Lake Storage Gen2 (preview)
+# Export segment list and other data to Azure Data Lake Storage Gen2 (preview)
+
+Store your Customer Insights data in a Data Lake Storage Gen2 account or use it to transfer your data to other applications.
+
+## Known limitations
+
+1. For Azure Data Lake Storage Gen2 you can choose between [Standard performance and Premium performance tier](/azure/storage/blobs/create-data-lake-storage-account) when you are creating a storage account for your data lake. If you choose the Premium performance tier, select the premium block blobs as account type. 
+
+
+## Set up the connection to Azure Data Lake Storage Gen2 
+
 
 1. Go to **Admin** > **Connections**.
 
