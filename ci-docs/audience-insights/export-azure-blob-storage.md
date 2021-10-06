@@ -15,6 +15,10 @@ manager: shellyha
 
 Store your Customer Insights data in a Blob storage or use it to transfer your data to other applications.
 
+## Know limitations
+
+1. For Azure Blob Storage you can choose between [Standard performance and Premium performance tier](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-performance-tiers). If you choose the Premium performance tier you must select the [premium block block as account type](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview#types-of-storage-accounts).
+
 ## Set up the connection to Blob Storage
 
 1. Go to **Admin** > **Connections**.
