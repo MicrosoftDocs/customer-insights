@@ -20,7 +20,7 @@ If you're looking to try the service and the features, see [Set up a trial envir
 
 ## Create an environment in an existing organization
 
-After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.dynamics.com/start](https://home.ci.dynamics.com/start) to get started. 
+After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started. 
 
 Customer Insights is not licensed per user, so it won't show in the Licenses area. If you're looking for the license in the Microsoft 365 admin center, go to **Your products**. 
 
