@@ -4,7 +4,7 @@ description: How to export refined events and base events.
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 04/30/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -15,7 +15,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-An event represents user behavior. It records when a user views a page (view event) or interacts with content(action event). When you can decide which properties of the data that you want to display in a report, this virtual view of the data is called a *refined event*. 
+An event represents user behavior. It records when a user views a page (view event) or interacts with content(action event). When you can decide which properties of the data that you want to display in a report, this virtual view of the data is called a *refined event*. For more information, see [Create and modify events](refined-events.md).
 
 - You can export events and refined events to external storage. 
 - The exports are a forward data stream. You can't refill the stream. 
@@ -40,26 +40,28 @@ Before setting up an export, you need to have access and an active subscription 
 
 ## Export events
 
-There are two ways to export events: 
+There are two ways to bring up the **Export events** dialog: 
 - Go to **Data** > **Exports** and select **New export**.
 - Go to **Data** > **Events**, select **More [...]** next to the event you want to export and select **Export** from the dropdown menu. 
 
+:::image type="content" source="media/new-export.png" alt-text="Create a new export.":::
+
 You're guided through the steps to create an export:
 
-1. Provide an **Export name**.
+1. Provide an **Export name**, and then select **Next**.
 
 1. In the **Events selection** dropdown list, choose the base events and refined events to include in the export. 
 
-1. Under **File structure**, select the cadence to create new files in the destination storage. Events are exported continuously as they arrive.
+1. In the **File structure** section, select the cadence (hourly or daily) to create new files in the destination storage, and then select **Next**. Events are exported continuously as they arrive.
 
-1. Select the format for your export. You can choose between **Common Data Model**, **CSV**, and **JSON** format. To use the export with other Dynamics 365 applications, we recommend using the Common Data Model format.
+1. In the **Choose format** dialog, select the format for your export. Choose between **Common Data Model**, **CSV**, and **JSON** formats. To use the export with other Dynamics 365 applications, we recommend the **Common Data Model** format.
 
-1. In the **Choose destination** step, specify the Azure Data Lake Storage Gen 2 location.
+1. In the **Choose destination** dialog, specify the Azure Data Lake Storage Gen 2 location.
     1. **ADLS Gen 2 account name** is the name of the storage account you want to save the export to. 
     1. **Folder path** defines where the export should be stored in the file system and directory structure of the storage account.
     1. **Shared key** is available from the Azure portal for the storage account.
 
-1. Review and confirm your selections.
+1. Review and confirm your selections to finish.
 
 ## View and manage exports
 
