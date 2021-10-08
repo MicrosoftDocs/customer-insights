@@ -89,10 +89,10 @@ For environments based on business accounts, we can predict transactional churn 
    :::image type="content" source="media/model-map-purchase-entity.PNG" alt-text="Map semantic fields of the purchase entity.":::
 
 1. If the fields below aren't populated, configure the relationship from your purchase history entity to the Customer entity.
-    1. Select the **Purchase history entity**.
-    1. Select the **Field** that identifies the customer in the purchase history entity. It needs to relate to the primary customer ID of your Customer entity.
-    1. Select the **Customer entity** that matches your primary customer entity.
-    1. Enter a name that describes the relationship.
+    - Select the **Purchase history entity**.
+    - Select the **Field** that identifies the customer in the purchase history entity. It needs to relate to the primary customer ID of your Customer entity.
+    - Select the **Customer entity** that matches your primary customer entity.
+    - Enter a name that describes the relationship.
 
     :::image type="content" source="media/model-purchase-join.PNG" alt-text="Purchase history page showing the creation of a relationship to customer.":::
    
@@ -107,9 +107,9 @@ For environments based on business accounts, we can predict transactional churn 
 1. Select an activity type that matches to the type of customer activity you're configuring. Select **Create new** and choose an available activity type or create a new type.
 
 1. You'll need to configure the relationship from your customer activity entity to the Customer entity.
-    1. Select the field that identifies the customer in the customer activity table. It can be directly related to the primary customer ID of your Customer entity.
-    1. Select the Customer entity that matches your primary Customer entity
-    1. Enter a name that describes the relationship.
+    - Select the field that identifies the customer in the customer activity table. It can be directly related to the primary customer ID of your Customer entity.
+    - Select the Customer entity that matches your primary Customer entity
+    - Enter a name that describes the relationship.
 
 1. Select **Save**.
 
