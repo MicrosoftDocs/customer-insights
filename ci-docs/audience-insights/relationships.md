@@ -63,6 +63,20 @@ Relationship consists of a *source entity* containing the foreign key and a *tar
 
 4. Select **Save** to create the custom relationship.
 
+## Set up account hierarchies
+
+Environments that are configured to use business accounts as primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units. 
+
+Organizations create account hierarchies to better manage accounts and their relationships with each other. The audience insights capability supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page in audience insights, under the account hierarchy tab.
+
+1. Go to **Data** > **Relationships**.
+1. Select the **Account hierarchy** tab.
+1. Select **New account hierarchy**. 
+1. In the **Account hierarchy** pane, provide a name for the hierarchy. The system creates a name for the output entity. You can change the name of the output name entity.
+1. Select the entity that contains your account hierarchy. It's usually in the same entity that contains the accounts.
+1. Select the **Account ID** and **Account Parent ID** from the selected entity 
+1. Select **Save** to apply the settings and finalize the account hierarchy.
+
 ## View relationships
 
 The Relationships page lists all the relationships that have been created. Each row represents a relationship, which also includes details about the source entity, the target entity, and the cardinality. 

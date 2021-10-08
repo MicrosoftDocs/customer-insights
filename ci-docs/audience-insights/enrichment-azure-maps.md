@@ -81,7 +81,7 @@ You can access a detailed view of each enriched profile by selecting **View enri
 
 ## Next steps
 
-Build on top of your enriched customer data. Create [segments](segments.md), [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## Data privacy and compliance
 

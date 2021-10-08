@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Campaign Monitor"
 description: "Learn how to configure the connection and export to Campaign Monitor."
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -23,10 +23,10 @@ Export segments of unified customer profiles to Campaign Monitor and use them fo
 
 ## Known limitations
 
-- You can export up to 1 million profiles per export to Campaign Monitor.
+- You can export up to 1 million customer profiles per export to Campaign Monitor.
 - Exporting to Campaign Monitor is limited to segments.
-- Exporting up to 1 million profiles to Campaign Monitor can take up to 20 minutes to complete. 
-- The number of profiles that you can export to Campaign Monitor is dependent and limited on your contract with Campaign Monitor.
+- Exporting up to 1 million customer profiles to Campaign Monitor can take up to 20 minutes to complete. 
+- The number of customer profiles that you can export to Campaign Monitor is dependent and limited on your contract with Campaign Monitor.
 
 ## Set up connection to Campaign Monitor
 
@@ -61,7 +61,7 @@ You can configure this export if you have access to a connection of this type. F
 1. Enter your [**Campaign Monitor List ID**](https://www.campaignmonitor.com/api/getting-started/#your-list-id).    
    [Generate the API key](https://www.campaignmonitor.com/api/getting-started/) from **Account Settings** in Campaign Monitor first to view the API list ID.  
 
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Campaign Monitor.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Campaign Monitor.
 
 1. Select **Save**.
 

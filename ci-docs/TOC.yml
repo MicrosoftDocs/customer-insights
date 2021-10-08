@@ -31,6 +31,9 @@
         - name: Explore audience insights
           href: audience-insights/home.md
 
+    - name: Work with business accounts
+      href: audience-insights/work-with-business-accounts.md
+
     - name: Learn modules
       items:
         - name: Ingest data
@@ -79,6 +82,8 @@
           href: audience-insights/relationships.md
         - name: List customer activities
           href: audience-insights/activities.md
+        - name: Define semantic mappings
+          href: audience-insights/semantic-mappings.md
 
     - name: Data enrichment
       items:

@@ -1,7 +1,7 @@
 ---
 title: Transactional churn prediction
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 11/12/2020
+ms.date: 09/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,10 +13,12 @@ manager: shellyha
 
 # Transactional churn prediction (preview)
 
-Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. You can create new churn predictions on **Intelligence** > **Predictions**. Select **My predictions** to see other predictions that you've created.
+Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. You can create new churn predictions on **Intelligence** > **Predictions**. Select **My predictions** to see other predictions that you've created. 
+
+For environments based on business accounts, we can predict transactional churn for an account and also a combination of account and another level of information like product category. Adding a dimension can help find out how likely it is that the account 'Contoso' will stop buying the product category 'office stationary'. In addition, for business accounts, we can also use AI to generate a list of potential reasons why an account is likely to churn for a category of secondary level information.
 
 > [!TIP]
-> Try the tutorial for a translactional churn prediction using sample data: [Transactional churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
+> Try the tutorial for a transactional churn prediction using sample data: [Transactional churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
 
 ## Prerequisites
 
@@ -115,6 +117,16 @@ Transactional churn prediction helps predict if a customer will no longer purcha
 
 1. Select **Next**.
 
+### Provide an optional list of benchmark accounts (business accounts only)
+
+Add a list of your business customers and accounts that you want to use as benchmarks.
+
+1. Select **+ Add customers**.
+
+1. Choose the customers that act as a benchmark.
+
+1. Select **Next** to continue.
+
 ### Set schedule and review configuration
 
 1. Set a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested. Most businesses can retrain once per month and get a good accuracy for their prediction.
@@ -162,6 +174,20 @@ Transactional churn prediction helps predict if a customer will no longer purcha
     1. **Likelihood to churn (number of customers):** Groups of customers based on their predicted risk of churn. This data can help you later if you want to create a segment of customers with high churn risk. Such segments help to understand where your cutoff should be for segment membership.
        
     1. **Most influential factors:** There are many factors that are taken into account when creating your prediction. Each of the factors has its importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. Or you can use this information later to [create segments](segments.md) that could help influence churn risk for customers.
+
+
+1. For business accounts, you'll find an **Influential feature analysis** information page. It contains four sections of data:
+
+    1. The item selected in the right pane determines the content on this page. Select an item from **Top customers** and **Benchmark customers**. Both lists are ordered by decreasing value of the churn score, whether the score is just for the customer or a combined score for customers and a secondary level like product category.
+        
+        1. **Top customers**: List of 10 customers that are at highest risk of churn and lowest risk of churn based on their churn scores. 
+        2. **Benchmark customers**: List of 10 customers that were selected while configuring the model.
+ 
+    1. **Churn score:** Shows the churn score for the selected item in the right pane.
+    
+    1. **Churn risk distribution:** Shows the churn risk distribution across customers and the percentile in which the selected customer is. 
+    
+    1. **Top features increasing churn risk:** For the selected item in the right pane, find the top reasons for why that item is likely to churn. You also find the degree of influence a reason has on the churn score.
 
 ## Manage predictions
 
