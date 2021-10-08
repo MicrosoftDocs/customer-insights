@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to DotDigital"
 description: "Learn how to configure the connection and export to DotDigital."
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -17,7 +17,7 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 ## Prerequisites for a connection
 
--	You have a [DotDigital account](https://dotdigital.com/) and corresponding administrator credentials.
+-	You have a [DotDigital account](https://dotdigital.com/) and created an [API user](https://support.dotdigital.com/hc/articles/115001718730-How-do-I-create-an-API-user). You'll need use the API user credentials to create a connection
 -	There are existing address books in DotDigital and the corresponding IDs. The ID can be found in the URL when you select and open an address book. For more information, see [DotDigital address books](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
 -	You have [configured segments](segments.md) in audience insights.
 -	Unified customer profiles in the exported segments contain a field representing an email address.
@@ -39,7 +39,7 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your **DotDigital username and password**.
+1. Enter your **DotDigital API username and password**. 
 
 1. Enter your **[DotDigital address book ID](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)**.
 
