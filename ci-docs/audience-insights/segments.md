@@ -1,7 +1,7 @@
 ---
 title: "Segments in audience insights"
 description: "Overview on segments and how to create and manage them."
-ms.date: 05/03/2021
+ms.date: 09/30/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -21,11 +21,19 @@ Customer profiles that match the filters of a segment definition are referred as
 
 There are multiple ways to create a new segment: 
 
-- Complex segment with segment builder: [Blank segment](segment-builder.md#create-a-new-segment)
-- Simple segments with one operator: [Quick segment](segment-builder.md#quick-segments)
-- AI-powered way to find similar customers: [Similar Customers](find-similar-customer-segments.md)
-- AI-powered suggestions based on measures or attributes: [Suggested segments to improve measures](suggested-segments.md)
-- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md)
+# [Individual customers (B2C)](#tab/b2c)
+
+- Complex segment with segment builder: [Build our own](segment-builder.md#create-a-new-segment) 
+- Simple segments with one operator: [Quick segment](segment-builder.md#quick-segments) 
+- AI-powered way to find similar customers: [Similar Customers](find-similar-customer-segments.md) 
+- AI-powered suggestions based on measures or attributes: [Suggested segments to improve measures](suggested-segments.md) 
+- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md) 
+
+# [Business accounts (B2B)](#tab/b2b)
+
+- Complex segment with segment builder: [Build our own](segment-builder.md#create-a-new-segment)
+
+---
 
 ## Manage existing segments
 
@@ -65,9 +73,9 @@ You can export a segment from the segments page or the [exports page](export-des
 
 1. Select **Manage exports** from the actions dropdown list.
 
-1. The page **Exports (preview) for segment** opens. You can see all configured exports grouped by by exports that contain the current segment or don't contain it.
+1. The page **Exports (preview) for segment** opens. You can see all configured exports grouped by whether they contain the current segment or not.
 
-   1. To add the selected segment to an export, select the export in the list and select **Add segment**.
+   1. To add the selected segment to an export, **Edit** the respective export to select the corresponding segment, then save. In environments for individual customers you can instead select the export in the list and select **Add segment** to achieve the same outcome.
 
    1. To create a new export with the selected segment, select **Add export**. For more information about creating exports, see [Set up a new export](export-destinations.md#set-up-a-new-export).
 

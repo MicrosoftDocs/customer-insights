@@ -24,10 +24,10 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 ## Known limitations
 
-- Up to 1 million profiles per export to DotDigital.
+- Up to 1 million customer profiles per export to DotDigital.
 - Exporting to DotDigital is limited to segments.
-- Exporting segments with a total of 1 million profiles can take up to 3 hours because of limitations on the provider side. 
-- The number of profiles that you can export to DotDigital is dependent and limited on your contract with DotDigital.
+- Exporting segments with a total of 1 million customer profiles can take up to 3 hours because of limitations on the provider side. 
+- The number of customer profiles that you can export to DotDigital is dependent and limited on your contract with DotDigital.
 
 ## Set up connection to DotDigital
 
@@ -62,7 +62,7 @@ You can configure this export if you have access to a connection of this type. F
 1. In the **Connection for export** field, choose a connection from the DotDigital section. If you don't see this section name, there are no connections of this type available to you.
 
 
-1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. Repeat the same steps for other optional fields such as **First name**, **Last name**, **Full name**, **Gender**, and **Post code**.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. Repeat the same steps for other optional fields such as **First name**, **Last name**, **Full name**, **Gender**, and **Post code**.
 
 1. Select the segments you want to export. You can export up to 1 million customer profiles in total to DotDigital.
 

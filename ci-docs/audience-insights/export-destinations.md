@@ -1,7 +1,7 @@
 ---
 title: "Export data from Customer Insights"
 description: "Manage exports to share data."
-ms.date: 06/14/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -14,12 +14,35 @@ ms.custom: intro-internal
 
 # Exports (preview) overview
 
-The **Exports** page shows you all configured exports. Exports share specific data with various applications. They can include customer profiles or entities, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md).
+The **Exports** page shows you all configured exports. Exports share specific data with various applications. They can include customer profiles, entities, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md).
 
 Go to **Data** > **Exports** to view the exports page. All user roles can view configured exports. Use the search field in the command bar to find exports by their name, connection name, or connection type.
 
-## Set up a new export
+## Export types
 
+There are two main types of exports: data-out exports and segment exports. 
+
+- **Data-out exports** let you export any type of entity available in audience insights. The entities that you select for export are exported with all data fields, metadata, schemas, and mapping details. 
+- **Segment exports** let you export segment entities from audience insights. Segments represent a list of customer profiles. When configuring the export, you select the included data fields, depending on the target system you are export data to. 
+
+### Export segments
+
+**Exporting segments in environments for business accounts (B2B) or individual customers (B2C)**
+Most export option support both types of environments. Exporting segments to various target systems has specific requirements. Generally speaking, a segment member, the customer profile, contains contact information. While this is usually the case for segments built on individual customers (B2C), it's not necessarily the case for segments based on business accounts (B2B). 
+
+**Segment exports environments for business accounts (B2B)**
+- Segments in the context of environments for business accounts are built on the *account* entity. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](export-linkedin-ads.md) when you choose the **company** option while defining the export.
+- All other target systems require fields from the contact entity. To ensure account segments can retrieve data from related contacts, your segment definition needs to project attributes of the contact entity. [Learn more how to configure segments and project attributes](segment-builder.md).
+
+**Segment exports in environments for individual customers (B2C)**
+- Segments in the context of environments for individual customers are built on the *unified customer profile* entity. Every segment that meets the requirements of the target systems, for example an email address, can get exported.
+
+**Limits on segment exports**
+- Third-party target systems may limit the number of customer profiles that you can export. 
+- For individual customers, you'll see the actual number of segment members when you select a segment for export. You'll get a warning is a segment is too large. 
+- For business accounts, you'll see the number of accounts in a segment. However, the number of contacts that may be projected doesn't show. In some cases this could lead to the exported segment actually containing more customer profiles than the target system accepts. Exceeding the limits of the target systems results will skip the export. 
+
+## Set up a new export
 To set up or edit an export, you need to have connections available to you. Connections depend on your [user role](permissions.md):
 - Administrators have access to all connections. They can also create new connections when setting up an export.
 - Contributors can have access to specific connections. They depend on administrators to configure and share connections. The exports list shows contributors whether they can edit or only view an export in the **Your permissions** column. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).

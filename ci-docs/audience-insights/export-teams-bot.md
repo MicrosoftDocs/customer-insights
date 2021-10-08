@@ -1,7 +1,7 @@
 ---
 title: "Bot for Microsoft Teams"
 description: "Look up unified customer profiles in Microsoft Teams with the help of a bot."
-ms.date: 04/21/2020
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -26,6 +26,7 @@ To set up and configure the bot, the following prerequisites must be met:
 - The [unification process](data-unification.md) is complete.
 - Fields are added to the [search and filter index](search-filter-index.md).
 - Customer Insights and Teams are in the same organization.
+- Your environment has the primary target audience set to individual customers. Business accounts aren't supported.
 
 ## Configure the bot
 
