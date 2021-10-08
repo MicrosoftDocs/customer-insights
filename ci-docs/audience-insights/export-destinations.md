@@ -1,7 +1,7 @@
 ---
 title: "Export data from Customer Insights"
 description: "Manage exports to share data."
-ms.date: 08/27/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
