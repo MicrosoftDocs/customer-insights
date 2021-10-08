@@ -1,7 +1,7 @@
 ---
 title: "Merge entities in data unification"
 description: "Merge entities to create unified customer profiles."
-ms.date: 09/14/2021
+ms.date: 10/08/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -135,7 +135,7 @@ Configuring a stable customer Id enables you to avoid that behavior.
 
 1. Go to **Unify** > **Merge**.
 
-1. On the **Merge** page, select the **Keys** tab. 
+1. Select the **Keys** tab. 
 
 1. Hover on the **CustomerId** row and select the **Configure** option.
    :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
@@ -143,6 +143,28 @@ Configuring a stable customer Id enables you to avoid that behavior.
 1. Select up to five fields that will comprise a unique customer ID and are more stable. Records that don’t match your configuration use a system-configured ID instead.  
 
 1. Select **Done** and run the merge process to apply your changes.
+
+## Group profiles into households or clusters
+
+As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically recommends a household if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
+
+**Define a household or a cluster**
+
+1. Go to **Unify** > **Merge**.
+
+1. On the **Merge** tab, select **Advanced** > **Create cluster**.
+
+1. Choose between a household or a custom cluster.
+
+1. Provide a name for the cluster and select **Done**.
+
+1. Select the **Clusters** tab to find the cluster you created.
+
+1. Specify the rules and conditions to define your cluster.
+
+1. Select **Run** to runt he merge process and create the cluster.
+
+After running the merge process, the cluster identifiers are added as new fields to the *Customer* entity.
 
 ## Run your merge
 
