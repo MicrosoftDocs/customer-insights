@@ -48,7 +48,7 @@ This section walks you through creating a new measure from scratch. You can buil
    1. Select the **Attributes** tab. 
    1. Data entity: Choose the entity that includes the attribute you want to measure. 
    1. Data attribute: Choose the attribute you want to use in the aggregation function to calculate the measure. You can only select one attribute at a time.
-   1. You can also select a data attribute from an existing measure by selecting the **Measures** tab. Or, you can search for an entity or measure name. 
+   1. You can also select a data attribute from an existing measure by selecting the **Measures** tab, or you can search for an entity or measure name. 
    1. Select **Add** to add the selected attribute to the measure.
 
    :::image type="content" source="media/measure-attribute-selection.png" alt-text="Select an attribute to use in calculations.":::
@@ -112,7 +112,7 @@ This section walks you through creating a new measure from scratch. You can buil
    1. Select the **Attributes** tab. 
    1. Data entity: Choose the entity that includes the attribute you want to measure. 
    1. Data attribute: Choose the attribute you want to use in the aggregation function to calculate the measure. You can only select one attribute at a time.
-   1. You can also select a data attribute from an existing measure by selecting the **Measures** tab. Or, you can search for an entity or measure name. 
+   1. You can also select a data attribute from an existing measure by selecting the **Measures** tab, or you can search for an entity or measure name. 
    1. Select **Add** to add the selected attribute to the measure.
 
    :::image type="content" source="media/measure-attribute-selection.png" alt-text="Select an attribute to use in calculations.":::
@@ -209,7 +209,7 @@ The following procedure outlines the steps to build a new measure using a templa
 
 # [Business accounts (B2B)](#tab/b2b)
 
-This feature is only available for measures created in a environments with individual customers as primary target audience.
+This feature is only available for measures created in environments with individual customers as primary target audience.
 
 ---
 
