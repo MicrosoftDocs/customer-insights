@@ -84,7 +84,7 @@ On the **Merge** page, select **Excluded fields** to see the list of all exclude
     :::image type="content" source="media/recency-merge-option.png" alt-text="Recency option in the merge fields dialog.":::
     - **Least recent**: Identifies the winner value based on the least recency. Requires a date or a numeric field for every participating entity in the merge fields scope to define the recency.
 
-1.	You can add additional fields to participate in the merge process.
+1.	You can add more fields to participate in the merge process.
 
 1.	You can rename the merged field.
 
@@ -127,9 +127,9 @@ Some entities contain more details than others. If an entity includes the latest
 After configuring merging fields, you can define how to generate CustomerId values, the unique customer profile identifiers. 
 The merge step in the data unification process generates the unique customer profile identifier. The identifier is the CustomerId in the *Customer* entity that results from the data unification process. 
 
-The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in the match and merge phase and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. Consequently, the primary key value might not always represent the same customer.
+The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in the match and merge phase and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. So the primary key value might not always represent the same customer.
 
-Configuring a stable customer Id enables you to avoid that behavior.
+Configuring a stable customer ID enables you to avoid that behavior.
 
 **Configure a unique customer ID**
 
