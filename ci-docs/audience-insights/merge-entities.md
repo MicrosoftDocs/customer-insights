@@ -154,7 +154,7 @@ As part of the customer profile generation configuration process, you can define
 
 1. On the **Merge** tab, select **Advanced** > **Create cluster**.
 
-1. Choose between a household or a custom cluster.
+1. Choose between a household or a custom cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
 
 1. Provide a name for the cluster and select **Done**.
 
@@ -162,7 +162,7 @@ As part of the customer profile generation configuration process, you can define
 
 1. Specify the rules and conditions to define your cluster.
 
-1. Select **Run** to runt he merge process and create the cluster.
+1. Select **Run** to run the merge process and create the cluster.
 
 After running the merge process, the cluster identifiers are added as new fields to the *Customer* entity.
 
