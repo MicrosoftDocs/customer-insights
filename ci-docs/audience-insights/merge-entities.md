@@ -1,7 +1,7 @@
 ---
 title: "Merge entities in data unification"
 description: "Merge entities to create unified customer profiles."
-ms.date: 10/08/2021
+ms.date: 10/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -146,7 +146,7 @@ Configuring a stable customer ID enables you to avoid that behavior.
 
 ## Group profiles into households or clusters
 
-As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically recommends a household if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
+As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
 
 **Define a household or a cluster**
 
@@ -154,7 +154,9 @@ As part of the customer profile generation configuration process, you can define
 
 1. On the **Merge** tab, select **Advanced** > **Create cluster**.
 
-1. Choose between a household or a custom cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
+   :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
+
+1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
 
 1. Provide a name for the cluster and select **Done**.
 
