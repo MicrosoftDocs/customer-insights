@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to an Azure Blob Storage"
 description: "Learn how to configure the connection and export to Blob storage."
-ms.date: 06/30/2021
+ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -14,6 +14,10 @@ manager: shellyha
 # Export segment list and other data to Azure Blob Storage (preview)
 
 Store your Customer Insights data in a Blob storage or use it to transfer your data to other applications.
+
+## Known limitations
+
+1. For Azure Blob Storage you can choose between [Standard performance and Premium performance tier](/azure/storage/blobs/storage-blob-performance-tiers). If you choose the Premium performance tier, select the [premium block blobs as account type](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
 
 ## Set up the connection to Blob Storage
 

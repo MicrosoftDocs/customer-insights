@@ -35,7 +35,7 @@ Semantic mappings let you map your non-activity data to pre-defined schemas. The
 
 1. In the **Relationships** step, configure the details to connect your contact data to its corresponding account data. This step visualizes the connection between entities.  
 
-   There are two types of relationship paths that can be implemented: **Direct relationships** and **Indirect relationships**. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
+   There are two types of relationship paths that can be implemented: **Direct relationships** and **Indirect relationships**. For more information, go to [direct and indirect relationship paths](relationships.md#relationship-paths).
 
    1. Select **Add Relationship** configure the relationship.
    1. Choose the attribute from your source entity that connects your contact entity to another entity.

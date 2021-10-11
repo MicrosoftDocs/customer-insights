@@ -1,7 +1,7 @@
 ---
 title: "Power Apps connector"
 description: "Connect with Power Apps and Power Automate."
-ms.date: 01/19/2021
+ms.date: 10/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -25,49 +25,47 @@ Refer to the Power Apps documentation to learn how to [add a data connection to 
 
 After adding Customer Insights as a data connection, you can choose the following entities in Power Apps:
 
-- Customer: to use data from the [unified customer profile](customer-profiles.md).
-- UnifiedActivity: to display the [activity timeline](activities.md) on the app.
-- ContactProfile: to display the contacts of a customer. This entity is only available in audience insights environments for business accounts.
+- **Customer**: to use data from the [unified customer profile](customer-profiles.md).
+- **UnifiedActivity**: to display the [activity timeline](activities.md) in the app.
+- **ContactProfile**: to display the contacts of a customer. This entity is only available in audience insights environments for business accounts.
 
 ## Limitations
 
 ### Retrievable entities
 
-You can only retrieve the **Customer**, **UnifiedActivity**, **Segments** and **ContactProfile** entities through the Power Apps connector. Note: ContactProfile is only available in audience insights instance for business accounts. Other entities are shown because the underlying connector supports them through triggers in Power Automate.
+You can only retrieve the **Customer**, **UnifiedActivity**, **Segments**, and **ContactProfile** entities through the Power Apps connector. ContactProfile is only available in audience insights instance for business accounts. Other entities are shown because the underlying connector supports them through triggers in Power Automate.
 
 ### Delegation
 
-Delegation works for the Customer entity and UnifiedActivity entity. 
+Delegation works for the **Customer** entity and **UnifiedActivity** entity. 
 
 - Delegation for **Customer** entity: To use delegation for this entity, the fields need to be indexed in [Search & filter index](search-filter-index.md).  
 - Delegation for **UnifiedActivity**: Delegation for this entity only works for the fields **ActivityId** and **CustomerId**.  
 - Delegation for **ContactProfile**: Delegation for this entity only works for the fields **ContactId** and **CustomerId**. ContactProfile is only available in audience insights environments for business accounts.
 
-- For more information about delegation, see [Power Apps delegable functions and operations](/powerapps/maker/canvas-apps/delegation-overview). 
+For more information about delegation, go to [Power Apps delegable functions and operations](/powerapps/maker/canvas-apps/delegation-overview). 
 
 ## Example gallery control
 
-For example, you add customer profiles to a [gallery control](/powerapps/maker/canvas-apps/add-gallery).
+You can add customer profiles to a [gallery control](/powerapps/maker/canvas-apps/add-gallery).
 
-1. Add a **Gallery** control to an app you're building.
-
-> [!div class="mx-imgBorder"]
-> ![Add a gallery element.](media/connector-powerapps9.png "Add a gallery element")
-
-1. Select **Customer** as the data source for items.
+1. Add a **gallery** control to an app you're building.
 
     > [!div class="mx-imgBorder"]
-    > ![Select a data source.](media/choose-datasource-powerapps.png "Select a data source")
+    > ![Add a gallery element.](media/connector-powerapps9.png "Add a gallery element.")
 
-1. You can change the data panel on the right to select which field for the Customer entity to show on the gallery.
+2. Select **Customer** as the data source for items.
 
-1. If you want to show any field from the selected customer on the gallery, fill in the Text property of a label:  **{Name_of_the_gallery}.Selected.{property_name}**
+    > [!div class="mx-imgBorder"]
+    > ![Select a data source.](media/choose-datasource-powerapps.png "Select a data source.")
 
-    Example: Gallery1.Selected.address1_city
+3. You can change the data panel on the right to select which field for the Customer entity to show on the gallery.
 
-1. To display the unified timeline for a customer, add a Gallery element, and add the Items property: **Filter('UnifiedActivity', CustomerId = {Customer_Id})**
+4. If you want to show any field from the selected customer on the gallery, fill in the **Text** property of a label using **{Name_of_the_gallery}.Selected.{property_name}**  
+    - For example: _Gallery1.Selected.address1_city_
 
-    Example: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)
+5. To display the unified timeline for a customer, add a gallery element, and add the **Items** property using **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
+    - For example: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

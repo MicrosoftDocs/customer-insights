@@ -17,7 +17,7 @@ The audience insights capability in Dynamics 365 Customer Insights lets you conf
 
 ## Create an environment for business accounts
 
-Administrators can [create an environment in an existing organization](get-started-paid.md#create-an-environment-in-an-existing-organization). A step in the process of crating a new environment asks administrators for the primary target audience of the environment. In case it's the initial set-up of audience insights after purchasing a license, a guided experience helps with the creation of the first environment.
+Administrators can [create an environment in an existing organization](get-started-paid.md#create-an-environment-in-an-existing-organization). A step in the process of creating a new environment asks administrators for the primary target audience of the environment. In case it's the initial set-up of audience insights after purchasing a license, a guided experience helps with the creation of the first environment.
 
 You can then [ingest data](data-sources.md) for business accounts and related contacts as data sources from all supported sources.
 
@@ -38,7 +38,7 @@ If your organization maintains environments for individual customers and busines
 - [Data ingestion](data-sources.md): All features in this area are the same for business accounts and individual customers.
 - [Data unification](data-unification.md): All features in this area are the same for business accounts and individual customers.
 - [Enrichment](enrichment-hub.md): Some enrichment types are available only for individual customer scenarios while others are exclusively available for business accounts.
-- [Predictions and out-of-box models](predictions-overview.md): Some prediction features are only for individual customer scenarios while others are exclusively available for business accounts.
+- [Predictions and out-of-box models](predictions-overview.md): Transactional churn prediction contains additional steps for business accounts. Other predictions are only available for individual customers.
 - [Activation and export](export-destinations.md): Exports are available for business accounts and individual customers. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts.
 - [System settings](system.md) and [user management](permissions.md): All features in this area are the same for business accounts and individual customers.
 
