@@ -4,7 +4,7 @@ description: How to create, edit, and delete segments and where to use them.
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 06/09/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -39,22 +39,27 @@ This section describes how to create a *blank segment* from scratch.
 
 1. Select **New segment**.
 
-1. In the **Resource library**, choose the attribute you want to filter by. Currently, you can only create segments based on dimensions.
+1. In the **Resource Library**, select the (+) next to the attribute that you want to filter by. Currently, you can only create segments based on dimensions.
 
-1. Choose an operator and a value for the selected attribute. The following operations are supported.
+   :::image type="content" source="media/create-new-segment.png" alt-text="Create a new segment.":::
+
+1. In the **Rule** section, choose an operator and a value for the selected attribute. The following operations are supported.
+
+   :::image type="content" source="media/choose-operator-segment.png" alt-text="Choose an operator for your new segment.":::
+
    - **is**: requires an exact match to include values. Uses **equal to** for a single value or **any of** to include multiple values.
    - **is not**: requires an exact match to exclude values. Uses **equal to** for a single value or **any of** to include multiple values.
    - **starts with**: a string that the matching values start with.
    - **ends with**: a string the matching values ends with.
    - **contains**: a string contained in matching values.
 
-1. To add more conditions to a group, you can use two logical operators. Projected attributes are factored in when using set operators.
+1. To add more conditions to a group, you can use logical operators. Projected attributes are factored in when using set operators.
    - **AND** operator: Both conditions must be met as part of the segmentation process. This option is most useful when you define conditions across different entities.
    - **OR** operator: Either one of the conditions needs to be met as part of the segmentation process. This option is most useful when you define multiple conditions for the same entity.
 
 1. Select **Save** and name the segment. 
 
-The segment will be listed on the Segments page and you can apply it to all reports and funnels in the workspace.
+The segment will be listed on the **Segments** page and you can apply it to all reports and funnels in the workspace.
 
 ## Use a segment in a report or funnel
 
@@ -62,7 +67,7 @@ You can apply segments to a report or a funnel to filter them based on the condi
 
 :::image type="content" source="media/segment-reports-filter.png" alt-text="A page views report with an expanded dropdown list to choose which segments to apply.":::
 
-To apply a segment, open the report or funnel. Select **Add condition** and choose **Filter by segment**. Choose the segment from the list that you want to apply. The segment gets be applied to the report. If a chart doesn't support the segment, it shows an error.
+To apply a segment, open the report or funnel. Select **+ Add condition** and choose **Filter by segment**. Choose the segment from the list that you want to apply. The segment gets be applied to the report. If a chart doesn't support the segment, it shows an error. For more information, see [Create and manage funnel reports](funnel-reports.md).
  
 You can apply *up to three segments* to a report or funnel.
 
@@ -86,5 +91,7 @@ You can apply *up to three segments* to a report or funnel.
 1. In the segment list, select **More [...]**. 
 1. From the dropdown list, choose **Delete**.
 1. Select **Delete** to confirm.
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
