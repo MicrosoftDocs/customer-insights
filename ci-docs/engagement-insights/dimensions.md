@@ -39,7 +39,7 @@ Dimensions are based on existing event properties. When you use the tracking cod
 In addition to system-generated dimensions, environment and workspace admins can create custom dimensions. Custom dimensions are based on default properties of base events or they can use [custom properties of an event](advanced-SDK-implementation.md).
 
 1. Go to **Data** > **Dimensions**.
-1. Select **Add a dimension**.
+1. Select **New dimension**.
 
    :::image type="content" source="media/add-dimension.png" alt-text="Add a dimension to an event.":::
 
