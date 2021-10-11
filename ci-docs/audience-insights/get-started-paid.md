@@ -1,7 +1,7 @@
 ---
 title: "Create and configure a paid license of Customer Insights"
 description: "Steps to get a licensed subscription for Dynamics 365 Customer Insights and configure it."
-ms.date: 07/22/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -20,7 +20,7 @@ If you're looking to try the service and the features, see [Set up a trial envir
 
 ## Create an environment in an existing organization
 
-After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.dynamics.com/start](https://home.ci.dynamics.com/start) to get started. 
+After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started. 
 
 Customer Insights is not licensed per user, so it won't show in the Licenses area. If you're looking for the license in the Microsoft 365 admin center, go to **Your products**. 
 
@@ -38,7 +38,9 @@ To create an environment:
 1. Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
    - **Region**: The region into which the service is deployed and hosted.
-   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing.
+   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience like the production environment that's currently selected.
+
+1. Choose the primary audience for the new environment. You can work with individual customers (B2C) or [business accounts](work-with-business-accounts.md) (B2B).
    
 1. Optionally, you can select **Advanced settings**:
 
@@ -66,7 +68,7 @@ To create an environment:
 
    When system processes like data ingestion complete, the system creates corresponding folders in the storage account you specified. Data files and model.json files are created and added to folders based on the process name.
 
-   If you create multiple environments of Customer Insights and choose to save the output entities from those environments in your storage account, separate folders will be created for each environment with ci_<environmentid> in the container.
+   If you create multiple environments of Customer Insights and choose to save the output entities from those environments in your storage account, separate folders will be created for each environment with *ci_environmentID* in the container.
 
 1. Select **Create** to set up the environment. 
 
