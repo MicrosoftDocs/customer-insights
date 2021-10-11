@@ -40,6 +40,8 @@ To configure SFTP custom import, the following prerequisites must be met:
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Screenshot when entering data location.":::
 
+1. Select **Next** and choose the customer data set. This can be either all customer profiles or a segment.
+
 1. Select **Next** and provide a name for the enrichment and a name for the output entity. 
 
 1. Select **Save enrichment** after reviewing your choices.
@@ -118,6 +120,6 @@ You can access a detailed view of each enriched profile by selecting **View enri
 
 ## Next steps
 
-Build on top of your enriched customer data. Create [segments](segments.md) and [measures](measures.md), and [export the data](export-destinations.md) to deliver personalized experiences to your customers.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

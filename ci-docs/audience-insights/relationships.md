@@ -1,13 +1,13 @@
 ---
 title: "Relationships between entities and entity paths"
 description: "Create and manage relationships between entities from multiple data sources."
-ms.date: 06/01/2020
+ms.date: 09/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
 ---
 
@@ -63,6 +63,20 @@ Relationship consists of a *source entity* containing the foreign key and a *tar
 
 4. Select **Save** to create the custom relationship.
 
+## Set up account hierarchies
+
+Environments that are configured to use business accounts as primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units. 
+
+Organizations create account hierarchies to better manage accounts and their relationships with each other. The audience insights capability supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page in audience insights, under the account hierarchy tab.
+
+1. Go to **Data** > **Relationships**.
+1. Select the **Account hierarchy** tab.
+1. Select **New account hierarchy**. 
+1. In the **Account hierarchy** pane, provide a name for the hierarchy. The system creates a name for the output entity. You can change the name of the output name entity.
+1. Select the entity that contains your account hierarchy. It's usually in the same entity that contains the accounts.
+1. Select the **Account ID** and **Account Parent ID** from the selected entity 
+1. Select **Save** to apply the settings and finalize the account hierarchy.
+
 ## View relationships
 
 The Relationships page lists all the relationships that have been created. Each row represents a relationship, which also includes details about the source entity, the target entity, and the cardinality. 
@@ -88,11 +102,11 @@ Available options:
 - **Change to horizontal/vertical layout**: Change the alignment of the entities and relationships.
 - **Edit**: Update properties of custom relationships in the edit pane and save changes.
 
-### Relationship path
+## Relationship paths
 
-The relationship path describes the entities that are connected with relationships between a source entity and a target entity. It's used when creating a segment or a measure that includes other entities than the unified profile entity and there are multiple options to reach the unified profile entity.
+A relationship path describes the entities that are connected with relationships between a source entity and a target entity. It's used when creating a segment or a measure that includes other entities than the unified profile entity and there are multiple options to reach the unified profile entity. 
 
-The relationship path informs the system over which relationships to access the unified profile entity. Different relationship paths can yield different results.
+A relationship path informs the system over which relationships to access the unified profile entity. Different relationship paths can yield different results.
 
 For example, the entity *eCommerce_eCommercePurchases* has the following relationships to the unified profile *Customer* entity:
 
@@ -100,7 +114,43 @@ For example, the entity *eCommerce_eCommercePurchases* has the following relatio
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer 
 
-The relationship path determines which entities you can use when creating rules for measures or segments. Choosing the option with the longest relationship path will likely yield fewer results because the matching records need to be part of all entities. In this example, a customer has to have purchased goods through e-commerce(eCommerce_eCommercePurchases), at a point of sale(POS_posPurchases), and participate in our loyalty program (loyaltyScheme_loyCustomers). When choosing the first option, you'd likely get more results because customers only need to exist in one additional entity.
+A relationship path determines which entities you can use when creating rules for measures or segments. Choosing the option with the longest relationship path will likely yield fewer results because the matching records need to be part of all entities. In this example, a customer has to have purchased goods through e-commerce(eCommerce_eCommercePurchases) at a point of sale(POS_posPurchases) and participate in our loyalty program (loyaltyScheme_loyCustomers). When choosing the first option, you'd likely get more results because customers only need to exist in one additional entity.
+
+### Direct relationship
+
+A relationship is classified as a **direct relationship** when a source entity relates to a target entity with only one relationship.
+
+For example, if an activity entity called *eCommerce_eCommercePurchases* connects to a target entity *eCommerce_eCommerceContacts* entity through *ContactId* only, it's a direct relationship.
+
+:::image type="content" source="media/direct_Relationship.png" alt-text="Source entity connects directly to target entity.":::
+
+#### Multi-path relationship
+
+A **multi-path relationship** is a special type of direct relationship that connects a source entity to more than one target entity.
+
+For example, if an activity entity called *eCommerce_eCommercePurchases* relates to two target entities, both *eCommerce_eCommerceContacts* and *loyaltyScheme_loyCustomers*, it's a multi-path relationship.
+
+:::image type="content" source="media/multi-path_relationship.png" alt-text="Source entity connects directly to more than one target entity through a multi-hop relationship.":::
+
+### Indirect relationship
+
+A relationship is classified as an **indirect relationship** when a source entity relates to one or more additional entities before relating to a target entity.
+
+#### Multi-hop relationship
+
+A *multi-hop relationship* is an *indirect relationship* that allows you to connect a source entity to a target entity through one or more other intermediary entities.
+
+For example, if an activity entity called *eCommerce_eCommercePurchasesWest* connects to an intermediate entity called *eCommerce_eCommercePurchasesEast* and then connects to a target entity called *eCommerce_eCommerceContacts*, it's a multi-hop relationship.
+
+:::image type="content" source="media/multi-hop_relationship.png" alt-text="Source entity connects directly to a target entity with an intermediate entity.":::
+
+### Multi-hop, multi-path relationship
+
+Multi-hop and multi-path relationships can be used together to create **multi-hop, multi-path relationships**. This special type combines the functions of **multi-hop** and **multi-path relationships**. It lets you connect to more than one target entity while using intermediate entities.
+
+For example, if an activity entity called *eCommerce_eCommercePurchasesWest* connects to an intermediate entity called *eCommerce_eCommercePurchasesEast* and then connects to two target entities, both *eCommerce_eCommerceContacts* and *loyaltyScheme_loyCustomers*, it's a multi-hop, multi-path relationship.
+
+:::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="Source entity connects directly to one target entity and connects to another target entity through an intermediate entity.":::
 
 ## Manage existing relationships 
 

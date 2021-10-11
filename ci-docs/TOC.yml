@@ -35,6 +35,9 @@
         - name: Explore audience insights
           href: audience-insights/home.md
 
+    - name: Work with business accounts
+      href: audience-insights/work-with-business-accounts.md
+
     - name: Learn modules
       items:
         - name: Ingest data
@@ -83,6 +86,8 @@
           href: audience-insights/relationships.md
         - name: List customer activities
           href: audience-insights/activities.md
+        - name: Define semantic mappings
+          href: audience-insights/semantic-mappings.md
 
     - name: Data enrichment
       items:
@@ -162,8 +167,6 @@
 
         - name: Create segments based on predictions
           href: audience-insights/prediction-based-segment.md
-
-
 
     - name: Export options
       items:
@@ -251,10 +254,14 @@
           href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
-        - name: Connect to an ADLS storage account using Service Principal
-          href: audience-insights/connect-service-principal.md
         - name: Supported languages
           href: audience-insights/supported-languages.md
+        - name: Security
+          items: 
+            - name: Bring your own Key Vault
+              href: audience-insights/use-azure-key-vault.md
+            - name: Connect to an ADLS storage account using Service Principal
+              href: audience-insights/connect-service-principal.md
 
     - name: Extensibility
       items:
@@ -269,22 +276,14 @@
         - name: API references
           href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
 
-    - name: Service limits
-      href: audience-insights/service-limits.md
-    
-    - name: DSR requests under GDPR
-      href: audience-insights/gdpr.md
 
 - name: Engagement insights (preview)
   items:
     - name: Help hub
       href: engagement-insights/index.yml
 
-    - name: Capability overview
+    - name: About engagement insights
       href: engagement-insights/overview.md
-
-    - name: Free trial
-      href: https://pi.dynamics.com/
 
     - name: Get started
       items:
@@ -349,23 +348,13 @@
           href: engagement-insights/user-roles.md
         - name: Manage environments and workspaces
           href: engagement-insights/manage-environments-workspaces.md
-        - name: Configure connections
-          href: engagement-insights/configure-connections.md
         - name: Manage cookies and user consent
           href: engagement-insights/user-consent-storage.md
-
-    - name: GDPR
-      items: 
-        - name: Delete and export personal data
-          href: engagement-insights/delete-export-personal-data.md
 
     - name: Regional availability
       href: engagement-insights/regional-availability.md
 
-    - name: Service limits
-      href: engagement-insights/quotas.md
-
-- name: Integrate audience and engagement insights
+- name: Share data between capabilities
   items:
 
     - name: Link audience insights and engagement insights
@@ -377,5 +366,10 @@
     - name: Use demographic dimensions for splitting behavioral data
       href: engagement-insights/curate-dimensions.md
 
-- name: Get support
-  href: https://dynamics.microsoft.com/en-us/support/
+- name: Service limits
+  href: service-limits.md
+
+- name: DSR rights and requests
+  href: dsr-rights-requests.md
+
+

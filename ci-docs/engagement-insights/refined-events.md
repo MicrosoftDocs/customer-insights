@@ -1,67 +1,92 @@
 ---
-title: Create and modify refined events
-description: How to create and modify refined events.
+title: Create and modify events
+description: How to create and modify events.
 ms.reviewer: mhart
 ms.author: jefhar
 author: mochimochi016
-ms.date: 04/30/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
 ms.manager: shellyha
 ---
 
-# Create and modify refined events
+# Create and modify events
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
 
 An event is data that represents user behavior, like activity on a website.
 
 - A *base* event records when a user views a page (view event) or interacts with content (action event).
 - A *refined* event is a virtual view of a base event. You define refined events by removing and adding properties or by filtering events based on property values.
 
-Use refined events to reduce the scope of a base event for [export](export-events.md) or to remove properties that aren't necessary for exposure.
+## Prerequisites
+
+To get events, your website data needs to first be connected to engagement insights with a code snippet. For more information, see [Install the web SDK on a website](instrument-website.md).
+
+ :::image type="content" source="media/new-events-connect-data.png" alt-text="Connect your data first.":::
 
 ## Create refined events
 
-There are three ways to create a refined event from a base event. 
+Use refined events to reduce the scope of a base event for [export](export-events.md) or to remove properties that aren't necessary for exposure.
 
-1. Go to **Data**> **Events** and choose one of the following options:
-    - Select **New events** and then select **Create refined events**.
-    - Select a base event to open a detailed view and select **Create refined events** from the top menu.
-    - Select **More [...]** to open the shortcut menu for a base event. Then select **Create refined events**.
-    
-    :::image type="content" source="media/create-refined-events-options.png" alt-text="Options to create refined events.":::
+> [!NOTE]
+> Once you add the web SDK to your website, you can view your base events and create refined events. 
 
-1. In the **Create refined events** dialog, enter the following information:
+To view your base events:
 
-- Select an event from the **Base events** dropdown if you're creating a new event.
-- Enter a name in the **Refined events display name** box.
-- Optionally, update the suggested **Actual name** without using spaces.
+1. Go to **Data** in the left navigation pane.
 
-3. Select **Create** to apply your settings.
+1. Select **Events** to see a list of all the events in the workspace.
 
-1. In the detailed view of your refined event, select **Add and remove properties** to open the **Edit properties** pane. 
+    :::image type="content" source="media/data-events.png" alt-text="View events.":::
 
-1. Use the check boxes to select the properties that you want to show and the ones you want to hide. 
-   :::image type="content" source="media/edit-properties-refined-events.png" alt-text="Edit properties for refined events.":::
+To create a refined event from a base event: 
 
-1. Select **Confirm** to apply your selection.
+1. Go to **Data** > **Events** and select **+ New events** at the top of the screen.
 
-1. Select **Save** to save the configuration.
+1. In the **New events** dialog, select **Create refined events** and then select **Next**.
+   
+     :::image type="content" source="media/new-events-wizard.png" alt-text="New events wizard.":::
+     
+1. In the **New events** dialog, enter the following information:
 
-## Edit refined events
+   - Select an event from the **Base events** dropdown.
+   - Enter a name in the **Refined events display name** box.
+   - Optionally, update the suggested **Actual name** without using spaces.
 
-You can change the name and the properties of a refined event.
+1. Select **Create** to apply your settings.
+
+The refined event now appears in your **Events** list.
 
 ### Edit event name
 
-1. Go to **Data** > **Events**. 
-1. Select **More [...]** for an event and select **Edit name**.
-1. Update the event name and select **Rename**.
+You can change the name and the properties of a base or refined event.
 
-### Edit selected properties
+1. Go to **Data** > **Events**. 
+
+1. Select **More [...]** for an event and select **Edit name**.
+    
+     :::image type="content" source="media/create-refined-events-options.png" alt-text="Options to create refined events.":::
+
+3. Update the event name and select **Rename**.
+
+### View the details of a refined event:
+
+1. In the **Event** list, select your base or refined event. 
+
+1. Select **Add and remove properties** at the top of the screen to open the **Edit properties** pane. 
+
+     :::image type="content" source="media/add-remove-properties.png" alt-text="Add and remove properties.":::
+
+1. Use the check boxes to select the properties that you want to show and the ones you want to hide. 
+
+   :::image type="content" source="media/edit-properties-refined-events.png" alt-text="Edit properties for refined events.":::
+
+1. Select **Confirm** to apply your selection, and then select **Save**.
+
+
+### Edit selected properties for a refined event
 
 1. Go to **Data** > **Events** and select the refined events to open the detailed view.
 1. Select **Add and remove properties**. 
