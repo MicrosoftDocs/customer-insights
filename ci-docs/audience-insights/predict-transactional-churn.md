@@ -1,5 +1,5 @@
 ---
-title: Transactional churn prediction
+title: Transaction churn prediction
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
 ms.date: 10/11/2021
 ms.reviewer: mhart
@@ -11,14 +11,14 @@ ms.author: zacook
 manager: shellyha
 ---
 
-# Transactional churn prediction (preview)
+# Transaction churn prediction (preview)
 
 Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. You can create new churn predictions on **Intelligence** > **Predictions**. Select **My predictions** to see other predictions that you've created. 
 
 For environments based on business accounts, we can predict transactional churn for an account and also a combination of account and another level of information like product category. Adding a dimension can help find out how likely it is that the account "Contoso" will stop buying the product category "office stationery." In addition, for business accounts, we can also use AI to generate a list of potential reasons why an account is likely to churn for a category of secondary level information.
 
 > [!TIP]
-> Try the tutorial for a transactional churn prediction using sample data: [Transactional churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
+> Try the tutorial for a transaction churn prediction using sample data: [Transaction churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
 
 ## Prerequisites
 
@@ -39,10 +39,19 @@ For environments based on business accounts, we can predict transactional churn 
     - Customer identifiers to map activities to your customers.
     - Activity information containing the name and date of the activity.
     - The semantic data schema for customer activities includes:
-        - **Primary key**: A unique identifier for an activity. For example, a website visit or a usage record showing the customer tried a sample of your product.
-        - **Timestamp**: The date and time of the event identified by the primary key.
-        - **Event**: The name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
-        - **Details**: Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
+        - **Primary key:** A unique identifier for an activity. For example, a website visit or a usage record showing the customer tried a sample of your product.
+        - **Timestamp:** The date and time of the event identified by the primary key.
+        - **Event:** The name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
+        - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
+- (Optional) Data about your customers:
+    - This data should only rarely, and should align toward more static attributes to ensure the model performs best.
+    - The semantic data schema for customer data includes:
+        - **CustomerID:** A unique identifier for a customer.
+        - **Created Date:** The date the customer was initially added.
+        - **State or Province:** The state or province location of a customer.
+        - **Country:** The country of a customer.
+        - **Industry:** The industry type of a customer. For example, a field called "Industry" in a coffee roaster might indicate if the customer was retail.
+        - **Classification:** The categorization of a customer for your business. For example, a field called "ValueSegment" in a coffee roaster might be the tier of customer based on the customer size.
 - Suggested data characteristics:
     - Sufficient historical data: Transaction data for at least double the selected time window. Preferably, two to three years of transaction history. 
     - Multiple purchases per customer: Ideally at least two transactions per customer.
@@ -52,15 +61,15 @@ For environments based on business accounts, we can predict transactional churn 
 > [!NOTE]
 > For a business with high customer purchase frequency (every few weeks) it's recommended to select a shorter prediction window and churn definition. For low purchase frequency (every few months or once a year), choose a longer prediction window and churn definition.
 
-## Create a transactional churn prediction
+## Create a transaction churn prediction
 
 1. In Customer Insights, go to **Intelligence** > **Predictions**.
 
 1. Select the **Customer churn model (preview)** tile and select **Use this model**.
-   
-1. In the **Customer churn model** pane, choose **Transactional** and select **Get started**.
 
-:::image type="content" source="media/select-transaction-churn.PNG" alt-text="Screenshot with selected transactional option in Customer churn model pane.":::
+1. In the **Customer churn model** pane, choose **Transaction** and select **Get started**.
+
+:::image type="content" source="media/select-transaction-churn.PNG" alt-text="Screenshot with selected transaction option in Customer churn model pane.":::
 
 ### Name model
 
@@ -72,7 +81,7 @@ For environments based on business accounts, we can predict transactional churn 
 
 ### Define customer churn
 
-1. Set a window of days to predict churn for in the **Identify customers who may churn in the next** field. For example, predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for a longer or shorter period of time can make it more difficult to address the factors in your churn risk profile, but it depends on your specific business requirements. 
+1. Set a window of days to predict churn for in the **Identify customers who may churn in the next** field. For example, predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for a longer or shorter period of time can make it more difficult to address the factors in your churn risk profile, but it depends on your specific business requirements.
    >[!TIP]
    > You can select **Save and close** at any time to save the prediction as a draft. You'll find the draft prediction in the **My predictions** tab to continue.
 
@@ -82,38 +91,64 @@ For environments based on business accounts, we can predict transactional churn 
 
 ### Add required data
 
-1. Select **Add data** for **Purchase history** and choose the entity that provides the transaction/purchase history information as described in the [prerequisites](#prerequisites).
+1. Select **Add data** and choose the activity type in the side pane that contains the required transaction or purchase history information.
 
-1. Map the semantic fields to attributes within your purchase history entity and select **Next**. For descriptions of the fields, have a look at the [prerequisites](#prerequisites).
+1. Under **Choose the activities**, choose the specific activities from the selected activity you'd like the calculation to focus on.
 
-   :::image type="content" source="media/model-map-purchase-entity.PNG" alt-text="Map semantic fields of the purchase entity.":::
+   :::image type="content" source="media/product-recommendation-select-semantic-activity.PNG" alt-text="Side pane showing choosing specific activities under the semantic type.":::
 
-1. If the fields below aren't populated, configure the relationship from your purchase history entity to the Customer entity.
-    - Select the **Purchase history entity**.
-    - Select the **Field** that identifies the customer in the purchase history entity. It needs to relate to the primary customer ID of your Customer entity.
-    - Select the **Customer entity** that matches your primary customer entity.
-    - Enter a name that describes the relationship.
+1. If you haven't mapped the activity to a semantic type yet, select **Edit** to do so. The guided experience to map semantic activities opens. Map your data to the corresponding fields in the selected activity type.
 
-    :::image type="content" source="media/model-purchase-join.PNG" alt-text="Purchase history page showing the creation of a relationship to customer.":::
-   
+   :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="Page setting activity type.":::
+
+1. After mapping the activity to the corresponding semantic type, select **Next** to proceed
+
+1. Map the semantic attributes to the fields that are required to run the model. If the fields below aren't populated, configure the relationship from your purchase history entity to the *Customer* entity.
+
 1. Select **Next**.
 
-1. Optionally, select **Add data** for **Customer activities**. Choose the entity that provides the customer activity information as described in the prerequisites.
+### Select prediction level
 
-1. Map the semantic fields to attributes within your customer activity entity and select **Next**. For descriptions of the fields, have a look at the [prerequisites](#prerequisites).
+Most predictions are created at the customer level. In some situations, that may not be granular enough to address your business needs. You can use this feature to predict churn for a branch of a customer, for example, rather than for the customer as a whole.
 
-   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="Map customer fields for transactional data.":::
+1. To create a prediction at a more granular level than the customer, select **Select entity for a secondary level**. If the option is not available, ensure you have completed the previous section.
+
+1. Expand the entities you would like to choose the secondary level from, or use the search filter box to filter the selected options.
+
+1. Choose the attribute you would like used as a secondary level, then select **Add**
+
+1. Select **Next**
+
+> [!NOTE]
+> The entities available in this section are shown because they have a relationship to the entity you chose in the previous section. If you don't see the entity you want to add, ensure it has a valid relationship present in **Relationships**. Only one-to-one and many-to-one relationships are valid for this configuration.
+
+### Add additional data (optional)
+
+Configure the relationship from your customer activity entity to the *Customer* entity.
+
+1. Select the field that identifies the customer in the customer activity table. It can be directly related to the primary customer ID of your *Customer* entity.
+
+1. Select the entity that is your primary *Customer* entity.
+
+1. Enter a name that describes the relationship.
+
+#### Customer activities
+
+1. Optionally, select **Add data** for **Customer activities**.
+
+1. Select the semantic activity type that contains the data you would like to use, then select one or more activities in the **Activities** section.
 
 1. Select an activity type that matches to the type of customer activity you're configuring. Select **Create new** and choose an available activity type or create a new type.
 
-1. You'll need to configure the relationship from your customer activity entity to the Customer entity.
-    - Select the field that identifies the customer in the customer activity table. It can be directly related to the primary customer ID of your Customer entity.
-    - Select the Customer entity that matches your primary Customer entity
-    - Enter a name that describes the relationship.
-
-1. Select **Save**.
+1. Select **Next**, then **Save**.
 
 1. If you have any other customer activities you would like to include, repeat the steps above.
+
+#### Customers data
+
+1. Optionally, select **Add data** for **Customers data**.
+
+1. Map the semantic attributes to fields in your own customer data as identified. The data in the fields used should not change often to ensure the model's best performance. For example, selecting a field for "Classification" that changed every month would only have the last value used in the prediction, even though historically the same value might not apply to the customer when building the prediction patterns.
 
 1. Select **Next**.
 
@@ -144,7 +179,7 @@ Add a list of your business customers and accounts that you want to use as bench
 1. Select the prediction you want to review.
    - **Prediction name**: Name of the prediction provided when creating it.
    - **Prediction type**: Type of model used for the prediction
-   - **Output entity**: Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.    
+   - **Output entity**: Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.
      In the output entity, *ChurnScore* is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. The default threshold might not work for your scenario. [Create a new segment](segments.md#create-a-new-segment) with your preferred threshold.
      Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on you churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
    - **Predicted field**: This field is populated only for some types of predictions, and isn't used in churn prediction.
@@ -158,7 +193,7 @@ Add a list of your business customers and accounts that you want to use as bench
 
 1. Select the vertical ellipses next to the prediction you want to review results for and select **View**.
 
-   :::image type="content" source="media/model-subs-view.PNG" alt-text="View control to see results of a prediction.":::   
+   :::image type="content" source="media/model-subs-view.PNG" alt-text="View control to see results of a prediction.":::
 
 1. There are three primary sections of data within the results page:
    - **Training model performance**: A, B, or C are possible scores. This score indicates the performance of the prediction and can help you make the decision to use the results stored in the output entity. Scores are determined based on the following rules: 
@@ -186,7 +221,7 @@ Add a list of your business customers and accounts that you want to use as bench
     
     - **Churn risk distribution:** Shows the churn risk distribution across customers and the percentile in which the selected customer is. 
     
-    - **Top features increasing and decreasing churn risk:** For the selected item in the right pane, the top five features that increased and decreased the churn risk are listed. For every influential feature, you find the value of the feature for that item as well as its impact or contribution towards the churn score. The average value of each feature across low, medium, and high churn customer segments is also shown. This helps to better contextualize the values of the top influential features for the selected item and compare it with low, medium, and high churn customer segments.
+    - **Top features increasing and decreasing churn risk:** For the selected item in the right pane, the top five features that increased and decreased the churn risk are listed. For every influential feature, you find the value of the feature for that item and its influence on the churn score. The average value of each feature across low, medium, and high churn customer segments is also shown. It helps to better contextualize the values of the top influential features for the selected item and compare it with low, medium, and high churn customer segments.
 
        - Low: accounts or combinations of account and secondary level with a churn score between 0 and 0.33
        - Medium: accounts or combinations of accounts and secondary levels with a churn score between 0.33 and 0.66
@@ -194,11 +229,10 @@ Add a list of your business customers and accounts that you want to use as bench
     
        When you predict churn at the account level, all accounts are considered in deriving the average feature values for churn segments. For churn predictions at the secondary level for every account, the derivation of churn segments depends on the secondary level of the item selected in the side pane. For example, if an item has a secondary level of product category = office supplies, then only the items having office supplies as the product category are considered when deriving the average feature values for churn segments. This logic is applied to ensure a fair comparison of the item's feature values with the average values across low, medium, and high churn segments.
 
-       In some cases, the average value of low, medium, or high churn segments is "-" or not available because there are no items that belong to the corresponding churn segments based on the above definition.
+       In some cases, the average value of low, medium, or high churn segments is empty or not available because there are no items that belong to the corresponding churn segments based on the above definition.
 
 ## Manage predictions
 
 It's possible to optimize, troubleshoot, refresh, or delete predictions. Review an input data usability report to find out how to make a prediction faster and more reliable. For more information, go to [Manage predictions](manage-predictions.md).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
