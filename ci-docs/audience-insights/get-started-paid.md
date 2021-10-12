@@ -56,7 +56,7 @@ By saving data to Azure Data Lake Storage, you agree that data will be transferr
 
 For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Note that the **Container** name will be `customerinsights` and can't be changed.
 
-When system processes such as data ingestion is complete, the system creates corresponding folders in the storage account you specified. Data files and model.json files are created and added to folders based on the process name.
+When system processes such as data ingestion is complete, the system creates corresponding folders in the storage account you specified. Data files and *model.json* files are created and added to folders based on the process name.
 
 If you create multiple environments of Customer Insights and choose to save the output entities from those environments to your storage account, Customer Insights creates separate folders for each environment with `ci_<environmentid>` in the container.
 
@@ -64,12 +64,12 @@ If you create multiple environments of Customer Insights and choose to save the 
    
 To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Microsoft Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsft Dataverse envirnment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
 
+:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
+
 > [!NOTE]
 > Customer Insights does not support the following data sharing scenarios:
 > - If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Microsoft Dataverse Managed Data Lake.
 > - If you enable data sharing with a Microsoft Dataverse Managed Data Lake, you won't be able to [create predicted or missing values in an entity](predictions.md).
-
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
 ### Step 4: Finalize the settings
 
