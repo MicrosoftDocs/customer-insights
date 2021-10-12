@@ -1,7 +1,7 @@
 ---
 title: "LiveRamp connector"
 description: "Learn how to configure the connection and the export to LiveRamp."
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -53,7 +53,7 @@ You can configure this export if you have access to a connection of this type. F
    > [!div class="mx-imgBorder"]
    > ![LiveRamp connector with attribute mapping.](media/export-liveramp-segments.png "LiveRamp connector with attribute mapping")
 
-1. Map the corresponding attributes from your unified customer entity for the selected key identifier.
+1. Map the corresponding attributes from your *Customer* entity for the selected key identifier.
 
 1. Select **Add attribute** to map more attributes to send to LiveRamp.
 

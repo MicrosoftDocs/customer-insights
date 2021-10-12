@@ -42,6 +42,7 @@ To add connections, you need to have [administrator permissions](permissions.md)
 1. In the **Set up connection** pane, provide the required details. 
    1. The **Display name** and the type of the connection describe a connection. We recommend choosing a name that explains the purpose and target of this connection.
    1. The exact fields depend on what service you are connecting to. You can learn about details of a specific connection type in the article about the target service.
+   1. If you [use your own Key Vault](use-azure-key-vault.md) to store secrets, activate **Use Key Vault** and choose the secret from the list.
 
 1. To create the connection, select **Save**.
 
@@ -88,3 +89,6 @@ Detached enrichments and exports become inactive. You reactivate them by adding 
 
 1. To confirm the deletion, select **Remove**.
 
+## Set up connections with secrets managed by your own Key Vault
+
+Some connections need secrets like API keys or passwords. Some connections support secrets stored in your own Key Vault. Learn more about supported connections and how to set up on [your own Key Vault for audience insights](use-azure-key-vault.md).

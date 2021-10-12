@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Engagement insights (preview) capability in Dynamics 365 Customer Insights
+title: Engagement insights capability in Dynamics 365 Customer Insights (preview)
 summary: Collect data for your websites. Understand customer interactions and usage across your sites, interactively. Use the deep integration between engagement insights and audience insights to enrich your real-time behavioral analytics with customer profile reports. Enrich customer profiles with web activities to get real-time behavioral data alongside relevant customer data. Transform your business to derive immediate value from your customer data.
 
 metadata:
-  title: Engagement insights(preview) documentation
+  title: Engagement insights (preview) documentation
   description: Help hub with key links for engagement insights.
   ms.service: customer-insights
   ms.subservice: engagement-insights
@@ -12,7 +12,7 @@ metadata:
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
-  ms.date: 07/30/2021
+  ms.date: 09/15/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -23,12 +23,12 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Capability overview
+          - text: Capability benefits
             url: overview.md
-          - text: Terms and concepts
+          - text: Glossary of terms
             url: glossary.md
-          - text: Discover engagement insights
-            url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+          - text: New and updated features
+            url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 
   - title: Onboarding
     linkLists:
@@ -41,30 +41,32 @@ landingContent:
           - text: Instrument your website
             url: instrument-website.md
 
-  - title: Reports
+  - title: View and filter reports
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: View reports
             url: view-reports.md
-          - text: Create custom reports
-            url: custom-reports.md
           - text: View unified profiles report
             url: profile-reports.md
-          - text: Create funnel reports
-            url: funnel-reports.md
+          - text: Use auidence segments to filter reports
+            url: integrate-audience-insights-segments.md
 
-  - title: Events
+  - title: Analyze
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Create funnel reports
+            url: funnel-reports.md
+          - text: Analyze behaviorial data
+            url: curate-dimensions.md
+          - text: Create custom reports
+            url: custom-reports.md
           - text: Create refined events
             url: refined-events.md
           - text: Export events
             url: export-events.md
-          - text: Delete and export personal data
-            url: delete-export-personal-data.md
-  
+            
   - title: Developer resources
     linkLists:
         - linkListType: reference
@@ -87,6 +89,10 @@ landingContent:
             - text: Manage environments and workspaces
               url: manage-environments-workspaces.md
             - text: Connect to audience insights 
-              url: configure-connections.md
+              url: integrate-audience-insights-engagement-insights.md
             - text: Manage cookies and user consent
               url: user-consent-storage.md
+            - text: Delete and export personal data
+              url: delete-export-personal-data.md
+            - text: Service limits
+              url: ../service-limits.md

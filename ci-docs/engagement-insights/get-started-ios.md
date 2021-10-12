@@ -4,7 +4,7 @@ description: Learn how to personalize and run the iOS SDK
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: conceptual
@@ -40,11 +40,36 @@ Begin the process by selecting a workspace to work in, selecting the iOS mobile 
 
 - If you don't have an existing workspace, select  **New Workspace** and follow the steps to create a [new workspace](create-workspace.md).
 
+- After you create a workspace, go to **Admin** > **Workspace** and then select **Installation guide**.
+
 ## Configure the SDK
 
-Once you download the SDK, you can work with it in Xcode to enable and define events.
+Once you download the SDK, you can work with it in Xcode to enable and define events. There are two ways to do so
 
-1. After you create a workspace, go to **Admin** > **Workspace** and then select **Installation guide**.
+### Option 1: Using CocoaPods (recommended)
+CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. Using it makes integrating the engagement insights SDK for iOS easier. CocoaPods also lets you upgrade to the latest version of the engagement insights SDK. Here’s how to use CocoaPods to integrate the engagement insights SDK into your Xcode project. 
+
+1. Install CocoaPods. 
+
+1. Create a new file called Podfile inside your project’s root directory and add the following statements to it. Replace YOUR_TARGET_PROJECT_NAME with the name of your Xcode project. 
+```objectivec
+platform :ios, '9.0'  
+
+ target '${YOUR_TARGET_PROJECT_NAME}' do 
+
+     use_frameworks!   
+
+     pod 'EIObjC.framework.debug' 
+
+     pod 'EIObjC.framework.release' 
+
+ end 
+```
+The pod configuration above contains both the debug and release versions of the SDK. Choose whichever one is best for your project.
+
+1. Install the pod by executing the following command: `pod install --repo-update `
+
+### Option 2: Using download link
 
 1. Download the [engagement insights iOS SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip), and place the `EIObjC.xcframework` file in the `Frameworks` folder.
 
