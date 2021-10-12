@@ -25,11 +25,11 @@ Organizations can create *two* environments for every Customer Insights license.
 
 A guided experience helps you through the steps to gather all required information for a new environment. You need [administrator permissions](permissions.md) in audience insights to create or manage environments.
 
-1. In audience insights, open the environment picker and select **+ New**
+1. In audience insights, open the environment picker and select **+ New**.
 
 1. Follow the guided experience outlined in the following sections.
 
-### Step 1: Provide basic information
+### Step 1: Provide environment information
 
 In the **Basic information** step, choose whether you want to create an environment from scratch or [copy data from another environment](manage-environments.md#copy-the-environment-configuration).
 
@@ -58,11 +58,11 @@ For the Azure Data Lake Storage option, you can choose between a resource-based 
 
 When system processes such as data ingestion is complete, the system creates corresponding folders in the storage account you specified. Data files and model.json files are created and added to folders based on the process name.
 
-If you create multiple environments of Customer Insights and choose to save the output entities from those environments to your storage account, Customer Insights creates separate folders for each environment with ci_<environmentid> in the container.
+If you create multiple environments of Customer Insights and choose to save the output entities from those environments to your storage account, Customer Insights creates separate folders for each environment with `ci_<environmentid>` in the container.
 
 ### Step 3: Connect to Microsoft Dataverse
    
-To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Microsoft Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsoft Dataverse environment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
+To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Microsoft Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsft Dataverse envirnment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
 
 > [!NOTE]
 > Customer Insights does not support the following data sharing scenarios:
@@ -71,11 +71,11 @@ To use [out-of-box prediction models](predictions-overview.md#out-of-box-models)
 
 :::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
-### Step 4: Review and finalize the settings
+### Step 4: Finalize the settings
 
-In the final Review step, go through all of the specifyed settings. When everything looks complete, select **Create** to set up the environment. 
+In the Review step, go through all of the specifyed settings. When everything looks complete, select **Create** to set up the environment. 
 
-## Working with the environment
+## Working with your new environment
 
 Review the following articles to help you getting started with configuring Customer Insights. 
 
