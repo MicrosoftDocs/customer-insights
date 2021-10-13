@@ -4,7 +4,7 @@ description: How to create, edit, and delete dimensions.
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 06/09/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights 
 ms.topic: how-to
@@ -17,7 +17,7 @@ ms.manager: shellyha
 
 A dimension is an attribute of an event that can describe, filter, or group data. If you're running a marketing promotion on your website, you can use dimensions to sort visitors by new and returning users.  
 
-Engagement insights includes out-of-the-box dimensions for event properties. Examples include:
+Engagement insights includes out-of-the-box (OOB) dimensions for event properties. Examples include:
 
 - Browser name
 - Page name
@@ -39,17 +39,21 @@ Dimensions are based on existing event properties. When you use the tracking cod
 In addition to system-generated dimensions, environment and workspace admins can create custom dimensions. Custom dimensions are based on default properties of base events or they can use [custom properties of an event](advanced-SDK-implementation.md).
 
 1. Go to **Data** > **Dimensions**.
-1. Select **Add a dimension**.
+1. Select **New dimension**.
 
    :::image type="content" source="media/add-dimension.png" alt-text="Add a dimension to an event.":::
 
 1. In the **Create a dimension** pane, select a property to base the dimension on. The properties list will show all the properties in the workspace not assigned to a dimension.
-1. Enter a name in the **Display name** box. Optionally, you can add a description.
-1. Select **Create** to save the dimension. It can take up to one minute before you can use the dimension in a [custom report](custom-reports.md) or [segment](segments.md). 
+   
+   :::image type="content" source="media/create-new-dimension.png" alt-text="Create a new dimension.":::
+      
+3. Enter a name in the **Display name** box. Optionally, you can add a **Description**.
+4. Select **Create** to save the dimension. It can take up to one minute before you can use the dimension in a [custom report](custom-reports.md) or [segment](segments.md). 
 
 ## Edit a dimension
 
-You can change the name and description of a dimension.
+You can change the name and description of a dimension. You can only edit user-created dimensions but you can't edit system dimensions.
+
 
 1. Go to **Data** > **Dimensions**.
 1. Select the dimension you want to delete.

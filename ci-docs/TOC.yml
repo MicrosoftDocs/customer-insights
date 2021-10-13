@@ -34,6 +34,9 @@
         - name: Explore audience insights
           href: audience-insights/home.md
 
+    - name: Work with business accounts
+      href: audience-insights/work-with-business-accounts.md
+
     - name: Learn modules
       items:
         - name: Ingest data
@@ -82,6 +85,8 @@
           href: audience-insights/relationships.md
         - name: List customer activities
           href: audience-insights/activities.md
+        - name: Define semantic mappings
+          href: audience-insights/semantic-mappings.md
 
     - name: Data enrichment
       items:
@@ -248,10 +253,14 @@
           href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
-        - name: Connect to an ADLS storage account using Service Principal
-          href: audience-insights/connect-service-principal.md
         - name: Supported languages
           href: audience-insights/supported-languages.md
+        - name: Security
+          items: 
+            - name: Bring your own Key Vault
+              href: audience-insights/use-azure-key-vault.md
+            - name: Connect to an ADLS storage account using Service Principal
+              href: audience-insights/connect-service-principal.md
 
     - name: Extensibility
       items:

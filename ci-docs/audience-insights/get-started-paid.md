@@ -23,6 +23,8 @@ Organizations can create *two* environments for every Customer Insights license.
 
 ## Create a new environment
 
+After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started. 
+
 A guided experience helps you through the steps to gather all required information for a new environment. You need [administrator permissions](permissions.md) in audience insights to create or manage environments.
 
 1. In audience insights, open the environment picker and select **+ New**.
@@ -36,12 +38,13 @@ In the **Basic information** step, choose whether you want to create an environm
    :::image type="content" source="media/environment-settings-dialog.png" alt-text="Dialog to create a new Customer Insights environment.":::
 
 Provide the following details:
-   - **Name**: The name for the environment. This field is already filled in if you've copied an existing environment, but you can change it.
-   - **Region**: The region that the service is to be deployed and hosted.
-   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are mainly intended for pre-implementation and testing.
+   - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
+   - **Region**: The region into which the service is deployed and hosted.
+   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience like the production environment that's currently selected.
+   - Choose the primary audience for the new environment. You can work with individual customers (B2C) or [business accounts](work-with-business-accounts.md) (B2B).
 
 ### Step 2: Configure data storage
-   
+
 In the **Data storage** step, choose where to store the data from audience insights.
 
 You'll have two options: **Customer Insights storage** (an Azure Data Lake managed by the Customer Insights team) and **Azure Data Lake Storage** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
@@ -62,7 +65,7 @@ If you create multiple environments of Customer Insights and choose to save the 
 
 ### Step 3: Connect to Microsoft Dataverse
    
-To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Microsoft Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsft Dataverse envirnment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
+To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Microsoft Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsoft Dataverse environment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
 
 :::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
@@ -73,7 +76,7 @@ To use [out-of-box prediction models](predictions-overview.md#out-of-box-models)
 
 ### Step 4: Finalize the settings
 
-In the Review step, go through all of the specifyed settings. When everything looks complete, select **Create** to set up the environment. 
+In the Review step, go through all of the specified settings. When everything looks complete, select **Create** to set up the environment. 
 
 ## Work with your new environment
 

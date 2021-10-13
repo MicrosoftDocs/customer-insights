@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to RollWorks"
 description: "Learn how to configure the connection and export to RollWorks."
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -23,11 +23,11 @@ Export segments of unified customer profiles to RollWorks and use them for adver
 
 ## Known limitations
 
-- You can export up to 250'000 profiles in per export to RollWorks.
-- You can't export segments with fewer than 100 profiles to RollWorks. 
+- You can export up to 250'000 customer profiles in per export to RollWorks.
+- You can't export segments with fewer than 100 customer profiles to RollWorks. 
 - Exporting to RollWorks is limited to segments.
-- Exporting up to 250'000 profiles to RollWorks can take up to 10 minutes to complete. 
-- The number of profiles that you can export to RollWorks is dependent and limited on your contract with RollWorks.
+- Exporting up to 250'000 customer profiles to RollWorks can take up to 10 minutes to complete. 
+- The number of customer profiles that you can export to RollWorks is dependent and limited on your contract with RollWorks.
 
 ## Set up connection to RollWorks
 
@@ -61,7 +61,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Enter your **RollWorks Advertiser ID** [RollWorks Advertisable](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to RollWorks.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to RollWorks.
 
 1. Select the segments you want to export. Select a segment with a least 100 members. You can't export smaller segments. Additionally the maximum size of a segment to export is 250'000 members per export. 
 
