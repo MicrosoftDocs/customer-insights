@@ -50,5 +50,5 @@ landingContent:
         links:
           - text: How to enforce consent rules
             url: ../audience-insights/activate-consent.md
-          - text: How override consent rules
-            url: ../audience-insights/segments#disable-or-change-default-consent-rules
+          - text: How to override consent rules
+            url: ../audience-insights/change-default-consent-rules.md
