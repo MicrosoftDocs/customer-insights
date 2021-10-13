@@ -25,9 +25,11 @@ After setting up the consent management capability, the first-run experience gui
 1. In Consent Center, go to **Consent**.
 
 1. Select the **Import consent data** control and choose which consent type to import. You can choose between **Purpose** and **Subscription**. Depending on the selected type, the [requirements for consent data](#data-requirements-for-consent-data) are different.
+   
    :::image type="content" source="media/import-consent-data-control.PNG" alt-text="Control option to start the import process for consent data.":::
 
 1. Provide a **Name** to identify the data source and select **Next**.
+   
    :::image type="content" source="media/data-source-name.PNG" alt-text="Name input field for the name of a new data source.":::
 
 1. Select which type of data source you want to import the consent data from. 
@@ -35,14 +37,17 @@ After setting up the consent management capability, the first-run experience gui
    :::image type="content" source="media/choose-data-source.PNG" alt-text="Step with a list of available data sources.":::
 
 1. In this example, we select the **Text/CSV** data source to import a .CSV file that is hosted in a shared OneDrive folder. Enter the path or URL to the hosted file and select **Next**. 
+   
    :::image type="content" source="media/connection-settings-data-source.PNG" alt-text="Connection settings for the new data source.":::
 
 1. The **Preview file data** step shows the data that gets imported. Select **Next** to continue. 
   
 1. The **Edit queries** step lets you rename the query and [apply data transformations using Power Query](/power-query/power-query-ui.md). After applying all necessary transformations, select **Next**.
+   
    :::image type="content" source="media/data-transformations.PNG" alt-text="Options to transform data and assign data types.":::
 
 1. The final step to import a data source is the **Refresh settings** step where you tell the system when to look for updates on the data source. 
+   
    :::image type="content" source="media/refresh-settings.PNG" alt-text="Set the refresh settings of the data source.":::
     Choose if you want to **Refresh manually** if the data source changed, or if you prefer the system to do the **Refresh automatically**. For automated refresh, set your preference for when a refresh should happen.
 
