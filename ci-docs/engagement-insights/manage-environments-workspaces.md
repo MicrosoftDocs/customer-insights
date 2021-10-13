@@ -86,7 +86,7 @@ Deleting a workspace will permanently remove all of its content, data, settings,
 
 As an Environment admin, you can access an environment from the left navigation pane. You can configure environment settings, other environment admins, and workspaces. Select tabs to move between different areas in the admin center.
 
-:::image type="content" source="media/New-environment.png" alt-text="Environment admin center.":::
+:::image type="content" source="media/New-environment.png" alt-text="Environment admin center."::: 
 
 ### Create an environment
 
