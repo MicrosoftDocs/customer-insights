@@ -29,7 +29,7 @@ A guided experience helps you through the steps to gather all required informati
 
 1. In audience insights, open the environment picker and select **+ New**.
   
-   :::image type="content" source="media/environment-picker.png" alt-text="Select the environment picker.":::
+   :::image type="content" source="../engagement-insights/media/environment-picker.png" alt-text="Select the environment picker.":::
 
 1. Follow the guided experience outlined in the following sections.
 
