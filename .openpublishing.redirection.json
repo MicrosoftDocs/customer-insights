@@ -732,6 +732,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "ci-docs/audience-insights/get-started-trial.md",
+      "redirect_url": "/dynamics365/customer-insights/trial-signup",
+      "redirect_document_id": false
+    },
+    { 
       "source_path": "ci-docs/engagement-insights/quotas.md",
       "redirect_url": "/dynamics365/customer-insights/service-limits",
       "redirect_document_id": false
