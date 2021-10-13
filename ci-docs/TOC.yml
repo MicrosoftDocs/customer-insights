@@ -370,15 +370,17 @@
       items: 
         - name: Import consent data
           href: consent-management/import-consent-data.md
+        - name: Set consent data and apply consent preferences
+          href: consent-management/set-consent-rules.md
 
     - name: Manage consent data
       items: 
-        - name: Set consent data and apply consent preferences
-          href: consent-management/set-consent-rules.md
+        - name: Enable consent in audience insights
+          href: audience-insights/activate-consent.md
         - name: Manage default consent rules in audience insights segments
-          href: audience-insights/segments.md#disable-or-change-default-consent-rules
+          href: audience-insights/change-default-consent-rules.md
         
-    - name: Admin guide
+    - name: Manage settings and users
       items: 
         - name: Configure system settings
           href: consent-management/system-settings.md
