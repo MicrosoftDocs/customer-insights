@@ -1,6 +1,6 @@
 ---
 title: Create a new environment
-description: The purpose of an environment and how to create a newone.
+description: The purpose of an environment and how to create a new one.
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali

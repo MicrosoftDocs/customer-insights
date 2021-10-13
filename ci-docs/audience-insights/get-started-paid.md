@@ -16,7 +16,7 @@ ms.custom: intro-internal
 
 This article explains how to create a new environment after your organization has purchased a Dynamics 365 Customer Insights subscription. 
 
-Organizations can create *two* environments for every Customer Insights license. If your organization purchases more than one license, please [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, download the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+Organizations can create *two* environments for every Customer Insights license. If your organization purchases more than one license, [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, download the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 > [!NOTE]
 > If you're looking to try the service, see [Set up a trial environment](get-started-trial.md).
@@ -42,7 +42,7 @@ In the **Basic information** step, choose whether you want to create an environm
 Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
    - **Region**: The region into which the service is deployed and hosted.
-   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience like the production environment that's currently selected.
+   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
    - Choose the primary audience for the new environment. You can work with individual customers (B2C) or [business accounts](work-with-business-accounts.md) (B2B).
 
 ### Step 2: Configure data storage
@@ -59,7 +59,7 @@ By saving data to Azure Data Lake Storage, you agree that data will be transferr
 > - Azure Data Lake Storage accounts from the same Azure region that you selected when creating the environment.
 > - Azure Data Lake Storage accounts that have *hierarchical namespace* enabled.
 
-For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Note that the **Container** name will be `customerinsights` and can't be changed.
+For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name will be `customerinsights` and can't be changed.
 
 When system processes such as data ingestion is complete, the system creates corresponding folders in the storage account you specified. Data files and *model.json* files are created and added to folders based on the process name.
 

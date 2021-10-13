@@ -16,7 +16,7 @@ This article explains how to take your first steps in Dynamics 365 Customer Insi
 
 After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. 
 
-Customer Insights is licensed per tenant and includes multiple capabilities. You can purchase additional capacity and license to increase the default quota. 
+Customer Insights is licensed per tenant and includes multiple capabilities. You can purchase more capacity and licenses to increase the default quota. 
 - [Pricing overview](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 - Capacity and entitlements: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
 
@@ -35,7 +35,7 @@ The first-run experience helps you choose you initial focus with Customer Insigh
 
 ## Create your own environment
 
-After your first sign in, you'll see an environment with sample data. You can use that data to explore features and familiarize with the app. To use your own data, you have to create an environment in the capability you want to work in.
+After your first sign-in, you'll see an environment with sample data. You can use that data to explore features and familiarize with the app. To use your own data, you have to create an environment in the capability you want to work in.
 
 - [Create an environment in audience insights.](audience-insights/get-started-paid.md)
 - [Create an environment in engagement insights.](engagement-insights/create-new-environment.md) 
