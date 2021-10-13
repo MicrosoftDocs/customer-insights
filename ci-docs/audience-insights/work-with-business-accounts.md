@@ -17,7 +17,7 @@ The audience insights capability in Dynamics 365 Customer Insights lets you conf
 
 ## Create an environment for business accounts
 
-Administrators can [create an environment in an existing organization](get-started-paid.md#create-an-environment-in-an-existing-organization). A step in the process of creating a new environment asks administrators for the primary target audience of the environment. In case it's the initial set-up of audience insights after purchasing a license, a guided experience helps with the creation of the first environment.
+Administrators can [create an environment in an existing organization](get-started-paid.md). A step in the process of creating a new environment asks administrators for the primary target audience of the environment. In case it's the initial set-up of audience insights after purchasing a license, a guided experience helps with the creation of the first environment.
 
 You can then [ingest data](data-sources.md) for business accounts and related contacts as data sources from all supported sources.
 
