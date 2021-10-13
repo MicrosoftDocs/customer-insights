@@ -20,7 +20,7 @@ Customer Insights is licensed per tenant and includes multiple capabilities. You
 - [Pricing overview](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 - Capacity and entitlements: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
 
-If you're looking to try the service and the features, see [Set up a trial environment](tbd.md).
+If you're looking to try the service and the features, see [Set up a trial environment](trial-signup.md).
 
 ## Start with Customer Insights
 
