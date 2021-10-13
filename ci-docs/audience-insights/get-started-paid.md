@@ -41,9 +41,10 @@ In the **Basic information** step, choose whether you want to create an environm
 
 Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
-   - **Region**: The region into which the service is deployed and hosted.
+   - **Choose you business**: Choose the primary audience for the new environment. You can work with individual customers (B2C) or [business accounts](work-with-business-accounts.md) (B2B).
    - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
-   - Choose the primary audience for the new environment. You can work with individual customers (B2C) or [business accounts](work-with-business-accounts.md) (B2B).
+   - **Region**: The region into which the service is deployed and hosted.
+
 
 ### Step 2: Configure data storage
 
@@ -63,7 +64,7 @@ For the Azure Data Lake Storage option, you can choose between a resource-based 
 
 When system processes such as data ingestion is complete, the system creates corresponding folders in the storage account you specified. Data files and *model.json* files are created and added to folders based on the process name.
 
-If you create multiple environments of Customer Insights and choose to save the output entities from those environments to your storage account, Customer Insights creates separate folders for each environment with `ci_<environmentid>` in the container.
+If you create multiple environments of Customer Insights and choose to save the output entities from those environments to your storage account, Customer Insights creates separate folders for each environment with `ci_environmentID` in the container.
 
 ### Step 3: Connect to Microsoft Dataverse
    

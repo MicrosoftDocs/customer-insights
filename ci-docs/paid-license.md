@@ -30,7 +30,7 @@ The first-run experience helps you choose you initial focus with Customer Insigh
 
 1. Go to the [Customer Insights app URL](https://home.ci.ai.dynamics.com).
 1. Sign in with your school or work account. 
-1. Select the region for your Customer Insights instance.
+1. Agree to the terms of service and set the content preferences for your Customer Insights instance.
 1. Choose the capability to focus on until you get to the start page for your selected capability.
 
 ## Create your own environment
