@@ -4,10 +4,14 @@
 - name: Product overview
   href: overview.md
 
-- name: Create a trial
-  href: audience-insights/get-started-trial.md
+- name: Free trial
+  items:
+    - name: Sign up for a free trial
+      href: trial-signup.md
+    - name: Trial FAQ
+      href: trial-FAQ.md
 
-- name: Access your environment
+- name: Launch Customer Insights
   href: https://home.ci.ai.dynamics.com/
 
 - name: Audience insights
