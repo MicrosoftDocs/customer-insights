@@ -28,7 +28,7 @@ The first-run experience helps you choose you initial focus with Customer Insigh
 
 **To sign in for the first time**:
 
-1. Go to the [Customer Insights app URL](https://home.ci.dynamics.com).
+1. Go to the [Customer Insights app URL](https://home.ci.ai.dynamics.com).
 1. Sign in with your school or work account. 
 1. Select the region for your Customer Insights instance.
 1. Choose the capability to focus on until you get to the start page for your selected capability.
@@ -37,8 +37,8 @@ The first-run experience helps you choose you initial focus with Customer Insigh
 
 After your first sign in, you'll see an environment with sample data. You can use that data to explore features and familiarize with the app. To use your own data, you have to create an environment in the capability you want to work in.
 
-[Create an environment in audience insights.](tbd.md)
-[Create an environment in engagement insights.](tbd.md) 
+- [Create an environment in audience insights.](audience-insights/get-started-paid.md)
+- [Create an environment in engagement insights.](engagement-insights/create-new-environment.md) 
 
 
 

@@ -288,6 +288,8 @@
       items:
         - name: Quickstart guide
           href: engagement-insights/get-started.md
+        - name: Crate an environment
+          href: engagement-insights/create-new-environment.md
         - name: Create a workspace
           href: engagement-insights/create-workspace.md
         - name: Capture events from websites and mobile apps

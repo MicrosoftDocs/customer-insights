@@ -28,6 +28,8 @@ After purchasing a subscription license for Customer Insights, the global admini
 A guided experience helps you through the steps to gather all required information for a new environment. You need [administrator permissions](permissions.md) in audience insights to create or manage environments.
 
 1. In audience insights, open the environment picker and select **+ New**.
+  
+   :::image type="content" source="media/environment-picker.png" alt-text="Select the environment picker.":::
 
 1. Follow the guided experience outlined in the following sections.
 
