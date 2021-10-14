@@ -57,10 +57,10 @@ For more information, see [Manage environments and workspaces](manage-environmen
 
 ## Work with your new environment
 
-- [Create a workspace](engagement-insights/create-workspace.md) and add members.
-- [Add code to your website](engagement-insights/instrument-website.md) or [mobile app](engagement-insights/developer-resources.md#capture-events-from-mobile-apps).
-- View a [real-time report](engagement-insights/view-reports.md) or create [custom reports](engagement-insights/custom-reports.md).
-- [Create refined events](engagement-insights/refined-events.md) for export.
-- [Export the data](engagement-insights/export-events.md) to Data Lake Storage.
+- [Create a workspace](../engagement-insights/create-workspace.md) and add members.
+- [Add code to your website](../engagement-insights/instrument-website.md) or [mobile app](../engagement-insights/developer-resources.md#capture-events-from-mobile-apps).
+- View a [real-time report](../engagement-insights/view-reports.md) or create [custom reports](../engagement-insights/custom-reports.md).
+- [Create refined events](../engagement-insights/refined-events.md) for export.
+- [Export the data](../engagement-insights/export-events.md) to Data Lake Storage.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
