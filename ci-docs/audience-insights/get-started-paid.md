@@ -45,12 +45,13 @@ Provide the following details:
    - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
    - **Region**: The region into which the service is deployed and hosted.
 
-
 ### Step 2: Configure data storage
 
 In the **Data storage** step, choose where to store the data from audience insights.
 
 You'll have two options: **Customer Insights storage** (an Azure Data Lake managed by the Customer Insights team) and **Azure Data Lake Storage** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
+
+:::image type="content" source="media/data-storage-environment.png" alt-text="Choose the Azure Data Lake Storage to store your audience insights data in.":::
 
 By saving data to Azure Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account. This location may differ from where data is stored in Dynamics 365 Customer Insights. Learn more at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
@@ -68,9 +69,11 @@ If you create multiple environments of Customer Insights and choose to save the 
 
 ### Step 3: Connect to Microsoft Dataverse
    
-To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Microsoft Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsoft Dataverse environment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data Lake.
+The **Microsoft Dataverse** step lets you connect Customer Insights with your Dataverse environment.
 
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
+To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsoft Dataverse environment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Dataverse Managed Data Lake.
+
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
 > [!NOTE]
 > Customer Insights does not support the following data sharing scenarios:
@@ -79,7 +82,7 @@ To use [out-of-box prediction models](predictions-overview.md#out-of-box-models)
 
 ### Step 4: Finalize the settings
 
-In the Review step, go through all of the specified settings. When everything looks complete, select **Create** to set up the environment. 
+In the **Review** step, go through all of the specified settings. When everything looks complete, select **Create** to set up the environment. 
 
 ## Work with your new environment
 
