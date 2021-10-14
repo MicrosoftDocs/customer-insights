@@ -17,6 +17,8 @@ manager: shellyha
 
 Get a 360-degree view of your customers directly in Dynamics 365 apps. With the Customer Card Add-in installed in a supported Dynamics 365 app, you can choose to display customer profile fields, insights, and activity timeline. The add-in will retrieve data from Customer Insights without affecting the data in the connected Dynamics 365 app.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN1qv]
+
 ## Prerequisites
 
 - The add-in only works with Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
