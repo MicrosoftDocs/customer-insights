@@ -84,6 +84,8 @@ To use [out-of-box prediction models](predictions-overview.md#out-of-box-models)
 
 In the **Review** step, go through all of the specified settings. When everything looks complete, select **Create** to set up the environment. 
 
+You can also change most of the settings later. For more information, see [Manage environments](manage-environments.md).
+
 ## Work with your new environment
 
 Review the following articles to help you getting started with configuring Customer Insights. 
