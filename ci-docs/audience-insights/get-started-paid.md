@@ -1,7 +1,7 @@
 ---
-title: "Create and configure a paid license of Customer Insights"
-description: "Steps to get a licensed subscription for Dynamics 365 Customer Insights and configure it."
-ms.date: 10/12/2021
+title: "Create environments in Customer Insights"
+description: "Steps to create environments with a licensed subscription for Dynamics 365 Customer Insights."
+ms.date: 10/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -12,7 +12,7 @@ manager: shellyha
 ms.custom: intro-internal
 ---
 
-# Get started with a paid subscription
+# Create an environment in audience insights
 
 This article explains how to create a new environment after your organization has purchased a Dynamics 365 Customer Insights subscription. 
 
