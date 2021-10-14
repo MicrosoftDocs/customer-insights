@@ -15,6 +15,8 @@ manager: shellyha
 
 Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights. Adding data sources based on Power Query connectors generally follows the steps outlined in the next section. However, depending on the connector you use, different information is required. For more information, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
+
 ## Create a new data source
 
 1. In audience insights, go to **Data** > **Data sources**.
