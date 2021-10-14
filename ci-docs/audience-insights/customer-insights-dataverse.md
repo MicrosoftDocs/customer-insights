@@ -19,7 +19,7 @@ Customer Insights provides the option to make output entities available in [Micr
 
 **Organizations with existing Dataverse environments**
 
-Organizations that already use Dataverse can [use one of their existing Dataverse environments](get-started-paid.md) when an administrator sets up audience insights. By providing the URL to the Dataverse environment, it's attaching to their new audience insights environment. To ensure the best possible performance, Customer Insights and Dataverse environments must be hosted in the same region.
+Organizations that already use Dataverse can [use one of their existing Dataverse environments](create-environment.md) when an administrator sets up audience insights. By providing the URL to the Dataverse environment, it's attaching to their new audience insights environment. To ensure the best possible performance, Customer Insights and Dataverse environments must be hosted in the same region.
 
 **New organization**
 

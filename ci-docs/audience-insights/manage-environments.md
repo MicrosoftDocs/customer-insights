@@ -21,7 +21,7 @@ Select the **Environment** control in the upper-right corner of the page to chan
 
 :::image type="content" source="media/home-page-environment-switcher.png" alt-text="Screenshot of the control to switch environments.":::
 
-Administrators can [create](get-started-paid.md) and manage environments.
+Administrators can [create](create-environment.md) and manage environments.
 
 ## Edit an existing environment
 
@@ -33,7 +33,7 @@ You can edit some of the details of existing environments.
 
 3. In the **Edit environment** box, you can update the environment settings.
 
-For more information on environment settings, see [Create a new environment](get-started-paid.md).
+For more information on environment settings, see [Create a new environment](create-environment.md).
 
 ## Copy the environment configuration
 

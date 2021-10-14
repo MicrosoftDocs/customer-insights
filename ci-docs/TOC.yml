@@ -34,7 +34,7 @@
         - name: Quickstart guide
           href: audience-insights/get-started.md
         - name: Create a new environment
-          href: audience-insights/get-started-paid.md
+          href: audience-insights/create-environment.md
         - name: Explore audience insights
           href: audience-insights/home.md
 
