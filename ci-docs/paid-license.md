@@ -10,7 +10,7 @@ ms.manager: shellyha
 ms.custom: intro-internal
 ---
 
-# Familiarize with the first-run experience
+# Get started after purchasing Customer Insights
 
 This article explains how to take your first steps in Dynamics 365 Customer Insights after your organization has purchased a subscription. If you'd like to purchase Customer Insights, our contact options are listed on the [Dynamics 365 Customer Insights website](https://dynamics.microsoft.com/ai/customer-insights/). 
 

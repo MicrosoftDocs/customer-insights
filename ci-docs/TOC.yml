@@ -143,7 +143,7 @@
               href: audience-insights/predict-product-recommendation.md
             - name: Predict subscription churn
               href: audience-insights/predict-subscription-churn.md
-            - name: Predict transactional churn
+            - name: Predict transaction churn
               href: audience-insights/predict-transactional-churn.md
             - name: Use custom models from Azure Machine Learning
               href: audience-insights/custom-models.md
@@ -156,7 +156,7 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: Sample guide for subscription churn prediction
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: Sample guide for transactional churn prediction
+            - name: Sample guide for transaction churn prediction
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: Sample guide for product recommendation prediction
               href: audience-insights/sample-guide-predict-product-recommendation.md

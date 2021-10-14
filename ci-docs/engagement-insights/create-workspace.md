@@ -31,7 +31,7 @@ The process of creating a workspace includes setting up the *environment* to org
 
    :::image type="content" source="media/workspace-name.png" alt-text="Type a workspace name.":::
 
-1. Choose the platform type (Web or moble) that you want to measure.
+1. Choose the platform type (Web or mobile) that you want to measure.
 
 1. Select **Show advanced settings** to enable or disable these optional settings:
 
