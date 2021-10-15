@@ -97,6 +97,7 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
    > [!IMPORTANT]
    > For segments based on business accounts, details of one or more contacts of each account needs to be included in the segment to allow that segment to be activated or exported to destinations that require contact information.   
    > A sample output for a segment based on business accounts with projected attributes of contacts could look like this: 
+   >
    > |ID  |Account name  |Revenue  |Contact name  | Contact role|
    > |---------|---------|---------|---------|---|
    > |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, Procurement manager]
