@@ -222,7 +222,6 @@ You can reconfigure and fine-tune most of the match parameters.
 
 You can specify conditions that certain records should always match or never match. There are four options available: 
 
-
 |Option  |Description |Example  |
 |---------|---------|---------|
 |Always match     | Defining values which should always be matched during Match.         |  Always match *Mike* and *MikeR*.       |
@@ -232,13 +231,13 @@ You can specify conditions that certain records should always match or never mat
 
 1. Go to **Data** > **Unify** > **Match** and select **Custom match** in the **Matched records details** section.
 
-  :::image type="content" source="media/custom-match-create.png" alt-text="Screenshot of the match rules section with Custom match control highlighted.":::
+   :::image type="content" source="media/custom-match-create.png" alt-text="Screenshot of the match rules section with Custom match control highlighted.":::
 
-1. If you have no custom match rules set, you'll see a new **Custom match** pane with more details.
+1. In the **Custom** pane, go to the **Records** tab.
 
-1. Select **Fill in the template** to get a template file that can specify which records from which entities should always match or never match. You'll need to separately fill in the "always match" records and "never match" records in two different files.
+1. Choose the the custom match option from the **Custom type** dropdown and select **Download template**. You need a separate template for each match option.
 
-1. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
+1. A template file downloads. Open it and fill in the details. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
     - Entity1: Sales
     - Entity1Key: 12345
     - Entity2: Contact
@@ -248,22 +247,28 @@ You can specify conditions that certain records should always match or never mat
    
    If you want to specify custom matching for deduplication on an entity, provide the same entity as both Entity1 and Entity2 and set the different primary key values.
 
-1. After adding all the overrides you want to apply, save the template file.
+1. After adding all the overrides, save the template file.
 
-1. Go to **Data** > **Data sources** and ingest the template files as new entities. Once ingested, you can use them to specify the Match configuration.
+1. Go to **Data** > **Data sources** and ingest the template files as new entities.
 
-1. After uploading the files and entities are available, select the **Custom match** option again. You'll see options to specify the entities you want to include. Select the required entities from the dropdown menu.
+1. After uploading the files and entities are available, select the **Custom match** option again. You'll see options to specify the entities you want to include. Select the required entities from the dropdown menu and select **Done**.
 
    :::image type="content" source="media/custom-match-overrides.png" alt-text="Screenshot of the dialog to choose overrides for a custom match scenario.":::
 
-1. Select the entities you want to use for **Always match** and **Never match**, select **Done**.
+1. Applying the custom match depends on the match option you want to use. 
+
+   - For **Always match** or **Never match**, proceed to the next step.
+   - For **Custom bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the **Normalizations** dropdown choose the **Custom bypass** or **Alias mapping** option and select **Done**.
 
 1. Select **Save** on the **Match** page to apply the custom match configuration.
 
 1. Select **Run** on the **Match** page to start the matching process. Other specified match rules are overridden by the custom match configuration.
 
-> [!TIP]
-> Go to **Data** > **Entities** and review the **ConflationMatchPair** entity to confirm that the overrides are applied.
+### Known issues
+
+- Self-conflation doesn't show the normalized data in deduplication entities. However, it applies the normalization internally during deduplication. This is by design for all normalizations. 
+- If the semantic type isn't defined in the **Map** phase and custom normalization is selected as normalization options it won't get applied. This only happens if you clear the semantic type after applying normalization.
+
 
 ## Next step
 
