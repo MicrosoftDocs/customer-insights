@@ -1,7 +1,7 @@
 ---
 title: "Create segments with the segment builder"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 09/07/2021
+ms.date: 10/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -92,7 +92,14 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
       - **Intersect** overlaps the two groups. Only data that *is common* to both groups is retained in the unified group.
       - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is retained.
 
-1. By default, segments generate the output entity containing all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity.  
+1. By default, segments generate the output entity containing all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity. 
+
+   > [!IMPORTANT]
+   > For segments based on business accounts, details of one or more contacts of each account needs to be included in the segment to allow that segment to be activated or exported to destinations that require contact information.   
+   > A sample output for a segment based on business accounts with projected attributes of contacts could look like this: 
+   > |ID  |Account name  |Revenue  |Contact name  | Contact role|
+   > |---------|---------|---------|---------|---|
+   > |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, Procurement manager]
 
    :::image type="content" source="media/segments-project-attributes.png" alt-text="Example of projected attributes selected in the side pane to be added to the output entity.":::
   
@@ -103,7 +110,6 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
    > - If the attribute you want to project is more than one hop away from the *Customer* entity, as defined by the relationship, that attribute should be used in every rule of the segment query you are building. 
    > - If the attribute you want to project is just one hop away from the *Customer* entity, that attribute doesn't need to be present in every rule of the segment query you are building. 
    > - **Projected attributes** are factored in when using set operators.
-   > - For segments based on business accounts, details of one or more contacts of each account needs to be included in the segment to allow that segment to be activated or exported to destinations that require contact information.
 
 1. Before you save and run the segment, Select **Edit details** next to the segment name. Provide a name for your segment and update the suggested **Output entity name** for the segment. You can also add a description to the segment.
 
