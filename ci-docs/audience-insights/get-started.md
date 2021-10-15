@@ -18,7 +18,7 @@ Audience insights can help you build a deeper understanding of your customers. C
 
 ## Step 1: Create an environment
 
-To start, you first have to create an environment to work in. If your organization already purchased a license, see [Get started with a paid subscription](get-started-paid.md). To start a trial for audience insights, see [Set up a trial environment](get-started-trial.md). 
+To start, you first have to create an environment to work in. If your organization already purchased a license, see [Create an environment](create-environment.md). To start a trial for audience insights, see [Set up a trial environment](../trial-signup.md). 
 
 ## Step 2: Explore audience insights
 
