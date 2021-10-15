@@ -14,7 +14,7 @@ ms.manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Engagement insights, a capability of Dynamics 365 Customer Insights, gradually introduces more regions where customers can choose to store their data. Admins can choose a region when they [create a new environment](manage-environments-workspaces.md#create-an-environment). 
+Engagement insights, a capability of Dynamics 365 Customer Insights, gradually introduces more regions where customers can choose to store their data. Admins can choose a region when they [create a new environment](create-new-environment.md). 
 
 When you set up engagement insights for the first time, you can choose the region while going through the [guided first-run experience](quickstart.md). Later, every new environment allows you to choose the region that data will be stored in.
 

@@ -43,7 +43,7 @@ Your trial environment includes the same features as the paid version. The links
 - [Add code to your website](engagement-insights/instrument-website.md) or [mobile app](engagement-insights/developer-resources.md#capture-events-from-mobile-apps).
 - View a [real-time report](engagement-insights/view-reports.md) or create [custom reports](engagement-insights/custom-reports.md).
 - [Create refined events](engagement-insights/refined-events.md) for export.
-- [Export the data](engagement-insights/export-events.md) to Data Lake Storage.
+- [Export the data](engagement-insights/export-events.md) to Azure Data Lake Storage.
 
 ## Additional resources
 

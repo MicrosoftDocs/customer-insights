@@ -760,6 +760,11 @@
       "source_path": "ci-docs/engagement-insights/configure-connections.md",
       "redirect_url": "/dynamics365/customer-insights/engagement-insights/integrate-audience-insights-engagement-insights",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/get-started-paid.md",
+      "redirect_url": "/dynamics365/customer-insights/audience-insights/create-environment",
+      "redirect_document_id": false
     }
   ]
 }
