@@ -220,7 +220,15 @@ You can reconfigure and fine-tune most of the match parameters.
 
 ## Specify custom match conditions
 
-You can specify conditions that certain records should always match or never match. These rules can be uploaded to override the standard match process. For example, if there are John Doe I and John Doe II in our records, the system might match them as one person. Custom match rules let you specify that their profiles refer to different people. 
+You can specify conditions that certain records should always match or never match. There are four options available: 
+
+
+|Option  |Description |Example  |
+|---------|---------|---------|
+|Always match     | Defining values which should always be matched during Match.         |  Always match *Mike* and *MikeR*.       |
+|Never match     | Defining values which should never be matched during Match.        | Never match *John* and *Jonathan*.        |
+|Custom bypass     | Defining values which the system should always ignore during Match (considered as a normalization on the semantic level)        |  Ignore the values *11111* and *Unknown* during match.        |
+|Alias mapping    | Defining values which the system should consider as the same value (considered as a normalization on the semantic level)         | Consider *Joe* to be equal to *Joseph* prior to match         |
 
 1. Go to **Data** > **Unify** > **Match** and select **Custom match** in the **Matched records details** section.
 
