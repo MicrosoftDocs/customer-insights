@@ -48,7 +48,7 @@ The example above illustrates the segmentation capability. We've defined a segme
 
 There are multiple ways to create a new segment. This section describes how to build your own segment from scratch. You can also create a *quick segment* based on existing entities or make use of machine learning models to get *suggested segments*. For more information, go to [Segments overview](segments.md).
 
-While creating a segment, you can save a draft. In the draft stage, a segment is saved as an inactive segment. When you complete the segment configuration, run it to activate the segment. You can also ***Activate*** a segment from the **All segments** page.
+While creating a segment, you can save a draft. In the draft stage, a segment is saved as an inactive segment. When you complete the segment configuration, run it to activate the segment. You can also **Activate** a segment from the **All segments** page.
 
 1. Go to the **Segments** page.
 
