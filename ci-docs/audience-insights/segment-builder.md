@@ -1,7 +1,7 @@
 ---
 title: "Create segments with the segment builder"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 10/15/2021
+ms.date: 10/18/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -18,7 +18,7 @@ Define complex filters around the unified customer entity and its related entiti
 > [!TIP]
 > - Quick segments are only supported in environments for **individual customers**.    
 > - Segments based on **individual customers** automatically include available contact information for segment members. In environments for **business accounts**, segments are based on accounts (companies or subsidiaries). To include contact information in a segment, use the **Project attributes** functionality in the segment builder.
-> -- Pre-requisite - Ensure that the contact data source(s) is semantically mapped to the 'ContactProfile' entity.
+> - Ensure that the contact data sources are [semantically mapped to the ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) entity.
 
 ## Segment builder
 
@@ -96,7 +96,7 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
 1. By default, segments generate the output entity containing all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity. 
 
    > [!IMPORTANT]
-   > For segments based on business accounts, details of one or more contacts of each account from the 'ContactProfile' entity, needs to be included in the segment to allow that segment to be activated or exported to destinations that require contact information.  See 'Semantic activity' to setup the 'ContactProfile' entity. <Link to Semantic entities docs>
+   > For segments based on business accounts, details of one or more contacts of each account from the *ContactProfile* entity needs to be included in the segment to allow that segment to be activated or exported to destinations that require contact information. For more information about the *ContactProfile* entity, see [Semantic mappings](semantic-mappings.md).
    > A sample output for a segment based on business accounts with projected attributes of contacts could look like this: 
    >
    > |ID  |Account name  |Revenue  |Contact name  | Contact role|
@@ -117,9 +117,9 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
 
 1. Select **Run** to save the segment, activate it and begin processing your segment based on all the rules and conditions. Otherwise, it will be saved as an inactive segment.
    
-1. By default segments are created as 'Dynamic' segments that refresh during system refresh. To prevent the segment from being refreshed during a system refresh, from the **Segments** page, select the segment and use the context menu option 'Make static'. 'Static' segments can be refreshed manually at any time.
-
 1. Select **Back to segments** to go back to the **Segments** page.
+
+1. By default, the segment is created as a dynamic segment. It means that the segment is refreshed during system refreshes. To [stop the automatic refresh](segments.md#manage-existing-segments), select the segment choose the **Make static** option. Static segments can be [refreshed manually](segments.md#refresh-segments) at any time.
 
 > [!TIP]
 > - The segment builder won't suggest valid values from entities when setting the operators for the conditions. You can go to **Data** > **Entities** and download the entity data to see which values are available.
