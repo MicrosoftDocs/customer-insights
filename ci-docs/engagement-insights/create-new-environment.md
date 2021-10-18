@@ -31,8 +31,6 @@ An environment is a space where you manage your workspaces and connections. How 
 
 1. In the **Setup** pane, type an **Environment name**.
 
-   :::image type="content" source="media/new-environment.png" alt-text="Specify the environment details.":::
-
 1. Choose the **Type** of account, depending upon your plan type.
 
 1. Choose the **Region** and select **Next**. 
