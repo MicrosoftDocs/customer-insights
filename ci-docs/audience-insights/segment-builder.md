@@ -48,7 +48,7 @@ The example above illustrates the segmentation capability. We've defined a segme
 
 There are multiple ways to create a new segment. This section describes how to build your own segment from scratch. You can also create a *quick segment* based on existing entities or make use of machine learning models to get *suggested segments*. For more information, go to [Segments overview](segments.md).
 
-While creating a segment, you can save a draft. In the draft stage, a segment is saved as an inactive segment. When you complete the segment configuration, run it to activate the segment. Alternatively, you can ***Activate*** a segment from the **All segments** page.
+While creating a segment, you can save a draft. In the draft stage, a segment is saved as an inactive segment. When you complete the segment configuration, run it to activate the segment. You can also ***Activate*** a segment from the **All segments** page.
 
 1. Go to the **Segments** page.
 
@@ -83,15 +83,15 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
 
    When using the OR operator, all conditions must be based on entities included in the relationship path.
 
-   - You can create multiple rules to create different sets of customer records. You can combine groups to include the customers required for your business case. To create a new rule, select **Add rule**. Specifically, if you can't include and entity in a rule due to the specified relationship path, you have to create a new rule to choose attributes form it.
+   - You can create multiple rules to create different sets of customer records. You can combine groups to include the customers required for your business case. To create a new rule, select **Add rule**. Specifically, if you can't include and entity in a rule because of the specified relationship path, you have to create a new rule to choose attributes form it.
 
       :::image type="content" source="media/segment-rule-grouping.png" alt-text="Add a new rule to a segment and choose the set operator.":::
 
    - Select one of the set operators: **Union**, **Intersect**, or **Except**.
 
       - **Union** unites the two groups.
-      - **Intersect** overlaps the two groups. Only data that *is common* to both groups is retained in the unified group.
-      - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is retained.
+      - **Intersect** overlaps the two groups. Only data that *is common* to both groups remains in the unified group.
+      - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is kept.
 
 1. By default, segments generate the output entity containing all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity. 
 
