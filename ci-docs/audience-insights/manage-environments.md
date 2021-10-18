@@ -62,7 +62,11 @@ The following data is *not* copied:
 
 - Customer profiles.
 - Data source credentials. You'll have to provide the credentials for every data source and refresh the data sources manually.
-- Data sources from Common Data Model folder and Dataverse managed Data Lake. You'll have to create those data sources manually with the same name as in the source environment.
+
+
+<!-- editor's comment: Same question in line 69 as in audience-insights/create-environment.md: Should it be "Dataverse-managed data lake" instead of "Dataverse managed Data Lake"? -->
+
+- Data sources from the Common Data Model folder and Dataverse managed Data Lake. You'll have to create those data sources manually with the same name as in the source environment.
 
 When you copy an environment, you'll see a confirmation message that the new environment has been created. Select **Go to data sources** to see the list of data sources.
 
