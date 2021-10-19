@@ -41,7 +41,7 @@ An environment is a space where you manage your workspaces and connections. How 
 
 1. Select **Show advanced settings** to enable or disable these optional settings:
 
-   - Toggle **Unknown to known** to "enabled" to associate web events with users who previously were authenticated. For more information, see [Recognize web events from previously authenticated visitors](unknown-to-known.md).
+   - Toggle **Unknown to known** to "enabled" to associate web events with users who previously authenticated. For more information, see [Recognize web events from previously authenticated visitors](unknown-to-known.md).
    - Toggle **Filter bot traffic** to "enabled" to remove web traffic by bots for this workspace. 
 
 1. Select **Complete** when you're done. 
