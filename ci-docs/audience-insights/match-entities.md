@@ -220,14 +220,14 @@ You can reconfigure and fine-tune most of the match parameters.
 
 ## Specify custom match conditions
 
-You can specify conditions that certain records should always match or never match. There are four options available: 
+You can specify conditions that override the default match logic. There are four options available: 
 
 |Option  |Description |Example  |
 |---------|---------|---------|
-|Always match     | Defining values which should always be matched during Match.         |  Always match *Mike* and *MikeR*.       |
-|Never match     | Defining values which should never be matched during Match.        | Never match *John* and *Jonathan*.        |
-|Custom bypass     | Defining values which the system should always ignore during Match (considered as a normalization on the semantic level)        |  Ignore the values *11111* and *Unknown* during match.        |
-|Alias mapping    | Defining values which the system should consider as the same value (considered as a normalization on the semantic level)         | Consider *Joe* to be equal to *Joseph* prior to match         |
+|Always match     | Defines values that are always matched.         |  Always match *Mike* and *MikeR*.       |
+|Never match     | Defines values that never match.        | Never match *John* and *Jonathan*.        |
+|Custom bypass     | Defines values that the system should always ignore in the match phase. |  Ignore the values *11111* and *Unknown* during match.        |
+|Alias mapping    | Defining values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
 
 1. Go to **Data** > **Unify** > **Match** and select **Custom match** in the **Matched records details** section.
 
@@ -235,7 +235,7 @@ You can specify conditions that certain records should always match or never mat
 
 1. In the **Custom** pane, go to the **Records** tab.
 
-1. Choose the the custom match option from the **Custom type** dropdown and select **Download template**. You need a separate template for each match option.
+1. Choose the custom match option from the **Custom type** dropdown and select **Download template**. You need a separate template for each match option.
 
 1. A template file downloads. Open it and fill in the details. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
     - Entity1: Sales
@@ -258,7 +258,7 @@ You can specify conditions that certain records should always match or never mat
 1. Applying the custom match depends on the match option you want to use. 
 
    - For **Always match** or **Never match**, proceed to the next step.
-   - For **Custom bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the **Normalizations** dropdown choose the **Custom bypass** or **Alias mapping** option and select **Done**.
+   - For **Custom bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the Normalizations dropdown, choose the **Custom bypass** or **Alias mapping** option and select **Done**.
 
 1. Select **Save** on the **Match** page to apply the custom match configuration.
 
@@ -266,13 +266,13 @@ You can specify conditions that certain records should always match or never mat
 
 ### Known issues
 
-- Self-conflation doesn't show the normalized data in deduplication entities. However, it applies the normalization internally during deduplication. This is by design for all normalizations. 
-- If the semantic type isn't defined in the **Map** phase and custom normalization is selected as normalization options it won't get applied. This only happens if you clear the semantic type after applying normalization.
+- Self-conflation doesn't show the normalized data in deduplication entities. However, it applies the normalization internally during deduplication. It's by design for all normalizations. 
+- If the semantic type setting is removed in the **Map** phase when a match rule uses Alias mapping or Custom bypass, the normalization won't be applied. It only happens if you clear the semantic type after configuring the normalization in the match rule because the semantic type will be unknown.
 
 
 ## Next step
 
-After completing the match process for at least one match pair, you may resolve possible contradictions in your data by going through the [**Merge**](merge-entities.md) topic.
+After completing the match process for at least one match pair, continue to the [**Merge**](merge-entities.md) step.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
