@@ -22,7 +22,7 @@ When you create a workspace, you select the type of data that you want to focus 
 ## Create a new workspace
 
 
-<!-- editor's question: Is audience insights a single capability, or is it abilities? -->
+<!-- editor's question: Is audience insights (second sentence below) a single capability, or is it abilities? -->
 
 
 The process of creating a workspace includes setting up the *environment* to organize your workspace. An environment is space that can contain one or more workspaces. You can use an environment to manage your workspaces and connections to Customer Insights audience insights capability.
