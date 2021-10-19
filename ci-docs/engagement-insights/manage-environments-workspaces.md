@@ -113,7 +113,7 @@ For more information, see [Create a link between audience insights and engagemen
 To protect your customer's personal data, you can delete or export end-user identifiable data.
 
 
-<!-- editor's comment: On the following link, you have to scroll way down on the linked page to get to that topic. I thought I was on the wrong page at first. But I couldn't figure out how to link directly to the topic. --> 
+<!-- editor's comment: On the following link, you have to scroll way down on the linked page to get to that subject. I thought I was on the wrong page at first. But I couldn't figure out how to link directly to that subject. Maybe it would be helpful to say "For more information, see the section "Deleting and exporting event data containing end user identifiable information" in [Data Subject Rights (DSR) requests under GDPR](xxxxx).  --> 
 
 
 For more information, see [Delete and export event data containing personal information](delete-export-personal-data.md).
