@@ -765,6 +765,11 @@
       "source_path": "ci-docs/audience-insights/get-started-paid.md",
       "redirect_url": "/dynamics365/customer-insights/audience-insights/create-environment",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/supported-languages.md",
+      "redirect_url": "/dynamics365/customer-insights/audience-insights/system",
+      "redirect_document_id": false
     }
   ]
 }
