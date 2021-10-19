@@ -27,11 +27,13 @@ The **Home** page shows an overview of segments, measures, and enrichment data (
 
 4 - Specify personal settings for Customer Insights
 
-- The **Recent segments** section displays groups of customers based on demographic, behavioral, or transactional attributes that you've defined. [Creating segments](segments.md) helps you to group your customer base and better target your business activities.
+5 - View the following sections in the home page:
 
-- The **Recent measures** section shows tiles with [key performance indicators (KPIs)](measures.md) that you've defined. For example, average likelihood of a customer to churn or the average online spend per customer.
+- **Recent segments** shows groups of customers based on demographic, behavioral, or transactional attributes that you've defined. [Creating segments](segments.md) helps you to group your customer base and better target your business activities.
 
-- The **Recent enrichments** section lists the results of the enrichment runs that completed recently. [Enrichments](enrichment-hub.md) add information about your customer base. For example, by understanding the interests and brands that they have affinity for.
+- **Recent measures** shows tiles with [key performance indicators (KPIs)](measures.md) that you've defined. For example, average likelihood of a customer to churn or the average online spend per customer.
+
+- **Recent enrichments** lists results of the enrichment runs that completed recently. [Enrichments](enrichment-hub.md) add information about your customer base. For example, by understanding the interests and brands that they have affinity for.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
