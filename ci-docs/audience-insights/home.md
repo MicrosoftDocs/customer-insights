@@ -1,7 +1,7 @@
 ---
 title: "Home page in audience insights"
 description: "Start exploring the app on the Home page."
-ms.date: 09/30/2021
+ms.date: 10/19/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -27,7 +27,7 @@ The **Home** page shows an overview of segments, measures, and enrichment data (
 
 4 - Specify personal settings for Customer Insights
 
-5 - View the following sections in the home page:
+Now you can view the following sections in the home page:
 
 - **Recent segments** shows groups of customers based on demographic, behavioral, or transactional attributes that you've defined. [Creating segments](segments.md) helps you to group your customer base and better target your business activities.
 
