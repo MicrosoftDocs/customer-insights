@@ -19,7 +19,7 @@ ms.manager: shellyha
 
 This topic discusses how to manage workspaces and environments once they've already been created. 
 
-- A *workspace* is a space to store and manage events and reports. It’s where you can view user activity in real time. When you create a workspace, you select the type of data to send to the workspace. Currently, web data and mobile apps are supported. For more information, see [Create a workspace and add members](create-workspace.md).
+- A *workspace* is a space to store and manage events and reports. It’s where you can view user activity in real time. When you create a workspace, you select the type of data to send to the workspace. Currently, web data and mobile apps are supported. For more information, see [Create a new workspace and add members](create-workspace.md).
 
 - An *environment* is a space where you manage your workspaces and connections. For more information, see [Create a new environment](create-new-environment.md).
 
@@ -42,7 +42,7 @@ You can maintain multiple workspaces concurrently in an environment. Your [role]
 
 ### Delete a workspace
 
-Deleting a workspace will permanently remove all of its content, data, settings, and permissions. It can't be undone.
+Deleting a workspace permanently removes all of its content, data, settings, and permissions. It can't be undone.
 
 1. Go to **Admin** > **Workspace** and select **Settings**.
 
@@ -66,11 +66,21 @@ As an environment admin, you can access an environment from the left navigation 
 
 :::image type="content" source="media/environment-edit.png" alt-text="Environment admin center.":::
 
+
+
+<!-- editor's comment: Suggest changing the following heading to "Edit an environment name" to follow the pattern set above with workspaces. -->
+
+
 ### Rename an environment
 
 1. Go to **Admin** > **Environment** and select **Settings**.
 
 1. Update the **Environment name** and select **Save** to apply your changes.
+
+
+
+<!-- editor's comment: Switch the order of Manage and Delete to be consistent with the order of the workspace procedures above. -->
+
 
 ### Manage environment members
 
@@ -101,6 +111,10 @@ For more information, see [Create a link between audience insights and engagemen
 ## Manage personal data
 
 To protect your customer's personal data, you can delete or export end-user identifiable data.
+
+
+<!-- editor's comment: On the following link, you have to scroll way down on the linked page to get to that topic. I thought I was on the wrong page at first. But I couldn't figure out how to link directly to the topic. --> 
+
 
 For more information, see [Delete and export event data containing personal information](delete-export-personal-data.md).
 
