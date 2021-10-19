@@ -4,7 +4,7 @@ description: Learn how to personalize and run the Android SDK
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 09/15/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
@@ -42,7 +42,7 @@ Begin the process by selecting a workspace, selecting the Android mobile platfor
 ## Configure the SDK
 
 Once you download the SDK, you can work with it in Android Studio to enable and define events. There are two ways to do so:
-### Option 1: Using JitPack (recommended)
+### Option 1: Use JitPack (recommended)
 1. Add the JitPack repository to your root `build.gradle`:
     ```gradle
     allprojects {
@@ -61,7 +61,7 @@ Once you download the SDK, you can work with it in Android Studio to enable and 
     }
     ```
 
-### Option 2: Using download link
+### Option 2: Use download link
 1. Download the [engagement insights Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), and place the `eiandroidsdk-debug.aar` file in the `libs` folder.
 
 1. Open your project level `build.gradle` file and add the following snippets:
@@ -112,14 +112,18 @@ Once you download the SDK, you can work with it in Android Studio to enable and 
    </application>
    ```
 
-1. Enable or disable autocapture of `View` events by setting the above `autoCapture` field to `true` or `false`. **Currently `Action` events need to be added manually.**
+1. Enable or disable autocapture of `View` events by setting the above `autoCapture` field to `true` or `false`. 
 
-1. (Optional) Other configurations include setting the endpoint collector URL. They can be added under the ingestion key metadata in `AndroidManifest.xml`:
-    ```xml
+   >[!NOTE]
+   >`Action` events need to be added manually.
+
+1. (Optional) Other configurations include setting the endpoint collector URL. They can be added under the ingestion key metadata in `AndroidManifest.xml`.
+
+   ```xml
         <meta-data
             android:name="com.microsoft.engagementinsights.endpointUrl"
             android:value="https://some-endpoint-url.com" />
-    ```
+   ```
 
 ## Implement custom events
 
