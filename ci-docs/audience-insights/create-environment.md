@@ -41,7 +41,7 @@ In the **Basic information** step, choose whether you want to create an environm
 
 Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
-   - **Choose you business**: Choose the primary audience for the new environment. You can work with individual customers (B2C) or [business accounts](work-with-business-accounts.md) (B2B).
+   - **Choose your business**: Choose the primary audience for the new environment. You can work with individual customers (B2C) or [business accounts](work-with-business-accounts.md) (B2B).
    - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
    - **Region**: The region into which the service is deployed and hosted.
 
@@ -49,7 +49,7 @@ Provide the following details:
 
 In the **Data storage** step, choose where to store the data from audience insights.
 
-You'll have two options: **Customer Insights storage** (an Azure Data Lake managed by the Customer Insights team) and **Azure Data Lake Storage** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
+You'll have two options: **Customer Insights storage** (an Azure data lake managed by the Customer Insights team) and **Azure Data Lake Storage** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
 
 :::image type="content" source="media/data-storage-environment.png" alt-text="Choose the Azure Data Lake Storage to store your audience insights data in.":::
 
@@ -61,7 +61,7 @@ By saving data to Azure Data Lake Storage, you agree that data will be transferr
 > - Azure Data Lake Storage accounts from the same Azure region that you selected when creating the environment.
 > - Azure Data Lake Storage accounts that have *hierarchical namespace* enabled.
 
-For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). The **Container** name will be `customerinsights` and can't be changed.
+For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using an Azure service principal](connect-service-principal.md). The **Container** name will be `customerinsights` and can't be changed.
 
 When system processes such as data ingestion is complete, the system creates corresponding folders in the storage account you specified. Data files and *model.json* files are created and added to folders based on the process name.
 
@@ -71,14 +71,14 @@ If you create multiple environments of Customer Insights and choose to save the 
    
 The **Microsoft Dataverse** step lets you connect Customer Insights with your Dataverse environment.
 
-To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsoft Dataverse environment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Dataverse Managed Data Lake.
+To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsoft Dataverse environment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Dataverse-managed data lake.
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
 > [!NOTE]
 > Customer Insights does not support the following data sharing scenarios:
-> - If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Microsoft Dataverse Managed Data Lake.
-> - If you enable data sharing with a Microsoft Dataverse Managed Data Lake, you won't be able to [create predicted or missing values in an entity](predictions.md).
+> - If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Dataverse-managed data lake.
+> - If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
 
 ### Step 4: Finalize the settings
 
@@ -88,10 +88,10 @@ You can also change most of the settings later. For more information, see [Manag
 
 ## Work with your new environment
 
-Review the following articles to help you getting started with configuring Customer Insights. 
+Review the following articles to help you get started with configuring Customer Insights: 
 
 - [Add more users and assign permissions](permissions.md).
 - [Ingest your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
 - [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).
-- [Create segments](segments.md) to group customers and [measures](measures.md) review KPIs.
+- [Create segments](segments.md) to group customers and [measures](measures.md) to review KPIs.
 - [Set up connections](connections.md) and [exports](export-destinations.md) to process subsets of your data in other applications.

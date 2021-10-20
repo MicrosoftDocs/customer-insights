@@ -25,7 +25,7 @@ An environment is a space where you manage your workspaces and connections. How 
 
 ## Create a new environment
 
-1. On the right side of the main banner, select the environment picker, and then **+New**.
+1. On the right side of the main banner, select the environment picker, and then **+ New**.
 
    :::image type="content" source="media/environment-picker.png" alt-text="Select the environment picker.":::
 
@@ -35,13 +35,13 @@ An environment is a space where you manage your workspaces and connections. How 
 
 1. Choose the **Region** and select **Next**. 
 
-1. Type a **Workspace name**, which enables you to collect data for specific website or apps. For more information, see [Create a workspace](create-workspace.md).
+1. Type a **Workspace name**, which enables you to collect data for specific websites or apps. For more information, see [Create a workspace](create-workspace.md).
 
-1. Choose the **Workspace type** (Web or Mobile) that you want to create. 
+1. Choose the **Workspace type** (web or mobile) that you want to create. 
 
 1. Select **Show advanced settings** to enable or disable these optional settings:
 
-   - Toggle **Unknown to known** to "enabled" to associate web events with users who previously authenticated. For more information, see [Recognize web events from previously authenticated visitors](unknown-to-known.md)
+   - Toggle **Unknown to known** to "enabled" to associate web events with users who previously authenticated. For more information, see [Recognize web events from previously authenticated visitors](unknown-to-known.md).
    - Toggle **Filter bot traffic** to "enabled" to remove web traffic by bots for this workspace. 
 
 1. Select **Complete** when you're done. 
