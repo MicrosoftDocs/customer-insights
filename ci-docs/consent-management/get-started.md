@@ -21,7 +21,7 @@ The consent management capability of Dynamics 365 Customer Insights enables orga
 
 You have to be an [administrator in audience insights](../audience-insights/permissions.md) to work with the consent management capability.
 
-Select **Go to Consent Center** from the **Home** page of audience insights. It might take a moment to get the Consent Center ready if it's the first time you visit. Review the terms of service before you continue.
+Select **Go to Consent Center** from the **Home** page of audience insights. It might take a moment to get the Consent Center ready if it's the first time you visit. Review the terms of service before you continue. You'll start on the home page of the Consent Center. This page gives an overview of the key features and links to related documentation.
 
 :::image type="content" source="media/consent-center-cta.png" alt-text="Lunch the Consent Center from th audience insights home page.":::
 
