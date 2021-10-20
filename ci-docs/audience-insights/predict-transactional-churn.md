@@ -72,7 +72,7 @@ For environments based on business accounts, we can predict transactional churn 
         - **Event:** The name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
         - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
 - (Optional) Data about your customers:
-    - This data should only rarely, and should align toward more static attributes to ensure the model performs best.
+    - This data should align toward more static attributes to ensure the model performs best.
     - The semantic data schema for customer data includes:
         - **CustomerID:** A unique identifier for a customer.
         - **Created Date:** The date the customer was initially added.
