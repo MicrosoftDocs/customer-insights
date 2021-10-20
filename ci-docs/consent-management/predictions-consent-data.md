@@ -1,6 +1,6 @@
 ---
-title: "Configure the usage of customer data and consent preferences"
-description: "Create consent rules and configure the default consent rules."
+title: "Consent data in out-of-box predictions"
+description: "Learn how to create prediction models that use consent data."
 ms.date: 10/30/2021
 ms.service: customer-insights
 ms.topic: how-to
