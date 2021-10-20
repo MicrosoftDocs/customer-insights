@@ -1,7 +1,7 @@
 ---
 title: Transaction churn prediction
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 10/11/2021
+ms.date: 10/20/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -23,6 +23,32 @@ For environments based on business accounts, we can predict transactional churn 
 > Try the tutorial for a transaction churn prediction using sample data: [Transaction churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
 
 ## Prerequisites
+
+# [Individual customers (B2C)](#tab/b2c)
+
+- At least [Contributor permissions](permissions.md) in Customer Insights.
+- Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
+- Data about your transactions/purchases and their history:
+    - Transaction identifiers to distinguish purchases/transactions.
+    - Customer identifiers to match transactions to your customers.
+    - Transaction event dates, which define the dates the transaction occurred on.
+    - The semantic data schema for purchases/transactions requires the following information:
+        - **Transaction ID**: A unique identifier of a purchase or transaction.
+        - **Transaction Date**: The date of the purchase or transaction.
+        - **Value of the transaction**: The currency/numerical value amount of the transaction/item.
+        - (Optional) **Unique product ID**: The ID of the product or service purchased if your data is at a line item level.
+        - (Optional) **Whether this transaction was a return**: A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we will also use this information to infer a return.
+- (Optional) Data about customer activities:
+    - Activity identifiers to distinguish activities of the same type.
+    - Customer identifiers to map activities to your customers.
+    - Activity information containing the name and date of the activity.
+    - The semantic data schema for customer activities includes:
+        - **Primary key:** A unique identifier for an activity. For example, a website visit or a usage record showing the customer tried a sample of your product.
+        - **Timestamp:** The date and time of the event identified by the primary key.
+        - **Event:** The name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
+        - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
+
+# [Business accounts (B2B)](#tab/b2b)
 
 - At least [Contributor permissions](permissions.md) in Customer Insights.
 - Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
@@ -54,6 +80,9 @@ For environments based on business accounts, we can predict transactional churn 
         - **Country:** The country of a customer.
         - **Industry:** The industry type of a customer. For example, a field called "Industry" in a coffee roaster might indicate if the customer was retail.
         - **Classification:** The categorization of a customer for your business. For example, a field called "ValueSegment" in a coffee roaster might be the tier of customer based on the customer size.
+
+---
+
 - Suggested data characteristics:
     - Sufficient historical data: Transaction data for at least double the selected time window. Preferably, two to three years of transaction history. 
     - Multiple purchases per customer: Ideally at least two transactions per customer.
@@ -109,6 +138,40 @@ For environments based on business accounts, we can predict transactional churn 
 
 1. Select **Next**.
 
+# [Individual customers (B2C)](#tab/b2c)
+
+### Add additional data (optional)
+
+Configure the relationship from your customer activity entity to the *Customer* entity.
+
+1. Select the field that identifies the customer in the customer activity table. It can be directly related to the primary customer ID of your *Customer* entity.
+
+1. Select the entity that is your primary *Customer* entity.
+
+1. Enter a name that describes the relationship.
+
+#### Customer activities
+
+1. Optionally, select **Add data** for **Customer activities**.
+
+1. Select the semantic activity type that contains the data you would like to use, then select one or more activities in the **Activities** section.
+
+1. Select an activity type that matches to the type of customer activity you're configuring. Select **Create new** and choose an available activity type or create a new type.
+
+1. Select **Next**, then **Save**.
+
+1. If you have any other customer activities you would like to include, repeat the steps above.
+
+#### Customers data
+
+1. Optionally, select **Add data** for **Customers data**.
+
+1. Map the semantic attributes to fields in your own customer data as identified. The data in the fields used should not change often to ensure the model's best performance. For example, selecting a field for "Classification" that changed every month would only have the last value used in the prediction, even though historically the same value might not apply to the customer when building the prediction patterns.
+
+1. Select **Next**.
+
+# [Business accounts (B2B)](#tab/b2b)
+
 ### Select prediction level
 
 Most predictions are created at the customer level. In some situations, that may not be granular enough to address your business needs. You can use this feature to predict churn for a branch of a customer, for example, rather than for the customer as a whole.
@@ -154,7 +217,7 @@ Configure the relationship from your customer activity entity to the *Customer* 
 
 1. Select **Next**.
 
-### Provide an optional list of benchmark accounts (business accounts only)
+### Provide an optional list of benchmark accounts
 
 Add a list of your business customers and accounts that you want to use as benchmarks. You'll get [details for these benchmark accounts](#review-a-prediction-status-and-results) including their churn score and most influential features that impacted their churn prediction.
 
@@ -163,6 +226,8 @@ Add a list of your business customers and accounts that you want to use as bench
 1. Choose the customers that act as a benchmark.
 
 1. Select **Next** to continue.
+
+---
 
 ### Set schedule and review configuration
 
