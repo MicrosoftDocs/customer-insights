@@ -21,7 +21,7 @@ Customer profiles that match the filters of a segment definition are referred as
 
 There are multiple ways to create a new segment: 
 
-# [Individual consumers (B2C)](#tab/b2c)
+# [Individual consumers (B-to-C)](#tab/b2c)
 
 - Complex segment with segment builder: [Build our own](segment-builder.md#create-a-new-segment) 
 - Simple segments with one operator: [Quick segment](segment-builder.md#quick-segments) 

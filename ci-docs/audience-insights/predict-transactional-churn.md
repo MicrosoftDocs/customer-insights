@@ -24,7 +24,7 @@ For environments based on business accounts, we can predict transactional churn 
 
 ## Prerequisites
 
-# [Individual consumers (B2C)](#tab/b2c)
+# [Individual consumers (B-to-C)](#tab/b2c)
 
 - At least [Contributor permissions](permissions.md) in Customer Insights.
 - Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
@@ -138,7 +138,7 @@ For environments based on business accounts, we can predict transactional churn 
 
 1. Select **Next**.
 
-# [Individual consumers (B2C)](#tab/b2c)
+# [Individual consumers (B-to-C)](#tab/b2c)
 
 ### Add additional data (optional)
 

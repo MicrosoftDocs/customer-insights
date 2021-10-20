@@ -13,7 +13,7 @@ manager: shellyha
 
 # Work with business accounts in audience insights
 
-The audience insights capability in Dynamics 365 Customer Insights lets you configure your environment for different primary target audiences: individual consumers (B2C) and business accounts (B-to-B). In B2C scenarios, the data is centered around individuals. For B-to-B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in audience insights, depending on your environment focus. For more information about differences, review the docs of the feature areas. 
+The audience insights capability in Dynamics 365 Customer Insights lets you configure your environment for different primary target audiences: individual consumers (B-to-C) and business accounts (B-to-B). In B-to-C scenarios, the data is centered around individuals. For B-to-B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in audience insights, depending on your environment focus. For more information about differences, review the docs of the feature areas. 
 
 ## Create an environment for business accounts
 

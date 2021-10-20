@@ -24,7 +24,7 @@ You need to have Contributor or Administrator permissions to create or edit enri
 
 On the **Discover** tab, you'll find all supported enrichment options.
 
-# [Individual consumers (B2C)](#tab/b2c)
+# [Individual consumers (B-to-C)](#tab/b2c)
 
 - [Brands](enrichment-microsoft.md) provided by Microsoft
 - [Interests](enrichment-microsoft.md) provided by Microsoft

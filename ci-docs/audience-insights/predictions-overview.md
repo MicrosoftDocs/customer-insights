@@ -20,7 +20,7 @@ Dynamics 365 Customer Insights comes with a variety of options that leverage AI 
 
 The easiest way to start with predicting data are predefined models, often referred to as out-of-box models. They only require certain data and structure to generate insights quickly. Currently, the following models are available: 
 
-# [Individual consumers (B2C)](#tab/b2c)
+# [Individual consumers (B-to-C)](#tab/b2c)
 
 - [Customer lifetime value](predict-customer-lifetime-value.md): Predicts the potential revenue of a customer throughout the entire interaction with a business.
 - [Product recommendation](predict-product-recommendation.md): Suggests sets of predictive product recommendations based on purchase behavior and customers with similar purchase patterns.
