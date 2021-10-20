@@ -49,15 +49,7 @@ Provide the following details:
 
 In the **Data storage** step, choose where to store the data from audience insights.
 
-
-
-<!-- editor's comment: Although I'm not 100 percent certain, I think "data lake" as used in the first paragraph would be lowercase because it's something created with Azure Data Lake Storage. -->
-
 You'll have two options: **Customer Insights storage** (an Azure data lake managed by the Customer Insights team) and **Azure Data Lake Storage** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
-
-
-<!-- editor's comment: I'm wondering about the UI in the screenshot. The sentence below "Data storage" should be "Azure Data Lake Storage for your high-performance audience insights workloads." But if that's how the UI is, I guess we go with that. -->
-
 
 :::image type="content" source="media/data-storage-environment.png" alt-text="Choose the Azure Data Lake Storage to store your audience insights data in.":::
 
@@ -79,18 +71,14 @@ If you create multiple environments of Customer Insights and choose to save the 
    
 The **Microsoft Dataverse** step lets you connect Customer Insights with your Dataverse environment.
 
-
-<!-- editor's comment: In line 86 and again in lines 93 and 93, is "Dataverse Managed Data Lake" the name of a product, or should it be "Dataverse-managed data lake"? -->  
-
-
-To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsoft Dataverse environment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Dataverse Managed Data Lake.
+To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsoft Dataverse environment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Dataverse-managed data lake.
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
 > [!NOTE]
 > Customer Insights does not support the following data sharing scenarios:
-> - If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Microsoft Dataverse Managed Data Lake.
-> - If you enable data sharing with a Microsoft Dataverse Managed Data Lake, you won't be able to [create predicted or missing values in an entity](predictions.md).
+> - If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Dataverse-managed data lake.
+> - If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
 
 ### Step 4: Finalize the settings
 
@@ -102,10 +90,8 @@ You can also change most of the settings later. For more information, see [Manag
 
 Review the following articles to help you get started with configuring Customer Insights: 
 
-In line 110, should it be "measures to review"? -->
-
 - [Add more users and assign permissions](permissions.md).
 - [Ingest your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
 - [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).
-- [Create segments](segments.md) to group customers and [measures](measures.md) review KPIs.
+- [Create segments](segments.md) to group customers and [measures](measures.md) to review KPIs.
 - [Set up connections](connections.md) and [exports](export-destinations.md) to process subsets of your data in other applications.

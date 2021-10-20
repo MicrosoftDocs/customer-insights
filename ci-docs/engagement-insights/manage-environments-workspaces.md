@@ -66,29 +66,11 @@ As an environment admin, you can access an environment from the left navigation 
 
 :::image type="content" source="media/environment-edit.png" alt-text="Environment admin center.":::
 
-
-
-<!-- editor's comment: Suggest changing the following heading to "Edit an environment name" to follow the pattern set above with workspaces. -->
-
-
-### Rename an environment
+### Edit an environment name
 
 1. Go to **Admin** > **Environment** and select **Settings**.
 
 1. Update the **Environment name** and select **Save** to apply your changes.
-
-
-
-<!-- editor's comment: Switch the order of Manage and Delete to be consistent with the order of the workspace procedures above. -->
-
-
-### Manage environment members
-
-1. Go to **Admin** > **Environment** and select **Members**.
-
-1. Select **Add members** to update members and [assign roles](user-roles.md). Currently, only **Environment admin** is available.
-
-1. Select **Add members** to add them to your environment.
 
 ### Delete an environment
 
@@ -102,6 +84,14 @@ Environment admins can delete environments. Before you can delete an environment
 
 1. Select **Delete** to permanently delete the environment.
 
+### Manage environment members
+
+1. Go to **Admin** > **Environment** and select **Members**.
+
+1. Select **Add members** to update members and [assign roles](user-roles.md). Currently, only **Environment admin** is available.
+
+1. Select **Add members** to add them to your environment.
+
 ## Manage connections
 
 Establishing connections to audience insights lets you see reports in engagement insights based on unified customer profiles. 
@@ -112,11 +102,6 @@ For more information, see [Create a link between audience insights and engagemen
 
 To protect your customer's personal data, you can delete or export end-user identifiable data.
 
-
-<!-- editor's comment: On the following link, you have to scroll way down on the linked page to get to that subject. I thought I was on the wrong page at first. But I couldn't figure out how to link directly to that subject. Maybe it would be helpful to say "For more information, see the section "Deleting and exporting event data containing end user identifiable information" in [Data Subject Rights (DSR) requests under GDPR](xxxxx).  --> 
-
-
-For more information, see [Delete and export event data containing personal information](delete-export-personal-data.md).
-
+For more information, see [Delete and export event data containing personal information](../dsr-rights-requests.md#deleting-and-exporting-event-data-containing-end-user-identifiable-information).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

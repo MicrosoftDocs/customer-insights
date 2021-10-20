@@ -21,17 +21,9 @@ When you create a workspace, you select the type of data that you want to focus 
 
 ## Create a new workspace
 
+The process of creating a workspace includes setting up the *environment* to organize your workspace. An environment is space that can contain one or more workspaces. You can use an environment to manage your workspaces and connections to the audience insights capability.
 
-<!-- editor's question: Is audience insights (second sentence below) a single capability, or is it abilities? -->
-
-
-The process of creating a workspace includes setting up the *environment* to organize your workspace. An environment is space that can contain one or more workspaces. You can use an environment to manage your workspaces and connections to Customer Insights audience insights capability.
-
-
-<!-- editor's comment: Other topics in this edit task have used "+ New" in the procedures. Do you want to add the plus here? Seems like the plus isn't needed here or in the other topics and "New" is clear enough. We usually follow the UI, but the style guide isn't clear on this particular use. --> 
-
-
-1. Select **New** from the workspace switcher.
+1. Select **+New** from the workspace switcher.
 
    :::image type="content" source="media/new-workspace.png" alt-text="Customer Insights page with callout on navigation pane and description.":::
 
