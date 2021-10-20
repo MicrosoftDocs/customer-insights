@@ -41,7 +41,7 @@ In the **Basic information** step, choose whether you want to create an environm
 
 Provide the following details:
    - **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
-   - **Choose you business**: Choose the primary audience for the new environment. You can work with individual customers (B2C) or [business accounts](work-with-business-accounts.md) (B2B).
+   - **Choose you business**: Choose the primary audience for the new environment. You can work with individual consumers (B2C) or [business accounts](work-with-business-accounts.md) (B-to-B).
    - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
    - **Region**: The region into which the service is deployed and hosted.
 

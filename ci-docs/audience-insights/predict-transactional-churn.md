@@ -24,7 +24,7 @@ For environments based on business accounts, we can predict transactional churn 
 
 ## Prerequisites
 
-# [Individual customers (B2C)](#tab/b2c)
+# [Individual consumers (B2C)](#tab/b2c)
 
 - At least [Contributor permissions](permissions.md) in Customer Insights.
 - Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
@@ -48,7 +48,7 @@ For environments based on business accounts, we can predict transactional churn 
         - **Event:** The name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
         - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
 
-# [Business accounts (B2B)](#tab/b2b)
+# [Business accounts (B-to-B)](#tab/b2b)
 
 - At least [Contributor permissions](permissions.md) in Customer Insights.
 - Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
@@ -138,7 +138,7 @@ For environments based on business accounts, we can predict transactional churn 
 
 1. Select **Next**.
 
-# [Individual customers (B2C)](#tab/b2c)
+# [Individual consumers (B2C)](#tab/b2c)
 
 ### Add additional data (optional)
 
@@ -170,7 +170,7 @@ Configure the relationship from your customer activity entity to the *Customer* 
 
 1. Select **Next**.
 
-# [Business accounts (B2B)](#tab/b2b)
+# [Business accounts (B-to-B)](#tab/b2b)
 
 ### Select prediction level
 
