@@ -262,6 +262,25 @@ Add a list of your business customers and accounts that you want to use as bench
 
    :::image type="content" source="media/model-subs-view.PNG" alt-text="View control to see results of a prediction.":::
 
+# [Individual consumers (B-to-C)](#tab/b2c)
+
+1. There are three primary sections of data within the results page:
+   - **Training model performance**: A, B, or C are possible scores. This score indicates the performance of the prediction and can help you make the decision to use the results stored in the output entity. Scores are determined based on the following rules: 
+        - **A** when the model accurately predicted at least 50% of the total predictions, and when the percentage of accurate predictions for customers who churned is greater than the baseline rate by at least 10%.
+            
+        - **B** when the model accurately predicted at least 50% of the total predictions, and when the percentage of accurate predictions for customers who churned is up to 10% greater than the baseline.
+            
+        - **C** when the model accurately predicted less 50% of the total predictions, or when the percentage of accurate predictions for customers who churned is less than the baseline.
+               
+        - **Baseline** takes the prediction time window input for the model (for example, one year), and the model creates different fractions of time by dividing it by 2 until it reaches one month or less. It uses these fractions to create a business rule for customers who have not purchased in this time frame. These customers are considered as churned. The time-based business rule with the highest ability to predict who is likely to churn is chosen as baseline model.
+            
+    - **Likelihood to churn (number of customers)**: Groups of customers based on their predicted risk of churn. This data can help you later if you want to create a segment of customers with high churn risk. Such segments help to understand where your cutoff should be for segment membership.
+       
+    - **Most influential factors**: There are many factors that are taken into account when creating your prediction. Each of the factors has its importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results, or you can use this information later to [create segments](segments.md) that could help influence churn risk for customers.
+
+
+# [Business accounts (B-to-B)](#tab/b2b)
+
 1. There are three primary sections of data within the results page:
    - **Training model performance**: A, B, or C are possible scores. This score indicates the performance of the prediction and can help you make the decision to use the results stored in the output entity. Scores are determined based on the following rules: 
         - **A** when the model accurately predicted at least 50% of the total predictions, and when the percentage of accurate predictions for customers who churned is greater than the baseline rate by at least 10%.
@@ -297,6 +316,8 @@ Add a list of your business customers and accounts that you want to use as bench
        When you predict churn at the account level, all accounts are considered in deriving the average feature values for churn segments. For churn predictions at the secondary level for every account, the derivation of churn segments depends on the secondary level of the item selected in the side pane. For example, if an item has a secondary level of product category = office supplies, then only the items having office supplies as the product category are considered when deriving the average feature values for churn segments. This logic is applied to ensure a fair comparison of the item's feature values with the average values across low, medium, and high churn segments.
 
        In some cases, the average value of low, medium, or high churn segments is empty or not available because there are no items that belong to the corresponding churn segments based on the above definition.
+
+---
 
 ## Manage predictions
 
