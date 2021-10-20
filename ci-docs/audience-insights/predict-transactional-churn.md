@@ -162,14 +162,6 @@ Configure the relationship from your customer activity entity to the *Customer* 
 
 1. If you have any other customer activities you would like to include, repeat the steps above.
 
-#### Customers data
-
-1. Optionally, select **Add data** for **Customers data**.
-
-1. Map the semantic attributes to fields in your own customer data as identified. The data in the fields used should not change often to ensure the model's best performance. For example, selecting a field for "Classification" that changed every month would only have the last value used in the prediction, even though historically the same value might not apply to the customer when building the prediction patterns.
-
-1. Select **Next**.
-
 # [Business accounts (B-to-B)](#tab/b2b)
 
 ### Select prediction level
@@ -180,9 +172,9 @@ Most predictions are created at the customer level. In some situations, that may
 
 1. Expand the entities you would like to choose the secondary level from, or use the search filter box to filter the selected options.
 
-1. Choose the attribute you would like used as a secondary level, then select **Add**
+1. Choose the attribute you would like used as a secondary level, then select **Add**.
 
-1. Select **Next**
+1. Select **Next**.
 
 > [!NOTE]
 > The entities available in this section are shown because they have a relationship to the entity you chose in the previous section. If you don't see the entity you want to add, ensure it has a valid relationship present in **Relationships**. Only one-to-one and many-to-one relationships are valid for this configuration.
