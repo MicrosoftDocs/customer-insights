@@ -386,6 +386,11 @@
           href: consent-management/system-settings.md
         - name: Manage users and permissions
           href: consent-management/manage-users.md
+
+    - name: Use consent data
+      items: 
+        - name: Create predictions with consent data
+          href: consent-management/predictions-consent-data.md
     
     - name: GDPR
       items: 
