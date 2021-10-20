@@ -232,6 +232,9 @@ Add a list of your business customers and accounts that you want to use as bench
        When you predict churn at the account level, all accounts are considered in deriving the average feature values for churn segments. For churn predictions at the secondary level for every account, the derivation of churn segments depends on the secondary level of the item selected in the side pane. For example, if an item has a secondary level of product category = office supplies, then only the items having office supplies as the product category are considered when deriving the average feature values for churn segments. This logic is applied to ensure a fair comparison of the item's feature values with the average values across low, medium, and high churn segments.
 
        In some cases, the average value of low, medium, or high churn segments is empty or not available because there are no items that belong to the corresponding churn segments based on the above definition.
+       
+       > [!NOTE]
+       > The interpretation of values under the average low, medium and high columns is different for categorical features like country, industry, etc. Since the notion of "average" feature value does not apply to categorical features, the values displayed under the average low, medium and high churn columns highlight the proportion of customers in low, medium or high churn segments that have the same value of the categorical feature as compared to the item selected in the side panel.
 
 ## Manage predictions
 
