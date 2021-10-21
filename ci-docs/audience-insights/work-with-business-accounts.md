@@ -27,7 +27,7 @@ After unifying the data, [specify account hierarchies](relationships.md#set-up-a
 
 If your organization maintains environments for individual customers and business accounts, you can use the switcher in the left pane to choose the primary target audience.
 
-:::image type="content" source="media/switch-primary-target-audience.PNG" alt-text="Switcher to change the primary target audience between individual customers and business accounts.":::
+:::image type="content" source="media/switch-primary-target-audience.png" alt-text="Switcher to change the primary target audience between individual customers and business accounts.":::
 
 ## Supported feature areas
 
