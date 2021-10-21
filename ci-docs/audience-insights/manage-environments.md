@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 07/22/2021
+ms.date: 10/14/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -21,7 +21,7 @@ Select the **Environment** control in the upper-right corner of the page to chan
 
 :::image type="content" source="media/home-page-environment-switcher.png" alt-text="Screenshot of the control to switch environments.":::
 
-Administrators can [create](get-started-paid.md) and manage environments.
+Administrators can [create](create-environment.md) and manage environments.
 
 ## Edit an existing environment
 
@@ -31,23 +31,9 @@ You can edit some of the details of existing environments.
 
 2.	Select the **Edit** icon.
 
-3. In the **Edit environment** box, you can update the environment's **Display name**, but you can't change the **Region** or **Type**.
+3. In the **Edit environment** box, you can update the environment settings.
 
-4. If an environment is configured to store data in Azure Data Lake Storage, you can update the **Account key**. However, you can't change the **Account name** or **Container** name.
-
-5. Optionally, you can update from an account key-based connection to a resource-based or subscription-based connection. Once upgraded, you cannot revert to account key after the update. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
-
-6. Optionally, you can provide a Microsoft Dataverse environment URL under **Configure data sharing with Microsoft Dataverse and enable additional capabilities**. These capabilities include data sharing with applications and solutions based on Microsoft Dataverse, data ingestion from on-premises data sources, or the use [predictions](predictions.md). Select **Enable data sharing** to share Customer Insights output data with a Microsoft Dataverse Managed Data lake.
-
-   > [!NOTE]
-   > - Data sharing with Microsoft Dataverse Managed Data Lake is currently not supported when you save all data to your own Azure Data Lake Storage.
-   > - [Prediction of missing values in an entity](predictions.md) and PowerBI Embedded reports in audience insights (if enabled on your environment) are currently not supported when you enable data sharing with Microsoft Dataverse managed data lake.
-
-   After enabling data sharing with Microsoft Dataverse, a full refresh of your data sources and other processes starts. If processes are currently running, you don't see the option to enable data sharing with Microsoft Dataverse. Wait for those processes to complete or cancel them to enable data sharing. 
-   
-   :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
-   
-   When you run processes, such as data ingestion or segment creation, corresponding folders will be created in the storage account you specified above. Data files and model.json files will be created and added to the respective subfolders, depending on the process you run.
+For more information on environment settings, see [Create a new environment](create-environment.md).
 
 ## Copy the environment configuration
 
@@ -76,7 +62,8 @@ The following data is *not* copied:
 
 - Customer profiles.
 - Data source credentials. You'll have to provide the credentials for every data source and refresh the data sources manually.
-- Data sources from Common Data Model folder and Dataverse managed Data Lake. You'll have to create those data sources manually with the same name as in the source environment.
+
+- Data sources from the Common Data Model folder and Dataverse-managed data lake. You'll have to create those data sources manually with the same name as in the source environment.
 
 When you copy an environment, you'll see a confirmation message that the new environment has been created. Select **Go to data sources** to see the list of data sources.
 

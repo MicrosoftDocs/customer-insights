@@ -1,7 +1,7 @@
 ---
 title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -22,16 +22,26 @@ In audience insights, go to **Data** > **Enrichment** to work with enrichment op
 
 You need to have Contributor or Administrator permissions to create or edit enrichments. For more information, see [Permissions](permissions.md).
 
-On the **Discover** tab, you'll find the following enrichments:
+On the **Discover** tab, you'll find all supported enrichment options.
 
-- [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
+# [Individual consumers (B-to-C)](#tab/b2c)
+
 - [Brands](enrichment-microsoft.md) provided by Microsoft
 - [Interests](enrichment-microsoft.md) provided by Microsoft
-- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
-- [Company data](enrichment-leadspace.md) provided by Leadspace
+- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft 
 - [Demographics](enrichment-experian.md) provided by Experian
-- [Location data](enrichment-here.md) provided by HERE Technologies
-- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
+- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
+- [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
+
+# [Business accounts (B-to-B)](#tab/b2b)
+
+- [Company data](enrichment-leadspace.md) provided by Leadspace
+- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft 
+- [Location data](enrichment-here.md) provided by HERE Technologies 
+- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
+- [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
+
+---
 
 On the **My enrichments** tab, you can see the enrichments you've configured and edit their properties.
 
@@ -53,7 +63,7 @@ Run or deactivate multiple enrichments at once by selecting them in the list. Vi
 
 ## Enrichments and connections
 
-Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connection can be used by administrators and contributors to configure enrichments.  
+Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections can be used by administrators and contributors to configure enrichments.  
 
 ## Multiple enrichments of the same type
 

@@ -1,6 +1,6 @@
 ---
 title: "Match entities for data unification"
-description: "Match entities to create unified customer profiles."
+description: "Match entities to combine datasets and create unified customer profiles."
 ms.date: 02/23/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,6 +9,8 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-match
 ---
 
 # Match entities

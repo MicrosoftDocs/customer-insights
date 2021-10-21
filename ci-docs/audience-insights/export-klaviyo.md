@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Klaviyo"
 description: "Learn how to configure the connection and export to Klaviyo."
-ms.date: 08/13/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -23,10 +23,10 @@ Export segments of unified customer profiles to Klaviyo and use them for marketi
 
 ## Known limitations
 
-- You can export up to 100'000 profiles per export to Klaviyo.
+- You can export up to 100'000 customer profiles per export to Klaviyo.
 - Exporting to Klaviyo is limited to segments.
-- Exporting up to 1 million profiles to Klaviyo can take up to 20 minutes to complete. 
-- The number of profiles that you can export to Klaviyo is dependent and limited on your contract with Klaviyo.
+- Exporting up to 1 million customer profiles to Klaviyo can take up to 20 minutes to complete. 
+- The number of customer profiles that you can export to Klaviyo is dependent and limited on your contract with Klaviyo.
 
 ## Set up connection to Klaviyo
 
@@ -62,7 +62,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Enter your [**Klaviyo List ID**](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).     
 
-3. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Klaviyo.
+3. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Klaviyo.
 
 1. Select **Save**.
 

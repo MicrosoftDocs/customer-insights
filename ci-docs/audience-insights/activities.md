@@ -1,7 +1,7 @@
 ---
 title: "Customer activities"
 description: "Define customer activities and view them in a timeline on customer profiles." 
-ms.date: 09/12/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -19,8 +19,7 @@ Combine customer activities from [various data sources](data-sources.md) in Dyna
 
 Your data sources can include entities with transactional and activity data from multiple data sources. Identify these entities and select the activities you want to view on the customer's timeline. Choose the entity that includes your target activity or activities.
 
-> [!NOTE]
-> An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields. The **Add activity** control is disabled if no such entity is found.
+An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields. The **Add activity** control is disabled if no such entity is found.
 
 1. In audience insights, go to **Data** > **Activities**.
 
@@ -36,13 +35,16 @@ Your data sources can include entities with transactional and activity data from
 
 1. Select **Next** to go to the next step.
 
-1. In the **Relationship** step, configure the details to connect your activity data to its corresponding customer. This step visualizes the connection between entities.  
+1. In the **Relationship** step, configure the details to connect your activity data to its corresponding customer record. This step visualizes the connection between entities.  
 
    - **First**: Foreign field in your activity entity that will be used to establish a relationship with another entity.
    - **Second**: Corresponding source customer entity with which your activity entity will be in relationship. You can only relate to source customer entities that are used in the data unification process.
    - **Third**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
+
+   > [!TIP]
+   > In B-to-B environments, you can select between account entities and other entities. If you select an account entity, the relationship path is automatically set. For other entities, you have to define the relationship path over one or more intermediate entities until you reach an account entity.
 
 1. Select **Next** to go to the next step. 
 
@@ -90,5 +92,34 @@ The following actions are available when you select an activity.
 - **Rename**: Opens a dialog where you can enter a different name for the selected activity. Select **Save** to apply your changes.
 
 - **Delete**: Opens a dialog to confirm the deletion of the selected activity. You can also delete more than one activity at once by selecting the activities and then selecting the delete icon. Select **Delete** to confirm the deletion.
+
+## View activity timelines on customer profiles
+
+After you configured customer activities, select **Show in activity timeline** in the activity configuration to find all your customer's activities on their customer profile.
+
+To open the timeline for a customer, go to **Customers** and choose the customer profile that you want to view.
+
+If a customer has participated in an activity that you have configured, you'll find it in the **Activity timeline** section.
+
+:::image type="content" source="media/Activity_Timeline1.PNG" alt-text="View configured activities in Customer Profiles.":::
+
+There are several ways to filter activities in the activity timeline:
+
+- You can select one or many of the activity icons to refine your results to include the selected type(s) only.
+
+  :::image type="content" source="media/Activity_Timeline2.PNG" alt-text="Filter activities by type using the icons.":::
+
+- You can select **Filter** to open a filter panel to configure your timeline filters.
+
+   1. You can filter by *ActivityType* and *Date*
+   1. Select **Apply** to use the filters in the activity timeline.
+
+   :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="Use the filter panel to configure filter conditions.":::
+
+To remove filters, select the **x** next to each filter applied to the timeline or select **Clear filters**.
+
+
+> [!NOTE]
+> Activity filters are removed when you leave a customer profile. You have to apply them each time you open on a customer profile.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -33,7 +33,7 @@ Before your organization can use the predictions feature, the following prerequi
 
 2. Your audience insight environment is attached to your Dataverse instance.
 
-If you're [creating a new environment](get-started-paid.md), configure it in the **Create an environment** dialog and select **Advanced**. If you've already created an environment, go to its settings and select **Advanced**. Either way, in the **Use predictions** section, enter the Dataverse instance URL to which you want to attach your environment.
+For more information, see [Create a new environment](create-environment.md).
 
 ## Create a prediction in the Customer entity
 
