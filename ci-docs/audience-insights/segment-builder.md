@@ -18,7 +18,7 @@ Define complex filters around the unified customer entity and its related entiti
 > [!TIP]
 > - Quick segments are only supported in environments for **individual customers**.    
 > - Segments based on **individual customers** automatically include available contact information for segment members. In environments for **business accounts**, segments are based on accounts (companies or subsidiaries). To include contact information in a segment, use the **Project attributes** functionality in the segment builder.
-> - Ensure that the contact data sources are [semantically mapped to the ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) entity.
+>    - Ensure that the contact data sources are [semantically mapped to the ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) entity.
 
 ## Segment builder
 
