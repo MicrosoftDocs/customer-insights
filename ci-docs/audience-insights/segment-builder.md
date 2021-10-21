@@ -1,7 +1,7 @@
 ---
 title: "Create segments with the segment builder"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 09/07/2021
+ms.date: 10/18/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -18,6 +18,7 @@ Define complex filters around the unified customer entity and its related entiti
 > [!TIP]
 > - Quick segments are only supported in environments for **individual customers**.    
 > - Segments based on **individual customers** automatically include available contact information for segment members. In environments for **business accounts**, segments are based on accounts (companies or subsidiaries). To include contact information in a segment, use the **Project attributes** functionality in the segment builder.
+>    - Ensure that the contact data sources are [semantically mapped to the ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) entity.
 
 ## Segment builder
 
@@ -47,7 +48,7 @@ The example above illustrates the segmentation capability. We've defined a segme
 
 There are multiple ways to create a new segment. This section describes how to build your own segment from scratch. You can also create a *quick segment* based on existing entities or make use of machine learning models to get *suggested segments*. For more information, go to [Segments overview](segments.md).
 
-While creating a segment, you can save a draft. In the draft stage, a segment is saved as an inactive segment. When you complete the segment configuration, run it to activate the segment. Alternatively, you can ***Activate*** a segment from the **All segments** page.
+While creating a segment, you can save a draft. In the draft stage, a segment is saved as an inactive segment. When you complete the segment configuration, run it to activate the segment. You can also **Activate** a segment from the **All segments** page.
 
 1. Go to the **Segments** page.
 
@@ -82,17 +83,25 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
 
    When using the OR operator, all conditions must be based on entities included in the relationship path.
 
-   - You can create multiple rules to create different sets of customer records. You can combine groups to include the customers required for your business case. To create a new rule, select **Add rule**. Specifically, if you can't include and entity in a rule due to the specified relationship path, you have to create a new rule to choose attributes form it.
+   - You can create multiple rules to create different sets of customer records. You can combine groups to include the customers required for your business case. To create a new rule, select **Add rule**. Specifically, if you can't include and entity in a rule because of the specified relationship path, you have to create a new rule to choose attributes form it.
 
       :::image type="content" source="media/segment-rule-grouping.png" alt-text="Add a new rule to a segment and choose the set operator.":::
 
    - Select one of the set operators: **Union**, **Intersect**, or **Except**.
 
       - **Union** unites the two groups.
-      - **Intersect** overlaps the two groups. Only data that *is common* to both groups is retained in the unified group.
-      - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is retained.
+      - **Intersect** overlaps the two groups. Only data that *is common* to both groups remains in the unified group.
+      - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is kept.
 
-1. By default, segments generate the output entity containing all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity.  
+1. By default, segments generate the output entity containing all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity. 
+
+   > [!IMPORTANT]
+   > For segments based on business accounts, details of one or more contacts of each account from the *ContactProfile* entity needs to be included in the segment to allow that segment to be activated or exported to destinations that require contact information. For more information about the *ContactProfile* entity, see [Semantic mappings](semantic-mappings.md).
+   > A sample output for a segment based on business accounts with projected attributes of contacts could look like this: 
+   >
+   > |ID  |Account name  |Revenue  |Contact name  | Contact role|
+   > |---------|---------|---------|---------|---|
+   > |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, Procurement manager]
 
    :::image type="content" source="media/segments-project-attributes.png" alt-text="Example of projected attributes selected in the side pane to be added to the output entity.":::
   
@@ -103,13 +112,14 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
    > - If the attribute you want to project is more than one hop away from the *Customer* entity, as defined by the relationship, that attribute should be used in every rule of the segment query you are building. 
    > - If the attribute you want to project is just one hop away from the *Customer* entity, that attribute doesn't need to be present in every rule of the segment query you are building. 
    > - **Projected attributes** are factored in when using set operators.
-   > - For segments based on business accounts, details of one or more contacts of each account needs to be included in the segment to allow that segment to be activated or exported to destinations that require contact information.
 
 1. Before you save and run the segment, Select **Edit details** next to the segment name. Provide a name for your segment and update the suggested **Output entity name** for the segment. You can also add a description to the segment.
 
 1. Select **Run** to save the segment, activate it and begin processing your segment based on all the rules and conditions. Otherwise, it will be saved as an inactive segment.
-
+   
 1. Select **Back to segments** to go back to the **Segments** page.
+
+1. By default, the segment is created as a dynamic segment. It means that the segment is refreshed during system refreshes. To [stop the automatic refresh](segments.md#manage-existing-segments), select the segment choose the **Make static** option. Static segments can be [refreshed manually](segments.md#refresh-segments) at any time.
 
 > [!TIP]
 > - The segment builder won't suggest valid values from entities when setting the operators for the conditions. You can go to **Data** > **Entities** and download the entity data to see which values are available.

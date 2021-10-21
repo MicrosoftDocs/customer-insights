@@ -1,7 +1,7 @@
 ---
 title: "Machine learning powered suggested segments"
 description: "Let machine learning help you find new and interesting segments based on customer attributes."
-ms.date: 02/01/2021
+ms.date: 10/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -18,7 +18,7 @@ Discover interesting segments of your customers with the help of an AI model. Th
 > [!NOTE]
 > The suggested segments feature uses automated means to evaluate data and make predictions based on that data, and therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Your use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including this feature, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
-:::image type="content" source="media/suggested-segments-details.png" alt-text="Suggested segments page in Customer Insights showing details of a suggestion in a side pane.":::
+:::image type="content" source="media/suggested-segments.png" alt-text="Suggested segments page that shows details of a suggestion in a side pane.":::
 
 ## Suggested segments to improve your KPIs
 
@@ -44,7 +44,7 @@ Segment suggestions are different if you choose a numeric attribute or a categor
 
 With a numeric attribute like *annual income* or *membership period* as the primary attribute, the system suggests segments that have a higher or lower average value of the numeric attribute when compared to all customers.
 
-A categorical attribute like *customer satisfaction* as the primary attribute results in suggested segments that have a higher or lower percentage of customers belonging to a particular category when compared to the percentage of all customers belonging to that same category. For example, *customer satisfaction* is chosen as the primary attribute and it consists of three categories (*Low*, *Medium* and *High*). For each category, segments will be suggested that have a significantly higher or lower percentage of customers belonging to that category as compared to the proportion of all customers in same category. If 22% of all customers have a *High* satisfaction, then, only segments that have a significantly higher or lower proportion of customers with a *High* satisfaction as compared to 22% will be suggested for that category. Similarly, segments will be suggested for each of the other categories (*Low* and *Medium*) if they are statistically significant.
+A categorical attribute like *customer satisfaction* as the primary attribute results in suggested segments that have a higher or lower percentage of customers belonging to a particular category when compared to the percentage of all customers belonging to that same category. For example, *customer satisfaction* is chosen as the primary attribute and it consists of three categories (*Low*, *Medium* and *High*). For each category, segments will be suggested that have a higher or lower percentage of customers belonging to that category as compared to the proportion of all customers in same category. If 22% of all customers have a *High* satisfaction, then, only segments that have a higher or lower proportion of customers with a *High* satisfaction as compared to 22% will be suggested for that category. Similarly, segments will be suggested for each of the other categories (*Low* and *Medium*) if they are statistically significant.
 
 > [!NOTE]
 > Currently, we only support primary categorical attributes that have up to 10 categories. If you want to see segment suggestions based on a primary attribute with more than 10 categories, we recommend to group some of the categories to reduce the number of categories to 10 or fewer. This limitation only applies to primary attributes. For influencing categorical attributes, we currently support a maximum of 100 categories.
@@ -72,7 +72,7 @@ A categorical attribute like *customer satisfaction* as the primary attribute re
 
 Once the AI model has generated the suggestions, you'll find them listed on **Segments** > **Suggestions (preview)**.
  
-Select a suggested segment to review the details of that suggestion including a comparison of the average value and the number of segment members. You can also review the attribute values or rules that the AI model learned to suggest the selected segment.
+Select a suggested segment to review the details of that suggestion. You can also review the attribute values or rules that the AI model learned to suggest the selected segment.
 
 ## Save a suggestion as a segment
 
