@@ -21,17 +21,17 @@ When you create a workspace, you select the type of data that you want to focus 
 
 ## Create a new workspace
 
-The process of creating a workspace includes setting up the *environment* to organize your workspace. An environment is space that can contain one or more workspaces. You can use an environment to manage your workspaces and connections to Customer Insights audience insights capability.
+The process of creating a workspace includes setting up the *environment* to organize your workspace. An environment is space that can contain one or more workspaces. You can use an environment to manage your workspaces and connections to the audience insights capability.
 
-1. Select **New** from the workspace switcher.
+1. Select **+New** from the workspace switcher.
 
-   :::image type="content" source="media/new-workspace.png" alt-text="Customer insights page with callout on navigation pane and description.":::
+   :::image type="content" source="media/new-workspace.png" alt-text="Customer Insights page with callout on navigation pane and description.":::
 
 1. In the **Workspace** pane, enter a **Workspace name**.
 
    :::image type="content" source="media/workspace-name.png" alt-text="Type a workspace name.":::
 
-1. Choose the platform type (Web or mobile) that you want to measure.
+1. Choose the platform type (web or mobile) that you want to measure.
 
 1. Select **Show advanced settings** to enable or disable these optional settings:
 

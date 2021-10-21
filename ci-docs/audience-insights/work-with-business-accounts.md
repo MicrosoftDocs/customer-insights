@@ -1,7 +1,7 @@
 ---
 title: "Get started with business accounts as primary target audience"
 description: "Learn about business accounts as primary target audience Dynamics 365 Customer Insights."
-ms.date: 09/30/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Work with business accounts in audience insights
 
-The audience insights capability in Dynamics 365 Customer Insights lets you configure your environment for different primary target audiences: individual customers (B2C) and business accounts (B2B). In B2C scenarios, the data is centered around individuals. For B2B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in audience insights, depending on your environment focus. For more information about differences, review the docs of the feature areas. 
+The audience insights capability in Dynamics 365 Customer Insights lets you configure your environment for different primary target audiences: individual consumers (B-to-C) and business accounts (B-to-B). In B-to-C scenarios, the data is centered around individuals. For B-to-B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in audience insights, depending on your environment focus. For more information about differences, review the docs of the feature areas. 
 
 ## Create an environment for business accounts
 
@@ -27,7 +27,7 @@ After unifying the data, [specify account hierarchies](relationships.md#set-up-a
 
 If your organization maintains environments for individual customers and business accounts, you can use the switcher in the left pane to choose the primary target audience.
 
-:::image type="content" source="media/switch-primary-target-audience.PNG" alt-text="Switcher to change the primary target audience between individual customers and business accounts.":::
+:::image type="content" source="media/switch-primary-target-audience.png" alt-text="Switcher to change the primary target audience between individual customers and business accounts.":::
 
 ## Supported feature areas
 

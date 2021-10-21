@@ -1,7 +1,7 @@
 ---
 title: Get started with a paid license of Dynamics 365 Customer Insights
 author: m-hartmann
-description: Familiarize with the first-run experience in Dynamics 365 Customer Insights and explore its capabilities.
+description: Become familiar with the first-run experience in Dynamics 365 Customer Insights and explore its capabilities.
 ms.author: mhart
 ms.date: 10/05/2021
 ms.service: customer-insights
@@ -24,7 +24,7 @@ If you're looking to try the service and the features, see [Set up a trial envir
 
 ## Start with Customer Insights
 
-The first-run experience helps you choose you initial focus with Customer Insights and explore the capabilities with sample data. As a next step, you can create your own environment and work with your own data.
+The first-run experience helps you choose your initial focus with Customer Insights and explore the capabilities with sample data. As a next step, you can create your own environment and work with your own data.
 
 **To sign in for the first time**:
 

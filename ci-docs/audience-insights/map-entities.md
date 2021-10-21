@@ -1,7 +1,7 @@
 ---
-title: "Map entities for data unification"
-description: "Map data to create unified customer profiles."
-ms.date: 09/25/2020
+title: "Map entities and attributes for data unification"
+description: "Select entities, attributes, primary keys, and semantic types to map data to the unified customer profile."
+ms.date: 10/18/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,6 +9,8 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-map
 ---
 
 # Map entities and attributes
@@ -89,7 +91,7 @@ Continue with the unification steps and ensure the attribute that contains the i
 
 For organizations (Preview), the attribute type should be mapped to "Organization.Name"
 > [!div class="mx-imgBorder"]
-> ![Primary key and attribute type B2B.](media/configure-data-map-edit-b2b.png "Primary key and attribute type B2B")
+> ![Primary key and attribute type B-to-B.](media/configure-data-map-edit-b2b.png "Primary key and attribute type B-to-B")
 
 ## Next step
 
