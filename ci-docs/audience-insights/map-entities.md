@@ -91,7 +91,7 @@ Continue with the unification steps and ensure the attribute that contains the i
 
 For organizations (Preview), the attribute type should be mapped to "Organization.Name"
 > [!div class="mx-imgBorder"]
-> ![Primary key and attribute type B2B.](media/configure-data-map-edit-b2b.png "Primary key and attribute type B2B")
+> ![Primary key and attribute type B-to-B.](media/configure-data-map-edit-b2b.png "Primary key and attribute type B-to-B")
 
 ## Next step
 

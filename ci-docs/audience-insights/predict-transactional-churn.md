@@ -1,7 +1,7 @@
 ---
 title: Transaction churn prediction
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 10/11/2021
+ms.date: 10/20/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -23,6 +23,32 @@ For environments based on business accounts, we can predict transactional churn 
 > Try the tutorial for a transaction churn prediction using sample data: [Transaction churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
 
 ## Prerequisites
+
+# [Individual consumers (B-to-C)](#tab/b2c)
+
+- At least [Contributor permissions](permissions.md) in Customer Insights.
+- Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
+- Data about your transactions/purchases and their history:
+    - Transaction identifiers to distinguish purchases/transactions.
+    - Customer identifiers to match transactions to your customers.
+    - Transaction event dates, which define the dates the transaction occurred on.
+    - The semantic data schema for purchases/transactions requires the following information:
+        - **Transaction ID**: A unique identifier of a purchase or transaction.
+        - **Transaction Date**: The date of the purchase or transaction.
+        - **Value of the transaction**: The currency/numerical value amount of the transaction/item.
+        - (Optional) **Unique product ID**: The ID of the product or service purchased if your data is at a line item level.
+        - (Optional) **Whether this transaction was a return**: A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we will also use this information to infer a return.
+- (Optional) Data about customer activities:
+    - Activity identifiers to distinguish activities of the same type.
+    - Customer identifiers to map activities to your customers.
+    - Activity information containing the name and date of the activity.
+    - The semantic data schema for customer activities includes:
+        - **Primary key:** A unique identifier for an activity. For example, a website visit or a usage record showing the customer tried a sample of your product.
+        - **Timestamp:** The date and time of the event identified by the primary key.
+        - **Event:** The name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
+        - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
+
+# [Business accounts (B-to-B)](#tab/b2b)
 
 - At least [Contributor permissions](permissions.md) in Customer Insights.
 - Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
@@ -46,7 +72,7 @@ For environments based on business accounts, we can predict transactional churn 
         - **Event:** The name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
         - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
 - (Optional) Data about your customers:
-    - This data should only rarely, and should align toward more static attributes to ensure the model performs best.
+    - This data should align toward more static attributes to ensure the model performs best.
     - The semantic data schema for customer data includes:
         - **CustomerID:** A unique identifier for a customer.
         - **Created Date:** The date the customer was initially added.
@@ -54,6 +80,9 @@ For environments based on business accounts, we can predict transactional churn 
         - **Country:** The country of a customer.
         - **Industry:** The industry type of a customer. For example, a field called "Industry" in a coffee roaster might indicate if the customer was retail.
         - **Classification:** The categorization of a customer for your business. For example, a field called "ValueSegment" in a coffee roaster might be the tier of customer based on the customer size.
+
+---
+
 - Suggested data characteristics:
     - Sufficient historical data: Transaction data for at least double the selected time window. Preferably, two to three years of transaction history. 
     - Multiple purchases per customer: Ideally at least two transactions per customer.
@@ -109,6 +138,32 @@ For environments based on business accounts, we can predict transactional churn 
 
 1. Select **Next**.
 
+# [Individual consumers (B-to-C)](#tab/b2c)
+
+### Add additional data (optional)
+
+Configure the relationship from your customer activity entity to the *Customer* entity.
+
+1. Select the field that identifies the customer in the customer activity table. It can be directly related to the primary customer ID of your *Customer* entity.
+
+1. Select the entity that is your primary *Customer* entity.
+
+1. Enter a name that describes the relationship.
+
+#### Customer activities
+
+1. Optionally, select **Add data** for **Customer activities**.
+
+1. Select the semantic activity type that contains the data you would like to use, then select one or more activities in the **Activities** section.
+
+1. Select an activity type that matches to the type of customer activity you're configuring. Select **Create new** and choose an available activity type or create a new type.
+
+1. Select **Next**, then **Save**.
+
+1. If you have any other customer activities you would like to include, repeat the steps above.
+
+# [Business accounts (B-to-B)](#tab/b2b)
+
 ### Select prediction level
 
 Most predictions are created at the customer level. In some situations, that may not be granular enough to address your business needs. You can use this feature to predict churn for a branch of a customer, for example, rather than for the customer as a whole.
@@ -117,9 +172,9 @@ Most predictions are created at the customer level. In some situations, that may
 
 1. Expand the entities you would like to choose the secondary level from, or use the search filter box to filter the selected options.
 
-1. Choose the attribute you would like used as a secondary level, then select **Add**
+1. Choose the attribute you would like used as a secondary level, then select **Add**.
 
-1. Select **Next**
+1. Select **Next**.
 
 > [!NOTE]
 > The entities available in this section are shown because they have a relationship to the entity you chose in the previous section. If you don't see the entity you want to add, ensure it has a valid relationship present in **Relationships**. Only one-to-one and many-to-one relationships are valid for this configuration.
@@ -154,7 +209,7 @@ Configure the relationship from your customer activity entity to the *Customer* 
 
 1. Select **Next**.
 
-### Provide an optional list of benchmark accounts (business accounts only)
+### Provide an optional list of benchmark accounts
 
 Add a list of your business customers and accounts that you want to use as benchmarks. You'll get [details for these benchmark accounts](#review-a-prediction-status-and-results) including their churn score and most influential features that impacted their churn prediction.
 
@@ -163,6 +218,8 @@ Add a list of your business customers and accounts that you want to use as bench
 1. Choose the customers that act as a benchmark.
 
 1. Select **Next** to continue.
+
+---
 
 ### Set schedule and review configuration
 
@@ -196,6 +253,25 @@ Add a list of your business customers and accounts that you want to use as bench
 1. Select the vertical ellipses next to the prediction you want to review results for and select **View**.
 
    :::image type="content" source="media/model-subs-view.PNG" alt-text="View control to see results of a prediction.":::
+
+# [Individual consumers (B-to-C)](#tab/b2c)
+
+1. There are three primary sections of data within the results page:
+   - **Training model performance**: A, B, or C are possible scores. This score indicates the performance of the prediction and can help you make the decision to use the results stored in the output entity. Scores are determined based on the following rules: 
+        - **A** when the model accurately predicted at least 50% of the total predictions, and when the percentage of accurate predictions for customers who churned is greater than the baseline rate by at least 10%.
+            
+        - **B** when the model accurately predicted at least 50% of the total predictions, and when the percentage of accurate predictions for customers who churned is up to 10% greater than the baseline.
+            
+        - **C** when the model accurately predicted less 50% of the total predictions, or when the percentage of accurate predictions for customers who churned is less than the baseline.
+               
+        - **Baseline** takes the prediction time window input for the model (for example, one year), and the model creates different fractions of time by dividing it by 2 until it reaches one month or less. It uses these fractions to create a business rule for customers who have not purchased in this time frame. These customers are considered as churned. The time-based business rule with the highest ability to predict who is likely to churn is chosen as baseline model.
+            
+    - **Likelihood to churn (number of customers)**: Groups of customers based on their predicted risk of churn. This data can help you later if you want to create a segment of customers with high churn risk. Such segments help to understand where your cutoff should be for segment membership.
+       
+    - **Most influential factors**: There are many factors that are taken into account when creating your prediction. Each of the factors has its importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results, or you can use this information later to [create segments](segments.md) that could help influence churn risk for customers.
+
+
+# [Business accounts (B-to-B)](#tab/b2b)
 
 1. There are three primary sections of data within the results page:
    - **Training model performance**: A, B, or C are possible scores. This score indicates the performance of the prediction and can help you make the decision to use the results stored in the output entity. Scores are determined based on the following rules: 
@@ -232,6 +308,11 @@ Add a list of your business customers and accounts that you want to use as bench
        When you predict churn at the account level, all accounts are considered in deriving the average feature values for churn segments. For churn predictions at the secondary level for every account, the derivation of churn segments depends on the secondary level of the item selected in the side pane. For example, if an item has a secondary level of product category = office supplies, then only the items having office supplies as the product category are considered when deriving the average feature values for churn segments. This logic is applied to ensure a fair comparison of the item's feature values with the average values across low, medium, and high churn segments.
 
        In some cases, the average value of low, medium, or high churn segments is empty or not available because there are no items that belong to the corresponding churn segments based on the above definition.
+       
+       > [!NOTE]
+       > The interpretation of values under the average low, medium, and high columns is different for categorical features like country or industry. Because the notion of "average" feature value doesn't apply to categorical features, the values in these columns are the proportion of customers in low, medium, or high churn segments that have the same value of the categorical feature as compared to the item selected in the side panel.
+
+---
 
 ## Manage predictions
 

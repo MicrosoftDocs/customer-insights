@@ -27,14 +27,14 @@ There are two main types of exports:
 
 ### Export segments
 
-**Exporting segments in environments for business accounts (B2B) or individual customers (B2C)**  
-Most export option support both types of environments. Exporting segments to various target systems has specific requirements. Generally speaking, a segment member, the customer profile, contains contact information. While this is usually the case for segments built on individual customers (B2C), it's not necessarily the case for segments based on business accounts (B2B). 
+**Exporting segments in environments for business accounts (B-to-B) or individual consumers (B-to-C)**  
+Most export option support both types of environments. Exporting segments to various target systems has specific requirements. Generally speaking, a segment member, the customer profile, contains contact information. While this is usually the case for segments built on individual consumers (B-to-C), it's not necessarily the case for segments based on business accounts (B-to-B). 
 
-**Segment exports environments for business accounts (B2B)**  
+**Segment exports environments for business accounts (B-to-B)**  
 - Segments in the context of environments for business accounts are built on the *account* entity. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](export-linkedin-ads.md) when you choose the **company** option while defining the export.
 - All other target systems require fields from the contact entity. To ensure account segments can retrieve data from related contacts, your segment definition needs to project attributes of the contact entity. Learn more about how to [configure segments and project attributes](segment-builder.md).
 
-**Segment exports in environments for individual customers (B2C)**  
+**Segment exports in environments for individual consumers (B-to-C)**  
 - Segments in the context of environments for individual customers are built on the *unified customer profile* entity. Every segment that meets the requirements of the target systems (for example, an email address) can get exported.
 
 **Limits on segment exports**  
