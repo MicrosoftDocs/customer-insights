@@ -24,7 +24,7 @@ You need to have Contributor or Administrator permissions to create or edit enri
 
 On the **Discover** tab, you'll find all supported enrichment options.
 
-# [Individual customers (B2C)](#tab/b2c)
+# [Individual consumers (B-to-C)](#tab/b2c)
 
 - [Brands](enrichment-microsoft.md) provided by Microsoft
 - [Interests](enrichment-microsoft.md) provided by Microsoft
@@ -33,7 +33,7 @@ On the **Discover** tab, you'll find all supported enrichment options.
 - [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
 
-# [Business accounts (B2B)](#tab/b2b)
+# [Business accounts (B-to-B)](#tab/b2b)
 
 - [Company data](enrichment-leadspace.md) provided by Leadspace
 - [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft 

@@ -182,7 +182,7 @@ The updates in March 2021 include several features, performance upgrades, and bu
    For more information, see [Export to Constant Contact](export-constant-contact.md).
 
 - **Export segments to RollWorks**
-   We have extended our export destinations to include RollWorks. You can now export segments from Customer Insights to RollWorks audiences and use them as the baseline for your B2B advertising.    
+   We have extended our export destinations to include RollWorks. You can now export segments from Customer Insights to RollWorks audiences and use them as the baseline for your B-to-B advertising.    
    For more information, see [Export to RollWorks ](export-rollworks.md).
 
 - **Export segments to Snapchat**
