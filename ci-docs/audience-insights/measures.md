@@ -23,7 +23,7 @@ Use the measure builder to plan business activities by querying customer data an
 
 This section walks you through creating a new measure from scratch. You can build a measure with data attributes from data entities that have a relationship set up to connect with the unified customer profile entity.
 
-# [Individual customers (B2C)](#tab/b2c)
+# [Individual consumers (B-to-C)](#tab/b2c)
 
 1. In audience insights, go to **Measures**.
 
@@ -87,7 +87,7 @@ This section walks you through creating a new measure from scratch. You can buil
 
 1. Go to **Measures** to see the newly created measure in the list.
 
-# [Business accounts (B2B)](#tab/b2b)
+# [Business accounts (B-to-B)](#tab/b2b)
 
 1. In audience insights, go to **Measures**.
 
@@ -159,7 +159,7 @@ This section walks you through creating a new measure from scratch. You can buil
 
 You can use predefined templates of commonly used measures to create them. Detailed descriptions of the templates and a guided experience help you with efficient measure creation. Templates build on mapped data from the *Unified Activity* entity. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
 
-# [Individual customers (B2C)](#tab/b2c)
+# [Individual consumers (B-to-C)](#tab/b2c)
 
 You can use predefined templates of commonly used measures to create them. Detailed descriptions of the templates and a guided experience help you with efficient measure creation. Templates build on mapped data from the *Unified Activity* entity. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
 
@@ -207,7 +207,7 @@ The following procedure outlines the steps to build a new measure using a templa
 
 1. You can now select **Run** to calculate the results of the measure. To refine it later, select **Save draft**.
 
-# [Business accounts (B2B)](#tab/b2b)
+# [Business accounts (B-to-B)](#tab/b2b)
 
 This feature is only available for measures created in environments with individual customers as primary target audience.
 
