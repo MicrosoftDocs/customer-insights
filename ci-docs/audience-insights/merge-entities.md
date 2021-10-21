@@ -9,6 +9,8 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-merge
 ---
 
 # Merge entities

@@ -1,7 +1,7 @@
 ---
 title: "Get started with business accounts as primary target audience"
 description: "Learn about business accounts as primary target audience Dynamics 365 Customer Insights."
-ms.date: 09/30/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual

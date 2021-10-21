@@ -257,8 +257,6 @@
           href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
-        - name: Supported languages
-          href: audience-insights/supported-languages.md
         - name: Security
           items: 
             - name: Bring your own Key Vault
@@ -292,7 +290,7 @@
       items:
         - name: Quickstart guide
           href: engagement-insights/get-started.md
-        - name: Crate an environment
+        - name: Create an environment
           href: engagement-insights/create-new-environment.md
         - name: Create a workspace
           href: engagement-insights/create-workspace.md
