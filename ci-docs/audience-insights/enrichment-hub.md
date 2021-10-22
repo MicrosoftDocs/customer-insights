@@ -37,6 +37,7 @@ On the **Discover** tab, you'll find all supported enrichment options.
 
 - [Company data](enrichment-leadspace.md) provided by Leadspace
 - [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft 
+- [Enhanced company data](enrichment-enhanced-company-data.md) provided by Microsoft
 - [Location data](enrichment-here.md) provided by HERE Technologies 
 - [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
