@@ -15,6 +15,8 @@ manager: shellyha
 
 Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol (SFTP) location.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
+
 ## Prerequisites for connection
 
 - Availability of an SFTP host and corresponding credentials.
