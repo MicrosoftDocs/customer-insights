@@ -3,6 +3,7 @@ title: "Respond to DSR requests under GDPR"
 description: "Learn how to remove personal data from the consent management capability of Customer Insights."
 ms.date: 10/30/2021
 ms.service: customer-insights
+ms.subservice: consent-management
 ms.topic: how-to
 author: smithy7
 ms.author: smithc

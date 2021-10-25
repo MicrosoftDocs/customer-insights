@@ -1,8 +1,9 @@
 ---
 title: "Specify system settings for consent management"
 description: "Set language and local settings in the consent management capability of Customer Insights."
-ms.date: 09/30/2021
+ms.date: 10/30/2021
 ms.service: customer-insights
+ms.subservice: consent-management
 ms.topic: how-to
 author: smithy7
 ms.author: smithc

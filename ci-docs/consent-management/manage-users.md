@@ -3,6 +3,7 @@ title: "Manage users in the consent management capability"
 description: "Introduction to user management to let admins access the consent center."
 ms.date: 10/30/2021
 ms.service: customer-insights
+ms.subservice: consent-management
 ms.topic: how-to
 author: smithy7
 ms.author: smithc

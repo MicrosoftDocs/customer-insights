@@ -5,8 +5,9 @@ metadata:
   author: m-hartmann
   description: Find relevant articles to start with help content.
   ms.author: mhart
-  ms.date: 09/30/2021
+  ms.date: 10/30/2021
   ms.service: customer-insights
+  ms.subservice: consent-management
   ms.topic: landing-page
 
 title: Consent management, a capability of Dynamics 365 Customer Insights docs
