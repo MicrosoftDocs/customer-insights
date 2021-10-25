@@ -62,7 +62,7 @@ There are a few limitations with the enhanced data. The items in the list below 
 
 1.	Map the company fields from your unified customer entity. The more key identifiers and fields you map, the more likelihood of a higher match rate.
 
-   :::image type="content" source="media/enhanced-company-data-mapping.png" alt-text="Data-mapping step when configuring a company enrichment.":::
+    :::image type="content" source="media/enhanced-company-data-mapping.png" alt-text="Data-mapping step when configuring a company enrichment.":::
 
 1. Select **Next** to complete the field mapping.
 
