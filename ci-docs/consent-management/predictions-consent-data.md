@@ -24,19 +24,19 @@ The following list includes the entities that are required and the fields these 
 
 1. *Subscription consent* entity
     - Primary key or ID: A primary key for each unique consent value. It needs unique values in each row. For example: email or customer ID. 
-    - Customer ID: A customer identifier that links the consent entity to the customer entity and their transaction data. This identifier (ID, name, email, etc.) should be the same across all required entities. 
+    - Customer ID: A customer identifier that links the consent entity to the customer entity and their transaction data. This identifier should be the same across all required entities. 
     - Consent start date: The date that consent was updated. This field can also include time.
     - Consent status: A consent value that indicates which customers consented.
     
 2.	*Customer transaction* entity
     - Transaction ID: A primary key for each transaction.
-    - Customer ID: A customer identifier that links the consent entity to the customer entity and their transaction data. This identifier (ID, name, email, etc.) should be the same across all required entities. 
+    - Customer ID: A customer identifier that links the consent entity to the customer entity and their transaction data. This identifier should be the same across all required entities. 
     - Transaction date: Date of each transaction.
     - Value of transaction: Transaction amount of each transaction.
     - Label assigned to returns (optional): Boolean value that indicates if the transaction is a return.
     - Unique product ID (optional): ID that represents the product or service of the transaction. 
 
-3.	*Customer* entity with a primary key representing each unique customer. This identifier (ID, name, email, etc.) should be the same across all required entities. 
+3.	*Customer* entity with a primary key representing each unique customer. This identifier should be the same across all required entities. 
 
 ## Set up instructions
 
@@ -64,7 +64,7 @@ This section outlines how to use consent data as activity data input to the tran
 
 ### Step 2: Configure and run the model 
 
-Follow the instructions to [set up a transaction model](../audience-insights/predict-transactional-churn.md) until you configure the additional data.
+Follow the instructions to [create a transaction model](../audience-insights/predict-transactional-churn.md) until you configure the additional data.
 
 1. In the **Additional data (optional)** step of the model creation, select **Add data**. 
 
@@ -85,7 +85,7 @@ Follow the instructions to [set up a transaction model](../audience-insights/pre
 
 View the model results to find insights.
 
-- Training model performance: Indicates the performance of the prediction based on how many customers it predicted accurately. Adding consent data and other optional data helps increase the likelihood of accurate predictions. 
+- Training model performance: Indicates the performance of the prediction based on how many customers it predicted accurately. Adding consent data and other optional data helps increase the likelihood of precise predictions. 
 - Likelihood to churn (number of customers): Groups of customers based on their predicted risk of churn. 
 - Most influential factors: Lists the factors that affect the model results. Find out which influence the consent data had by looking at the **Activity** factors. Another way to gauge the influence of consent data is to set up a model without consent data and compare the results to this model.
 
