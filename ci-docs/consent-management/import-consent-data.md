@@ -43,14 +43,18 @@ After setting up the consent management capability, the first-run experience gui
 
 1. The **Preview file data** step shows the data that gets imported. Select **Next** to continue. 
   
-1. The **Edit queries** step lets you rename the query and [apply data transformations using Power Query](/power-query/power-query-ui.md). After applying all necessary transformations, select **Next**.
+1. The **Edit queries** step lets you rename the query and [apply data transformations using Power Query](/power-query/power-query-ui.md). 
+   1. If you source data contains a header row, apply **Transform** > **Use first row as header**.
+   1. Map the data to the Common Data Model. Select **Map to entity** > **Auto map (optional)**.
+   After applying all necessary transformations, select **Next**.
    
    :::image type="content" source="media/data-transformations.PNG" alt-text="Options to transform data and assign data types.":::
 
 1. The final step to import a data source is the **Refresh settings** step where you tell the system when to look for updates on the data source. 
    
    :::image type="content" source="media/refresh-settings.PNG" alt-text="Set the refresh settings of the data source.":::
-    Choose if you want to **Refresh manually** if the data source changed, or if you prefer the system to do the **Refresh automatically**. For automated refresh, set your preference for when a refresh should happen.
+   
+   Choose if you want to **Refresh manually** if the data source changed, or if you prefer the system to do the **Refresh automatically**. For automated refresh, set your preference for when a refresh should happen.
 
 1. Select **Save** to start the data import. 
 
