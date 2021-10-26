@@ -1,7 +1,7 @@
 ---
 title: "Overview for the consent management capability"
 description: "Understand the fundamentals of consent management in Dynamics 365 Customer Insights."
-ms.date: 09/30/2021
+ms.date: 10/30/2021
 ms.service: customer-insights
 ms.subservice: consent-management
 ms.topic: how-to
