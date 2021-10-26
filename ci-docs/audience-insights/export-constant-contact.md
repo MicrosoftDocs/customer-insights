@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Constant Contact"
 description: "Learn how to configure the connection and export to Constant Contact."
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -23,10 +23,10 @@ Export segments of unified customer profiles to Constant Contact and use them fo
 
 ## Known limitations
 
-- You can export up to 1 million profiles per export to Constant Contact.
+- You can export up to 1 million customer profiles per export to Constant Contact.
 - Exporting to Constant Contact is limited to segments.
-- Exporting up to 1 million profiles to Constant Contact can take up to 1 hour to complete. 
-- The number of profiles that you can export to Constant Contact is dependent and limited on your contract with Constant Contact.
+- Exporting up to 1 million customer profiles to Constant Contact can take up to 1 hour to complete. 
+- The number of customer profiles that you can export to Constant Contact is dependent and limited on your contract with Constant Contact.
 
 ## Set up connection to Constant Contact
 
@@ -60,7 +60,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Enter your [**Constant Contact List ID**](https://app.constantcontact.com/pages/contacts/ui#lists). Open a list in Constant Contact to find the list ID in the URL.
 
-1. In the **Data matching** section, in the **Email** field, select the field in your unified customer profile that represents a customer's email address. It's required to export segments to Constant Contact.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Constant Contact.
 
 1. Optionally, you can export First name and Last name as additional fields to create more personalized emails. Select **Add attribute** to map these fields.
 

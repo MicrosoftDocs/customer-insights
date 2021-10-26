@@ -730,6 +730,46 @@
       "source_path": "ci-docs/audience-insights/connect-common-data-service-lake.md",
       "redirect_url": "/dynamics365/customer-insights/audience-insights/connect-dataverse-managed-lake",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/get-started-trial.md",
+      "redirect_url": "/dynamics365/customer-insights/trial-signup",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "ci-docs/engagement-insights/quotas.md",
+      "redirect_url": "/dynamics365/customer-insights/service-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/service-limits.md",
+      "redirect_url": "/dynamics365/customer-insights/service-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/delete-export-personal-data.md ",
+      "redirect_url": "/dynamics365/customer-insights/dsr-rights-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/gdpr.md",
+      "redirect_url": "/dynamics365/customer-insights/dsr-rights-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/configure-connections.md",
+      "redirect_url": "/dynamics365/customer-insights/engagement-insights/integrate-audience-insights-engagement-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/get-started-paid.md",
+      "redirect_url": "/dynamics365/customer-insights/audience-insights/create-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/supported-languages.md",
+      "redirect_url": "/dynamics365/customer-insights/audience-insights/system",
+      "redirect_document_id": false
     }
   ]
 }

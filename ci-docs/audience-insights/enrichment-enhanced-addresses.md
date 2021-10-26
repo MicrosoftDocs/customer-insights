@@ -19,6 +19,8 @@ Addresses in your data can be unstructured, incomplete, or incorrect. Use Micros
 
 Our model goes through a two-step process to enhance an address. First, it parses the address to identify its components and puts them into a structured format. Then, we use AI to correct, complete, and standardize the values in the address.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWNewo]
+
 ### Example
 
 Address information might be in a nonstandard format and contain spelling errors. The model can fix these issues and create consistent addresses in unified customer profiles.
@@ -97,6 +99,6 @@ You can access a detailed view of each enriched profile by selecting **View enri
 
 ## Next steps
 
-Build on top of your enriched customer data. Create [segments](segments.md) and [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

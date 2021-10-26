@@ -4,8 +4,15 @@
 - name: Product overview
   href: overview.md
 
-- name: Create a trial
-  href: audience-insights/get-started-trial.md
+- name: Free trial
+  items:
+    - name: Sign up for a free trial
+      href: trial-signup.md
+    - name: Trial FAQ
+      href: trial-FAQ.md
+
+- name: Start with a paid license
+  href: paid-license.md
 
 - name: Access your environment
   href: https://home.ci.ai.dynamics.com/
@@ -22,8 +29,17 @@
     - name: New and updated features
       href: audience-insights/whats-new-audience-insights.md
 
-    - name: Create a new environment
-      href: audience-insights/get-started-paid.md
+    - name: Get started
+      items: 
+        - name: Quickstart guide
+          href: audience-insights/get-started.md
+        - name: Create a new environment
+          href: audience-insights/create-environment.md
+        - name: Explore audience insights
+          href: audience-insights/home.md
+
+    - name: Work with business accounts
+      href: audience-insights/work-with-business-accounts.md
 
     - name: Learn modules
       items:
@@ -73,6 +89,8 @@
           href: audience-insights/relationships.md
         - name: List customer activities
           href: audience-insights/activities.md
+        - name: Define semantic mappings
+          href: audience-insights/semantic-mappings.md
 
     - name: Data enrichment
       items:
@@ -82,6 +100,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Enhanced addresses
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Enrich with Azure Maps
+          href: audience-insights/enrichment-azure-maps.md
         - name: Enrich with HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Enrich with Leadspace
@@ -123,7 +143,7 @@
               href: audience-insights/predict-product-recommendation.md
             - name: Predict subscription churn
               href: audience-insights/predict-subscription-churn.md
-            - name: Predict transactional churn
+            - name: Predict transaction churn
               href: audience-insights/predict-transactional-churn.md
             - name: Use custom models from Azure Machine Learning
               href: audience-insights/custom-models.md
@@ -136,7 +156,7 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: Sample guide for subscription churn prediction
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: Sample guide for transactional churn prediction
+            - name: Sample guide for transaction churn prediction
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: Sample guide for product recommendation prediction
               href: audience-insights/sample-guide-predict-product-recommendation.md
@@ -150,8 +170,6 @@
 
         - name: Create segments based on predictions
           href: audience-insights/prediction-based-segment.md
-
-
 
     - name: Export options
       items:
@@ -189,6 +207,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Klaviyo
+              href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
               href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
@@ -237,10 +257,12 @@
           href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
-        - name: Connect to an ADLS storage account using Service Principal
-          href: audience-insights/connect-service-principal.md
-        - name: Supported languages
-          href: audience-insights/supported-languages.md
+        - name: Security
+          items: 
+            - name: Bring your own Key Vault
+              href: audience-insights/use-azure-key-vault.md
+            - name: Connect to an ADLS storage account using Service Principal
+              href: audience-insights/connect-service-principal.md
 
     - name: Extensibility
       items:
@@ -255,27 +277,61 @@
         - name: API references
           href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
 
-    - name: Service limits
-      href: audience-insights/service-limits.md
+- name: Consent management (preview)
+  items:
+    - name: Help hub
+      href: consent-management/index.yml
+
+    - name: Capability overview
+      href: consent-management/overview.md
+
+    - name: Get started
+      items:
+        - name: Get started
+          href: consent-management/get-started.md
+        - name: Concepts and terminology
+          href: consent-management/glossary.md
+
+    - name: Import consent data
+      items: 
+        - name: Import consent data
+          href: consent-management/import-consent-data.md
+        - name: Set consent data and apply consent preferences
+          href: consent-management/set-consent-rules.md
+
+    - name: Manage consent data
+      items: 
+        - name: Enable consent in audience insights
+          href: audience-insights/activate-consent.md
+        - name: Manage default consent rules in audience insights segments
+          href: audience-insights/change-default-consent-rules.md
+        
+    - name: Manage settings and users
+      items: 
+        - name: Configure system settings
+          href: consent-management/system-settings.md
+        - name: Manage users and permissions
+          href: consent-management/manage-users.md
     
-    - name: DSR requests under GDPR
-      href: audience-insights/gdpr.md
+    - name: GDPR
+      items: 
+        - name: Respond to Data Subject Requests
+          href: consent-management/DSR-request.md
 
 - name: Engagement insights (preview)
   items:
     - name: Help hub
       href: engagement-insights/index.yml
 
-    - name: Capability overview
+    - name: About engagement insights
       href: engagement-insights/overview.md
-
-    - name: Free trial
-      href: https://pi.dynamics.com/
 
     - name: Get started
       items:
-        - name: Get started
+        - name: Quickstart guide
           href: engagement-insights/get-started.md
+        - name: Create an environment
+          href: engagement-insights/create-new-environment.md
         - name: Create a workspace
           href: engagement-insights/create-workspace.md
         - name: Capture events from websites and mobile apps
@@ -335,62 +391,29 @@
           href: engagement-insights/user-roles.md
         - name: Manage environments and workspaces
           href: engagement-insights/manage-environments-workspaces.md
-        - name: Configure connections
-          href: engagement-insights/configure-connections.md
         - name: Manage cookies and user consent
           href: engagement-insights/user-consent-storage.md
-
-    - name: GDPR
-      items: 
-        - name: Delete and export personal data
-          href: engagement-insights/delete-export-personal-data.md
 
     - name: Regional availability
       href: engagement-insights/regional-availability.md
 
-    - name: Service limits
-      href: engagement-insights/quotas.md
-
-- name: Consent management (preview)
+- name: Share data between capabilities
   items:
-    - name: Help hub
-      href: consent-management/index.yml
 
-    - name: Capability overview
-      href: consent-management/overview.md
+    - name: Link audience insights and engagement insights
+      href: engagement-insights/integrate-audience-insights-engagement-insights.md
 
-    - name: Get started
-      items:
-        - name: Get started
-          href: consent-management/get-started.md
-        - name: Concepts and terminology
-          href: consent-management/glossary.md
+    - name: Use audience insights segments in engagement insights reports
+      href: engagement-insights/integrate-audience-insights-segments.md
 
-    - name: Import consent data
-      items: 
-        - name: Import consent data
-          href: consent-management/import-consent-data.md
-        - name: Set consent data and apply consent preferences
-          href: consent-management/set-consent-rules.md
+    - name: Use demographic dimensions for splitting behavioral data
+      href: engagement-insights/curate-dimensions.md
 
-    - name: Manage consent data
-      items: 
-        - name: Enable consent in audience insights
-          href: audience-insights/activate-consent.md
-        - name: Manage default consent rules in audience insights segments
-          href: audience-insights/change-default-consent-rules.md
-        
-    - name: Manage settings and users
-      items: 
-        - name: Configure system settings
-          href: consent-management/system-settings.md
-        - name: Manage users and permissions
-          href: consent-management/manage-users.md
-    
-    - name: GDPR
-      items: 
-        - name: Respond to Data Subject Requests
-          href: consent-management/DSR-request.md
+- name: Service limits
+  href: service-limits.md
 
-- name: Get support
-  href: https://dynamics.microsoft.com/en-us/support/
+- name: DSR rights and requests
+  href: dsr-rights-requests.md
+
+
+

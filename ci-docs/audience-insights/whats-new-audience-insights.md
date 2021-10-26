@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 07/19/2021
+ms.date: 08/31/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -21,6 +21,33 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## September 2021 updates
+
+The updates in September 2021 include a new features, performance upgrades, and bug fixes.
+
+### Activities
+
+- **Activity timeline improvements**
+  We have extended the filters for the activity timeline on customer profiles. Additionally, you can use the new filter pan to filter by activity type and by date. Dates can be filtered using different conditions. For more information, see [View activity timelines on customer profiles](activities.md#view-activity-timelines-on-customer-profiles).
+
+### Relationships
+
+- **Multi-hop relationship support**
+  Use multi-hop relationships when configuring activities and defining relationships between entities. Multi-hop relationships use an intermediate entity to connect two entities. When configuring an activity, you can use a multi-hop relationship to connect your activity entity to an intermediate entity and then to a customer entity. You can combine multi-hop relationships with multi-path relationships. For more information, see [Multi-hop relationship](relationships.md#multi-hop-relationship).
+
+- **Multi-path relationship support**
+  Use multi-path relationships when configuring activities and defining relationships between entities. Multi-path relationships relate a source entity to more than one entity. When configuring an activity, you can use a multi-path relationship to connect your activity entity to more than one customer entity. You can combine multi-path relationships with multi-hop relationships. For more information, see [Multi-path relationship](relationships.md#multi-path-relationship).
+
+## August 2021 updates
+
+The updates in July and August 2021 include a new feature, performance upgrades, and bug fixes.
+
+### Extensibility
+
+- **Export segments to Klaviyo**
+  We have extended our [export destinations to include Klaviyo](export-klaviyo.md). You can now export segments to crate campaigns, do email marketing, and use specific groups of customers with Klaviyo. 
+
 
 ## June 2021 updates
 
@@ -46,7 +73,7 @@ The updates in June 2021 include several features, performance upgrades, and bug
 
 - **New and enhanced Customers page and profile details page**
   We have redesigned the Customers page and the profile detail pages for improved user experience and better performance. These changes let you view, sort, search, and filter customers. Filters are now represented in the URL to share the search results with other users seamlessly. Search results can also be saved as a segment.    
-  The details page for customer profiles now groups data in various subsections such as demographic data, IDs, and other profile attributes for improved readability. Other sections on the profile details page are now more interactive. For example the activities section now allows filtering and sorting.
+  The details page for customer profiles now groups data in various subsections such as demographic data, IDs, and other profile attributes for improved readability. Other sections on the profile details page are now more interactive. For example, the activities section now allows filtering and sorting.
 
 
 ## May 2021 updates
@@ -155,7 +182,7 @@ The updates in March 2021 include several features, performance upgrades, and bu
    For more information, see [Export to Constant Contact](export-constant-contact.md).
 
 - **Export segments to RollWorks**
-   We have extended our export destinations to include RollWorks. You can now export segments from Customer Insights to RollWorks audiences and use them as the baseline for your B2B advertising.    
+   We have extended our export destinations to include RollWorks. You can now export segments from Customer Insights to RollWorks audiences and use them as the baseline for your B-to-B advertising.    
    For more information, see [Export to RollWorks ](export-rollworks.md).
 
 - **Export segments to Snapchat**

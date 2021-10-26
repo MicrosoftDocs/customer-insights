@@ -1,13 +1,13 @@
 ---
 title: "Product recommendation prediction"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 03/17/2021
+ms.date: 09/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: zacookmsft
-ms.author: zacook
+author: wmelewong 
+ms.author: wameng
 manager: shellyha
 ---
 
@@ -84,23 +84,24 @@ If you're interested in trying this feature but don't have data to complete the 
 
 ### Add required data
 
-1. Select **Add data** for **Customer transaction history** and choose the entity that provides the transaction/purchase history information as described in the [prerequisites](#prerequisites).
+1. Select **Add data** and choose the activity type in the side pane that contains the required transaction or purchase history information.
 
-1. Map the semantic fields to attributes within your purchase history entity and select **Next**. For descriptions of the fields, have a look at the [prerequisites](#prerequisites).
-   > [!div class="mx-imgBorder"]
-   > ![Define the entity relationship.](media/product-recommendation-purchasehistorymapping.PNG "Purchase history page showing semantic attributes that are mapped to fields in the selected purchase history entity")
+1. Under **Choose the activities**, choose the specific activities from the selected activity you'd like the calculation to focus on.
 
-1. If the fields aren't filled in, configure the relationship from your purchase history entity to the *Customer* entity.
-    1. Select the **Purchase history entity**.
-    1. Select the **Field** that identifies the customer in the purchase history entity. It needs to relate to the primary customer ID of your *Customer* entity.
-    1. Select the **Customer entity** that matches your primary customer entity.
-    1. Enter a name that describes the relationship.
-       > [!div class="mx-imgBorder"]
-       > ![Purchase history page showing the creation of a relationship to customer.](media/model-purchase-join.png "Purchase history page showing the creation of a relationship to customer")
+   :::image type="content" source="media/product-recommendation-select-semantic-activity.PNG" alt-text="Side pane showing choosing specific activities under the semantic type.":::
+
+1. If you haven't mapped the activity to a semantic type yet, select **Edit** to do so. The guided experience to map semantic activities opens. Map your data to the corresponding fields in the selected activity type.
+
+   :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="Page setting activity type.":::
+
+1. After mapping the activity to the corresponding semantic type, select **Next** to proceed 
+ 
+1. Map the semantic attributes to the fields that are required to run the model.
 
 1. Select **Save**.
 
 1. Select **Next**.
+
 
 ### Configure product filters
 
