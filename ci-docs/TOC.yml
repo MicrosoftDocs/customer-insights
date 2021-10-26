@@ -301,7 +301,7 @@
 
     - name: Manage consent data
       items: 
-        - name: Enable consent in audience insights
+        - name: Enable consent rules in audience insights
           href: audience-insights/activate-consent.md
         - name: Manage default consent rules in audience insights segments
           href: audience-insights/change-default-consent-rules.md

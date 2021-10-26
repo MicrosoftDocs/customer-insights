@@ -47,7 +47,7 @@ The first step defines if customers should be included or excluded based on thei
 
 ### Apply rules as default (optional)
 
-In this step, you choose which purposes and subscriptions will have the rule mappings applied to all segments in audience insights. Rules for the imported consent data are automatically synced to audience insights. Administrators have to activate the consent rules and can allow users to override the default selection.
+In this step, you choose which purposes and subscriptions will have the rule mappings applied to all segments in audience insights. Rules for the imported consent data are automatically synced to audience insights. Administrators have to [activate the consent rules](../audience-insights/activate-consent.md) and can allow users to override the default selection.
 
 1. In the **Apply rules as default (optional)** step, choose which purposes and subscriptions to apply the rule to. These rules are then applied to segments in audience insights.
    :::image type="content" source="media/apply-rules-default.png" alt-text="Select the data the rules apply to by default. ":::
@@ -59,3 +59,7 @@ In this step, you choose which purposes and subscriptions will have the rule map
 1. Review the configuration and select **Set rules** to complete the process. 
 
 1. Select **Done** go complete the guided experience and enforce the mapping in business processes.
+
+## Activate rules in audience insights
+
+Before the rules are applied to business processes through audience insights, an admin has to activate them. For more information, see [Activate consent rules](../audience-insights/activate-consent.md).
