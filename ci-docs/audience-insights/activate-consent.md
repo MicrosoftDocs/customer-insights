@@ -33,3 +33,13 @@ For example, if you allow overrides for [segments](segments.md), users can freel
 1. In the **Link consent to customer profiles** section, choose the attribute that is used as an identifier to link consent data to customer data. It's likely a phone number or an email address. 
 
 1. Select **Save** to apply your settings.
+
+## Disable consent checks
+
+To stop using consent data in audience insights, an admin has to update the system settings accordingly.
+
+1. In audience insights, go to **Admin** > **System**.
+
+1. Select the **Consent (preview)** tab.
+
+1. In the **Enable consent checks** section and set the toggles to **Off**.
