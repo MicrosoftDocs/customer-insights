@@ -317,11 +317,6 @@
       items: 
         - name: Create predictions with consent data
           href: consent-management/predictions-consent-data.md
-    
-    - name: GDPR
-      items: 
-        - name: Respond to Data Subject Requests
-          href: consent-management/DSR-request.md
 
 - name: Engagement insights (preview)
   items:

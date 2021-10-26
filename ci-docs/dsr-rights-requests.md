@@ -74,7 +74,14 @@ A tenant administrator can follow these steps to export data:
 2. Acknowledge the confirmation to export the data for the requested user.
 3. Receive the exported data through the tenant admin email address.
 
-## Engagement insights
+## Consent management (preview)
+
+The consent management capability doesn't collect user data directly. It only imports and processes consent data that is provided by users in other applications.
+
+To remove consent data about specific users, remove it in the data sources ingested to the consent management capability. After refreshing the data source, the removed data will be deleted in the Consent Center too. Applications that use the consent entity will also delete data that was removed on the source after a [refresh](audience-insights/system.md#refresh-policies). We recommend refreshing data sources quickly after responding to a data subject request to remove the user's data from all other processes and applications.
+
+
+## Engagement insights (preview)
 
 ### Deleting and exporting event data containing end user identifiable information
 
