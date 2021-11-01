@@ -48,19 +48,13 @@ To configure engagement data, the following prerequisites must be met:
 
 ## Office 365 tenant administrator consent
 
-Consent from an Office 365 tenant administrator is required to activate the enrichment. An email is sent to the Office 365 tenant administators when the enrichment is saved, which asks them to review and consent to aggregating the Office data into Customer Insights. 
+Consent from an Office 365 tenant administrator is required to activate the enrichment. An email is sent to the Office 365 tenant administators when the enrichment is saved, which asks them to review and consent to aggregating the Office data into Customer Insights. The Office 365 tenant administator can also consent directly in their Office 365 admin console.
 
 ## Running the Account Engagement enrichment for the first time
 
 When the enrichment is started for the first time, the data download will commence. Therefore, there are no data available for aggregation, so the enrichment will not yield any results. It is recommended to run the enrichment again when data has been downloaded, which takes between several hours to several days depending on the volume of email and meeting data.
 
-## How the engagement data are aggregated
-
-
-
-## Refresh enrichment
-
-Run the enrichment after configuring brands, interests, and the field mapping for demographics. To start the process, select **Run** on the brand or interest configuration page. Additionally, you can let the system run the enrichment automatically as part of a scheduled refresh.
+To start the process, select **Run** on the Account engagement configuration page. Additionally, you can let the system run the enrichment automatically as part of a scheduled refresh.
 
 Depending on the size of your customer data, it may take several hours for an enrichment run to complete.
 
@@ -70,6 +64,10 @@ Depending on the size of your customer data, it may take several hours for an en
 ## Enrichment results
 
 After running the enrichment process, go to **My enrichments** to review the total number of enriched customers and a breakdown of brands or interests in the enriched customer profiles.
+
+All data is aggregated up to the account level, i.e., data is not exposed on the individual contact level. An engagement score, which ranges from 0 to 100, with 100 being the highest engagement, is calculated for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. 
+
+
 
 :::image type="content" source="media/my-enrichments.png" alt-text="Preview of results after running the enrichment process.":::
 
