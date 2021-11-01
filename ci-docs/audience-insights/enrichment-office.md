@@ -76,7 +76,7 @@ Review the enriched data by selecting **See more** in preview tile. Doing so tak
 
 ## See enrichment data on the customer card
 
-Brand and interest affinities can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find charts for the brands or interests that people in that customer's demographic profile have affinity for.
+Account engagement can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find the account's engagement score, the total number of emails, and the total number of meetings aggregated over the time period that is selected from the dropdown in the top right hand corner. You will also find charts that show the email and meeting history.
 
 :::image type="content" source="media/enrichment-customer-card.png" alt-text="Customer card with enriched data.":::
 
