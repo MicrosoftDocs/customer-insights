@@ -35,6 +35,9 @@ To configure engagement data, the following prerequisites must be met:
    
 1. Click **Next** on the overview screen and select email addresses from your organization for which Office data is going to be aggregated. This ensures that data is only processed for relevant communication. A best practice is to use email groups, for example, *US Sales team*, which are easily managed in Office 365. The number of email addresses in the groups are resolved and shown. The total number of email addresses must be at least 2 and cannot exceed 2,500.
 
+   > [!div class="mx-imgBorder"]
+   > ![Account engagement email addresses.](media/enrichment-office-email-addresses.png "Account engagement email addresses")
+
 1. Review the consent statement, check the **I agree** check box, and click **Next**.
 
 1. Select the customer data set and click **Next**.
