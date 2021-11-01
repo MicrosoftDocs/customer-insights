@@ -84,7 +84,7 @@ All data is aggregated up to the account level. An engagement score, which range
 | Number of people from your organization in email conversations with account       |  NoOfContactsInvolved_Emails             | 
 | Number of people from account in meetings with your organization                  |  NoOfAccountContactsInvolved_Meetings    | 
 | Number of people from account in email conversations with your organization       |  NoOfAccountContactsInvolved_Emails      | 
-| Engagement start date                                                             |  EngagementStartDate                     | 
+| Engagement start date (first email or meeting in the data)                        |  EngagementStartDate                     | 
 | Days since last email                                                             |  DaysSinceLastEmail                      | 
 | Days since last meeting                                                           |  DaysSinceLastMeeting                    | 
 | Average duration of meetings                                                      |  AverageDuration_Of_Meetings             | 
