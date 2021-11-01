@@ -1,0 +1,2 @@
+> [!TIP] 
+> There are [statuses](../audience-insights/system.md#status-definitions) for tasks and processes. Most processes depend on other downstream processes, such as [refresh](../audience-insights/system.md#refresh-processes). Select the status to open the **Progress details** pane and view the progress of the task or process. Then, select the **See details** link for more progress information, such as processing time, the last processing date, and errors and warnings associated with the task or process.
