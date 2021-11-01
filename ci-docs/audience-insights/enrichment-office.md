@@ -70,6 +70,7 @@ You will also see a chart of the number of enriched customers over time as well 
 All data is aggregated up to the account level. An engagement score, which ranges from 0 to 100, with 100 being the highest engagement, is calculated for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. The following is a list of the aggregated data that is being provided by the Account engagement enrichment:
 
 
+
 | Data                                                                              | Column name                              |
 | :-------------------------------------------------------------------------------- |:---------------------------------------- |
 | Engagement score                                                                  |  EngagementScore                         |
@@ -101,7 +102,7 @@ Account engagement can also be viewed on individual customer cards. Go to **Cust
 
 ## Create segments and measures based on the enriched data
 
-The 
+The enriched data can be used to create segments and measures as detailed below. For example, by creating a segment that contains all the customers that have *days since last email* and *days since last meeting* values that are larger than, e.g., 60 days. That segment now contains stale accounts that can be attempted re-activated. 
 
 ## Next steps
 
