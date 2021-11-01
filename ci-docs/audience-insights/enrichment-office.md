@@ -87,7 +87,7 @@ All data is aggregated up to the account level. An engagement score, which range
 | Average duration of meetings                                                      |  AverageDuration_Of_Meetings             | 
 | Average duration of email replies from account                                    |  AverageDuration_Of_AccountEmailReplies  | 
 | Aggregation start date                                                            |  AggregationStartDate                    | 
-| Aggregation level                                                                 |  AggregationLevel                        | 
+| Aggregation level (year, month, or week)                                          |  AggregationLevel                        | 
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
