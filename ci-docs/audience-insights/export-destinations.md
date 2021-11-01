@@ -1,7 +1,7 @@
 ---
 title: "Export data from Customer Insights"
 description: "Manage exports to share data."
-ms.date: 10/08/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -92,7 +92,9 @@ After creating export destinations, they're listed on **Data** > **Exports**. Al
 
 Each export you configure has a refresh schedule. During a refresh, the system looks for new or updated data to include in an export. By default, exports are run as part of every [scheduled system refresh](system.md#schedule-tab). You can customize the refresh schedule or turn it off to run exports manually.
 
-Export schedules depend on the state of your environment. If there are updates in progress on [dependencies](system.md#refresh-policies) when a scheduled export should start, the system will first complete the updates and then run the export. You can see when an export was last refreshed in column **Refreshed**.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+Export schedules depend on the state of your environment. If there are updates in progress on [dependencies](system.md#refresh-processes) when a scheduled export should start, the system will first complete the updates and then run the export. You can see when an export was last refreshed in column **Refreshed**.
 
 ### Schedule exports
 
