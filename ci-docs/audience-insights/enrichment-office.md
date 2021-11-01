@@ -103,7 +103,7 @@ Account engagement can also be viewed on individual customer cards. Go to **Cust
 
 ## Create segments and measures based on the enriched data
 
-The enriched data can be used to create segments and measures as detailed below. For example, by creating a segment that contains all the customers that have *days since last email* and *days since last meeting* values that are larger than, e.g., 60 days. That segment now contains stale accounts that can be attempted re-activated. 
+The enriched data can be used to create segments and measures as detailed below. For example, you can create a segment that contains all the customers that have *days since last email* and *days since last meeting* values that are larger than, e.g., 60 days. That segment now contains stale accounts that can be attempted re-activated. 
 
 ## Next steps
 
