@@ -1,7 +1,7 @@
 ---
 title: "Semantic mappings (Preview)"
 description: "Overview of semantic mappings and how to use them." 
-ms.date: 09/28/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -70,8 +70,7 @@ Semantic mappings let you map your non-activity data to pre-defined schemas. The
 
 1. To run a semantic mapping at a later point, select the semantic mapping and select **Refresh**.
 
-> [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Manage existing semantic mappings
 
@@ -86,5 +85,6 @@ On **Data** > **Semantic mappings (preview)**, you can view all your saved seman
 - **Rename**: Opens a dialog where you can enter a different name for the selected semantic mapping. Select **Save** to apply your changes.
 
 - **Delete**: Opens a dialog to confirm the deletion of the selected semantic mapping. You can also delete more than one semantic mapping at once by selecting the semantic mappings and the delete icon. Select **Delete** to confirm the deletion.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
