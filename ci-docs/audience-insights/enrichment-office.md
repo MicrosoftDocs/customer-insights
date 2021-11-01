@@ -97,7 +97,7 @@ Review the enriched data by selecting **See more** in the preview tile. Doing so
 
 ## See enrichment data on the customer card
 
-Account engagement can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find the account's engagement score, the total number of emails, and the total number of meetings aggregated over the time period that is selected from the dropdown in the top right hand corner. You will also find charts that show the email and meeting history.
+Account engagement can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find the account's engagement score, the total number of emails, and the total number of meetings aggregated over the last year. You will also find charts that show the email and meeting history.
 
 :::image type="content" source="media/enrichment-customer-card.png" alt-text="Customer card with enriched data.":::
 
