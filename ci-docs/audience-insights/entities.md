@@ -1,7 +1,7 @@
 ---
 title: "Entities and datasets"
 description: "View data on the Entities page."
-ms.date: 11/014/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
