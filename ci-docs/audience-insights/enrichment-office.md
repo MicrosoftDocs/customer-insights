@@ -13,7 +13,7 @@ manager: skummer
 
 # Enrich customer profiles with engagement data (preview)
 
-Use proprietary data from Microsoft Office to enrich your customer profiles with engagement data. The engagement data consists of email and meeting activity aggregated to the account level. This enrichment is available in the following regions: UK, Europe, North America.
+Use data from Microsoft Office to enrich your customer account profiles with engagement data. The engagement data consists of email and meeting activity aggregated to the account level. This enrichment is available in the following regions: UK, Europe, North America.
 
 ## Prerequisites
 
@@ -63,6 +63,8 @@ After running the enrichment process, go to **My enrichments** to review the tot
 Review the enriched data by selecting **View enriched data** in the chart. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** entity. Data for interests is in the **InterestAffinityFromMicrosoft** entity. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
 
 You will see a chart with the number of enriched customer profiles over time and a preview of the enriched entity. Select **Show more** in the preview tile to open the enriched entity.
+
+Engagement score
 
 ## See enrichment data on the customer card
 
