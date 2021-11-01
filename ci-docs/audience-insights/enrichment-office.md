@@ -19,7 +19,7 @@ Use data from Microsoft Office 365 to enrich your customer account profiles with
 
 To configure engagement data, the following prerequisites must be met:
 
-- You have an active Office 365 *cloud* license.
+- You have an active Office 365 cloud license.
 - You have [unified customer profiles](customer-profiles.md) based on accounts.
 - You have [administrator](permissions.md#administrator) permissions.
 - You have Office 365 tenant administrator permissions or can get consent to use aggregated Office data in CI from a Office 365 tenant administrator.
@@ -63,19 +63,16 @@ Depending on the size of your customer data, it may take several hours for an en
 
 ## Enrichment results
 
-After running the enrichment process, go to **My enrichments** to review the total number of enriched customers and a breakdown of brands or interests in the enriched customer profiles.
+After running the enrichment process, go to **My enrichments** to review the enrichment results. You will see the total number of enriched customers and a high-level overview of the enrichment results, including the number of emails and meetings processed, the number of days for which data has been aggregated (if data is still downloading you may abtain a longer data window by running the enrichment again at a later time), and more.
 
-All data is aggregated up to the account level, i.e., data is not exposed on the individual contact level. An engagement score, which ranges from 0 to 100, with 100 being the highest engagement, is calculated for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. 
+You will also see a chart of the number of enriched customers over time as well as a preview of the enrichment data.  
 
+All data is aggregated up to the account level. An engagement score, which ranges from 0 to 100, with 100 being the highest engagement, is calculated for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. 
 
+:::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
-:::image type="content" source="media/my-enrichments.png" alt-text="Preview of results after running the enrichment process.":::
+Review the enriched data by selecting **See more** in preview tile. Doing so takes you to the **Office** entity. You will also find the entity listed in the **Enrichment** group in **Data** > **Entities**. Here you will also find the **Office_UserEntity**, which contains the Active Directory IDs for the email addresses from your organization that were chosen for processing in the configuration step. 
 
-Review the enriched data by selecting **View enriched data** in the chart. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** entity. Data for interests is in the **InterestAffinityFromMicrosoft** entity. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
-
-You will see a chart with the number of enriched customer profiles over time and a preview of the enriched entity. Select **Show more** in the preview tile to open the enriched entity.
-
-Engagement score
 
 ## See enrichment data on the customer card
 
