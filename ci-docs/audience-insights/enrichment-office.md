@@ -24,7 +24,7 @@ To configure engagement data, the following prerequisites must be met:
 - You have [administrator](permissions.md#administrator) permissions.
 - You have Office 365 tenant administrator permissions or can get consent to use aggregated Office data in CI from a Office 365 tenant administrator.
 
-# Configure the enrichment
+## Configure the enrichment
 
 1. In audience insights, go to **Data** > **Enrichment**.
 
@@ -63,16 +63,32 @@ Depending on the size of your customer data, it may take several hours for an en
 
 ## Enrichment results
 
-After running the enrichment process, go to **My enrichments** to review the enrichment results. You will see the total number of enriched customers and a high-level overview of the enrichment results, including the number of emails and meetings processed, the number of days for which data has been aggregated (if data is still downloading you may abtain a longer data window by running the enrichment again at a later time), and more.
+After running the enrichment process, go to **My enrichments** to review the enrichment results. You will see the total number of enriched customers and a high-level overview of the enrichment results, including the number of emails and meetings processed, the number of days for which data has been aggregated (if data is still downloading you may get a longer data window by running the enrichment again at a later time), and more.
 
 You will also see a chart of the number of enriched customers over time as well as a preview of the enrichment data.  
 
-All data is aggregated up to the account level. An engagement score, which ranges from 0 to 100, with 100 being the highest engagement, is calculated for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. 
+All data is aggregated up to the account level. An engagement score, which ranges from 0 to 100, with 100 being the highest engagement, is calculated for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. The following is a list of the aggregated data that is being provided by the Account engagement enrichment:
+
+* Engagement score
+* Number of emails to account
+* Number of emails from account
+* Number of meetings initiated by account
+* Number of meetings initiated by your organization
+* Number of people from your organization in meetings with account
+* Number of people from your organization in email conversations with account
+* Number of people from account in meetings with your organization
+* Number of people from account in email conversations with your organization
+* Engagement start date
+* Days since last email
+* Days since last meeting
+* Average duration of meetings
+* Average duration of email replies from account
+* Aggregation start date
+* Aggregation level
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
 Review the enriched data by selecting **See more** in the preview tile. Doing so takes you to the **Office** entity. You will also find the entity listed in the **Enrichment** group in **Data** > **Entities**. Here you will also find the **Office_UserEntity**, which contains the Active Directory IDs for the email addresses from your organization that were chosen for processing in the configuration step. 
-
 
 ## See enrichment data on the customer card
 
@@ -81,6 +97,8 @@ Account engagement can also be viewed on individual customer cards. Go to **Cust
 :::image type="content" source="media/enrichment-customer-card.png" alt-text="Customer card with enriched data.":::
 
 ## Create segments and measures based on the enriched data
+
+The 
 
 ## Next steps
 
