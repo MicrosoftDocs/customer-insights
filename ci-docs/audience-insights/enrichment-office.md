@@ -71,7 +71,7 @@ All data is aggregated up to the account level. An engagement score, which range
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
-Review the enriched data by selecting **See more** in preview tile. Doing so takes you to the **Office** entity. You will also find the entity listed in the **Enrichment** group in **Data** > **Entities**. Here you will also find the **Office_UserEntity**, which contains the Active Directory IDs for the email addresses from your organization that were chosen for processing in the configuration step. 
+Review the enriched data by selecting **See more** in the preview tile. Doing so takes you to the **Office** entity. You will also find the entity listed in the **Enrichment** group in **Data** > **Entities**. Here you will also find the **Office_UserEntity**, which contains the Active Directory IDs for the email addresses from your organization that were chosen for processing in the configuration step. 
 
 
 ## See enrichment data on the customer card
