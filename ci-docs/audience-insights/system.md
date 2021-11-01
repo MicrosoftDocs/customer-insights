@@ -1,7 +1,7 @@
 ---
 title: "System configuration in audience insights"
 description: "Learn about system settings in Dynamics 365 Customer Insights audience insights capability."
-ms.date: 10/15/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,6 +12,8 @@ manager: shellyha
 ---
 
 # System configuration
+
+To access system configurations in audience insights, from the left navigation bar select **Admin** > **System** to view a list of system tasks and processes.
 
 The **System** page includes the following tabs:
 - [Status](#status-tab)
@@ -25,39 +27,55 @@ The **System** page includes the following tabs:
 
 ## Status tab
 
-The **Status tab** lets you track the progress of data ingestion, data exports, and several other important product processes. Review the information on this tab to ensure the completeness of active processes.
+The **Status tab** lets you track the progress of tasks, data ingestion, data exports, and several other important product processes. Review the information on this tab to ensure the completeness of you active tasks and processes.
 
-This tab includes tables with status and processing information for various processes. Each table tracks the **Name** of the task and its corresponding entity, the **Status** of its most recent run, and when it was **Last updated**.
+This tab includes tables with status and processing information for various processes. Each table tracks the **Name** of the task and its corresponding entity, the **Status** of its most recent run, and when it was **Last updated**. You can view the details of the last several runs by selecting the task or process name. 
 
-View the details of the tasks' last several runs by selecting its name.
+Click the status next to the task or process in the **Status** column to open the **Progress details** pane.
 
-### Status types
+   :::image type="content" source="media/system-progress-details.png" alt-text="System progress details pane":::
 
-There are six types of status for tasks. The following status types also show on the *Match*, *Merge*, *Data sources*, *Segments*, *Measures*, *Enrichment*, *Activities*, and *Predictions* pages:
+### Status definitions
 
-- **Processing:** Task is in progress. The status can change to Successful or Failure.
-- **Successful:** Task completed successfully.
-- **Skipped:** Task got skipped. One or more of the downstream processes this task depends on are failing or got skipped.
-- **Failure:** Processing  of the task has failed.
-- **Canceled:** Processing was canceled by the user before it finished.
-- **Queued:** Processing is queued and will start once all the upstream tasks are completed. For more information, see [Refresh policies](#refresh-policies).
+These are the current statuses for tasks and processes:
 
-### Refresh policies
+|Status  |Definition  |
+|---------|---------|
+|Canceled |Processing was canceled by the user before it finished.   |
+|Failed   |Data ingestion ran into errors.         |
+|Failure  |Processing has failed.  |
+|Not started   |The data source has no data ingested yet or still in draft mode.         |
+|Processing  |Task or process is in progress.  |
+|Refreshing    |Data ingestion is in progress. You can cancel this operation by selecting **Stop refreshing** in the **Actions** column. Stopping the refresh of a data source will revert it to its last refresh state.       |
+|Skipped  |Task or process got skipped. One or more of the downstream processes this task depends on are failing or got skipped.|
+|Successful  |Task or process completed successfully. For data sources, indicates the data has been successfully ingested if a time is mentioned in the **Refreshed** column.|
+|Queued | Processing is queued and will start once all the upstream tasks and processes are completed. For more information, see [Refresh processes](#refresh-processes).|
 
-This list shows the refresh policies for each of the main processes:
+### Refresh processes
 
-- **Data sources:** Runs according to the [configured schedule](#schedule-tab). Doesn't depend on any other process. Match depends on the successful completion of this process.
-- **Match:** Runs according to the [configured schedule](#schedule-tab). Depends on the processing of the data sources used in the match definition. Merge depends on the successful completion of this process.
-- **Merge**: Runs according to the [configured schedule](#schedule-tab). Depends on the completion of the match process. Segments, measures, enrichment, search, activities, predictions, and data preparation depend on the successful completion of this process.
-- **Segments**: Runs manually (single time refresh) and according to the [configured schedule](#schedule-tab). Depends on Merge. Insights depend on its processing.
-- **Measures**: Runs manually (single time refresh) and according to the [configured schedule](#schedule-tab). Depends on Merge.
-- **Activities**: Runs manually (single time refresh) and according to the [configured schedule](#schedule-tab). Depends on Merge.
-- **Enrichment**: Runs manually (single time refresh) and according to the [configured schedule](#schedule-tab). Depends on Merge.
-- **Search**: Runs manually (single time refresh) and according to the [configured schedule](#schedule-tab). Depends on Merge.
-- **Data preparation**: Runs according to the [configured schedule](#schedule-tab). Depends on Merge.
-- **Insights**: Runs manually (single time refresh) and according to the [configured schedule](#schedule-tab). Depends on Segments.
+Refresh for tasks and processes is run according to the [configured schedule](#schedule-tab). 
 
-Select the status of a task to see the progress details of the entire job it was in. The refresh policies above can help to understand what you can do to address a **Skipped** or **Queued** task.
+|Process  |Description  |
+|---------|---------|
+|Activity  |Runs manually (single time refresh). Depends on merge process. Insights depend on its processing.|
+|Analysis linking |Runs manually (single time refresh). Depends on segments.  |
+|Analysis preparation |Runs manually (single time refresh). Depends on segments.  |
+|Data preparation   |Depends on merge.   |
+|Data sources   |Doesn't depend on any other process. Match depends on the successful completion of this process.  |
+|Enrichments   |Runs manually (single time refresh). Depends on merge process. |
+|Exports destinations |Runs manually (single time refresh). Depends on segments.  |
+|Insights |Runs manually (single time refresh). Depends on segments.  |
+|Intelligence   |Depends on merge.   |
+|Match |Depends on the processing of the data sources used in the match definition.      |
+|Measures  |Runs manually (single time refresh). Depends on merge process.  |
+|Merge   |Depends on the completion of the match process. Segments, measures, enrichment, search, activities, predictions, and data preparation depend on the successful completion of this process.   |
+|Profiles   |Runs manually (single time refresh). Depends on merge process. |
+|Search   |Runs manually (single time refresh). Depends on merge process. |
+|Segments  |Runs manually (single time refresh). Depends on merge process. Insights depend on its processing.|
+|System   |Depends on the completion of the match process. Segments, measures, enrichment, search, activities, predictions, and data preparation depend on the successful completion of this process.   |
+|User  |Runs manually (single time refresh). Depends on entities.  |
+
+Select the status of a process to see the progress details of the entire job it was in. The refresh processes above can help to understand what you can do to address a **Skipped** or **Queued** task or process.
 
 ## Schedule tab
 
