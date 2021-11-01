@@ -46,16 +46,13 @@ To configure engagement data, the following prerequisites must be met:
 
 1. Finally, review the enrichment configuration, give the enrichment a name, and click **Save enrichment** to save the enrichment.
 
-## Office 365 administrator consent
+## Office 365 tenant administrator consent
+
+Consent from an Office 365 tenant administrator is required to activate the enrichment. An email is sent to the Office 365 tenant administators when the enrichment is saved, which asks them to review and consent to aggregating the Office data into Customer Insights. 
 
 ## Running the Account Engagement enrichment for the first time
 
-
-
-To configure interest affinities enrichment, go to the **Discover** tab and select **Enrich my data** on the **Interests** tile.
-
-   > [!div class="mx-imgBorder"]
-   > ![Brands and Interests tiles.](media/BrandsInterest-tile-Hub.png "Brands and Interest tiles")
+When the enrichment is started for the first time, the data download will commence. Therefore, there are no data available for aggregation, so the enrichment will not yield any results. It is recommended to run the enrichment again when data has been downloaded, which takes between several hours to several days depending on the volume of email and meeting data.
 
 ## How the engagement data are aggregated
 
@@ -65,7 +62,7 @@ To configure interest affinities enrichment, go to the **Discover** tab and sele
 
 Run the enrichment after configuring brands, interests, and the field mapping for demographics. To start the process, select **Run** on the brand or interest configuration page. Additionally, you can let the system run the enrichment automatically as part of a scheduled refresh.
 
-Depending on the size of your customer data, it may take several minutes for an enrichment run to complete.
+Depending on the size of your customer data, it may take several hours for an enrichment run to complete.
 
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you'll find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
