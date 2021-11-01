@@ -67,6 +67,8 @@ After running the enrichment process, go to **My enrichments** to review the enr
 
 You will also see a chart of the number of enriched customers over time as well as a preview of the enrichment data.  
 
+:::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
+
 All data is aggregated up to the account level. An engagement score, which ranges from 0 to 100, with 100 being the highest engagement, is calculated for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. The following is a list of the aggregated data that is being provided by the Account engagement enrichment:
 
 
@@ -90,7 +92,6 @@ All data is aggregated up to the account level. An engagement score, which range
 | Aggregation start date                                                            |  AggregationStartDate                    | 
 | Aggregation level (year, month, or week)                                          |  AggregationLevel                        | 
 
-:::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
 Review the enriched data by selecting **See more** in the preview tile. Doing so takes you to the **Office** entity. You will also find the entity listed in the **Enrichment** group in **Data** > **Entities**. Here you will also find the **Office_UserEntity**, which contains the Active Directory IDs for the email addresses from your organization that were chosen for processing in the configuration step. 
 
