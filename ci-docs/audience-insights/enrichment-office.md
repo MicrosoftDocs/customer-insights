@@ -13,7 +13,7 @@ manager: skummer
 
 # Enrich customer profiles with engagement data (preview)
 
-Use data from Microsoft Office to enrich your customer account profiles with engagement data. The engagement data consists of email and meeting activity aggregated to the account level. This enrichment is available in the following regions: UK, Europe, North America.
+Use data from Microsoft Office 365 to enrich your customer account profiles with engagement data. The engagement data consists of email and meeting activity aggregated to the account level. This enrichment is available in the following regions: UK, Europe, North America.
 
 ## Prerequisites
 
@@ -29,6 +29,19 @@ To configure engagement data, the following prerequisites must be met:
 1. In audience insights, go to **Data** > **Enrichment**.
 
 1. Go to the **Discover** tab and select **Enrich my data** on the **Account Engagement** tile.
+
+   > [!div class="mx-imgBorder"]
+   > ![Account engagement tile.](media/enrichment-office-tile.png "Account engagement tile")
+   
+1. Click **Next** on the overview screen and select email addresses from your organization for which Office data is going to be aggregated. This ensures that data is only processed for relevant communication. A best practice is to use email groups, for example, *US Sales team*, which are easily managed in Office 365. The number of email addresses in the groups are resolved and shown. The total number of email addresses must be at least 2 and cannot exceed 2,500.
+
+1. Review the consent statement, check the **I agree** check box, and click **Next**.
+
+1. Select the customer data set and click **Next**.
+
+1. Now, map the contact email address field and click **Next**.
+
+1. Finally, review the enrichment configuration, give the enrichment a name, and click **Save enrichment** to save the enrichment.
 
 ## Office 365 administrator consent
 
