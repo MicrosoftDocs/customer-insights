@@ -6,7 +6,7 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: jodahl-MS
+author: jodahl
 ms.author: jodahl
 manager: skummer
 ---
@@ -69,22 +69,25 @@ You will also see a chart of the number of enriched customers over time as well 
 
 All data is aggregated up to the account level. An engagement score, which ranges from 0 to 100, with 100 being the highest engagement, is calculated for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. The following is a list of the aggregated data that is being provided by the Account engagement enrichment:
 
-* Engagement score
-* Number of emails to account
-* Number of emails from account
-* Number of meetings initiated by account
-* Number of meetings initiated by your organization
-* Number of people from your organization in meetings with account
-* Number of people from your organization in email conversations with account
-* Number of people from account in meetings with your organization
-* Number of people from account in email conversations with your organization
-* Engagement start date
-* Days since last email
-* Days since last meeting
-* Average duration of meetings
-* Average duration of email replies from account
-* Aggregation start date
-* Aggregation level
+
+| Data                                                                              | Column name                              | Details                                       |
+| --------------------------------------------------------------------------------- |:----------------------------------------:| ---------------------------------------------:|
+| Engagement score                                                                  |  EngagementScore                         | Account engagement relative to other accounts |
+| Number of emails to account                                                       |  NoofEmails_ToAccount                    | |
+| Number of emails from account                                                     |  NoofEmails_FromAccount                  | |
+| Number of meetings initiated by account                                           |  NoofMeetings_FromAccount                | |
+| Number of meetings initiated by your organization                                 |  NoofMeetings_ToAccount                  | |
+| Number of people from your organization in meetings with account                  |  NoOfContactsInvolved_Meetings           | |
+| Number of people from your organization in email conversations with account       |  NoOfContactsInvolved_Emails             | |
+| Number of people from account in meetings with your organization                  |  NoOfAccountContactsInvolved_Meetings    | |
+| Number of people from account in email conversations with your organization       |  NoOfAccountContactsInvolved_Emails      | |
+| Engagement start date                                                             |  EngagementStartDate                     | |
+| Days since last email                                                             |  DaysSinceLastEmail                      | |
+| Days since last meeting                                                           |  DaysSinceLastMeeting                    | |
+| Average duration of meetings                                                      |  AverageDuration_Of_Meetings             | |
+| Average duration of email replies from account                                    |  AverageDuration_Of_AccountEmailReplies  | |
+| Aggregation start date                                                            |  AggregationStartDate                    | |
+| Aggregation level                                                                 |  AggregationLevel                        | |
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
