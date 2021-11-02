@@ -17,6 +17,8 @@ manager: shellyha
 
 Modern marketing efforts collect data in various forms to provide unique experiences for new and existing customers. To create truly personalized experiences, organizations rely on customer data gathered through first-party and third-party sources. Privacy regulations and important evolutions around customer data control requires organizations to constantly adapt their marketing scenarios.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOjdJ]
+
 As an organization that runs on trust, Microsoft empowers its customers to do the same. We provide organizations with tools to honor trust with their own customers to help they stay compliant with regulatory requirements. 
 
 The consent management capability of Dynamics 365 Customer Insights helps organizations manage usage of customer consent. It builds a unified set of consent data from various outlets an organization uses to connect with their customers. 
