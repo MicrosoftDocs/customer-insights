@@ -100,4 +100,5 @@ The lower part contains a list of the segment members.
 >
 >The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, you need to [export the segment](export-destinations.md).
 
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)] 
