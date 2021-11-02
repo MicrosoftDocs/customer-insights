@@ -1,7 +1,7 @@
 ---
 title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
-ms.date: 04/12/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -43,14 +43,7 @@ You'll see the name of each ingested data source, its status, and the last time 
 > [!div class="mx-imgBorder"]
 > ![Data source added.](media/configure-data-datasource-added.png "Data source added")
 
-|Status  |Description  |
-|---------|---------|
-|Successful   |Data source was successfully ingested if a time is mentioned in the **Refreshed** column.
-|Not started   |The data source has no data ingested yet or still in draft mode.         |
-|Refreshing    |Data ingestion is in progress. You can cancel this operation by selecting **Stop refreshing** in the **Actions** column. Stopping the refresh of a data source will revert it to its last refresh state.       |
-|Failed     |Data ingestion ran into errors.         |
-
-Select the value in the **Status** column of any data source to review more details. In the **Progress details** pane, expand **Data sources**. Select **See details** for more information about the refresh status, including error details and downstream process updates.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 Loading data can take time. After a successful refresh, the ingested data can be reviewed from the **Entities** page. For more information, see [Entities](entities.md).
 
