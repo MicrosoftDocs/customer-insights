@@ -11,9 +11,10 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Complete your partial data with predictions
+# Complete your partial data with predictions (deprecated)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> This feature will be **deprecated** as of **November 5, 2021**. Current implementations will continue to work until the feature is removed, but you will not be able to create new integrations using the instructions below.
 
 Predictions lets you easily create predicted values that can enhance your understanding of a customer. On the **Intelligence** > **Predictions** page, you can select **My predictions** to see predictions that you've configured in other parts of audience insights, and allow you to further customize them.
 
