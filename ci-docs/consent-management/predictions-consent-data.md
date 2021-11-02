@@ -4,8 +4,8 @@ description: "Learn how to create prediction models that use consent data."
 ms.date: 10/30/2021
 ms.service: customer-insights
 ms.topic: how-to
-author: smithy7
-ms.author: dimutako
+author: dimutako
+ms.author: smithy7
 ms.reviewer: mhart
 manager: shellyha
 ---
