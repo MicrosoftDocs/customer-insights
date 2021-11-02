@@ -1,7 +1,7 @@
 ---
 title: "Customer activities"
 description: "Define customer activities and view them in a timeline on customer profiles." 
-ms.date: 09/27/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -77,9 +77,7 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
 1. On the **Activities** page, select **Run** to process the activity. 
 
-> [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
-
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Manage existing activities
 

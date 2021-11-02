@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with data from Microsoft"
 description: "Use proprietary data from Microsoft to enrich your customer data with brand and interest affinities."
-ms.date: 06/14/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -111,8 +111,7 @@ Run the enrichment after configuring brands, interests, and the field mapping fo
 
 Depending on the size of your customer data, it may take several minutes for an enrichment run to complete.
 
-> [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you'll find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Enrichment results
 
