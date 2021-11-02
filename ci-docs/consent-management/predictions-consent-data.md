@@ -89,7 +89,7 @@ View the model results to find insights.
 - Likelihood to churn (number of customers): Groups of customers based on their predicted risk of churn. 
 - Most influential factors: Lists the factors that affect the model results. Find out which influence the consent data had by looking at the **Activity** factors. Another way to gauge the influence of consent data is to set up a model without consent data and compare the results to this model.
 
-:::image type="content" source="media/influential-factors-activity.png" alt-text="Influential factors in the model ouput.":::
+:::image type="content" source="media/influential-factors-activity.png" alt-text="Influential factors in the model output.":::
 
 For more information on model results, see [Transaction churn prediction](../audience-insights/predict-transactional-churn.md).
 
