@@ -5,7 +5,7 @@ ms.date: 10/30/2021
 ms.service: customer-insights
 ms.topic: how-to
 author: dimutako
-ms.author: smithy7
+ms.author: dimutako
 ms.reviewer: mhart
 manager: shellyha
 ---
