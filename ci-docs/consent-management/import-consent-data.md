@@ -15,7 +15,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Consent management lets you import data about the consent agreements from your customers. There are two types of consent data: subscriptions and purposes. Subscriptions are channels of communication to existing or prospective customers. Purposes indicate how data can be used and processed.
+Consent management lets you import data about the consent agreements you have with your customers. There are two types of consent data: subscriptions and purposes. Subscriptions are channels of communication to existing or prospective customers. Purposes indicate how data can be used and processed.
 
 ## How to import consent data
 
@@ -62,15 +62,15 @@ After setting up the consent management capability, the first-run experience gui
 
 ## Data requirements for consent data
 
-Consent data will be mapped to a system-defined schema, the [consent entity](glossary.md#consent-entity). The type of consent data you want to import determines the required data fields. 
+Consent data will be mapped to a system-defined schema - the [consent entity](glossary.md#consent-entity). The type of consent data you want to import determines the required data fields. 
 
 ### Subscription consent data
 
 Required data fields: 
 
 - Subscription name
-- Email or phone number
-- Method of contact (email or phone)
+- Email, phone number, or UserID
+- Identifier type (Email, phone number, or UserID)
 - Consent status
 - Consent start date
 - Consent expiration date

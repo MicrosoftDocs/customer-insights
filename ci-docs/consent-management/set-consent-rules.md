@@ -17,7 +17,7 @@ manager: shellyha
 
 Define how customer data is used based on a customer's consent preferences. You can choose to include or exclude customer data from business activities that involve usage of customer data. For example, you can exclude customers from your product announcements if they haven't given consent for marketing emails.
 
-## Start the consent rules process
+## Start the consent rules setup process
 
 First, [import consent data](import-consent-data.md) before your configure consent rules. 
 
@@ -58,7 +58,7 @@ In this step, you choose which purposes and subscriptions will have the rule map
 
 1. Review the configuration and select **Set rules** to complete the process. 
 
-1. Select **Done** go complete the guided experience and enforce the mapping in business processes.
+1. If you have selected certain rules to apply as default rules, select **Activate consent rules in Customer Insights** to go to audience insights and [activate default rules](../audience-insights/activate-consent.md). Otherwise, select **Done** to complete the guided experience and enforce the mapping in business processes.
 
 ## Activate rules in audience insights
 

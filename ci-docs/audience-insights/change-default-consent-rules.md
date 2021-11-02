@@ -14,7 +14,7 @@ manager: shellyha
 
 If your organizations uses the [consent management capability](../consent-management/overview.md) combined with audience insights, [admins can enforce consent](activate-consent.md) for segments. 
 
-With enforced consent rules in the segment area, every segment informs about the state of consent check and rules. If overrides are allowed, administrators can deactivate default consent rules. Every creator of a segment can add more consent rules for a segment. 
+With enforced consent rules in the segment area, every segment informs about the state of consent check and rules. If overrides are allowed, default consent rules are turned off for specific segments. Every creator of a segment can add more consent rules for a segment. 
 
 :::image type="content" source="../consent-management/media/consent-rules-segment.png" alt-text="Segment builder with consent rule options.":::
 

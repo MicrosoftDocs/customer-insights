@@ -30,7 +30,7 @@ Select **Go to Consent Center** from the **Home** page of audience insights. It 
 
 In Consent Center, [import the consent data](import-consent-data.md) your organization collected through a broad set of available connectors.
 
-## Step 3: Configure default rules for consent data
+## Step 3: Configure consent data rules and define default rules
 
 After successfully importing consent data, [configure consent data rules](set-consent-rules.md) and set rules to apply by default.
 

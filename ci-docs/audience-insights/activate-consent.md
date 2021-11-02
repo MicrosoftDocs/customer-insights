@@ -27,8 +27,7 @@ With consent data imported to Consent Center (preview) and rules set up, you can
 
 1. In the **Enable consent checks** section, set the toggle for the area you want to enable to **On**.
 
-1. Select the **Allow override of default consent rules** checkbox to enable admins to remove the enforced consent checks when they work in the selected area. In the dropdown menu, select where you want to allow overrides.    
-For example, if you allow overrides for [segments](segments.md), users can freely create new segments in audience insights. These segments might include customers who didn't give consent to have their data used. Those customers would be filtered from the segment if the default consent check is enforced. 
+1. Select the **Allow override of default consent rules** checkbox to remove the default consent checks enforced on a particular segment. In the dropdown menu, select where you want to allow overrides on.     
 
 1. In the **Link consent to customer profiles** section, choose the attribute that is used as an identifier to link consent data to customer data. It's likely a phone number or an email address. 
 
@@ -42,4 +41,4 @@ To stop using consent data in audience insights, an admin has to update the syst
 
 1. Select the **Consent (preview)** tab.
 
-1. In the **Enable consent checks** section and set the toggles to **Off**.
+1. In the **Enable consent checks** section and set the toggle to **Off**.
