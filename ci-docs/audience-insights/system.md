@@ -27,17 +27,17 @@ The **System** page includes the following tabs:
 
 ## Status tab
 
-The **Status tab** lets you track the progress of tasks, data ingestion, data exports, and several other important product processes. Review the information on this tab to ensure the completeness of you active tasks and processes.
+The **Status tab** lets you track the progress of tasks, data ingestion, data exports, and several other important product processes. Review the information on this tab to ensure the completeness of your active tasks and processes.
 
 This tab includes tables with status and processing information for various processes. Each table tracks the **Name** of the task and its corresponding entity, the **Status** of its most recent run, and when it was **Last updated**. You can view the details of the last several runs by selecting the task or process name. 
 
-Click the status next to the task or process in the **Status** column to open the **Progress details** pane.
+Select the status next to the task or process in the **Status** column to open the **Progress details** pane.
 
    :::image type="content" source="media/system-progress-details.png" alt-text="System progress details pane":::
 
 ### Status definitions
 
-These are the current statuses for tasks and processes:
+The system uses the following statuses for tasks and processes:
 
 |Status  |Definition  |
 |---------|---------|
@@ -99,7 +99,7 @@ The **About** tab contains your organization's **Display name**, the active **En
 
 You can change the language and the country/region format on the **General** tab.
 
-Customer Insights [supports a number of languages](/dynamics365/get-started/availability). The app uses your language preference to display elements like the menu, label text, and system messages in your preferred language.
+Customer Insights [supports many languages](/dynamics365/get-started/availability). The app uses your language preference to display elements like the menu, label text, and system messages in your preferred language.
 
 Imported data and information you entered manually aren't translated.
 
@@ -122,7 +122,7 @@ The **API usage** contains three sections:
 
 -  **Operations** - a table with rows for each available API operation and details about the usage of the operations. You can select an operation name to go to [the API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
-   Operations which use [real-time data ingestion](real-time-data-ingestion.md) contain a button with a binocular symbol to view real-time API usage. Select the button to open a side pane containing usage details for the real-time API usage in the current environment.   
+   Operations that use [real-time data ingestion](real-time-data-ingestion.md) contain a button with a binocular symbol to view real-time API usage. Select the button to open a side pane containing usage details for the real-time API usage in the current environment.   
    Use the **Group by** box in the **Real-time API usage** pane to choose how to best present your real-time interactions. You can group the data by API method, entity qualified name (ingested entity), created by (source of the event), result (success or failure) or error codes. The data is available as a history chart and as a table.
 
 ## Security tab

@@ -183,12 +183,9 @@ Choose **Run Merge and downstream processes** to refresh the system with your ch
 
 To make more changes and rerun the step, you can cancel an in-progress merge. Select **Refreshing ...** and select **Cancel job**  in the side pane that appears.
 
-> [!TIP]
-> After running the merge process, select the process status to open the **Task details** pane. It gives an overview about the processing time, the last processing date, and all errors and warnings associated with the task. Select **See details** to see which entities participated in the match process, if the conflict resolution succeeded, and if the updates were published successfully.  
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 :::image type="content" source="media/process-detail-path.png" alt-text="Drill-down path to get to process details from the task status link.":::
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Next Step
 
