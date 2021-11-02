@@ -22,6 +22,42 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## October 2021 updates
+
+The updates in October 2021 include a new features, performance upgrades, and bug fixes.
+
+## B-to-B
+
+Starting in October 2021, you can work with business accounts and their related contacts in Customer Insights. Before, the app was mostly tailored towards individual consumers. In addition to a new environment type, several feature areas were updated to support B-to-B scenarios. 
+For an overview on supported B-to-B features, see [Work with business accounts in audience insights](work-with-business-accounts.md).
+
+The following sections highlight some of the key areas that were adapted to support business accounts in addition to individual consumers.
+
+### Export segments based on business accounts
+
+All segment exports in audience insights are available in the context of business accounts. Most segment exports require extra configuration and [contact information projected](segment-builder.md#create-a-new-segment) in the underlying segments to be valid for business accounts. For more information, see [Export segments](export-destinations.md#export-segments).
+
+### Use the LinkedIn Ads export with business accounts
+
+The LinkedIn Ads export is now available for contact targeting and company targeting in the context of business accounts. When selecting company targeting as your primary focus of the LinkedIn export, you can export segments built on business accounts without the need to project contact information. For more information, go to the docs about [LinkedIn Ads export](export-linkedin-ads.md) and the difference between [contact targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) and [company targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting). 
+
+### Create measures based on business accounts and their hierarchy
+
+With business accounts now supported in Customer Insights, the measure builder now has the ability to create a measure around business accounts and the ability to optionally use the hierarchy information to roll up a measure/calculation across an account and all its related subaccounts allowing you to create measures like total revenue for each group of business accounts identified by their hierarchy. Read more about Business-to-business Measure Builder.
+
+### Create segments based on business accounts and their hierarchy
+
+As part of enabling business accounts in Customer Insights, the segment builder now supports the ability to create a segment of business accounts and the ability to optionally include contact information for each of those accounts in the segment. In addition, if you have account hierarchy setup, it is now possible to use account hierarchy information for segment creation. Read more about Business-to-business Segment Builder.
+
+### Retain your business accounts with deep insights to their propensity to churn
+
+New to Customer Insights as part of the capabilities available for Business accounts is the ability to build a churn model for these accounts. Taking this one step further, you can evaluate the risk of churn not just for an account but for a combination of an account and a product/service category that they buy from you allowing you to understand if an account is more likely to stop buying from you all up or just for a certain category or type of goods or services. To further help you leverage this AI model, it also offers up the top reasons why an account or account+product category is likely to churn. Read more about Business-to-business churn model with explainability.
+
+### See contacts of a business account in Customer view
+
+With the possibility of business accounts having accounts mapped to them, the Customer insights web app will show these account’s contacts. This data is shown as part of the Customer details view. Read more about Customer details page.
+
+
 ## September 2021 updates
 
 The updates in September 2021 include a new features, performance upgrades, and bug fixes.
