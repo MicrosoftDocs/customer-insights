@@ -1,0 +1,55 @@
+### YamlMime:Landing
+
+metadata:
+  title: Help hub
+  author: m-hartmann
+  description: Find relevant articles to start with help content.
+  ms.author: mhart
+  ms.date: 10/30/2021
+  ms.service: customer-insights
+  ms.subservice: consent-management
+  ms.topic: landing-page
+
+title: Consent management, a capability of Dynamics 365 Customer Insights docs
+summary: Find helpful resources to get started and learn about features.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  - title: Meet consent management
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Consent management overview
+            url: overview.md
+          - text: Release plans
+            url: /dynamics365-release-plan/
+
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Quickstart guide
+            url: get-started.md
+          - text: Terms and concepts
+            url: glossary.md
+
+  - title: Import consent data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: How to import data
+            url: import-consent-data.md
+          - text: How to map consent data
+            url: set-consent-rules.md
+
+  - title: Activate consent data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: How to enforce consent rules
+            url: ../audience-insights/activate-consent.md
+          - text: How to override consent rules
+            url: ../audience-insights/change-default-consent-rules.md
