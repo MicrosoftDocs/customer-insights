@@ -11,9 +11,7 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Complete your partial data with predictions (Deprecated)
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+# Complete your partial data with predictions (deprecated)
 
 > [!IMPORTANT]
 > This feature will be **deprecated** as of **November 5, 2021**. Current implementations will continue to work until the feature is removed, but you will not be able to create new integrations using the instructions below.
