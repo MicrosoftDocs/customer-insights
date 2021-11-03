@@ -1,7 +1,7 @@
 ---
 title: "Activate consent rules for segments in audience insights"
 description: "Steps to link consent data and activate consent checks in audience insights."
-ms.date: 10/30/2021
+ms.date: 11/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -27,7 +27,9 @@ With consent data imported to Consent Center (preview) and rules set up, you can
 
 1. In the **Enable consent checks** section, set the toggle for the area you want to enable to **On**.
 
-1. Select the **Allow override of default consent rules** checkbox to remove the default consent checks enforced on a particular segment. In the dropdown menu, select where you want to allow overrides on.     
+1. Select the **Allow override of default consent rules** checkbox to remove the default consent checks enforced on a particular segment. 
+
+1. In the dropdown menu, select where you want to allow overrides.     
 
 1. In the **Link consent to customer profiles** section, choose the attribute that is used as an identifier to link consent data to customer data. It's likely a phone number or an email address. 
 
