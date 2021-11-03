@@ -19,7 +19,7 @@ Consent management lets you import data about the consent agreements you have wi
 
 ## How to import consent data
 
-After setting up the consent management capability, the first-run experience guides you to start of the data import process. You can also start the process by going to **Home** or **Consent** in the left pane of the consent center. The steps to import consent data are the same, wherever you start the process. 
+After you [set up the consent management](get-started.md) capability, the first-run experience guides you to start of the data import process. You can also start the process by going to **Home** or **Consent** in the left pane of the consent center. The steps to import consent data are the same, wherever you start the process. 
 
 :::image type="content" source="media/first-run-consent-data-import.PNG" alt-text="First run experience for consent data import.":::
 
