@@ -52,7 +52,7 @@ Consent from an Office 365 tenant administrator is required to activate the enri
 
 ## Running the Account Engagement enrichment for the first time
 
-When the enrichment is started for the first time, the data download will commence. Therefore, there are no data available for aggregation, so the enrichment will not yield any results. It is recommended to run the enrichment again when data has been downloaded, which takes between several hours to several days depending on the volume of email and meeting data.
+When the enrichment is started for the first time, the data download will commence. Therefore, there are no data available for aggregation, so the enrichment will not yield any results. It is recommended to run the enrichment again when data has been downloaded, which takes between several hours to several days depending on the volume of email and meeting data. You can see the number of days that the data covers on the account engagement overview page.
 
 To start the process, select **Run** on the Account engagement configuration page. Additionally, you can let the system run the enrichment automatically as part of a scheduled refresh.
 
