@@ -15,7 +15,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-The consent management capability in Dynamics 365 Customer Insights, lets you configure some system settings for your environments. 
+The [consent management capability](overview.md) in Dynamics 365 Customer Insights, lets you configure some system settings for your environments. 
 
 :::image type="content" source="media/system-settings.png" alt-text="Excerpt of the system settings view.":::
 
