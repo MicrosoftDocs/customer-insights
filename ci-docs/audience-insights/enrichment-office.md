@@ -48,7 +48,7 @@ To configure engagement data, the following prerequisites must be met:
 
 ## Office 365 tenant administrator consent
 
-Consent from an Office 365 tenant administrator is required to activate the enrichment. An email is sent to the Office 365 tenant administators when the enrichment is saved, which asks them to review and consent to aggregating the Office data into Customer Insights. The Office 365 tenant administator can also consent directly in their Office 365 admin console.
+Consent from an Office 365 tenant administrator is required to activate the enrichment. An email is sent to the Office 365 tenant administators when the enrichment is saved, which asks them to review and consent to aggregating the Office data into Customer Insights. The Office 365 tenant administator can also consent directly in their Office 365 admin console, by selecting *Insights for the Organization*.
 
 ## Running the Account Engagement enrichment for the first time
 
