@@ -14,7 +14,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Build out-of-box prediction models in audience insights to predict customer churn or customer lifetime value. Use consent data from the consent management capability to increase the accuracy of the predictions. Understand the influence of customer consent on customer churn and the customer lifetime value. 
+Build out-of-box prediction models in audience insights to predict customer churn or customer lifetime value. Use consent data from the [consent management](overview.md) capability to increase the accuracy of the predictions. Understand the influence of customer consent on customer churn and the customer lifetime value. 
 
 This article outlines how to use consent data in out-of-box models. The steps below focus on the transaction churn model. However, you can apply the same steps to the subscription churn and customer lifetime value models. 
 
@@ -23,18 +23,18 @@ This article outlines how to use consent data in out-of-box models. The steps be
 The following list includes the entities that are required and the fields these entities must contain. For more information, see [Prerequisites for a transaction model](../audience-insights/predict-transactional-churn.md).
 
 1. *Subscription consent* entity
-    - Primary key or ID: A primary key for each unique consent value. It needs unique values in each row. For example: email or customer ID. 
-    - Customer ID: A customer identifier that links the consent entity to the customer entity and their transaction data. This identifier should be the same across all required entities. 
-    - Consent start date: The date that consent was updated. This field can also include time.
-    - Consent status: A consent value that indicates which customers consented.
+    - **Primary key or ID:** A primary key for each unique consent value. It requires unique values in each row. For example, email or customer ID. 
+    - **Customer ID:** A customer identifier that links the consent entity to the customer entity and their transaction data. This identifier should be the same across all required entities. 
+    - **Consent start date:** The date that consent was updated. This field can also include time.
+    - **Consent status:** A consent value that indicates which customers consented.
     
 2.	*Customer transaction* entity
-    - Transaction ID: A primary key for each transaction.
-    - Customer ID: A customer identifier that links the consent entity to the customer entity and their transaction data. This identifier should be the same across all required entities. 
-    - Transaction date: Date of each transaction.
-    - Value of transaction: Transaction amount of each transaction.
-    - Label assigned to returns (optional): Boolean value that indicates if the transaction is a return.
-    - Unique product ID (optional): ID that represents the product or service of the transaction. 
+    - **Transaction ID:** A primary key for each transaction.
+    - **Customer ID:** A customer identifier that links the consent entity to the customer entity and their transaction data. This identifier should be the same across all required entities. 
+    - **Transaction date:** Date of each transaction.
+    - **Value of transaction:** Transaction amount of each transaction.
+    - **Label assigned to returns** (optional): Boolean value that indicates if the transaction is a return.
+    - **Unique product ID** (optional): ID that represents the product or service of the transaction. 
 
 3.	*Customer* entity with a primary key representing each unique customer. This identifier should be the same across all required entities. 
 
@@ -85,9 +85,9 @@ Follow the instructions to [create a transaction model](../audience-insights/pre
 
 View the model results to find insights.
 
-- Training model performance: Indicates the performance of the prediction based on how many customers it predicted accurately. Adding consent data and other optional data helps increase the likelihood of precise predictions. 
-- Likelihood to churn (number of customers): Groups of customers based on their predicted risk of churn. 
-- Most influential factors: Lists the factors that affect the model results. Find out which influence the consent data had by looking at the **Activity** factors. Another way to gauge the influence of consent data is to set up a model without consent data and compare the results to this model.
+- **Training model performance:** Indicates the performance of the prediction based on how many customers it predicted accurately. Adding consent data and other optional data helps increase the likelihood of precise predictions. 
+- **Likelihood to churn** (number of customers): Groups of customers based on their predicted risk of churn. 
+- **Most influential factors:** Lists the factors that affect the model results. Find out which influence the consent data had by looking at the **Activity** factors. Another way to gauge the influence of consent data is to set up a model without consent data and compare the results to this model.
 
 :::image type="content" source="media/influential-factors-activity.png" alt-text="Influential factors in the model output.":::
 

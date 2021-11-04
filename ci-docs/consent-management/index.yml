@@ -5,7 +5,7 @@ metadata:
   author: m-hartmann
   description: Find relevant articles to start with help content.
   ms.author: mhart
-  ms.date: 10/30/2021
+  ms.date: 11/3/2021
   ms.service: customer-insights
   ms.subservice: consent-management
   ms.topic: landing-page
@@ -40,16 +40,16 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: How to import data
+          - text: Import data
             url: import-consent-data.md
-          - text: How to map consent data
+          - text: Map consent data
             url: set-consent-rules.md
 
   - title: Activate consent data
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: How to enforce consent rules
+          - text: Enforce consent rules
             url: ../audience-insights/activate-consent.md
-          - text: How to override consent rules
+          - text: Override consent rules
             url: ../audience-insights/change-default-consent-rules.md
