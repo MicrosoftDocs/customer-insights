@@ -56,7 +56,7 @@ When the enrichment is started for the first time, after the Office 365 tenant a
 
 To start the process, select **Run** on the Account engagement configuration page. Additionally, you can let the system run the enrichment automatically as part of a scheduled refresh.
 
-Depending on the size of your customer data, it may take several hours for an enrichment run to complete.
+Depending on the size of your Office data, it may take several hours for an enrichment run to complete.
 
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you'll find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
