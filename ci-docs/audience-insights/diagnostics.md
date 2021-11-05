@@ -1,18 +1,23 @@
 ---
-title: "Export logs from Dynamics 365 Customer Insights | Microsoft Docs"
-description: "Learn how to export logs to Microsoft Azure Monitor."
-ms.date: 16/03/2021
+title: "Audit and Observe Dynamics 365 Customer Insights with Azure Monitor | Microsoft Docs"
+description: "Learn how to send logs to Microsoft Azure Monitor."
+ms.date: 04/11/2021
 ms.reviewer: mhart
 ms.service: dynamics-365-ai
 ms.topic: "article"
-author: brndkfr
-ms.author: bkief
+author: brndkfr, andbalan
+ms.author: bkief, andbalan
 manager: shellyha
 ---
 
-# Export logs to Azure Monitor (Preview)
+# Audit and Observe Dynamics 365 Customer Insights with Azure Monitor (Preview)
 
-Dynamics 365 Customer Insights is integrated with Microsoft Azure Monitor. With Azure Monitor resource logs, you can monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/) or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
+Dynamics 365 Customer Insights is integrated with Microsoft Azure Monitor. With Azure Monitor resource logs, you can monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/) and to [Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/logs/log-analytics-overview) or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
+
+- **Audit Events** - enables change tracking done via the Dynamics 365 Customer Insights UI.
+- **Operational Events**
+  - **Workflow Monitoring** - The Workflow allows one to setup [Data Sources](data-sources.md), [unify](data-unification.md) and [enrich](enrichment-hub.md) and finally [export](export-destinations.md) data into other systems. All those steps can be done individually (e.g. trigger a single export) or orchestrated (e.g. data refresh from data sources which trigger the unification process which will pull in additional enrichments and once done export the data into another system). For more details see the [WorkflowEvent Schema](#workflow-event-schema).
+  - **APIEvents** - all API calls to the customers instance to Dynamics 365 Customer Insights.
 
 ## Set up the diagnostic settings
 
@@ -22,12 +27,9 @@ To configure the diagnostic setup in Customer Insights, the following prerequisi
 
 - You have an active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - You have [Administrator](permissions.md#administrator) permissions in Customer Insights.
-- You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can either be an Azure Storage account or Azure Event Hub. For more information, see [Add or remove Azure role assignments using the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
-- Ensure that the [Destination requirements](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage or Azure Event Hub are met.
+- You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can be an Azure Storage account, an Azure Event Hub or an Azure Log Analytics workspace. For more information, see [Add or remove Azure role assignments using the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+- Ensure that the [Destination requirements](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage, Azure Event Hub or Azure Log Analytics are met.
 - You have at least the **Reader** role on the resource group the resource belongs to.
-
-  > [!Warning]
-  > Azure Data Lake Storage Gen2 accounts are not currently supported as a destination for diagnostic settings even though they may be listed as a valid option in the Azure portal.
 
 ### Set up diagnostics with Azure Monitor
 
@@ -42,7 +44,7 @@ To configure the diagnostic setup in Customer Insights, the following prerequisi
 
 1. Choose the **Tenant** of the Azure subscription with the destination resource and select **Sign in**.
 
-1. Select the **Resource Type** (Storage account or Event hub).
+1. Select the **Resource Type** (Storage account, Event hub or Log Analytics).
 
 1. Select the **Subscription** containing the destination resource.
 
@@ -64,20 +66,48 @@ To configure the diagnostic setup in Customer Insights, the following prerequisi
 
 1. Confirm the deletion to stop the log forwarding. The resource on the Azure subscription won't be deleted. You can select the link in the Actions column to open the Azure portal for the selected resource and delete it there.
 
-## Log Categories and Schema
+## Log Categories and Event Schemas
 
 Currently [API events](apis.md) and Workflow events are supported and the following categories and schema apply.
+The log schema is following the [Azure Monitor common schema](https://docs.microsoft.com/azure/azure-monitor/platform/resource-logs-schema#top-level-common-schema).
 
 ### Categories
 
-Customer Insights provides two categories
+Customer Insights provides two categories:
 
-- `insights-logs-operational` - Events generated using the service, for example `GET` requests or the execution events of a workflow.
-- `insights-logs-audit` -  API Events tracking the configuration changes on the service. `POST|PUT|DELETE|PATCH` operations go into this category.
+- **Audit Events** -  [API Events](#api-event-schema) tracking the configuration changes on the service. `POST|PUT|DELETE|PATCH` operations go into this category.
+- **Operational Events** - [API](#api-event-schema) or [Workflow Events](#workflow-event-schema) generated while using the service, for example `GET` requests or the execution events of a workflow.
+
+### Configuration on the destination resource
+
+Based on your choice on the resource type the following steps will automatically apply:
+
+#### **Storage Account**
+
+Customer Insights Service Principal will be granted `Storage Account Contributor` permission on the selected resource and will create two containers under the selected namespace:
+
+- `insight-logs-audit` containing **Audit Events**
+- `insight-logs-operational` containing **Operational Events**
+
+#### **Event Hub**
+
+Customer Insights Service Principal will be granted `Azure Event Hubs Data Owner` permission on the resource and will create two EventHubs under the selected namespace:
+
+- `insight-logs-audit` containing **Audit Events**
+- `insight-logs-operational` containing **Operational Events**
+
+#### **Log Analytics**
+
+Customer Insights Service Principal will be granted `Log Analytics Contributor` permission to the resource. The logs will be available under `Logs > Tables > LogManagement` on the selected LogAnalitycs workspace. Expand the Log Management solution and locate the `CIEventsAudit` and `CIEventsOperational` tables.
+
+- `CIEventsAudit` containing **Audit Events**
+- `CIEventsOperational` containing **Operational Events**
+
+Under the Queries window expand the Audit solution and locate the example queries provided by searching for `CIEvents`.
 
 ### General Schema
 
-The log schema is following the [Azure Monitor common schema](https://docs.microsoft.com/azure/azure-monitor/platform/resource-logs-schema#top-level-common-schema). API events and Workflow events have a common structure and details where they differ, see [API event schema](#api-event-schema) or [Workflow event schema](#workflow-event-schema).
+API events and Workflow events have a common structure and details where they differ, see [API event schema](#api-event-schema) or [Workflow event schema](#workflow-event-schema).
 
 ### API event schema
 
@@ -206,4 +236,4 @@ Workflow events have following properties.
 | `properties.additionalInfo.Kind`             | No       | Yes  | Optional. For OperationType `Export` only. Identifies the kind of the export. See also the [overview of Export destinations](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/export-destinations).                     |
 | `properties.additionalInfo.AffectedEntities` | No       | Yes  | Optional. For OperationType `Export` only. Identifies the kind of the export. Contains a ist of configured entities in the export.                                                                                                                      |
 | `properties.additionalInfo.MessageCode`      | No       | Yes  | Optional. For OperationType `Export` only. Detailed Message for the export.                                                                                                                                                                             |
-| `properties.additionalInfo.entityCount`      | No       | Yes  | Optional. For OperationType `Segmentation` only. Indicating the total numbers of members the segment has.                                                                                                                                               |
+| `properties.additionalInfo.entityCount`      | No       | Yes  | Optional. For OperationType `Segmentation` only. Indicating the total numbers of members the segment has.                                                                                                |
