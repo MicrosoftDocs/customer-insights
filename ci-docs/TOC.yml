@@ -104,6 +104,8 @@
           href: audience-insights/enrichment-enhanced-company-data.md
         - name: Enrich with Azure Maps
           href: audience-insights/enrichment-azure-maps.md
+        - name: Enrich with Dun & Bradstreet
+          href: audience-insight/dnb-enrichment.md
         - name: Enrich with HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Enrich with Leadspace
