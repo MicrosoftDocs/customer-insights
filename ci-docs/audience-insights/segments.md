@@ -1,7 +1,7 @@
 ---
 title: "Segments in audience insights"
 description: "Overview on segments and how to create and manage them."
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -60,8 +60,7 @@ The following action are available when you select a segment:
 
 You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**.
 
-> [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Export segments
 
@@ -100,5 +99,6 @@ The lower part contains a list of the segment members.
 > Fields that appear in this list are based on the attributes of your segment's entities.
 >
 >The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, you need to [export the segment](export-destinations.md).
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)] 
