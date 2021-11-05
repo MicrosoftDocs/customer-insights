@@ -12,7 +12,7 @@ manager: shellyha
 
 # Audit and Observe Dynamics 365 Customer Insights with Azure Monitor (Preview)
 
-Dynamics 365 Customer Insights is integrated with Microsoft Azure Monitor. With Azure Monitor resource logs, you can monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/) and to [Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/logs/log-analytics-overview) or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
+Dynamics 365 Customer Insights is integrated with Microsoft Azure Monitor. With Azure Monitor resource logs, you can monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), to [Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/logs/log-analytics-overview) or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
 
 - **Audit Events** - enables change tracking done via the Dynamics 365 Customer Insights UI.
 - **Operational Events**
