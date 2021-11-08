@@ -8,7 +8,7 @@ ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahl
 ms.author: jodahl
-manager: skummer
+manager: stefan.kummer
 ---
 
 # Enrich customer profiles with engagement data (preview)
