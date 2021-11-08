@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with data from Microsoft"
-description: "Use proprietary data from Microsoft to enrich your customer data with brand and interest affinities & share of voice."
-ms.date: 11/01/2021
+description: "Use proprietary data from Microsoft to enrich your customer data with affinities and share of voice."
+ms.date: 11/11/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,9 +11,9 @@ ms.author: kishorem
 manager: shellyha
 ---
 
-# Enrich customer profiles with brand and interest affinities & share of voice (preview)
+# Enrich customer profiles with affinities and share of voice (preview)
 
-Use Microsoft's proprietary data to enrich your customer data with brand and interest affinities & share of voice (SoV). These affinities and SoV are based on data from people with demographics similar to your customers. This information helps you to better understand and segment your customers based on their affinities or SoV to specific brands and interests.
+Use Microsoft's proprietary data to enrich your customer data with brand affinities, interest affinities, and share of voice (SoV). These affinities and SoV are based on data from people with demographics similar to your customers. This information helps you to better understand and segment your customers based on their affinities or SoV to specific brands and interests.
 
 In audience insights, go to **Data** > **Enrichment** to [configure and view enrichments](enrichment-hub.md).
 
@@ -28,9 +28,9 @@ To configure interest affinities enrichment, go to the **Discover** tab and sele
 
 We use Microsoft’s online search data to find affinities and SoV for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest forms the basis for determining the affinity or SoV. However, each provides a different perspective to understanding your customers.
 
-- Affinity is a comparative across demographic segments. You can use this to identify those demographic segments that have the highest affinity, as compared to other segments, for a given brand or interest.
+- Affinity is a comparative across demographic segments. You can use this information to identify demographic segments that have the highest affinity for a given brand or interest, compared to other segments.
 
-- SoV is a comparative across your selected brands or interests. You can use this to identify which brand or interest has the highest share-of-voice, as compared to other brands or interests you selected, for a given demographic segment.
+- Share of voice is a comparative across your selected brands or interests. You can use this information to identify which brand or interest has the highest share-of-voice for a given demographic segment, compared to other brands or interests you selected.
 
 ## Affinity level and score
 
@@ -50,7 +50,7 @@ Depending on the granularity you would like for measuring the affinity, you can 
 
 ## Share of voice (SoV)
 
-We compute SoV on a 100-point scale, with the total SoV across all brands or interests for every enriched customer profile always adding up to 100. Unlike affinity, SoV is relative to the brands and interests you select. For example, the SoV values for 'Microsoft' on a given customer profile can be different if the chosen brands are ('Microsoft', 'Github') versus ('Microsoft', 'LinkedIn').
+We calculate SoV on a 100-point scale. The total SoV across all brands or interests for every enriched customer profile adds up to 100. Unlike affinities, SoV is relative to the brands and interests you select. For example, the SoV values for 'Microsoft' can be different if the selected brands are ('Microsoft', 'GitHub') versus ('Microsoft', 'LinkedIn').
 
 ## Supported countries/regions
 
@@ -127,11 +127,11 @@ After running the enrichment process, go to **My enrichments** to review the tot
 
 :::image type="content" source="media/my-enrichments.png" alt-text="Preview of results after running the enrichment process.":::
 
-You will see a chart with the number of enriched customer profiles over time and previews of the enriched entities. Review the enriched data by selecting **See more** in the either Affinity Level or Share of Voice charts. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** entities. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** entities. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
+You'll find a chart with the number of enriched customer profiles over time and previews of the enriched entities. Review the enriched data by selecting **See more** in the **Affinity Level** or **Share of Voice** charts. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** entities. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** entities. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
 
 ## See enrichment data on the customer card
 
-Brand and interest SoV can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find charts for the brands or interests SoV based on people in that customer's demographic profile.
+Brand and interest SoV can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find charts for the brand or interest SoV based on people in that customer's demographic profile.
 
 :::image type="content" source="media/enrichment-customer-card.png" alt-text="Customer card with enriched data.":::
 
