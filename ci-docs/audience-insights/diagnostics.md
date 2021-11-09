@@ -1,7 +1,7 @@
 ---
 title: "Audit Dynamics 365 Customer Insights with Azure Monitor"
 description: "Learn how to send logs to Microsoft Azure Monitor."
-ms.date: 04/11/2021
+ms.date: 11/09/2021
 ms.reviewer: mhart
 ms.service: dynamics-365-ai
 ms.topic: "article"
@@ -12,7 +12,7 @@ manager: shellyha
 
 # Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (Preview)
 
-Dynamics 365 Customer Insights provides a direct integration with Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview.md), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
+Dynamics 365 Customer Insights provides a direct integration with Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
 
 Customer Insights is sends the following event logs:
 
@@ -30,8 +30,8 @@ To configure diagnostics in Customer Insights, the following prerequisites must 
 
 - You have an active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - You have [Administrator](permissions.md#administrator) permissions in Customer Insights.
-- You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can be an Azure Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal.md).
-- [Destination requirements](/azure/azure-monitor/platform/diagnostic-settings.md#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics met.
+- You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can be an Azure Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
+- [Destination requirements](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics met.
 - You have at least the **Reader** role on the resource group the resource belongs to.
 
 ### Set up diagnostics with Azure Monitor
@@ -72,7 +72,7 @@ To configure diagnostics in Customer Insights, the following prerequisites must 
 ## Log Categories and Event Schemas
 
 Currently [API events](apis.md) and workflow events are supported and the following categories and schemas apply.
-The log schema follows the [Azure Monitor common schema](/azure/azure-monitor/platform/resource-logs-schema.md#top-level-common-schema).
+The log schema follows the [Azure Monitor common schema](/azure/azure-monitor/platform/resource-logs-schema#top-level-common-schema).
 
 ### Categories
 
@@ -224,7 +224,7 @@ Workflow events have following properties.
 | `properties.workflowJobId`                   | Yes      | Yes  | Identifier of the workflow run. All workflow and task events within the workflow execution have the same `workflowJobId`.                                                                                                                               |
 | `properties.operationType`                   | Yes      | Yes  | Identifier of the operation, see [Operation types].(#operation-types)                                                                                                                                                                                    |
 | `properties.tasksCount`                      | Yes      | No   | Workflow only. Number of tasks the workflow triggers.                                                                                                                                                                                                    |
-| `properties.submittedBy`                     | Yes      | No   | Optional. Workflow events only. The Azure Active Directory [objectId of the user](/azure/marketplace/find-tenant-object-id.md#find-user-object-id) who triggered the workflow, see also `properties.workflowSubmissionKind`.      |
+| `properties.submittedBy`                     | Yes      | No   | Optional. Workflow events only. The Azure Active Directory [objectId of the user](/azure/marketplace/find-tenant-object-id#find-user-object-id) who triggered the workflow, see also `properties.workflowSubmissionKind`.      |
 | `properties.workflowType`                    | Yes      | No   | `full` or `incremental` refresh.                                                                                                                                                                                                                         |
 | `properties.workflowSubmissionKind`          | Yes      | No   | `OnDemand` or `Scheduled`.                                                                                                                                                                                                                               |
 | `properties.workflowStatus`                  | Yes      | No   | `Running` or  `Successful`.                                                                                                                                                                                                                                 |
