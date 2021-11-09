@@ -17,11 +17,19 @@ Dynamics 365 Customer Insights provides a direct integration with Azure Monitor.
 
 Customer Insights is sends the following event logs:
 
+<<<<<<< HEAD
 - **Audit events**:
   - **APIEvents** to track changes that were made in the Customer Insights app.
 - **Operational events**:
   - **Workflow Monitoring** - The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-destinations.md) data. All those steps can run individually or orchestrated with subsequent processes. For more information, see the [workflow event schema](#workflow-event-schema).
   - **APIEvents** - all API calls to your Customer Insights environment. For more information, see the [API event schema](#api-event-schema).
+=======
+- **Audit Events**
+  - **APIEvent** - enables change tracking done via the Dynamics 365 Customer Insights UI.
+- **Operational Events**
+  - **WorkflowEvent** - The Workflow allows one to setup [Data Sources](data-sources.md), [unify](data-unification.md) and [enrich](enrichment-hub.md) and finally [export](export-destinations.md) data into other systems. All those steps can be done individually (e.g. trigger a single export) or orchestrated (e.g. data refresh from data sources which trigger the unification process which will pull in additional enrichments and once done export the data into another system). For more details see the [WorkflowEvent Schema](#workflow-event-schema).
+  - **APIEvent** - all API calls to the customers instance to Dynamics 365 Customer Insights. For more details see the [APIEvent Schema](#api-event-schema).
+>>>>>>> 56266725 ( implement review comment)
 
 ## Set up the diagnostic settings
 
