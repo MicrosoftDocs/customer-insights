@@ -5,14 +5,14 @@ ms.date: 04/11/2021
 ms.reviewer: mhart
 ms.service: dynamics-365-ai
 ms.topic: "article"
-author: brndkfr, andbalan
-ms.author: bkief, andbalan
+author: brndkfr
+ms.author: bkief
 manager: shellyha
 ---
 
 # Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (Preview)
 
-Dynamics 365 Customer Insights provides a direct integration with Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
+Dynamics 365 Customer Insights provides a direct integration with Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview.md), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
 
 Customer Insights is sends the following event logs:
 
@@ -149,8 +149,8 @@ The `identity` JSON object has the following structure
 }  
 ```
 
-| Field                         | Description                                                                                                                                               |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Field    | Description                                          |
+| ----------------------------- | ----------------------------------------------------------------- |
 | `Authorization.UserRole`      | Assigned role for the user or app. For more information, see [user permissions](permissions.md). |
 | `Authorization.RequiredRoles` | Required roles to do the operation. `Admin` role is allowed to do all operations.                                                                         |
 | `Claims`                      | Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration.                      |
@@ -159,8 +159,8 @@ The `identity` JSON object has the following structure
 
 [API events](apis.md) have following properties.
 
-| Field                        | Description                                                                                                            |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Field                        | Description       |
+| ---------------------------- | ------------------------------------------------------------------- |
 | `properties.eventType`       | Always `ApiEvent`, marking the log event as API event.                                                                  |
 | `properties.userAgent`       | Browser agent sending the request or `unknown`.                                                                         |
 | `properties.method`          | HTTP method: `GET/POST/PUT/PATCH/HEAD`.                                                                                   |
@@ -202,8 +202,8 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 
 #### Field description
 
-| Field           | DataType  | Required/Optional | Description                                                                                                                                                   | Example                                                                                                                                                                  |
-| --------------- | --------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Field      | DataType  | Required/Optional | Description            | Example            |
+| --------------- | --------- | ----------------- | ------------------------- | -------------------- |
 | `time`          | Timestamp | Required          | Timestamp of the event (UTC).                                                                                                                                  | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resourceId`    | String    | Required          | ResourceId of the instance that emitted the event.                                                                                                             | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
 | `operationName` | String    | Required          | Name of the operation represented by this event. `{OperationType}.[WorkFlow|Task][Started|Completed]`. See [Operation Types](#operation-types) for reference. | `Segmentation.WorkflowStarted`,<br> `Segmentation.TaskStarted`, <br> `Segmentation.TaskCompleted`, <br> `Segmentation.WorkflowCompleted`                                 |
@@ -218,8 +218,8 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 
 Workflow events have following properties.
 
-| Field                                        | Workflow | Task | Description                                                                                                                                                                                                                                             |
-| -------------------------------------------- | -------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Field        | Workflow | Task | Description                           |
+| ---------------------- | -------- | ---- | -------------- |
 | `properties.eventType`                       | Yes      | Yes  | Always `WorkflowEvent`, marking the event as workflow event.                                                                                                                                                                                             |
 | `properties.workflowJobId`                   | Yes      | Yes  | Identifier of the workflow run. All workflow and task events within the workflow execution have the same `workflowJobId`.                                                                                                                               |
 | `properties.operationType`                   | Yes      | Yes  | Identifier of the operation, see [Operation types].(#operation-types)                                                                                                                                                                                    |
