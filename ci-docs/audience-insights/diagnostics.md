@@ -3,7 +3,8 @@ title: "Audit Dynamics 365 Customer Insights with Azure Monitor"
 description: "Learn how to send logs to Microsoft Azure Monitor."
 ms.date: 11/09/2021
 ms.reviewer: mhart
-ms.service: dynamics-365-ai
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: "article"
 author: brndkfr
 ms.author: bkief
