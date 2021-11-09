@@ -22,7 +22,7 @@ To configure engagement insights, the following prerequisites must be met:
 - You have an active Office 365 cloud license.
 - You have [unified customer profiles](customer-profiles.md) based on B2B accounts and the instance must be CDS/Dataverse MDL (Managed Data Lake)-attached.
 - You have [administrator](permissions.md#administrator) permissions.
-- You have Office 365 tenant administrator permissions or can get consent to use aggregated Office data in CI from a Office 365 tenant administrator.
+- You have Office 365 tenant administrator permissions or can get consent to use aggregated Office data in Customer Insights from a Office 365 tenant administrator.
 
 ## Configure the enrichment
 
