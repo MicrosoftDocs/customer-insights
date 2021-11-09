@@ -30,8 +30,8 @@ To configure diagnostics in Customer Insights, the following prerequisites must 
 
 - You have an active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - You have [Administrator](permissions.md#administrator) permissions in Customer Insights.
-- You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can be an Azure Storage account, an Azure Event Hub or an Azure Log Analytics workspace. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal.md).
-- [Destination requirements](/azure/azure-monitor/platform/diagnostic-settings.md#destination-requirements) for Azure Storage, Azure Event Hub or Azure Log Analytics are met.
+- You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can be an Azure Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal.md).
+- [Destination requirements](/azure/azure-monitor/platform/diagnostic-settings.md#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics met.
 - You have at least the **Reader** role on the resource group the resource belongs to.
 
 ### Set up diagnostics with Azure Monitor
@@ -47,7 +47,7 @@ To configure diagnostics in Customer Insights, the following prerequisites must 
 
 1. Choose the **Tenant** of the Azure subscription with the destination resource and select **Sign in**.
 
-1. Select the **Resource type** (Storage account, event hub or log analytics).
+1. Select the **Resource type** (Storage account, Event Hub, or log analytics).
 
 1. Select the **Subscription** for the destination resource.
 
@@ -79,7 +79,7 @@ The log schema follows the [Azure Monitor common schema](/azure/azure-monitor/pl
 Customer Insights provides two categories:
 
 - **Audit events**: [API events](#api-event-schema) to track the configuration changes on the service. `POST|PUT|DELETE|PATCH` operations go into this category.
-- **Operational Events**: [API events](#api-event-schema) or [workflow Events](#workflow-event-schema) generated while using the service.  For example `GET` requests or the execution events of a workflow.
+- **Operational Events**: [API events](#api-event-schema) or [workflow Events](#workflow-event-schema) generated while using the service.  For example, `GET` requests or the execution events of a workflow.
 
 ## Configuration on the destination resource
 
@@ -94,7 +94,7 @@ Customer Insights service principal gets the **Storage Account Contributor** per
 
 ### Event Hub
 
-Customer Insights service principal gets the **Azure Event Hubs Data Owner** permission on the resource and will create two event hubs under the selected namespace:
+Customer Insights service principal gets the **Azure Event Hubs Data Owner** permission on the resource and will create two Event Hubs under the selected namespace:
 
 - `insight-logs-audit` containing **audit events**
 - `insight-logs-operational` containing **operational events**
@@ -125,7 +125,7 @@ API events and workflow events have a common structure and details where they di
 | `durationMs`      | Long      | Optional          | Duration of the operation in milliseconds.                                                                                                                       | `133`                                                                                                                                                                    |
 | `callerIpAddress` | String    | Optional          | Caller IP address, if the operation corresponds to an API call that comes from a publicly available IP address.                              | `144.318.99.233`                                                                                                                                                         |
 | `identity`        | String    | Optional          | JSON object describing the identity of the user or application that did the operation.                                                                            | See sub section [Identity](#identity-schema)                                                                                                                             |  |
-| `properties`      | String    | Optional          | JSON object with additional properties to the particular category of events.                                                                                      | See sub section [Properties](#api-properties-schema)                                                                                                                     |
+| `properties`      | String    | Optional          | JSON object with more properties to the particular category of events.                                                                                      | See sub section [Properties](#api-properties-schema)                                                                                                                     |
 | `level`           | String    | Required          | Severity level of the event.                                                                                                                                      | `Informational`, `Warning`, `Error`, or `Critical`.                                                                                                             |
 | `uri`             | String    | Optional          | Absolute request URI.                                                                                                                                            |                                                                                                                                                                          |
 
@@ -174,7 +174,7 @@ The `identity` JSON object has the following structure
 
 ### Workflow event schema
 
-The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-destinations.md) data. All those steps can run individually or orchestrated with subsequent processes. 
+The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-destinations.md) data. All those steps can run individually or orchestrated with following processes. 
 
 #### Operation types
 
@@ -210,7 +210,7 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 | `category`      | String    | Required          | Log category of the event. Always `Operational` for Workflow events                                                                                           | `Operational`                                                                                                                                                            | `2020-09-08T09:48:14.8050869Z` |
 | `resultType`    | String    | Required          | Status of the event. `Running`, `Skipped`, `Successful`, `Failure`                                                                                            |                                                                                                                                                                          |
 | `durationMs`    | Long      | Optional          | Duration of the operation in milliseconds.                                                                                                                     | `133`                                                                                                                                                                    |
-| `properties`    | String    | Optional          | JSON object with additional properties to the particular category of events.                                                                                    | See sub section [Workflow Properties](#workflow-properties-schema)                                                                                                       |
+| `properties`    | String    | Optional          | JSON object with more properties to the particular category of events.                                                                                    | See sub section [Workflow Properties](#workflow-properties-schema)                                                                                                       |
 | `level`         | String    | Required          | Severity level of the event.                                                                                                                                   | `Informational`, `Warning`, or `Error`                                                                                                                          |
 |                 |
 
@@ -233,7 +233,7 @@ Workflow events have following properties.
 | `properties.submittedTimestamp`              | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                              |
 | `properties.instanceId`                      | Yes      | Yes  | Customer Insights `instanceId`                                                                                                                                                                                                                          |  |
 | `properties.identifier`                      | No       | Yes  | - For OperationType = `Export`, the identifier is the guid of the export configuration. <br> - For OperationType = `Enrichment`, it's the guid of the enrichment <br> - For OperationType `Measures` and `Segmentation`, the identifier is the entity name. |
-| `properties.friendlyName`                    | No       | Yes  | User friendly name of the export or the entity which is processed.                                                                                                                                                                                      |
+| `properties.friendlyName`                    | No       | Yes  | User-friendly name of the export or the entity that is processed.                                                                                                                                                                                      |
 | `properties.error`                           | No       | Yes  | Optional. Error message with more details.                                                                                                                                                                                                              |
 | `properties.additionalInfo.Kind`             | No       | Yes  | Optional. For OperationType `Export` only. Identifies the type of the export. For more information, see [overview of export destinations](export-destinations.md).                     |
 | `properties.additionalInfo.AffectedEntities` | No       | Yes  | Optional. For OperationType `Export` only. Contains a list of configured entities in the export.                                                                                                                      |
