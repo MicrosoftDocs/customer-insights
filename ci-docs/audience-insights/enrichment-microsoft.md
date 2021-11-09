@@ -17,9 +17,9 @@ Use Microsoft's proprietary data to enrich your customer data with brand affinit
 
 In audience insights, go to **Data** > **Enrichment** to [configure and view enrichments](enrichment-hub.md).
 
-To configure brand affinities enrichment, go to the **Discover** tab and select **Enrich my data** on the **Brands** tile.
+To configure brand affinities and SoV enrichment, go to the **Discover** tab and select **Enrich my data** on the **Brands** tile.
 
-To configure interest affinities enrichment, go to the **Discover** tab and select **Enrich my data** on the **Interests** tile.
+To configure interest affinities and SoV enrichment, go to the **Discover** tab and select **Enrich my data** on the **Interests** tile.
 
    > [!div class="mx-imgBorder"]
    > ![Brands and Interests tiles.](media/BrandsInterest-tile-Hub.png "Brands and Interest tiles")
