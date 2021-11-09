@@ -17,19 +17,11 @@ Dynamics 365 Customer Insights provides a direct integration with Azure Monitor.
 
 Customer Insights is sends the following event logs:
 
-<<<<<<< HEAD
-- **Audit events**:
-  - **APIEvents** to track changes that were made in the Customer Insights app.
-- **Operational events**:
-  - **Workflow Monitoring** - The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-destinations.md) data. All those steps can run individually or orchestrated with subsequent processes. For more information, see the [workflow event schema](#workflow-event-schema).
-  - **APIEvents** - all API calls to your Customer Insights environment. For more information, see the [API event schema](#api-event-schema).
-=======
 - **Audit Events**
   - **APIEvent** - enables change tracking done via the Dynamics 365 Customer Insights UI.
 - **Operational Events**
   - **WorkflowEvent** - The Workflow allows one to setup [Data Sources](data-sources.md), [unify](data-unification.md) and [enrich](enrichment-hub.md) and finally [export](export-destinations.md) data into other systems. All those steps can be done individually (e.g. trigger a single export) or orchestrated (e.g. data refresh from data sources which trigger the unification process which will pull in additional enrichments and once done export the data into another system). For more details see the [WorkflowEvent Schema](#workflow-event-schema).
   - **APIEvent** - all API calls to the customers instance to Dynamics 365 Customer Insights. For more details see the [APIEvent Schema](#api-event-schema).
->>>>>>> 56266725 ( implement review comment)
 
 ## Set up the diagnostic settings
 
@@ -130,13 +122,13 @@ API events and workflow events have a common structure and details where they di
 | `operationName`   | String    | Required          | Name of the operation represented by this event.                                                                                                                | `Workflows.GetWorkFlowStatusAsync`                                                                                                                                       |
 | `category`        | String    | Required          | Log category of the event. Either `Operational` or `Audit`. All POST/PUT/PATCH/DELETE HTTP Requests are tagged with `Audit`, everything else with `Operational` | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resultType`      | String    | Required          | Status of the event. `Success`, `ClientError`, `Failure`                                                                                                        |                                                                                                                                                                          |
-| `resultSignature` | String    | Optional          | Result status of the event. If the operation corresponds to a REST API call, it's the HTTP status code.                                                            | `200`                                                                                                                                                                    |
-| `durationMs`      | Long      | Optional          | Duration of the operation in milliseconds.                                                                                                                       | `133`                                                                                                                                                                    |
-| `callerIpAddress` | String    | Optional          | Caller IP address, if the operation corresponds to an API call that comes from a publicly available IP address.                              | `144.318.99.233`                                                                                                                                                         |
-| `identity`        | String    | Optional          | JSON object describing the identity of the user or application that did the operation.                                                                            | See sub section [Identity](#identity-schema)                                                                                                                             |  |
-| `properties`      | String    | Optional          | JSON object with more properties to the particular category of events.                                                                                      | See sub section [Properties](#api-properties-schema)                                                                                                                     |
-| `level`           | String    | Required          | Severity level of the event.                                                                                                                                      | `Informational`, `Warning`, `Error`, or `Critical`.                                                                                                             |
-| `uri`             | String    | Optional          | Absolute request URI.                                                                                                                                            |                                                                                                                                                                          |
+| `resultSignature` | String    | Optional          | Result status of the event. If the operation corresponds to a REST API call, it's the HTTP status code.                                                         | `200`                                                                                                                                                                    |
+| `durationMs`      | Long      | Optional          | Duration of the operation in milliseconds.                                                                                                                      | `133`                                                                                                                                                                    |
+| `callerIpAddress` | String    | Optional          | Caller IP address, if the operation corresponds to an API call that comes from a publicly available IP address.                                                 | `144.318.99.233`                                                                                                                                                         |
+| `identity`        | String    | Optional          | JSON object describing the identity of the user or application that did the operation.                                                                          | See sub section [Identity](#identity-schema)                                                                                                                             |  |
+| `properties`      | String    | Optional          | JSON object with more properties to the particular category of events.                                                                                          | See sub section [Properties](#api-properties-schema)                                                                                                                     |
+| `level`           | String    | Required          | Severity level of the event.                                                                                                                                    | `Informational`, `Warning`, `Error`, or `Critical`.                                                                                                                      |
+| `uri`             | String    | Optional          | Absolute request URI.                                                                                                                                           |                                                                                                                                                                          |
 
 #### Identity schema
 
@@ -158,27 +150,27 @@ The `identity` JSON object has the following structure
 }  
 ```
 
-| Field    | Description                                          |
-| ----------------------------- | ----------------------------------------------------------------- |
-| `Authorization.UserRole`      | Assigned role for the user or app. For more information, see [user permissions](permissions.md). |
-| `Authorization.RequiredRoles` | Required roles to do the operation. `Admin` role is allowed to do all operations.                                                                         |
-| `Claims`                      | Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration.                      |
+| Field                         | Description                                                                                                                          |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `Authorization.UserRole`      | Assigned role for the user or app. For more information, see [user permissions](permissions.md).                                     |
+| `Authorization.RequiredRoles` | Required roles to do the operation. `Admin` role is allowed to do all operations.                                                    |
+| `Claims`                      | Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration. |
 
 #### API Properties schema
 
 [API events](apis.md) have following properties.
 
-| Field                        | Description       |
-| ---------------------------- | ------------------------------------------------------------------- |
-| `properties.eventType`       | Always `ApiEvent`, marking the log event as API event.                                                                  |
-| `properties.userAgent`       | Browser agent sending the request or `unknown`.                                                                         |
-| `properties.method`          | HTTP method: `GET/POST/PUT/PATCH/HEAD`.                                                                                   |
-| `properties.path`            | Relative path of the request.                                                                                           |
-| `properties.origin`          | URI indicating where a fetch comes from or `unknown`.                                                              |
+| Field                        | Description                                                                                                            |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `properties.eventType`       | Always `ApiEvent`, marking the log event as API event.                                                                 |
+| `properties.userAgent`       | Browser agent sending the request or `unknown`.                                                                        |
+| `properties.method`          | HTTP method: `GET/POST/PUT/PATCH/HEAD`.                                                                                |
+| `properties.path`            | Relative path of the request.                                                                                          |
+| `properties.origin`          | URI indicating where a fetch comes from or `unknown`.                                                                  |
 | `properties.operationStatus` | `Success` for HTTP Status code < 400 <br> `ClientError` for HTTP Status code < 500 <br> `Error` for HTTP Status >= 500 |
 | `properties.tenantId`        | Organization ID                                                                                                        |
-| `properties.tenantName`      | Name of the organization.                                                                                               |
-| `properties.callerObjectId`  | Azure Active Directory ObjectId of the caller.                                                                          |
+| `properties.tenantName`      | Name of the organization.                                                                                              |
+| `properties.callerObjectId`  | Azure Active Directory ObjectId of the caller.                                                                         |
 | `properties.instanceId`      | Customer Insights `instanceId`                                                                                         |
 
 ### Workflow event schema
@@ -187,64 +179,64 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 
 #### Operation types
 
-| OperationType     | Group                                   |
-| ----------------- | --------------------------------------- |
-| Ingestion         | [Data sources](data-sources.md)         |
-| DataPreparation   | [Data sources](data-sources.md)         |
-| Map               | [Data unification](data-unification.md) |
-| Match             | [Data unification](data-unification.md) |
-| Merge             | [Data unification](data-unification.md) |
-| ProfileStore      |                                         |
-| Search            |                                         |
-| Activity          |                                         |
-| AttributeMeasures | [Segments and Measures](segments.md)    |
-| EntityMeasures    | [Segments and Measures](segments.md)    |
-| Measures          | [Segments and Measures](segments.md)    |
-| Segmentation      | [Segments and Measures](segments.md)    |
-| Enrichment        |                                         |
-| Intelligence      |                                         |
-| AiBuilder         |                                         |
-| Insights          |                                         |
-| Export            |                                         |
-| ModelManagement   |                                         |
-| Relationship      |                                         |
+| OperationType     | Group                                     |
+| ----------------- | ----------------------------------------- |
+| Ingestion         | [Data sources](data-sources.md)           |
+| DataPreparation   | [Data sources](data-sources.md)           |
+| Map               | [Data unification](data-unification.md)   |
+| Match             | [Data unification](data-unification.md)   |
+| Merge             | [Data unification](data-unification.md)   |
+| ProfileStore      | [Customer profiles](customer-profiles.md) |
+| Search            | [Customer profiles](customer-profiles.md) |
+| Activity          | [Activities](activities)                  |
+| AttributeMeasures | [Segments and Measures](segments.md)      |
+| EntityMeasures    | [Segments and Measures](segments.md)      |
+| Measures          | [Segments and Measures](segments.md)      |
+| Segmentation      | [Segments and Measures](segments.md)      |
+| Enrichment        | [Enrichment](enrichment-hub.md)                                          |
+| Intelligence      | [Predictions](predictions-overview.md)                                          |
+| AiBuilder         | [Predictions](predictions-overview.md)                                          |
+| Insights          | [Predictions](predictions-overview.md)                                          |
+| Export            | [Exports](export-destinations.md)                                          |
+| ModelManagement   | [Predictions](custom-models.md)                                           |
+| Relationship      | [Data unification](relationships.md)                                           |
 
 #### Field description
 
-| Field      | DataType  | Required/Optional | Description            | Example            |
-| --------------- | --------- | ----------------- | ------------------------- | -------------------- |
-| `time`          | Timestamp | Required          | Timestamp of the event (UTC).                                                                                                                                  | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
-| `resourceId`    | String    | Required          | ResourceId of the instance that emitted the event.                                                                                                             | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
+| Field           | DataType  | Required/Optional | Description                                                                                                                                                   | Example                                                                                                                                                                  |
+| --------------- | --------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `time`          | Timestamp | Required          | Timestamp of the event (UTC).                                                                                                                                 | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
+| `resourceId`    | String    | Required          | ResourceId of the instance that emitted the event.                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
 | `operationName` | String    | Required          | Name of the operation represented by this event. `{OperationType}.[WorkFlow|Task][Started|Completed]`. See [Operation Types](#operation-types) for reference. | `Segmentation.WorkflowStarted`,<br> `Segmentation.TaskStarted`, <br> `Segmentation.TaskCompleted`, <br> `Segmentation.WorkflowCompleted`                                 |
 | `category`      | String    | Required          | Log category of the event. Always `Operational` for Workflow events                                                                                           | `Operational`                                                                                                                                                            | `2020-09-08T09:48:14.8050869Z` |
 | `resultType`    | String    | Required          | Status of the event. `Running`, `Skipped`, `Successful`, `Failure`                                                                                            |                                                                                                                                                                          |
-| `durationMs`    | Long      | Optional          | Duration of the operation in milliseconds.                                                                                                                     | `133`                                                                                                                                                                    |
-| `properties`    | String    | Optional          | JSON object with more properties to the particular category of events.                                                                                    | See sub section [Workflow Properties](#workflow-properties-schema)                                                                                                       |
-| `level`         | String    | Required          | Severity level of the event.                                                                                                                                   | `Informational`, `Warning`, or `Error`                                                                                                                          |
+| `durationMs`    | Long      | Optional          | Duration of the operation in milliseconds.                                                                                                                    | `133`                                                                                                                                                                    |
+| `properties`    | String    | Optional          | JSON object with more properties to the particular category of events.                                                                                        | See sub section [Workflow Properties](#workflow-properties-schema)                                                                                                       |
+| `level`         | String    | Required          | Severity level of the event.                                                                                                                                  | `Informational`, `Warning`, or `Error`                                                                                                                                   |
 |                 |
 
 #### Workflow Properties schema
 
 Workflow events have following properties.
 
-| Field        | Workflow | Task | Description                           |
-| ---------------------- | -------- | ---- | -------------- |
-| `properties.eventType`                       | Yes      | Yes  | Always `WorkflowEvent`, marking the event as workflow event.                                                                                                                                                                                             |
-| `properties.workflowJobId`                   | Yes      | Yes  | Identifier of the workflow run. All workflow and task events within the workflow execution have the same `workflowJobId`.                                                                                                                               |
-| `properties.operationType`                   | Yes      | Yes  | Identifier of the operation, see [Operation types].(#operation-types)                                                                                                                                                                                    |
-| `properties.tasksCount`                      | Yes      | No   | Workflow only. Number of tasks the workflow triggers.                                                                                                                                                                                                    |
-| `properties.submittedBy`                     | Yes      | No   | Optional. Workflow events only. The Azure Active Directory [objectId of the user](/azure/marketplace/find-tenant-object-id#find-user-object-id) who triggered the workflow, see also `properties.workflowSubmissionKind`.      |
-| `properties.workflowType`                    | Yes      | No   | `full` or `incremental` refresh.                                                                                                                                                                                                                         |
-| `properties.workflowSubmissionKind`          | Yes      | No   | `OnDemand` or `Scheduled`.                                                                                                                                                                                                                               |
+| Field                                        | Workflow | Task | Description                                                                                                                                                                                                                                                 |
+| -------------------------------------------- | -------- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `properties.eventType`                       | Yes      | Yes  | Always `WorkflowEvent`, marking the event as workflow event.                                                                                                                                                                                                |
+| `properties.workflowJobId`                   | Yes      | Yes  | Identifier of the workflow run. All workflow and task events within the workflow execution have the same `workflowJobId`.                                                                                                                                   |
+| `properties.operationType`                   | Yes      | Yes  | Identifier of the operation, see [Operation types].(#operation-types)                                                                                                                                                                                       |
+| `properties.tasksCount`                      | Yes      | No   | Workflow only. Number of tasks the workflow triggers.                                                                                                                                                                                                       |
+| `properties.submittedBy`                     | Yes      | No   | Optional. Workflow events only. The Azure Active Directory [objectId of the user](/azure/marketplace/find-tenant-object-id#find-user-object-id) who triggered the workflow, see also `properties.workflowSubmissionKind`.                                   |
+| `properties.workflowType`                    | Yes      | No   | `full` or `incremental` refresh.                                                                                                                                                                                                                            |
+| `properties.workflowSubmissionKind`          | Yes      | No   | `OnDemand` or `Scheduled`.                                                                                                                                                                                                                                  |
 | `properties.workflowStatus`                  | Yes      | No   | `Running` or  `Successful`.                                                                                                                                                                                                                                 |
-| `properties.startTimestamp`                  | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                              |
-| `properties.endTimestamp`                    | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                              |
-| `properties.submittedTimestamp`              | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                              |
-| `properties.instanceId`                      | Yes      | Yes  | Customer Insights `instanceId`                                                                                                                                                                                                                          |  |
+| `properties.startTimestamp`                  | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
+| `properties.endTimestamp`                    | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
+| `properties.submittedTimestamp`              | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
+| `properties.instanceId`                      | Yes      | Yes  | Customer Insights `instanceId`                                                                                                                                                                                                                              |  |
 | `properties.identifier`                      | No       | Yes  | - For OperationType = `Export`, the identifier is the guid of the export configuration. <br> - For OperationType = `Enrichment`, it's the guid of the enrichment <br> - For OperationType `Measures` and `Segmentation`, the identifier is the entity name. |
-| `properties.friendlyName`                    | No       | Yes  | User-friendly name of the export or the entity that is processed.                                                                                                                                                                                      |
-| `properties.error`                           | No       | Yes  | Optional. Error message with more details.                                                                                                                                                                                                              |
-| `properties.additionalInfo.Kind`             | No       | Yes  | Optional. For OperationType `Export` only. Identifies the type of the export. For more information, see [overview of export destinations](export-destinations.md).                     |
-| `properties.additionalInfo.AffectedEntities` | No       | Yes  | Optional. For OperationType `Export` only. Contains a list of configured entities in the export.                                                                                                                      |
-| `properties.additionalInfo.MessageCode`      | No       | Yes  | Optional. For OperationType `Export` only. Detailed message for the export.                                                                                                                                                                             |
-| `properties.additionalInfo.entityCount`      | No       | Yes  | Optional. For OperationType `Segmentation` only. Indicates the total numbers of members the segment has.                                                                                                |
+| `properties.friendlyName`                    | No       | Yes  | User-friendly name of the export or the entity that is processed.                                                                                                                                                                                           |
+| `properties.error`                           | No       | Yes  | Optional. Error message with more details.                                                                                                                                                                                                                  |
+| `properties.additionalInfo.Kind`             | No       | Yes  | Optional. For OperationType `Export` only. Identifies the type of the export. For more information, see [overview of export destinations](export-destinations.md).                                                                                          |
+| `properties.additionalInfo.AffectedEntities` | No       | Yes  | Optional. For OperationType `Export` only. Contains a list of configured entities in the export.                                                                                                                                                            |
+| `properties.additionalInfo.MessageCode`      | No       | Yes  | Optional. For OperationType `Export` only. Detailed message for the export.                                                                                                                                                                                 |
+| `properties.additionalInfo.entityCount`      | No       | Yes  | Optional. For OperationType `Segmentation` only. Indicates the total numbers of members the segment has.                                                                                                                                                    |
