@@ -13,14 +13,14 @@ manager: stefan.kummer
 
 # Enrich customer profiles with engagement data (preview)
 
-Use data from Microsoft Office 365 to enrich your customer account profiles with engagement data. The engagement data consists of email and meeting activity aggregated to the account level. This enrichment is available in the following regions: UK, Europe, North America.
+Use data from Microsoft Office 365 to enrich your customer account profiles with engagement insights. The engagement data consists of email and meeting activity aggregated to the account level. This enrichment is available in the following regions: UK, Europe, North America.
 
 ## Prerequisites
 
-To configure engagement data, the following prerequisites must be met:
+To configure engagement insights, the following prerequisites must be met:
 
 - You have an active Office 365 cloud license.
-- You have [unified customer profiles](customer-profiles.md) based on accounts.
+- You have [unified customer profiles](customer-profiles.md) based on B2B accounts and the instance must be CDS/Dataverse MDL (Managed Data Lake)-attached.
 - You have [administrator](permissions.md#administrator) permissions.
 - You have Office 365 tenant administrator permissions or can get consent to use aggregated Office data in CI from a Office 365 tenant administrator.
 
@@ -54,7 +54,7 @@ Consent from an Office 365 tenant administrator is required to activate the enri
 
 When the enrichment is started for the first time, after the Office 365 tenant administrator has given consent, the data from Office 365 download will commence. This process takes some time, so the first enrichment run will be scheduled to happen with a delay of 6 hours. You can see the number of days that the data covers on the account engagement overview page after the enrichment finishes. In case you have a large volume of email and meeting data you may want to run the enrichment again after a few days to make sure data has been downloaded for the full time window, which is 1 year.
 
-To start the process, select **Run** on the Account engagement configuration page. Additionally, you can let the system run the enrichment automatically as part of a scheduled refresh.
+To start the process, select **Run** on the Account engagement configuration page. Additionally, you can let the system run the enrichment automatically as part of a scheduled refresh. The default setting is that the enrichment is run once per week.
 
 Depending on the size of your Office data, it may take several hours for an enrichment run to complete.
 
