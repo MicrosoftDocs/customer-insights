@@ -43,7 +43,7 @@ After you [set up the consent management](get-started.md) capability, the first-
 
 1. The **Preview file data** step shows the data that gets imported. Select **Next** to continue. 
   
-1. The **Edit queries** step lets you rename the query and [apply data transformations using Power Query](https://docs.microsoft.com/power-query/power-query-ui). 
+1. The **Edit queries** step lets you rename the query and [apply data transformations using Power Query](/power-query/power-query-ui). 
    1. If your source data contains a header row, apply **Transform** > **Use first row as header**.
    1. Map the data to the Common Data Model. Select **Map to entity** > **Auto map (optional)**.
    
