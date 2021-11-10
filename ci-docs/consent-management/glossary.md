@@ -17,11 +17,11 @@ manager: shellyha
 
 ## Subscription consent
 
-Subscription consent is a type of consent that a person can provide. It usually indicates the interest that person has in getting contacted for the reason they subscribed. For example, someone can consent to receive a newsletter that informs them about updates to a product they own.
+Subscription consent is one of the two types of consent that a person can provide. It usually indicates the interest that person has in getting contacted for the reason they subscribed. For example, someone can consent to receive a newsletter that informs them about updates to a product they own.
 
 ## Purpose consent
 
-Purpose consent is a type of consent that a person can provide. It indicates the purpose of how data can be used and processed. For example, a person can consent to a website cookie policy that uses the cookie for targeted advertising. 
+Purpose consent is the second type of consent that a person can provide. It indicates the purpose of how data can be used and processed. For example, a person can consent to a website cookie policy that uses the cookie for targeted advertising. 
 
 ## Consent entity
 
