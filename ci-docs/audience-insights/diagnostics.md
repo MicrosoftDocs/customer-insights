@@ -68,9 +68,9 @@ To configure diagnostics in Customer Insights, the following prerequisites must 
 
 1. In the **Actions** column, select the **Delete** icon.
 
-1. Confirm the deletion to stop the log forwarding. The resource on the Azure subscription won't be deleted. You can select the link in the Actions column to open the Azure portal for the selected resource and delete it there.
+1. Confirm the deletion to stop the log forwarding. The resource on the Azure subscription won't be deleted. You can select the link in the **Actions** column to open the Azure portal for the selected resource and delete it there.
 
-## Log Categories and Event Schemas
+## Log categories and event schemas
 
 Currently [API events](apis.md) and workflow events are supported and the following categories and schemas apply.
 The log schema follows the [Azure Monitor common schema](/azure/azure-monitor/platform/resource-logs-schema#top-level-common-schema).
@@ -80,7 +80,7 @@ The log schema follows the [Azure Monitor common schema](/azure/azure-monitor/pl
 Customer Insights provides two categories:
 
 - **Audit events**: [API events](#api-event-schema) to track the configuration changes on the service. `POST|PUT|DELETE|PATCH` operations go into this category.
-- **Operational Events**: [API events](#api-event-schema) or [workflow Events](#workflow-event-schema) generated while using the service.  For example, `GET` requests or the execution events of a workflow.
+- **Operational events**: [API events](#api-event-schema) or [workflow events](#workflow-event-schema) generated while using the service.  For example, `GET` requests or the execution events of a workflow.
 
 ## Configuration on the destination resource
 
@@ -156,7 +156,7 @@ The `identity` JSON object has the following structure
 | `Authorization.RequiredRoles` | Required roles to do the operation. `Admin` role is allowed to do all operations.                                                    |
 | `Claims`                      | Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration. |
 
-#### API Properties schema
+#### API properties schema
 
 [API events](apis.md) have following properties.
 
@@ -206,7 +206,7 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 | Field           | DataType  | Required/Optional | Description                                                                                                                                                   | Example                                                                                                                                                                  |
 | --------------- | --------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `time`          | Timestamp | Required          | Timestamp of the event (UTC).                                                                                                                                 | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
-| `resourceId`    | String    | Required          | ResourceId of the instance that emitted the event.                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
+| `resourceId`    | String    | Required          | ResourceId of the instance that emitted the event.                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/` <br> `<RESOURCEGROUPNAME>/PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
 | `operationName` | String    | Required          | Name of the operation represented by this event. `{OperationType}.[WorkFlow|Task][Started|Completed]`. See [Operation Types](#operation-types) for reference. | `Segmentation.WorkflowStarted`,<br> `Segmentation.TaskStarted`, <br> `Segmentation.TaskCompleted`, <br> `Segmentation.WorkflowCompleted`                                 |
 | `category`      | String    | Required          | Log category of the event. Always `Operational` for Workflow events                                                                                           | `Operational`                                                                                                                                                            | `2020-09-08T09:48:14.8050869Z` |
 | `resultType`    | String    | Required          | Status of the event. `Running`, `Skipped`, `Successful`, `Failure`                                                                                            |                                                                                                                                                                          |
@@ -215,7 +215,7 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 | `level`         | String    | Required          | Severity level of the event.                                                                                                                                  | `Informational`, `Warning`, or `Error`                                                                                                                                   |
 |                 |
 
-#### Workflow Properties schema
+#### Workflow properties schema
 
 Workflow events have following properties.
 
