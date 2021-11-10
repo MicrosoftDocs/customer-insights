@@ -1,6 +1,6 @@
 ---
-title: "Import data to the consent management capability"
-description: "Ingest consent data in the consent management capability of Customer Insights."
+title: "Import data to consent management capability"
+description: "Learn how to import data into the consent management capability of Customer Insights and about the required fields for the two types of data."
 ms.date: 11/03/2021
 ms.service: customer-insights
 ms.subservice: consent-management
@@ -19,13 +19,13 @@ Consent management lets you import data about the consent agreements you have wi
 
 ## How to import consent data
 
-After you [set up the consent management](get-started.md) capability, the first-run experience guides you to start of the data import process. You can also start the process by going to **Home** or **Consent** in the left pane of the consent center. The steps to import consent data are the same, wherever you start the process. 
+After you [set up the consent management](get-started.md) capability, the first-run experience guides you to start the data import process. You can also start the process by going to **Home** or **Consent** in the left pane of the Consent Center. Wherever you begin, the steps to import consent data are the same. 
 
 :::image type="content" source="media/first-run-consent-data-import.PNG" alt-text="First run experience for consent data import.":::
 
-1. In Consent Center, go to **Consent**.
+1. In the Consent Center, go to **Consent**.
 
-1. Select the **Import consent data** control and choose which consent type to import. You can choose between **Purpose** and **Subscription**. Depending on the selected type, the [requirements for consent data](#data-requirements-for-consent-data) are different.
+1. Select the **Import consent data** control and choose which type of consent data to import. You can choose between **Purpose** and **Subscription**. Depending on the selected type, the [requirements for consent data](#data-requirements-for-consent-data) are different.
    
    :::image type="content" source="media/import-consent-data-control.PNG" alt-text="Control option to start the import process for consent data.":::
 
@@ -33,24 +33,25 @@ After you [set up the consent management](get-started.md) capability, the first-
    
    :::image type="content" source="media/data-source-name.PNG" alt-text="Name input field for the name of a new data source.":::
 
-1. Select which type of data source you want to import the consent data from. 
+1. Select the type of data source you want to import the consent data from. 
 
    :::image type="content" source="media/choose-data-source.PNG" alt-text="Step with a list of available data sources.":::
 
-1. In this example, we select the **Text/CSV** data source to import a .CSV file that is hosted in a shared OneDrive folder. Enter the path or URL to the hosted file, then select **Next**. 
+1. In this example, we've selected the **Text/CSV** data source to import a .CSV file that's hosted in a shared OneDrive folder. Enter the path or URL to the hosted file, then select **Next**. 
    
    :::image type="content" source="media/connection-settings-data-source.PNG" alt-text="Connection settings for the new data source.":::
 
 1. The **Preview file data** step shows the data that gets imported. Select **Next** to continue. 
   
-1. The **Edit queries** step lets you rename the query and [apply data transformations using Power Query](/power-query/power-query-ui.md). 
+1. The **Edit queries** step lets you rename the query and [apply data transformations using Power Query](https://docs.microsoft.com/power-query/power-query-ui). 
    1. If your source data contains a header row, apply **Transform** > **Use first row as header**.
    1. Map the data to the Common Data Model. Select **Map to entity** > **Auto map (optional)**.
+   
    After applying all necessary transformations, select **Next** to continue.
    
    :::image type="content" source="media/data-transformations.PNG" alt-text="Options to transform data and assign data types.":::
 
-1. The final step to import a data source is the **Refresh settings** step where you tell the system when to look for updates on the data source. 
+1. The final step to import a data source is **Refresh settings** where you tell the system when to look for updates on the data source. 
    
    :::image type="content" source="media/refresh-settings.PNG" alt-text="Set the refresh settings of the data source.":::
    
@@ -62,7 +63,7 @@ Depending on the size if the imported data set, it can take a few moments to com
 
 ## Data requirements for consent data
 
-Consent data will be mapped to a system-defined schema - the [consent entity](glossary.md#consent-entity). The type of consent data you want to import determines the required data fields. 
+Consent data will be mapped to a system-defined schema—the [consent entity](glossary.md#consent-entity). The type of consent data you want to import determines the required data fields. 
 
 ### Subscription consent data
 
