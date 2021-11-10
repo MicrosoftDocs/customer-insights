@@ -29,7 +29,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
   - **Measure control**: Requires [configured measures](measures.md) of type customer attributes.
   - **Intelligence control**: Requires data generated using [predictions](predictions.md) or [custom models](custom-models.md).
   - **Customer details control**: All fields from the profile are available in the unified customer profile.
-  - **Enrichment control**: Requires active [enrichments](enrichment-hub.md) applied to customer profiles.
+  - **Enrichment control**: Requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft, [Interests](enrichment-microsoft.md) provided by Microsoft.
   - **Contacts control**: Requires definition of semantic entity of type contacts.
   - **Timeline control**: Requires [configured activities](activities.md).
 
