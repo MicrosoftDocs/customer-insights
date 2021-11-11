@@ -13,7 +13,7 @@ manager: stefan.kummer
 
 # Enrich customer profiles with engagement data (preview)
 
-Use data from Microsoft Office 365 to enrich your customer account profiles with engagement insights. The engagement data consists of email and meeting activity aggregated to the account level - no data for individual users (for example, e-mail body or content of meeting invite) are made available. This enrichment is available in the following regions: UK, Europe, North America.
+Use data from Microsoft Office 365 to enrich your customer account profiles with engagement insights. The engagement data consists of email and meeting activity aggregated to the account level (for example, the number of emails to and from the account or the number of meetings with the account, etc.) - no data for individual users (for example, e-mail body or content of meeting invite) are made available. This enrichment is available in the following regions: UK, Europe, North America.
 
 ## Prerequisites
 
