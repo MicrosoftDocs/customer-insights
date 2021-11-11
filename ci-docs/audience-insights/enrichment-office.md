@@ -13,7 +13,7 @@ manager: stefan.kummer
 
 # Enrich customer profiles with engagement data (preview)
 
-Use data from Microsoft Office 365 to enrich your customer account profiles with engagement insights. The engagement data consists of email and meeting activity aggregated to the account level. This enrichment is available in the following regions: UK, Europe, North America.
+Use data from Microsoft Office 365 to enrich your customer account profiles with engagement insights. The engagement data consists of email and meeting activity aggregated to the account level - no data for individual users (for example, e-mail body or content of meeting invite) are made available. This enrichment is available in the following regions: UK, Europe, North America.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ To configure engagement insights, the following prerequisites must be met:
 - You have an active Office 365 cloud license.
 - You have [unified customer profiles](customer-profiles.md) based on B2B accounts and the instance must be CDS/Dataverse MDL (Managed Data Lake)-attached.
 - You have [administrator](permissions.md#administrator) permissions.
-- You have Office 365 tenant administrator permissions or can get consent to use aggregated Office data in Customer Insights from a Office 365 tenant administrator.
+- You have, or can get, consent from your Office 365 tenant administrator to use Office 365 data to provide *Insights for the Organization* within Dynamics 365 applications.
 
 ## Configure the enrichment
 
@@ -48,7 +48,7 @@ To configure engagement insights, the following prerequisites must be met:
 
 ## Office 365 tenant administrator consent
 
-Consent from an Office 365 tenant administrator is required to activate the enrichment. An email is sent to the Office 365 tenant administators when the enrichment is saved, which asks them to review and consent to aggregating the Office data into Customer Insights. The Office 365 tenant administator can also consent directly in their Office 365 admin console, by selecting *Insights for the Organization*.
+Consent from an Office 365 tenant administrator is required to activate the enrichment. An email is sent to the Office 365 tenant administrators when the enrichment is saved, which asks them to review and consent to allowing Dynamics 365 applications to use your enterprises’ Office 365 data to provide *Insights for the Organization*. The Office 365 tenant administrator can also consent directly in their Office 365 admin console, by selecting *Insights for the Organization*.
 
 ## Running the Account Engagement enrichment for the first time
 
@@ -57,6 +57,8 @@ When the enrichment is started for the first time, after the Office 365 tenant a
 To start the process, select **Run** on the Account engagement configuration page. Additionally, you can let the system run the enrichment automatically as part of a scheduled refresh. The default setting is that the enrichment is run once per week.
 
 Depending on the size of your Office data, it may take several hours for an enrichment run to complete.
+
+When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to produce aggregated insights, which are then added to your instance of Dynamics 365 Customer Insights. No data at an individual level (e.g., the body of any e-mail or calendar invite) is made visible, or available, to users of Dynamics 365 Customer Insights. 
 
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you'll find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
