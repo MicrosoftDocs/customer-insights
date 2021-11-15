@@ -1,7 +1,7 @@
 ---
 title: "Entities and datasets"
 description: "View data on the Entities page."
-ms.date: 04/16/2020
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -21,9 +21,10 @@ The **Entities** page lists entities and includes several columns:
 - **Source**: The type of data source that ingested the entity
 - **Created by**: Name of the person who created the entity
 - **Created**: Date and time of the entity creation
-- **Updated by**: Name of the person who updated the entity
-- **Last updated**: Date and time of the last update of the entity
-- **Last refresh**: Date and time of the last data refresh
+- **Updated**: Name of the person who updated the entity
+- **Status**: Details about the last update of the entity
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Explore a specific entity's data
 

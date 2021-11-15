@@ -1,7 +1,7 @@
 ---
 title: "Ingest data through a Power Query connector"
 description: "Connectors for data sources based on Power Query."
-ms.date: 09/29/2020
+ms.date: 11/01/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -74,6 +74,8 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
    > [!div class="mx-imgBorder"]
    > ![Edit option.](media/edit-option-data-sources.png "Edit option")
 
+   [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+   
 3. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
 4. Select **Save** in Power Query after completing your edits to save your changes.

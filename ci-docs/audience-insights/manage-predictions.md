@@ -1,7 +1,7 @@
 ---
 title: Shared tasks for prediction scenarios
 description: "Learn how to manage, troubleshoot, and refine predictions."
-ms.date: 05/17/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -45,12 +45,12 @@ The following columns in the report contain helpful information to improve the d
 
 :::image type="content" source="media/input-data-usability-report.png" alt-text="Example of an input data usability report showing a table with errors, warnings, and recommendations.":::
 
-- Name: Descriptive name of the error, warning, or recommendation.
-- Step: Model phase, train or score, the information refers to.
-- State: Severity of the information (error, warning, recommendation).
-- Column name: Column in an entity that needs to be modified to improve the model performance.
-- Entity name: Name of the entity that needs to be modified to improve the model performance.
-- Details: Details about the error, warning, or recommendation.
+- **Name:** Descriptive name of the error, warning, or recommendation.
+- **Step:** Model phase, train or score, the information refers to.
+- **State:** Severity of the information (error, warning, recommendation).
+- **Column name:** Column in an entity that needs to be modified to improve the model performance.
+- **Entity name:** Name of the entity that needs to be modified to improve the model performance.
+- **Details:** Details about the error, warning, or recommendation.
 
 ## Refresh a prediction
 
@@ -61,6 +61,8 @@ Predictions will automatically refresh on the same [schedule your data refreshes
 1. Select the vertical ellipses next to the prediction you want to refresh.
 
 1. Select **Refresh**.
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Delete a prediction
 
