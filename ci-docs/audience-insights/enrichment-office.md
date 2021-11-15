@@ -53,9 +53,9 @@ Consent from an Office 365 tenant administrator is required to activate the enri
 
 ## Running the enrichment for the first time
 
-When the enrichment is started for the first time, after the Office 365 tenant administrator has given consent, the data download from Office 365 begins. This process takes some time, so the first enrichment run will be scheduled to happen with a delay of 6 hours. You can see the number of days that the data covers on the account engagement overview page after the enrichment finishes. In case you have a large volume of email and meeting data you may want to run the enrichment again after a few days to make sure data is complete for the entire time window, which is one year.
+When the enrichment is started for the first time, after the Office 365 tenant administrator has given consent, the data download from Office 365 begins. This process takes some time. The first enrichment run will be scheduled to happen with a delay of six hours. You can see the number of days that the data covers on the account engagement overview page after the enrichment finishes. With a large data volume, run the enrichment again after a few days. it ensures the data is complete for the entire time window, which is one year.
 
-To start the process, select **Run** on the Account engagement configuration page. Additionally, you can let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The default setting is that the enrichment is run once per week.
+To start the process, select **Run** on the Account engagement configuration page. Additionally, you can let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). By default, the enrichment runs once per week.
 
 Depending on the size of your Office data, it may take several hours for an enrichment run to complete.
 
@@ -95,7 +95,7 @@ All data is aggregated up to the account level. The system calculates an engagem
 | Aggregation level (year, month, or week)                                          |  AggregationLevel                        | 
 
 
-Review the enriched data by selecting **See more** in the preview section. it opens the *Office* entity. You can also find the entity listed in the **Enrichment** group in **Data** > **Entities**. Here you'll also find the *Office_UserEntity*, which contains the Active Directory IDs for the email addresses from your organization that were chosen for processing in the configuration step. 
+Review the enriched data by selecting **See more** in the preview section. It opens the *Office* entity. You can also find the entity listed in the **Enrichment** group in **Data** > **Entities**. You'll also find the *Office_UserEntity*, which contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration 
 
 ## See enrichment data on the customer card
 
