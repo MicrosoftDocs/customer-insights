@@ -37,7 +37,7 @@ To configure the enrichment, the following prerequisites must be met:
    
 1. Select **Next** in the **Overview** step and enter email addresses from your organization for which Office data is going to be aggregated. Only data from the listed email addresses gets processed for relevant communication. A best practice is to use email groups, for example, *US Sales team*, which are easily managed in Office 365. The number of email addresses in the groups are resolved and shown. The total number of email addresses must be at least 2 and can't exceed 2,500.
 
-   :::image type="content" source="media/enrichment-office-email-addresses.png" alt-text="Account engagement email addresses".:::
+   :::image type="content" source="media/enrichment-office-email-addresses.png" alt-text="Account engagement email addresses.":::
 
 1. Review the consent statement, select the **I agree** check box, and select **Next**.
 
