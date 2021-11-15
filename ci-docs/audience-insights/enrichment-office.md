@@ -33,13 +33,11 @@ To configure the enrichment, the following prerequisites must be met:
 
 1. Go to the **Discover** tab and select **Enrich my data** on the **Account Engagement** tile.
 
-   > [!div class="mx-imgBorder"]
-   > ![Account engagement tile.](media/enrichment-office-tile.png "Account engagement tile")
+   :::image type="content" source="media/enrichment-office-tile.png" alt-text="Account engagement tile.":::
    
 1. Select **Next** in the **Overview** step and enter email addresses from your organization for which Office data is going to be aggregated. Only data from the listed email addresses gets processed for relevant communication. A best practice is to use email groups, for example, *US Sales team*, which are easily managed in Office 365. The number of email addresses in the groups are resolved and shown. The total number of email addresses must be at least 2 and can't exceed 2,500.
 
-   > [!div class="mx-imgBorder"]
-   > ![Account engagement email addresses.](media/enrichment-office-email-addresses.png "Account engagement email addresses")
+   :::image type="content" source="media/enrichment-office-email-addresses.png" alt-text="Account engagement email addresses".:::
 
 1. Review the consent statement, select the **I agree** check box, and select **Next**.
 
@@ -63,28 +61,27 @@ Depending on the size of your Office data, it may take several hours for an enri
 
 When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to create aggregated insights, which are then added to your Customer Insights environment. No data at an individual level (for example, the body of any e-mail or calendar invite) becomes available to users of Customer Insights. 
 
-> [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you'll find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+[!INCLUDE [progress-details-pane](../includes/progress-details-pane.md)]
 
 ## Enrichment results
 
-After running the enrichment process, go to **My enrichments** to review the enrichment results. You will see the total number of enriched customers and a high-level overview of the enrichment results, including the number of emails and meetings processed, the number of days for which data has been aggregated (if data is still downloading you may get a longer data window by running the enrichment again at a later time), and more.
+After running the enrichment process, go to **My enrichments** to review the enrichment results. You'll find the total number of enriched customers and an overview of the enrichment results. It includes the number of processed emails and meetings, the number of days for which data has been aggregated, and more.
 
-You will also see a chart of the number of enriched customers over time and a preview of the enrichment data.  
+You'll also find a chart with the number of enriched customers over time and a preview of the enrichment data.  
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
-All data is aggregated up to the account level. An engagement score, which ranges from 0 to 100, with 100 being the highest engagement, is calculated for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. The following list contains the aggregated data that the account engagement enrichment provides:
+All data is aggregated up to the account level. The system calculates an engagement score, which ranges from 0 to 100, for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. The following list contains the aggregated data that the account engagement enrichment provides:
 
 
 
 | Data                                                                              | Column name                              |
 | :-------------------------------------------------------------------------------- |:---------------------------------------- |
 | Engagement score                                                                  |  EngagementScore                         |
-| Number of emails to account                                                       |  NoofEmails_ToAccount                    |
-| Number of emails from account                                                     |  NoofEmails_FromAccount                  | 
-| Number of meetings initiated by account                                           |  NoofMeetings_FromAccount                | 
-| Number of meetings initiated by your organization                                 |  NoofMeetings_ToAccount                  | 
+| Number of emails to account                                                       |  NoOfEmails_ToAccount                    |
+| Number of emails from account                                                     |  NoOfEmails_FromAccount                  | 
+| Number of meetings initiated by account                                           |  NoOfMeetings_FromAccount                | 
+| Number of meetings initiated by your organization                                 |  NoOfMeetings_ToAccount                  | 
 | Number of people from your organization in meetings with account                  |  NoOfContactsInvolved_Meetings           | 
 | Number of people from your organization in email conversations with account       |  NoOfContactsInvolved_Emails             | 
 | Number of people from account in meetings with your organization                  |  NoOfAccountContactsInvolved_Meetings    | 
@@ -98,11 +95,11 @@ All data is aggregated up to the account level. An engagement score, which range
 | Aggregation level (year, month, or week)                                          |  AggregationLevel                        | 
 
 
-Review the enriched data by selecting **See more** in the preview tile. Doing so takes you to the **Office** entity. You will also find the entity listed in the **Enrichment** group in **Data** > **Entities**. Here you will also find the **Office_UserEntity**, which contains the Active Directory IDs for the email addresses from your organization that were chosen for processing in the configuration step. 
+Review the enriched data by selecting **See more** in the preview section. it opens the *Office* entity. You can also find the entity listed in the **Enrichment** group in **Data** > **Entities**. Here you'll also find the *Office_UserEntity*, which contains the Active Directory IDs for the email addresses from your organization that were chosen for processing in the configuration step. 
 
 ## See enrichment data on the customer card
 
-Account engagement can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find the account's engagement score, the total number of emails, and the total number of meetings aggregated over the last year. You will also find charts that show the email and meeting history.
+Account engagement can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find the account's engagement score, the total number of emails, and the total number of meetings aggregated over the last year. You also find charts that show the email and meeting history.
 
 :::image type="content" source="media/enrichment-office-customer-card.png" alt-text="Customer card with enriched data.":::
 
