@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with data from Microsoft Office 365"
 description: "Use proprietary data from Microsoft Office to enrich your customer profiles with engagement data."
-ms.date: 10/27/2021
+ms.date: 11/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,16 +13,19 @@ manager: stefan.kummer
 
 # Enrich customer profiles with engagement data (preview)
 
-Use data from Microsoft Office 365 to enrich your customer account profiles with engagement insights. The engagement data consists of email and meeting activity aggregated to the account level (for example, the number of emails from the account, the number of meetings with the account, etc.) - no data for individual users (for example, e-mail body or content of meeting invites) are made available. This enrichment is available in the following regions: UK, Europe, North America.
+Use data from Microsoft Office 365 to enrich your customer account profiles with engagement insights. The engagement data consists of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users are made available. 
+
+This enrichment is available in the following regions: UK, Europe, North America.
 
 ## Prerequisites
 
-To configure engagement insights, the following prerequisites must be met:
+To configure the enrichment, the following prerequisites must be met:
 
 - You have an active Office 365 cloud license.
-- You have [unified customer profiles](customer-profiles.md) based on B2B accounts and the instance must be CDS/Dataverse MDL (Managed Data Lake)-attached.
+- You have [unified customer profiles](customer-profiles.md) based on [business accounts](work-with-business-accounts.md).
+- Your Customer Insights environment must have a [Microsoft Dataverse organization attached](create-environment.md#step-3-connect-to-microsoft-dataverse).
 - You have [administrator](permissions.md#administrator) permissions.
-- You have, or can get, consent from your Office 365 tenant administrator to use Office 365 data to provide *Insights for the Organization* within Dynamics 365 applications.
+- You have, or can get, consent from your Office 365 tenant administrator to use Office 365 data to provide **Insights for the Organization** within Dynamics 365 applications.
 
 ## Configure the enrichment
 
@@ -33,32 +36,32 @@ To configure engagement insights, the following prerequisites must be met:
    > [!div class="mx-imgBorder"]
    > ![Account engagement tile.](media/enrichment-office-tile.png "Account engagement tile")
    
-1. Click **Next** on the overview screen and select email addresses from your organization for which Office data is going to be aggregated. This ensures that data is only processed for relevant communication. A best practice is to use email groups, for example, *US Sales team*, which are easily managed in Office 365. The number of email addresses in the groups are resolved and shown. The total number of email addresses must be at least 2 and cannot exceed 2,500.
+1. Select **Next** in the **Overview** step and enter email addresses from your organization for which Office data is going to be aggregated. Only data from the listed email addresses gets processed for relevant communication. A best practice is to use email groups, for example, *US Sales team*, which are easily managed in Office 365. The number of email addresses in the groups are resolved and shown. The total number of email addresses must be at least 2 and can't exceed 2,500.
 
    > [!div class="mx-imgBorder"]
    > ![Account engagement email addresses.](media/enrichment-office-email-addresses.png "Account engagement email addresses")
 
-1. Review the consent statement, check the **I agree** check box, and click **Next**.
+1. Review the consent statement, select the **I agree** check box, and select **Next**.
 
-1. Select the customer data set and click **Next**.
+1. Select the customer data set and select **Next**.
 
-1. Now, map the contact email address field and click **Next**.
+1. Map the contact email address field and select **Next**.
 
-1. Finally, review the enrichment configuration, give the enrichment a name, and click **Save enrichment** to save the enrichment.
+1. Review the enrichment configuration, give the enrichment a name, and select **Save enrichment** to save the enrichment.
 
 ## Office 365 tenant administrator consent
 
-Consent from an Office 365 tenant administrator is required to activate the enrichment. An email is sent to the Office 365 tenant administrators when the enrichment is saved, which asks them to review and consent to allowing Dynamics 365 applications to use your enterprises’ Office 365 data to provide *Insights for the Organization*. The Office 365 tenant administrator can also consent directly in their Office 365 admin console, by selecting *Insights for the Organization*.
+Consent from an Office 365 tenant administrator is required to activate the enrichment. An email is sent to the Office 365 tenant administrators when the enrichment is saved, which asks them to review and consent to allowing Dynamics 365 applications to use your enterprises’ Office 365 data to provide **Insights for the Organization**. The Office 365 tenant administrator can also consent directly in their Office 365 admin console, by selecting **Insights for the Organization**.
 
-## Running the Account Engagement enrichment for the first time
+## Running the enrichment for the first time
 
-When the enrichment is started for the first time, after the Office 365 tenant administrator has given consent, the data from Office 365 download will commence. This process takes some time, so the first enrichment run will be scheduled to happen with a delay of 6 hours. You can see the number of days that the data covers on the account engagement overview page after the enrichment finishes. In case you have a large volume of email and meeting data you may want to run the enrichment again after a few days to make sure data has been downloaded for the full time window, which is 1 year.
+When the enrichment is started for the first time, after the Office 365 tenant administrator has given consent, the data download from Office 365 begins. This process takes some time, so the first enrichment run will be scheduled to happen with a delay of 6 hours. You can see the number of days that the data covers on the account engagement overview page after the enrichment finishes. In case you have a large volume of email and meeting data you may want to run the enrichment again after a few days to make sure data is complete for the entire time window, which is one year.
 
-To start the process, select **Run** on the Account engagement configuration page. Additionally, you can let the system run the enrichment automatically as part of a scheduled refresh. The default setting is that the enrichment is run once per week.
+To start the process, select **Run** on the Account engagement configuration page. Additionally, you can let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The default setting is that the enrichment is run once per week.
 
 Depending on the size of your Office data, it may take several hours for an enrichment run to complete.
 
-When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to produce aggregated insights, which are then added to your instance of Dynamics 365 Customer Insights. No data at an individual level (e.g., the body of any e-mail or calendar invite) is made visible, or available, to users of Dynamics 365 Customer Insights. 
+When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to create aggregated insights, which are then added to your Customer Insights environment. No data at an individual level (for example, the body of any e-mail or calendar invite) becomes available to users of Customer Insights. 
 
 > [!TIP]
 > There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you'll find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
@@ -67,11 +70,11 @@ When you run an enrichment, Microsoft will process the data within the Office 36
 
 After running the enrichment process, go to **My enrichments** to review the enrichment results. You will see the total number of enriched customers and a high-level overview of the enrichment results, including the number of emails and meetings processed, the number of days for which data has been aggregated (if data is still downloading you may get a longer data window by running the enrichment again at a later time), and more.
 
-You will also see a chart of the number of enriched customers over time as well as a preview of the enrichment data.  
+You will also see a chart of the number of enriched customers over time and a preview of the enrichment data.  
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
-All data is aggregated up to the account level. An engagement score, which ranges from 0 to 100, with 100 being the highest engagement, is calculated for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. The following is a list of the aggregated data that is being provided by the Account engagement enrichment:
+All data is aggregated up to the account level. An engagement score, which ranges from 0 to 100, with 100 being the highest engagement, is calculated for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. The following list contains the aggregated data that the account engagement enrichment provides:
 
 
 
@@ -105,7 +108,7 @@ Account engagement can also be viewed on individual customer cards. Go to **Cust
 
 ## Create segments and measures based on the enriched data
 
-The enriched data can be used to create segments and measures as detailed below. For example, you can create a segment that contains all the customers that have *days since last email* and *days since last meeting* values that are larger than, e.g., 60 days. That segment now contains stale accounts that can be attempted re-activated. 
+The enriched data can be used to create segments and measures as detailed below. For example, a segment that contains all the customers that have a value over 60 for *days since last email* and *days since last meeting*. That segment contains stale accounts that you can try to reactivate. 
 
 ## Next steps
 
