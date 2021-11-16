@@ -90,6 +90,8 @@ To match entities only if attributes meet multiple conditions, add more conditio
 
 1. Select **Done** so save the rule.
 
+### Add exceptions to a rule
+
 ### Add rules to a match pair
 
 Match rules represent sets of conditions. To match entities by conditions based on multiple attributes, add more rules
