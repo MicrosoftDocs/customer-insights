@@ -92,6 +92,18 @@ To match entities only if attributes meet multiple conditions, add more conditio
 
 ### Add exceptions to a rule
 
+In most cases, the entity matching leads to unique user profiles with consolidated data. To dynamically address rare cases of false positives and false negatives, you can define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records which fulfill the exception criteria.
+
+For example, if your match rule combines last name, city, and date of birth, the system would identify twins who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine are not the same.
+
+1. Go to **Data** > **Unify** > **Match** and select **Edit** on the rule you want to add conditions to.
+
+1. In the **Edit rule** pane, select **Add exception**.
+
+1. Specify the exception criteria. 
+
+1. Select **Done** so save the rule.
+
 ### Add rules to a match pair
 
 Match rules represent sets of conditions. To match entities by conditions based on multiple attributes, add more rules
