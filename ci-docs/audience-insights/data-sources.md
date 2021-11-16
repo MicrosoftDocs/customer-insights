@@ -27,6 +27,7 @@ You can add a data source in three main ways:
 - [Through dozens of Power Query connectors](connect-power-query.md)
 - [From a Common Data Model folder](connect-common-data-model.md)
 - [From your own Microsoft Dataverse lake](connect-dataverse-managed-lake.md)
+- [From an Azure Synapse Analytics database](connect-synapse.md)
 
 ## Add data from on-premises data sources
 

@@ -64,6 +64,8 @@
           href: audience-insights/connect-common-data-model.md
         - name: Add Dataverse managed data lake
           href: audience-insights/connect-dataverse-managed-lake.md
+        - name: Add Azure Synapse Analytics
+          href: audience-insights/connect-synapse.md
         - name: Incremental refresh for data sources
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Real-time data ingestion
