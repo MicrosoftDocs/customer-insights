@@ -15,6 +15,8 @@ manager: shellyha
 
 Export segments of unified customer profiles to Facebook Ads Manager to create campaigns on Facebook and Instagram.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO1aN]
+
 ## Prerequisites for connection
 
 - You need to have a [**Facebook Ads Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) that includes a [**Facebook Business Account**](https://business.facebook.com/).

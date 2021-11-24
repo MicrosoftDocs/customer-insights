@@ -100,6 +100,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Enhanced addresses
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Enhance company data
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: Enrich with Azure Maps
           href: audience-insights/enrichment-azure-maps.md
         - name: Enrich with HERE Technologies
@@ -277,6 +279,46 @@
         - name: API references
           href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
 
+- name: Consent management (preview)
+  items:
+    - name: Help hub
+      href: consent-management/index.yml
+
+    - name: Capability overview
+      href: consent-management/overview.md
+
+    - name: Get started
+      items:
+        - name: Get started
+          href: consent-management/get-started.md
+        - name: Concepts and terminology
+          href: consent-management/glossary.md
+
+    - name: Import consent data
+      items: 
+        - name: Import consent data
+          href: consent-management/import-consent-data.md
+        - name: Set consent data and apply consent preferences
+          href: consent-management/set-consent-rules.md
+
+    - name: Manage consent data
+      items: 
+        - name: Enable consent rules in audience insights
+          href: audience-insights/activate-consent.md
+        - name: Manage default consent rules in audience insights segments
+          href: audience-insights/change-default-consent-rules.md
+        
+    - name: Manage settings and users
+      items: 
+        - name: Configure system settings
+          href: consent-management/system-settings.md
+        - name: Manage users and permissions
+          href: consent-management/manage-users.md
+
+    - name: Use consent data
+      items: 
+        - name: Create predictions with consent data
+          href: consent-management/predictions-consent-data.md
 
 - name: Engagement insights (preview)
   items:
@@ -374,5 +416,4 @@
 
 - name: DSR rights and requests
   href: dsr-rights-requests.md
-
 
