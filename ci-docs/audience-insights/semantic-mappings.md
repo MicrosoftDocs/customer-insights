@@ -86,5 +86,36 @@ On **Data** > **Semantic mappings (preview)**, you can view all your saved seman
 
 - **Delete**: Opens a dialog to confirm the deletion of the selected semantic mapping. You can also delete more than one semantic mapping at once by selecting the semantic mappings and the delete icon. Select **Delete** to confirm the deletion.
 
+# Using a ContactProfile semantic entity mapping to create contact-level activities
+
+Once you have created a ContactProfile semantic entity mapping, you are able to follow a series of steps to capture activities at a contact-level, enabling you to see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the typical activity mapping configuration.
+
+   > [!NOTE]
+   > For contact-level activities to work, you must have both **AccountID** and **ContactID** attributes for each record within your activity data.
+
+1. Define a ContactProfile semantic entity mapping
+
+1. Run semantic mappings.
+
+1. In audience insights, go to **Data** > **Activities**.
+
+1. Select **Add Activity** to create a new activity.
+
+1. Name the activity, select the source activity entity, and select the primary key of the activity entity.
+
+1. In the **Relationships** step, create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary entity. For more information, go to [direct and indirect relationship paths](relationships.md#relationship-paths).
+   - **Example Relationship**: For an activity called *Purchases*, the indirect relationship would be set up as show below:
+      - **Purchases Source Activity Data** > **Contact Data** on the attribute **ContactID**
+      - **Contact Data** > **Account Data** on the attribute **AccountID**
+
+1. After setting up your relationship(s), select **Next** and complete your activity mapping configuration. For detailed steps on activity creation, go to [define an activity](activities.md).
+
+1. Run your activity mappings
+
+1. Your contact-level activities will now be visible on your customer timeline.
+
+## Contact-level activity timeline filtering
+
+After configuring a contact-level activity mapping and running it, the activity timeline for your customers will be updated to include their IDs or names (depending on your ContactProfile configuration) for the activities they acted on. You are able to filter by contacts in the timeline filter panel to see specific contacts that you are interested in. Additionally, you are able to see all activities that are not assigned to a specific contact by selecting **Activities not mapped to a Contact**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
