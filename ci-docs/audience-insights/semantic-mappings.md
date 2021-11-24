@@ -104,7 +104,7 @@ Once you have created a ContactProfile semantic entity mapping, you are able to 
 1. Name the activity, select the source activity entity, and select the primary key of the activity entity.
 
 1. In the **Relationships** step, create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary entity. For more information, go to [direct and indirect relationship paths](relationships.md#relationship-paths).
-   - **Example Relationship**: For an activity called *Purchases*, the indirect relationship would be set up as show below:
+   - **Example Relationship**: For an activity called *Purchases*, the indirect relationship would be set up as shown below:
       - **Purchases Source Activity Data** > **Contact Data** on the attribute **ContactID**
       - **Contact Data** > **Account Data** on the attribute **AccountID**
 
