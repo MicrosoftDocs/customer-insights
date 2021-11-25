@@ -40,7 +40,7 @@ Some output entities from audience insights are available as tables in Dataverse
 - [CustomerMeasure](#customermeasure)
 - [Enrichment](#enrichment)
 - [Prediction](#prediction)
-- Segment membership
+- [Segment membership](#segment-membership)
 
 
 ### CustomerProfile
@@ -118,7 +118,7 @@ This table contains the output of the model predictions.
 | msdynci_predictionid | GUID        | Deterministic GUID generated from msdynci_identifier | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
 
-### Segments membership
+### Segment membership
 
 This table contains segment membership information of the customer profiles.
 
