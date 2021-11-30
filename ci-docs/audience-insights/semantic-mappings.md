@@ -11,7 +11,7 @@ ms.author: cadesantha
 manager: shellyha
 ---
 
-# Semantic mappings
+# Semantic mappings (Preview)
 
 Semantic mappings let you map your non-activity data to pre-defined schemas. These schemas help audience insights to better understand your data attributes. Semantic mapping and the provided data enable new insights and features in audience insights. To map your activity data to the schemas, review the [activities](activities.md) documentation.
 
@@ -112,8 +112,12 @@ After creating a *ContactProfile* semantic entity mapping, you can capture activ
 
 1. Your contact-level activities will now be visible on your customer timeline.
 
+   :::image type="content" source="media/Contact_Activities1.png" alt-text="Final result after configuring contact activities":::
+
 ### Contact-level activity timeline filtering
 
 After configuring a contact-level activity mapping and running it, the activity timeline for your customers will be updated. It includes their IDs or names, depending on your *ContactProfile* configuration, for the activities they acted on. You can filter activities by contacts in the timeline to see specific contacts that you are interested in. Additionally, you can see all activities that are not assigned to a specific contact by selecting **Activities not mapped to a Contact**.
+
+   :::image type="content" source="media/Contact_Activities2.png" alt-text="Filtering options available for Contact-level activities.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
