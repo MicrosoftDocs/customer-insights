@@ -21,7 +21,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 ## Prerequisites
 
-- Currently, this feature supports web services published through [Machine Learning Studio (classic)](https://studio.azureml.net) and [Azure Machine Learning batch pipelines](/azure/machine-learning/concept-ml-pipelines).
+- Currently, this feature supports web services published through [Azure Machine Learning batch pipelines](/azure/machine-learning/concept-ml-pipelines).
 
 - You need an Azure Data Lake Gen2 storage account associated with your Azure Studio instance to use this feature. For more information, see [Create an Azure Data Lake Storage Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
 
@@ -45,7 +45,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 1. Select the **Workspaces** associated with your web service. There are two sections listed, one for Azure Machine Learning v1 (Machine Learning Studio (classic)) and Azure Machine Learning v2 (Azure Machine Learning). If you're not sure which workspace is the right one for your Machine Learning Studio (classic) web service, select **Any**.
 
-1. Choose the Machine Learning Studio (classic) web service or Azure Machine Learning pipeline in the **Web service that contains your model** dropdown. Then, select **Next**.
+1. Choose the Azure Machine Learning pipeline in the **Web service that contains your model** dropdown. Then, select **Next**.
    - Learn more about [publishing a web service in Machine Learning Studio (classic)](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
    - Learn more about [publishing a pipeline in Azure Machine Learning using the designer](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) or [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Your pipeline must be published under a [pipeline endpoint](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
@@ -57,8 +57,6 @@ Predictions offer capabilities to create better customer experiences, improve bu
    > ![Configure a workflow.](media/intelligence-screen2-updated.png "Configure a workflow")
 
 1. In the **Model Output Parameters** step, set the following properties:
-   - Machine Learning Studio (classic)
-      1. Enter the output **Entity name** you want web service output results to flow into.
    - Azure Machine Learning
       1. Enter the output **Entity name** you want pipeline output results to flow into.
       1. Select the **Output data store parameter name** of your batch pipeline from the dropdown.
@@ -88,8 +86,6 @@ Predictions offer capabilities to create better customer experiences, improve bu
 1. For each **Web service input**, you can update the matching **Entity** from audience insights. Then, select **Next**.
 
 1. In the **Model Output Parameters** step, set the following properties:
-   - Machine Learning Studio (classic)
-      1. Enter the output **Entity name** you want web service output results to flow into.
    - Azure Machine Learning
       1. Enter the output **Entity name** you want pipeline output results to flow into.
       1. Select the **Output data store parameter name** for your test pipeline.
