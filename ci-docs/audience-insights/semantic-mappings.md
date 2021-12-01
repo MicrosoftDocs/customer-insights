@@ -1,7 +1,7 @@
 ---
 title: "Semantic mappings (Preview)"
 description: "Overview of semantic mappings and how to use them." 
-ms.date: 11/01/2021
+ms.date: 12/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
