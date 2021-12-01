@@ -1,7 +1,7 @@
 ---
 title: "Manage default consent rules on segments"
 description: "With the consent management capability, you can disable or change the default consent rules if overrides are enabled."
-ms.date: 11/12/2021
+ms.date: 12/01/2021
 ms.service: customer-insights
 mms.topic: how-to
 author: smithy7
@@ -36,7 +36,7 @@ With enforced consent rules in the segment area, every segment informs about the
 
 ## For contributors
 
-To create a segment without enforced consent rules or add your own set of rules, you have to work with your administrator.
+To create a segment without enforced consent rules, you have to work with your administrator to disable them on your segment. However, you can add your own consent rules to segments you own and manage.
 
 It's a three step process: 
 1. [Create the segment](segments.md) in audience insights and save it. 
