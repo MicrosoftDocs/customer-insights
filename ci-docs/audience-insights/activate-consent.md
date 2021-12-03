@@ -1,7 +1,7 @@
 ---
 title: "Activate consent rules for segments"
 description: "Follow these steps to link consent data and activate consent checks in audience insights. An admin can also disable consent checks."
-ms.date: 11/03/2021
+ms.date: 11/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -44,3 +44,6 @@ To stop using consent data in audience insights, an admin has to update the syst
 1. Select the **Consent (preview)** tab.
 
 1. In the **Enable consent checks** section, set the toggle to **Off**.
+
+> [!TIP]
+> To stop using the consent management capability, see [System settings in Consent Center (preview)](../consent-management/system-settings.md).
