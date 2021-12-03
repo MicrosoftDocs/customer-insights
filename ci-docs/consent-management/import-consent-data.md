@@ -1,7 +1,7 @@
 ---
 title: "Import data to consent management capability"
 description: "Learn how to import data into the consent management capability of Customer Insights and about the required fields for the two types of data."
-ms.date: 11/03/2021
+ms.date: 12/03/2021
 ms.service: customer-insights
 ms.subservice: consent-management
 ms.topic: how-to
@@ -78,6 +78,20 @@ Required data fields:
 - When the consent was captured
 - Source of the captured consent
 
+Data model with data types: 
+
+|     Name                         |     Type        |     Required    |     Comments        |
+|----------------------------------|-----------------|-----------------|---------------------|
+|     DataSubjectIdentifierType    |     string      |     Yes         |     This field defines the data subject identifier’s type. For example, phone number, email address, or User ID. Consent management currently supports three data subject identifier types: “Phone”, “UserId”, and “Email” (all case-sensitive).     |
+|     DataSubjectIdentifier        |     string      |     Yes         |     Value of the data subject identifier. For example, marie@contoso.com, +1-444-444-4444, or  CONTACT_ID_123.            |
+|     Subscription                 |     string      |     Yes         |     Name of the subscription for which the consent was collected.             |
+|     SubscriptionStartDate        |     DateTime    |     No          |    Optional field to specify the start date time of the subscription. For example, you may have a subscription created for an offer that runs for a limited period of time. You can use this field to indicate the start date time of that subscription.           |
+|     SubscriptionEndDate          |     DateTime    |     No          |     Optional field to specify the end date time of a subscription.  |
+|     ConsentStatus                |     string      |     Yes         |     Value of the consent status. This could be any value that your system of consent record has stored for the specific consent.         |
+|     ConsentDate                  |     DateTime    |     Yes         |     Date and time when the consent was captured.    |
+
+
+
 ### Purpose consent data
 
 Required data fields: 
@@ -88,3 +102,14 @@ Required data fields:
 - Consent status
 - When the consent was captured
 - Source of the captured consent
+
+
+Data model with data types: 
+ 
+|     Name                         |     Type        |     Required    |     Comments               |
+|----------------------------------|-----------------|-----------------|----------------------|
+|     DataSubjectIdentifierType    |     string      |     Yes         |     This field defines the data subject identifier’s type. For example, phone number, email address, or User ID. Consent management currently supports three data subject identifier types: “Phone”, “UserId”, and “Email” (all case-sensitive).     |
+|     DataSubjectIdentifier        |     string      |     Yes         |     Value of the data subject identifier. For example, marie@contoso.com, +1-444-444-4444, or  CONTACT_ID_123.            |
+|     DataUsePurpose               |     string      |     Yes         |     Name of the purpose for which the consent was collected.         |
+|     ConsentStatus                |     string      |     Yes         |     Value of the consent status. This could be any value that your system of consent record has stored for the specific consent.         |
+|     ConsentDate                  |     DateTime    |     Yes         |     Date and time when the consent was captured.    |

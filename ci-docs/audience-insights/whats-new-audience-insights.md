@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 11/04/2021
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -21,6 +21,18 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## November 2021 updates
+
+The updates in November 2021 include a new features, performance upgrades, and bug fixes.
+
+### Segment membership now available in Dataverse
+
+Segment membership information for customer profiles is now available in Dataverse along with the customer profiles and insights. Dynamics 365 action apps and model-driven apps can use this data look up segment membership details for a given customer.
+
+### Activities support contact-level details for business accounts
+
+You can now configure, display, and filter activities for contacts on your business account activity timelines to better understand which account contacts took part in specific activities.
 
 ## October 2021 updates
 
