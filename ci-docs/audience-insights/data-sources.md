@@ -20,13 +20,14 @@ The audience insights capability in Dynamics 365 Customer Insights connects to d
 
 ## Add a data source
 
-Refer to the detailed articles for how to add a data source, depending on which option you choose.
+Refer to the detailed articles for how to add a data source, depending on the option you choose.
 
-You can add a data source in three main ways:
+You can add a data source in the following ways:
 
 - [Through dozens of Power Query connectors](connect-power-query.md)
 - [From a Common Data Model folder](connect-common-data-model.md)
 - [From your own Microsoft Dataverse lake](connect-dataverse-managed-lake.md)
+- From a Customer Insights data library (includes sample datasets available for various industries)
 
 ## Add data from on-premises data sources
 
