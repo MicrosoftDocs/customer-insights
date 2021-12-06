@@ -1,7 +1,7 @@
 ---
 title: "Connect to tables in Microsoft Dataverse"
 description: "Import data from a Microsoft Dataverse managed data lake."
-ms.date: 07/23/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -15,11 +15,14 @@ ms.reviewer: mhart
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-This article provides information on how Dataverse users can quickly connect to their analytical entities in a Dataverse managed lake. You must be an admin on the Dataverse organization to proceed and see the list of entities available in the managed lake.
+This article provides information on how Dataverse users can quickly connect to analytical entities in a Microsoft Dataverse managed lake. 
+
+> [!NOTE]
+> You must be an admin on the Dataverse organization to proceed and view the list of entities available in the managed lake.
 
 ## Important considerations
 
-Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)
+Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 ## Connect to a Dataverse managed lake
 
@@ -27,12 +30,9 @@ Data stored in online services, such as Azure Data Lake Storage, may be stored i
 
 2. Select **Add data source**.
 
-3. Select **Connect to Microsoft Dataverse managed lake** and select **Next**.
+3. Select **Microsoft Dataverse** and select **Next**.
 
-4. Enter a **Name** for the data source and select **Next**. Name guidelines: 
-   - Start with a letter.
-   - Use letters and numbers only. Special characters and spaces are not allowed.
-   - Use between 3 and 64 characters.
+4. Enter a **Name** for the data source and select **Next**. 
 
 5. Provide the **Server address** for the Dataverse organization, and select **Sign in**.
 
