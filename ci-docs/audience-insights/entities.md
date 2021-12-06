@@ -27,7 +27,7 @@ The **Entities** page lists entities and includes these columns:
 ## Explore a specific entity's data
 
 1. In audience insights, go to **Data** > **Entities**.
-1. From the Entities page, select an entity to open the details page.  
+1. From the **Entities** page, select an entity to open the details page.  
 1. Explore the different fields and records included for that entity.
 
 - The **Attributes** tab is selected by default and shows a table to review details for the selected entity, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](map-entities.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* below has a data type *Text* but its (semantic) Common Data Model type might be *Email* or *EmailAddress*.
@@ -36,7 +36,7 @@ The **Entities** page lists entities and includes these columns:
 > ![Fields table.](media/data-manager-entities-fields.PNG "Fields table")
 
 > [!NOTE]
-> Both tables show only a sample of your entity's data. To view the full data set, go to the **Data sources** page, select an entity, select **Edit**, and then view this entity's data with the Power Query editor as explained in [Data sources](data-sources.md).
+> This page shows only a sample of your entity's data. To view the full data set, go to the **Data sources** page, select an entity, select **Edit**, and then view this entity's data with the Power Query editor as explained in [Data sources](data-sources.md).
 
 - The **Data** tab shows a table listing details about individual records of the entity. Details listed depend on the entity's data type.
 
