@@ -27,10 +27,7 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 1. Choose one of the import methods and select **Next**.
 
-1. Provide a **Name** for the data source, and select **Next** to create the data source. Name guidelines: 
-   - Start with a letter.
-   - Use letters and numbers only. Special characters and spaces are not allowed.
-   - Use between 3 and 64 characters.
+1. Provide a **Name** for the data source, and select **Next** to create the data source.
 
 1. Choose one of the [available connectors](#available-power-query-data-sources). In this example, we select the **Text/CSV** connector.
 
