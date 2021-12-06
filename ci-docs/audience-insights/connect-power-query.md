@@ -25,7 +25,7 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 1. Select **Add data source**.
 
-1. Choose one of the import methods and select **Next**.
+1. Select **Microsoft Power Query**, then select **Next**.
 
 1. Provide a **Name** for the data source, and select **Next** to create the data source.
 
