@@ -38,6 +38,11 @@ The **Entities** page lists entities and includes these columns:
 > [!NOTE]
 > This page shows only a sample of your entity's data. To view the full data set, go to the **Data sources** page, select an entity, select **Edit**, and then view this entity's data with the Power Query editor as explained in [Data sources](data-sources.md).
 
+To learn more about the data ingested in the entity, the **Summary** column provides you with some important characteristics of the data, such as nulls, missing values, unique values, counts, and distributions, as applicable to your data. Select the chart icon to see the summary of the data.
+
+> [!div class="mx-imgBorder"]
+> ![Summary symbol.](media/data-manager-entities-summary.png "Data summary table")
+
 - The **Data** tab shows a table listing details about individual records of the entity. Details listed depend on the entity's data type.
 
 > [!div class="mx-imgBorder"]
