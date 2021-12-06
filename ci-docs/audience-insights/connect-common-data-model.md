@@ -1,7 +1,7 @@
 ---
 title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 05/29/2020
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -25,7 +25,7 @@ This article provides information on how to ingest data from a Common Data Model
 
 - The Azure Data Lake you want to connect and ingest data from have to be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in audience insights.
 
-- Data stored in online services, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)
+- Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 ## Connect to a Common Data Model folder
 
@@ -33,12 +33,11 @@ This article provides information on how to ingest data from a Common Data Model
 
 1. Select **Add data source**.
 
-1. Select **Connect to a Common Data Model folder**, enter a **Name** for the data source, and select **Next**. Name guidelines: 
-   - Start with a letter.
-   - Use letters and numbers only. Special characters and spaces are not allowed.
-   - Use between 3 and 64 characters.
+1. Select **Microsoft Dataverse**, enter a **Name** for the data source, then select **Next**.
 
-1. You can choose between using a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Enter the **Container** information and select **Next**.
+   - If prompted, select one of the sample datasets that pertain to your industry, then select **Next**. 
+
+1. You can choose between using a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Enter the **Server address**, select **Sign in**, then select **Next**.
    > [!div class="mx-imgBorder"]
    > ![Dialog box to enter new connection details for Azure Data Lake.](media/enter-new-storage-details.png)
    > [!NOTE]
@@ -51,11 +50,11 @@ This article provides information on how to ingest data from a Common Data Model
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list.
 
-1. You'll get a list of available entities in the selected model.json or manifest.json file. You can review and select from the list of available entities and select **Save**. All of the selected entities will be ingested from the new data source.
+1. You'll see a list of available entities in the selected model.json or manifest.json file. Review and select from the list of available entities, then select **Save**. All of the selected entities will be ingested from the new data source.
    > [!div class="mx-imgBorder"]
    > ![Dialog box showing a list of entities from a model.json file.](media/review-entities.png)
 
-8. Indicate which data entities you want to enable data profiling and select **Save**. Data profiling enables analytics and other capabilities. You can select the whole entity, which selects all attributes from the entity, or select certain attributes of your choice. By default, no entity is enabled for data profiling.
+8. Indicate which data entities you want to enable data profiling, then select **Save**. Data profiling enables analytics and other capabilities. You can select the whole entity, which selects all attributes from the entity, or select certain attributes of your choice. By default, no entity is enabled for data profiling.
    > [!div class="mx-imgBorder"]
    > ![Dialog box showing a data profiling.](media/dataprofiling-entities.png)
 
