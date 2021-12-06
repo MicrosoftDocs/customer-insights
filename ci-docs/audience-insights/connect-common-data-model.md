@@ -33,7 +33,7 @@ This article provides information on how to ingest data from a Common Data Model
 
 1. Select **Add data source**.
 
-1. Select **Microsoft Dataverse**, enter a **Name** for the data source, then select **Next**.
+1. Select **Azure data lake storage**, enter a **Name** for the data source, then select **Next**.
 
    - If prompted, select one of the sample datasets that pertain to your industry, then select **Next**. 
 
