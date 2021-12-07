@@ -29,7 +29,7 @@ You can add the following data sources:
 - [Microsoft Dataverse lake](connect-dataverse-managed-lake.md)
 
 > [!NOTE]
-> If you're using the trial version, the import methods section includes a **Customer Insights data library** option. Choose this option to select a sample dataset available for various industries. For more information, see [Dynamics 365 Customer Insights trial](trial-signup.md).
+> If you're using the trial version, the import methods section includes a **Customer Insights data library** option. Choose this option to select a sample dataset available for various industries. For more information, see [Dynamics 365 Customer Insights trial](../trial-signup.md).
 
 ## Add data from on-premises data sources
 
