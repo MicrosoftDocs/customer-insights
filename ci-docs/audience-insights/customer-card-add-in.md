@@ -1,12 +1,12 @@
 ---
 title: "Customer Card Add-in for Dynamics 365 apps"
 description: "Show data from audience insights in Dynamics 365 apps with this add-in."
-ms.date: 09/30/2021
+ms.date: 12/07/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual    
-author: pkieffer, Nils-2m
+author: Nils-2m
 ms.author: nikeller
 manager: shellyha
 ---
@@ -29,7 +29,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
   - **Measure control**: Requires [configured measures](measures.md) of type customer attributes.
   - **Intelligence control**: Requires data generated using [predictions](predictions.md) or [custom models](custom-models.md).
   - **Customer details control**: All fields from the profile are available in the unified customer profile.
-  - **Enrichment control**: Requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft, [Interests](enrichment-microsoft.md) provided by Microsoft, [Office engagement data](enrichment-office.md) provided by Microsoft.
+  - **Enrichment control**: Requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft, [Interests](enrichment-microsoft.md) provided by Microsoft, and [Office engagement data](enrichment-office.md) provided by Microsoft.
   - **Contacts control**: Requires definition of semantic entity of type contacts.
   - **Timeline control**: Requires [configured activities](activities.md).
 
