@@ -1,7 +1,7 @@
 ---
 title: "Incremental refresh for Power Query-based data sources"
 description: "Refresh new and updated data for large data sources based on Power Query."
-ms.date: 09/28/2020
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -12,6 +12,8 @@ manager: shellyha
 ---
 
 # Incremental refresh for data sources based on Power Query
+
+This article discusses how to configure incremental refresh for data sources based on Power Query.
 
 Incremental refresh for data sources provides the following advantages:
 
@@ -25,9 +27,9 @@ Audience insights allows incremental refresh for data sources imported through P
 
 1. [Create a new data source based on Power Query](connect-power-query.md).
 
-1. Provide a name for the data source.
+1. Provide a **Name** for the data source.
 
-1. Select a data source that supports incremental refresh, such as Azure SQL database.
+1. Select a data source that supports incremental refresh, such as [Azure SQL database](/power-query/connectors/azuresqldatabase).
 
 1. Select the entities or tables to ingest.
 
