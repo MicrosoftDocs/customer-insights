@@ -1,7 +1,7 @@
 ---
 title: "Ingest data through a Power Query connector"
 description: "Connectors for data sources based on Power Query."
-ms.date: 11/01/2020
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -13,7 +13,9 @@ manager: shellyha
 
 # Connect to a Power Query data source
 
-Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights. Adding data sources based on Power Query connectors generally follows the steps outlined in the next section. However, depending on the connector you use, different information is required. For more information, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
+Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights. 
+
+Adding data sources based on Power Query connectors generally follows the steps outlined in this section. However, depending on the connector you use, different information is required. To learn more, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 
@@ -23,14 +25,11 @@ Power Query offers a broad set of connectors to ingest data. Most of these conne
 
 1. Select **Add data source**.
 
-1. Choose the **Import data** method and select **Next**.
+1. Select **Microsoft Power Query**, then select **Next**.
 
-1. Provide a **Name** for the data source, and select **Next** to create the data source. Name guidelines: 
-   - Start with a letter.
-   - Use letters and numbers only. Special characters and spaces are not allowed.
-   - Use between 3 and 64 characters.
+1. Provide a **Name** for the data source, and select **Next** to create the data source.
 
-1. Choose one of the [available connectors](#available-power-query-data-sources). For this example, we select the **Text/CSV** connector.
+1. Choose one of the [available connectors](#available-power-query-data-sources). In this example, we select the **Text/CSV** connector.
 
 1. Enter the required details in the **Connection settings** for the selected connector and select **Next** to see a preview of the data.
 
@@ -45,7 +44,7 @@ Power Query offers a broad set of connectors to ingest data. Most of these conne
 
 1. You can add additional entities to your data source by selecting **Get data** in the **Edit queries** dialog.
 
-   These transformations are highly recommended:
+   We recommend you use the following transformations:
 
    - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform table** and select **Use headers as first row**.
    - Ensure the data type is set appropriately.
@@ -56,7 +55,7 @@ Power Query offers a broad set of connectors to ingest data. Most of these conne
 
 ## Available Power Query data sources
 
-See the [Power Query connector reference](/power-query/connectors/) for an up-to-date list of connectors that you can select to import data to Customer Insights. 
+See the [Power Query connector reference](/power-query/connectors/) for a list of connectors that you can use to import data to Customer Insights. 
 
 Connectors with a checkmark in the **Customer Insights (Dataflows)** column are available to create new data sources based on Power Query. Review the documentation of a specific connector to learn more about its prerequisites, limitations, and other details.
 
@@ -65,7 +64,7 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
 > [!NOTE]
 > It might not be possible to make changes to data sources that are currently being used in one of the app's processes (*segmentation*, *match*, or *merge*, for example). 
 >
-> Using the **Settings** page, you can track the progress of each of the active processes. When a process completes, you can return to the **Data Sources** page and make your changes.
+> In the **Settings** page, you can track the progress of each of the active processes. When a process completes, you can return to the **Data Sources** page and make your changes.
 
 1. In audience insights, go to **Data** > **Data sources**.
 
