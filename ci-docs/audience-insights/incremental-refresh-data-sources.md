@@ -29,7 +29,7 @@ Audience insights allows incremental refresh for data sources imported through P
 
 1. Provide a **name** for the data source.
 
-1. Select a data source that supports incremental refresh, such as [Azure SQL database](https://docs.microsoft.com/power-query/connectors/azuresqldatabase).
+1. Select a data source that supports incremental refresh, such as [Azure SQL database](/power-query/connectors/azuresqldatabase).
 
 1. Select the entities or tables to ingest.
 
