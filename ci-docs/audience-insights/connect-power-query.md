@@ -1,5 +1,5 @@
 ---
-title: "Ingest data through a Power Query connector"
+title: "Ingest data through a Power Query connector (Video)"
 description: "Connectors for data sources based on Power Query."
 ms.date: 12/06/2021
 ms.reviewer: mhart
