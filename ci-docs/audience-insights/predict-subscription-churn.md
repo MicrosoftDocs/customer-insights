@@ -1,5 +1,5 @@
 ---
-title: "Subscription churn prediction"
+title: "Subscription churn prediction (Video)"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
 ms.date: 08/19/2020
 ms.reviewer: mhart
@@ -14,6 +14,8 @@ manager: shellyha
 # Subscription churn prediction (preview)
 
 Subscription churn prediction helps predicting whether a customer is at risk for no longer using your company’s subscription products or services. You can create new subscription churn prediction on the **Intelligence** > **Predictions** page. Select **My predictions** to see other predictions that you've created.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOKNQ]
 
 > [!TIP]
 > Try the tutorial for a subscription churn prediction using sample data: [Subscription churn prediction sample guide](sample-guide-predict-subscription-churn.md).

@@ -1,7 +1,7 @@
 ---
-title: "Activate consent rules for segments in audience insights"
-description: "Steps to link consent data and activate consent checks in audience insights."
-ms.date: 11/03/2021
+title: "Activate consent rules for segments"
+description: "Follow these steps to link consent data and activate consent checks in audience insights. An admin can also disable consent checks."
+ms.date: 11/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -13,11 +13,11 @@ manager: shellyha
 
 # Activate consent rules
 
-[Consent Center (preview)](../consent-management/overview.md) helps you to harmonize consent data from various sources. Use the unified *Consent* entity to apply default consent checks. After importing consent data in Consent Center and configuring the rules for the imported consent data, the *Consent* entity is automatically synced to audience insights.
+The [Consent Center (preview)](../consent-management/overview.md) helps you to harmonize consent data from various sources. Use the unified *Consent* entity to apply default consent checks. After importing consent data into the Consent Center and configuring the rules for the data, the *Consent* entity is automatically synced to audience insights.
 
 ## Enable consent checks
 
-With consent data imported to Consent Center (preview) and rules set up, you can enable consent checks in audience insights. 
+With consent data imported to the Consent Center (preview) and the rules set up, you can enable consent checks. 
 
 :::image type="content" source="../consent-management/media/enable-consent-checks-audience-insights.png" alt-text="Consent tab in audience insights settings with activated consent data.":::
 
@@ -25,13 +25,13 @@ With consent data imported to Consent Center (preview) and rules set up, you can
 
 1. Select the **Consent (preview)** tab.
 
-1. In the **Enable consent checks** section, set the toggle for the area you want to enable to **On**.
+1. In the **Enable consent checks** section, set the toggle to **On** for all the areas you want to enable.
 
 1. Select the **Allow override of default consent rules** checkbox to remove the default consent checks enforced on a particular segment. 
 
 1. In the dropdown menu, select where you want to allow overrides.     
 
-1. In the **Link consent to customer profiles** section, choose the attribute that is used as an identifier to link consent data to customer data. It's likely a phone number or an email address. 
+1. In the **Link consent to customer profiles** section, choose the attribute that's used as an identifier to link consent data to customer data. It will likely be a phone number or email address. 
 
 1. Select **Save** to apply your settings.
 
@@ -43,4 +43,7 @@ To stop using consent data in audience insights, an admin has to update the syst
 
 1. Select the **Consent (preview)** tab.
 
-1. In the **Enable consent checks** section and set the toggle to **Off**.
+1. In the **Enable consent checks** section, set the toggle to **Off**.
+
+> [!TIP]
+> To stop using the consent management capability, see [System settings in Consent Center (preview)](../consent-management/system-settings.md).

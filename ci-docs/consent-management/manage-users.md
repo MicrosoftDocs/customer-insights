@@ -1,6 +1,6 @@
 ---
 title: "Manage users in the consent management capability"
-description: "Introduction to user management to let admins access the consent center."
+description: "All users in an org that owns consent management can get access to the service. Admins add users and assign them the required permissions in audience insights."
 ms.date: 10/30/2021
 ms.service: customer-insights
 ms.subservice: consent-management
@@ -15,8 +15,8 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-[Consent management](overview.md), a capability of Dynamics 365 Customer Insights is available on a subscription basis. All users in an organization that owns consent management can get access to the service. 
+The [consent management capability](overview.md) is available on a subscription basis. All users in an organization that owns consent management can get access to the service. 
 
-Currently, all administrators of audience insights have access to the consent management capability. You can't add users in the Consent Center directly.
+Currently, all administrators of audience insights have access to the consent management capability. They can add and remove other users and assign them the required permissions in audience insights. Admins can't add users to the Consent Center directly. 
 
-Administrators add and remove other users and assign them the required permissions. Review the documentation about [user permissions](../audience-insights/permissions.md) in audience insights to manage users and user roles.
+Review the documentation about [user permissions](../audience-insights/permissions.md) in audience insights to manage users and user roles.

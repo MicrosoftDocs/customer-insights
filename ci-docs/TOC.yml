@@ -100,7 +100,7 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Enhanced addresses
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: Enhance company data
+        - name: Enhanced company data
           href: audience-insights/enrichment-enhanced-company-data.md
         - name: Enrich with Azure Maps
           href: audience-insights/enrichment-azure-maps.md
@@ -112,6 +112,8 @@
           href: audience-insights/enrichment-leadspace.md
         - name: Enrich with Experian
           href: audience-insights/enrichment-experian.md
+        - name: Enrich with Office 365 data
+          href: audience-insights/enrichment-office.md
         - name: Enrich with SFTP custom import
           href: audience-insights/enrichment-SFTP-custom-import.md
 
@@ -166,8 +168,6 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Experiments with Azure Machine learning
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: Experiments with Azure Machine Learning studio
-              href: audience-insights/machine-learning-studio-experiments.md
         
         - name: Manage predictions
           href: audience-insights/manage-predictions.md

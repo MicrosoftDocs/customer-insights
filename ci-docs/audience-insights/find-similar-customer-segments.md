@@ -1,5 +1,5 @@
 ---
-title: "Find similar customers with AI"
+title: "Find similar customers with AI (Video)"
 description: "Find similar customer segments with artificial intelligence."
 ms.date: 06/25/2020
 ms.service: customer-insights
@@ -14,6 +14,8 @@ manager: shellyha
 # Similar Customers (preview)
 
 This feature lets you find similar customers in your customer base using artificial intelligence. You need to have at least one segment created to use this feature. Expanding the criteria of an existing segment help find customers that are similar to that segment.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOFou]
 
 > [!NOTE]
 > *Find similar customers* uses automated means to evaluate data and make predictions based on that data, and therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation (“GDPR”). Customer’s use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including predictions, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.

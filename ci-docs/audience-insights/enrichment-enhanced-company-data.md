@@ -1,7 +1,7 @@
 ---
 title: "Company data enhancement"
 description: "Enrich and normalize company data with Microsoft's models."
-ms.date: 10/25/2021
+ms.date: 11/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -46,7 +46,8 @@ There are a few limitations with the enhanced data. The items in the list below 
 
 1.	Confirm the identity of the company. We don't verify if the input is an existing organization or that a company uses the output as its standard name.
 2.	Comprehensively cover companies globally. Microsoft’s compiled company data has global coverage, but offers most coverage in Australia, Canada, United Kingdom, and the United States.
-3.	Guarantee accuracy or freshness of data. As business information often changes, we can't guarantee that the enhanced company data provided is always exact or up-to-date.
+3.	Standardize company addresses globally. We currently support standardizing addresses in these countries or regions: Australia, Canada, France, Germany, Italy, Japan, United Kingdom, and the United States.
+4.	Guarantee accuracy or freshness of data. As business information often changes, we can't guarantee that the enhanced company data provided is always exact or up-to-date.
 
 ## Configure the enrichment
 

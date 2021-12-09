@@ -1,7 +1,7 @@
 ---
 title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
-ms.date: 09/30/2021
+ms.date: 11/05/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -42,6 +42,7 @@ On the **Discover** tab, you'll find all supported enrichment options.
 - [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
 - [Company data](enrichment-dnb.md) provided by Dun & Bradstreet
+- [Account engagement data](enrichment-office.md) provided by Microsoft
 
 ---
 
