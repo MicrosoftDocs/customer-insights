@@ -1,5 +1,5 @@
 ---
-title: "Find similar customers with AI"
+title: "Find similar customers with AI (Video)"
 description: "Find similar customer segments with artificial intelligence."
 ms.date: 06/25/2020
 ms.service: customer-insights
