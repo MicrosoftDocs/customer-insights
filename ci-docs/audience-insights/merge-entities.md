@@ -1,7 +1,7 @@
 ---
 title: "Merge entities in data unification"
 description: "Merge entities to create unified customer profiles."
-ms.date: 09/14/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,6 +9,8 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-merge
 ---
 
 # Merge entities
@@ -84,7 +86,7 @@ On the **Merge** page, select **Excluded fields** to see the list of all exclude
     :::image type="content" source="media/recency-merge-option.png" alt-text="Recency option in the merge fields dialog.":::
     - **Least recent**: Identifies the winner value based on the least recency. Requires a date or a numeric field for every participating entity in the merge fields scope to define the recency.
 
-1.	You can add additional fields to participate in the merge process.
+1.	You can add more fields to participate in the merge process.
 
 1.	You can rename the merged field.
 
@@ -127,15 +129,15 @@ Some entities contain more details than others. If an entity includes the latest
 After configuring merging fields, you can define how to generate CustomerId values, the unique customer profile identifiers. 
 The merge step in the data unification process generates the unique customer profile identifier. The identifier is the CustomerId in the *Customer* entity that results from the data unification process. 
 
-The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in the match and merge phase and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. Consequently, the primary key value might not always represent the same customer.
+The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in the match and merge phase and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. So the primary key value might not always represent the same customer.
 
-Configuring a stable customer Id enables you to avoid that behavior.
+Configuring a stable customer ID enables you to avoid that behavior.
 
 **Configure a unique customer ID**
 
 1. Go to **Unify** > **Merge**.
 
-1. On the **Merge** page, select the **Keys** tab. 
+1. Select the **Keys** tab. 
 
 1. Hover on the **CustomerId** row and select the **Configure** option.
    :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
@@ -143,6 +145,30 @@ Configuring a stable customer Id enables you to avoid that behavior.
 1. Select up to five fields that will comprise a unique customer ID and are more stable. Records that don’t match your configuration use a system-configured ID instead.  
 
 1. Select **Done** and run the merge process to apply your changes.
+
+## Group profiles into households or clusters
+
+As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
+
+**Define a household or a cluster**
+
+1. Go to **Unify** > **Merge**.
+
+1. On the **Merge** tab, select **Advanced** > **Create cluster**.
+
+   :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
+
+1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
+
+1. Provide a name for the cluster and select **Done**.
+
+1. Select the **Clusters** tab to find the cluster you created.
+
+1. Specify the rules and conditions to define your cluster.
+
+1. Select **Run** to run the merge process and create the cluster.
+
+After running the merge process, the cluster identifiers are added as new fields to the *Customer* entity.
 
 ## Run your merge
 
@@ -157,10 +183,9 @@ Choose **Run Merge and downstream processes** to refresh the system with your ch
 
 To make more changes and rerun the step, you can cancel an in-progress merge. Select **Refreshing ...** and select **Cancel job**  in the side pane that appears.
 
-> [!TIP]
-> After running the merge process, select the process status to open the **Task details** pane. It gives an overview about the processing time, the last processing date, and all errors and warnings associated with the task. Select **See details** to see which entities participated in the match process, if the conflict resolution succeeded, and if the updates were published successfully.  
-> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).  
-> :::image type="content" source="media/process-detail-path.png" alt-text="Drill-down path to get to process details from the task status link.":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+:::image type="content" source="media/process-detail-path.png" alt-text="Drill-down path to get to process details from the task status link.":::
 
 ## Next Step
 

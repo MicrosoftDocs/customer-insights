@@ -1,7 +1,7 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 02/23/2021
+ms.date: 11/24/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,6 +9,8 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-match
 ---
 
 # Match entities
@@ -173,10 +175,7 @@ Go to **Data** > **Unify** > **Match** and select **Run** to start the process. 
 
 You'll find the result of a successful run, the unified customer profile entity, on the **Entities** page. Your unified customer entity is called **Customers** in the **Profiles** section. The first successful match run creates the unified *Customer* entity. All subsequent match runs expand that entity.
 
-> [!TIP]
-> After running the match process, select the process status to open the **Task details** pane. It gives an overview about the processing time, the last processing date, and all errors and warnings associated with the task. Select **See details** to see which entities participated in the match process, which rules were applied to them, and if the updates were published successfully.  
-> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).  
-> :::image type="content" source="media/process-detail-path.png" alt-text="Drill-down path to get to process details from the task status link.":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Review and validate your matches
 
@@ -220,17 +219,24 @@ You can reconfigure and fine-tune most of the match parameters.
 
 ## Specify custom match conditions
 
-You can specify conditions that certain records should always match or never match. These rules can be uploaded to override the standard match process. For example, if there are John Doe I and John Doe II in our records, the system might match them as one person. Custom match rules let you specify that their profiles refer to different people. 
+You can specify conditions that override the default match logic. There are four options available: 
+
+|Option  |Description |Example  |
+|---------|---------|---------|
+|Always match     | Defines values that are always matched.         |  Always match *Mike* and *MikeR*.       |
+|Never match     | Defines values that never match.        | Never match *John* and *Jonathan*.        |
+|Custom bypass     | Defines values that the system should always ignore in the match phase. |  Ignore the values *11111* and *Unknown* during match.        |
+|Alias mapping    | Defining values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
 
 1. Go to **Data** > **Unify** > **Match** and select **Custom match** in the **Matched records details** section.
 
-  :::image type="content" source="media/custom-match-create.png" alt-text="Screenshot of the match rules section with Custom match control highlighted.":::
+   :::image type="content" source="media/custom-match-create.png" alt-text="Screenshot of the match rules section with Custom match control highlighted.":::
 
-1. If you have no custom match rules set, you'll see a new **Custom match** pane with more details.
+1. In the **Custom** pane, go to the **Records** tab.
 
-1. Select **Fill in the template** to get a template file that can specify which records from which entities should always match or never match. You'll need to separately fill in the "always match" records and "never match" records in two different files.
+1. Choose the custom match option from the **Custom type** dropdown and select **Download template**. You need a separate template for each match option.
 
-1. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
+1. A template file downloads. Open it and fill in the details. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
     - Entity1: Sales
     - Entity1Key: 12345
     - Entity2: Contact
@@ -240,26 +246,32 @@ You can specify conditions that certain records should always match or never mat
    
    If you want to specify custom matching for deduplication on an entity, provide the same entity as both Entity1 and Entity2 and set the different primary key values.
 
-1. After adding all the overrides you want to apply, save the template file.
+1. After adding all the overrides, save the template file.
 
-1. Go to **Data** > **Data sources** and ingest the template files as new entities. Once ingested, you can use them to specify the Match configuration.
+1. Go to **Data** > **Data sources** and ingest the template files as new entities.
 
-1. After uploading the files and entities are available, select the **Custom match** option again. You'll see options to specify the entities you want to include. Select the required entities from the dropdown menu.
+1. After uploading the files and entities are available, select the **Custom match** option again. You'll see options to specify the entities you want to include. Select the required entities from the dropdown menu and select **Done**.
 
    :::image type="content" source="media/custom-match-overrides.png" alt-text="Screenshot of the dialog to choose overrides for a custom match scenario.":::
 
-1. Select the entities you want to use for **Always match** and **Never match**, select **Done**.
+1. Applying the custom match depends on the match option you want to use. 
+
+   - For **Always match** or **Never match**, proceed to the next step.
+   - For **Custom bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the Normalizations dropdown, choose the **Custom bypass** or **Alias mapping** option and select **Done**.
 
 1. Select **Save** on the **Match** page to apply the custom match configuration.
 
 1. Select **Run** on the **Match** page to start the matching process. Other specified match rules are overridden by the custom match configuration.
 
-> [!TIP]
-> Go to **Data** > **Entities** and review the **ConflationMatchPair** entity to confirm that the overrides are applied.
+### Known issues
+
+- Self-conflation doesn't show the normalized data in deduplication entities. However, it applies the normalization internally during deduplication. It's by design for all normalizations. 
+- If the semantic type setting is removed in the **Map** phase when a match rule uses Alias mapping or Custom bypass, the normalization won't be applied. It only happens if you clear the semantic type after configuring the normalization in the match rule because the semantic type will be unknown.
+
 
 ## Next step
 
-After completing the match process for at least one match pair, you may resolve possible contradictions in your data by going through the [**Merge**](merge-entities.md) topic.
+After completing the match process for at least one match pair, continue to the [**Merge**](merge-entities.md) step.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,8 +4,15 @@
 - name: Product overview
   href: overview.md
 
-- name: Create a trial
-  href: audience-insights/get-started-trial.md
+- name: Free trial
+  items:
+    - name: Sign up for a free trial
+      href: trial-signup.md
+    - name: Trial FAQ
+      href: trial-FAQ.md
+
+- name: Start with a paid license
+  href: paid-license.md
 
 - name: Access your environment
   href: https://home.ci.ai.dynamics.com/
@@ -27,9 +34,12 @@
         - name: Quickstart guide
           href: audience-insights/get-started.md
         - name: Create a new environment
-          href: audience-insights/get-started-paid.md
+          href: audience-insights/create-environment.md
         - name: Explore audience insights
           href: audience-insights/home.md
+
+    - name: Work with business accounts
+      href: audience-insights/work-with-business-accounts.md
 
     - name: Learn modules
       items:
@@ -79,6 +89,8 @@
           href: audience-insights/relationships.md
         - name: List customer activities
           href: audience-insights/activities.md
+        - name: Define semantic mappings
+          href: audience-insights/semantic-mappings.md
 
     - name: Data enrichment
       items:
@@ -88,6 +100,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Enhanced addresses
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Enhanced company data
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: Enrich with Azure Maps
           href: audience-insights/enrichment-azure-maps.md
         - name: Enrich with HERE Technologies
@@ -96,6 +110,8 @@
           href: audience-insights/enrichment-leadspace.md
         - name: Enrich with Experian
           href: audience-insights/enrichment-experian.md
+        - name: Enrich with Office 365 data
+          href: audience-insights/enrichment-office.md
         - name: Enrich with SFTP custom import
           href: audience-insights/enrichment-SFTP-custom-import.md
 
@@ -131,7 +147,7 @@
               href: audience-insights/predict-product-recommendation.md
             - name: Predict subscription churn
               href: audience-insights/predict-subscription-churn.md
-            - name: Predict transactional churn
+            - name: Predict transaction churn
               href: audience-insights/predict-transactional-churn.md
             - name: Use custom models from Azure Machine Learning
               href: audience-insights/custom-models.md
@@ -144,14 +160,12 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: Sample guide for subscription churn prediction
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: Sample guide for transactional churn prediction
+            - name: Sample guide for transaction churn prediction
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: Sample guide for product recommendation prediction
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Experiments with Azure Machine learning
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: Experiments with Azure Machine Learning studio
-              href: audience-insights/machine-learning-studio-experiments.md
         
         - name: Manage predictions
           href: audience-insights/manage-predictions.md
@@ -245,12 +259,15 @@
           href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
-        - name: Export diagnostic logs
-          href: audience-insights/diagnostics.md
-        - name: Connect to an ADLS storage account using Service Principal
-          href: audience-insights/connect-service-principal.md
-        - name: Supported languages
-          href: audience-insights/supported-languages.md
+
+        - name: Security
+          items: 
+            - name: Bring your own Key Vault
+              href: audience-insights/use-azure-key-vault.md
+            - name: Connect to an ADLS storage account using Service Principal
+              href: audience-insights/connect-service-principal.md
+            - name: Export diagnostic logs
+              href: audience-insights/diagnostics.md
 
     - name: Extensibility
       items:
@@ -265,6 +282,46 @@
         - name: API references
           href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
 
+- name: Consent management (preview)
+  items:
+    - name: Help hub
+      href: consent-management/index.yml
+
+    - name: Capability overview
+      href: consent-management/overview.md
+
+    - name: Get started
+      items:
+        - name: Get started
+          href: consent-management/get-started.md
+        - name: Concepts and terminology
+          href: consent-management/glossary.md
+
+    - name: Import consent data
+      items: 
+        - name: Import consent data
+          href: consent-management/import-consent-data.md
+        - name: Set consent data and apply consent preferences
+          href: consent-management/set-consent-rules.md
+
+    - name: Manage consent data
+      items: 
+        - name: Enable consent rules in audience insights
+          href: audience-insights/activate-consent.md
+        - name: Manage default consent rules in audience insights segments
+          href: audience-insights/change-default-consent-rules.md
+        
+    - name: Manage settings and users
+      items: 
+        - name: Configure system settings
+          href: consent-management/system-settings.md
+        - name: Manage users and permissions
+          href: consent-management/manage-users.md
+
+    - name: Use consent data
+      items: 
+        - name: Create predictions with consent data
+          href: consent-management/predictions-consent-data.md
 
 - name: Engagement insights (preview)
   items:
@@ -278,6 +335,8 @@
       items:
         - name: Quickstart guide
           href: engagement-insights/get-started.md
+        - name: Create an environment
+          href: engagement-insights/create-new-environment.md
         - name: Create a workspace
           href: engagement-insights/create-workspace.md
         - name: Capture events from websites and mobile apps
@@ -360,5 +419,4 @@
 
 - name: DSR rights and requests
   href: dsr-rights-requests.md
-
 

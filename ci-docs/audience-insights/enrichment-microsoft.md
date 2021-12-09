@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with data from Microsoft"
-description: "Use proprietary data from Microsoft to enrich your customer data with brand and interest affinities."
-ms.date: 06/14/2021
+description: "Use proprietary data from Microsoft to enrich your customer data with affinities and share of voice."
+ms.date: 11/11/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,22 +11,26 @@ ms.author: kishorem
 manager: shellyha
 ---
 
-# Enrich customer profiles with brand and interest affinities (preview)
+# Enrich customer profiles with affinities and share of voice (preview)
 
-Use Microsoft's proprietary data to enrich your customer data with brand and interest affinities. These affinities are based on data from people with demographics similar to your customers. This information helps you to better understand and segment your customers based on their affinities to specific brands and interests.
+Use Microsoft's proprietary data to enrich your customer data with brand affinities, interest affinities, and share of voice (SoV). These affinities and SoV are based on data from people with demographics similar to your customers. This information helps you to better understand and segment your customers based on their affinities or SoV to specific brands and interests.
 
 In audience insights, go to **Data** > **Enrichment** to [configure and view enrichments](enrichment-hub.md).
 
-To configure brand affinities enrichment, go to the **Discover** tab and select **Enrich my data** on the **Brands** tile.
+To configure brand affinities and SoV enrichment, go to the **Discover** tab and select **Enrich my data** on the **Brands** tile.
 
-To configure interest affinities enrichment, go to the **Discover** tab and select **Enrich my data** on the **Interests** tile.
+To configure interest affinities and SoV enrichment, go to the **Discover** tab and select **Enrich my data** on the **Interests** tile.
 
    > [!div class="mx-imgBorder"]
    > ![Brands and Interests tiles.](media/BrandsInterest-tile-Hub.png "Brands and Interest tiles")
 
-## How we determine affinities
+## How we determine affinities and SoV
 
-We use Microsoft’s online search data to find affinities for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest determines how much affinity a demographic segment, compared to other segments, has to that brand or interest.
+We use Microsoft’s online search data to find affinities and SoV for brands and interests across various demographic segments (defined by age, gender, or location). The online search volume for a brand or interest forms the basis for determining the affinity or SoV. However, each provides a different perspective to understanding your customers.
+
+- Affinity is a comparative across demographic segments. You can use this information to identify demographic segments that have the highest affinity for a given brand or interest, compared to other segments.
+
+- Share of voice is a comparative across your selected brands or interests. You can use this information to identify which brand or interest has the highest share-of-voice for a given demographic segment, compared to other brands or interests you selected.
 
 ## Affinity level and score
 
@@ -43,6 +47,10 @@ On every enriched customer profile, we provide two related values: affinity leve
 |Low     | 1-34        |
 
 Depending on the granularity you would like for measuring the affinity, you can use either affinity level or score. Affinity score gives you more precise control.
+
+## Share of voice (SoV)
+
+We calculate SoV on a 100-point scale. The total SoV across all brands or interests for every enriched customer profile adds up to 100. Unlike affinities, SoV is relative to the brands and interests you select. For example, the SoV values for 'Microsoft' can be different if the selected brands are ('Microsoft', 'GitHub') versus ('Microsoft', 'LinkedIn').
 
 ## Supported countries/regions
 
@@ -77,7 +85,7 @@ Review your default enrichment preferences and update them as needed.
 
 ### Select entity to enrich
 
-Select **Enriched entity** and choose the data set you want to enrich with company data from the Microsoft. You can select the Customer entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
+Select **Enriched entity** and choose the data set you want to enrich with data from the Microsoft. You can select the Customer entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.
 
 ### Map your fields
 
@@ -111,8 +119,7 @@ Run the enrichment after configuring brands, interests, and the field mapping fo
 
 Depending on the size of your customer data, it may take several minutes for an enrichment run to complete.
 
-> [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you'll find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Enrichment results
 
@@ -120,19 +127,17 @@ After running the enrichment process, go to **My enrichments** to review the tot
 
 :::image type="content" source="media/my-enrichments.png" alt-text="Preview of results after running the enrichment process.":::
 
-Review the enriched data by selecting **View enriched data** in the chart. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** entity. Data for interests is in the **InterestAffinityFromMicrosoft** entity. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
-
-You will see a chart with the number of enriched customer profiles over time and a preview of the enriched entity. Select **Show more** in the preview tile to open the enriched entity.
+You'll find a chart with the number of enriched customer profiles over time and previews of the enriched entities. Review the enriched data by selecting **See more** in the **Affinity Level** or **Share of Voice** charts. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** entities. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** entities. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
 
 ## See enrichment data on the customer card
 
-Brand and interest affinities can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find charts for the brands or interests that people in that customer's demographic profile have affinity for.
+Brand and interest SoV can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find charts for the brand or interest SoV based on people in that customer's demographic profile.
 
 :::image type="content" source="media/enrichment-customer-card.png" alt-text="Customer card with enriched data.":::
 
 ## Next steps
 
-Build on top of your enriched customer data. Create [Segments](segments.md) and [Measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

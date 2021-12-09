@@ -1,7 +1,7 @@
 ---
 title: "Complete partial data using predictions"
 description: "Use predictions to fill in incomplete customer data."
-ms.date: 05/05/2020
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -11,9 +11,10 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Complete your partial data with predictions
+# Complete your partial data with predictions (deprecated)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> This feature will be **deprecated** as of **November 5, 2021**. Current implementations will continue to work until the feature is removed, but you will not be able to create new integrations using the instructions below.
 
 Predictions lets you easily create predicted values that can enhance your understanding of a customer. On the **Intelligence** > **Predictions** page, you can select **My predictions** to see predictions that you've configured in other parts of audience insights, and allow you to further customize them.
 
@@ -30,7 +31,7 @@ Before your organization can use the predictions feature, the following prerequi
 
 2. Your audience insight environment is attached to your Dataverse instance.
 
-If you're [creating a new environment](get-started-paid.md), configure it in the **Create an environment** dialog and select **Advanced**. If you've already created an environment, go to its settings and select **Advanced**. Either way, in the **Use predictions** section, enter the Dataverse instance URL to which you want to attach your environment.
+For more information, see [Create a new environment](create-environment.md).
 
 ## Create a prediction in the Customer entity
 
@@ -55,6 +56,8 @@ If you're [creating a new environment](get-started-paid.md), configure it in the
    > ![Example showing mapped field values to categories.](media/intelligence-categorymapping.png "Example showing mapped field values to categories")
 
 8. Select **Done** and the prediction will be processed. The processing will take some time, depending on the size and complexity of data. Results will be available in a new entity based on the **Output entity name** of the prediction you created.
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Create a prediction while creating a segment
 

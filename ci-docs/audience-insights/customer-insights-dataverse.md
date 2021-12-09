@@ -1,7 +1,7 @@
 ---
 title: "Customer Insights data in Microsoft Dataverse"
 description: "Use Customer Insights entities as tables in Microsoft Dataverse."
-ms.date: 06/15/2021
+ms.date: 11/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -19,11 +19,7 @@ Customer Insights provides the option to make output entities available in [Micr
 
 **Organizations with existing Dataverse environments**
 
-Organizations that already use Dataverse can [use one of their existing Dataverse environments](get-started-paid.md) when an administrator sets up audience insights. By providing the URL to the Dataverse environment, it's attaching to their new audience insights environment. To ensure the best possible performance, Customer Insights and Dataverse environments must be hosted in the same region.
-
-To attach a Dataverse environment, expand the **Advanced settings** when creating the audience insights environment. Provide the **Microsoft Dataverse environment URL** and select the checkbox to **Enable data sharing**.
-
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt.":::
+Organizations that already use Dataverse can [use one of their existing Dataverse environments](create-environment.md) when an administrator sets up audience insights. By providing the URL to the Dataverse environment, it's attaching to their new audience insights environment. To ensure the best possible performance, Customer Insights and Dataverse environments must be hosted in the same region.
 
 **New organization**
 
@@ -44,6 +40,7 @@ Some output entities from audience insights are available as tables in Dataverse
 - [CustomerMeasure](#customermeasure)
 - [Enrichment](#enrichment)
 - [Prediction](#prediction)
+- [Segment membership](#segment-membership)
 
 
 ### CustomerProfile
@@ -120,3 +117,16 @@ This table contains the output of the model predictions.
 | Values               | JSON String | List of attributes produced by the model |
 | msdynci_predictionid | GUID        | Deterministic GUID generated from msdynci_identifier | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+
+### Segment membership
+
+This table contains segment membership information of the customer profiles.
+
+| Column        | Type | Description                        |
+|--------------------|--------------|-----------------------------|
+| CustomerId        | String       | Customer Profile ID        |
+| SegmentProvider      | String       | App that publishes the segments. Default: Audience insights         |
+| SegmentMembershipType | String       | Type of the customer this segment membership record. Supports multiple types such as Customer, Contact, or Account. Default: Customer  |
+| Segments       | JSON String  | List of unique segments the customer profile is a member of      |
+| msdynci_identifier  | String   | Unique identifier of the segment membership record. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | GUID      | Deterministic GUID generated from `msdynci_identifier`          |

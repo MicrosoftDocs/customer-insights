@@ -4,9 +4,9 @@ description: Learn how to personalize and run the Android SDK
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 09/15/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
-ms.subservice: engagement-insights 
+ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ---
@@ -37,12 +37,12 @@ Begin the process by selecting a workspace, selecting the Android mobile platfor
 
 - If you don't have an existing workspace, select  **New Workspace** and follow the steps to create a [new workspace](create-workspace.md).
 
-- After you create a workspace, go to **Admin** > **Workspace** and then select  **Installation guide**. 
+- After you create a workspace, go to **Admin** > **Workspace** and then select  **Installation guide**.
 
 ## Configure the SDK
 
 Once you download the SDK, you can work with it in Android Studio to enable and define events. There are two ways to do so:
-### Option 1: Using JitPack (recommended)
+### Option 1: Use JitPack (recommended)
 1. Add the JitPack repository to your root `build.gradle`:
     ```gradle
     allprojects {
@@ -56,12 +56,12 @@ Once you download the SDK, you can work with it in Android Studio to enable and 
 1. Add the dependency:
     ```gradle
     dependencies {
-        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:v1.0.0'
         api 'com.google.code.gson:gson:2.8.1'
     }
     ```
 
-### Option 2: Using download link
+### Option 2: Use download link
 1. Download the [engagement insights Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), and place the `eiandroidsdk-debug.aar` file in the `libs` folder.
 
 1. Open your project level `build.gradle` file and add the following snippets:
@@ -78,22 +78,23 @@ Once you download the SDK, you can work with it in Android Studio to enable and 
     }
     ```
 
-1. Add permission for network and internet in your `AndroidManifest.xml` file located under the `manifests` folder. 
+## Enable auto-instrumentation
+
+1. Add permission for network and internet in your `AndroidManifest.xml` file located under the `manifests` folder.
     ```xml
     <manifest>
         ...
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     ```
-    
-1. Set up the engagement insights SDK configuration through your `AndroidManifest.xml` file. 
 
-## Enable auto-instrumentation
+1. Set up the engagement insights SDK configuration through your `AndroidManifest.xml` file.
+
 1. Copy the XML snippet from the **Installation guide**. `Your-Ingestion-Key` should be automatically populated.
 
    > [!NOTE]
    > You don't need to replace the `${applicationId}` section. It is automatically populated.
-   
+
 
    ```xml
    <application>
@@ -111,20 +112,24 @@ Once you download the SDK, you can work with it in Android Studio to enable and 
    </application>
    ```
 
-1. Enable or disable autocapture of `View` events by setting the above `autoCapture` field to `true` or `false`. Currently `Action` events need to be added manually.
+1. Enable or disable autocapture of `View` events by setting the above `autoCapture` field to `true` or `false`. 
 
-1. (Optional) Other configurations include setting the endpoint collector URL. They can be added under the ingestion key metadata in `AndroidManifest.xml`:
-    ```xml
+   >[!NOTE]
+   >`Action` events need to be added manually.
+
+1. (Optional) Other configurations include setting the endpoint collector URL. They can be added under the ingestion key metadata in `AndroidManifest.xml`.
+
+   ```xml
         <meta-data
             android:name="com.microsoft.engagementinsights.endpointUrl"
             android:value="https://some-endpoint-url.com" />
-    ```
+   ```
 
 ## Implement custom events
 
 After you initialize the SDK, you can work with events and their properties in the `MainActivity` environment.
 
-    
+
 Java:
 ```java
 Analytics analytics = new Analytics();
@@ -136,7 +141,7 @@ var analytics = Analytics()
 ```
 
 ### Set property for all events (optional)
-    
+
 Java:
 ```java
 analytics.setProperty("year", 2021);

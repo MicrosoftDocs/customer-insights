@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 08/31/2021
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -21,6 +21,54 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## November 2021 updates
+
+The updates in November 2021 include a new features, performance upgrades, and bug fixes.
+
+### Segment membership now available in Dataverse
+
+Segment membership information for customer profiles is now available in Dataverse along with the customer profiles and insights. Dynamics 365 action apps and model-driven apps can use this data look up segment membership details for a given customer.
+
+### Activities support contact-level details for business accounts
+
+You can now configure, display, and filter activities for contacts on your business account activity timelines to better understand which account contacts took part in specific activities.
+
+## October 2021 updates
+
+The updates in October 2021 include a new features, performance upgrades, and bug fixes.
+
+### B-to-B
+
+Starting in October 2021, you can work with business accounts and their related contacts in Customer Insights. Before, the app was mostly tailored towards individual consumers. Several feature areas were updated to support B-to-B scenarios on top of a new environment type. 
+For an overview on supported B-to-B features, see [Work with business accounts in audience insights](work-with-business-accounts.md).
+
+The following sections highlight some of the key areas that were adapted to support business accounts and individual consumers.
+
+#### Export segments based on business accounts
+
+All segment exports in audience insights are available in the context of business accounts. Most segment exports require extra configuration and [contact information projected](segment-builder.md#create-a-new-segment) in the underlying segments to be valid for business accounts. For more information, see [Export segments](export-destinations.md#export-segments).
+
+#### Use the LinkedIn Ads export with business accounts
+
+The LinkedIn Ads export is now available for contact and company targeting in the context of business accounts. When selecting company targeting as your primary focus of the LinkedIn export, you can export segments built on business accounts without the need to project contact information. For more information, go to the docs about [LinkedIn Ads export](export-linkedin-ads.md) and the difference between [contact targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) and [company targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting). 
+
+#### Create measures based on business accounts and their hierarchy
+
+The measure builder lets you create measures around business accounts and optionally use the hierarchy information. Hierarchy information is used to roll up a measure calculation across an account and all its related sub accounts. For example, you can create measures like total revenue for each group of business accounts identified by their hierarchy. For more information, see [Define and manage measures](measures.md).
+
+#### Create segments based on business accounts and their hierarchy
+
+The segment builder enables you to create segments of business accounts that optionally include contact information for each account in a segment. If you have account hierarchy set up, you can use account hierarchy information in segment creation. For more information, see [Create a new segment](segment-builder.md#create-a-new-segment).
+
+#### Retain your business accounts with deep insights to their churn tendency
+
+The customer churn prediction model now supports business accounts too. You can evaluate the risk of churn not just for an account but for a combination of an account and a product or service category that they buy from you. This addition helps you to understand if an account is more likely to stop buying from you in general or just for a certain category of goods or services. To further help you use this AI model, it also lists reasons why an account is likely to churn. For more information, see [Transaction churn prediction (preview)](predict-transactional-churn.md).
+
+#### See contacts of a business account in Customer view
+
+If business accounts are mapped to related accounts, the Customer Insights app shows these related contacts as part of the customer details view. For more information, see [Customer profiles](customer-profiles.md).
+
 
 ## September 2021 updates
 
@@ -182,7 +230,7 @@ The updates in March 2021 include several features, performance upgrades, and bu
    For more information, see [Export to Constant Contact](export-constant-contact.md).
 
 - **Export segments to RollWorks**
-   We have extended our export destinations to include RollWorks. You can now export segments from Customer Insights to RollWorks audiences and use them as the baseline for your B2B advertising.    
+   We have extended our export destinations to include RollWorks. You can now export segments from Customer Insights to RollWorks audiences and use them as the baseline for your B-to-B advertising.    
    For more information, see [Export to RollWorks ](export-rollworks.md).
 
 - **Export segments to Snapchat**

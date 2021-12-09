@@ -732,6 +732,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "ci-docs/audience-insights/get-started-trial.md",
+      "redirect_url": "/dynamics365/customer-insights/trial-signup",
+      "redirect_document_id": false
+    },
+    { 
       "source_path": "ci-docs/engagement-insights/quotas.md",
       "redirect_url": "/dynamics365/customer-insights/service-limits",
       "redirect_document_id": false
@@ -754,6 +759,21 @@
     {
       "source_path": "ci-docs/engagement-insights/configure-connections.md",
       "redirect_url": "/dynamics365/customer-insights/engagement-insights/integrate-audience-insights-engagement-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/get-started-paid.md",
+      "redirect_url": "/dynamics365/customer-insights/audience-insights/create-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/supported-languages.md",
+      "redirect_url": "/dynamics365/customer-insights/audience-insights/system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/machine-learning-studio-experiments.md",
+      "redirect_url": "/dynamics365/customer-insights/audience-insights/custom-models",
       "redirect_document_id": false
     }
   ]

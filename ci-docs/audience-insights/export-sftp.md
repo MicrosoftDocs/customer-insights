@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to SFTP hosts"
+title: "Export Customer Insights data to SFTP hosts (Video)"
 description: "Learn how to configure the connection and export to an SFTP location."
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -14,6 +14,8 @@ manager: shellyha
 # Export segments and other data to SFTP (preview)
 
 Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol (SFTP) location.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
 
 ## Prerequisites for connection
 

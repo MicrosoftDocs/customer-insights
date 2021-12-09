@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Facebook Ads Manager"
+title: "Export Customer Insights data to Facebook Ads Manager (Video)"
 description: "Learn how to configure the connection and export to Facebook Ads Manager."
 ms.date: 04/15/2021
 ms.reviewer: mhart
@@ -15,6 +15,8 @@ manager: shellyha
 
 Export segments of unified customer profiles to Facebook Ads Manager to create campaigns on Facebook and Instagram.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO1aN]
+
 ## Prerequisites for connection
 
 - You need to have a [**Facebook Ads Account**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) that includes a [**Facebook Business Account**](https://business.facebook.com/).
@@ -25,7 +27,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 - Up to 10 million customer profiles per export to Facebook Ads Manager.
 - Export to Facebook Ads Manager is limited to segments.
 - Create or update custom audiences in Facebook of type *customer list* only.
-- Exporting segments with a total of 10 million profiles can take up to 90 minutes to complete.
+- Exporting segments with a total of 10 million customer profiles can take up to 90 minutes to complete.
 
 ## Set up connection to Facebook Ads Manager
 

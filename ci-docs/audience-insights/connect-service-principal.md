@@ -1,7 +1,7 @@
 ---
 title: "Connect to an Azure Data Lake Storage account by using a service principal"
 description: "Use an Azure service principal to connect to your own data lake."
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -13,17 +13,17 @@ manager: shellyha
 
 # Connect to an Azure Data Lake Storage account by using an Azure service principal
 
-Automated tools that use Azure services should always have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. Read on to learn how to connect Dynamics 365 Customer Insights with an Azure Data Lake Storage account by using an Azure service principal instead of storage account keys. 
+This article discusses how to connect Dynamics 365 Customer Insights with an Azure Data Lake Storage account by using an Azure service principal instead of storage account keys. 
 
-You can use the service principal to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md), or [create or update an environment](get-started-paid.md).
+Automated tools that use Azure services should always have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. You can use service principals to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create or update an environment](create-environment.md).
 
 > [!IMPORTANT]
 > - The Data Lake Storage account that will use the service principal must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
-> - You need admin permissions for your Azure subscription to create the service principal.
+> - You need admin permissions for your Azure subscription to create a service principal.
 
 ## Create an Azure service principal for Customer Insights
 
-Before creating a new service principal for audience insights or engagement insights, check whether it already exists in your organization.
+Before creating a new service principal for Customer Insights, check whether it already exists in your organization.
 
 ### Look for an existing service principal
 

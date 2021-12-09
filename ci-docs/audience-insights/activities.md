@@ -1,7 +1,7 @@
 ---
 title: "Customer activities"
 description: "Define customer activities and view them in a timeline on customer profiles." 
-ms.date: 09/27/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -19,8 +19,7 @@ Combine customer activities from [various data sources](data-sources.md) in Dyna
 
 Your data sources can include entities with transactional and activity data from multiple data sources. Identify these entities and select the activities you want to view on the customer's timeline. Choose the entity that includes your target activity or activities.
 
-> [!NOTE]
-> An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields. The **Add activity** control is disabled if no such entity is found.
+An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields. The **Add activity** control is disabled if no such entity is found.
 
 1. In audience insights, go to **Data** > **Activities**.
 
@@ -36,13 +35,16 @@ Your data sources can include entities with transactional and activity data from
 
 1. Select **Next** to go to the next step.
 
-1. In the **Relationship** step, configure the details to connect your activity data to its corresponding customer. This step visualizes the connection between entities.  
+1. In the **Relationship** step, configure the details to connect your activity data to its corresponding customer record. This step visualizes the connection between entities.  
 
    - **First**: Foreign field in your activity entity that will be used to establish a relationship with another entity.
    - **Second**: Corresponding source customer entity with which your activity entity will be in relationship. You can only relate to source customer entities that are used in the data unification process.
    - **Third**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
+
+   > [!TIP]
+   > In B-to-B environments, you can select between account entities and other entities. If you select an account entity, the relationship path is automatically set. For other entities, you have to define the relationship path over one or more intermediate entities until you reach an account entity.
 
 1. Select **Next** to go to the next step. 
 
@@ -75,9 +77,7 @@ Your data sources can include entities with transactional and activity data from
 
 1. On the **Activities** page, select **Run** to process the activity. 
 
-> [!TIP]
-> There are [six types of status](system.md#status-types) for tasks/processes. Additionally, most processes [depend on other downstream processes](system.md#refresh-policies). You can select the status of a process to see details on the progress of the entire job. After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.
-
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Manage existing activities
 
