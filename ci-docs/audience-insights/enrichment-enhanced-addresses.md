@@ -97,6 +97,16 @@ After the enrichment process completes, you can review the newly enriched custom
 
 You can access a detailed view of each enriched profile by selecting **View enriched data**.
 
+### Overview card
+
+The overview card provides insight into the coverage of the enrichment. 
+
+* Customers processed and changed: This represents the number of profiles that were succesfully enriched.
+
+* Customers processed and not changed: This represents the number of profiles that were recognized but were not changed. This typically happens when the input data is valid and cannot be improved by the enrichment.
+
+* Customers not processed and not changed: This represents the number of profiles that were not recognized. This typically happens for input data that is not valid and/or not supported by the enrichment.
+
 ## Next steps
 
 [!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
