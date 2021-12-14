@@ -1,11 +1,11 @@
 ---
 title: "Audit Dynamics 365 Customer Insights with Azure Monitor"
 description: "Learn how to send logs to Microsoft Azure Monitor."
-ms.date: 11/09/2021
+ms.date: 12/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: "article"
+ms.topic: article
 author: brndkfr
 ms.author: bkief
 manager: shellyha
@@ -115,20 +115,20 @@ API events and workflow events have a common structure and details where they di
 
 ### API event schema
 
-| Field             | DataType  | Required/Optional | Description                                                                                                                                                     | Example                                                                                                                                                                  |
-| ----------------- | --------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `time`            | Timestamp | Required          | Timestamp of the event (UTC)                                                                                                                                    | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
-| `resourceId`      | String    | Required          | ResourceId of the instance that emitted the event                                                                                                               | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX`  |
+| Field             | DataType  | Required/Optional | Description       | Example        |
+| ----------------- | --------- | ----------------- | --------------------- | ------------------------ |
+| `time`            | Timestamp | Required          | Timestamp of the event (UTC)       | `2020-09-08T09:48:14.8050869Z`         |
+| `resourceId`      | String    | Required          | ResourceId of the instance that emitted the event         | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX`  |
 | `operationName`   | String    | Required          | Name of the operation represented by this event.                                                                                                                | `Workflows.GetWorkFlowStatusAsync`                                                                                                                                       |
 | `category`        | String    | Required          | Log category of the event. Either `Operational` or `Audit`. All POST/PUT/PATCH/DELETE HTTP Requests are tagged with `Audit`, everything else with `Operational` | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resultType`      | String    | Required          | Status of the event. `Success`, `ClientError`, `Failure`                                                                                                        |                                                                                                                                                                          |
-| `resultSignature` | String    | Optional          | Result status of the event. If the operation corresponds to a REST API call, it's the HTTP status code.                                                         | `200`                                                                                                                                                                    |
-| `durationMs`      | Long      | Optional          | Duration of the operation in milliseconds.                                                                                                                      | `133`                                                                                                                                                                    |
-| `callerIpAddress` | String    | Optional          | Caller IP address, if the operation corresponds to an API call that comes from a publicly available IP address.                                                 | `144.318.99.233`                                                                                                                                                         |
-| `identity`        | String    | Optional          | JSON object describing the identity of the user or application that did the operation.                                                                          | See sub section [Identity](#identity-schema)                                                                                                                             |  |
-| `properties`      | String    | Optional          | JSON object with more properties to the particular category of events.                                                                                          | See sub section [Properties](#api-properties-schema)                                                                                                                     |
-| `level`           | String    | Required          | Severity level of the event.                                                                                                                                    | `Informational`, `Warning`, `Error`, or `Critical`.                                                                                                                      |
-| `uri`             | String    | Optional          | Absolute request URI.                                                                                                                                           |                                                                                                                                                                          |
+| `resultSignature` | String    | Optional          | Result status of the event. If the operation corresponds to a REST API call, it's the HTTP status code.        | `200`             |
+| `durationMs`      | Long      | Optional          | Duration of the operation in milliseconds.     | `133`     |
+| `callerIpAddress` | String    | Optional          | Caller IP address, if the operation corresponds to an API call that comes from a publicly available IP address.                                                 | `144.318.99.233`         |
+| `identity`        | String    | Optional          | JSON object describing the identity of the user or application that did the operation.       | See [Identity](#identity-schema)  section.     |  |
+| `properties`      | String    | Optional          | JSON object with more properties to the particular category of events.      | See [Properties](#api-properties-schema) section.    |
+| `level`           | String    | Required          | Severity level of the event.    | `Informational`, `Warning`, `Error`, or `Critical`.           |
+| `uri`             | String    | Optional          | Absolute request URI.    |               |
 
 #### Identity schema
 
@@ -219,8 +219,8 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 
 Workflow events have following properties.
 
-| Field                                        | Workflow | Task | Description                                                                                                                                                                                                                                                 |
-| -------------------------------------------- | -------- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Field              | Workflow | Task | Description            |
+| ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | Yes      | Yes  | Always `WorkflowEvent`, marking the event as workflow event.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | Yes      | Yes  | Identifier of the workflow run. All workflow and task events within the workflow execution have the same `workflowJobId`.                                                                                                                                   |
 | `properties.operationType`                   | Yes      | Yes  | Identifier of the operation, see [Operation types].(#operation-types)                                                                                                                                                                                       |
