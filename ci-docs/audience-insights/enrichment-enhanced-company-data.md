@@ -1,7 +1,7 @@
 ---
 title: "Company data enhancement"
 description: "Enrich and normalize company data with Microsoft's models."
-ms.date: 11/15/2021
+ms.date: 12/16/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -78,6 +78,16 @@ To start the enrichment process, select **Run** from the command bar. You can al
 After the enrichment process completes, you can review the newly enriched customer profiles data under **My enrichments**. Additionally, you'll find the time of the last update and the number of enriched profiles.
 
 You can access a detailed view of each enriched profile by selecting **View enriched data**.
+
+### Overview card
+
+The overview card shows details about the coverage of the enrichment. 
+
+* **Customers processed and changed**: The number of customer profiles that were successfully enriched.
+
+* **Customers processed and not changed**: The number of customer profiles that were recognized but not changed. It typically happens when the input data is valid and can't be improved by the enrichment.
+
+* **Customers not processed and not changed**: The number of profiles that were not recognized. Usually for input data that is invalid or not supported by the enrichment.
 
 ## Next steps
 
