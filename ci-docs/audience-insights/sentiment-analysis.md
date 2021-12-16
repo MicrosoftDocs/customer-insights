@@ -82,7 +82,11 @@ The following data attributes are required:
 
 1. In the **Required data** step, select **Add data**.
 
-1.	In the **Add data** pane, choose the semantic type **Feedback** from the list.
+   :::image type="content" source="media/sentiment-add-data.png" alt-text="Add data flow in the sentiment analysis model.":::
+
+1. In the **Add data** pane, choose the semantic type **Feedback** from the list.
+
+   :::image type="content" source="media/sentiment-add-feedback-activities.png" alt-text="Configuration step to select feedback activities for sentiment analysis.":::
 
 1. Select the activities to use for this sentiment analysis, the select **Next**.
  
@@ -90,7 +94,9 @@ The following data attributes are required:
 
 1. You see the status of data mapping. Select **Next** to continue. 
 
-1.	In the **Review your model details** step, validate the configuration of your sentiment analysis. You can go back to any part of the prediction configuration. Select **Save and run** to start the analysis. 
+1. In the **Review your model details** step, validate the configuration of your sentiment analysis. You can go back to any part of the prediction configuration. Select **Save and run** to start the analysis. 
+
+   :::image type="content" source="media/sentiment-model-review-config.png" alt-text="Review step for the sentiment model showing all configured items.":::
 
 1. Select **Done** to leave the configuration experience. The process may take several hours to complete depending on the amount of data used. 
 
@@ -127,17 +133,26 @@ There are four primary sections of data within the results page.
   1.	Negative (-5 > 2)
   2.	Neutral (-1 > 1)
   3.	Positive (2 > 5) 
- 
-- **Distribution of customers by sentiment score**: Customers are categorized into negative, neutral, and positive groups based on their sentiment scores. Hover over the bars in the histogram to see the number of customers and average sentiment score in each group. This data can help you create segments of customers based on their sentiment scores.  
+  
+  :::image type="content" source="media/overall-customer-sentiment.png" alt-text="Visual representation of the overall customer sentiment.":::
+
+- **Distribution of customers by sentiment score**: Customers are categorized into negative, neutral, and positive groups based on their sentiment scores. Hover over the bars in the histogram to see the number of customers and average sentiment score in each group. This data can help you [create segments of customers](segments.md) based on their sentiment scores.  
+
+  :::image type="content" source="media/distribution-customer-sentiment.png" alt-text="Bar chart showing the customer sentiment across the three sentiment groups.":::
 
 - **Average sentiment score over time**: Customer sentiment may change over time. We provide trends in your customers’ sentiments for the time range of your data. This view can help you gauge the effect of seasonal promotions, product launches, or other time-bound interventions on customer sentiment. See the graph by selecting the year-of-interest from the dropdown menu. 
+
+  :::image type="content" source="media/sentiment-score-over-time.png" alt-text="History chart with the sentiment score over time represented as a line.":::
  
 - **Sentiment across business aspects**: This table lists the average sentiment across business aspects. It can help you gauge which aspects of your business already delight customers or require more attention. Feedback records that don't align to any of the supported business aspects are categorized under **Other**. The table is sorted alphabetically by default. You can modify the sorting by selecting a table header.
+
+  :::image type="content" source="media/sentiment-across-business-aspects.png" alt-text="List of business aspects with the associated sentiment value and the number of customers mentioning it.":::
  
   Select the name of a business aspect to see additional information how a business aspect is identified by the model. There are two parts in the pane: 
 
   - **Influential words**: Shows the top words that influenced the AI model’s identification of a business aspect in customer feedback. 
     **Show offensive words** lets you include offensive words in the list from original customer feedback data. By default, it's turned off.  Offensive word masking is powered by an AI model and may not detect all offensive words. We continue iterating and training the classifier for optimal performance. If you detect an offensive word that wasn't filtered as expected, let us know. 
+    :::image type="content" source="media/offensive-words-sentiment.png" alt-text="List of influential words with the toggle to show or hide offensive words.":::
  
   - **Feedback samples**: Shows actual feedback records in your data. Words are color-coded according to their influence on the identification of a business aspect. 
 
@@ -150,12 +165,15 @@ There are three sections of additional information explaining how the sentiment 
 2. **Top words contributing to negative sentiment**: Shows top words that influenced the AI model’s identification of negative sentiment in customer feedback.  
 3. **Feedback samples**: Shows actual feedback records, one with a negative sentiment and one with a positive sentiment. Words in the feedback records are highlighted according to their contribution to the assigned sentiment score. Words that contribute to a positive sentiment score are highlighted in green. Words contributing to a negative score are highlighted in red.
    Select **See more** to load more feedback samples that provide more information and context of how the sentiment model works.
+   :::image type="content" source="media/sentiment-feedback-samples.png" alt-text="Examples of sentiment analysis on customer feedback.":::
  
 **Show offensive words** lets you include offensive words in the list from original customer feedback data. By default, it's turned off.  Offensive word masking is powered by an AI model and may not detect all offensive words. We continue iterating and training the classifier for optimal performance. If you detect an offensive word that wasn't filtered as expected, let us know. 
 
 ## Act on analysis results
 
 You can easily start creating new segments of customers from the sentiment analysis results page by selecting **Create segments** at the top of the model result page.
+
+:::image type="content" source="media/create-segment-model.png" alt-text="Command bar with options on prediction models.":::
  
 ## Model bias  
 
