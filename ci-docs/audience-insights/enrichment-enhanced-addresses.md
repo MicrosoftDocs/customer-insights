@@ -1,7 +1,7 @@
 ---
 title: "Address enhancement enrichment (Video)"
 description: "Enrich and normalize address information of customer profiles with Microsoft's models."
-ms.date: 07/25/2021
+ms.date: 12/16/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -99,13 +99,13 @@ You can access a detailed view of each enriched profile by selecting **View enri
 
 ### Overview card
 
-The overview card provides insight into the coverage of the enrichment. 
+The overview card shows details about the coverage of the enrichment. 
 
-* Customers processed and changed: This represents the number of profiles that were succesfully enriched.
+* **Customers processed and changed**: The number of customer profiles that were succesfully enriched.
 
-* Customers processed and not changed: This represents the number of profiles that were recognized but were not changed. This typically happens when the input data is valid and cannot be improved by the enrichment.
+* **Customers processed and not changed**: The number of customer profiles that were recognized but not changed. It typically happens when the input data is valid and can't be improved by the enrichment.
 
-* Customers not processed and not changed: This represents the number of profiles that were not recognized. This typically happens for input data that is not valid and/or not supported by the enrichment.
+* **Customers not processed and not changed**: The number of profiles that were not recognized. Usually for input data that is invalid or not supported by the enrichment.
 
 ## Next steps
 
