@@ -13,13 +13,13 @@ manager: shellyha
 
 # Analyze sentiment in customer feedback (Preview)
 
-Customers expect high quality products, services, and experiences these days. Especially for those organizations who share their customer feedback data, it can be extra challenging for them to analyze the increasing volume of data without lowering accuracy and increasing labor costs. Now Dynamics 365 Customer Insights offers a sentiment analysis model for customer feedback that enables organizations to analyze their data more accuratly and at a lower cost.
+Customers expect high quality products, services, and experiences these days. Especially customers who share their feedback. It's very challenging for organizations to analyze an increasing volume of data without lowering accuracy and higher labor cost. Dynamics 365 Customer Insights offers a sentiment analysis model for customer feedback that enables organizations to analyze their data more accurately and at a lower cost.
 
 Sentiment analysis enables you to synthesize customer sentiment and identify business aspects as opportunities for improvement. This Customer Insights feature helps you understand what works well and what you need to address. Focus on the most relevant and impactful areas of business to improve the experience for your customers. Ultimately, it can help you to drive business actions that enable experiences that result in high customer satisfaction and loyalty.
 
 ## Overview
 
-The sentiment analysis feature generates two derived insights per customer ID. A sentiment score (of -5 to 5) and list of applicable business aspects (areas of business) together help you analyse the customer mentioned in the feedback. 
+The sentiment analysis feature generates two derived insights per customer ID. A sentiment score (of -5 to 5) and list of applicable business aspects (areas of business) together help you better understand the customer feedback. 
 
 This information can help you achieve the following results: 
 - Get an overview of customer sentiments towards a brand or organization
@@ -55,7 +55,7 @@ We use two **Natural Language Processing (NLP) models**: The first assigns each 
 
 Sentiment analysis is based on text feedback data that has gone through the [data unification process](data-unification.md). We highly recommend that you [configure your feedback data entities as semantic type activity entities](map-entities.md#select-primary-key-and-semantic-type-for-attributes) (Feedback type) beforehand. 
 
-To create a sentiment analysis report, you need at least [Contributor permissions](permissions.md).
+To configure a sentiment analysis model, you need at least [Contributor permissions](permissions.md).
 
 Customer Insights can process up to 10 million feedback records for a single model run. The model can analyze feedback comments up to 128 words. If a feedback comment is longer, the analysis considers only the first 128 words.
 
@@ -183,7 +183,7 @@ You can easily start creating new segments of customers from the sentiment analy
 
 Any model bias that is internalized, manifested in the form of biased sentiment scores, and is then acted upon by users of the system could have downstream negative effects. 
 
-We don't reccomend using sentiment scores to make business decisions about employment, credit/lending, housing, insurance, education, government benefits, healthcare/medical treatment, or criminal justice. For more information, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
+We don't recommend using sentiment scores to make business decisions about employment, credit/lending, housing, insurance, education, government benefits, healthcare/medical treatment, or criminal justice. For more information, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
 
 
 
