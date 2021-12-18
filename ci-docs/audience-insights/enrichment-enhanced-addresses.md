@@ -1,5 +1,5 @@
 ---
-title: "Address enhancement enrichment (Video)"
+title: "Address enhancement enrichment (contains video)"
 description: "Enrich and normalize address information of customer profiles with Microsoft's models."
 ms.date: 12/16/2021
 ms.reviewer: mhart
