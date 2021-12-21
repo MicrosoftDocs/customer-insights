@@ -1,7 +1,7 @@
 ---
 title: "Semantic analysis for customer feedback"
 description: "Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights." 
-ms.date: 12/16/2021
+ms.date: 12/21/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -184,8 +184,6 @@ You can easily start creating new segments of customers from the sentiment analy
 Any model bias that is internalized, manifested in the form of biased sentiment scores, and is then acted upon by users of the system could have downstream negative effects. 
 
 We don't recommend using sentiment scores to make business decisions about employment, credit/lending, housing, insurance, education, government benefits, healthcare/medical treatment, or criminal justice. For more information, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 

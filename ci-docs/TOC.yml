@@ -149,6 +149,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: Predict transaction churn
               href: audience-insights/predict-transactional-churn.md
+            - name: Analyze sentiment in customer feedback
+              href: audience-insights/sentiment-analysis.md
             - name: Use custom models from Azure Machine Learning
               href: audience-insights/custom-models.md
             - name: Complete partially missing data
