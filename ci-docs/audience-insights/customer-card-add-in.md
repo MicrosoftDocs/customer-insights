@@ -1,13 +1,13 @@
 ---
-title: "Customer Card Add-in for Dynamics 365 apps"
+title: "Customer Card Add-in for Dynamics 365 apps (contains video)"
 description: "Show data from audience insights in Dynamics 365 apps with this add-in."
 ms.date: 12/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual    
-author: pkieffer
-ms.author: philk
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
 ---
 
@@ -27,9 +27,9 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 - [Configured search and filter capabilities](search-filter-index.md) in audience insights are required for lookup of data to work.
 - Each add-in control relies on specific data in audience insights. Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control is not available due to the selected environment type. Learn more about [environment use cases](work-with-business-accounts.md).
   - **Measure control**: Requires [configured measures](measures.md) of type customer attributes.
-  - **Intelligence control**: Requires data generated using [predictions](predictions.md) or [custom models](custom-models.md).
+  - **Intelligence control**: Requires data generated using [predictions or custom models](predictions-overview.md).
   - **Customer details control**: All fields from the profile are available in the unified customer profile.
-  - **Enrichment control**: Requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft, [Interests](enrichment-microsoft.md) provided by Microsoft.
+  - **Enrichment control**: Requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft, [Interests](enrichment-microsoft.md) provided by Microsoft, and [Office engagement data](enrichment-office.md) provided by Microsoft.
   - **Contacts control**: Requires definition of semantic entity of type contacts.
   - **Timeline control**: Requires [configured activities](activities.md).
 

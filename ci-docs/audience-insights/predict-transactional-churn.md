@@ -1,5 +1,5 @@
 ---
-title: Transaction churn prediction
+title: Transaction churn prediction (contains video)
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
 ms.date: 10/20/2021
 ms.reviewer: mhart
