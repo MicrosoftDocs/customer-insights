@@ -1,7 +1,7 @@
 ---
 title: "Customer Card Add-in for Dynamics 365 apps"
 description: "Show data from audience insights in Dynamics 365 apps with this add-in."
-ms.date: 09/30/2021
+ms.date: 12/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -22,7 +22,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 ## Prerequisites
 
 - The add-in only works with Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
-- For your Dynamics 365 data to map to the audience insights customer profiles, we recommend they be [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), you need to make sure the contactid (or accountid) field is set as the [primary key for said source in Unify>Map](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
+- For your Dynamics 365 data to map to the audience insights customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), you need to make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source in the map step of the data unificaiton process](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
 - All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in audience insights to see the data.
 - [Configured search and filter capabilities](search-filter-index.md) in audience insights are required for lookup of data to work.
 - Each add-in control relies on specific data in audience insights. Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control is not available due to the selected environment type. Learn more about [environment use cases](work-with-business-accounts.md).
