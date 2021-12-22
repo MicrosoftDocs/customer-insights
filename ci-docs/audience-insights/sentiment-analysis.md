@@ -1,7 +1,7 @@
 ---
 title: "Semantic analysis for customer feedback"
 description: "Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights." 
-ms.date: 12/21/2021
+ms.date: 12/23/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -179,11 +179,11 @@ You can easily start creating new segments of customers from the sentiment analy
 
 :::image type="content" source="media/create-segment-model.png" alt-text="Command bar with options on prediction models.":::
  
-## Model bias  
+## Potential bias
 
-Any model bias that is internalized, manifested in the form of biased sentiment scores, and is then acted upon by users of the system could have downstream negative effects. 
+As with any feature that uses predictive artificial intelligence, you should be aware of potential bias in the data you use to predict customer sentiment. For example, if you only collect feedback digitally, you could miss feedback from customers who primarily conduct business with you in person, which could affect the feature’s output.
 
-We don't recommend using sentiment scores to make business decisions about employment, credit/lending, housing, insurance, education, government benefits, healthcare/medical treatment, or criminal justice. For more information, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
+As this feature uses automated means to evaluate data and make predictions based on that data, it therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Your use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including sentiment analysis, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
