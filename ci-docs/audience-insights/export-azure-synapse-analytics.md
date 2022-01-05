@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Azure Synapse Analytics"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
-ms.date: 04/12/2021
+ms.date: 01/05/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -44,6 +44,8 @@ In Azure:
 
 ### Configure a connection
 
+To create a connection, the service principal and the user account in Customer Insights need **Reader** permissions on the *resource group* where the Synapse Analytics workspace is located.  where synapse ws is created. Additionally, the service principal and the user on the Synapse Analytics workspace need **Synapse Administrator** permissions. 
+
 1. Go to **Admin** > **Connections**.
 
 1. Select **Add connection** and choose **Azure Synapse Analytics** or select the **Set up** on the **Azure Synapse Analytics** tile to configure the connection.
@@ -58,7 +60,7 @@ In Azure:
 
 ### Configure an export
 
-You can configure this export if you have access to a connection of this type. For more information, see [permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+You can configure this export if you have access to a connection of this type. To configure the export with a shared connection, you need at least **Contributor** permissions in Customer Insights. For more information, see [permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
 1. Go to **Data** > **Exports**.
 
@@ -77,6 +79,8 @@ You can configure this export if you have access to a connection of this type. F
 Saving an export doesn't run the export immediately.
 
 The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).
+
+To query data that was exported to Synapse Analytics, you need **Storage Blob Data Reader** access to the destination on the workspace of exports. 
 
 ### Update an export
 
