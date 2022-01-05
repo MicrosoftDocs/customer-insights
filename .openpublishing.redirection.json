@@ -770,6 +770,11 @@
       "source_path": "ci-docs/audience-insights/supported-languages.md",
       "redirect_url": "/dynamics365/customer-insights/audience-insights/system",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/machine-learning-studio-experiments.md",
+      "redirect_url": "/dynamics365/customer-insights/audience-insights/custom-models",
+      "redirect_document_id": false
     }
   ]
 }
