@@ -1,7 +1,7 @@
 ---
 title: Overview about supported prediction scenarios
 description: "Prediction scenarios and options covered by the Dynamics 365 Customer Insights application."
-ms.date: 09/06/2021
+ms.date: 12/21/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -26,6 +26,7 @@ The easiest way to start with predicting data are predefined models, often refer
 - [Product recommendation](predict-product-recommendation.md): Suggests sets of predictive product recommendations based on purchase behavior and customers with similar purchase patterns.
 - [Subscription churn](predict-subscription-churn.md): Predicts whether a customer is at risk for no longer using your company’s subscription products or services.
 - [Transactional churn](predict-transactional-churn.md): Predict if a customer will no longer purchase your products or services in a certain time frame.
+- [Sentiment analysis](sentiment-analysis.md): Analyze sentiment of customer feedback and identify business aspects that are frequently mentioned.
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
