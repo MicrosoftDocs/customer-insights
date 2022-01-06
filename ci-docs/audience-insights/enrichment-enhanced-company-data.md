@@ -77,7 +77,7 @@ To start the enrichment process, select **Run** from the command bar. You can al
 
 After the enrichment process completes, you can review the newly enriched customer profiles data under **My enrichments**. Additionally, you'll find the time of the last update and the number of enriched profiles.
 
-You can access a detailed view of each enriched profile by selecting **View enriched data**.
+You can see a sample of the enriched data in the preview tile. Click **See more** and select the **Data** tab to access a detailed view of each enriched profile.
 
 ### Overview card
 
