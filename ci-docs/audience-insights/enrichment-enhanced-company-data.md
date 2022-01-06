@@ -83,11 +83,11 @@ You can access a detailed view of each enriched profile by selecting **View enri
 
 The overview card shows details about the coverage of the enrichment. 
 
-* **Customers processed and changed**: The number of customer company profiles that were successfully enriched.
+* **Companies processed and changed**: The number of customer company profiles that were successfully enriched.
 
-* **Customers processed and not changed**: The number of customer company profiles that were recognized but not changed. This typically happens when the input data is valid and can't be improved by the enrichment.
+* **Companies processed and not changed**: The number of customer company profiles that were recognized but not changed. This typically happens when the input data is valid and can't be improved by the enrichment.
 
-* **Customers not processed and not changed**: The number of customer company profiles that were not recognized. This typically happens for input data that are invalid or not supported by the enrichment.
+* **Companies not processed and not changed**: The number of customer company profiles that were not recognized. This typically happens for input data that are invalid or not supported by the enrichment.
 
 ## Next steps
 
