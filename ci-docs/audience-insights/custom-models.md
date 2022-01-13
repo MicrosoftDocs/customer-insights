@@ -36,6 +36,8 @@ Predictions offer capabilities to create better customer experiences, improve bu
    > [!NOTE]
    > Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
+
 ## Add a new workflow
 
 1. Go to **Intelligence** > **Custom models** and select **New workflow**.
