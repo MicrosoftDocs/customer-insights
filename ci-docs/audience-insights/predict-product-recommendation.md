@@ -74,7 +74,7 @@ If you're interested in trying this feature but don't have data to complete the 
 1. Set the **Number of products** you want to recommend to a customer. This value depends on how your delivery method fills data. If you can recommend three products, set this value accordingly.
    
    >[!TIP]
-   > You can select **Save and close** at any time to save the prediction as a draft. You'll find the draft prediction in the **My predictions** tab.
+   > You can select **Save draft** at any time to save the prediction as a draft. You'll find the draft prediction in the **My predictions** tab.
 
 1. Choose if you want to include products customers have recently purchased in the **Repeat purchases expected** field.
 
