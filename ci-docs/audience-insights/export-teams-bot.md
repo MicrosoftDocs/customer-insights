@@ -28,6 +28,8 @@ To set up and configure the bot, the following prerequisites must be met:
 - Customer Insights and Teams are in the same organization.
 - Your environment has the primary target audience set to individual customers. Business accounts aren't supported.
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## Configure the bot
 
 1. In audience insights, go to **Admin** > **Export Destinations**.

@@ -96,7 +96,7 @@
       items:
         - name: Enrich customer profiles
           href: audience-insights/enrichment-hub.md
-        - name: Brand and interest affinities
+        - name: Brands and interests
           href: audience-insights/enrichment-microsoft.md
         - name: Enhanced addresses
           href: audience-insights/enrichment-enhanced-addresses.md
