@@ -151,6 +151,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: Predict transaction churn
               href: audience-insights/predict-transactional-churn.md
+            - name: Analyze sentiment in customer feedback
+              href: audience-insights/sentiment-analysis.md
             - name: Use custom models from Azure Machine Learning
               href: audience-insights/custom-models.md
             - name: Complete partially missing data
@@ -261,12 +263,15 @@
           href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
+
         - name: Security
           items: 
             - name: Bring your own Key Vault
               href: audience-insights/use-azure-key-vault.md
             - name: Connect to an ADLS storage account using Service Principal
               href: audience-insights/connect-service-principal.md
+            - name: Export diagnostic logs
+              href: audience-insights/diagnostics.md
 
     - name: Extensibility
       items:
