@@ -7,7 +7,7 @@ ms.date: 07/30/2021
 ms.service: customer-insights
 ms.topic: overview
 ms.manager: shellyha
-ms.custom: intro-internal
+
 ---
 
 # Product overview for Dynamics 365 Customer Insights
