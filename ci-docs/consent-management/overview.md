@@ -4,7 +4,7 @@ description: "The consent management capability of Dynamics 365 Customer Insight
 ms.date: 11/03/2021
 ms.service: customer-insights
 ms.subservice: consent-management
-ms.topic: how-to
+ms.topic: overview
 author: smithy7
 ms.author: smithc
 ms.reviewer: mhart

@@ -5,11 +5,11 @@ ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.custom: intro-internal
+
 ---
 
 # Exports (preview) overview

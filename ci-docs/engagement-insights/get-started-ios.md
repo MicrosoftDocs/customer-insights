@@ -3,6 +3,7 @@ title: Get started with iOS SDK
 description: Learn how to personalize and run the iOS SDK
 author: britl
 ms.reviewer: mhart
+ms.custom: intro-internal
 ms.author: britl
 ms.date: 09/15/2021
 ms.service: customer-insights

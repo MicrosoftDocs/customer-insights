@@ -3,6 +3,7 @@ title: Get started with Android SDK
 description: Learn how to personalize and run the Android SDK
 author: britl
 ms.reviewer: mhart
+ms.custom: intro-internal
 ms.author: britl
 ms.date: 10/19/2021
 ms.service: customer-insights
