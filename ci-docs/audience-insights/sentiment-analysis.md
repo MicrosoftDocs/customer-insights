@@ -33,7 +33,7 @@ To ensure you can trust the results of the models, we provide transparent inform
 
 We use two **Natural Language Processing (NLP) models**: The first assigns each feedback comment a sentiment score. The second model associates each feedback with all applicable business aspects. The models are trained on public data from sources across social media, retail, restaurant, consumer products, and automotive industries.    
   
-- Pre-defined business aspects for the model to associate with feedback data include:
+Pre-defined business aspects for the model to associate with feedback data include:
 -	Account management
 -	Checkout and payment
 -	Customer support

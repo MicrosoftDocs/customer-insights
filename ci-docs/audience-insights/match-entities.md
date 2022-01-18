@@ -1,7 +1,7 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 11/24/2021
+ms.date: 01/18/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -217,7 +217,23 @@ You can reconfigure and fine-tune most of the match parameters.
 
 - **Delete a rule** by selecting the **Delete** symbol.
 
-## Specify custom match conditions
+## Advanced options
+
+### Add exceptions to a rule
+
+In most cases, the entity matching leads to unique user profiles with consolidated data. To dynamically address rare cases of false positives and false negatives, you can define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records which fulfill the exception criteria.
+
+For example, if your match rule combines last name, city, and date of birth, the system would identify twins who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine are not the same.
+
+1. Go to **Data** > **Unify** > **Match** and select **Edit** on the rule you want to add conditions to.
+
+1. In the **Edit rule** pane, select **Add exception**.
+
+1. Specify the exception criteria. 
+
+1. Select **Done** so save the rule.
+
+### Specify custom match conditions
 
 You can specify conditions that override the default match logic. There are four options available: 
 
@@ -263,7 +279,7 @@ You can specify conditions that override the default match logic. There are four
 
 1. Select **Run** on the **Match** page to start the matching process. Other specified match rules are overridden by the custom match configuration.
 
-### Known issues
+#### Known issues
 
 - Self-conflation doesn't show the normalized data in deduplication entities. However, it applies the normalization internally during deduplication. It's by design for all normalizations. 
 - If the semantic type setting is removed in the **Map** phase when a match rule uses Alias mapping or Custom bypass, the normalization won't be applied. It only happens if you clear the semantic type after configuring the normalization in the match rule because the semantic type will be unknown.
