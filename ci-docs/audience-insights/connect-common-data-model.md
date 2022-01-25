@@ -1,7 +1,7 @@
 ---
 title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 12/06/2021
+ms.date: 01/25/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -21,7 +21,7 @@ This article provides information on how to ingest data from a Common Data Model
 
 - Data ingestion supports Azure Data Lake *Gen2* storage accounts exclusively. You can't use Azure Data Lake Gen1 storage accounts to ingest data.
 
-- The Data Lake Storage account must have [hierarchical namespace enabled](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace).
+- The Azure Data Lake storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
 
 - To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
