@@ -21,6 +21,8 @@ This article provides information on how to ingest data from a Common Data Model
 
 - Data ingestion supports Azure Data Lake *Gen2* storage accounts exclusively. You can't use Azure Data Lake Gen1 storage accounts to ingest data.
 
+- The Data Lake Storage account must have [hierarchical namespace enabled](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace).
+
 - To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
 - The Azure Data Lake you want to connect and ingest data from have to be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in audience insights.
