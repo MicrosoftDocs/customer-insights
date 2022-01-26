@@ -13,7 +13,7 @@ ms.reviewer: mhart
 
 # Connect to data in a Microsoft Dataverse managed data lake
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 This article provides information on how Dataverse users can quickly connect to analytical entities in a Microsoft Dataverse managed lake. 
 
