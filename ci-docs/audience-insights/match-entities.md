@@ -1,7 +1,7 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 01/18/2022
+ms.date: 01/28/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -30,7 +30,7 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 
 :::image type="content" source="media/match-page.png" alt-text="Screenshot of the Match page in the Unify area of the data unification process.":::
   
-The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you have more than two entities.
+The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
 > [!IMPORTANT]
 > The entity that you choose as your primary entity will serve as the basis for your unified profiles dataset. Additional entities that are selected during the match phase will be added to this entity. This doesn't mean that the unified entity will include *all* of the data included in this entity.
@@ -103,7 +103,7 @@ Match rules represent sets of conditions. To match entities by conditions based 
 
 ### Change the entity order in match rules
 
-You can reorder entities for match rules to change the order in which they are processed. Rules that are conflicting because of a changed order will be removed. You have to recreate removed rules with an updated configuration.
+You can reorder entities for match rules to change the order in which they’re processed. Rules that are conflicting because of a changed order will be removed. You have to recreate removed rules with an updated configuration.
 
 1. Go to **Data** > **Unify** > **Match** and select **Edit**.
 
@@ -125,17 +125,21 @@ Specifying deduplication rules isn't mandatory. If no such rules are configured,
 
 1. Go to **Data** > **Unify** > **Match**.
 
-1. In the **Merged duplicates** section, select **Set entities**. In case deduplication rules are already created, select **Edit**.
+1. In the **Deduplicated records details** section, select **Set entities**. In case deduplication rules are already created, select **Edit**.
 
 1. In the **Merge preferences** pane, choose the entities you want to run deduplication on.
 
-1. Specify how to combine the duplicate records and choose one of three options:
-   - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
-   - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
-   - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
+   1. Specify how to combine the duplicate records and choose one of three options:
+      - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
+      - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
+      - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
+
+   1. Optionally, select **Advanced** to define deduplication rules on individual attributes of an entity. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency. 
  
-   > [!div class="mx-imgBorder"]
-   > ![Deduplication rules step 1.](media/match-selfconflation.png "Deduplication rules step 1")
+      > [!div class="mx-imgBorder"]
+      > ![Deduplication rules step 1.](media/match-selfconflation.png "Deduplication rules step 1")
+
+   1. Select **Done** to apply your merge preferences for deduplication.
  
 1. Once the entities are selected and their merge preference is set, select **Add rule** to define the deduplication rules at an entity level.
    - **Select field** lists all the available fields from that entity. Choose the field you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
@@ -153,7 +157,7 @@ Specifying deduplication rules isn't mandatory. If no such rules are configured,
 
 1. Any custom match rules defined overwrite deduplication rules. If a deduplication rule identifies matching records, and a custom match rule is set to never match those records, then these two records won't be matched.
 
-1. After [running the match process](#run-the-match-process), you will see the deduplication stats in the key metrics tiles.
+1. After [running the match process](#run-the-match-process), you’ll see the deduplication stats in the key metrics tiles.
 
 ### Deduplication output as an entity
 
@@ -221,9 +225,9 @@ You can reconfigure and fine-tune most of the match parameters.
 
 ### Add exceptions to a rule
 
-In most cases, the entity matching leads to unique user profiles with consolidated data. To dynamically address rare cases of false positives and false negatives, you can define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records which fulfill the exception criteria.
+In most cases, the entity matching leads to unique user profiles with consolidated data. To dynamically address rare cases of false positives and false negatives, you can define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records, which fulfill the exception criteria.
 
-For example, if your match rule combines last name, city, and date of birth, the system would identify twins who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine are not the same.
+For example, if your match rule combines last name, city, and date of birth, the system would identify twins with the same last name who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine aren’t the same.
 
 1. Go to **Data** > **Unify** > **Match** and select **Edit** on the rule you want to add conditions to.
 
@@ -252,7 +256,7 @@ You can specify conditions that override the default match logic. There are four
 
 1. Choose the custom match option from the **Custom type** dropdown and select **Download template**. You need a separate template for each match option.
 
-1. A template file downloads. Open it and fill in the details. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
+1. Open the downloaded template file and fill in the details. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
     - Entity1: Sales
     - Entity1Key: 12345
     - Entity2: Contact
