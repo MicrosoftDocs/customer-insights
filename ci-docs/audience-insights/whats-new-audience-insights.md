@@ -25,7 +25,7 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 ## December 2021 updates
 
-The updates in November 2021 include new features, performance upgrades, and bug fixes.
+The updates in December 2021 include new features, performance upgrades, and bug fixes.
 
 ### Forward Customer Insights logs to Azure Monitor
 
@@ -38,6 +38,16 @@ For more information, see [Log forwarding in Dynamics 365 Customer Insights with
 Use data from Microsoft Office 365 to enrich your customer account profiles with insights about engagements through Office 365 apps. The engagement data consist of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users is shared. This enrichment is available in the following regions: UK, Europe, North America.
 
 For more information, see [Enrich customer profiles with engagement data (preview)](enrichment-office.md)
+
+### Advanced data unification features
+
+#### Enable conflict resolution policies at the individual attribute level
+
+When deduplicating customer records within an entity, you may not want to have to choose a full record as a winner. We now allow you to merge the best fields from various records based on rules for every attribute. For example, you can choose to keep the most recent email AND the most complete address from different records. 
+
+You can now define separate merge rules for individual attributes while deduplicating and merging records within a single entity. Previously, we only let you select a single merge rule (keeping records based on recency data completeness) and that rule got applied at the record level to all attributes. That's not ideal when some of the data you want to keep is found in record A, and other good data found in record B.
+
+For more information, see [Advanced options](match-entities.md#advanced-options)
 
 ## November 2021 updates
 
