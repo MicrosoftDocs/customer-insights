@@ -4,7 +4,7 @@ description: "Overview on segments and how to create and manage them."
 ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
+ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart

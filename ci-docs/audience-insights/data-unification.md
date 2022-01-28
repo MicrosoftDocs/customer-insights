@@ -5,11 +5,11 @@ ms.date: 10/18/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.custom: intro-internal
+
 searchScope: 
   - ci-unify
 ---

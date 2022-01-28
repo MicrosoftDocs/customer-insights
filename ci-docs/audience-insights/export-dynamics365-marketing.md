@@ -40,7 +40,7 @@ If you are using the new capabilities of Dynamics 365 Marketing for real-time cu
 
 1. In the **Server admin account** section, select **Sign in** and choose a Dynamics 365 Marketing account.
 
-1. Map a customer ID field to the Dynamics 365 Contact ID.
+1. Map the Contact ID field in the Customer entity to the Dynamics 365 Contact ID.
 
 1. Select **Save** to complete the connection. 
 

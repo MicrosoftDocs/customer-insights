@@ -1,7 +1,7 @@
 ---
-title: "Address enhancement enrichment"
+title: "Address enhancement enrichment (contains video)"
 description: "Enrich and normalize address information of customer profiles with Microsoft's models."
-ms.date: 07/25/2021
+ms.date: 01/19/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -95,7 +95,17 @@ To start the enrichment process, select **Run** from the command bar. You can al
 
 After the enrichment process completes, you can review the newly enriched customer profiles data under **My enrichments**. Additionally, you'll find the time of the last update and the number of enriched profiles.
 
-You can access a detailed view of each enriched profile by selecting **View enriched data**.
+You can see a sample of the enriched data in the **Enriched customers preview** tile. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+
+### Overview card
+
+The overview card shows details about the coverage of the enrichment. 
+
+* **Addresses processed and changed**: The number of customer profiles with addresses that were successfully enriched.
+
+* **Addresses processed and not changed**: The number of customer profiles with addresses that were recognized but not changed. It typically happens when the input data is valid and can't be improved by the enrichment.
+
+* **Addresses not processed and not changed**: The number of profiles with addresses that were not recognized. Usually for input data that is invalid or not supported by the enrichment.
 
 ## Next steps
 

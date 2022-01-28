@@ -9,7 +9,7 @@ ms.topic: overview
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.custom: intro-internal
+
 ---
 
 # Audience insights for Dynamics 365 Customer Insights overview

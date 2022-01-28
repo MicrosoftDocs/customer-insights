@@ -1,7 +1,7 @@
 ---
 title: "Company data enhancement"
 description: "Enrich and normalize company data with Microsoft's models."
-ms.date: 11/05/2021
+ms.date: 01/19/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -46,7 +46,8 @@ There are a few limitations with the enhanced data. The items in the list below 
 
 1.	Confirm the identity of the company. We don't verify if the input is an existing organization or that a company uses the output as its standard name.
 2.	Comprehensively cover companies globally. Microsoft’s compiled company data has global coverage, but offers most coverage in Australia, Canada, United Kingdom, and the United States.
-3.	Guarantee accuracy or freshness of data. As business information often changes, we can't guarantee that the enhanced company data provided is always exact or up-to-date.
+3.	Standardize company addresses globally. We currently support standardizing addresses in these countries or regions: Australia, Canada, France, Germany, Italy, Japan, United Kingdom, and the United States.
+4.	Guarantee accuracy or freshness of data. As business information often changes, we can't guarantee that the enhanced company data provided is always exact or up-to-date.
 
 ## Configure the enrichment
 
@@ -76,7 +77,17 @@ To start the enrichment process, select **Run** from the command bar. You can al
 
 After the enrichment process completes, you can review the newly enriched customer profiles data under **My enrichments**. Additionally, you'll find the time of the last update and the number of enriched profiles.
 
-You can access a detailed view of each enriched profile by selecting **View enriched data**.
+You can see a sample of the enriched data in the **Enriched customers preview** tile. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+
+### Overview card
+
+The overview card shows details about the coverage of the enrichment. 
+
+* **Companies processed and changed**: The number of customer company profiles that were successfully enriched.
+
+* **Companies processed and not changed**: The number of customer company profiles that were recognized but not changed. This typically happens when the input data is valid and can't be improved by the enrichment.
+
+* **Companies not processed and not changed**: The number of customer company profiles that were not recognized. This typically happens for input data that are invalid or not supported by the enrichment.
 
 ## Next steps
 

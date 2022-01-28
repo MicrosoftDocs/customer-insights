@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to SFTP hosts"
+title: "Export Customer Insights data to SFTP hosts (contains video)"
 description: "Learn how to configure the connection and export to an SFTP location."
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -23,6 +23,7 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 ## Known limitations
 
+- SFTP destinations behind firewalls are currently not supported. 
 - The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server. 
 - Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory. 
 
