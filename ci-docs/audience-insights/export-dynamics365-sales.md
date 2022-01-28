@@ -13,7 +13,7 @@ manager: shellyha
 
 # Use segments in Dynamics 365 Sales (preview)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Use your customer data to create marketing lists, follow up workflows, and send out promotions with Dynamics 365 Sales.
 
