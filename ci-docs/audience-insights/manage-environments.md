@@ -13,7 +13,7 @@ manager: shellyha
 
 # Manage environments
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 ## Switch environments
 

@@ -1,7 +1,7 @@
 ---
 title: "Merge entities in data unification"
 description: "Merge entities to create unified customer profiles."
-ms.date: 11/01/2021
+ms.date: 01/28/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -94,11 +94,13 @@ On the **Merge** page, select **Excluded fields** to see the list of all exclude
 
 1. Select **Save** and **Run** to process the changes. 
 
-## Manually combine fields
+## Combine fields manually
 
-Specify a merged attribute manually. 
+Specify a merged attribute manually.
 
-1. On the **Merge** page, select **Combine fields**.
+1. On the **Merge** page, select **Combine**.
+
+1. Choose the **Fields** option.
 
 1. Specify the merge winner policy in the **Combine fields by** dropdown.
 
@@ -109,6 +111,26 @@ Specify a merged attribute manually.
 1. Select **Done** to apply the changes.
 
 1. Select **Save** and **Run** to process the changes. 
+
+## Combine a group of fields
+
+Treat a group of fields as a single unit. For example, when if our records contain the fields Address1, Address2, City, State, and Zip. We likely don't want to merge in a different record’s Address2, thinking it would make our data more complete
+
+1. On the **Merge** page, select **Combine**.
+
+1. Choose the **Group of fields** option.
+
+1. Specify the merge winner policy in the **Rank groups by** dropdown.
+
+1. Select **Add** and choose if you want to add more fields or additional groups to the fields.
+
+1. Provide a **Name** and an **Output name** for every combined field.
+
+1. Provide a **Name** for the group of fields. 
+
+1. Select **Done** to apply the changes.
+
+1. Select **Save** and **Run** to process the changes.
 
 ## Change the order of fields
 
