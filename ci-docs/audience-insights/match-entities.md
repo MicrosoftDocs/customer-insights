@@ -227,7 +227,7 @@ You can reconfigure and fine-tune most of the match parameters.
 
 In most cases, the entity matching leads to unique user profiles with consolidated data. To dynamically address rare cases of false positives and false negatives, you can define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records, which fulfill the exception criteria.
 
-For example, if your match rule combines last name, city, and date of birth, the system would identify twins who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine aren’t the same.
+For example, if your match rule combines last name, city, and date of birth, the system would identify twins with the same last name who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine aren’t the same.
 
 1. Go to **Data** > **Unify** > **Match** and select **Edit** on the rule you want to add conditions to.
 

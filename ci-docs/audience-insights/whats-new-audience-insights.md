@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 01/21/2022
+ms.date: 01/27/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -47,7 +47,24 @@ When deduplicating customer records within an entity, you may not want to have t
 
 You can now define separate merge rules for individual attributes while deduplicating and merging records within a single entity. Previously, we only let you select a single merge rule (keeping records based on recency data completeness) and that rule got applied at the record level to all attributes. That's not ideal when some of the data you want to keep is found in record A, and other good data found in record B.
 
-For more information, see [Advanced options](match-entities.md#advanced-options)
+For more information, see [Define deduplication on a match entity](match-entities.md#define-deduplication-on-a-match-entity).
+
+#### Custom rules for matching
+
+There are times when you need to specify an exception to general rules in order to NOT match records. This can happen when multiple individuals share enough information so the system would match them as a single individual. For example, twins with the same last name, living in the same city, and sharing the date of birth.
+
+Exceptions ensure that incorrect data unification can be addressed in the unification rules. You can add multiple exceptions to a rule.
+
+For more information, see [Add exceptions to a rule](match-entities.md#add-exceptions-to-a-rule).
+
+#### Provide additional conflict resolution policies and enable grouping of attributes
+
+This feature enables you to treat a group of fields as a single unit. For example, when if our records contain the fields Address1, Address2, City, State, and Zip. We likely don't want to merge in a different record’s Address2, thinking it would make our data more complete.
+
+You can now combine a group of related fields and apply a single merge policy to the group. 
+
+For more information, see [Combine a group of fields](merge-entities.md#combine-a-group-of-fields).
+
 
 ## November 2021 updates
 
