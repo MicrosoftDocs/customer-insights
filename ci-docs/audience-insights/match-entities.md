@@ -38,9 +38,9 @@ The primary entity *eCommerce:eCommerceContacts* is matched with the next entity
 > There are two considerations that can help you choose the hierarchy of your entities:
 >
 > - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
-> - Choose the entity that hast several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
+> - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-After specifying the match order, you'll see the defined match pairs in the **Matched records details** section on **Data** > **Unify** > **Match**. The key metrics will be empty until the match process completes.
+After specifying the match order, the defined match pairs display in the **Matched records details** section on **Data** > **Unify** > **Match**. The key metrics are empty until the match process completes.
 
 ## Define rules for match pairs
 
@@ -50,7 +50,7 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
 
 :::image type="content" source="media/match-rule-add.png" alt-text="Screenshot of the Matched record details section with control to add rules highlighted.":::
 
-1. Select **Add rules** under an entity in the **Matched records details** section to define match rules.
+1. Select **Add rule** under an entity in the **Matched records details** section to define match rules.
 
 1. In the **Create rule** pane, configure the conditions for the rule.
 
@@ -69,7 +69,7 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
      - Semantic types: Standardizes names, titles, phone numbers, addresses, etc. 
 
    - **Precision**: Set the level of precision to apply for this condition. 
-     - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
+     - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
 
 1. Provide a **Name** for the rule.
@@ -88,11 +88,11 @@ To match entities only if attributes meet multiple conditions, add more conditio
 
 1. In the **Edit rule** pane, select **Add condition**.
 
-1. Select **Done** so save the rule.
+1. Select **Done** to save the rule.
 
 ### Add rules to a match pair
 
-Match rules represent sets of conditions. To match entities by conditions based on multiple attributes, add more rules
+Match rules represent sets of conditions. To match entities by conditions based on multiple attributes, add more rules.
 
 1.  Go to **Data** > **Unify** > **Match** and select **Add rule** on the entity you want to add rules to.
 
@@ -111,7 +111,7 @@ You can reorder entities for match rules to change the order in which they’re 
 
    :::image type="content" source="media/reorder-match-rules.png" alt-text="Options to change in which order entities are processed in the match phase.":::
 
-1. Select **Done** so save the rule.
+1. Select **Done** to save the rule.
 
 ## Define deduplication on a match entity
 
