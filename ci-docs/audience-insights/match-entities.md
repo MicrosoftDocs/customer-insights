@@ -117,7 +117,7 @@ You can reorder entities for match rules to change the order in which they’re 
 
 In addition to [cross-entity match rules](#define-rules-for-match-pairs), you can also specify deduplications rules. *Deduplication* is another process when matching records. It identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs.
 
-Deduplicated records will be used in the cross-entity matching process. Deduplication happens on individual entities and can be configured every entity used in match pairs.
+Deduplicated records are used in the cross-entity matching process. Deduplication happens on individual entities and can be configured for every entity used in match pairs.
 
 Specifying deduplication rules isn't mandatory. If no such rules are configured, the system-defined rules are applied. They combine all records into a single record before passing the entity data to cross-entity matching for enhanced performance.
 
@@ -134,7 +134,7 @@ Specifying deduplication rules isn't mandatory. If no such rules are configured,
       - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
       - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
 
-   1. Optionally, select **Advanced** to define deduplication rules on individual attributes of an entity. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency. 
+   1. Optionally, to define deduplication rules on individual attributes of an entity, select **Advanced**. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency. 
  
       > [!div class="mx-imgBorder"]
       > ![Deduplication rules step 1.](media/match-selfconflation.png "Deduplication rules step 1")
