@@ -113,5 +113,26 @@ The Customer Card Add-in doesn't upgrade automatically. To upgrade to the latest
 
 1. After starting the upgrade process, you'll see a loading indicator until the upgrade completes. If there's no newer version, the upgrade will show an error message.
 
+## Troubleshooting
+
+### Controls from card add-in fail to find data for any customer
+
+Perceived symptoms:
+
+Even with correct setup for the ID fields, the controls cannot find any data for any customer.  
+
+How to resolve:
+
+Make sure to choose the correct CI instance and Contact ID field check and that the GUIDs for the contact id match for the specific customer in both CI and CRM. 
+
+As next step you need to review your ingestion setup. Edit the data source for the Dynamics 365 system which contains the contact id GUID. If within the Power Query editor, the contact id GUID is shown with uppercased characters, then follow these steps to address this: 
+1. Open the data source in Power Query Editor / Open the edit panel for this data source 
+1. Select the contact id column 
+1. Click **Transform** in the header menu to see menu with available actions 
+1. Click **lowercase**. Review if GUIDs are now shown in lowercase in the table.
+1. Save the data source.
+1. Now re-run ingestion, unification and downstream processes to propagate the changes to the GUID. 
+
+Once your instance fully refreshed the card add-in controls should show the expected data. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
