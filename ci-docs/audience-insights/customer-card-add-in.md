@@ -1,7 +1,7 @@
 ---
 title: "Customer Card Add-in for Dynamics 365 apps (contains video)"
 description: "Show data from audience insights in Dynamics 365 apps with this add-in."
-ms.date: 12/22/2021
+ms.date: 02/02/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -113,5 +113,26 @@ The Customer Card Add-in doesn't upgrade automatically. To upgrade to the latest
 
 1. After starting the upgrade process, you'll see a loading indicator until the upgrade completes. If there's no newer version, the upgrade will show an error message.
 
+## Troubleshooting
+
+### Controls from Customer Card Add-in don't find data
+
+**Problem:**
+
+Even with correctly configured ID fields, the controls can't find data for any customer.  
+
+**Resolution:**
+
+1. Make sure you configured the Card Add-in according to the instructions: [Configure the Customer Card Add-in](#configure-the-customer-card-add-in) 
+
+1. Review the data ingestion configuration. Edit the data source for the Dynamics 365 system which contains the contact ID GUID. If the contact ID GUID is shown with uppercase characters in the Power Query editor, try the following: 
+    1. Edit the data source to open the data source in Power Query Editor.
+    1. Select the contact ID column.
+    1. Select **Transform** in the header bar to see available actions.
+    1. Select **lowercase**. Validate if GUIDs in the table are now lowercase.
+    1. Save the data source.
+    1. Run data ingestion, unification, and downstream processes to propagate the changes to the GUID. 
+
+After completing the full refresh, the Customer Card Add-in controls should show the expected data. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
