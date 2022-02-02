@@ -123,7 +123,7 @@ Even with correct setup for the ID fields, the controls cannot find any data for
 
 How to resolve:
 
-Make sure to choose the correct CI instance and Contact ID field check and that the GUIDs for the contact id match for the specific customer in both CI and CRM. 
+Make sure the setup of the Card Add-in follows these instructions: [Configure the Customer Card Add-in](https://docs.microsoft.com/en-us/dynamics365/customer-insights/audience-insights/customer-card-add-in#configure-the-customer-card-add-in) 
 
 As next step you need to review your ingestion setup. Edit the data source for the Dynamics 365 system which contains the contact id GUID. If within the Power Query editor, the contact id GUID is shown with uppercased characters, then follow these steps to address this: 
 1. Open the data source in Power Query Editor / Open the edit panel for this data source 
