@@ -18,7 +18,7 @@ This article discusses how to connect Dynamics 365 Customer Insights with an Azu
 Automated tools that use Azure services should always have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. You can use service principals to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create or update an environment](create-environment.md).
 
 > [!IMPORTANT]
-> - The Data Lake Storage account that will use the service principal must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
+> - The Data Lake Storage account that will use the service principal must be Gen2 and have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). Azure Data Lake Gen1 storage accounts are not supported.
 > - You need admin permissions for your Azure subscription to create a service principal.
 
 ## Create an Azure service principal for Customer Insights
