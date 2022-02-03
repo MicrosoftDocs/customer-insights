@@ -35,8 +35,11 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
 1. Go to **Data** > **Unify** > **Match** and select **Set order** to start the match phase.
-1. Select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity.  
-1. Click **Done**. After specifying the match order, the defined match pairs display in the **Matched records details** section on **Data** > **Unify** > **Match**. The key metrics are empty until the match process completes.
+1. Select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity. 
+1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all**.
+1. Click **Done**. 
+
+After specifying the match order, the defined match pairs display in the **Matched records details** section on **Data** > **Unify** > **Match**. The key metrics are empty until the match process completes.
 
 :::image type="content" source="media/match-page.png" alt-text="Screenshot of the Match page in the Unify area of the data unification process.":::
   
@@ -61,12 +64,12 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
    - **Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
 
    - **Normalize**: Select from following normalization options for the selected attributes. 
-     - Whitespace: Removes all spaces. *Hello   World* becomes *HelloWorld*.
+     - Numerals: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
      - Symbols: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
      - Text to lower case: Converts all character to lower case. *ALL CAPS and Title Case* becomes *all caps and title case*.
+     - Type (Phone, Name, Address, Organization): Standardizes names, titles, phone numbers, addresses, etc. 
      - Unicode to ASCII: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
-     - Numerals: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
-     - Semantic types: Standardizes names, titles, phone numbers, addresses, etc. 
+     - Whitespace: Removes all spaces. *Hello   World* becomes *HelloWorld*.
 
    - **Precision**: Set the level of precision to apply for this condition. 
      - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
