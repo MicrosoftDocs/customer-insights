@@ -4,6 +4,23 @@
 - name: Product overview
   href: overview.md
 
+- name: Learning catalog
+  items:
+    - name: Get started
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: Ingest data
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: Create a unified customer profile
+      href: /learn/modules/unified-customer-profile/
+    - name: Work with audience insights
+      href: /learn/modules/working-with-customer-insights/
+    - name: Enrich data and make predictions
+      href: /learn/modules/enrich-data/
+    - name: Manage external connections
+      href: /learn/modules/configure-third-party-connections/
+    - name: Administer Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
+
 - name: Free trial
   items:
     - name: Sign up for a free trial
@@ -40,19 +57,6 @@
 
     - name: Work with business accounts
       href: audience-insights/work-with-business-accounts.md
-
-    - name: Learn modules
-      items:
-        - name: Ingest data
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: Create a unified customer profile
-          href: /learn/modules/unified-customer-profile/
-        - name: Work with the app
-          href: /learn/modules/working-with-customer-insights/
-
-        - name: Enrich data and predictions
-          href: /learn/modules/enrich-data/
-         
 
     - name: Data sources
       items:

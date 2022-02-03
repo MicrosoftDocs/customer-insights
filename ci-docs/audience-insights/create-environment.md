@@ -59,7 +59,7 @@ By saving data to Azure Data Lake Storage, you agree that data will be transferr
 > Customer Insights currently supports the following:
 > - Ingested entities from Power BI dataflows that are stored in a Microsoft Dataverse-managed Data Lake.  
 > - Azure Data Lake Storage accounts from the same Azure region that you selected when creating the environment.
-> - Azure Data Lake Storage accounts that have *hierarchical namespace* enabled.
+> - Azure Data Lake Storage accounts that are Gen2 and have *hierarchical namespace* enabled. Azure Data Lake Gen1 storage accounts are not supported.
 
 For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using an Azure service principal](connect-service-principal.md). The **Container** name will be `customerinsights` and can't be changed.
 

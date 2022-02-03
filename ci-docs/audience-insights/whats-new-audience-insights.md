@@ -1,7 +1,7 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 01/27/2022
+ms.date: 03/02/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -23,6 +23,17 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
 
+## January 2022 updates
+
+The updates in January 2022 include new features, performance upgrades, and bug fixes.
+
+### Sentiment analysis of your customer’s feedback
+
+Customer Insights provides a new AI-powered feature to synthesize customer sentiment and identify specific business aspects as opportunities for targeted improvements. By analyzing the written feedback of your customers, you can get accurate insights at low cost. Sentiment analysis powered by Natural Language Processing (NLP) models that generate two derived insights for each customer ID. A sentiment score (of –5 to 5) and list of applicable business aspects. 
+
+For more information, see [Analyze sentiment in customer feedback (Preview)](sentiment-analysis.md).
+
+
 ## December 2021 updates
 
 The updates in December 2021 include new features, performance upgrades, and bug fixes.
@@ -37,7 +48,7 @@ For more information, see [Log forwarding in Dynamics 365 Customer Insights with
 
 Use data from Microsoft Office 365 to enrich your customer account profiles with insights about engagements through Office 365 apps. The engagement data consist of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users is shared. This enrichment is available in the following regions: UK, Europe, North America.
 
-For more information, see [Enrich customer profiles with engagement data (preview)](enrichment-office.md)
+For more information, see [Enrich customer profiles with engagement data (Preview)](enrichment-office.md).
 
 ### Advanced data unification features
 
