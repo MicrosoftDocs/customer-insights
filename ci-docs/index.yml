@@ -27,6 +27,10 @@ landingContent:
             url: /dynamics365-release-plan/
           - text: Discover the CDP
             url: https://dynamics.microsoft.com/ai/customer-insights/
+      - linkListType: learn
+        links: 
+          - text: Customer Insights learning path
+            url: /learn/paths/build-customer-insights/
 
   - title: Get started with Customer Insights
     linkLists:
@@ -36,9 +40,28 @@ landingContent:
             url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
           - text: What's new in audience insights
             url: audience-insights/whats-new-audience-insights.md
-          - text: What's new in engagement insights
-            url: https://docs.microsoft.com/dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
-
+          - text: Quickstart guide
+            url: audience-insights/get-started.md
+      - linkListType: learn
+        links: 
+          - text: Get started
+            url: /learn/modules/get-started-customer-data-platform/
+  
+  - title: Administer audience insights
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Configure the system
+            url: audience-insights/system.md
+          - text: Define user permissions 
+            url: audience-insights/permissions.md
+          - text: Manage multiple environments
+            url: audience-insights/manage-environments.md
+      - linkListType: learn
+        links: 
+          - text: Administer Customer Insights
+            url: /learn/modules/administer-customer-data-platform/       
+  
   - title: Get in touch
     linkLists:
       - linkListType: overview
@@ -71,17 +94,6 @@ landingContent:
             url: audience-insights/customer-card-add-in.md
           - text: Power BI connector
             url: audience-insights/export-power-bi.md
-
-  - title: Administer audience insights
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Configure the system
-            url: audience-insights/system.md
-          - text: Define user permissions 
-            url: audience-insights/permissions.md
-          - text: Manage multiple environments
-            url: audience-insights/manage-environments.md
 
   - title: About engagements insights (preview)
     linkLists:
