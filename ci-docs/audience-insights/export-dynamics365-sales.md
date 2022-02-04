@@ -17,6 +17,11 @@ manager: shellyha
 
 Use your customer data to create marketing lists, follow up workflows, and send out promotions with Dynamics 365 Sales.
 
+## Known limitations
+
+- Exports to Dynamics 365 Sales are limited to 100'000 members per segment.
+- Segment exports to Dynamics 365 Sales can take up to 3 hours to complete. 
+
 ## Prerequisite for connection
 
 1. Contact records must be present in Dynamics 365 Sales before you can export a segment from Customer Insights to Sales. Read more on how to ingest contacts in [Dynamics 365 Sales using Microsoft Dataverse](connect-power-query.md).
