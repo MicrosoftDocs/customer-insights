@@ -18,8 +18,9 @@ manager: shellyha
 Use your customer data to create marketing lists, follow up workflows, and send out promotions with Dynamics 365 Sales.
 
 ## Known limitations
-1. Segments with 100'000 and more members/contacts cannot be exported to Dynamics 365 Sales.
-2. Export segments below the 100'000 members/contacts can take up to 3 hours to complete. 
+
+- Exports to Dynamics 365 Sales are limited to 100'000 members per segment.
+- Segment exports to Dynamics 365 Sales can take up to 3 hours to complete. 
 
 ## Prerequisite for connection
 
