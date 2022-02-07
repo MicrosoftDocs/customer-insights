@@ -1,7 +1,7 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 01/28/2022
+ms.date: 02/07/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -37,7 +37,7 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 1. Go to **Data** > **Unify** > **Match** and select **Set order** to start the match phase.
 1. Select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity. 
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all**.
-1. Click **Done**. 
+1. Select **Done**. 
 
 After specifying the match order, the defined match pairs display in the **Matched records details** section on **Data** > **Unify** > **Match**. The key metrics are empty until the match process completes.
 
