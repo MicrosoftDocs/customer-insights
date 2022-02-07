@@ -1,7 +1,7 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 01/28/2022
+ms.date: 02/07/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -24,13 +24,7 @@ The match page consists of three sections:
 
 ## Specify the match order
 
-Go to **Data** > **Unify** > **Match** and select **Set order** to start the match phase.
-
-Each match unifies two or more entities into a single, consolidated entity. At the same time, it keeps the unique customer records. For example, we selected two entities: **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity. The order of the entities specifies in which order the system will try to match the records.
-
-:::image type="content" source="media/match-page.png" alt-text="Screenshot of the Match page in the Unify area of the data unification process.":::
-  
-The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
+Each match unifies two or more entities into a single, consolidated entity. At the same time, it keeps the unique customer records. The match order indicates the order in which the system tries to match the records.
 
 > [!IMPORTANT]
 > The entity that you choose as your primary entity will serve as the basis for your unified profiles dataset. Additional entities that are selected during the match phase will be added to this entity. This doesn't mean that the unified entity will include *all* of the data included in this entity.
@@ -40,7 +34,16 @@ The primary entity *eCommerce:eCommerceContacts* is matched with the next entity
 > - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
+1. Go to **Data** > **Unify** > **Match** and select **Set order** to start the match phase.
+1. Select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity. 
+1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all**.
+1. Select **Done**. 
+
 After specifying the match order, the defined match pairs display in the **Matched records details** section on **Data** > **Unify** > **Match**. The key metrics are empty until the match process completes.
+
+:::image type="content" source="media/match-page.png" alt-text="Screenshot of the Match page in the Unify area of the data unification process.":::
+  
+The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
 ## Define rules for match pairs
 
@@ -61,12 +64,12 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
    - **Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
 
    - **Normalize**: Select from following normalization options for the selected attributes. 
-     - Whitespace: Removes all spaces. *Hello   World* becomes *HelloWorld*.
+     - Numerals: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
      - Symbols: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
      - Text to lower case: Converts all character to lower case. *ALL CAPS and Title Case* becomes *all caps and title case*.
+     - Type (Phone, Name, Address, Organization): Standardizes names, titles, phone numbers, addresses, etc. 
      - Unicode to ASCII: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
-     - Numerals: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
-     - Semantic types: Standardizes names, titles, phone numbers, addresses, etc. 
+     - Whitespace: Removes all spaces. *Hello   World* becomes *HelloWorld*.
 
    - **Precision**: Set the level of precision to apply for this condition. 
      - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
