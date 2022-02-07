@@ -119,10 +119,7 @@ Run the enrichment after configuring brands, interests, and the field mapping fo
 
 Depending on the size of your customer data, it may take several minutes for an enrichment run to complete.
 
-<!-- [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)] -->
-
-> [!TIP]
-> There are [statuses](system.md#status-definitions) for tasks and processes. Most processes depend on other upstream processes, such as data sources and data profiling [refreshes](system.md#refresh-processes). Select the status to open the **Progress details** pane and view the progress of the tasks that are required to for enrichments. Under each task, you can select **See details** for more progress information, such as processing time, the last processing date, and any applicable errors and warnings associated with the task or process. You can use the **Entire workflow** toggle at the bottom of the panel to see all the processes in the system.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## Enrichment results
 
