@@ -1,7 +1,7 @@
 ---
 title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
-ms.date: 11/05/2021
+ms.date: 02/07/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -32,6 +32,7 @@ On the **Discover** tab, you'll find all supported enrichment options.
 - [Demographics](enrichment-experian.md) provided by Experian
 - [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
+- [Location data](enrichment-here.md) provided by HERE Technologies 
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
