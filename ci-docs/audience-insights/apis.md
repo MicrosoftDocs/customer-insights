@@ -30,7 +30,7 @@ This article describes how to access the Customer Insights APIs, create an Azure
  
    Enabling the APIs creates a primary and secondary subscription key for your instance that gets used in the API requests. You can regenerate the keys by selecting the **Regenerate primary** or **Regenerate secondary** on **Admin** > **Permissions** > **APIs**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs.":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. Select **Explore our APIs** to [try out the APIs](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -44,7 +44,7 @@ This article describes how to access the Customer Insights APIs, create an Azure
 
 The HTTP response will soon appear below.
 
-   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs.":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## Create a new app registration in the Azure portal
 
@@ -60,7 +60,7 @@ These steps help you get started with using the Customer Insights APIs in an Azu
 
 1. On your new App registration, go to **API permissions**.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration.":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. Select **Add a permission** and select **Customer Insights** in the side pane.
 
@@ -72,7 +72,7 @@ These steps help you get started with using the Customer Insights APIs in an Azu
 
 You can use the Application/Client ID for this app registration with the Microsoft Authentication Library (MSAL) to obtain a bearer token to send with your request to the API.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent.":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 For more information about MSAL, see [Overview of Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
 
@@ -98,7 +98,7 @@ The [app registration section](#create-a-new-app-registration-in-the-azure-porta
 
 1. Select **Grant admin consent for...** to complete the app registration.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent.":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. To conclude, we have to add the name of the app registration as a user in Customer Insights.  
    
@@ -124,7 +124,7 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
  
    Alternatively, run this command in the **NuGet Package Manager Console**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project.":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### Use the C# client library
 
@@ -136,7 +136,7 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
 
 1. Pass this `HttpClient` into the construction of the `CustomerInsights` client.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient.":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
 1. Make calls with the client to the "extension methods"—for example, `GetAllInstancesAsync`. If access to the underlying `Microsoft.Rest.HttpOperationResponse` is preferred, use the "http message methods"—for example, `GetAllInstancesWithHttpMessagesAsync`.
 
