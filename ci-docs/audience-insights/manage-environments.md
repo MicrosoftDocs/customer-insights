@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 12/06/2021
+ms.date: 02/09/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -12,8 +12,6 @@ manager: shellyha
 ---
 
 # Manage environments
-
-
 
 ## Switch environments
 
@@ -91,9 +89,29 @@ After refreshing the data sources, go to **Data** > **Unify**. Here you'll find 
 
 When the data unification is complete, go to **Measures** and **Segments** to refresh them too.
 
+## Change the owner of an environment
+
+While several users can have admin permissions in Customer Insights, only one user is the owner of an environment. By default, it's the admin who creates an environment initially. As the owner of an environment, you can assign ownership to another user with admin permissions.
+
+1. Select the **Environment** picker in the header of the app.
+
+1. Select the **Edit** icon.
+
+1. In the **Edit environment** box, go to the **Basic information** step.
+
+1. In the **Change owner of environment** field, choose the new owner of the environment.  
+
+1. Select **Review and finish**, then **Update** to apply the changes. 
+
+## Claim ownership of an environment
+
+If the owner of an environment leaves the organization or their users account is deleted, the environment will have no owner. A user with admin permissions can claim the ownership and become the new owner. They can continue to own the environment or [change the ownership to another admin](#change-the-owner-of-an-environment). 
+
+To claim ownership, select the **Take ownership** button that shows at the top of every page in Customer Insights when the original owner left the organization.
+
 ## Reset an existing environment
 
-As an administrator, you can reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
+As the owner of an environment, you can reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
 
 1.	Select the **Environment** picker in the header of the app. 
 
@@ -105,7 +123,7 @@ As an administrator, you can reset an environment to an empty state if you want 
 
 ## Delete an existing environment
 
-As an administrator, you can delete an environment you administer.
+As the owner of an environment, you can delete an environment you administer.
 
 1.	Select the **Environment** picker in the header of the app.
 
