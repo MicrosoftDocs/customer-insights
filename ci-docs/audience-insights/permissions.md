@@ -52,12 +52,12 @@ There are three types of roles:
 - Install and use the **Customer Card Add-in**.
 - Add and use the **Power Apps connector**.
 - Enable usage of [Customer Insights APIs](apis.md).
+- [Assign environment ownership](manage-environments.md#change-the-owner-of-an-environment) to another admin.
 
 ## Admin (owner)
 
 - All permissions available to the Admin.
 - [Reset and delete](manage-environments.md#reset-an-existing-environment) the environment.
-- [Assign environment ownership](manage-environments.md#change-the-owner-of-an-environment) to another admin.
 
 ## Assign roles and permissions
 

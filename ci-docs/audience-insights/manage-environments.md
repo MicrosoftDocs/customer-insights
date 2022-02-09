@@ -91,7 +91,7 @@ When the data unification is complete, go to **Measures** and **Segments** to re
 
 ## Change the owner of an environment
 
-While several users can have admin permissions in Customer Insights, only one user is the owner of an environment. By default, it's the admin who creates an environment initially. As the owner of an environment, you can assign ownership to another user with admin permissions.
+While several users can have admin permissions in Customer Insights, only one user is the owner of an environment. By default, it's the admin who creates an environment initially. As the admin of an environment, you can assign ownership to another user with admin permissions.
 
 1. Select the **Environment** picker in the header of the app.
 
@@ -105,7 +105,7 @@ While several users can have admin permissions in Customer Insights, only one us
 
 ## Claim ownership of an environment
 
-If the owner of an environment leaves the organization or their users account is deleted, the environment will have no owner. A user with admin permissions can claim the ownership and become the new owner. They can continue to own the environment or [change the ownership to another admin](#change-the-owner-of-an-environment). 
+If the owner of an environment leaves the organization or their user account is deleted, the environment will have no owner. A user with admin permissions can claim the ownership and become the new owner. They can continue to own the environment or [change the ownership to another admin](#change-the-owner-of-an-environment). 
 
 To claim ownership, select the **Take ownership** button that shows at the top of every page in Customer Insights when the original owner left the organization.
 
