@@ -30,7 +30,7 @@ Customer Insights is sends the following event logs:
 To configure diagnostics in Customer Insights, the following prerequisites must be met:
 
 - You have an active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
-- You have [Administrator](permissions.md#administrator) permissions in Customer Insights.
+- You have [Administrator](permissions.md#admin) permissions in Customer Insights.
 - You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can be an Azure Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 - [Destination requirements](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics met.
 - You have at least the **Reader** role on the resource group the resource belongs to.

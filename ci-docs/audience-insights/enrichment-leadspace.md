@@ -21,7 +21,7 @@ To configure Leadspace, the following prerequisites must be met:
 
 - You have an active Leadspace license.
 - You have [unified customer profiles](customer-profiles.md) based on accounts.
-- A Leadspace connection has already been configured by an administrator or you have [administrator](permissions.md#administrator) permissions and the “perpetual key” (referred to as **Leadspace token**). Contact [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) directly for details about their product.
+- A Leadspace connection has already been configured by an administrator or you have [administrator](permissions.md#admin) permissions and the “perpetual key” (referred to as **Leadspace token**). Contact [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) directly for details about their product.
 
 ## Configure the enrichment
 

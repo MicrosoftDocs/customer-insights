@@ -21,7 +21,7 @@ To configure SFTP custom import, the following prerequisites must be met:
 
 - You have the file name and location (path) of the file to be imported on the SFTP host.
 - There is a *model.json* file that specifies [the Common Data Model schema](/common-data-model/) for the data to be imported. This file must be in the same directory as the file to import.
-- An SFTP connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You'll need the user credentials, URL, and port number for the SFTP location where you want to import data from.
+- An SFTP connection has already been configured by an administrator *or* you have [administrator](permissions.md#admin) permissions. You'll need the user credentials, URL, and port number for the SFTP location where you want to import data from.
 
 
 ## Configure the import

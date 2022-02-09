@@ -21,7 +21,7 @@ To configure Azure Maps data enrichment, the following prerequisites must be met
 
 - You have an active Azure Maps subscription. To get a subscription, you can [sign up or get a free trial](https://azure.microsoft.com/services/azure-maps/).
 
-- An Azure Maps [connection](connections.md) is available, *or* you have [administrator](permissions.md#administrator) permissions and an active Azure Maps API key.
+- An Azure Maps [connection](connections.md) is available, *or* you have [administrator](permissions.md#admin) permissions and an active Azure Maps API key.
 
 ## Configure the enrichment
 

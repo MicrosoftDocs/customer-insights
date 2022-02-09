@@ -24,7 +24,7 @@ To configure the enrichment, the following prerequisites must be met:
 - You have an active Office 365 cloud license.
 - You have [unified customer profiles](customer-profiles.md) based on [business accounts](work-with-business-accounts.md).
 - Your Customer Insights environment must have a [Microsoft Dataverse organization attached](create-environment.md#step-3-connect-to-microsoft-dataverse).
-- You have [administrator](permissions.md#administrator) permissions.
+- You have [administrator](permissions.md#admin) permissions.
 - You have, or can get, consent from your Office 365 tenant administrator to use Office 365 data to provide **Insights for the Organization** within Dynamics 365 applications.
 
 ## Configure the enrichment
