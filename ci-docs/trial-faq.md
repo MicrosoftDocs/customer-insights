@@ -77,7 +77,7 @@ After you sign up for the trial, you will arrive on the app's main screen. The m
 
 Most features of the Customer Insights capabilities are available in the trial.
 
-The following features are not available: 
+The following features are **not available**: 
 - You can't create new environments that use your own Azure Data Lake storage account.
 - You can't delete the trial environment. 
 
