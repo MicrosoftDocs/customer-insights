@@ -1,10 +1,10 @@
 ---
 title: "Data source enrichment"
-description: "Understand data source enrichment before unification"
+description: "Enrich data source before unification"
 ms.date: 02/10/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: how-to
 author: v-wendysmith
 ms.author: v-wendysmith
 ms.reviewer: mhart
@@ -23,14 +23,14 @@ Data source enrichment options include Enhanced addresses.
 You need to have Contributor or Administrator permissions to create or edit enrichments. For more information, see [Permissions](permissions.md).
 
 1. In audience insights, go to **Data** > **Data sources**.
+
 1. Select the vertical ellipsis next to the data source you want to enrich and select **Enrich**.
 
-:::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Data sources enrichment page.":::
+   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Data sources enrichment page.":::
 
 1. Configure the enrichment. For more information, see [Enhanced addresses](enrichment-enhanced-addresses.md).
 
- > [!NOTE]
- > When naming the enrichment, the output entity name is automatically populated.
+When naming the enrichment, the output entity name is automatically populated.
 
 ## Manage existing data source enrichments
 
