@@ -24,7 +24,7 @@ landingContent:
           - text: Customer Insights overview
             url: overview.md
           - text: Release plans
-            url: /dynamics365-release-plan/
+            url: /dynamics365/release-plans/
           - text: Discover the CDP
             url: https://dynamics.microsoft.com/ai/customer-insights/
       - linkListType: learn
