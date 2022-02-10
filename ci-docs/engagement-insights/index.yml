@@ -27,8 +27,8 @@ landingContent:
             url: overview.md
           - text: Glossary of terms
             url: glossary.md
-          - text: New and updated features
-            url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
+          - text: Release plans
+            url: /dynamics365/release-plans/
 
   - title: Onboarding
     linkLists:

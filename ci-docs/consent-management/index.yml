@@ -25,7 +25,7 @@ landingContent:
           - text: Consent management overview
             url: overview.md
           - text: Release plans
-            url: /dynamics365-release-plan/
+            url: /dynamics365/release-plans/
 
   - title: Get started
     linkLists:
