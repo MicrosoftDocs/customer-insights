@@ -22,6 +22,16 @@ The match page consists of three sections:
 - Match order and rules for cross-entity matching
 - Rules for deduplication of match entities
 
+## Include enriched entities (preview)
+
+If you enriched entities on the data source level, select them before running the match process. The enriched entities can improve your unification results. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
+
+1. Go to **Data** > **Unify** > **Match** and select **Use enriched entities** at the top of the page.
+
+1. From the **Use enriched entities**  panel, select one or more enriched entities.
+
+1. Select **Done**.
+
 ## Specify the match order
 
 Each match unifies two or more entities into a single, consolidated entity. At the same time, it keeps the unique customer records. The match order indicates the order in which the system tries to match the records.
@@ -174,16 +184,6 @@ A deduplication output entity contains the following information:
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
    
-## Include enriched entities (preview)
-
-Enriched entities are entities that were enriched on the data source level before unification. The enriched entities can improve your unification results. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
-
-Once you have at least one enriched entity, select it before running the match process.
-
-1. Go to **Data** > **Unify** > **Match** and select **Use enriched entities** at the top of the page.
-1. From the **Enriched entities panel**, select one or more enriched entities.
-1. Select the enriched attributes you want to include from each entity.
-
 ## Run the match process
 
 With configured match rules, including cross-entity matching and deduplication rules, you can run the match process. 
