@@ -1,7 +1,7 @@
 ---
 title: "Create and manage measures"
 description: "Define measures to analyze and reflect the performance of your business."
-ms.date: 11/01/2021
+ms.date: 02/11/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -138,12 +138,12 @@ This section walks you through creating a new measure from scratch. You can buil
    - If it's set to **Off**, the measure is calculated for every account. Every account gets own of result.
    - If it's set to **On**, select **Edit** to choose the account hierarchy according to the ingested hierarchies. The measure will yield only one result because it's aggregated with sub accounts.
 
+   :::image type="content" source="media/measures-roll-up-sub-accounts.png" alt-text="Control to toggle roll up of sub-accounts on or off.":::
+
 1. If there are multiple paths between the data entity you mapped and the *Customer* entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path. 
    
    1. Select **Relationship path** and choose the entity path that should be used to identify your measure. If there's only a single path to the *Customer* entity, this control won't show.
    1. Select **Done** to apply your selection. 
-
-   :::image type="content" source="media/measures-data-preferences.png" alt-text="Select the entity path for the measure.":::
 
 1. Select **...** on the calculation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.
 
