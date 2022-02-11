@@ -3,7 +3,7 @@ title: "Trial FAQ - Dynamics 365 Customer Insights"
 description: "Solutions to common questions related to Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues."
 author: m-hartmann
 ms.author: mhart
-ms.date: 09/30/2021
+ms.date: 02/10/2022
 ms.topic: get-started
 ms.service: customer-insights
 ms.custom: template-trial-faq
@@ -77,8 +77,9 @@ After you sign up for the trial, you will arrive on the app's main screen. The m
 
 Most features of the Customer Insights capabilities are available in the trial.
 
-The following feature is not available: 
+The following features are **not available**: 
 - You can't create new environments that use your own Azure Data Lake storage account.
+- You can't delete the trial environment. 
 
 ### How long does the trial last?
 
