@@ -47,7 +47,7 @@ landingContent:
           - text: Get started
             url: /learn/modules/get-started-customer-data-platform/
   
-  - title: Administer audience insights
+  - title: Administer Customer Insights
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -73,57 +73,3 @@ landingContent:
           - text: Report an issue
             url: https://go.microsoft.com/fwlink/?linkid=2079641
 
-  - title: Share data between capabilities
-    linkLists:
-      - linkListType: how-to-guide
-        links: 
-          - text: Create a link between capabilities
-            url: engagement-insights/integrate-audience-insights-engagement-insights.md
-          - text: Create segments for use in reports 
-            url: engagement-insights/integrate-audience-insights-segments.md
-          - text: Use profile properties for interactive analysis
-            url: engagement-insights/curate-dimensions.md
-
-  - title: Export audience insights data
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Set up export destinations
-            url: audience-insights/export-destinations.md
-          - text: Customer cards in Dynamics 365 apps 
-            url: audience-insights/customer-card-add-in.md
-          - text: Power BI connector
-            url: audience-insights/export-power-bi.md
-
-  - title: About engagements insights (preview)
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Capability overview
-            url: engagement-insights/overview.md
-          - text: Terms and concepts
-            url: engagement-insights/glossary.md
-          - text: Get started
-            url: engagement-insights/get-started.md
-
-  - title: Reports for engagement insights (preview)
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: View reports
-            url: engagement-insights/view-reports.md
-          - text: Create custom reports
-            url: engagement-insights/custom-reports.md
-          - text: View unified profiles report
-            url: engagement-insights/profile-reports.md
-
-  - title: Events for engagement insights (preview)
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Create refined events
-            url: engagement-insights/refined-events.md
-          - text: Export events
-            url: engagement-insights/export-events.md
-          - text: Delete and export personal data
-            url: engagement-insights/delete-export-personal-data.md
