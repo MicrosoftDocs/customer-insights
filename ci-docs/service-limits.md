@@ -17,14 +17,12 @@ This article describes the built-in limits to the Customer Insights service, whi
 
 ## Audience insights
 
-### Service limits in Dynamics 365 Customer Insights audience insights capability
-
 | Area  | Limits  | Notes |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Segments, measures, and predictions | 300  | The total number of [segments](audience-insights/segments.md), [measures](audience-insights/measures.md), and [predictions](audience-insights/predictions.md) combined can't exceed 300.  |
 | Relationships | 20 levels of depth on relationships in entity paths. | When creating [segments](audience-insights/segments.md) or [measures](audience-insights/measures.md) using the builder interface, entity paths can have up to 20 relationship hops between the start entity and the target entity.  |
 
-
+<!--
 ## Engagement insights
 
 ### Workspace and event quotas
@@ -38,6 +36,6 @@ Engagement insights is a highly scalable application that can support millions o
 - Maximum number of workspaces per organization = 100
 
 When events exceed the threshold, it can lead to loss of data in reports based on those events. You can [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) to request a volume increase before you exceed limits. We'll work with you to determine your need for a volume increase and support your request.
-
+-->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
