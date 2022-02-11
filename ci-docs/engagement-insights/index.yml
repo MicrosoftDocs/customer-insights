@@ -16,14 +16,14 @@ metadata:
 
 landingContent:
 
- - title: Get in touch
-    linkLists:
-      - linkListType: overview
-        links: 
-          - text: Join the Dynamics 365 community
-            url: https://go.microsoft.com/fwlink/?linkid=2073991
-          - text: Share your ideas
-            url: https://go.microsoft.com/fwlink/?linkid=2074172
-          - text: Report an issue
-            url: https://go.microsoft.com/fwlink/?linkid=2079641
+- title: Get in touch
+  linkLists:
+    - linkListType: overview
+      links: 
+        - text: Join the Dynamics 365 community
+          url: https://go.microsoft.com/fwlink/?linkid=2073991
+        - text: Share your ideas
+          url: https://go.microsoft.com/fwlink/?linkid=2074172
+        - text: Report an issue
+          url: https://go.microsoft.com/fwlink/?linkid=2079641
 
