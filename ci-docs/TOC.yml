@@ -277,8 +277,6 @@
 
     - name: Extensibility
       items:
-        - name: Integrate web data from engagement insights
-          href: audience-insights/integrate-engagement-insights.md
         - name: Review the entity schemas in Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Customer Insights data in Dataverse
