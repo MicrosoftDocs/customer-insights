@@ -26,11 +26,13 @@ You need Contributor or Administrator permissions to create or edit enrichments.
 
 1. Select the data source you want to enrich and then select **Select primary key**.
 
-1. Select one attribute as a primary key for the entity. For more information, see [Select primary key](map-entities.md). 
+1. Select one attribute as a primary key for the entity. For more information, see [Select primary key](map-entities.md).
 
 1. Select the vertical ellipsis next to the data source you want to enrich and select **Enrich**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Data sources enrichment page.":::
+
+The **Discover** tab displays the supported data source enrichment options.
 
 1. Configure the enrichment. For more information, see [Enhanced addresses](enrichment-enhanced-addresses.md). The output entity name is automatically populated.
 
