@@ -9,8 +9,9 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-searchScope: 
-  - ci-match
+searchScope:
+   - customer-insights
+   - ci-match
 ---
 
 # Match entities
