@@ -2,7 +2,7 @@
 title: Create a link between audience insights and engagement insights
 description: Create an active link between audience insights and engagement insights to enable bidirectional sharing of data.
 ms.date: 09/08/2021
-ms.service: customer-insights
+
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel

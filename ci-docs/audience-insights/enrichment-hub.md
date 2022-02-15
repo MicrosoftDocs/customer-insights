@@ -3,7 +3,7 @@ title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
 ms.date: 02/07/2022
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: jodahlMSFT

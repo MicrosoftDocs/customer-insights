@@ -3,7 +3,7 @@ title: Customer lifetime value (CLV) prediction
 description: "Predict revenue potential for active customers in the future."
 ms.date: 02/05/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: m-hartmann

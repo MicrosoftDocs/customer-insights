@@ -4,7 +4,7 @@ author: m-hartmann
 description: Become familiar with the first-run experience in Dynamics 365 Customer Insights and explore its capabilities.
 ms.author: mhart
 ms.date: 10/05/2021
-ms.service: customer-insights
+
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal

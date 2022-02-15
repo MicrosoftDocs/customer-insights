@@ -3,7 +3,7 @@ title: Segments based on prediction output
 description: "Create segments based on the output entity of a prediction model."
 ms.date: 03/24/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft

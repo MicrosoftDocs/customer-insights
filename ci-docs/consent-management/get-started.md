@@ -2,7 +2,7 @@
 title: "Quickstart guide to consent management"
 description: "Follow these four steps to quickly set up consent management, import consent data, and configure consent data rules in Dynamics 365 Customer Insights."
 ms.date: 10/30/2021
-ms.service: customer-insights
+
 ms.subservice: consent-management
 ms.topic: how-to
 author: smithy7
