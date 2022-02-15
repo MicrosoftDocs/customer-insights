@@ -3,7 +3,7 @@ title: "Export Customer Insights data to Dynamics 365 Marketing"
 description: "Learn how to configure the connection and export to Dynamics 365 Marketing."
 ms.date: 08/24/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer

@@ -2,7 +2,7 @@
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
 ms.date: 12/06/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart

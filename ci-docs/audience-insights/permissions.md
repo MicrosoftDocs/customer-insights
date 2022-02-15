@@ -3,7 +3,7 @@ title: "Manage user permissions"
 description: "Learn about permissions and user roles."
 ms.date: 03/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen

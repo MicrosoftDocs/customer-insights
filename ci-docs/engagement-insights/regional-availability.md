@@ -5,7 +5,7 @@ author: mkisel11
 ms.reviewer: mhart
 ms.author: mkisel
 ms.date: 09/28/2021
-ms.service: customer-insights
+
 ms.topic: article
 ms.manager: shellyha
 ---

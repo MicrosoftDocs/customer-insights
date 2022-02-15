@@ -3,7 +3,7 @@ title: "Power Apps connector"
 description: "Connect with Power Apps and Power Automate."
 ms.date: 10/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: Nils-2m

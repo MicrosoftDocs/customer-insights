@@ -3,7 +3,7 @@ title: "Export Customer Insights data to Salesforce Marketing Cloud"
 description: "Learn how to configure the connection and export to Salesforce Marketing Cloud."
 ms.date: 07/23/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer

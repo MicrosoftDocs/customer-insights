@@ -2,7 +2,7 @@
 title: "Specify system settings for consent management"
 description: "Set the language and local settings for the consent management capability of Dynamics 365 Customer Insights."
 ms.date: 11/12/2021
-ms.service: customer-insights
+
 ms.subservice: consent-management
 ms.topic: how-to
 author: smithy7

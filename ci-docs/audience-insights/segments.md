@@ -2,7 +2,7 @@
 title: "Segments in audience insights"
 description: "Overview on segments and how to create and manage them."
 ms.date: 11/01/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery

@@ -2,7 +2,7 @@
 title: "Merge entities in data unification"
 description: "Merge entities to create unified customer profiles."
 ms.date: 01/28/2022
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: adkuppa
