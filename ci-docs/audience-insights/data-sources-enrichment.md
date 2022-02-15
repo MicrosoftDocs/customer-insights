@@ -30,7 +30,7 @@ You must have Contributor or Administrator permissions to create or edit enrichm
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Data sources enrichment page.":::
 
-The **Discover** tab displays the supported data source enrichment options.
+   The **Discover** tab displays the supported data source enrichment options.
 
 1. Configure the data source enrichment. For more information, see [Enhanced addresses](enrichment-enhanced-addresses.md). The output entity name is automatically populated.
 
