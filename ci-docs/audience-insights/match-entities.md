@@ -10,8 +10,9 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-   - customer-insights
    - ci-match
+   - customer-insights
+   
 ---
 
 # Match entities
