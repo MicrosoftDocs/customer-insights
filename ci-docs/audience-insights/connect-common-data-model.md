@@ -1,23 +1,23 @@
 ---
 title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 01/25/2022
+ms.date: 01/30/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
+author: matgos
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Connect to a Common Data Model folder using an Azure Data Lake account
+# Connect to data in Azure data lake storage
 
-This article provides information on how to ingest data from a Common Data Model folder using your Azure Data Lake Storage Gen2 account.
+This article provides information on how to ingest data from Azure Data Lake including data from a Common Data Model folder using your Azure Data Lake Storage Gen2 account.
 
 ## Important considerations
 
-- Data in your Azure Data Lake needs to follow the Common Data Model standard. Other formats aren't supported at the moment.
+- Data in your Azure Data Lake needs to follow the Common Data Model standard. For more information please refer to [The Common Data Model manifest](https://docs.microsoft.com/en-us/common-data-model/sdk/manifest).
 
 - Data ingestion supports Azure Data Lake *Gen2* storage accounts exclusively. You can't use Azure Data Lake Gen1 storage accounts to ingest data.
 
@@ -31,36 +31,45 @@ This article provides information on how to ingest data from a Common Data Model
 
 ## Connect to a Common Data Model folder
 
+<!--- Explain blob roles --->
+
+   > [!NOTE]
+   > One of the following roles must be assigned to either the container or the storage account to be able to connect to and create a data source:
+   >  - Storage Blob Data Reader
+   >  - Storage Blob Data Owner
+   >  - Storage Blob Data Contributor
+  
 1. In audience insights, go to **Data** > **Data sources**.
 
 1. Select **Add data source**.
 
-1. Select **Azure data lake storage**, enter a **Name** for the data source, then select **Next**.
+1. Select **Azure data lake storage**.
 
-   - If prompted, select one of the sample datasets that pertain to your industry, then select **Next**. 
+   ![Dialog box to enter connection details for Azure Data Lake.](media/data_sources_ADLS.png)
+   
+1. Enter a **Name** for the data source and an optional **Description**.
 
-1. You can choose between using a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Enter the **Server address**, select **Sign in**, then select **Next**.
-   > [!div class="mx-imgBorder"]
-   > ![Dialog box to enter new connection details for Azure Data Lake.](media/enter-new-storage-details.png)
-   > [!NOTE]
-   > You need one of the following roles either to the container or the storage account referred above to be able to connect to and create a data source:
-   >  - Storage Blob Data Reader
-   >  - Storage Blob Data Owner
-   >  - Storage Blob Data Contributor
+1. Choose your preferred option for **Connect to storage using**. For a resource or a subscription-based option for authentication, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-1. In the **Select a Common Data Model folder** dialog, select the model.json or manifest.json file to import data from, and select **Next**.
+   -  **Azure resource**: Enter the **Resource Id**.
+   -  **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
+   -  **Account key**: Enter the **Account name** and **Account key**.
+
+1. Enter the name of the **Container** that contains the model.json or manifest.json file to import data from, and select **Next**.
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list.
 
-1. You'll see a list of available entities in the selected model.json or manifest.json file. Review and select from the list of available entities, then select **Save**. All of the selected entities will be ingested from the new data source.
-   > [!div class="mx-imgBorder"]
-   > ![Dialog box showing a list of entities from a model.json file.](media/review-entities.png)
+1. Select the folder where the model.json or manifes.cdm.json file can be found and then the json file that contains the list of entities.
 
-8. Indicate which data entities you want to enable data profiling, then select **Save**. Data profiling enables analytics and other capabilities. You can select the whole entity, which selects all attributes from the entity, or select certain attributes of your choice. By default, no entity is enabled for data profiling.
+1. Review and select from the list of available entities. All of the selected entities will be ingested from the new data source.
+
+<!--- Add screenshot --->
+
+1. Indicate which data entities you want to enable data profiling, then select **Save**. Data profiling enables analytics and other capabilities. You can select the whole entity, which selects all attributes from the entity, or select certain attributes of your choice. By default, no entity is enabled for data profiling.
    > [!div class="mx-imgBorder"]
    > ![Dialog box showing a data profiling.](media/dataprofiling-entities.png)
 
-9. After saving your selections, the **Data sources** page opens. You should now see the Common Data Model folder connection as a data source.
+1. After saving your selections, the **Data sources** page opens. You should now see the Common Data Model folder connection as a data source.
 
 > [!NOTE]
 > A model.json file or manifest.json can only associate with one data source in the same environment. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
