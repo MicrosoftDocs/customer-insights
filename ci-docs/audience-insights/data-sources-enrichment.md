@@ -1,6 +1,6 @@
 ---
 title: "Data source enrichment"
-description: "Enrich data sources before unification"
+description: "Enrich data sources before going through the data unification process."
 ms.date: 02/10/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -14,7 +14,7 @@ manager: shellyha
 
 # Enrichment for data sources (preview)
 
-Use data from sources like Microsoft and other partners to enrich your customer data before data unification. Pre-unification of customer data can produce higher quality unified customer profiles.
+Use data from sources like Microsoft and other partners to enrich your customer data before data unification. Pre-unification of customer data can produce higher quality unified customer profiles. For example, using a normalized and standardized format for addresses can increase the quality of the match results.
 
 Supported data source enrichment options include **Enhanced addresses** provided by Microsoft.
 
@@ -30,9 +30,15 @@ You must have Contributor or Administrator permissions to create or edit enrichm
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Data sources enrichment page.":::
 
-   The **Discover** tab displays the supported data source enrichment options.
+   The **Discover** tab displays the [supported data source enrichment options](#supported-data-source-enrichments).
 
-1. Configure the data source enrichment. For more information, see [Enhanced addresses](enrichment-enhanced-addresses.md). The output entity name is automatically populated.
+1. Select **Enrich my data** to configure a data source enrichment. The output entity name is automatically populated.
+
+## Supported data source enrichments
+
+The following enrichments are currently available for data sources. Review the detailed steps for the enrichment to learn how to configure it.
+
+- [Enhanced addresses](enrichment-enhanced-addresses.md)
 
 ## Manage existing data source enrichments
 
