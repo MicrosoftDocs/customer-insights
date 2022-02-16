@@ -72,6 +72,10 @@ Third-party enrichments are configured using [connections](connections.md), whic
 
 The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For example, enrich data only for a specific segment. You can configure several enrichments of the same type and reuse the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on the **Enrichment** page.
 
+## Enrich data sources before unification
+
+You can enrich your customer data before data unification to help increase the quality of a data match. For more information, see [data source enrichment](data-sources-enrichment.md).
+
 ## See the progress of the enrichment process
 
 You can find details about the processing of an enrichment, including it status and potential issues while it's refreshing or after a refresh completed. Understand which processes are involved to refresh an enrichment and how long it took to run the processes. The enrichment status is supported for Experian, Leadspace, HERE Technologies, SFTP Import, and Azure Maps.
