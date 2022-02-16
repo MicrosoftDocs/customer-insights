@@ -2,7 +2,7 @@
 title: "Service limits in Dynamics 365 Customer Insights"
 description: "Understand limits and restrictions."
 ms.date: 09/03/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights 
 ms.topic: conceptual
 author: JimsonChalissery

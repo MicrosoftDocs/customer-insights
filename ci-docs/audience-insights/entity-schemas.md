@@ -3,7 +3,7 @@ title: "Customer Insights entity schemas in Common Data Model"
 description: "Work with entities in Common Data Model."
 ms.date: 08/13/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo

@@ -3,7 +3,7 @@ title: Product recommendation prediction sample guide
 description: Use this sample guide to try out the out of box product recommendation prediction model.
 ms.date: 02/10/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: diegogranados117

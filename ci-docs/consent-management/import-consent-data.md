@@ -2,7 +2,7 @@
 title: "Import data to consent management capability"
 description: "Learn how to import data into the consent management capability of Customer Insights and about the required fields for the two types of data."
 ms.date: 12/03/2021
-ms.service: customer-insights
+
 ms.subservice: consent-management
 ms.topic: how-to
 author: smithy7

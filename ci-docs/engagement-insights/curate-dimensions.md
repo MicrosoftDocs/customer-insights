@@ -2,7 +2,7 @@
 title: Use demographic dimensions for splitting behavioral data (curated dimensions)
 description: Use unified profile curated dimensions to enable audience insights customer profile properties.
 ms.date: 07/27/2021
-ms.service: customer-insights
+
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel

@@ -3,7 +3,7 @@ title: "Entities and datasets"
 description: "View data on the Entities page."
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo

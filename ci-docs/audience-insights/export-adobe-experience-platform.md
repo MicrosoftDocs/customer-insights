@@ -3,7 +3,7 @@ title: "Export Customer Insights data to Adobe Experience Platform"
 description: "Learn how to use audience insights segments in Adobe Experience Platform."
 ms.date: 03/29/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft

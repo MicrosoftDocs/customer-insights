@@ -3,7 +3,7 @@ title: "Create environments in Customer Insights"
 description: "Steps to create environments with a licensed subscription for Dynamics 365 Customer Insights."
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: MichelleDevaney

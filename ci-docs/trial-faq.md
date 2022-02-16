@@ -5,7 +5,7 @@ author: m-hartmann
 ms.author: mhart
 ms.date: 02/10/2022
 ms.topic: get-started
-ms.service: customer-insights
+
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
