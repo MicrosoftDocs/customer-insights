@@ -14,9 +14,7 @@ manager: shellyha
 
 # Enrichment for data sources (preview)
 
-Use data from sources like Microsoft and other partners to enrich your customer data before data unification. Pre-unification of customer data can produce higher quality unified customer profiles. For example, using a normalized and standardized format for addresses can increase the quality of the match results.
-
-Supported data source enrichment options include **Enhanced addresses** provided by Microsoft.
+Use data from sources like Microsoft and other partners to enrich your customer data before data unification. Pre-unification of customer data can produce higher quality unified customer profiles. For example, using a normalized and standardized format for addresses can increase the quality of the match results. For a list of supported enrichments, see [supported data source enrichment options](#supported-data-source-enrichments).
 
 ## Enrich a data source
 
