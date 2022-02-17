@@ -17,11 +17,12 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 ## Important considerations
 
-- Data in your Azure Data Lake needs to follow the Common Data Model standard. For more information please refer to [The Common Data Model manifest](https://docs.microsoft.com/en-us/common-data-model/sdk/manifest).
+- Data in your Azure Data Lake needs to follow the Common Data Model standard. For more information please refer to [The Common Data Model manifest](https://docs.microsoft.com/common-data-model/sdk/manifest).
 
 - Data ingestion supports Azure Data Lake *Gen2* storage accounts exclusively. You can't use Azure Data Lake Gen1 storage accounts to ingest data.
 
 - The Azure Data Lake storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
+<!--- Is this still true? --->
 
 - To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
@@ -29,7 +30,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 - Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-## Connect to a Common Data Model folder
+## Connect to Azure data lake storage
 
 <!--- Explain blob roles --->
 
@@ -45,7 +46,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 1. Select **Azure data lake storage**.
 
-   ![Dialog box to enter connection details for Azure Data Lake.](media/data_sources_ADLS.png)
+   :::image type="content" source="/media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake.":::
    
 1. Enter a **Name** for the data source and an optional **Description**.
 
@@ -57,41 +58,40 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 1. Enter the name of the **Container** that contains the model.json or manifest.json file to import data from, and select **Next**.
    > [!NOTE]
-   > Any model.json or manifest.json file associated with another data source in the environment won't show in the list.
+   > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
 
 1. Select the folder where the model.json or manifes.cdm.json file can be found and then the json file that contains the list of entities.
 
-1. Review and select from the list of available entities. All of the selected entities will be ingested from the new data source.
+1. Optionally, select **Edit schema** to edit the entities in a JSON editing interface.
 
-<!--- Add screenshot --->
+1. Select **View entities** and review and select from the list of available entities. 
 
-1. Indicate which data entities you want to enable data profiling, then select **Save**. Data profiling enables analytics and other capabilities. You can select the whole entity, which selects all attributes from the entity, or select certain attributes of your choice. By default, no entity is enabled for data profiling.
-   > [!div class="mx-imgBorder"]
-   > ![Dialog box showing a data profiling.](media/dataprofiling-entities.png)
+   :::image type="content" source="/media/review-entities.png" alt-text="Dialog box to select entities":::
 
-1. After saving your selections, the **Data sources** page opens. You should now see the Common Data Model folder connection as a data source.
+1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. Select **Required** for each entity and choose the **Primary key**. Select **X** to save and close.
 
-> [!NOTE]
-> A model.json file or manifest.json can only associate with one data source in the same environment. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
+   > [!NOTE]
+   > Optionally, you can view or edit the entity attributes.
 
-## Edit a Common Data Model folder data source
+1. To enable analytics and other capabilities, edit the entity and select **Data profiling** for the entity or for specific attributes, then select **Save**. By default, no entity is enabled for data profiling.
 
-You can update the access key for the storage account containing the Common Data Model folder. You may also change the model.json or manifest.json file. To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-a-common-data-model-folder).
+   :::image type="content" source="/media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
+
+1. After saving your selections, the **Data sources** page opens showing the new data source.
+
+## Edit an Azure data lake storage data source
+
+You can update the *Connect to storage account using* option from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-a-common-data-model-folder).
 
 1. In audience insights, go to **Data** > **Data sources**.
 
-2. Next to the data source you'd like to update, select the ellipsis.
+1. Next to the data source you'd like to update, select the ellipsis.
 
-3. Select the **Edit** option from the list.
+1. Select the **Edit** option from the list.
 
-4. Optionally, update the **Access key** and select **Next**.
-
-   ![Dialog to edit and update an access key for an existing data source.](media/edit-access-key.png)
-
-5. Optionally, you can update from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
-   > [!div class="mx-imgBorder"]
-
-   > ![Dialog box to enter connection details for Azure Data Lake to an existing storage account.](media/enter-existing-storage-details.png)
+   :::image type="content" source="/media/data_sources_edit_ADLS.png" alt-text="Dialog box to edit Azure data lake data source.":::
+   
+1. Optionally, you can update from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
 
    > [!NOTE]
    > You need one of the following roles either to the container or the storage account referred above to be able to connect to and create a data source:
@@ -99,15 +99,15 @@ You can update the access key for the storage account containing the Common Data
    >  - Storage Blob Data Owner
    >  - Storage Blob Data Contributo
 
+1. Optionally, choose a different model.json or manifest.json file with a different set of entities from the container.
 
-6. Optionally, choose a different model.json or manifest.json file with a different set of entities from the container.
-
-7. Optionally, you can select additional entities to ingest. You can also remove any already selected entities if there are no dependencies.
+1. Optionally, you can select additional entities to ingest. You can also remove any already selected entities if there are no dependencies.
 
    > [!IMPORTANT]
    > If there are dependencies on the existing model.json or manifest.json file and the set of entities, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
 
-8. Optionally, you can select additional attributes or entities to enable data profiling on or disable already selected ones.   
+1. Optionally, you can select additional attributes or entities to enable data profiling on or disable already selected ones.
 
+1. Click **Save** to apply your changes and return to the Data Sources page.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
