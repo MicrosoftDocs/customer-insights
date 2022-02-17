@@ -79,7 +79,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
-1. Select **Save**. The **Data sources** page opens showing the new data source with the **Status** Refreshing.
+1. Select **Save**. The **Data sources** page opens showing the new data source.
 
 ## Edit an Azure data lake storage data source
 
