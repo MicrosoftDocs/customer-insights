@@ -50,7 +50,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
    
 1. Enter a **Name** for the data source and an optional **Description**.
 
-1. Choose your preferred option for **Connect to storage using**. For a resource or a subscription-based option for authentication, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
+1. Choose your preferred option for **Connect your storage using**. For a resource or a subscription-based option for authentication, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
    -  **Azure resource**: Enter the **Resource Id**.
    -  **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
@@ -60,24 +60,26 @@ This article provides information on how to ingest data from Azure Data Lake inc
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
 
-1. Select the folder where the model.json or manifes.cdm.json file can be found and then the json file that contains the list of entities.
+1. Navigate to the folder containing the model.json or manifes.cdm.json file.
+ 
+1. If you want to edit the entities in a JSON editing interface, select to the left of the json file name and then select **Edit schema**. Make changes and select **Save**.
 
-1. Optionally, select **Edit schema** to edit the entities in a JSON editing interface.
-
-1. Select **View entities** and review and select from the list of available entities. 
+1. Select the json file and select **Next**. A list of available entities displays.
 
    :::image type="content" source="media/review-entities.png" alt-text="Dialog box to select entities":::
 
-1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. Select **Required** for each entity and choose the **Primary key**. Select **X** to save and close.
+1. Select the entities you want to include.
 
-   > [!NOTE]
-   > Optionally, you can view or edit the entity attributes.
+1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
+   1. Select **Required**. The **Edit entity** panel displays. 
+   1. Choose the **Primary key**. 
+   1. Select **X** to save and close the panel.
 
-1. To enable analytics and other capabilities, edit the entity and select **Data profiling** for the entity or for specific attributes, then select **Save**. By default, no entity is enabled for data profiling.
+1. To enable analytics and other capabilities, select the number under **Attributes**. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
-1. After saving your selections, the **Data sources** page opens showing the new data source.
+1. Select **Save**. The **Data sources** page opens showing the new data source with the **Status** Refreshing.
 
 ## Edit an Azure data lake storage data source
 
