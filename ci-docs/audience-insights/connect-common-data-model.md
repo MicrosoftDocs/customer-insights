@@ -46,7 +46,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 1. Select **Azure data lake storage**.
 
-   :::image type="content" source="/media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake.":::
+   :::image type="content" source="media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake.":::
    
 1. Enter a **Name** for the data source and an optional **Description**.
 
@@ -66,7 +66,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 1. Select **View entities** and review and select from the list of available entities. 
 
-   :::image type="content" source="/media/review-entities.png" alt-text="Dialog box to select entities":::
+   :::image type="content" source="media/review-entities.png" alt-text="Dialog box to select entities":::
 
 1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. Select **Required** for each entity and choose the **Primary key**. Select **X** to save and close.
 
@@ -75,7 +75,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 1. To enable analytics and other capabilities, edit the entity and select **Data profiling** for the entity or for specific attributes, then select **Save**. By default, no entity is enabled for data profiling.
 
-   :::image type="content" source="/media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
+   :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
 1. After saving your selections, the **Data sources** page opens showing the new data source.
 
@@ -89,7 +89,7 @@ You can update the *Connect to storage account using* option from an account key
 
 1. Select the **Edit** option from the list.
 
-   :::image type="content" source="/media/data_sources_edit_ADLS.png" alt-text="Dialog box to edit Azure data lake data source.":::
+   :::image type="content" source="media/data_sources_edit_ADLS.png" alt-text="Dialog box to edit Azure data lake data source.":::
    
 1. Optionally, you can update from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
 
