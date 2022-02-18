@@ -25,19 +25,16 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 - To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). 
 
-- One of the following roles should be assigned to the storage account or container:
-
-   |Credential|Requirements|
-   |----------|------------|
-   |Currently logged in user|**Role**: Storage Blob Data Reader, Storage Blob Contributor, or Storage Blob Owner.<br>**Level**: Permissions can be granted on the storage account or the container.</br>|
-   |Customer Insights Service Principal -<br>Using Azure data lake storage as a data source</br>|Option 1<ul><li>**Role**: Storage Blob Data Reader, Storage Blob Data     Contributor, or Storage Blob Data Owner.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul><br></br>Option 2 *(without sharing Service Principal access to the storage account)*<ul><li>**Role 1**: Storage Blob Data Reader, Storage Blob Data Contributor, or Storage Blob Data Owner.</li><li>**Level**: Permissions should be granted on the container.</li><li>**Role 2**: Storage Blob Data Delegator.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul>|
-   |Customer Insights Service Principal - <br>Using Azure data lake storage as an output or destination</br>|Option 1<ul><li>**Role**: Storage Blob Data Contributor or Storage Blob Owner.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul><br></br>Option 2 *(without sharing Service Principal access to the storage account)*<ul><li>**Role**: Storage Blob Data Contributor or Storage Blob Owner.</li><li>**Level**: Permissions should be granted on the container.</li><li>**Role 2**: Storage Blob Delegator.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul>|
-
 - The Azure Data Lake you want to connect and ingest data from have to be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in audience insights.
 
 - Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 ## Connect to Azure data lake storage
+
+Before creating the data source, one of the following roles must be assigned to the storage account or container. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md#Grant-permissions-to-the-service-principal-to-access-the-storage-account).
+- Storage Blob Data Reader
+- Storage Blob Data Owner
+- Storage Blob Data Contributor
   
 1. In audience insights, go to **Data** > **Data sources**.
 
