@@ -1,11 +1,11 @@
 ---
 title: "Connect to data in Databricks delta lake"
 description: "Work with data in Databricks delta lake"
-ms.date: 05/29/2020
+ms.date: 02/14/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: matgos
+author: v-wendysmith
 ms.author: matgos
 ms.reviewer: mhart
 manager: shellyha
@@ -33,7 +33,9 @@ This article provides information on how to ingest data from Databricks delta la
    -  **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
    -  **Account key**: Enter the **Account name** and **Account key**.
 
-1. Enter the name of the **Container** that contains the delta lake folder to import data from, and select **Next**.
+1. Enter the name of the **Container** that contains the delta lake folder to import data from.
+ 
+1. Choose the **Connection to Azure Synapse** and **Spark pool**, and select **Next**.
 
 1. Navigate to the delta lake folder that contains the list of entities and select it. A list of available entities displays.  
 
@@ -58,6 +60,8 @@ This article provides information on how to ingest data from Databricks delta la
 
 1. Select the **Edit** option from the list.
 
+   :::image type="content" source="media/data_sources_edit_deltalake.png" alt-text="Dialog box to edit delta lake storage":::
+   
 1. Optionally, change the description. You can't change the connection information.
 
 1. Select **Next**.
@@ -67,5 +71,3 @@ This article provides information on how to ingest data from Databricks delta la
 1. Optionally, you can select additional attributes or entities to enable data profiling on or disable already selected ones.
  
 1. Click **Save** to apply your changes and return to the Data Sources page.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
