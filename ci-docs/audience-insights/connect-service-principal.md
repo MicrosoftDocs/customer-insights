@@ -64,7 +64,13 @@ Before creating a new service principal for Customer Insights, check whether it 
 
 ## Grant permissions to the service principal to access the storage account
 
-Go to the Azure portal to grant permissions to the service principal for the storage account you want to use in audience insights.
+Go to the Azure portal to grant permissions to the service principal for the storage account you want to use in audience insights. One of the following roles must be assigned to the storage account or container:
+
+|Credential|Requirements|
+|----------|------------|
+|Currently logged in user|**Role**: Storage Blob Data Reader, Storage Blob Contributor, or Storage Blob Owner.<br>**Level**: Permissions can be granted on the storage account or the container.</br>|
+|Customer Insights Service Principal -<br>Using Azure data lake storage as a data source</br>|Option 1<ul><li>**Role**: Storage Blob Data Reader, Storage Blob Data     Contributor, or Storage Blob Data Owner.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul><br></br>Option 2 *(without sharing Service Principal access to the storage account)*<ul><li>**Role 1**: Storage Blob Data Reader, Storage Blob Data Contributor, or Storage Blob Data Owner.</li><li>**Level**: Permissions should be granted on the container.</li><li>**Role 2**: Storage Blob Data Delegator.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul>|
+|Customer Insights Service Principal - <br>Using Azure data lake storage as an output or destination</br>|Option 1<ul><li>**Role**: Storage Blob Data Contributor or Storage Blob Owner.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul><br></br>Option 2 *(without sharing Service Principal access to the storage account)*<ul><li>**Role**: Storage Blob Data Contributor or Storage Blob Owner.</li><li>**Level**: Permissions should be granted on the container.</li><li>**Role 2**: Storage Blob Delegator.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul>|
 
 1. Go to the [Azure admin portal](https://portal.azure.com) and sign in to your organization.
 
@@ -115,5 +121,3 @@ You can attach a Data Lake Storage account in audience insights to [store output
 
 1. Continue with the remaining steps in audience insights to attach the storage account.
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
