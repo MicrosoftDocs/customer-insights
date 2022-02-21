@@ -35,7 +35,7 @@ We currently support enriching customer profiles with LiveRamp data in the Unite
 
    :::image type="content" source="media/liveramp-tile.png" alt-text="Identity tile in the enrichment overview page. ":::
 
-1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you're an administrator, you can create a connection by selecting **Add connection**. Choose LiveRamp from the dropdown list. 
+1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you're an administrator, you can create a connection by selecting **Add connection**. Choose **LiveRamp** from the dropdown list. 
 
 1. Select **Next** and choose the **Customer data set** you want to enrich with identity data from LiveRamp. You can select the *Customer* entity to enrich all your customer profiles or select a *segment* entity to enrich only customer profiles contained in that segment. 
 
@@ -64,7 +64,7 @@ You need to be an administrator to [configure connections](connections.md). Sele
 
 1. Provide a valid LiveRamp client ID and a secret. 
 
-1. Review and provide your consent for Data privacy and compliance by selecting the I agree checkbox. 
+1. Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox. 
 
 1. Select **Verify** to validate the configuration. 
 
