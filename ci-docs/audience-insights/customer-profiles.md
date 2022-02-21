@@ -3,7 +3,7 @@ title: "View customer profiles"
 description: "Get a combined view of your unified customer data."
 ms.date: 09/30/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: Nils-2m

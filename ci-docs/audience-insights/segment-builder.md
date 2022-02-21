@@ -2,7 +2,7 @@
 title: "Create segments with the segment builder"
 description: "Create segments of customers to group them based on various attributes."
 ms.date: 10/18/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery

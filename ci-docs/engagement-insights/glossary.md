@@ -5,7 +5,7 @@ author: mochimochi016
 ms.reviewer: mhart
 ms.author: jefhar
 ms.date: 11/12/2020
-ms.service: customer-insights
+
 ms.subservice: engagement-insights 
 ms.topic: conceptual
 ms.manager: shellyha

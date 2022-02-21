@@ -2,7 +2,7 @@
 title: "Connect to tables in Microsoft Dataverse"
 description: "Import data from a Microsoft Dataverse managed data lake."
 ms.date: 12/06/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa

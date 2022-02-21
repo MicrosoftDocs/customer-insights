@@ -2,7 +2,7 @@
 title: "Azure Machine Learning experiments"
 description: "Use Azure Machine Learning-based models in Dynamics 365 Customer Insights."
 ms.date: 12/02/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill

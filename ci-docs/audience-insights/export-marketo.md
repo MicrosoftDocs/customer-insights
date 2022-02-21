@@ -3,7 +3,7 @@ title: "Export Customer Insights data to Marketo"
 description: "Learn how to configure the connection and export to Marketo."
 ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer

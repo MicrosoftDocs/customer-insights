@@ -3,7 +3,7 @@ title: "Export Customer Insights data to Azure Data Lake Storage Gen2"
 description: "Learn how to configure the connection to Azure Data Lake Storage Gen2."
 ms.date: 10/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft

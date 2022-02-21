@@ -2,7 +2,7 @@
 title: "Activate consent rules for segments"
 description: "Follow these steps to link consent data and activate consent checks in audience insights. An admin can also disable consent checks."
 ms.date: 11/12/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: smithy7

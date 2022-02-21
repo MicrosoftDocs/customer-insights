@@ -2,7 +2,7 @@
 title: "Sentiment analysis for customer feedback"
 description: "Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights." 
 ms.date: 12/23/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
