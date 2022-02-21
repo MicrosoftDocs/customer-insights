@@ -15,7 +15,7 @@ manager: shellyha
 
 Segments let you group your customers based on demographic, transactional, or behavioral attributes. You can use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
 
-Customer profiles that match the filters of a segment definition are referred as *members* of a segment. Some [service limits](service-limits.md) apply.
+Customer profiles that match the filters of a segment definition are referred as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
 ## Create a new segment
 
@@ -101,4 +101,4 @@ The lower part contains a list of the segment members.
 >The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, you need to [export the segment](export-destinations.md).
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)] 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

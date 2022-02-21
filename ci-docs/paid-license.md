@@ -37,8 +37,5 @@ The first-run experience helps you choose your initial focus with Customer Insig
 
 After your first sign-in, you'll see an environment with sample data. You can use that data to explore features and familiarize with the app. To use your own data, you have to create an environment in the capability you want to work in.
 
-- [Create an environment in audience insights.](audience-insights/get-started-paid.md)
-- [Create an environment in engagement insights.](engagement-insights/create-new-environment.md) 
-
-
-
+- [Create an environment in audience insights.](/dynamics365/customer-insights/audience-insights/create-environment)
+- [Create an environment in engagement insights.](engagement-insights/create-new-environment.md)
