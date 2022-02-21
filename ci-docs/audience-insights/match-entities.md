@@ -180,9 +180,9 @@ If you enriched entities on the data source level, select them before running th
 
 1. Go to **Data** > **Unify** > **Match** and select **Use enriched entities** at the top of the page.
 
-1. From the **Use enriched entities**  panel, select one or more enriched entities.
+1. From the **Use enriched entities** pane, choose one or more enriched entities.
 
-1. Select **Done**. Wherever the source entity is used (such as match order or rules), it is automatically switched to the enriched entity.
+1. Select **Done**. Wherever the source entity is used (such as match order or rules), it is automatically changed to the enriched entity.
   
 ## Run the match process
 

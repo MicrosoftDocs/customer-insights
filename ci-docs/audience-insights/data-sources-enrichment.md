@@ -1,26 +1,24 @@
 ---
 title: "Data source enrichment"
 description: "Enrich data sources before going through the data unification process."
-ms.date: 02/10/2022
-ms.service: customer-insights
+ms.date: 02/21/2022
 ms.subservice: audience-insights
 ms.topic: how-to
-author: v-wendysmith
-ms.author: v-wendysmith
-ms.reviewer: mhart
+author: NimrodMagen
+ms.author: nimagen
+ms.reviewer: v-wendysmith
 manager: shellyha
-
 ---
 
 # Enrichment for data sources (preview)
 
-Use data from sources like Microsoft and other partners to enrich your customer data before data unification. Data source enrichments can produce higher data completeness and quality which can help achive better results once you unify your data. For example, using a normalized and standardized format for addresses can increase the quality of the match results. For a list of supported enrichments, see [supported data source enrichment options](#supported-data-source-enrichments).
+Use data from sources like Microsoft and other partners to enrich your customer data before data unification. Data source enrichments help produce higher data completeness and quality that can help achieve better results once you unify your data. For example, using a normalized and standardized format for addresses increases the quality of the match results. For a list of supported enrichments, see [supported data source enrichment options](#supported-data-source-enrichments).
 
 ## Enrich a data source
 
 You must have Contributor or Administrator permissions to create or edit enrichments. For more information, see [Permissions](permissions.md).  
 
-1. In audience insights, go to **Data** > **Unify**. Select the entity you want to enrich and select one attribute as a primary key for the entity. For more information, see [Select primary key](map-entities.md).
+1. Go to **Data** > **Unify**. Select the entity you want to enrich and select one attribute as a primary key for the entity. For more information, see [Select primary key](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 
 1. Go to **Data** > **Data sources**.
  
