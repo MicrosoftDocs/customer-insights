@@ -59,8 +59,6 @@ The following procedure outlines the steps to build a new measure using a templa
    
 1. Once the data mapping is successful, you can see the status as **Complete** and the name of the mapped activities and attributes.
 
-   :::image type="content" source="media/measure-template-configured.png" alt-text="Screenshot of a completed measure template configuration.":::
-
 1. You can now select **Run** to calculate the results of the measure. To refine it later, select **Save draft**.
 
 # [Business accounts (B-to-B)](#tab/b2b)
