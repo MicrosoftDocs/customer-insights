@@ -11,7 +11,7 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-## Use a template to build a measure
+# Use a template to build a measure
 
 You can use predefined templates of commonly used measures to create them. Detailed descriptions of the templates and a guided experience help you with efficient measure creation. Templates build on mapped data from the *Unified Activity* entity. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
 
@@ -32,9 +32,9 @@ Available measure templates:
 - Loyalty membership duration
 - Time since last purchase
 
-The following procedure outlines the steps to build a new measure using a template.
+## Build a new measure using a template
 
-1. In audience insights, go to **Measures**.
+1. Go to **Measures**.
 
 1. Select **New** and select **Choose a template**.
 
