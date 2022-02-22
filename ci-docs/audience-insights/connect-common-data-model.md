@@ -71,7 +71,7 @@ Before creating the data source, one of the following roles must be assigned to 
    1. Choose the **Primary key**. 
    1. Select **X** to save and close the panel.
 
-1. To enable analytics and other capabilities, select the number under **Attributes**. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
+1. To enable analytics and other capabilities, select **Attributes**. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
