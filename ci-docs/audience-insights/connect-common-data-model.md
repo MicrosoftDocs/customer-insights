@@ -1,13 +1,13 @@
 ---
 title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 01/30/2022
+ms.date: 02/22/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
 author: matgos
 ms.author: adkuppa
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 ---
 
@@ -31,7 +31,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 ## Connect to Azure data lake storage
 
-Before creating the data source, one of the following roles must be assigned to the storage account or container. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
+Before creating the data source, one of the following roles must be assigned to the storage account or container. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
 - Storage Blob Data Reader
 - Storage Blob Data Owner
 - Storage Blob Data Contributor
