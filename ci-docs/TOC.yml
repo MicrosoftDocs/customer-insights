@@ -62,7 +62,7 @@
       items:
         - name: Data sources overview
           href: audience-insights/data-sources.md
-        - name: Add Azure data lake (Common Data Model)
+        - name: Add Azure data lake (including support for Common Data Model)
           href: audience-insights/connect-common-data-model.md
         - name: Add data sources via Power Query connectors
           href: audience-insights/connect-power-query.md
