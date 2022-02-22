@@ -95,7 +95,7 @@ You can update the *Connect to storage account using* option from an account key
    > You need one of the following roles either to the container or the storage account referred above to be able to connect to and create a data source:
    >  - Storage Blob Data Reader
    >  - Storage Blob Data Owner
-   >  - Storage Blob Data Contributo
+   >  - Storage Blob Data Contributor
 
 1. Optionally, choose a different model.json or manifest.json file with a different set of entities from the container.
 
