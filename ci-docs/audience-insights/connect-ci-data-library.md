@@ -26,10 +26,9 @@ The Customer Insights data library contains a collection of sample data sets tha
 1. Choose your sample data set and optionally provide a description.
 
    > [!NOTE]
-   > <p>The Name field is fixed and cannot be changed.
-   > The Description field is populated with a default description of the data set which can be overwritten with a new description if desired.</p> 
+   > The Name field is fixed and cannot be changed.
+   > The Description field is automatically populated with a default description of the data set which can be overwritten with a new description.
 
-   > [!div class="mx-imgBorder"]
-   > ![Showing the Customer Insights data library options.](media/data-sources-ci-data-library-full.png)
+   :::image type="content" source="media/data-sources-ci-data-library.png" alt-text="Dialog box to select Customer Insights data library options.":::
 
 1. Click **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status. 
