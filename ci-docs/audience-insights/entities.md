@@ -68,7 +68,7 @@ For example, a 'birthday' column has the datatype set as 'date'. A customer reco
 
 Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. Naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'. Select a corrupted entity to identify the all the corrupted fields and the reason at individual record level.
 > [!div class="mx-imgBorder"]
-> ![Corruption reason.](media/corruption-reason.PNG "Corruption Reason")
+> ![Corruption reason.](media/corruption-reason.png "Corruption Reason")
 
 Customer Insights still processes corrupted records. However, they might cause issues when working with the unified data.
 
