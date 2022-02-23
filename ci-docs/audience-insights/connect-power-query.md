@@ -46,7 +46,7 @@ Adding data sources based on Power Query connectors generally follows the steps 
    - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform** and select **Use first row as headers**.
    - Ensure the data type is set appropriately. For example, for date fields, select a date type.
 
-1. To add additional entities to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**.
+1. To add additional entities to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 6-10 until you have added all entities for this data source.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
