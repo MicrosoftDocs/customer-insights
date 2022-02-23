@@ -75,7 +75,7 @@ Before creating the data source, one of the following roles must be assigned to 
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
-1. Select **Save**. The **Data sources** page opens showing the new data source.
+1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
 ## Edit an Azure data lake storage data source
 
