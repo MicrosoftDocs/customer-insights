@@ -66,7 +66,9 @@ Fields from an ingested data source can contain corrupted data. Records with cor
 
 For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system will flag this record as corrupted. Someone can now change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record will be removed from the corrupted entity. 
 
-Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. Naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'.
+Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. Naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'. Select a corrupted entity to identify the all the corrupted fields and the reason at individual record level.
+> [!div class="mx-imgBorder"]
+> ![Corruption reason.](media/corruption-reason.png "Corruption Reason")
 
 Customer Insights still processes corrupted records. However, they might cause issues when working with the unified data.
 
