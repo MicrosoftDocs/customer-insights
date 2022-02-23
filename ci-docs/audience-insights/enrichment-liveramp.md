@@ -1,7 +1,7 @@
 ---
 title: "LiveRamp identity data enrichment"
 description: "Enrich customer profiles with LiveRamp data."
-ms.date: 02/18/2022
+ms.date: 02/23/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -80,6 +80,7 @@ You can access a detailed view of each enriched profile by selecting **View en
 
 ## Next steps
 
+Build on top of your enriched customer data. Use the AbiliTec IDs to consolidate customer profiles into a person-based view. 
 [!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## Data privacy and compliance 
