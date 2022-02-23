@@ -71,12 +71,14 @@ If you create multiple environments of Customer Insights and choose to save the 
    
 The **Microsoft Dataverse** step lets you connect Customer Insights with your Dataverse environment.
 
-To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsoft Dataverse environment URL that your organization administers. Select **Enable data sharing** to share Customer Insights output data with a Dataverse-managed data lake.
+Provide your own Microsoft Dataverse environment to share data (profiles and insights) with Dataverse based business applications like Marketing, model driven application in Power Apps etc. Leave this field empty if you don't have one and we will provision one for you and share data with Dataverse based business applications.
+
+Connecting to your Dataverse environment also enables you to [ingest from on-premises data sources using Power Platfrom dataflows and gateways](data-sources.md#add-data-from-on-premises-data-sources). You can also use [out-of-box prediction models](predictions-overview.md?tabs=b2c#out-of-box-models) by connecting to a Dataverse environment.
 
 > [!IMPORTANT]
 > Customer Insights and Dataverse have to be in the same region to enable data sharing.
 
-:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto enabled for net new instances.":::
 
 > [!NOTE]
 > Customer Insights does not support the following data sharing scenarios:
