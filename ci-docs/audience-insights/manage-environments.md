@@ -44,7 +44,7 @@ To use [out-of-box prediction models](predictions-overview.md#out-of-box-models)
 > [!IMPORTANT]
 > Customer Insights and Dataverse have to be in the same region to enable data sharing.
 
-:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
+:::image type="content" source="media/dataverse-data-provisioning.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
 > [!NOTE]
 > Customer Insights does not support the following data sharing scenarios:
