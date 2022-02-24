@@ -1,7 +1,7 @@
 ---
 title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
-ms.date: 12/06/2021
+ms.date: 02/24/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -16,7 +16,7 @@ manager: shellyha
 
 
 
-The audience insights capability in Dynamics 365 Customer Insights connects to data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md) and take action on it.
+Dynamics 365 Customer Insights provides connections to data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md) and take action on it.
 
 ## Add a data source
 
@@ -33,7 +33,7 @@ Select one of the following data source options to learn how to add it as a data
 
 ## Add data from on-premises data sources
 
-Ingesting data from on-premises data sources in audience insights is supported based on Microsoft Power Platform dataflows. You can enable Dataflows in Customer Insights by [providing the Microsoft Dataverse environment URL](create-environment.md) when setting up the environment.
+Ingesting data from on-premises data sources is supported based on Microsoft Power Platform dataflows. You can enable Dataflows in Customer Insights by [providing the Microsoft Dataverse environment URL](create-environment.md) when setting up the environment.
 
 Data sources that are created after associating a Dataverse environment with Customer Insights use [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) by default. Dataflows support on-premises connectivity using the data gateway. You can remove and recreate data sources that existed before a Dataverse environment was associated [using on-premises data gateways](/data-integration/gateway/service-gateway-app).
 
@@ -41,7 +41,7 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 
 ## Review ingested data
 
-In audience insights, go to **Data** > **Data sources** to view the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by every column.
+Go to **Data** > **Data sources** to view the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by every column.
 
 :::image type="content" source="media/configure-data-datasource-added.png" alt-text="Data source added.":::
 
@@ -53,7 +53,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 Data sources can be refreshed on an automatic schedule or refreshed manually on demand. 
 
-In audience insights, go to **Admin** > **System** > [**Schedule**](system.md#schedule-tab) to configure scheduled refreshes of all your ingested data sources.
+Go to **Admin** > **System** > [**Schedule**](system.md#schedule-tab) to configure scheduled refreshes of all your ingested data sources.
 
 To refresh a data source on demand, follow these steps:
 
