@@ -14,8 +14,6 @@ manager: shellyha
 
 # Data sources overview
 
-
-
 Dynamics 365 Customer Insights provides connections to data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md) and take action on it.
 
 ## Add a data source

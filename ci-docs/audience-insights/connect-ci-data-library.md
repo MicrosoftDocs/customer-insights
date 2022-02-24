@@ -17,7 +17,7 @@ The Customer Insights data library contains a collection of sample data sets tha
 
 ## Connect to the Customer Insights data library
 
-1. In audience insights, go to **Data** > **Data sources**.
+1. Go to **Data** > **Data sources**.
 
 1. Select **Add data source**.
 
@@ -31,4 +31,4 @@ The Customer Insights data library contains a collection of sample data sets tha
 
    :::image type="content" source="media/data-sources-ci-data-library.png" alt-text="Dialog box to select Customer Insights data library options.":::
 
-1. Click **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status. 
+1. Click **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.

@@ -11,11 +11,11 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Connect to data in Databricks delta lake
+# Connect to data from Databricks delta lake
 
-This article provides information on how to ingest data from Databricks delta lake.
+This article provides information on how to ingest data from Delta Lake on Databricks. The delta lake runs on top of an Azure data lake. 
 
-## Connect to Databricks delta lake
+## Connect to Databricks delta lake storage
 
 1. In audience insights, go to **Data** > **Data sources**.
 

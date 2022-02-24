@@ -23,7 +23,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 - The Azure Data Lake storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
 
-- To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). 
+- To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
 - The Azure Data Lake you want to connect and ingest data from have to be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in audience insights.
 
@@ -36,7 +36,7 @@ Before creating the data source, one of the following roles must be assigned to 
 - Storage Blob Data Owner
 - Storage Blob Data Contributor
   
-1. In audience insights, go to **Data** > **Data sources**.
+1. Go to **Data** > **Data sources**.
 
 1. Select **Add data source**.
 
@@ -48,16 +48,16 @@ Before creating the data source, one of the following roles must be assigned to 
 
 1. Choose your preferred option for **Connect your storage using**. For a resource or a subscription-based option for authentication, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-   -  **Azure resource**: Enter the **Resource Id**.
-   -  **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
-   -  **Account key**: Enter the **Account name** and **Account key**.
+   - **Azure resource**: Enter the **Resource Id**.
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
+   - **Account key**: Enter the **Account name** and **Account key**.
 
 1. Enter the name of the **Container** that contains the model.json or manifest.json file to import data from, and select **Next**.
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
 
 1. Navigate to the folder containing the model.json or manifes.cdm.json file.
- 
+
 1. If you want to edit the entities in a JSON editing interface, select to the left of the json file name and then select **Edit schema**. Make changes and select **Save**.
 
 1. Select the json file and select **Next**. A list of available entities displays.
@@ -67,8 +67,8 @@ Before creating the data source, one of the following roles must be assigned to 
 1. Select the entities you want to include.
 
 1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
-   1. Select **Required**. The **Edit entity** panel displays. 
-   1. Choose the **Primary key**. 
+   1. Select **Required**. The **Edit entity** panel displays.
+   1. Choose the **Primary key**.
    1. Select **X** to save and close the panel.
 
 1. To enable analytics and other capabilities, select **Attributes**. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
