@@ -10,6 +10,9 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
+searchScope: 
+  - ci-home
+  - customerInsights
 ---
 
 # Create an environment in audience insights
