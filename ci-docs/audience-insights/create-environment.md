@@ -1,7 +1,7 @@
 ---
 title: "Create environments in Customer Insights"
 description: "Steps to create environments with a licensed subscription for Dynamics 365 Customer Insights."
-ms.date: 12/06/2021
+ms.date: 02/24/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -71,9 +71,9 @@ If you create multiple environments of Customer Insights and choose to save the 
    
 The **Microsoft Dataverse** step lets you connect Customer Insights with your Dataverse environment.
 
-Provide your own Microsoft Dataverse environment to share data (profiles and insights) with Dataverse based business applications like Marketing, model driven application in Power Apps etc. Leave this field empty if you don't have one and we will provision one for you and share data with Dataverse based business applications.
+Provide your own Microsoft Dataverse environment to share data (profiles and insights) with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps. Leave this field empty if you don't have your own Dataverse environment and we'll provision one for you.
 
-Connecting to your Dataverse environment also enables you to [ingest from on-premises data sources using Power Platfrom dataflows and gateways](data-sources.md#add-data-from-on-premises-data-sources). You can also use [out-of-box prediction models](predictions-overview.md?tabs=b2c#out-of-box-models) by connecting to a Dataverse environment.
+Connecting to your Dataverse environment also enables you to [ingest data from on-premises data sources using Power Platform dataflows and gateways](data-sources.md#add-data-from-on-premises-data-sources). You can also use [out-of-box prediction models](predictions-overview.md?tabs=b2c#out-of-box-models) by connecting to a Dataverse environment.
 
 > [!IMPORTANT]
 > Customer Insights and Dataverse have to be in the same region to enable data sharing.
