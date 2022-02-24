@@ -14,8 +14,9 @@ ms.manager: shellyha
 
 [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) is a part of Microsoft's customer data platform (CDP) that helps deliver personalized customer experiences. The platform's capabilities provide insights into who your customers are and how they engage with your platform. Unify customer data across multiple sources to get a single view of customers.
 
-
 [Audience insights](audience-insights/overview.md) helps you transform your business into a customer-centric organization. Marketing, sales, and service professionals have the insights they need to personalize experiences. Connect data from transactional, behavioral, and observational sources to create a 360-degree customer view. See results faster with a CDP designed to deliver insights that can be acted upon. 
+
+[Engagement insights](engagement-insights/overview.md) was a preview capability in Customer Insights that focuses on gathering web and mobile events for additional insights The preview has ended on February 15, 2022.
  
 ## Choose a capability
 
