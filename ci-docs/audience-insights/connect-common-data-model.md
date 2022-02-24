@@ -9,6 +9,10 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-data-sources
+  - ci-create-data-source
+  - customerInsights
 ---
 
 # Connect to a Common Data Model folder using an Azure Data Lake account
