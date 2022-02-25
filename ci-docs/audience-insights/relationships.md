@@ -12,6 +12,15 @@ manager: shellyha
 searchScope: 
   - ci-semantic-mapping
   - ci-entities
+  - ci-relationships
+  - ci-activities
+  - ci-activities-wizard
+  - ci-measures
+  - ci-segments
+  - ci-segment-builder
+  - ci-measure-builder
+  - ci-measure-template
+  - ci-permissions
   - customerInsights
 ---
 

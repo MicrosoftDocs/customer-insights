@@ -9,6 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-customers-page
+  - ci-enrichment-details
+  - ci-segments
+  - ci-segment-details
+  - customerInsights
 ---
 
 # Segments overview

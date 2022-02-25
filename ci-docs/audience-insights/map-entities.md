@@ -11,6 +11,8 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope: 
   - ci-map
+  - ci-match
+  - customerInsights
 ---
 
 # Map entities and attributes
