@@ -9,6 +9,10 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
+searchScope: 
+  - ci-semantic-mapping
+  - ci-entities
+  - customerInsights
 ---
 
 # Relationships between entities

@@ -9,6 +9,9 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
+searchScope: 
+  - ci-entities
+  - customerInsight
 ---
 
 # Customer activities

@@ -12,6 +12,7 @@ manager: shellyha
 searchScope: 
   - ci-data-sources
   - ci-create-data-source
+  - ci-attach-cdm
   - customerInsights
 ---
 

@@ -9,6 +9,10 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
+searchScope: 
+  - ci-data-sources-enrichment
+  - ci-data-sources-enrichment-details
+  - customerInsights
 ---
 
 # Enrichment of customer profiles with enhanced addresses
