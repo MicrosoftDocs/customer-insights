@@ -9,6 +9,10 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-predictions
+  - ci-custom-models
+  - customerInsights
 ---
 
 # Complete your partial data with predictions (deprecated)

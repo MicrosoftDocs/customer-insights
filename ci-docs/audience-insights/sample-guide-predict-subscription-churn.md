@@ -6,9 +6,12 @@ ms.reviewer: mhart
 
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
+searchScope: 
+  - ci-create-prediction
+  - customerInsights
 ---
 
 # Subscription churn prediction sample guide
