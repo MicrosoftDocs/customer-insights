@@ -6,12 +6,16 @@ ms.reviewer: mhart
 
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
+searchScope: 
+  - ci-predictions
+  - ci-create-prediction
+  - customerInsights
 ---
 
-# Product recommendation prediction (preview) sample guide
+# Product recommendation prediction sample guide
 
 We'll walk you through an end to end example of product recommendation prediction using the sample data provided below.
 

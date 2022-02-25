@@ -10,6 +10,11 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
+searchScope: 
+  - ci-enrichments
+  - ci-enrichment-details
+  - ci-enrichment-wizard
+  - customerInsights
 ---
 
 # Enrichment for customer profiles (preview)

@@ -9,6 +9,10 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
+searchScope: 
+  - ci-enrichments
+  - ci-enrichment-wizard
+  - customerInsights
 ---
 
 # Enrich customer profiles with affinities and share of voice (preview)

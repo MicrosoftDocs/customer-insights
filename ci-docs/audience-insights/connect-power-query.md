@@ -9,6 +9,10 @@ ms.topic: how-to
 author: adkuppa
 ms.author: matgos
 manager: shellyha
+searchScope: 
+  - ci-data-sources
+  - ci-create-data-source
+  - customerInsights
 ---
 
 # Connect to a Power Query data source

@@ -9,7 +9,10 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: v-wendysmith
 manager: shellyha
-
+searchScope: 
+  - ci-data-sources
+  - ci-create-data-source
+  - customerInsights
 ---
 
 # Data sources overview
@@ -25,6 +28,7 @@ Select one of the following data source options to learn how to add it as a data
 - [Databricks delta lake](connect-delta-lake.md)
 - [Microsoft Dataverse lake](connect-dataverse-managed-lake.md)
 - [Customer Insights data library](connect-ci-data-library.md)
+- [From an Azure Synapse Analytics database](connect-synapse.md)
 
 > [!NOTE]
 > If you're using the trial version, the import methods section includes a **Customer Insights data library** option. Choose this option to select a sample dataset available for various industries. For more information, see [Dynamics 365 Customer Insights trial](../trial-signup.md).

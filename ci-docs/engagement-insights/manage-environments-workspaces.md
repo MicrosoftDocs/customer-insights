@@ -102,6 +102,6 @@ For more information, see [Create a link between audience insights and engagemen
 
 To protect your customer's personal data, you can delete or export end-user identifiable data.
 
-For more information, see [Delete and export event data containing personal information](../dsr-rights-requests.md#deleting-and-exporting-event-data-containing-end-user-identifiable-information).
+For more information, see [Delete and export event data containing personal information](../dsr-rights-requests.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
