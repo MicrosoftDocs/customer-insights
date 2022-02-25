@@ -28,7 +28,7 @@ Select one of the following data source options to learn how to add it as a data
 - [Databricks delta lake](connect-delta-lake.md)
 - [Microsoft Dataverse lake](connect-dataverse-managed-lake.md)
 - [Customer Insights data library](connect-ci-data-library.md)
-- [From an Azure Synapse Analytics database](connect-synapse.md)
+- [Azure Synapse Analytics database](connect-synapse.md)
 
 > [!NOTE]
 > If you're using the trial version, the import methods section includes a **Customer Insights data library** option. Choose this option to select a sample dataset available for various industries. For more information, see [Dynamics 365 Customer Insights trial](../trial-signup.md).
@@ -53,7 +53,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 ## Refresh a data source
 
-Data sources can be refreshed on an automatic schedule or refreshed manually on demand. 
+Data sources can be refreshed on an automatic schedule or refreshed manually on demand.
 
 Go to **Admin** > **System** > [**Schedule**](system.md#schedule-tab) to configure scheduled refreshes of all your ingested data sources.
 

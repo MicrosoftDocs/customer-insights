@@ -71,9 +71,12 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 1. Select the entities you want to include.
 
+  :::image type="content" source="media/deltalake_required.png" alt-text="Dialog box showing Required for Primary key":::
+
 1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
    1. Select **Required**. The **Edit entity** panel displays.
    1. Choose the **Primary key**.
+   1. Optionally, change the partition pattern.
    1. Select **X** to save and close the panel.
 
 1. To enable analytics and other capabilities, select **Attributes**. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
