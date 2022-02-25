@@ -17,7 +17,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 ## Important considerations
 
-- Data in your Azure Data Lake needs to follow the Common Data Model standard. For more information please refer to [The Common Data Model manifest](https://docs.microsoft.com/common-data-model/sdk/manifest).
+- Data in your Azure Data Lake must follow the Common Data Model standard. For more information, see [The Common Data Model manifest](https://docs.microsoft.com/common-data-model/sdk/manifest).
 
 - Data ingestion supports Azure Data Lake *Gen2* storage accounts exclusively. You can't use Azure Data Lake Gen1 storage accounts to ingest data.
 
@@ -25,16 +25,16 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 - To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-- The Azure Data Lake you want to connect and ingest data from have to be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in audience insights.
+- The Azure Data Lake you want to connect and ingest data from must be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in audience insights.
 
 - Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-## Connect to Azure data lake storage
+- One of the following roles must be assigned to the storage account or container. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
+  - Storage Blob Data Reader
+  - Storage Blob Data Owner
+  - Storage Blob Data Contributor
 
-Before creating the data source, one of the following roles must be assigned to the storage account or container. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
-- Storage Blob Data Reader
-- Storage Blob Data Owner
-- Storage Blob Data Contributor
+## Connect to Azure data lake storage
   
 1. Go to **Data** > **Data sources**.
 
@@ -43,7 +43,7 @@ Before creating the data source, one of the following roles must be assigned to 
 1. Select **Azure data lake storage**.
 
    :::image type="content" source="media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake.":::
-   
+
 1. Enter a **Name** for the data source and an optional **Description**.
 
 1. Choose your preferred option for **Connect your storage using**. For a resource or a subscription-based option for authentication, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
@@ -81,21 +81,22 @@ Before creating the data source, one of the following roles must be assigned to 
 
 You can update the *Connect to storage account using* option from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
 
-1. In audience insights, go to **Data** > **Data sources**.
+1. Go to **Data** > **Data sources**.
 
 1. Next to the data source you'd like to update, select the ellipsis.
 
 1. Select the **Edit** option from the list.
 
    :::image type="content" source="media/data_sources_edit_ADLS.png" alt-text="Dialog box to edit Azure data lake data source.":::
-   
+
 1. Optionally, you can update from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
 
    > [!NOTE]
-   > You need one of the following roles either to the container or the storage account referred above to be able to connect to and create a data source:
-   >  - Storage Blob Data Reader
-   >  - Storage Blob Data Owner
-   >  - Storage Blob Data Contributor
+   > One of the following roles must be assigned to the storage account or container:
+
+   > - Storage Blob Data Reader
+   > - Storage Blob Data Owner
+   > - Storage Blob Data Contributor
 
 1. Optionally, choose a different model.json or manifest.json file with a different set of entities from the container.
 
@@ -106,4 +107,4 @@ You can update the *Connect to storage account using* option from an account key
 
 1. Optionally, you can select additional attributes or entities to enable data profiling on or disable already selected ones.
 
-1. Click **Save** to apply your changes and return to the Data Sources page.
+1. Click **Save** to apply your changes and return to the **Data sources** page.

@@ -13,7 +13,7 @@ manager: shellyha
 
 # Connect to a Power Query data source
 
-Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights. 
+Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights.
 
 Adding data sources based on Power Query connectors generally follows the steps outlined in this section. However, depending on the connector you use, different information is required. To learn more, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
 
@@ -52,14 +52,14 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 ## Available Power Query data sources
 
-See the [Power Query connector reference](/power-query/connectors/) for a list of connectors that you can use to import data to Customer Insights. 
+See the [Power Query connector reference](/power-query/connectors/) for a list of connectors that you can use to import data to Customer Insights.
 
 Connectors with a checkmark in the **Customer Insights (Dataflows)** column are available to create new data sources based on Power Query. Review the documentation of a specific connector to learn more about its prerequisites, limitations, and other details.
 
 ## Edit Power Query data sources
 
 > [!NOTE]
-> It might not be possible to make changes to data sources that are currently being used in one of the app's processes (*segmentation*, *match*, or *merge*, for example). 
+> It might not be possible to make changes to data sources that are currently being used in one of the app's processes (*segmentation*, *match*, or *merge*, for example).
 >
 > In the **Settings** page, you can track the progress of each of the active processes. When a process completes, you can return to the **Data Sources** page and make your changes.
 
@@ -71,7 +71,7 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
    > ![Edit option.](media/edit-option-data-sources.png "Edit option")
 
    [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
-   
+
 1. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
 1. Select **Save** in Power Query after completing your edits to save your changes.
