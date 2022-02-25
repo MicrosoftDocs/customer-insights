@@ -11,7 +11,7 @@ ms.author: wameng
 manager: shellyha
 ---
 
-# Customer lifetime value (CLV) prediction (Preview)
+# Customer lifetime value (CLV) prediction
 
 Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This feature can help you achieve various goals: 
 - Identify high-value customers and process this insight
@@ -69,7 +69,7 @@ The following data is required, and where marked optional, recommended for incre
 
 1. Select the **Customer lifetime value** tile and select **Use model**. 
 
-1. In the **Customer lifetime value (preview)** pane, select **Get started**.
+1. In the **Customer lifetime value** pane, select **Get started**.
 
 1. **Name this model** and the **Output entity name** to distinguish them from other models or entities.
 

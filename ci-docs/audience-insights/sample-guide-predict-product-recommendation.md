@@ -11,7 +11,7 @@ ms.author: digranad
 manager: shellyha
 ---
 
-# Product recommendation prediction (preview) sample guide
+# Product recommendation prediction sample guide
 
 We'll walk you through an end to end example of product recommendation prediction using the sample data provided below.
 

@@ -11,7 +11,7 @@ ms.author: digranad
 manager: shellyha
 ---
 
-# Transactional churn prediction (preview) sample guide
+# Transactional churn prediction sample guide
 
 This guide will walk you through an end to end example of Transactional Churn prediction in Customer Insights using the data provided below. All data used in this guide is not real customer data and is part of the Contoso dataset found in the *Demo* environment within your Customer Insights Subscription.
 
@@ -144,7 +144,7 @@ After ingesting the data we now begin the **Map, Match, Merge** process to creat
 
 ## Task 3 - Configure transaction churn prediction
 
-With the unified customer profiles in place, we can now run the subscription churn prediction. For detailed steps, see the [Subscription churn prediction (preview)](predict-subscription-churn.md) article. 
+With the unified customer profiles in place, we can now run the subscription churn prediction. For detailed steps, see the [Subscription churn prediction](predict-subscription-churn.md) article. 
 
 1. Go to **Intelligence** > **Discover** and select to use the **Customer churn model**.
 
