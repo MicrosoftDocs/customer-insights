@@ -9,6 +9,9 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
+searchScope: 
+  - ci-semantic-mapping
+  - customerInsights
 ---
 
 # Semantic mappings (Preview)

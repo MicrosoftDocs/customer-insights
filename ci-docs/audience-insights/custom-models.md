@@ -9,6 +9,9 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
+searchScope: 
+  - ci-custom-models
+  - customerInsights
 ---
 
 # Custom machine learning models

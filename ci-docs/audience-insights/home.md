@@ -9,6 +9,9 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
+searchScope: 
+  - ci-home
+  - customerInsights
 ---
 
 # Explore audience insights

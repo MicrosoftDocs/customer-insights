@@ -9,6 +9,11 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-segments
+  - ci-segment-builder
+  - ci-segment-details
+  - customerInsights
 ---
 
 # Create segments

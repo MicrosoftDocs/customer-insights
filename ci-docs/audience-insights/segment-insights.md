@@ -9,6 +9,9 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-segment-insights
+  - customerInsights
 ---
 
 # Segment insights (preview)
