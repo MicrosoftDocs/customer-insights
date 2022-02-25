@@ -5,7 +5,7 @@ author: jusali
 ms.reviewer: mhart
 ms.author: jusali
 ms.date: 10/04/2021
-ms.service: customer-insights
+
 ms.subservice: engagement-insights 
 ms.topic: how-to
 ms.manager: shellyha

@@ -3,7 +3,7 @@ title: "Ingest data through a Power Query connector (contains video)"
 description: "Connectors for data sources based on Power Query."
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa

@@ -3,7 +3,7 @@ title: "Company data enhancement"
 description: "Enrich and normalize company data with Microsoft's models."
 ms.date: 01/19/2022
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms

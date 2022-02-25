@@ -3,7 +3,7 @@ title: "Relationships between entities and entity paths"
 description: "Create and manage relationships between entities from multiple data sources."
 ms.date: 09/27/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: CadeSanthaMSFT

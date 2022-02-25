@@ -3,7 +3,7 @@ title: "Product recommendation prediction"
 description: "Predict the products a customer is likely to purchase or interact with."
 ms.date: 01/13/2022
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: wmelewong 

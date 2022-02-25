@@ -3,7 +3,7 @@ title: Customer lifetime value prediction sample guide
 description: Use this sample guide to try out the customer lifetime value prediction model.
 ms.date: 05/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: yashlundia

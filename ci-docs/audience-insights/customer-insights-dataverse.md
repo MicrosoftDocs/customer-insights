@@ -3,7 +3,7 @@ title: "Customer Insights data in Microsoft Dataverse"
 description: "Use Customer Insights entities as tables in Microsoft Dataverse."
 ms.date: 11/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann

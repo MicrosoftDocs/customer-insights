@@ -2,7 +2,7 @@
 title: "Set up and apply consent data rules"
 description: "With the consent management capability of Dynamics 365 Customer Insights, you can define how data is used based on a customer's consent preferences."
 ms.date: 11/03/2021
-ms.service: customer-insights
+
 ms.subservice: consent-management
 ms.topic: how-to
 author: smithy7

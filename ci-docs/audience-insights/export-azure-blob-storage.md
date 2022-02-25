@@ -3,7 +3,7 @@ title: "Export Customer Insights data to an Azure Blob Storage"
 description: "Learn how to configure the connection and export to Blob storage."
 ms.date: 10/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer

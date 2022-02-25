@@ -2,7 +2,7 @@
 title: "Create and manage measures"
 description: "Define measures to analyze and reflect the performance of your business."
 ms.date: 11/01/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann

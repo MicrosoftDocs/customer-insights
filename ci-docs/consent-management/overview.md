@@ -2,7 +2,7 @@
 title: "Overview of consent management capability (contains video)"
 description: "The consent management capability of Dynamics 365 Customer Insights gives organizations the tools to stay compliant with regulatory requirements."
 ms.date: 11/03/2021
-ms.service: customer-insights
+
 ms.subservice: consent-management
 ms.topic: overview
 author: smithy7
