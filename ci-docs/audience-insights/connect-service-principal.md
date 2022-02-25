@@ -9,6 +9,9 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-system-security
+  - customerInsights
 ---
 
 # Connect to an Azure Data Lake Storage account by using an Azure service principal

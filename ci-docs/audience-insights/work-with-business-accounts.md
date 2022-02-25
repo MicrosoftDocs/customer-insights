@@ -12,6 +12,7 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope: 
   - ci-semantic-mapping
+  - ci-connections
   - customerInsights
 ---
 

@@ -9,6 +9,9 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
+searchScope: 
+  - ci-system-diagnostic
+  - customerInsights
 ---
 
 # Work with Customer Insights data in Microsoft Dataverse
