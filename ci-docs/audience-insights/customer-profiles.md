@@ -9,6 +9,12 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
+searchScope: 
+  - ci-customers-page
+  - ci-customer-card
+  - ci-activities
+  - ci-activities-wizard
+  - customerInsights
 ---
 
 # Customer profiles

@@ -9,6 +9,9 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
+searchScope: 
+  - ci-search-filter
+  - customerInsights
 ---
 
 # Customer profiles: Search & filter index

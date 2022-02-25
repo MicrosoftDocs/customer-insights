@@ -9,6 +9,9 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
+searchScope: 
+  - ci-system-schedule
+  - customerInsights
 ---
 
 # Incremental refresh for data sources based on Power Query

@@ -10,6 +10,9 @@ ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
+searchScope: 
+  - ci-home
+  - customerInsights
 ---
 
 # Get started with Dynamics 365 Customer Insights audience insights capability
@@ -32,7 +35,7 @@ The first time you sign in to audience insights, you can configure settings and 
 
 Unified profiles are the foundation to get insights and take action on the data. Bring in data from various sources and run the data unification process to combine unified profiles. Specify relationships between the ingested entities use enrichment features to add information to the profiles. 
 
-1. Ingest data by creating data sources from multiple options. Choose between [Power Query connectors](connect-power-query.md), [Azure data lake storage, including Common Data Model](connect-common-data-model.md), [Microsoft Dataverse](connect-common-data-service-lake.md), [Databricks delta lake](connect-delta-lake.md), or [Datahub catalog](connect-ci-data-library.md). 
+1. Ingest data by creating data sources from multiple options. Choose between [Power Query connectors](connect-power-query.md), [Azure data lake storage, including Common Data Model](connect-common-data-model.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md), [Databricks delta lake](connect-delta-lake.md), [Azure Synapse Analytics](connect-synapse.md), or [Datahub catalog](connect-ci-data-library.md). 
 
 1. Run the [data unification process](data-unification.md) by going through the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
 

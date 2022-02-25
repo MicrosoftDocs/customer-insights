@@ -9,6 +9,9 @@ author: smithy7
 ms.author: smithc
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-system-consent
+  - customerInsights
 ---
 
 # Consent management (preview) overview

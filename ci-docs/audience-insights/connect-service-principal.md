@@ -9,6 +9,9 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-system-security
+  - customerInsights
 ---
 
 # Connect to an Azure Data Lake Storage account by using an Azure service principal
@@ -91,7 +94,7 @@ It can take up to 15 minutes to propagate the changes.
 
 ## Enter the Azure resource ID or the Azure subscription details in the storage account attachment to audience insights
 
-You can attach a Data Lake Storage account in audience insights to [store output data](manage-environments.md) or [use it as a data source](connect-common-data-service-lake.md). This option lets you choose between a resource-based or a subscription-based approach. Depending on the approach you choose, follow the procedure in one of the following sections.
+You can attach a Data Lake Storage account in audience insights to [store output data](manage-environments.md) or [use it as a data source](/dynamics365/customer-insights/audience-insights/connect-dataverse-managed-lake). This option lets you choose between a resource-based or a subscription-based approach. Depending on the approach you choose, follow the procedure in one of the following sections.
 
 ### Resource-based storage account connection
 
@@ -121,3 +124,5 @@ You can attach a Data Lake Storage account in audience insights to [store output
 
 1. Continue with the remaining steps in audience insights to attach the storage account.
 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

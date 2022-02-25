@@ -9,6 +9,11 @@ author: matgos
 ms.author: adkuppa
 ms.reviewer: v-wendysmith
 manager: shellyha
+searchScope: 
+  - ci-data-sources
+  - ci-create-data-source
+  - ci-attach-cdm
+  - customerInsights
 ---
 
 # Connect to data in Azure data lake storage

@@ -9,6 +9,9 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
+searchScope: 
+  - ci-system-api-usage
+  - customerInsights
 ---
 
 # Work with Customer Insights APIs

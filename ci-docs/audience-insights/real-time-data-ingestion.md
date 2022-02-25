@@ -9,6 +9,9 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
+searchScope: 
+  - ci-system-api-usage
+  - customerInsights
 ---
 
 # Real-time data ingestion (preview)

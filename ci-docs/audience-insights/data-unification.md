@@ -11,7 +11,8 @@ ms.author: adkuppa
 manager: shellyha
 
 searchScope: 
-  - ci-unify
+  - ci-map
+  - customerInsights
 ---
 
 # Data unification overview

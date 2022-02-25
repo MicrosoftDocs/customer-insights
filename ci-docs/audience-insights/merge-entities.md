@@ -10,7 +10,10 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope: 
+  - ci-match
   - ci-merge
+  - ci-relationships
+  - customerInsights
 ---
 
 # Merge entities

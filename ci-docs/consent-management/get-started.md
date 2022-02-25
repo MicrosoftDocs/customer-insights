@@ -10,6 +10,9 @@ ms.author: smithc
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
+searchScope: 
+  - ci-system-consent
+  - customerInsights
 ---
 
 # Get started with consent management
