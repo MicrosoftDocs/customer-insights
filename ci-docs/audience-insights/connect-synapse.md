@@ -13,7 +13,7 @@ manager: shellyha
 
 # Connect an Azure Synapse data source (preview)
 
-Azure Synapse Analytics is an enterprise analytics service that accelerates time to insights across data warehouses and big data systems. Azure Synapse Analytics brings together the best of SQL technologies used in enterprise data warehousing, Spark technologies used for big data, Data Explorer for log and time series analytics, Pipelines for data integration and ETL/ELT, and deep integration with other Azure services such as Power BI, CosmosDB, and AzureML.
+Azure Synapse Analytics is an enterprise analytics service that accelerates time to insights across data warehouses and big data systems. Azure Synapse Analytics brings together the best of SQL technologies used in enterprise data warehousing, Spark technologies used for big data, Data Explorer for log and time series analytics, Pipelines for data integration and ETL/ELT, and deep integration with other Azure services such as Power BI, Cosmos DB, and AzureML.
 
 For more information, see [Azure Synapse overview](/azure/synapse-analytics/overview-what-is).
 
@@ -21,18 +21,18 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 The following prerequisites must be met to configure the connection from Customer Insights to Azure Synapse.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Make sure to set all **role assignments** as described.  
 
 ## Prerequisites in Customer Insights
 
-* You have an **Administrator** role in Customer Insights. Learn more about [setting user permissions in audience insights](permissions.md#assign-roles-and-permissions)
+* You have an **Administrator** role in Customer Insights. Learn more about [user permissions in audience insights](permissions.md#assign-roles-and-permissions).
 
 In Azure: 
 
 - An active Azure subscription.
 
-- If using a new Azure Data Lake Storage Gen2 account, the *service principal for audience insights* needs **Storage Blob Data Contributor** permissions. Learn more on [connecting to an Azure Data Lake Storage Gen2 account with Azure service principal for audience insights](connect-service-principal.md). The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
+- If using a new Azure Data Lake Storage Gen2 account, the *service principal for audience insights* needs **Storage Blob Data Contributor** permissions. Learn more about [connecting to an Azure Data Lake Storage with a service principal for audience insights](connect-service-principal.md). The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
 
 - On the resource group the Azure Synapse workspace is located, the *service principal* and the *user for audience insights* needs to be assigned at least **Reader** permissions. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
