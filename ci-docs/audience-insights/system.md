@@ -9,6 +9,13 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-system-status
+  - ci-system-schedule
+  - ci-system-about
+  - ci-system-general
+  - ci-system-api-usage
+  - customerInsights
 ---
 
 # System configuration

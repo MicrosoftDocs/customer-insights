@@ -10,6 +10,9 @@ ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
+searchScope: 
+  - ci-home
+  - customerInsights
 ---
 
 # Get started with Dynamics 365 Customer Insights audience insights capability

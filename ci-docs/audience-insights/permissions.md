@@ -9,6 +9,10 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
+searchScope: 
+  - ci-permissions
+  - ci-system-security
+  - customerInsights
 ---
 
 # User permissions

@@ -9,6 +9,9 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
+searchScope: 
+  - ci-system-about
+  - customerInsights
 ---
 
 # Manage environments

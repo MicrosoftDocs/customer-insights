@@ -9,6 +9,10 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-segment-builder
+  - ci-segment-insights
+  - customerInsights
 ---
 
 # Similar Customers (preview)

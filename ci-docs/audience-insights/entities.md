@@ -9,6 +9,9 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
+searchScope: 
+  - ci-entities
+  - customerInsight
 ---
 
 # Entities in audience insights

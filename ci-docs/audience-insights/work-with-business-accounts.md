@@ -10,6 +10,10 @@ ms.custom: intro-internal
 ms.author: wimohabb
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-semantic-mapping
+  - ci-connections
+  - customerInsights
 ---
 
 # Work with business accounts in audience insights

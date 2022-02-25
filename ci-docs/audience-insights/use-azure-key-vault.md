@@ -9,6 +9,9 @@ ms.topic: how-to
 author: brndkfr
 ms.author: bkief
 manager: shellyha
+searchScope: 
+  - ci-system-security
+  - customerInsights
 ---
 
 # Bring your own Azure key vault (preview)
