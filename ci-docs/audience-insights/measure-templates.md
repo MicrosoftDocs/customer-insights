@@ -1,6 +1,6 @@
 ---
 title: "Create measures from templates"
-description: "Define measures using templates for a common use cases."
+description: "Define measures using templates for common use cases."
 ms.date: 02/28/2022
 
 ms.subservice: audience-insights

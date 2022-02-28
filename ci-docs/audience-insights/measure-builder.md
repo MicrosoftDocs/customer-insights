@@ -68,7 +68,7 @@ You can create measures on the level of individual customers (customer attribute
    1. Set the filter operators to define the filter for every selected attribute.
    1. Select **Apply** to add the filters to the measure.
 
-1. Select **Dimension** to choose additional fields that are added as columns to the measure output entity.
+1. Select **Dimension** to choose more fields that are added as columns to the measure output entity.
  
    1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected to create *customer-level measures*. You can remove the default dimension if you want to create *business-level measures*.
    1. Select **Done** to add the dimensions to the measure.
@@ -133,7 +133,7 @@ You can create measures on the level of individual accounts (customer measure) o
    1. Set the filter operators to define the filter for every selected attribute.
    1. Select **Apply** to add the filters to the measure.
 
-1. Select **Dimension** to choose additional fields that are added as columns to the measure output entity.
+1. Select **Dimension** to choose more fields that are added as columns to the measure output entity.
  
    1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected to create *customer-level measures*. You can remove the default dimension if you want to create *business-level measures*.
    1. Select **Done** to add the dimensions to the measure.
