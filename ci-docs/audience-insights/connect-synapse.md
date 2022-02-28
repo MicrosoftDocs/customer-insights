@@ -50,6 +50,8 @@ In Azure:
 
 1. Choose the **Azure Synapse Analytics (Preview)** method.
 
+   :::image type="content" source="media/data_sources_synapse.png" alt-text="Dialog box to connect to Synapse Analytics data":::
+  
 1. Enter a **Name** for the data source and an optional **Description**.
 
 1. Choose an [available connection](connections.md) to Azure Synapse Analytics or create a new one.
