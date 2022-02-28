@@ -15,9 +15,11 @@ manager: shellyha
 
 This article provides information on how to ingest data from Delta Lake on Databricks. The delta lake runs on top of an Azure data lake.
 
-## Prerequisites
+##Important considerations##
+<!--- Need to know considerations --->
 
-- Obtain the folder path for where the delta lake folder resides.
+## Prerequisites
+- Obtain the container name and folder path for where the delta lake folder resides.
 - Obtain the Synapse connection and spark pool information for the delta lake.
 
 ## Connect to Databricks delta lake storage

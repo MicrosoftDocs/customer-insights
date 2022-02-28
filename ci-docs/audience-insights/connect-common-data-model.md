@@ -39,6 +39,9 @@ This article provides information on how to ingest data from Azure Data Lake inc
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
 
+## Prerequisites##
+- Obtain the container name and folder path for where the model.json or manifest.json file resides.
+
 ## Connect to Azure data lake storage
   
 1. Go to **Data** > **Data sources**.
@@ -71,7 +74,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 1. Select the entities you want to include.
 
-  :::image type="content" source="media/deltalake_required.png" alt-text="Dialog box showing Required for Primary key":::
+   :::image type="content" source="media/deltalake_required.png" alt-text="Dialog box showing Required for Primary key":::
 
 1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
    1. Select **Required**. The **Edit entity** panel displays.
