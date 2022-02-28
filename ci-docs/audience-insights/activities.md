@@ -16,8 +16,6 @@ searchScope:
   - ci-activities
   - ci-activities-wizard
   - ci-measures
-  - ci-measure-builder
-  - ci-measure-template
   - ci-segment-suggestions
   - customerInsight
 ---
