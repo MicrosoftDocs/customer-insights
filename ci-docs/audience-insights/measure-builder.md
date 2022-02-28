@@ -21,6 +21,14 @@ You can also quickly create a measure by choosing from a set of commonly used an
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 
+You can create measures on the level of individual customers (customer attribute, customer measure) or on the level of the business/organization (business measure). Customer attribute and customer measure are two types that enable you to track performance per customer. For example, the total spend by each customer. Business measures enable you to track performance per business. For example, the total revenue by the company.
+
+- Customer attribute: Generates output as a new attribute, which gets saved as a new column in the system-generated entity named *Customer_Measure*. When refreshing a customer attribute, all the other customer attributes in the *Customer_Measure* entity refresh simultaneously. In addition, customer attributes are shown in the customer profile card. Once run or saved, customer attribute you can't change it to a customer measure.
+
+- Customer measure: Generates output as its own entity and you can't change it to a customer attribute once run or saved. Customer measures don't show in the customer profile card.
+
+- Business measure: Generates output as its own entity and show on the home page of your Customer Insights environment.
+
 1. Go to **Measures**.
 
 1. Select **New** and choose **Build your own**.
@@ -78,6 +86,13 @@ You can also quickly create a measure by choosing from a set of commonly used an
 1. Go to **Measures** to see the newly created measure in the list.
 
 # [Business accounts (B-to-B)](#tab/b2b)
+
+
+You can create measures on the level of individual accounts (customer measure) or  on the level of all accounts (business measure). 
+
+- Customer measure: Generates output as its own entity. Customer measures don't show in the customer profile card.
+
+- Business measure: Generates output as its own entity and show on the home page of your Customer Insights environment.
 
 1. Go to **Measures**.
 
