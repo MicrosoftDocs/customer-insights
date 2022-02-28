@@ -50,7 +50,7 @@ This article provides information on how to ingest data from Delta Lake on Datab
   
 1. Select the entities you want to include.
 
-<!---   :::image type="content" source="media/deltalake_required.png" alt-text="Dialog box showing selected entities requiring a Primary Key"::: --->
+   :::image type="content" source="media/deltalake_required.png" alt-text="Dialog box showing selected entities requiring a Primary Key":::
 
 1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
    1. Select **Required**. The **Edit entity** panel displays.

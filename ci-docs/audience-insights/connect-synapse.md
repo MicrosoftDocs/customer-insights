@@ -28,7 +28,7 @@ The following prerequisites must be met to configure the connection from Custome
 
 * You have an **Administrator** role in Customer Insights. Learn more about [user permissions in audience insights](permissions.md#assign-roles-and-permissions).
 
-In Azure: 
+In Azure:
 
 - An active Azure subscription.
 
@@ -42,7 +42,7 @@ In Azure:
 
 - On the Azure Synapse workspace, the *service principal for audience insights* needs **Synapse Administrator** role assigned. For more information, see [How to set up access control for your Synapse workspace](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
-## Connect to data lake databases in Azure Synapse Analytics
+## Connect to the data lake database in Azure Synapse Analytics
 
 1. Go to **Data** > **Data sources**.
 
@@ -50,14 +50,14 @@ In Azure:
 
 1. Choose the **Azure Synapse Analytics (Preview)** method.
 
-1. Provide a **Name** for the data source, and select **Next** to create the data source. 
+1. Provide a **Name** for the data source, and select **Next** to create the data source.
 
 1. Choose an [available connection](connections.md) to Azure Synapse Analytics or create a new one.
 
 1. Choose a **Lake Database** from the workspace connected in the selected Azure Synapse Analytics connection and select **Next**.
 
-1. Select the entities to ingest from the connected database. 
+1. Select the entities to ingest from the connected database.
 
-1. Optionally, choose the data entities to allow data profiling on. 
+1. Optionally, choose the data entities to allow data profiling on.
 
 1. Select **Save** to apply your selection and start the ingestion of the data from your newly created data source linked to the Lake database tables in Azure Synapse Analytics.
