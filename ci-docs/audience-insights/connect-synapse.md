@@ -50,7 +50,7 @@ In Azure:
 
 1. Choose the **Azure Synapse Analytics (Preview)** method.
 
-1. Provide a **Name** for the data source, and select **Next** to create the data source.
+1. Enter a **Name** for the data source and an optional **Description**.
 
 1. Choose an [available connection](connections.md) to Azure Synapse Analytics or create a new one.
 

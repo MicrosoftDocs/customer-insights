@@ -39,7 +39,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
 
-## Prerequisites##
+## Prerequisites
 - Obtain the container name and folder path for where the model.json or manifest.json file resides.
 
 ## Connect to Azure data lake storage
