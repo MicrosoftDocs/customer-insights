@@ -9,10 +9,11 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-searchScope:
-   - ci-match
-   - customer-insights
-   
+searchScope: 
+  - ci-match
+  - ci-merge
+  - ci-map
+  - customerInsights
 ---
 
 # Match entities

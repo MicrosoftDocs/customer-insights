@@ -9,6 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-measures
+  - ci-measure-builder
+  - ci-measure-template
+  - ci-enrichment-details
+  - customerInsights
 ---
 
 # Measures overview

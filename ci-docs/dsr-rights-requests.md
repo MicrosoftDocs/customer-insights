@@ -81,7 +81,7 @@ The consent management capability doesn't collect user data directly. It only im
 To remove consent data about specific users, remove it in the data sources ingested to the consent management capability. After refreshing the data source, the removed data will be deleted in the Consent Center too. Applications that use the consent entity will also delete data that was removed on the source after a [refresh](audience-insights/system.md#refresh-processes). We recommend refreshing data sources quickly after responding to a data subject request to remove the user's data from all other processes and applications.
 
 
-## Engagement insights (preview)
+<!-- ## Engagement insights (preview)
 
 ### Deleting and exporting event data containing end user identifiable information
 
@@ -146,6 +146,6 @@ After selecting **Export**, all events of the current team that contain matching
 * Make sure that as few people as possible have access to the sent personal data.
 * For events containing personal data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example, a user ID). This makes it easier to segregate data and to export or delete the right data.
 * Only tag one property per event as containing personal data. Ideally one that only contains a unique identifier.
-* Do not tag properties containing verbose values (for example, an entire request body). Engagement insights capability uses exact string matching when deciding which events to delete or export.
+* Do not tag properties containing verbose values (for example, an entire request body). Engagement insights capability uses exact string matching when deciding which events to delete or export. -->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

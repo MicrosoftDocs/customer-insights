@@ -6,12 +6,15 @@ ms.reviewer: mhart
 
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
+searchScope: 
+  - ci-create-prediction
+  - customerInsights
 ---
 
-# Subscription churn prediction (preview) sample guide
+# Subscription churn prediction sample guide
 
 We'll walk you through an end to end example of subscription churn prediction using the sample data provided below. 
 
@@ -163,7 +166,7 @@ After ingesting the data we now begin the **Map, Match, Merge** process to creat
 
 ## Task 3 - Configure the subscription churn prediction
 
-With the unified customer profiles in place, we can now run the subscription churn prediction. For detailed steps, see the [Subscription churn prediction (preview)](predict-subscription-churn.md) article. 
+With the unified customer profiles in place, we can now run the subscription churn prediction. For detailed steps, see the [Subscription churn prediction](predict-subscription-churn.md) article. 
 
 1. Go to **Intelligence** > **Discover** and select to use the **Customer churn model**.
 

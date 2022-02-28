@@ -9,6 +9,11 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
+searchScope: 
+  - ci-customers-page
+  - ci-search-filter
+  - ci-customer-card
+  - customerInsights
 ---
 
 # Customer Card Add-in (preview)

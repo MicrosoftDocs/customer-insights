@@ -9,6 +9,9 @@ author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
+searchScope: 
+  - ci-dataverse
+  - customerInsights
 ---
 
 # Connect to data in a Microsoft Dataverse managed data lake

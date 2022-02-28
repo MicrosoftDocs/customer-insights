@@ -9,6 +9,9 @@ ms.topic: article
 author: brndkfr
 ms.author: bkief
 manager: shellyha
+searchScope: 
+  - ci-system-diagnostic
+  - customerInsights
 ---
 
 # Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (Preview)

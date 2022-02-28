@@ -9,6 +9,17 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
+searchScope: 
+  - ci-entities
+  - ci-customer-card
+  - ci-relationships
+  - ci-activities
+  - ci-activities-wizard
+  - ci-measures
+  - ci-measure-builder
+  - ci-measure-template
+  - ci-segment-suggestions
+  - customerInsight
 ---
 
 # Customer activities
