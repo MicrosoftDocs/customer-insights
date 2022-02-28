@@ -72,12 +72,6 @@
       "searchScope": {
         "**.*": [
           "customerInsights"
-        ],
-        "audience-insights/**.*": [
-          "customerInsights"
-        ],
-        "consent-management/**.*": [
-          "consentManagement"
         ]
       }
     },
