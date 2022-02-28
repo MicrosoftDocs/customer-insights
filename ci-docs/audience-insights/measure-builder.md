@@ -1,7 +1,7 @@
 ---
 title: "Create new measures with the measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 02/11/2022
+ms.date: 02/28/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,6 +9,9 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-measure-builder
+  - customerInsights
 ---
 
 # Use measure builder to create measures from scratch
@@ -46,6 +49,8 @@ You can create measures on the level of individual customers (customer attribute
    - **Min**
    - **First**: takes the first value of the data record
    - **Last**: takes the last value that was added to the data record
+   - **ArgMax**: finds the data record giving the maximum value from a target function
+   - **ArgMin**: finds the data record giving the minimum value from a target function
 
 1. Select **Add attribute** to select the data you need to create this measure.
    

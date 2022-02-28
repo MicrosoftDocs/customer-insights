@@ -1,7 +1,7 @@
 ---
 title: "Understand and manage measures"
 description: "Learn how measures help analyze and reflect the performance of your business."
-ms.date: 02/11/2022
+ms.date: 02/28/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
