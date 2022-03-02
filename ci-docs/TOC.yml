@@ -70,6 +70,8 @@
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: Add Azure Synapse Analytics
           href: audience-insights/connect-synapse.md
+        - name: Enrichment for data sources
+          href: audience-insights/data-sources-enrichment.md
         - name: Incremental refresh for data sources
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Real-time data ingestion
@@ -114,6 +116,8 @@
           href: audience-insights/enrichment-here.md
         - name: Enrich with Leadspace
           href: audience-insights/enrichment-leadspace.md
+        - name: Enrich with LiveRamp
+          href: audience-insights/enrichment-liveramp.md
         - name: Enrich with Experian
           href: audience-insights/enrichment-experian.md
         - name: Enrich with Office 365 data

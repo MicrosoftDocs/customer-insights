@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with data from Microsoft"
 description: "Use proprietary data from Microsoft to enrich your customer data with affinities and share of voice."
-ms.date: 11/11/2021
+ms.date: 03/02/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
