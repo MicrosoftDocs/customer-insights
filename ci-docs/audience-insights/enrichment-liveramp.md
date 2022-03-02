@@ -1,7 +1,7 @@
 ---
 title: "LiveRamp identity data enrichment"
 description: "Enrich customer profiles with LiveRamp data."
-ms.date: 02/23/2022
+ms.date: 03/02/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
