@@ -88,6 +88,10 @@ Select the status of a process to see the progress details of the entire job it 
 
 Use the **Schedule** tab to schedule automatic refreshes of all your [ingested data sources](data-sources.md). Automatic refreshes help ensure that updates from your data sources are reflected in your unified customer profiles.
 
+> [!NOTE]
+> Data sources managed by you refresh on their own schedules. To schedule refresh of data sources managed by you, configure refresh settings on that specific data source from the **Data sources** page.
+> :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Dataflow refresh settings.":::
+
 1. In audience insights, go to **Admin** > **System** and select the **Schedule** tab.
 
 2. The default state for the scheduled refresh is **Off**. To enable scheduled refreshes, change the toggle at the top of the screen to **On**.
