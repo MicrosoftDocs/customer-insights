@@ -3,12 +3,16 @@ title: "Enrich customer profiles with data from Microsoft"
 description: "Use proprietary data from Microsoft to enrich your customer data with affinities and share of voice."
 ms.date: 11/11/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
+searchScope: 
+  - ci-enrichments
+  - ci-enrichment-wizard
+  - customerInsights
 ---
 
 # Enrich customer profiles with affinities and share of voice (preview)

@@ -3,7 +3,7 @@ title: "Export Customer Insights data to Adobe Campaign Standard"
 description: "Learn how use audience insights segments in Adobe Campaign Standard."
 ms.date: 03/29/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft

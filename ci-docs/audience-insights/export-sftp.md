@@ -3,7 +3,7 @@ title: "Export Customer Insights data to SFTP hosts (contains video)"
 description: "Learn how to configure the connection and export to an SFTP location."
 ms.date: 03/03/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer

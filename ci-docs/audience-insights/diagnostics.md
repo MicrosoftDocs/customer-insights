@@ -3,12 +3,15 @@ title: "Audit Dynamics 365 Customer Insights with Azure Monitor"
 description: "Learn how to send logs to Microsoft Azure Monitor."
 ms.date: 12/14/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: article
 author: brndkfr
 ms.author: bkief
 manager: shellyha
+searchScope: 
+  - ci-system-diagnostic
+  - customerInsights
 ---
 
 # Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (Preview)

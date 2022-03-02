@@ -3,12 +3,15 @@ title: Work with APIs
 description: Use APIs and understand limitations.
 ms.date: 05/10/2021
 ms.reviewer: wimohabb
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
+searchScope: 
+  - ci-system-api-usage
+  - customerInsights
 ---
 
 # Work with Customer Insights APIs

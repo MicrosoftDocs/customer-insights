@@ -3,12 +3,17 @@ title: "Customer Card Add-in for Dynamics 365 apps (contains video)"
 description: "Show data from audience insights in Dynamics 365 apps with this add-in."
 ms.date: 02/02/2022
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual    
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
+searchScope: 
+  - ci-customers-page
+  - ci-search-filter
+  - ci-customer-card
+  - customerInsights
 ---
 
 # Customer Card Add-in (preview)

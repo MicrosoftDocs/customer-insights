@@ -2,13 +2,16 @@
 title: "Segment insights for existing segments"
 description: "Get insights on existing segments to see differences and commonalities."
 ms.date: 06/10/2020
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-segment-insights
+  - customerInsights
 ---
 
 # Segment insights (preview)

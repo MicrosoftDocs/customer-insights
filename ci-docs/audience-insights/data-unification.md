@@ -3,7 +3,7 @@ title: "Create a unified view of your customers"
 description: "Go through the data unification process with your data to create a single master dataset of customer profiles."
 ms.date: 10/18/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: overview
 author: adkuppa
@@ -11,7 +11,8 @@ ms.author: adkuppa
 manager: shellyha
 
 searchScope: 
-  - ci-unify
+  - ci-map
+  - customerInsights
 ---
 
 # Data unification overview

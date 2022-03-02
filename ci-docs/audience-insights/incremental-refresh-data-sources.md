@@ -3,12 +3,15 @@ title: "Incremental refresh for Power Query-based data sources"
 description: "Refresh new and updated data for large data sources based on Power Query."
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
+searchScope: 
+  - ci-system-schedule
+  - customerInsights
 ---
 
 # Incremental refresh for data sources based on Power Query
