@@ -176,7 +176,17 @@ A deduplication output entity contains the following information:
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
-   
+ 
+## Include enriched entities (preview)
+
+If you enriched entities on the data source level, select them before running the match process. The enriched entities can improve your unification results. For more information, see [Enrichment for data sources](data-sources-enrichment.md). 
+
+1. Go to **Data** > **Unify** > **Match** and select **Use enriched entities** at the top of the page.
+
+1. From the **Use enriched entities** pane, choose one or more enriched entities.
+
+1. Select **Done**. Wherever the source entity is used (such as match order or rules), it is automatically changed to the enriched entity.
+  
 ## Run the match process
 
 With configured match rules, including cross-entity matching and deduplication rules, you can run the match process. 
