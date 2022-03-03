@@ -3,7 +3,7 @@ title: Shared tasks for prediction scenarios
 description: "Learn how to manage, troubleshoot, and refine predictions."
 ms.date: 11/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: diegogranados117

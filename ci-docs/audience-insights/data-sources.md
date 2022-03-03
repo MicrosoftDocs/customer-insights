@@ -2,14 +2,17 @@
 title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
 ms.date: 12/06/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: overview
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-
+searchScope: 
+  - ci-data-sources
+  - ci-create-data-source
+  - customerInsights
 ---
 
 # Data sources overview
@@ -24,9 +27,10 @@ Refer to the detailed articles for how to add a data source, depending on the op
 
 You can add the following data sources:
 
-- [Power Query connectors](connect-power-query.md)
-- [Common Data Model](connect-common-data-model.md)
-- [Microsoft Dataverse lake](connect-dataverse-managed-lake.md)
+- [Through dozens of Power Query connectors](connect-power-query.md)
+- [From a Common Data Model folder](connect-common-data-model.md)
+- [From your own Microsoft Dataverse lake](connect-dataverse-managed-lake.md)
+- [From an Azure Synapse Analytics database](connect-synapse.md)
 
 > [!NOTE]
 > If you're using the trial version, the import methods section includes a **Customer Insights data library** option. Choose this option to select a sample dataset available for various industries. For more information, see [Dynamics 365 Customer Insights trial](../trial-signup.md).

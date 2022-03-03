@@ -3,12 +3,25 @@ title: "Relationships between entities and entity paths"
 description: "Create and manage relationships between entities from multiple data sources."
 ms.date: 09/27/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
+searchScope: 
+  - ci-semantic-mapping
+  - ci-entities
+  - ci-relationships
+  - ci-activities
+  - ci-activities-wizard
+  - ci-measures
+  - ci-segments
+  - ci-segment-builder
+  - ci-measure-builder
+  - ci-measure-template
+  - ci-permissions
+  - customerInsights
 ---
 
 # Relationships between entities

@@ -2,13 +2,16 @@
 title: "Consent management terms and concepts"
 description: "Learn about the commonly used terms and concepts in the consent management capability of Dynamics 365 Customer Insights."
 ms.date: 09/30/2021
-ms.service: customer-insights
+
 ms.subservice: consent-management
 ms.topic: how-to
 author: smithy7
 ms.author: smithc
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-system-consent
+  - customerInsights
 ---
 
 # Terms and concepts

@@ -3,7 +3,7 @@ title: "Enrichment of company profiles with the third-party enrichment Leadspace
 description: "General information about the Leadspace third-party enrichment."
 ms.date: 09/30/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT

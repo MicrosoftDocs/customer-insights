@@ -2,13 +2,18 @@
 title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
 ms.date: 01/25/2022
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-data-sources
+  - ci-create-data-source
+  - ci-attach-cdm
+  - customerInsights
 ---
 
 # Connect to a Common Data Model folder using an Azure Data Lake account

@@ -6,7 +6,7 @@ metadata:
   description: Find relevant articles to start with help content.
   ms.author: mhart
   ms.date: 11/3/2021
-  ms.service: customer-insights
+  
   ms.subservice: consent-management
   ms.topic: landing-page
 
@@ -25,7 +25,7 @@ landingContent:
           - text: Consent management overview
             url: overview.md
           - text: Release plans
-            url: /dynamics365-release-plan/
+            url: /dynamics365/release-plans/
 
   - title: Get started
     linkLists:

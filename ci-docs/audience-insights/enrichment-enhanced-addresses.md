@@ -3,12 +3,18 @@ title: "Address enhancement enrichment (contains video)"
 description: "Enrich and normalize address information of customer profiles with Microsoft's models."
 ms.date: 01/19/2022
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
+searchScope: 
+  - ci-data-sources-enrichment
+  - ci-data-sources-enrichment-details
+  - ci-enrichments
+  - ci-enrichment-wizard
+  - customerInsights
 ---
 
 # Enrichment of customer profiles with enhanced addresses

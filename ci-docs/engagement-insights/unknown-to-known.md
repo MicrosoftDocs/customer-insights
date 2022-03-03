@@ -5,7 +5,7 @@ ms.reviewer: mhart
 ms.author: mkisel
 author: mkisel11
 ms.date: 7/15/2021
-ms.service: customer-insights
+
 ms.subservice: engagement-insights 
 ms.topic: overview
 ms.manager: shellyha

@@ -3,7 +3,7 @@ title: Transaction churn prediction (contains video)
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
 ms.date: 01/13/2022
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
@@ -11,7 +11,7 @@ ms.author: zacook
 manager: shellyha
 ---
 
-# Transaction churn prediction (preview)
+# Transaction churn prediction
 
 Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. You can create new churn predictions on **Intelligence** > **Predictions**. Select **My predictions** to see other predictions that you've created. 
 
@@ -20,7 +20,7 @@ Transactional churn prediction helps predict if a customer will no longer purcha
 For environments based on business accounts, we can predict transactional churn for an account and also a combination of account and another level of information like product category. Adding a dimension can help find out how likely it is that the account "Contoso" will stop buying the product category "office stationery." In addition, for business accounts, we can also use AI to generate a list of potential reasons why an account is likely to churn for a category of secondary level information.
 
 > [!TIP]
-> Try the tutorial for a transaction churn prediction using sample data: [Transaction churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
+> Try the tutorial for a transaction churn prediction using sample data: [Transaction churn prediction sample guide](sample-guide-predict-transactional-churn.md).
 
 ## Prerequisites
 
@@ -96,9 +96,9 @@ For environments based on business accounts, we can predict transactional churn 
 
 1. In Customer Insights, go to **Intelligence** > **Predictions**.
 
-1. Select the **Customer churn model (preview)** tile and select **Use this model**.
+1. Select the **Customer churn model** tile and select **Use this model**.
 
-1. In the **Customer churn model (preview)** pane, choose **Transaction** and select **Get started**.
+1. In the **Customer churn model** pane, choose **Transaction** and select **Get started**.
 
 :::image type="content" source="media/select-transaction-churn.PNG" alt-text="Screenshot with selected transaction option in Customer churn model pane.":::
  
