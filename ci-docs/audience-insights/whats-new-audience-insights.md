@@ -38,13 +38,13 @@ Azure Synapse Analytics is an enterprise analytics service that accelerates time
 If your organization already uses to advanced analytics capabilities of Azure Synapse Analytics and stores the output in the in Data Lake databases, you can easily ingest that data to Customer Insights. 
 For more information, see [Connect an Azure Synapse data source (Preview)](connect-synapse.md).
 
-### LiveRamp enrichment
+### LiveRamp enrichment (Preview)
 
 LiveRamp provides deterministic offline identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
 
 For more information, see [Enrich customer profiles with identity data from LiveRamp (Preview)](enrichment-liveramp.md).
 
-### Enrichment for data sources
+### Enrichment for data sources (Preview)
 
 Use data from sources like Microsoft and other partners to enrich your customer data before data unification. Data source enrichments help produce higher data completeness and quality that can help achieve better results once you unify your data.
 
@@ -54,7 +54,7 @@ For more information, see [Enrichment for data sources (Preview)](data-sources-e
 
 While several users can have admin permissions in Customer Insights, only one user is the owner of an environment. An improved experience lets you change owners of an environment and claim ownership if a former owner left the organization. 
 
-For more information, see [Manage environments](manage-environments.md).
+For more information, see [Change the owner of an environment](manage-environments.md#change-the-owner-of-an-environment).
 
 ### Data preparation process lists corruption reason for corrupted records
 
