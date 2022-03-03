@@ -177,9 +177,11 @@ A deduplication output entity contains the following information:
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
  
-## Include enriched entities (preview)
+## Include enriched entities (Preview)
 
 If you enriched entities on the data source level, select them before running the match process. The enriched entities can improve your unification results. For more information, see [Enrichment for data sources](data-sources-enrichment.md). 
+
+The enriched entity contains the original data source fields and the enriched fields. So if you choose to work with the enriched entity, the existing configuration is not impacted. However, you might need to update the match rules to use the enriched fields instead.
 
 1. Go to **Data** > **Unify** > **Match** and select **Use enriched entities** at the top of the page.
 
