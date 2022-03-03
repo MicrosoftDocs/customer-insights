@@ -13,8 +13,6 @@ manager: shellyha
 
 # What's new in the audience insights capability of Dynamics 365 Customer Insights
 
-
-
 We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
 
 We roll out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action and we'll update the app automatically with no downtime.
@@ -22,6 +20,63 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+
+## February 2022 updates
+
+The updates in February 2022 include new features, performance upgrades, and bug fixes.
+
+### General availability for prediction models
+
+Out-of-the-box prediction models, including **subscription churn**, **transactional churn**, and **customer lifetime value (CLV)** become generally available as a part of Customer Insights. 
+
+For more information, see [Predictions overview](predictions-overview.md).
+
+### New data source: Integration with Azure Synapse Analytics (Preview)
+
+Azure Synapse Analytics is an enterprise analytics service that accelerates time to insights across data warehouses and big data systems.
+
+If your organization already uses to advanced analytics capabilities of Azure Synapse Analytics and stores the output in the in Data Lake databases, you can easily ingest that data to Customer Insights. 
+For more information, see [Connect an Azure Synapse data source (Preview)](connect-synapse.md).
+
+### LiveRamp enrichment (Preview)
+
+LiveRamp provides deterministic offline identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
+
+For more information, see [Enrich customer profiles with identity data from LiveRamp (Preview)](enrichment-liveramp.md).
+
+### Enrichment for data sources (Preview)
+
+Use data from sources like Microsoft and other partners to enrich your customer data before data unification. Data source enrichments help produce higher data completeness and quality that can help achieve better results once you unify your data.
+
+For more information, see [Enrichment for data sources (Preview)](data-sources-enrichment.md).
+
+### Change owner of environment
+
+While several users can have admin permissions in Customer Insights, only one user is the owner of an environment. An improved experience lets you change owners of an environment and claim ownership if a former owner left the organization. 
+
+For more information, see [Change the owner of an environment](manage-environments.md#change-the-owner-of-an-environment).
+
+### Data preparation process lists corruption reason for corrupted records
+
+The data preparation process now shows the reason for corruption for all fields with corrupted data at the individual record level for easy identification. 
+
+For more information, see [Corrupted data sources](entities.md#corrupted-data-sources).
+
+### End of preview for reporting features in the engagement insights capability
+
+The Dynamics 365 Customer Insights engagement insights capability preview ended February 15, 2022.  
+This change means the Customer Insights trial experience no longer includes the ability to create funnels nor other reporting functionality.
+
+We invite you to explore and evaluate the many other features of [Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/), the Microsoft customer data platform (CDP).    
+ 
+For a transition period, existing preview participants still have access to some preview capabilities and functionality:
+
+- Get code to instrument a web site or mobile app 
+- See events and event properties 
+- Enhance unified profiles with ingested and refined events to benefit from the full value of their customer data
+  
+During the transition period, captured events are still streamed to the connected Data Lake. Once this functionality is turned off, data sharing between engagement insights and audience insights will stop and no new events are sent to the connected storage.
+Please contact your Microsoft Account team directly if you have questions about the end of the capability preview. Your Account team will keep you up to date on coming launches. 
 
 ## January 2022 updates
 
