@@ -21,6 +21,8 @@ searchScope:
 
 Addresses in your data can be unstructured, incomplete, or incorrect. Use Microsoft's models to normalize and enrich your addresses into the [Common Data Model format](/common-data-model/schema/core/applicationcommon/address) for better accuracy and insights.
 
+You can also [enrich addresses on data sources](data-sources-enrichment.md) to improve the match accuracy in the data unification process. 
+
 ## How we enhance addresses
 
 Our model goes through a two-step process to enhance an address. First, it parses the address to identify its components and puts them into a structured format. Then, we use AI to correct, complete, and standardize the values in the address.
