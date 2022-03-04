@@ -15,8 +15,17 @@ manager: shellyha
 
 This article provides information on how to ingest data from Delta Lake on Databricks. The delta lake runs on top of an Azure data lake.
 
-##Important considerations##
-<!--- Need to know considerations --->
+## Important considerations
+
+- Data ingestion supports Azure Data Lake *Gen2* storage accounts exclusively. You can't use Azure Data Lake Gen1 storage accounts to ingest data.
+
+- The Delta Lake storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
+
+- To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
+
+- The Delta Lake you want to connect and ingest data from must be in the same Azure region as the Dynamics 365 Customer Insights environment. To know the Azure region of the environment, go to **Admin** > **System** > **About** in audience insights.
+
+- Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 ## Prerequisites
 - Obtain the container name and folder path for where the delta lake folder resides.
@@ -59,6 +68,15 @@ This article provides information on how to ingest data from Delta Lake on Datab
 
 1. To enable analytics and other capabilities, select **Attributes**. The Manage attributes page displays. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
 
+1. To enable an incremental refresh:
+
+   1. Review the attributes. Make sure a date attribute is set up with a dateTime **Data format** and a Calendar.Date **Semantic type**.
+   1. Edit the entity.
+   
+   1. Select the **Incremental refresh** checkbox.
+   
+   1. Select a date timestamp.
+   
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
 ## Edit a Deltabricks delta lake storage data source
