@@ -49,6 +49,10 @@ This article provides information on how to ingest data from Delta Lake on Datab
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
    - **Account key**: Enter the **Account name** and **Account key**.
 
+1. To enable an Azure private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
+
+<!--- Need more information --->
+
 1. Enter the name of the **Container** that contains the delta lake folder to import data from.
 
 1. Choose the **Connection to Azure Synapse** and **Spark pool**, and select **Next**.
@@ -62,21 +66,14 @@ This article provides information on how to ingest data from Delta Lake on Datab
    :::image type="content" source="media/deltalake_required.png" alt-text="Dialog box showing selected entities requiring a Primary Key":::
 
 1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
-   1. Select **Required**. The **Edit entity** panel displays.
+   1. Select **Required**. The **Edit entity** pane displays.
    1. Choose the **Primary key**.
-   1. Select **X** to save and close the panel.
+   1. Select **X** to save and close the pane.
 
 1. To enable analytics and other capabilities, select **Attributes**. The Manage attributes page displays. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
 
-1. To enable an incremental refresh:
+1. To enable an incremental refresh, see [Incremental refresh for Azure data lake and Databricks data sources](data-sources-incremental-refresh.md).
 
-   1. Review the attributes. Make sure a date attribute is set up with a dateTime **Data format** and a Calendar.Date **Semantic type**.
-   1. Edit the entity.
-   
-   1. Select the **Incremental refresh** checkbox.
-   
-   1. Select a date timestamp.
-   
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
 ## Edit a Deltabricks delta lake storage data source
@@ -96,5 +93,7 @@ This article provides information on how to ingest data from Delta Lake on Datab
 1. Optionally, you can select additional entities to ingest. You can also remove any already selected entities if there are no dependencies.
 
 1. Optionally, you can select additional attributes or entities to enable data profiling on or disable already selected ones.
+
+1. Optionally, you can edit the incremental refresh timeframe.
 
 1. Click **Save** to apply your changes and return to the Data Sources page.

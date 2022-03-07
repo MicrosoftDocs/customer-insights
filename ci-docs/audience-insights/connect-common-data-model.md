@@ -60,6 +60,10 @@ This article provides information on how to ingest data from Azure Data Lake inc
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
    - **Account key**: Enter the **Account name** and **Account key**.
 
+1. To enable an Azure private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
+
+<!--- Need more information --->
+
 1. Enter the name of the **Container** that contains the model.json or manifest.json file to import data from, and select **Next**.
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
@@ -85,6 +89,8 @@ This article provides information on how to ingest data from Azure Data Lake inc
 1. To enable analytics and other capabilities, select **Attributes**. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
+
+1. To enable an incremental refresh, see [Incremental refresh for Azure data lake and Databricks data sources](data-sources-incremental-refresh.md).
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
