@@ -48,21 +48,21 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. Once the entities are selected and their merge preference is set, select **Add rule** to define the deduplication rules at an entity level.
    - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
-   - **Normalize**: Select from following normalization options for the selected attributes. 
+   - **Normalize**: Select from following normalization options for the selected attributes.
      - Numerals: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
      - Symbols: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
      - Text to lower case: Converts all character to lower case. *ALL CAPS and Title Case* becomes *all caps and title case*.
-     - Type (Phone, Name, Address, Organization): Standardizes names, titles, phone numbers, addresses, etc. 
+     - Type (Phone, Name, Address, Organization): Standardizes names, titles, phone numbers, addresses, etc.
      - Unicode to ASCII: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
      - Whitespace: Removes all spaces. *Hello   World* becomes *HelloWorld*.
-   - **Precision**: Set the level of precision to apply for this condition. 
+   - **Precision**: Set the level of precision to apply for this condition.
      - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
    - **Name**: Name for the rule.
 
 1. Optionally, add more conditions to the rule.
 
-1. Optionally, [add exceptions to the rule](#Add-exceptions-to-a-rule).
+1. Optionally, [add exceptions to the rule](#add-exceptions-to-a-rule).
 
 1. Select **Done** to finalize the rule. The deduplication stats will display after the unification process is complete and run.
 
@@ -73,10 +73,10 @@ If you enriched entities on the data source level to help improve your unificati
 The deduplication process creates a new entity for every entity from the match pairs to identify the deduplicated records. These entities can be found along with the **ConflationMatchPairs:CustomerInsights** in the **System** section in the **Entities** page, with the name **Deduplication_DataSource_Entity**.
 
 A deduplication output entity contains the following information:
+
 - IDs / Keys
   - Primary key field and its alternate IDs field. Alternate IDs field consists of all the alternate IDs identified for a record.
   - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
-

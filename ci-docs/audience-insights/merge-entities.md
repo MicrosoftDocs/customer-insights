@@ -40,12 +40,12 @@ For more information, see the following sections.
 
 ## Separate merged fields
 
-To separate merged fields, find the attribute in the table. Separated fields show as individual data points on the unified customer profile. 
+To separate merged fields, find the attribute in the table. Separated fields show as individual data points on the unified customer profile.
 
 1. Select the merged field.
   
 1. Select **Show more** and choose **Separate fields**.
- 
+
 1. Confirm the separation.
 
 1. Select **Save** and **Run** to process the changes.
@@ -58,13 +58,13 @@ Change the display name of merged attributes. You can't change the name of the o
   
 1. Select **Show more** and choose **Rename**.
 
-1. Confirm the changed display name. 
+1. Confirm the changed display name.
 
 1. Select **Save** and **Run** to process the changes.
 
 ## Exclude merged fields
 
-Exclude an attribute from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile. 
+Exclude an attribute from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile.
 
 1. Select a merged field.
   
@@ -72,30 +72,30 @@ Exclude an attribute from the unified customer profile. If the field is used in 
 
 1. Confirm the exclusion.
 
-1. Select **Save** and **Run** to process the changes. 
+1. Select **Save** and **Run** to process the changes.
 
 On the **Merge** page, select **Excluded fields** to see the list of all excluded fields. This pane lets you add excluded fields back.
 
 ## Edit a merged field
 
-1.	Select a merged field.
+1. Select a merged field.
 
-1.	Select **Show more** and choose **Edit**.
+1. Select **Show more** and choose **Edit**.
 
-1.	Specify how to combine or merge the fields from one of three options:
+1. Specify how to combine or merge the fields from one of three options:
     - **Importance**: Identifies the winner value based on importance rank specified for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
-    :::image type="content" source="media/importance-merge-option.png" alt-text="Importance option in the merge fields dialog."::: 
+    :::image type="content" source="media/importance-merge-option.png" alt-text="Importance option in the merge fields dialog.":::
     - **Most recent**: Identifies the winner value based on the most recency. Requires a date or a numeric field for every participating entity in the merge fields scope to define the recency.
     :::image type="content" source="media/recency-merge-option.png" alt-text="Recency option in the merge fields dialog.":::
     - **Least recent**: Identifies the winner value based on the least recency. Requires a date or a numeric field for every participating entity in the merge fields scope to define the recency.
 
-1.	You can add more fields to participate in the merge process.
+1. You can add more fields to participate in the merge process.
 
-1.	You can rename the merged field.
+1. You can rename the merged field.
 
 1. Select **Done** to apply your changes.
 
-1. Select **Save** and **Run** to process the changes. 
+1. Select **Save** and **Run** to process the changes.
 
 ## Combine fields manually
 
@@ -113,7 +113,7 @@ Specify a merged attribute manually.
 
 1. Select **Done** to apply the changes.
 
-1. Select **Save** and **Run** to process the changes. 
+1. Select **Save** and **Run** to process the changes.
 
 ## Combine a group of fields
 
@@ -129,7 +129,7 @@ Treat a group of fields as a single unit. For example, when if our records conta
 
 1. Provide a **Name** and an **Output name** for every combined field.
 
-1. Provide a **Name** for the group of fields. 
+1. Provide a **Name** for the group of fields.
 
 1. Select **Done** to apply the changes.
 
@@ -149,10 +149,10 @@ Some entities contain more details than others. If an entity includes the latest
 
 1. Select **Save** and **Run** to process the changes.
 
-## Configure Customer ID generation 
+## Configure Customer ID generation
 
 After configuring merging fields, you can define how to generate CustomerId values, the unique customer profile identifiers. 
-The merge step in the data unification process generates the unique customer profile identifier. The identifier is the CustomerId in the *Customer* entity that results from the data unification process. 
+The merge step in the data unification process generates the unique customer profile identifier. The identifier is the CustomerId in the *Customer* entity that results from the data unification process.
 
 The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in the match and merge phase and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. So the primary key value might not always represent the same customer.
 
@@ -162,7 +162,7 @@ Configuring a stable customer ID enables you to avoid that behavior.
 
 1. Go to **Unify** > **Merge**.
 
-1. Select the **Keys** tab. 
+1. Select the **Keys** tab.
 
 1. Hover on the **CustomerId** row and select the **Configure** option.
    :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
