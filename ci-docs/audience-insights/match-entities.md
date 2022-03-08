@@ -16,14 +16,19 @@ searchScope:
   - customerInsights
 ---
 
-# Match entities
+# Match conditions
 
-The match phase specifies how to combine your datasets into a unified customer profile dataset. After completing the [map step](map-entities.md) in the data unification process, you're ready to match your entities. The match phase requires at least two mapped entities.
+TThis step in customer or account unification defines the rules for the matching process.
 
-The match page consists of three sections: 
-- Key metrics that summarize the number of matched records
-- Match order and rules for cross-entity matching
-- Rules for deduplication of match entities
+## Include enriched entities (preview)
+
+If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
+
+1. Select **Use enriched entities** at the top of the page.
+
+1. From the **Use enriched entities** pane, choose one or more enriched entities.
+
+1. Select **Apply**.
 
 ## Specify the match order
 
@@ -37,12 +42,13 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 > - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-1. Go to **Data** > **Unify** > **Match** and select **Set order** to start the match phase.
-1. Select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity. 
-1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all**.
-1. Select **Done**. 
+1. Select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity.
 
-After specifying the match order, the defined match pairs display in the **Matched records details** section on **Data** > **Unify** > **Match**. The key metrics are empty until the match process completes.
+1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all**.
+
+1. Select **Done**.
+
+After specifying the match order, the defined match pairs display in the **Matched records details** section. The key metrics are empty until the match process completes.
 
 :::image type="content" source="media/match-page.png" alt-text="Screenshot of the Match page in the Unify area of the data unification process.":::
   
@@ -90,7 +96,7 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
 
 To match entities only if attributes meet multiple conditions, add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
 
-1. Go to **Data** > **Unify** > **Match** and select **Edit** on the rule you want to add conditions to.
+1. Select **Edit** on the rule you want to add conditions to.
 
 1. In the **Edit rule** pane, select **Add condition**.
 
@@ -100,7 +106,7 @@ To match entities only if attributes meet multiple conditions, add more conditio
 
 Match rules represent sets of conditions. To match entities by conditions based on multiple attributes, add more rules.
 
-1.  Go to **Data** > **Unify** > **Match** and select **Add rule** on the entity you want to add rules to.
+1. Select **Add rule** on the entity you want to add rules to.
 
 2. Follow the steps in [Define rules for match pairs](#define-rules-for-match-pairs).
 
@@ -119,43 +125,7 @@ You can reorder entities for match rules to change the order in which they’re 
 
 1. Select **Done** to save the rule.
 
-## Define deduplication on a match entity
 
-In addition to [cross-entity match rules](#define-rules-for-match-pairs), you can also specify deduplications rules. *Deduplication* is another process when matching records. It identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs.
-
-Deduplicated records are used in the cross-entity matching process. Deduplication happens on individual entities and can be configured for every entity used in match pairs.
-
-Specifying deduplication rules isn't mandatory. If no such rules are configured, the system-defined rules are applied. They combine all records into a single record before passing the entity data to cross-entity matching for enhanced performance.
-
-### Add deduplication rules
-
-1. Go to **Data** > **Unify** > **Match**.
-
-1. In the **Deduplicated records details** section, select **Set entities**. In case deduplication rules are already created, select **Edit**.
-
-1. In the **Merge preferences** pane, choose the entities you want to run deduplication on.
-
-   1. Specify how to combine the duplicate records and choose one of three options:
-      - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
-      - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
-      - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
-
-   1. Optionally, to define deduplication rules on individual attributes of an entity, select **Advanced**. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency. 
- 
-      > [!div class="mx-imgBorder"]
-      > ![Deduplication rules step 1.](media/match-selfconflation.png "Deduplication rules step 1")
-
-   1. Select **Done** to apply your merge preferences for deduplication.
- 
-1. Once the entities are selected and their merge preference is set, select **Add rule** to define the deduplication rules at an entity level.
-   - **Select field** lists all the available fields from that entity. Choose the field you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
-   - Specify the normalization and precision settings.
-   - Define more conditions by selecting **Add condition**.
- 
-   > [!div class="mx-imgBorder"]
-   > ![Deduplication rules step 2.](media/match-selfconflation-rules.png "Deduplication rules step 2")
-
-  You can create multiple deduplication rules for an entity. 
 
 1. Running the match process now groups the records based on the conditions defined in the deduplication rules. After grouping the records, the merge policy is applied to identify the winner record.
 
@@ -164,28 +134,6 @@ Specifying deduplication rules isn't mandatory. If no such rules are configured,
 1. Any custom match rules defined overwrite deduplication rules. If a deduplication rule identifies matching records, and a custom match rule is set to never match those records, then these two records won't be matched.
 
 1. After [running the match process](#run-the-match-process), you’ll see the deduplication stats in the key metrics tiles.
-
-### Deduplication output as an entity
-
-The deduplication process creates a new entity for every entity from the match pairs to identify the deduplicated records. These entities can be found along with the **ConflationMatchPairs:CustomerInsights** in the **System** section in the **Entities** page, with the name **Deduplication_DataSource_Entity**.
-
-A deduplication output entity contains the following information:
-- IDs / Keys
-  - Primary key field and its alternate IDs field. Alternate IDs field consists of all the alternate IDs identified for a record.
-  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
-  - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
-- Fields used to define the deduplication rules.
-- Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
- 
-## Include enriched entities (preview)
-
-If you enriched entities on the data source level, select them before running the match process. The enriched entities can improve your unification results. For more information, see [Enrichment for data sources](data-sources-enrichment.md). 
-
-1. Go to **Data** > **Unify** > **Match** and select **Use enriched entities** at the top of the page.
-
-1. From the **Use enriched entities** pane, choose one or more enriched entities.
-
-1. Select **Done**. Wherever the source entity is used (such as match order or rules), it is automatically changed to the enriched entity.
   
 ## Run the match process
 
@@ -307,7 +255,7 @@ You can specify conditions that override the default match logic. There are four
 
 ## Next step
 
-After completing the match process for at least one match pair, continue to the [**Merge**](merge-entities.md) step.
+After completing the match process for at least one match pair, continue to Unified step.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
