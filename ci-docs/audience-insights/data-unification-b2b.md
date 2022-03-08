@@ -23,7 +23,7 @@ Unification in Customer Insights enables your customers' data from disparate sys
 
 ## Unify accounts
 
-To unify accounts, see data unification.
+To unify accounts, see Unify customer data.
 
 ## Unify contacts
 
@@ -36,4 +36,3 @@ To unify accounts, see data unification.
 1. Relationships
 1. Review
 
-### 

@@ -109,7 +109,7 @@ If you enriched entities on the data source level, select them before running th
 
 1. Optionally, add more conditions to the rule.
 
-1. Optionally, [add exceptions to the rule](#Add-exceptions-to-a-rule).
+1. Optionally, [add exceptions to the rule](#add-exceptions-to-a-rule).
 
 1. Select **Done** to finalize the rule. The deduplication stats will display after the unification process is complete and run.
 
