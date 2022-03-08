@@ -15,11 +15,11 @@ searchScope:
   - customerInsights
 ---
 
-# Business data unification overview
+# Business accounts (B-to-B) data unification overview
 
 After [setting up the data sources](data-sources.md), you can unify the data. The data unification process lets you unify contacts for an account. Contacts are also unified across accounts.
 
-The data unification process lets you unify once-disparate data sources into a single master dataset that provides a unified view of your customers. You must unify accounts first, then your contacts.
+Unification in Customer Insights enables your customers' data from disparate systems to be combined, matched, and merged into a single view of the customer. After unifying accounts, unify contacts to create a unified contact profile that contains the customer's unified contact source fields.
 
 ## Unify accounts
 
@@ -36,3 +36,4 @@ To unify accounts, see data unification.
 1. Relationships
 1. Review
 
+### 

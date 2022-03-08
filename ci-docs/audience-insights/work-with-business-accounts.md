@@ -5,10 +5,10 @@ ms.date: 10/19/2021
 
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.custom: intro-internal
 ms.author: wimohabb
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-semantic-mapping
@@ -18,7 +18,7 @@ searchScope:
 
 # Work with business accounts in audience insights
 
-The audience insights capability in Dynamics 365 Customer Insights lets you configure your environment for different primary target audiences: individual consumers (B-to-C) and business accounts (B-to-B). In B-to-C scenarios, the data is centered around individuals. For B-to-B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in audience insights, depending on your environment focus. For more information about differences, review the docs of the feature areas. 
+The audience insights capability in Dynamics 365 Customer Insights lets you configure your environment for different primary target audiences: individual consumers (B-to-C) and business accounts (B-to-B). In B-to-C scenarios, the data is centered around individuals. For B-to-B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in audience insights, depending on your environment focus. For more information about differences, review the docs of the feature areas.
 
 ## Create an environment for business accounts
 
@@ -26,7 +26,7 @@ Administrators can [create an environment in an existing organization](create-en
 
 You can then [ingest data](data-sources.md) for business accounts and related contacts as data sources from all supported sources.
 
-After unifying the data, [specify account hierarchies](relationships.md#set-up-account-hierarchies) as part of the relationship configuration. You can also [configure semantic mappings](semantic-mappings.md) to connect contact and account entities. 
+After unifying the data, [specify account hierarchies](relationships.md#set-up-account-hierarchies) as part of the relationship configuration. You can also [configure semantic mappings](semantic-mappings.md) to connect contact and account entities.
 
 ## Switch between primary target audience
 
@@ -41,7 +41,7 @@ If your organization maintains environments for individual customers and busines
 - [Measures](measures.md): Supports measures created from the measure builder with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.
 - [Segments](segments.md): Supports segments that are created from scratch with the segment builder. New operators allow incorporating account hierarchy when building segments.
 - [Data ingestion](data-sources.md): All features in this area are the same for business accounts and individual customers.
-- [Data unification](data-unification.md): All features in this area are the same for business accounts and individual customers.
+- B-B data unification is very similar to B-C data unification but as an additional step to unify contacts after account unification. See [Business accounts (B-to-B) data unification](data-unification-b2b.md).
 - [Enrichment](enrichment-hub.md): Some enrichment types are available only for individual customer scenarios while others are exclusively available for business accounts.
 - [Predictions and out-of-box models](predictions-overview.md): Transactional churn prediction contains additional steps for business accounts. Other predictions are only available for individual customers.
 - [Activation and export](export-destinations.md): Exports are available for business accounts and individual customers. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts.
