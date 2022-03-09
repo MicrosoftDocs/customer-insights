@@ -1,5 +1,5 @@
 ---
-title: "Map entities and attributes for data unification"
+title: "Select source fields for data unification"
 description: "The first step in the unification process is selecting entities, attributes, primary keys, and semantic types to map data to the unified customer profile."
 ms.date: 03/08/2022
 
@@ -15,7 +15,7 @@ searchScope:
   - customerInsights
 ---
 
-# Select source fields
+# Map entities and attributes for data unification
 
 The first step in customer or account unification is selecting the entities and attributes within your datasets that you want to unify.
 
@@ -61,10 +61,6 @@ The first step in customer or account unification is selecting the entities and 
 
 1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, or enter your custom attribute-type name. These attributes are listed under **Define the data in the unmapped fields**.
 
-1. Click **Next**.
-
-## Next step
-
-Go to Remove duplicates.
+1. Click **Next**. Go to [Remove duplicates](remove-duplicates.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
