@@ -15,9 +15,9 @@ searchScope:
   - customerInsights
 ---
 
-# Map entities and attributes for data unification
+# Select source fields for data unification
 
-The first step in customer or account unification is selecting the entities and attributes within your datasets that you want to unify.
+The first step in customer or account unification is selecting the entities and attributes within your datasets that you want to unify. Select entities that contain customer profile related data.
 
 > [!NOTE]
 > For individual consumers (B-C), the unification process involves customers. For business accounts, this part of the unification process involves accounts. Screen titles indicate whether it is customers or accounts.

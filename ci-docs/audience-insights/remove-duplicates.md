@@ -14,14 +14,9 @@ searchScope:
   - ci-match
 ---
 
-# Set up deduplication rules (optional)
+# Remove duplicates before unifying data
 
 This step in customer or account unification sets up rules for handling duplicate records. This step is optional. If rules are not configured, system-defined rules are applied. Customer Insights identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs.
-
-Conditions and exceptions....
-In most cases, the entity matching leads to unique user profiles with consolidated data. To dynamically address rare cases of false positives and false negatives, you can define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records, which fulfill the exception criteria.
-
-For example, if your match rule combines last name, city, and date of birth, the system would identify twins with the same last name who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine aren’t the same.
 
 > [!NOTE]
 > For individual consumers (B-C), the unification process involves customers. For business accounts, this part of the unification process involves accounts. Screen titles indicate whether it is customers or accounts.
@@ -51,8 +46,6 @@ If you enriched entities on the data source level to help improve your unificati
 
    1. Select **Done**.
 
-## Add rules, conditions, and exceptions
-
 1. Once the entities are selected and their merge preference is set, select **Add rule** to define the deduplication rules at an entity level.
    - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
    - **Normalize**: Select from following normalization options for the selected attributes.
@@ -70,6 +63,9 @@ If you enriched entities on the data source level to help improve your unificati
 1. Optionally, add more conditions to the rule.
 
 1. Optionally, add exceptions to the rule.
+   In rare cases of false positives and false negatives, define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records, which fulfill the exception criteria.
+
+  For example, if your match rule combines last name, city, and date of birth, the system would identify twins with the same last name who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine aren’t the same.
 
 1. Select **Done** to finalize the rule. The deduplication stats will display after the unification process is complete and run.
 
