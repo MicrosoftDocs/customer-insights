@@ -17,19 +17,19 @@ searchScope:
 
 # Data unification overview
 
-After [setting up the data sources](data-sources.md), you can unify the data. Data unification includes three steps: **Map**, **Match**, and **Merge**.
+After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. For individual consumers (B-to-C) where the data is centered around individuals, unification provides a unified view of your customers. For business accounts (B-to-B) where the data is centered around accounts, unification provides a unified view of your accounts.
 
-The data unification process lets you unify once-disparate data sources into a single master dataset that provides a unified view of your customers. Unification stages are mandatory, and performed in the following order:
+Data unification is mandatory and performed in the following order:
 
-1. [Map](map-entities.md)
-2. [Match](match-entities.md)
-3. [Merge](merge-entities.md)
+1. [Select source fields](map-entities.md)
+1. [Remove duplicates](remove-duplicates.md)
+1. [Match conditions](match-entities.md)
+1. [Unify fields](merge-entities.md)
 
-After completing the data unification, you can optionally
+After completing the data unification, you can optionally:
 
-- [set up relationships between entities](relationships.md) to create sophisticated segments
-- [enrich your data](enrichment-hub.md) to get a wider range of insights about your customers
-- [define activities](activities.md) from some of the ingested attributes
-
+- [Set up relationships between entities](relationships.md) to create sophisticated segments
+- [Enrich your data](enrichment-hub.md) to get a wider range of insights about your customers
+- [Define activities](activities.md) from some of the ingested attributes
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
