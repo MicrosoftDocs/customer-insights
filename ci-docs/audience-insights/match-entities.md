@@ -1,7 +1,7 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 02/07/2022
+ms.date: 03/09/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -18,9 +18,11 @@ searchScope:
 
 # Match entities
 
-TThis step in customer or account unification defines the rules for the matching process.
+TThis step in customer or account unification defines the match order and rules for cross-entity matching.
 
 ## Include enriched entities (preview)
+
+If you already included enriched entities during the deduplication step, you can skip this section.
 
 If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
@@ -42,9 +44,9 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 > - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-1. Select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as second entity.
+1. Select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
 
-1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all**.
+1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
 
 1. Select **Done**.
 
@@ -73,12 +75,12 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
    - **Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
 
    - **Normalize**: Select from following normalization options for the selected attributes.
-     - Numerals: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
-     - Symbols: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
-     - Text to lower case: Converts all character to lower case. *ALL CAPS and Title Case* becomes *all caps and title case*.
-     - Type (Phone, Name, Address, Organization): Standardizes names, titles, phone numbers, addresses, etc. 
-     - Unicode to ASCII: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
-     - Whitespace: Removes all spaces. *Hello   World* becomes *HelloWorld*.
+     - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
+     - **Symbols**: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
+     - **Text to lower case**: Converts all character to lower case. *ALL CAPS and Title Case* becomes *all caps and title case*.
+     - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, addresses, and organizations.
+     - **Unicode to ASCII**: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
+     - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
 
    - **Precision**: Set the level of precision to apply for this condition.
      - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.

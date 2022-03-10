@@ -18,9 +18,6 @@ searchScope:
 
 This step in customer or account unification sets up rules for handling duplicate records. This step is optional. If rules are not configured, system-defined rules are applied. Customer Insights identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs.
 
-> [!NOTE]
-> For individual consumers (B-C), the unification process involves customers. For business accounts, this part of the unification process involves accounts. Screen titles indicate whether it is customers or accounts.
-
 ## Include enriched entities (preview)
 
 If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
@@ -33,7 +30,7 @@ If you enriched entities on the data source level to help improve your unificati
 
 ## Define deduplication on a match entity
 
-1. Select **Set entities**. In case deduplication rules are already created, select **Edit**.
+1. Select **Set entities**.
 
 1. In the **Merge preferences** pane, choose the entities you want to run deduplication on.
 
@@ -69,7 +66,7 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. Select **Done** to finalize the rule. The deduplication stats will display after the unification process is complete and run.
 
-1. After defining the deduplication rules, select **Next**.
+1. After defining the deduplication rules, select **Next**. Go to [Match conditions](match-entities.md).
 
 ## Deduplication output as an entity
 
