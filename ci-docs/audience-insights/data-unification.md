@@ -21,9 +21,9 @@ After [setting up the data sources](data-sources.md), you can unify the data. Da
 
 Data unification is mandatory and performed in the following order:
 
-1. [Select source fields](map-entities.md) which includes entities and attributes to include in a unified customer profile.
+1. [Select source fields](map-entities.md) which includes entities and attributes to include in a unified customer or account profile.
 1. [Remove duplicate](remove-duplicates.md) records.
-1. Create [Match rules and conditions](match-entities.md) for cross-entity matching.
+1. Create [match rules and conditions](match-entities.md) for cross-entity matching.
 1. Reconcile [unified fields](merge-entities.md) to merge the data.
 1. [Review](review-unification.md) and create the unified profile.
 

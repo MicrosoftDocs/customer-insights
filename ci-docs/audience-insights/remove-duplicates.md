@@ -22,7 +22,7 @@ This step in customer or account unification sets up rules for handling duplicat
 
 If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
-1. Select **Use enriched entities** at the top of the page.
+1. On the Remove duplicates screen, select **Use enriched entities** at the top of the page.
 
 1. From the **Use enriched entities** pane, choose one or more enriched entities.
 
@@ -30,7 +30,7 @@ If you enriched entities on the data source level to help improve your unificati
 
 ## Define deduplication on a match entity
 
-1. Select **Set entities**.
+1. Select **Merge preferences**.
 
 1. In the **Merge preferences** pane, choose the entities you want to run deduplication on.
 
@@ -86,8 +86,6 @@ A deduplication output entity contains the following information:
 ## Manage deduplication rules
 
 You can reconfigure and fine-tune most of the match parameters.
-
-- **Change the order of your rules** if you defined multiple rules. You can reorder the rules by selecting the **Move Up** and **Move Down** options or by drag and drop.
 
 - **Change rule conditions** by selecting **Edit** and choose different fields.
 

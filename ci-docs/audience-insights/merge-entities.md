@@ -99,7 +99,7 @@ To see the list of all excluded fields, select **Excluded fields**. If necessary
 
 1. Select **Save**.
 
-### Combine separated fields manually
+### Combine fields manually
 
 Combine separated fields to create a merged attribute.
 
