@@ -24,14 +24,13 @@ This step in the unification process enables you to reconcile conflicting data. 
 
 Choose and exclude attributes to merge within your unified customer profile entity. Some attributes are automatically merged by the system.
 
-## Review system recommendations for merged fields
+## Review system recommendations
 
-Review the merged attributes listed in the **Customer fields** tab of the table.
+Review the system recommendations listed in the **Customer fields** tab of the table.
 
 1. Select a merged attribute. The attributes that compose the merged attribute display in two new rows beneath the merged attribute.
 
 1. Optionally, change the merged attribute. You can:
-   - [Change the order](#change-the-order-of-fields)
    - [Separate](#separate-merged-fields)
    - [Rename](#rename-merged-fields)
    - [Exclude](#exclude-merged-fields)
@@ -40,20 +39,6 @@ Review the merged attributes listed in the **Customer fields** tab of the table.
    :::image type="content" source="media/manage-merged-attributes.png" alt-text="Options in the Show more dropdown menu to manage merged attributes.":::
 
 1. Select separate attributes to combine them. You can [combine fields](#combine-fields-manually) or [combine a group of fields](#combine-a-group-of-fields).
-
-### Change the order of fields
-
-Some entities contain more details than others. If an entity includes the latest data about a field, you can prioritize it over other entities when merging values.
-
-1. Select the merged field.
-  
-1. Select **Show more** and choose **Edit**.
-
-1. In the **Combine fields** pane, select **Move up/down** to set the order or drag and drop them in the desired position.
-
-1. Confirm the change.
-
-1. Select **Save**.
 
 ### Separate merged fields
 
@@ -114,11 +99,7 @@ To see the list of all excluded fields, select **Excluded fields**. If necessary
 
 1. Select **Save**.
 
-## Review system recommendations for separated fields
-
-Review the single attributes listed in the **Customer fields** tab of the table.
-
-### Combine fields manually
+### Combine separated fields manually
 
 Combine separated fields to create a merged attribute.
 
@@ -151,6 +132,20 @@ Treat a group of fields as a single unit. For example, if our records contain th
 1. Select **Done** to apply the changes.
 
 1. Select **Save**.
+
+### Change the order of fields
+
+Some entities contain more details than others. If an entity includes the latest data about a field, you can prioritize it over other entities when merging values.
+
+1. Select the merged field.
+  
+1. Select **Show more** and choose **Edit**.
+
+1. In the **Combine fields** pane, select **Move up/down** to set the order or drag and drop them in the desired position.
+
+1. Confirm the change.
+
+1. Select **Save**
 
 ## Configure Customer ID generation
 
@@ -204,11 +199,5 @@ To make more changes and rerun the step, you can cancel an in-progress merge. Se
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 :::image type="content" source="media/process-detail-path.png" alt-text="Drill-down path to get to process details from the task status link.":::
-
-## Next Step
-
-Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.
-
-If you already configured activities, enrichment, or segments, they'll be processed automatically to use the latest customer data.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

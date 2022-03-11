@@ -66,6 +66,8 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. Select **Done** to finalize the rule. The deduplication stats will display after the unification process is complete and run.
 
+1. To preview the results of a deduplication rule, select the rule and select **Match preview**.
+
 1. After defining the deduplication rules, select **Next**. Go to [Match conditions](match-entities.md).
 
 ## Deduplication output as an entity
@@ -80,3 +82,17 @@ A deduplication output entity contains the following information:
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
+
+## Manage deduplication rules
+
+You can reconfigure and fine-tune most of the match parameters.
+
+- **Change the order of your rules** if you defined multiple rules. You can reorder the rules by selecting the **Move Up** and **Move Down** options or by drag and drop.
+
+- **Change rule conditions** by selecting **Edit** and choose different fields.
+
+- **Deactivate a rule** to retain a deduplication rule while excluding it from the matching process.
+
+- **Duplicate your rules** if you've defined a rule and would like to create a similar rule with modifications, select **Duplicate**.
+
+- **Delete a rule** by selecting **Delete**.

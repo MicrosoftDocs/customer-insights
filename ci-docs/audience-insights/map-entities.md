@@ -62,4 +62,14 @@ The first step in customer or account unification is selecting the entities and 
 
 1. Click **Next**. Go to [Remove duplicates](remove-duplicates.md).
 
+## Edit source fields
+
+You can't remove an attribute or an entity if they've already been matched.
+
+1. On **Unify**, select **Edit** on the **Source fields** card.
+
+2. In the **Edit fields** pane, add or remove attributes and entities. Use the search or scroll to find and select your attributes and entities of interest.
+
+3. Select **Apply**.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
