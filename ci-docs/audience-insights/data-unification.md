@@ -1,12 +1,12 @@
 ---
 title: "Create a unified view of your customers"
 description: "Go through the data unification process with your data to create a single master dataset of customer profiles."
-ms.date: 10/18/2021
-ms.reviewer: mhart
+ms.date: 03/10/2022
+ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: overview
-author: adkuppa
+author: v-wendysmith
 ms.author: adkuppa
 manager: shellyha
 
@@ -21,10 +21,11 @@ After [setting up the data sources](data-sources.md), you can unify the data. Da
 
 Data unification is mandatory and performed in the following order:
 
-1. [Select source fields](map-entities.md)
-1. [Remove duplicates](remove-duplicates.md)
-1. [Match conditions](match-entities.md)
-1. [Unify fields](merge-entities.md)
+1. [Select source fields](map-entities.md) which includes entities and attributes to include in a unified customer or account profile.
+1. [Remove duplicate](remove-duplicates.md) records.
+1. Create [match rules and conditions](match-entities.md) for cross-entity matching.
+1. Reconcile [unified fields](merge-entities.md) to merge the data.
+1. [Review](review-unification.md) and create the unified profile.
 
 After completing the data unification, you can optionally:
 

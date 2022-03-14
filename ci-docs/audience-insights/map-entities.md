@@ -1,13 +1,13 @@
 ---
-title: "Map entities and attributes for data unification"
-description: "Select entities, attributes, primary keys, and semantic types to map data to the unified customer profile."
-ms.date: 10/18/2020
+title: "Select source fields for data unification"
+description: "The first step in the unification process is selecting entities, attributes, primary keys, and semantic types to map data to the unified customer profile."
+ms.date: 03/08/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: adkuppa
-ms.author: adkuppa
-ms.reviewer: mhart
+author: v-wendysmith
+ms.author: v-wendysmith
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-map
@@ -15,92 +15,67 @@ searchScope:
   - customerInsights
 ---
 
-# Map entities and attributes
+# Select source fields for data unification
 
-**Map** is the first stage in the data unification process of audience insights. Mapping consists of three phases:
+The first step in customer or account unification is selecting the entities and attributes within your datasets that you want to unify. Select entities that contain customer profile related data such as name, physical address, and email.
 
-- *Entity selection*: Identify the combinable entities that lead to a dataset with more complete information about your customers.
-- *Attribute selection*: For each entity, identify the columns you want to combine and reconcile in the *match* and *merge* phases. These columns are called *Attributes*.
-- *Primary key and semantic type selection*: For each entity, identify an attribute you want to define as the primary key for that entity, and for each attribute, identify a semantic type that best describes that attribute.
+## Select entities
 
-For more information about the general flow of data unification, see [Unify](data-unification.md).
+1. Go to **Data** > **Unify**.
 
-## Select the first entities
+1. On the **Source fields** tile, select **Get started**.
 
-1. In audience insights, go to **Data** > **Unify** > **Map**.
+1. Select the **Entities** to combine into a customer or account profile.
 
-2. Start the map phase by selecting **Select entities**.
+1. For each entity, identify the columns you want to combine and reconcile. These columns are called *Attributes*. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the checkbox on the entity level. You can search on keywords across all attributes and entities to select the required attributes you want to map.
 
-3. Select the entities and attributes you want to use in the *match* and *merge* phases. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the **Include all fields** checkbox on the entity level. We recommend selecting at least two entities to benefit from the data unification process.
-
-   > [!div class="mx-imgBorder"]
-   > ![Add entities example.](media/data-manager-configure-map-add-entities-example.png "Add entities example")
+   <!--- Insert screenshot --->
 
    In this example, we're adding the **eCommerceContacts** and **loyCustomers** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
-   
-   You can search on keywords across all attributes and entities to select the required attributes you want to map.
-   
-     > [!div class="mx-imgBorder"]
-   > ![Search fields example.](media/data-manager-configure-map-search-fields-example.png "Search fields example")
 
-4. Select **Apply** to confirm your selections.
+1. Select **Apply** to confirm your selections. The selected entities and attributes display.
 
 ## Select primary key and semantic type for attributes
 
-After selecting your entities, the **Map** page lists the selected entities for your review. Define the primary key for an entity and identify the semantic type for an attribute in the entity.
+<!--- Insert screenshot --->
 
-- **Primary key**: Select one attribute as a primary key for each of your entities. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys and will be displayed in a field for you to select from.
+1. Choose the **Primary key** for each entity. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
 
-- **Attribute semantic type**: Categories of your attributes, such as email address or name. To use AI models for smart prediction of semantics, save time and improve accuracy, set **Intelligent mapping** to **ON**. Intelligent mapping highlights AI-based semantics recommendation in the **Type** field. If you set it to **OFF**, you will see our regular mapping recommendations. You can select any semantic type from the available list of options and override the suggested selection.
+1. For each attribute, choose a semantic **Type** that best describes that attribute, such as name, city, or email address.
 
-> [!div class="mx-imgBorder"]
-> ![Attribute type and semantic prediction.](media/data-manager-configure-map-add-attributes-semantic-prediction.png "Attribute type and semantic prediction")
+   > [!NOTE]
+   > One field should map to the semantic type Person.FullName to populate the customer name in customer card. Otherwise, the customer cards will appear nameless.
 
-Adding a custom semantic type is also possible. Select the type field for an attribute, and type your custom semantic type name. This way, you can also change the attribute types that were identified by the system.
+   1. To use AI models for smart prediction of semantics, save time and improve accuracy, turn on **Intelligent mapping**. Intelligent mapping highlights AI-based semantics recommendation in the **Type** field. You can override the suggested selection by choosing any semantic type from the available list of options.
+  
+   1. To change an attribute type identified by the system, add a custom semantic type. Select the **Type** field for an attribute, and enter your custom semantic type name.
 
-All attributes for which a semantic type is automatically identified are grouped in the **Review mapped fields** section. Review these attributes and their semantic types because they'll be used to combine your entities in the merge step of data unification.
+   1. To add an attribute thant contains a URL to profile images or logos, select the entity and field that contains the URL. In the **Type** field, enter the following:
+      - For a person: Person.ProfileImage
+      - For an organization: Organization.LogoImage
 
-Attributes that aren't automatically mapped to a semantic type are grouped in the **Define the data in the unmapped fields** section. Select the semantic type field for the unmapped attributes, or enter your custom attribute-type name.
+   1. For an organization (preview) attribute, enter the attribute **Type** "Organization.Name".
 
-> [!div class="mx-imgBorder"]
-> ![Primary key and attribute type.](media/data-manager-configure-map-add-attributes.png "Primary key and attribute type")
+1. For attributes where a semantic type is automatically identified, review these attributes and types as they'll be used to combine your entities. These attributes are listed under **Review mapped fields**.
 
-> [!NOTE]
-> One field should map to the semantic type Person.FullName to populate the customer name in customer card. Otherwise, the customer cards will appear nameless. 
+1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, or enter your custom attribute-type name. These attributes are listed under **Define the data in the unmapped fields**.
 
-## Add and remove attributes and entities
-
-1. On **Unify** > **Map**, select **Edit fields**.
-
-2. In the **Edit fields** pane, add or remove attributes and entities. Use the search or scroll to find and select your attributes and entities of interest. You can't remove an attribute or an entity if they've already been matched.
-
-   > [!div class="mx-imgBorder"]
-   > ![Add or remove attributes.](media/configure-data-map-edit.png "Add or remove attributes")
-
-3. Select **Apply**.
-
-## Add images to profiles
-
-If an entity contains URLs to publicly available profile images or logos, you can add them to the unified customer profile.
-
-Select the entity and find the field that contains the URL to the profile image. In the **Type** input field, manually enter the following value: 
-- For a person: Person.ProfileImage
-- For an organization: Organization.LogoImage
-
-Continue with the unification steps and ensure the attribute that contains the image URL is also added in the [Merge](merge-entities.md) step.
-
-## Set attributes for organizations
-
-For organizations (Preview), the attribute type should be mapped to "Organization.Name"
-> [!div class="mx-imgBorder"]
-> ![Primary key and attribute type B-to-B.](media/configure-data-map-edit-b2b.png "Primary key and attribute type B-to-B")
+1. Click **Next**.
 
 ## Next step
 
-As part of the data unification process, go to the **Match** page. Visit [**Match**](match-entities.md) to learn about this phase.
+Go to [Remove duplicates](remove-duplicates.md).
 
-> [!TIP]
-> Check out the following video: [Getting Started: Creating a Unified Customer Profile](https://youtu.be/oBfGEhucAxs).
+## Edit source fields
 
+You can't remove an attribute or an entity if they've already been matched.
+
+1. Go to **Data** > **Unify**.
+
+1. Select **Edit** on the **Source fields** tile.
+
+1. In the **Edit fields** pane, add or remove attributes and entities. Use the search or scroll to find and select your attributes and entities of interest.
+
+1. Select **Apply**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
