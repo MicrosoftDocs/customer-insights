@@ -6,7 +6,7 @@ ms.date: 03/08/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: adkuppa
+ms.author: v-wendysmith
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -23,7 +23,7 @@ The first step in customer or account unification is selecting the entities and 
 
 1. Go to **Data** > **Unify**.
 
-1. For Source fields, select **Get started**.
+1. On the **Source fields** tile, select **Get started**.
 
 1. Select the **Entities** to combine into a customer or account profile.
 
@@ -60,16 +60,22 @@ The first step in customer or account unification is selecting the entities and 
 
 1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, or enter your custom attribute-type name. These attributes are listed under **Define the data in the unmapped fields**.
 
-1. Click **Next**. Go to [Remove duplicates](remove-duplicates.md).
+1. Click **Next**.
+
+## Next step
+
+Go to [Remove duplicates](remove-duplicates.md).
 
 ## Edit source fields
 
 You can't remove an attribute or an entity if they've already been matched.
 
-1. On **Unify**, select **Edit** on the **Source fields** card.
+1. Go to **Data** > **Unify**.
 
-2. In the **Edit fields** pane, add or remove attributes and entities. Use the search or scroll to find and select your attributes and entities of interest.
+1. Select **Edit** on the **Source fields** tile.
 
-3. Select **Apply**.
+1. In the **Edit fields** pane, add or remove attributes and entities. Use the search or scroll to find and select your attributes and entities of interest.
+
+1. Select **Apply**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

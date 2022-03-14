@@ -5,9 +5,9 @@ ms.date: 03/09/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: adkuppa
-ms.author: adkuppa
-ms.reviewer: mhart
+author: v-wendysmith
+ms.author: v-wendysmith
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-match
@@ -21,8 +21,6 @@ searchScope:
 This step in customer or account unification defines the match order and rules for cross-entity matching.
 
 ## Include enriched entities (preview)
-
-If you already included enriched entities during the deduplication step, you can skip this section.
 
 If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
@@ -141,7 +139,11 @@ Try different precision thresholds on conditions to find the optimal value.
 
   3. Select **Preview** so see the number of matched and unmatched records for the selected condition.
 
-Refer to [Manage match rules](#manage-match-rules) to make additional changes or consider [Advanced options](#advanced-options)]. Once you are satisfied with the results, go to [Unify fields](merge-entities.md).
+Refer to [Manage match rules](#manage-match-rules) to make additional changes or consider [Advanced options](#advanced-options). 
+
+## Next step
+
+Once you are satisfied with the matching results, go to [Unify fields](merge-entities.md).
 
 ## Manage match rules
 

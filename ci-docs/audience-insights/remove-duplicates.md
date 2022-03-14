@@ -6,7 +6,7 @@ ms.date: 03/02/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: adkuppa
+ms.author: v-wendysmith
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -30,7 +30,7 @@ If you enriched entities on the data source level to help improve your unificati
 
 ## Define deduplication on a match entity
 
-1. Select **Merge preferences**.
+1. On the Remove duplicates screen, select **Merge preferences**.
 
 1. In the **Merge preferences** pane, choose the entities you want to run deduplication on.
 
@@ -59,16 +59,17 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. Optionally, add more conditions to the rule.
 
-1. Optionally, add exceptions to the rule.
-   In rare cases of false positives and false negatives, define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records, which fulfill the exception criteria.
-
-  For example, if your match rule combines last name, city, and date of birth, the system would identify twins with the same last name who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine aren’t the same.
+1. Optionally, [add exceptions](/match-entities.md#add-exceptions-to-a-rule) to the rule.
 
 1. Select **Done** to finalize the rule. The deduplication stats will display after the unification process is complete and run.
 
 1. To preview the results of a deduplication rule, select the rule and select **Match preview**.
 
-1. After defining the deduplication rules, select **Next**. Go to [Match conditions](match-entities.md).
+1. After defining the deduplication rules, select **Next**.
+
+## Next step
+
+Go to [Match conditions](match-entities.md).
 
 ## Deduplication output as an entity
 
@@ -87,10 +88,18 @@ A deduplication output entity contains the following information:
 
 You can reconfigure and fine-tune most of the match parameters.
 
-- **Change rule conditions** by selecting **Edit** and choose different fields.
+1. Go to **Data** > **Unify**.
 
-- **Deactivate a rule** to retain a deduplication rule while excluding it from the matching process.
+1. Select **Edit** on the **Remove duplicates** tile.
 
-- **Duplicate your rules** if you've defined a rule and would like to create a similar rule with modifications, select **Duplicate**.
+1. Choose from any of the following:
 
-- **Delete a rule** by selecting **Delete**.
+   - **Change rule conditions** by selecting **Edit** and choose different fields.
+
+   - **Deactivate a rule** to retain a deduplication rule while excluding it from the matching process.
+
+   - **Duplicate your rules** if you've defined a rule and would like to create a similar rule with modifications, select **Duplicate**.
+
+   - **Delete a rule** by selecting **Delete**.
+
+1. Select **Done**.

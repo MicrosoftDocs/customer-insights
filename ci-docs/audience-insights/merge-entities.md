@@ -6,7 +6,7 @@ ms.date: 03/10/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: adkuppa
+ms.author: v-wendysmith
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -39,6 +39,8 @@ Review the system recommendations listed in the **Customer fields** tab of the t
    :::image type="content" source="media/manage-merged-attributes.png" alt-text="Options in the Show more dropdown menu to manage merged attributes.":::
 
 1. Select separate attributes to combine them. You can [combine fields](#combine-fields-manually) or [combine a group of fields](#combine-a-group-of-fields).
+
+## Separate, rename, exclude, or edit merged fields
 
 ### Separate merged fields
 
@@ -99,6 +101,8 @@ To see the list of all excluded fields, select **Excluded fields**. If necessary
 
 1. Select **Save**.
 
+## Combine separated fields
+
 ### Combine fields manually
 
 Combine separated fields to create a merged attribute.
@@ -133,7 +137,7 @@ Treat a group of fields as a single unit. For example, if our records contain th
 
 1. Select **Save**.
 
-### Change the order of fields
+## Change the order of fields
 
 Some entities contain more details than others. If an entity includes the latest data about a field, you can prioritize it over other entities when merging values.
 
@@ -149,10 +153,9 @@ Some entities contain more details than others. If an entity includes the latest
 
 ## Configure Customer ID generation
 
-Define how to generate CustomerId values, the unique customer profile identifiers. 
-The merge step in the data unification process generates the unique customer profile identifier. The identifier is the CustomerId in the *Customer* entity that results from the data unification process.
+Define how to generate CustomerId values, the unique customer profile identifiers. The unify fields or merge step in the data unification process generates the unique customer profile identifier. The identifier is the CustomerId in the *Customer* entity that results from the data unification process.
 
-The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in the match and merge phase and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. So the primary key value might not always represent the same customer.
+The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in data unification and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. So the primary key value might not always represent the same customer.
 
 Configuring a stable customer ID enables you to avoid that behavior.
 
@@ -185,7 +188,7 @@ As part of the customer profile generation configuration process, you can define
 
 ## Run your merge
 
-Whether you manually merge attributes or let the system merge them, you can always run your merge. Select **Run** on the **Merge** page to start the process.
+Whether you manually merge attributes or let the system merge them, you can always run your merge. Select **Run** on the **Unified fields** page to start the process.
 
 > [!div class="mx-imgBorder"]
 > ![Data merge Save and Run.](media/configure-data-merge-save-run.png "Data merge Save and Run")
@@ -201,3 +204,7 @@ To make more changes and rerun the step, you can cancel an in-progress merge. Se
 :::image type="content" source="media/process-detail-path.png" alt-text="Drill-down path to get to process details from the task status link.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+## Next step
+
+Go to [Review unification](review-unification.md).
