@@ -223,4 +223,9 @@ You can specify conditions that override the default match logic. There are four
 
 1. Select **Run** on the **Match** page to start the matching process. Other specified match rules are overridden by the custom match configuration.
 
+#### Known issues
+
+- Self-conflation doesn't show the normalized data in deduplication entities. However, it applies the normalization internally during deduplication. It's by design for all normalizations. 
+- If the semantic type setting is removed in the **Source fields** step when a match rule uses Alias mapping or Custom bypass, the normalization won't be applied. It only happens if you clear the semantic type after configuring the normalization in the match rule because the semantic type will be unknown.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
