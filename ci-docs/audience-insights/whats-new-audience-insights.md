@@ -58,7 +58,7 @@ When deduplicating customer records within an entity, you may not want to have t
 
 You can now define separate merge rules for individual attributes while deduplicating and merging records within a single entity. Previously, we only let you select a single merge rule (keeping records based on recency data completeness) and that rule got applied at the record level to all attributes. That's not ideal when some of the data you want to keep is found in record A, and other good data found in record B.
 
-For more information, see [Define deduplication on a match entity](match-entities.md#define-deduplication-on-a-match-entity).
+For more information, see [Define deduplication on a match entity](remove-duplicates.md#define-deduplication-on-a-match-entity).
 
 #### Custom rules for matching
 
@@ -365,7 +365,7 @@ The updates in January 2021 include several features, performance upgrades, and 
 
 - **Deduplication output from the match process is available as an entity**
   Deduplication process output from the match process is now written into a separate entity for further analysis. This entity consists of the fields used in the deduplication process and the winner record and the corresponding alternate records that get merged with the winner record.
-  For more information, see [Deduplication output as an entity](match-entities.md#deduplication-output-as-an-entity).
+  For more information, see [Deduplication output as an entity](remove-duplicates.md#deduplication-output-as-an-entity).
 
 #### System administration
 
