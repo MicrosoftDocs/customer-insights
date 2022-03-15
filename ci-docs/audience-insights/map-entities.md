@@ -41,20 +41,20 @@ The first step in customer or account unification is selecting the entities and 
 
 1. Choose the **Primary key** for each entity. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
 
+1. To use AI models for smart prediction of semantics, save time and improve accuracy, turn on **Intelligent mapping**. Intelligent mapping highlights AI-based semantics recommendation in the **Type** field. You can override the suggested selection by choosing any semantic type from the available list of options.
+
 1. For each attribute, choose a semantic **Type** that best describes that attribute, such as name, city, or email address.
 
    > [!NOTE]
    > One field should map to the semantic type Person.FullName to populate the customer name in customer card. Otherwise, the customer cards will appear nameless.
 
-   1. To use AI models for smart prediction of semantics, save time and improve accuracy, turn on **Intelligent mapping**. Intelligent mapping highlights AI-based semantics recommendation in the **Type** field. You can override the suggested selection by choosing any semantic type from the available list of options.
-  
    1. To change an attribute type identified by the system, add a custom semantic type. Select the **Type** field for an attribute, and enter your custom semantic type name.
 
-   1. To add an attribute thant contains a URL to profile images or logos, select the entity and field that contains the URL. In the **Type** field, enter the following:
+   1. To add an attribute that contains a URL to publicly available profile images or logos, select the entity and field that contains the URL. In the **Type** field, enter the following:
       - For a person: Person.ProfileImage
       - For an organization: Organization.LogoImage
 
-   1. For an organization (preview) attribute, enter the attribute **Type** "Organization.Name".
+   1. For an organization (preview) attribute, enter "Organization.Name" in the **Type** field.
 
 1. For attributes where a semantic type is automatically identified, review these attributes and types as they'll be used to combine your entities. These attributes are listed under **Review mapped fields**.
 

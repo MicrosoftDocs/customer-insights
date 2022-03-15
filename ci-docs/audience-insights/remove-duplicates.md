@@ -16,7 +16,7 @@ searchScope:
 
 # Remove duplicates before unifying data
 
-This step in customer or account unification sets up rules for handling duplicate records. This step is optional. If rules are not configured, system-defined rules are applied. Customer Insights identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs.
+This step in customer or account unification sets up rules for handling duplicate records when matching entities. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. This step is optional. If rules are not configured, system-defined rules are applied.
 
 ## Include enriched entities (preview)
 
@@ -57,7 +57,7 @@ If you enriched entities on the data source level to help improve your unificati
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
    - **Name**: Name for the rule.
 
-1. Optionally, add more conditions to the rule.
+1. Optionally, select **Add condition** to add more conditions to the rule.
 
 1. Optionally, [add exceptions](/match-entities.md#add-exceptions-to-a-rule) to the rule.
 
