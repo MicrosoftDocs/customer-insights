@@ -22,7 +22,7 @@ This step in customer or account unification sets up rules for handling duplicat
 
 If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
-1. On the Remove duplicates screen, select **Use enriched entities** at the top of the page.
+1. On the Duplicates screen, select **Use enriched entities** at the top of the page.
 
 1. From the **Use enriched entities** pane, choose one or more enriched entities.
 
@@ -30,15 +30,15 @@ If you enriched entities on the data source level to help improve your unificati
 
 ## Define deduplication on a match entity
 
-1. On the Remove duplicates screen, select **Merge preferences**.
+1. On the Duplicates screen, select **Merge preferences**.
 
 1. In the **Merge preferences** pane, choose the entities you want to run deduplication on.
 
    1. Specify how to combine the duplicate records and choose one of three options:
-      - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
       - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
       - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
-
+      - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
+  
    1. Optionally, to define deduplication rules on individual attributes of an entity, select **Advanced**. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
 
    1. Select **Done**.

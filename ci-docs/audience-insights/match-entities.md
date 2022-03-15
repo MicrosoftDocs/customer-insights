@@ -24,7 +24,7 @@ This step in customer or account unification defines the match order and rules f
 
 If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
-1. On the Match conditions screen, select **Use enriched entities** at the top of the page.
+1. On the Matching conditions screen, select **Use enriched entities** at the top of the page.
 
 1. From the **Use enriched entities** pane, choose one or more enriched entities.
 
@@ -42,7 +42,7 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 > - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-1. On the Match conditions screen, select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
+1. On the Matching conditions screen, select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
 
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
 
