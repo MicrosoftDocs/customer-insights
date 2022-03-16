@@ -139,11 +139,10 @@ Try different precision thresholds on conditions to find the optimal value.
 
   3. Select **Preview** so see the number of matched and unmatched records for the selected condition.
 
-Refer to [Manage match rules](#manage-match-rules) to make additional changes or consider [Advanced options](#advanced-options). 
+Refer to [Manage match rules](#manage-match-rules) to make additional changes or consider [Advanced options](#advanced-options).
 
-## Next step
-
-Once you are satisfied with the matching results, go to [Unify fields](merge-entities.md).
+> [!div class="nextstepaction"]
+> [Next step: Unify fields](merge-entities.md)
 
 ## Manage match rules
 

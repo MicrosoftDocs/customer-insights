@@ -62,9 +62,8 @@ The first step in customer or account unification is selecting the entities and 
 
 1. Click **Next**.
 
-## Next step
-
-Go to [Remove duplicates](remove-duplicates.md).
+> [!div class="nextstepaction"]
+> [Next step: Remove duplicates](remove-duplicates.md)
 
 ## Edit source fields
 
