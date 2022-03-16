@@ -67,14 +67,20 @@ The first step in customer or account unification is selecting the entities and 
 
 ## Edit source fields
 
-You can't remove an attribute or an entity if they've already been matched.
+You can't remove an attribute or an entity if they've already been unified.
 
 1. Go to **Data** > **Unify**.
 
 1. Select **Edit** on the **Source fields** tile.
 
+1. Optionally, toggle **Intelligent mapping** on or off.
+
+1. Select **Edit fields**.
+
 1. In the **Edit fields** pane, add or remove attributes and entities. Use the search or scroll to find and select your attributes and entities of interest.
 
 1. Select **Apply**.
+
+1. Select **Save and close**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

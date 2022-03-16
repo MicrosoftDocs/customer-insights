@@ -46,12 +46,12 @@ If you enriched entities on the data source level to help improve your unificati
 1. Once the entities are selected and their merge preference is set, select **Add rule** to define the deduplication rules at an entity level.
    - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
    - **Normalize**: Select from following normalization options for the selected attributes.
-     - Numerals: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
-     - Symbols: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
-     - Text to lower case: Converts all character to lower case. *ALL CAPS and Title Case* becomes *all caps and title case*.
-     - Type (Phone, Name, Address, Organization): Standardizes names, titles, phone numbers, addresses, etc.
-     - Unicode to ASCII: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
-     - Whitespace: Removes all spaces. *Hello   World* becomes *HelloWorld*.
+     - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
+     - **Symbols**: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
+     - **Text to lower case: Converts all character to lower case**. *ALL CAPS and Title Case* becomes *all caps and title case*.
+     - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, addresses, etc.
+     - **Unicode to ASCII**: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
+     - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
    - **Precision**: Set the level of precision to apply for this condition.
      - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
@@ -67,9 +67,8 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. After defining the deduplication rules, select **Next**.
 
-## Next step
-
-Go to [Match conditions](match-entities.md).
+> [!div class="nextstepaction"]
+> [Next step: Matching conditions](match-entities.md)
 
 ## Deduplication output as an entity
 
@@ -86,20 +85,29 @@ A deduplication output entity contains the following information:
 
 ## Manage deduplication rules
 
-You can reconfigure and fine-tune most of the match parameters.
+You can reconfigure and fine-tune most of the deduplication parameters.
 
 1. Go to **Data** > **Unify**.
 
-1. Select **Edit** on the **Remove duplicates** tile.
+1. Select **Edit** on the **Duplicates** tile.
 
-1. Choose from any of the following:
+1. To change merge preferences, select the entity.
+   1. Select **Edit merge preferences** and change the record to keep option.
+   1. To change merge preferences on individual attributes of an entity, select **Advanced** and make the necessary changes.
+   1. Select **Done**.
 
-   - **Change rule conditions** by selecting **Edit** and choose different fields.
+1. To manage rules, choose from any of the following:
+
+   - **Create a new rule** by selecting **Add rule**.
+  
+   - **Change rule conditions** by selecting **Edit** on the rule and choose different fields.
 
    - **Deactivate a rule** to retain a deduplication rule while excluding it from the matching process.
 
-   - **Duplicate your rules** if you've defined a rule and would like to create a similar rule with modifications, select **Duplicate**.
+   - **Duplicate a rule** if you've defined a rule and would like to create a similar rule with modifications, select **Duplicate**.
 
    - **Delete a rule** by selecting **Delete**.
 
 1. Select **Done**.
+
+1. Click **Save and close**.

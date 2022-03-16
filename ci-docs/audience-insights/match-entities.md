@@ -47,10 +47,6 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
 
 1. Select **Done**.
-
-After specifying the match order, the defined match pairs display in the **Matched records details** section. The key metrics are empty until the match process completes.
-
-:::image type="content" source="media/match-page.png" alt-text="Screenshot of the Match page in the Unify area of the data unification process.":::
   
 The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
@@ -62,15 +58,15 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
 
 :::image type="content" source="media/match-rule-add.png" alt-text="Screenshot of the Matched record details section with control to add rules highlighted.":::
 
-1. Select **Add rule** under an entity in the **Matched records details** section to define match rules.
+1. Select **Add rule** for an entity to define match rules.
 
 1. In the **Create rule** pane, configure the conditions for the rule.
 
    :::image type="content" source="media/match-rule-conditions.png" alt-text="Screenshot of an opened match rule with conditions added.":::
 
-   - **Entity/Field (first row)**: Choose a related entity and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
+   - **Select Entity/Field (first row)**: Choose a related entity and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
 
-   - **Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
+   - **Select Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
 
    - **Normalize**: Select from following normalization options for the selected attributes.
      - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
@@ -84,15 +80,15 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
      - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
 
-1. Provide a **Name** for the rule.
+   - **Name**: Name for the rule.
 
 1. To match entities only if attributes meet multiple conditions, select **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
+
+1. Optionally, [add exceptions](/match-entities.md#add-exceptions-to-a-rule) to the rule.
 
 1. Select **Done** to finalize the rule.
 
 1. Optionally, [add more rules](#add-rules-to-a-match-pair).
-
-1. Select **Save** to apply your changes.
 
 ### Add rules to a match pair
 

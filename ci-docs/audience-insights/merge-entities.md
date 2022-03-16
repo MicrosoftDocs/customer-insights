@@ -16,7 +16,7 @@ searchScope:
   - customerInsights
 ---
 
-# Unify customer or account fields
+# Unify customer fields
 
 This step in the unification process enables you to reconcile conflicting data. Examples of conflicting data could include a customer name found in two of your datasets but that shows up a little differently in each ("Grant Marshall" versus "Grant Marshal"), or a phone number that differs in format (617-803-091X versus 617803091X). Merging those conflicting data points is done on an attribute-by-attribute basis.
 
@@ -205,6 +205,5 @@ To make more changes and rerun the step, you can cancel an in-progress merge. Se
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
-## Next step
-
-Go to [Review unification](review-unification.md).
+> [!div class="nextstepaction"]
+> [Next step: Review unification](review-unification.md)

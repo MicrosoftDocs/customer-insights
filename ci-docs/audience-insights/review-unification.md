@@ -18,7 +18,7 @@ searchScope:
 
 # Review the data unification steps
 
-Select **Edit** on any of the data unification steps to review and make any changes before creating the unified customer or account profile. When satisifed with your selections, select **Create profiles**.
+Select **Edit** on any of the data unification steps to review and make any changes before creating the unified customer or account profile. When satisfied with your selections, select **Create profiles**.
 
 ## Next Step
 
