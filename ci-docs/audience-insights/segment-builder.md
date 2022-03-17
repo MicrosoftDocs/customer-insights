@@ -1,13 +1,13 @@
 ---
 title: "Create segments with the segment builder"
 description: "Create segments of customers to group them based on various attributes."
-ms.date: 10/18/2021
+ms.date: 03/17/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-segments
@@ -18,7 +18,7 @@ searchScope:
 
 # Create segments
 
-Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. You can [create new segments](#create-a-new-segment) using the segment builder or [create quick segments](#quick-segments) from other areas of the app. 
+Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. You can [create new segments](#create-a-new-segment) using the segment builder or [create quick segments](#quick-segments) from other areas of the app.
 
 > [!TIP]
 > - Quick segments are only supported in environments for **individual customers**.    
@@ -27,7 +27,7 @@ Define complex filters around the unified customer entity and its related entiti
 
 ## Segment builder
 
-The following image illustrates the various aspects of the segment builder. It shows a segment that results in a group of customers. The customers ordered goods in a specific time frame and gathered reward points or spent a certain amount of money. 
+The following image illustrates the various aspects of the segment builder. It shows a segment that results in a group of customers. The customers ordered goods in a specific time frame and gathered reward points or spent a certain amount of money.
 
 :::image type="content" source="media/segment-builder-overview.png" alt-text="Elements of the segment builder." lightbox="media/segment-builder-overview.png":::
 
@@ -61,7 +61,7 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
 
 1. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
 
-1. In the **Rule1** section, choose an attribute of an entity you want filter customers by. There are two ways to choose attributes: 
+1. In the **Rule1** section, choose an attribute of an entity you want filter customers by. There are two ways to choose attributes:
    - Review the list of available entities and attributes in the **Add to Rule** pane and select the **+** icon next to the attribute to add. Choose if you want to add the attribute to an existing rule or use it to create a new rule.
    - Type the name of the attribute in the rule section to see matching suggestions.
 
@@ -73,7 +73,7 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
 
    :::image type="content" source="media/relationship-path.png" alt-text="Potential relationship path when creating a rule based on an entity mapped to the unified customer entity.":::
 
-   For example, the *eCommerce_eCommercePurchases* entity in the screenshot has four options to map to the *Customer* entity: 
+   For example, the *eCommerce_eCommercePurchases* entity in the screenshot has four options to map to the *Customer* entity:
    - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > Customer
    - eCommerce_eCommercePurchases > Customer
    - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
@@ -98,7 +98,7 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
       - **Intersect** overlaps the two groups. Only data that *is common* to both groups remains in the unified group.
       - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is kept.
 
-1. By default, segments generate the output entity containing all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity. 
+1. By default, segments generate the output entity containing all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity.
 
    > [!IMPORTANT]
    > For segments based on business accounts, details of one or more contacts of each account from the *ContactProfile* entity needs to be included in the segment to allow that segment to be activated or exported to destinations that require contact information. For more information about the *ContactProfile* entity, see [Semantic mappings](semantic-mappings.md).
@@ -115,13 +115,13 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
    > [!NOTE]
    > - **Project attributes** only works for entities that have a one-to-many relationship with the customer entity. For example, one customer can have multiple subscriptions.
    > - If the attribute you want to project is more than one hop away from the *Customer* entity, as defined by the relationship, that attribute should be used in every rule of the segment query you are building. 
-   > - If the attribute you want to project is just one hop away from the *Customer* entity, that attribute doesn't need to be present in every rule of the segment query you are building. 
+   > - If the attribute you want to project is just one hop away from the *Customer* entity, that attribute doesn't need to be present in every rule of the segment query you are building.
    > - **Projected attributes** are factored in when using set operators.
 
-1. Before you save and run the segment, Select **Edit details** next to the segment name. Provide a name for your segment and update the suggested **Output entity name** for the segment. You can also add a description to the segment.
+1. Before you save and run the segment, select **Edit details** next to the segment name. Provide a name for your segment and update the suggested **Output entity name** for the segment. You can also add a description and tags to the segment. [Learn more about tags.](organizing-data.md#manage-tags)
 
 1. Select **Run** to save the segment, activate it and begin processing your segment based on all the rules and conditions. Otherwise, it will be saved as an inactive segment.
-   
+
 1. Select **Back to segments** to go back to the **Segments** page.
 
 1. By default, the segment is created as a dynamic segment. It means that the segment is refreshed during system refreshes. To [stop the automatic refresh](segments.md#manage-existing-segments), select the segment choose the **Make static** option. Static segments can be [refreshed manually](segments.md#refresh-segments) at any time.
