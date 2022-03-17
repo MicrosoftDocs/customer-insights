@@ -1,13 +1,13 @@
 ---
 title: "Segments in audience insights"
 description: "Overview on segments and how to create and manage them."
-ms.date: 11/01/2021
+ms.date: 03/17/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-customers-page
@@ -52,12 +52,15 @@ Each segment is represented by a row that includes additional information about 
 The following action are available when you select a segment:
 
 - **View** the segment details, including member count trend a preview of segment members.
+- **Download** the list of members as a .CSV file.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or simply save the duplicate.
 - **Refresh** the segment to include the latest data.
 - **Activate** or **Deactivate** the segment. Segments have two possible states - active or inactive. These states come in handy when editing a segment. For inactive segments, the segment definition exists but it doesn't contain any customers yet. When you activate a segment, its state changes from 'inactive' to 'active" and it starts looking for customers that match the segment definition. If a [scheduled refresh](system.md#schedule-tab) is configured, inactive segments have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. When an inactive segment is activated, it will refresh and will be included in scheduled refreshes.
   Alternatively, you can use the **Schedule later** functionality in the **Activate/Deactivate** dropdown to specify a future date and time for activation and deactivation of a particular segment.
+- **[Find similar customers](find-similar-customer-segments.md)** from the segment.
 - **Rename** the segment.
+- **Tag** to manage tags for the segment. [Learn more about tags.](work-with-tags.md)
 - **Download** the list of members as a .CSV file.
 - **Manage exports** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
