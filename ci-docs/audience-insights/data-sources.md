@@ -43,7 +43,8 @@ Data sources that are created after associating a Dataverse environment with Cus
 
 Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse in Customer Insights. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
 
-Make sure your gateways are updated to latest versions. You can either install an update and reconfigure a gateway from a prompt displayed on the gateway screen directly or downloading the latest version from https://powerapps.microsoft.com/en-us/downloads/. Failure to installing the latest gateway version will result in dataflow refresh failures with error messages like "The keyword isn't supported: configuration properties. parameter name: keyword"
+> [!IMPORTANT]
+> Make sure your gateways are updated to latest version. You can install an update and reconfigure a gateway from a prompt shown on the gateway screen directly or [download the latest version](https://powerapps.microsoft.com/downloads/). If you don't use the latest gateway version, the dataflow refresh fails with error messages like **The keyword isn't supported: configuration properties. Parameter name: keyword**.
 
 ## Review ingested data
 
