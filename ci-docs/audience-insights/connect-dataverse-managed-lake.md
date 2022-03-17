@@ -1,7 +1,7 @@
 ---
 title: "Connect to tables in Microsoft Dataverse"
 description: "Import data from a Microsoft Dataverse managed data lake."
-ms.date: 12/06/2021
+ms.date: 03/16/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -25,7 +25,18 @@ This article provides information on how Dataverse users can quickly connect to 
 
 ## Important considerations
 
-Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+1. Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+2. Only Dataverse entities with [change tracking](https://docs.microsoft.com/en-us/power-platform/admin/enable-change-tracking-control-data-synchronization) enabled are visible and can be exported to the Dataverse managed lake and brought into CI. OOB dataverse tables have change tracking enabled by default. Custom tables need to be explicitly enabled for change tracking. Follow the below steps to identify if a Dataverse table is enabled for change tracking.
+  - Go to the maker portal https://make.powerapps.com
+  - Select the appropriate environment from the top right side environment picker.
+  - Go to the left side navigation and select "Data" > "Tables"
+  - Go to the top right side and select view to be "All" instead of "Default" to view all available tables in your Dataverse environment.
+  - Search for the table of your interest and click on the table name to view the table details.
+  - Select the "Settings" option on the ribbon
+  - Expand the "Advanced options" chevron on the panel window that opens.
+  - Scroll down and select "Track changes" setting.
+  - Click "Save" to close the panel.
+  - This table will now be visible in the list of entities available to be exported into the Dataverse managed lake.
 
 ## Connect to a Dataverse managed lake
 
