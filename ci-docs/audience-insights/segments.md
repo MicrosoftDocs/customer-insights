@@ -60,7 +60,7 @@ The following action are available when you select a segment:
   Alternatively, you can use the **Schedule later** functionality in the **Activate/Deactivate** dropdown to specify a future date and time for activation and deactivation of a particular segment.
 - **[Find similar customers](find-similar-customer-segments.md)** from the segment.
 - **Rename** the segment.
-- **Tag** to manage tags for the segment. [Learn more about tags.](work-with-tags.md)
+- **Tag** to manage tags for the segment. [Learn more about tags.](organizing-data.md#manage-tags)
 - **Download** the list of members as a .CSV file.
 - **Manage exports** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
