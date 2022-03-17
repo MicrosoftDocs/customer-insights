@@ -1,5 +1,5 @@
 ---
-title: "Organizing data"
+title: "Organize data"
 description: "Overview on ways to organize your data using tags and columns"
 ms.date: 03/17/2022
 
@@ -17,7 +17,7 @@ searchScope:
   - customerInsights
 ---
 
-# Organizing data
+# Organize data
 
 Organize your data using tags and columns to find data quickly and easily and view the data the way you want.
 
