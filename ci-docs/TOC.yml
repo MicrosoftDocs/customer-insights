@@ -58,8 +58,8 @@
     - name: Work with business accounts
       href: audience-insights/work-with-business-accounts.md
 
-    - name: Organizing data
-      href: audience-insights/organizing-data.md
+    - name: Organize data
+      href: audience-insights/organize-data.md
       
     - name: Data sources
       items:
