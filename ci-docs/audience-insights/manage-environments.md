@@ -42,9 +42,9 @@ The **Microsoft Dataverse** step lets you connect Customer Insights with your Da
 To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsoft Dataverse environment URL that your organization administers.
 
 > [!IMPORTANT]
-> Customer Insights and Dataverse have to be in the same region to enable data sharing.
-> You must have global administrator role on the Dataverse environment
-> There should not be any previous/existing CI instance associated with that Dataverse environment aleady. Refer [here](manage-environments.md#Remove-an-existing/previous-connection-from-a-CI-instance-to-a-Dataverse-environment) on how to remove any existing associations.
+> 1. Customer Insights and Dataverse have to be in the same region to enable data sharing.
+> 1. You must have global administrator role on the Dataverse environment
+> 1. There should not be any previous/existing CI instance associated with that Dataverse environment aleady. Refer [here](manage-environments.md#Remove-an-existing/previous-connection-from-a-CI-instance-to-a-Dataverse-environment) on how to remove any existing associations.
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
