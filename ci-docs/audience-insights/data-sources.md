@@ -1,7 +1,7 @@
 ---
 title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
-ms.date: 12/06/2021
+ms.date: 03/17/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -42,6 +42,8 @@ Ingesting data from on-premises data sources in audience insights is supported b
 Data sources that are created after associating a Dataverse environment with Customer Insights use [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) by default. Dataflows support on-premises connectivity using the data gateway. You can remove and recreate data sources that existed before a Dataverse environment was associated [using on-premises data gateways](/data-integration/gateway/service-gateway-app).
 
 Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse in Customer Insights. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
+
+Make sure your gateways are updated to latest versions. You can either install an update and reconfigure a gateway from a prompt displayed on the gateway screen directly or downloading the latest version from https://powerapps.microsoft.com/en-us/downloads/. Failure to installing the latest gateway version will result in dataflow refresh failures with error messages like "The keyword isn't supported: configuration properties. parameter name: keyword"
 
 ## Review ingested data
 
