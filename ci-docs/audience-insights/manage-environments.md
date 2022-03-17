@@ -44,7 +44,7 @@ To use [out-of-box prediction models](predictions-overview.md#out-of-box-models)
 > [!IMPORTANT]
 > Customer Insights and Dataverse have to be in the same region to enable data sharing.
 > You must have global administrator role on the Dataverse environment
-> There should not be any previous/existing CI instance associated with that Dataverse environment aleady. Refer [here](manage-environments.md#Remove an existing/previous connection from a CI instance to a Dataverse environment) on how to remove any existing associations
+> There should not be any previous/existing CI instance associated with that Dataverse environment aleady. Refer [here](manage-environments.md#Remove-an-existing/previous-connection-from-a-CI-instance-to-a-Dataverse-environment) on how to remove any existing associations.
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
