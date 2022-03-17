@@ -150,5 +150,8 @@ As the owner of an environment, you can delete an environment you administer.
 
 4.	To confirm the deletion, enter the environment name and select **Delete**.
 
+> [!NOTE]
+> Deleting an instance does not remove the association to a Daaverse environment. Refer [here](manage-environments.md#Remove-an-existing/previous-connection-from-a-CI-instance-to-a-Dataverse-environment) on how to remove any existing associations.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
