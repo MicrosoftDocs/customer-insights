@@ -16,7 +16,8 @@ manager: shellyha
 Trigger specific events to occur automatically when your data changes and manage more complex flows directly in [Power Automate](https://flow.microsoft.com/).
 
 ## Known limitations
-- You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint multiple times by using the $skip parameter [Read more about the $skip parameter.](https://docs.microsoft.com/en-us/connectors/customerinsights/#get-items-from-an-entity)
+
+- You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint multiple times by using the $skip parameter. [Learn more about the $skip parameter](/connectors/customerinsights/#get-items-from-an-entity).
 
 ## Power Automate triggers
 
