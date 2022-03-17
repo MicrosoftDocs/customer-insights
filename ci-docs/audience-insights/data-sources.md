@@ -44,6 +44,13 @@ Data sources that are created after associating a Dataverse environment with Cus
 Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse in Customer Insights. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
 
 ## Review ingested data
+If you have one or more Power Platform dataflows created in an instance either by you or any other CI user, data sources page groups the data sources into three sections
+1. "Shared": This section lists data sources that are manageable by all CI users including you. Power BI dataflows, Attaching to your own storage and attaching to Dataverse managed lake are examples of shared data sources
+2. "Managed by me": Being user contextual, this section lists only the Power Platform dataflows created and can be managed only by you. Other CI users can only view these dataflows but cannot edit/refresh/delete i.e., manage these dataflows.
+3. "Managed by others": Again being user contextual, this section list only the Power Platform dataflows created by other CI users. You can only view them and cannot manage i.e., edit/refresh/delete them. This section will also display a "Managed by" field indicating who is the dataflow owner you may reach out to for any assistance.
+4. Note that entities brought from either "Managed by me" and/or "Managed by others" can be viewed and used by all users and has no impact on the user contextuality. User contextuality applies only to the data sources and NOT to the entities that are brought into CI by these dataflows.
+
+If there exists no Power Platform dataflows, you will NOT see any groups or sections but just a list of all datasources in a table view.
 
 You'll see the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by every column.
 
