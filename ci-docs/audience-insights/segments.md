@@ -64,6 +64,9 @@ The following action are available when you select a segment:
 - **Download** the list of members as a .CSV file.
 - **Manage exports** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
+- **Columns** to [customize the columns](organizing-data.md#customize-columns) that display.
+- **Filter** to [filter on tags](organizing-data.md#filter-on-tags).
+- **Search name** to search by segment name.
 
 ## Refresh segments
 
