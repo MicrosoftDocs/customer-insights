@@ -1,7 +1,7 @@
 ---
 title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -44,13 +44,14 @@ Data sources that are created after associating a Dataverse environment with Cus
 Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse in Customer Insights. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
 
 ## Review ingested data
-If you have one or more Power Platform dataflows created in an instance either by you or any other CI user, data sources page groups the data sources into three sections
-1. "Shared": This section lists data sources that are manageable by all CI users including you. Power BI dataflows, Attaching to your own storage and attaching to Dataverse managed lake are examples of shared data sources
-2. "Managed by me": Being user contextual, this section lists only the Power Platform dataflows created and can be managed only by you. Other CI users can only view these dataflows but cannot edit/refresh/delete i.e., manage these dataflows.
-3. "Managed by others": Again being user contextual, this section list only the Power Platform dataflows created by other CI users. You can only view them and cannot manage i.e., edit/refresh/delete them. This section will also display a "Managed by" field indicating who is the dataflow owner you may reach out to for any assistance.
-4. Note that entities brought from either "Managed by me" and/or "Managed by others" can be viewed and used by all users and has no impact on the user contextuality. User contextuality applies only to the data sources and NOT to the entities that are brought into CI by these dataflows.
+If your environment contains Power Platform dataflows, the **Data Sources** page lists three sections: 
+- **Shared**: Data sources that can be managed by all Customer Insights admins. Power BI dataflows,  your own storage account, and attaching to a Dataverse-managed data lake are examples of shared data sources.
+- **Managed by me**: Power Platform dataflows created and can be managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.
+- **Managed by others**: Power Platform dataflows created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.
+> [!NOTE]
+> All entities can be viewed and used by other users. User contextuality applies only to the data sources and not to the entities that result from these dataflows.
 
-If there exists no Power Platform dataflows, you will NOT see any groups or sections but just a list of all datasources in a table view.
+If no Power Platform dataflows are used, you won't see any groups or sections. The **Data Sources** page contains only a list of all data sources.
 
 You'll see the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by every column.
 
