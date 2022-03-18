@@ -21,7 +21,7 @@ searchScope:
 
 Organize your data using tags and columns to find data quickly and easily and view the data the way you want.
 
-Tags and columns are currently supported with Segments for individual customers. Segments are used in the following examples.
+Tags and columns are currently supported with **Segments** for individual customers. Segments are used in the following examples.
 
 ## Manage tags
 
