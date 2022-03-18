@@ -5,8 +5,8 @@ ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
-author: NimrodMagen, Aditya Kuppa
-ms.author: nimagen, adkuppa
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 searchScope: 
   - ci-system-about
