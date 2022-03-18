@@ -32,7 +32,7 @@ This feature lets you find similar customers in your customer base using artific
 
 1. Review the suggested name for your new segment and change it if necessary.
 
-1. Optionally, add tags to the new segment. [Learn more about tags.](organize-data.md#manage-tags)
+1. Optionally, add [tags](organize-list-views.md#manage-tags) to the new segment.
 
 1. Review the fields that define your new segment. These fields define the basis on which the system will try to find similar customers to your source segment. The system will select recommended fields by default.
   Fields that can significantly reduce the model performance are automatically excluded:
@@ -65,7 +65,7 @@ You can [work with the output of a similar segment](segments.md) as you do with 
 
 To refresh a similar segment, select it on the **Segments** page and select **Refresh** in the action bar.
 
-Editing a similar segment will reprocess your data. The previously created segment gets updated with refreshed data.    
+Editing a similar segment will reprocess your data. The previously created segment gets updated with refreshed data.
 To edit a similar segment, select it on the **Segments** page and select **Edit** in the action bar. Apply your changes and select **Run** to start the processing.
 
 ## Delete a similar segment

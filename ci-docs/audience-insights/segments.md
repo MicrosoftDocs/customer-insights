@@ -43,11 +43,11 @@ There are multiple ways to create a new segment:
 
 ## Manage existing segments
 
-Go to the **Segments** page, to view all your saved segments and manage them.
+Go to the **Segments** page to view all your saved segments and manage them.
 
 Each segment is represented by a row that includes additional information about the segment.
 
-:::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options.":::
+:::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options." lightbox="media/segments-selected-segment.png":::
 
 The following action are available when you select a segment:
 
@@ -64,7 +64,7 @@ The following action are available when you select a segment:
 - **Download** the list of members as a .CSV file.
 - **Manage exports** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
-- **Columns** to [customize the columns](organize-list-views.md#customize-columns) that display.
+- **Columns** to [customize the columns](organize-list-views.mdd#customize-columns) that display.
 - **Filter** to [filter on tags](organize-list-views.md#filter-on-tags).
 - **Search name** to search by segment name.
 
