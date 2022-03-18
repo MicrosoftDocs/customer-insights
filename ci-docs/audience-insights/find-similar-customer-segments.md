@@ -32,7 +32,7 @@ This feature lets you find similar customers in your customer base using artific
 
 1. Review the suggested name for your new segment and change it if necessary.
 
-1. Optionally, add tags to the new segment. [Learn more about tags.](organizing-data.md#manage-tags)
+1. Optionally, add tags to the new segment. [Learn more about tags.](organize-data.md#manage-tags)
 
 1. Review the fields that define your new segment. These fields define the basis on which the system will try to find similar customers to your source segment. The system will select recommended fields by default.
   Fields that can significantly reduce the model performance are automatically excluded:
