@@ -1,5 +1,5 @@
 ---
-title: "Real-time data ingestion and limitations"
+title: "Real-time data ingestion (Preview)"
 description: "General information about real-time capabilities in audience insights."
 ms.date: 10/27/2020
 ms.reviewer: mhart
