@@ -42,11 +42,9 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 > - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-1. On the Matching conditions screen, select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
+1. On the Matching conditions screen, drag and drop entities in the order you want. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
 
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
-
-1. Select **Done**.
   
 The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
@@ -54,9 +52,7 @@ The primary entity *eCommerce:eCommerceContacts* is matched with the next entity
 
 Match rules specify the logic by which a specific pair of entities will be matched. A rule consists of one or more conditions.
 
-The **Needs rules** warning next to an entity name suggests that no match rule is defined for a match pair.
-
-:::image type="content" source="media/match-rule-add.png" alt-text="Screenshot of the Matched record details section with control to add rules highlighted.":::
+The warning next to an entity name means that no match rule is defined for a match pair.
 
 1. Select **Add rule** for an entity to define match rules.
 

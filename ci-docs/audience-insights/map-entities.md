@@ -23,7 +23,9 @@ The first step in customer or account unification is selecting the entities and 
 
 1. Go to **Data** > **Unify**.
 
-1. On the **Source fields** tile, select **Get started**.
+1. Select **Guide me**.
+
+1. Select **Select entities**.
 
 1. Select the **Entities** to combine into a customer or account profile.
 
@@ -60,7 +62,7 @@ The first step in customer or account unification is selecting the entities and 
 
 1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, or enter your custom attribute-type name. These attributes are listed under **Define the data in the unmapped fields**.
 
-1. Click **Next**.
+1. Select **Next**. Or, to exit the wizard, select **Save and close**.
 
 > [!div class="nextstepaction"]
 > [Next step: Remove duplicates](remove-duplicates.md)
