@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 03/16/2022
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
@@ -43,28 +43,29 @@ To use [out-of-box prediction models](predictions-overview.md#out-of-box-models)
 
 > [!IMPORTANT]
 > 1. Customer Insights and Dataverse have to be in the same region to enable data sharing.
-> 1. You must have global administrator role on the Dataverse environment
-> 1. There should not be any previous/existing CI instance associated with that Dataverse environment aleady. Refer [here](manage-environments.md#Remove-an-existing/previous-connection-from-a-CI-instance-to-a-Dataverse-environment) on how to remove any existing associations.
+> 1. You must have a global administrator role in the Dataverse environment.
+> 1. No existing Customer Insights environment is already associated with that Dataverse environment. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
-> [!NOTE]
-> Customer Insights does not support the following data sharing scenarios:
-> - If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Dataverse-managed data lake.
-> - If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
+Customer Insights does not support the following data sharing scenarios:
+- If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Dataverse-managed data lake.
+- If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
 
-### Remove an existing/previous connection from a CI instance to a Dataverse environment
-If you get an error message "This CDS organization is already attached to another Customer Insights instance." when connecting to a Dataverse environment, it implies  that specific Dataverse environment has already has an association with an existing/previously active CI instance. Follow the below steps to remove that association to a previous CI instance. You must be a global administrator on the Dataverse environment to perform these changes. Note that these changes might not be synchronous and can take anywhere from a couple of minutes to a couple of hours.
+### Remove an existing connection to a Dataverse environment
 
-1. Go to the maker portal https://make.powerapps.com
-1. Select the appropriate environment from the top right side environment picker.
-1. Go to the left side navigation and select "Solutions"
-1. Uninstall/delete the solution named "Dynamics 365 Customer Insights Customer Card Add-in (Preview)"
+When connecting to a Dataverse environment, the error message **This CDS organization is already attached to another Customer Insights instance** means that the Dataverse environment is already used in a Customer Insights environment. You can remove the existing connection as a global administrator on the Dataverse environment. It can take a couple of hours to populate the changes.
 
-Alternatively,
-1. Go to the Dataverse environment (the https://xyz.crm.dynamics.com  link)
-2. Navigate to "Advanced Settings" -> "Solutions"
-3. Uninstall the solution named "CustomerInsightsCustomerCard"
+1. Go to [Power Apps](https://make.powerapps.com).
+1. Select the environment from the environment picker.
+1. Go to **Solutions**
+1. Uninstall or delete the solution named **Dynamics 365 Customer Insights Customer Card Add-in (Preview)**.
+
+OR 
+
+1. Open your Dataverse environment.
+1. Go to **Advanced Settings** > **Solutions**.
+1. Uninstall the **CustomerInsightsCustomerCard** solution.
 
 ## Copy the environment configuration
 
