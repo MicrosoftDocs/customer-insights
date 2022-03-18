@@ -79,14 +79,15 @@ Provide your own Microsoft Dataverse environment to share data (profiles and ins
 Connecting to your Dataverse environment also enables you to [ingest data from on-premises data sources using Power Platform dataflows and gateways](data-sources.md#add-data-from-on-premises-data-sources). You can also use [out-of-box prediction models](predictions-overview.md?tabs=b2c#out-of-box-models) by connecting to a Dataverse environment.
 
 > [!IMPORTANT]
-> Customer Insights and Dataverse have to be in the same region to enable data sharing.
+> 1. Customer Insights and Dataverse have to be in the same region to enable data sharing.
+> 1. You must have a global administrator role in the Dataverse environment.
+> 1. No existing Customer Insights environment is already associated with that Dataverse environment. Learn how to [remove an existing connection to a Dataverse environment](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto enabled for net new instances.":::
 
-> [!NOTE]
-> Customer Insights does not support the following data sharing scenarios:
-> - If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Dataverse-managed data lake.
-> - If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
+Customer Insights does not support the following data sharing scenarios:
+- If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Dataverse-managed data lake.
+- If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
 
 ### Step 4: Finalize the settings
 
