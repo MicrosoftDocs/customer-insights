@@ -58,9 +58,6 @@
     - name: Work with business accounts
       href: audience-insights/work-with-business-accounts.md
 
-    - name: Organize data
-      href: audience-insights/organize-data.md
-      
     - name: Data sources
       items:
         - name: Data sources overview
@@ -142,6 +139,8 @@
           href: audience-insights/segment-insights.md
         - name: Find similar customers
           href: audience-insights/find-similar-customer-segments.md
+        - name: Organize list views
+          href: audience-insights/organize-list-views.md
     
     - name: Measures
       items: 
