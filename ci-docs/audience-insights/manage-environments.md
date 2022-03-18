@@ -1,13 +1,12 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 12/06/2021
-
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
-author: NimrodMagen
-ms.author: nimagen
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 searchScope: 
   - ci-system-about
@@ -15,8 +14,6 @@ searchScope:
 ---
 
 # Manage environments
-
-
 
 ## Switch environments
 
@@ -45,14 +42,30 @@ The **Microsoft Dataverse** step lets you connect Customer Insights with your Da
 To use [out-of-box prediction models](predictions-overview.md#out-of-box-models), configure data sharing with Dataverse. Or you can enable data ingestion from on-premises data sources, providing the Microsoft Dataverse environment URL that your organization administers.
 
 > [!IMPORTANT]
-> Customer Insights and Dataverse have to be in the same region to enable data sharing.
+> 1. Customer Insights and Dataverse have to be in the same region to enable data sharing.
+> 1. You must have a global administrator role in the Dataverse environment.
+> 1. No existing Customer Insights environment is already associated with that Dataverse environment. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
 
-> [!NOTE]
-> Customer Insights does not support the following data sharing scenarios:
-> - If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Dataverse-managed data lake.
-> - If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
+Customer Insights does not support the following data sharing scenarios:
+- If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Dataverse-managed data lake.
+- If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
+
+### Remove an existing connection to a Dataverse environment
+
+When connecting to a Dataverse environment, the error message **This CDS organization is already attached to another Customer Insights instance** means that the Dataverse environment is already used in a Customer Insights environment. You can remove the existing connection as a global administrator on the Dataverse environment. It can take a couple of hours to populate the changes.
+
+1. Go to [Power Apps](https://make.powerapps.com).
+1. Select the environment from the environment picker.
+1. Go to **Solutions**
+1. Uninstall or delete the solution named **Dynamics 365 Customer Insights Customer Card Add-in (Preview)**.
+
+OR 
+
+1. Open your Dataverse environment.
+1. Go to **Advanced Settings** > **Solutions**.
+1. Uninstall the **CustomerInsightsCustomerCard** solution.
 
 ## Copy the environment configuration
 
@@ -94,9 +107,29 @@ After refreshing the data sources, go to **Data** > **Unify**. Here you'll find 
 
 When the data unification is complete, go to **Measures** and **Segments** to refresh them too.
 
+## Change the owner of an environment
+
+While several users can have admin permissions in Customer Insights, only one user is the owner of an environment. By default, it's the admin who creates an environment initially. As the admin of an environment, you can assign ownership to another user with admin permissions.
+
+1. Select the **Environment** picker in the header of the app.
+
+1. Select the **Edit** icon.
+
+1. In the **Edit environment** box, go to the **Basic information** step.
+
+1. In the **Change owner of environment** field, choose the new owner of the environment.  
+
+1. Select **Review and finish**, then **Update** to apply the changes. 
+
+## Claim ownership of an environment
+
+If the owner of an environment leaves the organization or their user account is deleted, the environment will have no owner. A user with admin permissions can claim the ownership and become the new owner. They can continue to own the environment or [change the ownership to another admin](#change-the-owner-of-an-environment). 
+
+To claim ownership, select the **Take ownership** button that shows at the top of every page in Customer Insights when the original owner left the organization.
+
 ## Reset an existing environment
 
-As an administrator, you can reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
+As the owner of an environment, you can reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
 
 1.	Select the **Environment** picker in the header of the app. 
 
@@ -108,7 +141,7 @@ As an administrator, you can reset an environment to an empty state if you want 
 
 ## Delete an existing environment
 
-As an administrator, you can delete an environment you administer.
+As the owner of an environment, you can delete an environment you administer.
 
 1.	Select the **Environment** picker in the header of the app.
 
@@ -117,6 +150,9 @@ As an administrator, you can delete an environment you administer.
 3. Choose the **Delete** option. 
 
 4.	To confirm the deletion, enter the environment name and select **Delete**.
+
+> [!NOTE]
+> Deleting an environment does not remove the association to a Dataverse environment.Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

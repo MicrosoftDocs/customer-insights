@@ -21,7 +21,7 @@ To configure HERE Technologies enrichments, the following prerequisites must be 
 
 - You have an active HERE Technologies subscription. To get a subscription, you can [sign up here](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) or [contact HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you) directly. [Learn more about HERE Technologies Location Enrichment.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- A HERE [connection](connections.md) is available *or* you have [administrator](permissions.md#administrator) permissions and the HERE Technologies API key.
+- A HERE [connection](connections.md) is available *or* you have [administrator](permissions.md#admin) permissions and the HERE Technologies API key.
 
 ## Configure the enrichment
 
