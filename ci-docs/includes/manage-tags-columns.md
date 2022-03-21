@@ -1,9 +1,3 @@
-# Work with tags and columns
-
-Organize lists using tags and columns to find data quickly and easily and view the data the way you want.
-
-Tags and columns are currently supported with **Segments** for individual customers. Segments are used in the following examples.
-
 ## Manage tags
 
 A tag is a label that’s used to categorize and organize items such as segments. For example, add a tag to segments that are part of a specific campaign. Then, you can filter by that tag to identify the segments for the campaign quickly and easily.

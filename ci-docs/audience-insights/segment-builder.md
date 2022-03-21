@@ -117,7 +117,7 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
    > - If the attribute you want to project is just one hop away from the *Customer* entity, that attribute doesn't need to be present in every rule of the segment query you are building.
    > - **Projected attributes** are factored in when using set operators.
 
-1. Before you save and run the segment, select **Edit details** next to the segment name. Provide a name for your segment and update the suggested **Output entity name** for the segment. Optionally, add a description and [tags](organize-list-views.md#manage-tags) to the segment.
+1. Before you save and run the segment, select **Edit details** next to the segment name. Provide a name for your segment and update the suggested **Output entity name** for the segment. Optionally, add a description and [tags](work-with-tags-columns.md#manage-tags) to the segment.
 
 1. Select **Run** to save the segment, activate it and begin processing your segment based on all the rules and conditions. Otherwise, it will be saved as an inactive segment.
 
@@ -152,7 +152,7 @@ Quick segments let you build simple segments with a single operator quickly for 
     > [!div class="mx-imgBorder"]
     > ![Name and estimation for a quick segment.](media/quick-segment-name.png "Name and estimation for a quick segment")
 
-5. Provide a **Name** and **Output entity name** for your segment. Optionally, add [tags](organize-list-views.md#manage-tags).
+5. Provide a **Name** and **Output entity name** for your segment. Optionally, add [tags](work-with-tags-columns.md#manage-tags).
 
 6. Select **Save** to create your segment.
 
