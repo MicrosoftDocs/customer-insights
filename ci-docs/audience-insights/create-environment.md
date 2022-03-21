@@ -6,8 +6,8 @@ ms.reviewer: mhart
 
 ms.subservice: audience-insights
 ms.topic: how-to
-author: MichelleDevaney, Aditya Kuppa
-ms.author: midevane
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
 searchScope: 
@@ -80,7 +80,7 @@ Connecting to your Dataverse environment also enables you to [ingest data from o
 
 > [!IMPORTANT]
 > 1. Customer Insights and Dataverse have to be in the same region to enable data sharing.
-> 1. You must have a global administrator role in the Dataverse environment. Verify if this [Dataverse environment is restricted](https://docs.microsoft.com/en-us/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to any security groups and make sure you are added to those security groups.
+> 1. You must have a global administrator role in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you are added to those security groups.
 > 1. No existing Customer Insights environment is already associated with that Dataverse environment. Learn how to [remove an existing connection to a Dataverse environment](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto enabled for net new instances.":::
