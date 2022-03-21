@@ -1,7 +1,7 @@
 ---
 title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 02/22/2022
+ms.date: 03/21/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -62,8 +62,6 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 1. To enable an Azure private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
 
-<!--- Need more information --->
-
 1. Enter the name of the **Container** that contains the model.json or manifest.json file to import data from, and select **Next**.
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
@@ -106,22 +104,28 @@ You can update the *Connect to storage account using* option from an account key
 
    :::image type="content" source="media/data_sources_edit_ADLS.png" alt-text="Dialog box to edit Azure data lake data source.":::
 
-1. Optionally, you can update from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
+1. Change any of the following information:
 
-   > [!NOTE]
-   > One of the following roles must be assigned to the storage account or container:
+   - **Description**
+   - **Connect your storage using** and connection information. You can't change **Container** information when updating the connection.
+      > [!NOTE]
+      > One of the following roles must be assigned to the storage account or container:
+        > - Storage Blob Data Reader
+        > - Storage Blob Data Owner
+        > - Storage Blob Data Contributor
 
-   > - Storage Blob Data Reader
-   > - Storage Blob Data Owner
-   > - Storage Blob Data Contributor
+   - **Enable private link**. See  [What is Azure Private Link?](/azure/private-link/private-link-overview).
 
-1. Optionally, choose a different model.json or manifest.json file with a different set of entities from the container.
+1. Select **Next**.
+1. Change any of the following:
+   - Navigate to a different model.json or manifest.json file with a different set of entities from the container.
+   - To add additional entities to ingest, select **New entity**.
+   - To remove any already selected entities if there are no dependencies, select the entity and **Delete**.
 
-1. Optionally, you can select additional entities to ingest. You can also remove any already selected entities if there are no dependencies.
+      > [!IMPORTANT]
+      > If there are dependencies on the existing model.json or manifest.json file and the set of entities, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
+   - To edit an entity, change the [incremental refresh](data-sources-incremental-refresh.md), or run a one-time full refresh, select **Edit**.
 
-   > [!IMPORTANT]
-   > If there are dependencies on the existing model.json or manifest.json file and the set of entities, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
-
-1. Optionally, you can select additional attributes or entities to enable data profiling on or disable already selected ones.
+1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
 
 1. Click **Save** to apply your changes and return to the **Data sources** page.

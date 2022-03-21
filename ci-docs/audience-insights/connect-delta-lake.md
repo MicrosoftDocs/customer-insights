@@ -1,7 +1,7 @@
 ---
 title: "Connect to data in Databricks delta lake"
 description: "Work with data in Databricks delta lake"
-ms.date: 02/25/2022
+ms.date: 03/21/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -27,10 +27,6 @@ This article provides information on how to ingest data from Delta Lake on Datab
 
 - Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-## Prerequisites
-- Obtain the container name and folder path for where the delta lake folder resides.
-- Obtain the Synapse connection and spark pool information for the delta lake.
-
 ## Connect to Databricks delta lake storage
 
 1. Go to **Data** > **Data sources**.
@@ -50,8 +46,6 @@ This article provides information on how to ingest data from Delta Lake on Datab
    - **Account key**: Enter the **Account name** and **Account key**.
 
 1. To enable an Azure private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
-
-<!--- Need more information --->
 
 1. Enter the name of the **Container** that contains the delta lake folder to import data from.
 
@@ -90,10 +84,11 @@ This article provides information on how to ingest data from Delta Lake on Datab
 
 1. Select **Next**.
 
-1. Optionally, you can select additional entities to ingest. You can also remove any already selected entities if there are no dependencies.
+1. Change any of the following:
+   - To add additional entities to ingest, select **New entity**.
+   - To remove any already selected entities if there are no dependencies, select the entity and **Delete**.
+   - To edit an entity, change the [incremental refresh](data-sources-incremental-refresh.md), or run a one-time full refresh, select **Edit**.
 
-1. Optionally, you can select additional attributes or entities to enable data profiling on or disable already selected ones.
+1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
 
-1. Optionally, you can edit the incremental refresh timeframe.
-
-1. Click **Save** to apply your changes and return to the Data Sources page.
+1. Click **Save** to apply your changes and return to the **Data sources** page.
