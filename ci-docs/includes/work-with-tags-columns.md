@@ -1,23 +1,4 @@
----
-title: "Organize list views"
-description: "Overview on ways to organize list views using tags and columns"
-ms.date: 03/17/2022
-
-ms.subservice: audience-insights
-ms.topic: overview
-author: JimsonChalissery
-ms.author: jimsonc
-ms.reviewer: v-wendysmith
-manager: shellyha
-searchScope: 
-  - ci-customers-page
-  - ci-enrichment-details
-  - ci-segments
-  - ci-segment-details
-  - customerInsights
----
-
-# Organize list views
+# Work with tags and columns
 
 Organize lists using tags and columns to find data quickly and easily and view the data the way you want.
 
