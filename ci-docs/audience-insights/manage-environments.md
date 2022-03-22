@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 03/18/2022
+ms.date: 03/21/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
@@ -43,7 +43,7 @@ To use [out-of-box prediction models](predictions-overview.md#out-of-box-models)
 
 > [!IMPORTANT]
 > 1. Customer Insights and Dataverse have to be in the same region to enable data sharing.
-> 1. You must have a global administrator role in the Dataverse environment.
+> 1. You must have a global administrator role in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you are added to those security groups.
 > 1. No existing Customer Insights environment is already associated with that Dataverse environment. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="Configuration options to enable data sharing with Microsoft Dataverse.":::
