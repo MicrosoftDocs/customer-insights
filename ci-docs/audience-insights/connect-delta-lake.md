@@ -45,7 +45,7 @@ This article provides information on how to ingest data from Delta Lake on Datab
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
    - **Account key**: Enter the **Account name** and **Account key**.
 
-1. To enable an Azure private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
+1. If you have an Azure resource or subscription connection and want to enable an Azure private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
 
 1. Enter the name of the **Container** that contains the delta lake folder to import data from.
 
@@ -74,9 +74,7 @@ This article provides information on how to ingest data from Delta Lake on Datab
 
 1. Go to **Data** > **Data sources**.
 
-1. Next to the data source you'd like to update, select the ellipsis.
-
-1. Select the **Edit** option from the list.
+1. Next to the data source you'd like to update, select **Edit**.
 
    :::image type="content" source="media/data_sources_edit_deltalake.png" alt-text="Dialog box to edit delta lake storage":::
 
@@ -88,6 +86,8 @@ This article provides information on how to ingest data from Delta Lake on Datab
    - To add additional entities to ingest, select **New entity**.
    - To remove any already selected entities if there are no dependencies, select the entity and **Delete**.
    - To edit an entity, change the [incremental refresh](data-sources-incremental-refresh.md), or run a one-time full refresh, select **Edit**.
+
+     :::image type="content" source="media/data_sources_editdelta_entity.png" alt-text="Dialog box to edit an entity":::
 
 1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
 

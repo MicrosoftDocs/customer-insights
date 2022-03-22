@@ -39,9 +39,6 @@ This article provides information on how to ingest data from Azure Data Lake inc
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
 
-## Prerequisites
-- Obtain the container name and folder path for where the model.json or manifest.json file resides.
-
 ## Connect to Azure data lake storage
   
 1. Go to **Data** > **Data sources**.
@@ -60,13 +57,13 @@ This article provides information on how to ingest data from Azure Data Lake inc
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
    - **Account key**: Enter the **Account name** and **Account key**.
 
-1. To enable an Azure private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
+1. If you have an Azure resource or subscription connection and want to enable an Azure private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
 
 1. Enter the name of the **Container** that contains the model.json or manifest.json file to import data from, and select **Next**.
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
 
-1. Navigate to the folder containing the model.json or manifes.cdm.json file.
+1. Navigate to the folder containing the model.json or manifest.cdm.json file.
 
 1. If you want to edit the entities in a JSON editing interface, select to the left of the json file name and then select **Edit schema**. Make changes and select **Save**.
 
@@ -84,7 +81,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
    1. Optionally, change the partition pattern.
    1. Select **X** to save and close the panel.
 
-1. To enable analytics and other capabilities, select **Attributes**. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
+1. To enable analytics and other capabilities, select **Attributes**. The Manage attributes page displays. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
@@ -98,9 +95,7 @@ You can update the *Connect to storage account using* option from an account key
 
 1. Go to **Data** > **Data sources**.
 
-1. Next to the data source you'd like to update, select the ellipsis.
-
-1. Select the **Edit** option from the list.
+1. Next to the data source you'd like to update, select  **Edit**.
 
    :::image type="content" source="media/data_sources_edit_ADLS.png" alt-text="Dialog box to edit Azure data lake data source.":::
 
@@ -114,7 +109,7 @@ You can update the *Connect to storage account using* option from an account key
         > - Storage Blob Data Owner
         > - Storage Blob Data Contributor
 
-   - **Enable private link**. See  [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Enable private link** (for Azure resource or subscription connections). For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
 
 1. Select **Next**.
 1. Change any of the following:
@@ -125,6 +120,8 @@ You can update the *Connect to storage account using* option from an account key
       > [!IMPORTANT]
       > If there are dependencies on the existing model.json or manifest.json file and the set of entities, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
    - To edit an entity, change the [incremental refresh](data-sources-incremental-refresh.md), or run a one-time full refresh, select **Edit**.
+
+     :::image type="content" source="media/data_sources_editADLS_entity.png" alt-text="Dialog box to edit an entity":::
 
 1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
 
