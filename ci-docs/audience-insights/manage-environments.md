@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 03/21/2022
+ms.date: 03/22/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
@@ -69,7 +69,7 @@ OR
 
 ## Copy the environment configuration
 
-When you create a new environment, you can choose to copy the configuration from an existing environment. 
+As an admin, you can choose to copy the configuration from an existing environment when you create a new one. 
 
 :::image type="content" source="media/environment-settings-dialog.png" alt-text="Screenshot of the settings options in the environment settings.":::
 
@@ -90,12 +90,14 @@ The following configuration settings are copied:
 - Model management
 - Role assignments
 
-The following data is *not* copied:
+## Set up a copied environment
+
+When you copy the environment configuration, the following data is *not* copied:
 
 - Customer profiles.
 - Data source credentials. You'll have to provide the credentials for every data source and refresh the data sources manually.
-
 - Data sources from the Common Data Model folder and Dataverse-managed data lake. You'll have to create those data sources manually with the same name as in the source environment.
+- Connection secrets that are used for exports and enrichments. You have to reauthenticate the connections and then reactivate enrichments and exports. 
 
 When you copy an environment, you'll see a confirmation message that the new environment has been created. Select **Go to data sources** to see the list of data sources.
 
@@ -106,6 +108,8 @@ All the data sources will show a **Credentials Required** status. Edit the data 
 After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Run** to start the data unification process and create the unified customer entity.
 
 When the data unification is complete, go to **Measures** and **Segments** to refresh them too.
+
+Before you reactivate exports and enrichments, go to **Admin** > **Connections** to reauthenticate the connections in your new environment.
 
 ## Change the owner of an environment
 
