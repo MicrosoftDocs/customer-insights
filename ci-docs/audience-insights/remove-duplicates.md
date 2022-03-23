@@ -87,24 +87,24 @@ You can reconfigure and fine-tune most of the deduplication parameters.
 
 1. Go to **Data** > **Unify**.
 
-1. Select **Edit** on the **Duplicates** tile.
+1. Select **Edit** on the **Duplicate records** tile.
 
 1. To change merge preferences, select the entity.
    1. Select **Edit merge preferences** and change the record to keep option.
    1. To change merge preferences on individual attributes of an entity, select **Advanced** and make the necessary changes.
    1. Select **Done**.
 
-1. To manage rules, choose from any of the following:
+1. To manage rules, choose any of the following:
 
-   - **Create a new rule** by selecting **Add rule**.
+   - **Create a new rule**: Select **Add rule** under the appropriate entity.
   
-   - **Change rule conditions** by selecting **Edit** on the rule and choose different fields.
+   - **Change rule conditions**: Select **Edit** on the rule and choose different fields.
 
-   - **Deactivate a rule** to retain a deduplication rule while excluding it from the matching process.
+   - **Deactivate a rule**: Select **Deactivate** on the rule to retain a deduplication rule while excluding it from the matching process.
 
-   - **Duplicate a rule** if you've defined a rule and would like to create a similar rule with modifications, select **Duplicate**.
+   - **Duplicate a rule**: Select **Duplicate** on the rule to create a similar rule with modifications.
 
-   - **Delete a rule** by selecting **Delete**.
+   - **Delete a rule**: Select **Delete** on the rule.
 
 1. Select **Done**.
 

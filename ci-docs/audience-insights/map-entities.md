@@ -39,11 +39,13 @@ The first step in customer or account unification is selecting the entities and 
 
 ## Select primary key and semantic type for attributes
 
+For each entity, perform the following steps.
+
 <!--- Insert screenshot --->
 
-1. Choose the **Primary key** for each entity. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
+1. Choose the **Primary key**. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
 
-1. To use AI models for smart prediction of semantics, save time and improve accuracy, turn on **Intelligent mapping**. Intelligent mapping highlights AI-based semantics recommendation in the **Type** field. You can override the suggested selection by choosing any semantic type from the available list of options.
+1. To use AI models for smart prediction of semantics, save time and improve accuracy, leave **Intelligent mapping** on. Intelligent mapping highlights AI-based semantics recommendation in the **Type** field. You can override the suggested selection by choosing any semantic type from the available list of options.
 
 1. For each attribute, choose a semantic **Type** that best describes that attribute, such as name, city, or email address.
 
@@ -62,7 +64,7 @@ The first step in customer or account unification is selecting the entities and 
 
 1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, or enter your custom attribute-type name. These attributes are listed under **Define the data in the unmapped fields**.
 
-1. Select **Next**. Or, to exit the wizard, select **Save and close**.
+1. After completing the steps for each entity, select **Next**. 
 
 > [!div class="nextstepaction"]
 > [Next step: Remove duplicates](remove-duplicates.md)

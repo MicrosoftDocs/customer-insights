@@ -35,14 +35,14 @@ If you enriched entities on the data source level to help improve your unificati
 Each match unifies two or more entities into a single, consolidated entity. At the same time, it keeps the unique customer records. The match order indicates the order in which the system tries to match the records.
 
 > [!IMPORTANT]
-> The entity that you choose as your primary entity will serve as the basis for your unified profiles dataset. Additional entities that are selected during the match phase will be added to this entity. This doesn't mean that the unified entity will include *all* of the data included in this entity.
+> The entity that you choose as your primary entity will serve as the basis for your unified profiles dataset. Additional entities that are selected will be added to this entity. This doesn't mean that the unified entity will include *all* of the data included in this entity.
 >
-> There are two considerations that can help you choose the hierarchy of your entities:
+> Important considerations:
 >
 > - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-1. On the Matching conditions screen, drag and drop entities in the order you want. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
+1. On the Matching conditions screen, drag and drop entities in the order you want, or use the move up and down arrows. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
 
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
   
@@ -92,34 +92,12 @@ Match rules represent sets of conditions. To match entities by conditions based 
 
 1. Select **Add rule** on the entity you want to add rules to.
 
-2. Follow the steps in [Define rules for match pairs](#define-rules-for-match-pairs).
+1. Follow the steps in [Define rules for match pairs](#define-rules-for-match-pairs).
 
 > [!NOTE]
 > The order of rules matters. The matching algorithm tries to match on the basis of your first rule and continues to the second rule only if no matches were identified with the first rule.
 
-## Run the match process
-
-With configured match rules, including cross-entity matching and deduplication rules, you can run the match process.
-
-Select **Run** to start the process. The matching algorithm takes some time to complete and you can't change the configuration until it completes. To make changes, you can cancel the run. Select the status of the job and select **Cancel job** on the **Progress details** pane.
-
-You'll find the result of a successful run, the unified customer profile entity, on the **Entities** page. Your unified customer entity is called **Customers** in the **Profiles** section. The first successful match run creates the unified *Customer* entity. All subsequent match runs expand that entity.
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
-
-## Review and validate your matches
-
-Evaluate the quality of your match pairs and refine them if necessary.
-
-The tiles on top of the page show key metrics, summarizing the number of matched records and duplicates.
-
-:::image type="content" source="media/match-KPIs.png" alt-text="Cropped screenshot of the key metrics on the Match page with numbers and details.":::
-
-- **Unique source records** shows the number of individual source records that were processed in last match run.
-- **Matched and non-matched records** highlights how many unique records remain after processing the match rules.
-- **Matched records only** shows the number of matches across all of your match pairs.
-
-You can assess the results of each match pair and its rules in the **Matched records details** table. Compare the number of records that came from a match pair against the percentage of successfully matched records.
+## Preview rule results
 
 Review the rules of a match pair to see the percentage of successfully matched records at the rule level. Select the ellipsis (...) and then select **Match preview** to view all these records on the rule level. We recommend that you take a look at some records to validate that they were matched correctly.
 

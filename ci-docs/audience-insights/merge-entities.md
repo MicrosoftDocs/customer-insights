@@ -111,7 +111,7 @@ Combine separated fields to create a merged attribute.
 
 1. Specify the merge winner policy in the **Combine fields by** dropdown.
 
-1. Select **Add fields** to combine more fields.
+1. Select **Add field** to combine more fields.
 
 1. Provide a **Name** and an **Output field name**.
 
@@ -147,9 +147,7 @@ Some entities contain more details than others. If an entity includes the latest
 
 1. In the **Combine fields** pane, select **Move up/down** to set the order or drag and drop them in the desired position.
 
-1. Confirm the change.
-
-1. Select **Save**
+1. Select **Done**.
 
 ## Configure Customer ID generation
 
@@ -186,24 +184,8 @@ As part of the customer profile generation configuration process, you can define
 
 1. Select **Done**. The cluster is created when the merge is run and the cluster identifiers are added as new fields to the *Customer* entity.
 
-## Run your merge
-
-Whether you manually merge attributes or let the system merge them, you can always run your merge. Select **Run** on the **Unified fields** page to start the process.
-
-> [!div class="mx-imgBorder"]
-> ![Data merge Save and Run.](media/configure-data-merge-save-run.png "Data merge Save and Run")
-
-Choose **Run only Merge** if you only want to see the output reflected in the unified customer entity. Downstream processes will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
-
-Choose **Run Merge and downstream processes** to refresh the system with your changes. All processes, including enrichment, segments, and measures will rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
-
-To make more changes and rerun the step, you can cancel an in-progress merge. Select **Refreshing ...** and select **Cancel job**  in the side pane that appears.
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
-
-:::image type="content" source="media/process-detail-path.png" alt-text="Drill-down path to get to process details from the task status link.":::
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
-
 > [!div class="nextstepaction"]
 > [Next step: Review unification](review-unification.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
