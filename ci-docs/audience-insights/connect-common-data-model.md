@@ -1,7 +1,7 @@
 ---
 title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 03/21/2022
+ms.date: 03/24/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -119,7 +119,7 @@ You can update the *Connect to storage account using* option from an account key
 
       > [!IMPORTANT]
       > If there are dependencies on the existing model.json or manifest.json file and the set of entities, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
-   - To edit an entity, change the [incremental refresh](data-sources-incremental-refresh.md), or run a one-time full refresh, select **Edit**.
+   - To edit an entity, change the [incremental refresh](incremental-refresh-data-sources.md), or run a one-time full refresh, select **Edit**.
 
      :::image type="content" source="media/data_sources_editADLS_entity.png" alt-text="Dialog box to edit an entity":::
 
