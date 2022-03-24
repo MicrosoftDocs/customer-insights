@@ -22,7 +22,7 @@ You can view, add, and remove tags from an item. Add tags as you create an item.
 
 ## Filter on tags
 
-Use tags to filter your list of items. 
+Use tags to filter your list of items.
 
 1. Go to the list view. For example, go to **Segments**.
 
@@ -30,7 +30,9 @@ Use tags to filter your list of items.
 
 1. Search and select the tags you want to filter by.
 
-1. Select **Apply**. Only records that match the filter tags display. Your filter selection is saved for this session.
+1. Select **Apply**. Only records that match the filter tags display. Your filter selection is saved until you log out of this session or switch browsers.
+
+1. To clear the filter, select **Filter** and **Clear all**.
 
 ## Customize columns
 
