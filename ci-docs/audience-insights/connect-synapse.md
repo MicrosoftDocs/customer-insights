@@ -58,8 +58,8 @@ In Azure:
 
 1. Choose a **Lake Database** from the workspace connected in the selected Azure Synapse Analytics connection and select **Next**.
 
-1. Select the entities to ingest from the connected database.
+1. Select the entities to ingest from the connected database and select **Next**.
 
 1. Optionally, choose the data entities to allow data profiling on.
 
-1. Select **Save** to apply your selection and start the ingestion of the data from your newly created data source linked to the Lake database tables in Azure Synapse Analytics.
+1. Select **Save** to apply your selection and start the ingestion of the data from your newly created data source linked to the Lake database tables in Azure Synapse Analytics. The **Data sources** page opens showing the new data source in **Refreshing** status.

@@ -34,7 +34,7 @@ This article provides information on how Dataverse users can quickly connect to 
 
 1. Select **Microsoft Dataverse**.
 
-1. Enter a **Name** for the data source.
+1. Enter a **Name** for the data source and an optional **Description**.
 
 1. Provide the **Server address** for the Dataverse organization, and select **Sign in**.
 
@@ -56,8 +56,6 @@ To connect to a different Dataverse data lake, [create a new data source](#conne
 
 1. Go to **Data** > **Data sources**.
 
-2. Next to the data source you'd like to update, select the ellipsis.
+1. Next to the data source you'd like to update, select **Edit**.
 
-3. Select the **Edit** option from the list.
-
-4. Select additional entities from the available list of entities and select **Save**.
+1. Select additional entities from the available list of entities and select **Save**.

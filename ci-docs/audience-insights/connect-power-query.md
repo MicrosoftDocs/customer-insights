@@ -69,10 +69,7 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the vertical ellipsis next to the data source you want to change and select **Edit** from the dropdown menu.
-
-   > [!div class="mx-imgBorder"]
-   > ![Edit option.](media/edit-option-data-sources.png "Edit option")
+1. Next to the data source you'd like to update, select **Edit**.
 
    [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
