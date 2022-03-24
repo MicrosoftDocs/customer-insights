@@ -1,12 +1,12 @@
 ## Manage tags
 
-A tag is a label that’s used to categorize and organize items such as segments. For example, add a tag to segments that are part of a specific campaign. Then, you can filter by that tag to identify the segments for the campaign quickly and easily.
+A tag is a label that’s used to categorize and organize items such as segments or measures. For example, add a tag to segments that are part of a specific campaign. Then, you can filter by that tag to identify the segments for the campaign quickly and easily.
 
-You can view, add, and remove tags from an item. Add tags as you create an item. After creation, manage tags from the list view.
+You can view, add, and remove tags from an item. Add tags as you create an item. After creation, manage tags from the list view. An item can have up to 20 tags.
 
 1. Go to the list view. For example, go to **Segments**.
 
-1. Select the segment whose tags you want to manage.
+1. Select the item whose tags you want to manage.
 
 1. Select the vertical ellipsis (…) and select **Tag**.
 
@@ -14,15 +14,15 @@ You can view, add, and remove tags from an item. Add tags as you create an item.
 
 1. From the **Edit tags** pane, choose any of the following:
 
-   - To add an existing tag to the segment, type a portion of the name in the **Tags** box until you see the tag you want. Select the tag.
-   - To create a tag, type the name in the **Tags** box and press **Enter**. The new tag is added to the segment.
+   - To add an existing tag to the item, type a portion of the name in the **Tags** box until you see the tag you want. Select the tag.
+   - To create a tag, type the name in the **Tags** box and press **Enter**. The new tag is added to the item.
    - To remove a tag, select **X** next to the tag name.
 
 1. Select **Apply**.
 
 ## Filter on tags
 
-Use tags to filter your list of items.
+Use tags to filter your list of items. 
 
 1. Go to the list view. For example, go to **Segments**.
 
@@ -30,7 +30,7 @@ Use tags to filter your list of items.
 
 1. Search and select the tags you want to filter by.
 
-1. Select **Apply**. Only records that match the filter tags display.
+1. Select **Apply**. Only records that match the filter tags display. Your filter selection is saved for this session.
 
 ## Customize columns
 
