@@ -66,7 +66,7 @@ This article provides information on how to ingest data from Delta Lake on Datab
 
 1. To enable analytics and other capabilities, select **Attributes**. The Manage attributes page displays. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
 
-1. To enable an incremental refresh, see [Incremental refresh for Azure data lake and Databricks data sources](data-sources-incremental-refresh.md).
+1. To enable an incremental refresh, see [Incremental refresh for Azure data lake and Databricks data sources](incremental-refresh-data-sources.md).
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
@@ -85,7 +85,7 @@ This article provides information on how to ingest data from Delta Lake on Datab
 1. Change any of the following:
    - To add additional entities to ingest, select **New entity**.
    - To remove any already selected entities if there are no dependencies, select the entity and **Delete**.
-   - To edit an entity, change the [incremental refresh](data-sources-incremental-refresh.md), or run a one-time full refresh, select **Edit**.
+   - To edit an entity, change the [incremental refresh](incremental-refresh-data-sources.md), or run a one-time full refresh, select **Edit**.
 
      :::image type="content" source="media/data_sources_editdelta_entity.png" alt-text="Dialog box to edit an entity":::
 
