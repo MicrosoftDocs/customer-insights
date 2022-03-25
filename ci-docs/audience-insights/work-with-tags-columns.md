@@ -35,7 +35,7 @@ You can view, add, and remove tags from an item. Add tags as you create an item.
 
 1. Select the vertical ellipsis (…) and select **Tag**.
 
-   :::image type="content" source="media/segments_list_tag.png" alt-text="Selected segment with options dropdown list and available options.":::
+   :::image type="content" source="media/segments_list_tag.png" alt-text="Selected segment with options dropdown list and available options."lightbox="media/segments_list_tag.png":::
 
 1. From the **Edit tags** pane, choose any of the following:
 

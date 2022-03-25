@@ -31,7 +31,7 @@ You can find the list of measures on the **Measures** page.
 
 You'll find information about the measure type, the creator, creation date, status, and state. When you select a measure from the list, you can preview the output and download a CSV file.
 
-:::image type="content" source="media/measure-actions.png" alt-text="Actions to manage single measures.":::
+:::image type="content" source="media/measures-actions.png" alt-text="Actions to manage single measures."lightbox="media/measures-actions.png":::
 
 The following actions are available when you select a measure:
 
