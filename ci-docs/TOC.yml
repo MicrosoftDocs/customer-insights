@@ -28,9 +28,6 @@
     - name: Trial FAQ
       href: trial-FAQ.md
 
-- name: Start with a paid license
-  href: paid-license.md
-
 - name: Access your environment
   href: https://home.ci.ai.dynamics.com/
 
@@ -50,13 +47,14 @@
       items: 
         - name: Quickstart guide
           href: audience-insights/get-started.md
+        - name: Start with a paid license
+          href: paid-license.md
         - name: Create a new environment
           href: audience-insights/create-environment.md
         - name: Explore audience insights
           href: audience-insights/home.md
-
-    - name: Work with business accounts
-      href: audience-insights/work-with-business-accounts.md
+        - name: Work with business accounts
+          href: audience-insights/work-with-business-accounts.md
 
     - name: Data sources
       items:
@@ -76,8 +74,6 @@
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Real-time data ingestion
           href: audience-insights/real-time-data-ingestion.md
-        - name: Understand entities and datasets
-          href: audience-insights/entities.md
 
     - name: Data unification
       items:
@@ -89,16 +85,6 @@
           href: audience-insights/match-entities.md
         - name: Merge entities
           href: audience-insights/merge-entities.md
-        - name: Review unified customer profiles
-          href: audience-insights/customer-profiles.md
-        - name: Filter unified customer profiles
-          href: audience-insights/search-filter-index.md
-        - name: Build relationships and connected entities
-          href: audience-insights/relationships.md
-        - name: List customer activities
-          href: audience-insights/activities.md
-        - name: Define semantic mappings
-          href: audience-insights/semantic-mappings.md
 
     - name: Data enrichment
       items:
@@ -125,6 +111,15 @@
         - name: Enrich with SFTP custom import
           href: audience-insights/enrichment-SFTP-custom-import.md
 
+    - name: Unified profiles
+      items:
+        - name: Review unified customer profiles
+          href: audience-insights/customer-profiles.md
+        - name: Filter unified customer profiles
+          href: audience-insights/search-filter-index.md
+        - name: Define customer activities
+          href: audience-insights/activities.md
+   
     - name: Segments
       items:
         - name: Segments overview
@@ -265,6 +260,19 @@
             - name: Power BI
               href: audience-insights/export-power-bi.md
 
+    - name: Entities
+      items:
+        - name: Understand entities
+          href: audience-insights/entities.md
+        - name: Review the entity schemas in Common Data Model
+          href: audience-insights/entity-schemas.md
+        - name: Customer Insights data in Dataverse
+          href: audience-insights/customer-insights-dataverse.md
+        - name: Build relationships and connected entities
+          href: audience-insights/relationships.md
+        - name: Define semantic mappings
+          href: audience-insights/semantic-mappings.md
+
     - name: Administration
       items:
         - name: Set up the system configuration
@@ -275,17 +283,18 @@
           href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
-
-        - name: Security
-          items: 
-            - name: Bring your own Key Vault
-              href: audience-insights/use-azure-key-vault.md
-            - name: Connect to an ADLS storage account using Service Principal
-              href: audience-insights/connect-service-principal.md
-            - name: Export diagnostic logs
-              href: audience-insights/diagnostics.md
-
-    - name: Extensibility
+        - name: Bring your own Key Vault
+          href: audience-insights/use-azure-key-vault.md
+        - name: Connect to a storage account using Service Principal
+          href: audience-insights/connect-service-principal.md
+        - name: Export diagnostic logs
+          href: audience-insights/diagnostics.md
+        - name: Service limits
+          href: service-limits.md
+        - name: DSR rights and requests
+          href: dsr-rights-requests.md
+    
+    - name: APIs
       items:
         - name: Review the entity schemas in Common Data Model
           href: audience-insights/entity-schemas.md
@@ -339,12 +348,6 @@
 
 - name: Engagement insights (preview)
   href: engagement-insights/overview.md
-
-- name: Service limits
-  href: service-limits.md
-
-- name: DSR rights and requests
-  href: dsr-rights-requests.md
 
 - name: Get support
   href: /power-platform/admin/get-help-support
