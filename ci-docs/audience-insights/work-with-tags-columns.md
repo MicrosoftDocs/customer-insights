@@ -43,6 +43,8 @@ You can view, add, and remove tags from an item. Add tags as you create an item.
    - To create a tag, type the name in the **Tags** box and press **Enter**. The new tag is added to the item.
    - To remove a tag, select **X** next to the tag name.
 
+   :::image type="content" source="media/edit_tags.png" alt-text="Edit columns dialog box to add, remove, or move columns.":::
+
 1. Select **Apply**.
 
 ## Filter on tags
@@ -51,7 +53,7 @@ Use tags to filter your list of items.
 
 1. Go to the list view. For example, go to **Segments**.
 
-1. Select **Filter**.
+1. Select **Filter** on the top right of the page.
 
 1. Search and select the tags you want to filter by.
 
@@ -65,7 +67,7 @@ Customize columns to arrange your list of items. You can add or remove columns a
 
 1. Go to the list view. For example, go to **Segments**.
 
-1. Select **Columns**.
+1. Select **Columns** on the top right of the page.
 
    :::image type="content" source="media/edit_columns.png" alt-text="Edit columns dialog box to add, remove, or move columns.":::
 

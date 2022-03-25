@@ -31,15 +31,13 @@ You can find the list of measures on the **Measures** page.
 
 You'll find information about the measure type, the creator, creation date, status, and state. When you select a measure from the list, you can preview the output and download a CSV file.
 
-To refresh all of your measures at the same time, select **Refresh all** without selecting a specific measure.
-
 :::image type="content" source="media/measure-actions.png" alt-text="Actions to manage single measures.":::
 
 The following actions are available when you select a measure:
 
 - **Edit** the configuration of the measure.
 - **Duplicate** a measure. You can choose to edit its properties right away or simply save the duplicate.
-- **Refresh** the measure based on the latest data.
+- **Refresh** the measure based on the latest data. To refresh all of your measures at the same time, select all measures and then **Refresh**.
 - **Rename** the measure.
 - **Activate** or **Deactivate**. Inactive measures won't get refreshed during a [scheduled refresh](system.md#schedule-tab).
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
