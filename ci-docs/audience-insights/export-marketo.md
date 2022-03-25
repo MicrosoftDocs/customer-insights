@@ -59,7 +59,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Enter your **[Marketo list ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. The list ID is a purely numerical value. For example, if your Marketo list ID is ST12345A7, remove the character before and after the numerals and enter `12345`. 
 
-1. In the **Data matching** section, select at least one field that represents a customer's email address, or a customer's Marketo ID. 
+1. In the **Data matching** section, select at least one field that represents a customer's email address or a customer's Marketo ID. 
 
 1. Optionally, you can export **First name**, **Last name**, **City**, **State**, and **Country/Region**  to create more personalized emails. Select **Add attribute** to map these fields.
 
