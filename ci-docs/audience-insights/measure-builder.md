@@ -1,13 +1,13 @@
 ---
 title: "Create new measures with the measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: wameng
-ms.reviewer: mhart
+author: v-wendysmith
+ms.author: v-wendysmith
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-measure-builder

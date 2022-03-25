@@ -1,7 +1,7 @@
 ---
 title: "Find similar customers with AI (contains video)"
 description: "Find similar customer segments with artificial intelligence."
-ms.date: 03/17/2022
+ms.date: 03/25/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual

@@ -5,9 +5,9 @@ ms.date: 03/24/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: wameng
-ms.reviewer: mhart
+author: v-wendysmith
+ms.author: v-wendysmith
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-measures

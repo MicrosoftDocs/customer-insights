@@ -1,13 +1,13 @@
 ---
 title: "Create measures from templates"
 description: "Define measures using templates for common use cases."
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: wameng
-ms.reviewer: mhart
+author: v-wendysmith
+ms.author: v-wendysmith
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-measure-template
