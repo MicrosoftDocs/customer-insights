@@ -53,6 +53,8 @@
           href: audience-insights/create-environment.md
         - name: Explore audience insights
           href: audience-insights/home.md
+        - name: Work with tags and columns
+          href: audience-insights/work-with-tags-columns.md
         - name: Work with business accounts
           href: audience-insights/work-with-business-accounts.md
 

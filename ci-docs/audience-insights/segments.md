@@ -1,7 +1,7 @@
 ---
 title: "Segments in audience insights"
 description: "Overview on segments and how to create and manage them."
-ms.date: 03/17/2022
+ms.date: 03/25/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
