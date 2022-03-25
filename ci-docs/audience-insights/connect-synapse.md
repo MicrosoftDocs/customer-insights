@@ -1,7 +1,7 @@
 ---
 title: "Ingest data from Azure Synapse Analytics"
 description: "Use a database in Azure Synapse as a data source in Dynamics 365 Customer Insights."
-ms.date: 02/24/2022
+ms.date: 03/25/2022
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.subservice: audience-insights

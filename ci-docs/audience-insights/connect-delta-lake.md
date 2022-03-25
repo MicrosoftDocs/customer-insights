@@ -1,7 +1,7 @@
 ---
 title: "Connect to data in Databricks delta lake"
 description: "Work with data in Databricks delta lake"
-ms.date: 03/21/2022
+ms.date: 03/25/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
