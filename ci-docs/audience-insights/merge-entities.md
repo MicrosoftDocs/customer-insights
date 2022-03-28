@@ -20,7 +20,7 @@ searchScope:
 
 This step in the unification process enables you to reconcile conflicting data. Examples of conflicting data could include a customer name found in two of your datasets but that shows up a little differently in each ("Grant Marshall" versus "Grant Marshal"), or a phone number that differs in format (617-803-091X versus 617803091X). Merging those conflicting data points is done on an attribute-by-attribute basis.
 
-:::image type="content" source="media/merge-fields-page.png" alt-text="Merge page in the data unification process showing table with merged fields that define the unified customer profile.":::
+:::image type="content" source="media/m3_unify.png" alt-text="Merge page in the data unification process showing table with merged fields that define the unified customer profile.":::
 
 Choose and exclude attributes to merge within your unified customer profile entity. Some attributes are automatically merged by the system.
 

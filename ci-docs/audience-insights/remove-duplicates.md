@@ -1,7 +1,7 @@
 ---
 title: "Remove duplicates before unifying data"
 description: "The 2nd step in the unification process is selecting which record to keep when duplicates are found"
-ms.date: 03/02/2022
+ms.date: 03/28/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -22,26 +22,15 @@ This step in customer or account unification sets up rules for handling duplicat
 
 If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
-1. On the Duplicates screen, select **Use enriched entities** at the top of the page.
+1. On the Duplicate records screen, select **Use enriched entities** at the top of the page.
 
 1. From the **Use enriched entities** pane, choose one or more enriched entities.
 
-1. Select **Apply**.
+1. Select **Done**.
 
 ## Define deduplication on a match entity
 
-1. On the Duplicates screen, select an entity and then **Edit merge preferences**.
-
-1. In the **Merge preferences** pane, choose one of three options to determine which record to keep if a duplicate is found:
-      - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
-      - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
-      - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
-
-   1. Optionally, to define deduplication rules on individual attributes of an entity, select **Advanced**. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
-
-   1. Select **Done**.
-
-1. Once the entities are selected and their merge preference is set, select **Add rule** to define the deduplication rules at an entity level.
+1.On the Duplicate records screen, select an entity and then **Add rule** to define the deduplication rules at an entity level.
    - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
    - **Normalize**: Select from following normalization options for the selected attributes.
      - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
@@ -55,11 +44,24 @@ If you enriched entities on the data source level to help improve your unificati
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
    - **Name**: Name for the rule.
 
+<--- Insert screenshot --->
+
 1. Optionally, select **Add condition** to add more conditions to the rule.
 
 1. Optionally, [add exceptions](/match-entities.md#add-exceptions-to-a-rule) to the rule.
 
-1. Select **Done** to finalize the rule. The deduplication stats will display after the unification process is complete and run.
+1. Once the entities are selected and their rules added, select an entity and then **Edit merge preferences**.
+
+1. In the **Merge preferences** pane, choose one of three options to determine which record to keep if a duplicate is found:
+      - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
+      - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
+      - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
+
+   1. Optionally, to define deduplication rules on individual attributes of an entity, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
+
+   1. Select **Done** to apply your merge preferences.
+
+1. Select **Done** to apply your deduplication selections. The deduplication stats will display after the unification process is complete and run.
 
 1. To preview the results of a deduplication rule, select the rule and select **Match preview**.
 
@@ -81,31 +83,3 @@ A deduplication output entity contains the following information:
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
 
-## Manage deduplication rules
-
-You can reconfigure and fine-tune most of the deduplication parameters.
-
-1. Go to **Data** > **Unify**.
-
-1. Select **Edit** on the **Duplicate records** tile.
-
-1. To change merge preferences, select the entity.
-   1. Select **Edit merge preferences** and change the record to keep option.
-   1. To change merge preferences on individual attributes of an entity, select **Advanced** and make the necessary changes.
-   1. Select **Done**.
-
-1. To manage rules, choose any of the following:
-
-   - **Create a new rule**: Select **Add rule** under the appropriate entity.
-  
-   - **Change rule conditions**: Select **Edit** on the rule and choose different fields.
-
-   - **Deactivate a rule**: Select **Deactivate** on the rule to retain a deduplication rule while excluding it from the matching process.
-
-   - **Duplicate a rule**: Select **Duplicate** on the rule to create a similar rule with modifications.
-
-   - **Delete a rule**: Select **Delete** on the rule.
-
-1. Select **Done**.
-
-1. Click **Save and close**.

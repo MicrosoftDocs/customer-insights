@@ -31,17 +31,17 @@ The first step in customer or account unification is selecting the entities and 
 
 1. For each entity, identify the columns you want to combine and reconcile. These columns are called *Attributes*. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the checkbox on the entity level. You can search on keywords across all attributes and entities to select the required attributes you want to map.
 
-   <!--- Insert screenshot --->
-
-   In this example, we're adding the **eCommerceContacts** and **loyCustomers** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
+   :::image type="content" source="media/m3_select_entities.png" alt-text="Screenshot of selected entities and attributes.":::
 
 1. Select **Apply** to confirm your selections. The selected entities and attributes display.
 
 ## Select primary key and semantic type for attributes
 
-For each entity, perform the following steps.
+   :::image type="content" source="media/m3_select_primary.png" alt-text="Screenshot of selected entities with primary key not selected.":::
 
-<!--- Insert screenshot --->
+   In this example, we're adding the **eCommerceContacts** and **loyCustomers** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
+
+For each entity, perform the following steps.
 
 1. Choose the **Primary key**. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
 
@@ -64,27 +64,7 @@ For each entity, perform the following steps.
 
 1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, or enter your custom attribute-type name. These attributes are listed under **Define the data in the unmapped fields**.
 
-1. After completing the steps for each entity, select **Next**. 
+1. After completing the steps for each entity, select **Next**.
 
 > [!div class="nextstepaction"]
 > [Next step: Remove duplicates](remove-duplicates.md)
-
-## Edit source fields
-
-You can't remove an attribute or an entity if they've already been unified.
-
-1. Go to **Data** > **Unify**.
-
-1. Select **Edit** on the **Source fields** tile.
-
-1. Optionally, toggle **Intelligent mapping** on or off.
-
-1. Select **Edit fields**.
-
-1. In the **Edit fields** pane, add or remove attributes and entities. Use the search or scroll to find and select your attributes and entities of interest.
-
-1. Select **Apply**.
-
-1. Select **Save and close**.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

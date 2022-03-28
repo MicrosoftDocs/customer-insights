@@ -22,13 +22,13 @@ This step in customer or account unification defines the match order and rules f
 
 ## Include enriched entities (preview)
 
-If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
+If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched entities on the **Duplicate records** page, you do not need to select them again.
 
 1. On the Matching conditions screen, select **Use enriched entities** at the top of the page.
 
 1. From the **Use enriched entities** pane, choose one or more enriched entities.
 
-1. Select **Apply**.
+1. Select **Done**.
 
 ## Specify the match order
 
@@ -47,6 +47,8 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
   
 The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
+
+:::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the entities.":::
 
 ## Define rules for match pairs
 
@@ -109,26 +111,10 @@ Try different precision thresholds on conditions to find the optimal value.
 
   3. Select **Preview** so see the number of matched and unmatched records for the selected condition.
 
-Refer to [Manage match rules](#manage-match-rules) to make additional changes or consider [Advanced options](#advanced-options).
+Refer to [Advanced options](#advanced-options) to make additional changes.
 
 > [!div class="nextstepaction"]
 > [Next step: Unify fields](merge-entities.md)
-
-## Manage match rules
-
-You can reconfigure and fine-tune most of the match parameters.
-
-:::image type="content" source="media/match-rules-management.png" alt-text="Screenshot of the dropdown menu with match rule options.":::
-
-- **Change the order of your rules** if you defined multiple rules. You can reorder the match rules by selecting the **Move Up** and **Move Down** options or by drag and drop.
-
-- **Change rule conditions** by selecting **Edit** and choose different fields.
-
-- **Deactivate a rule** to retain a match rule while excluding it from the matching process.
-
-- **Duplicate your rules** if you've defined a match rule and would like to create a similar rule with modifications, select **Duplicate**.
-
-- **Delete a rule** by selecting the **Delete** symbol.
 
 ## Advanced options
 
