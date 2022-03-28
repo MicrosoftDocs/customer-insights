@@ -22,7 +22,7 @@ This step in customer or account unification sets up rules for handling duplicat
 
 If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
-1. On the Duplicate records screen, select **Use enriched entities** at the top of the page.
+1. On the **Duplicate records** page, select **Use enriched entities** at the top of the page.
 
 1. From the **Use enriched entities** pane, choose one or more enriched entities.
 
@@ -30,7 +30,9 @@ If you enriched entities on the data source level to help improve your unificati
 
 ## Define deduplication on a match entity
 
-1.On the Duplicate records screen, select an entity and then **Add rule** to define the deduplication rules at an entity level.
+1. On the Duplicate records page, identify an entity and select **Add rule** to define the deduplication rules.
+
+   1. In the **Create rule** pane, enter the following information:
    - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
    - **Normalize**: Select from following normalization options for the selected attributes.
      - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
@@ -44,13 +46,15 @@ If you enriched entities on the data source level to help improve your unificati
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
    - **Name**: Name for the rule.
 
-<--- Insert screenshot --->
+     :::image type="content" source="media/m3_duplicates_add.png" alt-text="Screenshot of Create rule pane for removing duplicates.":::
 
-1. Optionally, select **Add condition** to add more conditions to the rule.
+   1. Optionally, select **Add** > **Add condition** to add more conditions to the rule.
 
-1. Optionally, [add exceptions](/match-entities.md#add-exceptions-to-a-rule) to the rule.
+   1. Optionally, **Add** > **Add exception** to add exceptions to the rule. Exceptions are used to address rare cases of false positives and false negatives.
+  
+   1. Select **Done** to create the rule.
 
-1. Once the entities are selected and their rules added, select an entity and then **Edit merge preferences**.
+1. Once the rules are added, select an entity and then **Edit merge preferences**.
 
 1. In the **Merge preferences** pane, choose one of three options to determine which record to keep if a duplicate is found:
       - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
@@ -82,4 +86,3 @@ A deduplication output entity contains the following information:
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
-

@@ -18,31 +18,35 @@ searchScope:
 
 # Update a unified customer profile
 
+1. Go to **Data** > **Unify**.
+
+1. Choose the area you want to update by selecting **Edit** on one of the following:
+   - [Source fields](map-entities.md)
+   - [Duplicate records](remove-duplicates.md)
+   - [Matching conditions](match-entities.md)
+   - [Unified customer fields](merge-entities.md)
+
+1. Determine whether to run map or merge.
+
 ## Edit source fields
 
 You can't remove an attribute or an entity if they've already been unified.
 
-1. Go to **Data** > **Unify**.
+1. Select **Edit entities and fields** to add other attributes or entities. Use the search or scroll to find and select your attributes and entities of interest. Select **Apply**.
 
-1. Select **Edit** on the **Source fields** tile.
+1. Change the primary key for an entity, if applicable.
 
-1. Optionally, toggle **Intelligent mapping** on or off.
+1. Change the attribute type, if applicable.
 
-1. Select **Edit fields**.
-
-1. In the **Edit fields** pane, add or remove attributes and entities. Use the search or scroll to find and select your attributes and entities of interest.
-
-1. Select **Apply**.
+1. Toggle **Intelligent mapping** on or off, if applicable.
 
 1. Select **Save and close**.
+
+1. Return to [Update a unified customer profile](#update-a-unified-customer-profile) to make additional changes.
 
 ## Manage deduplication rules
 
 You can reconfigure and fine-tune most of the deduplication parameters.
-
-1. Go to **Data** > **Unify**.
-
-1. Select **Edit** on the **Duplicate records** tile.
 
 1. To change merge preferences, select the entity.
    1. Select **Edit merge preferences** and change the record to keep option.
@@ -65,21 +69,25 @@ You can reconfigure and fine-tune most of the deduplication parameters.
 
 1. Click **Save and close**.
 
+1. Return to [Update a unified customer profile](#update-a-unified-customer-profile) to make additional changes.
+
 ## Manage match rules
 
 You can reconfigure and fine-tune most of the match parameters.
 
 :::image type="content" source="media/match-rules-management.png" alt-text="Screenshot of the dropdown menu with match rule options.":::
 
-- **Change the order of your rules** if you defined multiple rules. You can reorder the match rules by selecting the **Move Up** and **Move Down** options or by drag and drop.
+- **Change the order of your rules** if you defined multiple rules: Select the **Move Up** and **Move Down** options or drag and drop.
 
-- **Change rule conditions** by selecting **Edit** and choose different fields.
+- **Change rule conditions**: Select **Edit** on the rule and choose different fields.
 
-- **Deactivate a rule** to retain a match rule while excluding it from the matching process.
+- **Deactivate a rule**: Select **Deactivate** on the rule to retain a match rule while excluding it from the matching process.
 
-- **Duplicate your rules** if you've defined a match rule and would like to create a similar rule with modifications, select **Duplicate**.
+- **Duplicate a rule**: Select **Duplicate** on the rule to create a similar rule with modifications..
 
-- **Delete a rule** by selecting the **Delete** symbol.
+- **Delete a rule**: Select **Delete** on the rule.
+
+Return to [Update a unified customer profile](#update-a-unified-customer-profile) to make additional changes.
 
 ## Preview and validate your matches
 

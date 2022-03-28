@@ -24,7 +24,7 @@ This step in customer or account unification defines the match order and rules f
 
 If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched entities on the **Duplicate records** page, you do not need to select them again.
 
-1. On the Matching conditions screen, select **Use enriched entities** at the top of the page.
+1. On the **Matching conditions** page, select **Use enriched entities** at the top of the page.
 
 1. From the **Use enriched entities** pane, choose one or more enriched entities.
 
@@ -42,13 +42,13 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 > - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-1. On the Matching conditions screen, drag and drop entities in the order you want, or use the move up and down arrows. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
+1. On the **Matching conditions** page, drag and drop entities in the order you want, or use the move up and down arrows. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
 
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
   
 The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
-:::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the entities.":::
+:::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the entities." lightbox="media/m3_match.png":::
 
 ## Define rules for match pairs
 
@@ -60,7 +60,7 @@ The warning next to an entity name means that no match rule is defined for a mat
 
 1. In the **Create rule** pane, configure the conditions for the rule.
 
-   :::image type="content" source="media/match-rule-conditions.png" alt-text="Screenshot of an opened match rule with conditions added.":::
+   :::image type="content" source="media/m3_create_rule.png" alt-text="Screenshot of Create rule pane.":::
 
    - **Select Entity/Field (first row)**: Choose a related entity and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
 
@@ -101,17 +101,21 @@ Match rules represent sets of conditions. To match entities by conditions based 
 
 ## Preview rule results
 
-Review the rules of a match pair to see the percentage of successfully matched records at the rule level. Select the ellipsis (...) and then select **Match preview** to view all these records on the rule level. We recommend that you take a look at some records to validate that they were matched correctly.
+Review the rules of a match pair to see the percentage of successfully matched records at the rule level.
 
-Try different precision thresholds on conditions to find the optimal value.
+1. Select the vertical ellipsis (...) on a rule and then select **Match preview** to view all records on the rule level. We recommend that you take a look at some records to validate that they were matched correctly.
 
-  1. Select the ellipsis (...) for the rule that you want to experiment with and select **Edit**.
+1. Try different precision thresholds on conditions to find the optimal value.
 
-  2. Change the precisions values in the conditions you want to revise.
+   1. Select the vertical ellipsis (...) for the rule that you want to experiment with and select **Edit**.
 
-  3. Select **Preview** so see the number of matched and unmatched records for the selected condition.
+   1. Change the precisions values in the conditions you want to revise.
 
-Refer to [Advanced options](#advanced-options) to make additional changes.
+   1. Select **Preview** to see the number of matched and unmatched records for the selected condition.
+
+1. Try [Advanced options](#advanced-options) to make additional changes.
+
+1. When you are satisfied with the results for the rules, select **Next**.
 
 > [!div class="nextstepaction"]
 > [Next step: Unify fields](merge-entities.md)

@@ -25,7 +25,7 @@ The first step in customer or account unification is selecting the entities and 
 
 1. Select **Guide me**.
 
-1. Select **Select entities**.
+1. Select **Select entities**. The **Edit fields** pane displays.
 
 1. Select the **Entities** to combine into a customer or account profile.
 
@@ -33,19 +33,19 @@ The first step in customer or account unification is selecting the entities and 
 
    :::image type="content" source="media/m3_select_entities.png" alt-text="Screenshot of selected entities and attributes.":::
 
+   In this example, we're adding the **eCommerceContacts** and **loyCustomers** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
+
 1. Select **Apply** to confirm your selections. The selected entities and attributes display.
 
 ## Select primary key and semantic type for attributes
 
    :::image type="content" source="media/m3_select_primary.png" alt-text="Screenshot of selected entities with primary key not selected.":::
 
-   In this example, we're adding the **eCommerceContacts** and **loyCustomers** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
-
 For each entity, perform the following steps.
 
 1. Choose the **Primary key**. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
 
-1. To use AI models for smart prediction of semantics, save time and improve accuracy, leave **Intelligent mapping** on. Intelligent mapping highlights AI-based semantics recommendation in the **Type** field. You can override the suggested selection by choosing any semantic type from the available list of options.
+1. To use AI models for smart prediction of semantics, save time and improve accuracy, ensure **Intelligent mapping** is on. Intelligent mapping highlights AI-based semantics recommendation in the **Type** field. You can override the suggested selection by choosing any semantic type from the available list of options.
 
 1. For each attribute, choose a semantic **Type** that best describes that attribute, such as name, city, or email address.
 
