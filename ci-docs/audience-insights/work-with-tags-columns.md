@@ -21,7 +21,7 @@ searchScope:
 
 Organize lists using tags and columns to find data quickly and easily and view the data the way you want.
 
-Tags and columns are currently supported with **Segments** and **Measures** for individual customers.
+Tags and columns are currently supported with **Segments** and **Measures**.
 
 ## Manage tags
 
@@ -40,7 +40,7 @@ You can view, add, and remove tags from an item. Add tags as you create an item.
 1. From the **Edit tags** pane, choose any of the following:
 
    - To add an existing tag to the item, type a portion of the name in the **Tags** box until you see the tag you want. Select the tag.
-   - To create a tag, type the name in the **Tags** box and press **Enter**. The new tag is added to the item.
+   - To create a tag, type the name in the **Tags** box and select **Create new tag** or press **Enter**. The new tag is added to the item.
    - To remove a tag, select **X** next to the tag name.
 
    :::image type="content" source="media/edit_tags.png" alt-text="Edit columns dialog box to add, remove, or move columns.":::
