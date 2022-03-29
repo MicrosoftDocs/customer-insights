@@ -46,12 +46,12 @@ If you enriched entities on the data source level to help improve your unificati
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
    - **Name**: Name for the rule.
 
-     :::image type="content" source="media/m3_duplicates_add.png" alt-text="Screenshot of Create rule pane for removing duplicates.":::
-
    1. Optionally, select **Add** > **Add condition** to add more conditions to the rule.
 
    1. Optionally, **Add** > **Add exception** to add exceptions to the rule. Exceptions are used to address rare cases of false positives and false negatives.
-  
+
+      :::image type="content" source="media/m3_duplicates_add.png" alt-text="Screenshot of Create rule pane for removing duplicates.":::
+
    1. Select **Done** to create the rule.
 
 1. Once the rules are added, select an entity and then **Edit merge preferences**.

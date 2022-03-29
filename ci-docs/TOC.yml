@@ -87,6 +87,10 @@
           href: audience-insights/match-entities.md
         - name: Unify fields
           href: audience-insights/merge-entities.md
+        - name: Review the data unification steps
+          href: audience-insights/review-unification.md
+        - name: Update the unified customer profile
+          href: audience-insights/data-unification-update.md
 
     - name: Data enrichment
       items:

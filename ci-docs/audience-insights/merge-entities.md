@@ -31,54 +31,16 @@ Review the system recommendations listed in the **Customer fields** tab of the t
 1. Select a merged attribute. The attributes that compose the merged attribute display in two new rows beneath the merged attribute.
 
 1. Optionally, change the merged attribute. You can:
-   - [Separate](#separate-merged-fields)
-   - [Rename](#rename-merged-fields)
-   - [Exclude](#exclude-merged-fields)
    - [Edit](#edit-a-merged-field)
+   - [Rename](#rename-merged-fields)
+   - [Separate](#separate-merged-fields)
+   - [Exclude](#exclude-merged-fields)
 
-   :::image type="content" source="media/manage-merged-attributes.png" alt-text="Options in the Show more dropdown menu to manage merged attributes.":::
+   :::image type="content" source="media/m3_unify_actions.png" alt-text="Options in the Show more dropdown menu to manage merged attributes.":::
 
 1. Select separate attributes to combine them. You can [combine fields](#combine-fields-manually) or [combine a group of fields](#combine-a-group-of-fields).
 
-## Separate, rename, exclude, or edit merged fields
-
-### Separate merged fields
-
-To separate merged fields, find the attribute in the table. Separated fields show as individual data points on the unified customer profile.
-
-1. Select the merged field.
-  
-1. Select **Show more** and choose **Separate fields**.
-
-1. Confirm the separation.
-
-1. Select **Save**.
-
-### Rename merged fields
-
-Change the display name of merged attributes. You can't change the name of the output entity.
-
-1. Select the merged field.
-  
-1. Select **Show more** and choose **Rename**.
-
-1. Confirm the changed display name.
-
-1. Select **Save**.
-
-### Exclude merged fields
-
-Exclude an attribute from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile.
-
-1. Select a merged field.
-  
-1. Select **Show more** and choose **Exclude**.
-
-1. Confirm the exclusion.
-
-1. Select **Save**.
-
-To see the list of all excluded fields, select **Excluded fields**. If necessary, you can readd the excluded field.
+## Edit, rename, separate, or exclude merged fields
 
 ### Edit a merged field
 
@@ -100,6 +62,44 @@ To see the list of all excluded fields, select **Excluded fields**. If necessary
 1. Select **Done** to apply your changes.
 
 1. Select **Save**.
+
+### Rename merged fields
+
+Change the display name of merged attributes. You can't change the name of the output entity.
+
+1. Select the merged field.
+  
+1. Select **Show more** and choose **Rename**.
+
+1. Confirm the changed display name.
+
+1. Select **Save**.
+
+### Separate merged fields
+
+To separate merged fields, find the attribute in the table. Separated fields show as individual data points on the unified customer profile.
+
+1. Select the merged field.
+  
+1. Select **Show more** and choose **Separate fields**.
+
+1. Confirm the separation.
+
+1. Select **Save**.
+
+### Exclude merged fields
+
+Exclude an attribute from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile.
+
+1. Select a merged field.
+  
+1. Select **Show more** and choose **Exclude**.
+
+1. Confirm the exclusion.
+
+1. Select **Save**.
+
+To see the list of all excluded fields, select **Excluded fields**. If necessary, you can readd the excluded field.
 
 ## Combine separated fields
 
@@ -141,11 +141,9 @@ Treat a group of fields as a single unit. For example, if our records contain th
 
 Some entities contain more details than others. If an entity includes the latest data about a field, you can prioritize it over other entities when merging values.
 
-1. Select the merged field.
+1. Select the field.
   
-1. Select **Show more** and choose **Edit**.
-
-1. In the **Combine fields** pane, select **Move up/down** to set the order or drag and drop them in the desired position.
+1. Select **Show more** and choose **Move up/down** to set the order or drag and drop them in the desired position.
 
 1. Select **Done**.
 
