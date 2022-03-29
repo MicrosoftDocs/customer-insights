@@ -33,7 +33,7 @@ You can view, add, and remove tags from an item. Add tags as you create an item.
 
 1. Select the item whose tags you want to manage.
 
-1. Select the vertical ellipsis (…) and select **Tag**.
+1. Select **Show more (...)**  and select **Tag**.
 
    :::image type="content" source="media/segments_list_tag.png" alt-text="Selected segment with options dropdown list and available options."lightbox="media/segments_list_tag.png":::
 
@@ -43,7 +43,7 @@ You can view, add, and remove tags from an item. Add tags as you create an item.
    - To create a tag, type the name in the **Tags** box and select **Create new tag** or press **Enter**. The new tag is added to the item.
    - To remove a tag, select **X** next to the tag name.
 
-   :::image type="content" source="media/edit_tags.png" alt-text="Edit columns dialog box to add, remove, or move columns.":::
+   :::image type="content" source="media/edit_tags.png" alt-text="Edit tags dialog box to add or remove tags.":::
 
 1. Select **Apply**.
 
