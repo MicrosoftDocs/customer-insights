@@ -94,4 +94,18 @@ To see the status of en enrichment
 1. Under the enrichment you want to see the progress, select **See details**. 
 1. In the **Task details** pane, select **Show details** to see the processes that are involved in updating the enrichment and their status. 
 
+## Enrichment results
+
+To see an overview of the enrichment results 
+
+1. Go to **Data** > **Enrichment**. 
+1. Click on the relevant enrichment that you want information about.
+
+All enrichments show basic information such as the number of enriched profiles and the number of enriched profiles over time after the enrichment finishes. Some also show the *number of customers enriched by field* which provides a drill-down into the coverage of each enriched field.
+
+:::image type="content" source="media/enrichments-results.png" alt-text="Enrichments results page.":::
+
+Some enrichments also shows information specific to the type of enrichment. You can find more information in the documentation for the relevant enrichment.
+
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
