@@ -1,7 +1,7 @@
 ---
 title: "Enrich unified customer profiles"
 description: "Use capabilities to enrich your customer data."
-ms.date: 02/18/2022
+ms.date: 03/29/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -101,7 +101,7 @@ After a completed enrichment run, you can review the enrichment results.
 1. Go to **Data** > **Enrichment**. 
 1. Select the enrichment that you want information about.
 
-All enrichments show basic information such as the number of enriched profiles, a preview of the generated enrichment entity, and the number of enriched profiles over time. Some also show the *Number of customers enriched by field* which provides a drill-down into the coverage of each enriched field.
+All enrichments show basic information such as the number of enriched profiles, a preview of the generated enrichment entity, and the number of enriched profiles over time. If available, the **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
 
 :::image type="content" source="media/enrichments-results.png" alt-text="Enrichments results page.":::
 
