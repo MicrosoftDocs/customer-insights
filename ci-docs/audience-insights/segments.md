@@ -64,7 +64,9 @@ The following action are available when you select a segment:
 
 ## Refresh segments
 
-You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**.
+You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**. When set to auto refresh on a schedule, the following rules apply:
+- All segments designated with the type "Dynamic" or "Expansion" will be auto-refreshed at the set cadence. When refresh is complete the "Status" column will indicate if there were any issues in refreshing the segment. "Last refreshed" column indicates the last time the segment was refreshed successfully. In case of error, you can click on the error to see a detailed report on what happened to that segment.
+- Segments designated with the type "Static" *will not* be auto-refreshed. "Last refreshed" column indicates the last time the static segments was run or refreshed manually.
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
