@@ -1,7 +1,7 @@
 ---
 title: "Create environments in Customer Insights"
 description: "Steps to create environments with a licensed subscription for Dynamics 365 Customer Insights."
-ms.date: 03/21/2022
+ms.date: 03/28/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -85,8 +85,9 @@ Connecting to your Dataverse environment also enables you to [ingest data from o
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto enabled for net new instances.":::
 
+Follow the steps mentioned [here](https://github.com/MicrosoftDocs/customer-insights-pr/blob/ci-docs/audience-insights/manage-environments.md#enable-data-share-with-dataverse-from-your-own-data-storage-preview) to enable data sharing with Microsoft Dataverse from your own Azure Data Lake Storage as CI data storage.
+
 Customer Insights does not support the following data sharing scenarios:
-- If you save all data to your own Azure Data Lake Storage, you won't be able to enable data sharing with a Dataverse-managed data lake.
 - If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
 
 ### Step 4: Finalize the settings
