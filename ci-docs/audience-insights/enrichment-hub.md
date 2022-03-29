@@ -101,7 +101,7 @@ To see an overview of the enrichment results
 1. Go to **Data** > **Enrichment**. 
 1. Click on the relevant enrichment that you want information about.
 
-All enrichments show basic information such as the number of enriched profiles and the number of enriched profiles over time after the enrichment finishes. Some also show the *number of customers enriched by field* which provides a drill-down into the coverage of each enriched field.
+All enrichments show basic information such as the number of enriched profiles, a preview of the generated enrichment entity, and the number of enriched profiles over time after the enrichment finishes. Some also show the *number of customers enriched by field* which provides a drill-down into the coverage of each enriched field.
 
 :::image type="content" source="media/enrichments-results.png" alt-text="Enrichments results page.":::
 
