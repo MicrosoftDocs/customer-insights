@@ -6,7 +6,7 @@ ms.date: 03/28/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: 
+ms.author: v-wendysmith
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -44,7 +44,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Select **Save and close**.
 
-1. Return to [Update a unified customer profile](#update-a-unified-customer-profile) to make additional changes.
+1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
 
 ## Manage deduplication rules
 
@@ -67,7 +67,7 @@ You can reconfigure and fine-tune most of the deduplication parameters.
 
 1. Click **Save and close**.
 
-1. Return to [Update a unified customer profile](#update-a-unified-customer-profile) to make additional changes.
+1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
 
 ## Manage match rules
 
@@ -81,7 +81,7 @@ You can reconfigure and fine-tune most of the match parameters.
 - **Duplicate a rule**: Select **Duplicate** on the rule to create a similar rule with modifications..
 - **Delete a rule**: Select **Delete** on the rule.
 
-Return to [Update a unified customer profile](#update-a-unified-customer-profile) to make additional changes.
+Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
 
 ## Run the match process
 
