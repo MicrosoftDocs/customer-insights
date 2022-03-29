@@ -85,7 +85,7 @@ Connecting to your Dataverse environment also enables you to [ingest data from o
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto enabled for net new instances.":::
 
-Follow the steps mentioned [here](https://github.com/MicrosoftDocs/customer-insights-pr/blob/ci-docs/audience-insights/manage-environments.md#enable-data-share-with-dataverse-from-your-own-data-storage-preview) to enable data sharing with Microsoft Dataverse from your own Azure Data Lake Storage as CI data storage.
+For more information about enabling data sharing with Microsoft Dataverse from your own Azure Data Lake Storage, see [Connect to Microsoft Dataverse](manage-environments.md#connect-to-microsoft-dataverse).
 
 Customer Insights does not support the following data sharing scenarios:
 - If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
