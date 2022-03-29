@@ -35,6 +35,7 @@ Review the system recommendations listed in the **Customer fields** tab of the t
    - [Rename](#rename-merged-fields)
    - [Separate](#separate-merged-fields)
    - [Exclude](#exclude-merged-fields)
+   - [Move up or down](#change-the-order-of-fields)
 
    :::image type="content" source="media/m3_unify_actions.png" alt-text="Options in the Show more dropdown menu to manage merged attributes.":::
 
@@ -102,6 +103,8 @@ Exclude an attribute from the unified customer profile. If the field is used in 
 To see the list of all excluded fields, select **Excluded fields**. If necessary, you can readd the excluded field.
 
 ## Combine separated fields
+
+   :::image type="content" source="media/m3_combine.png" alt-text="Combine options. Combine fields or group of fields.":::
 
 ### Combine fields manually
 
