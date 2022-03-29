@@ -1,12 +1,12 @@
 ---
 title: "Update the unified customer profile"
 description: "Update duplicate rules, match rules, or unified fields in the unified customer profile."
-ms.date: 03/23/2022
+ms.date: 03/28/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: v-wendysmith
+ms.author: 
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
