@@ -6,7 +6,7 @@ ms.date: 03/24/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: v-wendysmith
-ms.author: v-wendysmith
+ms.author: wameng
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
