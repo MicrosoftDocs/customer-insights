@@ -96,16 +96,16 @@ To see the status of en enrichment
 
 ## Enrichment results
 
-To see an overview of the enrichment results 
+After a completed enrichment run, you can review the enrichment results.
 
 1. Go to **Data** > **Enrichment**. 
-1. Click on the relevant enrichment that you want information about.
+1. Select the enrichment that you want information about.
 
-All enrichments show basic information such as the number of enriched profiles, a preview of the generated enrichment entity, and the number of enriched profiles over time after the enrichment finishes. Some also show the *number of customers enriched by field* which provides a drill-down into the coverage of each enriched field.
+All enrichments show basic information such as the number of enriched profiles, a preview of the generated enrichment entity, and the number of enriched profiles over time. Some also show the *Number of customers enriched by field* which provides a drill-down into the coverage of each enriched field.
 
 :::image type="content" source="media/enrichments-results.png" alt-text="Enrichments results page.":::
 
-Some enrichments also shows information specific to the type of enrichment. You can find more information in the documentation for the relevant enrichment.
+Some enrichments also show information specific to the type of enrichment. Refer to the documentation for the relevant enrichment for more information.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
