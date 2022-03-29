@@ -79,7 +79,7 @@ To execute the PowerShell scripts you need to have the below three modules impor
         1. You need 'Storage Blob Data Owner' permissions at the storage account/container level to run this PowerShell script or this script will create one for you. Your role assignment can be removed manually post successful script execution.
         2. This PowerShell script adds the required RBAC for Microsoft Dataverse service and any Dataverse based business applications like Dynamics365 Marketing and updates the Access Control List (ACL) on the CustomerInsights container for the provided security groups created by above "CreateSecurityGroups.ps1" script. Contributor group will have rwx permission and Readers group will have r-x permission only.
         3. Execute this PowerShell script in Windows PowerShell by providing the Azure subscription id containing your Azure Data Lake Storage, storage account name, resource group name, Reader and Contributor security group id values. Open the PowerShell script in a notepad or a textpad to review additional information and the logic implemented.
-        4. Copy the output string emitted after successful execution of this PowerShell script into a clipboard or a notepad. An example of such output string will be like this - https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gb022&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdbb0
+        4. Copy the output string emitted after successful execution of this PowerShell script into a clipboard or a notepad. An example of such output string will be like this - https: //DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gb022&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdbb0
         
 2. Enter the output string copied from above into the "Permissions identifier" field.
 
@@ -88,8 +88,6 @@ To execute the PowerShell scripts you need to have the below three modules impor
 Customer Insights does not support the following data sharing scenarios:
 - If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
 - If you enable data sharing with Dataverse, you won't be able to view any optional PowerBI Embedded reports in your Customer Insights instance.
-
-When connecting to a Dataverse environment, the error message **This CDS organization is already attached to another Customer Insights instance** means that the Dataverse environment is already used in a Customer Insights environment. You can remove the existing connection as a global administrator on the Dataverse environment. It can take a couple of hours to populate the changes.
 
 ### Remove an existing connection to a Dataverse environment
 
