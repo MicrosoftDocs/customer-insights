@@ -21,7 +21,7 @@ searchScope:
 
 Organize lists using tags and columns to find data quickly and easily and view the data the way you want.
 
-Tags and columns are currently supported with **Segments** and **Measures**.
+Tags and columns are currently supported with **[Segments](segments.md)** and **[Measures](measures.md)**.
 
 ## Manage tags
 
