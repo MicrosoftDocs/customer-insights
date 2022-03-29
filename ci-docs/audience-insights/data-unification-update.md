@@ -16,17 +16,19 @@ searchScope:
   - customerInsights
 ---
 
-# Update a unified customer profile
+# Update the unified customer profile
 
 1. Go to **Data** > **Unify**.
 
 1. Choose the area you want to update by selecting **Edit** on one of the following:
-   - [Source fields](map-entities.md)
-   - [Duplicate records](remove-duplicates.md)
-   - [Matching conditions](match-entities.md)
+   - [Source fields](#edit-source-fields)
+   - [Duplicate records](#manage-deduplication-rules)
+   - [Matching conditions](#manage-match-rules)
    - [Unified customer fields](merge-entities.md)
 
-1. Determine whether to run map or merge.
+1. To evaluate the quality of your matching conditions, [run the match process](#run-the-match-process).
+
+1. To merge your changes, [run the merge process](#run-the-merge-process) or **Run all** to run both match and merge processes.
 
 ## Edit source fields
 
@@ -56,13 +58,9 @@ You can reconfigure and fine-tune most of the deduplication parameters.
 1. To manage rules, choose any of the following:
 
    - **Create a new rule**: Select **Add rule** under the appropriate entity.
-  
    - **Change rule conditions**: Select **Edit** on the rule and choose different fields.
-
    - **Deactivate a rule**: Select **Deactivate** on the rule to retain a deduplication rule while excluding it from the matching process.
-
    - **Duplicate a rule**: Select **Duplicate** on the rule to create a similar rule with modifications.
-
    - **Delete a rule**: Select **Delete** on the rule.
 
 1. Select **Done**.
@@ -78,18 +76,28 @@ You can reconfigure and fine-tune most of the match parameters.
 :::image type="content" source="media/match-rules-management.png" alt-text="Screenshot of the dropdown menu with match rule options.":::
 
 - **Change the order of your rules** if you defined multiple rules: Select the **Move Up** and **Move Down** options or drag and drop.
-
 - **Change rule conditions**: Select **Edit** on the rule and choose different fields.
-
 - **Deactivate a rule**: Select **Deactivate** on the rule to retain a match rule while excluding it from the matching process.
-
 - **Duplicate a rule**: Select **Duplicate** on the rule to create a similar rule with modifications..
-
 - **Delete a rule**: Select **Delete** on the rule.
 
 Return to [Update a unified customer profile](#update-a-unified-customer-profile) to make additional changes.
 
-## Preview and validate your matches
+## Run the match process
+
+From the **Data** > **Unify** page, select **Run Match**.
+
+:::image type="content" source="media/m3_run_match_merge.png" alt-text="Cropped screenshot of the Run merge selection.":::
+
+The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing**.
+
+[!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+
+The **Duplicate records** and **Matching conditions** tiles show the last time a match was run.
+
+### Review and validate your matches
+
+When the matching process completes, select **Edit** on the **Matching conditions** tile.
 
 The tiles on top of the page show key metrics, summarizing the number of matched records and duplicates.
 
@@ -99,21 +107,20 @@ The tiles on top of the page show key metrics, summarizing the number of matched
 - **Matched and non-matched records** highlights how many unique records remain after processing the match rules.
 - **Matched records only** shows the number of matches across all of your match pairs.
 
-You can assess the results of each match pair and its rules in the **Matched records details** table. Compare the number of records that came from a match pair against the percentage of successfully matched records.
+You can assess the results of each match pair and its rules under **Records matched**. Compare the number of records that came from a match pair against the percentage of successfully matched records.
 
-## Run your merge
+To make changes, see [Manage deduplication rules](#manage-deduplication-rules) or [Manage match rules](#manage-match-rules).
 
-Whether you manually merge attributes or let the system merge them, you can always run your merge. Select **Run** on the **Unified fields** page to start the process.
+Run the match process again or proceed to run your merge.
 
-> [!div class="mx-imgBorder"]
-> ![Data merge Save and Run.](media/configure-data-merge-save-run.png "Data merge Save and Run")
+## Run the merge process
+
+Whether you manually merge attributes or let the system merge them, you can always run your merge from the **Unify** page.
+
+:::image type="content" source="media/m3_run_match_merge.png" alt-text="Cropped screenshot of the Run merge selection.":::
 
 Choose **Run only Merge** if you only want to see the output reflected in the unified customer entity. Downstream processes will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
 Choose **Run Merge and downstream processes** to refresh the system with your changes. All processes, including enrichment, segments, and measures will rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
 
-To make more changes and rerun the step, you can cancel an in-progress merge. Select **Refreshing ...** and select **Cancel job**  in the side pane that appears.
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
-
-:::image type="content" source="media/process-detail-path.png" alt-text="Drill-down path to get to process details from the task status link.":::
+[!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
