@@ -1,9 +1,8 @@
 ---
 title: "Export Customer Insights data to Criteo"
 description: "Learn how to configure the connection and export to Criteo."
-ms.date: 10/08/2021
+ms.date: 03/29/2022
 ms.reviewer: mhart
-
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
@@ -68,8 +67,6 @@ Saving an export doesn't run the export immediately.
 
 The export runs with every [scheduled refresh](system.md#schedule-tab). 
 You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
-
-
 
 ## Data privacy and compliance
 
