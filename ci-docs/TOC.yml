@@ -298,10 +298,6 @@
     
     - name: APIs
       items:
-        - name: Review the entity schemas in Common Data Model
-          href: audience-insights/entity-schemas.md
-        - name: Customer Insights data in Dataverse
-          href: audience-insights/customer-insights-dataverse.md
         - name: Work with APIs
           href: audience-insights/apis.md 
         - name: API references
