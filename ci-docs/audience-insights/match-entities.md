@@ -138,7 +138,7 @@ For example, if your match rule combines last name, city, and date of birth, the
 
 ### Specify custom match conditions
 
-You can specify conditions that override the default match logic. There are four options available: 
+You can specify conditions that override the default match logic. There are four options available:
 
 |Option  |Description |Example  |
 |---------|---------|---------|
@@ -147,11 +147,7 @@ You can specify conditions that override the default match logic. There are four
 |Custom bypass     | Defines values that the system should always ignore in the match phase. |  Ignore the values *11111* and *Unknown* during match.        |
 |Alias mapping    | Defining values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
 
-1. Select **Custom match** in the **Matched records details** section.
-
-   :::image type="content" source="media/custom-match-create.png" alt-text="Screenshot of the match rules section with Custom match control highlighted.":::
-
-1. In the **Custom** pane, go to the **Records** tab.
+1. Select **Custom**.
 
 1. Choose the custom match option from the **Custom type** dropdown and select **Download template**. You need a separate template for each match option.
 
@@ -169,7 +165,7 @@ You can specify conditions that override the default match logic. There are four
 
 1. Go to **Data** > **Data sources** and ingest the template files as new entities.
 
-1. After uploading the files and entities are available, select the **Custom match** option again. You'll see options to specify the entities you want to include. Select the required entities from the dropdown menu and select **Done**.
+1. After uploading the files and entities are available, select the **Custom** option again. You'll see options to specify the entities you want to include. Select the required entities from the dropdown menu and select **Done**.
 
    :::image type="content" source="media/custom-match-overrides.png" alt-text="Screenshot of the dialog to choose overrides for a custom match scenario.":::
 
@@ -177,9 +173,5 @@ You can specify conditions that override the default match logic. There are four
 
    - For **Always match** or **Never match**, proceed to the next step.
    - For **Custom bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the Normalizations dropdown, choose the **Custom bypass** or **Alias mapping** option and select **Done**.
-
-1. Select **Save** to apply the custom match configuration.
-
-1. Select **Run** on the **Match** page to start the matching process. Other specified match rules are overridden by the custom match configuration.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

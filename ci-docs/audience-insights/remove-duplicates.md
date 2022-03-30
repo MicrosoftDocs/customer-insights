@@ -46,11 +46,11 @@ If you enriched entities on the data source level to help improve your unificati
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
    - **Name**: Name for the rule.
 
+      :::image type="content" source="media/m3_duplicates_add.png" alt-text="Screenshot of Create rule pane for removing duplicates.":::
+
    1. Optionally, select **Add** > **Add condition** to add more conditions to the rule.
 
    1. Optionally, **Add** > **Add exception** to add exceptions to the rule. Exceptions are used to address rare cases of false positives and false negatives.
-
-      :::image type="content" source="media/m3_duplicates_add.png" alt-text="Screenshot of Create rule pane for removing duplicates.":::
 
    1. Select **Done** to create the rule.
 
@@ -62,6 +62,8 @@ If you enriched entities on the data source level to help improve your unificati
       - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
 
    1. Optionally, to define deduplication rules on individual attributes of an entity, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
+
+      :::image type="content" source="media/m3_adv_merge.png" alt-text="Advanced merge preferences pane showing recent email and complete address":::
 
    1. Select **Done** to apply your merge preferences.
 

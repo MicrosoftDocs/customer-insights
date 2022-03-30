@@ -20,6 +20,8 @@ searchScope:
 
 1. Go to **Data** > **Unify**.
 
+:::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
+
 1. Choose the area you want to update by selecting **Edit** on one of the following:
    - [Source fields](#edit-source-fields)
    - [Duplicate records](#manage-deduplication-rules)
@@ -53,17 +55,20 @@ You can reconfigure and fine-tune most of the deduplication parameters.
 1. To change merge preferences, select the entity.
    1. Select **Edit merge preferences** and change the record to keep option.
    1. To change merge preferences on individual attributes of an entity, select **Advanced** and make the necessary changes.
+
+      :::image type="content" source="media/m3_adv_merge.png" alt-text="Screenshot of advanced merge preferences showing most recent email and most complete address":::
+
    1. Select **Done**.
 
 1. To manage rules, choose any of the following:
 
    - **Create a new rule**: Select **Add rule** under the appropriate entity.
-   - **Change rule conditions**: Select **Edit** on the rule and choose different fields.
-   - **Deactivate a rule**: Select **Deactivate** on the rule to retain a deduplication rule while excluding it from the matching process.
-   - **Duplicate a rule**: Select **Duplicate** on the rule to create a similar rule with modifications.
-   - **Delete a rule**: Select **Delete** on the rule.
+   - **Change rule conditions**: Select **Show more (...)** > **Edit** on the rule and choose different fields.
+   - **Deactivate a rule**: Select **Show more (...)** > **Deactivate** on the rule to retain a deduplication rule while excluding it from the matching process.
+   - **Duplicate a rule**: Select **Show more (...)** > **Duplicate** on the rule to create a similar rule with modifications.
+   - **Delete a rule**: Select **Show more (...)** > **Delete** on the rule.
 
-1. Select **Done**.
+1. To view the last run results of the rule, select **Show more (...)** > **Match Preview**.
 
 1. Click **Save and close**.
 
