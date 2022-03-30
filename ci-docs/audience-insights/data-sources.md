@@ -1,7 +1,7 @@
 ---
 title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -41,7 +41,18 @@ Data sources that are created after associating a Dataverse environment with Cus
 
 Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse in Customer Insights. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
 
+> [!IMPORTANT]
+> Make sure your gateways are updated to latest version. You can install an update and reconfigure a gateway from a prompt shown on the gateway screen directly or [download the latest version](https://powerapps.microsoft.com/downloads/). If you don't use the latest gateway version, the dataflow refresh fails with error messages like **The keyword isn't supported: configuration properties. Parameter name: keyword**.
+
 ## Review ingested data
+If your environment contains Power Platform dataflows, the **Data Sources** page lists three sections: 
+- **Shared**: Data sources that can be managed by all Customer Insights admins. Power BI dataflows,  your own storage account, and attaching to a Dataverse-managed data lake are examples of shared data sources.
+- **Managed by me**: Power Platform dataflows created and can be managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.
+- **Managed by others**: Power Platform dataflows created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.
+> [!NOTE]
+> All entities can be viewed and used by other users. User contextuality applies only to the data sources and not to the entities that result from these dataflows.
+
+If no Power Platform dataflows are used, you won't see any groups or sections. The **Data Sources** page contains only a list of all data sources.
 
 You'll see the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by every column.
 
