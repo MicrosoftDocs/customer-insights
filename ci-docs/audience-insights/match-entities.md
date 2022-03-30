@@ -22,55 +22,49 @@ This step in customer or account unification defines the match order and rules f
 
 ## Include enriched entities (preview)
 
-If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
+If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched entities on the **Duplicate records** page, you do not need to select them again.
 
-1. Select **Use enriched entities** at the top of the page.
+1. On the **Matching conditions** page, select **Use enriched entities** at the top of the page.
 
 1. From the **Use enriched entities** pane, choose one or more enriched entities.
 
-1. Select **Apply**.
+1. Select **Done**.
 
 ## Specify the match order
 
 Each match unifies two or more entities into a single, consolidated entity. At the same time, it keeps the unique customer records. The match order indicates the order in which the system tries to match the records.
 
 > [!IMPORTANT]
-> The entity that you choose as your primary entity will serve as the basis for your unified profiles dataset. Additional entities that are selected during the match phase will be added to this entity. This doesn't mean that the unified entity will include *all* of the data included in this entity.
+> The entity that you choose as your primary entity will serve as the basis for your unified profiles dataset. Additional entities that are selected will be added to this entity. This doesn't mean that the unified entity will include *all* of the data included in this entity.
 >
-> There are two considerations that can help you choose the hierarchy of your entities:
+> Important considerations:
 >
 > - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-1. Select **Entity order**. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
+1. On the **Matching conditions** page, drag and drop entities in the order you want, or use the move up and down arrows. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
 
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
-
-1. Select **Done**.
-
-After specifying the match order, the defined match pairs display in the **Matched records details** section. The key metrics are empty until the match process completes.
-
-:::image type="content" source="media/match-page.png" alt-text="Screenshot of the Match page in the Unify area of the data unification process.":::
   
 The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
+
+:::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the entities." lightbox="media/m3_match.png":::
 
 ## Define rules for match pairs
 
 Match rules specify the logic by which a specific pair of entities will be matched. A rule consists of one or more conditions.
 
-The **Needs rules** warning next to an entity name suggests that no match rule is defined for a match pair.
+The warning next to an entity name means that no match rule is defined for a match pair.
 
-:::image type="content" source="media/match-rule-add.png" alt-text="Screenshot of the Matched record details section with control to add rules highlighted.":::
-
-1. Select **Add rule** under an entity in the **Matched records details** section to define match rules.
+1. Select **Add rule** for an entity to define match rules.
 
 1. In the **Create rule** pane, configure the conditions for the rule.
 
-   :::image type="content" source="media/match-rule-conditions.png" alt-text="Screenshot of an opened match rule with conditions added.":::
+   :::image type="content" source="media/m3_create_rule.png" alt-text="Screenshot of Create rule pane.":::
 
-   - **Entity/Field (first row)**: Choose a related entity and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
+   - **Select Entity/Field (first row)**: Choose a related entity and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
 
-   - **Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
+   - **Select Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
 
    - **Normalize**: Select from following normalization options for the selected attributes.
      - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
@@ -84,15 +78,15 @@ The **Needs rules** warning next to an entity name suggests that no match rule i
      - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
 
-1. Provide a **Name** for the rule.
+   - **Name**: Name for the rule.
 
 1. To match entities only if attributes meet multiple conditions, select **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
+
+1. Optionally, [add exceptions](/#add-exceptions-to-a-rule) to the rule.
 
 1. Select **Done** to finalize the rule.
 
 1. Optionally, [add more rules](#add-rules-to-a-match-pair).
-
-1. Select **Save** to apply your changes.
 
 ### Add rules to a match pair
 
@@ -100,66 +94,13 @@ Match rules represent sets of conditions. To match entities by conditions based 
 
 1. Select **Add rule** on the entity you want to add rules to.
 
-2. Follow the steps in [Define rules for match pairs](#define-rules-for-match-pairs).
+1. Follow the steps in [Define rules for match pairs](#define-rules-for-match-pairs).
 
 > [!NOTE]
 > The order of rules matters. The matching algorithm tries to match on the basis of your first rule and continues to the second rule only if no matches were identified with the first rule.
 
-## Run the match process
-
-With configured match rules, including cross-entity matching and deduplication rules, you can run the match process.
-
-Select **Run** to start the process. The matching algorithm takes some time to complete and you can't change the configuration until it completes. To make changes, you can cancel the run. Select the status of the job and select **Cancel job** on the **Progress details** pane.
-
-You'll find the result of a successful run, the unified customer profile entity, on the **Entities** page. Your unified customer entity is called **Customers** in the **Profiles** section. The first successful match run creates the unified *Customer* entity. All subsequent match runs expand that entity.
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
-
-## Review and validate your matches
-
-Evaluate the quality of your match pairs and refine them if necessary.
-
-The tiles on top of the page show key metrics, summarizing the number of matched records and duplicates.
-
-:::image type="content" source="media/match-KPIs.png" alt-text="Cropped screenshot of the key metrics on the Match page with numbers and details.":::
-
-- **Unique source records** shows the number of individual source records that were processed in last match run.
-- **Matched and non-matched records** highlights how many unique records remain after processing the match rules.
-- **Matched records only** shows the number of matches across all of your match pairs.
-
-You can assess the results of each match pair and its rules in the **Matched records details** table. Compare the number of records that came from a match pair against the percentage of successfully matched records.
-
-Review the rules of a match pair to see the percentage of successfully matched records at the rule level. Select the ellipsis (...) and then select **Match preview** to view all these records on the rule level. We recommend that you take a look at some records to validate that they were matched correctly.
-
-Try different precision thresholds on conditions to find the optimal value.
-
-  1. Select the ellipsis (...) for the rule that you want to experiment with and select **Edit**.
-
-  2. Change the precisions values in the conditions you want to revise.
-
-  3. Select **Preview** so see the number of matched and unmatched records for the selected condition.
-
-Refer to [Manage match rules](#manage-match-rules) to make additional changes or consider [Advanced options](#advanced-options). 
-
-## Next step
-
-Once you are satisfied with the matching results, go to [Unify fields](merge-entities.md).
-
-## Manage match rules
-
-You can reconfigure and fine-tune most of the match parameters.
-
-:::image type="content" source="media/match-rules-management.png" alt-text="Screenshot of the dropdown menu with match rule options.":::
-
-- **Change the order of your rules** if you defined multiple rules. You can reorder the match rules by selecting the **Move Up** and **Move Down** options or by drag and drop.
-
-- **Change rule conditions** by selecting **Edit** and choose different fields.
-
-- **Deactivate a rule** to retain a match rule while excluding it from the matching process.
-
-- **Duplicate your rules** if you've defined a match rule and would like to create a similar rule with modifications, select **Duplicate**.
-
-- **Delete a rule** by selecting the **Delete** symbol.
+> [!div class="nextstepaction"]
+> [Next step: Unify fields](merge-entities.md)
 
 ## Advanced options
 
@@ -179,7 +120,7 @@ For example, if your match rule combines last name, city, and date of birth, the
 
 ### Specify custom match conditions
 
-You can specify conditions that override the default match logic. There are four options available: 
+You can specify conditions that override the default match logic. There are four options available:
 
 |Option  |Description |Example  |
 |---------|---------|---------|
@@ -188,11 +129,7 @@ You can specify conditions that override the default match logic. There are four
 |Custom bypass     | Defines values that the system should always ignore in the match phase. |  Ignore the values *11111* and *Unknown* during match.        |
 |Alias mapping    | Defining values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
 
-1. Select **Custom match** in the **Matched records details** section.
-
-   :::image type="content" source="media/custom-match-create.png" alt-text="Screenshot of the match rules section with Custom match control highlighted.":::
-
-1. In the **Custom** pane, go to the **Records** tab.
+1. Select **Custom**.
 
 1. Choose the custom match option from the **Custom type** dropdown and select **Download template**. You need a separate template for each match option.
 
@@ -210,7 +147,7 @@ You can specify conditions that override the default match logic. There are four
 
 1. Go to **Data** > **Data sources** and ingest the template files as new entities.
 
-1. After uploading the files and entities are available, select the **Custom match** option again. You'll see options to specify the entities you want to include. Select the required entities from the dropdown menu and select **Done**.
+1. After uploading the files and entities are available, select the **Custom** option again. You'll see options to specify the entities you want to include. Select the required entities from the dropdown menu and select **Done**.
 
    :::image type="content" source="media/custom-match-overrides.png" alt-text="Screenshot of the dialog to choose overrides for a custom match scenario.":::
 
@@ -218,14 +155,5 @@ You can specify conditions that override the default match logic. There are four
 
    - For **Always match** or **Never match**, proceed to the next step.
    - For **Custom bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the Normalizations dropdown, choose the **Custom bypass** or **Alias mapping** option and select **Done**.
-
-1. Select **Save** to apply the custom match configuration.
-
-1. Select **Run** on the **Match** page to start the matching process. Other specified match rules are overridden by the custom match configuration.
-
-#### Known issues
-
-- Self-conflation doesn't show the normalized data in deduplication entities. However, it applies the normalization internally during deduplication. It's by design for all normalizations. 
-- If the semantic type setting is removed in the **Source fields** step when a match rule uses Alias mapping or Custom bypass, the normalization won't be applied. It only happens if you clear the semantic type after configuring the normalization in the match rule because the semantic type will be unknown.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

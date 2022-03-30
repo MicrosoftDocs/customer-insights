@@ -16,11 +16,11 @@ searchScope:
   - customerInsights
 ---
 
-# Unify customer or account fields
+# Unify customer fields
 
 This step in the unification process enables you to reconcile conflicting data. Examples of conflicting data could include a customer name found in two of your datasets but that shows up a little differently in each ("Grant Marshall" versus "Grant Marshal"), or a phone number that differs in format (617-803-091X versus 617803091X). Merging those conflicting data points is done on an attribute-by-attribute basis.
 
-:::image type="content" source="media/merge-fields-page.png" alt-text="Merge page in the data unification process showing table with merged fields that define the unified customer profile.":::
+:::image type="content" source="media/m3_unify.png" alt-text="Merge page in the data unification process showing table with merged fields that define the unified customer profile.":::
 
 Choose and exclude attributes to merge within your unified customer profile entity. Some attributes are automatically merged by the system.
 
@@ -31,54 +31,17 @@ Review the system recommendations listed in the **Customer fields** tab of the t
 1. Select a merged attribute. The attributes that compose the merged attribute display in two new rows beneath the merged attribute.
 
 1. Optionally, change the merged attribute. You can:
-   - [Separate](#separate-merged-fields)
-   - [Rename](#rename-merged-fields)
-   - [Exclude](#exclude-merged-fields)
    - [Edit](#edit-a-merged-field)
+   - [Rename](#rename-merged-fields)
+   - [Separate](#separate-merged-fields)
+   - [Exclude](#exclude-merged-fields)
+   - [Move up or down](#change-the-order-of-fields)
 
-   :::image type="content" source="media/manage-merged-attributes.png" alt-text="Options in the Show more dropdown menu to manage merged attributes.":::
+   :::image type="content" source="media/m3_unify_actions.png" alt-text="Options in the Show more dropdown menu to manage merged attributes.":::
 
 1. Select separate attributes to combine them. You can [combine fields](#combine-fields-manually) or [combine a group of fields](#combine-a-group-of-fields).
 
-## Separate, rename, exclude, or edit merged fields
-
-### Separate merged fields
-
-To separate merged fields, find the attribute in the table. Separated fields show as individual data points on the unified customer profile.
-
-1. Select the merged field.
-  
-1. Select **Show more** and choose **Separate fields**.
-
-1. Confirm the separation.
-
-1. Select **Save**.
-
-### Rename merged fields
-
-Change the display name of merged attributes. You can't change the name of the output entity.
-
-1. Select the merged field.
-  
-1. Select **Show more** and choose **Rename**.
-
-1. Confirm the changed display name.
-
-1. Select **Save**.
-
-### Exclude merged fields
-
-Exclude an attribute from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile.
-
-1. Select a merged field.
-  
-1. Select **Show more** and choose **Exclude**.
-
-1. Confirm the exclusion.
-
-1. Select **Save**.
-
-To see the list of all excluded fields, select **Excluded fields**. If necessary, you can readd the excluded field.
+## Edit, rename, separate, or exclude merged fields
 
 ### Edit a merged field
 
@@ -101,7 +64,47 @@ To see the list of all excluded fields, select **Excluded fields**. If necessary
 
 1. Select **Save**.
 
+### Rename merged fields
+
+Change the display name of merged attributes. You can't change the name of the output entity.
+
+1. Select the merged field.
+  
+1. Select **Show more** and choose **Rename**.
+
+1. Confirm the changed display name.
+
+1. Select **Save**.
+
+### Separate merged fields
+
+To separate merged fields, find the attribute in the table. Separated fields show as individual data points on the unified customer profile.
+
+1. Select the merged field.
+  
+1. Select **Show more** and choose **Separate fields**.
+
+1. Confirm the separation.
+
+1. Select **Save**.
+
+### Exclude merged fields
+
+Exclude an attribute from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile.
+
+1. Select a merged field.
+  
+1. Select **Show more** and choose **Exclude**.
+
+1. Confirm the exclusion.
+
+1. Select **Save**.
+
+To see the list of all excluded fields, select **Excluded fields**. If necessary, you can readd the excluded field.
+
 ## Combine separated fields
+
+   :::image type="content" source="media/m3_combine.png" alt-text="Combine options. Combine fields or group of fields.":::
 
 ### Combine fields manually
 
@@ -111,7 +114,7 @@ Combine separated fields to create a merged attribute.
 
 1. Specify the merge winner policy in the **Combine fields by** dropdown.
 
-1. Select **Add fields** to combine more fields.
+1. Select **Add field** to combine more fields.
 
 1. Provide a **Name** and an **Output field name**.
 
@@ -141,15 +144,11 @@ Treat a group of fields as a single unit. For example, if our records contain th
 
 Some entities contain more details than others. If an entity includes the latest data about a field, you can prioritize it over other entities when merging values.
 
-1. Select the merged field.
+1. Select the field.
   
-1. Select **Show more** and choose **Edit**.
+1. Select **Show more** and choose **Move up/down** to set the order or drag and drop them in the desired position.
 
-1. In the **Combine fields** pane, select **Move up/down** to set the order or drag and drop them in the desired position.
-
-1. Confirm the change.
-
-1. Select **Save**
+1. Select **Done**.
 
 ## Configure Customer ID generation
 
@@ -186,25 +185,8 @@ As part of the customer profile generation configuration process, you can define
 
 1. Select **Done**. The cluster is created when the merge is run and the cluster identifiers are added as new fields to the *Customer* entity.
 
-## Run your merge
+> [!div class="nextstepaction"]
+> [Next step: Review unification](review-unification.md)
 
-Whether you manually merge attributes or let the system merge them, you can always run your merge. Select **Run** on the **Unified fields** page to start the process.
-
-> [!div class="mx-imgBorder"]
-> ![Data merge Save and Run.](media/configure-data-merge-save-run.png "Data merge Save and Run")
-
-Choose **Run only Merge** if you only want to see the output reflected in the unified customer entity. Downstream processes will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
-
-Choose **Run Merge and downstream processes** to refresh the system with your changes. All processes, including enrichment, segments, and measures will rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
-
-To make more changes and rerun the step, you can cancel an in-progress merge. Select **Refreshing ...** and select **Cancel job**  in the side pane that appears.
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
-
-:::image type="content" source="media/process-detail-path.png" alt-text="Drill-down path to get to process details from the task status link.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-
-## Next step
-
-Go to [Review unification](review-unification.md).
