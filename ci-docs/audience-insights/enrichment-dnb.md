@@ -1,7 +1,7 @@
 ---
 title: "Enrichment of company profiles with Dun & Bradstreet"
 description: "General information about the Dun & Bradstreet third-party enrichment."
-ms.date: 02/09/2022
+ms.date: 03/30/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -21,7 +21,7 @@ To configure a Dun & Bradstreet enrichment, the following prerequisites must be 
 
 - You have an active [Dun & Bradstreet](https://www.dnb.com/products/master-data/dnb-connect.html?source=microsoft_audience_insights) license.
 - You have [unified customer profiles](customer-profiles.md) for companies.
-- A Dun & Bradstreet [connection](connections.md) is configured by an administrator. You can create it if you have [administrator](permissions.md#administrator) permissions and the credentials from Dun & Bradstreet Connect. 
+- A Dun & Bradstreet [connection](connections.md) is configured by an administrator. You can create it if you have [administrator](permissions.md#admin) permissions and the credentials from Dun & Bradstreet Connect. 
 
 ## Setting up your Dun & Bradstreet project
 
