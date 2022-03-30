@@ -82,7 +82,7 @@ The warning next to an entity name means that no match rule is defined for a mat
 
 1. To match entities only if attributes meet multiple conditions, select **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
 
-1. Optionally, [add exceptions](/match-entities.md#add-exceptions-to-a-rule) to the rule.
+1. Optionally, [add exceptions](/#add-exceptions-to-a-rule) to the rule.
 
 1. Select **Done** to finalize the rule.
 
@@ -98,24 +98,6 @@ Match rules represent sets of conditions. To match entities by conditions based 
 
 > [!NOTE]
 > The order of rules matters. The matching algorithm tries to match on the basis of your first rule and continues to the second rule only if no matches were identified with the first rule.
-
-## Preview rule results
-
-Review the rules of a match pair to see the percentage of successfully matched records at the rule level.
-
-1. Select the vertical ellipsis (...) on a rule and then select **Match preview** to view all records on the rule level. We recommend that you take a look at some records to validate that they were matched correctly.
-
-1. Try different precision thresholds on conditions to find the optimal value.
-
-   1. Select the vertical ellipsis (...) for the rule that you want to experiment with and select **Edit**.
-
-   1. Change the precisions values in the conditions you want to revise.
-
-   1. Select **Preview** to see the number of matched and unmatched records for the selected condition.
-
-1. Try [Advanced options](#advanced-options) to make additional changes.
-
-1. When you are satisfied with the results for the rules, select **Next**.
 
 > [!div class="nextstepaction"]
 > [Next step: Unify fields](merge-entities.md)

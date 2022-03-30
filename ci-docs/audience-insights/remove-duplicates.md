@@ -69,8 +69,6 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. Select **Done** to apply your deduplication selections. The deduplication stats will display after the unification process is complete and run.
 
-1. To preview the results of a deduplication rule, select the rule and select **Match preview**.
-
 1. After defining the deduplication rules, select **Next**.
 
 > [!div class="nextstepaction"]
