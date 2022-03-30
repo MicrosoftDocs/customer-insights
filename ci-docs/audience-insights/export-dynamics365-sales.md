@@ -3,23 +3,31 @@ title: "Export Customer Insights data to Dynamics 365 Sales"
 description: "Learn how to configure the connection and export to Dynamics 365 Sales."
 ms.date: 03/03/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
+searchScope: 
+  - ci-export
+  - customerInsights
 ---
 
 # Use segments in Dynamics 365 Sales (preview)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Use your customer data to create marketing lists, follow up workflows, and send out promotions with Dynamics 365 Sales.
 
+## Known limitations
+
+- Exports to Dynamics 365 Sales are limited to 100'000 members per segment.
+- Segment exports to Dynamics 365 Sales can take up to 3 hours to complete. 
+
 ## Prerequisite for connection
 
-1. Contact records must be present in Dynamics 365 Sales before you can export a segment from Customer Insights to Sales. Read more on how to ingest contacts in [Dynamics 365 Sales using Microsoft Dataverse](connect-power-query.md).
+1. Contact records must be present in Dynamics 365 Sales before you can export a segment from Customer Insights to Sales. Read more on how to ingest contacts from [Dynamics 365 Sales using Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
    > [!NOTE]
    > Exporting segments from audience insights to Sales will not create new contact records in the Sales instances. The contact records from Sales must be ingested in audience insights and used as a data source. They also need to be included in the unified Customer entity to map customer IDs to contact IDs before segments can be exported.

@@ -1,9 +1,9 @@
 ---
 title: "Product recommendation prediction"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 09/13/2021
+ms.date: 01/13/2022
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: wmelewong 
@@ -11,7 +11,7 @@ ms.author: wameng
 manager: shellyha
 ---
 
-# Product recommendation prediction (preview)
+# Product recommendation prediction
 
 The product recommendation model creates sets of predictive product recommendations. Recommendations are based on previous purchase behavior and customers with similar purchase patterns. You can create new product recommendation predictions on the **Intelligence** > **Predictions** page. Select **My predictions** to see other predictions that you've created.
 
@@ -57,7 +57,7 @@ If you're interested in trying this feature but don't have data to complete the 
 
 1. In Customer Insights, go to **Intelligence** > **Predictions**.
 
-1. Select the **Product recommendations model (preview)** tile and select **Use this model**.
+1. Select the **Product recommendations model** tile and select **Use this model**.
    > [!div class="mx-imgBorder"]
    > ![Product Recommendation model tile with Use this model button.](media/product-recommendation-usethismodel.PNG "Product Recommendation model tile with Use this model button")
 
@@ -74,11 +74,11 @@ If you're interested in trying this feature but don't have data to complete the 
 1. Set the **Number of products** you want to recommend to a customer. This value depends on how your delivery method fills data. If you can recommend three products, set this value accordingly.
    
    >[!TIP]
-   > You can select **Save and close** at any time to save the prediction as a draft. You'll find the draft prediction in the **My predictions** tab.
+   > You can select **Save draft** at any time to save the prediction as a draft. You'll find the draft prediction in the **My predictions** tab.
 
-1. Choose if you want to **Suggest products customers have recently purchased**.
+1. Choose if you want to include products customers have recently purchased in the **Repeat purchases expected** field.
 
-1. If you've selected to *not* recommend recently purchased products, set the **Look back window**. This setting specifies the time frame the model considers before recommending the product to the user again. For example, indicate a customer purchases a laptop every two years. This window will look at the purchase history for the last two years, and if they find an item, the item will be filtered from the recommendations.
+1. Set the **Look back window**. This setting specifies the time frame the model considers before recommending the product to the user again. For example, indicate a customer purchases a laptop every two years. This window will look at the purchase history for the last two years, and if they find an item, the item will be filtered from the recommendations.
 
 1. Select **Next**
 

@@ -3,12 +3,15 @@ title: "Home page in audience insights"
 description: "Start exploring the app on the Home page."
 ms.date: 10/19/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
+searchScope: 
+  - ci-home
+  - customerInsights
 ---
 
 # Explore audience insights

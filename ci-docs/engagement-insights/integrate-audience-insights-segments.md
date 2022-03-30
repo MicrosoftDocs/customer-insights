@@ -2,7 +2,7 @@
 title: Use audience insights segments to filter engagement insights reports
 description: Use audience insights segments in interactive analyses of behavioral data captured by engagement insights on a customer’s website.
 ms.date: 07/27/2021
-ms.service: customer-insights
+
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel

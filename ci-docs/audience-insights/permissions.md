@@ -1,14 +1,18 @@
 ---
 title: "Manage user permissions"
 description: "Learn about permissions and user roles."
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
+searchScope: 
+  - ci-permissions
+  - ci-system-security
+  - customerInsights
 ---
 
 # User permissions
@@ -40,7 +44,7 @@ There are three types of roles:
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for first party enrichments only).
 - Manage and create exports based on connections shared with contributors. [Learn more about how administrators allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-## Administrator
+## Admin
 
 - All permissions available to the Contributor.
 - Change settings on the **System** page, including the working language and refresh schedules for your system processes.
@@ -52,6 +56,12 @@ There are three types of roles:
 - Install and use the **Customer Card Add-in**.
 - Add and use the **Power Apps connector**.
 - Enable usage of [Customer Insights APIs](apis.md).
+- [Assign environment ownership](manage-environments.md#change-the-owner-of-an-environment) to another admin.
+
+## Admin (owner)
+
+- All permissions available to the Admin.
+- [Reset and delete](manage-environments.md#reset-an-existing-environment) the environment.
 
 ## Assign roles and permissions
 

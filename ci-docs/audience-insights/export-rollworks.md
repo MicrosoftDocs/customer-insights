@@ -3,7 +3,7 @@ title: "Export Customer Insights data to RollWorks"
 description: "Learn how to configure the connection and export to RollWorks."
 ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer

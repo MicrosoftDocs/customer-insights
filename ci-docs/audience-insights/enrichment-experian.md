@@ -3,7 +3,7 @@ title: "Enrichment with the third-party enrichment Experian"
 description: "General information about the Experian third-party enrichment."
 ms.date: 04/09/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
@@ -21,7 +21,7 @@ To configure Experian, the following prerequisites must be met:
 
 - You have an active Experian subscription. To get a subscription, [contact Experian](https://www.experian.com/marketing-services/contact) directly. [Learn more about Experian Data Enrichment](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- An Experian connection has already been configured by an administrator *or* you have [administrator](permissions.md#administrator) permissions. You also need the User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
+- An Experian connection has already been configured by an administrator *or* you have [administrator](permissions.md#admin) permissions. You also need the User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
 
 ## Supported countries/regions
 

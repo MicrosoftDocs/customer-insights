@@ -3,12 +3,15 @@ title: "Custom machine learning models | Microsoft Docs"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
 ms.date: 12/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
+searchScope: 
+  - ci-custom-models
+  - customerInsights
 ---
 
 # Custom machine learning models
@@ -35,6 +38,8 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
    > [!NOTE]
    > Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 ## Add a new workflow
 

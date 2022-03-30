@@ -1,8 +1,8 @@
 ---
 title: "New and upcoming features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 12/02/2021
-ms.service: customer-insights
+ms.date: 03/02/2022
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
@@ -13,8 +13,6 @@ manager: shellyha
 
 # What's new in the audience insights capability of Dynamics 365 Customer Insights
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
 
 We roll out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action and we'll update the app automatically with no downtime.
@@ -22,9 +20,121 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+
+## February 2022 updates
+
+The updates in February 2022 include new features, performance upgrades, and bug fixes.
+
+### General availability for prediction models
+
+Out-of-the-box prediction models, including **subscription churn**, **transactional churn**, and **customer lifetime value (CLV)** become generally available as a part of Customer Insights. 
+
+For more information, see [Predictions overview](predictions-overview.md).
+
+### New data source: Integration with Azure Synapse Analytics (Preview)
+
+Azure Synapse Analytics is an enterprise analytics service that accelerates time to insights across data warehouses and big data systems.
+
+If your organization already uses to advanced analytics capabilities of Azure Synapse Analytics and stores the output in the in Data Lake databases, you can easily ingest that data to Customer Insights. 
+For more information, see [Connect an Azure Synapse data source (Preview)](connect-synapse.md).
+
+### LiveRamp enrichment (Preview)
+
+LiveRamp provides deterministic offline identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
+
+For more information, see [Enrich customer profiles with identity data from LiveRamp (Preview)](enrichment-liveramp.md).
+
+### Enrichment for data sources (Preview)
+
+Use data from sources like Microsoft and other partners to enrich your customer data before data unification. Data source enrichments help produce higher data completeness and quality that can help achieve better results once you unify your data.
+
+For more information, see [Enrichment for data sources (Preview)](data-sources-enrichment.md).
+
+### Change owner of environment
+
+While several users can have admin permissions in Customer Insights, only one user is the owner of an environment. An improved experience lets you change owners of an environment and claim ownership if a former owner left the organization. 
+
+For more information, see [Change the owner of an environment](manage-environments.md#change-the-owner-of-an-environment).
+
+### Data preparation process lists corruption reason for corrupted records
+
+The data preparation process now shows the reason for corruption for all fields with corrupted data at the individual record level for easy identification. 
+
+For more information, see [Corrupted data sources](entities.md#corrupted-data-sources).
+
+### End of preview for reporting features in the engagement insights capability
+
+The Dynamics 365 Customer Insights engagement insights capability preview ended February 15, 2022.  
+This change means the Customer Insights trial experience no longer includes the ability to create funnels nor other reporting functionality.
+
+We invite you to explore and evaluate the many other features of [Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/), the Microsoft customer data platform (CDP).    
+ 
+For a transition period, existing preview participants still have access to some preview capabilities and functionality:
+
+- Get code to instrument a web site or mobile app 
+- See events and event properties 
+- Enhance unified profiles with ingested and refined events to benefit from the full value of their customer data
+  
+During the transition period, captured events are still streamed to the connected Data Lake. Once this functionality is turned off, data sharing between engagement insights and audience insights will stop and no new events are sent to the connected storage.
+Please contact your Microsoft Account team directly if you have questions about the end of the capability preview. Your Account team will keep you up to date on coming launches. 
+
+## January 2022 updates
+
+The updates in January 2022 include new features, performance upgrades, and bug fixes.
+
+### Sentiment analysis of your customer’s feedback
+
+Customer Insights provides a new AI-powered feature to synthesize customer sentiment and identify specific business aspects as opportunities for targeted improvements. By analyzing the written feedback of your customers, you can get accurate insights at low cost. Sentiment analysis powered by Natural Language Processing (NLP) models that generate two derived insights for each customer ID. A sentiment score (of –5 to 5) and list of applicable business aspects. 
+
+For more information, see [Analyze sentiment in customer feedback (Preview)](sentiment-analysis.md).
+
+
+## December 2021 updates
+
+The updates in December 2021 include new features, performance upgrades, and bug fixes.
+
+### Forward Customer Insights logs to Azure Monitor
+
+Customer Insights provides a direct integration with Azure Monitor. This feature includes audit events and operational events. Azure Monitor resource logs let you monitor and send logs to Azure Storage, Azure Log Analytics, or stream them to Azure Event Hubs.
+
+For more information, see [Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (Preview)](diagnostics.md).
+
+### Enrich customer profiles with engagement data
+
+Use data from Microsoft Office 365 to enrich your customer account profiles with insights about engagements through Office 365 apps. The engagement data consist of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users is shared. This enrichment is available in the following regions: UK, Europe, North America.
+
+For more information, see [Enrich customer profiles with engagement data (Preview)](enrichment-office.md).
+
+### Advanced data unification features
+
+#### Enable conflict resolution policies at the individual attribute level
+
+When deduplicating customer records within an entity, you may not want to have to choose a full record as a winner. We now allow you to merge the best fields from various records based on rules for every attribute. For example, you can choose to keep the most recent email AND the most complete address from different records. 
+
+You can now define separate merge rules for individual attributes while deduplicating and merging records within a single entity. Previously, we only let you select a single merge rule (keeping records based on recency data completeness) and that rule got applied at the record level to all attributes. That's not ideal when some of the data you want to keep is found in record A, and other good data found in record B.
+
+For more information, see [Define deduplication on a match entity](match-entities.md#define-deduplication-on-a-match-entity).
+
+#### Custom rules for matching
+
+There are times when you need to specify an exception to general rules in order to NOT match records. This can happen when multiple individuals share enough information so the system would match them as a single individual. For example, twins with the same last name, living in the same city, and sharing the date of birth.
+
+Exceptions ensure that incorrect data unification can be addressed in the unification rules. You can add multiple exceptions to a rule.
+
+For more information, see [Add exceptions to a rule](match-entities.md#add-exceptions-to-a-rule).
+
+#### Provide additional conflict resolution policies and enable grouping of attributes
+
+This feature enables you to treat a group of fields as a single unit. For example, when if our records contain the fields Address1, Address2, City, State, and Zip. We likely don't want to merge in a different record’s Address2, thinking it would make our data more complete.
+
+You can now combine a group of related fields and apply a single merge policy to the group. 
+
+For more information, see [Combine a group of fields](merge-entities.md#combine-a-group-of-fields).
+
+
 ## November 2021 updates
 
-The updates in November 2021 include a new features, performance upgrades, and bug fixes.
+The updates in November 2021 include new features, performance upgrades, and bug fixes.
 
 ### Segment membership now available in Dataverse
 

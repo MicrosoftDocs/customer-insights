@@ -1,9 +1,9 @@
 ---
 title: Transaction churn prediction (contains video)
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 10/20/2021
+ms.date: 01/13/2022
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
@@ -11,7 +11,7 @@ ms.author: zacook
 manager: shellyha
 ---
 
-# Transaction churn prediction (preview)
+# Transaction churn prediction
 
 Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. You can create new churn predictions on **Intelligence** > **Predictions**. Select **My predictions** to see other predictions that you've created. 
 
@@ -20,7 +20,7 @@ Transactional churn prediction helps predict if a customer will no longer purcha
 For environments based on business accounts, we can predict transactional churn for an account and also a combination of account and another level of information like product category. Adding a dimension can help find out how likely it is that the account "Contoso" will stop buying the product category "office stationery." In addition, for business accounts, we can also use AI to generate a list of potential reasons why an account is likely to churn for a category of secondary level information.
 
 > [!TIP]
-> Try the tutorial for a transaction churn prediction using sample data: [Transaction churn prediction (preview) sample guide](sample-guide-predict-transactional-churn.md).
+> Try the tutorial for a transaction churn prediction using sample data: [Transaction churn prediction sample guide](sample-guide-predict-transactional-churn.md).
 
 ## Prerequisites
 
@@ -96,12 +96,12 @@ For environments based on business accounts, we can predict transactional churn 
 
 1. In Customer Insights, go to **Intelligence** > **Predictions**.
 
-1. Select the **Customer churn model (preview)** tile and select **Use this model**.
+1. Select the **Customer churn model** tile and select **Use this model**.
 
 1. In the **Customer churn model** pane, choose **Transaction** and select **Get started**.
 
 :::image type="content" source="media/select-transaction-churn.PNG" alt-text="Screenshot with selected transaction option in Customer churn model pane.":::
-
+ 
 ### Name model
 
 1. Provide a name for the model to distinguish it from other models.
@@ -112,11 +112,11 @@ For environments based on business accounts, we can predict transactional churn 
 
 ### Define customer churn
 
-1. Set a window of days to predict churn for in the **Identify customers who may churn in the next** field. For example, predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for a longer or shorter period of time can make it more difficult to address the factors in your churn risk profile, but it depends on your specific business requirements.
+1. Set the **Prediction window**. For example, predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for a longer or shorter period of time can make it more difficult to address the factors in your churn risk profile, but it depends on your specific business requirements.
    >[!TIP]
-   > You can select **Save and close** at any time to save the prediction as a draft. You'll find the draft prediction in the **My predictions** tab to continue.
+   > You can select **Save draft** at any time to save the prediction as a draft. You'll find the draft prediction in the **My predictions** tab to continue.
 
-1. Enter the number of days to define churn in the **A customer has churned if they've made no purchases in:** field. For example, if a customer has made no purchases in the last 30 days, they might be considered as churned for your business. 
+1. Enter the number of days to define churn in the **Churn definition** field. For example, if a customer has made no purchases in the last 30 days, they might be considered as churned for your business. 
 
 1. Select **Next** to continue.
 
@@ -124,19 +124,16 @@ For environments based on business accounts, we can predict transactional churn 
 
 1. Select **Add data** and choose the activity type in the side pane that contains the required transaction or purchase history information.
 
-1. Under **Choose the activities**, choose the specific activities from the selected activity you'd like the calculation to focus on.
+1. Under **Select activities**, choose the specific activities from the selected activity type you'd like the calculation to focus on.
 
-   :::image type="content" source="media/product-recommendation-select-semantic-activity.PNG" alt-text="Side pane showing choosing specific activities under the semantic type.":::
+   :::image type="content" source="media/transaction-churn-select-activity.PNG" alt-text="Side pane showing choosing specific activities under the semantic type.":::
 
-1. If you haven't mapped the activity to a semantic type yet, select **Edit** to do so. The guided experience to map semantic activities opens. Map your data to the corresponding fields in the selected activity type.
+   If you haven't mapped the activity to a semantic type yet, select **Edit** to do so. The guided experience to map semantic activities opens. Map your data to the corresponding fields in the selected activity type.
 
-   :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="Page setting activity type.":::
+1. Map the semantic attributes to the fields that are required to run the model. If the fields below aren't populated, configure the relationship from your purchase history entity to the *Customer* entity. Select **Save**.
 
-1. After mapping the activity to the corresponding semantic type, select **Next** to proceed
+1. In the **Add required data** step, select **Next** to proceed if you don't want to add more activities.
 
-1. Map the semantic attributes to the fields that are required to run the model. If the fields below aren't populated, configure the relationship from your purchase history entity to the *Customer* entity.
-
-1. Select **Next**.
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 

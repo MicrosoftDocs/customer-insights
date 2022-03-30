@@ -3,12 +3,16 @@ title: "Ingest data through a Power Query connector (contains video)"
 description: "Connectors for data sources based on Power Query."
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
+searchScope: 
+  - ci-data-sources
+  - ci-create-data-source
+  - customerInsights
 ---
 
 # Connect to a Power Query data source
@@ -25,7 +29,7 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 1. Select **Add data source**.
 
-1. Select **Microsoft Power Query**, then select **Next**.
+1. Select **Microsoft Power Query**.
 
 1. Provide a **Name** for the data source, and select **Next** to create the data source.
 
@@ -42,12 +46,12 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 1. You can also transform your data. Select an entity to edit or transform. Use the options in the Power Query window to apply transformations. Each transformation gets listed under **Applied steps**. Power Query provides numerous pre-built transformation options. For more information, see [Power Query Transformations](/power-query/power-query-what-is-power-query#transformations).
 
-1. You can add additional entities to your data source by selecting **Get data** in the **Edit queries** dialog.
-
    We recommend you use the following transformations:
 
-   - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform table** and select **Use headers as first row**.
-   - Ensure the data type is set appropriately.
+   - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform** and select **Use first row as headers**.
+   - Ensure the data type is set appropriately. For example, for date fields, select a date type.
+
+1. To add additional entities to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**.
 
 1. Select **Save** at the bottom of the Power Query window to save the transformations. After saving, you'll find your data source on **Data** > **Data sources**.
 

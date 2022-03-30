@@ -3,7 +3,7 @@ title: "Bot for Microsoft Teams"
 description: "Look up unified customer profiles in Microsoft Teams with the help of a bot."
 ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
@@ -28,6 +28,8 @@ To set up and configure the bot, the following prerequisites must be met:
 - Customer Insights and Teams are in the same organization.
 - Your environment has the primary target audience set to individual customers. Business accounts aren't supported.
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## Configure the bot
 
 1. In audience insights, go to **Admin** > **Export Destinations**.

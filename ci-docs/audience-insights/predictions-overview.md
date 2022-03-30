@@ -1,15 +1,15 @@
 ---
 title: Overview about supported prediction scenarios
 description: "Prediction scenarios and options covered by the Dynamics 365 Customer Insights application."
-ms.date: 12/21/2021
+ms.date: 03/24/2022
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
-ms.topic: get-started
+ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.custom: intro-internal
+
 ---
 
 # Predictions overview
@@ -33,6 +33,11 @@ The easiest way to start with predicting data are predefined models, often refer
 - [Transactional churn](predict-transactional-churn.md): Predict if a customer will no longer purchase your products or services in a certain time frame.
 
 ---
+
+> [!TIP]
+> We recommend that you regularly refresh out-of-the box models with updated data to ensure they accurately inform your business use case. Data is refreshed ad-hoc when the system ingests new or updated data sources. However, models will only rescore in this case and continue to use the existing training data.
+> 
+> You can configure an **Update schedule** by setting the model retraining schedule in the configuration experience. The model will retrain and rescore on this schedule, which you can change at any time.
 
 
 ## Azure Machine Learning integration

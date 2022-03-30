@@ -3,17 +3,20 @@ title: "Export Customer Insights data to Dynamics 365 Marketing"
 description: "Learn how to configure the connection and export to Dynamics 365 Marketing."
 ms.date: 08/24/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
+searchScope: 
+  - ci-export
+  - customerInsights
 ---
 
 # Use segments in Dynamics 365 Marketing (preview)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Use [segments](segments.md) to generate campaigns and contact specific groups of customers with Dynamics 365 Marketing. For more information, see [Use segments from Dynamics 365 Customer Insights with Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).
 
@@ -21,7 +24,7 @@ If you are using the new capabilities of Dynamics 365 Marketing for real-time cu
 
 ## Prerequisite for a connection
 
-- Contact records must be present in Dynamics 365 Marketing before you can export a segment from Customer Insights to Marketing. Read more on how to ingest contacts in [Dynamics 365 Marketing using Microsoft Dataverse](connect-power-query.md).
+- Contact records must be present in Dynamics 365 Marketing before you can export a segment from Customer Insights to Marketing. Read more on how to ingest contacts in [Dynamics 365 Marketing using Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
   > [!NOTE]
   > Exporting segments from audience insights to Marketing will not create new contact records in the Marketing instances. The contact records from Marketing must be ingested in audience insights and used as a data source. They also need to be included in the unified Customer entity to map customer IDs to contact IDs before segments can be exported.
@@ -40,7 +43,7 @@ If you are using the new capabilities of Dynamics 365 Marketing for real-time cu
 
 1. In the **Server admin account** section, select **Sign in** and choose a Dynamics 365 Marketing account.
 
-1. Map a customer ID field to the Dynamics 365 Contact ID.
+1. Map the Contact ID field in the Customer entity to the Dynamics 365 Contact ID.
 
 1. Select **Save** to complete the connection. 
 

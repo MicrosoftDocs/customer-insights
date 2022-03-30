@@ -3,7 +3,7 @@ title: "Power Apps connector"
 description: "Connect with Power Apps and Power Automate."
 ms.date: 10/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: Nils-2m
@@ -34,6 +34,8 @@ After adding Customer Insights as a data connection, you can choose the followin
 ### Retrievable entities
 
 You can only retrieve the **Customer**, **UnifiedActivity**, **Segments**, and **ContactProfile** entities through the Power Apps connector. ContactProfile is only available in audience insights instance for business accounts. Other entities are shown because the underlying connector supports them through triggers in Power Automate.
+
+You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint multiple times by using the $skip parameter. [Learn more about the $skip parameter](/connectors/customerinsights/#get-items-from-an-entity).
 
 ### Delegation
 

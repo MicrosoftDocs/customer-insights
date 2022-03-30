@@ -5,7 +5,7 @@ author: jusali
 ms.reviewer: mhart
 ms.author: jusali
 ms.date: 10/01/2021
-ms.service: customer-insights
+
 ms.subservice: engagement-insights 
 ms.topic: how-to
 ms.manager: shellyha
@@ -102,6 +102,6 @@ For more information, see [Create a link between audience insights and engagemen
 
 To protect your customer's personal data, you can delete or export end-user identifiable data.
 
-For more information, see [Delete and export event data containing personal information](../dsr-rights-requests.md#deleting-and-exporting-event-data-containing-end-user-identifiable-information).
+For more information, see [Delete and export event data containing personal information](../dsr-rights-requests.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

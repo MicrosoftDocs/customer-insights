@@ -3,12 +3,15 @@ title: "Bring your own Azure key vault to manage secrets"
 description: "Learn how to configure Customer Insights to use your own Azure key vault."
 ms.date: 10/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: brndkfr
 ms.author: bkief
 manager: shellyha
+searchScope: 
+  - ci-system-security
+  - customerInsights
 ---
 
 # Bring your own Azure key vault (preview)
@@ -24,7 +27,7 @@ To configure the key vault in audience insights, the following prerequisites mus
 
 - You have an active Azure subscription.
 
-- You have an [Administrator](permissions.md#administrator) role in audience insights. Learn more about [user permissions in audience insights](permissions.md#assign-roles-and-permissions).
+- You have an [Administrator](permissions.md#admin) role in audience insights. Learn more about [user permissions in audience insights](permissions.md#assign-roles-and-permissions).
 
 - You have the [Contributor](/azure/role-based-access-control/built-in-roles#contributor) and [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) roles on the key vault or the resource group the key vault belongs to. For more information, go to [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal). If you don't have the User Access Administrator role on the key vault, you must set up the role-based access control permissions for the Azure service principal for Dynamics 365 Customer Insights separately. Follow the steps to [use an Azure service principal](connect-service-principal.md) for the key vault that should be linked.
 

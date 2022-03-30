@@ -2,13 +2,20 @@
 title: "System configuration in audience insights"
 description: "Learn about system settings in Dynamics 365 Customer Insights audience insights capability."
 ms.date: 11/01/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-system-status
+  - ci-system-schedule
+  - ci-system-about
+  - ci-system-general
+  - ci-system-api-usage
+  - customerInsights
 ---
 
 # System configuration
@@ -80,6 +87,10 @@ Select the status of a process to see the progress details of the entire job it 
 ## Schedule tab
 
 Use the **Schedule** tab to schedule automatic refreshes of all your [ingested data sources](data-sources.md). Automatic refreshes help ensure that updates from your data sources are reflected in your unified customer profiles.
+
+> [!NOTE]
+> Data sources managed by you refresh on their own schedules. To schedule refresh of data sources managed by you, configure refresh settings on that specific data source from the **Data sources** page.
+> :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Dataflow refresh settings.":::
 
 1. In audience insights, go to **Admin** > **System** and select the **Schedule** tab.
 

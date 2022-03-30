@@ -1,19 +1,20 @@
 ---
 title: "Connect to tables in Microsoft Dataverse"
 description: "Import data from a Microsoft Dataverse managed data lake."
-ms.date: 12/06/2021
-ms.service: customer-insights
+ms.date: 03/18/2022
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
+searchScope: 
+  - ci-dataverse
+  - customerInsights
 ---
 
 # Connect to data in a Microsoft Dataverse managed data lake
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 This article provides information on how Dataverse users can quickly connect to analytical entities in a Microsoft Dataverse managed lake. 
 
@@ -22,7 +23,8 @@ This article provides information on how Dataverse users can quickly connect to 
 
 ## Important considerations
 
-Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+1. Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+2. Only Dataverse entities with [change tracking](/power-platform/admin/enable-change-tracking-control-data-synchronization) enabled are visible. These entities can be exported to the Dataverse-managed data lake and used in Customer Insights. Out-of-box Dataverse tables have change tracking enabled by default. You need to turn change tracking on for custom tables. To check if a Dataverse table is enabled for change tracking, go to [Power Apps](https://make.powerapps.com) > **Data** > **Tables**. Find the table of your interest and select it. Go to **Settings** > **Advanced options** and review the **Track changes** setting.
 
 ## Connect to a Dataverse managed lake
 

@@ -2,13 +2,22 @@
 title: "Customer activities"
 description: "Define customer activities and view them in a timeline on customer profiles." 
 ms.date: 11/01/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
+searchScope: 
+  - ci-entities
+  - ci-customer-card
+  - ci-relationships
+  - ci-activities
+  - ci-activities-wizard
+  - ci-measures
+  - ci-segment-suggestions
+  - customerInsight
 ---
 
 # Customer activities

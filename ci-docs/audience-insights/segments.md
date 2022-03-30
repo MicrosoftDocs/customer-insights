@@ -1,21 +1,26 @@
 ---
 title: "Segments in audience insights"
 description: "Overview on segments and how to create and manage them."
-ms.date: 11/01/2021
-ms.service: customer-insights
+ms.date: 03/30/2022
 ms.subservice: audience-insights
-ms.topic: how-to
+ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-customers-page
+  - ci-enrichment-details
+  - ci-segments
+  - ci-segment-details
+  - customerInsights
 ---
 
 # Segments overview
 
 Segments let you group your customers based on demographic, transactional, or behavioral attributes. You can use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
 
-Customer profiles that match the filters of a segment definition are referred as *members* of a segment. Some [service limits](service-limits.md) apply.
+Customer profiles that match the filters of a segment definition are referred as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
 ## Create a new segment
 
@@ -58,7 +63,9 @@ The following action are available when you select a segment:
 
 ## Refresh segments
 
-You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**.
+You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**. When a recurring refresh is configured, the following rules apply:
+- All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. When refresh is complete the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see a details about what happened.
+- Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segments was run or refreshed manually.
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
@@ -101,4 +108,4 @@ The lower part contains a list of the segment members.
 >The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, you need to [export the segment](export-destinations.md).
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)] 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: "Subscription churn prediction (contains video)"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
 ms.date: 08/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
@@ -11,7 +11,7 @@ ms.author: zacook
 manager: shellyha
 ---
 
-# Subscription churn prediction (preview)
+# Subscription churn prediction
 
 Subscription churn prediction helps predicting whether a customer is at risk for no longer using your company’s subscription products or services. You can create new subscription churn prediction on the **Intelligence** > **Predictions** page. Select **My predictions** to see other predictions that you've created.
 
@@ -58,7 +58,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 ## Create a subscription churn prediction
 
 1. In audience insights, go to **Intelligence** > **Predictions**.
-1. Select the **Subscription churn model (preview)** tile and select **Use this model**.
+1. Select the **Subscription churn model** tile and select **Use this model**.
    > [!div class="mx-imgBorder"]
    > ![Subscription Churn model tile with Use this model button.](media/subscription-churn-usethismodel.PNG "Subscription Churn model tile with Use this model button")
 
@@ -72,7 +72,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 1. Enter the number of **Days since subscription ended** that your business considers a customer to be in a churned state. This period is typically liked to business activities like offers or other marketing efforts trying to prevent losing the customer.
 1. Enter the number of **Days to look into future to predict churn** to set a window to predict churn for. For example, to predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for longer or shorter periods of time can make it more difficult to address the factors in your churn risk profile, depending on your specific business requirements. Select **Next** to continue
    >[!TIP]
-   > You can select **Save and close** at any time to save the prediction as a draft. You'll find the draft prediction in the **My predictions** tab to continue.
+   > You can select **Save draft** at any time to save the prediction as a draft. You'll find the draft prediction in the **My predictions** tab to continue.
 
 ### Add required data
 

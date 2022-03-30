@@ -2,13 +2,17 @@
 title: "Complete partial data using predictions"
 description: "Use predictions to fill in incomplete customer data."
 ms.date: 11/01/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-predictions
+  - ci-custom-models
+  - customerInsights
 ---
 
 # Complete your partial data with predictions (deprecated)

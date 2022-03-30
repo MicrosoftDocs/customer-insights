@@ -3,12 +3,15 @@ title: "Connections to other services from Customer Insights."
 description: "Share data to other services."
 ms.date: 04/09/2021
 ms.reviewer: nikeller
-ms.service: customer-insights
+
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
+searchScope: 
+  - ci-connections
+  - customerInsights
 ---
 
 # Connections (preview) overview

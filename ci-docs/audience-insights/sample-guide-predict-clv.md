@@ -3,7 +3,7 @@ title: Customer lifetime value prediction sample guide
 description: Use this sample guide to try out the customer lifetime value prediction model.
 ms.date: 05/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: yashlundia
@@ -159,7 +159,7 @@ After ingesting the data, we now begin the data unification process to create a 
 
 ## Task 3 - Configure customer lifetime value prediction
 
-With the unified customer profiles in place, we can now run the customer lifetime value prediction. For detailed steps, see [Customer Lifetime Value prediction (preview)](predict-customer-lifetime-value.md).
+With the unified customer profiles in place, we can now run the customer lifetime value prediction. For detailed steps, see [Customer Lifetime Value prediction](predict-customer-lifetime-value.md).
 
 1. Go to  **Intelligence**  > **Predictions**  and select the **Customer lifetime value model**.
 

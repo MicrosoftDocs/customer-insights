@@ -2,13 +2,16 @@
 title: "Connect to an Azure Data Lake Storage account by using a service principal"
 description: "Use an Azure service principal to connect to your own data lake."
 ms.date: 12/06/2021
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+searchScope: 
+  - ci-system-security
+  - customerInsights
 ---
 
 # Connect to an Azure Data Lake Storage account by using an Azure service principal
@@ -18,7 +21,7 @@ This article discusses how to connect Dynamics 365 Customer Insights with an Azu
 Automated tools that use Azure services should always have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. You can use service principals to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create or update an environment](create-environment.md).
 
 > [!IMPORTANT]
-> - The Data Lake Storage account that will use the service principal must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
+> - The Data Lake Storage account that will use the service principal must be Gen2 and have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). Azure Data Lake Gen1 storage accounts are not supported.
 > - You need admin permissions for your Azure subscription to create a service principal.
 
 ## Create an Azure service principal for Customer Insights
@@ -85,7 +88,7 @@ It can take up to 15 minutes to propagate the changes.
 
 ## Enter the Azure resource ID or the Azure subscription details in the storage account attachment to audience insights
 
-You can attach a Data Lake Storage account in audience insights to [store output data](manage-environments.md) or [use it as a data source](connect-common-data-service-lake.md). This option lets you choose between a resource-based or a subscription-based approach. Depending on the approach you choose, follow the procedure in one of the following sections.
+You can attach a Data Lake Storage account in audience insights to [store output data](manage-environments.md) or [use it as a data source](/dynamics365/customer-insights/audience-insights/connect-dataverse-managed-lake). This option lets you choose between a resource-based or a subscription-based approach. Depending on the approach you choose, follow the procedure in one of the following sections.
 
 ### Resource-based storage account connection
 

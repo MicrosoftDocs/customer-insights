@@ -2,7 +2,7 @@
 title: "Use consent data in out-of-box predictions"
 description: "Learn how to build prediction models that use content data to increase the accuracy of predictions regarding customer churn or customer lifetime value."
 ms.date: 10/30/2021
-ms.service: customer-insights
+
 ms.topic: how-to
 author: dimutako
 ms.author: dimutako

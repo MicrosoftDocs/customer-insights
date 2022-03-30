@@ -5,7 +5,7 @@ ms.reviewer: mhart
 ms.author: kamacdon
 author: kamacdon
 ms.date: 09/21/2021
-ms.service: customer-insights
+
 ms.subservice: engagement-insights 
 ms.topic: how-to
 ms.manager: shellyha 

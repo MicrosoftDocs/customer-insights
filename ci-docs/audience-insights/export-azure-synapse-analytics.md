@@ -3,7 +3,7 @@ title: "Export Customer Insights data to Azure Synapse Analytics"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
 ms.date: 01/05/2022
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft

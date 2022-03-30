@@ -4,15 +4,29 @@
 - name: Product overview
   href: overview.md
 
+- name: Learning catalog
+  items:
+    - name: Get started
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: Ingest data
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: Create a unified customer profile
+      href: /learn/modules/unified-customer-profile/
+    - name: Work with audience insights
+      href: /learn/modules/working-with-customer-insights/
+    - name: Enrich data and make predictions
+      href: /learn/modules/enrich-data/
+    - name: Manage external connections
+      href: /learn/modules/configure-third-party-connections/
+    - name: Administer Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
+
 - name: Free trial
   items:
     - name: Sign up for a free trial
       href: trial-signup.md
     - name: Trial FAQ
       href: trial-FAQ.md
-
-- name: Start with a paid license
-  href: paid-license.md
 
 - name: Access your environment
   href: https://home.ci.ai.dynamics.com/
@@ -33,26 +47,14 @@
       items: 
         - name: Quickstart guide
           href: audience-insights/get-started.md
+        - name: Start with a paid license
+          href: paid-license.md
         - name: Create a new environment
           href: audience-insights/create-environment.md
         - name: Explore audience insights
           href: audience-insights/home.md
-
-    - name: Work with business accounts
-      href: audience-insights/work-with-business-accounts.md
-
-    - name: Learn modules
-      items:
-        - name: Ingest data
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: Create a unified customer profile
-          href: /learn/modules/unified-customer-profile/
-        - name: Work with the app
-          href: /learn/modules/working-with-customer-insights/
-
-        - name: Enrich data and predictions
-          href: /learn/modules/enrich-data/
-         
+        - name: Work with business accounts
+          href: audience-insights/work-with-business-accounts.md
 
     - name: Data sources
       items:
@@ -64,12 +66,14 @@
           href: audience-insights/connect-common-data-model.md
         - name: Add Dataverse managed data lake
           href: audience-insights/connect-dataverse-managed-lake.md
+        - name: Add Azure Synapse Analytics
+          href: audience-insights/connect-synapse.md
+        - name: Enrichment for data sources
+          href: audience-insights/data-sources-enrichment.md
         - name: Incremental refresh for data sources
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Real-time data ingestion
           href: audience-insights/real-time-data-ingestion.md
-        - name: Understand entities and datasets
-          href: audience-insights/entities.md
 
     - name: Data unification
       items:
@@ -81,22 +85,12 @@
           href: audience-insights/match-entities.md
         - name: Merge entities
           href: audience-insights/merge-entities.md
-        - name: Review unified customer profiles
-          href: audience-insights/customer-profiles.md
-        - name: Filter unified customer profiles
-          href: audience-insights/search-filter-index.md
-        - name: Build relationships and connected entities
-          href: audience-insights/relationships.md
-        - name: List customer activities
-          href: audience-insights/activities.md
-        - name: Define semantic mappings
-          href: audience-insights/semantic-mappings.md
 
     - name: Data enrichment
       items:
         - name: Enrich customer profiles
           href: audience-insights/enrichment-hub.md
-        - name: Brand and interest affinities
+        - name: Brands and interests
           href: audience-insights/enrichment-microsoft.md
         - name: Enhanced addresses
           href: audience-insights/enrichment-enhanced-addresses.md
@@ -110,6 +104,8 @@
           href: audience-insights/enrichment-here.md
         - name: Enrich with Leadspace
           href: audience-insights/enrichment-leadspace.md
+        - name: Enrich with LiveRamp
+          href: audience-insights/enrichment-liveramp.md
         - name: Enrich with Experian
           href: audience-insights/enrichment-experian.md
         - name: Enrich with Office 365 data
@@ -117,6 +113,15 @@
         - name: Enrich with SFTP custom import
           href: audience-insights/enrichment-SFTP-custom-import.md
 
+    - name: Unified profiles
+      items:
+        - name: Review unified customer profiles
+          href: audience-insights/customer-profiles.md
+        - name: Filter unified customer profiles
+          href: audience-insights/search-filter-index.md
+        - name: Define customer activities
+          href: audience-insights/activities.md
+   
     - name: Segments
       items:
         - name: Segments overview
@@ -134,9 +139,13 @@
     
     - name: Measures
       items: 
-        - name: Define measures and KPIs
+        - name: Measures overview
           href: audience-insights/measures.md
-
+        - name: Create a new measure
+          href: audience-insights/measure-builder.md
+        - name: Use a measure template
+          href: audience-insights/measure-templates.md
+   
     - name: Predictions
       items:
         - name: Predict data with the help of AI
@@ -253,6 +262,19 @@
             - name: Power BI
               href: audience-insights/export-power-bi.md
 
+    - name: Entities
+      items:
+        - name: Understand entities
+          href: audience-insights/entities.md
+        - name: Review the entity schemas in Common Data Model
+          href: audience-insights/entity-schemas.md
+        - name: Customer Insights data in Dataverse
+          href: audience-insights/customer-insights-dataverse.md
+        - name: Build relationships and connected entities
+          href: audience-insights/relationships.md
+        - name: Define semantic mappings
+          href: audience-insights/semantic-mappings.md
+
     - name: Administration
       items:
         - name: Set up the system configuration
@@ -263,20 +285,19 @@
           href: audience-insights/connections.md
         - name: Manage multiple environments
           href: audience-insights/manage-environments.md
-
-        - name: Security
-          items: 
-            - name: Bring your own Key Vault
-              href: audience-insights/use-azure-key-vault.md
-            - name: Connect to an ADLS storage account using Service Principal
-              href: audience-insights/connect-service-principal.md
-            - name: Export diagnostic logs
-              href: audience-insights/diagnostics.md
-
-    - name: Extensibility
+        - name: Bring your own Key Vault
+          href: audience-insights/use-azure-key-vault.md
+        - name: Connect to a storage account using Service Principal
+          href: audience-insights/connect-service-principal.md
+        - name: Export diagnostic logs
+          href: audience-insights/diagnostics.md
+        - name: Service limits
+          href: service-limits.md
+        - name: DSR rights and requests
+          href: dsr-rights-requests.md
+    
+    - name: APIs
       items:
-        - name: Integrate web data from engagement insights
-          href: audience-insights/integrate-engagement-insights.md
         - name: Review the entity schemas in Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Customer Insights data in Dataverse
@@ -328,99 +349,7 @@
           href: consent-management/predictions-consent-data.md
 
 - name: Engagement insights (preview)
-  items:
-    - name: Help hub
-      href: engagement-insights/index.yml
+  href: engagement-insights/overview.md
 
-    - name: About engagement insights
-      href: engagement-insights/overview.md
-
-    - name: Get started
-      items:
-        - name: Quickstart guide
-          href: engagement-insights/get-started.md
-        - name: Create an environment
-          href: engagement-insights/create-new-environment.md
-        - name: Create a workspace
-          href: engagement-insights/create-workspace.md
-        - name: Capture events from websites and mobile apps
-          href: engagement-insights/developer-resources.md
-        - name: Concepts and terminology
-          href: engagement-insights/glossary.md
-
-    - name: Events
-      items: 
-        - name: Create and modify events
-          href: engagement-insights/refined-events.md
-        - name: Recognize web events from previously authenticated visitors
-          href: engagement-insights/unknown-to-known.md
-        - name: Export events
-          href: engagement-insights/export-events.md
-
-    - name: Reports
-      items: 
-        - name: View reports
-          href: engagement-insights/view-reports.md
-        - name: Create custom reports
-          href: engagement-insights/custom-reports.md
-        - name: Create unified profile reports
-          href: engagement-insights/profile-reports.md
-        - name: View and create dimensions
-          href: engagement-insights/dimensions.md
-        - name: View and create metrics
-          href: engagement-insights/metrics.md
-        - name: View and create segments
-          href: engagement-insights/segments.md
-
-    - name: Journey analytics
-      items: 
-        - name: Create and manage funnel reports
-          href: engagement-insights/funnel-reports.md
-    
-    - name: Developer resources
-      items: 
-        - name: Developer resources overview
-          href: engagement-insights/developer-resources.md
-        - name: Web SDK tutorial
-          href: engagement-insights/advanced-SDK-implementation.md
-        - name: Web SDK sample
-          href: engagement-insights/websdk-sample.md
-        - name: Android SDK tutorial
-          href: engagement-insights/get-started-android.md
-        - name: Android SDK sample
-          href: engagement-insights/androidsdk-sample.md
-        - name: iOS SDK tutorial
-          href: engagement-insights/get-started-ios.md
-        - name: iOS SDK sample
-          href: engagement-insights/iossdk-sample.md
-
-    - name: Administration
-      items: 
-        - name: Roles and permissions
-          href: engagement-insights/user-roles.md
-        - name: Manage environments and workspaces
-          href: engagement-insights/manage-environments-workspaces.md
-        - name: Manage cookies and user consent
-          href: engagement-insights/user-consent-storage.md
-
-    - name: Regional availability
-      href: engagement-insights/regional-availability.md
-
-- name: Share data between capabilities
-  items:
-
-    - name: Link audience insights and engagement insights
-      href: engagement-insights/integrate-audience-insights-engagement-insights.md
-
-    - name: Use audience insights segments in engagement insights reports
-      href: engagement-insights/integrate-audience-insights-segments.md
-
-    - name: Use demographic dimensions for splitting behavioral data
-      href: engagement-insights/curate-dimensions.md
-
-- name: Service limits
-  href: service-limits.md
-
-- name: DSR rights and requests
-  href: dsr-rights-requests.md
-
+- name: Get support
+  href: /power-platform/admin/get-help-support

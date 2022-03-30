@@ -3,7 +3,7 @@ title: "Power Automate connector | Microsoft Docs"
 description: "Create flows in Microsoft Power Automate from Dynamics 365 Customer Insights."
 ms.date: 06/24/2021
 ms.reviewer: mhart
-ms.service: customer-insights
+
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
@@ -14,6 +14,10 @@ manager: shellyha
 # Power Automate connector (preview)
 
 Trigger specific events to occur automatically when your data changes and manage more complex flows directly in [Power Automate](https://flow.microsoft.com/).
+
+## Known limitations
+
+- You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint multiple times by using the $skip parameter. [Learn more about the $skip parameter](/connectors/customerinsights/#get-items-from-an-entity).
 
 ## Power Automate triggers
 
