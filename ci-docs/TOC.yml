@@ -222,6 +222,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Iterable
+              href: audience-insights/export-iterable.md
             - name: Klaviyo
               href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
