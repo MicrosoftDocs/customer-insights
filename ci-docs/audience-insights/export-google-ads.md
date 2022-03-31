@@ -15,24 +15,19 @@ manager: shellyha
 
 Export segments of unified customer profiles to a Google Ads audience list and use them to advertise on Google Search, Gmail, YouTube, and Google Display Network. 
 
-> [!IMPORTANT]
-> Currently, you can only create a new connection and export data to Google Ads if you already have an approved Google Ads Developer token. Due to policy changes, we'll update the Google Ads export shortly and provide an export option that won't require a developer token to ensure continuity of your experience and simplify the export to Google Ads. We recommend to not set up more connections to Google Ads to facilitate an easier switch to the new export option.
 
 ## Prerequisites for connection
 
 -	You have a [Google Ads account](https://ads.google.com/) and corresponding administrator credentials.
--	You have an [approved Google Ads Developer token](https://developers.google.com/google-ads/api/docs/first-call/dev-token). 
 -	You fulfill the requirements of the [Customer Match Policy](https://support.google.com/adspolicy/answer/6299717).
 -	You fulfill the requirements of the [remarketing list sizes](https://support.google.com/google-ads/answer/7558048).
--	There are existing audiences in Google Ads and the corresponding IDs. For more information, see [Google Ads audiences](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
 -	You have [configured segments](segments.md).
--	Unified customer profiles in the exported segments contain fields representing an email address, first name, and last name.
+-	Unified customer profiles in the exported segments contain fields representing an email address, phone, Mobile Advertiser ID, Third Party user ID, or adress.
 
 ## Known limitations
 
-- Up to 1 million customer profiles per export to Google Ads.
 - Exporting to Google Ads is limited to segments.
-- Exporting segments with a total of 1 million customer profiles can take up to 5 minutes because of limitations on the provider side. 
+- Exporting segments with a total of 1 million customer profiles can take up to 30 minutes because of limitations on the provider side. 
 - The matching in Google Ads can take up to 48 hours.
 
 ## Set up connection to Google Ads
@@ -46,8 +41,6 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter your **[Google Ads customer ID](https://support.google.com/google-ads/answer/1704344)**.
-
-1. Enter your **[Google Ads approved developer token](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**.
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
@@ -67,11 +60,11 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Connection for export** field, choose a connection from the Google Ads section. If you don't see this section name, then no connections of this type are available to you.
 
-1. Enter your **[Google Ads audience ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** and select **Connect** to initialize the connection to Google Ads.
+1. If you want to create a new audience, leave the Google Audience ID field blank. We will automatically create a new audience in your Google Ads account and use the name of the exported segment. If you want to update an existing Google Ads audience, enter your [Google Ads audience ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)
 
-1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
+1. In the **Data matching** section, select one or more data fields to export, and select the field that represents the corresponding data fields in Customer Insights.
 
-1. Select the segments you want to export. You can export up to 1 million customer profiles in total to Google Ads.
+1. Select the segments you want to export. 
 
 Saving an export doesn't run the export immediately.
 
