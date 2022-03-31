@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Google Ads"
 description: "Learn how to configure the connection and export to Google Ads."
-ms.date: 09/27/2021
+ms.date: 03/31/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -22,7 +22,7 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 -	You fulfill the requirements of the [Customer Match Policy](https://support.google.com/adspolicy/answer/6299717).
 -	You fulfill the requirements of the [remarketing list sizes](https://support.google.com/google-ads/answer/7558048).
 -	You have [configured segments](segments.md).
--	Unified customer profiles in the exported segments contain fields representing an email address, phone, Mobile Advertiser ID, Third Party user ID, or adress.
+-	Unified customer profiles in the exported segments contain fields representing an email address, phone, mobile advertiser ID, third-party user ID, or address.
 
 ## Known limitations
 
