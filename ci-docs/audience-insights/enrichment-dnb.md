@@ -19,7 +19,7 @@ Dun & Bradstreet provides commercial data, analytics, and insights for businesse
 
 To configure a Dun & Bradstreet enrichment, the following prerequisites must be met:
 
-- You have an active [Dun & Bradstreet](https://www.dnb.com/products/master-data/dnb-connect.html?source=microsoft_audience_insights) license.
+- You have an active [Dun & Bradstreet](https://www.dnb.com/marketing/media/give-your-data-a-boost.html?source=microsoft_audience_insights) license.
 - You have [unified customer profiles](customer-profiles.md) for companies.
 - A Dun & Bradstreet [connection](connections.md) is configured by an administrator. You can create it if you have [administrator](permissions.md#admin) permissions and the credentials from Dun & Bradstreet Connect. 
 
