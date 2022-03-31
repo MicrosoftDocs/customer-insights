@@ -42,7 +42,7 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 > - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-1. On the **Matching conditions** page, drag and drop entities in the order you want, or use the move up and down arrows. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
+1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
 
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
   
@@ -80,9 +80,9 @@ The warning next to an entity name means that no match rule is defined for a mat
 
    - **Name**: Name for the rule.
 
-1. To match entities only if attributes meet multiple conditions, select **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
+1. To match entities only if attributes meet multiple conditions, select **Add** > **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
 
-1. Optionally, [add exceptions](/#add-exceptions-to-a-rule) to the rule.
+1. Optionally, consider advanced options such as [exceptions](#add-exceptions-to-a-rule) or [custom match conditions](#specify-custom-match-conditions).
 
 1. Select **Done** to finalize the rule.
 
@@ -110,9 +110,7 @@ In most cases, the entity matching leads to unique user profiles with consolidat
 
 For example, if your match rule combines last name, city, and date of birth, the system would identify twins with the same last name who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine aren’t the same.
 
-1. Select **Edit** on the rule you want to add conditions to.
-
-1. In the **Edit rule** pane, select **Add exception**.
+1. In the **Edit rule** pane, select **Add** > **Add exception**.
 
 1. Specify the exception criteria.
 
