@@ -18,7 +18,7 @@ searchScope:
 
 You can [access audience insights from Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 
-The **Home** page shows an overview of segments, measures, and enrichment data (if configured) after completing the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
+The **Home** page shows an overview of segments, measures, and enrichment data (if configured) after completing [data unification](data-unification.md).
 
 :::image type="content" source="media/home-page.png" alt-text="Screenshot of the Home screen showing sample insights.":::
 

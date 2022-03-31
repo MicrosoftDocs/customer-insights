@@ -48,7 +48,7 @@ Some output entities from audience insights are available as tables in Dataverse
 
 ### CustomerProfile
 
-This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile depends on the entities and attributes used in the merge process. A customer profile schema usually contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile depends on the entities and attributes used in the data unification process. A customer profile schema usually contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
 
 ### AlternateKey
 
