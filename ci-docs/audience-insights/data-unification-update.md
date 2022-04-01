@@ -77,7 +77,7 @@ You can't remove an attribute or an entity if they've already been unified.
    - **Duplicate a rule**: Select **Show more (...)** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more (...)** > **Delete** on the rule.
 
-1. To view the last run results, select **Show more (...)** > **Match Preview**.
+1. To view the last run results, select **Show more (...)** > **Match Preview**. If no duplicate records were found in the last run, Match preview does not display.
 
 1. Click **Save and close**.
 
@@ -85,7 +85,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 ## Manage match rules
 
-You can reconfigure and fine-tune most of the match parameters.
+You can reconfigure and fine-tune most of the match parameters. You cannot add or delete entities.
 
 1. Select **Edit** on the **Matching conditions** tile.
 
@@ -96,13 +96,13 @@ You can reconfigure and fine-tune most of the match parameters.
    - **Matched and non-matched records** highlights how many unique records remain after processing the match rules.
    - **Matched records only** shows the number of matches across all of your match pairs.
 
-1. To review the results of the match rule pairs, select **Show more** > **Match preview** on a rule. The results displays.
+1. To review the results of the match rule pairs, select **Show more** > **Match preview** on a rule. The results displays. You can also download the results.
 
 1. To manage rules, choose any of the following:
-   - **Change the order of your rules** if you defined multiple rules: Select **Show more** > **Move Up** or **Move Down** options or drag and drop.
+   - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want.
    - **Change rule conditions**: Select **Show more** > **Edit** on the rule and choose different fields.
    - **Deactivate a rule**: Select **Show more** > **Deactivate** on the rule to retain a match rule while excluding it from the matching process.
-   - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications..
+   - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more** > **Delete** on the rule.
 
 1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.

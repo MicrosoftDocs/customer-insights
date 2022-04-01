@@ -21,14 +21,14 @@ Trigger specific events to occur automatically when your data changes and manage
 
 ## Power Automate triggers
 
-Use triggers to create cloud flows and automate repetitive tasks, such as notifications or more advanced actions. 
+Use triggers to create cloud flows and automate repetitive tasks, such as notifications or more advanced actions.
 
-- Trigger when a data source refresh fails. 
+- Trigger when a data source refresh fails.
 - Trigger when a data source refresh succeeds.
 - Trigger when a threshold is crossed on a segment. The trigger is limited to crossing above the threshold.
 - Trigger when a threshold is crossed on a business measure. Only business measures without a dimension are supported. The trigger is limited to crossing above the threshold.
 - Trigger when a full refresh of (data sources, segments, measures, ...) is completed.
-- Trigger when a refresh of the unification process (map, match, merge) is completed.
+- Trigger when a refresh of the unification process is completed.
 
 [Configure your triggers in Power Automate.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 

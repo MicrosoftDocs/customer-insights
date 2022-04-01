@@ -33,18 +33,18 @@ If you enriched entities on the data source level to help improve your unificati
 1. On the Duplicate records page, identify an entity and select **Add rule** to define the deduplication rules.
 
    1. In the **Create rule** pane, enter the following information:
-   - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
-   - **Normalize**: Select from following normalization options for the selected attributes.
-     - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
-     - **Symbols**: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
-     - **Text to lower case: Converts all character to lower case**. *ALL CAPS and Title Case* becomes *all caps and title case*.
-     - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, addresses, etc.
-     - **Unicode to ASCII**: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
-     - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
-   - **Precision**: Set the level of precision to apply for this condition.
-     - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
-     - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
-   - **Name**: Name for the rule.
+      - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
+        - **Normalize**: Select from following normalization options for the selected attributes.
+        - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
+        - **Symbols**: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
+        - **Text to lower case: Converts all character to lower case**. *ALL CAPS and Title Case* becomes *all caps and title case*.
+        - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, addresses, etc.
+        - **Unicode to ASCII**: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
+        - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
+      - **Precision**: Set the level of precision to apply for this condition.
+        - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
+        - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
+      - **Name**: Name for the rule.
 
       :::image type="content" source="media/m3_duplicates_add.png" alt-text="Screenshot of Create rule pane for removing duplicates.":::
 
@@ -56,7 +56,8 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. Once the rules are added, select an entity and then **Edit merge preferences**.
 
-1. In the **Merge preferences** pane, choose one of three options to determine which record to keep if a duplicate is found:
+1. In the **Merge preferences** pane:
+   1. Choose one of three options to determine which record to keep if a duplicate is found:
       - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
       - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
       - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
