@@ -21,7 +21,9 @@ searchScope:
 
 The **Customers** page shows a combined view of your unified customer profiles. The customer profiles are available once you [created the unified Customer entity](data-unification.md). The page lets you search for customers and define the index for that search.
 
-Customers can be individuals or organizations. Each customer profile is represented by a tile. Use the pagination controls to get more records. The card displays fields from the *Customer* entity as defined in the **Search & filter index**. Select a tile to see data for the selected customer in a dedicated page called [Customer details page](customer-profiles.md#customer-details-page).
+Customers can be individuals or organizations. Each customer profile is represented by a tile. Use the pagination controls to get more records. The card displays fields from the *Customer* entity as defined in the **Search & filter index**. The order of the fields within each card is picked by the system.
+
+Select a tile to see data for the selected customer in a dedicated page called [Customer details page](customer-profiles.md#customer-details-page).
 
 > [!div class="mx-imgBorder"] 
 > ![Customers page showing result tiles](media/customers-page-result-tiles-B2C.png "Customers page showing result tiles")

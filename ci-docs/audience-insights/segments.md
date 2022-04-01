@@ -1,8 +1,7 @@
 ---
 title: "Segments in audience insights"
 description: "Overview on segments and how to create and manage them."
-ms.date: 03/25/2022
-
+ms.date: 03/30/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -70,7 +69,9 @@ The following actions are available when you select a segment:
 
 ## Refresh segments
 
-You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**.
+You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**. When a recurring refresh is configured, the following rules apply:
+- All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. When refresh is complete the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see a details about what happened.
+- Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segments was run or refreshed manually.
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
