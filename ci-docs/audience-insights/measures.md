@@ -1,13 +1,13 @@
 ---
 title: "Understand and manage measures"
 description: "Learn how measures help analyze and reflect the performance of your business."
-ms.date: 02/28/2022
+ms.date: 03/24/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.author: wameng
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-measures
@@ -23,7 +23,7 @@ Measures help you to better understand customer behaviors and business performan
 
 Measures are created [using the measure builder](measure-builder.md), a data query platform with various operators and simple mapping options. It lets you filter the data, group results, detect [entity relationship paths](relationships.md), and preview the output. You can [use predefined templates](measure-templates.md) to efficiently configure commonly used measures.
 
-Use the measure builder to plan business activities by querying customer data and extract insights. For example, creating a measure of *total spend per customer* and *total return per customer* helps identify a group of customers with high spend yet high return. You can [create a segment](segments.md) based on these measures to drive next best actions. 
+Use the measure builder to plan business activities by querying customer data and extract insights. For example, creating a measure of *total spend per customer* and *total return per customer* helps identify a group of customers with high spend yet high return. You can [create a segment](segments.md) based on these measures to drive next best actions.
 
 ## Manage your measures
 
@@ -31,18 +31,17 @@ You can find the list of measures on the **Measures** page.
 
 You'll find information about the measure type, the creator, creation date, status, and state. When you select a measure from the list, you can preview the output and download a CSV file.
 
-To refresh all of your measures at the same time, select **Refresh all** without selecting a specific measure.
+:::image type="content" source="media/measures-actions.png" alt-text="Actions to manage single measures."lightbox="media/measures-actions.png":::
 
-:::image type="content" source="media/measure-actions.png" alt-text="Actions to manage single measures.":::
+The following actions are available when you select a measure:
 
-Select a measure from the list for the following options:
-
-- Select the measure name to see its details.
 - **Edit** the configuration of the measure.
-- **Refresh** the measure based on the latest data.
+- **Duplicate** a measure. You can choose to edit its properties right away or simply save the duplicate.
+- **Refresh** the measure based on the latest data. To refresh all of your measures at the same time, select all measures and then **Refresh**.
 - **Rename** the measure.
-- **Delete** the measure.
 - **Activate** or **Deactivate**. Inactive measures won't get refreshed during a [scheduled refresh](system.md#schedule-tab).
+- **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
+- **Delete** the measure.
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
