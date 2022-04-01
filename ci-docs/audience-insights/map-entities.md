@@ -15,7 +15,7 @@ searchScope:
   - customerInsights
 ---
 
-# Select source fields for data unification
+# Select source fields for customer or account unification
 
 The first step in customer or account unification is selecting the entities and attributes within your datasets that you want to unify. Select entities that contain customer profile related data such as name, address, and email.
 

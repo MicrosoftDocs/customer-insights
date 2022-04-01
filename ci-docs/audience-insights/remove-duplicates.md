@@ -14,7 +14,7 @@ searchScope:
   - ci-match
 ---
 
-# Remove duplicates before unifying data
+# Remove duplicates before unifying customers or accounts
 
 This step in customer or account unification sets up rules for handling duplicate records when matching entities. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. This step is optional. If rules are not configured, system-defined rules are applied.
 
