@@ -88,6 +88,10 @@ The warning next to an entity name means that no match rule is defined for a mat
 
 1. Optionally, [add more rules](#add-rules-to-a-match-pair).
 
+> [!div class="nextstepaction"]
+> [Next step: Unify fields](merge-entities.md)
+
+
 ### Add rules to a match pair
 
 Match rules represent sets of conditions. To match entities by conditions based on multiple attributes, add more rules.
@@ -98,9 +102,6 @@ Match rules represent sets of conditions. To match entities by conditions based 
 
 > [!NOTE]
 > The order of rules matters. The matching algorithm tries to match on the basis of your first rule and continues to the second rule only if no matches were identified with the first rule.
-
-> [!div class="nextstepaction"]
-> [Next step: Unify fields](merge-entities.md)
 
 ## Advanced options
 
