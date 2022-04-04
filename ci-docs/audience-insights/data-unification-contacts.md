@@ -15,7 +15,9 @@ searchScope:
   - customerInsights
 ---
 
-# Create a unified business contact profile across accounts
+# Create a unified view of your business contacts
+
+For business accounts (B-to-B), this process maps contact data from your data sources, removes duplicates, matches the data across accounts, sets up semantic mapping, and then creates a unified contact profile.
 
 ## Select source fields for contact unification
 
