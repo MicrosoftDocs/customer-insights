@@ -30,6 +30,7 @@ The unified customer profile entity, called **Customers**, displays on the **Ent
 
 To make changes to the unified customer profile entity, see [Update the unified customer profile](data-unification-update.md).
 
-## Next Step
+## Next step
 
-Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.
+For B-to-C, configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.
+For B-to-B: [Unify contacts](data-unification-contacts.md)
