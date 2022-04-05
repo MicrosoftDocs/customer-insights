@@ -18,7 +18,7 @@ searchScope:
 
 # Match conditions
 
-This step in customer or account unification defines the match order and rules for cross-entity matching.
+This step in customer or account unification defines the match order and rules for cross-entity matching. 
 
 ## Include enriched entities (preview)
 
@@ -39,7 +39,7 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 >
 > Important considerations:
 >
-> - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
+> - Choose the entity with the most complete and reliable profile data about your customers as the primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
 1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
