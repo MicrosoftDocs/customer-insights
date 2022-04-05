@@ -1,7 +1,7 @@
 ---
 title: "Customer Insights data in Microsoft Dataverse"
 description: "Use Customer Insights entities as tables in Microsoft Dataverse."
-ms.date: 11/25/2021
+ms.date: 04/05/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -16,22 +16,24 @@ searchScope:
 
 # Work with Customer Insights data in Microsoft Dataverse
 
-Customer Insights provides the option to make output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). This integration enables easy data sharing and custom development through a low code / no code approach. The output entities will be available as tables in Dataverse. These tables enable scenarios like [automated workflows through Power Automate](/power-automate/getting-started), [model-driven apps](/powerapps/maker/model-driven-apps/) and [canvas apps](/powerapps/maker/canvas-apps/) through Power Apps. You can use the data for any other application that is based on Dataverse tables. The current implementation mainly supports lookups where data from the available audience insights entities can be fetched for a given customer ID.
+Customer Insights provides the option to make output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The [output entities](#output-entities) are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps. The current implementation mainly supports lookups where data from the available Customer Insights entities can be fetched for a given customer ID.
 
 ## Attach a Dataverse environment to Customer Insights
 
-**Organizations with existing Dataverse environments**
+**Existing organization**
 
-Organizations that already use Dataverse can [use one of their existing Dataverse environments](create-environment.md) when an administrator sets up audience insights. By providing the URL to the Dataverse environment, it's attaching to their new audience insights environment. To ensure the best possible performance, Customer Insights and Dataverse environments must be hosted in the same region.
+Administrators can configure Customer Insights to [use an existing Dataverse environment](create-environment.md) when they create a Customer Insights environment. By providing the URL to the Dataverse environment, it's attaching to their new audience insights environment. Customer Insights and Dataverse environments must be hosted in the same region. 
+
+If you don't want to use an existing Dataverse environment, the system creates a new environment for the Customer Insights data in your tenant. 
+
+> [!NOTE]
+> If your organizations already uses Dataverse in their tenant, it’s important to remember that [Dataverse environment creation is controlled by an admin](/power-platform/admin/control-environment-creation). For example, if a you're setting up a new audience insights environment with your organizational account and the admin has disabled the creation of Dataverse trial environments for everyone except admins, you can't create a new trial environment.
+> 
+> The Dataverse trial environments created in Customer Insights have 3 GB of storage which won't count towards the overall capacity entitled to the tenant. Paid subscriptions get Dataverse entitlement of 15 GB for database and 20 GB for file storage.
 
 **New organization**
 
-If you create a new organization when setting up Customer Insights, you'll automatically get a new Dataverse environment.
-
-> [!NOTE]
-> If your organizations already uses Dataverse in their tenant, it’s important to remember that [Dataverse environment creation is controlled by an admin](/power-platform/admin/control-environment-creation.md). For example, if a you're setting up a new audience insights environment with your organizational account and the admin has disabled the creation of Dataverse trial environments for everyone except admins, you can't create a new trial environment.
-> 
-> The Dataverse trial environments created in Customer Insights have 3 GB of storage which won't count towards the overall capacity entitled to the tenant. Paid subscriptions get Dataverse entitlement of 15 GB for database and 20 GB for file storage.
+If you create a new organization when setting up Customer Insights, the system automatically creates a new Dataverse environment in your organization for you.
 
 ## Output entities
 
