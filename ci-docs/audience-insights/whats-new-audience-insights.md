@@ -24,36 +24,36 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 The updates in March 2022 include new features, performance upgrades, and bug fixes.
 
-### LiveRamp AbiliTec enrichment
+### LiveRamp AbiliTec enrichment (Preview)
 
-LiveRamp provides deterministic offline identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
+LiveRamp provides identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
 
 For more information, see [Enrich customer profiles with identity data from LiveRamp (Preview)](enrichment-liveramp.md).
 
 ### Organize segments and measures with tags and filters
-If your organization maintains lots of segments or measures, finding the right one can sometimes feel challenging. This new feature lets you organize lists using tags and columns to find data quickly and easily and view the data the way you want.
+If your organization maintains lots of segments or measures, finding the right one can sometimes feel challenging. This new feature lets you organize lists using tags and columns. It helps to find data quickly and easily and customize the views.
 
 For more information, see [Work with tags and columns](work-with-tags-columns.md).
 
 ### Enable data sharing with Dataverse when using your own storage account
 
-If your environment is configured to use your own Azure Data Lake Storage to store Customer Insights data, enabling data sharing with Microsoft Dataverse needs some extra configuration.
+If your environment uses Azure Data Lake Storage to store Customer Insights data, data sharing with Microsoft Dataverse needs some extra configuration.
 Earlier, you could only enable data sharing with Dataverse when your data was stored in our managed data lake. 
 
 For more information, see [Enable data sharing with Dataverse from your own Azure Data Lake Storage (Preview)](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ### New export destinations: Iterable and Braze
 
-We’re continuing to expand our ecosystem of export destinations with new connections. You can now export segments to Iterable and Braze to leverage their activation services.
+We’re continuing to expand our ecosystem of export destinations with new connections. You can now export segments to Iterable and Braze to use their activation services.
 
 For more information, see [Export segments to Iterable (preview)](export-iterable.md) and [Export segments to Braze (preview)](export-braze.md).
 
 ### Improvements to Marketo and Google Ads export
 
-Changes to APIs in connected services need frequent updates to ensure all connectors run reliably and smoothly. We’re released some updates for the exports to Marketo and Google Ads services to make sure you get the most value from these connections. 
+Changing APIs in connected services lead to updates for connectors to run reliably and smoothly. We’ve released some updates for the exports to Marketo and Google Ads services:
 
-Google Ads: The new version of the Google Ads export connector simplifies the authentication experience and now lets you create new Google Ads audiences automatically. 
-Marketo: The new version of the Marketo export connector provides support for the Marketo ID, enabling you to avoid data duplication, update existing records, and create new records in Marketo. 
+- Google Ads: The new version of the Google Ads export connector simplifies the authentication experience and now lets you create new Google Ads audiences automatically. 
+- Marketo: The new version of the Marketo export connector provides support for the Marketo ID, enabling you to avoid data duplication, update existing records, and create new records in Marketo. 
 
 
 ## February 2022 updates
@@ -70,12 +70,13 @@ For more information, see [Predictions overview](predictions-overview.md).
 
 Azure Synapse Analytics is an enterprise analytics service that accelerates time to insights across data warehouses and big data systems.
 
-If your organization already uses to advanced analytics capabilities of Azure Synapse Analytics and stores the output in the in Data Lake databases, you can easily ingest that data to Customer Insights. 
+Organizations that already use Azure Synapse Analytics can ingest that data to Customer Insights. 
+
 For more information, see [Connect an Azure Synapse data source (Preview)](connect-synapse.md).
 
 ### LiveRamp enrichment (Preview)
 
-LiveRamp provides deterministic offline identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
+LiveRamp provides identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
 
 For more information, see [Enrich customer profiles with identity data from LiveRamp (Preview)](enrichment-liveramp.md).
 
@@ -93,7 +94,7 @@ For more information, see [Change the owner of an environment](manage-environmen
 
 ### Data preparation process lists corruption reason for corrupted records
 
-The data preparation process now shows the reason for corruption for all fields with corrupted data at the individual record level for easy identification. 
+Data preparation now shows the reason for corruption for all fields with corrupted data. The information is provided at the individual record level for easy identification. 
 
 For more information, see [Corrupted data sources](entities.md#corrupted-data-sources).
 
@@ -111,7 +112,7 @@ For a transition period, existing preview participants still have access to some
 - Enhance unified profiles with ingested and refined events to benefit from the full value of their customer data
   
 During the transition period, captured events are still streamed to the connected Data Lake. Once this functionality is turned off, data sharing between engagement insights and audience insights will stop and no new events are sent to the connected storage.
-Please contact your Microsoft Account team directly if you have questions about the end of the capability preview. Your Account team will keep you up to date on coming launches. 
+Contact your Microsoft Account team directly if you have questions about the end of the capability preview. Your Account team will keep you up to date on coming launches. 
 
 ## January 2022 updates
 
