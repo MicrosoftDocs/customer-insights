@@ -4,8 +4,8 @@ description: Use audience insights segments in interactive analyses of behaviora
 ms.date: 07/27/2021
 
 ms.topic: conceptual
-author: mkisel
-ms.author: mkisel
+author: shellyhaverkamp
+ms.author: shellyha
 ms.reviewer: mhart
 manager: shellyha
 ---

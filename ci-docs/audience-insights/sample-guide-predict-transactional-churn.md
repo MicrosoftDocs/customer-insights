@@ -7,7 +7,7 @@ ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: diegogranados117
-ms.author: digranad
+ms.author: li_dgranado
 manager: shellyha
 ---
 

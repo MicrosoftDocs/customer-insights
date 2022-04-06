@@ -4,8 +4,8 @@ description: Use unified profile curated dimensions to enable audience insights 
 ms.date: 07/27/2021
 
 ms.topic: conceptual
-author: mkisel
-ms.author: mkisel
+author: shellyhaverkamp
+ms.author: shellyha
 ms.reviewer: mhart
 manager: shellyha
 ---

@@ -1,9 +1,9 @@
 ---
 title: Dynamics 365 Customer Insights availability regions
 description: Learn more about the regions and geos the service gets deployed to.
-author: mkisel11
+author: shellyhaverkamp
 ms.reviewer: mhart
-ms.author: mkisel
+ms.author: shellyha
 ms.date: 09/28/2021
 
 ms.topic: article

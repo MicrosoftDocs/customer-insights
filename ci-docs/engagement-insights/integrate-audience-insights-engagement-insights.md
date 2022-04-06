@@ -4,8 +4,8 @@ description: Create an active link between audience insights and engagement insi
 ms.date: 09/08/2021
 
 ms.topic: conceptual
-author: mkisel
-ms.author: mkisel
+author: shellyhaverkamp
+ms.author: shellyha
 ms.reviewer: mhart
 manager: shellyha
 ---
