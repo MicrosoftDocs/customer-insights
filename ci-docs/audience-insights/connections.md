@@ -94,4 +94,4 @@ Detached enrichments and exports become inactive. You reactivate them by adding 
 
 ## Set up connections with secrets managed by your own Key Vault
 
-Some connections need secrets like API keys or passwords. Some connections support secrets stored in your own Key Vault. Learn more about supported connections and how to set up on [your own Key Vault for audience insights](use-azure-key-vault.md).
+Some connections need secrets like API keys or passwords. Some connections support secrets stored in your own Key Vault. Learn more about supported connections and how to set up on [your own Key Vault for Customer Insights](use-azure-key-vault.md).

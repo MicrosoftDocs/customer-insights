@@ -25,7 +25,7 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 ## Create a new data source
 
-1. In audience insights, go to **Data** > **Data sources**.
+1. Go to **Data** > **Data sources**.
 
 1. Select **Add data source**.
 
@@ -70,7 +70,7 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
 >
 > In the **Settings** page, you can track the progress of each of the active processes. When a process completes, you can return to the **Data Sources** page and make your changes.
 
-1. In audience insights, go to **Data** > **Data sources**.
+1. Go to **Data** > **Data sources**.
 
 2. Select the vertical ellipsis next to the data source you want to change and select **Edit** from the dropdown menu.
 

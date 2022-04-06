@@ -15,7 +15,7 @@ searchScope:
   - customerInsights
 ---
 
-# Create an environment in audience insights
+# Create an environment in Customer Insights
 
 This article explains how to create a new environment after your organization has purchased a Dynamics 365 Customer Insights subscription. 
 
@@ -28,9 +28,9 @@ Organizations can create *two* environments for every Customer Insights license.
 
 After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started. 
 
-A guided experience helps you through the steps to gather all required information for a new environment. You need [administrator permissions](permissions.md) in audience insights to create or manage environments.
+A guided experience helps you through the steps to gather all required information for a new environment. You need [administrator permissions](permissions.md) in Customer Insights to create or manage environments.
 
-1. In audience insights, open the environment picker and select **+ New**.
+1. Open the environment picker and select **+ New**.
   
    :::image type="content" source="../engagement-insights/media/environment-picker.png" alt-text="Select the environment picker.":::
 
@@ -50,11 +50,11 @@ Provide the following details:
 
 ### Step 2: Configure data storage
 
-In the **Data storage** step, choose where to store the data from audience insights.
+In the **Data storage** step, choose where to store the Customer Insights data.
 
 You'll have two options: **Customer Insights storage** (an Azure data lake managed by the Customer Insights team) and **Azure Data Lake Storage** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
 
-:::image type="content" source="media/data-storage-environment.png" alt-text="Choose the Azure Data Lake Storage to store your audience insights data in.":::
+:::image type="content" source="media/data-storage-environment.png" alt-text="Choose the Azure Data Lake Storage to store your data.":::
 
 By saving data to Azure Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account. This location may differ from where data is stored in Dynamics 365 Customer Insights. Learn more at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 

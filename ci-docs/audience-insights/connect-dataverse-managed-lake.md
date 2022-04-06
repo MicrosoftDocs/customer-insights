@@ -2,7 +2,6 @@
 title: "Connect to tables in Microsoft Dataverse"
 description: "Import data from a Microsoft Dataverse managed data lake."
 ms.date: 03/18/2022
-
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -28,7 +27,7 @@ This article provides information on how Dataverse users can quickly connect to 
 
 ## Connect to a Dataverse managed lake
 
-1. In audience insights, go to **Data** > **Data sources**.
+1. In Customer Insights, go to **Data** > **Data sources**.
 
 2. Select **Add data source**.
 
@@ -40,7 +39,7 @@ This article provides information on how Dataverse users can quickly connect to 
 
    :::image type="content" source="media/ingest-dataverse-server-address.png" alt-text="Screen in data ingestion step where a user can enter the Dataverse environment URL.":::
 
-6. Select the tables you want to ingest as entities to audience insights from the available list.    
+6. Select the tables you want to ingest as entities into Customer Insights from the available list.    
 
    > [!NOTE]
    > If some tables are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights). You can't change the selection. These tables will be available as entities once the data source is created.
@@ -56,7 +55,7 @@ Only one data source of an environment can simultaneously use the same Dataverse
 You only edit the entity selection after creating the data source. For example, if additional entities were added to Dataverse and you want to import them too.    
 To connect to a different Dataverse data lake, [create a new data source](#connect-to-a-dataverse-managed-lake).
 
-1. In audience insights, go to **Data** > **Data sources**.
+1. Go to **Data** > **Data sources**.
 
 2. Next to the data source you'd like to update, select the ellipsis.
 
