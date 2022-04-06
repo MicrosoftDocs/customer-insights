@@ -18,7 +18,7 @@ searchScope:
 
 # Connect to a Common Data Model folder using an Azure Data Lake account
 
-This article provides information on how to ingest data from a Common Data Model folder using your Azure Data Lake Storage Gen2 account.
+This article provides information on how to ingest data into Dynamics 365 Customer Insights from a Common Data Model folder using your Azure Data Lake Storage Gen2 account.
 
 ## Important considerations
 
@@ -28,15 +28,15 @@ This article provides information on how to ingest data from a Common Data Model
 
 - The Azure Data Lake storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
 
-- To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
+- To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-- The Azure Data Lake you want to connect and ingest data from have to be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in audience insights.
+- The Azure Data Lake you want to connect and ingest data from have to be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in Customer Insights.
 
 - Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 ## Connect to a Common Data Model folder
 
-1. In audience insights, go to **Data** > **Data sources**.
+1. Go to **Data** > **Data sources**.
 
 1. Select **Add data source**.
 
@@ -44,7 +44,7 @@ This article provides information on how to ingest data from a Common Data Model
 
    - If prompted, select one of the sample datasets that pertain to your industry, then select **Next**. 
 
-1. You can choose between using a resource-based option and a subscription-based option for authentication. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Enter the **Server address**, select **Sign in**, then select **Next**.
+1. You can choose between using a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). Enter the **Server address**, select **Sign in**, then select **Next**.
    > [!div class="mx-imgBorder"]
    > ![Dialog box to enter new connection details for Azure Data Lake.](media/enter-new-storage-details.png)
    > [!NOTE]
@@ -74,7 +74,7 @@ This article provides information on how to ingest data from a Common Data Model
 
 You can update the access key for the storage account containing the Common Data Model folder. You may also change the model.json or manifest.json file. To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-a-common-data-model-folder).
 
-1. In audience insights, go to **Data** > **Data sources**.
+1. Go to **Data** > **Data sources**.
 
 2. Next to the data source you'd like to update, select the ellipsis.
 
@@ -84,7 +84,7 @@ You can update the access key for the storage account containing the Common Data
 
    ![Dialog to edit and update an access key for an existing data source.](media/edit-access-key.png)
 
-5. Optionally, you can update from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
+5. Optionally, you can update from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). You can't change **Container** information when updating the connection.
    > [!div class="mx-imgBorder"]
 
    > ![Dialog box to enter connection details for Azure Data Lake to an existing storage account.](media/enter-existing-storage-details.png)

@@ -2,8 +2,7 @@
 title: "Manage default consent rules on segments"
 description: "With the consent management capability, you can disable or change the default consent rules if overrides are enabled."
 ms.date: 12/01/2021
-
-mms.topic: how-to
+ms.topic: how-to
 author: smithy7
 ms.author: smithc
 ms.reviewer: mhart
@@ -12,7 +11,7 @@ manager: shellyha
 
 # Disable or change default consent rules
 
-If your organizations uses the [consent management capability](../consent-management/overview.md) combined with audience insights, [admins can enforce consent rules](activate-consent.md) for segments. 
+If your organizations uses the [consent management capability](../consent-management/overview.md) with Dynamics 365 Customer Insights, [admins can enforce consent rules](activate-consent.md) for segments. 
 
 With enforced consent rules in the segment area, every segment informs about the state of consent check and rules. If overrides are allowed, default consent rules are turned off for specific segments. Every creator of a segment can add more consent rules on top of the default rules to a segment. 
 
@@ -39,7 +38,7 @@ With enforced consent rules in the segment area, every segment informs about the
 To create a segment without enforced consent rules, you have to work with your administrator to disable them on your segment. However, you can add your own consent rules to segments you own and manage.
 
 It's a three step process: 
-1. [Create the segment](segments.md) in audience insights and save it. 
+1. [Create the segment](segments.md) in Customer Insights and save it. 
 
 1. Share the segment name with your admin and ask them to [enable overrides for your segment](activate-consent.md). 
 

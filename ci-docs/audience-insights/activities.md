@@ -2,7 +2,6 @@
 title: "Customer activities"
 description: "Define customer activities and view them in a timeline on customer profiles." 
 ms.date: 11/01/2021
-
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
@@ -30,7 +29,7 @@ Your data sources can include entities with transactional and activity data from
 
 An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields. The **Add activity** control is disabled if no such entity is found.
 
-1. In audience insights, go to **Data** > **Activities**.
+1. Go to **Data** > **Activities**.
 
 1. Select **Add activity** to start the guided experience for the activity setup process.
 

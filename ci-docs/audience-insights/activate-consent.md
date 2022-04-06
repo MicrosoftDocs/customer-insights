@@ -1,8 +1,7 @@
 ---
 title: "Activate consent rules for segments"
-description: "Follow these steps to link consent data and activate consent checks in audience insights. An admin can also disable consent checks."
+description: "Follow these steps to link consent data and activate consent checks in Dynamics 365 Customer Insights. An admin can also disable consent checks."
 ms.date: 11/12/2021
-
 ms.subservice: audience-insights
 ms.topic: how-to
 author: smithy7
@@ -13,15 +12,15 @@ manager: shellyha
 
 # Activate consent rules
 
-The [Consent Center (preview)](../consent-management/overview.md) helps you to harmonize consent data from various sources. Use the unified *Consent* entity to apply default consent checks. After importing consent data into the Consent Center and configuring the rules for the data, the *Consent* entity is automatically synced to audience insights.
+The [Consent Center (preview)](../consent-management/overview.md) helps you to harmonize consent data from various sources. Use the unified *Consent* entity to apply default consent checks. After importing consent data into the Consent Center and configuring the rules for the data, the *Consent* entity is automatically synced to Dynamics 365 Customer Insights.
 
 ## Enable consent checks
 
 With consent data imported to the Consent Center (preview) and the rules set up, you can enable consent checks. 
 
-:::image type="content" source="../consent-management/media/enable-consent-checks-audience-insights.png" alt-text="Consent tab in audience insights settings with activated consent data.":::
+:::image type="content" source="../consent-management/media/enable-consent-checks-audience-insights.png" alt-text="Consent tab in Customer Insights settings with activated consent data.":::
 
-1. In audience insights, go to **Admin** > **System**.
+1. In Customer Insights, go to **Admin** > **System**.
 
 1. Select the **Consent (preview)** tab.
 
@@ -37,9 +36,9 @@ With consent data imported to the Consent Center (preview) and the rules set up,
 
 ## Disable consent checks
 
-To stop using consent data in audience insights, an admin has to update the system settings accordingly.
+To stop using consent data in Customer Insights, an admin has to update the system settings accordingly.
 
-1. In audience insights, go to **Admin** > **System**.
+1. In Customer Insights, go to **Admin** > **System**.
 
 1. Select the **Consent (preview)** tab.
 
