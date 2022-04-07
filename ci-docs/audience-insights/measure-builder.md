@@ -36,7 +36,7 @@ You can create measures on the level of individual customers (customer attribute
 
 1. Select **New** and choose **Build your own**.
 
-   :::image type="content" source="media/measure-b2c.png" alt-text="Empty configuration screen for a B-to-C measure.":::
+   :::image type="content" source="media/measure-b2c.png" alt-text="Empty configuration screen for a B-to-C measure." lightbox="media/measure-b2c.png":::
 
 1. To track business-level performance, toggle **Measure type** to **Business level**. **Customer level** is selected by default. **Customer level** automatically adds the *CustomerId* attribute to Dimensions while **Business level** automatically removes it.
 
