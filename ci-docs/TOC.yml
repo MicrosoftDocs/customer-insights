@@ -308,6 +308,8 @@
           href: audience-insights/customer-insights-dataverse.md
         - name: Work with APIs
           href: audience-insights/apis.md 
+        - name: Example queries
+          href: audience-insights/api-examples.md
         - name: API references
           href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
 
