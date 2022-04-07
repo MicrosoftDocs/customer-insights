@@ -3,7 +3,6 @@ title: "Entities and datasets"
 description: "View data on the Entities page."
 ms.date: 12/06/2021
 ms.reviewer: mhart
-
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
@@ -14,7 +13,7 @@ searchScope:
   - customerInsight
 ---
 
-# Entities in audience insights
+# Entities in Customer Insights
 
 After [configuring your data sources](data-sources.md), go to the **Entities** page to evaluate the quality of the ingested data. Entities are considered datasets. Multiple capabilities of Dynamics 365 Customer Insights are built around these entities. Reviewing them closely can help you validate the output of those capabilities.
 
@@ -29,7 +28,7 @@ The **Entities** page lists entities and includes these columns:
 
 ## Explore a specific entity's data
 
-1. In audience insights, go to **Data** > **Entities**.
+1. Go to **Data** > **Entities**.
 1. From the **Entities** page, select an entity to open the details page.  
 1. Explore the different fields and records included for that entity.
 

@@ -59,7 +59,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 1. Choose the Azure Machine Learning pipeline in the **Web service that contains your model** dropdown. Then, select **Next**.    
    Learn more about [publishing a pipeline in Azure Machine Learning using the designer](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) or [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Your pipeline must be published under a [pipeline endpoint](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
-1. For each **Web service input**, select the matching **Entity** from audience insights and select **Next**.
+1. For each **Web service input**, select the matching **Entity** from Customer Insights and select **Next**.
    > [!NOTE]
    > The custom model workflow will apply heuristics to map the web service input fields to the entity attributes based on the name and data type of the field. You'll see an error if a web service field can't be mapped to an entity.
 
@@ -80,7 +80,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
    > ![Relate results to Customer data pane.](media/intelligence-screen4-relatetocustomer.png "Relate results to Customer data pane")
 
 1. You'll see the **Workflow Saved** screen with details about the workflow.    
-   If you configured a workflow for an Azure Machine Learning pipeline, audience insights will attach to the workspace that contains the pipeline. Audience insights will get a **Contributor** role on the Azure workspace.
+   If you configured a workflow for an Azure Machine Learning pipeline, Customer Insights attaches to the workspace that contains the pipeline. Customer Insights will get a **Contributor** role on the Azure workspace.
 
 1. Select **Done**.
 
@@ -92,7 +92,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 1. You can update your workflow's recognizable name in the **Display name** field, but you can't change the configured web service or pipeline. Select **Next**.
 
-1. For each **Web service input**, you can update the matching **Entity** from audience insights. Then, select **Next**.
+1. For each **Web service input**, you can update the matching **Entity** from Customer Insights. Then, select **Next**.
 
 1. In the **Model Output Parameters** step, set the following properties:
       1. Enter the output **Entity name** you want pipeline output results to flow into.

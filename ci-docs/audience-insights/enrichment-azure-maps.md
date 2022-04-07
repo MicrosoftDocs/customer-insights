@@ -57,7 +57,7 @@ To configure Azure Maps data enrichment, the following prerequisites must be met
 
 ## Configure the connection for Azure Maps
 
-You need to be an administrator in audience insights to configure connections. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the Azure Maps tile.
+You need to be an administrator in Customer Insights to configure connections. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the Azure Maps tile.
 
 1. In the **Display name** box, enter a name for the connection.
 

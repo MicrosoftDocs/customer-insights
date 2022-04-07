@@ -18,7 +18,7 @@ Export segments of unified customer profiles to ActiveCampaign and use them for 
 ## Prerequisites
 
 -	You have an [ActiveCampaign account](https://www.activecampaign.com/) and corresponding administrator credentials.
--	You have [configured segments](segments.md) in audience insights.
+-	You have [configured segments](segments.md) in Customer Insights.
 -	Unified customer profiles in the exported segments contain a field with an email address.
 
 ## Known limitations

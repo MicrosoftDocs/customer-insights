@@ -1,6 +1,6 @@
 ---
 title: "Customer Card Add-in for Dynamics 365 apps (contains video)"
-description: "Show data from audience insights in Dynamics 365 apps with this add-in."
+description: "Show customer profile data from Customer Insights in Dynamics 365 apps with this add-in."
 ms.date: 02/02/2022
 ms.reviewer: mhart
 
@@ -27,10 +27,10 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 ## Prerequisites
 
 - The add-in only works with Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
-- For your Dynamics 365 data to map to the audience insights customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), you need to make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source in the map step of the data unification process](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
-- All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in audience insights to see the data.
-- [Configured search and filter capabilities](search-filter-index.md) in audience insights are required for lookup of data to work.
-- Each add-in control relies on specific data in audience insights. Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control is not available due to the selected environment type. Learn more about [environment use cases](work-with-business-accounts.md).
+- For your Dynamics 365 data to map to the Customer Insights customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), you need to make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source in the map step of the data unification process](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
+- All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in Customer Insights to see the data.
+- [Configured search and filter capabilities](search-filter-index.md) in Customer Insights are required for lookup of data to work.
+- Each add-in control relies on specific data in Customer Insights. Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control is not available due to the selected environment type. Learn more about [environment use cases](work-with-business-accounts.md).
   - **Measure control**: Requires [configured measures](measures.md) of type customer attributes.
   - **Intelligence control**: Requires data generated using [predictions or custom models](predictions-overview.md).
   - **Customer details control**: All fields from the profile are available in the unified customer profile.
@@ -75,7 +75,7 @@ You may need to sign in with your admin credentials for the Dynamics 365 app to 
 
 ## Add Customer Card controls to forms
 
-Depending on your scenario, you can choose to add controls to either the **Contact** form or **Account** form. If your audience insights environment is for business accounts, we recommended adding the controls to the Account form. In that case, replace "contact" in the below steps with "account."
+Depending on your scenario, you can choose to add controls to either the **Contact** form or **Account** form. If your Customer Insights environment is for business accounts, we recommended adding the controls to the Account form. In that case, replace "contact" in the below steps with "account."
 
 1. To add the Customer Card controls to your Contact form, go to the **Settings** > **Customizations** in Dynamics 365.
 

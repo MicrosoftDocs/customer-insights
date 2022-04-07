@@ -25,7 +25,7 @@ To configure Leadspace, the following prerequisites must be met:
 
 ## Configure the enrichment
 
-1. In audience insights, go to **Data** > **Enrichment**.
+1. Go to **Data** > **Enrichment**.
 
 1. Select **Enrich my data** on the Leadspace tile and select **Get started**.
 
@@ -45,7 +45,7 @@ To configure Leadspace, the following prerequisites must be met:
 
 1. Select **Next** to complete the field mapping.
 
-1. Select the checkbox if you have *Contact profiles* that you would like to enrich. Audience insights will automatically map the required fields.
+1. Select the checkbox if you have *Contact profiles* that you would like to enrich. Customer Insights will automatically map the required fields.
 
    :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace contact records enrichment.":::
  

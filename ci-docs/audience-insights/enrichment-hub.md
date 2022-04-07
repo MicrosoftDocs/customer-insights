@@ -23,7 +23,7 @@ Use data from sources like Microsoft and other partners to enrich your customer 
 
 :::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page.":::
 
-In audience insights, go to **Data** > **Enrichment** to work with enrichment options.  
+Go to **Data** > **Enrichment** to work with enrichment options.  
 
 You need to have Contributor or Administrator permissions to create or edit enrichments. For more information, see [Permissions](permissions.md).
 
