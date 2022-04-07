@@ -18,16 +18,16 @@ This article lists some frequently requested example queries to help you with bu
 
 You have to modify the query samples to make them work on the target environments: 
 
-{serviceRoot}: https://api.ci.ai.dynamics.com/v1/instances/{instanceId} where {instanceId} is the GUID of the Customer Insights environment you want to query.
-{CID}: GUID of a unified customer record. Example: ce759201f786d590bf2134bff576c369.
-{PrimaryKey}: Identifier of the primary key of a customer record in a data source. Example: CNTID_1002
-{DSname}: String with the entity name of a data source that gets ingested to Customer Insights. Example: Website_contacts.
-{SegmentName}: String with the output entity name of a segment in Customer Insights. Example: Male_under_40.
+- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}` where {instanceId} is the GUID of the Customer Insights environment you want to query.
+- {CID}: GUID of a unified customer record. Example: `ce759201f786d590bf2134bff576c369`.
+- {PrimaryKey}: Identifier of the primary key of a customer record in a data source. Example: `CNTID_1002`
+- {DSname}: String with the entity name of a data source that gets ingested to Customer Insights. Example: `Website_contacts`.
+- {SegmentName}: String with the output entity name of a segment in Customer Insights. Example: `Male_under_40`.
 
 > [!IMPORTANT]
-> Auth?
-> serviceRoot?
-> how to get customer GUIDs, entity names, etc? Through UI?
+> - Auth?
+> - serviceRoot?
+> - how to get customer GUIDs, entity names, etc? Through UI?
 
 ## Customer
 
