@@ -105,7 +105,7 @@ The Key Vault Reader and Key Vault Secrets User roles will be added for Customer
 
 ### Can Customer Insights write secrets or overwrite secrets into the key vault?
 
-No. Only the read and list permissions outlined in the [granted permissions](#permissions-granted-on-the-key-vault-to-audience-insights) section earlier in this article are granted to Customer Insights. The system can't add, delete, or overwrite secrets in the key vault. That's also the reason why you can't enter credentials when a connection uses Key Vault.
+No. Only the read and list permissions outlined in the [granted permissions](#permissions-granted-on-the-key-vault) section earlier in this article are granted to Customer Insights. The system can't add, delete, or overwrite secrets in the key vault. That's also the reason why you can't enter credentials when a connection uses Key Vault.
 
 ### Can I change a connection from using Key Vault secrets to default authentication?
 
