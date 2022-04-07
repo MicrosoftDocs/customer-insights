@@ -6,8 +6,8 @@ ms.reviewer: mhart
 
 ms.subservice: audience-insights
 ms.topic: how-to
-author: diegogranados117
-ms.author: li_dgranado
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
 ---
 

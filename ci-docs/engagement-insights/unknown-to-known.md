@@ -2,8 +2,8 @@
 title: Recognize web events from previously authenticated visitors with unknown to known
 description: The unknown to known feature allows you to associate events on a website with visitors who authenticated previously. 
 ms.reviewer: mhart
-ms.author: shellyha
-author: shellyhaverkamp
+author: m-hartmann
+ms.author: mhart
 ms.date: 7/15/2021
 
 ms.subservice: engagement-insights 
