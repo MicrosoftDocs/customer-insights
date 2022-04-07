@@ -38,7 +38,7 @@ You can create measures on the level of individual customers (customer attribute
 
    :::image type="content" source="media/measure-b2c.png" alt-text="Empty configuration screen for a B-to-C measure. ":::
 
-1. To track business-level performance, toggle **Measure type** to **Business level**. **Customer level** is selected by default. **Customer level** automatically adds the *CustomerId* attribute to Dimensions while **Business level** will remove it.
+1. To track business-level performance, toggle **Measure type** to **Business level**. **Customer level** is selected by default. **Customer level** automatically adds the *CustomerId* attribute to Dimensions while **Business level** automatically removes it.
 
 1. In the configuration area, choose the aggregation function from the **Select function** dropdown menu. Aggregation functions include:
    - **Sum**
