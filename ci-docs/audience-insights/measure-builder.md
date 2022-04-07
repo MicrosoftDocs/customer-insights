@@ -138,7 +138,7 @@ You can create measures on the level of individual accounts (customer measure) o
 
 1. Select **Dimension** to choose more fields that are added as columns to the measure output entity.
 
-   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. 
+   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender.
       > [!TIP]
       > If you selected **Customer level** as the **Measure type** the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** switches to **Business level**.
    1. Select **Done** to add the dimensions to the measure.
