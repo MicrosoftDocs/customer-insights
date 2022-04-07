@@ -27,7 +27,7 @@ The first step in customer or account unification is selecting the entities and 
 
    :::image type="content" source="media/m3_unify_land.png" alt-text="Screenshot of unify landing page with Guide me highlighted.":::
 
-1. Select **Select entities and fields**. The **Select entities and fields** pane displays.
+1. On the **Source fields** page, select **Select entities and fields**. The **Select entities and fields** pane displays.
 
 1. Select the **Entities** to combine into a customer or account profile.
 

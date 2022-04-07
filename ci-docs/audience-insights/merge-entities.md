@@ -28,18 +28,61 @@ Choose and exclude attributes to merge within your unified customer profile enti
 
 Review the system recommendations listed in the **Customer fields** tab of the table.
 
-1. Select a merged attribute. The attributes that compose the merged attribute display in two new rows beneath the merged attribute.
+1. Review merged fields. Expand an attribute to show the entities/attributes that compose the merged attribute.
 
 1. Optionally, change the merged attribute. You can:
    - [Edit](#edit-a-merged-field)
-   - [Rename](#rename-merged-fields)
+   - [Rename](#rename-fields)
    - [Separate](#separate-merged-fields)
-   - [Exclude](#exclude-merged-fields)
+   - [Exclude](#exclude-fields)
    - [Move up or down](#change-the-order-of-fields)
 
    :::image type="content" source="media/m3_unify_actions.png" alt-text="Options in the Show more dropdown menu to manage merged attributes.":::
 
-1. Select separate attributes to combine them. You can [combine fields](#combine-fields-manually) or [combine a group of fields](#combine-a-group-of-fields).
+1. Review separate fields. You can:
+   - [Rename](#rename-fields)
+   - [Exclude](#exclude-fields)
+   - [Move up or down](#change-the-order-of-fields)
+
+1. Optionally, combine separate fields. You can [combine fields](#combine-fields-manually) or [combine a group of fields](#combine-a-group-of-fields).
+
+## Configure Customer ID generation
+
+Define how to generate CustomerId values, the unique customer profile identifiers. The unify fields or merge step in the data unification process generates the unique customer profile identifier. The identifier is the CustomerId in the *Customer* entity that results from the data unification process.
+
+The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in data unification and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. So the primary key value might not always represent the same customer.
+
+Configuring a stable customer ID enables you to avoid that behavior.
+
+1. Select the **Keys** tab.
+
+1. Hover on the **CustomerId** row and select **Configure**.
+   :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
+
+1. Select up to five fields that will comprise a unique customer ID and are more stable. Records that don’t match your configuration use a system-configured ID instead.  
+
+1. Select **Done**.
+
+## Group profiles into households or clusters
+
+As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
+
+1. Select **Advanced** > **Create cluster**.
+
+   :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
+
+1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
+
+1. Provide a name for the cluster and select **Done**.
+
+1. Select the **Clusters** tab to find the cluster you created.
+
+1. Specify the rules and conditions to define your cluster.
+
+1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* entity.
+
+> [!div class="nextstepaction"]
+> [Next step: Review unification](review-unification.md)
 
 ## Edit, rename, separate, or exclude merged fields
 
@@ -64,11 +107,11 @@ Review the system recommendations listed in the **Customer fields** tab of the t
 
 1. Select **Save**.
 
-### Rename merged fields
+### Rename fields
 
-Change the display name of merged attributes. You can't change the name of the output entity.
+Change the display name of merged or separate fields. You can't change the name of the output entity.
 
-1. Select the merged field.
+1. Select the field.
   
 1. Select **Show more** and choose **Rename**.
 
@@ -88,11 +131,11 @@ To separate merged fields, find the attribute in the table. Separated fields sho
 
 1. Select **Save**.
 
-### Exclude merged fields
+### Exclude fields
 
-Exclude an attribute from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile.
+Exclude a merged or separate field from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile.
 
-1. Select a merged field.
+1. Select a field.
   
 1. Select **Show more** and choose **Exclude**.
 
@@ -150,43 +193,7 @@ Some entities contain more details than others. If an entity includes the latest
 
 1. Select **Done**.
 
-## Configure Customer ID generation
-
-Define how to generate CustomerId values, the unique customer profile identifiers. The unify fields or merge step in the data unification process generates the unique customer profile identifier. The identifier is the CustomerId in the *Customer* entity that results from the data unification process.
-
-The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in data unification and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. So the primary key value might not always represent the same customer.
-
-Configuring a stable customer ID enables you to avoid that behavior.
-
-1. On the data unification page, select the **Keys** tab.
-
-1. Hover on the **CustomerId** row and select the **Configure** option.
-   :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
-
-1. Select up to five fields that will comprise a unique customer ID and are more stable. Records that don’t match your configuration use a system-configured ID instead.  
-
-1. Select **Done** and run the merge process to apply your changes.
-
-## Group profiles into households or clusters
-
-As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
-
-1. Select **Advanced** > **Create cluster**.
-
-   :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
-
-1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
-
-1. Provide a name for the cluster and select **Done**.
-
-1. Select the **Clusters** tab to find the cluster you created.
-
-1. Specify the rules and conditions to define your cluster.
-
-1. Select **Done**. The cluster is created when the merge is run and the cluster identifiers are added as new fields to the *Customer* entity.
-
 > [!div class="nextstepaction"]
 > [Next step: Review unification](review-unification.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,7 +18,7 @@ searchScope:
 
 # Match conditions
 
-This step in customer or account unification defines the match order and rules for cross-entity matching. 
+This step in customer or account unification defines the match order and rules for cross-entity matching.
 
 ## Include enriched entities (preview)
 
@@ -158,5 +158,8 @@ You can specify conditions that override the default match logic. There are four
    - For **Bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the Normalizations dropdown, choose the **Custom bypass** or **Alias mapping** option and select **Done**.
 
 1. Select **Done** on the **Custom** pane to apply the custom match configuration.
+
+> [!div class="nextstepaction"]
+> [Next step: Unify fields](merge-entities.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
