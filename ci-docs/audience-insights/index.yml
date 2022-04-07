@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Audience insights capability in Dynamics 365 Customer Insights
+title: Dynamics 365 Customer Insights help hub
 summary: Ingest, unify, and organize customer data from multiple sources. Create and manage customer profiles and real-time segmentation. Integrate customer data with other systems to make it even more actionable.
 
 metadata:
-  title: Audience insights documentation
-  description: Help hub with key links for audience insights.
+  title: Customer Insights documentation
+  description: Help hub with key links for Customer Insights.
   
   ms.subservice: audience-insights
   ms.topic: hub-page
@@ -18,7 +18,7 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  - title: About audience insights
+  - title: About Customer Insights
     linkLists:
       - linkListType: overview
         links:
@@ -26,8 +26,8 @@ landingContent:
             url: overview.md
           - text: New and updated features
             url: whats-new-audience-insights.md
-          - text: Discover audience insights
-            url: https://dynamics.microsoft.com/ai/customer-insights/audience-insights-capability/
+          - text: Discover Customer Insights
+            url: https://dynamics.microsoft.com/ai/customer-insights/
       - linkListType: learn
         links: 
           - text: Customer Insights learning path

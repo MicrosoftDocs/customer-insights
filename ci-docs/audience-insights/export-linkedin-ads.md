@@ -18,7 +18,7 @@ Export segments of unified customer profiles to LinkedIn Ads to create matched a
 ## Prerequisites
 
 -	You have an [LinkedIn Campaign Manager account](https://business.linkedin.com/marketing-solutions/ads) and corresponding administrator credentials.
--	You have [configured segments](segments.md) in audience insights.
+-	You have [configured segments](segments.md) in Customer Insights.
 -	Customer profiles in the exported segments contain a field with an email address.
 
 ## Known limitations
@@ -30,7 +30,7 @@ Export segments of unified customer profiles to LinkedIn Ads to create matched a
 
 ## Set up the connection to LinkedIn Ads
 
-1. In audience insights, go to **Admin** > **Connections**.
+1. Go to **Admin** > **Connections**.
 
 1. Select **Add connection** and choose **LinkedIn Ads** to configure the connection.
 

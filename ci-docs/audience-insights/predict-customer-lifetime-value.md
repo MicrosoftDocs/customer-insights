@@ -70,7 +70,7 @@ The following data is required, and where marked optional, recommended for incre
 
 ## Create a Customer Lifetime Value prediction
 
-1. In audience insights, go to **Intelligence** > **Predictions**.
+1. Go to **Intelligence** > **Predictions**.
 
 1. Select the **Customer lifetime value** tile and select **Use model**. 
 
@@ -145,7 +145,7 @@ Data reflecting key customer interactions (like web, customer service, and event
 
 ### Set update schedule
 
-1. In the **Data update schedule** step, choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested in audience insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. In the **Data update schedule** step, choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested in Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 

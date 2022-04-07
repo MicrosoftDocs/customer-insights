@@ -27,13 +27,13 @@ After adding Customer Insights as a data connection, you can choose the followin
 
 - **Customer**: to use data from the [unified customer profile](customer-profiles.md).
 - **UnifiedActivity**: to display the [activity timeline](activities.md) in the app.
-- **ContactProfile**: to display the contacts of a customer. This entity is only available in audience insights environments for business accounts.
+- **ContactProfile**: to display the contacts of a customer. This entity is only available in Customer Insights environments for business accounts.
 
 ## Limitations
 
 ### Retrievable entities
 
-You can only retrieve the **Customer**, **UnifiedActivity**, **Segments**, and **ContactProfile** entities through the Power Apps connector. ContactProfile is only available in audience insights instance for business accounts. Other entities are shown because the underlying connector supports them through triggers in Power Automate.
+You can only retrieve the **Customer**, **UnifiedActivity**, **Segments**, and **ContactProfile** entities through the Power Apps connector. ContactProfile is only available in Customer Insights instance for business accounts. Other entities are shown because the underlying connector supports them through triggers in Power Automate.
 
 You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint multiple times by using the $skip parameter. [Learn more about the $skip parameter](/connectors/customerinsights/#get-items-from-an-entity).
 
@@ -43,7 +43,7 @@ Delegation works for the **Customer** entity and **UnifiedActivity** entity.
 
 - Delegation for **Customer** entity: To use delegation for this entity, the fields need to be indexed in [Search & filter index](search-filter-index.md).  
 - Delegation for **UnifiedActivity**: Delegation for this entity only works for the fields **ActivityId** and **CustomerId**.  
-- Delegation for **ContactProfile**: Delegation for this entity only works for the fields **ContactId** and **CustomerId**. ContactProfile is only available in audience insights environments for business accounts.
+- Delegation for **ContactProfile**: Delegation for this entity only works for the fields **ContactId** and **CustomerId**. ContactProfile is only available in Customer Insights environments for business accounts.
 
 For more information about delegation, go to [Power Apps delegable functions and operations](/powerapps/maker/canvas-apps/delegation-overview). 
 

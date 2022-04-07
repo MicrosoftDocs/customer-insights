@@ -51,7 +51,7 @@ During the data ingestion process, the system checks data sources for existing r
 
 Relationship consists of a *source entity* containing the foreign key and a *target entity* that the source entity's foreign key points to. 
 
-1. In audience insights, go to **Data** > **Relationships**.
+1. Go to **Data** > **Relationships**.
 
 2. Select **New relationship**.
 
@@ -80,7 +80,7 @@ Relationship consists of a *source entity* containing the foreign key and a *tar
 
 Environments that are configured to use business accounts as primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units. 
 
-Organizations create account hierarchies to better manage accounts and their relationships with each other. The audience insights capability supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page in audience insights, under the account hierarchy tab.
+Organizations create account hierarchies to better manage accounts and their relationships with each other. Customer Insights supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page.
 
 1. Go to **Data** > **Relationships**.
 1. Select the **Account hierarchy** tab.

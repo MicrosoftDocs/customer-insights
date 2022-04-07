@@ -57,7 +57,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 
 ## Create a subscription churn prediction
 
-1. In audience insights, go to **Intelligence** > **Predictions**.
+1. Go to **Intelligence** > **Predictions**.
 1. Select the **Subscription churn model** tile and select **Use this model**.
    > [!div class="mx-imgBorder"]
    > ![Subscription Churn model tile with Use this model button.](media/subscription-churn-usethismodel.PNG "Subscription Churn model tile with Use this model button")
@@ -103,7 +103,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 
 ### Set schedule and review configuration
 
-1. Set a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested in audience insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. Set a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested in Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
 1. Select **Next**.
 1. Review the configuration. You can go back to any part of the prediction configuration by selecting **Edit** under the shown value. Or you can select a configuration step from the progress indicator.
 1. If all values are configured correctly, select **Save and run** to begin the prediction process. On the **My predictions** tab, you can see the status of your predictions. The process may take several hours to complete depending on the amount of data used in the prediction.
