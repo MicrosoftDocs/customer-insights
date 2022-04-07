@@ -21,7 +21,7 @@ Contoso is a company that produces high-quality coffee and coffee machines. They
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md) in audience insights.
+- At least [Contributor permissions](permissions.md) in Customer Insights.
 - We recommend that you implement the following steps [in a new environment](manage-environments.md).
 
 ## Task 1 - Ingest data

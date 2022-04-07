@@ -10,7 +10,7 @@ ms.reviewer: skumm
 manager: shellyha
 ---
 
-# What's new in the audience insights capability of Dynamics 365 Customer Insights
+# What's new in Dynamics 365 Customer Insights
 
 We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
 
@@ -111,7 +111,7 @@ For a transition period, existing preview participants still have access to some
 - See events and event properties 
 - Enhance unified profiles with ingested and refined events to benefit from the full value of their customer data
   
-During the transition period, captured events are still streamed to the connected Data Lake. Once this functionality is turned off, data sharing between engagement insights and audience insights will stop and no new events are sent to the connected storage.
+During the transition period, captured events are still streamed to the connected Data Lake. Once this functionality is turned off, data sharing will stop and no new events are sent to the connected storage.
 Contact your Microsoft Account team directly if you have questions about the end of the capability preview. Your Account team will keep you up to date on coming launches. 
 
 ## January 2022 updates

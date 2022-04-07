@@ -1,5 +1,5 @@
 ---
-title: "Home page in audience insights"
+title: "Home page in Customer Insights"
 description: "Start exploring the app on the Home page."
 ms.date: 10/19/2021
 ms.reviewer: mhart
@@ -14,9 +14,9 @@ searchScope:
   - customerInsights
 ---
 
-# Explore audience insights
+# Explore Customer Insights
 
-You can [access audience insights from Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
+You can [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 
 The **Home** page shows an overview of segments, measures, and enrichment data (if configured) after completing the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
 

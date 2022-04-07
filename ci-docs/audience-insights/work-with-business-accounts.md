@@ -16,13 +16,13 @@ searchScope:
   - customerInsights
 ---
 
-# Work with business accounts in audience insights
+# Work with business accounts
 
-The audience insights capability in Dynamics 365 Customer Insights lets you configure your environment for different primary target audiences: individual consumers (B-to-C) and business accounts (B-to-B). In B-to-C scenarios, the data is centered around individuals. For B-to-B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in audience insights, depending on your environment focus. For more information about differences, review the docs of the feature areas. 
+The Dynamics 365 Customer Insights lets you configure your environment for different primary target audiences: individual consumers (B-to-C) and business accounts (B-to-B). In B-to-C scenarios, the data is centered around individuals. For B-to-B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in Customer Insights, depending on your environment focus. For more information about differences, review the docs of the feature areas. 
 
 ## Create an environment for business accounts
 
-Administrators can [create an environment in an existing organization](create-environment.md). A step in the process of creating a new environment asks administrators for the primary target audience of the environment. In case it's the initial set-up of audience insights after purchasing a license, a guided experience helps with the creation of the first environment.
+Administrators can [create an environment in an existing organization](create-environment.md). A step in the process of creating a new environment asks administrators for the primary target audience of the environment. In case it's the initial set-up after purchasing a license, a guided experience helps with the creation of the first environment.
 
 You can then [ingest data](data-sources.md) for business accounts and related contacts as data sources from all supported sources.
 

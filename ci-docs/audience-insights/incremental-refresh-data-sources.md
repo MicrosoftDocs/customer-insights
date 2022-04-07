@@ -26,7 +26,7 @@ Incremental refresh for data sources provides the following advantages:
 
 ## Configure incremental refresh
 
-Audience insights allows incremental refresh for data sources imported through Power Query that support incremental ingestion. For example, Azure SQL databases with date and time fields, which indicate when data records were last updated.
+Customer Insights allows incremental refresh for data sources imported through Power Query that support incremental ingestion. For example, Azure SQL databases with date and time fields, which indicate when data records were last updated.
 
 1. [Create a new data source based on Power Query](connect-power-query.md).
 

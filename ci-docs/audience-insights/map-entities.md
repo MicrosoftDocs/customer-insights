@@ -17,7 +17,7 @@ searchScope:
 
 # Map entities and attributes
 
-**Map** is the first stage in the data unification process of audience insights. Mapping consists of three phases:
+**Map** is the first stage in the data unification process. Mapping consists of three phases:
 
 - *Entity selection*: Identify the combinable entities that lead to a dataset with more complete information about your customers.
 - *Attribute selection*: For each entity, identify the columns you want to combine and reconcile in the *match* and *merge* phases. These columns are called *Attributes*.
@@ -27,7 +27,7 @@ For more information about the general flow of data unification, see [Unify](dat
 
 ## Select the first entities
 
-1. In audience insights, go to **Data** > **Unify** > **Map**.
+1. Go to **Data** > **Unify** > **Map**.
 
 2. Start the map phase by selecting **Select entities**.
 

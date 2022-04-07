@@ -26,7 +26,7 @@ This feature lets you find similar customers in your customer base using artific
 
 ## Finding similar customers
 
-1. In audience insights, go to **Segments** and select the segment you want to base your new segment on. That's your *source segment*.
+1. Go to **Segments** and select the segment you want to base your new segment on. That's your *source segment*.
 
 1. In the action bar, select **Find similar customers**.
 

@@ -25,7 +25,7 @@ Discover interesting segments of your customers with the help of an AI model. Th
 
 ## Suggested segments to improve your KPIs
 
-As a user of audience insights, you likely have a series of [measures created](measures.md) that help track your Key Performance Indicators (KPIs). It's important to understand how certain attributes influence this KPI to create segments and run a highly targeted campaign.   
+As a user of Customer Insights, you likely have a series of [measures created](measures.md) that help track your Key Performance Indicators (KPIs). It's important to understand how certain attributes influence this KPI to create segments and run a highly targeted campaign.   
 For example, you track a measure called *TotalSpendPerCustomer*. As a business, you’d like to see this number grow. Choosing a measure as primary attribute, lets you select the attributes that you want to assess for influence. Let's say *membership tier*, *membership period*, and *occupation*. Customer Insights can then suggest a segment that tells you who are the biggest influence of that measure. For example, *Accountants* who are *Gold* members, and who have been with your business for *at least five years* are the biggest influencer of *TotalSpendPerCustomer*. You’ll get an estimated segment size for every suggestion. You can use this information to create campaigns for the targeted audiences.
 
 ## Understand what influences a customer attribute

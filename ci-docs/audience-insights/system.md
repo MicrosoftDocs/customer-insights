@@ -1,6 +1,6 @@
 ---
-title: "System configuration in audience insights"
-description: "Learn about system settings in Dynamics 365 Customer Insights audience insights capability."
+title: "System configuration in Customer Insights"
+description: "Learn about system settings in Dynamics 365 Customer Insights."
 ms.date: 11/01/2021
 
 ms.subservice: audience-insights
@@ -20,7 +20,7 @@ searchScope:
 
 # System configuration
 
-To access system configurations in audience insights, from the left navigation bar select **Admin** > **System** to view a list of system tasks and processes.
+To access system configurations, go to **Admin** > **System** to view a list of system tasks and processes.
 
 The **System** page includes the following tabs:
 - [Status](#status-tab)
@@ -92,7 +92,7 @@ Use the **Schedule** tab to schedule automatic refreshes of all your [ingested d
 > Data sources managed by you refresh on their own schedules. To schedule refresh of data sources managed by you, configure refresh settings on that specific data source from the **Data sources** page.
 > :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Dataflow refresh settings.":::
 
-1. In audience insights, go to **Admin** > **System** and select the **Schedule** tab.
+1. Go to **Admin** > **System** and select the **Schedule** tab.
 
 2. The default state for the scheduled refresh is **Off**. To enable scheduled refreshes, change the toggle at the top of the screen to **On**.
 
@@ -139,7 +139,7 @@ The **API usage** contains three sections:
 ## Security tab
 
 The **Security** tab lets you link and manage your own [Azure key vault](/azure/key-vault/general/basic-concepts) to the environment.
-The dedicated key vault can be used to stage and use secrets in an organization's compliance boundary. Audience insights can use the secrets in Azure Key Vault to [set up connections](connections.md) to third-party systems.
+The dedicated key vault can be used to stage and use secrets in an organization's compliance boundary. Customer Insights can use the secrets in Azure Key Vault to [set up connections](connections.md) to third-party systems.
 
 For more information, see [Bring your own Azure key vault](use-azure-key-vault.md).
 
