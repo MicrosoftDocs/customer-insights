@@ -1,6 +1,6 @@
 ---
-title: Get started with the audience insights capability in Dynamics 365 Customer Insights
-description: An overview of audience insights help resources to get started quickly. 
+title: Get started with Dynamics 365 Customer Insights
+description: An overview of Customer Insights help resources to get started quickly. 
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
@@ -15,21 +15,21 @@ searchScope:
   - customerInsights
 ---
 
-# Get started with Dynamics 365 Customer Insights audience insights capability
+# Get started with Dynamics 365 Customer Insights
 
-Audience insights can help you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
+Customer Insights can help you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
 
 ## Step 1: Create an environment
 
-To start, you first have to create an environment to work in. If your organization already purchased a license, see [Create an environment](create-environment.md). To start a trial for audience insights, see [Set up a trial environment](../trial-signup.md). 
+To start, you first have to create an environment to work in. If your organization already purchased a license, see [Create an environment](create-environment.md). To start a trial for Customer Insights, see [Set up a trial environment](../trial-signup.md). 
 
-## Step 2: Explore audience insights
+## Step 2: Explore Customer Insights
 
-The first time you sign in to audience insights, you can configure settings and explore the product.
+The first time you sign in to Customer Insights, you can configure settings and explore the product.
 
-1. [Sign in to audience insights](https://home.ci.ai.dynamics.com) using your Microsoft Azure Active Directory (AAD) user account.
+1. [Sign in to Customer Insights](https://home.ci.ai.dynamics.com) using your Microsoft Azure Active Directory (AAD) user account.
 
-1. [Change the environment](manage-environments.md#switch-environments) to see demo data and [explore audience insights](home.md).
+1. [Change the environment](manage-environments.md#switch-environments) to see demo data and [explore Customer Insights](home.md).
 
 ##  Step 3: Ingest, unify, and set up relationships for your data
 

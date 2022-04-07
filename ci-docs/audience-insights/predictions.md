@@ -20,7 +20,7 @@ searchScope:
 > [!IMPORTANT]
 > This feature will be **deprecated** as of **November 5, 2021**. Current implementations will continue to work until the feature is removed, but you will not be able to create new integrations using the instructions below.
 
-Predictions lets you easily create predicted values that can enhance your understanding of a customer. On the **Intelligence** > **Predictions** page, you can select **My predictions** to see predictions that you've configured in other parts of audience insights, and allow you to further customize them.
+Predictions lets you easily create predicted values that can enhance your understanding of a customer. On the **Intelligence** > **Predictions** page, you can select **My predictions** to see predictions that you've configured in other parts of Customer Insights, and allow you to further customize them.
 
 > [!NOTE]
 > You can't use this feature if your environment uses Azure Data Lake Gen 2 storage.
@@ -39,7 +39,7 @@ For more information, see [Create a new environment](create-environment.md).
 
 ## Create a prediction in the Customer entity
 
-1. In audience insights, go to **Data** > **Entities**.
+1. Go to **Data** > **Entities**.
 
 2. Select the **Customer** entity.
 
@@ -69,7 +69,7 @@ Predicting missing values for a specific attribute of choice is also possible wh
 
 As part of this flow, you'll choose a specific attribute to base your segment on, such as Customer Satisfaction or Purchase Amount. Upon segment creation, the system will suggest a method for predicting any missing values for this attribute.
 
-1. In audience insights, go to **Segments** and select the **Profiles** tile.
+1. Go to **Segments** and select the **Profiles** tile.
 
 2. Choose a **Field** to create a segment on and select an **Operator**, then select **Review**.
 
@@ -87,7 +87,7 @@ As part of this flow, you'll choose a specific attribute to base your segment on
 
 ## View a prediction
 
-1. In audience insights, go to **Intelligence** > **Predictions** > **My predictions**.
+1. Go to **Intelligence** > **Predictions** > **My predictions**.
 
 2. Select the prediction you want to review.
 
@@ -104,7 +104,7 @@ As part of this flow, you'll choose a specific attribute to base your segment on
 
 ## Update a prediction
 
-1. In audience insights, go to **Intelligence** > **Predictions** > **My predictions**.
+1. Go to **Intelligence** > **Predictions** > **My predictions**.
 
 2. Select the prediction you want to update and select the **Update** icon.
 
@@ -114,7 +114,7 @@ As part of this flow, you'll choose a specific attribute to base your segment on
 
 After you've created a prediction, you can customize the model in the AI Builder to increase the effectiveness of your model.  
 
-1. In audience insights, go to **Intelligence** > **Predictions** > **My predictions**.
+1. Go to **Intelligence** > **Predictions** > **My predictions**.
 
 2. Select the prediction you want to edit.
 
@@ -127,11 +127,11 @@ After you've created a prediction, you can customize the model in the AI Builder
 The next run of your prediction will use the updated model you've created.
 
 > [!NOTE]
-> New models created in AI Builder will not be displayed in audience insights unless the model was created from the experiences listed above.
+> New models created in AI Builder will not be displayed in Customer Insights unless the model was created from the experiences listed above.
 
 ## Remove a prediction
 
-1. In audience insights, go to **Intelligence** > **Predictions** > **My predictions**.
+1. Go to **Intelligence** > **Predictions** > **My predictions**.
 
 2. Select the prediction you want to delete.
 

@@ -16,13 +16,13 @@ searchScope:
 
 # Semantic mappings (Preview)
 
-Semantic mappings let you map your non-activity data to pre-defined schemas. These schemas help audience insights to better understand your data attributes. Semantic mapping and the provided data enable new insights and features in audience insights. To map your activity data to the schemas, review the [activities](activities.md) documentation.
+Semantic mappings let you map your non-activity data to pre-defined schemas. These schemas help Customer Insights to better understand your data attributes. Semantic mapping and the provided data enable new insights and features in Customer Insights. To map your activity data to the schemas, review the [activities](activities.md) documentation.
 
-**Semantic mappings are currently enabled for environments based on business accounts**. *ContactProfile* is the only type of semantic mapping currently available in audience insights.
+**Semantic mappings are currently enabled for environments based on business accounts**. *ContactProfile* is the only type of semantic mapping currently available in Customer Insights.
 
 ## Define a ContactProfile semantic entity mapping
 
-1. In audience insights, go to **Data** > **Semantic mappings (preview)**.
+1. Go to **Data** > **Semantic mappings (preview)**.
 
 1. Select **Add semantic mapping** to start the guided experience.
 
@@ -98,7 +98,7 @@ After creating a *ContactProfile* semantic entity mapping, you can capture activ
 
 1. [Define a *ContactProfile* semantic entity mapping.](#define-a-contactprofile-semantic-entity-mapping) and run the semantic mapping.
 
-1. In audience insights, go to **Data** > **Activities**.
+1. Go to **Data** > **Activities**.
 
 1. Select **Add Activity** to create a new activity.
 

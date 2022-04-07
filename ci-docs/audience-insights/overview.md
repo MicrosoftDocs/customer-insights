@@ -1,6 +1,6 @@
 ---
-title: "Audience insights for Dynamics 365 Customer Insights overview"
-description: "Overview of audience insights for Dynamics 365 Customer Insights."
+title: "ADynamics 365 Customer Insights overview"
+description: "Overview Dynamics 365 Customer Insights."
 ms.date: 08/04/2021
 ms.reviewer: mhart
 
@@ -12,9 +12,9 @@ manager: shellyha
 
 ---
 
-# Audience insights for Dynamics 365 Customer Insights overview
+# Dynamics 365 Customer Insights overview
 
-[Audience insights, a capability of Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/audience-insights-capability/) helps you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
+[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) helps you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
 
 ## Main benefits 
 
@@ -40,7 +40,7 @@ manager: shellyha
   - Access to a rich collection of connectors to ingest all your customer data.
   - Ability to unify customer data and transform it into the [Common Data Model](/common-data-model/) format.
   - Enrich customer information with insights from audience intelligence, such as brand affinity and interests.
-  - "Clicks-not-code" configuration and debugging experience to help easily configure audience insights and identify potential issues.
+  - "Clicks-not-code" configuration and debugging experience to help easily configure Customer Insights and identify potential issues.
   - Cleanse and standardize customer data across disparate sources with AI-powered recommendations.  
 
 - **Business users:**
