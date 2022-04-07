@@ -68,6 +68,6 @@ After removal of the duplicated relationships, try to configure the Power BI con
 
 When loading entities that contain fields with a date format like MM/DD/YYYY, you can encounter errors due to mismatched locale formats. This mismatch happens when your Power BI Desktop file is set to another locale than English (United States), because date fields in audience insights are saved in US format.
 
-The Power BI Desktop file has a single locale setting, which is applied when retrieving data. The get these date fields interpreted correctly, set the locale of the .BPI file to English (United States). [Learn how to change the locale of a Power BI desktop file](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
+The Power BI Desktop file has a single locale setting, which is applied when retrieving data. The get these date fields interpreted correctly, set the locale of the .BPI file to English (United States). [Learn how to change the locale of a Power BI desktop file](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
