@@ -30,7 +30,9 @@ If you enriched entities on the data source level to help improve your unificati
 
 ## Define deduplication on a match entity
 
-1. On the Duplicate records page, identify an entity and select **Add rule** to define the deduplication rules.
+1. On the **Duplicate records** page, select an entity and select **Add rule** to define the deduplication rules.
+
+   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Duplicate records pages with Show more highlighted":::
 
    1. In the **Create rule** pane, enter the following information:
       - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.

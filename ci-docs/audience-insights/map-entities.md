@@ -1,12 +1,12 @@
 ---
 title: "Select source fields for data unification"
 description: "The first step in the unification process is selecting entities, attributes, primary keys, and semantic types to map data to the unified customer profile."
-ms.date: 03/08/2022
+ms.date: 04/08/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: v-wendysmith
+ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -19,13 +19,15 @@ searchScope:
 
 The first step in customer or account unification is selecting the entities and attributes within your datasets that you want to unify. Select entities that contain customer-related details such as name, address, and email.
 
-## Select entities
+## Select entities and fields
 
 1. Go to **Data** > **Unify**.
 
 1. Select **Guide me**.
 
-1. Select **Select entities**. The **Edit fields** pane displays.
+   :::image type="content" source="media/m3_unify_land.png" alt-text="Screenshot of unify landing page with Guide me highlighted.":::
+
+1. Select **Select entities and fields**. The **Select entities and fields** pane displays.
 
 1. Select the **Entities** to combine into a customer or account profile.
 
@@ -33,7 +35,7 @@ The first step in customer or account unification is selecting the entities and 
 
    :::image type="content" source="media/m3_select_entities.png" alt-text="Screenshot of selected entities and attributes.":::
 
-   In this example, we're adding the **eCommerceContacts** and **loyCustomers** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
+   In this example, we're adding the **Contacts** and **CustomerLoyalty** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
 
 1. Select **Apply** to confirm your selections. The selected entities and attributes display.
 

@@ -1,12 +1,12 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 03/09/2022
+ms.date: 04/07/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: v-wendysmith
+ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -130,6 +130,8 @@ You can specify conditions that override the default match logic. There are four
 
 1. Select **Custom**.
 
+   :::image type="content" source="media/m3_match_custom.png" alt-text="Custom button":::
+
 1. Choose the custom match option from the **Custom type** dropdown and select **Download template**. You need a separate template for each match option.
 
 1. Open the downloaded template file and fill in the details. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
@@ -153,6 +155,8 @@ You can specify conditions that override the default match logic. There are four
 1. Applying the custom match depends on the match option you want to use.
 
    - For **Always match** or **Never match**, proceed to the next step.
-   - For **Custom bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the Normalizations dropdown, choose the **Custom bypass** or **Alias mapping** option and select **Done**.
+   - For **Bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the Normalizations dropdown, choose the **Custom bypass** or **Alias mapping** option and select **Done**.
+
+1. Select **Done** on the **Custom** pane to apply the custom match configuration.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
