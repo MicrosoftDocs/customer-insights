@@ -18,7 +18,7 @@ Export segments of unified customer profiles to RollWorks and use them for adver
 ## Prerequisites for a connection
 
 -	You have an [RollWorks account](https://www.rollworks.com/) and corresponding administrator credentials.
--	You have [configured segments](segments.md) in audience insights.
+-	You have [configured segments](segments.md) in Customer Insights.
 -	Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations

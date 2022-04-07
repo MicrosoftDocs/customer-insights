@@ -18,7 +18,7 @@ Export segments of unified customer profiles to Braze and use them for marketing
 ## Prerequisites
 
 -	You have a [Braze account](https://www.braze.com/) and corresponding administrator credentials.
--	You have [configured segments](segments.md) in audience insights.
+-	You have [configured segments](segments.md) in Customer Insights.
 -	Unified customer profiles in the exported segments contain a field representing an email address and a Braze customer ID. 
 
 ## Known limitations

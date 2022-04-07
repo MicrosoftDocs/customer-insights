@@ -19,7 +19,7 @@ searchScope:
 
 
 
-The audience insights capability in Dynamics 365 Customer Insights connects to data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md) and take action on it.
+Dynamics 365 Customer Insights connects to data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md) and take action on it.
 
 ## Add a data source
 
@@ -37,7 +37,7 @@ You can add the following data sources:
 
 ## Add data from on-premises data sources
 
-Ingesting data from on-premises data sources in audience insights is supported based on Microsoft Power Platform dataflows. You can enable Dataflows in Customer Insights by [providing the Microsoft Dataverse environment URL](create-environment.md) when setting up the environment.
+Ingesting data from on-premises data sources is supported based on Microsoft Power Platform dataflows. You can enable Dataflows in Customer Insights by [providing the Microsoft Dataverse environment URL](create-environment.md) when setting up the environment.
 
 Data sources that are created after associating a Dataverse environment with Customer Insights use [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) by default. Dataflows support on-premises connectivity using the data gateway. You can remove and recreate data sources that existed before a Dataverse environment was associated [using on-premises data gateways](/data-integration/gateway/service-gateway-app).
 
@@ -73,7 +73,7 @@ Go to **Admin** > **System** > [**Schedule**](system.md#schedule-tab) to configu
 
 To refresh a data source on demand, follow these steps:
 
-1. In audience insights, go to **Data** > **Data sources**.
+1. Go to **Data** > **Data sources**.
 
 2. Select the vertical ellipsis next to the data source you want to refresh and select **Refresh** from the dropdown list.
 
@@ -83,7 +83,7 @@ To refresh a data source on demand, follow these steps:
 
 ## Delete a data source
 
-1. In audience insights, go to **Data** > **Data sources**.
+1. Go to **Data** > **Data sources**.
 
 2. Select the vertical ellipsis next to the data source you want to remove and select **Delete** from the dropdown menu.
 

@@ -19,7 +19,7 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 
 -	You have a [SendGrid account](https://sendgrid.com/) and corresponding administrator credentials.
 -	There are existing contact lists in SendGrid and the corresponding IDs. For more information, see [SendGrid - Manage contacts](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts).
--	You have [configured segments](segments.md) in audience insights.
+-	You have [configured segments](segments.md) in Customer Insights.
 -	Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations

@@ -38,7 +38,7 @@ The Power Automate connector provides other actions than the available triggers.
 
 ## Create a Power Automate flow
 
-1. In audience insights, go to **Admin** > **Export destinations**.
+1. Go to **Admin** > **Export destinations**.
 
 1. On the **Power Automate** tile, select **Set up**.
 

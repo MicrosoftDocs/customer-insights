@@ -25,8 +25,8 @@ Go to **Data** > **Exports** to view the exports page. All user roles can view c
 
 There are two main types of exports:  
 
-- **Data-out exports** let you export any type of entity available in audience insights. The entities that you select for export are exported with all data fields, metadata, schemas, and mapping details. 
-- **Segment exports** let you export segment entities from audience insights. Segments represent a list of customer profiles. When configuring the export, you select the included data fields, depending on the target system you are export data to. 
+- **Data-out exports** let you export any type of entity available in Customer Insights. The entities that you select for export are exported with all data fields, metadata, schemas, and mapping details. 
+- **Segment exports** let you export segment entities from Customer Insights. Segments represent a list of customer profiles. When configuring the export, you select the included data fields, depending on the target system you are export data to. 
 
 ### Export segments
 

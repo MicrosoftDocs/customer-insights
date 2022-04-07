@@ -22,12 +22,12 @@ Customer Insights provides the option to make output entities available in [Micr
 
 **Existing organization**
 
-Administrators can configure Customer Insights to [use an existing Dataverse environment](create-environment.md) when they create a Customer Insights environment. By providing the URL to the Dataverse environment, it's attaching to their new audience insights environment. Customer Insights and Dataverse environments must be hosted in the same region. 
+Administrators can configure Customer Insights to [use an existing Dataverse environment](create-environment.md) when they create a Customer Insights environment. By providing the URL to the Dataverse environment, it's attaching to their new Customer Insights environment. Customer Insights and Dataverse environments must be hosted in the same region. 
 
 If you don't want to use an existing Dataverse environment, the system creates a new environment for the Customer Insights data in your tenant. 
 
 > [!NOTE]
-> If your organizations already uses Dataverse in their tenant, it’s important to remember that [Dataverse environment creation is controlled by an admin](/power-platform/admin/control-environment-creation). For example, if a you're setting up a new audience insights environment with your organizational account and the admin has disabled the creation of Dataverse trial environments for everyone except admins, you can't create a new trial environment.
+> If your organizations already uses Dataverse in their tenant, it’s important to remember that [Dataverse environment creation is controlled by an admin](/power-platform/admin/control-environment-creation). For example, if a you're setting up a new Customer Insights environment with your organizational account and the admin has disabled the creation of Dataverse trial environments for everyone except admins, you can't create a new trial environment.
 > 
 > The Dataverse trial environments created in Customer Insights have 3 GB of storage which won't count towards the overall capacity entitled to the tenant. Paid subscriptions get Dataverse entitlement of 15 GB for database and 20 GB for file storage.
 
@@ -37,7 +37,7 @@ If you create a new organization when setting up Customer Insights, the system a
 
 ## Output entities
 
-Some output entities from audience insights are available as tables in Dataverse. The sections below describe the expected schema of these tables.
+Some output entities from Customer Insights are available as tables in Dataverse. The sections below describe the expected schema of these tables.
 
 - [CustomerProfile](#customerprofile)
 - [AlternateKey](#alternatekey)
@@ -59,7 +59,7 @@ The AlternateKey table contains keys of the entities, which participated in the 
 |Column  |Type  |Description  |
 |---------|---------|---------|
 |DataSourceName    |String         | Name of the data source. For example: `datasource5`        |
-|EntityName        | String        | Name of the entity in audience insights. For example: `contact1`        |
+|EntityName        | String        | Name of the entity in Customer Insights. For example: `contact1`        |
 |AlternateValue    |String         |Alternative ID that is mapped to the customer ID. Example: `cntid_1078`         |
 |KeyRing           | Multiline text        | JSON value  </br> Sample: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
 |CustomerId         | String        | ID of the unified customer profile.         |
@@ -130,7 +130,7 @@ This table contains segment membership information of the customer profiles.
 | Column        | Type | Description                        |
 |--------------------|--------------|-----------------------------|
 | CustomerId        | String       | Customer Profile ID        |
-| SegmentProvider      | String       | App that publishes the segments. Default: Audience insights         |
+| SegmentProvider      | String       | App that publishes the segments.      |
 | SegmentMembershipType | String       | Type of the customer this segment membership record. Supports multiple types such as Customer, Contact, or Account. Default: Customer  |
 | Segments       | JSON String  | List of unique segments the customer profile is a member of      |
 | msdynci_identifier  | String   | Unique identifier of the segment membership record. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |

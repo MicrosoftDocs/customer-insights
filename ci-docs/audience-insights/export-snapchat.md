@@ -18,7 +18,7 @@ Export segments of unified customer profiles to Snapchat and use them for advert
 ## Prerequisites for a connection
 
 -	You have a [Snapchat Business account](https://business.snapchat.com/), a [Snapchat Ads account](https://ads.snapchat.com/), and corresponding administrator credentials.
--	You have [configured segments](segments.md) in audience insights.
+-	You have [configured segments](segments.md) in Customer Insights.
 -	Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
