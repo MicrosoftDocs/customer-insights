@@ -25,8 +25,8 @@ landingContent:
             url: overview.md
           - text: Release plans
             url: /dynamics365/release-plans/
-          - text: Discover the CDP
-            url: https://dynamics.microsoft.com/ai/customer-insights/
+          - text: New and updated features
+            url: whats-new-customer-insights.md
       - linkListType: learn
         links: 
           - text: Customer Insights learning path
@@ -38,25 +38,99 @@ landingContent:
         links: 
           - text: Sign up for a trial
             url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-          - text: What's new in audience insights
-            url: audience-insights/whats-new-audience-insights.md
-          - text: Quickstart guide
-            url: audience-insights/get-started.md
+          - text: Start with the trial
+            url: trial-signup.md
+          - text: Get started with Customer Insights
+            url: get-started.md
       - linkListType: learn
         links: 
           - text: Get started
             url: /learn/modules/get-started-customer-data-platform/
+
+  - title: Unify data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Data sources overview
+            url: data-sources.md
+          - text: Unification overview
+            url: data-unification.md
+          - text: Understand entities
+            url: entities.md
+      - linkListType: learn
+        links: 
+          - text: Create a unified profile
+            url:  /learn/modules/unified-customer-profile/
+
+  - title: Get insights
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Enrich customer profiles
+            url: enrichment-hub.md
+          - text: Configure relationships
+            url: relationships.md
+          - text: Complete data with predictions
+            url: predictions.md
+      - linkListType: learn
+        links: 
+          - text: Enrich and predict data
+            url:  /learn/modules/enrich-data/
+
+  - title: Build on your data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create segments
+            url: segments.md
+          - text: Create measures
+            url: measures.md
+          - text: List customer activities
+            url: activities.md
+      - linkListType: learn
+        links: 
+          - text: Work with the app
+            url:  /learn/modules/working-with-customer-insights/            
+
+  - title: Export data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set up export destinations
+            url: export-destinations.md
+          - text: Customer cards in Dynamics 365 apps 
+            url: customer-card-add-in.md
+          - text: Power BI connector
+            url: export-power-bi.md
+      - linkListType: learn
+        links: 
+          - text: Manage external connections
+            url:  /learn/modules/configure-third-party-connections/
   
+  - title: Administer the app
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Configure the system
+            url: system.md
+          - text: Define user permissions 
+            url: permissions.md
+          - text: Manage multiple environments
+            url: manage-environments.md
+      - linkListType: learn
+        links: 
+          - text: Administer Customer Insights
+            url:  /learn/modules/administer-customer-data-platform/  
   - title: Administer Customer Insights
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Configure the system
-            url: audience-insights/system.md
+            url: system.md
           - text: Define user permissions 
-            url: audience-insights/permissions.md
+            url: permissions.md
           - text: Manage multiple environments
-            url: audience-insights/manage-environments.md
+            url: manage-environments.md
       - linkListType: learn
         links: 
           - text: Administer Customer Insights
