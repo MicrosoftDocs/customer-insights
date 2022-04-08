@@ -26,7 +26,7 @@ landingContent:
           - text: Release plans
             url: /dynamics365/release-plans/
           - text: New and updated features
-            url: whats-new-audience-insights.md
+            url: whats-new-customer-insights.md
       - linkListType: learn
         links: 
           - text: Customer Insights learning path
