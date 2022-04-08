@@ -35,9 +35,7 @@ Before creating a new service principal for Customer Insights, check whether it 
 
 3. Under **Manage**, select **Enterprise Applications**.
 
-4. Search for the Microsoft application ID:
-   - Customer Insights: `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` with the name `Dynamics 365 AI for Customer Insights`
-   - Engagement insights: `ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd` with the name `Dynamics 365 AI for Customer Insights engagement insights`
+4. Search for the Microsoft application ID `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` with the name `Dynamics 365 AI for Customer Insights`.
 
 5. If you find a matching record, it means that the service principal already exists. 
    
@@ -62,8 +60,6 @@ Before creating a new service principal for Customer Insights, check whether it 
   
    1. Enter `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. This command creates the service principal for Customer Insights on the selected tenant. 
 
-   1. Enter `New-AzureADServicePrincipal -AppId "ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd" -DisplayName "Dynamics 365 AI for Customer Insights engagement insights"`. This command creates the service principal for engagement insights on the selected tenant.
-
 ## Grant permissions to the service principal to access the storage account
 
 Go to the Azure portal to grant permissions to the service principal for the storage account you want to use in Customer Insights.
@@ -79,7 +75,7 @@ Go to the Azure portal to grant permissions to the service principal for the sto
 1. On the **Add role assignment** pane, set the following properties:
    - Role: **Storage Blob Data Contributor**
    - Assign access to: **User, group, or service principal**
-   - Select: **Dynamics 365 AI for Customer Insights** and **Dynamics 365 AI for Customer Insights engagement insights** (the two [service principals](#create-a-new-service-principal) you created earlier in this procedure)
+   - Select: **Dynamics 365 AI for Customer Insights** (the [service principal](#create-a-new-service-principal) you created earlier in this procedure)
 
 1.	Select **Save**.
 
