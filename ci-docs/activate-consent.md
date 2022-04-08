@@ -18,7 +18,7 @@ The [Consent Center (preview)](consent-management/overview.md) helps you to harm
 
 With consent data imported to the Consent Center (preview) and the rules set up, you can enable consent checks. 
 
-:::image type="content" source="consent-management/media/enable-consent-checks-audience-insights.png" alt-text="Consent tab in Customer Insights settings with activated consent data.":::
+:::image type="content" source="consent-management/media/enable-consent-checks.png" alt-text="Consent tab in Customer Insights settings with activated consent data.":::
 
 1. In Customer Insights, go to **Admin** > **System**.
 
