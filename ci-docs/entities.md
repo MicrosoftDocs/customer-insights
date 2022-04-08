@@ -24,7 +24,7 @@ The **Entities** page lists entities and includes these columns:
 - **Updated**: Time the entity was last updated.
 - **Status**: Details about the last update of the entity.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Explore a specific entity's data
 

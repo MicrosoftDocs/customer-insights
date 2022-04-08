@@ -43,7 +43,7 @@ The following actions are available when you select a measure:
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
 - **Delete** the measure.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Next step
 

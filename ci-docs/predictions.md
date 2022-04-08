@@ -61,7 +61,7 @@ For more information, see [Create a new environment](create-environment.md).
 
 8. Select **Done** and the prediction will be processed. The processing will take some time, depending on the size and complexity of data. Results will be available in a new entity based on the **Output entity name** of the prediction you created.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Create a prediction while creating a segment
 

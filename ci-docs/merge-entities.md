@@ -208,7 +208,7 @@ Choose **Run Merge and downstream processes** to refresh the system with your ch
 
 To make more changes and rerun the step, you can cancel an in-progress merge. Select **Refreshing ...** and select **Cancel job**  in the side pane that appears.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 :::image type="content" source="media/process-detail-path.png" alt-text="Drill-down path to get to process details from the task status link.":::
 

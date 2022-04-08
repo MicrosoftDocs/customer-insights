@@ -19,4 +19,4 @@ The [consent management capability](overview.md) is available on a subscription 
 
 Currently, all administrators of audience insights have access to the consent management capability. They can add and remove other users and assign them the required permissions in audience insights. Admins can't add users to the Consent Center directly. 
 
-Review the documentation about [user permissions](../audience-insights/permissions.md) in audience insights to manage users and user roles.
+Review the documentation about [user permissions](../permissions.md) in audience insights to manage users and user roles.

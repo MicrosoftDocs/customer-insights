@@ -62,7 +62,7 @@ Predictions will automatically refresh on the same [schedule your data refreshes
 
 1. Select **Refresh**.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Delete a prediction
 

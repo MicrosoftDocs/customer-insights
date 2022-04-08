@@ -61,7 +61,7 @@ You'll see the name of each ingested data source, its status, and the last time 
 > [!div class="mx-imgBorder"]
 > ![Data source added.](media/configure-data-datasource-added.png "Data source added")
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 Loading data can take time. After a successful refresh, the ingested data can be reviewed from the **Entities** page. For more information, see [Entities](entities.md).
 

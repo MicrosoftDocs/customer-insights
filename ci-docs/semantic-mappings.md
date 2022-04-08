@@ -73,7 +73,7 @@ Semantic mappings let you map your non-activity data to pre-defined schemas. The
 
 1. To run a semantic mapping at a later point, select the semantic mapping and select **Refresh**.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Manage existing semantic mappings
 

@@ -122,7 +122,7 @@ Run the enrichment after configuring brands, interests, and the field mapping fo
 
 Depending on the size of your customer data, it may take several minutes for an enrichment run to complete.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Enrichment results
 

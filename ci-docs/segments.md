@@ -73,7 +73,7 @@ You can refresh all segments at once by selecting **Refresh all** on the **Segme
 - All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. When refresh is complete the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see a details about what happened.
 - Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segments was run or refreshed manually.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Export segments
 

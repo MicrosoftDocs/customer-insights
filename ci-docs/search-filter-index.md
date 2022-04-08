@@ -20,7 +20,7 @@ The result of unifying your customer data is a Customer Profile entity that prov
 
    :::image type="content" source="media/search-filter.png" alt-text="Search filter":::
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Add fields and specify attributes
 

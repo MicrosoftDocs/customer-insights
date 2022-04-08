@@ -23,7 +23,7 @@ The [consent management capability](overview.md) in Dynamics 365 Customer Insigh
 
 During public preview, the app is only available in English and French. More languages are added when the capability is generally available. 
 
-To change the language, [update your language settings in Customer Insights](../audience-insights/system.md#update-the-settings).
+To change the language, [update your language settings in Customer Insights](../system.md#update-the-settings).
 
 ## Stop using the consent management capability
 
