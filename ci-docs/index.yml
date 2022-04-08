@@ -41,7 +41,7 @@ landingContent:
           - text: Start with the trial
             url: trial-signup.md
           - text: Get started with Customer Insights
-            url: audience-insights/get-started.md
+            url: get-started.md
       - linkListType: learn
         links: 
           - text: Get started
@@ -126,11 +126,11 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Configure the system
-            url: audience-insights/system.md
+            url: system.md
           - text: Define user permissions 
-            url: audience-insights/permissions.md
+            url: permissions.md
           - text: Manage multiple environments
-            url: audience-insights/manage-environments.md
+            url: manage-environments.md
       - linkListType: learn
         links: 
           - text: Administer Customer Insights

@@ -34,7 +34,7 @@ The first time you sign in to Customer Insights, you can configure settings and 
 
 Unified profiles are the foundation to get insights and take action on the data. Bring in data from various sources and run the data unification process to combine unified profiles. Specify relationships between the ingested entities use enrichment features to add information to the profiles. 
 
-1. Ingest data by creating data sources from multiple options. Choose between [Power Query connectors](connect-power-query.md), a [Common Data Model folder](connect-common-data-model.md), or [Microsoft Dataverse](/dynamics365/customer-insights/audience-insights/connect-dataverse-managed-lake). 
+1. Ingest data by creating data sources from multiple options. Choose between [Power Query connectors](connect-power-query.md), a [Common Data Model folder](connect-common-data-model.md), or [Microsoft Dataverse](connect-dataverse-managed-lake.md). 
 
 1. Run the [data unification process](data-unification.md) by going through the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
 

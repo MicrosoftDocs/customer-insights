@@ -35,4 +35,4 @@ The first-run experience helps you choose your initial focus with Customer Insig
 
 ## Create your own environment
 
-After your first sign-in, you'll see an environment with sample data. You can use that data to explore features and familiarize with the app. To use your own data, you have to [create an environment](/dynamics365/customer-insights/audience-insights/create-environment).
+After your first sign-in, you'll see an environment with sample data. You can use that data to explore features and familiarize with the app. To use your own data, you have to [create an environment](create-environment.md).

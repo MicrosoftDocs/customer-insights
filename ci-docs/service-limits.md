@@ -19,8 +19,8 @@ This article describes the built-in limits to the Customer Insights service, whi
 
 | Area  | Limits  | Notes |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Segments, measures, and predictions | 300  | The total number of [segments](audience-insights/segments.md), [measures](audience-insights/measures.md), and [predictions](audience-insights/predictions.md) combined can't exceed 300.  |
-| Relationships | 20 levels of depth on relationships in entity paths. | When creating [segments](audience-insights/segments.md) or [measures](audience-insights/measures.md) using the builder interface, entity paths can have up to 20 relationship hops between the start entity and the target entity.  |
+| Segments, measures, and predictions | 300  | The total number of [segments](segments.md), [measures](measures.md), and [predictions](predictions.md) combined can't exceed 300.  |
+| Relationships | 20 levels of depth on relationships in entity paths. | When creating [segments](segments.md) or [measures](measures.md) using the builder interface, entity paths can have up to 20 relationship hops between the start entity and the target entity.  |
 
 <!--
 ## Engagement insights
