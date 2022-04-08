@@ -117,6 +117,6 @@ The overview card shows details about the coverage of the enrichment.
 
 ## Next steps
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+[!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

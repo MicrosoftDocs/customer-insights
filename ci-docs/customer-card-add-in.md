@@ -140,4 +140,4 @@ Even with correctly configured ID fields, the controls can't find data for any c
 
 After completing the full refresh, the Customer Card Add-in controls should show the expected data. 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -84,4 +84,4 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
 4. Select **Save** in Power Query after completing your edits to save your changes.
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

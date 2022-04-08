@@ -114,4 +114,4 @@ You can attach a Data Lake Storage account in Customer Insights to [store output
 1. Continue with the remaining steps in Customer Insights to attach the storage account.
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

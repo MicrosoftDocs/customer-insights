@@ -33,7 +33,7 @@ You can add the following data sources:
 - [From an Azure Synapse Analytics database](connect-synapse.md)
 
 > [!NOTE]
-> If you're using the trial version, the import methods section includes a **Customer Insights data library** option. Choose this option to select a sample dataset available for various industries. For more information, see [Dynamics 365 Customer Insights trial](../trial-signup.md).
+> If you're using the trial version, the import methods section includes a **Customer Insights data library** option. Choose this option to select a sample dataset available for various industries. For more information, see [Dynamics 365 Customer Insights trial](trial-signup.md).
 
 ## Add data from on-premises data sources
 
@@ -90,4 +90,4 @@ To refresh a data source on demand, follow these steps:
 3. Confirm your deletion.
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

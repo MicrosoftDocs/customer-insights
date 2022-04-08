@@ -128,4 +128,4 @@ To remove filters, select the **x** next to each filter applied to the timeline 
 > [!NOTE]
 > Activity filters are removed when you leave a customer profile. You have to apply them each time you open on a customer profile.
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

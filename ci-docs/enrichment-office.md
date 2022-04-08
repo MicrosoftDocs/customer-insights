@@ -61,7 +61,7 @@ Depending on the size of your Office data, it may take several hours for an enri
 
 When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to create aggregated insights, which are then added to your Customer Insights environment. No data at an individual level (for example, the body of any e-mail or calendar invite) becomes available to users of Customer Insights. 
 
-[!INCLUDE [progress-details-pane](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
 ## Enrichment results
 
@@ -109,7 +109,7 @@ The enriched data can be used to create segments and measures as detailed below.
 
 ## Next steps
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+[!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

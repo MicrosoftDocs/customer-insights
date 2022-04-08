@@ -49,4 +49,4 @@ The following actions are available when you select a measure:
 
 You can use existing measures to create [a customer segment](segments.md).
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

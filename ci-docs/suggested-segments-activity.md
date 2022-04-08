@@ -93,4 +93,4 @@ Select **See suggestion** on a suggested segment to view the details of that seg
 
 1. Select **Refresh suggestions** to refresh the suggestions while keeping configured attributes. Or select **Edit suggestions** to modify the configured attributes. The system will rerun the process, generate segment suggestions based on the latest data, and replace the current suggestions.
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

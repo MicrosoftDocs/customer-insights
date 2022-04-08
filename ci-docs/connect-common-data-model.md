@@ -106,4 +106,4 @@ You can update the access key for the storage account containing the Common Data
 8. Optionally, you can select additional attributes or entities to enable data profiling on or disable already selected ones.   
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

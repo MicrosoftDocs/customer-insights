@@ -70,4 +70,4 @@ You can add customer profiles to a [gallery control](/powerapps/maker/canvas-app
     - For example: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

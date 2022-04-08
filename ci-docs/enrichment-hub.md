@@ -108,4 +108,4 @@ All enrichments show basic information such as the number of enriched profiles, 
 Some enrichments also show information specific to the type of enrichment. Refer to the documentation for the relevant enrichment for more information.
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -42,4 +42,4 @@ You can view entities in the [Common Data Model Entity Navigator](https://micros
 > ![CDM Entity Navigator showing CustomerActivity entity.](media/CDM-entity-navigator.png "CDM Entity Navigator showing CustomerActivity entity")
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

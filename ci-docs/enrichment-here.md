@@ -80,7 +80,7 @@ You can access a detailed view of each enriched profile by selecting **View enri
 
 ## Next steps
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+[!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
 
 ## Data privacy and compliance
 
@@ -88,4 +88,4 @@ When you enable Dynamics 365 Customer Insights to transmit data to HERE Technolo
 Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

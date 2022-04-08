@@ -125,4 +125,4 @@ Customer Insights provides a new AI-powered feature to synthesize customer senti
 For more information, see [Analyze sentiment in customer feedback (Preview)](sentiment-analysis.md).
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

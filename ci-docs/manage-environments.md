@@ -203,4 +203,4 @@ As the owner of an environment, you can delete an environment you administer.
 > Deleting an environment does not remove the association to a Dataverse environment.Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

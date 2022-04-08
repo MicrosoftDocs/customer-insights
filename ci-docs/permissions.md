@@ -83,4 +83,4 @@ Go to **Admin** > **Permissions** to see what role assignments are currently act
 - Use the **Search** field at the top of the page to locate specific users.
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

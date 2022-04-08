@@ -63,4 +63,4 @@ To connect to a different Dataverse data lake, [create a new data source](#conne
 
 4. Select additional entities from the available list of entities and select **Save**.
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

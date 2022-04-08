@@ -75,4 +75,4 @@ When you enable Dynamics 365 Customer Insights to transmit data to Autopilot, yo
 Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

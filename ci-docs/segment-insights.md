@@ -91,4 +91,4 @@ You can use the following options on your insights from the command bar:
 - **Delete** to remove this insight
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -81,4 +81,4 @@ The following checks run on the ingested data to expose corrupted records:
 - If there are datetime/date/datetimeoffset columns, their format needs to be specified in the model if it doesn't follow the standard ISO format.
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -81,7 +81,7 @@ For more information, see [Leadspace APIs](https://support.leadspace.com/hc/en-u
 ## Next steps
 
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+[!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
 
 ## Data privacy and compliance
 
@@ -89,4 +89,4 @@ When you enable Dynamics 365 Customer Insights to transmit data to Leadspace, yo
 Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

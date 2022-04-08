@@ -312,4 +312,4 @@ You can specify conditions that override the default match logic. There are four
 After completing the match process for at least one match pair, continue to the [**Merge**](merge-entities.md) step.
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

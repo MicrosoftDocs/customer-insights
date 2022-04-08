@@ -58,4 +58,4 @@ You can also [export data on demand](export-destinations.md#run-exports-on-deman
 
 Exported data is stored in the Azure Data Lake Gen 2 storage container you configured. 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]
