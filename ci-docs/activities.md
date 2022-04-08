@@ -85,7 +85,7 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
 1. On the **Activities** page, select **Run** to process the activity. 
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Manage existing activities
 
@@ -128,4 +128,4 @@ To remove filters, select the **x** next to each filter applied to the timeline 
 > [!NOTE]
 > Activity filters are removed when you leave a customer profile. You have to apply them each time you open on a customer profile.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]
