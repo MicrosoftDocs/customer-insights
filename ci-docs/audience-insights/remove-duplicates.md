@@ -1,17 +1,18 @@
 ---
 title: "Remove duplicates before unifying data"
 description: "The 2nd step in the unification process is selecting which record to keep when duplicates are found"
-ms.date: 03/28/2022
+ms.date: 04/08/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: v-wendysmith
+ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-map
   - ci-match
+  - customerInsights
 ---
 
 # Remove duplicates before unifying data

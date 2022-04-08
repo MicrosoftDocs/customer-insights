@@ -6,7 +6,7 @@ ms.date: 03/28/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: v-wendysmith
+ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -28,13 +28,13 @@ searchScope:
    - [Matching conditions](#manage-match-rules)
    - [Unified customer fields](merge-entities.md)
 
-1. After making your changes, choose whether to match, merge, or match and merge your changes.
+1. After making your changes, choose whether to update the unified profile only, update matching conditions only, or update the unified profile and all dependencies of the profile (such as segments, measures, and predictions).
 
-   - To evaluate the quality of your matching conditions, [run the match process](#run-the-match-process).
+   - To evaluate the quality of your matching conditions, [run matching conditions only](#run-the-match-process).
 
-   - To merge your changes, [run the merge process](#run-the-merge-process).
+   - To update the unified profile, [unify customer profile](#run-the-merge-process).
 
-   - To run both match and merge processes, select **Run all** at the top left of the page.
+   - To update the unified profile and all dependencies, select **Unify customer profiles and dependencies** at the top left of the page.
 
 ## Edit source fields
 

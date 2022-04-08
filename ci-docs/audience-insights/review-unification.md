@@ -1,7 +1,7 @@
 ---
 title: "Review data unification"
 description: "Review and finalize the data unification steps and create unified customer profiles."
-ms.date: 03/11/2022
+ms.date: 04/08/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
