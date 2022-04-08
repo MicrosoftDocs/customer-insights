@@ -164,4 +164,4 @@ If you can't complete the attach Dataverse process due to an error, you can try 
     1. Select **System Administrator**, then select **OK**.
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -137,4 +137,4 @@ To export data without waiting for a scheduled refresh, go to **Data** > **Expor
 1. Confirm the removal by selecting **Remove** on the confirmation screen.
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

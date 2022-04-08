@@ -155,4 +155,4 @@ Use the NodeJS client libraries available through NPM: https://www.npmjs.com/pac
 
 Use the Python client libraries available through PyPi: https://pypi.org/project/customerinsights/
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

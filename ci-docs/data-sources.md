@@ -90,4 +90,4 @@ To refresh a data source on demand, follow these steps:
 3. Confirm your deletion.
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

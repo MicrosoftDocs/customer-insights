@@ -103,4 +103,4 @@ As part of the data unification process, go to the **Match** page. Visit [**Matc
 > Check out the following video: [Getting Started: Creating a Unified Customer Profile](https://youtu.be/oBfGEhucAxs).
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

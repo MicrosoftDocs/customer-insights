@@ -103,4 +103,4 @@ Select a suggested segment to review the details of that suggestion. You can als
 
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

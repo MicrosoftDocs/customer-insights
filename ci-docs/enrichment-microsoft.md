@@ -143,4 +143,4 @@ Brand and interest SoV can also be viewed on individual customer cards. Go to **
 [!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

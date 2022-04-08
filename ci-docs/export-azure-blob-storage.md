@@ -67,4 +67,4 @@ Exported data is stored in the Blob Storage container you configured. The follow
 - The model.json for the exported entities will be at the %ExportDestinationName% level.  
   - Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

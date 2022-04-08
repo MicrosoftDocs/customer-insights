@@ -218,4 +218,4 @@ Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [rela
 
 If you already configured activities, enrichment, or segments, they'll be processed automatically to use the latest customer data.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

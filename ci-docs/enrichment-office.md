@@ -112,4 +112,4 @@ The enriched data can be used to create segments and measures as detailed below.
 [!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

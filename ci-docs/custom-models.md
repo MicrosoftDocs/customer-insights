@@ -142,4 +142,4 @@ For the specific OData query to get data from a custom model entity, use the fol
 - What does the error "Couldn't save intelligence workflow" mean?    
   Users usually see this error message if they don't have Owner or User Access Administrator privileges on the workspace. The user needs a higher level of permissions to enable Customer Insights to process the workflow as a service rather than using the user credentials for subsequent runs of the workflow.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

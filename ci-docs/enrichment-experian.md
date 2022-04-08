@@ -94,4 +94,4 @@ When you enable Dynamics 365 Customer Insights to transmit data to Experian, you
 Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

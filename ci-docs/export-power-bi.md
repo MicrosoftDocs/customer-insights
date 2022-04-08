@@ -70,4 +70,4 @@ When loading entities that contain fields with a date format like MM/DD/YYYY, yo
 
 The Power BI Desktop file has a single locale setting, which is applied when retrieving data. The get these date fields interpreted correctly, set the locale of the .BPI file to English (United States). [Learn how to change the locale of a Power BI desktop file](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -83,4 +83,4 @@ The binary classification machine learning model assigns a score to customers in
 
 Customers with similarity scores below 0.4 aren't included in the model output. The system doesn't consider them similar enough to the source segment.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

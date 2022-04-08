@@ -144,4 +144,4 @@ The dedicated key vault can be used to stage and use secrets in an organization'
 For more information, see [Bring your own Azure key vault](use-azure-key-vault.md).
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

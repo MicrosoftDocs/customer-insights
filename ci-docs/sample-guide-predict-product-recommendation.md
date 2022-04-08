@@ -203,4 +203,4 @@ You now have a segment that is dynamically updated which identifies the customer
 For more information, see [Create and manage segments](segments.md).
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

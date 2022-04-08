@@ -39,4 +39,4 @@ Now you can view the following sections in the home page:
 - **Recent enrichments** lists results of the enrichment runs that completed recently. [Enrichments](enrichment-hub.md) add information about your customer base. For example, by understanding the interests and brands that they have affinity for.
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

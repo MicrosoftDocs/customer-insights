@@ -122,4 +122,4 @@ You can access a detailed view of each enriched profile by selecting **View enri
 
 [!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]
