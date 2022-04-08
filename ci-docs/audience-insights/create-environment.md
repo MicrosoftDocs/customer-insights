@@ -22,7 +22,7 @@ This article explains how to create a new environment after your organization ha
 Organizations can create *two* environments for every Customer Insights license. If your organization purchases more than one license, [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, download the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 > [!NOTE]
-> If you're looking to try the service, see [Set up a trial environment](../trial-signup.md).
+> If you're looking to try the service, see [Set up a trial environment](trial-signup.md).
 
 ## Create a new environment
 
@@ -32,7 +32,7 @@ A guided experience helps you through the steps to gather all required informati
 
 1. Open the environment picker and select **+ New**.
   
-   :::image type="content" source="../engagement-insights/media/environment-picker.png" alt-text="Select the environment picker.":::
+   :::image type="content" source="media/environment-picker.png" alt-text="Select the environment picker.":::
 
 1. Follow the guided experience outlined in the following sections.
 

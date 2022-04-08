@@ -352,8 +352,5 @@
         - name: Create predictions with consent data
           href: consent-management/predictions-consent-data.md
 
-- name: Engagement insights (preview)
-  href: engagement-insights/overview.md
-
 - name: Get support
   href: /power-platform/admin/get-help-support
