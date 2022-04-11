@@ -94,9 +94,13 @@ As part of the customer profile generation configuration process, you can define
 
 1. Specify how to combine or merge the fields from one of three options:
     - **Importance**: Identifies the winner value based on importance rank specified for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
-    :::image type="content" source="media/importance-merge-option.png" alt-text="Importance option in the merge fields dialog.":::
+    
+      :::image type="content" source="media/importance-merge-option.png" alt-text="Importance option in the merge fields dialog.":::
+
     - **Most recent**: Identifies the winner value based on the most recency. Requires a date or a numeric field for every participating entity in the merge fields scope to define the recency.
-    :::image type="content" source="media/recency-merge-option.png" alt-text="Recency option in the merge fields dialog.":::
+
+      :::image type="content" source="media/recency-merge-option.png" alt-text="Recency option in the merge fields dialog.":::
+
     - **Least recent**: Identifies the winner value based on the least recency. Requires a date or a numeric field for every participating entity in the merge fields scope to define the recency.
 
 1. You can add more fields to participate in the merge process.
