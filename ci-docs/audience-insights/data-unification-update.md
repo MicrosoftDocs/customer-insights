@@ -28,13 +28,12 @@ searchScope:
    - [Matching conditions](#manage-match-rules)
    - [Unified customer fields](merge-entities.md)
 
-1. After making your changes, choose whether to update the unified profile only, update matching conditions only, or update the unified profile and all dependencies of the profile (such as segments, measures, and predictions).
+1. After making your changes, choose your next option:
 
-   - To evaluate the quality of your matching conditions, [run matching conditions only](#run-the-match-process).
+   :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
-   - To update the unified profile, [unify customer profile](#run-the-merge-process).
-
-   - To update the unified profile and all dependencies, select **Unify customer profiles and dependencies** at the top left of the page.
+   - To merge your changes into the unified customer profile, see [Unify the customer profile(#unify-the-customer-profile)].
+   - To evaluate the quality of your matching conditions, see [Run matching conditions](#run-matching-conditions)**.
 
 ## Edit source fields
 
@@ -107,11 +106,17 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
 
-## Run the match process
+## Unify the customer profile
 
-1. From the **Data** > **Unify** page, select **Run Match**.
+To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
-   :::image type="content" source="media/m3_run_match_merge.png" alt-text="Cropped screenshot of the Run merge selection.":::
+To update the unified profile and all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
+
+[!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+
+## Run matching conditions
+
+1. From the **Data** > **Unify** page, select **Run matching conditions only**.
 
    The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing**.
 
@@ -123,16 +128,4 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. To make changes, see [Manage deduplication rules](#manage-deduplication-rules) or [Manage match rules](#manage-match-rules).
 
-1. Run the match process again or proceed to run your merge.
-
-## Run the merge process
-
-Merge takes your changes and merges them into the unified customer profile entity.
-
-:::image type="content" source="media/m3_run_match_merge.png" alt-text="Cropped screenshot of the Run merge selection.":::
-
-Choose **Run only Merge** if you only want to see the output reflected in the unified customer entity. Downstream processes will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
-
-Choose **Run Merge and downstream processes** to refresh the system with your changes. All processes, including enrichment, segments, and measures will rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
-
-[!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+1. Run the match process again or [unify the customer profile}(#unify-the-customer-profile).
