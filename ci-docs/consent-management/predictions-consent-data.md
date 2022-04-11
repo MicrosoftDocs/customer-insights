@@ -14,7 +14,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can build out-of-box prediction models in audience insights to predict customer churn or customer lifetime value. Use consent data from the [consent management capability](overview.md) to increase the accuracy of these predictions.
+You can build out-of-box prediction models in Customer Insights to predict customer churn or customer lifetime value. Use consent data from the [consent management capability](overview.md) to increase the accuracy of these predictions.
 
 The steps below detail how to use consent data in out-of-box models, with the focus on the transactional churn model. However, you can apply these same steps to the subscription churn and customer lifetime value models. 
 

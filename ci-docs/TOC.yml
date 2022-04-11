@@ -15,7 +15,7 @@
       href: /learn/modules/ingest-data-customer-insights/
     - name: Create a unified customer profile
       href: /learn/modules/unified-customer-profile/
-    - name: Work with audience insights
+    - name: Work with Customer Insights
       href: /learn/modules/working-with-customer-insights/
     - name: Enrich data and make predictions
       href: /learn/modules/enrich-data/
@@ -42,7 +42,7 @@
       href: paid-license.md
     - name: Create a new environment
       href: create-environment.md
-    - name: Explore audience insights
+    - name: Explore Customer Insights
       href: home.md
     - name: Work with tags and columns
       href: work-with-tags-columns.md
@@ -322,9 +322,9 @@
 
     - name: Manage consent data
       items: 
-        - name: Enable consent rules in audience insights
+        - name: Enable consent rules in Customer Insights
           href: activate-consent.md
-        - name: Manage default consent rules in audience insights segments
+        - name: Manage default consent rules in Customer Insights segments
           href: change-default-consent-rules.md
         
     - name: Manage settings and users

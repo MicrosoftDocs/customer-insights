@@ -32,5 +32,5 @@ A consent entity is a data table that results from importing consent data to the
 
 ## Standard actions
 
-As part of the [data mapping step for setting consent data rules](set-consent-rules.md), admins define rules that apply to a type of consent. They can choose to include or exclude consent data according to a business logic. These are then used in other applications to apply consent rules to business processes. For example, a rule can be set to exclude all contacts that have set their preferences to not receive any information. These contacts are then removed from all segments in audience insights that are used for sending newsletters.
+As part of the [data mapping step for setting consent data rules](set-consent-rules.md), admins define rules that apply to a type of consent. They can choose to include or exclude consent data according to a business logic. These are then used in other applications to apply consent rules to business processes. For example, a rule can be set to exclude all contacts that have set their preferences to not receive any information. These contacts are then removed from all segments in Customer Insights that are used for sending newsletters.
 

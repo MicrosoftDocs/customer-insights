@@ -27,7 +27,7 @@ The trial takes a few moments to load, and then you can start using the app. You
 
 Your trial environment includes the same features as the paid version. The links below guide you through some of the key features.
 
-- [Quickstart for audience insights.](get-started.md)
+- [Quickstart for Customer Insights.](get-started.md)
 - [Add more users and assign permissions.](permissions.md)
 - [Ingest your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
 - [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).

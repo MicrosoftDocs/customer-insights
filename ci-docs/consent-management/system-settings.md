@@ -31,7 +31,7 @@ After an admin has provisioned the consent management capability, it's automatic
 
 However, there are some workarounds that an admin can use to stop enforcing consent rules and hence disable the functionality related to consent management. 
 
-1. In audience insights, go to System > Consent (preview). 
+1. In Customer Insights, go to **System** > **Consent (preview)**. 
 
 1. Select the checkbox to allow overrides. 
 
@@ -41,7 +41,7 @@ However, there are some workarounds that an admin can use to stop enforcing cons
 
 -OR- 
 
-1. In audience insights, go to System > Consent (preview). 
+1. In Customer Insights, go to **System** > **Consent (preview)**. 
 
 1. In the **Enable consent checks** section, set the toggle to **Off**. 
 
