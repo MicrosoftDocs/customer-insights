@@ -32,8 +32,8 @@ searchScope:
 
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
-   - To merge your changes into the unified customer profile, see [Unify the customer profile(#unify-the-customer-profile)].
-   - To evaluate the quality of your matching conditions, see [Run matching conditions](#run-matching-conditions)**.
+   - To merge your changes into the unified customer profile, see [Unify the customer profile](#unify-the-customer-profile).
+   - To evaluate the quality of your matching conditions, see [Run matching conditions](#run-matching-conditions).
 
 ## Edit source fields
 
@@ -128,4 +128,4 @@ To update the unified profile and all dependencies, select **Unify customer prof
 
 1. To make changes, see [Manage deduplication rules](#manage-deduplication-rules) or [Manage match rules](#manage-match-rules).
 
-1. Run the match process again or [unify the customer profile}(#unify-the-customer-profile).
+1. Run the match process again or [unify the customer profile](#unify-the-customer-profile).
