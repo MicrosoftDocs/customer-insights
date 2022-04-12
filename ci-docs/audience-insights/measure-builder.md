@@ -36,7 +36,9 @@ You can create measures on the level of individual customers (customer attribute
 
 1. Select **New** and choose **Build your own**.
 
-   :::image type="content" source="media/measure-b2c.png" alt-text="Empty configuration screen for a B-to-C measure. ":::
+   :::image type="content" source="media/measure-b2c.png" alt-text="Empty configuration screen for a B-to-C measure." lightbox="media/measure-b2c.png":::
+
+1. To track business-level performance, toggle **Measure type** to **Business level**. **Customer level** is selected by default. **Customer level** automatically adds the *CustomerId* attribute to Dimensions while **Business level** automatically removes it.
 
 1. In the configuration area, choose the aggregation function from the **Select function** dropdown menu. Aggregation functions include:
    - **Sum**
@@ -68,7 +70,9 @@ You can create measures on the level of individual customers (customer attribute
 
 1. Select **Dimension** to choose more fields that are added as columns to the measure output entity.
 
-   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected to create *customer-level measures*. You can remove the default dimension if you want to create *business-level measures*.
+   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender.
+   > [!TIP]
+   > If you selected **Customer level** as the **Measure type** the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** toggles to **Business level**.
    1. Select **Done** to add the dimensions to the measure.
 
 1. If there are values in your data that you need to replace with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
@@ -106,8 +110,6 @@ You can create measures on the level of individual accounts (customer measure) o
 
    :::image type="content" source="media/measure-b2b.png" alt-text="Empty configuration screen for a B-to-B measure. ":::
 
-1. Select **Edit name** and provide a **Name** for the measure.
-
 1. In the configuration area, choose the aggregation function from the **Select function** dropdown menu. Aggregation functions include:
    - **Sum**
    - **Average**
@@ -136,7 +138,9 @@ You can create measures on the level of individual accounts (customer measure) o
 
 1. Select **Dimension** to choose more fields that are added as columns to the measure output entity.
 
-   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected to create *customer-level measures*. You can remove the default dimension if you want to create *business-level measures*.
+   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender.
+      > [!TIP]
+      > If you selected **Customer level** as the **Measure type** the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** switches to **Business level**.
    1. Select **Done** to add the dimensions to the measure.
 
 1. If there are values in your data that you need to replace with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
@@ -153,6 +157,10 @@ You can create measures on the level of individual accounts (customer measure) o
 1. Select **...** on the calculation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.
 
 1. In the **Preview** area, you'll see the data schema of the measure output entity, including filters and dimensions. The preview reacts dynamically to changes in the configuration.
+
+1. Select **Edit details** next to Untitled measure. Provide a name for the measure. Optionally, add [tags](work-with-tags-columns.md#manage-tags) to the measure.
+
+   :::image type="content" source="media/measures_edit_details.png" alt-text="Edit details dialog box.":::
 
 1. Select **Run** to calculate results for the configured measure. Select **Save and close** if you want to keep the current configuration and run the measure later.
 
