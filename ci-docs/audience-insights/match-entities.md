@@ -18,7 +18,7 @@ searchScope:
 
 # Match conditions
 
-This step in customer or account unification defines the match order and rules for cross-entity matching.
+This step in customer or account unification defines the match order and rules for cross-entity matching. This step requires two or more entities.
 
 ## Include enriched entities (preview)
 
