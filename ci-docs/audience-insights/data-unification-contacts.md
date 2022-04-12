@@ -1,13 +1,13 @@
 ---
 title: "Create a unified view of your business contacts"
 description: "Go through the data unification process to create a single master dataset of contacts."
-ms.date: 03/30/2022
+ms.date: 04/12/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: overview
 author: v-wendysmith
-ms.author: v-wendysmith
+ms.author: mukeshpo
 manager: shellyha
 
 searchScope: 
@@ -65,7 +65,7 @@ If you are satisfied with your selections, select **Create contact profiles**. T
 
 [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
 
-The unified contact profile entity, called **Contqacts**, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Contact* entity. All subsequent runs expand that entity.
+The unified contact profile entity, called **ContactsCustomer**, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Contacts* entity. All subsequent runs expand that entity.
 
 ## Next Step
 
