@@ -1,13 +1,12 @@
 ---
 title: "Segments in audience insights"
 description: "Overview on segments and how to create and manage them."
-ms.date: 11/01/2021
-
+ms.date: 03/30/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-customers-page
@@ -43,28 +42,36 @@ There are multiple ways to create a new segment:
 
 ## Manage existing segments
 
-Go to the **Segments** page, to view all your saved segments and manage them.
+Go to the **Segments** page to view all your saved segments and manage them.
 
 Each segment is represented by a row that includes additional information about the segment.
 
-:::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options.":::
+:::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options." lightbox="media/segments-selected-segment.png":::
 
-The following action are available when you select a segment:
+The following actions are available when you select a segment:
 
 - **View** the segment details, including member count trend a preview of segment members.
+- **Download** the list of members as a .CSV file.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or simply save the duplicate.
 - **Refresh** the segment to include the latest data.
-- **Activate** or **Deactivate** the segment. Segments have two possible states - active or inactive. These states come in handy when editing a segment. For inactive segments, the segment definition exists but it doesn't contain any customers yet. When you activate a segment, its state changes from 'inactive' to 'active" and it starts looking for customers that match the segment definition. If a [scheduled refresh](system.md#schedule-tab) is configured, inactive segments have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. When an inactive segment is activated, it will refresh and will be included in scheduled refreshes.
+- **Activate** or **Deactivate** the segment. For inactive segments, the segment definition exists but it doesn't contain any customers yet. An active segment looks for customers that match the segment definition. If a [scheduled refresh](system.md#schedule-tab) is configured, inactive segments have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. When an inactive segment is activated, it will refresh and will be included in scheduled refreshes.
   Alternatively, you can use the **Schedule later** functionality in the **Activate/Deactivate** dropdown to specify a future date and time for activation and deactivation of a particular segment.
+- **[Find similar customers](find-similar-customer-segments.md)** from the segment.
 - **Rename** the segment.
+- **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
 - **Download** the list of members as a .CSV file.
 - **Manage exports** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
+- **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
+- **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
+- **Search name** to search by segment name.
 
 ## Refresh segments
 
-You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**.
+You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**. When a recurring refresh is configured, the following rules apply:
+- All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. When refresh is complete the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see a details about what happened.
+- Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segments was run or refreshed manually.
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 

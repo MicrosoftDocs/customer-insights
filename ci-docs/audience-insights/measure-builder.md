@@ -1,13 +1,13 @@
 ---
 title: "Create new measures with the measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.author: wameng
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-measure-builder
@@ -16,7 +16,7 @@ searchScope:
 
 # Use measure builder to create measures from scratch
 
-This article explains how to create a new [measure](measures.md) from scratch. The measure builder lets you define calculations using math operators, aggregation functions, and filters. You can build a measure with attributes from entities that are related to the unified *Customer* entity. 
+This article explains how to create a new [measure](measures.md) from scratch. The measure builder lets you define calculations using math operators, aggregation functions, and filters. You can build a measure with attributes from entities that are related to the unified *Customer* entity.
 
 Creating measures in B-to-C and B-to-B environments works the same way. However, if you're B-to-B environment [uses accounts with hierarchies](relationships.md#set-up-account-hierarchies), you can choose to aggregate the measure across related sub-accounts.
 
@@ -36,11 +36,11 @@ You can create measures on the level of individual customers (customer attribute
 
 1. Select **New** and choose **Build your own**.
 
-   :::image type="content" source="media/measure-b2c.png" alt-text="Empty configuration screen for a B-to-C measure. ":::
+   :::image type="content" source="media/measure-b2c.png" alt-text="Empty configuration screen for a B-to-C measure." lightbox="media/measure-b2c.png":::
 
-1. Select **Edit name** and provide a **Name** for the measure. 
+1. To track business-level performance, toggle **Measure type** to **Business level**. **Customer level** is selected by default. **Customer level** automatically adds the *CustomerId* attribute to Dimensions while **Business level** automatically removes it.
 
-1. In the configuration area, choose the aggregation function from the **Select function** dropdown menu. Aggregation functions include: 
+1. In the configuration area, choose the aggregation function from the **Select function** dropdown menu. Aggregation functions include:
    - **Sum**
    - **Average**
    - **Count**
@@ -53,11 +53,11 @@ You can create measures on the level of individual customers (customer attribute
    - **ArgMin**: finds the data record giving the minimum value from a target function
 
 1. Select **Add attribute** to select the data you need to create this measure.
-   
-   1. Select the **Attributes** tab. 
-   1. Data entity: Choose the entity that includes the attribute you want to measure. 
+
+   1. Select the **Attributes** tab.
+   1. Data entity: Choose the entity that includes the attribute you want to measure.
    1. Data attribute: Choose the attribute you want to use in the aggregation function to calculate the measure. You can only select one attribute at a time.
-   1. You can also select a data attribute from an existing measure by selecting the **Measures** tab, or you can search for an entity or measure name. 
+   1. You can also select a data attribute from an existing measure by selecting the **Measures** tab, or you can search for an entity or measure name.
    1. Select **Add** to add the selected attribute to the measure.
 
 1. To build more complex measures, you can add more attributes or use math operators on your measure function.
@@ -69,16 +69,18 @@ You can create measures on the level of individual customers (customer attribute
    1. Select **Apply** to add the filters to the measure.
 
 1. Select **Dimension** to choose more fields that are added as columns to the measure output entity.
- 
-   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected to create *customer-level measures*. You can remove the default dimension if you want to create *business-level measures*.
+
+   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender.
+   > [!TIP]
+   > If you selected **Customer level** as the **Measure type** the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** toggles to **Business level**.
    1. Select **Done** to add the dimensions to the measure.
 
 1. If there are values in your data that you need to replace with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
 
-1. If there are multiple paths between the data entity you mapped and the *Customer* entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path. 
-   
+1. If there are multiple paths between the data entity you mapped and the *Customer* entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path.
+
    1. Select **Relationship path** and choose the entity path that should be used to identify your measure. If there's only a single path to the *Customer* entity, this control won't show.
-   1. Select **Done** to apply your selection. 
+   1. Select **Done** to apply your selection.
 
 1. To add more calculations for the measure, select **New calculation**. You can only use entities on the same entity path for new calculations. More calculations will show as new columns in the measure output entity.
 
@@ -86,14 +88,17 @@ You can create measures on the level of individual customers (customer attribute
 
 1. In the **Preview** area, you'll see the data schema of the measure output entity, including filters and dimensions. The preview reacts dynamically to changes in the configuration.
 
+1. Select **Edit details** next to Untitled measure. Provide a name for the measure. Optionally, add [tags](work-with-tags-columns.md#manage-tags) to the measure.
+
+   :::image type="content" source="media/measures_edit_details.png" alt-text="Edit details dialog box.":::
+
 1. Select **Run** to calculate results for the configured measure. Select **Save and close** if you want to keep the current configuration and run the measure later.
 
 1. Go to **Measures** to see the newly created measure in the list.
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-
-You can create measures on the level of individual accounts (customer measure) or  on the level of all accounts (business measure). 
+You can create measures on the level of individual accounts (customer measure) or  on the level of all accounts (business measure).
 
 - Customer measure: Generates output as its own entity. Customer measures don't show in the customer profile card.
 
@@ -105,9 +110,7 @@ You can create measures on the level of individual accounts (customer measure) o
 
    :::image type="content" source="media/measure-b2b.png" alt-text="Empty configuration screen for a B-to-B measure. ":::
 
-1. Select **Edit name** and provide a **Name** for the measure. 
-
-1. In the configuration area, choose the aggregation function from the **Select function** dropdown menu. Aggregation functions include: 
+1. In the configuration area, choose the aggregation function from the **Select function** dropdown menu. Aggregation functions include:
    - **Sum**
    - **Average**
    - **Count**
@@ -118,11 +121,11 @@ You can create measures on the level of individual accounts (customer measure) o
    - **Last**: takes the last value that was added to the data record
 
 1. Select **Add attribute** to select the data you need to create this measure.
-   
-   1. Select the **Attributes** tab. 
-   1. Data entity: Choose the entity that includes the attribute you want to measure. 
+
+   1. Select the **Attributes** tab.
+   1. Data entity: Choose the entity that includes the attribute you want to measure.
    1. Data attribute: Choose the attribute you want to use in the aggregation function to calculate the measure. You can only select one attribute at a time.
-   1. You can also select a data attribute from an existing measure by selecting the **Measures** tab, or you can search for an entity or measure name. 
+   1. You can also select a data attribute from an existing measure by selecting the **Measures** tab, or you can search for an entity or measure name.
    1. Select **Add** to add the selected attribute to the measure.
 
 1. To build more complex measures, you can add more attributes or use math operators on your measure function.
@@ -134,8 +137,10 @@ You can create measures on the level of individual accounts (customer measure) o
    1. Select **Apply** to add the filters to the measure.
 
 1. Select **Dimension** to choose more fields that are added as columns to the measure output entity.
- 
-   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender. By default, the *CustomerID* dimension is selected to create *customer-level measures*. You can remove the default dimension if you want to create *business-level measures*.
+
+   1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender.
+      > [!TIP]
+      > If you selected **Customer level** as the **Measure type** the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** switches to **Business level**.
    1. Select **Done** to add the dimensions to the measure.
 
 1. If there are values in your data that you need to replace with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
@@ -144,17 +149,19 @@ You can create measures on the level of individual accounts (customer measure) o
    - If it's set to **Off**, the measure is calculated for every account. Every account gets own of result.
    - If it's set to **On**, select **Edit** to choose the account hierarchy according to the ingested hierarchies. The measure will yield only one result because it's aggregated with sub accounts.
 
-1. If there are multiple paths between the data entity you mapped and the *Customer* entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path. 
-   
+1. If there are multiple paths between the data entity you mapped and the *Customer* entity, you have to choose one of the identified [entity relationship paths](relationships.md). Measure results can vary depending on the selected path.
+
    1. Select **Relationship path** and choose the entity path that should be used to identify your measure. If there's only a single path to the *Customer* entity, this control won't show.
-   1. Select **Done** to apply your selection. 
+   1. Select **Done** to apply your selection.
 
 1. Select **...** on the calculation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.
 
 1. In the **Preview** area, you'll see the data schema of the measure output entity, including filters and dimensions. The preview reacts dynamically to changes in the configuration.
 
+1. Select **Edit details** next to Untitled measure. Provide a name for the measure. Optionally, add [tags](work-with-tags-columns.md#manage-tags) to the measure.
+
+   :::image type="content" source="media/measures_edit_details.png" alt-text="Edit details dialog box.":::
+
 1. Select **Run** to calculate results for the configured measure. Select **Save and close** if you want to keep the current configuration and run the measure later.
 
 1. Go to **Measures** to see the newly created measure in the list.
-
----

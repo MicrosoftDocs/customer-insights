@@ -1,13 +1,13 @@
 ---
 title: "Create measures from templates"
 description: "Define measures using templates for common use cases."
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.author: wameng
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-measure-template
@@ -47,7 +47,9 @@ Available measure templates:
 
 1. Review the required data and select **Get started** if you have all the data in place.
 
-1. In the **Edit name** pane, set the name for your measure and the output entity. 
+1. Select **Edit details** next to Measure name. Provide a name for the measure. Optionally, add [tags](work-with-tags-columns.md#manage-tags) to the measure.
+
+   :::image type="content" source="media/measures_edit_details.png" alt-text="Edit details dialog box.":::
 
 1. Select **Done**.
 

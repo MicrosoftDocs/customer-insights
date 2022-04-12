@@ -53,6 +53,8 @@
           href: audience-insights/create-environment.md
         - name: Explore audience insights
           href: audience-insights/home.md
+        - name: Work with tags and columns
+          href: audience-insights/work-with-tags-columns.md
         - name: Work with business accounts
           href: audience-insights/work-with-business-accounts.md
 
@@ -147,7 +149,7 @@
           href: audience-insights/measure-builder.md
         - name: Use a measure template
           href: audience-insights/measure-templates.md
-   
+             
     - name: Predictions
       items:
         - name: Predict data with the help of AI
@@ -210,6 +212,8 @@
               href: audience-insights/export-adobe-campaign-standard.md
             - name: Adobe Experience Platform
               href: audience-insights/export-adobe-experience-platform.md
+            - name: Braze
+              href: audience-insights/export-braze.md
             - name: Campaign Monitor
               href: audience-insights/export-campaign-monitor.md
             - name: Constant Contact
@@ -224,6 +228,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Iterable
+              href: audience-insights/export-iterable.md
             - name: Klaviyo
               href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
