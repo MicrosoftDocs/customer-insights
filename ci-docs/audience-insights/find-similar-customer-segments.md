@@ -42,9 +42,9 @@ This feature lets you find similar customers in your customer base using artific
 
 1. Choose if you want to include **All customers** or only customers in a **Specific existing segment** in your new segment.
 
-1. Exclude customers in your source segment by selecting the **Exclude everyone in source segment** checkbox.
-
 1. By default, the system suggests including only 20% of the target audience size in your output. Edit this threshold as needed. Increasing the threshold will reduce the precision.
+
+1. Include customers in your source segment by selecting the **Include members from source segment in addition to customers with similar attributes** checkbox.
 
 1. Select **Run** at the bottom of the page to start a binary classification task (a method of machine learning) which analyzes the dataset.
 
