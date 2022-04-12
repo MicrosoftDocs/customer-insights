@@ -85,7 +85,7 @@ landingContent:
             url: segments.md
           - text: Create measures
             url: measures.md
-          - text: List customer activities
+          - text: Define customer activities
             url: activities.md
       - linkListType: learn
         links: 
