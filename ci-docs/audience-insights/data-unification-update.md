@@ -32,7 +32,7 @@ searchScope:
 
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
-   - To merge your changes into the unified customer profile, see [Unify the customer profile](#unify-the-customer-profile).
+   - To unify the customer profile (with or without dependencies), see [Unify the customer profile](#unify-the-customer-profile).
    - To evaluate the quality of your matching conditions, see [Run matching conditions](#run-matching-conditions).
 
 ## Edit source fields
@@ -106,14 +106,6 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
 
-## Unify the customer profile
-
-To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
-
-To update the unified profile and all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
-
-[!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
-
 ## Run matching conditions
 
 1. From the **Data** > **Unify** page, select **Run matching conditions only**.
@@ -129,3 +121,11 @@ To update the unified profile and all dependencies, select **Unify customer prof
 1. To make changes, see [Manage deduplication rules](#manage-deduplication-rules) or [Manage match rules](#manage-match-rules).
 
 1. Run the match process again or [unify the customer profile](#unify-the-customer-profile).
+
+## Unify the customer profile
+
+To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+
+To update the unified profile and all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
+
+[!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
