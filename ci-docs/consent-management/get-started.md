@@ -1,7 +1,7 @@
 ---
 title: "Quickstart guide to consent management"
 description: "Follow these four steps to quickly set up consent management, import consent data, and configure consent data rules in Dynamics 365 Customer Insights."
-ms.date: 10/30/2021
+ms.date: 04/13/2022
 
 ms.subservice: consent-management
 ms.topic: how-to
@@ -40,3 +40,14 @@ After successfully importing consent data, [configure consent data rules](set-co
 ## Step 4: Apply consent rules to segments in audience insights
 
 The rules you created automatically sync with audience insights. [Activate default consent rules](../audience-insights/activate-consent.md) for segments in audience insights. You can now [export segments](../audience-insights/export-destinations.md) in audience insights with applied consent data rules.
+
+## Step 5: Review consent metrics on the home page
+
+The imported consent data and related rules are visualized on the **Home** page of the Consent Center. Charts inform you about the recent data imports and rules.
+
+- **Communication preferences breakdown** lists the communication channels for which you imported consent data. It visualizes the amount of profiles that have provided consent alongside of the profiles that have not provided consent for each communication channel.
+- **Consent rules breakdown** summarizes the consent preferences across all communication channels.
+- **Data use purpose breakdown** lists the purposes for using consent data and the aggregated consent preferences across all profiles.
+- **Subscription breakdown** informs about the consent preferences for data sources that import subscription data.
+
+The home page also provides a set of helpful links that point to relevant articles in the documentation.
