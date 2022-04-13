@@ -1,6 +1,6 @@
 ---
-title: "Review data unification"
-description: "Review and finalize the data unification steps and create unified customer profiles."
+title: "Review and create a unified profile"
+description: "Review and create a unified customer or account profile."
 ms.date: 04/11/2022
 
 ms.subservice: audience-insights
