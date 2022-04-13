@@ -25,7 +25,7 @@ searchScope:
 1. Choose the area you want to update:
    - [Source fields](#edit-source-fields)
    - [Duplicate records](#manage-deduplication-rules)
-   - [Matching conditions](#manage-match-rules)
+   - [Matching conditions](#manage-match-rules) (only available for multiple entities)
    - [Unified customer fields](merge-entities.md)
 
 1. After making your changes, choose your next option:
@@ -84,7 +84,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 ## Manage match rules
 
-You can reconfigure and fine-tune most of the match parameters. You cannot add or delete entities.
+Where two or more entities have been unified, you can reconfigure and fine-tune most of the match parameters. You cannot add or delete entities. Match rules do not apply to a single entity.
 
 1. Select **Edit** on the **Matching conditions** tile.
 
