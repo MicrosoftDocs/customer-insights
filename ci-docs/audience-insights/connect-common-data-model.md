@@ -59,13 +59,13 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 1. If you have an Azure resource or subscription connection and want to enable an Azure private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
 
-1. Enter the name of the **Container** that contains the model.json or manifest.json file to import data from, and select **Next**.
+1. Choose the name of the **Container** that contains the model.json or manifest.json file to import data from, and select **Next**.
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
 
-1. Navigate to the folder containing the model.json or manifest.cdm.json file.
+1. To create a new schema, go to [Create a new schema file](#create-a-new-schema-file).
 
-1. If you want to edit the entities in a JSON editing interface, select to the left of the json file name and then select **Edit schema**. Make changes and select **Save**.
+1. To use an existing schema, navigate to the folder containing the model.json or manifest.cdm.json file. You can search within a directory to find the file.
 
 1. Select the json file and select **Next**. A list of available entities displays.
 
@@ -74,6 +74,9 @@ This article provides information on how to ingest data from Azure Data Lake inc
 1. Select the entities you want to include.
 
    :::image type="content" source="media/deltalake_required.png" alt-text="Dialog box showing Required for Primary key":::
+
+   > [!TIP]
+   > To edit the entities in a JSON editing interface, select **Show more** > **Edit schema**. Make changes and select **Save**.
 
 1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
    1. Select **Required**. The **Edit entity** panel displays.
@@ -88,6 +91,43 @@ This article provides information on how to ingest data from Azure Data Lake inc
 1. To enable an incremental refresh, see [Configure an incremental refresh for Azure data lake and Databricks data sources](incremental-refresh-data-sources.md).
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
+
+### Create a new schema file
+
+1. Select **New data source schema**.
+
+1. Enter a name for the file and select **Save**.
+
+1. Select **New entity**. The New Entity panel displays.
+
+   :::image type="content" source="media/ADLS_new_entity_location.png" alt-text="Dialog box to create a new entity with Data files location highlighted.":::
+
+1. Enter the entity name and choose the **Data files location**.
+   - **Pattern**: Browse to the root folder for the pattern, select the pattern type, and enter the expression.
+   - **Location**: Browse to the entity file and select it.
+
+1. Select **Save**.
+
+1. Select **No attributes** to add the attributes, or select **generate the attributes**.
+
+   :::image type="content" source="media/ADLS_new_entity.png" alt-text="Dialog box to create a new entity with generate the attributes highlighted.":::
+
+1. Choose the **Primary key**.
+
+1. Select **X** to save and close the panel.
+
+1. To enable analytics and other capabilities, select **Attributes**. The Manage attributes page displays. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
+
+   :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
+
+1. To enable an incremental refresh, see [Configure an incremental refresh for Azure data lake and Databricks data sources](incremental-refresh-data-sources.md).
+
+1. Select **Include entities**.
+
+1. Continue to add entities, if applicable.
+
+1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
+
 
 ## Edit an Azure data lake storage data source
 
