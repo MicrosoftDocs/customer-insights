@@ -23,7 +23,9 @@ The **Home** page shows guides you through the configuration process for key fea
 
 ## Left side pane
 
-Use the left pane to navigate between different areas Customer Insights. If you work with business accounts and individual consumers, you can select your primary audience to set your focus accordingly. 
+Use the left pane to navigate between different areas Customer Insights. 
+
+If you work with business accounts and individual consumers, you can select your primary audience to set your focus accordingly. 
 
 ## Application header
 
@@ -39,15 +41,20 @@ Your profile picture opens the **Account manager** for your Microsoft 365 profil
 
 ## Getting started with Customer Insights section
 
+This sections contains cards that help you walk through the process of setting up your Customer Insights environment. 
 
+1. The **Add data** card assists you with your data import. Customer Insights supports [several options to bring in data about your customers](data-sources.md). Select **Add data sources** to get started.
+1. Once the initial data import successfully completes, you can use the **Unify data** card to harmonize the data and [create unified customer profiles](data-unification.md) from disparate sources. 
+1. With unified customer profiles in place, it's time to review the **Analyze data** options and get additional insights. Give it a try and create [business measures](measures.md) to track KPIs, [define segments](segments.md) to reach specific audiences, or [configure predictions](predictions-overview.md) with the help of AI.
+1. Now that your customer data is imported, unified, and neatly structured, you use our [various export destinations](export-destinations.md) to take action on the data. Select **Add connections** to connect your favorite services. For example, export the data to Dynamics 365 Marketing to create outbound marketing campaigns or build customer journeys. 
 
 ## Your customer insights section
 
-- **Recent segments** shows groups of customers based on demographic, behavioral, or transactional attributes that you've defined. [Creating segments](segments.md) helps you to group your customer base and better target your business activities.
+- **Segments** shows groups of customers based on demographic, behavioral, or transactional attributes that you've defined. [Creating segments](segments.md) helps you to group your customer base and better target your business activities.
 
-- **Recent measures** shows tiles with [key performance indicators (KPIs)](measures.md) that you've defined. For example, average likelihood of a customer to churn or the average online spend per customer.
+- **Business measures** shows tiles with [key performance indicators (KPIs)](measures.md) that you've defined. For example, average likelihood of a customer to churn or the average online spend per customer.
 
-- **Recent enrichments** lists results of the enrichment runs that completed recently. [Enrichments](enrichment-hub.md) add information about your customer base. For example, by understanding the interests and brands that they have affinity for.
+- **Enrichments** lists results of the enrichment runs that completed recently. [Enrichments](enrichment-hub.md) add information about your customer base. For example, by understanding the interests and brands that they have affinity for.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
