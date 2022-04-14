@@ -1,7 +1,7 @@
 ---
 title: "Manage users in the consent management capability"
 description: "All users in an org that owns consent management can get access to the service. Admins add users and assign them the required permissions in audience insights."
-ms.date: 03/31/2022
+ms.date: 04/13/2022
 
 ms.subservice: consent-management
 ms.topic: how-to
@@ -22,7 +22,7 @@ Currently, all administrators of audience insights have access to the consent ma
 ## Roles
 
 - Reader
-    - Is a view-only role that can see which consent data is imported and how the consent rules are defined. 
+    - Is a view-only role that can see which consent data is imported. 
 
 - Contributor
     - Can configure import of consent data.
@@ -47,7 +47,6 @@ Currently, all administrators of audience insights have access to the consent ma
 1. Select the user you want to remove in the list.
 1. Select **More options (...)** and choose **Remove user**
 1. Confirm the removal to revoke access to the users.
- <!-- guess-->
 
 ## Change roles
 
