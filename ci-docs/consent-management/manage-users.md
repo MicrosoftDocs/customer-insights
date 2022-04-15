@@ -15,14 +15,12 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-The [consent management capability](overview.md) is available on a subscription basis. All users in an organization that owns consent management can get access to the service. 
-
-Currently, all administrators of audience insights have access to the consent management capability. They can add and remove other users and assign them the required permissions.
+All administrators of audience insights have access to the consent management capability. They can add and remove other users and assign them the required permissions.
 
 ## Roles
 
 - Reader
-    - Is a view-only role that can see which consent data is imported. 
+    - Is a view-only role that can see which consent data is imported and its associated summary analytics on the home page.
 
 - Contributor
     - Can configure import of consent data.
