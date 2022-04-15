@@ -30,7 +30,7 @@ All administrators of audience insights have access to the consent management ca
     - Has all permissions of the Contributor role.
     - Can set system settings.
     - Can manage users and permissions.
-    - The first admin who enables the consent management capability in Customer Insights gets the Admin (Owner) role. This users can't be removed from the system.
+    - The first admin who enables the consent management capability in Customer Insights gets the Admin (Owner) role. This user can't be removed from the system.
 
 ## Add users
 
