@@ -42,11 +42,11 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 > - Choose the entity with the most complete and reliable profile data about your customers as the primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
+1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **eCommerceContacts** as the primary entity and **loyCustomers** as the second entity.
 
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
   
-The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
+The primary entity *eCommerceContacts* is matched with the next entity *loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
 :::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the entities." lightbox="media/m3_match.png":::
 
