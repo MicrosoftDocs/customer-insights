@@ -69,7 +69,7 @@ This article provides information on how to ingest data from Azure Data Lake inc
 
 1. Select the json file and select **Next**. A list of available entities displays.
 
-   :::image type="content" source="media/review-entities.png" alt-text="Dialog box to select entities":::
+   :::image type="content" source="media/review-entities.png" alt-text="Dialog box of a list of entities to select":::
 
 1. Select the entities you want to include.
 
@@ -82,13 +82,16 @@ This article provides information on how to ingest data from Azure Data Lake inc
    1. Select **Required**. The **Edit entity** panel displays.
    1. Choose the **Primary key**.
    1. Optionally, change the partition pattern.
+   1. To enable an incremental refresh, see [Configure an incremental refresh for Azure data lake and Databricks data sources](incremental-refresh-data-sources.md).
    1. Select **X** to save and close the panel.
 
-1. To enable analytics and other capabilities, select **Attributes**. The Manage attributes page displays. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
+1. Select **Attributes**. The Manage attributes page displays.
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
-1. To enable an incremental refresh, see [Configure an incremental refresh for Azure data lake and Databricks data sources](incremental-refresh-data-sources.md).
+   1. Create new attributes, edit, or delete existing attributes. You can change the name, the data format, or add a semantic type.
+   1. To enable analytics and other capabilities, select **Data profiling** for the whole entity or for specific attributes. By default, no entity is enabled for data profiling.
+   1. Select **Done**.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
@@ -156,7 +159,6 @@ You can update the *Connect to storage account using* option from an account key
    - Navigate to a different model.json or manifest.json file with a different set of entities from the container.
    - To add additional entities to ingest, select **New entity**.
    - To remove any already selected entities if there are no dependencies, select the entity and **Delete**.
-
       > [!IMPORTANT]
       > If there are dependencies on the existing model.json or manifest.json file and the set of entities, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
    - To edit an entity, change the [incremental refresh](incremental-refresh-data-sources.md), or run a one-time full refresh, select **Edit**.
