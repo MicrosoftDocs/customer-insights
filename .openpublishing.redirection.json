@@ -775,6 +775,91 @@
       "source_path": "ci-docs/audience-insights/machine-learning-studio-experiments.md",
       "redirect_url": "/dynamics365/customer-insights/audience-insights/custom-models",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/sample-guide-predict-clv.md",
+      "redirect_url": "/dynamics365/customer-insights/sample-guide-predict-clv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/sample-guide-predict-product-recommendation.md",
+      "redirect_url": "/dynamics365/customer-insights/sample-guide-predict-product-recommendation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/sample-guide-predict-subscription-churn.md",
+      "redirect_url": "/dynamics365/customer-insights/sample-guide-predict-subscription-churn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/sample-guide-predict-transactional-churn.md",
+      "redirect_url": "/dynamics365/customer-insights/sample-guide-predict-transactional-churn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/search-filter-index.md",
+      "redirect_url": "/dynamics365/customer-insights/search-filter-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/segment-builder.md",
+      "redirect_url": "/dynamics365/customer-insights/segment-builder",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/segment-insights.md",
+      "redirect_url": "/dynamics365/customer-insights/segment-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/segments.md",
+      "redirect_url": "/dynamics365/customer-insights/segments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/semantic-mappings.md",
+      "redirect_url": "/dynamics365/customer-insights/semantic-mappings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/sentiment-analysis.md",
+      "redirect_url": "/dynamics365/customer-insights/sentiment-analysis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/suggested-segments-activity.md",
+      "redirect_url": "/dynamics365/customer-insights/suggested-segments-activity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/suggested-segments.md",
+      "redirect_url": "/dynamics365/customer-insights/suggested-segments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/system.md",
+      "redirect_url": "/dynamics365/customer-insights/system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/use-azure-key-vault.md",
+      "redirect_url": "/dynamics365/customer-insights/use-azure-key-vault",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/whats-new-audience-insights.md",
+      "redirect_url": "/dynamics365/customer-insights/whats-new-customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/work-with-business-accounts.md",
+      "redirect_url": "/dynamics365/customer-insights/work-with-business-accounts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/work-with-tags-columns.md",
+      "redirect_url": "/dynamics365/customer-insights/work-with-tags-columns",
+      "redirect_document_id": false
     }
   ]
 }
