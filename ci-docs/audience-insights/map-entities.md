@@ -31,7 +31,7 @@ The first step in customer or account unification is selecting the entities and 
 
 1. Select the **Entities** to combine into a customer or account profile.
 
-1. For each selected entity, identify the columns you want to combine and reconcile. These columns are called *Attributes*. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the checkbox on the entity level. You can search on keywords across all attributes and entities to select the required attributes you want to map.
+1. For each selected entity, identify the fields you want to combine and reconcile. These fields are called *Attributes*. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the checkbox on the entity level. You can search on keywords across all attributes and entities to select the required attributes you want to map.
 
    :::image type="content" source="media/m3_select_entities.png" alt-text="Screenshot of selected entities and attributes.":::
 

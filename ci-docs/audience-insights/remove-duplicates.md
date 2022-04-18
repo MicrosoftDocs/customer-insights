@@ -17,7 +17,7 @@ searchScope:
 
 # Remove duplicates before unifying data
 
-This step in customer or account unification sets up rules for handling duplicate records when matching entities. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. This step is optional. If rules are not configured, system-defined rules are applied.
+This step in customer or account unification sets up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. This step is optional. If rules are not configured, system-defined rules are applied.
 
 ## Include enriched entities (preview)
 
@@ -35,7 +35,7 @@ If you enriched entities on the data source level to help improve your unificati
 
    :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Duplicate records pages with Show more highlighted":::
 
-   1. In the **Create rule** pane, enter the following information:
+   1. In the **Add rule** pane, enter the following information:
       - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
         - **Normalize**: Select from following normalization options for the selected attributes.
         - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
@@ -85,7 +85,7 @@ The deduplication process creates a new entity for every entity from the match p
 A deduplication output entity contains the following information:
 
 - IDs / Keys
-  - Primary key field and its alternate IDs field. Alternate IDs field consists of all the alternate IDs identified for a record.
+  - Primary key and Alternate ID fields. Alternate ID field consists of all the alternate IDs identified for a record.
   - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.

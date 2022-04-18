@@ -46,7 +46,7 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
   
-The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
+The primary entity *eCommerceContacts* is matched with the next entity *loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
 :::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the entities." lightbox="media/m3_match.png":::
 
