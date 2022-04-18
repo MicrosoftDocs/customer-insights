@@ -58,9 +58,9 @@ The warning next to an entity name means that no match rule is defined for a mat
 
 1. Select **Add rule** for an entity to define match rules.
 
-1. In the **Create rule** pane, configure the conditions for the rule.
+1. In the **Add rule** pane, configure the conditions for the rule.
 
-   :::image type="content" source="media/m3_create_rule.png" alt-text="Screenshot of Create rule pane.":::
+   :::image type="content" source="media/m3_add_rule.png" alt-text="Screenshot of Create rule pane.":::
 
    - **Select Entity/Field (first row)**: Choose a related entity and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
 
