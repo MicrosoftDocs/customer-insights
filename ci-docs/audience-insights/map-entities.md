@@ -1,7 +1,7 @@
 ---
 title: "Select source fields for data unification"
 description: "The first step in the unification process is selecting entities, attributes, primary keys, and semantic types to map data to the unified customer profile."
-ms.date: 04/08/2022
+ms.date: 04/18/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial

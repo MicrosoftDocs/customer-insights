@@ -1,7 +1,7 @@
 ---
 title: "Remove duplicates before unifying data"
 description: "The 2nd step in the unification process is selecting which record to keep when duplicates are found"
-ms.date: 04/08/2022
+ms.date: 04/18/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -49,7 +49,7 @@ If you enriched entities on the data source level to help improve your unificati
         - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
       - **Name**: Name for the rule.
 
-      :::image type="content" source="media/m3_duplicates_add.png" alt-text="Screenshot of Create rule pane for removing duplicates.":::
+      :::image type="content" source="media/m3_duplicates_add.png" alt-text="Screenshot of Add rule pane for removing duplicates.":::
 
    1. Optionally, select **Add** > **Add condition** to add more conditions to the rule.
 

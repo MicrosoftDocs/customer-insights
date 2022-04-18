@@ -1,7 +1,7 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 04/07/2022
+ms.date: 04/18/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -60,7 +60,7 @@ The warning next to an entity name means that no match rule is defined for a mat
 
 1. In the **Add rule** pane, configure the conditions for the rule.
 
-   :::image type="content" source="media/m3_add_rule.png" alt-text="Screenshot of Create rule pane.":::
+   :::image type="content" source="media/m3_add_rule.png" alt-text="Screenshot of Add rule pane.":::
 
    - **Select Entity/Field (first row)**: Choose a related entity and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
 

@@ -1,7 +1,7 @@
 ---
 title: "Update the unified customer profile"
 description: "Update duplicate rules, match rules, or unified fields in the unified customer profile."
-ms.date: 04/11/2022
+ms.date: 04/18/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -22,11 +22,11 @@ searchScope:
 
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
 
-1. Choose the area you want to update:
-   - [Source fields](#edit-source-fields)
-   - [Duplicate records](#manage-deduplication-rules)
-   - [Matching conditions](#manage-match-rules)
-   - [Unified customer fields](merge-entities.md)
+1. Choose what you want to update:
+   - [Source fields](#edit-source-fields) to add entities or attributes or change attribute types.
+   - [Duplicate records](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
+   - [Matching conditions](#manage-match-rules) to update matching rules.
+   - [Unified customer fields](#manage-unified-fields) to combine or exclude fields.
 
 1. After making your changes, choose your next option:
 
@@ -106,6 +106,16 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
 
+## Manage unified fields
+
+1. Select **Edit** on the **Unified customer fields** tile.
+
+1. Review the combined and excluded fields. Make any changes as needed. See [Unify customer fields](merge-entities.md) for more information.
+
+1. Click **Save and close**.
+
+1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+
 ## Run matching conditions
 
 1. From the **Data** > **Unify** page, select **Run matching conditions only**.
@@ -120,9 +130,9 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. To make changes, see [Manage deduplication rules](#manage-deduplication-rules) or [Manage match rules](#manage-match-rules).
 
-1. Run the match process again or [unify the customer profile](#unify-the-customer-profile).
+1. Run the match process again or [update the customer profile](#update-the-customer-profile).
 
-## Unify the customer profile
+## Update the customer profile
 
 To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
