@@ -171,23 +171,4 @@ Configuring a stable customer ID enables you to avoid that behavior.
 
 1. Select **Done**.
 
-## Group profiles into households or clusters
-
-As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
-
-1. Select **Advanced** > **Create cluster**.
-
-   :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
-
-1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
-
-1. Provide a name for the cluster and select **Done**.
-
-1. Select the **Clusters** tab to find the cluster you created.
-
-1. Specify the rules and conditions to define your cluster.
-
-1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* entity.
-
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

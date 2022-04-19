@@ -25,6 +25,9 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. On the **Duplicate records** page, select **Use enriched entities** at the top of the page.
 
+   > [!TIP]
+   > **Use enriched entities** only displays if the entity was enriched on the **Data sources** page.
+
 1. From the **Use enriched entities** pane, choose one or more enriched entities.
 
 1. Select **Done**.
