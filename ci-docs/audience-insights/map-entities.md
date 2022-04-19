@@ -17,7 +17,7 @@ searchScope:
 
 # Select source fields for data unification
 
-The first step in customer or account unification is selecting the entities and attributes within your datasets that you want to unify. Select entities that contain customer-related details such as name, address, and email.
+The first step in customer or account unification is selecting the entities and fields within your datasets that you want to unify. Select entities that contain customer-related details such as name, address, phone number, and email.
 
 ## Select entities and fields
 
@@ -52,7 +52,7 @@ For each entity, perform the following steps.
 1. For each attribute, choose a semantic **Type** that best describes that attribute, such as name, city, or email address.
 
    > [!NOTE]
-   > One field should map to the semantic type Person.FullName to populate the customer name in customer card. Otherwise, the customer cards will appear nameless.
+   > One field should map to the semantic type Person.FullName to populate the customer name in the customer card. Otherwise, the customer cards will appear nameless.
 
    1. To change an attribute type identified by the system, add a custom semantic type. Select the **Type** field for an attribute, and enter your custom semantic type name.
 

@@ -32,7 +32,7 @@ searchScope:
 
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
-   - To unify the customer profile (with or without dependencies), see [Unify the customer profile](#unify-the-customer-profile).
+   - To update the customer profile (with or without dependencies), see [Run updates the customer profile](#run-updates-to-the-unified-customer-profile).
    - To evaluate the quality of your matching conditions, see [Run matching conditions](#run-matching-conditions).
 
 ## Edit source fields
@@ -43,9 +43,9 @@ You can't remove an attribute or an entity if they've already been unified.
 
    :::image type="content" source="media/m3_source_edit.png" alt-text="Screenshot of Source fields page showing number of primary keys, mapped and unmapped fields":::
 
-   The number of primary keys and mapped and unmapped fields display on the top right of the page.
+   The number of mapped and unmapped fields display.
 
-1. Select **Edit entities and fields** to add other attributes or entities. Use the search or scroll to find and select your attributes and entities of interest. Select **Apply**.
+1. Select **Select entities and fields** to add other attributes or entities. Use the search or scroll to find and select your attributes and entities of interest. Select **Apply**.
 
 1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off.
 
@@ -59,7 +59,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
    :::image type="content" source="media/m3_duplicates_edit.png" alt-text="Screenshot of Duplicate records page showing number of duplicated records":::
 
-   The number of duplicate records found displays in the top right of the page. The **Records deduplicated** column shows which entities had duplicate records.
+   The number of duplicate records found displays. The **Records deduplicated** column shows which entities had duplicate records.
 
 1. To change merge preferences, select the entity.
    1. Select **Edit merge preferences** and change the **Record to keep** option.
@@ -110,7 +110,9 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Select **Edit** on the **Unified customer fields** tile.
 
-1. Review the combined and excluded fields. Make any changes as needed. See [Unify customer fields](merge-entities.md) for more information.
+    :::image type="content" source="media/m3_merge_edit" alt-text="Screenshot of Unified customer fields":::
+
+1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or clusters. See [Unify customer fields](merge-entities.md) for more information.
 
 1. Click **Save and close**.
 
@@ -130,9 +132,9 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. To make changes, see [Manage deduplication rules](#manage-deduplication-rules) or [Manage match rules](#manage-match-rules).
 
-1. Run the match process again or [update the customer profile](#update-the-customer-profile).
+1. Run the match process again or [run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
 
-## Update the customer profile
+## Run updates to the unified customer profile
 
 To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
