@@ -28,7 +28,7 @@ Learn more: [Use Customer Insights profiles and segments in real-time marketing]
 
 ## Use unified segments with outbound customer journeys
 
-Customer Insights allows you to refine data from many sources and combine it into aggregated customer segments. By connecting Customer Insights with outbound marketing, these segments will automatically appear *and* refresh automatically in the customer journey designer.
+Customer Insights allows you to refine data from many sources and combine it into aggregated customer segments. By [connecting Customer Insights with outbound marketing](export-dynamics365-marketing.md), these segments will automatically appear *and* refresh automatically in the customer journey designer.
 
 Learn more: [Use segments from Dynamics 365 Customer Insights with Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
 
