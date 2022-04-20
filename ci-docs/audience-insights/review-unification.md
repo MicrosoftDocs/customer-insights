@@ -1,7 +1,7 @@
 ---
 title: "Review data unification"
 description: "Review and finalize the data unification steps and create unified customer profiles."
-ms.date: 03/11/2022
+ms.date: 04/18/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -18,15 +18,17 @@ searchScope:
 
 # Review the data unification steps
 
+This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified customer or account profile.
+
 :::image type="content" source="media/m3_review.png" alt-text="Screenshot of Review and create customer profiles.":::
 
-Select **Edit** on any of the data unification steps to review and make any changes before creating the unified customer or account profile.
+1. Select **Edit** on any of the data unification steps to review and make any changes.
 
-If you are satisfied with your selections, select **Create customer profiles**. The **Unify** page displays while the unified customer profile is being created. The unification algorithm takes some time to complete and you can't change the configuration until it completes.
+1. If you are satisfied with your selections, select **Create customer profiles**. The **Unify** page displays while the unified customer profile is being created. The unification algorithm takes some time to complete and you can't change the configuration until it completes.
 
-[!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+   [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
 
-The unified customer profile entity, called **Customers**, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+When the unification process completes, the unified customer profile entity, called **Customers**, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
 
 To make changes to the unified customer profile entity, see [Update the unified customer profile](data-unification-update.md).
 

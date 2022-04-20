@@ -1,4 +1,4 @@
-After ingesting the data, begin the data unification process to create a unified customer profile. For more information, see [Data unification](data-unification.md).
+After ingesting the data, begin the data unification process to create a unified customer profile. For more information, see [Data unification](/ci-docs/audience-insights/data-unification.md).
 
 ### Select source fields
 

@@ -1,12 +1,12 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 03/09/2022
+ms.date: 04/18/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: v-wendysmith
+ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -18,7 +18,7 @@ searchScope:
 
 # Match conditions
 
-This step in customer or account unification defines the match order and rules for cross-entity matching.
+This step in customer or account unification defines the match order and rules for cross-entity matching. This step requires two or more entities.
 
 ## Include enriched entities (preview)
 
@@ -39,14 +39,14 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 >
 > Important considerations:
 >
-> - Choose the entity with the most complete and reliable profile data about your customers as primary entity.
+> - Choose the entity with the most complete and reliable profile data about your customers as the primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
 
-1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **eCommerce:eCommerceContacts** as the primary entity and **LoyaltyScheme:loyCustomers** as the second entity.
+1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **eCommerceContacts** as the primary entity and **loyCustomers** as the second entity.
 
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
   
-The primary entity *eCommerce:eCommerceContacts* is matched with the next entity *LoyaltyScheme:loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
+The primary entity *eCommerceContacts* is matched with the next entity *loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
 :::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the entities." lightbox="media/m3_match.png":::
 
@@ -58,9 +58,9 @@ The warning next to an entity name means that no match rule is defined for a mat
 
 1. Select **Add rule** for an entity to define match rules.
 
-1. In the **Create rule** pane, configure the conditions for the rule.
+1. In the **Add rule** pane, configure the conditions for the rule.
 
-   :::image type="content" source="media/m3_create_rule.png" alt-text="Screenshot of Create rule pane.":::
+   :::image type="content" source="media/m3_add_rule.png" alt-text="Screenshot of Add rule pane.":::
 
    - **Select Entity/Field (first row)**: Choose a related entity and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
 
@@ -88,10 +88,6 @@ The warning next to an entity name means that no match rule is defined for a mat
 
 1. Optionally, [add more rules](#add-rules-to-a-match-pair).
 
-> [!div class="nextstepaction"]
-> [Next step: Unify fields](merge-entities.md)
-
-
 ### Add rules to a match pair
 
 Match rules represent sets of conditions. To match entities by conditions based on multiple attributes, add more rules.
@@ -102,6 +98,9 @@ Match rules represent sets of conditions. To match entities by conditions based 
 
 > [!NOTE]
 > The order of rules matters. The matching algorithm tries to match on the basis of your first rule and continues to the second rule only if no matches were identified with the first rule.
+
+> [!div class="nextstepaction"]
+> [Next step: Unify fields](merge-entities.md)
 
 ## Advanced options
 
@@ -130,6 +129,8 @@ You can specify conditions that override the default match logic. There are four
 
 1. Select **Custom**.
 
+   :::image type="content" source="media/m3_match_custom.png" alt-text="Custom button":::
+
 1. Choose the custom match option from the **Custom type** dropdown and select **Download template**. You need a separate template for each match option.
 
 1. Open the downloaded template file and fill in the details. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
@@ -153,6 +154,11 @@ You can specify conditions that override the default match logic. There are four
 1. Applying the custom match depends on the match option you want to use.
 
    - For **Always match** or **Never match**, proceed to the next step.
-   - For **Custom bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the Normalizations dropdown, choose the **Custom bypass** or **Alias mapping** option and select **Done**.
+   - For **Bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the Normalizations dropdown, choose the **Custom bypass** or **Alias mapping** option and select **Done**.
+
+1. Select **Done** on the **Custom** pane to apply the custom match configuration.
+
+> [!div class="nextstepaction"]
+> [Next step: Unify fields](merge-entities.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

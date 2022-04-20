@@ -1,12 +1,12 @@
 ---
 title: "Update the unified customer profile"
 description: "Update duplicate rules, match rules, or unified fields in the unified customer profile."
-ms.date: 03/28/2022
+ms.date: 04/18/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: v-wendysmith
+ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -22,19 +22,18 @@ searchScope:
 
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
 
-1. Choose the area you want to update:
-   - [Source fields](#edit-source-fields)
-   - [Duplicate records](#manage-deduplication-rules)
-   - [Matching conditions](#manage-match-rules)
-   - [Unified customer fields](merge-entities.md)
+1. Choose what you want to update:
+   - [Source fields](#edit-source-fields) to add entities or attributes or change attribute types.
+   - [Duplicate records](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
+   - [Matching conditions](#manage-match-rules) to update matching rules.
+   - [Unified customer fields](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
 
-1. After making your changes, choose whether to match, merge, or match and merge your changes.
+1. After making your changes, choose your next option:
 
-   - To evaluate the quality of your matching conditions, [run the match process](#run-the-match-process).
+   :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
-   - To merge your changes, [run the merge process](#run-the-merge-process).
-
-   - To run both match and merge processes, select **Run all** at the top left of the page.
+   - To update the unified customer profile (with or without dependencies), see [Run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
+   - To evaluate the quality of your matching conditions, see [Run matching conditions](#run-matching-conditions).
 
 ## Edit source fields
 
@@ -44,9 +43,9 @@ You can't remove an attribute or an entity if they've already been unified.
 
    :::image type="content" source="media/m3_source_edit.png" alt-text="Screenshot of Source fields page showing number of primary keys, mapped and unmapped fields":::
 
-   The number of primary keys and mapped and unmapped fields display on the top right of the page.
+   The number of mapped and unmapped fields display.
 
-1. Select **Edit entities and fields** to add other attributes or entities. Use the search or scroll to find and select your attributes and entities of interest. Select **Apply**.
+1. Select **Select entities and fields** to add other attributes or entities. Use the search or scroll to find and select your attributes and entities of interest. Select **Apply**.
 
 1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off.
 
@@ -60,7 +59,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
    :::image type="content" source="media/m3_duplicates_edit.png" alt-text="Screenshot of Duplicate records page showing number of duplicated records":::
 
-   The number of duplicate records found displays in the top right of the page. The **Records deduplicated** column shows which entities had duplicate records.
+   The number of duplicate records found displays. The **Records deduplicated** column shows which entities had duplicate records.
 
 1. To change merge preferences, select the entity.
    1. Select **Edit merge preferences** and change the **Record to keep** option.
@@ -107,11 +106,41 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
 
-## Run the match process
+## Manage unified fields
 
-1. From the **Data** > **Unify** page, select **Run Match**.
+1. Select **Edit** on the **Unified customer fields** tile.
 
-   :::image type="content" source="media/m3_run_match_merge.png" alt-text="Cropped screenshot of the Run merge selection.":::
+    :::image type="content" source="media/m3_merge_edit.png" alt-text="Screenshot of Unified customer fields":::
+
+1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key. See [Unify customer fields](merge-entities.md) for more information.
+
+1. To group related profiles into a cluster, go to [Group profiles into households or clusters](#group-profiles-into-households-or-clusters).
+
+1. Click **Save and close**.
+
+1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+
+### Group profiles into households or clusters
+
+As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
+
+1. Select **Advanced** > **Create cluster**.
+
+   :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
+
+1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
+
+1. Provide a name for the cluster and select **Done**.
+
+1. Select the **Clusters** tab to find the cluster you created.
+
+1. Specify the rules and conditions to define your cluster.
+
+1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* entity.
+
+## Run matching conditions
+
+1. From the **Data** > **Unify** page, select **Run matching conditions only**.
 
    The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing**.
 
@@ -123,16 +152,12 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. To make changes, see [Manage deduplication rules](#manage-deduplication-rules) or [Manage match rules](#manage-match-rules).
 
-1. Run the match process again or proceed to run your merge.
+1. Run the match process again or [run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
 
-## Run the merge process
+## Run updates to the unified customer profile
 
-Merge takes your changes and merges them into the unified customer profile entity.
+To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
-:::image type="content" source="media/m3_run_match_merge.png" alt-text="Cropped screenshot of the Run merge selection.":::
-
-Choose **Run only Merge** if you only want to see the output reflected in the unified customer entity. Downstream processes will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
-
-Choose **Run Merge and downstream processes** to refresh the system with your changes. All processes, including enrichment, segments, and measures will rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
+To update the unified profile and all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
 
 [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]

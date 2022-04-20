@@ -1,12 +1,12 @@
 ---
 title: "Select source fields for data unification"
 description: "The first step in the unification process is selecting entities, attributes, primary keys, and semantic types to map data to the unified customer profile."
-ms.date: 03/08/2022
+ms.date: 04/18/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: v-wendysmith
+ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -17,23 +17,25 @@ searchScope:
 
 # Select source fields for customer or account unification
 
-The first step in customer or account unification is selecting the entities and attributes within your datasets that you want to unify. Select entities that contain customer profile related data such as name, address, and email.
+The first step in customer or account unification is selecting the entities and fields within your datasets that you want to unify. Select entities that contain customer-related details such as name, address, phone number, and email.
 
-## Select entities
+## Select entities and fields
 
 1. Go to **Data** > **Unify**.
 
-1. Select **Guide me**.
+   :::image type="content" source="media/m3_unify_land.png" alt-text="Screenshot of unify landing page with Guide me highlighted.":::
 
-1. Select **Select entities**. The **Edit fields** pane displays.
+1. Select **Get started**.
+
+1. On the **Source fields** page, select **Select entities and fields**. The **Select entities and fields** pane displays.
 
 1. Select the **Entities** to combine into a customer or account profile.
 
-1. For each entity, identify the columns you want to combine and reconcile. These columns are called *Attributes*. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the checkbox on the entity level. You can search on keywords across all attributes and entities to select the required attributes you want to map.
+1. For each selected entity, identify the fields you want to combine and reconcile. These fields are called *Attributes*. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the checkbox on the entity level. You can search on keywords across all attributes and entities to select the required attributes you want to map.
 
    :::image type="content" source="media/m3_select_entities.png" alt-text="Screenshot of selected entities and attributes.":::
 
-   In this example, we're adding the **eCommerceContacts** and **loyCustomers** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
+   In this example, we're adding the **Contacts** and **CustomerLoyalty** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
 
 1. Select **Apply** to confirm your selections. The selected entities and attributes display.
 
@@ -50,7 +52,7 @@ For each entity, perform the following steps.
 1. For each attribute, choose a semantic **Type** that best describes that attribute, such as name, city, or email address.
 
    > [!NOTE]
-   > One field should map to the semantic type Person.FullName to populate the customer name in customer card. Otherwise, the customer cards will appear nameless.
+   > One field should map to the semantic type Person.FullName to populate the customer name in the customer card. Otherwise, the customer cards will appear nameless.
 
    1. To change an attribute type identified by the system, add a custom semantic type. Select the **Type** field for an attribute, and enter your custom semantic type name.
 
@@ -60,7 +62,7 @@ For each entity, perform the following steps.
 
    1. For an organization (preview) attribute, enter "Organization.Name" in the **Type** field.
 
-1. For attributes where a semantic type is automatically identified, review these attributes and types as they'll be used to combine your entities. These attributes are listed under **Review mapped fields**.
+1. For attributes where a semantic type is automatically identified, review these attributes and types as they'll be used to combine your entities. These attributes are listed under **Review mapped fields**. Ensure the types you chose are consistent across all the selected entities.
 
 1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, or enter your custom attribute-type name. These attributes are listed under **Define the data in the unmapped fields**.
 

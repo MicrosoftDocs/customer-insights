@@ -7,7 +7,7 @@ ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: overview
 author: v-wendysmith
-ms.author: adkuppa
+ms.author: mukeshpo
 manager: shellyha
 
 searchScope: 
@@ -21,10 +21,10 @@ After [setting up the data sources](data-sources.md), you can unify the data. Da
 
 Customer or account unification is mandatory and performed in the following order:
 
-1. [Select source fields](map-entities.md) which map entities and attributes to include in a unified customer or account profile.
+1. [Select source fields](map-entities.md) which map entities and fields to include in a unified customer or account profile.
 1. [Remove duplicate records](remove-duplicates.md) (optional).
 1. Create [match rules and conditions](match-entities.md) for cross-entity matching.
-1. Reconcile [unified customer fields](merge-entities.md) to merge the data.
+1. Combine [unified customer fields](merge-entities.md) to merge the data.
 1. [Review](review-unification.md) and create the unified profile.
 
 For B-to-B, after account unification, [contact unification](data-unification-contacts.md) occurs.
