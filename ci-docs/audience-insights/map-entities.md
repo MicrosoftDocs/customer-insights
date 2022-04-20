@@ -23,9 +23,9 @@ The first step in customer or account unification is selecting the entities and 
 
 1. Go to **Data** > **Unify**.
 
-1. Select **Get started**.
-
    :::image type="content" source="media/m3_unify_land.png" alt-text="Screenshot of unify landing page with Guide me highlighted.":::
+
+1. Select **Get started**.
 
 1. On the **Source fields** page, select **Select entities and fields**. The **Select entities and fields** pane displays.
 

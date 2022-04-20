@@ -18,7 +18,7 @@ searchScope:
 
 # Unify customer fields
 
-This step in the unification process enables you to choose and exclude attributes to merge within your unified customer profile entity. You can also create stable, unique Customer IDs and group related profiles into a cluster.
+This step in the unification process enables you to choose and exclude attributes to merge within your unified customer profile entity. You can also create stable, unique Customer IDs.
 
 :::image type="content" source="media/m3_unify.png" alt-text="Merge page in the data unification process showing table with merged fields that define the unified customer profile.":::
 
@@ -40,9 +40,7 @@ This step in the unification process enables you to choose and exclude attribute
       - [Exclude](#exclude-fields)
       - [Move up or down](#change-the-order-of-fields)
 
-1. Optionally, [generate or edit the CustomerID configuration](#configure-customer-id-generation).
-
-1. Optionally, [create or edit a cluster](#group-profiles-into-households-or-clusters).
+1. Optionally, [generate the CustomerID configuration](#configure-customer-id-generation).
 
 > [!div class="nextstepaction"]
 > [Next step: Review unification](review-unification.md)
@@ -170,5 +168,8 @@ Configuring a stable customer ID enables you to avoid that behavior.
 1. Select up to five fields that will comprise a unique customer ID and are more stable. Records that don’t match your configuration use a system-configured ID instead.  
 
 1. Select **Done**.
+
+> [!div class="nextstepaction"]
+> [Next step: Review unification](review-unification.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

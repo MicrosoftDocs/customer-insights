@@ -32,7 +32,7 @@ searchScope:
 
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
-   - To update the customer profile (with or without dependencies), see [Run updates the customer profile](#run-updates-to-the-unified-customer-profile).
+   - To update the unified customer profile (with or without dependencies), see [Run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
    - To evaluate the quality of your matching conditions, see [Run matching conditions](#run-matching-conditions).
 
 ## Edit source fields
