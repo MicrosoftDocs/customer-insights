@@ -58,6 +58,7 @@
         - name: Work with business accounts
           href: audience-insights/work-with-business-accounts.md
         - name: Integrate with Dynamics 365 Marketing
+          href: /audience-insights/marketing-get-started.md
 
     - name: Data sources
       items:
