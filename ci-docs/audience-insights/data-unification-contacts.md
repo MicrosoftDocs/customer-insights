@@ -17,26 +17,33 @@ searchScope:
 
 # Create a unified view of your business contacts
 
-For business accounts (B-to-B), this process maps contact data from your data sources, removes duplicates, matches the data across accounts, sets up semantic mapping, and then creates a unified contact profile.
-
-> [!NOTE]
-> [Unify the accounts](map-entities.md) before unifying contacts.
+For business accounts (B-to-B), after [unifying the accounts](map-entities.md), unify the contacts. The contact unification process maps contact data from your data sources, removes duplicates, matches the data across accounts, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
 
 ## Select source fields for contact unification
 
-Select the entities and fields for your contact data sources. See [Select source fields](map-entities.md) for more information.
+1. Under **Unify contacts**, select **Get started**.
+
+1. Select the entities and fields for your contact data sources. See [Select source fields](map-entities.md) for more information.
+
+1. Select **Next**.
 
 ## Remove duplicates before unifying contacts
 
-Define deduplication rules for your selected entities. See [Remove duplicates](remove-duplicates.md) for more information.
+1. Define deduplication rules for your selected entities (optional). See [Remove duplicates](remove-duplicates.md) for more information.
+
+1. Select **Next**.
 
 ## Match conditions
 
-Define the match order and rules for cross-entity matching. See [Match conditions](match-entities.md) for more information.
+1. Define the match order and rules for cross-entity matching. See [Match conditions](match-entities.md) for more information.
+
+1. Select **Next**.
 
 ## Unify contact fields
 
-Combine and exclude contact fields. See [Unify customer fields](merge-entities.md) for more information.
+1. Combine and exclude contact fields. See [Unify customer fields](merge-entities.md) for more information.
+
+1. Select **Next**.
 
 ## Define the semantic fields for unified contacts
 
@@ -44,21 +51,24 @@ This step in the unification process enables you to map your unified contact fie
 
 1. Select the semantic type that maps to the unified field. Select **None** if a semantic type is not available.
 
+   :::image type="content" source="media/semantic_mapping.png" alt-text="Screenshot of Semantic fields page to define the semantic types.":::
+
 1. Select **Next**.
 
 ## Set the relationship between contacts and accounts
 
 This step in the unification process connects your contact data to its corresponding account data.
 
-Configure the details to connect your contact data to its corresponding account data.
-
 1. Select the contact entity and enter the following information:
 
    - **To account entity**: Choose the account entity associated with the contact.
    - **Foreign key**: Choose the attribute that connects your contact entity to the account.
 
-## Review the contact unification steps
+   :::image type="content" source="media/contact_relationship.png" alt-text="Screenshot of Relationship page to connect the contact and account entities.":::
 
+1. Select **Next**.
+
+## Review the contact unification steps
 
 This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified contact profile.
 
