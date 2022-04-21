@@ -1,6 +1,6 @@
 ---
-title: "Update the unified customer profile"
-description: "Update duplicate rules, match rules, or unified fields in the unified customer profile."
+title: "Update the unified contact profile"
+description: "Update duplicate rules, match rules, unified fields, semantic mapping, or relationships in the unified contact profile."
 ms.date: 04/18/2022
 
 ms.subservice: audience-insights
@@ -16,26 +16,25 @@ searchScope:
   - customerInsights
 ---
 
-# Update the unified customer profile
+# Update the unified contact profile
 
-1. Go to **Data** > **Unify**. Each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of entity attributes (fields) defined and **Duplicate records** shows the number of duplicate records found.
+1. Go to **Data** > **Unify**. Under **Unify contacts**, each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of entity attributes (fields) defined and **Duplicate records** shows the number of duplicate records found.
 
-   :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
-
-   > [!TIP]
-   > For business accounts, the Unify page displays unified accounts and unified contacts. To update a unified account profile, continue with the next step. To update a unified contact profile, go to [update a unified contact](data-unification-update-contacts.md).
+   :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified.":::
 
 1. Choose what you want to update:
    - [Source fields](#edit-source-fields) to add entities or attributes or change attribute types.
    - [Duplicate records](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
    - [Matching conditions](#manage-match-rules) to update matching rules.
    - [Unified customer fields](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
+   - Semantic mapping
+   - Relationship
 
 1. After making your changes, choose your next option:
 
-   :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
+   :::image type="content" source="media/b2b_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify contacts option open.":::
 
-   - To update the unified customer profile (with or without dependencies), see [Run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
+   - To update the unified contact profile (with or without dependencies), see [Run updates to the contact profile](#run-updates-to-the-unified-contact-profile).
    - To evaluate the quality of your matching conditions, see [Run matching conditions](#run-matching-conditions).
 
 ## Edit source fields
@@ -54,7 +53,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Select **Save and close**.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unified contact profile](#update-the-unified-contact-profile) to make additional changes.
 
 ## Manage deduplication rules
 
@@ -83,7 +82,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Click **Save and close**.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unified contact profile](#update-the-unified-contact-profile) to make additional changes.
 
 ## Manage match rules
 
@@ -107,7 +106,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
    - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more** > **Delete** on the rule.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unified contact profile](#update-the-unified-contact-profile) to make additional changes.
 
 ## Manage unified fields
 
@@ -121,17 +120,17 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Click **Save and close**.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unified contact profile](#update-the-unified-contact-profile) to make additional changes.
 
 ### Group profiles into households or clusters
 
-As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
+As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *ContactsCustomer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
 
 1. Select **Advanced** > **Create cluster**.
 
    :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
 
-1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
+1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *ContactsCustomer* entity, household is automatically selected.
 
 1. Provide a name for the cluster and select **Done**.
 
@@ -155,12 +154,12 @@ As part of the customer profile generation configuration process, you can define
 
 1. To make changes, see [Manage deduplication rules](#manage-deduplication-rules) or [Manage match rules](#manage-match-rules).
 
-1. Run the match process again or [run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
+1. Run the match process again or [run updates to the contact profile](#run-updates-to-the-unified-contact-profile).
 
-## Run updates to the unified customer profile
+## Run updates to the unified contact profile
 
-To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+To update the unified contact profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
-To update the unified profile and all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
+To update the unified profile and all dependencies, select **Unify profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the contact profiles reflect any changes you made.
 
 [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]

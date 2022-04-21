@@ -12,6 +12,8 @@ manager: shellyha
 
 searchScope: 
   - ci-map
+  - ci-match
+  - ci-merge
   - customerInsights
 ---
 

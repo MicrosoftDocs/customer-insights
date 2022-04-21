@@ -19,15 +19,38 @@ searchScope:
 
 After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. For individual consumers (B-to-C) where the data is centered around individuals, unification provides a unified view of your customers. For business accounts (B-to-B) where the data is centered around accounts, unification provides a unified view of your accounts and a unified view of your contacts.
 
-Customer or account unification is required and performed in the following order:
 
-1. [Select source fields](map-entities.md) which map entities and fields to include in a unified customer or account profile.
+# [Individual consumers (B-to-C)](#tab/b2c)
+
+Customer unification is required and performed in the following order:
+
+1. [Select source fields](map-entities.md) which map entities and fields to include in a unified customer profile.
 1. [Remove duplicate records](remove-duplicates.md) (optional).
 1. Create [match rules and conditions](match-entities.md) for cross-entity matching.
 1. Combine [unified customer fields](merge-entities.md) to merge the data.
 1. [Review](review-unification.md) and create the unified profile.
 
-For B-to-B, after account unification, perform [contact unification](data-unification-contacts.md).
+# [Business accounts (B-to-B)](#tab/b2b)
+
+Account unification is required and performed in the following order:
+
+1. [Select source fields](map-entities.md) which map entities and fields to include in a unified account profile.
+1. [Remove duplicate records](remove-duplicates.md) (optional).
+1. Create [match rules and conditions](match-entities.md) for cross-entity matching.
+1. Combine [unified customer fields](merge-entities.md) to merge the data.
+1. [Review](review-unification.md) and create the unified profile.
+
+After account unification, perform [contact unification](data-unification-contacts.md) which is performed in the following order:
+
+1. [Select source fields](map-entities.md) which map entities and fields to include in a unified contact profile.
+1. [Remove duplicate records](remove-duplicates.md) (optional).
+1. Create [match rules and conditions](match-entities.md) for cross-entity matching.
+1. Combine [unified customer fields](merge-entities.md) to merge the data.
+1. [Define the semantic fields](data-unification-contacts.md#define-the-semantic-fields-for-unified-contacts).
+1. [Set the relationship between contacts and accounts](data-unification-contacts.md#set-the-relationship-between-contacts-and-accounts).
+1. [Review](review-unification.md) and create the unified profile.
+
+---
 
 After completing data unification, you can optionally:
 
