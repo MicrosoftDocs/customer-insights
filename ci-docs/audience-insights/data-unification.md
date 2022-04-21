@@ -40,15 +40,7 @@ Account unification is required and performed in the following order:
 1. Combine [unified customer fields](merge-entities.md) to merge the data.
 1. [Review](review-unification.md) and create the unified profile.
 
-After account unification, perform [contact unification](data-unification-contacts.md) which is performed in the following order:
-
-1. [Select source fields](map-entities.md) which map entities and fields to include in a unified contact profile.
-1. [Remove duplicate records](remove-duplicates.md) (optional).
-1. Create [match rules and conditions](match-entities.md) for cross-entity matching.
-1. Combine [unified customer fields](merge-entities.md) to merge the data.
-1. [Define the semantic fields](data-unification-contacts.md#define-the-semantic-fields-for-unified-contacts).
-1. [Set the relationship between contacts and accounts](data-unification-contacts.md#set-the-relationship-between-contacts-and-accounts).
-1. [Review](review-unification.md) and create the unified profile.
+After account unification, perform [contact unification](data-unification-contacts.md):
 
 ---
 

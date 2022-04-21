@@ -95,6 +95,8 @@
           href: audience-insights/data-unification-contacts.md
         - name: Update the unified customer profile
           href: audience-insights/data-unification-update.md
+        - name: Update the unified contact profile
+          href: audience-insights/data-unification-update-contacts.md  
 
     - name: Data enrichment
       items:

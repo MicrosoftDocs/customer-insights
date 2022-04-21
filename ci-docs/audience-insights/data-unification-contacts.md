@@ -25,25 +25,25 @@ For business accounts (B-to-B), after [unifying the accounts](map-entities.md), 
 
 1. Under **Unify contacts**, select **Get started**.
 
-1. Select the entities and fields for your contact data sources. See [Select source fields](map-entities.md) for more information.
+1. [Select the entities and fields](map-entities.md) for your contact data sources.
 
 1. Select **Next**.
 
 ## Remove duplicates before unifying contacts
 
-1. Define deduplication rules for your selected entities (optional). See [Remove duplicates](remove-duplicates.md) for more information.
+1. [Define deduplication rules](remove-duplicates.md) for your selected entities (optional).
 
 1. Select **Next**.
 
 ## Match conditions
 
-1. Define the match order and rules for cross-entity matching. See [Match conditions](match-entities.md) for more information.
+1. [Define the match order and rules](match-entities.md) for cross-entity matching.
 
 1. Select **Next**.
 
 ## Unify contact fields
 
-1. Combine and exclude contact fields. See [Unify customer fields](merge-entities.md) for more information.
+1. [Combine and exclude contact fields](merge-entities.md).
 
 1. Select **Next**.
 
