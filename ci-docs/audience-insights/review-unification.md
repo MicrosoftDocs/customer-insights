@@ -1,7 +1,7 @@
 ---
 title: "Review data unification"
 description: "Review and finalize the data unification steps and create unified customer profiles."
-ms.date: 04/18/2022
+ms.date: 04/22/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -18,7 +18,7 @@ searchScope:
 
 # Review the data unification steps
 
-This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified customer or account profile.
+This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified profile.
 
 :::image type="content" source="media/m3_review.png" alt-text="Screenshot of Review and create customer profiles.":::
 
@@ -30,8 +30,10 @@ This last step in the unification process shows a summary of the steps in the pr
 
 When the unification process completes, the unified customer profile entity, called **Customers**, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
 
-To make changes to the unified customer profile entity, see [Update the unified customer profile](data-unification-update.md).
+When needed, [make changes to the unification settings](data-unification-update.md) and rerun the unified profile.
 
 ## Next Step
 
 Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

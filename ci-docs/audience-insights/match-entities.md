@@ -1,7 +1,8 @@
 ---
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
-ms.date: 04/18/2022
+recommendations: false
+ms.date: 04/22/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -18,7 +19,7 @@ searchScope:
 
 # Match conditions
 
-This step in customer or account unification defines the match order and rules for cross-entity matching. This step requires two or more entities.
+This step in unification defines the match order and rules for cross-entity matching. This step requires at least two entities.
 
 ## Include enriched entities (preview)
 
@@ -88,6 +89,9 @@ The warning next to an entity name means that no match rule is defined for a mat
 
 1. Optionally, [add more rules](#add-rules-to-a-match-pair).
 
+> [!div class="nextstepaction"]
+> [Next step: Unify fields](merge-entities.md)
+
 ### Add rules to a match pair
 
 Match rules represent sets of conditions. To match entities by conditions based on multiple attributes, add more rules.
@@ -99,14 +103,11 @@ Match rules represent sets of conditions. To match entities by conditions based 
 > [!NOTE]
 > The order of rules matters. The matching algorithm tries to match on the basis of your first rule and continues to the second rule only if no matches were identified with the first rule.
 
-> [!div class="nextstepaction"]
-> [Next step: Unify fields](merge-entities.md)
-
 ## Advanced options
 
 ### Add exceptions to a rule
 
-In most cases, the entity matching leads to unique user profiles with consolidated data. To dynamically address rare cases of false positives and false negatives, you can define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records, which fulfill the exception criteria.
+In most cases, the entity matching leads to unique customer profiles with consolidated data. To dynamically address rare cases of false positives and false negatives, you can define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records, which fulfill the exception criteria.
 
 For example, if your match rule combines last name, city, and date of birth, the system would identify twins with the same last name who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine aren’t the same.
 

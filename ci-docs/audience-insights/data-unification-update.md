@@ -1,7 +1,7 @@
 ---
-title: "Update the unified customer profile"
-description: "Update duplicate rules, match rules, or unified fields in the unified customer profile."
-ms.date: 04/18/2022
+title: "Update the unification settings"
+description: "Update duplicate rules, match rules, or unified fields in the unification settings."
+ms.date: 04/22/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -16,9 +16,13 @@ searchScope:
   - customerInsights
 ---
 
-# Update the unified customer profile
+# Update the unification settings
 
-1. Go to **Data** > **Unify**. Each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of entity attributes (fields) defined and **Duplicate records** shows the number of duplicate records found.
+After unification, the **Data** > **Unify** page shows the results of each step in the unification process. Each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of entity attributes (fields) defined and **Duplicate records** shows the number of duplicate records found.
+
+You can update the settings to add attributes, change your deduplication or matching rules, or change the unified fields.
+
+1. Go to **Data** > **Unify**.
 
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
 
@@ -51,7 +55,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Select **Save and close**.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
 
 ## Manage deduplication rules
 
@@ -80,7 +84,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Click **Save and close**.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
 
 ## Manage match rules
 
@@ -104,7 +108,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
    - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more** > **Delete** on the rule.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
 
 ## Manage unified fields
 
@@ -118,7 +122,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Click **Save and close**.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
 
 ### Group profiles into households or clusters
 

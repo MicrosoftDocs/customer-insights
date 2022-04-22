@@ -19,7 +19,7 @@ searchScope:
 
 After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. For individual consumers (B-to-C) where the data is centered around individuals, unification provides a unified view of your customers. For business accounts (B-to-B) where the data is centered around accounts, unification provides a unified view of your accounts.
 
-Data unification is mandatory and performed in the following order:
+Data unification is required and performed in the following order:
 
 1. [Select source fields](map-entities.md) which map entities and fields to include in a unified customer or account profile.
 1. [Remove duplicate records](remove-duplicates.md) (optional).

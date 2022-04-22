@@ -1,7 +1,8 @@
 ---
 title: "Remove duplicates before unifying data"
 description: "The 2nd step in the unification process is selecting which record to keep when duplicates are found"
-ms.date: 04/18/2022
+recommendations: false
+ms.date: 04/22/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -17,7 +18,7 @@ searchScope:
 
 # Remove duplicates before unifying data
 
-This step in customer or account unification sets up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. This step is optional. If rules are not configured, system-defined rules are applied.
+This step in unification sets up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. This step is optional. If rules are not configured, system-defined rules are applied.
 
 ## Include enriched entities (preview)
 
@@ -57,7 +58,9 @@ If you enriched entities on the data source level to help improve your unificati
 
    1. Select **Done** to create the rule.
 
-1. Once the rules are added, select an entity and then **Edit merge preferences**.
+1. Optionally, add more rules.
+
+1. Select an entity and then **Edit merge preferences**.
 
 1. In the **Merge preferences** pane:
    1. Choose one of three options to determine which record to keep if a duplicate is found:
@@ -90,3 +93,5 @@ A deduplication output entity contains the following information:
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
