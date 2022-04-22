@@ -103,7 +103,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. To manage rules, choose any of the following:
    - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want.
-   - **Change rule conditions**: Select **Show more** > **Edit** on the rule and choose different fields.
+   - **Change rule conditions**: Select **Show more** > **Edit** on the rule and choose different fields or add and remove conditions.
    - **Deactivate a rule**: Select **Show more** > **Deactivate** on the rule to retain a match rule while excluding it from the matching process.
    - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more** > **Delete** on the rule.
@@ -160,8 +160,12 @@ As part of the customer profile generation configuration process, you can define
 
 ## Run updates to the unified customer profile
 
-To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+1. From the **Data** > **Unify** page, select:
 
-To update the unified profile and all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
+   - **Unify customer profiles**: To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
-[!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+   - **Unify customer profiles and dependencies**: To update the unified profile and all dependencies. All processes are rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
+
+   The **Duplicate records**, **Matching conditions**, and **Unified customer fields** tiles show **Queued** or **Refreshing**.
+
+   [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]

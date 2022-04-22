@@ -132,7 +132,7 @@ You can specify conditions that override the default match logic. There are four
 
    :::image type="content" source="media/m3_match_custom.png" alt-text="Custom button":::
 
-1. Choose the custom match option from the **Custom type** dropdown and select **Download template**. You need a separate template for each match option.
+1. Choose the **Custom type** and select **Download template**. You need a separate template for each match option.
 
 1. Open the downloaded template file and fill in the details. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
     - Entity1: Sales
@@ -148,7 +148,7 @@ You can specify conditions that override the default match logic. There are four
 
 1. Go to **Data** > **Data sources** and ingest the template files as new entities.
 
-1. After uploading the files and entities are available, select the **Custom** option again. You'll see options to specify the entities you want to include. Select the required entities from the dropdown menu and select **Done**.
+1. After uploading the files, select the **Custom** option again. Select the required entities from the dropdown menu and select **Done**.
 
    :::image type="content" source="media/custom-match-overrides.png" alt-text="Screenshot of the dialog to choose overrides for a custom match scenario.":::
 
