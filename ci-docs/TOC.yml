@@ -93,9 +93,9 @@
           href: audience-insights/review-unification.md
         - name: Create a unified business contact profile 
           href: audience-insights/data-unification-contacts.md
-        - name: Update the unified customer profile
+        - name: Update the unification settings
           href: audience-insights/data-unification-update.md
-        - name: Update the unified contact profile
+        - name: Update the contact unification settings
           href: audience-insights/data-unification-update-contacts.md  
 
     - name: Data enrichment

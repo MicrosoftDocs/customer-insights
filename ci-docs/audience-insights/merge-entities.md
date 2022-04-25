@@ -1,7 +1,8 @@
 ---
 title: "Unify customer or account fields"
 description: "Merge entities to create unified customer profiles."
-ms.date: 04/18/2022
+recommendations: false
+ms.date: 04/22/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -18,7 +19,7 @@ searchScope:
 
 # Unify customer fields
 
-This step in the unification process enables you to choose and exclude attributes to merge within your unified customer profile entity. You can also create stable, unique Customer IDs.
+In this step of the unification process, choose and exclude attributes to merge within your unified profile entity. You can also create stable and unique Customer IDs.
 
 :::image type="content" source="media/m3_unify.png" alt-text="Merge page in the data unification process showing table with merged fields that define the unified customer profile.":::
 

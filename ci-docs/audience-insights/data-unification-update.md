@@ -1,7 +1,7 @@
 ---
-title: "Update the unified customer profile"
-description: "Update duplicate rules, match rules, or unified fields in the unified customer profile."
-ms.date: 04/18/2022
+title: "Update the unification settings"
+description: "Update duplicate rules, match rules, or unified fields in the unification settings."
+ms.date: 04/22/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -16,9 +16,13 @@ searchScope:
   - customerInsights
 ---
 
-# Update the unified customer profile
+# Update the unification settings
 
-1. Go to **Data** > **Unify**. Each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of entity attributes (fields) defined and **Duplicate records** shows the number of duplicate records found.
+After unification, the **Data** > **Unify** page shows the results of each step in the unification process. Each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of entity attributes (fields) defined and **Duplicate records** shows the number of duplicate records found.
+
+You can update the settings to add attributes, change your deduplication or matching rules, or change the unified fields.
+
+1. Go to **Data** > **Unify**.
 
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
 
@@ -54,7 +58,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Select **Save and close**.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
 
 ## Manage deduplication rules
 
@@ -83,7 +87,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Click **Save and close**.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
 
 ## Manage match rules
 
@@ -102,12 +106,12 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. To manage rules, choose any of the following:
    - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want.
-   - **Change rule conditions**: Select **Show more** > **Edit** on the rule and choose different fields.
+   - **Change rule conditions**: Select **Show more** > **Edit** on the rule and choose different fields or add and remove conditions.
    - **Deactivate a rule**: Select **Show more** > **Deactivate** on the rule to retain a match rule while excluding it from the matching process.
    - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more** > **Delete** on the rule.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
 
 ## Manage unified fields
 
@@ -121,7 +125,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Click **Save and close**.
 
-1. Return to [Update the unified customer profile](#update-the-unified-customer-profile) to make additional changes.
+1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
 
 ### Group profiles into households or clusters
 
@@ -159,8 +163,12 @@ As part of the customer profile generation configuration process, you can define
 
 ## Run updates to the unified customer profile
 
-To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+1. From the **Data** > **Unify** page, select:
 
-To update the unified profile and all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
+   - **Unify customer profiles**: To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
-[!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+   - **Unify customer profiles and dependencies**: To update the unified profile and all dependencies. All processes are rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
+
+   The **Duplicate records**, **Matching conditions**, and **Unified customer fields** tiles show **Queued** or **Refreshing**.
+
+   [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
