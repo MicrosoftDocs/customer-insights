@@ -55,7 +55,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Select **Save and close**.
 
-1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
+1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings).
 
 ## Manage deduplication rules
 
@@ -65,7 +65,15 @@ You can't remove an attribute or an entity if they've already been unified.
 
    The number of duplicate records found displays. The **Records deduplicated** column shows which entities had duplicate records.
 
-1. To change merge preferences, select the entity.
+1. To manage rules, choose any of the following:
+   - **Create a new rule**: Select **Add rule** under the appropriate entity.
+   - **Change rule conditions**: Select **Show more (...)** > **Edit** on the rule and choose different fields.
+   - **Match preview**: Select **Show more (...)** > **Match preview** on the rule to view the last run results.
+   - **Deactivate a rule**: Select **Show more (...)** > **Deactivate** on the rule to retain a deduplication rule while excluding it from the matching process.
+   - **Duplicate a rule**: Select **Show more (...)** > **Duplicate** on the rule to create a similar rule with modifications.
+   - **Delete a rule**: Select **Show more (...)** > **Delete** on the rule.
+
+1. To change merge preferences, select the entity. You can only change the preferences if a rule is created.
    1. Select **Edit merge preferences** and change the **Record to keep** option.
    1. To change merge preferences on individual attributes of an entity, select **Advanced** and make the necessary changes.
 
@@ -73,18 +81,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
    1. Select **Done**.
 
-1. To manage rules, choose any of the following:
-   - **Create a new rule**: Select **Add rule** under the appropriate entity.
-   - **Change rule conditions**: Select **Show more (...)** > **Edit** on the rule and choose different fields.
-   - **Deactivate a rule**: Select **Show more (...)** > **Deactivate** on the rule to retain a deduplication rule while excluding it from the matching process.
-   - **Duplicate a rule**: Select **Show more (...)** > **Duplicate** on the rule to create a similar rule with modifications.
-   - **Delete a rule**: Select **Show more (...)** > **Delete** on the rule.
-
-1. To view the last run results, select **Show more (...)** > **Match Preview**. If no duplicate records were found in the last run, Match preview does not display.
-
-1. Click **Save and close**.
-
-1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
+1. Select **Next** to make changes to matching conditions, or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings).
 
 ## Manage match rules
 
@@ -99,16 +96,17 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
    - **Matched and non-matched records** highlights how many unique records remain after processing the match rules.
    - **Matched records only** shows the number of matches across all of your match pairs.
 
-1. To review the results of the match rule pairs, select **Show more** > **Match preview** on a rule. The results displays. You can also download the results.
+1. To view the results of all rules, select **View last run** on a rule. The results displays. You can also download the results.
 
 1. To manage rules, choose any of the following:
    - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want.
    - **Change rule conditions**: Select **Show more** > **Edit** on the rule and choose different fields or add and remove conditions.
+   - **Match preview**: Select **Show more** > **Match preview** on the rule and to view the last run results. If no matching records were found in the last run, Match preview does not display.
    - **Deactivate a rule**: Select **Show more** > **Deactivate** on the rule to retain a match rule while excluding it from the matching process.
    - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more** > **Delete** on the rule.
 
-1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
+1. Select **Next** to make changes to unified fields, or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings).
 
 ## Manage unified fields
 
@@ -116,31 +114,9 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
     :::image type="content" source="media/m3_merge_edit.png" alt-text="Screenshot of Unified customer fields":::
 
-1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key. See [Unify customer fields](merge-entities.md) for more information.
+1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. See [Unify customer fields](merge-entities.md) for more information.
 
-1. To group related profiles into a cluster, go to [Group profiles into households or clusters](#group-profiles-into-households-or-clusters).
-
-1. Click **Save and close**.
-
-1. Return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
-
-### Group profiles into households or clusters
-
-As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
-
-1. Select **Advanced** > **Create cluster**.
-
-   :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
-
-1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
-
-1. Provide a name for the cluster and select **Done**.
-
-1. Select the **Clusters** tab to find the cluster you created.
-
-1. Specify the rules and conditions to define your cluster.
-
-1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* entity.
+1. Click **Save and close** and return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
 
 ## Run matching conditions
 
