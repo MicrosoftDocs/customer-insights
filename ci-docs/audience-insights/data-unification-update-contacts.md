@@ -1,7 +1,8 @@
 ---
-title: "Update the unified contact profile"
+title: "Update the contact unification settings"
 description: "Update duplicate rules, match rules, unified fields, semantic mapping, or relationships in the unified contact profile."
-ms.date: 04/18/2022
+recommendations: false
+ms.date: 04/25/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -16,9 +17,13 @@ searchScope:
   - customerInsights
 ---
 
-# Update the unified contact profile
+# Update the contact unification settings
 
-1. Go to **Data** > **Unify**. Under **Unify contacts**, each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of entity attributes (fields) defined and **Duplicate records** shows the number of duplicate records found.
+After contact unification, the **Data** > **Unify** page shows the results of each step in the contact unification process. Each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of entity attributes (fields) defined and **Duplicate records** shows the number of duplicate records found.
+
+You can update the settings to add attributes, change your deduplication or matching rules, change the unified fields, or update the semantic mappings and relationships???
+
+1. Go to **Data** > **Unify**. Under **Unify contacts**, the contact unification tiles display.
 
    :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified.":::
 
@@ -51,9 +56,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off.
 
-1. Select **Save and close**.
-
-1. Return to [Update the unified contact profile](#update-the-unified-contact-profile) to make additional changes.
+1. Select **Next** to manage deduplication rules, or select **Save and close** and return to [Update the contact unification settings](#update-the-unified-contact-profile).
 
 ## Manage deduplication rules
 
@@ -63,7 +66,15 @@ You can't remove an attribute or an entity if they've already been unified.
 
    The number of duplicate records found displays. The **Records deduplicated** column shows which entities had duplicate records.
 
-1. To change merge preferences, select the entity.
+1. To manage rules, choose any of the following:
+   - **Create a new rule**: Select **Add rule** under the appropriate entity.
+   - **Change rule conditions**: Select **Show more (...)** > **Edit** on the rule and choose different fields.
+   - **Match preview**: Select **Show more (...)** > **Edit** on the rule to view the last run results. If no duplicate records were found in the last run, Match preview does not display.
+   - **Deactivate a rule**: Select **Show more (...)** > **Deactivate** on the rule to retain a deduplication rule while excluding it from the matching process.
+   - **Duplicate a rule**: Select **Show more (...)** > **Duplicate** on the rule to create a similar rule with modifications.
+   - **Delete a rule**: Select **Show more (...)** > **Delete** on the rule.
+
+1. To change merge preferences, select the entity. You can only change the preferences if a rule is created.
    1. Select **Edit merge preferences** and change the **Record to keep** option.
    1. To change merge preferences on individual attributes of an entity, select **Advanced** and make the necessary changes.
 
@@ -71,18 +82,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
    1. Select **Done**.
 
-1. To manage rules, choose any of the following:
-   - **Create a new rule**: Select **Add rule** under the appropriate entity.
-   - **Change rule conditions**: Select **Show more (...)** > **Edit** on the rule and choose different fields.
-   - **Deactivate a rule**: Select **Show more (...)** > **Deactivate** on the rule to retain a deduplication rule while excluding it from the matching process.
-   - **Duplicate a rule**: Select **Show more (...)** > **Duplicate** on the rule to create a similar rule with modifications.
-   - **Delete a rule**: Select **Show more (...)** > **Delete** on the rule.
-
-1. To view the last run results, select **Show more (...)** > **Match Preview**. If no duplicate records were found in the last run, Match preview does not display.
-
-1. Click **Save and close**.
-
-1. Return to [Update the unified contact profile](#update-the-unified-contact-profile) to make additional changes.
+1. Select **Next** to manage matching conditions, or select **Save and close** and return to [Update the contact unification settings](#update-the-unified-contact-profile).
 
 ## Manage match rules
 
@@ -97,16 +97,17 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
    - **Matched and non-matched records** highlights how many unique records remain after processing the match rules.
    - **Matched records only** shows the number of matches across all of your match pairs.
 
-1. To review the results of the match rule pairs, select **Show more** > **Match preview** on a rule. The results displays. You can also download the results.
+1. To view the results of all rules, select **View last run** on a rule. You can also download the results.
 
 1. To manage rules, choose any of the following:
    - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want.
+   - **Match preview**: Select **Show more (...)** > **Edit** on the rule to view the last run results. If no matching records were found in the last run, Match preview does not display.
    - **Change rule conditions**: Select **Show more** > **Edit** on the rule and choose different fields.
    - **Deactivate a rule**: Select **Show more** > **Deactivate** on the rule to retain a match rule while excluding it from the matching process.
    - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more** > **Delete** on the rule.
 
-1. Return to [Update the unified contact profile](#update-the-unified-contact-profile) to make additional changes.
+1. Select **Next** to manage unified fields, or select **Save and close** and return to [Update the contact unification settings](#update-the-unified-contact-profile).
 
 ## Manage unified fields
 
@@ -118,9 +119,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. To group related profiles into a cluster, go to [Group profiles into households or clusters](#group-profiles-into-households-or-clusters).
 
-1. Click **Save and close**.
-
-1. Return to [Update the unified contact profile](#update-the-unified-contact-profile) to make additional changes.
+1. Select **Next** to manage semantic mappings, or select **Save and close** and return to [Update the contact unification settings](#update-the-unified-contact-profile).
 
 ### Group profiles into households or clusters
 
@@ -139,6 +138,14 @@ As part of the customer profile generation configuration process, you can define
 1. Specify the rules and conditions to define your cluster.
 
 1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* entity.
+
+## Manage semantic mappings
+
+What can you change in semantic mappings?
+
+## Manage the contact and account relationship
+
+What can you change?
 
 ## Run matching conditions
 

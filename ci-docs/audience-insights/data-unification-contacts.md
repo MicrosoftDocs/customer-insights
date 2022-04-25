@@ -1,7 +1,8 @@
 ---
 title: "Create a unified view of your business contacts"
 description: "Go through the data unification process to create a single master dataset of contacts."
-ms.date: 04/12/2022
+recommendations: false
+ms.date: 04/25/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -51,11 +52,11 @@ For business accounts (B-to-B), after [unifying the accounts](map-entities.md), 
 
 This step in the unification process enables you to map your unified contact fields to semantic types. Semantic mappings let you map your non-activity data to pre-defined schemas. These schemas help Customer Insights to better understand your data attributes.
 
-1. Select the semantic type that maps to the unified field. Select **None** if a semantic type is not available.
+1. Select the semantic type that maps to each unified field. Select **None** if a semantic type is not available.
 
    :::image type="content" source="media/semantic_mapping.png" alt-text="Screenshot of Semantic fields page to define the semantic types.":::
 
-1. Select **Next**.
+1. After mapping all unified fields, select **Next**.
 
 ## Set the relationship between contacts and accounts
 
@@ -82,7 +83,7 @@ This last step in the unification process shows a summary of the steps in the pr
 
 When the unification process completes, the unified contact profile entity, called **ContactsCustomer**, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Contacts* entity. All subsequent runs expand that entity.
 
-To make changes to the unified contact profile entity, see
+To make changes to the contact unification settings, see [Update the contact unification settings](data-unification-update-contacts.md).
 
 ## Next Step
 
