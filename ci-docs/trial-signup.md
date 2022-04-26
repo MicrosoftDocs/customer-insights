@@ -17,7 +17,7 @@ Customer Insights offers a free 30-day trial. After a quick sign-up, you'll have
 
 **To sign up for the trial**:
 
-1. Go to the [trial overview page](https://dynamics.microsoft.com/get-started/?appname=customerinsights) and select **Sign up now**.
+1. Go to the [trial overview page](https://dynamics.microsoft.com/ai/customer-insights/) and select **Try Customer Insights for free**.
 1. Follow the onscreen guidance to enter the [email associated with your Microsoft account](https://support.microsoft.com/windows/what-is-a-microsoft-account-4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa) and your contact information.
 1. Make selections and choose your focus until you get to the start page for your selected capability.
 
