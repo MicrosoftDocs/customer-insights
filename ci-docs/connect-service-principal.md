@@ -43,9 +43,6 @@ Before creating a new service principal for Customer Insights, check whether it 
    
 6. If no results are returned, create a new service principal.
 
->[!NOTE]
->To make use of the full power of Dynamics 365 Customer Insights, we suggest that you add both apps to the service principal.
-
 ### Create a new service principal
 
 1. Install the latest version of Azure Active Directory PowerShell for Graph. For more information, go to [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
