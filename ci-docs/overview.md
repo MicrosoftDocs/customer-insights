@@ -35,4 +35,4 @@ Browse [featured learning resources](https://dynamics.microsoft.com/ai/customer-
 
 Learn how you can build a deeper understanding of your customers with our [get started guide](get-started.md).
 
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

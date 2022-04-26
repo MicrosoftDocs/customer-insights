@@ -1,7 +1,7 @@
 ---
 title: "System configuration in Customer Insights"
 description: "Learn about system settings in Dynamics 365 Customer Insights."
-ms.date: 11/01/2021
+ms.date: 04/21/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -67,7 +67,7 @@ Refresh for tasks and processes is run according to the [configured schedule](#s
 |Activity  |Runs manually (single time refresh). Depends on merge process. Insights depend on its processing.|
 |Analysis linking |Runs manually (single time refresh). Depends on segments.  |
 |Analysis preparation |Runs manually (single time refresh). Depends on segments.  |
-|Data preparation   |Depends on merge.   |
+|Data preparation   |Needs an entity to run on. Data source entities depend on ingestion. Enriched entities depends on enrichments. The Customer entity depends on merge.  |
 |Data sources   |Doesn't depend on any other process. Match depends on the successful completion of this process.  |
 |Enrichments   |Runs manually (single time refresh). Depends on merge process. |
 |Exports destinations |Runs manually (single time refresh). Depends on segments.  |
