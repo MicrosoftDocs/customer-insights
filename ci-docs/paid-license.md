@@ -30,9 +30,8 @@ The first-run experience helps you choose your initial focus with Customer Insig
 
 1. Go to the [Customer Insights app URL](https://home.ci.ai.dynamics.com).
 1. Sign in with your school or work account. 
-1. Agree to the terms of service and set the content preferences for your Customer Insights instance.
-1. Choose the capability to focus on until you get to the start page for your selected capability.
+1. Agree to the terms of service and set the content preferences for your Customer Insights environment.
 
 ## Create your own environment
 
-After your first sign-in, you'll see an environment with sample data. You can use that data to explore features and familiarize with the app. To use your own data, you have to [create an environment](/dynamics365/customer-insights/audience-insights/create-environment).
+After your first sign-in, you'll see an environment with sample data. You can use that data to explore features and familiarize with the app. To use your own data, you have to [create an environment](create-environment.md).
