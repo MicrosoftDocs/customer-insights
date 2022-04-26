@@ -1,7 +1,7 @@
 ---
 title: "Enrichment of company profiles with Dun & Bradstreet"
 description: "General information about the Dun & Bradstreet third-party enrichment."
-ms.date: 03/30/2022
+ms.date: 04/26/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
