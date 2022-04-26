@@ -1,7 +1,7 @@
 ---
 title: "Connect to an Azure Data Lake Storage account by using a service principal"
 description: "Use an Azure service principal to connect to your own data lake."
-ms.date: 12/06/2021
+ms.date: 04/26/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -53,9 +53,9 @@ Before creating a new service principal for Customer Insights, check whether it 
 
 2. Create the service principal for Customer Insights with the Azure AD PowerShell module.
 
-   1. In the PowerShell window, enter `Connect-AzureAD -TenantId "[your tenant ID]" -AzureEnvironmentName Azure`. Replace *[your tenant ID]* with the actual ID of your tenant where you want to create the service principal. The environment name parameter, `AzureEnvironmentName`, is optional.
+   1. In the PowerShell window, enter `Connect-AzureAD -TenantId "[your Directory ID]" -AzureEnvironmentName Azure`. Replace *[your Directory ID]* with the actual Directory ID of your Azure subscription where you want to create the service principal. The environment name parameter, `AzureEnvironmentName`, is optional.
   
-   1. Enter `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. This command creates the service principal for Customer Insights on the selected tenant. 
+   1. Enter `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. This command creates the service principal for Customer Insights on the selected Azure subscription. 
 
 ## Grant permissions to the service principal to access the storage account
 
@@ -72,9 +72,9 @@ Go to the Azure portal to grant permissions to the service principal for the sto
 1. On the **Add role assignment** pane, set the following properties:
    - Role: **Storage Blob Data Contributor**
    - Assign access to: **User, group, or service principal**
-   - Select: **Dynamics 365 AI for Customer Insights** (the [service principal](#create-a-new-service-principal) you created earlier in this procedure)
+   - Select members: **Dynamics 365 AI for Customer Insights** (the [service principal](#create-a-new-service-principal) you created earlier in this procedure)
 
-1.	Select **Save**.
+1.	Select **Review + assign**.
 
 It can take up to 15 minutes to propagate the changes.
 
