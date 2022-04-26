@@ -1,6 +1,6 @@
 ---
 title: "Data Subject Rights (DSR) requests under GDPR | Microsoft Docs"
-description: "Respond to Data Subject Requests for Dynamics 365 Customer Insights audience insights capability."
+description: "Respond to Data Subject Requests for Dynamics 365 Customer Insights."
 ms.date: 08/11/2021
 ms.reviewer: mhart
 
@@ -17,15 +17,15 @@ The European Union’s General Data Protection Regulation (GDPR) has been in eff
 
 We're committed to helping our customers meet their GDPR requirements. It includes the right to delete and export data that includes personal information such as user IDs, phone numbers, and email addresses. Administrators can implement user requests to delete or export personal data.
 
-## Audience insights
+## Dynamics 365 Customer Insights
 
-### Responding to GDPR data subject delete requests for Dynamics 365 Customer Insights audience insights capability
+### Responding to GDPR data subject delete requests for Dynamics 365 Customer Insights
 
 The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in the General Data Protection Regulation (GDPR). Removing personal data includes removing all personal data and system-generated logs, except audit log information.
 
 #### Manage data subject delete requests
 
-Audience insights offers the following in-product experiences to delete personal data for a specific customer or user:
+Customer Insights offers the following in-product experiences to delete personal data for a specific customer or user:
 
 - **Manage delete requests for customer data**: Customer data in Customer Insights is ingested from original data sources external to Customer Insights. All GDPR delete requests must be performed in the original data source.
 - **Manage delete requests for Customer Insights user data**: Data for users is created by Customer Insights. All GDPR delete requests must be performed in Customer Insights.
@@ -35,26 +35,26 @@ Audience insights offers the following in-product experiences to delete personal
 A Customer Insights admin can follow these steps to remove customer data that was deleted in the data source:
 
 1. Sign in to Dynamics 365 Customer Insights.
-2. In audience insights, go to **Data** > **Data sources**
+2. Go to **Data** > **Data sources**
 3. For each data source in the list that contains deleted customer data:
    1. Select (...) and then select **Refresh**.
    2. Check the status of the data source under **Status**. A check mark means the refresh was successful. A warning triangle means something went wrong. If a warning triangle is displayed, contact D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
-> ![Handling GDPR delete requests for customer data.](audience-insights/media/gdpr-data-sources.png "Handling GDPR delete requests for customer data")
+> ![Handling GDPR delete requests for customer data.](media/gdpr-data-sources.png "Handling GDPR delete requests for customer data")
 
 ##### Manage delete requests for user data
 
 A Customer Insights admin can follow these steps to delete Customer Insights user data:
 
 1. Sign in to Dynamics 365 Customer Insights.
-2. In audience insights, go to **Admin** > **Permissions**.
+2. Go to **Admin** > **Permissions**.
 3. Select the check box for the user you want to delete.
 4. Select **Remove**.
 
 ### Responding to GDPR data subject export requests
 
-As part of our commitment to partner with you on your journey to the General Data Protection Regulation (GDPR), we’ve developed documentation to help you prepare. This documentation describes steps you can take today to support GDPR compliance when using audience insights.
+As part of our commitment to partner with you on your journey to the General Data Protection Regulation (GDPR), we’ve developed documentation to help you respond to requests from data subjects.
 
 #### Manage export and view requests
 
@@ -78,74 +78,6 @@ A tenant administrator can follow these steps to export data:
 
 The consent management capability doesn't collect user data directly. It only imports and processes consent data that is provided by users in other applications.
 
-To remove consent data about specific users, remove it in the data sources ingested to the consent management capability. After refreshing the data source, the removed data will be deleted in the Consent Center too. Applications that use the consent entity will also delete data that was removed on the source after a [refresh](audience-insights/system.md#refresh-processes). We recommend refreshing data sources quickly after responding to a data subject request to remove the user's data from all other processes and applications.
+To remove consent data about specific users, remove it in the data sources ingested to the consent management capability. After refreshing the data source, the removed data will be deleted in the Consent Center too. Applications that use the consent entity will also delete data that was removed on the source after a [refresh](system.md#refresh-processes). We recommend refreshing data sources quickly after responding to a data subject request to remove the user's data from all other processes and applications.
 
-
-<!-- ## Engagement insights (preview)
-
-### Deleting and exporting event data containing end user identifiable information
-
-The following sections describe how to delete and export event data that might contain personal data.
-
-To delete or export data:
-
-1. Tag event properties that contain data with personal information.
-2. Delete or export data associated with specific values (for example: a specified user ID).
-
-#### Tag and update event properties
-
-Personal data is tagged on an event property level. First, tag the properties being considered for deletion or export.
-
-To tag an event property as containing personal information, follow these steps:
-
-1. Open the workspace containing the event.
-
-1. Go to **Data** > **Events** to see the list of events in the selected workspace.
-  
-1. Select the event you want to tag.
-
-1. Select **Edit properties** to open the pane listing all properties of the selected event.
-     
-1. Select **...** and then choose **Edit** to reach the **Update property** dialog.
-
-   ![Edit event.](engagement-insights/media/edit-event.png "Edit event")
-
-1. In the **Update Property** window, choose **...** in the upper right corner, and then choose the **Contains EUII** box. Choose **Update** to save your changes.
-
-   ![Save your changes.](engagement-insights/media/update-property.png "Save your changes")
-
-   > [!NOTE]
-   > Every time the event schema changes or you create a new event, it's recommended that you evaluate the associated event properties and tag or untag them as containing personal data, if necessary.
-
-#### Delete or export tagged event data
-
-If all event properties have been tagged appropriately as described in the previous step, an environment admin can issue a deletion request against the tagged event data.
-
-To manage EUII deletion or export requests
-
-1. Go to **Admin** > **Environment** > **Settings**.
-
-1. In the **Manage end user identifiable information (EUII)** section, select **Manage EUII**.
-
-##### Deletion
-
-For deletion, you can enter a list of comma-separated user IDs in the **Delete end user identifiable information (EUII)** section. These IDs will then be compared with all tagged event properties of all projects in the current environment via exact string matching. 
-
-If a property value matches one of the provided IDs, the associated event will be permanently deleted. Due to the irreversibility of this action, you must confirm the deletion after selecting **Delete**.
-
-##### Export
-
-The export process is identical to the deletion process when it comes to defining event property values in the **Export end user identifiable information (EUII)** section. Additionally, you'll need to provide an **Azure blob storage URL** to specify the export destination. The Azure Blob URL must include a [Shared Access Signature (SAS)](/azure/storage/common/storage-sas-overview).
-
-After selecting **Export**, all events of the current team that contain matching tagged properties will be exported in CSV format to the export destination.
-
-### Good practices
-
-* Try to avoid sending any events that contain personal data.
-* If you need to send events containing EUII data, limit the number of events and event properties that contain EUII data. Ideally, limit yourself to one such event.
-* Make sure that as few people as possible have access to the sent personal data.
-* For events containing personal data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example, a user ID). This makes it easier to segregate data and to export or delete the right data.
-* Only tag one property per event as containing personal data. Ideally one that only contains a unique identifier.
-* Do not tag properties containing verbose values (for example, an entire request body). Engagement insights capability uses exact string matching when deciding which events to delete or export. -->
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]
