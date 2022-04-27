@@ -14,13 +14,13 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can build out-of-box prediction models in audience insights to predict customer churn or customer lifetime value. Use consent data from the [consent management capability](overview.md) to increase the accuracy of these predictions.
+You can build out-of-box prediction models in Customer Insights to predict customer churn or customer lifetime value. Use consent data from the [consent management capability](overview.md) to increase the accuracy of these predictions.
 
 The steps below detail how to use consent data in out-of-box models, with the focus on the transactional churn model. However, you can apply these same steps to the subscription churn and customer lifetime value models. 
 
 ## Required entities and fields
 
-The following list outlines the entities that are required and the fields these entities must contain. For more information, go to [Prerequisites for a transaction model](../audience-insights/predict-transactional-churn.md).
+The following list outlines the entities that are required and the fields these entities must contain. For more information, go to [Prerequisites for a transaction model](../predict-transactional-churn.md).
 
 1. *Subscription consent* entity
     - **Primary key or ID:** A primary key for each unique consent value. It requires unique values in each row, for example, email or customer ID. 
@@ -44,7 +44,7 @@ The steps below outline how to use consent data as activity data input to the tr
 
 ### Step 1: Create a consent activity
 
-[Create an activity](../audience-insights/activities.md) based on your consent entity: 
+[Create an activity](../activities.md) based on your consent entity: 
 
 1. Start the guided experience to create an activity.
 1. In the **Relationships** step, select the *Customer ID* of the *Consent* entity as the foreign key.
@@ -60,11 +60,11 @@ The steps below outline how to use consent data as activity data input to the tr
 
    :::image type="content" source="media/new-consent-activity-type.png" alt-text="Create a new activity type for consent data.":::
 
-1. Review and run the consent activity. Continue to the next step after a successful run. For more information about activities, go to [Customer activities](../audience-insights/activities.md).
+1. Review and run the consent activity. Continue to the next step after a successful run. For more information about activities, go to [Customer activities](../activities.md).
 
 ### Step 2: Configure and run the model 
 
-Follow these instructions to [create a transactional model](../audience-insights/predict-transactional-churn.md) until you configure the additional data:
+Follow these instructions to [create a transactional model](../predict-transactional-churn.md) until you configure the additional data:
 
 1. In the **Additional data (optional)** step of the model creation, select **Add data**. 
 
@@ -91,7 +91,7 @@ View the model results to gain insights.
 
 :::image type="content" source="media/influential-factors-activity.png" alt-text="Influential factors in the model output.":::
 
-For more information on model results, go to [Transaction churn prediction](../audience-insights/predict-transactional-churn.md).
+For more information on model results, go to [Transaction churn prediction](../predict-transactional-churn.md).
 
  
 
