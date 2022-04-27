@@ -18,7 +18,7 @@ searchScope:
 
 # Select source fields for data unification
 
-The first step in unification is selecting the entities and fields within your datasets that you want to unify. Select entities that contain customer-related details such as name, address, phone number, and email.
+The first step in unification is selecting the entities and fields within your datasets that you want to unify. Select entities that contain customer-related details such as name, address, phone number, and email. You can select one or more entities.
 
 ## Select entities and fields
 
@@ -30,7 +30,7 @@ The first step in unification is selecting the entities and fields within your d
 
 1. On the **Source fields** page, select **Select entities and fields**. The **Select entities and fields** pane displays.
 
-1. Select the **Entities** to combine into a unified profile.
+1. Select at least one entity. Select multiple entities to combine into a unified profile.
 
 1. For each selected entity, identify the fields you want to combine and reconcile. These fields are called *Attributes*. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the checkbox on the entity level. You can search on keywords across all attributes and entities to select the required attributes you want to map.
 

@@ -20,7 +20,7 @@ searchScope:
 
 This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified profile.
 
-:::image type="content" source="media/m3_review.png" alt-text="Screenshot of Review and create customer profiles.":::
+:::image type="content" source="media/m3_review.png" alt-text="Screenshot of Review and Create customer profiles.":::
 
 1. Select **Edit** on any of the data unification steps to review and make any changes.
 

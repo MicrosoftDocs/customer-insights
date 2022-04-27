@@ -20,7 +20,8 @@ searchScope:
 
 After unification, the **Data** > **Unify** page shows the results of each step in the unification process. Each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of entity attributes (fields) defined and **Duplicate records** shows the number of duplicate records found.
 
-You can update the settings to add attributes, change your deduplication or matching rules, or change the unified fields.
+> [!TIP]
+> The **Matching conditions** tile displays only if multiple entities were selected.
 
 1. Go to **Data** > **Unify**.
 
@@ -29,7 +30,7 @@ You can update the settings to add attributes, change your deduplication or matc
 1. Choose what you want to update:
    - [Source fields](#edit-source-fields) to add entities or attributes or change attribute types.
    - [Duplicate records](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
-   - [Matching conditions](#manage-match-rules) to update matching rules.
+   - [Matching conditions](#manage-match-rules) to update matching rules across two or more entities.
    - [Unified customer fields](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
 
 1. After making your changes, choose your next option:
@@ -37,7 +38,7 @@ You can update the settings to add attributes, change your deduplication or matc
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
    - To update the unified customer profile (with or without dependencies), see [Run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
-   - To evaluate the quality of your matching conditions, see [Run matching conditions](#run-matching-conditions).
+   - To evaluate the quality of your matching conditions between two or more entities, see [Run matching conditions](#run-matching-conditions).
 
 ## Edit source fields
 
@@ -85,7 +86,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 ## Manage match rules
 
-You can reconfigure and fine-tune most of the match parameters. You cannot add or delete entities.
+You can reconfigure and fine-tune most of the match parameters. You cannot add or delete entities. Match rules do not apply to a single entity.
 
 1. Select **Edit** on the **Matching conditions** tile.
 
