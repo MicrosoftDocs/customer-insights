@@ -29,7 +29,7 @@ As an organization that runs on trust, Microsoft empowers its customers to do th
 
 The consent management capability of Dynamics 365 Customer Insights helps organizations manage the usage of customer consent. It builds a unified set of consent data from the various outlets an organization uses to connect with their customers. 
 
-Integrating the unified consent data with other capabilities such as audience insights can help organizations respect privacy commitments. Consent and contact preferences are automatically available in business processes within audience insights.
+Integrating the unified consent data with Customer Insights can help organizations respect privacy commitments. Consent and contact preferences are automatically available in business processes within Customer Insights.
 
 ## Main personas
 

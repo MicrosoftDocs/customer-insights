@@ -775,6 +775,721 @@
       "source_path": "ci-docs/audience-insights/machine-learning-studio-experiments.md",
       "redirect_url": "/dynamics365/customer-insights/audience-insights/custom-models",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/advanced-SDK-implementation.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/androidsdk-sample.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/create-new-environment.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/create-workspace.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/curate-dimensions.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/custom-reports.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/developer-resources.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/dimensions.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/export-events.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/funnel-reports.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/get-started-android.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/get-started-ios.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/get-started.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/glossary.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/index.yml",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/instrument-website.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/integrate-audience-insights-engagement-insights.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/integrate-audience-insights-segments.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/iossdk-sample.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/manage-environments-workspaces.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/metrics.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/overview.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/profile-reports.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/quickstart.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/refined-events.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/regional-availability.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/segments.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/terms-of-service.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/unknown-to-known.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/user-consent-storage.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/user-roles.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/view-reports.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/engagement-insights/websdk-sample.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/activate-consent.md",
+      "redirect_url": "/dynamics365/customer-insights/activate-consent",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/activities.md",
+      "redirect_url": "/dynamics365/customer-insights/activities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/apis.md",
+      "redirect_url": "/dynamics365/customer-insights/apis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/azure-machine-learning-experiments.md",
+      "redirect_url": "/dynamics365/customer-insights/azure-machine-learning-experiments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/change-default-consent-rules.md",
+      "redirect_url": "/dynamics365/customer-insights/change-default-consent-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/connect-common-data-model.md",
+      "redirect_url": "/dynamics365/customer-insights/connect-common-data-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/connect-dataverse-managed-lake.md",
+      "redirect_url": "/dynamics365/customer-insights/connect-dataverse-managed-lake",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/connect-power-query.md",
+      "redirect_url": "/dynamics365/customer-insights/connect-power-query",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/connect-service-principal.md",
+      "redirect_url": "/dynamics365/customer-insights/connect-service-principal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/connect-synapse.md",
+      "redirect_url": "/dynamics365/customer-insights/connect-synapse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/connections.md",
+      "redirect_url": "/dynamics365/customer-insights/connections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/create-environment.md",
+      "redirect_url": "/dynamics365/customer-insights/create-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/custom-models.md",
+      "redirect_url": "/dynamics365/customer-insights/custom-models",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/customer-card-add-in.md",
+      "redirect_url": "/dynamics365/customer-insights/customer-card-add-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/customer-insights-dataverse.md",
+      "redirect_url": "/dynamics365/customer-insights/customer-insights-dataverse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/customer-profiles.md",
+      "redirect_url": "/dynamics365/customer-insights/customer-profiles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/data-sources-enrichment.md",
+      "redirect_url": "/dynamics365/customer-insights/data-sources-enrichment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/data-sources.md",
+      "redirect_url": "/dynamics365/customer-insights/data-sources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/data-unification.md",
+      "redirect_url": "/dynamics365/customer-insights/data-unification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/diagnostics.md",
+      "redirect_url": "/dynamics365/customer-insights/diagnostics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-azure-maps.md",
+      "redirect_url": "/dynamics365/customer-insights/enrichment-azure-maps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-enhanced-addresses.md",
+      "redirect_url": "/dynamics365/customer-insights/enrichment-enhanced-addresses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-enhanced-company-data.md",
+      "redirect_url": "/dynamics365/customer-insights/enrichment-enhanced-company-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-experian.md",
+      "redirect_url": "/dynamics365/customer-insights/enrichment-experian",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-here.md",
+      "redirect_url": "/dynamics365/customer-insights/enrichment-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-hub.md",
+      "redirect_url": "/dynamics365/customer-insights/enrichment-hub",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-leadspace.md",
+      "redirect_url": "/dynamics365/customer-insights/enrichment-leadspace",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-liveramp.md",
+      "redirect_url": "/dynamics365/customer-insights/enrichment-liveramp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-microsoft.md",
+      "redirect_url": "/dynamics365/customer-insights/enrichment-microsoft",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-office.md",
+      "redirect_url": "/dynamics365/customer-insights/enrichment-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/enrichment-SFTP-custom-import.md",
+      "redirect_url": "/dynamics365/customer-insights/enrichment-SFTP-custom-import",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/entities.md",
+      "redirect_url": "/dynamics365/customer-insights/entities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/entity-schemas.md",
+      "redirect_url": "/dynamics365/customer-insights/entity-schemas",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-active-campaign.md",
+      "redirect_url": "/dynamics365/customer-insights/export-active-campaign",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-adobe-campaign-standard.md",
+      "redirect_url": "/dynamics365/customer-insights/export-adobe-campaign-standard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-adobe-experience-platform.md",
+      "redirect_url": "/dynamics365/customer-insights/export-adobe-experience-platform",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-adroll.md",
+      "redirect_url": "/dynamics365/customer-insights/export-adroll",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-autopilot.md",
+      "redirect_url": "/dynamics365/customer-insights/export-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-azure-blob-storage.md",
+      "redirect_url": "/dynamics365/customer-insights/export-azure-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-azure-data-lake-storage-gen2.md",
+      "redirect_url": "/dynamics365/customer-insights/export-azure-data-lake-storage-gen2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-azure-synapse-analytics.md",
+      "redirect_url": "/dynamics365/customer-insights/export-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-braze.md",
+      "redirect_url": "/dynamics365/customer-insights/export-braze",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-campaign-monitor.md",
+      "redirect_url": "/dynamics365/customer-insights/export-campaign-monitor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-constant-contact.md",
+      "redirect_url": "/dynamics365/customer-insights/export-constant-contact",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-destinations.md",
+      "redirect_url": "/dynamics365/customer-insights/export-destinations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-dotdigital.md",
+      "redirect_url": "/dynamics365/customer-insights/export-dotdigital",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-dynamics365-marketing.md",
+      "redirect_url": "/dynamics365/customer-insights/export-dynamics365-marketing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-dynamics365-sales.md",
+      "redirect_url": "/dynamics365/customer-insights/export-dynamics365-sales",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-facebook.md",
+      "redirect_url": "/dynamics365/customer-insights/export-facebook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-google-ads.md",
+      "redirect_url": "/dynamics365/customer-insights/export-google-ads",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-iterable.md",
+      "redirect_url": "/dynamics365/customer-insights/export-iterable",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-klaviyo.md",
+      "redirect_url": "/dynamics365/customer-insights/export-klaviyo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-linkedin-ads.md",
+      "redirect_url": "/dynamics365/customer-insights/export-linkedin-ads",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-liveramp.md",
+      "redirect_url": "/dynamics365/customer-insights/export-liveramp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-mailchimp.md",
+      "redirect_url": "/dynamics365/customer-insights/export-mailchimp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-marketo.md",
+      "redirect_url": "/dynamics365/customer-insights/export-marketo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-microsoft-advertising.md",
+      "redirect_url": "/dynamics365/customer-insights/export-microsoft-advertising",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-omnisend.md",
+      "redirect_url": "/dynamics365/customer-insights/export-omnisend",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-power-apps.md",
+      "redirect_url": "/dynamics365/customer-insights/export-power-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-power-automate.md",
+      "redirect_url": "/dynamics365/customer-insights/export-power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-power-bi.md",
+      "redirect_url": "/dynamics365/customer-insights/export-power-bi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-rollworks.md",
+      "redirect_url": "/dynamics365/customer-insights/export-rollworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-salesforce.md",
+      "redirect_url": "/dynamics365/customer-insights/export-salesforce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-sendgrid.md",
+      "redirect_url": "/dynamics365/customer-insights/export-sendgrid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-sendinblue.md",
+      "redirect_url": "/dynamics365/customer-insights/export-sendinblue",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-sftp.md",
+      "redirect_url": "/dynamics365/customer-insights/export-sftp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-snapchat.md",
+      "redirect_url": "/dynamics365/customer-insights/export-snapchat",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/export-teams-bot.md",
+      "redirect_url": "/dynamics365/customer-insights/export-teams-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/find-similar-customer-segments.md",
+      "redirect_url": "/dynamics365/customer-insights/find-similar-customer-segments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/get-started.md",
+      "redirect_url": "/dynamics365/customer-insights/get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/home.md",
+      "redirect_url": "/dynamics365/customer-insights/home",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/incremental-refresh-data-sources.md",
+      "redirect_url": "/dynamics365/customer-insights/incremental-refresh-data-sources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/index.yml",
+      "redirect_url": "/dynamics365/customer-insights/index.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/integrate-engagement-insights.md",
+      "redirect_url": "/dynamics365/customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/manage-environments.md",
+      "redirect_url": "/dynamics365/customer-insights/manage-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/manage-predictions.md",
+      "redirect_url": "/dynamics365/customer-insights/manage-predictions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/map-entities.md",
+      "redirect_url": "/dynamics365/customer-insights/map-entities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/match-entities.md",
+      "redirect_url": "/dynamics365/customer-insights/match-entities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/measure-builder.md",
+      "redirect_url": "/dynamics365/customer-insights/measure-builder",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/measure-templates.md",
+      "redirect_url": "/dynamics365/customer-insights/measure-templates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/measures.md",
+      "redirect_url": "/dynamics365/customer-insights/measures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/merge-entities.md",
+      "redirect_url": "/dynamics365/customer-insights/merge-entities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/overview.md",
+      "redirect_url": "/dynamics365/customer-insights/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/permissions.md",
+      "redirect_url": "/dynamics365/customer-insights/permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/predict-customer-lifetime-value.md",
+      "redirect_url": "/dynamics365/customer-insights/predict-customer-lifetime-value",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/predict-product-recommendation.md",
+      "redirect_url": "/dynamics365/customer-insights/predict-product-recommendation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/predict-subscription-churn.md",
+      "redirect_url": "/dynamics365/customer-insights/predict-subscription-churn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/predict-transactional-churn.md",
+      "redirect_url": "/dynamics365/customer-insights/predict-transactional-churn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/prediction-based-segment.md",
+      "redirect_url": "/dynamics365/customer-insights/prediction-based-segment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/predictions-overview.md",
+      "redirect_url": "/dynamics365/customer-insights/predictions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/predictions.md",
+      "redirect_url": "/dynamics365/customer-insights/predictions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/real-time-data-ingestion.md",
+      "redirect_url": "/dynamics365/customer-insights/real-time-data-ingestion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/relationships.md",
+      "redirect_url": "/dynamics365/customer-insights/relationships",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/sample-guide-predict-clv.md",
+      "redirect_url": "/dynamics365/customer-insights/sample-guide-predict-clv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/sample-guide-predict-product-recommendation.md",
+      "redirect_url": "/dynamics365/customer-insights/sample-guide-predict-product-recommendation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/sample-guide-predict-subscription-churn.md",
+      "redirect_url": "/dynamics365/customer-insights/sample-guide-predict-subscription-churn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/sample-guide-predict-transactional-churn.md",
+      "redirect_url": "/dynamics365/customer-insights/sample-guide-predict-transactional-churn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/search-filter-index.md",
+      "redirect_url": "/dynamics365/customer-insights/search-filter-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/segment-builder.md",
+      "redirect_url": "/dynamics365/customer-insights/segment-builder",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/segment-insights.md",
+      "redirect_url": "/dynamics365/customer-insights/segment-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/segments.md",
+      "redirect_url": "/dynamics365/customer-insights/segments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/semantic-mappings.md",
+      "redirect_url": "/dynamics365/customer-insights/semantic-mappings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/sentiment-analysis.md",
+      "redirect_url": "/dynamics365/customer-insights/sentiment-analysis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/suggested-segments-activity.md",
+      "redirect_url": "/dynamics365/customer-insights/suggested-segments-activity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/suggested-segments.md",
+      "redirect_url": "/dynamics365/customer-insights/suggested-segments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/system.md",
+      "redirect_url": "/dynamics365/customer-insights/system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/use-azure-key-vault.md",
+      "redirect_url": "/dynamics365/customer-insights/use-azure-key-vault",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/whats-new-audience-insights.md",
+      "redirect_url": "/dynamics365/customer-insights/whats-new-customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/work-with-business-accounts.md",
+      "redirect_url": "/dynamics365/customer-insights/work-with-business-accounts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/work-with-tags-columns.md",
+      "redirect_url": "/dynamics365/customer-insights/work-with-tags-columns",
+      "redirect_document_id": false
     }
   ]
 }
