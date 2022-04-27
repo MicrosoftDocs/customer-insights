@@ -50,6 +50,6 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Enforce consent rules
-            url: ../audience-insights/activate-consent.md
+            url: ../activate-consent.md
           - text: Override consent rules
-            url: ../audience-insights/change-default-consent-rules.md
+            url: ../change-default-consent-rules.md

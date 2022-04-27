@@ -1,7 +1,7 @@
 ---
 title: "Manage users in the consent management capability"
-description: "All users in an org that owns consent management can get access to the service. Admins add users and assign them the required permissions in audience insights."
-ms.date: 04/13/2022
+description: "All users in an org that owns consent management can get access to the service. Admins add users and assign them the required permissions in Customer Insights."
+ms.date: 04/27/2022
 
 ms.subservice: consent-management
 ms.topic: how-to
