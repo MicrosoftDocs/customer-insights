@@ -27,7 +27,7 @@ Once consent data is in the system, go to the **Consent** page in the Consent Ce
 
 ## Set up rules
 
-Consent data rules will be available in audience insights where you can apply them as rules to individual segments or exports. You can assign these as default rules to purposes and subscriptions that automatically apply to all segments. The app guides you through the steps to complete the mapping of consent data. 
+Consent data rules will be available in Customer Insights where you can apply them as rules to individual segments or exports. You can assign these as default rules to purposes and subscriptions that automatically apply to all segments. The app guides you through the steps to complete the mapping of consent data. 
 
 1. In the Consent Center, go to **Data sources** and select **Set rules** to start the **Map consent data** process.
 
@@ -47,9 +47,9 @@ The first step defines if customers should be included or excluded based on thei
 
 ### Apply rules as default (optional)
 
-In this step, you can choose which purposes and subscriptions will have the rule mappings applied to all segments in audience insights. Rules for the imported consent data are automatically synced to audience insights. Administrators have to [activate the consent rules](../audience-insights/activate-consent.md) and can allow users to override the default selection.
+In this step, you can choose which purposes and subscriptions will have the rule mappings applied to all segments in Customer Insights. Rules for the imported consent data are automatically synced to Customer Insights. Administrators have to [activate the consent rules](../activate-consent.md) and can allow users to override the default selection.
 
-1. In the **Apply rules as default (optional)** step, choose which purposes and/or subscriptions to apply the rule to by default. These rules are then applied to all segments in audience insights.
+1. In the **Apply rules as default (optional)** step, choose which purposes and/or subscriptions to apply the rule to by default. These rules are then applied to all segments in Customer Insights.
 
    :::image type="content" source="media/apply-rules-default.png" alt-text="Select the data the rules apply to by default. ":::
 
@@ -59,8 +59,8 @@ In this step, you can choose which purposes and subscriptions will have the rule
 
 1. Review the configuration and select **Set rules** to complete the process. 
 
-1. If you've selected certain rules to apply by default, select **Activate consent rules in Customer Insights** to go to audience insights and [activate the default consent rules](../audience-insights/activate-consent.md). Otherwise, select **Done** to complete the guided experience and enforce the mapping in business processes.
+1. If you've selected certain rules to apply by default, select **Activate consent rules in Customer Insights** to go to Customer Insights and [activate the default consent rules](../activate-consent.md). Otherwise, select **Done** to complete the guided experience and enforce the mapping in business processes.
 
-## Activate rules in audience insights
+## Activate rules in Customer Insights
 
-Before the rules are applied to business processes through audience insights, an admin has to activate them. For more information, see [Activate consent rules](../audience-insights/activate-consent.md).
+Before the rules are applied to business processes through Customer Insights, an admin has to activate them. For more information, see [Activate consent rules](../activate-consent.md).

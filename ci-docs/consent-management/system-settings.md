@@ -23,7 +23,7 @@ The [consent management capability](overview.md) in Dynamics 365 Customer Insigh
 
 During public preview, the app is only available in English and French. More languages are added when the capability is generally available. 
 
-To change the language, [update your language settings in Customer Insights](../audience-insights/system.md#update-the-settings).
+To change the language, [update your language settings in Customer Insights](../system.md#update-the-settings).
 
 ## Stop using the consent management capability
 
@@ -31,7 +31,7 @@ After an admin has provisioned the consent management capability, it's automatic
 
 However, there are some workarounds that an admin can use to stop enforcing consent rules and hence disable the functionality related to consent management. 
 
-1. In audience insights, go to System > Consent (preview). 
+1. In Customer Insights, go to **System** > **Consent (preview)**. 
 
 1. Select the checkbox to allow overrides. 
 
@@ -41,7 +41,7 @@ However, there are some workarounds that an admin can use to stop enforcing cons
 
 -OR- 
 
-1. In audience insights, go to System > Consent (preview). 
+1. In Customer Insights, go to **System** > **Consent (preview)**. 
 
 1. In the **Enable consent checks** section, set the toggle to **Off**. 
 
