@@ -71,7 +71,7 @@ Connectors with a checkmark in the **Customer Insights (Dataflows)** column are 
 
 1. Next to the data source you'd like to update, select **Edit**.
 
-   [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 1. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
