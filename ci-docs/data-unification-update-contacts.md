@@ -56,7 +56,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off.
 
-1. Select **Next** to manage deduplication rules, or select **Save and close** and return to [Update the contact unification settings](#update-the-unified-contact-profile).
+1. Select **Next** to manage deduplication rules, or select **Save and close** and return to [Update the contact unification settings](#update-the-contact-unification-settings).
 
 ## Manage deduplication rules
 
@@ -82,7 +82,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
    1. Select **Done**.
 
-1. Select **Next** to manage matching conditions, or select **Save and close** and return to [Update the contact unification settings](#update-the-unified-contact-profile).
+1. Select **Next** to manage matching conditions, or select **Save and close** and return to [Update the contact unification settings](#update-the-contact-unification-settings).
 
 ## Manage match rules
 
@@ -107,7 +107,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
    - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more** > **Delete** on the rule.
 
-1. Select **Next** to manage unified fields, or select **Save and close** and return to [Update the contact unification settings](#update-the-unified-contact-profile).
+1. Select **Next** to manage unified fields, or select **Save and close** and return to [Update the contact unification settings](#update-the-contact-unification-settings).
 
 ## Manage unified fields
 
@@ -119,7 +119,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. To group related profiles into a cluster, go to [Group profiles into households or clusters](#group-profiles-into-households-or-clusters).
 
-1. Select **Next** to manage semantic mappings, or select **Save and close** and return to [Update the contact unification settings](#update-the-unified-contact-profile).
+1. Select **Next** to manage semantic mappings, or select **Save and close** and return to [Update the contact unification settings](#update-the-contact-unification-settings).
 
 ### Group profiles into households or clusters
 
