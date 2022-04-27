@@ -151,7 +151,7 @@ As part of the customer profile generation configuration process, you can define
 
    The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing**.
 
-   [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
 
 1. When the matching process completes, select **Edit** on the **Matching conditions** tile.
 
@@ -171,4 +171,4 @@ As part of the customer profile generation configuration process, you can define
 
    The **Duplicate records**, **Matching conditions**, and **Unified customer fields** tiles show **Queued** or **Refreshing**.
 
-   [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]

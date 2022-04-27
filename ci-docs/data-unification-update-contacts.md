@@ -153,7 +153,7 @@ What can you change?
 
    The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing**.
 
-   [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
 
 1. When the matching process completes, select **Edit** on the **Matching conditions** tile.
 
@@ -169,4 +169,4 @@ To update the unified contact profile entity without impacting dependencies (suc
 
 To update the unified profile and all dependencies, select **Unify profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the contact profiles reflect any changes you made.
 
-[!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+[!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]

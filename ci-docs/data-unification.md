@@ -51,4 +51,4 @@ After completing data unification, you can optionally:
 - [Enrich your data](enrichment-hub.md) to get a wider range of insights about your customers
 - [Define activities](activities.md) from some of the ingested attributes
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

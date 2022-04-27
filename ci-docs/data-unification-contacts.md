@@ -79,7 +79,7 @@ This last step in the unification process shows a summary of the steps in the pr
 
 1. If you are satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created. The unification algorithm takes some time to complete and you can't change the configuration until it completes.
 
-   [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
 
 When the unification process completes, the unified contact profile entity, called **ContactsCustomer**, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Contacts* entity. All subsequent runs expand that entity.
 

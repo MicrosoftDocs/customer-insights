@@ -86,7 +86,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 ## Task 2 - Data unification
 
-[!INCLUDE [sample-guide-unification](../includes/sample-guide-unification.md)]
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## Task 3 - Configure product recommendation prediction
 
