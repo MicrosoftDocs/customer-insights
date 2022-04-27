@@ -26,7 +26,7 @@ This last step in the unification process shows a summary of the steps in the pr
 
 1. If you are satisfied with your selections, select **Create customer profiles**. The **Unify** page displays while the unified customer profile is being created. The unification algorithm takes some time to complete and you can't change the configuration until it completes.
 
-   [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
 
 When the unification process completes, the unified customer profile entity, called **Customers**, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
 
@@ -36,4 +36,4 @@ When needed, [make changes to the unification settings](data-unification-update.
 
 Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]
