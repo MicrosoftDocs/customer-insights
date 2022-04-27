@@ -91,6 +91,8 @@
       href: enrichment-enhanced-company-data.md
     - name: Enrich with Azure Maps
       href: enrichment-azure-maps.md
+    - name: Enrich with Dun & Bradstreet
+      href: enrichment-dnb.md
     - name: Enrich with HERE Technologies
       href: enrichment-here.md
     - name: Enrich with Leadspace
