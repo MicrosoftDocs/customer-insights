@@ -124,7 +124,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
    The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing**.
 
-   [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
 
 1. When the matching process completes, select **Edit** on the **Matching conditions** tile.
 
@@ -144,4 +144,4 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
    The **Duplicate records**, **Matching conditions**, and **Unified customer fields** tiles show **Queued** or **Refreshing**.
 
-   [!INCLUDE [m3-task-details-include](../includes/m3-task-details.md)]
+   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
