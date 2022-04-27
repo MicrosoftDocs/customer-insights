@@ -1,9 +1,9 @@
 ---
-title: Product overview
+title: Dynamics 365 Customer Insights product overview
 author: m-hartmann
-description: Get an overview for Dynamics 365 Customer Insights and its capabilities.
+description: Get an overview for Dynamics 365 Customer Insights and its main features.
 ms.author: mhart
-ms.date: 07/30/2021
+ms.date: 04/12/2022
 
 ms.topic: overview
 ms.manager: shellyha
@@ -12,25 +12,27 @@ ms.manager: shellyha
 
 # Product overview for Dynamics 365 Customer Insights
 
-[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) is a part of Microsoft's customer data platform (CDP) that helps deliver personalized customer experiences. The platform's capabilities provide insights into who your customers are and how they engage with your platform. Unify customer data across multiple sources to get a single view of customers.
+[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) is Microsoft's customer data platform (CDP) that helps deliver personalized customer experiences. The application provides a holistic view of customers with unmatched time to insight. Gain the most comprehensive view of your customers by unifying customer data with operational and IoT data in real-time. Enrich customer profiles with first and third-party data sources. 
 
-[Audience insights](audience-insights/overview.md) helps you transform your business into a customer-centric organization. Marketing, sales, and service professionals have the insights they need to personalize experiences. Connect data from transactional, behavioral, and observational sources to create a 360-degree customer view. See results faster with a CDP designed to deliver insights that can be acted upon. 
-
-[Engagement insights](engagement-insights/overview.md) was a preview capability in Customer Insights that focuses on gathering web and mobile events for additional insights The preview has ended on February 15, 2022.
+Customer Insights helps you transform your business into a customer-centric organization by empowering your marketing, sales, and service professionals to tailor 1:1 interactions at-scale. Turnkey integrations with Microsoft and third-party applications can be used to activate real-time insights to drive meaningful actions.
  
-## Choose a capability
+Connect data from transactional, behavioral, and demographic data sources to create 360-degree customer views. Derive out-of-the-box insights with prebuilt AI models or rapidly build, test, and deploy custom AI/ML models using advanced analytics solutions at limitless scale.
 
-:::image type="content" source="engagement-insights/media/choose_focus.png" alt-text="Customer insights page that lets you navigate to audience insights or engagement insights.":::
-
-To choose a capability
-
-1. In the navigation pane, select **All apps** to open the **Choose your focus** window.
-1. Select **Go now** to navigate to the capability of your choice.
+Maintain full control over your customer data to ensure the highest level of data governance and compliance with a self-service, enterprise grade CDP built on Microsoft Azure. Support the General Data Protection Regulation (GDPR) and other legislative requirements and industry standards through built-in privacy, security, and governance, and consent management tools.
 
 ## Pricing and licensing
+Customer Insights is licensed per tenant and includes both business-to-consumer (B2C) and business-to-business (B2B) capabilities. You can purchase additional capacity with add-on licenses to increase the number of profiles and accounts.
 
-Customer Insights is licensed per tenant and includes multiple capabilities. You can purchase additional capacity and license to increase the default quota. 
 - [Pricing overview](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 - Capacity and entitlements: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
+- [Microsoft Volume Licensing website](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)
+
+## Try Customer Insights and get started
+
+Start a [free Customer Insights trial](https://signup.microsoft.com/create-account/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https:%2F%2Fhome.ci.ai.dynamics.com%2Fstart%2Ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d) today to test the application with your own customer data. [Find out how you can quickly access and explore many of the application’s key features](trial-signup.md). 
+
+Browse [featured learning resources](https://dynamics.microsoft.com/ai/customer-insights/resources/) including analyst reports, on-demand webinars and customer stories.
+
+Learn how you can build a deeper understanding of your customers with our [get started guide](get-started.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
