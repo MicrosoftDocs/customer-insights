@@ -45,9 +45,9 @@ The rules you created automatically sync with Customer Insights. [Activate defau
 
 The imported consent data and related rules are visualized on the **Home** page of the Consent Center. Charts inform you about the recent data imports and rules.
 
-- **Communication preferences breakdown** lists the communication channels for which you imported consent data. It visualizes the amount of profiles that have provided consent alongside of the profiles that have not provided consent for each communication channel.
-- **Consent rules breakdown** summarizes the consent preferences across all communication channels.
-- **Data use purpose breakdown** lists the purposes for using consent data and the aggregated consent preferences across all profiles.
-- **Subscription breakdown** informs about the consent preferences for data sources that import subscription data.
+- **Communication preferences breakdown** helps you analyze your customers' consent across the different communication channels, such as, Email and Text Message to help you quickly identify the channel that has the best reach. It visualizes the total number of data subject identifiers (Emails, Phone Numbers, etc) that have provided consent alongside of the data subject identifiers that have not provided consent for each communication channel.
+- **Consent rules breakdown** gives you an quick summary view of the total number of data subject identifiers that have provided consent alongisde of the data subject identifiers that have not provided consent to help you quickly identify the number of contactable customers in your overall customer base.
+- **Data use purpose breakdown** helps you quickly visualize the top data use purposes for which your customer base has provided consent and breaks it down to highlight the total number of data subject identifiers that have provided consent alongisde of the data subject identifiers that have not provided consent.
+- **Subscription breakdown** helps you quickly visualize the top subscriptions for which your customer base has provided consent and breaks it down to highlight the total number of data subject identifiers that have provided consent alongisde of the data subject identifiers that have not provided consent. 
 
 The home page also provides a set of helpful links that point to relevant articles in the documentation.
