@@ -276,6 +276,8 @@
   items:
     - name: Set up the system configuration
       href: system.md
+    - name: Configure security settings
+      href: security-overview.md
     - name: Assign user permissions
       href: permissions.md
     - name: Connections overview
