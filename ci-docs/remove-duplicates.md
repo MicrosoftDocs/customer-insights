@@ -74,11 +74,9 @@ If you enriched entities on the data source level to help improve your unificati
 
    1. Select **Done** to apply your merge preferences.
 
-1. Select **Done** to apply your deduplication selections. The deduplication stats will display after the unification process is complete and run.
-
-1. After defining the deduplication rules, select **Next**.
+1. After defining the deduplication rules and merge preferences, select **Next**.
    - For a single entity, go to [Unify fields](merge-entities.md).
-   - For multiple entities, go to [Matching conditions](match-entities.md).
+   - For multiple entities, go to [Match conditions](match-entities.md).
 
 ## Deduplication output as an entity
 

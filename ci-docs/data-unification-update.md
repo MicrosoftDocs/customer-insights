@@ -69,7 +69,7 @@ You can't remove an attribute or an entity if they've already been unified.
 1. To manage rules, choose any of the following:
    - **Create a new rule**: Select **Add rule** under the appropriate entity.
    - **Change rule conditions**: Select **Show more (...)** > **Edit** on the rule and choose different fields.
-   - **Match preview**: Select **Show more (...)** > **Match preview** on the rule to view the last run results.
+   - **Preview**: Select **Show more (...)** > **Preview** on the rule to view the last run results for this rule.
    - **Deactivate a rule**: Select **Show more (...)** > **Deactivate** on the rule to retain a deduplication rule while excluding it from the matching process.
    - **Duplicate a rule**: Select **Show more (...)** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more (...)** > **Delete** on the rule.
@@ -97,7 +97,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
    - **Matched and non-matched records** highlights how many unique records remain after processing the match rules.
    - **Matched records only** shows the number of matches across all of your match pairs.
 
-1. To view the results of all rules, select **View last run** on a rule. The results displays. You can also download the results.
+1. To view the results of all rules, select **View last run**. The results displays. You can also download the results.
 
 1. To manage rules, choose any of the following:
    - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want.

@@ -65,9 +65,11 @@ For each entity, perform the following steps.
 
 1. For attributes where a semantic type is automatically identified, review these attributes and types as they'll be used to combine your entities. These attributes are listed under **Review mapped fields**. Ensure the types you chose are consistent across all the selected entities.
 
-1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, or enter your custom attribute-type name. These attributes are listed under **Define the data in the unmapped fields**.
+1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, enter your custom attribute-type name, or leave them unmapped. These attributes are listed under **Define the data in the unmapped fields**.
 
-1. After completing the steps for each entity, select **Next**.
+1. After completing the steps for each entity, select **Save source fields**.
+
+1. Select **Next**.
 
 > [!div class="nextstepaction"]
 > [Next step: Remove duplicates](remove-duplicates.md)
