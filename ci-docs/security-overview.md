@@ -20,7 +20,6 @@ Go to **Admin** > **Security** to configure the settings.
 The **Security** page includes the following tabs:
 - [Users](#users-tab)
 - [APIs](#apis-tab)
-- [Private Links](#private-links-tab)
 - [Key Vault](#key-vault-tab)
 
 ## Users tab
@@ -34,12 +33,6 @@ View and manage the keys to use the [Customer Insights APIs](apis.md) with the d
 You can create new primary and secondary keys by selecting **Regenerate primary** or **Regenerate secondary**. 
 
 To block API access to the environment, select **Disable**. If APIs are disabled, you can select **Enable** to grant access again.
-
-## Private Links tab
-
-<needs context and content for intro>
-
-
 
 ## Key Vault tab
 
