@@ -5,8 +5,8 @@ ms.date: 04/28/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: mhart
-ms.author: m-hartmann
+author: m-hartmann
+ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
 ---
@@ -18,10 +18,10 @@ The **Security** page lists options to configure user permissions and features t
 Go to **Admin** > **Security** to configure the settings.
 
 The **Security** page includes the following tabs:
-- Users
-- APIs
-- Private Links
-- Key Vault
+- [Users](#users-tab)
+- [APIs](#apis-tab)
+- [Private Links](#private-links-tab)
+- [Key Vault](#key-vault-tab)
 
 ## Users tab
 
@@ -36,6 +36,8 @@ You can create new primary and secondary keys by selecting **Regenerate primary*
 To block API access to the environment, select **Disable**. If APIs are disabled, you can select **Enable** to grant access again.
 
 ## Private Links tab
+
+<needs context and content for intro>
 
 
 
