@@ -5,8 +5,8 @@ ms.date: 09/30/2021
 
 ms.subservice: consent-management
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
 searchScope: 

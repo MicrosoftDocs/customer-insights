@@ -4,8 +4,8 @@ description: "Follow these steps to link consent data and activate consent check
 ms.date: 11/12/2021
 ms.subservice: audience-insights
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
 ---
