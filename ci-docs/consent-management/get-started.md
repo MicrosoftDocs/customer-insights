@@ -1,7 +1,7 @@
 ---
 title: "Quickstart guide to consent management"
 description: "Follow these four steps to quickly set up consent management, import consent data, and configure consent data rules in Dynamics 365 Customer Insights."
-ms.date: 04/13/2022
+ms.date: 04/28/2022
 
 ms.subservice: consent-management
 ms.topic: how-to
@@ -45,9 +45,9 @@ The rules you created automatically sync with Customer Insights. [Activate defau
 
 The imported consent data and related rules are visualized on the **Home** page of the Consent Center. Charts inform you about the recent data imports and rules.
 
-- **Communication preferences breakdown** helps you analyze your customers' consent across the different communication channels, such as, Email and Text Message to help you quickly identify the channel that has the best reach. It visualizes the total number of data subject identifiers (Emails, Phone Numbers, etc) that have provided consent alongside of the data subject identifiers that have not provided consent for each communication channel.
-- **Consent rules breakdown** gives you an quick summary view of the total number of data subject identifiers that have provided consent alongisde of the data subject identifiers that have not provided consent to help you quickly identify the number of contactable customers in your overall customer base.
-- **Data use purpose breakdown** helps you quickly visualize the top data use purposes for which your customer base has provided consent and breaks it down to highlight the total number of data subject identifiers that have provided consent alongisde of the data subject identifiers that have not provided consent.
-- **Subscription breakdown** helps you quickly visualize the top subscriptions for which your customer base has provided consent and breaks it down to highlight the total number of data subject identifiers that have provided consent alongisde of the data subject identifiers that have not provided consent. 
+- **Communication preferences breakdown** helps you analyze your customers' consent across the different communication channels like email and text message to help you quickly identify the channel that has the best reach. It shows the total number of data subject identifiers like emails and phone numbers that have provided consent and the data subject identifiers that haven't provided consent for each communication channel.
+- **Consent rules breakdown** gives you a quick summary view of the total number of data subject identifiers that have provided consent and the data subject identifiers that haven't provided consent to help you quickly identify the number of contactable customers in your customer base.
+- **Data use purpose breakdown** helps you quickly visualize the top data use purposes for which your customer base has provided consent and breaks it down to highlight the total number of data subject identifiers that have provided consent and the data subject identifiers that haven't provided consent.
+- **Subscription breakdown** helps you quickly visualize the top subscriptions for which your customer base has provided consent and breaks it down to highlight the total number of data subject identifiers that have provided consent and the data subject identifiers that haven't provided consent. 
 
 The home page also provides a set of helpful links that point to relevant articles in the documentation.
