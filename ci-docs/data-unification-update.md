@@ -66,6 +66,8 @@ You can't remove an attribute or an entity if they've already been unified.
 
    The number of duplicate records found displays. The **Records deduplicated** column shows which entities had duplicate records.
 
+1. To view the results of all deduplication rules, select **View last run**. The results displays. You can also download the results.
+
 1. To manage rules, choose any of the following:
    - **Create a new rule**: Select **Add rule** under the appropriate entity.
    - **Change rule conditions**: Select **Show more (...)** > **Edit** on the rule and choose different fields.
@@ -102,7 +104,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 1. To manage rules, choose any of the following:
    - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want.
    - **Change rule conditions**: Select **Show more** > **Edit** on the rule and choose different fields or add and remove conditions.
-   - **Match preview**: Select **Show more** > **Match preview** on the rule and to view the last run results. If no matching records were found in the last run, Match preview does not display.
+   - **Preview**: Select **Show more** > **Preview** on the rule and to view the last run results. If no matching records were found in the last run, Match preview does not display.
    - **Deactivate a rule**: Select **Show more** > **Deactivate** on the rule to retain a match rule while excluding it from the matching process.
    - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more** > **Delete** on the rule.
@@ -139,9 +141,9 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. From the **Data** > **Unify** page, select:
 
-   - **Unify customer profiles**: To update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+   - **Unify customer profiles**: Updates the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
-   - **Unify customer profiles and dependencies**: To update the unified profile and all dependencies. All processes are rerun automatically. After all downstream processes have completed, the customer profiles reflect any changes you made.
+   - **Unify customer profiles and dependencies**: Updates the unified profile and all dependencies. All processes are rerun automatically. After all downstream processes have completed, the customer profile reflects the updated data.
 
    The **Duplicate records**, **Matching conditions**, and **Unified customer fields** tiles show **Queued** or **Refreshing**.
 

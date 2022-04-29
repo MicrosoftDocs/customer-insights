@@ -38,7 +38,7 @@ If you enriched entities on the data source level to help improve your unificati
 
    1. In the **Add rule** pane, enter the following information:
       - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
-        - **Normalize**: Select from following normalization options for the selected attributes.
+      - **Normalize**: Select from following normalization options for the selected attributes.
         - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
         - **Symbols**: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
         - **Text to lower case: Converts all character to lower case**. *ALL CAPS and Title Case* becomes *all caps and title case*.
@@ -52,7 +52,7 @@ If you enriched entities on the data source level to help improve your unificati
 
       :::image type="content" source="media/m3_duplicates_add.png" alt-text="Screenshot of Add rule pane for removing duplicates.":::
 
-   1. Optionally, select **Add** > **Add condition** to add more conditions to the rule.
+   1. Optionally, select **Add** > **Add condition** to add more conditions to the rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
 
    1. Optionally, **Add** > **Add exception** to add exceptions to the rule. Exceptions are used to address rare cases of false positives and false negatives. For more information, see [Add exceptions to a rule](match-entities.md#add-exceptions-to-a-rule).
 

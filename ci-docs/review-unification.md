@@ -28,7 +28,7 @@ This last step in the unification process shows a summary of the steps in the pr
 
    [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
 
-When the unification process completes, the unified customer profile entity, called **Customers**, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+When the unification process completes, the unified customer profile entity, called *Customer*, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
 
 When needed, [make changes to the unification settings](data-unification-update.md) and rerun the unified profile.
 

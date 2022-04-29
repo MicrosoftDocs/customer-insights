@@ -21,6 +21,9 @@ searchScope:
 
 This step in unification defines the match order and rules for cross-entity matching. This step requires at least two entities.
 
+> [!NOTE]
+> Once you create your match conditions and select **Next**, you cannot remove a selected entity or attribute. If needed, select **Back** to review the selected entities and attributes before continuing.
+
 ## Include enriched entities (preview)
 
 If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched entities on the **Duplicate records** page, you do not need to select them again.
@@ -41,7 +44,7 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 > Important considerations:
 >
 > - Choose the entity with the most complete and reliable profile data about your customers as the primary entity.
-> - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
+> - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as the primary entity.
 
 1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **Contacts:eCommerce** as the primary entity and **CustomerLoyalty:Loyalty** as the second entity.
 
