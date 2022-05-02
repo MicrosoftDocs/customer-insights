@@ -37,9 +37,9 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your **[Criteo client ID and Client secret](https://developers.criteo.com/marketing-solutions/docs/get-credentials)**. The Client ID and Client Secret can be found in a text file which is automatically downloaded.
-
 1. Select **I agree** to confirm the **Data privacy and compliance** and select **Connect** to initialize the connection to Criteo.
+
+1. Select **Authenticate with Criteo** and provide your Admin username and credentials for Criteo. 
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
