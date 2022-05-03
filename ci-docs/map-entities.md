@@ -34,7 +34,7 @@ The first step in unification is selecting the entities and fields within your d
 
 1. For each selected entity, identify the fields you want to combine and reconcile. These fields are called *Attributes*. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the checkbox on the entity level. You can search on keywords across all attributes and entities to select the required attributes you want to map.
 
-   :::image type="content" source="media/m3_select_entities.png" alt-text="Screenshot of selected entities and attributes." lightbox="media/m3_select_entities.png"::::::
+   :::image type="content" source="media/m3_select_entities.png" alt-text="Screenshot of selected entities and attributes."::::::
 
    In this example, we're adding the **Contacts** and **CustomerLoyalty** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
 
@@ -42,7 +42,7 @@ The first step in unification is selecting the entities and fields within your d
 
 ## Select primary key and semantic type for attributes
 
-   :::image type="content" source="media/m3_select_primary.png" alt-text="Screenshot of selected entities with primary key not selected.":::
+   :::image type="content" source="media/m3_select_primary.png" alt-text="Screenshot of selected entities with primary key not selected." lightbox="media/m3_select_primary.png":::
 
 For each entity, perform the following steps.
 

@@ -18,7 +18,7 @@ searchScope:
 
 # Update the unification settings
 
-After unification, the **Data** > **Unify** page shows the results of each step in the unification process. Each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of entity attributes (fields) defined and **Duplicate records** shows the number of duplicate records found.
+After unification, the **Data** > **Unify** page shows the results of each step in the unification process. Each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
 
 > [!TIP]
 > The **Matching conditions** tile displays only if multiple entities were selected.
@@ -38,7 +38,7 @@ After unification, the **Data** > **Unify** page shows the results of each step 
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
    - To update the unified customer profile (with or without dependencies), see [Run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
-   - To evaluate the quality of your matching conditions between two or more entities, see [Run matching conditions](#run-matching-conditions).
+   - To evaluate the quality of your matching conditions between two or more entities, see [Run matching conditions](#run-matching-conditions). Run matching conditions does not display for single entity.
 
 ## Edit source fields
 
@@ -54,19 +54,15 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off.
 
-1. Select **Save and close**.
-
 1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings).
 
 ## Manage deduplication rules
 
 1. Select **Edit** on the **Duplicate records** tile.
 
-   :::image type="content" source="media/m3_duplicates_edit.png" alt-text="Screenshot of Duplicate records page showing number of duplicated records":::
+   :::image type="content" source="media/m3_duplicates_edit.png" alt-text="Screenshot of Duplicate records page showing number of duplicated records" lightbox="media/m3_duplicates_edit.png":::
 
-   The number of duplicate records found displays. The **Records deduplicated** column shows which entities had duplicate records.
-
-1. To view the results of all deduplication rules, select **View last run**. The results displays. You can also download the results.
+   The number of duplicate records found displays under **Duplicates**. The **Records deduplicated** column shows which entities had duplicate records and the percentage of duplicated records.
 
 1. To manage rules, choose any of the following:
    - **Create a new rule**: Select **Add rule** under the appropriate entity.
@@ -92,7 +88,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Select **Edit** on the **Matching conditions** tile.
 
-   :::image type="content" source="media/match-rules-management.png" alt-text="Screenshot of the dropdown menu with match rule options.":::
+   :::image type="content" source="media/m3_match_edit.png" alt-text="Screenshot of the Match rules and conditions page with statistics.":::
 
    The page displays the match order and defined rules as well as the following statistics:
    - **Unique source records** shows the number of individual source records that were processed in last match run.
@@ -104,7 +100,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 1. To manage rules, choose any of the following:
    - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want.
    - **Change rule conditions**: Select **Show more** > **Edit** on the rule and choose different fields or add and remove conditions.
-   - **Preview**: Select **Show more** > **Preview** on the rule and to view the last run results. If no matching records were found in the last run, Match preview does not display.
+   - **Preview**: Select **Show more** > **Preview** on the rule to view the last run results for this rule.
    - **Deactivate a rule**: Select **Show more** > **Deactivate** on the rule to retain a match rule while excluding it from the matching process.
    - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications.
    - **Delete a rule**: Select **Show more** > **Delete** on the rule.

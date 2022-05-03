@@ -30,6 +30,8 @@ This last step in the unification process shows a summary of the steps in the pr
 
 When the unification process completes, the unified customer profile entity, called *Customer*, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
 
+We recommend you review the results, particularly the quality of your [match rules](data-unification-update.md#manage-match-rules) and refine them if necessary.
+
 When needed, [make changes to the unification settings](data-unification-update.md) and rerun the unified profile.
 
 ## Next Step

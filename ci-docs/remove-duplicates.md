@@ -54,11 +54,11 @@ If you enriched entities on the data source level to help improve your unificati
 
    1. Optionally, select **Add** > **Add condition** to add more conditions to the rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
 
-   1. Optionally, **Add** > **Add exception** to add exceptions to the rule. Exceptions are used to address rare cases of false positives and false negatives. For more information, see [Add exceptions to a rule](match-entities.md#add-exceptions-to-a-rule).
+   1. Optionally, **Add** > **Add exception** to [add exceptions to the rule](match-entities.md#add-exceptions-to-a-rule). Exceptions are used to address rare cases of false positives and false negatives.
 
    1. Select **Done** to create the rule.
 
-1. Optionally, add more rules.
+1. Optionally, [add more rules](#define-deduplication-on-a-match-entity).
 
 1. Select an entity and then **Edit merge preferences**.
 
