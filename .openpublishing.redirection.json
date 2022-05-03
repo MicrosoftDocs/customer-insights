@@ -1303,7 +1303,7 @@
     },
     {
       "source_path": "ci-docs/audience-insights/index.yml",
-      "redirect_url": "/dynamics365/customer-insights/index.yml",
+      "redirect_url": "/dynamics365/customer-insights/",
       "redirect_document_id": false
     },
     {

@@ -19,7 +19,7 @@ searchScope:
 
 The **Permissions** page is where you'll set up roles and permissions for using Customer Insights.
 
-You need to have administrator permissions to see the page. To access the permissions page, go to **Admin** > **Permissions**.
+You need to have administrator permissions to see the page. To access the permissions page, go to **Admin** > **Security** > **Users**.
 
 There are three types of roles:
 
@@ -65,7 +65,7 @@ There are three types of roles:
 
 ## Assign roles and permissions
 
-1. Go to **Admin** > **Permissions**.
+1. Go to **Admin** > **Security** > **Users***.
 
 1. Select **Add users** to open the **Add/Edit permissions** pane.
 
@@ -75,7 +75,7 @@ There are three types of roles:
 
 ## View current permissions
 
-Go to **Admin** > **Permissions** to see what role assignments are currently active.
+Go to **Admin** > **Security** > **Users** to see what role assignments are currently active.
 
 - The **Type** column specifies a single user, group, or application. The system supports individual users and groups.
 - Roles are specified under the **Role** column.
