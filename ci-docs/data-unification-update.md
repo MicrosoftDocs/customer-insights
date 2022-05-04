@@ -1,7 +1,7 @@
 ---
 title: "Update the unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the unification settings."
-ms.date: 04/22/2022
+ms.date: 05/04/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -18,14 +18,14 @@ searchScope:
 
 # Update the unification settings
 
-After unification, the **Data** > **Unify** page shows the results of each step in the unification process. Each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
-
-> [!TIP]
-> The **Matching conditions** tile displays only if multiple entities were selected.
+To review or change any unification settings once a unified profile has been created, perform the following steps.
 
 1. Go to **Data** > **Unify**.
 
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
+
+   > [!TIP]
+   > The **Matching conditions** tile displays only if multiple entities were selected.
 
 1. Choose what you want to update:
    - [Source fields](#edit-source-fields) to add entities or attributes or change attribute types.
@@ -38,7 +38,7 @@ After unification, the **Data** > **Unify** page shows the results of each step 
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
    - To update the unified customer profile (with or without dependencies), see [Run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
-   - To evaluate the quality of your matching conditions between two or more entities, see [Run matching conditions](#run-matching-conditions). Run matching conditions does not display for single entity.
+   - To evaluate the quality of your matching conditions between two or more entities, see [Run matching conditions](#run-matching-conditions). Run matching conditions does not update the unified customer profile. Run matching conditions does not display for single entity.
 
 ## Edit source fields
 
@@ -66,11 +66,11 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. To manage rules, choose any of the following:
    - **Create a new rule**: Select **Add rule** under the appropriate entity.
-   - **Change rule conditions**: Select **Show more (...)** > **Edit** on the rule and choose different fields.
-   - **Preview**: Select **Show more (...)** > **Preview** on the rule to view the last run results for this rule.
-   - **Deactivate a rule**: Select **Show more (...)** > **Deactivate** on the rule to retain a deduplication rule while excluding it from the matching process.
-   - **Duplicate a rule**: Select **Show more (...)** > **Duplicate** on the rule to create a similar rule with modifications.
-   - **Delete a rule**: Select **Show more (...)** > **Delete** on the rule.
+   - **Change rule conditions**: Select the rule and then **Edit**. Change fields, add or remove conditions, or add or remove exceptions.
+   - **Preview**: Select the rule and then **Preview** to view the last run results for this rule.
+   - **Deactivate a rule**: Select the rule and then **Deactivate** to retain a deduplication rule while excluding it from the matching process.
+   - **Duplicate a rule**: Select the rule and then **Duplicate** to create a similar rule with modifications.
+   - **Delete a rule**: Select the rule and then **Delete**.
 
 1. To change merge preferences, select the entity. You can only change the preferences if a rule is created.
    1. Select **Edit merge preferences** and change the **Record to keep** option.
@@ -95,15 +95,20 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
    - **Matched and non-matched records** highlights how many unique records remain after processing the match rules.
    - **Matched records only** shows the number of matches across all of your match pairs.
 
-1. To view the results of all rules, select **View last run**. The results displays. You can also download the results.
+1. To view the results of all rules and their scores, select **View last run**. The results displays, including the alternate contact IDs. You can download the results.
+
+1. To view the results and scores of a particular rule, select the rule and then **Preview**. The results displays. You can download the results.
+
+1. To view the results of a particular condition on a rule, select the rule and then **Edit**. On the Edit pane, select **Preview** under the condition. You can download the results.
+
+   :::image type="content" source="media/m3_match_rule_preview.png" alt-text="Graphical representation of unmatched and matched records including a list of the data.":::
 
 1. To manage rules, choose any of the following:
    - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want.
-   - **Change rule conditions**: Select **Show more** > **Edit** on the rule and choose different fields or add and remove conditions.
-   - **Preview**: Select **Show more** > **Preview** on the rule to view the last run results for this rule.
-   - **Deactivate a rule**: Select **Show more** > **Deactivate** on the rule to retain a match rule while excluding it from the matching process.
-   - **Duplicate a rule**: Select **Show more** > **Duplicate** on the rule to create a similar rule with modifications.
-   - **Delete a rule**: Select **Show more** > **Delete** on the rule.
+   - **Change rule conditions**: Select the rule and then **Edit**. Change fields, add or remove conditions, or add or remove exceptions.
+   - **Deactivate a rule**: Select the rule and then **Deactivate** to retain a match rule while excluding it from the matching process.
+   - **Duplicate a rule**: Select the rule and then **Duplicate** to create a similar rule with modifications.
+   - **Delete a rule**: Select the rule and then **Delete**.
 
 1. Select **Next** to make changes to unified fields, or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings).
 

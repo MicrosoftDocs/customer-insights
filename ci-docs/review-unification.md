@@ -1,7 +1,7 @@
 ---
 title: "Review data unification"
-description: "Review and finalize the data unification steps and create unified customer profiles."
-ms.date: 04/22/2022
+description: "Review the data unification steps, create unified customer profiles, and review the results"
+ms.date: 05/04/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -16,11 +16,13 @@ searchScope:
   - customerInsights
 ---
 
-# Review the data unification steps
+# Review data unification
 
 This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified profile.
 
 :::image type="content" source="media/m3_review.png" alt-text="Screenshot of Review and Create customer profiles.":::
+
+## Review the data unification steps
 
 1. Select **Edit** on any of the data unification steps to review and make any changes.
 
@@ -29,6 +31,15 @@ This last step in the unification process shows a summary of the steps in the pr
    [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
 
 When the unification process completes, the unified customer profile entity, called *Customer*, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+
+## Review the results of data unification
+
+After unification, the **Data** > **Unify** page shows the number of unified customer profiles. The results of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
+
+:::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
+
+> [!TIP]
+> The **Matching conditions** tile displays only if multiple entities were selected.
 
 We recommend you review the results, particularly the quality of your [match rules](data-unification-update.md#manage-match-rules) and refine them if necessary.
 

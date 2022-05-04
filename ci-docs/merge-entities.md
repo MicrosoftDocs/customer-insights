@@ -2,7 +2,7 @@
 title: "Unify customer or account fields"
 description: "Merge entities to create unified customer profiles."
 recommendations: false
-ms.date: 04/25/2022
+ms.date: 05/04/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
