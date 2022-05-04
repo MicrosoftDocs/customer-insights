@@ -82,7 +82,7 @@
           href: match-entities.md
         - name: Unify customer fields
           href: merge-entities.md
-        - name: Review the data unification steps
+        - name: Review data unification
           href: review-unification.md
         - name: Update the unification settings
           href: data-unification-update.md

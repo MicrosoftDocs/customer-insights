@@ -38,7 +38,7 @@ To review or change any unification settings once a unified profile has been cre
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
    - To update the unified customer profile (with or without dependencies), see [Run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
-   - To evaluate the quality of your matching conditions between two or more entities, see [Run matching conditions](#run-matching-conditions). Run matching conditions does not update the unified customer profile. Run matching conditions does not display for single entity.
+   - To evaluate the quality of your matching conditions between two or more entities without updating the unified profile, see [Run matching conditions](#run-matching-conditions). The **Run matching conditions only** option does not display for single entity.
 
 ## Edit source fields
 
@@ -64,6 +64,8 @@ You can't remove an attribute or an entity if they've already been unified.
 
    The number of duplicate records found displays under **Duplicates**. The **Records deduplicated** column shows which entities had duplicate records and the percentage of duplicated records.
 
+1. If you added an enriched entity, select **Use enriched entities**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
+
 1. To manage rules, choose any of the following:
    - **Create a new rule**: Select **Add rule** under the appropriate entity.
    - **Change rule conditions**: Select the rule and then **Edit**. Change fields, add or remove conditions, or add or remove exceptions.
@@ -88,7 +90,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Select **Edit** on the **Matching conditions** tile.
 
-   :::image type="content" source="media/m3_match_edit.png" alt-text="Screenshot of the Match rules and conditions page with statistics.":::
+   :::image type="content" source="media/m3_match_edit.png" alt-text="Screenshot of the Match rules and conditions page with statistics." lightbox="media/m3_match_edit.png":::
 
    The page displays the match order and defined rules as well as the following statistics:
    - **Unique source records** shows the number of individual source records that were processed in last match run.
@@ -102,6 +104,8 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 1. To view the results of a particular condition on a rule, select the rule and then **Edit**. On the Edit pane, select **Preview** under the condition. You can download the results.
 
    :::image type="content" source="media/m3_match_rule_preview.png" alt-text="Graphical representation of unmatched and matched records including a list of the data.":::
+
+1. If you added an enriched entity, select **Use enriched entities**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
 1. To manage rules, choose any of the following:
    - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want.
@@ -120,7 +124,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. See [Unify customer fields](merge-entities.md) for more information.
 
-1. Click **Save and close** and return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
+1. Select **Next** to review the unification settings and [update the unified profile and dependencies](#run-updates-to-the-unified-customer-profile), or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
 
 ## Run matching conditions
 
