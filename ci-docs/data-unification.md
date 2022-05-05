@@ -20,6 +20,8 @@ searchScope:
 
 After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. For individual consumers (B-to-C) where the data is centered around individuals, unification provides a unified view of your customers. For business accounts (B-to-B) where the data is centered around accounts, unification provides a unified view of your accounts and a unified view of your contacts.
 
+A single entity can be unified to enhance the data, remove duplicates, and create a unique customer ID.
+
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 
@@ -27,7 +29,7 @@ Customer unification is required and performed in the following order:
 
 1. [Select source fields](map-entities.md) which map entities and fields to include in a unified customer profile.
 1. [Remove duplicate records](remove-duplicates.md) (optional).
-1. Create [match rules and conditions](match-entities.md) for cross-entity matching.
+1. For two or more entities, create [match rules and conditions](match-entities.md) for cross-entity matching.
 1. Combine [unified customer fields](merge-entities.md) to merge the data.
 1. [Review](review-unification.md) and create the unified profile.
 
@@ -51,4 +53,4 @@ After completing data unification, you can optionally:
 - [Enrich your data](enrichment-hub.md) to get a wider range of insights about your customers
 - [Define activities](activities.md) from some of the ingested attributes
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

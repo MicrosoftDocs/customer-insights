@@ -2,7 +2,7 @@
 title: "Unify customer or account fields"
 description: "Merge entities to create unified customer profiles."
 recommendations: false
-ms.date: 04/22/2022
+ms.date: 05/04/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -19,20 +19,13 @@ searchScope:
 
 # Unify customer fields
 
-In this step of the unification process, choose and exclude attributes to merge within your unified profile entity. You can also create stable and unique Customer IDs.
+In this step of the unification process, choose and exclude attributes to merge within your unified profile entity. Some attributes are automatically combined by the system. You can create stable and unique Customer IDs and group related profiles into a cluster.
 
 :::image type="content" source="media/m3_unify.png" alt-text="Merge page in the data unification process showing table with merged fields that define the unified customer profile.":::
 
 ## Review and update the customer fields
 
 1. Review the list of fields that will be unified under the **Customer fields** tab of the table. Make any changes if applicable.
-
-   1. For any single fields, you can:
-      - [Combine fields](#combine-fields-manually)
-      - [Combine a group of fields](#combine-a-group-of-fields)
-      - [Rename](#rename-fields)
-      - [Exclude](#exclude-fields)
-      - [Move up or down](#change-the-order-of-fields)
 
    1. For any combined fields, you can:
       - [Edit](#edit-a-merged-field)
@@ -41,86 +34,23 @@ In this step of the unification process, choose and exclude attributes to merge 
       - [Exclude](#exclude-fields)
       - [Move up or down](#change-the-order-of-fields)
 
+   1. For any single fields, you can:
+      - [Combine fields](#combine-fields-manually)
+      - [Combine a group of fields](#combine-a-group-of-fields)
+      - [Rename](#rename-fields)
+      - [Exclude](#exclude-fields)
+      - [Move up or down](#change-the-order-of-fields)
+
 1. Optionally, [generate the CustomerID configuration](#configure-customer-id-generation).
+
+1. Optionally, [group profiles into households or clusters](#group-profiles-into-households-or-clusters).
 
 > [!div class="nextstepaction"]
 > [Next step: Review unification](review-unification.md)
 
-### Combine fields manually
-
-Combine separated fields to create a merged attribute.
-
-1. Select **Combine** > **Fields**.
-
-1. Specify the merge winner policy in the **Combine fields by** dropdown.
-
-1. Select **Add field** to combine more fields.
-
-1. Provide a **Name** and an **Output field name**.
-
-1. Select **Done** to apply the changes.
-
-1. Select **Save**.
-
-### Combine a group of fields
-
-Treat a group of fields as a single unit. For example, if our records contain the fields Address1, Address2, City, State, and Zip, we don't want to merge in a different record’s Address2, thinking it would make our data more complete.
-
-1. Select **Combine** > **Group of fields**.
-
-1. Specify the merge winner policy in the **Rank groups by** dropdown.
-
-1. Select **Add** and choose if you want to add more fields or additional groups to the fields.
-
-1. Provide a **Name** and an **Output name** for every combined field.
-
-1. Provide a **Name** for the group of fields.
-
-1. Select **Done** to apply the changes.
-
-1. Select **Save**.
-
-### Rename fields
-
-Change the display name of merged or separate fields. You can't change the name of the output entity.
-
-1. Select the field.
-  
-1. Select **Show more** and choose **Rename**.
-
-1. Confirm the changed display name.
-
-1. Select **Save**.
-
-### Exclude fields
-
-Exclude a merged or separate field from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile.
-
-1. Select a field.
-  
-1. Select **Show more** and choose **Exclude**.
-
-1. Confirm the exclusion.
-
-1. Select **Save**.
-
-To see the list of all excluded fields, select **Excluded fields**. If necessary, you can re-add the excluded field.
-
-### Change the order of fields
-
-Some entities contain more details than others. If an entity includes the latest data about a field, you can prioritize it over other entities when merging values.
-
-1. Select the field.
-  
-1. Select **Show more** and choose **Move up/down** to set the order or drag and drop them in the desired position.
-
-1. Select **Done**.
-
 ### Edit a merged field
 
-1. Select a merged field.
-
-1. Select **Show more** and choose **Edit**.
+1. Select a merged field and choose **Edit**. The Combine fields pane displays.
 
 1. Specify how to combine or merge the fields from one of three options:
     - **Importance**: Identifies the winner value based on importance rank specified for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
@@ -139,19 +69,71 @@ Some entities contain more details than others. If an entity includes the latest
 
 1. Select **Done** to apply your changes.
 
-1. Select **Save**.
+### Rename fields
+
+Change the display name of merged or separate fields. You can't change the name of the output entity.
+
+1. Select the field and choose **Rename**.
+
+1. Enter the new display name.
+
+1. Select **Done**.
 
 ### Separate merged fields
 
 To separate merged fields, find the attribute in the table. Separated fields show as individual data points on the unified customer profile.
 
-1. Select the merged field.
-  
-1. Select **Show more** and choose **Separate fields**.
+1. Select the merged field and choose **Separate fields**.
 
 1. Confirm the separation.
 
-1. Select **Save**.
+### Exclude fields
+
+Exclude a merged or separate field from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile.
+
+1. Select a field and choose **Exclude**.
+
+1. Confirm the exclusion.
+
+To see the list of all excluded fields, select **Excluded fields**. If necessary, you can re-add the excluded field.
+
+### Change the order of fields
+
+Some entities contain more details than others. If an entity includes the latest data about a field, you can prioritize it over other entities when merging values.
+
+1. Select the field.
+  
+1. Choose **Move up/down** to set the order or drag and drop them in the desired position.
+
+### Combine fields manually
+
+Combine separated fields to create a merged attribute.
+
+1. Select **Combine** > **Fields**. The Combine fields pane displays.
+
+1. Specify the merge winner policy in the **Combine fields by** dropdown.
+
+1. Select **Add field** to combine more fields.
+
+1. Provide a **Name** and an **Output field name**.
+
+1. Select **Done** to apply the changes.
+
+### Combine a group of fields
+
+Treat a group of fields as a single unit. For example, if our records contain the fields Address1, Address2, City, State, and Zip, we don't want to merge in a different record’s Address2, thinking it would make our data more complete.
+
+1. Select **Combine** > **Group of fields**.
+
+1. Specify the merge winner policy in the **Rank groups by** dropdown.
+
+1. Select **Add** and choose if you want to add more fields or additional groups to the fields.
+
+1. Provide a **Name** and an **Output name** for every combined field.
+
+1. Provide a **Name** for the group of fields.
+
+1. Select **Done** to apply the changes.
 
 ## Configure Customer ID generation
 
@@ -169,6 +151,24 @@ Configuring a stable customer ID enables you to avoid that behavior.
 1. Select up to five fields that will comprise a unique customer ID and are more stable. Records that don’t match your configuration use a system-configured ID instead.  
 
 1. Select **Done**.
+
+## Group profiles into households or clusters
+
+As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
+
+1. Select **Advanced** > **Create cluster**.
+
+   :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
+
+1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
+
+1. Provide a name for the cluster and select **Done**.
+
+1. Select the **Clusters** tab to find the cluster you created.
+
+1. Specify the rules and conditions to define your cluster.
+
+1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* entity.
 
 > [!div class="nextstepaction"]
 > [Next step: Review unification](review-unification.md)

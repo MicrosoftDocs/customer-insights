@@ -2,7 +2,7 @@
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
 recommendations: false
-ms.date: 04/22/2022
+ms.date: 05/05/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -20,6 +20,9 @@ searchScope:
 # Match conditions
 
 This step in unification defines the match order and rules for cross-entity matching. This step requires at least two entities.
+
+> [!NOTE]
+> Once you create your match conditions and select **Next**, you cannot remove a selected entity or attribute. If needed, select **Back** to review the selected entities and attributes before continuing.
 
 ## Include enriched entities (preview)
 
@@ -41,13 +44,13 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 > Important considerations:
 >
 > - Choose the entity with the most complete and reliable profile data about your customers as the primary entity.
-> - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as primary entity.
+> - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as the primary entity.
 
-1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **eCommerceContacts** as the primary entity and **loyCustomers** as the second entity.
+1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **Contacts:eCommerce** as the primary entity and **CustomerLoyalty:Loyalty** as the second entity.
 
 1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
   
-The primary entity *eCommerceContacts* is matched with the next entity *loyCustomers*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
+The primary entity *Contacts:eCommerce* is matched with the next entity *CustomerLoyalty:Loyalty*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
 :::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the entities." lightbox="media/m3_match.png":::
 
@@ -57,7 +60,7 @@ Match rules specify the logic by which a specific pair of entities will be match
 
 The warning next to an entity name means that no match rule is defined for a match pair.
 
-1. Select **Add rule** for an entity to define match rules.
+1. Select **Add rule** for an entity pair to define match rules.
 
 1. In the **Add rule** pane, configure the conditions for the rule.
 
@@ -88,6 +91,8 @@ The warning next to an entity name means that no match rule is defined for a mat
 1. Select **Done** to finalize the rule.
 
 1. Optionally, [add more rules](#add-rules-to-a-match-pair).
+
+1. Click **Next**.
 
 > [!div class="nextstepaction"]
 > [Next step: Unify fields](merge-entities.md)
