@@ -40,8 +40,6 @@
       href: get-started.md
     - name: Start with a paid license
       href: paid-license.md
-    - name: Create a new environment
-      href: create-environment.md
     - name: Explore Customer Insights
       href: home.md
     - name: Work with tags and columns
@@ -267,12 +265,25 @@
       href: entities.md
     - name: Review the entity schemas in Common Data Model
       href: entity-schemas.md
-    - name: Customer Insights data in Dataverse
-      href: customer-insights-dataverse.md
+
     - name: Build relationships and connected entities
       href: relationships.md
     - name: Define semantic mappings
       href: semantic-mappings.md
+
+- name: Environments
+  items: 
+    - name: Create a new environment
+      href: create-environment.md
+    - name: Manage environment settings
+      href: manage-environments.md
+    - name: Use your own Azure Data Lake Storage
+      href: own-data-lake-storage.md
+    - name: Connect to a storage account using Service Principal
+      href: connect-service-principal.md
+    - name: Connect to Microsoft Dataverse
+      href: customer-insights-dataverse.md
+
 
 - name: Administration
   items:
@@ -282,20 +293,12 @@
       href: security-overview.md
     - name: Assign user permissions
       href: permissions.md
-    - name: Connections overview
-      href: connections.md
-    - name: Manage multiple environments
-      href: manage-environments.md
     - name: Bring your own Key Vault
       href: use-azure-key-vault.md
-    - name: Connect to a storage account using Service Principal
-      href: connect-service-principal.md
     - name: Export diagnostic logs
       href: diagnostics.md
-    - name: Service limits
-      href: service-limits.md
-    - name: DSR rights and requests
-      href: dsr-rights-requests.md
+    - name: Connections overview
+      href: connections.md
 
 - name: APIs
   items:
@@ -344,6 +347,12 @@
       items: 
         - name: Create predictions with consent data
           href: consent-management/predictions-consent-data.md
+
+- name: Service limits
+  href: service-limits.md
+
+- name: DSR rights and requests
+  href: dsr-rights-requests.md
 
 - name: Get support
   href: /power-platform/admin/get-help-support
