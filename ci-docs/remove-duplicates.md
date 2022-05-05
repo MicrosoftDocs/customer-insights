@@ -30,7 +30,7 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. Select **Done**.
 
-## Define deduplication on a match entity
+## Define deduplication rules
 
 1. On the **Duplicate records** page, select an entity and select **Add rule** to define the deduplication rules.
 
@@ -58,7 +58,7 @@ If you enriched entities on the data source level to help improve your unificati
 
    1. Select **Done** to create the rule.
 
-1. Optionally, [add more rules](#define-deduplication-on-a-match-entity).
+1. Optionally, [add more rules](#define-deduplication-rules).
 
 1. Select an entity and then **Edit merge preferences**.
 
@@ -68,7 +68,7 @@ If you enriched entities on the data source level to help improve your unificati
       - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
       - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
 
-   1. Optionally, to define deduplication rules on individual attributes of an entity, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
+   1. Optionally, to define merge preferences on individual attributes of an entity, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
 
       :::image type="content" source="media/m3_adv_merge.png" alt-text="Advanced merge preferences pane showing recent email and complete address":::
 

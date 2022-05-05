@@ -2,7 +2,7 @@
 title: "Match entities for data unification"
 description: "Match entities to create unified customer profiles."
 recommendations: false
-ms.date: 04/22/2022
+ms.date: 05/05/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial

@@ -38,7 +38,7 @@ To review or change any unification settings once a unified profile has been cre
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
    - To update the unified customer profile (with or without dependencies), see [Run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
-   - To evaluate the quality of your matching conditions between two or more entities without updating the unified profile, see [Run matching conditions](#run-matching-conditions). The **Run matching conditions only** option does not display for single entity.
+   - To evaluate the quality of your matching conditions without updating the unified profile, see [Run matching conditions](#run-matching-conditions). The **Run matching conditions only** option does not display for single entity.
 
 ## Edit source fields
 
@@ -52,7 +52,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Select **Select entities and fields** to add other attributes or entities. Use the search or scroll to find and select your attributes and entities of interest. Select **Apply**.
 
-1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off.
+1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off. For more information, see [Select primary key and semantic type for attributes](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 
 1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings).
 
@@ -66,8 +66,8 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. If you added an enriched entity, select **Use enriched entities**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
-1. To manage rules, choose any of the following:
-   - **Create a new rule**: Select **Add rule** under the appropriate entity.
+1. To manage deduplication rules, choose any of the following:
+   - **Create a new rule**: Select **Add rule** under the appropriate entity. For more information, see [Define deduplication rules](remove-duplicates.md#define-deduplication-rules).
    - **Change rule conditions**: Select the rule and then **Edit**. Change fields, add or remove conditions, or add or remove exceptions.
    - **Preview**: Select the rule and then **Preview** to view the last run results for this rule.
    - **Deactivate a rule**: Select the rule and then **Deactivate** to retain a deduplication rule while excluding it from the matching process.
@@ -103,12 +103,13 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. To view the results of a particular condition on a rule, select the rule and then **Edit**. On the Edit pane, select **Preview** under the condition. You can download the results.
 
-   :::image type="content" source="media/m3_match_rule_preview.png" alt-text="Graphical representation of unmatched and matched records including a list of the data.":::
+   :::image type="content" source="media/m3_match_condition_preview.png" alt-text="Graphical representation of unmatched and matched records including a list of the data.":::
 
 1. If you added an enriched entity, select **Use enriched entities**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
 1. To manage rules, choose any of the following:
-   - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want.
+   - **Create a new rule**: Select **Add rule** under the appropriate entity. For more information, see [Define rules for match pairs](match-entities.md#define-rules-for-match-pairs).
+   - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want. For more information, see [Specify the match order](match-entities.md#specify-the-match-order).
    - **Change rule conditions**: Select the rule and then **Edit**. Change fields, add or remove conditions, or add or remove exceptions.
    - **Deactivate a rule**: Select the rule and then **Deactivate** to retain a match rule while excluding it from the matching process.
    - **Duplicate a rule**: Select the rule and then **Duplicate** to create a similar rule with modifications.
@@ -122,7 +123,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
     :::image type="content" source="media/m3_merge_edit.png" alt-text="Screenshot of Unified customer fields":::
 
-1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. See [Unify customer fields](merge-entities.md) for more information.
+1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. For more information, see [Unify customer fields](merge-entities.md).
 
 1. Select **Next** to review the unification settings and [update the unified profile and dependencies](#run-updates-to-the-unified-customer-profile), or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
 
