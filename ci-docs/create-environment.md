@@ -59,8 +59,7 @@ You'll have two options: **Customer Insights storage** (an Azure data lake manag
 By saving data to Azure Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account. This location may differ from where data is stored in Dynamics 365 Customer Insights. Learn more at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 > [!NOTE]
-> Customer Insights currently supports the following:
-> - Ingested entities from Power BI dataflows that are stored in a Microsoft Dataverse-managed Data Lake.  
+> Customer Insights currently supports the following:  
 > - Azure Data Lake Storage accounts from the same Azure region that you selected when creating the environment.
 > - Azure Data Lake Storage accounts that are Gen2 and have *hierarchical namespace* enabled. Azure Data Lake Gen1 storage accounts are not supported.
 
@@ -76,7 +75,7 @@ The **Microsoft Dataverse** step lets you connect Customer Insights with your Da
 
 Provide your own Microsoft Dataverse environment to share data (profiles and insights) with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps. Leave this field empty if you don't have your own Dataverse environment and we'll provision one for you.
 
-Connecting to your Dataverse environment also enables you to [ingest data from on-premises data sources using Power Platform dataflows and gateways](data-sources.md#add-data-from-on-premises-data-sources). You can also use [out-of-box prediction models](predictions-overview.md?tabs=b2c#out-of-box-models) by connecting to a Dataverse environment.
+Connecting to your Dataverse environment also enables you to [ingest data from on-premises data sources using Power Platform dataflows and gateways](data-sources.md#add-data-from-on-premises-data-sources).
 
 > [!IMPORTANT]
 > 1. Customer Insights and Dataverse have to be in the same region to enable data sharing.
