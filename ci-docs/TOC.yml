@@ -48,6 +48,8 @@
       href: work-with-tags-columns.md
     - name: Work with business accounts
       href: work-with-business-accounts.md
+    - name: Integrate with Dynamics 365 Marketing
+      href: marketing-get-started.md
 
 - name: Data sources
   items:
@@ -91,6 +93,8 @@
       href: enrichment-enhanced-company-data.md
     - name: Enrich with Azure Maps
       href: enrichment-azure-maps.md
+    - name: Enrich with Dun & Bradstreet
+      href: enrichment-dnb.md
     - name: Enrich with HERE Technologies
       href: enrichment-here.md
     - name: Enrich with Leadspace
@@ -274,6 +278,8 @@
   items:
     - name: Set up the system configuration
       href: system.md
+    - name: Configure security settings
+      href: security-overview.md
     - name: Assign user permissions
       href: permissions.md
     - name: Connections overview

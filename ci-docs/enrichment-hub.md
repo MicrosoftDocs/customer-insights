@@ -48,6 +48,7 @@ On the **Discover** tab, you'll find all supported enrichment options.
 - [Location data](enrichment-here.md) provided by HERE Technologies 
 - [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
+- [Company data](enrichment-dnb.md) provided by Dun & Bradstreet
 - [Account engagement data](enrichment-office.md) provided by Microsoft
 
 ---
