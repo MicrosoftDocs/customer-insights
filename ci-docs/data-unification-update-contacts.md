@@ -2,7 +2,7 @@
 title: "Update the contact unification settings"
 description: "Update duplicate rules, match rules, unified fields, semantic mapping, or relationships in the unified contact profile."
 recommendations: false
-ms.date: 04/25/2022
+ms.date: 05/06/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -19,18 +19,19 @@ searchScope:
 
 # Update the contact unification settings
 
-After contact unification, the **Data** > **Unify** page shows the results of each step in the contact unification process. Each tile shows the number of fields or records found during the last unification run. For example, **Source fields** shows the number of entity attributes (fields) defined and **Duplicate records** shows the number of duplicate records found.
-
-You can update the settings to add attributes, change your deduplication or matching rules, change the unified fields, or update the semantic mappings and relationships???
+To review or change any unification settings once a unified contact profile has been created, perform the following steps.
 
 1. Go to **Data** > **Unify**. Under **Unify contacts**, the contact unification tiles display.
 
    :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified.":::
 
+   > [!TIP]
+   > The **Matching conditions** tile displays only if multiple entities were selected.
+
 1. Choose what you want to update:
    - [Source fields](#edit-source-fields) to add entities or attributes or change attribute types.
    - [Duplicate records](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
-   - [Matching conditions](#manage-match-rules) to update matching rules.
+   - [Matching conditions](#manage-match-rules) to update matching rules across two or more entities.
    - [Unified customer fields](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
    - Semantic mapping
    - Relationship

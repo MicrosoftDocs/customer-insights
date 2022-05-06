@@ -2,7 +2,7 @@
 title: "Create a unified view of your customers"
 description: "Go through the data unification process with your data to create a single master dataset of account or customer profiles."
 recommendations: false
-ms.date: 04/25/2022
+ms.date: 05/06/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -39,7 +39,7 @@ Account unification is required and performed in the following order:
 
 1. [Select source fields](map-entities.md) which map entities and fields to include in a unified account profile.
 1. [Remove duplicate records](remove-duplicates.md) (optional).
-1. Create [match rules and conditions](match-entities.md) for cross-entity matching.
+1. For two or more entities, create [match rules and conditions](match-entities.md) for cross-entity matching.
 1. Combine [unified customer fields](merge-entities.md) to merge the data.
 1. [Review](review-unification.md) and create the unified profile.
 
