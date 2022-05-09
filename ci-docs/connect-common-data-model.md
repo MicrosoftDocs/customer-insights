@@ -1,12 +1,12 @@
 ---
 title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 03/24/2022
+ms.date: 05/09/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
 author: matgos
-ms.author: adkuppa
+ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -16,11 +16,11 @@ searchScope:
   - customerInsights
 ---
 
-# Connect to data in Azure data lake storage
+# Connect to data in Azure Data Lake storage
 
 This article provides information on how to ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Storage Gen2 account.
 
-## Important considerations
+## Prerequisites
 
 - Data ingestion supports Azure Data Lake *Gen2* storage accounts exclusively. You can't use Azure Data Lake Gen1 storage accounts to ingest data.
 
@@ -40,7 +40,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 - Data in your Azure Data Lake must follow the Common Data Model standard for storage of your data. For more information, see [The Common Data Model manifest](https://docs.microsoft.com/common-data-model/sdk/manifest). Admin users with Storage Blob Data Owner or Contributor access can define the schema when ingesting the data if the manifest is not present.
 
 
-## Connect to Azure data lake storage
+## Connect to Azure Data Lake storage
 
 1. Go to **Data** > **Data sources**.
 
@@ -52,7 +52,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Enter a **Name** for the data source and an optional **Description**.
 
-1. Choose your preferred option for **Connect your storage using**. For a resource or a subscription-based option for authentication, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
+1. Choose your preferred option for **Connect your storage using**. For a resource or a subscription-based option for authentication, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
    - **Azure resource**: Enter the **Resource Id**. If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.  If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
@@ -81,7 +81,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
    1. Select **Required**. The **Edit entity** panel displays.
    1. Choose the **Primary key**.
    1. Optionally, change the partition pattern.
-   1. To enable an incremental refresh, see [Configure an incremental refresh for Azure data lake and Databricks data sources](incremental-refresh-data-sources.md).
+   1. To enable an incremental refresh, see [Configure an incremental refresh for Azure Data Lake and Databricks data sources](incremental-refresh-data-sources.md).
    1. Select **X** to save and close the panel.
 
 1. Select **Attributes**. The Manage attributes page displays.
@@ -124,22 +124,22 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Select **Include entities**.
 
-1. To enable an incremental refresh, see [Configure an incremental refresh for Azure data lake and Databricks data sources](incremental-refresh-data-sources.md).
+1. To enable an incremental refresh, see [Configure an incremental refresh for Azure Data Lake and Databricks data sources](incremental-refresh-data-sources.md).
 
 1. Continue to add entities, if applicable.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
 
-## Edit an Azure data lake storage data source
+## Edit an Azure Data Lake storage data source
 
-You can update the *Connect to storage account using* option from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
+You can update the *Connect to storage account using* option from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
 
 1. Go to **Data** > **Data sources**.
 
 1. Next to the data source you'd like to update, select  **Edit**.
 
-   :::image type="content" source="media/data_sources_edit_ADLS.png" alt-text="Dialog box to edit Azure data lake data source.":::
+   :::image type="content" source="media/data_sources_edit_ADLS.png" alt-text="Dialog box to edit Azure Data Lake data source.":::
 
 1. Change any of the following information:
 

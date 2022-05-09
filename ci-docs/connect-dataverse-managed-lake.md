@@ -37,7 +37,7 @@ This article provides information on how Dataverse users can quickly connect to 
 
 1. Provide the **Server address** for the Dataverse organization, and select **Sign in**.
 
-1. Select the tables you want to ingest as entities to audience insights from the available list.
+1. Select the tables you want to ingest as entities to Customer Insights from the available list.
 
    > [!NOTE]
    > If some tables are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights). You can't change the selection. These tables will be available as entities once the data source is created.

@@ -55,17 +55,13 @@
   items:
     - name: Data sources overview
       href: data-sources.md
-    - name: Connect to data in Azure data lake storage
+    - name: Connect to data in Azure Data Lake storage
       href: connect-common-data-model.md
     - name: Add data sources via Power Query connectors
       href: connect-power-query.md
     - name: Connect to data in a Microsoft Dataverse managed data lake
       href: connect-dataverse-managed-lake.md
-    - name: Connect to data from Databricks delta lake
-      href: connect-delta-lake.md
-    - name: Connect to data from the Customer Insights data library
-      href: connect-ci-data-library.md
-    - name: Add Azure Synapse Analytics
+    - name: Connect to Azure Synapse Analytics
       href: connect-synapse.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md

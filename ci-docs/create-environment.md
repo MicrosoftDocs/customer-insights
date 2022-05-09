@@ -52,7 +52,7 @@ Provide the following details:
 
 In the **Data storage** step, choose where to store the Customer Insights data.
 
-You'll have two options: **Customer Insights storage** (an Azure data lake managed by the Customer Insights team) and **Azure Data Lake Storage** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
+You'll have two options: **Customer Insights storage** (an Azure Data Lake managed by the Customer Insights team) and **Azure Data Lake Storage** (your own Azure Data Lake Storage). By default, the Customer Insights storage option is selected.
 
 :::image type="content" source="media/data-storage-environment.png" alt-text="Choose the Azure Data Lake Storage to store your data.":::
 

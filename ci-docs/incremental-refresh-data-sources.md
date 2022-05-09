@@ -1,13 +1,13 @@
 ---
-title: "Incremental refresh for data sources"
-description: "Refresh new and updated data for large data sources based on Power Query, Azure data lake, and Databricks data sources."
-ms.date: 03/24/2022
+title: "Incremental refresh for Power Query and Azure Data Lake data sources"
+description: "Refresh new and updated data for large data sources based on Power Query or Azure data lake data sources."
+ms.date: 05/09/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
-ms.author: adkuppa
+ms.author: mukeshpo
 manager: shellyha
 searchScope: 
   - ci-system-schedule
@@ -16,7 +16,7 @@ searchScope:
 
 # Incremental refresh for data sources
 
-This article discusses how to configure incremental refresh for data sources based on Power Query, Azure data lake, and Databricks delta lake.
+This article discusses how to configure incremental refresh for data sources based on Power Query or Azure Data Lake.
 
 Incremental refresh for data sources provides the following advantages:
 
@@ -54,9 +54,9 @@ Customer Insights allows incremental refresh for data sources imported through P
 
 1. Select **Save** to complete the creation of the data source. The initial data refresh will be a full refresh. Afterwards, the incremental data refresh happens as configured in the previous step.
 
-## Configure incremental refresh for Azure data lake and Databricks delta lake data sources
+## Configure incremental refresh for Azure Data Lake data sources
 
-You can configure incremental refresh when adding the data source or later when editing the data source.
+You can configure incremental refresh when adding the Azure Data Lake data source or later when editing the data source.
 
 1. When adding or editing a data source, navigate to the attributes pane.
 
