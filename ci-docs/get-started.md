@@ -1,6 +1,6 @@
 ---
-title: Get started with the audience insights capability in Dynamics 365 Customer Insights
-description: An overview of audience insights help resources to get started quickly. 
+title: Get started with Dynamics 365 Customer Insights
+description: An overview of Customer Insights help resources to get started quickly. 
 ms.reviewer: v-wendysmith
 ms.author: mhart
 author: m-hartmann
