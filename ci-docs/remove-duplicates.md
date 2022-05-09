@@ -91,4 +91,7 @@ A deduplication output entity contains the following information:
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
 
+For a single entity, go to [Unify fields](merge-entities.md).
+For multiple entities, go to [Match conditions](match-entities.md).
+
 [!INCLUDE[footer-include](includes/footer-banner.md)]
