@@ -48,6 +48,8 @@
       href: work-with-tags-columns.md
     - name: Work with business accounts
       href: work-with-business-accounts.md
+    - name: Integrate with Dynamics 365 Marketing
+      href: marketing-get-started.md
 
 - name: Data sources
   items:
@@ -280,6 +282,8 @@
   items:
     - name: Set up the system configuration
       href: system.md
+    - name: Configure security settings
+      href: security-overview.md
     - name: Assign user permissions
       href: permissions.md
     - name: Connections overview
