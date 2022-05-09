@@ -33,7 +33,7 @@ Before your organization can use the predictions feature, the following prerequi
 
 1. Your organization has an instance [set up in Microsoft Dataverse](/ai-builder/build-model#prerequisites) and it's in the same organization as Customer Insights.
 
-2. Your audience insight environment is attached to your Dataverse instance.
+2. Your Customer Insights environment is attached to your Dataverse instance.
 
 For more information, see [Create a new environment](create-environment.md).
 
