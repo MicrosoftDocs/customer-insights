@@ -22,8 +22,6 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 ## Important considerations
 
-- Data in your Azure Data Lake must follow the Common Data Model standard. For more information, see [The Common Data Model manifest](https://docs.microsoft.com/common-data-model/sdk/manifest).
-
 - Data ingestion supports Azure Data Lake *Gen2* storage accounts exclusively. You can't use Azure Data Lake Gen1 storage accounts to ingest data.
 
 - The Azure Data Lake storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
@@ -39,6 +37,9 @@ This article provides information on how to ingest data into Dynamics 365 Custom
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
 
+- Data in your Azure Data Lake must follow the Common Data Model standard for storage of your data. For more information, see [The Common Data Model manifest](https://docs.microsoft.com/common-data-model/sdk/manifest). Admin users with Storage Blob Data Owner or Contributor access can define the schema when ingesting the data if the manifest is not present.
+
+
 ## Connect to Azure data lake storage
 
 1. Go to **Data** > **Data sources**.
@@ -53,13 +54,11 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Choose your preferred option for **Connect your storage using**. For a resource or a subscription-based option for authentication, see [Connect audience insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-   - **Azure resource**: Enter the **Resource Id**.
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
+   - **Azure resource**: Enter the **Resource Id**. If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.  If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
    - **Account key**: Enter the **Account name** and **Account key**.
 
-1. If you have an Azure resource or subscription connection and want to enable an Azure private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
-
-1. Choose the name of the **Container** that contains the model.json or manifest.json file to import data from, and select **Next**.
+1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
 
@@ -115,7 +114,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
    :::image type="content" source="media/ADLS_new_entity.png" alt-text="Dialog box to create a new entity with generate the attributes highlighted.":::
 
-1. Choose the **Primary key**.
+1. Optionally, choose the **Primary key**.
 
 1. Select **X** to save and close the panel.
 
@@ -123,9 +122,9 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
-1. To enable an incremental refresh, see [Configure an incremental refresh for Azure data lake and Databricks data sources](incremental-refresh-data-sources.md).
-
 1. Select **Include entities**.
+
+1. To enable an incremental refresh, see [Configure an incremental refresh for Azure data lake and Databricks data sources](incremental-refresh-data-sources.md).
 
 1. Continue to add entities, if applicable.
 

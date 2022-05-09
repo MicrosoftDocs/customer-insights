@@ -66,7 +66,13 @@ You can configure incremental refresh when adding the data source or later when 
 
 1. Select the **Incremental refresh** checkbox.
 
-1. Select a date timestamp.
+   :::image type="content" source="media/ALDS_inc_refresh.png" alt-text="Configure entities in a data source for incremental refresh.":::
+   
+   1. Browse to the root folder that contains the .csv or .parquet files for full data, incremental data upserts, and incremental data deletes.
+   1. Enter the extension for the full data and incremental files (for example: \.csv).
+   1. Select **Save**.
+
+1. For **Last updated**, select the date timestamp.
 
 1. Select **X** to save and close the pane.
 
