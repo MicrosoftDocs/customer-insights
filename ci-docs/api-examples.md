@@ -1,7 +1,7 @@
 ---
 title: "OData examples for the Dynamics 365 Customer Insights APIs"
 description: "Commonly used examples of for the Open Data Protocol (OData) to query the Customer Insights APIs to review data."
-ms.date: 04/07/2022
+ms.date: 05/10/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
@@ -12,7 +12,7 @@ manager: shellyha
 
 # OData query examples
 
-The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP and commonly accepted methodologies like REST for the web. There are various kinds of libraries and tools can be used to consume OData services.
+The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP and commonly accepted methodologies like REST for the web. There are various kinds of libraries and tools that can be used to consume OData services.
 
 This article lists some frequently requested example queries to help you with building your own implementations based on the [Customer Insights APIs](apis.md).
 
@@ -33,12 +33,11 @@ The following table contains a set of sample queries for the *Customer* entity.
 |---------|---------|---------|
 |Single customer ID     | {serviceRoot}/Customer?$filter=CustomerId eq '{CID}'          |  |
 |Alternate key    | {serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'          |  Alternate keys persist in the unified customer entity       |
-|Alternate key via CID     |  {serviceRoot}/Customer?$filter={DSname} eq '{CID}'       |         |
 |Select   | {serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'        |         |
-|In    | {serviceRoot}/Customer?$filter=CustomerId in '{SegmentName}'         |         |
+|In    | {serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)        |         |
 |Alternate Key + In   | Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')         |         |
 |Search  | {serviceRoot}/Customer?$top=10&$skip=0&$search="string"        |   Returns top 10 results for a search string      |
-|Segment membership  | {serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10       |       |
+|Segment membership  | {serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10       | Returns a preset number of rows from the segmentation entity.      |
 
 ## Unified activity
 
@@ -51,7 +50,7 @@ The following table contains a set of sample queries for the *UnifiedActivity* e
 |Activity type    |   {serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'        |         |
 |Activity by display name     | {serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’         | |
 |Activity sorting    | {serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc     |  Sort activities asc or dsc       |
-|Activity expanded from segment membership  |   {serviceRoot}/Customer?$expand=UnifiedActivity&$filter=IsMemberOfSegment('{SegmentName}')&$top=10         |         |
+|Activity expanded from segment membership  |   {serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'     |         |
 
 ## Other examples
 
