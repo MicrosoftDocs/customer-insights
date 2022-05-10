@@ -1,6 +1,6 @@
 ---
 title: Get started with Dynamics 365 Customer Insights
-description: An overview of Customer Insights help resources to get started quickly. 
+description: An overview of Customer Insights helps resources to get started quickly. 
 ms.reviewer: v-wendysmith
 ms.author: mhart
 author: m-hartmann
@@ -21,7 +21,7 @@ Customer Insights can help you build a deeper understanding of your customers. C
 
 ## Step 1: Create an environment
 
-To start, you first have to create an environment to work in. If your organization already purchased a license, see [Create an environment](create-environment.md). To start a trial for Customer Insights, see [Set up a trial environment](trial-signup.md). 
+To start, you first have to create an environment to work in. If your organization already purchased a license, see [Create an environment](create-environment.md). To start a trial for Customer Insights, see [Set up a trial environment](trial-signup.md).
 
 ## Step 2: Explore Customer Insights
 
