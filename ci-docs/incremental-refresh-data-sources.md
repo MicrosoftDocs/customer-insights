@@ -14,7 +14,7 @@ searchScope:
   - customerInsights
 ---
 
-# Incremental refresh for data sources
+# Incremental refresh for Power Query and Azure Data Lake data sources
 
 This article discusses how to configure incremental refresh for data sources based on Power Query or Azure Data Lake.
 
@@ -29,8 +29,6 @@ Incremental refresh for data sources provides the following advantages:
 Customer Insights allows incremental refresh for data sources imported through Power Query that support incremental ingestion. For example, Azure SQL databases with date and time fields, which indicate when data records were last updated.
 
 1. [Create a new data source based on Power Query](connect-power-query.md).
-
-1. Provide a **Name** for the data source.
 
 1. Select a data source that supports incremental refresh, such as [Azure SQL database](/power-query/connectors/azuresqldatabase).
 
@@ -58,7 +56,7 @@ Customer Insights allows incremental refresh for data sources imported through P
 
 You can configure incremental refresh when adding the Azure Data Lake data source or later when editing the data source.
 
-1. When adding or editing a data source, navigate to the attributes pane.
+1. When adding or editing a data source, navigate to the **Attributes** pane.
 
 1. Review the attributes. Make sure a created or last updated date attribute is set up with a *dateTime* **Data format** and a *Calendar.Date* **Semantic type**. Edit the attribute if necessary.
 
@@ -67,7 +65,7 @@ You can configure incremental refresh when adding the Azure Data Lake data sourc
 1. Select the **Incremental refresh** checkbox.
 
    :::image type="content" source="media/ALDS_inc_refresh.png" alt-text="Configure entities in a data source for incremental refresh.":::
-   
+
    1. Browse to the root folder that contains the .csv or .parquet files for full data, incremental data upserts, and incremental data deletes.
    1. Enter the extension for the full data and incremental files (for example: \.csv).
    1. Select **Save**.

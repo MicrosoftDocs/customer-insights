@@ -39,7 +39,6 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 - Data in your Azure Data Lake must follow the Common Data Model standard for storage of your data. For more information, see [The Common Data Model manifest](https://docs.microsoft.com/common-data-model/sdk/manifest). Admin users with Storage Blob Data Owner or Contributor access can define the schema when ingesting the data if the manifest is not present.
 
-
 ## Connect to Azure Data Lake storage
 
 1. Go to **Data** > **Data sources**.
@@ -48,14 +47,14 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Select **Azure data lake storage**.
 
-   :::image type="content" source="media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake.":::
+   :::image type="content" source="media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake." lightbox="media/data_sources_ADLS.png":::
 
 1. Enter a **Name** for the data source and an optional **Description**.
 
 1. Choose your preferred option for **Connect your storage using**. For a resource or a subscription-based option for authentication, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
    - **Azure resource**: Enter the **Resource Id**. If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.  If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
    - **Account key**: Enter the **Account name** and **Account key**.
 
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
@@ -81,7 +80,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
    1. Select **Required**. The **Edit entity** panel displays.
    1. Choose the **Primary key**.
    1. Optionally, change the partition pattern.
-   1. To enable an incremental refresh, see [Configure an incremental refresh for Azure Data Lake and Databricks data sources](incremental-refresh-data-sources.md).
+   1. To enable an incremental refresh, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
    1. Select **X** to save and close the panel.
 
 1. Select **Attributes**. The Manage attributes page displays.
@@ -124,7 +123,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Select **Include entities**.
 
-1. To enable an incremental refresh, see [Configure an incremental refresh for Azure Data Lake and Databricks data sources](incremental-refresh-data-sources.md).
+1. To enable an incremental refresh, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
 
 1. Continue to add entities, if applicable.
 
@@ -151,7 +150,7 @@ You can update the *Connect to storage account using* option from an account key
         > - Storage Blob Data Owner
         > - Storage Blob Data Contributor
 
-   - **Enable private link** (for Azure resource or subscription connections). For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Enable private link** (for Azure resource or subscription connections) if you want to ingest data using an Azure Private link. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
 
 1. Select **Next**.
 1. Change any of the following:
