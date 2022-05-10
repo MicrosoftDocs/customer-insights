@@ -25,17 +25,17 @@ You can attach or import a data source. Select an option to learn how to add the
 
 **Attach a data source**:
 - [Azure Data Lake Storage (csv or parquet files in a Common Data Model folder)](connect-common-data-model.md)
-- [Azure Synapse Analytics (Lake databases](connect-synapse.md)
+- [Azure Synapse Analytics (Lake databases)](connect-synapse.md)
 - [Microsoft Dataverse data lake](connect-dataverse-managed-lake.md)
 
 **Import and transform**:
-- [Power Query connectors](connect-power-query.md). 
+- [Power Query connectors](connect-power-query.md) 
 
 ## Review ingested data
 
 If your environment was configured to use Customer Insights storage, you can view shared data sources and data sources managed by others. The **Data Sources** page lists the data sources in three sections:
 - **Shared**: Data sources that can be managed by all Customer Insights admins. Power Platform dataflows (PPDFs),  your own storage account, and attaching to a Dataverse-managed data lake are examples of shared data sources.
-- **Managed by me**: PPDFs created and can be managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.
+- **Managed by me**: PPDFs created and managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.
 - **Managed by others**: PPDFs created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.
 > [!NOTE]
 > All entities can be viewed and used by other users. User contextuality applies only to the data sources and not to the entities that result from these dataflows.
