@@ -39,7 +39,7 @@ If you enriched entities on the data source level to help improve your unificati
 Each match unifies two or more entities into a single, consolidated entity. At the same time, it keeps the unique customer records. The match order indicates the order in which the system tries to match the records.
 
 > [!IMPORTANT]
-> The entity that you choose as your primary entity will serve as the basis for your unified profiles dataset. Additional entities that are selected will be added to this entity. This doesn't mean that the unified entity will include *all* of the data included in this entity.
+> The first entity in the list is called the primary entity. The primary entity serves as the basis for your unified profiles dataset. Additional entities that are selected will be added to this entity.
 >
 > Important considerations:
 >
@@ -48,7 +48,7 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 
 1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **Contacts:eCommerce** as the primary entity and **CustomerLoyalty:Loyalty** as the second entity.
 
-1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**.
+1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**. Any records in an entity that do not match to records in any other entities are included in the unified profile. Records that do not have a match are called singletons.
   
 The primary entity *Contacts:eCommerce* is matched with the next entity *CustomerLoyalty:Loyalty*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
@@ -106,7 +106,7 @@ Match rules represent sets of conditions. To match entities by conditions based 
 1. Follow the steps in [Define rules for match pairs](#define-rules-for-match-pairs).
 
 > [!NOTE]
-> The order of rules matters. The matching algorithm tries to match on the basis of your first rule and continues to the second rule only if no matches were identified with the first rule.
+> The order of rules matters. The matching algorithm tries to match a given customer record on the basis of your first rule and continues to the second rule only if no matches were identified with the first rule.
 
 ## Advanced options
 

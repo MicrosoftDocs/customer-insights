@@ -18,7 +18,7 @@ searchScope:
 
 # Remove duplicates before unifying data
 
-This step in unification sets up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. This step is optional. If rules are not configured, system-defined rules are applied.
+This step in unification optionally enables you to set up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
 
 ## Include enriched entities (preview)
 
@@ -76,11 +76,11 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. After defining the deduplication rules and merge preferences, select **Next**.
    - For a single entity, go to [Unify fields](merge-entities.md).
-   - For multiple entities, go to [Match conditions](match-entities.md).
+   - For multiple entities, go to [Matching conditions](match-entities.md). Matching conditions is not shown when a single entity is being processed.
 
 ## Deduplication output as an entity
 
-The deduplication process creates a new entity for every entity from the match pairs to identify the deduplicated records. These entities can be found along with the **ConflationMatchPairs:CustomerInsights** in the **System** section in the **Entities** page, with the name **Deduplication_DataSource_Entity**.
+The deduplication process creates a new deduplicated entity for each of the source entities. These entities can be found along with the **ConflationMatchPairs:CustomerInsights** in the **System** section in the **Entities** page, with the name **Deduplication_DataSource_Entity**.
 
 A deduplication output entity contains the following information:
 
@@ -90,8 +90,5 @@ A deduplication output entity contains the following information:
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
-
-For a single entity, go to [Unify fields](merge-entities.md).
-For multiple entities, go to [Match conditions](match-entities.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
