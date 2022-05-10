@@ -135,11 +135,11 @@ Treat a group of fields as a single unit. For example, if our records contain th
 
 1. Select **Done** to apply the changes.
 
-## Configure Customer ID generation
+## Configure customer ID generation
 
-Define how to generate CustomerId values, the unique customer profile identifiers. The unify fields step in the data unification process generates the unique customer profile identifier. The identifier is the CustomerId in the *Customer* entity that results from the data unification process.
+Define how to generate customer ID values, the unique customer profile identifiers. The unify fields step in the data unification process generates the unique customer profile identifier. The identifier is the *CustomerId* in the *Customer* entity that results from the data unification process.
 
-The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in data unification and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. So the primary key value might not always represent the same customer.
+The *CustomerId* is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in data unification and are influenced by the match order. So the generated customer ID can change when a primary key value changes in the primary entity of the match order. The primary key value might not always represent the same customer.
 
 Configuring a stable customer ID enables you to avoid that behavior.
 
