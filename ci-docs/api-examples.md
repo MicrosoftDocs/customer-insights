@@ -31,13 +31,13 @@ The following table contains a set of sample queries for the *Customer* entity.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Single customer ID     | {serviceRoot}/Customer?$filter=CustomerId eq '{CID}'          |  |
-|Alternate key    | {serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'          |  Alternate keys persist in the unified customer entity       |
-|Select   | {serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'        |         |
-|In    | {serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)        |         |
-|Alternate Key + In   | Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')         |         |
-|Search  | {serviceRoot}/Customer?$top=10&$skip=0&$search="string"        |   Returns top 10 results for a search string      |
-|Segment membership  | {serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10       | Returns a preset number of rows from the segmentation entity.      |
+|Single customer ID     | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'`          |  |
+|Alternate key    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}' `         |  Alternate keys persist in the unified customer entity       |
+|Select   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
+|In    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
+|Alternate Key + In   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|Search  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Returns top 10 results for a search string      |
+|Segment membership  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10  `     | Returns a preset number of rows from the segmentation entity.      |
 
 ## Unified activity
 
@@ -45,12 +45,12 @@ The following table contains a set of sample queries for the *UnifiedActivity* e
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Activity of CID     | {serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}'          | Lists activities of a specific customer profile |
-|Activity time frame    | {serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityTime gt 2017-01-01T00:00:00.000Z and ActivityTime lt 2020-01-01T00:00:00.000Z     |  Activities of a customer profile in a time frame       |
-|Activity type    |   {serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'        |         |
-|Activity by display name     | {serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’         | |
-|Activity sorting    | {serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc     |  Sort activities asc or dsc       |
-|Activity expanded from segment membership  |   {serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'     |         |
+|Activity of CID     | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}'`          | Lists activities of a specific customer profile |
+|Activity time frame    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityTime gt 2017-01-01T00:00:00.000Z and ActivityTime lt 2020-01-01T00:00:00.000Z`     |  Activities of a customer profile in a time frame       |
+|Activity type    |   `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'`        |         |
+|Activity by display name     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’ `        | |
+|Activity sorting    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  Sort activities asc or dsc       |
+|Activity expanded from segment membership  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     |         |
 
 ## Other examples
 
@@ -58,7 +58,7 @@ The following table contains a set of sample queries for other entities.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Measures of CID    | {serviceRoot}/Customer_Measure?$filter=CustomerId eq '{CID}'          |  |
-|Enriched brands of CID    | {serviceRoot}/BrandShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'  |       |
-|Enriched interests of CID    |   {serviceRoot}/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'       |         |
-|In-Clause + Expand     | {serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')         | |
+|Measures of CID    | `{serviceRoot}/Customer_Measure?$filter=CustomerId eq '{CID}'`          |  |
+|Enriched brands of CID    | `{serviceRoot}/BrandShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`  |       |
+|Enriched interests of CID    |   `{serviceRoot}/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`       |         |
+|In-Clause + Expand     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
