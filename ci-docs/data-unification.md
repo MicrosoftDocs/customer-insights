@@ -44,6 +44,6 @@ After completing the data unification, you can optionally:
 - [Set up relationships between entities](relationships.md) to create sophisticated segments
 - [Enrich your data](enrichment-hub.md) to get a wider range of insights about your customers
 - [Define activities](activities.md) from some of the ingested attributes
-- [Create measures](measures.md) to better understand customer behaviors and business performance
+- [Build measures](measures.md) to better understand customer behaviors and business performance
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

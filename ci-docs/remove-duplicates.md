@@ -46,7 +46,7 @@ If you enriched entities on the data source level to help improve your unificati
         - **Unicode to ASCII**: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
         - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
       - **Precision**: Set the level of precision to apply for this condition.
-        - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
+        - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
         - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
       - **Name**: Name for the rule.
 
