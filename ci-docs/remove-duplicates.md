@@ -75,8 +75,12 @@ If you enriched entities on the data source level to help improve your unificati
    1. Select **Done** to apply your merge preferences.
 
 1. After defining the deduplication rules and merge preferences, select **Next**.
-   - For a single entity, go to [Unify fields](merge-entities.md).
-   - For multiple entities, go to [Matching conditions](match-entities.md). Matching conditions is not shown when a single entity is being processed.
+  
+> [!div class="nextstepaction"]
+> [Next step single entity: Unify fields](merge-entities.md)
+
+> [!div class="nextstepaction"]
+> [Next step multiple entities: Matching conditions](match-entities.md)
 
 ## Deduplication output as an entity
 

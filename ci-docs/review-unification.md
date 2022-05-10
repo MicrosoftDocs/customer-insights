@@ -47,6 +47,6 @@ When needed, [make changes to the unification settings](data-unification-update.
 
 ## Next Step
 
-Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.
+Configure [activities](activities.md), [enrichment](enrichment-hub.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
