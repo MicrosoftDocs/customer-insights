@@ -55,7 +55,7 @@ For each entity, perform the following steps.
    > [!NOTE]
    > One field should map to the semantic type *Person.FullName* to populate the customer name in the customer card. Otherwise, the customer cards will appear nameless.
 
-   1. To change an attribute type identified by the system, select the type of your choice. If the type does not exist, custom semantic types can be added by selecting the **Type** field for an attribute, and entering your custom semantic type name.
+   1. To change an attribute type identified by the system, select another type. If the type doesn't exist, create a custom semantic type by selecting the **Type** field for the attribute, and entering your custom semantic type name.
 
    1. To add an attribute that contains a URL to publicly available profile images or logos, select the entity and field that contains the URL. In the **Type** field, enter the following:
       - For a person: Person.ProfileImage
@@ -63,7 +63,7 @@ For each entity, perform the following steps.
 
    1. For an account name attribute, enter "Organization.Name" in the **Type** field.
 
-1. Review the attributes where a semantic type is automatically identified. These attributes are listed under **Review mapped fields**. Only attributes with the same type can be combined in the Unified customer fields step. Semantic types are also used to automatically suggest insights. Ensure the types you chose are consistent across all the selected entities.
+1. Review the attributes where a semantic type is automatically identified. These attributes are listed under **Review mapped fields**. Only attributes with the same type can be combined in the **Unified customer fields** step. Semantic types are used to automatically suggest insights. Ensure the types you chose are consistent across all the selected entities.
 
 1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, enter your custom attribute-type name, or leave them unmapped. These attributes are listed under **Define the data in the unmapped fields**.
 

@@ -77,10 +77,10 @@ If you enriched entities on the data source level to help improve your unificati
 1. After defining the deduplication rules and merge preferences, select **Next**.
   
 > [!div class="nextstepaction"]
-> [Next step single entity: Unify fields](merge-entities.md)
+> [Next step for a single entity: Unify fields](merge-entities.md)
 
 > [!div class="nextstepaction"]
-> [Next step multiple entities: Matching conditions](match-entities.md)
+> [Next step for multiple entities: Matching conditions](match-entities.md)
 
 ## Deduplication output as an entity
 

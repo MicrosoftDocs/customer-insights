@@ -48,7 +48,7 @@ Each match unifies two or more entities into a single, consolidated entity. At t
 
 1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **Contacts:eCommerce** as the primary entity and **CustomerLoyalty:Loyalty** as the second entity.
 
-1. To have every record in the entity as a unique customer and matched to every following entity, select **Include all records**. Any records in an entity that do not match to records in any other entities are included in the unified profile. Records that do not have a match are called singletons.
+1. To have every record in the entity as a unique customer regardless if a match is found, select **Include all records**. Any records in this entity that do not match to records in any other entities are included in the unified profile. Records that do not have a match are called singletons.
   
 The primary entity *Contacts:eCommerce* is matched with the next entity *CustomerLoyalty:Loyalty*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
