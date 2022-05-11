@@ -15,7 +15,7 @@ searchScope:
 
 # Explore Customer Insights
 
-You can [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
+You can access [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 
 The **Home** page shows guides you through the configuration process for key features and provides an overview of segments, measures, and enrichment data.
 
@@ -41,7 +41,7 @@ Your profile picture opens the **Account manager** for your Microsoft 365 profil
 
 ## Getting started with Customer Insights section
 
-This sections contains cards that help you walk through the process of setting up your Customer Insights environment. 
+This section contains cards that help you walk through the process of setting up your Customer Insights environment. 
 
 1. The **Add data** card assists you with your data import. Customer Insights supports [several options to bring in data about your customers](data-sources.md). Select **Add data sources** to get started.
 1. Once the initial data import successfully completes, you can use the **Unify data** card to harmonize the data and [create unified customer profiles](data-unification.md) from disparate sources. 
