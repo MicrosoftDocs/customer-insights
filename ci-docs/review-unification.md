@@ -18,8 +18,6 @@ searchScope:
 
 # Review data unification
 
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
-
 This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified profile.
 
 :::image type="content" source="media/m3_review.png" alt-text="Screenshot of Review and create customer profiles.":::

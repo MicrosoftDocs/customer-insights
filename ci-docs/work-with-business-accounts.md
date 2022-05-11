@@ -41,7 +41,7 @@ If your organization maintains environments for individual customers and busines
 - [Measures](measures.md): Supports measures created from the measure builder with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.
 - [Segments](segments.md): Supports segments that are created from scratch with the segment builder. New operators allow incorporating account hierarchy when building segments.
 - [Data ingestion](data-sources.md): All features in this area are the same for business accounts and individual customers.
-- B-B data unification is very similar to B-C data unification but as an additional step to unify contacts after account unification. See [Business accounts (B-to-B) data unification](data-unification-b2b.md).
+- B-to-B data unification is very similar to B-to-C data unification but has an additional step to unify contacts after account unification. See [Business accounts (B-to-B)](data-unification.md).
 - [Enrichment](enrichment-hub.md): Some enrichment types are available only for individual customer scenarios while others are exclusively available for business accounts.
 - [Predictions and out-of-box models](predictions-overview.md): Transactional churn prediction contains additional steps for business accounts. Other predictions are only available for individual customers.
 - [Activation and export](export-destinations.md): Exports are available for business accounts and individual customers. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts.

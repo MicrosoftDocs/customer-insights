@@ -18,8 +18,6 @@ searchScope:
 
 # Select source fields for customer or account unification
 
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
-
 The first step in unification is selecting the entities and fields within your datasets that you want to unify. Select entities that contain customer-related details such as name, address, phone number, and email. You can select one or more entities.
 
 ## Select entities and fields

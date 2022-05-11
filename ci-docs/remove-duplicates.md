@@ -18,8 +18,6 @@ searchScope:
 
 # Remove duplicates before unifying customers or accounts
 
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
-
 This step in unification optionally enables you to set up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
 
 ## Include enriched entities (preview)

@@ -18,9 +18,7 @@ searchScope:
 
 # Update the unification settings
 
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
-
-To review or change any unification settings once a unified profile has been created, perform the following steps.
+To review or change any customer or account unification settings once a unified profile has been created, perform the following steps. To review or change contact unification settings once a unified contact profile has been created, see [Update the contact unification settings](data-unification-update-contacts.md).
 
 1. Go to **Data** > **Unify**.
 
