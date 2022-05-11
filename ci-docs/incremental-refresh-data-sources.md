@@ -42,7 +42,7 @@ Customer Insights allows incremental refresh for data sources imported through P
 
 1. On **Incremental refresh settings**, you'll configure the incremental refresh for all entities that you selected when creating the data source.
 
-   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="Configure entities in a data source for incremental refresh.":::
+   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="Configure incremental refresh settings.":::
 
 1. Select an entity, and provide the following details:
 
@@ -64,7 +64,7 @@ You can configure incremental refresh when adding the Azure Data Lake data sourc
 
 1. Select the **Incremental refresh** checkbox.
 
-   :::image type="content" source="media/ALDS_inc_refresh.png" alt-text="Configure entities in a data source for incremental refresh.":::
+   :::image type="content" source="media/ADLS_inc_refresh.png" alt-text="Configure entities in a data source for incremental refresh.":::
 
    1. Browse to the root folder that contains the .csv or .parquet files for full data, incremental data upserts, and incremental data deletes.
    1. Enter the extension for the full data and incremental files (for example: \.csv).

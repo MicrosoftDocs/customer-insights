@@ -75,8 +75,6 @@ The **Microsoft Dataverse** step lets you connect Customer Insights with your Da
 
 Provide your own Microsoft Dataverse environment to share data (profiles and insights) with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps. Leave this field empty if you don't have your own Dataverse environment and we'll provision one for you.
 
-Connecting to your Dataverse environment also enables you to [ingest data from on-premises data sources using Power Platform dataflows and gateways](data-sources.md#add-data-from-on-premises-data-sources).
-
 > [!IMPORTANT]
 > 1. Customer Insights and Dataverse have to be in the same region to enable data sharing.
 > 1. You must have a global administrator role in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you are added to those security groups.

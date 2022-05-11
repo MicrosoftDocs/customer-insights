@@ -21,8 +21,6 @@ Dynamics 365 Customer Insights provides connections to bring data from a broad s
 
 ## Add a data source
 
-You can attach or import a data source. Select an option to learn how to add the data source.
-
 **Attach a data source**:
 - [Azure Data Lake Storage (csv or parquet files in a Common Data Model folder)](connect-common-data-model.md)
 - [Azure Synapse Analytics (Lake databases)](connect-synapse.md)
