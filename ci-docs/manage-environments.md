@@ -122,7 +122,7 @@ You'll see a list of all available environments in your organization where you c
 The following configuration settings are copied:
 
 - Ingested/imported data sources
-- Data unification (Map, Match, Merge) configuration
+- Data unification configuration
 - Segments
 - Measures
 - Relationships

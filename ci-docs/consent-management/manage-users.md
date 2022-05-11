@@ -15,7 +15,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-All administrators of audience insights have access to the consent management capability. They can add and remove other users and assign them the required permissions.
+All administrators of Customer Insights have access to the consent management capability. They can add and remove other users and assign them the required permissions.
 
 ## Roles
 
