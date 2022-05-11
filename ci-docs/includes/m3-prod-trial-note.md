@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> The updated experience for the data unification area is rolled out in phases. Starting May 11, 2022, trial environments use the new guided workflows. Existing production environments are updated in the coming weeks. 
+> The updated experience for the data unification area is rolled out in phases. Starting May 11, 2022, trial environments use the new guided workflows. Existing production environments will be updated in the coming weeks. 
 >
 > Users of paid production environments can use the new articles for guidance. However, some screenshots and the organization of help content can differ from their apps. The following table helps to map the new articles to the map, match, and merge tabs in production apps.
 >
