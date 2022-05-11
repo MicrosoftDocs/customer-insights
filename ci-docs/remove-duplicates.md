@@ -69,7 +69,9 @@ If you enriched entities on the data source level to help improve your unificati
       - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
       - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
       - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
-
+      
+      In the event of a tie, the winner record is the one with the MAX(PK) or the larger primary key value.
+      
    1. Optionally, to define merge preferences on individual attributes of an entity, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
 
       :::image type="content" source="media/m3_adv_merge.png" alt-text="Advanced merge preferences pane showing recent email and complete address":::
