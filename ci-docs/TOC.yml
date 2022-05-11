@@ -303,7 +303,9 @@
       href: apis.md 
     - name: API references
       href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
-
+    - name: OData sample queries
+      href: odata-examples.md
+      
 - name: Consent management (Preview)
   items:
     - name: Help hub
