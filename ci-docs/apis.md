@@ -109,6 +109,10 @@ The [app registration section](#create-a-new-app-registration-in-the-azure-porta
 
 1. Search for the name of your app registration, select it from the search results, and select **Save**.
 
+## Sample queries
+
+We've compiled a short list of OData sample queries to work with the APIs: [OData query examples](odata-examples.md).
+
 ## Customer Insights client libraries
 
 This section helps you get started using the client libraries available for the Customer Insights APIs. All library source code and sample applications can be found on the [Customer Insights GitHub page](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries). 
