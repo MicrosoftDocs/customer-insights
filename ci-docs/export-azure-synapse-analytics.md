@@ -30,7 +30,7 @@ In Azure:
 
 - An active Azure subscription.
 
-- If using a new Azure Data Lake Storage Gen2 account, the *service principal for Customer Insights* needs **Storage Blob Data Contributor** permissions. Learn more on [connecting to an Azure Data Lake Storage Gen2 account with Azure service principal for audience insights](connect-service-principal.md). The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
+- If using a new Azure Data Lake Storage Gen2 account, the *service principal for Customer Insights* needs **Storage Blob Data Contributor** permissions. Learn more on [connecting to an Azure Data Lake Storage Gen2 account with Azure service principal for Customer Insights](connect-service-principal.md). The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
 
 - On the resource group where the Azure Synapse workspace is located, the *service principal* and the *Azure AD user with admin permissions in Customer Insights* need to be assigned at least **Reader** permissions. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 

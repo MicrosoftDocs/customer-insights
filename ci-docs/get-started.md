@@ -1,11 +1,12 @@
 ---
 title: Get started with Dynamics 365 Customer Insights
-description: An overview of Customer Insights help resources to get started quickly. 
-ms.reviewer: mhart
+description: An overview of Customer Insights helps resources to get started quickly. 
+ms.reviewer: v-wendysmith
 ms.author: mhart
 author: m-hartmann
-ms.date: 08/31/2021
-ms.subservice: audience-insights 
+ms.date: 04/12/2022
+
+ms.subservice: engagement-insights 
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
@@ -20,7 +21,7 @@ Customer Insights can help you build a deeper understanding of your customers. C
 
 ## Step 1: Create an environment
 
-To start, you first have to create an environment to work in. If your organization already purchased a license, see [Create an environment](create-environment.md). To start a trial for Customer Insights, see [Set up a trial environment](trial-signup.md). 
+To start, you first have to create an environment to work in. If your organization already purchased a license, see [Create an environment](create-environment.md). To start a trial for Customer Insights, see [Set up a trial environment](trial-signup.md).
 
 ## Step 2: Explore Customer Insights
 
@@ -30,16 +31,16 @@ The first time you sign in to Customer Insights, you can configure settings and 
 
 1. [Change the environment](manage-environments.md#switch-environments) to see demo data and [explore Customer Insights](home.md).
 
-##  Step 3: Ingest, unify, and set up relationships for your data
+## Step 3: Ingest, unify, and set up relationships for your data
 
-Unified profiles are the foundation to get insights and take action on the data. Bring in data from various sources and run the data unification process to combine unified profiles. Specify relationships between the ingested entities use enrichment features to add information to the profiles. 
+Unified profiles are the foundation to get insights and take action on the data. Bring in data from various sources and run the data unification process to combine unified profiles. Specify relationships between the ingested entities use enrichment features to add information to the profiles.
 
 1. Ingest data by creating data sources from multiple options. Choose between [Power Query connectors](connect-power-query.md), a [Common Data Model folder](connect-common-data-model.md), or [Microsoft Dataverse](connect-dataverse-managed-lake.md). 
 
-1. Run the [data unification process](data-unification.md) by going through the [map](map-entities.md), [match](match-entities.md), and [merge](merge-entities.md) phases.
+1. Run the [data unification process](data-unification.md) by identifying the [source fields](map-entities.md), removing [duplicates](remove-duplicates.md), [matching conditions](match-entities.md), and [unifying fields](merge-entities.md).
 
 1. Get familiar with the [entities the system creates](entities.md) and create [relationships between the ingested entities](relationships.md).
-	
+
 ## Step 4: Enhance unified profiles with predictions, activities, and measures
 
 With unified profiles set up, you can enhance your data and further increase the information they provide.
@@ -48,13 +49,13 @@ With unified profiles set up, you can enhance your data and further increase the
 
 1. Use [out-of-box models](predictions-overview.md) to predict churn likelihood or expected revenues.
 
-1. [Configure activities](activities.md) based on ingested data and visualize interactions with your customers in a chronological timeline. 
+1. [Configure activities](activities.md) based on ingested data and visualize interactions with your customers in a chronological timeline.
 
 1. [Build measures](measures.md) to gauge your business goals and KPIs.
- 
+
 ## Step 5: Create segments and activate data through various export options
 
-Now that your data is complete and contains a wide range of information about your customers, it's time to look for ways to take action on that data. 
+Now that your data is complete and contains a wide range of information about your customers, it's time to look for ways to take action on that data.
 
 1. [Create segments](segments.md), subsets of your customer base, to ensure your actions are relevant for the targeted customers.
 

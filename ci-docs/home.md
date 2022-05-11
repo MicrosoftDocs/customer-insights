@@ -1,7 +1,7 @@
 ---
 title: "Home page in Customer Insights"
 description: "Start exploring the app on the Home page."
-ms.date: 04/12/2022
+ms.date: 05/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
