@@ -79,7 +79,7 @@ You can use the Application/Client ID for this app registration with the Microso
 
 For more information about MSAL, see [Overview of Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
 
-For more information about app registration in Azure, see [Register an application](/azure/active-directory/develop/quickstart-register-app.md#register-an-application).
+For more information about app registration in Azure, see [Register an application](/graph/auth-register-app-v2).
 
 For information on using the APIs in our client libraries, see [Customer Insights client libraries](#customer-insights-client-libraries).
 
