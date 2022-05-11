@@ -32,9 +32,6 @@ You can add the following data sources:
 - [From your own Microsoft Dataverse lake](connect-dataverse-managed-lake.md)
 - [From an Azure Synapse Analytics database](connect-synapse.md)
 
-> [!NOTE]
-> If you're using the trial version, the import methods section includes a **Customer Insights data library** option. Choose this option to select a sample dataset available for various industries. For more information, see [Dynamics 365 Customer Insights trial](trial-signup.md).
-
 ## Add data from on-premises data sources
 
 Ingesting data from on-premises data sources is supported based on Microsoft Power Platform dataflows. You can enable Dataflows in Customer Insights by [providing the Microsoft Dataverse environment URL](create-environment.md) when setting up the environment.
