@@ -5,7 +5,7 @@
 >
 > Unify tab  |New article  |
 > |---------|---------|
-> |Map     |  [Select source fields for data unification](map-entities.md)       |
-> |Match     | [Match conditions](match-entities.md) and [Remove duplicates before unifying data](remove-duplicates.md)        |
-> |Merge     |  [Unify customer fields](merge-entities.md)       |
+> |Map     |  [Select source fields for data unification](../map-entities)       |
+> |Match     | [Match conditions](../match-entities) and [Remove duplicates before unifying data](../remove-duplicates)        |
+> |Merge     |  [Unify customer fields](../merge-entities.md)       |
  
