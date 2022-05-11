@@ -37,7 +37,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
 
-- Data in your Azure Data Lake must follow the Common Data Model standard for storage of your data. For more information, see [The Common Data Model manifest](https://docs.microsoft.com/common-data-model/sdk/manifest). Admin users with Storage Blob Data Owner or Contributor access can define the schema when ingesting the data if the manifest is not present.
+- Data in your Azure Data Lake must follow the Common Data Model standard for storage of your data. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). Admin users with Storage Blob Data Owner or Contributor access can define the schema when ingesting the data if the manifest is not present.
 
 ## Connect to Azure Data Lake storage
 
