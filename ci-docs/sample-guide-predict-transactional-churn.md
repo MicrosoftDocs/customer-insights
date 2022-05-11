@@ -1,8 +1,9 @@
 ---
 title: Transactional churn prediction sample guide
 description: Use this sample guide to try out the out of box transactional churn prediction model.
-ms.date: 03/31/2022
-ms.reviewer: v-wendysmith
+ms.date: 05/11/2022
+ms.reviewer: mhart
+
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -88,7 +89,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 ## Task 3 - Configure transaction churn prediction
 
-With the unified customer profiles in place, we can now run the subscription churn prediction. For detailed steps, see the [Subscription churn prediction](predict-subscription-churn.md) article. 
+With the unified customer profiles in place, we can now run the transaction churn prediction. For detailed steps, see the [Transaction churn prediction](predict-transactional-churn.md) article. 
 
 1. Go to **Intelligence** > **Discover** and select to use the **Customer churn model**.
 
@@ -120,7 +121,7 @@ With the unified customer profiles in place, we can now run the subscription chu
 
 ## Task 4 - Review model results and explanations
 
-Let the model complete the training and scoring of the data. You can now review the subscription churn model explanations. For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).
+Let the model complete the training and scoring of the data. You can now review the churn model explanations. For more information, see [Review a prediction status and results](predict-transactional-churn.md#review-a-prediction-status-and-results).
 
 ## Task 5 - Create a segment of high churn-risk customers
 
@@ -132,14 +133,12 @@ You can create a new segment based on the entity created by the model.
 
    :::image type="content" source="media/segment-intelligence.PNG" alt-text="Creating a segment with the model output.":::
 
-1. Select the **OOBSubscriptionChurnPrediction** endpoint and define the segment: 
+1. Select the **OOBeCommerceChurnPrediction** endpoint and define the segment: 
    - Field: ChurnScore
    - Operator: greater than
    - Value: 0.6
-   
-   :::image type="content" source="media/segment-setup-subs.PNG" alt-text="Set up subscription churn segment.":::
 
-You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.
+You now have a segment that is dynamically updated which identifies high churn-risk customers.
 
 For more information, see [Create and manage segments](segments.md).
 
