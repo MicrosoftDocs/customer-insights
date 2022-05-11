@@ -50,7 +50,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 ## Refresh a data source
 
-Data sources can be refreshed on an automatic schedule or refreshed manually on demand. On-premise data sources refresh on their own schedules which are set up during data ingestion. For attached data sources, data ingestion consumes the latest data available from that data source.
+Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premise data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules which are set up during data ingestion. For attached data sources, data ingestion consumes the latest data available from that data source.
 
 Go to **Admin** > **System** > [**Schedule**](system.md#schedule-tab) to configure system-scheduled refreshes of your ingested data sources.
 

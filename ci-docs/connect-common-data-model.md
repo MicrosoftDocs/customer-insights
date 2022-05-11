@@ -51,10 +51,10 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Enter a **Name** for the data source and an optional **Description**.
 
-1. Choose your preferred option for **Connect your storage using**. For a resource or a subscription-based option for authentication, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
+1. Choose one of the following options for **Connect your storage using**. For a resource or a subscription-based option for authentication, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-   - **Azure resource**: Enter the **Resource Id**. If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see  [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Azure resource**: Enter the **Resource Id**. If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
    - **Account key**: Enter the **Account name** and **Account key**.
 
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
