@@ -19,7 +19,9 @@ searchScope:
 
 # Unify customer fields
 
-In this step of the unification process, choose and exclude attributes to merge within your unified profile entity. Some attributes are automatically combined by the system. You can create stable and unique Customer IDs and group related profiles into a cluster.
+[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
+
+In this step of the unification process, choose and exclude attributes to merge within your unified profile entity. For example, if three entities had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Some attributes are automatically combined by the system. You can create stable and unique customer IDs and group related profiles into a cluster.
 
 :::image type="content" source="media/m3_unify.png" alt-text="Merge page in the data unification process showing table with merged fields that define the unified customer profile.":::
 
@@ -41,7 +43,7 @@ In this step of the unification process, choose and exclude attributes to merge 
       - [Exclude](#exclude-fields)
       - [Move up or down](#change-the-order-of-fields)
 
-1. Optionally, [generate the CustomerID configuration](#configure-customer-id-generation).
+1. Optionally, [generate the customer ID configuration](#configure-customer-id-generation).
 
 1. Optionally, [group profiles into households or clusters](#group-profiles-into-households-or-clusters).
 
@@ -95,7 +97,7 @@ Exclude a merged or separate field from the unified customer profile. If the fie
 
 1. Confirm the exclusion.
 
-To see the list of all excluded fields, select **Excluded fields**. If necessary, you can re-add the excluded field.
+To see the list of all excluded fields, select **Excluded fields**. If necessary, you can readd the excluded field.
 
 ### Change the order of fields
 
@@ -127,7 +129,7 @@ Treat a group of fields as a single unit. For example, if our records contain th
 
 1. Specify the merge winner policy in the **Rank groups by** dropdown.
 
-1. Select **Add** and choose if you want to add more fields or additional groups to the fields.
+1. Select **Add** and choose if you want to add more fields or groups to the fields.
 
 1. Provide a **Name** and an **Output name** for every combined field.
 
@@ -135,11 +137,11 @@ Treat a group of fields as a single unit. For example, if our records contain th
 
 1. Select **Done** to apply the changes.
 
-## Configure Customer ID generation
+## Configure customer ID generation
 
-Define how to generate CustomerId values, the unique customer profile identifiers. The unify fields step in the data unification process generates the unique customer profile identifier. The identifier is the CustomerId in the *Customer* entity that results from the data unification process.
+Define how to generate customer ID values, the unique customer profile identifiers. The unify fields step in the data unification process generates the unique customer profile identifier. The identifier is the *CustomerId* in the *Customer* entity that results from the data unification process.
 
-The CustomerId in the Customer entity is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in data unification and are influenced by the match order. So the generated CustomerID can change when a primary key value changes in the primary entity of the match order. So the primary key value might not always represent the same customer.
+The *CustomerId* is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in data unification and are influenced by the match order. So the generated customer ID can change when a primary key value changes in the primary entity of the match order. The primary key value might not always represent the same customer.
 
 Configuring a stable customer ID enables you to avoid that behavior.
 
@@ -154,7 +156,7 @@ Configuring a stable customer ID enables you to avoid that behavior.
 
 ## Group profiles into households or clusters
 
-As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
+You can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
 
 1. Select **Advanced** > **Create cluster**.
 

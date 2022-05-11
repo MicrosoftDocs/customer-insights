@@ -18,6 +18,8 @@ searchScope:
 
 # Review data unification
 
+[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
+
 This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified profile.
 
 :::image type="content" source="media/m3_review.png" alt-text="Screenshot of Review and create customer profiles.":::
@@ -30,11 +32,11 @@ This last step in the unification process shows a summary of the steps in the pr
 
    [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
 
-When the unification process completes, the unified customer profile entity, called *Customers*, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+When the unification process completes, the unified customer profile entity, called *Customer*, is listed on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
 
 ## Review the results of data unification
 
-After unification, the **Data** > **Unify** page shows the number of unified customer profiles. The results of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
+After unification, the **Data** > **Unify** page shows the number of unified customer profiles. The results of each step in the unification process display on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
 
 :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
 

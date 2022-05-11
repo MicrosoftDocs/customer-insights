@@ -1,6 +1,6 @@
 ---
 title: "Remove duplicates before unifying data"
-description: "The 2nd step in the unification process is selecting which record to keep when duplicates are found"
+description: "The second step in the unification process is selecting which record to keep when duplicates are found."
 recommendations: false
 ms.date: 04/22/2022
 
@@ -18,7 +18,9 @@ searchScope:
 
 # Remove duplicates before unifying customers or accounts
 
-This step in unification sets up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. This step is optional. If rules are not configured, system-defined rules are applied.
+[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
+
+This step in unification optionally enables you to set up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
 
 ## Include enriched entities (preview)
 
@@ -46,7 +48,7 @@ If you enriched entities on the data source level to help improve your unificati
         - **Unicode to ASCII**: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
         - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
       - **Precision**: Set the level of precision to apply for this condition.
-        - **Basic**: Choose from *Low*, *Medium*, *High*, and *Exact*. Select **Exact** to only match records that match 100 percent. Select one of the other levels to match records that aren't 100 percent identical.
+        - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
         - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
       - **Name**: Name for the rule.
 
@@ -67,7 +69,9 @@ If you enriched entities on the data source level to help improve your unificati
       - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
       - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
       - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
-
+      
+      In the event of a tie, the winner record is the one with the MAX(PK) or the larger primary key value.
+      
    1. Optionally, to define merge preferences on individual attributes of an entity, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
 
       :::image type="content" source="media/m3_adv_merge.png" alt-text="Advanced merge preferences pane showing recent email and complete address":::
@@ -75,12 +79,16 @@ If you enriched entities on the data source level to help improve your unificati
    1. Select **Done** to apply your merge preferences.
 
 1. After defining the deduplication rules and merge preferences, select **Next**.
-   - For a single entity, go to [Unify fields](merge-entities.md).
-   - For multiple entities, go to [Match conditions](match-entities.md).
+  
+> [!div class="nextstepaction"]
+> [Next step for a single entity: Unify fields](merge-entities.md)
+
+> [!div class="nextstepaction"]
+> [Next step for multiple entities: Matching conditions](match-entities.md)
 
 ## Deduplication output as an entity
 
-The deduplication process creates a new entity for every entity from the match pairs to identify the deduplicated records. These entities can be found along with the **ConflationMatchPairs:CustomerInsights** in the **System** section in the **Entities** page, with the name **Deduplication_DataSource_Entity**.
+The deduplication process creates a new deduplicated entity for each of the source entities. These entities can be found along with the **ConflationMatchPairs:CustomerInsights** in the **System** section in the **Entities** page, with the name **Deduplication_DataSource_Entity**.
 
 A deduplication output entity contains the following information:
 

@@ -18,6 +18,8 @@ searchScope:
 
 # Select source fields for customer or account unification
 
+[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
+
 The first step in unification is selecting the entities and fields within your datasets that you want to unify. Select entities that contain customer-related details such as name, address, phone number, and email. You can select one or more entities.
 
 ## Select entities and fields
@@ -30,11 +32,11 @@ The first step in unification is selecting the entities and fields within your d
 
 1. On the **Source fields** page, select **Select entities and fields**. The **Select entities and fields** pane displays.
 
-1. Select at least one entity. Select multiple entities to combine into a unified profile.
+1. Select at least one entity.
 
-1. For each selected entity, identify the fields you want to combine and reconcile. These fields are called *Attributes*. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the checkbox on the entity level. You can search on keywords across all attributes and entities to select the required attributes you want to map.
+1. For each selected entity, identify the fields you want to use to match customer records and fields to include in the unified profile. These fields are called *Attributes*. You can select the required attributes individually from an entity or include all attributes from an entity by selecting the checkbox on the entity level. You can search on keywords across all attributes and entities to select the required attributes you want to map.
 
-   :::image type="content" source="media/m3_select_entities.png" alt-text="Screenshot of selected entities and attributes."::::::
+   :::image type="content" source="media/m3_select_entities.png" alt-text="Screenshot of selected entities and attributes.":::
 
    In this example, we're adding the **Contacts** and **CustomerLoyalty** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
 
@@ -55,15 +57,15 @@ For each entity, perform the following steps.
    > [!NOTE]
    > One field should map to the semantic type *Person.FullName* to populate the customer name in the customer card. Otherwise, the customer cards will appear nameless.
 
-   1. To change an attribute type identified by the system, add a custom semantic type. Select the **Type** field for an attribute, and enter your custom semantic type name.
+   1. To change an attribute type identified by the system, select another type. If the type doesn't exist, create a custom semantic type by selecting the **Type** field for the attribute, and entering your custom semantic type name.
 
    1. To add an attribute that contains a URL to publicly available profile images or logos, select the entity and field that contains the URL. In the **Type** field, enter the following:
       - For a person: Person.ProfileImage
       - For an organization: Organization.LogoImage
 
-   1. For an organization (preview) attribute, enter "Organization.Name" in the **Type** field.
+   1. For an account name attribute, enter "Organization.Name" in the **Type** field.
 
-1. For attributes where a semantic type is automatically identified, review these attributes and types as they'll be used to combine your entities. These attributes are listed under **Review mapped fields**. Ensure the types you chose are consistent across all the selected entities.
+1. Review the attributes where a semantic type is automatically identified. These attributes are listed under **Review mapped fields**. Only attributes with the same type can be combined in the **Unified customer fields** step. Semantic types are used to automatically suggest insights. Ensure the types you chose are consistent across all the selected entities.
 
 1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, enter your custom attribute-type name, or leave them unmapped. These attributes are listed under **Define the data in the unmapped fields**.
 
