@@ -19,6 +19,8 @@ searchScope:
 
 # Match conditions
 
+[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
+
 This step in unification defines the match order and rules for cross-entity matching. This step requires at least two entities.
 
 > [!NOTE]
