@@ -1,7 +1,7 @@
 ---
 title: "Home page in Customer Insights"
 description: "Start exploring the app on the Home page."
-ms.date: 04/12/2022
+ms.date: 05/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -15,7 +15,7 @@ searchScope:
 
 # Explore Customer Insights
 
-You can [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
+You can access [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 
 The **Home** page shows guides you through the configuration process for key features and provides an overview of segments, measures, and enrichment data.
 

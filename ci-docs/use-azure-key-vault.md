@@ -37,7 +37,7 @@ To configure the key vault in Customer Insights, the following prerequisites mus
 
 ### Link a key vault to the environment
 
-1. Go to **Admin** > **System**, and then select the **Security** tab.
+1. Go to **Admin** > **Security**, and then select the **Key Vault** tab.
 1. On the **Key Vault** tile, select **Setup**.
 1. Choose a **Subscription**.
 1. Choose a key vault from the **Key Vault** dropdown list. If too many key vaults are showing up, select a resource group to limit the search results.
