@@ -79,7 +79,7 @@ You can use the Application/Client ID for this app registration with the Microso
 
 For more information about MSAL, see [Overview of Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
 
-For more information about app registration in Azure, see [Register an application](/azure/active-directory/develop/quickstart-register-app.md#register-an-application).
+For more information about app registration in Azure, see [Register an application](/graph/auth-register-app-v2).
 
 For information on using the APIs in our client libraries, see [Customer Insights client libraries](#customer-insights-client-libraries).
 
@@ -108,6 +108,10 @@ The [app registration section](#create-a-new-app-registration-in-the-azure-porta
    Open Customer Insights, go to **Admin** > **Permissions** and select **Add user**.
 
 1. Search for the name of your app registration, select it from the search results, and select **Save**.
+
+## Sample queries
+
+We've compiled a short list of OData sample queries to work with the APIs: [OData query examples](odata-examples.md).
 
 ## Customer Insights client libraries
 

@@ -33,15 +33,14 @@ You can attach or import a data source. Select an option to learn how to add the
 
 ## Review ingested data
 
-If your environment was configured to use Customer Insights storage, you can view shared data sources and data sources managed by others. The **Data Sources** page lists the data sources in three sections:
+If your environment was configured to use Customer Insights storage and use Power Platform dataflows (PPDFs), you can view shared data sources and data sources managed by others. The **Data Sources** page lists the data sources in three sections:
 - **Shared**: Data sources that can be managed by all Customer Insights admins. Power Platform dataflows (PPDFs),  your own storage account, and attaching to a Dataverse-managed data lake are examples of shared data sources.
 - **Managed by me**: PPDFs created and managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.
 - **Managed by others**: PPDFs created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.
 > [!NOTE]
 > All entities can be viewed and used by other users. User contextuality applies only to the data sources and not to the entities that result from these dataflows.
 
-If your environment was configured to use your own Azure Data Lake Storage, the **Data Sources** page contains only a list of all data sources. No sections display.
-
+If your environment does not use PPDFs, the **Data Sources** page contains only a list of all data sources. No sections display.
 
 Go to **Data** > **Data sources** to view the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by every column.
 

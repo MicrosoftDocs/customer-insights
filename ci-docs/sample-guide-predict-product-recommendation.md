@@ -1,7 +1,7 @@
 ---
 title: Product recommendation prediction sample guide
 description: Use this sample guide to try out the out of box product recommendation prediction model.
-ms.date: 02/10/2021
+ms.date: 05/11/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -143,7 +143,7 @@ After ingesting the data, we now begin the data unification process to create a 
 
 ## Task 3 - Configure product recommendation prediction
 
-With the unified customer profiles in place, we can now run the subscription churn prediction.
+With the unified customer profiles in place, we can now run the product recommendation prediction.
 
 1. Go to **Intelligence** > **Prediction** choose **Product recommendation**.
 
@@ -178,7 +178,7 @@ With the unified customer profiles in place, we can now run the subscription chu
 
 ## Task 4 - Review model results and explanations
 
-Let the model complete the training and scoring of the data. You can now review the product recommendation model explanations. For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).
+Let the model complete the training and scoring of the data. You can now review the product recommendation model explanations. For more information, see [Review a prediction status and results](predict-transactional-churn.md#review-a-prediction-status-and-results).
 
 ## Task 5 - Create a segment of high purchased products
 
