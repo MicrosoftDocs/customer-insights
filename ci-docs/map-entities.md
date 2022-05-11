@@ -26,7 +26,13 @@ The first step in unification is selecting the entities and fields within your d
 
 1. Go to **Data** > **Unify**.
 
+   For individual customers (B-to-C), the following image displays.
+
    :::image type="content" source="media/m3_unify_land.png" alt-text="Screenshot of unify landing page for first run experience with Get started highlighted.":::
+
+   For business accounts (B-to-B), the following image displays.
+
+   :::image type="content" source="media/b2b_unify_land.png" alt-text="Screenshot of unify landing page for first run experience for B-to-B with Get started highlighted.":::
 
 1. Select **Get started**.
 
