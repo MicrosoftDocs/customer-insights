@@ -19,6 +19,7 @@ By saving data to Azure Data Lake Storage, you agree that data will be transferr
 > - Azure Data Lake Storage accounts must be in the same Azure region that you selected when creating the Customer Insights environment. You can check the region of the Customer Insights environment under **Admin** > **System** > **About**.
 > - Storage accounts have to be Gen2 and have *hierarchical namespace* enabled. Azure Data Lake Gen1 storage accounts are not supported.
 > - The administrator setting up the Customer Insights environment needs Storage Blob Data reader, Storage Blob Data Contributor, or Storage Blob Data Owner role on the storage container.
+> - A Microsoft Dataverse environment can only connect to a single storage account.
 
 For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using an Azure Service Principal](connect-service-principal.md). A container named `customerinsights` has to exist on the storage account.
 
