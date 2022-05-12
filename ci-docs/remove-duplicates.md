@@ -18,7 +18,9 @@ searchScope:
 
 # Remove duplicates before unifying customers or accounts
 
-This step in unification optionally enables you to set up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
+This optional step in unification enables you to set up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
+
+[!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
 ## Include enriched entities (preview)
 
@@ -34,7 +36,7 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. On the **Duplicate records** page, select an entity and select **Add rule** to define the deduplication rules.
 
-   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Duplicate records pages with Show more highlighted":::
+   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Duplicate records pages with Show more highlighted to see Add rule":::
 
    1. In the **Add rule** pane, enter the following information:
       - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
@@ -67,9 +69,9 @@ If you enriched entities on the data source level to help improve your unificati
       - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
       - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
       - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
-      
+
       In the event of a tie, the winner record is the one with the MAX(PK) or the larger primary key value.
-      
+
    1. Optionally, to define merge preferences on individual attributes of an entity, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
 
       :::image type="content" source="media/m3_adv_merge.png" alt-text="Advanced merge preferences pane showing recent email and complete address":::

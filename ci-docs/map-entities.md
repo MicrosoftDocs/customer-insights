@@ -20,17 +20,19 @@ searchScope:
 
 The first step in unification is selecting the entities and fields within your datasets that you want to unify. Select entities that contain customer-related details such as name, address, phone number, and email. You can select one or more entities.
 
+[!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
+
 ## Select entities and fields
 
 1. Go to **Data** > **Unify**.
 
    For individual customers (B-to-C), the following image displays.
 
-   :::image type="content" source="media/m3_unify_land.png" alt-text="Screenshot of unify landing page for first run experience with Get started highlighted.":::
+   :::image type="content" source="media/m3_unify_land.png" alt-text="Screenshot of unify landing page for first run experience for individual customers.":::
 
    For business accounts (B-to-B), the following image displays.
 
-   :::image type="content" source="media/b2b_unify_land.png" alt-text="Screenshot of unify landing page for first run experience for B-to-B with Get started highlighted.":::
+   :::image type="content" source="media/b2b_unify_land.png" alt-text="Screenshot of unify landing page for first run experience for business accounts.":::
 
 1. Select **Get started**.
 
@@ -48,20 +50,20 @@ The first step in unification is selecting the entities and fields within your d
 
 ## Select primary key and semantic type for attributes
 
-   :::image type="content" source="media/m3_select_primary.png" alt-text="Screenshot of selected entities with primary key not selected." lightbox="media/m3_select_primary.png":::
+   :::image type="content" source="media/m3_select_primary.png" alt-text="Screenshot of selected entities with primary key not yet selected." lightbox="media/m3_select_primary.png":::
 
 For each entity, perform the following steps.
 
 1. Choose the **Primary key**. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
 
-1. To use AI models for smart prediction of semantics, save time and improve accuracy, ensure **Intelligent mapping** is on. Intelligent mapping highlights AI-based semantics recommendation in the **Type** field. You can override the suggested selection by choosing any semantic type from the available list of options.
+1. To use AI models for smart prediction of semantics which saves time and improves accuracy, ensure **Intelligent mapping** is on. Intelligent mapping provides AI-based semantic recommendations in the **Type** field.
 
 1. For each attribute, choose a semantic **Type** that best describes that attribute, such as name, city, or email address.
 
    > [!NOTE]
    > One field should map to the semantic type *Person.FullName* to populate the customer name in the customer card. Otherwise, the customer cards will appear nameless.
 
-   1. To change an attribute type identified by the system, select another type. If the type doesn't exist, create a custom semantic type by selecting the **Type** field for the attribute, and entering your custom semantic type name.
+   1. To override an attribute type identified by the system, select another option. If the type doesn't exist, create a custom semantic type by selecting the **Type** field for the attribute and entering your custom semantic type name.
 
    1. To add an attribute that contains a URL to publicly available profile images or logos, select the entity and field that contains the URL. In the **Type** field, enter the following:
       - For a person: Person.ProfileImage
@@ -71,7 +73,7 @@ For each entity, perform the following steps.
 
 1. Review the attributes where a semantic type is automatically identified. These attributes are listed under **Review mapped fields**. Only attributes with the same type can be combined in the **Unified customer fields** step. Semantic types are used to automatically suggest insights. Ensure the types you chose are consistent across all the selected entities.
 
-1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, enter your custom attribute-type name, or leave them unmapped. These attributes are listed under **Define the data in the unmapped fields**.
+1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, enter your custom attribute type name, or leave them unmapped. These attributes are listed under **Define the data in the unmapped fields**.
 
 1. After completing the steps for each entity, select **Save source fields**.
 
