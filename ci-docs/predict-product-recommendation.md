@@ -1,7 +1,7 @@
 ---
 title: "Product recommendation prediction"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 01/13/2022
+ms.date: 05/09/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -28,6 +28,8 @@ If you're interested in trying this feature but don't have data to complete the 
 - At least [Contributor permissions](permissions.md) in Customer Insights.
 
 - Business knowledge to understand different types of products for your business and how your customers interact with them. We support recommending products that have been previously purchased by your customers or recommendations for new products.
+
+- You environment has to be configured for the **individual consumers** primary target audience. 
 
 - Data about transactions, purchases, and their history:
     - Transaction identifiers to distinguish purchases or transactions.

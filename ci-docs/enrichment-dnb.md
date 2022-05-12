@@ -11,7 +11,7 @@ ms.author: jodahl
 manager: shellyha
 ---
 
-# Enrichment of company profiles with Dun & Bradstreet (preview)
+# Enrichment of company profiles with Dun & Bradstreet (Preview)
 
 Dun & Bradstreet provides commercial data, analytics, and insights for businesses. It enables customers with unified customer profiles for companies to enrich their data. Enrichments include attributes such as DUNS number, company size, location, industry, and more.
 
@@ -30,7 +30,7 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
 1. Sign in to [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). To retrieve credentials, [restore your password](https://sso.dnb.com/signin/forgot-password?lead_source=microsoft_audienceinsights).
 
-1. Download [our csv template file](https://c360devenrichment.blob.core.windows.net/mapping/DnBCIdatamapping.csv) that will be used to map the audience insights fields to the corresponding Dun & Bradstreet fields. 
+1. Download [our csv template file](https://c360devenrichment.blob.core.windows.net/mapping/DnBCIdatamapping.csv) that will be used to map the Customer Insights fields to the corresponding Dun & Bradstreet fields. 
 
 1. Upload the file in the **Upload data** step of the Dun & Bradstreet project creation experience. 
 
@@ -38,7 +38,7 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
    :::image type="content" source="media/enrichment-dnb-dots.png" alt-text="Screenshot of dots in a Dun & Bradstreet project.":::
 
-1. Choose **Get S3 details**. Store this information in a safe place. You'll need it to [set up the connection for the enrichment](#configure-a-connection-for-dun--bradstreet) in audience insights. 
+1. Choose **Get S3 details**. Store this information in a safe place. You'll need it to [set up the connection for the enrichment](#configure-a-connection-for-dun--bradstreet) in Customer Insights. 
 
    :::image type="content" source="media/enrichment-dnb-s3info.png" alt-text="Screenshot of selection of s3 information in a Dun & Bradstreet project.":::
 
@@ -46,7 +46,7 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
 ## Configure the enrichment
 
-1. In audience insights, go to **Data** > **Enrichment**.
+1. Go to **Data** > **Enrichment**.
 
 1. Select **Enrich my data** on the Dun & Bradstreet tile and select **Get started**.
 

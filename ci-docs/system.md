@@ -28,7 +28,6 @@ The **System** page includes the following tabs:
 - [API usage](#api-usage-tab)
 - [About](#about-tab)
 - [General](#general-tab)
-- [Security](#security-tab)
 
 :::image type="content" source="media/system-tabs.png" alt-text="Settings tabs on the system page.":::
 
@@ -135,13 +134,6 @@ The **API usage** contains three sections:
 
    Operations that use [real-time data ingestion](real-time-data-ingestion.md) contain a button with a binocular symbol to view real-time API usage. Select the button to open a side pane containing usage details for the real-time API usage in the current environment.   
    Use the **Group by** box in the **Real-time API usage** pane to choose how to best present your real-time interactions. You can group the data by API method, entity qualified name (ingested entity), created by (source of the event), result (success or failure) or error codes. The data is available as a history chart and as a table.
-
-## Security tab
-
-The **Security** tab lets you link and manage your own [Azure key vault](/azure/key-vault/general/basic-concepts) to the environment.
-The dedicated key vault can be used to stage and use secrets in an organization's compliance boundary. Customer Insights can use the secrets in Azure Key Vault to [set up connections](connections.md) to third-party systems.
-
-For more information, see [Bring your own Azure key vault](use-azure-key-vault.md).
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
