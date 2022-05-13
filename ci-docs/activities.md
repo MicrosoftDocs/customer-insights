@@ -21,7 +21,7 @@ searchScope:
 
 # Customer activities
 
-Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights to create a timeline that lists the activities chronologically. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution, or in a Power BI dashboard.
+Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights. Create a timeline that lists the activities chronologically. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
 
 ## Define an activity
 
@@ -73,7 +73,7 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
 1. Select **Next** to move to the next step. You can select **Finish and review** to save the activity now with the activity type set to **Other**. 
 
-1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, and *Subscription* activity types can be semantically mapped after agreeing to map the fields. If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
+1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, and *Subscription* activity types support semantics after agreeing to map the fields. If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
 
 1. Select **Next** to move to the next step. 
 
@@ -105,7 +105,7 @@ After you configured customer activities, select **Show in activity timeline** i
 
 To open the timeline for a customer, go to **Customers** and choose the customer profile that you want to view.
 
-If a customer has participated in an activity that you have configured, you'll find it in the **Activity timeline** section.
+If a customer has participated in a configured activity, you'll find it in the **Activity timeline** section.
 
 :::image type="content" source="media/Activity_Timeline1.PNG" alt-text="View configured activities in Customer Profiles.":::
 
