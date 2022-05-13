@@ -26,13 +26,13 @@ After [unifying business accounts](map-entities.md), unify the contacts. The con
 
 1. Under **Unify contacts**, select **Get started**.
 
-1. [Select the entities and fields](map-entities.md) for your contact data sources.
+1. [Select the entities and fields](map-entities.md) for your contact data sources, including the primary keys and attribute types.
 
 1. Select **Next**.
 
 ## Remove duplicates before unifying contacts
 
-1. [Define deduplication rules](remove-duplicates.md) for your selected entities (optional).
+1. Optionally, [define deduplication rules](remove-duplicates.md) for your selected entities.
 
 1. Select **Next**.
 
@@ -64,8 +64,8 @@ This step in the unification process connects your contact data to its correspon
 
 1. Select the contact entity and enter the following information:
 
+   - **Foreign key from contact entity**: Choose the attribute that connects your contact entity to the account.
    - **To account entity**: Choose the account entity associated with the contact.
-   - **Foreign key**: Choose the attribute that connects your contact entity to the account.
 
    :::image type="content" source="media/contact_relationship.png" alt-text="Screenshot of Relationship page to connect the contact and account entities.":::
 
@@ -74,6 +74,8 @@ This step in the unification process connects your contact data to its correspon
 ## Review contact unification
 
 This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified contact profile.
+
+:::image type="content" source="media/b2b_review_contacts.png" alt-text="Screenshot of Review and create contact profiles.":::
 
 ### Review the contact unification steps
 
