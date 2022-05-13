@@ -21,7 +21,7 @@ Dynamics 365 Customer Insights provides APIs to build your own applications base
 > [!IMPORTANT]
 > Details of these APIs are listed on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.
 
-This article describes how to access the Customer Insights APIs, create an Azure App Registration, and get started with the available client libraries.
+This article describes how to access the Customer Insights APIs, create an Azure App Registration, and get started with client libraries.
 
 ## Get started trying the Customer Insights APIs
 
@@ -85,7 +85,7 @@ For information on using the APIs in our client libraries, see [Customer Insight
 
 ### Server-to-server application permissions
 
-The [app registration section](#create-a-new-app-registration-in-the-azure-portal) outlines how to register an app that requires a user to sign in for authentication. Learn how to create an app registration that does not need user interaction and can be run on a server.
+The [app registration section](#create-a-new-app-registration-in-the-azure-portal) outlines how to register an app that requires a user to sign in for authentication. Learn how to create an app registration that doesn't need user interaction and can be run on a server.
 
 1. On your App registration in the Azure portal, go to **API permissions**.
 
@@ -137,7 +137,7 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
 
 1. Use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) to get an `AccessToken` using your existing [Azure app registration](#create-a-new-app-registration-in-the-azure-portal).
 
-1. After successfully authenticating and acquiring a token, construct a new or use an existing `HttpClient` with the additional **DefaultRequestHeaders "Authorization"** set to **Bearer "access token"** and **Ocp-Apim-Subscription-Key** set to the [**subscription key** from your Customer Insights environment](#get-started-trying-the-customer-insights-apis).   
+1. After successfully authenticating and acquiring a token, construct a new or use an existing `HttpClient` with the **DefaultRequestHeaders "Authorization"** set to **Bearer "access token"** and **Ocp-Apim-Subscription-Key** set to the [**subscription key** from your Customer Insights environment](#get-started-trying-the-customer-insights-apis).   
  
    Reset the **Authorization** header when appropriate. For example, when the token expired.
 
@@ -147,7 +147,7 @@ Learn how to get started using the C# client libraries from NuGet.org. For more 
 
 1. Make calls with the client to the "extension methods"—for example, `GetAllInstancesAsync`. If access to the underlying `Microsoft.Rest.HttpOperationResponse` is preferred, use the "http message methods"—for example, `GetAllInstancesWithHttpMessagesAsync`.
 
-1. The response will likely be of type `object` because the method can return multiple types (for example, `IList<InstanceInfo>` and `ApiErrorResult`). To check the return type, you can safely cast the objects into the response types specified on the [API details page](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) for that operation.    
+1. The response will likely be of type `object` because the method can return multiple types (for example, `IList<InstanceInfo>` and `ApiErrorResult`). To check the return type, you use the objects in the response types specified on the [API details page](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) for that operation.    
    
    If more information on the request is needed, use the **http message methods** to access the raw response object.
 

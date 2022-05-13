@@ -1,4 +1,4 @@
-After ingesting the data, begin the data unification process to create a unified customer profile. For more information, see [Data unification](/ci-docs/audience-insights/data-unification.md).
+After ingesting the data, begin the data unification process to create a unified customer profile. For more information, see [Data unification](../data-unification.md).
 
 ### Select source fields
 
@@ -6,7 +6,7 @@ After ingesting the data, begin the data unification process to create a unified
 
 1. Select the entities that represent the customer profile – **eCommerceContacts** and **loyCustomers**.
 
-   ![unify ecommerce and loyalty datasources.](media/unify-ecommerce-loyalty.png)
+   ![unify ecommerce and loyalty datasources.](../media/unify-ecommerce-loyalty.png)
 
 1. Select **ContactId** as the primary key for **eCommerceContacts** and **LoyaltyID** as the primary key for **loyCustomers**.
 
@@ -29,7 +29,7 @@ After ingesting the data, begin the data unification process to create a unified
    - Leave Normalize blank.
    - Set **Precision Level**: **Basic** and **Value**: **High**.
 
-   ![Unify match rule for name and email.](media/unify-match-rule.png)
+   ![Unify match rule for name and email.](../media/unify-match-rule.png)
 
 1. Select **Done**.
 
