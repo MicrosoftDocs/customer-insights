@@ -40,7 +40,7 @@ To review or change any unification settings once a unified profile has been cre
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
    - To update the unified customer profile (with or without dependencies), see [Run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
-   - To evaluate the quality of your matching conditions without updating the unified profile, see [Run matching conditions](#run-matching-conditions). The **Run matching conditions only** option does not display for single entity.
+   - To evaluate the quality of your matching conditions without updating the unified profile, see [Run matching conditions](#run-matching-conditions). The **Run matching conditions only** option doesn't display for single entity.
 
 ## Edit source fields
 
@@ -68,7 +68,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. If you added an enriched entity, select **Use enriched entities**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
-1. To manage deduplication rules, choose any of the following:
+1. To manage deduplication rules, choose any of the following options:
    - **Create a new rule**: Select **Add rule** under the appropriate entity. For more information, see [Define deduplication rules](remove-duplicates.md#define-deduplication-rules).
    - **Change rule conditions**: Select the rule and then **Edit**. Change fields, add or remove conditions, or add or remove exceptions.
    - **Preview**: Select the rule and then **Preview** to view the last run results for this rule.
@@ -88,13 +88,13 @@ You can't remove an attribute or an entity if they've already been unified.
 
 ## Manage match rules
 
-You can reconfigure and fine-tune most of the match parameters. You cannot add or delete entities. Match rules do not apply to a single entity.
+You can reconfigure and fine-tune most of the match parameters. You can't add or delete entities. Match rules don't apply to a single entity.
 
 1. Select **Edit** on the **Matching conditions** tile.
 
    :::image type="content" source="media/m3_match_edit.png" alt-text="Screenshot of the Match rules and conditions page with statistics." lightbox="media/m3_match_edit.png":::
 
-   The page displays the match order and defined rules as well as the following statistics:
+   The page displays the match order and defined rules and the following statistics:
    - **Unique source records** shows the number of individual source records that were processed in last match run.
    - **Matched and non-matched records** highlights how many unique records remain after processing the match rules.
    - **Matched records only** shows the number of matches across all of your match pairs.
@@ -109,7 +109,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. If you added an enriched entity, select **Use enriched entities**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
-1. To manage rules, choose any of the following:
+1. To manage rules, choose any of the following options:
    - **Create a new rule**: Select **Add rule** under the appropriate entity. For more information, see [Define rules for match pairs](match-entities.md#define-rules-for-match-pairs).
    - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want. For more information, see [Specify the match order](match-entities.md#specify-the-match-order).
    - **Change rule conditions**: Select the rule and then **Edit**. Change fields, add or remove conditions, or add or remove exceptions.
@@ -127,7 +127,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. For more information, see [Unify customer fields](merge-entities.md).
 
-1. Select **Next** to review the unification settings and [update the unified profile and dependencies](#run-updates-to-the-unified-customer-profile), or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings) to make additional changes.
+1. Select **Next** to review the unification settings and [update the unified profile and dependencies](#run-updates-to-the-unified-customer-profile), or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings) to make more changes.
 
 ## Run matching conditions
 
@@ -149,7 +149,7 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
 1. From the **Data** > **Unify** page, select:
 
-   - **Unify customer profiles**: Updates the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+   - **Unify customer profiles**: Updates the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
    - **Unify customer profiles and dependencies**: Updates the unified profile and all dependencies. All processes are rerun automatically. After all downstream processes have completed, the customer profile reflects the updated data.
 
