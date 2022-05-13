@@ -3,8 +3,8 @@ title: "Manage default consent rules on segments"
 description: "With the consent management capability, you can disable or change the default consent rules if overrides are enabled."
 ms.date: 12/01/2021
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
 ---

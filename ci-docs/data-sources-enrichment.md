@@ -21,7 +21,7 @@ You must have Contributor or Administrator permissions to create or edit enrichm
 1. Go to **Data** > **Unify**. Select the entity you want to enrich and select one attribute as a primary key for the entity. For more information, see [Select primary key](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 
 1. Go to **Data** > **Data sources**.
- 
+
 1. Select the vertical ellipsis next to the data source you want to enrich and select **Enrich**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Data sources enrichment page.":::
