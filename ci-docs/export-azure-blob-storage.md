@@ -40,7 +40,7 @@ Store your Customer Insights data in a Blob storage or use it to transfer your d
 You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
 > [!IMPORTANT]
-> If you turned on the soft delete setting for the Azure Blob Storage account, exports will fail. Turn off soft delete to export data to blobs. For more information, see [Enable blob soft delete](/azure/storage/blobs/soft-delete-blob-enable.md)
+> If you turned on the soft delete setting for the Azure Blob Storage account, exports will fail. Turn off soft delete to export data to blobs. For more information, see [Enable blob soft delete](/azure/storage/blobs/soft-delete-blob-enable)
 
 1. Go to **Data** > **Exports**.
 
