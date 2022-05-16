@@ -32,9 +32,9 @@ To review or change any unification settings once a unified contact profile has 
    - [Source fields](#edit-source-fields) to add entities or attributes or change attribute types.
    - [Duplicate records](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
    - [Matching conditions](#manage-match-rules) to update matching rules across two or more entities.
-   - [Unified customer fields](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
-   - Semantic mapping
-   - Relationship
+   - [Unified customer fields](#manage-unified-fields) to combine or exclude fields.
+   - [Semantic mapping](#manage-semantic-mappings) to add semantic types to unified fields.
+   - [Relationships](#manage-the-contact-and-account-relationship) to add a relationship for a new entity.
 
 1. After making your changes, choose your next option:
 
@@ -116,41 +116,32 @@ You can reconfigure and fine-tune most of the match parameters. You cannot add o
 
     :::image type="content" source="media/m3_merge_edit.png" alt-text="Screenshot of Unified customer fields":::
 
-1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key. See [Unify customer fields](merge-entities.md) for more information.
-
-1. To group related profiles into a cluster, go to [Group profiles into households or clusters](#group-profiles-into-households-or-clusters).
+1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. For more information, see [Unify customer fields](merge-entities.md).
 
 1. Select **Next** to manage semantic mappings, or select **Save and close** and return to [Update the contact unification settings](#update-the-contact-unification-settings).
 
-### Group profiles into households or clusters
-
-As part of the customer profile generation configuration process, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *ContactsCustomer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
-
-1. Select **Advanced** > **Create cluster**.
-
-   :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
-
-1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *ContactsCustomer* entity, household is automatically selected.
-
-1. Provide a name for the cluster and select **Done**.
-
-1. Select the **Clusters** tab to find the cluster you created.
-
-1. Specify the rules and conditions to define your cluster.
-
-1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* entity.
-
 ## Manage semantic mappings
 
-What can you change in semantic mappings?
+1. Select **Edit** on the **Semantic fields** tile.
+
+1. Change the semantic type of a unified field if needed.
+
+1. Select **Next** to manage relationships, or select **Save and close** and return to [Update the contact unification settings](#update-the-contact-unification-settings).
 
 ## Manage the contact and account relationship
 
-What can you change?
+1. Select **Edit** on the **Relationships** tile.
+
+1. If a new entity has been added, enter the following information:
+
+   - **Foreign key from contact entity**: Choose the attribute that connects your contact entity to the account.
+   - **To account entity**: Choose the account entity associated with the contact.
+
+1. Select **Next** to review the unification settings and [update the unified profile and dependencies](#run-updates-to-the-unified-contact-profile), or select **Save and close** and return to [Update the contact unification settings](#update-the-contact-unification-settings) to make more changes.
 
 ## Run matching conditions
 
-1. From the **Data** > **Unify** page, select **Run matching conditions only**.
+1. From the **Data** > **Unify** page, select **Unify contacts** > **Run matching conditions only**.
 
    The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing**.
 
@@ -166,8 +157,8 @@ What can you change?
 
 ## Run updates to the unified contact profile
 
-To update the unified contact profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+To update the unified contact profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify contacts** > **Unify profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
-To update the unified profile and all dependencies, select **Unify profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the contact profiles reflect any changes you made.
+To update the unified profile and all dependencies, select **Unify contacts** > **Unify profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the contact profiles reflect any changes you made.
 
 [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]

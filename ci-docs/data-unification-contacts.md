@@ -89,7 +89,7 @@ When the unification process completes, the unified contact profile entity, call
 
 ### Review the results of contact unification
 
-After unification, the **Data** > **Unify** page shows the number of unified customer profiles. The results of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
+After unification, the **Data** > **Unify** page shows the number of unified contact profiles. The results of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
 
 > [!TIP]
 > The **Matching conditions** tile displays only if multiple entities were selected.
