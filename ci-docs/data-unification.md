@@ -39,7 +39,7 @@ Unification is performed in the following order:
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-Unification is performed in the following order:
+Account unification is performed in the following order:
 
 1. [Source fields](map-entities.md) (previously called Map): In the source fields step, select entities and fields to include in the unify account process. Map fields to a common semantic type that describes the purpose of the field.
 

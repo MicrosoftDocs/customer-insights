@@ -26,7 +26,7 @@ Administrators can [create an environment in an existing organization](create-en
 
 You can then [ingest data](data-sources.md) for business accounts and related contacts as data sources from all supported sources.
 
-After unifying the data, [specify account hierarchies](relationships.md#set-up-account-hierarchies) as part of the relationship configuration. You can also [configure semantic mappings](semantic-mappings.md) to connect contact and account entities.
+ [Unify](data-unification.md) your account data followed by your contact data to connect contact and account entities.
 
 ## Switch between primary target audience
 

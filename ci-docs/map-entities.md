@@ -71,7 +71,7 @@ For each entity, perform the following steps.
 
    1. For an account name attribute, enter "Organization.Name" in the **Type** field.
 
-1. Review the attributes where a semantic type is automatically identified. These attributes are listed under **Review mapped fields**. Only attributes with the same type can be combined in the **Unified customer fields** step. Semantic types are used to automatically suggest insights. Ensure the types you chose are consistent across all the selected entities.
+1. Review the attributes where a semantic type is automatically identified. These attributes are listed under **Review mapped fields**. Only attributes with the same type can be combined in the **Unify customer fields** step. Semantic types are used to automatically suggest insights. Ensure the types you chose are consistent across all the selected entities.
 
 1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, enter your custom attribute type name, or leave them unmapped. These attributes are listed under **Define the data in the unmapped fields**.
 

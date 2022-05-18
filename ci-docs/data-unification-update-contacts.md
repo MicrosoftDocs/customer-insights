@@ -38,7 +38,7 @@ To review or change any unification settings once a unified contact profile has 
 
 1. After making your changes, choose your next option:
 
-   :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify contacts option open.":::
+   :::image type="content" source="media/b2b_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify contacts option open.":::
 
    - To update the unified contact profile (with or without dependencies), see [Run updates to the contact profile](#run-updates-to-the-unified-contact-profile).
    - To evaluate the quality of your matching conditions, see [Run matching conditions](#run-matching-conditions).

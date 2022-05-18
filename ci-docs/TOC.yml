@@ -82,13 +82,13 @@
       href: match-entities.md
     - name: Unify customer fields
       href: merge-entities.md
-    - name: Review the data unification steps
+    - name: Review data unification
       href: review-unification.md
     - name: Create a unified business contact profile 
       href: data-unification-contacts.md
-    - name: Update the unification settings
+    - name: Update customer or account unification settings
       href: data-unification-update.md
-    - name: Update the contact unification settings
+    - name: Update contact unification settings
       href: data-unification-update-contacts.md  
 
 - name: Data enrichment

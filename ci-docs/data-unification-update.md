@@ -27,7 +27,7 @@ To review or change any customer or account unification settings once a unified 
    > [!TIP]
    > The **Matching conditions** tile displays only if multiple entities were selected.
 
-   For business accounts, the Unify page displays unified accounts and unified contacts. To update a unified account profile, continue with the next step. To update a unified contact profile, go to [update a unified contact](data-unification-update-contacts.md).
+   For business accounts, the Unify page displays unified accounts and unified contacts. To update a unified account profile, continue with the next step. To update a unified contact profile, go to [update contact unification settings](data-unification-update-contacts.md).
 
 1. Choose what you want to update:
    - [Source fields](#edit-source-fields) to add entities or attributes or change attribute types.
@@ -147,7 +147,7 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 ## Run updates to the unified customer profile
 
-1. From the **Data** > **Unify** page, select:
+1. From the **Data** > **Unify** page, select one of the following:
 
    - **Unify customer profiles**: Updates the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 

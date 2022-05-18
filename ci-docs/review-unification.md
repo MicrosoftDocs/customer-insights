@@ -34,7 +34,7 @@ When the unification process completes, the unified customer profile entity, cal
 
 ## Review the results of data unification
 
-After unification, the **Data** > **Unify** page shows the number of unified customer profiles. The results of each step in the unification process display on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
+After unification, the **Data** > **Unify** page shows the number of unified customer profiles (or account profiles for B-to-B). The results of each step in the unification process display on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
 
 :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
 
@@ -47,8 +47,8 @@ When needed, [make changes to the unification settings](data-unification-update.
 
 ## Next Step
 
-For B-to-B, perform [contact unification](data-unification-contacts.md).
+- For B-to-B, perform [contact unification](data-unification-contacts.md).
 
-For B-to-C, configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.
+- For B-to-C, configure [activities](activities.md), [enrichments](enrichment-hub.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

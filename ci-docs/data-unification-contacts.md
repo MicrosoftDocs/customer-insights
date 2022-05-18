@@ -62,7 +62,7 @@ This step in the unification process enables you to map your unified contact fie
 
 This step in the unification process connects your contact data to its corresponding account data.
 
-1. Select the contact entity and enter the following information:
+1. For each entity, enter the following information:
 
    - **Foreign key from contact entity**: Choose the attribute that connects your contact entity to the account.
    - **To account entity**: Choose the account entity associated with the contact.
@@ -100,4 +100,4 @@ When needed, [make changes to the contact unification settings](data-unification
 
 ## Next Step
 
-Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.
+Configure [activities](activities.md), [enrichment](enrichment-hub.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
