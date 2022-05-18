@@ -21,38 +21,36 @@ To configure a Dun & Bradstreet enrichment, the following prerequisites must be 
 
 - You have an active [Dun & Bradstreet](https://www.dnb.com/marketing/media/give-your-data-a-boost.html?source=microsoft_audience_insights) license.
 - You have [unified customer profiles](customer-profiles.md) for companies.
-- A Dun & Bradstreet [connection](connections.md) is configured by an administrator. You can create it if you have [administrator](permissions.md#admin) permissions and the credentials from Dun & Bradstreet Connect. 
+- A Dun & Bradstreet [connection](connections.md) is configured by an administrator. You can create it if you have [administrator](permissions.md#admin) permissions and the credentials from Dun & Bradstreet Connect.
 
 ## Setting up your Dun & Bradstreet project
 
-As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). 
+As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights).
 
 
 1. Sign in to [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). To retrieve credentials, [restore your password](https://sso.dnb.com/signin/forgot-password?lead_source=microsoft_audienceinsights).
 
-1. Download [our csv template file](https://c360devenrichment.blob.core.windows.net/mapping/DnBCIdatamapping.csv) that will be used to map the audience insights fields to the corresponding Dun & Bradstreet fields. 
+1. Download [our csv template file](https://c360devenrichment.blob.core.windows.net/mapping/DnBCIdatamapping.csv) that will be used to map the Customer Insights fields to the corresponding Dun & Bradstreet fields.
 
-1. Upload the file in the **Upload data** step of the Dun & Bradstreet project creation experience. 
+1. Upload the file in the **Upload data** step of the Dun & Bradstreet project creation experience.
 
 1. Select the horizontal dots under the relevant **source** in the newly created Dun & Bradstreet project to see the available options.
 
    :::image type="content" source="media/enrichment-dnb-dots.png" alt-text="Screenshot of dots in a Dun & Bradstreet project.":::
 
-1. Choose **Get S3 details**. Store this information in a safe place. You'll need it to [set up the connection for the enrichment](#configure-a-connection-for-dun--bradstreet) in audience insights. 
+1. Choose **Get S3 details**. Store this information in a safe place. You'll need it to [set up the connection for the enrichment](#configure-a-connection-for-dun--bradstreet) in Customer Insights.
 
    :::image type="content" source="media/enrichment-dnb-s3info.png" alt-text="Screenshot of selection of s3 information in a Dun & Bradstreet project.":::
 
-
-
 ## Configure the enrichment
 
-1. In audience insights, go to **Data** > **Enrichment**.
+1. Go to **Data** > **Enrichment**.
 
 1. Select **Enrich my data** on the Dun & Bradstreet tile and select **Get started**.
 
    :::image type="content" source="media/enrichment-dnb-tile.png" alt-text="Screenshot of the Dun & Bradstreet tile.":::
 
-1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you're an administrator, you can create a connection. Select **Add connection** and choose **Dun & Bradstreet**. 
+1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you're an administrator, you can create a connection. Select **Add connection** and choose **Dun & Bradstreet**.
 
 1. Select **Connect to Dun & Bradstreet** to confirm the connection.
 
@@ -60,12 +58,12 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
 1. Select **Next** and define which fields from your unified profiles are used to look for matching company data from Dun & Bradstreet. Either **DUNS number** or **Name of company** and **Country** fields are required. The country field supports [two or three letter country codes](https://www.iso.org/iso-3166-country-codes.html), country name in English, country name in native language, and phone prefix. Some common country variants include:
 
-   * US: United States of America, United States, USA, America.
-   * CA: Canada.
-   * GB: United Kingdom, UK, Great Britain, GB, United Kingdom of Great Britain and Northern Ireland, United Kingdom of Great Britain.
-   * AU: Australia, Commonwealth of Australia.
-   * FR: France, French Republic.
-   * DE: Germany, German, Deutschland, Allemagne, Federal Republic of Germany, Republic of Germany.
+- US: United States of America, United States, USA, America.
+- CA: Canada.
+- GB: United Kingdom, UK, Great Britain, GB, United Kingdom of Great Britain and Northern Ireland, United Kingdom of Great Britain.
+- AU: Australia, Commonwealth of Australia.
+- FR: France, French Republic.
+- DE: Germany, German, Deutschland, Allemagne, Federal Republic of Germany, Republic of Germany.
 
    :::image type="content" source="media/enrichment-dnb-mapping.png" alt-text="Dun & Bradstreet field-mapping pane.":::
 
@@ -73,12 +71,11 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
 1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
 
-
-## Configure a connection for Dun & Bradstreet 
+## Configure a connection for Dun & Bradstreet
 
 You need to be an administrator to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Dun & Bradstreet tile.
 
-1. Select **Get Started**. 
+1. Select **Get Started**.
 
 1. Enter a name for the connection in the **Display name** box.
 
@@ -89,7 +86,7 @@ You need to be an administrator to configure connections. Select **Add connectio
 1. Select **Verify** to validate the configuration.
 
 1. After completing the verification, select **Save**.
-   
+
    :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Dun & Bradstreet connection configuration page.":::
 
 ## Enrichment results
@@ -106,6 +103,5 @@ You can access a detailed view of each enriched profile by selecting **View enri
 
 When you enable Dynamics 365 Customer Insights to transmit data to Dun & Bradstreet, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you're responsible for ensuring that Dun & Bradstreet meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

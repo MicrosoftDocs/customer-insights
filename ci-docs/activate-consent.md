@@ -1,18 +1,17 @@
 ---
 title: "Activate consent rules for segments"
 description: "Follow these steps to link consent data and activate consent checks in Dynamics 365 Customer Insights. An admin can also disable consent checks."
-ms.date: 11/12/2021
-ms.subservice: audience-insights
+ms.date: 04/27/2022
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
 ---
 
 # Activate consent rules
 
-The [Consent Center (preview)](consent-management/overview.md) helps you to harmonize consent data from various sources. Use the unified *Consent* entity to apply default consent checks. After importing consent data into the Consent Center and configuring the rules for the data, the *Consent* entity is automatically synced to Dynamics 365 Customer Insights.
+The [Consent Center (preview)](consent-management/overview.md) helps you to harmonize consent data from various sources. Use the unified *Consent* entity to apply default consent checks. After importing consent data and configuring map rules, the *Consent* entity is automatically synced to Dynamics 365 Customer Insights.
 
 ## Enable consent checks
 

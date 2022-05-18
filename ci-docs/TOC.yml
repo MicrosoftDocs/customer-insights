@@ -70,14 +70,20 @@
 
 - name: Data unification
   items:
-    - name: Data unification overview
-      href: data-unification.md
-    - name: Map entities and attributes
-      href: map-entities.md
-    - name: Match entities
-      href: match-entities.md
-    - name: Merge entities
-      href: merge-entities.md
+        - name: Data unification overview
+          href: data-unification.md
+        - name: Select source fields
+          href: map-entities.md
+        - name: Remove duplicate records
+          href: remove-duplicates.md
+        - name: Match conditions
+          href: match-entities.md
+        - name: Unify customer fields
+          href: merge-entities.md
+        - name: Review data unification
+          href: review-unification.md
+        - name: Update the unification settings
+          href: data-unification-update.md
 
 - name: Data enrichment
   items:
@@ -306,7 +312,9 @@
       href: apis.md 
     - name: API references
       href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
-
+    - name: OData sample queries
+      href: odata-examples.md
+      
 - name: Consent management (Preview)
   items:
     - name: Help hub

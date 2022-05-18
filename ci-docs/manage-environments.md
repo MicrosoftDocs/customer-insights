@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 03/28/2022
+ms.date: 05/17/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
@@ -78,7 +78,7 @@ You'll see a list of all available environments in your organization where you c
 The following configuration settings are copied:
 
 - Ingested/imported data sources
-- Data unification (Map, Match, Merge) configuration
+- Data unification configuration
 - Segments
 - Measures
 - Relationships

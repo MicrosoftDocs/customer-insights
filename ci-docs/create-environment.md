@@ -17,7 +17,7 @@ searchScope:
 
 # Create a new environment
 
-This article explains how to create a new environment in Dynamics 365 Customer Insights. After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started. 
+After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started.
 
 Organizations can create multiple environments for every Customer Insights license. If your organization purchases more than one license, [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, review the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
@@ -25,6 +25,8 @@ Organizations can create multiple environments for every Customer Insights licen
 > If you're looking to try the service, see [Set up a trial environment](trial-signup.md).
 
 You need [administrator permissions](permissions.md) in Customer Insights to create or manage environments.
+## Create a new environment
+
 
 1. Open the environment picker and select **+ New**.
   
@@ -69,9 +71,9 @@ For more information, see [Work with Customer Insights data in Microsoft Dataver
 
 ### Step 4: Finalize the settings
 
-In the **Review** step, go through all of the specified settings. When everything looks complete, select **Create** to set up the environment. 
+In the **Review** step, go through all the specified settings. When everything looks complete, select **Create** to set up the environment.
 
-You can also change most of the settings later. For more information, see [Manage environments](manage-environments.md).
+You can change most of the settings later. For more information, see [Manage environments](manage-environments.md).
 
 ## Work with your new environment
 

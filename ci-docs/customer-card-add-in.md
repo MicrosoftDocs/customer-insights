@@ -18,8 +18,6 @@ searchScope:
 
 # Customer Card Add-in (preview)
 
-
-
 Get a 360-degree view of your customers directly in Dynamics 365 apps. With the Customer Card Add-in installed in a supported Dynamics 365 app, you can choose to display customer profile fields, insights, and activity timeline. The add-in will retrieve data from Customer Insights without affecting the data in the connected Dynamics 365 app.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN1qv]
@@ -27,10 +25,10 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 ## Prerequisites
 
 - The add-in only works with Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
-- For your Dynamics 365 data to map to the Customer Insights customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), you need to make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source in the map step of the data unification process](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
+- For your Dynamics 365 data to map to the Customer Insights customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), you need to make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source in the map step of the data unification process](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 - All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in Customer Insights to see the data.
 - [Configured search and filter capabilities](search-filter-index.md) in Customer Insights are required for lookup of data to work.
-- Each add-in control relies on specific data in Customer Insights. Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control is not available due to the selected environment type. Learn more about [environment use cases](work-with-business-accounts.md).
+- Each add-in control relies on specific data in Customer Insights. Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control isn't available due to the selected environment type. Learn more about [environment use cases](work-with-business-accounts.md).
   - **Measure control**: Requires [configured measures](measures.md) of type customer attributes.
   - **Intelligence control**: Requires data generated using [predictions or custom models](predictions-overview.md).
   - **Customer details control**: All fields from the profile are available in the unified customer profile.
@@ -128,16 +126,16 @@ Even with correctly configured ID fields, the controls can't find data for any c
 
 **Resolution:**
 
-1. Make sure you configured the Card Add-in according to the instructions: [Configure the Customer Card Add-in](#configure-the-customer-card-add-in) 
+1. Make sure you configured the Card Add-in according to the instructions: [Configure the Customer Card Add-in](#configure-the-customer-card-add-in)
 
-1. Review the data ingestion configuration. Edit the data source for the Dynamics 365 system which contains the contact ID GUID. If the contact ID GUID is shown with uppercase characters in the Power Query editor, try the following: 
+1. Review the data ingestion configuration. Edit the data source for the Dynamics 365 system that contains the contact ID GUID. If the contact ID GUID is shown with uppercase characters in the Power Query editor, try the following steps:
     1. Edit the data source to open the data source in Power Query Editor.
     1. Select the contact ID column.
     1. Select **Transform** in the header bar to see available actions.
     1. Select **lowercase**. Validate if GUIDs in the table are now lowercase.
     1. Save the data source.
-    1. Run data ingestion, unification, and downstream processes to propagate the changes to the GUID. 
+    1. Run data ingestion, unification, and downstream processes to propagate the changes to the GUID.
 
-After completing the full refresh, the Customer Card Add-in controls should show the expected data. 
+After the system has completed the full refresh, the Customer Card Add-in controls should show the expected data.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

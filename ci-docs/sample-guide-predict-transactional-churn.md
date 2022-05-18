@@ -1,8 +1,9 @@
 ---
 title: Transactional churn prediction sample guide
 description: Use this sample guide to try out the out of box transactional churn prediction model.
-ms.date: 11/19/2020
+ms.date: 05/11/2022
 ms.reviewer: mhart
+
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -82,69 +83,13 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. Save the data source.
 
-
 ## Task 2 - Data unification
 
-After ingesting the data we now begin the **Map, Match, Merge** process to create a unified customer profile. For more information, see [Data unification](data-unification.md).
-
-### Map
-
-1. After ingesting the data, map contacts from eCommerce and Loyalty data to common data types. Go to **Data** > **Unify** > **Map**.
-
-1. Select the entities that represent the customer profile – **eCommerceContacts** and **loyCustomers**. 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="unify ecommerce and loyalty datasources.":::
-
-1. Select **ContactId** as the primary key for **eCommerceContacts** and **LoyaltyID** as the primary key for **loyCustomers**.
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="Unify LoyaltyId as primary key.":::
-
-### Match
-
-1. Go to the **Match** tab and select **Set Order**.
-
-1. In the **Primary** dropdown list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.
-
-1. In the **Entity 2** dropdown list, choose **loyCustomers : LoyaltyScheme** and include all records.
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="Unify match eCommerce and Loyalty.":::
-
-1. Select **Create a new rule**
-
-1. Add your first condition using FullName.
-
-   * For eCommerceContacts select **FullName** in the dropdown.
-   * For loyCustomers select **FullName** in the dropdown.
-   * Select the **Normalize** drop down and choose **Type (Phone, Name, Address, ...)**.
-   * Set **Precision Level**: **Basic** and **Value**: **High**.
-
-1. Enter the name **FullName, Email** for the new rule.
-
-   * Add a second condition for email address by selecting **Add Condition**
-   * For entity eCommerceContacts, choose **EMail** in dropdown.
-   * For entity loyCustomers, choose **EMail** in the dropdown. 
-   * Leave Normalize blank. 
-   * Set **Precision Level**: **Basic** and **Value**: **High**.
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="Unify match rule for name and email.":::
-
-7. Select **Save** and **Run**.
-
-### Merge
-
-1. Go to the **Merge** tab.
-
-1. On the **ContactId** for **loyCustomers** entity, change the display name to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="rename contactid from loyalty id.":::
-
-1. Select **Save** and **Run** to start the Merge Process.
-
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## Task 3 - Configure transaction churn prediction
 
-With the unified customer profiles in place, we can now run the subscription churn prediction. For detailed steps, see the [Subscription churn prediction](predict-subscription-churn.md) article. 
+With the unified customer profiles in place, we can now run the transaction churn prediction. For detailed steps, see the [Transaction churn prediction](predict-transactional-churn.md) article. 
 
 1. Go to **Intelligence** > **Discover** and select to use the **Customer churn model**.
 
@@ -176,7 +121,7 @@ With the unified customer profiles in place, we can now run the subscription chu
 
 ## Task 4 - Review model results and explanations
 
-Let the model complete the training and scoring of the data. You can now review the subscription churn model explanations. For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).
+Let the model complete the training and scoring of the data. You can now review the churn model explanations. For more information, see [Review a prediction status and results](predict-transactional-churn.md#review-a-prediction-status-and-results).
 
 ## Task 5 - Create a segment of high churn-risk customers
 
@@ -188,14 +133,12 @@ You can create a new segment based on the entity created by the model.
 
    :::image type="content" source="media/segment-intelligence.PNG" alt-text="Creating a segment with the model output.":::
 
-1. Select the **OOBSubscriptionChurnPrediction** endpoint and define the segment: 
+1. Select the **OOBeCommerceChurnPrediction** endpoint and define the segment: 
    - Field: ChurnScore
    - Operator: greater than
    - Value: 0.6
-   
-   :::image type="content" source="media/segment-setup-subs.PNG" alt-text="Set up subscription churn segment.":::
 
-You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.
+You now have a segment that is dynamically updated which identifies high churn-risk customers.
 
 For more information, see [Create and manage segments](segments.md).
 
