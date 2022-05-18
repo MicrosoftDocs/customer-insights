@@ -16,7 +16,7 @@ searchScope:
   - customerInsights
 ---
 
-# Select source fields for customer or account unification
+# Select source fields for data unification
 
 The first step in unification is selecting the entities and fields within your datasets that you want to unify. Select entities that contain customer-related details such as name, address, phone number, and email. You can select one or more entities.
 

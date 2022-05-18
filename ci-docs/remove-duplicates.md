@@ -16,7 +16,7 @@ searchScope:
   - customerInsights
 ---
 
-# Remove duplicates before unifying customers or accounts
+# Remove duplicates before unifying data
 
 This optional step in unification enables you to set up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
 
