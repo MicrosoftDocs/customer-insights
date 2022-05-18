@@ -20,11 +20,11 @@ Customer Insights can help you build a deeper understanding of your customers. C
 
 ## Step 1: Create an environment
 
-To start, you first have to create an environment to work in. If your organization already purchased a license, see [Create an environment](create-environment.md). To start a trial for Customer Insights, see [Set up a trial environment](trial-signup.md).
+First, create an environment to work in. If your organization already purchased a license, see [Create an environment](create-environment.md). To start a trial for Customer Insights, see [Set up a trial environment](trial-signup.md).
 
 ## Step 2: Explore Customer Insights
 
-The first time you sign in to Customer Insights, you can configure settings and explore the product.
+The first time you sign in to Customer Insights, configure settings and explore the product.
 
 1. [Sign in to Customer Insights](https://home.ci.ai.dynamics.com) using your Microsoft Azure Active Directory (AAD) user account.
 
@@ -32,9 +32,9 @@ The first time you sign in to Customer Insights, you can configure settings and 
 
 ## Step 3: Ingest, unify, and set up relationships for your data
 
-Unified profiles are the foundation to get insights and take action on the data. Bring in data from various sources and run the data unification process to combine unified profiles. Specify relationships between the ingested entities use enrichment features to add information to the profiles.
+Unified profiles are the foundation to get insights and take action on the data. Bring in data from various sources and run the data unification process to combine unified profiles. Specify relationships between the ingested entities and use enrichment features to add information to the profiles.
 
-1. Ingest data by creating data sources from multiple options. Choose between [Power Query connectors](connect-power-query.md), a [Common Data Model folder](connect-common-data-model.md), or [Microsoft Dataverse](connect-dataverse-managed-lake.md). 
+1. Ingest data by creating data sources from multiple options. Choose between [Power Query connectors](connect-power-query.md), a [Common Data Model folder](connect-common-data-model.md), or [Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
 1. Run the [data unification process](data-unification.md) by identifying the [source fields](map-entities.md), removing [duplicates](remove-duplicates.md), [matching conditions](match-entities.md), and [unifying fields](merge-entities.md).
 
@@ -42,7 +42,7 @@ Unified profiles are the foundation to get insights and take action on the data.
 
 ## Step 4: Enhance unified profiles with predictions, activities, and measures
 
-With unified profiles set up, you can enhance your data and further increase the information they provide.
+With unified profiles set up, enhance your data and further increase the information they provide.
 
 1. Choose from an expanding library of enrichment providers to [enrich your customer data](enrichment-hub.md).
 
@@ -54,7 +54,7 @@ With unified profiles set up, you can enhance your data and further increase the
 
 ## Step 5: Create segments and activate data through various export options
 
-Now that your data is complete and contains a wide range of information about your customers, it's time to look for ways to take action on that data.
+Now that your data is complete and contains a wide range of information about your customers, look for ways to take action on that data.
 
 1. [Create segments](segments.md), subsets of your customer base, to ensure your actions are relevant for the targeted customers.
 
