@@ -14,6 +14,8 @@ searchScope:
   - customerInsights
 ---
 
+- A Microsoft Dataverse environment can only connect to a single storage account. (BYODL)
+
 # Work with Customer Insights data in Microsoft Dataverse
 
 Customer Insights provides the option to make output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The [output entities](#output-entities) are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps. The current implementation mainly supports lookups where data from the available Customer Insights entities can be fetched for a given customer ID.
