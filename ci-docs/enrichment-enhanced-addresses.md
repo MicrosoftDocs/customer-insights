@@ -84,12 +84,14 @@ Addresses must contain a country/region value. We don't process addresses for co
 
 1. Select how addresses are formatted in your data set. Choose **Single-attribute address** if addresses in your data use a single field. Choose **Multiple-attribute address** if addresses in your data use more than one data field.
 
-   > [!NOTE]
-   > Country/Region is mandatory in both single-attribute and multiple-attribute addresses. Addresses that don't contain valid or supported country/region values won't be enriched.
+1. Select **Next**.
 
-1.	Map the address fields from your unified customer entity.
+1. Map the address fields from your unified customer entity.
 
     :::image type="content" source="media/enhanced-address-mapping.png" alt-text="Enhanced address field-mapping page.":::
+
+   > [!NOTE]
+   > Country/Region is mandatory in multiple-attribute addresses. Addresses that don't contain valid or supported country/region values won't be enriched.
 
 1. Select **Next** to complete the field mapping.
 

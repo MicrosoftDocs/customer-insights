@@ -25,7 +25,7 @@ Use data from sources like Microsoft and other partners to enrich your customer 
 
 Go to **Data** > **Enrichment** to work with enrichment options.  
 
-You need to have Contributor or Administrator permissions to create or edit enrichments. For more information, see [Permissions](permissions.md).
+You need to have Contributor or Administrator [permissions](permissions.md) to create or edit enrichments.
 
 On the **Discover** tab, you'll find all supported enrichment options.
 
@@ -33,20 +33,20 @@ On the **Discover** tab, you'll find all supported enrichment options.
 
 - [Brands](enrichment-microsoft.md) provided by Microsoft
 - [Interests](enrichment-microsoft.md) provided by Microsoft
-- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft 
+- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
 - [Demographics](enrichment-experian.md) provided by Experian
-- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
+- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
 - [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
-- [Location data](enrichment-here.md) provided by HERE Technologies 
+- [Location data](enrichment-here.md) provided by HERE Technologies
 - [Identity](enrichment-liveramp.md) provided by LiveRamp AbiliTec
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
 - [Company data](enrichment-leadspace.md) provided by Leadspace
-- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft 
+- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
 - [Enhanced company data](enrichment-enhanced-company-data.md) provided by Microsoft
-- [Location data](enrichment-here.md) provided by HERE Technologies 
-- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
+- [Location data](enrichment-here.md) provided by HERE Technologies
+- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
 - [Azure Maps](enrichment-azure-maps.md) provided by Microsoft
 - [Company data](enrichment-dnb.md) provided by Dun & Bradstreet
 - [Account engagement data](enrichment-office.md) provided by Microsoft
@@ -85,22 +85,22 @@ You can enrich your customer data before data unification to help increase the q
 
 ## See the progress of the enrichment process
 
-You can find details about the processing of an enrichment, including it status and potential issues while it's refreshing or after a refresh completed. Understand which processes are involved to refresh an enrichment and how long it took to run the processes. The enrichment status is supported for Experian, Leadspace, HERE Technologies, SFTP Import, and Azure Maps.
+You can find details about the processing of an enrichment, including its status and potential issues while it's refreshing or after a refresh completed. Understand which processes are involved to refresh an enrichment and how long it took to run the processes. The enrichment status is supported for Experian, Leadspace, HERE Technologies, SFTP Import, and Azure Maps.
 
 To see the status of en enrichment
 
-1. Go to **Data** > **Enrichment**. 
-1. In the **My enrichments** tab, select the status of an enrichment to open a side pane. 
-1. In the **Progress details** pane, expand the **Enrichments** section. 
-1. Under the enrichment you want to see the progress, select **See details**. 
-1. In the **Task details** pane, select **Show details** to see the processes that are involved in updating the enrichment and their status. 
+1. Go to **Data** > **Enrichment**.
+1. In the **My enrichments** tab, select the status of an enrichment to open a side pane.
+1. In the **Progress details** pane, expand the **Enrichments** section.
+1. Under the enrichment, select **See details**.
+1. In the **Task details** pane, select **Show details** to see the processes that are involved in updating the enrichment and their status.
 
 ## Enrichment results
 
 After a completed enrichment run, you can review the enrichment results.
 
-1. Go to **Data** > **Enrichment**. 
-1. Select the enrichment that you want information about.
+1. Go to **Data** > **Enrichment**.
+1. Select the enrichment to view the results.
 
 All enrichments show basic information such as the number of enriched profiles, a preview of the generated enrichment entity, and the number of enriched profiles over time. If available, the **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
 
