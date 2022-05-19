@@ -5,7 +5,7 @@ metadata:
   author: m-hartmann
   description: Find relevant articles to start with help content.
   ms.author: mhart
-  ms.date: 03/02/2022
+  ms.date: 05/18/2022
   
   ms.topic: landing-page
 
@@ -47,16 +47,31 @@ landingContent:
           - text: Get started
             url: /learn/modules/get-started-customer-data-platform/
 
-  - title: Unify data
+  - title: Ingest data
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Data sources overview
             url: data-sources.md
+          - text: Connect using Power Query  
+            url: connect-power-query.md
+          - text: Connect to Microsoft Dataverse
+            url: connect-dataverse-managed-lake.md
+      - linkListType: learn
+        links: 
+          - text: Ingest data into Customer Insights
+            url:  /learn/modules/ingest-data-customer-insights/  
+            
+  - title: Unify data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
           - text: Unification overview
             url: data-unification.md
           - text: Understand entities
             url: entities.md
+          - text: Review unified profiles
+            url: customer-profiles.md
       - linkListType: learn
         links: 
           - text: Create a unified profile
@@ -107,20 +122,6 @@ landingContent:
           - text: Manage external connections
             url:  /learn/modules/configure-third-party-connections/
   
-  - title: Administer the app
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Configure the system
-            url: system.md
-          - text: Define user permissions 
-            url: permissions.md
-          - text: Manage multiple environments
-            url: manage-environments.md
-      - linkListType: learn
-        links: 
-          - text: Administer Customer Insights
-            url:  /learn/modules/administer-customer-data-platform/  
   - title: Administer Customer Insights
     linkLists:
       - linkListType: how-to-guide
