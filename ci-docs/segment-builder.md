@@ -131,7 +131,7 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
 > - The segment builder won't suggest valid values from entities when setting the operators for the conditions. You can go to **Data** > **Entities** and download the entity data to see which values are available.
 > - Conditions based on the dates let you switch between fixed dates and a floating date range.
 > - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
-> - You can move rules and conditions to other places in the segment definition. Select [...] next to a rule or condition and choose how and where to move it.
+> - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
 > - The **Undo** and **Redo** controls in the command bar let you roll back changes.
 
 ## Quick segments

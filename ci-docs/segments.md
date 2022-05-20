@@ -81,7 +81,7 @@ You can export a segment from the segments page or the [exports page](export-des
 
 1. Go to the **Segments** page.
 
-1. Select **Show more [...]** for the segment you want to export.
+1. Select the vertical ellipsis (&vellip;) for the segment you want to export.
 
 1. Select **Manage exports** from the actions dropdown list.
 
