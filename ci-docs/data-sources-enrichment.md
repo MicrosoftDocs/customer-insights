@@ -1,7 +1,7 @@
 ---
 title: "Data source enrichment"
 description: "Enrich data sources before going through the data unification process."
-ms.date: 03/02/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: NimrodMagen
@@ -36,6 +36,7 @@ The following enrichments are currently available for data sources. Review the d
 
 - [Enhanced addresses](enrichment-enhanced-addresses.md)
 - [Enhanced company data](enrichment-enhanced-company-data.md)
+- [Identity data from LiveRamp](enrichment-liveramp.md)
 
 ## Manage existing data source enrichments
 
