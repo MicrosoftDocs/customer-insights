@@ -9,7 +9,7 @@
 
 - name: Learning catalog
   items:
-    - name: Become a certified Microsoft Customer Data Platform Specialist
+    - name: Certify as Microsoft Customer Data Platform Specialist
       href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
     - name: Get started with Customer Insights
       href: /learn/modules/get-started-customer-data-platform/
