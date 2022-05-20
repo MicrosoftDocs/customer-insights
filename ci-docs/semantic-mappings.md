@@ -16,10 +16,10 @@ searchScope:
 
 # Semantic mappings (Preview)
 
-Semantic mappings let you map your non-activity data to pre-defined schemas. These schemas help Customer Insights to better understand your data attributes. Semantic mapping and the provided data enable new insights and features in Customer Insights. To map your activity data to the schemas, review the [activities](activities.md) documentation.
-
 > [!NOTE]
-> Semantic mappings are currently enabled for business environments (B-to-B). You can continue to create and manage individual contact profiles using the **Semantic mappings** page. Or, [unify your contact data](data-unification-contacts.md) to remove duplicates, identify matches across entities, and create one unified contact profile. You can then use the unified contact profile to create contact-level activities.
+> The **Semantic mappings** page is available only for business environments (B-to-B) and if contact profiles have been created through semantic mappings. You can continue to manage the individual contact profiles or create new ones using the **Semantic mappings** page. Or, [unify your contact data](data-unification-contacts.md) to remove duplicates, identify matches across entities, and create one unified contact profile. You can then use the unified contact profile to create contact-level activities.
+
+Semantic mappings let you map your non-activity data to pre-defined schemas. These schemas help Customer Insights to better understand your data attributes. Semantic mapping and the provided data enable new insights and features in Customer Insights. To map your activity data to the schemas, review the [activities](activities.md) documentation.
 
 ## Define a ContactProfile semantic entity mapping
 

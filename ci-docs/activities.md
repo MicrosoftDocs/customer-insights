@@ -128,16 +128,16 @@ To remove filters, select the **x** next to each filter applied to the timeline 
 > [!NOTE]
 > Activity filters are removed when you leave a customer profile. You have to apply them each time you open on a customer profile.
 
+## Use a ContactProfile entity to create contact-level activities
 
-
-## Use a ContactProfile semantic entity mapping to create contact-level activities
-
-After creating a *ContactProfile* semantic entity mapping, you can capture activities of contacts. It enables you to see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the typical activity mapping configuration.
+After creating a *ContactProfile* entity, you can capture activities of contacts. It enables you to see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the typical activity mapping configuration.
 
    > [!NOTE]
    > For contact-level activities to work, you must have both **AccountID** and **ContactID** attributes for each record within your activity data.
 
-1. [Define a *ContactProfile* semantic entity mapping.](#define-a-contactprofile-semantic-entity-mapping) and run the semantic mapping.
+**Prerequisite:**
+
+The *ContactProfile* entity has been created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping).
 
 1. Go to **Data** > **Activities**.
 
