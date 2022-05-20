@@ -88,7 +88,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 ## Edit a workflow
 
-1. On the **Custom Models** page, select the vertical ellipsis in the **Actions** column next to a workflow you've previously created and select **Edit**.
+1. On the **Custom Models** page, select the vertical ellipsis (:::image type="icon" source="media/ellipsis_icon.png":::) in the **Actions** column next to a workflow you've previously created and select **Edit**.
 
 1. You can update your workflow's recognizable name in the **Display name** field, but you can't change the configured web service or pipeline. Select **Next**.
 
