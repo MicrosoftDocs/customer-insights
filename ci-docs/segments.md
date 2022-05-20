@@ -1,7 +1,7 @@
 ---
 title: "Segments in Customer Insights"
 description: "Overview on segments and how to create and manage them."
-ms.date: 03/30/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -62,7 +62,7 @@ The following actions are available when you select a segment:
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
 - **Download** the list of members as a .CSV file.
 - **Manage exports** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
-- **Delete** the segment.
+- **Delete** the segment. See [Delete segments](#delete-segments) about how deletion affects the usage of a segment.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
@@ -70,6 +70,7 @@ The following actions are available when you select a segment:
 ## Refresh segments
 
 You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**. When a recurring refresh is configured, the following rules apply:
+
 - All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. When refresh is complete the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see a details about what happened.
 - Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segments was run or refreshed manually.
 
@@ -93,6 +94,14 @@ You can export a segment from the segments page or the [exports page](export-des
 
 1. Select **Back** to return to the main page for segments.
 
+## Delete segments
+
+Generally, if a segment is [exported to other services](export-destinations.md), Customer Insights updates the segment according to the refresh schedule. Until you delete a segment or stop the export, the most recent segment members are exported regularly. Deleting a segment will stop the export of that segment and usually, the last refreshed version of the segment remains in the export destination service.
+
+If you export segments to apps that are based on the Microsoft Dataverse organization that is connected with Customer Insights, it's possible to track the usage of a segment. For our prime example, [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of a segment when you try to delete it. If the segment you are about to delete is used in a customer journey in Marketing, that journey will stop for all users in the segment. If the journey is part of a marketing campaign, this will impact that campaign itself. However, you can still delete the segment despite the warnings.
+
+:::image type="content" source="media/segment-usage-delete.png" alt-text="Dialog box to confirm segment deletion when a segment is used in a Dataverse application.":::
+
 ## View processing history and segment members
 
 You can see consolidated data about a segment by reviewing its details.
@@ -112,6 +121,5 @@ The lower part contains a list of the segment members.
 > Fields that appear in this list are based on the attributes of your segment's entities.
 >
 >The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, you need to [export the segment](export-destinations.md).
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
