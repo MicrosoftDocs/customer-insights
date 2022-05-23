@@ -22,7 +22,7 @@ searchScope:
 
 After [unifying business accounts](map-entities.md), unify the contacts. The contact unification process maps contact data from your data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
 
-The following steps and images reflect the first time you go through the contact unification process. To edit existing contact unification settings, see [Update the unification settings](../data-unification-update-contacts.md).
+The following steps and images reflect the first time you go through the contact unification process. To edit existing contact unification settings, see [Update the unification settings](data-unification-update-contacts.md).
 
 ## Select source fields for contact unification
 

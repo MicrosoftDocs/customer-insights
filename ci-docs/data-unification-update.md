@@ -56,7 +56,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
 1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off. For more information, see [Select primary key and semantic type for attributes](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 
-1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings).
+1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update customer or account unification settings](#update-customer-or-account-unification-settings).
 
 ## Manage deduplication rules
 
@@ -84,7 +84,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
    1. Select **Done**.
 
-1. Select **Next** to make changes to matching conditions, or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings).
+1. Select **Next** to make changes to matching conditions, or select **Save and close** and return to [Update customer or account unification settings](#update-customer-or-account-unification-settings).
 
 ## Manage match rules
 
@@ -117,7 +117,7 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
    - **Duplicate a rule**: Select the rule and then **Duplicate** to create a similar rule with modifications.
    - **Delete a rule**: Select the rule and then **Delete**.
 
-1. Select **Next** to make changes to unified fields, or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings).
+1. Select **Next** to make changes to unified fields, or select **Save and close** and return to [Update customer or account unification settings](#update-customer-or-account-unification-settings).
 
 ## Manage unified fields
 
@@ -127,7 +127,7 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. For more information, see [Unify customer fields](merge-entities.md).
 
-1. Select **Next** to review the unification settings and [update the unified profile and dependencies](#run-updates-to-the-unified-customer-profile), or select **Save and close** and return to [Update the unification settings](#update-the-unification-settings) to make more changes.
+1. Select **Next** to review the unification settings and [update the unified profile and dependencies](#run-updates-to-the-unified-customer-profile), or select **Save and close** and return to [Update customer or account unification settings](#update-customer-or-account-unification-settings) to make more changes.
 
 ## Run matching conditions
 
