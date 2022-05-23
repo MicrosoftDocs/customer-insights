@@ -51,7 +51,7 @@ If the user account of the owner is deleted or suspended, the environment won't 
 
 To claim ownership, select the **Take ownership** button that shows at the top of every page in Customer Insights when the original owner left the organization.
 
-## Reset an existing environment
+## Reset an existing environment (Preview)
 
 As the owner of an environment, you can reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
 

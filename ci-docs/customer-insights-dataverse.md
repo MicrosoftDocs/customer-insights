@@ -52,7 +52,7 @@ There are two limitations when using Dataverse in connection with your own Azure
 - There's one-to-one mapping between a Dataverse organization and an Azure Data Lake Storage account. Once a Dataverse organization is connected to a storage account, it can't connect to another storage account. This limitation prevents that a Dataverse doesn't populate multiple storage accounts.
 - Data sharing won't work if an Azure Private Link setup is needed to access your Azure Data Lake storage account because it's behind a firewall. Dataverse currently doesn't support the connection to private endpoints through Private Link.
 
-#### Prerequisites
+#### Set up PowerShell
 
 To execute the PowerShell scripts you first need to set up PowerShell accordingly.
 
@@ -99,7 +99,7 @@ When connecting to a Dataverse environment, the error message **This CDS organiz
 1. Go to **Solutions**
 1. Uninstall or delete the solution named **Dynamics 365 Customer Insights Customer Card Add-in (Preview)**.
 
-OR 
+OR
 
 1. Open your Dataverse environment.
 1. Go to **Advanced Settings** > **Solutions**.
