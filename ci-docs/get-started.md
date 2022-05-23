@@ -29,7 +29,7 @@ The first time you sign in to Customer Insights, configure settings and explore 
 
 1. [Sign in to Customer Insights](https://home.ci.ai.dynamics.com) using your Microsoft Azure Active Directory (AAD) user account.
 
-1. [Change the environment](manage-environments.md#switch-environments) to see demo data and [explore Customer Insights](home.md).
+1. Change the environment to see demo data and [explore Customer Insights](home.md).
 
 ## Step 3: Ingest, unify, and set up relationships for your data
 

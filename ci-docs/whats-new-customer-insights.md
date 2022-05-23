@@ -53,6 +53,7 @@ LiveRamp provides identity resolution and consolidation of customer data. You ca
 For more information, see [Enrich customer profiles with identity data from LiveRamp (Preview)](enrichment-liveramp.md).
 
 ### Organize segments and measures with tags and filters
+
 If your organization maintains lots of segments or measures, finding the right one can sometimes feel challenging. This new feature lets you organize lists using tags and columns. It helps to find data quickly and easily and customize the views.
 
 For more information, see [Work with tags and columns](work-with-tags-columns.md).
@@ -60,9 +61,9 @@ For more information, see [Work with tags and columns](work-with-tags-columns.md
 ### Enable data sharing with Dataverse when using your own storage account
 
 If your environment uses Azure Data Lake Storage to store Customer Insights data, data sharing with Microsoft Dataverse needs some extra configuration.
-Earlier, you could only enable data sharing with Dataverse when your data was stored in our managed data lake. 
+Earlier, you could only enable data sharing with Dataverse when your data was stored in our managed data lake.
 
-For more information, see [Enable data sharing with Dataverse from your own Azure Data Lake Storage (Preview)](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
+For more information, see [Enable data sharing with Dataverse from your own Azure Data Lake Storage (Preview)](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ### New export destinations: Iterable and Braze
 

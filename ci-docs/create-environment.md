@@ -35,7 +35,7 @@ You need [administrator permissions](permissions.md) in Customer Insights to cre
 
 ## Step 1: Provide basic information
 
-In the **Basic information** step, choose whether you want to create an environment from scratch or [copy data from another environment](manage-environments.md#copy-the-environment-configuration).
+In the **Basic information** step, choose whether you want to create an environment from scratch or [copy data from another environment](#copy-the-environment-configuration).
 
    :::image type="content" source="media/environment-settings-dialog.png" alt-text="Dialog to create a new Customer Insights environment.":::
 
