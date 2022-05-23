@@ -22,7 +22,7 @@ Administrators in Customer Insights can [create environments](create-environment
 
 - Azure Data Lake Storage accounts must be in the same Azure region that you selected when creating the Customer Insights environment. You can check the region of the Customer Insights environment under **Admin** > **System** > **About**.
 - Data Lake Storage must be Gen2 and have [hierarchical namespace enabled](/azure/storage/blobs/create-data-lake-storage-account). Gen1 storage accounts are not supported.
-- A container named `customerinsights` has to exist on the storage account. You have to create it before you use your own Data Lake Storage in Customer Insights. The administrator setting up the Customer Insights environment needs the Storage Blob Data Reader, Storage Blob Data Contributor, or Storage Blob Data Owner role on the storage container. For more information, see [Create a storage account](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
+- A container named `customerinsights` has to exist on the storage account. You have to create it before you use your own Data Lake Storage in Customer Insights. The administrator setting up the Customer Insights environment needs the Storage Blob Data Reader, Storage Blob Data Contributor, or Storage Blob Data Owner role on the storage account or the `customerinsights` container. For more information, see [Create a storage account](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
 
 ## Connect Customer Insights with your storage account
 

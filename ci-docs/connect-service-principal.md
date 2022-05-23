@@ -47,7 +47,7 @@ Before creating a new service principal for Customer Insights, check whether it 
 
 1. Install the latest version of Azure Active Directory PowerShell for Graph. For more information, go to [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
-   1. On your PC, select the Windows key on your keyboard and search for **Windows PowerShell** and select **Run as administrator**.
+   1. On your PC, press the Windows key on your keyboard and search for **Windows PowerShell** and select **Run as administrator**.
    
    1. In the PowerShell window that opens, enter `Install-Module AzureAD`.
 
@@ -86,7 +86,7 @@ You can attach a Data Lake Storage account in Customer Insights to [store output
 
 1. Go to the [Azure admin portal](https://portal.azure.com), sign in to your subscription, and open the storage account.
 
-1. On the left pane, go to **Settings** > **Properties**.
+1. On the left pane, go to **Settings** > **Endpoints**.
 
 1. Copy the storage account resource ID value.
 
