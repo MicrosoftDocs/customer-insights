@@ -1,9 +1,9 @@
 ---
-title: "Customer activities"
-description: "Define customer activities and view them in a timeline on customer profiles." 
-ms.date: 11/01/2021
+title: "Customer or contact activities"
+description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
+ms.date: 05/23/2022
 ms.subservice: audience-insights
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
@@ -19,11 +19,11 @@ searchScope:
   - customerInsight
 ---
 
-# Customer activities
+# Customer or business contact activities
 
-Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights. Create a timeline that lists the activities chronologically. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
+Combine customer or business contact activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights. Create a timeline that lists the activities chronologically. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
 
-## Define an activity
+## Define a customer activity
 
 Your data sources can include entities with transactional and activity data from multiple data sources. Identify these entities and select the activities you want to view on the customer's timeline. Choose the entity that includes your target activity or activities.
 
@@ -87,7 +87,7 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-## Manage existing activities
+## Manage existing customer activities
 
 On **Data** > **Activities**, you can view all your saved activities, and manage them. Each activity is represented by a row that also includes details about the source, the entity, and the activity type.
 

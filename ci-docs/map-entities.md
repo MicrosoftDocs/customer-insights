@@ -44,7 +44,7 @@ The first step in unification is selecting the entities and fields within your d
 
    :::image type="content" source="media/m3_select_entities.png" alt-text="Screenshot of selected entities and attributes.":::
 
-   In this example, we're adding the **Contacts** and **CustomerLoyalty** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
+   In this example, we're adding the **eCommerceContacts** and **loyCustomer** entities. By choosing these entities, you can derive insights on which of the online business customers are loyalty program members.
 
 1. Select **Apply** to confirm your selections. The selected entities and attributes display.
 

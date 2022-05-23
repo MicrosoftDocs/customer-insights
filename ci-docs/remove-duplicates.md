@@ -86,17 +86,4 @@ If you enriched entities on the data source level to help improve your unificati
 > [!div class="nextstepaction"]
 > [Next step for multiple entities: Matching conditions](match-entities.md)
 
-## Deduplication output as an entity
-
-The deduplication process creates a new deduplicated entity for each of the source entities. These entities can be found along with the **ConflationMatchPairs:CustomerInsights** in the **System** section in the **Entities** page, with the name **Deduplication_DataSource_Entity**.
-
-A deduplication output entity contains the following information:
-
-- IDs / Keys
-  - Primary key and Alternate ID fields. Alternate ID field consists of all the alternate IDs identified for a record.
-  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
-  - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
-- Fields used to define the deduplication rules.
-- Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
-
 [!INCLUDE[footer-include](includes/footer-banner.md)]

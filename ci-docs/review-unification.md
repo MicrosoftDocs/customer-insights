@@ -45,6 +45,18 @@ We recommend you review the results, particularly the quality of your [match rul
 
 When needed, [make changes to the unification settings](data-unification-update.md) and rerun the unified profile.
 
+### Output entities from data unification
+
+Deduplication and conflation entities are created and display in the **System** section in the **Entities** page. A deduplicated entity for each of the source entities is created with the name **Deduplication_DataSource_Entity**. The **ConflationMatchPairs:CustomerInsights** entity contains information about cross-entity matches.
+
+A deduplication output entity contains the following information:
+- IDs / Keys
+  - Primary key and Alternate ID fields. Alternate ID field consists of all the alternate IDs identified for a record.
+  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
+  - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
+- Fields used to define the deduplication rules.
+- Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
+
 ## Next Step
 
 - For B-to-B, perform [contact unification](data-unification-contacts.md).

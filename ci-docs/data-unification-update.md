@@ -1,7 +1,7 @@
 ---
-title: "Update the unification settings"
-description: "Update duplicate rules, match rules, or unified fields in the unification settings."
-ms.date: 05/04/2022
+title: "Update customer or account unification settings"
+description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
+ms.date: 05/23/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -16,7 +16,7 @@ searchScope:
   - customerInsights
 ---
 
-# Update the unification settings
+# Update customer or account unification settings
 
 To review or change any customer or account unification settings once a unified profile has been created, perform the following steps. To review or change contact unification settings once a unified contact profile has been created, see [Update the contact unification settings](data-unification-update-contacts.md).
 
@@ -131,6 +131,8 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 ## Run matching conditions
 
+Run matching conditions to test unification rules without creating a unified profile.
+
 1. From the **Data** > **Unify** page, select **Run matching conditions only**.
 
    The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing**.
@@ -147,12 +149,10 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 ## Run updates to the unified customer profile
 
-1. From the **Data** > **Unify** page, select one of the following:
+To run matching conditions and update the unified customer profile entity without impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles** (or for B-to-B **Unify accounts** > **Unify profiles**). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
-   - **Unify customer profiles**: Updates the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies** (or for B-t0-B **Unify accounts** > **Unify profiles and dependencies**). All processes are rerun automatically. For B-to-B, after the account unified profile is updated, contact unification is run if contact unification settings were saved but not run.
 
-   - **Unify customer profiles and dependencies**: Updates the unified profile and all dependencies. All processes are rerun automatically. After all downstream processes have completed, the customer profile reflects the updated data.
+The **Duplicate records**, **Matching conditions**, and **Unified customer fields** tiles show **Queued** or **Refreshing**.
 
-   The **Duplicate records**, **Matching conditions**, and **Unified customer fields** tiles show **Queued** or **Refreshing**.
-
-   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+[!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]

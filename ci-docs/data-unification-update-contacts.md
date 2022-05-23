@@ -19,7 +19,7 @@ searchScope:
 
 # Update the contact unification settings
 
-To review or change any unification settings once a unified contact profile has been created, perform the following steps.
+To review or change contact unification settings once a unified contact profile has been created, perform the following steps. To review or change customer or account unification settings once a unified profile has been created, see [Update the customer or account unification settings](data-unification-update.md).
 
 1. Go to **Data** > **Unify**. Under **Unify contacts**, the contact unification tiles display.
 
@@ -33,18 +33,20 @@ To review or change any unification settings once a unified contact profile has 
    - [Duplicate records](data-unification-update.md#manage-deduplication-rules) to manage deduplication rules or merge preferences.
    - [Matching conditions](data-unification-update.md#manage-match-rules) to update matching rules across two or more entities.
    - [Unified customer fields](data-unification-update.md#manage-unified-fields) to combine or exclude fields.
-   - Semantic mapping to add semantic types to unified fields.
-   - Relationships to add a relationship for a new entity.
+   - [Semantic mapping](data-unification-contacts.md#define-the-semantic-fields-for-unified-contacts) to add semantic types to unified fields.
+   - [Relationships](data-unification-contacts.md#set-the-relationship-between-contacts-and-accounts) to add a relationship for a new entity.
 
 1. After making your changes, choose your next option:
 
    :::image type="content" source="media/b2b_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify contacts option open.":::
 
    - To update the unified contact profile (with or without dependencies), see [Run updates to the contact profile](#run-updates-to-the-unified-contact-profile).
-   - To evaluate the quality of your matching conditions, see [Run matching conditions](#run-matching-conditions).
+   - To evaluate the quality of your matching conditions without updating the unified contact profile, see [Run matching conditions](#run-matching-conditions).
 
 
 ## Run matching conditions
+
+Run matching conditions to test unification rules without creating a unified profile.
 
 1. From the **Data** > **Unify** page, select **Unify contacts** > **Run matching conditions only**.
 
@@ -62,8 +64,10 @@ To review or change any unification settings once a unified contact profile has 
 
 ## Run updates to the unified contact profile
 
-To update the unified contact profile entity without impacting dependencies (such as enrichments, segments, or measures), select **Unify contacts** > **Unify profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+To run matching conditions and update the unified contact profile entity without impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify contacts** > **Unify profiles**. Dependent processes are not run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
-To update the unified profile and all dependencies, select **Unify contacts** > **Unify profiles and dependencies**. All processes are rerun automatically. After all downstream processes have completed, the contact profiles reflect any changes you made.
+To run matching conditions, update the unified profile, and update all dependencies, select **Unify contacts** > **Unify profiles and dependencies**. All processes are rerun automatically. If account unification settings were saved but not run, account unification occurs before contact unification.
+
+All tiles (except Source fields) show **Queued** or **Refreshing**.
 
 [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]

@@ -22,6 +22,8 @@ searchScope:
 
 After [unifying business accounts](map-entities.md), unify the contacts. The contact unification process maps contact data from your data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
 
+The following steps and images reflect the first time you go through the contact unification process. To edit existing contact unification settings, see [Update the unification settings](../data-unification-update-contacts.md).
+
 ## Select source fields for contact unification
 
 1. Under **Unify contacts**, select **Get started**.
@@ -85,7 +87,7 @@ This last step in the unification process shows a summary of the steps in the pr
 
    [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
 
-When the unification process completes, the unified contact profile entity, called *ContactProfile*, displays on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *ContactProfile* entity. All subsequent runs expand that entity.
+When the unification process completes, the unified contact profile entity, called *ContactProfile*, displays on the **Entities** page in the **Semantic entities** section. The first successful unification run creates the unified *ContactProfile* entity. All subsequent runs expand that entity.
 
 ### Review the results of contact unification
 
