@@ -40,7 +40,7 @@ If you don't want to use an existing Dataverse environment, the system creates a
 
 ### Enable data sharing with Dataverse from your own Azure Data Lake Storage (Preview)
 
-If your environment is configured to use your own Azure Data Lake Storage to store Customer Insights data, enabling data sharing with Microsoft Dataverse needs some extra configuration. The user setting up the Customer Insights environment must have at least **Storage Blob Data Reader** permissions on the *CustomerInsights* container in the Azure Data Lake Storage account.
+If your environment is configured to [use your own Azure Data Lake Storage to store Customer Insights data](own-data-lake-storage.md), enabling data sharing with Microsoft Dataverse needs some extra configuration. The user setting up the Customer Insights environment must have at least **Storage Blob Data Reader** permissions on the *CustomerInsights* container in the Azure Data Lake Storage account.
 
 1. Create two security groups on your Azure subscription - one **Reader** security group and one **Contributor** security group and set the Microsoft Dataverse service as the owner for both security groups.
 2. Manage the Access Control List (ACL) on the CustomerInsights container in your storage account via these security groups. Add the Microsoft Dataverse service and any Dataverse-based business applications like Dynamics 365 Marketing to the **Reader** security group with **read-only** permissions. Add *only* the Customers Insights application to the **Contributor** security group to grant both **read and write** permissions to write profiles and insights.
@@ -84,11 +84,6 @@ To execute the PowerShell scripts you first need to set up PowerShell accordingl
 2. Enter the output string copied from above into the **Permissions identifier** field of the environment configuration step for Microsoft Dataverse.
 
 :::image type="content" source="media/dataverse-enable-datasharing-BYODL.png" alt-text="Configuration options to enable data sharing from your own Azure Data Lake Storage with Microsoft Dataverse.":::
-
-Customer Insights does not support the following data sharing scenarios:
-
-- If you enable data sharing with Dataverse, you won't be able to [create predicted or missing values in an entity](predictions.md).
-- If you enable data sharing with Dataverse, you won't be able to view any optional PowerBI Embedded reports in your Customer Insights environment.
 
 ### Remove an existing connection to a Dataverse environment
 
