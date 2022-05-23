@@ -108,6 +108,12 @@ The system informs you about the usage of a tracked segment when you try to dele
 
 :::image type="content" source="media/segment-usage-delete.png" alt-text="Dialog box to confirm segment deletion when a segment is used in a Dataverse application.":::
 
+### Supported apps
+
+Usage is currently tracked in the following Dataverse-based apps:
+
+- [Customer journeys in Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile)
+
 ## View processing history and segment members
 
 You can see consolidated data about a segment by reviewing its details.
