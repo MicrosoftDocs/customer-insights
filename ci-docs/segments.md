@@ -62,7 +62,7 @@ The following actions are available when you select a segment:
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
 - **Download** the list of members as a .CSV file.
 - **Manage exports** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
-- **Delete** the segment. See [Delete segments](#delete-segments) about how deletion affects the usage of a segment.
+- **Delete** the segment.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
@@ -96,19 +96,15 @@ You can export a segment from the segments page or the [exports page](export-des
 
 ## Track usage of a segment
 
-If you export segments to apps that are based on the same Microsoft Dataverse organization that is connected with Customer Insights, you can track the usage of a segment. For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
+If you use segments in apps, which are based on the same Microsoft Dataverse organization that is connected with Customer Insights, you can track the usage of a segment. For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
 
 When editing a segment that is being used within the Customer Insights environment, or in a customer journey in Marketing, a banner in the [segment builder](segment-builder.md) informs you about the dependencies. You can inspect the dependency details directly from the banner or by selecting **Usage** in the segment builder.
 
-The **Segment usage** pane shows the details about the usage of this segment within your Customer Insights environment and in Dataverse-based apps. For segments used in customer journeys, you’ll find a link to inspect the journey in Marketing where this segment is used. If you have permissions to access the Marketing app, you can access more details there.
+The **Segment usage** pane shows the details about the usage of this segment in Dataverse-based apps. For segments used in customer journeys, you’ll find a link to inspect the journey in Marketing where this segment is used. If you have permissions to access the Marketing app, you can access more details there.
 
 :::image type="content" source="media/segment-usage-pane.png" alt-text="Side pane with details of the segment usage in the segment builder.":::
 
-## Delete segments
-
-Generally, if a segment is [exported to other services](export-destinations.md), Customer Insights updates the segment according to the refresh schedule. Until you delete a segment or stop the export, the most recent segment members are exported regularly. Deleting a segment will stop the export of that segment and usually, the last refreshed version of the segment remains in the export destination service.
-
-If you export segments to apps that are based on the Microsoft Dataverse organization that is connected with Customer Insights, it's possible to track the usage of a segment. For our prime example, [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of a segment when you try to delete it. If the segment you're about to delete is used in a customer journey in Marketing, that journey will stop for all users in the segment. If the journey is part of a marketing campaign, the deletion will affect that campaign itself. However, you can still delete the segment despite the warnings.
+The system informs you about the usage of a tracked segment when you try to delete it. If the segment you're about to delete is used in a customer journey in Marketing, that journey will stop for all users in the segment. If the journey is part of a marketing campaign, the deletion will affect that campaign itself. However, you can still delete the segment despite the warnings.
 
 :::image type="content" source="media/segment-usage-delete.png" alt-text="Dialog box to confirm segment deletion when a segment is used in a Dataverse application.":::
 
