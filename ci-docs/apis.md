@@ -58,14 +58,12 @@ These steps help you get started with using the Customer Insights APIs in an Azu
 1. On the left, select **App registrations**.
 
 1. Select **New registration**, provide an application name and choose the account type.
- 
+
    Optionally, add a redirect URL. http://localhost is sufficient for developing an application on your local computer.
 
 1. On your new App registration, go to **API permissions**.
 
-<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
-
-1. Select **Add a permission** and select **Customer Insights** in the side pane.
+1. Select **Add a permission** and select **Dynamics 365 AI for Customer Insights** in the side pane.
 
 1. For **Permission type**, select **Delegated permissions** and then select the **user_impersonation** permission.
 
