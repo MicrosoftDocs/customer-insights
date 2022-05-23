@@ -63,7 +63,7 @@ For more information, see [Work with tags and columns](work-with-tags-columns.md
 If your environment uses Azure Data Lake Storage to store Customer Insights data, data sharing with Microsoft Dataverse needs some extra configuration.
 Earlier, you could only enable data sharing with Dataverse when your data was stored in our managed data lake.
 
-For more information, see [Enable data sharing with Dataverse from your own Azure Data Lake Storage (Preview)](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
+For more information, see [Enable data sharing with Dataverse from your own Azure Data Lake Storage (Preview)](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ### New export destinations: Iterable and Braze
 
