@@ -84,12 +84,10 @@
       href: merge-entities.md
     - name: Review data unification
       href: review-unification.md
-    - name: Update customer or account unification settings
-      href: data-unification-update.md
     - name: Create a unified business contact profile 
       href: data-unification-contacts.md
-    - name: Update contact unification settings
-      href: data-unification-update-contacts.md  
+    - name: Update unification settings
+      href: data-unification-update.md  
 
 - name: Data enrichment
   items:

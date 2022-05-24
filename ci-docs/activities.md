@@ -27,7 +27,8 @@ Combine customer or business contact activities from [various data sources](data
 
 Your data sources can include entities with transactional and activity data from multiple data sources. Identify these entities and select the activities you want to view on the customer's timeline. Choose the entity that includes your target activity or activities.
 
-An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields. The **Add activity** control is disabled if no such entity is found.
+ > [!NOTE]
+ > An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields. The **Add activity** control is disabled if no such entity is found.
 
 1. Go to **Data** > **Activities**.
 
@@ -130,15 +131,13 @@ To remove filters, select the **x** next to each filter applied to the timeline 
 
 ## Use a ContactProfile entity to create contact-level activities
 
-After creating a *ContactProfile* entity, you can capture activities of contacts. It enables you to see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the typical activity mapping configuration.
+Use a *ContactProfile* entity to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the typical activity mapping configuration.
 
    > [!NOTE]
-   > For contact-level activities to work, you must have both **AccountID** and **ContactID** attributes for each record within your activity data.
-
-**Prerequisite:**
-
-The *ContactProfile* entity has been created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping).
-
+   > For contact-level activities to work, a *ContactProfile* entity has been created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping).
+   >
+   > You must have both **AccountID** and **ContactID** attributes for each record within your activity data.
+  
 1. Go to **Data** > **Activities**.
 
 1. Select **Add Activity** to create a new activity.
@@ -160,7 +159,7 @@ The *ContactProfile* entity has been created, either as a [unified contact profi
 
    :::image type="content" source="media/Contact_Activities2.png" alt-text="Final result after configuring contact activities":::
 
-### Contact-level activity timeline filtering
+## Contact-level activity timeline filtering
 
 After configuring a contact-level activity mapping and running it, the activity timeline for your customers will be updated. It includes their IDs or names, depending on your *ContactProfile* configuration, for the activities they acted on. You can filter activities by contacts in the timeline to see specific contacts that you are interested in. Additionally, you can see all activities that are not assigned to a specific contact by selecting **Activities not mapped to a Contact**.
 
