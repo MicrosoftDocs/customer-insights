@@ -3,7 +3,7 @@ title: Store Customer Insights data in your own Azure Data Lake Storage account
 author: mukeshpo
 description: Learn about the requirements to use your own Azure Data Lake Storage account for Customer Insights.
 ms.author: mukeshpo
-ms.date: 05/18/2022
+ms.date: 05/24/2022
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
@@ -22,7 +22,7 @@ Administrators in Customer Insights can [create environments](create-environment
 
 - Azure Data Lake Storage accounts must be in the same Azure region that you selected when creating the Customer Insights environment. You can check the region of the Customer Insights environment under **Admin** > **System** > **About**.
 - Data Lake Storage must be Gen2 and have [hierarchical namespace enabled](/azure/storage/blobs/create-data-lake-storage-account). Gen1 storage accounts are not supported.
-- A container named `customerinsights` has to exist on the storage account. You have to create it before you use your own Data Lake Storage in Customer Insights. The administrator setting up the Customer Insights environment needs the Storage Blob Data Reader, Storage Blob Data Contributor, or Storage Blob Data Owner role on the storage account or the `customerinsights` container. For more information, see [Create a storage account](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
+- A container named `customerinsights` has to exist on the storage account. You have to create it before you use your own Data Lake Storage in Customer Insights. The administrator setting up the Customer Insights environment needs the Storage Blob Data Contributor or Storage Blob Data Owner role on the storage account or the `customerinsights` container. For more information on assigning permission in a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
 
 ## Connect Customer Insights with your storage account
 
@@ -59,7 +59,7 @@ To execute the PowerShell scripts you first need to set up PowerShell accordingl
    1. On your PC, select the Windows key on your keyboard and search for **Windows PowerShell** and select **Run as administrator**.
    1. In the PowerShell window that opens, enter `Install-Module AzureAD`.
 2. Import three modules.
-    1. In the PowerShell window, enter `Install-Module -Name Az.Accounts` and follow the steps. 
+    1. In the PowerShell window, enter `Install-Module -Name Az.Accounts` and follow the steps.
     1. Repeat for `Install-Module -Name Az.Resources` and `Install-Module -Name Az.Storage`.
 
 ### Configuration steps
