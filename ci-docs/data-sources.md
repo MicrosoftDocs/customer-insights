@@ -72,7 +72,7 @@ To refresh a data source on demand, follow these steps:
 
 1. Go to **Data** > **Data sources**.
 
-2. Select the vertical ellipsis next to the data source you want to refresh and select **Refresh** from the dropdown list.
+2. Select the vertical ellipsis (&vellip;) next to the data source you want to refresh and select **Refresh** from the dropdown list.
 
 3. The data source is now triggered for a manual refresh. Refreshing a data source will update both the entity schema and data for all the entities specified in the data source.
 
@@ -82,7 +82,7 @@ To refresh a data source on demand, follow these steps:
 
 1. Go to **Data** > **Data sources**.
 
-2. Select the vertical ellipsis next to the data source you want to remove and select **Delete** from the dropdown menu.
+2. Select the vertical ellipsis (&vellip;) next to the data source you want to remove and select **Delete** from the dropdown menu.
 
 3. Confirm your deletion.
 
