@@ -133,6 +133,7 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
 > - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
 > - You can move rules and conditions to other places in the segment definition. Select [...] next to a rule or condition and choose how and where to move it.
 > - The **Undo** and **Redo** controls in the command bar let you roll back changes.
+> - After creating a segment, some segments allow you to [track the usage of the segment](segments.md#track-usage-of-a-segment).
 
 ## Quick segments
 
