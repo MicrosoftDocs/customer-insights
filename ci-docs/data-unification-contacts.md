@@ -20,9 +20,9 @@ searchScope:
 
 # Create a unified view of your business contacts
 
-After [unifying business accounts](map-entities.md), unify the contacts. The contact unification process maps contact data from your data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
+After [unifying business accounts](map-entities.md), unify the contacts. The contact unification process maps contact data from your data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile. The first few steps are identical to the steps to unify accounts.
 
-The following steps and images reflect the first time you go through the contact unification process. To edit existing contact unification settings, see [Update the unification settings](data-unification-update-contacts.md).
+The following steps and images reflect the first time you go through the contact unification process. To edit existing contact unification settings, see [Update the unification settings](data-unification-update.md).
 
 ## Select source fields for contact unification
 
@@ -52,7 +52,7 @@ The following steps and images reflect the first time you go through the contact
 
 ## Define the semantic fields for unified contacts
 
-This step in the unification process enables you to map your unified contact fields to semantic types. Semantic mappings let you map your non-activity data to pre-defined schemas. These schemas help Customer Insights to better understand your data attributes.
+This step in the unification process enables you to map your unified contact fields to semantic types.
 
 1. Select the semantic type that maps to each unified field. Select **None** if a semantic type is not available.
 
@@ -87,8 +87,6 @@ This last step in the unification process shows a summary of the steps in the pr
 
    [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
 
-When the unification process completes, the unified contact profile entity, called *ContactProfile*, displays on the **Entities** page in the **Semantic entities** section. The first successful unification run creates the unified *ContactProfile* entity. All subsequent runs expand that entity.
-
 ### Review the results of contact unification
 
 After unification, the **Data** > **Unify** page shows the number of unified contact profiles. The results of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
@@ -98,7 +96,23 @@ After unification, the **Data** > **Unify** page shows the number of unified con
 
 We recommend you review the results, particularly the quality of your [match rules](data-unification-update.md#manage-match-rules) and refine them if necessary.
 
-When needed, [make changes to the contact unification settings](data-unification-update-contacts.md) and rerun the unified profile.
+When needed, [make changes to the contact unification settings](data-unification-update.md) and rerun the unified profile.
+
+### Output entities from data unification
+
+When the unification process completes, the unified contact profile entity, called *ContactProfile*, displays on the **Entities** page in the **Semantic entities** section. The first successful unification run creates the unified *ContactProfile* entity. All subsequent runs expand that entity.
+
+Deduplication and conflation entities are created and display in the **System** section in the **Entities** page. A deduplicated entity for each of the source entities is created with the name **Deduplication_DataSource_Entity**. The **ContactsConflationMatchPairs** entity contains information about cross-entity matches.
+
+A deduplication output entity contains the following information:
+- IDs / Keys
+  - Primary key and Alternate ID fields. Alternate ID field consists of all the alternate IDs identified for a record.
+  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
+  - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
+- Fields used to define the deduplication rules.
+- Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
+
+A **ContactsCustomer** entity is created and is used for internal processing.
 
 ## Next Step
 

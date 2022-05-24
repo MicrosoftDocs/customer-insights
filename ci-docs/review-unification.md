@@ -30,8 +30,6 @@ This last step in the unification process shows a summary of the steps in the pr
 
    [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
 
-When the unification process completes, the unified customer profile entity, called *Customer*, is listed on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
-
 ## Review the results of data unification
 
 After unification, the **Data** > **Unify** page shows the number of unified customer profiles (or account profiles for B-to-B). The results of each step in the unification process display on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
@@ -47,7 +45,9 @@ When needed, [make changes to the unification settings](data-unification-update.
 
 ### Output entities from data unification
 
-Deduplication and conflation entities are created and display in the **System** section in the **Entities** page. A deduplicated entity for each of the source entities is created with the name **Deduplication_DataSource_Entity**. The **ConflationMatchPairs:CustomerInsights** entity contains information about cross-entity matches.
+When the unification process completes, the unified customer profile entity, called *Customer*, is listed on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+
+Deduplication and conflation entities are created and display in the **System** section in the **Entities** page. A deduplicated entity for each of the source entities is created with the name **Deduplication_DataSource_Entity**. The **ConflationMatchPairs** entity contains information about cross-entity matches.
 
 A deduplication output entity contains the following information:
 - IDs / Keys
