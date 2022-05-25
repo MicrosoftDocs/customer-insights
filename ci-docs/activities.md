@@ -128,9 +128,9 @@ To remove filters, select the **x** next to each filter applied to the timeline 
 > [!NOTE]
 > Activity filters are removed when you leave a customer profile. You have to apply them each time you open a customer profile.
 
-## Define a contact-level activity
+## Define a contact activity
 
-For business accounts (B-to-B), use a *ContactProfile* entity to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the typical activity mapping configuration.
+For business accounts (B-to-B), use a *ContactProfile* entity to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
 
    > [!NOTE]
    > To define a contact-level activity, a *ContactProfile* entity must be created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping).

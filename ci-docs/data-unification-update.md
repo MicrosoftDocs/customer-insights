@@ -24,14 +24,14 @@ To review or change any unification settings once a unified profile has been cre
 
    For individual customers (B-to-C), the following image displays.
 
-   :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
+   :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified." lightbox="media/m3_unified.png":::
 
    > [!TIP]
    > The **Matching conditions** tile displays only if multiple entities were selected.
 
    For business accounts (B-to-B), the Unify page displays unified accounts and unified contacts. Choose the appropriate tile under **Unify Accounts** or **Unify Contacts** depending on what you want to update.
 
-   :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified.":::
+   :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified." lightbox="media/b2b_unified.png":::
 
 1. Choose what you want to update:
    - [Source fields](#edit-source-fields) to add entities or attributes or change attribute types.
@@ -43,10 +43,8 @@ To review or change any unification settings once a unified profile has been cre
 
 1. After making your changes, choose your next option:
 
-   :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
-
+   - To evaluate the quality of your unification rules (deduplication and matching rules) without updating the unified profile, see [Run matching conditions](#run-matching-conditions). The **Run matching conditions only** option doesn't display for single entity.
    - To update the unified profile (with or without dependencies), see [Run updates to the unified profile](#run-updates-to-the-unified-profile).
-   - To evaluate the quality of your matching conditions without updating the unified profile, see [Run matching conditions](#run-matching-conditions). The **Run matching conditions only** option doesn't display for single entity.
 
 ## Edit source fields
 
@@ -58,9 +56,9 @@ You can't remove an attribute or an entity if they've already been unified.
 
    The number of mapped and unmapped fields display.
 
-1. Select **Select entities and fields** to add other attributes or entities. Use the search or scroll to find and select your attributes and entities of interest. Select **Apply**.
+1. To add other attributes or entities, select **Select entities and fields**.
 
-1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off. For more information, see [Select primary key and semantic type for attributes](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
+1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off. For more information, see [Select source fields](map-entities.md).
 
 1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update unification settings](#update-unification-settings).
 
@@ -72,7 +70,7 @@ You can't remove an attribute or an entity if they've already been unified.
 
    The number of duplicate records found displays under **Duplicates**. The **Records deduplicated** column shows which entities had duplicate records and the percentage of duplicated records.
 
-1. If you added an enriched entity, select **Use enriched entities**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
+1. To use an enriched entity, select **Use enriched entities**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
 1. To manage deduplication rules, choose any of the following options:
    - **Create a new rule**: Select **Add rule** under the appropriate entity. For more information, see [Define deduplication rules](remove-duplicates.md#define-deduplication-rules).
@@ -131,7 +129,9 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. For more information, see [Unify customer fields](merge-entities.md).
 
-1. Select **Next** to manage semantic fields, or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
+1. For customers or accounts, select **Next** to review and [update the unified profile and dependencies](#run-updates-to-the-unified-profile). Or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
+ 
+   For contacts, select **Next** to manage semantic fields. Or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
 
 ## Manage semantic fields for unified contacts
 
@@ -156,10 +156,7 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 Run matching conditions to test unification rules without updating the unified profile entity.
 
-1. From the **Data** > **Unify** page, select **Run matching conditions only**.
-
-   > [!TIP]
-   > For accounts, select **Unify accounts** > **Run matching conditions only**. For contacts, select **Unify contacts** > **Run matching conditions only**.
+1. From the **Data** > **Unify** page, select **Run matching conditions only**. For accounts, select **Unify accounts** > **Run matching conditions only**. For contacts, select **Unify contacts** > **Run matching conditions only**.
 
    The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing**.
 
@@ -175,15 +172,12 @@ Run matching conditions to test unification rules without updating the unified p
 
 ## Run updates to the unified profile
 
-To run matching conditions and update the unified profile entity without impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+To run matching conditions and update the unified profile entity without impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts** > **Unify profiles**.Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+
+To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically.
 
 > [!TIP]
-> For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts** > **Unify profiles**.
-
-To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically. 
-
-> [!TIP]
-> For accounts, select **Unify accounts** > **Unify profiles and dependencies**. For contacts, select **Unify contacts** > **Unify profiles and dependencies**. When unifying accounts, contact unification will run if changes to contact data or configuration have been saved but not yet run. The same is true when unifying contacts, account unification will run if changes to account data or configuration have been saved but not yet run.
+> For accounts, select **Unify accounts** > **Unify profiles and dependencies**. For contacts, select **Unify contacts** > **Unify profiles and dependencies**. When unifying accounts, contact unification will run if contact data or configuration changes have been saved but not yet run. The same is true when unifying contacts, account unification will run if account data or configuration changed have been saved but not yet run.
 
 All tiles except **Source fields** show **Queued** or **Refreshing**.
 

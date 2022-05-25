@@ -52,11 +52,11 @@ The following steps and images reflect the first time you go through the contact
 
 ## Define the semantic fields for unified contacts
 
-This step in the unification process enables you to map your unified contact fields to semantic types.
+This step in the unification process enables you to map your unified contact fields to semantic types. Semantic mapping lets you map your non-activity data to pre-defined schemas. These schemas help Customer Insights to better understand your data attributes. You can map your [contact activity](activities.md#define-a-contact-activity) data to the schemas.
 
 1. Select the semantic type that maps to each unified field. Select **None** if a semantic type is not available.
 
-   :::image type="content" source="media/semantic_mapping.png" alt-text="Screenshot of Semantic fields page to define the semantic types.":::
+   :::image type="content" source="media/semantic_mapping.png" alt-text="Screenshot of Semantic fields page to define the semantic types." lightbox="media/semantic_mapping.png":::
 
 1. After mapping all unified fields, select **Next**.
 
