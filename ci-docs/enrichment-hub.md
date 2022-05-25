@@ -83,13 +83,21 @@ The entity to be enriched is specified during the enrichment configuration, whic
 
 You can enrich your customer data before data unification to help increase the quality of a data match. For more information, see [data source enrichment](data-sources-enrichment.md).
 
-## See the progress of the enrichment process
+## Run or refresh an enrichment
+
+1. To start the enrichment process, select **Run**. Or, let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The processing time depends on the size of your customer data.
+
+1. Optionally, [see the progress of the enrichment process](#see-the-progress-of-the-enrichment-process).
+
+1. After the enrichment process completes, go to **My enrichments** to review the newly enriched customer profiles data, the time of the last update, and the number of enriched profiles.
+
+1. Select the enrichment to see [enrichment results](#enrichment-results).
+
+### See the progress of the enrichment process
 
 You can find details about the processing of an enrichment, including it status and potential issues while it's refreshing or after a refresh completed. Understand which processes are involved to refresh an enrichment and how long it took to run the processes. The enrichment status is supported for Experian, Leadspace, HERE Technologies, SFTP Import, and Azure Maps.
 
-To see the status of en enrichment
-
-1. Go to **Data** > **Enrichment**. 
+1. Go to **Data** > **Enrichment**.
 1. In the **My enrichments** tab, select the status of an enrichment to open a side pane. 
 1. In the **Progress details** pane, expand the **Enrichments** section. 
 1. Under the enrichment you want to see the progress, select **See details**. 
@@ -97,16 +105,15 @@ To see the status of en enrichment
 
 ## Enrichment results
 
-After a completed enrichment run, you can review the enrichment results.
+After a completed enrichment run, review the enrichment results.
 
-1. Go to **Data** > **Enrichment**. 
-1. Select the enrichment that you want information about.
+1. Go to **Data** > **Enrichment**.
+1. In the **My enrichments** tab, select the enrichment that you want information about.
 
 All enrichments show basic information such as the number of enriched profiles, a preview of the generated enrichment entity, and the number of enriched profiles over time. If available, the **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
 
 :::image type="content" source="media/enrichments-results.png" alt-text="Enrichments results page.":::
 
 Some enrichments also show information specific to the type of enrichment. Refer to the documentation for the relevant enrichment for more information.
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

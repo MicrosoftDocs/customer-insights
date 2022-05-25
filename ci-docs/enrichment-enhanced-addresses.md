@@ -74,11 +74,13 @@ Addresses must contain a country/region value. We don't process addresses for co
 
 ## Configure the enrichment
 
-1. Go to **Data** > **Enrichment**.
+1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
 1. Select **Enrich my data** on the **Enhanced addresses** tile.
 
    :::image type="content" source="media/enhanced-addresses-tile.png" alt-text="Screenshot of the Enhanced addresses tile.":::
+
+1. Review the overview and then select **Next**.
 
 1. Select the **Customer data set** and choose the entity containing the addresses you want to enrich. You can select the *Customer* entity to enrich addresses in all your customer profiles or select a segment entity to enrich addresses only in customer profiles contained in that segment.
 
@@ -87,7 +89,7 @@ Addresses must contain a country/region value. We don't process addresses for co
    > [!NOTE]
    > Country/Region is mandatory in both single-attribute and multiple-attribute addresses. Addresses that don't contain valid or supported country/region values won't be enriched.
 
-1.	Map the address fields from your unified customer entity.
+1. Select **Next** and map the address fields from your unified customer entity.
 
     :::image type="content" source="media/enhanced-address-mapping.png" alt-text="Enhanced address field-mapping page.":::
 
@@ -99,21 +101,14 @@ Addresses must contain a country/region value. We don't process addresses for co
 
 ## Enrichment results
 
-To start the enrichment process, select **Run** from the command bar. You can also let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The processing time depends on the size of your customer data.
+After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
 
-After the enrichment process completes, you can review the newly enriched customer profiles data under **My enrichments**. Additionally, you'll find the time of the last update and the number of enriched profiles.
+The **Customers changes overview** tile shows details about the coverage of the enrichment:
+- **Addresses processed and changed**: The number of customer profiles with addresses that were successfully enriched.
+- **Addresses processed and not changed**: The number of customer profiles with addresses that were recognized but not changed. It typically happens when the input data is valid and can't be improved by the enrichment.
+- **Addresses not processed and not changed**: The number of profiles with addresses that were not recognized. Usually for input data that is invalid or not supported by the enrichment.
 
-You can see a sample of the enriched data in the **Enriched customers preview** tile. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
-
-### Overview card
-
-The overview card shows details about the coverage of the enrichment. 
-
-* **Addresses processed and changed**: The number of customer profiles with addresses that were successfully enriched.
-
-* **Addresses processed and not changed**: The number of customer profiles with addresses that were recognized but not changed. It typically happens when the input data is valid and can't be improved by the enrichment.
-
-* **Addresses not processed and not changed**: The number of profiles with addresses that were not recognized. Usually for input data that is invalid or not supported by the enrichment.
+The **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
 
 ## Next steps
 

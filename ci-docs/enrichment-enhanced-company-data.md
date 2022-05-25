@@ -55,17 +55,21 @@ There are a few limitations with the enhanced data. The items in the list below 
 
 ## Configure the enrichment
 
-1. Go to **Data** > **Enrichment**.
+1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
 1. Select **Enrich my data** on the **Enhanced company data** tile.
 
    :::image type="content" source="media/enhanced-company-data-tile.png" alt-text="Enrichment tile in the enrichment hub for company data.":::
 
+1. Review the overview and then select **Next**.
+
 1. Select the **Customer data set** and choose the entity containing the addresses you want to enrich. You can select the *Customer* entity to enrich addresses in all your customer profiles or select a segment entity to enrich addresses only in customer profiles contained in that segment.
 
 1. Select which type of fields from your company profiles should be used for matching with Microsoft’s compiled company data. This selection will affect the mapping fields you have access to in the next step.
 
-1.	Map the company fields from your unified customer entity. The more key identifiers and fields you map, the more likelihood of a higher match rate.
+1. Select **Next**.
+
+1. Map the company fields from your unified customer entity. The more key identifiers and fields you map, the more likelihood of a higher match rate.
 
     :::image type="content" source="media/enhanced-company-data-mapping.png" alt-text="Data-mapping step when configuring a company enrichment.":::
 
@@ -77,21 +81,14 @@ There are a few limitations with the enhanced data. The items in the list below 
 
 ## Enrichment results
 
-To start the enrichment process, select **Run** from the command bar. You can also let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The processing time depends on the size of your customer data.
+After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
 
-After the enrichment process completes, you can review the newly enriched customer profiles data under **My enrichments**. Additionally, you'll find the time of the last update and the number of enriched profiles.
-
-You can see a sample of the enriched data in the **Enriched customers preview** tile. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
-
-### Overview card
-
-The overview card shows details about the coverage of the enrichment. 
-
-* **Companies processed and changed**: The number of customer company profiles that were successfully enriched.
-
-* **Companies processed and not changed**: The number of customer company profiles that were recognized but not changed. This typically happens when the input data is valid and can't be improved by the enrichment.
-
-* **Companies not processed and not changed**: The number of customer company profiles that were not recognized. This typically happens for input data that are invalid or not supported by the enrichment.
+The **Customers changes overview** tile shows details about the coverage of the enrichment
+- **Companies processed and changed**: The number of customer company profiles that were successfully enriched.
+- **Companies processed and not changed**: The number of customer company profiles that were recognized but not changed. This typically happens when the input data is valid and can't be improved by the enrichment.
+- **Companies not processed and not changed**: The number of customer company profiles that were not recognized. This typically happens for input data that are invalid or not supported by the enrichment.
+ 
+The **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
 
 ## Next steps
 
