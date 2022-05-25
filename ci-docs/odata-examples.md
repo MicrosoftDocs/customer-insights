@@ -1,7 +1,7 @@
 ---
 title: "OData examples for the Dynamics 365 Customer Insights APIs"
 description: "Commonly used examples of for the Open Data Protocol (OData) to query the Customer Insights APIs to review data."
-ms.date: 05/10/2022
+ms.date: 05/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
@@ -28,16 +28,15 @@ You have to modify the query samples to make them work on the target environment
 
 The following table contains a set of sample queries for the *Customer* entity.
 
-
 |Query type |Example  | Note  |
 |---------|---------|---------|
 |Single customer ID     | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'`          |  |
-|Alternate key    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}' `         |  Alternate keys persist in the unified customer entity       |
+|Alternate key    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Alternate keys persist in the unified customer entity       |
 |Select   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |In    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
 |Alternate Key + In   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |Search  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Returns top 10 results for a search string      |
-|Segment membership  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10  `     | Returns a preset number of rows from the segmentation entity.      |
+|Segment membership  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Returns a preset number of rows from the segmentation entity.      |
 
 ## Unified activity
 
@@ -48,7 +47,7 @@ The following table contains a set of sample queries for the *UnifiedActivity* e
 |Activity of CID     | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}'`          | Lists activities of a specific customer profile |
 |Activity time frame    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityTime gt 2017-01-01T00:00:00.000Z and ActivityTime lt 2020-01-01T00:00:00.000Z`     |  Activities of a customer profile in a time frame       |
 |Activity type    |   `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'`        |         |
-|Activity by display name     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’ `        | |
+|Activity by display name     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’`        | |
 |Activity sorting    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  Sort activities ascending or descending       |
 |Activity expanded from segment membership  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     |         |
 
@@ -62,3 +61,13 @@ The following table contains a set of sample queries for other entities.
 |Enriched brands of CID    | `{serviceRoot}/BrandShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`  |       |
 |Enriched interests of CID    |   `{serviceRoot}/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`       |         |
 |In-Clause + Expand     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
+
+## Not supported OData queries
+
+The following queries are not supported by Customer Insights:
+
+- $filter on ingested source entities. You can only run $filter queries on system entities that Customer Insights creates.
+- $expand from a $search query. Example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
+- $expand from $select if only a subset of attributes are selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
+- $expand enriched brand or interest affinities for a given customer. Example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
+- Query prediction model output entities through alternate key. Example: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`
