@@ -172,12 +172,12 @@ Run matching conditions to test unification rules without updating the unified p
 
 ## Run updates to the unified profile
 
-To run matching conditions and update the unified profile entity without impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts** > **Unify profiles**.Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+To run matching conditions and update the unified profile entity without impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts** > **Unify profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
 To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically.
 
 > [!TIP]
-> For accounts, select **Unify accounts** > **Unify profiles and dependencies**. For contacts, select **Unify contacts** > **Unify profiles and dependencies**. When unifying accounts, contact unification will run if contact data or configuration changes have been saved but not yet run. The same is true when unifying contacts, account unification will run if account data or configuration changed have been saved but not yet run.
+> For accounts, select **Unify accounts** > **Unify profiles and dependencies**. For contacts, select **Unify contacts** > **Unify profiles and dependencies**. When unifying accounts, contact unification will run if contact data or configuration changes have been saved but not yet run. The same is true when unifying contacts, account unification will run if account data or configuration changes have been saved but not yet run.
 
 All tiles except **Source fields** show **Queued** or **Refreshing**.
 

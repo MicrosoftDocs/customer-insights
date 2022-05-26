@@ -2,7 +2,7 @@
 title: "Create a unified view of your business contacts"
 description: "Go through the data unification process to create a single master dataset of contacts."
 recommendations: false
-ms.date: 05/06/2022
+ms.date: 05/26/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -20,7 +20,7 @@ searchScope:
 
 # Create a unified view of your business contacts
 
-After [unifying business accounts](map-entities.md), unify the contacts. The contact unification process maps contact data from your data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile. The first few steps are identical to the steps to unify accounts.
+After [unifying business accounts](map-entities.md), unify the contacts. The contact unification process maps contact data from your data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile. The first few steps are identical to the unifying accounts steps.
 
 The following steps and images reflect the first time you go through the contact unification process. To edit existing contact unification settings, see [Update the unification settings](data-unification-update.md).
 
@@ -52,7 +52,7 @@ The following steps and images reflect the first time you go through the contact
 
 ## Define the semantic fields for unified contacts
 
-This step in the unification process enables you to map your unified contact fields to semantic types. Semantic mapping lets you map your non-activity data to pre-defined schemas. These schemas help Customer Insights to better understand your data attributes. You can map your [contact activity](activities.md#define-a-contact-activity) data to the schemas.
+This step in the unification process maps your unified contact fields to semantic types. Semantic mapping lets you map your non-activity data to pre-defined schemas. These schemas help Customer Insights to better understand your data attributes. You can map your [contact activity](activities.md#define-a-contact-activity) data to the schemas.
 
 1. Select the semantic type that maps to each unified field. Select **None** if a semantic type is not available.
 

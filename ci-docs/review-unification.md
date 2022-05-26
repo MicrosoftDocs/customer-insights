@@ -1,7 +1,7 @@
 ---
 title: "Review data unification"
 description: "Review the data unification steps, create unified customer profiles, and review the results"
-ms.date: 05/04/2022
+ms.date: 05/26/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -19,6 +19,8 @@ searchScope:
 # Review data unification
 
 This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified profile.
+
+[!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
 :::image type="content" source="media/m3_review.png" alt-text="Screenshot of Review and create customer profiles.":::
 
