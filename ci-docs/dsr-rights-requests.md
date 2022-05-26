@@ -37,7 +37,7 @@ A Customer Insights admin can follow these steps to remove customer data that wa
 1. Sign in to Dynamics 365 Customer Insights.
 2. Go to **Data** > **Data sources**
 3. For each data source in the list that contains deleted customer data:
-   1. Select (...) and then select **Refresh**.
+   1. Select the vertical ellipsis (&vellip;) and then select **Refresh**.
    2. Check the status of the data source under **Status**. A check mark means the refresh was successful. A warning triangle means something went wrong. If a warning triangle is displayed, contact D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
