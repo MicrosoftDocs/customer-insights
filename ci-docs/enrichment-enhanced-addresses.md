@@ -70,8 +70,6 @@ We currently support enriching addresses in these countries or regions:
 - United Kingdom
 - United States
 
-Addresses must contain a country/region value. We don't process addresses for countries or regions that aren't supported and addresses that have no country or region provided.
-
 ## Configure the enrichment
 
 1. Go to **Data** > **Enrichment** and select the **Discover** tab.
@@ -82,16 +80,16 @@ Addresses must contain a country/region value. We don't process addresses for co
 
 1. Review the overview and then select **Next**.
 
-1. Select the **Customer data set** and choose the entity containing the addresses you want to enrich. You can select the *Customer* entity to enrich addresses in all your customer profiles or select a segment entity to enrich addresses only in customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
 1. Select how addresses are formatted in your data set. Choose **Single-attribute address** if addresses in your data use a single field. Choose **Multiple-attribute address** if addresses in your data use more than one data field.
-
-   > [!NOTE]
-   > Country/Region is mandatory in both single-attribute and multiple-attribute addresses. Addresses that don't contain valid or supported country/region values won't be enriched.
 
 1. Select **Next** and map the address fields from your unified customer entity.
 
     :::image type="content" source="media/enhanced-address-mapping.png" alt-text="Enhanced address field-mapping page.":::
+
+   > [!NOTE]
+   > Country/Region is mandatory in both single-attribute and multiple-attribute addresses. Addresses that don't contain valid or supported country/region values won't be enriched.
 
 1. Select **Next** to complete the field mapping.
 

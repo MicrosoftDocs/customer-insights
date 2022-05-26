@@ -17,16 +17,14 @@ Dun & Bradstreet provides commercial data, analytics, and insights for businesse
 
 ## Prerequisites
 
-To configure a Dun & Bradstreet enrichment, the following prerequisites must be met:
+- An active [Dun & Bradstreet](https://www.dnb.com/marketing/media/give-your-data-a-boost.html?source=microsoft_audience_insights) license.
+- [Unified customer profiles](customer-profiles.md) for companies.
+- A Dun & Bradstreet [project](#set-up-your-dun--bradstreet-project) is set up.
+- A Dun & Bradstreet [connection](connections.md) is  [configured](#configure-a-connection-for-dun--bradstreet) by an administrator.
 
-- You have an active [Dun & Bradstreet](https://www.dnb.com/marketing/media/give-your-data-a-boost.html?source=microsoft_audience_insights) license.
-- You have [unified customer profiles](customer-profiles.md) for companies.
-- A Dun & Bradstreet [connection](connections.md) is configured by an administrator. You can create it if you have [administrator](permissions.md#admin) permissions and the credentials from Dun & Bradstreet Connect.
-
-## Setting up your Dun & Bradstreet project
+## Set up your Dun & Bradstreet project
 
 As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights).
-
 
 1. Sign in to [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). To retrieve credentials, [restore your password](https://sso.dnb.com/signin/forgot-password?lead_source=microsoft_audienceinsights).
 
@@ -42,21 +40,50 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
    :::image type="content" source="media/enrichment-dnb-s3info.png" alt-text="Screenshot of selection of s3 information in a Dun & Bradstreet project.":::
 
+## Configure a connection for Dun & Bradstreet
+
+You must be an [administrator](permissions.md#admin)  and have the credentials from Dun & Bradstreet Connect. 
+
+1. Select **Add connection** when configuring an enrichment or go to **Admin** > **Connections** and select **Set up** on the Dun & Bradstreet tile.
+
+1. Select **Get Started**.
+
+1. Enter a name for the connection.
+
+1. Provide a valid Dun & Bradstreet credentials and Dun & Bradstreet project details *Region, Drop folder path, and Drop folder name*. You [get this information](#setting-up-your-dun--bradstreet-project) from the Dun & Bradstreet project.
+
+1. Review and provide your consent for [Data privacy and compliance](#data-privacy-and-compliance) by selecting **I agree**.
+
+1. Select **Verify** to validate the configuration.
+
+1. After completing the verification, select **Save**.
+
+   :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Dun & Bradstreet connection configuration page.":::
+
+### Data privacy and compliance
+
+When you enable Dynamics 365 Customer Insights to transmit data to Dun & Bradstreet, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you're responsible for ensuring that Dun & Bradstreet meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
+
 ## Configure the enrichment
 
-1. Go to **Data** > **Enrichment**.
+1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
-1. Select **Enrich my data** on the Dun & Bradstreet tile and select **Get started**.
+1. Select **Enrich my data** on the Dun & Bradstreet tile.
 
    :::image type="content" source="media/enrichment-dnb-tile.png" alt-text="Screenshot of the Dun & Bradstreet tile.":::
 
-1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you're an administrator, you can create a connection. Select **Add connection** and choose **Dun & Bradstreet**.
+1. Review the overview and then select **Next**.
 
-1. Select **Connect to Dun & Bradstreet** to confirm the connection.
+1. Select the connection and confirm. Contact an administrator if one is not available.
 
-1. Select **Next** and choose the **Customer data set** you want to enrich with company data from Dun & Bradstreet. You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only unified customer profiles contained in that segment.
+1. Select **Next**.
 
-1. Select **Next** and define which fields from your unified profiles are used to look for matching company data from Dun & Bradstreet. Either **DUNS number** or **Name of company** and **Country** fields are required. The country field supports [two or three letter country codes](https://www.iso.org/iso-3166-country-codes.html), country name in English, country name in native language, and phone prefix. Some common country variants include:
+1. Select the **Customer data set** and choose the profile or segment you want to enrich with company data from Dun & Bradstreet. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+
+1. Select **Next**
+
+1. Define which fields fields from your unified profiles to use to look for matching company data from Dun & Bradstreet. Either **DUNS number** or **Name of company** and **Country** fields are required. The country field supports [two or three letter country codes](https://www.iso.org/iso-3166-country-codes.html), country name in English, country name in native language, and phone prefix. Some common country variants include:
 
 - US: United States of America, United States, USA, America.
 - CA: Canada.
@@ -71,37 +98,16 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
 1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
 
-## Configure a connection for Dun & Bradstreet
-
-You need to be an administrator to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Dun & Bradstreet tile.
-
-1. Select **Get Started**.
-
-1. Enter a name for the connection in the **Display name** box.
-
-1. Provide valid Dun & Bradstreet credentials and Dun & Bradstreet project details *Region, Drop folder path, and Drop folder name*. You [get this information](#setting-up-your-dun--bradstreet-project) from the Dun & Bradstreet project.
-
-1. Review and provide your consent for **Data privacy and compliance** by selecting **I agree**.
-
-1. Select **Verify** to validate the configuration.
-
-1. After completing the verification, select **Save**.
-
-   :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Dun & Bradstreet connection configuration page.":::
+1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
 ## Enrichment results
 
-After refreshing the enrichment, you can review the newly enriched company data under [My enrichments](enrichment-hub.md). You can find the time of the last update and the number of enriched profiles.
+After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
 
-You can access a detailed view of each enriched profile by selecting **View enriched data**.
+The **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
 
 ## Next steps
 
 [!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
-
-## Data privacy and compliance
-
-When you enable Dynamics 365 Customer Insights to transmit data to Dun & Bradstreet, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you're responsible for ensuring that Dun & Bradstreet meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
