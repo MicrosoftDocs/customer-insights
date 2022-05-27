@@ -40,7 +40,14 @@ To block API access to the environment, select **Disable**. If APIs are disabled
 
 [Azure Private Link](/azure/private-link/private-link-overview) lets Customer Insights connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
 
-Setting up Private Link in Customer Insights is a two-step process. First, an administrator initiates the creation of a Private Link from **Admin** > **Security** > **Private Links** in Customer Insights. The **Add Private Link** pane lists storage accounts from your tenant that you’ve got permissions to see. Select the storage account and provide consent to create the Private Link.
+> [!IMPORTANT]
+> Minimum role requirement to set up a Private Link connection:
+>
+> - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
+> - Permissions in custom role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+>
+
+Setting up Private Link in Customer Insights is a two-step process. First, you initiate the creation of a Private Link from **Admin** > **Security** > **Private Links** in Customer Insights. The **Add Private Link** pane lists storage accounts from your tenant that you’ve got permissions to see. Select the storage account and provide consent to create the Private Link.
 
 Next, you need to approve the Private Link on the Data Lake Storage account side. Open the link presented on screen to approve the new Private Link.
 
