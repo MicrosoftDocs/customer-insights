@@ -1,7 +1,7 @@
 ---
-title: "Security settings in Dynamics 365 Customer Insights"
-description: "Learn about security settings in Dynamics 365 Customer Insights."
-ms.date: 04/28/2022
+title: Security settings in Customer Insights
+description: Learn about security settings in Dynamics 365 Customer Insights.
+ms.date: 05/27/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,15 +11,17 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Security overview page
+# Security settings in Customer Insights
 
-The **Security** page lists options to configure user permissions and features that help make Dynamics 365 Customer Insights more secure. Only administrators can access this page. 
+The **Security** page lists options to configure user permissions and features that help make Dynamics 365 Customer Insights more secure. Only administrators can access this page.
 
 Go to **Admin** > **Security** to configure the settings.
 
 The **Security** page includes the following tabs:
+
 - [Users](#users-tab)
 - [APIs](#apis-tab)
+- [Private Links](#private-links-tab)
 - [Key Vault](#key-vault-tab)
 
 ## Users tab
@@ -34,12 +36,19 @@ You can create new primary and secondary keys by selecting **Regenerate primary*
 
 To block API access to the environment, select **Disable**. If APIs are disabled, you can select **Enable** to grant access again.
 
+## Private Links tab
+
+[Azure Private Link](/azure/private-link/private-link-overview) lets Customer Insights to connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, a Private Link from Customer Insights enables the connection to that restricted network.
+
+Setting up Private Link in Customer Insights is a two-step process. First, an administrator initiates the creation of a Private Link from **Admin** > **Security** > **Private Links** in Customer Insights. The **Add Private Link** pane lists storage accounts from your tenant that you’ve got permissions to see. Select the storage account and provide consent to create the Private Link.
+
+Next, you need to approve the Private Link on the Data Lake Storage account side. Open the link presented on screen to approve the new Private Link.
+
 ## Key Vault tab
 
 The **Key Vault** tab lets you link and manage your own [Azure key vault](/azure/key-vault/general/basic-concepts) to the environment.
 The dedicated key vault can be used to stage and use secrets in an organization's compliance boundary. Customer Insights can use the secrets in Azure Key Vault to [set up connections](connections.md) to third-party systems.
 
 For more information, see [Bring your own Azure key vault](use-azure-key-vault.md).
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
