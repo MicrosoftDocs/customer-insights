@@ -48,7 +48,7 @@ A Customer Insights admin can follow these steps to remove customer data that wa
 A Customer Insights admin can follow these steps to delete Customer Insights user data:
 
 1. Sign in to Dynamics 365 Customer Insights.
-2. Go to **Admin** > **Permissions**.
+2. Go to **Admin** > **Security** > **Permissions**.
 3. Select the check box for the user you want to delete.
 4. Select **Remove**.
 
