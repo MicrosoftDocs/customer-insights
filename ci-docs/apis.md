@@ -27,11 +27,11 @@ This article describes how to access the Customer Insights APIs, create an Azure
 
 1. [Sign in](https://home.ci.ai.dynamics.com) to Customer Insights. If you don't have a subscription yet, [sign up for a trial of Customer Insights](https://aka.ms/tryci).
 
-1. To enable APIs on your Customer Insights environment, go to **Admin** > **Permissions**. You'll need admin permissions to do so.
+1. To enable APIs on your Customer Insights environment, go to **Admin** > **Security**. You'll need admin permissions to do so.
 
 1. Go to the **APIs** tab and select the **Enable** button.    
  
-   Enabling the APIs creates a primary and secondary subscription key for your instance that gets used in the API requests. You can regenerate the keys by selecting the **Regenerate primary** or **Regenerate secondary** on **Admin** > **Permissions** > **APIs**.
+   Enabling the APIs creates a primary and secondary subscription key for your instance that gets used in the API requests. You can regenerate the keys by selecting the **Regenerate primary** or **Regenerate secondary** on **Admin** > **Security** > **APIs**.
 
 <!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
@@ -103,7 +103,7 @@ The [app registration section](#create-a-new-app-registration-in-the-azure-porta
 
 1. To conclude, we have to add the name of the app registration as a user in Customer Insights.  
    
-   Open Customer Insights, go to **Admin** > **Permissions** and select **Add user**.
+   Open Customer Insights, go to **Admin** > **Security** and select **Add user**.
 
 1. Search for the name of your app registration, select it from the search results, and select **Save**.
 
