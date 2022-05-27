@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Criteo"
 description: "Learn how to configure the connection and export to Criteo."
-ms.date: 03/29/2022
+ms.date: 05/27/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
