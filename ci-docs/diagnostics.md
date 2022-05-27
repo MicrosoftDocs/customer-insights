@@ -23,8 +23,8 @@ Customer Insights is sends the following event logs:
 - **Audit Events**
   - **APIEvent** - enables change tracking done via the Dynamics 365 Customer Insights UI.
 - **Operational Events**
-  - **WorkflowEvent** - The Workflow allows one to setup [Data Sources](data-sources.md), [unify](data-unification.md) and [enrich](enrichment-hub.md) and finally [export](export-destinations.md) data into other systems. All those steps can be done individually (e.g. trigger a single export) or orchestrated (e.g. data refresh from data sources which trigger the unification process which will pull in additional enrichments and once done export the data into another system). For more details see the [WorkflowEvent Schema](#workflow-event-schema).
-  - **APIEvent** - all API calls to the customers instance to Dynamics 365 Customer Insights. For more details see the [APIEvent Schema](#api-event-schema).
+  - **WorkflowEvent** - The workflow lets you set up [Data Sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and finally [export](export-destinations.md) data into other systems. All those steps can be done individually (for example, trigger a single export). The can also run orchestrated (for example, data refresh from data sources that triggers the unification process, which will pull in enrichments and once done export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
+  - **APIEvent** - all API calls to the customers instance to Dynamics 365 Customer Insights. For more information, see the [APIEvent Schema](#api-event-schema).
 
 ## Set up the diagnostic settings
 
@@ -34,7 +34,7 @@ To configure diagnostics in Customer Insights, the following prerequisites must 
 
 - You have an active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - You have [Administrator](permissions.md#admin) permissions in Customer Insights.
-- You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can be an Azure Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
+- You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can be an Azure Data Lake Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal). This permission is necessary while configuring diagnostic settings in Customer Insights, it can be changed after successful setup.
 - [Destination requirements](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics met.
 - You have at least the **Reader** role on the resource group the resource belongs to.
 
@@ -51,7 +51,7 @@ To configure diagnostics in Customer Insights, the following prerequisites must 
 
 1. Choose the **Tenant** of the Azure subscription with the destination resource and select **Sign in**.
 
-1. Select the **Resource type** (Storage account, Event Hub, or log analytics).
+1. Select the **Resource type** (Storage account, event hub, or log analytics).
 
 1. Select the **Subscription** for the destination resource.
 
@@ -178,7 +178,7 @@ The `identity` JSON object has the following structure
 
 ### Workflow event schema
 
-The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-destinations.md) data. All those steps can run individually or orchestrated with following processes. 
+The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-destinations.md) data. All those steps can run individually or orchestrated with following processes.
 
 #### Operation types
 
@@ -211,7 +211,7 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 | `time`          | Timestamp | Required          | Timestamp of the event (UTC).                                                                                                                                 | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resourceId`    | String    | Required          | ResourceId of the instance that emitted the event.                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
 | `operationName` | String    | Required          | Name of the operation represented by this event. `{OperationType}.[WorkFlow|Task][Started|Completed]`. See [Operation Types](#operation-types) for reference. | `Segmentation.WorkflowStarted`,<br> `Segmentation.TaskStarted`, <br> `Segmentation.TaskCompleted`, <br> `Segmentation.WorkflowCompleted`                                 |
-| `category`      | String    | Required          | Log category of the event. Always `Operational` for Workflow events                                                                                           | `Operational`                                                                                                                                                            | 
+| `category`      | String    | Required          | Log category of the event. Always `Operational` for Workflow events                                                                                           | `Operational`                                                                                                                                                            |
 | `resultType`    | String    | Required          | Status of the event. `Running`, `Skipped`, `Successful`, `Failure`                                                                                            |                                                                                                                                                                          |
 | `durationMs`    | Long      | Optional          | Duration of the operation in milliseconds.                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | String    | Optional          | JSON object with more properties to the particular category of events.                                                                                        | See sub section [Workflow Properties](#workflow-properties-schema)                                                                                                       |

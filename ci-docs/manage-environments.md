@@ -1,7 +1,7 @@
 ---
 title: "Create and manage environments"
 description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 03/28/2022
+ms.date: 05/17/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
@@ -54,14 +54,21 @@ Enabling data sharing with Microsoft Dataverse by selecting the data sharing che
 
 ### Enable data sharing with Dataverse from your own Azure Data Lake Storage (Preview)
 
-If your environment is configured to use your own Azure Data Lake Storage to store Customer Insights data, enabling data sharing with Microsoft Dataverse needs some extra configuration.
+If your environment is configured to use your own Azure Data Lake Storage to store Customer Insights data, enabling data sharing with Microsoft Dataverse needs some extra configuration. The user setting up the Customer Insights environment must have at least **Storage Blob Data Reader** permissions on the *CustomerInsights* container in the Azure Data Lake Storage account.
 
 1. Create two security groups on your Azure subscription - one **Reader** security group and one **Contributor** security group and set the Microsoft Dataverse service as the owner for both security groups.
-2. Manage the Access Control List (ACL) on the CustomerInsights container in your storage account via these security groups. Add the Microsoft Dataverse service and any Dataverse-based business applications like Dynamics 365 Marketing to the **Reader** security group with **read-only** permissions. Add *only* the Customers Insights application to the **Contributor** security group to grant both **read and write** permissions to write profiles and insights.
-   
+2. Manage the Access Control List (ACL) on the *CustomerInsights* container in your storage account via these security groups. Add the Microsoft Dataverse service and any Dataverse-based business applications like Dynamics 365 Marketing to the **Reader** security group with **read-only** permissions. Add *only* the Customers Insights application to the **Contributor** security group to grant both **read and write** permissions to write profiles and insights.
+
+#### Limitations
+
+There are two limitations when using Dataverse in connection with your own Azure Data Lake Storage account:
+
+- There's one-to-one mapping between a Dataverse organization and an Azure Data Lake Storage account. Once a Dataverse organization is connected to a storage account, it can't connect to another storage account. This limitation prevents that a Dataverse doesn't populate multiple storage accounts.
+- Data sharing won't work if an Azure Private Link setup is needed to access your Azure Data Lake storage account because it's behind a firewall. Dataverse currently doesn't support the connection to private endpoints through Private Link.
+
 #### Prerequisites
 
-To execute the PowerShell scripts you need to have the following three modules imported. 
+To execute the PowerShell scripts you first need to set up PowerShell accordingly.
 
 1. Install the latest version of [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
    1. On your PC, select the Windows key on your keyboard and search for **Windows PowerShell** and select **Run as administrator**.
@@ -122,7 +129,7 @@ You'll see a list of all available environments in your organization where you c
 The following configuration settings are copied:
 
 - Ingested/imported data sources
-- Data unification (Map, Match, Merge) configuration
+- Data unification configuration
 - Segments
 - Measures
 - Relationships
@@ -181,7 +188,7 @@ As the owner of an environment, you can reset an environment to an empty state i
 
 1.	Select the **Environment** picker in the header of the app. 
 
-2.	Select the environment you want to reset and select the ellipsis (**...**). 
+2.	Select the environment you want to reset and select the vertical ellipsis (&vellip;). 
 
 3. Choose the **Reset** option. 
 
@@ -193,7 +200,7 @@ As the owner of an environment, you can delete an environment you administer.
 
 1.	Select the **Environment** picker in the header of the app.
 
-2.	Select the environment you want to reset and select the ellipsis (**...**). 
+2.	Select the environment you want to reset and select the vertical ellipsis (&vellip;). 
 
 3. Choose the **Delete** option. 
 

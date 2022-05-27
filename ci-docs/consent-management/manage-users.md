@@ -5,8 +5,8 @@ ms.date: 04/27/2022
 
 ms.subservice: consent-management
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
 ---
@@ -43,11 +43,11 @@ All administrators of Customer Insights have access to the consent management ca
 
 1. In Consent Center (preview), go to **Admin** > **Permissions**.
 1. Select the user you want to remove in the list.
-1. Select **More options (...)** and choose **Remove user**
+1. Select **More options (&vellip;)** and choose **Remove user**
 1. Confirm the removal to revoke access to the users.
 
 ## Change roles
 
 1. In Consent Center (preview), go to **Admin** > **Permissions**.
 1. Select the user you want to remove in the list.
-1. Select **More options (...)** and choose **Remove user**
+1. Select **More options (&vellip;)** and choose **Remove user**

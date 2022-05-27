@@ -47,7 +47,7 @@ To configure Azure Maps data enrichment, the following prerequisites must be met
 
 1. Select **Next** to complete the field mapping.
 
-1. Evaluate whether you want to modify **Advanced Settings**. These are provided to give maximum flexibility to handle advanced use cases, but the default values will be adequate in most cases:
+1. Evaluate whether you want to modify **Advanced Settings**. These settings are provided to give maximum flexibility to handle advanced use cases, but the default values will be adequate in most cases:
    - **Type of addresses**: The default behavior is that the enrichment will return the best address match even if it's incomplete. To get only complete addresses&mdash;for example, addresses that include the house number&mdash;clear all the checkboxes except **Point Addresses**. 
    - **Language**: By default, addresses are returned in the language for the region that the address has been determined to belong to. To apply a standardized address language, select the language from the dropdown menu. For example, selecting **English** will return **Copenhagen, Denmark** instead of **København, Danmark**.
 
@@ -85,7 +85,7 @@ You can access a detailed view of each enriched profile by selecting **View enri
 
 ## Data privacy and compliance
 
-When you enable Dynamics 365 Customer Insights to transmit data to Azure Maps, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Azure Maps meets any privacy or security obligations you may have. For more information, go to [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+When you enable Dynamics 365 Customer Insights to transmit data to Azure Maps, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you're responsible for ensuring that Azure Maps meet any privacy or security obligations you may have. For more information, go to [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights Administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

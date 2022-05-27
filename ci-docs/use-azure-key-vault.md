@@ -85,9 +85,9 @@ The following permissions are granted to Customer Insights on a linked key vault
 
 | Type        | Permissions          |
 | ----------- | -------------------- |
-| Key         | [Get Keys](/rest/api/keyvault/get-keys), [Get Key](/rest/api/keyvault/get-key)                                 |
-| Secret      | [Get Secrets](/rest/api/keyvault/get-secrets), [Get Secret](/rest/api/keyvault/get-secret)                     |
-| Certificate | [Get Certificates](/rest/api/keyvault/get-certificates), [Get Certificate](/rest/api/keyvault/get-certificate) |
+| Key         | [Get Keys](/rest/api/keyvault/keys/get-keys/get-keys), [Get Key](/rest/api/keyvault/keys/get-key/get-key)                                 |
+| Secret      | [Get Secrets](/rest/api/keyvault/secrets/get-secrets/get-secrets), [Get Secret](/rest/api/keyvault/secrets/get-secret/get-secret)                     |
+| Certificate | [Get Certificates](/rest/api/keyvault/certificates/get-certificates/get-certificates), [Get Certificate](/rest/api/keyvault/certificates/get-certificate/get-certificate) |
 
 The preceding values are the minimum to list and read during execution.
 

@@ -9,7 +9,9 @@
 
 - name: Learning catalog
   items:
-    - name: Get started
+    - name: Certify as Microsoft Customer Data Platform Specialist
+      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+    - name: Get started with Customer Insights
       href: /learn/modules/get-started-customer-data-platform/
     - name: Ingest data
       href: /learn/modules/ingest-data-customer-insights/
@@ -72,14 +74,20 @@
 
 - name: Data unification
   items:
-    - name: Data unification overview
-      href: data-unification.md
-    - name: Map entities and attributes
-      href: map-entities.md
-    - name: Match entities
-      href: match-entities.md
-    - name: Merge entities
-      href: merge-entities.md
+        - name: Data unification overview
+          href: data-unification.md
+        - name: Select source fields
+          href: map-entities.md
+        - name: Remove duplicate records
+          href: remove-duplicates.md
+        - name: Match conditions
+          href: match-entities.md
+        - name: Unify customer fields
+          href: merge-entities.md
+        - name: Review data unification
+          href: review-unification.md
+        - name: Update the unification settings
+          href: data-unification-update.md
 
 - name: Data enrichment
   items:
@@ -209,6 +217,8 @@
           href: export-campaign-monitor.md
         - name: Constant Contact
           href: export-constant-contact.md
+        - name: Criteo
+          href: export-criteo.md
         - name: DotDigital
           href: export-dotdigital.md
         - name: Dynamics 365 Marketing

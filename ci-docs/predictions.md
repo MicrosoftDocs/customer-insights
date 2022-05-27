@@ -33,7 +33,7 @@ Before your organization can use the predictions feature, the following prerequi
 
 1. Your organization has an instance [set up in Microsoft Dataverse](/ai-builder/build-model#prerequisites) and it's in the same organization as Customer Insights.
 
-2. Your audience insight environment is attached to your Dataverse instance.
+2. Your Customer Insights environment is attached to your Dataverse instance.
 
 For more information, see [Create a new environment](create-environment.md).
 
@@ -91,7 +91,7 @@ As part of this flow, you'll choose a specific attribute to base your segment on
 
 2. Select the prediction you want to review.
 
-3. Select the ellipsis in the **Actions** column and choose **View**.
+3. Select the vertical ellipsis (&vellip;) in the **Actions** column and choose **View**.
 
 4. You'll see a number of data points in the view of your prediction.
    > [!div class="mx-imgBorder"]
@@ -118,7 +118,7 @@ After you've created a prediction, you can customize the model in the AI Builder
 
 2. Select the prediction you want to edit.
 
-3. Select the ellipsis in the **Actions** column and choose **View**.
+3. Select the vertical ellipsis (&vellip;) in the **Actions** column and choose **View**.
 
 4. Select **Customize in AI Builder**.
 
@@ -135,7 +135,7 @@ The next run of your prediction will use the updated model you've created.
 
 2. Select the prediction you want to delete.
 
-3. Select the ellipsis in the **Actions** column and choose **Delete**.
+3. Select the vertical ellipsis (&vellip;) in the **Actions** column and choose **Delete**.
 
 4. Confirm the deletion.
 
@@ -149,7 +149,7 @@ If you can't complete the attach Dataverse process due to an error, you can try 
 - App permissions aren't granted.
     1. Go to [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com).
     1. Select **Environments**.
-    1. Select the ellipsis next to the environment you want to add the permission to and select **Settings**.
+    1. Select the vertical ellipsis (&vellip;) next to the environment you want to add the permission to and select **Settings**.
     1. Expand **Users + permissions** and select **Users**.
     1. Select **+ New** and select **User**.
     1. Select **Application User** if it's not already selected and enter the following information:

@@ -37,7 +37,7 @@ There are three types of roles:
 
 - All permissions available to the Viewer.
 - Load and transform data using the **Data sources** page.
-- Complete the *Data Unification* sections (**Map**, **Match**, and **Merge**) which result in the unified customer profile entity.
+- Complete ***Data Unification** which result in the unified customer profile entity.
 - Define **Relationships** and **Activities**.
 - Create segments using the **Segments** page.
 - Create measures using the **Measures** page.

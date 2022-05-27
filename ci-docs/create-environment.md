@@ -17,7 +17,7 @@ searchScope:
 
 # Create an environment in Customer Insights
 
-This article explains how to create a new environment after your organization has purchased a Dynamics 365 Customer Insights subscription. 
+After your organization has purchased a Dynamics 365 Customer Insights subscription, create your own environment.
 
 Organizations can create multiple environments for every Customer Insights license. If your organization purchases more than one license, [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, review the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
@@ -26,7 +26,7 @@ Organizations can create multiple environments for every Customer Insights licen
 
 ## Create a new environment
 
-After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started. 
+After purchasing a subscription license for Customer Insights, the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started.
 
 A guided experience helps you through the steps to gather all required information for a new environment. You need [administrator permissions](permissions.md) in Customer Insights to create or manage environments.
 
@@ -63,7 +63,7 @@ By saving data to Azure Data Lake Storage, you agree that data will be transferr
 > - Azure Data Lake Storage accounts from the same Azure region that you selected when creating the environment.
 > - Azure Data Lake Storage accounts that are Gen2 and have *hierarchical namespace* enabled. Azure Data Lake Gen1 storage accounts are not supported.
 
-For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using an Azure service principal](connect-service-principal.md). A container named `customerinsights` has to exist on the storage account.
+For the Azure Data Lake Storage option, you can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using an Azure service principal](connect-service-principal.md). A container named `customerinsights` must exist on the storage account.
 
 When system processes such as data ingestion is complete, the system creates corresponding folders in the storage account you specified. Data files and *model.json* files are created and added to folders based on the process name.
 
@@ -76,7 +76,7 @@ The **Microsoft Dataverse** step lets you connect Customer Insights with your Da
 Provide your own Microsoft Dataverse environment to share data (profiles and insights) with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps. Leave this field empty if you don't have your own Dataverse environment and we'll provision one for you.
 
 > [!IMPORTANT]
-> 1. Customer Insights and Dataverse have to be in the same region to enable data sharing.
+> 1. Customer Insights and Dataverse must be in the same region to enable data sharing.
 > 1. You must have a global administrator role in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you are added to those security groups.
 > 1. No existing Customer Insights environment is already associated with that Dataverse environment. Learn how to [remove an existing connection to a Dataverse environment](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment).
 
@@ -89,9 +89,9 @@ Customer Insights does not support the following data sharing scenarios:
 
 ### Step 4: Finalize the settings
 
-In the **Review** step, go through all of the specified settings. When everything looks complete, select **Create** to set up the environment. 
+In the **Review** step, go through all the specified settings. When everything looks complete, select **Create** to set up the environment.
 
-You can also change most of the settings later. For more information, see [Manage environments](manage-environments.md).
+You can change most of the settings later. For more information, see [Manage environments](manage-environments.md).
 
 ## Work with your new environment
 
