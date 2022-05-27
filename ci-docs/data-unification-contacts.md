@@ -2,7 +2,7 @@
 title: "Create a unified view of your business contacts"
 description: "Go through the data unification process to create a single master dataset of contacts."
 recommendations: false
-ms.date: 05/26/2022
+ms.date: 05/27/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -20,11 +20,13 @@ searchScope:
 
 # Create a unified view of your business contacts
 
-After [unifying business accounts](map-entities.md), unify the contacts. The contact unification process maps contact data from your data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile. The first few steps are identical to the unifying accounts steps.
+After [unifying business accounts](map-entities.md), unify the contacts. The contact unification process maps contact data from your data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
 
 The following steps and images reflect the first time you go through the contact unification process. To edit existing contact unification settings, see [Update the unification settings](data-unification-update.md).
 
-## Select source fields for contact unification
+The first few steps are identical to the unifying accounts steps.
+
+## Initial contact unification steps
 
 1. Under **Unify contacts**, select **Get started**.
 
@@ -32,19 +34,13 @@ The following steps and images reflect the first time you go through the contact
 
 1. Select **Next**.
 
-## Remove duplicates before unifying contacts
-
 1. Optionally, [define deduplication rules](remove-duplicates.md) for your selected entities.
 
 1. Select **Next**.
 
-## Match conditions
-
 1. [Define the match order and rules](match-entities.md) for cross-entity matching.
 
 1. Select **Next**.
-
-## Unify contact fields
 
 1. [Combine and exclude contact fields](merge-entities.md).
 

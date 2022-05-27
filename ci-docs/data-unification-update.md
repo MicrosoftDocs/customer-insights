@@ -1,7 +1,7 @@
 ---
 title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
-ms.date: 05/23/2022
+ms.date: 05/27/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -22,14 +22,14 @@ To review or change any unification settings once a unified profile has been cre
 
 1. Go to **Data** > **Unify**.
 
-   For individual customers (B-to-C), the following image displays.
+   For individual customers (B-to-C), the **Unify** page displays the number of unified customer profiles and tiles for each of the unification steps.
 
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified." lightbox="media/m3_unified.png":::
 
    > [!TIP]
    > The **Matching conditions** tile displays only if multiple entities were selected.
 
-   For business accounts (B-to-B), the Unify page displays unified accounts and unified contacts. Choose the appropriate tile under **Unify Accounts** or **Unify Contacts** depending on what you want to update.
+   For business accounts (B-to-B), the **Unify** page displays the number of unified account profiles and tiles for each of the account unification steps. The page also displays the number of unified contact profiles and tiles for each of the contact unification steps. Choose the appropriate tile under **Unify Accounts** or **Unify Contacts** depending on what you want to update.
 
    :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified." lightbox="media/b2b_unified.png":::
 
