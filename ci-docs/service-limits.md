@@ -1,8 +1,7 @@
 ---
-title: "Service limits in Dynamics 365 Customer Insights"
-description: "Understand limits and restrictions."
+title: Service limits in Customer Insights
+description: Understand limits and restrictions in the Customer Insights SaaS service.
 ms.date: 05/28/2022
-
 ms.subservice: audience-insights 
 ms.topic: conceptual
 author: JimsonChalissery
@@ -13,7 +12,7 @@ manager: shellyha
 
 # Service limits in Customer Insights
 
-This article describes the built-in limits to the Customer Insights service, which are designed to ensure the reliability and stability of the service. Any requests for changes can be made through the [Ideas forum](https://go.microsoft.com/fwlink/?linkid=2074172). 
+This article describes the built-in limits to the Customer Insights service, which are designed to ensure the reliability and stability of the service. Any requests for changes can be made through the [Ideas forum](https://go.microsoft.com/fwlink/?linkid=2074172).
 
 ## Customer Insights
 
@@ -24,6 +23,6 @@ This article describes the built-in limits to the Customer Insights service, whi
 
 ## Fair scheduling of jobs
 
-Customer Insights is a SaaS service that uses shared Azure resources. Customers tend to have workloads of variable intensity and on different schedules. To ensure fair access to the underlying resources, we make sure system processes are executed in fair order. Examples of system processes are jobs related to data unification, segment updates, or measure calculation. The fair scheduling protects you from queuing for resources if there's a spike of requested jobs. At the same time Customer Insights does not guarantee all jobs you queue are processed in parallel.
+Customer Insights is a SaaS service that uses shared Azure resources. Customers tend to have workloads of variable intensity and on different schedules. To ensure fair access to the underlying resources, we make sure system processes are executed in fair order. Examples of system processes are jobs related to data unification, segment updates, or measure calculation. The fair scheduling protects you from queuing for resources if there's a spike of requested jobs. At the same time, Customer Insights doesn't guarantee all jobs you queue are processed in parallel.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
