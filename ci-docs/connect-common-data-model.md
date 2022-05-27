@@ -24,7 +24,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 - Data ingestion supports Azure Data Lake *Gen2* storage accounts exclusively. You can't use Azure Data Lake Gen1 storage accounts to ingest data.
 
-- The Azure Data Lake storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
+- The Azure Data Lake storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). The data must be stored in a hierarchical folder format that defines the root folder and has subfolders for each entity. The subfolders can have full data or incremental data folders.
 
 - To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
@@ -32,12 +32,12 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 - Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-- One of the following roles must be assigned to the storage account or container. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
+- The Customer Insights service principal must be in one of the following roles to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
   - Storage Blob Data Reader
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
 
-- Data in your Azure Data Lake must follow the Common Data Model standard for storage of your data. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). Admin users with Storage Blob Data Owner or Contributor access can define the schema when ingesting the data if the manifest is not present.
+- Data in your Azure Data Lake must follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the entities such as entity columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
 ## Connect to Azure Data Lake storage
 
@@ -49,14 +49,13 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
    :::image type="content" source="media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake." lightbox="media/data_sources_ADLS.png":::
 
-1. Enter a **Name** for the data source and an optional **Description**.
+1. Enter a **Name** for the data source and an optional **Description**. The name uniquely identifies the data source and is referenced in downstream processes. The name can't be changed.
 
 1. Choose one of the following options for **Connect your storage using**. For a resource or a subscription-based option for authentication, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-   - **Azure resource**: Enter the **Resource Id**. If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. If you want to ingest data using an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
-   - **Account key**: Enter the **Account name** and **Account key**.
-
+   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+  
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
