@@ -68,6 +68,6 @@ The following queries aren't supported by Customer Insights:
 
 - `$filter` on ingested source entities. You can only run $filter queries on system entities that Customer Insights creates.
 - `$expand` from a `$search` query. Example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
-- `$expand` from `$select` if only a subset of attributes are selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
+- `$expand` from `$select` if only a subset of attributes is selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
 - `$expand` enriched brand or interest affinities for a given customer. Example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
 - Query prediction model output entities through alternate key. Example: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`
