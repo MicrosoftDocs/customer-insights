@@ -43,8 +43,9 @@ To block API access to the environment, select **Disable**. If APIs are disabled
 > [!IMPORTANT]
 > Minimum role requirement to set up a Private Link connection:
 >
+> - Customer Insights: Administrator
 > - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
-> - Permissions in custom role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+> - Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
 >
 
 Setting up Private Link in Customer Insights is a two-step process. First, you initiate the creation of a Private Link from **Admin** > **Security** > **Private Links** in Customer Insights. The **Add Private Link** pane lists storage accounts from your tenant that you’ve got permissions to see. Select the storage account and provide consent to create the Private Link.
