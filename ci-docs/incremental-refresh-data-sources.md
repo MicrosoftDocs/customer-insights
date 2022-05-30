@@ -1,7 +1,7 @@
 ---
 title: "Incremental refresh for Power Query and Azure Data Lake data sources"
 description: "Refresh new and updated data for large data sources based on Power Query or Azure data lake data sources."
-ms.date: 05/09/2022
+ms.date: 05/30/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -62,15 +62,17 @@ You can configure incremental refresh when adding the Azure Data Lake data sourc
 
 1. From the **Select Entities** pane, edit the entity.
 
-1. Select the **Incremental refresh** checkbox.
+1. Select the **Incremental ingestion** checkbox.
 
    :::image type="content" source="media/ADLS_inc_refresh.png" alt-text="Configure entities in a data source for incremental refresh.":::
 
    1. Browse to the root folder that contains the .csv or .parquet files for full data, incremental data upserts, and incremental data deletes.
-   1. Enter the extension for the full data and incremental files (for example: \.csv).
+   1. Enter the extension for the full data and both incremental files (for example: \.csv).
    1. Select **Save**.
 
 1. For **Last updated**, select the date timestamp.
+
+1. If the **Primary key** is not selected, select the primary key.
 
 1. Select **X** to save and close the pane.
 

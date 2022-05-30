@@ -1,7 +1,7 @@
 ---
 title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 05/09/2022
+ms.date: 05/30/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -73,13 +73,13 @@ This article provides information on how to ingest data into Dynamics 365 Custom
    :::image type="content" source="media/deltalake_required.png" alt-text="Dialog box showing Required for Primary key":::
 
    > [!TIP]
-   > To edit the entities in a JSON editing interface, select **Show more** > **Edit schema**. Make changes and select **Save**.
+   > To edit the entities in a JSON editing interface, select **Show more** > **Edit schema file**. Make changes and select **Save**.
 
 1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
    1. Select **Required**. The **Edit entity** panel displays.
    1. Choose the **Primary key**.
    1. Optionally, change the partition pattern.
-   1. To enable an incremental refresh, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
+   1. If an incremental refresh is required or to enable an incremental refresh, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
    1. Select **X** to save and close the panel.
 
 1. Select **Attributes**. The Manage attributes page displays.
@@ -94,37 +94,37 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 ### Create a new schema file
 
-1. Select **New data source schema**.
+1. Select **New schema file**.
 
 1. Enter a name for the file and select **Save**.
 
 1. Select **New entity**. The New Entity panel displays.
 
-   :::image type="content" source="media/ADLS_new_entity_location.png" alt-text="Dialog box to create a new entity with Data files location highlighted.":::
-
 1. Enter the entity name and choose the **Data files location**.
-   - **Pattern**: Browse to the root folder for the pattern, select the pattern type, and enter the expression.
-   - **Location**: Browse to the entity file and select it.
+   - **Multiple .csv or .parquet files**: Browse to the root folder, select the pattern type, and enter the expression.
+   - **Single .csv or .parquet files***: Browse to the .csv or .parquet file and select it.
+
+   :::image type="content" source="media/ADLS_new_entity_location.png" alt-text="Dialog box to create a new entity with Data files location highlighted.":::
 
 1. Select **Save**.
 
-1. Select **No attributes** to add the attributes, or select **generate the attributes**.
+1. Select **define the attributes** to add the attributes, or select **auto generate them**.
 
-   :::image type="content" source="media/ADLS_new_entity.png" alt-text="Dialog box to create a new entity with generate the attributes highlighted.":::
+1. Select **Review attributes** to ensure the data format is correct for each attribute. The Manage attributes page displays.
 
-1. Optionally, choose the **Primary key**.
-
-1. Select **X** to save and close the panel.
-
-1. To enable analytics and other capabilities, select **Attributes**. The Manage attributes page displays. Select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
+1. To enable analytics and other capabilities, select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
-1. Select **Include entities**.
-
-1. To enable an incremental refresh, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
+1. Select **Include** to include the entity in the data source ingestion.
 
 1. Continue to add entities, if applicable.
+
+1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
+   1. Select **Required**.
+   1. Choose the **Primary key**.
+   1. To enable an incremental refresh or if the entity requires incremental data support, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
+   1. Select **X** to save and close the panel.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
