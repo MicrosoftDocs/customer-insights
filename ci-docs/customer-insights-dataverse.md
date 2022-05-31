@@ -1,6 +1,6 @@
 ---
 title: Work with Customer Insights data in Microsoft Dataverse
-description: "Use Customer Insights entities as tables in Microsoft Dataverse."
+description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output entities that are exported to Dataverse.
 ms.date: 05/30/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
@@ -22,9 +22,9 @@ Connecting to your Dataverse environment also enables you to [ingest data from o
 ## Prerequisites
 
 - Customer Insights and Dataverse environments must be hosted in the same region.
-- You must have a global administrator role in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you are added to those security groups.
+- You must have a global administrator role in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you're added to those security groups.
 - No other Customer Insights environment is already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
-- A Microsoft Dataverse environment can only connect to a single storage account. This is only relevant if you configure the environment to [use your Azure Data Lake Storage](own-data-lake-storage.md).
+- A Microsoft Dataverse environment can only connect to a single storage account. It applies only if you configure the environment to [use your Azure Data Lake Storage](own-data-lake-storage.md).
 
 ## Connect a Dataverse environment to Customer Insights
 
@@ -34,11 +34,11 @@ The **Microsoft Dataverse** step lets you connect Customer Insights with your Da
 
 Administrators can configure Customer Insights to connect an existing Dataverse environment. By providing the URL to the Dataverse environment, it's attaching to their new Customer Insights environment.
 
-If you don't want to use an existing Dataverse environment, the system creates a new environment for the Customer Insights data in your tenant. [Power Platform admins can control who can create environments](/power-platform/admin/control-environment-creation). If you're setting up a new Customer Insights environment and the admin has disabled the creation of Dataverse environments for everyone except admins, you may not be able to create a new environment.
+If you don't want to use an existing Dataverse environment, the system creates a new environment for the Customer Insights data in your tenant. [Power Platform admins can control who can create environments](/power-platform/admin/control-environment-creation). When you're setting up a new Customer Insights environment and the admin has disabled the creation of Dataverse environments for everyone except admins, you may not be able to create a new environment.
 
 **Enable data sharing** with Dataverse by selecting the data sharing checkbox.
 
-If you are using your own Data Lake Storage account, you also need the **Permissions identifier**. For more information how to get the permission identifier, review the following section.
+If you're using your own Data Lake Storage account, you also need the **Permissions identifier**. For more information how to get the permission identifier, review the following section.
 
 ## Enable data sharing with Dataverse from your own Azure Data Lake Storage (Preview)
 
@@ -49,14 +49,14 @@ Enabling data sharing with Microsoft Dataverse when your environment [uses your 
 
 ### Limitations
 
-There are two limitations when using Dataverse in connection with your own Azure Data Lake Storage account:
+There are two limitations when using Dataverse with your own Azure Data Lake Storage account:
 
 - There's one-to-one mapping between a Dataverse organization and an Azure Data Lake Storage account. Once a Dataverse organization is connected to a storage account, it can't connect to another storage account. This limitation prevents that a Dataverse doesn't populate multiple storage accounts.
 - Data sharing won't work if an Azure Private Link setup is needed to access your Azure Data Lake storage account because it's behind a firewall. Dataverse currently doesn't support the connection to private endpoints through Private Link.
 
 ### Set up PowerShell
 
-To execute the PowerShell scripts you first need to set up PowerShell accordingly.
+To execute the PowerShell scripts, you first need to set up PowerShell accordingly.
 
 1. Install the latest version of [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
    1. On your PC, select the Windows key on your keyboard and search for **Windows PowerShell** and select **Run as administrator**.
@@ -80,7 +80,7 @@ To execute the PowerShell scripts you first need to set up PowerShell accordingl
     2. `ByolSetup.ps1`
         - You need *Storage Blob Data Owner* permissions at the storage account/container level to run this script or this script will create one for you. Your role assignment can be removed manually after successfully running the script.
         - This PowerShell script adds the required tole-based access control (RBAC) for the Microsoft Dataverse service and any Dataverse-based business applications. It also updates the Access Control List (ACL) on the CustomerInsights container for the security groups created with the `CreateSecurityGroups.ps1` script. The Contributor group will have *rwx* permission and Readers group will have *r-x* permission only.
-        - Execute this PowerShell script in Windows PowerShell by providing the Azure subscription ID containing your Azure Data Lake Storage, storage account name, resource group name, and the Reader and Contributor security group id values. Open the PowerShell script in an editor to review additional information and the logic implemented.
+        - Execute this PowerShell script in Windows PowerShell by providing the Azure subscription ID containing your Azure Data Lake Storage, storage account name, resource group name, and the Reader and Contributor security group ID values. Open the PowerShell script in an editor to review additional information and the logic implemented.
         - Copy the output string after successfully running the script. The output string looks like this: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
 
 2. Enter the output string copied from above into the **Permissions identifier** field of the environment configuration step for Microsoft Dataverse.
@@ -210,24 +210,25 @@ Between mid-May 2022 and June 13, 2022, administrators can update the environmen
 
 1. My environment uses my own Azure Data Lake Storage account. Do I still need to update?
 
-   If there is already a Dataverse environment configured in your environment, the update isn't required. If no Dataverse is environment configured, the **Update now** button will provision a Dataverse environment and update from the Customer Insights database to a Dataverse database.
+   If there's already a Dataverse environment configured in your environment, the update isn't required. If no Dataverse is environment configured, the **Update now** button will create a Dataverse environment and update from the Customer Insights database to a Dataverse database.
 
-1. Will we get additional Dataverse capacity, or will the update use my existing Dataverse capacity?
+1. Will we get extra Dataverse capacity, or will the update use my existing Dataverse capacity?
 
-   If there is already a Dataverse environment configured in your Customer Insights environment, or connected with other Dynamics 365 or PowerApps applications, the capacity remains unchanged. If the Dataverse environment is new, it will add new storage and database capacity. The storage and database capacity added varies per environment and entitlements. You'll get 3 GB for trial and sandbox environment. Production environments get 15 GB.
+   - If there's already a Dataverse environment configured in your Customer Insights environment, or connected with other Dynamics 365 or Power Apps applications, the capacity remains unchanged.
+   - If the Dataverse environment is new, it will add new storage and database capacity. The capacity added varies per environment and entitlements. You'll get 3 GB for trial and sandbox environment. Production environments get 15 GB.
 
 1. I proceeded with the update and it seems like nothing happened. Is the update complete?
 
-   If the notification in Customer Insights no longer shows, the update is complete. You can check the status of the update by reviewing your environment settings.
+   If the notification in Customer Insights doesn't show anymore, the update is complete. You can check the status of the update by reviewing your environment settings.
 
 1. Why do I still see the banner after completing the update steps?
 
-   This could be due to an upgrade or refresh failure. Please contact support.
+   It can happen due to an upgrade or refresh failure. Contact support.
 
 1. I received a "Failed to provision Dataverse environment" error after starting the update. What happened?
 
-   This could be due to an upgrade or refresh failure. Please contact support.
+   It can happen due to an upgrade or refresh failure. Contact support.
    Common causes:
-    - Insufficient capacity. There are many DV environments already provisioned and there is no more capacity to provision additional environment. For more information, see [Manage capacity action](/power-platform/admin/capacity-storage#actions-to-take-for-a-storage-capacity-deficit).
+    - Insufficient capacity. There's no more capacity to create more environments. For more information, see [Manage capacity action](/power-platform/admin/capacity-storage#actions-to-take-for-a-storage-capacity-deficit).
     - Region mismatch between tenant region and Customer Insights environment region in the Australia and India regions.
     - Insufficient privileges to provision Dataverse. The users starting the update needs a Dynamics 365 admin role.

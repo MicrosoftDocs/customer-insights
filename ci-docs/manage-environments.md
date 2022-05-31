@@ -1,19 +1,19 @@
 ---
-title: "Create and manage environments"
-description: "Learn how to sign up for the service and how to manage environments."
-ms.date: 05/17/2022
+title: How to - Manage environments
+description: Learn how to to manage existing Customer Insights environments as an admin."
+ms.date: 05/31/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
-author: adkuppa
-ms.author: adkuppa
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope: 
   - ci-system-about
   - customerInsights
 ---
 
-# Manage environments
+# How to: Manage environments
 
 Administrators [create](create-environment.md) and manage environments. They can change some settings in existing environments. Business, type, region, storage option, and Dataverse settings are fixed after creating the environment. If you want to change these settings, reset the environment or create a new environment.
 
