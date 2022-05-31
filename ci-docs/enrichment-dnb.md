@@ -50,7 +50,7 @@ You must be an [administrator](permissions.md#admin)  and have the credentials f
 
 1. Enter a name for the connection.
 
-1. Provide a valid Dun & Bradstreet credentials and Dun & Bradstreet project details *Region, Drop folder path, and Drop folder name*. You [get this information](#setting-up-your-dun--bradstreet-project) from the Dun & Bradstreet project.
+1. Provide valid Dun & Bradstreet credentials and Dun & Bradstreet project details *Region, Drop folder path, and Drop folder name*. You [get this information](#setting-up-your-dun--bradstreet-project) from the Dun & Bradstreet project.
 
 1. Review and provide your consent for [Data privacy and compliance](#data-privacy-and-compliance) by selecting **I agree**.
 
@@ -85,14 +85,14 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Define which fields fields from your unified profiles to use to look for matching company data from Dun & Bradstreet. Either **DUNS number** or **Name of company** and **Country** fields are required. The country field supports [two or three letter country codes](https://www.iso.org/iso-3166-country-codes.html), country name in English, country name in native language, and phone prefix. Some common country variants include:
 
-- US: United States of America, United States, USA, America.
-- CA: Canada.
-- GB: United Kingdom, UK, Great Britain, GB, United Kingdom of Great Britain and Northern Ireland, United Kingdom of Great Britain.
-- AU: Australia, Commonwealth of Australia.
-- FR: France, French Republic.
-- DE: Germany, German, Deutschland, Allemagne, Federal Republic of Germany, Republic of Germany.
+   - US: United States of America, United States, USA, America.
+   - CA: Canada.
+   - GB: United Kingdom, UK, Great Britain, GB, United Kingdom of Great Britain and Northern Ireland, United Kingdom of Great Britain.
+   - AU: Australia, Commonwealth of Australia.
+   - FR: France, French Republic.
+   - DE: Germany, German, Deutschland, Allemagne, Federal Republic of Germany, Republic of Germany.
 
-   :::image type="content" source="media/enrichment-dnb-mapping.png" alt-text="Dun & Bradstreet field-mapping pane.":::
+      :::image type="content" source="media/enrichment-dnb-mapping.png" alt-text="Dun & Bradstreet field-mapping pane.":::
 
 1. Select **Next** to complete the field mapping.
 
