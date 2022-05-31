@@ -19,20 +19,26 @@ searchScope:
 
 Dynamics 365 Customer Insights provides connections to bring data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md), generate insights, and activate the data for building personalized experiences.
 
-## Add a data source
+## Add data sources
 
-**Attach a data source**:
+You can attach or import data sources into Customer Insights.
+
+**Attach a data source**
+
+If you have data prepared in one of Microsoft's Azure data services, Customer Insights can easily connect to the data source without having to re-ingest the data. Select one of the following options:
 - [Azure Data Lake Storage (csv or parquet files in a Common Data Model folder)](connect-common-data-model.md)
 - [Azure Synapse Analytics (Lake databases)](connect-synapse.md)
 - [Microsoft Dataverse data lake](connect-dataverse-managed-lake.md)
 
-**Import and transform**:
-- [Power Query connectors](connect-power-query.md) 
+**Import and transform**
 
-## Review ingested data
+If you use on-premise data sources, Microsoft or third-party data, you can import and transform the data using Power Query connectors.
+- [Power Query connectors](connect-power-query.md)
 
-If your environment was configured to use Customer Insights storage and use Power Platform dataflows (PPDFs), you can view shared data sources and data sources managed by others. The **Data Sources** page lists the data sources in three sections:
-- **Shared**: Data sources that can be managed by all Customer Insights admins. Power Platform dataflows (PPDFs),  your own storage account, and attaching to a Dataverse-managed data lake are examples of shared data sources.
+## Review data sources
+
+If your environment was configured to use Customer Insights storage and you use on-premise data sources, you use Power Platform dataflows (PPDFs). With PPDFs, you can view shared data sources and data sources managed by others. The **Data Sources** page lists the data sources in three sections:
+- **Shared**: Data sources that can be managed by all Customer Insights admins. Power Platform dataflows (PPDFs), your own storage account, and attaching to a Dataverse-managed data lake are examples of shared data sources.
 - **Managed by me**: PPDFs created and managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.
 - **Managed by others**: PPDFs created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.
 > [!NOTE]
@@ -48,7 +54,7 @@ Go to **Data** > **Data sources** to view the name of each ingested data source,
 
 Loading data can take time. After a successful refresh, the ingested data can be reviewed from the **Entities** page. For more information, see [Entities](entities.md).
 
-## Refresh a data source
+## Refresh data sources
 
 Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premise data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules which are set up during data ingestion. For attached data sources, data ingestion consumes the latest data available from that data source.
 

@@ -18,7 +18,7 @@ searchScope:
 
 # Connect to data in Azure Data Lake storage
 
-This article provides information on how to ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Storage Gen2 account.
+This article provides information on how to ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Storage Gen2 account. Data ingestion can be full or incremental.
 
 ## Prerequisites
 
@@ -75,14 +75,15 @@ This article provides information on how to ingest data into Dynamics 365 Custom
    > [!TIP]
    > To edit the entities in a JSON editing interface, select **Show more** > **Edit schema file**. Make changes and select **Save**.
 
+1. For selected entities that require incremental ingestion, **Required** displays under **Incremental refresh**. For each of these entities, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
+
 1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
    1. Select **Required**. The **Edit entity** panel displays.
-   1. Choose the **Primary key**.
+   1. Choose the **Primary key**. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
    1. Optionally, change the partition pattern.
-   1. If an incremental refresh is required or to enable an incremental refresh, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
-   1. Select **X** to save and close the panel.
+   1. Select **Close** to save and close the panel.
 
-1. Select **Attributes**. The Manage attributes page displays.
+1. Select **Attributes** for each included entity. The Manage attributes page displays.
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
@@ -108,23 +109,31 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Select **Save**.
 
-1. Select **define the attributes** to add the attributes, or select **auto generate them**.
+   :::image type="content" source="media/ADLS_new_entity_define_attributes.png" alt-text="Dialog box to define or auto generate attributes.":::
 
-1. Select **Review attributes** to ensure the data format is correct for each attribute. The Manage attributes page displays.
+1. Select **define the attributes** to add the attributes, or select **auto generate them**. To manually define the attributes, enter a name, select the data format and optional semantic type. For auto-generated attributes:
 
-1. To enable analytics and other capabilities, select **Data profiling** for the whole entity or for specific attributes and then select **Done**. By default, no entity is enabled for data profiling.
+   1. Select **Review attributes**. The Manage attributes page displays.
 
-   :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
+   1. Ensure the data format is correct for each attribute.
 
-1. Select **Include** to include the entity in the data source ingestion.
+   1. To enable analytics and other capabilities, select **Data profiling** for the whole entity or for specific attributes. By default, no entity is enabled for data profiling.
 
-1. Continue to add entities, if applicable.
+      :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
+
+   1. Select **Done**. The **Select entities** page displays.
+
+1. Continue to add entities and attributes, if applicable.
+
+1. After all entities have been added, select **Include** to include the entity in the data source ingestion.
+
+1. For selected entities that require incremental ingestion, **Required** displays under **Incremental ingestion**. For each of these entities, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
 
 1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
-   1. Select **Required**.
-   1. Choose the **Primary key**.
-   1. To enable an incremental refresh or if the entity requires incremental data support, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
-   1. Select **X** to save and close the panel.
+   1. Select **Required**. The **Edit entity** panel displays.
+   1. Choose the **Primary key**. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
+   1. Optionally, change the partition pattern.
+   1. Select **Close** to save and close the panel.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
@@ -158,7 +167,8 @@ You can update the *Connect to storage account using* option. For more informati
    - To remove any already selected entities if there are no dependencies, select the entity and **Delete**.
       > [!IMPORTANT]
       > If there are dependencies on the existing model.json or manifest.json file and the set of entities, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
-   - To edit an entity, change the [incremental refresh](incremental-refresh-data-sources.md), or run a one-time full refresh, select **Edit**.
+   - To change data file location or the primary key, select **Edit**.
+   - To change the incremental ingestion data, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md)
 
      :::image type="content" source="media/data_sources_editADLS_entity.png" alt-text="Dialog box to edit an entity":::
 
