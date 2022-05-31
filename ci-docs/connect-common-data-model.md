@@ -131,7 +131,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 ## Edit an Azure Data Lake storage data source
 
-You can update the *Connect to storage account using* option from an account key connection to a resource-based or a subscription-based connection. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
+You can update the *Connect to storage account using* option. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
 
 1. Go to **Data** > **Data sources**.
 
@@ -149,7 +149,7 @@ You can update the *Connect to storage account using* option from an account key
         > - Storage Blob Data Owner
         > - Storage Blob Data Contributor
 
-   - **Enable private link** (for Azure resource or subscription connections) if you want to ingest data using an Azure Private link. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Enable private link** (for Azure resource or subscription connections) if you want to ingest data from a storage account through an Azure Private link. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
 
 1. Select **Next**.
 1. Change any of the following:
