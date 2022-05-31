@@ -63,7 +63,7 @@ For more information, see [Work with tags and columns](work-with-tags-columns.md
 If your environment uses Azure Data Lake Storage to store Customer Insights data, data sharing with Microsoft Dataverse needs some extra configuration.
 Earlier, you could only enable data sharing with Dataverse when your data was stored in our managed data lake.
 
-For more information, see [Enable data sharing with Dataverse from your own Azure Data Lake Storage (Preview)](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
+For more information, see [Enable data sharing with Dataverse from your own Azure Data Lake Storage (Preview)](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ### New export destinations: Iterable and Braze
 
@@ -77,7 +77,6 @@ Changing APIs in connected services lead to updates for connectors to run reliab
 
 - Google Ads: The new version of the Google Ads export connector simplifies the authentication experience and now lets you create new Google Ads audiences automatically. 
 - Marketo: The new version of the Marketo export connector provides support for the Marketo ID, enabling you to avoid data duplication, update existing records, and create new records in Marketo. 
-
 
 ## February 2022 updates
 

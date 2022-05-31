@@ -38,9 +38,9 @@ If you don't want to use an existing Dataverse environment, the system creates a
 
 **Enable data sharing** with Dataverse by selecting the data sharing checkbox.
 
-If you are using your own Data Lake Storage account, you also need the **Permissions identifie**r. For more information how to get the permission identifier, review the following section.
+If you are using your own Data Lake Storage account, you also need the **Permissions identifier**. For more information how to get the permission identifier, review the following section.
 
-## Enable data sharing with Dataverse when using your own storage account (Preview)
+## Enable data sharing with Dataverse from your own storage account (Preview)
 
 Enabling data sharing with Microsoft Dataverse when your environment [uses your own Azure Data Lake Storage account](own-data-lake-storage.md) needs some extra configuration. The user setting up the Customer Insights environment must have at least **Storage Blob Data Reader** permissions on the *CustomerInsights* container in the Azure Data Lake Storage account.
 
