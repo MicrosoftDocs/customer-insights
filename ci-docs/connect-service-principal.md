@@ -1,7 +1,7 @@
 ---
 title: "Connect to an Azure Data Lake Storage account by using a service principal"
 description: "Use an Azure service principal to connect to your own data lake."
-ms.date: 04/26/2022
+ms.date: 05/31/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -33,7 +33,7 @@ Before creating a new service principal for Customer Insights, check whether it 
 
 2. From **Azure services**, select **Azure Active Directory**.
 
-3. Under **Manage**, select **Enterprise Applications**.
+3. Under **Manage**, select **Microsoft Application**.
 
 4. Add a filter for **Application ID start with** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` or search for the name `Dynamics 365 AI for Customer Insights`.
 
