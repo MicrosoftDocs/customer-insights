@@ -38,7 +38,7 @@ If you don't want to use an existing Dataverse environment, the system creates a
 
 **Enable data sharing** with Dataverse by selecting the data sharing checkbox.
 
-If you are using your own Data Lake Storage account, you also need the **Permissions identifie**r. For more information how to get the permission identifier, see [Enable data sharing with Dataverse (Preview)](#enable-data-sharing-with-dataverse-preview).
+If you are using your own Data Lake Storage account, you also need the **Permissions identifie**r. For more information how to get the permission identifier, review the following section.
 
 ## Enable data sharing with Dataverse when using your own storage account (Preview)
 
