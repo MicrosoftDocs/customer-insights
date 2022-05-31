@@ -54,11 +54,8 @@ Customer Insights allows incremental refresh for data sources imported through P
 
 ## Configure incremental refresh for Azure Data Lake data sources
 
-For entities that require incremental ingestion and refresh, configure the entity when adding the Azure Data Lake data source or later when editing the data source.
+For entities that require incremental ingestion and refresh, configure the entity when adding the Azure Data Lake data source or later when editing the data source. The entity data folder must contain the following folders:
 
-**Prerequisites**
-
-For incremental data support for an entity, the entity data folder must contain the following folders:
 - **FullData**: Folder with data files containing initial records
 - **IncrementalData**: Folder with date/time hierarchy folders in **yyyy/mm/dd/hh** format containing the incremental updates. **hh** represents the UTC hour of the updates and contains the **Upserts** and **Deletes** folders. **Upserts** contains data files with updates to existing records or new records. **Deletes** contains data files with records to be removed.
 
@@ -66,7 +63,7 @@ For incremental data support for an entity, the entity data folder must contain 
 
 1. Review the attributes. Make sure a created or last updated date attribute is set up with a *dateTime* **Data format** and a *Calendar.Date* **Semantic type**. Edit the attribute if necessary and select **Done**.
 
-1. From the **Select Entities** pane, edit the entity. The **Incremental ingestion** checkbox is selected
+1. From the **Select Entities** pane, edit the entity. The **Incremental ingestion** checkbox is selected.
 
    :::image type="content" source="media/ADLS_inc_refresh.png" alt-text="Configure entities in a data source for incremental refresh.":::
 

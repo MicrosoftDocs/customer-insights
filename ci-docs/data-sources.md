@@ -21,7 +21,7 @@ Dynamics 365 Customer Insights provides connections to bring data from a broad s
 
 ## Add data sources
 
-You can attach or import data sources into Customer Insights.
+You can attach or import data sources into Customer Insights. Select one of the following links to add data sources.
 
 **Attach a data source**
 
@@ -32,7 +32,7 @@ If you have data prepared in one of Microsoft's Azure data services, Customer In
 
 **Import and transform**
 
-If you use on-premise data sources, Microsoft or third-party data, you can import and transform the data using Power Query connectors.
+If you use on-premise data sources, Microsoft, or third-party data, you can import and transform the data using Power Query connectors.
 - [Power Query connectors](connect-power-query.md)
 
 ## Review data sources

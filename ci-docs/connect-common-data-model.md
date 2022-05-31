@@ -51,7 +51,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Enter a **Name** for the data source and an optional **Description**. The name uniquely identifies the data source and is referenced in downstream processes. The name can't be changed.
 
-1. Choose one of the following options for **Connect your storage using**. For a resource or a subscription-based option for authentication, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
+1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
    - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
@@ -70,7 +70,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Select the entities you want to include.
 
-   :::image type="content" source="media/deltalake_required.png" alt-text="Dialog box showing Required for Primary key":::
+   :::image type="content" source="media/ADLS_required.png" alt-text="Dialog box showing Required for Primary key":::
 
    > [!TIP]
    > To edit the entities in a JSON editing interface, select **Show more** > **Edit schema file**. Make changes and select **Save**.
@@ -113,7 +113,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Select **define the attributes** to add the attributes, or select **auto generate them**. To manually define the attributes, enter a name, select the data format and optional semantic type. For auto-generated attributes:
 
-   1. Select **Review attributes**. The Manage attributes page displays.
+   1. After the attributes are auto-generated, select **Review attributes**. The Manage attributes page displays.
 
    1. Ensure the data format is correct for each attribute.
 
@@ -125,7 +125,9 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Continue to add entities and attributes, if applicable.
 
-1. After all entities have been added, select **Include** to include the entity in the data source ingestion.
+1. After all entities have been added, select **Include** to include the entities in the data source ingestion.
+
+   :::image type="content" source="media/ADLS_required.png" alt-text="Dialog box showing Required for Primary key":::
 
 1. For selected entities that require incremental ingestion, **Required** displays under **Incremental ingestion**. For each of these entities, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
 
@@ -169,8 +171,6 @@ You can update the *Connect to storage account using* option. For more informati
       > If there are dependencies on the existing model.json or manifest.json file and the set of entities, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
    - To change data file location or the primary key, select **Edit**.
    - To change the incremental ingestion data, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md)
-
-     :::image type="content" source="media/data_sources_editADLS_entity.png" alt-text="Dialog box to edit an entity":::
 
 1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
 

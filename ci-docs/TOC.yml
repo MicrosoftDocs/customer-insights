@@ -59,12 +59,12 @@
       href: data-sources.md
     - name: Connect to data in Azure Data Lake storage
       href: connect-common-data-model.md
-    - name: Add data sources via Power Query connectors
-      href: connect-power-query.md
-    - name: Connect to data in a Microsoft Dataverse managed data lake
-      href: connect-dataverse-managed-lake.md
     - name: Connect to Azure Synapse Analytics
       href: connect-synapse.md
+    - name: Connect to data in a Microsoft Dataverse managed data lake
+      href: connect-dataverse-managed-lake.md
+    - name: Add data sources via Power Query connectors
+      href: connect-power-query.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
     - name: Incremental refresh for data sources
