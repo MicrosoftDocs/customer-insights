@@ -1,7 +1,7 @@
 ---
-title: "Create a new environment in Customer Insights"
-description: "Steps to create environments with a licensed subscription for Dynamics 365 Customer Insights."
-ms.date: 05/19/2022
+title: How to - Create a new environment
+description: Steps to create environments with for Dynamics 365 Customer Insights.
+ms.date: 05/31/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -14,18 +14,20 @@ searchScope:
   - customerInsights
 ---
 
-# Create a new environment
+# How to: Create a new environment
 
-After [purchasing a subscription license for Dynamics 365 Customer Insights](paid-license.md), the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started.
+After [purchasing a subscription license for Dynamics 365 Customer Insights](paid-license.md), the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started. In this scenario, you can go directly to [Step 1: Provide basic information](#step-1-provide-basic-information).
 
-Organizations can create multiple environments for every Customer Insights license. If your organization purchases more than one license, [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, review the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+After the first environment is created, the global administrator of the Microsoft 365 tenant can [add other users form their organization as administrators](permissions.md) in Customer Insights. Moving forward, these administrators can create new environment or change existing environments. If your organization purchases more than one license for Customer Insights, [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, review the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 > [!TIP]
 > If you're looking to try the service, see [Set up a trial environment](trial-signup.md).
 
+## Prerequisites
+
 You need [administrator permissions](permissions.md) in Customer Insights to create or manage environments.
 
-## How to create a new environment
+## Start the environment creation process
 
 1. Open the environment picker and select **+ New**.
   
