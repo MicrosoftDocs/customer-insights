@@ -19,7 +19,6 @@ By connecting Customer Insights data with Marketing, you can:
 - Load data from Marketing into Customer Insights and combine it with customer data from other sources.
 - Apply Customer Insights data cleansing, enrichment, and fuzzy matching tools.
 
-
 ## Use rich customer profiles in real-time marketing
 
 Real-time marketing allows you to create [custom triggers](/dynamics365/marketing/real-time-marketing-custom-triggers) that launch customer journeys based on any customer action. The more personalized your data, the more relevant and personalized your journeys will be. This is what makes combining Marketing and Customer Insights so powerful. You can [unify data](data-unification.md) from any source, then use it to fuel hyper-personalized customer journeys.

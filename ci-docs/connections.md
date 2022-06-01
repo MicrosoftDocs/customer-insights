@@ -65,7 +65,7 @@ When setting up or editing an export connection, you choose which users are allo
 
 1. Go to the **Connections** tab.
 
-1. Select the vertical ellipsis for the connection you want to edit.
+1. Select the vertical ellipsis (&vellip;) for the connection you want to edit.
 
 1. Select **Edit**.
 
@@ -81,7 +81,7 @@ Detached enrichments and exports become inactive. You reactivate them by adding 
 
 1. Go to the **Connections** tab.
 
-1. Select the vertical ellipsis for the connection you want to remove.
+1. Select the vertical ellipsis (&vellip;) for the connection you want to remove.
 
 1. Select **Remove** from the dropdown menu. A confirmation dialog appears.
 

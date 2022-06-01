@@ -57,7 +57,7 @@ As the owner of an environment, you can reset an environment to an empty state i
 
 1. Select the **Environment** picker in the header of the app.
 
-1. Select the environment you want to reset and select the ellipsis (**...**).
+1. Select the environment you want to reset and select the vertical ellipsis (&vellip;).
 
 1. Choose the **Reset** option.
 
@@ -73,7 +73,7 @@ As the owner of an environment, you can delete an environment you administer.
 
 1. Select the **Environment** picker in the header of the app.
 
-1. Select the environment you want to reset and select the ellipsis (**...**).
+1. Select the environment you want to reset and select the vertical ellipsis (&vellip;). 
 
 1. Choose the **Delete** option.
 

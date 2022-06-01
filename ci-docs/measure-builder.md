@@ -84,7 +84,7 @@ You can create measures on the level of individual customers (customer attribute
 
 1. To add more calculations for the measure, select **New calculation**. You can only use entities on the same entity path for new calculations. More calculations will show as new columns in the measure output entity.
 
-1. Select **...** on the calculation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.
+1. Select the vertical ellipsis (&vellip;) on the calculation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.
 
 1. In the **Preview** area, you'll see the data schema of the measure output entity, including filters and dimensions. The preview reacts dynamically to changes in the configuration.
 
@@ -154,7 +154,7 @@ You can create measures on the level of individual accounts (customer measure) o
    1. Select **Relationship path** and choose the entity path that should be used to identify your measure. If there's only a single path to the *Customer* entity, this control won't show.
    1. Select **Done** to apply your selection.
 
-1. Select **...** on the calculation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.
+1. Select the vertical ellipsis (&vellip;) on the calculation to **Duplicate**, **Rename**, or **Remove** a calculation from a measure.
 
 1. In the **Preview** area, you'll see the data schema of the measure output entity, including filters and dimensions. The preview reacts dynamically to changes in the configuration.
 
