@@ -61,7 +61,7 @@ There are three types of roles:
 ## Admin (owner)
 
 - All permissions available to the Admin.
-- [Reset and delete](manage-environments.md#reset-an-existing-environment) the environment.
+- [Reset and delete](manage-environments.md#reset-an-existing-environment-preview) the environment.
 
 ## Assign roles and permissions
 

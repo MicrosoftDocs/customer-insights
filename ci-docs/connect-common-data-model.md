@@ -2,10 +2,8 @@
 title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
 ms.date: 05/30/2022
-
-ms.subservice: audience-insights
 ms.topic: how-to
-author: matgos
+author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 manager: shellyha
@@ -22,13 +20,13 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 ## Prerequisites
 
-- Data ingestion supports Azure Data Lake *Gen2* storage accounts exclusively. You can't use Azure Data Lake Gen1 storage accounts to ingest data.
+- Data ingestion supports Azure Data Lake Storage *Gen2* accounts exclusively. You can't use Data Lake Storage Gen1 accounts to ingest data.
 
-- The Azure Data Lake storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). The data must be stored in a hierarchical folder format that defines the root folder and has subfolders for each entity. The subfolders can have full data or incremental data folders.
+- The Azure Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). The data must be stored in a hierarchical folder format that defines the root folder and has subfolders for each entity. The subfolders can have full data or incremental data folders.
 
 - To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-- The Azure Data Lake you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in Customer Insights.
+- The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in Customer Insights.
 
 - Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
@@ -37,9 +35,9 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
 
-- Data in your Azure Data Lake must follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the entities such as entity columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
+- Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the entities such as entity columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
-## Connect to Azure Data Lake storage
+## Connect to Azure Data Lake Storage
 
 1. Go to **Data** > **Data sources**.
 
@@ -53,8 +51,14 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+  
+   > [!NOTE]
+   > You need one of the following roles either to the container or the storage account to create the data source:
+   >
+   >  - Storage Blob Data Reader is sufficient to read from a storage account and ingest the data to Customer Insights. 
+   >  - Storage Blob Data Contributor or Owner is required if you want to edit the manifest files directly in Customer Insights.  
   
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
    > [!NOTE]
@@ -83,7 +87,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
    1. Optionally, change the partition pattern.
    1. Select **Close** to save and close the panel.
 
-1. Select the number of **Attributes** for each included entity. The Manage attributes page displays.
+1. Select the number of **Attributes** for each included entity. The **Manage attributes** page displays.
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
@@ -99,7 +103,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 1. Enter a name for the file and select **Save**.
 
-1. Select **New entity**. The New Entity panel displays.
+1. Select **New entity**. The **New Entity** panel displays.
 
 1. Enter the entity name and choose the **Data files location**.
    - **Multiple .csv or .parquet files**: Browse to the root folder, select the pattern type, and enter the expression.
@@ -113,7 +117,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 1. Select **define the attributes** to manually add the attributes, or select **auto generate them**. To define the attributes, enter a name, select the data format and optional semantic type. For auto-generated attributes:
 
-   1. After the attributes are auto-generated, select **Review attributes**. The Manage attributes page displays.
+   1. After the attributes are auto-generated, select **Review attributes**. The **Manage attributes** page displays.
 
    1. Ensure the data format is correct for each attribute.
 
@@ -160,7 +164,7 @@ You can update the *Connect to storage account using* option. For more informati
         > - Storage Blob Data Owner
         > - Storage Blob Data Contributor
 
-   - **Enable private link** if you want to ingest data from a storage account through an Azure Private link. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
 
 1. Select **Next**.
 1. Change any of the following:

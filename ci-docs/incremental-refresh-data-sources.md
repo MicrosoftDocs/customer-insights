@@ -6,7 +6,7 @@ ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
+author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
 searchScope: 
@@ -54,7 +54,7 @@ Customer Insights allows incremental refresh for data sources imported through P
 
 ## Configure incremental refresh for Azure Data Lake data sources
 
-For entities that require incremental ingestion and refresh, configure the entity when adding the Azure Data Lake data source or later when editing the data source. The entity data folder must contain the following folders:
+Customer Insights allows incremental refresh for data sources connected to Azure Data Lake Storage. To use incremental ingestion and refresh for an entity, configure that entity when adding the Azure Data Lake data source or later when editing the data source. The entity data folder must contain the following folders:
 
 - **FullData**: Folder with data files containing initial records
 - **IncrementalData**: Folder with date/time hierarchy folders in **yyyy/mm/dd/hh** format containing the incremental updates. **hh** represents the UTC hour of the updates and contains the **Upserts** and **Deletes** folders. **Upserts** contains data files with updates to existing records or new records. **Deletes** contains data files with records to be removed.

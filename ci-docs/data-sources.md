@@ -1,11 +1,11 @@
 ---
 title: "Use data sources to ingest data"
 description: "Learn how to import data from various sources."
-ms.date: 05/09/2022
+ms.date: 05/31/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
-author: adkuppa
+author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 manager: shellyha
@@ -37,14 +37,14 @@ If you use on-premise data sources, Microsoft, or third-party data, import and t
 
 ## Review data sources
 
-If your environment was configured to use Customer Insights storage and you use on-premise data sources, you use Power Platform dataflows (PPDFs). With PPDFs, you can view shared data sources and data sources managed by others. The **Data Sources** page lists the data sources in three sections:
-- **Shared**: Data sources that can be managed by all Customer Insights admins. Power Platform dataflows (PPDFs), your own storage account, and attaching to a Dataverse-managed data lake are examples of shared data sources.
-- **Managed by me**: PPDFs created and managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.
-- **Managed by others**: PPDFs created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.
+If your environment was configured to use Customer Insights storage and you use on-premise data sources, you use Power Platform dataflows. With Power Platform dataflows, you can view shared data sources and data sources managed by others. The **Data Sources** page lists the data sources in three sections:
+- **Shared**: Data sources that can be managed by all Customer Insights admins. Power Platform dataflows, your own storage account, and attaching to a Dataverse-managed data lake are examples of shared data sources.
+- **Managed by me**: Power Platform dataflows created and managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.
+- **Managed by others**: Power Platform dataflows created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.
 > [!NOTE]
-> All entities can be viewed and used by other users. User contextuality applies only to the data sources and not to the entities that result from these dataflows.
+> All entities can be viewed and used by other users. While data sources are owned by the user who created them, the resulting entities from the data ingestion can be used by every user of Customer Insights.
 
-If your environment does not use PPDFs, the **Data Sources** page contains only a list of all data sources. No sections display.
+If your environment does not use Power Platform dataflows, the **Data Sources** page contains only a list of all data sources. No sections display.
 
 Go to **Data** > **Data sources** to view the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by every column.
 
