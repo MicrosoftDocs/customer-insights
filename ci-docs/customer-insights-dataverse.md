@@ -204,6 +204,7 @@ This table contains segment membership information of the customer profiles.
 | msdynci_identifier  | String   | Unique identifier of the segment membership record. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
 | msdynci_segmentmembershipid | GUID      | Deterministic GUID generated from `msdynci_identifier`          |
 
+<!--
 ## FAQ: Update existing environments to use Microsoft Dataverse
 
 Between mid-May 2022 and June 13, 2022, administrators can update the environment settings with a Dataverse environment that Customer Insights can use. On June 13, 2022, your environment will be updated automatically and we'll create a Dataverse environment on your tenant for you.
@@ -232,3 +233,4 @@ Between mid-May 2022 and June 13, 2022, administrators can update the environmen
     - Insufficient capacity. There's no more capacity to create more environments. For more information, see [Manage capacity action](/power-platform/admin/capacity-storage#actions-to-take-for-a-storage-capacity-deficit).
     - Region mismatch between tenant region and Customer Insights environment region in the Australia and India regions.
     - Insufficient privileges to provision Dataverse. The users starting the update needs a Dynamics 365 admin role.
+    - -->
