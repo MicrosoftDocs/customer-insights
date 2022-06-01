@@ -2,8 +2,6 @@
 title: "Connect Common Data Model data to an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
 ms.date: 05/30/2022
-
-ms.subservice: audience-insights
 ms.topic: how-to
 author: matgos
 ms.author: mukeshpo
@@ -55,6 +53,12 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
    - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private link, select **Enable Private link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+  
+   > [!NOTE]
+   > You need one of the following roles either to the container on the storage account to create the data source:
+   >
+   >  - Storage Blob Data Reader is sufficient to read from a storage account and ingest the data to Customer Insights. 
+   >  - Storage Blob Data Contributor or Owner is required if you want to edit the manifest files directly in Customer Insights.  
   
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
    > [!NOTE]
