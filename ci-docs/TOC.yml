@@ -55,7 +55,7 @@
   items:
     - name: Data sources overview
       href: data-sources.md
-    - name: Connect to data in Azure Data Lake storage
+    - name: Connect to data in Azure Data Lake Storage
       href: connect-common-data-model.md
     - name: Connect to Azure Synapse Analytics
       href: connect-synapse.md

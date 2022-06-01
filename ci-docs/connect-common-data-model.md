@@ -14,7 +14,7 @@ searchScope:
   - customerInsights
 ---
 
-# Connect to data in Azure Data Lake storage
+# Connect to data in Azure Data Lake Storage
 
 Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Storage Gen2 account. Data ingestion can be full or incremental.
 
@@ -144,7 +144,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
 
-## Edit an Azure Data Lake storage data source
+## Edit an Azure Data Lake Storage data source
 
 You can update the *Connect to storage account using* option. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
 
