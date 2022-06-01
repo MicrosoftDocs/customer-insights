@@ -58,9 +58,9 @@ You can extend the trial in the app directly. You can extend your trial once.
 
 Generally, we recommend starting fresh with your own data when upgrading to the paid version of Customer Insights. 
 
-Optionally, if you only use Customer Insights, you can copy your data from a trial environment if you purchase Customer Insights. You must be the administrator of the Customer Insights trial and the global admin of your Microsoft 365 tenant, or the Dynamics 365 administrator in your organization to migrate the settings from a trial environment to a paid environment. 
+Optionally, if you only use Customer Insights, you can copy your data from a trial environment if you purchase Customer Insights. You must be the administrator of the Customer Insights trial and the global admin of your Microsoft 365 tenant, or the Dynamics 365 administrator in your organization to migrate the settings from a trial environment to a paid environment.
 
-After signing in to your paid instance of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration](manage-environments.md#copy-the-environment-configuration).
+After signing in to your paid instance of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration](create-environment.md#copy-the-environment-configuration).
 
 ### What are the trial limits and quotas?
 
@@ -77,9 +77,10 @@ After you sign up for the trial, you will arrive on the app's main screen. The m
 
 Most features of the Customer Insights capabilities are available in the trial.
 
-The following features are **not available**: 
+The following features are **not available**:
+
 - You can't create new environments that use your own Azure Data Lake storage account.
-- You can't delete the trial environment. 
+- You can't delete the trial environment.
 
 ### How long does the trial last?
 
