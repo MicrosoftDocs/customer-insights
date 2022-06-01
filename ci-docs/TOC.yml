@@ -281,15 +281,14 @@
   items: 
     - name: Create a new environment
       href: create-environment.md
-    - name: Manage environment settings
-      href: manage-environments.md
-    - name: Use your own Azure Data Lake Storage
-      href: own-data-lake-storage.md
-    - name: Connect to a storage account using Service Principal
-      href: connect-service-principal.md
     - name: Connect to Microsoft Dataverse
       href: customer-insights-dataverse.md
-
+    - name: Use your own Azure Data Lake Storage
+      href: own-data-lake-storage.md
+    - name: Manage environment settings
+      href: manage-environments.md
+    - name: Connect to a storage account using Service Principal
+      href: connect-service-principal.md
 
 - name: Administration
   items:
