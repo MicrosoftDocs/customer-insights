@@ -15,7 +15,7 @@ searchScope:
 
 # Connect to data in a Microsoft Dataverse managed data lake
 
-This article provides information on how Dataverse users can quickly connect to analytical entities in a Microsoft Dataverse managed lake. 
+Microsoft Dataverse users can quickly connect to analytical entities in a Microsoft Dataverse managed lake.
 
 > [!NOTE]
 > You must be an admin on the Dataverse organization to proceed and view the list of entities available in the managed lake.

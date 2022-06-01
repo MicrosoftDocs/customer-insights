@@ -19,16 +19,14 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 ## Prerequisites
 
-The following prerequisites must be met to configure the connection from Dynamics 365 Customer Insights to Azure Synapse.
-
 > [!IMPORTANT]
 > Make sure to set all **role assignments** as described.  
 
-## Prerequisites in Customer Insights
+**In Customer Insights**:
 
 * You have an **Administrator** role in Customer Insights. Learn more about [user permissions in Customer Insights](permissions.md#assign-roles-and-permissions).
 
-In Azure:
+**In Azure**:
 
 - An active Azure subscription.
 

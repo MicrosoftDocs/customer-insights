@@ -18,7 +18,7 @@ searchScope:
 
 # Connect to data in Azure Data Lake storage
 
-This article provides information on how to ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Storage Gen2 account. Data ingestion can be full or incremental.
+Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Storage Gen2 account. Data ingestion can be full or incremental.
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 - To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-- The Azure Data Lake you want to connect and ingest data from have to be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in Customer Insights.
+- The Azure Data Lake you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights environment. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in Customer Insights.
 
 - Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
@@ -49,7 +49,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
    :::image type="content" source="media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake." lightbox="media/data_sources_ADLS.png":::
 
-1. Enter a **Name** for the data source and an optional **Description**. The name uniquely identifies the data source and is referenced in downstream processes. The name can't be changed.
+1. Enter a **Name** for the data source and an optional **Description**. The name uniquely identifies the data source and is referenced in downstream processes and can't be changed.
 
 1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
@@ -83,7 +83,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
    1. Optionally, change the partition pattern.
    1. Select **Close** to save and close the panel.
 
-1. Select **Attributes** for each included entity. The Manage attributes page displays.
+1. Select the number of **Attributes** for each included entity. The Manage attributes page displays.
 
    :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
 
@@ -103,7 +103,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
 1. Enter the entity name and choose the **Data files location**.
    - **Multiple .csv or .parquet files**: Browse to the root folder, select the pattern type, and enter the expression.
-   - **Single .csv or .parquet files***: Browse to the .csv or .parquet file and select it.
+   - **Single .csv or .parquet files**: Browse to the .csv or .parquet file and select it.
 
    :::image type="content" source="media/ADLS_new_entity_location.png" alt-text="Dialog box to create a new entity with Data files location highlighted.":::
 
@@ -111,7 +111,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
    :::image type="content" source="media/ADLS_new_entity_define_attributes.png" alt-text="Dialog box to define or auto generate attributes.":::
 
-1. Select **define the attributes** to add the attributes, or select **auto generate them**. To manually define the attributes, enter a name, select the data format and optional semantic type. For auto-generated attributes:
+1. Select **define the attributes** to manually add the attributes, or select **auto generate them**. To define the attributes, enter a name, select the data format and optional semantic type. For auto-generated attributes:
 
    1. After the attributes are auto-generated, select **Review attributes**. The Manage attributes page displays.
 
@@ -129,7 +129,7 @@ This article provides information on how to ingest data into Dynamics 365 Custom
 
    :::image type="content" source="media/ADLS_required.png" alt-text="Dialog box showing Required for Primary key":::
 
-1. For selected entities that require incremental ingestion, **Required** displays under **Incremental ingestion**. For each of these entities, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
+1. For selected entities that require incremental ingestion, **Required** displays under **Incremental refresh**. For each of these entities, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
 
 1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
    1. Select **Required**. The **Edit entity** panel displays.
@@ -160,7 +160,7 @@ You can update the *Connect to storage account using* option. For more informati
         > - Storage Blob Data Owner
         > - Storage Blob Data Contributor
 
-   - **Enable private link** (for Azure resource or subscription connections) if you want to ingest data from a storage account through an Azure Private link. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Enable private link** if you want to ingest data from a storage account through an Azure Private link. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
 
 1. Select **Next**.
 1. Change any of the following:
