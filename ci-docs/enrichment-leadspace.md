@@ -17,11 +17,28 @@ Leadspace is a data science company that provides a B-to-B Customer Data Platfor
 
 ## Prerequisites
 
-To configure Leadspace, the following prerequisites must be met:
+- An active Leadspace license.
+- [Unified customer profiles](customer-profiles.md) based on accounts.
+- A Leadspace [connection](connections.md) is [configured](#configure-the-connection-for-leadspace) by an administrator. Contact [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) directly for details about their product.
 
-- You have an active Leadspace license.
-- You have [unified customer profiles](customer-profiles.md) based on accounts.
-- A Leadspace connection has already been configured by an administrator or you have [administrator](permissions.md#admin) permissions and the “perpetual key” (referred to as **Leadspace token**). Contact [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) directly for details about their product.
+## Configure the connection for Leadspace
+
+You must be an [administrator](permissions.md#admin) in Customer Insights and have the “perpetual key” (referred to as **Leadspace token**).
+
+1. Select **Add connection** when configuring an enrichment or go to **Admin** > **Connections** and select **Set up** on the Leadspace tile.
+
+1. Enter a name for the connection and a valid Leadspace token.
+
+1. Review and provide your consent for [Data privacy and compliance](#data-privacy-and-compliance) by selecting **I agree**.
+
+1. Select **Verify** to validate the configuration and then select **Save**.
+
+   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="Leadspace connection configuration page.":::
+
+### Data privacy and compliance
+
+When you enable Dynamics 365 Customer Insights to transmit data to Leadspace, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Leadspace meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 ## Configure the enrichment
 
@@ -52,24 +69,6 @@ To configure Leadspace, the following prerequisites must be met:
 1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
 
 
-## Configure the connection for Leadspace 
-
-You need to be an administrator to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Leadspace tile.
-
-1. Select **Get Started**. 
-
-1. Enter a name for the connection in the **Display name** box.
-
-1. Provide a valid Leadspace token.
-
-1. Review and provide your consent for **Data privacy and compliance** by selecting **I agree**.
-
-1. Select **Verify** to validate the configuration.
-
-1. After completing the verification, select **Save**.
-   
-   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="Leadspace connection configuration page.":::
-
 ## Enrichment results
 
 After refreshing the enrichment, you can review the newly enriched company data under [My enrichments](enrichment-hub.md). You can find the time of the last update and the number of enriched profiles.
@@ -82,11 +81,6 @@ For more information, see [Leadspace APIs](https://support.leadspace.com/hc/en-u
 
 
 [!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
-
-## Data privacy and compliance
-
-When you enable Dynamics 365 Customer Insights to transmit data to Leadspace, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Leadspace meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

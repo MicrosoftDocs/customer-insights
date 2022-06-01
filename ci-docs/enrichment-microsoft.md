@@ -48,14 +48,7 @@ We calculate SoV on a 100-point scale. The total SoV across all brands or intere
 
 ## Supported countries or regions
 
-We currently support the following country/region options:
-
-- US: United States of America, United States, USA, US, America
-- CA: Canada, CA
-- GB: United Kingdom, UK, Great Britain, GB, United Kingdom of Great Britain and Northern Ireland, United Kingdom of Great Britain
-- AU: Australia, AU, Commonwealth of Australia
-- FR: France, FR, French Republic
-- DE: Germany, German, Deutschland, Allemagne, DE, Federal Republic of Germany, Republic of Germany
+We currently support the following country/region options: Australia, Canada (English), France, Germany, United Kingdom, or United States (English).
 
 ## Configure the enrichment
 
@@ -70,7 +63,7 @@ We currently support the following country/region options:
 
 1. Review the overview and then select **Next**.
 
-1. To change your country or region, select **Change** next to **Country/Region**. In the **Country/Region settings** pane, choose an option and select **Apply**.
+1. To change your country or region, select **Change** next to **Country/Region**. In the **Country/Region settings** pane, choose a [supported country/region](#supported-countries-or-regions) and select **Apply**.
 
    > [!NOTE]
    > When choosing your own brands, the system provides suggestions based on the selected country or region. When choosing an industry, you'll get the most relevant brands or interests based on the selected country or region.
@@ -92,15 +85,8 @@ We currently support the following country/region options:
 
 1. Map fields from your unified customer entity to define the demographics you want the system to use for enriching your customer data. Values are not case-sensitive
 
-   - **Date of Birth**: We recommend that date of birth is converted to DateTime type during data ingestion. Alternatively, it can be a string in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format "yyyy-MM-dd" or "yyyy-MM-ddTHH:mm:ss".
-   - **Gender**: Male, Female, Unknown.
-   - **Postal code**: Five-digit ZIP codes for United States, standard postal code everywhere else.
-   - **City**: City name in English.
-   - **State/Province**: Two-letter abbreviation for the US and Canada. Two- or three-letter abbreviation for Australia. Not applicable for France, Germany, or the UK.
-   - **Country/Region**: [Supported country or region](#supported-countries-or-regions)
-
    > [!NOTE]
-   > At least Date of Birth or Gender attributes are required. Country/Region and at least City (and State/Province) or Postal code are required.
+   > At least Date of Birth or Gender attributes are required. Country/Region and at least City (and State/Province) or Postal code are required. We recommend that date of birth is converted to DateTime type during data ingestion. Alternatively, it can be a string in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format "yyyy-MM-dd" or "yyyy-MM-ddTHH:mm:ss".
 
 1. Select **Next** to complete the field mapping.
 
@@ -120,11 +106,9 @@ After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichmen
 
 :::image type="content" source="media/my-enrichments.png" alt-text="Preview of results after running the enrichment process.":::
 
-**Affinity Level** or **Share of Voice** charts display. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** entities. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** entities. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
+Results include **Affinity Level** or **Share of Voice** charts. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** entities. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** entities. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
 
-A chart showing the number of enriched customers over time displays.
-
-The **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+A chart shows the number of enriched customers over time and the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
 
 ## See enrichment data on the customer card
 

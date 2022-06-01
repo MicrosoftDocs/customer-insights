@@ -50,7 +50,7 @@ You must be an [administrator](permissions.md#admin)  and have the credentials f
 
 1. Enter a name for the connection.
 
-1. Provide valid Dun & Bradstreet credentials and Dun & Bradstreet project details *Region, Drop folder path, and Drop folder name*. You [get this information](#setting-up-your-dun--bradstreet-project) from the Dun & Bradstreet project.
+1. Provide valid Dun & Bradstreet credentials and Dun & Bradstreet project details *Region, Drop folder path, and Drop folder name*. You [get this information](#set-up-your-dun--bradstreet-project) from the Dun & Bradstreet project.
 
 1. Review and provide your consent for [Data privacy and compliance](#data-privacy-and-compliance) by selecting **I agree**.
 
@@ -69,7 +69,7 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
-1. Select **Enrich my data** on the Dun & Bradstreet tile.
+1. Select **Enrich my data** on the **Company data** tile for Dun & Bradstreet.
 
    :::image type="content" source="media/enrichment-dnb-tile.png" alt-text="Screenshot of the Dun & Bradstreet tile.":::
 
