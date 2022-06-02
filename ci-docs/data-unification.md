@@ -2,13 +2,13 @@
 title: "Create a unified view of your customers"
 description: "Go through the data unification process with your data to create a single master dataset of account or customer profiles."
 recommendations: false
-ms.date: 05/13/2022
+ms.date: 06/02/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: overview
 author: v-wendysmith
-ms.author: mukeshpo
+ms.author: Scott-Stabbert
 manager: shellyha
 
 searchScope: 
@@ -22,10 +22,9 @@ After [setting up the data sources](data-sources.md), you can unify the data. Da
 
 Data can be unified on a single entity or multiple entities.
 
-
 # [Individual consumers (B-to-C)](#tab/b2c)
 
-Unification is performed in the following order:
+The unification process maps customer data from your data sources, removes duplicates, matches the data across entities, and creates a unified profile. Unification is performed in the following order:
 
 1. [Source fields](map-entities.md) (previously called Map): In the source fields step, select entities and fields to include in the unify process. Map fields to a common semantic type that describes the purpose of the field.
 
@@ -39,7 +38,12 @@ Unification is performed in the following order:
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-Account unification is performed in the following order:
+As with account unification, contact unification maps data from your data sources, removes duplicates, matches the data across entities, and creates a unified profile. In addition, in contact unification you apply semantic mapping and create a relationship between contacts and accounts. The account and contact files are unified separately.
+
+> [!NOTE]
+> Account and contact files must have a unique key that connects them. For example, an account ID that exists in the account file and contact file that ties the account and contact together.
+
+Unification is performed in the following order:
 
 1. [Source fields](map-entities.md) (previously called Map): In the source fields step, select entities and fields to include in the unify account process. Map fields to a common semantic type that describes the purpose of the field.
 
@@ -49,9 +53,11 @@ Account unification is performed in the following order:
 
 1. [Unified customer fields](merge-entities.md) (previously called Merge): In the unified customer fields step, determine which source fields should be included, excluded, or merged into a unified customer profile.  
 
-1. [Review](review-unification.md) and create the unified profile.
+1. For contact unification, [Define the semantic fields](data-unification-contacts.md#define-the-semantic-fields-for-unified-contacts).
 
-After account unification, perform [contact unification](data-unification-contacts.md).
+1. For contact unification, [Set the relationship between contacts and accounts](data-unification-contacts.md#set-the-relationship-between-contacts-and-accounts).
+
+1. [Review](review-unification.md) and create the unified profile.
 
 ---
 

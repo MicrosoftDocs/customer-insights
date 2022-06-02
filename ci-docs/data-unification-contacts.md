@@ -2,12 +2,12 @@
 title: "Create a unified view of your business contacts"
 description: "Go through the data unification process to create a single master dataset of contacts."
 recommendations: false
-ms.date: 05/27/2022
+ms.date: 06/02/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: overview
-author: v-wendysmith
+author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
 
@@ -80,8 +80,8 @@ This last step in the unification process shows a summary of the steps in the pr
 1. Select **Edit** on any of the contact unification steps to review and make any changes.
 
 1. If you are satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created. The unification algorithm takes some time to complete and you can't change the configuration until it completes.
-
-   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+  
+   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
 ### Review the results of contact unification
 

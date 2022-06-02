@@ -46,8 +46,8 @@ To review or change any unification settings once a unified profile has been cre
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
    - [Run matching conditions](#run-matching-conditions) to quickly evaluate the quality of your matching conditions (deduplication and match rules) without updating the unified profile. The **Run matching conditions only** option doesn't display for single entity.
-   - [Unify customer profiles](#run-updates-to-the-unified-customer-profile) to run matching conditions and update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
-   - [Unify customer profiles and dependencies](#run-updates-to-the-unified-customer-profile) to run matching conditions and update the unified customer profile entity and all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically.
+   - [Unify customer profiles](#run-updates-to-the-unified-profile) to run matching conditions and update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+   - [Unify customer profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions and update the unified customer profile entity and all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically.
 
 ## Edit source fields
 
