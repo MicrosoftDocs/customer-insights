@@ -1,7 +1,7 @@
 ---
-title: "New and upcoming features"
+title: "New and updated features"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 05/03/2022
+ms.date: 06/02/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
@@ -19,6 +19,37 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## May 2022 updates
+
+The updates in May 2022 include new features, performance upgrades, and bug fixes.
+
+### Updated data unification experience
+
+ Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. Data can be unified on a single entity or multiple entities. First, you [select entities and source fields](map-entities.md), [remove duplicate records](remove-duplicates.md), specify rules for [matching conditions](match-entities.md), and define which [fields to include in the unified customer profiles](merge-entities.md).
+
+For more information, see [Data unification overview](data-unification.md).
+
+### Refreshed home page in Customer Insights
+
+**Home** guides you through the configuration process for key features and provides an overview of segments, measures, and enrichment data. We've refreshed the experience to provide more relevant information at a glance.
+
+For more information, see [Explore Customer Insights](home.md).
+
+### Track usage of a segment
+
+If you use segments in apps, which are based on the same Microsoft Dataverse organization that is connected with Customer Insights, you can [track the usage of a segment](segments.md#track-usage-of-a-segment). For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
+
+### Export to Criteo
+
+Criteo is an online platform that helps users manage digital advertising. You can now export segments of unified customer profiles to generate campaigns, provide email marketing and use specific groups of customers with Criteo.
+
+For more information, see [Export segments to Criteo (preview)](export-criteo.md).
+
+### Refined documentation structure for environment creation
+
+We've revisited the help docs related to the creation and management of environments in Customer Insights. The articles are now grouped under the Environments node in the table of contents. The restructured articles provide more guidance for the different ways to set up environments and have a clearer structure. If you have feedback to share, please let us know via the controls towards the end of the help articles.
+
+For more information, see [How to: Create a new environment](create-environment.md).
 
 ## April 2022 updates
 
