@@ -1,7 +1,7 @@
 ---
 title: "Update the unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the unification settings."
-ms.date: 05/04/2022
+ms.date: 06/01/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -39,8 +39,8 @@ To review or change any unification settings once a unified profile has been cre
 
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
 
+   - To evaluate the quality of your matching conditions (deduplication and match rules) without updating the unified profile, see [Run matching conditions](#run-matching-conditions). The **Run matching conditions only** option doesn't display for single entity.
    - To update the unified customer profile (with or without dependencies), see [Run updates to the customer profile](#run-updates-to-the-unified-customer-profile).
-   - To evaluate the quality of your matching conditions without updating the unified profile, see [Run matching conditions](#run-matching-conditions). The **Run matching conditions only** option doesn't display for single entity.
 
 ## Edit source fields
 
@@ -131,6 +131,8 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 ## Run matching conditions
 
+Run matching conditions runs deduplication and match rules only and updates the Deduplication and ConflationMatchPair entities.
+
 1. From the **Data** > **Unify** page, select **Run matching conditions only**.
 
    The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing**.
@@ -149,9 +151,9 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 1. From the **Data** > **Unify** page, select:
 
-   - **Unify customer profiles**: Updates the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+   - **Unify customer profiles**: Runs matching conditions and updates the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
 
-   - **Unify customer profiles and dependencies**: Updates the unified profile and all dependencies. All processes are rerun automatically. After all downstream processes have completed, the customer profile reflects the updated data.
+   - **Unify customer profiles and dependencies**: Runs matching conditions and updates the unified profile and all dependencies. All processes are rerun automatically. After all downstream processes have completed, the customer profile reflects the updated data.
 
    The **Duplicate records**, **Matching conditions**, and **Unified customer fields** tiles show **Queued** or **Refreshing**.
 
