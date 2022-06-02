@@ -7,8 +7,8 @@ ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: overview
-author: v-wendysmith
-ms.author: Scott-Stabbert
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 
 searchScope: 
@@ -38,7 +38,7 @@ The unification process maps customer data from your data sources, removes dupli
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-As with account unification, contact unification maps data from your data sources, removes duplicates, matches the data across entities, and creates a unified profile. In addition, in contact unification you apply semantic mapping and create a relationship between contacts and accounts. The account and contact files are unified separately.
+Account and contact unification are unified separately. The processes are similar in that they both map data from your data sources, remove duplicates, match the data across entities, and create a unified profile. In contact unification, you define semantic mapping for your contacts and create the relationship between contacts and accounts.
 
 > [!NOTE]
 > Account and contact files must have a unique key that connects them. For example, an account ID that exists in the account file and contact file that ties the account and contact together.
@@ -53,11 +53,9 @@ Unification is performed in the following order:
 
 1. [Unified customer fields](merge-entities.md) (previously called Merge): In the unified customer fields step, determine which source fields should be included, excluded, or merged into a unified customer profile.  
 
-1. For contact unification, [Define the semantic fields](data-unification-contacts.md#define-the-semantic-fields-for-unified-contacts).
-
-1. For contact unification, [Set the relationship between contacts and accounts](data-unification-contacts.md#set-the-relationship-between-contacts-and-accounts).
-
 1. [Review](review-unification.md) and create the unified profile.
+
+1. After unifying your accounts, [unify your contacts](data-unification-contacts.md).
 
 ---
 
