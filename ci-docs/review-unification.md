@@ -30,7 +30,7 @@ This last step in the unification process shows a summary of the steps in the pr
 
 1. If you are satisfied with your selections, select **Create customer profiles**. The **Unify** page displays while the unified customer profile is being created. All tiles except **Source fields** show **Queued** or **Refreshing** status.
 
-:::image type="content" source="media/m3_unify_refreshing.png" alt-text="Screenshot of Unify page with tiles showing Queued or Refreshing.":::
+   :::image type="content" source="media/m3_unify_refreshing.png" alt-text="Screenshot of Unify page with tiles showing Queued or Refreshing.":::
 
    [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
