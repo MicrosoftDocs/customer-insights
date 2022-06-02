@@ -1,7 +1,7 @@
 ---
 title: "Review data unification"
 description: "Review the data unification steps, create unified customer profiles, and review the results"
-ms.date: 05/04/2022
+ms.date: 06/02/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -28,9 +28,9 @@ This last step in the unification process shows a summary of the steps in the pr
 
 1. Select **Edit** on any of the data unification steps to review and make any changes.
 
-1. If you are satisfied with your selections, select **Create customer profiles**. The **Unify** page displays while the unified customer profile is being created. The unification algorithm takes some time to complete and you can't change the configuration until it completes.
+1. If you are satisfied with your selections, select **Create customer profiles**. The **Unify** page displays while the unified customer profile is being created. All tiles except **Source fields** show **Queued** or **Refreshing** status. The unification algorithm takes some time to complete and you can't change the configuration until it completes.
 
-   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
 When the unification process completes, the unified customer profile entity, called *Customer*, is listed on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
 
