@@ -1,7 +1,7 @@
 ---
 title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
-ms.date: 05/27/2022
+ms.date: 06/02/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -43,8 +43,11 @@ To review or change any unification settings once a unified profile has been cre
 
 1. After making your changes, choose your next option:
 
-   - To evaluate the quality of your unification rules (deduplication and matching rules) without updating the unified profile, see [Run matching conditions](#run-matching-conditions). The **Run matching conditions only** option doesn't display for single entity.
-   - To update the unified profile (with or without dependencies), see [Run updates to the unified profile](#run-updates-to-the-unified-profile).
+   :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
+
+   - [Run matching conditions](#run-matching-conditions) to quickly evaluate the quality of your matching conditions (deduplication and match rules) without updating the unified profile. The **Run matching conditions only** option doesn't display for single entity.
+   - [Unify customer profiles](#run-updates-to-the-unified-customer-profile) to run matching conditions and update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+   - [Unify customer profiles and dependencies](#run-updates-to-the-unified-customer-profile) to run matching conditions and update the unified customer profile entity and all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically.
 
 ## Edit source fields
 
@@ -154,13 +157,13 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 ## Run matching conditions
 
-Run matching conditions to test unification rules without updating the unified profile entity.
+Run matching conditions runs deduplication and match rules only and updates the *Deduplication_** and *ConflationMatchPair* entities.
 
-1. From the **Data** > **Unify** page, select **Run matching conditions only**. For accounts, select **Unify accounts** > **Run matching conditions only**. For contacts, select **Unify contacts** > **Run matching conditions only**.
+1. From the **Data** > **Unify** page, select **Run matching conditions only**.
 
-   The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing**.
+   The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing** status.
 
-   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
 1. When the matching process completes, select **Edit** on the **Matching conditions** tile.
 
@@ -181,4 +184,6 @@ To run matching conditions, update the unified profile, and run all dependencies
 
 All tiles except **Source fields** show **Queued** or **Refreshing**.
 
-[!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+[!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
+
+The results of a successful run display on the **Unify** page showing the number of unified profiles.
