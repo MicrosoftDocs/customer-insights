@@ -28,11 +28,13 @@ This last step in the unification process shows a summary of the steps in the pr
 
 1. Select **Edit** on any of the data unification steps to review and make any changes.
 
-1. If you are satisfied with your selections, select **Create customer profiles**. The **Unify** page displays while the unified customer profile is being created. All tiles except **Source fields** show **Queued** or **Refreshing** status. The unification algorithm takes some time to complete and you can't change the configuration until it completes.
+1. If you are satisfied with your selections, select **Create customer profiles**. The **Unify** page displays while the unified customer profile is being created. All tiles except **Source fields** show **Queued** or **Refreshing** status.
+
+:::image type="content" source="media/m3_unify_refreshing.png" alt-text="Screenshot of Unify page with tiles showing Queued or Refreshing.":::
 
    [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
-When the unification process completes, the unified customer profile entity, called *Customer*, is listed on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+The unification algorithm takes some time to complete and you can't change the configuration until it completes. When the unification process completes, the unified customer profile entity, called *Customer*, is listed on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
 
 ## Review the results of data unification
 
