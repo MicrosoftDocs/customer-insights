@@ -19,7 +19,7 @@ Customers can choose to withdraw or withhold their consent for specific forms of
 
 Dynamics 365 Customer Insights helps you honor your customers’ requests by importing and storing their preferences as part of the unified customer profiles.
 
-If consent data is stored separately from your customer profiles, [add your consent data as a new data source](#import-unify-consent-data). The data source that contains the consent data is added to the data unification process. Successful unification of consent data and customer profiles then leads to unified customer profiles that contain the consent information. For customer profiles that already contain consent information, go directly to [Use consent data](#use-consent-data)
+If consent data is stored separately from your customer profiles, [add your consent data as a new data source](#import-and-unify-consent-data). The data source that contains the consent data is added to the data unification process. Successful unification of consent data and customer profiles then leads to unified customer profiles that contain the consent information. For customer profiles that already contain consent information, go directly to [Use consent data](#use-consent-data)
 
 ## Prerequisites
 

@@ -123,7 +123,7 @@
     - name: Define customer activities
       href: activities.md
     - name: Consent management for Customer Insights
-    - href: consent-management.md
+      href: consent-management.md
 
 - name: Segments
   items:
@@ -313,9 +313,6 @@
       href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
     - name: OData sample queries
       href: odata-examples.md
-      
-- name: Consent management (Preview)
-  href: consent-management/overview.md
 
 - name: Get support
   href: /power-platform/admin/get-help-support
