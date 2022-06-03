@@ -1,7 +1,7 @@
 ---
 title: "Data source enrichment"
 description: "Enrich data sources before going through the data unification process."
-ms.date: 03/02/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: NimrodMagen
@@ -22,7 +22,7 @@ You must have Contributor or Administrator permissions to create or edit enrichm
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the vertical ellipsis next to the data source you want to enrich and select **Enrich**.
+1. Select the vertical ellipsis (&vellip;) next to the data source you want to enrich and select **Enrich**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Data sources enrichment page.":::
 
@@ -36,11 +36,12 @@ The following enrichments are currently available for data sources. Review the d
 
 - [Enhanced addresses](enrichment-enhanced-addresses.md)
 - [Enhanced company data](enrichment-enhanced-company-data.md)
+- [Identity data from LiveRamp](enrichment-liveramp.md)
 
 ## Manage existing data source enrichments
 
 Go to the **My enrichments** tab to see all configured enrichments.
 
-Select the enrichment to see the available options. You can also select the ellipsis (...) on a list item to see the options. If you configured several enrichments, you can use the search box to find it quickly.
+Select the enrichment to see the available options. You can also select the vertical ellipsis (&vellip;) on a list item to see the options. If you configured several enrichments, you can use the search box to find it quickly.
 
 You can view, edit, run, or delete a data source enrichment. For more information, see [Manage existing enrichments](enrichment-hub.md).
