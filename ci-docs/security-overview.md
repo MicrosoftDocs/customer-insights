@@ -1,7 +1,7 @@
 ---
 title: "Security settings in Dynamics 365 Customer Insights"
 description: "Learn about security settings in Dynamics 365 Customer Insights."
-ms.date: 04/28/2022
+ms.date: 06/03/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -41,5 +41,13 @@ The dedicated key vault can be used to stage and use secrets in an organization'
 
 For more information, see [Bring your own Azure key vault](use-azure-key-vault.md).
 
+## Securely access customer data in Customer Insights by using Customer Lockbox in Power Platform (preview)
+
+Customer Insights is leveraging the Power Platform Customer Lockbox capability. Customer Lockbox provides an interface to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed to resolve a support case. To use this feature, Customer Insights must have an existing connection to a Microsoft Dataverse environment in your tenant.
+
+For more details about Customer Lockbox, see the [summary](/power-platform/admin/about-lockbox#summary) of Power Platform Customer Lockbox. The article also describes the [workflow] (/power-platform/admin/about-lockbox#workflow) and the required [setup](/power-platform/admin/about-lockbox#enable-the-lockbox-policy) to enable Customer Lockbox.
+
+> [!IMPORTANT]
+> Global administrators for Power Platform or Power Platform administrators can approve Customer Lockbox requests issued for Customer Insights.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
