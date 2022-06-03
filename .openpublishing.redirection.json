@@ -1542,7 +1542,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/overview.md",
+      "source_path": "ci-docs/consent-management/overview.md",
       "redirect_url": "/dynamics365/customer-insights/consent-management",
       "redirect_document_id": false
     }
