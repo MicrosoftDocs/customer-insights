@@ -37,7 +37,7 @@ For more information, see [Explore Customer Insights](home.md).
 
 ### Track usage of a segment
 
-If you use segments in apps, which are based on the same Microsoft Dataverse organization that is connected with Customer Insights, you can [track the usage of a segment](segments.md#track-usage-of-a-segment). For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
+You can now [track the usage of a segment](segments.md#track-usage-of-a-segment) in apps, which are based on the Dataverse organization that is connected with Customer Insights. For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
 
 ### Export to Criteo
 
@@ -47,7 +47,7 @@ For more information, see [Export segments to Criteo (preview)](export-criteo.md
 
 ### Refined documentation structure for environment creation
 
-We've revisited the help docs related to the creation and management of environments in Customer Insights. The articles are now grouped under the Environments node in the table of contents. The restructured articles provide more guidance for the different ways to set up environments and have a clearer structure. If you have feedback to share, please let us know via the controls towards the end of the help articles.
+We've revisited the help docs related to the creation and management of environments in Customer Insights. The articles are now grouped under the Environments node in the table of contents. The restructured articles provide more guidance for the different ways to set up environments and have a clearer structure. If you have feedback to share, let us know via the controls towards the end of the help articles.
 
 For more information, see [How to: Create a new environment](create-environment.md).
 
