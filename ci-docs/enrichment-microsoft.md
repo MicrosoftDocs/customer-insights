@@ -106,7 +106,7 @@ After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichmen
 
 :::image type="content" source="media/my-enrichments.png" alt-text="Preview of results after running the enrichment process.":::
 
-Results include **Affinity Level** or **Share of Voice** charts. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** entities. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** entities. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
+The results include **Affinity Level** or **Share of Voice** charts. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** entities. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** entities. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
 
 A chart shows the number of enriched customers over time and the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
 

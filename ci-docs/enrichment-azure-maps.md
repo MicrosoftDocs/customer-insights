@@ -27,13 +27,13 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the Azure Maps tile.
 
+:::image type="content" source="media/enrichment-azure-maps-connection.png" alt-text="Azure Maps connection configuration page.":::
+
 1. Enter a name for the connection and a valid Azure Maps API key.
 
 1. Review and provide your consent for [Data privacy and compliance](#data-privacy-and-compliance) by selecting **I agree**.
 
 1. Select **Verify** to validate the configuration and then select **Save**.
-
-:::image type="content" source="media/enrichment-azure-maps-connection.png" alt-text="Azure Maps connection configuration page.":::
 
 ### Data privacy and compliance
 
@@ -44,7 +44,7 @@ Your Dynamics 365 Customer Insights Administrator can remove this enrichment at 
 
 1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
-1. Select **Enrich my data** on the **Location** tile for Microsoft Azure Maps.
+1. Select **Enrich my data** on the **Location** for Microsoft Azure Maps tile.
 
    :::image type="content" source="media/azure-maps-tile.png" alt-text="Azure Maps tile.":::
 
@@ -58,7 +58,9 @@ Your Dynamics 365 Customer Insights Administrator can remove this enrichment at 
 
 1. Choose whether you want to map fields to the primary and/or secondary address. You can specify a field mapping for both addresses and enrich the profiles for both addresses separately&mdash;for example, for a home address and a business address. Select **Next**.
 
-1. Define which fields from your unified profiles to use to look for matching location data from Azure Maps. The **Street 1** and **Zip/Postal Code** fields are required for the selected primary or secondary address. For higher match accuracy, add more fields.
+1. Map your fields to the location data from Azure Maps. The **Street 1** and **Zip/Postal Code** fields are required for the selected primary or secondary address. For higher match accuracy, add more fields.
+
+   :::image type="content" source="media/enrichment-azure-maps-attributes.png" alt-text="Azure Maps attribute mapping.":::
 
 1. Select **Next** to complete the field mapping.
 
@@ -78,7 +80,7 @@ Your Dynamics 365 Customer Insights Administrator can remove this enrichment at 
 
 After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
 
-The **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+In addition to the standard results, the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
 
 ## Next steps
 

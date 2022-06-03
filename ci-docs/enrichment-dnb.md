@@ -42,7 +42,7 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
 ## Configure a connection for Dun & Bradstreet
 
-You must be an [administrator](permissions.md#admin)  and have the credentials from Dun & Bradstreet Connect. 
+You must be an [administrator](permissions.md#admin)  and have the credentials from Dun & Bradstreet Connect.
 
 1. Select **Add connection** when configuring an enrichment or go to **Admin** > **Connections** and select **Set up** on the Dun & Bradstreet tile.
 
@@ -69,7 +69,7 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
-1. Select **Enrich my data** on the **Company data** tile for Dun & Bradstreet.
+1. Select **Enrich my data** on the **Company data** for Dun & Bradstreet tile.
 
    :::image type="content" source="media/enrichment-dnb-tile.png" alt-text="Screenshot of the Dun & Bradstreet tile.":::
 
@@ -81,9 +81,11 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Select the **Customer data set** and choose the profile or segment you want to enrich with company data from Dun & Bradstreet. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
+1. Define which type of fields from your unified profiles to use for matching company data from Dun & Bradstreet. At least one of the fields **Name and address**, **Phone**, or **Email** is required.
+
 1. Select **Next**
 
-1. Define which fields fields from your unified profiles to use to look for matching company data from Dun & Bradstreet. Either **DUNS number** or **Name of company** and **Country** fields are required. The country field supports [two or three letter country codes](https://www.iso.org/iso-3166-country-codes.html), country name in English, country name in native language, and phone prefix. Some common country variants include:
+1. Map your fields to the company data from Dun & Bradstreet. Either **DUNS number** or **Name of company** and **Country** fields are required. The country field supports [two or three letter country codes](https://www.iso.org/iso-3166-country-codes.html), country name in English, country name in native language, and phone prefix. Some common country variants include:
 
    - US: United States of America, United States, USA, America.
    - CA: Canada.
@@ -104,7 +106,7 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
 
-The **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+In addition to the standard results, the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
 
 ## Next steps
 

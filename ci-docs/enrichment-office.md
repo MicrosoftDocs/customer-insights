@@ -13,25 +13,25 @@ manager: shellyha
 
 # Enrich customer profiles with engagement data (preview)
 
-Use data from Microsoft Office 365 to enrich your customer account profiles with insights about engagements through Office 365 apps. The engagement data consists of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users are made available. 
+Use data from Microsoft Office 365 to enrich your customer account profiles with insights about engagements through Office 365 apps. The engagement data consists of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users are made available.
 
-This enrichment is available in the following regions: UK, Europe, North America.
+## Supported countries/regions
+
+We currently support the following regions: UK, Europe, North America.
 
 ## Prerequisites
 
-To configure the enrichment, the following prerequisites must be met:
-
-- You have an active Office 365 cloud license.
-- You have [unified customer profiles](customer-profiles.md) based on [business accounts](work-with-business-accounts.md).
-- Your Customer Insights environment must have a [Microsoft Dataverse organization attached](create-environment.md#step-3-connect-to-microsoft-dataverse).
-- You have [administrator](permissions.md#admin) permissions.
-- You have, or can get, consent from your Office 365 tenant administrator to use Office 365 data to provide **Insights for the Organization** within Dynamics 365 applications.
+- An active Office 365 cloud license.
+- [Unified customer profiles](customer-profiles.md) based on [business accounts](work-with-business-accounts.md).
+- A [Microsoft Dataverse organization attached](create-environment.md#step-3-connect-to-microsoft-dataverse) in your Customer Insights environment.
+- [Administrator](permissions.md#admin) permissions.
+- Consent from your Office 365 tenant administrator to use Office 365 data to provide **Insights for the Organization** within Dynamics 365 applications.
 
 ## Configure the enrichment
 
-1. Go to **Data** > **Enrichment**.
+1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
-1. Go to the **Discover** tab and select **Enrich my data** on the **Account Engagement** tile.
+1. Select **Enrich my data** on the **Account Engagement** tile.
 
    :::image type="content" source="media/enrichment-office-tile.png" alt-text="Account engagement tile.":::
    
