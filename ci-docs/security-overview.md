@@ -41,7 +41,7 @@ The dedicated key vault can be used to stage and use secrets in an organization'
 
 For more information, see [Bring your own Azure key vault](use-azure-key-vault.md).
 
-## Securely access customer data in Customer Insights by using Customer Lockbox in Power Platform (preview)
+## Securely access customer data with Customer Lockbox (Preview)
 
 Customer Insights is leveraging the Power Platform Customer Lockbox capability. Customer Lockbox provides an interface to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed to resolve a support case. To use this feature, Customer Insights must have an existing connection to a Microsoft Dataverse environment in your tenant.
 
