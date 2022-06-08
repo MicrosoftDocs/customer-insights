@@ -1,7 +1,7 @@
 ---
-title: "Security settings in Dynamics 365 Customer Insights"
-description: "Learn about security settings in Dynamics 365 Customer Insights."
-ms.date: 06/03/2022
+title: Security settings in Customer Insights
+description: Learn about security settings in Dynamics 365 Customer Insights.
+ms.date: 06/08/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,15 +11,17 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Security overview page
+# Security settings in Customer Insights
 
-The **Security** page lists options to configure user permissions and features that help make Dynamics 365 Customer Insights more secure. Only administrators can access this page. 
+The **Security** page lists options to configure user permissions and features that help make Dynamics 365 Customer Insights more secure. Only administrators can access this page.
 
 Go to **Admin** > **Security** to configure the settings.
 
 The **Security** page includes the following tabs:
+
 - [Users](#users-tab)
 - [APIs](#apis-tab)
+- [Private Links](#private-links-tab)
 - [Key Vault](#key-vault-tab)
 
 ## Users tab
@@ -33,6 +35,22 @@ View and manage the keys to use the [Customer Insights APIs](apis.md) with the d
 You can create new primary and secondary keys by selecting **Regenerate primary** or **Regenerate secondary**. 
 
 To block API access to the environment, select **Disable**. If APIs are disabled, you can select **Enable** to grant access again.
+
+## Private Links tab
+
+[Azure Private Link](/azure/private-link/private-link-overview) lets Customer Insights connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
+
+> [!IMPORTANT]
+> Minimum role requirement to set up a Private Link connection:
+>
+> - Customer Insights: Administrator
+> - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
+> - Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+>
+
+Setting up Private Link in Customer Insights is a two-step process. First, you initiate the creation of a Private Link from **Admin** > **Security** > **Private Links** in Customer Insights. The **Add Private Link** pane lists storage accounts from your tenant that you’ve got permissions to see. Select the storage account and provide consent to create the Private Link.
+
+Next, you need to approve the Private Link on the Data Lake Storage account side. Open the link presented on screen to approve the new Private Link.
 
 ## Key Vault tab
 
