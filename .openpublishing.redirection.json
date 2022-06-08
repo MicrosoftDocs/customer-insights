@@ -1490,6 +1490,61 @@
       "source_path": "ci-docs/audience-insights/work-with-tags-columns.md",
       "redirect_url": "/dynamics365/customer-insights/work-with-tags-columns",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/consent-management/get-started.md",
+      "redirect_url": "/dynamics365/customer-insights/consent-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/consent-management/glossary.md",
+      "redirect_url": "/dynamics365/customer-insights/consent-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/consent-management/import-consent-data.md",
+      "redirect_url": "/dynamics365/customer-insights/consent-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/consent-management/index.yml",
+      "redirect_url": "/dynamics365/customer-insights/consent-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/consent-management/manage-users.md",
+      "redirect_url": "/dynamics365/customer-insights/consent-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/consent-management/predictions-consent-data.md",
+      "redirect_url": "/dynamics365/customer-insights/consent-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/consent-management/set-consent-rules.md",
+      "redirect_url": "/dynamics365/customer-insights/consent-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/consent-management/system-settings.md",
+      "redirect_url": "/dynamics365/customer-insights/consent-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/change-default-consent-rules.md",
+      "redirect_url": "/dynamics365/customer-insights/consent-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/activate-consent.md",
+      "redirect_url": "/dynamics365/customer-insights/consent-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/consent-management/overview.md",
+      "redirect_url": "/dynamics365/customer-insights/consent-management",
+      "redirect_document_id": false
     }
   ]
 }
