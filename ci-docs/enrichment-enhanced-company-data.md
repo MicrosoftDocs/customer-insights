@@ -64,17 +64,17 @@ The model doesn't:
 
 1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
-1. Select which type of fields from your company profiles should be used for matching with Microsoft’s compiled company data. This selection will affect the mapping fields you have access to in the next step.
+1. Select which type of fields from your company profiles to use for matching with Microsoft’s compiled company data. This selection will affect the mapping fields you have access to in the next step.
 
 1. Select **Next**.
 
-1. Map the company fields from your unified customer entity. The more key identifiers and fields you map, the more likelihood of a higher match rate.
+1. Map your company fields to the company data from Microsoft. For higher match accuracy, add more fields.
 
     :::image type="content" source="media/enhanced-company-data-mapping.png" alt-text="Data-mapping step when configuring a company enrichment.":::
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a name for the enrichment and the output entity.
+1. Provide a **Name** for the enrichment and the **Output entity**.
 
 1. Select **Save enrichment** after reviewing your choices.
 

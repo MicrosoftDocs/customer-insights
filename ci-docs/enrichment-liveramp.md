@@ -61,10 +61,7 @@ When you enable Dynamics 365 Customer Insights to transmit data to LiveRamp, you
 
 1. Select the **Customer data set** and choose the profile or segment you want to enrich with identity data from LiveRamp. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
-1. Define which type of fields from your unified profiles to use for matching identity data from LiveRamp. At least one of the fields **Name and address**, **E-mail**, or **Phone** is required. Select **Next**.
-
-   > [!TIP]
-   > The more key identifiers and fields you map, the more likelihood of a higher match rate.
+1. Define which type of fields from your unified profiles to use for matching identity data from LiveRamp. At least one of the fields **Name and address**, **E-mail**, or **Phone** is required. For higher match accuracy, add other fields. Select **Next**.
 
 1. Map your fields to the identification data from LiveRamp.
 
@@ -80,9 +77,7 @@ When you enable Dynamics 365 Customer Insights to transmit data to LiveRamp, you
 
 ## Enrichment results
 
-After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
-
-In addition to the standard results, the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 ## Next steps
 

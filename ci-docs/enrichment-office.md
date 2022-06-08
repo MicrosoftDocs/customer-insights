@@ -15,7 +15,7 @@ manager: shellyha
 
 Use data from Microsoft Office 365 to enrich your customer account profiles with insights about engagements through Office 365 apps. The engagement data consists of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users are made available.
 
-## Supported countries/regions
+## Supported countries or regions
 
 We currently support the following regions: UK, Europe, North America.
 
@@ -34,20 +34,28 @@ We currently support the following regions: UK, Europe, North America.
 1. Select **Enrich my data** on the **Account Engagement** tile.
 
    :::image type="content" source="media/enrichment-office-tile.png" alt-text="Account engagement tile.":::
-   
-1. Select **Next** in the **Overview** step and enter email addresses from your organization for which Office data is going to be aggregated. Only data from the listed email addresses gets processed for relevant communication. A best practice is to use email groups, for example, *US Sales team*, which are easily managed in Office 365. The number of email addresses in the groups are resolved and shown. The total number of email addresses must be at least 2 and can't exceed 2,500.
+
+1. Review the overview and then select **Next**.
+
+1. Enter email addresses from your organization for which Office data is going to be aggregated. Only data from the listed email addresses gets processed for relevant communication. A best practice is to use email groups, for example, *US Sales team*, which are easily managed in Office 365. The number of email addresses in the groups are resolved and shown. The total number of email addresses must be at least 2 and can't exceed 2,500.
 
    :::image type="content" source="media/enrichment-office-email-addresses.png" alt-text="Account engagement email addresses.":::
 
-1. Review the consent statement, select the **I agree** check box, and select **Next**.
+1. Review and provide your consent for [Office 365 tenant administrator consent](#office-365-tenant-administrator-consent) by selecting **I agree**.
 
-1. Select the customer data set and select **Next**.
+1. Select **Next**.
+
+1. Select the **Contact data set** and choose the profile you want to enrich. Select **Next**.
 
 1. Map the contact email address field and select **Next**.
 
-1. Review the enrichment configuration, give the enrichment a name, and select **Save enrichment** to save the enrichment.
+1. Provide a **Name** for the enrichment and the **Output entity**.
 
-## Office 365 tenant administrator consent
+1. Select **Save enrichment** after reviewing your choices.
+
+1. Select **Close** to return to the **Enrichments** page.
+
+### Office 365 tenant administrator consent
 
 Consent from an Office 365 tenant administrator is required to activate the enrichment. An email is sent to the Office 365 tenant administrators when the enrichment is saved, which asks them to review and consent to allowing Dynamics 365 applications to use your enterprises’ Office 365 data to provide **Insights for the Organization**. The Office 365 tenant administrator can also consent directly in their Office 365 admin console, by selecting **Insights for the Organization**.
 
@@ -55,24 +63,19 @@ Consent from an Office 365 tenant administrator is required to activate the enri
 
 When the enrichment is started for the first time, after the Office 365 tenant administrator has given consent, the data download from Office 365 begins. This process takes some time. The first enrichment run will be scheduled to happen with a delay of six hours. You can see the number of days that the data covers on the account engagement overview page after the enrichment finishes. With a large data volume, run the enrichment again after a few days. it ensures the data is complete for the entire time window, which is one year.
 
-To start the process, select **Run** on the Account engagement configuration page. Additionally, you can let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). By default, the enrichment runs once per week.
-
 Depending on the size of your Office data, it may take several hours for an enrichment run to complete.
 
-When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to create aggregated insights, which are then added to your Customer Insights environment. No data at an individual level (for example, the body of any e-mail or calendar invite) becomes available to users of Customer Insights. 
+When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to create aggregated insights, which are then added to your Customer Insights environment. No data at an individual level (for example, the body of any e-mail or calendar invite) becomes available to users of Customer Insights.
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
 ## Enrichment results
 
-After running the enrichment process, go to **My enrichments** to review the enrichment results. You'll find the total number of enriched customers and an overview of the enrichment results. It includes the number of processed emails and meetings, the number of days for which data has been aggregated, and more.
-
-You'll also find a chart with the number of enriched customers over time and a preview of the enrichment data.  
+After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results. By default, the enrichment runs once per week.
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
 All data is aggregated up to the account level. The system calculates an engagement score, which ranges from 0 to 100, for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. The following list contains the aggregated data that the account engagement enrichment provides:
-
 
 
 | Data                                                                              | Column name                              |
@@ -95,7 +98,7 @@ All data is aggregated up to the account level. The system calculates an engagem
 | Aggregation level (year, month, or week)                                          |  AggregationLevel                        | 
 
 
-Review the enriched data by selecting **See more** in the preview section. It opens the *Office* entity. You can also find the entity listed in the **Enrichment** group in **Data** > **Entities**. You'll also find the *Office_UserEntity*, which contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration 
+In addition to the standard results, the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile. This is the *Office* entity. The *Office_UserEntity* contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration.
 
 ## See enrichment data on the customer card
 
@@ -103,13 +106,9 @@ Account engagement can also be viewed on individual customer cards. Go to **Cust
 
 :::image type="content" source="media/enrichment-office-customer-card.png" alt-text="Customer card with enriched data.":::
 
-## Create segments and measures based on the enriched data
-
-The enriched data can be used to create segments and measures as detailed below. For example, a segment that contains all the customers that have a value over 60 for *days since last email* and *days since last meeting*. That segment contains stale accounts that you can try to reactivate. 
-
 ## Next steps
 
 [!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
-
+For example, a segment that contains all the customers that have a value over 60 for *days since last email* and *days since last meeting*. That segment contains stale accounts that you can try to reactivate.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

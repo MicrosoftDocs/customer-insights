@@ -58,7 +58,7 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
     :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
 
-1. Define which type of fields from your unified profiles to use for matching: the primary and/or secondary address. You can specify a field mapping for both addresses and enrich the profiles for both addresses separately&mdash;for example, for a home address and a business address. Select **Next**.
+1. Define which type of fields from your unified profiles to use for matching: the primary and/or secondary address. You can specify a field mapping for both addresses and enrich the profiles for both addresses separately. For example, for a home address and a business address. Select **Next**.
 
 1. Map your fields to the company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
 
@@ -72,15 +72,15 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Select **Next**.
 
-1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
+1. Provide a **Name** for the enrichment and the **Output entity**.
+
+1. Select **Save enrichment** after reviewing your choices.
 
 1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
 ## Enrichment results
 
-After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
-
-In addition to the standard results, the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 For more information, see [Leadspace APIs](https://support.leadspace.com/hc/en-us/sections/201997649-API).
 

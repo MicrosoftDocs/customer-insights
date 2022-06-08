@@ -93,7 +93,7 @@ We currently support enriching addresses in these countries or regions:
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a name for the enrichment and the output entity.
+1. Provide a **Name** for the enrichment and the **Output entity**.
 
 1. Select **Save enrichment** after reviewing your choices.
 

@@ -31,7 +31,7 @@ We currently support enriching customer profiles in the United States only.
 
 You must be an [administrator](permissions.md#admin) in Customer Insights and have an Experian User ID, Party ID, and Model Number.
 
-1. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the LiveRamp tile.
+1. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the Experian tile.
 
    :::image type="content" source="media/enrichment-Experian-connection.png" alt-text="Experian connection configuration pane.":::
 
@@ -59,32 +59,28 @@ When you enable Dynamics 365 Customer Insights to transmit data to Experian, you
 
 1. Select **Next**.
 
-1. Select the **Customer data set** and choose the profile or segment  you want to enrich with demographics data from Experian. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich with demographics data from Experian. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
     :::image type="content" source="media/enrichment-Experian-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
 
-1. Define which type of fields from your unified profiles to use for matching demographics data from Experian. At least one of the fields **Name and address**, **Phone**, or **Email** is required. For a higher match accuracy, up to two other fields can be added. This selection will affect the mapping fields you have access to in the next step. Select **Next**.
-
-    > [!TIP]
-    > The more key identifier attributes sent to Experian, the more likelihood of a higher match rate.
+1. Define which type of fields from your unified profiles to use for matching demographics data from Experian. At least one of the fields **Name and address**, **Phone**, or **Email** is required. For higher match accuracy, add other fields. Select **Next**.
 
 1. Map your fields to the demographic data from Experian.
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
+1. Provide a **Name** for the enrichment and the **Output entity**.
+
+1. Select **Save enrichment** after reviewing your choices.
 
 1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
 ## Enrichment results
 
-After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
-
-In addition to the standard results, the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 ## Next steps
 
 [!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

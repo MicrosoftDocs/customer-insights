@@ -17,54 +17,13 @@ Secure File Transfer Protocol (SFTP) custom import enables you to import data th
 
 ## Prerequisites
 
-To configure SFTP custom import, the following prerequisites must be met:
+- File name and location (path) of the file to be imported on the SFTP host is known.
 
-- You have the file name and location (path) of the file to be imported on the SFTP host.
-- There is a *model.json* file that specifies [the Common Data Model schema](/common-data-model/) for the data to be imported. This file must be in the same directory as the file to import.
-- An SFTP connection has already been configured by an administrator *or* you have [administrator](permissions.md#admin) permissions. You'll need the user credentials, URL, and port number for the SFTP location where you want to import data from.
+- A *model.json* file that specifies the Common Data Model schema for the data to be imported is available. This file must be in the same directory as the file to import.
 
+- An SFTP [connection](connections.md) is [configured](#configure-the-connection-for-sftp-custom-import).
 
-## Configure the import
-
-1. Go to **Data** > **Enrichment** and select the **Discover** tab.
-
-1. On the **SFTP custom import tile**, select **Enrich my data** and then select **Get started**.
-
-   :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="SFTP custom import tile.":::
-
-1. Select a [connection](connections.md) from the dropdown list. Contact an administrator if no connection is available. If you are an administrator, you can create a connection by selecting **Add connection** and choosing **SFTP Custom Import** from the dropdown list.
-
-1. Select **Connect to Custom Import** to confirm the selected connection.
-
-1.	Select **Next** and enter the **Path** and **Filename** of the data file that you want to import.
-
-    :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Screenshot when entering data location.":::
-
-1. Select **Next** and choose the customer data set. This can be either all customer profiles or a segment.
-
-1. Select **Next** and provide a name for the enrichment and a name for the output entity. 
-
-1. Select **Save enrichment** after reviewing your choices.
-
-## Configure the connection for SFTP Custom Import 
-
-You need to be an administrator to configure connections. Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Custom Import tile.
-
-1. Enter a name for the connection in the **Display name** box.
-
-1. Enter a valid username, password, and host URL for the SFTP server that the data to be imported resides on.
-
-1. Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox.
-
-1. Select **Verify** to validate the configuration.
-
-1. Once the verification has completed, the connection can be saved by selecting **Save**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Experian connection configuration page.](media/enrichment-SFTP-connection.png "Experian connection configuration page")
-
-
-## Defining field mappings 
+## File schema example
 
 The directory that contains the file to be imported on the SFTP server must also contain a *model.json* file. This file defines the schema to use for importing the data. The schema has to use [Common Data Model](/common-data-model/) to specify the field mapping. A simple example of a model.json file looks like this:
 
@@ -110,13 +69,56 @@ The directory that contains the file to be imported on the SFTP server must also
 }
 ```
 
+## Configure the connection for SFTP Custom Import
+
+You must be an [administrator](permissions.md#admin) in Customer Insights and have the user credentials, URL, and port number for the SFTP location where you want to import data from.
+
+1. Select **Add connection** when configuring an enrichment or go to **Admin** > **Connections** and select **Set up** on the Custom Import tile.
+
+   :::image type="content" source="media/enrichment-SFTP-connection.png" alt-text="Custom Import connection configuration page.":::
+
+1. Enter a name for the connection.
+
+1. Enter a valid username, password, and host URL for the SFTP server that the data to be imported resides on.
+
+1. Review and provide your consent for [Data privacy and compliance](#data-privacy-and-compliance) by selecting **I agree**.
+
+1. Select **Verify** to validate the configuration and then select **Save**.
+
+### Data privacy and compliance
+
+When you enable Dynamics 365 Customer Insights to transmit data using Custom Import, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that data meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
+
+## Configure the import
+
+1. Go to **Data** > **Enrichment** and select the **Discover** tab.
+
+1. Select **Enrich my data** on the **SFTP custom import** tile.
+
+   :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="SFTP custom import tile.":::
+
+1. Review the overview and then select **Next**.
+
+1. Select the connection. Contact an administrator if one is not available.
+
+1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+
+1. Select **Next**.
+
+1. Enter the **Path** and **Filename** of the data file that you want to import.
+
+1. Select **Next**.
+
+1. Provide a **Name** for the enrichment and the **Output entity**.
+
+1. Select **Save enrichment** after reviewing your choices.
+
+1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
+
 ## Enrichment results
 
-To start the enrichment process, select **Run** from the command bar. You can also let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The processing time will depend on the size of the data to be imported and the connection to the SFTP server.
-
-After the enrichment process completes, you can review your newly imported custom enrichment data under **My enrichments**. Additionally, you'll find the time of the last update and the number of enriched profiles.
-
-You can access a detailed view of each enriched profile by selecting **View enriched data**.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 ## Next steps
 

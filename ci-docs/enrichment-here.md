@@ -56,25 +56,24 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Select the **Customer data set** and choose the profile or segment you want to enrich with data from HERE Technologies. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
-1. Define which type of fields from your unified profiles to use for matching: the primary and/or secondary address. You can specify a field mapping for both addresses and enrich the profiles for both addresses separately. For example, if there's a home and a business address. Select **Next**.
+1. Define which type of fields from your unified profiles to use for matching: the primary and/or secondary address. You can specify a field mapping for both addresses and enrich the profiles for both addresses separately. For example, for a home address and a business address. Select **Next**.
 
-1. Map your fields to the data from HERE Technologies. The **Street 1** and **Zip/Postal Code** fields are required for the selected primary and/or secondary address. For a higher match accuracy, more fields can be added.
+1. Map your fields to the data from HERE Technologies. The **Street 1** and **Zip/Postal Code** fields are required for the selected primary and/or secondary address. For a higher match accuracy, add more fields.
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
+1. Provide a **Name** for the enrichment and the **Output entity**.
+
+1. Select **Save enrichment** after reviewing your choices.
 
 1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
 ## Enrichment results
 
-After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
-
-In addition to the standard results, the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 ## Next steps
 
 [!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

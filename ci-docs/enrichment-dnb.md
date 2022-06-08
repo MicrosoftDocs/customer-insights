@@ -42,11 +42,9 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
 ## Configure a connection for Dun & Bradstreet
 
-You must be an [administrator](permissions.md#admin)  and have the credentials from Dun & Bradstreet Connect.
+You must be an [administrator](permissions.md#admin) in Customer Insights and have the credentials from Dun & Bradstreet Connect.
 
 1. Select **Add connection** when configuring an enrichment or go to **Admin** > **Connections** and select **Set up** on the Dun & Bradstreet tile.
-
-1. Select **Get Started**.
 
 1. Enter a name for the connection.
 
@@ -54,9 +52,7 @@ You must be an [administrator](permissions.md#admin)  and have the credentials f
 
 1. Review and provide your consent for [Data privacy and compliance](#data-privacy-and-compliance) by selecting **I agree**.
 
-1. Select **Verify** to validate the configuration.
-
-1. After completing the verification, select **Save**.
+1. Select **Verify** to validate the configuration and then select **Save**.
 
    :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Dun & Bradstreet connection configuration page.":::
 
@@ -98,15 +94,15 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.
+1. Provide a **Name** for the enrichment and the **Output entity**.
+
+1. Select **Save enrichment** after reviewing your choices.
 
 1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
 ## Enrichment results
 
-After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
-
-In addition to the standard results, the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 ## Next steps
 
