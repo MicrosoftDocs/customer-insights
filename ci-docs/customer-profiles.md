@@ -1,7 +1,7 @@
 ---
 title: "View customer profiles"
 description: "Get a combined view of your unified customer data."
-ms.date: 05/13/2022
+ms.date: 06/08/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -53,7 +53,7 @@ Select any of the customer tiles to open the **Customer details page**. This vie
 
 **Customer profile tile**: This tile shows the different values from the unified *Customer* entity. If a field has no value for the selected customer profile, it won't show except for the address field. The tile is structured into sections:
 
-- The first section shows a predefined set of fields followed by all fields that are part of the search & filter index. All address-related fields are combined into a single line which is shown even if the profile contains no such fields.
+- The first section shows a predefined set of fields followed by all fields that are part of the search & filter index. All address-related fields are combined into a single line, which shows even if the profile contains no address information.
 - **Contacts for this customer**: In environments for business accounts, you'll see all related contacts for this customer as the second section. Each contact is shown with their fields. Empty fields are hidden.
 - **Additional fields**: Shows the remaining fields of the selected customer, except IDs.
 - **IDs**: Lists all IDs under their corresponding entity name. Fields are identified as IDs by their semantics, which categorize them as such.
