@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to Snapchat"
 description: "Learn how to configure the connection and export to Snapchat."
-ms.date: 10/08/2021
+ms.date: 06/08/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -17,7 +17,7 @@ Export segments of unified customer profiles to Snapchat and use them for advert
 
 ## Prerequisites for a connection
 
--	You have a [Snapchat Business account](https://business.snapchat.com/), a [Snapchat Ads account](https://ads.snapchat.com/), and corresponding administrator credentials. Please note that the minimum permissions are to be a member of an Organization Account and a Data Manager of a specific Ad Account. 
+-	You have a [Snapchat Business account](https://business.snapchat.com/), a [Snapchat Ads account](https://ads.snapchat.com/), and corresponding administrator credentials. YOu must at least be a member of an Organization Account and a Data Manager of a specific Ad Account. 
 -	You have at least one audience in Snapchat Audience manager of the type SAM (Snap Audience Match). 
 -	You have [configured segments](segments.md) in Customer Insights.
 -	Unified customer profiles in the exported segments contain a field representing an email address.
@@ -57,7 +57,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Connection for export** field, choose a connection from the Snapchat section. If you don't see this section name, there are no connections of this type available to you.
 
-1. Enter the [**Snapchat Segment/Audience ID**](https://businesshelp.snapchat.com/s/article/custom-audiences). The ID of the audience can be found in the URL after selecting the audience in your Snapchat Audience Manager. 
+1. Enter the [**Snapchat Segment/Audience ID**](https://businesshelp.snapchat.com/s/article/custom-audiences). The ID of the audience can be found in the URL after selecting the audience in Snapchat Audience Manager. 
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Snapchat.
 
