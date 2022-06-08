@@ -51,8 +51,8 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](security-overview.md#private-links-tab).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](security-overview.md#private-links-tab).
   
    > [!NOTE]
    > You need one of the following roles either to the container or the storage account to create the data source:
@@ -164,7 +164,7 @@ You can update the *Connect to storage account using* option. For more informati
         > - Storage Blob Data Owner
         > - Storage Blob Data Contributor
 
-   - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [What is Azure Private Link?](/azure/private-link/private-link-overview).
+   - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [Private Links](security-overview.md#private-links-tab).
 
 1. Select **Next**.
 1. Change any of the following:

@@ -32,7 +32,7 @@ When you create a new environment, make sure the Data Lake Storage account exist
 1. Choose how to **Connect your storage**. You can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using an Azure Service Principal](connect-service-principal.md).
    - For **Azure subscription**, choose the **Subscription**, **Resource group**, and **Storage account** that contains the `customerinsights` container.
    - For **Account key**, provide the **Account name** and the **Account key** for the Data Lake Storage account. Using this authentication method implies that you're informed if your organization rotates the keys. You must [update the environment configuration](manage-environments.md#edit-an-existing-environment) with the new key when it's rotated.
-1. Choose if you want to use Azure Private Link to connect to the storage account and c[reate the connection to Private Link](security-overview.md#private-links-tab) with a two-step process.
+1. Choose if you want to use Azure Private Link to connect to the storage account and [create the connection to Private Link](security-overview.md#private-links-tab) with a two-step process.
 
 When system processes like data ingestion complete, the system creates corresponding folders in the storage account. Data files and *model.json* files are created and added to folders based on the process name.
 
