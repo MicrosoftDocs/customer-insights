@@ -57,7 +57,7 @@ To connect to a different Dataverse data lake, [create a new data source](#conne
 
 1. Go to **Data** > **Data sources**.
 
-2. Next to the data source you'd like to update, select the ellipsis.
+2. Next to the data source you'd like to update, select the vertical ellipsis (&vellip;).
 
 3. Select the **Edit** option from the list.
 

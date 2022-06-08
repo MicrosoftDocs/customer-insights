@@ -88,7 +88,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 ## Edit a workflow
 
-1. On the **Custom Models** page, select the vertical ellipsis in the **Actions** column next to a workflow you've previously created and select **Edit**.
+1. On the **Custom Models** page, select the vertical ellipsis (&vellip;) in the **Actions** column next to a workflow you've previously created and select **Edit**.
 
 1. You can update your workflow's recognizable name in the **Display name** field, but you can't change the configured web service or pipeline. Select **Next**.
 
@@ -104,7 +104,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 ## Run a workflow
 
-1. On the **Custom Models** page, select the vertical ellipsis in the **Actions** column next to a workflow you've previously created.
+1. On the **Custom Models** page, select the vertical ellipsis (&vellip;) in the **Actions** column next to a workflow you've previously created.
 
 1. Select **Run**.
 
@@ -112,7 +112,7 @@ Your workflow also runs automatically with every scheduled refresh. Learn more a
 
 ## Delete a workflow
 
-1. On the **Custom Models** page, select the vertical ellipsis in the **Actions** column next to a workflow you've previously created.
+1. On the **Custom Models** page, select the vertical ellipsis (&vellip;) in the **Actions** column next to a workflow you've previously created.
 
 1. Select **Delete** and confirm your deletion.
 
