@@ -61,6 +61,10 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 When you enable Dynamics 365 Customer Insights to transmit data to Dun & Bradstreet, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you're responsible for ensuring that Dun & Bradstreet meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
+## Supported countries or regions
+
+We currently support the following country/region options: Canada (English) or United States (English).
+
 ## Configure the enrichment
 
 1. Go to **Data** > **Enrichment** and select the **Discover** tab.
@@ -81,20 +85,13 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Select **Next**
 
-1. Map your fields to the company data from Dun & Bradstreet. Either **DUNS number** or **Name of company** and **Country** fields are required. The country field supports [two or three letter country codes](https://www.iso.org/iso-3166-country-codes.html), country name in English, country name in native language, and phone prefix. Some common country variants include:
-
-   - US: United States of America, United States, USA, America.
-   - CA: Canada.
-   - GB: United Kingdom, UK, Great Britain, GB, United Kingdom of Great Britain and Northern Ireland, United Kingdom of Great Britain.
-   - AU: Australia, Commonwealth of Australia.
-   - FR: France, French Republic.
-   - DE: Germany, German, Deutschland, Allemagne, Federal Republic of Germany, Republic of Germany.
+1. Map your fields to the company data from Dun & Bradstreet. Either **DUNS number** or **Name of company** and **Country** fields are required.
 
       :::image type="content" source="media/enrichment-dnb-mapping.png" alt-text="Dun & Bradstreet field-mapping pane.":::
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a **Name** for the enrichment and the **Output entity**.
+1. Provide a **Name** for the enrichment and the **Output entity name**.
 
 1. Select **Save enrichment** after reviewing your choices.
 

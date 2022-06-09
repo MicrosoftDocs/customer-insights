@@ -48,8 +48,8 @@ On the **Discover** tab, you'll find all supported enrichment options.
 - [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
 - [Enhanced company data](enrichment-enhanced-company-data.md) provided by Microsoft
 - [Location data](enrichment-azure-maps.md) provided by Microsoft Azure Maps
-- [Location data](enrichment-here.md) provided by HERE Technologies 
-- [Custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP) 
+- [Location data](enrichment-here.md) provided by HERE Technologies
+- [SFTP custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
 
 ---
 

@@ -61,11 +61,13 @@ Consent from an Office 365 tenant administrator is required to activate the enri
 
 ## Running the enrichment for the first time
 
-When the enrichment is started for the first time, after the Office 365 tenant administrator has given consent, the data download from Office 365 begins. This process takes some time. The first enrichment run will be scheduled to happen with a delay of six hours. You can see the number of days that the data covers on the account engagement overview page after the enrichment finishes. With a large data volume, run the enrichment again after a few days. it ensures the data is complete for the entire time window, which is one year.
+When the enrichment is started for the first time, after the Office 365 tenant administrator has given consent, the data download from Office 365 begins. This process takes some time. The first enrichment run will be scheduled to happen with a delay of six hours. You can see the number of days that the data covers on the account engagement overview page after the enrichment finishes. With a large data volume, run the enrichment again after a few days. It ensures the data is complete for the entire time window, which is one year.
 
 Depending on the size of your Office data, it may take several hours for an enrichment run to complete.
 
 When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to create aggregated insights, which are then added to your Customer Insights environment. No data at an individual level (for example, the body of any e-mail or calendar invite) becomes available to users of Customer Insights.
+
+Select **Run** to start the enrichment process.
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 

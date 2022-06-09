@@ -69,7 +69,7 @@ When you enable Dynamics 365 Customer Insights to transmit data to Experian, you
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a **Name** for the enrichment and the **Output entity**.
+1. Provide a **Name** for the enrichment and the **Output entity name**.
 
 1. Select **Save enrichment** after reviewing your choices.
 
