@@ -38,7 +38,7 @@ The unification process maps customer data from your data sources, removes dupli
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-Account and contact unification are unified separately. The processes are similar in that they both map data from your data sources, remove duplicates, match the data across entities, and create a unified profile. In contact unification, you define semantic mapping for your contacts and create the relationship between contacts and accounts.
+Account and contact unification are unified separately. The processes are similar in that they both map data from your data sources, remove duplicates, match the data across entities, and create a unified profile. In contact unification, additional steps include defining semantic mapping for your contacts and creating the relationship between contacts and accounts.
 
 > [!NOTE]
 > Account and contact files must have a unique key that connects them. For example, an account ID that exists in the account file and contact file that ties the account and contact together.

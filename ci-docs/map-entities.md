@@ -30,7 +30,7 @@ The first step in unification is selecting the entities and fields within your d
 
    :::image type="content" source="media/m3_unify_land.png" alt-text="Screenshot of unify landing page for first run experience for individual customers.":::
 
-   For business accounts (B-to-B), the **Unify** landing page displays. **Unify accounts** shows **Get started** on the first step, **Source fields**. The **Unify contacts** steps are pending completion of account unification.
+   For business accounts (B-to-B), the **Unify** landing page displays **Unify accounts** showing **Get started** on the first step, **Source fields**. The **Unify contacts** steps are pending completion of account unification.
 
    :::image type="content" source="media/b2b_unify_land.png" alt-text="Screenshot of unify landing page for first run experience for business accounts.":::
 
