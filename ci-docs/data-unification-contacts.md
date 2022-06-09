@@ -79,9 +79,13 @@ This last step in the unification process shows a summary of the steps in the pr
 
 1. Select **Edit** on any of the contact unification steps to review and make any changes.
 
-1. If you are satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created. The unification algorithm takes some time to complete and you can't change the configuration until it completes.
+1. If you are satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created.
   
+   :::image type="content" source="media/b2b_unify_refreshing.png" alt-text="Screenshot of Unify Contacts page with tiles showing Queued or Refreshing.":::
+
    [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
+
+The unification algorithm takes some time to complete and you can't change the configuration until it completes.
 
 ### Review the results of contact unification
 

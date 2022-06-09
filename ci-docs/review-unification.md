@@ -34,7 +34,7 @@ This last step in the unification process shows a summary of the steps in the pr
 
    [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
-The unification algorithm takes some time to complete and you can't change the configuration until it completes. When the unification process completes, the unified customer profile entity, called *Customer*, is listed on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+The unification algorithm takes some time to complete and you can't change the configuration until it completes.
 
 ## Review the results of data unification
 
