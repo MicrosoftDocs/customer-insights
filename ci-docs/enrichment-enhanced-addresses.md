@@ -99,14 +99,16 @@ We currently support enriching addresses in these countries or regions:
 
 ## Enrichment results
 
-After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
-The **Customers changes overview** tile shows details about the coverage of the enrichment:
+The **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
+
+### Overview card
+
+The **Customers changes overview** card shows details about the coverage of the enrichment:
 - **Addresses processed and changed**: The number of customer profiles with addresses that were successfully enriched.
 - **Addresses processed and not changed**: The number of customer profiles with addresses that were recognized but not changed. It typically happens when the input data is valid and can't be improved by the enrichment.
 - **Addresses not processed and not changed**: The number of profiles with addresses that were not recognized. Usually for input data that is invalid or not supported by the enrichment.
-
-The **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
 
 ## Next steps
 

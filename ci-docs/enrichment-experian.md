@@ -79,6 +79,8 @@ When you enable Dynamics 365 Customer Insights to transmit data to Experian, you
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
+The **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
+
 ## Next steps
 
 [!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]

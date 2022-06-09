@@ -82,14 +82,14 @@ The model doesn't:
 
 ## Enrichment results
 
-After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
+
+### Overview card
 
 The **Customers changes overview** tile shows details about the coverage of the enrichment
 - **Companies processed and changed**: The number of customer company profiles that were successfully enriched.
 - **Companies processed and not changed**: The number of customer company profiles that were recognized but not changed. This typically happens when the input data is valid and can't be improved by the enrichment.
 - **Companies not processed and not changed**: The number of customer company profiles that were not recognized. This typically happens for input data that are invalid or not supported by the enrichment.
-
-In addition to the standard results, the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
 
 ## Next steps
 

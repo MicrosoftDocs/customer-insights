@@ -82,6 +82,8 @@ Your Dynamics 365 Customer Insights Administrator can remove this enrichment at 
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
+The **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
+
 ## Next steps
 
 [!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]

@@ -79,6 +79,8 @@ When you enable Dynamics 365 Customer Insights to transmit data to LiveRamp, you
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
+The **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
+
 ## Next steps
 
 Build on top of your enriched customer data. Use the AbiliTec IDs to consolidate customer profiles into a person-based view.

@@ -71,7 +71,7 @@ When you run an enrichment, Microsoft will process the data within the Office 36
 
 ## Enrichment results
 
-After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichment), select the enrichment to review the results. By default, the enrichment runs once per week.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)] This is the *Office* entity. The *Office_UserEntity* contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration.
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
@@ -97,8 +97,6 @@ All data is aggregated up to the account level. The system calculates an engagem
 | Aggregation start date                                                            |  AggregationStartDate                    | 
 | Aggregation level (year, month, or week)                                          |  AggregationLevel                        | 
 
-
-In addition to the standard results, the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile. This is the *Office* entity. The *Office_UserEntity* contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration.
 
 ## See enrichment data on the customer card
 

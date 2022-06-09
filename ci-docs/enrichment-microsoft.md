@@ -1,5 +1,5 @@
 ---
-title: "Enrich customer profiles with data from Microsoft"
+title: "Enrich customer profiles with brands and interests data from Microsoft"
 description: "Use proprietary data from Microsoft to enrich your customer data with affinities and share of voice."
 ms.date: 03/02/2022
 ms.reviewer: mhart
@@ -106,9 +106,11 @@ After a completed [enrichment run](enrichment-hub.md#run-or-refresh-an-enrichmen
 
 :::image type="content" source="media/my-enrichments.png" alt-text="Preview of results after running the enrichment process.":::
 
-The results include **Affinity Level** or **Share of Voice** charts. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** entities. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** entities. You'll also find these entities listed in the **Enrichment** group in **Data** > **Entities**.
+The results include **Affinity Level** or **Share of Voice** charts.
 
 A chart shows the number of enriched customers over time and the **Enriched customers preview** tile shows a sample of the enriched data. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+
+The entities created from the enrichments are listed under the **Enrichment** group in **Data** > **Entities**. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** entities. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** entities.
 
 ## See enrichment data on the customer card
 
