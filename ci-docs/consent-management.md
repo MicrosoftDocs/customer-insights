@@ -1,5 +1,5 @@
 ---
-title: Consent management in Customer Insights
+title: Use customer consent
 description: "Honor you customers' consent preferences in Customer Insights by importing consent data."
 ms.date: 06/07/2022
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Consent management in Customer Insights
+# Use customer consent
 
 Data protection and privacy regulations provide individuals the right to govern how an organization uses their personal data. Examples of such regulations are the General Data Protection Regulation in the European Union or the California Consumer Privacy Act in the United States. These regulations allow people to opt out of having their personal data collected, processed by, or shared with third parties.  
 
