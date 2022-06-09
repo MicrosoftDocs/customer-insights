@@ -17,11 +17,9 @@ Store your Customer Insights data in a Data Lake Storage Gen2 account or use it 
 
 ## Known limitations
 
-1. For Azure Data Lake Storage Gen2 you can choose between [Standard performance and Premium performance tier](/azure/storage/blobs/create-data-lake-storage-account) when you are creating a storage account for your data lake. If you choose the Premium performance tier, select the premium block blobs as account type. 
+1. For Azure Data Lake Storage Gen2 you can choose between [Standard performance and Premium performance tier](/azure/storage/blobs/create-data-lake-storage-account) when you are creating a storage account for your data lake. If you choose the Premium performance tier, select the premium block blobs as account type.
 
-
-## Set up the connection to Azure Data Lake Storage Gen2 
-
+## Set up the connection to Azure Data Lake Storage Gen2
 
 1. Go to **Admin** > **Connections**.
 
@@ -35,7 +33,7 @@ Store your Customer Insights data in a Data Lake Storage Gen2 account or use it 
     - To learn how to create a storage account to use with Azure Data Lake Storage Gen2, see [Create storage account](/azure/storage/blobs/create-data-lake-storage-account). 
     - To learn more about Azure Data Lake Gen2 storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
 
-1. Select **Save** to complete the connection. 
+1. Select **Save** to complete the connection.
 
 ## Configure an export
 
@@ -53,9 +51,12 @@ You can configure this export if you have access to a connection of this type. F
 
 Saving an export doesn't run the export immediately.
 
-The export runs with every [scheduled refresh](system.md#schedule-tab). 
-You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
+The export runs with every [scheduled refresh](system.md#schedule-tab).
+You can also [export data on demand](export-destinations.md#run-exports-on-demand).
 
-Exported data is stored in the Azure Data Lake Gen 2 storage container you configured. 
+Exported data is stored in the Azure Data Lake Gen 2 storage container you configured.
+
+> [!TIP]
+> Export of entities that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
