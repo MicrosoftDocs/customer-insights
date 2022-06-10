@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Iterable"
+title: "Export segments to Iterable"
 description: "Learn how to configure the connection and export to Iterable."
 ms.date: 03/29/2022
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Iterable (preview)
+# Export segments to Iterable (preview)
 
 Export segments of unified customer profiles to Iterable and use them for marketing activities.
 

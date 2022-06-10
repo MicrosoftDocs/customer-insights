@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Sendinblue"
+title: "Export segments to Sendinblue"
 description: "Learn how to configure the connection and export to Sendinblue."
 ms.date: 10/08/2021
 ms.reviewer: mhart

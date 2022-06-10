@@ -11,9 +11,9 @@ ms.author: sthe
 manager: shellyha
 ---
 
-# Connector for Power BI (preview)
+# Power BI connector (preview)
 
-Create visualizations for your data with the Power BI Desktop. Generate additional insights and build reports with your unified customer data.
+Create visualizations for your data with the Microsoft Power BI Desktop. Generate additional insights and build reports with your unified customer data.
 
 ## Prerequisites
 

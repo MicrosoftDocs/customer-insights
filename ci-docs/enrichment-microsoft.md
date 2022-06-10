@@ -14,7 +14,7 @@ searchScope:
   - customerInsights
 ---
 
-# Enrich customer profiles with affinities and share of voice (preview)
+# Enrich customer profiles with brands and interests data from Microsoft (preview)
 
 Use Microsoft's proprietary data to enrich your customer data with brand affinities, interest affinities, and share of voice (SoV). These affinities and SoV are based on data from people with demographics similar to your customers. This information helps you to better understand and segment your customers based on their affinities or SoV to specific brands and interests.
 

@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Adobe Experience Platform"
+title: "Export segments to Adobe Experience Platform"
 description: "Learn how to use Customer Insights segments in Adobe Experience Platform."
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: antando
 manager: shellyha
 ---
 
-# Use Customer Insights segments in Adobe Experience Platform (preview)
+# Export segments to Adobe Experience Platform (preview)
 
 As a user of Dynamics 365 Customer Insights, you may have created segments to make your marketing campaigns more efficient by targeting relevant audiences. To use a segment from Customer Insights in Adobe Experience Platform and applications like Adobe Campaign Standard, you need to follow a few steps outlined in this article.
 

@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to DotDigital"
+title: "Export segments to DotDigital"
 description: "Learn how to configure the connection and export to DotDigital."
 ms.date: 10/08/2021
 ms.reviewer: mhart

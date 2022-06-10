@@ -1,6 +1,6 @@
 ---
-title: "Ingest data through a Power Query connector (contains video)"
-description: "Connectors for data sources based on Power Query."
+title: "Connect to a Power Query data source (contains video)"
+description: "Ingest data through a Power Query connector (contains video)."
 ms.date: 12/06/2021
 ms.reviewer: mhart
 
@@ -17,7 +17,7 @@ searchScope:
 
 # Connect to a Power Query data source
 
-Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights. 
+Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights.
 
 Adding data sources based on Power Query connectors generally follows the steps outlined in this section. However, depending on the connector you use, different information is required. To learn more, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
 

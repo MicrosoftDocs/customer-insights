@@ -1,5 +1,5 @@
 ---
-title: "Audit Dynamics 365 Customer Insights with Azure Monitor"
+title: "Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (Preview)"
 description: "Learn how to send logs to Microsoft Azure Monitor."
 ms.date: 12/14/2021
 ms.reviewer: mhart

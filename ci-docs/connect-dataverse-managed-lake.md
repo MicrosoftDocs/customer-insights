@@ -1,5 +1,5 @@
 ---
-title: "Connect to tables in Microsoft Dataverse"
+title: "Connect to data in a Microsoft Dataverse managed data lake"
 description: "Import data from a Microsoft Dataverse managed data lake."
 ms.date: 03/18/2022
 ms.subservice: audience-insights
@@ -15,7 +15,7 @@ searchScope:
 
 # Connect to data in a Microsoft Dataverse managed data lake
 
-This article provides information on how Dataverse users can quickly connect to analytical entities in a Microsoft Dataverse managed lake. 
+This article provides information on how Dataverse users can quickly connect to analytical entities in a Microsoft Dataverse managed lake.
 
 > [!NOTE]
 > You must be an admin on the Dataverse organization to proceed and view the list of entities available in the managed lake.
@@ -39,7 +39,7 @@ This article provides information on how Dataverse users can quickly connect to 
 
    :::image type="content" source="media/ingest-dataverse-server-address.png" alt-text="Screen in data ingestion step where a user can enter the Dataverse environment URL.":::
 
-6. Select the tables you want to ingest as entities into Customer Insights from the available list.    
+6. Select the tables you want to ingest as entities into Customer Insights from the available list.
 
    > [!NOTE]
    > If some tables are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights). You can't change the selection. These tables will be available as entities once the data source is created.

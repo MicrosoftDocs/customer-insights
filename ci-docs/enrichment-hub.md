@@ -1,6 +1,6 @@
 ---
 title: "Enrich unified customer profiles"
-description: "Use capabilities to enrich your customer data."
+description: "Use capabilities from Microsoft and other third-party services to enrich your customer data."
 ms.date: 06/10/2022
 ms.reviewer: mhart
 
@@ -17,7 +17,7 @@ searchScope:
   - customerInsights
 ---
 
-# Enrichment for customer profiles (preview)
+# Enrich unified customer profiles (preview)
 
 Use data from sources like Microsoft and other partners to enrich your customer data.
 

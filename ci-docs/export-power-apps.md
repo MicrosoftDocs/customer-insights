@@ -11,9 +11,9 @@ ms.author: nikeller
 manager: shellyha
 ---
 
-# Microsoft Power Apps connector (preview)
+# Power Apps connector (preview)
 
-Bring unified customer profiles into your personalized apps with Power Apps.
+Bring unified customer profiles into your personalized apps with Microsoft Power Apps.
 
 ## Connect Power Apps and Dynamics 365 Customer Insights
 

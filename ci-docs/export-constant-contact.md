@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Constant Contact"
+title: "Export segments to Constant Contact"
 description: "Learn how to configure the connection and export to Constant Contact."
 ms.date: 10/08/2021
 ms.reviewer: mhart

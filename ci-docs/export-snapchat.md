@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Snapchat"
+title: "Export segments to Snapchat"
 description: "Learn how to configure the connection and export to Snapchat."
 ms.date: 06/08/2022
 ms.reviewer: mhart

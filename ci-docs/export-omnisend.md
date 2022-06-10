@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Omnisend"
+title: "Export segments to Omnisend"
 description: "Learn how to configure the connection and export to Omnisend."
 ms.date: 10/08/2021
 ms.reviewer: mhart

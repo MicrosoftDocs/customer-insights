@@ -1,5 +1,5 @@
 ---
-title: "LiveRamp identity data enrichment"
+title: "Enrich customer profiles with identity data from LiveRamp"
 description: "Enrich customer profiles with LiveRamp data."
 ms.date: 06/10/2022
 ms.reviewer: mhart

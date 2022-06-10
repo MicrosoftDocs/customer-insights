@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Braze"
+title: "Export segments to Braze"
 description: "Learn how to configure the connection and export to Braze."
 ms.date: 03/29/2022
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Braze (preview)
+# Export segments to Braze (preview)
 
 Export segments of unified customer profiles to Braze and use them for marketing activities.
 

@@ -1,5 +1,5 @@
 ---
-title: "Enrichment with the third-party enrichment HERE Technologies"
+title: "Enrich customer profiles with HERE Technologies"
 description: "General information about the HERE Technologies third-party enrichment."
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: jodahl
 manager: shellyha
 ---
 
-# Enrichment of customer profiles with HERE Technologies (preview)
+# Enrich customer profiles with HERE Technologies (preview)
 
 HERE Technologies is a location platform company that provides location-centric data and services. HERE Technologies' data enrichment services improve the precision of location information about your customers. It provides address normalization, latitude and longitude extraction, and more.
 

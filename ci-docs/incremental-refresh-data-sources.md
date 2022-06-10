@@ -1,5 +1,5 @@
 ---
-title: "Incremental refresh for Power Query-based data sources"
+title: "Incremental refresh for data sources based on Power Query"
 description: "Refresh new and updated data for large data sources based on Power Query."
 ms.date: 12/06/2021
 ms.reviewer: mhart

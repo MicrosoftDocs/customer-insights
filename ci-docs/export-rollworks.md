@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to RollWorks"
+title: "Export segments to RollWorks"
 description: "Learn how to configure the connection and export to RollWorks."
 ms.date: 10/08/2021
 ms.reviewer: mhart

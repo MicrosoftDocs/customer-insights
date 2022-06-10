@@ -1,6 +1,6 @@
 ---
-title: "Use data sources to ingest data"
-description: "Learn how to import data from various sources."
+title: "Data sources overview"
+description: "Learn how to import or ingest data from various sources."
 ms.date: 03/18/2022
 
 ms.subservice: audience-insights

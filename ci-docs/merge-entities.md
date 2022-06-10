@@ -1,5 +1,5 @@
 ---
-title: "Unify customer or account fields"
+title: "Unify customer fields"
 description: "Merge entities to create unified customer profiles."
 recommendations: false
 ms.date: 05/04/2022
