@@ -37,7 +37,7 @@ We currently support the following regions: UK, Europe, North America.
 
 1. Review the overview and then select **Next**.
 
-1. Enter email addresses from your organization for which Office data is going to be aggregated. Only data from the listed email addresses gets processed for relevant communication. A best practice is to use email groups, for example, *US Sales team*, which are easily managed in Office 365. The number of email addresses in the groups are resolved and shown. The total number of email addresses must be at least 2 and can't exceed 2,500.
+1. Enter email addresses from your organization for which Office data is going to be aggregated. Only data from the listed email addresses gets processed for relevant communication. A best practice is to use email groups, for example, *US Sales team*, which you can manage in Office 365. The number of email addresses in the groups are resolved and shown. The total number of email addresses must be at least 2 and can't exceed 2,500.
 
    :::image type="content" source="media/enrichment-office-email-addresses.png" alt-text="Account engagement email addresses.":::
 

@@ -53,7 +53,7 @@ On the **Discover** tab, you'll find all supported enrichment options.
 
 ---
 
-On the **My enrichments** tab, you can see the enrichments you've configured and edit their properties. You also have the option to create [segments](segments.md) or [measures](measures.md) from an enrichment.
+On the **My enrichments** tab, you can see the enrichments you've configured and edit their properties. You can also create [segments](segments.md) or [measures](measures.md) from enrichments.
 
 ## Manage existing enrichments
 
@@ -83,7 +83,7 @@ The entity to be enriched is specified during the enrichment configuration, whic
 
 You can enrich your customer data before data unification to help increase the quality of a data match. For more information, see [data source enrichment](data-sources-enrichment.md).
 
-## Run or refresh an enrichment
+## Run or refresh enrichments
 
 1. To start the enrichment process, select **Run**. Or, let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The processing time depends on the size of your customer data.
 
@@ -98,7 +98,7 @@ You can enrich your customer data before data unification to help increase the q
 You can find details about the processing of an enrichment, including it status and potential issues while it's refreshing or after a refresh completed. Understand which processes are involved to refresh an enrichment and how long it took to run the processes. The enrichment status is supported for Experian, Leadspace, HERE Technologies, SFTP Import, and Azure Maps.
 
 1. Go to **Data** > **Enrichment**.
-1. In the **My enrichments** tab, select the status of an enrichment to open a side pane.
+1. In the **My enrichments** tab, select the status of the enrichment to open a side pane.
 1. In the **Progress details** pane, expand the **Enrichments** section.
 1. Under the enrichment you want to see the progress, select **See details**.
 1. In the **Task details** pane, select **Show details** to see the processes that are involved in updating the enrichment and their status.
@@ -116,6 +116,6 @@ All enrichments show basic information such as the number of enriched profiles a
 
 If available, the **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
 
-Some enrichments also show information specific to the type of enrichment. Refer to the documentation for the relevant enrichment for more information.
+Some enrichments also show information specific to the type of enrichment. For more information, see the related documentation.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

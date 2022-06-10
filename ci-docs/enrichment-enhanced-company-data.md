@@ -90,7 +90,7 @@ The **Customers changes overview** tile shows details about the coverage of the 
 
 - **Companies processed and changed**: The number of customer company profiles that were successfully enriched.
 - **Companies processed and not changed**: The number of customer company profiles that were recognized but not changed. This typically happens when the input data is valid and can't be improved by the enrichment.
-- **Companies not processed and not changed**: The number of customer company profiles that were not recognized. This typically happens for input data that are invalid or not supported by the enrichment.
+- **Companies not processed and not changed**: The number of customer company profiles that weren't recognized. This typically happens for input data that are invalid or not supported by the enrichment.
 
 ## Next steps
 

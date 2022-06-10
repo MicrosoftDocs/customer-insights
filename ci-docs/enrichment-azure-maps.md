@@ -50,7 +50,7 @@ Your Dynamics 365 Customer Insights Administrator can remove this enrichment at 
 
 1. Review the overview and then select **Next**.
 
-1. Select the connection. Contact an administrator if one is not available.
+1. Select the connection. Contact an administrator if no connection is available.
 
 1. Select **Next**.
 
@@ -64,7 +64,7 @@ Your Dynamics 365 Customer Insights Administrator can remove this enrichment at 
 
 1. Select **Next** to complete the field mapping.
 
-1. Review **Advanced Settings** which offer maximum flexibility to handle advanced use cases. However, the following default values typically do not need to be changed.
+1. Review **Advanced Settings** which offer maximum flexibility to handle advanced use cases. However, the following default values typically don't need to be changed.
 
    - **Type of addresses**: Best address match returns even if it's incomplete. To get only complete addresses&mdash;for example, addresses that include the house number&mdash;clear all the checkboxes except **Point Addresses**.
    - **Language**: Addresses return in the language based on the address region. To apply a standardized address language, select the language from the dropdown menu. For example, selecting **English** returns **Copenhagen, Denmark** instead of **København, Danmark**.
