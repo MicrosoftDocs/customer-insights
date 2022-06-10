@@ -91,27 +91,27 @@
   items:
     - name: Enrich customer profiles
       href: enrichment-hub.md
+    - name: Accounts from Office 365 data
+      href: enrichment-office.md
     - name: Brands and interests
       href: enrichment-microsoft.md
+    - name: Company data from Dun & Bradstreet
+      href: enrichment-dnb.md
+    - name: Company data from Leadspace
+      href: enrichment-leadspace.md
+    - name: Demographics with Experian
+      href: enrichment-experian.md
     - name: Enhanced addresses
       href: enrichment-enhanced-addresses.md
     - name: Enhanced company data
       href: enrichment-enhanced-company-data.md
-    - name: Enrich with Azure Maps
-      href: enrichment-azure-maps.md
-    - name: Enrich with Dun & Bradstreet
-      href: enrichment-dnb.md
-    - name: Enrich with HERE Technologies
-      href: enrichment-here.md
-    - name: Enrich with Leadspace
-      href: enrichment-leadspace.md
-    - name: Enrich with LiveRamp
+    - name: Identity with LiveRamp
       href: enrichment-liveramp.md
-    - name: Enrich with Experian
-      href: enrichment-experian.md
-    - name: Enrich with Office 365 data
-      href: enrichment-office.md
-    - name: Enrich with SFTP custom import
+    - name: Location from Azure Maps
+      href: enrichment-azure-maps.md
+    - name: Location from HERE Technologies
+      href: enrichment-here.md
+    - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
 - name: Unified profiles
@@ -122,6 +122,8 @@
       href: search-filter-index.md
     - name: Define customer activities
       href: activities.md
+    - name: Consent management for Customer Insights
+      href: consent-management.md
 
 - name: Segments
   items:
@@ -317,47 +319,6 @@
       href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
     - name: OData sample queries
       href: odata-examples.md
-      
-- name: Consent management (Preview)
-  items:
-    - name: Help hub
-      href: consent-management/index.yml
-
-    - name: Capability overview
-      href: consent-management/overview.md
-
-    - name: Get started
-      items:
-        - name: Get started
-          href: consent-management/get-started.md
-        - name: Concepts and terminology
-          href: consent-management/glossary.md
-
-    - name: Import consent data
-      items: 
-        - name: Import consent data
-          href: consent-management/import-consent-data.md
-        - name: Set consent data and apply consent preferences
-          href: consent-management/set-consent-rules.md
-
-    - name: Manage consent data
-      items: 
-        - name: Enable consent rules in Customer Insights
-          href: activate-consent.md
-        - name: Manage default consent rules in Customer Insights segments
-          href: change-default-consent-rules.md
-        
-    - name: Manage settings and users
-      items: 
-        - name: Configure system settings
-          href: consent-management/system-settings.md
-        - name: Manage users and permissions
-          href: consent-management/manage-users.md
-
-    - name: Use consent data
-      items: 
-        - name: Create predictions with consent data
-          href: consent-management/predictions-consent-data.md
 
 - name: Service limits
   href: service-limits.md
