@@ -1,7 +1,7 @@
 ---
 title: "Company data enhancement"
 description: "Enrich and normalize company data with Microsoft's models."
-ms.date: 04/22/2022
+ms.date: 06/10/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -15,7 +15,7 @@ manager: shellyha
 
 Use Microsoft’s models and compiled company data to correct, supplement, and standardize your company profiles. We'll use the [Common Data Model format](/common-data-model/schema/core/applicationcommon/account) for better accuracy and insights.
 
-You can also [enhance company data on data sources](data-sources-enrichment.md) to improve the match accuracy in the data unification process. 
+You can also [enhance company data on data sources](data-sources-enrichment.md) to improve the match accuracy in the data unification process.
 
 For public companies in the United States, information such as revenue, stock ticker, industry, and more is available.  
 
@@ -23,10 +23,9 @@ For public companies in the United States, information such as revenue, stock ti
 
 Our model goes through a two-step process to enhance a company profile. First, it normalizes the company name. For example, *Microsft Corp* will be corrected and standardized to *Microsoft Corporation*. It tries to find a match in Microsoft's compiled company data. If a match is found, we enrich the company profile with information from our compiled company data, including the company name.
 
-
 ### Example
 
-Your company information might not follow a standardized format and contain spelling errors. The model tries fix these issues and create consistent information.
+Your company information might not follow a standardized format and contain spelling errors. The model tries to fix these issues and create consistent information.
 
 ```Input
 Microsft
@@ -46,52 +45,52 @@ Microsft
 
 ## Limitations
 
-There are a few limitations with the enhanced data. The items in the list below aren't supported by the model.
+The model doesn't:
 
-1.	Confirm the identity of the company. We don't verify if the input is an existing organization or that a company uses the output as its standard name.
-2.	Comprehensively cover companies globally. Microsoft’s compiled company data has global coverage, but offers most coverage in Australia, Canada, United Kingdom, and the United States.
-3.	Standardize company addresses globally. We currently support standardizing addresses in these countries or regions: Australia, Canada, France, Germany, Italy, Japan, United Kingdom, and the United States.
-4.	Guarantee accuracy or freshness of data. As business information often changes, we can't guarantee that the enhanced company data provided is always exact or up-to-date.
+- Confirm the identity of the company. We don't verify if the input is an existing organization or that a company uses the output as its standard name.
+- Comprehensively cover companies globally. Microsoft’s compiled company data has global coverage, but offers most coverage in Australia, Canada, United Kingdom, and the United States.
+- Standardize company addresses globally. We currently support standardizing addresses in these countries or regions: Australia, Canada, France, Germany, Italy, Japan, United Kingdom, and the United States.
+- Guarantee accuracy or freshness of data. As business information often changes, we can't guarantee that the enhanced company data provided is always exact or up-to-date.
 
 ## Configure the enrichment
 
-1. Go to **Data** > **Enrichment**.
+1. Go to **Data** > **Enrichment** and select the **Discover** tab.
 
 1. Select **Enrich my data** on the **Enhanced company data** tile.
 
    :::image type="content" source="media/enhanced-company-data-tile.png" alt-text="Enrichment tile in the enrichment hub for company data.":::
 
-1. Select the **Customer data set** and choose the entity containing the addresses you want to enrich. You can select the *Customer* entity to enrich addresses in all your customer profiles or select a segment entity to enrich addresses only in customer profiles contained in that segment.
+1. Review the overview and then select **Next**.
 
-1. Select which type of fields from your company profiles should be used for matching with Microsoft’s compiled company data. This selection will affect the mapping fields you have access to in the next step.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
-1.	Map the company fields from your unified customer entity. The more key identifiers and fields you map, the more likelihood of a higher match rate.
+1. Select which type of fields from your company profiles to use for matching with Microsoft’s compiled company data. This selection will affect the mapping fields you have access to in the next step.
+
+1. Select **Next**.
+
+1. Map your company fields to the company data from Microsoft. For higher match accuracy, add more fields.
 
     :::image type="content" source="media/enhanced-company-data-mapping.png" alt-text="Data-mapping step when configuring a company enrichment.":::
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a name for the enrichment and the output entity.
+1. Provide a **Name** for the enrichment and the **Output entity**.
 
 1. Select **Save enrichment** after reviewing your choices.
 
+1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
+
 ## Enrichment results
 
-To start the enrichment process, select **Run** from the command bar. You can also let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The processing time depends on the size of your customer data.
-
-After the enrichment process completes, you can review the newly enriched customer profiles data under **My enrichments**. Additionally, you'll find the time of the last update and the number of enriched profiles.
-
-You can see a sample of the enriched data in the **Enriched customers preview** tile. Select **See more** and select the **Data** tab to access a detailed view of each enriched profile.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 ### Overview card
 
-The overview card shows details about the coverage of the enrichment. 
+The **Customers changes overview** tile shows details about the coverage of the enrichment
 
-* **Companies processed and changed**: The number of customer company profiles that were successfully enriched.
-
-* **Companies processed and not changed**: The number of customer company profiles that were recognized but not changed. This typically happens when the input data is valid and can't be improved by the enrichment.
-
-* **Companies not processed and not changed**: The number of customer company profiles that were not recognized. This typically happens for input data that are invalid or not supported by the enrichment.
+- **Companies processed and changed**: The number of customer company profiles that were successfully enriched.
+- **Companies processed and not changed**: The number of customer company profiles that were recognized but not changed. This typically happens when the input data is valid and can't be improved by the enrichment.
+- **Companies not processed and not changed**: The number of customer company profiles that weren't recognized. This typically happens for input data that are invalid or not supported by the enrichment.
 
 ## Next steps
 

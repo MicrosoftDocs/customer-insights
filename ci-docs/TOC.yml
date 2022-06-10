@@ -91,27 +91,27 @@
   items:
     - name: Enrich customer profiles
       href: enrichment-hub.md
+    - name: Accounts from Office 365 data
+      href: enrichment-office.md
     - name: Brands and interests
       href: enrichment-microsoft.md
+    - name: Company data from Dun & Bradstreet
+      href: enrichment-dnb.md
+    - name: Company data from Leadspace
+      href: enrichment-leadspace.md
+    - name: Demographics with Experian
+      href: enrichment-experian.md
     - name: Enhanced addresses
       href: enrichment-enhanced-addresses.md
     - name: Enhanced company data
       href: enrichment-enhanced-company-data.md
-    - name: Enrich with Azure Maps
-      href: enrichment-azure-maps.md
-    - name: Enrich with Dun & Bradstreet
-      href: enrichment-dnb.md
-    - name: Enrich with HERE Technologies
-      href: enrichment-here.md
-    - name: Enrich with Leadspace
-      href: enrichment-leadspace.md
-    - name: Enrich with LiveRamp
+    - name: Identity with LiveRamp
       href: enrichment-liveramp.md
-    - name: Enrich with Experian
-      href: enrichment-experian.md
-    - name: Enrich with Office 365 data
-      href: enrichment-office.md
-    - name: Enrich with SFTP custom import
+    - name: Location from Azure Maps
+      href: enrichment-azure-maps.md
+    - name: Location from HERE Technologies
+      href: enrichment-here.md
+    - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
 - name: Unified profiles
