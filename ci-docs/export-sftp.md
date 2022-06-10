@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to SFTP hosts (contains video)"
 description: "Learn how to configure the connection and export to an SFTP location."
-ms.date: 03/03/2021
+ms.date: 06/09/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -24,8 +24,8 @@ Use your customer data in third-party applications by exporting them to a Secure
 ## Known limitations
 
 - SFTP destinations behind firewalls are currently not supported. 
-- The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server. 
-- Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory. 
+- The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server.
+- Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory.
 
 ## Set up connection to SFTP
 
@@ -60,14 +60,17 @@ You can configure this export if you have access to a connection of this type. F
 1. Select the entities, for example segments, you want to export.
 
    > [!NOTE]
-   > Each selected entity will be split up into up to five output files when exported. 
+   > Each selected entity will be split up into up to five output files when exported.
 
 1. Select **Save**.
 
 Saving an export doesn't run the export immediately.
 
-The export runs with every [scheduled refresh](system.md#schedule-tab). 
-You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
+The export runs with every [scheduled refresh](system.md#schedule-tab).
+You can also [export data on demand](export-destinations.md#run-exports-on-demand).
+
+> [!TIP]
+> Export of entities that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
 
 ## Data privacy and compliance
 
