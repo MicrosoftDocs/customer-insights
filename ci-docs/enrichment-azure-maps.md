@@ -27,7 +27,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the Azure Maps tile.
 
-:::image type="content" source="media/enrichment-azure-maps-connection.png" alt-text="Azure Maps connection configuration page.":::
+   :::image type="content" source="media/enrichment-azure-maps-connection.png" alt-text="Azure Maps connection configuration page.":::
 
 1. Enter a name for the connection and a valid Azure Maps API key.
 

@@ -33,7 +33,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Verify** to validate the configuration and then select **Save**.
 
-:::image type="content" source="media/enrichment-HERE-connection.png" alt-text="HERE Technologies connection configuration page.":::
+   :::image type="content" source="media/enrichment-HERE-connection.png" alt-text="HERE Technologies connection configuration page.":::
 
 ### Data privacy and compliance
 

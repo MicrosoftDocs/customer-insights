@@ -33,7 +33,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the LiveRamp tile.
 
-:::image type="content" source="media/liveramp-connection.png" alt-text="Configuration pane to set up the connection to the LiveRamp AbiliTec service. ":::
+   :::image type="content" source="media/liveramp-connection.png" alt-text="Configuration pane to set up the connection to the LiveRamp AbiliTec service. ":::
 
 1. Enter a name for the connection and a valid LiveRamp client ID and a secret.
 
