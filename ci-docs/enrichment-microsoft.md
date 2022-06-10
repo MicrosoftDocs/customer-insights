@@ -32,7 +32,6 @@ On every enriched customer profile, we provide two related values: affinity leve
 
 *Affinity level* consists of four levels and *affinity score* is calculated on a 100-point scale that maps to the affinity levels.
 
-
 |Affinity level |Affinity score  |
 |---------|---------|
 |Very high     | 85-100       |
@@ -46,7 +45,7 @@ Depending on the granularity you would like for measuring the affinity, you can 
 
 We calculate SoV on a 100-point scale. The total SoV across all brands or interests for every enriched customer profile adds up to 100. Unlike affinities, SoV is relative to the brands and interests you select. For example, the SoV values for 'Microsoft' can be different if the selected brands are ('Microsoft', 'GitHub') versus ('Microsoft', 'LinkedIn').
 
-## Supported countries or regions
+## Supported countries/regions
 
 We currently support the following country/region options: Australia, Canada (English), France, Germany, United Kingdom, or United States (English).
 
@@ -63,7 +62,7 @@ We currently support the following country/region options: Australia, Canada (En
 
 1. Review the overview and then select **Next**.
 
-1. To change your country or region, select **Change** next to **Country/Region**. In the **Country/Region settings** pane, choose a [supported country/region](#supported-countries-or-regions) and select **Apply**.
+1. To change your country or region, select **Change** next to **Country/Region**. In the **Country/Region settings** pane, choose a [supported country/region](#supported-countriesregions) and select **Apply**.
 
    > [!NOTE]
    > When choosing your own brands, the system provides suggestions based on the selected country or region. When choosing an industry, you'll get the most relevant brands or interests based on the selected country or region.

@@ -1,7 +1,7 @@
 ---
 title: "Address enhancement enrichment (contains video)"
 description: "Enrich and normalize address information of customer profiles with Microsoft's models."
-ms.date: 01/19/2022
+ms.date: 06/10/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -49,17 +49,17 @@ Address information might be in a nonstandard format and contain spelling errors
 
 ### Limitations
 
-Enhanced addresses only works with the values that already exist in your ingested address data. The model doesn't: 
+Enhanced addresses only work with the values that already exist in your ingested address data. The model doesn't:
 
 1. Verify if the address is a valid address.
 2. Verify if any of the values, such as ZIP codes or street names, are valid.
 3. Change values it doesn't recognize.
 
-The model uses machine learning-based techniques to enhance addresses. While we apply a high confidence threshold for when the model changes an input value, as with any machine learning-based model, 100 percent accuracy is not guaranteed.
+The model uses machine learning-based techniques to enhance addresses. As with any machine learning-based model, 100 percent accuracy isn't guaranteed.
 
 ## Supported countries or regions
 
-We currently support enriching addresses in these countries or regions: 
+We currently support enriching addresses in these countries or regions:
 
 - Australia
 - Canada
@@ -106,9 +106,10 @@ The **Number of customers enriched by field** provides a drill-down into the cov
 ### Overview card
 
 The **Customers changes overview** card shows details about the coverage of the enrichment:
+
 - **Addresses processed and changed**: The number of customer profiles with addresses that were successfully enriched.
 - **Addresses processed and not changed**: The number of customer profiles with addresses that were recognized but not changed. It typically happens when the input data is valid and can't be improved by the enrichment.
-- **Addresses not processed and not changed**: The number of profiles with addresses that were not recognized. Usually for input data that is invalid or not supported by the enrichment.
+- **Addresses not processed and not changed**: The number of profiles with addresses that weren't recognized. Usually for input data that is invalid or not supported by the enrichment.
 
 ## Next steps
 
