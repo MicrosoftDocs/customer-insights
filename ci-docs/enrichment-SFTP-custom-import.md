@@ -1,7 +1,7 @@
 ---
 title: Enrichment with SFTP custom import
 description: General information about the SFTP custom import enrichment.
-ms.date: 04/09/2021
+ms.date: 06/10/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -37,12 +37,12 @@ The directory that contains the file to be imported on the SFTP server must also
 			"attributes": [
 				{
 					"name": "CustomerId",
-					"friendlyName": "Client id",
+					"friendlyName": "Client ID",
 					"dataType": "string"
 				},
 				{
 					"name": "PreferredCity",
-					"friendlyName": "Preferred City for vacation",
+					"friendlyName": "Preferred city for vacation",
 					"dataType": "string"
 				},
 				{

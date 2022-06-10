@@ -46,7 +46,7 @@ Depending on the granularity you would like for measuring the affinity, you can 
 
 We calculate SoV on a 100-point scale. The total SoV across all brands or interests for every enriched customer profile adds up to 100. Unlike affinities, SoV is relative to the brands and interests you select. For example, the SoV values for 'Microsoft' can be different if the selected brands are ('Microsoft', 'GitHub') versus ('Microsoft', 'LinkedIn').
 
-## Supported countries or regions
+## Supported countries/regions
 
 We currently support the following country/region options: Australia, Canada (English), France, Germany, United Kingdom, or United States (English).
 

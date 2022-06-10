@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with data from Microsoft Office 365"
 description: "Use proprietary data from Microsoft Office to enrich your customer profiles with engagement data."
-ms.date: 12/03/2021
+ms.date: 06/10/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -79,26 +79,24 @@ Select **Run** to start the enrichment process.
 
 All data is aggregated up to the account level. The system calculates an engagement score, which ranges from 0 to 100, for every account. The engagement score provides a composite measure of the account engagement across emails and meetings relative to your other accounts. The following list contains the aggregated data that the account engagement enrichment provides:
 
-
 | Data                                                                              | Column name                              |
 | :-------------------------------------------------------------------------------- |:---------------------------------------- |
 | Engagement score                                                                  |  EngagementScore                         |
 | Number of emails to account                                                       |  NoOfEmails_ToAccount                    |
-| Number of emails from account                                                     |  NoOfEmails_FromAccount                  | 
-| Number of meetings initiated by account                                           |  NoOfMeetings_FromAccount                | 
-| Number of meetings initiated by your organization                                 |  NoOfMeetings_ToAccount                  | 
-| Number of people from your organization in meetings with account                  |  NoOfContactsInvolved_Meetings           | 
-| Number of people from your organization in email conversations with account       |  NoOfContactsInvolved_Emails             | 
-| Number of people from account in meetings with your organization                  |  NoOfAccountContactsInvolved_Meetings    | 
-| Number of people from account in email conversations with your organization       |  NoOfAccountContactsInvolved_Emails      | 
-| Engagement start date (first email or meeting in the data)                        |  EngagementStartDate                     | 
-| Days since last email                                                             |  DaysSinceLastEmail                      | 
-| Days since last meeting                                                           |  DaysSinceLastMeeting                    | 
-| Average duration of meetings                                                      |  AverageDuration_Of_Meetings             | 
-| Average duration of email replies from account                                    |  AverageDuration_Of_AccountEmailReplies  | 
-| Aggregation start date                                                            |  AggregationStartDate                    | 
-| Aggregation level (year, month, or week)                                          |  AggregationLevel                        | 
-
+| Number of emails from account                                                     |  NoOfEmails_FromAccount                  |
+| Number of meetings initiated by account                                           |  NoOfMeetings_FromAccount                |
+| Number of meetings initiated by your organization                                 |  NoOfMeetings_ToAccount                  |
+| Number of people from your organization in meetings with account                  |  NoOfContactsInvolved_Meetings           |
+| Number of people from your organization in email conversations with account       |  NoOfContactsInvolved_Emails             |
+| Number of people from account in meetings with your organization                  |  NoOfAccountContactsInvolved_Meetings    |
+| Number of people from account in email conversations with your organization       |  NoOfAccountContactsInvolved_Emails      |
+| Engagement start date (first email or meeting in the data)                        |  EngagementStartDate                     |
+| Days since last email                                                             |  DaysSinceLastEmail                      |
+| Days since last meeting                                                           |  DaysSinceLastMeeting                    |
+| Average duration of meetings                                                      |  AverageDuration_Of_Meetings             |
+| Average duration of email replies from account                                    |  AverageDuration_Of_AccountEmailReplies  |
+| Aggregation start date                                                            |  AggregationStartDate                    |
+| Aggregation level (year, month, or week)                                          |  AggregationLevel                        |
 
 ## See enrichment data on the customer card
 

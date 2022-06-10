@@ -1,7 +1,7 @@
 ---
 title: "Company data enhancement"
 description: "Enrich and normalize company data with Microsoft's models."
-ms.date: 04/22/2022
+ms.date: 06/10/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -87,6 +87,7 @@ The model doesn't:
 ### Overview card
 
 The **Customers changes overview** tile shows details about the coverage of the enrichment
+
 - **Companies processed and changed**: The number of customer company profiles that were successfully enriched.
 - **Companies processed and not changed**: The number of customer company profiles that were recognized but not changed. This typically happens when the input data is valid and can't be improved by the enrichment.
 - **Companies not processed and not changed**: The number of customer company profiles that were not recognized. This typically happens for input data that are invalid or not supported by the enrichment.
