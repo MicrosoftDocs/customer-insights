@@ -1,5 +1,5 @@
 ---
-title: "Export segments to Marketo"
+title: "Export segments to Marketo (preview)"
 description: "Learn how to configure the connection and export to Marketo."
 ms.date: 10/08/2021
 ms.reviewer: mhart

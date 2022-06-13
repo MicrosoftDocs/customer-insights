@@ -1,5 +1,5 @@
 ---
-title: "Export segments to Dynamics 365 Marketing"
+title: "Export segments to Dynamics 365 Marketing (preview)"
 description: "Learn how to configure the connection and export to Dynamics 365 Marketing."
 ms.date: 08/24/2021
 ms.reviewer: mhart

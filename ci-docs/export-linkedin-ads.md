@@ -1,5 +1,5 @@
 ---
-title: "Export segments to LinkedIn Ads"
+title: "Export segments to LinkedIn Ads (preview)"
 description: "Learn how to configure the connection and export to LinkedIn Ads."
 ms.date: 10/08/2021
 ms.reviewer: mhart

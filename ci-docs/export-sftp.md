@@ -1,5 +1,5 @@
 ---
-title: "Export data to SFTP hosts (contains video)"
+title: "Export data to SFTP hosts (preview) (contains video)"
 description: "Learn how to configure the connection and export to an SFTP location."
 ms.date: 06/09/2022
 ms.reviewer: mhart

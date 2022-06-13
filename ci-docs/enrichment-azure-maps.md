@@ -1,5 +1,5 @@
 ---
-title: "Enrich customer profiles with location data from Azure Maps"
+title: "Enrich customer profiles with location data from Azure Maps (preview)"
 description: "General information about the Azure Maps first-party enrichment."
 ms.date: 06/10/2022
 ms.reviewer: mhart

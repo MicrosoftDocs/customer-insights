@@ -1,5 +1,5 @@
 ---
-title: "Export segments to DotDigital"
+title: "Export segments to DotDigital (preview)"
 description: "Learn how to configure the connection and export to DotDigital."
 ms.date: 10/08/2021
 ms.reviewer: mhart

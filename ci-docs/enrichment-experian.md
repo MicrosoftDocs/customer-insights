@@ -1,5 +1,5 @@
 ---
-title: "Enrich customer profiles with demographics from Experian"
+title: "Enrich customer profiles with demographics from Experian (preview)"
 description: "General information about the Experian third-party enrichment."
 ms.date: 06/10/2022
 ms.reviewer: mhart

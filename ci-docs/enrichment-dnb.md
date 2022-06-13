@@ -1,5 +1,5 @@
 ---
-title: "Enrich company profiles with Dun & Bradstreet"
+title: "Enrich company profiles with Dun & Bradstreet (preview)"
 description: "General information about the Dun & Bradstreet third-party enrichment."
 ms.date: 06/10/2022
 ms.reviewer: mhart

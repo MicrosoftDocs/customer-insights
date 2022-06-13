@@ -1,5 +1,5 @@
 ---
-title: "Enrich unified customer profiles"
+title: "Enrich unified customer profiles (preview)"
 description: "Use capabilities from Microsoft and other third-party services to enrich your customer data."
 ms.date: 06/10/2022
 ms.reviewer: mhart

@@ -1,5 +1,5 @@
 ---
-title: "Power Apps connector"
+title: "Power Apps connector (preview)"
 description: "Connect with Power Apps and Power Automate."
 ms.date: 10/01/2021
 ms.reviewer: mhart

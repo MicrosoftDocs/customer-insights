@@ -1,5 +1,5 @@
 ---
-title: "Export segments to Dynamics 365 Sales"
+title: "Export segments to Dynamics 365 Sales (preview)"
 description: "Learn how to configure the connection and export to Dynamics 365 Sales."
 ms.date: 03/03/2021
 ms.reviewer: mhart

@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights segments to Adobe Campaign Standard"
+title: "Export Customer Insights segments to Adobe Campaign Standard (preview)"
 description: "Learn how use Customer Insights segments in Adobe Campaign Standard."
 ms.date: 03/29/2021
 ms.reviewer: mhart

@@ -1,5 +1,5 @@
 ---
-title: "Export segments to Sendinblue"
+title: "Export segments to Sendinblue (preview)"
 description: "Learn how to configure the connection and export to Sendinblue."
 ms.date: 10/08/2021
 ms.reviewer: mhart

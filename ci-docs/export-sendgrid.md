@@ -1,5 +1,5 @@
 ---
-title: "Export segments to SendGrid"
+title: "Export segments to SendGrid (preview)"
 description: "Learn how to configure the connection and export to SendGrid."
 ms.date: 10/08/2021
 ms.reviewer: mhart

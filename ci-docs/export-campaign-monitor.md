@@ -1,5 +1,5 @@
 ---
-title: "Export segments to Campaign Monitor"
+title: "Export segments to Campaign Monitor (preview)"
 description: "Learn how to configure the connection and export to Campaign Monitor."
 ms.date: 10/08/2021
 ms.reviewer: mhart

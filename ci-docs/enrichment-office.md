@@ -1,5 +1,5 @@
 ---
-title: "Enrich customer profiles with data from Microsoft Office 365"
+title: "Enrich customer profiles with data from Microsoft Office 365 (preview)"
 description: "Use proprietary data from Microsoft Office to enrich your customer profiles with engagement data."
 ms.date: 06/10/2022
 ms.reviewer: mhart

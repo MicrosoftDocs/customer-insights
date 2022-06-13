@@ -1,5 +1,5 @@
 ---
-title: "Export segments to Klaviyo"
+title: "Export segments to Klaviyo (preview)"
 description: "Learn how to configure the connection and export to Klaviyo."
 ms.date: 10/08/2021
 ms.reviewer: mhart

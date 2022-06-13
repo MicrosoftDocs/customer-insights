@@ -1,5 +1,5 @@
 ---
-title: "Export segments to Braze"
+title: "Export segments to Braze (preview)"
 description: "Learn how to configure the connection and export to Braze."
 ms.date: 03/29/2022
 ms.reviewer: mhart

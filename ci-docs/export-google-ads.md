@@ -1,5 +1,5 @@
 ---
-title: "Export segments to Google Ads"
+title: "Export segments to Google Ads (preview)"
 description: "Learn how to configure the connection and export to Google Ads."
 ms.date: 03/31/2022
 

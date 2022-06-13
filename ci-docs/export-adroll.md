@@ -1,5 +1,5 @@
 ---
-title: "Export segments to AdRoll"
+title: "Export segments to AdRoll (preview)"
 description: "Learn how to configure the connection and export to AdRoll."
 ms.date: 10/08/2021
 ms.reviewer: mhart

@@ -1,5 +1,5 @@
 ---
-title: "Export segments to Iterable"
+title: "Export segments to Iterable (preview)"
 description: "Learn how to configure the connection and export to Iterable."
 ms.date: 03/29/2022
 ms.reviewer: mhart

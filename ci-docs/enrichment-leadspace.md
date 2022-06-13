@@ -1,5 +1,5 @@
 ---
-title: "Enrich company profiles with Leadspace"
+title: "Enrich company profiles with Leadspace (preview)"
 description: "General information about the Leadspace third-party enrichment."
 ms.date: 06/10/2022
 ms.reviewer: mhart

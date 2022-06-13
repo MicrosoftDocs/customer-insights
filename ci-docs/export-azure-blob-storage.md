@@ -1,5 +1,5 @@
 ---
-title: "Export data to an Azure Blob Storage"
+title: "Export data to an Azure Blob Storage (preview)"
 description: "Learn how to configure the connection and export to Blob storage."
 ms.date: 06/09/2022
 ms.reviewer: mhart
