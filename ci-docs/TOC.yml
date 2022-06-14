@@ -84,7 +84,7 @@
       href: merge-entities.md
     - name: Review data unification
       href: review-unification.md
-    - name: Create a unified business contact profile 
+    - name: Create a unified contact profile 
       href: data-unification-contacts.md
     - name: Update unification settings
       href: data-unification-update.md  
