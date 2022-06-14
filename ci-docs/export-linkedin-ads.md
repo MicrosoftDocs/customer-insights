@@ -56,7 +56,7 @@ You can configure an export if you have access to a connection of this type. For
 
 1. Go to **Data** > **Exports**.
 
-1. To create a new export, select **Add destination**.
+1. To create a new export, select **Add export**.
 
 1. In the **Connection for export** field, choose a connection from the LinkedIn Ads section. If you don't see this section name, there are no connections of this type available to you.
 

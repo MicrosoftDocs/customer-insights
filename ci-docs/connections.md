@@ -38,8 +38,6 @@ To add connections, you need to have [administrator permissions](permissions.md)
 
 1. Go to **Admin** > **Connections (preview)**.
 
-1. Go to the **Connections** tab.
-
 1. Select **Add connection** to create a new connection. Choose from the dropdown menu what type of connection you want to create.
 
 1. In the **Set up connection** pane, provide the required details.
