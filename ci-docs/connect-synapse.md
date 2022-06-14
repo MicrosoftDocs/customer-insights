@@ -1,7 +1,7 @@
 ---
 title: "Connect an Azure Synapse data source (preview)"
 description: "Use a database in Azure Synapse as a data source in Dynamics 365 Customer Insights."
-ms.date: 02/24/2022
+ms.date: 03/25/2022
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -11,7 +11,7 @@ ms.author: mukeshpo
 manager: shellyha
 ---
 
-# Connect an Azure Synapse data source (preview)
+# Connect an Azure Synapse Analytics data source (preview)
 
 Azure Synapse Analytics is an enterprise analytics service that accelerates time to insights across data warehouses and big data systems. Azure Synapse Analytics brings together the best of SQL technologies used in enterprise data warehousing, Spark technologies used for big data, Data Explorer for log and time series analytics, Pipelines for data integration and ETL/ELT, and deep integration with other Azure services such as Power BI, Cosmos DB, and AzureML.
 
@@ -19,16 +19,14 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 ## Prerequisites
 
-The following prerequisites must be met to configure the connection from Dynamics 365 Customer Insights to Azure Synapse.
-
 > [!IMPORTANT]
 > Make sure to set all **role assignments** as described.  
 
-## Prerequisites in Customer Insights
+**In Customer Insights**:
 
 * You have an **Administrator** role in Customer Insights. Learn more about [user permissions in Customer Insights](permissions.md#assign-roles-and-permissions).
 
-In Azure: 
+**In Azure**:
 
 - An active Azure subscription.
 
@@ -42,7 +40,7 @@ In Azure:
 
 - On the Azure Synapse workspace, the *service principal for Customer Insights* needs **Synapse Administrator** role assigned. For more information, see [How to set up access control for your Synapse workspace](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
-## Connect to data lake databases in Azure Synapse Analytics
+## Connect to the data lake database in Azure Synapse Analytics
 
 1. Go to **Data** > **Data sources**.
 
@@ -50,14 +48,16 @@ In Azure:
 
 1. Choose the **Azure Synapse Analytics (Preview)** method.
 
-1. Provide a **Name** for the data source, and select **Next** to create the data source. 
+   :::image type="content" source="media/data_sources_synapse.png" alt-text="Dialog box to connect to Synapse Analytics data":::
+  
+1. Enter a **Name** for the data source and an optional **Description**.
 
 1. Choose an [available connection](connections.md) to Azure Synapse Analytics or create a new one.
 
-1. Choose a **Lake Database** from the workspace connected in the selected Azure Synapse Analytics connection and select **Next**.
+1. Choose a **Database** from the workspace connected in the selected Azure Synapse Analytics connection and select **Next**.
 
-1. Select the entities to ingest from the connected database. 
+1. Select the entities to ingest from the connected database and select **Next**.
 
-1. Optionally, choose the data entities to allow data profiling on. 
+1. Optionally, choose the data entities to allow data profiling on.
 
-1. Select **Save** to apply your selection and start the ingestion of the data from your newly created data source linked to the Lake database tables in Azure Synapse Analytics.
+1. Select **Save** to apply your selection and start the ingestion of the data from your newly created data source linked to the Lake database tables in Azure Synapse Analytics. The **Data sources** page opens showing the new data source in **Refreshing** status.

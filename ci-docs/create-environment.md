@@ -63,6 +63,7 @@ There are two options you can choose from:
 
 The **Microsoft Dataverse** step lets you connect Customer Insights with your Dataverse environment. Share data with Dataverse to use it with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps.
 
+
 Leave this field empty if you don't have your own Dataverse environment and we'll create one for you.
 
 For more information, see [Work with Customer Insights data in Microsoft Dataverse](customer-insights-dataverse.md).

@@ -24,9 +24,11 @@ You must have Contributor or Administrator permissions to create or edit enrichm
 
 1. Select the vertical ellipsis (&vellip;) next to the data source you want to enrich and select **Enrich**.
 
-   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Data sources enrichment page.":::
+   :::image type="content" source="media/data_sources_enrich.png" alt-text="Data sources page with Enrich highlighted":::
 
    The **Discover** tab displays the [supported data source enrichment options](#supported-data-source-enrichments).
+
+   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Data sources enrichment page.":::
 
 1. Select **Enrich my data** to configure a data source enrichment. The output entity name is automatically populated.
 
