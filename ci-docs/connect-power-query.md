@@ -1,13 +1,13 @@
 ---
 title: "Ingest data through a Power Query connector (contains video)"
 description: "Connectors for data sources based on Power Query."
-ms.date: 12/06/2021
-ms.reviewer: mhart
+ms.date: 05/09/2022
+ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
-ms.author: adkuppa
+ms.author: matgos
 manager: shellyha
 searchScope: 
   - ci-data-sources
@@ -17,7 +17,7 @@ searchScope:
 
 # Connect to a Power Query data source
 
-Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights. 
+Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights.
 
 Adding data sources based on Power Query connectors generally follows the steps outlined in this section. However, depending on the connector you use, different information is required. To learn more, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
 
@@ -31,7 +31,7 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 1. Select **Microsoft Power Query**.
 
-1. Provide a **Name** for the data source, and select **Next** to create the data source.
+1. Provide a **Name** and an optional **Description** for the data source, and select **Next**.
 
 1. Choose one of the [available connectors](#available-power-query-data-sources). In this example, we select the **Text/CSV** connector.
 
@@ -41,47 +41,49 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 1. The **Power Query - Edit queries** dialog lets you review and refine the data. The entities that the systems identified in your selected data source appear in the left pane.
 
-   > [!div class="mx-imgBorder"]
-   > ![Edit queries dialog.](media/data-manager-configure-edit-queries.png "Edit queries dialog")
+   :::image type="content" source="media/data-manager-configure-edit-queries.png" alt-text="Edit queries dialog":::
 
-1. You can also transform your data. Select an entity to edit or transform. Use the options in the Power Query window to apply transformations. Each transformation gets listed under **Applied steps**. Power Query provides numerous pre-built transformation options. For more information, see [Power Query Transformations](/power-query/power-query-what-is-power-query#transformations).
+1. You can also transform your data. Select an entity to edit or transform. Use the options in the Power Query window to apply transformations. Each transformation is listed under **Applied steps**. Power Query provides numerous pre-built transformation options. For more information, see [Power Query Transformations](/power-query/power-query-what-is-power-query#transformations).
 
    We recommend you use the following transformations:
 
    - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform** and select **Use first row as headers**.
    - Ensure the data type is set appropriately. For example, for date fields, select a date type.
 
-1. To add additional entities to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**.
+1. To add additional entities to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 6-10 until you have added all entities for this data source.
 
-1. Select **Save** at the bottom of the Power Query window to save the transformations. After saving, you'll find your data source on **Data** > **Data sources**.
+1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
-1. On the **Data sources** page, you'll notice the new data source is in **Refreshing** status.
+### Available Power Query data sources
 
-## Available Power Query data sources
+See the [Power Query connector reference](/power-query/connectors/) for a list of connectors that you can use to import data to Customer Insights.
 
-See the [Power Query connector reference](/power-query/connectors/) for a list of connectors that you can use to import data to Customer Insights. 
+Connectors with a checkmark in the **Customer Insights (Dataflows)** column are available to create new data sources based on Power Query. Review the documentation of a specific connector to learn more about its prerequisites, [query limitations](/power-query/power-query-online-limits), and other details.
 
-Connectors with a checkmark in the **Customer Insights (Dataflows)** column are available to create new data sources based on Power Query. Review the documentation of a specific connector to learn more about its prerequisites, limitations, and other details.
+## Add data from on-premises data sources
+
+Ingesting data from on-premises data sources is supported based on Microsoft Power Platform dataflows (PPDFs). You can enable dataflows in Customer Insights by [providing the Microsoft Dataverse environment URL](create-environment.md) when setting up the environment.
+
+Data sources that are created after associating a Dataverse environment with Customer Insights use [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) by default. Dataflows support on-premises connectivity using the data gateway. You can remove and recreate data sources that existed before a Dataverse environment was associated [using on-premises data gateways](/data-integration/gateway/service-gateway-app).
+
+Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse in Customer Insights. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
+
+> [!IMPORTANT]
+> Make sure your gateways are updated to latest version. You can install an update and reconfigure a gateway from a prompt shown on the gateway screen directly or [download the latest version](https://powerapps.microsoft.com/downloads/). If you don't use the latest gateway version, the dataflow refresh fails with error messages like **The keyword isn't supported: configuration properties. Parameter name: keyword**.
 
 ## Edit Power Query data sources
 
 > [!NOTE]
-> It might not be possible to make changes to data sources that are currently being used in one of the app's processes (*segmentation*, *match*, or *merge*, for example). 
+> It might not be possible to make changes to data sources that are currently being used in one of the app's processes (*segmentation*, *match*, or *merge*, for example).
 >
 > In the **Settings** page, you can track the progress of each of the active processes. When a process completes, you can return to the **Data Sources** page and make your changes.
 
 1. Go to **Data** > **Data sources**.
 
-2. Select the vertical ellipsis (&vellip;) next to the data source you want to change and select **Edit** from the dropdown menu.
-
-   > [!div class="mx-imgBorder"]
-   > ![Edit option.](media/edit-option-data-sources.png "Edit option")
+1. Next to the data source you'd like to update, select **Edit**.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-   
-3. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
-4. Select **Save** in Power Query after completing your edits to save your changes.
+1. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
-
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+1. Select **Save** in Power Query after completing your edits to save your changes.
