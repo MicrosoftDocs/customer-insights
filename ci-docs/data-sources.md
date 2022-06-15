@@ -48,15 +48,15 @@ If your environment does not use Power Platform dataflows, the **Data Sources** 
 
 ## Manage existing data sources
 
-Go to **Data** > **Data sources** to view the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by every column.
+Go to **Data** > **Data sources** to view the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by every column or use the search box to find the data source you want to manage.
 
-Select the data source to see the available options. You can also select the vertical ellipsis (⋮) on a list item to see the options. If you added several data sources, you can use the search box to find it quickly.
+Select the data source to view available actions.
 
 :::image type="content" source="media/data_sources_showmore.png" alt-text="Data source added.":::
 
-- **[Edit](#add-or-edit-data-sources** the data source.
+- [Edit](#add-or-edit-data-sources the data source.
 - **[Refresh](#refresh-data-sources)** the data source.
-- **[Enrich](data-sources-enrichment.md** the data source before unification.
+- [Enrich](data-sources-enrichment.md the data source before unification.
 - **Delete** the data source. A data source can be deleted only if the data is not used in any processing such as unification, insights, activations, or exports.
 
 ## Refresh data sources
@@ -69,8 +69,8 @@ To refresh a data source on demand:
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the vertical ellipsis (&vellip;) next to the data source you want to refresh and select **Refresh** from the dropdown list. The data source is now triggered for a manual refresh. Refreshing a data source will update both the entity schema and data for all the entities specified in the data source.
+1. Select the data source you want to refresh and select **Refresh**. The data source is now triggered for a manual refresh. Refreshing a data source will update both the entity schema and data for all the entities specified in the data source.
 
-1. Select **Stop refreshing** if you want to cancel an existing refresh and the data source will revert to its last refresh status.
+1. Select the status to open the **Progress details** pane and view the progress. To cancel the job, select **Cancel job** at the bottom of the pane.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
