@@ -15,12 +15,13 @@ searchScope:
 
 # Connect to data in a Microsoft Dataverse managed data lake
 
-Microsoft Dataverse users can quickly connect to analytical entities in a Microsoft Dataverse managed lake.
+Microsoft Dataverse users can quickly connect to analytical entities in a Microsoft Dataverse managed lake. 
+Only one data source of an environment can simultaneously use the same Dataverse managed lake.
 
 > [!NOTE]
 > You must be an admin on the Dataverse organization to proceed and view the list of entities available in the managed lake.
 
-## Important considerations
+## Prerequisites
 
 1. Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 2. Only Dataverse entities with [change tracking](/power-platform/admin/enable-change-tracking-control-data-synchronization) enabled are visible. These entities can be exported to the Dataverse-managed data lake and used in Customer Insights. Out-of-box Dataverse tables have change tracking enabled by default. You need to turn change tracking on for custom tables. To check if a Dataverse table is enabled for change tracking, go to [Power Apps](https://make.powerapps.com) > **Data** > **Tables**. Find the table of your interest and select it. Go to **Settings** > **Advanced options** and review the **Track changes** setting.
@@ -46,7 +47,9 @@ Microsoft Dataverse users can quickly connect to analytical entities in a Micros
 
 1. Save your selection to start syncing the selected tables from Dataverse. You'll find the newly added connection on the **Data sources** page. It will be queued for refresh and show the entity count as 0 until all the selected tables are synced.
 
-Only one data source of an environment can simultaneously use the same Dataverse managed lake.
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the **Entities** page. For more information, see [Entities](entities.md).
 
 ## Edit a Dataverse managed lake data source
 
@@ -58,3 +61,5 @@ To connect to a different Dataverse data lake, [create a new data source](#conne
 1. Next to the data source you'd like to update, select **Edit**.
 
 1. Select additional entities from the available list of entities and select **Save**.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]

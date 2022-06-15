@@ -143,6 +143,10 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the **Entities** page. For more information, see [Entities](entities.md).
+
 
 ## Edit an Azure Data Lake Storage data source
 
@@ -179,3 +183,5 @@ You can update the *Connect to storage account using* option. For more informati
 1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
 
 1. Click **Save** to apply your changes and return to the **Data sources** page.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
