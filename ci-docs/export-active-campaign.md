@@ -32,7 +32,6 @@ Export segments of unified customer profiles to ActiveCampaign and use them for 
 You must be an [administrator](permissions.md) in Customer Insights.
 
 [!INCLUDE [export-connection](includes/export-connection.md)]
-
 1. Enter your [ActiveCampaign API Key and REST Endpoint Hostname](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key). The REST Endpoint Hostname is the hostname only, without https://.
 
 1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
