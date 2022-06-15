@@ -1,5 +1,5 @@
 ---
-title: "Enrich unified customer profiles (preview)"
+title: "Data enrichment (preview) overview"
 description: "Use capabilities from Microsoft and other third-party services to enrich your customer data."
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -17,17 +17,29 @@ searchScope:
   - customerInsights
 ---
 
-# Enrich unified customer profiles (preview)
+# Data enrichment (preview) overview
 
 Use data from sources like Microsoft and other partners to enrich your customer data.
 
-:::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page.":::
+## Enrichments and connections
 
-Go to **Data** > **Enrichment** to work with enrichment options.  
+Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections can be used by administrators and contributors to configure enrichments.  
+
+## Multiple enrichments of the same type
+
+The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For example, enrich data only for a specific segment. You can configure several enrichments of the same type and reuse the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on each tile on the **Discover** tab of the **Enrichment** page.
+
+## Enrich data sources before unification
+
+You can enrich your customer data before data unification to help increase the quality of a data match. For more information, see [data source enrichment](data-sources-enrichment.md).
+
+## Create an enrichment
 
 You need to have Contributor or Administrator permissions to create or edit enrichments. For more information, see [Permissions](permissions.md).
 
-On the **Discover** tab, you'll find all supported enrichment options.
+Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrichment options.
+
+:::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page.":::
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 
@@ -53,11 +65,9 @@ On the **Discover** tab, you'll find all supported enrichment options.
 
 ---
 
-On the **My enrichments** tab, you can see the enrichments you've configured and edit their properties. You can also create [segments](segments.md) or [measures](measures.md) from enrichments.
-
 ## Manage existing enrichments
 
-Go to the **My enrichments** tab to see all configured enrichments. Each enrichment is represented as a row that includes additional information about the enrichment.
+Go to **Data** > **Enrichment**. On the **My enrichments** tab, you can see the enrichments you've configured and edit their properties. You can also create [segments](segments.md) or [measures](measures.md) from enrichments.
 
 Select the enrichment to see the available options. You can also select the vertical ellipsis (&vellip;) on a list item to see the options. If you configured several enrichments, you can use the search box to find it quickly.
 
@@ -70,18 +80,6 @@ Select the enrichment to see the available options. You can also select the vert
 - **Delete** the enrichment.
 
 Run or deactivate multiple enrichments at once by selecting them in the list. View and edit options aren't available as bulk action. They only work for one enrichment at a time.
-
-## Enrichments and connections
-
-Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections can be used by administrators and contributors to configure enrichments.  
-
-## Multiple enrichments of the same type
-
-The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For example, enrich data only for a specific segment. You can configure several enrichments of the same type and reuse the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on each tile on the **Discover** tab of the **Enrichment** page.
-
-## Enrich data sources before unification
-
-You can enrich your customer data before data unification to help increase the quality of a data match. For more information, see [data source enrichment](data-sources-enrichment.md).
 
 ## Run or refresh enrichments
 
