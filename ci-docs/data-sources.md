@@ -54,9 +54,9 @@ Select the data source to view available actions.
 
 :::image type="content" source="media/data_sources_showmore.png" alt-text="Data source added.":::
 
-- [Edit](#add-or-edit-data-sources the data source.
-- **[Refresh](#refresh-data-sources)** the data source.
-- [Enrich](data-sources-enrichment.md the data source before unification.
+- [Edit](#add-or-edit-data-sources) the data source to change its properties.
+- **[Refresh](#refresh-data-sources)** the data source to include the latest data.
+- [Enrich](data-sources-enrichment.md) the data source before unification.
 - **Delete** the data source. A data source can be deleted only if the data is not used in any processing such as unification, insights, activations, or exports.
 
 ## Refresh data sources
