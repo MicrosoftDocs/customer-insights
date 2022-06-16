@@ -24,44 +24,42 @@ Customer profiles that match the filters of a segment definition are referred as
 
 ## Create a new segment
 
-There are multiple ways to create a new segment: 
+There are multiple ways to create a new segment:
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 
-- Complex segment with segment builder: [Build our own](segment-builder.md#create-a-new-segment) 
-- Simple segments with one operator: [Quick segment](segment-builder.md#quick-segments) 
+- Complex segment with segment builder: [Build your own](segment-builder.md) 
+- Simple segments with one operator: [Quick segment](segment-quick.md) 
 - AI-powered way to find similar customers: [Similar Customers](find-similar-customer-segments.md) 
 - AI-powered suggestions based on measures or attributes: [Suggested segments to improve measures](suggested-segments.md) 
 - Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md) 
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-- Complex segment with segment builder: [Build our own](segment-builder.md#create-a-new-segment)
+- Complex segment with segment builder: [Build your own](segment-builder.md)
 
 ---
 
 ## Manage existing segments
 
-Go to the **Segments** page to view all your saved segments and manage them.
+Go to the **Segments** page to view the segments you created, their status, the number of members, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
 
-Each segment is represented by a row that includes additional information about the segment.
+Select a segment to view available actions.
 
 :::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options." lightbox="media/segments-selected-segment.png":::
 
-The following actions are available when you select a segment:
-
-- **View** the segment details, including member count trend a preview of segment members.
+- **View** the segment details, including member count trend and a preview of segment members.
 - **Download** the list of members as a .CSV file.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
 - **Refresh** the segment to include the latest data.
-- **Activate** or **Deactivate** the segment. For inactive segments, the segment definition exists but it doesn't contain any customers yet. An active segment looks for customers that match the segment definition. If a [scheduled refresh](system.md#schedule-tab) is configured, inactive segments have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. When an inactive segment is activated, it will refresh and will be included in scheduled refreshes.
-  Alternatively, you can use the **Schedule later** functionality in the **Activate/Deactivate** dropdown to specify a future date and time for activation and deactivation of a particular segment.
+- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](system.md#schedule-tab). Inactive segments have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
+<!--- I don't see this. Alternatively, you can use the **Schedule later** functionality in the **Activate/Deactivate** dropdown to specify a future date and time for activation and deactivation of a particular segment. --->
+- **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed during system refreshes.
 - **[Find similar customers](find-similar-customer-segments.md)** from the segment.
 - **Rename** the segment.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
-- **Download** the list of members as a .CSV file.
-- **Manage exports** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
+- **[Manage exports](segments.md#** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
@@ -69,7 +67,9 @@ The following actions are available when you select a segment:
 
 ## Refresh segments
 
-You can refresh all segments at once by selecting **Refresh all** on the **Segments** page or you can refresh one or multiple segments when you select them and choose **Refresh** in from the options. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**. When a recurring refresh is configured, the following rules apply:
+Segments can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh all segments at once, select **Refresh all** on the **Segments** page. To refresh one or multiple segments, select them and choose **Refresh**.
+
+To configure a recurring refresh, go to **Admin** > **System** > **Schedule**. When a recurring refresh is configured, the following rules apply:
 
 - All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. Once the refresh is complete the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
 - Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segments was run or refreshed manually.
@@ -78,7 +78,7 @@ You can refresh all segments at once by selecting **Refresh all** on the **Segme
 
 ## Export segments
 
-You can export a segment from the segments page or the [exports page](export-destinations.md). 
+Export a segment from the segments page or the [exports page](export-destinations.md).
 
 1. Go to the **Segments** page.
 

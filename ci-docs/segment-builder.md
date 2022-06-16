@@ -1,5 +1,5 @@
 ---
-title: "Create segments with the segment builder"
+title: "Create complex segments with segment builder"
 description: "Create segments of customers to group them based on various attributes."
 ms.date: 03/25/2022
 
@@ -16,13 +16,12 @@ searchScope:
   - customerInsights
 ---
 
-# Create segments
+# Create complex segments with segment builder
 
-Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on. Segments are managed on the **Segments** page. You can [create new segments](#create-a-new-segment) using the segment builder or [create quick segments](#quick-segments) from other areas of the app.
+Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on.
 
 > [!TIP]
-> - Quick segments are only supported in environments for **individual customers**.
-> - Segments based on **individual customers** automatically include available contact information for segment members. In environments for **business accounts**, segments are based on accounts (companies or subsidiaries). To include contact information in a segment, use the **Project attributes** functionality in the segment builder. Ensure that the contact data sources are [semantically mapped to the ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) entity.
+> Segments based on **individual customers** automatically include available contact information for segment members. In environments for **business accounts**, segments are based on accounts (companies or subsidiaries). To include contact information in a segment, use the **Project attributes** functionality in the segment builder. Ensure that the contact data sources are [semantically mapped to the ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) entity.
 
 ## Segment builder
 
@@ -30,7 +29,7 @@ The following image illustrates the various aspects of the segment builder. It s
 
 :::image type="content" source="media/segment-builder-overview.png" alt-text="Elements of the segment builder." lightbox="media/segment-builder-overview.png":::
 
-1. Organize your segment with rules and subrules. Each rule or subrule consists of conditions. Combine the conditions with logical operators
+1. Organize your segment with rules and subrules. Each rule or subrule consists of conditions. Combine the conditions with logical operators.
 
 1. Choose the [relationship path](relationships.md) between entities that applies to a rule. The relationship path determines which attributes can be used in a condition.
 
@@ -48,11 +47,7 @@ The following image illustrates the various aspects of the segment builder. It s
 
 The example above illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
 
-## Create a new segment
-
-There are multiple ways to create a new segment. This section describes how to build your own segment from scratch. You can also create a *quick segment* based on existing entities or make use of machine learning models to get *suggested segments*. For more information, go to [Segments overview](segments.md).
-
-While creating a segment, you can save a draft. In the draft stage, a segment is saved as an inactive segment. When you complete the segment configuration, run it to activate the segment. You can also **Activate** a segment from the **All segments** page.
+## Create a new segment with segment builder
 
 1. Go to the **Segments** page.
 
@@ -87,7 +82,7 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
 
    When using the OR operator, all conditions must be based on entities included in the relationship path.
 
-   - You can create multiple rules to create different sets of customer records. You can combine groups to include the customers required for your business case. To create a new rule, select **Add rule**. Specifically, if you can't include and entity in a rule because of the specified relationship path, you have to create a new rule to choose attributes form it.
+   - You can create multiple rules to create different sets of customer records. You can combine groups to include the customers required for your business case. To create a new rule, select **Add rule**. Specifically, if you can't include an entity in a rule because of the specified relationship path, you have to create a new rule to choose attributes form it.
 
       :::image type="content" source="media/segment-rule-grouping.png" alt-text="Add a new rule to a segment and choose the set operator.":::
 
@@ -121,44 +116,19 @@ While creating a segment, you can save a draft. In the draft stage, a segment is
 
    :::image type="content" source="media/segments_edit_details.png" alt-text="Edit details dialog box.":::
 
-1. Select **Run** to save the segment, activate it and begin processing your segment based on all the rules and conditions. Otherwise, it will be saved as an inactive segment.
+1. Select **Run** to save the segment, activate it and begin processing your segment based on all the rules and conditions. The **Segments** page displays the new segment.
 
-1. Select **Back to segments** to go back to the **Segments** page.
+## Segment builder tips
 
-1. By default, the segment is created as a dynamic segment. It means that the segment is refreshed during system refreshes. To [stop the automatic refresh](segments.md#manage-existing-segments), select the segment choose the **Make static** option. Static segments can be [refreshed manually](segments.md#refresh-segments) at any time.
+When creating a segment using the segment builder, keep in mind the following tips:
 
-> [!TIP]
-> - The segment builder won't suggest valid values from entities when setting the operators for the conditions. You can go to **Data** > **Entities** and download the entity data to see which values are available.
-> - Conditions based on the dates let you switch between fixed dates and a floating date range.
-> - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
-> - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
-> - The **Undo** and **Redo** controls in the command bar let you roll back changes.
-> - After creating a segment, some segments allow you to [track the usage of the segment](segments.md#track-usage-of-a-segment).
-
-## Quick segments
-
-Quick segments let you build simple segments with a single operator quickly for faster insights.
-
-1. On the **Segments** page, select **New** > **Create from**.
-   - Select the **Profiles** option to build a segment that is based on the *unified customer* entity.
-   - Select the **Measures** option to build a segment around measures you have previously created.
-   - Select the **Intelligence** option to build a segment around one of the output entities you generated using either the **Predictions** or **Custom Models** capabilities.
-
-2. In the **New quick segment** dialog box, select an attribute from the **Field** dropdown.
-
-3. The system will provide more insights that help you create better segments of your customers.
-   - For categorical fields, we'll show 10 top customer counts. Choose a **Value** and select **Review**.
-   - For a numerical attribute, the system will show what attribute value falls under each customer's percentile. Choose an **Operator** and a **Value**, then select **Review**.
-
-4. The system will provide you with an **Estimated segment size**. You can choose whether to generate the segment you've defined, or first revisit it to get a different segment size.
-
-   :::image type="content" source="media/quick-segment-name.png" alt-text="Name and estimation for a quick segment.":::
-
-5. Provide a **Name** and **Output entity name** for your segment. Optionally, add [tags](work-with-tags-columns.md#manage-tags).
-
-6. Select **Save** to create your segment.
-
-7. After the segment has finished processing, you can view it like any other segment you've created.
+- The segment builder won't suggest valid values from entities when setting the operators for the conditions. You can go to **Data** > **Entities** and download the entity data to see which values are available.
+- Conditions based on dates let you switch between fixed dates and a floating date range.
+- If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
+- You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
+- The **Undo** and **Redo** controls in the command bar let you roll back changes.
+- Save a segment configuration as a draft and complete it later. As a draft, the segment is considered inactive. When ready, select **Run** or **Activate** to activate the segment.
+- After creating a segment, some segments allow you to [track the usage of the segment](segments.md#track-usage-of-a-segment).
 
 ## Next steps
 

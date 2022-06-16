@@ -129,8 +129,10 @@
   items:
     - name: Segments overview
       href: segments.md
-    - name: Create segments
+    - name: Create with segment builder
       href: segment-builder.md
+    - name: Create with quick segments
+      href: segment-quick.md
     - name: Suggested segments based on measures
       href: suggested-segments.md
     - name: Suggested segments based on activity
