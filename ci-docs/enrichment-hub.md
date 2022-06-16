@@ -19,11 +19,7 @@ searchScope:
 
 # Data enrichment (preview) overview
 
-Use data from sources like Microsoft and other partners to enrich your customer data.
-
-## Enrichments and connections
-
-Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections can be used by administrators and contributors to configure enrichments.  
+Use data from sources like Microsoft and other partners to enrich your customer data. Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections can be used by administrators and contributors to configure enrichments.  
 
 ## Multiple enrichments of the same type
 
@@ -35,7 +31,7 @@ You can enrich your customer data before data unification to help increase the q
 
 ## Create an enrichment
 
-You need to have Contributor or Administrator permissions to create or edit enrichments. For more information, see [Permissions](permissions.md).
+You need to have Contributor or Administrator [permissions](permissions.md) to create or edit enrichments.
 
 Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrichment options.
 
@@ -67,19 +63,19 @@ Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrich
 
 ## Manage existing enrichments
 
-Go to **Data** > **Enrichment**. On the **My enrichments** tab, you can see the enrichments you've configured and edit their properties. You can also create [segments](segments.md) or [measures](measures.md) from enrichments.
+Go to **Data** > **Enrichment**. On the **My enrichments** tab, view the configured enrichments, their status, number of enriched customers, and the last time the data was refreshed. You can sort the list of enrichments by any column or use the search box to find the enrichment you want to manage.
 
-Select the enrichment to see the available options. You can also select the vertical ellipsis (&vellip;) on a list item to see the options. If you configured several enrichments, you can use the search box to find it quickly.
+Select the enrichment to view available actions.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Options to manage enrichments in the list of enrichments.":::
 
 - **View** enrichment details with the number of enriched customer profiles.
 - **Edit** the enrichment configuration.
-- **Run** the enrichment to update customer profiles with the latest data.
+- **Run** the enrichment to update customer profiles with the latest data. Run multiple enrichments at once by selecting them in the list.
 - **Deactivate** an existing enrichment to stop it from refreshing automatically with every scheduled refresh. Data from the last successful refresh will continue to be available. **Activate** an inactive enrichment to restart automatic refreshing with every scheduled refresh.
 - **Delete** the enrichment.
 
-Run or deactivate multiple enrichments at once by selecting them in the list. View and edit options aren't available as bulk action. They only work for one enrichment at a time.
+You can also create [segments](segments.md) or [measures](measures.md) from enrichments.
 
 ## Run or refresh enrichments
 

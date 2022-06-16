@@ -89,7 +89,7 @@
 
 - name: Data enrichment
   items:
-    - name: Enrich customer profiles
+    - name: Data enrichment overview
       href: enrichment-hub.md
     - name: Accounts from Office 365 data
       href: enrichment-office.md
