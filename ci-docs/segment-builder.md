@@ -63,18 +63,11 @@ The example above illustrates the segmentation capability. We've defined a segme
 
 1. Select **Add condition** to add more conditions to a rule. To create a rule under the current rule, select **Add sub-rule**.
 
-1. If a rule uses other entities than the *Customer* entity, you have to set the relationship path. The relationship path is required to inform the system over which relationships you want to access the unified customer entity. Select **Set relationship path** to map selected entity to the unified customer entity. If there's only one possible relationship path, the system will select it automatically. Different relationship paths can yield different results. Every rule can have its own relationship path.
+1. If a rule uses other entities than the *Customer* entity, select **Set relationship path** to map the selected entity to the unified customer entity. If there's only one possible relationship path, the system selects it automatically. Different [relationship paths](relationships.md#relationship-paths) can yield different results. Every rule can have its own relationship path.
 
    :::image type="content" source="media/relationship-path.png" alt-text="Potential relationship path when creating a rule based on an entity mapped to the unified customer entity.":::
 
-   For example, the *eCommerce_eCommercePurchases* entity in the screenshot has four options to map to the *Customer* entity:
-   - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > Customer
-   - eCommerce_eCommercePurchases > Customer
-   - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
-   - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer
-   When choosing the last option, we can include attributes from all listed entities in the rule conditions. We'll likely get fewer results because the matching customer records need to be part of all entities. In this example, they have purchased goods through e-commerce(*eCommerce_eCommercePurchases*) at a point of sale(*POS_posPurchases*) and participate in our loyalty program (*loyaltyScheme_loyCustomers*). When choosing the second option, we can only choose attributes from the *eCommerce_eCommercePurchases* and the *Customer* entity. This likely results in more resulting customer profiles.
-
-1. If you have multiple conditions in a rule, you can choose which logical operator connects them.  
+1. If you have multiple conditions in a rule, choose which logical operator connects them.  
    - **AND** operator: All conditions must be met to include a record in the segment. This option is most useful when you define conditions across different entities.
    - **OR** operator: Either one of the conditions must be met to include a record in the segment. This option is most useful when you define multiple conditions for the same entity.
 
@@ -82,7 +75,7 @@ The example above illustrates the segmentation capability. We've defined a segme
 
    When using the OR operator, all conditions must be based on entities included in the relationship path.
 
-   - You can create multiple rules to create different sets of customer records. You can combine groups to include the customers required for your business case. To create a new rule, select **Add rule**. Specifically, if you can't include an entity in a rule because of the specified relationship path, you have to create a new rule to choose attributes form it.
+   - To create different sets of customer records, create multiple rules. To include the customers required for your business case, combine groups. To create a new rule, select **Add rule**. Specifically, if you can't include an entity in a rule because of the specified relationship path, create a new rule to choose attributes from it.
 
       :::image type="content" source="media/segment-rule-grouping.png" alt-text="Add a new rule to a segment and choose the set operator.":::
 
@@ -95,7 +88,7 @@ The example above illustrates the segmentation capability. We've defined a segme
 1. By default, segments generate the output entity containing all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity.
 
    > [!IMPORTANT]
-   > For segments based on business accounts, details of one or more contacts of each account from the *ContactProfile* entity needs to be included in the segment to allow that segment to be activated or exported to destinations that require contact information. For more information about the *ContactProfile* entity, see [Semantic mappings](semantic-mappings.md).
+   > For segments based on business accounts, details of one or more contacts of each account from the *ContactProfile* entity must be included in the segment to allow that segment to be activated or exported to destinations that require contact information. For more information about the *ContactProfile* entity, see [Semantic mappings](semantic-mappings.md).
    > A sample output for a segment based on business accounts with projected attributes of contacts could look like this:
    >
    > |ID  |Account name  |Revenue  |Contact name  | Contact role|
@@ -104,7 +97,7 @@ The example above illustrates the segmentation capability. We've defined a segme
 
    :::image type="content" source="media/segments-project-attributes.png" alt-text="Example of projected attributes selected in the side pane to be added to the output entity.":::
   
-   For example: A segment is based on an entity that contains purchase data, which is related to the *Customer* entity. The segment looks for all customers from Spain that purchased goods in the current year. You can choose to append attributes like the price of the goods, or the purchase date to all matching customer records in the output entity. This information might be useful to analyze seasonal correlations to the total spending.
+   For example: A segment is based on an entity that contains purchase data, which is related to the *Customer* entity. The segment looks for all customers from Spain that purchased goods in the current year. You can choose to append attributes like the price of goods, or the purchase date to all matching customer records in the output entity. This information might be useful to analyze seasonal correlations to the total spending.
 
    > [!NOTE]
    > - **Project attributes** only works for entities that have a one-to-many relationship with the customer entity. For example, one customer can have multiple subscriptions.
@@ -116,7 +109,10 @@ The example above illustrates the segmentation capability. We've defined a segme
 
    :::image type="content" source="media/segments_edit_details.png" alt-text="Edit details dialog box.":::
 
-1. Select **Run** to save the segment, activate it and begin processing your segment based on all the rules and conditions. The **Segments** page displays the new segment.
+1. Select **Run** to save the segment, activate it, and begin processing your segment based on all the rules and conditions. The **Segments** page displays the new segment.
+
+   > [!TIP]
+   > Save a segment configuration as a draft and complete it later. As a draft, the segment is considered inactive. When ready, select **Run** or **Activate** to activate the segment.
 
 ## Segment builder tips
 
@@ -127,7 +123,6 @@ When creating a segment using the segment builder, keep in mind the following ti
 - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
 - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
 - The **Undo** and **Redo** controls in the command bar let you roll back changes.
-- Save a segment configuration as a draft and complete it later. As a draft, the segment is considered inactive. When ready, select **Run** or **Activate** to activate the segment.
 - After creating a segment, some segments allow you to [track the usage of the segment](segments.md#track-usage-of-a-segment).
 
 ## Next steps

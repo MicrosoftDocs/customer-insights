@@ -1,5 +1,5 @@
 ---
-title: "Segment insights for existing segments"
+title: "Segment insights"
 description: "Get insights on existing segments to see differences and commonalities."
 ms.date: 06/10/2020
 
@@ -52,13 +52,13 @@ Select an insight to see the analysis results:
 
 ## Segment differentiators
 
-Segment differentiators help you find out what differentiates a segment from the rest of your customers or from another segment. You just have to select a segment and the system will identify profile attributes and measures that distinguish the selected segment.
+Segment differentiators help you find out what differentiates a segment from the rest of your customers or from another segment. Select a segment and the system identifies profile attributes and measures that distinguish the selected segment.
 
 ### Run a differentiator analysis
 
 1. Go to **Segments** and select the **Insights (preview)** tab.
 
-1. Select **New** and choose the **Overlap** option in the **Choose Insight Type** pane.
+1. Select **New** and choose the **Differentiators** option in the **Choose Insight Type** pane.
 
 1. Choose the segment you want to analyze as **Primary segment** and select **Next**.
 
@@ -66,21 +66,20 @@ Segment differentiators help you find out what differentiates a segment from the
 
 1. Optionally, choose one or more fields of interest to focus the analysis on specific attributes and select **Next**.
 
-1. Provide a name for you overlap analysis, an optional display name, and a description.
+1. Provide a name for you differentiator analysis, an optional display name, and a description.
 
-1. Select **Save** to start the analysis. The overlap analysis is ready when the status changes from Refreshing to Successful.
+1. Select **Save** to start the analysis. The differentiator analysis is ready when the status changes from Refreshing to Successful.
 
 ### View and optimize a differentiators analysis
 
-After completing the analysis, find details on this insight on **Segments** > **Insights (preview)**.
+1. After completing the analysis, go to **Segments** > **Insights (preview)**.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-differentiators.png" alt-text="Segment differentiator insight details.":::
+   :::image type="content" source="media/segment-differentiators.png" alt-text="Segment differentiator insight details.":::
 
-Select an insight to see the analysis results. A differentiator analysis includes two tabs. The **Attributes** tab lists profile attributes considered as differentiators. The **Measures** tab lists differentiators. Each tab includes the following details:
+1. Select an insight to see the analysis results. A differentiator analysis includes two tabs. The **Attributes** tab lists profile attributes considered as differentiators. The **Measures** tab lists differentiators. Each tab includes the following details:
 
-- Ranked list of differentiators, sorted by difference score.
-- The **Difference score** for each differentiator. The difference score represents the degree of difference of an attribute between two segments. The higher the difference score, the more the attributes differ between the two segments. Select a score to open the **Difference score** pane with the distributions of values for that attribute.
+  - Ranked list of differentiators, sorted by difference score.
+  - The **Difference score** for each differentiator. The difference score represents the degree of difference of an attribute between two segments. The higher the difference score, the more the attributes differ between the two segments. Select a score to open the **Difference score** pane with the distributions of values for that attribute.
 
 ## Manage segment insights
 

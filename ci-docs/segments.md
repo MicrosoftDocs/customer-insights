@@ -24,7 +24,7 @@ Customer profiles that match the filters of a segment definition are referred as
 
 ## Create a new segment
 
-There are multiple ways to create a new segment:
+Choose how to create a new segment based on your target audience.
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 
@@ -36,7 +36,7 @@ There are multiple ways to create a new segment:
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-- Complex segment with segment builder: [Build your own](segment-builder.md)
+- Simple or complex segment with segment builder: [Build your own](segment-builder.md)
 
 ---
 
@@ -53,13 +53,12 @@ Select a segment to view available actions.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
 - **Refresh** the segment to include the latest data.
-- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](system.md#schedule-tab). Inactive segments have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
-<!--- I don't see this. Alternatively, you can use the **Schedule later** functionality in the **Activate/Deactivate** dropdown to specify a future date and time for activation and deactivation of a particular segment. --->
+- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](system.md#schedule-tab) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
 - **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed during system refreshes.
-- **[Find similar customers](find-similar-customer-segments.md)** from the segment.
+- [**Find similar customers**](find-similar-customer-segments.md) from the segment.
 - **Rename** the segment.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
-- **[Manage exports](segments.md#** to see exports related segment and manage them. [Learn more about exports.](export-destinations.md)
+- [**Manage exports**](segments.md#export-segments) to see export-related segments and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
@@ -78,17 +77,13 @@ To configure a recurring refresh, go to **Admin** > **System** > **Schedule**. W
 
 ## Export segments
 
-Export a segment from the segments page or the [exports page](export-destinations.md).
+Export segments to other apps to act on the data. Export a segment from the segments page or the [exports page](export-destinations.md).
 
-1. Go to the **Segments** page.
+1. Go to the **Segments** page and select the segment you want to export.
 
-1. Select the vertical ellipsis (&vellip;) for the segment you want to export.
+1. Select **Manage exports**. The page **Exports (preview) for segment** opens. View all configured exports grouped by whether they contain the current segment or not.
 
-1. Select **Manage exports** from the actions dropdown list.
-
-1. The page **Exports (preview) for segment** opens. You can see all configured exports grouped by whether they contain the current segment or not.
-
-   1. To add the selected segment to an export, **Edit** the respective export to select the corresponding segment, then save. In environments for individual customers, you can instead select the export in the list and select **Add segment** to achieve the same outcome.
+   1. To add the selected segment to an export, **Edit** the respective export to select the corresponding segment, then save. In environments for individual customers, select the export in the list and select **Add segment** to achieve the same outcome.
 
    1. To create a new export with the selected segment, select **Add export**. For more information about creating exports, see [Set up a new export](export-destinations.md#set-up-a-new-export).
 
@@ -98,9 +93,9 @@ Export a segment from the segments page or the [exports page](export-destination
 
 If you use segments in apps, which are based on the same Microsoft Dataverse organization that is connected with Customer Insights, you can track the usage of a segment. For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
 
-When editing a segment that is being used within the Customer Insights environment, or in a customer journey in Marketing, a banner in the [segment builder](segment-builder.md) informs you about the dependencies. You can inspect the dependency details directly from the banner or by selecting **Usage** in the segment builder.
+When editing a segment that is being used within the Customer Insights environment, or in a customer journey in Marketing, a banner in the [segment builder](segment-builder.md) informs you about the dependencies. Inspect the dependency details directly from the banner or by selecting **Usage** in the segment builder.
 
-The **Segment usage** pane shows the details about the usage of this segment in Dataverse-based apps. For segments used in customer journeys, you’ll find a link to inspect the journey in Marketing where this segment is used. If you have permissions to access the Marketing app, you can access more details there.
+The **Segment usage** pane shows the details about the usage of this segment in Dataverse-based apps. For segments used in customer journeys, you’ll find a link to inspect the journey in Marketing where this segment is used. If you have permissions to access the Marketing app, view more details there.
 
 :::image type="content" source="media/segment-usage-pane.png" alt-text="Side pane with details of the segment usage in the segment builder.":::
 
@@ -116,13 +111,9 @@ Usage is currently tracked in the following Dataverse-based apps:
 
 ## View processing history and segment members
 
-You can see consolidated data about a segment by reviewing its details.
-
 On the **Segments** page, select the segment you want to review.
 
-The upper part of the page includes a trend graph that visualizes changes in member count. Hover over data points to see the member count on a specific date.
-
-You can update the time frame of the visualization.
+The upper part of the page includes a trend graph that visualizes changes in member count. Hover over data points to see the member count on a specific date. Change the time frame of the visualization.
 
 > [!div class="mx-imgBorder"]
 > ![Segment time range.](media/segment-time-range.png "Segment time range")
@@ -132,6 +123,6 @@ The lower part contains a list of the segment members.
 > [!NOTE]
 > Fields that appear in this list are based on the attributes of your segment's entities.
 >
->The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, you need to [export the segment](export-destinations.md).
+>The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, [export the segment](export-destinations.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

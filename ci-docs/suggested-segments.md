@@ -1,5 +1,5 @@
 ---
-title: "Machine learning powered suggested segments"
+title: "Suggested segments based on measures"
 description: "Let machine learning help you find new and interesting segments based on customer attributes."
 ms.date: 10/15/2021
 ms.reviewer: mhart
@@ -14,12 +14,12 @@ searchScope:
   - customerInsights
 ---
 
-# Suggested segments (preview)
+# Suggested segments based on measures (preview)
 
 Discover interesting segments of your customers with the help of an AI model. This machine learning powered feature suggests segments based on measures or customer attributes. It can help improve your Key Performance Indicators (KPIs) or better understand the influence of attributes in context of other attributes.
 
 > [!NOTE]
-> The suggested segments feature uses automated means to evaluate data and make predictions based on that data, and therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Your use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including this feature, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
+> The suggested segments feature uses automated means to evaluate data and make predictions based on that data. Therefore, it has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Your use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including this feature, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
 :::image type="content" source="media/suggested-segments.png" alt-text="Suggested segments page that shows details of a suggestion in a side pane.":::
 
@@ -33,7 +33,7 @@ For example, you track a measure called *TotalSpendPerCustomer*. As a business, 
 
 You can choose a customer attribute instead of a measure as the primary attribute. Based on your choice of influencing attributes, the AI model creates a series of suggestions that show how the selected attributes influence the primary attribute.
 
-For example, you choose *Rewards Member (Yes/No)* as the primary attribute. *Tenure*, *Occupation*, and *Number of Support Tickets* are set as other influencing attributes. The AI model could suggest segments indicating mostly IT professionals with tenure over two years are rewards members. Another suggestion could highlight that accountants with tenure over one year and fewer than three support tickets are rewards members. 
+For example, you choose *Rewards Member (Yes/No)* as the primary attribute. *Tenure*, *Occupation*, and *Number of Support Tickets* are set as other influencing attributes. The AI model could suggest segments indicating mostly IT professionals with tenure over two years are rewards members. Another suggestion could highlight that accountants with tenure over one year and fewer than three support tickets are rewards members.
 
 ## Artificial intelligence usage
 
@@ -60,26 +60,24 @@ A categorical attribute like *customer satisfaction* as the primary attribute re
 
 1. Select the **Suggestions (preview)** tab.
 
-1. Select **Get suggestions**.
+1. Select **Find new suggestions** and choose **Improve a measure/metric**. Select **Start**.
 
-1. Choose to improve a measure and select **Start**.
+   :::image type="content" source="media/suggested-segments-measure.png" alt-text="Choosing improve measure on the suggested segments.":::
 
-   :::image type="content" source="media/suggested-segments-primary-attribute.png" alt-text="Choosing the primary attribute for suggestions on the suggested segments.":::
-
-1. Choose a measure or a customer attribute as the primary attribute and select **Next**.
+1. Choose a customer attribute or measure as the primary attribute and select **Next**.
 
 1. Select the influencing attributes and select **Run**.
-   
+
    > [!TIP]
    > Selecting multiple influencing attributes improves the chances of evaluating how they influence the primary attribute. Don't include attributes that have no influence on the primary attribute. For example, if all your customers are from a specific country, don't include the *country* attribute because it won't have any impact on the output.
 
-1. Depending on the number of customer profiles and selected attributes, it can take a few minutes to process the selected attributes.
+Depending on the number of customer profiles and selected attributes, it can take a few minutes to process the selected attributes.
 
 ## View details of a suggested segment
 
-Once the AI model has generated the suggestions, you'll find them listed on **Segments** > **Suggestions (preview)**.
- 
-Select a suggested segment to review the details of that suggestion. You can also review the attribute values or rules that the AI model learned to suggest the selected segment.
+1. Once the AI model has generated the suggestions, go to **Segments** > **Suggestions (preview)**.
+
+1. In the **Attribute-based segment suggestions** section, select a suggested segment. The details of that suggestion and the attribute values or rules that the AI model learned display.
 
 ## Save a suggestion as a segment
 
@@ -89,22 +87,20 @@ Select a suggested segment to review the details of that suggestion. You can als
 
 1. In the side pane, select **Save as segment**.
 
-1. After saving the segment, it will show in the list of segments on the **All segments** tab. It can now be [refreshed, edited, or deleted like any other segment](segments.md).
+1. After saving the segment, it displays on the **All segments** tab. It can be [refreshed, edited, or deleted](segments.md).
 
 ## Refresh or edit a set of suggestions
 
-1. Go to **Segments** > **Suggestions (preview)**.
+1. Go to **Segments** > **Suggestions (preview)** and look for the segment in the **Attribute-based suggestions** section.
 
 1. Select **Refresh suggestions** to refresh the suggestions while keeping configured attributes. Or select **Edit attributes** to modify the configured attributes. The system will rerun the AI model, generate segment suggestions based on the latest data, and replace the current suggestions.
 
 ## Limitations
 
 1. Estimated segment size mismatch: If you choose a primary attribute that contains empty values, it can affect the estimated segment size in the segment suggestions. When saving such segment, the actual segment size can be different to the original estimation.
- 
+
 2. Boolean type primary attributes don't work: Currently, we only support string and numeric types of data as the primary attribute.
 
 3. Suggested segments aren't distinct enough: Keep in mind that the selected attributes and the distribution of values of those attributes influences the results. You can change your influencing attributes or even your primary attribute to get different results.
-
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
