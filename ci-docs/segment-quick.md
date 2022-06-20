@@ -42,7 +42,7 @@ Quick segments let you build simple segments with a single operator quickly for 
 
 1. Select **Save** to create your segment. The **Segments** page displays.
 
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Next steps
 

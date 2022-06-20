@@ -39,16 +39,15 @@ You can also analyze how the overlap changes for specific attributes.
 
 ### View and optimize an overlap analysis
 
-After completing the analysis, find details on this insight on **Segments** > **Insights (preview)**.
+1. After completing the analysis, find details on this insight on **Segments** > **Insights (preview)**.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-overlap.png" alt-text="Segment overlap insight details.":::
+   :::image type="content" source="media/segment-overlap.png" alt-text="Segment overlap insight details.":::
 
-Select an insight to see the analysis results:
+1. Select an insight to see the analysis results:
 
-- The number of members overlapping the segments selected for analysis.
-- The number of members included in one of the segments but not in the rest of the segments.
-- If you selected fields while configuring the overlap analysis, you'll find them in the corresponding tabs. You can use the filter dropdown to select any attribute level of interest and the table at the bottom will show the corresponding data.
+   - The number of members overlapping the segments selected for analysis.
+   - The number of members included in one of the segments but not in the rest of the segments.
+   - If you selected fields while configuring the overlap analysis, you'll find them in the corresponding tabs. You can use the filter dropdown to select any attribute level of interest and the table at the bottom will show the corresponding data.
 
 ## Segment differentiators
 
@@ -78,16 +77,18 @@ Segment differentiators help you find out what differentiates a segment from the
 
 1. Select an insight to see the analysis results. A differentiator analysis includes two tabs. The **Attributes** tab lists profile attributes considered as differentiators. The **Measures** tab lists differentiators. Each tab includes the following details:
 
-  - Ranked list of differentiators, sorted by difference score.
-  - The **Difference score** for each differentiator. The difference score represents the degree of difference of an attribute between two segments. The higher the difference score, the more the attributes differ between the two segments. Select a score to open the **Difference score** pane with the distributions of values for that attribute.
+   - Ranked list of differentiators, sorted by difference score.
+   - The **Difference score** for each differentiator. The difference score represents the degree of difference of an attribute between two segments. The higher the difference score, the more the attributes differ between the two segments. Select a score to open the **Difference score** pane with the distributions of values for that attribute.
 
 ## Manage segment insights
 
-You can use the following options on your insights from the command bar:
+Select a segment insight to view available actions.
 
-- **Back** to return the list of insights
-- **Refresh** to run the analysis again
-- **Delete** to remove this insight
+- **View** the insight analysis
+- **Edit** the insight to change its properties
+- **Refresh** the insight to run the analysis again
+- **Rename** the insight
+- **Delete** the insight
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
