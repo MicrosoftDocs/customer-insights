@@ -49,11 +49,7 @@ The example above illustrates the segmentation capability. We've defined a segme
 
 ## Create a new segment with segment builder
 
-1. Go to the **Segments** page.
-
-1. Select **New** > **Build your own**.
-
-1. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
+1. On the **Segments** page, select **New** > **Build your own**. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
 
 1. In the **Rule1** section, choose an attribute of an entity you want to filter customers by. There are two ways to choose attributes:
    - Review the list of available entities and attributes in the **Add to Rule** pane and select the **+** icon next to the attribute to add. Choose if you want to add the attribute to an existing rule or use it to create a new rule.
@@ -68,24 +64,25 @@ The example above illustrates the segmentation capability. We've defined a segme
    :::image type="content" source="media/relationship-path.png" alt-text="Potential relationship path when creating a rule based on an entity mapped to the unified customer entity.":::
 
 1. If you have multiple conditions in a rule, choose which logical operator connects them.  
-   - **AND** operator: All conditions must be met to include a record in the segment. This option is most useful when you define conditions across different entities.
-   - **OR** operator: Either one of the conditions must be met to include a record in the segment. This option is most useful when you define multiple conditions for the same entity.
+   - **AND** operator: All conditions must be met to include a record in the segment. Use this option when you define conditions across different entities.
+   - **OR** operator: Either one of the conditions must be met to include a record in the segment. Use this option when you define multiple conditions for the same entity.
 
    :::image type="content" source="media/segmentation-either-condition.png" alt-text="Rule with two AND conditions.":::
 
    When using the OR operator, all conditions must be based on entities included in the relationship path.
 
-   - To create different sets of customer records, create multiple rules. To include the customers required for your business case, combine groups. To create a new rule, select **Add rule**. Specifically, if you can't include an entity in a rule because of the specified relationship path, create a new rule to choose attributes from it.
+1. To create different sets of customer records, create multiple rules. To include the customers required for your business case, combine groups. Specifically, if you can't include an entity in a rule because of the specified relationship path, create a new rule to choose attributes from it.
 
       :::image type="content" source="media/segment-rule-grouping.png" alt-text="Add a new rule to a segment and choose the set operator.":::
 
-   - Select one of the set operators: **Union**, **Intersect**, or **Except**.
+   1. Select **Add rule**.
+   1. Select one of the set operators: **Union**, **Intersect**, or **Except**.
 
       - **Union** unites the two groups.
       - **Intersect** overlaps the two groups. Only data that *is common* to both groups remains in the unified group.
       - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is kept.
 
-1. By default, segments generate the output entity containing all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, you can add more attributes from these entities to the output entity. Select **Project attributes** to choose the attributes that will be appended to the output entity.
+1. By default, the output entity will automatically contain all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, select **Project attributes** to add more attributes from these entities to the output entity.
 
    > [!IMPORTANT]
    > For segments based on business accounts, details of one or more contacts of each account from the *ContactProfile* entity must be included in the segment to allow that segment to be activated or exported to destinations that require contact information. For more information about the *ContactProfile* entity, see [Semantic mappings](semantic-mappings.md).
@@ -109,12 +106,12 @@ The example above illustrates the segmentation capability. We've defined a segme
 
    :::image type="content" source="media/segments_edit_details.png" alt-text="Edit details dialog box.":::
 
-1. Select **Run** to save the segment, activate it, and begin processing your segment based on all the rules and conditions. The **Segments** page displays the new segment.
+1. Choose whether to save or run the segment:
 
-   > [!TIP]
-   > Save a segment configuration as a draft and complete it later. As a draft, the segment is considered inactive. When ready, select **Run** or **Activate** to activate the segment.
+   - Select **Save** to save a segment configuration as a draft and run it later. As a draft, the segment is considered inactive.
+   - Select **Run** to save the segment, activate it, and begin processing your segment based on all the rules and conditions. The **Segments** page displays the new segment.
 
-## Segment builder tips
+### Segment builder tips
 
 When creating a segment using the segment builder, keep in mind the following tips:
 

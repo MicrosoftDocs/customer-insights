@@ -20,7 +20,7 @@ searchScope:
 
 Segments let you group your customers based on demographic, transactional, or behavioral attributes. You can use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
 
-Customer profiles that match the filters of a segment definition are referred as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
+Customer profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
 ## Create a new segment
 
@@ -30,8 +30,8 @@ Choose how to create a new segment based on your target audience.
 
 - Complex segment with segment builder: [Build your own](segment-builder.md) 
 - Simple segments with one operator: [Quick segment](segment-quick.md) 
-- AI-powered way to find similar customers: [Similar Customers](find-similar-customer-segments.md) 
-- AI-powered suggestions based on measures or attributes: [Suggested segments to improve measures](suggested-segments.md) 
+- AI-powered way to find similar customers: [Similar customers](find-similar-customer-segments.md) 
+- AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md) 
 - Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md) 
 
 # [Business accounts (B-to-B)](#tab/b2b)
@@ -68,16 +68,16 @@ Select a segment to view available actions.
 
 Segments can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh all segments at once, select **Refresh all** on the **Segments** page. To refresh one or multiple segments, select them and choose **Refresh**.
 
-To configure a recurring refresh, go to **Admin** > **System** > **Schedule**. When a recurring refresh is configured, the following rules apply:
+To [schedule an automatic refresh](system.md#schedule-tab), go to **Admin** > **System** > **Schedule**. The following rules apply:
 
-- All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. Once the refresh is complete the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
-- Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segments was run or refreshed manually.
+- All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. Once the refresh is complete, the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
+- Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segment was run or refreshed manually.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Export segments
 
-Export segments to other apps to act on the data. Export a segment from the segments page or the [exports page](export-destinations.md).
+Export segments to other apps to further use the data. Export a segment from the segments page or the [exports page](export-destinations.md).
 
 1. Go to the **Segments** page and select the segment you want to export.
 
@@ -91,7 +91,7 @@ Export segments to other apps to act on the data. Export a segment from the segm
 
 ## Track usage of a segment
 
-If you use segments in apps, which are based on the same Microsoft Dataverse organization that is connected with Customer Insights, you can track the usage of a segment. For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
+If you use segments in apps which are based on the same Microsoft Dataverse organization that is connected with Customer Insights, you can track the usage of a segment. For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
 
 When editing a segment that is being used within the Customer Insights environment, or in a customer journey in Marketing, a banner in the [segment builder](segment-builder.md) informs you about the dependencies. Inspect the dependency details directly from the banner or by selecting **Usage** in the segment builder.
 
@@ -115,8 +115,7 @@ On the **Segments** page, select the segment you want to review.
 
 The upper part of the page includes a trend graph that visualizes changes in member count. Hover over data points to see the member count on a specific date. Change the time frame of the visualization.
 
-> [!div class="mx-imgBorder"]
-> ![Segment time range.](media/segment-time-range.png "Segment time range")
+:::image type="content" source="media/segment-time-range.png" alt-text="Segment time range.":::
 
 The lower part contains a list of the segment members.
 

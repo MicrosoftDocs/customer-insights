@@ -49,9 +49,7 @@ Suggestions are generated based on the selected input data.
 
 ## Generate suggested segments
 
-1. Go to **Segments**.
-
-1. Select the **Suggestions (preview)** tab.
+1. Go to **Segments** and select the **Suggestions (preview)** tab.
 
 1. Select **Find new suggestions** and choose **See or anticipate customer behavior**. Select **Start**.
 
@@ -69,28 +67,13 @@ Depending on the number of customer profiles and selected activities, it can tak
 
 After generating the suggestions, you can filter them by the dimension or value you're most interested in.
 
-## View details of a suggested segment
+## Manage suggested segments
 
-1. Once the suggestions are generated, go to **Segments** > **Suggestions (preview)**.
+Go to **Segments** and select the **Suggestions (preview)** tab. In the **Activity-based suggestions** section, select a suggested segment to view available actions.
 
-:::image type="content" source="media/suggested-segments-details.png" alt-text="Expanded side pane showing detailed data of a suggested segment.":::
-
-1. In the **Activity-based suggestions** section, select **See suggestion** on a suggested segment. The details of that segment display like the extent of each dimension in comparison to the target group. It also highlights the number of potential members in the segment and the corresponding percentage of the total customers.
-
-## Save a suggestion as a segment
-
-1. Go to **Segments** > **Suggestions (preview)**.
-
-1. Select the segment you want to save.
-
-1. In the side pane, select **Create segment**.
-
-1. After saving the segment, it displays on the **All segments** tab. It can be [refreshed or deleted](segments.md). You can't edit the segment details. However, you can change the input criteria for the suggestions and generate different suggestions.
-
-## Refresh or edit a set of suggestions
-
-1. Go to **Segments** > **Suggestions (preview)** and look for the segment in the **Activity-based suggestions** section.
-
-1. Select **Refresh suggestions** to refresh the suggestions while keeping configured attributes. Or select **Edit suggestions** to modify the configured attributes. The system will rerun the process, generate segment suggestions based on the latest data, and replace the current suggestions.
+- **See suggestion** to view the details of that segment like the extent of each dimension in comparison to the target group. It also highlights the number of potential members in the segment and the corresponding percentage of the total customers.
+- **Create segment** to save the suggested as a segment. It displays on the **All segments** tab and can be [refreshed or deleted](segments.md). You can't edit the segment details. However, you can change the input criteria for the suggestions and generate different suggestions.
+- **Edit suggestions** to modify the configured attributes which will replace the current suggestions.
+- **Refresh suggestions** to refresh the suggestions while keeping configured attributes.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

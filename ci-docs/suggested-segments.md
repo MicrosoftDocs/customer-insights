@@ -25,9 +25,9 @@ Discover interesting segments of your customers with the help of an AI model. Th
 
 ## Suggested segments to improve your KPIs
 
-As a user of Customer Insights, you likely have a series of [measures created](measures.md) that help track your KPIs. Certain attributes influence this KPI to create segments and run a highly targeted campaign.
+If you use [measures created](measures.md) to help track your KPIs, create segments to view the influences on the KPI. You can use this information to run a highly targeted campaign.
 
-For example, you track a measure called *TotalSpendPerCustomer*. As a business, you’d like to see this number grow. Choosing a measure as primary attribute, lets you select the attributes that you want to assess for influence. Let's say *membership tier*, *membership period*, and *occupation*. Customer Insights can then suggest a segment that tells you who are the biggest influence of that measure. For example, *Accountants* who are *Gold* members, and who have been with your business for *at least five years* are the biggest influencer of *TotalSpendPerCustomer*. You’ll get an estimated segment size for every suggestion. You can use this information to create campaigns for the targeted audiences.
+For example, you track a measure called *TotalSpendPerCustomer*. As a business, you’d like to see this number grow. Choosing a measure as primary attribute, select the attributes that you want to assess for influence. Let's say *membership tier*, *membership period*, and *occupation*. Customer Insights can then suggest a segment that tells you who are the biggest influence of that measure. For example, *Accountants* who are *Gold* members, and who have been with your business for *at least five years* are the biggest influencer of *TotalSpendPerCustomer*. You’ll get an estimated segment size for every suggestion. You can use this information to create campaigns for the targeted audiences.
 
 ## Understand what influences a customer attribute
 
@@ -56,9 +56,7 @@ A categorical attribute like *customer satisfaction* as the primary attribute re
 
 ## Generate suggested segments
 
-1. Go to **Segments**.
-
-1. Select the **Suggestions (preview)** tab.
+1. Go to **Segments** and select the **Suggestions (preview)** tab.
 
 1. Select **Find new suggestions** and choose **Improve a measure/metric**. Select **Start**.
 
@@ -73,27 +71,14 @@ A categorical attribute like *customer satisfaction* as the primary attribute re
 
 Depending on the number of customer profiles and selected attributes, it can take a few minutes to process the selected attributes.
 
-## View details of a suggested segment
+## Manage suggested segments
 
-1. Once the AI model has generated the suggestions, go to **Segments** > **Suggestions (preview)**.
+Go to **Segments** and select the **Suggestions (preview)** tab. In the **Attribute-based segment suggestions** section, select a suggested segment to view available actions.
 
-1. In the **Attribute-based segment suggestions** section, select a suggested segment. The details of that suggestion and the attribute values or rules that the AI model learned display.
-
-## Save a suggestion as a segment
-
-1. Go to **Segments** > **Suggestions (preview)**.
-
-1. Select the segment you want to save.
-
-1. In the side pane, select **Save as segment**.
-
-1. After saving the segment, it displays on the **All segments** tab. It can be [refreshed, edited, or deleted](segments.md).
-
-## Refresh or edit a set of suggestions
-
-1. Go to **Segments** > **Suggestions (preview)** and look for the segment in the **Attribute-based suggestions** section.
-
-1. Select **Refresh suggestions** to refresh the suggestions while keeping configured attributes. Or select **Edit attributes** to modify the configured attributes. The system will rerun the AI model, generate segment suggestions based on the latest data, and replace the current suggestions.
+- **View** the suggested segment details and the attribute values or rules that the AI model learned.
+- **Save as segment** the suggestion as a segment. It displays on the **All segments** tab and can be [refreshed, edited, or deleted](segments.md).
+- **Edit attributes** and modify the configured attributes which will replace the current suggestions.
+- **Refresh suggestions** to refresh the suggestions while keeping configured attributes.
 
 ## Limitations
 

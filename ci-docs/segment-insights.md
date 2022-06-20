@@ -82,6 +82,8 @@ Segment differentiators help you find out what differentiates a segment from the
 
 ## Manage segment insights
 
+Go to **Segments** > **Insights (preview)** to view your segment insights and to manage them.
+
 Select a segment insight to view available actions.
 
 - **View** the insight analysis

@@ -18,10 +18,7 @@ searchScope:
 
 # Create simple segments with quick segments
 
-Quick segments let you build simple segments with a single operator quickly for faster insights.
-
-> [!TIP]
-> Quick segments are only supported in environments for **individual customers**.
+Quick segments let you build simple segments with a single operator quickly for faster insights. Quick segments are only supported in environments for **individual customers**.
 
 ## Create a new segment with quick segments
 
