@@ -48,21 +48,36 @@ Select a segment to view available actions.
 
 :::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options." lightbox="media/segments-selected-segment.png":::
 
-- **View** the segment details, including member count trend and a preview of segment members.
+- [**View**](#view-segment-details) the segment details, including member count trend and a preview of segment members.
 - **Download** the list of members as a .CSV file.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
-- **Refresh** the segment to include the latest data.
+- [**Refresh**](#refresh-segments) the segment to include the latest data.
 - **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](system.md#schedule-tab) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
 - **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed during system refreshes.
 - [**Find similar customers**](find-similar-customer-segments.md) from the segment.
 - **Rename** the segment.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
-- [**Manage exports**](segments.md#export-segments) to see export-related segments and manage them. [Learn more about exports.](export-destinations.md)
+- [**Manage exports**](#export-segments) to see export-related segments and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
+
+## View segment details
+
+On the **Segments** page, select a segment to view the processing history and segment members.
+
+The upper part of the page includes a trend graph that visualizes changes in member count. Hover over data points to see the member count on a specific date. Change the time frame of the visualization.
+
+:::image type="content" source="media/segment-time-range.png" alt-text="Segment time range.":::
+
+The lower part contains a list of the segment members.
+
+> [!NOTE]
+> Fields that appear in this list are based on the attributes of your segment's entities.
+>
+>The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, [export the segment](export-destinations.md).
 
 ## Refresh segments
 
@@ -108,20 +123,5 @@ The system informs you about the usage of a tracked segment when you try to dele
 Usage is currently tracked in the following Dataverse-based apps:
 
 - [Customer journeys in Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile)
-
-## View processing history and segment members
-
-On the **Segments** page, select the segment you want to review.
-
-The upper part of the page includes a trend graph that visualizes changes in member count. Hover over data points to see the member count on a specific date. Change the time frame of the visualization.
-
-:::image type="content" source="media/segment-time-range.png" alt-text="Segment time range.":::
-
-The lower part contains a list of the segment members.
-
-> [!NOTE]
-> Fields that appear in this list are based on the attributes of your segment's entities.
->
->The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, [export the segment](export-destinations.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
