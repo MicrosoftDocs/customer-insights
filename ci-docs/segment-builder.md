@@ -106,10 +106,7 @@ The example above illustrates the segmentation capability. We've defined a segme
 
    :::image type="content" source="media/segments_edit_details.png" alt-text="Edit details dialog box.":::
 
-1. Choose whether to save or run the segment:
-
-   - Select **Save** to save a segment configuration as a draft and run it later. As a draft, the segment is considered inactive.
-   - Select **Run** to save the segment, activate it, and begin processing your segment based on all the rules and conditions. The **Segments** page displays the new segment.
+1. Select **Run** to create the segment. Select **Save** to save the configuration and run it later. The **Segments** page displays.
 
 ### Segment builder tips
 
