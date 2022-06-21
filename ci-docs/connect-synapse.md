@@ -55,6 +55,8 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 1. Choose an [available connection](connections.md) to Azure Synapse Analytics or create a new one.
 
 1. Choose a **Database** from the workspace connected in the selected Azure Synapse Analytics connection and select **Next**.
+> [Note]
+> Only databases type ```Lake database``` are currently supported. 
 
 1. Select the entities to ingest from the connected database and select **Next**.
 
