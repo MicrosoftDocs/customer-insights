@@ -1,6 +1,6 @@
 ---
 title: "Create simple segments with quick segments"
-description: "Create segments of customers to group them based on various attributes."
+description: "Create simple segments of customers to group them based on various attributes."
 ms.date: 03/25/2022
 
 ms.subservice: audience-insights
