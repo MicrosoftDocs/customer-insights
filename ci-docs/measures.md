@@ -46,9 +46,9 @@ Select a measure to view available actions. When you select a measure, you can p
 
 :::image type="content" source="media/measures-actions.png" alt-text="Actions to manage single measures."lightbox="media/measures-actions.png":::
 
-- **Edit** the configuration of the measure.
+- **Edit** the measure to change its properties.
 - **Duplicate** a measure. You can choose to edit its properties right away or simply save the duplicate.
-- **Refresh** the measure based on the latest data. To refresh all of your measures at the same time, select all measures and then **Refresh**.
+- **Refresh** the measure based on the latest data. 
 - **Rename** the measure.
 - **Activate** or **Deactivate**. Inactive measures won't get refreshed during a [scheduled refresh](system.md#schedule-tab).
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
@@ -57,8 +57,10 @@ Select a measure to view available actions. When you select a measure, you can p
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by measure name.
 
-## Next step
+## Refresh measures
 
-Use existing measures to create [a customer segment](segments.md).
+Select one or multiple measures and then **Refresh**. Alternatively, you can configure a recurring refresh on **Admin** > **System** > **Schedule**.
+
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

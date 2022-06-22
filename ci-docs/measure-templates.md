@@ -64,3 +64,7 @@ Available measure templates:
     Once the data mapping is successful, you can see the status as **Complete** and the name of the mapped activities and attributes.
 
 1. Select **Run** to calculate the results of the measure. Select **Save and close** if you want to keep the current configuration and run the measure later. The **Measures** page displays.
+
+## Next step
+
+Use existing measures to create [a customer segment](segments.md).
