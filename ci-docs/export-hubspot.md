@@ -23,9 +23,8 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 ## Known limitations
 
-- You can export up to 100'000 customer profiles in total to HubSpot.
 - Exporting to MoEngage is limited to segments.
-- Exporting up to 100'000 customer profiles to HubSpot can take up to a few hours to complete. 
+- Exporting up to 100'000 customer profiles to HubSpot can take up to 15 minutes to complete. 
 - The number of customer profiles that you can export to HubSpot is dependent and limited on your contract with HubSpot.
 
 ## Set up connection to Hubspot
