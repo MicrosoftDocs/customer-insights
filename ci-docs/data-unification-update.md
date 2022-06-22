@@ -26,12 +26,12 @@ To review or change any unification settings once a unified profile has been cre
 
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified." lightbox="media/m3_unified.png":::
 
-   > [!TIP]
-   > The **Matching conditions** tile displays only if multiple entities were selected.
-
    For business accounts (B-to-B), the **Unify** page displays the number of unified account profiles and tiles for each of the account unification steps. The page also displays the number of unified contact profiles and tiles for each of the contact unification steps. Choose the appropriate tile under **Unify Accounts** or **Unify Contacts** depending on what you want to update.
 
    :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified." lightbox="media/b2b_unified.png":::
+
+   > [!TIP]
+   > The **Matching conditions** tile displays only if multiple entities were selected.
 
 1. Choose what you want to update:
    - [Source fields](#edit-source-fields) to add entities or attributes or change attribute types.
@@ -43,11 +43,9 @@ To review or change any unification settings once a unified profile has been cre
 
 1. After making your changes, choose your next option:
 
-   :::image type="content" source="media/m3_run_match_merge.png" alt-text="Screenshot of the Data Unify page with the Unify options highlighted.":::
-
    - [Run matching conditions](#run-matching-conditions) to quickly evaluate the quality of your matching conditions (deduplication and match rules) without updating the unified profile. The **Run matching conditions only** option doesn't display for single entity.
-   - [Unify customer profiles](#run-updates-to-the-unified-profile) to run matching conditions and update the unified customer profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
-   - [Unify customer profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions and update the unified customer profile entity and all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically.
+   - [Unify profiles](#run-updates-to-the-unified-profile) to run matching conditions and update the unified profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+   - [Unify profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions and update the unified profile entity and all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically.
 
 ## Edit source fields
 

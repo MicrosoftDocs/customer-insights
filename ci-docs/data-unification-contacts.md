@@ -91,6 +91,8 @@ The unification algorithm takes some time to complete and you can't change the c
 
 After unification, the **Data** > **Unify** page shows the number of unified contact profiles. The results of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
 
+:::image type="content" source="media/unified_contacts.png" alt-text="Screenshot of the Data Unify page after contacts are unified.":::
+
 > [!TIP]
 > The **Matching conditions** tile displays only if multiple entities were selected.
 
@@ -116,4 +118,4 @@ A **ContactsCustomer** entity is created and is used for internal processing.
 
 ## Next Step
 
-Configure [activities](activities.md), [enrichment](enrichment-hub.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
+Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your contacts.
