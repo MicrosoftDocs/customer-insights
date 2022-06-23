@@ -97,7 +97,7 @@ We currently support enriching addresses in these countries or regions:
 
 1. Select **Save enrichment** after reviewing your choices.
 
-## Enrichment results
+## View enrichment results
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

@@ -71,21 +71,23 @@ Select the enrichment to view available actions.
 
 - **View** enrichment details with the number of enriched customer profiles.
 - **Edit** the enrichment configuration.
-- **Run** the enrichment to update customer profiles with the latest data. Run multiple enrichments at once by selecting them in the list.
-- **Deactivate** an existing enrichment to stop it from refreshing automatically with every scheduled refresh. Data from the last successful refresh will continue to be available. **Activate** an inactive enrichment to restart automatic refreshing with every scheduled refresh.
+- [**Run**](#run-or-refresh-enrichments) the enrichment to update customer profiles with the latest data. Run multiple enrichments at once by selecting them in the list.
+- **Activate** or **Deactivate** an enrichment. Inactive enrichments won't get refreshed during a [scheduled refresh](system.md#schedule-tab).
 - **Delete** the enrichment.
 
 You can also create [segments](segments.md) or [measures](measures.md) from enrichments.
 
 ## Run or refresh enrichments
 
-1. To start the enrichment process, select **Run**. Or, let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab). The processing time depends on the size of your customer data.
+Once run, enrichments can be refreshed on an automatic schedule or refreshed manually on demand.
+
+1. To manually refresh one or more enrichments, select them and choose **Run**. To [schedule an automatic refresh](system.md#schedule-tab), go to **Admin** > **System** > **Schedule**. The processing time depends on the size of your customer data.
 
 1. Optionally, [see the progress of the enrichment process](#see-the-progress-of-the-enrichment-process).
 
 1. After the enrichment process completes, go to **My enrichments** to review the newly enriched customer profiles data, the time of the last update, and the number of enriched profiles.
 
-1. Select the enrichment to see [enrichment results](#enrichment-results).
+1. Select the enrichment to see [enrichment results](#view-enrichment-results).
 
 ### See the progress of the enrichment process
 
@@ -97,12 +99,12 @@ You can find details about the processing of an enrichment, including it status 
 1. Under the enrichment you want to see the progress, select **See details**.
 1. In the **Task details** pane, select **Show details** to see the processes that are involved in updating the enrichment and their status.
 
-## Enrichment results
+## View enrichment results
 
 After a completed enrichment run, review the enrichment results.
 
 1. Go to **Data** > **Enrichment**.
-1. In the **My enrichments** tab, select the enrichment that you want information about.
+1. In the **My enrichments** tab, select the enrichment that you want to view.
 
 All enrichments show basic information such as the number of enriched profiles and the number of enriched profiles over time. The **Enriched customers preview** tile shows a sample of the generated enrichment entity. To see a detailed view, select **See more** and select the **Data** tab.
 
