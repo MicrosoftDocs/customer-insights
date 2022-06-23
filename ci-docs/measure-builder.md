@@ -140,7 +140,7 @@ Create measures on the level of individual accounts (customer measure) or on the
 
    1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender.
       > [!TIP]
-      > If you selected **Customer level** as the **Measure type** the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** switches to **Business level**.
+      > The *CustomerId* attribute is already added indicating this is a customer level measure type. If you remove the attribute, the measure type changes to business level.
    1. Select **Done** to add the dimensions to the measure.
 
 1. If there are values in your data that must be replaced with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.

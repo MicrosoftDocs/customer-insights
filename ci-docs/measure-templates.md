@@ -18,7 +18,7 @@ searchScope:
 
 Use predefined templates of commonly used [measures](measures.md) to create them. Detailed descriptions of the templates and a guided experience help you with efficient measure creation. Templates build on mapped data from the *Unified Activity* entity. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
 
-Measure templates are only supported in environments for **individual customers**. To create custom measures or create measures for B-to-B, see [Use measure builder to create measures from scratch](measure-builder.md).
+Measure templates are only supported in environments for **individual customers**. To create custom measures or create measures for B-to-B, see [Use measure builder to create measures](measure-builder.md).
 
 Available measure templates:
 - Average transaction value (ATV)
