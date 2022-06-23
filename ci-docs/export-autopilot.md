@@ -17,9 +17,9 @@ Export segments of unified customer profiles to Autopilot and use them for email
 
 ## Prerequisites for a connection
 
--	You have an [Autopilot account](https://www.autopilothq.com/) and corresponding administrator credentials.
--	You have [configured segments](segments.md) in Customer Insights.
--	Unified customer profiles in the exported segments contain a field representing an email address.
+- An [Autopilot account](https://www.autopilothq.com/) and corresponding administrator credentials.
+- [Configured segments](segments.md) in Customer Insights.
+- Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
@@ -36,13 +36,13 @@ Export segments of unified customer profiles to Autopilot and use them for email
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter your [Autopilot API key](https://autopilot.docs.apiary.io/#).
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
-1. Select **Connect** to initialize the connection to Autopilot.
+1. Select **Connect** to initialize the connection.
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 

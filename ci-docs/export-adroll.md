@@ -13,12 +13,12 @@ manager: shellyha
 
 # Export segments to AdRoll (preview)
 
-Export segments of unified customer profiles to AdRoll and use them for advertising. 
+Export segments of unified customer profiles to AdRoll and use them for advertising.
 
 ## Prerequisites for a connection
 
-- You have an [AdRoll account](https://www.adroll.com/) and corresponding administrator credentials.
-- You have [configured segments](segments.md) in Customer Insights.
+- An [AdRoll account](https://www.adroll.com/) and corresponding administrator credentials.
+- [Configured segments](segments.md) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -37,13 +37,13 @@ Export segments of unified customer profiles to AdRoll and use them for advertis
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
-1. Select **Connect** to initialize the connection to AdRoll.
+1. Select **Connect** to initialize the connection.
 
-1. Select **Authenticate with AdRoll** and provide your admin credentials for AdRoll. 
+1. Select **Authenticate with AdRoll** and provide your admin credentials for AdRoll.
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 

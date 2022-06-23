@@ -19,7 +19,6 @@ As a user of Dynamics 365 Customer Insights, you may have created segments to ma
 
 ## Prerequisites
 
-- Dynamics 365 Customer Insights license
 - Adobe Campaign Standard license
 - Azure Blob Storage account
 
@@ -55,13 +54,13 @@ With our target audience identified, we can configure the export to an Azure Blo
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+1. Choose who can use this connection. By default, it's only administrators. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
 
 1. Enter the **Account name**, **Account key**, and **Container** of the Azure Blob Storage account where you want to export the segment to.  
-      
-   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration."::: 
 
-   - To learn more about how to find the Azure Blob Storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
+   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration.":::
+
+   - To learn how to find the Azure Blob Storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
 
    - To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 

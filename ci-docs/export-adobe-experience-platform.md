@@ -19,10 +19,9 @@ As a user of Dynamics 365 Customer Insights, you may have created segments to ma
 
 ## Prerequisites
 
--   Dynamics 365 Customer Insights license
--   Adobe Experience Platform license
--   Adobe Campaign Standard license
--   Azure Blob Storage account
+- Adobe Experience Platform license
+- Adobe Campaign Standard license
+- Azure Blob Storage account
 
 ## Campaign Overview
 
@@ -56,16 +55,16 @@ With our target audience identified, we can configure the export from Customer I
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter **Account name**, **Account key**, and **Container** for your Blob Storage account where you want to export the segment to.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration."::: 
    
-    - To learn more about how to find the Blob Storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
+    - To learn how to find the Blob Storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
     - To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-1. Select **Save** to complete the connection. 
+1. Select **Save** to complete the connection.
 
 ### Configure an export
 

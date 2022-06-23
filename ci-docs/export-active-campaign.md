@@ -43,7 +43,7 @@ You must be an [administrator](permissions.md) in Customer Insights.
 
 1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
 
-1. Select **Connect** to initialize the connection to ActiveCampaign.
+1. Select **Connect** to initialize the connection.
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
