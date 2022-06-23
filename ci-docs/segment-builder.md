@@ -49,7 +49,13 @@ The example above illustrates the segmentation capability. We've defined a segme
 
 ## Create a new segment with segment builder
 
-1. On the **Segments** page, select **New** > **Build your own**. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
+1. Go to **Segments**.
+
+1. Select **New** > **Build your own**. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
+
+1. Select **Edit details** next to Untitled segment. Provide a name for your segment and update the suggested **Output entity name** for the segment. Optionally, add a description and [tags](work-with-tags-columns.md#manage-tags) to the segment.
+
+   :::image type="content" source="media/segments_edit_details.png" alt-text="Edit details dialog box.":::
 
 1. In the **Rule1** section, choose an attribute of an entity you want to filter customers by. There are two ways to choose attributes:
    - Review the list of available entities and attributes in the **Add to Rule** pane and select the **+** icon next to the attribute to add. Choose if you want to add the attribute to an existing rule or use it to create a new rule.
@@ -102,14 +108,7 @@ The example above illustrates the segmentation capability. We've defined a segme
    > - If the attribute you want to project is just one hop away from the *Customer* entity, that attribute doesn't need to be present in every rule of the segment query you are building.
    > - **Projected attributes** are factored in when using set operators.
 
-1. Select **Edit details** next to Untitled segment. Provide a name for your segment and update the suggested **Output entity name** for the segment. Optionally, add a description and [tags](work-with-tags-columns.md#manage-tags) to the segment.
-
-   :::image type="content" source="media/segments_edit_details.png" alt-text="Edit details dialog box.":::
-
-1. Choose whether to save or run the segment:
-
-   - Select **Save** to save a segment configuration as a draft and run it later. As a draft, the segment is considered inactive.
-   - Select **Run** to save the segment, activate it, and begin processing your segment based on all the rules and conditions. The **Segments** page displays the new segment.
+1. Select **Run** to create the segment. Select **Save** if you want to keep the current configuration and run the segment later. The **Segments** page displays.
 
 ### Segment builder tips
 

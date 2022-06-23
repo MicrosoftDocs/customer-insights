@@ -22,27 +22,27 @@ Segments let you group your customers based on demographic, transactional, or be
 
 Customer profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
-## Create a new segment
+## Create a segment
 
-Choose how to create a new segment based on your target audience.
+Choose how to create a segment based on your target audience.
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 
-- Complex segment with segment builder: [Build your own](segment-builder.md) 
-- Simple segments with one operator: [Quick segment](segment-quick.md) 
-- AI-powered way to find similar customers: [Similar customers](find-similar-customer-segments.md) 
-- AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md) 
-- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md) 
+- Complex segments with segment builder: [Build your own](segment-builder.md)
+- Simple segments with one operator: [Quick segment](segment-quick.md)
+- AI-powered way to find similar customers: [Similar customers](find-similar-customer-segments.md)
+- AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md)
+- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md)
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-- Simple or complex segment with segment builder: [Build your own](segment-builder.md)
+- Simple or complex segments with segment builder: [Build your own](segment-builder.md)
 
 ---
 
 ## Manage existing segments
 
-Go to the **Segments** page to view the segments you created, their status, the number of members, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
+Go to the **Segments** page to view the segments you created, their status and state, the number of members, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
 
 Select a segment to view available actions.
 
@@ -81,7 +81,7 @@ The lower part contains a list of the segment members.
 
 ## Refresh segments
 
-Segments can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh all segments at once, select **Refresh all** on the **Segments** page. To refresh one or multiple segments, select them and choose **Refresh**.
+Segments can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh all segments at once, select **Refresh all** on the **Segments** page. To refresh one or more segments, select them and choose **Refresh**.
 
 To [schedule an automatic refresh](system.md#schedule-tab), go to **Admin** > **System** > **Schedule**. The following rules apply:
 
