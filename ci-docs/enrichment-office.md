@@ -71,7 +71,7 @@ Select **Run** to start the enrichment process.
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
-## Enrichment results
+## View enrichment results
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)] This is the *Office* entity. The *Office_UserEntity* contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration.
 

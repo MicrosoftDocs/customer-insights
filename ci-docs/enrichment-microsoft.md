@@ -99,7 +99,7 @@ We currently support the following country/region options: Australia, Canada (En
 
    When enriching profiles, we'll enrich all customer profiles for which we get data for the selected brands and interests, including profiles that are not in the selected country or region. For example, if you selected Germany, we'll enrich profiles located in the United States if we have data available for the selected brands and interests in the US.
 
-## Enrichment results
+## View enrichment results
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
