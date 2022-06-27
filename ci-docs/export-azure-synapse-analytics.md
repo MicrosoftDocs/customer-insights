@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Azure Synapse Analytics"
+title: "Export data to Azure Synapse Analytics (preview)"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
 ms.date: 04/11/2022
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: sthe
 manager: shellyha
 ---
 
-# Export data to Azure Synapse Analytics (Preview)
+# Export data to Azure Synapse Analytics (preview)
 
 Azure Synapse is an analytics service that accelerates time to insight across data warehouses and big data systems. You can ingest and use your Customer Insights data in [Azure Synapse](/azure/synapse-analytics/overview-what-is).
 

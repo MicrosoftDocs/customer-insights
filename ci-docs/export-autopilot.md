@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Autopilot"
+title: "Export segments to Autopilot (preview)"
 description: "Learn how to configure the connection and export to Autopilot."
 ms.date: 10/08/2021
 ms.reviewer: mhart

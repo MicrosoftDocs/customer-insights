@@ -1,5 +1,5 @@
 ---
-title: "Machine learning powered suggested segments"
+title: "Suggested segments (preview)"
 description: "Let machine learning help you find new and interesting segments based on customer attributes."
 ms.date: 10/15/2021
 ms.reviewer: mhart

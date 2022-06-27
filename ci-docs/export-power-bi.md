@@ -1,5 +1,5 @@
 ---
-title: "Power BI connector"
+title: "Power BI connector (preview)"
 description: "Learn how to use the Dynamics 365 Customer Insights connector in Power BI."
 ms.date: 07/23/2021
 ms.reviewer: mhart
@@ -11,9 +11,9 @@ ms.author: sthe
 manager: shellyha
 ---
 
-# Connector for Power BI (preview)
+# Power BI connector (preview)
 
-Create visualizations for your data with the Power BI Desktop. Generate additional insights and build reports with your unified customer data.
+Create visualizations for your data with the Microsoft Power BI Desktop. Generate additional insights and build reports with your unified customer data.
 
 ## Prerequisites
 

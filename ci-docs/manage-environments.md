@@ -1,5 +1,5 @@
 ---
-title: How to - Manage environments
+title: "How to: Manage environments"
 description: Learn how to to manage existing Customer Insights environments as an admin."
 ms.date: 05/31/2022
 ms.subservice: audience-insights

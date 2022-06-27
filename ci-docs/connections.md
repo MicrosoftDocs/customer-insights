@@ -1,6 +1,6 @@
 ---
-title: "Connections to other services from Customer Insights."
-description: "Share data to other services."
+title: "Connections (preview) overview"
+description: "Connections to other services from Customer Insights."
 ms.date: 04/09/2021
 ms.reviewer: nikeller
 

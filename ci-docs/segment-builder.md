@@ -1,6 +1,6 @@
 ---
-title: "Create segments with the segment builder"
-description: "Create segments of customers to group them based on various attributes."
+title: "Create segments"
+description: "Create segments of customers to group them based on various attributes using segment builder or quick segments."
 ms.date: 03/25/2022
 
 ms.subservice: audience-insights

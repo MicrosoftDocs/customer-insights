@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Mailchimp"
+title: "Export segments to Mailchimp (preview)"
 description: "Learn how to configure the connection and export to Mailchimp."
 ms.date: 10/08/2021
 ms.reviewer: mhart
