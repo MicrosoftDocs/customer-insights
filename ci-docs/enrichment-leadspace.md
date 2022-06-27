@@ -1,5 +1,5 @@
 ---
-title: "Enrichment of company profiles with the third-party enrichment Leadspace"
+title: "Enrich company profiles with Leadspace (preview)"
 description: "General information about the Leadspace third-party enrichment."
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: jodahl
 manager: shellyha
 ---
 
-# Enrichment of company profiles with Leadspace (preview)
+# Enrich company profiles with Leadspace (preview)
 
 Leadspace is a data science company that provides a B-to-B Customer Data Platform. It enables environments with unified customer profiles based on accounts to enrich their data. Enrich *Customer profiles* with attributes such as company size, location, or industry. Enrich *Contact profiles* with attributes such as title, persona, or email verification.
 
@@ -78,7 +78,7 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
-## Enrichment results
+## View enrichment results
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

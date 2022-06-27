@@ -1,5 +1,5 @@
 ---
-title: "Create a unified view of your customers"
+title: "Data unification overview"
 description: "Go through the data unification process with your data to create a single dataset of unified customer profiles."
 ms.date: 05/10/2022
 ms.reviewer: v-wendysmith

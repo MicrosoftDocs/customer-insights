@@ -1,5 +1,5 @@
 ---
-title: "Unify customer or account fields"
+title: "Unify customer fields for data unification"
 description: "Merge entities to create unified customer profiles."
 recommendations: false
 ms.date: 05/04/2022
@@ -17,7 +17,7 @@ searchScope:
   - customerInsights
 ---
 
-# Unify customer fields
+# Unify customer fields for data unification
 
 [!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 

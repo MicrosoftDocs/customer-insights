@@ -15,7 +15,7 @@ searchScope:
   - customerInsights
 ---
 
-# User permissions
+# Manage user permissions
 
 The **Permissions** page is where you'll set up roles and permissions for using Customer Insights.
 

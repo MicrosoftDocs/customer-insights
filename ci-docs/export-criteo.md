@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Criteo"
+title: "Export segments to Criteo (preview)"
 description: "Learn how to configure the connection and export to Criteo."
 ms.date: 05/27/2022
 ms.reviewer: mhart

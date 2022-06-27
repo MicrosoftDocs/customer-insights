@@ -1,5 +1,5 @@
 ---
-title: "Enrichment of company profiles with Dun & Bradstreet"
+title: "Enrich company profiles with Dun & Bradstreet (preview)"
 description: "General information about the Dun & Bradstreet third-party enrichment."
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: jodahl
 manager: shellyha
 ---
 
-# Enrichment of company profiles with Dun & Bradstreet (Preview)
+# Enrich company profiles with Dun & Bradstreet (preview)
 
 Dun & Bradstreet provides commercial data, analytics, and insights for businesses. It enables customers with unified customer profiles for companies to enrich their data. Enrichments include attributes such as DUNS number, company size, location, industry, and more.
 
@@ -97,7 +97,7 @@ We currently support the following country/region options: Canada (English) or U
 
 1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
-## Enrichment results
+## View enrichment results
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

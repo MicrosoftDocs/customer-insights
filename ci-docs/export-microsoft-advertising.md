@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Microsoft Advertising"
+title: "Export segments to Microsoft Advertising (preview)"
 description: "Learn how to configure the connection and export to Microsoft Advertising."
 ms.date: 10/08/2021
 ms.reviewer: mhart

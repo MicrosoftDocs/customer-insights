@@ -10,7 +10,7 @@ ms.manager: shellyha
 ms.custom: intro-internal
 ---
 
-# Purchase Customer Insights
+# Purchase a license of Dynamics 365 Customer Insights
 
 To purchase Dynamics 365 Customer Insights, see our contact options on the [Dynamics 365 Customer Insights website](https://dynamics.microsoft.com/ai/customer-insights/).
 

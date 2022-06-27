@@ -1,5 +1,5 @@
 ---
-title: "Entities and datasets"
+title: "Entities in Customer Insights"
 description: "View data on the Entities page."
 ms.date: 12/06/2021
 ms.reviewer: mhart
