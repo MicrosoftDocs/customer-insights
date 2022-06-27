@@ -14,7 +14,7 @@ searchScope:
   - customerInsights
 ---
 
-# Use a template to build a measure
+# Create measures from templates
 
 You can use predefined templates of commonly used [measures](measures.md) to create them. Detailed descriptions of the templates and a guided experience help you with efficient measure creation. Templates build on mapped data from the *Unified Activity* entity. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
 

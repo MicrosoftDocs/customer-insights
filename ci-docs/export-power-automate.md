@@ -1,5 +1,5 @@
 ---
-title: "Power Automate connector | Microsoft Docs"
+title: "Power Automate connector (preview) | Microsoft Docs"
 description: "Create flows in Microsoft Power Automate from Dynamics 365 Customer Insights."
 ms.date: 06/24/2021
 ms.reviewer: mhart
@@ -13,7 +13,7 @@ manager: shellyha
 
 # Power Automate connector (preview)
 
-Trigger specific events to occur automatically when your data changes and manage more complex flows directly in [Power Automate](https://flow.microsoft.com/).
+Trigger specific events to occur automatically when your data changes and manage more complex flows directly in [Microsoft Power Automate](https://flow.microsoft.com/).
 
 ## Known limitations
 

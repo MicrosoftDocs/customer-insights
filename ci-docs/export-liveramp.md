@@ -1,5 +1,5 @@
 ---
-title: "LiveRamp connector"
+title: "Export segments to LiveRamp (preview)"
 description: "Learn how to configure the connection and the export to LiveRamp."
 ms.date: 10/08/2021
 ms.reviewer: mhart

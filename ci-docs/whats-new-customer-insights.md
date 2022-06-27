@@ -1,5 +1,5 @@
 ---
-title: "New and updated features"
+title: "What's new in Dynamics 365 Customer Insights"
 description: "Information about new features, improvements, and bug fixes."
 ms.date: 06/02/2022
 ms.subservice: audience-insights

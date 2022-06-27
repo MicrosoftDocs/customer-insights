@@ -1,5 +1,5 @@
 ---
-title: "LiveRamp identity data enrichment"
+title: "Enrich customer profiles with identity data from LiveRamp (preview)"
 description: "Enrich customer profiles with LiveRamp data."
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -75,7 +75,7 @@ When you enable Dynamics 365 Customer Insights to transmit data to LiveRamp, you
 
 1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
-## Enrichment results
+## View enrichment results
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Suggested segments based on activity."
+title: "Suggested segments based on activity (preview)"
 description: "Let machine learning help you find new and interesting segments based on customer activity."
 ms.date: 05/11/2021
 ms.reviewer: mhart
