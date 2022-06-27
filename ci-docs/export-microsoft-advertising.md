@@ -20,7 +20,7 @@ Export Customer Insights segments to Microsoft Advertising to create Customer Ma
 -	An [Microsoft Advertising account](https://ads.microsoft.com/) and corresponding administrator credentials.
 -	You've accepted the Customer Match terms of use. 
 -	[Configured segments](segments.md) in Customer Insights.
--	Unified customer profiles in the exported segments contain a field with an email address.
+-	Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 

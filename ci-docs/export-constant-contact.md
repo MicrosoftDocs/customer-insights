@@ -13,54 +13,63 @@ manager: shellyha
 
 # Export segments to Constant Contact (preview)
 
-Export segments of unified customer profiles to Constant Contact and use them for marketing activities. 
+Export segments of unified customer profiles to Constant Contact and use them for marketing activities.
 
-## Prerequisites for a connection
+## Prerequisites
 
--	You have an [Constant Contact account](https://www.constantcontact.com/account-home) and corresponding administrator credentials.
--	You have [configured segments](segments.md) in Customer Insights.
--	Unified customer profiles in the exported segments contain a field representing an email address.
+- A [Constant Contact account](https://www.constantcontact.com/account-home) and corresponding administrator credentials.
+- A [Constant Contact List ID](https://app.constantcontact.com/pages/contacts/ui#lists). Open a list in Constant Contact to find the list ID in the URL.
+- [Configured segments](segments.md) in Customer Insights.
+- Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- You can export up to 1 million customer profiles per export to Constant Contact.
+- The maximum customer profiles per export to Constant Contact is up to 1 million, which can take up to 1 hour. The number of customer profiles that you can export to Constant Contact depends on your contract with Constant Contact.
 - Exporting to Constant Contact is limited to segments.
-- Exporting up to 1 million customer profiles to Constant Contact can take up to 1 hour to complete. 
-- The number of customer profiles that you can export to Constant Contact is dependent and limited on your contract with Constant Contact.
 
 ## Set up connection to Constant Contact
 
+You must be an [administrator](permissions.md) in Customer Insights to add a connection.
+
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Constant Contact** to configure the connection.
+1. Select **Add connection** and choose **Constant Contact**.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
-1. Select **Connect** to initialize the connection to Constant Contact.
+1. Select **Connect** to initialize the connection.
 
-1. Select **Authenticate with Constant Contact** and provide your admin credentials for Constant Contact. 
+1. Select **Authenticate with Constant Contact** and provide your admin credentials for Constant Contact.
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
 1. Select **Save** to complete the connection.
 
+### Data privacy and compliance
+
+When you enable Dynamics 365 Customer Insights to transmit data to Constant Contact, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Constant Contact meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+
+Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
+
 ## Configure an export
 
-You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+To configure this export, you must have [permission](export-destinations.md#set-up-a-new-export) for this connection type.
 
 1. Go to **Data** > **Exports**.
 
-1. To create a new export, select **Add export**.
+1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Constant Contact section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the Constant Contact section. Contact an administrator if one is not available.
 
-1. Enter your [**Constant Contact List ID**](https://app.constantcontact.com/pages/contacts/ui#lists). Open a list in Constant Contact to find the list ID in the URL.
+1. Enter a name for the export.
 
-1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Constant Contact.
+1. Enter your **Constant Contact List ID**.
+
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
 
 1. Optionally, you can export First name and Last name as additional fields to create more personalized emails. Select **Add attribute** to map these fields.
 
@@ -70,12 +79,4 @@ You can configure this export if you have access to a connection of this type. F
 
 Saving an export doesn't run the export immediately.
 
-The export runs with every [scheduled refresh](system.md#schedule-tab). 
-You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
-
-
-## Data privacy and compliance
-
-When you enable Dynamics 365 Customer Insights to transmit data to Constant Contact, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Constant Contact meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-
-Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
+The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).
