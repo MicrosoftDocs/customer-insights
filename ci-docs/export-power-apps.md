@@ -23,7 +23,7 @@ Refer to the Power Apps documentation to learn how to [add a data connection to 
 
 ## Available entities
 
-After adding Customer Insights as a data connection, you can choose the following entities in Power Apps:
+After adding Customer Insights as a data connection, choose the following entities in Power Apps:
 
 - **Customer**: to use data from the [unified customer profile](customer-profiles.md).
 - **UnifiedActivity**: to display the [activity timeline](activities.md) in the app.

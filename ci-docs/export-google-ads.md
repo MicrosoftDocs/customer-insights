@@ -13,7 +13,7 @@ manager: shellyha
 
 # Export segments to Google Ads (preview)
 
-Export segments of unified customer profiles to a Google Ads audience list and use them to advertise on Google Search, Gmail, YouTube, and Google Display Network. 
+Export segments of unified customer profiles to a Google Ads audience list and use them to advertise on Google Search, Gmail, YouTube, and Google Display Network.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 
 ## Known limitations
 
-- Exporting segments with a total of 1 million customer profiles can take up to 30 minutes because of limitations on the provider side.
+- The maximum customer profiles per export to Google Ads is up to 1 million, which can take up to 30 minutes because of limitations on the provider side.
 - Exporting to Google Ads is limited to segments.
 - Matching in Google Ads can take up to 48 hours.
 
@@ -59,13 +59,15 @@ Your Dynamics 365 Customer Insights administrator can remove this export destina
 
 ## Configure an export
 
-You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+To configure this export, you must have [permission](export-destinations.md#set-up-a-new-export) for this connection type.
 
 1. Go to **Data** > **Exports**.
 
 1. Select **Add export**.
 
 1. In the **Connection for export** field, choose a connection from the Google Ads section. Contact an administrator if one is not available.
+
+1. Enter a name for the export.
 
 1. Choose whether to use an existing audience or create a new one:
    - To update an existing Google Ads audience, enter your [Google Ads audience ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)

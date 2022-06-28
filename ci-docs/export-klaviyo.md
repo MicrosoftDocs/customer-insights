@@ -17,32 +17,34 @@ Export segments of unified customer profiles to Klaviyo and use them for marketi
 
 ## Prerequisites
 
--	You have an [Klaviyo account](https://www.klaviyo.com/) and corresponding administrator credentials.
--	You have [configured segments](segments.md) in Customer Insights.
--	Unified customer profiles in the exported segments contain a field representing an email address.
+- An [Klaviyo account](https://www.klaviyo.com/) and corresponding administrator credentials.
+- [Klaviyo API key](https://help.klaviyo.com/hc/articles/115005062267-How-to-Manage-Your-Account-s-API-Keys).
+- [Klaviyo List ID](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).
+- [Configured segments](segments.md) in Customer Insights.
+- Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- You can export up to 100'000 customer profiles per export to Klaviyo.
+- The maximum customer profiles per export to Klaviyo is up to 1 million, which can take up to 20 minutes. The number of customer profiles that you can export to Klaviyo depends on your contract with Klaviyo.
 - Exporting to Klaviyo is limited to segments.
-- Exporting up to 1 million customer profiles to Klaviyo can take up to 20 minutes to complete. 
-- The number of customer profiles that you can export to Klaviyo is dependent and limited on your contract with Klaviyo.
 
 ## Set up connection to Klaviyo
 
+You must be an [administrator](permissions.md) in Customer Insights to add a connection.
+
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Klaviyo** to configure the connection.
+1. Select **Add connection** and choose **Klaviyo**.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Provide your [Klaviyo API key](https://help.klaviyo.com/hc/articles/115005062267-How-to-Manage-Your-Account-s-API-Keys) to continue to sign in. 
+1. Provide your Klaviyo API key to continue to sign in.
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
 
-1. Select **Connect** to initialize the connection to Klaviyo.
+1. Select **Connect** to initialize the connection.
 
 1. Select **Authenticate with Klaviyo** and provide your admin credentials for Klaviyo.
 
@@ -50,30 +52,30 @@ Export segments of unified customer profiles to Klaviyo and use them for marketi
 
 1. Select **Save** to complete the connection.
 
+### Data privacy and compliance
+
+When you enable Dynamics 365 Customer Insights to transmit data to Klaviyo, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Klaviyo meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+
+Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
+
 ## Configure an export
 
-You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+To configure this export, you must have [permission](export-destinations.md#set-up-a-new-export) for this connection type.
 
 1. Go to **Data** > **Exports**.
 
-1. To create a new export, select **Add export**.
+1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Klaviyo section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the Klaviyo section. Contact an administrator if one is not available.
 
-1. Enter your [**Klaviyo List ID**](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).     
+1. Enter a name for the export.
 
-3. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Klaviyo.
+1. Enter your **Klaviyo List ID**.
+
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
 
 1. Select **Save**.
 
 Saving an export doesn't run the export immediately.
 
-The export runs with every [scheduled refresh](system.md#schedule-tab). 
-You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
-
-
-## Data privacy and compliance
-
-When you enable Dynamics 365 Customer Insights to transmit data to Klaviyo, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Klaviyo meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-
-Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
+The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).

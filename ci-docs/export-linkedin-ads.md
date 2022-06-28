@@ -17,32 +17,34 @@ Export segments of unified customer profiles to LinkedIn Ads to create matched a
 
 ## Prerequisites
 
--	You have an [LinkedIn Campaign Manager account](https://business.linkedin.com/marketing-solutions/ads) and corresponding administrator credentials.
--	You have [configured segments](segments.md) in Customer Insights.
--	Customer profiles in the exported segments contain a field representing an email address.
+- A [LinkedIn Campaign Manager account](https://business.linkedin.com/marketing-solutions/ads) and corresponding administrator credentials.
+- A [LinkedIn Campaign Manager Account ID](https://www.linkedin.com/help/lms/answer/a424270).
+- [Configured segments](segments.md) in Customer Insights.
+- Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- Your segment in Customer Insights needs to contain at least 300 unique profiles. 
-- You can export up to 100K customer profiles per export to LinkedIn Ads.
+- Your segment in Customer Insights needs to contain at least 300 unique profiles.
+- The maximum customer profiles per export to LinkedIn Ads is 100,000, which can take up to 10 minutes.
 - Exporting to LinkedIn Ads is limited to segments.
-- Exporting up to 100K customer profiles to LinkedIn Ads can take up to 10 minutes to complete. 
 
-## Set up the connection to LinkedIn Ads
+## Set up connection to LinkedIn Ads
+
+You must be an [administrator](permissions.md) in Customer Insights to add a connection.
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **LinkedIn Ads** to configure the connection.
+1. Select **Add connection** and choose **LinkedIn Ads**.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action, the default is administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Provide your [LinkedIn Campaign Manager Account ID](https://www.linkedin.com/help/lms/answer/a424270).
+1. Provide your LinkedIn Campaign Manager Account ID.
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
 
-1. Select **Connect** to initialize the connection to Campaign Monitor.
+1. Select **Connect** to initialize the connection.
 
 1. Select **Authenticate with LinkedIn** and provide your admin credentials for LinkedIn Campaign Manager.
 
@@ -50,19 +52,27 @@ Export segments of unified customer profiles to LinkedIn Ads to create matched a
 
 1. Select **Save** to complete the connection.
 
+### Data privacy and compliance
+
+When you enable Dynamics 365 Customer Insights to transmit data to LinkedIn Ads, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that LinkedIn Ads meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+
+Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to stop the use of this functionality.
+
 ## Configure an export
 
-You can configure an export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+To configure this export, you must have [permission](export-destinations.md#set-up-a-new-export) for this connection type.
 
 1. Go to **Data** > **Exports**.
 
-1. To create a new export, select **Add export**.
+1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the LinkedIn Ads section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the LinkedIn Ads section. Contact an administrator if one is not available.
 
-1. Choose whether you want to export data to do [contact targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) or [company targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) on LinkedIn. 
+1. Choose whether you want to export data to do [contact targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) or [company targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) on LinkedIn.
 
-1. In the **Data matching** section, for contact targeting, select at least one field that represents a customer's email address, Apple Ad ID, Google Ad ID, Google User ID, or first and last name. If you choose company targeting, select at least one field that represents a company name, email domain, LinkedIn page URL, Stock symbol, or Website. Additional fields can be selected to further define your export. 
+1. In the **Data matching** section, for contact targeting, select at least one field that represents a customer's email address, Apple Ad ID, Google Ad ID, Google User ID, or first and last name. If you choose company targeting, select at least one field that represents a company name, email domain, LinkedIn page URL, Stock symbol, or Website.
+
+1. Optionally, add fields to further define your export.
 
 1. Select the segments you want to export. The matched audiences in LinkedIn Campaign Manager will automatically be created with the name of the segments that you selected to export. Each segment will result in a separate matched audience. 
 
@@ -70,12 +80,4 @@ You can configure an export if you have access to a connection of this type. For
 
 Saving an export doesn't run the export immediately.
 
-The export runs with every [scheduled refresh](system.md#schedule-tab). 
-You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
-
-
-## Data privacy and compliance
-
-When you enable Dynamics 365 Customer Insights to transmit data to LinkedIn Ads, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that LinkedIn Ads meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-
-Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to stop the use of this functionality.
+The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand). 

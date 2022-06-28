@@ -61,7 +61,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. 
 
-1. Optionally, you can export **First name**, **Last name**, and **Phone**  to create more personalized emails. Select **Add attribute** to map these fields.
+1. Optionally, export **First name**, **Last name**, and **Phone**  to create more personalized emails. Select **Add attribute** to map these fields.
 
 1. Select the segments you want to export. 
 
