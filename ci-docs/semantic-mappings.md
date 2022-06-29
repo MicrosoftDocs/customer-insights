@@ -1,5 +1,5 @@
 ---
-title: "Semantic mappings (Preview)"
+title: "Semantic mappings (preview)"
 description: "Overview of semantic mappings and how to use them." 
 ms.date: 12/01/2021
 
@@ -14,7 +14,7 @@ searchScope:
   - customerInsights
 ---
 
-# Semantic mappings (Preview)
+# Semantic mappings (preview)
 
 Semantic mappings let you map your non-activity data to pre-defined schemas. These schemas help Customer Insights to better understand your data attributes. Semantic mapping and the provided data enable new insights and features in Customer Insights. To map your activity data to the schemas, review the [activities](activities.md) documentation.
 

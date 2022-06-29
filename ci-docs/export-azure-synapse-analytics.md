@@ -1,7 +1,7 @@
 ---
-title: "Export Customer Insights data to Azure Synapse Analytics"
+title: "Export data to Azure Synapse Analytics (preview)"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
-ms.date: 04/11/2022
+ms.date: 06/29/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -11,7 +11,7 @@ ms.author: sthe
 manager: shellyha
 ---
 
-# Export data to Azure Synapse Analytics (Preview)
+# Export data to Azure Synapse Analytics (preview)
 
 Azure Synapse is an analytics service that accelerates time to insight across data warehouses and big data systems. You can ingest and use your Customer Insights data in [Azure Synapse](/azure/synapse-analytics/overview-what-is).
 
@@ -44,7 +44,7 @@ In Azure:
 
 ### Configure a connection
 
-To create a connection, the service principal and the user account in Customer Insights need **Reader** permissions on the *resource group* where the Synapse Analytics workspace is located. Additionally, the service principal and the user on the Synapse Analytics workspace need **Synapse Administrator** permissions. 
+To create a connection, the service principal and the user account in Customer Insights need **Reader** permissions on the *resource group* where the Synapse Analytics workspace is located. Additionally, the service principal and the user on the Synapse Analytics workspace needs **Synapse Administrator** permissions. 
 
 1. Go to **Admin** > **Connections**.
 
@@ -68,13 +68,13 @@ You can configure this export if you have access to a connection of this type. T
 
 1. In the **Connection for export** field, choose a connection from the **Azure Synapse Analytics** section. If you don't see this section name, there are no [connections](connections.md) of this type available to you.
 
-1. Provide a recognizable **Display name** for your export and a **Database name**.
+1. Provide a recognizable **Display name** for your export and a **Database name**. The export will create a new [Azure Synapse lake database](/azure/synapse-analytics/database-designer/concepts-lake-database) in workspace defined in the connection.
 
 1. Select which entities you want to export to Azure Synapse Analytics.
    > [!NOTE]
    > Data sources based on a [Common Data Model folder](connect-common-data-model.md) aren't supported.
 
-2. Select **Save**.
+1. Select **Save**.
 
 Saving an export doesn't run the export immediately.
 

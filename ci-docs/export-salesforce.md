@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Salesforce Marketing Cloud"
+title: "Export data to Salesforce Marketing Cloud (preview)"
 description: "Learn how to configure the connection and export to Salesforce Marketing Cloud."
 ms.date: 07/23/2021
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segments and other data to Salesforce Marketing Cloud (preview)
+# Export data to Salesforce Marketing Cloud (preview)
 
 Use your customer data in Salesforce Marketing Cloud by exporting them through a Secure File Transfer Protocol (SFTP) location.
 

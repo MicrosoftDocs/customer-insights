@@ -1,5 +1,5 @@
 ---
-title: "Audit Dynamics 365 Customer Insights with Azure Monitor"
+title: "Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (preview)"
 description: "Learn how to send logs to Microsoft Azure Monitor."
 ms.date: 12/14/2021
 ms.reviewer: mhart
@@ -14,7 +14,7 @@ searchScope:
   - customerInsights
 ---
 
-# Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (Preview)
+# Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (preview)
 
 Dynamics 365 Customer Insights provides a direct integration with Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
 

@@ -1,5 +1,5 @@
 ---
-title: "Company data enhancement"
+title: "Enrich company profiles with enhanced company data"
 description: "Enrich and normalize company data with Microsoft's models."
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: kishorem
 manager: shellyha
 ---
 
-# Enrichment of company profiles with enhanced company data
+# Enrich company profiles with enhanced company data
 
 Use Microsoft’s models and compiled company data to correct, supplement, and standardize your company profiles. We'll use the [Common Data Model format](/common-data-model/schema/core/applicationcommon/account) for better accuracy and insights.
 
@@ -80,7 +80,7 @@ The model doesn't:
 
 1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
-## Enrichment results
+## View enrichment results
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

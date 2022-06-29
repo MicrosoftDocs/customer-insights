@@ -1,5 +1,5 @@
 ---
-title: "Suggested segments based on measures"
+title: "Suggested segments based on measures (preview)"
 description: "Let machine learning help you find new and interesting segments based on customer attributes."
 ms.date: 10/15/2021
 ms.reviewer: mhart

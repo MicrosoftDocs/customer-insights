@@ -1,6 +1,6 @@
 ---
-title: "View customer profiles"
-description: "Get a combined view of your unified customer data."
+title: "Customer profiles"
+description: "View your unified customer data including using search and filter"
 ms.date: 06/08/2022
 ms.reviewer: mhart
 

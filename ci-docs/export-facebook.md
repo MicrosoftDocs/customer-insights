@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Facebook Ads Manager (contains video)"
+title: "Export segments to Facebook Ads Manager (preview) (contains video)"
 description: "Learn how to configure the connection and export to Facebook Ads Manager."
 ms.date: 04/15/2021
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segments list to Facebook Ads Manager (preview)
+# Export segments to Facebook Ads Manager (preview)
 
 Export segments of unified customer profiles to Facebook Ads Manager to create campaigns on Facebook and Instagram.
 
