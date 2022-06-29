@@ -17,10 +17,10 @@ Export segments of unified customer profiles to Braze and use them for marketing
 
 ## Prerequisites
 
--	You have a [Braze account](https://www.braze.com/) and corresponding administrator credentials.
--	You have [created segments in Braze](https://www.braze.com/docs/user_guide/engagement_tools/segments/creating_a_segment/).
--	You have [configured segments](segments.md) in Customer Insights.
--	Unified customer profiles in the exported segments contain a field representing an email address and a Braze customer ID.
+- A [Braze account](https://www.braze.com/) and corresponding administrator credentials.
+- Existing [segments in Braze](https://www.braze.com/docs/user_guide/engagement_tools/segments/creating_a_segment/).
+- [Configured segments](segments.md) in Customer Insights.
+- Unified customer profiles in the exported segments contain a field representing an email address and a Braze customer ID.
 
 ## Known limitations
 
@@ -62,7 +62,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Add the API identifier of the Braze segment to which you want to export to in the **Braze Segment API Identifier** field. You can find the identifier in the segment details on the Braze platform.
 
-1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. In the **Customer ID** field, select the field that represents the customer's Braze ID. It's required to export segments to Braze. You can choose additional fields optionally.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. In the **Customer ID** field, select the field that represents the customer's Braze ID. It's required to export segments to Braze. You can choose more fields optionally.
 
 1. Select **Save**.
 
@@ -74,6 +74,6 @@ You can also [export data on demand](export-destinations.md#run-exports-on-deman
 
 ## Data privacy and compliance
 
-When you enable Dynamics 365 Customer Insights to transmit data to Braze, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Braze meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+When you enable Dynamics 365 Customer Insights to transmit data to Braze, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you're responsible for ensuring that Braze meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 
 Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
