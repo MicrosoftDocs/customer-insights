@@ -81,7 +81,7 @@ The lower part contains a list of the segment members.
 
 ## Refresh segments
 
-Segments can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh all segments at once, select **Refresh all** on the **Segments** page. To refresh one or more segments, select them and choose **Refresh**.
+Segments can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more segments, select them and choose **Refresh**.
 
 To [schedule an automatic refresh](system.md#schedule-tab), go to **Admin** > **System** > **Schedule**. The following rules apply:
 
