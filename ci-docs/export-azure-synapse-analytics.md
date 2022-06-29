@@ -44,7 +44,7 @@ In Azure:
 
 ### Configure a connection
 
-To create a connection, the service principal and the user account in Customer Insights need **Reader** permissions on the *resource group* where the Synapse Analytics workspace is located. Additionally, the service principal and the user on the Synapse Analytics workspace need **Synapse Administrator** permissions. 
+To create a connection, the service principal and the user account in Customer Insights need **Reader** permissions on the *resource group* where the Synapse Analytics workspace is located. Additionally, the service principal and the user on the Synapse Analytics workspace needs **Synapse Administrator** permissions. 
 
 1. Go to **Admin** > **Connections**.
 
