@@ -35,17 +35,17 @@ InMobi helps brands understand, identify, engage, and acquire consumers. You can
 
 For more information, see [Export to InMobi (preview)](export-inmobi.md)
 
-## Lockbox support in Customer Insights
+### Lockbox support in Customer Insights
 
 Customer Lockbox provides an interface to review and approve (or reject) data access requests. These requests occur when data access to customer data is needed to resolve a support case.
 
 For more information, see [Securely access customer data with Customer Lockbox (Preview)](security-overview.md#securely-access-customer-data-with-customer-lockbox-preview).
 
-## Connect to your data using Azure Private Link
+### Connect to your data using Azure Private Link
 
 Azure Private Link lets Customer Insights connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
 
-For more information, see [Ue Private Link in Customer Insights](security-overview.md#private-links-tab).
+For more information, see [Use Private Link in Customer Insights](security-overview.md#private-links-tab).
 
 ## May 2022 updates
 
