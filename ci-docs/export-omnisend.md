@@ -18,14 +18,14 @@ Export segments of unified customer profiles to Omnisend and use them for market
 ## Prerequisites
 
 - An [Omnisend account](https://www.omnisend.com/) and corresponding administrator credentials.
-- [Omnisend API key](https://support.omnisend.com/en/articles/1061890-generating-api-key)
+- An [Omnisend API key](https://support.omnisend.com/en/articles/1061890-generating-api-key)
 - [Configured segments](segments.md) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
 - The maximum customer profiles per export to Omnisend is up to 1 million, which can take up to 4 hours. The number of customer profiles that you can export to Omnisend depends on your contract with Omnisend.
-- Exporting to Omnisend is limited to segments.
+- Exports to Omnisend is limited to segments.
 
 ## Set up connection to Omnisend
 
@@ -43,7 +43,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
 
-1. Select **Connect** to initialize the connection to Omnisend.
+1. Select **Connect** to initialize the connection.
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
@@ -64,6 +64,8 @@ To configure this export, you must have [permission](export-destinations.md#set-
 1. Select **Add export**.
 
 1. In the **Connection for export** field, choose a connection from the Omnisend section. Contact an administrator if one is not available.
+
+1. Enter a name for the export.
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
 

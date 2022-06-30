@@ -26,7 +26,7 @@ Export segments of unified customer profiles to Mailchimp to create newsletters 
 ## Known limitations
 
 - The maximum customer profiles per export to Mailchimp is up to 1 million, which can take up to three hours. The number of customer profiles that you can export to Mailchimp depends on your contract with Mailchimp.
-- Exporting to Mailchimp is limited to segments.
+- Exports to Mailchimp is limited to segments.
 
 ## Set up connection to Mailchimp
 

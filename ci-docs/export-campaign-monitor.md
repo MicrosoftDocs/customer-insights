@@ -25,7 +25,7 @@ Export segments of unified customer profiles to Campaign Monitor and use them fo
 ## Known limitations
 
 - The maximum customer profiles per export to Campaign Monitor is up to 1 million, which can take up to 20 minutes. The number of customer profiles that you can export to Campaign Monitor is depends on your contract with Campaign Monitor.
-- Exporting to Campaign Monitor is limited to segments.
+- Exports to Campaign Monitor is limited to segments.
 
 ## Set up connection to Campaign Monitor
 

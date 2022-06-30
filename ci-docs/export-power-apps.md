@@ -33,35 +33,33 @@ After adding Customer Insights as a data connection, choose the following entiti
 
 ### Retrievable entities
 
-You can only retrieve the **Customer**, **UnifiedActivity**, **Segments**, and **ContactProfile** entities through the Power Apps connector. ContactProfile is only available in Customer Insights instance for business accounts. Other entities are shown because the underlying connector supports them through triggers in Power Automate.
+You can only retrieve the **Customer**, **UnifiedActivity**, **Segments**, and **ContactProfile** entities through the Power Apps connector. ContactProfile is only available in Customer Insights environments for business accounts. Other entities are shown because the underlying connector supports them through triggers in Power Automate.
 
 You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint multiple times by using the $skip parameter. [Learn more about the $skip parameter](/connectors/customerinsights/#get-items-from-an-entity).
 
 ### Delegation
 
-Delegation works for the **Customer** entity and **UnifiedActivity** entity. 
+Delegation works for the **Customer** entity and **UnifiedActivity** entity.
 
-- Delegation for **Customer** entity: To use delegation for this entity, the fields need to be indexed in [Search & filter index](search-filter-index.md).  
-- Delegation for **UnifiedActivity**: Delegation for this entity only works for the fields **ActivityId** and **CustomerId**.  
-- Delegation for **ContactProfile**: Delegation for this entity only works for the fields **ContactId** and **CustomerId**. ContactProfile is only available in Customer Insights environments for business accounts.
+- Delegation for **Customer** entity: to use delegation, index the fields in [Search & filter index](search-filter-index.md).  
+- Delegation for **UnifiedActivity**: delegation is only for fields **ActivityId** and **CustomerId**.  
+- Delegation for **ContactProfile**: delegation is only for fields **ContactId** and **CustomerId**. ContactProfile is only available in Customer Insights environments for business accounts.
 
-For more information about delegation, go to [Power Apps delegable functions and operations](/powerapps/maker/canvas-apps/delegation-overview). 
+For more information about delegation, go to [Power Apps delegable functions and operations](/powerapps/maker/canvas-apps/delegation-overview).
 
 ## Example gallery control
 
-You can add customer profiles to a [gallery control](/powerapps/maker/canvas-apps/add-gallery).
+Optionally, add customer profiles to a [gallery control](/powerapps/maker/canvas-apps/add-gallery).
 
 1. Add a **gallery** control to an app you're building.
-
-    > [!div class="mx-imgBorder"]
-    > ![Add a gallery element.](media/connector-powerapps9.png "Add a gallery element.")
+  
+   :::image type="content" source="media/connector-powerapps9.png" alt-text="Add a gallery element.":::
 
 2. Select **Customer** as the data source for items.
 
-    > [!div class="mx-imgBorder"]
-    > ![Select a data source.](media/choose-datasource-powerapps.png "Select a data source.")
+   :::image type="content" source="media/choose-datasource-powerapps.png" alt-text="Select a data source.":::
 
-3. You can change the data panel on the right to select which field for the Customer entity to show on the gallery.
+3. Change the data panel on the right to select which field for the Customer entity to show on the gallery.
 
 4. If you want to show any field from the selected customer on the gallery, fill in the **Text** property of a label using **{Name_of_the_gallery}.Selected.{property_name}**  
     - For example: _Gallery1.Selected.address1_city_

@@ -26,7 +26,7 @@ Export segments of unified customer profiles to ActiveCampaign and use them for 
 ## Known limitations
 
 - The maximum customer profiles per export to ActiveCampaign is up to 1 million, which can take up to 90 minutes. The number of customer profiles that you can export to ActiveCampaign depends on your contract with ActiveCampaign.
-- Exporting to ActiveCampaign is limited to segments.
+- Exports to ActiveCampaign is limited to segments.
 
 ## Set up connection to ActiveCampaign
 

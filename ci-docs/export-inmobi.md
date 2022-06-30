@@ -10,7 +10,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment list and other data to InMobi (preview)
+# Export Customer Insights data to InMobi (preview)
 
 Export segment lists or other data from your Customer Insights instance to [InMobi](https://www.inmobi.com/).
 

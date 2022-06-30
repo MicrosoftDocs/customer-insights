@@ -25,7 +25,7 @@ Export Customer Insights segments to Microsoft Advertising to create Customer Ma
 ## Known limitations
 
 - The maximum customer profiles per export to Microsoft Advertising is up to 500,000, which can take up to 10 minutes.
-- Exporting to Microsoft Advertising is limited to segments.
+- Exports to Microsoft Advertising is limited to segments.
 
 ## Set up the connection to Microsoft Advertising
 

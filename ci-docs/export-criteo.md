@@ -23,7 +23,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 ## Known limitations
 
 - The maximum customer profiles per export to Criteo is up to 1 million, which can take up to 30 minutes. The number of customer profiles that you can export to Criteo depends on your contract with Criteo.
-- Exporting to Criteo is limited to segments.
+- Exports to Criteo is limited to segments.
 
 ## Set up connection to Criteo
 
