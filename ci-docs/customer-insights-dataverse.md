@@ -28,13 +28,13 @@ Connecting to your Dataverse environment also enables you to [ingest data from o
 
 ## Dataverse storage capacity entitlement
 
-A Customer Insights subscription includes additional capacity on tenant-level to your existing Dataverse storage capacity. The added capacity depends on the number of profiles that your subscription uses.
+A Customer Insights subscription includes additional capacity on tenant-level to your existing [Dataverse storage capacity](/power-platform/admin/capacity-storage). The added capacity depends on the number of profiles that your subscription uses.
 
-Example: Assuming you get 15 GB database storage, 20 GB file storage, and 2 GB log storage per 100.000 customer profiles. If your subscriptions includes 300.000 customer profiles, your additional storage capacity would be 45 GB (3 * 15 GB) database storage, 60 GB file storage (3 * 20 GB), and 6 GB log storage (3 * 2 GB).
+Example:
+
+Assuming you get 15 GB database storage, 20 GB file storage, and 2 GB log storage per 100.000 customer profiles. If your subscriptions includes 300.000 customer profiles, your additional storage capacity would be 45 GB (3 x 15 GB) database storage, 60 GB file storage (3 x 20 GB), and 6 GB log storage (3 x 2 GB).
 
 For more information about the detailed capacity entitlements, see [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
-
-For more information about how to see the storage entitlements in Power Platform admin center, see [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
 
 ## Connect a Dataverse environment to Customer Insights
 
