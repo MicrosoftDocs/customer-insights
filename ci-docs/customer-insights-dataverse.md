@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights data in Microsoft Dataverse
 description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output entities that are exported to Dataverse.
-ms.date: 05/30/2022
+ms.date: 06/30/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -25,6 +25,16 @@ Connecting to your Dataverse environment also enables you to [ingest data from o
 - You must have a global administrator role in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you're added to those security groups.
 - No other Customer Insights environment is already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
 - A Microsoft Dataverse environment can only connect to a single storage account. It applies only if you configure the environment to [use your Azure Data Lake Storage](own-data-lake-storage.md).
+
+## Dataverse storage capacity entitlement
+
+A Customer Insights subscription includes additional capacity on tenant-level to your existing Dataverse storage capacity. The added capacity depends on the number of profiles that your subscription uses.
+
+Example: Assuming you get 15 GB database storage, 20 GB file storage, and 2 GB log storage per 100.000 customer profiles. If your subscriptions includes 300.000 customer profiles, your additional storage capacity would be 45 GB (3 * 15 GB) database storage, 60 GB file storage (3 * 20 GB), and 6 GB log storage (3 * 2 GB).
+
+For more information about the detailed capacity entitlements, see [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+
+For more information about how to see the storage entitlements in Power Platform admin center, see [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
 
 ## Connect a Dataverse environment to Customer Insights
 
