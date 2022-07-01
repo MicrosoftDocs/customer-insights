@@ -24,7 +24,7 @@ Export segments of unified customer profiles to Omnisend and use them for market
 
 ## Known limitations
 
-- The maximum customer profiles per export to Omnisend is up to 1 million, which can take up to 4 hours. The number of customer profiles that you can export to Omnisend depends on your contract with Omnisend.
+- Up to 1 million customer profiles per export to Omnisend can take up to 4 hours. The number of customer profiles that you can export to Omnisend depends on your contract with Omnisend.
 - Exports to Omnisend is limited to segments.
 
 ## Set up connection to Omnisend

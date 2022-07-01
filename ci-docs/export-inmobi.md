@@ -27,10 +27,10 @@ Export segment lists or other data from your Customer Insights instance to [InMo
 
 ## Set up connection to Azure Blob Storage
 
-Follow the instructions to [setup a connection to your Azure Blob Storage](export-azure-blob-storage.md).
+[Setup a connection to your Azure Blob Storage](export-azure-blob-storage.md).
 
 ## Configure an export
 
-Follow the instructions to [configure an export](export-azure-blob-storage.md#configure-an-export).
+[Configure an export](export-azure-blob-storage.md#configure-an-export).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

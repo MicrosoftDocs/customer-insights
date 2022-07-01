@@ -22,10 +22,10 @@ If you are using the new capabilities of Dynamics 365 Marketing for real-time cu
 
 ## Prerequisite
 
-- Contact records must be present in Dynamics 365 Marketing before you can export a segment from Customer Insights to Marketing. Read more on how to ingest contacts in [Dynamics 365 Marketing using Microsoft Dataverse](connect-dataverse-managed-lake.md).
+Contact records must be present in Dynamics 365 Marketing before you can export a segment from Customer Insights to Marketing. Read more on how to ingest contacts in [Dynamics 365 Marketing using Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
-  > [!NOTE]
-  > Exporting segments from Customer Insights to Marketing will not create new contact records in the Marketing instances. The contact records from Marketing must be ingested in Customer Insights and used as a data source. They also need to be included in the unified Customer entity to map customer IDs to contact IDs before segments can be exported.
+> [!NOTE]
+> Exporting segments from Customer Insights to Marketing will not create new contact records in the Marketing instances. The contact records from Marketing must be ingested in Customer Insights and used as a data source. They also need to be included in the unified Customer entity to map customer IDs to contact IDs before segments can be exported.
 
 ## Set up connection to Marketing
 

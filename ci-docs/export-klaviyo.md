@@ -25,7 +25,7 @@ Export segments of unified customer profiles to Klaviyo and use them for marketi
 
 ## Known limitations
 
-- The maximum customer profiles per export to Klaviyo is up to 1 million, which can take up to 20 minutes. The number of customer profiles that you can export to Klaviyo depends on your contract with Klaviyo.
+- Up to 1 million customer profiles per export to Klaviyo can take up to 20 minutes to complete. The number of customer profiles that you can export to Klaviyo depends on your contract with Klaviyo.
 - Exports to Klaviyo is limited to segments.
 
 ## Set up connection to Klaviyo

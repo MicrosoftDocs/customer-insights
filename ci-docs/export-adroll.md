@@ -24,8 +24,8 @@ Export segments of unified customer profiles to AdRoll and use them for advertis
 
 ## Known limitations
 
-- The maximum customer profiles per export to AdRoll is up to 250,000, which can take up to 10 minutes to complete. The number of customer profiles that you can export to AdRoll is dependent on your contract with AdRoll.
-- The minimum customer profiles per export to AdRoll is fewer than 100.
+- Up to 250,000 customer profiles per export to AdRoll can take up to 10 minutes to complete. The number of customer profiles that you can export to AdRoll depends on your contract with AdRoll.
+- Segments with fewer than 100 customer profiles can't be exported to AdRoll.
 - Exports to AdRoll is limited to segments.
 
 ## Set up connection to AdRoll

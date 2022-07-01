@@ -27,7 +27,7 @@ Contact records must be present in Dynamics 365 Sales before you can export a se
 
 ## Known limitations
 
-The maximum members per segment to export to Dynamics 365 Sales is 100,000, which can take up to 3 hours to complete.
+Exports to Dynamics 365 Sales is limited to 100,000 per segment, which can take up to 3 hours to complete.
 
 ## Set up connection to Sales
 

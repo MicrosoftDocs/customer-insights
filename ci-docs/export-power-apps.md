@@ -55,16 +55,16 @@ Optionally, add customer profiles to a [gallery control](/powerapps/maker/canvas
   
    :::image type="content" source="media/connector-powerapps9.png" alt-text="Add a gallery element.":::
 
-2. Select **Customer** as the data source for items.
+1. Select **Customer** as the data source for items.
 
    :::image type="content" source="media/choose-datasource-powerapps.png" alt-text="Select a data source.":::
 
-3. Change the data panel on the right to select which field for the Customer entity to show on the gallery.
+1. Change the data panel on the right to select which field for the Customer entity to show on the gallery.
 
-4. If you want to show any field from the selected customer on the gallery, fill in the **Text** property of a label using **{Name_of_the_gallery}.Selected.{property_name}**  
+1. If you want to show any field from the selected customer on the gallery, fill in the **Text** property of a label using **{Name_of_the_gallery}.Selected.{property_name}**  
     - For example: _Gallery1.Selected.address1_city_
 
-5. To display the unified timeline for a customer, add a gallery element, and add the **Items** property using **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
+1. To display the unified timeline for a customer, add a gallery element, and add the **Items** property using **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
     - For example: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
 
 
