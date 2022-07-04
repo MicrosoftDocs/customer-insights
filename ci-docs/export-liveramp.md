@@ -20,6 +20,14 @@ Activate your data in LiveRamp to connect with over 500 platforms across digital
 - You need a LiveRamp subscription to use this connector.
 - To get a subscription, [contact LiveRamp](https://liveramp.com/contact/) directly. [Learn more about LiveRamp Onboarding](https://liveramp.com/our-platform/data-onboarding/).
 
+
+## Known limitations
+
+The LiveRamp export is using an SFTP export, and SFTP destinations behind firewalls are currently not supported. 
+- If you are using an SSH key for authentication, you need to [convert your private key to use for Open SSH](https://www.tbs-certificates.co.uk/FAQ/en/putty-ppk-vers-openssl-openssh.html)
+- The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server.
+- Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory. The actual number of profiles (or data) you can export to LiveRamp depends on your subscription with LiveRamp.
+
 ## Set up connection to LiveRamp
 
 1. Go to **Admin** > **Connections**.
@@ -30,12 +38,9 @@ Activate your data in LiveRamp to connect with over 500 platforms across digital
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Provide a **Username** and **Password** for your LiveRamp Secure FTP (SFTP) account.
-These credentials may be different from your LiveRamp Onboarding credentials.
+1. Choose whether you want to authenticate through SSH or Username/Password for your connection and provide the necessary details. Note: If you are using an SSH key for authentication, you need to [convert your private key to use for Open SSH](https://www.tbs-certificates.co.uk/FAQ/en/putty-ppk-vers-openssl-openssh.html). These credentials may be different from your LiveRamp Onboarding credentials.
 
-1. Select **Verify** to test the connection to LiveRamp.
-
-1. After successful verification, provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox.
+1. Provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox.
 
 1. Select **Save** to complete the connection.
 
