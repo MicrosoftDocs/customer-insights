@@ -27,18 +27,21 @@ The “right to erasure” by the removal of personal data from an organization�
 
 Customer Insights offers the following in-product experiences to delete personal data for a specific customer or user:
 
-- **Manage delete requests for customer data**: Customer data in Customer Insights is ingested from original data sources external to Customer Insights. All GDPR delete requests must be performed in the original data source.
+- **Manage delete requests for customer data**: Customer data in Customer Insights is ingested from original data sources external to Customer Insights. All GDPR delete requests must first be performed in the original data source.
 - **Manage delete requests for Customer Insights user data**: Data for users is created by Customer Insights. All GDPR delete requests must be performed in Customer Insights.
 
 ##### Manage requests to delete customer data
 
-A Customer Insights admin can follow these steps to remove customer data that was deleted in the data source:
+A Customer Insights admin can follow these steps to remove customer data that was deleted in the data source. Make sure that the GDPR delete request was performed in your data source before proceeding with the steps listed below. 
 
 1. Sign in to Dynamics 365 Customer Insights.
 2. Go to **Data** > **Data sources**
 3. For each data source in the list that contains deleted customer data:
    1. Select the vertical ellipsis (&vellip;) and then select **Refresh**.
    2. Check the status of the data source under **Status**. A check mark means the refresh was successful. A warning triangle means something went wrong. If a warning triangle is displayed, contact D365CI@microsoft.com.
+3. After a successful data sources refresh, trigger the downstream refreshes as well, especially if you do not have a regular scheduled full refresh of Customer Insights in place. 
+
+Important note: Static segments are not included when performing a full refresh and/or running downstream refreshes after a delete requests. To ensure that customer data is removed as well from static segments, you will need to rebuild the static segments. 
 
 > [!div class="mx-imgBorder"]
 > ![Handling GDPR delete requests for customer data.](media/gdpr-data-sources.png "Handling GDPR delete requests for customer data")
@@ -73,5 +76,9 @@ A tenant administrator can follow these steps to export data:
 1. Send an email to D365CI@microsoft.com specifying the user’s email address in the request. The Customer Insights team will send an email to the registered tenant admin email address, asking for confirmation to export data.
 2. Acknowledge the confirmation to export the data for the requested user.
 3. Receive the exported data through the tenant admin email address.
+
+### Data deletion handling in Dynamics 365 Customer Insights
+1. Data will be deleted (data partitions and data snapshots) if the data partitions and data snapshots are inactive for more than 28 days, meaning they have been replaced by a new data partition and snapshot through a refresh of data sources.
+2. Not all data and snapshots are deleted, because the most recent data partition and data snapshot is per definition active as it is used in Customer Insights to keep the Customer Insights instance as a product functional. In this case, it does not matter if the data sources weren't refreshed within the last 30 days.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
