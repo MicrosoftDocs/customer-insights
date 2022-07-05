@@ -60,9 +60,11 @@ To set up or edit an export, you need to have connections available to you. Conn
 
 ## Manage existing exports
 
-Go to **Data** > **Exports** to view the exports page. All user roles can view configured exports. Use the search field in the command bar to find exports by their name, connection name, or connection type.
+Go to **Data** > **Exports** to view the exports, their connection name, connection type, and status. All user roles can view configured exports. You can sort the list of exports by any column or use the search box to find the export you want to manage.
 
-:::image type="content" source="media/exports_showmore.png" alt-text="Enrichment hub page.":::
+Select an export to view available actions.
+
+:::image type="content" source="media/exports_showmore.png" alt-text="Exports page.":::
 
 - **View** or **Edit** the export. Users without edit permissions select **View** instead of **Edit** to see the export details.
 - **Run** the export to export the latest data.
@@ -87,7 +89,7 @@ You can define custom refresh schedules for individual exports or several export
 
 1. Select the export you want to schedule.
 
-1. Select **Schedule** in the command bar.
+1. Select **Schedule**.
 
 1. In the **Schedule export** pane, set the **Schedule run** to **On** to run the export automatically. Set it to **Off** to refresh it manually.
 
@@ -96,7 +98,8 @@ You can define custom refresh schedules for individual exports or several export
 1. Select **Save**.
 
 When editing the schedule for several exports, you need to make a selection under **Keep or override schedules**:
-- **Keep individual schedules**: Persist the previously defined schedule for the selected exports and only disable or enable them.
+
+- **Keep individual schedules**: Keep the previously defined schedule for the selected exports and only disable or enable them.
 - **Define new schedule for all selected exports**: Override the existing schedules of the selected exports.
 
 ### Run exports on demand

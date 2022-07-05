@@ -24,7 +24,7 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 ## Known limitations
 
-- Up to 1 million customer profiles per export to DotDigital can take up to 3 hours because of limitations on the provider side. The number of customer profiles that you can export to DotDigital depends on your contract with DotDigital.
+- Up to 1 million customer profiles per export to DotDigital, which can take up to 3 hours to complete because of limitations on the provider side. The number of customer profiles that you can export to DotDigital depends on your contract with DotDigital.
 - Exports to DotDigital is limited to segments.
 
 ## Set up connection to DotDigital
@@ -51,7 +51,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Select **Save** to complete the connection.
 
-## Data privacy and compliance
+### Data privacy and compliance
 
 When you enable Dynamics 365 Customer Insights to transmit data to DotDigital, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that DotDigital meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.

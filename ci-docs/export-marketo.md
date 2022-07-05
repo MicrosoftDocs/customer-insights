@@ -20,13 +20,12 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 - A [Marketo account](https://login.marketo.com/) and corresponding administrator credentials.
 - A [Marketo client ID, Client secret, and REST Endpoint Hostname](https://developers.marketo.com/rest-api/authentication/).
 - [Existing lists in Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists) and the corresponding IDs.
-- A [Marketo list ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
 - [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- Up to 1 million customer profiles per export to Marketo can take up to 3 hours. The number of customer profiles that you can export to Marketo depends on your contract with Marketo.
+- Up to 1 million customer profiles per export to Marketo, which can take up to 3 hours. The number of customer profiles that you can export to Marketo depends on your contract with Marketo.
 - Exports to Marketo is limited to segments.
 
 ## Set up connection to Marketo
@@ -41,7 +40,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your **Marketo client ID, Client secret, and REST Endpoint Hostname**. The REST Endpoint Hostname is the hostname only, without `https://`. Example: `xyz-abc-123.mktorest.com`.
+1. Enter your **Marketo client ID, Client secret, and REST Endpoint Hostname**. The REST Endpoint Hostname is the hostname only, without https://. Example: xyz-abc-123.mktorest.com.
 
 1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
 
@@ -68,7 +67,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Enter a name for the export.
 
-1. Enter your **Marketo list ID**. The list ID is a purely numerical value. For example, if your Marketo list ID is ST12345A7, remove the character before and after the numerals and enter `12345`.
+1. Enter your **Marketo list ID**. The list ID is a purely numerical value. For example, if your Marketo list ID is ST12345A7, remove the character before and after the numerals and enter *12345*.
 
 1. In the **Data matching** section, select at least one field that represents a customer's email address or a customer's Marketo ID.
 

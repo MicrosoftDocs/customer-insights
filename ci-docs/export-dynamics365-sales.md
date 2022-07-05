@@ -45,6 +45,8 @@ Exports to Dynamics 365 Sales is limited to 100,000 per segment, which can take 
 
 1. Map a customer ID field to the Dynamics 365 Contact ID.
 
+1. Select **I agree** to confirm the **Data privacy and compliance**.
+
 1. Select **Save** to complete the connection.
 
 ## Configure an export
@@ -59,7 +61,9 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Enter a name for the export.
 
-1. Choose one or more segments.
+1. Select the Contact ID field in the Customer entity that matches the Dynamics 365 Contact ID.
+
+1. Select the segments you want to export.
 
 1. Select **Save**
 

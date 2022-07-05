@@ -18,17 +18,19 @@ Export segments of unified customer profiles to AdRoll and use them for advertis
 ## Prerequisites for a connection
 
 - An [AdRoll account](https://www.adroll.com/) and corresponding administrator credentials.
-- An [**AdRoll Advertiser ID**](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
+- An [AdRoll Advertiser ID](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 - [Configured segments](segments.md) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- Up to 250,000 customer profiles per export to AdRoll can take up to 10 minutes to complete. The number of customer profiles that you can export to AdRoll depends on your contract with AdRoll.
+- Up to 250,000 customer profiles per export to AdRoll, which can take up to 10 minutes to complete. The number of customer profiles that you can export to AdRoll depends on your contract with AdRoll.
 - Segments with fewer than 100 customer profiles can't be exported to AdRoll.
 - Exports to AdRoll is limited to segments.
 
 ## Set up connection to AdRoll
+
+You must be an [administrator](permissions.md) in Customer Insights to add a connection.
 
 1. Go to **Admin** > **Connections**.
 
@@ -38,7 +40,7 @@ Export segments of unified customer profiles to AdRoll and use them for advertis
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
 
 1. Select **Connect** to initialize the connection.
 
@@ -68,7 +70,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Enter your **AdRoll Advertiser ID**.
 
-1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to AdRoll.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
 
 1. Select the segments you want to export.
 

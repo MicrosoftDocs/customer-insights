@@ -17,15 +17,15 @@ Export segments of unified customer profiles to Klaviyo and use them for marketi
 
 ## Prerequisites
 
-- An [Klaviyo account](https://www.klaviyo.com/) and corresponding administrator credentials.
-- [Klaviyo API key](https://help.klaviyo.com/hc/articles/115005062267-How-to-Manage-Your-Account-s-API-Keys).
-- [Klaviyo List ID](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).
+- A [Klaviyo account](https://www.klaviyo.com/) and corresponding administrator credentials.
+- A [Klaviyo API key](https://help.klaviyo.com/hc/articles/115005062267-How-to-Manage-Your-Account-s-API-Keys).
+- A [Klaviyo List ID](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).
 - [Configured segments](segments.md) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- Up to 1 million customer profiles per export to Klaviyo can take up to 20 minutes to complete. The number of customer profiles that you can export to Klaviyo depends on your contract with Klaviyo.
+- Up to 1 million customer profiles per export to Klaviyo, which can take up to 20 minutes to complete. The number of customer profiles that you can export to Klaviyo depends on your contract with Klaviyo.
 - Exports to Klaviyo is limited to segments.
 
 ## Set up connection to Klaviyo
@@ -73,6 +73,8 @@ To configure this export, you must have [permission](export-destinations.md#set-
 1. Enter your **Klaviyo List ID**.
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
+
+1. Select the segments you want to export.
 
 1. Select **Save**.
 

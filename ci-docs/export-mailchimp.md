@@ -18,14 +18,13 @@ Export segments of unified customer profiles to Mailchimp to create newsletters 
 ## Prerequisites
 
 - A [Mailchimp account](https://mailchimp.com/) and corresponding administrator credentials.
-- [Mailchimp audience ID](https://mailchimp.com/help/find-audience-id/).
-- [Existing audiences in Mailchimp](https://mailchimp.com/help/create-audience/) and corresponding IDs.
+- [Existing audiences in Mailchimp](https://mailchimp.com/help/create-audience/) and corresponding [audience IDs](https://mailchimp.com/help/find-audience-id/).
 - [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- Up to 1 million customer profiles per export to Mailchimp can take up to three hours. The number of customer profiles that you can export to Mailchimp depends on your contract with Mailchimp.
+- Up to 1 million customer profiles per export to Mailchimp, which can take up to three hours. The number of customer profiles that you can export to Mailchimp depends on your contract with Mailchimp.
 - Exports to Mailchimp is limited to segments.
 
 ## Set up connection to Mailchimp
@@ -64,7 +63,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Mailchimp section. If you don't see this section name, there are no connections of this type available to you.
+1. In the **Connection for export** field, choose a connection from the Mailchimp section. Contact an administrator if one is not available.
 
 1. Enter a name for the export.
 

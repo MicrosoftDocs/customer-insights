@@ -20,16 +20,17 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 - A [SendGrid account](https://sendgrid.com/) and corresponding administrator credentials.
 - [Existing contact lists in SendGrid](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts) and the corresponding IDs.
 - A [SendGrid API key](https://sendgrid.com/docs/ui/account-and-settings/api-keys/).
-- [SendGrid list ID](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts).
 - [Configured segments](segments.md) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- Up to 100,000 customer profiles in total to SendGrid can take up to a few hours to complete. The number of customer profiles that you can export to SendGrid depends on your contract with SendGrid.
+- Up to 100,000 customer profiles in total to SendGrid, which can take up to a few hours to complete. The number of customer profiles that you can export to SendGrid depends on your contract with SendGrid.
 - Exports to SendGrid is limited to segments.
 
 ## Set up connection to SendGrid
+
+You must be an [administrator](permissions.md) in Customer Insights to add a connection.
 
 1. Go to **Admin** > **Connections**.
 
@@ -49,7 +50,7 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 
 1. Select **Save** to complete the connection.
 
-## Data privacy and compliance
+### Data privacy and compliance
 
 When you enable Dynamics 365 Customer Insights to transmit data to SendGrid, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that SendGrid meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.

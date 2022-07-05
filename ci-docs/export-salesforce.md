@@ -21,6 +21,8 @@ Use your customer data in Salesforce Marketing Cloud by exporting them through a
 
 ## Set up connection to Salesforce Marketing Cloud
 
+You must be an [administrator](permissions.md) in Customer Insights to add a connection.
+
 1. Go to **Admin** > **Connections**.
 
 1. Select **Add connection** and choose **Salesforce Marketing Cloud**.
@@ -65,7 +67,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 Saving an export doesn't run the export immediately.
 
-The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
+The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).
 
 ## Import Customer Insights data from SFTP location to Salesforce Marketing Cloud
 

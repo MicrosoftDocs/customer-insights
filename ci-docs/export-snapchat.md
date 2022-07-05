@@ -25,7 +25,7 @@ Export segments of unified customer profiles to Snapchat and use them for advert
 
 ## Known limitations
 
-- Up to 1 million customer profiles to Snapchat can take up to 15 minutes to complete.
+- Up to 1 million customer profiles to Snapchat, which can take up to 15 minutes to complete.
 - Exports to Snapchat is limited to segments.
 
 ## Set up connection to Snapchat
@@ -34,7 +34,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Snapchat** to configure the connection.
+1. Select **Add connection** and choose **Snapchat**.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
@@ -78,5 +78,5 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 Saving an export doesn't run the export immediately.
 
-The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
+The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).
 

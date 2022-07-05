@@ -20,7 +20,7 @@ Azure Synapse is an analytics service that accelerates time to insight across da
 > [!NOTE]
 > Make sure to set all **role assignments** as described.
 
-- In Customer Insights, your Azure Active Directory (AD) user account has an [**Administrator** role](permissions.md#assign-roles-and-permissions).
+- In Customer Insights, your Azure Active Directory (AD) user account must have an [Administrator role](permissions.md#assign-roles-and-permissions).
 
 In Azure:
 
@@ -38,15 +38,19 @@ In Azure:
 
 ## Set up connection to Azure Synapse
 
+You must be an [administrator](permissions.md) in Customer Insights to add a connection.
+
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Azure Synapse Analytics** or select the **Set up** on the **Azure Synapse Analytics** tile to configure the connection.
+1. Select **Add connection** and choose **Azure Synapse Analytics**.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describes this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Select or search for the subscription you want to use the Customer Insights data in. As soon as a subscription is selected, you can also select **Workspace**, **Storage account**, and **Container**.
+
+1. Select **I agree** to confirm the **Data privacy and compliance**.
 
 1. Select **Save** to complete the connection.
 
@@ -58,7 +62,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the **Azure Synapse Analytics** section. Contact an administrator if one is not available.
+1. In the **Connection for export** field, choose a connection from the Azure Synapse Analytics section. Contact an administrator if one is not available.
 
 1. Provide a recognizable **Display name** for your export and a **Database name**.
 

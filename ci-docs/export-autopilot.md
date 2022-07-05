@@ -18,15 +18,18 @@ Export segments of unified customer profiles to Autopilot and use them for email
 ## Prerequisites for a connection
 
 - An [Autopilot account](https://www.autopilothq.com/) and corresponding administrator credentials.
+- An [Autopilot API key](https://autopilot.docs.apiary.io/#)
 - [Configured segments](segments.md) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 
-- Up up to 100,000 customer profiles per export to Autopilot can take up to a few hours to complete. The number of customer profiles that you can export to Autopilot depends on your contract with Autopilot.
+- Up up to 100,000 customer profiles per export to Autopilot, which can take up to a few hours to complete. The number of customer profiles that you can export to Autopilot depends on your contract with Autopilot.
 - Exports to Autopilot is limited to segments.
 
 ## Set up connection to Autopilot
+
+You must be an [administrator](permissions.md) in Customer Insights to add a connection.
 
 1. Go to **Admin** > **Connections**.
 
@@ -36,9 +39,9 @@ Export segments of unified customer profiles to Autopilot and use them for email
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your [Autopilot API key](https://autopilot.docs.apiary.io/#).
+1. Enter your Autopilot API key.
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
 
 1. Select **Connect** to initialize the connection.
 
@@ -65,7 +68,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. Repeat the same steps for other optional fields such as **First name**, **Last name**.
 
-1. Select the segments you want to export. We strongly **recommend to not export more than 100'000 customer profiles in total** to Autopilot.
+1. Select the segments you want to export. We strongly **recommend to not export more than 100,000 customer profiles in total** to Autopilot.
 
 1. Select **Save**.
 

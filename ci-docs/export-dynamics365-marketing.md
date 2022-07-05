@@ -29,6 +29,8 @@ Contact records must be present in Dynamics 365 Marketing before you can export 
 
 ## Set up connection to Marketing
 
+You must be an [administrator](permissions.md) in Customer Insights to add a connection.
+
 1. Go to **Admin** > **Connections**.
 
 1. Select **Add connection** and choose **Dynamics 365 Marketing**.
@@ -42,6 +44,8 @@ Contact records must be present in Dynamics 365 Marketing before you can export 
 1. In the **Server admin account** section, select **Sign in** and choose a Dynamics 365 Marketing account.
 
 1. Map the Contact ID field in the Customer entity to the Dynamics 365 Contact ID.
+
+1. Select **I agree** to confirm the **Data privacy and compliance**.
 
 1. Select **Save** to complete the connection.
 
@@ -57,7 +61,9 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Enter a name for the export.
 
-1. Choose one or more segments.
+1. Select the Contact ID field in the Customer entity that matches the Dynamics 365 Contact ID.
+
+1. Select the segments you want to export.
 
 1. Select **Save**.
 

@@ -18,12 +18,13 @@ Export segments of unified customer profiles to Braze and use them for marketing
 ## Prerequisites
 
 - A [Braze account](https://www.braze.com/) and corresponding administrator credentials.
+- A [Braze API key](https://www.braze.com/docs/api/basics/)
 - [Configured segments](segments.md) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address and a Braze customer ID.
 
 ## Known limitations
 
-- Up 1 million customer profiles to Braze can take up to 40 minutes to complete. The number of customer profiles that you can export to Braze depends on your contract with Braze.
+- Up 1 million customer profiles to Braze, which can take up to 40 minutes to complete. The number of customer profiles that you can export to Braze depends on your contract with Braze.
 - Exports to Braze is limited to segments.
 
 ## Set up connection to Braze
@@ -38,9 +39,9 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Provide your [Braze API key](https://www.braze.com/docs/api/basics/) to continue to sign in.
+1. Provide your Braze API key to continue to sign in.
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
 
 1. Select **Connect** to initialize the connection.
 
@@ -67,6 +68,8 @@ To configure this export, you must have [permission](export-destinations.md#set-
 1. Enter a name for the export.
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. In the **Customer ID** field, select the field that represents the customer's Braze ID. The segments in Braze will be created with the same name of the segment as in Dynamics 365 Customer Insights. You can choose additional, optional fields for matching data.
+
+1. Select the entities or segments you want to export.
 
 1. Select **Save**.
 

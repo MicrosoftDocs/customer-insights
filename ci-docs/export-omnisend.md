@@ -24,7 +24,7 @@ Export segments of unified customer profiles to Omnisend and use them for market
 
 ## Known limitations
 
-- Up to 1 million customer profiles per export to Omnisend can take up to 4 hours. The number of customer profiles that you can export to Omnisend depends on your contract with Omnisend.
+- Up to 1 million customer profiles per export to Omnisend, which can take up to 4 hours to complete. The number of customer profiles that you can export to Omnisend depends on your contract with Omnisend.
 - Exports to Omnisend is limited to segments.
 
 ## Set up connection to Omnisend
@@ -71,9 +71,10 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Optionally, export First name, Last name, Address, Country/Region, State, City, and Post Code to create more personalized emails. Select **Add attribute** to map these fields.
 
+1. Select the segments you want to export.
+
 1. Select **Save**.
 
 Saving an export doesn't run the export immediately.
 
-The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
-
+The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).

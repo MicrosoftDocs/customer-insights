@@ -22,7 +22,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 ## Known limitations
 
-- Up to 1 million customer profiles per export to Criteo  can take up to 30 minutes to complete. The number of customer profiles that you can export to Criteo depends on your contract with Criteo.
+- Up to 1 million customer profiles per export to Criteo, which can take up to 30 minutes to complete. The number of customer profiles that you can export to Criteo depends on your contract with Criteo.
 - Exports to Criteo is limited to segments.
 
 ## Set up connection to Criteo
@@ -37,7 +37,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
 
 1. Select **Connect** to initialize the connection.
 
@@ -61,6 +61,8 @@ To configure this export, you must have [permission](export-destinations.md#set-
 1. Select **Add export**.
 
 1. In the **Connection for export** field, choose a connection from the Criteo section. Contact an administrator if one is not available.
+
+1. Enter a name for the export.
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
 

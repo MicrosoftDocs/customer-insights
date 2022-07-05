@@ -24,7 +24,7 @@ Export segments of unified customer profiles to RollWorks and use them for adver
 
 ## Known limitations
 
-- Up to 250,000 customer profiles per export to RollWorks can take up to 10 minutes to complete. The number of customer profiles that you can export to RollWorks depends on your contract with RollWorks.
+- Up to 250,000 customer profiles per export to RollWorks, which can take up to 10 minutes to complete. The number of customer profiles that you can export to RollWorks depends on your contract with RollWorks.
 - Exports to RollWorks is limited to segments.
 
 ## Set up connection to RollWorks

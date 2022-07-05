@@ -52,7 +52,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Azure Blob Storage** or select **Set up** in the **Azure Blob Storage** tile.
+1. Select **Add connection** and choose **Azure Blob Storage**.
 
    :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Configuration tile for Azure Blob Storage.":::
 
@@ -63,6 +63,8 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 1. Enter **Account name**, **Account key**, and **Container** for your Blob Storage account where you want to export the segment to.  
 
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration.":::
+
+1. Select **I agree** to confirm the **Data privacy and compliance**.
 
 1. Select **Save** to complete the connection.
 

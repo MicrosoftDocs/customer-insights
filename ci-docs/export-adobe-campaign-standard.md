@@ -49,7 +49,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Adobe Campaign** or select **Set up** in the **Adobe Campaign** tile.
+1. Select **Add connection** and choose **Adobe Campaign**.
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Configuration tile for Adobe Campaign Standard.":::
 
@@ -60,6 +60,8 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 1. Enter the **Account name**, **Account key**, and **Container** for your Blob Storage account.  
 
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration.":::
+
+1. Select **I agree** to confirm the **Data privacy and compliance**.
 
 1. Select **Save** to complete the connection.
 

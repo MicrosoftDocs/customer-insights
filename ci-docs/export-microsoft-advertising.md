@@ -24,7 +24,7 @@ Export Customer Insights segments to Microsoft Advertising to create Customer Ma
 
 ## Known limitations
 
-- Up to 500,000 customer profiles per export to Microsoft Advertising can take up to 10 minutes.
+- Up to 500,000 customer profiles per export to Microsoft Advertising, which can take up to 10 minutes.
 - Exports to Microsoft Advertising is limited to segments.
 
 ## Set up the connection to Microsoft Advertising
@@ -38,6 +38,8 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. The default is administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+
+1. Enter the **Microsoft Advertising Customer ID**.
 
 1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
 

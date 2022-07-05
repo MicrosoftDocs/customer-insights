@@ -74,6 +74,8 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Optionally, export First name, Last name, and Phone to create more personalized emails. Select **Add attribute** to map these fields.
 
+1. Select the segments you want to export.
+
 1. Select **Save**.
 
 Saving an export doesn't run the export immediately.

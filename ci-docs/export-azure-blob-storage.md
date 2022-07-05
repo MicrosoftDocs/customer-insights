@@ -26,15 +26,19 @@ Store your Customer Insights data in a Blob storage or use it to transfer your d
 
 ## Set up connection to Blob Storage
 
+You must be an [administrator](permissions.md) in Customer Insights to add a connection.
+
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Azure Blob Storage** to configure the connection.
+1. Select **Add connection** and choose **Azure Blob Storage**.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter **Account name**, **Account key**, and **Container** for your Blob Storage account.
+
+1. Select **I agree** to confirm the **Data privacy and compliance**.
 
 1. Select **Save** to complete the connection.
 
@@ -50,6 +54,10 @@ To configure this export, you must have [permission](export-destinations.md#set-
 1. Select **Add export**.
 
 1. In the **Connection for export** field, choose a connection from the Azure Blob Storage section. Contact an administrator if one is not available.
+
+1. Enter a name for the export.
+
+1. Enter the folder name for the Blob storage.
 
 1. Select the box next to each of the entities you want to export to this destination.
 
