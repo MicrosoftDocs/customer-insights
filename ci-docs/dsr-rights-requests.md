@@ -80,7 +80,7 @@ A tenant administrator can follow these steps to export data:
 
 ### Data deletion handling in Dynamics 365 Customer Insights
 
-1. Data will be deleted (data partitions and data snapshots) if the data partitions and data snapshots are inactive for more than 28 days, meaning they have been replaced by a new data partition and snapshot through a refresh of data sources.
+1. Data will be deleted (data partitions and data snapshots) if the data partitions and data snapshots are inactive for more than 30 days, meaning they have been replaced by a new data partition and snapshot through a refresh of data sources.
 2. Not all data and snapshots are deleted. The most recent data partition and data snapshot are by definition active because they're used in Customer Insights. For the most recent data, it doesn't matter if the data sources weren't refreshed within the last 30 days.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
