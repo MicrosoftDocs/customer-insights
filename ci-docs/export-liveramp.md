@@ -1,7 +1,7 @@
 ---
 title: "Export segments to LiveRamp (preview)"
 description: "Learn how to configure the connection and the export to LiveRamp."
-ms.date: 10/08/2021
+ms.date: 07/06/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -20,11 +20,14 @@ Activate your data in LiveRamp to connect with over 500 platforms across digital
 - You need a LiveRamp subscription to use this connector.
 - To get a subscription, [contact LiveRamp](https://liveramp.com/contact/) directly. [Learn more about LiveRamp Onboarding](https://liveramp.com/our-platform/data-onboarding/).
 
-
 ## Known limitations
 
-- The LiveRamp export is using an SFTP export, and SFTP destinations behind firewalls are currently not supported. 
-- If you are using an SSH key for authentication, Make sure you create your private key as PEM or SSH.COM format (https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example). If you are using Putty you can convert your existing private key by exporting is as Open SSH. Here is a list of currently supported private key formats: RSA in OpenSSL PEM and ssh.com format, DSA in OpenSSL PEM and ssh.com format, ECDSA 256/384/521 in OpenSSL PEM format, ECDSA 256/384/521, ED25519 and RSA in OpenSSH key formatThe following private key formats are supported: RSA in OpenSSL PEM and ssh.com format, DSA in OpenSSL PEM and ssh.com format, ECDSA 256/384/521 in OpenSSL PEM format, ECDSA 256/384/521, ED25519 and RSA in OpenSSH key format
+- The LiveRamp export is using an SFTP export. SFTP destinations behind firewalls are currently not supported.
+- If you use an SSH key for authentication, make sure you [create your private key](/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example) as PEM or SSH.COM format. If you are using Putty, convert your private key by exporting is as Open SSH. The following private key formats are supported:
+  - RSA in OpenSSL PEM and ssh.com format
+  - DSA in OpenSSL PEM and ssh.com format
+  - ECDSA 256/384/521 in OpenSSL PEM format
+  - ED25519 and RSA in OpenSSH key format
 - The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server.
 - Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory.
 - The actual number of profiles (or data) you can export to LiveRamp depends on your subscription with LiveRamp.
@@ -39,7 +42,11 @@ Activate your data in LiveRamp to connect with over 500 platforms across digital
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Choose whether you want to authenticate through SSH or Username/Password for your connection and provide the necessary details. Note: If you are using an SSH key for authentication, Make sure you create your private key as PEM or SSH.COM format (https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example). If you are using Putty you can convert your existing private key by exporting is as Open SSH. Here is a list of currently supported private key formats: RSA in OpenSSL PEM and ssh.com format, DSA in OpenSSL PEM and ssh.com format, ECDSA 256/384/521 in OpenSSL PEM format, ECDSA 256/384/521, ED25519 and RSA in OpenSSH key formatThe following private key formats are supported: RSA in OpenSSL PEM and ssh.com format, DSA in OpenSSL PEM and ssh.com format, ECDSA 256/384/521 in OpenSSL PEM format, ECDSA 256/384/521, ED25519 and RSA in OpenSSH key format.
+1. Choose whether you want to authenticate through SSH or username/password for your connection and provide the necessary details. If you use an SSH key for authentication, make sure you [create your private key](/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example) as PEM or SSH.COM format. If you are using Putty, convert your private key by exporting is as Open SSH. The following private key formats are supported:
+   - RSA in OpenSSL PEM and ssh.com format
+   - DSA in OpenSSL PEM and ssh.com format
+   - ECDSA 256/384/521 in OpenSSL PEM format
+   - ED25519 and RSA in OpenSSH key format
 
 1. Provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox.
 
