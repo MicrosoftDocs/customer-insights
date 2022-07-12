@@ -57,7 +57,7 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Connection for export** field, choose a connection from the Iterable section. If you don't see this section name, there are no connections of this type available to you.
 
-3. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Iterable.The list created in Iterable will receive the exact same name as your segment name in Dynamics 365 Customer Insights.
+3. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Iterable. Optionally, you can also select the following fields: First Name, Iterable ID, Last Name, Locale, Phone, and Store. The list created in Iterable will receive the exact same name as your segment name in Dynamics 365 Customer Insights.
 
 1. Select **Save**.
 
