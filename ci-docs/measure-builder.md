@@ -16,7 +16,7 @@ searchScope:
 
 # Create measures with measure builder
 
-Measure builder is a data query platform with various operators and simple mapping options. You filter the data, group results, detect [entity relationship paths](relationships.md), and preview the output. Define measures using attributes from entities that are related to the unified *Customer* entity.
+Measure builder lets you define calculations using math operators, aggregation functions, and filters. Define measures using attributes from entities that are related to the unified *Customer* entity.
 
 Creating measures in B-to-C and B-to-B environments works the same way. However, if your B-to-B environment [uses accounts with hierarchies](relationships.md#set-up-account-hierarchies), choose whether to aggregate the measure across related sub-accounts.
 

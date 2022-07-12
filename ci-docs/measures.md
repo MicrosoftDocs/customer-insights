@@ -42,16 +42,16 @@ From scratch with measure builder: [Build your own](measure-builder.md).
 
 Go to the **Measures** page to view the measures you created, their status, measure type, and the last time the data was refreshed. You can sort the list of measures by any column or use the search box to find the measure you want to manage.
 
-Select a measure to view available actions. When you select a measure, you can preview the output and download a CSV file.
+Select next to a measure to view available actions. When you select on a measure, a preview of the output displays and you can download a CSV file.
 
 :::image type="content" source="media/measures-actions.png" alt-text="Actions to manage single measures."lightbox="media/measures-actions.png":::
 
 - **Edit** the measure to change its properties.
 - **Duplicate** a measure. You can choose to edit its properties right away or simply save the duplicate.
-- **Refresh** the measure to include the latest data. 
+- **Refresh** the measure to include the latest data.
 - **Rename** the measure.
 - **Activate** or **Deactivate** the measure. Inactive measures won't get refreshed during a [scheduled refresh](system.md#schedule-tab) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
-- **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
+- **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the measure.
 - **Delete** the measure.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
