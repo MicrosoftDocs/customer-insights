@@ -1,5 +1,5 @@
 ---
-title: "Find similar customers with AI (contains video)"
+title: "Find similar customers with AI (preview) (contains video)"
 description: "Find similar customer segments with artificial intelligence."
 ms.date: 03/25/2022
 
@@ -15,7 +15,7 @@ searchScope:
   - customerInsights
 ---
 
-# Similar Customers (preview)
+# Find similar customers with AI (preview)
 
 This feature lets you find similar customers in your customer base using artificial intelligence. You need to have at least one segment created to use this feature. Expanding the criteria of an existing segment help find customers that are similar to that segment.
 

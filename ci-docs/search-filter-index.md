@@ -1,5 +1,5 @@
 ---
-title: "Search and filter customer profiles"
+title: "Customer profiles: Search & filter index"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
 ms.date: 11/01/2021
 ms.reviewer: mhart

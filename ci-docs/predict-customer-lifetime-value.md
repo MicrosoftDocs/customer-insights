@@ -18,7 +18,7 @@ searchScope:
 
 # Customer lifetime value (CLV) prediction
 
-Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This feature can help you achieve various goals: 
+Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This feature can help you achieve various goals:
 - Identify high-value customers and process this insight
 - Create strategical customer segments based on their potential value to run personalized campaigns with targeted sales, marketing, and support efforts
 - Guide product development by focusing on features tht increase customer value

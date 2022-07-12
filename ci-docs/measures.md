@@ -1,5 +1,5 @@
 ---
-title: "Understand and manage measures"
+title: "Measures overview"
 description: "Learn how measures help analyze and reflect the performance of your business."
 ms.date: 03/24/2022
 

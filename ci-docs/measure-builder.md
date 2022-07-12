@@ -14,7 +14,7 @@ searchScope:
   - customerInsights
 ---
 
-# Use measure builder to create measures from scratch
+# Create new measures with the measure builder
 
 This article explains how to create a new [measure](measures.md) from scratch. The measure builder lets you define calculations using math operators, aggregation functions, and filters. You can build a measure with attributes from entities that are related to the unified *Customer* entity.
 

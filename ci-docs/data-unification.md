@@ -1,5 +1,5 @@
 ---
-title: "Create a unified view of your customers"
+title: "Data unification overview"
 description: "Go through the data unification process with your data to create a single dataset of unified customer profiles."
 ms.date: 05/10/2022
 ms.reviewer: v-wendysmith
@@ -16,8 +16,6 @@ searchScope:
 ---
 
 # Data unification overview
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. For individual consumers (B-to-C) where the data is centered around individuals, unification provides a unified view of your customers. For business accounts (B-to-B) where the data is centered around accounts, unification provides a unified view of your accounts.
 

@@ -89,7 +89,7 @@
 
 - name: Data enrichment
   items:
-    - name: Enrich customer profiles
+    - name: Data enrichment overview
       href: enrichment-hub.md
     - name: Accounts from Office 365 data
       href: enrichment-office.md
@@ -122,7 +122,7 @@
       href: search-filter-index.md
     - name: Define customer activities
       href: activities.md
-    - name: Consent management for Customer Insights
+    - name: Use consent management
       href: consent-management.md
 
 - name: Segments
@@ -229,6 +229,8 @@
           href: export-facebook.md
         - name: Google Ads
           href: export-google-ads.md
+        - name: InMobi
+          href: export-inmobi.md
         - name: Iterable
           href: export-iterable.md
         - name: Klaviyo
