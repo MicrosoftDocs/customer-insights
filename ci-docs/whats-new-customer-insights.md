@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 06/02/2022
+ms.date: 06/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
@@ -14,10 +14,38 @@ manager: shellyha
 
 We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
 
-We roll out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action and we'll update the app automatically with no downtime.
+We roll out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action, we'll update the app automatically with no downtime.
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## June 2022 updates
+
+The updates in June 2022 include new features, performance upgrades, and bug fixes.
+
+### Updated user experience for data sources and data ingestion
+
+Importing data from a wide range of data sources is the foundation to consolidating your customer data in Dynamics 365 Customer Insights. We've revisited the user experience for the import and connection of data sources. This update aims to make it easier for you to ingest data to Customer Insights.
+
+For more information, see [Data sources overview](data-sources.md).
+
+### Export to InMobi
+
+InMobi helps brands understand, identify, engage, and acquire consumers. You can export segments and other data to the InMobi service via Azure Blob Storage accounts.
+
+For more information, see [Export to InMobi (preview)](export-inmobi.md)
+
+### Lockbox support in Customer Insights
+
+Customer Lockbox provides an interface to review and approve (or reject) data access requests. These requests occur when data access to customer data is needed to resolve a support case.
+
+For more information, see [Securely access customer data with Customer Lockbox (Preview)](security-overview.md#securely-access-customer-data-with-customer-lockbox-preview).
+
+### Connect to your data using Azure Private Link
+
+Azure Private Link lets Customer Insights connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
+
+For more information, see [Use Private Link in Customer Insights](security-overview.md#private-links-tab).
 
 ## May 2022 updates
 
@@ -164,7 +192,7 @@ For a transition period, existing preview participants still have access to some
 - See events and event properties 
 - Enhance unified profiles with ingested and refined events to benefit from the full value of their customer data
   
-During the transition period, captured events are still streamed to the connected Data Lake. Once this functionality is turned off, data sharing will stop and no new events are sent to the connected storage.
+During the transition period, captured events are still streamed to the connected Data Lake. Once this functionality is turned off, data sharing will stop, and no new events are sent to the connected storage.
 Contact your Microsoft Account team directly if you have questions about the end of the capability preview. Your Account team will keep you up to date on coming launches. 
 
 ## January 2022 updates

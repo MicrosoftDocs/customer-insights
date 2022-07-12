@@ -18,7 +18,7 @@ This article lists some frequently requested example queries to help you with bu
 
 You have to modify the query samples to make them work on the target environments: 
 
-- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}` where {instanceId} is the GUID of the Customer Insights environment you want to query. The [ListAllInstances operation](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) lets you find the {InstanceId} you have access to.
+- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` where {instanceId} is the GUID of the Customer Insights environment you want to query. The [ListAllInstances operation](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) lets you find the {InstanceId} you have access to.
 - {CID}: GUID of a unified customer record. Example: `ce759201f786d590bf2134bff576c369`.
 - {AlternateKey}: Identifier of the primary key of a customer record in a data source. Example: `CNTID_1002`
 - {DSname}: String with the entity name of a data source that gets ingested to Customer Insights. Example: `Website_contacts`.
@@ -34,9 +34,10 @@ The following table contains a set of sample queries for the *Customer* entity.
 |Alternate key    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Alternate keys persist in the unified customer entity       |
 |Select   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |In    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
-|Alternate Key + In   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|Alternate Key + In   | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |Search  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Returns top 10 results for a search string      |
 |Segment membership  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Returns a preset number of rows from the segmentation entity.      |
+|Segment membership for a customer | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | Returns the customer profile if they're a member of the given segment     |
 
 ## Unified activity
 
