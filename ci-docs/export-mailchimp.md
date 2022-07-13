@@ -25,7 +25,7 @@ Export segments of unified customer profiles to Mailchimp to create newsletters 
 ## Known limitations
 
 - Up to 1 million customer profiles per export to Mailchimp, which can take up to three hours. The number of customer profiles that you can export to Mailchimp depends on your contract with Mailchimp.
-- Exports to Mailchimp is limited to segments.
+- Segments only.
 
 ## Set up connection to Mailchimp
 
@@ -55,11 +55,11 @@ When you enable Dynamics 365 Customer Insights to transmit data to Mailchimp, yo
 
 Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
 
-## Configure the export
+## Configure an export
 
 To configure this export, you must have [permission](export-destinations.md#set-up-a-new-export) for this connection type.
 
-1. Go to **Data**> **Exports**.
+1. Go to **Data** > **Exports**.
 
 1. Select **Add export**.
 

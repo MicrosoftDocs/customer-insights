@@ -25,7 +25,7 @@ Export segments of unified customer profiles to Iterable and use them for market
 ## Known limitations
 
 - Up to 1 million customer profiles to Iterable, which can take up to 30 minutes to complete. The number of customer profiles that you can export to Iterable depends on your contract with Iterable.
-- Exports to Iterable is limited to segments.
+- Segments only.
 
 ## Set up connection to Iterable
 

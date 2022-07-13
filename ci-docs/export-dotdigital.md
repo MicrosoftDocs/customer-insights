@@ -25,7 +25,7 @@ Export segments of unified customer profiles to DotDigital address books and use
 ## Known limitations
 
 - Up to 1 million customer profiles per export to DotDigital, which can take up to 3 hours to complete because of limitations on the provider side. The number of customer profiles that you can export to DotDigital depends on your contract with DotDigital.
-- Exports to DotDigital is limited to segments.
+- Segments only.
 
 ## Set up connection to DotDigital
 
@@ -80,6 +80,6 @@ Saving an export doesn't run the export immediately.
 
 The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
  
-In DotDigital, you can now find your segments in [DotDigital address books](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
+In DotDigital, find your segments in [DotDigital address books](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

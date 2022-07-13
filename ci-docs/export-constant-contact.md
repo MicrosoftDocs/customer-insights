@@ -25,7 +25,7 @@ Export segments of unified customer profiles to Constant Contact and use them fo
 ## Known limitations
 
 - Up to 1 million customer profiles per export to Constant Contact, which can take up to 1 hour to complete. The number of customer profiles that you can export to Constant Contact depends on your contract with Constant Contact.
-- Exports to Constant Contact is limited to segments.
+- Segments only.
 
 ## Set up connection to Constant Contact
 
@@ -71,7 +71,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
 
-1. Optionally, export First name and Last name as additional fields to create more personalized emails. Select **Add attribute** to map these fields.
+1. Optionally, export **First name** and **Last name** as additional fields to create more personalized emails. Select **Add attribute** to map these fields.
 
 1. Select the segments you want to export.
 

@@ -58,7 +58,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Enter a name for the export.
 
-1. In the **Choose your key identifier** field, select **Email**, **Name and address**, or **Phone** to send to LiveRamp for identity resolution.
+1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to LiveRamp for identity resolution.
 
    :::image type="content" source="media/export-liveramp-segments.png" alt-text="LiveRamp connector with attribute mapping.":::
 

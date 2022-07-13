@@ -26,7 +26,7 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 ## Known limitations
 
 - Up to 100,000 customer profiles in total to SendGrid, which can take up to a few hours to complete. The number of customer profiles that you can export to SendGrid depends on your contract with SendGrid.
-- Exports to SendGrid is limited to segments.
+- Segments only.
 
 ## Set up connection to SendGrid
 
@@ -34,7 +34,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **SendGrid** to configure the connection.
+1. Select **Add connection** and choose **SendGrid**.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
@@ -73,7 +73,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Optionally, select fields such as **First name**, **Last name**, **Country/Region**, **State**, **City**, and **Post code**.
 
-1. Select the segments you want to export. We strongly **recommend to not export more than 100,000 customer profiles in total** to SendGrid.
+1. Select the segments you want to export following the known limitations.
 
 1. Select **Save**.
 

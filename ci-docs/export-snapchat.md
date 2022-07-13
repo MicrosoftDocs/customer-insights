@@ -25,8 +25,8 @@ Export segments of unified customer profiles to Snapchat and use them for advert
 
 ## Known limitations
 
-- Up to 1 million customer profiles to Snapchat, which can take up to 15 minutes to complete.
-- Exports to Snapchat is limited to segments.
+- Up to 1 million customer profiles, which can take up to 15 minutes to complete.
+- Segments only.
 
 ## Set up connection to Snapchat
 
@@ -79,4 +79,3 @@ To configure this export, you must have [permission](export-destinations.md#set-
 Saving an export doesn't run the export immediately.
 
 The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).
-

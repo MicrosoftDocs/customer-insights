@@ -19,16 +19,16 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 
 - A [Google Ads account](https://ads.google.com/) and corresponding administrator credentials.
 - A [Google Ads customer ID](https://support.google.com/google-ads/answer/1704344).
-- The requirements of the [Customer Match Policy](https://support.google.com/adspolicy/answer/6299717) are fulfilled.
-- The requirements of the [remarketing list sizes](https://support.google.com/google-ads/answer/7558048) are fulfilled.
+- The requirements of the [Customer Match Policy](https://support.google.com/adspolicy/answer/6299717) are met.
+- The requirements of the [remarketing list sizes](https://support.google.com/google-ads/answer/7558048) are met.
 - [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain fields representing an email address, phone, mobile advertiser ID, third-party user ID, or address.
 
 ## Known limitations
 
-- Up 1 million customer profiles per export to Google Ads, which can take up to 30 minutes to complete because of limitations on the provider side.
-- Exports to Google Ads is limited to segments.
-- Matching in Google Ads can take up to 48 hours.
+- Export up 1 million customer profiles per export to Google Ads, which can take up to 30 minutes to complete because of limitations on the provider side.
+- Segments only.
+- Match in Google Ads can take up to 48 hours.
 
 ## Set up connection to Google Ads
 

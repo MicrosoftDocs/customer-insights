@@ -25,8 +25,8 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 ## Known limitations
 
-- Up to 1 million customer profiles per export to Sendinblue, which can take up to 90 minutes. The number of customer profiles that you can export to Sendinblue depends on your contract with Sendinblue.
-- Exports to Sendinblue is limited to segments.
+- Up to 1 million customer profiles per export to Sendinblue, which can take up to 90 minutes to complete. The number of customer profiles that you can export to Sendinblue depends on your contract with Sendinblue.
+- Segments only.
 
 ## Set up connection to Sendinblue
 

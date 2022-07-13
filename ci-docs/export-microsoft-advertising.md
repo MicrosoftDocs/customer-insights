@@ -25,9 +25,9 @@ Export Customer Insights segments to Microsoft Advertising to create Customer Ma
 ## Known limitations
 
 - Up to 500,000 customer profiles per export to Microsoft Advertising, which can take up to 10 minutes.
-- Exports to Microsoft Advertising is limited to segments.
+- Segments only.
 
-## Set up the connection to Microsoft Advertising
+## Set up connection to Microsoft Advertising
 
 You must be an [administrator](permissions.md) in Customer Insights to add a connection.
 
@@ -73,7 +73,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Enter your **Microsoft Advertising Customer ID and Account ID**. You can find the Customer ID (`cid`) and Account ID (`aid`) in the parameters of the URL when you're signed in Microsoft Advertising.
 
-1. In the **Data matching** section, in the **Email** field, select the field with a customer's email address. It's required to export segments to Microsoft Advertising.
+1. In the **Data matching** section, in the **Email** field, select the field with a customer's email address.
 
 1. Select **Save**.
 

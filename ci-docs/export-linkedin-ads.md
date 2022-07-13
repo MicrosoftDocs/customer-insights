@@ -24,9 +24,8 @@ Export segments of unified customer profiles to LinkedIn Ads to create matched a
 
 ## Known limitations
 
-- Up to 100,000 customer profiles per export to LinkedIn Ads, which can take up to 10 minutes.
-- Segments in Customer Insights must contain at least 300 unique profiles.
-- Exports to LinkedIn Ads is limited to segments.
+- Up to 100,000 customer profiles per export to LinkedIn Ads, which can take up to 10 minutes to complete.
+- Segments only. A segment must contain at least 300 unique profiles.
 
 ## Set up connection to LinkedIn Ads
 
@@ -74,7 +73,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. In the **Data matching** section, for contact targeting, select at least one field that represents a customer's email address, Apple Ad ID, Google Ad ID, Google User ID, or first and last name. If you choose company targeting, select at least one field that represents a company name, email domain, LinkedIn page URL, Stock symbol, or Website.
 
-1. Optionally, add fields to further define your export.
+1. Optionally, add fields to further define your export. Select **Add attribute** to map these fields.
 
 1. Select the segments you want to export. The matched audiences in LinkedIn Campaign Manager will automatically be created with the name of the segments that you selected to export. Each segment will result in a separate matched audience.
 

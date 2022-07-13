@@ -25,7 +25,7 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 - SFTP destinations behind firewalls are currently not supported.
 - The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server.
-- Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory.
+- Up to 100 million customer profiles, which can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory.
 
 ## Set up connection to SFTP
 
@@ -39,11 +39,11 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Provide a **Username**, **Password**, **Hostname**, and **Export folder** for your SFTP account.
+1. Choose how to connect, either username and password or SSH key.
+   - **Username and password**: Provide a **Username**, **Password**, **Hostname**, and **Export folder** for your SFTP account
+   - **SSH key**: Provide a **Username**, **Private key**, **Passphrase**, **Hostname**, and **Export folder** for your SFTP account.
 
 1. Select **Verify** to test the connection.
-
-1. Choose if you want to export your data **Gzipped** or **Unzipped** and the **field delimiter** for the exported files.
 
 1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
 
@@ -65,6 +65,8 @@ To configure this export, you must have [permission](export-destinations.md#set-
 1. In the **Connection for export** field, choose a connection from the SFTP section. Contact an administrator if one is not available.
 
 1. Enter a name for the export.
+
+1. Choose if you want to export your data **Gzipped** or **Unzipped** and the **field delimiter** for the exported files.
 
 1. Select the entities, for example segments, that you want to export.
 

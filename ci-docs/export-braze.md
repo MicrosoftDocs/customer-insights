@@ -25,7 +25,7 @@ Export segments of unified customer profiles to Braze and use them for marketing
 ## Known limitations
 
 - Up 1 million customer profiles to Braze, which can take up to 40 minutes to complete. The number of customer profiles that you can export to Braze depends on your contract with Braze.
-- Exports to Braze is limited to segments.
+- Segments only.
 
 ## Set up connection to Braze
 
