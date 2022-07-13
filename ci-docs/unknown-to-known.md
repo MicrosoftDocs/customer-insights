@@ -50,22 +50,21 @@ For more information about the available options for data ingestion, see [Data s
 
 Converging unknown identities with known identities is helps enable personalization based on user behaviors, irrespective of their profile state (i.e., known or unknown). Personalizing content for all users helps customers quickly get to the most relevant products or services that they are interested in at that moment.
 
-Since some of the users in our data are known, we can use Customer Insights to combine that data with the user's profile.
+Since some of the users in our data are known, we can use Customer Insights to combine that data with the user's profile. For more information about unifying customer profiles, see [Data unification overview](data-unification.md).
 
-1.	Select Webdata as a Source: Use the Profile data that is stored from your web data (ex. WebEvents – HomePagevisits) and select the fields that represent the demographic data (IDs  - contactID, Signal.SessionID, Signal.User.AuthId)
- 
- 
-2.	Add rules to merge duplicate records: For the WebEvents profile data, specify the merge preferences to keep the most filled data. 
- 
-3.	Setup Matching rules and conditions: The web profiles event data in this example will be matched on IDs with the profiles from the other data sources that have authenticated users.
-a.	Setup exact match rules on IDs as separate rules with each of the other profile entities that has a corresponding primary key or ID match. 
-b.	In the example below, web event profile data is used as the last matching entity so that a known profile is matched first. You can start with the web event profile data first as well. 
-c.	Include All records unchecked will create profile records for known users and will also include their corresponding unknown user ids. This is helpful in scenarios when you are interested in viewing the past behavioral activities of known users when they were not authenticated yet i.e., unknown. 
-d.	Include All records checked will create profile records for unknown users without any demographic data (if not present within the web event data source only). This generates a unique customer id for the unknown profile. In the future when a known profile is associated in the web events profile data, then the newly known user’s journey can be viewed and used for personalization based on past unknown behavioral data as well. 
- 
-4.	Unknown and Known Profiles: Both unknown and known profiles are generated with a unified Customer ID. The additional high value web event data such as home page visits, checkout, etc. can be brought in as behavioral activities when the user was unknown as well as known. That can now be used for creating more insights, such as Loyalty customers that visited the home page six months ago (when they were still unknown) or Customers that do not have loyalty ids and have abandoned cart.  
+1. Select the source fields from the web data entity. Use the profile data that is stored in your web data and select the fields that represent Ids with demographic data.
+
+(Screenshot)
+
+1. Add rules to merge duplicate records. For web data, choose the most filled data.
+
+1. Configure match rules and conditions. The web profiles event data in this example will be matched on IDs with the profiles from the other data sources that contain customer information. Set up exact match rules on IDs as separate rules with each of the other profile entities that has a corresponding primary key or ID match. In the example, web event profile data is used as the last matching entity so that other profile data is combined first.
+   1. Not checking Include all records creates unified profiles for known users and includes their corresponding unknown user IDs. This is helpful in scenarios when you are interested in viewing the past behavioral activities of known users when they were still unknown.
+   1. Checking Include All records creates separate profile records for unknown users. Unknown users get a unique customer ID. In the future when a known profile is associated in the web events profile data, then the newly known user’s journey can be viewed and used for personalization based on past unknown behavioral data too.
 
 ## Get insights
+
+If customer profiles are created for unknown and known users, the additional high value web event data can be used as [activities](activities.md). These activities can be used to create more insights. For example, customers that visited a website six months ago (when they were still unknown) or customers that don't have a loyalty ID never completed a checkout.
 
 Enrich your data, build measures, and create segments for further activation.
 
