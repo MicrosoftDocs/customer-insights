@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 06/13/2022
+ms.date: 07/13/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -54,6 +54,9 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
+> [!CAUTION]
+> A data source based on Power Query creates a [dataflow in Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Don't change the name of a dataflow in the Power Platform admin center that is used in Customer Insights. Renaming a dataflow causes issues with the references between the Customer Insights data source and the Dataverse dataflow.
+
 ### Available Power Query data sources
 
 See the [Power Query connector reference](/power-query/connectors/) for a list of connectors that you can use to import data to Customer Insights.
@@ -66,17 +69,14 @@ Ingesting data from on-premises data sources is supported based on Microsoft Pow
 
 Data sources that are created after associating a Dataverse environment with Customer Insights use [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) by default. Dataflows support on-premises connectivity using the data gateway. You can remove and recreate data sources that existed before a Dataverse environment was associated [using on-premises data gateways](/data-integration/gateway/service-gateway-app).
 
-Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse in Customer Insights. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
+Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse them in Customer Insights. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
 
 > [!IMPORTANT]
 > Make sure your gateways are updated to latest version. You can install an update and reconfigure a gateway from a prompt shown on the gateway screen directly or [download the latest version](https://powerapps.microsoft.com/downloads/). If you don't use the latest gateway version, the dataflow refresh fails with error messages like **The keyword isn't supported: configuration properties. Parameter name: keyword**.
+>
+> Errors with on-premises data gateways in Customer Insights are often caused by configuration issues. For more information about troubleshooting data gateways, see [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
 
 ## Edit Power Query data sources
-
-> [!NOTE]
-> It might not be possible to make changes to data sources that are currently being used in one of the app's processes (*segmentation*, *match*, or *merge*, for example).
->
-> In the **Settings** page, you can track the progress of each of the active processes. When a process completes, you can return to the **Data Sources** page and make your changes.
 
 1. Go to **Data** > **Data sources**.
 
@@ -87,3 +87,8 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 1. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
 1. Select **Save** in Power Query after completing your edits to save your changes.
+
+> [!NOTE]
+> It might not be possible to make changes to data sources that are currently being used in one of the app's processes (*segmentation*, *match*, or *merge*, for example).
+>
+> In the **Settings** page, you can track the progress of each of the active processes. When a process completes, you can return to the **Data Sources** page and make your changes.
