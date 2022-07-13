@@ -1,8 +1,8 @@
 ---
 title: "Exports (preview) overview"
 description: "Manage exports to share data."
-ms.date: 11/01/2021
-ms.reviewer: mhart
+ms.date: 07/13/2022
+ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -25,8 +25,8 @@ Go to **Data** > **Exports** to view the exports page. All user roles can view c
 
 There are two main types of exports:  
 
-- **Data-out exports** let you export any type of entity available in Customer Insights. The entities that you select for export are exported with all data fields, metadata, schemas, and mapping details. 
-- **Segment exports** let you export segment entities from Customer Insights. Segments represent a list of customer profiles. When configuring the export, you select the included data fields, depending on the target system you are export data to. 
+- **Data-out exports** let you export any type of entity available in Customer Insights. The entities that you select for export are exported with all data fields, metadata, schemas, and mapping details.
+- **Segment exports** let you export segment entities from Customer Insights. For individual consumers (B-to-C), segments represent a list of customer profiles. For businesses (B-to-B), segments can represent a list of accounts or contacts. When configuring the export, you select the included data fields, depending on the target system you are exporting data to.
 
 ### Export segments
 
@@ -34,8 +34,9 @@ There are two main types of exports:
 Most export option support both types of environments. Exporting segments to various target systems has specific requirements. Generally speaking, a segment member, the customer profile, contains contact information. While this is usually the case for segments built on individual consumers (B-to-C), it's not necessarily the case for segments based on business accounts (B-to-B). 
 
 **Segment exports environments for business accounts (B-to-B)**  
-- Segments in the context of environments for business accounts are built on the *account* entity. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](export-linkedin-ads.md) when you choose the **company** option while defining the export.
-- All other target systems require fields from the contact entity. To ensure account segments can retrieve data from related contacts, your segment definition needs to project attributes of the contact entity. Learn more about how to [configure segments and project attributes](segment-builder.md).
+- Segments in the context of environments for business accounts are built on the *account* entity or the *contact* entity. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](export-linkedin-ads.md) when you choose the **company** option while defining the export.
+- All other target systems require fields from the contact entity.
+- With two segment types (contacts and accounts), Customer Insights automatically identifies which type of segments are eligible for export based on the target system. For example, for a contact-focused target system like Mailchimp, Customer Insights only allows you to choose contact segments to export.
 
 **Segment exports in environments for individual consumers (B-to-C)**  
 - Segments in the context of environments for individual customers are built on the *unified customer profile* entity. Every segment that meets the requirements of the target systems (for example, an email address) can get exported.
