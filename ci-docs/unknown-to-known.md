@@ -44,6 +44,8 @@ Data about customers can originate from your website as event data and it can be
 
 The event data in our example above contains the distinct profile ids of the known and unknown users. In event 1 and 4, the users are unknown while in event 2 and 3 the user with the ID abc123 signs up to a loyalty program.
 
+:::image type="content" source="media/website-data-source.png" alt-text="Data sources including the Contoso website.":::
+
 For more information about the available options for data ingestion, see [Data sources overview](data-sources.md).
 
 ## Data unification
@@ -54,13 +56,15 @@ Since some of the users in our data are known, we can use Customer Insights to c
 
 1. Select the source fields from the web data entity. Use the profile data that is stored in your web data and select the fields that represent Ids with demographic data.
 
-(Screenshot)
+:::image type="content" source="media/website-source-fields.png" alt-text="Source fields for the web data source.":::
 
 1. Add rules to merge duplicate records. For web data, choose the most filled data.
 
 1. Configure match rules and conditions. The web profiles event data in this example will be matched on IDs with the profiles from the other data sources that contain customer information. Set up exact match rules on IDs as separate rules with each of the other profile entities that has a corresponding primary key or ID match. In the example, web event profile data is used as the last matching entity so that other profile data is combined first.
    1. Not checking Include all records creates unified profiles for known users and includes their corresponding unknown user IDs. This is helpful in scenarios when you are interested in viewing the past behavioral activities of known users when they were still unknown.
    1. Checking Include All records creates separate profile records for unknown users. Unknown users get a unique customer ID. In the future when a known profile is associated in the web events profile data, then the newly known user’s journey can be viewed and used for personalization based on past unknown behavioral data too.
+
+:::image type="content" source="media/website-match-rule.png" alt-text="Match rule for the website data source entity.":::
 
 ## Get insights
 
