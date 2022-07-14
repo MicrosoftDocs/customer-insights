@@ -70,7 +70,9 @@ Since some of the users in our data are known, we can use Customer Insights to c
 
 If customer profiles are created for unknown and known users, the additional high value web event data can be used as [activities](activities.md). These activities can be used to create more insights. For example, customers that visited a website six months ago (when they were still unknown) or customers that don't have a loyalty ID never completed a checkout.
 
-Enrich your data, build measures, and create segments for further activation.
+:::image type="content" source="media/website-known-unknown.png" alt-text="Screenshot of the customer page with known and unknown customers.":::
+
+[Enrich](enrichment-hub.md) your data, build [measures](measures.md), and create [segments](segments.md) for further activation.
 
 For example, you can create segments of known that looked at some products but never completed the checkout.
 
