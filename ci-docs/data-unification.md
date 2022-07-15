@@ -17,8 +17,6 @@ searchScope:
 
 # Data unification overview
 
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
-
 After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. For individual consumers (B-to-C) where the data is centered around individuals, unification provides a unified view of your customers. For business accounts (B-to-B) where the data is centered around accounts, unification provides a unified view of your accounts.
 
 Data can be unified on a single entity or multiple entities. Unification is performed in the following order:

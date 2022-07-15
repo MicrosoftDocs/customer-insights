@@ -18,8 +18,6 @@ searchScope:
 
 # Update the unification settings
 
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
-
 To review or change any unification settings once a unified profile has been created, perform the following steps.
 
 1. Go to **Data** > **Unify**.

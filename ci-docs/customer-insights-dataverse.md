@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights data in Microsoft Dataverse
 description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output entities that are exported to Dataverse.
-ms.date: 06/30/2022
+ms.date: 07/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -44,7 +44,7 @@ The **Microsoft Dataverse** step lets you connect Customer Insights with your Da
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto-enabled for net new environments.":::
 
-Administrators can configure Customer Insights to connect an existing Dataverse environment. By providing the URL to the Dataverse environment, it's attaching to their new Customer Insights environment.
+Administrators can configure Customer Insights to connect an existing Dataverse environment. By providing the URL to the Dataverse environment, it's connecting to their new Customer Insights environment. After establishing the connection between Customer Insights and Dataverse, don't change the organization name for the Dataverse environment. The name of the organization is used in the Dataverse URL and a changed name breaks the connection with Customer Insights.
 
 If you don't want to use an existing Dataverse environment, the system creates a new environment for the Customer Insights data in your tenant. [Power Platform admins can control who can create environments](/power-platform/admin/control-environment-creation). When you're setting up a new Customer Insights environment and the admin has disabled the creation of Dataverse environments for everyone except admins, you may not be able to create a new environment.
 

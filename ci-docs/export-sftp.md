@@ -1,7 +1,7 @@
 ---
 title: "Export data to SFTP hosts (preview) (contains video)"
 description: "Learn how to configure the connection and export to an SFTP location."
-ms.date: 06/09/2022
+ms.date: 07/06/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -23,7 +23,12 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 ## Known limitations
 
-- SFTP destinations behind firewalls are currently not supported. 
+- SFTP destinations behind firewalls are currently not supported.
+- If you use an SSH key for authentication, make sure you [create your private key](/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example) as PEM or SSH.COM format. If you are using Putty, convert your private key by exporting is as Open SSH. The following private key formats are supported:
+  - RSA in OpenSSL PEM and ssh.com format
+  - DSA in OpenSSL PEM and ssh.com format
+  - ECDSA 256/384/521 in OpenSSL PEM format
+  - ED25519 and RSA in OpenSSH key format
 - The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server.
 - Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory.
 
@@ -37,11 +42,11 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Provide a **Username**, **Password**, **Hostname**, and **Export folder** for your SFTP account.
-
-1. Select **Verify** to test the connection.
-
-1. Choose if you want to export your data **Gzipped** or **Unzipped** and the **field delimiter** for the exported files.
+1. Choose whether you want to authenticate through SSH or username/password for your connection and provide the necessary details. If you use an SSH key for authentication, make sure you [create your private key](/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example) as PEM or SSH.COM format. If you are using Putty, convert your private key by exporting is as Open SSH. The following private key formats are supported:
+   - RSA in OpenSSL PEM and ssh.com format
+   - DSA in OpenSSL PEM and ssh.com format
+   - ECDSA 256/384/521 in OpenSSL PEM format
+   - ED25519 and RSA in OpenSSH key format
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
@@ -56,6 +61,10 @@ You can configure this export if you have access to a connection of this type. F
 1. To create a new export, select **Add destination**.
 
 1. In the **Connection for export** field, choose a connection from the SFTP section. If you don't see this section name, there are no connections of this type available to you.
+
+1. Provide a display name for your export.
+
+1. Choose if you want to export your data **Gzipped** or **Unzipped** and the **field delimiter** for the exported files.
 
 1. Select the entities, for example segments, you want to export.
 
