@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights data in Microsoft Dataverse
 description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output entities that are exported to Dataverse.
-ms.date: 07/13/2022
+ms.date: 07/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -25,6 +25,18 @@ Connecting to your Dataverse environment also enables you to [ingest data from o
 - You must have a global administrator role in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you're added to those security groups.
 - No other Customer Insights environment is already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
 - A Microsoft Dataverse environment can only connect to a single storage account. It applies only if you configure the environment to [use your Azure Data Lake Storage](own-data-lake-storage.md).
+
+## Dataverse storage capacity entitlement
+
+A Customer Insights subscription entitles you to extra capacity for your organization's existing [Dataverse storage capacity](/power-platform/admin/capacity-storage). The added capacity depends on the number of profiles that your subscription uses.
+
+**Example:**
+
+Assuming you get 15 GB database storage and 20 GB file storage per 100,000 customer profiles. If your subscription includes 300,000 customer profiles, your total storage capacity would be 45 GB (3 x 15 GB) database storage and 60 GB file storage (3 x 20 GB). Similarly, if you have a B2B subscription with 30K accounts, your total storage capacity would be 45 GB (3 x 15 GB) database storage, and 60 GB file storage (3 x 20 GB).
+
+Log capacity isn't incremental and fixed for your organization.
+
+For more information about the detailed capacity entitlements, see [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## Connect a Dataverse environment to Customer Insights
 
@@ -79,7 +91,7 @@ To execute the PowerShell scripts, you first need to set up PowerShell according
 
     2. `ByolSetup.ps1`
         - You need *Storage Blob Data Owner* permissions at the storage account/container level to run this script or this script will create one for you. Your role assignment can be removed manually after successfully running the script.
-        - This PowerShell script adds the required tole-based access control (RBAC) for the Microsoft Dataverse service and any Dataverse-based business applications. It also updates the Access Control List (ACL) on the CustomerInsights container for the security groups created with the `CreateSecurityGroups.ps1` script. The Contributor group will have *rwx* permission and Readers group will have *r-x* permission only.
+        - This PowerShell script adds the required role-based access control for the Microsoft Dataverse service and any Dataverse-based business applications. It also updates the Access Control List (ACL) on the CustomerInsights container for the security groups created with the `CreateSecurityGroups.ps1` script. The Contributor group will have *rwx* permission and Readers group will have *r-x* permission only.
         - Execute this PowerShell script in Windows PowerShell by providing the Azure subscription ID containing your Azure Data Lake Storage, storage account name, resource group name, and the Reader and Contributor security group ID values. Open the PowerShell script in an editor to review additional information and the logic implemented.
         - Copy the output string after successfully running the script. The output string looks like this: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
 
