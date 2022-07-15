@@ -1,7 +1,7 @@
 ---
 title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
-ms.date: 06/02/2022
+ms.date: 07/15/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -177,7 +177,7 @@ Run matching conditions runs deduplication and match rules only and updates the 
 - To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically.
 
   > [!TIP]
-  > For accounts, select **Unify accounts** > **Unify profiles and dependencies**. For contacts, select **Unify contacts** > **Unify profiles and dependencies**. When unifying accounts, contact unification will run if contact data or configuration changes have been saved but not yet run. The same is true when unifying contacts, account unification will run if account data or configuration changes have been saved but not yet run.
+  > For accounts and contacts, select **Unify accounts** > **Unify profiles and dependencies**. Matching conditions are run for both accounts and contacts updating both unified profiles and all other dependencies are run.
 
 All tiles except **Source fields** show **Queued** or **Refreshing**.
 
