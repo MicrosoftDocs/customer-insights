@@ -45,7 +45,7 @@ To review or change any unification settings once a unified profile has been cre
 
    - [Run matching conditions](#run-matching-conditions) to quickly evaluate the quality of your matching conditions (deduplication and match rules) without updating the unified profile. The **Run matching conditions only** option doesn't display for single entity.
    - [Unify profiles](#run-updates-to-the-unified-profile) to run matching conditions and update the unified profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
-   - [Unify profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions and update the unified profile entity and all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically.
+   - [Unify profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions, update the unified profile entity, and update all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically. In B-to-B, unification is run on both the account and contact entities updating the unified profiles.
 
 ## Edit source fields
 
