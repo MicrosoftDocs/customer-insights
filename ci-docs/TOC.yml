@@ -124,6 +124,8 @@
       href: activities.md
     - name: Use consent management
       href: consent-management.md
+    - name: Use web data for personalization
+      hre: unknown-to-known.md
 
 - name: Segments
   items:
