@@ -28,13 +28,13 @@ Connecting to your Dataverse environment also enables you to [ingest data from o
 
 ## Dataverse storage capacity entitlement
 
-A Customer Insights subscription entitles you to additional capacity for your organization's existing [Dataverse storage capacity](/power-platform/admin/capacity-storage). The added capacity depends on the number of profiles that your subscription uses.
+A Customer Insights subscription entitles you to extra capacity for your organization's existing [Dataverse storage capacity](/power-platform/admin/capacity-storage). The added capacity depends on the number of profiles that your subscription uses.
 
 **Example:**
 
-Assuming you get 15 GB database storage and 20 GB file storage per 100,000 customer profiles. If your subscriptions includes 300,000 customer profiles, your total storage capacity would be 45 GB (3 x 15 GB) database storage and 60 GB file storage (3 x 20 GB). Similarly, if you have a B2B subscription with 30K accounts, your total storage capacity would be 45 GB (3 x 15 GB) database storage, and 60 GB file storage (3 x 20 GB).
+Assuming you get 15 GB database storage and 20 GB file storage per 100,000 customer profiles. If your subscription includes 300,000 customer profiles, your total storage capacity would be 45 GB (3 x 15 GB) database storage and 60 GB file storage (3 x 20 GB). Similarly, if you have a B2B subscription with 30K accounts, your total storage capacity would be 45 GB (3 x 15 GB) database storage, and 60 GB file storage (3 x 20 GB).
 
-Log capacity is not incremental and fixed for your organization.
+Log capacity isn't incremental and fixed for your organization.
 
 For more information about the detailed capacity entitlements, see [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
@@ -91,7 +91,7 @@ To execute the PowerShell scripts, you first need to set up PowerShell according
 
     2. `ByolSetup.ps1`
         - You need *Storage Blob Data Owner* permissions at the storage account/container level to run this script or this script will create one for you. Your role assignment can be removed manually after successfully running the script.
-        - This PowerShell script adds the required tole-based access control (RBAC) for the Microsoft Dataverse service and any Dataverse-based business applications. It also updates the Access Control List (ACL) on the CustomerInsights container for the security groups created with the `CreateSecurityGroups.ps1` script. The Contributor group will have *rwx* permission and Readers group will have *r-x* permission only.
+        - This PowerShell script adds the required role-based access control for the Microsoft Dataverse service and any Dataverse-based business applications. It also updates the Access Control List (ACL) on the CustomerInsights container for the security groups created with the `CreateSecurityGroups.ps1` script. The Contributor group will have *rwx* permission and Readers group will have *r-x* permission only.
         - Execute this PowerShell script in Windows PowerShell by providing the Azure subscription ID containing your Azure Data Lake Storage, storage account name, resource group name, and the Reader and Contributor security group ID values. Open the PowerShell script in an editor to review additional information and the logic implemented.
         - Copy the output string after successfully running the script. The output string looks like this: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
 
