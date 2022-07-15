@@ -71,14 +71,14 @@ Relationship consists of a *source entity* containing the foreign key and a *tar
      > Many-to-many relationships can be created using two many-to-one relationships and a linking entity, which connects the source entity and the target entity.
 
    - **Target cardinality**: Select the cardinality of the target entity records. 
-   - **Source key field**: The foreign key field in the source entity. Example: SupportCase could use CaseID as a foreign key field.
-   - **Target key field**: The key field of the target entity. Example Customer could use the **CustomerID** key field.
+   - **Source key field**: The foreign key field in the source entity. Example: SupportCase uses  **CaseID** as the foreign key field.
+   - **Target key field**: The key field of the target entity. Example: Customer uses  **CustomerID** as the key field.
 
 4. Select **Save** to create the custom relationship.
 
 ## Set up account hierarchies
 
-Environments that are configured to use business accounts as primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units. 
+Environments that are configured to use business accounts as the primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units.
 
 Organizations create account hierarchies to better manage accounts and their relationships with each other. Customer Insights supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page.
 
@@ -87,16 +87,16 @@ Organizations create account hierarchies to better manage accounts and their rel
 1. Select **New account hierarchy**. 
 1. In the **Account hierarchy** pane, provide a name for the hierarchy. The system creates a name for the output entity. You can change the name of the output name entity.
 1. Select the entity that contains your account hierarchy. It's usually in the same entity that contains the accounts.
-1. Select the **Account ID** and **Account Parent ID** from the selected entity 
+1. Select the **Account ID** and **Account Parent ID** from the selected entity. 
 1. Select **Save** to apply the settings and finalize the account hierarchy.
 
 ## View relationships
 
-The Relationships page lists all the relationships that have been created. Each row represents a relationship, which also includes details about the source entity, the target entity, and the cardinality. 
+Go to the **Relationships** page to view all the relationships that have been created, their source entity, the target entity, and the cardinality.
 
 :::image type="content" source="media/relationships-list.png" alt-text="List of relationships and options in the action bar of the Relationships page.":::
 
-This page offers a set of options for existing and new relationships: 
+Action options include: 
 - **New Relationship**: [Create a custom relationship](#create-a-custom-relationship).
 - **Visualizer**: [Explore the relationship visualizer](#explore-the-relationship-visualizer) to see a network diagram of the existing relationships and their cardinality.
 - **Filter by**: Choose the type of relationships to show in the list.
@@ -106,14 +106,20 @@ This page offers a set of options for existing and new relationships:
 
 The relationship visualizer shows a network diagram of the existing relationships between connected entities and their cardinality. It also visualizes the relationship path.
 
-To customize the view, you can change the position of the boxes by dragging them on the canvas.
-
 :::image type="content" source="media/relationship-visualizer.png" alt-text="Screenshot of the relationship visualizer network diagram with connections between related entities.":::
 
-Available options: 
+To customize the view, you can change the position of the boxes by dragging them on the canvas. Other options include: 
 - **Export as image**: Save the current view as an image file.
 - **Change to horizontal/vertical layout**: Change the alignment of the entities and relationships.
 - **Edit**: Update properties of custom relationships in the edit pane and save changes.
+
+## Manage existing relationships
+
+Select a relationship to view available actions:
+ 
+- **Edit**: Update properties of custom relationships in the edit pane and save changes.
+- **Delete**: Delete custom relationships.
+- **View**: View system-created and inherited relationships.
 
 ## Relationship paths
 
@@ -164,16 +170,6 @@ Multi-hop and multi-path relationships can be used together to create **multi-ho
 For example, if an activity entity called *eCommerce_eCommercePurchasesWest* connects to an intermediate entity called *eCommerce_eCommercePurchasesEast* and then connects to two target entities, both *eCommerce_eCommerceContacts* and *loyaltyScheme_loyCustomers*, it's a multi-hop, multi-path relationship.
 
 :::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="Source entity connects directly to one target entity and connects to another target entity through an intermediate entity.":::
-
-## Manage existing relationships 
-
-On the Relationships page, each relationship is represented by a row. 
-
-Select a relationship and choose one of the following options: 
- 
-- **Edit**: Update properties of custom relationships in the edit pane and save changes.
-- **Delete**: Delete custom relationships.
-- **View**: View system-created and inherited relationships. 
 
 ## Next step
 

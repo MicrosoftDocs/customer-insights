@@ -34,23 +34,20 @@ The **Entities** page lists entities and includes these columns:
 
 - The **Attributes** tab is selected by default and shows a table to review details for the selected entity, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](map-entities.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* below has a data type *Text* but its (semantic) Common Data Model type might be *Email* or *EmailAddress*.
 
-> [!div class="mx-imgBorder"]
-> ![Fields table.](media/data-manager-entities-fields.PNG "Fields table")
+   :::image type="content" source="media/data-manager-entities-fields.png" alt-text="Fields table.":::
 
 > [!NOTE]
 > This page shows only a sample of your entity's data. To view the full data set, go to the **Data sources** page, select an entity, select **Edit**, and then view this entity's data with the Power Query editor as explained in [Data sources](data-sources.md).
 
 To learn more about the data ingested in the entity, the **Summary** column provides you with some important characteristics of the data, such as nulls, missing values, unique values, counts, and distributions, as applicable to your data. Select the chart icon to see the summary of the data.
 
-> [!div class="mx-imgBorder"]
-> ![Summary symbol.](media/data-manager-entities-summary.png "Data summary table")
+   :::image type="content" source="media/data-manager-entities-summary.png" alt-text="Data summary table.":::
 
 - The **Data** tab shows a table listing details about individual records of the entity. Details listed depend on the entity's data type.
 
-> [!div class="mx-imgBorder"]
-> ![Select an entity.](media/data-manager-entities-data.png "Select an entity")
+   :::image type="content" source="media/data-manager-entities-data.png" alt-text="Select an entity.":::
 
-- The **Reports** tab (available for some entities) enables you to visualize your data by creating a report, and includes these columns:
+- The **Reports** tab (available for some entities) enables you to visualize your data by creating a report, which includes these columns:
 
   - **Report name**: Name of the report.
   - **Created by**: Name of the person who created the entity.
@@ -68,9 +65,9 @@ Fields from an ingested data source can contain corrupted data. Records with cor
 
 For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system will flag this record as corrupted. Someone can now change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record will be removed from the corrupted entity. 
 
-Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. Naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'. Select a corrupted entity to identify the all the corrupted fields and the reason at individual record level.
-> [!div class="mx-imgBorder"]
-> ![Corruption reason.](media/corruption-reason.png "Corruption Reason")
+Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. Naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'. Select a corrupted entity to identify the corrupted fields and the reason at the individual record level.
+
+   :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason.":::
 
 Customer Insights still processes corrupted records. However, they might cause issues when working with the unified data.
 
