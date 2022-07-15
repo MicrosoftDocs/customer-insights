@@ -1,5 +1,5 @@
 ---
-title: "Match entities for data unification"
+title: "Match conditions for data unification"
 description: "Match entities to create unified customer profiles."
 recommendations: false
 ms.date: 05/05/2022
@@ -17,7 +17,7 @@ searchScope:
   - customerInsights
 ---
 
-# Match conditions
+# Match conditions for data unification
 
 This step in unification defines the match order and rules for cross-entity matching. This step requires at least two entities.
 

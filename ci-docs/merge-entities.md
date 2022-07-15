@@ -1,5 +1,5 @@
 ---
-title: "Unify customer or account fields"
+title: "Unify customer fields for data unification"
 description: "Merge entities to create unified customer profiles."
 recommendations: false
 ms.date: 05/04/2022
@@ -20,8 +20,6 @@ searchScope:
 # Unify customer fields
 
 In this step of the unification process, choose and exclude attributes to merge within your unified profile entity. For example, if three entities had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Some attributes are automatically combined by the system. You can create stable and unique customer IDs. For individual customers, you can group related profiles into a cluster.
-
-[!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
 :::image type="content" source="media/m3_unify.png" alt-text="Unify customer fields page in the data unification process showing table with merged fields that define the unified customer profile.":::
 

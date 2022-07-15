@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to Klaviyo"
+title: "Export segments to Klaviyo (preview)"
 description: "Learn how to configure the connection and export to Klaviyo."
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: philk
 manager: shellyha
 ---
 
-# Export segment lists to Klaviyo (preview)
+# Export segments to Klaviyo (preview)
 
 Export segments of unified customer profiles to Klaviyo and use them for marketing activities.
 

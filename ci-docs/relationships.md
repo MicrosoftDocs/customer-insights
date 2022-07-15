@@ -24,7 +24,7 @@ searchScope:
   - customerInsights
 ---
 
-# Relationships between entities
+# Relationships between entities and entity paths
 
 Relationships connect entities and define a graph of your data when entities share a common identifier, a foreign key. This foreign key can be referenced from one entity to another. Connected entities enable the definition of segments and measures based on multiple data sources.
 

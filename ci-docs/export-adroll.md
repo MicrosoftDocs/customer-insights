@@ -1,5 +1,5 @@
 ---
-title: "Export Customer Insights data to AdRoll"
+title: "Export segments to AdRoll (preview)"
 description: "Learn how to configure the connection and export to AdRoll."
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -17,9 +17,9 @@ Export segments of unified customer profiles to AdRoll and use them for advertis
 
 ## Prerequisites for a connection
 
--	You have an [AdRoll account](https://www.adroll.com/) and corresponding administrator credentials.
--	You have [configured segments](segments.md) in Customer Insights.
--	Unified customer profiles in the exported segments contain a field representing an email address.
+- You have an [AdRoll account](https://www.adroll.com/) and corresponding administrator credentials.
+- You have [configured segments](segments.md) in Customer Insights.
+- Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
 

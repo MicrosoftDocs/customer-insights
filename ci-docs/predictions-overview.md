@@ -1,5 +1,5 @@
 ---
-title: Overview about supported prediction scenarios
+title: Predictions overview
 description: "Prediction scenarios and options covered by the Dynamics 365 Customer Insights application."
 ms.date: 03/24/2022
 ms.reviewer: mhart

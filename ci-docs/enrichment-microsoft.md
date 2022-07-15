@@ -1,5 +1,5 @@
 ---
-title: "Enrich customer profiles with brands and interests data from Microsoft"
+title: "Enrich customer profiles with brands and interests data from Microsoft (preview)"
 description: "Use proprietary data from Microsoft to enrich your customer data with affinities and share of voice."
 ms.date: 03/02/2022
 ms.reviewer: mhart
@@ -14,7 +14,7 @@ searchScope:
   - customerInsights
 ---
 
-# Enrich customer profiles with affinities and share of voice (preview)
+# Enrich customer profiles with brands and interests data from Microsoft (preview)
 
 Use Microsoft's proprietary data to enrich your customer data with brand affinities, interest affinities, and share of voice (SoV). These affinities and SoV are based on data from people with demographics similar to your customers. This information helps you to better understand and segment your customers based on their affinities or SoV to specific brands and interests.
 
@@ -99,7 +99,7 @@ We currently support the following country/region options: Australia, Canada (En
 
    When enriching profiles, we'll enrich all customer profiles for which we get data for the selected brands and interests, including profiles that are not in the selected country or region. For example, if you selected Germany, we'll enrich profiles located in the United States if we have data available for the selected brands and interests in the US.
 
-## Enrichment results
+## View enrichment results
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

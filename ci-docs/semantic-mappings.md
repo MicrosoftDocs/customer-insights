@@ -1,5 +1,5 @@
 ---
-title: "Semantic mappings (Preview)"
+title: "Semantic mappings (preview)"
 description: "Overview of semantic mappings and how to use them." 
 ms.date: 05/19/2022
 
@@ -14,7 +14,7 @@ searchScope:
   - customerInsights
 ---
 
-# Semantic mappings (Preview)
+# Semantic mappings (preview)
 
 > [!NOTE]
 > The **Semantic mappings** page is available only for business environments (B-to-B) where contact profiles have already been created using this page. You can continue to create and manage the individual contact profiles using the **Semantic mappings** page. Or, [unify your contact data](data-unification-contacts.md) to remove duplicates, identify matches across entities, and create one unified contact profile. You can then use the unified contact profile to create contact-level activities.

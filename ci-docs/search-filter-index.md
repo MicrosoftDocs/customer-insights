@@ -1,5 +1,5 @@
 ---
-title: "Search and filter customer profiles"
+title: "Customer profiles: Search & filter index"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
 ms.date: 11/01/2021
 ms.reviewer: mhart
@@ -31,6 +31,9 @@ If it's the first time you define searchable attributes as an administrator, you
 2. Select **+ Add** to specify the indexed fields.
 
 3. Select the attributes in the list you want to add as indexed fields. You can always add more attributes by selecting **Add**. You can also remove any selected attributes by selecting the **Remove** symbol.
+
+> [!NOTE]
+> **String** is the only data type that is included in search. Use it in the **Search** field on the Customers page to search for customers.
 
 ## Explore the Indexed customer fields table
 

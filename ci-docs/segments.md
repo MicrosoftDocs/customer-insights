@@ -1,5 +1,5 @@
 ---
-title: "Segments in Customer Insights"
+title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
 ms.date: 05/20/2022
 ms.subservice: audience-insights
