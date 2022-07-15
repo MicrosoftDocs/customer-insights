@@ -40,6 +40,8 @@ Create measures on the level of individual customers (customer attribute, custom
 
    :::image type="content" source="media/measures_edit_details.png" alt-text="Edit details dialog box.":::
 
+1. Select **Done**.
+
 1. To track business-level performance, toggle **Measure type** to **Business level**. **Customer level** is selected by default. **Customer level** automatically adds the *CustomerId* attribute to Dimensions while **Business level** automatically removes it.
 
 1. In the configuration area, choose the aggregation function from the **Select function** dropdown menu. Aggregation functions include:
@@ -106,9 +108,10 @@ Create measures on the level of individual accounts (customer measure) or on the
 
    :::image type="content" source="media/measure-b2b.png" alt-text="Empty configuration screen for a B-to-B measure. ":::
 
-1. Select **Edit details** next to Untitled measure. Provide a name for the measure. Optionally, add [tags](work-with-tags-columns.md#manage-tags) to the measure.
-
+1. Select **Edit details** next to Untitled measure. Provide a name for the measure. Optionally, add [tags](work-with-tags-columns.md#manage-tags) to the measure. 
    :::image type="content" source="media/measures_edit_details.png" alt-text="Edit details dialog box.":::
+
+1. Select **Done**.
 
 1. In the configuration area, choose the aggregation function from the **Select function** dropdown menu. Aggregation functions include:
    - **Sum**
@@ -165,3 +168,5 @@ Create measures on the level of individual accounts (customer measure) or on the
 ## Next step
 
 Use existing measures to create [a customer segment](segments.md).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

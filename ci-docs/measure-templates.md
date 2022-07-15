@@ -69,3 +69,5 @@ Available measure templates:
 ## Next step
 
 Use existing measures to create [a customer segment](segments.md).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
