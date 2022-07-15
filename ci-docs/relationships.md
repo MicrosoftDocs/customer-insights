@@ -90,17 +90,18 @@ Organizations create account hierarchies to better manage accounts and their rel
 1. Select the **Account ID** and **Account Parent ID** from the selected entity. 
 1. Select **Save** to apply the settings and finalize the account hierarchy.
 
-## View relationships
+## Manage existing relationships
 
 Go to the **Relationships** page to view all the relationships that have been created, their source entity, the target entity, and the cardinality.
 
 :::image type="content" source="media/relationships-list.png" alt-text="List of relationships and options in the action bar of the Relationships page.":::
 
-Action options include: 
-- **New Relationship**: [Create a custom relationship](#create-a-custom-relationship).
-- **Visualizer**: [Explore the relationship visualizer](#explore-the-relationship-visualizer) to see a network diagram of the existing relationships and their cardinality.
-- **Filter by**: Choose the type of relationships to show in the list.
-- **Search relationships**: Use a text-based search on properties of the relationships.
+Use the **Filter by** or **Search relationships** options to locate a particular relationship. To see a network diagram of the existing relationships and their cardinality, select [**Visualizer**](#explore-the-relationship-visualizer).
+
+Select a relationship to view available actions:
+- **Edit**: Update properties of custom relationships in the edit pane and save changes.
+- **Delete**: Delete custom relationships.
+- **View**: View system-created and inherited relationships.
 
 ### Explore the relationship visualizer
 
@@ -112,14 +113,6 @@ To customize the view, you can change the position of the boxes by dragging them
 - **Export as image**: Save the current view as an image file.
 - **Change to horizontal/vertical layout**: Change the alignment of the entities and relationships.
 - **Edit**: Update properties of custom relationships in the edit pane and save changes.
-
-## Manage existing relationships
-
-Select a relationship to view available actions:
- 
-- **Edit**: Update properties of custom relationships in the edit pane and save changes.
-- **Delete**: Delete custom relationships.
-- **View**: View system-created and inherited relationships.
 
 ## Relationship paths
 
@@ -157,7 +150,7 @@ A relationship is classified as an **indirect relationship** when a source entit
 
 #### Multi-hop relationship
 
-A *multi-hop relationship* is an *indirect relationship* that allows you to connect a source entity to a target entity through one or more other intermediary entities.
+A **multi-hop relationship** is an *indirect relationship* that allows you to connect a source entity to a target entity through one or more other intermediary entities.
 
 For example, if an activity entity called *eCommerce_eCommercePurchasesWest* connects to an intermediate entity called *eCommerce_eCommercePurchasesEast* and then connects to a target entity called *eCommerce_eCommerceContacts*, it's a multi-hop relationship.
 

@@ -36,10 +36,10 @@ The **Entities** page lists entities and includes these columns:
 
    :::image type="content" source="media/data-manager-entities-fields.png" alt-text="Fields table.":::
 
-> [!NOTE]
-> This page shows only a sample of your entity's data. To view the full data set, go to the **Data sources** page, select an entity, select **Edit**, and then view this entity's data with the Power Query editor as explained in [Data sources](data-sources.md).
+   > [!NOTE]
+   > This page shows only a sample of your entity's data. To view the full data set, go to the **Data sources** page, select an entity, select **Edit**, and then view this entity's data with the Power Query editor as explained in [Data sources](data-sources.md).
 
-To learn more about the data ingested in the entity, the **Summary** column provides you with some important characteristics of the data, such as nulls, missing values, unique values, counts, and distributions, as applicable to your data. Select the chart icon to see the summary of the data.
+   To learn more about the data ingested in the entity, the **Summary** column provides you with some important characteristics of the data, such as nulls, missing values, unique values, counts, and distributions, as applicable to your data. Select the chart icon to see the summary of the data.
 
    :::image type="content" source="media/data-manager-entities-summary.png" alt-text="Data summary table.":::
 
