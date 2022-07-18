@@ -16,16 +16,15 @@ searchScope:
 
 # Create measures from templates
 
-You can use predefined templates of commonly used [measures](measures.md) to create them. Detailed descriptions of the templates and a guided experience help you with efficient measure creation. Templates build on mapped data from the *Unified Activity* entity. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
+Use predefined templates of commonly used [measures](measures.md) to create them. Templates build on mapped data from the *Unified Activity* entity. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
 
-To create custom measures, see [Use measure builder to create measures from scratch](measure-builder.md).
+Measure templates are only supported in environments for **individual customers**. To create custom measures or create measures for B-to-B, see [Use measure builder](measure-builder.md).
 
-# [Individual consumers (B-to-C)](#tab/b2c)
-
-Available measure templates: 
+Available measure templates:
 - Average transaction value (ATV)
 - Total transaction value
 - Average daily revenue
+- Average monthly revenue
 - Average yearly revenue
 - Transaction count
 - Loyalty points earned
@@ -53,21 +52,22 @@ Available measure templates:
 
 1. Select **Done**.
 
-1. In the **Set time period** section, define the time frame of the data to use. Choose if you want the new measure to cover the entire dataset by selecting **All time**, or if you want the measure to focus on a **Specific time period**.
+1. In the **Set time period** section, define the time frame of the data. Choose if you want the new measure to cover the entire dataset by selecting **All time**, or if you want the measure to focus on a **Specific time period**.
 
    :::image type="content" source="media/measure-set-time-period.png" alt-text="Screenshot showing the time period section when configuring a measure from a template.":::
 
 1. In the next section, select **Add data** to choose the activities and map the corresponding data from your *Unified Activity* entity.
 
-    1. Step 1 of 2: Under **Activity type**, choose the type of the entity you want to use. For **Activities**, select the entities you want to map.
-    1. Step 2 of 2: Choose the attribute from the *Unified Activity* entity for the component required by the formula. For example, for Average transaction value, it's the attribute representing the Transaction value. For **Activity timestamp**, choose the attribute from the Unified Activity entity that represents the date and time of the activity.
-   
-1. Once the data mapping is successful, you can see the status as **Complete** and the name of the mapped activities and attributes.
+    1. Step 1 of 2: Under **Activity type**, choose the type of the entity you want to use. For **Activities**, select the entities you want to map, and then select **Next**.
+    1. Step 2 of 2: Choose the attribute from the *Unified Activity* entity for the component required by the formula. For example, for Average transaction value, it's the attribute representing the Transaction value. For **Activity timestamp**, choose the attribute from the *Unified Activity* entity that represents the date and time of the activity.
+    1. Select **Save**.
 
-1. You can now select **Run** to calculate the results of the measure. To refine it later, select **Save draft**.
+    When the data mapping is successful, the status shows **Complete** and the name of the mapped activities and attributes display.
 
-# [Business accounts (B-to-B)](#tab/b2b)
+1. Select **Run** to calculate the results of the measure. Select **Save draft** if you want to keep the current configuration and run the measure later. The **Measures** page displays.
 
-This feature is only available for measures created in environments with individual customers as primary target audience.
+## Next step
 
----
+Use existing measures to create [a customer segment](segments.md).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
