@@ -60,7 +60,7 @@ Available measure templates:
 
     1. Step 1 of 2: Under **Activity type**, choose the type of the entity you want to use. For **Activities**, select the entities you want to map, and then select **Next**.
     1. Step 2 of 2: Choose the attribute from the *Unified Activity* entity for the component required by the formula. For example, for Average transaction value, it's the attribute representing the Transaction value. For **Activity timestamp**, choose the attribute from the *Unified Activity* entity that represents the date and time of the activity.
-    1. Click **Save**.
+    1. Select **Save**.
 
     When the data mapping is successful, the status shows **Complete** and the name of the mapped activities and attributes display.
 
