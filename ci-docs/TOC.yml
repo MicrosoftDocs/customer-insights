@@ -116,7 +116,7 @@
 
 - name: Unified profiles
   items:
-    - name: Review unified customer profiles
+    - name: Customer profiles
       href: customer-profiles.md
     - name: Filter unified customer profiles
       href: search-filter-index.md
