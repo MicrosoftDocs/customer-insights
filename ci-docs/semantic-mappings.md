@@ -16,7 +16,7 @@ searchScope:
 
 # Semantic mappings (preview)
 
-Semantic mappings let you map your non-activity data to pre-defined schemas. These schemas help Customer Insights to better understand your data attributes. Semantic mapping and the provided data enable new insights and features in Customer Insights. To map your activity data to the schemas, review the [activities](activities.md) documentation.
+Semantic mappings let you map your non-activity data to pre-defined schemas. These schemas help Customer Insights better understand your data attributes. Semantic mapping and the provided data enable new insights and features in Customer Insights. To map your activity data to the schemas, review the [activities](activities.md) documentation.
 
 **Semantic mappings are currently enabled for environments based on business accounts**. *ContactProfile* is the only type of semantic mapping currently available in Customer Insights.
 
@@ -34,7 +34,7 @@ Semantic mappings let you map your non-activity data to pre-defined schemas. The
 
    :::image type="content" source="media/Semantic_Mapping_Wizard1.png" alt-text="Set up the semantic entity mapping with name, source entity, and primary key.":::
 
-1. Select **Next** to continue.
+1. Select **Next**.
 
 1. In the **Relationships** step, configure the details to connect your contact data to its corresponding account data. This step visualizes the connection between entities.  
 
@@ -42,7 +42,7 @@ Semantic mappings let you map your non-activity data to pre-defined schemas. The
 
    1. Select **Add Relationship** to configure the relationship.
    1. Choose the attribute from your source entity that connects your contact entity to another entity.
-   1. Choose the entity to connect your contact entity to. You can choose an entity from the **Account entities** or the **Intermediate entity** section. If you select an intermediate entity, you need to define a second relationship to connect to your target account entity.
+   1. Choose the entity to connect your contact entity to. Choose an entity from the **Account entities** or the **Intermediate entity** section. If you select an intermediate entity, define a second relationship to connect to your target account entity.
 
       :::image type="content" source="media/Semantic_Mapping_Wizard2.png" alt-text="Select either an Account entity or an Intermediate entity.":::
 
@@ -53,7 +53,7 @@ Semantic mappings let you map your non-activity data to pre-defined schemas. The
    > You can configure more relationships between the contact entity and other account entities with intermediate entities.
    >  :::image type="content" source="media/Semantic_Mapping_Wizard4.png" alt-text="Visualization of various relationships connect contact entities to account entities.":::
 
-1. Select **Next** when you're done with the relationship configuration.
+1. Select **Next**.
 
 1. In the **Set the semantic type** step, choose a **Semantic type**. Currently, there's one **Semantic Type** called *ContactProfile*.
 
@@ -61,7 +61,7 @@ Semantic mappings let you map your non-activity data to pre-defined schemas. The
 
    :::image type="content" source="media/Semantic_Mapping_Wizard5.png" alt-text="Map your contact data attributes to the provided required and optional fields.":::
 
-1. Select **Next** to continue.
+1. Select **Next**.
 
 1. In the **Review** step, review the configuration of the semantic mapping. To make changes, select **Edit** for the corresponding section.
 
@@ -80,7 +80,7 @@ Go to **Data** > **Semantic mappings (preview)** to view all your saved semantic
 Select the semantic mapping to view available actions.
 - **Edit** the current configuration. Select **Save** and **Run** to process the changes.
 - **Refresh** the semantic mapping to include the latest data. Refreshing any given semantic mapping will refresh all semantic mappings of the same type.
-- **Rename** the semantic mapping. Select **Save** to apply your changes.
+- **Rename** the semantic mapping. Select **Save**.
 - **Delete** the semantic mapping. To delete more than one semantic mapping at once, select the semantic mappings and the delete icon. Select **Delete** to confirm the deletion.
 
 ## Use a ContactProfile semantic entity mapping to create contact-level activities
@@ -107,13 +107,15 @@ After creating a *ContactProfile* semantic entity mapping, you can capture activ
 
 1. After setting up the relationship(s), select **Next** and complete your activity mapping configuration. For detailed steps on activity creation, see [define an activity](activities.md).
 
-1. Run your activity mappings. The contact-level activities display on your customer timeline.
+1. Run your activity mappings.
+
+1. After a contact-level activity mapping runs, select **Customers**. The contact-level activities display on your customer timeline.
 
    :::image type="content" source="media/Contact_Activities2.png" alt-text="Final result after configuring contact activities":::
 
 ### Contact-level activity timeline filtering
 
-After a contact-level activity mapping runs, the activity timeline for your customers is updated. It includes their IDs or names, depending on your *ContactProfile* configuration, for the activities they acted on. You can filter activities by contacts in the timeline to see specific contacts that you are interested in. Additionally, you can see all activities that are not assigned to a specific contact by selecting **Activities not mapped to a Contact**.
+The activity timeline for your customers includes their IDs or names, depending on your *ContactProfile* configuration, for the activities they acted on. Filter activities by contacts in the timeline to see specific contacts that you are interested in. To view all activities that are not assigned to a specific contact, select **Activities not mapped to a Contact**.
 
 :::image type="content" source="media/Contact_Activities3.png" alt-text="Filtering options available for Contact-level activities.":::
 

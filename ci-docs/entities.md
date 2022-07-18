@@ -29,21 +29,21 @@ The **Entities** page lists entities and includes these columns:
 ## Explore a specific entity's data
 
 1. Go to **Data** > **Entities**.
-1. From the **Entities** page, select an entity to open the details page.  
+1. Select an entity to open the details page.  
 1. Explore the different fields and records included for that entity.
 
-- The **Attributes** tab is selected by default and shows a table to review details for the selected entity, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](map-entities.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* below has a data type *Text* but its (semantic) Common Data Model type might be *Email* or *EmailAddress*.
+- The **Attributes** tab is selected by default and shows details for the selected entity, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](map-entities.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* below has a data type *Text* but its (semantic) Common Data Model type might be *Email* or *EmailAddress*.
 
    :::image type="content" source="media/data-manager-entities-fields.png" alt-text="Fields table.":::
 
    > [!NOTE]
    > This page shows only a sample of your entity's data. To view the full data set, go to the **Data sources** page, select an entity, select **Edit**, and then view this entity's data with the Power Query editor as explained in [Data sources](data-sources.md).
 
-   To learn more about the data ingested in the entity, the **Summary** column provides you with some important characteristics of the data, such as nulls, missing values, unique values, counts, and distributions, as applicable to your data. Select the chart icon to see the summary of the data.
+   To learn more about the data ingested in the entity, the **Summary** column provides some important data characteristics, such as nulls, missing values, unique values, counts, and distributions, whatever is applicable to your data. Select the chart icon to see the summary of the data.
 
    :::image type="content" source="media/data-manager-entities-summary.png" alt-text="Data summary table.":::
 
-- The **Data** tab shows a table listing details about individual records of the entity. Details listed depend on the entity's data type.
+- The **Data** tab shows details about individual records of the entity. Details listed depend on the entity's data type.
 
    :::image type="content" source="media/data-manager-entities-data.png" alt-text="Select an entity.":::
 
@@ -53,7 +53,7 @@ The **Entities** page lists entities and includes these columns:
   - **Created by**: Name of the person who created the entity.
   - **Created**: Date and time of the entity creation.
   - **Edited by**: Name of the person who modified the entity.
-  - **Edited**: Date and time of the entity modification. 
+  - **Edited**: Date and time of the entity modification.
 
 ## Entity-specific information
 
@@ -76,6 +76,5 @@ The following checks run on the ingested data to expose corrupted records:
 - The value of a field doesn't match with the data type of its column.
 - Fields contain characters that cause the columns to not match the expected schema. For example: incorrectly formatted quotes, unescaped quotes, or newline characters.
 - If there are datetime/date/datetimeoffset columns, their format needs to be specified in the model if it doesn't follow the standard ISO format.
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

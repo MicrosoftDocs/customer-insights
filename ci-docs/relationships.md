@@ -29,9 +29,9 @@ searchScope:
 Relationships connect entities and define a graph of your data when entities share a common identifier, a foreign key. This foreign key can be referenced from one entity to another. Connected entities enable the definition of segments and measures based on multiple data sources.
 
 There are three types of relationships: 
-- Non-editable system relationships, created by the system as part of the data unification process
-- Non-editable inherited relationships, which are created automatically from ingesting data sources 
-- Editable custom relationships, created and configured by users
+- Non-editable system relationships are created by the system as part of the data unification process
+- Non-editable inherited relationships are created automatically from ingesting data sources
+- Editable custom relationships are created and configured by users
 
 ## Non-editable system relationships
 
@@ -63,16 +63,16 @@ Relationship consists of a *source entity* containing the foreign key and a *tar
    - **Description**: Description of the relationship.
    - **Source entity**: Entity that is used as a source in the relationship. Example: SupportCase.
    - **Target entity**: Entity that is used as a target in the relationship. Example: Customer.
-   - **Source cardinality**: Specify the cardinality of the source entity. Cardinality describes the number of possible elements in a set. It always relates to the target cardinality. You can choose between **One** and **Many**. Only many-to-one and one-to-one relationships are supported.  
+   - **Source cardinality**: Cardinality of the source entity. Cardinality describes the number of possible elements in a set. It always relates to the target cardinality. You can choose between **One** and **Many**. Only many-to-one and one-to-one relationships are supported.  
      - Many-to-one: Multiple source records can relate to one target record. Example: Multiple support cases from a single customer.
      - One-to-one: A single source record relates to a one target record. Example: One loyalty ID for a single customer.
 
      > [!NOTE]
      > Many-to-many relationships can be created using two many-to-one relationships and a linking entity, which connects the source entity and the target entity.
 
-   - **Target cardinality**: Select the cardinality of the target entity records. 
-   - **Source key field**: The foreign key field in the source entity. Example: SupportCase uses  **CaseID** as the foreign key field.
-   - **Target key field**: The key field of the target entity. Example: Customer uses  **CustomerID** as the key field.
+   - **Target cardinality**: Cardinality of the target entity records.
+   - **Source key field**: Foreign key field in the source entity. Example: SupportCase uses  **CaseID** as the foreign key field.
+   - **Target key field**: Key field of the target entity. Example: Customer uses  **CustomerID** as the key field.
 
 4. Select **Save** to create the custom relationship.
 
@@ -84,11 +84,11 @@ Organizations create account hierarchies to better manage accounts and their rel
 
 1. Go to **Data** > **Relationships**.
 1. Select the **Account hierarchy** tab.
-1. Select **New account hierarchy**. 
-1. In the **Account hierarchy** pane, provide a name for the hierarchy. The system creates a name for the output entity. You can change the name of the output name entity.
+1. Select **New account hierarchy**.
+1. In the **Account hierarchy** pane, provide a name for the hierarchy. The system creates a name for the output entity, but you can change it.
 1. Select the entity that contains your account hierarchy. It's usually in the same entity that contains the accounts.
 1. Select the **Account ID** and **Account Parent ID** from the selected entity. 
-1. Select **Save** to apply the settings and finalize the account hierarchy.
+1. Select **Save** to finalize the account hierarchy.
 
 ## Manage existing relationships
 
@@ -116,15 +116,13 @@ To customize the view, you can change the position of the boxes by dragging them
 
 ## Relationship paths
 
-A relationship path describes the entities that are connected with relationships between a source entity and a target entity. It's used when creating a segment or a measure that includes other entities than the unified profile entity and there are multiple options to reach the unified profile entity. 
-
-A relationship path informs the system over which relationships to access the unified profile entity. Different relationship paths can yield different results.
+A relationship path describes the entities that are connected with relationships between a source entity and a target entity. It's used when creating a segment or a measure that includes entities other than the unified profile entity and there are multiple options to reach the unified profile entity. Different relationship paths can yield different results.
 
 For example, the entity *eCommerce_eCommercePurchases* has the following relationships to the unified profile *Customer* entity:
 
 - eCommerce_eCommercePurchases > Customer
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
-- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer 
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer
 
 A relationship path determines which entities you can use when creating rules for measures or segments. Choosing the option with the longest relationship path will likely yield fewer results because the matching records need to be part of all entities. In this example, a customer has to have purchased goods through e-commerce(eCommerce_eCommercePurchases) at a point of sale(POS_posPurchases) and participate in our loyalty program (loyaltyScheme_loyCustomers). When choosing the first option, you'd likely get more results because customers only need to exist in one additional entity.
 
