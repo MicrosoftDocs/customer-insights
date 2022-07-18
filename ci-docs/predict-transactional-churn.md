@@ -236,7 +236,7 @@ Add a list of your business customers and accounts that you want to use as bench
    - **Prediction name**: Name of the prediction provided when creating it.
    - **Prediction type**: Type of model used for the prediction
    - **Output entity**: Name of the entity to store the output of the prediction. You can find an entity with this name on **Data** > **Entities**.
-     In the output entity, *ChurnScore* is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. The default threshold might not work for your scenario. [Create a new segment](segments.md#create-a-new-segment) with your preferred threshold.
+     In the output entity, *ChurnScore* is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. The default threshold might not work for your scenario. [Create a new segment](segments.md#create-a-segment) with your preferred threshold.
      Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on you churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
    - **Predicted field**: This field is populated only for some types of predictions, and isn't used in churn prediction.
    - **Status**: Status of the prediction run.
