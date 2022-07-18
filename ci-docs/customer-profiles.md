@@ -24,7 +24,7 @@ The **Customers** page shows a combined view of your unified customer profiles. 
 Customers can be individuals or organizations. Each customer profile is represented by a tile. Use the pagination controls to get more records. The card displays fields from the *Customer* entity as defined in the **Search & filter index**. The order of the fields within each card is picked by the system.
 
 From the **Customers** page:
-- View [customer details](customer-profiles.md#customer-details-page).
+- View [customer details](customer-profiles.md#view-customer-details).
 - Search for customers
 - Filter customers
 - [Manage the search and filter index](search-filter-index.md) (admins only)
