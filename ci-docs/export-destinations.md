@@ -43,8 +43,8 @@ Most export option support both types of environments. Exporting segments to var
 
 **Limits on segment exports**  
 - Third-party target systems may limit the number of customer profiles that you can export. 
-- For individual customers, you'll see the actual number of segment members when you select a segment for export. You'll get a warning if a segment is too large. 
-- For business accounts, you'll see the number of accounts in a segment; however, the number of contacts that may be projected doesn't show. In some cases, this could lead to the exported segment actually containing more customer profiles than the target system accepts. Exceeding the limits of the target systems results will skip the export. 
+- For individual customers, you'll see the actual number of segment members when you select a segment for export. You will get a warning if a segment is too large. 
+- For business accounts, you'll see the number of accounts or contacts depending on the segment. You will get a warning if the segment is too large. Exceeding the limits of the target systems results will skip the export.
 
 ## Set up a new export  
 To set up or edit an export, you need to have connections available to you. Connections depend on your [user role](permissions.md):
