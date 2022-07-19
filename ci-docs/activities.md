@@ -21,7 +21,7 @@ searchScope:
 
 # Customer activities
 
-Customer activities are actions or events performed by customers. For example, transactions, support call duration, website reviews, purchases or returns. These activities are often contained in various data sources. With Customers Insights, consolidate your customer activities from these [data sources](data-sources.md) and associate them with a customers profile. These activities appear chronologically in a timeline on the customers profile. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
+Customer activities are actions or events performed by customers. For example, transactions, support call duration, website reviews, purchases or returns. These activities are often contained in various data sources. With Customers Insights, consolidate your customer activities from these [data sources](data-sources.md) and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
 
 ## Define an activity
 
@@ -41,11 +41,11 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
 1. Select **Next**.
 
-1. In the **Relationship** step, if a relationship between this activity entity and the selected source customer entity already exists, the relationship displays. Otherwise, select **Add relationship** to connect your activity data to its corresponding customer record. This step visualizes the connection between entities.  
+1. In the **Relationship** step, select **Add relationship** to connect your activity data to its corresponding customer record. This step visualizes the connection between entities.  
 
    - **Foreign key from entity**: Field in your activity entity that will be used to establish a relationship with another entity.
    - **To entity name**: Corresponding source customer entity with which your activity entity will be in relationship. You can only relate to source customer entities that are used in the data unification process.
-   - **Relationship name**: Name identifying the relationship between entities.
+   - **Relationship name**: Name identifying the relationship between entities. If a relationship between this activity entity and the selected source customer entity already exists, the relationship name is read-only.
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
 

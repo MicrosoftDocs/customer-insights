@@ -54,7 +54,7 @@ Set up the fields that can be used for filtering customers on the **Customers** 
 
 The **Search & filter index** page displays the following information:
 
-- **Name**: Represents the attribute's name as it appears in the Customer Profile entity.
+- **Name**: Represents the attribute's name as it appears in the *Customer* entity.
 - **Data type**: Specifies whether the data type is a string, a number, or a date.
 - **Included in search**: Specifies whether this attribute can be used for searching customers on the **Customers** page using the **Search** field.
 - **Add Filter**: Control to define how this attribute can be used for filtering on the **Customers** page.

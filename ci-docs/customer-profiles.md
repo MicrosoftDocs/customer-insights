@@ -21,15 +21,16 @@ searchScope:
 
 Customer profiles are available once you [create the unified *Customer* entity](data-unification.md). The combined view of your unified customer profiles display on the **Customers** page. Customers can be individuals or organizations.
 
-Go to the **Customers** page to view your customers and their profiles. Each customer profile is represented by a tile. Use the pagination controls to get more records. The card displays fields from the *Customer* entity as defined in the **Search & filter index**. The order of the fields within each card is picked by the system. Use this page to search for customers and define the index for that search.
+Go to the **Customers** page to view your customers and their profiles. Each customer profile is represented by a tile. Use the pagination controls to get more records. The card displays fields from the *Customer* entity as defined in the **Search & filter index**. The order of the fields within each card is picked by the system.
 
 :::image type="content" source="media/customers-page-result-tiles-B2C.png" alt-text="Customers page showing result tiles.":::
 
 Select any of the following actions:
-- View [customer details](#view-customer-details)
+- [View customer details](#view-customer-details)
+- **Sort by** a particular attribute
 - [Search for customers](#search-for-customers)
 - [Filter customers](#filter-customers)
-- [Manage the search and filter index](search-filter-index.md) (admins only)
+- [Manage the Search and filter index](search-filter-index.md) (admins only)
 
   > [!NOTE]
   > To use search and filter, an admin must configure the searchable attributes and define the filterable fields using the Search and filter index.
@@ -50,6 +51,13 @@ Filter customers by the *Customer* entity fields. Filterable fields are defined 
 1. Check the boxes next to the attributes you want to filter customers by.
 
 1. Remove filters by selecting **Clear filters**.
+
+1. Select **X** to close the filter pane.
+
+1. To save the filter results as a [segment](segments.md), select **Save filters as segment**.
+   1. Enter a name for the segment.
+   1. Select **Save** to save the segment.
+   1. Choose whether to run the segment now by selecting **Activate** or run it **Later**.
 
 ## View customer details
 
@@ -77,7 +85,7 @@ Customer details include:
 
 - **Potential interests, potential brands**  show if you configured a brand or interest affinity enrichment. It represents potential interests and affinities for brands based on other customers whose profile is similar to the selected customer profile. For more information, go to [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md).
 
-To return to the customer search page, select **Back to Customers**.
+To return to the **Customers** page, select **Back to Customers**.
 
 ## Next steps
 
