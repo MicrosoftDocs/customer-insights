@@ -23,6 +23,9 @@ Customer profiles are available once you [create the unified *Customer* entity](
 
 Go to the **Customers** page to view your customers and their profiles. Each customer profile is represented by a tile. Use the pagination controls to get more records. The card displays fields from the *Customer* entity as defined in the **Search & filter index**. The order of the fields within each card is picked by the system.
 
+> [!NOTE]
+> If you can't see the tiles when you select **Customers**, your administrator needs to [define at least one searchable attribute](search-filter-index.md) in the **Search & filter index**.
+
 :::image type="content" source="media/customers-page-result-tiles-B2C.png" alt-text="Customers page showing result tiles.":::
 
 Select any of the following actions:
@@ -62,9 +65,6 @@ Filter customers by the *Customer* entity fields. Filterable fields are defined 
 ## View customer details
 
 On the **Customers** page, select any of the customer tiles to view details for the selected customer.
-
-> [!NOTE]
-> If you can't see the tiles when you select **Customers** in navigation, your administrator needs to [define at least one searchable attribute](search-filter-index.md) in the **Search & filter index**.
 
 :::image type="content" source="media/customers-details-B2C.png" alt-text="Customer details page.":::
 

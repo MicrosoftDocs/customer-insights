@@ -32,6 +32,8 @@ If it's the first time you define searchable attributes as an administrator, def
 
 1. To add more attributes, select **Add**. To remove a selected attribute, select the attribute and then **Delete**.
 
+   :::image type="content" source="media/search-filter-index.png" alt-text="Search and filter index page.":::
+
 ## Define filtering options for a given attribute
 
 Set up the fields that can be used for filtering customers on the **Customers** page.
@@ -46,11 +48,11 @@ Set up the fields that can be used for filtering customers on the **Customers** 
 
    - Date-type attributes:  Specify the intervals included on the **Date filter** pane and the order policy by which they'll be organized.
 
-1. Select **OK**.
+1. Select **OK**. Repeat for all attributes you want to filter by.
 
 1. Select **Run** once you're ready to apply your search and filter settings. After the changes are processed, view them in the [customer cards on the Customer page](customer-profiles.md).
 
-## View Indexed customer fields
+## View indexed customer fields
 
 The **Search & filter index** page displays the following information:
 
