@@ -87,7 +87,7 @@ Organizations create account hierarchies to better manage accounts and their rel
 1. Select **New account hierarchy**.
 1. In the **Account hierarchy** pane, provide a name for the hierarchy. The system creates a name for the output entity, but you can change it.
 1. Select the entity that contains your account hierarchy. It's usually in the same entity that contains the accounts.
-1. Select the **Account ID** and **Account Parent ID** from the selected entity. 
+1. Select the **Account UID** and **Parent UID** from the selected entity.
 1. Select **Save** to finalize the account hierarchy.
 
 ## Manage existing relationships

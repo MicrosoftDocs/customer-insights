@@ -17,14 +17,16 @@ searchScope:
 
 After [configuring your data sources](data-sources.md), go to the **Entities** page to evaluate the quality of the ingested data. Entities are considered datasets. Multiple capabilities of Dynamics 365 Customer Insights are built around these entities. Reviewing them closely can help you validate the output of those capabilities.
 
-The **Entities** page lists entities and includes these columns:
+As you work in Customer Insights enriching your data or creating segments, measures, and activities, the entities that are created from those actions display on the **Entities** page.
 
-- **Name**: The name of the data entity. If you see a warning symbol next to an entity name, it means that the data for that entity didn't load successfully.
+## View a list of entities
+
+Go to **Data** > **Entities** to view a list of entities. The following information displays for each entity.
+
+- **Name**: Name of the data entity. If you see a warning symbol next to an entity name, it means that the data for that entity didn't load successfully.
 - **Source**: Type of data source that ingested the entity.
 - **Updated**: Time the entity was last updated.
 - **Status**: Details about the last update of the entity.
-
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Explore a specific entity's data
 
@@ -32,7 +34,7 @@ The **Entities** page lists entities and includes these columns:
 1. Select an entity to open the details page.  
 1. Explore the different fields and records included for that entity.
 
-- The **Attributes** tab is selected by default and shows details for the selected entity, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](map-entities.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* below has a data type *Text* but its (semantic) Common Data Model type might be *Email* or *EmailAddress*.
+- The **Attributes** tab is selected by default and shows details for the selected entity, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](map-entities.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* below has a data type *String* but its (semantic) Common Data Model type might be *Email*, *EmailAddress*, or *Identity.Service.Email*.
 
    :::image type="content" source="media/data-manager-entities-fields.png" alt-text="Fields table.":::
 
@@ -63,7 +65,7 @@ The following section provides information about some system-created entities.
 
 Fields from an ingested data source can contain corrupted data. Records with corrupted fields are exposed in system-created entities. Knowing about corrupted records helps you identify which data to review and update on the source system. After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes. 
 
-For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system will flag this record as corrupted. Someone can now change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record will be removed from the corrupted entity. 
+For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system will flag this record as corrupted. Someone can now change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record will be removed from the corrupted entity.
 
 Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. Naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'. Select a corrupted entity to identify the corrupted fields and the reason at the individual record level.
 
@@ -71,7 +73,7 @@ Go to **Data** > **Entities** and look for the corrupted entities in the **Syste
 
 Customer Insights still processes corrupted records. However, they might cause issues when working with the unified data.
 
-The following checks run on the ingested data to expose corrupted records: 
+The following checks run on the ingested data to expose corrupted records:
 
 - The value of a field doesn't match with the data type of its column.
 - Fields contain characters that cause the columns to not match the expected schema. For example: incorrectly formatted quotes, unescaped quotes, or newline characters.

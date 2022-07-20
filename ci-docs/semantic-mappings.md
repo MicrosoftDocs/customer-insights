@@ -28,9 +28,9 @@ Semantic mappings let you map your non-activity data to pre-defined schemas. The
 
 1. In the **Entity data** step, set the values for the following fields:
 
-   - **Semantic entity mapping name**: Provide a name for your semantic entity mapping.
-   - **Source Entity**: Select an entity that includes contact data.
-   - **Primary key**: Select the field that uniquely identifies a contact record. It shouldn't contain any duplicate values, empty values, or missing values.
+   - **Semantic entity mapping name**: Name for your semantic entity mapping.
+   - **Source Entity**: Entity that includes contact data.
+   - **Primary key**: Field that uniquely identifies a contact record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    :::image type="content" source="media/Semantic_Mapping_Wizard1.png" alt-text="Set up the semantic entity mapping with name, source entity, and primary key.":::
 
@@ -51,7 +51,8 @@ Semantic mappings let you map your non-activity data to pre-defined schemas. The
 
    > [!NOTE]
    > You can configure more relationships between the contact entity and other account entities with intermediate entities.
-   >  :::image type="content" source="media/Semantic_Mapping_Wizard4.png" alt-text="Visualization of various relationships connect contact entities to account entities.":::
+   
+     :::image type="content" source="media/Semantic_Mapping_Wizard4.png" alt-text="Visualization of various relationships connect contact entities to account entities.":::
 
 1. Select **Next**.
 
@@ -73,7 +74,7 @@ Semantic mappings let you map your non-activity data to pre-defined schemas. The
 
 ## Manage existing semantic mappings
 
-Go to **Data** > **Semantic mappings (preview)** to view all your saved semantic mappings, their source entity, semantic type, mapping type, and status.
+Go to **Data** > **Semantic mappings (preview)** to view your saved semantic mappings, their source entity, semantic type, mapping type, and status.
 
 :::image type="content" source="media/semantic-mapping-options.png" alt-text="Options to manage semantic mappings.":::
 
