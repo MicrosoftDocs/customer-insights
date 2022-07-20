@@ -49,5 +49,4 @@ The bot provides lookup capabilities for unified customer profiles.
 
 - Enter **help** to see a list of available commands for the bot.  
 
-
 [!INCLUDE [footer-include](includes/footer-banner.md)]

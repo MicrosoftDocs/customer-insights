@@ -67,5 +67,4 @@ Optionally, add customer profiles to a [gallery control](/powerapps/maker/canvas
 1. To display the unified timeline for a customer, add a gallery element, and add the **Items** property using **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
     - For example: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
 
-
 [!INCLUDE [footer-include](includes/footer-banner.md)]

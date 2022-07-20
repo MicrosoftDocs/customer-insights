@@ -45,7 +45,7 @@ Exports to Dynamics 365 Sales is limited to 100,000 per segment, which can take 
 
 1. Map a customer ID field to the Dynamics 365 Contact ID.
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
 

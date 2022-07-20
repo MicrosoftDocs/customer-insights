@@ -61,7 +61,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration.":::
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
 
@@ -133,3 +133,5 @@ Once the data is imported into Adobe Campaign Standard, [create a workflow](http
 Create the email content and then [test and send](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) your email.
 
 :::image type="content" source="media/contoso-sample-email.jpg" alt-text="Sample email with renewal offer from Adobe Campaign Standard.":::
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

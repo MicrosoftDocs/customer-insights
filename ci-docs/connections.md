@@ -24,6 +24,12 @@ The **Connections** tab shows you all active connections. The list shows a row f
 
 Get a quick overview, description, and find out what you can do with each extensibility option on the **Discover** tab.
 
+## Data privacy and compliance
+
+When you enable Dynamics 365 Customer Insights to transmit data to third parties or other Microsoft products, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that the third party meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+
+Your Dynamics 365 Customer Insights administrator can remove the connection at any time to discontinue use of the functionality.
+
 ## Exports
 
 Only administrators can configure new connections but they can grant access to contributors to use existing connections. Administrators control where data can go, contributors define the payload and frequency fitting their needs. For more information, see [Allow contributors to use a connection for exports](#allow-contributors-to-use-a-connection-for-exports).
@@ -93,3 +99,5 @@ Detached enrichments and exports become inactive. You reactivate them by adding 
 ## Set up connections with secrets managed by your own Key Vault
 
 Some connections need secrets like API keys or passwords. Some connections support secrets stored in your own Key Vault. Learn more about supported connections and how to set up on [your own Key Vault for Customer Insights](use-azure-key-vault.md).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

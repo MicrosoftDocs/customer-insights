@@ -45,7 +45,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Map the Contact ID field in the Customer entity to the Dynamics 365 Contact ID.
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
 

@@ -17,7 +17,7 @@ searchScope:
 
 # Exports (preview) overview
 
-The **Exports** page shows you all configured exports. Exports share specific data with various applications. They can include customer profiles, entities, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md).
+ Exports allow you to share specific data with various applications. They can include customer profiles, entities, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md). The **Exports** page shows you all configured exports.
 
 ## Export types
 
@@ -41,7 +41,7 @@ Most export option support both types of environments. Exporting segments to var
 **Limits on segment exports**  
 - Third-party target systems may limit the number of customer profiles that you can export. 
 - For individual customers, you'll see the actual number of segment members when you select a segment for export. You'll get a warning if a segment is too large. 
-- For business accounts, you'll see the number of accounts in a segment; however, the number of contacts that may be projected doesn't show. In some cases, this could lead to the exported segment actually containing more customer profiles than the target system accepts. Exceeding the limits of the target systems results will skip the export.
+- For business accounts, you'll see the number of accounts in a segment; however, the number of contacts that may be projected doesn't show. In some cases, this could lead to the exported segment actually containing more customer profiles than the target system accepts. If the limits of the target system are exceeded, the export is skipped.
 
 ## Set up a new export
 
@@ -56,7 +56,7 @@ To set up or edit an export, you need to have connections available to you. Conn
 
 1. In the **Set up export** pane, select which connection to use. [Connections](connections.md) are managed by administrators.
 
-1. Provide the required details and select **Save** to create the export.
+1. Provide the required details and select **Save** to create the export. For the required details, review the Customer Insights documentation for the specific export.
 
 ## Manage existing exports
 
@@ -77,13 +77,11 @@ Select an export to view available actions.
 
 Each export you configure has a refresh schedule. During a refresh, the system looks for new or updated data to include in an export. By default, exports are run as part of every [scheduled system refresh](system.md#schedule-tab). You can customize the refresh schedule or turn it off to run exports manually.
 
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-
-Export schedules depend on the state of your environment. If there are updates in progress on [dependencies](system.md#refresh-processes) when a scheduled export should start, the system will first complete the updates and then run the export. You can see when an export was last refreshed in column **Refreshed**.
+Export schedules depend on the state of your environment. If there are updates in progress on [dependencies](system.md#refresh-processes) when a scheduled export should start, the system will first complete the updates and then run the export. The **Refreshed** column shows when an export was last refreshed.
 
 ### Schedule exports
 
-You can define custom refresh schedules for individual exports or several exports at once. The currently defined schedule is listed in the **Schedule** column of the export list. The permission to change the schedule is the same as for [editing and defining exports](export-destinations.md#set-up-a-new-export). 
+Define custom refresh schedules for individual exports or several exports at once. The currently defined schedule is listed in the **Schedule** column of the export list. The permission to change the schedule is the same as for [editing and defining exports](export-destinations.md#set-up-a-new-export).
 
 1. Go to **Data** > **Exports**.
 
@@ -97,7 +95,7 @@ You can define custom refresh schedules for individual exports or several export
 
 1. Select **Save**.
 
-When editing the schedule for several exports, you need to make a selection under **Keep or override schedules**:
+When editing the schedule for several exports, make a selection under **Keep or override schedules**:
 
 - **Keep individual schedules**: Keep the previously defined schedule for the selected exports and only disable or enable them.
 - **Define new schedule for all selected exports**: Override the existing schedules of the selected exports.
@@ -108,6 +106,8 @@ To export data without waiting for a scheduled refresh, go to **Data** > **Expor
 
 - To run all exports, select **Run all** in the command bar. This action will only run exports that have an active schedule.
 - To run a single export, select it in the list and select **Run** in the command bar. That's how you run exports with no active schedule.
+
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -44,18 +44,13 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Enter your Google Ads customer ID.
 
-1. Select **I agree** to confirm the [Data privacy and compliance](#data-privacy-and-compliance).
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Authenticate with Google Ads** and provide your Google Ads credentials.
 
 1. Select **Add yourself as export user** and provide your Customer Insights credentials.
 
 1. Select **Save** to complete the connection.
-
-### Data privacy and compliance
-
-When you enable Dynamics 365 Customer Insights to transmit data to Google Ads, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Google Ads meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights administrator can remove this export destination at any time to discontinue use of this functionality.
 
 ## Configure an export
 

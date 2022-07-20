@@ -50,7 +50,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Select or search for the subscription you want to use the Customer Insights data in. As soon as a subscription is selected, you can also select **Workspace**, **Storage account**, and **Container**.
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
 
@@ -87,3 +87,5 @@ To query data that was exported to Synapse Analytics, you need **Storage Blob Da
    - **Add** or **Remove** entities from the selection. If entities are removed from the selection, they aren't deleted from the Synapse Analytics database. However, future data refreshes won't update the removed entities in that database.
 
    - **Changing the Database Name** creates a new Synapse Analytics database. The database with the name that was configured before won't receive any updates in future refreshes.
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

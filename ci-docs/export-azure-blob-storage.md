@@ -38,7 +38,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Enter **Account name**, **Account key**, and **Container** for your Blob Storage account.
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
 
