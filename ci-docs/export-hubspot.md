@@ -37,7 +37,7 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your [HubSpot API key](https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key).
+1. Enter your HubSpot credentials when prompted. 
 
 1. Select **I agree** to confirm the **Data privacy and compliance**.
 
