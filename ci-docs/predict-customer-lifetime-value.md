@@ -142,7 +142,7 @@ Data reflecting key customer interactions (like web, customer service, and event
 1. Select **Save**.
     Add more data if there are other customer activities you want to include.
 
-1. Add additional customer data or select **Next**.
+1. Add optional customer data or select **Next**.
 
 ### Add optional customer data
 
