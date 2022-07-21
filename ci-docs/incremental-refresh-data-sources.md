@@ -16,9 +16,7 @@ searchScope:
 
 # Incremental refresh for Power Query and Azure Data Lake data sources
 
-This article discusses how to configure incremental refresh for data sources based on Power Query or Azure Data Lake.
-
-Incremental refresh for data sources provides the following advantages:
+Incremental refresh for data sources based on Power Query or Azure Data Lake provides the following advantages:
 
 - **Faster refreshes** - Only data that has changed gets refreshed. For example, you might refresh only the past five days of a historical dataset.
 - **Increased reliability** - With smaller refreshes, you don't need to maintain connections to volatile source systems for as long, reducing the risk of connection issues.

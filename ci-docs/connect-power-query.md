@@ -54,6 +54,8 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
 Loading data can take time. After a successful refresh, the ingested data can be reviewed from the **Entities** page. For more information, see [Entities](entities.md).
 
 > [!CAUTION]
@@ -92,3 +94,5 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 1. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
 1. Select **Save** in Power Query after completing your edits to save your changes.
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

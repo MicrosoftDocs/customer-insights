@@ -16,9 +16,9 @@ Use data from sources like Microsoft and other partners to enrich your customer 
 
 ## Enrich a data source
 
-You must have Contributor or Administrator permissions to create or edit enrichments. For more information, see [Permissions](permissions.md).  
+You must have Contributor or Administrator [permissions](permissions.md) to create or edit enrichments.  
 
-1. Go to **Data** > **Unify**. Select the entity you want to enrich and select one attribute as a primary key for the entity. For more information, see [Select primary key](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
+1. Go to **Data** > **Unify**. Select the entity you want to enrich and select one attribute as a [primary key](map-entities.md#select-primary-key-and-semantic-type-for-attributes) for the entity.
 
 1. Go to **Data** > **Data sources**.
 
@@ -42,8 +42,8 @@ The following enrichments are currently available for data sources. Review the d
 
 ## Manage existing data source enrichments
 
-Go to the **My enrichments** tab to see all configured enrichments.
+Go to **Data** > **Enrichment**. On the **My enrichments** tab, view the configured enrichments, their status, number of enriched customers, and the last time the data was refreshed. You can sort the list of enrichments by any column or use the search box to find the enrichment you want to manage.
 
-Select the enrichment to see the available options. You can also select the vertical ellipsis (&vellip;) on a list item to see the options. If you configured several enrichments, you can use the search box to find it quickly.
+Select the enrichment to see the available options. You can also select the vertical ellipsis (&vellip;) on a list item to see the options.
 
-You can view, edit, run, or delete a data source enrichment. For more information, see [Manage existing enrichments](enrichment-hub.md).
+You can view, edit, run, or delete a data source enrichment. For more information, see [Manage existing enrichments](enrichment-hub.md#manage-existing-enrichments).

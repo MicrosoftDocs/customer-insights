@@ -65,3 +65,5 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 Loading data can take time. After a successful refresh, the ingested data can be reviewed from the **Entities** page. For more information, see [Entities](entities.md).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
