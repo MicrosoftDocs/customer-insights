@@ -1,5 +1,5 @@
 ---
-title: "Customer profiles"
+title: "View customer profiles"
 description: "View your unified customer data including using search and filter"
 ms.date: 06/08/2022
 ms.reviewer: mhart
@@ -17,7 +17,7 @@ searchScope:
   - customerInsights
 ---
 
-# Customer profiles
+# View customer profiles
 
 Customer profiles are available once you [create the unified *Customer* entity](data-unification.md). The combined view of your unified customer profiles display on the **Customers** page. Customers can be individuals or organizations.
 
@@ -30,32 +30,33 @@ Go to the **Customers** page to view your customers and their profiles. Each cus
 
 Select any of the following actions:
 - [View customer details](#view-customer-details)
+- [Manage the Search and filter index](search-filter-index.md) (admins only)
+- [Filter customers](#filter-customers)
+- **Expand cards** or **Collapse cards** to expand or collapse the information displayed on the customer tile
 - **Sort by** a particular attribute
 - [Search for customers](#search-for-customers)
-- [Filter customers](#filter-customers)
-- [Manage the Search and filter index](search-filter-index.md) (admins only)
 
   > [!NOTE]
   > To use search and filter, an admin must configure the searchable attributes and define the filterable fields using the Search and filter index.
 
 ## Search for customers
 
-Search for customers by entering a name or some other attribute in the search box. The searchable attributes are defined by the admin. The search only works within the *Customer* entity created during the data unification process.
+Search for customers by entering a name or some other attribute in **Search customers**. The searchable attributes are defined by the admin and come from the unified *Customer* entity.
 
 > [!NOTE]
-> **String** is the only data type that is included in search. Use it in the **Search** field on the Customers page to search for customers.
+> **String** is the only data type that is included in search. Use it in the **Search customers** field on the Customers page to search for customers.
 
 ## Filter customers
 
 Filter customers by the *Customer* entity fields. Filterable fields are defined by the admin.
 
-1. On the **Customers** page, select **Show filters**.
+1. On the **Customers** page, select **Show filters**. The Filter pane displays.
 
 1. Check the boxes next to the attributes you want to filter customers by.
 
-1. Remove filters by selecting **Clear filters**.
+1. Remove all filters by selecting **Clear filters** or clear a checkbox next to a selected attribute.
 
-1. Select **X** to close the filter pane.
+1. Select **Hide filters** to close the filter pane.
 
 1. To save the filter results as a [segment](segments.md), select **Save filters as segment**.
    1. Enter a name for the segment.
@@ -64,7 +65,7 @@ Filter customers by the *Customer* entity fields. Filterable fields are defined 
 
 ## View customer details
 
-On the **Customers** page, select any of the customer tiles to view details for the selected customer.
+On the **Customers** page, select a customer tile to view details for the selected customer.
 
 :::image type="content" source="media/customers-details-B2C.png" alt-text="Customer details page.":::
 
@@ -77,13 +78,13 @@ Customer details include:
 - **Additional fields** shows the remaining fields of the selected customer, except IDs.
 - **IDs** lists all IDs under their corresponding entity name. Fields are identified as IDs by their semantics.
 
-**Activity timeline** shows data if you have configured activities. The timeline view contains chronologically sorted activities of the selected customer, starting with the most recent activity. For more information, go to [Customer activities](activities.md).
+**Activity timeline** shows data if you have configured [activities](activities.md). The timeline view contains chronologically sorted activities of the selected customer, starting with the most recent activity.
 
 **Insights**:
 
-- **Measures** show if you configured one or more customer attribute measures. They include calculated KPIs around your customers on the individual customer level. For more information, go to [Create and manage measures](measures.md).
+- **Measures** show if you have configured [customer attribute measures](measures.md). They include calculated KPIs around your customers on the individual customer level.
 
-- **Potential interests, potential brands**  show if you configured a brand or interest affinity enrichment. It represents potential interests and affinities for brands based on other customers whose profile is similar to the selected customer profile. For more information, go to [Enrich customer profiles with brand and interest affinities](enrichment-microsoft.md).
+- **Potential interests, potential brands** show if you configured a [brand or interest affinity enrichment](enrichment-microsoft.md). It represents potential interests and affinities for brands based on other customers whose profile is similar to the selected customer profile.
 
 To return to the **Customers** page, select **Back to Customers**.
 

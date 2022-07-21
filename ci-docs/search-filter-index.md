@@ -34,6 +34,8 @@ If it's the first time you define searchable attributes as an administrator, def
 
    :::image type="content" source="media/search-filter-index.png" alt-text="Search and filter index page.":::
 
+1. Select **Run** once you're ready to apply your search and filter settings. After the changes are processed, view them in the [customer cards on the Customer page](customer-profiles.md).
+
 ## Define filtering options for a given attribute
 
 Set up the fields that can be used for filtering customers on the **Customers** page.

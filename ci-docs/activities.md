@@ -21,7 +21,7 @@ searchScope:
 
 # Customer activities
 
-Customer activities are actions or events performed by customers. For example, transactions, support call duration, website reviews, purchases or returns. These activities are often contained in various data sources. With Customers Insights, consolidate your customer activities from these [data sources](data-sources.md) and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
+Customer activities are actions or events performed by customers. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these [data sources](data-sources.md) and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
 
 ## Define an activity
 
@@ -87,7 +87,7 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
 ## Manage existing activities
 
-Go to **Data** > **Activities** to view your saved activities, their source entity, the activity type, and if they are included in the customer timeline.
+Go to **Data** > **Activities** to view your saved activities, their source entity, the activity type, and if they are included in the customer timeline. You can sort the list of activities by any column or use the search box to find the segment you want to manage.
 
 Select an activity to view available actions.
 
