@@ -157,7 +157,7 @@ With this information, they organize a local event for the launch of the espress
 
 1. Map more fields if the data is available in your unified customer profiles.
 
-   :::image type="content" source="media/clv-add-customer-data-mapping.png" alt-text="Example of mapped fields for customer profile data.":::
+   :::image type="content" source="media/clv-optional-customer-profile-mapping.png" alt-text="Example of mapped fields for customer profile data.":::
 
 1. Select **Save** after mapping the attributes that the model should use to help predict customer lifetime value.
 
