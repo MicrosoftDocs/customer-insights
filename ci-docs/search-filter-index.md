@@ -32,7 +32,7 @@ If it's the first time you define searchable attributes as an administrator, def
 
 1. To add more attributes, select **Add**. To remove a selected attribute, select the attribute and then **Delete**.
 
-   :::image type="content" source="media/search-filter-index.png" alt-text="Search and filter index page.":::
+   :::image type="content" source="media/search-filter-index.png" alt-text="Search & filter index page.":::
 
 1. Select **Run** once you're ready to apply your search and filter settings. After the changes are processed, view them in the [customer cards on the Customer page](customer-profiles.md).
 

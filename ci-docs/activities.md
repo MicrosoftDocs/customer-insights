@@ -87,7 +87,7 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
 ## Manage existing activities
 
-Go to **Data** > **Activities** to view your saved activities, their source entity, the activity type, and if they are included in the customer timeline. You can sort the list of activities by any column or use the search box to find the segment you want to manage.
+Go to **Data** > **Activities** to view your saved activities, their source entity, the activity type, and if they are included in the customer timeline. You can sort the list of activities by any column or use the search box to find the activity you want to manage.
 
 Select an activity to view available actions.
 
