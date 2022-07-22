@@ -118,7 +118,7 @@
   items:
     - name: View customer profiles
       href: customer-profiles.md
-    - name: Manage the Search & filter index
+    - name: Manage the search & filter index
       href: search-filter-index.md
     - name: Define customer activities
       href: activities.md

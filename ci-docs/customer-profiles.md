@@ -30,14 +30,14 @@ Go to the **Customers** page to view your customers and their profiles. Each cus
 
 Select any of the following actions:
 - [View customer details](#view-customer-details)
-- [Manage the Search & filter index](search-filter-index.md) (admins only)
+- [Manage the search & filter index](search-filter-index.md) (admins only)
 - [Filter customers](#filter-customers)
 - **Expand cards** or **Collapse cards** to expand or collapse the information displayed on the customer tile
 - **Sort by** a particular attribute
 - [Search for customers](#search-for-customers)
 
   > [!NOTE]
-  > To use search and filter, an admin must configure the searchable attributes and define the filterable fields using the Search & filter index.
+  > To use search and filter, an admin must configure the searchable attributes and define the filterable fields using the search & filter index.
 
 ## Search for customers
 
@@ -73,7 +73,7 @@ Customer details include:
 
 **Customer profile tile** shows the different values from the unified *Customer* entity. If a field has no value for the selected customer profile, it won't show except for the address field. The tile is structured into sections:
 
-- The first section shows a predefined set of fields followed by all fields that are part of the Search & filter index. All address-related fields are combined into a single line, which shows even if the profile contains no address information.
+- The first section shows a predefined set of fields followed by all fields that are part of the search & filter index. All address-related fields are combined into a single line, which shows even if the profile contains no address information.
 - **Contacts for this customer** display in environments for business accounts. Each contact is shown with their fields. Empty fields are hidden.
 - **Additional fields** shows the remaining fields of the selected customer, except IDs.
 - **IDs** lists all IDs under their corresponding entity name. Fields are identified as IDs by their semantics.

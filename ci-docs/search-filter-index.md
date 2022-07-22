@@ -1,5 +1,5 @@
 ---
-title: "Manage the Search & filter index for customer profiles"
+title: "Manage the search & filter index for customer profiles"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
 ms.date: 07/22/2022
 ms.reviewer: mhart
@@ -14,7 +14,7 @@ searchScope:
   - customerInsights
 ---
 
-# Manage the Search & filter index for customer profiles
+# Manage the search & filter index for customer profiles
 
 The result of unifying your customer data is a *Customer* entity that provides a unified view into your total customer base. For users to quickly [find information on a specific customer or group of customers](customer-profiles.md), an admin must configure the **Search** and **Filter** capabilities for the **Customers** page.
 
