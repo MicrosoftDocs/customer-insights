@@ -114,11 +114,11 @@
     - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
-- name: Unified profiles
+- name: Customer profiles and activities
   items:
-    - name: Review unified customer profiles
+    - name: View customer profiles
       href: customer-profiles.md
-    - name: Filter unified customer profiles
+    - name: Manage the search & filter index
       href: search-filter-index.md
     - name: Define customer activities
       href: activities.md

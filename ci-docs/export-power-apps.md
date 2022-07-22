@@ -41,7 +41,7 @@ You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint 
 
 Delegation works for the **Customer** entity and **UnifiedActivity** entity. 
 
-- Delegation for **Customer** entity: To use delegation for this entity, the fields need to be indexed in [Search & filter index](search-filter-index.md).  
+- Delegation for **Customer** entity: To use delegation for this entity, the fields need to be indexed in [search & filter index](search-filter-index.md).  
 - Delegation for **UnifiedActivity**: Delegation for this entity only works for the fields **ActivityId** and **CustomerId**.  
 - Delegation for **ContactProfile**: Delegation for this entity only works for the fields **ContactId** and **CustomerId**. ContactProfile is only available in Customer Insights environments for business accounts.
 

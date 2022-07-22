@@ -24,7 +24,7 @@ To set up and configure the bot, the following prerequisites must be met:
 
 - There's at least one [data source added](data-sources.md).
 - The [unification process](data-unification.md) is complete.
-- Fields are added to the [search and filter index](search-filter-index.md).
+- Fields are added to the [search & filter index](search-filter-index.md).
 - Customer Insights and Teams are in the same organization.
 - Your environment has the primary target audience set to individual customers. Business accounts aren't supported.
 
@@ -44,7 +44,7 @@ To set up and configure the bot, the following prerequisites must be met:
 
 The bot provides lookup capabilities for unified customer profiles.
 
-- Enter **search** followed by a name, email address, or any other field on the unified customer profile that is added to the search and filter index.
+- Enter **search** followed by a name, email address, or any other field on the unified customer profile that is added to the search & filter index.
 
   You'll get a card with up to 15 fields from the resulting customer profile. Multiple matches return a list of results where you can select a profile. You can add the search term in double quotes to look up an exact match.
 
