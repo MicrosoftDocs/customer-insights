@@ -27,7 +27,7 @@ Use triggers to create cloud flows and automate repetitive tasks, such as notifi
 - Trigger when a data source refresh succeeds.
 - Trigger when a threshold is crossed on a segment. The trigger is limited to crossing above the threshold.
 - Trigger when a threshold is crossed on a business measure. Only business measures without a dimension are supported. The trigger is limited to crossing above the threshold.
-- Trigger when a full refresh of (data sources, segments, measures, ...) is completed.
+- Trigger when a scheduled full refresh of (data sources, segments, measures, ...) is completed. This trigger does not work for manually started refreshes.
 - Trigger when a refresh of the unification process is completed.
 
 [Configure your triggers in Power Automate.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
