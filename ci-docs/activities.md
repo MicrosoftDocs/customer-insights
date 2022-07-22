@@ -1,7 +1,7 @@
 ---
 title: "Customer activities"
 description: "Define customer activities and view them in a timeline on customer profiles." 
-ms.date: 11/01/2021
+ms.date: 07/22/2022
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
@@ -99,7 +99,7 @@ Select an activity to view available actions.
 
 1. If you selected **Show in activity timeline** in the activity configuration, go to **Customers** and select a customer profile to view the customer's activities in the **Activity timeline** section.
 
-:::image type="content" source="media/Activity_Timeline1.PNG" alt-text="View configured activities in Customer Profiles.":::
+   :::image type="content" source="media/Activity_Timeline1.PNG" alt-text="View configured activities in Customer Profiles.":::
 
 1. To filter activities in the activity timeline:
 
