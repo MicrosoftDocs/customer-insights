@@ -1,7 +1,7 @@
 ---
 title: "Manage the Search & filter index for customer profiles"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
-ms.date: 11/01/2021
+ms.date: 07/22/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
