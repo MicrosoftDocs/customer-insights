@@ -41,9 +41,9 @@ You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint 
 
 Delegation works for the **Customer** entity and **UnifiedActivity** entity.
 
-- Delegation for **Customer** entity: to use delegation, index the fields in [Search & filter index](search-filter-index.md).  
-- Delegation for **UnifiedActivity**: delegation is only for fields **ActivityId** and **CustomerId**.  
-- Delegation for **ContactProfile**: delegation is only for fields **ContactId** and **CustomerId**. ContactProfile is only available in Customer Insights environments for business accounts.
+- Delegation for **Customer** entity: To use delegation for this entity, the fields need to be indexed in [search & filter index](search-filter-index.md).  
+- Delegation for **UnifiedActivity**: Delegation for this entity only works for the fields **ActivityId** and **CustomerId**.  
+- Delegation for **ContactProfile**: Delegation for this entity only works for the fields **ContactId** and **CustomerId**. ContactProfile is only available in Customer Insights environments for business accounts.
 
 For more information about delegation, go to [Power Apps delegable functions and operations](/powerapps/maker/canvas-apps/delegation-overview).
 
