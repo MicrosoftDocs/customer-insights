@@ -28,7 +28,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 - Segments only.
 - Facebook *customer list* type in [custom audiences](https://www.facebook.com/business/help/744354708981227?id=2469097953376494) only.
   > [!NOTE]
-  > In some cases, you might see custom audiences of different types in the dropdown list. Selecting a different type other than *customer list* will result in a failing export.
+  > In some cases, you might see custom audiences of different types in the dropdown list. If you select a different type other than *customer list*, the export fails.
 
 ## Set up connection to Facebook Ads Manager
 

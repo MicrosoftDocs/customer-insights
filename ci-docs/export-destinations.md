@@ -29,7 +29,7 @@ There are two main types of exports:
 ### Export segments
 
 **Exporting segments in environments for business accounts (B-to-B) or individual consumers (B-to-C)**  
-Most export option support both types of environments. Exporting segments to various target systems has specific requirements. 
+Most export options support both types of environments. Exporting segments to various target systems have specific requirements. 
 
 **Segment exports in environments for individual consumers (B-to-C)**  
 - Segments in the context of environments for individual customers are built on the *unified customer profile* entity. Every segment that meets the requirements of the target systems (for example, an email address) can get exported.
@@ -45,7 +45,7 @@ Most export option support both types of environments. Exporting segments to var
 
 ## Set up a new export
 
-To set up or edit an export, you need to have connections available to you. Connections depend on your [user role](permissions.md):
+To set up or edit an export, you need the right connections available to you. Connections depend on your [user role](permissions.md):
 - **Administrators** have access to all connections. They can also create new connections when setting up an export.
 - **Contributors** can have access to specific connections. They depend on administrators to configure and share connections. The exports list shows contributors whether they can edit or only view an export in the **Your permissions** column. For more information, go to [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 - **Viewers** can only view existing exports—not create them.
@@ -54,7 +54,7 @@ To set up or edit an export, you need to have connections available to you. Conn
 
 1. Select **Add export** to create a new export.
 
-1. In the **Set up export** pane, select which connection to use. [Connections](connections.md) are managed by administrators.
+1. In the **Set up export** pane, select which [connection](connections.md) to use.
 
 1. Provide the required details and select **Save** to create the export. For the required details, review the Customer Insights documentation for the specific export.
 
@@ -81,7 +81,7 @@ Export schedules depend on the state of your environment. If there are updates i
 
 ### Schedule exports
 
-Define custom refresh schedules for individual exports or several exports at once. The currently defined schedule is listed in the **Schedule** column of the export list. The permission to change the schedule is the same as for [editing and defining exports](export-destinations.md#set-up-a-new-export).
+Define custom refresh schedules for individual exports or several exports at once. The currently defined schedule is listed in the **Schedule** column of the export list. The permission to change the schedule is the same as [editing and defining exports](export-destinations.md#set-up-a-new-export).
 
 1. Go to **Data** > **Exports**.
 
@@ -104,8 +104,8 @@ When editing the schedule for several exports, make a selection under **Keep or 
 
 To export data without waiting for a scheduled refresh, go to **Data** > **Exports**.
 
-- To run all exports, select **Run all** in the command bar. This action will only run exports that have an active schedule.
-- To run a single export, select it in the list and select **Run** in the command bar. That's how you run exports with no active schedule.
+- To run all exports, select **Run all** in the command bar. Only exports that have an active schedule are run. To run an export that is not active, run a single export.
+- To run a single export, select it in the list and select **Run** in the command bar.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

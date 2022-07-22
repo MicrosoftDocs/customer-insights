@@ -61,7 +61,9 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Enter a name for the export.
 
-1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. Repeat the same steps for other optional fields such as **First name**, **Last name**.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
+
+1. Optionally, export other fields such as **First name** and **Last name**.
 
 1. Select the segments you want to export adhering to the known limitations.
 

@@ -65,7 +65,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 1. Enter a name for the export.
 
 1. Choose whether to use an existing audience or create a new one:
-   - To update an existing Google Ads audience, enter your [Google Ads audience ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)
+   - To update an existing Google Ads audience, enter your [Google Ads audience ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns).
    - To create a new audience, leave the Google Audience ID field blank. We will automatically create a new audience in your Google Ads account and use the name of the exported segment.
 
 1. In the **Data matching** section, select one or more data fields to export, and select the field that represents the corresponding data fields in Customer Insights.

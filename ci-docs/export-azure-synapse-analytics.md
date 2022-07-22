@@ -64,7 +64,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. In the **Connection for export** field, choose a connection from the Azure Synapse Analytics section. Contact an administrator if one is not available.
 
-1. Provide a recognizable **Display name** for your export and a **Database name**. The export will create a new [Azure Synapse lake database](/azure/synapse-analytics/database-designer/concepts-lake-database) in workspace defined in the connection.
+1. Provide a recognizable **Display name** for your export and a **Database name**. The export will create a new [Azure Synapse lake database](/azure/synapse-analytics/database-designer/concepts-lake-database) in the workspace defined in the connection.
 
 1. Select which entities you want to export to Azure Synapse Analytics.
    > [!NOTE]

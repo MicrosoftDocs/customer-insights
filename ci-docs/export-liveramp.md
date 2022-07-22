@@ -43,11 +43,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Choose whether you want to authenticate through SSH or username/password for your connection and provide the necessary details. If you use an SSH key for authentication, make sure you [create your private key](/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example) as PEM or SSH.COM format. If you are using Putty, convert your private key by exporting is as Open SSH. The following private key formats are supported:
-   - RSA in OpenSSL PEM and ssh.com format
-   - DSA in OpenSSL PEM and ssh.com format
-   - ECDSA 256/384/521 in OpenSSL PEM format
-   - ED25519 and RSA in OpenSSH key format
+1. Choose whether you want to authenticate through SSH or username/password for your connection and provide the necessary details.
 
 1. Select **Verify** to test the connection to LiveRamp.
 

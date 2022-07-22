@@ -18,7 +18,7 @@ Export segment lists or other data from your Customer Insights instance to [InMo
 
 - An [InMobi account](https://www.inmobi.com/) and admin credentials.
 - An [Azure Blob Storage account](/azure/storage/blobs/create-data-lake-storage-account) name and account key. To find the name and key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
-- An [Azure Blob Storage container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) to export inMobi data to.
+- An [Azure Blob Storage container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) to export InMobi data to.
 - InMobi will create a direct connection to your Blob Storage, and configure an automatic import of your data to InMobi. Contact your InMobi representative to initiate the process.
 
 ## Known limitations
@@ -27,7 +27,7 @@ Export segment lists or other data from your Customer Insights instance to [InMo
 
 ## Set up connection to Azure Blob Storage
 
-[Setup a connection to your Azure Blob Storage](export-azure-blob-storage.md).
+[Set up a connection to your Azure Blob Storage](export-azure-blob-storage.md).
 
 ## Configure an export
 

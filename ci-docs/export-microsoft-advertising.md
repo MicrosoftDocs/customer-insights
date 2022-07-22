@@ -18,6 +18,7 @@ Export Customer Insights segments to Microsoft Advertising to create Customer Ma
 ## Prerequisites
 
 - A [Microsoft Advertising account](https://ads.microsoft.com/) and corresponding administrator credentials.
+- Microsoft Advertising Customer ID and Account ID. Find the Customer ID (`cid`) and Account ID (`aid`) in the parameters of the URL when you're signed in to Microsoft Advertising.
 - The Customer Match terms of use are accepted.
 - [Configured segments](segments.md) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address.
@@ -65,7 +66,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Select the segments to export. The Customer Match audiences in Microsoft Advertising are automatically created with the name of the segments selected for export. Each segment will result in a separate Customer Match audience.
 
-1. Enter your **Microsoft Advertising Customer ID and Account ID**. You can find the Customer ID (`cid`) and Account ID (`aid`) in the parameters of the URL when you're signed in Microsoft Advertising.
+1. Enter your **Microsoft Advertising Customer ID and Account ID**.
 
 1. In the **Data matching** section, in the **Email** field, select the field with a customer's email address.
 

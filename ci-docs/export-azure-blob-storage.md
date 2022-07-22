@@ -78,6 +78,7 @@ Exported data is stored in the Blob Storage container you configured. The follow
   > Export of entities that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
 
 - The model.json for the exported entities resides at the *%ExportDestinationName%* level.  
+  
   Example: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

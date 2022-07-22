@@ -51,11 +51,9 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 1. Select **Add connection** and choose **Adobe Campaign**.
 
-   :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Configuration tile for Adobe Campaign Standard.":::
-
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. By default, it's only administrators. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter the **Account name**, **Account key**, and **Container** for your Blob Storage account.  
 
