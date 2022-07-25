@@ -21,7 +21,7 @@ searchScope:
 Define complex filters around the unified customer entity and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on.
 
 > [!TIP]
-> Segments based on **individual customers** automatically include available contact information for segment members. In environments for **business accounts**, segments are based on accounts (companies or subsidiaries). To include contact information in a segment, use the **Project attributes** functionality in the segment builder. Ensure that the contact data sources are [semantically mapped to the ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) entity.
+> Segments based on **individual customers** automatically include available contact information for segment members. In **business accounts**, if you [unified](data-unification.md) both accounts and contacts, choose whether the segment is based on accounts or business contacts.
 
 ## Segment builder
 
@@ -52,6 +52,9 @@ The example above illustrates the segmentation capability. We've defined a segme
 1. Go to **Segments**.
 
 1. Select **New** > **Build your own**. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
+
+   > [!NOTE]
+   > In business accounts, select **New** > **Segment of Accounts** or **Segment of Contacts** based on the type of segment you want to create.
 
 1. Select **Edit details** next to Untitled segment. Provide a name for your segment and update the suggested **Output entity name** for the segment. Optionally, add a description and [tags](work-with-tags-columns.md#manage-tags) to the segment.
 
@@ -88,10 +91,10 @@ The example above illustrates the segmentation capability. We've defined a segme
       - **Intersect** overlaps the two groups. Only data that *is common* to both groups remains in the unified group.
       - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is kept.
 
-1. By default, the output entity will automatically contain all attributes of customer profiles that match the defined filters. If a segment is based on other entities than the *Customer* entity, select **Project attributes** to add more attributes from these entities to the output entity.
+1. By default, the output entity will automatically contain all attributes of customer profiles that match the defined filters. In B-to-B when using the *ContactProfile* entity, the Account ID is automatically included. If a segment is based on other entities than the *Customer* entity or to include more attributes from the *ContactProfile*, select **Project attributes** to add more attributes from these entities to the output entity.
 
-   > [!IMPORTANT]
-   > For segments based on business accounts, details of one or more contacts of each account from the *ContactProfile* entity must be included in the segment to allow that segment to be activated or exported to destinations that require contact information. For more information about the *ContactProfile* entity, see [Semantic mappings](semantic-mappings.md).
+   > [!NOTE]
+   > If you created a *ContactProfile* from **Semantic mappings** rather than data unification, details of one or more contacts in a segment of accounts from the *ContactProfile* entity must be included in the segment to allow that segment to be activated or exported to destinations that require contact information. For more information about the *ContactProfile* entity, see [Semantic mappings](semantic-mappings.md).
    > A sample output for a segment based on business accounts with projected attributes of contacts could look like this:
    >
    > |ID  |Account name  |Revenue  |Contact name  | Contact role|
