@@ -1,7 +1,7 @@
 ---
 title: "Exports (preview) overview"
 description: "Manage exports to share data."
-ms.date: 11/01/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

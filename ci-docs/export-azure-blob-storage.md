@@ -26,7 +26,7 @@ Store your Customer Insights data in a Blob storage or use it to transfer your d
 
 ## Set up connection to Blob Storage
 
-You must be an [administrator](permissions.md) in Customer Insights to add a connection.
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Go to **Admin** > **Connections**.
 
@@ -63,9 +63,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Select **Save**.
 
-Saving an export doesn't run the export immediately.
-
-The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 Exported data is stored in the Blob Storage container you configured. The following folder paths are automatically created in your container:
 

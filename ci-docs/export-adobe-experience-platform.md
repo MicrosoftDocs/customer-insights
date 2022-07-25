@@ -1,7 +1,7 @@
 ---
 title: "Export segments to Adobe Experience Platform (preview)"
 description: "Learn how to use Customer Insights segments in Adobe Experience Platform."
-ms.date: 03/29/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -48,7 +48,7 @@ We'll configure the export from Customer Insights to an Azure Blob Storage accou
 
 ### Set up connection to Azure Blob Storage
 
-You must be an [administrator](permissions.md) in Customer Insights to add a connection.
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Go to **Admin** > **Connections**.
 
@@ -68,7 +68,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 ### Configure an export
 
-To configure this export, you must have [permission](export-destinations.md#set-up-a-new-export) for this connection type.
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Go to **Data** > **Exports**.
 
@@ -84,9 +84,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Select **Save**.
 
-Saving an export doesn't run the export immediately.
-
-The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 > [!NOTE]
 > Ensure that the number of records in the exported segment are within the allowed limit of your Adobe Campaign Standard license.

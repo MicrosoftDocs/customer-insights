@@ -1,7 +1,7 @@
 ---
 title: "Power BI connector (preview)"
 description: "Learn how to use the Dynamics 365 Customer Insights connector in Power BI."
-ms.date: 07/23/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

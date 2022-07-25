@@ -1,7 +1,7 @@
 ---
 title: "Export data to Azure Data Lake Storage Gen2 (preview)"
 description: "Learn how to configure the connection to Azure Data Lake Storage Gen2."
-ms.date: 10/06/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -26,7 +26,7 @@ Store your Customer Insights data in a Data Lake Storage Gen2 account or use it 
 
 ## Set up connection to Azure Data Lake Storage Gen2
 
-You must be an [administrator](permissions.md) in Customer Insights to add a connection.
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Go to **Admin** > **Connections**.
 
@@ -44,7 +44,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 ## Configure an export
 
-To configure this export, you must have [permission](export-destinations.md#set-up-a-new-export) for this connection type.
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Go to **Data** > **Exports**.
 
@@ -60,9 +60,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Select **Save**.
 
-Saving an export doesn't run the export immediately.
-
-The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 Exported data is stored in the Azure Data Lake Gen 2 storage container you configured.
 

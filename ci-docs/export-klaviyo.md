@@ -1,7 +1,7 @@
 ---
 title: "Export segments to Klaviyo (preview)"
 description: "Learn how to configure the connection and export to Klaviyo."
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -30,7 +30,7 @@ Export segments of unified customer profiles to Klaviyo and use them for marketi
 
 ## Set up connection to Klaviyo
 
-You must be an [administrator](permissions.md) in Customer Insights to add a connection.
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Go to **Admin** > **Connections**.
 
@@ -54,7 +54,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 ## Configure an export
 
-To configure this export, you must have [permission](export-destinations.md#set-up-a-new-export) for this connection type.
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Go to **Data** > **Exports**.
 
@@ -72,8 +72,6 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Select **Save**.
 
-Saving an export doesn't run the export immediately.
-
-The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

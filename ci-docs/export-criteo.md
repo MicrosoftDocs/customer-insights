@@ -1,7 +1,7 @@
 ---
 title: "Export segments to Criteo (preview)"
 description: "Learn how to configure the connection and export to Criteo."
-ms.date: 05/27/2022
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -27,7 +27,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 ## Set up connection to Criteo
 
-You must be an [administrator](permissions.md) in Customer Insights to add a connection.
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Go to **Admin** > **Connections**.
 
@@ -49,7 +49,7 @@ You must be an [administrator](permissions.md) in Customer Insights to add a con
 
 ## Configure an export
 
-To configure this export, you must have [permission](export-destinations.md#set-up-a-new-export) for this connection type.
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Go to **Data** > **Exports**.
 
@@ -67,8 +67,6 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Select **Save**.
 
-Saving an export doesn't run the export immediately.
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-The export runs with every [scheduled refresh](system.md#schedule-tab). You can also [export data on demand](export-destinations.md#run-exports-on-demand).
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]
