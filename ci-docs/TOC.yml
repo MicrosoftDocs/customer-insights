@@ -116,23 +116,27 @@
     - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
-- name: Unified profiles
+- name: Customer profiles and activities
   items:
-    - name: Review unified customer profiles
+    - name: View customer profiles
       href: customer-profiles.md
-    - name: Filter unified customer profiles
+    - name: Manage the search & filter index
       href: search-filter-index.md
     - name: Define customer activities
       href: activities.md
     - name: Use consent management
       href: consent-management.md
+    - name: Use web data for personalization
+      href: unknown-to-known.md
 
 - name: Segments
   items:
     - name: Segments overview
       href: segments.md
-    - name: Create segments
+    - name: Create with segment builder
       href: segment-builder.md
+    - name: Create with quick segments
+      href: segment-quick.md
     - name: Suggested segments based on measures
       href: suggested-segments.md
     - name: Suggested segments based on activity
@@ -146,9 +150,9 @@
   items: 
     - name: Measures overview
       href: measures.md
-    - name: Create a new measure
+    - name: Create with measure builder
       href: measure-builder.md
-    - name: Use a measure template
+    - name: Create with templates
       href: measure-templates.md
           
 - name: Predictions

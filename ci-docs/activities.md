@@ -21,20 +21,17 @@ searchScope:
 
 # Customer or business contact activities
 
-Combine customer or business contact activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights. Create a timeline that lists the activities chronologically. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
+Customer activities are actions or events performed by customers or business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these [data sources](data-sources.md) and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
 
 ## Define a customer activity
 
-Your data sources can include entities with transactional and activity data from multiple data sources. Identify these entities and select the activities you want to view on the customer's timeline. Choose the entity that includes your target activity or activities.
-
- > [!NOTE]
- > An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields. The **Add activity** control is disabled if no such entity is found.
+An entity must have at least one attribute of type **Date** to be included in a customer timeline. The **Add activity** control is disabled if no such entity is found.
 
 1. Go to **Data** > **Activities**.
 
-1. Select **Add activity** to start the guided experience for the activity setup process.
+1. Select **Add activity** to start the guided experience.
 
-1. In the **Activity data** step, set the values for the following fields:
+1. In the **Activity data** step, enter the following information:
 
    - **Activity name**: Select a name for your activity.
    - **Activity entity**: Select an entity that includes transactional or activity data.
@@ -44,7 +41,7 @@ Your data sources can include entities with transactional and activity data from
 
 1. Select **Next**.
 
-1. In the **Relationship** step, configure the details to connect your activity data to its corresponding customer record. This step visualizes the connection between entities.  
+1. In the **Relationship** step, select **Add relationship** to connect your activity data to its corresponding customer record. This step visualizes the connection between entities.  
 
    - **Foreign key**: Foreign field in your activity entity that will be used to establish a relationship with another entity.
    - **To entity name**: Corresponding source customer entity with which your activity entity will be in relationship. You can only relate to source customer entities that are used in the data unification process.
@@ -55,9 +52,11 @@ Your data sources can include entities with transactional and activity data from
    > [!TIP]
    > In B-to-B environments, you can select between account entities and other entities. If you select an account entity, the relationship path is automatically set. For other entities, you have to define the relationship path over one or more intermediate entities until you reach an account entity.
 
+1. Select **Apply** to create the relationship.
+
 1. Select **Next**.
 
-1. In the **Activity unification** step, choose the activity event and the start time of your activity. 
+1. In the **Activity unification** step, choose the activity event and the start time of your activity.
    - **Required fields**
       - **Event activity**: Field that is the event for this activity.
       - **Timestamp**: Field that represents the start time of your activity.
@@ -72,7 +71,7 @@ Your data sources can include entities with transactional and activity data from
 
       :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity entity.":::
 
-1. Select **Next** to move to the next step. You can select **Finish and review** to save the activity now with the activity type set to **Other**.
+1. Select **Next** to choose the activity type, or select **Finish and review** to save the activity with the activity type set to **Other**.
 
 1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, and *Subscription* activity types support semantics after agreeing to map the fields. If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
 
@@ -80,50 +79,37 @@ Your data sources can include entities with transactional and activity data from
 
 1. In the **Review** step, verify your selections. Go back to any of the previous steps and update the information if necessary.
 
-   :::image type="content" source="media/Activity_Wizard5.PNG" alt-text="Review the specified fields for an activity.":::
+1. Select **Save activity** to apply your changes and select **Done** to go back to **Data** > **Activities**. The created activity displays.
 
-1. Select **Save activity** to apply your changes and select **Done** to go back to **Data** > **Activities**. Here you see which activities are set to show in the timeline.
-
-1. On the **Activities** page, select **Run** to process the activity.
+1. After creating all your activities, select **Run** to process them.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Manage existing customer activities
 
-On **Data** > **Activities**, you can view all your saved activities, and manage them. Each activity is represented by a row that also includes details about the source, the entity, and the activity type.
+Go to **Data** > **Activities** to view your saved activities, their source entity, the activity type, and if they are included in the customer timeline. You can sort the list of activities by any column or use the search box to find the activity you want to manage.
 
-The following actions are available when you select an activity.
+Select an activity to view available actions.
 
-- **Edit**: Opens the activity setup on the review step. You can change any or all of the current configuration from this step. After changing the configuration, select **Save activity** and then select **Run** to process the changes.
-
-- **Rename**: Opens a dialog where you can enter a different name for the selected activity. Select **Save** to apply your changes.
-
-- **Delete**: Opens a dialog to confirm the deletion of the selected activity. You can also delete more than one activity at once by selecting the activities and then selecting the delete icon. Select **Delete** to confirm the deletion.
+- **Edit** the activity to change it's configuration. The configuration opens on the review step. After changing the configuration, select **Save activity** and then select **Run** to process the changes.
+- **Rename** the activity. Select **Save** to apply your changes.
+- **Delete** the activity. To delete more than one activity at once, select the activities and then **Delete**. Confirm the deletion.
 
 ## View activity timelines on customer profiles
 
-After you configured customer activities, select **Show in activity timeline** in the activity configuration to find all your customer's activities on their customer profile.
+1. If you selected **Show in activity timeline** in the activity configuration, go to **Customers** and select a customer profile to view the customer's activities in the **Activity timeline** section.
 
-To open the timeline for a customer, go to **Customers** and choose the customer profile that you want to view.
+   :::image type="content" source="media/Activity_Timeline1.PNG" alt-text="View configured activities in Customer Profiles.":::
 
-If a customer has participated in a configured activity, you'll find it in the **Activity timeline** section.
+1. To filter activities in the activity timeline:
 
-:::image type="content" source="media/Activity_Timeline1.PNG" alt-text="View configured activities in Customer Profiles.":::
+   - Select one or more of the activity icons to refine your results to include the selected type(s) only.
 
-There are several ways to filter activities in the activity timeline:
+     :::image type="content" source="media/Activity_Timeline2.PNG" alt-text="Filter activities by type using the icons.":::
 
-- You can select one or many of the activity icons to refine your results to include the selected type(s) only.
+   - Select **Filter** to open a filter panel to configure your timeline filters. Filter by *ActivityType* and/or *Date*. Select **Apply**.
 
-  :::image type="content" source="media/Activity_Timeline2.PNG" alt-text="Filter activities by type using the icons.":::
-
-- You can select **Filter** to open a filter panel to configure your timeline filters.
-
-   1. You can filter by *ActivityType* and *Date*
-   1. Select **Apply** to use the filters in the activity timeline.
-
-   :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="Use the filter panel to configure filter conditions.":::
-
-To remove filters, select the **x** next to each filter applied to the timeline or select **Clear filters**.
+     :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="Use the filter panel to configure filter conditions.":::
 
 > [!NOTE]
 > Activity filters are removed when you leave a customer profile. You have to apply them each time you open a customer profile.
