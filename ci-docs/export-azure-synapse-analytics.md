@@ -38,7 +38,7 @@ In Azure:
 
 ## Set up connection to Azure Synapse
 
-[!INCLUDE [export-permission-include](includes/export-permission.md)]
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Go to **Admin** > **Connections**.
 
