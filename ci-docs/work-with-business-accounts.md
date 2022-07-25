@@ -39,7 +39,7 @@ If your organization maintains environments for individual customers and busines
 - [Activities](activities.md): Support for accounts and related contacts to create activities and show them in a timeline.
 - [Relationships](relationships.md): The activity wizard helps creating relationships between the entities so the account view can show all activities from contacts. Contacts can drill up to see contact view and hierarchies can be used for account activity aggregations.
 - [Measures](measures.md): Supports measures created from the measure builder with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.
-- [Segments](segments.md): Supports segments that are created from scratch with the segment builder. New operators allow incorporating account hierarchy when building segments.
+- [Segments](segments.md): Supports segments that are created from scratch with the segment builder. Segments can be based on accounts or contacts.
 - [Data ingestion](data-sources.md): All features in this area are the same for business accounts and individual customers.
 - [Data unification](data-unification.md): All features in this area are the same for business accounts and individual customers.
 - [Enrichment](enrichment-hub.md): Some enrichment types are available only for individual customer scenarios while others are exclusively available for business accounts.
@@ -47,3 +47,4 @@ If your organization maintains environments for individual customers and busines
 - [Activation and export](export-destinations.md): Exports are available for business accounts and individual customers. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts.
 - [System settings](system.md) and [user management](permissions.md): All features in this area are the same for business accounts and individual customers.
 
+[!INCLUDE [footer-include](includes/footer-banner.md)]

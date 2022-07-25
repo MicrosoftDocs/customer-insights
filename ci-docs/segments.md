@@ -1,7 +1,7 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 05/20/2022
+ms.date: 07/25/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -20,7 +20,7 @@ searchScope:
 
 Segments let you group your customers based on demographic, transactional, or behavioral attributes. You can use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
 
-Customer profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
+Customer or contact profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
 In business accounts (B-to-B), segments can be based on audience type: accounts from the *Customer* entity or contacts from the *ContactProfile* entity. Choose the audience type when creating the segment.
 
@@ -46,7 +46,7 @@ Choose how to create a segment based on your target audience.
 
 Go to the **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
 
-In B-to-C environments, the **Segments** page displays the number of members. In B-to-B environments, the **Segments** page displays **Audience Type** which indicates whether the segment is based on accounts or contacts.
+In B-to-C environments, the **Segments** page also displays the number of members. In B-to-B environments, the **Segments** page also displays **Audience Type** which indicates whether the segment is based on accounts or contacts.
 
 Select a segment to view available actions.
 
@@ -81,7 +81,7 @@ The lower part contains a list of the segment members.
 > [!NOTE]
 > Fields that appear in this list are based on the attributes of your segment's entities.
 >
->The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, [export the segment](export-destinations.md).
+>The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **Show more** which opens the [**Entities**](entities.md) page or [export the segment](export-destinations.md).
 
 ## Refresh segments
 
