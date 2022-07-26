@@ -1,7 +1,7 @@
 ---
 title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
-ms.date: 07/25/2022
+ms.date: 07/27/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -94,7 +94,7 @@ The example above illustrates the segmentation capability. We've defined a segme
 1. By default, the output entity will automatically contain all attributes of customer profiles that match the defined filters. In B-to-B when using the *ContactProfile* entity, the Account ID is automatically included. If a segment is based on other entities than the *Customer* entity or to include more attributes from the *ContactProfile*, select **Project attributes** to add more attributes from these entities to the output entity.
 
    > [!NOTE]
-   > If you created a *ContactProfile* from **Semantic mappings** rather than data unification, details of one or more contacts in a segment of accounts from the *ContactProfile* entity must be included in the segment to allow that segment to be activated or exported to destinations that require contact information. For more information about the *ContactProfile* entity, see [Semantic mappings](semantic-mappings.md).
+   > If you created a *ContactProfile* from the [**Semantic mappings**](semantic-mappings.md) page rather than data unification, details of one or more contacts in a segment of accounts from the *ContactProfile* entity must be included in the segment to allow that segment to be activated or exported to destinations that require contact information. 
    > A sample output for a segment based on business accounts with projected attributes of contacts could look like this:
    >
    > |ID  |Account name  |Revenue  |Contact name  | Contact role|
@@ -106,7 +106,7 @@ The example above illustrates the segmentation capability. We've defined a segme
    For example: A segment is based on an entity that contains purchase data, which is related to the *Customer* entity. The segment looks for all customers from Spain that purchased goods in the current year. You can choose to append attributes like the price of goods, or the purchase date to all matching customer records in the output entity. This information might be useful to analyze seasonal correlations to the total spending.
 
    > [!NOTE]
-   > - **Project attributes** only works for entities that have a one-to-many relationship with the *Customer* or *ContactProfile* entity. For example, one customer can have multiple subscriptions.
+   > - **Project attributes** only work for entities that have a one-to-many relationship with the *Customer* or *ContactProfile* entity. For example, one customer can have multiple subscriptions.
    > - If the attribute you want to project is more than one hop away from the *Customer* or *ContactProfile* entity, as defined by the relationship, that attribute should be used in every rule of the segment query you are building.
    > - If the attribute you want to project is just one hop away from the *Customer* or *ContactProfile* entity, that attribute doesn't need to be present in every rule of the segment query you are building.
    > - **Projected attributes** are factored in when using set operators.
