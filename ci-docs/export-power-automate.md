@@ -1,7 +1,7 @@
 ---
 title: "Power Automate connector (preview) | Microsoft Docs"
 description: "Create flows in Microsoft Power Automate from Dynamics 365 Customer Insights."
-ms.date: 06/24/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -17,18 +17,18 @@ Trigger specific events to occur automatically when your data changes and manage
 
 ## Known limitations
 
-- You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint multiple times by using the $skip parameter. [Learn more about the $skip parameter](/connectors/customerinsights/#get-items-from-an-entity).
+- A maximum of 100 calls per 60 seconds. Use the [$skip parameter](/connectors/customerinsights/#get-items-from-an-entity) to call the API endpoint multiple times.
 
 ## Power Automate triggers
 
-Use triggers to create cloud flows and automate repetitive tasks, such as notifications or more advanced actions.
+Use triggers to create cloud flows and automate repetitive tasks, such as notifications or more advanced actions. Use triggers when:
 
-- Trigger when a data source refresh fails.
-- Trigger when a data source refresh succeeds.
-- Trigger when a threshold is crossed on a segment. The trigger is limited to crossing above the threshold.
-- Trigger when a threshold is crossed on a business measure. Only business measures without a dimension are supported. The trigger is limited to crossing above the threshold.
-- Trigger when a scheduled full refresh of (data sources, segments, measures, ...) is completed. This trigger does not work for manually started refreshes.
-- Trigger when a refresh of the unification process is completed.
+- A data source refresh fails.
+- A data source refresh succeeds.
+- A threshold is crossed on a segment. The trigger is limited to crossing above the threshold.
+- A threshold is crossed on a business measure. Only business measures without a dimension are supported. The trigger is limited to crossing above the threshold.
+- A full scheduled refresh is completed. This trigger doesn't work for manually started refreshes.
+- A refresh of the unification process is completed.
 
 [Configure your triggers in Power Automate.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 
@@ -38,7 +38,7 @@ The Power Automate connector provides other actions than the available triggers.
 
 ## Create a Power Automate flow
 
-1. Go to **Admin** > **Export destinations**.
+1. Go to **Admin** > **Connections**.
 
 1. On the **Power Automate** tile, select **Set up**.
 
@@ -49,7 +49,5 @@ The Power Automate connector provides other actions than the available triggers.
 Examples of how to use flows: 
 - Post a message to a Microsoft Teams channel if a data source refresh fails. 
 - Send an email to the data owners when a threshold on a segment is crossed.
-
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

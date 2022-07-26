@@ -75,7 +75,7 @@ We currently support the following country/region options: Canada (English) or U
 
 1. Review the overview and then select **Next**.
 
-1. Select the connection and confirm. Contact an administrator if one is not available.
+1. Select the connection and confirm. Contact an administrator if no connection is available.
 
 1. Select **Next**.
 
