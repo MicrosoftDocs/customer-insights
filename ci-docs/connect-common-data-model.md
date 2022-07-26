@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Common Data Model folder using an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 05/30/2022
+ms.date: 07/26/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -77,7 +77,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
    :::image type="content" source="media/ADLS_required.png" alt-text="Dialog box showing Required for Primary key":::
 
    > [!TIP]
-   > To edit the entities in a JSON editing interface, select **Show more** > **Edit schema file**. Make changes and select **Save**.
+   > To edit an entity in a JSON editing interface, select the entity and then **Edit schema file**. Make changes and select **Save**.
 
 1. For selected entities that require incremental ingestion, **Required** displays under **Incremental refresh**. For each of these entities, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
 
@@ -99,7 +99,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-Loading data can take time. After a successful refresh, the ingested data can be reviewed from the **Entities** page. For more information, see [Entities](entities.md).
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Entities**](entities.md) page.
 
 ### Create a new schema file
 
@@ -114,6 +114,8 @@ Loading data can take time. After a successful refresh, the ingested data can be
    - **Single .csv or .parquet files**: Browse to the .csv or .parquet file and select it.
 
    :::image type="content" source="media/ADLS_new_entity_location.png" alt-text="Dialog box to create a new entity with Data files location highlighted.":::
+
+1. Browse to the .csv or .parquet files and select them.
 
 1. Select **Save**.
 
@@ -149,7 +151,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-Loading data can take time. After a successful refresh, the ingested data can be reviewed from the **Entities** page. For more information, see [Entities](entities.md).
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Entities**](entities.md) page. For more information, see [Entities].
 
 
 ## Edit an Azure Data Lake Storage data source
@@ -185,7 +187,7 @@ You can update the *Connect to storage account using* option. For more informati
    - To change the incremental ingestion data, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
 
    > [!NOTE]
-   > Do not change the name of an ingested entity through the Azure data lake connector. Customer Insights validates all entity names with the model.json during system refresh. If an entity name is changed, an error occurs because Customer Insights cannot find the new entity name in the model.json.
+   > Always keep the entity name in Customer Insights the same as the entity name inside the model.json or manifest.json file. Customer Insights validates all entity names with the model.json or manifest.json during system refresh. If an entity name is changed, an error occurs because Customer Insights cannot find the new entity name in the model.json or manifest.json file.
 
 1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
 

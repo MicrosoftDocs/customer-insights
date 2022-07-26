@@ -1,7 +1,7 @@
 ---
 title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
-ms.date: 05/18/2022
+ms.date: 07/26/2022
 
 ms.subservice: audience-insights
 ms.topic: overview

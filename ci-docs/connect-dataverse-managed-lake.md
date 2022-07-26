@@ -1,7 +1,7 @@
 ---
 title: "Connect to data in a Microsoft Dataverse managed data lake"
 description: "Import data from a Microsoft Dataverse managed data lake."
-ms.date: 05/18/2022
+ms.date: 07/26/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -60,7 +60,9 @@ To connect to a different Dataverse data lake, [create a new data source](#conne
 
 1. Next to the data source you'd like to update, select **Edit**.
 
-1. Select additional entities from the available list of entities and select **Save**.
+1. Select additional entities from the available list of entities.
+
+1. Click **Save** to apply your changes and return to the **Data sources** page.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 07/13/2022
+ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -50,7 +50,7 @@ Adding data sources based on Power Query connectors generally follows the steps 
    - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform** and select **Use first row as headers**.
    - Ensure the data type is set appropriately. For example, for date fields, select a date type.
 
-1. To add additional entities to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 6-10 until you have added all entities for this data source.
+1. To add additional entities to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 5-10 until you have added all entities for this data source.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
@@ -93,6 +93,8 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 
 1. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
-1. Select **Save** in Power Query after completing your edits to save your changes.
+1. Select **Save** to apply your changes and return to the **Data sources** page.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
