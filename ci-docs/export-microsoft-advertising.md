@@ -60,7 +60,7 @@ Export Customer Insights segments to Microsoft Advertising to create Customer Ma
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Microsoft Advertising section. Contact an administrator if one is not available.
+1. In the **Connection for export** field, choose a connection from the Microsoft Advertising section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

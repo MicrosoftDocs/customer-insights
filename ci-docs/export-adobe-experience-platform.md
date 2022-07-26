@@ -13,7 +13,7 @@ manager: shellyha
 
 # Export segments to Adobe Experience Platform (preview)
 
-Export segments that target relative audiences to Adobe Experience Platform.
+Export segments that target relevant audiences to Adobe Experience Platform.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Process diagram of the steps outlined in this article.":::
 
@@ -74,7 +74,7 @@ We'll configure the export from Customer Insights to an Azure Blob Storage accou
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Azure Blob Storage section. Contact an administrator if one is not available.
+1. In the **Connection for export** field, choose a connection from the Azure Blob Storage section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

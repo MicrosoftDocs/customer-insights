@@ -59,7 +59,7 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the DotDigital section. Contact an administrator if one is not available.
+1. In the **Connection for export** field, choose a connection from the DotDigital section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

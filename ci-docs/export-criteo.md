@@ -55,7 +55,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Criteo section. Contact an administrator if one is not available.
+1. In the **Connection for export** field, choose a connection from the Criteo section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

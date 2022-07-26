@@ -13,7 +13,7 @@ manager: shellyha
 
 # Export Customer Insights segments to Adobe Campaign Standard (preview)
 
-Export segments that target relative audiences to Adobe Campaign Standard.
+Export segments that target relevant audiences to Adobe Campaign Standard.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="Process diagram of the steps outlined in this article.":::
 
@@ -71,7 +71,7 @@ The offer email that you want to send out will contain the first name, last name
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Adobe Campaign section. Contact an administrator if one is not available.
+1. In the **Connection for export** field, choose a connection from the Adobe Campaign section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

@@ -57,7 +57,7 @@ Contact records must be present in Dynamics 365 Marketing before you can export 
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Dynamics 365 Marketing section. Contact an administrator if one is not available.
+1. In the **Connection for export** field, choose a connection from the Dynamics 365 Marketing section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

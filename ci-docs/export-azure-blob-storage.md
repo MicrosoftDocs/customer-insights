@@ -1,7 +1,7 @@
 ---
 title: "Export data to an Azure Blob Storage (preview)"
 description: "Learn how to configure the connection and export to Blob storage."
-ms.date: 06/09/2022
+ms.date: 07/25/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -53,7 +53,7 @@ To configure this export, you must have [permission](export-destinations.md#set-
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Azure Blob Storage section. Contact an administrator if one is not available.
+1. In the **Connection for export** field, choose a connection from the Azure Blob Storage section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 
