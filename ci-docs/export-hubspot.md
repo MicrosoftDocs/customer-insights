@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to HubSpot"
 description: "Learn how to configure the connection and export to HubSpot."
-ms.date: 21/06/2022
+ms.date: 07/26/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -17,17 +17,18 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 ## Prerequisites for a connection
 
--	You have an [HubSpot account](https://www.hubspot.com/) and corresponding administrator credentials.
--	You have generated an API key in Hubspot. 
--	You have [configured segments](segments.md) in Customer Insights.
+- A [HubSpot account](https://www.hubspot.com/) and corresponding administrator credentials.
+- An API key in Hubspot.
+- [Configured segments](segments.md) in Customer Insights.
 
 ## Known limitations
 
-- Exporting to MoEngage is limited to segments.
-- Exporting up to 100'000 customer profiles to HubSpot can take up to 15 minutes to complete. 
-- The number of customer profiles that you can export to HubSpot is dependent and limited on your contract with HubSpot.
+- Up to 100'000 customer profiles per export to HubSpot, which can take up to 15 minutes to complete. The number of customer profiles that you can export to HubSpot is dependent and limited on your contract with HubSpot.
+- Segments only.
 
 ## Set up connection to Hubspot
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Go to **Admin** > **Connections**.
 
@@ -37,9 +38,9 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your HubSpot credentials when prompted. 
+1. Enter your HubSpot credentials when prompted.
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Connect** to initialize the connection to HubSpot.
 
@@ -49,7 +50,7 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 ## Configure an export
 
-You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Go to **Data** > **Exports**.
 
@@ -59,19 +60,10 @@ You can configure this export if you have access to a connection of this type. F
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. Repeat the same steps for other optional fields.
 
-1. Select the segments you want to export. 
+1. Select the segments you want to export.
 
-3. Select **Save**.
+1. Select **Save**.
 
-Saving an export doesn't run the export immediately.
-
-The export runs with every [scheduled refresh](system.md#schedule-tab). 
-You can also [export data on demand](export-destinations.md#run-exports-on-demand). 
-
-## Data privacy and compliance
-
-When you enable Dynamics 365 Customer Insights to transmit data to Autopilot, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Autopilot meet any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
-
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
