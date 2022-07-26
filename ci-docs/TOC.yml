@@ -89,7 +89,7 @@
 
 - name: Data enrichment
   items:
-    - name: Enrich customer profiles
+    - name: Data enrichment overview
       href: enrichment-hub.md
     - name: Accounts from Office 365 data
       href: enrichment-office.md
@@ -114,23 +114,27 @@
     - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
-- name: Unified profiles
+- name: Customer profiles and activities
   items:
-    - name: Review unified customer profiles
+    - name: View customer profiles
       href: customer-profiles.md
-    - name: Filter unified customer profiles
+    - name: Manage the search & filter index
       href: search-filter-index.md
     - name: Define customer activities
       href: activities.md
-    - name: Consent management for Customer Insights
+    - name: Use consent management
       href: consent-management.md
+    - name: Use web data for personalization
+      href: unknown-to-known.md
 
 - name: Segments
   items:
     - name: Segments overview
       href: segments.md
-    - name: Create segments
+    - name: Create with segment builder
       href: segment-builder.md
+    - name: Create with quick segments
+      href: segment-quick.md
     - name: Suggested segments based on measures
       href: suggested-segments.md
     - name: Suggested segments based on activity
@@ -144,9 +148,9 @@
   items: 
     - name: Measures overview
       href: measures.md
-    - name: Create a new measure
+    - name: Create with measure builder
       href: measure-builder.md
-    - name: Use a measure template
+    - name: Create with templates
       href: measure-templates.md
           
 - name: Predictions
@@ -197,6 +201,10 @@
           href: export-destinations.md
         - name: Active Campaign
           href: export-active-campaign.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
         - name: AdRoll
           href: export-adroll.md
         - name: Autopilot
@@ -207,10 +215,6 @@
           href: export-azure-data-lake-storage-gen2.md
         - name: Azure Synapse Analytics
           href: export-azure-synapse-analytics.md
-        - name: Adobe Campaign Standard
-          href: export-adobe-campaign-standard.md
-        - name: Adobe Experience Platform
-          href: export-adobe-experience-platform.md
         - name: Braze
           href: export-braze.md
         - name: Campaign Monitor
@@ -229,6 +233,8 @@
           href: export-facebook.md
         - name: Google Ads
           href: export-google-ads.md
+        - name: InMobi
+          href: export-inmobi.md
         - name: Iterable
           href: export-iterable.md
         - name: Klaviyo

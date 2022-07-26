@@ -1,5 +1,5 @@
 ---
-title: "Enrichment with the third-party enrichment Experian"
+title: "Enrich customer profiles with demographics from Experian (preview)"
 description: "General information about the Experian third-party enrichment."
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -55,7 +55,7 @@ When you enable Dynamics 365 Customer Insights to transmit data to Experian, you
 
 1. Review the overview and then select **Next**.
 
-1. Select the connection. Contact an administrator if one is not available.
+1. Select the connection. Contact an administrator if no connection is available.
 
 1. Select **Next**.
 
@@ -75,7 +75,7 @@ When you enable Dynamics 365 Customer Insights to transmit data to Experian, you
 
 1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
-## Enrichment results
+## View enrichment results
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

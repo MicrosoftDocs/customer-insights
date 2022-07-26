@@ -1,5 +1,5 @@
 ---
-title: "System configuration in Customer Insights"
+title: "System configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights."
 ms.date: 04/21/2022
 

@@ -1,5 +1,5 @@
 ---
-title: "Real-time data ingestion (Preview)"
+title: "Real-time data ingestion (preview)"
 description: "General information about real-time capabilities in Customer Insights."
 ms.date: 10/27/2020
 ms.reviewer: mhart
@@ -24,7 +24,7 @@ The real-time functionality provides data immediately for consumption, until the
 
 Real-time updates have an expiration time after which they no longer override the value from the data source:
 
-- Profile updates will be kept for 4 hours
+- Profile updates will be kept for four hours
 - Activities will be kept for 30 days
 
 These values are API call parameters that you can change. They aim to ensure that your source data remains your source of truth. If you want real-time updates to be included for longer, you need to add them to a data source so they get pulled during the next scheduled refresh.

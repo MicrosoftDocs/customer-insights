@@ -1,5 +1,5 @@
 ---
-title: Enrichment with SFTP custom import
+title: Enrich customer profiles with SFTP custom import (preview)
 description: General information about the SFTP custom import enrichment.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -11,7 +11,7 @@ ms.author: jodahl
 manager: shellyha
 ---
 
-# Enrich customer profiles with custom data (preview)
+# Enrich customer profiles with SFTP custom import (preview)
 
 Secure File Transfer Protocol (SFTP) custom import enables you to import data that doesn't have to go through the process of data unification. It's a flexible, secure, and easy way to bring in your data. SFTP custom import can be used in combination with [SFTP export](export-sftp.md) that lets you export the customer profile data that is needed for enrichment. The data can then be processed and enriched, and SFTP custom import can be used to bring the enriched data back to Dynamics 365 Customer Insights.
 
@@ -100,7 +100,7 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Review the overview and then select **Next**.
 
-1. Select the connection. Contact an administrator if one is not available.
+1. Select the connection. Contact an administrator if no connection is available.
 
 1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
@@ -116,7 +116,7 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
-## Enrichment results
+## View enrichment results
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

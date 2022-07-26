@@ -45,13 +45,13 @@ Example table of a simple consent database with multiple consent options:
 
 ## Import and unify consent data
 
-You can import consent data the same way that you ingest other data sources to Customer Insights. For more information about supported data sources and how to import them, see [Data sources overview](data-sources.md).
+Import consent data the same way that you ingest other data sources to Customer Insights. For more information about supported data sources and how to import them, see [Data sources overview](data-sources.md).
 
 For more information about unifying your data sources, see [Data unification overview](data-unification.md).
 
 ## Use consent data
 
-Once your consent data is part of your unified customer profiles, you can use it in Customer Insights. For example, create a segment with a rule to ensure you honor your customers’ privacy and data protection preferences. Rules supporting consent preferences are used to exclude users from a segment based on profile attributes. Adding a rule to a segment that excludes customer profiles that didn't provide consent to contact.
+Once your consent data is part of your unified customer profiles, you can use it in Customer Insights. For example, create a segment with a rule to ensure you honor your customers’ privacy and data protection preferences. Rules supporting consent preferences are used to exclude users from a segment based on profile attributes. Add a rule to a segment that excludes customer profiles that didn't provide consent to contact.
 
 Referring to the sample table above, a segment could contain this rule: `Consent option=Newsletter & Consent value=True`. This configuration results in a segment that honors contact preferences to send a newsletter.
 
@@ -66,3 +66,5 @@ It's important to keep the consent status for your customers updated. The schedu
 In other words, make sure the source data that gets imported to Customer Insights always has the latest information.
 
 For more information, see [Refresh segments manually](segments.md#refresh-segments) or [configure a scheduled refresh](system.md#schedule-tab).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
