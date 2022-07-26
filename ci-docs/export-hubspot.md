@@ -13,7 +13,7 @@ manager: shellyha
 
 # Export segments to HubSpot (preview)
 
-Export segments of unified customer profiles to MoEngage and use them for email marketing in HubSpot. 
+Export segments of unified customer profiles to HubSpot and use them for email marketing.
 
 ## Prerequisites for a connection
 
