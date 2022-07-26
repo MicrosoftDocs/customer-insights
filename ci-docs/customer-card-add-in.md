@@ -24,21 +24,25 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 
 ## Prerequisites
 
-- The add-in only works with Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
-- For your Dynamics 365 data to map to the Customer Insights customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), you need to make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source in the map step of the data unification process](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
+- Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
+- For your Dynamics 365 data to map to the Customer Insights customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source during the data unification process](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 - All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in Customer Insights to see the data.
-- [Configured search and filter capabilities](search-filter-index.md) in Customer Insights are required for lookup of data to work.
+- [Configured search and filter capabilities](search-filter-index.md) in Customer Insights.
 - Each add-in control relies on specific data in Customer Insights. Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control isn't available due to the selected environment type. Learn more about [environment use cases](work-with-business-accounts.md).
-  - **Measure control**: Requires [configured measures](measures.md) of type customer attributes.
-  - **Intelligence control**: Requires data generated using [predictions or custom models](predictions-overview.md).
-  - **Customer details control**: All fields from the profile are available in the unified customer profile.
-  - **Enrichment control**: Requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft, [Interests](enrichment-microsoft.md) provided by Microsoft, and [Office engagement data](enrichment-office.md) provided by Microsoft.
-  - **Contacts control**: Requires definition of semantic entity of type contacts.
-  - **Timeline control**: Requires [configured activities](activities.md).
+  - **Measure control** requires [configured customer attribute measures](measures.md).
+  - **Intelligence control** requires data generated using [predictions or custom models](predictions-overview.md).
+  - **Customer details control** shows all fields from the profile available in the unified customer profile.
+  - **Enrichment control** requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft, [Interests](enrichment-microsoft.md) provided by Microsoft, and [Office engagement data](enrichment-office.md) provided by Microsoft.
+  - **Contacts control** requires a contact semantic entity type.
+  - **Timeline control** requires [configured activities](activities.md).
 
 ## Install the Customer Card Add-in
 
-The Customer Card Add-in is a solution for customer engagement apps in Dynamics 365. To install the solution, go to AppSource and search for **Dynamics Customer Card**. Select the [Customer Card Add-in on AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) and select **Get It Now**.
+The Customer Card Add-in is a solution for customer engagement apps in Dynamics 365. To install the solution:
+
+1. Go to AppSource and search for **Dynamics Customer Card**.
+
+1. Select the [Customer Card Add-in on AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) and select **Get It Now**.
 
 You may need to sign in with your admin credentials for the Dynamics 365 app to install the solution. It can take some time for the solution to be installed to your environment.
 

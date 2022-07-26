@@ -1,0 +1,1 @@
+To configure this export, you must have [permission](../export-destinations.md#set-up-a-new-export) for this connection type.
