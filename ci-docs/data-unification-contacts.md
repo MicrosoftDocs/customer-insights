@@ -2,7 +2,7 @@
 title: "Create a unified contact profile"
 description: "Go through the data unification process to create a single master dataset of contacts."
 recommendations: false
-ms.date: 06/02/2022
+ms.date: 07/27/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights

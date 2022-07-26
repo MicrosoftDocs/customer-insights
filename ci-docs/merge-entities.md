@@ -2,7 +2,7 @@
 title: "Unify customer fields for data unification"
 description: "Merge entities to create unified customer profiles."
 recommendations: false
-ms.date: 05/04/2022
+ms.date: 07/27/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -54,6 +54,9 @@ In this step of the unification process, choose and exclude attributes to merge 
 
 1. Specify how to combine or merge the fields from one of three options:
     - **Importance**: Identifies the winner value based on importance rank specified for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
+
+      > [!NOTE]
+      > Customer Insights uses the first non-null value. For example, given entities A, B, and C ranked in that order, if A.Name and B.Name are null, then the value from C.Name is used.
 
       :::image type="content" source="media/importance-merge-option.png" alt-text="Importance option in the merge fields dialog.":::
 
