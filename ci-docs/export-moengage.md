@@ -23,11 +23,12 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 ## Known limitations
 
-- Exporting to MoEngage is limited to segments.
-- Exporting up to 100'000 customer profiles to MoEngage can take up to 15 minutes. 
-- The number of customer profiles that you can export to MoEngage is dependent and limited on your contract with MoEngage.
+- Up to 100'000 customer profiles per export to MoEngage, which can take up to 15 minutes. The number of customer profiles that you can export to MoEngage depends on your contract with MoEngage.
+- Segments only.
 
 ## Set up connection to MoEngage
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Go to **Admin** > **Connections**.
 
@@ -39,7 +40,7 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 1. Enter your [MoEngage Data API ID and API key](https://developers.moengage.com/hc/articles/4404674776724-Overview#:~:text=Navigate%20to%20Settings%20%3E%20APIs%20%3E%20DATA,ID%20Password%20%2D%20DATA%20API%20KEY).
 
-1. Select **I agree** to confirm the **Data privacy and compliance**.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Connect** to initialize the connection to MoEngage.
 
@@ -49,7 +50,7 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 ## Configure an export
 
-You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Go to **Data** > **Exports**.
 
@@ -63,14 +64,6 @@ You can configure this export if you have access to a connection of this type. F
 
 1. Select **Save**.
 
-Saving an export doesn't run the export immediately.
-
-The export runs with every [scheduled refresh](system.md#schedule-tab).
-You can also [export data on demand](export-destinations.md#run-exports-on-demand).
-
-## Data privacy and compliance
-
-When you enable Dynamics 365 Customer Insights to transmit data to MoEngage, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you're responsible for ensuring that MoEngage meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights Administrator can remove this export destination at any time to discontinue use of this functionality.
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
