@@ -50,7 +50,7 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Review the overview and then select **Next**.
 
-1. Select the connection. Contact an administrator if one is not available.
+1. Select the connection. Contact an administrator if no connection is available.
 
 1. Select **Next**.
 

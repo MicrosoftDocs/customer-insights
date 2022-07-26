@@ -100,7 +100,7 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Review the overview and then select **Next**.
 
-1. Select the connection. Contact an administrator if one is not available.
+1. Select the connection. Contact an administrator if no connection is available.
 
 1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
