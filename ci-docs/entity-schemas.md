@@ -1,5 +1,5 @@
 ---
-title: "Customer Insights entity schemas in Common Data Model"
+title: "Entity schemas in Common Data Model"
 description: "Work with entities in Common Data Model."
 ms.date: 08/13/2021
 ms.reviewer: mhart
@@ -12,8 +12,6 @@ manager: shellyha
 ---
 
 # Entity schemas in Common Data Model
-
-
 
 [Common Data Model](/common-data-model/) is a declarative specification, and a definition of standard entities that represent commonly used concepts and activities across business and productivity applications. This model is being extended to observational and analytical data as well. Common Data Model provides well-defined, modular, and extensible business entities—such as Account, Business Unit, Case, Contact, Lead, Opportunity, and Product—as well as interactions with vendors, workers, and customers—such as activities and service level agreements. Anyone can build on and extend Common Data Model definitions to capture additional business-specific ideas.
 
@@ -37,9 +35,8 @@ For more information, see the documentation about the [Customer Insights entity 
 
 ## View entities using the Common Data Model Entity Navigator
 
-You can view entities in the [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). Select an entity from the Insights Application section to get the list of Customer Insights entities and their definitions.
-> [!div class="mx-imgBorder"]
-> ![CDM Entity Navigator showing CustomerActivity entity.](media/CDM-entity-navigator.png "CDM Entity Navigator showing CustomerActivity entity")
+View entities in the [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). Select an entity from the Insights Application section to get the list of Customer Insights entities and their definitions.
 
+:::image type="content" source="media/CDM-entity-navigator.png" alt-text="CDM Entity Navigator showing CustomerActivity entity.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

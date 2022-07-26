@@ -1,5 +1,5 @@
 ---
-title: "Find similar customers with AI (contains video)"
+title: "Find similar customers with AI (preview) (contains video)"
 description: "Find similar customer segments with artificial intelligence."
 ms.date: 03/25/2022
 
@@ -15,62 +15,52 @@ searchScope:
   - customerInsights
 ---
 
-# Similar Customers (preview)
+# Find similar customers with AI (preview)
 
-This feature lets you find similar customers in your customer base using artificial intelligence. You need to have at least one segment created to use this feature. Expanding the criteria of an existing segment help find customers that are similar to that segment.
+Find similar customers in your customer base using artificial intelligence. You need at least one segment created to use this feature. Expanding the criteria of an existing segment helps find customers that are similar to that segment.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOFou]
 
 > [!NOTE]
-> *Find similar customers* uses automated means to evaluate data and make predictions based on that data, and therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation (“GDPR”). Customer’s use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including predictions, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
+> *Find similar customers* uses automated means to evaluate data and make predictions based on that data. Therefore it has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation (“GDPR”). Customer’s use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including predictions, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
-## Finding similar customers
+## Find similar customers
 
 1. Go to **Segments** and select the segment you want to base your new segment on. That's your *source segment*.
 
-1. In the action bar, select **Find similar customers**.
+1. Select **Find similar customers**.
 
 1. Review the suggested name for your new segment and change it if necessary.
 
 1. Optionally, add [tags](work-with-tags-columns.md#manage-tags) to the new segment.
 
-1. Review the fields that define your new segment. These fields define the basis on which the system will try to find similar customers to your source segment. The system will select recommended fields by default.
+1. Review the fields that define your new segment. These fields define the basis on which the system will try to find similar customers to your source segment. The system selects recommended fields by default. If needed, add more fields.
   Fields that can significantly reduce the model performance are automatically excluded:
   
    - Fields with the following data types: StringType, BooleanType, CharType, LongType, IntType, DoubleType, FloatType, ShortType
    - Fields with a cardinality (the number of elements in a field) of less than 2 or more than 30
 
-1. Choose if you want to include **All customers** or only customers in a **Specific existing segment** in your new segment.
+1. Choose if you want to include **All customers** except the source segment or only customers in a **different segment** in your new segment.
 
 1. By default, the system suggests including only 20% of the target audience size in your output. Edit this threshold as needed. Increasing the threshold will reduce the precision.
 
 1. Include customers in your source segment by selecting the **Include members from source segment in addition to customers with similar attributes** checkbox.
 
-1. Select **Run** at the bottom of the page to start a binary classification task (a method of machine learning) which analyzes the dataset.
+1. Select **Run** at the bottom of the page to start a [binary classification task](#about-similarity-scores) (a method of machine learning) which analyzes the dataset.
 
 ## View the similar segment
 
-After processing the similar segment, you'll find the new segment listed on the **Segments** page.
+After processing the similar segment, you'll find the new segment listed on the **Segments** page with the type **Expansion**.
 
-> [!div class="mx-imgBorder"]
-> ![Similar customers segment.](media/expanded-segment.png "Similar customers segment")
+Select **View** to see result distribution across [similarity scores](#about-similarity-scores) and similarity score values under **Segment members preview**.
 
-Select **View** in the action bar to open the segment detail. This view contains information about the result distribution across [similarity scores](#about-similarity-scores). You'll also find the similarity score values in the **Segment members preview**.
+:::image type="content" source="media/expanded-segment.png" alt-text="Similar customers segment.":::
 
-## Use the output of a similar segment
+## Manage a similar segment
 
-You can [work with the output of a similar segment](segments.md) as you do with other segments. For example, export the segment or build a measure.
+[Work with and manage a similar segment](segments.md#manage-existing-segments) as you do with other segments. For example, export the segment or build a measure.
 
-## Refresh and edit a similar segment
-
-To refresh a similar segment, select it on the **Segments** page and select **Refresh** in the action bar.
-
-Editing a similar segment will reprocess your data. The previously created segment gets updated with refreshed data.
-To edit a similar segment, select it on the **Segments** page and select **Edit** in the action bar. Apply your changes and select **Run** to start the processing.
-
-## Delete a similar segment
-
-Select the segment on the **Segments** page and select **Delete** in the action bar. Then, confirm your deletion.
+Edit, refresh, rename, download, and delete a similar segment. Editing a similar segment reprocesses your data. The previously created segment gets updated with refreshed data.
 
 ## About similarity scores
 

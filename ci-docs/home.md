@@ -1,5 +1,5 @@
 ---
-title: "Home page in Customer Insights"
+title: "Explore Customer Insights"
 description: "Start exploring the app on the Home page."
 ms.date: 05/11/2022
 ms.reviewer: mhart

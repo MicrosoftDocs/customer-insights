@@ -1,7 +1,7 @@
 ---
-title: "Export Customer Insights data to an Azure Blob Storage"
+title: "Export data to an Azure Blob Storage (preview)"
 description: "Learn how to configure the connection and export to Blob storage."
-ms.date: 06/09/2022
+ms.date: 07/25/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -11,63 +11,72 @@ ms.author: sthe
 manager: shellyha
 ---
 
-# Export segment list and other data to Azure Blob Storage (preview)
+# Export data to an Azure Blob Storage (preview)
 
 Store your Customer Insights data in a Blob storage or use it to transfer your data to other applications.
 
+## Prerequisites
+
+- An [Azure Blob Storage account](/azure/storage/blobs/create-data-lake-storage-account) name and account key. To find the name and key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
+- An [Azure Blob Storage container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+
 ## Known limitations
 
-1. For Azure Blob Storage you can choose between [Standard performance and Premium performance tier](/azure/storage/blobs/storage-blob-performance-tiers). If you choose the Premium performance tier, select the [premium block blobs as account type](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
+- For Azure Blob Storage, choose between [Standard performance and Premium performance tier](/azure/storage/blobs/storage-blob-performance-tiers). If you choose the Premium performance tier, select the [premium block blobs as account type](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
 
-## Set up the connection to Blob Storage
+## Set up connection to Blob Storage
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose **Azure Blob Storage** to configure the connection.
+1. Select **Add connection** and choose **Azure Blob Storage**.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. If you take no action, the default will be Administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter **Account name**, **Account key**, and **Container** for your Blob Storage account.
-    - To learn more about how to find the Blob Storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
-    - To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-1. Select **Save** to complete the connection. 
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
+
+1. Select **Save** to complete the connection.
 
 ## Configure an export
 
-You can configure this export if you have access to a connection of this type. For more information, see [Permissions needed to configure an export](export-destinations.md#set-up-a-new-export).
+To configure this export, you must have [permission](export-destinations.md#set-up-a-new-export) for this connection type.
 
 > [!IMPORTANT]
-> If you turned on the soft delete setting for the Azure Blob Storage account, exports will fail. Turn off soft delete to export data to blobs. For more information, see [Enable blob soft delete](/azure/storage/blobs/soft-delete-blob-enable)
+> If you turned on the [soft delete setting](/azure/storage/blobs/soft-delete-blob-enable) for the Azure Blob Storage account, exports will fail. Turn off soft delete to export data to blobs.
 
 1. Go to **Data** > **Exports**.
 
-1. To create a new export, select **Add destination**.
+1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Azure Blob Storage section. If you don't see this section name, then no connections of this type are available to you.
+1. In the **Connection for export** field, choose a connection from the Azure Blob Storage section. Contact an administrator if no connection is available.
+
+1. Enter a name for the export.
+
+1. Enter the folder name for the Blob storage.
 
 1. Select the box next to each of the entities you want to export to this destination.
 
 1. Select **Save**.
 
-Saving an export doesn't run the export immediately.
-
-The export runs with every [scheduled refresh](system.md#schedule-tab).
-
-You can also [export data on demand](export-destinations.md#run-exports-on-demand).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 Exported data is stored in the Blob Storage container you configured. The following folder paths are automatically created in your container:
 
 - For source entities and entities generated by the system:  
-  `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
-  - Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
+  *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*  
+
+  Example: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv
   
   > [!TIP]
   > Export of entities that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
 
-- The model.json for the exported entities will be at the %ExportDestinationName% level.  
-  - Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
+- The model.json for the exported entities resides at the *%ExportDestinationName%* level.  
+  
+  Example: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

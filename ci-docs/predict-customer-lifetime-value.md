@@ -1,9 +1,8 @@
 ---
 title: Customer lifetime value (CLV) prediction
 description: "Predict revenue potential for active customers in the future."
-ms.date: 02/05/2021
+ms.date: 07/21/2022
 ms.reviewer: mhart
-
 ms.subservice: audience-insights
 ms.topic: how-to
 author: m-hartmann
@@ -18,12 +17,13 @@ searchScope:
 
 # Customer lifetime value (CLV) prediction
 
-Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This feature can help you achieve various goals: 
+Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This feature can help you achieve various goals:
+
 - Identify high-value customers and process this insight
 - Create strategical customer segments based on their potential value to run personalized campaigns with targeted sales, marketing, and support efforts
 - Guide product development by focusing on features tht increase customer value
 - Optimize sales or marketing strategy and allocate budget more accurately for customer outreach
-- Recognize and reward high-value customers through loyalty or rewards programs 
+- Recognize and reward high-value customers through loyalty or rewards programs
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ Before getting started, reflect what CLV means for your business. Currently, we 
 
 Since configuring and running a CLV model doesn't take much time, consider creating several models with varying input preferences and compare model results to see which model scenario best fits your business needs.
 
-###  Data requirements
+### Data requirements
 
 The following data is required, and where marked optional, recommended for increased model performance. The more data the model can process, the more accurate the prediction will be. Therefore, we encourage you to ingest more customer activity data, if available.
 
@@ -48,11 +48,12 @@ The following data is required, and where marked optional, recommended for incre
     - Web activities: website visit history, email history
     - Loyalty activities: loyalty reward points accrual and redemption history
     - Customer service log, service call, complaint, or return history
+    - Customer profile information
 - Data about customer activities (optional):
     - Activity identifiers to distinguish activities of the same type
     - Customer identifiers to map activities to your customers
     - Activity information containing the name and date of the activity
-    - The semantic data schema for activities includes: 
+    - The semantic data schema for activities includes:
         - **Primary key**: A unique identifier for an activity
         - **Timestamp**: The date and time of the event identified by the primary key
         - **Event (activity name)**:  The name of event you want to use
@@ -62,7 +63,7 @@ The following data is required, and where marked optional, recommended for incre
     - Sufficient historical data: At least one year of transactional data. Preferably two to three years of transactional data to predict CLV for one year.
     - Multiple purchases per customer: Ideally, at least two to three transactions per customer ID, preferably across multiple dates.
     - Number of customers: At least 100 unique customers, preferably more than 10,000 customers. The model will fail with fewer than 100 customers and insufficient historical data
-    - Data completeness: Less than 20% missing values in required fields in the input data   
+    - Data completeness: Less than 20% missing values in required fields in the input data
 
 > [!NOTE]
 > - The model requires the transaction history of your customers. Only one transaction history entity can be configured currently. If there are multiple purchase/transaction entities, you can union them in Power Query before data ingestion.
@@ -118,11 +119,11 @@ The following data is required, and where marked optional, recommended for incre
 
 1. Select **Next**.
 
-### Add optional data
+### Add optional activity data
 
-Data reflecting key customer interactions (like web, customer service, and event logs) adds context to transaction records. More patterns found in your customer activity data can improve the accuracy of the predictions. 
+Data reflecting key customer interactions (like web, customer service, and event logs) adds context to transaction records. More patterns found in your customer activity data can improve the accuracy of the predictions.
 
-1. In the **Additional data (optional)** step, select **Add data**. Choose the customer activity entity that provides the customer activity information as described in the [prerequisites](#prerequisites).
+1. In the **Additional data (optional)** step, select **Add data** under **Boost model insights with additional activity data**. Choose the customer activity entity that provides the customer activity information as described in the [prerequisites](#prerequisites).
 
 1. Map the semantic fields to attributes within your customer activity entity and select **Next**.
 
@@ -131,15 +132,34 @@ Data reflecting key customer interactions (like web, customer service, and event
 1. Select an activity type that matches the type of customer activity you're adding. Choose from existing activity types or add a new activity type.
 
 1. Configure the relationship from your customer activity entity to the *Customer* entity.
-    
+
     1. Select the field that identifies the customer in the customer activity table. It can be directly related to the primary customer ID of your *Customer* entity.
     1. Select the *Customer* entity that matches your primary *Customer* entity.
     1. Enter a name that describes the relationship.
 
    :::image type="content" source="media/clv-additional-data.png" alt-text="Image of the step in the configuration flow to add additional data and configure the activity with filled in examples.":::
 
-1. Select **Save**.    
+1. Select **Save**.
     Add more data if there are other customer activities you want to include.
+
+1. Add optional customer data or select **Next**.
+
+### Add optional customer data
+
+Select from 18 commonly used customer profile attributes to include as an input to the model. These attributes can lead to more personalized, relevant, and actionable model results for your business use cases.
+
+For example: Contoso Coffee wants to predict customer lifetime value to target high value customers with a personalized offer related to the launch of their new espresso machine. Contoso uses the CLV model and adds all 18 customer profile attributes to see which factors influence their highest value customers. They find customer location is the most influential factor for these customers.
+With this information, they organize a local event for the launch of the espresso machine and partner with local vendors for personalized offers and a special experience at the event. Without this information, Contoso might have only sent generic marketing emails and missed the opportunity to personalize for this local segment of their high value customers.
+
+1. In the **Additional data (optional)** step, select **Add data** under **Boost model insights even further with additional customer data**.
+
+1. For **Entity**, choose **Customer : CustomerInsights** to select the unified customer profile table that maps to customer attribute data. For **Customer ID**, choose **System.Customer.CustomerId**.
+
+1. Map more fields if the data is available in your unified customer profiles.
+
+   :::image type="content" source="media/clv-optional-customer-profile-mapping.png" alt-text="Example of mapped fields for customer profile data.":::
+
+1. Select **Save** after mapping the attributes that the model should use to help predict customer lifetime value.
 
 1. Select **Next**.
 

@@ -1,5 +1,5 @@
 ---
-title: "Address enhancement enrichment (contains video)"
+title: "Enrich customer profiles with enhanced addresses (contains video)"
 description: "Enrich and normalize address information of customer profiles with Microsoft's models."
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -17,7 +17,7 @@ searchScope:
   - customerInsights
 ---
 
-# Enrichment of customer profiles with enhanced addresses
+# Enrich customer profiles with enhanced addresses
 
 Addresses in your data can be unstructured, incomplete, or incorrect. Use Microsoft's models to normalize and enrich your addresses into the [Common Data Model format](/common-data-model/schema/core/applicationcommon/address) for better accuracy and insights.
 
@@ -97,7 +97,7 @@ We currently support enriching addresses in these countries or regions:
 
 1. Select **Save enrichment** after reviewing your choices.
 
-## Enrichment results
+## View enrichment results
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

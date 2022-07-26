@@ -1,5 +1,5 @@
 ---
-title: Customer lifetime value prediction sample guide
+title: Customer lifetime value (CLV) prediction sample guide
 description: Use this sample guide to try out the customer lifetime value prediction model.
 ms.date: 03/31/2022
 ms.reviewer: v-wendysmith
