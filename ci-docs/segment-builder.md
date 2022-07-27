@@ -18,7 +18,7 @@ searchScope:
 
 # Create complex segments with segment builder
 
-Define complex filters around the unified customer and its related entities. Each segment, after processing, creates a set of customer records that you can export and take action on.
+Define complex filters around the unified customer or unified contact and its related entities. Each segment, after processing, creates a set of customer or contact records that you can export and take action on.
 
 > [!TIP]
 > Segments based on **individual customers** automatically include available contact information for segment members. In **business accounts**, if you [unified](data-unification.md) both accounts and contacts, choose whether the segment is based on accounts or business contacts.
