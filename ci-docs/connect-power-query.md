@@ -37,7 +37,7 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 1. Enter the required details in the **Connection settings** for the selected connector and select **Next** to see a preview of the data.
 
-1. Select **Transform data**. In this step, you'll add entities to your data source. Entities are datasets. If you have a database that includes multiple datasets, each dataset is its own entity.
+1. Select **Transform data**.
 
 1. The **Power Query - Edit queries** dialog lets you review and refine the data. The entities that the systems identified in your selected data source appear in the left pane.
 
@@ -50,7 +50,7 @@ Adding data sources based on Power Query connectors generally follows the steps 
    - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform** and select **Use first row as headers**.
    - Ensure the data type is set appropriately. For example, for date fields, select a date type.
 
-1. To add additional entities to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 5-10 until you have added all entities for this data source.
+1. To add additional entities to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 5-10 until you have added all entities for this data source. If you have a database that includes multiple datasets, each dataset is its own entity.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 

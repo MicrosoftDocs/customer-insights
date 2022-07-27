@@ -67,6 +67,7 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 
    1. Browse to the root folder that contains the .csv or .parquet files for full data, incremental data upserts, and incremental data deletes.
    1. Enter the extension for the full data and both incremental files (\.csv or \.parquet).
+   1. For .csv files, select the column delimiter and if you want the first row of the file as a column header.
    1. Select **Save**.
 
 1. For **Last updated**, select the date timestamp attribute.

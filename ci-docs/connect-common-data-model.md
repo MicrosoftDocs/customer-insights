@@ -184,7 +184,7 @@ You can update the *Connect to storage account using* option. For more informati
    - To change the incremental ingestion data, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
 
    > [!NOTE]
-   > Always keep the entity name in Customer Insights the same as the entity name inside the model.json or manifest.json file after ingestion. Customer Insights validates all entity names with the model.json or manifest.json during every system refresh. If an entity name is changed either inside Customer Insights or outside, an error occurs because Customer Insights cannot find the new entity name in the model.json or manifest.json file. If an ingested entity name was accidentally changed, [edit the entity name](#edit-an-azure-data-lake-storage-data-source) in Customer Insights to match the .json file.
+   > Always keep the entity name in Customer Insights the same as the entity name inside the model.json or manifest.json file after ingestion. Customer Insights validates all entity names with the model.json or manifest.json during every system refresh. If an entity name is changed either inside Customer Insights or outside, an error occurs because Customer Insights cannot find the new entity name in the .json file. If an ingested entity name was accidentally changed, [edit the entity name](#edit-an-azure-data-lake-storage-data-source) in Customer Insights to match the name in the .json file.
 
 1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
 
