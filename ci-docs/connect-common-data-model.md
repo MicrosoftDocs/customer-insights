@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Common Data Model folder using an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 07/26/2022
+ms.date: 07/27/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -115,8 +115,6 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
    :::image type="content" source="media/ADLS_new_entity_location.png" alt-text="Dialog box to create a new entity with Data files location highlighted.":::
 
-1. Browse to the .csv or .parquet files and select them.
-
 1. Select **Save**.
 
    :::image type="content" source="media/ADLS_new_entity_define_attributes.png" alt-text="Dialog box to define or auto generate attributes.":::
@@ -151,8 +149,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Entities**](entities.md) page. For more information, see [Entities].
-
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Entities**](entities.md) page.
 
 ## Edit an Azure Data Lake Storage data source
 
@@ -187,7 +184,7 @@ You can update the *Connect to storage account using* option. For more informati
    - To change the incremental ingestion data, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
 
    > [!NOTE]
-   > Always keep the entity name in Customer Insights the same as the entity name inside the model.json or manifest.json file. Customer Insights validates all entity names with the model.json or manifest.json during system refresh. If an entity name is changed, an error occurs because Customer Insights cannot find the new entity name in the model.json or manifest.json file.
+   > Always keep the entity name in Customer Insights the same as the entity name inside the model.json or manifest.json file after ingestion. Customer Insights validates all entity names with the model.json or manifest.json during every system refresh. If an entity name is changed either inside Customer Insights or outside, an error occurs because Customer Insights cannot find the new entity name in the model.json or manifest.json file. If an ingested entity name was accidentally changed, [edit the entity name](#edit-an-azure-data-lake-storage-data-source) in Customer Insights to match the .json file.
 
 1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
 
