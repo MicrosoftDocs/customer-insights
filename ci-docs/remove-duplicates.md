@@ -18,7 +18,18 @@ searchScope:
 
 # Remove duplicates before unifying data
 
-This step in unification optionally enables you to set up rules for handling duplicate records within an entity. *Deduplication* identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
+This optional step in unification enables you to set up rules for handling duplicate records **within** an entity. Deduplication identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
+
+Deduplication is important because if an entity is not deduplicated, match rules cannot merge duplicate records for a single customer in an entity into a single unified customer record. Matching only matches **across** entities.
+
+## Default deduplication
+
+The system-defined rules apply if no deduplication rules are added.
+
+- The primary key is deduplicated.
+  For any records with the same primary key, the **Most filled** record (the one with the fewest null values) is the winner.
+- Any cross-entity matching rules are applied to the entity.
+  For example: In the match step, if entity A is matched against entity B on *FullName* and *DateofBirth*, then entity A is also deduplicated by *FullName* and *DateofBirth*. Because *FullName* and *DateofBirth* are valid keys for identifying a customer in entity A, these keys are also valid for identifying duplicate customers in entity A.
 
 ## Include enriched entities (preview)
 
