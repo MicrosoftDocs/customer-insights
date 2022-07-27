@@ -114,11 +114,11 @@
     - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
-- name: Unified profiles
+- name: Customer profiles and activities
   items:
-    - name: Review unified customer profiles
+    - name: View customer profiles
       href: customer-profiles.md
-    - name: Filter unified customer profiles
+    - name: Manage the search & filter index
       href: search-filter-index.md
     - name: Define customer activities
       href: activities.md
@@ -201,6 +201,10 @@
           href: export-destinations.md
         - name: Active Campaign
           href: export-active-campaign.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
         - name: AdRoll
           href: export-adroll.md
         - name: Autopilot
@@ -211,10 +215,6 @@
           href: export-azure-data-lake-storage-gen2.md
         - name: Azure Synapse Analytics
           href: export-azure-synapse-analytics.md
-        - name: Adobe Campaign Standard
-          href: export-adobe-campaign-standard.md
-        - name: Adobe Experience Platform
-          href: export-adobe-experience-platform.md
         - name: Braze
           href: export-braze.md
         - name: Campaign Monitor
@@ -249,6 +249,8 @@
           href: export-marketo.md
         - name: Microsoft Advertising
           href: export-microsoft-advertising.md
+        - name: MoEngage
+          href: export-moengage.md
         - name: Omnisend
           href: export-omnisend.md
         - name: RollWorks

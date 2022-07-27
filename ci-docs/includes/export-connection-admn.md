@@ -1,0 +1,1 @@
+You must be an [administrator](../permissions.md) in Customer Insights to add a connection.
