@@ -17,23 +17,23 @@ searchScope:
 
 # Customer lifetime value (CLV) prediction
 
-Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This feature can help you achieve various goals:
+Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This prediction helps you achieve various goals:
 
-- Identify high-value customers and process this insight
-- Create strategical customer segments based on their potential value to run personalized campaigns with targeted sales, marketing, and support efforts
-- Guide product development by focusing on features tht increase customer value
-- Optimize sales or marketing strategy and allocate budget more accurately for customer outreach
-- Recognize and reward high-value customers through loyalty or rewards programs
+- Identify high-value customers and process this insight.
+- Create strategical customer segments based on their potential value to run personalized campaigns with targeted sales, marketing, and support efforts.
+- Guide product development by focusing on features that increase customer value.
+- Optimize sales or marketing strategy and allocate budget more accurately for customer outreach.
+- Recognize and reward high-value customers through loyalty or rewards programs.
+
+Before getting started, reflect what CLV means for your business. We support transaction-based CLV prediction. The predicted value of a customer is based on history of business transactions. Since configuring and running a CLV model doesn't take much time, consider creating several models with varying input preferences and compare model results to see which model scenario best fits your business needs.
 
 ## Prerequisites
 
-Before getting started, reflect what CLV means for your business. Currently, we support transaction-based CLV prediction. The predicted value of a customer is based on history of business transactions. To create the prediction, you need at least [Contributor](permissions.md) permissions.
-
-Since configuring and running a CLV model doesn't take much time, consider creating several models with varying input preferences and compare model results to see which model scenario best fits your business needs.
+- At least [Contributor](permissions.md) permissions
 
 ### Data requirements
 
-The following data is required, and where marked optional, recommended for increased model performance. The more data the model can process, the more accurate the prediction will be. Therefore, we encourage you to ingest more customer activity data, if available.
+The following data is recommended for increased model performance. Fields marked as optional are still recommended. The more data the model can process, the more accurate the prediction will be. Therefore, we encourage you to ingest more customer activity data, if available.
 
 - Customer Identifier: Unique identifier to match transactions to an individual customer
 
@@ -41,14 +41,15 @@ The following data is required, and where marked optional, recommended for incre
     - **Transaction ID**: Unique identifier of each transaction
     - **Transaction date**: Date, preferably a time stamp of each transaction
     - **Transaction amount**: Monetary value (for example, revenue or profit margin) of each transaction
-    - **Label assigned to returns** (optional): Boolean value signifying whether the transaction is a return 
+    - **Label assigned to returns** (optional): Boolean value signifying whether the transaction is a return
     - **Product ID** (optional): Product ID of product involved in the transaction
 
-- Additional data (optional), for example
-    - Web activities: website visit history, email history
-    - Loyalty activities: loyalty reward points accrual and redemption history
-    - Customer service log, service call, complaint, or return history
+- Additional data (optional), for example:
+    - Web activities: Website visit history, email history
+    - Loyalty activities: Loyalty reward points accrual and redemption history
+    - Customer service log: Service call, complaint, or return history
     - Customer profile information
+
 - Data about customer activities (optional):
     - Activity identifiers to distinguish activities of the same type
     - Customer identifiers to map activities to your customers
@@ -62,18 +63,18 @@ The following data is required, and where marked optional, recommended for incre
 - Suggested data characteristics:
     - Sufficient historical data: At least one year of transactional data. Preferably two to three years of transactional data to predict CLV for one year.
     - Multiple purchases per customer: Ideally, at least two to three transactions per customer ID, preferably across multiple dates.
-    - Number of customers: At least 100 unique customers, preferably more than 10,000 customers. The model will fail with fewer than 100 customers and insufficient historical data
-    - Data completeness: Less than 20% missing values in required fields in the input data
+    - Number of customers: At least 100 unique customers, preferably more than 10,000 customers. The model will fail with fewer than 100 customers and insufficient historical data.
+    - Data completeness: Less than 20% missing values in required fields in the input data.
 
 > [!NOTE]
-> - The model requires the transaction history of your customers. Only one transaction history entity can be configured currently. If there are multiple purchase/transaction entities, you can union them in Power Query before data ingestion.
-> - For additional customer activity data (optional), however, you can add as many customer activity entities as you'd like for consideration by the model.
+> - The model requires the transaction history of your customers. Only one transaction history entity can be configured. If there are multiple purchase/transaction entities, combine them in Power Query before data ingestion.
+> - Optionally, for additional customer activity data, add as many customer activity entities as you'd like for consideration by the model.
 
 ## Create a Customer Lifetime Value prediction
 
 1. Go to **Intelligence** > **Predictions**.
 
-1. Select the **Customer lifetime value** tile and select **Use model**. 
+1. On the **Create** tab, select the **Customer lifetime value** tile and select **Use model**. 
 
 1. In the **Customer lifetime value** pane, select **Get started**.
 
@@ -83,13 +84,12 @@ The following data is required, and where marked optional, recommended for incre
 
 ### Define model preferences
 
-1. Set a **Prediction time period** to define how far into the future you want to predict the CLV.    
-   By default, the unit is set as months. You can change it to years to look further in the future.
+1. Set a **Prediction time period** to define how far into the future you want to predict the CLV. By default, the unit is set as months.
 
    > [!TIP]
-   > To accurately predict CLV for the time period you set, you need a comparable period of historical data. For example, if you want to predict CLV for the next 12 months, it is recommended that you have at least 18 – 24 months of historical data.
+   > To accurately predict CLV for the set time period, you need a comparable period of historical data. For example, if you want to predict CLV for the next 12 months, it is recommended that you have at least 18 – 24 months of historical data.
 
-1. Specify what **Active customers** mean for your business. Set the time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers. 
+1. Specify what **Active customers** mean for your business. Set the time frame in which a customer must have had at least one transaction to be considered active. The model will only predict CLV for active customers.
    - **Let model calculate purchase interval (recommended)**: The model analyzes your data and determines a time period based on historical purchases.
    - **Set interval manually**: If you have a specific business definition of an active customer, choose this option and set the time period accordingly.
 
@@ -173,7 +173,7 @@ With this information, they organize a local event for the launch of the espress
 
 1. In the **Review your model details** step, validate the configuration of the prediction. You can go back to any part of the prediction configuration by selecting **Edit** under the shown value. You can also select a configuration step from the progress indicator.
 
-1. If all values are configured correctly, select **Save and run** to start running the model. On the **My predictions** tab, you can see the status of the prediction process. The process may take several hours to complete depending on the amount of data used in the prediction.
+1. If all values are configured correctly, select **Save and run** to start running the model. Select **Done** to go to the **My predictions** tab, where the status of the prediction process displays. The process may take several hours to complete depending on the amount of data used in the prediction.
 
 ## Review prediction status and results
 

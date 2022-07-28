@@ -1,7 +1,7 @@
 ---
 title: Predictions overview
 description: "Prediction scenarios and options covered by the Dynamics 365 Customer Insights application."
-ms.date: 03/24/2022
+ms.date: 07/28/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -14,23 +14,23 @@ manager: shellyha
 
 # Predictions overview
 
-Dynamics 365 Customer Insights comes with a variety of options that leverage AI and machine learning to predict data. 
+Dynamics 365 Customer Insights comes with a variety of options that leverage AI and machine learning to predict data.
 
 ## Out-of-box models
 
-The easiest way to start with predicting data are predefined models, often referred to as out-of-box models. They only require certain data and structure to generate insights quickly. Currently, the following models are available: 
+The easiest way to start with predicting data are predefined models, often referred to as out-of-box models. They only require certain data and structure to generate insights quickly. The following models are available: 
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 
 - [Customer lifetime value](predict-customer-lifetime-value.md): Predicts the potential revenue of a customer throughout the entire interaction with a business.
 - [Product recommendation](predict-product-recommendation.md): Suggests sets of predictive product recommendations based on purchase behavior and customers with similar purchase patterns.
 - [Subscription churn](predict-subscription-churn.md): Predicts whether a customer is at risk for no longer using your company’s subscription products or services.
-- [Transactional churn](predict-transactional-churn.md): Predict if a customer will no longer purchase your products or services in a certain time frame.
-- [Sentiment analysis](sentiment-analysis.md): Analyze sentiment of customer feedback and identify business aspects that are frequently mentioned.
+- [Transactional churn](predict-transactional-churn.md): Predicts if a customer will no longer purchase your products or services in a certain time frame.
+- [Sentiment analysis](sentiment-analysis.md): Analyzes sentiment of customer feedback and identifies business aspects that are frequently mentioned.
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-- [Transactional churn](predict-transactional-churn.md): Predict if a customer will no longer purchase your products or services in a certain time frame.
+- [Transactional churn](predict-transactional-churn.md): Predicts if a customer will no longer purchase your products or services in a certain time frame.
 
 ---
 
