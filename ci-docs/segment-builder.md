@@ -1,7 +1,7 @@
 ---
 title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
-ms.date: 07/27/2022
+ms.date: 08/01/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -21,7 +21,7 @@ searchScope:
 Define complex filters around the unified customer or unified contact and its related entities. Each segment, after processing, creates a set of customer or contact records that you can export and take action on.
 
 > [!TIP]
-> Segments based on **individual customers** automatically include available contact information for segment members. In **business accounts**, if you [unified](data-unification.md) both accounts and contacts, choose whether the segment is based on accounts or business contacts.
+> Segments based on **individual customers** automatically include available contact information for segment members. In **business accounts**, if you [unified](data-unification.md) both accounts and contacts, choose whether the segment is based on accounts or business contacts. To activate or export to a destination expecting contact information, use a segment of contacts. To activate or export to a destination expecting account information, use a segment of accounts.
 
 ## Segment builder
 
@@ -92,18 +92,15 @@ The example above illustrates the segmentation capability. We've defined a segme
       - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is kept.
 
 1. By default, the output entity will automatically contain all attributes of customer profiles that match the defined filters. In B-to-B when using the *ContactProfile* entity, the Account ID is automatically included. If a segment is based on other entities than the *Customer* entity or to include more attributes from the *ContactProfile*, select **Project attributes** to add more attributes from these entities to the output entity.
-
-   > [!NOTE]
-   > If you created a *ContactProfile* from the [**Semantic mappings**](semantic-mappings.md) page rather than data unification, details of one or more contacts in a segment of accounts from the *ContactProfile* entity must be included in the segment to allow that segment to be activated or exported to destinations that require contact information. 
-   > A sample output for a segment based on business accounts with projected attributes of contacts could look like this:
-   >
-   > |ID  |Account name  |Revenue  |Contact name  | Contact role|
-   > |---------|---------|---------|---------|---|
-   > |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, Procurement manager]
+ 
+   For example: A segment is based on an entity that contains purchase data, which is related to the *Customer* entity. The segment looks for all customers from Spain that purchased goods in the current year. You can choose to append attributes like the price of goods, or the purchase date to all matching customer records in the output entity. This information might be useful to analyze seasonal correlations to the total spending.
 
    :::image type="content" source="media/segments-project-attributes.png" alt-text="Example of projected attributes selected in the side pane to be added to the output entity.":::
-  
-   For example: A segment is based on an entity that contains purchase data, which is related to the *Customer* entity. The segment looks for all customers from Spain that purchased goods in the current year. You can choose to append attributes like the price of goods, or the purchase date to all matching customer records in the output entity. This information might be useful to analyze seasonal correlations to the total spending.
+ 
+   A sample output for a segment based on business accounts with projected attributes of contacts could look like this:
+   |ID  |Account name  |Revenue  |Contact name  | Contact role|
+   |---------|---------|---------|---------|---|
+   |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, Procurement manager]
 
    > [!NOTE]
    > - **Project attributes** only work for entities that have a one-to-many relationship with the *Customer* or *ContactProfile* entity. For example, one customer can have multiple subscriptions.

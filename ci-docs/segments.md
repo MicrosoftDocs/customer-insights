@@ -1,7 +1,7 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 07/27/2022
+ms.date: 08/01/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
