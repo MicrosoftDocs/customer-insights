@@ -22,8 +22,6 @@ Segments let you group your customers based on demographic, transactional, or be
 
 Customer or contact profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
-In business accounts (B-to-B), segments can be based on audience type: accounts from the *Customer* entity or contacts from the *ContactProfile* entity. Choose the audience type when creating the segment.
-
 ## Create a segment
 
 Choose how to create a segment based on your target audience.
@@ -40,13 +38,14 @@ Choose how to create a segment based on your target audience.
 
 - Simple or complex segments with segment builder: [Build your own](segment-builder.md)
 
+> [!NOTE]
+> In business accounts (B-to-B), segments can be based on audience type: accounts from the *Customer* entity or contacts from the *ContactProfile* entity. Choose the audience type when creating the segment.
+
 ---
 
 ## Manage existing segments
 
 Go to the **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
-
-In B-to-C environments, the **Segments** page also displays the number of members. In B-to-B environments, the **Segments** page also displays **Audience Type** which indicates whether the segment is based on accounts or contacts.
 
 Select a segment to view available actions.
 
