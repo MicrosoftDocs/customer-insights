@@ -98,6 +98,7 @@ The example above illustrates the segmentation capability. We've defined a segme
    :::image type="content" source="media/segments-project-attributes.png" alt-text="Example of projected attributes selected in the side pane to be added to the output entity.":::
  
    A sample output for a segment based on business accounts with projected attributes of contacts could look like this:
+
    |ID  |Account name  |Revenue  |Contact name  | Contact role|
    |---------|---------|---------|---------|---|
    |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, Procurement manager]
