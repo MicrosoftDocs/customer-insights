@@ -18,48 +18,39 @@ searchScope:
 
 Dynamics 365 Customer Insights provides a direct integration with Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
 
-Customer Insights is sends the following event logs:
+Customer Insights sends the following event logs:
 
 - **Audit Events**
-  - **APIEvent** - enables change tracking done via the Dynamics 365 Customer Insights UI.
+  - **APIEvent** - enables change tracking via the Dynamics 365 Customer Insights UI.
 - **Operational Events**
-  - **WorkflowEvent** - The workflow lets you set up [Data Sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and finally [export](export-destinations.md) data into other systems. All those steps can be done individually (for example, trigger a single export). The can also run orchestrated (for example, data refresh from data sources that triggers the unification process, which will pull in enrichments and once done export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
-  - **APIEvent** - all API calls to the customers instance to Dynamics 365 Customer Insights. For more information, see the [APIEvent Schema](#api-event-schema).
+  - **WorkflowEvent** - lets you set up [Data Sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and finally [export](export-destinations.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that triggers the unification process, which will pull in enrichments and once done export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
+  - **APIEvent** - sends all API calls to the customers instance to Dynamics 365 Customer Insights. For more information, see the [APIEvent Schema](#api-event-schema).
 
 ## Set up the diagnostic settings
 
 ### Prerequisites
 
-To configure diagnostics in Customer Insights, the following prerequisites must be met:
-
-- You have an active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
-- You have [Administrator](permissions.md#admin) permissions in Customer Insights.
-- You have the **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can be an Azure Data Lake Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal). This permission is necessary while configuring diagnostic settings in Customer Insights, it can be changed after successful setup.
-- [Destination requirements](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics met.
-- You have at least the **Reader** role on the resource group the resource belongs to.
+- An active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
+- [Administrator](permissions.md#admin) permissions in Customer Insights.
+- **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can be an Azure Data Lake Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal). This permission is necessary while configuring diagnostic settings in Customer Insights, it can be changed after successful setup.
+- [Destination requirements](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics are met.
+- At least the **Reader** role on the resource group the resource belongs to.
 
 ### Set up diagnostics with Azure Monitor
 
-1. In Customer Insights, select **System** > **Diagnostics** to see the diagnostics destinations configured this instance.
+1. In Customer Insights, select **System** > **Diagnostics** to see the diagnostics destinations configured for this instance.
 
 1. Select **Add destination**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Diagnostics connection](media/diagnostics-pane.png "Diagnostics connection")
+:::image type="content" source="media/diagnostics-pane.png" alt-text="Diagnostics connection.":::
 
 1. Provide a name in the **Name for diagnostics destination** field.
 
-1. Choose the **Tenant** of the Azure subscription with the destination resource and select **Sign in**.
-
 1. Select the **Resource type** (Storage account, event hub, or log analytics).
 
-1. Select the **Subscription** for the destination resource.
+1. Select the **Subscription**, **Resource group**, and **Resource** for the destination resource.
 
-1. Select the **Resource group** for the destination resource.
-
-1. Select the **Resource**.
-
-1. Confirm the **Data privacy and compliance** statement.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Connect to system** to connect to the destination resource. The logs start to appear in the destination after 15 minutes, if the API is in use and generates events.
 

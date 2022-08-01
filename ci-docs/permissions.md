@@ -1,7 +1,7 @@
 ---
 title: "Manage user permissions"
 description: "Learn about permissions and user roles."
-ms.date: 02/09/2022
+ms.date: 08/01/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -16,10 +16,6 @@ searchScope:
 ---
 
 # Manage user permissions
-
-The **Permissions** page is where you'll set up roles and permissions for using Customer Insights.
-
-You need to have administrator permissions to see the page. To access the permissions page, go to **Admin** > **Security** > **Users**.
 
 There are three types of roles:
 
