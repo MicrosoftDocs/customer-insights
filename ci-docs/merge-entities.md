@@ -55,6 +55,9 @@ In this step of the unification process, choose and exclude attributes to merge 
 1. Specify how to combine or merge the fields from one of three options:
     - **Importance**: Identifies the winner value based on importance rank specified for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
 
+      > [!NOTE]
+      > Customer Insights uses the first non-null value. For example, given entities A, B, and C ranked in that order, if A.Name and B.Name are null, then the value from C.Name is used.
+
       :::image type="content" source="media/importance-merge-option.png" alt-text="Importance option in the merge fields dialog.":::
 
     - **Most recent**: Identifies the winner value based on the most recency. Requires a date or a numeric field for every participating entity in the merge fields scope to define the recency.
