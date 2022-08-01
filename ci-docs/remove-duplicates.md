@@ -2,7 +2,7 @@
 title: "Remove duplicates before unifying data"
 description: "The second step in the unification process is selecting which record to keep when duplicates are found."
 recommendations: false
-ms.date: 04/22/2022
+ms.date: 08/01/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -18,9 +18,7 @@ searchScope:
 
 # Remove duplicates before unifying data
 
-This optional step in unification enables you to set up rules for handling duplicate records **within** an entity. Deduplication identifies duplicate records and merges them into one record. Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
-
-Deduplication is important because if an entity is not deduplicated, match rules cannot merge duplicate records for a single customer in an entity into a single unified customer record. Matching only matches **across** entities.
+This optional step in unification enables you to set up rules for eliminating duplicate records **within** an entity. Deduplication identifies multiple records for a customer and selects the best record to keep (based on basic merge preferences) or merges the records into one (based on advanced merge preferences). Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
 
 ## Default deduplication
 
