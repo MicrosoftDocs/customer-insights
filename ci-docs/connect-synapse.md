@@ -20,7 +20,7 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 ## Prerequisites
 
 > [!NOTE]
-> Synapse Workspaces which have [Firewall enabled](https://docs.microsoft.com/en-us/azure/synapse-analytics/security/synapse-workspace-ip-firewall) are currently not supported.
+> Synapse Workspaces which have [firewall enabled](/azure/synapse-analytics/security/synapse-workspace-ip-firewall) are currently not supported.
 > [!IMPORTANT]
 > Make sure to set all **role assignments** as described.  
 
