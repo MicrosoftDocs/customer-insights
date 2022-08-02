@@ -1,7 +1,7 @@
 ---
 title: "Bring your own Azure key vault (preview)"
 description: "Learn how to configure Customer Insights to use your own Azure key vault to manage secrets."
-ms.date: 10/06/2021
+ms.date: 08/02/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -16,10 +16,11 @@ searchScope:
 
 # Bring your own Azure key vault (preview)
 
-Linking a dedicated [Azure key vault](/azure/key-vault/general/basic-concepts) to a Customer Insights environment helps organizations to meet compliance requirements.
-Set up the dedicated key vault to stage and use secrets in an organization's compliance boundary. Customer Insights can use the secrets in Azure Key Vault to [set up connections](connections.md) to third-party systems.
+Linking a dedicated [Azure key vault](/azure/key-vault/general/basic-concepts) to a Customer Insights environment helps organizations to meet compliance requirements. For more information, see [Bring your own Azure key vault](use-azure-key-vault.md).
 
 ## Link the key vault to the Customer Insights environment
+
+Set up the dedicated key vault to stage and use secrets in an organization's compliance boundary.
 
 ### Prerequisites
 
@@ -60,7 +61,8 @@ When [setting up connections](connections.md) to third-party systems, the secret
 1. For the supported connection types, a **Use Key Vault** toggle is available if you linked a key vault.
 1. Instead of entering the secret manually, choose the secret name that points to the secret value in the key vault.
 
-:::image type="content" source="media/use-key-vault-secret.png" alt-text="Connection pane with an SFTP connection that uses a Key Vault secret.":::
+   :::image type="content" source="media/use-key-vault-secret.png" alt-text="Connection pane with an SFTP connection that uses a Key Vault secret.":::
+1. To create the connection, select **Save**.
 
 ## Supported connection types
 

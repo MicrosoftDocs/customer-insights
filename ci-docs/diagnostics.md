@@ -1,7 +1,7 @@
 ---
 title: "Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (preview)"
 description: "Learn how to send logs to Microsoft Azure Monitor."
-ms.date: 12/14/2021
+ms.date: 08/02/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -24,7 +24,7 @@ Customer Insights sends the following event logs:
   - **APIEvent** - enables change tracking via the Dynamics 365 Customer Insights UI.
 - **Operational Events**
   - **WorkflowEvent** - lets you set up [Data Sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and finally [export](export-destinations.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that triggers the unification process, which will pull in enrichments and once done export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
-  - **APIEvent** - sends all API calls to the customers instance to Dynamics 365 Customer Insights. For more information, see the [APIEvent Schema](#api-event-schema).
+  - **APIEvent** - sends all API calls of the customers instance to Dynamics 365 Customer Insights. For more information, see the [APIEvent Schema](#api-event-schema).
 
 ## Set up the diagnostic settings
 
@@ -38,25 +38,52 @@ Customer Insights sends the following event logs:
 
 ### Set up diagnostics with Azure Monitor
 
-1. In Customer Insights, select **System** > **Diagnostics** to see the diagnostics destinations configured for this instance.
+1. In Customer Insights, go to **Admin** > **System** and select the **Diagnostics** tab.
 
 1. Select **Add destination**.
 
-:::image type="content" source="media/diagnostics-pane.png" alt-text="Diagnostics connection.":::
+   :::image type="content" source="media/diagnostics-pane.png" alt-text="Diagnostics connection.":::
 
 1. Provide a name in the **Name for diagnostics destination** field.
 
 1. Select the **Resource type** (Storage account, event hub, or log analytics).
 
-1. Select the **Subscription**, **Resource group**, and **Resource** for the destination resource.
+1. Select the **Subscription**, **Resource group**, and **Resource** for the destination resource. See [Configuration on the destination resource](#configuration-on-the-destination-resource) for permission and log information.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Connect to system** to connect to the destination resource. The logs start to appear in the destination after 15 minutes, if the API is in use and generates events.
 
+### Configuration on the destination resource
+
+Based on your choice of resource type, the following steps automatically apply:
+
+#### Storage account
+
+Customer Insights service principal gets the **Storage Account Contributor** permission on the selected resource and creates two containers under the selected namespace:
+
+- `insight-logs-audit` containing **audit events**
+- `insight-logs-operational` containing **operational events**
+
+#### Event Hub
+
+Customer Insights service principal gets the **Azure Event Hubs Data Owner** permission on the resource and will create two Event Hubs under the selected namespace:
+
+- `insight-logs-audit` containing **audit events**
+- `insight-logs-operational` containing **operational events**
+
+#### Log Analytics
+
+Customer Insights service principal gets the **Log Analytics Contributor** permission on the resource. The logs will be available under **Logs** > **Tables** > **Log Management** on the selected Log Analytics workspace. Expand the **Log Management** solution and locate the `CIEventsAudit` and `CIEventsOperational` tables.
+
+- `CIEventsAudit` containing **audit events**
+- `CIEventsOperational` containing **operational events**
+
+Under the **Queries** window, expand the **Audit** solution and locate the example queries provided by searching for `CIEvents`.
+
 ### Remove a destination
 
-1. Go to **System** > **Diagnostics**.
+1. Go to **Admin** > **System** and select the **Diagnostics** tab.
 
 1. Select the diagnostics destination in the list.
 
@@ -75,33 +102,6 @@ Customer Insights provides two categories:
 
 - **Audit events**: [API events](#api-event-schema) to track the configuration changes on the service. `POST|PUT|DELETE|PATCH` operations go into this category.
 - **Operational events**: [API events](#api-event-schema) or [workflow events](#workflow-event-schema) generated while using the service.  For example, `GET` requests or the execution events of a workflow.
-
-## Configuration on the destination resource
-
-Based on your choice on the resource type the following steps will automatically apply:
-
-### Storage account
-
-Customer Insights service principal gets the **Storage Account Contributor** permission on the selected resource and creates two containers under the selected namespace:
-
-- `insight-logs-audit` containing **audit events**
-- `insight-logs-operational` containing **operational events**
-
-### Event Hub
-
-Customer Insights service principal gets the **Azure Event Hubs Data Owner** permission on the resource and will create two Event Hubs under the selected namespace:
-
-- `insight-logs-audit` containing **audit events**
-- `insight-logs-operational` containing **operational events**
-
-### Log Analytics
-
-Customer Insights service principal gets the **Log Analytics Contributor** permission on the resource. The logs will be available under **Logs** > **Tables** > **Log Management** on the selected Log Analytics workspace. Expand the **Log Management** solution and locate the `CIEventsAudit` and `CIEventsOperational` tables.
-
-- `CIEventsAudit` containing **audit events**
-- `CIEventsOperational` containing **operational events**
-
-Under the **Queries** window, expand the **Audit** solution and locate the example queries provided by searching for `CIEvents`.
 
 ## Event schemas
 
@@ -234,3 +234,5 @@ Workflow events have following properties.
 | `properties.additionalInfo.AffectedEntities` | No       | Yes  | Optional. For OperationType `Export` only. Contains a list of configured entities in the export.                                                                                                                                                            |
 | `properties.additionalInfo.MessageCode`      | No       | Yes  | Optional. For OperationType `Export` only. Detailed message for the export.                                                                                                                                                                                 |
 | `properties.additionalInfo.entityCount`      | No       | Yes  | Optional. For OperationType `Segmentation` only. Indicates the total numbers of members the segment has.                                                                                                                                                    |
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

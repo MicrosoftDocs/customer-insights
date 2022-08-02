@@ -1,7 +1,7 @@
 ---
-title: "Manage user permissions"
+title: "Assign user permissions"
 description: "Learn about permissions and user roles."
-ms.date: 08/01/2022
+ms.date: 08/02/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -15,9 +15,9 @@ searchScope:
   - customerInsights
 ---
 
-# Manage user permissions
+# Assign user permissions
 
-There are three types of roles:
+Access to Customer Insights is restricted to users in your organization that were added to the application by an admin. A user can be a single user, group, or application. There are three types of roles:
 
 ## Viewer
 
@@ -38,7 +38,7 @@ There are three types of roles:
 - Create segments using the **Segments** page.
 - Create measures using the **Measures** page.
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for first party enrichments only).
-- Manage and create exports based on connections shared with contributors. [Learn more about how administrators allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+- Manage and create exports based on [connections shared with contributors](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 ## Admin
 
@@ -61,22 +61,25 @@ There are three types of roles:
 
 ## Assign roles and permissions
 
-1. Go to **Admin** > **Security** > **Users***.
+1. Go to **Admin** > **Security** and select the **Users*** tab.
 
 1. Select **Add users** to open the **Add/Edit permissions** pane.
 
-1. Use the **Search** field to find the Azure Active Directory user or group whose permissions you want to adjust. Select a **Role** to assign to that user or group.
+1. Use the **Search** field to find the Azure Active Directory user or group you want to add. Select a **Role** to assign to that user or group.
 
-1. Select **Save**. The current environment will automatically be shared with the user or members of the group whose permissions you've changed. Users can access the Customer Insights app and work according to their specified role.
+1. Select **Save**. The current environment is automatically shared with the user or members of the group. Users can access the Customer Insights app and work according to their specified role.
 
 ## View current permissions
 
-Go to **Admin** > **Security** > **Users** to see what role assignments are currently active.
+Go to **Admin** > **Security** and select the **Users** tab to view the list of users and their role assignments that are currently active. You can sort the list of users by any column or use the search box to find the user you want.
 
-- The **Type** column specifies a single user, group, or application. The system supports individual users and groups.
-- Roles are specified under the **Role** column.
-- Select any column title to sort the results by that column's value.
-- Use the **Search** field at the top of the page to locate specific users.
+## Manage current users
 
+Go to **Admin** > **Security** and select the **Users** tab. You can sort the list of users by an column or use the search box to find the user you want to manage.
+
+Select a user to view available actions.
+
+- **Edit** to edit the user's role in Customer Insights. Select **Save** to confirm the change.
+- **Remove** to remove the user from having access to Customer Insights. Select **Delete** to confirm the deletion.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

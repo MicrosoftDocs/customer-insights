@@ -18,7 +18,7 @@ searchScope:
 
 The near real-time functionality lets you see, within seconds, the latest interactions that your customers have made with your products or services.
 
-[Scheduled refreshes](system.md#schedule-tab) include large numbers of records and several complex operations. First, data is pulled from the data source. Next, the data is unified, and then enriched with additional information. Every run of this process can take minutes to hours.
+[Scheduled refreshes](schedule-refresh.md) include large numbers of records and several complex operations. First, data is pulled from the data source. Next, the data is unified, and then enriched with additional information. Every run of this process can take minutes to hours.
 
 The real-time functionality provides data immediately for consumption, until the subsequent scheduled refresh pulls this data from the data source.
 
