@@ -36,16 +36,19 @@ Choose how to create a segment based on your target audience.
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-- Simple or complex segments with segment builder: [Build your own](segment-builder.md)
+Segment of accounts or segment of contacts with segment builder: [Build your own](segment-builder.md)
 
 > [!NOTE]
-> In business accounts (B-to-B), segments can be based on audience type: accounts from the *Customer* entity or contacts from the *ContactProfile* entity. Choose the audience type when creating the segment.
+> Most export destinations require contact information for Marketing purposes. Therefore, create segments of contacts to use for those exports.
 
 ---
 
 ## Manage existing segments
 
 Go to the **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
+
+> [!TIP]
+> In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
 
 Select a segment to view available actions.
 
