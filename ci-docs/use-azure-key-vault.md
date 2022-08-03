@@ -16,7 +16,7 @@ searchScope:
 
 # Bring your own Azure key vault (preview)
 
-Linking a dedicated [Azure key vault](/azure/key-vault/general/basic-concepts) to a Customer Insights environment helps organizations to meet compliance requirements. For more information, see [Bring your own Azure key vault](use-azure-key-vault.md).
+Linking a dedicated [Azure key vault](/azure/key-vault/general/basic-concepts) to a Customer Insights environment helps organizations to meet compliance requirements.
 
 ## Link the key vault to the Customer Insights environment
 
@@ -26,13 +26,13 @@ Set up the dedicated key vault to stage and use secrets in an organization's com
 
 - An active Azure subscription.
 
-- An [Administrator](permissions.md#admin) role in Customer Insights. Learn more about [user permissions in Customer Insights](permissions.md#assign-roles-and-permissions).
+- An [Administrator](permissions.md#admin) role [assigned](permissions.md#add-users) in Customer Insights.
 
 - [Contributor](/azure/role-based-access-control/built-in-roles#contributor) and [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) roles on the key vault or the resource group the key vault belongs to. For more information, go to [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal). If you don't have the User Access Administrator role on the key vault, set up the role-based access control permissions for the Azure service principal for Dynamics 365 Customer Insights separately. Follow the steps to [use an Azure service principal](connect-service-principal.md) for the key vault that should be linked.
 
 - Key vault must have Key Vault firewall **disabled**.
 
-- Key vault is in the same [Azure location](https://azure.microsoft.com/global-infrastructure/geographies/#overview) as the Customer Insights environment. The region of the environment in Customer Insights is listed under **Admin** > **System** > **About** > **Region**.
+- Key vault is in the same [Azure location](https://azure.microsoft.com/global-infrastructure/geographies/#overview) as the Customer Insights environment. In Customer Insights, go to **Admin** > **System** and the **About** tab to view the region of the environment.
 
 ### Recommendations
 
@@ -54,7 +54,7 @@ For details about which permissions on the key vault are granted to Customer Ins
 
 ## Use the key vault in the connection setup
 
-When [setting up connections](connections.md) to third-party systems, the secrets from the linked Key Vault can be used to configure the connections.
+When [setting up connections](connections.md) to [supported third-party](#supported-connection-types) systems, the secrets from the linked Key Vault can be used to configure the connections.
 
 1. Go to **Admin** > **Connections**.
 1. Select **Add connection**.
@@ -62,7 +62,8 @@ When [setting up connections](connections.md) to third-party systems, the secret
 1. Instead of entering the secret manually, choose the secret name that points to the secret value in the key vault.
 
    :::image type="content" source="media/use-key-vault-secret.png" alt-text="Connection pane with an SFTP connection that uses a Key Vault secret.":::
-1. To create the connection, select **Save**.
+1. Review the [Data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
+1. Select **Save** to create the connection.
 
 ## Supported connection types
 

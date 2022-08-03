@@ -18,13 +18,13 @@ searchScope:
 
 Connections are the key to enable data sharing to and from Customer Insights. Each connection establishes data sharing with a specific service. Use connections to [configure third-party enrichments](enrichment-hub.md) and [configure exports](export-destinations.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Marketing works for multiple exports and one Leadspace connection can be used for several enrichments.
 
-## Exports
+## Export connections
 
-Only administrators can configure new connections but they can grant access to contributors to use existing connections. Administrators control where data can go, contributors define the payload and frequency fitting their needs. For more information, see [Allow contributors to use a connection for exports](#allow-contributors-to-use-a-connection-for-exports).
+Only administrators can configure new connections, but they can [grant access to contributors](#allow-contributors-to-use-a-connection-for-exports) to use existing connections. Administrators control where data can go, contributors define the payload and frequency fitting their needs.
 
-## Enrichments
+## Enrichment connections
 
-Only administrators can configure new connections but the created connections are always available to both administrators and contributors. Administrators manage credentials and give consent to data transfers. The connections can then be used for enrichments by both administrators and contributors.
+Only administrators can configure new connections, but the created connections are always available to both administrators and contributors. Administrators manage credentials and give consent to data transfers. The connections can then be used for enrichments by both administrators and contributors.
 
 ## Add a new connection
 
@@ -70,11 +70,11 @@ When setting up or editing an export connection, choose which users are allowed 
 1. Select the connection to view available actions.
 
    - **Edit** the connection.
-   - **Remove** a connection.
+   - [**Remove**](#remove-a-connection) a connection.
 
 ### Remove a connection
 
-If the connection you're removing is used by enrichments or exports, first detach or remove them. The remove dialog  guides you to the relevant enrichments or exports.
+If the connection you're removing is used by enrichments or exports, first detach or remove them. The remove dialog guides you to the relevant enrichments or exports.
 
 Detached enrichments and exports become inactive. You reactivate them by adding another connection to them on the [Enrichments](enrichment-hub.md) or [Exports](export-destinations.md) page.
 
@@ -87,7 +87,7 @@ Detached enrichments and exports become inactive. You reactivate them by adding 
 1. Select **Remove** from the dropdown menu. A confirmation dialog appears.
 
    1. If there are enrichments or exports using this connection, select the button to see what's using the connection.
-      - **Exports:** Choose to either **Remove** the export or **Detach the connection**. Detaching the connection  keeps the export config, but it won't be run until another connection is added to it.
+      - **Exports:** Choose to either **Remove** the export or **Detach the connection**. Detaching the connection keeps the export config, but it won't be run until another connection is added to it.
       - **Enrichments:** Choose to either **Delete** or **Deactivate** the enrichments.
    1. Once the connection has no more dependencies, go back to **Admin** > **Connections** and try removing the connection again.
 

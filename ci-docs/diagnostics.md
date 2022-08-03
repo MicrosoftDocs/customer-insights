@@ -1,5 +1,5 @@
 ---
-title: "Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (preview)"
+title: "Export diagnostic logs (preview)"
 description: "Learn how to send logs to Microsoft Azure Monitor."
 ms.date: 08/02/2022
 ms.reviewer: mhart
@@ -14,9 +14,9 @@ searchScope:
   - customerInsights
 ---
 
-# Log forwarding in Dynamics 365 Customer Insights with Azure Monitor (preview)
+# Export diagnostic logs (preview)
 
-Dynamics 365 Customer Insights provides a direct integration with Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
+Forward logs from Customer Insights using Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
 
 Customer Insights sends the following event logs:
 
@@ -32,7 +32,7 @@ Customer Insights sends the following event logs:
 
 - An active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - [Administrator](permissions.md#admin) permissions in Customer Insights.
-- **Contributor** and **User Access Administrator** role on the destination resource on Azure. The resource can be an Azure Data Lake Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal). This permission is necessary while configuring diagnostic settings in Customer Insights, it can be changed after successful setup.
+- [Contributor and User Access Administrator role](/azure/role-based-access-control/role-assignments-portal) on the destination resource on Azure. The resource can be an Azure Data Lake Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. This permission is necessary while configuring diagnostic settings in Customer Insights, but it can be changed after successful setup.
 - [Destination requirements](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics are met.
 - At least the **Reader** role on the resource group the resource belongs to.
 
@@ -54,25 +54,25 @@ Customer Insights sends the following event logs:
 
 1. Select **Connect to system** to connect to the destination resource. The logs start to appear in the destination after 15 minutes, if the API is in use and generates events.
 
-### Configuration on the destination resource
+## Configuration on the destination resource
 
 Based on your choice of resource type, the following steps automatically apply:
 
-#### Storage account
+### Storage account
 
 Customer Insights service principal gets the **Storage Account Contributor** permission on the selected resource and creates two containers under the selected namespace:
 
 - `insight-logs-audit` containing **audit events**
 - `insight-logs-operational` containing **operational events**
 
-#### Event Hub
+### Event Hub
 
 Customer Insights service principal gets the **Azure Event Hubs Data Owner** permission on the resource and will create two Event Hubs under the selected namespace:
 
 - `insight-logs-audit` containing **audit events**
 - `insight-logs-operational` containing **operational events**
 
-#### Log Analytics
+### Log Analytics
 
 Customer Insights service principal gets the **Log Analytics Contributor** permission on the resource. The logs will be available under **Logs** > **Tables** > **Log Management** on the selected Log Analytics workspace. Expand the **Log Management** solution and locate the `CIEventsAudit` and `CIEventsOperational` tables.
 
@@ -81,15 +81,18 @@ Customer Insights service principal gets the **Log Analytics Contributor** permi
 
 Under the **Queries** window, expand the **Audit** solution and locate the example queries provided by searching for `CIEvents`.
 
-### Remove a destination
+## Remove a diagnostics destination
 
 1. Go to **Admin** > **System** and select the **Diagnostics** tab.
 
 1. Select the diagnostics destination in the list.
 
+> [!TIP]
+> Removing the destination stops the log forwarding, but does not delete the resource on the Azure subscription. To delete the resource in Azure, select the link in the **Actions** column to open the Azure portal for the selected resource and delete it there. Then delete the diagnostics destination.
+
 1. In the **Actions** column, select the **Delete** icon.
 
-1. Confirm the deletion to stop the log forwarding. The resource on the Azure subscription won't be deleted. You can select the link in the **Actions** column to open the Azure portal for the selected resource and delete it there.
+1. Confirm the deletion to remove the destination and stop the log forwarding.
 
 ## Log categories and event schemas
 
@@ -105,7 +108,7 @@ Customer Insights provides two categories:
 
 ## Event schemas
 
-API events and workflow events have a common structure and details where they differ, see [API event schema](#api-event-schema) or [workflow event schema](#workflow-event-schema).
+API events and workflow events have a common structure, but with a few differences. For more information, see [API event schema](#api-event-schema) or [workflow event schema](#workflow-event-schema).
 
 ### API event schema
 
@@ -169,7 +172,7 @@ The `identity` JSON object has the following structure
 
 ### Workflow event schema
 
-The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-destinations.md) data. All those steps can run individually or orchestrated with following processes.
+The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-destinations.md) data. All those steps can run individually or orchestrated with the following processes.
 
 #### Operation types
 
@@ -207,7 +210,6 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 | `durationMs`    | Long      | Optional          | Duration of the operation in milliseconds.                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | String    | Optional          | JSON object with more properties to the particular category of events.                                                                                        | See sub section [Workflow Properties](#workflow-properties-schema)                                                                                                       |
 | `level`         | String    | Required          | Severity level of the event.                                                                                                                                  | `Informational`, `Warning`, or `Error`                                                                                                                                   |
-|                 |
 
 #### Workflow properties schema
 

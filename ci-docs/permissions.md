@@ -17,7 +17,7 @@ searchScope:
 
 # Assign user permissions
 
-Access to Customer Insights is restricted to users in your organization that were added to the application by an admin. A user can be a single user, group, or application. There are three types of roles:
+Access to Customer Insights is restricted to users in your organization that are added to the application by an admin. An admin can add, edit, or remove users. A user can be a single user, group, or application. There are three types of roles a user can have:
 
 ## Viewer
 
@@ -43,8 +43,8 @@ Access to Customer Insights is restricted to users in your organization that wer
 ## Admin
 
 - All permissions available to the Contributor.
-- Change settings on the **System** page, including the working language and refresh schedules for your system processes.
-- View and add permissions using the **Permissions** page.
+- Change settings on the **System** page, including the working language, refresh schedules for your system processes, and exporting diagnostic logs.
+- Change settings on the **Security** page, including users, API keys, private links, and key vault.
 - Set search and filter definitions for the Customers page using the **Search & filter index** page (accessible via the **Customers** page).
 - Manage connections and allow them for other user roles on **Connections** page.
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for all enrichments).
@@ -59,7 +59,7 @@ Access to Customer Insights is restricted to users in your organization that wer
 - All permissions available to the Admin.
 - [Reset and delete](manage-environments.md#reset-an-existing-environment-preview) the environment.
 
-## Assign roles and permissions
+## Add users
 
 1. Go to **Admin** > **Security** and select the **Users*** tab.
 
@@ -71,7 +71,7 @@ Access to Customer Insights is restricted to users in your organization that wer
 
 ## View current permissions
 
-Go to **Admin** > **Security** and select the **Users** tab to view the list of users and their role assignments that are currently active. You can sort the list of users by any column or use the search box to find the user you want.
+Go to **Admin** > **Security** and select the **Users** tab to view the list of users and their role assignments that are currently active. You can sort the list of users by any column or use the search box to find a particular user.
 
 ## Manage current users
 

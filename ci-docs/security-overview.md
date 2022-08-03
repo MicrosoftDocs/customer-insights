@@ -56,15 +56,19 @@ For more information about Customer Lockbox, see the [summary](/power-platform/a
 
 Setting up Private Link in Customer Insights is a two-step process.
 
-1. Go to **Admin** > **Security** > **Private Links** in Customer Insights to initiate the creation of a Private Link.
+1. In Customer Insights, go to **Admin** > **Security** and select the **Private Links** tab.
+
+1. Select **Add Private Link**.
 
    The **Add Private Link** pane lists storage accounts from your tenant that you’ve got permissions to see.
 
 1. Select the subscription, resource group, and storage account.
 
-1. Review the data privacy and compliance and select **I agree**.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
-1. Go to your Data Lake Storage account and open the link presented on screen.
+1. Select **Save**.
+
+1. Go to your Data Lake Storage account and open the link presented on the screen.
 
 1. Approve the Private Link.
 

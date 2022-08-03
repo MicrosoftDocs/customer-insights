@@ -33,16 +33,19 @@ The **API usage** contains three sections:
 
 - **API calls** - a chart that visualizes the aggregated number of calls to the API in the selected time frame.
 - **Data transfer** - a chart that shows the amount of data that was transferred through the API in the selected time frame.
-- **Operations** - a table with rows for each available API operation and details about the usage of the operations. You can select an operation name to go to [the API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
+- **Operations** - a table with rows for each available API operation and details about the usage of the operations. Select an operation name to go to [the API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
-   Operations that use [real-time data ingestion](real-time-data-ingestion.md) contain a button with a binocular symbol to view real-time API usage. Select the button to open a side pane containing usage details for the real-time API usage in the current environment. **Select a time frame** to view.
-   Use the **Group by** box in the **Real-time API usage** pane to choose how to best present your real-time interactions. Group the data by API method, entity qualified name (ingested entity), created by (source of the event), result (success or failure) or error codes. The data is available as a history chart and as a table.
+   Operations that use [real-time data ingestion](real-time-data-ingestion.md) contain a binocular symbol to view real-time API usage.
+
+   1. Select the binocular to open the **Real-time API usage** pane containing usage details for the real-time API usage in the current environment.
+   1. **Select a time frame** to view.
+   1. Use the **Group by** box to choose how to best present your real-time interactions. Group the data by API method, entity qualified name (ingested entity), created by (source of the event), result (success or failure) or error codes. The data is available as a history chart and as a table.
 
 ## View system information
 
 1. Go to **Admin** > **System**.
 
-1. To view the environment display name, ID, region, type and session ID, select the **About** tab. If you have more than one work environment, give each an easily identifiable display name.
+1. To view the environment display name, ID, region, type and session ID, select the **About** tab.
 
 1. To view or change the language and country/region, select the **General** tab.
 
@@ -52,7 +55,7 @@ Customer Insights [supports many languages](/dynamics365/get-started/availabilit
 
 Imported data and information you entered manually aren't translated.
 
-1. To change your preferred language, choose a **Language** from the dropdown.
+1. To change your preferred language, choose a **Language** from the dropdown on the **General** tab.
 
 1. To change your preferred formatting for dates, time, and numbers, use the **Country/Region format** dropdown. A formatting preview is displayed. The system automatically suggests a selection when you choose a new language.
 
@@ -64,13 +67,15 @@ Track the progress of tasks, data ingestion, data exports, and several other imp
 
 1. Go to **Admin** > **System** and select the **Status** tab.
 
-   Status and processing information for various processes display. View the **Name** of the task and its corresponding entity, the **Status** of its most recent run, and when it was **Last updated**.
+   Status and processing information for various processes display. View the **Name** of the task, the **Status** of its most recent run, and when it was **Last updated**.
 
 1. To view the details of the last several runs, select the task or process name.
 
-1. To view progress details, select the status next to the task or process in the **Status** column. The **Progress details** pane displays.
+1. To view progress details for a task, select the status. The **Progress details** pane displays.
 
    :::image type="content" source="media/system-progress-details.png" alt-text="System progress details pane":::
+
+1. To view progress details for all tasks, select **Entire workflow**.
 
 ### Status definitions
 
@@ -79,11 +84,11 @@ The system uses the following statuses for tasks and processes:
 |Status  |Definition  |
 |---------|---------|
 |Canceled |Processing was canceled by the user before it finished.   |
-|Failed   |Data ingestion ran into errors.         |
-|Failure  |Processing has failed.  |
-|Not started   |The data source has no data ingested yet or still in draft mode.         |
+|Failed   |Task or process ran into errors.         |
+|Failure  |Task or process has failed.  |
+|Not started   |The data source has no data ingested yet or the task is still in draft mode.         |
 |Processing  |Task or process is in progress.  |
-|Refreshing    |Data ingestion is in progress. You can cancel this operation by selecting **Stop refreshing** in the **Actions** column. Stopping the refresh of a data source will revert it to its last refresh state.       |
+|Refreshing    |Task or process is in progress. To cancel this operation, select **Stop refreshing** in the **Actions** column. Stopping the refresh of a task or process will revert it to its last refresh state.       |
 |Skipped  |Task or process got skipped. One or more of the downstream processes this task depends on are failing or got skipped.|
 |Successful  |Task or process completed successfully. For data sources, indicates the data has been successfully ingested if a time is mentioned in the **Refreshed** column.|
 |Queued | Processing is queued and will start once all the upstream tasks and processes are completed. For more information, see [Refresh processes](#refresh-processes).|
