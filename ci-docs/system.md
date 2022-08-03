@@ -90,7 +90,7 @@ The system uses the following statuses for tasks and processes:
 
 ### Refresh processes
 
-Refresh for tasks and processes is run according to the [configured schedule](#schedule-tab).
+Refresh for tasks and processes is run according to the [configured schedule](schedule-refresh.md).
 
 |Process  |Description  |
 |---------|---------|
