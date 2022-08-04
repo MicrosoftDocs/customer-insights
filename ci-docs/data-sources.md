@@ -1,7 +1,7 @@
 ---
 title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
-ms.date: 07/26/2022
+ms.date: 08/04/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -72,5 +72,42 @@ To refresh a data source on demand:
 1. Select the data source you want to refresh and select **Refresh**. The data source is now triggered for a manual refresh. Refreshing a data source will update both the entity schema and data for all the entities specified in the data source.
 
 1. Select the status to open the **Progress details** pane and view the progress. To cancel the job, select **Cancel job** at the bottom of the pane.
+
+## Corrupted data sources
+
+Fields from an ingested data source can contain corrupted data. Records with corrupted fields are exposed in system-created entities. Knowing about corrupted records helps you identify which data to review and update on the source system. After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes. Customer Insights still processes corrupted records. However, they might cause issues when working with the unified data.
+
+For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system will flag this record as corrupted. Someone can now change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record will be removed from the corrupted entity.
+
+The following checks run on the ingested data to expose corrupted records:
+
+- The value of a field doesn't match with the data type of its column.
+- Fields contain characters that cause the columns to not match the expected schema. For example: incorrectly formatted quotes, unescaped quotes, or newline characters.
+- If there are datetime/date/datetimeoffset columns, their format must be specified in the model if it doesn't follow the standard ISO format.
+
+### Fix corrupted data
+
+1. Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. The naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'.
+
+1. Select a corrupted entity to identify the corrupted fields and the reason at the individual record level.
+
+   :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason.":::
+
+1. Fix the corrupted data. For example, for Azure Data Lake data sources, fix the data in the Data Lake Storage or in the manifest/model.json file. For Power Query data sources, fix the data in the source file and correct the data type in the transformation step on the **Power Query - Edit queries** page.
+
+After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes.
+
+### Common reasons for corrupted data
+
+- Datetime fields in the wrong format
+
+  The datetime fields in the entity are not in ISO or en-US formats. Ideally, all the datetime fields in an entity should be in the same format, but Customer Insights can work with different columns being in different formats if they are in the ISO format. However, if it is not possible to use ISO or en-US formats, Customer Insights supports an entity with a different format, but the datetime formats must be annotated in the manifest/model.
+
+  > [!TIP]
+  > The default datetime format in Customer Insights is en-US format.
+
+- Schema mismatch
+  - Data that does not conform to the schema can be caused by a difference in the number of columns in the data vs the schema or differences in the data types between the data and the schema. Correct either the source data or the schema.
+  - The presence of newline characters in the data splits the row into multiple rows at unintended locations causing data from different rows to be present in different rows.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

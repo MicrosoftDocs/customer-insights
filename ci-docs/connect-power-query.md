@@ -39,16 +39,17 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 1. Select **Transform data**.
 
-1. The **Power Query - Edit queries** dialog lets you review and refine the data. The entities that the systems identified in your selected data source appear in the left pane.
+1. Review and refine your data in the **Power Query - Edit queries** page. The entities that the systems identified in your selected data source appear in the left pane.
 
    :::image type="content" source="media/data-manager-configure-edit-queries.png" alt-text="Edit queries dialog":::
 
-1. You can also transform your data. Select an entity to edit or transform. Use the options in the Power Query window to apply transformations. Each transformation is listed under **Applied steps**. Power Query provides numerous [pre-built transformation](/power-query/power-query-what-is-power-query#transformations) options.
+1. Transform your data. Select an entity to edit or transform. Use the options in the Power Query window to apply transformations. Each transformation is listed under **Applied steps**. Power Query provides numerous [pre-built transformation](/power-query/power-query-what-is-power-query#transformations) options.
 
-   We recommend you use the following transformations:
-
-   - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform** and select **Use first row as headers**.
-   - Ensure the data type is set appropriately. For example, for date fields, select a date type.
+   > [!IMPORTANT]
+   > We recommend you use the following transformations:
+   >
+   > - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform** and select **Use first row as headers**.
+   > - Ensure the data type is set appropriately and matches the data. For example, for date fields, select a date type.
 
 1. To add additional entities to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 5-10 until you have added all entities for this data source. If you have a database that includes multiple datasets, each dataset is its own entity.
 
