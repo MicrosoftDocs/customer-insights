@@ -1,7 +1,7 @@
 ---
 title: "Connections (preview) overview"
 description: "Connections to other services from Customer Insights."
-ms.date: 08/02/2022
+ms.date: 08/04/2022
 ms.reviewer: nikeller
 
 ms.subservice: audience-insights
@@ -35,11 +35,11 @@ Only administrators can configure new connections, but the created connections a
 
 1. Go to **Admin** > **Connections**.
 
-1. Select **Add connection** and choose the type of connection you want to create. Or, select **Set up** on a tile on the **Discover** tab.
+1. Select **Add connection** and choose the type of connection you want to create. Or, go to the **Discover** tab and select **Set up** on a connection tile.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
-1. Enter the required details. The exact fields depend on what service you're connecting to. You can learn about details of a specific connection type in the article about the target service.
+1. Enter the required details. The exact fields depend on what service you're connecting to. For details of a specific connection type, refer to the article about the target service.
 
 1. If you [use your own Key Vault](use-azure-key-vault.md) to store secrets, activate **Use Key Vault** and choose the secret from the list.
 

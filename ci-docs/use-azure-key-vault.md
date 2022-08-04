@@ -36,7 +36,7 @@ Set up the dedicated key vault to stage and use secrets in an organization's com
 
 ### Recommendations
 
-- Use a separate or dedicated key vault that contains only the secrets required for Customer Insights. Read more about why [separate key vaults are recommended](/azure/key-vault/general/best-practices#why-we-recommend-separate-key-vaults).
+- [Use a separate or dedicated key vault](/azure/key-vault/general/best-practices#why-we-recommend-separate-key-vaults) that contains only the secrets required for Customer Insights.
 
 - Follow the [best practices to use Key Vault](/azure/key-vault/general/best-practices#turn-on-logging) for control access, backup, audit, and recovery options.
 
@@ -62,7 +62,7 @@ When [setting up connections](connections.md) to [supported third-party](#suppor
 1. Instead of entering the secret manually, choose the secret name that points to the secret value in the key vault.
 
    :::image type="content" source="media/use-key-vault-secret.png" alt-text="Connection pane with an SFTP connection that uses a Key Vault secret.":::
-1. Review the [Data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
+
 1. Select **Save** to create the connection.
 
 ## Supported connection types

@@ -61,7 +61,7 @@ Access to Customer Insights is restricted to users in your organization that are
 
 ## Add users
 
-1. Go to **Admin** > **Security** and select the **Users*** tab.
+1. Go to **Admin** > **Security** and select the **Users** tab.
 
 1. Select **Add users** to open the **Add/Edit permissions** pane.
 

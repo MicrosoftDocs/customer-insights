@@ -29,7 +29,7 @@ View details about the real-time API usage and see which events happened in a gi
 
 1. **Select a time frame** to view.
 
-The **API usage** contains three sections:
+The **API usage** page contains three sections:
 
 - **API calls** - a chart that visualizes the aggregated number of calls to the API in the selected time frame.
 - **Data transfer** - a chart that shows the amount of data that was transferred through the API in the selected time frame.
@@ -37,9 +37,9 @@ The **API usage** contains three sections:
 
    Operations that use [real-time data ingestion](real-time-data-ingestion.md) contain a binocular symbol to view real-time API usage.
 
-   1. Select the binocular to open the **Real-time API usage** pane containing usage details for the real-time API usage in the current environment.
+   1. Select the binocular to open the **Real-time API usage** pane containing usage details for the operation.
    1. **Select a time frame** to view.
-   1. Use the **Group by** box to choose how to best present your real-time interactions. Group the data by API method, entity qualified name (ingested entity), created by (source of the event), result (success or failure) or error codes. The data is available as a history chart and as a table.
+   1. Use the **Group by** box to choose how to best present your real-time interactions. Group the data by API **Method**, **Entity qualified name** (ingested entity), **Created by** (source of the event), **Result** (success or failure) or **Error codes**. The data is available as a history chart and as a table.
 
 ## View system information
 
@@ -47,7 +47,7 @@ The **API usage** contains three sections:
 
 1. To view the environment display name, ID, region, type and session ID, select the **About** tab.
 
-1. To view or change the language and country/region, select the **General** tab.
+1. To view the language and country/region, select the **General** tab.
 
 ### Update preferred language or country/region
 
@@ -55,7 +55,9 @@ Customer Insights [supports many languages](/dynamics365/get-started/availabilit
 
 Imported data and information you entered manually aren't translated.
 
-1. To change your preferred language, choose a **Language** from the dropdown on the **General** tab.
+1. Go to **Admin** > **System** and select the **General** tab.
+
+1. To change your preferred language, choose a **Language** from the dropdown.
 
 1. To change your preferred formatting for dates, time, and numbers, use the **Country/Region format** dropdown. A formatting preview is displayed. The system automatically suggests a selection when you choose a new language.
 
@@ -83,12 +85,12 @@ The system uses the following statuses for tasks and processes:
 
 |Status  |Definition  |
 |---------|---------|
-|Canceled |Processing was canceled by the user before it finished.   |
+|Canceled |Task or process was canceled by the user before it finished.   |
 |Failed   |Task or process ran into errors.         |
 |Failure  |Task or process has failed.  |
-|Not started   |The data source has no data ingested yet or the task is still in draft mode.         |
+|Not started   |Data source has no data ingested yet or the task is still in draft mode.         |
 |Processing  |Task or process is in progress.  |
-|Refreshing    |Task or process is in progress. To cancel this operation, select **Stop refreshing** in the **Actions** column. Stopping the refresh of a task or process will revert it to its last refresh state.       |
+|Refreshing    |Task or process is in progress. To cancel this operation, select **Refreshing** and **Cancel job**. Stopping the refresh of a task or process will revert it to its last refresh state.       |
 |Skipped  |Task or process got skipped. One or more of the downstream processes this task depends on are failing or got skipped.|
 |Successful  |Task or process completed successfully. For data sources, indicates the data has been successfully ingested if a time is mentioned in the **Refreshed** column.|
 |Queued | Processing is queued and will start once all the upstream tasks and processes are completed. For more information, see [Refresh processes](#refresh-processes).|

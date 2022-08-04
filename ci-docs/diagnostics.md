@@ -87,8 +87,8 @@ Under the **Queries** window, expand the **Audit** solution and locate the examp
 
 1. Select the diagnostics destination in the list.
 
-> [!TIP]
-> Removing the destination stops the log forwarding, but does not delete the resource on the Azure subscription. To delete the resource in Azure, select the link in the **Actions** column to open the Azure portal for the selected resource and delete it there. Then delete the diagnostics destination.
+   > [!TIP]
+   > Removing the destination stops the log forwarding, but does not delete the resource on the Azure subscription. To delete the resource in Azure, select the link in the **Actions** column to open the Azure portal for the selected resource and delete it there. Then delete the diagnostics destination.
 
 1. In the **Actions** column, select the **Delete** icon.
 
