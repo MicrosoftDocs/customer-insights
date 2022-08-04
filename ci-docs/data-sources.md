@@ -75,9 +75,9 @@ To refresh a data source on demand:
 
 ## Corrupted data sources
 
-Fields from an ingested data source can contain corrupted data. Records with corrupted fields are exposed in system-created entities. Knowing about corrupted records helps you identify which data to review and update on the source system. After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes. Customer Insights still processes corrupted records. However, they might cause issues when working with the unified data.
+Fields from an ingested data source can contain corrupted data. Records with corrupted fields are exposed in system-created entities. View corrupted records to identify which data to review and update on the source system.
 
-For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system will flag this record as corrupted. Someone can now change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record will be removed from the corrupted entity.
+For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system flags this record as corrupted. Change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record is removed from the corrupted entity.
 
 The following checks run on the ingested data to expose corrupted records:
 
@@ -89,9 +89,9 @@ The following checks run on the ingested data to expose corrupted records:
 
 1. Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. The naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'.
 
-1. Select a corrupted entity to identify the corrupted fields and the reason at the individual record level.
+1. Select a corrupted entity to identify the corrupted fields in a record and the reason.
 
-   :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason.":::
+   :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason." lightbox="media/corruption-reason.png":::
 
 1. Fix the corrupted data. For example, for Azure Data Lake data sources, fix the data in the Data Lake Storage or in the manifest/model.json file. For Power Query data sources, fix the data in the source file and correct the data type in the transformation step on the **Power Query - Edit queries** page.
 
