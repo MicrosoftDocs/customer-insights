@@ -7,8 +7,8 @@ ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: overview
-author: mukeshpo
-ms.author: mukeshpo
+author: Scott-Stabbert
+ms.author: stabbert
 manager: shellyha
 
 searchScope: 

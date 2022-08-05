@@ -7,7 +7,7 @@ ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: overview
-author: sstabbert
+author: Scott-Stabbert
 ms.author: sstabbert
 manager: shellyha
 
