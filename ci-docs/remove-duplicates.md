@@ -7,7 +7,7 @@ ms.date: 08/01/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
