@@ -2,7 +2,7 @@
 title: "Remove duplicates before unifying data"
 description: "The second step in the unification process is selecting which record to keep when duplicates are found."
 recommendations: false
-ms.date: 04/22/2022
+ms.date: 08/01/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial

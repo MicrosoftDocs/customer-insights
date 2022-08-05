@@ -2,7 +2,7 @@
 title: "Create a unified contact profile"
 description: "Go through the data unification process to create a single master dataset of contacts."
 recommendations: false
-ms.date: 07/27/2022
+ms.date: 08/05/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -18,13 +18,24 @@ searchScope:
   - customerInsights
 ---
 
-# Create a unified contact profile
+# Create a unified contact profile (preview)
 
-After [unifying business accounts](map-entities.md), unify the contacts. The contact unification process maps contact data from your data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
+After [unifying business accounts](map-entities.md), you can optionally unify contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
 
 The following steps and images reflect the first time you go through the contact unification process. To edit existing contact unification settings, see [Update the unification settings](data-unification-update.md).
 
 The first few steps are identical to the unifying accounts steps.
+
+## Prerequisites
+
+Account and contact records must have a unique key (called a foreign key) that connects them. For example, an account ID that exists in the account record and contact record that ties the account and contact together.
+
+## Limitations
+
+- Contacts without a link to an account are dropped.
+- If an account is deduplicated, a winner record is identified based on the merge preferences. Loser records are not selected and therefore are dropped. Contacts associated with the losing records are dropped.
+- An account can have multiple contacts, but a contacts is linked to a single account.
+- The contact attributes mapped in the semantic mapping step are the only attributes that can display on the Customer card. However, 17 attributes are available.
 
 ## Initial contact unification steps
 
@@ -48,7 +59,7 @@ The first few steps are identical to the unifying accounts steps.
 
 ## Define the semantic fields for unified contacts
 
-This step in the unification process maps your unified contact fields to semantic types. Semantic mapping lets you map your non-activity data to pre-defined schemas. These schemas help Customer Insights to better understand your data attributes. You can map your [contact activity](activities.md#define-a-contact-activity) data to the schemas.
+This step in the unification process maps your unified contact fields to semantic types. In B-to-B, the customer cards show accounts. When the card is selected, all the contacts associated with the account display. The fields you map in this step are the fields that will display on the cards.
 
 1. Select the semantic type that maps to each unified field. Select **None** if a semantic type is not available.
 
