@@ -34,7 +34,7 @@ Account and contact records must have a unique key (called a foreign key) that c
 
 - Contacts without a link to an account are dropped.
 - If an account is deduplicated, a winner record is identified based on the merge preferences. Loser records are not selected and therefore are dropped. Contacts associated with the losing records are dropped.
-- An account can have multiple contacts, but a contacts is linked to a single account.
+- An account can have multiple contacts, but a contact is linked to a single account.
 - The contact attributes mapped in the semantic mapping step are the only attributes that can display on the Customer card. However, 17 attributes are available.
 
 ## Initial contact unification steps
@@ -115,6 +115,8 @@ When needed, [make changes to the contact unification settings](data-unification
 
 When the unification process completes, the unified contact profile entity, called *ContactProfile*, displays on the **Entities** page in the **Semantic entities** section. The first successful unification run creates the unified *ContactProfile* entity. All subsequent runs expand that entity.
 
+The *ContactsCustomer* entity (preview) is created and displays on the **Entities** page in the **System** section. This entity contains the contact data without the links to the accounts. This entity is used as input into the semantic mapping and relationship steps of contact unification.
+
 Deduplication and conflation entities are created and display in the **System** section in the **Entities** page. A deduplicated entity for each of the source entities is created with the name **Deduplication_DataSource_Entity**. The **ContactsConflationMatchPairs** entity contains information about cross-entity matches.
 
 A deduplication output entity contains the following information:
@@ -124,8 +126,6 @@ A deduplication output entity contains the following information:
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
-
-A **ContactsCustomer** entity is created and is used for internal processing.
 
 ## Next Step
 

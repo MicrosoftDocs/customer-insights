@@ -41,7 +41,7 @@ The unification process maps customer data from your data sources, removes dupli
 After unifying accounts, you can optionally unify contacts (preview) for those accounts and link the unified contacts to the unified accounts. The processes are similar in that they both map data from your data sources, remove duplicates, match the data across entities, and create a unified profile. In contact unification, additional steps include defining semantic mapping for your contacts and creating the relationship between contacts and accounts.
 
 > [!NOTE]
-> Account and contact records must have a unique key that connects them. For example, an account ID that exists in the account file and contact file that ties the account and contact together.
+> Account and contact records must have a unique key that connects them. For example, an account ID that exists in the account record and contact record that ties the account and contact together.
 
 Unification is performed in the following order:
 
@@ -55,7 +55,7 @@ Unification is performed in the following order:
 
 1. [Review](review-unification.md) and create the unified profile.
 
-1. After unifying your accounts, [unify your contacts](data-unification-contacts.md) (preview).
+1. After unifying your accounts, optionally [unify your contacts](data-unification-contacts.md) (preview).
 
 ---
 
