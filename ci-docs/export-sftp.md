@@ -26,6 +26,11 @@ Use your customer data in third-party applications by exporting them to a Secure
 - SFTP destinations behind firewalls are currently not supported.
 - The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server.
 - Up to 100 million customer profiles, which can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory.
+- If you use an SSH key for authentication, make sure you [create your private key](/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example) as PEM or SSH.COM format. If you are using Putty, convert your private key by exporting is as Open SSH. The following private key formats are supported:
+  - RSA in OpenSSL PEM and ssh.com format
+  - DSA in OpenSSL PEM and ssh.com format
+  - ECDSA 256/384/521 in OpenSSL PEM format
+  - ED25519 and RSA in OpenSSH key format
 
 ## Set up connection to SFTP
 
@@ -39,9 +44,11 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Choose how to connect, either username and password or SSH key.
-   - **Username and password**: Provide a **Username**, **Password**, **Hostname**, and **Export folder** for your SFTP account
-   - **SSH key**: Provide a **Username**, **Private key**, **Passphrase**, **Hostname**, and **Export folder** for your SFTP account.
+1. Choose whether you want to authenticate through SSH or username/password for your connection and provide the necessary details. If you use an SSH key for authentication, make sure you [create your private key](/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example) as PEM or SSH.COM format. If you are using Putty, convert your private key by exporting is as Open SSH. The following private key formats are supported:
+   - RSA in OpenSSL PEM and ssh.com format
+   - DSA in OpenSSL PEM and ssh.com format
+   - ECDSA 256/384/521 in OpenSSL PEM format
+   - ED25519 and RSA in OpenSSH key format
 
 1. Select **Verify** to test the connection.
 

@@ -105,6 +105,8 @@ You can find details about the processing of an enrichment, including its status
 1. Under the enrichment you want to see the progress, select **See details**.
 1. In the **Task details** pane, select **Show details** to see the processes that are involved in updating the enrichment and their status.
 
+[!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
+
 ## View enrichment results
 
 After a completed enrichment run, review the enrichment results.
