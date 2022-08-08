@@ -2,7 +2,7 @@
 title: "Create a unified view of your customers"
 description: "Go through the data unification process with your data to create a single master dataset of account or customer profiles."
 recommendations: false
-ms.date: 08/05/2022
+ms.date: 08/08/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -38,12 +38,7 @@ The unification process maps customer data from your data sources, removes dupli
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-After unifying accounts, you can optionally unify contacts (preview) for those accounts and link the unified contacts to the unified accounts. The processes are similar in that they both map data from your data sources, remove duplicates, match the data across entities, and create a unified profile. In contact unification, additional steps include defining semantic mapping for your contacts and creating the relationship between contacts and accounts.
-
-> [!NOTE]
-> Account and contact records must have a unique key that connects them. For example, an account ID that exists in the account record and contact record that ties the account and contact together.
-
-Unification is performed in the following order:
+The unification process maps account data from your data sources, removes duplicates, matches the data across entities, and creates a unified profile. Unification is performed in the following order:
 
 1. [Source fields](map-entities.md) (previously called Map): In the source fields step, select entities and fields to include in the unify account process. Map fields to a common semantic type that describes the purpose of the field.
 
@@ -55,7 +50,7 @@ Unification is performed in the following order:
 
 1. [Review](review-unification.md) and create the unified profile.
 
-1. After unifying your accounts, optionally [unify your contacts](data-unification-contacts.md) (preview).
+After unifying accounts, you can optionally [unify contacts (preview)](data-unification-contacts.md) for those accounts and link the unified contacts to the unified accounts.
 
 ---
 
