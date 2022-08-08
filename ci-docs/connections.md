@@ -76,7 +76,8 @@ When setting up or editing an export connection, choose which users are allowed 
 
 If the connection you're removing is used by enrichments or exports, first detach or remove them. The remove dialog guides you to the relevant enrichments or exports.
 
-Detached enrichments and exports become inactive. You reactivate them by adding another connection to them on the [Enrichments](enrichment-hub.md) or [Exports](export-destinations.md) page.
+> [!TIP]
+> Deactivated enrichments and detached exports become inactive. You reactivate them by adding another connection to them on the [Enrichments](enrichment-hub.md) or [Exports](export-destinations.md) page.
 
 1. Go to **Admin** > **Connections**.
 

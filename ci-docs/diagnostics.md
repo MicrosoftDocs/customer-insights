@@ -1,7 +1,7 @@
 ---
 title: "Export diagnostic logs (preview)"
 description: "Learn how to send logs to Microsoft Azure Monitor."
-ms.date: 08/02/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -23,7 +23,7 @@ Customer Insights sends the following event logs:
 - **Audit Events**
   - **APIEvent** - enables change tracking via the Dynamics 365 Customer Insights UI.
 - **Operational Events**
-  - **WorkflowEvent** - lets you set up [Data Sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and finally [export](export-destinations.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that triggers the unification process, which will pull in enrichments and once done export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
+  - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-destinations.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that trigger the unification process, which will pull in enrichments and export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
   - **APIEvent** - sends all API calls of the customers instance to Dynamics 365 Customer Insights. For more information, see the [APIEvent Schema](#api-event-schema).
 
 ## Set up the diagnostic settings
@@ -46,7 +46,7 @@ Customer Insights sends the following event logs:
 
 1. Provide a name in the **Name for diagnostics destination** field.
 
-1. Select the **Resource type** (Storage account, event hub, or log analytics).
+1. Select the **Resource type** (Storage Account, Event Hub, or Log Analytics).
 
 1. Select the **Subscription**, **Resource group**, and **Resource** for the destination resource. See [Configuration on the destination resource](#configuration-on-the-destination-resource) for permission and log information.
 
@@ -56,7 +56,7 @@ Customer Insights sends the following event logs:
 
 ## Configuration on the destination resource
 
-Based on your choice of resource type, the following steps automatically apply:
+Based on your choice of resource type, the following changes automatically occur:
 
 ### Storage account
 
@@ -67,14 +67,14 @@ Customer Insights service principal gets the **Storage Account Contributor** per
 
 ### Event Hub
 
-Customer Insights service principal gets the **Azure Event Hubs Data Owner** permission on the resource and will create two Event Hubs under the selected namespace:
+Customer Insights service principal gets the **Azure Event Hubs Data Owner** permission on the resource and creates two Event Hubs under the selected namespace:
 
 - `insight-logs-audit` containing **audit events**
 - `insight-logs-operational` containing **operational events**
 
 ### Log Analytics
 
-Customer Insights service principal gets the **Log Analytics Contributor** permission on the resource. The logs will be available under **Logs** > **Tables** > **Log Management** on the selected Log Analytics workspace. Expand the **Log Management** solution and locate the `CIEventsAudit` and `CIEventsOperational` tables.
+Customer Insights service principal gets the **Log Analytics Contributor** permission on the resource. The logs are available under **Logs** > **Tables** > **Log Management** on the selected Log Analytics workspace. Expand the **Log Management** solution and locate the `CIEventsAudit` and `CIEventsOperational` tables.
 
 - `CIEventsAudit` containing **audit events**
 - `CIEventsOperational` containing **operational events**

@@ -1,7 +1,7 @@
 ---
 title: "Assign user permissions"
 description: "Learn about permissions and user roles."
-ms.date: 08/02/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -33,7 +33,7 @@ Access to Customer Insights is restricted to users in your organization that are
 
 - All permissions available to the Viewer.
 - Load and transform data using the **Data sources** page.
-- Complete ***Data Unification** which result in the unified customer profile entity.
+- Complete **Data Unification** which result in the unified customer profile entity.
 - Define **Relationships** and **Activities**.
 - Create segments using the **Segments** page.
 - Create measures using the **Measures** page.
@@ -71,11 +71,11 @@ Access to Customer Insights is restricted to users in your organization that are
 
 ## View current permissions
 
-Go to **Admin** > **Security** and select the **Users** tab to view the list of users and their role assignments that are currently active. You can sort the list of users by any column or use the search box to find a particular user.
+Go to **Admin** > **Security** and select the **Users** tab to view the list of active users and their role assignments. You can sort the list of users by any column or use the search box to find a particular user.
 
 ## Manage current users
 
-Go to **Admin** > **Security** and select the **Users** tab. You can sort the list of users by an column or use the search box to find the user you want to manage.
+Go to **Admin** > **Security** and select the **Users** tab. You can sort the list of users by any column or use the search box to find the user you want to manage.
 
 Select a user to view available actions.
 

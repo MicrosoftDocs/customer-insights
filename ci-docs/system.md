@@ -29,11 +29,11 @@ View details about the real-time API usage and see which events happened in a gi
 
 1. **Select a time frame** to view.
 
-The **API usage** page contains three sections:
+   The **API usage** page contains three sections:
 
-- **API calls** - a chart that visualizes the aggregated number of calls to the API in the selected time frame.
-- **Data transfer** - a chart that shows the amount of data that was transferred through the API in the selected time frame.
-- **Operations** - a table with rows for each available API operation and details about the usage of the operations. Select an operation name to go to [the API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
+   - **API calls** - a chart that visualizes the aggregated number of calls to the API in the selected time frame.
+   - **Data transfer** - a chart that shows the amount of data that was transferred through the API in the selected time frame.
+   - **Operations** - a table with rows for each available API operation and details about the usage of the operations. Select an operation name to go to [the API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
    Operations that use [real-time data ingestion](real-time-data-ingestion.md) contain a binocular symbol to view real-time API usage.
 

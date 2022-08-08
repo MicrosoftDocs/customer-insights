@@ -54,7 +54,7 @@ For details about which permissions on the key vault are granted to Customer Ins
 
 ## Use the key vault in the connection setup
 
-When [setting up connections](connections.md) to [supported third-party](#supported-connection-types) systems, the secrets from the linked Key Vault can be used to configure the connections.
+When [setting up connections](connections.md) to [supported third-party](#supported-connection-types) systems, use the secrets from the linked Key Vault to configure the connections.
 
 1. Go to **Admin** > **Connections**.
 1. Select **Add connection**.

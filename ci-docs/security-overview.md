@@ -29,7 +29,7 @@ View and manage the keys to use the [Customer Insights APIs](apis.md) with the d
 
    1. To copy the primary or secondary API key, select the **Copy** symbol.
 
-   1. To create new primary and secondary API keys, select **Regenerate primary** or **Regenerate secondary**.
+   1. To create new primary or secondary API keys, select **Regenerate primary** or **Regenerate secondary**.
 
 ## Securely access customer data with Customer Lockbox (Preview)
 
