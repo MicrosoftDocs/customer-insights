@@ -1,7 +1,7 @@
 ---
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights."
-ms.date: 08/02/2022
+ms.date: 08/09/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -43,9 +43,9 @@ View details about the real-time API usage and see which events happened in a gi
 
 ## View system information
 
-1. Go to **Admin** > **System**.
+View the environment display name, ID, region, type and session ID.
 
-1. To view the environment display name, ID, region, type and session ID, select the **About** tab.
+1. Go to **Admin** > **System** and select the **About** tab.
 
 1. To view the language and country/region, select the **General** tab.
 

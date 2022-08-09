@@ -1,13 +1,13 @@
 ---
 title: "Schedule system refresh"
 description: "Schedule the time when the system should be refreshed"
-ms.date: 08/08/2022
+ms.date: 08/09/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-system-schedule
@@ -26,12 +26,14 @@ Schedule automatic refreshes of all your [ingested data sources](data-sources.md
 
 1. Go to **Admin** > **System** and select the **Schedule** tab.
 
-2. The default state for the scheduled refresh is **Off**. To enable scheduled refreshes, change the toggle at the top of the screen to **On**.
+   :::image type="content" source="media/schedule_refresh.png" alt-text="Schedule refresh tab from System page.":::
 
-3. Choose between **Weekly** (default) and **Daily** refreshes. If you intend to schedule weekly refreshes, select one or more days on which you want to run the refresh.
+1. The default state for the scheduled refresh is **Off**. To enable scheduled refreshes, change the toggle at the top of the screen to **On**.
 
-4. Set your **Time zone**, then use the **Time** dropdown to set your refresh timing. When you're finished, select **Set**. If you'd like to schedule multiple refreshes in a single day, select **Add another time**.
+1. Choose between **Weekly** (default) and **Daily** refreshes. If you intend to schedule weekly refreshes, select one or more days on which you want to run the refresh.
 
-5. Select **Save** to apply your changes.
+1. Set your **Time zone**, then use the **Time** dropdown to set your refresh timing. When you're finished, select **Set**. If you'd like to schedule multiple refreshes in a single day, select **Add another time**.
+
+1. Select **Save** to apply your changes.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
