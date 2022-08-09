@@ -53,7 +53,7 @@ When you enable Dynamics 365 Customer Insights to transmit data to third parties
 
 Your Dynamics 365 Customer Insights administrator can remove the connection at any time to discontinue use of the functionality.
 
-### Allow contributors to use a connection for exports
+## Allow contributors to use a connection for exports
 
 When setting up or editing an export connection, choose which users are allowed to use this specific connection to define [exports](export-destinations.md). By default, a connection is available to users with an administrator role. Change the **Choose who can use this connection** setting to allow users with contributor role to use this connection.
 
