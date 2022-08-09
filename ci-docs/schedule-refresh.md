@@ -19,7 +19,7 @@ searchScope:
 Schedule automatic refreshes of all your [ingested data sources](data-sources.md). Automatic refreshes help ensure that updates from your data sources are reflected in your unified customer profiles.
 
 > [!NOTE]
-> Data sources managed by you refresh on their own schedules. To schedule refresh of data sources managed by you, configure refresh settings on that specific data source from the **Data sources** page.
+> Power Query data sources managed by you refresh on their own schedules. To schedule refresh of these Power Query data sources, configure refresh settings on that specific data source from the **Data sources** page.
 > :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Dataflow refresh settings.":::
 
 ## Set system refresh schedule
