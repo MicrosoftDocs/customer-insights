@@ -22,9 +22,9 @@ To review or change any unification settings once a unified profile has been cre
 
 1. Go to **Data** > **Unify**.
 
-   For individual customers (B-to-C), the **Unify** page displays the number of unified customer profiles and tiles for each of the unification steps.
+For individual customers (B-to-C), the **Unify** page displays the number of unified customer profiles and tiles for each of the unification steps.
 
-   :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified." lightbox="media/m3_unified.png":::
+   :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified."::: lightbox="media/m3_unified.png":::
 
    For business accounts (B-to-B), the **Unify** page displays the number of unified account profiles and tiles for each of the account unification steps. The page also displays the number of unified contact profiles and tiles for each of the contact unification steps. Choose the appropriate tile under **Unify Accounts** or **Unify Contacts (preview)** depending on what you want to update.
 
