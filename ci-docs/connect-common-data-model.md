@@ -193,4 +193,17 @@ You can update the *Connect to storage account using* option. For more informati
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
+### Common reasons for corrupted data
+
+- Datetime fields in the wrong format
+
+  The datetime fields in the entity are not in ISO or en-US formats. Ideally, all the datetime fields in an entity should be in the same format.
+
+  > [!TIP]
+  > The default datetime format in Customer Insights is en-US format.
+
+- Schema mismatch
+  - Data that does not conform to the schema can be caused by a difference in the number of columns in the data vs the schema or differences in the data types between the data and the schema. Correct either the source data or the schema.
+  - The presence of newline characters in the data splits the row into multiple rows at unintended locations causing data from different rows to be present in different rows.
+
 [!INCLUDE [footer-include](includes/footer-banner.md)]
