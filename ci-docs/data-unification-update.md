@@ -44,7 +44,7 @@ For individual customers (B-to-C), the **Unify** page displays the number of uni
 1. After making your changes, choose your next option:
 
    - [Run matching conditions](#run-matching-conditions) to quickly evaluate the quality of your matching conditions (deduplication and match rules) without updating the unified profile. The **Run matching conditions only** option doesn't display for single entity.
-   - [Unify profiles](#run-updates-to-the-unified-profile) to run matching conditions and update the unified profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+   - [Unify profiles](#run-updates-to-the-unified-profile) to run matching conditions and update the unified profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
    - [Unify profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions, update the unified profile entity, and update all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically. In B-to-B, unification is run on both the account and contact entities updating the unified profiles.
 
 ## Edit source fields
@@ -173,7 +173,7 @@ Run matching conditions runs deduplication and match rules only and updates the 
 
 ## Run updates to the unified profile
 
-- To run matching conditions and update the unified profile entity *without* impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts** > **Unify profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).
+- To run matching conditions and update the unified profile entity *without* impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts** > **Unify profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
 - To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically.
 
   > [!TIP]
