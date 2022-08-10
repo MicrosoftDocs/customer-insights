@@ -20,7 +20,7 @@ Azure Synapse is an analytics service that accelerates time to insight across da
 > [!NOTE]
 > Make sure to set all **role assignments** as described.
 
-- In Customer Insights, your Azure Active Directory (AD) user account must have an [Administrator role](permissions.md#assign-roles-and-permissions).
+- In Customer Insights, your Azure Active Directory (AD) user account must have an [Administrator role](permissions.md#add-users).
 
 In Azure:
 
