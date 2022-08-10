@@ -75,7 +75,7 @@ Select an export to view available actions.
 
 ## Schedule and run exports
 
-Each export you configure has a refresh schedule. During a refresh, the system looks for new or updated data to include in an export. By default, exports are run as part of every [scheduled system refresh](system.md#schedule-tab). You can customize the refresh schedule or turn it off to run exports manually.
+Each export you configure has a refresh schedule. During a refresh, the system looks for new or updated data to include in an export. By default, exports are run as part of every [scheduled system refresh](schedule-refresh.md). You can customize the refresh schedule or turn it off to run exports manually.
 
 Export schedules depend on the state of your environment. If there are updates in progress on [dependencies](system.md#refresh-processes) when a scheduled export should start, the system will first complete the updates and then run the export. The **Refreshed** column shows when an export was last refreshed.
 
