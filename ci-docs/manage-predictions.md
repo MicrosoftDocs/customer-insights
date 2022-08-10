@@ -54,7 +54,7 @@ The following columns in the report contain helpful information to improve the d
 
 ## Refresh a prediction
 
-Predictions will automatically refresh on the same [schedule your data refreshes](system.md#schedule-tab) as configured in settings. You can refresh them manually too.
+Predictions will automatically refresh on the same [schedule your data refreshes](schedule-refresh.md) as configured in settings. You can refresh them manually too.
 
 1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
 

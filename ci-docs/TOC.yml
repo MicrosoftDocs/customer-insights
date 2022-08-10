@@ -306,18 +306,20 @@
 
 - name: Administration
   items:
-    - name: Set up the system configuration
-      href: system.md
-    - name: Configure security settings
-      href: security-overview.md
     - name: Assign user permissions
       href: permissions.md
     - name: Bring your own Key Vault
       href: use-azure-key-vault.md
+    - name: Configure security settings
+      href: security-overview.md
     - name: Export diagnostic logs
       href: diagnostics.md
-    - name: Connections overview
+    - name: Manage connections
       href: connections.md
+    - name: Schedule system refresh
+      href: schedule-refresh.md
+    - name: View system configuration
+      href: system.md
 
 - name: APIs
   items:
