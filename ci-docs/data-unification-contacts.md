@@ -2,7 +2,7 @@
 title: "Create a unified contact profile (preview)"
 description: "Go through the data unification process to create a single master dataset of contacts."
 recommendations: false
-ms.date: 08/08/2022
+ms.date: 08/10/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -39,7 +39,7 @@ Account and contact records must have a unique key (called a foreign key) that c
 
 ## Select source fields
 
-1. Under **Unify contacts**, select **Get started**.
+1. Under **Unify contacts (preview)**, select **Get started**.
 
 1. [Select the entities and fields](map-entities.md) for your contact data sources, including the primary keys and attribute types.
 
@@ -88,6 +88,8 @@ This step in the unification process connects your contact data to its correspon
 
 ## Review contact unification
 
+Review the summary of changes, create the unified profile, and review the results.
+
 ### Review and create contact profiles
 
 This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified contact profile.
@@ -96,17 +98,15 @@ This last step in the unification process shows a summary of the steps in the pr
 
 1. Select **Edit** on any of the contact unification steps to review and make any changes.
 
-1. If you are satisfied with your selections, select **Create contact profiles**.
-
-### Monitor process and view results
-
-The **Unify** page displays while the unified contact profile is being created.
+1. If you are satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created.
   
    :::image type="content" source="media/b2b_unify_refreshing.png" alt-text="Screenshot of Unify Contacts page with tiles showing Queued or Refreshing.":::
 
    [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
 The unification algorithm takes some time to complete and you can't change the configuration until it completes.
+
+### View the results of contact unification
 
 After unification completes, the **Data** > **Unify** page shows the number of unified contact profiles. The results of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
 
@@ -125,7 +125,7 @@ Go to **Data** > **Entities** to verify the output entities.
 
 The unified contact profile entity, called *ContactProfile*, displays in the **Semantic entities** section. The first successful unification run creates the unified *ContactProfile* entity. All subsequent runs expand that entity.
 
-The *ContactsCustomer* entity (preview) is created and displays in the **System** section. This entity contains the contact data without the links to the accounts. This entity is used as input into the semantic mapping and relationship steps of contact unification.
+The *ContactsCustomer* entity (preview) is created and displays in the **Profiles** section. This entity contains the contact data without the links to the accounts. This entity is used as input into the semantic mapping and relationship steps of contact unification.
 
 Deduplication and conflation entities are created and display in the **System** section. A deduplicated entity for each of the source entities is created with the name **Deduplication_DataSource_Entity**. The **ContactsConflationMatchPairs** entity contains information about cross-entity matches.
 

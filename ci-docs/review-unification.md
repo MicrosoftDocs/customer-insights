@@ -1,7 +1,7 @@
 ---
 title: "Review data unification"
 description: "Review the data unification steps, create unified customer profiles, and review the results"
-ms.date: 07/27/2022
+ms.date: 08/10/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -18,13 +18,15 @@ searchScope:
 
 # Review data unification
 
+Review the summary of changes, create the unified profile, and review the results.
+
+## Review and create customer profiles
+
 This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified profile.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
 :::image type="content" source="media/m3_review.png" alt-text="Screenshot of Review and create customer profiles.":::
-
-## Review the data unification steps
 
 1. Select **Edit** on any of the data unification steps to review and make any changes.
 
@@ -36,7 +38,7 @@ This last step in the unification process shows a summary of the steps in the pr
 
 The unification algorithm takes some time to complete and you can't change the configuration until it completes.
 
-## Review the results of data unification
+## View the results of data unification
 
 After unification, the **Data** > **Unify** page shows the number of unified customer profiles (or account profiles for B-to-B). The results of each step in the unification process display on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
 
@@ -49,11 +51,13 @@ We recommend you review the results, particularly the quality of your [match rul
 
 When needed, [make changes to the unification settings](data-unification-update.md) and rerun the unified profile.
 
-### Output entities from data unification
+### Verify output entities from data unification
 
-When the unification process completes, the unified customer profile entity, called *Customer*, is listed on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+Go to **Data** > **Entities** to verify the output entities.
 
-Deduplication and conflation entities are created and display in the **System** section in the **Entities** page. A deduplicated entity for each of the source entities is created with the name **Deduplication_DataSource_Entity**. The **ConflationMatchPairs** entity contains information about cross-entity matches.
+The unified customer profile entity, called *Customer*, displays in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+
+Deduplication and conflation entities are created and display in the **System** section. A deduplicated entity for each of the source entities is created with the name **Deduplication_DataSource_Entity**. The **ConflationMatchPairs** entity contains information about cross-entity matches.
 
 A deduplication output entity contains the following information:
 - IDs / Keys
@@ -65,7 +69,7 @@ A deduplication output entity contains the following information:
 
 ## Next Step
 
-- For B-to-B, perform [contact unification](data-unification-contacts.md).
+- For B-to-B, optionally perform [contact unification](data-unification-contacts.md).
 
 - For B-to-C, configure [activities](activities.md), [enrichments](enrichment-hub.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
 
