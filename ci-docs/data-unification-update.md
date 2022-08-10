@@ -1,7 +1,7 @@
 ---
 title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
-ms.date: 08/05/2022
+ms.date: 08/10/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -22,9 +22,9 @@ To review or change any unification settings once a unified profile has been cre
 
 1. Go to **Data** > **Unify**.
 
-For individual customers (B-to-C), the **Unify** page displays the number of unified customer profiles and tiles for each of the unification steps.
+   For individual customers (B-to-C), the **Unify** page displays the number of unified customer profiles and tiles for each of the unification steps.
 
-   :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified."::: lightbox="media/m3_unified.png":::
+   :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified." lightbox="media/m3_unified.png":::
 
    For business accounts (B-to-B), the **Unify** page displays the number of unified account profiles and tiles for each of the account unification steps. The page also displays the number of unified contact profiles and tiles for each of the contact unification steps. Choose the appropriate tile under **Unify Accounts** or **Unify Contacts (preview)** depending on what you want to update.
 
@@ -173,11 +173,8 @@ Run matching conditions runs deduplication and match rules only and updates the 
 
 ## Run updates to the unified profile
 
-- To run matching conditions and update the unified profile entity *without* impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts** > **Unify profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
-- To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically.
-
-  > [!TIP]
-  > For accounts and contacts, select **Unify accounts** > **Unify profiles and dependencies**. Matching conditions are run for both accounts and contacts updating both unified profiles and all other dependencies are run.
+- To run matching conditions and update the unified profile entity *without* impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts (preview)** > **Unify profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
+- To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically. For accounts and contacts, select **Unify accounts** > **Unify profiles and dependencies**. Matching conditions are run for both accounts and contacts updating both unified profiles and all other dependencies are run.
 
 All tiles except **Source fields** show **Queued** or **Refreshing**.
 
