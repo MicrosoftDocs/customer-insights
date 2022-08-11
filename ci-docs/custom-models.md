@@ -108,7 +108,7 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
 1. Select **Run**.
 
-Your workflow also runs automatically with every scheduled refresh. Learn more about [setting up scheduled refreshes](system.md#schedule-tab).
+Your workflow also runs automatically with every scheduled refresh. Learn more about [setting up scheduled refreshes](schedule-refresh.md).
 
 ## Delete a workflow
 

@@ -67,7 +67,7 @@ For more information, see [Securely access customer data with Customer Lockbox (
 
 Azure Private Link lets Customer Insights connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
 
-For more information, see [Use Private Link in Customer Insights](security-overview.md#private-links-tab).
+For more information, see [Use Private Link in Customer Insights](security-overview.md#set-up-an-azure-private-link).
 
 ## May 2022 updates
 

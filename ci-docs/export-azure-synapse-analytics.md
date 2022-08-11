@@ -20,7 +20,7 @@ Azure Synapse is an analytics service that accelerates time to insight across da
 > [!NOTE]
 > Make sure to set all **role assignments** as described.
 
-- In Customer Insights, your Azure Active Directory (AD) user account must have an [Administrator role](permissions.md#assign-roles-and-permissions).
+- In Customer Insights, your Azure Active Directory (AD) user account must have an [Administrator role](permissions.md#add-users).
 
 In Azure:
 
@@ -35,6 +35,8 @@ In Azure:
 - The *[Azure Synapse workspace managed identity](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more on [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - On the Azure Synapse workspace, the *service principal for Customer Insights* has **Synapse Administrator** [role assigned](/azure/synapse-analytics/security/how-to-set-up-access-control).
+
+- If your Customer Insights environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md), the user who sets up the connection to Azure Synapse Analytics needs at least the built-in **Reader** role on the Data Lake Storage account. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
 ## Set up connection to Azure Synapse
 
