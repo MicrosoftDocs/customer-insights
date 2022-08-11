@@ -79,12 +79,6 @@ Fields from an ingested data source can contain corrupted data. Records with cor
 
 For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system flags this record as corrupted. Change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record is removed from the corrupted entity.
 
-The following checks run on the ingested data to expose corrupted records:
-
-- The value of a field doesn't match with the data type of its column.
-- Fields contain characters that cause the columns to not match the expected schema. For example: incorrectly formatted quotes, unescaped quotes, or newline characters.
-- If there are datetime/date/datetimeoffset columns, their format must be specified in the model if it doesn't follow the standard ISO format.
-
 ### Fix corrupted data
 
 1. Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. The naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'.

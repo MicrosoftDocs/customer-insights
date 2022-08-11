@@ -193,17 +193,34 @@ You can update the *Connect to storage account using* option. For more informati
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-### Common reasons for corrupted data
+### Common reasons for ingestion errors or corrupted data
 
-- Datetime fields in the wrong format
+The following checks run on the ingested data to expose corrupted records:
 
-  The datetime fields in the entity are not in ISO or en-US formats. Ideally, all the datetime fields in an entity should be in the same format.
+- The value of a field doesn't match with the data type of its column.
+- Fields contain characters that cause the columns to not match the expected schema. For example: incorrectly formatted quotes, unescaped quotes, or newline characters.
+- If there are datetime/date/datetimeoffset columns, their format must be specified in the model if it doesn't follow the standard ISO format.
 
-  > [!TIP]
-  > The default datetime format in Customer Insights is en-US format.
+**Datetime fields in the wrong format**
 
-- Schema mismatch
-  - Data that does not conform to the schema can be caused by a difference in the number of columns in the data vs the schema or differences in the data types between the data and the schema. Correct either the source data or the schema.
-  - The presence of newline characters in the data splits the row into multiple rows at unintended locations causing data from different rows to be present in different rows.
+  The datetime fields in the entity are not in ISO or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in an entity should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or entity level in the model or manifest.json. For example:
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  In a manifest.json, the datetime format can be specified at the entity level or at the attribute level. At the entity level, use "exhibitsTraits" in the entity in the *.manifest.cdm.json to define the datatime format. At the attribute level, use "appliedTraits" in the attribute in the entityname.cdm.json.
+
+**Schema mismatch**
+Correct either the source data or the schema.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
