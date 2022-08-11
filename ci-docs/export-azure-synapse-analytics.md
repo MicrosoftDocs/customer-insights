@@ -36,6 +36,8 @@ In Azure:
 
 - On the Azure Synapse workspace, the *service principal for Customer Insights* has **Synapse Administrator** [role assigned](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
+- If your Customer Insights environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md), the user who sets up the connection to Azure Synapse Analytics needs at least the built-in **Reader** role on the Data Lake Storage account. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
+
 ## Set up connection to Azure Synapse
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
