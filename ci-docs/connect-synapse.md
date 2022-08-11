@@ -56,7 +56,7 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
   
 1. Enter a **Name** for the data source and an optional **Description**.
 
-1. Choose an [available connection](connections.md) to Azure Synapse Analytics or create a new one.
+1. Choose an [available connection](connections.md) to Azure Synapse Analytics or [create a new one](export-azure-synapse-analytics.md#set-up-connection-to-azure-synapse).
 
 1. Choose a **Database** from the workspace connected in the selected Azure Synapse Analytics connection and select **Next**. Currently, we only support the database type *Lake database*.
 
