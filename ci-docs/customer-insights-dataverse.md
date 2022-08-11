@@ -82,8 +82,8 @@ Set up PowerShell to execute PowerShell scripts.
 ### Execute PowerShell scripts and obtain the Permission Identifier
 
 1. Download the two PowerShell scripts you need to run from our engineer's [GitHub repo](https://github.com/trin-msft/byol).
-   - `CreateSecurityGroups.ps1`: Requires *tenant admin* permissions.
-   - `ByolSetup.ps1`: Requires *Storage Blob Data Owner* permissions at the storage account/container level. This script will create the permission for you. Your role assignment can be removed manually after successfully running the script.
+   - `CreateSecurityGroups.ps1`: Requires tenant admin permissions.
+   - `ByolSetup.ps1`: Requires Storage Blob Data Owner permissions at the storage account/container level. This script will create the permission for you. Your role assignment can be removed manually after successfully running the script.
 
 1. Execute `CreateSecurityGroups.ps1` in Windows PowerShell by providing the Azure subscription ID containing your Azure Data Lake Storage. Open the PowerShell script in an editor to review additional information and the implemented logic.
 
@@ -110,7 +110,7 @@ When connecting to a Dataverse environment, the error message **This CDS organiz
 
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select the environment from the environment picker.
-1. Go to **Solutions**
+1. Go to **Solutions**.
 1. Uninstall or delete the solution named **Dynamics 365 Customer Insights Customer Card Add-in (Preview)**.
 
 OR
@@ -157,12 +157,12 @@ This table contains activities by users that are available in Customer Insights.
 
 | Column            | Type        | Description                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
-| CustomerId        | String      | Customer Profile ID                                                                      |
+| CustomerId        | String      | Customer profile ID                                                                      |
 | ActivityId        | String      | Internal ID of the customer activity (primary key)                                       |
 | SourceEntityName  | String      | Name of the source entity                                                                |
 | SourceActivityId  | String      | Primary key from the source entity                                                       |
 | ActivityType      | String      | Semantic activity type or name of custom activity                                        |
-| ActivityTimeStamp | DATETIME    | Activity Time stamp                                                                      |
+| ActivityTimeStamp | DATETIME    | Activity time stamp                                                                      |
 | Title             | String      | Title or name of the activity                                                               |
 | Description       | String      | Activity description                                                                     |
 | URL               | String      | Link to an external URL specific to the activity                                         |
@@ -201,7 +201,7 @@ This table contains the output of the model predictions.
 
 | Column               | Type        | Description                                          |
 |----------------------|-------------|------------------------------------------------------|
-| CustomerId           | String      | Customer Profile ID                                  |
+| CustomerId           | String      | Customer profile ID                                  |
 | ModelProvider        | String      | Name of the provider of the model                                      |
 | Model                | String      | Model name                                                |
 | Values               | JSON String | List of attributes produced by the model |
@@ -216,7 +216,7 @@ This table contains segment membership information of the customer profiles.
 |--------------------|--------------|-----------------------------|
 | CustomerId        | String       | Customer Profile ID        |
 | SegmentProvider      | String       | App that publishes the segments.      |
-| SegmentMembershipType | String       | Type of the customer this segment membership record. Supports multiple types such as Customer, Contact, or Account. Default: Customer  |
+| SegmentMembershipType | String       | Type of customer for this segment membership record. Supports multiple types such as Customer, Contact, or Account. Default: Customer  |
 | Segments       | JSON String  | List of unique segments the customer profile is a member of      |
 | msdynci_identifier  | String   | Unique identifier of the segment membership record. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
 | msdynci_segmentmembershipid | GUID      | Deterministic GUID generated from `msdynci_identifier`          |
