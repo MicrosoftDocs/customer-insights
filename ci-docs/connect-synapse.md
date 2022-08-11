@@ -42,6 +42,8 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 - On the Azure Synapse workspace, the *service principal for Customer Insights* which is "Dynamics 365 AI for Customer Insights" needs **Synapse Administrator** role assigned. For more information, see [How to set up access control for your Synapse workspace](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
+- If your Customer Insights environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md), the user who sets up the connection to Azure Synapse Analytics needs at least the built-in **Reader** role on the Data Lake Storage account. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
+
 ## Connect to the data lake database in Azure Synapse Analytics
 
 1. Go to **Data** > **Data sources**.
@@ -54,7 +56,7 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
   
 1. Enter a **Name** for the data source and an optional **Description**.
 
-1. Choose an [available connection](connections.md) to Azure Synapse Analytics or create a new one.
+1. Choose an [available connection](connections.md) to Azure Synapse Analytics or [create a new one](export-azure-synapse-analytics.md#set-up-connection-to-azure-synapse).
 
 1. Choose a **Database** from the workspace connected in the selected Azure Synapse Analytics connection and select **Next**. Currently, we only support the database type *Lake database*.
 
