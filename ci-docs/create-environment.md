@@ -43,10 +43,10 @@ After the first environment is created, the global administrator of the Microsof
 
 1. Provide the following details:
 
-   - **Name**: Name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
-   - **Choose your business**: Choose the primary audience for the new environment, individual consumers (B-to-C) or [business accounts](work-with-business-accounts.md) (B-to-B). If your organization mainly does business with individuals, such as a retailer or a coffee shop, choose individual consumers. If your main audience is other companies, such as a car manufacturer or a paper company, choose business accounts.
-   - **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
-   - **Region**: Region into which the service is deployed and hosted. To [use your own Azure Data Lake Storage account](own-data-lake-storage.md) or [connect to an existing Microsoft Dataverse organization](customer-insights-dataverse.md), the Customer Insights environment must be in the same region.
+- **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
+- **Choose your business**: Choose the primary audience for the new environment. You can work with individual consumers (B-to-C) or [business accounts](work-with-business-accounts.md) (B-to-B). If your organization mainly does business with individuals, such as a retailer or a coffee shop, choose individual consumers. In case your main audience are other companies, such as a car manufacturer or a paper company, choose business accounts.
+- **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
+- **Region**: The region into which the service is deployed and hosted. To [use your own Azure Data Lake Storage account](own-data-lake-storage.md) or [connect to an existing Microsoft Dataverse organization](customer-insights-dataverse.md), the Customer Insights environment must be in the same region.
 
 ## Step 2: Configure data storage
 
