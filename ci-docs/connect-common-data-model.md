@@ -221,6 +221,7 @@ The following checks run on the ingested data to expose corrupted records:
   In a manifest.json, the datetime format can be specified at the entity level or at the attribute level. At the entity level, use "exhibitsTraits" in the entity in the *.manifest.cdm.json to define the datatime format. At the attribute level, use "appliedTraits" in the attribute in the entityname.cdm.json.
 
 **Schema mismatch**
+
 Correct either the source data or the schema.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
