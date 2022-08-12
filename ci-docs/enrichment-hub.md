@@ -37,12 +37,6 @@ Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrich
 
 :::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page.":::
 
-Go to **Data** > **Enrichment** to work with enrichment options.  
-
-You need to have Contributor or Administrator [permissions](permissions.md) to create or edit enrichments.
-
-On the **Discover** tab, you'll find all supported enrichment options.
-
 # [Individual consumers (B-to-C)](#tab/b2c)
 
 - [AbiliTec Identity](enrichment-liveramp.md) provided by LiveRamp AbiliTec
