@@ -1,7 +1,7 @@
 ---
 title: "Exports (preview) overview"
 description: "Manage exports to share data."
-ms.date: 07/25/2022
+ms.date: 08/12/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -34,7 +34,7 @@ Most export options support both types of environments. Exporting segments to va
 **Segment exports in environments for individual consumers (B-to-C)**  
 - Segments in the context of environments for individual customers are built on the *unified customer profile* entity. Every segment that meets the requirements of the target systems (for example, an email address) can get exported.
 
-**Segment exports environments for business accounts (B-to-B)**  
+**Segment exports in environments for business accounts (B-to-B)**  
 - Segments in the context of environments for business accounts are built on the *account* entity or the *contact* entity. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](export-linkedin-ads.md) when you choose the **company** option while defining the export.
 - All other target systems require fields from the contact entity.
 - With two segment types (contacts and accounts), Customer Insights automatically identifies which type of segments are eligible for export based on the target system. For example, for a contact-focused target system like Mailchimp, Customer Insights only allows you to choose contact segments to export.
@@ -113,11 +113,11 @@ To export data without waiting for a scheduled refresh, go to **Data** > **Expor
 ### Segment not eligible for export
 
 **Problem**
-Within an instance of business accounts your exports fail with the error message:
+Within an environment of business accounts your exports fail with the error message:
 "The following segment is not eligible for this export destination: '{name of segment}'. Please choose only segments of type ContactProfile and try again."
 
 **Resolution**
-Customer insights for business accounts was updated to support contact segments in addition to account segments. Due to that change, exports needing contact details only work with segments based on contacts.
+Customer Insights environments for business accounts was updated to support contact segments in addition to account segments. Due to that change, exports needing contact details only work with segments based on contacts.
 
 1. [Create a segment based on contacts](segment-builder.md) which matches your previously used segment.
 

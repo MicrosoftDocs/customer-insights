@@ -1,7 +1,7 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 08/01/2022
+ms.date: 08/12/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -36,7 +36,7 @@ Choose how to create a segment based on your target audience.
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-Segment of accounts or segment of contacts with segment builder: [Build your own](segment-builder.md)
+Segment of accounts or segment of contacts (preview) with segment builder: [Build your own](segment-builder.md)
 
 > [!NOTE]
 > Most export destinations require contact information for Marketing purposes. Therefore, create segments of contacts to use for those exports.
@@ -83,7 +83,7 @@ The lower part contains a list of the segment members.
 > [!NOTE]
 > Fields that appear in this list are based on the attributes of your segment's entities.
 >
->The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Entities**](entities.md) page or [export the segment](export-destinations.md).
+> The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Entities**](entities.md) page or [export the segment](export-destinations.md).
 
 ## Refresh segments
 

@@ -1,7 +1,7 @@
 ---
 title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
-ms.date: 08/01/2022
+ms.date: 08/12/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -21,7 +21,7 @@ searchScope:
 Define complex filters around the unified customer or unified contact and its related entities. Each segment, after processing, creates a set of customer or contact records that you can export and take action on.
 
 > [!TIP]
-> Segments based on **individual customers** automatically include available contact information for segment members. In **business accounts**, if you [unified](data-unification.md) both accounts and contacts, choose whether the segment is based on accounts or business contacts. To activate or export to a destination expecting contact information, use a segment of contacts. To activate or export to a destination expecting account information, use a segment of accounts.
+> Segments based on **individual customers** automatically include available contact information for segment members. In **business accounts**, if you [unified](data-unification.md) both accounts and contacts, choose whether the segment is based on accounts or business contacts. To export to a destination expecting contact information, use a segment of contacts. To export to a destination expecting account information, use a segment of accounts.
 
 ## Segment builder
 
@@ -54,7 +54,9 @@ The example above illustrates the segmentation capability. We've defined a segme
 1. Select **New** > **Build your own**. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
 
    > [!NOTE]
-   > In business accounts, select **New** > **Segment of Accounts** or **Segment of Contacts** based on the type of segment you want to create. If an [account hierarchy](relationships.md#set-up-account-hierarchies) has been defined and you want to create rules to filter out data based on child and parent relationship, select **Use hierarchy? (preview)** and select the hierarchy.
+   > For environments based on business accounts, select **New** > **Segment of Accounts** or **Segment of Contacts (preview)** based on the type of segment you want to create. If an [account hierarchy](relationships.md#set-up-account-hierarchies) has been defined and you want to create rules to filter out data based on child and parent relationship, select **Use hierarchy? (preview)**, select the hierarchy, and the **Apply**.
+   >
+   > :::image type="content" source="media/segment_acct_hierarchy.png" alt-text="Segment select account hierarchy pane.":::
 
 1. Select **Edit details** next to Untitled segment. Provide a name for your segment and update the suggested **Output entity name** for the segment. Optionally, add a description and [tags](work-with-tags-columns.md#manage-tags) to the segment.
 
