@@ -1,7 +1,7 @@
 ---
 title: "Connect to an Azure Data Lake Storage account by using an Azure service principal"
 description: "Use an Azure service principal to connect to your own data lake."
-ms.date: 05/31/2022
+ms.date: 08/12/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -15,14 +15,15 @@ searchScope:
 
 # Connect to an Azure Data Lake Storage account by using an Azure service principal
 
-This article discusses how to connect Dynamics 365 Customer Insights with an Azure Data Lake Storage account by using an Azure service principal instead of storage account keys.
+Dynamics 365 Customer Insights provides an option to connect to an Azure Data Lake Storage account by using an Azure service principal instead of storage account keys.
 
-Automated tools that use Azure services should always have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. You can use service principals to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create or update an environment](create-environment.md).
+Automated tools that use Azure services must have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. Use service principals to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create or update an environment](create-environment.md).
 
-> [!IMPORTANT]
->
-> - The Data Lake Storage account that will use the service principal must be Gen2 and have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). Azure Data Lake Gen1 storage accounts are not supported.
-> - You need admin permissions for your Azure tenant to create a service principal.
+## Prerequisites
+
+- The Data Lake Storage account that will use the service principal must be Gen2. Azure Data Lake Gen1 storage accounts are not supported.
+- The Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
+- Admin permissions for your Azure tenant to create a service principal.
 
 ## Create an Azure service principal for Customer Insights
 
@@ -50,9 +51,9 @@ Go to the Azure portal to grant permissions to the service principal for the sto
 
 |Credential|Requirements|
 |----------|------------|
-|Currently logged in user|**Role**: Storage Blob Data Reader, Storage Blob Contributor, or Storage Blob Owner.<br>**Level**: Permissions can be granted on the storage account or the container.</br>|
-|Customer Insights Service Principal -<br>Using Azure Data Lake Storage as a data source</br>|Option 1<ul><li>**Role**: Storage Blob Data Reader, Storage Blob Data     Contributor, or Storage Blob Data Owner.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul>Option 2 *(without sharing Service Principal access to the storage account)*<ul><li>**Role 1**: Storage Blob Data Reader, Storage Blob Data Contributor, or Storage Blob Data Owner.</li><li>**Level**: Permissions should be granted on the container.</li><li>**Role 2**: Storage Blob Data Delegator.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul>|
-|Customer Insights Service Principal - <br>Using Azure Data Lake Storage as an output or destination</br>|Option 1<ul><li>**Role**: Storage Blob Data Contributor or Storage Blob Owner.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul>Option 2 *(without sharing Service Principal access to the storage account)*<ul><li>**Role**: Storage Blob Data Contributor or Storage Blob Owner.</li><li>**Level**: Permissions should be granted on the container.</li><li>**Role 2**: Storage Blob Delegator.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul>|
+|Currently logged in user|**Role**: Storage Blob Data Reader, Storage Blob Contributor, or Storage Blob Owner.<br>**Level**: Permissions granted on the storage account or the container.</br>|
+|Customer Insights Service Principal -<br>Using Azure Data Lake Storage as a data source</br>|Option 1<ul><li>**Role**: Storage Blob Data Reader, Storage Blob Data     Contributor, or Storage Blob Data Owner.</li><li>**Level**: Permissions granted on the storage account.</li></ul>Option 2 *(without sharing Service Principal access to the storage account)*<ul><li>**Role 1**: Storage Blob Data Reader, Storage Blob Data Contributor, or Storage Blob Data Owner.</li><li>**Level**: Permissions granted on the container.</li><li>**Role 2**: Storage Blob Data Delegator.</li><li>**Level**: Permissions granted on the storage account.</li></ul>|
+|Customer Insights Service Principal - <br>Using Azure Data Lake Storage as an output or destination</br>|Option 1<ul><li>**Role**: Storage Blob Data Contributor or Storage Blob Owner.</li><li>**Level**: Permissions should be granted on the storage account.</li></ul>Option 2 *(without sharing Service Principal access to the storage account)*<ul><li>**Role**: Storage Blob Data Contributor or Storage Blob Owner.</li><li>**Level**: Permissions granted on the container.</li><li>**Role 2**: Storage Blob Delegator.</li><li>**Level**: Permissions granted on the storage account.</li></ul>|
 
 1. Go to the [Azure admin portal](https://portal.azure.com) and sign in to your organization.
 
@@ -63,9 +64,9 @@ Go to the Azure portal to grant permissions to the service principal for the sto
    :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="Screenshot showing the Azure portal while adding a role assignment.":::
 
 1. On the **Add role assignment** pane, set the following properties:
-   - Role: Storage Blob Data Reader, Storage Blob Contributor, or Storage Blob Owner based on credentials listed above.
-   - Assign access to: **User, group, or service principal**
-   - Select members: **Dynamics 365 AI for Customer Insights** (the [service principal](#create-a-new-service-principal) you looked up earlier in this procedure)
+   - **Role**: Storage Blob Data Reader, Storage Blob Contributor, or Storage Blob Owner based on credentials listed above.
+   - **Assign access to**: **User, group, or service principal**
+   - **Select** members: **Dynamics 365 AI for Customer Insights** (the [service principal](#create-a-new-service-principal) you looked up earlier in this procedure)
 
 1. Select **Review + assign**.
 
