@@ -16,7 +16,7 @@ searchScope:
   - ci-activities-wizard
   - ci-measures
   - ci-segment-suggestions
-  - customerInsight
+  - customerInsights
 ---
 
 # Customer or business contact activities

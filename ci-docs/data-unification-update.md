@@ -5,8 +5,8 @@ ms.date: 08/12/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: v-wendysmith
-ms.author: mukeshpo
+author: sstabbert
+ms.author: Scott-Stabbert
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -131,7 +131,7 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. For more information, see [Unify customer fields](merge-entities.md).
 
 1. For customers or accounts, select **Next** to review and [update the unified profile and dependencies](#run-updates-to-the-unified-profile). Or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
- 
+
    For contacts, select **Next** to manage semantic fields. Or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
 
 ## Manage semantic fields for unified contacts

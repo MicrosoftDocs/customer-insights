@@ -1,13 +1,12 @@
 ---
 title: "Create a unified contact profile (preview)"
 description: "Go through the data unification process to create a single master dataset of contacts."
-recommendations: false
 ms.date: 08/12/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: overview
-author: mukeshpo
+author: Scott-Stabbert
 ms.author: sstabbert
 manager: shellyha
 
@@ -22,7 +21,7 @@ searchScope:
 
 After [unifying business accounts](map-entities.md), you can optionally unify contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
 
-The following steps and images reflect the first time you go through the contact unification process. To edit existing contact unification settings, see [Update the unification settings](data-unification-update.md).
+[!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
 The first few steps are identical to the unifying accounts steps.
 
