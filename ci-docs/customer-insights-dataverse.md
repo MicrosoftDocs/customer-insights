@@ -22,9 +22,9 @@ Connecting to your Dataverse environment also enables you to [ingest data from o
 ## Prerequisites
 
 - Customer Insights and Dataverse environments must be hosted in the same region.
-- A global administrator role in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you're added to those security groups.
-- No other Customer Insights environment is already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
-- A Microsoft Dataverse environment can only connect to a single storage account if you configure the environment to [use your Azure Data Lake Storage](own-data-lake-storage.md).
+- A global administrator role set up in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you're added to those security groups.
+- No other Customer Insights environment already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
+- A Microsoft Dataverse environment connected to a single storage account if you configure the environment to [use your Azure Data Lake Storage](own-data-lake-storage.md).
 
 ## Dataverse storage capacity entitlement
 
@@ -57,7 +57,7 @@ The **Microsoft Dataverse** step lets you connect Customer Insights with your Da
 
 ## Enable data sharing with Dataverse from your own Azure Data Lake Storage (preview)
 
-Access [your own Azure Data Lake Storage account](own-data-lake-storage.md). The user setting up the Customer Insights environment must have at least **Storage Blob Data Reader** permissions on the *CustomerInsights* container in the Azure Data Lake Storage account.
+In [your own Azure Data Lake Storage account](own-data-lake-storage.md), verify the user setting up the Customer Insights environment has at least **Storage Blob Data Reader** permissions on the `customerinsights` container in the account.
 
 ### Limitations
 
@@ -109,7 +109,7 @@ Set up PowerShell to execute PowerShell scripts.
 
    :::image type="content" source="media/dataverse-enable-datasharing-BYODL.png" alt-text="Configuration options to enable data sharing from your own Azure Data Lake Storage with Microsoft Dataverse.":::
 
-### Remove an existing connection to a Dataverse environment
+## Remove an existing connection to a Dataverse environment
 
 When connecting to a Dataverse environment, the error message **This CDS organization is already attached to another Customer Insights instance** means that the Dataverse environment is already used in a Customer Insights environment. You can remove the existing connection as a global administrator on the Dataverse environment. It can take a couple of hours to populate the changes.
 

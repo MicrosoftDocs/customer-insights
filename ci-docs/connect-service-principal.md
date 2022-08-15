@@ -22,8 +22,8 @@ Automated tools that use Azure services must have restricted permissions. Instea
 ## Prerequisites
 
 - The Data Lake Storage account that will use the service principal must be Gen2. Azure Data Lake Gen1 storage accounts are not supported.
-- The Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
-- Admin permissions for your Azure tenant to create a service principal.
+- The Data Lake Storage account has [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
+- Admin permissions for your Azure tenant, if you have to create a new service principal.
 
 ## Create an Azure service principal for Customer Insights
 
