@@ -1,7 +1,7 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 05/31/2022
+ms.date: 08/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -18,7 +18,7 @@ searchScope:
 
 After [purchasing a subscription license for Dynamics 365 Customer Insights](paid-license.md), the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started. In this scenario, start with [Step 1: Provide basic information](#step-1-provide-basic-information).
 
-After the first environment is created, the global administrator of the Microsoft 365 tenant can [add users form their organization as administrators](permissions.md). Moving forward, these administrators can manage users and environments. If your organization purchases more than one license for Customer Insights, [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, review the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544). Once you have the ability to create additional environments, go to [Start the environment creation process](#start-the-environment-creation-process).
+After the first environment is created, the global administrator of the Microsoft 365 tenant can [add users from their organization as administrators](permissions.md). These administrators can then manage users and environments. If your organization purchases more than one license for Customer Insights, [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, review the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544). Once you have the ability to create additional environments, go to [Start the environment creation process](#start-the-environment-creation-process).
 
 > [!TIP]
 > If you're looking to try the service, see [Set up a trial environment](trial-signup.md).
@@ -43,31 +43,35 @@ After the first environment is created, the global administrator of the Microsof
 
 1. Provide the following details:
 
-- **Name**: The name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
-- **Choose your business**: Choose the primary audience for the new environment. You can work with individual consumers (B-to-C) or [business accounts](work-with-business-accounts.md) (B-to-B). If your organization mainly does business with individuals, such as a retailer or a coffee shop, choose individual consumers. In case your main audience are other companies, such as a car manufacturer or a paper company, choose business accounts.
-- **Type**: Select whether you want to create a production or sandbox environment. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
-- **Region**: The region into which the service is deployed and hosted. To [use your own Azure Data Lake Storage account](own-data-lake-storage.md) or [connect to an existing Microsoft Dataverse organization](customer-insights-dataverse.md), the Customer Insights environment must be in the same region.
+   - **Name**: Name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
+   - **Choose your business**: Primary audience for the new environment: individual consumers (B-to-C) or [business accounts](work-with-business-accounts.md) (B-to-B). If your organization mainly does business with individuals, such as a retailer or a coffee shop, choose individual consumers. If your main audience is other companies, such as a car manufacturer or a paper company, choose business accounts.
+   - **Type**: Type of environment: production or sandbox. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
+   - **Region**: Region into which the service is deployed and hosted. To [use your own Azure Data Lake Storage account](own-data-lake-storage.md) or [connect to an existing Microsoft Dataverse organization](customer-insights-dataverse.md), the Customer Insights environment must be in the same region.
+
+1. Select **Next**.
 
 ## Step 2: Configure data storage
 
-Choose where to store the Customer Insights data:
+1. Choose where to store the Customer Insights data:
 
-- **Customer Insights storage**: Data storage is managed by the Customer Insights team. It's the default option and unless there are specific requirements to store data in your own storage account, we recommend using this option.
-- **Azure Data Lake Storage**: Specify your own Azure Data Lake Storage account to store the data so you have full control where the data is stored. For more information, see [Use your own Azure Data Lake Storage account](own-data-lake-storage.md).
+   - **Customer Insights storage**: Data storage is managed by the Customer Insights team. It's the default option and unless there are specific requirements to store data in your own storage account, we recommend using this option.
+   - **Azure Data Lake Storage**: Your own Azure Data Lake Storage account to store the data so you have full control where the data is stored. For more information, see [Use your own Azure Data Lake Storage account](own-data-lake-storage.md).
 
-:::image type="content" source="media/data-storage-environment.png" alt-text="Choose the preferred option to store your data.":::
+   :::image type="content" source="media/data-storage-environment.png" alt-text="Choose the preferred option to store your data.":::
+
+1. Select **Next**.
 
 ## Step 3: Connect to Microsoft Dataverse
 
 If you have a Dataverse environment, connect Customer Insights. Share data with Dataverse to use it with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps.
 
-Leave this field empty if you don't have your own Dataverse environment and we'll create one for you.
+1. Follow the steps in [Work with Customer Insights data in Microsoft Dataverse](customer-insights-dataverse.md).
 
-For more information, see [Work with Customer Insights data in Microsoft Dataverse](customer-insights-dataverse.md).
+   :::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto-enabled for net new environments.":::
 
-:::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto-enabled for net new environments.":::
+1. Select **Next**.
 
-### Step 4: Finalize the settings
+## Step 4: Finalize the settings
 
 Review the specified settings. When everything looks complete, select **Create** to set up the environment.
 
@@ -85,7 +89,7 @@ Review the following articles to help you get started with configuring Customer 
 
 ## Copy the environment configuration
 
-As an admin, if you chose to copy the configuration from an existing environment, select from the list of all available environments in your organization where you can copy data from.
+As an admin, if you chose to copy the configuration from an existing environment, select from the list of all available environments in your organization.
 
 :::image type="content" source="media/environment-settings-dialog.png" alt-text="Screenshot of the settings options in the environment settings.":::
 
@@ -104,7 +108,7 @@ The following configuration settings are copied:
 - Prediction models
 - Role assignments
 
-## Set up a copied environment
+### Set up a copied environment
 
 When you copy the environment configuration, a confirmation message displays when the copied environment has been created. Perform the following steps to confirm credentials.
 
