@@ -19,7 +19,7 @@ Manage API keys, access customer data, and set up an Azure Private Link.
 
 View and manage the keys to use the [Customer Insights APIs](apis.md) with the data in your environment.
 
-1. Go to **System** > **Security** and select the **APIs** tab.
+1. Go to **Admin** > **Security** and select the **APIs** tab.
 
 1. If API access to the environment has not been set up, select **Enable**. Or, to block API access to the environment, select **Disable** and confirm.
 
