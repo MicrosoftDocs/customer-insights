@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Common Data Model folder using an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 07/27/2022
+ms.date: 08/16/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -193,13 +193,17 @@ You can update the *Connect to storage account using* option. For more informati
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-### Common reasons for ingestion errors or corrupted data
+## Common reasons for ingestion errors or corrupted data
 
 The following checks run on the ingested data to expose corrupted records:
 
 - The value of a field doesn't match with the data type of its column.
 - Fields contain characters that cause the columns to not match the expected schema. For example: incorrectly formatted quotes, unescaped quotes, or newline characters.
 - If there are datetime/date/datetimeoffset columns, their format must be specified in the model if it doesn't follow the standard ISO format.
+
+**Schema or data type mismatch**
+
+If the data does not confirm to the schema, the records are classified as corrupt. Correct either the source data or the schema and re-ingest the data.
 
 **Datetime fields in the wrong format**
 
@@ -220,8 +224,5 @@ The following checks run on the ingested data to expose corrupted records:
 
   In a manifest.json, the datetime format can be specified at the entity level or at the attribute level. At the entity level, use "exhibitsTraits" in the entity in the *.manifest.cdm.json to define the datatime format. At the attribute level, use "appliedTraits" in the attribute in the entityname.cdm.json.
 
-**Schema mismatch**
-
-Correct either the source data or the schema.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

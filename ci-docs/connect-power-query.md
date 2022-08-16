@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 07/26/2022
+ms.date: 08/15/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -97,5 +97,27 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 1. Select **Save** to apply your changes and return to the **Data sources** page.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## Common reasons for ingestion errors or corrupted data
+
+**Data type doesn't match data**
+
+The most common data type mismatch is date fields where the date field is not set to the correct data format.
+
+The data can be fixed at the source and re-ingested, or fix the transformation within Customer Insights.
+
+1. Go to **Data** > **Data sources**.
+
+1. Next to the data source with the corrupted data, select **Edit**.
+
+1. Select **Next**.
+
+1. Select each of the queries and look for transformations applied inside "Applied Steps" that are incorrect, or date columns that do not have a date format.
+
+   :::image type="content" source="media/PQ_corruped_date.png" alt-text="Power Query - Edit showing incorrect date format":::
+
+1. Change the data type to correctly match the data.
+
+1. Select **Save**. That data source is refreshed.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
