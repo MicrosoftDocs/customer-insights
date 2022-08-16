@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights APIs
 description: Use APIs and understand limitations.
-ms.date: 05/10/2021
+ms.date: 08/16/2022
 ms.reviewer: wimohabb
 
 ms.subservice: audience-insights
@@ -21,37 +21,37 @@ Dynamics 365 Customer Insights provides APIs to build your own applications base
 > [!IMPORTANT]
 > Details of these APIs are listed on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.
 
-This article describes how to access the Customer Insights APIs, create an Azure App Registration, and get started with client libraries.
+Access the Customer Insights APIs, create an Azure App Registration, and get started with client libraries.
 
 ## Get started trying the Customer Insights APIs
 
 1. [Sign in](https://home.ci.ai.dynamics.com) to Customer Insights. If you don't have a subscription yet, [sign up for a trial of Customer Insights](https://aka.ms/tryci).
 
-1. To enable APIs on your Customer Insights environment, go to **Admin** > **Security**. You'll need admin permissions to do so.
+1. Go to **Admin** > **Security** and select the **APIs** tab. Admin permissions required.
 
-1. Go to the **APIs** tab and select the **Enable** button.    
- 
-   Enabling the APIs creates a primary and secondary subscription key for your instance that gets used in the API requests. You can regenerate the keys by selecting the **Regenerate primary** or **Regenerate secondary** on **Admin** > **Security** > **APIs**.
+1. If API access to the environment has not been set up, select **Enable**.
 
-<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
+   Enabling the APIs creates a primary and secondary subscription key for your instance that gets used in the API requests. To regenerate the keys, select the **Regenerate primary** or **Regenerate secondary** on the **APIs** tab.
 
-1. Select **Explore our APIs** to [try out the APIs](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
+1. Select [**Explore our APIs**](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) to try out the APIs.
 
-1. Choose an API operation and select **Try it**.
+1. Search for and select an API operation and select **Try it**.
 
-1. In the side pane, set the value in the **Authorization** dropdown menu to **implicit**. The `Authorization` header gets added with a bearer token. Your subscription key will be automatically populated.
+   :::image type="content" source="media/try-api.png" alt-text="How to test the APIs.":::
+
+1. In the side pane, set the value in the **Authorization** dropdown menu to **implicit**. The `Authorization` header gets added with a bearer token. Your subscription key is automatically populated.
   
 1. Optionally, add all necessary query parameters.
 
 1. Scroll to the bottom of the side pane and select **Send**.
 
-The HTTP response will soon appear below.
-
-<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
+   The HTTP response displays.
 
 ## Create a new app registration in the Azure portal
 
-These steps help you get started with using the Customer Insights APIs in an Azure application using delegated permissions. Make sure to complete the [Getting started section](#get-started-trying-the-customer-insights-apis) first.
+Create a new app registration to use the Customer Insights APIs in an Azure application using delegated permissions.
+
+1. Complete the [Getting started section](#get-started-trying-the-customer-insights-apis).
 
 1. Sign in to the [Azure portal](https://portal.azure.com) with the account that can access the Customer Insights data.
 
@@ -67,7 +67,10 @@ These steps help you get started with using the Customer Insights APIs in an Azu
 
 1. For **Permission type**, select **Delegated permissions** and then select the **user_impersonation** permission.
 
-1. Select **Add permissions**. If you need to access the API without a user signing in, review the [Server-to-server application permissions](#server-to-server-application-permissions) section.
+1. Select **Add permissions**.
+
+   - To access the API with a user sign in, go to the next step.
+   - To access the API without a user signing in, go to [Server-to-server application permissions](#server-to-server-application-permissions).
 
 1. Select **Grant admin consent for...** to complete the app registration.
 
@@ -83,13 +86,13 @@ For information on using the APIs in our client libraries, see [Customer Insight
 
 ### Server-to-server application permissions
 
-The [app registration section](#create-a-new-app-registration-in-the-azure-portal) outlines how to register an app that requires a user to sign in for authentication. Learn how to create an app registration that doesn't need user interaction and can be run on a server.
+Create an app registration that doesn't need user interaction and can be run on a server.
 
 1. On your App registration in the Azure portal, go to **API permissions**.
 
-1. Select **Add a permission**. 
+1. Select **Add a permission**.
 
-1. Select the **APIs my organization uses** tab and choose **Dynamics 365 AI for Customer Insights** from the list. 
+1. Select the **APIs my organization uses** tab and choose **Dynamics 365 AI for Customer Insights** from the list.
 
 1. For **Permission type**, select **Application permissions** and then select the **CustomerInsights.Api.All** permission.
 
