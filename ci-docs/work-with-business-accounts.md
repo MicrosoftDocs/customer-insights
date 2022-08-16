@@ -5,10 +5,10 @@ ms.date: 10/19/2021
 
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.custom: intro-internal
 ms.author: wimohabb
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
   - ci-semantic-mapping
@@ -26,7 +26,7 @@ Administrators can [create an environment in an existing organization](create-en
 
 You can then [ingest data](data-sources.md) for business accounts and related contacts as data sources from all supported sources.
 
-After unifying the data, [specify account hierarchies](relationships.md#set-up-account-hierarchies) as part of the relationship configuration. You can also [configure semantic mappings](semantic-mappings.md) to connect contact and account entities. 
+ [Unify](data-unification.md) your account data followed by your contact data to connect contact and account entities.
 
 ## Switch between primary target audience
 
@@ -41,7 +41,7 @@ If your organization maintains environments for individual customers and busines
 - [Measures](measures.md): Supports measures created from the measure builder with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.
 - [Segments](segments.md): Supports segments that are created from scratch with the segment builder. New operators allow incorporating account hierarchy when building segments.
 - [Data ingestion](data-sources.md): All features in this area are the same for business accounts and individual customers.
-- [Data unification](data-unification.md): All features in this area are the same for business accounts and individual customers.
+- B-to-B data unification is very similar to B-to-C data unification but has an additional step to unify contacts after account unification. See [Business accounts (B-to-B)](data-unification.md).
 - [Enrichment](enrichment-hub.md): Some enrichment types are available only for individual customer scenarios while others are exclusively available for business accounts.
 - [Predictions and out-of-box models](predictions-overview.md): Transactional churn prediction contains additional steps for business accounts. Other predictions are only available for individual customers.
 - [Activation and export](export-destinations.md): Exports are available for business accounts and individual customers. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts.
