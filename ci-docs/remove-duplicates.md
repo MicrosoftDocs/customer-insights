@@ -7,7 +7,7 @@ ms.date: 08/01/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: mukeshpo
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
@@ -43,7 +43,7 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. On the **Duplicate records** page, select an entity and select **Add rule** to define the deduplication rules.
 
-   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Duplicate records pages with Show more highlighted":::
+   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Duplicate records page with entity highlighted and Add rule displayed"  lightbox="media/m3_duplicates_showmore.png":::
 
    1. In the **Add rule** pane, enter the following information:
       - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
@@ -76,9 +76,9 @@ If you enriched entities on the data source level to help improve your unificati
       - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
       - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
       - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
-      
+
       In the event of a tie, the winner record is the one with the MAX(PK) or the larger primary key value.
-      
+
    1. Optionally, to define merge preferences on individual attributes of an entity, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
 
       :::image type="content" source="media/m3_adv_merge.png" alt-text="Advanced merge preferences pane showing recent email and complete address":::
@@ -92,18 +92,5 @@ If you enriched entities on the data source level to help improve your unificati
 
 > [!div class="nextstepaction"]
 > [Next step for multiple entities: Matching conditions](match-entities.md)
-
-## Deduplication output as an entity
-
-The deduplication process creates a new deduplicated entity for each of the source entities. These entities can be found along with the **ConflationMatchPairs:CustomerInsights** in the **System** section in the **Entities** page, with the name **Deduplication_DataSource_Entity**.
-
-A deduplication output entity contains the following information:
-
-- IDs / Keys
-  - Primary key and Alternate ID fields. Alternate ID field consists of all the alternate IDs identified for a record.
-  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
-  - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
-- Fields used to define the deduplication rules.
-- Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
