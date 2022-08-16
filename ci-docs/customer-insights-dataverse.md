@@ -103,7 +103,7 @@ Set up PowerShell to execute PowerShell scripts.
 
    This script adds the required role-based access control for the Microsoft Dataverse service and any Dataverse-based business applications. It also updates the Access Control List (ACL) on the `customerinsights` container for the security groups created with the `CreateSecurityGroups.ps1` script. The Contributor group is given *rwx* permission and Readers group is given *r-x* permission only.
 
-1. Copy the output string which looks like: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
+1. Copy the output string that looks like: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
 
 1. Enter the copied output string into the **Permissions identifier** field of the environment configuration step for Microsoft Dataverse.
 
