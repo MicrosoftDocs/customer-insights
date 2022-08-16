@@ -54,7 +54,7 @@ After the first environment is created, the global administrator of the Microsof
 
 1. Choose where to store the Customer Insights data:
 
-   - **Customer Insights storage**: Data storage is managed by the Customer Insights team. It's the default option and unless there are specific requirements to store data in your own storage account, we recommend using this option.
+   - **Customer Insights storage**: Data storage is managed automatically. It's the default option and unless there are specific requirements to store data in your own storage account, we recommend using this option.
    - **Azure Data Lake Storage**: Your own Azure Data Lake Storage account to store the data so you have full control where the data is stored. Follow the steps in [Use your own Azure Data Lake Storage account](own-data-lake-storage.md).
 
    :::image type="content" source="media/data-storage-environment.png" alt-text="Choose the preferred option to store your data.":::
