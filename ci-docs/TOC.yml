@@ -235,6 +235,8 @@
           href: export-facebook.md
         - name: Google Ads
           href: export-google-ads.md
+        - name: HubSpot
+          href: export-hubspot.md
         - name: InMobi
           href: export-inmobi.md
         - name: Iterable

@@ -1,9 +1,8 @@
 ---
 title: "Export Customer Insights data to HubSpot"
 description: "Learn how to configure the connection and export to HubSpot."
-ms.date: 07/26/2022
+ms.date: 08/17/2022
 ms.reviewer: mhart
-
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
@@ -18,7 +17,7 @@ Export segments of unified customer profiles to HubSpot and use them for email m
 ## Prerequisites for a connection
 
 - A [HubSpot account](https://www.hubspot.com/) and corresponding administrator credentials.
-- An API key in Hubspot.
+- [API key](https://knowledge.hubspot.com/Integrations/How-do-I-get-my-HubSpot-API-key) from HubSpot.
 - [Configured segments](segments.md) in Customer Insights.
 
 ## Known limitations
@@ -26,7 +25,7 @@ Export segments of unified customer profiles to HubSpot and use them for email m
 - Up to 100'000 customer profiles per export to HubSpot, which can take up to 15 minutes to complete. The number of customer profiles that you can export to HubSpot is dependent and limited on your contract with HubSpot.
 - Segments only.
 
-## Set up connection to Hubspot
+## Set up connection to HubSpot
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
