@@ -72,7 +72,7 @@ Select the enrichment to view available actions.
 - **View** enrichment details with the number of enriched customer profiles.
 - **Edit** the enrichment configuration.
 - [**Run**](#run-or-refresh-enrichments) the enrichment to update customer profiles with the latest data. Run multiple enrichments at once by selecting them in the list.
-- **Activate** or **Deactivate** an enrichment. Inactive enrichments won't get refreshed during a [scheduled refresh](system.md#schedule-tab).
+- **Activate** or **Deactivate** an enrichment. Inactive enrichments won't get refreshed during a [scheduled refresh](schedule-refresh.md).
 - **Delete** the enrichment.
 
 You can also create [segments](segments.md) or [measures](measures.md) from enrichments.
@@ -81,7 +81,7 @@ You can also create [segments](segments.md) or [measures](measures.md) from enri
 
 Once run, enrichments can be refreshed on an automatic schedule or refreshed manually on demand.
 
-1. To manually refresh one or more enrichments, select them and choose **Run**. To [schedule an automatic refresh](system.md#schedule-tab), go to **Admin** > **System** > **Schedule**. The processing time depends on the size of your customer data.
+1. To manually refresh one or more enrichments, select them and choose **Run**. To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**. The processing time depends on the size of your customer data.
 
 1. Optionally, [see the progress of the enrichment process](#see-the-progress-of-the-enrichment-process).
 
@@ -91,13 +91,15 @@ Once run, enrichments can be refreshed on an automatic schedule or refreshed man
 
 ### See the progress of the enrichment process
 
-You can find details about the processing of an enrichment, including it status and potential issues while it's refreshing or after a refresh completed. Understand which processes are involved to refresh an enrichment and how long it took to run the processes. The enrichment status is supported for Experian, Leadspace, HERE Technologies, SFTP Import, and Azure Maps.
+You can find details about the processing of an enrichment, including its status and potential issues while it's refreshing or after a refresh completed. Understand which processes are involved to refresh an enrichment and how long it took to run the processes. The enrichment status is supported for Experian, Leadspace, HERE Technologies, SFTP Import, and Azure Maps.
 
 1. Go to **Data** > **Enrichment**.
 1. In the **My enrichments** tab, select the status of the enrichment to open a side pane.
 1. In the **Progress details** pane, expand the **Enrichments** section.
 1. Under the enrichment you want to see the progress, select **See details**.
 1. In the **Task details** pane, select **Show details** to see the processes that are involved in updating the enrichment and their status.
+
+[!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
 ## View enrichment results
 

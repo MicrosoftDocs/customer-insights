@@ -1,7 +1,7 @@
 ---
 title: "Export segments to LinkedIn Ads (preview)"
 description: "Learn how to configure the connection and export to LinkedIn Ads."
-ms.date: 07/25/2022
+ms.date: 08/12/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -20,7 +20,7 @@ Export segments of unified customer profiles to LinkedIn Ads to create matched a
 - A [LinkedIn Campaign Manager account](https://business.linkedin.com/marketing-solutions/ads) and corresponding administrator credentials.
 - A [LinkedIn Campaign Manager Account ID](https://www.linkedin.com/help/lms/answer/a424270).
 - [Configured segments](segments.md) in Customer Insights.
-- Unified customer profiles in the exported segments contain a field representing an email address.
+- The exported segments need at least one specific field depending whether you choose [contact targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) or [company targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) on LinkedIn. The possible fields are listed in the **Data matching** step when [configuring the export](#configure-an-export).
 
 ## Known limitations
 

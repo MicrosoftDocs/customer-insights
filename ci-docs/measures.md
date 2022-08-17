@@ -49,7 +49,7 @@ Select next to a measure to view available actions. Select the measure name to p
 - **Edit** the measure to change its properties.
 - **Refresh** the measure to include the latest data.
 - **Rename** the measure.
-- **Activate** or **Deactivate** the measure. Inactive measures won't get refreshed during a [scheduled refresh](system.md#schedule-tab) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
+- **Activate** or **Deactivate** the measure. Inactive measures won't get refreshed during a [scheduled refresh](schedule-refresh.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the measure.
 - **Delete** the measure.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
@@ -58,7 +58,7 @@ Select next to a measure to view available actions. Select the measure name to p
 
 ## Refresh measures
 
-Measures can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more measures, select them and choose **Refresh**. To [schedule an automatic refresh](system.md#schedule-tab), go to **Admin** > **System** > **Schedule**.
+Measures can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more measures, select them and choose **Refresh**. To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

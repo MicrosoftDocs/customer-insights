@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Common Data Model folder using an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 05/30/2022
+ms.date: 07/27/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -51,8 +51,8 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](security-overview.md#private-links-tab).
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](security-overview.md#private-links-tab).
+   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
   
    > [!NOTE]
    > You need one of the following roles either to the container or the storage account to create the data source:
@@ -77,7 +77,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
    :::image type="content" source="media/ADLS_required.png" alt-text="Dialog box showing Required for Primary key":::
 
    > [!TIP]
-   > To edit the entities in a JSON editing interface, select **Show more** > **Edit schema file**. Make changes and select **Save**.
+   > To edit an entity in a JSON editing interface, select the entity and then **Edit schema file**. Make changes and select **Save**.
 
 1. For selected entities that require incremental ingestion, **Required** displays under **Incremental refresh**. For each of these entities, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
 
@@ -96,6 +96,10 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
    1. Select **Done**.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Entities**](entities.md) page.
 
 ### Create a new schema file
 
@@ -143,6 +147,9 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Entities**](entities.md) page.
 
 ## Edit an Azure Data Lake Storage data source
 
@@ -164,7 +171,7 @@ You can update the *Connect to storage account using* option. For more informati
         > - Storage Blob Data Owner
         > - Storage Blob Data Contributor
 
-   - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [Private Links](security-overview.md#private-links-tab).
+   - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
 
 1. Select **Next**.
 1. Change any of the following:
@@ -174,8 +181,16 @@ You can update the *Connect to storage account using* option. For more informati
       > [!IMPORTANT]
       > If there are dependencies on the existing model.json or manifest.json file and the set of entities, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
    - To change data file location or the primary key, select **Edit**.
-   - To change the incremental ingestion data, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md)
+   - To change the incremental ingestion data, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
+   - Only change the entity name to match the entity name in the .json file.
+
+     > [!NOTE]
+     > Always keep the entity name in Customer Insights the same as the entity name inside the model.json or manifest.json file after ingestion. Customer Insights validates all entity names with the model.json or manifest.json during every system refresh. If an entity name is changed either inside Customer Insights or outside, an error occurs because Customer Insights cannot find the new entity name in the .json file. If an ingested entity name was accidentally changed, edit the entity name in Customer Insights to match the name in the .json file.
 
 1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
 
 1. Click **Save** to apply your changes and return to the **Data sources** page.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

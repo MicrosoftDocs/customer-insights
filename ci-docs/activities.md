@@ -1,9 +1,9 @@
 ---
-title: "Customer activities"
-description: "Define customer activities and view them in a timeline on customer profiles." 
-ms.date: 07/22/2022
+title: "Customer or business contact activities"
+description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
+ms.date: 08/12/2022
 ms.subservice: audience-insights
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
@@ -16,14 +16,14 @@ searchScope:
   - ci-activities-wizard
   - ci-measures
   - ci-segment-suggestions
-  - customerInsight
+  - customerInsights
 ---
 
-# Customer activities
+# Customer or business contact activities
 
-Customer activities are actions or events performed by customers. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these [data sources](data-sources.md) and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
+Customer activities are actions or events performed by customers or business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these [data sources](data-sources.md) and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
 
-## Define an activity
+## Define a customer activity
 
 An entity must have at least one attribute of type **Date** to be included in a customer timeline. The **Add activity** control is disabled if no such entity is found.
 
@@ -33,9 +33,9 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
 1. In the **Activity data** step, enter the following information:
 
-   - **Activity name**: Name for your activity.
-   - **Activity entity**: Entity that includes transactional or activity data.
-   - **Primary key**: Field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
+   - **Activity name**: Select a name for your activity.
+   - **Activity entity**: Select an entity that includes transactional or activity data.
+   - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with name, entity, and primary key.":::
 
@@ -43,9 +43,9 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
 1. In the **Relationship** step, select **Add relationship** to connect your activity data to its corresponding customer record. This step visualizes the connection between entities.  
 
-   - **Foreign key from entity**: Field in your activity entity that will be used to establish a relationship with another entity.
+   - **Foreign key**: Foreign field in your activity entity that will be used to establish a relationship with another entity.
    - **To entity name**: Corresponding source customer entity with which your activity entity will be in relationship. You can only relate to source customer entities that are used in the data unification process.
-   - **Relationship name**: Name identifying the relationship between entities. If a relationship between this activity entity and the selected source customer entity already exists, the relationship name is read-only.
+   - **Relationship name**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
 
@@ -85,7 +85,7 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-## Manage existing activities
+## Manage existing customer activities
 
 Go to **Data** > **Activities** to view your saved activities, their source entity, the activity type, and if they are included in the customer timeline. You can sort the list of activities by any column or use the search box to find the activity you want to manage.
 
@@ -111,9 +111,43 @@ Select an activity to view available actions.
 
      :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="Use the filter panel to configure filter conditions.":::
 
-1. To remove filters, select **Clear filters** or select **Filter** and clear the filter checkbox.
-
 > [!NOTE]
 > Activity filters are removed when you leave a customer profile. You have to apply them each time you open a customer profile.
+
+## Define a contact activity
+
+For business accounts (B-to-B), use a *ContactProfile* entity to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
+
+   > [!NOTE]
+   > To define a contact-level activity, a *ContactProfile* entity must be created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping).
+   >
+   > You must have both **AccountID** and **ContactID** attributes for each record within your activity data.
+  
+1. Go to **Data** > **Activities**.
+
+1. Select **Add Activity**.
+
+1. Name the activity, select the source activity entity, and select the primary key of the activity entity.
+
+1. In the **Relationships** step, create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary entity. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
+   - Example relationship for an activity called *Purchases*:
+      - **Purchases Source Activity Data** > **Contact Data** on the attribute **ContactID**
+      - **Contact Data** > **Account Data** on the attribute **AccountID**
+
+   :::image type="content" source="media/Contact_Activities1.png" alt-text="Example relationship setup.":::
+
+1. After setting up the relationship(s), select **Next** and complete your activity mapping configuration. For detailed steps on activity creation, see [define a customer activity](#define-a-customer-activity).
+
+1. Run your activity mappings.
+
+1. Your contact-level activities will now be visible on your customer timeline.
+
+   :::image type="content" source="media/Contact_Activities2.png" alt-text="Final result after configuring contact activities":::
+
+## Contact-level activity timeline filtering
+
+After configuring a contact-level activity mapping and running it, the activity timeline for your customers will be updated. It includes their IDs or names, depending on your *ContactProfile* configuration, for the activities they acted on. You can filter activities by contacts in the timeline to see specific contacts that you are interested in. Additionally, you can see all activities that are not assigned to a specific contact by selecting **Activities not mapped to a Contact**.
+
+   :::image type="content" source="media/Contact_Activities3.png" alt-text="Filtering options available for Contact-level activities.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

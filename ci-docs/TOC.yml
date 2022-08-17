@@ -72,20 +72,22 @@
 
 - name: Data unification
   items:
-        - name: Data unification overview
-          href: data-unification.md
-        - name: Select source fields
-          href: map-entities.md
-        - name: Remove duplicate records
-          href: remove-duplicates.md
-        - name: Match conditions
-          href: match-entities.md
-        - name: Unify customer fields
-          href: merge-entities.md
-        - name: Review data unification
-          href: review-unification.md
-        - name: Update the unification settings
-          href: data-unification-update.md
+    - name: Data unification overview
+      href: data-unification.md
+    - name: Select source fields
+      href: map-entities.md
+    - name: Remove duplicate records
+      href: remove-duplicates.md
+    - name: Match conditions
+      href: match-entities.md
+    - name: Unify customer fields
+      href: merge-entities.md
+    - name: Review data unification
+      href: review-unification.md
+    - name: Create a unified contact profile 
+      href: data-unification-contacts.md
+    - name: Update unification settings
+      href: data-unification-update.md  
 
 - name: Data enrichment
   items:
@@ -249,6 +251,8 @@
           href: export-marketo.md
         - name: Microsoft Advertising
           href: export-microsoft-advertising.md
+        - name: MoEngage
+          href: export-moengage.md
         - name: Omnisend
           href: export-omnisend.md
         - name: RollWorks
@@ -304,18 +308,20 @@
 
 - name: Administration
   items:
-    - name: Set up the system configuration
-      href: system.md
-    - name: Configure security settings
-      href: security-overview.md
     - name: Assign user permissions
       href: permissions.md
     - name: Bring your own Key Vault
       href: use-azure-key-vault.md
+    - name: Configure security settings
+      href: security-overview.md
     - name: Export diagnostic logs
       href: diagnostics.md
-    - name: Connections overview
+    - name: Manage connections
       href: connections.md
+    - name: Schedule system refresh
+      href: schedule-refresh.md
+    - name: View system configuration
+      href: system.md
 
 - name: APIs
   items:

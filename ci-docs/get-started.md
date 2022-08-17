@@ -1,12 +1,11 @@
 ---
 title: Get started with Dynamics 365 Customer Insights
-description: An overview of Customer Insights helps resources to get started quickly. 
-ms.reviewer: v-wendysmith
+description: An overview of Customer Insights help resources to get started quickly. 
+ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 04/12/2022
-
-ms.subservice: engagement-insights 
+ms.date: 08/31/2021
+ms.subservice: audience-insights 
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
