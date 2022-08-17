@@ -14,9 +14,9 @@ manager: shellyha
 
 The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP. It uses commonly accepted methodologies like REST for the web. There are various kinds of libraries and tools that can be used to consume OData services.
 
-This article lists some frequently requested example queries to help you with building your own implementations based on the [Customer Insights APIs](apis.md).
+To help you with building your own implementations based on the [Customer Insights APIs](apis.md), review some frequently requested example queries.
 
-You have to modify the query samples to make them work on the target environments: 
+Modify the query samples to make them work on the target environments:
 
 - {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` where {instanceId} is the GUID of the Customer Insights environment you want to query. The [ListAllInstances operation](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) lets you find the {InstanceId} you have access to.
 - {CID}: GUID of a unified customer record. Example: `ce759201f786d590bf2134bff576c369`.
@@ -26,7 +26,7 @@ You have to modify the query samples to make them work on the target environment
 
 ## Customer
 
-The following table contains a set of sample queries for the *Customer* entity.
+Sample queries for the *Customer* entity.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
@@ -41,7 +41,7 @@ The following table contains a set of sample queries for the *Customer* entity.
 
 ## Unified activity
 
-The following table contains a set of sample queries for the *UnifiedActivity* entity.
+Sample queries for the *UnifiedActivity* entity.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
@@ -54,7 +54,7 @@ The following table contains a set of sample queries for the *UnifiedActivity* e
 
 ## Other examples
 
-The following table contains a set of sample queries for other entities.
+Sample queries for other entities.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
