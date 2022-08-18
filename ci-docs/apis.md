@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights APIs
 description: Use APIs and understand limitations.
-ms.date: 08/16/2022
+ms.date: 08/17/2022
 ms.reviewer: wimohabb
 
 ms.subservice: audience-insights
@@ -25,9 +25,11 @@ Try Customer Insights APIs, create an Azure App Registration, and get started wi
 
 ## Get started trying the Customer Insights APIs
 
+As a Customer Insights admin, enable Customer Insights APIs and try them out.
+
 1. [Sign in](https://home.ci.ai.dynamics.com) to Customer Insights. If you don't have a subscription yet, [sign up for a trial of Customer Insights](https://aka.ms/tryci).
 
-1. Go to **Admin** > **Security** and select the **APIs** tab. Admin permissions required.
+1. Go to **Admin** > **Security** and select the **APIs** tab.
 
 1. If API access to the environment has not been set up, select **Enable**.
 
@@ -49,7 +51,7 @@ Try Customer Insights APIs, create an Azure App Registration, and get started wi
 
 ## Create a new app registration in the Azure portal
 
-Create a new app registration to use the Customer Insights APIs in an Azure application using delegated permissions.
+Create a new [app registration](/graph/auth-register-app-v2) to use the Customer Insights APIs in an Azure application using delegated permissions.
 
 1. Complete the [Getting started section](#get-started-trying-the-customer-insights-apis).
 
@@ -74,13 +76,9 @@ Create a new app registration to use the Customer Insights APIs in an Azure appl
 
 1. Select **Grant admin consent for...** to complete the app registration.
 
-You can use the Application/Client ID for this app registration with the Microsoft Authentication Library (MSAL) to obtain a bearer token to send with your request to the API.
+You can use the Application/Client ID for this app registration with the [Microsoft Authentication Library [MSAL)](/azure/active-directory/develop/msal-overview) to obtain a bearer token to send with your request to the API.
 
 <!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
-
-For more information about MSAL, see [Overview of Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
-
-For more information about app registration in Azure, see [Register an application](/graph/auth-register-app-v2).
 
 For information on using the APIs in our client libraries, see [Customer Insights client libraries](#customer-insights-client-libraries).
 
