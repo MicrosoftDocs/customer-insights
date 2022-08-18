@@ -2,7 +2,7 @@
 title: "Match conditions for data unification"
 description: "Match entities to create unified customer profiles."
 recommendations: false
-ms.date: 05/05/2022
+ms.date: 07/27/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -24,6 +24,8 @@ This step in unification defines the match order and rules for cross-entity matc
 > [!NOTE]
 > Once you create your match conditions and select **Next**, you cannot remove a selected entity or attribute. If needed, select **Back** to review the selected entities and attributes before continuing.
 
+[!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
+
 ## Include enriched entities (preview)
 
 If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched entities on the **Duplicate records** page, you do not need to select them again.
@@ -39,16 +41,16 @@ If you enriched entities on the data source level to help improve your unificati
 Each match unifies two or more entities into a single, consolidated entity. At the same time, it keeps the unique customer records. The match order indicates the order in which the system tries to match the records.
 
 > [!IMPORTANT]
-> The first entity in the list is called the primary entity. The primary entity serves as the basis for your unified profiles dataset. Additional entities that are selected will be added to this entity.
+> The first entity is called the primary entity, which serves as the basis for your unified profiles. Additional entities that are selected will be added to this entity.
 >
 > Important considerations:
 >
 > - Choose the entity with the most complete and reliable profile data about your customers as the primary entity.
 > - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as the primary entity.
 
-1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **Contacts:eCommerce** as the primary entity and **CustomerLoyalty:Loyalty** as the second entity.
+1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **eCommerceCustomers** as the primary entity and **loyCustomers** as the second entity.
 
-1. To have every record in the entity as a unique customer regardless if a match is found, select **Include all records**. Any records in this entity that do not match to records in any other entities are included in the unified profile. Records that do not have a match are called singletons.
+1. To have every record in the entity as a unique customer regardless if a match is found, select **Include all records**. Any records in this entity that do not match to records in any other entity are included in the unified profile. Records that do not have a match are called singletons.
   
 The primary entity *Contacts:eCommerce* is matched with the next entity *CustomerLoyalty:Loyalty*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
 
@@ -66,7 +68,7 @@ The warning next to an entity name means that no match rule is defined for a mat
 
    :::image type="content" source="media/m3_add_rule.png" alt-text="Screenshot of Add rule pane.":::
 
-   - **Select Entity/Field (first row)**: Choose a related entity and an attribute to specify a record property that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
+   - **Select Entity/Field (first row)**: Choose an entity and an attribute that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
 
    - **Select Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
 
@@ -112,7 +114,7 @@ Match rules represent sets of conditions. To match entities by conditions based 
 
 ### Add exceptions to a rule
 
-In most cases, the entity matching leads to unique customer profiles with consolidated data. To dynamically address rare cases of false positives and false negatives, you can define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records, which fulfill the exception criteria.
+In most cases, the entity matching leads to unique customer profiles with consolidated data. To address rare cases of false positives and false negatives, define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records, which fulfill the exception criteria.
 
 For example, if your match rule combines last name, city, and date of birth, the system would identify twins with the same last name who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine aren’t the same.
 
@@ -130,7 +132,7 @@ You can specify conditions that override the default match logic. There are four
 |---------|---------|---------|
 |Always match     | Defines values that are always matched.         |  Always match *Mike* and *MikeR*.       |
 |Never match     | Defines values that never match.        | Never match *John* and *Jonathan*.        |
-|Custom bypass     | Defines values that the system should always ignore in the match phase. |  Ignore the values *11111* and *Unknown* during match.        |
+|Bypass            | Defines values that the system should always ignore in the match phase. |  Ignore the values *11111* and *Unknown* during match.        |
 |Alias mapping    | Defining values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
 
 1. Select **Custom**.

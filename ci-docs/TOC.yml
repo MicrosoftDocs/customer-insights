@@ -72,20 +72,22 @@
 
 - name: Data unification
   items:
-        - name: Data unification overview
-          href: data-unification.md
-        - name: Select source fields
-          href: map-entities.md
-        - name: Remove duplicate records
-          href: remove-duplicates.md
-        - name: Match conditions
-          href: match-entities.md
-        - name: Unify customer fields
-          href: merge-entities.md
-        - name: Review data unification
-          href: review-unification.md
-        - name: Update the unification settings
-          href: data-unification-update.md
+    - name: Data unification overview
+      href: data-unification.md
+    - name: Select source fields
+      href: map-entities.md
+    - name: Remove duplicate records
+      href: remove-duplicates.md
+    - name: Match conditions
+      href: match-entities.md
+    - name: Unify customer fields
+      href: merge-entities.md
+    - name: Review data unification
+      href: review-unification.md
+    - name: Create a unified contact profile 
+      href: data-unification-contacts.md
+    - name: Update unification settings
+      href: data-unification-update.md  
 
 - name: Data enrichment
   items:

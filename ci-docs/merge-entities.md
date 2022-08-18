@@ -2,7 +2,7 @@
 title: "Unify customer fields for data unification"
 description: "Merge entities to create unified customer profiles."
 recommendations: false
-ms.date: 05/04/2022
+ms.date: 07/27/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -17,11 +17,11 @@ searchScope:
   - customerInsights
 ---
 
-# Unify customer fields for data unification
+# Unify customer fields
 
-In this step of the unification process, choose and exclude attributes to merge within your unified profile entity. For example, if three entities had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Some attributes are automatically combined by the system. You can create stable and unique customer IDs and group related profiles into a cluster.
+In this step of the unification process, choose and exclude attributes to merge within your unified profile entity. For example, if three entities had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Some attributes are automatically combined by the system. You can create stable and unique customer IDs. For individual customers, you can group related profiles into a cluster.
 
-:::image type="content" source="media/m3_unify.png" alt-text="Merge page in the data unification process showing table with merged fields that define the unified customer profile.":::
+:::image type="content" source="media/m3_unify.png" alt-text="Unify customer fields page in the data unification process showing table with merged fields that define the unified customer profile.":::
 
 ## Review and update the customer fields
 
@@ -43,7 +43,7 @@ In this step of the unification process, choose and exclude attributes to merge 
 
 1. Optionally, [generate the customer ID configuration](#configure-customer-id-generation).
 
-1. Optionally, [group profiles into households or clusters](#group-profiles-into-households-or-clusters).
+1. Optionally for B-to-C, [group profiles into households or clusters](#group-profiles-into-households-or-clusters).
 
 > [!div class="nextstepaction"]
 > [Next step: Review unification](review-unification.md)
@@ -157,7 +157,7 @@ Configuring a stable customer ID enables you to avoid that behavior.
 
 ## Group profiles into households or clusters
 
-You can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
+For individual customers, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
 
 1. Select **Advanced** > **Create cluster**.
 

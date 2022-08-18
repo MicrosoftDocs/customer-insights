@@ -1,7 +1,7 @@
 ---
 title: "Review data unification"
 description: "Review the data unification steps, create unified customer profiles, and review the results"
-ms.date: 06/02/2022
+ms.date: 08/12/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -18,25 +18,29 @@ searchScope:
 
 # Review data unification
 
+Review the summary of changes, create the unified profile, and review the results.
+
+## Review and create customer profiles
+
 This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified profile.
 
-:::image type="content" source="media/m3_review.png" alt-text="Screenshot of Review and Create customer profiles.":::
+[!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
-## Review the data unification steps
+:::image type="content" source="media/m3_review.png" alt-text="Screenshot of Review and create customer profiles.":::
 
 1. Select **Edit** on any of the data unification steps to review and make any changes.
 
-1. If you are satisfied with your selections, select **Create customer profiles**. The **Unify** page displays while the unified customer profile is being created. All tiles except **Source fields** show **Queued** or **Refreshing** status.
+1. If you are satisfied with your selections, select **Create customer profiles** (or **Create account profiles** for B-to-B). The **Unify** page displays while the unified customer profile is being created.
 
    :::image type="content" source="media/m3_unify_refreshing.png" alt-text="Screenshot of Unify page with tiles showing Queued or Refreshing.":::
 
    [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
-The unification algorithm takes some time to complete and you can't change the configuration until it completes. When the unification process completes, the unified customer profile entity, called *Customer*, is listed on the **Entities** page in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+The unification algorithm takes some time to complete and you can't change the configuration until it completes.
 
-## Review the results of data unification
+## View the results of data unification
 
-After unification, the **Data** > **Unify** page shows the number of unified customer profiles. The results of each step in the unification process display on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
+After unification, the **Data** > **Unify** page shows the number of unified customer profiles (or account profiles for B-to-B). The results of each step in the unification process display on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
 
 :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
 
@@ -47,8 +51,26 @@ We recommend you review the results, particularly the quality of your [match rul
 
 When needed, [make changes to the unification settings](data-unification-update.md) and rerun the unified profile.
 
+### Verify output entities from data unification
+
+Go to **Data** > **Entities** to verify the output entities.
+
+The unified customer profile entity, called *Customer*, displays in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+
+Deduplication and conflation entities are created and display in the **System** section. A deduplicated entity for each of the source entities is created with the name **Deduplication_DataSource_Entity**. The **ConflationMatchPairs** entity contains information about cross-entity matches.
+
+A deduplication output entity contains the following information:
+- IDs / Keys
+  - Primary key and Alternate ID fields. Alternate ID field consists of all the alternate IDs identified for a record.
+  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
+  - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
+- Fields used to define the deduplication rules.
+- Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
+
 ## Next Step
 
-Configure [activities](activities.md), [enrichment](enrichment-hub.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
+- For B-to-B, optionally perform [contact unification](data-unification-contacts.md).
+
+- For B-to-C, configure [activities](activities.md), [enrichments](enrichment-hub.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
