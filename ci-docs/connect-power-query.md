@@ -100,11 +100,11 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 
 ## Common reasons for ingestion errors or corrupted data
 
-**Data type doesn't match data**
+### Data type doesn't match data
 
-The most common data type mismatch is date fields where the date field is not set to the correct data format.
+The most common data type mismatch is date fields where the date field is not set to the correct date format.
 
-The data can be fixed at the source and re-ingested, or fix the transformation within Customer Insights.
+The data can be fixed at the source and re-ingested. Or, fix the transformation within Customer Insights.
 
 1. Go to **Data** > **Data sources**.
 
@@ -112,7 +112,7 @@ The data can be fixed at the source and re-ingested, or fix the transformation w
 
 1. Select **Next**.
 
-1. Select each of the queries and look for transformations applied inside "Applied Steps" that are incorrect, or date columns that do not have a date format.
+1. Select each of the queries and look for transformations applied inside "Applied Steps" that are incorrect, or date columns that have not been transformed with a date format.
 
    :::image type="content" source="media/PQ_corruped_date.png" alt-text="Power Query - Edit showing incorrect date format":::
 

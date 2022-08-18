@@ -83,11 +83,13 @@ For example, a 'birthday' column has the datatype set as 'date'. A customer reco
 
 1. Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. The naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'.
 
-1. Select a corrupted entity to identify the corrupted fields in a record and the reason.
+1. Select a corrupted entity and then the **Data** tab.
+
+1. Identify the corrupted fields in a record and the reason.
 
    :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason." lightbox="media/corruption-reason.png":::
 
-1. Fix the corrupted data. For example, for Azure Data Lake data sources, fix the data in the Data Lake Storage or in the manifest/model.json file. For Power Query data sources, fix the data in the source file and correct the data type in the transformation step on the **Power Query - Edit queries** page.
+1. Fix the corrupted data. For example, for Azure Data Lake data sources, [fix the data in the Data Lake Storage or in the manifest/model.json file](connect-common-data-model#common-reasons-for-ingestion-errors-or-corrupted-data). For Power Query data sources, fix the data in the source file and [correct the data type in the transformation step](connect-power-query.md#data-type-doesn't-match-data) on the **Power Query - Edit queries** page.
 
 After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes.
 
