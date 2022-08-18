@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 08/15/2022
+ms.date: 08/18/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -100,7 +100,7 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 
 ## Common reasons for ingestion errors or corrupted data
 
-### Data type doesn't match data
+### Data type does not match data
 
 The most common data type mismatch is date fields where the date field is not set to the correct date format.
 

@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Common Data Model folder using an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 08/16/2022
+ms.date: 08/18/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -201,11 +201,11 @@ The following checks run on the ingested data to expose corrupted records:
 - Fields contain characters that cause the columns to not match the expected schema. For example: incorrectly formatted quotes, unescaped quotes, or newline characters.
 - If there are datetime/date/datetimeoffset columns, their format must be specified in the model if it doesn't follow the standard ISO format.
 
-**Schema or data type mismatch**
+### Schema or data type mismatch
 
 If the data does not conform to the schema, the records are classified as corrupt. Correct either the source data or the schema and re-ingest the data.
 
-**Datetime fields in the wrong format**
+### Datetime fields in the wrong format
 
 The datetime fields in the entity are not in ISO or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in an entity should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or entity level in the model or manifest.json. For example:
 

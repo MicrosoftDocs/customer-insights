@@ -1,7 +1,7 @@
 ---
 title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
-ms.date: 08/04/2022
+ms.date: 08/18/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -89,7 +89,7 @@ For example, a 'birthday' column has the datatype set as 'date'. A customer reco
 
    :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason." lightbox="media/corruption-reason.png":::
 
-1. Fix the corrupted data. For example, for Azure Data Lake data sources, [fix the data in the Data Lake Storage or in the manifest/model.json file](connect-common-data-model#common-reasons-for-ingestion-errors-or-corrupted-data). For Power Query data sources, fix the data in the source file and [correct the data type in the transformation step](connect-power-query.md#data-type-doesn't-match-data) on the **Power Query - Edit queries** page.
+1. Fix the corrupted data. For example, for Azure Data Lake data sources, [fix the data in the Data Lake Storage or in the manifest/model.json file](connect-common-data-model.md#common-reasons-for-ingestion-errors-or-corrupted-data). For Power Query data sources, fix the data in the source file and [correct the data type in the transformation step](connect-power-query.md#data-type-does-not-match-data) on the **Power Query - Edit queries** page.
 
 After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes.
 
