@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights APIs
 description: Use APIs and understand limitations.
-ms.date: 08/17/2022
+ms.date: 08/19/2022
 ms.reviewer: wimohabb
 
 ms.subservice: audience-insights
@@ -57,7 +57,7 @@ Create a new [app registration](/graph/auth-register-app-v2) to use the Customer
 
 1. Sign in to the [Azure portal](https://portal.azure.com) with the account that can access the Customer Insights data.
 
-1. On the left, select **App registrations**.
+1. Search for and then select **App registrations**.
 
 1. Select **New registration**, provide an application name and choose the account type.
 
@@ -65,7 +65,7 @@ Create a new [app registration](/graph/auth-register-app-v2) to use the Customer
 
 1. On your new App registration, go to **API permissions**.
 
-1. Select **Add a permission** and select **Dynamics 365 AI for Customer Insights** in the side pane.
+1. Select **Add a permission** and select **Customer Insights** in the side pane.
 
 1. For **Permission type**, select **Delegated permissions** and then select the **user_impersonation** permission.
 
@@ -90,7 +90,7 @@ Create an app registration that doesn't need user interaction and can be run on 
 
 1. Select **Add a permission**.
 
-1. Select the **APIs my organization uses** tab and choose **Dynamics 365 AI for Customer Insights** from the list.
+1. Select the **APIs my organization uses** tab and choose **Customer Insights** from the list.
 
 1. For **Permission type**, select **Application permissions** and then select the **CustomerInsights.Api.All** permission.
 
@@ -110,7 +110,7 @@ Create an app registration that doesn't need user interaction and can be run on 
 
 ## Sample queries
 
-We've compiled a short list of OData sample queries to work with the APIs: [OData query examples](odata-examples.md).
+For a short list of OData sample queries to work with the APIs, see [OData query examples](odata-examples.md).
 
 ## Customer Insights client libraries
 
@@ -137,7 +137,7 @@ Use the C# client libraries from NuGet.org. Currently, the package targets the n
 1. Use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) to get an `AccessToken` using your existing [Azure app registration](#create-a-new-app-registration-in-the-azure-portal).
 
 1. After successfully authenticating and acquiring a token, construct a new or use an existing `HttpClient` with the **DefaultRequestHeaders "Authorization"** set to **Bearer "access token"** and **Ocp-Apim-Subscription-Key** set to the [**subscription key** from your Customer Insights environment](#get-started-trying-the-customer-insights-apis).   
- 
+
    Reset the **Authorization** header when appropriate. For example, when the token expired.
 
 1. Pass this `HttpClient` into the construction of the `CustomerInsights` client.

@@ -1,7 +1,7 @@
 ---
 title: "Data Subject Rights (DSR) requests under GDPR | Microsoft Docs"
 description: "Respond to Data Subject Requests for Dynamics 365 Customer Insights."
-ms.date: 08/17/2022
+ms.date: 08/19/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -13,9 +13,9 @@ manager: shellyha
 
 # Data Subject Rights (DSR) requests under GDPR
 
-The European Union’s General Data Protection Regulation (GDPR) has been in effect since May 25, 2018. It gives significant rights to individuals regarding their data. The GDPR is about protecting and enabling the privacy rights of individuals. You can read more about Microsoft's commitment to security and compliance at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
+The European Union’s General Data Protection Regulation (GDPR) has been in effect since May 25, 2018. It gives significant rights to individuals regarding their data. The GDPR is about protecting and enabling the privacy rights of individuals. Read more about Microsoft's commitment to security and compliance at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-We're committed to helping our customers meet their GDPR requirements. It includes the right to delete and export data that includes personal information such as user IDs, phone numbers, and email addresses. Administrators can implement user requests to delete or export personal data.
+We're committed to helping our customers meet their GDPR requirements. It includes the right to delete or export data that includes personal information such as user IDs, phone numbers, and email addresses. Administrators can implement user requests to delete or export personal data.
 
 ## Responding to GDPR data subject delete requests for Customer Insights
 
@@ -30,9 +30,8 @@ Customer Insights offers the following in-product experiences to delete personal
 
 #### Manage requests to delete customer data
 
-As a Customer Insights admin, remove Customer Insights customer data that was deleted in the data source.
+As a Customer Insights admin, remove Customer Insights customer data that was deleted in the data source. Verify the GDPR delete requests were performed in the original data source.
 
-1. Perform GDPR delete requests in the original data source.
 1. Sign in to Dynamics 365 Customer Insights.
 1. Go to **Data** > **Data sources**.
 1. For each data source in the list that contains deleted customer data:

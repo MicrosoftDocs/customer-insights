@@ -14,7 +14,7 @@ manager: shellyha
 
 The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP. It uses commonly accepted methodologies like REST for the web. There are various kinds of libraries and tools that can be used to consume OData services.
 
-To help you with building your own implementations based on the [Customer Insights APIs](apis.md), review some frequently requested example queries.
+To help you build your own implementations based on the [Customer Insights APIs](apis.md), review some frequently requested example queries.
 
 Modify the query samples to make them work on the target environments:
 

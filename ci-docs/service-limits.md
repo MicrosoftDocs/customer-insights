@@ -1,7 +1,7 @@
 ---
 title: Service limits in Customer Insights
 description: Understand limits and restrictions in the Customer Insights SaaS service.
-ms.date: 05/28/2022
+ms.date: 08/19/2022
 ms.subservice: audience-insights 
 ms.topic: conceptual
 author: JimsonChalissery
