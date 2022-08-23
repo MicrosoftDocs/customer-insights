@@ -1,7 +1,7 @@
 ---
 title: "Data Subject Rights (DSR) requests under GDPR | Microsoft Docs"
 description: "Respond to Data Subject Requests for Dynamics 365 Customer Insights."
-ms.date: 08/19/2022
+ms.date: 08/23/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -26,14 +26,16 @@ The “right to erasure” by the removal of personal data from an organization�
 Customer Insights offers the following in-product experiences to delete personal data for a specific customer or user:
 
 - **Manage delete requests for customer data**: Customer data in Customer Insights is ingested from original data sources external to Customer Insights. Perform GDPR delete requests in the original data source first.
-- **Manage delete requests for Customer Insights user data**: Data for users is created by Customer Insights. All GDPR delete requests must be performed in Customer Insights.
+- **Manage delete requests for Customer Insights user data**: Data for users is created by Customer Insights. Perform all GDPR delete requests in Customer Insights.
 
 #### Manage requests to delete customer data
 
 As a Customer Insights admin, remove Customer Insights customer data that was deleted in the data source. Verify the GDPR delete requests were performed in the original data source.
 
 1. Sign in to Dynamics 365 Customer Insights.
+
 1. Go to **Data** > **Data sources**.
+
 1. For each data source in the list that contains deleted customer data:
    1. Select the data source and then select **Refresh**.
    1. Check the status of the data source under **Status**. A check mark means the refresh was successful. A warning triangle means something went wrong. If a warning triangle is displayed, contact D365CI@microsoft.com.
@@ -50,14 +52,18 @@ As a Customer Insights admin, remove Customer Insights customer data that was de
 As a Customer Insights admin, delete Customer Insights user data.
 
 1. Sign in to Dynamics 365 Customer Insights.
+
 1. Go to **Admin** > **Security** > and select the **Users** tab.
+
 1. Select the check box for the users you want to delete.
+
 1. Select **Remove**.
+
 1. Confirm the deletion.
 
 ## Responding to GDPR data subject export requests
 
-As part of our commitment to partner with you on the General Data Protection Regulation (GDPR), we’ve developed documentation to help you respond to requests from data subjects.
+As part of the General Data Protection Regulation (GDPR), we’ve developed documentation to help you respond to requests from data subjects.
 
 ### Manage export and view requests
 

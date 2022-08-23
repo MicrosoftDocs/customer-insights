@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights APIs
 description: Use APIs and understand limitations.
-ms.date: 08/19/2022
+ms.date: 08/23/2022
 ms.reviewer: wimohabb
 
 ms.subservice: audience-insights
@@ -71,12 +71,11 @@ Create a new [app registration](/graph/auth-register-app-v2) to use the Customer
 
 1. Select **Add permissions**.
 
-   - To access the API with a user sign in, go to the next step.
-   - To access the API without a user signing in, go to [Server-to-server application permissions](#server-to-server-application-permissions).
-
 1. Select **Grant admin consent for...** to complete the app registration.
 
-You can use the Application/Client ID for this app registration with the [Microsoft Authentication Library [MSAL)](/azure/active-directory/develop/msal-overview) to obtain a bearer token to send with your request to the API.
+1. To access the API without a user signing in, go to [Server-to-server application permissions](#server-to-server-application-permissions).
+
+You can use the Application/Client ID for this app registration with the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) to obtain a bearer token to send with your request to the API.
 
 <!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
