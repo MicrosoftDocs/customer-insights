@@ -32,8 +32,8 @@ Customer Insights sends the following event logs:
 
 - An active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - [Administrator](permissions.md#admin) permissions in Customer Insights.
-- [Contributor and User Access Administrator role](/azure/role-based-access-control/role-assignments-portal) on the destination resource on Azure. The resource can be an Azure Data Lake Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. This permission is necessary while configuring diagnostic settings in Customer Insights, but it can be changed after successful setup.
 - A valid resource on Azure that follows the [destination requirements](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics.
+- [Contributor and User Access Administrator role](/azure/role-based-access-control/role-assignments-portal) on the destination resource on Azure. The resource can be an Azure Data Lake Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. This permission is necessary while configuring diagnostic settings in Customer Insights, but it can be changed after successful setup.
 - At least the **Reader** role on the resource group the resource belongs to.
 
 ### Set up diagnostics with Azure Monitor
