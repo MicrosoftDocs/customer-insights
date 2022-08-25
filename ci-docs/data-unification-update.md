@@ -1,7 +1,7 @@
 ---
 title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
-ms.date: 08/12/2022
+ms.date: 08/26/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -34,7 +34,7 @@ To review or change any unification settings once a unified profile has been cre
    > The **Matching conditions** tile displays only if multiple entities were selected.
 
 1. Choose what you want to update:
-   - [Source fields](#edit-source-fields) to add entities or attributes or change attribute types.
+   - [Source fields](#edit-source-fields) to add or remove attributes or entities or change attribute types.
    - [Duplicate records](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
    - [Matching conditions](#manage-match-rules) to update matching rules across two or more entities.
    - [Unified customer fields](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
@@ -49,7 +49,7 @@ To review or change any unification settings once a unified profile has been cre
 
 ## Edit source fields
 
-You can't remove an attribute or an entity if they've already been unified.
+To remove an attribute, see Removing a unified field. To remove an entity, see Removing a unified entity.
 
 1. Select **Edit** on the **Source fields** tile.
 
@@ -62,6 +62,51 @@ You can't remove an attribute or an entity if they've already been unified.
 1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off. For more information, see [Select source fields](map-entities.md).
 
 1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update unification settings](#update-unification-settings).
+
+### Remove a unified field
+
+To remove a field that has been unified, the field must be removed from any dependencies such as segments, measures, enrichments, or relationships.
+
+1. Once all dependencies for the field has been removed, go to **Data** > **Unify**.
+
+1. Select **Edit** on the **Unified customer fields** tile.
+
+1. Select all occurrences of the field and then select **Exclude**.
+
+1. Select **Save and close**.
+
+   > [!TIP]
+   > If you see the message "Couldn't save unify. The specified resource cannot be modified or deleted due to downstream dependencies", then the field is still used in a downstream dependency.
+
+1. If the field is used in a rule for duplicate records or matching conditions, perform the following steps. Otherwise, go to the next step.
+   1. Select **Edit** on the **Duplicate records** tile.
+   1. Remove the field from all rules it is used in, if any, and then select **Save and close**.
+   1. Select **Edit** on the **Matching conditions** tile.
+   1. Remove the field from all rules it is used in, if any, and then select **Save and close**.
+   1. Select **Unify** > **Unify customer profiles and dependencies**. Wait for unification to complete before going to the next step.
+
+1. Select **Edit** on the **Source fields** tile.
+
+1. Select **Select entities and fields** and clear the checkbox next to each occurrence of the field. Select **Apply**.
+
+1. Select **Save and close**.
+
+1. Select **Unify** > **Unify customer profiles and dependencies** to update the unified profile.
+
+### Remove a unified entity
+
+To remove an entity that has been unified, the entity must be removed from any dependencies such as segments, measures, enrichments, or relationships.
+
+1. Once all dependencies for the entity has been removed, go to **Data** > **Unify**.
+
+1. Select **Edit** on the **Unified customer fields** tile.
+
+1. Select all fields for the entity and then select **Exclude**.
+
+1. Select **Save and close**.
+
+   > [!TIP]
+   > If you see the message "Couldn't save unify. The specified resource cannot be modified or deleted due to downstream dependencies", then the entity is still used in a downstream dependency.
 
 ## Manage deduplication rules
 
