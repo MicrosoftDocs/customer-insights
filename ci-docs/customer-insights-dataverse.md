@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights data in Microsoft Dataverse
 description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output entities that are exported to Dataverse.
-ms.date: 08/15/2022
+ms.date: 08/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -130,7 +130,8 @@ If the removal of the connection fails due to dependencies, you need to remove t
 
 Some output entities from Customer Insights are available as tables in Dataverse. The sections below describe the expected schema of these tables.
 
-- [CustomerProfile](#customerprofile)
+- [CustomerProfile](#customerprofile)$
+- ContactProfile
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
 - [CustomerMeasure](#customermeasure)
@@ -141,6 +142,33 @@ Some output entities from Customer Insights are available as tables in Dataverse
 ### CustomerProfile
 
 This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile depends on the entities and attributes used in the data unification process. A customer profile schema usually contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+
+### ContactProfile
+
+A ContactProfile contains unified information about a contact. Contacts are [individuals that are mapped to an account](data-unification-contacts.md) in a B-to-B scenario.
+
+| Column                       | Type                | Description     |
+| ---------------------------- | ------------------- | --------------- |
+| msdynci_birthdate            | Date and time       |  Date of birth of the contact.               |
+| msdynci_city                 | Single line of text |  City of the contact address.               |
+| msdynci_contactid            | Single line of text |  ID of the contact profile.               |
+| msdynci_contactprofileld     | Unique identifier   |  GUID for the contact.               |
+| msdynci_countryorregion      | Single line of text |  Country/Region of the contact address.               |
+| msdynci_customerid           | Single line of text |  ID of the account the contact is mapped to.               |
+| msdynci_entityname           | Single line of text |                 |
+| msdynci_firstname            | Single line of text |  First name of the contact.               |
+| msdynci_gender               | Single line of text |  Gender of the contact.               |
+| msdynci_id                   | Single line of text |                 |
+| msdynci_identifier           | Single line of text |  Internal ID of the contact profile.               |
+| msdynci_jobtitle             | Single line of text |  Job title of the contact.               |
+| msdynci_lastname             | Single line of text |  Last name of the contact.               |
+| msdynci_lookupfield_customer | Lookup              |                 |
+| msdynci_postalcode           | Single line of text |  ZIP code of the contact address.               |
+| msdynci_primaryemail         | Single line of text |  Email address of the contact.               |
+| msdynci_primaryphone         | Single line of text |  Telephone number of the contact.               |
+| msdynci_sourceid             | Single line of text |                 |
+| msdynci_stateorprovince      | Single line of text |  State or province of the contact address.               |
+| msdynci_streetaddress        | Single line of text |  Street of the contact address.               |
 
 ### AlternateKey
 
