@@ -155,18 +155,16 @@ A ContactProfile contains unified information about a contact. Contacts are [ind
 | msdynci_contactprofileld     | Unique identifier   |  GUID for the contact.               |
 | msdynci_countryorregion      | Single line of text |  Country/Region of the contact address.               |
 | msdynci_customerid           | Single line of text |  ID of the account the contact is mapped to.               |
-| msdynci_entityname           | Single line of text |                 |
+| msdynci_entityname           | Single line of text |  Entity from which data comes from.                |
 | msdynci_firstname            | Single line of text |  First name of the contact.               |
 | msdynci_gender               | Single line of text |  Gender of the contact.               |
-| msdynci_id                   | Single line of text |                 |
-| msdynci_identifier           | Single line of text |  Internal ID of the contact profile.               |
+| msdynci_id                   | Single line of text |  Deterministic GUID based on msdynci_identifier.               |
+| msdynci_identifier           | Single line of text |  Internal ID of the contact profile: `ContactProfile|CustomerId|ContactId`               |
 | msdynci_jobtitle             | Single line of text |  Job title of the contact.               |
 | msdynci_lastname             | Single line of text |  Last name of the contact.               |
-| msdynci_lookupfield_customer | Lookup              |                 |
 | msdynci_postalcode           | Single line of text |  ZIP code of the contact address.               |
 | msdynci_primaryemail         | Single line of text |  Email address of the contact.               |
 | msdynci_primaryphone         | Single line of text |  Telephone number of the contact.               |
-| msdynci_sourceid             | Single line of text |                 |
 | msdynci_stateorprovince      | Single line of text |  State or province of the contact address.               |
 | msdynci_streetaddress        | Single line of text |  Street of the contact address.               |
 
