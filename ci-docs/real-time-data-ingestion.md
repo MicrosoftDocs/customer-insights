@@ -79,9 +79,4 @@ You can post an activity in the format of your source system or in the UnifiedAc
 
 Details of this API, including parameters and responses, can be found in the **EntityData** section on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). For more information, see [Work with Customer Insights APIs](apis.md).
 
-## Understand your real-time usage with telemetry
-
-Get an overview of the volume of requests to the real-time API and information about issues the system may encounter. You can [access the real-time telemetry](system.md#view-api-usage). 
-
-
 [!INCLUDE [footer-include](includes/footer-banner.md)]
