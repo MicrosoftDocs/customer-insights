@@ -34,7 +34,7 @@ To review or change any unification settings once a unified profile has been cre
    > The **Matching conditions** tile displays only if multiple entities were selected.
 
 1. Choose what you want to update:
-   - [Source fields](#edit-source-fields) to add or remove attributes or entities or change attribute types.
+   - [Source fields](#edit-source-fields) to add attributes or entities or change attribute types. To remove an attribute, see [Remove a unified field](#remove-a-unified-field). To remove an entity, see [Remove a unified entity](#remove-a-unified-entity).
    - [Duplicate records](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
    - [Matching conditions](#manage-match-rules) to update matching rules across two or more entities.
    - [Unified customer fields](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
@@ -48,8 +48,6 @@ To review or change any unification settings once a unified profile has been cre
    - [Unify profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions, update the unified profile entity, and update all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically. In B-to-B, unification is run on both the account and contact entities updating the unified profiles.
 
 ## Edit source fields
-
-To remove an attribute, see Removing a unified field. To remove an entity, see Removing a unified entity.
 
 1. Select **Edit** on the **Source fields** tile.
 
@@ -67,7 +65,7 @@ To remove an attribute, see Removing a unified field. To remove an entity, see R
 
 To remove a field that has been unified, the field must be removed from any dependencies such as segments, measures, enrichments, or relationships.
 
-1. Once all dependencies for the field has been removed, go to **Data** > **Unify**.
+1. Once all dependencies for the field have been removed, go to **Data** > **Unify**.
 
 1. Select **Edit** on the **Unified customer fields** tile.
 
@@ -80,7 +78,7 @@ To remove a field that has been unified, the field must be removed from any depe
 
 1. If the field is used in a rule for duplicate records or matching conditions, perform the following steps. Otherwise, go to the next step.
    1. Select **Edit** on the **Duplicate records** tile.
-   1. Remove the field from all rules it is used in, if any, and then select **Save and close**.
+   1. Remove the field from all rules it is used in, if any, and then select **Next**.
    1. Select **Edit** on the **Matching conditions** tile.
    1. Remove the field from all rules it is used in, if any, and then select **Save and close**.
    1. Select **Unify** > **Unify customer profiles and dependencies**. Wait for unification to complete before going to the next step.
@@ -97,7 +95,7 @@ To remove a field that has been unified, the field must be removed from any depe
 
 To remove an entity that has been unified, the entity must be removed from any dependencies such as segments, measures, enrichments, or relationships.
 
-1. Once all dependencies for the entity has been removed, go to **Data** > **Unify**.
+1. Once all dependencies for the entity have been removed, go to **Data** > **Unify**.
 
 1. Select **Edit** on the **Unified customer fields** tile.
 
@@ -107,6 +105,24 @@ To remove an entity that has been unified, the entity must be removed from any d
 
    > [!TIP]
    > If you see the message "Couldn't save unify. The specified resource cannot be modified or deleted due to downstream dependencies", then the entity is still used in a downstream dependency.
+
+1. Select **Edit** on the **Duplicate records** tile.
+
+1. Remove all rules from the entity, if any, and then select **Next**.
+
+1. Select **Edit** on the **Matching conditions** tile.
+
+1. Select the entity and then select **Delete**.
+
+1. Select **Save and close**.
+
+1. Select **Edit** on the **Source fields** tile.
+
+1. Select **Select entities and fields** and clear the checkbox next to the entity. Select **Apply**.
+
+1. Select **Save and close**.
+
+1. Select **Unify** > **Unify customer profiles and dependencies** to update the unified profile.
 
 ## Manage deduplication rules
 
