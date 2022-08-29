@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Common Data Model folder using an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 08/18/2022
+ms.date: 08/29/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -224,7 +224,7 @@ The datetime fields in the entity are not in ISO or en-US formats. The default d
       ]   
    ```
 
-  In a manifest.json, the datetime format can be specified at the entity level or at the attribute level. At the entity level, use "exhibitsTraits" in the entity in the *.manifest.cdm.json to define the datatime format. At the attribute level, use "appliedTraits" in the attribute in the entityname.cdm.json.
+  In a manifest.json, the datetime format can be specified at the entity level or at the attribute level. At the entity level, use "exhibitsTraits" in the entity in the *.manifest.cdm.json to define the datetime format. At the attribute level, use "appliedTraits" in the attribute in the entityname.cdm.json.
 
 **Manifest.json at the entity level**
 
