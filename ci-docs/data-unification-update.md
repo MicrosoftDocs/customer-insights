@@ -71,7 +71,9 @@ To remove a field that has been unified, the field must be removed from any depe
 
 1. Select all occurrences of the field and then select **Exclude**.
 
-1. Select **Save and close**.
+   :::image type="content" source="media/m3_remove_attribute1.png" alt-text="Screenshot of Unified fields page showing selected fields and Exclude button":::
+
+1. Select **Done** to confirm and then select **Save and close**.
 
    > [!TIP]
    > If you see the message "Couldn't save unify. The specified resource cannot be modified or deleted due to downstream dependencies", then the field is still used in a downstream dependency.
@@ -85,7 +87,11 @@ To remove a field that has been unified, the field must be removed from any depe
 
 1. Select **Edit** on the **Source fields** tile.
 
-1. Select **Select entities and fields** and clear the checkbox next to each occurrence of the field. Select **Apply**.
+1. Select **Select entities and fields** and clear the checkbox next to each occurrence of the field.
+
+   :::image type="content" source="media/m3_remove_attribute2.png" alt-text="Screenshot of Select entities and fields dialog box showing cleared checkboxes":::
+
+1. Select **Apply**.
 
 1. Select **Save and close**.
 
@@ -101,7 +107,9 @@ To remove an entity that has been unified, the entity must be removed from any d
 
 1. Select all fields for the entity and then select **Exclude**.
 
-1. Select **Save and close**.
+   :::image type="content" source="media/m3_remove_entity1.png" alt-text="Screenshot of Unified fields with all fields for an entity selected and Exclude button":::
+
+1. Select **Done** to confirm and then select **Save and close**.
 
    > [!TIP]
    > If you see the message "Couldn't save unify. The specified resource cannot be modified or deleted due to downstream dependencies", then the entity is still used in a downstream dependency.
@@ -114,11 +122,17 @@ To remove an entity that has been unified, the entity must be removed from any d
 
 1. Select the entity and then select **Delete**.
 
+   :::image type="content" source="media/m3_remove_entity2.png" alt-text="Screenshot of Matching conditions with entity selected and Delete button":::
+
 1. Select **Save and close**.
 
 1. Select **Edit** on the **Source fields** tile.
 
-1. Select **Select entities and fields** and clear the checkbox next to the entity. Select **Apply**.
+1. Select **Select entities and fields** and clear the checkbox next to the entity.
+
+   :::image type="content" source="media/m3_remove_entity3.png" alt-text="Screenshot of Select entities and fields dialog box with entity checkbox cleared":::
+
+1. Select **Apply**.
 
 1. Select **Save and close**.
 
