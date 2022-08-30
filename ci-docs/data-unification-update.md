@@ -81,8 +81,7 @@ To remove a field that has been unified, the field must be removed from any depe
 1. If the field is used in a rule for duplicate records or matching conditions, perform the following steps. Otherwise, go to the next step.
    1. Select **Edit** on the **Duplicate records** tile.
    1. Remove the field from all rules it is used in, if any, and then select **Next**.
-   1. Select **Edit** on the **Matching conditions** tile.
-   1. Remove the field from all rules it is used in, if any, and then select **Save and close**.
+   1. On the **Matching conditions** page, remove the field from all rules it is used in, if any, and then select **Save and close**.
    1. Select **Unify** > **Unify customer profiles and dependencies**. Wait for unification to complete before going to the next step.
 
 1. Select **Edit** on the **Source fields** tile.
@@ -118,9 +117,7 @@ To remove an entity that has been unified, the entity must be removed from any d
 
 1. Remove all rules from the entity, if any, and then select **Next**.
 
-1. Select **Edit** on the **Matching conditions** tile.
-
-1. Select the entity and then select **Delete**.
+1. On the **Matching conditions** tile, select the entity and then select **Delete**.
 
    :::image type="content" source="media/m3_remove_entity2.png" alt-text="Screenshot of Matching conditions with entity selected and Delete button":::
 
