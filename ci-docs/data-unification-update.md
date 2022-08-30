@@ -117,7 +117,7 @@ To remove an entity that has been unified, the entity must be removed from any d
 
 1. Remove all rules from the entity, if any, and then select **Next**.
 
-1. On the **Matching conditions** tile, select the entity and then select **Delete**.
+1. On the **Matching conditions** page, select the entity and then select **Delete**.
 
    :::image type="content" source="media/m3_remove_entity2.png" alt-text="Screenshot of Matching conditions with entity selected and Delete button":::
 
