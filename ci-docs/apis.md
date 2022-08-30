@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights APIs
 description: Use APIs and understand limitations.
-ms.date: 08/23/2022
+ms.date: 08/30/2022
 ms.reviewer: wimohabb
 
 ms.subservice: audience-insights
@@ -25,7 +25,7 @@ Try Customer Insights APIs, create an Azure App Registration, and get started wi
 
 ## Get started trying the Customer Insights APIs
 
-As a Customer Insights admin, enable Customer Insights APIs and try them out.
+Enable Customer Insights APIs and try them out. A Customer Insights admin must enable API access to Customer Insights. Once access is enabled, any user can use API with the subscription key.
 
 1. [Sign in](https://home.ci.ai.dynamics.com) to Customer Insights. If you don't have a subscription yet, [sign up for a trial of Customer Insights](https://aka.ms/tryci).
 
@@ -62,6 +62,8 @@ Create a new [app registration](/graph/auth-register-app-v2) to use the Customer
 1. Select **New registration**, provide an application name and choose the account type.
 
    Optionally, add a redirect URL. http://localhost is sufficient for developing an application on your local computer.
+
+1. Select **Register**.
 
 1. On your new App registration, go to **API permissions**.
 

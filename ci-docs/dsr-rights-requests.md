@@ -1,7 +1,7 @@
 ---
 title: "Data Subject Rights (DSR) requests under GDPR | Microsoft Docs"
 description: "Respond to Data Subject Requests for Dynamics 365 Customer Insights."
-ms.date: 08/23/2022
+ms.date: 08/30/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
