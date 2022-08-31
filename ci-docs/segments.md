@@ -1,7 +1,7 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 05/20/2022
+ms.date: 08/12/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -20,7 +20,7 @@ searchScope:
 
 Segments let you group your customers based on demographic, transactional, or behavioral attributes. You can use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
 
-Customer profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
+Customer or contact profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
 ## Create a segment
 
@@ -36,13 +36,19 @@ Choose how to create a segment based on your target audience.
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-- Simple or complex segments with segment builder: [Build your own](segment-builder.md)
+Segment of accounts or segment of contacts (preview) with segment builder: [Build your own](segment-builder.md)
+
+> [!NOTE]
+> Most export destinations require contact information for Marketing purposes. Therefore, create segments of contacts to use for those exports.
 
 ---
 
 ## Manage existing segments
 
-Go to the **Segments** page to view the segments you created, their status and state, the number of members, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
+Go to the **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
+
+> [!TIP]
+> In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
 
 Select a segment to view available actions.
 
@@ -53,7 +59,7 @@ Select a segment to view available actions.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
 - [**Refresh**](#refresh-segments) the segment to include the latest data.
-- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](system.md#schedule-tab) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
+- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](schedule-refresh.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
 - **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed during system refreshes.
 - [**Find similar customers**](find-similar-customer-segments.md) from the segment.
 - **Rename** the segment.
@@ -77,13 +83,13 @@ The lower part contains a list of the segment members.
 > [!NOTE]
 > Fields that appear in this list are based on the attributes of your segment's entities.
 >
->The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, [export the segment](export-destinations.md).
+> The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Entities**](entities.md) page or [export the segment](export-destinations.md).
 
 ## Refresh segments
 
 Segments can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more segments, select them and choose **Refresh**.
 
-To [schedule an automatic refresh](system.md#schedule-tab), go to **Admin** > **System** > **Schedule**. The following rules apply:
+To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**. The following rules apply:
 
 - All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. Once the refresh is complete, the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
 - Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segment was run or refreshed manually.

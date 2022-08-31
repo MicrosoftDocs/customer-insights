@@ -18,13 +18,13 @@ searchScope:
 
 The near real-time functionality lets you see, within seconds, the latest interactions that your customers have made with your products or services.
 
-[Scheduled refreshes](system.md#schedule-tab) include large numbers of records and several complex operations. First, data is pulled from the data source. Next, the data is unified, and then enriched with additional information. Every run of this process can take minutes to hours.
+[Scheduled refreshes](schedule-refresh.md) include large numbers of records and several complex operations. First, data is pulled from the data source. Next, the data is unified, and then enriched with additional information. Every run of this process can take minutes to hours.
 
 The real-time functionality provides data immediately for consumption, until the subsequent scheduled refresh pulls this data from the data source.
 
 Real-time updates have an expiration time after which they no longer override the value from the data source:
 
-- Profile updates will be kept for 4 hours
+- Profile updates will be kept for four hours
 - Activities will be kept for 30 days
 
 These values are API call parameters that you can change. They aim to ensure that your source data remains your source of truth. If you want real-time updates to be included for longer, you need to add them to a data source so they get pulled during the next scheduled refresh.
@@ -81,7 +81,7 @@ Details of this API, including parameters and responses, can be found in the **E
 
 ## Understand your real-time usage with telemetry
 
-Get an overview of the volume of requests to the real-time API and information about issues the system may encounter. You can [access the real-time telemetry](system.md#api-usage-tab). 
+Get an overview of the volume of requests to the real-time API and information about issues the system may encounter. You can [access the real-time telemetry](system.md#view-api-usage). 
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

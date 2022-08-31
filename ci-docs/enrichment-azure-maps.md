@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with location data from Azure Maps (preview)"
 description: "General information about the Azure Maps first-party enrichment."
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -31,14 +31,9 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Enter a name for the connection and a valid Azure Maps API key.
 
-1. Review and provide your consent for [Data privacy and compliance](#data-privacy-and-compliance) by selecting **I agree**.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Verify** to validate the configuration and then select **Save**.
-
-### Data privacy and compliance
-
-When you enable Dynamics 365 Customer Insights to transmit data to Azure Maps, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you're responsible for ensuring that Azure Maps meet any privacy or security obligations you may have. For more information, go to [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights Administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 ## Configure the enrichment
 

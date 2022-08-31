@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 06/30/2022
+ms.date: 08/31/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
@@ -18,6 +18,46 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## August 2022 updates
+
+The updates in August 2022 include new features, performance upgrades, and bug fixes.
+
+### Contact unification in B-to-B environments
+
+B-to-B environments in Customer Insights now support an enhanced data unification experience.
+
+You can now unify contacts in addition to accounts to get a full view of your business contacts. Unified contacts are associated with unified accounts and are now listed on the customer cards. 
+
+For more information, see [Create a unified contact profile](data-unification-contacts.md).
+
+### Create and export of segments based on unified contacts
+
+Thanks to the new contact unification, you can create segments of contacts using criteria from either contacts, accounts, or both. These segments can be exported for activation in other services.
+
+For more information, see [Exports overview](export-destinations.md).
+
+## July 2022 updates
+
+The updates in July 2022 include new features, performance upgrades, and bug fixes.
+
+### Export to MoEngage
+
+Export segments of unified customer profiles to MoEngage and use them for email marketing in MoEngage.
+
+For more information, see [Export segments to MoEngage](export-moengage.md).
+
+### SSH support for SFTP-based exports
+
+Choose whether you want to authenticate through SSH or username/password for connections to SFTP export destinations.
+
+For more information, see [Export data to SFTP hosts](export-sftp.md).
+
+### Personalize experiences with data about known and unknown users
+
+Managing customer data isn't a new challenge but it's increasingly becoming more difficult as users navigate the various digital channels brands offer. A user who is known (authenticated) in one channel becomes unknown (unauthenticated) in another if not signed in. The problem often is that unauthenticated (unknown) users don't have a common ID. It could be used to associate meaningful profiles attributes and generate unified customer profiles. Customer Insights helps solve this problem by ingesting data from tracking methods on your source systems.
+
+For more information, see [Personalize your experiences with data about known and unknown users](unknown-to-known.md).
 
 ## June 2022 updates
 
@@ -45,7 +85,7 @@ For more information, see [Securely access customer data with Customer Lockbox (
 
 Azure Private Link lets Customer Insights connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
 
-For more information, see [Use Private Link in Customer Insights](security-overview.md#private-links-tab).
+For more information, see [Use Private Link in Customer Insights](security-overview.md#set-up-an-azure-private-link).
 
 ## May 2022 updates
 

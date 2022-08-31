@@ -74,7 +74,7 @@ Customer details include:
 **Customer profile tile** shows the different values from the unified *Customer* entity. If a field has no value for the selected customer profile, it won't show except for the address field. The tile is structured into sections:
 
 - The first section shows a predefined set of fields followed by all fields that are part of the search & filter index. All address-related fields are combined into a single line, which shows even if the profile contains no address information.
-- **Contacts for this customer** display in environments for business accounts. Each contact is shown with their fields. Empty fields are hidden.
+- **Contacts for this customer** display in environments for business accounts (B-to-B). Each contact is shown with their fields. Empty fields are hidden.
 - **Additional fields** shows the remaining fields of the selected customer, except IDs.
 - **IDs** lists all IDs under their corresponding entity name. Fields are identified as IDs by their semantics.
 

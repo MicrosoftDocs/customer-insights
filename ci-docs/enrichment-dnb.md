@@ -1,7 +1,7 @@
 ---
 title: "Enrich company profiles with Dun & Bradstreet (preview)"
 description: "General information about the Dun & Bradstreet third-party enrichment."
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -20,7 +20,7 @@ Dun & Bradstreet provides commercial data, analytics, and insights for businesse
 - An active [Dun & Bradstreet](https://www.dnb.com/marketing/media/give-your-data-a-boost.html?source=microsoft_audience_insights) license.
 - [Unified customer profiles](customer-profiles.md) for companies.
 - A Dun & Bradstreet [project](#set-up-your-dun--bradstreet-project) is set up.
-- A Dun & Bradstreet [connection](connections.md) is  [configured](#configure-a-connection-for-dun--bradstreet) by an administrator.
+- A Dun & Bradstreet [connection](connections.md) is [configured](#configure-a-connection-for-dun--bradstreet) by an administrator.
 
 ## Set up your Dun & Bradstreet project
 
@@ -50,16 +50,11 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Provide valid Dun & Bradstreet credentials and Dun & Bradstreet project details *Region, Drop folder path, and Drop folder name*. You [get this information](#set-up-your-dun--bradstreet-project) from the Dun & Bradstreet project.
 
-1. Review and provide your consent for [Data privacy and compliance](#data-privacy-and-compliance) by selecting **I agree**.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Verify** to validate the configuration and then select **Save**.
 
    :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Dun & Bradstreet connection configuration page.":::
-
-### Data privacy and compliance
-
-When you enable Dynamics 365 Customer Insights to transmit data to Dun & Bradstreet, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you're responsible for ensuring that Dun & Bradstreet meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 ## Supported countries or regions
 
@@ -75,7 +70,7 @@ We currently support the following country/region options: Canada (English) or U
 
 1. Review the overview and then select **Next**.
 
-1. Select the connection and confirm. Contact an administrator if one is not available.
+1. Select the connection and confirm. Contact an administrator if no connection is available.
 
 1. Select **Next**.
 

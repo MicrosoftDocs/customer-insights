@@ -1,7 +1,7 @@
 ---
-title: Security settings in Customer Insights
+title: Configure security settings
 description: Learn about security settings in Dynamics 365 Customer Insights.
-ms.date: 06/08/2022
+ms.date: 08/02/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,33 +11,36 @@ ms.reviewer: mhart
 manager: shellyha
 ---
 
-# Security settings in Customer Insights
+# Configure security settings
 
-The **Security** page lists options to configure user permissions and features that help make Dynamics 365 Customer Insights more secure. Only administrators can access this page.
+Manage API keys, access customer data, and set up an Azure Private Link.
 
-Go to **Admin** > **Security** to configure the settings.
+## Manage API keys
 
-The **Security** page includes the following tabs:
+View and manage the keys to use the [Customer Insights APIs](apis.md) with the data in your environment.
 
-- [Users](#users-tab)
-- [APIs](#apis-tab)
-- [Private Links](#private-links-tab)
-- [Key Vault](#key-vault-tab)
-- [Securely access customer data with Customer Lockbox (Preview)](#securely-access-customer-data-with-customer-lockbox-preview)
+1. Go to **Admin** > **Security** and select the **APIs** tab.
 
-## Users tab
+1. If API access to the environment has not been set up, select **Enable**. Or, to block API access to the environment, select **Disable** and confirm.
 
-Access to Customer Insights is restricted to users in your organization that were added to the application by an admin. The **Users** tab lets you manage user access and their permissions. For more information, see [User permissions](permissions.md).
+1. Manage the primary and secondary API keys:
 
-## APIs tab
+   1. To show the primary or secondary API key, select the **Show** symbol.
 
-View and manage the keys to use the [Customer Insights APIs](apis.md) with the data of your environment.
+   1. To copy the primary or secondary API key, select the **Copy** symbol.
 
-You can create new primary and secondary keys by selecting **Regenerate primary** or **Regenerate secondary**. 
+   1. To create new primary or secondary API keys, select **Regenerate primary** or **Regenerate secondary**.
 
-To block API access to the environment, select **Disable**. If APIs are disabled, you can select **Enable** to grant access again.
+## Securely access customer data with Customer Lockbox (Preview)
 
-## Private Links tab
+Customer Insights uses the Power Platform Customer Lockbox capability. Customer Lockbox provides an interface to review and approve (or reject) data access requests. These requests occur when data access to customer data is needed to resolve a support case. To use this feature, Customer Insights must have an existing connection to a Microsoft Dataverse environment in your tenant.
+
+For more information about Customer Lockbox, see the [summary](/power-platform/admin/about-lockbox#summary) of Power Platform Customer Lockbox. The article also describes the [workflow](/power-platform/admin/about-lockbox#workflow) and the required [setup](/power-platform/admin/about-lockbox#enable-the-lockbox-policy) to enable Customer Lockbox.
+
+> [!IMPORTANT]
+> Global administrators for Power Platform or Power Platform administrators can approve Customer Lockbox requests issued for Customer Insights.
+
+## Set up an Azure Private Link
 
 [Azure Private Link](/azure/private-link/private-link-overview) lets Customer Insights connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
 
@@ -47,26 +50,22 @@ To block API access to the environment, select **Disable**. If APIs are disabled
 > - Customer Insights: Administrator
 > - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
 > - Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
->
 
-Setting up Private Link in Customer Insights is a two-step process. First, you initiate the creation of a Private Link from **Admin** > **Security** > **Private Links** in Customer Insights. The **Add Private Link** pane lists storage accounts from your tenant that you’ve got permissions to see. Select the storage account and provide consent to create the Private Link.
+1. In Customer Insights, go to **Admin** > **Security** and select the **Private Links** tab.
 
-Next, you need to approve the Private Link on the Data Lake Storage account side. Open the link presented on screen to approve the new Private Link.
+1. Select **Add Private Link**.
 
-## Key Vault tab
+   The **Add Private Link** pane lists storage accounts from your tenant that you’ve got permissions to see.
 
-The **Key Vault** tab lets you link and manage your own [Azure key vault](/azure/key-vault/general/basic-concepts) to the environment.
-The dedicated key vault can be used to stage and use secrets in an organization's compliance boundary. Customer Insights can use the secrets in Azure Key Vault to [set up connections](connections.md) to third-party systems.
+1. Select the subscription, resource group, and storage account.
 
-For more information, see [Bring your own Azure key vault](use-azure-key-vault.md).
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
-## Securely access customer data with Customer Lockbox (Preview)
+1. Select **Save**.
 
-Customer Insights is using the Power Platform Customer Lockbox capability. Customer Lockbox provides an interface to review and approve (or reject) data access requests. These requests occur when data access to customer data is needed to resolve a support case. To use this feature, Customer Insights must have an existing connection to a Microsoft Dataverse environment in your tenant.
+1. Go to your Data Lake Storage account and open the link presented on the screen.
 
-For more information about Customer Lockbox, see the [summary](/power-platform/admin/about-lockbox#summary) of Power Platform Customer Lockbox. The article also describes the [workflow](/power-platform/admin/about-lockbox#workflow) and the required [setup](/power-platform/admin/about-lockbox#enable-the-lockbox-policy) to enable Customer Lockbox.
+1. Approve the Private Link.
 
-> [!IMPORTANT]
-> Global administrators for Power Platform or Power Platform administrators can approve Customer Lockbox requests issued for Customer Insights.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

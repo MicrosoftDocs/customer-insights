@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with HERE Technologies (preview)"
 description: "General information about the HERE Technologies third-party enrichment."
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -29,16 +29,11 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Enter a name for the connection and a valid HERE Technologies API key.
 
-1. Review and provide your consent for [Data privacy and compliance](#data-privacy-and-compliance) by selecting **I agree**.
+1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Verify** to validate the configuration and then select **Save**.
 
    :::image type="content" source="media/enrichment-HERE-connection.png" alt-text="HERE Technologies connection configuration page.":::
-
-### Data privacy and compliance
-
-When you enable Dynamics 365 Customer Insights to transmit data to HERE Technologies, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that HERE Technologies meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
-Your Dynamics 365 Customer Insights administrator can remove this enrichment at any time to discontinue use of this functionality.
 
 ## Configure the enrichment
 
@@ -50,7 +45,7 @@ Your Dynamics 365 Customer Insights administrator can remove this enrichment at 
 
 1. Review the overview and then select **Next**.
 
-1. Select the connection. Contact an administrator if one is not available.
+1. Select the connection. Contact an administrator if no connection is available.
 
 1. Select **Next**.
 
