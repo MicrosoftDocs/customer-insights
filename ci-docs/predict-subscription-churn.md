@@ -146,7 +146,7 @@ Subscription churn prediction helps predicting whether a customer is at risk for
 
 ## Manage predictions
 
-It's possible to optimize, troubleshoot, refresh, or delete predictions. Review an input data usability report to find out how to make a prediction faster and more reliable. For more information, see [Manage predictions](manage-predictions.md).
+It's possible to optimize, troubleshoot, refresh, or delete predictions. Review an input data usability report to find out how to make a prediction faster and more reliable. For more information, see [Manage predictions](predictions-overview.md#manage-existing-predictions).
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

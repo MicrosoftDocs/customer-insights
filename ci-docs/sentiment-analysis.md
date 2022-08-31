@@ -120,7 +120,7 @@ The following data attributes are required:
 
 ## Manage sentiment analysis
 
-You can optimize, troubleshoot, refresh, or delete predictions. Review an input data usability report to find out how to make a prediction faster and more reliable. For more information, see [Manage predictions](manage-predictions.md).
+You can optimize, troubleshoot, refresh, or delete predictions. Review an input data usability report to find out how to make a prediction faster and more reliable. For more information, see [Manage predictions](predictions-overview.md#manage-existing-predictions).
 
 ## Review analysis results
  

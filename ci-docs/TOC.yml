@@ -188,9 +188,6 @@
           href: sample-guide-predict-product-recommendation.md
         - name: Experiments with Azure Machine learning
           href: azure-machine-learning-experiments.md
-    
-    - name: Manage predictions
-      href: manage-predictions.md
 
     - name: Create segments based on predictions
       href: prediction-based-segment.md

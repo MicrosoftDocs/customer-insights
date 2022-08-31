@@ -242,7 +242,7 @@ Add a list of your business customers and accounts that you want to use as bench
    - **Status**: Status of the prediction run.
         - **Queued**: Prediction is waiting for other processes to run.
         - **Refreshing**: Prediction is currently running to produce results that will flow into the output entity.
-        - **Failed**: Prediction run has failed. [Review the logs](manage-predictions.md#troubleshoot-a-failed-prediction) for more details.
+        - **Failed**: Prediction run has failed. [Review the logs](predictions-overview.md#troubleshoot-a-failed-prediction) for more details.
         - **Succeeded**: Prediction has succeeded. Select **View** under the vertical ellipses to review the prediction
    - **Edited**: The date the configuration for the prediction was changed.
    - **Last refreshed**: The date the prediction refreshed results in the output entity.
@@ -313,6 +313,6 @@ Add a list of your business customers and accounts that you want to use as bench
 
 ## Manage predictions
 
-It's possible to optimize, troubleshoot, refresh, or delete predictions. Review an input data usability report to find out how to make a prediction faster and more reliable. For more information, go to [Manage predictions](manage-predictions.md).
+It's possible to optimize, troubleshoot, refresh, or delete predictions. Review an input data usability report to find out how to make a prediction faster and more reliable. For more information, go to [Manage predictions](predictions-overview.md#manage-existing-predictions).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

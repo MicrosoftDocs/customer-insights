@@ -1317,11 +1317,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/audience-insights/manage-predictions.md",
-      "redirect_url": "/dynamics365/customer-insights/manage-predictions",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "ci-docs/audience-insights/map-entities.md",
       "redirect_url": "/dynamics365/customer-insights/map-entities",
       "redirect_document_id": false
