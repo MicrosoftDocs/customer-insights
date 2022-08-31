@@ -1,7 +1,7 @@
 ---
 title: Service limits in Customer Insights
 description: Understand limits and restrictions in the Customer Insights SaaS service.
-ms.date: 05/28/2022
+ms.date: 08/30/2022
 ms.subservice: audience-insights 
 ms.topic: conceptual
 author: JimsonChalissery
@@ -12,7 +12,7 @@ manager: shellyha
 
 # Service limits in Customer Insights
 
-This article describes the built-in limits to the Customer Insights service, which are designed to ensure the reliability and stability of the service. Any requests for changes can be made through the [Ideas forum](https://go.microsoft.com/fwlink/?linkid=2074172).
+ Customer Insights has built-in limits designed to ensure the reliability and stability of the service. Any requests for changes can be made through the [Ideas forum](https://go.microsoft.com/fwlink/?linkid=2074172).
 
 ## Customer Insights
 
