@@ -1,7 +1,7 @@
 ---
 title: "Data Subject Rights (DSR) requests under GDPR | Microsoft Docs"
 description: "Respond to Data Subject Requests for Dynamics 365 Customer Insights."
-ms.date: 08/30/2022
+ms.date: 08/31/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -63,11 +63,11 @@ As a Customer Insights admin, delete Customer Insights user data.
 
 ## Responding to GDPR data subject export requests
 
-As part of the General Data Protection Regulation (GDPR), we’ve developed documentation to help you respond to requests from data subjects.
+The right of data portability allows data subjects to request a copy of their personal data in an electronic format (a “structured, commonly used, machine readable, and interoperable format”) that can be transmitted to another data controller.
 
 ### Manage export and view requests
 
-The right of data portability allows data subjects to request a copy of their personal data in an electronic format (a “structured, commonly used, machine readable, and interoperable format”) that can be transmitted to another data controller.
+Manage requests to export customer or user data.
 
 #### Export customer data (tenant admin)
 

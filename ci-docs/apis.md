@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights APIs
 description: Use APIs and understand limitations.
-ms.date: 08/30/2022
+ms.date: 08/31/2022
 ms.reviewer: wimohabb
 
 ms.subservice: audience-insights
@@ -67,7 +67,7 @@ Create a new [app registration](/graph/auth-register-app-v2) to use the Customer
 
 1. On your new App registration, go to **API permissions**.
 
-1. Select **Add a permission** and select **Customer Insights** in the side pane.
+1. Select **Add a permission** and select **Dynamics 365 AI for Customer Insights** in the side pane.
 
 1. For **Permission type**, select **Delegated permissions** and then select the **user_impersonation** permission.
 
@@ -91,7 +91,7 @@ Create an app registration that doesn't need user interaction and can be run on 
 
 1. Select **Add a permission**.
 
-1. Select the **APIs my organization uses** tab and choose **Customer Insights** from the list.
+1. Select the **APIs my organization uses** tab and choose **Dynamics 365 AI for Customer Insights** from the list.
 
 1. For **Permission type**, select **Application permissions** and then select the **CustomerInsights.Api.All** permission.
 
