@@ -141,7 +141,7 @@ Some output entities from Customer Insights are available as tables in Dataverse
 
 ### CustomerProfile
 
-This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile depends on the entities and attributes used in the data unification process. A customer profile schema usually contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile depends on the entities and attributes used in the data unification process. A customer profile schema usually contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile). For the B-to-B scenario, the customer profile contains unified accounts, and the schema usually contains a subset of the attributes from the [Common Data Model definition of Account](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account).
 
 ### ContactProfile
 
@@ -149,24 +149,24 @@ A ContactProfile contains unified information about a contact. Contacts are [ind
 
 | Column                       | Type                | Description     |
 | ---------------------------- | ------------------- | --------------- |
-| msdynci_birthdate            | Date and time       |  Date of birth of the contact.               |
-| msdynci_city                 | Single line of text |  City of the contact address.               |
-| msdynci_contactid            | Single line of text |  ID of the contact profile.               |
-| msdynci_contactprofileld     | Unique identifier   |  GUID for the contact.               |
-| msdynci_countryorregion      | Single line of text |  Country/Region of the contact address.               |
-| msdynci_customerid           | Single line of text |  ID of the account the contact is mapped to.               |
-| msdynci_entityname           | Single line of text |  Entity from which data comes from.                |
-| msdynci_firstname            | Single line of text |  First name of the contact.               |
-| msdynci_gender               | Single line of text |  Gender of the contact.               |
-| msdynci_id                   | Single line of text |  Deterministic GUID based on msdynci_identifier.               |
-| msdynci_identifier           | Single line of text |  Internal ID of the contact profile: `ContactProfile|CustomerId|ContactId`               |
-| msdynci_jobtitle             | Single line of text |  Job title of the contact.               |
-| msdynci_lastname             | Single line of text |  Last name of the contact.               |
-| msdynci_postalcode           | Single line of text |  ZIP code of the contact address.               |
-| msdynci_primaryemail         | Single line of text |  Email address of the contact.               |
-| msdynci_primaryphone         | Single line of text |  Telephone number of the contact.               |
-| msdynci_stateorprovince      | Single line of text |  State or province of the contact address.               |
-| msdynci_streetaddress        | Single line of text |  Street of the contact address.               |
+|  BirthDate            | Date and time       |  Date of birth of the contact               |
+|  City                 | String |  City of the contact address               |
+|  ContactId            | String |  ID of the contact profile               |
+|  ContactProfileId     | GUID   |  GUID for the contact               |
+|  CountryOrRegion      | String |  Country/Region of the contact address               |
+|  CustomerId           | String |  ID of the account the contact is mapped to               |
+|  EntityName           | String |  Entity from which data comes from                |
+|  FirstName            | String |  First name of the contact               |
+|  Gender               | String |  Gender of the contact               |
+|  Id                   | String |  Deterministic GUID based on `Identifier`               |
+|  Identifier           | String |  Internal ID of the contact profile: `ContactProfile|CustomerId|ContactId`               |
+|  JobTitle             | String |  Job title of the contact               |
+|  LastName             | String |  Last name of the contact               |
+|  PostalCode           | String |  ZIP code of the contact address               |
+|  PrimaryEmail         | String |  Email address of the contact               |
+|  PrimaryPhone         | String |  Telephone number of the contact               |
+|  StateOrProvince      | String |  State or province of the contact address               |
+|  StreetAddress        | String |  Street of the contact address               |
 
 ### AlternateKey
 
@@ -179,8 +179,8 @@ The AlternateKey table contains keys of the entities, which participated in the 
 |AlternateValue    |String         |Alternative ID that is mapped to the customer ID. Example: `cntid_1078`         |
 |KeyRing           | Multiline text        | JSON value  </br> Sample: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
 |CustomerId         | String        | ID of the unified customer profile.         |
-|AlternateKeyId     | GUID         |  AlternateKey deterministic GUID based on msdynci_identifier       |
-|msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Sample: `testdatasource|contact1|cntid_1078`    |
+|AlternateKeyId     | GUID         |  AlternateKey deterministic GUID based on `Identifier`      |
+|Identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Sample: `testdatasource|contact1|cntid_1078`    |
 
 ### UnifiedActivity
 
@@ -193,13 +193,13 @@ This table contains activities by users that are available in Customer Insights.
 | SourceEntityName  | String      | Name of the source entity                                                                |
 | SourceActivityId  | String      | Primary key from the source entity                                                       |
 | ActivityType      | String      | Semantic activity type or name of custom activity                                        |
-| ActivityTimeStamp | DATETIME    | Activity time stamp                                                                      |
+| ActivityTimeStamp | DateTime    | Activity time stamp                                                                      |
 | Title             | String      | Title or name of the activity                                                               |
 | Description       | String      | Activity description                                                                     |
 | URL               | String      | Link to an external URL specific to the activity                                         |
 | SemanticData      | JSON String | Includes a list of key value pairs for semantic mapping fields specific to the type of activity |
 | RangeIndex        | String      | Unix timestamp used for sorting activity timeline and effective range queries |
-| mydynci_unifiedactivityid   | GUID | Internal ID of the customer activity (ActivityId) |
+| UnifiedActivityId   | GUID | Internal ID of the customer activity (ActivityId) |
 
 ### CustomerMeasure
 
@@ -208,10 +208,9 @@ This table contains the output data of customer attribute-based measures.
 | Column             | Type             | Description                 |
 |--------------------|------------------|-----------------------------|
 | CustomerId         | String           | Customer profile ID        |
-| Measures           | JSON String      | Includes a list of key value pairs for measure name and values for the given customer | 
-| msdynci_identifier | String           | `Customer_Measure|CustomerId` |
-| msdynci_customermeasureid | GUID      | Customer profile ID |
-
+| Measures           | JSON String      | Includes a list of key value pairs for measure name and values for the given customer |
+| Identifier | String           | `Customer_Measure|CustomerId` |
+| CustomerMeasureId | GUID      | Customer profile ID |
 
 ### Enrichment
 
@@ -223,8 +222,8 @@ This table contains the output of the enrichment process.
 | EnrichmentProvider   | String           | Name of the provider for the enrichment                                  |
 | EnrichmentType       | String           | Type of enrichment                                      |
 | Values               | JSON String      | List of attributes produced by the enrichment process |
-| msdynci_enrichmentid | GUID             | Deterministic GUID generated from msdynci_identifier |
-| msdynci_identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
+| ErichmentId | GUID             | Deterministic GUID generated from `Identifier` |
+| Identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
 
 ### Prediction
 
@@ -236,8 +235,8 @@ This table contains the output of the model predictions.
 | ModelProvider        | String      | Name of the provider of the model                                      |
 | Model                | String      | Model name                                                |
 | Values               | JSON String | List of attributes produced by the model |
-| msdynci_predictionid | GUID        | Deterministic GUID generated from msdynci_identifier | 
-| msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+| PredictionId | GUID        | Deterministic GUID generated from `Identifier` |
+| Identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
 
 ### Segment membership
 
@@ -249,8 +248,8 @@ This table contains segment membership information of the customer profiles.
 | SegmentProvider      | String       | App that publishes the segments.      |
 | SegmentMembershipType | String       | Type of customer for this segment membership record. Supports multiple types such as Customer, Contact, or Account. Default: Customer  |
 | Segments       | JSON String  | List of unique segments the customer profile is a member of      |
-| msdynci_identifier  | String   | Unique identifier of the segment membership record. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
-| msdynci_segmentmembershipid | GUID      | Deterministic GUID generated from `msdynci_identifier`          |
+| Identifier  | String   | Unique identifier of the segment membership record. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| SegmentMembershipId | GUID      | Deterministic GUID generated from `Identifier`          |
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
