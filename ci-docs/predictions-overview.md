@@ -1,7 +1,7 @@
 ---
 title: Predictions overview
 description: "Prediction scenarios and options covered by the Dynamics 365 Customer Insights application."
-ms.date: 08/31/2022
+ms.date: 09/01/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -49,14 +49,14 @@ Sometimes, data sets are incomplete and some values are missing. Customer Insigh
 
 ## Manage existing predictions
 
-Go to the **Intelligence** > **Predictions** page. On the **My predictions** tab, view the predictions you created, their model type, output entity, status, and the last time the data was refreshed. You can sort the list of predictions by any column.
+Go to the **Intelligence** > **Predictions** page. On the **My predictions** tab, view the predictions you created, their prediction type, output entity name, status, the last time the prediction was edited, and the last time the data was refreshed. You can sort the list of predictions by any column.
 
 Select a prediction to view available actions.
 
 - **Edit** the prediction to change its properties.
 - [**Refresh**](#refresh-a-prediction) the prediction to include the latest data.
 - **View** the prediction details.
-- **Input data usability report** to view errors, warnings, and recommendations.
+- [**Input data usability report**](#view-the-input-data-usability-report) to view errors, warnings, and recommendations.
 - **Delete** the prediction.
 
 ### Refresh a prediction
@@ -67,14 +67,11 @@ Predictions can be refreshed on an automatic schedule or refreshed manually on d
 
 ### View the input data usability report
 
-The input data usability report provides a consolidated view of the errors and warnings that your out-of-box predictions may be generating. It also gives recommendations how to improve the model performance.
+The input data usability report provides a consolidated view of the errors and warnings that your out-of-box predictions may be generating. It also gives recommendations on how to improve the model performance.
 
 The report is available after a model has completed its training process. It's created for each model separately, regardless if it completed successfully or not.
 
-On the **My predictions** tab, select the prediction and choose **Input data usability report**.
-
-> [TIP]
-> View the report from the model results page by selecting **Input data usability report**.
+On the **My predictions** tab, select the prediction and choose **Input data usability report**. Or from the prediction details view, select **Input data usability report**.
 
 :::image type="content" source="media/input-data-usability-report.png" alt-text="Example of an input data usability report showing a table with errors, warnings, and recommendations.":::
 
