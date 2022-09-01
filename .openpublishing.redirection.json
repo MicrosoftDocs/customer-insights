@@ -1315,6 +1315,11 @@
       "source_path": "ci-docs/audience-insights/manage-environments.md",
       "redirect_url": "/dynamics365/customer-insights/manage-environments",
       "redirect_document_id": false
+    },    
+    {
+      "source_path": "ci-docs/audience-insights/manage-predictions.md",
+      "redirect_url": "/dynamics365/customer-insights/predictions-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "ci-docs/audience-insights/map-entities.md",
