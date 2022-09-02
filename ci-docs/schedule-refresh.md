@@ -32,7 +32,7 @@ Schedule automatic refreshes of all your [ingested data sources](data-sources.md
 
 1. Choose between **Weekly** (default) and **Daily** refreshes. If you intend to schedule weekly refreshes, select one or more days on which you want to run the refresh.
 
-1. Set your **Time zone**, then use the **Time** dropdown to set your refresh timing. If you'd like to schedule multiple refreshes in a single day, select **Add another time**.
+1. Set your **Time zone**, then use the **Time** dropdown to set your refresh timing. If you'd like to schedule multiple refreshes in a single day, select **Add another time**. You can add up to four refreshes.
 
 1. Select **Save** to apply your changes.
 
