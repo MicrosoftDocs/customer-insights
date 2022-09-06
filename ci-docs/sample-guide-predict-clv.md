@@ -153,13 +153,13 @@ With the unified customer profiles in place, we can now run the customer lifetim
 
 ## Task 4 - Review model results and explanations
 
-Let the model complete the training and scoring of the data. Next, you can review the CLV model results and explanations. For more information, see [Review a prediction status and results](predict-customer-lifetime-value.md#review-prediction-status-and-results).
+Let the model complete the training and scoring of the data. Next, you can review the CLV model results and explanations. For more information, see [Review a prediction status and results](predict-customer-lifetime-value.md#view-prediction-results).
 
 ## Task 5 - Create a segment of high value customers
 
 Running the model creates a new entity, which is listed on **Data** > **Entities**. You can create a new customer segment based on the entity created by the model.
 
-1. Go to **Segments**. 
+1. Go to **Segments**.
 
 1. Select  **New** and choose **Create from** > **Intelligence**.
 
