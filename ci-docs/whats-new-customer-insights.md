@@ -37,6 +37,14 @@ Thanks to the new contact unification, you can create segments of contacts using
 
 For more information, see [Exports overview](export-destinations.md).
 
+### Deployment regions aligned with Microsoft Dataverse
+
+When creating a new Customer Insights environment, you can select the region where you would like the service to be deployed and hosted. We have updated the region selection to align with Microsoft Dataverse and the Power Platform.
+
+You can now easily select the same region as your existing Microsoft Dataverse environment or your Azure Data Lake storage account (if you choose that option), subject to availability of Customer Insights in that region.
+
+For more information, see [Create a new environment](create-environment.md) and [Product availability by geography](https://dynamics.microsoft.com/availability-reports/).
+
 ## July 2022 updates
 
 The updates in July 2022 include new features, performance upgrades, and bug fixes.
