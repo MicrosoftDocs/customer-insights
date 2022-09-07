@@ -131,7 +131,7 @@ If the removal of the connection fails due to dependencies, you need to remove t
 Some output entities from Customer Insights are available as tables in Dataverse. The sections below describe the expected schema of these tables.
 
 - [CustomerProfile](#customerprofile)$
-- ContactProfile
+- [ContactProfile](#contactprofile)
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
 - [CustomerMeasure](#customermeasure)
@@ -149,7 +149,7 @@ A ContactProfile contains unified information about a contact. Contacts are [ind
 
 | Column                       | Type                | Description     |
 | ---------------------------- | ------------------- | --------------- |
-|  BirthDate            | Date and time       |  Date of birth of the contact               |
+|  BirthDate            | DateTime       |  Date of birth of the contact               |
 |  City                 | String |  City of the contact address               |
 |  ContactId            | String |  ID of the contact profile               |
 |  ContactProfileId     | GUID   |  GUID for the contact               |
@@ -158,7 +158,7 @@ A ContactProfile contains unified information about a contact. Contacts are [ind
 |  EntityName           | String |  Entity from which data comes from                |
 |  FirstName            | String |  First name of the contact               |
 |  Gender               | String |  Gender of the contact               |
-|  Id                   | String |  Deterministic GUID based on `Identifier`               |
+|  Id                   | GUID |  Deterministic GUID based on `Identifier`               |
 |  Identifier           | String |  Internal ID of the contact profile: `ContactProfile|CustomerId|ContactId`               |
 |  JobTitle             | String |  Job title of the contact               |
 |  LastName             | String |  Last name of the contact               |
