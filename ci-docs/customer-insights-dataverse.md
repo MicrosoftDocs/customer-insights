@@ -150,23 +150,23 @@ A ContactProfile contains unified information about a contact. Contacts are [ind
 | Column                       | Type                | Description     |
 | ---------------------------- | ------------------- | --------------- |
 |  BirthDate            | DateTime       |  Date of birth of the contact               |
-|  City                 | String |  City of the contact address               |
-|  ContactId            | String |  ID of the contact profile               |
-|  ContactProfileId     | GUID   |  GUID for the contact               |
-|  CountryOrRegion      | String |  Country/Region of the contact address               |
-|  CustomerId           | String |  ID of the account the contact is mapped to               |
-|  EntityName           | String |  Entity from which data comes from                |
-|  FirstName            | String |  First name of the contact               |
-|  Gender               | String |  Gender of the contact               |
-|  Id                   | GUID |  Deterministic GUID based on `Identifier`               |
-|  Identifier           | String |  Internal ID of the contact profile: `ContactProfile|CustomerId|ContactId`               |
-|  JobTitle             | String |  Job title of the contact               |
-|  LastName             | String |  Last name of the contact               |
-|  PostalCode           | String |  ZIP code of the contact address               |
-|  PrimaryEmail         | String |  Email address of the contact               |
-|  PrimaryPhone         | String |  Telephone number of the contact               |
-|  StateOrProvince      | String |  State or province of the contact address               |
-|  StreetAddress        | String |  Street of the contact address               |
+|  City                 | Text |  City of the contact address               |
+|  ContactId            | Text |  ID of the contact profile               |
+|  ContactProfileId     | Unique identifier   |  GUID for the contact               |
+|  CountryOrRegion      | Text |  Country/Region of the contact address               |
+|  CustomerId           | Text |  ID of the account the contact is mapped to               |
+|  EntityName           | Text |  Entity from which data comes from                |
+|  FirstName            | Text |  First name of the contact               |
+|  Gender               | Text |  Gender of the contact               |
+|  Id                   | Text |  Deterministic GUID based on `Identifier`               |
+|  Identifier           | Text |  Internal ID of the contact profile: `ContactProfile|CustomerId|ContactId`               |
+|  JobTitle             | Text |  Job title of the contact               |
+|  LastName             | Text |  Last name of the contact               |
+|  PostalCode           | Text |  ZIP code of the contact address               |
+|  PrimaryEmail         | Text |  Email address of the contact               |
+|  PrimaryPhone         | Text |  Telephone number of the contact               |
+|  StateOrProvince      | Text |  State or province of the contact address               |
+|  StreetAddress        | Text |  Street of the contact address               |
 
 ### AlternateKey
 
@@ -174,13 +174,13 @@ The AlternateKey table contains keys of the entities, which participated in the 
 
 |Column  |Type  |Description  |
 |---------|---------|---------|
-|DataSourceName    |String         | Name of the data source. For example: `datasource5`        |
-|EntityName        | String        | Name of the entity in Customer Insights. For example: `contact1`        |
-|AlternateValue    |String         |Alternative ID that is mapped to the customer ID. Example: `cntid_1078`         |
-|KeyRing           | Multiline text        | JSON value  </br> Sample: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
-|CustomerId         | String        | ID of the unified customer profile.         |
-|AlternateKeyId     | GUID         |  AlternateKey deterministic GUID based on `Identifier`      |
-|Identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Sample: `testdatasource|contact1|cntid_1078`    |
+|DataSourceName    |Text         | Name of the data source. For example: `datasource5`        |
+|EntityName        | Text        | Name of the entity in Customer Insights. For example: `contact1`        |
+|AlternateValue    |Text         |Alternative ID that is mapped to the customer ID. Example: `cntid_1078`         |
+|KeyRing           | Text        | JSON value  </br> Sample: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
+|CustomerId         | Text        | ID of the unified customer profile.         |
+|AlternateKeyId     | Unique identifier        |  AlternateKey deterministic GUID based on `Identifier`      |
+|Identifier |   Text      |   `DataSourceName|EntityName|AlternateValue`  </br> Sample: `testdatasource|contact1|cntid_1078`    |
 
 ### UnifiedActivity
 
@@ -188,18 +188,18 @@ This table contains activities by users that are available in Customer Insights.
 
 | Column            | Type        | Description                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
-| CustomerId        | String      | Customer profile ID                                                                      |
-| ActivityId        | String      | Internal ID of the customer activity (primary key)                                       |
-| SourceEntityName  | String      | Name of the source entity                                                                |
-| SourceActivityId  | String      | Primary key from the source entity                                                       |
-| ActivityType      | String      | Semantic activity type or name of custom activity                                        |
+| CustomerId        | Text      | Customer profile ID                                                                      |
+| ActivityId        | Text      | Internal ID of the customer activity (primary key)                                       |
+| SourceEntityName  | Text      | Name of the source entity                                                                |
+| SourceActivityId  | Text      | Primary key from the source entity                                                       |
+| ActivityType      | Text      | Semantic activity type or name of custom activity                                        |
 | ActivityTimeStamp | DateTime    | Activity time stamp                                                                      |
-| Title             | String      | Title or name of the activity                                                               |
-| Description       | String      | Activity description                                                                     |
-| URL               | String      | Link to an external URL specific to the activity                                         |
-| SemanticData      | JSON String | Includes a list of key value pairs for semantic mapping fields specific to the type of activity |
-| RangeIndex        | String      | Unix timestamp used for sorting activity timeline and effective range queries |
-| UnifiedActivityId   | GUID | Internal ID of the customer activity (ActivityId) |
+| Title             | Text      | Title or name of the activity                                                               |
+| Description       | Text      | Activity description                                                                     |
+| URL               | Text      | Link to an external URL specific to the activity                                         |
+| SemanticData      | Text | Includes a list of key value pairs for semantic mapping fields specific to the type of activity |
+| RangeIndex        | Text      | Unix timestamp used for sorting activity timeline and effective range queries |
+| UnifiedActivityId   | Unique identifier | Internal ID of the customer activity (ActivityId) |
 
 ### CustomerMeasure
 
@@ -207,10 +207,10 @@ This table contains the output data of customer attribute-based measures.
 
 | Column             | Type             | Description                 |
 |--------------------|------------------|-----------------------------|
-| CustomerId         | String           | Customer profile ID        |
-| Measures           | JSON String      | Includes a list of key value pairs for measure name and values for the given customer |
-| Identifier | String           | `Customer_Measure|CustomerId` |
-| CustomerMeasureId | GUID      | Customer profile ID |
+| CustomerId         | Text           | Customer profile ID        |
+| Measures           | Text      | Includes a list of key value pairs for measure name and values for the given customer |
+| Identifier | Text           | `Customer_Measure|CustomerId` |
+| CustomerMeasureId | Unique identifier     | Customer profile ID |
 
 ### Enrichment
 
@@ -218,12 +218,12 @@ This table contains the output of the enrichment process.
 
 | Column               | Type             |  Description                                          |
 |----------------------|------------------|------------------------------------------------------|
-| CustomerId           | String           | Customer profile ID                                 |
-| EnrichmentProvider   | String           | Name of the provider for the enrichment                                  |
-| EnrichmentType       | String           | Type of enrichment                                      |
-| Values               | JSON String      | List of attributes produced by the enrichment process |
-| ErichmentId | GUID             | Deterministic GUID generated from `Identifier` |
-| Identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
+| CustomerId           | Text           | Customer profile ID                                 |
+| EnrichmentProvider   | Text           | Name of the provider for the enrichment                                  |
+| EnrichmentType       | Text           | Type of enrichment                                      |
+| Values               | Text      | List of attributes produced by the enrichment process |
+| EnrichmentId | Unique identifier            | Deterministic GUID generated from `Identifier` |
+| Identifier   | Text           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
 
 ### Prediction
 
@@ -231,12 +231,12 @@ This table contains the output of the model predictions.
 
 | Column               | Type        | Description                                          |
 |----------------------|-------------|------------------------------------------------------|
-| CustomerId           | String      | Customer profile ID                                  |
-| ModelProvider        | String      | Name of the provider of the model                                      |
-| Model                | String      | Model name                                                |
-| Values               | JSON String | List of attributes produced by the model |
-| PredictionId | GUID        | Deterministic GUID generated from `Identifier` |
-| Identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+| CustomerId           | Text      | Customer profile ID                                  |
+| ModelProvider        | Text      | Name of the provider of the model                                      |
+| Model                | Text      | Model name                                                |
+| Values               | Text | List of attributes produced by the model |
+| PredictionId | Unique identifier       | Deterministic GUID generated from `Identifier` |
+| Identifier   | Text      |  `Model|ModelProvider|CustomerId`                      |
 
 ### Segment membership
 
@@ -244,12 +244,11 @@ This table contains segment membership information of the customer profiles.
 
 | Column        | Type | Description                        |
 |--------------------|--------------|-----------------------------|
-| CustomerId        | String       | Customer Profile ID        |
-| SegmentProvider      | String       | App that publishes the segments.      |
-| SegmentMembershipType | String       | Type of customer for this segment membership record. Supports multiple types such as Customer, Contact, or Account. Default: Customer  |
-| Segments       | JSON String  | List of unique segments the customer profile is a member of      |
-| Identifier  | String   | Unique identifier of the segment membership record. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
-| SegmentMembershipId | GUID      | Deterministic GUID generated from `Identifier`          |
-
+| CustomerId        | Text       | Customer Profile ID        |
+| SegmentProvider      | Text       | App that publishes the segments.      |
+| SegmentMembershipType | Text       | Type of customer for this segment membership record. Supports multiple types such as Customer, Contact, or Account. Default: Customer  |
+| Segments       | Text  | List of unique segments the customer profile is a member of      |
+| Identifier  | Text   | Unique identifier of the segment membership record. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| SegmentMembershipId | Unique identifier      | Deterministic GUID generated from `Identifier`          |
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
