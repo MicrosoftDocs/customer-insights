@@ -41,7 +41,7 @@ The easiest way to start with predicting data are predefined models, often refer
 
 ## Azure Machine Learning integration
 
-If an organization already uses machine learning scenarios based on Azure Machine Learning experiments, the [custom models](custom-models.md) feature in Customer Insights helps to connect the dots. Create workflows that help you choose the data you want to generate insights from and map the results to your unified customer profiles.
+If an organization already uses machine learning scenarios based on Azure Machine Learning experiments, the custom models feature in Customer Insights helps to connect the dots. Create workflows that help you choose the data you want to generate insights from and map the results to your unified customer profiles. For more information, see [Custom machine learning models](custom-models.md).
 
 ## AI Builder prediction
 
