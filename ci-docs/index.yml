@@ -85,8 +85,8 @@ landingContent:
             url: enrichment-hub.md
           - text: Configure relationships
             url: relationships.md
-          - text: Complete data with predictions
-            url: predictions.md
+          - text: Predict data
+            url: predictions-overview.md
       - linkListType: learn
         links: 
           - text: Enrich and predict data

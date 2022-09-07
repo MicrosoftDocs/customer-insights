@@ -18,7 +18,7 @@ manager: shellyha
 
 | Area  | Limits  | Notes |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Segments, measures, and predictions | 300  | The total number of [segments](segments.md), [measures](measures.md), and [predictions](predictions.md) combined can't exceed 300.  |
+| Segments, measures, and predictions | 300  | The total number of [segments](segments.md), [measures](measures.md), and [predictions](predictions-overview.md) combined can't exceed 300.  |
 | Relationships | 20 levels of depth on relationships in entity paths. | When creating [segments](segments.md) or [measures](measures.md) using the builder interface, entity paths can have up to 20 relationship hops between the start entity and the target entity.  |
 
 ## Fair scheduling of jobs
