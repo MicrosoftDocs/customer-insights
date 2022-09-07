@@ -43,10 +43,6 @@ The easiest way to start with predicting data are predefined models, often refer
 
 If an organization already uses machine learning scenarios based on Azure Machine Learning experiments, the custom models feature in Customer Insights helps to connect the dots. Create workflows that help you choose the data you want to generate insights from and map the results to your unified customer profiles. For more information, see [Custom machine learning models](custom-models.md).
 
-## AI Builder prediction
-
-Sometimes, data sets are incomplete and some values are missing. Customer Insights can help to [predict missing values](predictions.md) for the Customer entity and segments.
-
 ## Manage existing predictions
 
 Go to the **Intelligence** > **Predictions** page. On the **My predictions** tab, view the predictions you created, their prediction type, output entity name, status, the last time the prediction was edited, and the last time the data was refreshed. You can sort the list of predictions by any column.

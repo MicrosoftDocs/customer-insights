@@ -1,7 +1,7 @@
 ---
 title: "Product recommendation prediction"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 05/09/2022
+ms.date: 09/07/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -13,19 +13,19 @@ manager: shellyha
 
 # Product recommendation prediction
 
-The product recommendation model creates sets of predictive product recommendations. Recommendations are based on previous purchase behavior and customers with similar purchase patterns. You can create new product recommendation predictions on the **Intelligence** > **Predictions** page. Select **My predictions** to see other predictions that you've created.
+The product recommendation model creates sets of predictive product recommendations. Recommendations are based on previous purchase behavior and customers with similar purchase patterns.
 
-Product recommendations may be subject to local laws and regulations and customer expectations, which the model is not built to specifically take into account.  As a user of this predictive capability, **you must review the recommendations prior to delivering them to your customers** to ensure you are complying with any applicable laws or regulations, and customer expectations for what you may recommend.
+Product recommendations may be subject to local laws and regulations and customer expectations, which the model is not built to specifically take into account. Therefore, **you must review the recommendations prior to delivering them to your customers** to ensure you are complying with any applicable laws or regulations, and customer expectations for what you may recommend.
 
-Additionally, the output of this model will give you recommendations based on the product ID. Your delivery mechanism will need to map the predicted product IDs to appropriate content for your customers to account for localization, image content, and other business-specific content or behavior.
+The output of this model provides recommendations based on the product ID. Your delivery mechanism must map the predicted product IDs to appropriate content for your customers to account for localization, image content, and other business-specific content or behavior.
 
 ## Sample Guide
 
-If you're interested in trying this feature but don't have data to complete the requirements below, you can [create a sample implementation](sample-guide-predict-product-recommendation.md).
+If you're interested in trying this feature but don't have data to complete the requirements below, [create a sample implementation](sample-guide-predict-product-recommendation.md).
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md) in Customer Insights.
+- At least [Contributor permissions](permissions.md)
 
 - Business knowledge to understand different types of products for your business and how your customers interact with them. We support recommending products that have been previously purchased by your customers or recommendations for new products.
 
