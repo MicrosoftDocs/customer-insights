@@ -130,7 +130,7 @@ If the removal of the connection fails due to dependencies, you need to remove t
 
 Some output entities from Customer Insights are available as tables in Dataverse. The sections below describe the expected schema of these tables.
 
-- [CustomerProfile](#customerprofile)$
+- [CustomerProfile](#customerprofile)
 - [ContactProfile](#contactprofile)
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
