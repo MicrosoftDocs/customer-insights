@@ -36,14 +36,11 @@ The easiest way to start with predicting data are predefined models, often refer
 
 > [!TIP]
 > We recommend that you regularly refresh out-of-the box models with updated data to ensure they accurately inform your business use case. Data is refreshed ad-hoc when the system ingests new or updated data sources. However, models will only rescore in this case and continue to use the existing training data.
-> 
+>
 > You can configure an **Update schedule** by setting the model retraining schedule in the configuration experience. The model will retrain and rescore on this schedule, which you can change at any time.
-
 
 ## Azure Machine Learning integration
 
 If an organization already uses machine learning scenarios based on Azure Machine Learning experiments, the custom models feature in Customer Insights helps to connect the dots. Create workflows that help you choose the data you want to generate insights from and map the results to your unified customer profiles. For more information, see [Custom machine learning models](custom-models.md).
 
-## AI Builder prediction
-
-Sometimes, data sets are incomplete and some values are missing. Customer Insights can help to predict missing values for the Customer entity and segments. For more information, see [Complete your partial data with predictions](predictions.md).
+[!INCLUDE [footer-include](includes/footer-banner.md)]

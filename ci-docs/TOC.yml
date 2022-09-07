@@ -173,8 +173,6 @@
           href: sentiment-analysis.md
         - name: Use custom models from Azure Machine Learning
           href: custom-models.md
-        - name: Complete partially missing data
-          href: predictions.md
 
     - name: Sample guides
       items:    
