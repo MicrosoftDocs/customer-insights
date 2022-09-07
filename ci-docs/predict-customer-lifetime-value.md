@@ -37,9 +37,9 @@ The following data is recommended for increased model performance. Fields marked
 
 - Customer Identifier: Unique identifier to match transactions to an individual customer
 
-- Transaction History: Historical transactions log with the following semantic data schema
+- Transaction History: Historical transactions log with the following semantic data schema:
   - **Transaction ID**: Unique identifier of each transaction
-  - **Transaction date**: Date, preferably a time stamp of each transaction
+  - **Transaction date**: Date or time stamp of each transaction
   - **Transaction amount**: Monetary value (for example, revenue or profit margin) of each transaction
   - **Label assigned to returns** (optional): Boolean value signifying whether the transaction is a return
   - **Product ID** (optional): Product ID of product involved in the transaction
@@ -105,9 +105,11 @@ The following data is recommended for increased model performance. Fields marked
 
 1. For the **Required data** step, select **Add data** for **Customer transaction history**.
 
-1. Select the activity type and entity that provides the transaction history information as described in the [prerequisites](#prerequisites). Create the activity if it has not been set up. Select **Next**.
+1. Select **SalesOrder** or **SalesOrderLine** that contains the transaction history information. If the activity has not been set up, select **here**.
 
-1. Map the attributes if they are not already mapped and select **Save**.
+1. Under **Activities**, choose the specific activities or entity you'd like the calculation to focus on and select **Next**.
+
+1. Select **Save**.
 
 1. Select **Next**.
 
@@ -144,7 +146,7 @@ With this information, they organize a local event for the launch of the espress
 
 ### Set update schedule
 
-1. For the **Data update schedule** step, choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested in Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. For the **Data update schedule** step, choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 
