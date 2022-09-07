@@ -6,8 +6,8 @@ ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: matgos
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope: 
   - ci-data-sources
@@ -59,7 +59,9 @@ Adding data sources based on Power Query connectors generally follows the steps 
 Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Entities**](entities.md) page.
 
 > [!CAUTION]
-> A data source based on Power Query creates a [dataflow in Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Don't change the name of a dataflow in the Power Platform admin center that is used in Customer Insights. Renaming a dataflow causes issues with the references between the Customer Insights data source and the Dataverse dataflow.
+>
+> - A data source based on Power Query creates a [dataflow in Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Don't change the name of a dataflow in the Power Platform admin center that is used in Customer Insights. Renaming a dataflow causes issues with the references between the Customer Insights data source and the Dataverse dataflow.
+> - Concurrent evaluations for Power Query data sources in Customer Insights have the same [refresh limits like Dataflows in PowerBI.com](/power-query/power-query-online-limits#refresh-limits). If a data refresh fails because it reached the evaluation limit, we recommend you adjust the refresh schedule for each dataflow to ensure the data sources aren't processed at the same time.
 
 ### Available Power Query data sources
 
