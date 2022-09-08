@@ -1,7 +1,7 @@
 ---
 title: Transaction churn prediction (contains video)
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 01/13/2022
+ms.date: 09/08/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -94,19 +94,15 @@ For environments based on business accounts, we can predict transactional churn 
 
 ## Create a transaction churn prediction
 
-1. In Customer Insights, go to **Intelligence** > **Predictions**.
+1. Go to **Intelligence** > **Predictions**.
 
-1. Select the **Customer churn model** tile and select **Use this model**.
+1. On the **Create** tab, select **Use model** on the  **Customer churn model** tile.
 
-1. In the **Customer churn model** pane, choose **Transaction** and select **Get started**.
+1. Choose **Transaction** and select **Get started**.
 
-:::image type="content" source="media/select-transaction-churn.PNG" alt-text="Screenshot with selected transaction option in Customer churn model pane.":::
- 
-### Name model
+   :::image type="content" source="media/select-transaction-churn.PNG" alt-text="Screenshot with selected transaction option in Customer churn model pane.":::
 
-1. Provide a name for the model to distinguish it from other models.
-
-1. Provide a name for the output entity using letters and numbers only, without any spaces. That's the name that the model entity will use. 
+1. **Name this model** and the **Output entity name** to distinguish them from other models or entities.
 
 1. Select **Next**.
 
@@ -122,9 +118,9 @@ For environments based on business accounts, we can predict transactional churn 
 
 ### Add required data
 
-1. Select **Add data** and choose the activity type in the side pane that contains the required transaction or purchase history information.
+1. For the **Required data** step, select **Add data** for **Customer transaction history**.
 
-1. Under **Select activities**, choose the specific activities from the selected activity type you'd like the calculation to focus on.
+1. Select the activity type, **SalesOrder** or **SalesOrderLine**, that contains the transaction history information. If the activity has not been set up, select **here**.
 
    :::image type="content" source="media/transaction-churn-select-activity.PNG" alt-text="Side pane showing choosing specific activities under the semantic type.":::
 

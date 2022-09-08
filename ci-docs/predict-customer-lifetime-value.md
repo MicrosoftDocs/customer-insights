@@ -76,7 +76,7 @@ The following data is recommended for increased model performance. Fields marked
 
 1. On the **Create** tab, select **Use model** on the **Customer lifetime value** tile.
 
-1. In the **Customer lifetime value** pane, select **Get started**.
+1. Select **Get started**.
 
 1. **Name this model** and the **Output entity name** to distinguish them from other models or entities.
 
@@ -105,9 +105,11 @@ The following data is recommended for increased model performance. Fields marked
 
 1. For the **Required data** step, select **Add data** for **Customer transaction history**.
 
-1. Select **SalesOrder** or **SalesOrderLine** that contains the transaction history information. If the activity has not been set up, select **here**.
+1. Select the activity type, **SalesOrder** or **SalesOrderLine**, that contains the transaction history information. If the activity has not been set up, select **here**.
 
-1. Under **Activities**, choose the specific activities or entity you'd like the calculation to focus on and select **Next**.
+1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+
+1. Select **Next** and review the attributes required for this model.
 
 1. Select **Save**.
 
