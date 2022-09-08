@@ -75,7 +75,10 @@ To refresh a data source on demand:
 
 ## Corrupted data sources
 
-Fields from an ingested data source can contain corrupted data. Records with corrupted fields are exposed in system-created entities. View corrupted records to identify which data to review and update on the source system.
+Data is not always clean. During ingestion, if 10% or more of the records contain corrupted data, data ingestion completes with errors. If under 10%, data ingestion completes with warnings. These errors can be seen in the task details. Records with corrupted fields are exposed in system-created entities. View corrupted records to identify which data to review and update on the source system.
+
+> [!NOTE]
+> If data ingestion completed with errors, subsequent processing does not occur (does CI stop processing the source file or does it mean a customer can't continue with things like unification). If ingestion completed with warnings, subsequent processing continues.
 
 For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system flags this record as corrupted. Change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record is removed from the corrupted entity.
 
@@ -85,7 +88,7 @@ For example, a 'birthday' column has the datatype set as 'date'. A customer reco
 
 1. Select a corrupted entity and then the **Data** tab.
 
-1. Identify the corrupted fields in a record and the reason.
+1. Identify the corrupted fields in a record and the reason. 
 
    :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason." lightbox="media/corruption-reason.png":::
 
