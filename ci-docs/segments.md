@@ -59,7 +59,7 @@ Select a segment to view available actions.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
 - **Refresh** the segment to include the latest data.
-- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a scheduled refresh and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
+- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](#schedule-a-segment) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
 - **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed during scheduled refreshes.
 - [**Find similar customers**](find-similar-customer-segments.md) from the segment.
 - **Rename** the segment.
@@ -102,10 +102,11 @@ Export segments to other apps to further use the data. Export a segment from the
 
 ## Schedule a segment
 
-Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. To refresh manually, select the segment and select **Refresh**. The default is the scheduled system refresh.
+Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. The default is scheduled system refresh. For segments that don't change often or are for last season, you might want to schedule them on a slower cadence such as monthly to avoid unnecessary processing time.
+
+To refresh manually, select one or more segments and select **Refresh**.
 
 For scheduled refreshes, the following rules apply:
-
 - All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set schedule. Once the refresh is complete, the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
 - Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segment was run or refreshed manually.
 
