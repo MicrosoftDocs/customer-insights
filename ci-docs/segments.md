@@ -1,7 +1,7 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 08/12/2022
+ms.date: 09/08/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -18,7 +18,7 @@ searchScope:
 
 # Segments overview
 
-Segments let you group your customers based on demographic, transactional, or behavioral attributes. You can use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
+Segments let you group your customers based on demographic, transactional, or behavioral attributes. Use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
 
 Customer or contact profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
@@ -58,14 +58,15 @@ Select a segment to view available actions.
 - **Download** the list of members as a .CSV file.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
-- [**Refresh**](#refresh-segments) the segment to include the latest data.
-- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](schedule-refresh.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
-- **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed during system refreshes.
+- **Refresh** the segment to include the latest data.
+- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a scheduled refresh and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
+- **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed during scheduled refreshes.
 - [**Find similar customers**](find-similar-customer-segments.md) from the segment.
 - **Rename** the segment.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
 - [**Manage exports**](#export-segments) to see export-related segments and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
+- [**Schedule**](#schedule-a-segment) the segment.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
@@ -85,17 +86,6 @@ The lower part contains a list of the segment members.
 >
 > The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Entities**](entities.md) page or [export the segment](export-destinations.md).
 
-## Refresh segments
-
-Segments can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more segments, select them and choose **Refresh**.
-
-To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**. The following rules apply:
-
-- All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. Once the refresh is complete, the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
-- Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segment was run or refreshed manually.
-
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-
 ## Export segments
 
 Export segments to other apps to further use the data. Export a segment from the segments page or the [exports page](export-destinations.md).
@@ -109,6 +99,29 @@ Export segments to other apps to further use the data. Export a segment from the
    1. To create a new export with the selected segment, select **Add export**. For more information about creating exports, see [Set up a new export](export-destinations.md#set-up-a-new-export).
 
 1. Select **Back** to return to the main page for segments.
+
+## Schedule a segment
+
+Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. To refresh manually, select the segment and select **Refresh**. The default is the scheduled system refresh.
+
+For scheduled refreshes, the following rules apply:
+
+- All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set schedule. Once the refresh is complete, the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
+- Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segment was run or refreshed manually.
+
+Define refresh schedules for individual segments or several segments at once. The currently defined schedule is listed in the **Schedule** column of the segment list.
+
+1. Go to **Segments**.
+
+1. Select the segment you want to schedule.
+
+1. Select **Schedule**.
+
+1. In the **Schedule** pane, select the **Recurrence**. For weekly, select the day of the week. For monthly, select the day of the month. On the scheduled day, the refresh occurs during the time of the scheduled system refresh.
+
+1. Select **Save**.
+
+1. To view the next refresh scheduled for a segment, on the **Segments** page, select **Columns** and add the **Next refresh** column.
 
 ## Track usage of a segment
 
