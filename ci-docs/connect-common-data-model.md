@@ -35,6 +35,8 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
 
+- The user that sets up the data source connection needs least Storage Blob Data Contributor permissions on the storage account.
+
 - Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the entities such as entity columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
 ## Connect to Azure Data Lake Storage
@@ -57,7 +59,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
    > [!NOTE]
    > You need one of the following roles either to the container or the storage account to create the data source:
    >
-   >  - Storage Blob Data Reader is sufficient to read from a storage account and ingest the data to Customer Insights. 
+   >  - Storage Blob Data Reader is sufficient to read from a storage account and ingest the data to Customer Insights.
    >  - Storage Blob Data Contributor or Owner is required if you want to edit the manifest files directly in Customer Insights.  
   
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.

@@ -35,12 +35,6 @@ View details about the real-time API usage and see which events happened in a gi
    - **Data transfer** - a chart that shows the amount of data that was transferred through the API in the selected time frame.
    - **Operations** - a table with rows for each available API operation and details about the usage of the operations. Select an operation name to go to [the API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
-   Operations that use [real-time data ingestion](real-time-data-ingestion.md) contain a binocular symbol to view real-time API usage.
-
-   1. Select the binocular to open the **Real-time API usage** pane containing usage details for the operation.
-   1. **Select a time frame** to view.
-   1. Use the **Group by** box to choose how to best present your real-time interactions. Group the data by API **Method**, **Entity qualified name** (ingested entity), **Created by** (source of the event), **Result** (success or failure) or **Error codes**. The data is available as a history chart and as a table.
-
 ## View system information
 
 View the environment display name, ID, region, type and session ID.
