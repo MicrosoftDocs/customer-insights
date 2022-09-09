@@ -203,9 +203,9 @@ You can update the *Connect to storage account using* option. For more informati
 
 During data ingestion, some of the most common reasons a record might be considered corrupt include:
 
-- The data types and field values in the source file don't match the schema
+- The data types and field values don't match between the source file and the schema
 - Number of columns in the source file don't match the schema
-- Fields contain characters that cause the columns to skew against the expected schema. For example: incorrectly formatted quotes, unescaped quotes, newline characters, or tabbed characters.
+- Fields contain characters that cause the columns to skew compared to the expected schema. For example: incorrectly formatted quotes, unescaped quotes, newline characters, or tabbed characters.
 - Partition files are missing
 - If there are datetime/date/datetimeoffset columns, their format must be specified in the schema if it doesn't follow the standard format.
 
@@ -217,7 +217,7 @@ If the data does not conform to the schema, the records are classified as corrup
 
 If ingestion was successful without any corrupt records, but you can't see any data, check your model.json file to make sure partitions are specified. Refresh the data source.
 
-If data ingestion occurs at the same time as data sources are refreshed during an [automatic scheduled refresh](schedule-refresh.md), the partition files can disappear or appear empty. Change the system refresh schedule or the refresh schedule for the data source.
+If data ingestion occurs at the same time as data sources are being refreshed during an [automatic schedule refresh](schedule-refresh.md), the partition files can disappear or appear empty. Change the system refresh schedule or the refresh schedule for the data source.
 
 ### Datetime fields in the wrong format
 

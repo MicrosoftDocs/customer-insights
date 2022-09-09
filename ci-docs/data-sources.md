@@ -75,15 +75,16 @@ To refresh a data source on demand:
 
 ## Corrupt data sources
 
-Data is not always clean. During ingestion, if 10% (*is this correct?*) or more of the records contain corrupted data, data ingestion completes with errors. If under 10%, data ingestion completes with warnings. These errors can be seen in the task details.
-
-:::image type="content" source="media/corrupt-task-error.png" alt-text="Task detail showing corrupt data error.":::
-Corrupt records are shown in system-created entities.
+Data is not always clean. During ingestion, if 10% (*is this correct?*) or more of the records contain corrupted data, data ingestion completes with errors. If under 10%, data ingestion completes with warnings.
 
 > [!NOTE]
 > If data ingestion completed with errors, subsequent processing does not occur (*does CI stop processing the source file or does it mean a customer can't continue with things like unification*). If ingestion completed with warnings, subsequent processing continues.
 
-For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system flags this record as corrupted. Change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record is removed from the corrupted entity.
+These errors can be seen in the task details.
+
+:::image type="content" source="media/corrupt-task-error.png" alt-text="Task detail showing corrupt data error.":::
+
+Corrupt records are shown in system-created entities.
 
 ### Fix corrupt data
 
@@ -98,8 +99,10 @@ For example, a 'birthday' column has the datatype set as 'date'. A customer reco
    > [!NOTE]
    > **Data** > **Entities** only show a portion of the corrupt records. To view all the corrupt records, look at the Customer Insights folder in your storage account.
 
-1. Fix the corrupted data. For example, for Azure Data Lake data sources, [fix the data in the Data Lake Storage or in the manifest/model.json file](connect-common-data-model.md#common-reasons-for-ingestion-errors-or-corrupted-data). For Power Query data sources, fix the data in the source file and [correct the data type in the transformation step](connect-power-query.md#data-type-does-not-match-data) on the **Power Query - Edit queries** page.
+1. Fix the corrupted data. For example, for Azure Data Lake data sources, [fix the data in the Data Lake Storage or in the manifest/model.json file](connect-common-data-model.md#common-reasons-for-ingestion-errors-or-corrupt-data). For Power Query data sources, fix the data in the source file and [correct the data type in the transformation step](connect-power-query.md#data-type-does-not-match-data) on the **Power Query - Edit queries** page.
 
 After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes.
+
+For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system flags this record as corrupt. Change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record is removed from the corrupted entity.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
