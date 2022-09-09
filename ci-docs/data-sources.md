@@ -1,7 +1,7 @@
 ---
 title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
-ms.date: 08/29/2022
+ms.date: 09/09/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -73,24 +73,30 @@ To refresh a data source on demand:
 
 1. Select the status to open the **Progress details** pane and view the progress. To cancel the job, select **Cancel job** at the bottom of the pane.
 
-## Corrupted data sources
+## Corrupt data sources
 
-Data is not always clean. During ingestion, if 10% or more of the records contain corrupted data, data ingestion completes with errors. If under 10%, data ingestion completes with warnings. These errors can be seen in the task details. Records with corrupted fields are exposed in system-created entities. View corrupted records to identify which data to review and update on the source system.
+Data is not always clean. During ingestion, if 10% (*is this correct?*) or more of the records contain corrupted data, data ingestion completes with errors. If under 10%, data ingestion completes with warnings. These errors can be seen in the task details.
+
+:::image type="content" source="media/corrupt-task-error.png" alt-text="Task detail showing corrupt data error.":::
+Corrupt records are shown in system-created entities.
 
 > [!NOTE]
-> If data ingestion completed with errors, subsequent processing does not occur (does CI stop processing the source file or does it mean a customer can't continue with things like unification). If ingestion completed with warnings, subsequent processing continues.
+> If data ingestion completed with errors, subsequent processing does not occur (*does CI stop processing the source file or does it mean a customer can't continue with things like unification*). If ingestion completed with warnings, subsequent processing continues.
 
 For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system flags this record as corrupted. Change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record is removed from the corrupted entity.
 
-### Fix corrupted data
+### Fix corrupt data
 
 1. Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. The naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'.
 
-1. Select a corrupted entity and then the **Data** tab.
+1. Select a corrupt entity and then the **Data** tab.
 
-1. Identify the corrupted fields in a record and the reason. 
+1. Identify the corrupt fields in a record and the reason.
 
    :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason." lightbox="media/corruption-reason.png":::
+
+   > [!NOTE]
+   > **Data** > **Entities** only show a portion of the corrupt records. To view all the corrupt records, look at the Customer Insights folder in your storage account.
 
 1. Fix the corrupted data. For example, for Azure Data Lake data sources, [fix the data in the Data Lake Storage or in the manifest/model.json file](connect-common-data-model.md#common-reasons-for-ingestion-errors-or-corrupted-data). For Power Query data sources, fix the data in the source file and [correct the data type in the transformation step](connect-power-query.md#data-type-does-not-match-data) on the **Power Query - Edit queries** page.
 

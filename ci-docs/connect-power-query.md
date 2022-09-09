@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 08/18/2022
+ms.date: 09/09/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -98,7 +98,7 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-## Common reasons for ingestion errors or corrupted data
+## Common reasons for ingestion errors or corrupt data
 
 ### Data type does not match data
 
@@ -119,5 +119,21 @@ The data can be fixed at the source and re-ingested. Or, fix the transformation 
 1. Change the data type to correctly match the data.
 
 1. Select **Save**. That data source is refreshed.
+
+## Troubleshoot PPDF Power Query-based data source refresh issue
+
+1. Navigate to [Power Platform](https://make.powerapps.com).
+
+1. Select the **Environment** for your Customer Insights instance.
+
+1. Navigate to **Dataflows**.
+
+1. For the dataflow that corresponds to the data source in Customer Insights, select the vertical ellipsis (&vellip;) and then select **Show refresh history**.
+
+1. If the **Status** of the dataflow is **Failed**, download the refresh history file. (*If the status does not show failed, opena ticket???*)
+
+1. Review the downloaded file for the reason for the failure.
+
+1. If the error cannot be resolved, select **?** to open a support ticket. Include the downloaded refresh history file.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
