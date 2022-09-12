@@ -57,7 +57,7 @@ For more information about Customer Lockbox, see the [summary](/power-platform/a
 
 1. Select the  **Resource Type** (Storage Account, Synapse Workspace)
 
-   The **Add Private Link** pane lists resources from your tenant that you’ve got permissions to see.
+   The **Add Private Link** panel lists resources from your tenant that you’ve got permissions to see.
 
 1. Select the subscription, resource group, and storage account / synapse workspace.
 
