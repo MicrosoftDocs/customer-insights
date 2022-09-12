@@ -1,7 +1,7 @@
 ---
-title: Customer lifetime value (CLV) prediction
+title: Predict customer lifetime value (CLV)
 description: "Predict revenue potential for active customers in the future."
-ms.date: 09/07/2022
+ms.date: 09/12/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -15,7 +15,7 @@ searchScope:
   - customerInsights
 ---
 
-# Customer lifetime value (CLV) prediction
+# Predict customer lifetime value (CLV)
 
 Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This prediction helps you achieve various goals:
 
@@ -67,7 +67,8 @@ The following data is recommended for increased model performance. Fields marked
   - Data completeness: Less than 20% missing values in required fields in the input data.
 
 > [!NOTE]
-> - The model requires the transaction history of your customers. Only one transaction history entity can be configured. If there are multiple purchase/transaction entities, combine them in Power Query before data ingestion.
+> - The model requires the transaction history of your customers. 
+> - Only one transaction history entity can be configured. If there are multiple purchase/transaction entities, combine them in Power Query before data ingestion.
 > - Optionally, for additional customer activity data, add as many customer activity entities as you'd like for consideration by the model.
 
 ## Create a Customer Lifetime Value prediction
@@ -84,7 +85,7 @@ The following data is recommended for increased model performance. Fields marked
 
 ### Define model preferences
 
-1. For the **Model preferences** step, set a **Prediction time period** to define how far into the future you want to predict the CLV. By default, the unit is set as months.
+1. For the **Preferences** step, set a **Prediction time period** to define how far into the future you want to predict the CLV. By default, the unit is set as months.
 
    > [!TIP]
    > To accurately predict CLV for the set time period, a comparable period of historical data is required. For example, if you want to predict CLV for the next 12 months, have at least 18 – 24 months of historical data.
@@ -105,7 +106,7 @@ The following data is recommended for increased model performance. Fields marked
 
 1. For the **Required data** step, select **Add data** for **Customer transaction history**.
 
-1. Select the activity type, **SalesOrder** or **SalesOrderLine**, that contains the transaction history information. If the activity has not been set up, select **here**.
+1. Select the semantic activity type, **SalesOrder** or **SalesOrderLine**, that contains the transaction history information. If the activity has not been set up, select **here**.
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
 
@@ -121,9 +122,15 @@ Data reflecting key customer interactions (like web, customer service, and event
 
 1. For the **Additional data (optional)** step, select **Add data** under **Boost model insights with additional activity data**.
 
-1. Select an activity type and entity that matches the type of customer activity you're adding. Choose from existing activity types or add a new activity type. Select **Next**.
+1. Select an activity type and entity that matches the type of customer activity you're adding. If the activity has not been set up, select **here**.
 
-1. Map the attributes if they are not already mapped and select **Save**.
+1. Under **Activities**, if the activity attributes were mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If mapping did not occur, select **Edit** and map your data.
+
+1. Select **Next** and map the attributes required for this model.
+
+1. Select **Save**.
+
+1. Select **Next**.
 
 1. [Add optional customer data](#add-optional-customer-data) or select **Next** and go to [Set update schedule](#set-update-schedule).
 
@@ -148,13 +155,13 @@ With this information, they organize a local event for the launch of the espress
 
 ### Set update schedule
 
-1. For the **Data update schedule** step, choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. For the **Data updates** step, choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 
 ### Review and run the model configuration
 
-The **Review your model details** step shows a summary of the configuration and provides a chance to make changes before you create the prediction.
+The **Review and run** step shows a summary of the configuration and provides a chance to make changes before you create the prediction.
 
 1. Select **Edit** on any of the steps to review and make any changes.
 
