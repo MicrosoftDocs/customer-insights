@@ -52,6 +52,8 @@ In Azure:
 
 1. Select or search for the subscription you want to use the Customer Insights data in. As soon as a subscription is selected, you can also select **Workspace**, **Storage account**, and **Container**.
 
+1. Optionally, if you want to connect to synapse workspace through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
+
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.

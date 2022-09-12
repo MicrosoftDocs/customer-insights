@@ -42,7 +42,7 @@ For more information about Customer Lockbox, see the [summary](/power-platform/a
 
 ## Set up an Azure Private Link
 
-[Azure Private Link](/azure/private-link/private-link-overview) lets Customer Insights connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
+[Azure Private Link](/azure/private-link/private-link-overview) lets Customer Insights connect to your Azure Data Lake Storage or Azure Synapse Analytics account over a private endpoint in your virtual network. For data in a resource, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
 
 > [!IMPORTANT]
 > Minimum role requirement to set up a Private Link connection:
@@ -55,15 +55,17 @@ For more information about Customer Lockbox, see the [summary](/power-platform/a
 
 1. Select **Add Private Link**.
 
-   The **Add Private Link** pane lists storage accounts from your tenant that you’ve got permissions to see.
+1. Select the  **Resource Type** (Storage Account, Synapse Workspace)
 
-1. Select the subscription, resource group, and storage account.
+   The **Add Private Link** pane lists resources from your tenant that you’ve got permissions to see.
+
+1. Select the subscription, resource group, and storage account / synapse workspace.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save**.
 
-1. Go to your Data Lake Storage account and open the link presented on the screen.
+1. Go to your Data Lake Storage account / Azure Synapse Analytics Account and open the link presented on the screen.
 
 1. Approve the Private Link.
 
