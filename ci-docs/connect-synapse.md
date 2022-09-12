@@ -42,6 +42,8 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 - If your Customer Insights environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md), the user who sets up the connection to Azure Synapse Analytics needs at least the built-in **Reader** role on the Data Lake Storage account. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
+- If your Synapse Workspace has [firewall enabled](/azure/synapse-analytics/security/synapse-workspace-ip-firewall), please setup private link first. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
+
 ## Connect to the data lake database in Azure Synapse Analytics
 
 1. Go to **Data** > **Data sources**.
