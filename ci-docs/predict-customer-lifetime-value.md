@@ -17,7 +17,7 @@ searchScope:
 
 # Predict customer lifetime value (CLV)
 
-Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This prediction helps you achieve various goals:
+Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This prediction helps you:
 
 - Identify high-value customers and process this insight.
 - Create strategical customer segments based on their potential value to run personalized campaigns with targeted sales, marketing, and support efforts.
@@ -25,50 +25,47 @@ Predict potential value (revenue) that individual active customers will bring in
 - Optimize sales or marketing strategy and allocate budget more accurately for customer outreach.
 - Recognize and reward high-value customers through loyalty or rewards programs.
 
-Before getting started, reflect what CLV means for your business. We support transaction-based CLV prediction. The predicted value of a customer is based on the history of business transactions. Since configuring and running a CLV model doesn't take much time, consider creating several models with varying input preferences and compare model results to see which model scenario best fits your business needs.
+Determine what CLV means for your business. We support transaction-based CLV prediction. The predicted value of a customer is based on the history of business transactions. Consider creating several models with varying input preferences and compare model results to see which model scenario best fits your business needs.
 
 ## Prerequisites
 
 - At least [Contributor](permissions.md) permissions
-
-### Data requirements
-
-The following data is recommended for increased model performance. Fields marked as optional are still recommended. The more data the model can process, the more accurate the prediction will be. Therefore, we encourage you to ingest more customer activity data, if available.
-
-- Customer Identifier: Unique identifier to match transactions to an individual customer
-
-- Transaction History: Historical transactions log with the following semantic data schema:
+- At least 100 unique customers, preferably more than 10,000 customers
+- Customer Identifier, a unique identifier to match transactions to an individual customer
+- At least one year of transaction history, preferably two to three years. Transaction history must include:
   - **Transaction ID**: Unique identifier of each transaction
   - **Transaction date**: Date or time stamp of each transaction
   - **Transaction amount**: Monetary value (for example, revenue or profit margin) of each transaction
-  - **Label assigned to returns** (optional): Boolean value signifying whether the transaction is a return
+- Less than 20% missing values in required fields
+
+Ideally, at least two to three transactions per customer ID, preferably across multiple dates.
+
+### Recommended data
+
+The following data is optional, but recommended for increased model performance. The more data the model can process, the more accurate the prediction. Therefore, we encourage you to ingest more customer activity data, if available.
+
+- Transaction history additional data:
+  - **Label assigned to returns**: Boolean value signifying whether the transaction is a return
   - **Product ID** (optional): Product ID of product involved in the transaction
 
-- Additional data (optional), for example:
+- Additional data such as:
   - Web activities: Website visit history, email history
   - Loyalty activities: Loyalty reward points accrual and redemption history
   - Customer service log: Service call, complaint, or return history
   - Customer profile information
 
-- Data about customer activities (optional):
+- Data about customer activities:
   - Activity identifiers to distinguish activities of the same type
   - Customer identifiers to map activities to your customers
   - Activity information containing the name and date of the activity
-  - The semantic data schema for activities includes:
+  - The semantic data schema for activities:
     - **Primary key**: A unique identifier for an activity
     - **Timestamp**: The date and time of the event identified by the primary key
     - **Event (activity name)**:  The name of event you want to use
     - **Details (amount or value)**: Details about the customer activity
 
-- Suggested data characteristics:
-  - Sufficient historical data: At least one year of transactional data. Preferably two to three years of transactional data to predict CLV for one year.
-  - Multiple purchases per customer: Ideally, at least two to three transactions per customer ID, preferably across multiple dates.
-  - Number of customers: At least 100 unique customers, preferably more than 10,000 customers. The model will fail with fewer than 100 customers and insufficient historical data.
-  - Data completeness: Less than 20% missing values in required fields in the input data.
-
 > [!NOTE]
-> - The model requires the transaction history of your customers. 
-> - Only one transaction history entity can be configured. If there are multiple purchase/transaction entities, combine them in Power Query before data ingestion.
+> - Only one transaction history entity can be configured. If there are multiple purchase or transaction entities, combine them in Power Query before data ingestion.
 > - Optionally, for additional customer activity data, add as many customer activity entities as you'd like for consideration by the model.
 
 ## Create a Customer Lifetime Value prediction

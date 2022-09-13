@@ -13,7 +13,9 @@ manager: shellyha
 
 # Predict product recommendations
 
-The product recommendation model creates sets of predictive product recommendations. Recommendations are based on previous purchase behavior and customers with similar purchase patterns.
+The product recommendation model creates sets of predictive product recommendations. Recommendations are based on previous purchase behavior and customers with similar purchase patterns. This model is for individual consumers (B-to-C).
+
+You must have business knowledge on the different types of products for your business and how your customers interact with them. We support recommending products that have been previously purchased by your customers or recommendations for new products.
 
 Product recommendations may be subject to local laws and regulations and customer expectations, which the model is not built to specifically take into account. Therefore, **you must review the recommendations prior to delivering them to your customers** to ensure you are complying with any applicable laws or regulations, and customer expectations for what you may recommend.
 
@@ -24,35 +26,26 @@ The output of this model provides recommendations based on the product ID. Your 
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md).
+- At least [Contributor permissions](permissions.md)
+- At least 100 customers, preferably more than 10,000 customers.
+- Customer Identifier, a unique identifier to match transactions to an individual customer
+- At least one year of transactional data, preferably two to three years to include some seasonality. Transaction history must include:
+  - **Transaction ID:** Unique identifier of a purchase or transaction.
+  - **Transaction date:** Date of the purchase or transaction.
+  - **Value of the transaction:** Numerical value of the purchase or transaction.
+  - **Unique product ID:** ID of the product or service purchased if your data is at a line item level.
 
-- Business knowledge on the different types of products for your business and how your customers interact with them. We support recommending products that have been previously purchased by your customers or recommendations for new products.
+Ideally, at least three or more transactions per Customer ID.
 
-- Your environment is configured for the **individual consumers** primary target audience.
+### Recommended data
 
-### Data requirements
+The following data is optional, but recommended for increased model performance. The more data the model can process, the more accurate the prediction. Therefore, we encourage you to ingest more customer activity data, if available.
 
-- Data about transactions, purchases, and their history:
-  - Transaction identifiers to distinguish purchases or transactions.
-  - Customer identifiers to map transactions to your customers.
-  - Transaction event dates that specify the date a transaction occurred.
-  - Product ID information for the transaction.
-  - A product catalog data entity to use as a product filter (optional).
-  - Whether the transaction is a return (optional).
-  - The following semantic data schema:
-    - **Transaction ID:** Unique identifier of a purchase or transaction.
-    - **Transaction date:** Date of the purchase or transaction.
-    - **Value of the transaction:** Numerical value of the purchase or transaction.
-    - **Unique product ID:** ID of the product or service purchased if your data is at a line item level.
-    - **Purchase or return** (optional): A boolean value where *true* identifies that a transaction was a return. If the Purchase or Return data is not provided and the model and the **Value of the transaction** is negative, we infer a return.
-
-- Suggested data characteristics:
-  - Sufficient historical data: At least one year of transactional data, preferably two to three years to include some seasonality.
-  - Multiple purchases per customer: Three or more transactions per Customer ID.
-  - Number of customers: At least 100 customers, preferably more than 10,000 customers. The model will fail with fewer than 100 customers.
+- A product catalog data entity to use as a product filter.
+- **Purchase or return**: A boolean value where *true* identifies that a transaction was a return. If the Purchase or Return data is not provided and the model and the **Value of the transaction** is negative, we infer a return.
 
 > [!NOTE]
-> - The model requires the transaction history of your customers. The definition of a transaction is quite flexible. Any data that describes a user-product interaction can work as an input. For example, purchasing a product, taking a class, or attending an event.
+> - The model requires the transaction history of your customers where transaction is any data that describes a user-product interaction. For example, purchasing a product, taking a class, or attending an event.
 > - Only one transaction history entity can be configured. If there are multiple purchase entities, combine them in Power Query before data ingestion.
 > - If order and order details are different entities, join them before using in the model. The model doesn't work with only an order ID or receipt ID in an entity.
 
@@ -178,6 +171,7 @@ There are five primary sections of data within the results page.
 
   :::image type="content" source="media/product-recommendation-highconfidence.PNG" alt-text="List showing high confidence suggestions for a select set of individual customers.":::
 
-Go to **Data** > **Entities** and view the data tab for the output entity you defined for this model. *Score* in the output entity is a quantitative measure of the recommendation. The model recommends products with a higher score over products with a lower score.
+> [!NOTE]
+> In the output entity for this model, *Score* shows the quantitative measure of the recommendation. The model recommends products with a higher score over products with a lower score. To view the score, go to **Data** > **Entities** and view the data tab for the output entity you defined for this model.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

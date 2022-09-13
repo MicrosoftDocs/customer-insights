@@ -13,7 +13,9 @@ manager: shellyha
 
 # Predict subscription churn
 
-Subscription churn prediction helps predict whether a customer is at risk for no longer using your company’s subscription products or services.
+Subscription churn prediction helps predict whether a customer is at risk for no longer using your company’s subscription products or services. Subscription data includes active and inactive subscriptions for each customer so there are multiple entries per customer ID.
+
+You must have business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription is ended.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOKNQ]
 
@@ -23,41 +25,27 @@ Subscription churn prediction helps predict whether a customer is at risk for no
 ## Prerequisites
 
 - At least [Contributor permissions](permissions.md).
+- At least 10 customer profiles, preferably more than 1,000 unique customers.
+- Customer Identifier, a unique identifier to match subscriptions to your customers.
+- Subscription data for at least double the selected time window. Preferably, two to three years of subscription data. Subscription history must include:
+  - **Subscription ID:** Unique identifier of a subscription.
+  - **Subscription End Date:** Date the subscription expires for the customer.
+  - **Subscription Start Date:** Date the subscription starts for the customer.
+  - **Transaction Date:** Date a subscription change happened. For example, a customer buying or canceling a subscription.
+  - **Is it a recurring subscription:** Boolean true/false field that determines if the subscription will renew with the same subscription ID without customer intervention.
+  - **Recurrence Frequency (in months):** For recurring subscriptions, the month the subscription will renew. For example, a yearly subscription that automatically renews for a customer every year for another year has the value 12.
+- At least two activity records for 50% of the customers you want to calculate churn for. Customer activities must include:
+  - **Primary key:** Unique identifier for an activity. For example, a website visit or a usage record showing the customer viewed a TV show episode.
+  - **Timestamp:** Date and time of the event identified by the primary key.
+  - **Event:** Name of the event you want to use. For example, a field called "UserAction" in a streaming video service could have the value of "Viewed".
+  - **Details:** Detailed information about the event. For example, a field called "ShowTitle" in a streaming video service could have the value of a video a customer watched.
+- Less than 20% missing values in the data field of the provided entity.
 
-- Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription is ended.
+### Recommended data
 
-- Data about your subscriptions and their history:
-  - Subscription identifiers to distinguish subscriptions.
-  - Customer identifiers to match subscriptions to your customers.
-  - Subscription event dates, which define start dates, end dates, and the dates the subscription events occurred on.
-  - Subscription information to define if it's a recurring subscription and how often it renews.
-  - The following semantic data schema for subscriptions:
-    - **Subscription ID:** Unique identifier of a subscription.
-    - **Subscription End Date:** Date the subscription expires for the customer.
-    - **Subscription Start Date:** Date the subscription starts for the customer.
-    - **Transaction Date:** Date a subscription change happened. For example, a customer buying or canceling a subscription.
-    - **Is it a recurring subscription:** Boolean true/false field that determines if the subscription will renew with the same subscription ID without customer intervention.
-    - **Recurrence Frequency (in months):** For recurring subscriptions, the month the subscription will renew. For example, a yearly subscription that automatically renews for a customer every year for another year has the value 12.
-    - **Subscription Amount** (optional): Amount of currency a customer pays for the subscription renewal. It can help identify patterns for different levels of subscriptions.
+The following data is optional, but recommended for increased model performance.
 
-- Data about customer activities:
-  - Activity identifiers to distinguish activities of the same type.
-  - Customer identifiers to map activities to your customers.
-  - Activity information containing the name and date of the activity.
-  - The following semantic data schema for customer activities:
-    - **Primary key:** Unique identifier for an activity. For example, a website visit or a usage record showing the customer viewed a TV show episode.
-    - **Timestamp:** Date and time of the event identified by the primary key.
-    - **Event:** Name of the event you want to use. For example, a field called "UserAction" in a streaming video service could have the value of "Viewed".
-    - **Details:** Detailed information about the event. For example, a field called "ShowTitle" in a streaming video service could have the value of a video a customer watched.
-
-- Suggested data characteristics:
-  - Sufficient historical data: Subscription data for at least double the selected time window. Preferably, two to three years of subscription data.
-  - Subscription status: Data includes active and inactive subscriptions for each customer so there are multiple entries per customer ID.
-  - Number of customers: At least 10 customer profiles, preferably more than 1,000 unique customers. The model will fail with fewer than 10 customers and insufficient historical data.
-  - Data completeness: Less than 20% of missing values in the data field of the entity provided.
-
-   > [!NOTE]
-   > You'll need at least two activity records for 50% of the customers you want to calculate churn for.
+- **Subscription Amount** (optional): Amount of currency a customer pays for the subscription renewal. It can help identify patterns for different levels of subscriptions.
 
 ## Create a subscription churn prediction
 
@@ -149,6 +137,7 @@ There are three primary sections of data within the results page:
 
   :::image type="content" source="media/subscription-churn-influentialfactors.PNG" alt-text="List showing influential factors and their importance in predicting the churn result.":::
 
-Go to **Data** > **Entities** and view the data tab for the output entity you defined for this model. *ChurnScore* in the output entity is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. The default threshold might not work for your scenario. [create a new segments](segments.md) with your preferred threshold.
+> [!NOTE]
+> In the output entity for this model, *ChurnScore* is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md) with your preferred threshold. To view the churn score, go to **Data** > **Entities** and view the data tab for the output entity you defined for this model.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

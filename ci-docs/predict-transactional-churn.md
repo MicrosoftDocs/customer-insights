@@ -15,6 +15,8 @@ manager: shellyha
 
 Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window.
 
+You must have business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6Eg]
 
 For environments based on business accounts, we can predict transactional churn for an account and also a combination of account and another level of information like product category. For example, adding a dimension can help determine how likely it is that the account "Contoso" will stop buying the product category "office stationery." In addition, for business accounts, we can also use AI to generate a list of potential reasons why an account is likely to churn for a category of secondary level information.
@@ -24,44 +26,49 @@ For environments based on business accounts, we can predict transactional churn 
 
 ## Prerequisites
 
+- At least [Contributor permissions](permissions.md).
+- Customer Identifier, a unique identifier to match transactions to your customers.
+- Transaction history must include:
+  - **Transaction ID**: Unique identifier of a purchase or transaction.
+  - **Transaction Date**: Date of the purchase or transaction.
+  - **Value of the transaction**: Currency or numerical value amount of the transaction.
+
+### Recommended data
+
+The following data is optional, but recommended for increased model performance. The more data the model can process, the more accurate the prediction. Therefore, we encourage you to ingest more customer activity data, if available.
+
 # [Individual consumers (B-to-C)](#tab/b2c)
 
-- At least [Contributor permissions](permissions.md) .
-- Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
-- Data about your transactions, purchases and their history:
-  - Transaction identifiers to distinguish purchases or transactions.
-  - Customer identifiers to match transactions to your customers.
-  - Transaction event dates that specify the date a transaction occurred.
-  - The following semantic data schema for purchases or transactions:
-    - **Transaction ID**: Unique identifier of a purchase or transaction.
-    - **Transaction Date**: Date of the purchase or transaction.
-    - **Value of the transaction**: Currency or numerical value amount of the transaction.
-    - **Unique product ID** (optional): ID of the product or service purchased if your data is at a line item level.
-    - **Whether this transaction was a return** (optional): A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we infer a return.
-- Data about customer activities (optional):
-  - Activity identifiers to distinguish activities of the same type.
-  - Customer identifiers to map activities to your customers.
-  - Activity information containing the name and date of the activity.
-  - The following semantic data schema for customer activities includes:
-    - **Primary key:** Unique identifier for an activity. For example, a website visit or a usage record showing the customer tried a sample of your product.
-    - **Timestamp:** Date and time of the event identified by the primary key.
-    - **Event:** Name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
-    - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
+- Transaction history data:
+  - **Unique product ID**: ID of the product or service purchased if your data is at a line item level.
+  - **Whether this transaction was a return**: A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we infer a return.
+- Customer activity data:
+  - Customer Identifier, a unique identifier to map activities to your customers.
+  - **Primary key:** Unique identifier for an activity. For example, a website visit or a usage record showing the customer tried a sample of your product.
+  - **Timestamp:** Date and time of the event identified by the primary key.
+  - **Event:** Name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
+  - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-- At least [Contributor permissions](permissions.md).
-- Business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
-- Data about transactions, purchases, and their history:
-  - Transaction identifiers to distinguish purchases or transactions.
-  - Customer identifiers to match transactions to your customers.
-  - Transaction event dates that specify the date a transaction occurred.
-  - The following semantic data schema for purchases or transactions:
-    - **Transaction ID**: Unique identifier of a purchase or transaction.
-    - **Transaction Date**: Date of the purchase or transaction.
-    - **Value of the transaction**: Currency or numerical value amount of the transaction.
-    - **Unique product ID** (optional): ID of the product or service purchased if your data is at a line item level.
-    - **Whether this transaction was a return** (optional): A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we infer a return.
+
+---
+
+- Suggested data characteristics:
+  - Sufficient historical data: Transaction data for at least double the selected time window. Preferably, two to three years of transaction history.
+  - Multiple purchases per customer: Ideally at least two transactions per customer.
+  - Number of customers: At least 10 customer profiles, preferably more than 1,000 unique customers. The model will fail with fewer than 10 customers and insufficient historical data.
+  - Data completeness: Less than 20% of missing values in the data field of the entity provided.
+
+> [!NOTE]
+> For a business with high customer purchase frequency (every few weeks) it's recommended to select a shorter prediction window and churn definition. For low purchase frequency (every few months or once a year), choose a longer prediction window and churn definition.
+
+The following data is optional, but recommended for increased model performance.
+
+- **Unique product ID** (optional): ID of the product or service purchased if your data is at a line item level.
+- **Whether this transaction was a return** (optional): A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we infer a return.
+
+  
 - Data about customer activities (optional):
   - Activity identifiers to distinguish activities of the same type.
   - Customer identifiers to map activities to your customers.
@@ -81,16 +88,6 @@ For environments based on business accounts, we can predict transactional churn 
     - **Industry:** Industry type of a customer. For example, a field called "Industry" in a coffee roaster might indicate if the customer was retail.
     - **Classification:** Categorization of a customer for your business. For example, a field called "ValueSegment" in a coffee roaster might be the tier of customer based on the customer size.
 
----
-
-- Suggested data characteristics:
-  - Sufficient historical data: Transaction data for at least double the selected time window. Preferably, two to three years of transaction history.
-  - Multiple purchases per customer: Ideally at least two transactions per customer.
-  - Number of customers: At least 10 customer profiles, preferably more than 1,000 unique customers. The model will fail with fewer than 10 customers and insufficient historical data.
-  - Data completeness: Less than 20% of missing values in the data field of the entity provided.
-
-> [!NOTE]
-> For a business with high customer purchase frequency (every few weeks) it's recommended to select a shorter prediction window and churn definition. For low purchase frequency (every few months or once a year), choose a longer prediction window and churn definition.
 
 ## Create a transaction churn prediction
 
@@ -187,7 +184,7 @@ Most predictions are created at the customer level. In some situations, that may
 
 ### Provide an optional list of benchmark accounts
 
-Add a list of your business customers and accounts that you want to use as benchmarks. The [details for these benchmark accounts](#review-a-prediction-status-and-results) include their churn score and most influential features that impacted their churn prediction.
+Add a list of your business customers and accounts that you want to use as benchmarks. The [details for these benchmark accounts](#view-prediction-results) include their churn score and most influential features that impacted their churn prediction.
 
 1. Select **+ Add customers**.
 
@@ -252,11 +249,10 @@ For business accounts, an **Influential feature analysis** information page cont
   When you predict churn at the account level, all accounts are considered in deriving the average feature values for churn segments. For churn predictions at the secondary level for every account, the derivation of churn segments depends on the secondary level of the item selected in the side pane. For example, if an item has a secondary level of product category = office supplies, then only the items having office supplies as the product category are considered when deriving the average feature values for churn segments. This logic is applied to ensure a fair comparison of the item's feature values with the average values across low, medium, and high churn segments.
 
   In some cases, the average value of low, medium, or high churn segments is empty or not available because there are no items that belong to the corresponding churn segments based on the above definition.
-       
+
   > [!NOTE]
   > The interpretation of values under the average low, medium, and high columns is different for categorical features like country or industry. Because the notion of "average" feature value doesn't apply to categorical features, the values in these columns are the proportion of customers in low, medium, or high churn segments that have the same value of the categorical feature as compared to the item selected in the side panel.
 
-Go to **Data** > **Entities** and view the data tab for the output entity you defined for this model. *ChurnScore* in the output entity is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. The default threshold might not work for your scenario. [Create a new segment](segments.md#create-a-segment) with your preferred threshold. Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on you churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
-
+In addition to these results, the output entity contains scoring data. Go to **Data** > **Entities** and view the data tab for the output entity you defined for this model. *ChurnScore* is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. The default threshold might not work for your scenario. If not, [create a new segment](segments.md#create-a-segment) with your preferred threshold. Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on you churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
