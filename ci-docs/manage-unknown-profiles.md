@@ -1,7 +1,7 @@
 ---
-title: 
-description: 
-ms.date: 07/07/2022
+title: Manage unknown profiles with Customer Insights
+description: Work with unknown customer profiles that are created and managed in Dynamics 365 Customer Insights.
+ms.date: 09/13/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
