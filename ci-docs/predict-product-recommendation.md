@@ -1,7 +1,7 @@
 ---
 title: "Predict product recommendations"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 09/12/2022
+ms.date: 09/14/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -63,22 +63,22 @@ The following data is optional, but recommended for increased model performance.
 
 ### Define product recommendation preferences
 
-1. For the **Preferences** step, set the **Number of products** you want to recommend to a customer. This value depends on how your delivery method fills data. If possible, recommend three products.
+> [!TIP]
+> Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
 
-   > [!TIP]
-   > Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
+1. Set the **Number of products** to recommend to a customer. This value depends on how your delivery method fills data. If possible, recommend three products.
 
 1. Choose if you want to include products customers have recently purchased in the **Repeat purchases expected** field.
 
-1. Set the **Look back window** which specifies the time frame the model considers before recommending the product to the user again. For example, indicate a customer purchases a laptop every two years. The model will look at the purchase history for the last two years, and if it finds an item, the item will be filtered from the recommendations.
+1. Set the **Look back window** to specify the time frame the model considers before recommending the product to the user again. For example, indicate a customer purchases a laptop every two years. The model looks at the purchase history for the last two years, and if it finds an item, the item is filtered from the recommendations.
 
 1. Select **Next**
 
 ### Add purchase history
 
-1. For the **Add purchase history** step, select **Add data**  for **Customer transaction history**.
+1. Select **Add data**  for **Customer transaction history**.
 
-1. Select the semantic activity type **SalesOrderLine** that contains the required transaction or purchase history information. If the activity has not been set up, select **here**.
+1. Select the semantic activity type **SalesOrderLine** that contains the required transaction or purchase history information. If the activity has not been set up, select **here** and create it.
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
 
@@ -94,11 +94,11 @@ The following data is optional, but recommended for increased model performance.
 
 Sometimes, only certain products are beneficial or appropriate for the type of prediction you build. Use product filters to identify a subset of products with specific characteristics to recommend to your customers. The model will use all the products available to learn patterns but only use the products matching the product filter in its output.
 
-1. In the **Add product information** step, add your product catalog entity that contains information for each product. Map the information required and select **Save**.
+1. Add your product catalog entity that contains information for each product. Map the information required and select **Save**.
 
 1. Select **Next**.
 
-1. In the **Product filters** step, choose between the following options.
+1. Select **Product filters**:
 
    - **No filters**: Use all products in the product recommendation prediction.
 
@@ -114,7 +114,7 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
 
 ### Set update schedule
 
-1. For the **Data updates** step, choose a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. Choose a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 
@@ -144,8 +144,8 @@ There are five primary sections of data within the results page.
   - **A** when the "Success @ K" metric is at least 10% more the baseline.
   - **B** when the "Success @ K" metric is 0% to 10% more than the baseline.
   - **C** when the "Success @ K" metric is less than the baseline.
-  - **Baseline**: Takes the top most recommended products by purchase count across all customers, and uses learned rules identified by the model to create a set of recommendations for the customers. The predictions are then compared to the top products, as calculated by the number of customers that had purchased the product. If a customer has at least one product in their recommended products that was also seen in the top purchased products, they're considered a part of the baseline. If there were 10 of these customers that had a recommended product purchased out of 100 total customers, the baseline would be 10%.
-  - **Success @ K**: Using a validation set of time period of transactions, recommendations are created for all customers and compared against the validation set of transactions. For example, in a 12-month period, month 12 might be set aside as a validation set of data. If the model predicts at least one thing you would purchase in month 12 based on what it learned from the previous 11 months, the customer would increase the "Success @ K" metric.
+  - **Baseline**: The top most recommended products by purchase count across all customers + learned rules identified by the model = a set of recommendations for the customers. The predictions are then compared to the top products, as calculated by the number of customers that had purchased the product. If a customer has at least one product in their recommended products that was also seen in the top purchased products, they're considered a part of the baseline. For example, if 10 of these customers had a recommended product purchased out of 100 total customers, the baseline is 10%.
+  - **Success @ K**: Recommendations are created for all customers and compared against the validation set of time period of transactions. For example, in a 12-month period, month 12 is set aside as a validation set of data. If the model predicts at least one thing you would purchase in month 12 based on what it learned from the previous 11 months, the customer would increase the "Success @ K" metric.
 
 - **Most suggested products (with tally):** The top five products that were predicted for your customers.
   

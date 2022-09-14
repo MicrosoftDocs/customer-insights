@@ -1,7 +1,7 @@
 ---
 title: Predict customer lifetime value (CLV)
 description: "Predict revenue potential for active customers in the future."
-ms.date: 09/12/2022
+ms.date: 09/14/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -77,36 +77,21 @@ The following data is optional, but recommended for increased model performance.
 
 ### Define model preferences
 
-1. Enter the following information:
-   - **Prediction time period**: How far into the future you want to predict the CLV. By default, the unit is set as months.
-
-     > [!TIP]
-     > To accurately predict CLV for the set time period, a comparable period of historical data is required. For example, if you want to predict CLV for the next 12 months, have at least 18 – 24 months of historical data.
-   - **Active customers**: Time frame in which a customer must have had at least one transaction to be considered active. The model only predicts CLV for **Active customers**.
-     - **Let model calculate purchase interval (recommended)**: Model analyzes your data and determines a time period based on historical purchases.
-     - **Set interval manually**: Time period for your definition of an active customer.
-   - **High-value customer**: Percentile of high-value customer.
-     - **Model calculation (recommended)**: Model uses 80/20 rule. The percentage of customers that contributed to 80% cumulative revenue for your business in the historical period are considered high-value customers. Typically, less than 30-40% customers contribute to 80% cumulative revenue. However, this number might vary depending on your business and industry.
-   - **Percent of top active customers**: Specific percentile for a high-value customer. For example, enter **25** to define high-value customers as the top 25% of future paying customers.
-
-     If your business defines high value customers in a different way, [let us know as we would love to hear](https://go.microsoft.com/fwlink/?linkid=2074172).
-
-1. Select **Next**.
-
-### Define model preferences
+> [!TIP]
+> Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
 
 1. Set a **Prediction time period** to define how far into the future you want to predict the CLV. By default, the unit is set as months.
 
    > [!TIP]
    > To accurately predict CLV for the set time period, a comparable period of historical data is required. For example, if you want to predict CLV for the next 12 months, have at least 18 – 24 months of historical data.
 
-1. Set the time frame in which a customer must have had at least one transaction to be considered active. The model only predicts CLV for **Active customers**.
-   - **Let model calculate purchase interval (recommended)**: The model analyzes your data and determines a time period based on historical purchases.
-   - **Set interval manually**: Set the time period for your definition of an active customer.
+1. Set the time frame in which a customer must have had at least one transaction to be considered active. The model only predicts CLV for active customers.
+   - **Let model calculate purchase interval (recommended)**: Model analyzes your data and determines a time period based on historical purchases.
+   - **Set interval manually**: Time period for your definition of an active customer.
 
 1. Define the percentile of **High-value customer**.
-    - **Model calculation (recommended)**: The model analyzes your customers’ transaction history The percentage of customers that contributed to 80% cumulative revenue for your business in the historical period are considered high-value customers. Typically, less than 30-40% customers contribute to 80% cumulative revenue. However, this number might vary depending on your business and industry.
-    - **Percent of top active customers**: Set a specific percentile for a high-value customer. For example, enter **20** to define high-value customers as the top 20% of future paying customers.
+    - **Model calculation (recommended)**: Model uses 80/20 rule. The percentage of customers that contributed to 80% cumulative revenue for your business in the historical period are considered high-value customers. Typically, less than 30-40% customers contribute to 80% cumulative revenue. However, this number might vary depending on your business and industry.
+    - **Percent of top active customers**: Specific percentile for a high-value customer. For example, enter **25** to define high-value customers as the top 25% of future paying customers.
 
     If your business defines high value customers in a different way, [let us know as we would love to hear](https://go.microsoft.com/fwlink/?linkid=2074172).
 
@@ -114,33 +99,33 @@ The following data is optional, but recommended for increased model performance.
 
 ### Add required data
 
-1. For the **Required data** step, select **Add data** for **Customer transaction history**.
+1. Select **Add data** for **Customer transaction history**.
 
-1. Select the semantic activity type, **SalesOrder** or **SalesOrderLine**, that contains the transaction history information. If the activity has not been set up, select **here**.
+1. Select the semantic activity type, **SalesOrder** or **SalesOrderLine**, that contains the transaction history. If the activity has not been set up, select **here** and create it.
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+  
+   :::image type="content" source="media/CLV-add-required.PNG" alt-text="Add required data for CLV model":::
 
 1. Select **Next** and review the attributes required for this model.
 
 1. Select **Save**.
 
-1. Select **Next**.
+1. Add more activities or select **Next**.
 
 ### Add optional activity data
 
 Data reflecting key customer interactions (like web, customer service, and event logs) adds context to transaction records. More patterns found in your customer activity data can improve the accuracy of the predictions.
 
-1. For the **Additional data (optional)** step, select **Add data** under **Boost model insights with additional activity data**.
+1. Select **Add data** under **Boost model insights with additional activity data**.
 
-1. Select an activity type and entity that matches the type of customer activity you're adding. If the activity has not been set up, select **here**.
+1. Select an activity type that matches the type of customer activity you're adding. If the activity has not been set up, select **here** and create it.
 
 1. Under **Activities**, if the activity attributes were mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If mapping did not occur, select **Edit** and map your data.
 
 1. Select **Next** and map the attributes required for this model.
 
 1. Select **Save**.
-
-1. Select **Next**.
 
 1. [Add optional customer data](#add-optional-customer-data) or select **Next** and go to [Set update schedule](#set-update-schedule).
 
@@ -165,7 +150,7 @@ With this information, they organize a local event for the launch of the espress
 
 ### Set update schedule
 
-1. For the **Data updates** step, choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. Choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 
@@ -200,7 +185,7 @@ There are three primary sections of data within the results page.
   
   Select [**Learn about this score**](#learn-about-the-score) to open the **Model rating** pane which shows further details about the AI model performance and the baseline model. It will help you better understand the underlying model performance metrics and how the final model performance grade was derived. The baseline model uses a non-AI based approach to calculate customer lifetime value based primarily on historical purchases made by customers.
 
-- **Value of customers by percentile**: Low-value and high-value customers display in a chart. Hover over the bars in the histogram to see the number of customers in each group and the average CLV of that group. Optionally, [create segments of customers](segments.md) based on their CLV predictions.
+- **Value of customers by percentile**: Low-value and high-value customers display in a chart. Hover over the bars in the histogram to see the number of customers in each group and the average CLV of that group. Optionally, [create segments of customers](prediction-based-segment.md) based on their CLV predictions.
 
 - **Most influential factors**: Various factors are considered when creating your CLV prediction based on the input data provided to the AI model. Each of the factors has their importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. These factors also provide more insight about the most influential factors that contributed towards predicting CLV across all your customers.
 
