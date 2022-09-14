@@ -55,18 +55,13 @@ The following data is optional, but recommended for increased model performance.
   - Customer profile information
 
 - Data about customer activities:
-  - Activity identifiers to distinguish activities of the same type
-  - Customer identifiers to map activities to your customers
-  - Activity information containing the name and date of the activity
-  - The semantic data schema for activities:
-    - **Primary key**: A unique identifier for an activity
-    - **Timestamp**: The date and time of the event identified by the primary key
-    - **Event (activity name)**:  The name of event you want to use
-    - **Details (amount or value)**: Details about the customer activity
+  - **Primary key**: A unique identifier for an activity
+  - **Timestamp**: The date and time of the event identified by the primary key
+  - **Event (activity name)**:  The name of event you want to use
+  - **Details (amount or value)**: Details about the customer activity
 
 > [!NOTE]
-> - Only one transaction history entity can be configured. If there are multiple purchase or transaction entities, combine them in Power Query before data ingestion.
-> - Optionally, for additional customer activity data, add as many customer activity entities as you'd like for consideration by the model.
+> Only one transaction history entity can be configured. If there are multiple purchase or transaction entities, combine them in Power Query before data ingestion.
 
 ## Create a Customer Lifetime Value prediction
 
@@ -82,18 +77,36 @@ The following data is optional, but recommended for increased model performance.
 
 ### Define model preferences
 
-1. For the **Preferences** step, set a **Prediction time period** to define how far into the future you want to predict the CLV. By default, the unit is set as months.
+1. Enter the following information:
+   - **Prediction time period**: How far into the future you want to predict the CLV. By default, the unit is set as months.
+
+     > [!TIP]
+     > To accurately predict CLV for the set time period, a comparable period of historical data is required. For example, if you want to predict CLV for the next 12 months, have at least 18 – 24 months of historical data.
+   - **Active customers**: Time frame in which a customer must have had at least one transaction to be considered active. The model only predicts CLV for **Active customers**.
+     - **Let model calculate purchase interval (recommended)**: Model analyzes your data and determines a time period based on historical purchases.
+     - **Set interval manually**: Time period for your definition of an active customer.
+   - **High-value customer**: Percentile of high-value customer.
+     - **Model calculation (recommended)**: Model uses 80/20 rule. The percentage of customers that contributed to 80% cumulative revenue for your business in the historical period are considered high-value customers. Typically, less than 30-40% customers contribute to 80% cumulative revenue. However, this number might vary depending on your business and industry.
+   - **Percent of top active customers**: Specific percentile for a high-value customer. For example, enter **25** to define high-value customers as the top 25% of future paying customers.
+
+     If your business defines high value customers in a different way, [let us know as we would love to hear](https://go.microsoft.com/fwlink/?linkid=2074172).
+
+1. Select **Next**.
+
+### Define model preferences
+
+1. Set a **Prediction time period** to define how far into the future you want to predict the CLV. By default, the unit is set as months.
 
    > [!TIP]
    > To accurately predict CLV for the set time period, a comparable period of historical data is required. For example, if you want to predict CLV for the next 12 months, have at least 18 – 24 months of historical data.
 
-1. Specify what **Active customers** mean for your business. Set the time frame in which a customer must have had at least one transaction to be considered active. The model only predicts CLV for active customers.
+1. Set the time frame in which a customer must have had at least one transaction to be considered active. The model only predicts CLV for **Active customers**.
    - **Let model calculate purchase interval (recommended)**: The model analyzes your data and determines a time period based on historical purchases.
-   - **Set interval manually**: If you have a specific business definition of an active customer, choose this option and set the time period accordingly.
+   - **Set interval manually**: Set the time period for your definition of an active customer.
 
-1. Define the percentile of your active customers you consider to be **High-value customer**.
-    - **Model calculation (recommended)**: The model analyzes your data and determines what a high value customer might be for your business based on your customers’ transaction history. The model uses a heuristic rule (inspired by the 80/20 rule or pareto principle) to find the proportion of high-value customers. The percentage of customers that contributed to 80% cumulative revenue for your business in the historical period are considered high-value customers. Typically, less than 30-40% customers contribute to 80% cumulative revenue. However, this number might vary depending on your business and industry.
-    - **Percent of top active customers**: If you have a specific percentile for a high-value customer, choose this option and set the percentile. For example, use this option to define high-value customers as the top 20% of future paying customers.
+1. Define the percentile of **High-value customer**.
+    - **Model calculation (recommended)**: The model analyzes your customers’ transaction history The percentage of customers that contributed to 80% cumulative revenue for your business in the historical period are considered high-value customers. Typically, less than 30-40% customers contribute to 80% cumulative revenue. However, this number might vary depending on your business and industry.
+    - **Percent of top active customers**: Set a specific percentile for a high-value customer. For example, enter **20** to define high-value customers as the top 20% of future paying customers.
 
     If your business defines high value customers in a different way, [let us know as we would love to hear](https://go.microsoft.com/fwlink/?linkid=2074172).
 
