@@ -1,7 +1,7 @@
 ---
 title: Manage unknown profiles with Customer Insights
 description: Work with unknown customer profiles that are created and managed in Dynamics 365 Customer Insights.
-ms.date: 09/13/2022
+ms.date: 09/14/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -43,8 +43,12 @@ For example, you can create segments of unknown users that browsed the same prod
 
 ## Activation
 
-With your data in Customer Insights and your insights ready to get to work, you can use Customer Insights in two different ways for personalization:
+With your data in Customer Insights and your insights ready to get to work, you can use Customer Insights for personalization:
 
 1. Use the [OData API](apis.md) to retrieve a segment membership or customer profile For more examples, see [OData query examples for Customer Insights APIs](odata-examples.md).
 
 1. [Export](export-destinations.md) your data to your activation systems.
+
+For example, an unknown user visits a website multiple times and visits product pages for various models of leather shoes. With that data available in Customer Insights, you can include the unknown user in the segment of people that are interested in leather shoes. Use this segment to inform your website build personalization for returning visitors. On the next visit, the site recognizes the unknown user and could offer them a 10% coupon on leather shoes.
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
