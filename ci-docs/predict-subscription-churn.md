@@ -1,7 +1,7 @@
 ---
 title: "Predict subscription churn (contains video)"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
-ms.date: 09/12/2022
+ms.date: 09/14/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -61,20 +61,30 @@ The following data is optional, but recommended for increased model performance.
 
 ### Define customer churn
 
-1. For the **Preferences** step, enter the number of **Days since subscription ended** that your business considers a customer to be in a churned state. This period is typically liked to business activities like offers or other marketing efforts trying to prevent losing the customer.
+> [!TIP]
+> Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
 
-   > [!TIP]
-   > Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
+1. Enter the number of **Days since subscription ended** that your business considers a customer to be in a churned state. This period is typically linked to business activities like offers or other marketing efforts trying to prevent losing the customer.
 
-1. Enter the number of **Days to look into future to predict churn**. For example, to predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for longer or shorter periods of time can make it more difficult to address the factors in your churn risk profile, depending on your specific business requirements.
+1. Enter the number of **Days to look into future to predict churn**. For example, predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for longer or shorter periods of time can make it more difficult to address the factors in your churn risk profile, depending on your specific business requirements.
 
 1. Select **Next**.
 
 ### Add required data
 
-1. For the **Required data** step, select **Add data** for **Subscription history**.
+1. Select **Add data** for **Subscription history**.
 
-1. Select the semantic activity type **Subscription** that contains the required subscription history information. If the activity has not been set up, select **here**.
+1. Select the semantic activity type **Subscription** that contains the required subscription history information. If the activity has not been set up, select **here** and create it.
+
+1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+
+1. Select **Next** and review the attributes required for this model.
+
+1. Select **Save**.
+
+1. Select **Add data** for **Customer activities**.
+
+1. Select the semantic activity type that provides the customer activity information. If the activity has not been set up, select **here** and create it.
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
 
@@ -84,17 +94,7 @@ The following data is optional, but recommended for increased model performance.
 
 1. Select **Next**.
 
-1. Select **Add data** for **Customer activities**.
-
-1. Select the semantic activity type that provides the customer activity information. If the activity has not been set up, select **here**.
-
-1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
-
-1. Select **Next** and review the attributes required for this model.
-
-1. Select **Save**.
-
-1. Select **Next**
+1. Add more customer activity data and then select **Next**.
 
 ### Set update schedule
 
@@ -129,11 +129,11 @@ There are three primary sections of data within the results page:
   - **B** when the model accurately predicted at least 50% of the total predictions, and when the percentage of accurate predictions for customers who churned is up to 10% greater than the historical average churn rate.
   - **C** when the model accurately predicted less than 50% of the total predictions, or when the percentage of accurate predictions for customers who churned is less than the historical average churn rate.
   
-- **Likelihood to churn (number of customers)**: Groups of customers based on their predicted risk of churn. Optionally, [create segments of customers](segments.md) with high churn risk. Such segments help to understand where your cutoff should be for segment membership.  
+- **Likelihood to churn (number of customers)**: Groups of customers based on their predicted risk of churn. Optionally, [create segments of customers](.//prediction-based-segment.md) with high churn risk. Such segments help to understand where your cutoff should be for segment membership.  
 
   :::image type="content" source="media/subscription-churn-resultdistribution.PNG" alt-text="Graph showing distribution of churn results, broken into ranges from 0-100%":::
 
-- **Most influential factors:** There are many factors that are taken into account when creating your prediction. Each of the factors has their importance calculated for the aggregated predictions a model creates. Use these factors to help validate your prediction results. Or use this information later to [create segments](segments.md) that could help influence churn risk for customers.
+- **Most influential factors:** There are many factors that are taken into account when creating your prediction. Each of the factors has its importance calculated for the aggregated predictions a model creates. Use these factors to help validate your prediction results. Or use this information later to [create segments](.//prediction-based-segment.md) that could help influence churn risk for customers.
 
   :::image type="content" source="media/subscription-churn-influentialfactors.PNG" alt-text="List showing influential factors and their importance in predicting the churn result.":::
 

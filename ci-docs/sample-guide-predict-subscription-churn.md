@@ -151,7 +151,7 @@ With the unified customer profiles in place, we can now run the subscription chu
 
 ## Task 4 - Review model results and explanations
 
-Let the model complete the training and scoring of the data. You can now review the subscription churn model explanations. For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).
+Let the model complete the training and scoring of the data. You can now review the subscription churn model explanations. For more information, see [View prediction results](predict-subscription-churn.md#view-prediction-results).
 
 ## Task 5 - Create a segment of high churn-risk customers
 

@@ -132,7 +132,7 @@ With the unified customer profiles in place, we can now run the product recommen
 
 ## Task 4 - Review model results and explanations
 
-Let the model complete the training and scoring of the data. You can now review the product recommendation model explanations. For more information, see [Review a prediction status and results](predict-transactional-churn.md#review-a-prediction-status-and-results).
+Let the model complete the training and scoring of the data. You can now review the product recommendation model explanations. For more information, see [View prediction results](predict-transactional-churn.md#view-prediction-results).
 
 ## Task 5 - Create a segment of high purchased products
 

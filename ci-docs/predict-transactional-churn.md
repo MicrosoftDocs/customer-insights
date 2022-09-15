@@ -186,9 +186,9 @@ The **Review and run** step shows a summary of the configuration and provides a 
 
 ## View prediction results
 
-1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
+1. Go to **Intelligence** > **Predictions**.
 
-1. Select the prediction you want to review.
+1. In the **My predictions** tab, select the prediction you want to view.
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 
@@ -227,9 +227,9 @@ An **Influential feature analysis** information page contains four sections of d
   > The interpretation of values under the average low, medium, and high columns is different for categorical features like country or industry. Because the notion of "average" feature value doesn't apply to categorical features, the values in these columns are the proportion of customers in low, medium, or high churn segments that have the same value of the categorical feature as compared to the item selected in the side panel.
 
  > [!NOTE]
- > In the output entity for this model, *ChurnScore* shows the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. The default threshold might not work for your scenario. If not, [create a new segment](segments.md#create-a-segment) with your preferred threshold. Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on you churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
+ > In the output entity for this model, *ChurnScore* shows the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md#create-a-segment) with your preferred threshold. Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on you churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
 >
-> To view the score data, go to **Data** > **Entities** and view the data tab for the output entity you defined for this model.
+> To view the churn score, go to **Data** > **Entities** and view the data tab for the output entity you defined for this model.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
