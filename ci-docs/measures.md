@@ -1,7 +1,7 @@
 ---
 title: "Measures overview"
 description: "Learn how measures help analyze and reflect the performance of your business."
-ms.date: 09/08/2022
+ms.date: 09/16/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -49,7 +49,7 @@ Select next to a measure to view available actions. Select the measure name to p
 - **Edit** the measure to change its properties.
 - **Refresh** the measure to include the latest data.
 - **Rename** the measure.
-- **Activate** or **Deactivate** the measure. Inactive measures won't get refreshed during a [scheduled refresh](#schedule-a-measure) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
+- **Activate** or **Deactivate** the measure. Inactive measures won't get refreshed during a [scheduled refresh](#schedule-measures) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the measure.
 - **Delete** the measure.
 - [**Schedule**](#schedule-a-measure) the measure.
@@ -57,21 +57,25 @@ Select next to a measure to view available actions. Select the measure name to p
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by measure name.
 
-## Schedule a measure
+## Schedule measures
 
-Measures can be refreshed on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. The default is scheduled system refresh. For measures that don't change often, you might want to schedule them on a slower cadence such as monthly to avoid unnecessary processing time.
-
-To refresh manually, select one or more measures and select **Refresh**.
+Measures can be refreshed on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. The default is every scheduled system refresh. For example, you might want to schedule measures that don't change often or are for last season on a slower cadence such as monthly to avoid unnecessary processing time.
 
 Define refresh schedules for individual measures or several measures at once. The currently defined schedule is listed in the **Schedule** column of the measure list.
 
 1. Go to **Measures**.
 
-1. Select the measure you want to schedule.
+1. Select one or more measures you want to schedule.
 
 1. Select **Schedule**.
 
-1. In the **Schedule** pane, select the **Recurrence**. For weekly, select the day of the week. For monthly, select the day of the month. On the scheduled day, the refresh occurs during the time of the scheduled system refresh.
+1. In the **Schedule** pane, set the **Schedule run** to **On** to run the segment automatically. Set it to **Off** to refresh it manually.
+
+1. For automatically refreshed measures, select the **Recurrence** value and the details for it. On the scheduled day, the refresh occurs during the time of the scheduled system refresh.
+
+1. When defining the schedule for several measures, make a selection under **Keep or override schedules**:
+   - **Keep individual schedules**: Keep the previously defined schedule for the selected measures and only disable or enable them.
+   - **Define new schedule for all selected Measures**: Override the existing measures of the selected segments.
 
 1. Select **Save**.
 

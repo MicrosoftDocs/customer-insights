@@ -66,7 +66,7 @@ Select a segment to view available actions.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
 - [**Manage exports**](#export-segments) to see export-related segments and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
-- [**Schedule**](#schedule-a-segment) the segment.
+- [**Schedule**](#schedule-segments) the segment.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
@@ -100,7 +100,7 @@ Export segments to other apps to further use the data. Export a segment from the
 
 1. Select **Back** to return to the main page for segments.
 
-## Schedule a segment
+## Schedule segments
 
 Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. The default is every scheduled system refresh. For example, you might want to schedule segments that don't change often or are for last season on a slower cadence such as monthly to avoid unnecessary processing time.
 
