@@ -52,7 +52,7 @@ Select next to a measure to view available actions. Select the measure name to p
 - **Activate** or **Deactivate** the measure. Inactive measures won't get refreshed during a [scheduled refresh](#schedule-measures) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the measure.
 - **Delete** the measure.
-- [**Schedule**](#schedule-a-measure) the measure.
+- [**Schedule**](#schedule-measures) the measure.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by measure name.

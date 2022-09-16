@@ -59,7 +59,7 @@ Select a segment to view available actions.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
 - **Refresh** the segment to include the latest data.
-- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](#schedule-a-segment) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
+- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](#schedule-segments) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
 - **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed during scheduled refreshes.
 - [**Find similar customers**](find-similar-customer-segments.md) from the segment.
 - **Rename** the segment.
