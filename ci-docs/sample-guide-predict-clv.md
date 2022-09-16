@@ -13,7 +13,7 @@ manager: shellyha
 
 # Customer lifetime value (CLV) prediction sample guide
 
-This guide will walk you through an end to end example of Customer lifetime value (CLV) prediction in Customer Insights using sample data. We recommend that you try this prediction [in a new environment](manage-environments.md).
+This guide walks you through an end-to-end example of Customer lifetime value (CLV) prediction in Customer Insights using sample data. We recommend that you try this prediction [in a new environment](manage-environments.md).
 
 ## Scenario
 
@@ -25,19 +25,19 @@ Contoso is a company that produces high-quality coffee and coffee machines. They
 
 ## Task 1 - Ingest data
 
-Review the articles [about data ingestion](data-sources.md) and [connecting to a Power Query data source](connect-power-query.md). The following information assumes you familiarized with ingesting data in general.
+Review the articles [about data ingestion](data-sources.md) and [connecting to a Power Query data source](connect-power-query.md). The following information assumes you are familiar with ingesting data in general.
 
 ### Ingest customer data from eCommerce platform
 
 1. Create a Power query data source named **eCommerce** and select the **Text/CSV** connector.
 
-1. Enter the URL for eCommerce contacts [https://aka.ms/ciadclasscontacts](https://aka.ms/ciadclasscontacts).
+1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasscontacts.
 
 1. While editing the data, select **Transform** and then **Use first row as headers**.
 
 1. Update the datatype for the columns listed below:
-   - **DateOfBirth** : Date
-   - **CreatedOn** : Date/Time/Zone
+   - **DateOfBirth**: Date
+   - **CreatedOn**: Date/Time/Zone
 
    :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Transform date of birth to date.":::
 
@@ -87,7 +87,6 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
 1. While editing the data, select **Transform** and then **Use first row as headers**.
 
 1. Update the datatype for the columns listed below:
-
    - **ReviewRating**: Decimal number
    - **ReviewDate**: Date
 
@@ -97,13 +96,13 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
 
 ## Task 2 - Data unification
 
-Review the article [about data unification](data-unification.md). The following information assumes you familiarized with data unification in general.
+Review the article [about data unification](data-unification.md). The following information assumes you are familiar with data unification in general.
 
 [!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## Task 3 - Create transaction history activity
 
-Review the article [about customer activities](activities.md). The following information assumes you familiarized with creating activities in general.
+Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
 1. Create an activity called **eCommercePurchases** with the  *eCommercePurchases:eCommerce* entity and its primary key, **PurchaseId**.
 
@@ -122,22 +121,28 @@ Review the article [about customer activities](activities.md). The following inf
    - Event (activity name): Website.Reviews.ActivityTypeDisplay
    - Details (amount or value): Website.Reviews.ReviewRating
 
+1. Run the activity.
+
 ## Task 4 - Configure customer lifetime value prediction
 
 With the unified customer profiles in place and activity created, run the customer lifetime value (CLV) prediction. For detailed steps, see [Customer Lifetime Value prediction](predict-customer-lifetime-value.md).
 
-1. Go to  **Intelligence**  > **Predictions**  and select the **Customer lifetime value model**.
+1. Go to **Intelligence** > **Predictions**.
 
-1. Review the information in the side pane and select **Get started**.
+1. On the **Create** tab, select **Use model** on the **Product recommendations (preview)** tile.
+
+1. Select **Get started**.
 
 1. Name the model **OOB eCommerce CLV Prediction** and the output entity  **OOBeCommerceCLVPrediction**.
 
 1. Define model preferences:
    - **Prediction time period**: **12 months or 1 year** to define how far into the future to predict CLV.
    - **Active customers**: **let the model calculate purchase interval** which is the time frame in which a customer must have had at least one transaction to be considered active.
-   - **High value customers**: manually define high value customers as **top 30% of active customers** and select **Next**.
+   - **High value customers**: manually define high value customers as **top 30% of active customers**.
 
     :::image type="content" source="media/clv-model-preferences.png" alt-text="Preferences step in the guided experience for the CLV model.":::
+
+1. Select **Next**.
 
 1. In the **Required Data** step, select **Add data** to provide the transaction history data.
 
@@ -145,9 +150,9 @@ With the unified customer profiles in place and activity created, run the custom
 
 1. The **Additional data (optional)** step allows you to add more customer activity data to get more insights for customer interactions. For this example, select **Add data** and add the web review activity.
 
-1. Select **Next** to set the model schedule.
+1. Select **Next**.
 
-   The model needs to train regularly to learn new patterns when there's new data ingested. For this example, choose **Monthly**.
+1. In the **Data updates** step, select **Monthly** for the model schedule.
 
 1. After reviewing all the details, select  **Save and Run**.
 
@@ -166,9 +171,9 @@ Running the model creates a new entity, which is listed on **Data** > **Entities
    ![Creating a segment with the model output.](media/segment-intelligence.png)
 
 1. Select the  **OOBeCommerceCLVPrediction** entity and define the segment:
-  - Field: Score
-  - Operator: greater than
-  - Value: 1500
+   - Field: Score
+   - Operator: greater than
+   - Value: 1500
 
 1. Select **Review** and **Save** the segment.
 
