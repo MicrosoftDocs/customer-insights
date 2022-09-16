@@ -1,7 +1,7 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 09/08/2022
+ms.date: 09/16/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -102,23 +102,27 @@ Export segments to other apps to further use the data. Export a segment from the
 
 ## Schedule a segment
 
-Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. The default is scheduled system refresh. For segments that don't change often or are for last season, you might want to schedule them on a slower cadence such as monthly to avoid unnecessary processing time.
-
-To refresh manually, select one or more segments and select **Refresh**.
+Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. The default is every scheduled system refresh. For example, you might want to schedule segments that don't change often or are for last season on a slower cadence such as monthly to avoid unnecessary processing time.
 
 For scheduled refreshes, the following rules apply:
-- All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set schedule. Once the refresh is complete, the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
-- Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segment was run or refreshed manually.
+- All segments with the type **Dynamic** or **Expansion** are automatically refreshed at the set schedule. Once the refresh is complete, the **Status** indicates if there were any issues in refreshing the segment. **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
+- Segments with the type **Static** *won't* be refreshed automatically. **Last refreshed** shows a timestamp of the last time the static segment was run or refreshed manually.
 
 Define refresh schedules for individual segments or several segments at once. The currently defined schedule is listed in the **Schedule** column of the segment list.
 
 1. Go to **Segments**.
 
-1. Select the segment you want to schedule.
+1. Select one or more segments you want to schedule.
 
 1. Select **Schedule**.
 
-1. In the **Schedule** pane, select the **Recurrence**. For weekly, select the day of the week. For monthly, select the day of the month. On the scheduled day, the refresh occurs during the time of the scheduled system refresh.
+1. In the **Schedule** pane, set the **Schedule run** to **On** to run the segment automatically. Set it to **Off** to refresh it manually.
+
+1. For automatically refreshed segments, select the **Recurrence** value and the details for it. On the scheduled day, the refresh occurs during the time of the scheduled system refresh.
+
+1. When defining the schedule for several segments, make a selection under **Keep or override schedules**:
+   - **Keep individual schedules**: Keep the previously defined schedule for the selected segments and only disable or enable them.
+   - **Define new schedule for all selected Segmentations**: Override the existing schedules of the selected segments.
 
 1. Select **Save**.
 
