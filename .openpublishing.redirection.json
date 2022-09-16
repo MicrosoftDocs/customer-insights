@@ -1545,6 +1545,11 @@
       "source_path": "ci-docs/consent-management/overview.md",
       "redirect_url": "/dynamics365/customer-insights/consent-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/predictions.md",
+      "redirect_url": "/dynamics365/customer-insights/predictions-overview",
+      "redirect_document_id": false
     }
   ]
 }
