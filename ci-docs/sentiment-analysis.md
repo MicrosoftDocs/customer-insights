@@ -17,7 +17,7 @@ Sentiment analysis enables you to synthesize customer sentiment and identify bus
 
 ## Overview
 
-The sentiment analysis feature generates two derived insights per customer ID. A sentiment score (of -5 to 5) and list of applicable business aspects (areas of business) together help you better understand the customer feedback.
+The sentiment analysis feature generates two derived insights per customer ID. A sentiment score (of -5 to 5) and list of applicable business aspects (areas of business) that together help you better understand the customer feedback.
 
 This analysis helps you:
 - Get an overview of customer sentiments towards a brand or organization
@@ -97,7 +97,7 @@ Customer Insights can process up to 10 million feedback records for a single mod
 
 ## View analysis results
 
-1. Go to **Intelligence** > **Predictions
+1. Go to **Intelligence** > **Predictions**.
 
 1. In the the **My predictions** tab, select the prediction you want to view.
 
@@ -110,7 +110,7 @@ There are four primary sections of data within the results page.
 - **Average sentiment score**: Sentiment scores helps you understand the overall sentiment across all customers.
   - **Negative** (-5 > 2)
   - **Neutral** (-1 > 1)
-  - **Positive** (2 > 5) 
+  - **Positive** (2 > 5)
   
   :::image type="content" source="media/overall-customer-sentiment.png" alt-text="Visual representation of the overall customer sentiment.":::
 
@@ -145,10 +145,10 @@ There are three sections of additional information that explain how the sentimen
 
 - **Feedback samples**: Actual feedback records, one with a negative sentiment and one with a positive sentiment. Words in the feedback records are highlighted according to their contribution to the assigned sentiment score. Words that contribute to a positive sentiment score are highlighted in green. Words contributing to a negative score are highlighted in red.
    Select **See more** to load more feedback samples.
-   
+  
    :::image type="content" source="media/sentiment-feedback-samples.png" alt-text="Examples of sentiment analysis on customer feedback.":::
- 
-**Show offensive words**: Lets you include offensive words in the list from original customer feedback data. By default, it's turned off.  Offensive word masking is powered by an AI model and may not detect all offensive words. If you detect an offensive word that wasn't filtered as expected, let us know. 
+
+**Show offensive words**: Lets you include offensive words in the list from original customer feedback data. By default, it's turned off.  Offensive word masking is powered by an AI model and may not detect all offensive words. If you detect an offensive word that wasn't filtered as expected, let us know.
 
 ## Act on analysis results
 

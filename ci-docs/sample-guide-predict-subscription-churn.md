@@ -1,7 +1,7 @@
 ---
 title: Subscription churn prediction sample guide
 description: Use this sample guide to try out the out of box subscription churn prediction model.
-ms.date: 09/16/2022
+ms.date: 09/19/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -28,7 +28,7 @@ Contoso is a company that produces high-quality coffee and coffee machines. They
 
 ## Task 1 - Ingest data
 
-Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically. The following information assumes you are familiar with ingesting data in general.
+Review the articles [about data ingestion](data-sources.md) and [connecting to a Power Query data source](connect-power-query.md). The following information assumes you are familiar with ingesting data in general.
 
 ### Ingest customer data from eCommerce platform
 
@@ -44,7 +44,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
    :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Transform date of birth to date.":::
 
-1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
+1. In the **Name** field on the right-hand pane, rename your data source to **eCommerceContacts**
 
 1. Save the data source.
 
@@ -52,7 +52,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. Create a data source named **LoyaltyScheme** and select the **Text/CSV** connector.
 
-1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.
+1. Enter the URL for loyalty customers https://aka.ms/ciadclasscustomerloyalty.
 
 1. While editing the data, select **Transform** and then **Use first row as headers**.
 
@@ -61,17 +61,17 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **RewardsPoints**: Whole Number
    - **CreatedOn**: Date/Time
 
-1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
+1. In the **Name** field on the right-hand pane, rename your data source to **loyCustomers**.
 
 1. Save the data source.
 
 ### Ingest subscription information
 
-1. Create a data source named **SubscriptionHistory**, choose the import option, and select the **Text/CSV** connector.
+1. Create a data source named **SubscriptionHistory** and select the **Text/CSV** connector.
 
-1. Enter the URL for eCommerce contacts https://aka.ms/ciadchurnsubscriptionhistory.
+1. Enter the URL for subscriptions https://aka.ms/ciadchurnsubscriptionhistory.
 
-1. While editing the data, select **Transform** and then **Use First Row as Headers**.
+1. While editing the data, select **Transform** and then **Use first row as headers**.
 
 1. Update the datatype for the columns listed below:
    - **SubscriptioID**: Whole Number
@@ -83,7 +83,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **Is_auto_renew**: True/False
    - **RecurringFrequencyInMonths**: Whole Number
 
-1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **SubscriptionHistory**.
+1. In the **Name** field on the right-hand pane, rename your data source to **SubscriptionHistory**.
 
 1. Save the data source.
 
@@ -91,7 +91,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. Create a data source named **Website** and select the **Text/CSV** connector.
 
-1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasswebsite.
+1. Enter the URL for website reviews https://aka.ms/ciadclasswebsite.
 
 1. While editing the data, select **Transform** and then **Use first row as headers**.
 
@@ -99,7 +99,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **ReviewRating**: Whole Number
    - **ReviewDate**: Date
 
-1. In the 'Name' field on the right-hand pane, rename your data source from **Query** to **webReviews**.
+1. In the **Name** field on the right-hand pane, rename your data source to **webReviews**.
 
 ## Task 2 - Data unification
 
@@ -146,7 +146,7 @@ With the unified customer profiles in place and activity created, run the subscr
    - **Days since subscription ended**: **60** days to indicate that a customer is considered churned if they don't renew the subscription in this period after their subscription ended.
    - **Days to look into future to predict churn**: **93** days which is the duration the model predicts which customers might churn. The further in the future you look, the less precise the results.
 
-   :::image type="content" source="media/model-subs-levers.PNG" alt-text="Select the model levers Prediction Window and Churn Definition.":::
+   :::image type="content" source="media/model-subs-levers.PNG" alt-text="Select the model preferences and churn definition.":::
 
 1. Select **Next**.
 
@@ -172,23 +172,18 @@ Let the model complete the training and scoring of the data. Review the subscrip
 
 Running the model creates a new entity, which is listed on **Data** > **Entities**. You can create a new segment based on the entity created by the model.
 
-1. Go to **Segments**.
+1. On the results page, select **Create segment**.
 
-1. Select  **New** and choose **Create from** > **Intelligence**.
+1. Create a rule using the **OOBSubscriptionChurnPrediction** entity and define the segment:
+   - **Field**: ChurnScore
+   - **Operator**: greater than
+   - **Value**: 0.6
 
-   :::image type="content" source="media/segment-intelligence.PNG" alt-text="Creating a segment with the model output.":::
+1. Select **Save** and **Run** the segment.
 
-1. Select the **OOBSubscriptionChurnPrediction** entity and define the segment:
-   - Field: ChurnScore
-   - Operator: greater than
-   - Value: 0.6
+You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business. For more information, see [Create and manage segments](segments.md).
 
-   :::image type="content" source="media/segment-setup-subs.PNG" alt-text="Set up subscription churn segment.":::
-
-1. Select **Review** and **Save** the segment.
-
-You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.
-
-For more information, see [Create and manage segments](segments.md).
+> [!TIP]
+> You can also create a segment for a prediction model from the **Segments** page by selecting **New** and choosing **Create from** > **Intelligence**. For more information, see [Create a new segment with quick segments](segment-quick.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Transactional churn prediction sample guide
 description: Use this sample guide to try out the out of box transactional churn prediction model.
-ms.date: 05/11/2022
+ms.date: 09/19/2022
 ms.reviewer: mhart
 
 
@@ -14,28 +14,27 @@ manager: shellyha
 
 # Transactional churn prediction sample guide
 
-This guide will walk you through an end to end example of Transactional Churn prediction in Customer Insights using the data provided below. All data used in this guide is not real customer data and is part of the Contoso dataset found in the *Demo* environment within your Customer Insights Subscription.
+This guide will walk you through an end-to-end example of transactional churn prediction using sample data. We recommend that you try this prediction [in a new environment](manage-environments.md).
 
 ## Scenario
 
-Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website. Their goal is to know which customers who typically purchase their products on a regular basis, will stop being active customers in the next 60 days. Knowing which of their customers is **likely to churn**, can help them save marketing efforts by focusing on keeping them.
+Contoso is a company that produces high-quality coffee and coffee machines. They sell the products through their Contoso Coffee website. Their goal is to know which customers who typically purchase their products on a regular basis, will stop being active customers in the next 60 days. Knowing which of their customers is **likely to churn**, can help them save marketing efforts by focusing on keeping them.
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md) in Customer Insights.
-- We recommend that you implement the following steps [in a new environment](manage-environments.md).
+- At least [Contributor permissions](permissions.md).
 
 ## Task 1 - Ingest data
 
-Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically. The following information assumes you familiarized with ingesting data in general. 
+Review the articles [about data ingestion](data-sources.md) and [connecting to a Power Query data source](connect-power-query.md). The following information assumes you are familiar with ingesting data in general.
 
 ### Ingest customer data from eCommerce platform
 
-1. Create a data source named **eCommerce**, choose the import option, and select the **Text/CSV** connector.
+1. Create a data source named **eCommerce** and select the **Text/CSV** connector.
 
 1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasscontacts.
 
-1. While editing the data, select **Transform** and then **Use First Row as Headers**.
+1. While editing the data, select **Transform** and then **Use first row as headers**.
 
 1. Update the datatype for the columns listed below:
 
@@ -44,7 +43,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
    :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Transform DoB to Date.":::
 
-1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
+1. In the **Name** field on the right-hand pane, rename your data source to **eCommerceContacts**
 
 1. Save the data source.
 
@@ -52,26 +51,26 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. Add another data set to the same **eCommerce** data source. Choose the **Text/CSV** connector again.
 
-1. Enter the URL for **Online Purchases** data https://aka.ms/ciadclassonline.
+1. Enter the URL for online purchases data https://aka.ms/ciadclassonline.
 
-1. While editing the data, select **Transform** and then **Use First Row as Headers**.
+1. While editing the data, select **Transform** and then **Use first row as headers**.
 
 1. Update the datatype for the columns listed below:
 
    - **PurchasedOn**: Date/Time
    - **TotalPrice**: Currency
-   
-1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommercePurchases**.
+
+1. In the **Name** field on the right-hand pane, rename your data source to **eCommercePurchases**.
 
 1. Save the data source.
 
 ### Ingest customer data from loyalty schema
 
-1. Create a data source named **LoyaltyScheme**, choose the import option, and select the **Text/CSV** connector.
+1. Create a data source named **LoyaltyScheme** and select the **Text/CSV** connector.
 
 1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.
 
-1. While editing the data, select **Transform** and then **Use First Row as Headers**.
+1. While editing the data, select **Transform** and then **Use first row as headers**.
 
 1. Update the datatype for the columns listed below:
 
@@ -79,68 +78,86 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **RewardsPoints**: Whole Number
    - **CreatedOn**: Date/Time
 
-1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
+1. In the **Name** field on the right-hand pane, rename your data source to **loyCustomers**.
 
 1. Save the data source.
 
 ## Task 2 - Data unification
 
+Review the article [about data unification](data-unification.md). The following information assumes you are familiar with data unification in general.
+
 [!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
-## Task 3 - Configure transaction churn prediction
+## Task 3 - Create transaction history activity
 
-With the unified customer profiles in place, we can now run the transaction churn prediction. For detailed steps, see the [Transaction churn prediction](predict-transactional-churn.md) article. 
+Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
-1. Go to **Intelligence** > **Discover** and select to use the **Customer churn model**.
+1. Create an activity called **eCommercePurchases** with the  *eCommercePurchases:eCommerce* entity and its primary key, **PurchaseId**.
 
-1. Select the **Transactional** option and select **Get started**.
+1. Create a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two entities.
+
+1. Select **TotalPrice** for the **EventActivity** and **PurchasedOn** for the **TimeStamp**.
+
+1. Select **SalesOrderLine** for the **Activity Type** and semantically map the activity data.
+
+1. Run the activity.
+
+## Task 4 - Configure transaction churn prediction
+
+With the unified customer profiles in place and activity, run the transaction churn prediction.
+
+1. Go to **Intelligence** > **Predictions**.
+
+1. On the **Create** tab, select **Use model** on the **Customer churn model**.
+
+1. Select **Transactional** for the type of churn and then **Get started**.
 
 1. Name the model **OOB eCommerce Transaction Churn Prediction** and the output entity **OOBeCommerceChurnPrediction**.
 
-1. Define two conditions for the churn model:
+1. Select **Next**.
 
-   * **Prediction window**: **at least 60** days. This setting defines how far into the future do we want to predict customer churn.
+1. Define model preferences:
 
-   * **Churn definition**: **at least 60** days. The duration without purchase after which a customer is considered churned.
+   - **Prediction window**: **60** days to define how far into the future we want to predict customer churn.
 
-     :::image type="content" source="media/model-levers.PNG" alt-text="Select the model levers Prediction Window and Churn Definition.":::
+   - **Churn definition**: **60** days to indicate the duration without purchase after which a customer is considered churned.
+
+     :::image type="content" source="media/model-levers.PNG" alt-text="Select the model preferences Prediction Window and Churn Definition.":::
+
+1. Select **Next**.
 
 1. Select **Purchase History (required)** and select **Add data** for purchase history.
 
-1. Add the **eCommercePurchases : eCommerce** entity and map the fields from eCommerce to the corresponding fields required by the model.
-
-1. Join the **eCommercePurchases : eCommerce** entity with **eCommerceContacts : eCommerce**.
+1. Select **SalesOrderLine** and the eCommercePurchases entity and select **Next**. The required data is automatically filled in from the activity. Select **Save** and then **Next**.
 
    :::image type="content" source="media/model-purchase-join.PNG" alt-text="Join eCommerce entities.":::
 
-1. Select **Next** to set the model schedule.
+1. Skip the **Additional data (optional)** step.
 
-   The model needs to train regularly to learn new patterns when there is new data ingested. For this example, select **Monthly**.
+1. In the **Data updates** step, select **Monthly** for the model schedule.
 
 1. After reviewing all the details, select **Save and Run**.
 
-## Task 4 - Review model results and explanations
+## Task 5 - Review model results and explanations
 
-Let the model complete the training and scoring of the data. You can now review the churn model explanations. For more information, see [Review a prediction status and results](predict-transactional-churn.md#view-prediction-results).
+Let the model complete the training and scoring of the data. Review the churn model explanations. For more information, see [View prediction results](predict-transactional-churn.md#view-prediction-results).
 
-## Task 5 - Create a segment of high churn-risk customers
+## Task 6 - Create a segment of high churn-risk customers
 
-Running the production model creates a new entity that you can see in **Data** > **Entities**.
+Running the production model creates a new entity, which is listed on **Data** > **Entities**. You can create a new segment based on the entity created by the model.
 
-You can create a new segment based on the entity created by the model.
+1. On the results page, select **Create segment**.
 
-1.  Go to **Segments**. Select **New** and choose **Create from** > **Intelligence**. 
+1. Create a rule using the **OOBeCommerceChurnPrediction** entity and define the segment:
+   - **Field**: ChurnScore
+   - **Operator**: greater than
+   - **Value**: 0.6
 
-   :::image type="content" source="media/segment-intelligence.PNG" alt-text="Creating a segment with the model output.":::
+1. Select **Save** and **Run** the segment.
 
-1. Select the **OOBeCommerceChurnPrediction** endpoint and define the segment: 
-   - Field: ChurnScore
-   - Operator: greater than
-   - Value: 0.6
+You now have a segment that is dynamically updated which identifies high churn-risk customers. For more information, see [Create and manage segments](segments.md).
 
-You now have a segment that is dynamically updated which identifies high churn-risk customers.
-
-For more information, see [Create and manage segments](segments.md).
-
+> [!TIP]
+> You can also create a segment for a prediction model from the **Segments** page by selecting **New** and choosing **Create from** > **Intelligence**. For more information, see [Create a new segment with quick segments](segment-quick.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

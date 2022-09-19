@@ -1,7 +1,7 @@
 ---
 title: "Custom machine learning models | Microsoft Docs"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
-ms.date: 09/15/2022
+ms.date: 09/19/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -117,7 +117,7 @@ Select a workflow to view available actions.
 
 1. Confirm your deletion.
 
-Your workflow will be deleted. The [entity](entities.md) that was created when you created the workflow persists, and can be viewed from the **Entities** page.
+Your workflow will be deleted. The [entity](entities.md) that was created when you created the workflow persists, and can be viewed from the **Data** > **Entities** page.
 
 ## View the results
 

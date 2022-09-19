@@ -187,7 +187,7 @@ There are three primary sections of data within the results page.
 
 - **Value of customers by percentile**: Low-value and high-value customers display in a chart. Hover over the bars in the histogram to see the number of customers in each group and the average CLV of that group. Optionally, [create segments of customers](prediction-based-segment.md) based on their CLV predictions.
 
-- **Most influential factors**: Various factors are considered when creating your CLV prediction based on the input data provided to the AI model. Each of the factors has their importance calculated for the aggregated predictions a model creates. You can use these factors to help validate your prediction results. These factors also provide more insight about the most influential factors that contributed towards predicting CLV across all your customers.
+- **Most influential factors**: Various factors are considered when creating your CLV prediction based on the input data provided to the AI model. Each of the factors has their importance calculated for the aggregated predictions a model creates. Use these factors to help validate your prediction results. These factors also provide more insight about the most influential factors that contributed towards predicting CLV across all your customers.
 
 ### Learn about the score
 

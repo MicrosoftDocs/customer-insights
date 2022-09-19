@@ -1,7 +1,7 @@
 ---
 title: Product recommendation prediction sample guide
 description: Use this sample guide to try out the out of box product recommendation prediction model.
-ms.date: 09/16/2022
+ms.date: 09/19/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -28,7 +28,7 @@ Contoso is a company that produces high-quality coffee and coffee machines. They
 
 ## Task 1 - Ingest data
 
-Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically. The following information assumes you familiarized with ingesting data in general.
+Review the articles [about data ingestion](data-sources.md) and [connecting to a Power Query data source](connect-power-query.md). The following information assumes you are familiar with ingesting data in general.
 
 ### Ingest customer data from eCommerce platform
 
@@ -44,7 +44,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
    :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Transform date of birth to date.":::
 
-1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
+1. In the **Name** field on the right-hand pane, rename your data source to **eCommerceContacts**
 
 1. **Save** the data source.
 
@@ -52,7 +52,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. Add another data set to the same **eCommerce** data source. Choose the **Text/CSV** connector again.
 
-1. Enter the URL for **Online Purchases** data https://aka.ms/ciadclassonline.
+1. Enter the URL for online purchases data https://aka.ms/ciadclassonline.
 
 1. While editing the data, select **Transform** and then **Use first row as headers**.
 
@@ -60,7 +60,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **PurchasedOn**: Date/Time
    - **TotalPrice**: Currency
 
-1. In the **Name** field on the side pane, rename your data source from **Query** to **eCommercePurchases**.
+1. In the **Name** field on the side pane, rename your data source to **eCommercePurchases**.
 
 1. **Save** the data source.
 
@@ -68,7 +68,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
 
 1. Create a data source named **LoyaltyScheme** and select the **Text/CSV** connector.
 
-1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.
+1. Enter the URL for loyal customers https://aka.ms/ciadclasscustomerloyalty.
 
 1. While editing the data, select **Transform** and then **Use first row as headers**.
 
@@ -77,7 +77,7 @@ Review the articles [about data ingestion](data-sources.md) and [importing data 
    - **RewardsPoints**: Whole Number
    - **CreatedOn**: Date/Time
 
-1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
+1. In the **Name** field on the right-hand pane, rename your data source to **loyCustomers**.
 
 1. **Save** the data source.
 
@@ -89,7 +89,7 @@ Review the article [about data unification](data-unification.md). The following 
 
 ## Task 3 - Create transaction history activity
 
-Review the article [about customer activities](activities.md). The following information assumes you familiarized with creating activities in general.
+Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
 1. Create an activity called **eCommercePurchases** with the  *eCommercePurchases:eCommerce* entity and its primary key, **PurchaseId**.
 
@@ -113,6 +113,8 @@ With the unified customer profiles in place and activity created, run the produc
 
 1. Name the model **OOB Product Recommendation Model Prediction** and the output entity **OOBProductRecommendationModelPrediction**.
 
+1. Select **Next**.
+
 1. Define model preferences:
    - **Number of products**: **5** to define how many products you want to recommend to your customers.
    - **Repeat purchases expected**: **Yes** to indicate that you want to include products in the recommendation that your customers have purchased before.
@@ -132,30 +134,25 @@ With the unified customer profiles in place and activity created, run the produc
 
 1. After reviewing all the details, select **Save and Run**.
 
-## Task 4 - Review model results and explanations
+## Task 5 - Review model results and explanations
 
 Let the model complete the training and scoring of the data. Review the product recommendation model explanations. For more information, see [View prediction results](predict-transactional-churn.md#view-prediction-results).
 
-## Task 5 - Create a segment of high purchased products
+## Task 6 - Create a segment of high purchased products
 
 Running the model creates a new entity, which is listed on **Data** > **Entities**. You can create a new segment based on the entity created by the model.
 
-1. Go to **Segments**.
+1. On the results page, select **Create segment**.
 
-1. Select  **New** and choose **Create from** > **Intelligence**.
+1. Create a rule using the **OOBProductRecommendationModelPrediction** entity and define the segment:
+   - **Field**: ProductID
+   - **Value**: Select the top three product IDs
 
-   ![Creating a segment with the model output.](media/segment-intelligence.png)
+1. Select **Save** and **Run** the segment.
 
-1. Select the **OOBProductRecommendationModelPrediction** entity and define the segment:
-   - Field: ProductID
-   - Value: Select the top three product IDs
+You now have a segment that is dynamically updated which identifies the customers who might be interested to purchase the three most recommended products. For more information, see [Create and manage segments](segments.md).
 
-   :::image type="content" source="media/product-recommendation-quick-segment.png" alt-text="Create a segment from the model results.":::
-
-1. Select **Review** and **Save** the segment.
-
-You now have a segment that is dynamically updated which identifies the customers who might be interested to purchase the three most recommended products.
-
-For more information, see [Create and manage segments](segments.md).
+> [!TIP]
+> You can also create a segment for a prediction model from the **Segments** page by selecting **New** and choosing **Create from** > **Intelligence**. For more information, see [Create a new segment with quick segments](segment-quick.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

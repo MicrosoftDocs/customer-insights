@@ -41,7 +41,7 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
 
    :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Transform date of birth to date.":::
 
-1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**
+1. In the **Name** field on the right-hand pane, rename your data source to **eCommerceContacts**
 
 1. **Save** the data source.
 
@@ -57,7 +57,7 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
    - **PurchasedOn**: Date/Time
    - **TotalPrice**: Currency
 
-1. In the **Name** field on the side pane, rename your data source from **Query** to **eCommercePurchases**.
+1. In the **Name** field on the side pane, rename your data source to **eCommercePurchases**.
 
 1. **Save** the data source.
 
@@ -65,7 +65,7 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
 
 1. Create a data source named **LoyaltyScheme** and select the **Text/CSV** connector.
 
-1. Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.
+1. Enter the URL for loyalty customers https://aka.ms/ciadclasscustomerloyalty.
 
 1. While editing the data, select **Transform** and then **Use first row as headers**.
 
@@ -74,7 +74,7 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
    - **RewardsPoints**: Whole Number
    - **CreatedOn**: Date/Time
 
-1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.
+1. In the **Name** field on the right-hand pane, rename your data source to **loyCustomers**.
 
 1. **Save** the data source.
 
@@ -82,7 +82,7 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
 
 1. Create a data source named **Website** and select the **Text/CSV** connector.
 
-1. Enter the URL for eCommerce contacts https://aka.ms/CI-ILT/WebReviews.
+1. Enter the URL for website reviews https://aka.ms/CI-ILT/WebReviews.
 
 1. While editing the data, select **Transform** and then **Use first row as headers**.
 
@@ -90,7 +90,7 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
    - **ReviewRating**: Decimal number
    - **ReviewDate**: Date
 
-1. In the **Name** field on the right-hand pane, rename your data source from **Query** to **Reviews**.
+1. In the **Name** field on the right-hand pane, rename your data source to **Reviews**.
 
 1. **Save** the data source.
 
@@ -115,11 +115,11 @@ Review the article [about customer activities](activities.md). The following inf
 1. Run the activity.
 
 1. Add another activity and map its fields names to the corresponding fields:
-   - Customer activity entity: Reviews:Website
-   - Primary key: Website.Reviews.ReviewId
-   - Timestamp: Website.Reviews.ReviewDate
-   - Event (activity name): Website.Reviews.ActivityTypeDisplay
-   - Details (amount or value): Website.Reviews.ReviewRating
+   - Activity entity: Reviews:Website
+   - Primary key: ReviewId
+   - Timestamp: ReviewDate
+   - Event (activity name): ActivityTypeDisplay
+   - Details (amount or value): ReviewRating
 
 1. Run the activity.
 
@@ -129,7 +129,7 @@ With the unified customer profiles in place and activity created, run the custom
 
 1. Go to **Intelligence** > **Predictions**.
 
-1. On the **Create** tab, select **Use model** on the **Product recommendations (preview)** tile.
+1. On the **Create** tab, select **Use model** on the **Customer lifetime value** tile.
 
 1. Select **Get started**.
 
@@ -137,14 +137,16 @@ With the unified customer profiles in place and activity created, run the custom
 
 1. Define model preferences:
    - **Prediction time period**: **12 months or 1 year** to define how far into the future to predict CLV.
-   - **Active customers**: **let the model calculate purchase interval** which is the time frame in which a customer must have had at least one transaction to be considered active.
-   - **High value customers**: manually define high value customers as **top 30% of active customers**.
+   - **Active customers**: **Let model calculate purchase interval** which is the time frame in which a customer must have had at least one transaction to be considered active.
+   - **High value customer**: manually define high value customers as **top 30% of active customers**.
 
     :::image type="content" source="media/clv-model-preferences.png" alt-text="Preferences step in the guided experience for the CLV model.":::
 
 1. Select **Next**.
 
 1. In the **Required Data** step, select **Add data** to provide the transaction history data.
+
+    :::image type="content" source="media/clv-model-required.png" alt-text="Add required data step in the guided experience for the CLV model.":::
 
 1. Select **SalesOrderLine** and the eCommercePurchases entity and select **Next**. The required data is automatically filled in from the activity. Select **Save** and then **Next**.
 
@@ -156,29 +158,26 @@ With the unified customer profiles in place and activity created, run the custom
 
 1. After reviewing all the details, select  **Save and Run**.
 
-## Task 4 - Review model results and explanations
+## Task 5 - Review model results and explanations
 
 Let the model complete the training and scoring of the data. Review the CLV model results and explanations. For more information, see [View prediction results](predict-customer-lifetime-value.md#view-prediction-results).
 
-## Task 5 - Create a segment of high value customers
+## Task 6 - Create a segment of high value customers
 
 Running the model creates a new entity, which is listed on **Data** > **Entities**. You can create a new customer segment based on the entity created by the model.
 
-1. Go to **Segments**.
+1. On the results page, select **Create segment**.
 
-1. Select  **New** and choose **Create from** > **Intelligence**.
+1. Create a rule using the **OOBeCommerceCLVPrediction** entity and define the segment:
+   - **Field**: CLVScore
+   - **Operator**: greater than
+   - **Value**: 1500
 
-   ![Creating a segment with the model output.](media/segment-intelligence.png)
+1. Select **Save** and **Run** the segment.
 
-1. Select the  **OOBeCommerceCLVPrediction** entity and define the segment:
-   - Field: Score
-   - Operator: greater than
-   - Value: 1500
+You now have a segment that identifies customers who are predicted to generate more than $1500 of revenue in the next 12 months. This segment gets updated dynamically if more data is ingested. For more information, see [Create and manage segments](segments.md).
 
-1. Select **Review** and **Save** the segment.
-
-You now have a segment that identifies customers who are predicted to generate more than $1500 of revenue in the next 12 months. This segment gets updated dynamically if more data is ingested.
-
-For more information, see [Create and manage segments](segments.md).
+> [!TIP]
+> You can also create a segment for a prediction model from the **Segments** page by selecting **New** and choosing **Create from** > **Intelligence**. For more information, see [Create a new segment with quick segments](segment-quick.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
