@@ -67,25 +67,25 @@ Customer Insights can process up to 10 million feedback records for a single mod
 
 1. Go to **Intelligence** > **Predictions**.
 
-1. On the **Create** tab, select **Use model** on the **Customer sentiment analysis** tile.
+1. On the **Create** tab, select **Use model** on the **Customer sentiment analysis (preview)** tile.
 
 1. Select **Get started**.
 
-1. **Name** the analysis and provide the **Business aspect output entity name** and the **Sentiment score output entity name**
+1. **Name** the analysis and provide the **Business aspect output entity name** and the **Sentiment score output entity name**.
 
 1. Select **Next**.
 
-1. In the **Required data** step, select **Add data**.
+1. Select **Add data** for **Customer feedback**.
 
-   :::image type="content" source="media/sentiment-add-data.png" alt-text="Add data flow in the sentiment analysis model.":::
-
-1. In the **Add data** pane, choose the semantic type **Feedback** from the list. If the activity has not been set up, select **here** and create it.
+1. Select the semantic activity type **Feedback** that contains the feedback data. If the activity has not been set up, select **here** and create it.
 
    :::image type="content" source="media/sentiment-add-feedback-activities.png" alt-text="Configuration step to select feedback activities for sentiment analysis.":::
 
 1. Select the activities to use for this sentiment analysis, then select **Next**.
 
-1. Map the attributes in your data to the model attributes. Select **Save** to apply your selections.
+1. Map the attributes in your data to the model attributes. 
+
+1. Select **Save**.
 
 1. Select **Next**. The **Review and run** step shows a summary of the configuration and provides a chance to make changes before you create the analysis.
 

@@ -22,7 +22,7 @@ Product recommendations may be subject to local laws and regulations and custome
 The output of this model provides recommendations based on the product ID. Your delivery mechanism must map the predicted product IDs to appropriate content for your customers to account for localization, image content, and other business-specific content or behavior.
 
 > [!TIP]
-> If you're interested in trying this feature but don't have data to complete the requirements below, [create a sample implementation](sample-guide-predict-product-recommendation.md).
+> Try the product recommendation prediction using sample data: [Product recommendation prediction sample guide](sample-guide-predict-product-recommendation.md).
 
 ## Prerequisites
 
@@ -30,10 +30,10 @@ The output of this model provides recommendations based on the product ID. Your 
 - At least 100 customers, preferably more than 10,000 customers.
 - Customer Identifier, a unique identifier to match transactions to an individual customer
 - At least one year of transactional data, preferably two to three years to include some seasonality. Transaction history must include:
-  - **Transaction ID:** Unique identifier of a purchase or transaction.
-  - **Transaction date:** Date of the purchase or transaction.
-  - **Value of the transaction:** Numerical value of the purchase or transaction.
-  - **Unique product ID:** ID of the product or service purchased if your data is at a line item level.
+  - **Transaction ID**: Unique identifier of a purchase or transaction.
+  - **Transaction date**: Date of the purchase or transaction.
+  - **Value of the transaction**: Numerical value of the purchase or transaction.
+  - **Unique product ID**: ID of the product or service purchased if your data is at a line item level.
 
 Ideally, at least three or more transactions per Customer ID.
 
@@ -42,7 +42,7 @@ Ideally, at least three or more transactions per Customer ID.
 The following data is optional, but recommended for increased model performance. The more data the model can process, the more accurate the prediction. Therefore, we encourage you to ingest more customer activity data, if available.
 
 - A product catalog data entity to use as a product filter.
-- **Purchase or return**: A boolean value where *true* identifies that a transaction was a return. If the Purchase or Return data is not provided and the model and the **Value of the transaction** is negative, we infer a return.
+- **Purchase or return**: A boolean true/false value where *true* identifies that a transaction was a return. If the Purchase or Return data is not provided in the model and the **Value of the transaction** is negative, we infer a return.
 
 > [!NOTE]
 > - The model requires the transaction history of your customers where transaction is any data that describes a user-product interaction. For example, purchasing a product, taking a class, or attending an event.
@@ -50,6 +50,8 @@ The following data is optional, but recommended for increased model performance.
 > - If order and order details are different entities, join them before using in the model. The model doesn't work with only an order ID or receipt ID in an entity.
 
 ## Create a product recommendation prediction
+
+Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
 
 1. Go to **Intelligence** > **Predictions**.
 
@@ -63,10 +65,7 @@ The following data is optional, but recommended for increased model performance.
 
 ### Define product recommendation preferences
 
-> [!TIP]
-> Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
-
-1. Set the **Number of products** to recommend to a customer. This value depends on how your delivery method fills data. If possible, recommend three products.
+1. Set the **Number of products** to recommend to a customer. This value depends on how your delivery method fills data.
 
 1. Choose if you want to include products customers have recently purchased in the **Repeat purchases expected** field.
 
@@ -102,7 +101,7 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
 
    - **No filters**: Use all products in the product recommendation prediction.
 
-   - **Define specific product filters**: Use specific products in the product recommendation prediction. In the **Product catalog attributes** pane, select the attributes from your Product Catalog entity that you want include in the filter.
+   - **Define specific product filters**: Use specific products in the product recommendation prediction. In the **Product catalog attributes** pane, select the attributes from your product catalog entity that you want to include in the filter.
 
      :::image type="content" source="media/product-filters-sidepane.png" alt-text="Side pane showing attributed in the product catalog entity to select for product filters.":::
 
@@ -141,7 +140,7 @@ There are five primary sections of data within the results page.
   :::image type="content" source="media/product-recommendation-modelperformance.PNG" alt-text="Image of the model performance result with the grade A.":::
 
   Grades are determined based on the following rules:
-  - **A** when the "Success @ K" metric is at least 10% more the baseline.
+  - **A** when the "Success @ K" metric is at least 10% more than the baseline.
   - **B** when the "Success @ K" metric is 0% to 10% more than the baseline.
   - **C** when the "Success @ K" metric is less than the baseline.
   - **Baseline**: The top most recommended products by purchase count across all customers + learned rules identified by the model = a set of recommendations for the customers. The predictions are then compared to the top products, as calculated by the number of customers that had purchased the product. If a customer has at least one product in their recommended products that was also seen in the top purchased products, they're considered a part of the baseline. For example, if 10 of these customers had a recommended product purchased out of 100 total customers, the baseline is 10%.
@@ -165,7 +164,7 @@ There are five primary sections of data within the results page.
 
   :::image type="content" source="media/product-recommendation-datastatistics.png" alt-text="Data statistics around input data used by the model to learn patterns.":::
   
-  This section shows stats around the data points that were used by the model to learn patterns and generate product recommendations. Filtering, as configured in the model configuration, will apply on the output generated by the model. However, the model uses all available data to learn patterns. Therefore, if you use product filtering in the model configuration, this section shows the total number of products that the model analyzed to learn patterns, which might differ from the number of products that match the defined filtering criteria.
+  The model uses all available data to learn patterns. Therefore, if you use product filtering in the model configuration, this section shows the total number of products that the model analyzed to learn patterns, which might differ from the number of products that match the defined filtering criteria. Filtering applies on the output generated by the model.
 
 - **Sample product recommendations:** A sample of recommendations that the model believes are likely to be purchased by the customer. If a product catalog is added, the product IDs are replaced with product names.
 

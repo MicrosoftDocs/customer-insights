@@ -1,7 +1,7 @@
 ---
 title: Transaction churn prediction (contains video)
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 09/14/2022
+ms.date: 09/20/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -22,7 +22,7 @@ You must have business knowledge to understand what churn means for your busines
 For environments based on business accounts, we can predict transactional churn for an account and also a combination of account and another level of information like product category. For example, adding a dimension can help determine how likely it is that the account "Contoso" will stop buying the product category "office stationery." In addition, for business accounts, we can also use AI to generate a list of potential reasons why an account is likely to churn for a category of secondary level information.
 
 > [!TIP]
-> Try the tutorial for a transaction churn prediction using sample data: [Transaction churn prediction sample guide](sample-guide-predict-transactional-churn.md).
+> Try the transaction churn prediction using sample data: [Transaction churn prediction sample guide](sample-guide-predict-transactional-churn.md).
 
 ## Prerequisites
 
@@ -51,9 +51,7 @@ The following data is optional, but recommended for increased model performance.
   - **Event:** Name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
   - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
 
-For business accounts (B-to-B), optionally add:
-
-Customer data align toward more static attributes to ensure the model performs best:
+For business accounts (B-to-B), optionally add customer data aligned toward more static attributes to ensure the model performs best:
 - **CustomerID:** Unique identifier for a customer.
 - **Created Date:** Date the customer was initially added.
 - **State or Province:** State or province location of a customer.
@@ -78,8 +76,7 @@ Customer data align toward more static attributes to ensure the model performs b
 
 ### Define customer churn
 
-> [!TIP]
-> Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
+Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
 
 1. Set the **Prediction window**. For example, predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for a longer or shorter period of time can make it more difficult to address the factors in your churn risk profile, but it depends on your specific business requirements.
 
@@ -93,9 +90,9 @@ Customer data align toward more static attributes to ensure the model performs b
 
 1. Select the semantic activity type, **SalesOrder** or **SalesOrderLine**, that contains the transaction history information. If the activity has not been set up, select **here** and create it.
 
-   :::image type="content" source="media/transaction-churn-select-activity.PNG" alt-text="Side pane showing choosing specific activities under the semantic type.":::
-
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+
+   :::image type="content" source="media/transaction-churn-select-activity.PNG" alt-text="Side pane showing choosing specific activities under the semantic type.":::
 
 1. Select **Next** and review the attributes required for this model.
 
@@ -109,7 +106,7 @@ Customer data align toward more static attributes to ensure the model performs b
 
 1. Select **Add data** for **Customer activities**.
 
-1. Select the semantic activity type that contains the data you would like to use. If the activity has not been set up, select **here**and create it.
+1. Select the semantic activity type that contains the data you would like to use. If the activity has not been set up, select **here** and create it.
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
 
@@ -219,17 +216,17 @@ An **Influential feature analysis** information page contains four sections of d
   - Medium: accounts or combinations of accounts and secondary levels with a churn score between 0.33 and 0.66.
   - High: accounts or combinations of accounts and secondary levels with a churn score greater than 0.66.
 
-  When you predict churn at the account level, all accounts are considered in deriving the average feature values for churn segments. For churn predictions at the secondary level for every account, the derivation of churn segments depends on the secondary level of the item selected in the side pane. For example, if an item has a secondary level of product category = office supplies, then only the items having office supplies as the product category are considered when deriving the average feature values for churn segments. This logic is applied to ensure a fair comparison of the item's feature values with the average values across low, medium, and high churn segments.
+  When you predict churn at the account level, all accounts are considered in deriving the average feature values for churn segments. For churn predictions at the secondary level for every account, the derivation of churn segments depends on the secondary level of the item selected in the side pane. For example, if an item has a secondary level of product category (office supplies), then only the items having office supplies as the product category are considered when deriving the average feature values for churn segments. This logic is applied to ensure a fair comparison of the item's feature values with the average values across low, medium, and high churn segments.
 
   In some cases, the average value of low, medium, or high churn segments is empty or not available because there are no items that belong to the corresponding churn segments based on the above definition.
 
-  > [!NOTE]
-  > The interpretation of values under the average low, medium, and high columns is different for categorical features like country or industry. Because the notion of "average" feature value doesn't apply to categorical features, the values in these columns are the proportion of customers in low, medium, or high churn segments that have the same value of the categorical feature as compared to the item selected in the side panel.
+  The interpretation of values under the average low, medium, and high columns is different for categorical features like country or industry. Because the notion of "average" feature value doesn't apply to categorical features, the values in these columns are the proportion of customers in low, medium, or high churn segments that have the same value of the categorical feature as compared to the item selected in the side panel.
+
+---
 
  > [!NOTE]
  > In the output entity for this model, *ChurnScore* shows the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md#create-a-segment) with your preferred threshold. Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on you churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
 >
 > To view the churn score, go to **Data** > **Entities** and view the data tab for the output entity you defined for this model.
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

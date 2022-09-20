@@ -36,7 +36,7 @@ The results of predictions sometimes only apply to a subset of your customers. I
 
    :::image type="content" source="media/prediction-create-segment.png" alt-text="Screenshot of the prediction results page with highlight on the Create segment action.":::
 
-1. Create a new segment based on the output entity of the selected model. For more information, see [Create and manage segments](segments.md).
+1. Create a new segment using attributes from the output entity of the selected model. For more information, see [Create and manage segments](segments.md).
 
 > [!TIP]
 > You can also create a segment for a prediction model from the **Segments** page by selecting **New** and choosing **Create from** > **Intelligence**. For more information, see [Create a new segment with quick segments](segment-quick.md).

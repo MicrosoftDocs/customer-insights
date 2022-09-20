@@ -1,7 +1,7 @@
 ---
 title: "Predict subscription churn (contains video)"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
-ms.date: 09/14/2022
+ms.date: 09/20/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -13,14 +13,14 @@ manager: shellyha
 
 # Predict subscription churn
 
-Subscription churn prediction helps predict whether a customer is at risk for no longer using your company’s subscription products or services. Subscription data includes active and inactive subscriptions for each customer so there are multiple entries per customer ID.
+Predict whether a customer is at risk for no longer using your company’s subscription products or services. Subscription data includes active and inactive subscriptions for each customer so there are multiple entries per customer ID.
 
-You must have business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription is ended.
+You must have business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription has ended.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOKNQ]
 
 > [!TIP]
-> Try the tutorial for a subscription churn prediction using sample data: [Subscription churn prediction sample guide](sample-guide-predict-subscription-churn.md).
+> Try the subscription churn prediction using sample data: [Subscription churn prediction sample guide](sample-guide-predict-subscription-churn.md).
 
 ## Prerequisites
 
@@ -49,6 +49,8 @@ The following data is optional, but recommended for increased model performance.
 
 ## Create a subscription churn prediction
 
+Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
+
 1. Go to **Intelligence** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer churn model** tile.
@@ -60,9 +62,6 @@ The following data is optional, but recommended for increased model performance.
 1. Select **Next**.
 
 ### Define customer churn
-
-> [!TIP]
-> Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
 
 1. Enter the number of **Days since subscription ended** that your business considers a customer to be in a churned state. This period is typically linked to business activities like offers or other marketing efforts trying to prevent losing the customer.
 
@@ -77,6 +76,8 @@ The following data is optional, but recommended for increased model performance.
 1. Select the semantic activity type **Subscription** that contains the required subscription history information. If the activity has not been set up, select **here** and create it.
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+  
+   :::image type="content" source="media/subscription-churn-required.png" alt-text="Add required data for Subscription churn model":::
 
 1. Select **Next** and review the attributes required for this model.
 
@@ -92,13 +93,11 @@ The following data is optional, but recommended for increased model performance.
 
 1. Select **Save**.
 
-1. Select **Next**.
-
-1. Add more customer activity data and then select **Next**.
+1. Add more activities or select **Next**.
 
 ### Set update schedule
 
-1. For the **Data updates** step, choose a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested in Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. Choose the frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested in Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 

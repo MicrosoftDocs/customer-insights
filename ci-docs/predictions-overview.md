@@ -1,7 +1,7 @@
 ---
 title: Predictions overview
 description: "Prediction scenarios and options covered by the Dynamics 365 Customer Insights application."
-ms.date: 09/01/2022
+ms.date: 09/20/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -48,6 +48,8 @@ If an organization already uses machine learning scenarios based on Azure Machin
 Go to the **Intelligence** > **Predictions** page. On the **My predictions** tab, view the predictions you created, their prediction type, output entity name, status, the last time the prediction was edited, and the last time the data was refreshed. You can sort the list of predictions by any column.
 
 Select a prediction to view available actions.
+
+:::image type="content" source="media/predictions.png" alt-text="My predictions page.":::
 
 - **Edit** the prediction to change its properties.
 - [**Refresh**](#refresh-a-prediction) the prediction to include the latest data.

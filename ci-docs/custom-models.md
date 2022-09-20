@@ -27,6 +27,8 @@ Custom models lets you manage workflows based on Azure Machine Learning models. 
 
 Predictions offer capabilities to create better customer experiences, improve business capabilities, and revenue streams. We strongly recommend you balance the value of your prediction against the impact it has and biases that may be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). You can also learn about [techniques and processes for responsible machine learning](/azure/machine-learning/concept-responsible-ml) specific to Azure Machine Learning.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
+
 ## Prerequisites
 
 - Web services published through [Azure Machine Learning batch pipelines](/azure/machine-learning/concept-ml-pipelines).
@@ -37,8 +39,6 @@ Predictions offer capabilities to create better customer experiences, improve bu
 
   > [!NOTE]
   > Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 ## Add a new workflow
 

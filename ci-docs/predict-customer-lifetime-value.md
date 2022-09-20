@@ -1,7 +1,7 @@
 ---
 title: Predict customer lifetime value (CLV)
 description: "Predict revenue potential for active customers in the future."
-ms.date: 09/14/2022
+ms.date: 09/20/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -27,6 +27,9 @@ Predict potential value (revenue) that individual active customers will bring in
 
 Determine what CLV means for your business. We support transaction-based CLV prediction. The predicted value of a customer is based on the history of business transactions. Consider creating several models with varying input preferences and compare model results to see which model scenario best fits your business needs.
 
+> [!TIP]
+> Try the CLV prediction using sample data: [Customer lifetime value (CLV) prediction sample guide](sample-guide-predict-clv.md).
+
 ## Prerequisites
 
 - At least [Contributor](permissions.md) permissions
@@ -45,8 +48,8 @@ Ideally, at least two to three transactions per customer ID, preferably across m
 The following data is optional, but recommended for increased model performance. The more data the model can process, the more accurate the prediction. Therefore, we encourage you to ingest more customer activity data, if available.
 
 - Transaction history additional data:
-  - **Label assigned to returns**: Boolean value signifying whether the transaction is a return
-  - **Product ID** (optional): Product ID of product involved in the transaction
+  - **Label assigned to returns**: Boolean true/false value signifying whether the transaction is a return
+  - **Product ID**: Product ID of product involved in the transaction
 
 - Additional data such as:
   - Web activities: Website visit history, email history
@@ -65,6 +68,8 @@ The following data is optional, but recommended for increased model performance.
 
 ## Create a Customer Lifetime Value prediction
 
+Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
+
 1. Go to **Intelligence** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer lifetime value** tile.
@@ -76,9 +81,6 @@ The following data is optional, but recommended for increased model performance.
 1. Select **Next**.
 
 ### Define model preferences
-
-> [!TIP]
-> Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
 
 1. Set a **Prediction time period** to define how far into the future you want to predict the CLV. By default, the unit is set as months.
 
@@ -123,9 +125,11 @@ Data reflecting key customer interactions (like web, customer service, and event
 
 1. Under **Activities**, if the activity attributes were mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If mapping did not occur, select **Edit** and map your data.
 
-1. Select **Next** and map the attributes required for this model.
+1. Select **Next** and review the attributes required for this model.
 
 1. Select **Save**.
+
+1. Select **Next**.
 
 1. [Add optional customer data](#add-optional-customer-data) or select **Next** and go to [Set update schedule](#set-update-schedule).
 
