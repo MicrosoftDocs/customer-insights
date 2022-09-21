@@ -27,14 +27,14 @@ E-commerce is the fastest-growing channel over the last decade. Assume a user us
 - Each entity with a primary key for personalization is unified
 - The content management system of your website is capable of using APIs (for web personalization based on direct communication with Customer Insights)
 
-The following table shows a simplified example how high value web events could get captured in Customer Insights.
+The following table shows a simplified example how high-value web events could get captured.
 
 |EventID|EventTimeStamp|UserID|PrimaryKey|EventName|
 |--|--|--|--|--|
 |1|09-15-2022 9:00:00|abc123|CookieID1|Product view|
 |2|09-18-2022 10:05:00|abc123|CookieID1|Product view|
 |3|09-18-2022 10:10:00|abc123|CookieID1|Add to cart|
-|4|09-21-2022 09:05:00|abc123|CookieI1|Product view|
+|4|09-21-2022 09:05:00|abc123|CookieID1|Product view|
 
 ## Data ingestion
 
