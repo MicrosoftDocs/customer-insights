@@ -104,7 +104,7 @@ Review the article [about data unification](data-unification.md). The following 
 
 Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
-1. Create an activity called **eCommercePurchases** with the  *eCommercePurchases:eCommerce* entity and its primary key, **PurchaseId**.
+1. Create an activity called **eCommercePurchases** with the *eCommercePurchases:eCommerce* entity and its primary key, **PurchaseId**.
 
 1. Create a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two entities.
 
@@ -115,11 +115,12 @@ Review the article [about customer activities](activities.md). The following inf
 1. Run the activity.
 
 1. Add another activity and map its fields names to the corresponding fields:
-   - Activity entity: Reviews:Website
-   - Primary key: ReviewId
-   - Timestamp: ReviewDate
-   - Event (activity name): ActivityTypeDisplay
-   - Details (amount or value): ReviewRating
+   - **Activity entity**: Reviews:Website
+   - **Primary key**: ReviewId
+   - **Timestamp**: ReviewDate
+   - **Event activity**: ActivityTypeDisplay
+   - **Additional detail**: ReviewRating
+   - **Activity type**: Review
 
 1. Run the activity.
 
@@ -156,11 +157,13 @@ With the unified customer profiles in place and activity created, run the custom
 
 1. In the **Data updates** step, select **Monthly** for the model schedule.
 
-1. After reviewing all the details, select  **Save and Run**.
+1. Select **Next**.
+
+1. After reviewing all the details, select **Save and Run**.
 
 ## Task 5 - Review model results and explanations
 
-Let the model complete the training and scoring of the data. Review the CLV model results and explanations. For more information, see [View prediction results](predict-customer-lifetime-value.md#view-prediction-results).
+Let the model complete the training and scoring of the data. Review the [CLV model results and explanations](predict-customer-lifetime-value.md#view-prediction-results).
 
 ## Task 6 - Create a segment of high value customers
 

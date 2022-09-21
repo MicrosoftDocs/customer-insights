@@ -67,9 +67,9 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Set the **Number of products** to recommend to a customer. This value depends on how your delivery method fills data.
 
-1. Choose if you want to include products customers have recently purchased in the **Repeat purchases expected** field.
+1. Choose if you want to include products customers have previously purchased in the **Repeat purchases expected** field.
 
-1. Set the **Look back window** to specify the time frame the model considers before recommending the product to the user again. For example, indicate a customer purchases a laptop every two years. The model looks at the purchase history for the last two years, and if it finds an item, the item is filtered from the recommendations.
+1. Set the **Look back window** with the time frame the model considers before recommending the product to the user again. For example, indicate a customer purchases a laptop every two years. The model looks at the purchase history for the last two years, and if it finds an item, the item is filtered from the recommendations.
 
 1. Select **Next**
 

@@ -44,7 +44,7 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
 
    :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Transform date of birth to date.":::
 
-1. In the **Name** field on the right-hand pane, rename your data source to **eCommerceContacts**
+1. In the **Name** field on the right-hand pane, rename your data source to **eCommerceContacts**.
 
 1. **Save** the data source.
 
@@ -117,8 +117,8 @@ With the unified customer profiles in place and activity created, run the produc
 
 1. Define model preferences:
    - **Number of products**: **5** to define how many products you want to recommend to your customers.
-   - **Repeat purchases expected**: **Yes** to indicate that you want to include products in the recommendation that your customers have purchased before.
-   - **Look back window:** **365 days** to define how far the model will look back at the customer's activity to use it as input to their recommendations.
+   - **Repeat purchases expected**: **Yes** to include previously purchased products in the recommendation.
+   - **Look back window:** **365 days** to define how far the model will look back before recommending a product again.
 
    :::image type="content" source="media/product-recommendation-model-preferences.png" alt-text="Model preferences for the product recommendation model.":::
 
@@ -132,11 +132,13 @@ With the unified customer profiles in place and activity created, run the produc
 
 1. In the **Data updates** step, select **Monthly** for the model schedule.
 
+1. Select **Next**.
+
 1. After reviewing all the details, select **Save and Run**.
 
 ## Task 5 - Review model results and explanations
 
-Let the model complete the training and scoring of the data. Review the product recommendation model explanations. For more information, see [View prediction results](predict-transactional-churn.md#view-prediction-results).
+Let the model complete the training and scoring of the data. Review the [product recommendation model explanations](predict-transactional-churn.md#view-prediction-results).
 
 ## Task 6 - Create a segment of high purchased products
 
@@ -150,7 +152,7 @@ Running the model creates a new entity, which is listed on **Data** > **Entities
 
 1. Select **Save** and **Run** the segment.
 
-You now have a segment that is dynamically updated which identifies the customers who might be interested to purchase the three most recommended products. For more information, see [Create and manage segments](segments.md).
+You now have a segment that is dynamically updated which identifies the customers who might be interested in purchasing the five most recommended products. For more information, see [Create and manage segments](segments.md).
 
 > [!TIP]
 > You can also create a segment for a prediction model from the **Segments** page by selecting **New** and choosing **Create from** > **Intelligence**. For more information, see [Create a new segment with quick segments](segment-quick.md).

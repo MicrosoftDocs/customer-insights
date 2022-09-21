@@ -190,14 +190,18 @@ There are three primary sections of data within the results page.
   Select [**Learn about this score**](#learn-about-the-score) to open the **Model rating** pane which shows further details about the AI model performance and the baseline model. It will help you better understand the underlying model performance metrics and how the final model performance grade was derived. The baseline model uses a non-AI based approach to calculate customer lifetime value based primarily on historical purchases made by customers.
 
 - **Value of customers by percentile**: Low-value and high-value customers display in a chart. Hover over the bars in the histogram to see the number of customers in each group and the average CLV of that group. Optionally, [create segments of customers](prediction-based-segment.md) based on their CLV predictions.
+  
+   :::image type="content" source="media/CLV-value-percent.png" alt-text="Value of customers by percentile for CLV model":::
 
 - **Most influential factors**: Various factors are considered when creating your CLV prediction based on the input data provided to the AI model. Each of the factors has their importance calculated for the aggregated predictions a model creates. Use these factors to help validate your prediction results. These factors also provide more insight about the most influential factors that contributed towards predicting CLV across all your customers.
+  
+   :::image type="content" source="media/CLV-influence-factors.png" alt-text="Most influential factors for CLV model":::
 
 ### Learn about the score
 
 The standard formula used to calculate CLV by the baseline model:
 
-  _**CLV for each customer** = Average monthly purchase made by the customer in the active customer window * Number of months in the CLV prediction period * Overall retention rate of all customers_
+ _**CLV for each customer** = Average monthly purchase made by the customer in the active customer window * Number of months in the CLV prediction period * Overall retention rate of all customers_
 
 The AI model is compared to the baseline model based on two model performance metrics.
   
