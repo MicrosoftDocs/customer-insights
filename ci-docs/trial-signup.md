@@ -36,6 +36,6 @@ Your trial environment includes the same features as the paid version. The links
 
 ## Additional resources
 
-- [Explore learning paths and modules for Customer Insights](/learn/browse/?products=dynamics-cust-insights)
+- [Explore learning paths and modules for Customer Insights](/training/browse/?products=dynamics-cust-insights)
 - [Trial FAQ](trial-faq.md)
 - [Dynamics 365 Customer Insights product details](https://dynamics.microsoft.com/ai/customer-insights/)

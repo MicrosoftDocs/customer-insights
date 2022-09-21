@@ -18,7 +18,7 @@ Memorable personalization depends on the richness and completeness of your custo
 
 ## Sample Scenario
 
-E-commerce is the fastest-growing channel over the last decade. Assume a user uses their mobile device to browse your e-commerce site. The website assigns the visitor “mobile_guest123” as a unique identifier and you start collecting behavioral activities based on their online activity. For example, which pages they visited, how much time they spent on those pages, or which links they clicked. You don't know their name or email address, but this data can help provide brands meaningful insights about this specific user. In turn, you can put those insights to work the next time that user visits the site. Query Customer Insights for “mobile_guest123” to retrieve the user’s segment list or profile to create personalized web experiences. You can also export the data to any activation system to do the same.
+E-commerce is the fastest-growing channel over the last decade. Assume a user uses their mobile device to browse your e-commerce site. The website assigns the visitor “mobile_guest123” as a unique identifier and you start collecting behavioral activities based on their online activity. For example, which pages they visited, how much time they spent on those pages, or which links they clicked. You don't know their name or email address, but this data can help provide brands meaningful insights about this specific user. In turn, you can put those insights to work the next time that user visits the site. Query Customer Insights for “mobile_guest123” to retrieve the user’s segment list, such as "organic", "mobile pre-order customers", "high-value customers", etc., or retrieve the profile to create personalized web experiences. You can also export the data to any activation system to do the same.
 
 ## Prerequisites
 
@@ -26,6 +26,15 @@ E-commerce is the fastest-growing channel over the last decade. Assume a user us
 - Each entity has a unique ID that is set as a primary key
 - Each entity with a primary key for personalization is unified
 - The content management system of your website is capable of using APIs (for web personalization based on direct communication with Customer Insights)
+
+The following table shows a simplified example how high-value web events could get captured.
+
+|EventID|EventTimeStamp|UserID|PrimaryKey|EventName|
+|--|--|--|--|--|
+|1|09-15-2022 9:00:00|abc123|CookieID1|Product view|
+|2|09-18-2022 10:05:00|abc123|CookieID1|Product view|
+|3|09-18-2022 10:10:00|abc123|CookieID1|Add to cart|
+|4|09-21-2022 09:05:00|abc123|CookieID1|Product view|
 
 ## Data ingestion
 
