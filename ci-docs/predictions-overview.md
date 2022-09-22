@@ -37,7 +37,7 @@ The easiest way to start with predicting data are predefined models, often refer
 > [!TIP]
 > We recommend that you regularly refresh out-of-the box models with updated data to ensure they accurately inform your business use case. Data is refreshed ad-hoc when the system ingests new or updated data sources. However, models will only rescore in this case and continue to use the existing training data.
 >
-> Configure an **Update schedule** by setting the model retraining schedule in the configuration experience. The model will retrain and rescore on this schedule, which you can change at any time.
+> Configure an **Update schedule** by setting the model retraining schedule during configuration. The model will retrain and rescore on this schedule, which you can change at any time.
 
 ## Azure Machine Learning integration
 
@@ -81,15 +81,5 @@ The report includes:
 - **Column name:** Column in an entity that needs to be modified to improve the model performance.
 - **Entity name:** Name of the entity that needs to be modified to improve the model performance.
 - **Details:** Details about the error, warning, or recommendation.
-
-## Troubleshoot a failed prediction
-
-1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
-
-1. Select the vertical ellipses next to the prediction you want to view error logs for.
-
-1. Select **Logs**.
-
-1. Review all the errors. There are several types of errors that can occur, and they describe what condition caused the error. For example, an error that there's not enough data to accurately predict is typically resolved by loading additional data into Customer Insights.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

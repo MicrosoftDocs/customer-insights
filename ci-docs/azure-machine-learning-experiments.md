@@ -1,7 +1,7 @@
 ---
 title: "Use Azure Machine Learning-based models"
 description: "Use Azure Machine Learning-based models in Dynamics 365 Customer Insights."
-ms.date: 09/19/2022
+ms.date: 09/22/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -40,13 +40,13 @@ Data scientists and AI developers use the [Azure Machine Learning SDK](/python/a
 
 ### Dataset configuration
 
-You need to create datasets to use entity data from Customer Insights to your batch inference pipeline. These datasets need to be registered in the workspace. Currently, we only support [tabular datasets](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) in .csv format. The datasets that correspond to entity data need to be parameterized as a pipeline parameter.
+Create datasets to use entity data from Customer Insights for your batch inference pipeline. Register these datasets in the workspace. Currently, we only support [tabular datasets](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) in .csv format. Parameterize the datasets that correspond to entity data as a pipeline parameter.
 
 - Dataset parameters in Designer
 
   In the designer, open **Select Columns in Dataset** and select **Set as pipeline parameter** where you provide a name for the parameter.
 
-   :::image type="content" source="media/intelligence-designer-dataset-parameters.png" alt-text="Dataset parameterization in designer.":::
+  :::image type="content" source="media/intelligence-designer-dataset-parameters.png" alt-text="Dataset parameterization in designer.":::
 
 - Dataset parameter in SDK (Python)
 
@@ -58,7 +58,7 @@ You need to create datasets to use entity data from Customer Insights to your ba
 
 ### Batch inference pipeline
   
-- In the designer, a training pipeline can be used to create or update an inference pipeline. Currently, only batch inference pipelines are supported.
+- In the designer, use a training pipeline to create or update an inference pipeline. Currently, only batch inference pipelines are supported.
 
 - Using the SDK, publish the pipeline to an endpoint. Currently, Customer Insights integrates with the default pipeline in a batch pipeline endpoint in the Machine Learning workspace.
 
@@ -72,7 +72,7 @@ You need to create datasets to use entity data from Customer Insights to your ba
 
 - The designer provides the [Export Data module](/azure/machine-learning/algorithm-module-reference/export-data) that allows the output of a pipeline to be exported to Azure storage. Currently, the module must use the datastore type **Azure Blob Storage** and parameterize the **Datastore** and relative **Path**. Customer Insights overrides both these parameters during pipeline execution with a datastore and path that is accessible to the product.
 
-   :::image type="content" source="media/intelligence-designer-importdata.png" alt-text="Export Data Module Configuration.":::
+  :::image type="content" source="media/intelligence-designer-importdata.png" alt-text="Export Data Module Configuration.":::
 
 - When writing the inference output using code, upload the output to a path within a *registered datastore* in the workspace. If the path and datastore are parameterized in the pipeline, Customer insights will be able to read and import the inference output. Currently, a single tabular output in csv format is supported. The path must include the directory and filename.
 

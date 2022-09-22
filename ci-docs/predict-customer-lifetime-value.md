@@ -52,15 +52,15 @@ The following data is optional, but recommended for increased model performance.
   - **Product ID**: Product ID of product involved in the transaction
 
 - Additional data such as:
-  - Web activities: Website visit history, email history
+  - Web activities: Website visit history or email history
   - Loyalty activities: Loyalty reward points accrual and redemption history
   - Customer service log: Service call, complaint, or return history
   - Customer profile information
 
 - Data about customer activities:
-  - **Primary key**: A unique identifier for an activity
-  - **Timestamp**: The date and time of the event identified by the primary key
-  - **Event (activity name)**:  The name of event you want to use
+  - **Primary key**: Unique identifier for an activity
+  - **Timestamp**: Date and time of the event identified by the primary key
+  - **Event (activity name)**: Name of event you want to use
   - **Details (amount or value)**: Details about the customer activity
 
 > [!NOTE]
@@ -87,7 +87,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
    > [!TIP]
    > To accurately predict CLV for the set time period, a comparable period of historical data is required. For example, if you want to predict CLV for the next 12 months, have at least 18 – 24 months of historical data.
 
-1. Set the time frame in which a customer must have had at least one transaction to be considered active. The model only predicts CLV for active customers.
+1. Set the time frame in which a customer must have had at least one transaction to be considered active. The model only predicts CLV for **Active customers**.
    - **Let model calculate purchase interval (recommended)**: Model analyzes your data and determines a time period based on historical purchases.
    - **Set interval manually**: Time period for your definition of an active customer.
 
