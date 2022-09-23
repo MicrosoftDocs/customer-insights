@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to HubSpot"
 description: "Learn how to configure the connection and export to HubSpot."
-ms.date: 08/17/2022
+ms.date: 09/23/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
