@@ -1,7 +1,7 @@
 ---
 title: "Measures overview"
 description: "Learn how measures help analyze and reflect the performance of your business."
-ms.date: 09/19/2022
+ms.date: 09/26/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -19,7 +19,7 @@ searchScope:
 
 # Measures overview
 
-Measures help you to better understand customer behaviors and business performance. They look at relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand an individual customer’s purchase history or measure *total sales of the company* to understand the aggregate-level revenue in the whole business.
+Measures help you to better understand customer behaviors and business performance. They look at relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand an individual customer’s purchase history or measure *total sales of the company* to understand the aggregate-level revenue in the whole business. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
 Create measures to plan business activities by querying customer data and extract insights. For example, create a measure of *total spend per customer* and *total return per customer* to help identify a group of customers with high spend yet high return. Then, [create a segment](segments.md) based on these measures to drive next best actions.
 
@@ -59,23 +59,25 @@ Select next to a measure to view available actions. Select the measure name to p
 
 ## Schedule measures
 
-Measures can be refreshed on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. For example, you might want to schedule measures that don't change often or are for last season on a slower cadence such as monthly to avoid unnecessary processing time. The default is every scheduled system refresh.
+Measures can be refreshed on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. You might want to schedule last season's measures or measures that don't change often on a slower cadence such as monthly to avoid unnecessary processing time. The default is every scheduled system refresh.
 
 Define refresh schedules for one or more measures. The currently defined schedule is listed in the **Schedule** column of the measure list.
 
 1. Go to **Measures**.
 
-1. Select one or more measures you want to schedule.
+1. Select the measures you want to schedule.
 
 1. Select **Schedule**.
 
 1. In the **Schedule** pane, set the **Schedule run** to **On** to run the measure automatically. Set it to **Off** to refresh it manually.
 
-1. For automatically refreshed measures, select the **Recurrence** value and the details for it. On the scheduled day, the refresh occurs after the scheduled system refresh.
+1. For automatically refreshed measures, select **Recurrence** and the details for it. On the scheduled day, the refresh occurs after the scheduled system refresh.
+
+   :::image type="content" source="media/measures-schedule.png" alt-text="Selected measure with Schedule pane.":::
 
 1. When defining the schedule for several measures, make a selection under **Keep or override schedules**:
    - **Keep individual schedules**: Keep the previously defined schedule for the selected measures and only disable or enable them.
-   - **Define new schedule for all selected Measures**: Override the existing measures of the selected segments.
+   - **Define new schedule for all selected measures**: Override the existing schedules of the selected measures.
 
 1. Select **Save**.
 

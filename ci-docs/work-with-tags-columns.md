@@ -31,7 +31,7 @@ You can view, add, and remove tags from an item. Add tags as you create an item.
 
 1. Go to the list view. For example, go to **Segments**.
 
-1. Select the item whose tags you want to manage.
+1. Select the items whose tags you want to manage.
 
 1. Select the vertical ellipsis (&vellip;) and select **Tag**.
 
