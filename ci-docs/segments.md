@@ -45,7 +45,7 @@ Segment of accounts or segment of contacts (preview) with segment builder: [Buil
 
 ## Manage existing segments
 
-Go to the **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
+Go to the **Segments** page to view the segments you created, their status and state, the last time the data was refreshed, and their refresh schedule. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
 
 > [!TIP]
 > In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
@@ -119,10 +119,10 @@ Define refresh schedules for one or more segments. The currently defined schedul
 
 1. In the **Schedule** pane, set the **Schedule run** to **On** to run the segment automatically. Set it to **Off** to refresh it manually.
 
-1. For automatically refreshed segments, select **Recurrence** and the details for it. On the scheduled day, the refresh occurs after the scheduled system refresh.
+1. For automatically refreshed segments, select **Recurrence** and the details for it. On the scheduled day, the refresh occurs.
 
 1. When defining the schedule for several segments, make a selection under **Keep or override schedules**:
-   - **Keep individual schedules**: Keep the previously defined schedule for the selected segments and only disable or enable them.
+   - **Keep individual schedules**: Keep the previously defined schedule for the selected segments.
    - **Define new schedule for all selected segments**: Override the existing schedules of the selected segments.
 
    :::image type="content" source="media/segments-schedule.png" alt-text="Selected segments with Schedule pane.":::

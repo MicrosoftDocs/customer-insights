@@ -71,12 +71,12 @@ Define refresh schedules for one or more measures. The currently defined schedul
 
 1. In the **Schedule** pane, set the **Schedule run** to **On** to run the measure automatically. Set it to **Off** to refresh it manually.
 
-1. For automatically refreshed measures, select **Recurrence** and the details for it. On the scheduled day, the refresh occurs after the scheduled system refresh.
+1. For automatically refreshed measures, select **Recurrence** and the details for it. On the scheduled day, the refresh occurs.
 
    :::image type="content" source="media/measures-schedule.png" alt-text="Selected measure with Schedule pane.":::
 
 1. When defining the schedule for several measures, make a selection under **Keep or override schedules**:
-   - **Keep individual schedules**: Keep the previously defined schedule for the selected measures and only disable or enable them.
+   - **Keep individual schedules**: Keep the previously defined schedule for the selected measures.
    - **Define new schedule for all selected measures**: Override the existing schedules of the selected measures.
 
 1. Select **Save**.

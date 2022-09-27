@@ -68,7 +68,7 @@ Available measure templates:
 
 ## Next steps
 
-- [Schedule](measures.md#schedule-measures) a measure.
+- [Schedule a measure](measures.md#schedule-measures).
 - Use existing measures to create [a customer segment](segments.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
