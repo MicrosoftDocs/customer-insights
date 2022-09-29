@@ -1,7 +1,7 @@
 ---
 title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
-ms.date: 09/09/2022
+ms.date: 09/29/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -75,10 +75,10 @@ To refresh a data source on demand:
 
 ## Corrupt data sources
 
-Data is not always clean. During ingestion, records can contain corrupted data, which cause data ingestion to complete with errors or warnings.
+During ingestion, records can contain corrupted data which causes the data ingestion process to complete with errors or warnings.
 
 > [!NOTE]
-> If data ingestion completes with errors, subsequent processing does not occur. If ingestion completed with warnings, subsequent processing continues.
+> If data ingestion completes with errors, subsequent processing for the data source, such as unification or activity creation, does not occur. If ingestion completed with warnings, subsequent processing continues.
 
 These errors can be seen in the task details.
 

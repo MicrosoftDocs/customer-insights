@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 09/09/2022
+ms.date: 09/29/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -136,7 +136,7 @@ If the data is stale or you receive errors after a data source refresh, perform 
 
 1. If the **Status** of the dataflow is **Success**, the ownership of the Power Query-based data source might have changed:
 
-   1. Review the refresh history for the refresh schedule.
+   1. Review the refresh schedule from the refresh history.
    1. Set the new owner's schedule and save the settings.
 
 1. If the **Status** of the dataflow is **Failed**:

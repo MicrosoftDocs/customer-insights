@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Common Data Model folder using an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 09/09/2022
+ms.date: 09/29/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -211,7 +211,7 @@ During data ingestion, some of the most common reasons a record might be conside
 
 ### Schema or data type mismatch
 
-If the data does not conform to the schema, the records are classified as corrupt. Correct either the source data or the schema and re-ingest the data.
+If the data does not conform to the schema, the ingestion process completes with errors. Correct either the source data or the schema and re-ingest the data.
 
 ### Partition files are missing
 
