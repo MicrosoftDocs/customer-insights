@@ -23,19 +23,12 @@ searchScope:
 
 Custom models lets you manage workflows based on Azure Machine Learning models. Workflows help you choose the data you want to generate insights from and map the results to your unified customer data. For more information about building custom ML models, see [Use Azure Machine Learning-based models](azure-machine-learning-experiments.md).
 
-## Responsible AI
-
-Predictions offer capabilities to create better customer experiences, improve business capabilities, and revenue streams. We strongly recommend you balance the value of your prediction against the impact it has and biases that may be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). You can also learn about [techniques and processes for responsible machine learning](/azure/machine-learning/concept-responsible-ml) specific to Azure Machine Learning.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
-
 ## Prerequisites
 
 - Web services published through [Azure Machine Learning batch pipelines](/azure/machine-learning/concept-ml-pipelines).
 - Pipeline must be published under a [pipeline endpoint](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 - An [Azure Data Lake Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) associated with your Azure Studio instance.
 - For Azure Machine Learning workspaces with pipelines, Owner or User Access Administrator permissions to the Azure Machine Learning Workspace.
-
 
   > [!NOTE]
   > Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
@@ -142,5 +135,14 @@ For the specific OData query to get data from a custom model entity, use the fol
 
 - What does the error "Couldn't save intelligence workflow" mean? 
   Users usually see this error message if they don't have Owner or User Access Administrator privileges on the workspace. The user needs a higher level of permissions to enable Customer Insights to process the workflow as a service rather than using the user credentials for subsequent runs of the workflow.
+
+- Is a private endpoint / private link for my custom model workflow supported?
+  Customer Insights does not currently support private endpoint for custom models out of the box, but a manual workaround is available. Please contact support for details.
+
+## Responsible AI
+
+Predictions offer capabilities to create better customer experiences, improve business capabilities, and revenue streams. We strongly recommend you balance the value of your prediction against the impact it has and biases that may be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). You can also learn about [techniques and processes for responsible machine learning](/azure/machine-learning/concept-responsible-ml) specific to Azure Machine Learning.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

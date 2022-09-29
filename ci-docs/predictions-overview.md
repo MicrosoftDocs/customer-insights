@@ -1,7 +1,7 @@
 ---
 title: Predictions overview
 description: "Prediction scenarios and options covered by the Dynamics 365 Customer Insights application."
-ms.date: 09/20/2022
+ms.date: 09/29/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -25,12 +25,12 @@ The easiest way to start with predicting data are predefined models, often refer
 - [Customer lifetime value](predict-customer-lifetime-value.md): Predicts the potential revenue of a customer throughout the entire interaction with a business.
 - [Product recommendation](predict-product-recommendation.md): Suggests sets of predictive product recommendations based on purchase behavior and customers with similar purchase patterns.
 - [Subscription churn](predict-subscription-churn.md): Predicts whether a customer is at risk for no longer using your company’s subscription products or services.
-- [Transactional churn](predict-transactional-churn.md): Predicts if a customer will no longer purchase your products or services in a certain time frame.
+- [Transactional churn](predict-transactional-churn.md): Predicts if an individual customer will no longer purchase your products or services in a certain time frame.
 - [Sentiment analysis](sentiment-analysis.md): Analyzes sentiment of customer feedback and identifies business aspects that are frequently mentioned.
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-- [Transactional churn](predict-transactional-churn.md): Predicts if a customer will no longer purchase your products or services in a certain time frame.
+- [Transactional churn](predict-transactional-churn.md): Predicts if a customer account will no longer purchase your products or services in a certain time frame.
 
 ---
 
@@ -67,7 +67,7 @@ Predictions can be refreshed on an automatic schedule or refreshed manually on d
 
 The input data usability report provides a consolidated view of the errors and warnings that your out-of-box predictions may be generating. It also gives recommendations on how to improve the model performance.
 
-The report is available after a model has completed its training process. It's created for each model separately, regardless if it completed successfully or not.
+The report is available after a model has completed its training process. It's created for each model separately, regardless of whether it completed training successfully or not.
 
 On the **My predictions** tab, select the prediction and choose **Input data usability report**. Or from the prediction details view, select **Input data usability report**.
 
