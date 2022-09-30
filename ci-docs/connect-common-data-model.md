@@ -215,9 +215,9 @@ If the data does not conform to the schema, the ingestion process completes with
 
 ### Partition files are missing
 
-- If ingestion was successful without any corrupt records, but you can't see any data, edit your model.json file to make sure partitions are specified. Then, [refresh the data source](data-sources.md#refresh-data-sources).
+- If ingestion was successful without any corrupt records, but you can't see any data, edit your model.json or manifest.json file to make sure partitions are specified. Then, [refresh the data source](data-sources.md#refresh-data-sources).
 
-- If data ingestion occurs at the same time as data sources are being refreshed during an automatic schedule refresh, the partition files can disappear or appear empty. Change the [system refresh schedule](schedule-refresh.md) to align with the upstream refresh schedule, or, change the refresh schedule for the data source. Align the timing so that refreshes do not all occur at once.
+- If data ingestion occurs at the same time as data sources are being refreshed during an automatic schedule refresh, the partition files may not be available or empty for Customer Insights to process. To align with the upstream refresh schedule, change the [system refresh schedule](schedule-refresh.md) or the refresh schedule for the data source. Align the timing so that refreshes do not all occur at once and provides the latest data to be processed in Customer Insights.
 
 ### Datetime fields in the wrong format
 
