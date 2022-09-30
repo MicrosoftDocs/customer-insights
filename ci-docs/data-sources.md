@@ -61,7 +61,9 @@ Select a data source to view available actions.
 
 ## Refresh data sources
 
-Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premise data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules which are set up during data ingestion. For attached data sources, data ingestion consumes the latest data available from that data source.
+Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premise data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules which are set up during data ingestion. For troubleshooting tips, see [Troubleshoot PPDF Power Query-based data source refresh issues](connect-power-query.md#troubleshoot-ppdf-power-query-based-data-source-refresh-issues).
+
+For attached data sources, data ingestion consumes the latest data available from that data source.
 
 Go to **Admin** > **System** > [**Schedule**](schedule-refresh.md) to configure system-scheduled refreshes of your ingested data sources.
 
@@ -78,7 +80,7 @@ To refresh a data source on demand:
 Data being ingested may have corrupt records which can cause the data ingestion process to complete with errors or warnings.
 
 > [!NOTE]
-> If data ingestion completes with errors, subsequent processing (such as unification or activity creation), that leverages this data source will be skipped. If ingestion completed with warnings, subsequent processing continues but some of the records may not be included.
+> If data ingestion completes with errors, subsequent processing (such as unification or activity creation) that leverages this data source will be skipped. If ingestion completed with warnings, subsequent processing continues but some of the records may not be included.
 
 These errors can be seen in the task details.
 
@@ -97,7 +99,7 @@ Corrupt records are shown in system-created entities.
    :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason." lightbox="media/corruption-reason.png":::
 
    > [!NOTE]
-   > **Data** > **Entities** only show a portion of the corrupt records. To view all the corrupt records for environments with your own storage account, look at the Customer Insights folder. You can also export the files to a container in your storage account using the Customer Insights export process.
+   > **Data** > **Entities** only show a portion of the corrupt records. To view all the corrupt records, export the files to a container in the storage account using the [Customer Insights export process](export-destinations.md). If you used your own storage account, you can also look at the Customer Insights folder in your storage account.
 
 1. Fix the corrupted data. For example, for Azure Data Lake data sources, [fix the data in the Data Lake Storage or update the data types in the manifest/model.json file](connect-common-data-model.md#common-reasons-for-ingestion-errors-or-corrupt-data). For Power Query data sources, fix the data in the source file and [correct the data type in the transformation step](connect-power-query.md#data-type-does-not-match-data) on the **Power Query - Edit queries** page.
 
