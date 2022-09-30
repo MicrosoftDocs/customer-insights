@@ -123,7 +123,7 @@ There are three primary sections of data within the results page:
   - **B** when the model accurately predicted at least 50% of the total predictions, and when the percentage of accurate predictions for customers who churned is up to 10% greater than the historical average churn rate.
   - **C** when the model accurately predicted less than 50% of the total predictions, or when the percentage of accurate predictions for customers who churned is less than the historical average churn rate.
   
-- **Likelihood to churn (number of customers)**: Groups of customers based on their predicted risk of churn. Optionally, [create segments of customers](.//prediction-based-segment.md) with high churn risk. Such segments help to understand where your cutoff should be for segment membership.  
+- **Likelihood to churn (number of customers)**: Groups of customers based on their predicted risk of churn. Optionally, [create segments of customers](prediction-based-segment.md) with high churn risk. Such segments help to understand where your cutoff should be for segment membership.  
 
   :::image type="content" source="media/subscription-churn-resultdistribution.PNG" alt-text="Graph showing distribution of churn results, broken into ranges from 0-100%":::
 
