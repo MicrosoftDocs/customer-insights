@@ -1,7 +1,7 @@
 ---
 title: "Connect to data in a Microsoft Dataverse managed data lake"
 description: "Import data from a Microsoft Dataverse managed data lake."
-ms.date: 07/26/2022
+ms.date: 08/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -66,5 +66,93 @@ To connect to a different Dataverse data lake, [create a new data source](#conne
 1. Click **Save** to apply your changes and return to the **Data sources** page.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## Common reasons for ingestion errors or corrupted data
+
+The following checks run on the ingested data to expose corrupted records:
+
+- The value of a field doesn't match with the data type of its column.
+- Fields contain characters that cause the columns to not match the expected schema. For example: incorrectly formatted quotes, unescaped quotes, or newline characters.
+- If there are datetime/date/datetimeoffset columns, their format must be specified in the model if it doesn't follow the standard ISO format.
+
+### Schema or data type mismatch
+
+If the data does not conform to the schema, the records are classified as corrupt. Correct either the source data or the schema and re-ingest the data.
+
+### Datetime fields in the wrong format
+
+The datetime fields in the entity are not in ISO or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in an entity should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or entity level in the model or manifest.json. For example:
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  In a manifest.json, the datetime format can be specified at the entity level or at the attribute level. At the entity level, use "exhibitsTraits" in the entity in the *.manifest.cdm.json to define the datatime format. At the attribute level, use "appliedTraits" in the attribute in the entityname.cdm.json.
+
+**Manifest.json at the entity level**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Entity.json at the attribute level**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
