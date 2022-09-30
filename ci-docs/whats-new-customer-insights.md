@@ -223,9 +223,9 @@ For more information, see [Change the owner of an environment](manage-environmen
 
 ### Data preparation process lists corruption reason for corrupted records
 
-Data preparation now shows the reason for corruption for all fields with corrupted data. The information is provided at the individual record level for easy identification. 
+Data preparation now shows the reason for corruption for all fields with corrupted data. The information is provided at the individual record level for easy identification.
 
-For more information, see [Corrupted data sources](entities.md#corrupted-data-sources).
+For more information, see [Corrupt data sources](data-sources.md#corrupt-data-sources).
 
 ### End of preview for reporting features in the engagement insights capability
 
