@@ -1,7 +1,7 @@
 ---
 title: "Predict subscription churn (contains video)"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
-ms.date: 09/20/2022
+ms.date: 09/30/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -34,18 +34,13 @@ You must have business knowledge to understand what churn means for your busines
   - **Transaction Date:** Date a subscription change happened. For example, a customer buying or canceling a subscription.
   - **Is it a recurring subscription:** Boolean true/false field that determines if the subscription will renew with the same subscription ID without customer intervention.
   - **Recurrence Frequency (in months):** For recurring subscriptions, the month the subscription will renew. For example, a yearly subscription that automatically renews for a customer every year for another year has the value 12.
+  - **Subscription Amount**: Amount of currency a customer pays for the subscription renewal. It can help identify patterns for different levels of subscriptions.
 - At least two activity records for 50% of the customers you want to calculate churn for. Customer activities must include:
   - **Primary key:** Unique identifier for an activity. For example, a website visit or a usage record showing the customer viewed a TV show episode.
   - **Timestamp:** Date and time of the event identified by the primary key.
   - **Event:** Name of the event you want to use. For example, a field called "UserAction" in a streaming video service could have the value of "Viewed".
   - **Details:** Detailed information about the event. For example, a field called "ShowTitle" in a streaming video service could have the value of a video a customer watched.
 - Less than 20% missing values in the data field of the provided entity.
-
-### Recommended data
-
-The following data is optional, but recommended for increased model performance.
-
-- **Subscription Amount** (optional): Amount of currency a customer pays for the subscription renewal. It can help identify patterns for different levels of subscriptions.
 
 ## Create a subscription churn prediction
 

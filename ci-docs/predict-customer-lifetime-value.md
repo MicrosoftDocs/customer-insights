@@ -1,7 +1,7 @@
 ---
 title: Predict customer lifetime value (CLV)
 description: "Predict revenue potential for active customers in the future."
-ms.date: 09/20/2022
+ms.date: 09/30/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -35,33 +35,23 @@ Determine what CLV means for your business. We support transaction-based CLV pre
 - At least [Contributor](permissions.md) permissions
 - At least 100 unique customers, preferably more than 10,000 customers
 - Customer Identifier, a unique identifier to match transactions to an individual customer
-- At least one year of transaction history, preferably two to three years. Transaction history must include:
+- At least one year of transaction history, preferably two to three years. Ideally, at least two to three transactions per customer ID, preferably across multiple dates. Transaction history must include:
   - **Transaction ID**: Unique identifier of each transaction
   - **Transaction date**: Date or time stamp of each transaction
   - **Transaction amount**: Monetary value (for example, revenue or profit margin) of each transaction
-- Less than 20% missing values in required fields
-
-Ideally, at least two to three transactions per customer ID, preferably across multiple dates.
-
-### Recommended data
-
-The following data is optional, but recommended for increased model performance. The more data the model can process, the more accurate the prediction. Therefore, we encourage you to ingest more customer activity data, if available.
-
-- Transaction history additional data:
   - **Label assigned to returns**: Boolean true/false value signifying whether the transaction is a return
   - **Product ID**: Product ID of product involved in the transaction
-
-- Additional data such as:
-  - Web activities: Website visit history or email history
-  - Loyalty activities: Loyalty reward points accrual and redemption history
-  - Customer service log: Service call, complaint, or return history
-  - Customer profile information
-
 - Data about customer activities:
   - **Primary key**: Unique identifier for an activity
   - **Timestamp**: Date and time of the event identified by the primary key
   - **Event (activity name)**: Name of event you want to use
   - **Details (amount or value)**: Details about the customer activity
+- Additional data such as:
+  - Web activities: Website visit history or email history
+  - Loyalty activities: Loyalty reward points accrual and redemption history
+  - Customer service log: Service call, complaint, or return history
+  - Customer profile information
+- Less than 20% missing values in required fields
 
 > [!NOTE]
 > Only one transaction history entity can be configured. If there are multiple purchase or transaction entities, combine them in Power Query before data ingestion.

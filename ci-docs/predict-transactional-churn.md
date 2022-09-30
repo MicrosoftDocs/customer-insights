@@ -1,7 +1,7 @@
 ---
 title: Transaction churn prediction (contains video)
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 09/20/2022
+ms.date: 09/30/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -29,19 +29,10 @@ For environments based on business accounts, we can predict transactional churn 
 - At least [Contributor permissions](permissions.md).
 - At least 10 customer profiles, preferably more than 1,000 unique customers.
 - Customer Identifier, a unique identifier to match transactions to your customers.
-- Transaction data for at least double the selected time window. Preferably, two to three years of transaction history. Transaction history must include:
+- Transaction data for at least double the selected time window such as two to three years of transaction history. Ideally at least two transactions per customer. Transaction history must include:
   - **Transaction ID**: Unique identifier of a purchase or transaction.
   - **Transaction Date**: Date of the purchase or transaction.
   - **Value of the transaction**: Currency or numerical value amount of the transaction.
-- Less than 20% of missing values in the data field of the entity provided
-
-Ideally at least two transactions per customer.
-
-### Recommended data
-
-The following data is optional, but recommended for increased model performance. The more data the model can process, the more accurate the prediction. Therefore, we encourage you to ingest more customer activity data, if available.
-
-- Transaction history data:
   - **Unique product ID**: ID of the product or service purchased if your data is at a line item level.
   - **Whether this transaction was a return**: A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we infer a return.
 - Customer activity data:
@@ -50,8 +41,9 @@ The following data is optional, but recommended for increased model performance.
   - **Timestamp:** Date and time of the event identified by the primary key.
   - **Event:** Name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
   - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
+- Less than 20% of missing values in the data field of the entity provided
 
-For business accounts (B-to-B), optionally add customer data aligned toward more static attributes to ensure the model performs best:
+For business accounts (B-to-B), add customer data aligned toward more static attributes to ensure the model performs best:
 - **CustomerID:** Unique identifier for a customer.
 - **Created Date:** Date the customer was initially added.
 - **State or Province:** State or province location of a customer.

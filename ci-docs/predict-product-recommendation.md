@@ -1,7 +1,7 @@
 ---
 title: "Predict product recommendations"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 09/19/2022
+ms.date: 09/30/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -29,20 +29,13 @@ The output of this model provides recommendations based on the product ID. Your 
 - At least [Contributor permissions](permissions.md)
 - At least 100 customers, preferably more than 10,000 customers.
 - Customer Identifier, a unique identifier to match transactions to an individual customer
-- At least one year of transactional data, preferably two to three years to include some seasonality. Transaction history must include:
+- At least one year of transactional data, preferably two to three years to include some seasonality. Ideally, at least three or more transactions per Customer ID. Transaction history must include:
   - **Transaction ID**: Unique identifier of a purchase or transaction.
   - **Transaction date**: Date of the purchase or transaction.
   - **Value of the transaction**: Numerical value of the purchase or transaction.
   - **Unique product ID**: ID of the product or service purchased if your data is at a line item level.
-
-Ideally, at least three or more transactions per Customer ID.
-
-### Recommended data
-
-The following data is optional, but recommended for increased model performance. The more data the model can process, the more accurate the prediction. Therefore, we encourage you to ingest more customer activity data, if available.
-
+  - **Purchase or return**: A boolean true/false value where *true* identifies that a transaction was a return. If the Purchase or Return data is not provided in the model and the **Value of the transaction** is negative, we infer a return.
 - A product catalog data entity to use as a product filter.
-- **Purchase or return**: A boolean true/false value where *true* identifies that a transaction was a return. If the Purchase or Return data is not provided in the model and the **Value of the transaction** is negative, we infer a return.
 
 > [!NOTE]
 > - The model requires the transaction history of your customers where transaction is any data that describes a user-product interaction. For example, purchasing a product, taking a class, or attending an event.
