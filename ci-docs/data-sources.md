@@ -75,10 +75,10 @@ To refresh a data source on demand:
 
 ## Corrupt data sources
 
-During ingestion, records can contain corrupted data which causes the data ingestion process to complete with errors or warnings.
+Data being ingested may have corrupt records which can cause the data ingestion process to complete with errors or warnings.
 
 > [!NOTE]
-> If data ingestion completes with errors, subsequent processing for the data source, such as unification or activity creation, does not occur. If ingestion completed with warnings, subsequent processing continues.
+> If data ingestion completes with errors, subsequent processing (such as unification or activity creation), that leverages this data source will be skipped. If ingestion completed with warnings, subsequent processing continues but some of the records may not be included.
 
 These errors can be seen in the task details.
 
@@ -97,7 +97,7 @@ Corrupt records are shown in system-created entities.
    :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason." lightbox="media/corruption-reason.png":::
 
    > [!NOTE]
-   > **Data** > **Entities** only show a portion of the corrupt records. To view all the corrupt records, look at the Customer Insights folder in your storage account.
+   > **Data** > **Entities** only show a portion of the corrupt records. To view all the corrupt records for environments with your own storage account, look at the Customer Insights folder. You can also export the files to a container in your storage account using the Customer Insights export process.
 
 1. Fix the corrupted data. For example, for Azure Data Lake data sources, [fix the data in the Data Lake Storage or update the data types in the manifest/model.json file](connect-common-data-model.md#common-reasons-for-ingestion-errors-or-corrupt-data). For Power Query data sources, fix the data in the source file and [correct the data type in the transformation step](connect-power-query.md#data-type-does-not-match-data) on the **Power Query - Edit queries** page.
 
