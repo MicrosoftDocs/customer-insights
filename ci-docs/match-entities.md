@@ -2,7 +2,7 @@
 title: "Match conditions for data unification"
 description: "Match entities to create unified customer profiles."
 recommendations: false
-ms.date: 07/27/2022
+ms.date: 10/07/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -130,8 +130,8 @@ You can specify conditions that override the default match logic. There are four
 
 |Option  |Description |Example  |
 |---------|---------|---------|
-|Always match     | Defines values that are always matched.         |  Always match *Mike* and *MikeR*.       |
-|Never match     | Defines values that never match.        | Never match *John* and *Jonathan*.        |
+|Always match     | Defines values for the primary keys that are always matched.         |  Always match the row with primary key *12345* to the row with primary key *54321*.       |
+|Never match     | Defines values for the primary keys that never match.        | Never match the row with primary key *12345* to the row with primary key *54321*.        |
 |Bypass            | Defines values that the system should always ignore in the match phase. |  Ignore the values *11111* and *Unknown* during match.        |
 |Alias mapping    | Defining values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
 
