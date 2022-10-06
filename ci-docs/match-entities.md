@@ -135,11 +135,13 @@ You can specify conditions that override the default match logic. There are four
 |Bypass            | Defines values that the system should always ignore in the match phase. |  Ignore the values *11111* and *Unknown* during match.        |
 |Alias mapping    | Defining values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
 
+Each list of conditions is provided to Customer Insights in a separate table in Data sources. If records are discovered that need special matching treatment, you can update the appropriate data source and the update will be used during the next unification processing. This process could be incorporated in a line of business application. An example might be differentiating twin siblings with nearly the same name living at the same address. 
+
 1. Select **Custom**.
 
    :::image type="content" source="media/m3_match_custom.png" alt-text="Custom button":::
 
-1. Choose the **Custom type** and select **Download template**. You need a separate template for each match option.
+1. Choose the **Custom type** and select **Download template**. Rename the template so that it does not include spaces. You need a separate template for each match option.
 
 1. Open the downloaded template file and fill in the details. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
     - Entity1: Sales
@@ -147,7 +149,7 @@ You can specify conditions that override the default match logic. There are four
     - Entity2: Contact
     - Entity2Key: 34567
 
-   The same template file can specify custom match records from multiple entities.
+   The same template file can specify custom match records from multiple entities. Entity names are case sensitive.
 
    If you want to specify custom matching for deduplication on an entity, provide the same entity as both Entity1 and Entity2 and set the different primary key values.
 
