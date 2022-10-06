@@ -1,7 +1,7 @@
 ---
 title: "Export segments to Braze (preview)"
 description: "Learn how to configure the connection and export to Braze."
-ms.date: 07/25/2022
+ms.date: 10/06/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -27,7 +27,7 @@ Export segments of unified customer profiles to Braze and use them for marketing
 
 - Up 1 million customer profiles to Braze, which can take up to 40 minutes to complete. The number of customer profiles that you can export to Braze depends on your contract with Braze.
 - Segments only.
-- Azure Private links are not supported for the Braze export.
+- Azure Private Link isn't supported for the Braze export.
 
 ## Set up connection to Braze
 
