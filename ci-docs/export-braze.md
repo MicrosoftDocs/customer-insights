@@ -61,7 +61,7 @@ Export segments of unified customer profiles to Braze and use them for marketing
 
 1. In the **Connection for export** field, choose a connection from the Braze section. Contact an administrator if no connection is available.
 
-3. Enter your REST Endpoint into the Hostname field. You need to enter it in the following format: rest.iad-03.braze.com
+1. Enter your REST Endpoint into the **Hostname** field in the following format: `rest.iad-03.braze.com`.
 
 1. Enter a name for the export.
 
