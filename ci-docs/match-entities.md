@@ -142,10 +142,10 @@ Specify conditions that override the default match logic. There are four options
 1. Choose the **Custom type** and select **Download template**. Rename the template without using spaces. Use a separate template for each match option.
 
 1. Open the downloaded template file and fill in the details. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. Entity names are case sensitive. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
-    - Entity1: Sales
-    - Entity1Key: 12345
-    - Entity2: Contact
-    - Entity2Key: 34567
+   - Entity1: Sales
+   - Entity1Key: 12345
+   - Entity2: Contact
+   - Entity2Key: 34567
 
    The same template file can specify custom match records from multiple entities.
 
