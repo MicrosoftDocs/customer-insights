@@ -149,8 +149,8 @@ Specify conditions that override the default match logic. There are four options
 
    The same template file can specify custom match records from multiple entities.
 
-   < [!NOTE]
-   < If you want to specify custom matching for deduplication on an entity, provide the same entity as both Entity1 and Entity2 and set the different primary key values. You must define at least one deduplication rule to the entity to use custom matching.
+   > [!NOTE]
+   > If you want to specify custom matching for deduplication on an entity, provide the same entity as both Entity1 and Entity2 and set the different primary key values. You must define at least one deduplication rule to the entity to use custom matching.
 
 1. After adding all the overrides, save the template file.
 
