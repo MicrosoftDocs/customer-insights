@@ -56,7 +56,7 @@ A categorical attribute like *customer satisfaction* as the primary attribute re
 
 ## Generate suggested segments
 
-1. Go to **Segments** and select the **Suggestions (preview)** tab.
+1. Go to **Data** > **Segments** and select the **Suggestions (preview)** tab.
 
 1. Select **Find new suggestions** and choose **Improve a measure/metric**. Select **Start**.
 
@@ -73,7 +73,7 @@ Depending on the number of customer profiles and selected attributes, it can tak
 
 ## Manage suggested segments
 
-Go to **Segments** and select the **Suggestions (preview)** tab. In the **Attribute-based segment suggestions** section, select a suggested segment to view available actions.
+Go to **Data** > **Segments** and select the **Suggestions (preview)** tab. In the **Attribute-based segment suggestions** section, select a suggested segment to view available actions.
 
 - **View** the suggested segment details and the attribute values or rules that the AI model learned.
 - **Save as segment** the suggestion as a segment. It displays on the **All segments** tab and can be [refreshed, edited, or deleted](segments.md).

@@ -60,7 +60,7 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. Repeat the same steps for other optional fields.
 
-1. Select the segments you want to export. We'll create one or more segments with the same name as the selected segments in MoEngage under **Segments** > **Custom Segments**.
+1. Select the segments you want to export. We'll create one or more segments with the same name as the selected segments in MoEngage under **Data** > **Segments** > **Custom Segments**.
 
 1. Select **Save**.
 

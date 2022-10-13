@@ -123,7 +123,7 @@ When you copy the environment configuration, a confirmation message displays whe
    > [!TIP]
    > For accounts and contacts, select **Unify accounts** > **Unify profiles and dependencies**.
 
-1. When the data unification is complete, go to **Measures** and **Segments** to refresh them.
+1. When the data unification is complete, go to **Data** > **Measures** and **Data** > **Segments** to refresh them.
 
 1. Go to **Admin** > **Connections** to reauthenticate the connections in your new environment.
 

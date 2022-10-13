@@ -29,7 +29,7 @@ A tag is a label that’s used to categorize and organize items such as segments
 
 You can view, add, and remove tags from an item. Add tags as you create an item. After creation, manage tags from the list view. An item can have up to 20 tags.
 
-1. Go to the list view. For example, go to **Segments**.
+1. Go to the list view. For example, go to **Data** > **Segments**.
 
 1. Select the item whose tags you want to manage.
 
@@ -51,7 +51,7 @@ You can view, add, and remove tags from an item. Add tags as you create an item.
 
 Use tags to filter your list of items.
 
-1. Go to the list view. For example, go to **Segments**.
+1. Go to the list view. For example, go to **Data** > **Segments**.
 
 1. Select **Filter** on the top right of the page.
 
@@ -65,7 +65,7 @@ Use tags to filter your list of items.
 
 Customize columns to arrange your list of items. You can add or remove columns and change the order of the columns.
 
-1. Go to the list view. For example, go to **Segments**.
+1. Go to the list view. For example, go to **Data** > **Segments**.
 
 1. Select **Columns** on the top right of the page.
 

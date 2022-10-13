@@ -49,7 +49,7 @@ The example above illustrates the segmentation capability. We've defined a segme
 
 ## Create a new segment with segment builder
 
-1. Go to **Segments**.
+1. Go to **Data** > **Segments**.
 
 1. Select **New** > **Build your own**. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
 
