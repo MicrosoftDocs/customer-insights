@@ -60,7 +60,7 @@ Determine what CLV means for your business. We support transaction-based CLV pre
 
 Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer lifetime value** tile.
 
@@ -160,7 +160,7 @@ The **Review and run** step shows a summary of the configuration and provides a 
 
 ## View prediction results
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. In the **My predictions** tab, select the prediction you want to view.
 

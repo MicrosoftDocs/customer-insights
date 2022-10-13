@@ -45,7 +45,7 @@ If an organization already uses machine learning scenarios based on Azure Machin
 
 ## Manage existing predictions
 
-Go to the **Intelligence** > **Predictions** page. On the **My predictions** tab, view the predictions you created, their prediction type, output entity name, status, the last time the prediction was edited, and the last time the data was refreshed. You can sort the list of predictions by any column.
+Go to the **Insights** > **Predictions** page. On the **My predictions** tab, view the predictions you created, their prediction type, output entity name, status, the last time the prediction was edited, and the last time the data was refreshed. You can sort the list of predictions by any column.
 
 Select a prediction to view available actions.
 

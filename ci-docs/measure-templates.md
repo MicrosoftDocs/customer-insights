@@ -36,7 +36,7 @@ Available measure templates:
 
 ## Build a new measure using a template
 
-1. Go to **Data** > **Measures**.
+1. Go to **Insights** > **Measures**.
 
 1. Select **New** and select **Choose a template**.
 

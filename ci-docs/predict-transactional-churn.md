@@ -56,7 +56,7 @@ For business accounts (B-to-B), add customer data aligned toward more static att
 
 ## Create a transaction churn prediction
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer churn model** tile.
 
@@ -175,7 +175,7 @@ The **Review and run** step shows a summary of the configuration and provides a 
 
 ## View prediction results
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. In the **My predictions** tab, select the prediction you want to view.
 

@@ -30,7 +30,7 @@ Create measures on the level of individual customers (customer attribute, custom
 
 - Business measure: Generates output as its own entity and shows on the home page of your Customer Insights environment.
 
-1. Go to **Data** > **Measures**.
+1. Go to **Insights** > **Measures**.
 
 1. Select **New** > **Build your own**.
 
@@ -102,7 +102,7 @@ Create measures on the level of individual accounts (customer measure) or on the
 
 - Business measure: Generates output as its own entity and shows on the home page of your Customer Insights environment.
 
-1. Go to **Data** > **Measures**.
+1. Go to **Insights** > **Measures**.
 
 1. Select **New**.
 

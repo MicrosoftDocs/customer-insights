@@ -50,7 +50,7 @@ Find similar customers in your customer base using artificial intelligence. You 
 
 ## View the similar segment
 
-After processing the similar segment, you'll find the new segment listed on the **Data** > **Segments** page with the type **Expansion**.
+After processing the similar segment, you'll find the new segment listed on the **Insights** > **Segments** page with the type **Expansion**.
 
 Select **View** to see result distribution across [similarity scores](#about-similarity-scores) and similarity score values under **Segment members preview**.
 

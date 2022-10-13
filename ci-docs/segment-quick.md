@@ -22,7 +22,7 @@ Quick segments let you build simple segments with a single operator quickly for 
 
 ## Create a new segment with quick segments
 
-1. Go to **Data** > **Segments**.
+1. Go to **Insights** > **Segments**.
 
 1. Select **New** > **Create from**.
    - Select the **Profiles** option to build a segment that is based on the *unified customer* entity.

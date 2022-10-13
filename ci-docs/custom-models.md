@@ -35,7 +35,7 @@ Custom models lets you manage workflows based on Azure Machine Learning models. 
 
 ## Add a new workflow
 
-1. Go to **Intelligence** > **Custom models** and select **New workflow**.
+1. Go to **Insights** > **Custom models** and select **New workflow**.
 
 1. Provide a recognizable **Name**.
 
@@ -75,7 +75,7 @@ Custom models lets you manage workflows based on Azure Machine Learning models. 
 
 ## Manage an existing workflow
 
-Go to **Intelligence** > **Custom models** to view the workflows you created.
+Go to **Insights** > **Custom models** to view the workflows you created.
 
 Select a workflow to view available actions.
 
@@ -85,7 +85,7 @@ Select a workflow to view available actions.
 
 ### Edit a workflow
 
-1. Go to **Intelligence** > **Custom models**.
+1. Go to **Insights** > **Custom models**.
 
 1. Next to the workflow you'd like to update, select the vertical ellipsis (&vellip;) and select **Edit**.
 
@@ -104,7 +104,7 @@ Select a workflow to view available actions.
 
 ### Delete a workflow
 
-1. Go to **Intelligence** > **Custom models**.
+1. Go to **Insights** > **Custom models**.
 
 1. Next to the workflow you'd like to delete, select the vertical ellipsis (&vellip;) and select  **Delete**.
 

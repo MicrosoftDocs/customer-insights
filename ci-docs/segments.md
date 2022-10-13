@@ -45,7 +45,7 @@ Segment of accounts or segment of contacts (preview) with segment builder: [Buil
 
 ## Manage existing segments
 
-Go to the **Data** > **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
+Go to the **Insights** > **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
 
 > [!TIP]
 > In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
@@ -100,7 +100,7 @@ To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **Sys
 
 Export segments to other apps to further use the data. Export a segment from the segments page or the [exports page](export-destinations.md).
 
-1. Go to the **Data** > **Segments** page and select the segment you want to export.
+1. Go to the **Insights** > **Segments** page and select the segment you want to export.
 
 1. Select **Manage exports**. The page **Exports (preview) for segment** opens. View all configured exports grouped by whether they contain the current segment or not.
 

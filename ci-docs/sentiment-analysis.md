@@ -65,7 +65,7 @@ Customer Insights can process up to 10 million feedback records for a single mod
 
 ## Configure a sentiment analysis
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer sentiment analysis (preview)** tile.
 
@@ -97,7 +97,7 @@ Customer Insights can process up to 10 million feedback records for a single mod
 
 ## View analysis results
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. In the the **My predictions** tab, select the prediction you want to view.
 

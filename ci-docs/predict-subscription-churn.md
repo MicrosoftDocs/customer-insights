@@ -46,7 +46,7 @@ You must have business knowledge to understand what churn means for your busines
 
 Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer churn model** tile.
 
@@ -108,7 +108,7 @@ The **Review and run** step shows a summary of the configuration and provides a 
 
 ## View prediction results
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. In the **My predictions** tab, select the prediction you want to view.
 

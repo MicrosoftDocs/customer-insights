@@ -28,7 +28,7 @@ The results of predictions sometimes only apply to a subset of your customers. I
 
 ## Create a customer segment based on predictions
 
-1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
+1. Go to **Insights** > **Predictions** and select the **My predictions** tab.
 
 1. Select the model you want to review and select **View**.
 

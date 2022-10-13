@@ -49,7 +49,7 @@ Suggestions are generated based on the selected input data.
 
 ## Generate suggested segments
 
-1. Go to **Data** > **Segments** and select the **Suggestions (preview)** tab.
+1. Go to **Insights** > **Segments** and select the **Suggestions (preview)** tab.
 
 1. Select **Find new suggestions** and choose **See or anticipate customer behavior**. Select **Start**.
 
@@ -69,7 +69,7 @@ After generating the suggestions, you can filter them by the dimension or value 
 
 ## Manage suggested segments
 
-Go to **Data** > **Segments** and select the **Suggestions (preview)** tab. In the **Activity-based suggestions** section, select a suggested segment to view available actions.
+Go to **Insights** > **Segments** and select the **Suggestions (preview)** tab. In the **Activity-based suggestions** section, select a suggested segment to view available actions.
 
 - **See suggestion** to view the details of that segment like the extent of each dimension in comparison to the target group. It also highlights the number of potential members in the segment and the corresponding percentage of the total customers.
 - **Create segment** to save the suggested as a segment. It displays on the **All segments** tab and can be [refreshed or deleted](segments.md). You can't edit the segment details. However, you can change the input criteria for the suggestions and generate different suggestions.
