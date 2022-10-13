@@ -38,7 +38,7 @@ Customer Insights sends the following event logs:
 
 ### Set up diagnostics with Azure Monitor
 
-1. In Customer Insights, go to **Admin** > **System** and select the **Diagnostics** tab.
+1. In Customer Insights, go to **Settings** > **System** and select the **Diagnostics** tab.
 
 1. Select **Add destination**.
 
@@ -83,7 +83,7 @@ Under the **Queries** window, expand the **Audit** solution and locate the examp
 
 ## Remove a diagnostics destination
 
-1. Go to **Admin** > **System** and select the **Diagnostics** tab.
+1. Go to **Settings** > **System** and select the **Diagnostics** tab.
 
 1. Select the diagnostics destination in the list.
 

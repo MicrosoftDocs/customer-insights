@@ -27,7 +27,7 @@ Quick segments let you build simple segments with a single operator quickly for 
 1. Select **New** > **Create from**.
    - Select the **Profiles** option to build a segment that is based on the *unified customer* entity.
    - Select the **Measures** option to build a segment around measures you have previously created.
-   - Select the **Intelligence** option to build a segment around one of the output entities you generated using either the **Predictions** or **Custom Models** capabilities.
+   - Select the **Insights** option to build a segment around one of the output entities you generated using either the **Predictions** or **Custom Models** capabilities.
 
 1. In the **New quick segment** dialog box, select an attribute from the **Field** dropdown. Based on your selection, the system provides different values.
    - For categorical fields, the 10 top customer counts display. Choose a **Value** and select **Review**.

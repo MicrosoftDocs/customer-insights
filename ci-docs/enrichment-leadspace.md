@@ -25,7 +25,7 @@ Leadspace is a data science company that provides a B-to-B Customer Data Platfor
 
 You must be an [administrator](permissions.md#admin) in Customer Insights and have the “perpetual key” (referred to as **Leadspace token**).
 
-1. Select **Add connection** when configuring an enrichment or go to **Admin** > **Connections** and select **Set up** on the Leadspace tile.
+1. Select **Add connection** when configuring an enrichment or go to **Settings** > **Connections** and select **Set up** on the Leadspace tile.
 
    :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="Leadspace connection configuration page.":::
 

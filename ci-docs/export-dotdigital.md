@@ -31,7 +31,7 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **DotDigital**.
 

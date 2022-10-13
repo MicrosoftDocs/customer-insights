@@ -125,7 +125,7 @@ When you copy the environment configuration, a confirmation message displays whe
 
 1. When the data unification is complete, go to **Insights** > **Measures** and **Insights** > **Segments** to refresh them.
 
-1. Go to **Admin** > **Connections** to reauthenticate the connections in your new environment.
+1. Go to **Settings** > **Connections** to reauthenticate the connections in your new environment.
 
 1. Go to **Data** > **Enrichment** and **Data** > **Exports** to reactivate them.
 

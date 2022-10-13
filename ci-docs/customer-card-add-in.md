@@ -72,7 +72,7 @@ You may need to sign in with your admin credentials for the Dynamics 365 app to 
 
 1. Select **Save configuration** to save the settings.
 
-1. Next, you need to assign security roles in Dynamics 365 so users can customize and see the customer card. In Dynamics 365, go to **Settings** > **Security** > **Users**. Select the users to edit user roles and select **Manage roles**.
+1. Next, you need to assign security roles in Dynamics 365 so users can customize and see the customer card. In Dynamics 365, go to **Settings** > **Permissions** > **Users**. Select the users to edit user roles and select **Manage roles**.
 
 1. Assign the **Customer Insights Card Customizer** role to users who will customize the content shown on the card for the whole organization.
 

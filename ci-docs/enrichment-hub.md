@@ -81,7 +81,7 @@ You can also create [segments](segments.md) or [measures](measures.md) from enri
 
 Once run, enrichments can be refreshed on an automatic schedule or refreshed manually on demand.
 
-1. To manually refresh one or more enrichments, select them and choose **Run**. To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**. The processing time depends on the size of your customer data.
+1. To manually refresh one or more enrichments, select them and choose **Run**. To [schedule an automatic refresh](schedule-refresh.md), go to **Settings** > **System** > **Schedule**. The processing time depends on the size of your customer data.
 
 1. Optionally, [see the progress of the enrichment process](#see-the-progress-of-the-enrichment-process).
 

@@ -38,7 +38,7 @@ The Power Automate connector provides other actions than the available triggers.
 
 ## Create a Power Automate flow
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. On the **Power Automate** tile, select **Set up**.
 

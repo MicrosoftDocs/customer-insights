@@ -106,7 +106,7 @@ Review the article [about customer activities](activities.md). The following inf
 
 With the unified customer profiles in place and activity, run the transaction churn prediction.
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer churn model**.
 
@@ -158,6 +158,6 @@ Running the production model creates a new entity, which is listed on **Data** >
 You now have a segment that is dynamically updated which identifies high churn-risk customers. For more information, see [Create and manage segments](segments.md).
 
 > [!TIP]
-> You can also create a segment for a prediction model from the **Insights** > **Segments** page by selecting **New** and choosing **Create from** > **Intelligence**. For more information, see [Create a new segment with quick segments](segment-quick.md).
+> You can also create a segment for a prediction model from the **Insights** > **Segments** page by selecting **New** and choosing **Create from** > **Insights**. For more information, see [Create a new segment with quick segments](segment-quick.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

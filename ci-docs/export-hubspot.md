@@ -29,7 +29,7 @@ Export segments of unified customer profiles to HubSpot and use them for email m
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **HubSpot** to configure the connection.
 

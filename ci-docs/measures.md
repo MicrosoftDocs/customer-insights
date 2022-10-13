@@ -58,7 +58,7 @@ Select next to a measure to view available actions. Select the measure name to p
 
 ## Refresh measures
 
-Measures can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more measures, select them and choose **Refresh**. To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**.
+Measures can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more measures, select them and choose **Refresh**. To [schedule an automatic refresh](schedule-refresh.md), go to **Settings** > **System** > **Schedule**.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

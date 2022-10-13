@@ -33,7 +33,7 @@ Exports to Dynamics 365 Sales is limited to 100,000 per segment, which can take 
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Dynamics 365 Sales**.
 

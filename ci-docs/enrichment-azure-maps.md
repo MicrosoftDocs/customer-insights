@@ -25,7 +25,7 @@ Azure Maps provide location-centric data and services to deliver experiences bas
 
 You must be an [administrator](permissions.md#admin) in Customer Insights and have an active Azure Maps API key.
 
-1. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the Azure Maps tile.
+1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the Azure Maps tile.
 
    :::image type="content" source="media/enrichment-azure-maps-connection.png" alt-text="Azure Maps connection configuration page.":::
 

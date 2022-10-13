@@ -25,7 +25,7 @@ View system information, system status, and API usage.
 
 View details about the real-time API usage and see which events happened in a given time frame.
 
-1. Go to **Admin** > **System** and select the **API usage** tab.
+1. Go to **Settings** > **System** and select the **API usage** tab.
 
 1. **Select a time frame** to view.
 
@@ -39,7 +39,7 @@ View details about the real-time API usage and see which events happened in a gi
 
 View the environment display name, ID, region, type and session ID.
 
-1. Go to **Admin** > **System** and select the **About** tab.
+1. Go to **Settings** > **System** and select the **About** tab.
 
 1. To view the language and country/region, select the **General** tab.
 
@@ -49,7 +49,7 @@ Customer Insights [supports many languages](/dynamics365/get-started/availabilit
 
 Imported data and information you entered manually aren't translated.
 
-1. Go to **Admin** > **System** and select the **General** tab.
+1. Go to **Settings** > **System** and select the **General** tab.
 
 1. To change your preferred language, choose a **Language** from the dropdown.
 
@@ -61,7 +61,7 @@ Imported data and information you entered manually aren't translated.
 
 Track the progress of tasks, data ingestion, data exports, and several other important product processes. Review the information to ensure the completeness of your active tasks and processes.
 
-1. Go to **Admin** > **System** and select the **Status** tab.
+1. Go to **Settings** > **System** and select the **Status** tab.
 
    Status and processing information for various processes display. View the **Name** of the task, the **Status** of its most recent run, and when it was **Last updated**.
 

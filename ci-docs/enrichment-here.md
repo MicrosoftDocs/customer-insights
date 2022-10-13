@@ -25,7 +25,7 @@ HERE Technologies is a location platform company that provides location-centric 
 
 You must be an [administrator](permissions.md#admin) in Customer Insights and have an active HERE Technologies API key.
 
-1. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the HERE Technologies tile.
+1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the HERE Technologies tile.
 
 1. Enter a name for the connection and a valid HERE Technologies API key.
 

@@ -23,7 +23,7 @@ Use your customer data in Salesforce Marketing Cloud by exporting them through a
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Salesforce Marketing Cloud**.
 

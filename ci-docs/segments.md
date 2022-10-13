@@ -89,7 +89,7 @@ The lower part contains a list of the segment members.
 
 Segments can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more segments, select them and choose **Refresh**.
 
-To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**. The following rules apply:
+To [schedule an automatic refresh](schedule-refresh.md), go to **Settings** > **System** > **Schedule**. The following rules apply:
 
 - All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. Once the refresh is complete, the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
 - Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segment was run or refreshed manually.

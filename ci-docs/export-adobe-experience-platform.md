@@ -50,7 +50,7 @@ We'll configure the export from Customer Insights to an Azure Blob Storage accou
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Azure Blob Storage**.
 

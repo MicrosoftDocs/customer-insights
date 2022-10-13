@@ -44,7 +44,7 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
 You must be an [administrator](permissions.md#admin) in Customer Insights and have the credentials from Dun & Bradstreet Connect.
 
-1. Select **Add connection** when configuring an enrichment or go to **Admin** > **Connections** and select **Set up** on the Dun & Bradstreet tile.
+1. Select **Add connection** when configuring an enrichment or go to **Settings** > **Connections** and select **Set up** on the Dun & Bradstreet tile.
 
 1. Enter a name for the connection.
 

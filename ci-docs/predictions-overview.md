@@ -59,7 +59,7 @@ Select a prediction to view available actions.
 
 ### Refresh a prediction
 
-Predictions can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh all predictions, select **Refresh all**. To manually refresh a prediction, select it and select **Refresh**. To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**.
+Predictions can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh all predictions, select **Refresh all**. To manually refresh a prediction, select it and select **Refresh**. To [schedule an automatic refresh](schedule-refresh.md), go to **Settings** > **System** > **Schedule**.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

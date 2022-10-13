@@ -46,7 +46,7 @@ The output of this model provides recommendations based on the product ID. Your 
 
 Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Product recommendations (preview)** tile.
 

@@ -31,7 +31,7 @@ We currently support enriching customer profiles in the United States only.
 
 You must be an [administrator](permissions.md#admin) in Customer Insights and have an Experian User ID, Party ID, and Model Number.
 
-1. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the Experian tile.
+1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the Experian tile.
 
    :::image type="content" source="media/enrichment-Experian-connection.png" alt-text="Experian connection configuration pane.":::
 
