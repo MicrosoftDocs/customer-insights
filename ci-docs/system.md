@@ -98,7 +98,7 @@ Refresh for tasks and processes is run according to the [configured schedule](sc
 |Activity  |Runs manually (single time refresh). Depends on merge process. Insights depend on its processing.|
 |Analysis linking |Runs manually (single time refresh). Depends on segments.  |
 |Analysis preparation |Runs manually (single time refresh). Depends on segments.  |
-|Data preparation   |Needs an entity to run on. Data source entities depend on ingestion. Enriched entities depends on enrichments. The Customer entity depends on merge.  |
+|Data preparation   |Needs a table to run on. Data source tables depend on ingestion. Enriched tables depends on enrichments. The Customer table depends on merge.  |
 |Data sources   |Doesn't depend on any other process. Match depends on the successful completion of this process.  |
 |Enrichments   |Runs manually (single time refresh). Depends on merge process. |
 |Exports destinations |Runs manually (single time refresh). Depends on segments.  |
@@ -111,7 +111,7 @@ Refresh for tasks and processes is run according to the [configured schedule](sc
 |Search   |Runs manually (single time refresh). Depends on merge process. |
 |Segments  |Runs manually (single time refresh). Depends on merge process. Insights depend on its processing.|
 |System   |Depends on the completion of the match process. Segments, measures, enrichment, search, activities, predictions, and data preparation depend on the successful completion of this process.   |
-|User  |Runs manually (single time refresh). Depends on entities.  |
+|User  |Runs manually (single time refresh). Depends on tables.  |
 
 Select the status of a process to see the progress details of the entire job it was in. The refresh processes above can help to understand what you can do to address a **Skipped** or **Queued** task or process.
 

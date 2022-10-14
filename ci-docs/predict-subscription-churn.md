@@ -40,7 +40,7 @@ You must have business knowledge to understand what churn means for your busines
   - **Timestamp:** Date and time of the event identified by the primary key.
   - **Event:** Name of the event you want to use. For example, a field called "UserAction" in a streaming video service could have the value of "Viewed".
   - **Details:** Detailed information about the event. For example, a field called "ShowTitle" in a streaming video service could have the value of a video a customer watched.
-- Less than 20% missing values in the data field of the provided entity.
+- Less than 20% missing values in the data field of the provided table.
 
 ## Create a subscription churn prediction
 
@@ -52,7 +52,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select **Subscription** for the type of churn and then **Get started**.
 
-1. **Name this model** and the **Output entity name** to distinguish them from other models or entities.
+1. **Name this model** and the **Output table name** to distinguish them from other models or tables.
 
 1. Select **Next**.
 
@@ -70,7 +70,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select the semantic activity type **Subscription** that contains the required subscription history information. If the activity has not been set up, select **here** and create it.
 
-1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
   
    :::image type="content" source="media/subscription-churn-required.png" alt-text="Add required data for Subscription churn model":::
 
@@ -82,7 +82,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select the semantic activity type that provides the customer activity information. If the activity has not been set up, select **here** and create it.
 
-1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
 
 1. Select **Next** and review the attributes required for this model.
 
@@ -114,7 +114,7 @@ The **Review and run** step shows a summary of the configuration and provides a 
 
 There are three primary sections of data within the results page:
 
-- **Training model performance**: Grades A, B, or C indicate the performance of the prediction and can help you make the decision to use the results stored in the output entity.
+- **Training model performance**: Grades A, B, or C indicate the performance of the prediction and can help you make the decision to use the results stored in the output table.
   
   :::image type="content" source="media/subscription-churn-modelperformance.PNG" alt-text="Image of the model score information box with the grade A.":::
 
@@ -132,6 +132,6 @@ There are three primary sections of data within the results page:
   :::image type="content" source="media/subscription-churn-influentialfactors.PNG" alt-text="List showing influential factors and their importance in predicting the churn result.":::
 
 > [!NOTE]
-> In the output entity for this model, *ChurnScore* is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md) with your preferred threshold. To view the churn score, go to **Data** > **Entities** and view the data tab for the output entity you defined for this model.
+> In the output table for this model, *ChurnScore* is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md) with your preferred threshold. To view the churn score, go to **Data** > **Tables** and view the data tab for the output table you defined for this model.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

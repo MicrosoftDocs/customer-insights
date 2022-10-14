@@ -49,7 +49,7 @@ We currently support the following regions: UK, Europe, North America.
 
 1. Map the contact email address field and select **Next**.
 
-1. Provide a **Name** for the enrichment and the **Output entity**.
+1. Provide a **Name** for the enrichment and the **Output table**.
 
 1. Select **Save enrichment** after reviewing your choices.
 
@@ -73,7 +73,7 @@ Select **Run** to start the enrichment process.
 
 ## View enrichment results
 
-[!INCLUDE [enrichment-results](includes/enrichment-results.md)] This is the *Office* entity. The *Office_UserEntity* contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)] This is the *Office* table. The *Office_UserTable* contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration.
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 

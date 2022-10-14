@@ -16,7 +16,7 @@ searchScope:
 
 # Create measures from templates
 
-Use predefined templates of commonly used [measures](measures.md) to create them. Templates build on mapped data from the *Unified Activity* entity. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
+Use predefined templates of commonly used [measures](measures.md) to create them. Templates build on mapped data from the *Unified Activity* table. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
 
 Measure templates are only supported in environments for **individual customers**. To create custom measures or create measures for B-to-B, see [Use measure builder](measure-builder.md).
 
@@ -56,10 +56,10 @@ Available measure templates:
 
    :::image type="content" source="media/measure-set-time-period.png" alt-text="Screenshot showing the time period section when configuring a measure from a template.":::
 
-1. In the next section, select **Add data** to choose the activities and map the corresponding data from your *Unified Activity* entity.
+1. In the next section, select **Add data** to choose the activities and map the corresponding data from your *Unified Activity* table.
 
-    1. Step 1 of 2: Under **Activity type**, choose the type of the entity you want to use. For **Activities**, select the entities you want to map, and then select **Next**.
-    1. Step 2 of 2: Choose the attribute from the *Unified Activity* entity for the component required by the formula. For example, for Average transaction value, it's the attribute representing the Transaction value. For **Activity timestamp**, choose the attribute from the *Unified Activity* entity that represents the date and time of the activity.
+    1. Step 1 of 2: Under **Activity type**, choose the table type you want to use. For **Activities**, select the tables you want to map, and then select **Next**.
+    1. Step 2 of 2: Choose the attribute from the *Unified Activity* table for the component required by the formula. For example, for Average transaction value, it's the attribute representing the Transaction value. For **Activity timestamp**, choose the attribute from the *Unified Activity* table that represents the date and time of the activity.
     1. Select **Save**.
 
     When the data mapping is successful, the status shows **Complete** and the name of the mapped activities and attributes display.

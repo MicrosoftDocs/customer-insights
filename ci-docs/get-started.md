@@ -32,13 +32,13 @@ The first time you sign in to Customer Insights, configure settings and explore 
 
 ## Step 3: Ingest, unify, and set up relationships for your data
 
-Unified profiles are the foundation to get insights and take action on the data. Bring in data from various sources and run the data unification process to combine unified profiles. Specify relationships between the ingested entities and use enrichment features to add information to the profiles.
+Unified profiles are the foundation to get insights and take action on the data. Bring in data from various sources and run the data unification process to combine unified profiles. Specify relationships between the ingested tables and use enrichment features to add information to the profiles.
 
 1. Ingest data by creating data sources from multiple options. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md), or  [Power Query connectors](connect-power-query.md).
 
 1. Run the [data unification process](data-unification.md) by identifying the [source fields](map-entities.md), removing [duplicates](remove-duplicates.md), [matching conditions](match-entities.md), and [unifying fields](merge-entities.md).
 
-1. Get familiar with the [entities the system creates](entities.md) and create [relationships between the ingested entities](relationships.md).
+1. Get familiar with the [tables the system creates](entities.md) and create [relationships between the ingested tables](relationships.md).
 
 ## Step 4: Enhance unified profiles with predictions, activities, and measures
 

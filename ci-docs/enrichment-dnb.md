@@ -74,7 +74,7 @@ We currently support the following country/region options: Canada (English) or U
 
 1. Select **Next**.
 
-1. Select the **Customer data set** and choose the profile or segment you want to enrich with company data from Dun & Bradstreet. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich with company data from Dun & Bradstreet. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
 1. Define which type of fields from your unified profiles to use for matching company data from Dun & Bradstreet. At least one of the fields **Name and address**, **Phone**, or **Email** is required.
 
@@ -86,7 +86,7 @@ We currently support the following country/region options: Canada (English) or U
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a **Name** for the enrichment and the **Output entity name**.
+1. Provide a **Name** for the enrichment and the **Output table name**.
 
 1. Select **Save enrichment** after reviewing your choices.
 

@@ -70,7 +70,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager.
 
-1. Map the corresponding attributes from your unified customer entity for the selected key identifier.
+1. Map the corresponding attributes from your unified customer table for the selected key identifier.
    > [!TIP]
    > The best chances for a match occur if you select **Email** as key identifier. Adding additional identifiers may improve the matching.
 

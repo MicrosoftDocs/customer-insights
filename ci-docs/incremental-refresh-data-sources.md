@@ -30,7 +30,7 @@ Customer Insights allows incremental refresh for data sources imported through P
 
 1. Select a data source that supports incremental refresh, such as [Azure SQL database](/power-query/connectors/azuresqldatabase).
 
-1. Select the entities or tables to ingest.
+1. Select the tables to ingest.
 
 1. Complete the transformation steps and select **Next**.
 
@@ -38,13 +38,13 @@ Customer Insights allows incremental refresh for data sources imported through P
    > [!TIP]
    > You can also apply incremental refresh later by editing an existing data source.
 
-1. On **Incremental refresh settings**, you'll configure the incremental refresh for all entities that you selected when creating the data source.
+1. On **Incremental refresh settings**, you'll configure the incremental refresh for all tables that you selected when creating the data source.
 
    :::image type="content" source="media/incremental-refresh-settings.png" alt-text="Configure incremental refresh settings.":::
 
-1. Select an entity, and provide the following details:
+1. Select a table, and provide the following details:
 
-   - **Define the primary key**: Select a primary key for the entity or table.
+   - **Define the primary key**: Select a primary key for the table.
    - **Define the "last updated" field**: This field will only display attributes of type date or time. Select an attribute that indicates when the records were last updated. It will be used to identify the records that fall within the incremental refresh time frame.
    - **Check for updates every**: Specify how long you want the incremental refresh time frame to be.
 
@@ -52,18 +52,18 @@ Customer Insights allows incremental refresh for data sources imported through P
 
 ## Configure incremental refresh for Azure Data Lake data sources
 
-Customer Insights allows incremental refresh for data sources connected to Azure Data Lake Storage. To use incremental ingestion and refresh for an entity, configure that entity when adding the Azure Data Lake data source or later when editing the data source. The entity data folder must contain the following folders:
+Customer Insights allows incremental refresh for data sources connected to Azure Data Lake Storage. To use incremental ingestion and refresh for a table, configure that table when adding the Azure Data Lake data source or later when editing the data source. The table data folder must contain the following folders:
 
 - **FullData**: Folder with data files containing initial records
 - **IncrementalData**: Folder with date/time hierarchy folders in **yyyy/mm/dd/hh** format containing the incremental updates. **hh** represents the UTC hour of the updates and contains the **Upserts** and **Deletes** folders. **Upserts** contains data files with updates to existing records or new records. **Deletes** contains data files with records to be removed.
 
-1. When adding or editing a data source, navigate to the **Attributes** pane for the entity.
+1. When adding or editing a data source, navigate to the **Attributes** pane for the table.
 
 1. Review the attributes. Make sure a created or last updated date attribute is set up with a *dateTime* **Data format** and a *Calendar.Date* **Semantic type**. Edit the attribute if necessary and select **Done**.
 
-1. From the **Select Entities** pane, edit the entity. The **Incremental ingestion** checkbox is selected.
+1. From the **Select Tables** pane, edit the table. The **Incremental ingestion** checkbox is selected.
 
-   :::image type="content" source="media/ADLS_inc_refresh.png" alt-text="Configure entities in a data source for incremental refresh.":::
+   :::image type="content" source="media/ADLS_inc_refresh.png" alt-text="Configure tables in a data source for incremental refresh.":::
 
    1. Browse to the root folder that contains the .csv or .parquet files for full data, incremental data upserts, and incremental data deletes.
    1. Enter the extension for the full data and both incremental files (\.csv or \.parquet).
@@ -72,7 +72,7 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 
 1. For **Last updated**, select the date timestamp attribute.
 
-1. If the **Primary key** is not selected, select the primary key. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
+1. If the **Primary key** is not selected, select the primary key. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
 
 1. Select **Close** to save and close the pane.
 

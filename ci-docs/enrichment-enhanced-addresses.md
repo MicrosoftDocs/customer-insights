@@ -80,11 +80,11 @@ We currently support enriching addresses in these countries or regions:
 
 1. Review the overview and then select **Next**.
 
-1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
 1. Select how addresses are formatted in your data set. Choose **Single-attribute address** if addresses in your data use a single field. Choose **Multiple-attribute address** if addresses in your data use more than one data field.
 
-1. Select **Next** and map the address fields from your unified customer entity.
+1. Select **Next** and map the address fields from your unified customer table.
 
     :::image type="content" source="media/enhanced-address-mapping.png" alt-text="Enhanced address field-mapping page.":::
 
@@ -93,7 +93,7 @@ We currently support enriching addresses in these countries or regions:
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a **Name** for the enrichment and the **Output entity**.
+1. Provide a **Name** for the enrichment and the **Output table**.
 
 1. Select **Save enrichment** after reviewing your choices.
 

@@ -91,9 +91,9 @@ Review the article [about data unification](data-unification.md). The following 
 
 Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
-1. Create an activity called **eCommercePurchases** with the  *eCommercePurchases:eCommerce* entity and its primary key, **PurchaseId**.
+1. Create an activity called **eCommercePurchases** with the  *eCommercePurchases:eCommerce* table and its primary key, **PurchaseId**.
 
-1. Create a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two entities.
+1. Create a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two tables.
 
 1. Select **TotalPrice** for the **EventActivity** and **PurchasedOn** for the **TimeStamp**.
 
@@ -111,7 +111,7 @@ With the unified customer profiles in place and activity created, run the produc
 
 1. Select **Get started**.
 
-1. Name the model **OOB Product Recommendation Model Prediction** and the output entity **OOBProductRecommendationModelPrediction**.
+1. Name the model **OOB Product Recommendation Model Prediction** and the output table **OOBProductRecommendationModelPrediction**.
 
 1. Select **Next**.
 
@@ -126,7 +126,7 @@ With the unified customer profiles in place and activity created, run the produc
 
 1. In the **Add purchase history** step, select **Add data**.
 
-1. Select **SalesOrderLine** and the eCommercePurchases entity and select **Next**. The required data is automatically filled in from the activity. Select **Save** and then **Next**.
+1. Select **SalesOrderLine** and the eCommercePurchases table and select **Next**. The required data is automatically filled in from the activity. Select **Save** and then **Next**.
 
 1. Skip the **Add product information** and **Product filters** steps because we don't have product information data.
 
@@ -142,11 +142,11 @@ Let the model complete the training and scoring of the data. Review the [product
 
 ## Task 6 - Create a segment of high purchased products
 
-Running the model creates a new entity, which is listed on **Data** > **Entities**. You can create a new segment based on the entity created by the model.
+Running the model creates a new table, which is listed on **Data** > **Tables**. You can create a new segment based on the table created by the model.
 
 1. On the results page, select **Create segment**.
 
-1. Create a rule using the **OOBProductRecommendationModelPrediction** entity and define the segment:
+1. Create a rule using the **OOBProductRecommendationModelPrediction** table and define the segment:
    - **Field**: ProductID
    - **Value**: Select the top three product IDs
 

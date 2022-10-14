@@ -68,7 +68,7 @@ landingContent:
         links:
           - text: Unification overview
             url: data-unification.md
-          - text: Understand entities
+          - text: Understand tables
             url: entities.md
           - text: Review unified profiles
             url: customer-profiles.md

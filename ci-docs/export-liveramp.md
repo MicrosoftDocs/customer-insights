@@ -28,7 +28,7 @@ Activate your data in LiveRamp to connect with over 500 platforms across digital
   - ECDSA 256/384/521 in OpenSSL PEM format
   - ED25519 and RSA in OpenSSH key format
 - The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server.
-- Exporting entities with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory.
+- Exporting tables with up to 100 million customer profiles can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory.
 - The actual number of profiles (or data) you can export to LiveRamp depends on your subscription with LiveRamp.
 
 ## Set up connection to LiveRamp
@@ -63,11 +63,11 @@ Activate your data in LiveRamp to connect with over 500 platforms across digital
 
 1. Enter a name for the export.
 
-1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to LiveRamp for identity resolution.
+1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to LiveRamp for idtable resolution.
 
    :::image type="content" source="media/export-liveramp-segments.png" alt-text="LiveRamp connector with attribute mapping.":::
 
-1. Map the corresponding attributes from your *Customer* entity for the selected key identifier.
+1. Map the corresponding attributes from your *Customer* table for the selected key identifier.
 
 1. Select **Add attribute** to map more attributes to send to LiveRamp.
 

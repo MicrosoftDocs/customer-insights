@@ -36,4 +36,4 @@ When you create a new environment, make sure the Data Lake Storage account exist
 
 When system processes like data ingestion complete, the system creates corresponding folders in the storage account. Data files and model.json files are created and added to folders based on the process name.
 
-If you create multiple environments of Customer Insights and choose to save the output entities from those environments to your storage account, Customer Insights creates separate folders for each environment with `ci_environmentID` in the container.
+If you create multiple environments of Customer Insights and choose to save the output tables from those environments to your storage account, Customer Insights creates separate folders for each environment with `ci_environmentID` in the container.

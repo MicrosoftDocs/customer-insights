@@ -56,7 +56,7 @@ Store your Customer Insights data in a Data Lake Storage Gen2 account or use it 
 
 1. Enter the folder name for the Azure Data Lake Storage Gen2 storage.
 
-1. Select the box next to each of the entities you want to export to this destination.
+1. Select the box next to each of the tables you want to export to this destination.
 
 1. Select **Save**.
 
@@ -65,6 +65,6 @@ Store your Customer Insights data in a Data Lake Storage Gen2 account or use it 
 Exported data is stored in the Azure Data Lake Gen 2 storage container you configured.
 
 > [!TIP]
-> Export of entities that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
+> Export of tables that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

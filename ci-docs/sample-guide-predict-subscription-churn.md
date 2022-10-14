@@ -111,9 +111,9 @@ Review the article [about data unification](data-unification.md). The following 
 
 Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
-1. Create an activity called **SubscriptionHistory** with the  *Subscription* entity and its primary key, **CustomerId**.
+1. Create an activity called **SubscriptionHistory** with the  *Subscription* table and its primary key, **CustomerId**.
 
-1. Create a relationship between *SubscriptionHistory:Subscription* and *eCommerceContacts:eCommerce* with **CustomerID** as the foreign key to connect the two entities.
+1. Create a relationship between *SubscriptionHistory:Subscription* and *eCommerceContacts:eCommerce* with **CustomerID** as the foreign key to connect the two tables.
 
 1. Select **SubscriptionType** for the **EventActivity** and **SubscriptionEndDate** for the **TimeStamp**.
 
@@ -122,7 +122,7 @@ Review the article [about customer activities](activities.md). The following inf
 1. Run the activity.
 
 1. Add another activity and map its fields names to the corresponding fields:
-   - Customer activity entity: Reviews:Website
+   - Customer activity table: Reviews:Website
    - Primary key: Website.Reviews.ReviewId
    - Timestamp: Website.Reviews.ReviewDate
    - Event (activity name): Website.Reviews.ActivityTypeDisplay
@@ -140,7 +140,7 @@ With the unified customer profiles in place and activity created, run the subscr
 
 1. Select **Subscription** for the type of churn and then **Get started**.
 
-1. Name the model **OOB Subscription Churn Prediction** and the output entity **OOBSubscriptionChurnPrediction**.
+1. Name the model **OOB Subscription Churn Prediction** and the output table **OOBSubscriptionChurnPrediction**.
 
 1. Define model preferences:
    - **Days since subscription ended**: **60** days to indicate that a customer is considered churned if they don't renew the subscription in this period after their subscription ended.
@@ -152,7 +152,7 @@ With the unified customer profiles in place and activity created, run the subscr
 
 1. In the **Required Data** step, select **Add data** to provide subscription history.
 
-1. Select **Subscription** and the SubscriptionHistory entity and select **Next**. The required data is automatically filled in from the activity. Select **Save**.
+1. Select **Subscription** and the SubscriptionHistory table and select **Next**. The required data is automatically filled in from the activity. Select **Save**.
 
 1. Under Customer Activities, select **Add data**.
 
@@ -170,11 +170,11 @@ Let the model complete the training and scoring of the data. Review the subscrip
 
 ## Task 6 - Create a segment of high churn-risk customers
 
-Running the model creates a new entity, which is listed on **Data** > **Entities**. You can create a new segment based on the entity created by the model.
+Running the model creates a new table, which is listed on **Data** > **Tables**. You can create a new segment based on the table created by the model.
 
 1. On the results page, select **Create segment**.
 
-1. Create a rule using the **OOBSubscriptionChurnPrediction** entity and define the segment:
+1. Create a rule using the **OOBSubscriptionChurnPrediction** table and define the segment:
    - **Field**: ChurnScore
    - **Operator**: greater than
    - **Value**: 0.6

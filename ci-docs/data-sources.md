@@ -42,7 +42,7 @@ If your environment was configured to use Customer Insights storage and you use 
 - **Managed by me**: Power Platform dataflows created and managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.
 - **Managed by others**: Power Platform dataflows created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.
 > [!NOTE]
-> All entities can be viewed and used by other users. While data sources are owned by the user who created them, the resulting entities from the data ingestion can be used by every user of Customer Insights.
+> All tables can be viewed and used by other users. While data sources are owned by the user who created them, the resulting tables from the data ingestion can be used by every user of Customer Insights.
 
 If your environment does not use Power Platform dataflows, the **Data Sources** page contains only a list of all data sources. No sections display.
 
@@ -71,7 +71,7 @@ To refresh a data source on demand:
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the data source you want to refresh and select **Refresh**. The data source is now triggered for a manual refresh. Refreshing a data source will update both the entity schema and data for all the entities specified in the data source.
+1. Select the data source you want to refresh and select **Refresh**. The data source is now triggered for a manual refresh. Refreshing a data source will update both the table schema and data for all the tables specified in the data source.
 
 1. Select the status to open the **Progress details** pane and view the progress. To cancel the job, select **Cancel job** at the bottom of the pane.
 
@@ -86,25 +86,25 @@ These errors can be seen in the task details.
 
 :::image type="content" source="media/corrupt-task-error.png" alt-text="Task detail showing corrupt data error.":::
 
-Corrupt records are shown in system-created entities.
+Corrupt records are shown in system-created tables.
 
 ### Fix corrupt data
 
-1. To view the corrupt data, go to **Data** > **Entities** and look for the corrupted entities in the **System** section. The naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'.
+1. To view the corrupt data, go to **Data** > **Tables** and look for the corrupted tables in the **System** section. The naming schema of corrupted tables: 'DataSourceName_TableName_corrupt'.
 
-1. Select a corrupt entity and then the **Data** tab.
+1. Select a corrupt table and then the **Data** tab.
 
 1. Identify the corrupt fields in a record and the reason.
 
    :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason." lightbox="media/corruption-reason.png":::
 
    > [!NOTE]
-   > **Data** > **Entities** only show a portion of the corrupt records. To view all the corrupt records, export the files to a container in the storage account using the [Customer Insights export process](export-destinations.md). If you used your own storage account, you can also look at the Customer Insights folder in your storage account.
+   > **Data** > **Tables** only show a portion of the corrupt records. To view all the corrupt records, export the files to a container in the storage account using the [Customer Insights export process](export-destinations.md). If you used your own storage account, you can also look at the Customer Insights folder in your storage account.
 
 1. Fix the corrupted data. For example, for Azure Data Lake data sources, [fix the data in the Data Lake Storage or update the data types in the manifest/model.json file](connect-common-data-model.md#common-reasons-for-ingestion-errors-or-corrupt-data). For Power Query data sources, fix the data in the source file and [correct the data type in the transformation step](connect-power-query.md#data-type-does-not-match-data) on the **Power Query - Edit queries** page.
 
 After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes.
 
-For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system flags this record as corrupt. Change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record is removed from the corrupted entity.
+For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system flags this record as corrupt. Change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record is removed from the corrupted table.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

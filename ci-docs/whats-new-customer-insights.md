@@ -29,9 +29,9 @@ Export segments of unified customer profiles to HubSpot and use them for email m
 
 For more information, see [Export segments to HubSpot](export-hubspot.md).
 
-### Remove a unified field or entity from data unification
+### Remove a unified field or table from data unification
 
-You can remove fields and entities from the data unification process.
+You can remove fields and tables from the data unification process.
 
 For more information, see [Remove a unified field](data-unification-update.md#remove-a-unified-field).
 
@@ -123,7 +123,7 @@ The updates in May 2022 include new features, performance upgrades, and bug fixe
 
 ### Updated data unification experience
 
- Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. Data can be unified on a single entity or multiple entities. First, you [select entities and source fields](map-entities.md), [remove duplicate records](remove-duplicates.md), specify rules for [matching conditions](match-entities.md), and define which [fields to include in the unified customer profiles](merge-entities.md).
+ Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. Data can be unified on a single table or multiple tables. First, you [select tables and source fields](map-entities.md), [remove duplicate records](remove-duplicates.md), specify rules for [matching conditions](match-entities.md), and define which [fields to include in the unified customer profiles](merge-entities.md).
 
 For more information, see [Data unification overview](data-unification.md).
 
@@ -177,9 +177,9 @@ The updates in March 2022 include new features, performance upgrades, and bug fi
 
 ### LiveRamp AbiliTec enrichment (Preview)
 
-LiveRamp provides identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
+LiveRamp provides idtable resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec idtable graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
 
-For more information, see [Enrich customer profiles with identity data from LiveRamp (Preview)](enrichment-liveramp.md).
+For more information, see [Enrich customer profiles with idtable data from LiveRamp (Preview)](enrichment-liveramp.md).
 
 ### Organize segments and measures with tags and filters
 
@@ -227,9 +227,9 @@ For more information, see [Connect an Azure Synapse data source (Preview)](conne
 
 ### LiveRamp enrichment (Preview)
 
-LiveRamp provides identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
+LiveRamp provides idtable resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec idtable graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
 
-For more information, see [Enrich customer profiles with identity data from LiveRamp (Preview)](enrichment-liveramp.md).
+For more information, see [Enrich customer profiles with idtable data from LiveRamp (Preview)](enrichment-liveramp.md).
 
 ### Enrichment for data sources (Preview)
 

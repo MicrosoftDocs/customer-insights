@@ -53,10 +53,10 @@ Use your customer data in Salesforce Marketing Cloud by exporting them through a
 
 1. Choose if you want to export your data **Gzipped** or **Unzipped** and the **field delimiter** for the exported files.
 
-1. Select the entities, for example segments, that you want to export.
+1. Select the tables, for example segments, that you want to export.
 
    > [!NOTE]
-   > Each selected entity will be split into a maximum of five output files when exported.
+   > Each selected table will be split into a maximum of five output files when exported.
 
 1. Select **Save**.
 

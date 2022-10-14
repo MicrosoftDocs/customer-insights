@@ -26,7 +26,7 @@ Administrators can [create an environment in an existing organization](create-en
 
 You can then [ingest data](data-sources.md) for business accounts and related contacts as data sources from all supported sources.
 
- [Unify](data-unification.md) your account data followed by your contact data to connect contact and account entities.
+ [Unify](data-unification.md) your account data followed by your contact data to connect contact and account tables.
 
 ## Switch between primary target audience
 
@@ -37,7 +37,7 @@ If your organization maintains environments for individual customers and busines
 ## Supported feature areas
 
 - [Activities](activities.md): Support for accounts and related contacts to create activities and show them in a timeline.
-- [Relationships](relationships.md): The activity wizard helps creating relationships between the entities so the account view can show all activities from contacts. Contacts can drill up to see contact view and hierarchies can be used for account activity aggregations.
+- [Relationships](relationships.md): The activity wizard helps creating relationships between the tables so the account view can show all activities from contacts. Contacts can drill up to see contact view and hierarchies can be used for account activity aggregations.
 - [Measures](measures.md): Supports measures created from the measure builder with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.
 - [Segments](segments.md): Supports segments that are created from scratch with the segment builder. Segments can be based on accounts or contacts.
 - [Data ingestion](data-sources.md): All features in this area are the same for business accounts and individual customers.

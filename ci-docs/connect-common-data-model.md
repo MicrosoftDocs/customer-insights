@@ -22,7 +22,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 - Data ingestion supports Azure Data Lake Storage *Gen2* accounts exclusively. You can't use Data Lake Storage Gen1 accounts to ingest data.
 
-- The Azure Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). The data must be stored in a hierarchical folder format that defines the root folder and has subfolders for each entity. The subfolders can have full data or incremental data folders.
+- The Azure Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). The data must be stored in a hierarchical folder format that defines the root folder and has subfolders for each table. The subfolders can have full data or incremental data folders.
 
 - To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
@@ -37,7 +37,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 - The user that sets up the data source connection needs least Storage Blob Data Contributor permissions on the storage account.
 
-- Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the entities such as entity columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
+- Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the tables such as table columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
 ## Recommendations
 
@@ -74,38 +74,38 @@ For optimal performance, Customer Insights recommends the size of a partition be
 
 1. To use an existing schema, navigate to the folder containing the model.json or manifest.cdm.json file. You can search within a directory to find the file.
 
-1. Select the json file and select **Next**. A list of available entities displays.
+1. Select the json file and select **Next**. A list of available tables displays.
 
-   :::image type="content" source="media/review-entities.png" alt-text="Dialog box of a list of entities to select":::
+   :::image type="content" source="media/review-tables.png" alt-text="Dialog box of a list of tables to select":::
 
-1. Select the entities you want to include.
+1. Select the tables you want to include.
 
    :::image type="content" source="media/ADLS_required.png" alt-text="Dialog box showing Required for Primary key":::
 
    > [!TIP]
-   > To edit an entity in a JSON editing interface, select the entity and then **Edit schema file**. Make changes and select **Save**.
+   > To edit a table in a JSON editing interface, select the table and then **Edit schema file**. Make changes and select **Save**.
 
-1. For selected entities that require incremental ingestion, **Required** displays under **Incremental refresh**. For each of these entities, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
+1. For selected tables that require incremental ingestion, **Required** displays under **Incremental refresh**. For each of these tables, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
 
-1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
-   1. Select **Required**. The **Edit entity** panel displays.
-   1. Choose the **Primary key**. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
+1. For selected tables where a primary key has not been defined, **Required** displays under **Primary key**. For each of these tables:
+   1. Select **Required**. The **Edit table** panel displays.
+   1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
    1. Optionally, change the partition pattern.
    1. Select **Close** to save and close the panel.
 
-1. Select the number of **Attributes** for each included entity. The **Manage attributes** page displays.
+1. Select the number of **Attributes** for each included table. The **Manage attributes** page displays.
 
-   :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
+   :::image type="content" source="media/dataprofiling-tables.png" alt-text="Dialog box to select data profiling.":::
 
    1. Create new attributes, edit, or delete existing attributes. You can change the name, the data format, or add a semantic type.
-   1. To enable analytics and other capabilities, select **Data profiling** for the whole entity or for specific attributes. By default, no entity is enabled for data profiling.
+   1. To enable analytics and other capabilities, select **Data profiling** for the whole table or for specific attributes. By default, no table is enabled for data profiling.
    1. Select **Done**.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Entities**](entities.md) page.
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Tables**](tables.md) page.
 
 ### Create a new schema file
 
@@ -113,13 +113,13 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 1. Enter a name for the file and select **Save**.
 
-1. Select **New entity**. The **New Entity** panel displays.
+1. Select **New table**. The **New Table** panel displays.
 
-1. Enter the entity name and choose the **Data files location**.
+1. Enter the table name and choose the **Data files location**.
    - **Multiple .csv or .parquet files**: Browse to the root folder, select the pattern type, and enter the expression.
    - **Single .csv or .parquet files**: Browse to the .csv or .parquet file and select it.
 
-   :::image type="content" source="media/ADLS_new_entity_location.png" alt-text="Dialog box to create a new entity with Data files location highlighted.":::
+   :::image type="content" source="media/ADLS_new_entity_location.png" alt-text="Dialog box to create a new table with Data files location highlighted.":::
 
 1. Select **Save**.
 
@@ -131,23 +131,23 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
    1. Ensure the data format is correct for each attribute.
 
-   1. To enable analytics and other capabilities, select **Data profiling** for the whole entity or for specific attributes. By default, no entity is enabled for data profiling.
+   1. To enable analytics and other capabilities, select **Data profiling** for the whole table or for specific attributes. By default, no table is enabled for data profiling.
 
-      :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
+      :::image type="content" source="media/dataprofiling-tables.png" alt-text="Dialog box to select data profiling.":::
 
-   1. Select **Done**. The **Select entities** page displays.
+   1. Select **Done**. The **Select tables** page displays.
 
-1. Continue to add entities and attributes, if applicable.
+1. Continue to add tables and attributes, if applicable.
 
-1. After all entities have been added, select **Include** to include the entities in the data source ingestion.
+1. After all tables have been added, select **Include** to include the tables in the data source ingestion.
 
    :::image type="content" source="media/ADLS_required.png" alt-text="Dialog box showing Required for Primary key":::
 
-1. For selected entities that require incremental ingestion, **Required** displays under **Incremental refresh**. For each of these entities, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
+1. For selected tables that require incremental ingestion, **Required** displays under **Incremental refresh**. For each of these tables, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
 
-1. For selected entities where a primary key has not been defined, **Required** displays under **Primary key**. For each of these entities:
-   1. Select **Required**. The **Edit entity** panel displays.
-   1. Choose the **Primary key**. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
+1. For selected tables where a primary key has not been defined, **Required** displays under **Primary key**. For each of these tables:
+   1. Select **Required**. The **Edit table** panel displays.
+   1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
    1. Optionally, change the partition pattern.
    1. Select **Close** to save and close the panel.
 
@@ -155,7 +155,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Entities**](entities.md) page.
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Tables**](tables.md) page.
 
 ## Edit an Azure Data Lake Storage data source
 
@@ -181,17 +181,17 @@ You can update the *Connect to storage account using* option. For more informati
 
 1. Select **Next**.
 1. Change any of the following:
-   - Navigate to a different model.json or manifest.json file with a different set of entities from the container.
-   - To add additional entities to ingest, select **New entity**.
-   - To remove any already selected entities if there are no dependencies, select the entity and **Delete**.
+   - Navigate to a different model.json or manifest.json file with a different set of tables from the container.
+   - To add additional tables to ingest, select **New table**.
+   - To remove any already selected tables if there are no dependencies, select the table and **Delete**.
       > [!IMPORTANT]
-      > If there are dependencies on the existing model.json or manifest.json file and the set of entities, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
+      > If there are dependencies on the existing model.json or manifest.json file and the set of tables, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
    - To change data file location or the primary key, select **Edit**.
    - To change the incremental ingestion data, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
-   - Only change the entity name to match the entity name in the .json file.
+   - Only change the table name to match the table name in the .json file.
 
      > [!NOTE]
-     > Always keep the entity name in Customer Insights the same as the entity name inside the model.json or manifest.json file after ingestion. Customer Insights validates all entity names with the model.json or manifest.json during every system refresh. If an entity name is changed either inside Customer Insights or outside, an error occurs because Customer Insights cannot find the new entity name in the .json file. If an ingested entity name was accidentally changed, edit the entity name in Customer Insights to match the name in the .json file.
+     > Always keep the table name in Customer Insights the same as the table name inside the model.json or manifest.json file after ingestion. Customer Insights validates all table names with the model.json or manifest.json during every system refresh. If a table name is changed either inside Customer Insights or outside, an error occurs because Customer Insights cannot find the new table name in the .json file. If an ingested table name was accidentally changed, edit the table name in Customer Insights to match the name in the .json file.
 
 1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
 
@@ -221,7 +221,7 @@ If the data does not conform to the schema, the ingestion process completes with
 
 ### Datetime fields in the wrong format
 
-The datetime fields in the entity are not in ISO 8601 or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in an entity should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or entity level in the model or manifest.json. For example:
+The datetime fields in the table are not in ISO 8601 or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in a table should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or table level in the model or manifest.json. For example:
 
 **Model.json**
 
@@ -238,9 +238,9 @@ The datetime fields in the entity are not in ISO 8601 or en-US formats. The defa
       ]   
    ```
 
-  In a manifest.json, the datetime format can be specified at the entity level or at the attribute level. At the entity level, use "exhibitsTraits" in the entity in the *.manifest.cdm.json to define the datetime format. At the attribute level, use "appliedTraits" in the attribute in the entityname.cdm.json.
+  In a manifest.json, the datetime format can be specified at the table level or at the attribute level. At the table level, use "exhibitsTraits" in the table in the *.manifest.cdm.json to define the datetime format. At the attribute level, use "appliedTraits" in the attribute in the tablename.cdm.json.
 
-**Manifest.json at the entity level**
+**Manifest.json at the table level**
 
 ```json
 "exhibitsTraits": [
@@ -265,7 +265,7 @@ The datetime fields in the entity are not in ISO 8601 or en-US formats. The defa
 ]
 ```
 
-**Entity.json at the attribute level**
+**Table.json at the attribute level**
 
 ```json
    {

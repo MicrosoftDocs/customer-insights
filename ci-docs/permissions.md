@@ -24,7 +24,7 @@ Access to Customer Insights is restricted to users in your organization that are
 - Explore insights and segments within the **Home** and **Segments** pages.
 - Search and filter customer profiles using the **Customers** page. Fields must be searchable.
 - View and explore the **Enrichment** page.
-- Explore and export entities using the **Entities** page.
+- Explore and export tables using the **Tables** page.
 - View the status of system processes  using the **System** page.
 - View exports in **Exports** page.
 - Install and use the **Power BI Customer Insights** dashboard.
@@ -33,7 +33,7 @@ Access to Customer Insights is restricted to users in your organization that are
 
 - All permissions available to the Viewer.
 - Load and transform data using the **Data sources** page.
-- Complete **Data Unification** which result in the unified customer profile entity.
+- Complete **Data Unification** which result in the unified customer profile table.
 - Define **Relationships** and **Activities**.
 - Create segments using the **Segments** page.
 - Create measures using the **Measures** page.

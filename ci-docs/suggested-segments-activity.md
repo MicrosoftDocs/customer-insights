@@ -43,7 +43,7 @@ Suggestions are generated based on the selected input data.
 
 - Activity type: purchases, retail transactions, online transactions, customer support cases, subscriptions, and so on.  
 
-- Entity in Customer Insights that contains the activity data: The UnifiedActivity entity or the entity for a specific activity.
+- Table in Customer Insights that contains the activity data: The UnifiedActivity table or the table for a specific activity.
 
 - Dimensions to include: Recency, frequency, or monetary dimension, depending on your business requirements.
 
@@ -58,7 +58,7 @@ Suggestions are generated based on the selected input data.
 1. Provide the required input data and select **Next**.
 
    - Choose customers: Include all customers or a specific segment.
-   - Choose activity: Select the activity type and the entities that describe the activity.
+   - Choose activity: Select the activity type and the tables that describe the activity.
    - Preferences: Set the time period to consider, the factors for suggestions, and map the attributes.
 
 1. Review your input and select **Run** to run the model and generate suggestions.

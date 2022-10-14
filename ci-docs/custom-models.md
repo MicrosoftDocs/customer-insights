@@ -50,14 +50,14 @@ Custom models lets you manage workflows based on Azure Machine Learning models. 
 1. Choose the Azure Machine Learning pipeline in the **Web service that contains your model** dropdown. Then, select **Next**.
    Learn more about [publishing a pipeline in Azure Machine Learning using the designer](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) or [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk).
 
-1. For each **Web service input**, select the matching **Entity** from Customer Insights. Then, select **Next**.
+1. For each **Web service input**, select the matching **Table** from Customer Insights. Then, select **Next**.
    > [!NOTE]
-   > The custom model workflow will apply heuristics to map the web service input fields to the entity attributes based on the name and data type of the field. You'll see an error if a web service field can't be mapped to an entity.
+   > The custom model workflow will apply heuristics to map the web service input fields to the table attributes based on the name and data type of the field. You'll see an error if a web service field can't be mapped to a table.
 
    :::image type="content" source="media/intelligence-screen2-updated.png" alt-text="Configure a workflow.":::
 
 1. For **Model Output Parameters**, set the following properties:
-   - **Entity name** for the pipeline output results
+   - **Table name** for the pipeline output results
    - **Output data store parameter name** of your batch pipeline
    - **Output Path parameter name** of your batch pipeline
 
@@ -91,14 +91,14 @@ Select a workflow to view available actions.
 
 1. Change **Display name** if needed, and select **Next**.
 
-1. For each **Web service input**, update the matching **Entity** from Customer Insights, if needed. Then, select **Next**.
+1. For each **Web service input**, update the matching **Table** from Customer Insights, if needed. Then, select **Next**.
 
 1. For **Model Output Parameters**, change any of the following:
-   - **Entity name** for the pipeline output results
+   - **Table name** for the pipeline output results
    - **Output data store parameter name** of your batch pipeline
    - **Output Path parameter name** of your batch pipeline
 
-1. Change the matching attribute from **Customer ID in results** to identify customers. Choose an attribute from the inference output with values similar to the Customer ID column of the Customer entity. If you don't have such a column in your data set, choose an attribute that uniquely identifies the row.
+1. Change the matching attribute from **Customer ID in results** to identify customers. Choose an attribute from the inference output with values similar to the Customer ID column of the Customer table. If you don't have such a column in your data set, choose an attribute that uniquely identifies the row.
 
 1. Select **Save**
 
@@ -110,21 +110,21 @@ Select a workflow to view available actions.
 
 1. Confirm your deletion.
 
-Your workflow will be deleted. The [entity](entities.md) that was created when you created the workflow persists, and can be viewed from the **Data** > **Entities** page.
+Your workflow will be deleted. The [table](entities.md) that was created when you created the workflow persists, and can be viewed from the **Data** > **Tables** page.
 
 ## View the results
 
-Results from a workflow are stored in the entity name defined for **Model Output Parameters**. Access this data from the [**Data** > **Entities** page](entities.md) or with [API access](apis.md).
+Results from a workflow are stored in the table name defined for **Model Output Parameters**. Access this data from the [**Data** > **Tables** page](entities.md) or with [API access](apis.md).
 
 ### API Access
 
-For the specific OData query to get data from a custom model entity, use the following format:
+For the specific OData query to get data from a custom model table, use the following format:
 
-`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
+`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output table name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
 
 1. Replace `<your instance id>` with the ID of your Customer Insights environment, which displays in the address bar of your browser when accessing Customer Insights.
 
-1. Replace `<custom model output entity>` with the entity name you provided for the **Model Output Parameters**.
+1. Replace `<custom model output table>` with the table name you provided for the **Model Output Parameters**.
 
 1. Replace `<guid value>` with the Customer ID of the customer you'd like to access. This ID displays on the [customer profiles page](customer-profiles.md) in the CustomerID field.
 

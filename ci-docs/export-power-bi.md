@@ -32,13 +32,13 @@ Create visualizations for your data with the Microsoft Power BI Desktop. Generat
    > [!NOTE]
    > The account you indicate in this step is used to fetch data from Customer Insights and doesn't need to be the same you are signed in to Power BI. To reset the account that is used for data fetching, open Power BI and go to **File** > **Options** > **Settings** > **Data source settings**. In the list of data sources, select **Dynamics 365 Customer Insights Login** and select **Clear permissions**.  
 
-1. In the **Navigator** dialog box, view the list of all environments you have access to. Expand an environment and open any of the folders (entities, measures, segments, enrichments). For example, open the **Entities** folder, to see all entities you can import.
+1. In the **Navigator** dialog box, view the list of all environments you have access to. Expand an environment and open any of the folders (tables, measures, segments, enrichments). For example, open the **Tables** folder, to see all tables you can import.
 
    :::image type="content" source="media/power-bi-navigator.png" alt-text="Power BI Connector Navigator.":::
 
-1. Select the check boxes next to the entities to include and **Load**. You can select multiple entities from multiple environments.
+1. Select the check boxes next to the tables to include and **Load**. You can select multiple tables from multiple environments.
 
-   A loading dialog box displays while your entities are loaded. Once all of your selected entities have loaded, use the capabilities of Power BI to visualize the data.
+   A loading dialog box displays while your tables are loaded. Once all of your selected tables have loaded, use the capabilities of Power BI to visualize the data.
 
 ## Large data sets
 
@@ -52,21 +52,21 @@ Consider working with a subset of your data. For example, create [segments](segm
 
 ### Customer Insights environment doesn't show in Power BI
 
-Environments that have more than one [relationship](relationships.md) defined between two identical entities in Customer Insights will not be available in the Power BI connector.
+Environments that have more than one [relationship](relationships.md) defined between two identical tables in Customer Insights will not be available in the Power BI connector.
 
 Identify and remove the duplicated relationships.
 
 1. Go to **Data** > **Relationships** on the environment you're missing in Power BI.
 1. Identify duplicated relationships:
-   - Check if there is more than one relationship defined between the same two entities.
-   - Check if there is a relationship created between two entities that are both included in the unification process. There is an implicit relationship defined between all entities included in the unification process.
+   - Check if there is more than one relationship defined between the same two tables.
+   - Check if there is a relationship created between two tables that are both included in the unification process. There is an implicit relationship defined between all tables included in the unification process.
 1. Remove any duplicate relationships identified.
 
 After removal of the duplicated relationships, try to configure the Power BI connector again.
 
-### Errors on date fields when loading entities in Power BI Desktop
+### Errors on date fields when loading tables in Power BI Desktop
 
-When loading entities that contain fields with a date format like MM/DD/YYYY, you might encounter errors due to mismatched locale formats. This mismatch happens when your Power BI Desktop file is set to another locale than English (United States), because date fields in Customer Insights are saved in US format.
+When loading tables that contain fields with a date format like MM/DD/YYYY, you might encounter errors due to mismatched locale formats. This mismatch happens when your Power BI Desktop file is set to another locale than English (United States), because date fields in Customer Insights are saved in US format.
 
 The Power BI Desktop file has a single locale setting, which is applied when retrieving data. To fix the date errors, [set the locale of the .BPI file](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop) to English (United States).
 

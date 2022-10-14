@@ -17,7 +17,7 @@ Trigger specific events to occur automatically when your data changes and manage
 
 ## Known limitations
 
-- A maximum of 100 calls per 60 seconds. Use the [$skip parameter](/connectors/customerinsights/#get-items-from-an-entity) to call the API endpoint multiple times.
+- A maximum of 100 calls per 60 seconds. Use the [$skip parameter](/connectors/customerinsights/#get-items-from-a-table) to call the API endpoint multiple times.
 
 ## Power Automate triggers
 

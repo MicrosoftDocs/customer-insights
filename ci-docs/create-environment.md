@@ -118,7 +118,7 @@ When you copy the environment configuration, a confirmation message displays whe
 
 1. Edit the data sources and enter the credentials to refresh them. Data sources from the Common Data Model folder and Dataverse must be created manually with the same name as in the source environment.
 
-1. After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer entity.
+1. After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer table.
 
    > [!TIP]
    > For accounts and contacts, select **Unify accounts** > **Unify profiles and dependencies**.

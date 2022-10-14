@@ -92,9 +92,9 @@ Review the article [about data unification](data-unification.md). The following 
 
 Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
-1. Create an activity called **eCommercePurchases** with the  *eCommercePurchases:eCommerce* entity and its primary key, **PurchaseId**.
+1. Create an activity called **eCommercePurchases** with the  *eCommercePurchases:eCommerce* table and its primary key, **PurchaseId**.
 
-1. Create a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two entities.
+1. Create a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two tables.
 
 1. Select **TotalPrice** for the **EventActivity** and **PurchasedOn** for the **TimeStamp**.
 
@@ -112,7 +112,7 @@ With the unified customer profiles in place and activity, run the transaction ch
 
 1. Select **Transactional** for the type of churn and then **Get started**.
 
-1. Name the model **OOB eCommerce Transaction Churn Prediction** and the output entity **OOBeCommerceChurnPrediction**.
+1. Name the model **OOB eCommerce Transaction Churn Prediction** and the output table **OOBeCommerceChurnPrediction**.
 
 1. Select **Next**.
 
@@ -128,9 +128,9 @@ With the unified customer profiles in place and activity, run the transaction ch
 
 1. Select **Purchase History (required)** and select **Add data** for purchase history.
 
-1. Select **SalesOrderLine** and the eCommercePurchases entity and select **Next**. The required data is automatically filled in from the activity. Select **Save** and then **Next**.
+1. Select **SalesOrderLine** and the eCommercePurchases table and select **Next**. The required data is automatically filled in from the activity. Select **Save** and then **Next**.
 
-   :::image type="content" source="media/model-purchase-join.PNG" alt-text="Join eCommerce entities.":::
+   :::image type="content" source="media/model-purchase-join.PNG" alt-text="Join eCommerce tables.":::
 
 1. Skip the **Additional data (optional)** step.
 
@@ -144,11 +144,11 @@ Let the model complete the training and scoring of the data. Review the churn mo
 
 ## Task 6 - Create a segment of high churn-risk customers
 
-Running the production model creates a new entity, which is listed on **Data** > **Entities**. You can create a new segment based on the entity created by the model.
+Running the production model creates a new table, which is listed on **Data** > **Tables**. You can create a new segment based on the table created by the model.
 
 1. On the results page, select **Create segment**.
 
-1. Create a rule using the **OOBeCommerceChurnPrediction** entity and define the segment:
+1. Create a rule using the **OOBeCommerceChurnPrediction** table and define the segment:
    - **Field**: ChurnScore
    - **Operator**: greater than
    - **Value**: 0.6

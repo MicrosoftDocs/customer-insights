@@ -32,7 +32,7 @@ In Azure:
 
 - The *Azure AD user with admin permissions in Customer Insights* has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more about [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- The *[Azure Synapse workspace managed identity](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more on [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- The *[Azure Synapse workspace managed identity](/azure/synapse-analytics/security/synapse-workspace-managed-idtable)* has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more on [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - On the Azure Synapse workspace, the *service principal for Customer Insights* has **Synapse Administrator** [role assigned](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
@@ -68,7 +68,7 @@ In Azure:
 
 1. Provide a recognizable **Display name** for your export and a **Database name**. The export will create a new [Azure Synapse lake database](/azure/synapse-analytics/database-designer/concepts-lake-database) in the workspace defined in the connection.
 
-1. Select which entities you want to export to Azure Synapse Analytics.
+1. Select which tables you want to export to Azure Synapse Analytics.
    > [!NOTE]
    > Data sources based on a [Common Data Model folder](connect-common-data-model.md) aren't supported.
 
@@ -84,7 +84,7 @@ To query data that was exported to Synapse Analytics, you need **Storage Blob Da
 
 1. Select **Edit** on the export you want to update.
 
-   - **Add** or **Remove** entities from the selection. If entities are removed from the selection, they aren't deleted from the Synapse Analytics database. However, future data refreshes won't update the removed entities in that database.
+   - **Add** or **Remove** tables from the selection. If tables are removed from the selection, they aren't deleted from the Synapse Analytics database. However, future data refreshes won't update the removed tables in that database.
 
    - **Changing the Database Name** creates a new Synapse Analytics database. The database with the name that was configured before won't receive any updates in future refreshes.
 

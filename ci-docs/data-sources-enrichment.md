@@ -18,7 +18,7 @@ Use data from sources like Microsoft and other partners to enrich your customer 
 
 You must have Contributor or Administrator [permissions](permissions.md) to create or edit enrichments.  
 
-1. Go to **Data** > **Unify**. Select the entity you want to enrich and select one attribute as a [primary key](map-entities.md#select-primary-key-and-semantic-type-for-attributes) for the entity.
+1. Go to **Data** > **Unify**. Select the table you want to enrich and select one attribute as a [primary key](map-entities.md#select-primary-key-and-semantic-type-for-attributes) for the table.
 
 1. Go to **Data** > **Data sources**.
 
@@ -30,7 +30,7 @@ You must have Contributor or Administrator [permissions](permissions.md) to crea
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Data sources enrichment page.":::
 
-1. Select **Enrich my data** to configure a data source enrichment. The output entity name is automatically populated.
+1. Select **Enrich my data** to configure a data source enrichment. The output table name is automatically populated.
 
 ## Supported data source enrichments
 

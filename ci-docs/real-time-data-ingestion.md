@@ -75,8 +75,8 @@ For details about creating flows, see the [Power Automate documentation](/power-
 ## Connect directly to the real-time API
 
 You can use the real-time capabilities by building your own pipeline and connecting directly to the real-time API.    
-You can post an activity in the format of your source system or in the UnifiedActivity format. Get the format by making an API call to /api/instances/{instanceId}/manage/entities/UnifiedActivity.
+You can post an activity in the format of your source system or in the UnifiedActivity format. Get the format by making an API call to /api/instances/{instanceId}/manage/tables/UnifiedActivity.
 
-Details of this API, including parameters and responses, can be found in the **EntityData** section on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). For more information, see [Work with Customer Insights APIs](apis.md).
+Details of this API, including parameters and responses, can be found in the **TableData** section on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). For more information, see [Work with Customer Insights APIs](apis.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

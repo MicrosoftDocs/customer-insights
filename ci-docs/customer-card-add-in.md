@@ -34,7 +34,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
   - **Intelligence control** requires data generated using [predictions or custom models](predictions-overview.md).
   - **Customer details control** shows all fields from the profile available in the unified customer profile.
   - **Enrichment control** requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft, [Interests](enrichment-microsoft.md) provided by Microsoft, and [Office engagement data](enrichment-office.md) provided by Microsoft.
-  - **Contacts control** requires a contact semantic entity type.
+  - **Contacts control** requires a contact semantic table type.
   - **Timeline control** requires [configured activities](activities.md).
 
 ## Install the Customer Card Add-in
@@ -64,8 +64,8 @@ You may need to sign in with your admin credentials for the Dynamics 365 app to 
 1. Select the Customer Insights environment you want to fetch data from.
 
 1. Define the field mapping to records in the Dynamics 365 app. Depending on your data in Customer Insights, you can choose to map the following options:
-   - To map with a contact, select the field in the Customer entity that matches the ID of your contact entity.
-   - To map with an account, select the field in the Customer entity that matches the ID of your account entity.
+   - To map with a contact, select the field in the Customer table that matches the ID of your contact table.
+   - To map with an account, select the field in the Customer table that matches the ID of your account table.
 
    > [!div class="mx-imgBorder"]
    > ![Contact ID field.](media/contact-id-field.png "Contact ID field.")
@@ -84,7 +84,7 @@ Depending on your scenario, you can choose to add controls to either the **Conta
 
 1. Select **Customize the System**.
 
-1. Browse to the **Contact** entity, expand it, and select **Forms**.
+1. Browse to the **Contact** table, expand it, and select **Forms**.
 
 1. Select the contact form you want to add the Customer Card controls to.
 
