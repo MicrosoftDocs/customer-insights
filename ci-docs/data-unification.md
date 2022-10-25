@@ -39,7 +39,7 @@ The unification process maps customer data from your data sources, removes dupli
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-The unification process maps account data from your data sources, removes duplicates, matches the data across entities, and creates a unified profile. Unification is performed in the following order:
+The unification process maps account data from your data sources, removes duplicates, matches the data across tables, and creates a unified profile. Unification is performed in the following order:
 
 1. [Source fields](map-entities.md) (previously called Map): In the source fields step, select tables and fields to include in the unify account process. Map fields to a common semantic type that describes the purpose of the field.
 

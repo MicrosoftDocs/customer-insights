@@ -55,7 +55,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Next**.
 
-1. Select the **Customer data set** and choose the profile or segment you want to enrich with idtable data from LiveRamp. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich with identity data from LiveRamp. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
 1. Define which type of fields from your unified profiles to use for matching identity data from LiveRamp. At least one of the fields **Name and address**, **E-mail**, or **Phone** is required. For higher match accuracy, add other fields. Select **Next**.
 

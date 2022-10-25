@@ -177,9 +177,9 @@ The updates in March 2022 include new features, performance upgrades, and bug fi
 
 ### LiveRamp AbiliTec enrichment (Preview)
 
-LiveRamp provides idtable resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec idtable graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
+LiveRamp provides identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
 
-For more information, see [Enrich customer profiles with idtable data from LiveRamp (Preview)](enrichment-liveramp.md).
+For more information, see [Enrich customer profiles with identity data from LiveRamp (Preview)](enrichment-liveramp.md).
 
 ### Organize segments and measures with tags and filters
 
@@ -227,9 +227,9 @@ For more information, see [Connect an Azure Synapse data source (Preview)](conne
 
 ### LiveRamp enrichment (Preview)
 
-LiveRamp provides idtable resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec idtable graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
+LiveRamp provides identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
 
-For more information, see [Enrich customer profiles with idtable data from LiveRamp (Preview)](enrichment-liveramp.md).
+For more information, see [Enrich customer profiles with identity data from LiveRamp (Preview)](enrichment-liveramp.md).
 
 ### Enrichment for data sources (Preview)
 

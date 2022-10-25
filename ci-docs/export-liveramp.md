@@ -63,7 +63,7 @@ Activate your data in LiveRamp to connect with over 500 platforms across digital
 
 1. Enter a name for the export.
 
-1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to LiveRamp for idtable resolution.
+1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to LiveRamp for identity resolution.
 
    :::image type="content" source="media/export-liveramp-segments.png" alt-text="LiveRamp connector with attribute mapping.":::
 
