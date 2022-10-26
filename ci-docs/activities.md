@@ -37,6 +37,9 @@ An entity must have at least one attribute of type **Date** to be included in a 
    - **Activity entity**: Select an entity that includes transactional or activity data.
    - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
+> [!NOTE]
+> The Primary key for each row should remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it will result in duplicates in the output Activity entity. 
+
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with name, entity, and primary key.":::
 
 1. Select **Next**.
