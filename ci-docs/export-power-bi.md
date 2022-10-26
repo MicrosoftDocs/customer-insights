@@ -1,7 +1,7 @@
 ---
 title: "Power BI connector (preview)"
 description: "Learn how to use the Dynamics 365 Customer Insights connector in Power BI."
-ms.date: 07/25/2022
+ms.date: 10/26/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -56,7 +56,8 @@ Environments that have more than one [relationship](relationships.md) defined be
 
 Identify and remove the duplicated relationships.
 
-1. Go to **Data** > **Relationships** on the environment you're missing in Power BI.
+1. Go to **Data** > **Tables** on the environment you're missing in Power BI.
+1. Select the **Relationships** tab.
 1. Identify duplicated relationships:
    - Check if there is more than one relationship defined between the same two tables.
    - Check if there is a relationship created between two tables that are both included in the unification process. There is an implicit relationship defined between all tables included in the unification process.
