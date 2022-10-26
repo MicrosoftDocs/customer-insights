@@ -1,7 +1,7 @@
 ---
 title: "Relationships between tables and table paths"
 description: "Create and manage relationships between tables from multiple data sources."
-ms.date: 09/27/2021
+ms.date: 10/26/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -51,11 +51,13 @@ During the data ingestion process, the system checks data sources for existing r
 
 Relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to. 
 
-1. Go to **Data** > **Relationships**.
+1. Go to **Data** > **Tables**.
 
-2. Select **New relationship**.
+1. Select the **Relationships** tab.
 
-3. In the **New relationship** pane, provide the following information:
+1. Select **New relationship**.
+
+1. In the **New relationship** pane, provide the following information:
 
    :::image type="content" source="media/relationship-add.png" alt-text="New relationship side pane with empty input fields.":::
 
@@ -74,7 +76,7 @@ Relationship consists of a *source table* containing the foreign key and a *targ
    - **Source key field**: Foreign key field in the source table. Example: SupportCase uses  **CaseID** as the foreign key field.
    - **Target key field**: Key field of the target table. Example: Customer uses  **CustomerID** as the key field.
 
-4. Select **Save** to create the custom relationship.
+1. Select **Save** to create the custom relationship.
 
 ## Set up account hierarchies
 
@@ -82,17 +84,22 @@ Environments that are configured to use business accounts as the primary target 
 
 Organizations create account hierarchies to better manage accounts and their relationships with each other. Customer Insights supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page.
 
-1. Go to **Data** > **Relationships**.
+1. Go to **Data** > **Tables**.
+
 1. Select the **Account hierarchy** tab.
+
 1. Select **New account hierarchy**.
+
 1. In the **Account hierarchy** pane, provide a name for the hierarchy. The system creates a name for the output table, but you can change it.
+
 1. Select the table that contains your account hierarchy. It's usually in the same table that contains the accounts.
 1. Select the **Account UID** and **Parent UID** from the selected table.
+
 1. Select **Save** to finalize the account hierarchy.
 
 ## Manage existing relationships
 
-Go to the **Relationships** page to view all the relationships that have been created, their source table, the target table, and the cardinality.
+Go to **Data** > **Tables** and the **Relationships** tab to view all the relationships that have been created, their source table, the target table, and the cardinality.
 
 :::image type="content" source="media/relationships-list.png" alt-text="List of relationships and options in the action bar of the Relationships page.":::
 
