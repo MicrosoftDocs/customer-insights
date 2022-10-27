@@ -22,6 +22,7 @@ Export segments of unified customer profiles to HubSpot and use them for email m
 
 ## Known limitations
 
+- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 100'000 customer profiles per export to HubSpot, which can take up to 15 minutes to complete. The number of customer profiles that you can export to HubSpot is dependent and limited on your contract with HubSpot.
 - Segments only.
 
