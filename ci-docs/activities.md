@@ -1,12 +1,12 @@
 ---
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 08/12/2022
+ms.date: 10/26/2022
 ms.subservice: audience-insights
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-author: CadeSanthaMSFT
-ms.author: cadesantha
+author: srivas15
+ms.author:  shsri
 manager: shellyha
 searchScope: 
   - ci-entities
@@ -36,6 +36,9 @@ An entity must have at least one attribute of type **Date** to be included in a 
    - **Activity name**: Select a name for your activity.
    - **Activity entity**: Select an entity that includes transactional or activity data.
    - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
+
+     > [!NOTE]
+     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity entity. 
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with name, entity, and primary key.":::
 
@@ -127,7 +130,15 @@ For business accounts (B-to-B), use a *ContactProfile* entity to capture activit
 
 1. Select **Add Activity**.
 
-1. Name the activity, select the source activity entity, and select the primary key of the activity entity.
+1. In the **Activity data** step, enter the following information:
+
+   - **Activity name**: Select a name for your activity.
+   - **Activity entity**: Select an entity that includes transactional or activity data.
+   - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
+
+     > [!NOTE]
+     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity entity. 
+
 
 1. In the **Relationships** step, create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary entity. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
    - Example relationship for an activity called *Purchases*:
