@@ -1,7 +1,7 @@
 ---
 title: "Custom machine learning models | Microsoft Docs"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
-ms.date: 09/19/2022
+ms.date: 11/8/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -19,23 +19,49 @@ searchScope:
 > [!NOTE]
 > Support for Machine Learning Studio (classic) will end on 31 August 2024. We recommend you transition to [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning) by that date.
 >
-> Beginning 1 December 2021, you will not be able to create new Machine Learning Studio (classic) resources. Through 31 August 2024, you can continue to use the existing Machine Learning Studio (classic) resources. For more information, see [Migrate to Azure Machine Learning](/azure/machine-learning/migrate-overview).
+> You can no longer create new Machine Learning Studio (classic) resources. Through 31 August 2024, you can continue to use the existing Machine Learning Studio (classic) resources. For more information, see [Migrate to Azure Machine Learning](/azure/machine-learning/migrate-overview).  
 
-Custom models lets you manage workflows based on Azure Machine Learning models. Workflows help you choose the data you want to generate insights from and map the results to your unified customer data. For more information about building custom ML models, see [Use Azure Machine Learning-based models](azure-machine-learning-experiments.md).
+Azure Machine Learning (AML) v2 lets you manage workflows based on AML models. Workflows help you choose the data you want to generate insights from and map the results to your unified customer data. For more information about building custom ML models, see [Use Azure Machine Learning-based models](azure-machine-learning-experiments.md).
 
 ## Prerequisites
 
-- Web services published through [Azure Machine Learning batch pipelines](/azure/machine-learning/concept-ml-pipelines).
-- Pipeline must be published under a [pipeline endpoint](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
-- An [Azure Data Lake Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) associated with your Azure Studio instance.
-- For Azure Machine Learning workspaces with pipelines, Owner or User Access Administrator permissions to the Azure Machine Learning Workspace.
+- Workspace: An [AML workspace with pipeline](/azure/machine-learning/concept-ml-pipelines). Obtain the Tenant, Workspace, Pipeline, Output Path, and Output Datasource name.
+- Access privileges:
+  - For your AML workspace with pipeline: Owner or User Access administrator privileges. For more information, see [Azure roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+  - For your Customer Insights environment: Admin or Contributor privileges.
+- Storage account: An [Azure Data Lake Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) associated with your Azure Studio instance.
 
   > [!NOTE]
   > Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
 
+## Set up an AML connection
+
+1. Go to **Admin** > **Connections**.
+
+1. Scroll to **Miscellaneous connections**.
+
+1. Select **Set up** on the **Azure Machine Learning** tile.
+
+1. Enter the following information.
+
+   :::image type="content" source="media/AML-connection.png" alt-text="Screenshot of the Azure Machine Learning connection page.":::
+
+   - **Display name**: A unique, recognizable name that describes this connection. Must start with a letter and contain only letters, numbers, and underscores.
+   - **Tenant**: The tenant linked to your AML workspace.
+   - **Workspace**: The AML workspace.
+
+1. Review the data privacy and compliance and select **I agree**.
+
+1. Select **Save**.
+
 ## Add a new workflow
 
-1. Go to **Intelligence** > **Custom models** and select **New workflow**.
+1. Go to **Intelligence** > **Create** > **Custom model (Azure Machine Learning v2)** and select **Use model**.
+
+1. Enter the following information:
+
+   - **Connection**: A connection to your AML workspace. To set up a new connection, select [**Add connection**](#set-up-an-aml-connection).
+   - **Pipeline**:
 
 1. Provide a recognizable **Name**.
 
