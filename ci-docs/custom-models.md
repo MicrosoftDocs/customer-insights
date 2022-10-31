@@ -1,20 +1,20 @@
 ---
-title: "Custom machine learning models | Microsoft Docs"
+title: "Custom machine learning models from Azure Machine Learning"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
 ms.date: 11/8/2022
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: zacookmsft
-ms.author: zacook
+author: radsay01
+ms.author: rsayyaparaju
 manager: shellyha
 searchScope: 
   - ci-custom-models
   - customerInsights
 ---
 
-# Custom machine learning models
+# Custom machine learning models from Azure Machine Learning
 
 > [!NOTE]
 > Support for Machine Learning Studio (classic) will end on 31 August 2024. We recommend you transition to [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning) by that date.
@@ -26,9 +26,11 @@ Azure Machine Learning (AML) v2 lets you manage workflows based on AML models. W
 ## Prerequisites
 
 - Workspace: An [AML workspace with pipeline](/azure/machine-learning/concept-ml-pipelines). Obtain the Tenant, Workspace, Pipeline, Output Path, and Output Datasource name.
+
 - Access privileges:
   - For your AML workspace with pipeline: Owner or User Access administrator privileges. For more information, see [Azure roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
   - For your Customer Insights environment: Admin or Contributor privileges.
+
 - Storage account: An [Azure Data Lake Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) associated with your Azure Studio instance.
 
   > [!NOTE]
@@ -56,87 +58,51 @@ Azure Machine Learning (AML) v2 lets you manage workflows based on AML models. W
 
 ## Add a new workflow
 
-1. Go to **Intelligence** > **Create** > **Custom model (Azure Machine Learning v2)** and select **Use model**.
+1. Go to the **Intelligence** page.
+
+1. On the **Create** tab, select **Use model** on the **Custom model (Azure Machine Learning v2)** tile.
 
 1. Enter the following information:
 
+   :::image type="content" source="media/custom-model-AML.png" alt-text="Custom model AML connection input pane.":::
+
    - **Connection**: A connection to your AML workspace. To set up a new connection, select [**Add connection**](#set-up-an-aml-connection).
-   - **Pipeline**:
+   - **Pipeline**: A pipeline linked to your AML workspace.
+   - **Output Path**: The output path linked to your pipeline.
+   - **Output Datastore**: The output datastore linked to your pipeline.
 
-1. Provide a recognizable **Name**.
+1. Select **Get started**.
 
-   :::image type="content" source="media/new-workflowv2.png" alt-text="Screenshot of the New workflow pane.":::
+1. In the **Model name** step, enter the following information:
 
-1. Select the organization that contains the web service in **Tenant that contains your web service**.
+   :::image type="content" source="media/custom-model-AML-wizard1.png" alt-text="Custom model AML Model name page.":::
 
-1. If your Azure Machine Learning subscription is in a different tenant than Customer Insights, select **Sign in** with your credentials for the selected organization.
+   - **Name**: A recognizable name for the model.
+   - **Output entity name**: An output entity name for the pipeline output results.
+   - **Primary key**: The attribute you want as the primary key for your output entity.
+   - **Customer ID**: The matching attribute that corresponds to the Customer Insight Customer ID.
 
-1. Select the **Workspaces** associated with your web service.
+1. Select **Next**.
 
-1. Choose the Azure Machine Learning pipeline in the **Web service that contains your model** dropdown. Then, select **Next**.
-   Learn more about [publishing a pipeline in Azure Machine Learning using the designer](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) or [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk).
+1. In the **Required data** step, select **Add data**.
 
-1. For each **Web service input**, select the matching **Entity** from Customer Insights. Then, select **Next**.
-   > [!NOTE]
-   > The custom model workflow will apply heuristics to map the web service input fields to the entity attributes based on the name and data type of the field. You'll see an error if a web service field can't be mapped to an entity.
+1. Enter the data to use for your custom model and select **Save**.
 
-   :::image type="content" source="media/intelligence-screen2-updated.png" alt-text="Configure a workflow.":::
+1. Select **Next**.
 
-1. For **Model Output Parameters**, set the following properties:
-   - **Entity name** for the pipeline output results
-   - **Output data store parameter name** of your batch pipeline
-   - **Output Path parameter name** of your batch pipeline
+1. In the **Review and run** step, review the model details and make changes if necessary.
 
-   :::image type="content" source="media/intelligence-screen3-outputparameters.png" alt-text="Model Output Parameter Pane.":::
-
-1. Select the matching attribute from **Customer ID in results** that identifies customers and select **Save**.
-
-   :::image type="content" source="media/intelligence-screen4-relatetocustomer.png" alt-text="Relate results to Customer data pane.":::
-
-   The **Workflow Saved** screen displays details about the workflow. If you configured a workflow for an Azure Machine Learning pipeline, Customer Insights attaches to the workspace that contains the pipeline. Customer Insights will get a **Contributor** role on the Azure workspace.
-
-1. Select **Done**. The **Custom Models** page displays.
-
-1. Select the vertical ellipsis (&vellip;) for the workflow and select **Run**. Your workflow also runs automatically with every [scheduled refresh](schedule-refresh.md).
+1. Select **Save and run**. The **My predictions** page displays.
 
 ## Manage an existing workflow
 
-Go to **Intelligence** > **Custom models** to view the workflows you created.
+1. Go to **Intelligence** and select the **My predictions** tab.
 
-Select a workflow to view available actions.
+1. Select the vertical ellipsis (&vellip;) next to a model to view available actions.
 
-- **Edit** a workflow
-- **Run** a workflow
-- [**Delete**](#delete-a-workflow) a workflow
-
-### Edit a workflow
-
-1. Go to **Intelligence** > **Custom models**.
-
-1. Next to the workflow you'd like to update, select the vertical ellipsis (&vellip;) and select **Edit**.
-
-1. Change **Display name** if needed, and select **Next**.
-
-1. For each **Web service input**, update the matching **Entity** from Customer Insights, if needed. Then, select **Next**.
-
-1. For **Model Output Parameters**, change any of the following:
-   - **Entity name** for the pipeline output results
-   - **Output data store parameter name** of your batch pipeline
-   - **Output Path parameter name** of your batch pipeline
-
-1. Change the matching attribute from **Customer ID in results** to identify customers. Choose an attribute from the inference output with values similar to the Customer ID column of the Customer entity. If you don't have such a column in your data set, choose an attribute that uniquely identifies the row.
-
-1. Select **Save**
-
-### Delete a workflow
-
-1. Go to **Intelligence** > **Custom models**.
-
-1. Next to the workflow you'd like to delete, select the vertical ellipsis (&vellip;) and select  **Delete**.
-
-1. Confirm your deletion.
-
-Your workflow will be deleted. The [entity](entities.md) that was created when you created the workflow persists, and can be viewed from the **Data** > **Entities** page.
+- **Edit** a workflow to change the model configuration or the connection.
+- **Refresh** a workflow on demand. The workflow also runs automatically with every [scheduled refresh](schedule-refresh.md).
+- **Delete** a workflow. Confirm the deletion. The entity used to create the workflow is not deleted.
 
 ## View the results
 
