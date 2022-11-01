@@ -116,20 +116,21 @@
     - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
-- name: Customer profiles and activities
+- name: Customers
   items:
     - name: View customer profiles
       href: customer-profiles.md
     - name: Manage the search & filter index
       href: search-filter-index.md
-    - name: Define customer activities
-      href: activities.md
     - name: Use consent management
       href: consent-management.md
     - name: Use web data for personalization
       href: unknown-to-known.md
     - name: Manage unknown customer profiles
       href: manage-unknown-profiles.md
+  
+- name: Activities
+  href: activities.md
 
 - name: Tables
   items:
@@ -137,15 +138,14 @@
       href: entities.md
     - name: Review the table schemas in Common Data Model
       href: entity-schemas.md
-
     - name: Build relationships and connected tables
       href: relationships.md
     - name: Define semantic mappings
       href: semantic-mappings.md
 
-- name: Export options
+- name: Exports
   items:
-    - name: Exports
+    - name: Export options
       items:
         - name: Exports overview
           href: export-destinations.md
@@ -257,7 +257,7 @@
     - name: Create with templates
       href: measure-templates.md
           
-- name: Predictions
+- name: Predictions and custom models
   items:
     - name: Predict data with the help of AI
       items: 
