@@ -131,65 +131,17 @@
     - name: Manage unknown customer profiles
       href: manage-unknown-profiles.md
 
-- name: Segments
+- name: Tables
   items:
-    - name: Segments overview
-      href: segments.md
-    - name: Create with segment builder
-      href: segment-builder.md
-    - name: Create with quick segments
-      href: segment-quick.md
-    - name: Suggested segments based on measures
-      href: suggested-segments.md
-    - name: Suggested segments based on activity
-      href: suggested-segments-activity.md
-    - name: Get insights on segments
-      href: segment-insights.md
-    - name: Find similar customers
-      href: find-similar-customer-segments.md
+    - name: Understand tables
+      href: entities.md
+    - name: Review the table schemas in Common Data Model
+      href: entity-schemas.md
 
-- name: Measures
-  items: 
-    - name: Measures overview
-      href: measures.md
-    - name: Create with measure builder
-      href: measure-builder.md
-    - name: Create with templates
-      href: measure-templates.md
-          
-- name: Predictions
-  items:
-    - name: Predict data with the help of AI
-      items: 
-        - name: Prediction models overview
-          href: predictions-overview.md
-        - name: Predict customer lifetime value (CLV)
-          href: predict-customer-lifetime-value.md
-        - name: Predict product recommendations
-          href: predict-product-recommendation.md
-        - name: Predict subscription churn
-          href: predict-subscription-churn.md
-        - name: Predict transaction churn
-          href: predict-transactional-churn.md
-        - name: Analyze sentiment in customer feedback
-          href: sentiment-analysis.md
-        - name: Use custom models from Azure Machine Learning
-          href: custom-models.md
-        - name: Create segments based on predictions
-          href: prediction-based-segment.md
-
-    - name: Sample guides
-      items:    
-        - name: Sample guide for CLV prediction
-          href: sample-guide-predict-clv.md
-        - name: Sample guide for subscription churn prediction
-          href: sample-guide-predict-subscription-churn.md
-        - name: Sample guide for transaction churn prediction
-          href: sample-guide-predict-transactional-churn.md
-        - name: Sample guide for product recommendation prediction
-          href: sample-guide-predict-product-recommendation.md
-        - name: Experiments with Azure Machine learning
-          href: azure-machine-learning-experiments.md
+    - name: Build relationships and connected tables
+      href: relationships.md
+    - name: Define semantic mappings
+      href: semantic-mappings.md
 
 - name: Export options
   items:
@@ -279,17 +231,65 @@
         - name: Power BI
           href: export-power-bi.md
 
-- name: Tables
+- name: Segments
   items:
-    - name: Understand tables
-      href: entities.md
-    - name: Review the table schemas in Common Data Model
-      href: entity-schemas.md
+    - name: Segments overview
+      href: segments.md
+    - name: Create with segment builder
+      href: segment-builder.md
+    - name: Create with quick segments
+      href: segment-quick.md
+    - name: Suggested segments based on measures
+      href: suggested-segments.md
+    - name: Suggested segments based on activity
+      href: suggested-segments-activity.md
+    - name: Get insights on segments
+      href: segment-insights.md
+    - name: Find similar customers
+      href: find-similar-customer-segments.md
 
-    - name: Build relationships and connected tables
-      href: relationships.md
-    - name: Define semantic mappings
-      href: semantic-mappings.md
+- name: Measures
+  items: 
+    - name: Measures overview
+      href: measures.md
+    - name: Create with measure builder
+      href: measure-builder.md
+    - name: Create with templates
+      href: measure-templates.md
+          
+- name: Predictions
+  items:
+    - name: Predict data with the help of AI
+      items: 
+        - name: Prediction models overview
+          href: predictions-overview.md
+        - name: Predict customer lifetime value (CLV)
+          href: predict-customer-lifetime-value.md
+        - name: Predict product recommendations
+          href: predict-product-recommendation.md
+        - name: Predict subscription churn
+          href: predict-subscription-churn.md
+        - name: Predict transaction churn
+          href: predict-transactional-churn.md
+        - name: Analyze sentiment in customer feedback
+          href: sentiment-analysis.md
+        - name: Use custom models from Azure Machine Learning
+          href: custom-models.md
+        - name: Create segments based on predictions
+          href: prediction-based-segment.md
+
+    - name: Sample guides
+      items:    
+        - name: Sample guide for CLV prediction
+          href: sample-guide-predict-clv.md
+        - name: Sample guide for subscription churn prediction
+          href: sample-guide-predict-subscription-churn.md
+        - name: Sample guide for transaction churn prediction
+          href: sample-guide-predict-transactional-churn.md
+        - name: Sample guide for product recommendation prediction
+          href: sample-guide-predict-product-recommendation.md
+        - name: Experiments with Azure Machine learning
+          href: azure-machine-learning-experiments.md
 
 - name: Environments
   items: 
@@ -304,7 +304,7 @@
     - name: Connect to a storage account using Service Principal
       href: connect-service-principal.md
 
-- name: Administration
+- name: Settings
   items:
     - name: Assign user permissions
       href: permissions.md
