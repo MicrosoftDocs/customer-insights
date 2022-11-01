@@ -40,7 +40,7 @@ From scratch with measure builder: [Build your own](measure-builder.md).
 
 ## Manage existing measures
 
-Go to the **Measures** page to view the measures you created, their status, measure type, and the last time the data was refreshed. You can sort the list of measures by any column or use the search box to find the measure you want to manage.
+Go to the **Insights** > **Measures** page to view the measures you created, their status, measure type, and the last time the data was refreshed. You can sort the list of measures by any column or use the search box to find the measure you want to manage.
 
 Select next to a measure to view available actions. Select the measure name to preview the output and download a CSV file.
 
@@ -58,7 +58,7 @@ Select next to a measure to view available actions. Select the measure name to p
 
 ## Refresh measures
 
-Measures can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more measures, select them and choose **Refresh**. To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**.
+Measures can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more measures, select them and choose **Refresh**. To [schedule an automatic refresh](schedule-refresh.md), go to **Settings** > **System** > **Schedule**.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

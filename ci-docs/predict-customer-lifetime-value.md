@@ -54,19 +54,19 @@ Determine what CLV means for your business. We support transaction-based CLV pre
 - Less than 20% missing values in required fields
 
 > [!NOTE]
-> Only one transaction history entity can be configured. If there are multiple purchase or transaction entities, combine them in Power Query before data ingestion.
+> Only one transaction history table can be configured. If there are multiple purchase or transaction tables, combine them in Power Query before data ingestion.
 
 ## Create a Customer Lifetime Value prediction
 
 Select **Save draft** at any time to save the prediction as a draft. The draft prediction displays in the **My predictions** tab.
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer lifetime value** tile.
 
 1. Select **Get started**.
 
-1. **Name this model** and the **Output entity name** to distinguish them from other models or entities.
+1. **Name this model** and the **Output table name** to distinguish them from other models or tables.
 
 1. Select **Next**.
 
@@ -95,7 +95,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select the semantic activity type, **SalesOrder** or **SalesOrderLine**, that contains the transaction history. If the activity has not been set up, select **here** and create it.
 
-1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
   
    :::image type="content" source="media/CLV-add-required.PNG" alt-text="Add required data for CLV model":::
 
@@ -113,7 +113,7 @@ Data reflecting key customer interactions (like web, customer service, and event
 
 1. Select an activity type that matches the type of customer activity you're adding. If the activity has not been set up, select **here** and create it.
 
-1. Under **Activities**, if the activity attributes were mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If mapping did not occur, select **Edit** and map your data.
+1. Under **Activities**, if the activity attributes were mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If mapping did not occur, select **Edit** and map your data.
 
 1. Select **Next** and review the attributes required for this model.
 
@@ -132,7 +132,7 @@ With this information, they organize a local event for the launch of the espress
 
 1. Select **Add data** under **Boost model insights even further with additional customer data**.
 
-1. For **Entity**, choose **Customer : CustomerInsights** to select the unified customer profile that maps to customer attribute data. For **Customer ID**, choose **System.Customer.CustomerId**.
+1. For **Table**, choose **Customer : CustomerInsights** to select the unified customer profile that maps to customer attribute data. For **Customer ID**, choose **System.Customer.CustomerId**.
 
 1. Map more fields if the data is available in your unified customer profiles.
 
@@ -160,13 +160,13 @@ The **Review and run** step shows a summary of the configuration and provides a 
 
 ## View prediction results
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. In the **My predictions** tab, select the prediction you want to view.
 
 There are three primary sections of data within the results page.
 
-- **Training model performance**: Grades A, B, or C indicate the performance of the prediction and can help you make the decision to use the results stored in the output entity.
+- **Training model performance**: Grades A, B, or C indicate the performance of the prediction and can help you make the decision to use the results stored in the output table.
   
   :::image type="content" source="media/clv-model-score.png" alt-text="Image of the model score information box with the grade A.":::
 

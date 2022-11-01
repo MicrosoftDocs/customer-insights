@@ -33,7 +33,7 @@ Export segments of unified customer profiles to Campaign Monitor and use them fo
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Campaign Monitor**.
 

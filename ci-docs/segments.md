@@ -45,7 +45,7 @@ Segment of accounts or segment of contacts (preview) with segment builder: [Buil
 
 ## Manage existing segments
 
-Go to the **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
+Go to the **Insights** > **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
 
 > [!TIP]
 > In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
@@ -81,15 +81,15 @@ The upper part of the page includes a trend graph that visualizes changes in mem
 The lower part contains a list of the segment members.
 
 > [!NOTE]
-> Fields that appear in this list are based on the attributes of your segment's entities.
+> Fields that appear in this list are based on the attributes of your segment's tables.
 >
-> The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Entities**](entities.md) page or [export the segment](export-destinations.md).
+> The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Tables**](entities.md) page or [export the segment](export-destinations.md).
 
 ## Refresh segments
 
 Segments can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more segments, select them and choose **Refresh**.
 
-To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**. The following rules apply:
+To [schedule an automatic refresh](schedule-refresh.md), go to **Settings** > **System** > **Schedule**. The following rules apply:
 
 - All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. Once the refresh is complete, the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
 - Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segment was run or refreshed manually.
@@ -100,7 +100,7 @@ To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **Sys
 
 Export segments to other apps to further use the data. Export a segment from the segments page or the [exports page](export-destinations.md).
 
-1. Go to the **Segments** page and select the segment you want to export.
+1. Go to the **Insights** > **Segments** page and select the segment you want to export.
 
 1. Select **Manage exports**. The page **Exports (preview) for segment** opens. View all configured exports grouped by whether they contain the current segment or not.
 

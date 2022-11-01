@@ -78,18 +78,18 @@ We currently support the following country/region options: Australia, Canada (En
 
 1. Select **Next**.
 
-1. Select the **Customer data set** and choose the profile or segment you want to enrich with data from Microsoft. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich with data from Microsoft. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
 1. Select **Next**.
 
-1. Map your fields from your unified customer entity to the Microsoft data.
+1. Map your fields from your unified customer table to the Microsoft data.
 
    > [!NOTE]
    > At least Date of Birth or Gender attributes are required. Country/Region and at least City (and State/Province) or Postal code are required. We recommend that date of birth is converted to DateTime type during data ingestion. Alternatively, it can be a string in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format "yyyy-MM-dd" or "yyyy-MM-ddTHH:mm:ss".
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a name for the enrichment. The **Output entity name** is automatically selected.
+1. Provide a name for the enrichment. The **Output table name** is automatically selected.
 
    :::image type="content" source="media/enrichment-interests-summary.png" alt-text="Interests review and naming page.":::
 
@@ -107,7 +107,7 @@ We currently support the following country/region options: Australia, Canada (En
 
 The results include **Affinity Level** or **Share of Voice** charts.
 
-The entities created from the enrichments are listed under the **Enrichment** group in **Data** > **Entities**. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** entities. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** entities.
+The tables created from the enrichments are listed under the **Enrichment** group in **Data** > **Tables**. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** tables. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** tables.
 
 ## See enrichment data on the customer card
 

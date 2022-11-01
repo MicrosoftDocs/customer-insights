@@ -54,17 +54,17 @@ Converging unknown identities with known identities helps enable personalization
 
 Since some of the users in our data are known, we can use Customer Insights to combine that data with the user's profile. For more information about unifying customer profiles, see [Data unification overview](data-unification.md).
 
-1. Select the source fields from the web data entity. Use the profile data that is stored in your web data and select the fields that represent Ids with demographic data.
+1. Select the source fields from the web data table. Use the profile data that is stored in your web data and select the fields that represent Ids with demographic data.
 
    :::image type="content" source="media/website-source-fields.png" alt-text="Source fields for the web data source.":::
 
 1. Add rules to merge duplicate records. For web data, choose the most filled data.
 
-1. Configure match rules and conditions. The web profiles event data in this example will be matched on IDs with the profiles from the other data sources that contain customer information. Set up exact match rules on IDs as separate rules with each of the other profile entities that have a corresponding primary key or ID match. In the example, web event profile data is used as the last matching entity so that other profile data is combined first.
+1. Configure match rules and conditions. The web profiles event data in this example will be matched on IDs with the profiles from the other data sources that contain customer information. Set up exact match rules on IDs as separate rules with each of the other profile tables that have a corresponding primary key or ID match. In the example, web event profile data is used as the last matching table so that other profile data is combined first.
    1. Not checking **Include all records** creates unified profiles for known users and includes their corresponding unknown user IDs. It's helpful in scenarios when you're interested in viewing the past behavioral activities of known users when they were still unknown.
    1. Checking **Include All records** creates separate profile records for unknown users. Unknown users get a unique customer ID. In the future when a known profile is associated in the web events profile data, then the newly known user’s journey can be viewed and used for personalization based on past unknown behavioral data too.
 
-:::image type="content" source="media/website-match-rule.png" alt-text="Match rule for the website data source entity.":::
+:::image type="content" source="media/website-match-rule.png" alt-text="Match rule for the website data source table.":::
 
 ## Get insights
 

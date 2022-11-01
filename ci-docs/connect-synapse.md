@@ -60,14 +60,14 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 1. Choose a **Database** from the workspace connected in the selected Azure Synapse Analytics connection and select **Next**. Currently, we only support the database type *Lake database*.
 
-1. Select the entities to ingest from the connected database and select **Next**.
+1. Select the tables to ingest from the connected database and select **Next**.
 
-1. Optionally, choose the data entities to allow data profiling on.
+1. Optionally, choose the data tables to allow data profiling on.
 
 1. Select **Save** to apply your selection and start the ingestion of the data from your newly created data source linked to the Lake database tables in Azure Synapse Analytics. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Entities**](entities.md) page.
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Tables**](entities.md) page.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

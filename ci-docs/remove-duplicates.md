@@ -18,7 +18,7 @@ searchScope:
 
 # Remove duplicates before unifying data
 
-This optional step in unification enables you to set up rules for eliminating duplicate records **within** an entity. Deduplication identifies multiple records for a customer and selects the best record to keep (based on basic merge preferences) or merges the records into one (based on advanced merge preferences). Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
+This optional step in unification enables you to set up rules for eliminating duplicate records **within** a table. Deduplication identifies multiple records for a customer and selects the best record to keep (based on basic merge preferences) or merges the records into one (based on advanced merge preferences). Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
 
 ## Default deduplication
 
@@ -26,27 +26,27 @@ The system-defined rules apply if no deduplication rules are added.
 
 - The primary key is deduplicated.
   For any records with the same primary key, the **Most filled** record (the one with the fewest null values) is the winner.
-- Any cross-entity matching rules are applied to the entity.
-  For example: In the match step, if entity A is matched against entity B on *FullName* and *DateofBirth*, then entity A is also deduplicated by *FullName* and *DateofBirth*. Because *FullName* and *DateofBirth* are valid keys for identifying a customer in entity A, these keys are also valid for identifying duplicate customers in entity A.
+- Any cross-table matching rules are applied to the table.
+  For example: In the match step, if table A is matched against table B on *FullName* and *DateofBirth*, then table A is also deduplicated by *FullName* and *DateofBirth*. Because *FullName* and *DateofBirth* are valid keys for identifying a customer in table A, these keys are also valid for identifying duplicate customers in table A.
 
-## Include enriched entities (preview)
+## Include enriched tables (preview)
 
-If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
+If you enriched tables on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
-1. On the **Duplicate records** page, select **Use enriched entities** at the top of the page.
+1. On the **Duplicate records** page, select **Use enriched tables** at the top of the page.
 
-1. From the **Use enriched entities** pane, choose one or more enriched entities.
+1. From the **Use enriched tables** pane, choose one or more enriched tables.
 
 1. Select **Done**.
 
 ## Define deduplication rules
 
-1. On the **Duplicate records** page, select an entity and select **Add rule** to define the deduplication rules.
+1. On the **Duplicate records** page, select a table and select **Add rule** to define the deduplication rules.
 
-   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Duplicate records page with entity highlighted and Add rule displayed"  lightbox="media/m3_duplicates_showmore.png":::
+   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Duplicate records page with table highlighted and Add rule displayed"  lightbox="media/m3_duplicates_showmore.png":::
 
    1. In the **Add rule** pane, enter the following information:
-      - **Select field**: Choose from the list of available fields from the entity that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
+      - **Select field**: Choose from the list of available fields from the table that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
       - **Normalize**: Select from following normalization options for the selected attributes.
         - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
         - **Symbols**: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
@@ -69,7 +69,7 @@ If you enriched entities on the data source level to help improve your unificati
 
 1. Optionally, [add more rules](#define-deduplication-rules).
 
-1. Select an entity and then **Edit merge preferences**.
+1. Select a table and then **Edit merge preferences**.
 
 1. In the **Merge preferences** pane:
    1. Choose one of three options to determine which record to keep if a duplicate is found:
@@ -79,7 +79,7 @@ If you enriched entities on the data source level to help improve your unificati
 
       In the event of a tie, the winner record is the one with the MAX(PK) or the larger primary key value.
 
-   1. Optionally, to define merge preferences on individual attributes of an entity, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the entity to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
+   1. Optionally, to define merge preferences on individual attributes of a table, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the table to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
 
       :::image type="content" source="media/m3_adv_merge.png" alt-text="Advanced merge preferences pane showing recent email and complete address":::
 
@@ -88,9 +88,9 @@ If you enriched entities on the data source level to help improve your unificati
 1. After defining the deduplication rules and merge preferences, select **Next**.
   
 > [!div class="nextstepaction"]
-> [Next step for a single entity: Unify fields](merge-entities.md)
+> [Next step for a single table: Unify fields](merge-entities.md)
 
 > [!div class="nextstepaction"]
-> [Next step for multiple entities: Matching conditions](match-entities.md)
+> [Next step for multiple tables: Matching conditions](match-entities.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -24,7 +24,7 @@ Access to Customer Insights is restricted to users in your organization that are
 - Explore insights and segments within the **Home** and **Segments** pages.
 - Search and filter customer profiles using the **Customers** page. Fields must be searchable.
 - View and explore the **Enrichment** page.
-- Explore and export entities using the **Entities** page.
+- Explore and export tables using the **Tables** page.
 - View the status of system processes  using the **System** page.
 - View exports in **Exports** page.
 - Install and use the **Power BI Customer Insights** dashboard.
@@ -33,7 +33,7 @@ Access to Customer Insights is restricted to users in your organization that are
 
 - All permissions available to the Viewer.
 - Load and transform data using the **Data sources** page.
-- Complete **Data Unification** which result in the unified customer profile entity.
+- Complete **Data Unification** which result in the unified customer profile table.
 - Define **Relationships** and **Activities**.
 - Create segments using the **Segments** page.
 - Create measures using the **Measures** page.
@@ -44,7 +44,7 @@ Access to Customer Insights is restricted to users in your organization that are
 
 - All permissions available to the Contributor.
 - Change settings on the **System** page, including the working language, refresh schedules for your system processes, and exporting diagnostic logs.
-- Change settings on the **Security** page, including users, API keys, private links, and key vault.
+- Change settings on the **Permissions** page, including users, API keys, private links, and key vault.
 - Set search and filter definitions for the Customers page using the **Search & filter index** page (accessible via the **Customers** page).
 - Manage connections and allow them for other user roles on **Connections** page.
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for all enrichments).
@@ -61,7 +61,7 @@ Access to Customer Insights is restricted to users in your organization that are
 
 ## Add users
 
-1. Go to **Admin** > **Security** and select the **Users** tab.
+1. Go to **Settings** > **Permissions** and select the **Users** tab.
 
 1. Select **Add users** to open the **Add/Edit permissions** pane.
 
@@ -71,11 +71,11 @@ Access to Customer Insights is restricted to users in your organization that are
 
 ## View current permissions
 
-Go to **Admin** > **Security** and select the **Users** tab to view the list of active users and their role assignments. You can sort the list of users by any column or use the search box to find a particular user.
+Go to **Settings** > **Permissions** and select the **Users** tab to view the list of active users and their role assignments. You can sort the list of users by any column or use the search box to find a particular user.
 
 ## Manage current users
 
-Go to **Admin** > **Security** and select the **Users** tab. You can sort the list of users by any column or use the search box to find the user you want to manage.
+Go to **Settings** > **Permissions** and select the **Users** tab. You can sort the list of users by any column or use the search box to find the user you want to manage.
 
 Select a user to view available actions.
 

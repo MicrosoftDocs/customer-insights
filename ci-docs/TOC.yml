@@ -279,14 +279,14 @@
         - name: Power BI
           href: export-power-bi.md
 
-- name: Entities
+- name: Tables
   items:
-    - name: Understand entities
+    - name: Understand tables
       href: entities.md
-    - name: Review the entity schemas in Common Data Model
+    - name: Review the table schemas in Common Data Model
       href: entity-schemas.md
 
-    - name: Build relationships and connected entities
+    - name: Build relationships and connected tables
       href: relationships.md
     - name: Define semantic mappings
       href: semantic-mappings.md

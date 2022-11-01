@@ -31,7 +31,7 @@ We currently support enriching customer profiles in the United States only.
 
 You must be an [administrator](permissions.md#admin) in Customer Insights and have an Experian User ID, Party ID, and Model Number.
 
-1. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the Experian tile.
+1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the Experian tile.
 
    :::image type="content" source="media/enrichment-Experian-connection.png" alt-text="Experian connection configuration pane.":::
 
@@ -55,7 +55,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Next**.
 
-1. Select the **Customer data set** and choose the profile or segment you want to enrich with demographics data from Experian. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich with demographics data from Experian. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
     :::image type="content" source="media/enrichment-Experian-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
 
@@ -65,7 +65,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a **Name** for the enrichment and the **Output entity name**.
+1. Provide a **Name** for the enrichment and the **Output table name**.
 
 1. Select **Save enrichment** after reviewing your choices.
 

@@ -1,6 +1,6 @@
 ---
 title: "Match conditions for data unification"
-description: "Match entities to create unified customer profiles."
+description: "Match tables to create unified customer profiles."
 recommendations: false
 ms.date: 10/07/2022
 
@@ -19,58 +19,58 @@ searchScope:
 
 # Match conditions for data unification
 
-This step in unification defines the match order and rules for cross-entity matching. This step requires at least two entities.
+This step in unification defines the match order and rules for cross-table matching. This step requires at least two tables.
 
 > [!NOTE]
-> Once you create your match conditions and select **Next**, you cannot remove a selected entity or attribute. If needed, select **Back** to review the selected entities and attributes before continuing.
+> Once you create your match conditions and select **Next**, you cannot remove a selected table or attribute. If needed, select **Back** to review the selected tables and attributes before continuing.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
-## Include enriched entities (preview)
+## Include enriched tables (preview)
 
-If you enriched entities on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched entities on the **Duplicate records** page, you do not need to select them again.
+If you enriched tables on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched tables on the **Duplicate records** page, you do not need to select them again.
 
-1. On the **Matching conditions** page, select **Use enriched entities** at the top of the page.
+1. On the **Matching conditions** page, select **Use enriched tables** at the top of the page.
 
-1. From the **Use enriched entities** pane, choose one or more enriched entities.
+1. From the **Use enriched tables** pane, choose one or more enriched tables.
 
 1. Select **Done**.
 
 ## Specify the match order
 
-Each match unifies two or more entities into a single, consolidated entity. At the same time, it keeps the unique customer records. The match order indicates the order in which the system tries to match the records.
+Each match unifies two or more tables into a single, consolidated table. At the same time, it keeps the unique customer records. The match order indicates the order in which the system tries to match the records.
 
 > [!IMPORTANT]
-> The first entity is called the primary entity, which serves as the basis for your unified profiles. Additional entities that are selected will be added to this entity.
+> The first table is called the primary table, which serves as the basis for your unified profiles. Additional tables that are selected will be added to this table.
 >
 > Important considerations:
 >
-> - Choose the entity with the most complete and reliable profile data about your customers as the primary entity.
-> - Choose the entity that has several attributes in common with other entities (for example, name, phone number, or email address) as the primary entity.
+> - Choose the table with the most complete and reliable profile data about your customers as the primary table.
+> - Choose the table that has several attributes in common with other tables (for example, name, phone number, or email address) as the primary table.
 
-1. On the **Matching conditions** page, use the move up and down arrows to move the entities in the order you want, or drag and drop them. For example, select **eCommerceCustomers** as the primary entity and **loyCustomers** as the second entity.
+1. On the **Matching conditions** page, use the move up and down arrows to move the tables in the order you want, or drag and drop them. For example, select **eCommerceCustomers** as the primary table and **loyCustomers** as the second table.
 
-1. To have every record in the entity as a unique customer regardless if a match is found, select **Include all records**. Any records in this entity that do not match to records in any other entity are included in the unified profile. Records that do not have a match are called singletons.
+1. To have every record in the table as a unique customer regardless if a match is found, select **Include all records**. Any records in this table that do not match to records in any other table are included in the unified profile. Records that do not have a match are called singletons.
   
-The primary entity *Contacts:eCommerce* is matched with the next entity *CustomerLoyalty:Loyalty*. The dataset that results from the first match step is matched with the following entity if you’ve more than two entities.
+The primary table *Contacts:eCommerce* is matched with the next table *CustomerLoyalty:Loyalty*. The dataset that results from the first match step is matched with the following table if you’ve more than two tables.
 
-:::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the entities." lightbox="media/m3_match.png":::
+:::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the tables." lightbox="media/m3_match.png":::
 
 ## Define rules for match pairs
 
-Match rules specify the logic by which a specific pair of entities will be matched. A rule consists of one or more conditions.
+Match rules specify the logic by which a specific pair of tables will be matched. A rule consists of one or more conditions.
 
-The warning next to an entity name means that no match rule is defined for a match pair.
+The warning next to a table name means that no match rule is defined for a match pair.
 
-1. Select **Add rule** for an entity pair to define match rules.
+1. Select **Add rule** for a table pair to define match rules.
 
 1. In the **Add rule** pane, configure the conditions for the rule.
 
    :::image type="content" source="media/m3_add_rule.png" alt-text="Screenshot of Add rule pane.":::
 
-   - **Select Entity/Field (first row)**: Choose an entity and an attribute that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
+   - **Select Table/Field (first row)**: Choose a table and an attribute that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
 
-   - **Select Entity/Field (second row)**: Choose an attribute that relates to the attribute of the entity specified in the first row.
+   - **Select Table/Field (second row)**: Choose an attribute that relates to the attribute of the table specified in the first row.
 
    - **Normalize**: Select from following normalization options for the selected attributes.
      - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
@@ -86,7 +86,7 @@ The warning next to an entity name means that no match rule is defined for a mat
 
    - **Name**: Name for the rule.
 
-1. To match entities only if attributes meet multiple conditions, select **Add** > **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
+1. To match tables only if attributes meet multiple conditions, select **Add** > **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
 
 1. Optionally, consider advanced options such as [exceptions](#add-exceptions-to-a-rule) or [custom match conditions](#specify-custom-match-conditions).
 
@@ -101,9 +101,9 @@ The warning next to an entity name means that no match rule is defined for a mat
 
 ### Add rules to a match pair
 
-Match rules represent sets of conditions. To match entities by conditions based on multiple attributes, add more rules.
+Match rules represent sets of conditions. To match tables by conditions based on multiple attributes, add more rules.
 
-1. Select **Add rule** on the entity you want to add rules to.
+1. Select **Add rule** on the table you want to add rules to.
 
 1. Follow the steps in [Define rules for match pairs](#define-rules-for-match-pairs).
 
@@ -114,9 +114,9 @@ Match rules represent sets of conditions. To match entities by conditions based 
 
 ### Add exceptions to a rule
 
-In most cases, the entity matching leads to unique customer profiles with consolidated data. To address rare cases of false positives and false negatives, define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records, which fulfill the exception criteria.
+In most cases, the table matching leads to unique customer profiles with consolidated data. To address rare cases of false positives and false negatives, define exceptions for a match rule. Exceptions are applied after processing the match rules and avoid matching of all records, which fulfill the exception criteria.
 
-For example, if your match rule combines last name, city, and date of birth, the system would identify twins with the same last name who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the entities you combine aren’t the same.
+For example, if your match rule combines last name, city, and date of birth, the system would identify twins with the same last name who live in the same town as the same profile. You can specify an exception that doesn't match the profiles if the first name in the tables you combine aren’t the same.
 
 1. In the **Edit rule** pane, select **Add** > **Add exception**.
 
@@ -141,22 +141,21 @@ Specify conditions that override the default match logic. There are four options
 
 1. Choose the **Custom type** and select **Download template**. Rename the template without using spaces. Use a separate template for each match option.
 
-1. Open the downloaded template file and fill in the details. The template contains fields to specify the entity and the entity primary key values to be used in the custom match. Entity names are case sensitive. For example, if you want primary key *12345* from *Sales* entity to always match with primary key *34567* from *Contact* entity, fill in the template:
-   - Entity1: Sales
-   - Entity1Key: 12345
-   - Entity2: Contact
-   - Entity2Key: 34567
+1. Open the downloaded template file and fill in the details. The template contains fields to specify the table and the table primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* table to always match with primary key *34567* from *Contact* table, fill in the template:
+    - Table1: Sales
+    - Table1Key: 12345
+    - Table2: Contact
+    - Table2Key: 34567
 
-   The same template file can specify custom match records from multiple entities.
+   The same template file can specify custom match records from multiple tables.
 
-   > [!NOTE]
-   > If you want to specify custom matching for deduplication on an entity, provide the same entity as both Entity1 and Entity2 and set the different primary key values. You must define at least one deduplication rule to the entity to use custom matching.
+   If you want to specify custom matching for deduplication on a table, provide the same table as both Table1 and Table2 and set the different primary key values.
 
 1. After adding all the overrides, save the template file.
 
-1. Go to **Data** > **Data sources** and ingest the template files as new entities.
+1. Go to **Data** > **Data sources** and ingest the template files as new tables.
 
-1. After uploading the files, select the **Custom** option again. Select the required entities from the dropdown menu and select **Done**.
+1. After uploading the files, select the **Custom** option again. Select the required tables from the dropdown menu and select **Done**.
 
    :::image type="content" source="media/custom-match-overrides.png" alt-text="Screenshot of the dialog to choose overrides for a custom match scenario.":::
 

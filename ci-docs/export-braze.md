@@ -34,7 +34,7 @@ Export segments of unified customer profiles to Braze and use them for marketing
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Braze**.
 
@@ -68,7 +68,7 @@ Export segments of unified customer profiles to Braze and use them for marketing
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. In the **Customer ID** field, select the field that represents the customer's Braze ID. The segments in Braze will be created with the same name of the segment as in Dynamics 365 Customer Insights. You can choose more, optional fields for matching data.
 
-1. Select the entities or segments you want to export.
+1. Select the tables or segments you want to export.
 
 1. Select **Save**.
 

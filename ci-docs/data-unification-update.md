@@ -31,21 +31,21 @@ To review or change any unification settings once a unified profile has been cre
    :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified." lightbox="media/b2b_unified.png":::
 
    > [!TIP]
-   > The **Matching conditions** tile displays only if multiple entities were selected.
+   > The **Matching conditions** tile displays only if multiple tables were selected.
 
 1. Choose what you want to update:
-   - [Source fields](#edit-source-fields) to add attributes or entities or change attribute types. To remove an attribute, see [Remove a unified field](#remove-a-unified-field). To remove an entity, see [Remove a unified entity](#remove-a-unified-entity).
+   - [Source fields](#edit-source-fields) to add attributes or tables or change attribute types. To remove an attribute, see [Remove a unified field](#remove-a-unified-field). To remove a table, see [Remove a unified table](#remove-a-unified-table).
    - [Duplicate records](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
-   - [Matching conditions](#manage-match-rules) to update matching rules across two or more entities.
+   - [Matching conditions](#manage-match-rules) to update matching rules across two or more tables.
    - [Unified customer fields](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
    - [Semantic fields](#manage-semantic-fields-for-unified-contacts) to manage semantic types for unified contact fields.
    - [Relationships](#manage-contact-and-account-relationships) to manage the contact to account relationship.
 
 1. After making your changes, choose your next option:
 
-   - [Run matching conditions](#run-matching-conditions) to quickly evaluate the quality of your matching conditions (deduplication and match rules) without updating the unified profile. The **Run matching conditions only** option doesn't display for single entity.
-   - [Unify profiles](#run-updates-to-the-unified-profile) to run matching conditions and update the unified profile entity without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
-   - [Unify profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions, update the unified profile entity, and update all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically. In B-to-B, unification is run on both the account and contact entities updating the unified profiles.
+   - [Run matching conditions](#run-matching-conditions) to quickly evaluate the quality of your matching conditions (deduplication and match rules) without updating the unified profile. The **Run matching conditions only** option doesn't display for a single table.
+   - [Unify profiles](#run-updates-to-the-unified-profile) to run matching conditions and update the unified profile table without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
+   - [Unify profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions, update the unified profile table, and update all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically. In B-to-B, unification is run on both the account and contact tables updating the unified profiles.
 
 ## Edit source fields
 
@@ -55,9 +55,9 @@ To review or change any unification settings once a unified profile has been cre
 
    The number of mapped and unmapped fields display.
 
-1. To add other attributes or entities, select **Select entities and fields**.
+1. To add other attributes or tables, select **Select tables and fields**.
 
-1. Optionally, you can change the primary key for an entity, the attribute types, and toggle **Intelligent mapping** on or off. For more information, see [Select source fields](map-entities.md).
+1. Optionally, you can change the primary key for a table, the attribute types, and toggle **Intelligent mapping** on or off. For more information, see [Select source fields](map-entities.md).
 
 1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update unification settings](#update-unification-settings).
 
@@ -86,9 +86,9 @@ To remove a field that has been unified, the field must be removed from any depe
 
 1. Select **Edit** on the **Source fields** tile.
 
-1. Select **Select entities and fields** and clear the checkbox next to each occurrence of the field.
+1. Select **Select tables and fields** and clear the checkbox next to each occurrence of the field.
 
-   :::image type="content" source="media/m3_remove_attribute2.png" alt-text="Screenshot of Select entities and fields dialog box showing cleared checkboxes":::
+   :::image type="content" source="media/m3_remove_attribute2.png" alt-text="Screenshot of Select tables and fields dialog box showing cleared checkboxes":::
 
 1. Select **Apply**.
 
@@ -96,38 +96,38 @@ To remove a field that has been unified, the field must be removed from any depe
 
 1. Select **Unify** > **Unify customer profiles and dependencies** to update the unified profile.
 
-### Remove a unified entity
+### Remove a unified table
 
-To remove an entity that has been unified, the entity must be removed from any dependencies such as segments, measures, enrichments, or relationships.
+To remove a table that has been unified, the table must be removed from any dependencies such as segments, measures, enrichments, or relationships.
 
-1. Once all dependencies for the entity have been removed, go to **Data** > **Unify**.
+1. Once all dependencies for the table have been removed, go to **Data** > **Unify**.
 
 1. Select **Edit** on the **Unified customer fields** tile.
 
-1. Select all fields for the entity and then select **Exclude**.
+1. Select all fields for the table and then select **Exclude**.
 
-   :::image type="content" source="media/m3_remove_entity1.png" alt-text="Screenshot of Unified fields with all fields for an entity selected and Exclude button":::
+   :::image type="content" source="media/m3_remove_entity1.png" alt-text="Screenshot of Unified fields with all fields for a table selected and Exclude button":::
 
 1. Select **Done** to confirm and then select **Save and close**.
 
    > [!TIP]
-   > If you see the message "Couldn't save unify. The specified resource cannot be modified or deleted due to downstream dependencies", then the entity is still used in a downstream dependency.
+   > If you see the message "Couldn't save unify. The specified resource cannot be modified or deleted due to downstream dependencies", then the table is still used in a downstream dependency.
 
 1. Select **Edit** on the **Duplicate records** tile.
 
-1. Remove all rules from the entity, if any, and then select **Next**.
+1. Remove all rules from the table, if any, and then select **Next**.
 
-1. On the **Matching conditions** page, select the entity and then select **Delete**.
+1. On the **Matching conditions** page, select the table and then select **Delete**.
 
-   :::image type="content" source="media/m3_remove_entity2.png" alt-text="Screenshot of Matching conditions with entity selected and Delete button":::
+   :::image type="content" source="media/m3_remove_entity2.png" alt-text="Screenshot of Matching conditions with table selected and Delete button":::
 
 1. Select **Save and close**.
 
 1. Select **Edit** on the **Source fields** tile.
 
-1. Select **Select entities and fields** and clear the checkbox next to the entity.
+1. Select **Select tables and fields** and clear the checkbox next to the table.
 
-   :::image type="content" source="media/m3_remove_entity3.png" alt-text="Screenshot of Select entities and fields dialog box with entity checkbox cleared":::
+   :::image type="content" source="media/m3_remove_entity3.png" alt-text="Screenshot of Select tables and fields dialog box with table checkbox cleared":::
 
 1. Select **Apply**.
 
@@ -141,21 +141,21 @@ To remove an entity that has been unified, the entity must be removed from any d
 
    :::image type="content" source="media/m3_duplicates_edit.png" alt-text="Screenshot of Duplicate records page showing number of duplicated records" lightbox="media/m3_duplicates_edit.png":::
 
-   The number of duplicate records found displays under **Duplicates**. The **Records deduplicated** column shows which entities had duplicate records and the percentage of duplicated records.
+   The number of duplicate records found displays under **Duplicates**. The **Records deduplicated** column shows which tables had duplicate records and the percentage of duplicated records.
 
-1. To use an enriched entity, select **Use enriched entities**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
+1. To use an enriched table, select **Use enriched tables**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
 1. To manage deduplication rules, choose any of the following options:
-   - **Create a new rule**: Select **Add rule** under the appropriate entity. For more information, see [Define deduplication rules](remove-duplicates.md#define-deduplication-rules).
+   - **Create a new rule**: Select **Add rule** under the appropriate table. For more information, see [Define deduplication rules](remove-duplicates.md#define-deduplication-rules).
    - **Change rule conditions**: Select the rule and then **Edit**. Change fields, add or remove conditions, or add or remove exceptions.
    - **Preview**: Select the rule and then **Preview** to view the last run results for this rule.
    - **Deactivate a rule**: Select the rule and then **Deactivate** to retain a deduplication rule while excluding it from the matching process.
    - **Duplicate a rule**: Select the rule and then **Duplicate** to create a similar rule with modifications.
    - **Delete a rule**: Select the rule and then **Delete**.
 
-1. To change merge preferences, select the entity. You can only change the preferences if a rule is created.
+1. To change merge preferences, select the table. You can only change the preferences if a rule is created.
    1. Select **Edit merge preferences** and change the **Record to keep** option.
-   1. To change merge preferences on individual attributes of an entity, select **Advanced** and make the necessary changes.
+   1. To change merge preferences on individual attributes of a table, select **Advanced** and make the necessary changes.
 
    1. Select **Done**.
 
@@ -163,7 +163,7 @@ To remove an entity that has been unified, the entity must be removed from any d
 
 ## Manage match rules
 
-You can reconfigure and fine-tune most of the match parameters. You can't add or delete entities. Match rules don't apply to a single entity.
+You can reconfigure and fine-tune most of the match parameters. You can't add or delete tables. Match rules don't apply to a single table.
 
 1. Select **Edit** on the **Matching conditions** tile.
 
@@ -182,10 +182,10 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
    :::image type="content" source="media/m3_match_condition_preview.png" alt-text="Graphical representation of unmatched and matched records including a list of the data.":::
 
-1. If you added an enriched entity, select **Use enriched entities**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
+1. If you added an enriched table, select **Use enriched tables**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
 1. To manage rules, choose any of the following options:
-   - **Create a new rule**: Select **Add rule** under the appropriate entity. For more information, see [Define rules for match pairs](match-entities.md#define-rules-for-match-pairs).
+   - **Create a new rule**: Select **Add rule** under the appropriate table. For more information, see [Define rules for match pairs](match-entities.md#define-rules-for-match-pairs).
    - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want. For more information, see [Specify the match order](match-entities.md#specify-the-match-order).
    - **Change rule conditions**: Select the rule and then **Edit**. Change fields, add or remove conditions, or add or remove exceptions.
    - **Deactivate a rule**: Select the rule and then **Deactivate** to retain a match rule while excluding it from the matching process.
@@ -220,14 +220,14 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 1. To change the contact and account relationship, change any of the following information:
 
-   - **Foreign key from contact entity**: Choose the attribute that connects your contact entity to the account.
-   - **To account entity**: Choose the account entity associated with the contact.
+   - **Foreign key from contact table**: Choose the attribute that connects your contact table to the account.
+   - **To account table**: Choose the account table associated with the contact.
 
 1. Select **Next** to review the unification settings and [update the unified profile and dependencies](#run-updates-to-the-unified-profile), or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
 
 ## Run matching conditions
 
-Run matching conditions runs deduplication and match rules only and updates the *Deduplication_** and *ConflationMatchPair* entities.
+Run matching conditions runs deduplication and match rules only and updates the *Deduplication_** and *ConflationMatchPair* tables.
 
 1. From the **Data** > **Unify** page, select **Run matching conditions only**.
 
@@ -245,7 +245,7 @@ Run matching conditions runs deduplication and match rules only and updates the 
 
 ## Run updates to the unified profile
 
-- To run matching conditions and update the unified profile entity *without* impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts (preview)** > **Unify profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
+- To run matching conditions and update the unified profile table *without* impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts (preview)** > **Unify profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
 - To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically. For accounts and contacts, select **Unify accounts** > **Unify profiles and dependencies**. Matching conditions are run for both accounts and contacts updating both unified profiles and all other dependencies are run.
 
 All tiles except **Source fields** show **Queued** or **Refreshing**.

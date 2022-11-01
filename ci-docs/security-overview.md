@@ -19,7 +19,7 @@ Manage API keys, access customer data, and set up an Azure Private Link.
 
 View and manage the keys to use the [Customer Insights APIs](apis.md) with the data in your environment.
 
-1. Go to **Admin** > **Security** and select the **APIs** tab.
+1. Go to **Settings** > **Permissions** and select the **APIs** tab.
 
 1. If API access to the environment has not been set up, select **Enable**. Or, to block API access to the environment, select **Disable** and confirm.
 
@@ -51,7 +51,7 @@ For more information about Customer Lockbox, see the [summary](/power-platform/a
 > - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
 > - Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
 
-1. In Customer Insights, go to **Admin** > **Security** and select the **Private Links** tab.
+1. In Customer Insights, go to **Settings** > **Permissions** and select the **Private Links** tab.
 
 1. Select **Add Private Link**.
 

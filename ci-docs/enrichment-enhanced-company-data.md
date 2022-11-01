@@ -62,7 +62,7 @@ The model doesn't:
 
 1. Review the overview and then select **Next**.
 
-1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
 1. Select which type of fields from your company profiles to use for matching with Microsoft’s compiled company data. This selection will affect the mapping fields you have access to in the next step.
 
@@ -74,7 +74,7 @@ The model doesn't:
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a **Name** for the enrichment and the **Output entity**.
+1. Provide a **Name** for the enrichment and the **Output table**.
 
 1. Select **Save enrichment** after reviewing your choices.
 

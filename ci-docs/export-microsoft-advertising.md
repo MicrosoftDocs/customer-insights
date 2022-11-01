@@ -32,7 +32,7 @@ Export Customer Insights segments to Microsoft Advertising to create Customer Ma
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Microsoft Advertising**.
 
