@@ -1,7 +1,7 @@
 ---
 title: Predictions overview
 description: "Prediction scenarios and options covered by the Dynamics 365 Customer Insights application."
-ms.date: 09/29/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

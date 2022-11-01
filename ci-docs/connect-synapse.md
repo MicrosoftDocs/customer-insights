@@ -1,7 +1,7 @@
 ---
 title: "Connect an Azure Synapse data source (preview)"
 description: "Use a database in Azure Synapse as a data source in Dynamics 365 Customer Insights."
-ms.date: 07/26/2022
+ms.date: 11/15/2022
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.subservice: audience-insights

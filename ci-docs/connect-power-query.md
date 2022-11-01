@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 09/29/2022
+ms.date: 11/15/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights

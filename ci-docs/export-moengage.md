@@ -1,7 +1,7 @@
 ---
 title: "Export segments to MoEngage"
 description: "Learn how to configure the connection and export to MoEngage."
-ms.date: 07/26/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

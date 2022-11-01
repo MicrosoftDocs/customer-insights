@@ -1,7 +1,7 @@
 ---
 title: "Teams bot for Dynamics 365 Customer Insights (preview)"
 description: "Look up unified customer profiles in Microsoft Teams with the help of a bot."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

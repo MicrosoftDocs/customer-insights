@@ -1,7 +1,7 @@
 ---
 title: Configure security settings
 description: Learn about security settings in Dynamics 365 Customer Insights.
-ms.date: 08/02/2022
+ms.date: 11/15/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual

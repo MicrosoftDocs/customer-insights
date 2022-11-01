@@ -1,7 +1,7 @@
 ---
 title: "Bring your own Azure key vault (preview)"
 description: "Learn how to configure Customer Insights to use your own Azure key vault to manage secrets."
-ms.date: 08/02/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

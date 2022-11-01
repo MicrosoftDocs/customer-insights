@@ -1,7 +1,7 @@
 ---
 title: "Real-time data ingestion (preview)"
 description: "General information about real-time capabilities in Customer Insights."
-ms.date: 10/27/2020
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

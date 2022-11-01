@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Common Data Model folder using an Azure Data Lake account"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 09/29/2022
+ms.date: 11/15/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo

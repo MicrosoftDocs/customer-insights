@@ -1,7 +1,7 @@
 ---
 title: Use customer consent
 description: "Honor you customers' consent preferences in Customer Insights by importing consent data."
-ms.date: 06/07/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights

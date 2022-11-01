@@ -1,7 +1,7 @@
 ---
 title: "Find similar customers with AI (preview) (contains video)"
 description: "Find similar customer segments with artificial intelligence."
-ms.date: 03/25/2022
+ms.date: 11/15/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -26,7 +26,7 @@ Find similar customers in your customer base using artificial intelligence. You 
 
 ## Find similar customers
 
-1. Go to **Segments** and select the segment you want to base your new segment on. That's your *source segment*.
+1. Go to **Insights** > **Segments** and select the segment you want to base your new segment on. That's your *source segment*.
 
 1. Select **Find similar customers**.
 

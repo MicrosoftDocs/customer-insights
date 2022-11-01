@@ -1,7 +1,7 @@
 ---
 title: Transactional churn prediction sample guide
 description: Use this sample guide to try out the out of box transactional churn prediction model.
-ms.date: 09/19/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 

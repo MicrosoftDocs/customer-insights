@@ -1,7 +1,7 @@
 ---
 title: Personalize your experiences with data about known and unknown users
 description: Incorporate the information about formerly unknown users when you know their identity.
-ms.date: 07/07/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual

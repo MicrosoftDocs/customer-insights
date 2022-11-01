@@ -1,7 +1,7 @@
 ---
 title: "View customer profiles"
 description: "View your unified customer data including using search and filter"
-ms.date: 06/08/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

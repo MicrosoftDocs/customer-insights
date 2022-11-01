@@ -1,7 +1,7 @@
 ---
 title: "Connections (preview) overview"
 description: "Connections to other services from Customer Insights."
-ms.date: 08/04/2022
+ms.date: 11/15/2022
 ms.reviewer: nikeller
 
 ms.subservice: audience-insights

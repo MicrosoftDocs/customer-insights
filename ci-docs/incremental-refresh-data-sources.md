@@ -1,7 +1,7 @@
 ---
 title: "Incremental refresh for Power Query and Azure Data Lake data sources"
 description: "Refresh new and updated data for large data sources based on Power Query or Azure data lake data sources."
-ms.date: 05/30/2022
+ms.date: 11/15/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights

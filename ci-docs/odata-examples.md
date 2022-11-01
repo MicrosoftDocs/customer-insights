@@ -1,7 +1,7 @@
 ---
 title: "OData query examples for Customer Insights APIs"
 description: "Commonly used examples of for the Open Data Protocol (OData) to query the Customer Insights APIs to review data."
-ms.date: 08/30/2022
+ms.date: 11/15/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann

@@ -1,7 +1,7 @@
 ---
 title: "Predict product recommendations"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 09/30/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

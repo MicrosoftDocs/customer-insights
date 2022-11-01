@@ -1,7 +1,7 @@
 ---
 title: "Export segments to SendGrid (preview)"
 description: "Learn how to configure the connection and export to SendGrid."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

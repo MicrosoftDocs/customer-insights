@@ -1,7 +1,7 @@
 ---
 title: "Enrich company profiles with Leadspace (preview)"
 description: "General information about the Leadspace third-party enrichment."
-ms.date: 08/08/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

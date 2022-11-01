@@ -1,7 +1,7 @@
 ---
 title: "Work with tags and columns"
 description: "How to work with tags and columns to organize list views"
-ms.date: 03/25/2022
+ms.date: 11/15/2022
 
 ms.subservice: audience-insights
 ms.topic: overview

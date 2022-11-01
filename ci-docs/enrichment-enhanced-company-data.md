@@ -1,7 +1,7 @@
 ---
 title: "Enrich company profiles with enhanced company data"
 description: "Enrich and normalize company data with Microsoft's models."
-ms.date: 06/10/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

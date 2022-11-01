@@ -1,7 +1,7 @@
 ---
 title: "Suggested segments based on activity (preview)"
 description: "Let machine learning help you find new and interesting segments based on customer activity."
-ms.date: 05/11/2021
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

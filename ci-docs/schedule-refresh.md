@@ -1,7 +1,7 @@
 ---
 title: "Schedule system refresh"
 description: "Schedule the time when the system should be refreshed"
-ms.date: 09/27/2022
+ms.date: 11/15/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual

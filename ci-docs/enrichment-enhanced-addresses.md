@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with enhanced addresses (contains video)"
 description: "Enrich and normalize address information of customer profiles with Microsoft's models."
-ms.date: 06/10/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

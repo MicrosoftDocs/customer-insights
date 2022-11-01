@@ -1,7 +1,7 @@
 ---
 title: "Connect to data in a Microsoft Dataverse managed data lake"
 description: "Import data from a Microsoft Dataverse managed data lake."
-ms.date: 08/18/2022
+ms.date: 11/15/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa

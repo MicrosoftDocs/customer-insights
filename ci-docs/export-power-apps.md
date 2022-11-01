@@ -1,7 +1,7 @@
 ---
 title: "Power Apps connector (preview)"
 description: "Connect with Power Apps and Power Automate."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

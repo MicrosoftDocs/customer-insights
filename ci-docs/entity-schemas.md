@@ -1,7 +1,7 @@
 ---
 title: "Table schemas in Common Data Model"
 description: "Work with tables in Common Data Model."
-ms.date: 08/13/2021
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights

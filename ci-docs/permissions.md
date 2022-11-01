@@ -1,7 +1,7 @@
 ---
 title: "Assign user permissions"
 description: "Learn about permissions and user roles."
-ms.date: 08/08/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -25,8 +25,8 @@ Access to Customer Insights is restricted to users in your organization that are
 - Search and filter customer profiles using the **Customers** page. Fields must be searchable.
 - View and explore the **Enrichment** page.
 - Explore and export tables using the **Tables** page.
-- View the status of system processes  using the **System** page.
-- View exports in **Exports** page.
+- View the status of system processes using the **System** page.
+- View exports in the **Exports** page.
 - Install and use the **Power BI Customer Insights** dashboard.
 
 ## Contributor
@@ -48,7 +48,7 @@ Access to Customer Insights is restricted to users in your organization that are
 - Set search and filter definitions for the Customers page using the **Search & filter index** page (accessible via the **Customers** page).
 - Manage connections and allow them for other user roles on **Connections** page.
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for all enrichments).
-- Manage and create exports on **Exports** page.
+- Manage and create exports on the **Exports** page.
 - Install and use the **Customer Card Add-in**.
 - Add and use the **Power Apps connector**.
 - Enable usage of [Customer Insights APIs](apis.md).
