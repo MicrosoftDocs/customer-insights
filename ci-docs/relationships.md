@@ -86,13 +86,14 @@ Organizations create account hierarchies to better manage accounts and their rel
 
 1. Go to **Data** > **Tables**.
 
-1. Select the **Account hierarchy** tab.
+1. Select the **Account hierarchy (preview)** tab.
 
 1. Select **New account hierarchy**.
 
 1. In the **Account hierarchy** pane, provide a name for the hierarchy. The system creates a name for the output table, but you can change it.
 
 1. Select the table that contains your account hierarchy. It's usually in the same table that contains the accounts.
+
 1. Select the **Account UID** and **Parent UID** from the selected table.
 
 1. Select **Save** to finalize the account hierarchy.
