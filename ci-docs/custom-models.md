@@ -44,13 +44,13 @@ Azure Machine Learning (AML) v2 lets you manage workflows based on AML models. W
 
 1. Select **Set up** on the **Azure Machine Learning** tile.
 
-1. Enter the following information.
-
-   :::image type="content" source="media/AML-connection.png" alt-text="Screenshot of the Azure Machine Learning connection page.":::
+1. Enter connection information.
 
    - **Display name**: A unique, recognizable name that describes this connection. Must start with a letter and contain only letters, numbers, and underscores.
    - **Tenant**: The tenant linked to your AML workspace.
    - **Workspace**: The AML workspace.
+
+   :::image type="content" source="media/AML-connection.png" alt-text="Screenshot of the Azure Machine Learning connection page.":::
 
 1. Review the data privacy and compliance and select **I agree**.
 
@@ -62,25 +62,25 @@ Azure Machine Learning (AML) v2 lets you manage workflows based on AML models. W
 
 1. On the **Create** tab, select **Use model** on the **Custom model (Azure Machine Learning v2)** tile.
 
-1. Enter the following information:
-
-   :::image type="content" source="media/custom-model-AML.png" alt-text="Custom model AML connection input pane.":::
+1. Select the information about the connection:
 
    - **Connection**: A connection to your AML workspace. To set up a new connection, select [**Add connection**](#set-up-an-aml-connection).
    - **Pipeline**: A pipeline linked to your AML workspace.
    - **Output Path**: The output path linked to your pipeline.
    - **Output Datastore**: The output datastore linked to your pipeline.
 
+   :::image type="content" source="media/custom-model-AML.png" alt-text="Custom model AML connection input pane.":::
+
 1. Select **Get started**.
 
 1. In the **Model name** step, enter the following information:
-
-   :::image type="content" source="media/custom-model-AML-wizard1.png" alt-text="Custom model AML Model name page.":::
 
    - **Name**: A recognizable name for the model.
    - **Output entity name**: An output entity name for the pipeline output results.
    - **Primary key**: The attribute you want as the primary key for your output entity.
    - **Customer ID**: The matching attribute that corresponds to the Customer Insight Customer ID.
+
+   :::image type="content" source="media/custom-model-AML-wizard1.png" alt-text="Custom model AML Model name page.":::
 
 1. Select **Next**.
 
@@ -100,9 +100,9 @@ Azure Machine Learning (AML) v2 lets you manage workflows based on AML models. W
 
 1. Select the vertical ellipsis (&vellip;) next to a model to view available actions.
 
-- **Edit** a workflow to change the model configuration or the connection.
-- **Refresh** a workflow on demand. The workflow also runs automatically with every [scheduled refresh](schedule-refresh.md).
-- **Delete** a workflow. Confirm the deletion. The entity used to create the workflow is not deleted.
+   - **Edit** a workflow to change the model configuration or the connection.
+   - **Refresh** a workflow on demand. The workflow also runs automatically with every [scheduled refresh](schedule-refresh.md).
+   - **Delete** a workflow. The entity used to create the workflow is not deleted.
 
 ## View the results
 
