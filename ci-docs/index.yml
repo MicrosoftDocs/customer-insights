@@ -30,7 +30,7 @@ landingContent:
       - linkListType: learn
         links: 
           - text: Customer Insights learning path
-            url: /learn/paths/build-customer-insights/
+            url: /training/paths/build-customer-insights/
 
   - title: Get started with Customer Insights
     linkLists:
@@ -45,7 +45,7 @@ landingContent:
       - linkListType: learn
         links: 
           - text: Get started
-            url: /learn/modules/get-started-customer-data-platform/
+            url: /training/modules/get-started-customer-data-platform/
 
   - title: Ingest data
     linkLists:
@@ -60,7 +60,7 @@ landingContent:
       - linkListType: learn
         links: 
           - text: Ingest data into Customer Insights
-            url:  /learn/modules/ingest-data-customer-insights/  
+            url:  /training/modules/ingest-data-customer-insights/  
             
   - title: Unify data
     linkLists:
@@ -75,7 +75,7 @@ landingContent:
       - linkListType: learn
         links: 
           - text: Create a unified profile
-            url:  /learn/modules/unified-customer-profile/
+            url:  /training/modules/unified-customer-profile/
 
   - title: Get insights
     linkLists:
@@ -90,7 +90,7 @@ landingContent:
       - linkListType: learn
         links: 
           - text: Enrich and predict data
-            url:  /learn/modules/enrich-data/
+            url:  /training/modules/enrich-data/
 
   - title: Build on your data
     linkLists:
@@ -105,7 +105,7 @@ landingContent:
       - linkListType: learn
         links: 
           - text: Work with the app
-            url:  /learn/modules/working-with-customer-insights/            
+            url:  /training/modules/working-with-customer-insights/            
 
   - title: Export data
     linkLists:
@@ -120,7 +120,7 @@ landingContent:
       - linkListType: learn
         links: 
           - text: Manage external connections
-            url:  /learn/modules/configure-third-party-connections/
+            url:  /training/modules/configure-third-party-connections/
   
   - title: Administer Customer Insights
     linkLists:
@@ -135,7 +135,7 @@ landingContent:
       - linkListType: learn
         links: 
           - text: Administer Customer Insights
-            url: /learn/modules/administer-customer-data-platform/       
+            url: /training/modules/administer-customer-data-platform/       
   
   - title: Get in touch
     linkLists:
@@ -147,4 +147,3 @@ landingContent:
             url: https://go.microsoft.com/fwlink/?linkid=2074172
           - text: Report an issue
             url: https://go.microsoft.com/fwlink/?linkid=2079641
-

@@ -10,21 +10,21 @@
 - name: Learning catalog
   items:
     - name: Certify as Microsoft Customer Data Platform Specialist
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: Get started with Customer Insights
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: Ingest data
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: Create a unified customer profile
-      href: /learn/modules/unified-customer-profile/
+      href: /training/modules/unified-customer-profile/
     - name: Work with Customer Insights
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/working-with-customer-insights/
     - name: Enrich data and make predictions
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: Manage external connections
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: Administer Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 
 - name: Free trial
   items:
@@ -175,6 +175,8 @@
           href: sentiment-analysis.md
         - name: Use custom models from Azure Machine Learning
           href: custom-models.md
+        - name: Create segments based on predictions
+          href: prediction-based-segment.md
 
     - name: Sample guides
       items:    
@@ -188,12 +190,6 @@
           href: sample-guide-predict-product-recommendation.md
         - name: Experiments with Azure Machine learning
           href: azure-machine-learning-experiments.md
-    
-    - name: Manage predictions
-      href: manage-predictions.md
-
-    - name: Create segments based on predictions
-      href: prediction-based-segment.md
 
 - name: Export options
   items:
@@ -235,6 +231,8 @@
           href: export-facebook.md
         - name: Google Ads
           href: export-google-ads.md
+        - name: HubSpot
+          href: export-hubspot.md
         - name: InMobi
           href: export-inmobi.md
         - name: Iterable

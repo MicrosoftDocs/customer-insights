@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 07/26/2022
+ms.date: 09/29/2022
 ms.reviewer: v-wendysmith
 
 ms.subservice: audience-insights
@@ -39,16 +39,17 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
 1. Select **Transform data**.
 
-1. The **Power Query - Edit queries** dialog lets you review and refine the data. The entities that the systems identified in your selected data source appear in the left pane.
+1. Review and refine your data in the **Power Query - Edit queries** page. The entities that the systems identified in your selected data source appear in the left pane.
 
    :::image type="content" source="media/data-manager-configure-edit-queries.png" alt-text="Edit queries dialog":::
 
-1. You can also transform your data. Select an entity to edit or transform. Use the options in the Power Query window to apply transformations. Each transformation is listed under **Applied steps**. Power Query provides numerous [pre-built transformation](/power-query/power-query-what-is-power-query#transformations) options.
+1. Transform your data. Select an entity to edit or transform. Use the options in the Power Query window to apply transformations. Each transformation is listed under **Applied steps**. Power Query provides numerous [pre-built transformation](/power-query/power-query-what-is-power-query#transformations) options.
 
-   We recommend you use the following transformations:
-
-   - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform** and select **Use first row as headers**.
-   - Ensure the data type is set appropriately. For example, for date fields, select a date type.
+   > [!IMPORTANT]
+   > We recommend you use the following transformations:
+   >
+   > - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform** and select **Use first row as headers**.
+   > - Ensure the data type is set appropriately and matches the data. For example, for date fields, select a date type.
 
 1. To add additional entities to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 5-10 until you have added all entities for this data source. If you have a database that includes multiple datasets, each dataset is its own entity.
 
@@ -98,5 +99,51 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 1. Select **Save** to apply your changes and return to the **Data sources** page.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## Common reasons for ingestion errors or corrupt data
+
+### Data type does not match data
+
+The most common data type mismatch occurs when a date field is not set to the correct date format.
+
+The data can be fixed at the source and re-ingested. Or fix the transformation within Customer Insights. To fix the transformation:
+
+1. Go to **Data** > **Data sources**.
+
+1. Next to the data source with the corrupted data, select **Edit**.
+
+1. Select **Next**.
+
+1. Select each of the queries and look for transformations applied inside "Applied Steps" that are incorrect, or date columns that have not been transformed with a date format.
+
+   :::image type="content" source="media/PQ_corruped_date.png" alt-text="Power Query - Edit showing incorrect date format":::
+
+1. Change the data type to correctly match the data.
+
+1. Select **Save**. That data source is refreshed.
+
+## Troubleshoot PPDF Power Query-based data source refresh issues
+
+If the data is stale or you receive errors after a data source refresh, perform the following steps:
+
+1. Navigate to [Power Platform](https://make.powerapps.com).
+
+1. Select the **Environment** for your Customer Insights instance.
+
+1. Navigate to **Dataflows**.
+
+1. For the dataflow that corresponds to the data source in Customer Insights, select the vertical ellipsis (&vellip;) and then select **Show refresh history**.
+
+1. If the **Status** of the dataflow is **Success**, the ownership of the Power Query-based data source might have changed:
+
+   1. Review the refresh schedule from the refresh history.
+   1. Set the new owner's schedule and save the settings.
+
+1. If the **Status** of the dataflow is **Failed**:
+
+   1. Download the refresh history file.
+   1. Review the downloaded file for the reason for the failure.
+   1. If the error cannot be resolved, select **?** to open a support ticket. Include the downloaded refresh history file.
+
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
