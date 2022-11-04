@@ -7,37 +7,16 @@
 - name: New and updated features
   href: whats-new-customer-insights.md
 
-- name: Learning catalog
-  items:
-    - name: Certify as Microsoft Customer Data Platform Specialist
-      href: /certifications/exams/mb-260?tab=tab-instructor-led
-    - name: Get started with Customer Insights
-      href: /training/modules/get-started-customer-data-platform/
-    - name: Ingest data
-      href: /training/modules/ingest-data-customer-insights/
-    - name: Create a unified customer profile
-      href: /training/modules/unified-customer-profile/
-    - name: Work with Customer Insights
-      href: /training/modules/working-with-customer-insights/
-    - name: Enrich data and make predictions
-      href: /training/modules/enrich-data/
-    - name: Manage external connections
-      href: /training/modules/configure-third-party-connections/
-    - name: Administer Customer Insights
-      href: /training/modules/administer-customer-data-platform/
-
-- name: Free trial
-  items:
-    - name: Sign up for a free trial
-      href: trial-signup.md
-    - name: Trial FAQ
-      href: trial-FAQ.md
-
-- name: Access your environment
-  href: https://home.ci.ai.dynamics.com/
-
 - name: Get started
   items: 
+    - name: Free trial
+      items:
+        - name: Sign up for a free trial
+          href: trial-signup.md
+        - name: Trial FAQ
+          href: trial-FAQ.md
+    - name: Access your environment
+      href: https://home.ci.ai.dynamics.com/
     - name: Quickstart guide
       href: get-started.md
     - name: Start with a paid license
@@ -291,19 +270,6 @@
         - name: Experiments with Azure Machine learning
           href: azure-machine-learning-experiments.md
 
-- name: Environments
-  items: 
-    - name: Create a new environment
-      href: create-environment.md
-    - name: Connect to Microsoft Dataverse
-      href: customer-insights-dataverse.md
-    - name: Use your own Azure Data Lake Storage
-      href: own-data-lake-storage.md
-    - name: Manage environment settings
-      href: manage-environments.md
-    - name: Connect to a storage account using Service Principal
-      href: connect-service-principal.md
-
 - name: Settings
   items:
     - name: Assign user permissions
@@ -321,6 +287,19 @@
     - name: View system configuration
       href: system.md
 
+- name: Environments
+  items: 
+    - name: Create a new environment
+      href: create-environment.md
+    - name: Connect to Microsoft Dataverse
+      href: customer-insights-dataverse.md
+    - name: Use your own Azure Data Lake Storage
+      href: own-data-lake-storage.md
+    - name: Manage environment settings
+      href: manage-environments.md
+    - name: Connect to a storage account using Service Principal
+      href: connect-service-principal.md
+
 - name: APIs
   items:
     - name: Work with APIs
@@ -336,5 +315,26 @@
 - name: DSR rights and requests
   href: dsr-rights-requests.md
 
-- name: Get support
-  href: /power-platform/admin/get-help-support
+- name: More resources
+  items:
+    - name: Get support
+      href: /power-platform/admin/get-help-support   
+    - name: Learning catalog
+      items:
+        - name: Certify as Microsoft Customer Data Platform Specialist
+          href: /certifications/exams/mb-260?tab=tab-instructor-led
+        - name: Get started with Customer Insights
+          href: /training/modules/get-started-customer-data-platform/
+        - name: Ingest data
+          href: /training/modules/ingest-data-customer-insights/
+        - name: Create a unified customer profile
+          href: /training/modules/unified-customer-profile/
+        - name: Work with Customer Insights
+          href: /training/modules/working-with-customer-insights/
+        - name: Enrich data and make predictions
+          href: /training/modules/enrich-data/
+        - name: Manage external connections
+          href: /training/modules/configure-third-party-connections/
+        - name: Administer Customer Insights
+          href: /training/modules/administer-customer-data-platform/
+
