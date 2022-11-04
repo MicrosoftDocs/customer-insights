@@ -50,7 +50,7 @@ Go to the **Segments** page to view the segments you created, their status and s
 > [!TIP]
 > In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
 
-Select a segment to view available actions.
+Select next to a segment to view available actions. Supported bulk operations include: refresh, download, delete, change state (activate/deactivate), change type (static/dynamic), and tag.
 
 :::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options." lightbox="media/segments-selected-segment.png":::
 
