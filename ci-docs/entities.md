@@ -1,7 +1,7 @@
 ---
 title: "Entities in Customer Insights"
 description: "View data on the Entities page."
-ms.date: 12/06/2021
+ms.date: 08/04/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -56,27 +56,5 @@ Go to **Data** > **Entities** to view a list of entities. The following informat
   - **Created**: Date and time of the entity creation.
   - **Edited by**: Name of the person who modified the entity.
   - **Edited**: Date and time of the entity modification.
-
-## Entity-specific information
-
-The following section provides information about some system-created entities.
-
-### Corrupted data sources
-
-Fields from an ingested data source can contain corrupted data. Records with corrupted fields are exposed in system-created entities. Knowing about corrupted records helps you identify which data to review and update on the source system. After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes. 
-
-For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system will flag this record as corrupted. Someone can now change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record will be removed from the corrupted entity.
-
-Go to **Data** > **Entities** and look for the corrupted entities in the **System** section. Naming schema of corrupted entities: 'DataSourceName_EntityName_corrupt'. Select a corrupted entity to identify the corrupted fields and the reason at the individual record level.
-
-   :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason.":::
-
-Customer Insights still processes corrupted records. However, they might cause issues when working with the unified data.
-
-The following checks run on the ingested data to expose corrupted records:
-
-- The value of a field doesn't match with the data type of its column.
-- Fields contain characters that cause the columns to not match the expected schema. For example: incorrectly formatted quotes, unescaped quotes, or newline characters.
-- If there are datetime/date/datetimeoffset columns, their format needs to be specified in the model if it doesn't follow the standard ISO format.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

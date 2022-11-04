@@ -175,6 +175,8 @@
           href: sentiment-analysis.md
         - name: Use custom models from Azure Machine Learning
           href: custom-models.md
+        - name: Create segments based on predictions
+          href: prediction-based-segment.md
 
     - name: Sample guides
       items:    
@@ -188,12 +190,6 @@
           href: sample-guide-predict-product-recommendation.md
         - name: Experiments with Azure Machine learning
           href: azure-machine-learning-experiments.md
-    
-    - name: Manage predictions
-      href: manage-predictions.md
-
-    - name: Create segments based on predictions
-      href: prediction-based-segment.md
 
 - name: Export options
   items:

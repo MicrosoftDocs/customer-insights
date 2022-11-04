@@ -19,6 +19,28 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## September 2022 updates
+
+The updates in September 2022 include new features, performance upgrades, and bug fixes.
+
+### Export data to HubSpot
+
+Export segments of unified customer profiles to HubSpot and use them for email marketing.
+
+For more information, see [Export segments to HubSpot](export-hubspot.md).
+
+### Remove a unified field or entity from data unification
+
+You can remove fields and entities from the data unification process.
+
+For more information, see [Remove a unified field](data-unification-update.md#remove-a-unified-field).
+
+### Manage unknown customer profiles
+
+Memorable personalization depends on the richness and completeness of your customer data and Customer Insights helps you achieve these goals. You can manage customer profiles for users for which you don't have any information other than an ID.
+
+For more information, see [Manage unknown profiles with Customer Insights](manage-unknown-profiles.md).
+
 ## August 2022 updates
 
 The updates in August 2022 include new features, performance upgrades, and bug fixes.
@@ -223,9 +245,9 @@ For more information, see [Change the owner of an environment](manage-environmen
 
 ### Data preparation process lists corruption reason for corrupted records
 
-Data preparation now shows the reason for corruption for all fields with corrupted data. The information is provided at the individual record level for easy identification. 
+Data preparation now shows the reason for corruption for all fields with corrupted data. The information is provided at the individual record level for easy identification.
 
-For more information, see [Corrupted data sources](entities.md#corrupted-data-sources).
+For more information, see [Corrupt data sources](data-sources.md#corrupt-data-sources).
 
 ### End of preview for reporting features in the engagement insights capability
 
