@@ -59,6 +59,9 @@ The **Microsoft Dataverse** step lets you connect Customer Insights with your Da
 
 In [your own Azure Data Lake Storage account](own-data-lake-storage.md), verify the user setting up the Customer Insights environment has at least **Storage Blob Data Reader** permissions on the `customerinsights` container in the storage account.
 
+> [!NOTE]
+> Data sharing is applicable only if you use your own Azure Data Lake Storage account. This setting isn't available if the Customer Insights environment uses the default Dataverse storage.
+
 ### Limitations
 
 - Only one-to-one mapping between a Dataverse organization and an Azure Data Lake Storage account. Once a Dataverse organization is connected to a storage account, it can't connect to another storage account. This limitation prevents Dataverse from populating multiple storage accounts.

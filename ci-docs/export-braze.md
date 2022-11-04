@@ -1,7 +1,7 @@
 ---
 title: "Export segments to Braze (preview)"
 description: "Learn how to configure the connection and export to Braze."
-ms.date: 07/25/2022
+ms.date: 10/06/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -19,13 +19,16 @@ Export segments of unified customer profiles to Braze and use them for marketing
 
 - A [Braze account](https://www.braze.com/) and corresponding administrator credentials.
 - A [Braze API key](https://www.braze.com/docs/api/basics/)
+- Your [Braze REST Endpoint](https://www.braze.com/docs/api/basics/#api-definitions) 
 - [Configured segments](segments.md) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address and a Braze customer ID.
 
 ## Known limitations
 
+- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up 1 million customer profiles to Braze, which can take up to 40 minutes to complete. The number of customer profiles that you can export to Braze depends on your contract with Braze.
 - Segments only.
+- Azure Private Link isn't supported for the Braze export.
 
 ## Set up connection to Braze
 
@@ -58,6 +61,8 @@ Export segments of unified customer profiles to Braze and use them for marketing
 1. Select **Add export**.
 
 1. In the **Connection for export** field, choose a connection from the Braze section. Contact an administrator if no connection is available.
+
+1. Enter your REST Endpoint into the **Hostname** field in the following format: `rest.iad-03.braze.com`.
 
 1. Enter a name for the export.
 

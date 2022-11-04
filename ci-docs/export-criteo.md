@@ -22,6 +22,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 ## Known limitations
 
+- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 1 million customer profiles per export to Criteo, which can take up to 30 minutes to complete. The number of customer profiles that you can export to Criteo depends on your contract with Criteo.
 - Segments only.
 
@@ -60,8 +61,6 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 1. Enter a name for the export.
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
-
-1. Optionally, export **Advertiser ID** and **Name**.
 
 1. Select the segments you want to export.
 
