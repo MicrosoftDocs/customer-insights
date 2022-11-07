@@ -1,7 +1,7 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 08/12/2022
+ms.date: 11/15/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -50,7 +50,7 @@ Go to the **Segments** page to view the segments you created, their status and s
 > [!TIP]
 > In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
 
-Select next to a segment to view available actions. Supported bulk operations include: refresh, download, delete, change state (activate/deactivate), change type (static/dynamic), and tag.
+Select next to a segment to view available actions. Supported bulk operations include: refresh, download, delete, change state (activate/deactivate), change type (static/dynamic), and tags.
 
 :::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options." lightbox="media/segments-selected-segment.png":::
 
