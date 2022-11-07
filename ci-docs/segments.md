@@ -102,7 +102,7 @@ Export segments to other apps to further use the data. Export a segment from the
 
 ## Schedule segments
 
-Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), daily, weekly, monthly, or refreshed manually on demand. You might want to schedule last season's segments or segments that don't change often on a slower cadence such as monthly to avoid unnecessary processing time. The default is every scheduled system refresh.
+Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. You might want to schedule last season's segments or segments that don't change often on a slower cadence such as monthly to avoid unnecessary processing time. The default is every scheduled system refresh.
 
 For scheduled refreshes, the following rules apply:
 
