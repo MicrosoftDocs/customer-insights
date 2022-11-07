@@ -81,6 +81,4 @@ Define refresh schedules for one or more measures. The currently defined schedul
 
 1. Select **Save**.
 
-1. To view the next refresh scheduled for a measure, on the **Measures** page, select **Columns** and add the **Next refresh** column.
-
 [!INCLUDE [footer-include](includes/footer-banner.md)]
