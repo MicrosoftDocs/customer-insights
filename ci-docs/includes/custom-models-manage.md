@@ -11,7 +11,7 @@
 
 ## View the results
 
-Results from a workflow are stored in the **Output entity name** you defined. Access this data from the [**Data** > **Entities** page](/entities.md) or with [API access](/apis.md).
+Results from a workflow are stored in the **Output entity name** you defined. Access this data from the [**Data** > **Entities**](/entities.md) page or with [API access](/apis.md).
 
 ### API Access
 
@@ -23,7 +23,7 @@ For the specific OData query to get data from a custom model entity, use the fol
 
 1. Replace `<custom model output entity>` with the entity name you provided during the **Model name** step.
 
-1. Replace `<guid value>` with the Customer ID of the customer you'd like to access. This ID displays on the [customer profiles page](/customer-profiles.md) in the CustomerID field.
+1. Replace `<guid value>` with the Customer ID of the customer you'd like to access. This ID displays on the [customer profiles](/customer-profiles.md) page in the CustomerID field.
 
 ## Frequently Asked Questions
 
@@ -37,4 +37,4 @@ For the specific OData query to get data from a custom model entity, use the fol
 
 ## Responsible AI
 
-Predictions offer capabilities to create better customer experiences, improve business capabilities, and revenue streams. We strongly recommend you balance the value of your prediction against the impact it has and biases that may be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). You can also learn about [techniques and processes for responsible machine learning](/azure/machine-learning/concept-responsible-ml) specific to Azure Machine Learning.
+Predictions offer capabilities to create better customer experiences, improve business capabilities, and revenue streams. We strongly recommend you balance the value of your prediction against the impact it has and biases that may be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6).

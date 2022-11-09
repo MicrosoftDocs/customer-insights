@@ -44,14 +44,14 @@ Manage workflows based on Azure Synapse Analytics models. Workflows help you cho
 
 1. Enter connection information.
 
-   - **Display name**: A unique, recognizable name that describes this connection which starts with a letter and contains only letters, numbers, and underscores.
+   - **Display name**: A unique, recognizable name that describes this connection. It must start with a letter and contain only letters, numbers, and underscores.
    - **Choose who can use this connection**: Administrators only or administrators and contributors.
-   - **Subscription**: An Azure Synapse subscription.
-   - **Workspace**: An Azure Synapse workspace or select [**Create new**](/azure/synapse-analytics/quickstart-create-workspace) to create a new one.
-   - **Storage account**: An Azure storage account or select [**Link new**](/azure/storage/common/storage-account-create?bc=%2Fazure%2Fsynapse-analytics%2Fbreadcrumb%2Ftoc.json&tabs=azure-portal) to link to a new one.
+   - **Subscription**: An Azure Synapse subscription for this connection.
+   - **Workspace**: The Azure Synapse workspace or select [**Create new**](/azure/synapse-analytics/quickstart-create-workspace) to create a new one.
+   - **Storage account**: The Azure storage account or select [**Link new**](/azure/storage/common/storage-account-create?bc=%2Fazure%2Fsynapse-analytics%2Fbreadcrumb%2Ftoc.json&tabs=azure-portal) to link to a new one.
    - **Container**: A container within the selected storage account.
 
-   :::image type="content" source="media/synapse-connection.png" alt-text="Screenshot of the Azure Machine Learning connection page.":::
+   :::image type="content" source="media/synapse-connection.png" alt-text="Screenshot of the Azure Synapse Analytics connection page.":::
   
 1. Review the data privacy and compliance and select **I agree**.
 
@@ -77,7 +77,7 @@ Manage workflows based on Azure Synapse Analytics models. Workflows help you cho
    - **Primary key**: The attribute you want as the primary key for your output entity.
    - **Customer ID**: The matching attribute that corresponds to the Customer Insights Customer ID.
 
-   :::image type="content" source="media/custom-model-Synapse-wizard.png" alt-text="Screenshot of the Azure Synapse Model page.":::
+   :::image type="content" source="media/custom-model-AML-wizard1.png" alt-text="Screenshot of the Azure Synapse Model page.":::
   
 1. Select **Next**.
 

@@ -44,7 +44,7 @@ searchScope:
 
 1. Enter connection information.
 
-   - **Display name**: A unique, recognizable name that describes this connection which starts with a letter and contains only letters, numbers, and underscores.
+   - **Display name**: A unique, recognizable name that describes this connection. It must start with a letter and contain only letters, numbers, and underscores.
    - **Tenant**: The tenant linked to your AML workspace. Sign in if prompted.
    - **Workspace**: The AML workspace.
 
