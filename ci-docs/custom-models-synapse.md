@@ -65,7 +65,7 @@ Manage workflows based on Azure Synapse Analytics models. Workflows help you cho
 
 1. Select the information about the connection:
 
-   - **Connection**: A connection to your Azure Synapse workspace or select [**Add connection**](#set-up-a-Synapse-connection) to set up a new one.
+   - **Connection**: A connection to your Azure Synapse workspace or select [**Add connection**](#set-up-a-synapse-connection) to set up a new one.
    - **Pipeline**: A pipeline linked to your Azure Synapse workspace.
 
 1. Select **Get started**.

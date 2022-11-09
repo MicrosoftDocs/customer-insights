@@ -6,12 +6,12 @@
 1. Select the vertical ellipsis (&vellip;) next to a model to view available actions.
 
    - **Edit** a workflow to change the model configuration or the connection.
-   - **Refresh** a workflow on demand. The workflow also runs automatically with every [scheduled refresh](schedule-refresh.md).
+   - **Refresh** a workflow on demand. The workflow also runs automatically with every [scheduled refresh](/schedule-refresh.md).
    - **Delete** a workflow. The entity used to create the workflow is not deleted.
 
 ## View the results
 
-Results from a workflow are stored in the **Output entity name** you defined. Access this data from the [**Data** > **Entities** page](entities.md) or with [API access](apis.md).
+Results from a workflow are stored in the **Output entity name** you defined. Access this data from the [**Data** > **Entities** page](/entities.md) or with [API access](/apis.md).
 
 ### API Access
 
@@ -23,12 +23,12 @@ For the specific OData query to get data from a custom model entity, use the fol
 
 1. Replace `<custom model output entity>` with the entity name you provided during the **Model name** step.
 
-1. Replace `<guid value>` with the Customer ID of the customer you'd like to access. This ID displays on the [customer profiles page](customer-profiles.md) in the CustomerID field.
+1. Replace `<guid value>` with the Customer ID of the customer you'd like to access. This ID displays on the [customer profiles page](/customer-profiles.md) in the CustomerID field.
 
 ## Frequently Asked Questions
 
 - Why can't I see my pipeline when setting up a custom model workflow?
-  This issue is frequently caused by a configuration issue in the pipeline. Ensure the [input parameter is configured](azure-machine-learning-experiments.md#dataset-configuration) and the [output datastore and path parameters](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) are also configured.
+  This issue is frequently caused by a configuration issue in the pipeline. Ensure the [input parameter is configured](/azure-machine-learning-experiments.md#dataset-configuration) and the [output datastore and path parameters](/azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) are also configured.
 
 - What does the error "Couldn't save intelligence workflow" mean? 
 
