@@ -175,6 +175,8 @@
           href: sentiment-analysis.md
         - name: Use custom models from Azure Machine Learning
           href: custom-models.md
+        - name: Use custom models from Azure Synapse Analytics
+          href: custom-models-synapse.md
         - name: Create segments based on predictions
           href: prediction-based-segment.md
 
