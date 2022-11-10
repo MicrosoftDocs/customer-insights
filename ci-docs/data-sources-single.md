@@ -6,7 +6,7 @@ ms.date: 11/3/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: wmelewong
-ms.author: wang.meng
+ms.author: wameng
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope: 
