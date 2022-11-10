@@ -39,12 +39,14 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
 
    If the file meets the prerequisites, **Next** displays.
 
-1. Click **Next**. Customer Insights checks the data quality, removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
-
-1. While waiting for your data to process, click the link learn more about Customer Insights. Proceed through the tutorial.
+1. Click **Next**. Customer Insights checks the data quality.
 
    > [!TIP]
-   > If an error occurs during data processing, Customer Insights explains the issue in a message and provides an action to take. For example, 
+   > If an error occurs during data processing, Customer Insights explains the issue in a message and provides an action to take. For example, if required attributes needed to generate insights are not identified, click [**Map data**](#map-required-data).
+
+1. Click **Next**. Customer Insights removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
+
+1. While waiting for your data to process, click the link to learn more about Customer Insights. Proceed through the tutorial.
 
 1. Upon a successful completion, the **Results** page displays results from your file:
    - Data quality checks which can be viewed in a report
@@ -54,5 +56,13 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
    - Suggested segments and measures
 
 1. To export the segments, select **export page**. Otherwise, select **Done** to go to the **Home** page.
+
+### Map required data
+
+1. Under the **Needs mapping** tab, select each field in your file that matches the list of fields displayed.
+
+1. Review all mapped fields under **All mapped** tab and make changes if necessary.
+
+1. Select **Next**.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
