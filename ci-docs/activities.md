@@ -38,9 +38,9 @@ A table must have at least one attribute of type **Date** to be included in a cu
    - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
      > [!NOTE]
-     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity entity.
+     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
 
-   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with name, entity, and primary key.":::
+   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with name, table, and primary key.":::
 
 1. Select **Next**.
 
@@ -137,7 +137,7 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
    - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
      > [!NOTE]
-     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity entity.
+     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
 
 1. In the **Relationships** step, create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary table. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
    - Example relationship for an activity called *Purchases*:

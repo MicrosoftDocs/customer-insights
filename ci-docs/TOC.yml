@@ -15,12 +15,12 @@
           href: trial-signup.md
         - name: Trial FAQ
           href: trial-FAQ.md
+    - name: Start with a paid license
+      href: paid-license.md
     - name: Access your environment
       href: https://home.ci.ai.dynamics.com/
     - name: Quickstart guide
       href: get-started.md
-    - name: Start with a paid license
-      href: paid-license.md
     - name: Explore Customer Insights
       href: home.md
     - name: Work with tags and columns
@@ -30,6 +30,19 @@
     - name: Integrate with Dynamics 365 Marketing
       href: marketing-get-started.md
 
+- name: Customers
+  items:
+    - name: View customer profiles
+      href: customer-profiles.md
+    - name: Manage the search & filter index
+      href: search-filter-index.md
+    - name: Use consent management
+      href: consent-management.md
+    - name: Use web data for personalization
+      href: unknown-to-known.md
+    - name: Manage unknown customer profiles
+      href: manage-unknown-profiles.md
+ 
 - name: Data sources
   items:
     - name: Data sources overview
@@ -49,7 +62,7 @@
     - name: Real-time data ingestion
       href: real-time-data-ingestion.md
 
-- name: Data unification
+- name: Unification
   items:
     - name: Data unification overview
       href: data-unification.md
@@ -67,8 +80,8 @@
       href: data-unification-contacts.md
     - name: Update unification settings
       href: data-unification-update.md  
-
-- name: Data enrichment
+ 
+- name: Enrichment
   items:
     - name: Data enrichment overview
       href: enrichment-hub.md
@@ -95,19 +108,6 @@
     - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
-- name: Customers
-  items:
-    - name: View customer profiles
-      href: customer-profiles.md
-    - name: Manage the search & filter index
-      href: search-filter-index.md
-    - name: Use consent management
-      href: consent-management.md
-    - name: Use web data for personalization
-      href: unknown-to-known.md
-    - name: Manage unknown customer profiles
-      href: manage-unknown-profiles.md
-  
 - name: Activities
   href: activities.md
 
