@@ -2,7 +2,7 @@
 title: "Remove duplicates before unifying data"
 description: "The second step in the unification process is selecting which record to keep when duplicates are found."
 recommendations: false
-ms.date: 08/01/2022
+ms.date: 11/14/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -24,10 +24,10 @@ This optional step in unification enables you to set up rules for eliminating du
 
 The system-defined rules apply if no deduplication rules are added.
 
-- The primary key is deduplicated.
-  For any records with the same primary key, the **Most filled** record (the one with the fewest null values) is the winner.
-- Any cross-entity matching rules are applied to the entity.
-  For example: In the match step, if entity A is matched against entity B on *FullName* and *DateofBirth*, then entity A is also deduplicated by *FullName* and *DateofBirth*. Because *FullName* and *DateofBirth* are valid keys for identifying a customer in entity A, these keys are also valid for identifying duplicate customers in entity A.
+- Deduplicate on primary keys
+  Records with the same primary key are deduplicated. The winning record is the MAX(PK), meaning the first of the duplicate records in the data set is selected as the winner.
+- Deduplicate by applying cross-entity matching rules
+  On the matching conditions step, any rules used to match an entity to another entity are applied as a deduplication rule to that entity. For example: If a rule matches entity A to entity B on *FullName* and *DateofBirth*, then entity A and Entity B are also deduplicated by *FullName* and *DateofBirth*. Because *FullName* and *DateofBirth* are used to match unique customers across entities, they are also used to identify and remove duplicate customers in each entity.
 
 ## Include enriched entities (preview)
 
