@@ -25,8 +25,11 @@ This optional step in unification enables you to set up rules for eliminating du
 The system-defined rules apply if no deduplication rules are added.
 
 - Deduplicate on primary keys
+
   Records with the same primary key are deduplicated. The winning record is the MAX(PK), meaning the first of the duplicate records in the data set is selected as the winner.
+
 - Deduplicate by applying cross-entity matching rules
+
   On the matching conditions step, any rules used to match an entity to another entity are applied as a deduplication rule to that entity. For example: If a rule matches entity A to entity B on *FullName* and *DateofBirth*, then entity A and Entity B are also deduplicated by *FullName* and *DateofBirth*. Because *FullName* and *DateofBirth* are used to match unique customers across entities, they are also used to identify and remove duplicate customers in each entity.
 
 ## Include enriched entities (preview)
