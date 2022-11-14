@@ -24,7 +24,6 @@ Export segments of unified customer profiles to LinkedIn Ads to create matched a
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 100,000 customer profiles per export to LinkedIn Ads, which can take up to 10 minutes to complete.
 - Segments only. A segment must contain at least 300 unique profiles.
 
