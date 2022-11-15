@@ -1,7 +1,7 @@
 ---
 title: "Measures overview"
 description: "Learn how measures help analyze and reflect the performance of your business."
-ms.date: 09/26/2022
+ms.date: 11/15/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -61,6 +61,15 @@ Select next to a measure to view available actions. Select the measure name to p
 
 Measures can be refreshed on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. You might want to schedule last season's measures or measures that don't change often on a slower cadence such as monthly to avoid unnecessary processing time. The default is every scheduled system refresh.
 
+### Prerequisites for automatic refresh of a measure
+
+- A [system refresh must be scheduled](schedule-refresh.md).
+- The custom schedule for a measure must correspond to the system refresh schedule.
+  > [!NOTE]
+  > If the system refresh date is changed after you have scheduled custom schedules for your measures, your measures won't run. Change your measures to match the new system refresh schedule or change the system refresh schedule back.
+
+### Create refresh schedules for measures
+
 Define refresh schedules for one or more measures. The currently defined schedule is listed in the **Schedule** column of the measure list.
 
 1. Go to **Measures**.
@@ -71,14 +80,16 @@ Define refresh schedules for one or more measures. The currently defined schedul
 
 1. In the **Schedule** pane, set the **Schedule run** to **On** to run the measure automatically. Set it to **Off** to refresh it manually.
 
-1. For automatically refreshed measures, select **Recurrence** and the details for it. On the scheduled day, the refresh occurs.
-
-   :::image type="content" source="media/measures-schedule.png" alt-text="Selected measure with Schedule pane.":::
+1. For automatically refreshed measures, select **Recurrence** and the details for it.
 
 1. When defining the schedule for several measures, make a selection under **Keep or override schedules**:
    - **Keep individual schedules**: Keep the previously defined schedule for the selected measures.
    - **Define new schedule for all selected measures**: Override the existing schedules of the selected measures.
 
+   :::image type="content" source="media/measures-schedule.png" alt-text="Selected measure with Schedule pane.":::
+
 1. Select **Save**.
+
+**Refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
