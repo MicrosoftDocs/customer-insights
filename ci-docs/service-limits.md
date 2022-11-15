@@ -18,7 +18,7 @@ manager: shellyha
 
 | Area  | Limits  | Notes |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Segments, measures, and predictions | 500  | The total number of [segments](segments.md) and [measures](measures.md) combined can't exceed 1000 without potential performance degradation. |
+| Segments and measures | 500  | The total number of active [segments](segments.md) and active [measures](measures.md) combined can't exceed 500 without potential performance degradation. |
 | Relationships | 20 levels of depth on relationships in entity paths. | When creating [segments](segments.md) or [measures](measures.md) using the builder interface, entity paths can have up to 20 relationship hops between the start entity and the target entity.  |
 |Data ingestion| Concurrent evaluations for Power Query data sources are limited. | Customer Insights has the same [refresh limits like Dataflows in PowerBI.com](/power-query/power-query-online-limits#refresh-limits). |
 

@@ -45,27 +45,27 @@ Segment of accounts or segment of contacts (preview) with segment builder: [Buil
 
 ## Manage existing segments
 
-Go to the **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
+Go to the **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage. In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
 
-> [!TIP]
-> In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
-
-Select next to a segment to view available actions. Supported bulk operations include: refresh, download, delete, change state (activate/deactivate), change type (static/dynamic), and tags.
+Select next to a segment to view available actions.
 
 :::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options." lightbox="media/segments-selected-segment.png":::
 
+> [!TIP]
+> Supported bulk operations include: refresh, download, delete, change state (activate/deactivate), change type (static/dynamic), and tags.
+
 - [**View**](#view-segment-details) the segment details, including member count trend and a preview of segment members.
-- **Download** the list of members as a .CSV file.
+- **Download** the list of members as a .CSV file for one or more segments.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
-- [**Refresh**](#refresh-segments) the segment to include the latest data.
-- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](schedule-refresh.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
-- **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed during system refreshes.
+- [**Refresh**](#refresh-segments) one or more segments to include the latest data.
+- **Activate** or **Deactivate** a segment. For multiple segments, select **Change state**. Inactive segments won't get refreshed during a [scheduled refresh](schedule-refresh.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
+- **Make static** or **Make dynamic** the segment type. For multiple segments, select **Change type**. Static segments must be refreshed manually. Dynamic segments are automatically refreshed during system refreshes.
 - [**Find similar customers**](find-similar-customer-segments.md) from the segment.
 - **Rename** the segment.
-- **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
+- **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for one or more segments.
 - [**Manage exports**](#export-segments) to see export-related segments and manage them. [Learn more about exports.](export-destinations.md)
-- **Delete** the segment.
+- **Delete** one or more segments.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
