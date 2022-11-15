@@ -12,20 +12,20 @@ manager: shellyha
 
 # Manage unknown profiles with Customer Insights
 
-Internet users are often unidentified and anonymous online. If they aren't signed in because they use different devices or channels, it's even true for the most loyal customers. With third-party cookies likely going away soon, managing user preferences based on first-party data is crucial to achieve differentiated personalized experiences. For many brands, known or authenticated users are the minority despite growing customer expectations around personalization. It's great for businesses to know who their customers are, based on reliable, detailed, and unified data.
+Internet users are often unidentified or anonymous online. Even the most loyal customers may appear to be “unknown” if they aren't signed in across different devices. For many brands, known or authenticated users are the minority despite growing customer expectations around personalization. With the future of third-party cookies in question, managing user preferences based on first-party data instead, is crucial for achieving personalized experiences.
 
-Memorable personalization depends on the richness and completeness of your customer data and Customer Insights helps you achieve these goals. You don't have to limit or stop the use of data collected at the start of the customer journey. Customer Insights lets you bring your own data to create a customer profile for unknown users. You can then use that profile for further actions, despite missing contact information. Import first-party data from sources such as web, mobile, or CRM systems into Customer Insights to enrich customer profiles continuously. As you unify more interactions, [turn the *unknown* customer into a *known* customer](unknown-to-known.md).
+Memorable personalization depends on how well you know your customer and Customer Insights helps you do that by tracking all of your customers.  You don't have to limit or stop the use of data collected at the start of the customer journey. Customer Insights lets you bring your own data to create a customer profile for unknown users. You can then use that profile for further actions, despite missing contact information. Import first-party data from sources such as web, mobile, or CRM systems into Customer Insights to enrich customer profiles continuously. As you unify more interactions, [turn the *unknown* customer into a *known* customer](unknown-to-known.md).
 
 ## Sample Scenario
 
-E-commerce is the fastest-growing channel over the last decade. Assume a user uses their mobile device to browse your e-commerce site. The website assigns the visitor “mobile_guest123” as a unique identifier and you start collecting behavioral activities based on their online activity. For example, which pages they visited, how much time they spent on those pages, or which links they clicked. You don't know their name or email address, but this data can help provide brands meaningful insights about this specific user. In turn, you can put those insights to work the next time that user visits the site. Query Customer Insights for “mobile_guest123” to retrieve the user’s segment list, such as "organic", "mobile pre-order customers", "high-value customers", etc., or retrieve the profile to create personalized web experiences. You can also export the data to any activation system to do the same.
+Assume a user uses their mobile device to browse your e-commerce site. The website assigns the visitor “mobile_guest123” as a unique identifier and you start collecting behavioral activities based on their online activity. For example, which pages they visited, how much time they spent on those pages, or which links they clicked. You don't know their name or email address, but this data can help provide brands meaningful insights about this specific user. In turn, you can put those insights to work the next time that user visits the site. Query Customer Insights for “mobile_guest123” to retrieve the user’s segment list, such as "organic", "mobile pre-order customers", "high-value customers", etc., or retrieve the profile to create personalized web experiences. You can also export the data to any activation system to do the same.
 
 ## Prerequisites
 
 - Ingest first-party data into Customer Insights
 - Each entity has a unique ID that is set as a primary key
 - Each entity with a primary key for personalization is unified
-- The content management system of your website is capable of using APIs (for web personalization based on direct communication with Customer Insights)
+- The content management system of your website can use APIs (for web personalization based on direct communication with Customer Insights)
 
 The following table shows a simplified example how high-value web events could get captured.
 
