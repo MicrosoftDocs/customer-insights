@@ -1,7 +1,7 @@
 ---
 title: "Measures overview"
 description: "Learn how measures help analyze and reflect the performance of your business."
-ms.date: 11/15/2022
+ms.date: 11/17/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -66,7 +66,7 @@ Measures can be refreshed on the [scheduled system refresh](schedule-refresh.md)
 - A [system refresh must be scheduled](schedule-refresh.md).
 - The custom schedule for a measure must coincide with the system refresh schedule.
   > [!NOTE]
-  > If the system refresh date is changed after you have scheduled custom schedules for your measures, your measures won't run. Change your measures to match the new system refresh schedule or change the system refresh schedule back.
+  > If the system refresh date is changed after you have scheduled custom schedules for your measures so that the dates no longer coincide, your measures won't run. Change your measures to match the new system refresh schedule.
 
 ### Create custom refresh schedules for measures
 

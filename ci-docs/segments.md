@@ -1,7 +1,7 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 11/15/2022
+ms.date: 11/17/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -47,9 +47,6 @@ Segment of accounts or segment of contacts (preview) with segment builder: [Buil
 
 Go to the **Segments** page to view the segments you created, their status and state, the last time the data was refreshed, and their refresh schedule. You can sort the list of segments by any column or use the search box to find the segment you want to manage. In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
 
-> [!TIP]
-> The **Last refreshed** column shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
-
 Select next to a segment to view available actions.
 
 :::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options." lightbox="media/segments-selected-segment.png":::
@@ -58,7 +55,7 @@ Select next to a segment to view available actions.
 - **Download** the list of members as a .CSV file.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
-- **Refresh** the segment manually to include the latest data.
+- **Refresh** the segment manually to include the latest data. The **Last refreshed** column shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
 - **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](#schedule-segments) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic and their [schedule](#schedule-segments).
 - **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed according to their [schedule](#schedule-segments).
 - [**Find similar customers**](find-similar-customer-segments.md) from the segment.
@@ -110,7 +107,7 @@ Segments can be refreshed based on the [scheduled system refresh](schedule-refre
 - The segment must have the type **Dynamic** or **Expansion**. **Static** segments *won't* be refreshed automatically.
 - The custom schedule for a segment must coincide with the system refresh schedule.
   > [!NOTE]
-  > If the system refresh date is changed after you have scheduled custom schedules for your segments, your segments won't run. Change your segments to match the new system refresh schedule or change the system refresh schedule back.
+  > If the system refresh date is changed after you have scheduled custom schedules for your segments so that the dates no longer coincide, your segments won't run. Change your segments to match the new system refresh schedule.
 
 ### Create custom refresh schedules for segments
 
@@ -130,7 +127,7 @@ Define refresh schedules for one or more segments. The currently defined schedul
    - **Keep individual schedules**: Keep the previously defined schedule for the selected segments.
    - **Define new schedule for all selected segments**: Override the existing schedules of the selected segments.
 
-   :::image type="content" source="media/segments-schedule.png" alt-text="Selected segments with Schedule pane.":::
+   :::image type="content" source="media/segments-schedule.png" alt-text="Selected segments with Schedule pane."lightbox="media/segments-schedule.png":::
 
 1. Select **Save** and then confirm the change. The segments are refreshed on the scheduled date during the system refresh.
 
