@@ -1,12 +1,12 @@
 ---
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 11/15/2022
+ms.date: 11/16/2022
 ms.subservice: audience-insights
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-author: CadeSanthaMSFT
-ms.author: cadesantha
+author: srivas15
+ms.author:  shsri
 manager: shellyha
 searchScope: 
   - ci-entities
@@ -36,6 +36,9 @@ A table must have at least one attribute of type **Date** to be included in a cu
    - **Activity name**: Select a name for your activity.
    - **Activity table**: Select a table that includes transactional or activity data.
    - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
+
+     > [!NOTE]
+     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with name, table, and primary key.":::
 
@@ -68,6 +71,8 @@ A table must have at least one attribute of type **Date** to be included in a cu
 
    - **Show in timeline**
       - Choose if you what to show this activity in the timeline view on your customer profiles. Select **Yes** to show the activity in the timeline or **No** to hide it.
+        > [!NOTE]
+        > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
 
       :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity table.":::
 
@@ -127,7 +132,14 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
 
 1. Select **Add Activity**.
 
-1. Name the activity, select the source activity table, and select the primary key of the activity table.
+1. In the **Activity data** step, enter the following information:
+
+   - **Activity name**: Select a name for your activity.
+   - **Activity table**: Select a table that includes transactional or activity data.
+   - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
+
+     > [!NOTE]
+     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
 
 1. In the **Relationships** step, create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary table. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
    - Example relationship for an activity called *Purchases*:

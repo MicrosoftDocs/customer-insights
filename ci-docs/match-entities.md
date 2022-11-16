@@ -122,16 +122,16 @@ For example, if your match rule combines last name, city, and date of birth, the
 
 1. Specify the exception criteria.
 
-1. Select **Done** so save the rule.
+1. Select **Done** to save the rule.
 
 ### Specify custom match conditions
 
-You can specify conditions that override the default match logic. There are four options available:
+Specify conditions that override the default match logic. There are four options available:
 
 |Option  |Description |Example  |
 |---------|---------|---------|
-|Always match     | Defines values that are always matched.         |  Always match *Mike* and *MikeR*.       |
-|Never match     | Defines values that never match.        | Never match *John* and *Jonathan*.        |
+|Always match     | Defines values for the primary keys that are always matched.         |  Always match the row with primary key *12345* to the row with primary key *54321*.       |
+|Never match     | Defines values for the primary keys that never match.        | Never match the row with primary key *12345* to the row with primary key *54321*.        |
 |Bypass            | Defines values that the system should always ignore in the match phase. |  Ignore the values *11111* and *Unknown* during match.        |
 |Alias mapping    | Defining values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
 
@@ -139,9 +139,9 @@ You can specify conditions that override the default match logic. There are four
 
    :::image type="content" source="media/m3_match_custom.png" alt-text="Custom button":::
 
-1. Choose the **Custom type** and select **Download template**. You need a separate template for each match option.
+1. Choose the **Custom type** and select **Download template**. Rename the template without using spaces. Use a separate template for each match option.
 
-1. Open the downloaded template file and fill in the details. The template contains fields to specify the table and the table primary key values to be used in the custom match. For example, if you want primary key *12345* from *Sales* table to always match with primary key *34567* from *Contact* table, fill in the template:
+1. Open the downloaded template file and fill in the details. The template contains fields to specify the table and the table primary key values to be used in the custom match. Table names are case sensitive. For example, if you want primary key *12345* from *Sales* table to always match with primary key *34567* from *Contact* table, fill in the template:
     - Table1: Sales
     - Table1Key: 12345
     - Table2: Contact
@@ -149,7 +149,7 @@ You can specify conditions that override the default match logic. There are four
 
    The same template file can specify custom match records from multiple tables.
 
-   If you want to specify custom matching for deduplication on a table, provide the same table as both Table1 and Table2 and set the different primary key values.
+   If you want to specify custom matching for deduplication on a table, provide the same table as both Table1 and Table2 and set the different primary key values. You must define at least one deduplication rule to the table to use custom matching.
 
 1. After adding all the overrides, save the template file.
 
@@ -165,6 +165,8 @@ You can specify conditions that override the default match logic. There are four
    - For **Bypass** or **Alias mapping**, select **Edit** on an existing match rule or create a new rule. In the Normalizations dropdown, choose the **Custom bypass** or **Alias mapping** option and select **Done**.
 
 1. Select **Done** on the **Custom** pane to apply the custom match configuration.
+
+   Each template file ingested is its own data source. If records are discovered that need special matching treatment, update the appropriate data source. The update will be used during the next unification process. For example, you identify twins with nearly the same name living at the same address that had been merged as one person. Update the data source to identify the twins as separate, unique records.
 
 > [!div class="nextstepaction"]
 > [Next step: Unify fields](merge-entities.md)

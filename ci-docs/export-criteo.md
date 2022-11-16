@@ -61,8 +61,6 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
 
-1. Optionally, export **Advertiser ID** and **Name**.
-
 1. Select the segments you want to export.
 
 1. Select **Save**.

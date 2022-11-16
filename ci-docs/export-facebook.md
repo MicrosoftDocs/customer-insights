@@ -21,11 +21,13 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 - A [Facebook Ads Account](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) that includes a [Facebook Business Account](https://business.facebook.com/).
 - Administrator privileges on the [Facebook Ads Account](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
+- Custom Audience Terms need to be accepted by the user setting up the connection in Customer Insights.
 
 ## Known limitations
 
 - Up to 10 million customer profiles per export to Facebook Ads Manager, which can take up to 90 minutes.
 - Segments only.
+- Facebook Ads integration does not support users with more than 25 ad accounts.
 - Facebook *customer list* type in [custom audiences](https://www.facebook.com/business/help/744354708981227?id=2469097953376494) only.
   > [!NOTE]
   > In some cases, you might see custom audiences of different types in the dropdown list. If you select a different type other than *customer list*, the export fails.
