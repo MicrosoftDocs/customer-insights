@@ -71,6 +71,8 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
    - **Show in timeline**
       - Choose if you what to show this activity in the timeline view on your customer profiles. Select **Yes** to show the activity in the timeline or **No** to hide it.
+    > [!NOTE]
+    > If you select 'No' and hide the activity in the timeline view, the Activity will not be returned by the [Customer Insights API]([url](https://learn.microsoft.com/en-us/dynamics365/customer-insights/apis)) either. 
 
       :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity entity.":::
 
