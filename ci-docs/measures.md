@@ -47,12 +47,12 @@ Select next to a measure to view available actions. Select the measure name to p
 :::image type="content" source="media/measures-actions.png" alt-text="Actions to manage single measures."lightbox="media/measures-actions.png":::
 
 - **Edit** the measure to change its properties.
-- **Refresh** the measure to include the latest data.
+- **Refresh** the measure manually to include the latest data.
 - **Rename** the measure.
 - **Activate** or **Deactivate** the measure. Inactive measures won't get refreshed during a [scheduled refresh](#schedule-measures) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the measure.
 - **Delete** the measure.
-- [**Schedule**](#schedule-measures) the measure.
+- [**Schedule**](#schedule-measures) to customize the schedule for the measure.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by measure name.
@@ -64,11 +64,11 @@ Measures can be refreshed on the [scheduled system refresh](schedule-refresh.md)
 ### Prerequisites for automatic refresh of a measure
 
 - A [system refresh must be scheduled](schedule-refresh.md).
-- The custom schedule for a measure must correspond to the system refresh schedule.
+- The custom schedule for a measure must coincide with the system refresh schedule.
   > [!NOTE]
   > If the system refresh date is changed after you have scheduled custom schedules for your measures, your measures won't run. Change your measures to match the new system refresh schedule or change the system refresh schedule back.
 
-### Create refresh schedules for measures
+### Create custom refresh schedules for measures
 
 Define refresh schedules for one or more measures. The currently defined schedule is listed in the **Schedule** column of the measure list.
 
@@ -88,8 +88,6 @@ Define refresh schedules for one or more measures. The currently defined schedul
 
    :::image type="content" source="media/measures-schedule.png" alt-text="Selected measure with Schedule pane.":::
 
-1. Select **Save**.
-
-**Refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
+1. Select **Save** and then confirm the change. The measures are refreshed on the scheduled date during the system refresh.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
