@@ -2,7 +2,7 @@
 title: "Remove duplicates before unifying data"
 description: "The second step in the unification process is selecting which record to keep when duplicates are found."
 recommendations: false
-ms.date: 11/14/2022
+ms.date: 11/18/2022
 
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -18,19 +18,25 @@ searchScope:
 
 # Remove duplicates before unifying data
 
-This optional step in unification enables you to set up rules for eliminating duplicate records **within** an entity. Deduplication identifies multiple records for a customer and selects the best record to keep (based on basic merge preferences) or merges the records into one (based on advanced merge preferences). Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
+This optional step in unification enables you to set up rules for eliminating duplicate records **within** an entity. Deduplication identifies multiple records for a customer and selects the best record to keep (based on basic merge preferences) or merges the records into one (based on advanced merge preferences). Source records get linked to the merged record with alternate IDs.
 
-## Default deduplication
+Deduplication of customer records in each entity is important to improve unification results and performance. Defining your own deduplication rules gives you flexibility and control. However, if you do not define any custom deduplication rules for an entity, Customer Insights performs default deduplication.
+
+## Default deduplication rules
 
 The system-defined rules apply if no deduplication rules are added.
 
-- Deduplicate on primary keys
+1. Deduplicate on primary keys
 
-  Records with the same primary key are deduplicated. The winning record is the MAX(PK), meaning the first of the duplicate records in the data set is selected as the winner.
+  First, Customer Insights matches records that have the same primary key and keeps the first record in the entity.  For example, if four records are found with primary key “12345”, the first of those four records found in the entity are kept as the winner record.
 
-- Deduplicate by applying cross-entity matching rules
+1. Deduplicate on fields used in Matching conditions
 
-  On the matching conditions step, any rules used to match an entity to another entity are applied as a deduplication rule to that entity. For example: If a rule matches entity A to entity B on *FullName* and *DateofBirth*, then entity A and Entity B are also deduplicated by *FullName* and *DateofBirth*. Because *FullName* and *DateofBirth* are used to match unique customers across entities, they are also used to identify and remove duplicate customers in each entity.
+  Next, Customer Insights deduplicates on all fields that are used in matching rules for the entity. For example, in Matching conditions, if Entity1 has rule 1 which matches on *Name+Email* and rule 2 which matches on *Name+Phone*, Customer Insights deduplicates Entity1 by doing an exact match on *Name+Email+Phone*. If several records are found with an exact match on *Name+Email+Phone*, then the first record in the entity is kept as the winner. Use of normalization or precision in the match rules is not used in default deduplication.
+
+If you define your own deduplication rules, Customer Insights runs those rules first. Then, deduplicates the entities on the primary key. If duplicate primary keys are found, instead of picking the first record as the winner, Customer Insights uses a winner record (if any)  as defined by your custom deduplication rules.
+
+For example, six records have primary key “20”. Three of these records are deduplicated by a custom rule and a winner selected. Customer Insights then deduplicates on the primary key finding the winner record and the three remaining records. Customer Insights uses the previously defined winner record as the final winner. If there is no winner record in the set of records, or if there are multiple winner records defined by different deduplication rules, then the usual rule of using the first record as the winner applies.
 
 ## Include enriched entities (preview)
 
