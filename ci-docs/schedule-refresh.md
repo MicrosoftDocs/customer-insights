@@ -36,7 +36,7 @@ Schedule automatic refreshes of all your [ingested data sources](data-sources.md
 
 1. Select **Save** to apply your changes.
 
-> [!IMPORTANT]
+> [!CAUTION]
 > If you change an existing system refresh date, it might impact custom schedules for segments and measures causing them to not run. Check the schedules for both [segments](segments.md#schedule-segments) and [measures](measures.md#schedule-measures).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

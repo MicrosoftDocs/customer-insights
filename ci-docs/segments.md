@@ -103,11 +103,11 @@ Segments can be refreshed based on the [scheduled system refresh](schedule-refre
 
 ### Prerequisites for automatic refresh of a segment
 
-- A [system refresh must be scheduled](schedule-refresh.md).
+- A [system refresh must be scheduled](schedule-refresh.md). Daily system refresh is recommended.
 - The segment must have the type **Dynamic** or **Expansion**. **Static** segments *won't* be refreshed automatically.
-- The custom schedule for a segment must coincide with the system refresh schedule.
-  > [!NOTE]
-  > If the system refresh date is changed after you have scheduled custom schedules for your segments so that the dates no longer coincide, your segments won't run. Change your segments to match the new system refresh schedule.
+- The custom schedule for a segment must align with the system refresh schedule.
+  > [!CAUTION]
+  > If the system refresh date is changed after you have scheduled custom schedules for your segments so that the dates no longer align, your segments won't run. Change your segments custom schedules to align with the new system refresh schedule.
 
 ### Create custom refresh schedules for segments
 
