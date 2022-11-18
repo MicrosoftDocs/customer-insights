@@ -28,11 +28,11 @@ The system-defined rules apply if no deduplication rules are added.
 
 1. Deduplicate on primary keys
 
-  First, Customer Insights matches records that have the same primary key and keeps the first record in the entity.  For example, if four records are found with primary key “12345”, the first of those four records found in the entity are kept as the winner record.
+   First, Customer Insights matches records that have the same primary key and keeps the first record in the entity.  For example, if four records are found with primary key “12345”, the first of those four records found in the entity are kept as the winner record.
 
 1. Deduplicate on fields used in Matching conditions
 
-  Next, Customer Insights deduplicates on all fields that are used in matching rules for the entity. For example, in Matching conditions, if Entity1 has rule 1 which matches on *Name+Email* and rule 2 which matches on *Name+Phone*, Customer Insights deduplicates Entity1 by doing an exact match on *Name+Email+Phone*. If several records are found with an exact match on *Name+Email+Phone*, then the first record in the entity is kept as the winner. Use of normalization or precision in the match rules is not used in default deduplication.
+   Next, Customer Insights deduplicates on all fields that are used in matching rules for the entity. For example, in Matching conditions, if Entity1 has rule 1 which matches on *Name+Email* and rule 2 which matches on *Name+Phone*, Customer Insights deduplicates Entity1 by doing an exact match on *Name+Email+Phone*. If several records are found with an exact match on *Name+Email+Phone*, then the first record in the entity is kept as the winner. Use of normalization or precision in the match rules is not used in default deduplication.
 
 If you define your own deduplication rules, Customer Insights runs those rules first. Then, deduplicates the entities on the primary key. If duplicate primary keys are found, instead of picking the first record as the winner, Customer Insights uses a winner record (if any)  as defined by your custom deduplication rules.
 
