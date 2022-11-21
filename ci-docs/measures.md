@@ -93,4 +93,16 @@ Define refresh schedules for one or more measures. The currently defined schedul
 
 1. Select **Save** and then confirm the change. The measures are refreshed on the scheduled date during the system refresh.
 
+## Manage the number of active measures
+
+When you approach or exceed the number of active measures based on the [service limits](service-limits.md), you might experience the following:
+
+- Typical system refresh time is slower
+- Running or refreshing individual measures is slower
+- Refresh failures indicating out of memory
+
+The complexity of your measures can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active measures. These messages display on the **Measures** list page. If you encounter these messages or symptoms, see the following recommendations.
+1. Delete old or no longer relevant measures even if they are inactive.
+1. [Schedule individual measures](#schedule-measures) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
+
 [!INCLUDE [footer-include](includes/footer-banner.md)]
