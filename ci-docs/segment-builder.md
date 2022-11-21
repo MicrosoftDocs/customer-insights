@@ -1,7 +1,7 @@
 ---
 title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
-ms.date: 08/12/2022
+ms.date: 09/26/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -111,7 +111,7 @@ The example above illustrates the segmentation capability. We've defined a segme
    > - If the attribute you want to project is just one hop away from the *Customer* or *ContactProfile* entity, that attribute doesn't need to be present in every rule of the segment query you are building.
    > - **Projected attributes** are factored in when using set operators.
 
-1. Select **Run** to create the segment. Select **Save** if you want to keep the current configuration and run the segment later. The **Segments** page displays.
+1. Select **Run** to create the segment. If you want to keep the current configuration and run the segment later, select **Save** and then **Close**. The **Segments** page displays.
 
 ### Segment builder tips
 
@@ -126,6 +126,7 @@ When creating a segment using the segment builder, keep in mind the following ti
 
 ## Next steps
 
-[Export a segment](export-destinations.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
+- [Schedule a segment](segments.md#schedule-segments).
+- [Export a segment](export-destinations.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
