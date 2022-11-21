@@ -1,7 +1,7 @@
 ---
 title: "Measures overview"
 description: "Learn how measures help analyze and reflect the performance of your business."
-ms.date: 03/24/2022
+ms.date: 11/15/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -46,12 +46,15 @@ Select next to a measure to view available actions. Select the measure name to p
 
 :::image type="content" source="media/measures-actions.png" alt-text="Actions to manage single measures."lightbox="media/measures-actions.png":::
 
+> [!TIP]
+> Supported bulk operations include: refresh, delete, change state (activate/deactivate), and tags.
+
 - **Edit** the measure to change its properties.
-- **Refresh** the measure to include the latest data.
+- **Refresh** one or more measures to include the latest data.
 - **Rename** the measure.
-- **Activate** or **Deactivate** the measure. Inactive measures won't get refreshed during a [scheduled refresh](schedule-refresh.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
-- **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the measure.
-- **Delete** the measure.
+- **Activate** or **Deactivate** the measure. For multiple measures, select **Change state**. Inactive measures won't get refreshed during a [scheduled refresh](schedule-refresh.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
+- **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for one or more measures.
+- **Delete** one or more measures.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by measure name.
