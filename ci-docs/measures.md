@@ -1,7 +1,7 @@
 ---
 title: "Measures overview"
 description: "Learn how measures help analyze and reflect the performance of your business."
-ms.date: 11/17/2022
+ms.date: 11/28/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -59,14 +59,14 @@ Select next to a measure to view available actions. Select the measure name to p
 
 ## Schedule measures
 
-Measures can be refreshed on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. You might want to schedule last season's measures or measures that don't change often on a slower cadence such as monthly to avoid unnecessary processing time. The default is every scheduled system refresh.
+Measures can be refreshed on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. You might want to schedule last season's measures or measures that don't change often on a slower cadence such as monthly to help your most needed measures refresh faster. The default is every scheduled system refresh.
 
 ### Prerequisites for automatic refresh of a measure
 
 - A [system refresh must be scheduled](schedule-refresh.md). Daily system refresh is recommended.
 - The custom schedule for a measure must align with the system refresh schedule.
   > [!CAUTION]
-  > If the system refresh date is changed after you have scheduled custom schedules for your measures so that the dates no longer align, your measures won't run. Change your measures custom schedules to align with the new system refresh schedule.
+  > If the system refresh date is changed after you have set custom schedules for your measures so that the dates no longer align, your measures won't refresh as scheduled until their custom schedules align with the new system refresh schedule. Change your measures custom schedules to align with the new system refresh schedule or refresh the measures manually.
 
 ### Create custom refresh schedules for measures
 

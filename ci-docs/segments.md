@@ -1,7 +1,7 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 11/17/2022
+ms.date: 11/28/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -99,7 +99,7 @@ Export segments to other apps to further use the data. Export a segment from the
 
 ## Schedule segments
 
-Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. The default is every scheduled system refresh. You might want to schedule last season's segments or segments that don't change often on a slower cadence such as monthly to avoid unnecessary processing time.
+Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. The default is every scheduled system refresh. You might want to schedule last season's segments or segments that don't change often on a slower cadence such as monthly to help your most needed segments refresh faster.
 
 ### Prerequisites for automatic refresh of a segment
 
@@ -107,7 +107,7 @@ Segments can be refreshed based on the [scheduled system refresh](schedule-refre
 - The segment must have the type **Dynamic** or **Expansion**. **Static** segments *won't* be refreshed automatically.
 - The custom schedule for a segment must align with the system refresh schedule.
   > [!CAUTION]
-  > If the system refresh date is changed after you have scheduled custom schedules for your segments so that the dates no longer align, your segments won't run. Change your segments custom schedules to align with the new system refresh schedule.
+  > If the system refresh date is changed after you have set custom schedules for your segments so that the dates no longer align, your segments won't refresh as scheduled until their custom schedules align with the new system refresh schedule. Change your segments custom schedules to align with the new system refresh schedule or refresh the segments manually.
 
 ### Create custom refresh schedules for segments
 
