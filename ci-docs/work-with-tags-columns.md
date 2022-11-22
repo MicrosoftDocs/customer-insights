@@ -1,7 +1,7 @@
 ---
 title: "Work with tags and columns"
 description: "How to work with tags and columns to organize list views"
-ms.date: 03/25/2022
+ms.date: 11/15/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -27,21 +27,19 @@ Tags and columns are currently supported with **[Segments](segments.md)** and **
 
 A tag is a label that’s used to categorize and organize items such as segments or measures. For example, add a tag to segments that are part of a specific campaign. Then, you can filter by that tag to identify the segments for the campaign quickly and easily.
 
-You can view, add, and remove tags from an item. Add tags as you create an item. After creation, manage tags from the list view. An item can have up to 20 tags.
+You can view, add, and remove tags from items. Add tags as you create an item. After creation, manage tags from the list view. An item can have up to 20 tags.
 
 1. Go to the list view. For example, go to **Segments**.
 
-1. Select the items whose tags you want to manage.
+1. Select one or more items whose tags you want to manage and select **Tag**.
 
-1. Select the vertical ellipsis (&vellip;) and select **Tag**.
-
-   :::image type="content" source="media/segments_list_tag.png" alt-text="Selected segment with options dropdown list and available options."lightbox="media/segments_list_tag.png":::
+   :::image type="content" source="media/segments_list_tag.png" alt-text="Selected segment with Tags highlighted in the command bar."lightbox="media/segments_list_tag.png":::
 
 1. From the **Edit tags** pane, choose any of the following:
 
-   - To add an existing tag to the item, type a portion of the name in the **Tags** box until you see the tag you want. Select the tag.
-   - To create a tag, type the name in the **Tags** box and select **Create new tag** or press **Enter**. The new tag is added to the item.
-   - To remove a tag, select **X** next to the tag name.
+   - To add existing tags to the items, type a portion of the name in the **Tags** box until you see the tag you want. Select the tag.
+   - To create a tag, type the name in the **Tags** box and select **Create new tag** or press **Enter**. The new tag is added to the items.
+   - To remove tags, select **X** next to the tag names.
 
    :::image type="content" source="media/edit_tags.png" alt-text="Edit tags dialog box to add or remove tags.":::
 
