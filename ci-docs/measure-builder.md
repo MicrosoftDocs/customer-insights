@@ -1,7 +1,7 @@
 ---
 title: "Create measures with measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 09/26/2022
+ms.date: 11/28/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
