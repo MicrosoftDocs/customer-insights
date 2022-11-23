@@ -56,14 +56,14 @@ Select next to a segment to view available actions.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
 - **Refresh** the segment manually to include the latest data. The **Last refreshed** column shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
-- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](#schedule-segments) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic and their [schedule](#schedule-segments).
-- **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed according to their [schedule](#schedule-segments).
+- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](segments-schedule.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic and their [schedule](segments-schedule.md).
+- **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed according to their [schedule](segments-schedule.md).
 - [**Find similar customers**](find-similar-customer-segments.md) from the segment.
 - **Rename** the segment.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
 - [**Manage exports**](#export-segments) to see export-related segments and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
-- [**Schedule**](#schedule-segments) to customize the schedule for the segment.
+- [**Schedule**](schedule-segments.md) to customize the schedule for the segment.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
@@ -96,59 +96,5 @@ Export segments to other apps to further use the data. Export a segment from the
    1. To create a new export with the selected segment, select **Add export**. For more information about creating exports, see [Set up a new export](export-destinations.md#set-up-a-new-export).
 
 1. Select **Back** to return to the main page for segments.
-
-## Schedule segments
-
-Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. The default is every scheduled system refresh. You might want to schedule last season's segments or segments that don't change often on a slower cadence such as monthly to help your most needed segments refresh faster.
-
-### Prerequisites for automatic refresh of a segment
-
-- A [system refresh must be scheduled](schedule-refresh.md). Daily system refresh is recommended.
-- The segment must have the type **Dynamic** or **Expansion**. **Static** segments *won't* be refreshed automatically.
-- The custom schedule for a segment must align with the system refresh schedule.
-  > [!CAUTION]
-  > If the system refresh date is changed after you have set custom schedules for your segments so that the dates no longer align, your segments won't refresh as scheduled until their custom schedules align with the new system refresh schedule. Change your segments custom schedules to align with the new system refresh schedule or refresh the segments manually.
-
-### Create custom refresh schedules for segments
-
-Define refresh schedules for one or more segments. The currently defined schedule is listed in the **Schedule** column of the segment list.
-
-1. Go to **Segments**.
-
-1. Select the segments you want to schedule.
-
-1. Select **Schedule**.
-
-1. In the **Schedule** pane, set the **Schedule run** to **On** to run the segment automatically. Set it to **Off** to refresh it manually.
-
-1. For automatically refreshed segments, select **Recurrence** and the details for it.
-
-1. When defining the schedule for several segments, make a selection under **Keep or override schedules**:
-   - **Keep individual schedules**: Keep the previously defined schedule for the selected segments.
-   - **Define new schedule for all selected segments**: Override the existing schedules of the selected segments.
-
-   :::image type="content" source="media/segments-schedule.png" alt-text="Selected segments with Schedule pane."lightbox="media/segments-schedule.png":::
-
-1. Select **Save** and then confirm the change. The segments are refreshed on the scheduled date during the system refresh.
-
-## Track usage of a segment
-
-If you use segments in apps which are based on the same Microsoft Dataverse organization that is connected with Customer Insights, you can track the usage of a segment. For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
-
-When editing a segment that is being used within the Customer Insights environment, or in a customer journey in Marketing, a banner in the [segment builder](segment-builder.md) informs you about the dependencies. Inspect the dependency details directly from the banner or by selecting **Usage** in the segment builder.
-
-The **Segment usage** pane shows the details about the usage of this segment in Dataverse-based apps. For segments used in customer journeys, you’ll find a link to inspect the journey in Marketing where this segment is used. If you have permissions to access the Marketing app, view more details there.
-
-:::image type="content" source="media/segment-usage-pane.png" alt-text="Side pane with details of the segment usage in the segment builder.":::
-
-The system informs you about the usage of a tracked segment when you try to delete it. If the segment you're about to delete is used in a customer journey in Marketing, that journey will stop for all users in the segment. If the journey is part of a marketing campaign, the deletion will affect that campaign itself. However, you can still delete the segment despite the warnings.
-
-:::image type="content" source="media/segment-usage-delete.png" alt-text="Dialog box to confirm segment deletion when a segment is used in a Dataverse application.":::
-
-### Supported apps
-
-Usage is currently tracked in the following Dataverse-based apps:
-
-- [Customer journeys in Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

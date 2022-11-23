@@ -65,6 +65,6 @@ It's important to keep the consent status for your customers updated. The schedu
 
 In other words, make sure the source data that gets imported to Customer Insights always has the latest information.
 
-For more information, see [Refresh segments manually or schedule segments](segments.md#schedule-segments).
+For more information, see [Refresh segments manually or schedule segments](segments-schedule.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
