@@ -100,4 +100,17 @@ Export segments to other apps to further use the data. Export a segment from the
 
 1. Select **Back** to return to the main page for segments.
 
+## Manage the number of active segments
+
+When you approach or exceed the number of active segments based on the [service limits](service-limits.md), you might experience the following:
+
+- Typical system refresh time is slower
+- Running or refreshing individual segments is slower
+- Refresh failures indicating out of memory
+
+The complexity of your segments can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active segments. These messages display on the **Segments** list page. If you encounter these messages or symptoms, see the following recommendations.
+
+1. Delete old or no longer relevant segments even if they are static or inactive.
+1. [Schedule individual segments](segments-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
+
 [!INCLUDE [footer-include](includes/footer-banner.md)]

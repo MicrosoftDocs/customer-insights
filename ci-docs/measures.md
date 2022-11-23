@@ -60,4 +60,17 @@ Select next to a measure to view available actions. Select the measure name to p
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by measure name.
 
+## Manage the number of active measures
+
+When you approach or exceed the number of active measures based on the [service limits](service-limits.md), you might experience the following:
+
+- Typical system refresh time is slower
+- Running or refreshing individual measures is slower
+- Refresh failures indicating out of memory
+
+The complexity of your measures can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active measures. These messages display on the **Measures** list page. If you encounter these messages or symptoms, see the following recommendations.
+
+1. Delete old or no longer relevant measures even if they are static or inactive.
+1. [Schedule individual measures](measures-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
+
 [!INCLUDE [footer-include](includes/footer-banner.md)]
