@@ -122,11 +122,11 @@ When creating a segment using the segment builder, keep in mind the following ti
 - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
 - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
 - The **Undo** and **Redo** controls in the command bar let you roll back changes.
-- After creating a segment, some segments allow you to [track the usage of the segment](segments.md#track-usage-of-a-segment).
+- After creating a segment, some segments allow you to [track the usage of the segment](segments-track-usage.md).
 
 ## Next steps
 
-- [Schedule a segment](segments.mdsegments-schedule.md).
+- [Schedule a segment](segments-schedule.md).
 - [Export a segment](export-destinations.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

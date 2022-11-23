@@ -63,7 +63,7 @@ Select next to a segment to view available actions.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
 - [**Manage exports**](#export-segments) to see export-related segments and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** the segment.
-- [**Schedule**](schedule-segments.md) to customize the schedule for the segment.
+- [**Schedule**](segments-schedule.md) to customize the schedule for the segment.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
