@@ -135,7 +135,7 @@ For more information, see [Explore Customer Insights](home.md).
 
 ### Track usage of a segment
 
-You can now [track the usage of a segment](segments.md#track-usage-of-a-segment) in apps, which are based on the Dataverse organization that is connected with Customer Insights. For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
+You can now [track the usage of a segment](segments-track-usage.md) in apps, which are based on the Dataverse organization that is connected with Customer Insights. For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
 
 ### Export to Criteo
 
