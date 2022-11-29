@@ -1,7 +1,7 @@
 ---
 title: "Experience Customer Insights in 5 minutes"
 description: "Learn how to ingest data from a single file or from sample data"
-ms.date: 11/3/2022
+ms.date: 12/1/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -17,25 +17,32 @@ searchScope:
 
 # Experience Customer Insights in 5 minutes
 
-Dynamics 365 Customer Insights provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv or .xlsx file or choose sample data.
+Dynamics 365 Customer Insights provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv file or choose sample data.
 
 ## Prerequisites
 
-- File must be a CSV or Excel file
+- File must be a CSV file
 - File must contain more than 100 rows and 5 columns
 - File must include at least one column of each data category:
   - Identity: Customer number, email, SSN
   - Demographics: Address, DOB, gender
   - Business: Loyalty points, total spending
 
-## Ingest single data source
+## Ingest a single data source
+
+1. On the **Home** page, select **Get insights in 5 mins**.
+
+   :::image type="content" source="media/home-single-file.png" alt-text="Screenshot of Home page with Get insights in 5 mins selected.":::
+
+1. Select **Add data**. The Getting Started page displays.
+
+   :::image type="content" source="media/get-started.png" alt-text="Screenshot of Getting started for getting insights in 5 minutes.":::
 
 1. Select **Get started**.
 
-   > [!TIP]
-   > If you bypassed the Getting started page, select **Add data** from the **Add your first file** tile on the **Home** page.
+   :::image type="content" source="media/data-source-single-file-step1.png" alt-text="Screenshot of Home page with Get insights in 5 mins selected.":::
 
-1. To use your own data, browse or drag and drop your file. To use sample data, select **Download Microsoft’s sample data**.
+1. To use your own data, browse or drag and drop your file. To use sample data, select **Download Microsoft’s sample data** and load the sample file.
 
    If the file meets the prerequisites, **Next** displays.
 
