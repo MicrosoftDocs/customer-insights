@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights data in Microsoft Dataverse
 description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output tables that are exported to Dataverse.
-ms.date: 11/15/2022
+ms.date: 11/30/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -15,9 +15,9 @@ searchScope:
 
 # Work with Customer Insights data in Microsoft Dataverse
 
-Customer Insights provides the option to make output tables available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The [output tables](#output-tables) are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps.
+Customer Insights makes its output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The [output entities](#output-entities) are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps.
 
-Connecting to your Dataverse environment also enables you to [ingest data from on-premises data sources using Power Platform dataflows and gateways](connect-power-query.md#add-data-from-on-premises-data-sources).
+You can also [ingest data from on-premises data sources using Power Platform dataflows and gateways](connect-power-query.md#add-data-from-on-premises-data-sources) into your Dataverse environment.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ A Customer Insights subscription entitles you to extra capacity for your organiz
 
 **Example:**
 
-Assuming you get 15 GB database storage and 20 GB file storage per 100,000 customer profiles. If your subscription includes 300,000 customer profiles, your total storage capacity is 45 GB (3 x 15 GB) database storage and 60 GB file storage (3 x 20 GB). Similarly, if you have a B-to-B subscription with 30K accounts, your total storage capacity is 45 GB (3 x 15 GB) database storage, and 60 GB file storage (3 x 20 GB).
+Assuming you get 15-GB database storage and 20-GB file storage per 100,000 customer profiles. If your subscription includes 300,000 customer profiles, your total storage capacity is 45 GB (3 x 15 GB) database storage and 60-GB file storage (3 x 20 GB). Similarly, if you have a B-to-B subscription with 30,000 accounts, your total storage capacity is 45 GB (3 x 15 GB) database storage, and 60-GB file storage (3 x 20 GB).
 
 Log capacity isn't incremental and fixed for your organization.
 
@@ -129,9 +129,9 @@ OR
 
 If the removal of the connection fails due to dependencies, you need to remove the dependencies too. For more information, see [Removing dependencies](/power-platform/alm/removing-dependencies).
 
-## Output tables
+## Output entities
 
-Some output tables from Customer Insights are available as tables in Dataverse. The sections below describe the expected schema of these tables.
+Some output entities from Customer Insights are available as tables in Dataverse. The sections below describe the expected schema of these tables.
 
 - [CustomerProfile](#customerprofile)
 - [ContactProfile](#contactprofile)
@@ -158,7 +158,7 @@ A ContactProfile contains unified information about a contact. Contacts are [ind
 |  ContactProfileId     | Unique identifier   |  GUID for the contact               |
 |  CountryOrRegion      | Text |  Country/Region of the contact address               |
 |  CustomerId           | Text |  ID of the account the contact is mapped to               |
-|  TableName           | Text |  Table from which data comes from                |
+|  TableName            | Text |  Name of the table               |
 |  FirstName            | Text |  First name of the contact               |
 |  Gender               | Text |  Gender of the contact               |
 |  Id                   | Text |  Deterministic GUID based on `Identifier`               |
