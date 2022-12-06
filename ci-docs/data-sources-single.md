@@ -1,7 +1,7 @@
 ---
-title: "Experience Customer Insights in 5 minutes"
+title: "Experience Customer Insights in minutes"
 description: "Learn how to ingest data from a single file or from sample data"
-ms.date: 12/1/2022
+ms.date: 12/6/2022
 
 ms.subservice: audience-insights
 ms.topic: overview
@@ -15,13 +15,13 @@ searchScope:
   - customerInsights
 ---
 
-# Experience Customer Insights in 5 minutes
+# Experience Customer Insights in minutes
 
 Dynamics 365 Customer Insights provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv file or choose sample data.
 
 ## Prerequisites
 
-- File must be a CSV file
+- File must be a CSV file with only letters, numbers, and _ in the file name
 - File must contain more than 100 rows and 5 columns
 - File must include at least one column of each data category:
   - Identity: Customer number, email, SSN
@@ -30,9 +30,9 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
 
 ## Ingest a single data source
 
-1. On the **Home** page, select **Get insights in 5 mins**.
+1. On the **Home** page, select **Get insights in mins**.
 
-   :::image type="content" source="media/home-single-file.png" alt-text="Screenshot of Home page with Get insights in 5 mins selected.":::
+   :::image type="content" source="media/home-single-file.png" alt-text="Screenshot of Home page with Get insights in mins selected.":::
 
 1. Select **Add data**. The Getting Started page displays.
 
@@ -40,35 +40,30 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
 
 1. Select **Get started**.
 
-   :::image type="content" source="media/data-source-single-file-step1.png" alt-text="Screenshot of Home page with Get insights in 5 mins selected.":::
+   :::image type="content" source="media/get-started-add-data.png" alt-text="Screenshot of Getting Started - Add Data to add your single CSV file.":::
 
-1. To use your own data, browse or drag and drop your file. To use sample data, select **Download Microsoft’s sample data** and load the sample file.
-
-   If the file meets the prerequisites, **Next** displays.
+1. To use your own data, browse or drag and drop your file. To use sample data, select **Download Microsoft’s sample data** and load the sample file. If the file meets the prerequisites, **Next** displays.
 
 1. Click **Next**. Customer Insights checks the data quality.
 
    > [!TIP]
    > If an error occurs during data processing, Customer Insights explains the issue in a message and provides an action to take. For example, if required attributes needed to generate insights are not identified, click [**Map data**](#map-required-data).
 
-1. Click **Next**. Customer Insights removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
-
-1. While waiting for your data to process, click the link to learn more about Customer Insights. Proceed through the tutorial.
+   After the data quality checks, Customer Insights removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
 
 1. Upon a successful completion, the **Results** page displays results from your file:
-   - Data quality checks which can be viewed in a report
    - Number of mapped columns
    - Number of missing rows
    - Number of duplicate rows
    - Suggested segments and measures
 
-1. To export the segments, select **export page**. Otherwise, select **Done** to go to the **Home** page.
+1. Select **Done** to go to the **Home** page.
 
 ### Map required data
 
 1. Under the **Needs mapping** tab, select each field in your file that matches the list of fields displayed.
 
-1. Review all mapped fields under **All mapped** tab and make changes if necessary.
+1. Review all mapped fields under the **All mapped** tab and make changes if necessary.
 
 1. Select **Next**.
 

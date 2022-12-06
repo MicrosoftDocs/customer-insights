@@ -4,7 +4,7 @@ description: An overview of Customer Insights help resources to get started quic
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 12/1/2022
+ms.date: 12/6/2022
 ms.subservice: audience-insights 
 ms.topic: conceptual
 ms.manager: shellyha
@@ -30,12 +30,12 @@ The first time you sign in to Customer Insights, configure settings and explore 
 
 1. Change the environment to see demo data and [explore Customer Insights](home.md).
 
+> [!NOTE]
+> To upload a single CSV file, unify the data, and generate automatic insights, go to [Experience Customer Insights in minutes](data-sources-single.md). Otherwise, continue with the following steps.
+
 ## Step 3: Ingest, unify, and set up relationships for your data
 
 Unified profiles are the foundation to get insights and take action on the data. Bring in data from various sources and run the data unification process to combine unified profiles. Specify relationships between the ingested entities and use enrichment features to add information to the profiles.
-
-> [!NOTE]
-> To upload a single CSV file, unify the data, and generate automatic insights, go to [Experience Customer Insights in 5 minutes](data-sources-single.md). Otherwise, continue with the following steps.
 
 1. Ingest data by creating data sources from multiple options. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md), or  [Power Query connectors](connect-power-query.md).
 
