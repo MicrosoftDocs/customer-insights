@@ -40,8 +40,6 @@ Available measure templates:
 
 1. Select **New** and select **Choose a template**.
 
-   :::image type="content" source="media/measure-use-template.png" alt-text="Screenshot of the dropdown menu when creating a new measure with highlight on template.":::
-
 1. Find the template that fits your need and select **Choose template**.
 
 1. Review the required data and select **Get started** if you have all the data in place.
