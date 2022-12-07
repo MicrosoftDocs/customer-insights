@@ -19,7 +19,9 @@ searchScope:
 
 # Unify customer fields
 
-In this step of the unification process, choose and exclude attributes to merge within your unified profile entity. For example, if three entities had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Some attributes are automatically combined by the system. You can create stable and unique customer IDs. For individual customers, you can group related profiles into a cluster.
+In this step of the unification process, choose and exclude attributes to merge within your unified profile entity. For example, if three entities had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Some attributes are automatically combined by the system.
+
+In this step, you can create stable and unique customer IDs and for individual customers, group related profiles into a cluster.
 
 :::image type="content" source="media/m3_unify.png" alt-text="Unify customer fields page in the data unification process showing table with merged fields that define the unified customer profile.":::
 
@@ -92,7 +94,7 @@ To separate merged fields, find the attribute in the table. Separated fields sho
 
 ### Exclude fields
 
-Exclude a merged or separate field from the unified customer profile. If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile.
+Exclude a merged or separate field from the unified customer profile. If the field is used in other processes, such as a segment, remove it from these processes. Then, exclude it from the customer profile.
 
 1. Select a field and choose **Exclude**.
 
@@ -124,16 +126,16 @@ Combine separated fields to create a merged attribute.
 
 ### Combine a group of fields
 
-When you combine a group of fields, Customer Insights treats the group as a single unit and chooses the winner record based on a merge policy. When merging fields without combining them into a group, Customer Insights chooses the winner record for each field based on the entity order ranking set up in the **Match conditions** step. If a field has a null value, Customer Insights continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
+When you combine a group of fields, Customer Insights treats the group as a single unit, and chooses the winner record based on a merge policy. When merging fields without combining them into a group, Customer Insights chooses the winner record for each field based on the entity order ranking set up in the **Match conditions** step. If a field has a null value, Customer Insights continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
 
 #### Example
-Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in a less than ideal mailing address. To treat the address fields as a whole, combine the address fields into a group. The result is a current mailing address.
+Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in a less than ideal mailing address (200 Cedar Springs Road, Suite 950 Dallas, TX 75255). To treat the address fields as a whole, combine the address fields into a group. The result is a current mailing address.
 
 **Table1 - Loyalty**
 
-| Full_Name      | Addr1                | Addr2     | City    | State | Zip   |
-|----------------|----------------------|-----------|---------|-------|-------|
-| Monica Thomson | 200 Cedar Springs Rd |           | Dallas | TX    | 75255 |
+| Full_Name      | Addr1                  | Addr2     | City    | State | Zip   |
+|----------------|------------------------|-----------|---------|-------|-------|
+| Monica Thomson | 200 Cedar Springs Road |           | Dallas | TX    | 75255 |
 
 **Table2 - Online**
 
@@ -163,7 +165,7 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
 
 1. To add more than two data sources for your combined group, select **Add** > **Group**. Add as many as 15 data sources.
 
-1. Enter the following information for each field you are combining:
+1. Enter the following information for each field you're combining:
 
    - **Name**: Unique name of the field you want in the grouping. You can’t use a name from your data sources.
    - **Output name**: Automatically filled in and displays in the Customer profile.
@@ -173,7 +175,7 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
      > :::image type="content" source="media/merge-combine-datasource.png" alt-text="Combine group of fields screen with Group drop-down and data source highlighted.":::
    - **Group2**: The field in the next data source that corresponds to the **Name**. Repeat for each data source you include.
 
-1. Provide a **Name** for the combined group of fields, such as mailing address. This name displays on the Unify step but does not appear in the Customer profile.
+1. Provide a **Name** for the combined group of fields, such as mailing address. This name displays on the Unify step but doesn't appear in the Customer profile.
 
    :::image type="content" source="media/merge-combine-group-example.png" alt-text="Combine group of fields example.":::
 
