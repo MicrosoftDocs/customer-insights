@@ -29,6 +29,9 @@ Real-time updates have an expiration time after which they no longer override th
 
 These values are API call parameters that you can change. They aim to ensure that your source data remains your source of truth. If you want real-time updates to be included for longer, you need to add them to a data source so they get pulled during the next scheduled refresh.
 
+ > [!TIP]
+ > Any data ingested or modified using these APIs is also reflected direcly in the corresponding Dataverse tables. This allows you to leverage the rest of the Dataverse ecosystem and functionalities to achieve end-to-end business scenarios. 
+
 ## Real-time update of the unified customer profile fields
 
 Updated profiles will show in the customer card view, or any other visualization, within a few seconds.
