@@ -129,7 +129,7 @@ Combine separated fields to create a merged attribute.
 When you combine a group of fields, Customer Insights treats the group as a single unit, and chooses the winner record based on a merge policy. When merging fields without combining them into a group, Customer Insights chooses the winner record for each field based on the entity order ranking set up in the **Match conditions** step. If a field has a null value, Customer Insights continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
 
 #### Example
-Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in a less than ideal mailing address (200 Cedar Springs Road, Suite 950 Dallas, TX 75255). To treat the address fields as a whole, combine the address fields into a group. The result is a current mailing address.
+Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in a less than ideal mailing address (200 Cedar Springs Road, Suite 950, Dallas, TX 75255). To ensure data  integrity, combine the address fields into a group.
 
 **Table1 - Loyalty**
 
