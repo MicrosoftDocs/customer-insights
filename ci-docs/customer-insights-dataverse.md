@@ -15,7 +15,7 @@ searchScope:
 
 # Work with Customer Insights data in Microsoft Dataverse
 
-Customer Insights makes its output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The [output entities](#output-entities) are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps.
+Customer Insights makes its output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The output entities are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps.
 
 You can also [ingest data from on-premises data sources using Power Platform dataflows and gateways](connect-power-query.md#add-data-from-on-premises-data-sources) into your Dataverse environment.
 
@@ -131,6 +131,6 @@ If the removal of the connection fails due to dependencies, you need to remove t
 
 ## Output tables in Dataverse
 
-Some Customer Insights tables are available as in Dataverse. For more information, see [Customer Insights tables in Dataverse](entities.md#customer-insights-tables-in-dataverse).
+Some Customer Insights tables are available in Dataverse. For more information, see [Customer Insights tables in Dataverse](entities.md#customer-insights-tables-in-dataverse).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
