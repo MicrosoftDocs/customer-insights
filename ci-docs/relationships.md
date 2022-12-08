@@ -1,7 +1,7 @@
 ---
 title: "Relationships between tables and table paths"
 description: "Create and manage relationships between tables from multiple data sources."
-ms.date: 11/15/2022
+ms.date: 12/7/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -80,7 +80,7 @@ Relationship consists of a *source table* containing the foreign key and a *targ
 
 ## Set up account hierarchies
 
-Environments that are configured to use business accounts as the primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units.
+Environments that are configured to use business accounts (B-to-B) as the primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units.
 
 Organizations create account hierarchies to better manage accounts and their relationships with each other. Customer Insights supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page.
 

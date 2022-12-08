@@ -1,7 +1,7 @@
 ---
 title: "Tables in Customer Insights"
 description: "View data on the Tables page."
-ms.date: 12/07/2022
+ms.date: 12/7/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -15,7 +15,7 @@ searchScope:
 
 # Tables in Customer Insights
 
-After [configuring your data sources](data-sources.md), go to the **Tables** page to evaluate the quality of the ingested data. Tables are considered datasets. Multiple capabilities of Dynamics 365 Customer Insights are built around these tables. Reviewing them closely can help you validate the output of those capabilities.
+After [configuring your data sources](data-sources.md), go to the **Tables** page to evaluate the quality of the ingested data. Tables are considered datasets and were previously called entities. Multiple capabilities of Dynamics 365 Customer Insights are built around these tables. Reviewing them closely can help you validate the output of those capabilities.
 
 As you work in Customer Insights enriching your data or creating segments, measures, and activities, the tables that are created from those actions display on the **Tables** page.
 
@@ -27,6 +27,8 @@ Go to **Data** > **Tables** to view a list of tables. The following information 
 - **Source**: Type of data source that ingested the table.
 - **Updated**: Time the table was last updated.
 - **Status**: Details about the last update of the table.
+
+For more information about the **Relationships** tab, see [Relationships](relationships.md).
 
 ## Explore a specific table's data
 
@@ -42,8 +44,6 @@ Go to **Data** > **Tables** to view a list of tables. The following information 
    > This page shows only a sample of your table's data. To view the full data set, go to the **Data sources** page, select a table, select **Edit**, and then view this table's data with the Power Query editor as explained in [Data sources](data-sources.md).
 
    To learn more about the data ingested in the table, the **Summary** column provides some important data characteristics, such as nulls, missing values, unique values, counts, and distributions, whatever is applicable to your data. Select the chart icon to see the summary of the data.
-
-   :::image type="content" source="media/data-manager-entities-summary.png" alt-text="Data summary table.":::
 
 - The **Data** tab shows details about individual records of the table. Details listed depend on the table's data type.
 
