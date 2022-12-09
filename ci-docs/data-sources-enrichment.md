@@ -22,7 +22,7 @@ You must have Contributor or Administrator [permissions](permissions.md) to crea
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the vertical ellipsis (&vellip;) next to the data source you want to enrich and select **Enrich**.
+1. Select the data source you want to enrich and select **Enrich**.
 
    :::image type="content" source="media/data_sources_enrich.png" alt-text="Data sources page with Enrich highlighted":::
 
