@@ -126,7 +126,7 @@ The unified contact profile table, called *ContactProfile*, displays in the **Se
 
 The *ContactsCustomer* table (preview) is created and displays in the **Profiles** section. This table contains the contact data without the links to the accounts. This table is used as input into the semantic mapping and relationship steps of contact unification.
 
-Deduplication and conflation tables are created and display in the **System** section. A deduplicated table for each of the source tables is created with the name **Deduplication_DataSource_Table**. The **ContactsConflationMatchPairs** table contains information about cross-table matches.
+Deduplication and conflation tables are created and display in the **System** section. A deduplicated table for each of the source tables is created with the name **Deduplication_DataSource_Tablename**. The **ContactsConflationMatchPairs** table contains information about cross-table matches.
 
 A deduplication output table contains the following information:
 - IDs / Keys

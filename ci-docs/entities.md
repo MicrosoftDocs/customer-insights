@@ -15,9 +15,12 @@ searchScope:
 
 # Tables in Customer Insights
 
-After [configuring your data sources](data-sources.md), go to the **Tables** page to evaluate the quality of the ingested data. Tables are considered datasets and were previously called entities. Multiple capabilities of Dynamics 365 Customer Insights are built around these tables. Reviewing them closely can help you validate the output of those capabilities.
+After [configuring your data sources](data-sources.md), evaluate the quality of the ingested data on the **Tables** page. Multiple capabilities of Dynamics 365 Customer Insights are built around these tables. Reviewing them closely can help you validate the output of those capabilities.
 
 As you work in Customer Insights enriching your data or creating segments, measures, and activities, the tables that are created from those actions display on the **Tables** page.
+
+> [!TIP]
+> Tables were previously called entities.
 
 ## View a list of tables
 
