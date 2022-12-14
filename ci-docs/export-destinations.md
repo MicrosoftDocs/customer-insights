@@ -65,7 +65,7 @@ Go to **Data** > **Exports** to view the exports, their connection name, connect
 
 Select an export to view available actions.
 
-:::image type="content" source="media/exports_showmore.png" alt-text="Exports page.":::
+:::image type="content" source="media/exports_showmore.png" alt-text="Exports page." lightbox="media/exports_showmore.png":::
 
 - **View** or **Edit** the export. Users without edit permissions select **View** instead of **Edit** to see the export details.
 - **Run** the export to export the latest data.
