@@ -38,7 +38,7 @@ Unified profiles are the foundation to get insights and take action on the data.
 
 1. Run the [data unification process](data-unification.md) by identifying the [source fields](data-unification-map-tables.md), removing [duplicates](data-unification-duplicates.md), [matching conditions](data-unification-match-tables.md), and [unifying fields](data-unification-merge-tables.md).
 
-1. Get familiar with the [tables the system creates](entities.md) and create [relationships between the ingested tables](relationships.md).
+1. Get familiar with the [tables the system creates](tables.md) and create [relationships between the ingested tables](relationships.md).
 
 ## Step 4: Enhance unified profiles with predictions, activities, and measures
 
