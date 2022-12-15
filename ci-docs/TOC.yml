@@ -67,11 +67,11 @@
     - name: Data unification overview
       href: data-unification.md
     - name: Select source fields
-      href: map-entities.md
+      href: map-tables.md
     - name: Remove duplicate records
       href: remove-duplicates.md
     - name: Match conditions
-      href: match-entities.md
+      href: match-tables.md
     - name: Unify customer fields
       href: merge-entities.md
     - name: Review data unification
@@ -114,9 +114,9 @@
 - name: Tables
   items:
     - name: Understand tables
-      href: entities.md
+      href: tables.md
     - name: Review the table schemas in Common Data Model
-      href: entity-schemas.md
+      href: table-schemas.md
     - name: Build relationships and connected tables
       href: relationships.md
     - name: Define semantic mappings

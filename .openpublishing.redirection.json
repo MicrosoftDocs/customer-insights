@@ -1098,12 +1098,12 @@
     },
     {
       "source_path": "ci-docs/audience-insights/entities.md",
-      "redirect_url": "/dynamics365/customer-insights/entities",
+      "redirect_url": "/dynamics365/customer-insights/tables",
       "redirect_document_id": false
     },
     {
       "source_path": "ci-docs/audience-insights/entity-schemas.md",
-      "redirect_url": "/dynamics365/customer-insights/entity-schemas",
+      "redirect_url": "/dynamics365/customer-insights/table-schemas",
       "redirect_document_id": false
     },
     {

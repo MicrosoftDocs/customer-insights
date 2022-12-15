@@ -83,7 +83,7 @@ The lower part contains a list of the segment members.
 > [!NOTE]
 > Fields that appear in this list are based on the attributes of your segment's tables.
 >
-> The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Tables**](entities.md) page or [export the segment](export-destinations.md).
+> The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Tables**](tables.md) page or [export the segment](export-destinations.md).
 
 ## Refresh segments
 

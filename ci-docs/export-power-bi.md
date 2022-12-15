@@ -32,9 +32,7 @@ Create visualizations for your data with the Microsoft Power BI Desktop. Generat
    > [!NOTE]
    > The account you indicate in this step is used to fetch data from Customer Insights and doesn't need to be the same you are signed in to Power BI. To reset the account that is used for data fetching, open Power BI and go to **File** > **Options** > **Settings** > **Data source settings**. In the list of data sources, select **Dynamics 365 Customer Insights Login** and select **Clear permissions**.  
 
-1. In the **Navigator** dialog box, view the list of all environments you have access to. Expand an environment and open any of the folders (tables, measures, segments, enrichments). For example, open the **Tables** folder, to see all tables you can import.
-
-   :::image type="content" source="media/power-bi-navigator.png" alt-text="Power BI Connector Navigator.":::
+1. In the **Navigator** dialog box, view the list of all environments you have access to. Expand an environment and open any of the folders. For example, open the **Segments** folder, to see all tables you can import.
 
 1. Select the check boxes next to the tables to include and **Load**. You can select multiple tables from multiple environments.
 

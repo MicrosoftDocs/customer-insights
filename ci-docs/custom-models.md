@@ -110,11 +110,11 @@ Select a workflow to view available actions.
 
 1. Confirm your deletion.
 
-Your workflow will be deleted. The [table](entities.md) that was created when you created the workflow persists, and can be viewed from the **Data** > **Tables** page.
+Your workflow will be deleted. The [table](tables.md) that was created when you created the workflow persists, and can be viewed from the **Data** > **Tables** page.
 
 ## View the results
 
-Results from a workflow are stored in the table name defined for **Model Output Parameters**. Access this data from the [**Data** > **Tables** page](entities.md) or with [API access](apis.md).
+Results from a workflow are stored in the table name defined for **Model Output Parameters**. Access this data from the [**Data** > **Tables** page](tables.md) or with [API access](apis.md).
 
 ### API Access
 

@@ -105,7 +105,7 @@ For optimal performance, Customer Insights recommends the size of a partition be
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Tables**](entities.md) page.
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Tables**](tables.md) page.
 
 ### Create a new schema file
 
@@ -155,7 +155,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Data** > **Tables**](entities.md) page.
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Data** > **Tables**](tables.md) page.
 
 ## Edit an Azure Data Lake Storage data source
 

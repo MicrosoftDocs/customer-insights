@@ -131,6 +131,6 @@ If the removal of the connection fails due to dependencies, you need to remove t
 
 ## Output tables in Dataverse
 
-Some Customer Insights tables are available in Dataverse. For more information, see [Customer Insights tables in Dataverse](entities.md#customer-insights-tables-in-dataverse).
+Some Customer Insights tables are available in Dataverse. For more information, see [Customer Insights tables in Dataverse](tables.md#customer-insights-tables-in-dataverse).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

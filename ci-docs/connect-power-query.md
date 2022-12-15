@@ -57,7 +57,7 @@ Adding data sources based on Power Query connectors generally follows the steps 
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Data** > **Tables**](entities.md) page.
+Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Data** > **Tables**](tables.md) page.
 
 > [!CAUTION]
 >
