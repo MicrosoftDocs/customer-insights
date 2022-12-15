@@ -67,13 +67,13 @@
     - name: Data unification overview
       href: data-unification.md
     - name: Select source fields
-      href: map-tables.md
+      href: data-unification-map-tables.md
     - name: Remove duplicate records
-      href: remove-duplicates.md
+      href: data-unification-duplicates.md
     - name: Match conditions
-      href: match-tables.md
+      href: data-unification-match-tables.md
     - name: Unify customer fields
-      href: merge-entities.md
+      href: data-unification-merge-tables.md
     - name: Review data unification
       href: review-unification.md
     - name: Create a unified contact profile 

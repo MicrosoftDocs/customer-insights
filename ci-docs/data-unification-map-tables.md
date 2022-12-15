@@ -78,6 +78,6 @@ For each table, perform the following steps.
 1. Select **Next**.
 
 > [!div class="nextstepaction"]
-> [Next step: Remove duplicates](remove-duplicates.md)
+> [Next step: Remove duplicates](data-unification-duplicates.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -57,7 +57,7 @@ To review or change any unification settings once a unified profile has been cre
 
 1. To add other attributes or tables, select **Select tables and fields**.
 
-1. Optionally, you can change the primary key for a table, the attribute types, and toggle **Intelligent mapping** on or off. For more information, see [Select source fields](map-entities.md).
+1. Optionally, you can change the primary key for a table, the attribute types, and toggle **Intelligent mapping** on or off. For more information, see [Select source fields](data-unification-map-tables.md).
 
 1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update unification settings](#update-unification-settings).
 
@@ -146,7 +146,7 @@ To remove a table that has been unified, the table must be removed from any depe
 1. To use an enriched table, select **Use enriched tables**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
 1. To manage deduplication rules, choose any of the following options:
-   - **Create a new rule**: Select **Add rule** under the appropriate table. For more information, see [Define deduplication rules](remove-duplicates.md#define-deduplication-rules).
+   - **Create a new rule**: Select **Add rule** under the appropriate table. For more information, see [Define deduplication rules](data-unification-duplicates.md#define-deduplication-rules).
    - **Change rule conditions**: Select the rule and then **Edit**. Change fields, add or remove conditions, or add or remove exceptions.
    - **Preview**: Select the rule and then **Preview** to view the last run results for this rule.
    - **Deactivate a rule**: Select the rule and then **Deactivate** to retain a deduplication rule while excluding it from the matching process.
@@ -185,8 +185,8 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 1. If you added an enriched table, select **Use enriched tables**. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
 1. To manage rules, choose any of the following options:
-   - **Create a new rule**: Select **Add rule** under the appropriate table. For more information, see [Define rules for match pairs](match-entities.md#define-rules-for-match-pairs).
-   - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want. For more information, see [Specify the match order](match-entities.md#specify-the-match-order).
+   - **Create a new rule**: Select **Add rule** under the appropriate table. For more information, see [Define rules for match pairs](data-unification-match-tables.md#define-rules-for-match-pairs).
+   - **Change the order of your rules** if you defined multiple rules: Drag and drop the rules into the order you want. For more information, see [Specify the match order](data-unification-match-tables.md#specify-the-match-order).
    - **Change rule conditions**: Select the rule and then **Edit**. Change fields, add or remove conditions, or add or remove exceptions.
    - **Deactivate a rule**: Select the rule and then **Deactivate** to retain a match rule while excluding it from the matching process.
    - **Duplicate a rule**: Select the rule and then **Duplicate** to create a similar rule with modifications.
@@ -200,7 +200,7 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
     :::image type="content" source="media/m3_merge_edit.png" alt-text="Screenshot of Unified customer fields":::
 
-1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. For more information, see [Unify customer fields](merge-entities.md).
+1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. For more information, see [Unify customer fields](data-unification-merge-tables.md).
 
 1. For customers or accounts, select **Next** to review and [update the unified profile and dependencies](#run-updates-to-the-unified-profile). Or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
 

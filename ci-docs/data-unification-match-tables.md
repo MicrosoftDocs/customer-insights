@@ -97,7 +97,7 @@ The warning next to a table name means that no match rule is defined for a match
 1. Click **Next**.
 
 > [!div class="nextstepaction"]
-> [Next step: Unify fields](merge-entities.md)
+> [Next step: Unify fields](data-unification-merge-tables.md)
 
 ### Add rules to a match pair
 
@@ -169,6 +169,6 @@ Specify conditions that override the default match logic. There are four options
    Each template file ingested is its own data source. If records are discovered that need special matching treatment, update the appropriate data source. The update will be used during the next unification process. For example, you identify twins with nearly the same name living at the same address that had been merged as one person. Update the data source to identify the twins as separate, unique records.
 
 > [!div class="nextstepaction"]
-> [Next step: Unify fields](merge-entities.md)
+> [Next step: Unify fields](data-unification-merge-tables.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

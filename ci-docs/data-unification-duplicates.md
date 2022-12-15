@@ -72,7 +72,7 @@ If you enriched tables on the data source level to help improve your unification
 
    1. Optionally, select **Add** > **Add condition** to add more conditions to the rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
 
-   1. Optionally, **Add** > **Add exception** to [add exceptions to the rule](match-entities.md#add-exceptions-to-a-rule). Exceptions are used to address rare cases of false positives and false negatives.
+   1. Optionally, **Add** > **Add exception** to [add exceptions to the rule](data-unification-match-tables.md#add-exceptions-to-a-rule). Exceptions are used to address rare cases of false positives and false negatives.
 
    1. Select **Done** to create the rule.
 
@@ -97,9 +97,9 @@ If you enriched tables on the data source level to help improve your unification
 1. After defining the deduplication rules and merge preferences, select **Next**.
   
 > [!div class="nextstepaction"]
-> [Next step for a single table: Unify fields](merge-entities.md)
+> [Next step for a single table: Unify fields](data-unification-merge-tables.md)
 
 > [!div class="nextstepaction"]
-> [Next step for multiple tables: Matching conditions](match-entities.md)
+> [Next step for multiple tables: Matching conditions](data-unification-match-tables.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

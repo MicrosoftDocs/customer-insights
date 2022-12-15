@@ -19,7 +19,7 @@ searchScope:
 
 # Create a unified contact profile (preview)
 
-After [unifying business accounts](map-entities.md), you can optionally unify contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
+After [unifying business accounts](data-unification-map-tables.md), you can optionally unify contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
@@ -40,25 +40,25 @@ Account and contact records must have a unique key (called a foreign key) that c
 
 1. Under **Unify contacts (preview)**, select **Get started**.
 
-1. [Select the tables and fields](map-entities.md) for your contact data sources, including the primary keys and attribute types.
+1. [Select the tables and fields](data-unification-map-tables.md) for your contact data sources, including the primary keys and attribute types.
 
 1. Select **Next**.
 
 ## Remove duplicate records
 
-1. Optionally, [define deduplication rules](remove-duplicates.md) for your selected tables.
+1. Optionally, [define deduplication rules](data-unification-duplicates.md) for your selected tables.
 
 1. Select **Next**.
 
 ## Match conditions
 
-1. [Define the match order and rules](match-entities.md) for cross-table matching.
+1. [Define the match order and rules](data-unification-match-tables.md) for cross-table matching.
 
 1. Select **Next**.
 
 ## Unify contact fields
 
-1. [Combine and exclude contact fields](merge-entities.md).
+1. [Combine and exclude contact fields](data-unification-merge-tables.md).
 
 1. Select **Next**.
 
