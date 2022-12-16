@@ -1,7 +1,7 @@
 ---
 title: "Exports (preview) overview"
 description: "Manage exports to share data."
-ms.date: 08/12/2022
+ms.date: 12/16/2022
 ms.reviewer: mhart
 
 ms.subservice: audience-insights
@@ -18,6 +18,8 @@ searchScope:
 # Exports (preview) overview
 
  Exports allow you to share specific data with various applications. They can include customer profiles, entities, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md). The **Exports** page shows you all configured exports.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dsVH]
 
 ## Export types
 
