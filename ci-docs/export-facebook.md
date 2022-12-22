@@ -78,6 +78,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 1. Select **Add attribute** to map more attributes to send to Facebook Ads Manager. Attributes from Facebook Ads Manager are mapping to the following user-friendly names:
     **FN** = **First Name**, **LN** = **Last Name**, **FI** = **First Initial**, **PHONE** = **Phone**, **GEN** = **Gender**, **DOB** = **Date of birth**, **ST** = **State**, **CT** = **City**, **ZIP** = **Postal code / ZIP Code**, **COUNTRY** = **Country / Region**
+    > All PII data is hashed before it is sent to Facebook. 
 
 1. Select the segments you want to export.
 
