@@ -71,6 +71,9 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 
 1. In the **Data matching** section, select one or more data fields to export, and select the field that represents the corresponding data fields in Customer Insights.
 
+   > [!NOTE]
+   > All personal data is sent as a hashed value to Google.
+
 1. Select the segments you want to export.
 
 1. Select **Save**.

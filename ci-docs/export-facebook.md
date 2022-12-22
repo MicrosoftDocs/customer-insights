@@ -27,7 +27,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 - Up to 10 million customer profiles per export to Facebook Ads Manager, which can take up to 90 minutes.
 - Segments only.
-- Facebook Ads integration does not support users with more than 25 ad accounts.
+- Facebook Ads integration doesn't support users with more than 25 ad accounts.
 - Facebook *customer list* type in [custom audiences](https://www.facebook.com/business/help/744354708981227?id=2469097953376494) only.
   > [!NOTE]
   > In some cases, you might see custom audiences of different types in the dropdown list. If you select a different type other than *customer list*, the export fails.
@@ -78,6 +78,9 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 1. Select **Add attribute** to map more attributes to send to Facebook Ads Manager. Attributes from Facebook Ads Manager are mapping to the following user-friendly names:
     **FN** = **First Name**, **LN** = **Last Name**, **FI** = **First Initial**, **PHONE** = **Phone**, **GEN** = **Gender**, **DOB** = **Date of birth**, **ST** = **State**, **CT** = **City**, **ZIP** = **Postal code / ZIP Code**, **COUNTRY** = **Country / Region**
+
+   > [!NOTE]
+   > All personal data is sent as a hashed value to Facebook.
 
 1. Select the segments you want to export.
 
