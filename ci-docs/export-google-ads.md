@@ -70,7 +70,9 @@ Export segments of unified customer profiles to a Google Ads audience list and u
    - To create a new audience, leave the Google Audience ID field blank. Customer Insights will automatically create a new audience in your Google Ads account and use the name of the exported segment.
 
 1. In the **Data matching** section, select one or more data fields to export, and select the field that represents the corresponding data fields in Customer Insights.
- > All PII data is hashed before it is sent to Google. 
+
+   > [!NOTE]
+   > All personal data is sent as a hashed value to Google.
 
 1. Select the segments you want to export.
 

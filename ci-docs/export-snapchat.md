@@ -65,7 +65,9 @@ Export segments of unified customer profiles to Snapchat and use them for advert
 1. Enter the **Snapchat Segment/Audience ID**.
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
- > All PII data is hashed before it is sent to Snapchat. 
+
+   > [!NOTE]
+   > All personal data is sent as a hashed value to Snapchat.
 
 1. Select the segments you want to export.
 
