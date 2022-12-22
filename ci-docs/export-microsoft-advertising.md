@@ -69,7 +69,7 @@ Export Customer Insights segments to Microsoft Advertising to create Customer Ma
 1. Enter your **Microsoft Advertising Customer ID and Account ID**.
 
 1. In the **Data matching** section, in the **Email** field, select the field with a customer's email address.
- > All PII data is hashed before it is sent to Facebook. 
+ > All PII data is hashed before it is sent to Microsoft Advertising. 
 
 1. Select **Save**.
 
