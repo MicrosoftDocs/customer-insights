@@ -1,7 +1,7 @@
 ---
 title: "Create measures from templates"
 description: "Define measures using templates for common use cases."
-ms.date: 03/25/2022
+ms.date: 11/28/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -66,8 +66,9 @@ Available measure templates:
 
 1. Select **Run** to calculate the results of the measure. Select **Save draft** if you want to keep the current configuration and run the measure later. The **Measures** page displays.
 
-## Next step
+## Next steps
 
-Use existing measures to create [a customer segment](segments.md).
+- [Schedule a measure](measures-schedule.md).
+- Use existing measures to create [a customer segment](segments.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
