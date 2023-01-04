@@ -1,7 +1,7 @@
 ---
 title: "Schedule system refresh"
 description: "Schedule the time when the system should be refreshed"
-ms.date: 09/27/2022
+ms.date: 11/28/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -35,5 +35,8 @@ Schedule automatic refreshes of all your [ingested data sources](data-sources.md
 1. Set your **Time zone**, then use the **Time** dropdown to set your refresh timing. If you'd like to schedule multiple refreshes in a single day, select **Add another time**. You can add up to four refreshes.
 
 1. Select **Save** to apply your changes.
+
+> [!CAUTION]
+> If you change an existing system refresh date, it might impact custom schedules for segments and measures causing them to not run as scheduled. Check the schedules for both [segments](segments-schedule.md) and [measures](measures-schedule.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
