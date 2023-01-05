@@ -135,11 +135,11 @@
   items:
     - name: Segments overview
       href: segments.md
-    - name: Create complex segments with segment builder
+    - name: Create with segment builder
       items:
           - name: Aspects of segment builder
             href: segment-builder-aspects.md
-          - name: Create with segment builder
+          - name: Create complex segments with segment builder
             href: segment-builder.md
     - name: Create with quick segments
       href: segment-quick.md
@@ -217,6 +217,8 @@
       items:
         - name: Exports overview
           href: export-destinations.md
+        - name: Set up and manage exports
+          href: export-manage.md
         - name: Active Campaign
           href: export-active-campaign.md
         - name: Adobe Campaign Standard
@@ -356,5 +358,9 @@
 - name: DSR rights and requests
   href: dsr-rights-requests.md
 
-- name: Get support
-  href: /power-platform/admin/get-help-support
+- name: More resources
+  items: 
+    - name: Get support
+      href: /power-platform/admin/get-help-support
+    - name: Segment not eligible for export
+      href: export-troubleshoot.md

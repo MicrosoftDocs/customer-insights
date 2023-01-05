@@ -59,6 +59,6 @@ A categorical attribute like *customer satisfaction* as the primary attribute re
 
 ## Next steps
 
-- [Generate segments based on measures](-suggested-segments-generate.md)
+- [Generate segments based on measures](suggested-segments-generate.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
