@@ -1,14 +1,16 @@
 ---
 title: "Suggested segments based on measures (preview)"
 description: "Let machine learning help you find new and interesting segments based on customer attributes."
-ms.date: 10/15/2021
-ms.reviewer: mhart
-
-ms.subservice: audience-insights
-ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 manager: shellyha
+ms.reviewer: v-wendysmith
+ms.service: customer-insights
+ms.subservice: audience-insights
+
+ms.date: 01/05/2023
+ms.topic: conceptual
+ms.custom: bap-template
 searchScope: 
   - ci-segment-suggestions
   - customerInsights
@@ -54,38 +56,9 @@ A categorical attribute like *customer satisfaction* as the primary attribute re
 > [!NOTE]
 > Currently, we only support primary categorical attributes that have up to 10 categories. If you want to see segment suggestions based on a primary attribute with more than 10 categories, we recommend grouping some of the categories to reduce the number of categories to 10 or fewer. This limitation only applies to primary attributes. For influencing categorical attributes, we currently support a maximum of 100 categories.
 
-## Generate suggested segments
 
-1. Go to **Segments** and select the **Suggestions (preview)** tab.
+## Next steps
 
-1. Select **Find new suggestions** and choose **Improve a measure/metric**. Select **Start**.
-
-   :::image type="content" source="media/suggested-segments-measure.png" alt-text="Choosing improve measure on the suggested segments.":::
-
-1. Choose a customer attribute or measure as the primary attribute and select **Next**.
-
-1. Select the influencing attributes and select **Run**.
-
-   > [!TIP]
-   > Selecting multiple influencing attributes improves the chances of evaluating how they influence the primary attribute. Don't include attributes that have no influence on the primary attribute. For example, if all your customers are from a specific country, don't include the *country* attribute because it won't have any impact on the output.
-
-Depending on the number of customer profiles and selected attributes, it can take a few minutes to process the selected attributes.
-
-## Manage suggested segments
-
-Go to **Segments** and select the **Suggestions (preview)** tab. In the **Attribute-based segment suggestions** section, select a suggested segment to view available actions.
-
-- **View** the suggested segment details and the attribute values or rules that the AI model learned.
-- **Save as segment** the suggestion as a segment. It displays on the **All segments** tab and can be [refreshed, edited, or deleted](segments.md).
-- **Edit attributes** and modify the configured attributes which will replace the current suggestions.
-- **Refresh suggestions** to refresh the suggestions while keeping configured attributes.
-
-## Limitations
-
-1. Estimated segment size mismatch: If you choose a primary attribute that contains empty values, it can affect the estimated segment size in the segment suggestions. When saving such segment, the actual segment size can be different to the original estimation.
-
-2. Boolean type primary attributes don't work: Currently, we only support string and numeric types of data as the primary attribute.
-
-3. Suggested segments aren't distinct enough: Keep in mind that the selected attributes and the distribution of values of those attributes influences the results. You can change your influencing attributes or even your primary attribute to get different results.
+- [Generate segments based on measures](-suggested-segments-generate.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

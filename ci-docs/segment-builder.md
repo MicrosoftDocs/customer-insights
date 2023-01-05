@@ -2,7 +2,7 @@
 title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
 ms.date: 11/28/2022
-
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
@@ -23,31 +23,9 @@ Define complex filters around the unified customer or unified contact and its re
 > [!TIP]
 > Segments based on **individual customers** automatically include available contact information for segment members. In **business accounts**, if you [unified](data-unification.md) both accounts and contacts, choose whether the segment is based on accounts or business contacts. To export to a destination expecting contact information, use a segment of contacts. To export to a destination expecting account information, use a segment of accounts.
 
-## Segment builder
-
-The following image illustrates the various aspects of the segment builder. It shows a segment that results in a group of customers. The customers ordered goods in a specific time frame and gathered reward points or spent a certain amount of money.
-
-:::image type="content" source="media/segment-builder-overview.png" alt-text="Elements of the segment builder." lightbox="media/segment-builder-overview.png":::
-
-1. Organize your segment with rules and subrules. Each rule or subrule consists of conditions. Combine the conditions with logical operators.
-
-1. Choose the [relationship path](relationships.md) between entities that applies to a rule. The relationship path determines which attributes can be used in a condition.
-
-1. Manage rules and subrules. Change the position of a rule or delete it.
-
-1. Add conditions and build the right level of nesting using subrules.
-
-1. Apply set operations to connected rules.
-
-1. Use the attribute pane to add available entity attributes or create conditions based on attributes. The pane shows the list of entities and attributes, based on the selected relationship path, that are available for the selected rule.
-
-1. Add conditions based on attributes to existing rules and subrules or add it to a new rule.
-
-1. Undo and redo changes while building the segment.
-
-The example above illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
-
 ## Create a new segment with segment builder
+
+For an illustration of the key aspects of segment builder, see [Aspects of segment builder](segment-builder-aspects.md).
 
 1. Go to **Segments**.
 
