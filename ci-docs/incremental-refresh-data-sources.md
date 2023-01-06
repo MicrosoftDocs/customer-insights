@@ -81,7 +81,7 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 
 ## Run a one-time full refresh for Azure Data Lake data sources
 
-After configuring an incremental refresh for Azure Data Lake data sources, there are times when data needs to be processed with a full refresh. The  full data folder set up for the incremental refresh must contain the location of the full data.
+After [configuring an incremental refresh for Azure Data Lake data sources](#configure-incremental-refresh-for-azure-data-lake-data-sources), there are times when data needs to be processed with a full refresh. The full data folder set up for the incremental refresh must contain the location of the full data.
 
 1. When editing the data source, navigate to the **Select Entities** pane and edit the entity you want to refresh.
 
