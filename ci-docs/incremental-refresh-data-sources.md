@@ -87,7 +87,7 @@ After [configuring an incremental refresh for Azure Data Lake data sources](#con
 
 1. On the **Edit entity** pane, scroll to the **Run one-time full refresh** checkbox and select it.
 
-   :::image type="content" source="media/ADLS_one_time_refresh.png" alt-text="Configure entities in a data source for incremental refresh.":::
+   :::image type="content" source="media/ADLS_one_time_refresh.png" alt-text="Configure entity in a data source for one-time refresh.":::
 
 1. For **Process incremental files from**, specify the date and time to retain the incremental files. This will process full data plus the incremental data starting from the specified date and time. For example, if you want to perform a partial data refresh/backfill until the end of November while retaining the incremental data from the beginning of December to today (Dec 30th), enter December 1st. To replace all the data and ignore the data in the incremental folder, specify a future date.
 
