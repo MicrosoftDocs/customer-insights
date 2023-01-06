@@ -81,7 +81,7 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 
 ## Run a one-time full refresh for Azure Data Lake data sources
 
-After configuring an incremental refresh for Azure Data Lake data sources, there are times when data needs to be processed with a full refresh. The specified full data folder contains the full data to process. If you want to use the full data for backfilling, you might want to retain the latest incremental files.
+After configuring an incremental refresh for Azure Data Lake data sources, there are times when data needs to be processed with a full refresh. The  full data folder set up for the incremental refresh must contain the location of the full data.
 
 1. When editing the data source, navigate to the **Select Entities** pane and edit the entity you want to refresh.
 
@@ -89,7 +89,7 @@ After configuring an incremental refresh for Azure Data Lake data sources, there
 
    :::image type="content" source="media/ADLS_one_time_refresh.png" alt-text="Configure entities in a data source for incremental refresh.":::
 
-1. For **Process incremental files from**, specify the date and time to retain the incremental files. To replace all the incremental files, specify a future date.
+1. For **Process incremental files from**, specify the date and time to retain the incremental files. This will process full data plus the incremental data starting from the specified date and time. For example, if you want to perform a partial data refresh/backfill until the end of November while retaining the incremental data from the beginning of December to today (Dec 30th), enter December 1st. To replace all the data and ignore the data in the incremental folder, specify a future date.
 
 1. Select **Close** to save and close the pane.
 
