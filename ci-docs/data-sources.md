@@ -99,7 +99,7 @@ Corrupt records are shown in system-created entities.
    :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason." lightbox="media/corruption-reason.png":::
 
    > [!NOTE]
-   > **Data** > **Entities** only show a portion of the corrupt records. To view all the corrupt records, export the files to a container in the storage account using the [Customer Insights export process](export-destinations.md). If you used your own storage account, you can also look at the Customer Insights folder in your storage account.
+   > **Data** > **Entities** only show a portion of the corrupt records. To view all the corrupt records, export the files to a container in the storage account using the [Customer Insights export process](export-manage.md). If you used your own storage account, you can also look at the Customer Insights folder in your storage account.
 
 1. Fix the corrupted data. For example, for Azure Data Lake data sources, [fix the data in the Data Lake Storage or update the data types in the manifest/model.json file](connect-common-data-model.md#common-reasons-for-ingestion-errors-or-corrupt-data). For Power Query data sources, fix the data in the source file and [correct the data type in the transformation step](connect-power-query.md#data-type-does-not-match-data) on the **Power Query - Edit queries** page.
 

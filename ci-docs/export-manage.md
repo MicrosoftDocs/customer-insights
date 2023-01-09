@@ -19,7 +19,7 @@ searchScope:
 
 # Set up and manage exports (preview)
 
-All exports follow the same general set up and management process. You can also schedule exports
+All exports follow the same general set up and management process. You can also schedule exports.
 
 ## Set up a new export
 
@@ -64,7 +64,7 @@ Export schedules depend on the state of your environment. If there are updates i
 
 ### Schedule exports
 
-Define custom refresh schedules for individual exports or several exports at once. The currently defined schedule is listed in the **Schedule** column of the export list. The permission to change the schedule is the same as [editing and defining exports](export-destinations.md#set-up-a-new-export).
+Define custom refresh schedules for individual exports or several exports at once. The currently defined schedule is listed in the **Schedule** column of the export list. The permission to change the schedule is the same as [editing and defining exports](#set-up-a-new-export).
 
 1. Go to **Data** > **Exports**.
 

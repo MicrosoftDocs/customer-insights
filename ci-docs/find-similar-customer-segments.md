@@ -58,7 +58,7 @@ Select **View** to see result distribution across [similarity scores](#about-sim
 
 ## Manage a similar segment
 
-[Work with and manage a similar segment](segments-manage.md) as you do with other segments. For example, export the segment or build a measure.
+[Work with and manage a similar segment](segments.md) as you do with other segments. For example, export the segment or build a measure.
 
 Edit, refresh, rename, download, and delete a similar segment. Editing a similar segment reprocesses your data. The previously created segment gets updated with refreshed data.
 

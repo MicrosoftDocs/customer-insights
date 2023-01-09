@@ -46,6 +46,6 @@ Quick segments let you build simple segments with a single operator quickly for 
 ## Next steps
 
 - [Schedule a segment](segments-schedule.md).
-- [Export a segment](export-destinations.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
+- [Export a segment](export-manage.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

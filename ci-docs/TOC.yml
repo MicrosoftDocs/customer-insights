@@ -133,7 +133,7 @@
 
 - name: Segments
   items:
-    - name: Segments overview
+    - name: Create and manage segments
       href: segments.md
     - name: Create with segment builder
       items:
@@ -157,8 +157,6 @@
       href: segment-insights.md
     - name: Find similar customers
       href: find-similar-customer-segments.md
-    - name: Manage segments
-      href: segments-manage.md
     - name: Schedule segments
       href: segments-schedule.md
     - name: Track usage of a segment
@@ -166,14 +164,12 @@
 
 - name: Measures
   items: 
-    - name: Measures overview
+    - name: Create and manage measures
       href: measures.md
     - name: Create with measure builder
       href: measure-builder.md
     - name: Create with templates
       href: measure-templates.md
-    - name: Manage measures
-      href: measures-manage.md
     - name: Schedule measures
       href: measures-schedule.md
           
