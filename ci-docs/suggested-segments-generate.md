@@ -16,6 +16,9 @@ ms.custom: bap-template
 
 Find suggested segments based on measures or customer attributes. For more information, see [Suggested segments based on measures](suggested-segments.md).
 
+
+## Generate suggested segments based on measures
+
 1. Go to **Segments** and select the **Suggestions (preview)** tab.
 
 1. Select **Find new suggestions** and choose **Improve a measure/metric**. Select **Start**.
