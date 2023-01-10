@@ -13,7 +13,21 @@ ms.custom: bap-template
 
 # Business units and data separatation
 
-## Section heading
+## Scenarios
+
+## Roles
+
+### The administrator role
+
+### The contributor role
+
+### The BU contributor role
+
+## Business unit ownership of customer profiles
+
+## Business unit ownership of segments and measures
+
+## 
 
 ## Next steps
 
