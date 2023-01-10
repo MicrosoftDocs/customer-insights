@@ -26,7 +26,6 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Export up 1 million customer profiles per export to Google Ads, which can take up to 30 minutes to complete because of limitations on the provider side.
 - Segments only.
 - Match in Google Ads can take up to 48 hours.
