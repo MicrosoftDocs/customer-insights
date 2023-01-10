@@ -1,7 +1,7 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 11/15/2022
+ms.date: 11/28/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -18,7 +18,7 @@ searchScope:
 
 # Segments overview
 
-Segments let you group your customers based on demographic, transactional, or behavioral attributes. You can use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
+Segments let you group your customers based on demographic, transactional, or behavioral attributes. Use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
 
 Customer or contact profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
@@ -45,27 +45,28 @@ Segment of accounts or segment of contacts (preview) with segment builder: [Buil
 
 ## Manage existing segments
 
-Go to the **Insights** > **Segments** page to view the segments you created, their status and state, and the last time the data was refreshed. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
+Go to the **Insights** > **Segments** page to view the segments you created, their status and state, the last time the data was refreshed, and their refresh schedule. You can sort the list of segments by any column or use the search box to find the segment you want to manage. In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
 
-> [!TIP]
-> In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
-
-Select a segment to view available actions.
+Select next to a segment to view available actions.
 
 :::image type="content" source="media/segments-selected-segment.png" alt-text="Selected segment with options dropdown list and available options." lightbox="media/segments-selected-segment.png":::
 
+> [!TIP]
+> Supported bulk operations include: refresh, download, delete, change state (activate/deactivate), change type (static/dynamic), and tags.
+
 - [**View**](#view-segment-details) the segment details, including member count trend and a preview of segment members.
-- **Download** the list of members as a .CSV file.
+- **Download** the list of members as a .CSV file for one or more segments.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
-- [**Refresh**](#refresh-segments) the segment to include the latest data.
-- **Activate** or **Deactivate** the segment. Inactive segments won't get refreshed during a [scheduled refresh](schedule-refresh.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic.
-- **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed during system refreshes.
+- **Refresh** one or more segments manually to include the latest data. The **Last refreshed** column shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
+- **Activate** or **Deactivate** one or more segments. For multiple segments, select **Change state**. Inactive segments won't get refreshed during a [scheduled refresh](segments-schedule.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic and their [schedule](segments-schedule.md).
+- **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed according to their [schedule](segments-schedule.md).
 - [**Find similar customers**](find-similar-customer-segments.md) from the segment.
 - **Rename** the segment.
-- **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for the segment.
+- **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for one or more segments.
 - [**Manage exports**](#export-segments) to see export-related segments and manage them. [Learn more about exports.](export-destinations.md)
-- **Delete** the segment.
+- **Delete** one or more segments.
+- [**Schedule**](segments-schedule.md) to customize schedules for segments.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
@@ -85,17 +86,6 @@ The lower part contains a list of the segment members.
 >
 > The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Tables**](tables.md) page or [export the segment](export-destinations.md).
 
-## Refresh segments
-
-Segments can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh one or more segments, select them and choose **Refresh**.
-
-To [schedule an automatic refresh](schedule-refresh.md), go to **Settings** > **System** > **Schedule**. The following rules apply:
-
-- All segments with the type **Dynamic** or **Expansion** will be automatically refreshed at the set cadence. Once the refresh is complete, the **Status** indicates if there were any issues in refreshing the segment. The **Last refreshed** shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
-- Segments with the type **Static** *won't* be refreshed automatically. The **Last refreshed** shows a timestamp of the last time the static segment was run or refreshed manually.
-
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-
 ## Export segments
 
 Export segments to other apps to further use the data. Export a segment from the segments page or the [exports page](export-destinations.md).
@@ -110,24 +100,17 @@ Export segments to other apps to further use the data. Export a segment from the
 
 1. Select **Back** to return to the main page for segments.
 
-## Track usage of a segment
+## Manage the number of active segments
 
-If you use segments in apps which are based on the same Microsoft Dataverse organization that is connected with Customer Insights, you can track the usage of a segment. For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
+When you approach or exceed the number of active segments based on the [service limits](service-limits.md), you might experience the following:
 
-When editing a segment that is being used within the Customer Insights environment, or in a customer journey in Marketing, a banner in the [segment builder](segment-builder.md) informs you about the dependencies. Inspect the dependency details directly from the banner or by selecting **Usage** in the segment builder.
+- Typical system refresh time is slower
+- Running or refreshing individual segments is slower
+- Refresh failures indicating out of memory
 
-The **Segment usage** pane shows the details about the usage of this segment in Dataverse-based apps. For segments used in customer journeys, you’ll find a link to inspect the journey in Marketing where this segment is used. If you have permissions to access the Marketing app, view more details there.
+The complexity of your segments can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active segments. These messages display on the **Segments** list page. If you encounter these messages or symptoms, see the following recommendations.
 
-:::image type="content" source="media/segment-usage-pane.png" alt-text="Side pane with details of the segment usage in the segment builder.":::
-
-The system informs you about the usage of a tracked segment when you try to delete it. If the segment you're about to delete is used in a customer journey in Marketing, that journey will stop for all users in the segment. If the journey is part of a marketing campaign, the deletion will affect that campaign itself. However, you can still delete the segment despite the warnings.
-
-:::image type="content" source="media/segment-usage-delete.png" alt-text="Dialog box to confirm segment deletion when a segment is used in a Dataverse application.":::
-
-### Supported apps
-
-Usage is currently tracked in the following Dataverse-based apps:
-
-- [Customer journeys in Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile)
+1. Delete old or no longer relevant segments even if they are static or inactive.
+1. [Schedule individual segments](segments-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

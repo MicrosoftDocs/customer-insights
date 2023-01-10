@@ -1,14 +1,16 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 11/15/2022
+ms.date: 01/06/2023
 ms.reviewer: v-wendysmith
 
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-data-sources
   - ci-create-data-source
@@ -17,9 +19,9 @@ searchScope:
 
 # Connect to a Power Query data source
 
-Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights.
+Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights. Adding data sources based on Power Query connectors generally follows the steps outlined in this section. However, depending on the connector you use, different information is required. To learn more, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
 
-Adding data sources based on Power Query connectors generally follows the steps outlined in this section. However, depending on the connector you use, different information is required. To learn more, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
+To securely connect data in a private network, Power Query supports the use of [virtual network data gateways (preview)](/data-integration/vnet/data-gateway-power-platform-dataflows).
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 

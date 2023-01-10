@@ -1,7 +1,7 @@
 ---
 title: "Create measures with measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 11/15/2022
+ms.date: 11/28/2022
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -165,8 +165,9 @@ Create measures on the level of individual accounts (customer measure) or on the
 
 ---
 
-## Next step
+## Next steps
 
-Use existing measures to create [a customer segment](segments.md).
+- [Schedule a measure](measures-schedule.md).
+- Use existing measures to create [a customer segment](segments.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

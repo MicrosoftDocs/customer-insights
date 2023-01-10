@@ -1,14 +1,15 @@
 ---
 title: "Incremental refresh for Power Query and Azure Data Lake data sources"
 description: "Refresh new and updated data for large data sources based on Power Query or Azure data lake data sources."
-ms.date: 11/21/2022
+ms.date: 01/06/2023
 ms.reviewer: v-wendysmith
-
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-system-schedule
   - customerInsights
@@ -77,5 +78,21 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 1. Select **Close** to save and close the pane.
 
 1. Continue with adding or editing the data source.
+
+## Run a one-time full refresh for Azure Data Lake data sources
+
+After [configuring an incremental refresh for Azure Data Lake data sources](#configure-incremental-refresh-for-azure-data-lake-data-sources), there are times when data needs to be processed with a full refresh. The full data folder set up for the incremental refresh must contain the location of the full data.
+
+1. When editing the data source, navigate to the **Select Entities** pane and edit the entity you want to refresh.
+
+1. On the **Edit entity** pane, scroll to the **Run one-time full refresh** checkbox and select it.
+
+   :::image type="content" source="media/ADLS_one_time_refresh.png" alt-text="Configure entity in a data source for one-time refresh.":::
+
+1. For **Process incremental files from**, specify the date and time to retain the incremental files. This will process full data plus the incremental data starting from the specified date and time. For example, if you want to perform a partial data refresh/backfill until the end of November while retaining the incremental data from the beginning of December to today (Dec 30th), enter December 1st. To replace all the data and ignore the data in the incremental folder, specify a future date.
+
+1. Select **Close** to save and close the pane.
+
+1. Click **Save** to apply your changes and return to the **Data sources** page. The data source is in **Refreshing** status, performing a full refresh.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -69,6 +69,9 @@ Export segments of unified customer profiles to LinkedIn Ads to create matched a
 
 1. Optionally, add fields to further define your export. Select **Add attribute** to map these fields.
 
+   > [!NOTE]
+   > All personal data is sent as a hashed value to LinkedIn.
+
 1. Select the segments you want to export. The matched audiences in LinkedIn Campaign Manager will automatically be created with the name of the segments that you selected to export. Each segment will result in a separate matched audience.
 
 1. Select **Save**.

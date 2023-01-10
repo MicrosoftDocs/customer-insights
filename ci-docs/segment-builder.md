@@ -1,7 +1,7 @@
 ---
 title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
-ms.date: 11/15/2022
+ms.date: 11/28/2022
 
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -111,7 +111,7 @@ The example above illustrates the segmentation capability. We've defined a segme
    > - If the attribute you want to project is just one hop away from the *Customer* or *ContactProfile* table, that attribute doesn't need to be present in every rule of the segment query you are building.
    > - **Projected attributes** are factored in when using set operators.
 
-1. Select **Run** to create the segment. Select **Save** if you want to keep the current configuration and run the segment later. The **Segments** page displays.
+1. Select **Run** to create the segment. If you want to keep the current configuration and run the segment later, select **Save** and then **Close**. The **Segments** page displays.
 
 ### Segment builder tips
 
@@ -122,10 +122,11 @@ When creating a segment using the segment builder, keep in mind the following ti
 - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
 - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
 - The **Undo** and **Redo** controls in the command bar let you roll back changes.
-- After creating a segment, some segments allow you to [track the usage of the segment](segments.md#track-usage-of-a-segment).
+- After creating a segment, some segments allow you to [track the usage of the segment](segments-track-usage.md).
 
 ## Next steps
 
-[Export a segment](export-destinations.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
+- [Schedule a segment](segments-schedule.md).
+- [Export a segment](export-destinations.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
