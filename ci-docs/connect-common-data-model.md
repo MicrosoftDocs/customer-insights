@@ -76,7 +76,7 @@ For optimal performance, Customer Insights recommends the size of a partition be
 
 1. Select the json file and select **Next**. A list of available tables displays.
 
-   :::image type="content" source="media/review-entities.png" alt-text="Dialog box of a list of tables to select":::
+   :::image type="content" source="media/review-tables.png" alt-text="Dialog box of a list of tables to select":::
 
 1. Select the tables you want to include.
 
@@ -95,7 +95,7 @@ For optimal performance, Customer Insights recommends the size of a partition be
 
 1. Select the number of **Attributes** for each included table. The **Manage attributes** page displays.
 
-   :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
+   :::image type="content" source="media/dataprofiling-tables.png" alt-text="Dialog box to select data profiling.":::
 
    1. Create new attributes, edit, or delete existing attributes. You can change the name, the data format, or add a semantic type.
    1. To enable analytics and other capabilities, select **Data profiling** for the whole table or for specific attributes. By default, no table is enabled for data profiling.
@@ -133,7 +133,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
    1. To enable analytics and other capabilities, select **Data profiling** for the whole table or for specific attributes. By default, no table is enabled for data profiling.
 
-      :::image type="content" source="media/dataprofiling-entities.png" alt-text="Dialog box to select data profiling.":::
+      :::image type="content" source="media/dataprofiling-tables.png" alt-text="Dialog box to select data profiling.":::
 
    1. Select **Done**. The **Select tables** page displays.
 

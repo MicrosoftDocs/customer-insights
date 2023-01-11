@@ -44,7 +44,7 @@ Only one data source of an environment can simultaneously use the same Dataverse
    > [!NOTE]
    > If some tables are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights). You can't change the selection. These tables will be available once the data source is created.
 
-    :::image type="content" source="media/select-dataverse-entities.png" alt-text="Dialog box showing a list of tables in the Dataverse environment.":::
+    :::image type="content" source="media/select-dataverse-tables.png" alt-text="Dialog box showing a list of tables in the Dataverse environment.":::
 
 1. Save your selection to start syncing the selected tables from Dataverse. You'll find the newly added connection on the **Data sources** page. It will be queued for refresh and show the table count as 0 until all the selected tables are synced.
 

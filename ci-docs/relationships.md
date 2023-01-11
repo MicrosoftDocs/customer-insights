@@ -37,7 +37,7 @@ There are three types of relationships:
 
 During data unification, system relationships are created automatically based on intelligent matching. These relationships help relate the customer profile records with corresponding records. The following diagram illustrates the creation of three system-based relationships. The customer table is matched with other tables to produce the unified *Customer* table.
 
-:::image type="content" source="media/relationships-entities-merge.png" alt-text="Diagram with relationship paths for the customer table with three 1-n relationships.":::
+:::image type="content" source="media/relationships-tables-merge.png" alt-text="Diagram with relationship paths for the customer table with three 1-n relationships.":::
 
 - ***CustomerToContact* relationship** was created between the *Customer* table and the *Contact* table. The *Customer* table gets the key field **Contact_contactID** to relate to the *Contact* table key field **contactID**.
 - ***CustomerToAccount* relationship** was created between the *Customer* table and the *Account* table. The *Customer* table gets the key field **Account_accountID** to relate to the *Account* table key field **accountID**.
