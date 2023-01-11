@@ -1,11 +1,7 @@
 ---
 title: "Measures overview"
 description: "Learn how measures help analyze and reflect the performance of your business."
-<<<<<<< HEAD
-ms.date: 11/15/2022
-=======
 ms.date: 11/28/2022
->>>>>>> bc85f6ae17ff4a0f8f6d2e8e07346fe18368affb
 
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -44,11 +40,7 @@ From scratch with measure builder: [Build your own](measure-builder.md).
 
 ## Manage existing measures
 
-<<<<<<< HEAD
 Go to the **Insights** > **Measures** page to view the measures you created, their status, measure type, and the last time the data was refreshed. You can sort the list of measures by any column or use the search box to find the measure you want to manage.
-=======
-Go to the **Measures** page to view the measures you created, their status, measure type, the last time the data was refreshed, and their refresh schedule. You can sort the list of measures by any column or use the search box to find the measure you want to manage.
->>>>>>> bc85f6ae17ff4a0f8f6d2e8e07346fe18368affb
 
 Select next to a measure to view available actions. Select the measure name to preview the output and download a CSV file.
 
