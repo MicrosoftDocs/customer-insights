@@ -119,11 +119,11 @@ Loading data can take time. After a successful refresh, the ingested data can be
    - **Multiple .csv or .parquet files**: Browse to the root folder, select the pattern type, and enter the expression.
    - **Single .csv or .parquet files**: Browse to the .csv or .parquet file and select it.
 
-   :::image type="content" source="media/ADLS_new_entity_location.png" alt-text="Dialog box to create a new table with Data files location highlighted.":::
+   :::image type="content" source="media/ADLS_new_table_location.png" alt-text="Dialog box to create a new table with Data files location highlighted.":::
 
 1. Select **Save**.
 
-   :::image type="content" source="media/ADLS_new_entity_define_attributes.png" alt-text="Dialog box to define or auto generate attributes.":::
+   :::image type="content" source="media/ADLS_new_table_define_attributes.png" alt-text="Dialog box to define or auto generate attributes.":::
 
 1. Select **define the attributes** to manually add the attributes, or select **auto generate them**. To define the attributes, enter a name, select the data format and optional semantic type. For auto-generated attributes:
 

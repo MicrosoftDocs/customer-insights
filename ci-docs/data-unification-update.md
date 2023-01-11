@@ -106,7 +106,7 @@ To remove a table that has been unified, the table must be removed from any depe
 
 1. Select all fields for the table and then select **Exclude**.
 
-   :::image type="content" source="media/m3_remove_entity1.png" alt-text="Screenshot of Unified fields with all fields for a table selected and Exclude button":::
+   :::image type="content" source="media/m3_remove_table31.png" alt-text="Screenshot of Unified fields with all fields for a table selected and Exclude button":::
 
 1. Select **Done** to confirm and then select **Save and close**.
 
@@ -119,7 +119,7 @@ To remove a table that has been unified, the table must be removed from any depe
 
 1. On the **Matching conditions** page, select the table and then select **Delete**.
 
-   :::image type="content" source="media/m3_remove_entity2.png" alt-text="Screenshot of Matching conditions with table selected and Delete button":::
+   :::image type="content" source="media/m3_remove_table2.png" alt-text="Screenshot of Matching conditions with table selected and Delete button":::
 
 1. Select **Save and close**.
 
@@ -127,7 +127,7 @@ To remove a table that has been unified, the table must be removed from any depe
 
 1. Select **Select tables and fields** and clear the checkbox next to the table.
 
-   :::image type="content" source="media/m3_remove_entity3.png" alt-text="Screenshot of Select tables and fields dialog box with table checkbox cleared":::
+   :::image type="content" source="media/m3_remove_table33.png" alt-text="Screenshot of Select tables and fields dialog box with table checkbox cleared":::
 
 1. Select **Apply**.
 

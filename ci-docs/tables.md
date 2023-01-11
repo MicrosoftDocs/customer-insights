@@ -41,7 +41,7 @@ For more information about the **Relationships** tab, see [Relationships](relati
 
 - The **Attributes** tab is selected by default and shows details for the selected table, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](data-unification-map-tables.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* below has a data type *String* but its (semantic) Common Data Model type might be *Email*, *EmailAddress*, or *Identity.Service.Email*.
 
-   :::image type="content" source="media/data-manager-entities-fields.png" alt-text="Fields table.":::
+   :::image type="content" source="media/data-manager-tables-fields.png" alt-text="Fields table.":::
 
    > [!NOTE]
    > This page shows only a sample of your table's data. To view the full data set, go to the **Data sources** page, select a table, select **Edit**, and then view this table's data with the Power Query editor as explained in [Data sources](data-sources.md).
@@ -50,7 +50,7 @@ For more information about the **Relationships** tab, see [Relationships](relati
 
 - The **Data** tab shows details about individual records of the table. Details listed depend on the table's data type.
 
-   :::image type="content" source="media/data-manager-entities-data.png" alt-text="Select a table.":::
+   :::image type="content" source="media/data-manager-tables-data.png" alt-text="Select a table.":::
 
 - The **Reports** tab (available for some tables) enables you to visualize your data by creating a report, which includes these columns:
 

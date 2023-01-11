@@ -19,7 +19,7 @@ manager: shellyha
 | Area  | Limits  | Notes |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Segments and measures | 500  | The total number of active [segments](segments.md) and active [measures](measures.md) combined can't exceed 500 without potential performance degradation. For more information, see [Manage the number of active segments](segments.md#manage-the-number-of-active-segments) or [active measures](measures.md#manage-the-number-of-active-measures).|
-| Relationships | 20 levels of depth on relationships in entity paths. | When creating [segments](segments.md) or [measures](measures.md) using the builder interface, entity paths can have up to 20 relationship hops between the start entity and the target entity.  |
+| Relationships | 20 levels of depth on relationships in table paths. | When creating [segments](segments.md) or [measures](measures.md) using the builder interface, table paths can have up to 20 relationship hops between the start table and the target table.  |
 |Data ingestion| Concurrent evaluations for Power Query data sources are limited. | Customer Insights has the same [refresh limits like Dataflows in PowerBI.com](/power-query/power-query-online-limits#refresh-limits). |
 
 ## Fair scheduling of jobs

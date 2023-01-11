@@ -48,11 +48,11 @@ Each match unifies two or more tables into a single, consolidated table. At the 
 > - Choose the table with the most complete and reliable profile data about your customers as the primary table.
 > - Choose the table that has several attributes in common with other tables (for example, name, phone number, or email address) as the primary table.
 
-1. On the **Matching conditions** page, use the move up and down arrows to move the tables in the order you want, or drag and drop them. For example, select **eCommerceCustomers** as the primary table and **loyCustomers** as the second table.
+1. On the **Matching conditions** page, use the move up and down arrows to move the tables in the order you want, or drag and drop them. For example, select **eCommerceContacts** as the primary table and **loyCustomer** as the second table.
 
 1. To have every record in the table as a unique customer regardless if a match is found, select **Include all records**. Any records in this table that do not match to records in any other table are included in the unified profile. Records that do not have a match are called singletons.
   
-The primary table *Contacts:eCommerce* is matched with the next table *CustomerLoyalty:Loyalty*. The dataset that results from the first match step is matched with the following table if you’ve more than two tables.
+The primary table *eCommerceContacts* is matched with the next table *loyCustomer*. The dataset that results from the first match step is matched with the following table if you’ve more than two tables.
 
 :::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the tables." lightbox="media/m3_match.png":::
 

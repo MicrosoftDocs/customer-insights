@@ -81,31 +81,31 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Enrich customer profiles
-            url: enrichment-hub.md
-          - text: Configure relationships
-            url: relationships.md
+          - text: Create segments
+            url: segments.md
+          - text: Create measures
+            url: measures.md
           - text: Predict data
             url: predictions-overview.md
       - linkListType: learn
         links: 
-          - text: Enrich and predict data
-            url:  /training/modules/enrich-data/
+          - text: Work with the app
+            url:  /training/modules/working-with-customer-insights/
 
   - title: Build on your data
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Create segments
-            url: segments.md
-          - text: Create measures
-            url: measures.md
+          - text: Enrich customer profiles
+            url: enrichment-hub.md
+          - text: Configure relationships
+            url: relationships.md
           - text: Define customer activities
             url: activities.md
       - linkListType: learn
         links: 
-          - text: Work with the app
-            url:  /training/modules/working-with-customer-insights/            
+          - text: Enrich and predict data
+            url:  /training/modules/enrich-data/           
 
   - title: Export data
     linkLists:

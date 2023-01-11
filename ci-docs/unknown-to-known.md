@@ -73,7 +73,7 @@ Since some of the users in our data are known, we can use Customer Insights to c
 > - Set the unique IDs for unknown customers (for example, *Unknown1*) as primary keys.
 > - Primary keys from each source table become an alternate key.
 > - Alternate keys create the keyring for each unified customer profile ID.
-> - Ensure unknown customer data sources become part of the customer entity.
+> - Ensure unknown customer data sources become part of the customer table.
 
 ## Get insights
 

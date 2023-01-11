@@ -42,7 +42,7 @@ The first step in unification is selecting the tables and fields within your dat
 
 1. For each selected table, identify the fields you want to use to match customer records and fields to include in the unified profile. These fields are called *Attributes*. You can select the required attributes individually from a table or include all attributes from a table by selecting the checkbox on the table level. You can search on keywords across all attributes and tables to select the required attributes you want to map.
 
-   :::image type="content" source="media/m3_select_entities.png" alt-text="Screenshot of selected tables and attributes.":::
+   :::image type="content" source="media/m3_select_tables.png" alt-text="Screenshot of selected tables and attributes.":::
 
    In this example, we're adding the **eCommerceContacts** and **loyCustomer** tables. By choosing these tables, you can derive insights on which of the online business customers are loyalty program members.
 
