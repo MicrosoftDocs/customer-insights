@@ -5,7 +5,6 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
-ms.subservice: audience-insights
 manager: shellyha
 ms.topic: how-to
 ms.date: 01/05/2023

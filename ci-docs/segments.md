@@ -34,8 +34,8 @@ Choose how to create a segment based on your target audience.
 - Complex segments with segment builder: [Build your own](segment-builder.md)
 - Simple segments with one operator: [Quick segment](segment-quick.md)
 - AI-powered way to find similar customers: [Similar customers](find-similar-customer-segments.md)
-- AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md)
-- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md)
+- AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md#suggested-segments-based-on-measures-preview)
+- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments.md#suggested-segments-based-on-activity-preview)
 
 # [Business accounts (B-to-B)](#tab/b2b)
 

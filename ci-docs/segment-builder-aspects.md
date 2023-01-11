@@ -7,7 +7,6 @@ ms.reviewer: v-wendysmith
 manager: shellyha
 
 ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: conceptual
 ms.date: 01/05/2023
 ms.custom: bap-template

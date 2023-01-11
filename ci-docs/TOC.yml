@@ -145,14 +145,12 @@
       href: segment-quick.md
     - name: Suggested segments
       items:
-          - name: Suggested segments based on measures
+          - name: Suggested segments
             href: suggested-segments.md
-          - name: Generate suggested segments based on measures
-            href: suggested-segments-generate.md
-          - name: Suggested segments based on activity
-            href: suggested-segments-activity.md
           - name: Generate suggested segments based on activity
             href: suggested-segments-activity-generate.md
+          - name: Generate suggested segments based on measures
+            href: suggested-segments-generate.md
     - name: Get insights on segments
       href: segment-insights.md
     - name: Find similar customers

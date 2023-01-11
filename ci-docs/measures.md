@@ -6,7 +6,6 @@ ms.author: wameng
 ms.reviewer: v-wendysmith
 manager: shellyha
 ms.service: customer-insights
-ms.subservice: audience-insights
 
 ms.topic: how-to
 ms.date: 01/09/2023
