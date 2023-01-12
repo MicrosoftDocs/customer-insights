@@ -1,13 +1,14 @@
 ---
 title: "OData query examples for Customer Insights APIs"
 description: "Commonly used examples of for the Open Data Protocol (OData) to query the Customer Insights APIs to review data."
-ms.date: 08/30/2022
-ms.subservice: audience-insights
+ms.date: 01/12/2023
+ms.service: customer-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
+ms.custom: bap-template
 ---
 
 # OData query examples for Customer Insights APIs
@@ -64,12 +65,11 @@ Sample queries for other entities.
 |In-Clause + Expand     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
 
 ## Limitations
-The following queries aren't supported by Customer Insights:
-- `$filter` on ingested source entities. You can only run $filter queries on system entities that Customer Insights creates.
-- `$expand` from a `$search` query. Example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
-- `$expand` from `$select` if only a subset of attributes is selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
-- `$expand` enriched brand or interest affinities for a given customer. Example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
-- Query prediction model output entities through alternate key. Example: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`
-
-Customer Insights API returns a maximum of 100 objects by default. You can parse through more than the 100 objects returned by using standard pagination techniques. Alternatively, you can export <add link to export page> your data. 
+- Customer Insights API returns a maximum of 100 objects by default. You can parse through more than the 100 returned objects by using standard pagination techniques. Alternatively, you can [export your data](export-destinations.md).
+- The following queries aren't supported by Customer Insights:
+  - `$filter` on ingested source entities. You can only run $filter queries on system entities that Customer Insights creates.
+  - `$expand` from a `$search` query. Example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
+  - `$expand` from `$select` if only a subset of attributes is selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
+  - `$expand` enriched brand or interest affinities for a given customer. Example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
+  - Query prediction model output entities through alternate key. Example: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`
 
