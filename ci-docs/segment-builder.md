@@ -33,7 +33,7 @@ The following image illustrates the various aspects of the segment builder. It s
 
 1. Choose the [relationship path](relationships.md) between entities that applies to a rule. Only attributes from the entities in the relationship can be used for rules.
 
-1. Manage rules and subrules. Change the position of a rule or delete it. When you have more than two rules in your segment, each rule is processed in the order they appear. For example: If your segment is composed of Rule1 UNION Rule2 INTERSECT Rule3 EXCEPT Rule4, then the results of Rule1 and Rule2 are united first. The result of that union is intersected with results of Rule3.Then the results of Rule4 are excluded from the result of the previous rules.
+1. Manage rules and subrules. Change the position of a rule or delete it. When you have more than two rules in your segment, each rule is processed in the order they appear. For example: If your segment is composed of Rule1 UNION Rule2 INTERSECT Rule3 EXCEPT Rule4, then the results of Rule1 and Rule2 are united first. The result of that union is intersected with results of Rule3. Then the results of Rule4 are excluded from the result of the previous rules.
 
 1. Add conditions and build the right level of nesting using subrules.
 
