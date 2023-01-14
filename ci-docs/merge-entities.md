@@ -2,14 +2,15 @@
 title: "Unify customer fields for data unification"
 description: "Merge entities to create unified customer profiles."
 recommendations: false
-ms.date: 12/6/2022
+ms.date: 01/13/2023
 
-ms.subservice: audience-insights
-ms.topic: tutorial
+ms.service: customer-insights
+ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-merge
   - ci-match
@@ -129,7 +130,7 @@ Combine separated fields to create a merged attribute.
 When you combine a group of fields, Customer Insights treats the group as a single unit, and chooses the winner record based on a merge policy. When merging fields without combining them into a group, Customer Insights chooses the winner record for each field based on the entity order ranking set up in the **Match conditions** step. If a field has a null value, Customer Insights continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
 
 #### Example
-Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in a less than ideal mailing address (200 Cedar Springs Road, Suite 950, Dallas, TX 75255). To ensure data  integrity, combine the address fields into a group.
+Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in an incorrect mix of address fields (200 Cedar Springs Road, Suite 950, Dallas, TX 75255). To ensure data  integrity, combine the address fields into a group.
 
 **Table1 - Loyalty**
 
@@ -155,11 +156,11 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
 
    :::image type="content" source="media/merge-combine-group.png" alt-text="Combine group of fields screen.":::
 
-1. Specify the merge winner policy in the **Rank groups by** dropdown. The same merge policy is used for all the fields that make up the group.
+1. Specify which group of fields to select as the winner in the **Rank groups by** dropdown. The same merge policy is used for all the fields that make up the group.
 
-   - **Importance**: Identifies the winner record as the group of fields with the highest ranking. The highest ranking is the data source you select for Group 1. Importance is the default value.
-   - **Most recent**: Identifies the winner record as the group of fields with the most recency. Requires a date to define the recency.
-   - **Least recent**: Identifies the winner record as the group of fields with the least recency. Requires a date to define the recency.
+   - **Importance**: Identifies the winner group by looking at the groups in order starting with Group 1. If all fields are null, the next group is considered. Importance is the default value.
+   - **Most recent**: Identifies the winner group by referencing a field in the group you select to indicate recency. The field can be a date, time, or numeric as long as it can be ranked largest to smallest.
+   - **Least recent**: Identifies the winner group by referencing a field in the group you select to indicate recency. The field can be a date, time, or numeric as long as it can be ranked smallest to largest.
 
 1. To add more than two fields for your combined group, select **Add** > **Field**. Add as many as 10 fields.
 
