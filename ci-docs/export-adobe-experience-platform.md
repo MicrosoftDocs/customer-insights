@@ -6,7 +6,7 @@ ms.reviewer: mhart
 
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: okieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
 ---
