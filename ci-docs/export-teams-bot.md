@@ -6,8 +6,8 @@ ms.reviewer: mhart
 
 ms.subservice: audience-insights
 ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
 ---
 
