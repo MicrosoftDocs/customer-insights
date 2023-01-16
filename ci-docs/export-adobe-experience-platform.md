@@ -7,7 +7,7 @@ ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
-ms.author: antando
+ms.author: pkieffer
 manager: shellyha
 ---
 
