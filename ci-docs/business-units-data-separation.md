@@ -7,7 +7,7 @@ ms.service: customer-insights
 ms.topic: concept
 author: jodahl-msft
 ms.author: jodahl
-manager: shellyha
+manager: skumm
 ms.custom: bap-template
 ---
 
@@ -15,7 +15,7 @@ ms.custom: bap-template
 Purpose and scenarios
 
 ## Customer Insights and Dataverse
-Customer Insights puts data into Dataverse tables with ownership information, so that data consumption from Dataverse (e.g., other Dynamics apps, such as Dynamics Marketing, model-driven apps, etc.) is governed by Dataverse RBAC settings (RBAC in DV -> link). 
+Customer Insights puts data into Dataverse tables with ownership information, so that data consumption from Dataverse (e.g., in other Dynamics apps, such as Dynamics Marketing, model-driven apps, etc.) is governed by Dataverse RBAC settings (RBAC in DV -> link). 
 
 ### Dataverse roles
 Access to data in dataverse is governed by the ownership of the information and the Dataverse role of the user.
