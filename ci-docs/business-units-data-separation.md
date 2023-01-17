@@ -24,13 +24,13 @@ Access to data in dataverse is governed by the ownership of the information and 
 
 ### The administrator role
 Prepares data estate
- Exports
-- Enrichments
-- Intelligence
+Exports
+Enrichments
+Intelligence
 ### The BU contributor role
 
 ### Recommended roles setup
-Admins need to be in top level BU![image](https://user-images.githubusercontent.com/71271926/212936470-5a01d6e9-5dcf-441b-9742-e0ee4973dbda.png)
+Admins need to be in top level BU
 
 ## Business unit ownership of customer profiles
 Setting BU ownership on data and metadata
