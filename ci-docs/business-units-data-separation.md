@@ -18,9 +18,9 @@ Business unit data separatation and Role-based access control (RBAC) allow admin
 Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and expressive security model that is built into [Dataverse]([(https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds)]). Access to data is determined by the intersection of the Dataverse role(s) the user has and the ownership of the data in question. In the following, both concepts are described in the Customer Insights context.
 
 ### Assignment of ownership
-Every piece of data that is stored in Dataverse has an owner, which is critical to how access to this data is governed. When business data separation is enabled both customer profiles, segments, and measures have ownership information attached to them as detailed below. 
+Every piece of data that is stored in Dataverse has an owner, which is critical to how access to this data is governed. When business data separation is enabled, both customer profiles, segments, and measures have ownership information attached to them as detailed below. 
 
-1. 
+1. Go to **Data** > **Unify**
 
 #### Assignment of ownership to customer profiles
 
