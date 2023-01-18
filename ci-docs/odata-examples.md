@@ -1,13 +1,14 @@
 ---
 title: "OData query examples for Customer Insights APIs"
 description: "Commonly used examples of for the Open Data Protocol (OData) to query the Customer Insights APIs to review data."
-ms.date: 08/30/2022
-ms.subservice: audience-insights
+ms.date: 01/16/2023
+ms.service: customer-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
+ms.custom: bap-template
 ---
 
 # OData query examples for Customer Insights APIs
@@ -50,7 +51,7 @@ Sample queries for the *UnifiedActivity* entity.
 |Activity type    |   `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'`        |         |
 |Activity by display name     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’`        | |
 |Activity sorting    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  Sort activities ascending or descending       |
-|Activity expanded from segment membership  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     |         |
+|All activities and measures for a customer  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     | Activities and measures are additional key/value pairs on the returned customer profile       |
 
 ## Other examples
 
@@ -63,12 +64,12 @@ Sample queries for other entities.
 |Enriched interests of CID    |   `{serviceRoot}/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`       |         |
 |In-Clause + Expand     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
 
-## Not supported OData queries
+## Limitations
+- Customer Insights API returns a maximum of 100 objects by default. You can parse through more than the 100 returned objects by using standard pagination techniques. Alternatively, you can [export your data](export-destinations.md).
+- The following queries aren't supported by Customer Insights:
+  - `$filter` on ingested source entities. You can only run $filter queries on system entities that Customer Insights creates.
+  - `$expand` from a `$search` query. Example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
+  - `$expand` from `$select` if only a subset of attributes is selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
+  - `$expand` enriched brand or interest affinities for a given customer. Example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
+  - Query prediction model output entities through alternate key. Example: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`
 
-The following queries aren't supported by Customer Insights:
-
-- `$filter` on ingested source entities. You can only run $filter queries on system entities that Customer Insights creates.
-- `$expand` from a `$search` query. Example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
-- `$expand` from `$select` if only a subset of attributes is selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
-- `$expand` enriched brand or interest affinities for a given customer. Example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
-- Query prediction model output entities through alternate key. Example: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`
