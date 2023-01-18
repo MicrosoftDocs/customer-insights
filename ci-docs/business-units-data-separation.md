@@ -5,7 +5,7 @@ ms.date: 01/10/2023
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.topic: concept
-author: jodahl-msft
+author: jodahl
 ms.author: jodahl
 manager: skumm
 ms.custom: bap-template
@@ -18,10 +18,12 @@ Business unit data separatation and Role-based access control (RBAC) allow admin
 Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and expressive security model that is built into [Dataverse]([(https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds)]). Access to data is determined by the intersection of the Dataverse role(s) the user has and the ownership of the data in question. In the following, both concepts are described in the Customer Insights context.
 
 ### Assignment of ownership
-Every piece of data that is stored in Dataverse has an owner, which is critical for how access to data is governed. When business data separation is enabled both customer profiles, segments, and measures have ownership information attached to them as detailed below. 
+Every piece of data that is stored in Dataverse has an owner, which is critical to how access to this data is governed. When business data separation is enabled both customer profiles, segments, and measures have ownership information attached to them as detailed below. 
+
+1. 
 
 #### Assignment of ownership to customer profiles
-When business unit data separation is enabled, Customer Insights populates Dataverse tables with data with ownership information, so that data consumption from Dataverse (e.g., in other Dynamics apps, such as Dynamics Marketing, model-driven apps, etc.) is governed by Dataverse RBAC settings.
+
 
 #### Assignment of ownership to segments and measures
 
@@ -63,5 +65,8 @@ A customer profile, segment, or measure has *one* BU as the owner. This means th
 
 Customer measures are not stored in Dataverse yet.
 
+Only build your own segments and measures are supported.
+
+When business unit data separation is enabled, Customer Insights populates Dataverse tables with data with ownership information, so that data consumption from Dataverse (e.g., in other Dynamics apps, such as Dynamics Marketing, model-driven apps, etc.) is governed by Dataverse RBAC settings.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
