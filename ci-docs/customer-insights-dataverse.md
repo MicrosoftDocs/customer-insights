@@ -194,7 +194,7 @@ This table contains activities by users that are available in Customer Insights.
 | CustomerId        | Text      | Customer profile ID                                                                      |
 | ActivityType      | Text      | Semantic activity type or name of custom activity. For example: `SalesOrderLine`  |
 | ExternalUrl       | Text      | Link to an external URL for this activity. Usually denotes the URL of the website visited by a customer.     |
-| ActivityTime      | DateTime  | Activity time stamp. Usually denotes when the activity occured. For example: `2021-12-24T21:00:00Z`  |
+| ActivityTime      | DateTime  | Activity time stamp. Usually denotes when the activity occurred. For example: `2021-12-24T21:00:00Z`  |
 | ActivityId        | Text      | Internal ID of the customer activity (primary key)                                       |
 | ActualActivityId  | Text      | Internal ID of the activity row in the source entity/table                                       |
 | Title             | Text      | Title or name of the activity                                                               |
