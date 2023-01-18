@@ -15,6 +15,8 @@ ms.custom: bap-template
 Business unit data separatation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. Because these controls are applied to the data in Microsoft Dataverse, the integrity of those controls propagates to all other Dynamics 365 and Power Platform applications automatically.
 
 
+![Example of a BU structure with the Org parent business unit at the top and child BUs A to D below](ci-docs/media/BU_structure_example.png)
+
 
 ## Customer Insights and Dataverse
 Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and expressive security model that is built into [Dataverse]([(https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds)]). Access to data is determined by the intersection of the role(s) the user has and the ownership of the data in question.
