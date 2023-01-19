@@ -110,11 +110,11 @@ Customer Insights and Customer Journey Orchestration (CJO) are tightly integrate
 BU contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit.
 
 ### Current limitations
-* A customer profile, segment, or measure has *one* BU as the owner. This means that if a customer is represented in data that spans more than one BU, then the customer 
-
-* Only *build your own* segments and measures are supported.
+* A customer profile, segment, or measure has *one* BU as the owner. A customer profile cannot be owned by more than one business unit. 
 
 * Synonyms in the BU mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
+
+* Only *build your own* segments and measures are supported.
 
 * Segments and Business measures are not stored in Dataverse yet.
 
