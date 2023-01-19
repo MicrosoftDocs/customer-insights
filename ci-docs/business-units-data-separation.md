@@ -42,13 +42,17 @@ Customer profiles are owned by teams within business units (as opposed to being 
 Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of the US business unit then any segment and measure that user creates is owned by the US business unit. At this time it is not possible to assign segments nor measures to other business units.
 
 ### Roles and teams
-Apart from ownership, the other component of determining access to data in Dataverse are the user's Dataverse role(s) and the teams they belong to.  
+Apart from ownership, the other components of determining access to data in Dataverse are the user's Dataverse role(s) and the teams they belong to.  
 
 #### Dataverse roles
-To have access to any data from Customer Insights, the user needs to have the *Customer Insights Data Reader* role in Dataverse. This role is assigned automatically to users that has any Customer Insights role as detailed below.
+To have access to any data from Customer Insights, the user needs to have the *Customer Insights Data Reader* role in Dataverse. This role is assigned automatically to users that has any Customer Insights role as detailed below. 
+
+Click here for more information on Dataverse roles.
 
 #### Dataverse teams
+To have access to any data from Customer Insights, the user needs to be member of one of the teams that were specified in the business unit mapping step. Note, that a user can only belong to a team that belongs to the same business unit as the user.
 
+Click here for more information on how to assign users to teams in Dataverse.
 
 #### Customer Insights roles
 
