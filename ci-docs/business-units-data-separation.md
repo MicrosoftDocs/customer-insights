@@ -42,7 +42,7 @@ Customer profiles are owned by teams within business units (as opposed to being 
    > * The unification rules are the same for all business units.
 
 #### Assignment of ownership to segments and measures
-Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of the US business unit then any segment and measure that user creates is owned by the US business unit. At this time it is not possible to assign segments nor measures to other business units.
+Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of business unit *A* then any segment and measure that user creates is owned by business unit *A*. At this time it is not possible to assign segments nor measures to other business units.
 
 ### Roles and teams
 Apart from ownership, the other components of determining access to data in Dataverse are the user's Dataverse role(s) and the teams they belong to.  
@@ -57,8 +57,8 @@ To have access to any data from Customer Insights, the user needs to be member o
 
 Click here for more information on how to assign users to teams in Dataverse.
 
-## Default business unit configurations
-The default configuration is depicted below, where members of the Org business unit has access to all customer profiles, segments, and measures. Members of the other business units only have access to the customer profiles, segments, and measures that belong to their business unit. 
+## Default business unit configuration
+An example of the default business unit configuration is depicted below, where members of the Org business unit has access to all customer profiles, segments, and measures. Members of the other business units only have access to the customer profiles, segments, and measures that belong to their business unit. 
 
 ![Example of a BU structure with the Org parent business unit at the top and child business units A to D below](media/BU_structure_example.png)
 *Example of a BU structure with the Org parent business unit at the top and child BUs A to D below*
@@ -107,9 +107,9 @@ The viewer role can view all data regardless of the user's business unit, but it
 ## Customer Insights and Customer Journey Orchestration
 Customer Insights and Customer Journey Orchestration (CJO) are tightly integrated for a delightful activation journey. 
 
-BU contributors in Customer Insights should be given the Marketing Professional (BU level) role in Dataverse to govern their access to data from Dynamics Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit.
+BU contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit.
 
-## Current limitations
+### Current limitations
 * A customer profile, segment, or measure has *one* BU as the owner. This means that if a customer is represented in data that spans more than one BU, then the customer 
 
 * Only *build your own* segments and measures are supported.
