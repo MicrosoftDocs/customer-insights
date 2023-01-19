@@ -102,7 +102,7 @@ This role can only access customer profiles that belong to their BU and any chil
 With the default Dataverse RBAC settings, this role can only see segments and measures that belong to the same business unit as the user belongs to.
 
 ### The viewer role
-The viewer role can view all data regardless of the user's business unit, but it cannot make any changes. This role is primarily meant for demo scenarios.
+The viewer role can view all data regardless of the user's business unit, but it cannot make any changes. This role is primarily meant for demo scenarios where all data in the environment is anonymized.
 
 ## Activation scenarios
 
