@@ -50,8 +50,8 @@ Ownership of segments and measures is determined based on the user that created 
 ### Roles and teams
 Apart from ownership, the other components of determining access to data in Dataverse are the user's Dataverse role(s) and the teams they belong to.  
 
-#### Dataverse roles
-To have access to any data from Customer Insights, the user needs to have the *Customer Insights Data Reader* role in Dataverse. This role is assigned automatically to users that has any Customer Insights role as detailed below. 
+#### Dataverse security roles
+To have access to any data from Customer Insights, the user needs to have the *Customer Insights Data Reader* security role in Dataverse. This role is assigned automatically to users that has any Customer Insights role as detailed below. 
 
 Click here for more information on Dataverse roles.
 
