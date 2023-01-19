@@ -36,11 +36,14 @@ Profiles will only be de-duplicated and unified if the business unit values matc
 Profiles that do not match any of the mappings are assigned to the Org business unit.
 
 #### Assignment of ownership to segments and measures
+Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of the US business unit then any segment and measure that user creates is owned by the US business unit.
 
 ### Roles
 
 #### Dataverse roles
 Access to data in dataverse is governed by the ownership of the information and the Dataverse role of the user.
+
+Default roles.
 
 #### Customer Insights roles
 
@@ -50,9 +53,10 @@ Exports
 Enrichments
 Intelligence
 ### The BU contributor role
-
+- Can only access customer profiles that belong to their BU and any child BUs. For example, if a BU contributor creates a segment with all customers then it will only contain the customers that are owned by the BU that the BU contributor belongs to.
+- Can only access segments and measures.
 ### Recommended roles setup
-Admins need to be in top level BU
+Admins need to be in top level BU.
 
 ## Business unit ownership of customer profiles
 Setting BU ownership on data and metadata
