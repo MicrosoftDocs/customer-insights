@@ -17,6 +17,7 @@ Business unit data separatation and Role-based access control (RBAC) allow admin
 ## Pre-requisites
 * Business units and associated teams defined in Dataverse -> link to guide to setting up BUs in Dataverse.
 * Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**. Notice that it is not possible to disable business unit data separation on an instance after it has been enabled. 
+* All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row. 
 
 ## Customer Insights and Dataverse
 Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and expressive security model that is built into [Dataverse]([(https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds)]). Access to data is determined by the intersection of the Dataverse role(s) the user has and the ownership of the data in question. In the following, both concepts are described in the Customer Insights context.
@@ -80,6 +81,8 @@ A customer profile, segment, or measure has *one* BU as the owner. This means th
 Customer measures are not stored in Dataverse yet.
 
 Only build your own segments and measures are supported.
+
+* Synonyms in the BU mappings are not supported.
 
 When business unit data separation is enabled, Customer Insights populates Dataverse tables with data with ownership information, so that data consumption from Dataverse (e.g., in other Dynamics apps, such as Dynamics Marketing, model-driven apps, etc.) is governed by Dataverse RBAC settings.
 
