@@ -33,6 +33,9 @@ Ownership of the customer profiles is determined based on mappings that are conf
 2. Select the column that identifies the business unit for each entity that contributes to unification. 
 3. Specify the mapping between the values in the columns that were selected above and business unit teams. For example, 'A' maps to the A business unit team, 'B' maps to the B business unit team, etc. 
 
+![Screenshot of business unit mappings](media/BU_mappings.png)
+*Screenshot of business unit mapping.*
+
 Customer profiles are owned by teams within business units (as opposed to being owned by business units directly) to provide better control of data access.   
 
  > [!NOTE]
