@@ -104,25 +104,19 @@ With the default Dataverse RBAC settings, this role can only see segments and me
 ### The viewer role
 The viewer role can view all data regardless of the user's business unit, but it cannot make any changes. This role is primarily meant for demo scenarios where all data in the environment is anonymized.
 
-## Activation scenarios
+## Customer Insights and Customer Journey Orchestration
+Customer Insights and Customer Journey Orchestration (CJO) are tightly integrated for a delightful activation journey. 
 
-### Customer Insights and Customer Journey Orchestration
+BU contributors in Customer Insights should be given the Marketing Professional (BU level) role in Dataverse to govern their access to data from Dynamics Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit.
 
-### 3rd party activation scenarios
+## Current limitations
+* A customer profile, segment, or measure has *one* BU as the owner. This means that if a customer is represented in data that spans more than one BU, then the customer 
 
+* Only *build your own* segments and measures are supported.
 
-## Next steps
+* Synonyms in the BU mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
 
-## Limitations
-A customer profile, segment, or measure has *one* BU as the owner. This means that if a customer is represented in data that spans more than one BU, then the customer 
+* Segments and Business measures are not stored in Dataverse yet.
 
-* Only build your own segments and measures are supported.
-
-* Synonyms in the BU mappings are not supported.
-
-* Customer measures are not stored in Dataverse yet.
-
-* 
-When business unit data separation is enabled, Customer Insights populates Dataverse tables with data with ownership information, so that data consumption from Dataverse (e.g., in other Dynamics apps, such as Dynamics Marketing, model-driven apps, etc.) is governed by Dataverse RBAC settings.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
