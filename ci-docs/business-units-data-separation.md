@@ -100,7 +100,7 @@ When business unit data separation is enabled, it is the responsibility of the a
 * Create segments
 * Create measures
 
-This role can only access customer profiles that belong to their BU and any child BUs. For example, if a BU contributor creates a segment with all customers then it will only contain the customers that are owned by the BU that the BU contributor belongs to.
+This role can only access customer profiles that belong to their BU and any child BUs. For example, if a BU contributor creates a segment with all customers then it will only contain the customers that are owned by the BU that the BU contributor belongs to. Similarly, measures can only be created on tables that have a relationship path to the customer profiles.
 
 With the default Dataverse RBAC settings, this role can only see segments and measures that belong to the same business unit as the user belongs to.
 
@@ -113,7 +113,9 @@ Customer Insights and Customer Journey Orchestration (CJO) are tightly integrate
 BU contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit.
 
 ### Current limitations
-* A customer profile, segment, or measure cannot be owned by more than one business unit. 
+* A customer profile cannot be owned by more than one business unit. At the cost of a higher profile count, a global instance can be used if customers have business with more than one business unit and it is imperative to unify across business units.
+
+* Segments and measures cannot be owned by more than one business unit nor be shared with other business units.
 
 * Synonyms in the BU mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
 
