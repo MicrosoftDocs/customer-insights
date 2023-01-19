@@ -1,5 +1,5 @@
 ---
-title: "Business unit data separatation and Role-based access control (Public preview)"
+title: "Business unit data separation and Role-based access control (Public preview)"
 description: "Learn how to use buiness units in Customer Insights to separate data."
 ms.date: 01/10/2023
 ms.reviewer: mhart
@@ -11,10 +11,10 @@ manager: skumm
 ms.custom: bap-template
 ---
 
-# Business unit data separatation and Role-based access control (Public preview)
-Business unit data separatation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. Because these controls are applied to the data in Microsoft Dataverse, the integrity of those controls propagates to all other Dynamics 365 and Power Platform applications automatically.
+# Business unit data separation and Role-based access control (Public preview)
+Business unit (BU) data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. Because these controls are applied to the data in Microsoft Dataverse, the integrity of those controls propagates to all other Dynamics 365 and Power Platform applications automatically.
 
-## Pre-requisites
+## Prerequisites
 * Business units and associated teams defined in Dataverse -> link to guide to setting up BUs in Dataverse.
 * Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**. Notice that it is not possible to disable business unit data separation on an instance after it has been enabled. 
 * All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row. 
@@ -36,7 +36,6 @@ Ownership of the customer profiles is determined based on mappings that are conf
    > Profiles will only be de-duplicated and unified if the business unit values match. 
    > Profiles that do not match any of the mappings are assigned to the Org business unit.
 
-
 #### Assignment of ownership to segments and measures
 Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of the US business unit then any segment and measure that user creates is owned by the US business unit.
 
@@ -46,6 +45,8 @@ Ownership of segments and measures is determined based on the user that created 
 Access to data in dataverse is governed by the ownership of the information and the Dataverse role of the user.
 
 Default roles.
+
+Customization of Dataverse roles.
 
 #### Customer Insights roles
 
@@ -79,12 +80,13 @@ Setting BU ownership on data and metadata
 ## Limitations
 A customer profile, segment, or measure has *one* BU as the owner. This means that if a customer is represented in data that spans more than one BU, then the customer 
 
-Customer measures are not stored in Dataverse yet.
-
-Only build your own segments and measures are supported.
+* Only build your own segments and measures are supported.
 
 * Synonyms in the BU mappings are not supported.
 
+* Customer measures are not stored in Dataverse yet.
+
+* 
 When business unit data separation is enabled, Customer Insights populates Dataverse tables with data with ownership information, so that data consumption from Dataverse (e.g., in other Dynamics apps, such as Dynamics Marketing, model-driven apps, etc.) is governed by Dataverse RBAC settings.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
