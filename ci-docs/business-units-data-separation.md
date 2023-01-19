@@ -16,6 +16,7 @@ Business unit (BU) data separation and Role-based access control (RBAC) allow ad
 
 ## Prerequisites
 * Business units and associated teams are defined in Dataverse -> link to guide to setting up BUs in Dataverse.
+* Users are assigned to appropriate business units and teams -> link to guide to managing users and teams in Dataverse.
 * Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**. Notice that it is not possible to disable business unit data separation on an instance after it has been enabled. 
 * All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row. 
 
@@ -30,13 +31,15 @@ Ownership of the customer profiles is determined based on mappings that are conf
 
 1. Go to **Data** > **Unify** > **Business units**
 2. Select the column that identifies the business unit for each entity that contributes to unification. 
-3. Specify the mapping between the values in the columns that were selected above and business unit teams. For example, 'US' maps to the US business unit team, 'Mexico' maps to the Mexican business unit team, etc. 
+3. Specify the mapping between the values in the columns that were selected above and business unit teams. For example, 'A' maps to the A business unit team, 'B' maps to the B business unit team, etc. 
 
 Customer profiles are owned by teams within business units (as opposed to being owned by business units directly) to provide better control of data access.   
 
  > [!NOTE]
-   > Profiles will only be de-duplicated and unified if the business unit values match. 
-   > Profiles that do not match any of the mappings are assigned to the Org business unit.
+   > * Profiles will only be de-duplicated and unified if the business unit values match. 
+   > * Profiles that do not match any of the mappings are assigned to the Org business unit.
+   > * Profiles belong to exactly one business unit.
+   > * The unification rules are the same for all business units.
 
 #### Assignment of ownership to segments and measures
 Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of the US business unit then any segment and measure that user creates is owned by the US business unit. At this time it is not possible to assign segments nor measures to other business units.
@@ -54,23 +57,52 @@ To have access to any data from Customer Insights, the user needs to be member o
 
 Click here for more information on how to assign users to teams in Dataverse.
 
-#### Customer Insights roles
+## Default business unit configurations
+The default configuration is depicted below, where members of the Org business unit has access to all customer profiles, segments, and measures. Members of the other business units only have access to the customer profiles, segments, and measures that belong to their business unit. 
+
+![Example of a BU structure with the Org parent business unit at the top and child business units A to D below](media/BU_structure_example.png)
+*Example of a BU structure with the Org parent business unit at the top and child BUs A to D below*
+
+ > [!NOTE]
+   > * Only the default configurations are currently supported. Altering RBAC settings in Dataverse can lead to unexpected results.
+
+## Customer Insights roles
+The Customer Insights roles determine the user's access to Customer Insights functionality.
 
 ### The administrator role
-Prepares data estate
-Exports
-Enrichments
-Intelligence
+The administrator role has access to all of Customer Insights, including all customer profiles, segments, and measures regardless of the user's business unit. 
+This role can:
+
+* Prepare data estate by configuring data sources and unification.
+* Create segments and measures.
+* Configure enrichments and intelligence.
+  * Outputs of enrichments and ML models are tied to the customer profiles. Therefore, the outputs inherit the business unit ownership from the profiles.  
+* Configure exports
+* Manage Customer Insights users
+
+ > [!NOTE]
+   > * This is a highly privledged role.
+   > * This role should only be grated to users that belong to the *Org* business unit.
+
+### The contributor role
+The contributor role has the same rights as the administrator role except that it cannot manage Customer Insights users.
+
+ > [!NOTE]
+   > * This is a highly privledged role.
+   > * This role should only be grated to users that belong to the *Org* business unit.
+
 ### The BU contributor role
-- Can only access customer profiles that belong to their BU and any child BUs. For example, if a BU contributor creates a segment with all customers then it will only contain the customers that are owned by the BU that the BU contributor belongs to.
-- Can only access segments and measures.
-### Recommended roles setup
-Admins need to be in top level BU.
+When business unit data separation is enabled, it is the responsibility of the administrators and/or contributors on the *Org* level to prepare the data state. The BU contributor role is given to users that belong to the child business units. This role can:
 
-## Business unit ownership of customer profiles
-Setting BU ownership on data and metadata
+* Create segments
+* Create measures
 
-## Business unit ownership of segments and measures
+This role can only access customer profiles that belong to their BU and any child BUs. For example, if a BU contributor creates a segment with all customers then it will only contain the customers that are owned by the BU that the BU contributor belongs to.
+
+With the default Dataverse RBAC settings, this role can only see segments and measures that belong to the same business unit as the user belongs to.
+
+### The viewer role
+The viewer role can view all data regardless of the user's business unit, but it cannot make any changes. This role is primarily meant for demo scenarios.
 
 ## Activation scenarios
 
@@ -78,8 +110,6 @@ Setting BU ownership on data and metadata
 
 ### 3rd party activation scenarios
 
-![Example of a BU structure with the Org parent business unit at the top and child BUs A to D below](media/BU_structure_example.png)
-*Example of a BU structure with the Org parent business unit at the top and child BUs A to D below*
 
 ## Next steps
 
