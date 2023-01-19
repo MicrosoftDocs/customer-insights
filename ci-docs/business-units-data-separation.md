@@ -32,9 +32,10 @@ Ownership of the customer profiles is determined based on mappings that are conf
 2. Select the column that identifies the business unit for each entity that contributes to unification. 
 3. Specify the mapping between the values in the columns that were selected above and business units. For example, 'US' maps to the US business unit, 'Mexico' maps to the Mexican business unit, etc.
 
-Profiles will only be de-duplicated and unified if the business unit values match.
+ > [!NOTE]
+   > Profiles will only be de-duplicated and unified if the business unit values match. 
+   > Profiles that do not match any of the mappings are assigned to the Org business unit.
 
-Profiles that do not match any of the mappings are assigned to the Org business unit.
 
 #### Assignment of ownership to segments and measures
 Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of the US business unit then any segment and measure that user creates is owned by the US business unit.
