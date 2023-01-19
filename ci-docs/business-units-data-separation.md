@@ -15,13 +15,13 @@ ms.custom: bap-template
 Business unit (BU) data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. Because these controls are applied to the data in Microsoft Dataverse, the integrity of those controls propagates to all other Dynamics 365 and Power Platform applications automatically.
 
 ## Prerequisites
-* Business units and associated teams are defined in Dataverse -> link to guide to setting up BUs in Dataverse.
-* Users are assigned to appropriate business units and teams -> link to guide to managing users and teams in Dataverse.
+* Business units and associated teams are defined in Dataverse -> [guide to setting up BUs in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
+* Users are assigned to appropriate business units and teams -> [link to guide to managing users and teams in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/users-settings)
 * Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**. Notice that it is not possible to disable business unit data separation on an instance after it has been enabled. 
 * All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row. 
 
 ## Customer Insights and Dataverse
-Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and expressive security model that is built into [Dataverse]([(https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds)]). Access to data is determined by the intersection of the Dataverse role(s) the user has, the teams they belong to, and the ownership of the data in question. In the following, these concepts are described in the Customer Insights context.
+Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and expressive security model that is built into [Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds). Access to data is determined by the intersection of the Dataverse role(s) the user has, the teams they belong to, and the ownership of the data in question. In the following, these concepts are described in the Customer Insights context.
 
 ### Assignment of ownership
 Every piece of data that is stored in Dataverse has an owner, which is critical to how access to this data is governed. When business data separation is enabled, both customer profiles, segments, and measures have ownership information attached to them as detailed below. 
