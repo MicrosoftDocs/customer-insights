@@ -30,7 +30,9 @@ Ownership of the customer profiles is determined based on mappings that are conf
 
 1. Go to **Data** > **Unify** > **Business units**
 2. Select the column that identifies the business unit for each entity that contributes to unification. 
-3. Specify the mapping between the values in the columns that were selected above and business units. For example, 'US' maps to the US business unit, 'Mexico' maps to the Mexican business unit, etc. 
+3. Specify the mapping between the values in the columns that were selected above and business unit teams. For example, 'US' maps to the US business unit team, 'Mexico' maps to the Mexican business unit team, etc. 
+
+Customer profiles are owned by teams within business units (as opposed to being owned by business units directly) to provide better control of data access.   
 
  > [!NOTE]
    > Profiles will only be de-duplicated and unified if the business unit values match. 
@@ -40,16 +42,13 @@ Ownership of the customer profiles is determined based on mappings that are conf
 Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of the US business unit then any segment and measure that user creates is owned by the US business unit. At this time it is not possible to assign segments nor measures to other business units.
 
 ### Roles and teams
-Apart from ownership, the other component of determining access to data in Dataverse is the user's Dataverse role(s) and the teams they belong to.  
+Apart from ownership, the other component of determining access to data in Dataverse are the user's Dataverse role(s) and the teams they belong to.  
 
 #### Dataverse roles
-Access to data in dataverse is governed by the ownership of the information and the Dataverse role of the user.
-
-Default roles.
-
-Customization of Dataverse roles.
+To have access to any data from Customer Insights, the user needs to have the *Customer Insights Data Reader* role in Dataverse. This role is assigned automatically to users that has any Customer Insights role as detailed below.
 
 #### Dataverse teams
+
 
 #### Customer Insights roles
 
