@@ -11,7 +11,7 @@ manager: skumm
 ms.custom: bap-template
 ---
 
-# Business unit data separation and Role-based access control (Public preview)
+# Business unit (BU) data separation and Role-based access control (Public preview)
 Business unit (BU) data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. Because these controls are applied to the data in Microsoft Dataverse, the integrity of those controls propagates to all other Dynamics 365 and Power Platform applications automatically.
 
 ## Prerequisites
