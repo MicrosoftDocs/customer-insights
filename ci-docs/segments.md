@@ -1,7 +1,7 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 11/28/2022
+ms.date: 01/13/2023
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -70,6 +70,14 @@ Select next to a segment to view available actions.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
+
+### Segment management tips
+
+The smaller the number of segments and measures that need to be refreshed daily, the quicker the overall system refresh takes. To lower the number of segments refreshed daily, consider the following tips:
+
+- When a campaign is over and you no longer need a segment, **Deactivate** it. Deactivate saves the segment configuration, but stops the automatic refresh.
+
+- [Schedule](segments-schedule.md) segments on a slower cadence so they are not refreshed daily.
 
 ## View segment details
 
