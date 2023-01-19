@@ -3,8 +3,6 @@ title: "Data Subject Rights (DSR) requests under GDPR | Microsoft Docs"
 description: "Respond to Data Subject Requests for Dynamics 365 Customer Insights."
 ms.date: 08/31/2022
 ms.reviewer: mhart
-
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
@@ -42,7 +40,7 @@ As a Customer Insights admin, remove Customer Insights customer data that was de
 
    :::image type="content" source="media/gdpr-data-sources.png" alt-text="Handling GDPR delete requests for customer data.":::
 
-1. After a successful data sources refresh, run the downstream refreshes too. Especially, if you don't have a recurring full refresh of Customer Insights scheduled.
+1. After a successful data source refresh, run the downstream refreshes too. Especially, if you don't have a recurring full refresh of Customer Insights scheduled.
 
    > [!IMPORTANT]
    > Static segments are not included in a full refresh nor downstream refreshes. In order to comply with the delete request for customer data, recreate the static segments with the refreshed source data.
