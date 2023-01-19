@@ -16,7 +16,7 @@ Business unit (BU) data separation and Role-based access control (RBAC) allow ad
 
 ## Prerequisites
 * Business units and associated teams are defined in Dataverse -> [guide to setting up BUs in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
-* Users are assigned to appropriate business units and teams -> [link to guide to managing users and teams in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/users-settings)
+* Users are assigned to appropriate business units and teams -> [guide to managing users and teams in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/users-settings)
 * Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**. Notice that it is not possible to disable business unit data separation on an instance after it has been enabled. 
 * All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row. 
 
