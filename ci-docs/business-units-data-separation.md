@@ -56,7 +56,7 @@ To have access to any data from Customer Insights, the user needs to have the *C
 Click here for more information on Dataverse roles.
 
 #### Dataverse teams
-To have access to any data from Customer Insights, the user needs to be member of one of the teams that were specified in the business unit mapping step. Note, that a user can only belong to a team that belongs to the same business unit as the user.
+To have access to data from Customer Insights, the user needs to be member of one of the teams that were specified in the business unit mapping step. Note, that a user can only belong to a team that belongs to the same business unit as the user.
 
 Click here for more information on how to assign users to teams in Dataverse.
 
