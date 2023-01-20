@@ -79,7 +79,8 @@ This role can:
 * Prepare data estate by configuring data sources and unification.
 * Create segments and measures.
 * Configure enrichments and intelligence.
-  * Outputs of enrichments and ML models are tied to the customer profiles. Therefore, the outputs inherit the business unit ownership from the profiles.  
+  * Outputs of enrichments and ML models are tied to the customer profiles. Therefore, the outputs inherit the business unit ownership from the profiles.
+  * ML models are trained on all data, i.e., no BU data separation is enforced on training data.  
 * Configure exports
 * Manage Customer Insights users
 
