@@ -14,7 +14,7 @@ ms.custom: bap-template
 # Business unit (BU) data separation and Role-based access control (Public preview)
 Business unit (BU) data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. Because these controls are applied to the data in Microsoft Dataverse, the integrity of those controls propagates to all other Dynamics 365 and Power Platform applications automatically.
 
-Role-based access control additionally enables the admin to grant users different levels of access to Customer Insights functionality.
+Role-based access control additionally enables the administrator to grant users different levels of access to Customer Insights functionality.
 
 ## Prerequisites
 * Business units and associated teams are defined in Dataverse -> [guide to setting up BUs in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
@@ -32,7 +32,7 @@ Every piece of data that is stored in Dataverse has an owner, which is critical 
 Ownership of the customer profiles is determined based on mappings that are configured in the Unify step:
 
 1. Go to **Data** > **Unify** > **Business units**
-2. Under **Business unit data separation**, select the column that identifies the business unit for each entity that contributes to unification. 
+2. Under **Business unit data separation**, select the column that identifies the business unit for each entity that contributes to unification. Note that additional unification rules cannot be added on these columns.
 3. Under **Associate customer profiles with business units**, specify the mapping between the values in the columns that were selected above and business unit teams. For example, 'A' maps to the A business unit team, 'B' maps to the B business unit team, etc. 
 
 ![Screenshot of business unit mappings](media/BU_mappings.png)
@@ -69,7 +69,7 @@ An example of the default business unit configuration is depicted below, where m
 *Example of a BU structure with the Org parent business unit at the top and child BUs A to D below*
 
  > [!NOTE]
-   > * Only the default configurations are currently supported. Altering RBAC settings in Dataverse can lead to unexpected results.
+   > * Only the default table configurations are currently supported. Altering RBAC settings in Dataverse can lead to unexpected results.
 
 ## Customer Insights roles
 The Customer Insights roles determine the user's access to Customer Insights functionality.
