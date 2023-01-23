@@ -82,6 +82,14 @@ The example above illustrates the segmentation capability. We've defined a segme
 
    When using the OR operator, all conditions must be based on entities included in the relationship path.
 
+
+
+
+
+
+
+
+
 1. To create different sets of customer records, create multiple rules. To include the customers required for your business case, combine groups. Specifically, if you can't include an entity in a rule because of the specified relationship path, create a new rule to choose attributes from it.
 
       :::image type="content" source="media/segment-rule-grouping.png" alt-text="Add a new rule to a segment and choose the set operator.":::
