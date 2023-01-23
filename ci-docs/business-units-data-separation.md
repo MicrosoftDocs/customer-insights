@@ -33,7 +33,7 @@ Ownership of the customer profiles is determined based on mappings that are conf
 
 1. Go to **Data** > **Unify** > **Business units**
 2. Under **Business unit data separation**, select the column that identifies the business unit for each entity that contributes to unification. Note that additional unification rules cannot be added on these columns.
-3. Under **Associate customer profiles with business units**, specify the mapping between the values in the columns that were selected above and business unit teams. For example, 'A' maps to the A business unit team, 'B' maps to the B business unit team, etc. 
+3. Under **Associate customer profiles with business units**, specify the mapping between the values in the columns that were selected above and business unit teams. For example, 'A' maps to the business unit A team, 'B' maps to the business unit B team, etc. 
 
 ![Screenshot of business unit mappings](media/BU_mappings.png)
 *Screenshot of business unit mapping.*
@@ -70,6 +70,8 @@ An example of the default business unit configuration is depicted below, where m
 
  > [!NOTE]
    > * Only the default table configurations are currently supported. Altering RBAC settings in Dataverse can lead to unexpected results.
+
+Customer profiles are not directly owned by business units - insted they are owned by teams as discussed above. This ensures more flexibility in how access control can be managed within business units.  
 
 ## Customer Insights roles
 The Customer Insights roles determine the user's access to Customer Insights functionality.
