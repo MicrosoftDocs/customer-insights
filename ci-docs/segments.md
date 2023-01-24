@@ -16,6 +16,10 @@ searchScope:
   - customerInsights
 ---
 
+<!-- Observations from editor: I usually see B2B and B2C, rather than B-to-B and B-to-C, although I don't find any specific guidance. Also, it's clever how the Create a Segment table is set up. -->
+
+
+
 # Segments overview
 
 Segments let you group your customers based on demographic, transactional, or behavioral attributes. Use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
@@ -39,7 +43,7 @@ Choose how to create a segment based on your target audience.
 Segment of accounts or segment of contacts (preview) with segment builder: [Build your own](segment-builder.md)
 
 > [!NOTE]
-> Most export destinations require contact information for Marketing purposes. Therefore, create segments of contacts to use for those exports.
+> Most export destinations require contact information for marketing purposes. Therefore, create segments of contacts to use for those exports.
 
 ---
 
@@ -55,7 +59,7 @@ Select next to a segment to view available actions.
 > Supported bulk operations include: refresh, download, delete, change state (activate/deactivate), change type (static/dynamic), and tags.
 
 - [**View**](#view-segment-details) the segment details, including member count trend and a preview of segment members.
-- **Download** the list of members as a .CSV file for one or more segments.
+- **Download** the list of members as a CSV file for one or more segments.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
 - **Refresh** one or more segments manually to include the latest data. The **Last refreshed** column shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
@@ -112,9 +116,9 @@ Export segments to other apps to further use the data. Export a segment from the
 
 When you approach or exceed the number of active segments based on the [service limits](service-limits.md), you might experience the following:
 
-- Typical system refresh time is slower
-- Running or refreshing individual segments is slower
-- Refresh failures indicating out of memory
+- Typical system refresh time is slower.
+- Running or refreshing individual segments is slower.
+- Refresh failures indicating out of memory.
 
 The complexity of your segments can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active segments. These messages display on the **Segments** list page. If you encounter these messages or symptoms, see the following recommendations.
 

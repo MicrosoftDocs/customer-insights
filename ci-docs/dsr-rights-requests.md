@@ -17,7 +17,7 @@ We're committed to helping our customers meet their GDPR requirements. It includ
 
 ## Responding to GDPR data subject delete requests for Customer Insights
 
-The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in the General Data Protection Regulation (GDPR). Removing personal data includes removing all personal data and system-generated logs, except audit log information.
+The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
 
 ### Manage data subject delete requests
 
@@ -40,7 +40,7 @@ As a Customer Insights admin, remove Customer Insights customer data that was de
 
    :::image type="content" source="media/gdpr-data-sources.png" alt-text="Handling GDPR delete requests for customer data.":::
 
-1. After a successful data source refresh, run the downstream refreshes too. Especially, if you don't have a recurring full refresh of Customer Insights scheduled.
+1. After a successful data source refresh, run the downstream refreshes too, especially if you don't have a recurring full refresh of Customer Insights scheduled.
 
    > [!IMPORTANT]
    > Static segments are not included in a full refresh nor downstream refreshes. In order to comply with the delete request for customer data, recreate the static segments with the refreshed source data.
@@ -55,7 +55,7 @@ As a Customer Insights admin, delete Customer Insights user data.
 
 1. Go to **Admin** > **Security** > and select the **Users** tab.
 
-1. Select the check box for the users you want to delete.
+1. Select the checkbox for the users you want to delete.
 
 1. Select **Remove**.
 
