@@ -16,6 +16,10 @@ searchScope:
   - customerInsights
 ---
 
+<!-- Observations from editor: I usually see B2B and B2C, rather than B-to-B and B-to-C, although I don't find any specific guidance. Also, it's clever how the Create a Segment table is set up. -->
+
+
+
 # Segments overview
 
 Segments let you group your customers based on demographic, transactional, or behavioral attributes. Use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
