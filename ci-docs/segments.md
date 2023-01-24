@@ -39,7 +39,7 @@ Choose how to create a segment based on your target audience.
 Segment of accounts or segment of contacts (preview) with segment builder: [Build your own](segment-builder.md)
 
 > [!NOTE]
-> Most export destinations require contact information for Marketing purposes. Therefore, create segments of contacts to use for those exports.
+> Most export destinations require contact information for marketing purposes. Therefore, create segments of contacts to use for those exports.
 
 ---
 
