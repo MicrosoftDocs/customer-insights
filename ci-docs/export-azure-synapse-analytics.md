@@ -38,6 +38,10 @@ In Azure:
 
 - If your Customer Insights environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md), the user who sets up the connection to Azure Synapse Analytics needs at least the built-in **Reader** role on the Data Lake Storage account. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
+## Known limitation
+
+Azure Synapse export doesn't support incremental refresh for data sources if an environment uses a custom Azure Data Lake for data storage.
+
 ## Set up connection to Azure Synapse
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
