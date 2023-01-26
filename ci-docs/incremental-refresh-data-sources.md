@@ -55,8 +55,8 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 - **FullData**: Folder with data files containing initial records
 - **IncrementalData**: Folder with date/time hierarchy folders in **yyyy/mm/dd/hh** format containing the incremental updates. **hh** represents the UTC hour of the updates and contains the **Upserts** and **Deletes** folders. **Upserts** contains data files with updates to existing records or new records. **Deletes** contains data files with records to be removed.
 
- > [!NOTE]
- > The incremental **hh** or hourly folder is not processed until after the hour is complete.
+  > [!NOTE]
+  > The incremental refresh begins an hour after the timestamp. For example, if the timestamp is 2023/01/06/08 the incremental refresh starts at 9:00 am on January 6, 2023.
 
 1. When adding or editing a data source, navigate to the **Attributes** pane for the entity.
 
@@ -76,7 +76,7 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 1. If the **Primary key** is not selected, select the primary key. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
 
    > [!NOTE]
-   > If there are two records for a primary key, an upsert and delete, the record with the last modified date is used. For example, if the delete timestamp is 2023/01/06/08 and the upsert timestamp is 2023/01/23/08, Customer Insights uses the upsert record. If the delete is after the upsert, then Customer Insights assumes the record is deleted.
+   > If there are two records for a primary key, an upsert and delete, the record with the last modified date is used. For example, if the delete timestamp is 2023/01/06/08 and the upsert timestamp is 2023/01/23/08, Customer Insights uses the upsert record. If the delete occurred after the upsert, then Customer Insights assumes the record is deleted.
 
 1. Select **Close** to save and close the pane.
 
