@@ -1,14 +1,11 @@
 ---
 title: "Incremental refresh for Power Query and Azure Data Lake data sources"
 description: "Refresh new and updated data for large data sources based on Power Query or Azure data lake data sources."
-ms.date: 01/06/2023
+ms.date: 01/26/2023
 ms.reviewer: v-wendysmith
-ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 ms.custom: bap-template
 searchScope: 
   - ci-system-schedule
@@ -58,6 +55,9 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 - **FullData**: Folder with data files containing initial records
 - **IncrementalData**: Folder with date/time hierarchy folders in **yyyy/mm/dd/hh** format containing the incremental updates. **hh** represents the UTC hour of the updates and contains the **Upserts** and **Deletes** folders. **Upserts** contains data files with updates to existing records or new records. **Deletes** contains data files with records to be removed.
 
+ > [!NOTE]
+ > The incremental **hh** or hourly folder is not processed until after the hour is complete.
+
 1. When adding or editing a data source, navigate to the **Attributes** pane for the entity.
 
 1. Review the attributes. Make sure a created or last updated date attribute is set up with a *dateTime* **Data format** and a *Calendar.Date* **Semantic type**. Edit the attribute if necessary and select **Done**.
@@ -74,6 +74,9 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 1. For **Last updated**, select the date timestamp attribute.
 
 1. If the **Primary key** is not selected, select the primary key. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
+
+   > [!NOTE]
+   > If there are two records for a primary key, an upsert and delete, the record with the last modified date is used. For example, if the delete timestamp is 2023/01/06/08 and the upsert timestamp is 2023/01/23/08, Customer Insights uses the upsert record. If the delete is after the upsert, then Customer Insights assumes the record is deleted.
 
 1. Select **Close** to save and close the pane.
 
