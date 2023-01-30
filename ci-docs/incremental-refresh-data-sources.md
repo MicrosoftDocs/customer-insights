@@ -56,7 +56,7 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 - **IncrementalData**: Folder with date/time hierarchy folders in **yyyy/mm/dd/hh** format containing the incremental updates. **hh** represents the UTC hour of the updates and contains the **Upserts** and **Deletes** folders. **Upserts** contains data files with updates to existing records or new records. **Deletes** contains data files with records to be removed.
 
   > [!NOTE]
-  > Customer Insights processes the files in the IncrementalData folder after the specified UTC hour ends. For example, if Customer Insights starts processing the incremental refresh on January 21st at 8:15 AM, all files that are in folders dated January 21st 7:00 AM and earlier are processed. Any January 21st 8:00 AM folders are not picked up for processing.
+  > Customer Insights processes the files in the IncrementalData folder after the specified UTC hour ends. For example, if Customer Insights starts processing the incremental refresh on January 21, 2023 at 8:15 AM, all files that are in folder 2023/01/21/07 (representing data files stored from 7 AM to 8 AM) are processed. Any files in folder 2023/01/21/08 (representing the current hour where the files are still being generated) are not processed until the next run.
 
 1. When adding or editing a data source, navigate to the **Attributes** pane for the entity.
 
