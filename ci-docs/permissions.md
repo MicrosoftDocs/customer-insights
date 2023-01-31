@@ -29,6 +29,11 @@ Access to Customer Insights is restricted to users in your organization that are
 - View exports in **Exports** page.
 - Install and use the **Power BI Customer Insights** dashboard.
 
+## Marketing Contributor
+
+- Create segments using the **Segments** page.
+- Create measures using the **Measures** page.
+
 ## Contributor
 
 - All permissions available to the Viewer.
