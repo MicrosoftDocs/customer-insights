@@ -14,7 +14,7 @@ ms.custom: bap-template
 # Business unit (BU) data separation and Role-based access control (Public preview)
 Business unit (BU) data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. Because these controls are applied to the data in Microsoft Dataverse, the integrity of those controls propagates to all other Dynamics 365 and Power Platform applications automatically.
 
-A new role, *BU Contributor*, enables the administrator to grant users that primarily work with marketing and activation access to only those areas of Customer Insights.
+A new role, *Marketing contributor*, enables the administrator to grant users that primarily work with marketing and activation access to only those areas of Customer Insights.
 
 ## Prerequisites
 * Business units and associated teams are defined in Dataverse -> [guide to setting up BUs in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
@@ -99,13 +99,13 @@ The contributor role has the same rights as the administrator role except that i
    > * This is a highly privledged role.
    > * This role should only be grated to users that belong to the *Org* business unit.
 
-### The BU contributor role
+### The Marketing contributor role
 When business unit data separation is enabled, it is the responsibility of the administrators and/or contributors on the *Org* level to prepare the data state. The BU contributor role is given to users that belong to the child business units. This role can:
 
 * Create segments
 * Create measures
 
-This role can only access customer profiles that belong to their BU and any child BUs. For example, if a BU contributor creates a segment with all customers then it will only contain the customers that are owned by the BU that the BU contributor belongs to. Similarly, measures can only be created on tables that have a relationship path to the customer profiles.
+This role can only access customer profiles that belong to their BU and any child BUs. For example, if a Marketing contributor creates a segment with all customers then it will only contain the customers that are owned by the BU that the Marketing contributor belongs to. Similarly, measures can only be created on tables that have a relationship path to the customer profiles.
 
 With the default Dataverse RBAC settings, this role can only see segments and measures that belong to the same business unit as the user belongs to.
 
@@ -115,7 +115,7 @@ The viewer role can view all data regardless of the user's business unit, but it
 ## Customer Insights and Customer Journey Orchestration
 Customer Insights and Customer Journey Orchestration (CJO) are tightly integrated for a delightful activation journey. 
 
-BU contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit.
+BMarketing contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit.
 
 ### Current limitations
 * A customer profile cannot be owned by more than one business unit. At the cost of a higher profile count, an additional global instance can be used if customers have business with more than one business unit and it is imperative to unify across business units.
