@@ -1,13 +1,12 @@
 ---
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 11/16/2022
-ms.subservice: audience-insights
+ms.date: 01/31/2023
 ms.reviewer: v-wendysmith
-ms.topic: conceptual
+ms.topic: how-to
 author: srivas15
 ms.author:  shsri
-manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-entities
   - ci-customer-card
@@ -25,66 +24,58 @@ Customer activities are actions or events performed by customers or business con
 
 ## Define a customer activity
 
-An entity must have at least one attribute of type **Date** to be included in a customer timeline. The **Add activity** control is disabled if no such entity is found.
+A table must have at least one attribute of type **Date** to be included in a customer timeline. The **Add activity** control is disabled if no such table is found.
 
-1. Go to **Data** > **Activities**.
+1. Go to **Data** > **Activities**. Select **Add activity** to start the guided experience.
 
-1. Select **Add activity** to start the guided experience.
+1. In the **Activity tables** step, **Select tables** and choose the transactional or activity tables to include in your unified activity. Select **Apply**.
 
-1. In the **Activity data** step, enter the following information:
+1. For each table, choose the following information:
 
-   - **Activity name**: Select a name for your activity.
-   - **Activity entity**: Select an entity that includes transactional or activity data.
-   - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
+   - **Activity type**: Choose from the semantic types, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, and *Subscription*. If a semantic activity type isn't relevant for the new activity, choose a non-semantic type.
+   - **Primary key**: The primary key uniquely  identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
+   > [!NOTE]
+   > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
+
+   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with table and primary key.":::
+
+1. Select **Next**.
+
+1. In the **Activity fields** step, enter the following information:
+
+   - **Activity name**: Name for your activity.
+   - **Timestamp**: Field that represents the start time of your activity.
+   - **Event activity**: Field that is the event for this activity.
+   - **Web address** (optional): Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* table, which can be consumed downstream using [APIs](apis.md).
+   - **Additional detail** (optional): Field with relevant information for this activity.
+   - **Show this activity in the timeline on your customer profile**: **Yes** to show the activity in the timeline or **No** to hide it.
      > [!NOTE]
-     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity entity. 
+     > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
+   - **Map field types for your activity's attributes?**: **Yes** to help the system better understand the relevance of your activity data or **No** do not map.
 
-   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with name, entity, and primary key.":::
+1. If you chose **Yes** to map your field types, select the appropriate attributes to map your data. Required fields are determined by the selected activity type.
 
 1. Select **Next**.
 
 1. In the **Relationship** step, select **Add relationship** to connect your activity data to its corresponding customer record. This step visualizes the connection between entities.  
 
-   - **Foreign key**: Foreign field in your activity entity that will be used to establish a relationship with another entity.
-   - **To entity name**: Corresponding source customer entity with which your activity entity will be in relationship. You can only relate to source customer entities that are used in the data unification process.
-   - **Relationship name**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
+   - **Foreign key**: Field in your activity table that will be used to establish a relationship with another table.
+   - **To table name**: Corresponding source customer table with which your activity table will be in relationship. You can only relate to source customer tables that are used in the data unification process.
+   - **Relationship name**: If a relationship between this activity table and the selected source customer table already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
 
-   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
+   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the relationship.":::
 
    > [!TIP]
-   > In B-to-B environments, you can select between account entities and other entities. If you select an account entity, the relationship path is automatically set. For other entities, you have to define the relationship path over one or more intermediate entities until you reach an account entity.
+   > In B-to-B environments, you can select between account tables and other tables. If you select an account table, the relationship path is automatically set. For other tables, you have to define the relationship path over one or more intermediate tables until you reach an account table.
 
 1. Select **Apply** to create the relationship.
 
 1. Select **Next**.
 
-1. In the **Activity unification** step, choose the activity event and the start time of your activity.
-   - **Required fields**
-      - **Event activity**: Field that is the event for this activity.
-      - **Timestamp**: Field that represents the start time of your activity.
-
-   - **Optional fields**
-      - **Additional detail**: Field with relevant information for this activity.
-      - **Icon**: Icon that best represents this activity type.
-      - **Web address**: Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* entity, which can be consumed downstream using [APIs](apis.md).
-
-   - **Show in timeline**
-      - Choose if you what to show this activity in the timeline view on your customer profiles. Select **Yes** to show the activity in the timeline or **No** to hide it.
-        > [!NOTE]
-        > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
-
-      :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity entity.":::
-
-1. Select **Next** to choose the activity type, or select **Finish and review** to save the activity with the activity type set to **Other**.
-
-1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, and *Subscription* activity types support semantics after agreeing to map the fields. If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
-
-1. Select **Next**.
-
 1. In the **Review** step, verify your selections. Go back to any of the previous steps and update the information if necessary.
 
-1. Select **Save activity** to apply your changes and select **Done** to go back to **Data** > **Activities**. The created activity displays.
+1. Select **Save and close** to apply your changes.
 
 1. After creating all your activities, select **Run** to process them.
 
@@ -92,17 +83,13 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
 ## Manage existing customer activities
 
-Go to **Data** > **Activities** to view your saved activities, their source entity, the activity type, and if they are included in the customer timeline. You can sort the list of activities by any column or use the search box to find the activity you want to manage.
+Go to **Data** > **Activities** to view your saved activities, their source table, the activity type, and if they are included in the customer timeline. You can sort the list of activities by any column or use the search box to find the activity you want to manage.
 
-Select an activity to view available actions.
-
-- **Edit** the activity to change it's configuration. The configuration opens on the review step. After changing the configuration, select **Save activity** and then select **Run** to process the changes.
-- **Rename** the activity. Select **Save** to apply your changes.
-- **Delete** the activity. To delete more than one activity at once, select the activities and then **Delete**. Confirm the deletion.
+Select an activity to rename or delete the activity. To edit, select **Configure activities**.
 
 ## View activity timelines on customer profiles
 
-1. If you selected **Show in activity timeline** in the activity configuration, go to **Customers** and select a customer profile to view the customer's activities in the **Activity timeline** section.
+1. If you selected **Show this activity in the timeline on your customer profile** in the activity configuration, go to **Customers** and select a customer profile to view the customer's activities in the **Activity timeline** section.
 
    :::image type="content" source="media/Activity_Timeline1.PNG" alt-text="View configured activities in Customer Profiles.":::
 
@@ -121,10 +108,10 @@ Select an activity to view available actions.
 
 ## Define a contact activity
 
-For business accounts (B-to-B), use a *ContactProfile* entity to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
+For business accounts (B-to-B), use a *ContactProfile* table to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
 
    > [!NOTE]
-   > To define a contact-level activity, a *ContactProfile* entity must be created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping).
+   > To define a contact-level activity, a *ContactProfile* table must be created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping).
    >
    > You must have both **AccountID** and **ContactID** attributes for each record within your activity data.
   
@@ -135,14 +122,14 @@ For business accounts (B-to-B), use a *ContactProfile* entity to capture activit
 1. In the **Activity data** step, enter the following information:
 
    - **Activity name**: Select a name for your activity.
-   - **Activity entity**: Select an entity that includes transactional or activity data.
+   - **Activity table**: Select an table that includes transactional or activity data.
    - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
      > [!NOTE]
-     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity entity. 
+     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
 
 
-1. In the **Relationships** step, create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary entity. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
+1. In the **Relationships** step, create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary table. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
    - Example relationship for an activity called *Purchases*:
       - **Purchases Source Activity Data** > **Contact Data** on the attribute **ContactID**
       - **Contact Data** > **Account Data** on the attribute **AccountID**
