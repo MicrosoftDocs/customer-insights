@@ -14,7 +14,7 @@ ms.custom: bap-template
 # Business unit (BU) data separation and Role-based access control (Public preview)
 Business unit (BU) data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. Because these controls are applied to the data in Microsoft Dataverse, the integrity of those controls propagates to all other Dynamics 365 and Power Platform applications automatically.
 
-A new role, *Marketing contributor*, enables the administrator to grant users that primarily work with marketing and activation access to only those areas of Customer Insights.
+A new role in Customer Insights, *Marketing contributor*, enables the administrator to grant users that primarily work with marketing and activation access to only those areas of Customer Insights.
 
 ## Prerequisites
 * Business units and associated teams are defined in Dataverse -> [guide to setting up BUs in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
@@ -38,13 +38,14 @@ Ownership of the customer profiles is determined based on mappings that are conf
 ![Screenshot of business unit mappings](media/BU_mappings.png)
 *Screenshot of business unit mapping.*
 
-Customer profiles are owned by teams within business units (as opposed to being owned by business units directly) to provide better control of data access.   
+Customer profiles are owned by teams within business units (as opposed to being owned by business units directly) to provide better control of data access. Only one team per business unit can be specified in the mapping rules.  
 
  > [!NOTE]
    > * Profiles will only be de-duplicated and unified if the business unit values match. 
    > * Profiles that do not match any of the mappings are assigned to the Org business unit.
    > * Profiles belong to exactly one business unit.
    > * The unification rules are the same for all business units.
+   > * Any changes to the BU separation configuration will trigger a full refresh.
 
 #### Assignment of ownership to segments and measures
 Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of business unit *A* then any segment and measure that user creates is owned by business unit *A*. At this time it is not possible to assign segments nor measures to other business units.
@@ -53,14 +54,14 @@ Ownership of segments and measures is determined based on the user that created 
 Apart from ownership, the other components of determining access to data in Dataverse are the user's Dataverse role(s) and the teams they belong to.  
 
 #### Dataverse security roles
-To have access to any data from Customer Insights, the user needs to have the *Customer Insights Data Reader* security role in Dataverse. This role is assigned automatically to users that has any Customer Insights role as detailed below. 
+To have access to any data from Customer Insights, the user needs to have the *Customer Insights Data Reader* security role in Dataverse. This role is assigned automatically to users that have any Customer Insights role as detailed below. 
 
-Click here for more information on Dataverse roles.
+Click here for more information on [Dataverse security roles.](https://learn.microsoft.com/en-us/power-platform/admin/database-security)
 
 #### Dataverse teams
 To have access to data from Customer Insights, the user needs to be member of one of the teams that were specified in the business unit mapping step. Note, that a user can only belong to a team that belongs to the same business unit as the user.
 
-Click here for more information on how to assign users to teams in Dataverse.
+Click here for more information on how to assign users to [teams.](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds#teams-including-group-teams)
 
 ## Default business unit configuration
 An example of the default business unit configuration is depicted below, where members of the Org business unit has access to all customer profiles, segments, and measures. Members of the other business units only have access to the customer profiles, segments, and measures that belong to their business unit. 
@@ -71,10 +72,10 @@ An example of the default business unit configuration is depicted below, where m
  > [!NOTE]
    > * Only the default table configurations are currently supported. Altering RBAC settings in Dataverse can lead to unexpected results.
 
-Customer profiles are not directly owned by business units - insted they are owned by teams as discussed above. This ensures more flexibility in how access control can be managed within business units.  
+Customer profiles are not directly owned by business units - insted they are owned by teams as discussed above. This ensures more flexibility in how access control can be managed within business units. Note that only one team per business unit can be specified in the mapping rules.  
 
 ## Customer Insights roles
-The Customer Insights roles determine the user's access to Customer Insights functionality.
+The Customer Insights roles determine the user's access to Customer Insights functionality. Below is a high-level summary in the context of business unit data separation of the available roles. Click [here](https://learn.microsoft.com/en-us/dynamics365/customer-insights/permissions) for more general and detailed information.
 
 ### The administrator role
 The administrator role has access to all of Customer Insights, including all customer profiles, segments, and measures regardless of the user's business unit. 
@@ -100,10 +101,10 @@ The contributor role has the same rights as the administrator role except that i
    > * This role should only be grated to users that belong to the *Org* business unit.
 
 ### The Marketing contributor role
-When business unit data separation is enabled, it is the responsibility of the administrators and/or contributors on the *Org* level to prepare the data state. The BU contributor role is given to users that belong to the child business units. This role can:
+When business unit data separation is enabled, it is the responsibility of the administrators and/or contributors on the *Org* level to prepare the data state. The marketing contributor leverages the data estate to create segments and measures, and activates those, for example, in Customer Journey Orchestration. This role can:
 
-* Create segments
-* Create measures
+* Create segments (only *build your own*)
+* Create measures (only *build your own*)
 
 This role can only access customer profiles that belong to their BU and any child BUs. For example, if a Marketing contributor creates a segment with all customers then it will only contain the customers that are owned by the BU that the Marketing contributor belongs to. Similarly, measures can only be created on tables that have a relationship path to the customer profiles.
 
@@ -115,18 +116,16 @@ The viewer role can view all data regardless of the user's business unit, but it
 ## Customer Insights and Customer Journey Orchestration
 Customer Insights and Customer Journey Orchestration (CJO) are tightly integrated for a delightful activation journey. 
 
-BMarketing contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit.
+Marketing contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit or child business units.
 
-### Current limitations
-* A customer profile cannot be owned by more than one business unit. At the cost of a higher profile count, an additional global instance can be used if customers have business with more than one business unit and it is imperative to unify across business units.
+### Notes
 
-* Segments and measures cannot be owned by more than one business unit nor be shared with other business units.
-
-* Synonyms in the BU mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
-
-* Only *build your own* segments and measures are supported.
-
-* Segments and Business measures are not stored in Dataverse yet.
+ > [!NOTE]
+   > * A customer profile cannot be owned by more than one business unit. At the cost of a higher profile count, an additional global instance can be used if customers have business with more than one business unit and it is imperative to unify across business units. 
+   > * Segments and measures cannot be owned by more than one business unit nor be shared with other business units.
+   > * Synonyms in the BU mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
+   > * Only *build your own* segments and measures are supported for the Marketing contributor role.
+   > * Segments and Business measures are not stored in Dataverse yet.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
