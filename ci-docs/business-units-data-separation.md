@@ -14,7 +14,7 @@ ms.custom: bap-template
 # Business unit (BU) data separation and Role-based access control (Public preview)
 Business unit (BU) data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. Because these controls are applied to the data in Microsoft Dataverse, the integrity of those controls propagates to all other Dynamics 365 and Power Platform applications automatically.
 
-A new role in Customer Insights, *Marketing contributor*, enables the administrator to grant users that primarily work with marketing and activation access to only the *segments* and *measures* areas of Customer Insights.
+A new role in Customer Insights, *Marketing contributor*, enables the administrator to grant users that primarily work with marketing and activation access to only the *segments* and *measures* areas of Customer Insights, so that they cannot influence the business unit data separation rules.
 
 ## Prerequisites
 * Business units and associated teams are defined in Dataverse -> [guide to setting up BUs in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
@@ -28,7 +28,7 @@ Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, whi
 ### Assignment of ownership
 Every piece of data that is stored in Dataverse has an owner, which is critical to how access to this data is governed. When business data separation is enabled, both customer profiles, segments, and measures have ownership information attached to them as detailed below. 
 
-#### Assignment of ownership to customer profiles
+#### Ownership of customer profiles
 Ownership of the customer profiles is determined based on mappings that are configured in the Unify step:
 
 1. Go to **Data** > **Unify** > **Business units**
@@ -42,24 +42,25 @@ Customer profiles are owned by teams within business units (as opposed to being 
 
  > [!NOTE]
    > * Profiles will only be de-duplicated and unified if the business unit values match. 
-   > * Profiles that do not match any of the mappings are assigned to the Org business unit.
+   > * Profiles that do not match any of the mappings are assigned to the *Org* business unit.
+   > * All profiles are assigned to the *Org* BU if BU data separation is not enabled.
    > * Profiles belong to exactly one business unit.
    > * The unification rules are the same for all business units.
-   > * Any changes to the BU separation configuration will trigger a full refresh.
+   > * Any changes to the BU data separation configuration will trigger a full refresh.
 
-#### Assignment of ownership to segments and measures
+#### Ownership of segments and measures
 Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of business unit *A* then any segment and measure that user creates is owned by business unit *A*. At this time it is not possible to assign segments nor measures to other business units.
 
 ### Roles and teams
 Apart from ownership, the other components of determining access to data in Dataverse are the user's Dataverse role(s) and the teams they belong to.  
 
 #### Dataverse security roles
-To have access to any data from Customer Insights, the user needs to have the *Customer Insights Data Reader* security role in Dataverse. This role is assigned automatically to users that have any Customer Insights role as detailed below. 
+To access any data from Customer Insights in Dataverse, the user needs to have the *Customer Insights Data Reader* security role in Dataverse. This role is assigned automatically to users that have any Customer Insights role. 
 
 Click here for more information on [Dataverse security roles.](https://learn.microsoft.com/en-us/power-platform/admin/database-security)
 
 #### Dataverse teams
-To have access to data from Customer Insights, the user needs to be member of one of the teams that were specified in the business unit mapping step. Note, that a user can only belong to a team that belongs to the same business unit as the user.
+To access data from Customer Insights, the user needs to be member of one of the teams that were specified in the business unit mapping step. Note, that a user can only belong to a team that belongs to the same business unit as the user.
 
 Click here for more information on how to assign users to [teams.](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds#teams-including-group-teams)
 
@@ -78,7 +79,6 @@ Customer profiles are not directly owned by business units - instead they are ow
 The Customer Insights roles determine the user's access to Customer Insights functionality. Below is a high-level summary of the available roles in the context of business unit data separation. Click [here](https://learn.microsoft.com/en-us/dynamics365/customer-insights/permissions) for more general and detailed information.
 
 ### The administrator role
-The administrator role has access to all of Customer Insights, including all customer profiles, segments, and measures regardless of the user's business unit. 
 This role can:
 
 * Prepare data estate by configuring data sources and unification.
@@ -129,6 +129,7 @@ Customer insights writes data into Dataverse with ownership and RBAC properties 
    > * Synonyms in the BU mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
    > * Only *build your own* segments and measures are supported for the Marketing contributor role.
    > * Segments and Business measures are not stored in Dataverse yet.
+   > * Modernized business units is not supported.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
