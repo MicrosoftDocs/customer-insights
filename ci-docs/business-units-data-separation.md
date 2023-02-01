@@ -14,7 +14,7 @@ ms.custom: bap-template
 # Business unit (BU) data separation and Role-based access control (Public preview)
 Business unit (BU) data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. Because these controls are applied to the data in Microsoft Dataverse, the integrity of those controls propagates to all other Dynamics 365 and Power Platform applications automatically.
 
-A new role in Customer Insights, *Marketing contributor*, enables the administrator to grant users that primarily work with marketing and activation access to only those areas of Customer Insights.
+A new role in Customer Insights, *Marketing contributor*, enables the administrator to grant users that primarily work with marketing and activation access to only the *segments* and *measures* areas of Customer Insights.
 
 ## Prerequisites
 * Business units and associated teams are defined in Dataverse -> [guide to setting up BUs in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
@@ -64,7 +64,7 @@ To have access to data from Customer Insights, the user needs to be member of on
 Click here for more information on how to assign users to [teams.](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds#teams-including-group-teams)
 
 ## Default business unit configuration
-An example of the default business unit configuration is depicted below, where members of the Org business unit has access to all customer profiles, segments, and measures. Members of the other business units only have access to the customer profiles, segments, and measures that belong to their business unit. 
+An example of the default RBAC configuration is depicted below, where members of the Org business unit has access to all customer profiles, segments, and measures. Members of the child business units only have access to the customer profiles, segments, and measures that belong to their business unit. 
 
 ![Example of a BU structure with the Org parent business unit at the top and child business units A to D below](media/BU_structure_example.png)
 *Example of a BU structure with the Org parent business unit at the top and child BUs A to D below*
@@ -72,10 +72,10 @@ An example of the default business unit configuration is depicted below, where m
  > [!NOTE]
    > * Only the default table configurations are currently supported. Altering RBAC settings in Dataverse can lead to unexpected results.
 
-Customer profiles are not directly owned by business units - insted they are owned by teams as discussed above. This ensures more flexibility in how access control can be managed within business units. Note that only one team per business unit can be specified in the mapping rules.  
+Customer profiles are not directly owned by business units - instead they are owned by teams as discussed above. This ensures more flexibility in how access control can be managed within business units. Note that only one team per business unit can be specified in the mapping rules.  
 
 ## Customer Insights roles
-The Customer Insights roles determine the user's access to Customer Insights functionality. Below is a high-level summary in the context of business unit data separation of the available roles. Click [here](https://learn.microsoft.com/en-us/dynamics365/customer-insights/permissions) for more general and detailed information.
+The Customer Insights roles determine the user's access to Customer Insights functionality. Below is a high-level summary of the available roles in the context of business unit data separation. Click [here](https://learn.microsoft.com/en-us/dynamics365/customer-insights/permissions) for more general and detailed information.
 
 ### The administrator role
 The administrator role has access to all of Customer Insights, including all customer profiles, segments, and measures regardless of the user's business unit. 
@@ -111,7 +111,7 @@ This role can only access customer profiles that belong to their BU and any chil
 With the default Dataverse RBAC settings, this role can only see segments and measures that belong to the same business unit as the user belongs to.
 
 ### The viewer role
-The viewer role can view all data regardless of the user's business unit, but it cannot make any changes. This role is primarily meant for demo scenarios where all data in the environment is anonymized.
+The viewer role can view all data regardless of the user's business unit, but it cannot make any changes. This role is primarily meant for demo scenarios where all data in the environment is synthethic and/or anonymized.
 
 ## Customer Insights and Customer Journey Orchestration
 Customer Insights and Customer Journey Orchestration (CJO) are tightly integrated for a delightful activation journey. 
@@ -119,7 +119,7 @@ Customer Insights and Customer Journey Orchestration (CJO) are tightly integrate
 Marketing contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit or child business units.
 
 ## Customer Insights and Dataverse
-Customer insights writes data into Dataverse with ownership and RBAC properties for easy activation, for example, through [model-driven applications](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-app-overview). Using model-diven applications, data can easily be leveraged in customer service, sales, operations, and other business functions.
+Customer insights writes data into Dataverse with ownership and RBAC properties for easy activation, for example, through [model-driven applications](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-app-overview). Using model-diven applications, data can easily be leveraged in customer service, sales, operations, and other business functions with the benefits of fine-grained RBAC controls.
 
 ## Notes
 
