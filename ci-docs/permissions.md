@@ -31,8 +31,8 @@ Access to Customer Insights is restricted to users in your organization that are
 
 ## Marketing Contributor
 
-- Create segments using the **Segments** page.
-- Create measures using the **Measures** page.
+- Create segments using the **Segments** page (only *Build your own*).
+- Create measures using the **Measures** page (only *Build your own*).
 
 ## Contributor
 
