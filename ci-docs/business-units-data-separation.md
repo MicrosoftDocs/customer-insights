@@ -26,7 +26,7 @@ A new role in Customer Insights, *Marketing contributor*, enables the administra
 Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and [expressive security model that is built into Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds). Access to data is determined by the intersection of the Dataverse role(s) the user has, the teams they belong to, and the ownership of the data in question. In the following, these concepts are described in the Customer Insights context.
 
 ### Assignment of ownership
-Every piece of data that is stored in Dataverse has an owner, which is critical to how access to this data is governed. When business data separation is enabled, both customer profiles, segments, and measures have ownership information attached to them as detailed below. 
+Every piece of data that is stored in Dataverse has an owner, which is critical to how access to this data is governed. Both customer profiles, segments, and measures have ownership information attached to them as detailed below. 
 
 #### Ownership of customer profiles
 Ownership of the customer profiles is determined based on mappings that are configured in the Unify step:
@@ -48,8 +48,13 @@ Customer profiles are owned by teams within business units (as opposed to being 
    > * The unification rules and customer profile schema are the same for all business units.
    > * Any changes to the BU data separation configuration will trigger a full refresh.
 
-#### Ownership of segments and measures
-Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of business unit *A* then any segment and measure that user creates is owned by business unit *A*. At this time it is not possible to assign segments nor measures to other business units.
+#### Ownership of segments and business measures
+Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of business unit *A* then any segment and measure that user creates is owned by business unit *A*. 
+
+#### Ownership of activities, enrichments, intelligence, and customer measures
+Activities, enrichments, intelligence, and customer measures are tied to customer profiles, so they inherit the same owner as the associated customer profile.
+
+ML models are trained on all data, i.e., no BU data separation is enforced on training data. 
 
 ### Roles and teams
 Apart from ownership, the other components of determining access to data in Dataverse are the user's Dataverse role(s) and the teams they belong to.  
@@ -75,42 +80,19 @@ An example of the default RBAC configuration is depicted below, where members of
 
 Customer profiles are not directly owned by business units - instead they are owned by teams as discussed above. This ensures more flexibility in how access control can be managed within business units. Note that only one team per business unit can be specified in the mapping rules.  
 
+## Customer Insights roles 
+The Customer Insights roles determine the user's access to Customer Insights functionality. Click [here](https://learn.microsoft.com/en-us/dynamics365/customer-insights/permissions) for more general and detailed information.
 
-## Customer Insights roles
-The Customer Insights roles determine the user's access to Customer Insights functionality. Below is a summary of the available roles in the context of business unit data separation. Click [here](https://learn.microsoft.com/en-us/dynamics365/customer-insights/permissions) for more general and detailed information.
+The **administrator** and **contributor** roles are highly privledged and should only be given to users that belong to the *Org/Root* business unit. These users are typically responsible for preparing the data estate, i.e., setting up data sources, BU data separation rules, unification rules, etc. 
 
-### The administrator role
-This role can:
+The **marketing contributor** role leverages the data estate to create segments and measures, and activates those, for example, in Customer Journey Orchestration. This role has access to the following in CI:
 
-* Prepare the data estate by configuring data sources, BU data separation, and unification.
-* Create segments and measures.
-* Configure enrichments and intelligence.
-  * Outputs of enrichments and ML models are tied to the customer profiles. Therefore, the outputs inherit the business unit ownership from the profiles.
-  * ML models are trained on all data, i.e., no BU data separation is enforced on training data.  
-* Configure exports
-* Manage Customer Insights users
-
- > [!NOTE]
-   > * This is a highly privledged role.
-   > * This role should only be grated to users that belong to the *Org* business unit.
-
-### The contributor role
-For BU data separation purposes, the contributor role has the same rights as the administrator role except that it cannot manage Customer Insights users.
-
- > [!NOTE]
-   > * This is a highly privledged role.
-   > * This role should only be grated to users that belong to the *Org* business unit.
-
-### The Marketing contributor role
-When business unit data separation is enabled, it is typically the responsibility of the administrators and/or contributors on the *Org* level to prepare the data state. The marketing contributor leverages the data estate to create segments and measures, and activates those, for example, in Customer Journey Orchestration. This role can:
-
-* Create segments (only *build your own*)
-* Create measures (only *build your own*)
+* Segments (only *build your own*)
+* Measures (only *build your own*)
 
 Measures can only be created on tables that have a relationship path to the customer profiles.
 
-### The viewer role
-The viewer role has access to all parts of customer insights but it cannot make any changes. 
+The **viewer** role has access to all parts of customer insights but it cannot make any changes. 
 
 ## Customer Insights and Customer Journey Orchestration
 Customer Insights and Customer Journey Orchestration (CJO) are tightly integrated for a delightful activation journey. 
