@@ -38,14 +38,16 @@ Ownership of the customer profiles is determined based on mappings that are conf
 ![Screenshot of business unit mappings](media/BU_mappings.png)
 *Screenshot of business unit mapping.*
 
-Customer profiles are owned by teams within business units (as opposed to being owned by business units directly) to provide better control of data access. Only one team per business unit can be specified in the mapping rules.  
+Customer profiles are owned by teams within business units (as opposed to being owned by business units directly) to provide better control of data access. Only one team per business unit can be specified in the mapping rules. 
+
+* Profiles will only be de-duplicated and unified if the business unit values match. 
+* Profiles that do not match any of the mappings are assigned to the *Org* business unit.
+* All profiles are assigned to the *Org* BU if BU data separation is not enabled.
+* Profiles belong to exactly one business unit.
+* The unification rules and customer profile schema are the same for all business units.
 
  > [!NOTE]
-   > * Profiles will only be de-duplicated and unified if the business unit values match. 
-   > * Profiles that do not match any of the mappings are assigned to the *Org* business unit.
-   > * All profiles are assigned to the *Org* BU if BU data separation is not enabled.
-   > * Profiles belong to exactly one business unit.
-   > * The unification rules and customer profile schema are the same for all business units.
+   > * Access to customer profiles within Customer Insights is determined based on the business unit of the user and the owning business unit of the customer profile.
    > * Any changes to the BU data separation configuration will trigger a full refresh.
 
 #### Ownership of segments and business measures
