@@ -54,7 +54,7 @@ Ownership of segments and measures is determined based on the user that created 
 #### Ownership of activities, enrichments, intelligence, and customer measures
 Activities, enrichments, intelligence, and customer measures are tied to customer profiles, so they inherit the same owner as the associated customer profile.
 
-ML models are trained on all data, i.e., no BU data separation is enforced on training data. 
+Intelligence models are trained on all data, i.e., no business unit data separation is enforced on training data. 
 
 ### Roles and teams
 Apart from ownership, the other components of determining access to data in Dataverse are the user's Dataverse role(s) and the teams they belong to.  
@@ -83,9 +83,9 @@ Customer profiles are not directly owned by business units - instead they are ow
 ## Customer Insights roles 
 The Customer Insights roles determine the user's access to Customer Insights functionality. Click [here](https://learn.microsoft.com/en-us/dynamics365/customer-insights/permissions) for more general and detailed information.
 
-The **administrator** and **contributor** roles are highly privledged and should only be given to users that belong to the *Org/Root* business unit. These users are typically responsible for preparing the data estate, i.e., setting up data sources, BU data separation rules, unification rules, etc. 
+The **administrator** and **contributor** roles are highly privledged and should only be given to users that belong to the *Org/Root* business unit. These users are typically responsible for preparing the data estate, i.e., setting up data sources, business unit data separation rules, unification rules, etc. 
 
-The **marketing contributor** role leverages the data estate to create segments and measures, and activates those, for example, in Customer Journey Orchestration. This role has access to the following in CI:
+The **marketing contributor** role leverages the data estate to create segments and measures, and activates those, for example, in Customer Journey Orchestration. This role has access to the following in Customer Insights:
 
 * Segments (only *build your own*)
 * Measures (only *build your own*)
