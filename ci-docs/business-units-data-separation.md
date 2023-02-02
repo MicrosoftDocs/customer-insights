@@ -23,7 +23,7 @@ A new role in Customer Insights, *Marketing contributor*, enables the administra
 * All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row. 
 
 ## Customer Insights and Dataverse
-Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and [expressive security model that is built into Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds). Access to data is determined by the intersection of the Dataverse role(s) the user has, the teams they belong to, and the ownership of the data in question. In the following, these concepts are described in the Customer Insights context.
+Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and [expressive security model that is built into Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds). Access to data in Dataverse is determined by the intersection of the Dataverse role(s) the user has, the teams they belong to, and the ownership of the data in question. In the following, these concepts are described in the Customer Insights context.
 
 ### Assignment of ownership
 Every piece of data that is stored in Dataverse has an owner, which is critical to how access to this data is governed. Both customer profiles, segments, and measures have ownership information attached to them as detailed below. 
@@ -47,8 +47,9 @@ Customer profiles are owned by teams within business units (as opposed to being 
 * The unification rules and customer profile schema are the same for all business units.
 
  > [!NOTE]
-   > * Access to customer profiles within Customer Insights is determined based on the business unit of the user and the owning business unit of the customer profile.
    > * Any changes to the BU data separation configuration will trigger a full refresh.
+
+Access to customer profiles *within* Customer Insights is determined based on the business unit of the user and the owning business unit of the customer profile: Users have access to all customer profiles that belong to their business unit and any child business units.
 
 #### Ownership of segments and business measures
 Ownership of segments and measures is determined based on the user that created them. For example, if a user is member of business unit *A* then any segment and measure that user creates is owned by business unit *A*. 
@@ -85,14 +86,14 @@ Customer profiles are not directly owned by business units - instead they are ow
 ## Customer Insights roles 
 The Customer Insights roles determine the user's access to Customer Insights functionality. Click [here](https://learn.microsoft.com/en-us/dynamics365/customer-insights/permissions) for more general and detailed information.
 
-The **administrator** and **contributor** roles are highly privledged and should only be given to users that belong to the *Org/Root* business unit. These users are typically responsible for preparing the data estate, i.e., setting up data sources, business unit data separation rules, unification rules, etc. 
+The **administrator** and **contributor** roles are highly privledged and **should only be given to users that belong to the *Org/Root* business unit**. These users are typically responsible for preparing the data estate, i.e., setting up data sources, business unit data separation rules, unification rules, enrichments, etc. 
 
 The **marketing contributor** role leverages the data estate to create segments and measures, and activates those, for example, in Customer Journey Orchestration. This role has access to the following in Customer Insights:
 
 * Segments (only *build your own*)
 * Measures (only *build your own*)
 
-Measures can only be created on tables that have a relationship path to the customer profiles.
+The marketing contributor can only create measures on tables that have a relationship path to the customer profiles.
 
 The **viewer** role has access to all parts of customer insights but it cannot make any changes. 
 
@@ -102,7 +103,7 @@ Customer Insights and Customer Journey Orchestration (CJO) are tightly integrate
 Marketing contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit or child business units.
 
  > [!NOTE]
-   > * Customer Journey Orchestration can only process segments that containt members that belong to one business unit.
+   > * Customer Journey Orchestration can only process segments that containt members that belong to one business unit and has an owner that belong to the same business unit.
 
 ## Customer Insights and Dataverse
 Customer insights writes data into Dataverse with ownership and RBAC properties for easy activation, for example, through [model-driven applications](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-app-overview). Using model-diven applications, data can easily be leveraged in customer service, sales, operations, and other business functions with the benefits of fine-grained RBAC controls.
