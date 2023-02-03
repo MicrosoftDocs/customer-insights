@@ -49,8 +49,6 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 1. Enter the **Hostname** and specify the **Export folder** on the FTP server. The export folder must be lowercase. The system is not case-sensitive and will create folder names in lowercase even if you use capital letters in the folder name.
 
-1. Select **Verify** to test the connection.
-
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
