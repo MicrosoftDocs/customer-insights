@@ -45,8 +45,6 @@ Activate your data in LiveRamp to connect with over 500 platforms across digital
 
 1. Choose whether you want to authenticate through SSH or username/password for your connection and provide the necessary details.
 
-1. Select **Verify** to test the connection to LiveRamp.
-
 1. After successful verification, review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
