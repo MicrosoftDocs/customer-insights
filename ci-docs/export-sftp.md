@@ -1,14 +1,11 @@
 ---
 title: "Export data to SFTP hosts (preview) (contains video)"
 description: "Learn how to configure the connection and export to an SFTP location."
-ms.date: 07/25/2022
+ms.date: 02/03/2023
 ms.reviewer: mhart
-
-ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export data to SFTP hosts (preview)
@@ -50,7 +47,7 @@ Use your customer data in third-party applications by exporting them to a Secure
    - ECDSA 256/384/521 in OpenSSL PEM format
    - ED25519 and RSA in OpenSSH key format
 
-1. Select **Verify** to test the connection.
+1. Enter the **Hostname** and specify the **Export folder** on the FTP server. The export folder must be lowercase. The system is not case-sensitive and will create folder names in lowercase even if you use capital letters in the folder name.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
