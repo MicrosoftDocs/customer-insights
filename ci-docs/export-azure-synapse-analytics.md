@@ -40,7 +40,8 @@ In Azure:
 
 ## Known limitation
 
-Azure Synapse export doesn't support incremental refresh for data sources if an environment uses a custom Azure Data Lake for data storage.
+- Azure Synapse export doesn't support incremental refresh for data sources if an environment uses a custom Azure Data Lake for data storage.
+- Enabling public access after setting up a private link public access to your own storage won't work until the private link setup is removed. Private link is only supported if public access on the customer storage is disabled. 
 
 ## Set up connection to Azure Synapse
 
