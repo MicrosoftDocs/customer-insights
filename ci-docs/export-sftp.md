@@ -1,7 +1,7 @@
 ---
 title: "Export data to SFTP hosts (preview) (contains video)"
 description: "Learn how to configure the connection and export to an SFTP location."
-ms.date: 07/25/2022
+ms.date: 02/03/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer

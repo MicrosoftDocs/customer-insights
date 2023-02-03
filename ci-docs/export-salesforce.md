@@ -33,8 +33,6 @@ Use your customer data in Salesforce Marketing Cloud by exporting them through a
 
 1. Provide a **Username**, **Password**, **Hostname**, and **Export folder** for your SFTP account.
 
-1. Select **Verify** to test the connection.
-
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
