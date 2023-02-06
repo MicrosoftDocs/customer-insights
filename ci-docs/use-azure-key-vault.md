@@ -4,11 +4,9 @@ description: "Learn how to configure Customer Insights to use your own Azure key
 ms.date: 08/02/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: brndkfr
 ms.author: bkief
-manager: shellyha
 searchScope: 
   - ci-system-security
   - customerInsights

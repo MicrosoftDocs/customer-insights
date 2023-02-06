@@ -4,11 +4,9 @@ description: "Go through the data unification process with your data to create a
 ms.date: 08/12/2022
 ms.reviewer: v-wendysmith
 
-ms.subservice: audience-insights
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
-manager: shellyha
 
 searchScope: 
   - ci-map

@@ -2,12 +2,10 @@
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
 ms.date: 01/13/2023
-ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-customers-page
   - ci-enrichment-details

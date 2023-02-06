@@ -7,7 +7,6 @@ ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
-manager: shellyha
 ---
 
 # Service limits in Customer Insights

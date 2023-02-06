@@ -6,7 +6,6 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
-manager: shellyha
 ---
 
 # Data Subject Rights (DSR) requests under GDPR
