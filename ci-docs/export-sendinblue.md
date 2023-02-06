@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export segments to Sendinblue (preview)

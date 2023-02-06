@@ -7,7 +7,6 @@ ms.topic: conceptual
 author: v-wendysmith
 ms.author: wameng
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-measures
   - ci-measure-builder

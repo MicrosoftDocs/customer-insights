@@ -6,7 +6,6 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: andtapia
 ms.author: andreatapia
-manager: shellyha
 ---
 
 # Manage unknown profiles with Customer Insights

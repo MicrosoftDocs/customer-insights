@@ -6,7 +6,6 @@ ms.service: customer-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 ms.custom: bap-template
 searchScope: 
   - ci-system-diagnostic

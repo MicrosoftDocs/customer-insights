@@ -8,7 +8,6 @@ author: v-wendysmith
 ms.custom: intro-internal
 ms.author: wimohabb
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-semantic-mapping
   - ci-connections

@@ -6,7 +6,6 @@ ms.topic: how-to
 ms.reviewer: mhart
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 searchScope: 
   - ci-system-about
   - customerInsights

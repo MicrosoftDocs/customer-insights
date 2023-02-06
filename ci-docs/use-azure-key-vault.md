@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: brndkfr
 ms.author: bkief
-manager: shellyha
 searchScope: 
   - ci-system-security
   - customerInsights

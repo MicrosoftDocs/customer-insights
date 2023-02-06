@@ -6,7 +6,6 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
-manager: shellyha
 searchScope: 
   - ci-system-security
   - customerInsights

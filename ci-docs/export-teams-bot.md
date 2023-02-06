@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
-manager: shellyha
 ---
 
 # Teams bot for Dynamics 365 Customer Insights (preview)

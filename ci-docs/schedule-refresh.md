@@ -7,7 +7,6 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-system-schedule
   - customerInsights

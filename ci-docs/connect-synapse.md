@@ -7,7 +7,6 @@ ms.service: customer-insights
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 ---
 
 # Connect an Azure Synapse Analytics data source (preview)

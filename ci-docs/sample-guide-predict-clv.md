@@ -7,7 +7,6 @@ ms.reviewer: v-wendysmith
 ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia        
-manager: shellyha
 ---
 
 # Customer lifetime value (CLV) prediction sample guide

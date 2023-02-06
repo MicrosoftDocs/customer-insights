@@ -9,7 +9,6 @@ ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-manager: shellyha
 ms.custom: bap-template
 searchScope: 
   - ci-merge

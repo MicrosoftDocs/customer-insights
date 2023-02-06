@@ -6,7 +6,6 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
-manager: shellyha
 ---
 
 # What's new in Dynamics 365 Customer Insights

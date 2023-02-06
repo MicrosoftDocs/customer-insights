@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
-manager: shellyha
 ---
 
 # Enrich customer profiles with demographics from Experian (preview)

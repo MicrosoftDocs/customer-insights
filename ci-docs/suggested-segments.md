@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
-manager: shellyha
 searchScope: 
   - ci-segment-suggestions
   - customerInsights

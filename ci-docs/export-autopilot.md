@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export segments to Autopilot (preview)

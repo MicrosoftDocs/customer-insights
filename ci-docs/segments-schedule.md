@@ -6,7 +6,6 @@ ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-customers-page
   - ci-enrichment-details

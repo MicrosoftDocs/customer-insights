@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 searchScope: 
   - ci-export
   - customerInsights

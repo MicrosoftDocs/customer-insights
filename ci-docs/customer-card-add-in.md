@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: conceptual    
 author: Nils-2m
 ms.author: nikeller
-manager: shellyha
 searchScope: 
   - ci-customers-page
   - ci-search-filter

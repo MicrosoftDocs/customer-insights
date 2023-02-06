@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
-manager: shellyha
 ---
 
 # Enrich company profiles with Leadspace (preview)

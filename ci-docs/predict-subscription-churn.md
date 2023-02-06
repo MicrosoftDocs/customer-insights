@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
-manager: shellyha
 ---
 
 # Predict subscription churn

@@ -8,7 +8,6 @@ ms.service: customer-insights
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 ms.custom: bap-template
 searchScope: 
   - ci-data-sources

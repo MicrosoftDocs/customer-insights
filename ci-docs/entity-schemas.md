@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 ---
 
 # Entity schemas in Common Data Model

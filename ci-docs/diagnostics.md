@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: article
 author: brndkfr
 ms.author: bkief
-manager: shellyha
 searchScope: 
   - ci-system-diagnostic
   - customerInsights

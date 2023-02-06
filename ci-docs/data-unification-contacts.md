@@ -7,7 +7,6 @@ ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
-manager: shellyha
 
 searchScope: 
   - ci-map

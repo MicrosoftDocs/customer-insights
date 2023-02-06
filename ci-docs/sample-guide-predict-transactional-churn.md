@@ -8,7 +8,6 @@ ms.reviewer: mhart
 ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
-manager: shellyha
 ---
 
 # Transactional churn prediction sample guide

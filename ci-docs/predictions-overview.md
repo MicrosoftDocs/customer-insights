@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: overview
 author: zacookmsft
 ms.author: zacook
-manager: shellyha
 
 ---
 

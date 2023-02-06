@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: jodahl
 ms.author: jodahl
-manager: shellyha
 ---
 
 # Enrich customer profiles with data from Microsoft Office 365 (preview)

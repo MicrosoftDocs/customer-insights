@@ -6,7 +6,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 ms.custom: intro-internal
 searchScope: 
   - ci-home

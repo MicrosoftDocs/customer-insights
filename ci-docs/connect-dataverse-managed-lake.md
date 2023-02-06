@@ -5,7 +5,6 @@ ms.date: 01/03/2023
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
-manager: shellyha
 ms.reviewer: v-wendysmith
 searchScope: 
   - ci-dataverse

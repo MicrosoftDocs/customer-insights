@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export Customer Insights segments to Adobe Campaign Standard (preview)

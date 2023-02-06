@@ -6,7 +6,6 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 searchScope: 
   - ci-entities
   - customerInsight

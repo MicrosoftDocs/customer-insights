@@ -7,7 +7,6 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
-manager: shellyha
 ---
 
 # Configure security settings

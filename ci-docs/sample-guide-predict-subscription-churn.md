@@ -7,7 +7,6 @@ ms.reviewer: v-wendysmith
 ms.topic: tutorial
 author: m-hartmann
 ms.author: wameng
-manager: shellyha
 searchScope: 
   - ci-create-prediction
   - customerInsights

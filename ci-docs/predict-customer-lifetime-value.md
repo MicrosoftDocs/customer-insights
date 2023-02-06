@@ -6,7 +6,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: m-hartmann
 ms.author: wameng
-manager: shellyha
 searchScope: 
   - ci-predictions
   - ci-create-prediction

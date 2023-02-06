@@ -7,7 +7,6 @@ ms.service: customer-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
-manager: shellyha
 ---
 
 # Use customer consent

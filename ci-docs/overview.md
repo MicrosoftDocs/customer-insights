@@ -6,8 +6,7 @@ ms.author: mhart
 ms.date: 04/12/2022
 
 ms.topic: overview
-ms.manager: shellyha
-
+ms.
 ---
 
 # Product overview for Dynamics 365 Customer Insights

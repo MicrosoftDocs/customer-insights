@@ -7,7 +7,6 @@ ms.topic: tutorial
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-match
   - ci-merge

@@ -7,7 +7,6 @@ ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-segment-builder
   - ci-segment-insights

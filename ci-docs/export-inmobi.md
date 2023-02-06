@@ -6,7 +6,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export Customer Insights data to InMobi (preview)

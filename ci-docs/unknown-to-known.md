@@ -6,7 +6,6 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: andtapia
 ms.author: andreatapia
-manager: shellyha
 searchScope: 
   - ci-system-diagnostic
   - customerInsights

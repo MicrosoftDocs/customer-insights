@@ -6,7 +6,6 @@ ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: srivas15
 ms.author:  shsri
-manager: shellyha
 searchScope: 
   - ci-entities
   - ci-customer-card

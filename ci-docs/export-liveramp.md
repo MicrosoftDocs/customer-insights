@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
-manager: shellyha
 ---
 
 # Export segments to LiveRamp&reg; (preview)

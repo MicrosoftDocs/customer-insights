@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong 
 ms.author: wameng
-manager: shellyha
 ---
 
 # Predict product recommendations

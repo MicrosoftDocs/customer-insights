@@ -7,7 +7,6 @@ ms.reviewer: nikeller
 ms.topic: overview
 author: m-hartmann
 ms.author: mhart
-manager: shellyha
 searchScope: 
   - ci-connections
   - customerInsights

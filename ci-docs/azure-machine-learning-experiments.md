@@ -7,7 +7,6 @@ ms.topic: tutorial
 author: naravill
 ms.author: naravill
 ms.reviewer: mhart
-manager: shellyha
 ---
 
 # Use Azure Machine Learning-based models

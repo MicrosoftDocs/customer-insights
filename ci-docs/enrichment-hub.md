@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
-manager: shellyha
 ms.custom: intro-internal
 searchScope: 
   - ci-enrichments

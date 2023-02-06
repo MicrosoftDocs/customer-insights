@@ -6,7 +6,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
-manager: shellyha
 searchScope: 
   - ci-enrichments
   - ci-enrichment-wizard

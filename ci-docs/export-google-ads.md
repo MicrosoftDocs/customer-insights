@@ -7,7 +7,6 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
-manager: shellyha
 ---
 
 # Export segments to Google Ads (preview)

@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export data to Salesforce Marketing Cloud (preview)

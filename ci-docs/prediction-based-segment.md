@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
-manager: shellyha
 ---
 
 # Create a segment based on a prediction model (preview)

@@ -7,7 +7,6 @@ ms.topic: tutorial
 author: v-wendysmith
 ms.author: adkuppa
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-match
   - ci-merge

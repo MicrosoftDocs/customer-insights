@@ -6,7 +6,6 @@ ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
-manager: shellyha
 ---
 
 # Enrichment for data sources (preview)

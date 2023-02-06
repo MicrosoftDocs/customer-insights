@@ -8,7 +8,6 @@ ms.topic: tutorial
 author: v-wendysmith
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-map
   - ci-match

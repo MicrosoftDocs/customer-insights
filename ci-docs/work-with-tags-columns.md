@@ -7,7 +7,6 @@ ms.topic: overview
 author: v-wendysmith
 ms.author: v-wendysmith
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-customers-page
   - ci-enrichment-details

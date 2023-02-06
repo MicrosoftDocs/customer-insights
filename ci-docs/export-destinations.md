@@ -7,7 +7,6 @@ ms.reviewer: mhart
 ms.topic: overview
 author: pkieffer
 ms.author: philk
-manager: shellyha
 searchScope: 
   - ci-export
   - ci-connections

@@ -7,7 +7,6 @@ ms.service: customer-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
-manager: shellyha
 ---
 
 # Enrich company profiles with Dun & Bradstreet (preview)
