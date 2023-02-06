@@ -4,14 +4,12 @@ author: m-hartmann
 description: Get an overview for Dynamics 365 Customer Insights and its main features.
 ms.author: mhart
 ms.date: 04/12/2022
-
 ms.topic: overview
-ms.
 ---
 
 # Product overview for Dynamics 365 Customer Insights
 
-[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) is Microsoft's customer data platform (CDP) that helps deliver personalized customer experiences. The application provides a holistic view of customers with unmatched time to insight. Gain the most comprehensive view of your customers by unifying customer data with operational and IoT data in real-time. Enrich customer profiles with first and third-party data sources. 
+[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) is Microsoft's customer data platform (CDP) that helps deliver personalized customer experiences. The application provides a holistic view of customers with unmatched time to insight. Gain the most comprehensive view of your customers by unifying customer data with operational and IoT data in real-time. Enrich customer profiles with first and third-party data sources.
 
 Customer Insights helps you transform your business into a customer-centric organization by empowering your marketing, sales, and service professionals to tailor 1:1 interactions at-scale. Turnkey integrations with Microsoft and third-party applications can be used to activate real-time insights to drive meaningful actions.
 
@@ -20,6 +18,7 @@ Connect data from transactional, behavioral, and demographic data sources to cre
 Maintain full control over your customer data to ensure the highest level of data governance and compliance with a self-service, enterprise grade CDP built on Microsoft Azure. Support the General Data Protection Regulation (GDPR) and other legislative requirements and industry standards through built-in privacy, security, and governance tools.
 
 ## Pricing and licensing
+
 Customer Insights is licensed per tenant and includes both business-to-consumer (B2C) and business-to-business (B2B) capabilities. You can purchase additional capacity with add-on licenses to increase the number of profiles and accounts.
 
 - [Pricing overview](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
