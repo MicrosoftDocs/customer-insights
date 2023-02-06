@@ -1,9 +1,8 @@
 ---
 title: "Export data to Azure Synapse Analytics (preview)"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
-ms.date: 07/25/2022
+ms.date: 02/06/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
@@ -38,7 +37,8 @@ In Azure:
 
 ## Known limitation
 
-Azure Synapse export doesn't support incremental refresh for data sources if an environment uses a custom Azure Data Lake for data storage.
+- Azure Synapse export doesn't support incremental refresh for data sources if an environment uses a custom Azure Data Lake for data storage.
+- Enabling public access to your own storage account after [setting up an Azure Private Link](security-overview.md#set-up-an-azure-private-link) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 
 ## Set up connection to Azure Synapse
 
