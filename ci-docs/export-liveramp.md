@@ -4,11 +4,9 @@ description: "Learn how to configure the connection and the export to LiveRamp."
 ms.date: 07/25/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
-manager: shellyha
 ---
 
 # Export segments to LiveRamp&reg; (preview)

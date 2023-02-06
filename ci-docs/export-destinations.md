@@ -4,11 +4,9 @@ description: "Manage exports to share data."
 ms.date: 12/16/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: overview
 author: pkieffer
 ms.author: philk
-manager: shellyha
 searchScope: 
   - ci-export
   - ci-connections

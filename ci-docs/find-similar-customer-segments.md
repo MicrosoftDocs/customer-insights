@@ -3,12 +3,10 @@ title: "Find similar customers with AI (preview) (contains video)"
 description: "Find similar customer segments with artificial intelligence."
 ms.date: 03/25/2022
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-segment-builder
   - ci-segment-insights

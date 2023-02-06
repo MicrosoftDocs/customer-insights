@@ -4,11 +4,9 @@ description: General information about the SFTP custom import enrichment.
 ms.date: 08/08/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
-manager: shellyha
 ---
 
 # Enrich customer profiles with SFTP custom import (preview)

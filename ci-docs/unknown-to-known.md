@@ -3,11 +3,9 @@ title: Personalize your experiences with data about known and unknown users
 description: Incorporate the information about formerly unknown users when you know their identity.
 ms.date: 11/11/2022
 ms.reviewer: mhart
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: andtapia
 ms.author: andreatapia
-manager: shellyha
 searchScope: 
   - ci-system-diagnostic
   - customerInsights

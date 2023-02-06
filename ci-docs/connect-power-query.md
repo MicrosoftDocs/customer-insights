@@ -4,12 +4,9 @@ description: "Ingest data through a Power Query connector (contains video)."
 ms.date: 01/06/2023
 ms.reviewer: v-wendysmith
 
-ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 ms.custom: bap-template
 searchScope: 
   - ci-data-sources

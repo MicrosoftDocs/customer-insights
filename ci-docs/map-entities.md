@@ -4,12 +4,10 @@ description: "The first step in the unification process is selecting entities, a
 recommendations: false
 ms.date: 08/12/2022
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
 ms.author: mukeshpo
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-map
   - ci-match
