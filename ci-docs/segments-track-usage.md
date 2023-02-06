@@ -2,7 +2,6 @@
 title: "Track usage of a segment"
 description: "Track the usage of a segment in other apps."
 ms.date: 11/28/2022
-ms.subservice: audience-insights
 ms.topic: concept
 author: JimsonChalissery
 ms.author: jimsonc

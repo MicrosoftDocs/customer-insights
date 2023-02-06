@@ -3,7 +3,6 @@ title: "Measures overview"
 description: "Learn how measures help analyze and reflect the performance of your business."
 ms.date: 11/28/2022
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: v-wendysmith
 ms.author: wameng

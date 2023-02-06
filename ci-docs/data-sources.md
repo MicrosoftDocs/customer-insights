@@ -3,7 +3,6 @@ title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
 ms.date: 09/29/2022
 
-ms.subservice: audience-insights
 ms.topic: overview
 author: mukeshpo
 ms.author: mukeshpo

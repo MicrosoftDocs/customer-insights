@@ -4,7 +4,6 @@ description: "Learn how to send logs to Microsoft Azure Monitor."
 ms.date: 08/08/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: article
 author: brndkfr
 ms.author: bkief

@@ -5,7 +5,6 @@ ms.date: 09/19/2022
 ms.reviewer: mhart
 
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart

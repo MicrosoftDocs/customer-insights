@@ -4,7 +4,6 @@ description: "Enrich and normalize company data with Microsoft's models."
 ms.date: 06/10/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem

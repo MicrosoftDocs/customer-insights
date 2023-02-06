@@ -4,7 +4,6 @@ description: "The second step in the unification process is selecting which reco
 recommendations: false
 ms.date: 11/18/2022
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
 ms.author: sstabbert

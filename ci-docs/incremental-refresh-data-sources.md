@@ -4,7 +4,6 @@ description: "Refresh new and updated data for large data sources based on Power
 ms.date: 01/06/2023
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo

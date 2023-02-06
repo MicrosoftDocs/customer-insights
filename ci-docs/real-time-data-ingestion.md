@@ -4,7 +4,6 @@ description: "General information about real-time capabilities in Customer Insig
 ms.date: 12/8/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller

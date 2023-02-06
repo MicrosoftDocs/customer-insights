@@ -4,7 +4,6 @@ description: "Create segments based on the output entity of a prediction model."
 ms.date: 09/19/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook

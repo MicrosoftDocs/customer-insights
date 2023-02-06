@@ -4,7 +4,6 @@ description: "General information about the Azure Maps first-party enrichment."
 ms.date: 08/08/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl

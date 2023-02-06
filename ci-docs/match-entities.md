@@ -4,7 +4,6 @@ description: "Match entities to create unified customer profiles."
 recommendations: false
 ms.date: 10/07/2022
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
 ms.author: mukeshpo

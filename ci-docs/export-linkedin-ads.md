@@ -4,7 +4,6 @@ description: "Learn how to configure the connection and export to LinkedIn Ads."
 ms.date: 08/12/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk

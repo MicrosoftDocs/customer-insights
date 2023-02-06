@@ -3,7 +3,6 @@ title: "Entities in Customer Insights"
 description: "View data on the Entities page."
 ms.date: 08/04/2022
 ms.reviewer: mhart
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo

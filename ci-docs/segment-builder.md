@@ -3,7 +3,6 @@ title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
 ms.date: 01/13/2023
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc

@@ -4,7 +4,6 @@ description: "General information about the Dun & Bradstreet third-party enrichm
 ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl

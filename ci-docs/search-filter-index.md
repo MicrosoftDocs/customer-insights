@@ -4,7 +4,6 @@ description: "Quickly find information about unified customer profiles and filte
 ms.date: 07/22/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen

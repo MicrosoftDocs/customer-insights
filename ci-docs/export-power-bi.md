@@ -4,7 +4,6 @@ description: "Learn how to use the Dynamics 365 Customer Insights connector in P
 ms.date: 07/25/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller

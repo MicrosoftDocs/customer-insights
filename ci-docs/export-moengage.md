@@ -4,7 +4,6 @@ description: "Learn how to configure the connection and export to MoEngage."
 ms.date: 07/26/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk

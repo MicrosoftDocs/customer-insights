@@ -3,7 +3,6 @@ title: "Segment insights (preview)"
 description: "Get insights on existing segments to see differences and commonalities."
 ms.date: 06/10/2020
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc

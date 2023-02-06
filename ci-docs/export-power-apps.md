@@ -4,7 +4,6 @@ description: "Connect with Power Apps and Power Automate."
 ms.date: 07/25/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller

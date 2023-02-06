@@ -3,7 +3,6 @@ title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
 ms.date: 08/26/2022
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: Scott-Stabbert
 ms.author: sstabbert

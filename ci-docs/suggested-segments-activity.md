@@ -4,7 +4,6 @@ description: "Let machine learning help you find new and interesting segments ba
 ms.date: 05/11/2021
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc

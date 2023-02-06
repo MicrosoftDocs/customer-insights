@@ -3,7 +3,6 @@ title: "Review data unification"
 description: "Review the data unification steps, create unified customer profiles, and review the results"
 ms.date: 08/12/2022
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
 ms.author: adkuppa

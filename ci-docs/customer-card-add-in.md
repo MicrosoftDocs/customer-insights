@@ -4,7 +4,6 @@ description: "Show customer profile data from Customer Insights in Dynamics 365 
 ms.date: 02/02/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual    
 author: Nils-2m
 ms.author: nikeller

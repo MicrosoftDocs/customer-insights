@@ -4,7 +4,6 @@ description: "Prediction scenarios and options covered by the Dynamics 365 Custo
 ms.date: 09/29/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: overview
 author: zacookmsft
 ms.author: zacook

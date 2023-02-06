@@ -4,7 +4,6 @@ description: "Connections to other services from Customer Insights."
 ms.date: 08/04/2022
 ms.reviewer: nikeller
 
-ms.subservice: audience-insights
 ms.topic: overview
 author: m-hartmann
 ms.author: mhart

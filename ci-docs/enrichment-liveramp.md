@@ -4,7 +4,6 @@ description: "Enrich customer profiles with LiveRamp data."
 ms.date: 08/08/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem

@@ -2,7 +2,6 @@
 title: "Connect to an Azure Data Lake Storage account by using an Azure service principal"
 description: "Use an Azure service principal to connect to your own data lake."
 ms.date: 01/05/2023
-ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa

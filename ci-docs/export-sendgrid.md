@@ -4,7 +4,6 @@ description: "Learn how to configure the connection and export to SendGrid."
 ms.date: 07/25/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk

@@ -4,7 +4,6 @@ description: "Learn about permissions and user roles."
 ms.date: 08/08/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen

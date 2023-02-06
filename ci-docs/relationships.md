@@ -4,7 +4,6 @@ description: "Create and manage relationships between entities from multiple dat
 ms.date: 09/27/2021
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha

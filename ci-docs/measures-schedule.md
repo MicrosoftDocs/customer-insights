@@ -3,7 +3,6 @@ title: "Schedule measures"
 description: "How to create custom schedules for measures."
 ms.date: 11/28/2022
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: v-wendysmith
 ms.author: wameng
