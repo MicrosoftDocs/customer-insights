@@ -61,7 +61,7 @@ Select a data source to view available actions.
 
 ## Refresh data sources
 
-Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premise data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules which are set up during data ingestion. For troubleshooting tips, see [Troubleshoot PPDF Power Query-based data source refresh issues](connect-power-query.md#troubleshoot-ppdf-power-query-based-data-source-refresh-issues).
+Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premise data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules which are set up during data ingestion.
 
 For attached data sources, data ingestion consumes the latest data available from that data source.
 
