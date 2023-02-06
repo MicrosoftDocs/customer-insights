@@ -3,7 +3,6 @@ title: "Enrich company profiles with Dun & Bradstreet (preview)"
 description: "General information about the Dun & Bradstreet third-party enrichment."
 ms.date: 08/08/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl

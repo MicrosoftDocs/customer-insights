@@ -2,7 +2,6 @@
 title: Work with Customer Insights data in Microsoft Dataverse
 description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output entities that are exported to Dataverse.
 ms.date: 01/16/2023
-ms.service: customer-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
