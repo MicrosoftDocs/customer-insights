@@ -1,14 +1,12 @@
 ---
 title: "Real-time data ingestion (preview)"
 description: "General information about real-time capabilities in Customer Insights."
-ms.date: 10/27/2020
+ms.date: 12/8/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
-manager: shellyha
 searchScope: 
   - ci-system-api-usage
   - customerInsights
@@ -28,6 +26,9 @@ Real-time updates have an expiration time after which they no longer override th
 - Activities will be kept for 30 days
 
 These values are API call parameters that you can change. They aim to ensure that your source data remains your source of truth. If you want real-time updates to be included for longer, you need to add them to a data source so they get pulled during the next scheduled refresh.
+
+ > [!TIP]
+ > Any data ingested or modified using these APIs is also reflected directly in the corresponding Dataverse tables. This allows you to leverage the rest of the Dataverse ecosystem and functionalities to achieve end-to-end business scenarios. 
 
 ## Real-time update of the unified customer profile fields
 

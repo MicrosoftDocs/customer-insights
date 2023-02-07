@@ -3,11 +3,9 @@ title: "Export Customer Insights data to HubSpot"
 description: "Learn how to configure the connection and export to HubSpot."
 ms.date: 09/23/2022
 ms.reviewer: mhart
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export segments to HubSpot (preview)
@@ -22,7 +20,6 @@ Export segments of unified customer profiles to HubSpot and use them for email m
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 100'000 customer profiles per export to HubSpot, which can take up to 15 minutes to complete. The number of customer profiles that you can export to HubSpot is dependent and limited on your contract with HubSpot.
 - Segments only.
 

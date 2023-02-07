@@ -3,12 +3,10 @@ title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
 ms.date: 12/6/2022
 
-ms.subservice: audience-insights
 ms.topic: overview
 author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-data-sources
   - ci-create-data-source
@@ -64,7 +62,7 @@ Select a data source to view available actions.
 
 ## Refresh data sources
 
-Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premise data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules which are set up during data ingestion. For troubleshooting tips, see [Troubleshoot PPDF Power Query-based data source refresh issues](connect-power-query.md#troubleshoot-ppdf-power-query-based-data-source-refresh-issues).
+Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premise data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules which are set up during data ingestion.
 
 For attached data sources, data ingestion consumes the latest data available from that data source.
 

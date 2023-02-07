@@ -3,12 +3,9 @@ title: Use customer consent
 description: "Honor you customers' consent preferences in Customer Insights by importing consent data."
 ms.date: 06/07/2022
 ms.reviewer: mhart
-ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
-manager: shellyha
 ---
 
 # Use customer consent
@@ -65,6 +62,6 @@ It's important to keep the consent status for your customers updated. The schedu
 
 In other words, make sure the source data that gets imported to Customer Insights always has the latest information.
 
-For more information, see [Refresh segments manually](segments.md#refresh-segments) or [configure a scheduled refresh](schedule-refresh.md).
+For more information, see [Refresh segments manually or schedule segments](segments-schedule.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

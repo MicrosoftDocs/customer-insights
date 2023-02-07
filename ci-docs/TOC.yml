@@ -147,6 +147,10 @@
       href: segment-insights.md
     - name: Find similar customers
       href: find-similar-customer-segments.md
+    - name: Schedule segments
+      href: segments-schedule.md
+    - name: Track usage of a segment
+      href: segments-track-usage.md
 
 - name: Measures
   items: 
@@ -156,6 +160,8 @@
       href: measure-builder.md
     - name: Create with templates
       href: measure-templates.md
+    - name: Schedule measures
+      href: measures-schedule.md
           
 - name: Predictions
   items:

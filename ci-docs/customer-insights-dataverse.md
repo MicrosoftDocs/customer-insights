@@ -1,13 +1,11 @@
 ---
 title: Work with Customer Insights data in Microsoft Dataverse
 description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output entities that are exported to Dataverse.
-ms.date: 08/25/2022
-ms.reviewer: mhart
-ms.subservice: audience-insights
+ms.date: 01/16/2023
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-system-diagnostic
   - customerInsights
@@ -15,9 +13,9 @@ searchScope:
 
 # Work with Customer Insights data in Microsoft Dataverse
 
-Customer Insights provides the option to make output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The [output entities](#output-entities) are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps.
+Customer Insights makes its output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The [output entities](#output-entities) are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps.
 
-Connecting to your Dataverse environment also enables you to [ingest data from on-premises data sources using Power Platform dataflows and gateways](connect-power-query.md#add-data-from-on-premises-data-sources).
+You can also [ingest data from on-premises data sources using Power Platform dataflows and gateways](connect-power-query.md#add-data-from-on-premises-data-sources) into your Dataverse environment.
 
 ## Prerequisites
 
@@ -32,7 +30,7 @@ A Customer Insights subscription entitles you to extra capacity for your organiz
 
 **Example:**
 
-Assuming you get 15 GB database storage and 20 GB file storage per 100,000 customer profiles. If your subscription includes 300,000 customer profiles, your total storage capacity is 45 GB (3 x 15 GB) database storage and 60 GB file storage (3 x 20 GB). Similarly, if you have a B-to-B subscription with 30K accounts, your total storage capacity is 45 GB (3 x 15 GB) database storage, and 60 GB file storage (3 x 20 GB).
+Assuming you get 15-GB database storage and 20-GB file storage per 100,000 customer profiles. If your subscription includes 300,000 customer profiles, your total storage capacity is 45 GB (3 x 15 GB) database storage and 60-GB file storage (3 x 20 GB). Similarly, if you have a B-to-B subscription with 30,000 accounts, your total storage capacity is 45 GB (3 x 15 GB) database storage, and 60-GB file storage (3 x 20 GB).
 
 Log capacity isn't incremental and fixed for your organization.
 
@@ -158,7 +156,7 @@ A ContactProfile contains unified information about a contact. Contacts are [ind
 |  ContactProfileId     | Unique identifier   |  GUID for the contact               |
 |  CountryOrRegion      | Text |  Country/Region of the contact address               |
 |  CustomerId           | Text |  ID of the account the contact is mapped to               |
-|  EntityName           | Text |  Entity from which data comes from                |
+|  EntityName           | Text |  Name of the entity               |
 |  FirstName            | Text |  First name of the contact               |
 |  Gender               | Text |  Gender of the contact               |
 |  Id                   | Text |  Deterministic GUID based on `Identifier`               |
@@ -192,17 +190,14 @@ This table contains activities by users that are available in Customer Insights.
 | Column            | Type        | Description                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
 | CustomerId        | Text      | Customer profile ID                                                                      |
+| ActivityType      | Text      | Semantic activity type or name of custom activity. For example: `SalesOrderLine`  |
+| ExternalUrl       | Text      | Link to an external URL for this activity. Usually denotes the URL of the website visited by a customer.     |
+| ActivityTime      | DateTime  | Activity time stamp. Usually denotes when the activity occurred. For example: `2021-12-24T21:00:00Z`  |
 | ActivityId        | Text      | Internal ID of the customer activity (primary key)                                       |
-| SourceEntityName  | Text      | Name of the source entity                                                                |
-| SourceActivityId  | Text      | Primary key from the source entity                                                       |
-| ActivityType      | Text      | Semantic activity type or name of custom activity                                        |
-| ActivityTimeStamp | DateTime    | Activity time stamp                                                                      |
+| ActualActivityId  | Text      | Internal ID of the activity row in the source entity/table                                       |
 | Title             | Text      | Title or name of the activity                                                               |
-| Description       | Text      | Activity description                                                                     |
-| URL               | Text      | Link to an external URL specific to the activity                                         |
-| SemanticData      | Text | Includes a list of key value pairs for semantic mapping fields specific to the type of activity |
-| RangeIndex        | Text      | Unix timestamp used for sorting activity timeline and effective range queries |
-| UnifiedActivityId   | Unique identifier | Internal ID of the customer activity (ActivityId) |
+| EntityName        | Text      | Name of the source entity/table used for this activity                                            |
+| ActivityName      | Text      | The event that happened for this activity. For example: `webpage view`                        |
 
 ### CustomerMeasure
 

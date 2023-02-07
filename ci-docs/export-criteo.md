@@ -3,11 +3,9 @@ title: "Export segments to Criteo (preview)"
 description: "Learn how to configure the connection and export to Criteo."
 ms.date: 07/25/2022
 ms.reviewer: mhart
-ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export segments to Criteo (preview)
@@ -22,7 +20,6 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 1 million customer profiles per export to Criteo, which can take up to 30 minutes to complete. The number of customer profiles that you can export to Criteo depends on your contract with Criteo.
 - Segments only.
 

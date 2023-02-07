@@ -3,11 +3,9 @@ title: "Explore Customer Insights"
 description: "Start exploring the app on the Home page."
 ms.date: 12/6/2022
 ms.reviewer: mhart
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
-manager: shellyha
 searchScope: 
   - ci-home
   - customerInsights

@@ -1,14 +1,11 @@
 ---
 title: "Export data to Azure Synapse Analytics (preview)"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
-ms.date: 07/25/2022
+ms.date: 02/06/2023
 ms.reviewer: mhart
-
-ms.subservice: audience-insights
 ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
-manager: shellyha
+author: Nils-2m
+ms.author: nikeller
 ---
 
 # Export data to Azure Synapse Analytics (preview)
@@ -37,6 +34,11 @@ In Azure:
 - On the Azure Synapse workspace, the *service principal for Customer Insights* has **Synapse Administrator** [role assigned](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
 - If your Customer Insights environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md), the user who sets up the connection to Azure Synapse Analytics needs at least the built-in **Reader** role on the Data Lake Storage account. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
+
+## Known limitation
+
+- Azure Synapse export doesn't support incremental refresh for data sources if an environment uses a custom Azure Data Lake for data storage.
+- Enabling public access to your own storage account after [setting up an Azure Private Link](security-overview.md#set-up-an-azure-private-link) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 
 ## Set up connection to Azure Synapse
 

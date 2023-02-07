@@ -1,13 +1,11 @@
 ---
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 10/26/2022
-ms.subservice: audience-insights
+ms.date: 11/16/2022
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: srivas15
 ms.author:  shsri
-manager: shellyha
 searchScope: 
   - ci-entities
   - ci-customer-card
@@ -71,6 +69,8 @@ An entity must have at least one attribute of type **Date** to be included in a 
 
    - **Show in timeline**
       - Choose if you what to show this activity in the timeline view on your customer profiles. Select **Yes** to show the activity in the timeline or **No** to hide it.
+        > [!NOTE]
+        > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
 
       :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity entity.":::
 

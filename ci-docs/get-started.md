@@ -7,8 +7,7 @@ author: m-hartmann
 ms.date: 12/6/2022
 ms.subservice: audience-insights 
 ms.topic: conceptual
-ms.manager: shellyha
-ms.custom: intro-internal
+ms.ms.custom: intro-internal
 searchScope: 
   - ci-home
   - customerInsights

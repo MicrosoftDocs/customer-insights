@@ -4,11 +4,9 @@ description: "Predict whether a customer is at risk for no longer purchasing you
 ms.date: 09/30/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
-manager: shellyha
 ---
 
 # Predict transaction churn
@@ -217,7 +215,7 @@ An **Influential feature analysis** information page contains four sections of d
 ---
 
  > [!NOTE]
- > In the output entity for this model, *ChurnScore* shows the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md#create-a-segment) with your preferred threshold. Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on you churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
+ > In the output entity for this model, *ChurnScore* shows the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md#create-a-segment) with your preferred threshold. Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on your churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
 >
 > To view the churn score, go to **Data** > **Entities** and view the data tab for the output entity you defined for this model.
 

@@ -4,11 +4,9 @@ description: "Learn how to configure the connection and export to Braze."
 ms.date: 10/06/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export segments to Braze (preview)
@@ -25,10 +23,8 @@ Export segments of unified customer profiles to Braze and use them for marketing
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up 1 million customer profiles to Braze, which can take up to 40 minutes to complete. The number of customer profiles that you can export to Braze depends on your contract with Braze.
 - Segments only.
-- Azure Private Link isn't supported for the Braze export.
 
 ## Set up connection to Braze
 

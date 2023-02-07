@@ -3,12 +3,10 @@ title: "Export segments to Google Ads (preview)"
 description: "Learn how to configure the connection and export to Google Ads."
 ms.date: 07/25/2022
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
-manager: shellyha
 ---
 
 # Export segments to Google Ads (preview)
@@ -26,7 +24,6 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Export up 1 million customer profiles per export to Google Ads, which can take up to 30 minutes to complete because of limitations on the provider side.
 - Segments only.
 - Match in Google Ads can take up to 48 hours.
@@ -70,6 +67,9 @@ Export segments of unified customer profiles to a Google Ads audience list and u
    - To create a new audience, leave the Google Audience ID field blank. Customer Insights will automatically create a new audience in your Google Ads account and use the name of the exported segment.
 
 1. In the **Data matching** section, select one or more data fields to export, and select the field that represents the corresponding data fields in Customer Insights.
+
+   > [!NOTE]
+   > All personal data is sent as a hashed value to Google.
 
 1. Select the segments you want to export.
 

@@ -4,11 +4,9 @@ description: "Learn how to configure the connection and export to MoEngage."
 ms.date: 07/26/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export segments to MoEngage (preview)
@@ -23,7 +21,6 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 100'000 customer profiles per export to MoEngage, which can take up to 15 minutes. The number of customer profiles that you can export to MoEngage depends on your contract with MoEngage.
 - Segments only.
 
