@@ -1,14 +1,12 @@
 ---
 title: "Experience Customer Insights in minutes"
 description: "Learn how to ingest data from a single file or from sample data"
-ms.date: 12/6/2022
-
-ms.subservice: audience-insights
+ms.date: 02/07/2023
 ms.topic: overview
 author: wmelewong
 ms.author: wameng
 ms.reviewer: v-wendysmith
-manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-data-sources
   - ci-create-data-source
@@ -30,13 +28,9 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
 
 ## Ingest a single data source
 
-1. On the **Home** page, select **Get insights in mins**.
+1. From the **Home** page, select **Add data** on the **Get insights in mins** card. From the Getting Started page, select **Add data**.
 
-   :::image type="content" source="media/home-single-file.png" alt-text="Screenshot of Home page with Get insights in mins selected.":::
-
-1. Select **Add data**. The Getting Started page displays.
-
-   :::image type="content" source="media/get-started.png" alt-text="Screenshot of Getting started for getting insights in 5 minutes.":::
+   :::image type="content" source="media/get-started.png" alt-text="Screenshot of Getting started for getting insights in minutes.":::
 
 1. Select **Get started**.
 
@@ -44,7 +38,9 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
 
 1. To use your own data, browse or drag and drop your file. To use sample data, select **Download Microsoft’s sample data** and load the sample file. If the file meets the prerequisites, **Next** displays.
 
-1. Click **Next**. Customer Insights checks the data quality.
+1. Select **Next**. Customer Insights identifies a unique key for your data source called the primary key.
+
+1. Select **Yes** to verify the primary key or choose another field as the primary key for your data source. Select **Next**. Customer Insights checks the data quality.
 
    > [!TIP]
    > If an error occurs during data processing, Customer Insights explains the issue in a message and provides an action to take. For example, if required attributes needed to generate insights are not identified, click [**Map data**](#map-required-data).
@@ -52,10 +48,11 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
    After the data quality checks, Customer Insights removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
 
 1. Upon a successful completion, the **Results** page displays results from your file:
-   - Number of mapped columns
-   - Number of missing rows
+   - Unique number of customers
    - Number of duplicate rows
    - Suggested segments and measures
+
+   :::image type="content" source="media/get-started-results.png" alt-text="Screenshot of Getting Started - Results.":::
 
 1. Select **Done** to go to the **Home** page.
 
@@ -66,5 +63,11 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
 1. Review all mapped fields under the **All mapped** tab and make changes if necessary.
 
 1. Select **Next**.
+
+## Next steps
+
+- [Review generated segments or create new ones](segments.md)
+- [Review generated measures or create new ones](measures.md)
+- [Export your data to various business apps and tools](export-destinations.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

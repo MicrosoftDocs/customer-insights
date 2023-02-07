@@ -4,10 +4,9 @@ description: An overview of Customer Insights help resources to get started quic
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 12/6/2022
-ms.subservice: audience-insights 
-ms.topic: conceptual
-ms.ms.custom: intro-internal
+ms.date: 02/07/2023
+ms.topic: how-to
+ms.custom: bap-template
 searchScope: 
   - ci-home
   - customerInsights
@@ -19,22 +18,23 @@ Customer Insights can help you build a deeper understanding of your customers. C
 
 ## Step 1: Create an environment
 
-First, create an environment to work in. If your organization already purchased a license, see [Create an environment](create-environment.md). To start a trial for Customer Insights, see [Set up a trial environment](trial-signup.md).
+1. After signing up for a trial or purchasing a license, [create an environment](create-environment.md).
 
-## Step 2: Explore Customer Insights
+   :::image type="content" source="media/get-started.png" alt-text="Screenshot of Getting started for getting insights in minutes.":::
 
-The first time you sign in to Customer Insights, configure settings and explore the product.
+1. Once the environment has been created, you can:
 
-1. [Sign in to Customer Insights](https://home.ci.ai.dynamics.com) using your Microsoft Azure Active Directory (AAD) user account.
+   - [Upload a single CSV file, unify the data, and generate automatic insights](data-sources-single.md).
+   - [Explore Customer Insights](home.md). Select **Not now** and change the environment to see demo data.
+   - [Ingest data from multiple sources](#step-2-ingest-unify-and-set-up-relationships-for-your-data). Select **Not now** and continue to Step 2.
 
-1. Change the environment to see demo data and [explore Customer Insights](home.md).
-
-> [!NOTE]
-> To upload a single CSV file, unify the data, and generate automatic insights, go to [Experience Customer Insights in minutes](data-sources-single.md). Otherwise, continue with the following steps.
-
-## Step 3: Ingest, unify, and set up relationships for your data
+## Step 2: Ingest, unify, and set up relationships for your data
 
 Unified profiles are the foundation to get insights and take action on the data. Bring in data from various sources and run the data unification process to combine unified profiles. Specify relationships between the ingested entities and use enrichment features to add information to the profiles.
+
+1. From the **Home** page, select **Step-by-step guide**.
+
+   :::image type="content" source="media/home-single-file.png" alt-text="Screenshot of Home page with Step-by-step highlighted.":::
 
 1. Ingest data by creating data sources from multiple options. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md), or  [Power Query connectors](connect-power-query.md).
 
@@ -42,7 +42,7 @@ Unified profiles are the foundation to get insights and take action on the data.
 
 1. Get familiar with the [entities the system creates](entities.md) and create [relationships between the ingested entities](relationships.md).
 
-## Step 4: Enhance unified profiles with predictions, activities, and measures
+## Step 3: Enhance unified profiles with predictions, activities, and measures
 
 With unified profiles set up, enhance your data and further increase the information they provide.
 
@@ -54,7 +54,7 @@ With unified profiles set up, enhance your data and further increase the informa
 
 1. [Build measures](measures.md) to gauge your business goals and KPIs.
 
-## Step 5: Create segments and activate data through various export options
+## Step 4: Create segments and activate data through various export options
 
 Now that your data is complete and contains a wide range of information about your customers, look for ways to take action on that data.
 
