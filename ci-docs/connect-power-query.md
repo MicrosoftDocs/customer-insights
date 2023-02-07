@@ -121,28 +121,8 @@ The data can be fixed at the source and re-ingested. Or fix the transformation w
 
 1. Select **Save**. That data source is refreshed.
 
-## Troubleshoot PPDF Power Query-based data source refresh issues
-
-If the data is stale or you receive errors after a data source refresh, perform the following steps:
-
-1. Navigate to [Power Platform](https://make.powerapps.com).
-
-1. Select the **Environment** for your Customer Insights instance.
-
-1. Navigate to **Dataflows**.
-
-1. For the dataflow that corresponds to the data source in Customer Insights, select the vertical ellipsis (&vellip;) and then select **Show refresh history**.
-
-1. If the **Status** of the dataflow is **Success**, the ownership of the Power Query-based data source might have changed:
-
-   1. Review the refresh schedule from the refresh history.
-   1. Set the new owner's schedule and save the settings.
-
-1. If the **Status** of the dataflow is **Failed**:
-
-   1. Download the refresh history file.
-   1. Review the downloaded file for the reason for the failure.
-   1. If the error cannot be resolved, select **?** to open a support ticket. Include the downloaded refresh history file.
+> [!TIP]
+> For troubleshooting information, go to [Microsoft Dynamics 365 Customer Insights troubleshooting](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights).
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
