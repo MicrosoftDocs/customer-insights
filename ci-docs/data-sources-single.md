@@ -1,5 +1,5 @@
 ---
-title: "Experience Customer Insights in minutes"
+title: "Get started with Customer Insights using a single data source"
 description: "Learn how to ingest data from a single file or from sample data"
 ms.date: 02/07/2023
 ms.topic: overview
@@ -13,7 +13,7 @@ searchScope:
   - customerInsights
 ---
 
-# Experience Customer Insights in minutes
+# Get started with Customer Insights using a single data source
 
 Dynamics 365 Customer Insights provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv file or choose sample data.
 
@@ -26,7 +26,7 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
   - Demographics: Address, DOB, gender
   - Business: Loyalty points, total spending
 
-## Ingest a single data source
+## Upload a single data source
 
 1. From the **Home** page, select **Add data** on the **Get insights in mins** card. From the Getting Started page, select **Add data**.
 
