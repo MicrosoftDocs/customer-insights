@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 08/31/2022
+ms.date: 02/09/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -17,6 +17,16 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## January 2023
+
+### Achieve business scenarios with application lifecycle management
+
+Dynamics 365 Customer Insights starts supporting application and environment lifecycle management capabilities for common enterprise-grade requirements. For example, you can copy, reset, or delete your Customer Insights environments. Additionally, the system ensures your Customer Insights environment and the associated Dataverse environment are always in sync.
+
+- [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/achieve-business-scenarios-application-lifetime-management)
+- [Documentation](create-environment.md#copy-the-environment-configuration)
+
+<!--
 ## September 2022 updates
 
 The updates in September 2022 include new features, performance upgrades, and bug fixes.
@@ -269,7 +279,7 @@ The updates in January 2022 include new features, performance upgrades, and bug 
 
 Customer Insights provides a new AI-powered feature to synthesize customer sentiment and identify specific business aspects as opportunities for targeted improvements. By analyzing the written feedback of your customers, you can get accurate insights at low cost. Sentiment analysis powered by Natural Language Processing (NLP) models that generate two derived insights for each customer ID. A sentiment score (of –5 to 5) and list of applicable business aspects. 
 
-For more information, see [Analyze sentiment in customer feedback (Preview)](sentiment-analysis.md).
-
+For more information, see [Analyze sentiment in customer feedback (Preview)](sentiment-analysis.md). 
+-->
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
