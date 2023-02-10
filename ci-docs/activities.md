@@ -1,7 +1,7 @@
 ---
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 01/31/2023
+ms.date: 02/10/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: srivas15
@@ -20,20 +20,25 @@ searchScope:
 
 # Customer or business contact activities
 
-Customer activities are actions or events performed by customers or business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these [data sources](data-sources.md) and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
+Customer activities are actions or events performed by customers or business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
 
-## Define a customer activity
+## Prerequisites
 
-A table must have at least one attribute of type **Date** to be included in a customer timeline. The **Add activity** control is disabled if no such table is found.
+- Added [data sources](data-sources.md) that contain activities. Each activity table must have at least one field of type **Date**.
+- [Unified customer data into customer profile](data-unification.md).
 
-1. Go to **Data** > **Activities**. Select **Add activity** to start the guided experience.
+## Define customer activities
 
-1. In the **Activity tables** step, **Select tables** and choose the transactional or activity tables to include in your unified activity. Select **Apply**.
+With the Customer Insights activity wizard, you can define all activities at one time.
+
+1. Go to **Data** > **Activities**. Select **Configure activity**.
+
+1. In the **Activity tables** step, **Select tables** and choose the tables that have activity data. Select **Apply**.
 
 1. For each table, choose the following information:
 
-   - **Activity type**: Choose from the semantic types, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, and *Subscription*. If a semantic activity type isn't relevant for the new activity, choose a non-semantic type.
-   - **Primary key**: The primary key uniquely  identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
+   - **Activity type**: Choose from the semantic types, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, and *Subscription*. If a semantic activity type isn't relevant for the new activity, choose a non-semantic type, *Other*, or *Create New* for a custom type.
+   - **Primary key**: The primary key uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    > [!NOTE]
    > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
