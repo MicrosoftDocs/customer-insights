@@ -31,7 +31,7 @@ Only one data source of an environment can simultaneously use the same Dataverse
 
 1. Go to **Data** > **Data sources**.
 
-1. Select **Add data source**.
+1. Select **Add a data source**.
 
 1. Select **Microsoft Dataverse**.
 

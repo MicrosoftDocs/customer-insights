@@ -48,7 +48,7 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 1. Go to **Data** > **Data sources**.
 
-1. Select **Add data source**.
+1. Select **Add a data source**.
 
 1. Choose the **Azure Synapse Analytics (Preview)** method.
 

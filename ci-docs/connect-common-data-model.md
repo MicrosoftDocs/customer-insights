@@ -47,18 +47,18 @@ For optimal performance, Customer Insights recommends the size of a partition be
 
 1. Go to **Data** > **Data sources**.
 
-1. Select **Add data source**.
+1. Select **Add a data source**.
 
-1. Select **Azure data lake storage**.
+1. Select **Azure Data Lake Storage Gen 2**.
 
    :::image type="content" source="media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake." lightbox="media/data_sources_ADLS.png":::
 
-1. Enter a **Name** for the data source and an optional **Description**. The name uniquely identifies the data source and is referenced in downstream processes and can't be changed.
+1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
 
 1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
    - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Azure Private Link**. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
   
    > [!NOTE]
    > You need one of the following roles either to the container or the storage account to create the data source:
@@ -93,12 +93,12 @@ For optimal performance, Customer Insights recommends the size of a partition be
    1. Optionally, change the partition pattern.
    1. Select **Close** to save and close the panel.
 
-1. Select the number of **Attributes** for each included table. The **Manage attributes** page displays.
+1. Select the number of **Columns** for each included table. The **Manage attributes** page displays.
 
    :::image type="content" source="media/dataprofiling-tables.png" alt-text="Dialog box to select data profiling.":::
 
-   1. Create new attributes, edit, or delete existing attributes. You can change the name, the data format, or add a semantic type.
-   1. To enable analytics and other capabilities, select **Data profiling** for the whole table or for specific attributes. By default, no table is enabled for data profiling.
+   1. Create new columns, edit, or delete existing columns. You can change the name, the data format, or add a semantic type.
+   1. To enable analytics and other capabilities, select **Data profiling** for the whole table or for specific columns. By default, no table is enabled for data profiling.
    1. Select **Done**.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
@@ -109,7 +109,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 ### Create a new schema file
 
-1. Select **New schema file**.
+1. Select **Create schema file**.
 
 1. Enter a name for the file and select **Save**.
 
@@ -131,13 +131,13 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
    1. Ensure the data format is correct for each attribute.
 
-   1. To enable analytics and other capabilities, select **Data profiling** for the whole table or for specific attributes. By default, no table is enabled for data profiling.
+   1. To enable analytics and other capabilities, select **Data profiling** for the whole table or for specific columns. By default, no table is enabled for data profiling.
 
       :::image type="content" source="media/dataprofiling-tables.png" alt-text="Dialog box to select data profiling.":::
 
    1. Select **Done**. The **Select tables** page displays.
 
-1. Continue to add tables and attributes, if applicable.
+1. Continue to add tables and columns, if applicable.
 
 1. After all tables have been added, select **Include** to include the tables in the data source ingestion.
 
@@ -165,19 +165,17 @@ You can update the *Connect to storage account using* option. For more informati
 
 1. Next to the data source you'd like to update, select  **Edit**.
 
-   :::image type="content" source="media/data_sources_edit_ADLS.png" alt-text="Dialog box to edit Azure Data Lake data source.":::
-
 1. Change any of the following information:
 
    - **Description**
    - **Connect your storage using** and connection information. You can't change **Container** information when updating the connection.
       > [!NOTE]
       > One of the following roles must be assigned to the storage account or container:
-        > - Storage Blob Data Reader
-        > - Storage Blob Data Owner
-        > - Storage Blob Data Contributor
+      > - Storage Blob Data Reader
+      > - Storage Blob Data Owner
+      > - Storage Blob Data Contributor
 
-   - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
+   - **Enable Azure Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
 
 1. Select **Next**.
 1. Change any of the following:
@@ -193,9 +191,9 @@ You can update the *Connect to storage account using* option. For more informati
      > [!NOTE]
      > Always keep the table name in Customer Insights the same as the table name inside the model.json or manifest.json file after ingestion. Customer Insights validates all table names with the model.json or manifest.json during every system refresh. If a table name is changed either inside Customer Insights or outside, an error occurs because Customer Insights cannot find the new table name in the .json file. If an ingested table name was accidentally changed, edit the table name in Customer Insights to match the name in the .json file.
 
-1. Select **Attributes** to add or change attributes, or to enable data profiling. Then select **Done**.
+1. Select **Columns** to add or change them, or to enable data profiling. Then select **Done**.
 
-1. Click **Save** to apply your changes and return to the **Data sources** page.
+1. Select**Save** to apply your changes and return to the **Data sources** page.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

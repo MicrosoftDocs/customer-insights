@@ -29,7 +29,7 @@ To securely connect data in a private network, Power Query supports the use of [
 
 1. Go to **Data** > **Data sources**.
 
-1. Select **Add data source**.
+1. Select **Add a data source**.
 
 1. Select **Microsoft Power Query**.
 
