@@ -33,7 +33,7 @@ With the Customer Insights activity wizard, you can define all activities at one
 
 1. Go to **Data** > **Activities**. Select **Configure activities**.
 
-1. In the **Activity tables** step, **Select tables** and choose the tables that have activity data. Select **Apply**.
+1. In the **Activity tables** step, **Select tables** and choose the tables that have activity data. Select **Add**.
 
 1. For each table, choose the following information:
 
@@ -79,8 +79,6 @@ With the Customer Insights activity wizard, you can define all activities at one
 1. In the **Review** step, verify your selections. Go back to any of the previous steps and update the information if necessary.
 
 1. To save your changes, select **Save and close**. To save your changes and create the activities, select **Create activities**.
-
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Define a customer activity (legacy)
 
@@ -179,7 +177,7 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
   
 1. Go to **Data** > **Activities**. Select **Configure activities**.
 
-1. In the **Activity tables** step, **Select tables** and choose the tables that have activity data. Select **Apply**.
+1. In the **Activity tables** step, **Select tables** and choose the tables that have activity data. Select **Add**.
 
 1. For each table, choose the following information:
 
@@ -188,8 +186,6 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
 
    > [!NOTE]
    > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
-
-   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with table and primary key.":::
 
 1. Select **Next**.
 
@@ -207,8 +203,6 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
 
 1. If you chose **Yes** to map your field types, select the appropriate attributes to map your data. Required fields are determined by the selected activity type.
 
-   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the relationship.":::
-
 1. Select **Next**.
 
 1. In the **Relationship** step, select **Add relationship** and create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary table. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
@@ -223,8 +217,6 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
 1. In the **Review** step, verify your selections. Go back to any of the previous steps and update the information if necessary.
 
 1. To save your changes, select **Save and close**. To save your changes and create the activities, select **Create activities**.
-
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 1. After creating the contact-level activities, the information will now be visible on your customer timeline.
 
