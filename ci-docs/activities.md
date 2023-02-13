@@ -143,7 +143,7 @@ With the Customer Insights activity wizard, you can define all activities at one
 
 ## Manage existing customer activities
 
-Go to **Data** > **Activities** to view your saved activities, their source table, the activity type, and if they are included in the customer timeline. You can sort the list of activities by any column or use the search box to find am activity.
+Go to **Data** > **Activities** to view your saved activities, their source table, the activity type, and if they are included in the customer timeline. You can sort the list of activities by any column or use the search box to find an activity.
 
 Select an activity to rename or delete the activity. To edit activities, select **Configure activities**.
 
