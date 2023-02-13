@@ -4,11 +4,9 @@ description: "Learn how to use the Dynamics 365 Customer Insights connector in P
 ms.date: 07/25/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
-manager: shellyha
 ---
 
 # Power BI connector (preview)
@@ -48,26 +46,7 @@ The Customer Insights connector for Power BI is designed to work for data sets t
 
 Consider working with a subset of your data. For example, create [segments](segments.md) instead of exporting all customer records to Power BI.
 
-## Troubleshooting
-
-### Customer Insights environment doesn't show in Power BI
-
-Environments that have more than one [relationship](relationships.md) defined between two identical entities in Customer Insights will not be available in the Power BI connector.
-
-Identify and remove the duplicated relationships.
-
-1. Go to **Data** > **Relationships** on the environment you're missing in Power BI.
-1. Identify duplicated relationships:
-   - Check if there is more than one relationship defined between the same two entities.
-   - Check if there is a relationship created between two entities that are both included in the unification process. There is an implicit relationship defined between all entities included in the unification process.
-1. Remove any duplicate relationships identified.
-
-After removal of the duplicated relationships, try to configure the Power BI connector again.
-
-### Errors on date fields when loading entities in Power BI Desktop
-
-When loading entities that contain fields with a date format like MM/DD/YYYY, you might encounter errors due to mismatched locale formats. This mismatch happens when your Power BI Desktop file is set to another locale than English (United States), because date fields in Customer Insights are saved in US format.
-
-The Power BI Desktop file has a single locale setting, which is applied when retrieving data. To fix the date errors, [set the locale of the .BPI file](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop) to English (United States).
+> [!TIP]
+> For troubleshooting information, go to [Microsoft Dynamics 365 Customer Insights troubleshooting](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

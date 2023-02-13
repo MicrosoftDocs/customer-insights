@@ -4,11 +4,9 @@ description: "Use proprietary data from Microsoft Office to enrich your customer
 ms.date: 06/10/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahl
 ms.author: jodahl
-manager: shellyha
 ---
 
 # Enrich customer profiles with data from Microsoft Office 365 (preview)

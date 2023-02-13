@@ -8,7 +8,6 @@ ms.topic: get-started
 
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
-manager: shellyha
 ---
 
 # Dynamics 365 Customer Insights trial FAQ

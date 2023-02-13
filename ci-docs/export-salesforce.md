@@ -4,11 +4,9 @@ description: "Learn how to configure the connection and export to Salesforce Mar
 ms.date: 07/25/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export data to Salesforce Marketing Cloud (preview)
@@ -32,8 +30,6 @@ Use your customer data in Salesforce Marketing Cloud by exporting them through a
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Provide a **Username**, **Password**, **Hostname**, and **Export folder** for your SFTP account.
-
-1. Select **Verify** to test the connection.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 

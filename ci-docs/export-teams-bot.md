@@ -4,11 +4,9 @@ description: "Look up unified customer profiles in Microsoft Teams with the help
 ms.date: 07/25/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
-manager: shellyha
 ---
 
 # Teams bot for Dynamics 365 Customer Insights (preview)

@@ -4,12 +4,10 @@ description: "Merge entities to create unified customer profiles."
 recommendations: false
 ms.date: 01/13/2023
 
-ms.service: customer-insights
 ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-manager: shellyha
 ms.custom: bap-template
 searchScope: 
   - ci-merge
