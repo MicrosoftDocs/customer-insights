@@ -168,40 +168,65 @@ Select an activity to rename or delete the activity. To edit activities, select 
 > [!NOTE]
 > Activity filters are removed when you leave a customer profile. You have to apply them each time you open a customer profile.
 
-## Define a contact activity
+## Define contact activities (preview)
 
 For business accounts (B-to-B), use a *ContactProfile* table to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
 
    > [!NOTE]
-   > To define a contact-level activity, a *ContactProfile* table must be created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping).
+   > To define contact-level activities, a *ContactProfile* table must be created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping).
    >
    > You must have both **AccountID** and **ContactID** attributes for each record within your activity data.
   
-1. Go to **Data** > **Activities**.
+1. Go to **Data** > **Activities**. Select **Configure activities**.
 
-1. Select **Add Activity**.
+1. In the **Activity tables** step, **Select tables** and choose the tables that have activity data. Select **Apply**.
 
-1. In the **Activity data** step, enter the following information:
+1. For each table, choose the following information:
 
-   - **Activity name**: Select a name for your activity.
-   - **Activity table**: Select a table that includes transactional or activity data.
-   - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
+   - **Activity type**: Choose from the semantic types, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, and *Subscription*. If a semantic activity type isn't relevant for the new activity, choose a non-semantic type, *Other*, or *Create New* for a custom type.
+   - **Primary key**: The primary key uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
+   > [!NOTE]
+   > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
+
+   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with table and primary key.":::
+
+1. Select **Next**.
+
+1. In the **Activity fields** step, enter the following information for each table:
+
+   - **Activity name**: Unique name for your activity.
+   - **Timestamp**: Field that represents the start time or date of your activity.
+   - **Event activity**: Field that is the event for this activity.
+   - **Web address** (optional): Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* table, which can be consumed downstream using [APIs](apis.md).
+   - **Additional detail** (optional): Field with relevant information for this activity.
+   - **Show this activity in the timeline on your customer profile**: **Yes** to show the activity in the timeline or **No** to hide it.
      > [!NOTE]
-     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
+     > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
+   - **Map field types for your activity's attributes?**: **Yes** to help the system better understand the relevance of your activity data or **No** do not map.
 
-1. In the **Relationships** step, create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary table. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
+1. If you chose **Yes** to map your field types, select the appropriate attributes to map your data. Required fields are determined by the selected activity type.
+
+   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the relationship.":::
+
+1. Select **Next**.
+
+1. In the **Relationship** step, select **Add relationship** and create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary table. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
    - Example relationship for an activity called *Purchases*:
       - **Purchases Source Activity Data** > **Contact Data** on the attribute **ContactID**
       - **Contact Data** > **Account Data** on the attribute **AccountID**
 
    :::image type="content" source="media/Contact_Activities1.png" alt-text="Example relationship setup.":::
 
-1. After setting up the relationship(s), select **Next** and complete your activity mapping configuration. For detailed steps on activity creation, see [define customer activities](#define-customer-activities).
+1. Select **Apply** to create the relationship and then select **Next**.
 
-1. Run your activity mappings.
+1. In the **Review** step, verify your selections. Go back to any of the previous steps and update the information if necessary.
 
-1. Your contact-level activities will now be visible on your customer timeline.
+1. To save your changes, select **Save and close**. To save your changes and create the activities, select **Create activities**.
+
+[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+1. After creating the contact-level activities, the information will now be visible on your customer timeline.
 
    :::image type="content" source="media/Contact_Activities2.png" alt-text="Final result after configuring contact activities":::
 
