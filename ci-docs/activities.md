@@ -61,7 +61,7 @@ With the Customer Insights activity wizard, you can define all activities at one
 
 1. If you chose **Yes** to map your field types, select the appropriate attributes to map your data. Required fields are determined by the selected activity type.
 
-   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the relationship.":::
+   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Map the activity fields.":::
 
 1. Select **Next**.
 
@@ -95,7 +95,7 @@ With the Customer Insights activity wizard, you can define all activities at one
      > [!NOTE]
      > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
 
-   :::image type="content" source="media/Activity_Wizard1legacy.PNG" alt-text="Define the relationship.":::
+   :::image type="content" source="media/Activity_Wizard1legacy.PNG" alt-text="Define the activity name and table.":::
 
 1. In the **Relationships** step, select **Add relationship** to connect your activity data to its corresponding customer record. This step visualizes the connection between tables.
   
@@ -118,14 +118,14 @@ With the Customer Insights activity wizard, you can define all activities at one
    - **Optional fields**
       - **Additional detail**: Field with relevant information for this activity.
       - **Icon**: Icon that best represents this activity type.
-      - **Web address**: Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* entity, which can be consumed downstream using [APIs](apis.md).
+      - **Web address**: Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* table, which can be consumed downstream using [APIs](apis.md).
 
    - **Show in timeline**
       - Choose if you what to show this activity in the timeline view on your customer profiles. Select **Yes** to show the activity in the timeline or **No** to hide it.
         > [!NOTE]
         > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
 
-      :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity entity.":::
+      :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity table.":::
 
 1. Select **Next** to choose the activity type, or select **Finish and review** to save the activity with the activity type set to **Other**.
 
