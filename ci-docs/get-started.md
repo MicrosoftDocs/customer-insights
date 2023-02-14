@@ -26,10 +26,8 @@ Customer Insights can help you build a deeper understanding of your customers. C
 
 Once the environment has been created, decide how you want to get data into your new environment:
 
-- Gain insights in minutes when you [upload demo data or your own data from a single CSV file](data-sources-single.md).
-- [Import data from multiple sources](#import-unify-and-set-up-relationships-for-multiple-data-sources). Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md), or  [Power Query connectors](connect-power-query.md).
-
-:::image type="content" source="media/get-started.png" alt-text="Screenshot of Getting started for getting insights in minutes.":::
+- [Upload demo data or your own data from a single CSV file](data-sources-single.md). The data is imported, unified, and insights generated.
+- Import data from multiple sources. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md), or  [Power Query connectors](connect-power-query.md). Then [unify the data](#step-3-unify-the-data-and-set-up-relationships).
 
 ## Step 3: Unify the data and set up relationships
 

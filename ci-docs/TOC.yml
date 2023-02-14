@@ -6,10 +6,12 @@
 
 - name: Get started
   items: 
-    - name: Sign up for a free trial
-      href: trial-signup.md
-    - name: Trial FAQ
-      href: trial-FAQ.md
+    - name: Try for free
+      items: 
+      - name: Sign up for a free trial
+        href: trial-signup.md
+      - name: Trial FAQ
+        href: trial-FAQ.md
     - name: Buy
       href: paid-license.md
     - name: Access your environment
@@ -32,6 +34,8 @@
   items:
     - name: Data sources overview
       href: data-sources.md
+    - name: Upload data using a single CSV file
+      href: data-sources-single.md
     - name: Connect to data in Azure Data Lake Storage
       href: connect-common-data-model.md
     - name: Connect to Azure Synapse Analytics

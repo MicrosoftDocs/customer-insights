@@ -1,7 +1,7 @@
 ---
 title: "Get started with Customer Insights using a single data source"
 description: "Learn how to ingest data from a single file or from sample data"
-ms.date: 02/07/2023
+ms.date: 02/14/2023
 ms.topic: overview
 author: wmelewong
 ms.author: wameng

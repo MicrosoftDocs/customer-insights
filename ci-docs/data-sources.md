@@ -1,8 +1,7 @@
 ---
 title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
-ms.date: 02/07/2023
-
+ms.date: 02/14/2023
 ms.topic: overview
 author: mukeshpo
 ms.author: mukeshpo
@@ -18,7 +17,7 @@ searchScope:
 Dynamics 365 Customer Insights provides connections to bring data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md), generate insights, and activate the data for building personalized experiences.
 
 > [!NOTE]
-> To upload a single CSV file, unify the data, and generate automatic insights, go to [Experience Customer Insights in minutes](data-sources-single.md).
+> To upload a single CSV file, unify the data, and generate automatic insights, go to [Get started with Customer Insights using a single data source](data-sources-single.md).
 
 ## Add or edit data sources
 
