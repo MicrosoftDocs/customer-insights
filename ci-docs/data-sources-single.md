@@ -15,7 +15,7 @@ searchScope:
 
 # Get started with Customer Insights using a single data source
 
-Dynamics 365 Customer Insights provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv file or choose sample data.
+Dynamics 365 Customer Insights provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv file or choose sample data. Customer Insights uploads and unifies the data creating a customer profile, and then automatically generates insights on the data.
 
 ## Prerequisites
 
@@ -28,15 +28,13 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
 
 ## Upload a single data source
 
-1. From the **Home** page, select **Add data** on the **Get insights in mins** card. From the Getting Started page, select **Add data**.
+1. From the **Home** page, select **Add data** on the **Get insights in mins** card. From the Getting Started page, select **Get started**.
 
    :::image type="content" source="media/get-started.png" alt-text="Screenshot of Getting started for getting insights in minutes.":::
 
-1. Select **Get started**.
+1. To use your own data, browse or drag and drop your file. To use sample data, select **Download Microsoft’s sample data** and load the sample file. If the file meets the prerequisites, **Next** displays.
 
    :::image type="content" source="media/get-started-add-data.png" alt-text="Screenshot of Getting Started - Add Data to add your single CSV file.":::
-
-1. To use your own data, browse or drag and drop your file. To use sample data, select **Download Microsoft’s sample data** and load the sample file. If the file meets the prerequisites, **Next** displays.
 
 1. Select **Next**. Customer Insights identifies a unique key for your data source called the primary key.
 
@@ -49,7 +47,7 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
 
 1. Upon a successful completion, the **Results** page displays results from your file:
    - Unique number of customers
-   - Number of duplicate rows
+   - Number of duplicate records
    - Suggested segments and measures
 
    :::image type="content" source="media/get-started-results.png" alt-text="Screenshot of Getting Started - Results.":::
