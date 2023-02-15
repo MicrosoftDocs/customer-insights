@@ -25,7 +25,7 @@ You can attach or import multiple data sources into Customer Insights. The links
 
 **Attach a data source**
 
-If you have data prepared in one of Microsoft's Azure data services, Customer Insights can easily connect to the data source without having to re-ingest the data. Select one of the following options:
+If you have data prepared in one of Microsoft's Azure data services, Customer Insights can easily connect to the data source without having to reingest the data. Select one of the following options:
 
 - [Azure Data Lake Storage (csv or parquet files in a Common Data Model folder)](connect-common-data-model.md)
 - [Azure Synapse Analytics (Lake databases)](connect-synapse.md)
@@ -33,12 +33,12 @@ If you have data prepared in one of Microsoft's Azure data services, Customer In
 
 **Import and transform**
 
-If you use on-premise data sources, Microsoft, or third-party data, import and transform the data using Power Query connectors.
+If you use on-premises data sources, Microsoft, or third-party data, import and transform the data using Power Query connectors.
 - [Power Query connectors](connect-power-query.md)
 
 ## Review data sources
 
-If your environment was configured to use Customer Insights storage and you use on-premise data sources, you use Power Platform dataflows. With Power Platform dataflows, you can view shared data sources and data sources managed by others. The **Data Sources** page lists the data sources in three sections:
+If your environment was configured to use Customer Insights storage and you use on-premises data sources, you use Power Platform dataflows. With Power Platform dataflows, you can view shared data sources and data sources managed by others. The **Data Sources** page lists the data sources in three sections:
 
 - **Shared**: Data sources that can be managed by all Customer Insights admins. Power Platform dataflows, your own storage account, and attaching to a Dataverse-managed data lake are examples of shared data sources.
 - **Managed by me**: Power Platform dataflows created and managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.
@@ -64,7 +64,7 @@ Select a data source to view available actions.
 
 ## Refresh data sources
 
-Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premise data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules which are set up during data ingestion.
+Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premises data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules, which are set up during data ingestion.
 
 For attached data sources, data ingestion consumes the latest data available from that data source.
 
@@ -80,7 +80,7 @@ To refresh a data source on demand:
 
 ## Corrupt data sources
 
-Data being ingested may have corrupt records which can cause the data ingestion process to complete with errors or warnings.
+Data being ingested may have corrupt records that can cause the data ingestion process to complete with errors or warnings.
 
 > [!NOTE]
 > If data ingestion completes with errors, subsequent processing (such as unification or activity creation) that leverages this data source will be skipped. If ingestion completed with warnings, subsequent processing continues but some of the records may not be included.

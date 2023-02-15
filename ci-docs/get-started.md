@@ -1,6 +1,6 @@
 ---
 title: Get started with Dynamics 365 Customer Insights
-description: An overview of Customer Insights help resources to get started quickly. 
+description: An overview of Customer Insights helps resources to get started quickly. 
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
@@ -22,7 +22,7 @@ Customer Insights can help you build a deeper understanding of your customers. C
 
 1. [Create an environment](create-environment.md). After the environment is created, the **Getting Started** screen displays.
 
-   :::image type="content" source="media/get-started.png" alt-text="Screenshot of the Getting Started screen.":::
+   :::image type="content" source="media/get-started.png" alt-text="Screenshot of the Getting Started screen with Insights in minutes.":::
 
 ## Step 2: Import data
 
@@ -31,7 +31,7 @@ Customer Insights can help you build a deeper understanding of your customers. C
 
 1. To get started with data from multiple sources, select **Not now** on the **Getting started** screen. On the **Home** screen, change Get insights in mins to **Step-by-step guide**.
 
-   :::image type="content" source="media/home-step-by-step.png" alt-text="Screenshot of the Getting Started screen.":::
+   :::image type="content" source="media/home-step-by-step.png" alt-text="Screenshot of the Getting Started screen with Step-by-step guide selected.":::
 
 1. Import your data. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md), or  [Power Query connectors](connect-power-query.md).
 
