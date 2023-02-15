@@ -4,7 +4,7 @@ description: An overview of Customer Insights help resources to get started quic
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 02/07/2023
+ms.date: 02/15/2023
 ms.topic: how-to
 ms.custom: bap-template
 searchScope: 
@@ -20,14 +20,20 @@ Customer Insights can help you build a deeper understanding of your customers. C
 
 1. Sign up for a [free trial](trial-signup.md) or [purchase a license](paid-license.md).
 
-1. [Create an environment](create-environment.md).
+1. [Create an environment](create-environment.md). After the environment is created, the **Getting Started** screen displays.
+
+   :::image type="content" source="media/get-started.png" alt-text="Screenshot of the Getting Started screen.":::
 
 ## Step 2: Import data
 
-Once the environment has been created, decide how you want to get data into your new environment:
+> [!TIP]
+> To quickly get started and have Customer Insights automatically generate insights, upload your own data from a single CSV file. Go to [Get started with Customer Insights using a single data source](data-sources-single.md).
 
-- [Upload demo data or your own data from a single CSV file](data-sources-single.md). The data is imported, unified, and insights generated.
-- Import data from multiple sources. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md), or  [Power Query connectors](connect-power-query.md). Then [unify the data](#step-3-unify-the-data-and-set-up-relationships).
+1. To get started with data from multiple sources, select **Not now** on the **Getting started** screen. On the **Home** screen, change Get insights in mins to **Step-by-step guide**.
+
+   :::image type="content" source="media/home-step-by-step.png" alt-text="Screenshot of the Getting Started screen.":::
+
+1. Import your data. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md), or  [Power Query connectors](connect-power-query.md).
 
 ## Step 3: Unify the data and set up relationships
 
@@ -58,6 +64,5 @@ Now that your data is complete and contains a wide range of information about yo
 1. Browse the expanding catalog of [export options](export-destinations.md) where you can use customer data. For example, you can use data to manage promotions and reach out with digital marketing.
 
 1. Review integration options, for example to other Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md).  
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
