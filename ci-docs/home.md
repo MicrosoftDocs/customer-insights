@@ -17,7 +17,7 @@ You can access [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/
 
 The **Home** page guides you through the configuration process for key features and provides an overview of segments, measures, and enrichment data. The default home page shows how to get insights in minutes by adding data in a single file.
 
-:::image type="content" source="media/home-single-file.png" alt-text="Screenshot of the default Home screen showing get insights in minutes.":::
+:::image type="content" source="media/home-step-by-step.png" alt-text="Screenshot of the default Home screen showing get insights in minutes.":::
 
 If you have multiple data sources, select **Step-by-step guide**.
 
