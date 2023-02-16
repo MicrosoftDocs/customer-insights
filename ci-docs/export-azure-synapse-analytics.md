@@ -24,8 +24,8 @@ In Azure:
 - An active Azure subscription.
 
 - The user having the the **Administrator** role on Customer Insights needs to have the **User Access Administrator** role assigned in the subcription in order to grant the *service principal* access to the azure resources via the Customer Insights UI. Otherwise the following permissions must be set by a user in Azure who has the **User Access Administrator** role assigned.
-  - Learn more on [User Access Administrator](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator). The **Owner** role has the **User Access Administrator** role implicit. 
-  - Learn more about [Owner vs User Access Administrator](https://learn.microsoft.com/azure/role-based-access-control/role-assignments-steps#step-2-select-the-appropriate-role).  
+  - Learn more on [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator). The **Owner** role has the **User Access Administrator** role implicit. 
+  - Learn more about [Owner vs User Access Administrator](/azure/role-based-access-control/role-assignments-steps#step-2-select-the-appropriate-role).  
 
 - If using a new Azure Data Lake Storage Gen2 account, the [service principal for Customer Insights](connect-service-principal.md) has **Storage Blob Data Contributor** permissions. The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
 
