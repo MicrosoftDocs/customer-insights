@@ -1,7 +1,7 @@
 ---
 title: "Incremental refresh for Power Query and Azure Data Lake data sources"
 description: "Refresh new and updated data for large data sources based on Power Query or Azure data lake data sources."
-ms.date: 01/26/2023
+ms.date: 02/17/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: mukeshpo
@@ -22,7 +22,7 @@ Incremental refresh for data sources based on Power Query (preview) or Azure Dat
 
 ## Configure incremental refresh for data sources based on Power Query (preview)
 
-Customer Insights allows incremental refresh for data sources imported through Power Query that support incremental ingestion. For example, Azure SQL databases with date and time fields, which indicate when data records were last updated.
+Customer Insights allows incremental refresh for data sources imported through Power Query that support incremental ingestion. For example, Azure SQL databases with date and time fields which indicate when data records were last updated.
 
 1. [Create a new data source based on Power Query](connect-power-query.md).
 
@@ -43,7 +43,7 @@ Customer Insights allows incremental refresh for data sources imported through P
 1. Select an entity, and provide the following details:
 
    - **Define the primary key**: Select a primary key for the entity or table.
-   - **Define the "last updated" field**: This field will only display attributes of type date or time. Select an attribute that indicates when the records were last updated. It is used to identify the records that fall within the incremental refresh time frame.
+   - **Define the "last updated" field**: This field will only display attributes of type date or time. Select an attribute that indicates when the records were last updated. This attribute identifies the records that fall within the incremental refresh time frame.
    - **Check for updates every**: Specify how long you want the incremental refresh time frame to be.
 
 1. Select **Save** to complete the creation of the data source. The initial data refresh will be a full refresh. Afterwards, the incremental data refresh happens as configured in the previous step.
