@@ -55,8 +55,13 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 - **FullData**: Folder with data files containing initial records
 - **IncrementalData**: Folder with date/time hierarchy folders in **yyyy/mm/dd/hh** format containing the incremental updates. **hh** represents the UTC hour of the updates and contains the **Upserts** and **Deletes** folders. **Upserts** contains data files with updates to existing records or new records. **Deletes** contains data files with records to be removed.
 
-  > [!NOTE]
-  > Customer Insights processes the files in the IncrementalData folder after the specified UTC hour ends. For example, if Customer Insights starts processing the incremental refresh on January 21, 2023 at 8:15 AM, all files that are in folder 2023/01/21/07 (representing data files stored from 7 AM to 8 AM) are processed. Any files in folder 2023/01/21/08 (representing the current hour where the files are still being generated) are not processed until the next run.
+### Order of processing incremental data
+
+Customer Insights processes the files in the **IncrementalData** folder *after* the specified UTC hour ends. For example, if Customer Insights starts processing the incremental refresh on January 21, 2023 at 8:15 AM, all files that are in folder 2023/01/21/07 (representing data files stored from 7 AM to 8 AM) are processed. Any files in folder 2023/01/21/08 (representing the current hour where the files are still being generated) are not processed until the next run.
+
+If there are two records for a primary key, an upsert and delete, the record with the latest modified date is used. For example, if the delete timestamp is 2023-01-21T08:00:00 and the upsert timestamp is 2023-01-21T08:30:00, Customer Insights uses the upsert record. If the delete occurred after the upsert, then Customer Insights assumes the record is deleted.
+
+### Configure the incremental refresh for Azure Data Lake data sources
 
 1. When adding or editing a data source, navigate to the **Attributes** pane for the entity.
 
@@ -74,9 +79,6 @@ Customer Insights allows incremental refresh for data sources connected to Azure
 1. For **Last updated**, select the date timestamp attribute.
 
 1. If the **Primary key** is not selected, select the primary key. The primary key is an attribute unique to the entity. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
-
-   > [!NOTE]
-   > If there are two records for a primary key, an upsert and delete, the record with the latest modified date is used. For example, if the delete timestamp is 2023-01-21T08:00:00 and the upsert timestamp is 2023-01-21T08:30:00, Customer Insights uses the upsert record. If the delete occurred after the upsert, then Customer Insights assumes the record is deleted.
 
 1. Select **Close** to save and close the pane.
 
