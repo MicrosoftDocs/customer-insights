@@ -2,12 +2,10 @@
 title: "Manage environments"
 description: Learn how to to manage existing Customer Insights environments as an admin.
 ms.date: 08/15/2022
-ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 searchScope: 
   - ci-system-about
   - customerInsights

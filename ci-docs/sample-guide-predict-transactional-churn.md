@@ -5,11 +5,9 @@ ms.date: 11/15/2022
 ms.reviewer: mhart
 
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
-manager: shellyha
 ---
 
 # Transactional churn prediction sample guide

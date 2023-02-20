@@ -3,11 +3,9 @@ title: Product recommendation prediction sample guide
 description: Use this sample guide to try out the out of box product recommendation prediction model.
 ms.date: 11/15/2022
 ms.reviewer: mhart
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
 ms.author: wameng
-manager: shellyha
 searchScope: 
   - ci-predictions
   - ci-create-prediction

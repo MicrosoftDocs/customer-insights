@@ -4,11 +4,8 @@ description: An overview of Customer Insights help resources to get started quic
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 11/15/2022
-ms.subservice: audience-insights 
+ms.date: 11/15/2022 
 ms.topic: conceptual
-ms.manager: shellyha
-ms.custom: intro-internal
 searchScope: 
   - ci-home
   - customerInsights

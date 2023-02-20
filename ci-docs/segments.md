@@ -1,13 +1,11 @@
 ---
 title: "Segments overview"
 description: "Overview on segments and how to create and manage them."
-ms.date: 11/28/2022
-ms.subservice: audience-insights
+ms.date: 01/13/2023
 ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-customers-page
   - ci-enrichment-details
@@ -15,6 +13,10 @@ searchScope:
   - ci-segment-details
   - customerInsights
 ---
+
+<!-- Observations from editor: I usually see B2B and B2C, rather than B-to-B and B-to-C, although I don't find any specific guidance. Also, it's clever how the Create a Segment table is set up. -->
+
+
 
 # Segments overview
 
@@ -39,7 +41,7 @@ Choose how to create a segment based on your target audience.
 Segment of accounts or segment of contacts (preview) with segment builder: [Build your own](segment-builder.md)
 
 > [!NOTE]
-> Most export destinations require contact information for Marketing purposes. Therefore, create segments of contacts to use for those exports.
+> Most export destinations require contact information for marketing purposes. Therefore, create segments of contacts to use for those exports.
 
 ---
 
@@ -55,7 +57,7 @@ Select next to a segment to view available actions.
 > Supported bulk operations include: refresh, download, delete, change state (activate/deactivate), change type (static/dynamic), and tags.
 
 - [**View**](#view-segment-details) the segment details, including member count trend and a preview of segment members.
-- **Download** the list of members as a .CSV file for one or more segments.
+- **Download** the list of members as a CSV file for one or more segments.
 - **Edit** the segment to change its properties.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
 - **Refresh** one or more segments manually to include the latest data. The **Last refreshed** column shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
@@ -70,6 +72,14 @@ Select next to a segment to view available actions.
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
+
+### Segment management tips
+
+The smaller the number of segments and measures that need to be refreshed daily, the quicker the overall system refresh takes. To lower the number of segments refreshed daily, consider the following tips:
+
+- When a campaign is over and you no longer need a segment, **Deactivate** it. Deactivate saves the segment configuration, but stops the automatic refresh.
+
+- [Schedule](segments-schedule.md) segments on a slower cadence so they are not refreshed daily.
 
 ## View segment details
 
@@ -104,9 +114,9 @@ Export segments to other apps to further use the data. Export a segment from the
 
 When you approach or exceed the number of active segments based on the [service limits](service-limits.md), you might experience the following:
 
-- Typical system refresh time is slower
-- Running or refreshing individual segments is slower
-- Refresh failures indicating out of memory
+- Typical system refresh time is slower.
+- Running or refreshing individual segments is slower.
+- Refresh failures indicating out of memory.
 
 The complexity of your segments can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active segments. These messages display on the **Segments** list page. If you encounter these messages or symptoms, see the following recommendations.
 

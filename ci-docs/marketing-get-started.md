@@ -5,7 +5,6 @@ ms.date: 04/20/2022
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
-manager: shellyha
 ---
 
 # Use unified customer profiles in Dynamics 365 Marketing

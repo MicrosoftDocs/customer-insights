@@ -2,12 +2,10 @@
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
 ms.date: 11/16/2022
-ms.subservice: audience-insights
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: srivas15
 ms.author:  shsri
-manager: shellyha
 searchScope: 
   - ci-entities
   - ci-customer-card

@@ -4,11 +4,9 @@ description: "Learn how to configure the connection and export to Sendinblue."
 ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export segments to Sendinblue (preview)

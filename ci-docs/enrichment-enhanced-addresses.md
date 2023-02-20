@@ -4,11 +4,9 @@ description: "Enrich and normalize address information of customer profiles with
 ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
-manager: shellyha
 searchScope: 
   - ci-data-sources-enrichment
   - ci-data-sources-enrichment-details

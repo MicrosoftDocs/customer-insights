@@ -4,11 +4,9 @@ description: "Create segments based on the output table of a prediction model."
 ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
-manager: shellyha
 ---
 
 # Create a segment based on a prediction model (preview)

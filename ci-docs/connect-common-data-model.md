@@ -6,7 +6,6 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-data-sources
   - ci-create-data-source

@@ -1,14 +1,11 @@
 ---
 title: "Export data to Azure Data Lake Storage Gen2 (preview)"
 description: "Learn how to configure the connection to Azure Data Lake Storage Gen2."
-ms.date: 11/15/2022
+ms.date: 02/06/2023
 ms.reviewer: mhart
-
-ms.subservice: audience-insights
 ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
-manager: shellyha
+author: Nils-2m
+ms.author: nikeller
 ---
 
 # Export data to Azure Data Lake Storage Gen2 (preview)
@@ -23,6 +20,7 @@ Store your Customer Insights data in a Data Lake Storage Gen2 account or use it 
 ## Known limitations
 
 - For Azure Data Lake Storage Gen2, choose between [Standard performance and Premium performance tier](/azure/storage/blobs/create-data-lake-storage-account). If you choose the Premium performance tier, select the [premium block blobs as account type](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
+- Enabling public access to your own storage account after [setting up an Azure Private Link](security-overview.md#set-up-an-azure-private-link) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 
 ## Set up connection to Azure Data Lake Storage Gen2
 

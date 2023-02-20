@@ -3,12 +3,10 @@ title: "Use Azure Machine Learning-based models"
 description: "Use Azure Machine Learning-based models in Dynamics 365 Customer Insights."
 ms.date: 11/15/2022
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
 ms.author: naravill
 ms.reviewer: mhart
-manager: shellyha
 ---
 
 # Use Azure Machine Learning-based models

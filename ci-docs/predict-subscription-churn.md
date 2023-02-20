@@ -4,11 +4,9 @@ description: "Predict whether a customer is at risk for no longer using your com
 ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
-manager: shellyha
 ---
 
 # Predict subscription churn
