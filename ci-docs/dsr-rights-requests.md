@@ -44,7 +44,7 @@ As a Customer Insights admin, remove Customer Insights customer data that was de
    > [!IMPORTANT]
    > Static segments are not included in a full refresh nor downstream refreshes. In order to comply with the delete request for customer data, recreate the static segments with the refreshed source data.
    >
-   > Inactive segments are not refreshed (neither manually, nor a scheduled refresh, nor other refreshes). They have a **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. If a segment was executed successfully before changing to an **Inactive** status, an entity with the customer data was created by Customer Insights. In order to comply with the delete request for customer data, either periodically activate the segment and run it with the latest Customer Insights data *or* delete the segment.
+   > Inactive segments are not refreshed (neither manually, nor a scheduled refresh, nor other refreshes). They have a **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. If a segment was executed successfully before changing to an **Inactive** status, a table with the customer data was created by Customer Insights. In order to comply with the delete request for customer data, either periodically activate the segment and run it with the latest Customer Insights data *or* delete the segment.
 
 #### Manage delete requests for user data
 

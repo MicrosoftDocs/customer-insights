@@ -65,11 +65,11 @@ Sample queries for other tables.
 ## Limitations
 - Customer Insights API returns a maximum of 100 objects by default. You can parse through more than the 100 returned objects by using standard pagination techniques. Alternatively, you can [export your data](export-destinations.md).
 - The following queries aren't supported by Customer Insights:
-  - `$filter` on ingested source entities. You can only run $filter queries on system entities that Customer Insights creates.
+  - `$filter` on ingested source tables. You can only run $filter queries on system tables that Customer Insights creates.
   - `$expand` from a `$search` query. Example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
   - `$expand` from `$select` if only a subset of attributes is selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
   - `$expand` enriched brand or interest affinities for a given customer. Example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
-  - Query prediction model output entities through alternate key. Example: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`
+  - Query prediction model output tables through alternate key. Example: `OOBModelOutputTable?$filter=HotelCustomerID eq '{AK}'`
 
 The following queries aren't supported by Customer Insights:
 
