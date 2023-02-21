@@ -24,8 +24,8 @@ Customer activities are actions or events performed by customers or business con
 
 ## Prerequisites
 
-- Added [data sources](data-sources.md) that contain activities. Each activity table must have at least one field of type **Date**.
-- [Unified customer data into customer profile](data-unification.md).
+- Add [data sources](data-sources.md) that contain activities. Make sure each activity table has at least one field of type **Date**.
+- [Unify customer data into customer profiles](data-unification.md).
 
 ## Define customer activities (preview)
 
@@ -45,23 +45,25 @@ With the Customer Insights activity wizard, you can define all activities at one
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with table and primary key.":::
 
-1. Select **Next**.
+1. Select **Next** for the **Activity fields** step.
 
-1. In the **Activity fields** step, enter the following information for each table:
+1. For each table that has a semantic activity type, choose **Intelligent mapping** to use AI models for smart prediction of semantics, saving time and accuracy. Intelligent mapping automatically determines the type of data in each column and maps it to the attributes.
+
+1. Enter the following information for each table:
 
    - **Activity name**: Unique name for your activity.
    - **Timestamp**: Field that represents the start time or date of your activity.
    - **Event activity**: Field that is the event for this activity.
    - **Web address** (optional): Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* table, which can be consumed downstream using [APIs](apis.md).
    - **Additional detail** (optional): Field with relevant information for this activity.
-   - **Show this activity in the timeline on your customer profile**: **Yes** to show the activity in the timeline or **No** to hide it.
+   - **Show this activity in the timeline on your customer profile**: **Yes** to show the activity in the timeline or **No** to hide it. Optionally, choose an icon to represent the activity on the timeline.
      > [!NOTE]
      > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
    - **Map field types for your activity's attributes?**: **Yes** to help the system better understand the relevance of your activity data or **No** do not map.
 
-1. If you chose **Yes** to map your field types, select the appropriate attributes to map your data. Required fields are determined by the selected activity type.
-
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Map the activity fields.":::
+
+1. If you chose **Yes** to map your field types, select the appropriate attributes to map your data. Required fields are determined by the selected activity type.
 
 1. Select **Next**.
 
@@ -79,67 +81,6 @@ With the Customer Insights activity wizard, you can define all activities at one
 1. In the **Review** step, verify your selections. Go back to any of the previous steps and update the information if necessary.
 
 1. To save your changes, select **Save and close**. To save your changes and create the activities, select **Create activities**.
-
-## Define a customer activity (legacy)
-
-1. Go to **Data** > **Activities**.
-
-1. Select **Add Activity**.
-
-1. In the **Activity data** step, enter the following information:
-
-   - **Activity name**: Select a name for your activity.
-   - **Activity table**: Select a table that includes transactional or activity data.
-   - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
-
-     > [!NOTE]
-     > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
-
-   :::image type="content" source="media/Activity_Wizard1legacy.PNG" alt-text="Define the activity name and table.":::
-
-1. In the **Relationships** step, select **Add relationship** to connect your activity data to its corresponding customer record. This step visualizes the connection between tables.
-  
-   - **Foreign key**: Field in your activity table that will be used to establish a relationship with another table.
-   - **To table name**: Corresponding source customer table with which your activity table will be in relationship. You can only relate to source customer tables that are used in the data unification process.
-   - **Relationship name**: If a relationship between this activity table and the selected source customer table already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
-
-   > [!TIP]
-   > In B-to-B environments, you can select between account tables and other tables. If you select an account table, the relationship path is automatically set. For other tables, you have to define the relationship path over one or more intermediate tables until you reach an account table.
-
-1. Select **Apply** to create the relationship.
-
-1. Select **Next**.
-
-1. In the **Activity unification** step, choose the activity event and the start time of your activity.
-   - **Required fields**
-      - **Event activity**: Field that is the event for this activity.
-      - **Timestamp**: Field that represents the start time of your activity.
-
-   - **Optional fields**
-      - **Additional detail**: Field with relevant information for this activity.
-      - **Icon**: Icon that best represents this activity type.
-      - **Web address**: Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* table, which can be consumed downstream using [APIs](apis.md).
-
-   - **Show in timeline**
-      - Choose if you what to show this activity in the timeline view on your customer profiles. Select **Yes** to show the activity in the timeline or **No** to hide it.
-        > [!NOTE]
-        > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
-
-      :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Specify the customer activity data in a Unified Activity table.":::
-
-1. Select **Next** to choose the activity type, or select **Finish and review** to save the activity with the activity type set to **Other**.
-
-1. In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights. Currently, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, and *Subscription* activity types support semantics after agreeing to map the fields. If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.
-
-1. Select **Next**.
-
-1. In the **Review** step, verify your selections. Go back to any of the previous steps and update the information if necessary.
-
-1. Select **Save activity** to apply your changes and select **Done** to go back to **Data** > **Activities**. The created activity displays.
-
-1. After creating all your activities, select **Run** to process them.
-
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Manage existing customer activities
 
@@ -187,9 +128,11 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
    > [!NOTE]
    > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
 
-1. Select **Next**.
+1. Select **Next** for the **Activity fields** step.
 
-1. In the **Activity fields** step, enter the following information for each table:
+1. For each table that has a semantic activity type, choose **Intelligent mapping** to use AI models for smart prediction of semantics, saving time and accuracy. Intelligent mapping automatically determines the type of data in each column and maps it to the attributes.
+
+1. Enter the following information for each table:
 
    - **Activity name**: Unique name for your activity.
    - **Timestamp**: Field that represents the start time or date of your activity.
@@ -218,7 +161,7 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
 
 1. To save your changes, select **Save and close**. To save your changes and create the activities, select **Create activities**.
 
-1. After creating the contact-level activities, the information will now be visible on your customer timeline.
+1. After creating the contact-level activities, the information is visible on your customer timeline.
 
    :::image type="content" source="media/Contact_Activities2.png" alt-text="Final result after configuring contact activities":::
 
