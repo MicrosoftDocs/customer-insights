@@ -1,7 +1,7 @@
 ---
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 02/10/2023
+ms.date: 02/25/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: srivas15
@@ -24,10 +24,10 @@ Customer activities are actions or events performed by customers or business con
 
 ## Prerequisites
 
-- Add [data sources](data-sources.md) that contain activities. Make sure each activity table has at least one field of type **Date**.
+- Add [data sources](data-sources.md) that contain activities. Make sure each activity table has at least one field of type **Date** or **Datetime**.
 - [Unify customer data into customer profiles](data-unification.md).
 
-## Define customer activities (preview)
+## Define customer activities
 
 With the Customer Insights activity wizard, you can define all activities at one time.
 
@@ -47,7 +47,7 @@ With the Customer Insights activity wizard, you can define all activities at one
 
 1. Select **Next** for the **Activity fields** step.
 
-1. For each table that has a semantic activity type, choose **Intelligent mapping** to use AI models for smart prediction of semantics, saving time and accuracy. Intelligent mapping automatically determines the type of data in each column and maps it to the attributes.
+1. For each table that has a semantic activity type, choose **Intelligent mapping** to use AI models for smart prediction of semantics, saving time and improving accuracy. Intelligent mapping automatically determines the type of data in each column and maps it to the attributes.
 
 1. Enter the following information for each table:
 
