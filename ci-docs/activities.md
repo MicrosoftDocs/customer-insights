@@ -49,6 +49,7 @@ An entity must have at least one attribute of type **Date** to be included in a 
    - **Relationship name**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
      > [!NOTE]
      > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships)
+
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
 
    > [!TIP]
@@ -146,6 +147,7 @@ For business accounts (B-to-B), use a *ContactProfile* entity to capture activit
       - **Contact Data** > **Account Data** on the attribute **AccountID**
      > [!NOTE]
      > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships)
+
    :::image type="content" source="media/Contact_Activities1.png" alt-text="Example relationship setup.":::
 
 1. After setting up the relationship(s), select **Next** and complete your activity mapping configuration. For detailed steps on activity creation, see [define a customer activity](#define-a-customer-activity).
