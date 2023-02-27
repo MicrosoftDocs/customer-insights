@@ -29,7 +29,7 @@ Customer activities are actions or events performed by customers or business con
 
 ## Define customer activities
 
-With the Customer Insights activity wizard, you can define all activities at one time.
+Customer Insights helps you with simple steps to define all activities at once.
 
 1. Go to **Data** > **Activities**. Select **Configure activities**.
 
@@ -41,13 +41,13 @@ With the Customer Insights activity wizard, you can define all activities at one
    - **Primary key**: The primary key uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    > [!NOTE]
-   > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
+   > The Primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the Primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with table and primary key.":::
 
 1. Select **Next** for the **Activity fields** step.
 
-1. For each table that has a semantic activity type, choose **Intelligent mapping** to use AI models for smart prediction of semantics, saving time and improving accuracy. Intelligent mapping automatically determines the type of data in each column and maps it to the attributes.
+1. For each table that has a semantic activity type, choose **Intelligent mapping** to use AI models to predict semantics, which saves time and improves accuracy. Intelligent mapping automatically determines the type of data in each column and maps it to the attributes.
 
 1. Enter the following information for each table:
 
@@ -63,7 +63,7 @@ With the Customer Insights activity wizard, you can define all activities at one
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Map the activity fields.":::
 
-1. If you chose **Yes** to map your field types, select the appropriate attributes to map your data. Required fields are determined by the selected activity type.
+1. If you choose **Yes** to map your field types, select the appropriate attributes to map your data. Required fields are determined by the selected activity type.
 
 1. Select **Next**.
 
@@ -126,7 +126,7 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
    - **Primary key**: The primary key uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    > [!NOTE]
-   > The Primary key for each row must remain consistent across data source refreshes. If the Primary key for a row is updated in a data source refresh, it creates duplicates in the output Activity table.
+   > The Primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the Primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
 
 1. Select **Next** for the **Activity fields** step.
 
