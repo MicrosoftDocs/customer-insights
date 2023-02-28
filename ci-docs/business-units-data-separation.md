@@ -89,7 +89,7 @@ Customer Insights and Customer Journey Orchestration (CJO) are tightly integrate
 Marketing contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit.
 
  > [!NOTE]
-   > * Customer Journey Orchestration can only process segments that containt members that belong to one business unit and has an owner that belong to the same business unit.
+   > * Customer Journey Orchestration can only process segments that containt members that belong to one business unit and has an owner that belongs to the same business unit.
 
 ## Customer Insights and Dataverse
 Customer insights writes data into Dataverse with ownership and RBAC properties for easy activation, for example, through [model-driven applications](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-app-overview). Using model-diven applications, data can easily be leveraged in customer service, sales, operations, and other business functions with the benefits of fine-grained RBAC controls.
