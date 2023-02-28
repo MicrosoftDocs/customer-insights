@@ -14,13 +14,29 @@ ms.custom: bap-template
 # Business unit (BU) data separation and Role-based access control (Public preview)
 Business unit (BU) data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. Because these controls are applied to the data in Microsoft Dataverse, the integrity of those controls propagates to all other Dynamics 365 and Power Platform applications automatically.
 
-A new role in Customer Insights, *Marketing contributor*, enables the administrator to grant users that primarily work with marketing and activation access to only the *segments* and *measures* areas of Customer Insights, so that they cannot influence the business unit data separation rules.
+A new role in Customer Insights, *Marketing contributor*, allows the administrator to grant a user access to only the customer profiles that belong to the business unit of the user. This role only has access to the *segments* and *measures* areas of Customer Insights.
 
 ## Prerequisites
 * Business units and associated teams are defined in Dataverse -> [guide to setting up BUs in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
 * Users are assigned to appropriate business units and teams -> [guide to managing users and teams in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/users-settings)
 * Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**. Notice that it is not possible to disable business unit data separation on an instance after it has been enabled. 
 * All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row. 
+
+## Access controls in Customer Insights
+Data flows from upstream systems into Customer Insights, where it is processed. The processed data are then saved to Dataverse for activiation scenarios. The following details how access is controlled along this journey.
+
+### Customer profiles, activities, customer measures, intelligence, enrichments
+Access to a customer profile is governed by which business unit owns the profile and the Customer Insights role of the user. The *Administrator* and *Contributor* roles have access to all profiles. The *Marketing contributor* and *Viewer* roles only have access to customer profiles that belong to their business unit.
+
+> [!NOTE]
+   > * The **administrator** and **contributor** roles are highly privledged and **should only be given to users that belong to the *Org/Root* business unit**.
+
+Items that are associated with customer profiles, e.g., activities, customer measures, intelligence output, and enrichments inherit the business unit ownership from the associated profile.
+  
+### Segments and business measures
+
+
+
 
 ## Customer Insights and Dataverse
 Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and [expressive security model that is built into Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds). Access to data in Dataverse is determined by the intersection of the Dataverse role(s) the user has, the teams they belong to, and the ownership of the data in question. In the following, these concepts are described in the Customer Insights context.
