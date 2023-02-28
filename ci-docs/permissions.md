@@ -31,7 +31,7 @@ Access to Customer Insights is restricted to users in your organization that are
 
 ## Marketing Contributor
 
-- Can only access profiles that belong to the business unit of the user.
+- Can only access customer profiles that belong to the business unit of the user.
 - Create segments using the **Segments** page (only *Build your own*).
 - Create measures using the **Measures** page (only *Build your own*). Can only create measures on tables that have a relationship path to customer profiles.
 
