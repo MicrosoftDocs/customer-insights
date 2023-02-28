@@ -93,7 +93,7 @@ When creating an [Azure Data Lake Storage data source](connect-common-data-model
 
 After configuring the Private Link between Customer Insights and your virtual network protected storage, four Private Links show on the **Private Links** tab in Customer Insights with a status of **Pending**.
 
-1. In the Azure portal, go to your Data Lake Storage account, and select **Networking** > **Private endpoints connections** to see th four new Private Links.
+1. In the Azure portal, go to your Data Lake Storage account, and select **Networking** > **Private endpoints connections** to see the four new Private Links.
 
 1. Select **Yes** to approve them.
 
