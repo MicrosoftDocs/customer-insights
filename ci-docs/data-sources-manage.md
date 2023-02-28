@@ -9,7 +9,7 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-## Manage existing data sources
+# Manage existing data sources
 
 Go to **Data** > **Data sources** to view the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by any column or use the search box to find the data source you want to manage.
 
@@ -17,7 +17,7 @@ Select a data source to view available actions.
 
 :::image type="content" source="media/data_sources_showmore.png" alt-text="Data source added.":::
 
-- [**Edit**](#data-source-attachment-or-import) the data source to change its properties. You can't edit a single CSV data source that was used to automatically generate insights.
+- [**Edit**](data-sources.md) the data source to change its properties. You can't edit a single CSV data source that was used to automatically generate insights.
 - [**Refresh**](#refresh-data-sources) the data source to include the latest data.
 - [**Enrich**](data-sources-enrichment.md) the data source before unification.
 - **Delete** the data source. A data source can be deleted only if the data is not used in any processing such as unification, insights, activations, or exports.
