@@ -73,7 +73,9 @@ To access data from Customer Insights, the user needs to be member of one of the
 Click here for more information on how to assign users to [teams.](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds#teams-including-group-teams)
 
 ## Default configurations
-An example business unit structure is depicted below. Marketing contributor users only have access to customer profiles that are owned by their business unit team. For example, if a user creates a segment with all customers, then it will only contain the customers that are owned by the BU that the Marketing contributor belongs to.
+An example business unit structure is depicted below. Marketing contributor users only have access to customer profiles that are owned by their business unit team. For example, if a marketing contributor user creates a segment with all customers, then it will only contain the customers that are owned by the BU that the Marketing contributor belongs to. All other Customer Insights roles have access to all customer profiles in Customer Insights regardless of owning business unit.
+
+Segments and measures can be viewed, edited, and deleted by other users in the business unit of the user that owns the items, and parent business units.
 
 ![Example of a BU structure with the Org parent business unit at the top and child business units A to D below](media/BU_structure_example.png)
 *Example of a BU structure with the Org parent business unit at the top and child BUs A to D below*
