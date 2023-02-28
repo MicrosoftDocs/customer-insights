@@ -1,7 +1,7 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 12/15/2022
+ms.date: 02/27/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: mukeshpo
@@ -61,7 +61,7 @@ After the first environment is created, the global administrator of the Microsof
 
 ## Step 3: Connect to Microsoft Dataverse
 
-If you have a Dataverse environment, connect Customer Insights. Share data with Dataverse to use it with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps.
+Your Customer Insights environment requires a Microsoft Dataverse environment attached to it. Select an existing Dataverse environment that doesn't already have a Customer Insights environment attached to it. Or you can choose to have a new Microsoft Dataverse environment created and attached. Additionally, if you chose to use your own Azure Data Lake storage in the previous step, you can enable data sharing with Dataverse to use it with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps.
 
 1. Follow the steps in [Work with Customer Insights data in Microsoft Dataverse](customer-insights-dataverse.md).
 
