@@ -26,12 +26,12 @@ A new role in Customer Insights, *Marketing contributor*, allows the administrat
 Data flows from upstream systems into Customer Insights, where it is processed. The processed data are then saved to Dataverse for activiation scenarios. The following details how access is controlled along this journey.
 
 ### Customer profiles, activities, customer measures, intelligence, enrichments
-Access to a customer profile is governed by which business unit owns the profile and the Customer Insights role of the user. The *Administrator* and *Contributor* roles have access to all profiles. The *Marketing contributor* and *Viewer* roles only have access to customer profiles that belong to their business unit.
+Access to a customer profile in Customer Insights is governed by which business unit owns the profile and the Customer Insights role of the user. The *Administrator* and *Contributor* roles have access to all profiles regardless of owning business unit. The *Marketing contributor* and *Viewer* roles only have access to customer profiles that belong to their business unit.
 
 > [!NOTE]
    > * The **administrator** and **contributor** roles are highly privledged and **should only be given to users that belong to the *Org/Root* business unit**.
 
-Items that are associated with customer profiles, e.g., activities, customer measures, intelligence output, and enrichments inherit the business unit ownership from the associated profile.
+Data that are associated with a customer profile, e.g., activities, customer measures, intelligence output, and enrichments inherit the business unit ownership from the associated profile.
   
 ### Segments and business measures
 
