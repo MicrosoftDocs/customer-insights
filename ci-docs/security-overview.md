@@ -55,7 +55,7 @@ In Customers Insights you can create private links in the following ways:
    - When creating a [data source](connect-common-data-model.md) for which the data is stored in your protected account.
    - Directly from the **Admin** > **Security** > **Private Links** page in Customer Insights.
 
-Regardless of the method you use to create the private link, it displays under the **Admin** > **Security** > **Private Links** tab in Customer Insights.
+Regardless of the method you use to create the Private Link, it shows under the **Admin** > **Security** > **Private Links** tab in Customer Insights.
 
 ### Set up a Private Link when creating a Customer Insights environment
 
@@ -65,9 +65,9 @@ When creating a [Customer Insights environment](create-environment.md) that conn
 
    :::image type="content" source="media/Private-Endpoint-Creation.png" alt-text="Private endpoint creation.":::
 
-1. Select **Create Private Link** to initiate the private link creation process. 
+1. Select **Create Private Link** to initiate the creation process. 
 
-1. [Approve the private links](#approve-your-private-link-in-azure-portal) in Azure portal.
+1. [Approve the Private Link](#approve-your-private-link-in-the-azure-portal) in the Azure portal.
 
 1. Once all links are approved, select **Validate Private Link**. Upon successful validation, you can continue configuring your new environment.
 
@@ -81,7 +81,7 @@ When creating an [Azure Data Lake Storage data source](connect-common-data-model
 
 1. Select **Add Private Link**.
 
-   The **Add Private Link** pane lists storage accounts from your tenant that you’ve permission to see.
+   The **Add Private Link** pane lists storage accounts in your tenant that you can see.
 
 1. Select the subscription, resource group, and storage account.
 
@@ -89,20 +89,20 @@ When creating an [Azure Data Lake Storage data source](connect-common-data-model
 
 1. Select **Save**.
 
-## Approve your private link in Azure portal
+## Approve your Private Link in the Azure portal
 
-After configuring the private link between Customer Insights and your virtual network protected storage, four private links display on the **Private Links** tab in Customer Insights with a status of **Pending**.
+After configuring the Private Link between Customer Insights and your virtual network protected storage, four Private Links show on the **Private Links** tab in Customer Insights with a status of **Pending**.
 
-1. In Azure portal, go to your Data Lake Storage account, and select **Networking** > **Private endpoints connections**. The four new private links display.
+1. In the Azure portal, go to your Data Lake Storage account, and select **Networking** > **Private endpoints connections** to see th four new Private Links.
 
-1. Select **Yes** to approve all private links.
+1. Select **Yes** to approve them.
 
    > [!TIP]
-   > For easy identification, consider adding a description when approving the links.
+   > For easy identification, consider adding a description when approving the Private Links.
 
     :::image type="content" source="media/Private-Endpoint-Approval.png" alt-text="Description for the private endpoint approval step.":::
 
-1. In Customer Insights, go to **Admin** > **Security** and select the **Private Links** tab. The private links in Customer Insights now display the status **Approved**. 
+1. In Customer Insights, go to **Admin** > **Security** and select the **Private Links** tab. The Private Links in Customer Insights now show the status **Approved**. 
 
 1. Continue to add your [data sources](connect-common-data-model.md) that are linked to your protected storage.
 
@@ -110,7 +110,7 @@ After configuring the private link between Customer Insights and your virtual ne
 
 1. In Customer Insights, go to **Admin** > **Security** and select the **Private Links** tab.
 
-1. Select the storage account name for which you would like to delete the private links.
+1. Select the storage account name for which you would like to delete the Private Links.
 
 1. Select **Delete**.
 
