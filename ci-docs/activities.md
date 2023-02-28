@@ -1,7 +1,7 @@
 ---
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 02/25/2023
+ms.date: 02/28/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: srivas15
@@ -41,7 +41,7 @@ Customer Insights helps you with simple steps to define all activities at once.
    - **Primary key**: The primary key uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    > [!NOTE]
-   > The Primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the Primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
+   > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with table and primary key.":::
 
@@ -72,6 +72,10 @@ Customer Insights helps you with simple steps to define all activities at once.
    - **Foreign key**: Field in your activity table that will be used to establish a relationship with another table.
    - **To table name**: Corresponding source customer table with which your activity table will be in relationship. You can only relate to source customer tables that are used in the data unification process.
    - **Relationship name**: If a relationship between this activity table and the selected source customer table already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
+     > [!NOTE]
+     > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships).
+
+   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
 
    > [!TIP]
    > In B-to-B environments, you can select between account tables and other tables. If you select an account table, the relationship path is automatically set. For other tables, you have to define the relationship path over one or more intermediate tables until you reach an account table.
@@ -126,7 +130,7 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
    - **Primary key**: The primary key uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    > [!NOTE]
-   > The Primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the Primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
+   > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
 
 1. Select **Next** for the **Activity fields** step.
 
@@ -152,6 +156,8 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
    - Example relationship for an activity called *Purchases*:
       - **Purchases Source Activity Data** > **Contact Data** on the attribute **ContactID**
       - **Contact Data** > **Account Data** on the attribute **AccountID**
+     > [!NOTE]
+     > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships).
 
    :::image type="content" source="media/Contact_Activities1.png" alt-text="Example relationship setup.":::
 
@@ -167,7 +173,7 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
 
 ## Contact-level activity timeline filtering
 
-After configuring a contact-level activity mapping and running it, the activity timeline for your customers will be updated. It includes their IDs or names, depending on your *ContactProfile* configuration, for the activities they acted on. You can filter activities by contacts in the timeline to see specific contacts that you are interested in. Additionally, you can see all activities that are not assigned to a specific contact by selecting **Activities not mapped to a Contact**.
+After configuring a contact-level activity mapping and running it, the activity timeline for your customers will be updated. It includes their IDs or names, depending on your *ContactProfile* configuration, for the activities they acted on. You can filter activities by contacts in the timeline to see specific contacts that you're interested in. Additionally, you can see all activities that aren't assigned to a specific contact by selecting **Activities not mapped to a Contact**.
 
    :::image type="content" source="media/Contact_Activities3.png" alt-text="Filtering options available for Contact-level activities.":::
 
