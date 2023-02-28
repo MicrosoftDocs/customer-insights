@@ -1560,6 +1560,31 @@
       "source_path": "ci-docs/remove-duplicates.md",
       "redirect_url": "/dynamics365/customer-insights/data-unification-duplicates",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/entities.md",
+      "redirect_url": "/dynamics365/customer-insights/tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/map-entities.md",
+      "redirect_url": "/dynamics365/customer-insights/data-unification-map-tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/match-entities.md",
+      "redirect_url": "/dynamics365/customer-insights/data-unification-match-tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/merge-entities.md",
+      "redirect_url": "/dynamics365/customer-insights/data-unification-merge-tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/audience-insights/entity-schemas.md",
+      "redirect_url": "/dynamics365/customer-insights/tables-schema",
+      "redirect_document_id": false
     }
   ]
 }
