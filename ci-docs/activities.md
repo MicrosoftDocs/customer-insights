@@ -1,7 +1,7 @@
 ---
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 02/27/2023
+ms.date: 02/28/2023
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: srivas15
@@ -36,7 +36,7 @@ An entity must have at least one attribute of type **Date** to be included in a 
    - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
      > [!NOTE]
-     > The Primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the Primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
+     > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with name, entity, and primary key.":::
 
@@ -48,7 +48,7 @@ An entity must have at least one attribute of type **Date** to be included in a 
    - **To entity name**: Corresponding source customer entity with which your activity entity will be in relationship. You can only relate to source customer entities that are used in the data unification process.
    - **Relationship name**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
      > [!NOTE]
-     > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships)
+     > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships).
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
 
@@ -139,14 +139,14 @@ For business accounts (B-to-B), use a *ContactProfile* entity to capture activit
    - **Primary key**: Select the field that uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
      > [!NOTE]
-     > The Primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the Primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
+     > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
 
 1. In the **Relationships** step, create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary entity. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
    - Example relationship for an activity called *Purchases*:
       - **Purchases Source Activity Data** > **Contact Data** on the attribute **ContactID**
       - **Contact Data** > **Account Data** on the attribute **AccountID**
      > [!NOTE]
-     > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships)
+     > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships).
 
    :::image type="content" source="media/Contact_Activities1.png" alt-text="Example relationship setup.":::
 
