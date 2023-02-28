@@ -1572,17 +1572,17 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/audience-insights/match-entities.md",
+      "source_path": "ci-docs/match-entities.md",
       "redirect_url": "/dynamics365/customer-insights/data-unification-match-tables",
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/audience-insights/merge-entities.md",
+      "source_path": "ci-docs/merge-entities.md",
       "redirect_url": "/dynamics365/customer-insights/data-unification-merge-tables",
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/audience-insights/entity-schemas.md",
+      "source_path": "ci-docs/entity-schemas.md",
       "redirect_url": "/dynamics365/customer-insights/tables-schema",
       "redirect_document_id": false
     }

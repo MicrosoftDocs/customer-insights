@@ -18,7 +18,7 @@ searchScope:
 
 # Unify customer fields
 
-In this step of the unification process, choose and exclude attributes to merge within your unified profile table. For example, if three tables had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Some attributes are automatically combined by the system.
+In this step of the unification process, choose and exclude attributes to merge within your unified profile table. For example, if three tables had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Customer Insights automatically combines some attributes.
 
 In this step, you can create stable and unique customer IDs and for individual customers, group related profiles into a cluster.
 
