@@ -31,20 +31,6 @@ Access to a customer profile in Customer Insights is governed by which business 
 > [!NOTE]
    > * The **administrator** and **contributor** roles are highly privledged and **should only be given to users that belong to the *Org/Root* business unit**.
 
-Data that are associated with a customer profile, e.g., activities, customer measures, intelligence output, and enrichments inherit the business unit ownership from the associated profile.
-  
-### Segments and business measures
-
-
-
-
-## Customer Insights and Dataverse
-Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and [expressive security model that is built into Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds). Access to data in Dataverse is determined by the intersection of the Dataverse role(s) the user has, the teams they belong to, and the ownership of the data in question. In the following, these concepts are described in the Customer Insights context.
-
-### Assignment of ownership
-Every piece of data that is stored in Dataverse has an owner, which is critical to how access to this data is governed. Both customer profiles, segments, and measures have ownership information attached to them as detailed below. 
-
-#### Ownership of customer profiles
 Ownership of the customer profiles is determined based on mappings that are configured in the Unify step:
 
 1. Go to **Data** > **Unify** > **Business units**
@@ -64,6 +50,22 @@ Customer profiles are owned by teams within business units (as opposed to being 
 
  > [!NOTE]
    > * Any changes to the BU data separation configuration will trigger a full refresh.
+   
+Data that are associated with a customer profile, e.g., activities, customer measures, intelligence output, and enrichments inherit the business unit ownership from the associated profile.
+  
+### Segments and business measures
+
+
+
+
+## Customer Insights and Dataverse
+Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and [expressive security model that is built into Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds). Access to data in Dataverse is determined by the intersection of the Dataverse role(s) the user has, the teams they belong to, and the ownership of the data in question. In the following, these concepts are described in the Customer Insights context.
+
+### Assignment of ownership
+Every piece of data that is stored in Dataverse has an owner, which is critical to how access to this data is governed. Both customer profiles, segments, and measures have ownership information attached to them as detailed below. 
+
+#### Ownership of customer profiles
+
 
 Access to customer profiles *within* Customer Insights is determined based on the business unit of the user and the owning business unit of the customer profile: Users have access to all customer profiles that belong to their business unit and any child business units.
 
