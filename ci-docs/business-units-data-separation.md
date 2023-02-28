@@ -96,13 +96,12 @@ Customer insights writes data into Dataverse with ownership and RBAC properties 
 
 ## Notes
 
- > [!NOTE]
-   > * A customer profile cannot be owned by more than one business unit. 
-   > * Segments and measures cannot be owned by more than one business unit nor be shared with other business units.
-   > * Synonyms in the BU mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
-   > * Only *build your own* segments and measures are supported for the Marketing contributor role.
-   > * Segments and Business measures are not stored in Dataverse yet.
-   > * Modernized business units is not supported.
+* A customer profile cannot be owned by more than one business unit. 
+* Segments and measures cannot be owned by more than one business unit nor be shared with other business units.
+* Synonyms in the BU mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
+* Only *build your own* segments and measures are supported for the Marketing contributor role.
+* Segments and Business measures are not stored in Dataverse yet.
+* Modernized business units is not supported.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
