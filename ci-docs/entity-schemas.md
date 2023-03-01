@@ -4,11 +4,9 @@ description: "Work with entities in Common Data Model."
 ms.date: 08/13/2021
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 ---
 
 # Entity schemas in Common Data Model

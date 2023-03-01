@@ -2,14 +2,12 @@
 title: "Remove duplicates before unifying data"
 description: "The second step in the unification process is selecting which record to keep when duplicates are found."
 recommendations: false
-ms.date: 08/01/2022
+ms.date: 11/18/2022
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-map
   - ci-match
@@ -18,16 +16,25 @@ searchScope:
 
 # Remove duplicates before unifying data
 
-This optional step in unification enables you to set up rules for eliminating duplicate records **within** an entity. Deduplication identifies multiple records for a customer and selects the best record to keep (based on basic merge preferences) or merges the records into one (based on advanced merge preferences). Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
+This optional step in unification enables you to set up rules for eliminating duplicate records **within** an entity. Deduplication identifies multiple records for a customer and selects the best record to keep (based on basic merge preferences) or merges the records into one (based on advanced merge preferences). Source records get linked to the merged record with alternate IDs.
 
-## Default deduplication
+Deduplication of customer records in each entity is important to improve unification results and performance. Defining your own deduplication rules gives you flexibility and control. However, if you do not define any custom deduplication rules for an entity, Customer Insights performs default deduplication.
+
+## Default deduplication rules
 
 The system-defined rules apply if no deduplication rules are added.
 
-- The primary key is deduplicated.
-  For any records with the same primary key, the **Most filled** record (the one with the fewest null values) is the winner.
-- Any cross-entity matching rules are applied to the entity.
-  For example: In the match step, if entity A is matched against entity B on *FullName* and *DateofBirth*, then entity A is also deduplicated by *FullName* and *DateofBirth*. Because *FullName* and *DateofBirth* are valid keys for identifying a customer in entity A, these keys are also valid for identifying duplicate customers in entity A.
+1. Deduplicate on primary keys
+
+   First, Customer Insights matches records that have the same primary key and keeps the first record in the entity.  For example, if four records are found with primary key “12345”, the first of those four records found in the entity are kept as the winner record.
+
+1. Deduplicate on fields used in Matching conditions
+
+   Next, Customer Insights deduplicates on all fields that are used in matching rules for the entity. For example, in Matching conditions, if Entity1 has rule 1 which matches on *Name+Email* and rule 2 which matches on *Name+Phone*, Customer Insights deduplicates Entity1 by doing an exact match on *Name+Email+Phone*. If several records are found with an exact match on *Name+Email+Phone*, then the first record in the entity is kept as the winner. Use of normalization or precision in the match rules is not used in default deduplication.
+
+If you define your own deduplication rules, Customer Insights runs those rules first. Then, deduplicates the entities on the primary key. If duplicate primary keys are found, instead of picking the first record as the winner, Customer Insights uses a winner record (if any)  as defined by your custom deduplication rules.
+
+For example, six records have primary key “20”. Three of these records are deduplicated by a custom rule and a winner selected. Customer Insights then deduplicates on the primary key finding the winner record and the three remaining records. Customer Insights uses the previously defined winner record as the final winner. If there is no winner record in the set of records, or if there are multiple winner records defined by different deduplication rules, then the usual rule of using the first record as the winner applies.
 
 ## Include enriched entities (preview)
 

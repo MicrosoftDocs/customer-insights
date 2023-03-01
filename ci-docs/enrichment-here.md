@@ -4,11 +4,9 @@ description: "General information about the HERE Technologies third-party enrich
 ms.date: 08/08/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
-manager: shellyha
 ---
 
 # Enrich customer profiles with HERE Technologies (preview)

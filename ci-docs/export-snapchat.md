@@ -4,11 +4,9 @@ description: "Learn how to configure the connection and export to Snapchat."
 ms.date: 07/25/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export segments to Snapchat (preview)
@@ -65,6 +63,9 @@ Export segments of unified customer profiles to Snapchat and use them for advert
 1. Enter the **Snapchat Segment/Audience ID**.
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address.
+
+   > [!NOTE]
+   > All personal data is sent as a hashed value to Snapchat.
 
 1. Select the segments you want to export.
 

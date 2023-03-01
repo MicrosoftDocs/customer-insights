@@ -1,13 +1,12 @@
 ---
 title: "Manage environments"
 description: Learn how to to manage existing Customer Insights environments as an admin.
-ms.date: 08/15/2022
-ms.subservice: audience-insights
+ms.date: 03/01/2023
 ms.topic: how-to
 ms.reviewer: mhart
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-system-about
   - customerInsights
@@ -50,6 +49,8 @@ Several users can have admin permissions but only one user is the owner of an en
 If the user account of the owner is deleted or suspended, the environment won't have an owner. Any admin user can claim the ownership and become the new owner. The owner admin can continue to own the environment or [change the ownership to another admin](#change-the-owner-of-an-environment).
 
 To claim ownership, select the **Take ownership** button that shows at the top of every page in Customer Insights when the original owner left the organization.
+
+We recommend to have at least one other user with admin permissions in addition to the owner to enable smooth ownership transfer if the owner leaves the organization.
 
 ## Reset an existing environment (preview)
 

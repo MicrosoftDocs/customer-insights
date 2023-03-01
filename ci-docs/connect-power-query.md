@@ -1,14 +1,13 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 09/29/2022
+ms.date: 01/06/2023
 ms.reviewer: v-wendysmith
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-data-sources
   - ci-create-data-source
@@ -17,9 +16,9 @@ searchScope:
 
 # Connect to a Power Query data source
 
-Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights.
+Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights. Adding data sources based on Power Query connectors generally follows the steps outlined in this section. However, depending on the connector you use, different information is required. To learn more, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
 
-Adding data sources based on Power Query connectors generally follows the steps outlined in this section. However, depending on the connector you use, different information is required. To learn more, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
+To securely connect data in a private network, Power Query supports the use of [virtual network data gateways (preview)](/data-integration/vnet/data-gateway-power-platform-dataflows).
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 
@@ -122,28 +121,8 @@ The data can be fixed at the source and re-ingested. Or fix the transformation w
 
 1. Select **Save**. That data source is refreshed.
 
-## Troubleshoot PPDF Power Query-based data source refresh issues
-
-If the data is stale or you receive errors after a data source refresh, perform the following steps:
-
-1. Navigate to [Power Platform](https://make.powerapps.com).
-
-1. Select the **Environment** for your Customer Insights instance.
-
-1. Navigate to **Dataflows**.
-
-1. For the dataflow that corresponds to the data source in Customer Insights, select the vertical ellipsis (&vellip;) and then select **Show refresh history**.
-
-1. If the **Status** of the dataflow is **Success**, the ownership of the Power Query-based data source might have changed:
-
-   1. Review the refresh schedule from the refresh history.
-   1. Set the new owner's schedule and save the settings.
-
-1. If the **Status** of the dataflow is **Failed**:
-
-   1. Download the refresh history file.
-   1. Review the downloaded file for the reason for the failure.
-   1. If the error cannot be resolved, select **?** to open a support ticket. Include the downloaded refresh history file.
+> [!TIP]
+> For troubleshooting information, go to [Microsoft Dynamics 365 Customer Insights troubleshooting](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights).
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

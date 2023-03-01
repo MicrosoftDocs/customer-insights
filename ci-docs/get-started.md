@@ -5,10 +5,8 @@ ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
 ms.date: 08/31/2021
-ms.subservice: audience-insights 
 ms.topic: conceptual
-ms.manager: shellyha
-ms.custom: intro-internal
+ms.ms.custom: intro-internal
 searchScope: 
   - ci-home
   - customerInsights

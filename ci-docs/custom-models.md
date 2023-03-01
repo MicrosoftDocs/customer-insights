@@ -4,7 +4,6 @@ description: "Work with custom models from Azure Machine Learning in Dynamics 36
 ms.date: 11/9/2022
 ms.reviewer: v-wendysmith
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: radsay01
 ms.author: rsayyaparaju

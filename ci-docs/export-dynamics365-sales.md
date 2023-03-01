@@ -4,11 +4,9 @@ description: "Learn how to configure the connection and export to Dynamics 365 S
 ms.date: 07/25/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 searchScope: 
   - ci-export
   - customerInsights
@@ -27,7 +25,7 @@ Contact records must be present in Dynamics 365 Sales before you can export a se
 
 ## Known limitations
 
-Exports to Dynamics 365 Sales is limited to 100,000 per segment, which can take up to 3 hours to complete.
+Exports to Dynamics 365 Sales is limited to 100,000 contacts per segment, which can take up to 3 hours to complete.
 
 ## Set up connection to Sales
 

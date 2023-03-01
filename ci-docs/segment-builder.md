@@ -1,14 +1,12 @@
 ---
 title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
-ms.date: 08/12/2022
+ms.date: 01/13/2023
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-segments
   - ci-segment-builder
@@ -31,9 +29,9 @@ The following image illustrates the various aspects of the segment builder. It s
 
 1. Organize your segment with rules and subrules. Each rule or subrule consists of conditions. Combine the conditions with logical operators.
 
-1. Choose the [relationship path](relationships.md) between entities that applies to a rule. The relationship path determines which attributes can be used in a condition.
+1. Choose the [relationship path](relationships.md) between entities that applies to a rule. Only attributes from the entities in the relationship can be used for rules.
 
-1. Manage rules and subrules. Change the position of a rule or delete it.
+1. Manage rules and subrules. Change the position of a rule or delete it. When you have more than two rules in your segment, each rule is processed in the order they appear. For example: If your segment is composed of Rule1 UNION Rule2 INTERSECT Rule3 EXCEPT Rule4, then the results of Rule1 and Rule2 are united first. The result of that union is intersected with the results of Rule3. Then, the results of Rule4 are excluded from the result of the previous rules.
 
 1. Add conditions and build the right level of nesting using subrules.
 
@@ -111,7 +109,9 @@ The example above illustrates the segmentation capability. We've defined a segme
    > - If the attribute you want to project is just one hop away from the *Customer* or *ContactProfile* entity, that attribute doesn't need to be present in every rule of the segment query you are building.
    > - **Projected attributes** are factored in when using set operators.
 
-1. Select **Run** to create the segment. Select **Save** if you want to keep the current configuration and run the segment later. The **Segments** page displays.
+1. To save the configuration, select **Save** and then **Close**. The segment is in draft mode or inactive so you can make changes to the configuration before actually creating the segment.
+
+1. To create the segment, select **Run**.
 
 ### Segment builder tips
 
@@ -122,10 +122,11 @@ When creating a segment using the segment builder, keep in mind the following ti
 - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
 - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
 - The **Undo** and **Redo** controls in the command bar let you roll back changes.
-- After creating a segment, some segments allow you to [track the usage of the segment](segments.md#track-usage-of-a-segment).
+- After creating a segment, some segments allow you to [track the usage of the segment](segments-track-usage.md).
 
 ## Next steps
 
-[Export a segment](export-destinations.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
+- [Schedule a segment](segments-schedule.md).
+- [Export a segment](export-destinations.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
