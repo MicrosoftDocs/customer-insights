@@ -2,11 +2,11 @@
 title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
 ms.date: 01/13/2023
-
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 searchScope: 
   - ci-segments
   - ci-segment-builder
@@ -23,7 +23,7 @@ Define complex filters around the unified customer or unified contact and its re
 
 ## Create a new segment with segment builder
 
-For an illustration of the key aspects of segment builder, see [Aspects of segment builder](segment-builder-aspects.md).
+For an illustration of the key aspects of segment builder, see [Aspects of segment builder](segment-builder-aspects.md). For tips, see [Segment builder tips](segment-builder-aspects.md#segment-builder-tips).
 
 1. Go to **Segments**.
 
@@ -36,13 +36,11 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
 
 1. Select **Edit details** next to Untitled segment. Provide a name for your segment and update the suggested **Output entity name** for the segment. Optionally, add a description and [tags](work-with-tags-columns.md#manage-tags) to the segment.
 
-   :::image type="content" source="media/segments_edit_details.png" alt-text="Edit details dialog box.":::
-
 1. In the **Rule1** section, choose an attribute of an entity you want to filter customers by. There are two ways to choose attributes:
    - Review the list of available entities and attributes in the **Add to Rule** pane and select the **+** icon next to the attribute to add. Choose if you want to add the attribute to an existing rule or use it to create a new rule.
    - Type the name of the attribute in the rule section to see matching suggestions.
 
-1. Choose the operators to specify the matching values of the condition. Attribute can have one of four data types as value: numerical, string, date, or Boolean. Depending on the data type of the attribute, different operators are available to specify the condition.
+1. Choose the operators to specify the matching values of the condition. Attributes can have one of four data types as a value: numerical, string, date, or Boolean. Depending on the data type of the attribute, different operators are available to specify the condition.
 
 1. Select **Add condition** to add more conditions to a rule. To create a rule under the current rule, select **Add sub-rule**.
 
@@ -70,11 +68,11 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
       - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is kept.
 
 1. By default, the output entity will automatically contain all attributes of customer profiles that match the defined filters. In B-to-B when using the *ContactProfile* entity, the Account ID is automatically included. If a segment is based on other entities than the *Customer* entity or to include more attributes from the *ContactProfile*, select **Project attributes** to add more attributes from these entities to the output entity.
- 
+
    For example: A segment is based on an entity that contains purchase data, which is related to the *Customer* entity. The segment looks for all customers from Spain that purchased goods in the current year. You can choose to append attributes like the price of goods, or the purchase date to all matching customer records in the output entity. This information might be useful to analyze seasonal correlations to the total spending.
 
    :::image type="content" source="media/segments-project-attributes.png" alt-text="Example of projected attributes selected in the side pane to be added to the output entity.":::
- 
+
    A sample output for a segment based on business accounts with projected attributes of contacts could look like this:
 
    |ID  |Account name  |Revenue  |Contact name  | Contact role|
@@ -90,17 +88,6 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
 1. To save the configuration, select **Save** and then **Close**. The segment is in draft mode or inactive so you can make changes to the configuration before actually creating the segment.
 
 1. To create the segment, select **Run**.
-
-### Segment builder tips
-
-When creating a segment using the segment builder, keep in mind the following tips:
-
-- The segment builder won't suggest valid values from entities when setting the operators for the conditions. You can go to **Data** > **Entities** and download the entity data to see which values are available.
-- Conditions based on dates let you switch between fixed dates and a floating date range.
-- If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
-- You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
-- The **Undo** and **Redo** controls in the command bar let you roll back changes.
-- After creating a segment, some segments allow you to [track the usage of the segment](segments-track-usage.md).
 
 ## Next steps
 
