@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Generate and manage suggested segments based on activity (preview)
 
-Find suggested segments based on activity. For more information, see [Suggested segments based on activity](suggested-segments-activity.md).
+Find suggested segments based on activity. For more information, see [Suggested segments based on activity](suggested-segments.md).
 
 ## Required data
 
