@@ -50,7 +50,7 @@ Customer profiles are owned by teams within business units (as opposed to being 
 * The unification rules and customer profile schema are the same for all business units.
 
  > [!NOTE]
-   > * Any changes to the BU data separation configuration will trigger a full refresh.
+   > * Any changes to the BU data separation configuration will trigger a full refresh. If your instance is on incremental, then a full refresh needs to be triggered manually after changes have been made.
    
 Data that are tied to a customer profile, e.g., activities, customer measures, intelligence output, and enrichments inherit the business unit ownership from the associated profile. 
 
