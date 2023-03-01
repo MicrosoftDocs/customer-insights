@@ -8,7 +8,6 @@ ms.topic: get-started
 
 ms.custom: template-trial-setup 
 ms.reviewer: jeffhar
-manager: shellyha
 ---
 
 # Sign up for a free Dynamics 365 Customer Insights trial

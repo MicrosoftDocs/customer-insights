@@ -4,11 +4,9 @@ description: "Create flows in Microsoft Power Automate from Dynamics 365 Custome
 ms.date: 07/25/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Power Automate connector (preview)

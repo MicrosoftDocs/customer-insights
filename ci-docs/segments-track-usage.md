@@ -7,7 +7,6 @@ ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
 ms.custom: bap-template
 searchScope: 
   - ci-customers-page

@@ -4,8 +4,6 @@ description: Generate suggested segments based on customer activity data
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-ms.service: customer-insights
-manager: shellyha
 ms.topic: how-to
 ms.date: 01/05/2023
 ms.custom: bap-template

@@ -1,13 +1,11 @@
 ---
 title: Work with Customer Insights data in Microsoft Dataverse
 description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output entities that are exported to Dataverse.
-ms.date: 11/30/2022
-ms.reviewer: mhart
-ms.subservice: audience-insights
+ms.date: 01/16/2023
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-system-diagnostic
   - customerInsights
@@ -192,17 +190,14 @@ This table contains activities by users that are available in Customer Insights.
 | Column            | Type        | Description                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
 | CustomerId        | Text      | Customer profile ID                                                                      |
+| ActivityType      | Text      | Semantic activity type or name of custom activity. For example: `SalesOrderLine`  |
+| ExternalUrl       | Text      | Link to an external URL for this activity. Usually denotes the URL of the website visited by a customer.     |
+| ActivityTime      | DateTime  | Activity time stamp. Usually denotes when the activity occurred. For example: `2021-12-24T21:00:00Z`  |
 | ActivityId        | Text      | Internal ID of the customer activity (primary key)                                       |
-| SourceEntityName  | Text      | Name of the source entity                                                                |
-| SourceActivityId  | Text      | Primary key from the source entity                                                       |
-| ActivityType      | Text      | Semantic activity type or name of custom activity                                        |
-| ActivityTimeStamp | DateTime    | Activity time stamp                                                                      |
+| ActualActivityId  | Text      | Internal ID of the activity row in the source entity/table                                       |
 | Title             | Text      | Title or name of the activity                                                               |
-| Description       | Text      | Activity description                                                                     |
-| URL               | Text      | Link to an external URL specific to the activity                                         |
-| SemanticData      | Text | Includes a list of key value pairs for semantic mapping fields specific to the type of activity |
-| RangeIndex        | Text      | Unix timestamp used for sorting activity timeline and effective range queries |
-| UnifiedActivityId   | Unique identifier | Internal ID of the customer activity (ActivityId) |
+| EntityName        | Text      | Name of the source entity/table used for this activity                                            |
+| ActivityName      | Text      | The event that happened for this activity. For example: `webpage view`                        |
 
 ### CustomerMeasure
 

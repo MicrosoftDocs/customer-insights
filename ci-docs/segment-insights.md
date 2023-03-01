@@ -2,13 +2,10 @@
 title: "Get insights on existing segments (preview)"
 description: "Get insights on existing segments to see differences and commonalities."
 ms.date: 01/11/2023
-
-ms.service: customer-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
-manager: shellyha
 ms.custom: bap-template
 searchScope: 
   - ci-segment-insights

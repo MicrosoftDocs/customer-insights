@@ -4,11 +4,9 @@ description: "Learn how to configure the connection and the export to LiveRamp."
 ms.date: 07/25/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
-manager: shellyha
 ---
 
 # Export segments to LiveRamp&reg; (preview)
@@ -44,8 +42,6 @@ Activate your data in LiveRamp to connect with over 500 platforms across digital
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Choose whether you want to authenticate through SSH or username/password for your connection and provide the necessary details.
-
-1. Select **Verify** to test the connection to LiveRamp.
 
 1. After successful verification, review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 

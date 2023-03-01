@@ -5,8 +5,7 @@ description: Learn about the requirements to use your own Azure Data Lake Storag
 ms.author: mukeshpo
 ms.date: 08/15/2022
 ms.topic: conceptual
-ms.manager: shellyha
-ms.custom: intro-internal
+ms.ms.custom: intro-internal
 ms.reviewer: mhart
 ---
 

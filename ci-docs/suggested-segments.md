@@ -3,10 +3,8 @@ title: "Suggested segments (preview)"
 description: "Let Customer Insights help you find new and interesting segments based on customer attributes."
 author: JimsonChalissery
 ms.author: jimsonc
-manager: shellyha
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
-
 ms.date: 01/05/2023
 ms.topic: conceptual
 ms.custom: bap-template

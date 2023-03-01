@@ -1,14 +1,12 @@
 ---
 title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
-ms.date: 11/28/2022
-ms.service: customer-insights
-ms.subservice: audience-insights
+ms.date: 01/13/2023
+
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-segments
   - ci-segment-builder
@@ -89,7 +87,9 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
    > - If the attribute you want to project is just one hop away from the *Customer* or *ContactProfile* entity, that attribute doesn't need to be present in every rule of the segment query you are building.
    > - **Projected attributes** are factored in when using set operators.
 
-1. Select **Run** to create the segment. If you want to keep the current configuration and run the segment later, select **Save** and then **Close**. The **Segments** page displays.
+1. To save the configuration, select **Save** and then **Close**. The segment is in draft mode or inactive so you can make changes to the configuration before actually creating the segment.
+
+1. To create the segment, select **Run**.
 
 ### Segment builder tips
 

@@ -2,12 +2,10 @@
 title: "Schedule segments"
 description: "How to create custom schedules for segments."
 ms.date: 11/28/2022
-ms.service: customer-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
 ms.custom: bap-template
 searchScope: 
   - ci-customers-page

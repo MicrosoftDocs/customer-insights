@@ -2,13 +2,10 @@
 title: "Create simple segments with quick segments"
 description: "Create simple segments of customers to group them based on various attributes."
 ms.date: 11/28/2022
-
-ms.service: customer-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
 ms.custom: bap-template
 searchScope: 
   - ci-segments
