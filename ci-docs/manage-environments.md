@@ -6,6 +6,7 @@ ms.topic: how-to
 ms.reviewer: mhart
 author: mukeshpo
 ms.author: mukeshpo
+ms.custom: bap-template
 searchScope: 
   - ci-system-about
   - customerInsights
