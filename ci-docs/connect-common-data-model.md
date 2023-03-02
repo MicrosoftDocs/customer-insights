@@ -1,11 +1,12 @@
 ---
-title: "Connect to a Common Data Model folder using an Azure Data Lake account"
+title: "Connect to data in Azure Data Lake Storage"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
 ms.date: 01/05/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 searchScope: 
   - ci-data-sources
   - ci-create-data-source
@@ -25,9 +26,9 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 - To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-- The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights environment and the subscriptions must be in the same tenant. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in Customer Insights.
+- The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Customer Insights environment and the subscriptions must be in the same tenant. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Admin** > **System** > **About** in Customer Insights.
 
-- Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+- Data stored in online services may be stored in a different location than where data is processed or stored in Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 - The Customer Insights service principal must be in one of the following roles to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
   - Storage Blob Data Reader
@@ -44,11 +45,7 @@ For optimal performance, Customer Insights recommends the size of a partition be
 
 ## Connect to Azure Data Lake Storage
 
-1. Go to **Data** > **Data sources**.
-
-1. Select **Add data source**.
-
-1. Select **Azure data lake storage**.
+1. Go to **Data** > **Data sources** and select **Add data source**. Then, select **Azure data lake storage**.
 
    :::image type="content" source="media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake." lightbox="media/data_sources_ADLS.png":::
 
@@ -108,9 +105,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 ### Create a new schema file
 
-1. Select **New schema file**.
-
-1. Enter a name for the file and select **Save**.
+1. Select **New schema file**. Enter a name for the file and select **Save**.
 
 1. Select **New entity**. The **New Entity** panel displays.
 
@@ -160,9 +155,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 You can update the *Connect to storage account using* option. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
 
-1. Go to **Data** > **Data sources**.
-
-1. Next to the data source you'd like to update, select  **Edit**.
+1. Go to **Data** > **Data sources**. Next to the data source you'd like to update, select  **Edit**.
 
    :::image type="content" source="media/data_sources_edit_ADLS.png" alt-text="Dialog box to edit Azure Data Lake data source.":::
 
@@ -197,101 +190,5 @@ You can update the *Connect to storage account using* option. For more informati
 1. Click **Save** to apply your changes and return to the **Data sources** page.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-
-## Common reasons for ingestion errors or corrupt data
-
-During data ingestion, some of the most common reasons a record might be considered corrupt include:
-
-- The data types and field values don't match between the source file and the schema
-- Number of columns in the source file don't match the schema
-- Fields contain characters that cause the columns to skew compared to the expected schema. For example: incorrectly formatted quotes, unescaped quotes, newline characters, or tabbed characters.
-- Partition files are missing
-- If there are datetime/date/datetimeoffset columns, their format must be specified in the schema if it doesn't follow the standard format.
-
-### Schema or data type mismatch
-
-If the data does not conform to the schema, the ingestion process completes with errors. Correct either the source data or the schema and re-ingest the data.
-
-### Partition files are missing
-
-- If ingestion was successful without any corrupt records, but you can't see any data, edit your model.json or manifest.json file to make sure partitions are specified. Then, [refresh the data source](data-sources.md#refresh-data-sources).
-
-- If data ingestion occurs at the same time as data sources are being refreshed during an automatic schedule refresh, the partition files may be empty or not available for Customer Insights to process. To align with the upstream refresh schedule, change the [system refresh schedule](schedule-refresh.md) or the refresh schedule for the data source. Align the timing so that refreshes do not all occur at once and provides the latest data to be processed in Customer Insights.
-
-### Datetime fields in the wrong format
-
-The datetime fields in the entity are not in ISO 8601 or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in an entity should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or entity level in the model or manifest.json. For example:
-
-**Model.json**
-
-   ```json
-      "annotations": [
-        {
-          "name": "ci:CustomTimestampFormat",
-          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
-        },
-        {
-          "name": "ci:CustomDateFormat",
-          "value": "yyyy-MM-dd"
-        }
-      ]   
-   ```
-
-  In a manifest.json, the datetime format can be specified at the entity level or at the attribute level. At the entity level, use "exhibitsTraits" in the entity in the *.manifest.cdm.json to define the datetime format. At the attribute level, use "appliedTraits" in the attribute in the entityname.cdm.json.
-
-**Manifest.json at the entity level**
-
-```json
-"exhibitsTraits": [
-    {
-        "traitReference": "is.formatted.dateTime",
-        "arguments": [
-            {
-                "name": "format",
-                "value": "yyyy-MM-dd'T'HH:mm:ss"
-            }
-        ]
-    },
-    {
-        "traitReference": "is.formatted.date",
-        "arguments": [
-            {
-                "name": "format",
-                "value": "yyyy-MM-dd"
-            }
-        ]
-    }
-]
-```
-
-**Entity.json at the attribute level**
-
-```json
-   {
-      "name": "PurchasedOn",
-      "appliedTraits": [
-        {
-          "traitReference": "is.formatted.date",
-          "arguments" : [
-            {
-              "name": "format",
-              "value": "yyyy-MM-dd"
-            }
-          ]
-        },
-        {
-          "traitReference": "is.formatted.dateTime",
-          "arguments" : [
-            {
-              "name": "format",
-              "value": "yyyy-MM-ddTHH:mm:ss"
-            }
-          ]
-        }
-      ],
-      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
-      "dataFormat": "DateTime"
-    }
-```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -6,6 +6,7 @@ ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 ---
 
 # Enrichment for data sources (preview)

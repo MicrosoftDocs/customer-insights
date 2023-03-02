@@ -69,6 +69,8 @@
       href: incremental-refresh-data-sources.md
     - name: Real-time data ingestion
       href: real-time-data-ingestion.md
+    - name: Common reasons for ingestion errors
+      href: common-data-ingestion-errors.md
 
 - name: Data unification
   items:
