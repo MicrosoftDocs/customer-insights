@@ -17,7 +17,7 @@ searchScope:
 
 # Assign user permissions
 
-Access to Customer Insights is restricted to users in your organization that are added to the application by an admin. An admin can add, edit, or remove users. A user can be a single user, group, or application. There are three types of roles a user can have:
+Access to Customer Insights is restricted to users in your organization that are added to the application by an admin. An admin can add, edit, or remove users. A user can be a single user, group, or application. There are four types of roles a user can have:
 
 ## Viewer
 
