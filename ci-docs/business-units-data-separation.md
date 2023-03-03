@@ -83,7 +83,7 @@ A typical business unit structure is depicted below. Marketing contributor users
    > * Only the default table configurations are currently supported. Altering RBAC settings in Dataverse can lead to unexpected results.
  
 
-## Customer Insights and Customer Journey Orchestration
+## Customer Insights with Customer Journey Orchestration
 Customer Insights and Customer Journey Orchestration (CJO) are tightly integrated for a delightful activation journey. 
 
 Marketing contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Customer Journey Orchestration. When they go to CJO they will only have access to customer profiles and segments that belong to their business unit.
@@ -91,7 +91,7 @@ Marketing contributors in Customer Insights should be given the *Marketing Profe
  > [!NOTE]
    > * Customer Journey Orchestration can only process segments that contain members that belong to one business unit and has an owner that belongs to the same business unit.
 
-## Customer Insights and Dataverse
+## Customer Insights with Dataverse
 Customer insights writes data into Dataverse with ownership and RBAC properties for easy activation, for example, through [model-driven applications](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-app-overview). Using model-diven applications, data can easily be leveraged in customer service, sales, operations, and other business functions with the benefits of fine-grained RBAC controls.
 
 ## Notes
