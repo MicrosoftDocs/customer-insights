@@ -27,7 +27,7 @@ To securely connect data in a private network, Power Query supports the use of [
 
 1. Provide a **Name** and an optional **Description** for the data source, and select **Next**.
 
-1. Choose one of the [available connectors](#available-power-query-data-sources). In this example, we select the **Text/CSV** connector.
+1. Choose one of the [available connectors](/power-query/connectors/). In this example, we select the **Text/CSV** connector.
 
 1. Enter the required details in the **Connection settings** for the selected connector and select **Next** to see a preview of the data.
 

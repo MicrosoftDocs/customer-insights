@@ -52,8 +52,8 @@ The real-time API lets you publish a new activity from your source system (an in
 
 There are two ways to connect to the real-time API:
 
-- [Indirectly](#connect-via-the-dynamics-365-customer-insights-connector), using the [Dynamics 365 Customer Insights connector](/connectors/customerinsights/)
-- [Directly](#connect-directly-to-the-real-time-api), with code
+- [Indirectly](#dynamics-365-customer-insights-connection), using the [Dynamics 365 Customer Insights connector](/connectors/customerinsights/)
+- [Directly](#direct-connection-to-the-real-time-api), with code
 
 Both ways share the following prerequisites:
 
@@ -62,7 +62,7 @@ Both ways share the following prerequisites:
 - Activities configured and run
 - Contributor or Administrator permissions to authenticate your account
 
-## Dynamics 365 Customer Insights connector
+## Dynamics 365 Customer Insights connection
 
 The real-time API can ingest data from a dedicated Power Platform connector, the [Dynamics 365 Customer Insights connector](/connectors/customerinsights/), without the need to write and deploy any code.
 The connector can do the same real-time actions as the API. You need a valid license for premium connectors. For more information, see [Power Apps and Power Automate licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq).
@@ -72,7 +72,7 @@ The connector can do the same real-time actions as the API. You need a valid lic
 
 For details about creating flows, see the [Power Automate documentation](/power-automate/).
 
-## Connect directly to the real-time API
+## Direct connection to the real-time API
 
 You can use the real-time capabilities by building your own pipeline and connecting directly to the real-time API.
 You can post an activity in the format of your source system or in the UnifiedActivity format. Get the format by making an API call to /api/instances/{instanceId}/manage/entities/UnifiedActivity.
