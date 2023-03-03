@@ -85,8 +85,8 @@ additionalContent:
         text: Create segments
       - url: measures.md
         text: Create measures
-      - url: Predict data
-        text: predictions-overview.md
+      - url: predictions-overview.md
+        text: Predict data
     - title: Export data
       links:
       - url: export-destinations.md
@@ -101,8 +101,16 @@ additionalContent:
         text: View customer profiles
       - url: consent-management.md
         text: Use customer consent
-      - url: manage-unknown-profiles
+      - url: manage-unknown-profiles.md
         text: Work with unknown users
+    - title: Administer
+      links:
+      - url: security-overview.md
+        text: Security overview
+      - url: diagnostics.md
+        text: Export diagnostic logs
+      - url: schedule-refresh.md
+        text: Schedule system refresh
   - title: Related products
     items:
         # Card

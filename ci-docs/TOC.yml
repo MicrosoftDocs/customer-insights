@@ -326,10 +326,14 @@
   items:
     - name: Assign user permissions
       href: permissions.md
+    - name: Security overview
+      href: security-overview.md
+    - name: Set up an Azure Private Link
+      href: private-link.md
+    - name: Securely access customer data with Customer Lockbox
+      href: security-lockbox.md
     - name: Bring your own Key Vault
       href: use-azure-key-vault.md
-    - name: Configure security settings
-      href: security-overview.md
     - name: Export diagnostic logs
       href: diagnostics.md
     - name: Manage connections
@@ -345,6 +349,8 @@
       href: apis.md 
     - name: API references
       href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
+    - name: Manage APIs
+      href: apis-manage.md
     - name: OData sample queries
       href: odata-examples.md
 
