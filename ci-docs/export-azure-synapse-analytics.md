@@ -40,7 +40,7 @@ In Azure:
 ## Known limitation
 
 - Azure Synapse export doesn't support incremental refresh for data sources if an environment uses a custom Azure Data Lake for data storage.
-- Enabling public access to your own storage account after [setting up an Azure Private Link](security-overview.md#set-up-an-azure-private-link) won't work. Private Link only works if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
+- Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link only works if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 
 ## Set up connection to Azure Synapse
 

@@ -20,7 +20,7 @@ Store your Customer Insights data in a Blob storage or use it to transfer your d
 ## Known limitations
 
 - For Azure Blob Storage, choose between [Standard performance and Premium performance tier](/azure/storage/blobs/storage-blob-performance-tiers). If you choose the Premium performance tier, select the [premium block blobs as account type](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
-- Enabling public access to your own storage account after [setting up an Azure Private Link](security-overview.md#set-up-an-azure-private-link) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
+- Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 
 ## Set up connection to Blob Storage
 
