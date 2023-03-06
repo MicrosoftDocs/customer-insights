@@ -107,8 +107,8 @@ additionalContent:
       links:
       - url: security-overview.md
         text: Security overview
-      - url: diagnostics.md
-        text: Export diagnostic logs
+      - url: manage-environments.md
+        text: Manage environments
       - url: schedule-refresh.md
         text: Schedule system refresh
   - title: Related products

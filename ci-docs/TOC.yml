@@ -324,16 +324,16 @@
 
 - name: Administration
   items:
-    - name: Assign user permissions
-      href: permissions.md
     - name: Security overview
       href: security-overview.md
-    - name: Set up an Azure Private Link
-      href: private-link.md
-    - name: Securely access customer data with Customer Lockbox
-      href: security-lockbox.md
+    - name: Assign user permissions
+      href: permissions.md
     - name: Bring your own Key Vault
       href: use-azure-key-vault.md
+    - name: Securely access customer data with Customer Lockbox
+      href: security-lockbox.md
+    - name: Set up an Azure Private Link
+      href: private-link.md
     - name: Export diagnostic logs
       href: diagnostics.md
     - name: Manage connections
