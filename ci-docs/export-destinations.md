@@ -1,13 +1,9 @@
 ---
 title: "Exports (preview) overview"
 description: "Overview on exports in Customer Insights"
-ms.service: customer-insights
-ms.subservice: audience-insights
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ms.reviewer: mhart
-
 ms.date: 01/05/2023
 ms.topic: overview
 ms.custom: bap-template

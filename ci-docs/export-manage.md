@@ -5,9 +5,6 @@ author: pkieffer
 ms.author: philk
 manager: shellyha
 ms.reviewer: mhart
-ms.service: customer-insights
-ms.subservice: audience-insights
-
 ms.date: 01/05/2023
 ms.topic: how-to
 ms.custom: bap-template
