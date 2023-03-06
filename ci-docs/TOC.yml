@@ -1,43 +1,19 @@
-- name: Dynamics 365 Customer Insights
-  href: index.yml
-
-- name: Product overview
+- name: Welcome to Dynamics 365 Customer Insights
   href: overview.md
     
-- name: New and updated features
-  href: whats-new-customer-insights.md
-
-- name: Learning catalog
-  items:
-    - name: Certify as Microsoft Customer Data Platform Specialist
-      href: /certifications/exams/mb-260?tab=tab-instructor-led
-    - name: Get started with Customer Insights
-      href: /training/modules/get-started-customer-data-platform/
-    - name: Ingest data
-      href: /training/modules/ingest-data-customer-insights/
-    - name: Create a unified customer profile
-      href: /training/modules/unified-customer-profile/
-    - name: Work with Customer Insights
-      href: /training/modules/working-with-customer-insights/
-    - name: Enrich data and make predictions
-      href: /training/modules/enrich-data/
-    - name: Manage external connections
-      href: /training/modules/configure-third-party-connections/
-    - name: Administer Customer Insights
-      href: /training/modules/administer-customer-data-platform/
-
-- name: Free trial
-  items:
-    - name: Sign up for a free trial
-      href: trial-signup.md
-    - name: Trial FAQ
-      href: trial-FAQ.md
-
-- name: Access your environment
-  href: https://home.ci.ai.dynamics.com/
+- name: Customer Insights documentation
+  href: index.yml
 
 - name: Get started
   items: 
+    - name: Free trial
+      items:
+      - name: Sign up for a free trial
+        href: trial-signup.md
+      - name: Trial FAQ
+        href: trial-FAQ.md
+    - name: Access your environment
+      href: https://home.ci.ai.dynamics.com/
     - name: Quickstart guide
       href: get-started.md
     - name: Start with a paid license
@@ -50,6 +26,12 @@
       href: work-with-business-accounts.md
     - name: Integrate with Dynamics 365 Marketing
       href: marketing-get-started.md
+
+- name: Troubleshooting
+  href: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
+
+- name: What's new
+  href: whats-new-customer-insights.md
 
 - name: Data sources
   items:
@@ -362,7 +344,23 @@
 
 - name: More resources
   items: 
-    - name: Get support
-      href: /power-platform/admin/get-help-support
-    - name: Segment not eligible for export
-      href: export-troubleshoot.md
+  - name: Learning catalog
+    items:
+      - name: Certify as Microsoft Customer Data Platform Specialist
+        href: /certifications/exams/mb-260?tab=tab-instructor-led
+      - name: Get started with Customer Insights
+        href: /training/modules/get-started-customer-data-platform/
+      - name: Ingest data
+        href: /training/modules/ingest-data-customer-insights/
+      - name: Create a unified customer profile
+        href: /training/modules/unified-customer-profile/
+      - name: Work with Customer Insights
+        href: /training/modules/working-with-customer-insights/
+      - name: Enrich data and make predictions
+        href: /training/modules/enrich-data/
+      - name: Manage external connections
+        href: /training/modules/configure-third-party-connections/
+      - name: Administer Customer Insights
+        href: /training/modules/administer-customer-data-platform/
+  - name: Get support
+    href: /power-platform/admin/get-help-support

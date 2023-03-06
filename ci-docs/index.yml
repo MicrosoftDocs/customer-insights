@@ -47,7 +47,7 @@ additionalContent:
   sections:
   - title: Use Customer Insights
     items:
-    - title: Set up Customer Insights
+    - title: Set up
       links:
       - url: create-environment.md
         text: Create a new environment
@@ -74,7 +74,7 @@ additionalContent:
     - title: Build on your data
       links:
       - url: enrichment-hub.md
-        text: Enrich your data
+        text: Data enrichment overview
       - url: relationships.md
         text: Build relationships between tables
       - url: activities.md
@@ -90,7 +90,7 @@ additionalContent:
     - title: Export data
       links:
       - url: export-destinations.md
-        text: Set up exports
+        text: Exports overview
       - url: export-power-bi.md
         text: Connect to Power BI
       - url: customer-card-add-in.md
@@ -102,7 +102,7 @@ additionalContent:
       - url: consent-management.md
         text: Use customer consent
       - url: manage-unknown-profiles.md
-        text: Work with unknown users
+        text: Manage unknown users
     - title: Administer
       links:
       - url: security-overview.md
