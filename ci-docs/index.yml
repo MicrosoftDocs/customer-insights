@@ -97,7 +97,7 @@ additionalContent:
         text: Build relationships between tables
       - url: activities.md
         text: Define activities
-  - title: Work with unified data
+  - title: Use the unified data
     items:
     - title: Get insights
       links:
