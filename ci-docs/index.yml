@@ -45,8 +45,16 @@ highlightedContent:
       
 additionalContent: 
   sections:
-  - title: Use Customer Insights
+  - title: Administer
     items:
+    - title: Try or buy
+      links:
+      - url: trial-signup.md
+        text: Sign up for a free trial
+      - url: paid-license.md
+        text: Buy a license
+      - url: https://home.ci.ai.dynamics.com/
+        text: Access your environment
     - title: Set up
       links:
       - url: create-environment.md
@@ -55,6 +63,16 @@ additionalContent:
         text: Assign users
       - url: home.md
         text: Explore Customer Insights
+    - title: Administer
+      links:
+      - url: security-overview.md
+        text: Security overview
+      - url: manage-environments.md
+        text: Manage environments
+      - url: schedule-refresh.md
+        text: Schedule system refresh
+  - title: Import and unify data
+    items:
     - title: Add data
       links:
       - url: data-sources.md
@@ -79,6 +97,8 @@ additionalContent:
         text: Build relationships between tables
       - url: activities.md
         text: Define activities
+  - title: Work with unified data
+    items:
     - title: Get insights
       links:
       - url: segments.md
@@ -103,14 +123,6 @@ additionalContent:
         text: Use customer consent
       - url: manage-unknown-profiles.md
         text: Manage unknown users
-    - title: Administer
-      links:
-      - url: security-overview.md
-        text: Security overview
-      - url: manage-environments.md
-        text: Manage environments
-      - url: schedule-refresh.md
-        text: Schedule system refresh
   - title: Related products
     items:
         # Card
