@@ -69,8 +69,8 @@ additionalContent:
         text: Security overview
       - url: manage-environments.md
         text: Manage environments
-      - url: schedule-refresh.md
-        text: Schedule system refresh
+      - url: connections.md
+        text: Manage connections
   - title: Import and unify data
     items:
     - title: Add data
