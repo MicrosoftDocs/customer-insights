@@ -1,7 +1,7 @@
 ---
 title: "Use unified profiles in Dynamics 365 Marketing"
 description: "Learn how to integrate unified profiles and segments with Dynamics 365 Marketing."
-ms.date: 04/20/2022
+ms.date: 03/09/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -20,13 +20,13 @@ By connecting Customer Insights data with Marketing, you can:
 
 ## Use rich customer profiles in real-time marketing
 
-Real-time marketing allows you to create [custom triggers](/dynamics365/marketing/real-time-marketing-custom-triggers) that launch customer journeys based on any customer action. The more personalized your data, the more relevant and personalized your journeys will be. This is what makes combining Marketing and Customer Insights so powerful. You can [unify data](data-unification.md) from any source, then use it to fuel hyper-personalized customer journeys.
+Real-time marketing allows you to creates customer journeys based on events or segments. The more personalized your data, the more relevant and personalized your journeys will be. If both applications use the same Microsoft Dataverse environment, you can [establish a seamless connection](/dynamics365/marketing/real-time-marketing-ci-profile). Data is automatically updated for both applications thanks to the shared data service. As soon as a segment in Customer Insights refreshes, it's already available in Marketing. This is what makes combining Marketing and Customer Insights so powerful. You can [unify data](data-unification.md) from any source, then use it to fuel hyper-personalized customer journeys.
 
 Learn more: [Use Customer Insights profiles and segments in real-time marketing](/dynamics365/marketing/real-time-marketing-ci-profile)
 
-## Use unified segments with outbound customer journeys
+## Export segments to use in outbound marketing
 
-Customer Insights allows you to refine data from many sources and combine it into aggregated customer segments. By [connecting Customer Insights with outbound marketing](export-dynamics365-marketing.md), these segments will automatically appear *and* refresh automatically in the customer journey designer.
+Customer Insights allows you to refine data from many sources and combine it into aggregated customer segments. By [connecting Customer Insights and exporting segments to outbound marketing](export-dynamics365-marketing.md), you make customer segments available in Marketing. These segments get updated based on the export cadence you define.
 
 Learn more: [Use segments from Dynamics 365 Customer Insights with Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
 
