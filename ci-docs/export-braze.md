@@ -61,7 +61,7 @@ Export segments of unified customer profiles to Braze and use them for marketing
 
 1. Enter a name for the export.
 
-1. In the Data matching section:
+1. In the **Data matching** section:
    - In the **Email** field, select the field that represents a customer's email address.
    - In the **Braze customer ID** field, select the field that represents the [User ID of a record in Braze](https://www.braze.com/docs/developer_guide/platform_integration_guides/web/analytics/setting_user_ids#suggested-user-id-naming-convention).
      - Mapping the User ID of Braze to the Braze customer ID field in Customer Insights will result in updating existing records in Braze when exporting.
