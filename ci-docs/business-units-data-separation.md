@@ -94,6 +94,9 @@ Marketing contributors in Customer Insights should be given the *Marketing Profe
 ## Customer Insights with Dataverse
 Customer insights writes data into Dataverse with ownership and RBAC properties for easy activation, for example, through [model-driven applications](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-app-overview). Using model-diven applications, data can easily be leveraged in customer service, sales, operations, and other business functions with the benefits of fine-grained RBAC controls.
 
+## Customer Insights data consumption APIs
+To maintain BU data separation, all API based data consumption scenarios must call Dataverse APIs. Customer Insights APIs are not supported for these scenarios.
+
 ## Notes
 
 * A customer profile cannot be owned by more than one business unit. 
