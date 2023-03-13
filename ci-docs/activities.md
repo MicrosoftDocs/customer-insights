@@ -1,7 +1,7 @@
 ---
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 02/28/2023
+ms.date: 03/13/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: srivas15
