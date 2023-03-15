@@ -4,7 +4,7 @@ description: An overview of Customer Insights helps resources to get started qui
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 02/15/2023
+ms.date: 03/15/2023
 ms.topic: how-to
 ms.custom: bap-template
 searchScope: 
