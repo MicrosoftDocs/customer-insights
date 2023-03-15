@@ -28,7 +28,7 @@ Dynamics 365 Customer Insights provides ingestion of a single data source to get
 
 ## Upload a single data source
 
-In a newly-provisioned envrironment, the **Getting Started** page displays. If the page was closed, go to the **Home** page, select **Add data** or **Resume** on the **Get insights in mins** card.
+In a newly provisioned environment, the **Getting Started** page displays. If the page was closed, go to the **Home** page, select **Add data** or **Resume** on the **Get insights in mins** card.
 
 1. From the Getting Started page, select **Get started**.
 
