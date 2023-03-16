@@ -49,8 +49,7 @@ For more information about Customer Lockbox, see the [summary](/power-platform/a
 > - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
 > - Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
 >
-> Special cases which require creating the Private Link:
-> - A Private Link between Customer Insights and the storage account needs to be created even if the storage is accessible from Public Internet but it already has at least a Private Link.
+> If a storage account is accessible from the public internet but already has any other private link, you need to create another private link between Customer Insights and the storage account.
 
 In Customers Insights you can create private links in the following ways:
 
