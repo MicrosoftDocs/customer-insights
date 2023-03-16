@@ -42,7 +42,7 @@ Customer Insights allows incremental refresh for data sources imported through P
 
 1. Select a table, and provide the following details:
 
-   - **Define the primary key**: Select a primary key for the entity or table.
+   - **Define the primary key**: Select a primary key for the table.
    - **Define the "last updated" field**: This field will only display attributes of type date or time. Select an attribute that indicates when the records were last updated. This attribute identifies the records that fall within the incremental refresh time frame.
    - **Check for updates every**: Specify how long you want the incremental refresh time frame to be.
 
