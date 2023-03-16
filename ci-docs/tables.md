@@ -3,11 +3,9 @@ title: "Tables in Customer Insights"
 description: "View data on the Tables page."
 ms.date: 12/7/2022
 ms.reviewer: mhart
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 searchScope: 
   - ci-entities
   - customerInsight
