@@ -1,7 +1,7 @@
 ---
 title: Configure security settings
 description: Learn about security settings in Dynamics 365 Customer Insights.
-ms.date: 02/28/2023
+ms.date: 03/16/2023
 
 ms.topic: conceptual
 author: AndreaAczel
@@ -48,6 +48,8 @@ For more information about Customer Lockbox, see the [summary](/power-platform/a
 > - Customer Insights: Administrator
 > - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
 > - Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+>
+> If a storage account is accessible from the public internet but already has any other private link, you need to create another private link between Customer Insights and the storage account.
 
 In Customers Insights you can create private links in the following ways:
 
