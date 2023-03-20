@@ -29,17 +29,17 @@ During data ingestion, some of the most common reasons a record might be conside
 
 ## Schema or data type mismatch
 
-If the data does not conform to the schema, the ingestion process completes with errors. Correct either the source data or the schema and re-ingest the data.
+If the data doesn't conform to the schema, the ingestion process completes with errors. Correct either the source data or the schema and re-ingest the data.
 
 ## Partition files are missing
 
-- If ingestion was successful without any corrupt records, but you can't see any data, edit your model.json or manifest.json file to make sure partitions are specified. Then, [refresh the data source](data-sources.md#refresh-data-sources).
+- If ingestion was successful without any corrupt records, but you can't see any data, edit your model.json or manifest.json file to make sure partitions are specified. Then, [refresh the data source](data-sources-manage.md#refresh-data-sources).
 
-- If data ingestion occurs at the same time as data sources are being refreshed during an automatic schedule refresh, the partition files may be empty or not available for Customer Insights to process. To align with the upstream refresh schedule, change the [system refresh schedule](schedule-refresh.md) or the refresh schedule for the data source. Align the timing so that refreshes do not all occur at once and provides the latest data to be processed in Customer Insights.
+- If data ingestion occurs at the same time as data sources are being refreshed during an automatic schedule refresh, the partition files may be empty or not available for Customer Insights to process. To align with the upstream refresh schedule, change the [system refresh schedule](schedule-refresh.md) or the refresh schedule for the data source. Align the timing so that refreshes don't all occur at once and provides the latest data to be processed in Customer Insights.
 
 ## Datetime fields in the wrong format
 
-The datetime fields in the entity are not in ISO 8601 or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in an entity should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or entity level in the model or manifest.json. For example:
+The datetime fields in the entity aren't in ISO 8601 or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in an entity should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or entity level in the model or manifest.json. For example:
 
 **Model.json**
 
@@ -117,7 +117,7 @@ The datetime fields in the entity are not in ISO 8601 or en-US formats. The defa
 
 ### Data type does not match data
 
-The most common data type mismatch occurs when a date field is not set to the correct date format.
+The most common data type mismatch occurs when a date field isn't set to the correct date format.
 
 The data can be fixed at the source and re-ingested. Or fix the transformation within Customer Insights. To fix the transformation:
 
