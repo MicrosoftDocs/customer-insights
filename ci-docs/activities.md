@@ -44,7 +44,7 @@ Customer Insights helps you with simple steps to define all activities at once.
    - **Primary key**: The primary key uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    > [!NOTE]
-   > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
+   > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, Customer Insights must delete all old rows and insert all new rows, causing an increase in processing time.
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with table and primary key.":::
 
