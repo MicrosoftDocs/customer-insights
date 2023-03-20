@@ -1,7 +1,7 @@
 ---
 title: "Export data to Azure Synapse Analytics (preview)"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
-ms.date: 02/17/2023
+ms.date: 03/20/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: Nils-2m

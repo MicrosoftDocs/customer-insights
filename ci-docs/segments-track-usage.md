@@ -1,7 +1,7 @@
 ---
 title: "Track usage of a segment"
 description: "Track the usage of a segment in other apps."
-ms.date: 01/11/2023
+ms.date: 03/20/2023
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc

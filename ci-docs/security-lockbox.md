@@ -1,11 +1,12 @@
 ---
 title: Securely access customer data with Customer Lockbox (Preview)
 description: Set up to approve data access request.
-ms.date: 03/03/2023
+ms.date: 03/20/2023
 ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 ---
 
 # Securely access customer data with Customer Lockbox (Preview)

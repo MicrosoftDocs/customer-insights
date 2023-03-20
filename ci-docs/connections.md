@@ -1,9 +1,8 @@
 ---
 title: "Connections (preview) overview"
 description: "Connections to other services from Customer Insights."
-ms.date: 08/04/2022
+ms.date: 03/20/2023
 ms.reviewer: nikeller
-
 ms.topic: overview
 author: m-hartmann
 ms.author: mhart

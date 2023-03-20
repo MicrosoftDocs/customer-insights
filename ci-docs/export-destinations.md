@@ -4,7 +4,7 @@ description: "Overview on exports in Customer Insights"
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
-ms.date: 01/05/2023
+ms.date: 03/20/2023
 ms.topic: overview
 ms.custom: bap-template
 searchScope: 

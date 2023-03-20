@@ -1,7 +1,7 @@
 ---
 title: "Schedule segments"
 description: "How to create custom schedules for segments."
-ms.date: 11/28/2022
+ms.date: 03/20/2023
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc

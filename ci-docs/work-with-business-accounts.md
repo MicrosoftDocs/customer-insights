@@ -1,11 +1,10 @@
 ---
 title: "Work with business accounts"
 description: "Learn about business accounts as primary target audience in Dynamics 365 Customer Insights."
-ms.date: 10/19/2021
-
+ms.date: 03/20/2023
 ms.topic: conceptual
 author: v-wendysmith
-ms.custom: intro-internal
+ms.custom: bap-template
 ms.author: wimohabb
 ms.reviewer: v-wendysmith
 searchScope: 

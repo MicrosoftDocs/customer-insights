@@ -4,11 +4,8 @@ description: "Create and manage measures to help analyze and reflect the perform
 author: v-wendysmith
 ms.author: wameng
 ms.reviewer: v-wendysmith
-manager: shellyha
-ms.service: customer-insights
-
 ms.topic: how-to
-ms.date: 01/09/2023
+ms.date: 03/20/2023
 ms.custom: bap-template
 searchScope: 
   - ci-measures

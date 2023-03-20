@@ -3,9 +3,9 @@ title: Use your own Azure Data Lake Storage Gen2 account
 author: mukeshpo
 description: Learn about the requirements to use your own Azure Data Lake Storage account to store Customer Insights data.
 ms.author: mukeshpo
-ms.date: 08/15/2022
+ms.date: 03/20/2023
 ms.topic: conceptual
-ms.ms.custom: intro-internal
+ms.custom: intro-internal
 ms.reviewer: mhart
 ---
 

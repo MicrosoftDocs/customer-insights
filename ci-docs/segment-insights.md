@@ -1,7 +1,7 @@
 ---
 title: "Get insights on existing segments (preview)"
 description: "Get insights on existing segments to see differences and commonalities."
-ms.date: 01/11/2023
+ms.date: 03/20/2023
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc

@@ -1,7 +1,7 @@
 ---
 title: "Manage data sources"
 description: "Learn how to manage data sources attached or imported to Customer Insights"
-ms.date: 02/28/2023
+ms.date: 03/20/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo

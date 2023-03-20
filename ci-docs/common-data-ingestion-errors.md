@@ -1,7 +1,7 @@
 ---
 title: "Common reasons for ingestion errors or corrupt data"
 description: "Understand some common reasons for ingestion errors or corrupt data when using Data Lake Storage or Power Query"
-ms.date: 03/02/2023
+ms.date: 03/20/2023
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo

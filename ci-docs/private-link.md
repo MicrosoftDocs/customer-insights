@@ -1,11 +1,12 @@
 ---
 title: Set up an Azure Private Link
 description: Learn how to set up an Azure Private Link to connect your Data Lake Storage.
-ms.date: 03/03/2023
+ms.date: 03/20/2023
 ms.topic: how-to
 author: AndreaAczel
 ms.author: anaczel
 ms.reviewer: mhart
+ms.custom: bap-template
 ---
 
 # Set up an Azure Private Link

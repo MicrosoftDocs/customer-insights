@@ -1,8 +1,7 @@
 ---
 title: "Find similar customers with AI (preview) (contains video)"
 description: "Find similar customer segments with artificial intelligence."
-ms.date: 03/25/2022
-
+ms.date: 03/20/2023
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc

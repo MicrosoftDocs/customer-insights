@@ -3,9 +3,8 @@ title: "Set up and manage exports (preview)"
 description: "Manage exports to share data."
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ms.reviewer: mhart
-ms.date: 01/05/2023
+ms.date: 03/20/2023
 ms.topic: how-to
 ms.custom: bap-template
 searchScope: 

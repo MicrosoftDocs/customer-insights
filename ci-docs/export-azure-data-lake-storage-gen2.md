@@ -1,7 +1,7 @@
 ---
 title: "Export data to Azure Data Lake Storage Gen2 (preview)"
 description: "Learn how to configure the connection to Azure Data Lake Storage Gen2."
-ms.date: 02/06/2023
+ms.date: 03/20/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: Nils-2m

@@ -1,12 +1,12 @@
 ---
 title: Security overview
 description: Learn about security settings in Dynamics 365 Customer Insights.
-ms.date: 03/16/2023
-
-ms.topic: conceptual
+ms.date: 03/20/2023
+ms.topic: overview
 author: AndreaAczel
 ms.author: anaczel
 ms.reviewer: mhart
+ms.custom: bap-template
 ---
 
 # Security overview
