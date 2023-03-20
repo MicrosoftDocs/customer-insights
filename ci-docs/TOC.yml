@@ -16,8 +16,6 @@
       href: https://home.ci.ai.dynamics.com/
     - name: Quickstart guide
       href: get-started.md
-    - name: Start with a paid license
-      href: paid-license.md
     - name: Explore Customer Insights
       href: home.md
     - name: Work with tags and columns
@@ -37,6 +35,8 @@
   items:
     - name: Data sources overview
       href: data-sources.md
+    - name: Get started using a single data source
+      href: data-sources-single.md
     - name: Connect to data in Azure Data Lake Storage
       href: connect-common-data-model.md
     - name: Connect to Azure Synapse Analytics
@@ -45,6 +45,8 @@
       href: connect-dataverse-managed-lake.md
     - name: Add data sources via Power Query connectors
       href: connect-power-query.md
+    - name: Manage existing data sources
+      href: data-sources-manage.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
     - name: Incremental refresh for data sources
