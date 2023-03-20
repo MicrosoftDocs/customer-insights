@@ -18,9 +18,12 @@ searchScope:
   - customerInsights
 ---
 
+<!-- In line 39, should it be "go to **Select tables**"? The images in lines 68 and 82 are identical. Should line 82 be a different image? -->
+
+
 # Customer or business contact activities
 
-Customer activities are actions or events performed by customers or business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution.
+Customer activities are actions or events performed by customers or business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card Add-in](customer-card-add-in.md) solution.
 
 ## Prerequisites
 
@@ -41,7 +44,7 @@ Customer Insights helps you with simple steps to define all activities at once.
    - **Primary key**: The primary key uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    > [!NOTE]
-   > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
+   > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with table and primary key.":::
 
@@ -56,9 +59,10 @@ Customer Insights helps you with simple steps to define all activities at once.
    - **Event activity**: Field that is the event for this activity.
    - **Web address** (optional): Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* table, which can be consumed downstream using [APIs](apis.md).
    - **Additional detail** (optional): Field with relevant information for this activity.
-   - **Show this activity in the timeline on your customer profile**: **Yes** to show the activity in the timeline or **No** to hide it. Optionally, choose an icon to represent the activity on the timeline.
+   - **Show this activity in the timeline on your customer profile?**: **Yes** to show the activity in the timeline or **No** to hide it. Optionally, choose an icon to represent the activity on the timeline.
      > [!NOTE]
      > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
+   
    - **Map field types for your activity's attributes?**: **Yes** to help the system better understand the relevance of your activity data or **No** do not map.
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Map the activity fields.":::
@@ -67,10 +71,10 @@ Customer Insights helps you with simple steps to define all activities at once.
 
 1. Select **Next**.
 
-1. In the **Relationship** step, select **Add relationship** and enter the following information for each table. This step connects your activity data to its corresponding customer record.  
+1. In the **Relationships** step, select **Add relationship** and enter the following information for each table. This step connects your activity data to its corresponding customer record.  
 
    - **Foreign key**: Field in your activity table that will be used to establish a relationship with another table.
-   - **To table name**: Corresponding source customer table with which your activity table will be in relationship. You can only relate to source customer tables that are used in the data unification process.
+   - **To table name**: Corresponding source customer table with which your activity table will be in a relationship. You can only relate to source customer tables that are used in the data unification process.
    - **Relationship name**: If a relationship between this activity table and the selected source customer table already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
      > [!NOTE]
      > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships).
@@ -100,7 +104,7 @@ Select an activity to rename or delete the activity. To edit activities, select 
 
 1. To filter activities in the activity timeline:
 
-   - Select one or more of the activity icons to refine your results to include the selected type(s) only.
+   - Select one or more of the activity icons to refine your results to include the selected types only.
 
      :::image type="content" source="media/Activity_Timeline2.PNG" alt-text="Filter activities by type using the icons.":::
 
@@ -130,7 +134,7 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
    - **Primary key**: The primary key uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    > [!NOTE]
-   > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, Customer Insights must delete all old rows and insert all new rows causing an increase in processing time.
+   > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, Customer Insights must delete all old rows and insert all new rows, causing an increase in processing time.
 
 1. Select **Next** for the **Activity fields** step.
 
@@ -143,9 +147,10 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
    - **Event activity**: Field that is the event for this activity.
    - **Web address** (optional): Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* table, which can be consumed downstream using [APIs](apis.md).
    - **Additional detail** (optional): Field with relevant information for this activity.
-   - **Show this activity in the timeline on your customer profile**: **Yes** to show the activity in the timeline or **No** to hide it.
+   - **Show this activity in the timeline on your customer profile?**: **Yes** to show the activity in the timeline or **No** to hide it.
      > [!NOTE]
      > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
+   
    - **Map field types for your activity's attributes?**: **Yes** to help the system better understand the relevance of your activity data or **No** do not map.
 
 1. If you chose **Yes** to map your field types, select the appropriate attributes to map your data. Required fields are determined by the selected activity type.
