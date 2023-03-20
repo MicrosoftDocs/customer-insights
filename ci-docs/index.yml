@@ -16,7 +16,7 @@ metadata:
   ms.topic: hub-page # Required
   author: m-hartmann #Required; your GitHub user alias, with correct capitalization.
   ms.author: mhart #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/03/2023 #Required; mm/dd/yyyy format.
+  ms.date: 03/20/2023 #Required; mm/dd/yyyy format.
   ms.custom: bap-template
   hide_bc: true
 
@@ -25,23 +25,23 @@ highlightedContent:
 
 # Do not change the following cards. You should only need to update the URLs to provide the correct links to your product documentation.
 
+highlightedContent:
   items:
-    # Card
     - title: Get started
-      itemType: quickstart
+      itemType: get-started
       url: get-started.md
-    # Card
+
     - title: What's new
       itemType: whats-new
       url: whats-new-customer-insights.md
-    # Card
+
     - title: Training
-      itemType: learn
+      itemType: training
       url: /training/browse/?expanded=dynamics-365&products=dynamics-cust-insights
-    # Card
-    - title: Release plans
-      itemType: reference
-      url: /dynamics365/release-plans/
+
+    - title: Troubleshoot
+      itemType: concept
+      url: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
       
 additionalContent: 
   sections:
