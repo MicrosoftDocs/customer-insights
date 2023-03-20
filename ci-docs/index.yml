@@ -25,7 +25,6 @@ highlightedContent:
 
 # Do not change the following cards. You should only need to update the URLs to provide the correct links to your product documentation.
 
-highlightedContent:
   items:
     - title: Get started
       itemType: get-started
