@@ -1,9 +1,8 @@
 ---
 title: "Export diagnostic logs (preview)"
 description: "Learn how to send logs to Microsoft Azure Monitor."
-ms.date: 11/15/2022
+ms.date: 03/20/2023
 ms.reviewer: mhart
-
 ms.topic: article
 author: brndkfr
 ms.author: bkief
@@ -21,7 +20,7 @@ Customer Insights sends the following event logs:
 - **Audit Events**
   - **APIEvent** - enables change tracking via the Dynamics 365 Customer Insights UI.
 - **Operational Events**
-  - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-destinations.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that trigger the unification process, which will pull in enrichments and export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
+  - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-manage.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that trigger the unification process, which will pull in enrichments and export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
   - **APIEvent** - sends all API calls of the customers instance to Dynamics 365 Customer Insights. For more information, see the [APIEvent Schema](#api-event-schema).
 
 ## Set up the diagnostic settings
@@ -170,7 +169,7 @@ The `identity` JSON object has the following structure
 
 ### Workflow event schema
 
-The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-destinations.md) data. All those steps can run individually or orchestrated with the following processes.
+The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-manage.md) data. All those steps can run individually or orchestrated with the following processes.
 
 #### Operation types
 
@@ -192,7 +191,7 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 | Intelligence      | [Predictions](predictions-overview.md)                                          |
 | AiBuilder         | [Predictions](predictions-overview.md)                                          |
 | Insights          | [Predictions](predictions-overview.md)                                          |
-| Export            | [Exports](export-destinations.md)                                          |
+| Export            | [Exports](export-manage.md)                                          |
 | ModelManagement   | [Predictions](custom-models.md)                                           |
 | Relationship      | [Data unification](relationships.md)                                           |
 

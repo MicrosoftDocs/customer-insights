@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with data from Microsoft Office 365 (preview)"
 description: "Use proprietary data from Microsoft Office to enrich your customer profiles with engagement data."
-ms.date: 11/15/2022
+ms.date: 03/21/2023
 ms.reviewer: mhart
 
 ms.topic: how-to
@@ -19,7 +19,7 @@ We currently support the following regions: UK, Europe, North America.
 
 ## Prerequisites
 
-- An active Office 365 cloud license.
+- An active Office 365 cloud license. Content encrypted with [Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) isn't supported.
 - [Unified customer profiles](customer-profiles.md) based on [business accounts](work-with-business-accounts.md).
 - A [Microsoft Dataverse organization attached](create-environment.md#step-3-connect-to-microsoft-dataverse) in your Customer Insights environment.
 - [Administrator](permissions.md#admin) permissions.

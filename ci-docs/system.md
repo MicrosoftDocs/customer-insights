@@ -1,12 +1,12 @@
 ---
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights."
-ms.date: 11/15/2022
-
+ms.date: 03/20/2023
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
+ms.custom: bap-template
 searchScope: 
   - ci-system-status
   - ci-system-about
@@ -17,21 +17,7 @@ searchScope:
 
 # View system configuration
 
-View system information, system status, and API usage.
-
-## View API usage
-
-View details about the real-time API usage and see which events happened in a given time frame.
-
-1. Go to **Settings** > **System** and select the **API usage** tab.
-
-1. **Select a time frame** to view.
-
-   The **API usage** page contains three sections:
-
-   - **API calls** - a chart that visualizes the aggregated number of calls to the API in the selected time frame.
-   - **Data transfer** - a chart that shows the amount of data that was transferred through the API in the selected time frame.
-   - **Operations** - a table with rows for each available API operation and details about the usage of the operations. Select an operation name to go to [the API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
+View system information and system status.
 
 ## View system information
 

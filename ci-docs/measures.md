@@ -1,12 +1,12 @@
 ---
-title: "Measures overview"
-description: "Learn how measures help analyze and reflect the performance of your business."
-ms.date: 11/28/2022
-
-ms.topic: conceptual
+title: "Create and manage measures"
+description: "Create and manage measures to help analyze and reflect the performance of your business."
 author: v-wendysmith
 ms.author: wameng
 ms.reviewer: v-wendysmith
+ms.topic: how-to
+ms.date: 03/20/2023
+ms.custom: bap-template
 searchScope: 
   - ci-measures
   - ci-measure-builder
@@ -15,13 +15,13 @@ searchScope:
   - customerInsights
 ---
 
-# Measures overview
+# Create and manage measures
 
 Measures help you to better understand customer behaviors and business performance. They look at relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand an individual customer’s purchase history or measure *total sales of the company* to understand the aggregate-level revenue in the whole business. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
-Create measures to plan business activities by querying customer data and extract insights. For example, create a measure of *total spend per customer* and *total return per customer* to help identify a group of customers with high spend yet high return. Then, [create a segment](segments.md) based on these measures to drive next best actions.
+## Create measures
 
-## Create a measure
+Create measures to plan business activities by querying customer data and extract insights. For example, create a measure of *total spend per customer* and *total return per customer* to help identify a group of customers with high spend yet high return. Then, [create a segment](segments.md) based on these measures to drive next best actions.
 
 Choose how to create a measure based on your target audience.
 
@@ -70,5 +70,6 @@ The complexity of your measures can also impact performance. To help you prevent
 
 1. Delete old or no longer relevant measures even if they are static or inactive.
 1. [Schedule individual measures](measures-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
+
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

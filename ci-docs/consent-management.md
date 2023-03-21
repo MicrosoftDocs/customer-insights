@@ -1,7 +1,7 @@
 ---
 title: Use customer consent
 description: "Honor you customers' consent preferences in Customer Insights by importing consent data."
-ms.date: 11/15/2022
+ms.date: 03/20/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: m-hartmann
@@ -54,7 +54,7 @@ Referring to the sample table above, a segment could contain this rule: `Consent
 
 For more information about building segments, see [Create segments](segment-builder.md).
 
-Once the segment is created, you can use one of the many [export options](export-destinations.md) to use the segment in other applications.
+Once the segment is created, you can use one of the many [export options](export-manage.md) to use the segment in other applications.
 
 ## Ensure updated consent status
 

@@ -1,18 +1,42 @@
 ---
-title: "Suggested segments based on measures (preview)"
-description: "Let machine learning help you find new and interesting segments based on customer attributes."
-ms.date: 11/15/2022
-ms.reviewer: mhart
-
-ms.topic: how-to
+title: "Suggested segments (preview)"
+description: "Let Customer Insights help you find new and interesting segments based on customer attributes."
 author: JimsonChalissery
 ms.author: jimsonc
+ms.reviewer: v-wendysmith
+ms.service: customer-insights
+ms.date: 01/05/2023
+ms.topic: conceptual
+ms.custom: bap-template
 searchScope: 
   - ci-segment-suggestions
   - customerInsights
 ---
 
-# Suggested segments based on measures (preview)
+# Suggested segments (preview)
+
+Customer Insights can suggest segments based on activity or measures.
+
+:::image type="content" source="media/suggested-segments-tab.png" alt-text="Suggested segments tab showing segment suggestions for activity-based and attribute-based segments.":::
+
+## Suggested segments based on activity (preview)
+
+Discover interesting segments of your customers based on customer activity data that is ingested to Customer Insights. Examples of activity data are transactions, support call duration, purchases, or returns. To suggest segments, activity data gets analyzed for recency, frequency, and monetary value (or duration).
+
+### Categorize customers by activity
+
+With [activity data](activities.md) available in Customer Insights, we can generate suggestions that represent customer groups:
+
+- most active customers 
+- customers that have made the most purchases 
+- customers that generated the most revenue 
+- customers who haven’t been active lately 
+- customers who frequently interact with your business  
+
+If you have a retail business, you could find out which customers generate the most revenue and reward them with a coupon. Or you can identify occasional customers and offer them to join a rewards program so they visit your business more often.
+If you provide public healthcare and your goal is to minimize the expenses for individual patients, you could try to reduce recurring visits by providing the best possible care in as few visits as possible. In this case, your goal is to keep the visit frequency low and minimize recurring cost for the patients. Or you can identify segments of patients who have frequent appointments and high recurring costs and analyze these cases to improve the treatment of the individual.
+
+## Suggested segments based on measures (preview)
 
 Discover interesting segments of your customers with the help of an AI model. This machine learning powered feature suggests segments based on measures or customer attributes. It can help improve your Key Performance Indicators (KPIs) or better understand the influence of attributes in context of other attributes.
 
@@ -21,27 +45,27 @@ Discover interesting segments of your customers with the help of an AI model. Th
 
 :::image type="content" source="media/suggested-segments.png" alt-text="Suggested segments page that shows details of a suggestion in a side pane.":::
 
-## Suggested segments to improve your KPIs
+### Suggested segments to improve your KPIs
 
 If you use [measures created](measures.md) to help track your KPIs, create segments to view the influences on the KPI. You can use this information to run a highly targeted campaign.
 
 For example, you track a measure called *TotalSpendPerCustomer*. As a business, you’d like to see this number grow. Choosing a measure as primary attribute, select the attributes that you want to assess for influence. Let's say *membership tier*, *membership period*, and *occupation*. Customer Insights can then suggest a segment that tells you who are the biggest influence of that measure. For example, *Accountants* who are *Gold* members, and who have been with your business for *at least five years* are the biggest influencer of *TotalSpendPerCustomer*. You’ll get an estimated segment size for every suggestion. You can use this information to create campaigns for the targeted audiences.
 
-## Understand what influences a customer attribute
+### Understand what influences a customer attribute
 
 You can choose a customer attribute instead of a measure as the primary attribute. Based on your choice of influencing attributes, the AI model creates a series of suggestions that show how the selected attributes influence the primary attribute.
 
 For example, you choose *Rewards Member (Yes/No)* as the primary attribute. *Tenure*, *Occupation*, and *Number of Support Tickets* are set as other influencing attributes. The AI model could suggest segments indicating mostly IT professionals with tenure over two years are rewards members. Another suggestion could highlight that accountants with tenure over one year and fewer than three support tickets are rewards members.
 
-## Artificial intelligence usage
+### Artificial intelligence usage
 
 Using the primary attribute and influencing attributes, a decision tree algorithm suggests interesting segments. The suggestions are based on rules or patterns that were picked up by the AI algorithm. Only segments that significantly differ from the average population are shown as suggestions. The comparison to the average population is based on the selected measure or primary attribute.
 
-### Responsible AI
+#### Responsible AI
 
 With suggested segments, you select attributes to create new segments and process the data you select. When choosing attributes, including sensitive attributes like race, sexual orientation, or gender, you must ensure that you can and should process that data. You are responsible to comply with any laws applicable to your organization and adhere to your organization’s principles and privacy policies.
 
-### Different results for primary attributes with categorical and numeric values
+#### Different results for primary attributes with categorical and numeric values
 
 Segment suggestions are different if you choose a numeric attribute or a categorical attribute as the primary attribute. Values in a categorical attribute contain two or more categories or types. A numeric attribute contains quantitative data and has a sense of measurement associated with it.
 
@@ -52,38 +76,9 @@ A categorical attribute like *customer satisfaction* as the primary attribute re
 > [!NOTE]
 > Currently, we only support primary categorical attributes that have up to 10 categories. If you want to see segment suggestions based on a primary attribute with more than 10 categories, we recommend grouping some of the categories to reduce the number of categories to 10 or fewer. This limitation only applies to primary attributes. For influencing categorical attributes, we currently support a maximum of 100 categories.
 
-## Generate suggested segments
+## Next steps
 
-1. Go to **Insights** > **Segments** and select the **Suggestions (preview)** tab.
-
-1. Select **Find new suggestions** and choose **Improve a measure/metric**. Select **Start**.
-
-   :::image type="content" source="media/suggested-segments-measure.png" alt-text="Choosing improve measure on the suggested segments.":::
-
-1. Choose a customer attribute or measure as the primary attribute and select **Next**.
-
-1. Select the influencing attributes and select **Run**.
-
-   > [!TIP]
-   > Selecting multiple influencing attributes improves the chances of evaluating how they influence the primary attribute. Don't include attributes that have no influence on the primary attribute. For example, if all your customers are from a specific country, don't include the *country* attribute because it won't have any impact on the output.
-
-Depending on the number of customer profiles and selected attributes, it can take a few minutes to process the selected attributes.
-
-## Manage suggested segments
-
-Go to **Insights** > **Segments** and select the **Suggestions (preview)** tab. In the **Attribute-based segment suggestions** section, select a suggested segment to view available actions.
-
-- **View** the suggested segment details and the attribute values or rules that the AI model learned.
-- **Save as segment** the suggestion as a segment. It displays on the **All segments** tab and can be [refreshed, edited, or deleted](segments.md).
-- **Edit attributes** and modify the configured attributes which will replace the current suggestions.
-- **Refresh suggestions** to refresh the suggestions while keeping configured attributes.
-
-## Limitations
-
-1. Estimated segment size mismatch: If you choose a primary attribute that contains empty values, it can affect the estimated segment size in the segment suggestions. When saving such segment, the actual segment size can be different to the original estimation.
-
-2. Boolean type primary attributes don't work: Currently, we only support string and numeric types of data as the primary attribute.
-
-3. Suggested segments aren't distinct enough: Keep in mind that the selected attributes and the distribution of values of those attributes influences the results. You can change your influencing attributes or even your primary attribute to get different results.
+- [Generate suggested segments based on activity (preview)](suggested-segments-activity-generate.md)
+- [Generate segments based on measures](suggested-segments-generate.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

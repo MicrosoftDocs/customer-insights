@@ -1,151 +1,134 @@
-### YamlMime:Landing
+### YamlMime:Hub
+
+# This template provides the structure of a product hub page. For additional guidance and information, see the article, Create a Dynamics 365 product hub page in the Contributors guide.
+# To provide feedback on this template, contact [bace feedback team](mailto:templateswg@microsoft.com).
+
+# Remove all comments and capitalized text in this template before you sign off or merge to the main branch
+
+title:  Dynamics 365 Customer Insights # < 60 chars
+summary: Deliver personalized customer experiences with the ultimate 360-degree view of your customers. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
+brand: dynamics
 
 metadata:
-  title: Help hub for Dynamics 365 Customer Insights
-  author: m-hartmann
-  description: Find relevant articles to start with help content.
-  ms.author: mhart
-  ms.date: 02/14/2023
-  
-  ms.topic: landing-page
+  title: Dynamics 365 Customer Insights # Required; page title displayed in search results. Include the brand. For example, Dynamics 365 Commerce < 60 chars.
+  description: Deliver personalized customer experiences with the ultimate 360-degree view of your customers. # Required; product description that is displayed in search results. < 160 chars. 
+  ms.topic: hub-page # Required
+  author: m-hartmann #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mhart #Required; microsoft alias of author; optional team alias.
+  ms.date: 03/20/2023 #Required; mm/dd/yyyy format.
+  ms.custom: bap-template
+  hide_bc: true
 
-title: Dynamics 365 Customer Insights documentation
-summary: Find helpful resources to get started and learn about features and capabilities of Customer Insights.
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+# Do not change the following cards. You should only need to update the URLs to provide the correct links to your product documentation.
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  - title: Meet Customer Insights
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Customer Insights overview
-            url: overview.md
-          - text: Release plans
-            url: /dynamics365/release-plans/
-          - text: New and updated features
-            url: whats-new-customer-insights.md
-      - linkListType: learn
-        links: 
-          - text: Customer Insights learning path
-            url: /training/paths/build-customer-insights/
+  items:
+    - title: Get started
+      itemType: get-started
+      url: get-started.md
 
-  - title: Get started with Customer Insights
-    linkLists:
-      - linkListType: get-started
-        links: 
-          - text: Sign up for a trial
-            url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-          - text: Start with the trial
-            url: trial-signup.md
-          - text: Get started with Customer Insights
-            url: get-started.md
-      - linkListType: learn
-        links: 
-          - text: Get started
-            url: /training/modules/get-started-customer-data-platform/
+    - title: What's new
+      itemType: whats-new
+      url: whats-new-customer-insights.md
 
-  - title: Ingest data
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Data sources overview
-            url: data-sources.md
-          - text: Upload a single CSV file
-            url: data-sources-single.md 
-          - text: Connect using Power Query  
-            url: connect-power-query.md
-          - text: Connect to Azure Data Lake Storage
-            url: connect-common-data-model.md
-      - linkListType: learn
-        links: 
-          - text: Ingest data into Customer Insights
-            url:  /training/modules/ingest-data-customer-insights/  
-            
-  - title: Unify data
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Unification overview
-            url: data-unification.md
-          - text: Understand tables
-            url: tables.md
-          - text: Review unified profiles
-            url: customer-profiles.md
-      - linkListType: learn
-        links: 
-          - text: Create a unified profile
-            url:  /training/modules/unified-customer-profile/
+    - title: Training
+      itemType: training
+      url: /training/browse/?expanded=dynamics-365&products=dynamics-cust-insights
 
-  - title: Get insights
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Create segments
-            url: segments.md
-          - text: Create measures
-            url: measures.md
-          - text: Predict data
-            url: predictions-overview.md
-      - linkListType: learn
-        links: 
-          - text: Work with the app
-            url:  /training/modules/working-with-customer-insights/
-
-  - title: Build on your data
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Enrich customer profiles
-            url: enrichment-hub.md
-          - text: Configure relationships
-            url: relationships.md
-          - text: Define customer activities
-            url: activities.md
-      - linkListType: learn
-        links: 
-          - text: Enrich and predict data
-            url:  /training/modules/enrich-data/           
-
-  - title: Export data
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Set up export destinations
-            url: export-destinations.md
-          - text: Customer cards in Dynamics 365 apps 
-            url: customer-card-add-in.md
-          - text: Power BI connector
-            url: export-power-bi.md
-      - linkListType: learn
-        links: 
-          - text: Manage external connections
-            url:  /training/modules/configure-third-party-connections/
-  
-  - title: Administer Customer Insights
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Configure the system
-            url: system.md
-          - text: Define user permissions 
-            url: permissions.md
-          - text: Manage multiple environments
-            url: manage-environments.md
-      - linkListType: learn
-        links: 
-          - text: Administer Customer Insights
-            url: /training/modules/administer-customer-data-platform/       
-  
-  - title: Get in touch
-    linkLists:
-      - linkListType: overview
-        links: 
-          - text: Join the Dynamics 365 community
-            url: https://go.microsoft.com/fwlink/?linkid=2073991
-          - text: Share your ideas
-            url: https://go.microsoft.com/fwlink/?linkid=2074172
-          - text: Report an issue
-            url: https://go.microsoft.com/fwlink/?linkid=2079641
+    - title: Troubleshoot
+      itemType: concept
+      url: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
+      
+additionalContent: 
+  sections:
+  - title: Administer
+    items:
+    - title: Try or buy
+      links:
+      - url: trial-signup.md
+        text: Sign up for a free trial
+      - url: paid-license.md
+        text: Buy a license
+      - url: https://home.ci.ai.dynamics.com/
+        text: Access your environment
+    - title: Set up
+      links:
+      - url: create-environment.md
+        text: Create a new environment
+      - url: permissions.md
+        text: Assign users
+      - url: home.md
+        text: Explore Customer Insights
+    - title: Administer
+      links:
+      - url: security-overview.md
+        text: Security overview
+      - url: manage-environments.md
+        text: Manage environments
+      - url: connections.md
+        text: Manage connections
+  - title: Import and unify data
+    items:
+    - title: Add data
+      links:
+      - url: data-sources.md
+        text: Data sources overview
+      - url: connect-common-data-model.md
+        text: Connect to Azure Data Lake Storage
+      - url: connect-power-query.md
+        text: Connect to a Power Query data source
+    - title: Unify data
+      links: 
+      - url: data-unification.md
+        text: Data unification overview
+      - url: entities.md
+        text: Review data tables
+      - url: customer-profiles.md
+        text: Review unified profiles
+    - title: Build on your data
+      links:
+      - url: enrichment-hub.md
+        text: Data enrichment overview
+      - url: relationships.md
+        text: Build relationships between tables
+      - url: activities.md
+        text: Define activities
+  - title: Use the unified data
+    items:
+    - title: Get insights
+      links:
+      - url: segments.md
+        text: Create segments
+      - url: measures.md
+        text: Create measures
+      - url: predictions-overview.md
+        text: Predict data
+    - title: Export data
+      links:
+      - url: export-destinations.md
+        text: Exports overview
+      - url: export-power-bi.md
+        text: Connect to Power BI
+      - url: customer-card-add-in.md
+        text: Set up customer cards in Dynamics 365 apps
+    - title: View customers
+      links:
+      - url: customer-profiles.md
+        text: View customer profiles
+      - url: consent-management.md
+        text: Use customer consent
+      - url: manage-unknown-profiles.md
+        text: Manage unknown users
+  - title: Related products
+    items:
+        # Card
+        
+        - title: Dynamics 365 Marketing
+          summary: Orchestrate personalized journeys across all touchpoints to strengthen relationships and earn loyalty
+          url: /dynamics365/marketing
+        - title: Microsoft Dataverse
+          summary: Securely store and manage data that's used by business applications
+          url: /power-apps/maker/data-platform

@@ -1,9 +1,8 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 01/06/2023
+ms.date: 03/20/2023
 ms.reviewer: v-wendysmith
-
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -16,7 +15,7 @@ searchScope:
 
 # Connect to a Power Query data source
 
-Power Query offers a broad set of connectors to ingest data. Most of these connectors are supported by Dynamics 365 Customer Insights. Adding data sources based on Power Query connectors generally follows the steps outlined in this section. However, depending on the connector you use, different information is required. To learn more, see the documentation about individual connectors in the [Power Query connector reference](/power-query/connectors/).
+Power Query offers a broad set of connectors to ingest data, most of which are supported by Dynamics 365 Customer Insights. In the [Power Query connector reference](/power-query/connectors/), connectors with a checkmark in the **Customer Insights (Dataflows)** column you can use to import data to Customer Insights. Review the documentation of a specific connector to learn more about its prerequisites, [query limitations](/power-query/power-query-online-limits), and other details.
 
 To securely connect data in a private network, Power Query supports the use of [virtual network data gateways (preview)](/data-integration/vnet/data-gateway-power-platform-dataflows).
 
@@ -24,15 +23,11 @@ To securely connect data in a private network, Power Query supports the use of [
 
 ## Create a new data source
 
-1. Go to **Data** > **Data sources**.
-
-1. Select **Add data source**.
-
-1. Select **Microsoft Power Query**.
+1. Go to **Data** > **Data sources** and select **Add data source**. Then, select **Microsoft Power Query**.
 
 1. Provide a **Name** and an optional **Description** for the data source, and select **Next**.
 
-1. Choose one of the [available connectors](#available-power-query-data-sources). In this example, we select the **Text/CSV** connector.
+1. Choose one of the [available connectors](/power-query/connectors/). In this example, we select the **Text/CSV** connector.
 
 1. Enter the required details in the **Connection settings** for the selected connector and select **Next** to see a preview of the data.
 
@@ -63,12 +58,6 @@ Loading data can take time. After a successful refresh, the ingested data can be
 > - A data source based on Power Query creates a [dataflow in Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Don't change the name of a dataflow in the Power Platform admin center that is used in Customer Insights. Renaming a dataflow causes issues with the references between the Customer Insights data source and the Dataverse dataflow.
 > - Concurrent evaluations for Power Query data sources in Customer Insights have the same [refresh limits like Dataflows in PowerBI.com](/power-query/power-query-online-limits#refresh-limits). If a data refresh fails because it reached the evaluation limit, we recommend you adjust the refresh schedule for each dataflow to ensure the data sources aren't processed at the same time.
 
-### Available Power Query data sources
-
-See the [Power Query connector reference](/power-query/connectors/) for a list of connectors that you can use to import data to Customer Insights.
-
-Connectors with a checkmark in the **Customer Insights (Dataflows)** column are available to create new data sources based on Power Query. Review the documentation of a specific connector to learn more about its prerequisites, [query limitations](/power-query/power-query-online-limits), and other details.
-
 ## Add data from on-premises data sources
 
 Ingesting data from on-premises data sources is supported based on Microsoft Power Platform dataflows (PPDFs). You can enable dataflows in Customer Insights by [providing the Microsoft Dataverse environment URL](create-environment.md) when setting up the environment.
@@ -89,40 +78,13 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 >
 > In the **Settings** page, you can track the progress of each of the active processes. When a process completes, you can return to the **Data Sources** page and make your changes.
 
-1. Go to **Data** > **Data sources**.
-
-1. Next to the data source you'd like to update, select **Edit**.
+1. Go to **Data** > **Data sources**. Next to the data source you'd like to update, select **Edit**.
 
 1. Apply your changes and transformations in the **Power Query - Edit queries** dialog as described in the [Create a new data source](#create-a-new-data-source) section.
 
 1. Select **Save** to apply your changes and return to the **Data sources** page.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-
-## Common reasons for ingestion errors or corrupt data
-
-### Data type does not match data
-
-The most common data type mismatch occurs when a date field is not set to the correct date format.
-
-The data can be fixed at the source and re-ingested. Or fix the transformation within Customer Insights. To fix the transformation:
-
-1. Go to **Data** > **Data sources**.
-
-1. Next to the data source with the corrupted data, select **Edit**.
-
-1. Select **Next**.
-
-1. Select each of the queries and look for transformations applied inside "Applied Steps" that are incorrect, or date columns that have not been transformed with a date format.
-
-   :::image type="content" source="media/PQ_corruped_date.png" alt-text="Power Query - Edit showing incorrect date format":::
-
-1. Change the data type to correctly match the data.
-
-1. Select **Save**. That data source is refreshed.
-
-> [!TIP]
-> For troubleshooting information, go to [Microsoft Dynamics 365 Customer Insights troubleshooting](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights).
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

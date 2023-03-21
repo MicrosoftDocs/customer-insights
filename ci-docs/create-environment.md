@@ -1,7 +1,7 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 02/27/2023
+ms.date: 03/20/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: mukeshpo
@@ -84,7 +84,7 @@ Review the following articles to help you get started with configuring Customer 
 - [Ingest several of your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
 - [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).
 - [Create segments](segments.md) to group customers and [measures](measures.md) to review KPIs.
-- [Set up connections](connections.md) and [exports](export-destinations.md) to process subsets of your data in other applications.
+- [Set up connections](connections.md) and [exports](export-manage.md) to process subsets of your data in other applications.
 
 ## Copy the environment configuration
 

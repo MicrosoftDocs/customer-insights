@@ -1,11 +1,12 @@
 ---
 title: "Connect to data in a Microsoft Dataverse managed data lake"
 description: "Import data from a Microsoft Dataverse managed data lake."
-ms.date: 01/03/2023
+ms.date: 03/20/2023
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 searchScope: 
   - ci-dataverse
   - customerInsights
@@ -27,11 +28,7 @@ Only one data source of an environment can simultaneously use the same Dataverse
 
 ## Connect to a Dataverse managed lake
 
-1. Go to **Data** > **Data sources**.
-
-1. Select **Add data source**.
-
-1. Select **Microsoft Dataverse**.
+1. Go to **Data** > **Data sources** and select **Add data source**. Then, select **Microsoft Dataverse**.
 
 1. Enter a **Name** for the data source and an optional **Description**.
 
@@ -55,9 +52,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 You only edit the table selection after creating the data source. For example, if additional tables were added to Dataverse and you want to import them too.
 To connect to a different Dataverse data lake, [create a new data source](#connect-to-a-dataverse-managed-lake).
 
-1. Go to **Data** > **Data sources**.
-
-1. Next to the data source you'd like to update, select **Edit**.
+1. Go to **Data** > **Data sources**. Next to the data source you'd like to update, select **Edit**.
 
 1. Select additional tables from the available list of tables.
 

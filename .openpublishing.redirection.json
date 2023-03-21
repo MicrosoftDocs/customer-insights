@@ -1585,6 +1585,11 @@
       "source_path": "ci-docs/entity-schemas.md",
       "redirect_url": "/dynamics365/customer-insights/tables-schema",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/suggested-segments-activity.md",
+      "redirect_url": "/dynamics365/customer-insights/suggested-segments-activity-generate",
+      "redirect_document_id": false
     }
   ]
 }

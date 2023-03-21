@@ -1,11 +1,12 @@
 ---
-title: "Connect to a Common Data Model folder using an Azure Data Lake account"
+title: "Connect to data in Azure Data Lake Storage"
 description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 03/02/2023
+ms.date: 03/20/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 searchScope: 
   - ci-data-sources
   - ci-create-data-source
@@ -27,7 +28,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 - The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights environment and the subscriptions must be in the same tenant. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Settings** > **System** > **About** in Customer Insights.
 
-- Data stored in online services may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+- Data stored in online services may be stored in a different location than where data is processed or stored in Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 - The Customer Insights service principal must be in one of the following roles to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
   - Storage Blob Data Reader
@@ -47,11 +48,7 @@ For optimal performance, Customer Insights recommends the size of a partition be
 
 ## Connect to Azure Data Lake Storage
 
-1. Go to **Data** > **Data sources**.
-
-1. Select **Add data source**.
-
-1. Select **Azure data lake storage**.
+1. Go to **Data** > **Data sources** and select **Add data source**. Then, select **Azure data lake storage**.
 
    :::image type="content" source="media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake." lightbox="media/data_sources_ADLS.png":::
 
@@ -59,8 +56,8 @@ For optimal performance, Customer Insights recommends the size of a partition be
 
 1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
+   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
   
    > [!NOTE]
    > You need one of the following roles either to the container or the storage account to create the data source:
@@ -111,9 +108,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 ### Create a new schema file
 
-1. Select **New schema file**.
-
-1. Enter a name for the file and select **Save**.
+1. Select **New schema file**. Enter a name for the file and select **Save**.
 
 1. Select **New table**. The **New Table** panel displays.
 
@@ -163,9 +158,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 You can update the *Connect to storage account using* option. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
 
-1. Go to **Data** > **Data sources**.
-
-1. Next to the data source you'd like to update, select  **Edit**.
+1. Go to **Data** > **Data sources**. Next to the data source you'd like to update, select  **Edit**.
 
    :::image type="content" source="media/data_sources_edit_ADLS.png" alt-text="Dialog box to edit Azure Data Lake data source.":::
 
@@ -179,7 +172,7 @@ You can update the *Connect to storage account using* option. For more informati
         > - Storage Blob Data Owner
         > - Storage Blob Data Contributor
 
-   - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [Private Links](security-overview.md#set-up-an-azure-private-link).
+   - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [Private Links](private-link.md).
 
 1. Select **Next**.
 1. Change any of the following:
