@@ -30,12 +30,12 @@ Access to a customer profile in Customer Insights is governed by which business 
 Note that the *Marketing contributor* role has access to only Segments (only *build your own*) and Measures (only *build your own*) in the Customer Insights user interface. Click [here](https://learn.microsoft.com/en-us/dynamics365/customer-insights/permissions) for more information about user roles in Customer Insights.
 
 > [!NOTE]
-   > * The **administrator** and **contributor** roles are highly privledged and **should only be given to users that belong to the *Org/Root* business unit**. These users are typically responsible for preparing the data estate, i.e., setting up data sources, business unit data separation rules, unification rules, enrichments, intelligence models etc.
+   > * The **administrator** and **contributor** roles are highly privledged and **should only be given to users that belong to the *Org/Root* business unit**. They have access to all data, segments, measures, etc. regardless of business unit ownership and all functionality of Customer Insights. These users are typically responsible for preparing the data estate, i.e., setting up data sources, business unit data separation rules, unification rules, enrichments, intelligence models etc.
 
 Ownership of the customer profiles is determined based on mappings that are configured in the Unify step:
 
 1. Go to **Data** > **Unify** > **Business units**
-2. Under **Business unit data separation**, select the column that identifies the business unit for each entity that contributes to unification. Note that additional unification rules cannot be added on these columns.
+2. Under **Business unit data separation**, select the column that identifies the business unit for each entity that contributes to unification. Note that additional unification rules cannot be added on the selected columns.
 3. Under **Associate customer profiles with business units**, specify the mapping between the values in the columns that were selected above and business unit teams. For example, 'A' maps to the business unit A team, 'B' maps to the business unit B team, etc. 
 
 ![Screenshot of business unit mappings](media/BU_mappings.png)
@@ -45,11 +45,11 @@ Customer profiles are owned by teams within business units (as opposed to being 
 
 * Profiles will only be de-duplicated and unified if the business unit values match. 
 * Profiles that do not match any of the mappings are assigned to the *Org* business unit.
-* All profiles are assigned to the *Org* BU if BU data separation is not enabled.
+* All profiles are assigned to the *Org* business unit if business unit data separation is not enabled.
 * A profile belongs to exactly one business unit.
 * The unification rules and customer profile schema are the same for all business units.
 
- > [!NOTE]
+ > [!TIP]
    > * Any changes to the BU data separation configuration will trigger a full refresh. If your instance is in incremental mode, then a full refresh needs to be triggered manually after changes have been made.
    
 Data that are tied to a customer profile, e.g., activities, customer measures, intelligence output, and enrichments inherit the business unit ownership from the associated profile. 
