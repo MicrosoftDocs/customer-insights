@@ -18,9 +18,6 @@ searchScope:
   - customerInsights
 ---
 
-<!-- In line 39, should it be "go to **Select tables**"? The images in lines 68 and 82 are identical. Should line 82 be a different image? -->
-
-
 # Customer or business contact activities
 
 Customer activities are actions or events performed by customers or business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card Add-in](customer-card-add-in.md) solution.
@@ -36,7 +33,7 @@ Customer Insights helps you with simple steps to define all activities at once.
 
 1. Go to **Data** > **Activities**. Select **Configure activities**.
 
-1. In the **Activity tables** step, **Select tables** and choose the tables that have activity data. Select **Add**.
+1. In the **Activity tables** step, select **Select tables** and choose the tables that have activity data. Select **Add**.
 
 1. For each table, choose the following information:
 
@@ -78,8 +75,6 @@ Customer Insights helps you with simple steps to define all activities at once.
    - **Relationship name**: If a relationship between this activity table and the selected source customer table already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
      > [!NOTE]
      > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships).
-
-   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Define the entity relationship.":::
 
    > [!TIP]
    > In B-to-B environments, you can select between account tables and other tables. If you select an account table, the relationship path is automatically set. For other tables, you have to define the relationship path over one or more intermediate tables until you reach an account table.
