@@ -37,7 +37,7 @@ Customer Insights can help you build a deeper understanding of your customers. C
 
 ## Step 3: Unify the data and set up relationships
 
-Run the data unification process to combine unified profiles. Unified profiles are the foundation to get insights and take action on the data. Specify relationships between the ingested entities and use enrichment features to add information to the profiles.
+Run the data unification process to combine unified profiles. Unified profiles are the foundation to get insights and take action on the data. Specify relationships between the ingested tables and use enrichment features to add information to the profiles.
 
 1. Run the [data unification process](data-unification.md) by identifying the [source fields](data-unification-map-tables.md), removing [duplicates](data-unification-duplicates.md), [matching conditions](data-unification-match-tables.md), and [unifying fields](data-unification-merge-tables.md).
 

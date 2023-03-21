@@ -84,7 +84,7 @@ additionalContent:
       links: 
       - url: data-unification.md
         text: Data unification overview
-      - url: entities.md
+      - url: tables.md
         text: Review data tables
       - url: customer-profiles.md
         text: Review unified profiles

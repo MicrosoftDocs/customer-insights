@@ -40,7 +40,7 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 - Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the tables such as table columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
   > [!NOTE]
-  > If any of the fields in the .parquet files have data type Int96, the data may not display on the **Entities** page. Customer Insights recommends using standard data types, such as the Unix timestamp format (which represents time as the number of seconds since January 1, 1970, at midnight UTC).
+  > If any of the fields in the .parquet files have data type Int96, the data may not display on the **Tables** page. Customer Insights recommends using standard data types, such as the Unix timestamp format (which represents time as the number of seconds since January 1, 1970, at midnight UTC).
 
 ## Recommendations
 

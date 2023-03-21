@@ -39,7 +39,7 @@ If the data doesn't conform to the schema, the ingestion process completes with 
 
 ## Datetime fields in the wrong format
 
-The datetime fields in the entity aren't in ISO 8601 or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in an entity should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or entity level in the model or manifest.json. For example:
+The datetime fields in the table aren't in ISO 8601 or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in an table should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or table level in the model or manifest.json. For example:
 
 **Model.json**
 
@@ -56,9 +56,9 @@ The datetime fields in the entity aren't in ISO 8601 or en-US formats. The defau
       ]   
    ```
 
-  In a manifest.json, the datetime format can be specified at the entity level or at the attribute level. At the entity level, use "exhibitsTraits" in the entity in the *.manifest.cdm.json to define the datetime format. At the attribute level, use "appliedTraits" in the attribute in the entityname.cdm.json.
+  In a manifest.json, the datetime format can be specified at the table level or at the attribute level. At the table level, use "exhibitsTraits" in the table in the *.manifest.cdm.json to define the datetime format. At the attribute level, use "appliedTraits" in the attribute in the tablename.cdm.json.
 
-**Manifest.json at the entity level**
+**Manifest.json at the table level**
 
 ```json
 "exhibitsTraits": [
@@ -83,7 +83,7 @@ The datetime fields in the entity aren't in ISO 8601 or en-US formats. The defau
 ]
 ```
 
-**Entity.json at the attribute level**
+**table.json at the attribute level**
 
 ```json
    {

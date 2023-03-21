@@ -17,7 +17,7 @@ The following image illustrates the various aspects of the segment builder. It s
 
 1. Organize your segment with rules and subrules. Each rule or subrule consists of conditions. Combine the conditions with logical operators.
 
-1. Choose the [relationship path](relationships.md) between entities that applies to a rule. The relationship path determines which attributes can be used in a condition.
+1. Choose the [relationship path](relationships.md) between tables that applies to a rule. The relationship path determines which attributes can be used in a condition.
 
 1. Manage rules and subrules. Change the position of a rule or delete it.
 
@@ -25,7 +25,7 @@ The following image illustrates the various aspects of the segment builder. It s
 
 1. Apply set operations to connected rules.
 
-1. Use the attribute pane to add available entity attributes or create conditions based on attributes. The pane shows the list of entities and attributes, based on the selected relationship path, that are available for the selected rule.
+1. Use the attribute pane to add available table attributes or create conditions based on attributes. The pane shows the list of tables and attributes, based on the selected relationship path, that are available for the selected rule.
 
 1. Add conditions based on attributes to existing rules and subrules or add it to a new rule.
 
@@ -37,7 +37,7 @@ The example above illustrates the segmentation capability. We've defined a segme
 
 When creating a segment using the segment builder, keep in mind the following tips:
 
-- The segment builder won't suggest valid values from entities when setting the operators for the conditions. You can go to **Data** > **Entities** and download the entity data to see which values are available.
+- The segment builder won't suggest valid values from tables when setting the operators for the conditions. You can go to **Data** > **Tables** and download the table data to see which values are available.
 - Conditions based on dates let you switch between fixed dates and a floating date range.
 - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
 - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
