@@ -39,7 +39,7 @@ If the data doesn't conform to the schema, the ingestion process completes with 
 
 ## Datetime fields in the wrong format
 
-The datetime fields in the table aren't in ISO 8601 or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in an table should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or table level in the model or manifest.json. For example:
+The datetime fields in the table aren't in ISO 8601 or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in a table should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or table level in the model or manifest.json. For example:
 
 **Model.json**
 
@@ -127,7 +127,7 @@ The data can be fixed at the source and re-ingested. Or fix the transformation w
 
 1. Select **Next**.
 
-1. Select each of the queries and look for transformations applied inside "Applied Steps" that are incorrect, or date columns that have not been transformed with a date format.
+1. Select each of the queries and look for transformations applied inside "Applied Steps" that's incorrect, or date columns that haven't been transformed with a date format.
 
    :::image type="content" source="media/PQ_corruped_date.png" alt-text="Power Query - Edit showing incorrect date format":::
 
