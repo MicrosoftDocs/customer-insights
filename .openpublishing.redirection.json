@@ -1555,6 +1555,11 @@
       "source_path": "ci-docs/manage-predictions.md",
       "redirect_url": "/dynamics365/customer-insights/predictions-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/suggested-segments-activity.md",
+      "redirect_url": "/dynamics365/customer-insights/suggested-segments-activity-generate",
+      "redirect_document_id": false
     }
   ]
 }

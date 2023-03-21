@@ -3,10 +3,9 @@ title: "Sign up for a free Dynamics 365 Customer Insights trial"
 description: "Learn how to quickly sign up for and start a free Customer Insights trial. Explore the app and find additional learning resources."
 author: m-hartmann
 ms.author: mhart
-ms.date: 04/12/2022
+ms.date: 03/20/2023
 ms.topic: get-started
-
-ms.custom: template-trial-setup 
+ms.custom: bap-template 
 ms.reviewer: jeffhar
 ---
 
@@ -31,7 +30,7 @@ Your trial environment includes the same features as the paid version. The links
 - [Ingest your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
 - [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).
 - Create [segments](segments.md) to group customers and [measures](measures.md) to review KPIs.
-- Set up [connections](connections.md) and [exports](export-destinations.md) to process subsets of your data in other applications.
+- Set up [connections](connections.md) and [exports](export-manage.md) to process subsets of your data in other applications.
 
 ## Additional resources
 

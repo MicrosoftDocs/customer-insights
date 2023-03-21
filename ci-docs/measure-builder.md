@@ -1,12 +1,12 @@
 ---
 title: "Create measures with measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 11/28/2022
-
-ms.topic: conceptual
+ms.date: 03/20/2023
+ms.topic: how-to
 author: v-wendysmith
 ms.author: wameng
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 searchScope: 
   - ci-measure-builder
   - customerInsights
