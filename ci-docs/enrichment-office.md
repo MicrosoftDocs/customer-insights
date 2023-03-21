@@ -19,7 +19,7 @@ We currently support the following regions: UK, Europe, North America.
 
 ## Prerequisites
 
-- An active Office 365 cloud license (customer key instances are not supported).
+- An active Office 365 cloud license. Content encrypted with [Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) isn't supported.
 - [Unified customer profiles](customer-profiles.md) based on [business accounts](work-with-business-accounts.md).
 - A [Microsoft Dataverse organization attached](create-environment.md#step-3-connect-to-microsoft-dataverse) in your Customer Insights environment.
 - [Administrator](permissions.md#admin) permissions.
