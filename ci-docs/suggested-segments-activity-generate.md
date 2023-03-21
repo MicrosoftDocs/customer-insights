@@ -1,35 +1,17 @@
 ---
-title: "Suggested segments based on activity (preview)"
-description: "Let machine learning help you find new and interesting segments based on customer activity."
-ms.date: 05/11/2021
-ms.reviewer: mhart
-
-ms.topic: how-to
+title: Generate and manage suggested segments based on activity (preview)
+description: Generate suggested segments based on customer activity data 
 author: JimsonChalissery
 ms.author: jimsonc
-searchScope: 
-  - ci-segment-suggestions
-  - customerInsights
+ms.reviewer: v-wendysmith
+ms.topic: how-to
+ms.date: 03/20/2023
+ms.custom: bap-template
 ---
 
-# Suggested segments based on activity (preview)
+# Generate and manage suggested segments based on activity (preview)
 
-Discover interesting segments of your customers based on customer activity data that is ingested to Customer Insights. Examples of activity data are transactions, support call duration, purchases, or returns. To suggest segments, activity data gets analyzed for recency, frequency, and monetary value (or duration). Alternatively, you can generate [suggested segments to improve a measure or better understand what influences an attribute](suggested-segments.md).
-
-:::image type="content" source="media/suggested-segments-tab.png" alt-text="Suggested segments tab showing segment suggestions for activity-based and attribute-based segments.":::
-
-## Categorize customers by activity
-
-With [activity data](activities.md) available in Customer Insights, we can generate suggestions that represent customer groups:
-
-- most active customers 
-- customers that have made the most purchases 
-- customers that generated the most revenue 
-- customers who haven’t been active lately 
-- customers who frequently interact with your business  
-
-If you have a retail business, you could find out which customers generate the most revenue and reward them with a coupon. Or you can identify occasional customers and offer them to join a rewards program so they visit your business more often.
-If you provide public healthcare and your goal is to minimize the expenses for individual patients, you could try to reduce recurring visits by providing the best possible care in as few visits as possible. In this case, your goal is to keep the visit frequency low and minimize recurring cost for the patients. Or you can identify segments of patients who have frequent appointments and high recurring costs and analyze these cases to improve the treatment of the individual.
+Find suggested segments based on activity. For more information, see [Suggested segments based on activity](suggested-segments.md).
 
 ## Required data
 
@@ -45,7 +27,7 @@ Suggestions are generated based on the selected input data.
 
 - Dimensions to include: Recency, frequency, or monetary dimension, depending on your business requirements.
 
-## Generate suggested segments
+## Generate suggested segments based on activity
 
 1. Go to **Segments** and select the **Suggestions (preview)** tab.
 
@@ -65,7 +47,7 @@ Depending on the number of customer profiles and selected activities, it can tak
 
 After generating the suggestions, you can filter them by the dimension or value you're most interested in.
 
-## Manage suggested segments
+## Manage suggested segments based on activity
 
 Go to **Segments** and select the **Suggestions (preview)** tab. In the **Activity-based suggestions** section, select a suggested segment to view available actions.
 
