@@ -117,12 +117,6 @@ When connecting to a Dataverse environment, the error message **This CDS organiz
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select the environment from the environment picker.
 1. Go to **Solutions**.
-1. Uninstall or delete the solution named **Dynamics 365 Customer Insights Customer Card Add-in (Preview)**.
-
-OR
-
-1. Open your Dataverse environment.
-1. Go to **Advanced Settings** > **Solutions**.
 1. Uninstall the following Customer Insights solutions:
    - Dynamics 365 Customer Insights Base (*msdyn_CustomerInsightsAnchor*)
    - Dynamics 365 Customer Insights Data Tables (*msdyn_CustomerInsightsDataTables*)
