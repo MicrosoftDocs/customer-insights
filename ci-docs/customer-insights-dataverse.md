@@ -123,7 +123,12 @@ OR
 
 1. Open your Dataverse environment.
 1. Go to **Advanced Settings** > **Solutions**.
-1. Uninstall the **CustomerInsightsCustomerCard** solution.
+1. Uninstall the following Customer Insights solutions:
+   - Dynamics 365 Customer Insights Base (*msdyn_CustomerInsightsAnchor*)
+   - Dynamics 365 Customer Insights Data Tables (*msdyn_CustomerInsightsDataTables*)
+   - Dynamics 365 Customer Insights (*msdyn_CustomerInsights*)
+   - Dynamics 365 Customer Insights Customer Card (*CustomerInsightsCustomerCard*)
+   - Dynamics 365 Customer Insights Prod First Party App User Management (*msdyn_CustomerInsightsAppUserManagementProd*)
 
 If the removal of the connection fails due to dependencies, you need to remove the dependencies too. For more information, see [Removing dependencies](/power-platform/alm/removing-dependencies).
 
