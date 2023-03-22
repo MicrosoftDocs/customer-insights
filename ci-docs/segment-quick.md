@@ -20,12 +20,12 @@ Quick segments let you build simple segments with a single operator quickly for 
 
 ## Create a new segment with quick segments
 
-1. Go to **Segments**.
+1. Go to **Insights** > **Segments**.
 
 1. Select **New** > **Create from**.
-   - Select the **Profiles** option to build a segment that is based on the *unified customer* entity.
+   - Select the **Profiles** option to build a segment that is based on the *unified customer* table.
    - Select the **Measures** option to build a segment around measures you have previously created.
-   - Select the **Intelligence** option to build a segment around one of the output entities you generated using either the **Predictions** or **Custom Models** capabilities.
+   - Select the **Insights** option to build a segment around one of the output tables you generated using either the **Predictions** or **Custom Models** capabilities.
 
 1. In the **New quick segment** dialog box, select an attribute from the **Field** dropdown. Based on your selection, the system provides different values.
    - For categorical fields, the 10 top customer counts display. Choose a **Value** and select **Review**.
@@ -35,7 +35,7 @@ Quick segments let you build simple segments with a single operator quickly for 
 
    :::image type="content" source="media/quick-segment-name.png" alt-text="Name and estimation for a quick segment.":::
 
-1. Provide a **Name** and **Output entity name** for your segment. Optionally, add [tags](work-with-tags-columns.md#manage-tags).
+1. Provide a **Name** and **Output table name** for your segment. Optionally, add [tags](work-with-tags-columns.md#manage-tags).
 
 1. Select **Save** to create your segment. The **Segments** page displays.
 

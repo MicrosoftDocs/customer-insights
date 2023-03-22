@@ -46,7 +46,7 @@ If your environment was configured to use Customer Insights storage and you use 
 - **Managed by others**: Power Platform dataflows created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.
 
 > [!NOTE]
-> All entities can be viewed and used by other users. While data sources are owned by the user who created them, the resulting entities from the data ingestion can be used by every user of Customer Insights.
+> All tables can be viewed and used by other users. While data sources are owned by the user who created them, the resulting tables from the data ingestion can be used by every user of Customer Insights.
 
 If your environment does not use Power Platform dataflows, the **Data Sources** page contains only a list of all data sources. No sections display.
 

@@ -115,7 +115,7 @@ Select an activity to rename or delete the activity. To edit activities, select 
 For business accounts (B-to-B), use a *ContactProfile* table to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
 
    > [!NOTE]
-   > To define contact-level activities, a *ContactProfile* table must be created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping).
+   > To define contact-level activities, a *ContactProfile* table must be created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-table-mapping).
    >
    > You must have both **AccountID** and **ContactID** attributes for each record within your activity data.
   
@@ -153,6 +153,7 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
 1. Select **Next**.
 
 1. In the **Relationship** step, select **Add relationship** and create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary table. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
+
    - Example relationship for an activity called *Purchases*:
       - **Purchases Source Activity Data** > **Contact Data** on the attribute **ContactID**
       - **Contact Data** > **Account Data** on the attribute **AccountID**

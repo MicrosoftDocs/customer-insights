@@ -44,7 +44,7 @@ Segment of accounts or segment of contacts (preview) with segment builder: [Buil
 
 ## Manage existing segments
 
-Go to the **Segments** page to view the segments you created, their status and state, the last time the data was refreshed, and their refresh schedule. You can sort the list of segments by any column or use the search box to find the segment you want to manage. In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
+Go to the **Insights** > **Segments** page to view the segments you created, their status and state, the last time the data was refreshed, and their refresh schedule. You can sort the list of segments by any column or use the search box to find the segment you want to manage. In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
 
 Select next to a segment to view available actions.
 
@@ -89,15 +89,15 @@ The upper part of the page includes a trend graph that visualizes changes in mem
 The lower part contains a list of the segment members.
 
 > [!NOTE]
-> Fields that appear in this list are based on the attributes of your segment's entities.
+> Fields that appear in this list are based on the attributes of your segment's tables.
 >
-> The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Entities**](entities.md) page or [export the segment](export-manage.md).
+> The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Tables**](tables.md) page or [export the segment](export-destinations.md).
 
 ## Export segments
 
 Export segments to other apps to further use the data. Export a segment from the segments page or the [exports page](export-manage.md).
 
-1. Go to the **Segments** page and select the segment you want to export.
+1. Go to the **Insights** > **Segments** page and select the segment you want to export.
 
 1. Select **Manage exports**. The page **Exports (preview) for segment** opens. View all configured exports grouped by whether they contain the current segment or not.
 

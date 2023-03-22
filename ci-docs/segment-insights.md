@@ -22,7 +22,7 @@ Segment differentiators help you find out what differentiates a segment from the
 
 ### Run a differentiator analysis
 
-1. Go to **Segments** and select the **Insights (preview)** tab.
+1. Go to **Insights** > **Segments** and select the **Insights (preview)** tab.
 
 1. Select **New** and choose the **Differentiators** option in the **Choose Insight Type** pane.
 
@@ -38,7 +38,7 @@ Segment differentiators help you find out what differentiates a segment from the
 
 ### View and optimize a differentiators analysis
 
-1. After completing the analysis, go to **Segments** > **Insights (preview)**.
+1. After completing the analysis, go to **Insights** > **Segments** > **Insights (preview)**.
 
    :::image type="content" source="media/segment-differentiators.png" alt-text="Segment differentiator insight details.":::
 
@@ -80,7 +80,7 @@ You can also analyze how the overlap changes for specific attributes.
 
 ## Manage segment insights
 
-Go to **Segments** > **Insights (preview)** to view your segment insights and to manage them. Select a segment insight to view available actions.
+Go to **Insights** > **Segments** > **Insights (preview)** to view your segment insights and to manage them. Select a segment insight to view available actions.
 
 - **View** the insight analysis
 - **Edit** the insight to change its properties

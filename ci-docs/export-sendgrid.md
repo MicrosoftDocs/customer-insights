@@ -1,7 +1,7 @@
 ---
 title: "Export segments to SendGrid (preview)"
 description: "Learn how to configure the connection and export to SendGrid."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: how-to
@@ -31,7 +31,7 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **SendGrid**.
 

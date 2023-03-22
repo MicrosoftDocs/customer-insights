@@ -1,7 +1,7 @@
 ---
 title: "Power BI connector (preview)"
 description: "Learn how to use the Dynamics 365 Customer Insights connector in Power BI."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: how-to
@@ -30,13 +30,11 @@ Create visualizations for your data with the Microsoft Power BI Desktop. Generat
    > [!NOTE]
    > The account you indicate in this step is used to fetch data from Customer Insights and doesn't need to be the same you are signed in to Power BI. To reset the account that is used for data fetching, open Power BI and go to **File** > **Options** > **Settings** > **Data source settings**. In the list of data sources, select **Dynamics 365 Customer Insights Login** and select **Clear permissions**.  
 
-1. In the **Navigator** dialog box, view the list of all environments you have access to. Expand an environment and open any of the folders (entities, measures, segments, enrichments). For example, open the **Entities** folder, to see all entities you can import.
+1. In the **Navigator** dialog box, view the list of all environments you have access to. Expand an environment and open any of the folders. For example, open the **Segments** folder, to see all tables you can import.
 
-   :::image type="content" source="media/power-bi-navigator.png" alt-text="Power BI Connector Navigator.":::
+1. Select the check boxes next to the tables to include and **Load**. You can select multiple tables from multiple environments.
 
-1. Select the check boxes next to the entities to include and **Load**. You can select multiple entities from multiple environments.
-
-   A loading dialog box displays while your entities are loaded. Once all of your selected entities have loaded, use the capabilities of Power BI to visualize the data.
+   A loading dialog box displays while your tables are loaded. Once all of your selected tables have loaded, use the capabilities of Power BI to visualize the data.
 
 ## Large data sets
 

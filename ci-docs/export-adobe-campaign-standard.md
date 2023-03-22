@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights segments to Adobe Campaign Standard (preview)"
 description: "Learn how use Customer Insights segments in Adobe Campaign Standard."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: conceptual
@@ -45,7 +45,7 @@ The offer email that you want to send out will contain the first name, last name
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Adobe Campaign**.
 

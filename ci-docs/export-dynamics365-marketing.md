@@ -1,7 +1,7 @@
 ---
 title: "Export segments to Dynamics 365 Marketing (preview)"
 description: "Learn how to configure the connection and export to Dynamics 365 Marketing."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: how-to
@@ -23,13 +23,13 @@ If you are using the new capabilities of Dynamics 365 Marketing for real-time cu
 Contact records must be present in Dynamics 365 Marketing before you can export a segment from Customer Insights to Marketing. Read more on how to ingest contacts in [Dynamics 365 Marketing using Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
 > [!NOTE]
-> Exporting segments from Customer Insights to Marketing will not create new contact records in the Marketing instances. The contact records from Marketing must be ingested in Customer Insights and used as a data source. They also need to be included in the unified Customer entity to map customer IDs to contact IDs before segments can be exported.
+> Exporting segments from Customer Insights to Marketing will not create new contact records in the Marketing instances. The contact records from Marketing must be ingested in Customer Insights and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.
 
 ## Set up connection to Marketing
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Dynamics 365 Marketing**.
 
@@ -41,7 +41,7 @@ Contact records must be present in Dynamics 365 Marketing before you can export 
 
 1. In the **Server admin account** section, select **Sign in** and choose a Dynamics 365 Marketing account.
 
-1. Map the Contact ID field in the Customer entity to the Dynamics 365 Contact ID.
+1. Map the Contact ID field in the Customer table to the Dynamics 365 Contact ID.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
@@ -59,7 +59,7 @@ Contact records must be present in Dynamics 365 Marketing before you can export 
 
 1. Enter a name for the export.
 
-1. Select the Contact ID field in the Customer entity that matches the Dynamics 365 Contact ID.
+1. Select the Contact ID field in the Customer table that matches the Dynamics 365 Contact ID.
 
 1. Select the segments you want to export.
 

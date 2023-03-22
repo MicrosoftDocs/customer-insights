@@ -1,7 +1,7 @@
 ---
 title: "Customer Card Add-in for Dynamics 365 apps (preview) (contains video)"
 description: "Show customer profile data from Customer Insights in Dynamics 365 apps with this add-in."
-ms.date: 02/02/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: conceptual    
@@ -23,7 +23,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 ## Prerequisites
 
 - Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
-- For your Dynamics 365 data to map to the Customer Insights customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source during the data unification process](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
+- For your Dynamics 365 data to map to the Customer Insights customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source during the data unification process](data-unification-map-tables.md#select-primary-key-and-semantic-type-for-attributes).
 - All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in Customer Insights to see the data.
 - [Configured search and filter capabilities](search-filter-index.md) in Customer Insights.
 - Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control isn't available due to the selected environment type. This error will show within the control when rendering it. Learn more about [environment use cases](work-with-business-accounts.md).
@@ -32,7 +32,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
   - **Intelligence control** requires data generated using [predictions or custom models](predictions-overview.md).
   - **Customer details control** shows all fields from the profile available in the unified customer profile.
   - **Enrichment control** requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft, [Interests](enrichment-microsoft.md) provided by Microsoft, and [Office engagement data](enrichment-office.md) provided by Microsoft.
-  - **Contacts control** requires a contact semantic entity type.
+  - **Contacts control** requires a contact semantic table type.
   - **Timeline control** requires [configured activities](activities.md).
 
 ## Install the Customer Card Add-in
@@ -62,15 +62,15 @@ You may need to sign in with your admin credentials for the Dynamics 365 app to 
 1. Select the Customer Insights environment you want to fetch data from.
 
 1. Define the field mapping to records in the Dynamics 365 app. Depending on your data in Customer Insights, you can choose to map the following options:
-   - To map with a contact, select the field in the Customer entity that matches the ID of your contact entity.
-   - To map with an account, select the field in the Customer entity that matches the ID of your account entity.
+   - To map with a contact, select the field in the Customer table that matches the ID of your contact table.
+   - To map with an account, select the field in the Customer table that matches the ID of your account table.
 
    > [!div class="mx-imgBorder"]
    > ![Contact ID field.](media/contact-id-field.png "Contact ID field.")
 
 1. Select **Save configuration** to save the settings.
 
-1. Next, you need to assign security roles in Dynamics 365 so users can customize and see the customer card. In Dynamics 365, go to **Settings** > **Security** > **Users**. Select the users to edit user roles and select **Manage roles**.
+1. Next, you need to assign security roles in Dynamics 365 so users can customize and see the customer card. In Dynamics 365, go to **Settings** > **Permissions** > **Users**. Select the users to edit user roles and select **Manage roles**.
 
 1. Assign the **Customer Insights Card Customizer** role to users who will customize the content shown on the card for the whole organization.
 
@@ -82,7 +82,7 @@ Depending on your scenario, you can choose to add controls to either the **Conta
 
 1. Select **Customize the System**.
 
-1. Browse to the **Contact** entity, expand it, and select **Forms**.
+1. Browse to the **Contact** table, expand it, and select **Forms**.
 
 1. Select the contact form you want to add the Customer Card controls to.
 

@@ -1,7 +1,7 @@
 ---
 title: Customer lifetime value (CLV) prediction sample guide
 description: Use this sample guide to try out the customer lifetime value prediction model.
-ms.date: 09/15/2022
+ms.date: 11/15/2022
 ms.reviewer: v-wendysmith
 
 ms.topic: tutorial
@@ -102,9 +102,9 @@ Review the article [about data unification](data-unification.md). The following 
 
 Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
-1. Create an activity called **eCommercePurchases** with the *eCommercePurchases:eCommerce* entity and its primary key, **PurchaseId**.
+1. Create an activity called **eCommercePurchases** with the *eCommercePurchases:eCommerce* table and its primary key, **PurchaseId**.
 
-1. Create a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two entities.
+1. Create a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two tables.
 
 1. Select **TotalPrice** for the **EventActivity** and **PurchasedOn** for the **TimeStamp**.
 
@@ -113,7 +113,7 @@ Review the article [about customer activities](activities.md). The following inf
 1. Run the activity.
 
 1. Add another activity and map its fields names to the corresponding fields:
-   - **Activity entity**: Reviews:Website
+   - **Activity table**: Reviews:Website
    - **Primary key**: ReviewId
    - **Timestamp**: ReviewDate
    - **Event activity**: ActivityTypeDisplay
@@ -126,13 +126,13 @@ Review the article [about customer activities](activities.md). The following inf
 
 With the unified customer profiles in place and activity created, run the customer lifetime value (CLV) prediction. For detailed steps, see [Customer Lifetime Value prediction](predict-customer-lifetime-value.md).
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer lifetime value** tile.
 
 1. Select **Get started**.
 
-1. Name the model **OOB eCommerce CLV Prediction** and the output entity  **OOBeCommerceCLVPrediction**.
+1. Name the model **OOB eCommerce CLV Prediction** and the output table  **OOBeCommerceCLVPrediction**.
 
 1. Define model preferences:
    - **Prediction time period**: **12 months or 1 year** to define how far into the future to predict CLV.
@@ -147,7 +147,7 @@ With the unified customer profiles in place and activity created, run the custom
 
     :::image type="content" source="media/clv-model-required.png" alt-text="Add required data step in the guided experience for the CLV model.":::
 
-1. Select **SalesOrderLine** and the eCommercePurchases entity and select **Next**. The required data is automatically filled in from the activity. Select **Save** and then **Next**.
+1. Select **SalesOrderLine** and the eCommercePurchases table and select **Next**. The required data is automatically filled in from the activity. Select **Save** and then **Next**.
 
 1. The **Additional data (optional)** step allows you to add more customer activity data to get more insights for customer interactions. For this example, select **Add data** and add the web review activity.
 
@@ -165,11 +165,11 @@ Let the model complete the training and scoring of the data. Review the [CLV mod
 
 ## Task 6 - Create a segment of high value customers
 
-Running the model creates a new entity, which is listed on **Data** > **Entities**. You can create a new customer segment based on the entity created by the model.
+Running the model creates a new table, which is listed on **Data** > **Tables**. You can create a new customer segment based on the table created by the model.
 
 1. On the results page, select **Create segment**.
 
-1. Create a rule using the **OOBeCommerceCLVPrediction** entity and define the segment:
+1. Create a rule using the **OOBeCommerceCLVPrediction** table and define the segment:
    - **Field**: CLVScore
    - **Operator**: greater than
    - **Value**: 1500
@@ -179,6 +179,6 @@ Running the model creates a new entity, which is listed on **Data** > **Entities
 You now have a segment that identifies customers who are predicted to generate more than $1500 of revenue in the next 12 months. This segment gets updated dynamically if more data is ingested. For more information, see [Create and manage segments](segments.md).
 
 > [!TIP]
-> You can also create a segment for a prediction model from the **Segments** page by selecting **New** and choosing **Create from** > **Intelligence**. For more information, see [Create a new segment with quick segments](segment-quick.md).
+> You can also create a segment for a prediction model from the **Insights** > **Segments** page by selecting **New** and choosing **Create from** > **Insights**. For more information, see [Create a new segment with quick segments](segment-quick.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

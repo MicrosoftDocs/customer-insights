@@ -15,7 +15,7 @@ searchScope:
 
 # Exports (preview) overview
 
- Exports allow you to share specific data with various applications. They can include customer profiles, entities, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md). The **Exports** page shows you all configured exports.
+ Exports allow you to share specific data with various applications. They can include customer profiles, tables, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md). The **Exports** page shows you all configured exports.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dsVH]
 
@@ -23,8 +23,8 @@ searchScope:
 
 There are two main types of exports:  
 
-- **Data-out exports** let you export any type of entity available in Customer Insights. The entities that you select for export are exported with all data fields, metadata, schemas, and mapping details.
-- **Segment exports** let you export segment entities from Customer Insights. For individual consumers (B-to-C), segments represent a list of customer profiles. For businesses (B-to-B), [segments can represent a list of accounts or contacts](segment-builder.md#create-a-new-segment-with-segment-builder). When configuring the export, you select the included data fields, depending on the target system you are exporting data to.
+- **Data-out exports** let you export any type of table available in Customer Insights. The tables that you select for export are exported with all data fields, metadata, schemas, and mapping details.
+- **Segment exports** let you export segment tables from Customer Insights. For individual consumers (B-to-C), segments represent a list of customer profiles. For businesses (B-to-B), [segments can represent a list of accounts or contacts](segment-builder.md#create-a-new-segment-with-segment-builder). When configuring the export, you select the included data fields, depending on the target system you are exporting data to.
 
 ### Segment exports
 
@@ -32,11 +32,11 @@ There are two main types of exports:
 Most export options support both types of environments. Exporting segments to various target systems have specific requirements. 
 
 **Segment exports in environments for individual consumers (B-to-C)**  
-- Segments in the context of environments for individual customers are built on the *unified customer profile* entity. Every segment that meets the requirements of the target systems (for example, an email address) can get exported.
+- Segments in the context of environments for individual customers are built on the *unified customer profile* table. Every segment that meets the requirements of the target systems (for example, an email address) can get exported.
 
 **Segment exports in environments for business accounts (B-to-B)**  
-- Segments in the context of environments for business accounts are built on the *account* entity or the *contact* entity. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](export-linkedin-ads.md) when you choose the **company** option while defining the export.
-- All other target systems require fields from the contact entity.
+- Segments in the context of environments for business accounts are built on the *account* table or the *contact* table. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](export-linkedin-ads.md) when you choose the **company** option while defining the export.
+- All other target systems require fields from the contact table.
 - With two segment types (contacts and accounts), Customer Insights automatically identifies which type of segments are eligible for export based on the target system. For example, for a contact-focused target system like Mailchimp, Customer Insights only allows you to choose contact segments to export.
 
 **Limits on segment exports**  
@@ -47,6 +47,5 @@ Most export options support both types of environments. Exporting segments to va
 ## Next steps
 
 - [Set up and manage exports](export-manage.md)
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

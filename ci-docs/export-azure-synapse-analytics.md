@@ -46,7 +46,7 @@ In Azure:
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Azure Synapse Analytics**.
 
@@ -72,7 +72,7 @@ In Azure:
 
 1. Provide a recognizable **Display name** for your export and a **Database name**. The export will create a new [Azure Synapse lake database](/azure/synapse-analytics/database-designer/concepts-lake-database) in the workspace defined in the connection.
 
-1. Select which entities you want to export to Azure Synapse Analytics.
+1. Select which tables you want to export to Azure Synapse Analytics.
    > [!NOTE]
    > Data sources based on a [Common Data Model folder](connect-common-data-model.md) aren't supported.
 
@@ -88,7 +88,7 @@ To query data in Synapse Analytics, you need **Storage Blob Data Reader** access
 
 1. Select **Edit** on the export you want to update.
 
-   - **Add** or **Remove** entities from the selection. If you remove entities from the selection, they stay in the Synapse Analytics database. However, future data refreshes won't update the removed entities in that database.
+   - **Add** or **Remove** tables from the selection. If you remove tables from the selection, they stay in the Synapse Analytics database. However, future data refreshes won't update the removed tables in that database.
 
    - **Changing the Database Name** creates a new Synapse Analytics database. The old database won't receive any updates in future refreshes.
 

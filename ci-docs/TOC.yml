@@ -56,26 +56,26 @@
     - name: Common reasons for ingestion errors
       href: common-data-ingestion-errors.md
 
-- name: Data unification
+- name: Unification
   items:
     - name: Data unification overview
       href: data-unification.md
     - name: Select source fields
-      href: map-entities.md
+      href: data-unification-map-tables.md
     - name: Remove duplicate records
-      href: remove-duplicates.md
+      href: data-unification-duplicates.md
     - name: Match conditions
-      href: match-entities.md
+      href: data-unification-match-tables.md
     - name: Unify customer fields
-      href: merge-entities.md
+      href: data-unification-merge-tables.md
     - name: Review data unification
       href: review-unification.md
     - name: Create a unified contact profile 
       href: data-unification-contacts.md
     - name: Update unification settings
       href: data-unification-update.md  
-
-- name: Data enrichment
+ 
+- name: Enrichment
   items:
     - name: Data enrichment overview
       href: enrichment-hub.md
@@ -102,98 +102,23 @@
     - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
-- name: Customer profiles and activities
-  items:
-    - name: View customer profiles
-      href: customer-profiles.md
-    - name: Manage the search & filter index
-      href: search-filter-index.md
-    - name: Define customer activities
-      href: activities.md
-    - name: Use consent management
-      href: consent-management.md
-    - name: Use web data for personalization
-      href: unknown-to-known.md
-    - name: Manage unknown customer profiles
-      href: manage-unknown-profiles.md
+- name: Activities
+  href: activities.md
 
-- name: Segments
+- name: Tables
   items:
-    - name: Create and manage segments
-      href: segments.md
-    - name: Create with segment builder
-      items:
-          - name: Aspects of segment builder
-            href: segment-builder-aspects.md
-          - name: Create complex segments with segment builder
-            href: segment-builder.md
-    - name: Create with quick segments
-      href: segment-quick.md
-    - name: Suggested segments
-      items:
-          - name: Suggested segments
-            href: suggested-segments.md
-          - name: Generate suggested segments based on activity
-            href: suggested-segments-activity-generate.md
-          - name: Generate suggested segments based on measures
-            href: suggested-segments-generate.md
-    - name: Get insights on segments
-      href: segment-insights.md
-    - name: Find similar customers
-      href: find-similar-customer-segments.md
-    - name: Schedule segments
-      href: segments-schedule.md
-    - name: Track usage of a segment
-      href: segments-track-usage.md
+    - name: Understand tables
+      href: tables.md
+    - name: Review the table schemas in Common Data Model
+      href: table-schemas.md
+    - name: Build relationships and connected tables
+      href: relationships.md
+    - name: Define semantic mappings
+      href: semantic-mappings.md
 
-- name: Measures
-  items: 
-    - name: Create and manage measures
-      href: measures.md
-    - name: Create with measure builder
-      href: measure-builder.md
-    - name: Create with templates
-      href: measure-templates.md
-    - name: Schedule measures
-      href: measures-schedule.md
-          
-- name: Predictions
+- name: Exports
   items:
-    - name: Predict data with the help of AI
-      items: 
-        - name: Prediction models overview
-          href: predictions-overview.md
-        - name: Predict customer lifetime value (CLV)
-          href: predict-customer-lifetime-value.md
-        - name: Predict product recommendations
-          href: predict-product-recommendation.md
-        - name: Predict subscription churn
-          href: predict-subscription-churn.md
-        - name: Predict transaction churn
-          href: predict-transactional-churn.md
-        - name: Analyze sentiment in customer feedback
-          href: sentiment-analysis.md
-        - name: Use custom models from Azure Machine Learning
-          href: custom-models.md
-        - name: Create segments based on predictions
-          href: prediction-based-segment.md
-
-    - name: Sample guides
-      items:    
-        - name: Sample guide for CLV prediction
-          href: sample-guide-predict-clv.md
-        - name: Sample guide for subscription churn prediction
-          href: sample-guide-predict-subscription-churn.md
-        - name: Sample guide for transaction churn prediction
-          href: sample-guide-predict-transactional-churn.md
-        - name: Sample guide for product recommendation prediction
-          href: sample-guide-predict-product-recommendation.md
-        - name: Experiments with Azure Machine learning
-          href: azure-machine-learning-experiments.md
-
-- name: Export options
-  items:
-    - name: Exports
+    - name: Export options
       items:
         - name: Exports overview
           href: export-destinations.md
@@ -281,32 +206,67 @@
         - name: Power BI
           href: export-power-bi.md
 
-- name: Entities
+- name: Segments
   items:
-    - name: Understand entities
-      href: entities.md
-    - name: Review the entity schemas in Common Data Model
-      href: entity-schemas.md
+    - name: Segments overview
+      href: segments.md
+    - name: Create with segment builder
+      href: segment-builder.md
+    - name: Create with quick segments
+      href: segment-quick.md
+    - name: Suggested segments based on measures
+      href: suggested-segments.md
+    - name: Suggested segments based on activity
+      href: suggested-segments-activity.md
+    - name: Get insights on segments
+      href: segment-insights.md
+    - name: Find similar customers
+      href: find-similar-customer-segments.md
 
-    - name: Build relationships and connected entities
-      href: relationships.md
-    - name: Define semantic mappings
-      href: semantic-mappings.md
-
-- name: Environments
+- name: Measures
   items: 
-    - name: Create a new environment
-      href: create-environment.md
-    - name: Connect to Microsoft Dataverse
-      href: customer-insights-dataverse.md
-    - name: Use your own Azure Data Lake Storage
-      href: own-data-lake-storage.md
-    - name: Manage environment settings
-      href: manage-environments.md
-    - name: Connect to a storage account using Service Principal
-      href: connect-service-principal.md
+    - name: Measures overview
+      href: measures.md
+    - name: Create with measure builder
+      href: measure-builder.md
+    - name: Create with templates
+      href: measure-templates.md
+          
+- name: Predictions and custom models
+  items:
+    - name: Predict data with the help of AI
+      items: 
+        - name: Prediction models overview
+          href: predictions-overview.md
+        - name: Predict customer lifetime value (CLV)
+          href: predict-customer-lifetime-value.md
+        - name: Predict product recommendations
+          href: predict-product-recommendation.md
+        - name: Predict subscription churn
+          href: predict-subscription-churn.md
+        - name: Predict transaction churn
+          href: predict-transactional-churn.md
+        - name: Analyze sentiment in customer feedback
+          href: sentiment-analysis.md
+        - name: Use custom models from Azure Machine Learning
+          href: custom-models.md
+        - name: Create segments based on predictions
+          href: prediction-based-segment.md
 
-- name: Administration
+    - name: Sample guides
+      items:    
+        - name: Sample guide for CLV prediction
+          href: sample-guide-predict-clv.md
+        - name: Sample guide for subscription churn prediction
+          href: sample-guide-predict-subscription-churn.md
+        - name: Sample guide for transaction churn prediction
+          href: sample-guide-predict-transactional-churn.md
+        - name: Sample guide for product recommendation prediction
+          href: sample-guide-predict-product-recommendation.md
+        - name: Experiments with Azure Machine learning
+          href: azure-machine-learning-experiments.md
+
+- name: Settings
   items:
     - name: Security overview
       href: security-overview.md
@@ -326,6 +286,19 @@
       href: schedule-refresh.md
     - name: View system configuration
       href: system.md
+
+- name: Environments
+  items: 
+    - name: Create a new environment
+      href: create-environment.md
+    - name: Connect to Microsoft Dataverse
+      href: customer-insights-dataverse.md
+    - name: Use your own Azure Data Lake Storage
+      href: own-data-lake-storage.md
+    - name: Manage environment settings
+      href: manage-environments.md
+    - name: Connect to a storage account using Service Principal
+      href: connect-service-principal.md
 
 - name: APIs
   items:

@@ -1,7 +1,7 @@
 ---
 title: "Export segments to Constant Contact (preview)"
 description: "Learn how to configure the connection and export to Constant Contact."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: conceptual
@@ -30,7 +30,7 @@ Export segments of unified customer profiles to Constant Contact and use them fo
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Constant Contact**.
 

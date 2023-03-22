@@ -1,7 +1,7 @@
 ---
 title: "Analyze sentiment for customer feedback (preview)"
 description: "Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights." 
-ms.date: 09/14/2022
+ms.date: 11/15/2022
 
 ms.reviewer: mhart
 ms.topic: conceptual
@@ -50,7 +50,7 @@ Pre-defined business aspects for the model to associate with feedback data inclu
 ## Prerequisites
 
 - At least [Contributor permissions](permissions.md)
-- [Unified](data-unification.md) text feedback data. We highly recommend that you [configure your feedback data entities as semantic type activity entities](map-entities.md#select-primary-key-and-semantic-type-for-attributes) (Feedback type).
+- [Unified](data-unification.md) text feedback data. We highly recommend that you [configure your feedback data tables as semantic type activity tables](data-unification-map-tables.md#select-primary-key-and-semantic-type-for-attributes) (Feedback type).
 - Unified Customer ID (UCID) from data unification to match text feedback data records to an individual customer.
 - Feedback ID
 - Feedback timestamp
@@ -59,17 +59,17 @@ Pre-defined business aspects for the model to associate with feedback data inclu
 Customer Insights can process up to 10 million feedback records for a single model run. The model can analyze feedback comments up to 128 words. If a feedback comment is longer, the analysis considers only the first 128 words.
 
 > [!NOTE]
-> Only one feedback entity can be configured. If there are multiple feedback entities, combine them in Power Query before data ingestion.
+> Only one feedback table can be configured. If there are multiple feedback tables, combine them in Power Query before data ingestion.
 
 ## Configure a sentiment analysis
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer sentiment analysis (preview)** tile.
 
 1. Select **Get started**.
 
-1. **Name** the analysis and provide the **Business aspect output entity name** and the **Sentiment score output entity name**.
+1. **Name** the analysis and provide the **Business aspect output table name** and the **Sentiment score output table name**.
 
 1. Select **Next**.
 
@@ -95,7 +95,7 @@ Customer Insights can process up to 10 million feedback records for a single mod
 
 ## View analysis results
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. In the the **My predictions** tab, select the prediction you want to view.
 
