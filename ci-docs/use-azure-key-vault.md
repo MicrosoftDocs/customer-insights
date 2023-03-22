@@ -1,7 +1,7 @@
 ---
 title: "Bring your own Azure key vault (preview)"
 description: "Learn how to configure Customer Insights to use your own Azure key vault to manage secrets."
-ms.date: 08/02/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: how-to
@@ -30,7 +30,7 @@ Set up the dedicated key vault to stage and use secrets in an organization's com
 
 - Key vault must have Key Vault firewall **disabled**.
 
-- Key vault is in the same [Azure location](https://azure.microsoft.com/global-infrastructure/geographies/#overview) as the Customer Insights environment. In Customer Insights, go to **Admin** > **System** and the **About** tab to view the region of the environment.
+- Key vault is in the same [Azure location](https://azure.microsoft.com/global-infrastructure/geographies/#overview) as the Customer Insights environment. In Customer Insights, go to **Settings** > **System** and the **About** tab to view the region of the environment.
 
 ### Recommendations
 
@@ -40,7 +40,7 @@ Set up the dedicated key vault to stage and use secrets in an organization's com
 
 ### Link a key vault to the environment
 
-1. Go to **Admin** > **Security**, and then select the **Key Vault** tab.
+1. Go to **Settings** > **Permissions**, and then select the **Key Vault** tab.
 1. On the **Key Vault** tile, select **Setup**.
 1. Choose a **Subscription**.
 1. Choose a key vault from the **Key Vault** dropdown list. If too many key vaults are available, select a resource group to limit the search results.
@@ -54,7 +54,7 @@ For details about which permissions on the key vault are granted to Customer Ins
 
 When [setting up connections](connections.md) to [supported third-party](#supported-connection-types) systems, use the secrets from the linked Key Vault to configure the connections.
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 1. Select **Add connection**.
 1. For the supported connection types, a **Use Key Vault** toggle is available if you linked a key vault.
 1. Instead of entering the secret manually, choose the secret name that points to the secret value in the key vault.

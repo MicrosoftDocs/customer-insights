@@ -4,7 +4,7 @@ After ingesting the data, begin the data unification process to create a unified
 
 1. After ingesting the data, map contacts from eCommerce and Loyalty data to common data types. Go to **Data** > **Unify**.
 
-1. Select the entities that represent the customer profile – **eCommerceContacts** and **loyCustomers**.
+1. Select the tables that represent the customer profile – **eCommerceContacts** and **loyCustomers**.
 
    ![unify ecommerce and loyalty datasources.](../media/unify-ecommerce-loyalty.png)
 
@@ -14,7 +14,7 @@ After ingesting the data, begin the data unification process to create a unified
 
 ### Match conditions
 
-1. Choose **eCommerceContacts : eCommerce** as the primary entity and include all records.
+1. Choose **eCommerceContacts : eCommerce** as the primary table and include all records.
 
 1. Choose **loyCustomers : LoyaltyScheme** and include all records.
 
@@ -37,6 +37,6 @@ After ingesting the data, begin the data unification process to create a unified
 
 ### Unify fields
 
-1. Rename the **ContactId** for **loyCustomers** entity to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.
+1. Rename the **ContactId** for **loyCustomers** table to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.
 
 1. Select **Next** to review and then select **Create customer profiles**.

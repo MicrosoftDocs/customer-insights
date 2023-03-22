@@ -53,7 +53,7 @@ After the first environment is created, the global administrator of the Microsof
 1. Choose where to store the Customer Insights data:
 
    - **Customer Insights storage**: Data storage is managed automatically. It's the default option and unless there are specific requirements to store data in your own storage account, we recommend using this option.
-   - **Azure Data Lake Storage**: Your own Azure Data Lake Storage account to store the data so you have full control where the data is stored. Follow the steps in [Use your own Azure Data Lake Storage account](own-data-lake-storage.md).
+   - **Azure Data Lake Storage Gen2**: Your own Azure Data Lake Storage account to store the data so you have full control where the data is stored. Follow the steps in [Use your own Azure Data Lake Storage account](own-data-lake-storage.md).
 
    :::image type="content" source="media/data-storage-environment.png" alt-text="Choose the preferred option to store your data.":::
 
@@ -117,14 +117,14 @@ When you copy the environment configuration, a confirmation message displays whe
 
 1. Edit the data sources and enter the credentials to refresh them. Data sources from the Common Data Model folder and Dataverse must be created manually with the same name as in the source environment.
 
-1. After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer entity.
+1. After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer table.
 
    > [!TIP]
    > For accounts and contacts, select **Unify accounts** > **Unify profiles and dependencies**.
 
-1. When the data unification is complete, go to **Measures** and **Segments** to refresh them.
+1. When the data unification is complete, go to **Insights** > **Measures** and **Insights** > **Segments** to refresh them.
 
-1. Go to **Admin** > **Connections** to reauthenticate the connections in your new environment.
+1. Go to **Settings** > **Connections** to reauthenticate the connections in your new environment.
 
 1. Go to **Data** > **Enrichment** and **Data** > **Exports** to reactivate them.
 

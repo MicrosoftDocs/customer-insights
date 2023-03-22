@@ -21,8 +21,8 @@ Assume a user uses their mobile device to browse your e-commerce site. The websi
 ## Prerequisites
 
 - Ingest first-party data into Customer Insights
-- Each entity has a unique ID that is set as a primary key
-- Each entity with a primary key for personalization is unified
+- Each table has a unique ID that is set as a primary key
+- Each table with a primary key for personalization is unified
 - The content management system of your website can use APIs (for web personalization based on direct communication with Customer Insights)
 
 The following table shows a simplified example how high-value web events could get captured.

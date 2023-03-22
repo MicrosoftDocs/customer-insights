@@ -33,7 +33,7 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **SFTP**.
 
@@ -67,16 +67,16 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 1. Choose if you want to export your data **Gzipped** or **Unzipped** and the **field delimiter** for the exported files.
 
-1. Select the entities, for example segments, that you want to export.
+1. Select the tables, for example segments, that you want to export.
 
    > [!NOTE]
-   > Each selected entity will be split into a maximum of five output files when exported.
+   > Each selected table will be split into a maximum of five output files when exported.
 
 1. Select **Save**.
 
 [!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 > [!TIP]
-> Export of entities that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
+> Export of tables that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -23,7 +23,7 @@ Find similar customers in your customer base using artificial intelligence. You 
 
 ## Find similar customers
 
-1. Go to **Segments** and select the segment you want to base your new segment on. That's your *source segment*.
+1. Go to **Insights** > **Segments** and select the segment you want to base your new segment on. That's your *source segment*.
 
 1. Select **Find similar customers**.
 
@@ -47,7 +47,7 @@ Find similar customers in your customer base using artificial intelligence. You 
 
 ## View the similar segment
 
-After processing the similar segment, you'll find the new segment listed on the **Segments** page with the type **Expansion**.
+After processing the similar segment, you'll find the new segment listed on the **Insights** > **Segments** page with the type **Expansion**.
 
 Select **View** to see result distribution across [similarity scores](#about-similarity-scores) and similarity score values under **Segment members preview**.
 

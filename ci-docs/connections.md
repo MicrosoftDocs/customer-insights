@@ -30,7 +30,7 @@ Only administrators can configure new connections, but the created connections a
 - [Administrator permissions](permissions.md)
 - Other Microsoft services, if any, are in the same organization
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose the type of connection you want to create. Or, go to the **Discover** tab and select **Set up** on a connection tile.
 
@@ -60,7 +60,7 @@ When setting up or editing an export connection, choose which users are allowed 
 
 ## Manage existing connections
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select the **Enrichment** or **Exports** tab to view a list of enrichment or export connections, the connection type, when it was created, and who has access. You can sort the list of connections by any column.
 
@@ -76,7 +76,7 @@ If the connection you're removing is used by enrichments or exports, first detac
 > [!TIP]
 > Deactivated enrichments and detached exports become inactive. You reactivate them by adding another connection to them on the [Enrichments](enrichment-hub.md) or [Exports](export-manage.md) page.
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select the **Enrichment** or **Exports** tab.
 
@@ -87,7 +87,7 @@ If the connection you're removing is used by enrichments or exports, first detac
    1. If there are enrichments or exports using this connection, select the button to see what's using the connection.
       - **Exports:** Choose to either **Remove** the export or **Detach the connection**. Detaching the connection keeps the export config, but it won't be run until another connection is added to it.
       - **Enrichments:** Choose to either **Delete** or **Deactivate** the enrichments.
-   1. Once the connection has no more dependencies, go back to **Admin** > **Connections** and try removing the connection again.
+   1. Once the connection has no more dependencies, go back to **Settings** > **Connections** and try removing the connection again.
 
 1. To confirm the deletion, select **Remove**.
 

@@ -1,7 +1,7 @@
 ---
 title: "Export segments to MoEngage"
 description: "Learn how to configure the connection and export to MoEngage."
-ms.date: 07/26/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: conceptual
@@ -28,7 +28,7 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **MoEngage** to configure the connection.
 
@@ -58,7 +58,7 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. Repeat the same steps for other optional fields.
 
-1. Select the segments you want to export. We'll create one or more segments with the same name as the selected segments in MoEngage under **Segments** > **Custom Segments**.
+1. Select the segments you want to export. We'll create one or more segments with the same name as the selected segments in MoEngage under **Insights** > **Segments** > **Custom Segments**.
 
 1. Select **Save**.
 

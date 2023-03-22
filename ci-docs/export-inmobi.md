@@ -1,7 +1,7 @@
 ---
 title: Export Customer Insights data to InMobi
 description: Learn how to configure the connection and export to InMobi.
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer

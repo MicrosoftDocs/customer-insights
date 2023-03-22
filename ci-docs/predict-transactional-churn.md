@@ -38,7 +38,7 @@ For environments based on business accounts, we can predict transactional churn 
   - **Timestamp:** Date and time of the event identified by the primary key.
   - **Event:** Name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
   - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
-- Less than 20% of missing values in the data field of the entity provided
+- Less than 20% of missing values in the data field of the table provided
 
 For business accounts (B-to-B), add customer data aligned toward more static attributes to ensure the model performs best:
 - **CustomerID:** Unique identifier for a customer.
@@ -53,13 +53,13 @@ For business accounts (B-to-B), add customer data aligned toward more static att
 
 ## Create a transaction churn prediction
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer churn model** tile.
 
 1. Select **Transaction** for the type of churn and then **Get started**.
 
-1. **Name this model** and the **Output entity name** to distinguish them from other models or entities.
+1. **Name this model** and the **Output table name** to distinguish them from other models or tables.
 
 1. Select **Next**.
 
@@ -79,7 +79,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select the semantic activity type, **SalesOrder** or **SalesOrderLine**, that contains the transaction history information. If the activity has not been set up, select **here** and create it.
 
-1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
 
    :::image type="content" source="media/transaction-churn-select-activity.PNG" alt-text="Side pane showing choosing specific activities under the semantic type.":::
 
@@ -97,7 +97,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select the semantic activity type that contains the data you would like to use. If the activity has not been set up, select **here** and create it.
 
-1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
 
 1. Select **Next** and review the attributes required for this model.
 
@@ -111,16 +111,16 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 Most predictions are created at the customer level. In some situations, that may not be granular enough to address your business needs. Use this feature to predict churn for a branch of a customer, for example, rather than for the customer as a whole.
 
-1. Select **Select entity for a secondary level**. If the option is not available, ensure you have completed the previous section.
+1. Select **Select table for a secondary level**. If the option is not available, ensure you have completed the previous section.
 
-1. Expand the entities you would like to choose the secondary level from, or use the search filter box to filter the selected options.
+1. Expand the tables you would like to choose the secondary level from, or use the search filter box to filter the selected options.
 
 1. Choose the attribute you would like used as a secondary level, then select **Add**.
 
 1. Select **Next**.
 
 > [!NOTE]
-> The entities available in this section are shown because they have a relationship to the entity you chose in the previous section. If you don't see the entity you want to add, ensure it has a valid relationship present in **Relationships**. Only one-to-one and many-to-one relationships are valid for this configuration.
+> The tables available in this section are shown because they have a relationship to the table you chose in the previous section. If you don't see the table you want to add, ensure it has a valid relationship present in **Relationships**. Only one-to-one and many-to-one relationships are valid for this configuration.
 
 ### Add additional data (optional)
 
@@ -128,7 +128,7 @@ Most predictions are created at the customer level. In some situations, that may
 
 1. Select the semantic activity type that contains the data you would like to use. If the activity has not been set up, select **here** and create it.
 
-1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or entity you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
 
 1. Select **Next** and review the attributes required for this model.
 
@@ -172,7 +172,7 @@ The **Review and run** step shows a summary of the configuration and provides a 
 
 ## View prediction results
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. In the **My predictions** tab, select the prediction you want to view.
 
@@ -214,8 +214,8 @@ An **Influential feature analysis** information page contains four sections of d
 ---
 
  > [!NOTE]
- > In the output entity for this model, *ChurnScore* shows the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md) with your preferred threshold. Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on your churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
+ > In the output table for this model, *ChurnScore* shows the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md) with your preferred threshold. Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on you churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
 >
-> To view the churn score, go to **Data** > **Entities** and view the data tab for the output entity you defined for this model.
+> To view the churn score, go to **Data** > **Tables** and view the data tab for the output table you defined for this model.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
