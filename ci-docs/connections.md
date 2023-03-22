@@ -1,9 +1,8 @@
 ---
 title: "Connections (preview) overview"
 description: "Connections to other services from Customer Insights."
-ms.date: 08/04/2022
+ms.date: 03/20/2023
 ms.reviewer: nikeller
-
 ms.topic: overview
 author: m-hartmann
 ms.author: mhart
@@ -14,7 +13,7 @@ searchScope:
 
 # Connections (preview) overview
 
-Connections are the key to enable data sharing to and from Customer Insights. Each connection establishes data sharing with a specific service. Use connections to [configure third-party enrichments](enrichment-hub.md) and [configure exports](export-destinations.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Marketing works for multiple exports and one Leadspace connection can be used for several enrichments.
+Connections are the key to enable data sharing to and from Customer Insights. Each connection establishes data sharing with a specific service. Use connections to [configure third-party enrichments](enrichment-hub.md) and [configure exports](export-manage.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Marketing works for multiple exports and one Leadspace connection can be used for several enrichments.
 
 ## Export connections
 
@@ -53,7 +52,7 @@ Your Dynamics 365 Customer Insights administrator can remove the connection at a
 
 ## Allow contributors to use a connection for exports
 
-When setting up or editing an export connection, choose which users are allowed to use this specific connection to define [exports](export-destinations.md). By default, a connection is available to users with an administrator role. Change the **Choose who can use this connection** setting to allow users with contributor role to use this connection.
+When setting up or editing an export connection, choose which users are allowed to use this specific connection to define [exports](export-manage.md). By default, a connection is available to users with an administrator role. Change the **Choose who can use this connection** setting to allow users with contributor role to use this connection.
 
 - Contributors won't be able to view or edit the connection. They'll only see the display name and its type when creating an export.
 - By sharing a connection, you allow contributors to use a connection. Contributors will see shared connections when they set up exports. They can manage every export that uses this specific connection.
@@ -75,7 +74,7 @@ When setting up or editing an export connection, choose which users are allowed 
 If the connection you're removing is used by enrichments or exports, first detach or remove them. The remove dialog guides you to the relevant enrichments or exports.
 
 > [!TIP]
-> Deactivated enrichments and detached exports become inactive. You reactivate them by adding another connection to them on the [Enrichments](enrichment-hub.md) or [Exports](export-destinations.md) page.
+> Deactivated enrichments and detached exports become inactive. You reactivate them by adding another connection to them on the [Enrichments](enrichment-hub.md) or [Exports](export-manage.md) page.
 
 1. Go to **Admin** > **Connections**.
 
