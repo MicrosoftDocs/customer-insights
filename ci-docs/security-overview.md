@@ -15,6 +15,6 @@ Keeping your data secure is essential to your business. Dynamics 365 Customer In
 
 - [Assign user permissions](permissions.md)
 - [Bring your own Key Vault](use-azure-key-vault.md)
-- [Securely access customer data with Customer Lockbock](security-lockbox.md)
+- [Securely access customer data with Customer Lockbox](security-lockbox.md)
 - [Set up an Azure Private Link](private-link.md)
 - [Data Subject Rights (DSR) requests](dsr-rights-requests.md)
