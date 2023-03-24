@@ -46,7 +46,11 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 ## Connect to the data lake database in Azure Synapse Analytics
 
-1. Go to **Data** > **Data sources** and select **Add data source**.Then, select **Azure Synapse Analytics (Preview)**.
+1. Go to **Data** > **Data sources**.
+
+1. Select **Add a data source**.
+
+1. Choose the **Azure Synapse Analytics (Preview)** method.
 
    :::image type="content" source="media/data_sources_synapse.png" alt-text="Dialog box to connect to Synapse Analytics data":::
   

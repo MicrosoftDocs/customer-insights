@@ -23,7 +23,11 @@ To securely connect data in a private network, Power Query supports the use of [
 
 ## Create a new data source
 
-1. Go to **Data** > **Data sources** and select **Add data source**. Then, select **Microsoft Power Query**.
+1. Go to **Data** > **Data sources**.
+
+1. Select **Add a data source**.
+
+1. Select **Microsoft Power Query**.
 
 1. Provide a **Name** and an optional **Description** for the data source, and select **Next**.
 

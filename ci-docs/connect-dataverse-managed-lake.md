@@ -28,7 +28,11 @@ Only one data source of an environment can simultaneously use the same Dataverse
 
 ## Connect to a Dataverse managed lake
 
-1. Go to **Data** > **Data sources** and select **Add data source**. Then, select **Microsoft Dataverse**.
+1. Go to **Data** > **Data sources**.
+
+1. Select **Add a data source**.
+
+1. Select **Microsoft Dataverse**.
 
 1. Enter a **Name** for the data source and an optional **Description**.
 
