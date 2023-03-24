@@ -20,13 +20,11 @@ Creating measures in B-to-C and B-to-B environments works the same way. However,
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 
-Create measures on the level of individual customers (customer attribute, customer measure) or on the level of the business/organization (business measure). Customer attribute and customer measure enable you to track performance per customer. For example, the total spend by each customer. Business measures track performance per business. For example, the total revenue by the company.
+- Customer attribute: Generates output as a new attribute, which gets saved as a new column in the system-generated table named *Customer_Measure*. When refreshing a customer attribute, all the other customer attributes in the *Customer_Measure* table refresh simultaneously. In addition, customer attributes are shown in the customer profile card. Once run or saved, you can't change a customer attribute to a customer measure. Customer attribute measures have a direct relationship to the unified customer profile.
 
-- Customer attribute: Generates output as a new attribute, which gets saved as a new column in the system-generated table named *Customer_Measure*. When refreshing a customer attribute, all the other customer attributes in the *Customer_Measure* table refresh simultaneously. In addition, customer attributes are shown in the customer profile card. Once run or saved, you can't change a customer attribute to a customer measure.
+- Customer measure: Generates output as its own table named after the name of the measure you define. You can't change it to a customer attribute once run or saved. Customer measures don't show in the customer profile card. Customer measures have a direct relationship to the unified customer profile.
 
-- Customer measure: Generates output as its own table and you can't change it to a customer attribute once run or saved. Customer measures don't show in the customer profile card.
-
-- Business measure: Generates output as its own table and shows on the home page of your Customer Insights environment.
+- Business measure: Generates output as its own table and shows on the home page of your Customer Insights environment. Business measures don't have a direct relationship to individual customer profiles. They look across all customer profiles.
 
 1. Go to **Insights** > **Measures**.
 
