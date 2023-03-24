@@ -43,7 +43,7 @@
       href: connect-synapse.md
     - name: Connect to data in a Microsoft Dataverse managed data lake
       href: connect-dataverse-managed-lake.md
-    - name: Add data sources via Power Query connectors
+    - name: Add a data sources via Power Query connectors
       href: connect-power-query.md
     - name: Manage existing data sources
       href: data-sources-manage.md
