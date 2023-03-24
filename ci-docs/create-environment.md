@@ -1,14 +1,12 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 12/15/2022
+ms.date: 03/20/2023
 ms.reviewer: mhart
-ms.subservice: audience-insights
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
-ms.custom: intro-internal
+ms.custom: bap-template
 searchScope: 
   - ci-home
   - customerInsights
@@ -63,7 +61,7 @@ After the first environment is created, the global administrator of the Microsof
 
 ## Step 3: Connect to Microsoft Dataverse
 
-If you have a Dataverse environment, connect Customer Insights. Share data with Dataverse to use it with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps.
+Your Customer Insights environment requires a Microsoft Dataverse environment attached to it. Select an existing Dataverse environment that doesn't already have a Customer Insights environment attached to it. Or you can choose to have a new Microsoft Dataverse environment created and attached. Additionally, if you chose to use your own Azure Data Lake storage in the previous step, you can enable data sharing with Dataverse to use it with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps.
 
 1. Follow the steps in [Work with Customer Insights data in Microsoft Dataverse](customer-insights-dataverse.md).
 
@@ -81,11 +79,12 @@ To change some of the settings later, see [Manage environments](manage-environme
 
 Review the following articles to help you get started with configuring Customer Insights:
 
+- [Get started with Customer Insights in minutes with a single CSV file](data-sources-single.md).
 - [Add more users and assign permissions](permissions.md).
-- [Ingest your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
+- [Ingest several of your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
 - [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).
 - [Create segments](segments.md) to group customers and [measures](measures.md) to review KPIs.
-- [Set up connections](connections.md) and [exports](export-destinations.md) to process subsets of your data in other applications.
+- [Set up connections](connections.md) and [exports](export-manage.md) to process subsets of your data in other applications.
 
 ## Copy the environment configuration
 

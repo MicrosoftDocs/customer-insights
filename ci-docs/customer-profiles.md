@@ -4,11 +4,9 @@ description: "View your unified customer data including using search and filter"
 ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
-manager: shellyha
 searchScope: 
   - ci-customers-page
   - ci-customer-card
@@ -78,7 +76,7 @@ Customer details include:
 - **Additional fields** shows the remaining fields of the selected customer, except IDs.
 - **IDs** lists all IDs under their corresponding table name. Fields are identified as IDs by their semantics.
 
-**Activity timeline** shows data if you have configured [activities](activities.md). The timeline view contains chronologically sorted activities of the selected customer, starting with the most recent activity.
+**Activity timeline** shows data if you have configured [activities](activities.md). The timeline view contains chronologically sorted activities of the selected customer, starting with the most recent activity. Learn how to [filter activities within the timeline](activities.md#contact-level-activity-timeline-filtering).
 
 **Insights**:
 

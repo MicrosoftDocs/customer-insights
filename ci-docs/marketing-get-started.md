@@ -1,11 +1,10 @@
 ---
 title: "Use unified profiles in Dynamics 365 Marketing"
 description: "Learn how to integrate unified profiles and segments with Dynamics 365 Marketing."
-ms.date: 04/20/2022
+ms.date: 02/22/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
-manager: shellyha
 ---
 
 # Use unified customer profiles in Dynamics 365 Marketing
@@ -18,6 +17,11 @@ By connecting Customer Insights data with Marketing, you can:
 - Base dynamic content (such as personalized tokens) in emails, SMS, and push notifications on measures such as loyalty status, subscription renewal date, parent account, or any other measure you've captured in the unified Customer Insights profile.
 - Load data from Marketing into Customer Insights and combine it with customer data from other sources.
 - Apply Customer Insights data cleansing, enrichment, and fuzzy matching tools.
+
+Depending on how you plan to work with Marketing, there are two ways to use the two apps together.
+
+For real-time marketing, use the [integration through Microsoft Dataverse](#use-rich-customer-profiles-in-real-time-marketing).
+For outbound marketing, [export Customer Insight segments and use them in Marketing](#use-unified-segments-with-outbound-customer-journeys).
 
 ## Use rich customer profiles in real-time marketing
 

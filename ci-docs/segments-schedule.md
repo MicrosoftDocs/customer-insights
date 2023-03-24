@@ -1,13 +1,12 @@
 ---
 title: "Schedule segments"
 description: "How to create custom schedules for segments."
-ms.date: 11/28/2022
-ms.subservice: audience-insights
+ms.date: 03/20/2023
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-customers-page
   - ci-enrichment-details

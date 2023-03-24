@@ -1,14 +1,11 @@
 ---
 title: "Export data to an Azure Blob Storage (preview)"
 description: "Learn how to configure the connection and export to Blob storage."
-ms.date: 11/15/2022
+ms.date: 03/20/2023
 ms.reviewer: mhart
-
-ms.subservice: audience-insights
 ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
-manager: shellyha
+author: Nils-2m
+ms.author: nikeller
 ---
 
 # Export data to an Azure Blob Storage (preview)
@@ -23,12 +20,13 @@ Store your Customer Insights data in a Blob storage or use it to transfer your d
 ## Known limitations
 
 - For Azure Blob Storage, choose between [Standard performance and Premium performance tier](/azure/storage/blobs/storage-blob-performance-tiers). If you choose the Premium performance tier, select the [premium block blobs as account type](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
+- Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 
 ## Set up connection to Blob Storage
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Settings** > **Connections**.
+1. Go to **Admin** > **Connections**.
 
 1. Select **Add connection** and choose **Azure Blob Storage**.
 
@@ -44,7 +42,7 @@ Store your Customer Insights data in a Blob storage or use it to transfer your d
 
 ## Configure an export
 
-To configure this export, you must have [permission](export-destinations.md#set-up-a-new-export) for this connection type.
+To configure this export, you must have [permission](export-manage.md#set-up-a-new-export) for this connection type.
 
 > [!IMPORTANT]
 > If you turned on the [soft delete setting](/azure/storage/blobs/soft-delete-blob-enable) for the Azure Blob Storage account, exports will fail. Turn off soft delete to export data to blobs.

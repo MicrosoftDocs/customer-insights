@@ -4,11 +4,9 @@ description: "Go through the data unification process with your data to create a
 ms.date: 11/15/2022
 ms.reviewer: v-wendysmith
 
-ms.subservice: audience-insights
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
-manager: shellyha
 
 searchScope: 
   - ci-map
@@ -21,7 +19,7 @@ After [setting up the data sources](data-sources.md), you can unify the data. Da
 
 For individual consumers (B-to-C) where the data is centered around individuals, unification provides a unified view of your customers. For business accounts (B-to-B) where the data is centered around accounts, unification provides a unified view of your accounts. [Contact unification (preview)](data-unification-contacts.md) allows contacts for those accounts to be separately unified and associated with the accounts.
 
-Data can be unified on a single table or multiple tables. Tables were previously called tables.
+Data can be unified on a single table or multiple tables. Tables were previously called entities.
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 

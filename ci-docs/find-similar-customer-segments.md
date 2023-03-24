@@ -1,14 +1,11 @@
 ---
 title: "Find similar customers with AI (preview) (contains video)"
 description: "Find similar customer segments with artificial intelligence."
-ms.date: 11/15/2022
-
-ms.subservice: audience-insights
+ms.date: 03/20/2023
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-segment-builder
   - ci-segment-insights
@@ -58,7 +55,7 @@ Select **View** to see result distribution across [similarity scores](#about-sim
 
 ## Manage a similar segment
 
-[Work with and manage a similar segment](segments.md#manage-existing-segments) as you do with other segments. For example, export the segment or build a measure.
+[Work with and manage a similar segment](segments.md) as you do with other segments. For example, export the segment or build a measure.
 
 Edit, refresh, rename, download, and delete a similar segment. Editing a similar segment reprocesses your data. The previously created segment gets updated with refreshed data.
 

@@ -4,11 +4,9 @@ description: "Work with tables in Common Data Model."
 ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
-manager: shellyha
 ---
 
 # Table schemas in Common Data Model

@@ -4,11 +4,9 @@ description: "Create and manage relationships between tables from multiple data 
 ms.date: 12/7/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
-manager: shellyha
 searchScope: 
   - ci-semantic-mapping
   - ci-entities

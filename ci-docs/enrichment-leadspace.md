@@ -4,11 +4,9 @@ description: "General information about the Leadspace third-party enrichment."
 ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
-manager: shellyha
 ---
 
 # Enrich company profiles with Leadspace (preview)

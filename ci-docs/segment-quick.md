@@ -1,14 +1,12 @@
 ---
 title: "Create simple segments with quick segments"
 description: "Create simple segments of customers to group them based on various attributes."
-ms.date: 11/28/2022
-
-ms.subservice: audience-insights
+ms.date: 03/20/2023
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-segments
   - ci-segment-builder
@@ -46,6 +44,6 @@ Quick segments let you build simple segments with a single operator quickly for 
 ## Next steps
 
 - [Schedule a segment](segments-schedule.md).
-- [Export a segment](export-destinations.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
+- [Export a segment](export-manage.md) and explore the [Customer Card integration](customer-card-add-in.md) to use segments in other applications.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

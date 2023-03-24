@@ -4,11 +4,9 @@ description: "Predict the products a customer is likely to purchase or interact 
 ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: wmelewong 
 ms.author: wameng
-manager: shellyha
 ---
 
 # Predict product recommendations

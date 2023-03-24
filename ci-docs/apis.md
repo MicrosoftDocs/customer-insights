@@ -4,11 +4,9 @@ description: Use APIs and understand limitations.
 ms.date: 08/31/2022
 ms.reviewer: wimohabb
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
-manager: shellyha
 searchScope: 
   - ci-system-api-usage
   - customerInsights

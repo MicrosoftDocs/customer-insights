@@ -3,12 +3,10 @@ title: "Semantic mappings (preview)"
 description: "Overview of semantic mappings and how to use them." 
 ms.date: 11/15/2022
 
-ms.subservice: audience-insights
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
-manager: shellyha
 searchScope: 
   - ci-semantic-mapping
   - customerInsights

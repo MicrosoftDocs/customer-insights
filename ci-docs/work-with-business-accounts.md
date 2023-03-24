@@ -1,15 +1,12 @@
 ---
 title: "Work with business accounts"
 description: "Learn about business accounts as primary target audience in Dynamics 365 Customer Insights."
-ms.date: 11/15/2022
-
-ms.subservice: audience-insights
+ms.date: 03/20/2023
 ms.topic: conceptual
 author: v-wendysmith
-ms.custom: intro-internal
+ms.custom: bap-template
 ms.author: wimohabb
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-semantic-mapping
   - ci-connections
@@ -44,7 +41,7 @@ If your organization maintains environments for individual customers and busines
 - B-to-B data unification is very similar to B-to-C data unification but has an additional step to unify contacts after account unification. See [Business accounts (B-to-B)](data-unification.md).
 - [Enrichment](enrichment-hub.md): Some enrichment types are available only for individual customer scenarios while others are exclusively available for business accounts.
 - [Predictions and out-of-box models](predictions-overview.md): Transactional churn prediction contains additional steps for business accounts. Other predictions are only available for individual customers.
-- [Activation and export](export-destinations.md): Exports are available for business accounts and individual customers. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts.
+- [Activation and export](export-manage.md): Exports are available for business accounts and individual customers. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts.
 - [System settings](system.md) and [user management](permissions.md): All features in this area are the same for business accounts and individual customers.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

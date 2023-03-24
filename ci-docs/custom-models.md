@@ -4,11 +4,9 @@ description: "Work with custom models from Azure Machine Learning in Dynamics 36
 ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
-manager: shellyha
 searchScope: 
   - ci-custom-models
   - customerInsights
@@ -131,13 +129,13 @@ For the specific OData query to get data from a custom model table, use the foll
 ## Frequently Asked Questions
 
 - Why can't I see my pipeline when setting up a custom model workflow?
-  This issue is frequently caused by a configuration issue in the pipeline. Ensure the [input parameter is configured](azure-machine-learning-experiments.md#dataset-configuration), and the [output datastore and path parameters](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) are also configured.
+  Frequently the cause is a configuration issue in the pipeline. Ensure the [input parameter is configured](azure-machine-learning-experiments.md#dataset-configuration), and the [output datastore and path parameters](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) are also configured.
 
 - What does the error "Couldn't save intelligence workflow" mean? 
   Users usually see this error message if they don't have Owner or User Access Administrator privileges on the workspace. The user needs a higher level of permissions to enable Customer Insights to process the workflow as a service rather than using the user credentials for subsequent runs of the workflow.
 
 - Is a private endpoint / private link for my custom model workflow supported?
-  Customer Insights does not currently support private endpoint for custom models out of the box, but a manual workaround is available. Please contact support for details.
+  Customer Insights does not currently support private endpoint for custom models out of the box, but a manual workaround is available. Contact support for details.
 
 ## Responsible AI
 

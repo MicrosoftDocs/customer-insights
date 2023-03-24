@@ -3,12 +3,9 @@ title: "Data Subject Rights (DSR) requests under GDPR | Microsoft Docs"
 description: "Respond to Data Subject Requests for Dynamics 365 Customer Insights."
 ms.date: 08/31/2022
 ms.reviewer: mhart
-
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
-manager: shellyha
 ---
 
 # Data Subject Rights (DSR) requests under GDPR
@@ -19,7 +16,7 @@ We're committed to helping our customers meet their GDPR requirements. It includ
 
 ## Responding to GDPR data subject delete requests for Customer Insights
 
-The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in the General Data Protection Regulation (GDPR). Removing personal data includes removing all personal data and system-generated logs, except audit log information.
+The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
 
 ### Manage data subject delete requests
 
@@ -42,10 +39,12 @@ As a Customer Insights admin, remove Customer Insights customer data that was de
 
    :::image type="content" source="media/gdpr-data-sources.png" alt-text="Handling GDPR delete requests for customer data.":::
 
-1. After a successful data sources refresh, run the downstream refreshes too. Especially, if you don't have a recurring full refresh of Customer Insights scheduled.
+1. After a successful data source refresh, run the downstream refreshes too, especially if you don't have a recurring full refresh of Customer Insights scheduled.
 
    > [!IMPORTANT]
-   > Static segments are not included in a full refresh or running downstream refreshes after a delete request. To ensure that customer data is removed from static segments too, recreate the static segments with the refreshed source data.
+   > Static segments are not included in a full refresh nor downstream refreshes. In order to comply with the delete request for customer data, recreate the static segments with the refreshed source data.
+   >
+   > Inactive segments are not refreshed (neither manually, nor a scheduled refresh, nor other refreshes). They have a **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. If a segment was executed successfully before changing to an **Inactive** status, a table with the customer data was created by Customer Insights. In order to comply with the delete request for customer data, either periodically activate the segment and run it with the latest Customer Insights data *or* delete the segment.
 
 #### Manage delete requests for user data
 
@@ -55,7 +54,7 @@ As a Customer Insights admin, delete Customer Insights user data.
 
 1. Go to **Settings** > **Permissions** > and select the **Users** tab.
 
-1. Select the check box for the users you want to delete.
+1. Select the checkbox for the users you want to delete.
 
 1. Select **Remove**.
 
