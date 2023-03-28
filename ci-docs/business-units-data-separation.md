@@ -22,22 +22,21 @@ Business unit data separation and Role-based access control (RBAC) allow adminis
 * A B2C Customer Insights (Individual customers) environment (B2B environments are not supported).
 
 ## Access controls in Customer Insights
-Data flows from upstream systems into Customer Insights, where it is processed. The processed data is then saved to Dataverse with ownership information for RBAC-backed activiation scenarios. The following details how access is controlled along this journey.
 
 ### Customer profiles, activities, customer measures, intelligence, enrichments
-Access to a customer profile in Customer Insights is governed by which business unit team owns the profile and the Customer Insights role of the user. The *Administrator* and *Contributor* roles have access to all profiles regardless of owning business unit team. The *Marketing contributor* and *Viewer* roles have access only to customer profiles that belong to their business unit.
+Access to a customer profile in Customer Insights is governed by which business unit team owns the profile and the Customer Insights role of the user. The *Administrator*, *Contributor*, and *Viewer* roles have access to all profiles regardless of owning business unit team. The *Marketing contributor* role has access only to customer profiles that belong to their business unit.
 
 Note that the *Marketing contributor* role has access to only Segments (*build your own*) and Measures (*build your own*) in the Customer Insights user interface. [Learn more about user roles in Customer Insights](https://learn.microsoft.com/en-us/dynamics365/customer-insights/permissions)
 
 > [!NOTE]
    > * The **administrator** and **contributor** roles are highly privledged and **should only be given to users that belong to the *Root* business unit**. They have access to all data, segments, measures, etc. regardless of business unit ownership and all functionality of Customer Insights. These users are typically responsible for preparing the data estate, i.e., setting up data sources, business unit data separation rules, unification rules, enrichments, intelligence models etc.
-   > * The **viewer** role should not be used in production if business unit data separation is enabled.
+   > * The **viewer** role is not bound by business unit and should not be used in production if business unit data separation is enabled.
 
 Ownership of the customer profiles is determined based on mappings that are configured in the Unify step:
 
 1. Go to **Data** > **Unify** > **Business units**
 2. Under **Business unit data separation**, select the column that identifies the business unit for each entity that contributes to unification. Note that additional unification rules cannot be added on the selected columns.
-3. Under **Associate customer profiles with business units**, specify the mapping between the values in the columns that were selected above and business unit teams. For example, 'A' maps to the business unit A team, 'B' maps to the business unit B team, etc. 
+3. Under **Associate customer profiles with business units**, specify the mapping between the values in the columns that were selected above and business unit teams (Only teams that have the *Customer Insights Data Read Access* role are available for selection). For example, 'A' maps to the business unit A team, 'B' maps to the business unit B team, etc. 
 
 ![Screenshot of business unit mappings](media/BU_mappings.png)
 *Screenshot of business unit mapping.*
@@ -64,7 +63,7 @@ Segments and measures are owned by the business unit of the user that created th
 Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and [expressive security model that is built into Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds). 
 
 ### Dataverse security roles
-To access any data from Customer Insights in Dataverse, the user needs to have the *Customer Insights Data Reader* security role in Dataverse.
+To access any data from Customer Insights in Dataverse, the user needs to have the *Customer Insights Data Read Access* security role in Dataverse. This role cannot be modified. If different access is needed, for example, access to all profiles irrespectively of business unit you can create a custom role and assign it.
 
 [Learn more about Dataverse security roles.](https://learn.microsoft.com/en-us/power-platform/admin/database-security)
 
@@ -80,10 +79,6 @@ A typical business unit structure is depicted below. Marketing contributor users
 ![Example of a business unit structure with the Org parent business unit at the top and child business units A to D below](media/BU_structure_example.png)
 *Example of a business unit structure with the Org parent business unit at the top and child business units A to D below*
 
- > [!NOTE]
-   > * Only the default table configurations are currently supported. Altering RBAC settings in Dataverse can lead to unexpected results.
- 
-
 ## Customer Insights with Dynamics 365 Marketing
 Customer Insights and Dynamics 365 Marketing are tightly integrated for a delightful activation journey. 
 
@@ -94,6 +89,8 @@ Marketing contributors in Customer Insights should be given the *Marketing Profe
 
 ## Customer Insights with Dataverse
 Customer insights writes data into Dataverse with ownership and RBAC properties for easy activation, for example, through [model-driven applications](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-app-overview). Using model-diven applications, data can easily be leveraged in customer service, sales, operations, and other business functions with the benefits of fine-grained RBAC controls.
+
+Currently, business unit ownership from the associated customer profile is applied in Dataverse on the following tables: CustomerProfile, UnifiedActivity, SegmentMembership and CustomerMeasure. All records are assign to the root business unit for the rest of the tables that are written to Dataverse.
 
 ## Customer Insights data consumption APIs
 To maintain business unit data separation, all API based data consumption scenarios must call [Dataverse APIs](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview). Customer Insights APIs are not supported for these scenarios.
