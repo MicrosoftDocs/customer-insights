@@ -76,7 +76,7 @@ To access data from Customer Insights, the user needs to be member of one of the
 A typical business unit structure is depicted below. Marketing contributor users have access only to customer profiles that are owned by their business unit team. For example, if a marketing contributor user creates a segment with all customers, then it will only contain the customers that are owned by the business unit that the Marketing contributor belongs to. All other Customer Insights roles have access to all customer profiles in Customer Insights regardless of owning business unit.
 
 
-![Example of a business unit structure with the Org parent business unit at the top and child business units A to D below](media/BU_structure_example.png)
+![Example of a business unit structure with the Org parent business unit at the top and child business units A to D below](media/BU_structure_example_Root.png)
 *Example of a business unit structure with the Org parent business unit at the top and child business units A to D below*
 
 ## Customer Insights with Dynamics 365 Marketing
