@@ -102,6 +102,8 @@ To maintain business unit data separation, all API based data consumption scenar
 * Synonyms in the business unit mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
 * Only *build your own* segments and measures (no projected attributes) are supported for the Marketing contributor role.
 * Segments and Business measures are not stored in Dataverse yet.
+* The marketing contributor role can only access entities that have a relationship with customer profiles.
+* Projected attributes are not supported for the marketing contributor role.
 * Modernized business units is not supported.
 
 
