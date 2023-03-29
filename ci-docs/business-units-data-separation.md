@@ -12,7 +12,7 @@ ms.custom: bap-template
 ---
 
 # Business unit (BU) data separation and Role-based access control (Public preview)
-Business unit data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. 
+Business unit data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. [Learn more about business units and role-based access control in Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds).
 
 ## Prerequisites
 * Business units and associated teams are defined in Dataverse -> [guide to setting up business units in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
@@ -105,6 +105,7 @@ To maintain business unit data separation, all API based data consumption scenar
 * The marketing contributor role can only access entities that have a relationship with customer profiles.
 * Projected attributes are not supported for the marketing contributor role.
 * Modernized business units is not supported.
+* Field-level security is not supported.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
