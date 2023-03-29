@@ -15,8 +15,8 @@ ms.custom: bap-template
 Business unit data separation and Role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. [Learn more about business units and role-based access control in Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds).
 
 ## Prerequisites
-* Business units and associated teams are defined in Dataverse -> [guide to setting up business units in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
-* Users are assigned to appropriate business units and teams -> [guide to managing users and teams in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/users-settings)
+* Business units and associated teams are defined in Dataverse. [Learn more about setting up business units in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
+* Users are assigned to appropriate business units and teams. [Learn more about managing users and teams in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/users-settings)
 * Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**. Notice that it is not possible to disable business unit data separation on an environment after it has been enabled. 
 * All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row of data. 
 * A B2C Customer Insights (Individual customers) environment (B2B environments are not supported).
