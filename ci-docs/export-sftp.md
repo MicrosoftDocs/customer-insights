@@ -68,7 +68,7 @@ Use your customer data in third-party applications by exporting them to a Secure
 1. Choose if you want to export your data **Gzipped** or **Unzipped** and the **field delimiter** for the exported files.
 
 1. Select the tables, for example segments, that you want to export.
-2. Choose next and decide if you want to sent all fields of the selected tables. You can deselect fields with the checkbox. By default all fields in your selected table are exported. 
+2. Choose next and decide if you want to sent all fields of the selected tables. By default all fields in your selected table are exported. You can deselect fields with the checkbox.
 
    > [!NOTE]
    > Each selected table will be split into a maximum of five output files when exported.
