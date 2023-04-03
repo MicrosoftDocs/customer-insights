@@ -1,7 +1,7 @@
 ---
 title: "Export data to SFTP hosts (preview) (contains video)"
 description: "Learn how to configure the connection and export to an SFTP location."
-ms.date: 02/03/2023
+ms.date: 04/03/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -68,9 +68,10 @@ Use your customer data in third-party applications by exporting them to a Secure
 1. Choose if you want to export your data **Gzipped** or **Unzipped** and the **field delimiter** for the exported files.
 
 1. Select the tables, for example segments, that you want to export.
+2. Choose **Next** and determine if you want to send all fields in the selected tables. By default, all fields in your selected tables are exported. Clear the checkox next to the fields you don't want to export.
 
    > [!NOTE]
-   > Each selected table will be split into a maximum of five output files when exported.
+   > Each selected table is split into a maximum of five output files when exported.
 
 1. Select **Save**.
 
