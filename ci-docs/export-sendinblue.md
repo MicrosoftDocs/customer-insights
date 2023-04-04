@@ -1,7 +1,7 @@
 ---
 title: "Export segments to Sendinblue (preview)"
 description: "Learn how to configure the connection and export to Sendinblue."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: how-to
@@ -31,7 +31,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Sendinblue**.
 

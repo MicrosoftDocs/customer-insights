@@ -1,7 +1,7 @@
 ---
 title: "Explore Customer Insights"
 description: "Start exploring the app on the Home page."
-ms.date: 05/11/2022
+ms.date: 12/6/2022
 ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong
@@ -15,9 +15,13 @@ searchScope:
 
 You can access [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 
-The **Home** page guides you through the configuration process for key features and provides an overview of segments, measures, and enrichment data.
+The **Home** page guides you through the configuration process for key features and provides an overview of segments, measures, and enrichment data. The default home page shows how to get insights in minutes by adding data in a single file.
 
-:::image type="content" source="media/home-page.png" alt-text="Screenshot of the Home screen showing sample insights.":::
+:::image type="content" source="media/home-step-by-step.png" alt-text="Screenshot of the default Home screen showing get insights in minutes.":::
+
+If you have multiple data sources, select **Step-by-step guide**.
+
+:::image type="content" source="media/home-page.png" alt-text="Screenshot of the Home screen showing step-by-step cards.":::
 
 ## Left side pane
 
@@ -37,11 +41,19 @@ The **Settings** control, represented by a gear icon, lets you gather session de
 
 Your profile picture opens the **Account manager** for your Microsoft 365 profile. Select **My account** to manage your personal settings.
 
-## Getting started with Customer Insights section
+## Getting started with Customer Insights
+
+The cards that display on the **Home** page depend on the selection: **Get insights in mins** or **Step-by-step guide**.
+
+### Get insights in minutes
+
+This section contains a card to upload a single file and receive automatic customer insights and then a card to add connections to activate those insights. Select **Add data** to [upload your file](data-sources-single.md). Once your data is uploaded and insights such as segments and measures generated, select **Add connections** to connect your favorite services. For example, export the data to Facebook to use in social media.
+
+### Step-by-step guide
 
 This section contains cards that help you walk through the process of setting up your Customer Insights environment.
 
-1. The **Add data** card assists you with your data import. Customer Insights supports [several options to bring in data about your customers](data-sources.md). Select **Add data sources** to get started.
+1. The **Add data** card assists you with your data import. Customer Insights supports [several options to bring in data about your customers](data-sources.md). Select **Add a data sources** to get started.
 1. Once the initial data import successfully completes, you can use the **Unify data** card to harmonize the data and [create unified customer profiles](data-unification.md) from disparate sources. 
 1. With unified customer profiles in place, it's time to review the **Analyze data** options and get additional insights. Give it a try to create [business measures](measures.md) to track KPIs, [define segments](segments.md) to reach specific audiences, or [configure predictions](predictions-overview.md) with the help of AI.
 1. Now that your customer data is imported, unified, and neatly structured, you use our [various export destinations](export-destinations.md) to take action on the data. Select **Add connections** to connect your favorite services. For example, export the data to Dynamics 365 Marketing to create outbound marketing campaigns or build customer journeys. 

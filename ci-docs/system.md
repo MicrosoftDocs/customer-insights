@@ -1,12 +1,12 @@
 ---
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights."
-ms.date: 08/09/2022
-
+ms.date: 03/20/2023
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
+ms.custom: bap-template
 searchScope: 
   - ci-system-status
   - ci-system-about
@@ -17,27 +17,13 @@ searchScope:
 
 # View system configuration
 
-View system information, system status, and API usage.
-
-## View API usage
-
-View details about the real-time API usage and see which events happened in a given time frame.
-
-1. Go to **Admin** > **System** and select the **API usage** tab.
-
-1. **Select a time frame** to view.
-
-   The **API usage** page contains three sections:
-
-   - **API calls** - a chart that visualizes the aggregated number of calls to the API in the selected time frame.
-   - **Data transfer** - a chart that shows the amount of data that was transferred through the API in the selected time frame.
-   - **Operations** - a table with rows for each available API operation and details about the usage of the operations. Select an operation name to go to [the API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
+View system information and system status.
 
 ## View system information
 
 View the environment display name, ID, region, type and session ID.
 
-1. Go to **Admin** > **System** and select the **About** tab.
+1. Go to **Settings** > **System** and select the **About** tab.
 
 1. To view the language and country/region, select the **General** tab.
 
@@ -47,7 +33,7 @@ Customer Insights [supports many languages](/dynamics365/get-started/availabilit
 
 Imported data and information you entered manually aren't translated.
 
-1. Go to **Admin** > **System** and select the **General** tab.
+1. Go to **Settings** > **System** and select the **General** tab.
 
 1. To change your preferred language, choose a **Language** from the dropdown.
 
@@ -59,7 +45,7 @@ Imported data and information you entered manually aren't translated.
 
 Track the progress of tasks, data ingestion, data exports, and several other important product processes. Review the information to ensure the completeness of your active tasks and processes.
 
-1. Go to **Admin** > **System** and select the **Status** tab.
+1. Go to **Settings** > **System** and select the **Status** tab.
 
    Status and processing information for various processes display. View the **Name** of the task, the **Status** of its most recent run, and when it was **Last updated**.
 
@@ -96,7 +82,7 @@ Refresh for tasks and processes is run according to the [configured schedule](sc
 |Activity  |Runs manually (single time refresh). Depends on merge process. Insights depend on its processing.|
 |Analysis linking |Runs manually (single time refresh). Depends on segments.  |
 |Analysis preparation |Runs manually (single time refresh). Depends on segments.  |
-|Data preparation   |Needs an entity to run on. Data source entities depend on ingestion. Enriched entities depends on enrichments. The Customer entity depends on merge.  |
+|Data preparation   |Needs a table to run on. Data source tables depend on ingestion. Enriched tables depends on enrichments. The Customer table depends on merge.  |
 |Data sources   |Doesn't depend on any other process. Match depends on the successful completion of this process.  |
 |Enrichments   |Runs manually (single time refresh). Depends on merge process. |
 |Exports destinations |Runs manually (single time refresh). Depends on segments.  |
@@ -109,7 +95,7 @@ Refresh for tasks and processes is run according to the [configured schedule](sc
 |Search   |Runs manually (single time refresh). Depends on merge process. |
 |Segments  |Runs manually (single time refresh). Depends on merge process. Insights depend on its processing.|
 |System   |Depends on the completion of the match process. Segments, measures, enrichment, search, activities, predictions, and data preparation depend on the successful completion of this process.   |
-|User  |Runs manually (single time refresh). Depends on entities.  |
+|User  |Runs manually (single time refresh). Depends on tables.  |
 
 Select the status of a process to see the progress details of the entire job it was in. The refresh processes above can help to understand what you can do to address a **Skipped** or **Queued** task or process.
 

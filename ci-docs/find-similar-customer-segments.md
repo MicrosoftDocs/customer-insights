@@ -1,8 +1,7 @@
 ---
 title: "Find similar customers with AI (preview) (contains video)"
 description: "Find similar customer segments with artificial intelligence."
-ms.date: 03/25/2022
-
+ms.date: 03/20/2023
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
@@ -24,7 +23,7 @@ Find similar customers in your customer base using artificial intelligence. You 
 
 ## Find similar customers
 
-1. Go to **Segments** and select the segment you want to base your new segment on. That's your *source segment*.
+1. Go to **Insights** > **Segments** and select the segment you want to base your new segment on. That's your *source segment*.
 
 1. Select **Find similar customers**.
 
@@ -48,7 +47,7 @@ Find similar customers in your customer base using artificial intelligence. You 
 
 ## View the similar segment
 
-After processing the similar segment, you'll find the new segment listed on the **Segments** page with the type **Expansion**.
+After processing the similar segment, you'll find the new segment listed on the **Insights** > **Segments** page with the type **Expansion**.
 
 Select **View** to see result distribution across [similarity scores](#about-similarity-scores) and similarity score values under **Segment members preview**.
 
@@ -56,7 +55,7 @@ Select **View** to see result distribution across [similarity scores](#about-sim
 
 ## Manage a similar segment
 
-[Work with and manage a similar segment](segments.md#manage-existing-segments) as you do with other segments. For example, export the segment or build a measure.
+[Work with and manage a similar segment](segments.md) as you do with other segments. For example, export the segment or build a measure.
 
 Edit, refresh, rename, download, and delete a similar segment. Editing a similar segment reprocesses your data. The previously created segment gets updated with refreshed data.
 

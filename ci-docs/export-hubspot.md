@@ -1,7 +1,7 @@
 ---
 title: "Export Customer Insights data to HubSpot"
 description: "Learn how to configure the connection and export to HubSpot."
-ms.date: 09/23/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 ms.topic: conceptual
 author: pkieffer
@@ -27,7 +27,7 @@ Export segments of unified customer profiles to HubSpot and use them for email m
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **HubSpot** to configure the connection.
 

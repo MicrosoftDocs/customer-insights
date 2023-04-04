@@ -22,7 +22,7 @@ Schedule automatic refreshes of all your [ingested data sources](data-sources.md
 
 ## Set system refresh schedule
 
-1. Go to **Admin** > **System** and select the **Schedule** tab.
+1. Go to **Settings** > **System** and select the **Schedule** tab.
 
    :::image type="content" source="media/schedule_refresh.png" alt-text="Schedule refresh tab from System page.":::
 

@@ -1,12 +1,12 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 08/15/2022
+ms.date: 03/20/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
-ms.custom: intro-internal
+ms.custom: bap-template
 searchScope: 
   - ci-home
   - customerInsights
@@ -53,7 +53,7 @@ After the first environment is created, the global administrator of the Microsof
 1. Choose where to store the Customer Insights data:
 
    - **Customer Insights storage**: Data storage is managed automatically. It's the default option and unless there are specific requirements to store data in your own storage account, we recommend using this option.
-   - **Azure Data Lake Storage**: Your own Azure Data Lake Storage account to store the data so you have full control where the data is stored. Follow the steps in [Use your own Azure Data Lake Storage account](own-data-lake-storage.md).
+   - **Azure Data Lake Storage Gen2**: Your own Azure Data Lake Storage account to store the data so you have full control where the data is stored. Follow the steps in [Use your own Azure Data Lake Storage account](own-data-lake-storage.md).
 
    :::image type="content" source="media/data-storage-environment.png" alt-text="Choose the preferred option to store your data.":::
 
@@ -61,7 +61,7 @@ After the first environment is created, the global administrator of the Microsof
 
 ## Step 3: Connect to Microsoft Dataverse
 
-If you have a Dataverse environment, connect Customer Insights. Share data with Dataverse to use it with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps.
+Your Customer Insights environment requires a Microsoft Dataverse environment attached to it. Select an existing Dataverse environment that doesn't already have a Customer Insights environment attached to it. Or you can choose to have a new Microsoft Dataverse environment created and attached. Additionally, if you chose to use your own Azure Data Lake storage in the previous step, you can enable data sharing with Dataverse to use it with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps.
 
 1. Follow the steps in [Work with Customer Insights data in Microsoft Dataverse](customer-insights-dataverse.md).
 
@@ -79,11 +79,12 @@ To change some of the settings later, see [Manage environments](manage-environme
 
 Review the following articles to help you get started with configuring Customer Insights:
 
+- [Get started with Customer Insights in minutes with a single CSV file](data-sources-single.md).
 - [Add more users and assign permissions](permissions.md).
-- [Ingest your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
+- [Ingest several of your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
 - [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).
 - [Create segments](segments.md) to group customers and [measures](measures.md) to review KPIs.
-- [Set up connections](connections.md) and [exports](export-destinations.md) to process subsets of your data in other applications.
+- [Set up connections](connections.md) and [exports](export-manage.md) to process subsets of your data in other applications.
 
 ## Copy the environment configuration
 
@@ -116,14 +117,14 @@ When you copy the environment configuration, a confirmation message displays whe
 
 1. Edit the data sources and enter the credentials to refresh them. Data sources from the Common Data Model folder and Dataverse must be created manually with the same name as in the source environment.
 
-1. After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer entity.
+1. After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer table.
 
    > [!TIP]
    > For accounts and contacts, select **Unify accounts** > **Unify profiles and dependencies**.
 
-1. When the data unification is complete, go to **Measures** and **Segments** to refresh them.
+1. When the data unification is complete, go to **Insights** > **Measures** and **Insights** > **Segments** to refresh them.
 
-1. Go to **Admin** > **Connections** to reauthenticate the connections in your new environment.
+1. Go to **Settings** > **Connections** to reauthenticate the connections in your new environment.
 
 1. Go to **Data** > **Enrichment** and **Data** > **Exports** to reactivate them.
 
