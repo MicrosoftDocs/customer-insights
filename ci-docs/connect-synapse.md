@@ -18,7 +18,9 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 ## Prerequisites
 
 > [!NOTE]
-> Synapse Workspaces which have [firewall enabled](/azure/synapse-analytics/security/synapse-workspace-ip-firewall) are currently not supported.
+> - Azure Synapse workspaces which have [firewall enabled](/azure/synapse-analytics/security/synapse-workspace-ip-firewall) are currently not supported.
+> - The Azure Synapse workspace used as data source must be in the same tenant as the Customer Insights environment. Cross-tenant scenarios are not supported by Customer Insights.
+
 > [!IMPORTANT]
 > Make sure to set all **role assignments** as described.  
 
