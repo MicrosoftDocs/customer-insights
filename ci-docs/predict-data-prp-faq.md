@@ -5,7 +5,7 @@ ms.date: 04/05/2023
 ms.reviewer: v-wendysmith
 ms.topic: faq
 author: radsay01
-ms.author: radsay01
+ms.author: rsayyaparaju 
 ms.custom: bap-template
 ---
 
@@ -27,6 +27,6 @@ If you don’t see the Data prep report, it has likely not been generated becaus
 
 The Data prep report refresh is only triggered when unification is completed. If you have made fixes to your ingested data but have not completed unification again, the report doesn’t refresh. 
 
-# How do I address the issues and corresponding recommendations for remediation in the Data prep report
+## How do I address the issues and corresponding recommendations for remediation in the Data prep report
 
 In most cases, the issues and recommendations surfaced in the Data prep report must be addressed by performing fixes on the source data outside of Customer Insights, using data clean up tools such as Power Query. The new and improved data must then be re-ingested, and unification must be completed again for the data quality to improve.
