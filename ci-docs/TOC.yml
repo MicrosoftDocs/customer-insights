@@ -55,6 +55,12 @@
       href: real-time-data-ingestion.md
     - name: Common reasons for ingestion errors
       href: common-data-ingestion-errors.md
+    - name: Data quality and preparation 
+      items:
+        - name: Data preparation overview
+          href: data-prep-overview.md
+        - name: Data preparation FAQ
+          href: data-prep-faq.md
 
 - name: Unification
   items:
@@ -296,6 +302,8 @@
       href: connections.md
     - name: Schedule system refresh
       href: schedule-refresh.md
+    - name: Turn off the data preparation report
+      href: data-prep-admn.md
     - name: View system configuration
       href: system.md
 
