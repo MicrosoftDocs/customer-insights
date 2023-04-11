@@ -1,33 +1,34 @@
 ---
-title: "Data Subject Rights (DSR) requests under GDPR | Microsoft Docs"
-description: "Respond to Data Subject Requests for Dynamics 365 Customer Insights."
-ms.date: 08/31/2022
+title: Respond to Data Subject Rights (DSR) requests
+description: Learn how to respond to Data Subject Requests with Dynamics 365 Customer Insights.
+ms.date: 04/11/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
+ms.custom: bap-template
 ---
 
-# Data Subject Rights (DSR) requests under GDPR
+# Respond to Data Subject Rights (DSR) requests
 
-The European Union’s General Data Protection Regulation (GDPR) has been in effect since May 25, 2018. It gives significant rights to individuals regarding their data. The GDPR is about protecting and enabling the privacy rights of individuals. Read more about Microsoft's commitment to security and compliance at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
+The European Union’s (EU) General Data Protection Regulation (GDPR) gives significant rights to individuals regarding their data. [!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
 
-We're committed to helping our customers meet their GDPR requirements. It includes the right to delete or export data that includes personal information such as user IDs, phone numbers, and email addresses. Administrators can implement user requests to delete or export personal data.
+[!INCLUDE [gdpr-dsr-delete-note](~/../msft-shared-content/privacy-includes/gdpr-dsr-delete-note.md)]
 
-## Responding to GDPR data subject delete requests for Customer Insights
+## Respond to data subject delete requests for Customer Insights
 
-The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
+The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in the EU's privacy laws and regulations. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
 
 ### Manage data subject delete requests
 
 Customer Insights offers the following in-product experiences to delete personal data for a specific customer or user:
 
-- **Manage delete requests for customer data**: Customer data in Customer Insights is ingested from original data sources external to Customer Insights. Perform GDPR delete requests in the original data source first.
-- **Manage delete requests for Customer Insights user data**: Data for users is created by Customer Insights. Perform all GDPR delete requests in Customer Insights.
+- **Manage delete requests for customer data**: Customer data in Customer Insights is ingested from original data sources external to Customer Insights. Perform data delete requests in the original data source first.
+- **Manage delete requests for Customer Insights user data**: Data for users is created by Customer Insights. Perform all data delete requests in Customer Insights.
 
 #### Manage requests to delete customer data
 
-As a Customer Insights admin, remove Customer Insights customer data that was deleted in the data source. Verify the GDPR delete requests were performed in the original data source.
+As a Customer Insights admin, remove Customer Insights customer data that was deleted in the data source. Verify the data delete requests were performed in the original data source.
 
 1. Sign in to Dynamics 365 Customer Insights.
 
@@ -37,7 +38,7 @@ As a Customer Insights admin, remove Customer Insights customer data that was de
    1. Select the data source and then select **Refresh**.
    1. Check the status of the data source under **Status**. A check mark means the refresh was successful. A warning triangle means something went wrong. If a warning triangle is displayed, contact D365CI@microsoft.com.
 
-   :::image type="content" source="media/gdpr-data-sources.png" alt-text="Handling GDPR delete requests for customer data.":::
+   :::image type="content" source="media/gdpr-data-sources.png" alt-text="Handling data delete requests for customer data.":::
 
 1. After a successful data source refresh, run the downstream refreshes too, especially if you don't have a recurring full refresh of Customer Insights scheduled.
 
@@ -60,9 +61,9 @@ As a Customer Insights admin, delete Customer Insights user data.
 
 1. Confirm the deletion.
 
-## Responding to GDPR data subject export requests
+## Respond to data subject export requests
 
-The right of data portability allows data subjects to request a copy of their personal data in an electronic format (a “structured, commonly used, machine readable, and interoperable format”) that can be transmitted to another data controller.
+The right of data portability allows data subjects to request a copy of their personal data in a structured, common, electronic format that can be transmitted to another data controller.
 
 ### Manage export and view requests
 
