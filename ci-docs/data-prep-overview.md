@@ -15,20 +15,20 @@ The data preparation model in Customer Insights helps you understand the overall
 
 ## Prerequisites
 
-Data preparation automatically runs if the following prerequisites have been met:
+Data preparation automatically runs if the following prerequisites are met:
 
 - [Ingestion](data-sources.md) completed with customer and transaction data.
 - [Unification](data-unification.md) completed.
-- [Activities](activities.md) and relationships mapped.
-- [System data preparation setting](data-prep-admin.md) turned **On**, which is the default.
+- [Activities and relationships](activities.md) mapped.
+- [System data preparation setting](data-prep-admn.md) turned **On**, which is the default.
 - At least 100 customer records, preferably 1,000 records.
 - At least one year of transaction history, preferably two to three years. Ideally two to three transactions per customer ID, preferably across multiple dates.
 - Customer identifier: A unique identifier to match transactions to to your customers.
-- Less than 20% missing values in required fields
+- Less than 20% missing values in required fields.
 
 ## Data preparation report
 
-After unification is completed, Customer Insights automatically generates the data preparation report and analyzes contextual information on your data. You can access the data preparation report from the **Home** page, the **Data sources** page and the **Predictions**.
+After unification is completed, Customer Insights automatically generates the data preparation report and analyzes contextual information on your data. this information is updated anytime you run unification. You can access the data preparation report from the **Home** page, the **Data sources** page, and the **Predictions** page.
 
 There are three primary sections within the data preparation report.
 
@@ -43,7 +43,7 @@ There are three primary sections within the data preparation report.
 
 ## Contextual information on your data
 
-In addition to the data preparation report, Customer Insights provides contextual information related to the **Predictions** page. Use this information to understand which prediction models are best suited to your data, before you go through the time and effort of configuration and running the model. Models labeled as **Ready to use** are most suited to your data while those labeled as **Not ready to use** are not. For any **Not ready to use** models, click the model card to see more contextual information, review the full data preparation report, and make the necessary fixes to your data per the guidance of the Issues and recommendations section.
+In addition to the data preparation report, Customer Insights provides contextual information related to the prediction models. Use this information to understand which prediction models are best suited to your data, before you go through the time and effort of configuration and running the model. On the **Predictions** page, models labeled as **Ready to use** are most suited to your data while those labeled as **Not ready to use** are not. For any **Not ready to use** models, click the model card to see more contextual information, review the full data preparation report, and make the necessary fixes to your data per the guidance of the Issues and recommendations section.
 
 Details on which prediction models are ready or not to use are available in each out-of-box model card. Information on the data quality impacting each prediction model is available in the right-side pane when a model is selected. The header shows a data quality grade specific to prediction models with a link to the full data preparation report.
 
