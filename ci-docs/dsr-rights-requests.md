@@ -11,13 +11,13 @@ ms.custom: bap-template
 
 # Respond to Data Subject Rights (DSR) requests
 
-The European Union’s (EU) General Data Protection Regulation (GDPR) gives significant rights to individuals regarding their data. [!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
+[!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
 
-[!INCLUDE [gdpr-dsr-delete-note](~/../msft-shared-content/privacy-includes/gdpr-dsr-delete-note.md)]
+[!INCLUDE [gdpr-dsr-delete-note](~/../msft-shared-content/privacy-includes/gdpr-dsr-delete-export-note.md)]
 
 ## Respond to data subject delete requests for Customer Insights
 
-The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in the EU's privacy laws and regulations. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
+The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in many privacy laws and regulations. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
 
 ### Manage data subject delete requests
 
@@ -38,7 +38,7 @@ As a Customer Insights admin, remove Customer Insights customer data that was de
    1. Select the data source and then select **Refresh**.
    1. Check the status of the data source under **Status**. A check mark means the refresh was successful. A warning triangle means something went wrong. If a warning triangle is displayed, contact D365CI@microsoft.com.
 
-   :::image type="content" source="media/gdpr-data-sources.png" alt-text="Handling data delete requests for customer data.":::
+   :::image type="content" source="media/gdpr-data-sources.png" alt-text="Handling data delete requests for customer data.":::<!-- EDITOR'S NOTE: Please change the name of the image file to remove "gdpr." -->
 
 1. After a successful data source refresh, run the downstream refreshes too, especially if you don't have a recurring full refresh of Customer Insights scheduled.
 
