@@ -1,7 +1,7 @@
 ---
-title: "Find similar customers with AI (preview) (contains video)"
-description: "Find similar customer segments with artificial intelligence."
-ms.date: 03/20/2023
+title: Find similar customers with AI (preview) (contains video)
+description: Find similar customer segments with artificial intelligence.
+ms.date: 04/11/2023
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
@@ -19,7 +19,7 @@ Find similar customers in your customer base using artificial intelligence. You 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOFou]
 
 > [!NOTE]
-> *Find similar customers* uses automated means to evaluate data and make predictions based on that data. Therefore it has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation (“GDPR”). Customer’s use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including predictions, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
+> *Find similar customers* uses automated means to evaluate data and make predictions based on that data. Therefore it has the capability to be used as a method of profiling, as that term is defined by various privacy laws and regulations. Customers' use of this feature to process data may be subject to those laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including predictions, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
 ## Find similar customers
 
