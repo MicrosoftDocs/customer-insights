@@ -21,6 +21,7 @@ You can also [ingest data from on-premises data sources using Power Platform dat
 
 - Customer Insights and Dataverse environments must be hosted in the same region.
 - A global administrator role set up in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you're added to those security groups.
+- A Common Data Service/Dataverse [license is assigned](/power-platform/admin/create-users#to-assign-a-license) to you to get Read-Write access mode. Unlicensed administrators get Administrative access mode only.
 - No other Customer Insights environment already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
 - A Microsoft Dataverse environment connected to a single storage account if you configure the environment to [use your Azure Data Lake Storage](own-data-lake-storage.md).
 
