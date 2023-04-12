@@ -5,7 +5,7 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
-ms.date: 01/05/2023
+ms.date: 04/11/2023
 ms.topic: conceptual
 ms.custom: bap-template
 searchScope: 
@@ -41,7 +41,7 @@ If you provide public healthcare and your goal is to minimize the expenses for i
 Discover interesting segments of your customers with the help of an AI model. This machine learning powered feature suggests segments based on measures or customer attributes. It can help improve your Key Performance Indicators (KPIs) or better understand the influence of attributes in context of other attributes.
 
 > [!NOTE]
-> The suggested segments feature uses automated means to evaluate data and make predictions based on that data. Therefore, it has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Your use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including this feature, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
+> The suggested segments feature uses automated means to evaluate data and make predictions based on that data. Therefore, it has the capability to be used as a method of profiling, as that term is defined by privacy laws and regulations. Your use of this feature to process data may be subject to those laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including this feature, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
 :::image type="content" source="media/suggested-segments.png" alt-text="Suggested segments page that shows details of a suggestion in a side pane.":::
 
