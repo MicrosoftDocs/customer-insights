@@ -1,8 +1,7 @@
 ---
-title: "Analyze sentiment for customer feedback (preview)"
-description: "Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights." 
-ms.date: 11/15/2022
-
+title: Analyze sentiment for customer feedback (preview)
+description: Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights."
+ms.date: 04/11/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong 
@@ -156,7 +155,7 @@ To create new segments of customers from the sentiment analysis results, select 
 
 As with any feature that uses predictive artificial intelligence, there could be potential bias in the data you use to predict customer sentiment. For example, if you only collect feedback digitally, you might miss feedback from customers who primarily conduct business with you in person, which affect the feature’s output.
 
-As this feature uses automated means to evaluate data and make predictions based on that data, it therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Your use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including sentiment analysis, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
+As this feature uses automated means to evaluate data and make predictions based on that data, it therefore has the capability to be used as a method of profiling, as that term is defined by privacy laws and regulations. Your use of this feature to process data may be subject to those laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including sentiment analysis, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
 
