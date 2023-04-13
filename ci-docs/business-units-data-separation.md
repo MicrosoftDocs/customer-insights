@@ -17,9 +17,13 @@ Business unit data separation and Role-based access control (RBAC) allow adminis
 ## Prerequisites
 * Business units and associated teams are defined in Dataverse. [Learn more about setting up business units in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units) 
 * Users are assigned to appropriate business units and teams. [Learn more about managing users and teams in Dataverse.](https://learn.microsoft.com/en-us/power-platform/admin/users-settings)
-* Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**. Notice that it is not possible to disable business unit data separation on an environment after it has been enabled. 
+* Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**. 
 * All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row of data. 
-* A B2C Customer Insights (Individual customers) environment (B2B environments are not supported).
+* A B2C Customer Insights (Individual customers) environment.
+
+> [!NOTE]
+   > * B2B (Business accounts) environments are not supported.
+   > * It is not possible to disable business unit data separation on an environment after it has been enabled. 
 
 ## Access controls in Customer Insights
 
@@ -49,8 +53,8 @@ Customer profiles are owned by teams within business units (as opposed to being 
 * A profile belongs to exactly one business unit.
 * The unification rules and customer profile schema are the same for all business units.
 
- > [!TIP]
-   > * Any changes to the BU data separation configuration will trigger a full refresh. If your instance is in incremental mode, then a full refresh needs to be triggered manually after changes have been made.
+ > [!NOTE]
+   > * Any changes to the BU data separation configuration will trigger a full refresh. If your instance is in incremental mode, then a [full refresh](https://learn.microsoft.com/en-us/dynamics365/customer-insights/incremental-refresh-data-sources#run-a-one-time-full-refresh-for-azure-data-lake-data-sources) needs to be triggered manually after changes have been made.
    
 Data that are tied to a customer profile, for example, activities, customer measures, intelligence output, and enrichments inherit the business unit ownership from the associated profile. 
 
@@ -58,6 +62,12 @@ Intelligence models are trained on all data, i.e., no business unit data separat
   
 ### Segments and business measures
 Segments and measures are owned by the business unit of the user that created them. For example, if a user is member of business unit *A* then any segment and measure that user creates is owned by business unit *A*. Access is controlled by the RBAC settings on the segments definitions and measures definitions tables in Dataverse. The default setting is that segments and measures can be seen, edited, and deleted by other users that belong to the same business unit.
+
+> [!NOTE]
+   > * Segments and measures cannot be owned by more than one business unit nor be shared with other business units.
+   > * Only *build your own* segments and measures (no projected attributes) are supported for the Marketing contributor role.
+   > * Segments and Business measures are not stored in Dataverse yet.
+   > * Projected attributes are not supported for the marketing contributor role.
 
 ## Customer Insights and Dataverse
 Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and [expressive security model that is built into Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds). 
@@ -98,13 +108,9 @@ To maintain business unit data separation, all API based data consumption scenar
 ## Notes
 
 * A customer profile cannot be owned by more than one business unit. 
-* Segments and measures cannot be owned by more than one business unit nor be shared with other business units.
 * Synonyms in the business unit mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
-* Only *build your own* segments and measures (no projected attributes) are supported for the Marketing contributor role.
-* Segments and Business measures are not stored in Dataverse yet.
 * The marketing contributor role can only access entities that have a relationship with customer profiles.
-* Projected attributes are not supported for the marketing contributor role.
-* Modernized business units is not supported.
+* [Modernized business units](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds#matrix-data-access-structure-modernized-business-units) are not supported.
 * Field-level security is not supported.
 
 
