@@ -232,6 +232,8 @@
       href: suggested-segments-activity.md
     - name: Get insights on segments
       href: segment-insights.md
+    - name: Track usage of a segment
+      href: segments-track-usage.md
     - name: Find similar customers
       href: find-similar-customer-segments.md
 
