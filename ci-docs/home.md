@@ -42,12 +42,12 @@ The **Settings** control, represented by a gear icon, lets you gather session de
 Your profile picture opens the **Account manager** for your Microsoft 365 profile. Select **My account** to manage your personal settings.
 
 ## Getting started with Customer Insights
-
+<!-- 
 The cards that display on the **Home** page depend on the selection: **Get insights in mins** or **Step-by-step guide**.
 
 ### Get insights in minutes
 
-This section contains a card to upload a single file and receive automatic customer insights and then a card to add connections to activate those insights. Select **Add data** to [upload your file](data-sources-single.md). Once your data is uploaded and insights such as segments and measures generated, select **Add connections** to connect your favorite services. For example, export the data to Facebook to use in social media.
+This section contains a card to upload a single file and receive automatic customer insights and then a card to add connections to activate those insights. Select **Add data** to [upload your file](data-sources-single.md). Once your data is uploaded and insights such as segments and measures generated, select **Add connections** to connect your favorite services. For example, export the data to Facebook to use in social media. -->
 
 ### Step-by-step guide
 

@@ -79,7 +79,7 @@ To change some of the settings later, see [Manage environments](manage-environme
 
 Review the following articles to help you get started with configuring Customer Insights:
 
-- [Get started with Customer Insights in minutes with a single CSV file](data-sources-single.md).
+<!-- - [Get started with Customer Insights in minutes with a single CSV file](data-sources-single.md). -->
 - [Add more users and assign permissions](permissions.md).
 - [Ingest several of your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
 - [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).

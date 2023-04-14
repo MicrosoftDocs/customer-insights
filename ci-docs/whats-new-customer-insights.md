@@ -16,7 +16,7 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
-
+<!-- 
 ## March 2023
 
 ### Generate insights in minutes with first run experience
@@ -32,7 +32,8 @@ After successfully provisioning your initial Customer Insights environment, the 
 This FRE works with a single CSV file only. If you have multiple data files, or different data sources, [Customer Insights provides connections to a broad set of sources](data-sources.md).
 
 - [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/generate-insights-minutes-first-run-experience)
-- [Documentation](data-sources-single.md)
+- [Documentation](data-sources-single.md) 
+-->
 
 ## January 2023
 
