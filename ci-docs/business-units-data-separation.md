@@ -75,7 +75,7 @@ Segments and measures are owned by the business unit of the user that created th
    > * Segments and Business measures are not stored in Dataverse yet.
    > * Projected attributes are not supported for the marketing contributor role.
 
-## Customer Insights and Dataverse
+## Access Customer Insights data in Dataverse
 Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and [expressive security model that is built into Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds). 
 
 ### Dataverse security roles
@@ -96,7 +96,7 @@ Marketing contributors in Customer Insights should be given the *Marketing Profe
  > [!NOTE]
    > * Dynamics 365 Marketing can only process segments that contain members that belong to one business unit and has an owner that belongs to the same business unit.
 
-## Customer Insights with Dataverse
+## Customer Insights extensibility with Dataverse
 Customer insights writes data into Dataverse with ownership and RBAC properties for easy activation, for example, through [model-driven applications](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-app-overview). Using model-diven applications, data can easily be leveraged in customer service, sales, operations, and other business functions with the benefits of fine-grained RBAC controls.
 
 Currently, business unit ownership from the associated customer profile is applied in Dataverse on the following tables: CustomerProfile, UnifiedActivity, SegmentMembership and CustomerMeasure. All records are assign to the root business unit for the rest of the tables that are written to Dataverse.
