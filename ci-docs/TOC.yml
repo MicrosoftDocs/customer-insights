@@ -35,8 +35,6 @@
   items:
     - name: Data sources overview
       href: data-sources.md
-    - name: Get started using a single data source
-      href: data-sources-single.md
     - name: Connect to data in Azure Data Lake Storage
       href: connect-common-data-model.md
     - name: Connect to Azure Synapse Analytics
@@ -232,6 +230,8 @@
       href: suggested-segments-activity.md
     - name: Get insights on segments
       href: segment-insights.md
+    - name: Track usage of a segment
+      href: segments-track-usage.md
     - name: Find similar customers
       href: find-similar-customer-segments.md
 
