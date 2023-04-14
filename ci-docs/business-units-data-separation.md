@@ -59,7 +59,13 @@ Customer profiles are owned by teams within business units (as opposed to being 
 Data that are tied to a customer profile, for example, activities, customer measures, intelligence output, and enrichments inherit the business unit ownership from the associated profile. 
 
 Intelligence models are trained on all data, i.e., no business unit data separation is enforced on training data. 
-  
+
+## Default configurations
+A typical business unit structure is depicted below. Marketing contributor users have access only to customer profiles that are owned by their business unit team. For example, if a marketing contributor user creates a segment with all customers, then it will only contain the customers that are owned by the business unit that the Marketing contributor belongs to. All other Customer Insights roles have access to all customer profiles in Customer Insights regardless of owning business unit.
+
+
+![Example of a business unit structure with the Org parent business unit at the top and child business units A to D below](media/BU_structure_example_Root.png)
+*Example of a business unit structure with the Org parent business unit at the top and child business units A to D below*
 ### Segments and business measures
 Segments and measures are owned by the business unit of the user that created them. For example, if a user is member of business unit *A* then any segment and measure that user creates is owned by business unit *A*. Access is controlled by the RBAC settings on the segments definitions and measures definitions tables in Dataverse. The default setting is that segments and measures can be seen, edited, and deleted by other users that belong to the same business unit.
 
@@ -81,13 +87,6 @@ To access any data from Customer Insights in Dataverse, the user needs to have t
 To access data from Customer Insights, the user needs to be member of one of the teams that were specified in the business unit mapping step. Note, that a user can only belong to a team that belongs to the same business unit as the user.
 
 [Learn more about how to assign users to teams.](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds#teams-including-group-teams)
-
-## Default configurations
-A typical business unit structure is depicted below. Marketing contributor users have access only to customer profiles that are owned by their business unit team. For example, if a marketing contributor user creates a segment with all customers, then it will only contain the customers that are owned by the business unit that the Marketing contributor belongs to. All other Customer Insights roles have access to all customer profiles in Customer Insights regardless of owning business unit.
-
-
-![Example of a business unit structure with the Org parent business unit at the top and child business units A to D below](media/BU_structure_example_Root.png)
-*Example of a business unit structure with the Org parent business unit at the top and child business units A to D below*
 
 ## Customer Insights with Dynamics 365 Marketing
 Customer Insights and Dynamics 365 Marketing are tightly integrated for a delightful activation journey. 
