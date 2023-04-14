@@ -119,7 +119,7 @@ When you approach or exceed the number of active segments based on the [service 
 
 The complexity of your segments can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active segments. These messages display on the **Segments** list page. If you encounter these messages or symptoms, see the following recommendations.
 
-1. Delete old or no longer relevant segments even if they are static or inactive. Deactivate segments that are used in recurring campaigns.
+1. Delete old or no longer relevant segments even if they are static or inactive. When a campaign ends, deactivate associated segments for recurring campaigns.
 1. [Schedule individual segments](segments-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
