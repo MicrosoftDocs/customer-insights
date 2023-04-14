@@ -326,6 +326,14 @@
       href: schedule-refresh.md
     - name: View system configuration
       href: system.md
+    - name: Business unit data separation
+      items: 
+        - name: Business unit data separation overview
+          href: business-units-data-separation.md
+        - name: Access business unit data in Dataverse
+          href: access-business-units-dataverse.md
+        - name: Customer Insights business unit integrations
+          href: business-unit-integration-dynamics365-power-platform.md
 
 - name: APIs
   items:
