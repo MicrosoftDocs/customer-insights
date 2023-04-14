@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 02/09/2023
+ms.date: 04/13/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -16,6 +16,23 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## March 2023
+
+### Generate insights in minutes with first run experience
+
+This first run experience (FRE) feature helps you recognize the value of Dynamics 365 Customer Insights faster. Onboarding a new application can be time-consuming and tricky, leaving room for error and leaving you questioning the value it can bring. This feature saves you precious time and takes the guesswork out of setting up your data correctly the first time you use Customer Insights. It works in trial and paid environments and allows you to get valuable insights faster and use those insights to fuel better customer experiences and drive a higher return on investment.
+
+After successfully provisioning your initial Customer Insights environment, the FRE guides you through three easy steps:
+
+1. Provide data: You'll be prompted to upload your data file (must be a CSV file containing more than 100 rows and 5 columns).
+2. Get data checked: Using AI-driven models, your data is automatically validated and quality-checked—no manual configuration required.
+3. Receive insights: Customer Insights identifies business value by deriving patterns and insights from your data file, such as segments and measures.
+
+This FRE works with a single CSV file only. If you have multiple data files, or different data sources, [Customer Insights provides connections to a broad set of sources](data-sources.md).
+
+- [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/generate-insights-minutes-first-run-experience)
+- [Documentation](data-sources-single.md)
 
 ## January 2023
 
