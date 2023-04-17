@@ -78,7 +78,7 @@ Segments and measures are owned by the business unit of the user that created th
 Customer Insights is an integrated part of the Microsoft Dynamics ecosystem, which means that it leverages the rich and [expressive security model that is built into Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds). 
 
 ### Dataverse security roles
-To access any data from Customer Insights in Dataverse, the user needs to have the *Customer Insights Data Read Access* security role in Dataverse. This role cannot be modified. If different access is needed, for example, access to all profiles irrespectively of business unit you can create a custom role and assign it.
+To access any data from Customer Insights in Dataverse, the user needs to have the *Customer Insights Data Read Access* security role in Dataverse. This role cannot be modified. If different access is needed, for example, access to all profiles irrespectively of business unit, you can create a custom role and assign it.
 
 [Learn more about Dataverse security roles.](https://learn.microsoft.com/en-us/power-platform/admin/database-security)
 
