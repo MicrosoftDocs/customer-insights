@@ -227,7 +227,9 @@
     - name: Suggested segments based on measures
       href: suggested-segments.md
     - name: Suggested segments based on activity
-      href: suggested-segments-activity.md
+      href: suggested-segments-activity-generate.md
+    - name: Generate suggested segments
+      href: suggested-segments-generate.md
     - name: Get insights on segments
       href: segment-insights.md
     - name: Track usage of a segment
