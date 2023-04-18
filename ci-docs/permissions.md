@@ -37,6 +37,7 @@ Access to Customer Insights is restricted to users in your organization that are
 
 > [!NOTE]
    > * The marketing contributor role must only be granted on business unit enabled enviornments.
+   > * The marketing contributor role can only access entities that have a relationship with customer profiles.
    
 ## Contributor
 
