@@ -28,13 +28,7 @@ Currently, business unit ownership from the associated customer profile is appli
 ## Customer Insights data consumption APIs
 To maintain business unit data separation, all API based data consumption scenarios must call [Dataverse APIs](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview). Customer Insights APIs are not supported for these scenarios.
 
-## Notes
 
-* A customer profile cannot be owned by more than one business unit. 
-* Synonyms in the business unit mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
-* The marketing contributor role can only access entities that have a relationship with customer profiles.
-* [Modernized business units](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds#matrix-data-access-structure-modernized-business-units) are not supported.
-* Field-level security is not supported.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
