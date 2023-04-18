@@ -74,5 +74,12 @@ Segments and measures are owned by the business unit of the user that created th
    > * Segments and Business measures are not stored in Dataverse yet.
    > * Projected attributes are not supported for the marketing contributor role.
 
+## Notes
+
+* A customer profile cannot be owned by more than one business unit. 
+* Synonyms in the business unit mappings are not supported, i.e., the string that identifies the business unit must be idential for the same business unit - otherwise they will be parsed as different business units.
+* The marketing contributor role can only access entities that have a relationship with customer profiles.
+* [Modernized business units](https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds#matrix-data-access-structure-modernized-business-units) are not supported.
+* Field-level security is not supported.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
