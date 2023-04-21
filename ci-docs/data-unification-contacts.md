@@ -1,12 +1,12 @@
 ---
-title: "Create a unified contact profile (preview)"
-description: "Go through the data unification process to create a single master dataset of contacts."
-ms.date: 11/15/2022
+title: "Create a unified B-to-B contact profile (preview)"
+description: "Go through the data unification process to create a single master dataset of business contacts."
+ms.date: 04/28/2023
 ms.reviewer: v-wendysmith
-
-ms.topic: overview
+ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
+ms.custom: bap-template
 
 searchScope: 
   - ci-map
@@ -15,9 +15,10 @@ searchScope:
   - customerInsights
 ---
 
-# Create a unified contact profile (preview)
+# Create a unified B-to-B contact profile (preview)
 
-After [unifying business accounts](data-unification-map-tables.md), you can optionally unify contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
+After [unifying business accounts](data-unification-map-tables.md), you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile.
+An account can have multiple contacts, but a contact is linked to a single account.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
@@ -25,14 +26,7 @@ The first few steps are identical to the unifying accounts steps.
 
 ## Prerequisites
 
-Account and contact records must have a unique key (called a foreign key) that connects them. For example, an account ID that exists in the account record and contact record that ties the account and contact together.
-
-## Preview limitations
-
-- Contacts without a link to an account are dropped.
-- If an account is deduplicated, a winner record is identified based on the merge preferences. Loser records are not selected and therefore are dropped. Contacts associated with the losing records are dropped.
-- An account can have multiple contacts, but a contact is linked to a single account.
-- The contact attributes mapped in the semantic mapping step are the only attributes that can display on the Customer card. However, 17 attributes are available.
+Accounts with contacts must have a unique key (called a foreign key) that connects them. For example, an account ID that exists in the account record and contact record that ties the account and contact together. Contacts without accounts are also included in the contact profile and have a null value for the foreign key.
 
 ## Select source fields
 
@@ -54,22 +48,6 @@ Account and contact records must have a unique key (called a foreign key) that c
 
 1. Select **Next**.
 
-## Unify contact fields
-
-1. [Combine and exclude contact fields](data-unification-merge-tables.md).
-
-1. Select **Next**.
-
-## Define the semantic fields for unified contacts
-
-This step in the unification process maps your unified contact fields to semantic types. In B-to-B, the customer cards show accounts. When the card is selected, all the contacts associated with the account display. The fields you map in this step are the fields that will display on the cards.
-
-1. Select the semantic type that maps to each unified field. Select **None** if a semantic type is not available.
-
-   :::image type="content" source="media/semantic_mapping.png" alt-text="Screenshot of Semantic fields page to define the semantic types." lightbox="media/semantic_mapping.png":::
-
-1. After mapping all unified fields, select **Next**.
-
 ## Set the relationship between contacts and accounts
 
 This step in the unification process connects your contact data to its corresponding account data.
@@ -80,6 +58,12 @@ This step in the unification process connects your contact data to its correspon
    - **To account table**: Choose the account table associated with the contact.
 
    :::image type="content" source="media/contact_relationship.png" alt-text="Screenshot of Relationship page to connect the contact and account tables.":::
+
+1. Select **Next**.
+
+## Unify contact fields
+
+1. [Combine and exclude contact fields](data-unification-merge-tables.md).
 
 1. Select **Next**.
 

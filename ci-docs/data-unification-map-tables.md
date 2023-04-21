@@ -2,11 +2,10 @@
 title: "Select source fields for data unification"
 description: "The first step in the unification process is selecting tables, attributes, primary keys, and semantic types to map data to the unified customer profile."
 recommendations: false
-ms.date: 11/15/2022
-
-ms.topic: tutorial
-author: v-wendysmith
-ms.author: mukeshpo
+ms.date: 04/28/2023
+ms.topic: how-to
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 searchScope: 
   - ci-map
@@ -28,9 +27,10 @@ The first step in unification is selecting the tables and fields within your dat
 
    :::image type="content" source="media/m3_unify_land.png" alt-text="Screenshot of unify landing page for first run experience for individual customers.":::
 
-   For business accounts (B-to-B), the **Unify** landing page displays **Unify accounts** showing **Get started** on the first step, **Source fields**. The **Unify contacts (preview)** steps are optional and pending completion of account unification.
-
-   :::image type="content" source="media/b2b_unify_land.png" alt-text="Screenshot of unify landing page for first run experience for business accounts.":::
+   > [!NOTE]
+   > For business accounts (B-to-B), the **Unify** landing page displays **Unify accounts** showing **Get started** on the first step, **Source fields**. The **Unify contacts (preview)** steps are optional and pending completion of account unification.
+   >
+   >:::image type="content" source="media/b2b_unify_land.png" alt-text="Screenshot of unify landing page for first run experience for business accounts.":::
 
 1. Select **Get started**.
 
