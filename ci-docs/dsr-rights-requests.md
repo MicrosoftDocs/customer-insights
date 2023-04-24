@@ -11,9 +11,9 @@ ms.custom: bap-template
 
 # Respond to Data Subject Rights (DSR) requests
 
-[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includesgdpr-intro.md)]
+[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
-[!INCLUDE [gdpr-dsr-delete-note](~/../shared-content/shared/privacy-includesgdpr-dsr-delete-export-note.md)]
+[!INCLUDE [gdpr-dsr-delete-note](~/../shared-content/shared/privacy-includes/gdpr-dsr-delete-export-note.md)]
 
 ## Respond to data subject delete requests for Customer Insights
 
