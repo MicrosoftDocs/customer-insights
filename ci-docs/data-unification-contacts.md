@@ -18,7 +18,7 @@ searchScope:
 # Create a unified B-to-B contact profile (preview)
 
 After [unifying business accounts](data-unification-map-tables.md), you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile.
-An account can have multiple contacts, but a contact is linked to a single account.
+An account can have multiple contacts, but a contact is linked to a single account. Contacts without accounts are also included in the contact profile.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
@@ -26,7 +26,7 @@ The first few steps are identical to the unifying accounts steps.
 
 ## Prerequisites
 
-Accounts with contacts must have a unique key (called a foreign key) that connects them. For example, an account ID that exists in the account record and contact record that ties the account and contact together. Contacts without accounts are also included in the contact profile and have a null value for the foreign key.
+Accounts with contacts must have a unique key (called a foreign key) that connects them. For example, an account ID that exists in the account record and contact record that ties the account and contact together. Contacts without accounts have a null value for the foreign key.
 
 ## Select source fields
 
@@ -57,7 +57,7 @@ This step in the unification process connects your contact data to its correspon
    - **Foreign key from contact table**: Choose the attribute that connects your contact table to the account.
    - **To account table**: Choose the account table associated with the contact.
 
-   :::image type="content" source="media/contact_relationship.png" alt-text="Screenshot of Relationship page to connect the contact and account tables.":::
+   :::image type="content" source="media/contact_relationship.svg" alt-text="Screenshot of Relationship page to connect the contact and account tables.":::
 
 1. Select **Next**.
 
@@ -75,13 +75,13 @@ Review the summary of changes, create the unified profile, and review the result
 
 This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified contact profile.
 
-:::image type="content" source="media/b2b_review_contacts.png" alt-text="Screenshot of Review and create contact profiles.":::
+:::image type="content" source="media/b2b_review_contacts.svg" alt-text="Screenshot of Review and create contact profiles.":::
 
 1. Select **Edit** on any of the contact unification steps to review and make any changes.
 
 1. If you are satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created.
   
-   :::image type="content" source="media/b2b_unify_refreshing.png" alt-text="Screenshot of Unify Contacts page with tiles showing Queued or Refreshing.":::
+   :::image type="content" source="media/b2b_unify_refreshing.svg" alt-text="Screenshot of Unify Contacts page with tiles showing Queued or Refreshing.":::
 
    [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
@@ -91,7 +91,7 @@ The unification algorithm takes some time to complete and you can't change the c
 
 After unification completes, the **Data** > **Unify** page shows the number of unified contact profiles. The results of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
 
-:::image type="content" source="media/unified_contacts.png" alt-text="Screenshot of the Data Unify page after contacts are unified.":::
+:::image type="content" source="media/unified_contacts.svg" alt-text="Screenshot of the Data Unify page after contacts are unified.":::
 
 > [!TIP]
 > The **Matching conditions** tile displays only if multiple tables were selected.
@@ -104,9 +104,7 @@ When needed, [make changes to the contact unification settings](data-unification
 
 Go to **Data** > **Tables** to verify the output tables.
 
-The unified contact profile table, called *ContactProfile*, displays in the **Semantic tables** section. The first successful unification run creates the unified *ContactProfile* table. All subsequent runs expand that table.
-
-The *ContactsCustomer* table (preview) is created and displays in the **Profiles** section. This table contains the contact data without the links to the accounts. This table is used as input into the semantic mapping and relationship steps of contact unification.
+The unified contact profile table, called *UnifiedContact*, displays in the **Profiles** section. The first successful unification run creates the unified *UnifiedContact* table. All subsequent runs expand that table.
 
 Deduplication and conflation tables are created and display in the **System** section. A deduplicated table for each of the source tables is created with the name **Deduplication_DataSource_Tablename**. The **ContactsConflationMatchPairs** table contains information about cross-table matches.
 

@@ -6,6 +6,7 @@ ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
+ms.custom: bap-template
 
 searchScope: 
   - ci-map
@@ -16,7 +17,7 @@ searchScope:
 
 After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data.
 
-For individual consumers (B-to-C) where the data is centered around individuals, unification provides a unified view of your customers. For business accounts (B-to-B) where the data is centered around accounts, unification provides a unified view of your accounts. [Contact unification (preview)](data-unification-contacts.md) allows contacts for those accounts to be separately unified and associated with the accounts.
+For individual consumers (B-to-C) where the data is centered around individuals, unification provides a unified view of your customers. For business accounts (B-to-B) where the data is centered around accounts, unification provides a unified view of your accounts. [Contact unification (preview)](data-unification-contacts.md) allows contacts for those accounts to be separately unified and associated with the accounts. Contact unification (preview) also allows contacts without an account to be included in the unified contact profile.
 
 Data can be unified on a single table or multiple tables. Tables were previously called entities.
 
@@ -32,7 +33,7 @@ The unification process maps customer/account data from your data sources, remov
 
 1. [Review](review-unification.md) and create the unified profile.
 
-> [NOTE]
+> [!NOTE]
 > In B-to-B, after unifying accounts you can optionally [unify contacts (preview)](data-unification-contacts.md) for those accounts and link the unified contacts to the unified accounts.
 
 After completing data unification, you can optionally:

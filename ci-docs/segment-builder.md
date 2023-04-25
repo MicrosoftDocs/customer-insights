@@ -44,7 +44,7 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
 
 1. Select **Add condition** to add more conditions to a rule. To create a rule under the current rule, select **Add sub-rule**.
 
-1. If a rule uses other tables than the *Customer* table (or *ContactProfile* table for B-to-B), select **Set relationship path** to map the selected table to the unified customer table. If there's only one possible relationship path, the system selects it automatically. Different [relationship paths](relationships.md#relationship-paths) can yield different results. Every rule can have its own relationship path.
+1. If a rule uses other tables than the *Customer* table (or *UnifiedContact* table for B-to-B), select **Set relationship path** to map the selected table to the unified customer table. If there's only one possible relationship path, the system selects it automatically. Different [relationship paths](relationships.md#relationship-paths) can yield different results. Every rule can have its own relationship path.
 
    :::image type="content" source="media/relationship-path.png" alt-text="Potential relationship path when creating a rule based on a table mapped to the unified customer table.":::
 
@@ -67,7 +67,7 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
       - **Intersect** overlaps the two groups. Only data that *is common* to both groups remains in the unified group.
       - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is kept.
 
-1. By default, the output table will automatically contain all attributes of customer profiles that match the defined filters. In B-to-B when using the *ContactProfile* table, the Account ID is automatically included. If a segment is based on other tables than the *Customer* table or to include more attributes from the *ContactProfile*, select **Project attributes** to add more attributes from these tables to the output table.
+1. By default, the output table will automatically contain all attributes of customer profiles that match the defined filters. In B-to-B when using the *UnifiedContact* table, the Account ID is automatically included. If a segment is based on other tables than the *Customer* table or to include more attributes from the *UnifiedContact*, select **Project attributes** to add more attributes from these tables to the output table.
 
    For example: A segment is based on a table that contains purchase data, which is related to the *Customer* table. The segment looks for all customers from Spain that purchased goods in the current year. You can choose to append attributes like the price of goods, or the purchase date to all matching customer records in the output table. This information might be useful to analyze seasonal correlations to the total spending.
 
@@ -80,9 +80,9 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
    |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, Procurement manager]
 
    > [!NOTE]
-   > - **Project attributes** only work for tables that have a one-to-many relationship with the *Customer* or *ContactProfile* table. For example, one customer can have multiple subscriptions.
-   > - If the attribute you want to project is more than one hop away from the *Customer* or *ContactProfile* table, as defined by the relationship, that attribute should be used in every rule of the segment query you are building.
-   > - If the attribute you want to project is just one hop away from the *Customer* or *ContactProfile* table, that attribute doesn't need to be present in every rule of the segment query you are building.
+   > - **Project attributes** only work for tables that have a one-to-many relationship with the *Customer* or *UnifiedContact* table. For example, one customer can have multiple subscriptions.
+   > - If the attribute you want to project is more than one hop away from the *Customer* or *UnifiedContact* table, as defined by the relationship, that attribute should be used in every rule of the segment query you are building.
+   > - If the attribute you want to project is just one hop away from the *Customer* or *UnifiedContact* table, that attribute doesn't need to be present in every rule of the segment query you are building.
    > - **Projected attributes** are factored in when using set operators.
 
 1. To save the configuration, select **Save** and then **Close**. The segment is in draft mode or inactive so you can make changes to the configuration before actually creating the segment.
