@@ -21,7 +21,7 @@ For individual consumers (B-to-C) where the data is centered around individuals,
 
 Data can be unified on a single table or multiple tables. Tables were previously called entities.
 
-The unification process maps customer/account data from your data sources, removes duplicates, matches the data across tables, and creates a unified profile. Unification is performed in the following order:
+The unification process maps customer or account data from your data sources, removes duplicates, matches the data across tables, and creates a unified profile. Unification is performed in the following order:
 
 1. [Source fields](data-unification-map-tables.md) (previously called Map): In the source fields step, select tables and fields to include in the unify process. Map fields to a common semantic type that describes the purpose of the field.
 
