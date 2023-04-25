@@ -115,7 +115,7 @@ Select an activity to rename or delete the activity. To edit activities, select 
 For business accounts (B-to-B), use a *UnifiedContact* table to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
 
    > [!NOTE]
-   > To define contact-level activities, a *UnifiedContact* table must be created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-table-mapping).
+   > To define contact-level activities, a [*UnifiedContact*](data-unification-contacts.md) table must be created.
    >
    > You must have both **AccountID** and **ContactID** attributes for each record within your activity data.
   

@@ -63,7 +63,7 @@ For more information about the **Relationships** tab, see [Relationships](relati
 Some Customer Insights tables are available in Dataverse. The sections below describe the expected schema of these tables.
 
 - [CustomerProfile](#customerprofile)
-- [UnifiedContact](#contactprofile)
+- [UnifiedContact](#unifiedcontact)
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
 - [CustomerMeasure](#customermeasure)

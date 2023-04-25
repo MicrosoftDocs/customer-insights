@@ -195,7 +195,7 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 >
 > For B-to-B, select **Next** to manage the account and contact relationship, or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
 
-## Manage B-to-B contact and account relationships
+## Manage contact and account relationships
 
 1. Select **Edit** on the **Relationships** tile.
 
