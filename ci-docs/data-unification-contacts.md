@@ -1,5 +1,5 @@
 ---
-title: "Create a unified B-to-B contact profile (preview)"
+title: "Create a B-to-B unified contact profile (preview)"
 description: "Go through the data unification process to create a single master dataset of business contacts."
 ms.date: 04/28/2023
 ms.reviewer: v-wendysmith
