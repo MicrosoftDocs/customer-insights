@@ -2,7 +2,7 @@
 title: "Match conditions for data unification"
 description: "Match tables to create unified customer profiles."
 recommendations: false
-ms.date: 04/28/2023
+ms.date: 11/15/2022
 ms.topic: tutorial
 author: v-wendysmith
 ms.author: mukeshpo
