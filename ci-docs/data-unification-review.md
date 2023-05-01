@@ -55,6 +55,9 @@ Go to **Data** > **Tables** to verify the output tables.
 
 The unified customer profile table, called *Customer*, displays in the **Profiles** section. The first successful unification run creates the unified *Customer* table. All subsequent runs expand that table.
 
+> [!TIP]
+> For B-to-B, the unified account profile table is called *Customer* and displays in the **Profiles** section.
+
 Deduplication and conflation tables are created and display in the **System** section. A deduplicated table for each of the source tables is created with the name **Deduplication_DataSource_Table**. The **ConflationMatchPairs** table contains information about cross-table matches.
 
 A deduplication output table contains the following information:

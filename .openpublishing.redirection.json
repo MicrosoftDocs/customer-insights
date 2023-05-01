@@ -1582,6 +1582,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "ci-docs/review-unification.md",
+      "redirect_url": "/dynamics365/customer-insights/data-unification-review",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "ci-docs/entity-schemas.md",
       "redirect_url": "/dynamics365/customer-insights/tables-schema",
       "redirect_document_id": false

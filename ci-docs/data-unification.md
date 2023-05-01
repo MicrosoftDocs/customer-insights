@@ -34,7 +34,7 @@ The unification process maps customer or account data from your data sources, re
 
 1. [Unified customer fields](data-unification-merge-tables.md) (previously called Merge): In the unified customer fields step, determine which source fields should be included, excluded, or merged into a unified customer profile.  
 
-1. [Review](review-unification.md) and create the unified profile.
+1. [Review](data-unification-review.md) and create the unified profile.
 
 > [!NOTE]
 > In B-to-B, after unifying accounts you can optionally [unify contacts (preview)](data-unification-contacts.md) for those accounts and link the unified contacts to the unified accounts.

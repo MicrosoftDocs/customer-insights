@@ -47,7 +47,7 @@ In this step, you can create stable and unique customer IDs and for individual c
 1. Optionally for B-to-C, [group profiles into households or clusters](#group-profiles-into-households-or-clusters).
 
 > [!div class="nextstepaction"]
-> [Next step: Review unification](review-unification.md)
+> [Next step: Review unification](data-unification-review.md)
 
 ### Edit a merged field
 
@@ -218,6 +218,6 @@ For individual customers, you can define rules to group related profiles into a 
 1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* table.
 
 > [!div class="nextstepaction"]
-> [Next step: Review unification](review-unification.md)
+> [Next step: Review unification](data-unification-review.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
