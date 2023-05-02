@@ -65,6 +65,10 @@ A typical business unit structure is depicted below. Marketing contributor users
 
 ![Example of a business unit structure with the Org parent business unit at the top and child business units A to D below](media/BU_structure_example_Root.png)
 *Example of a business unit structure with the Org parent business unit at the top and child business units A to D below*
+
+> [!NOTE]
+   > * Parent-child scope is currently not supported.
+   
 ### Segments and business measures
 Segments and measures are owned by the business unit of the user that created them. For example, if a user is member of business unit *A* then any segment and measure that user creates is owned by business unit *A*. Access is controlled by the RBAC settings on the segments definitions and measures definitions tables in Dataverse. The default setting is that segments and measures can be seen, edited, and deleted by other users that belong to the same business unit.
 
