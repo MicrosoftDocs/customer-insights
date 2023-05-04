@@ -31,17 +31,14 @@ Dynamics 365 Customer Insights lets you use copilot capabilities to generate ins
     - **Prompt box**: Enter your question in natural language. For example: ‘How many customers are in my loyalty program and have more than 100 rewards points?’ Copilot in Customer Insights currently supports English questions with up to 2000 characters. This section also contains the consent setting for sharing your prompts.
     Ask a specific and relevant question about your customers and make sure you have corresponding data imported to answer the question asked. Avoid asking questions that are too ambiguous or contain inappropriate content.
 
-    - **Results**: Answers and results generated to your question show in this section. It also includes other insights related to your question under Did you know?
+    - **Results**: Answers and results generated to your question show in this section. It also includes other insights related to your question. Responses use content filter and moderator solutions in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai).
 
-    - **Explore further**: This section contains questions suggested by the system to further explore and generate new insights. Select a question to prompt a response. Select See more examples to generate a new set of suggested questions.
+    - **Explore further**: This section contains questions suggested by the system to further explore and generate new insights. Select a question to prompt a response. Select **See more examples** to generate a new set of suggested questions.
 
       > [!NOTE]
       > Sections with additional information might not be available if there is insufficient data or no additional insights worth surfacing.
 
     - **SQL query for verification**: Copilot provides the SQL query created from your natural language question to generate the result/answer. Use this query to verify the results. If the query or output doesn’t reflect your business need, ask a rephrased or new question.
-
-      > [!NOTE]
-      > Responses use content filter and moderator solutions in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai).
 
 ## Share your feedback
 
