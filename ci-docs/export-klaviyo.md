@@ -15,8 +15,8 @@ Export segments of unified customer profiles to Klaviyo and use them for marketi
 ## Prerequisites
 
 - A [Klaviyo account](https://www.klaviyo.com/) and corresponding administrator credentials.
-- A [Klaviyo API key](https://help.klaviyo.com/hc/articles/115005062267).
-- A [Klaviyo List ID](https://help.klaviyo.com/hc/articles/115005078647).
+- A [Klaviyo API key](https://help.klaviyo.com/hc/en-us/articles/115005062267).
+- A [Klaviyo List ID](https://help.klaviyo.com/hc/en-us/articles/115005078647).
 - [Configured segments](segments.md) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
