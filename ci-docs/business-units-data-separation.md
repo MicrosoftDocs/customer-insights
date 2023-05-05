@@ -32,7 +32,7 @@ Business unit data separation and role-based access control (RBAC) allow adminis
 ### Customer profiles, activities, customer measures, intelligence, enrichments
 Access to a customer profile in Customer Insights depends on the business unit team that owns the profile and the Customer Insights role of the user. The *Administrator*, *Contributor*, and *Viewer* roles have access to all profiles regardless of the owning business unit team. The *Marketing contributor* role has access only to customer profiles that belong to their business unit.
 
-The *Marketing contributor* role has access to only Segments (*build your own*) and Measures (*build your own*) in the Customer Insights user interface. [Learn more about user roles in Customer Insights](https://learn.microsoft.com/en-us/dynamics365/customer-insights/permissions)
+The *Marketing contributor* role has access to only Segments (*build your own*) and Measures (*build your own*) in the Customer Insights user interface. [Learn more about user roles in Customer Insights](permissions.md)
 
 > [!NOTE]
    > * The **administrator** and **contributor** roles are highly privledged and **should only be given to users that belong to the *Root* business unit**. They have access to all data, segments, measures, etc. regardless of business unit ownership and all functionality of Customer Insights. These users are typically responsible for preparing the data estate, i.e., setting up data sources, business unit data separation rules, unification rules, enrichments, intelligence models etc.
@@ -56,7 +56,7 @@ Teams within business units (not business units directly) own customer profiles 
 * The unification rules and customer profile schema are the same for all business units.
 
 > [!NOTE]
-> Any changes to the BU data separation configuration will trigger a full refresh. If your instance is in incremental mode, then a [full refresh](https://learn.microsoft.com/en-us/dynamics365/customer-insights/incremental-refresh-data-sources#run-a-one-time-full-refresh-for-azure-data-lake-data-sources) needs to be triggered manually after changes have been made.
+> Any changes to the BU data separation configuration will trigger a full refresh. If your instance is in incremental mode, then a [full refresh](incremental-refresh-data-sources.md#run-a-one-time-full-refresh-for-azure-data-lake-data-sources) needs to be triggered manually after changes have been made.
 
 Data that is tied to a customer profile, for example, activities, customer measures, intelligence output, and enrichments inherit the business unit ownership from the associated profile. 
 
