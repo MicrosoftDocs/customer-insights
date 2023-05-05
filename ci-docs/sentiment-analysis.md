@@ -1,14 +1,11 @@
 ---
-title: "Analyze sentiment for customer feedback (preview)"
-description: "Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights." 
-ms.date: 09/14/2022
-
-ms.subservice: audience-insights
+title: Analyze sentiment for customer feedback (preview)
+description: Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights."
+ms.date: 04/11/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong 
 ms.author: wameng
-manager: shellyha
 ---
 
 # Analyze sentiment in customer feedback (preview)
@@ -52,7 +49,7 @@ Pre-defined business aspects for the model to associate with feedback data inclu
 ## Prerequisites
 
 - At least [Contributor permissions](permissions.md)
-- [Unified](data-unification.md) text feedback data. We highly recommend that you [configure your feedback data entities as semantic type activity entities](map-entities.md#select-primary-key-and-semantic-type-for-attributes) (Feedback type).
+- [Unified](data-unification.md) text feedback data. We highly recommend that you [configure your feedback data tables as semantic type activity tables](data-unification-map-tables.md#select-primary-key-and-semantic-type-for-attributes) (Feedback type).
 - Unified Customer ID (UCID) from data unification to match text feedback data records to an individual customer.
 - Feedback ID
 - Feedback timestamp
@@ -61,17 +58,17 @@ Pre-defined business aspects for the model to associate with feedback data inclu
 Customer Insights can process up to 10 million feedback records for a single model run. The model can analyze feedback comments up to 128 words. If a feedback comment is longer, the analysis considers only the first 128 words.
 
 > [!NOTE]
-> Only one feedback entity can be configured. If there are multiple feedback entities, combine them in Power Query before data ingestion.
+> Only one feedback table can be configured. If there are multiple feedback tables, combine them in Power Query before data ingestion.
 
 ## Configure a sentiment analysis
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Customer sentiment analysis (preview)** tile.
 
 1. Select **Get started**.
 
-1. **Name** the analysis and provide the **Business aspect output entity name** and the **Sentiment score output entity name**.
+1. **Name** the analysis and provide the **Business aspect output table name** and the **Sentiment score output table name**.
 
 1. Select **Next**.
 
@@ -97,7 +94,7 @@ Customer Insights can process up to 10 million feedback records for a single mod
 
 ## View analysis results
 
-1. Go to **Intelligence** > **Predictions**.
+1. Go to **Insights** > **Predictions**.
 
 1. In the the **My predictions** tab, select the prediction you want to view.
 
@@ -158,7 +155,7 @@ To create new segments of customers from the sentiment analysis results, select 
 
 As with any feature that uses predictive artificial intelligence, there could be potential bias in the data you use to predict customer sentiment. For example, if you only collect feedback digitally, you might miss feedback from customers who primarily conduct business with you in person, which affect the feature’s output.
 
-As this feature uses automated means to evaluate data and make predictions based on that data, it therefore has the capability to be used as a method of profiling, as that term is defined by the General Data Protection Regulation ("GDPR"). Your use of this feature to process data may be subject to GDPR or other laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including sentiment analysis, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
+As this feature uses automated means to evaluate data and make predictions based on that data, it therefore has the capability to be used as a method of profiling, as that term is defined by privacy laws and regulations. Your use of this feature to process data may be subject to those laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including sentiment analysis, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
 

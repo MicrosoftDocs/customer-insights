@@ -1,14 +1,12 @@
 ---
 title: "Custom machine learning models | Microsoft Docs"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
-ms.date: 09/19/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
-manager: shellyha
 searchScope: 
   - ci-custom-models
   - customerInsights
@@ -29,13 +27,14 @@ Custom models lets you manage workflows based on Azure Machine Learning models. 
 - Pipeline must be published under a [pipeline endpoint](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 - An [Azure Data Lake Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) associated with your Azure Studio instance.
 - For Azure Machine Learning workspaces with pipelines, Owner or User Access Administrator permissions to the Azure Machine Learning Workspace.
+- Custom models in Customer Insights don't support data sources that are updated with incremental refresh.
 
   > [!NOTE]
   > Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
 
 ## Add a new workflow
 
-1. Go to **Intelligence** > **Custom models** and select **New workflow**.
+1. Go to **Insights** > **Custom models** and select **New workflow**.
 
 1. Provide a recognizable **Name**.
 
@@ -50,14 +49,14 @@ Custom models lets you manage workflows based on Azure Machine Learning models. 
 1. Choose the Azure Machine Learning pipeline in the **Web service that contains your model** dropdown. Then, select **Next**.
    Learn more about [publishing a pipeline in Azure Machine Learning using the designer](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) or [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk).
 
-1. For each **Web service input**, select the matching **Entity** from Customer Insights. Then, select **Next**.
+1. For each **Web service input**, select the matching **Table** from Customer Insights. Then, select **Next**.
    > [!NOTE]
-   > The custom model workflow will apply heuristics to map the web service input fields to the entity attributes based on the name and data type of the field. You'll see an error if a web service field can't be mapped to an entity.
+   > The custom model workflow will apply heuristics to map the web service input fields to the table attributes based on the name and data type of the field. You'll see an error if a web service field can't be mapped to a table.
 
    :::image type="content" source="media/intelligence-screen2-updated.png" alt-text="Configure a workflow.":::
 
 1. For **Model Output Parameters**, set the following properties:
-   - **Entity name** for the pipeline output results
+   - **Table name** for the pipeline output results
    - **Output data store parameter name** of your batch pipeline
    - **Output Path parameter name** of your batch pipeline
 
@@ -75,7 +74,7 @@ Custom models lets you manage workflows based on Azure Machine Learning models. 
 
 ## Manage an existing workflow
 
-Go to **Intelligence** > **Custom models** to view the workflows you created.
+Go to **Insights** > **Custom models** to view the workflows you created.
 
 Select a workflow to view available actions.
 
@@ -85,59 +84,59 @@ Select a workflow to view available actions.
 
 ### Edit a workflow
 
-1. Go to **Intelligence** > **Custom models**.
+1. Go to **Insights** > **Custom models**.
 
 1. Next to the workflow you'd like to update, select the vertical ellipsis (&vellip;) and select **Edit**.
 
 1. Change **Display name** if needed, and select **Next**.
 
-1. For each **Web service input**, update the matching **Entity** from Customer Insights, if needed. Then, select **Next**.
+1. For each **Web service input**, update the matching **Table** from Customer Insights, if needed. Then, select **Next**.
 
 1. For **Model Output Parameters**, change any of the following:
-   - **Entity name** for the pipeline output results
+   - **Table name** for the pipeline output results
    - **Output data store parameter name** of your batch pipeline
    - **Output Path parameter name** of your batch pipeline
 
-1. Change the matching attribute from **Customer ID in results** to identify customers. Choose an attribute from the inference output with values similar to the Customer ID column of the Customer entity. If you don't have such a column in your data set, choose an attribute that uniquely identifies the row.
+1. Change the matching attribute from **Customer ID in results** to identify customers. Choose an attribute from the inference output with values similar to the Customer ID column of the Customer table. If you don't have such a column in your data set, choose an attribute that uniquely identifies the row.
 
 1. Select **Save**
 
 ### Delete a workflow
 
-1. Go to **Intelligence** > **Custom models**.
+1. Go to **Insights** > **Custom models**.
 
 1. Next to the workflow you'd like to delete, select the vertical ellipsis (&vellip;) and select  **Delete**.
 
 1. Confirm your deletion.
 
-Your workflow will be deleted. The [entity](entities.md) that was created when you created the workflow persists, and can be viewed from the **Data** > **Entities** page.
+Your workflow will be deleted. The [table](tables.md) that was created when you created the workflow persists, and can be viewed from the **Data** > **Tables** page.
 
 ## View the results
 
-Results from a workflow are stored in the entity name defined for **Model Output Parameters**. Access this data from the [**Data** > **Entities** page](entities.md) or with [API access](apis.md).
+Results from a workflow are stored in the table name defined for **Model Output Parameters**. Access this data from the [**Data** > **Tables** page](tables.md) or with [API access](apis.md).
 
 ### API Access
 
-For the specific OData query to get data from a custom model entity, use the following format:
+For the specific OData query to get data from a custom model table, use the following format:
 
-`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
+`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output table name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
 
 1. Replace `<your instance id>` with the ID of your Customer Insights environment, which displays in the address bar of your browser when accessing Customer Insights.
 
-1. Replace `<custom model output entity>` with the entity name you provided for the **Model Output Parameters**.
+1. Replace `<custom model output table>` with the table name you provided for the **Model Output Parameters**.
 
 1. Replace `<guid value>` with the Customer ID of the customer you'd like to access. This ID displays on the [customer profiles page](customer-profiles.md) in the CustomerID field.
 
 ## Frequently Asked Questions
 
 - Why can't I see my pipeline when setting up a custom model workflow?
-  This issue is frequently caused by a configuration issue in the pipeline. Ensure the [input parameter is configured](azure-machine-learning-experiments.md#dataset-configuration), and the [output datastore and path parameters](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) are also configured.
+  Frequently the cause is a configuration issue in the pipeline. Ensure the [input parameter is configured](azure-machine-learning-experiments.md#dataset-configuration), and the [output datastore and path parameters](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) are also configured.
 
 - What does the error "Couldn't save intelligence workflow" mean? 
   Users usually see this error message if they don't have Owner or User Access Administrator privileges on the workspace. The user needs a higher level of permissions to enable Customer Insights to process the workflow as a service rather than using the user credentials for subsequent runs of the workflow.
 
 - Is a private endpoint / private link for my custom model workflow supported?
-  Customer Insights does not currently support private endpoint for custom models out of the box, but a manual workaround is available. Please contact support for details.
+  Customer Insights does not currently support private endpoint for custom models out of the box, but a manual workaround is available. Contact support for details.
 
 ## Responsible AI
 

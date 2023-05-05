@@ -1,14 +1,12 @@
 ---
 title: "Create a unified contact profile (preview)"
 description: "Go through the data unification process to create a single master dataset of contacts."
-ms.date: 08/12/2022
+ms.date: 11/15/2022
 ms.reviewer: v-wendysmith
 
-ms.subservice: audience-insights
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
-manager: shellyha
 
 searchScope: 
   - ci-map
@@ -19,7 +17,7 @@ searchScope:
 
 # Create a unified contact profile (preview)
 
-After [unifying business accounts](map-entities.md), you can optionally unify contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across entities, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
+After [unifying business accounts](data-unification-map-tables.md), you can optionally unify contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, sets up semantic mapping, creates relationships between contacts and accounts, and then creates a unified contact profile.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
@@ -40,25 +38,25 @@ Account and contact records must have a unique key (called a foreign key) that c
 
 1. Under **Unify contacts (preview)**, select **Get started**.
 
-1. [Select the entities and fields](map-entities.md) for your contact data sources, including the primary keys and attribute types.
+1. [Select the tables and fields](data-unification-map-tables.md) for your contact data sources, including the primary keys and attribute types.
 
 1. Select **Next**.
 
 ## Remove duplicate records
 
-1. Optionally, [define deduplication rules](remove-duplicates.md) for your selected entities.
+1. Optionally, [define deduplication rules](data-unification-duplicates.md) for your selected tables.
 
 1. Select **Next**.
 
 ## Match conditions
 
-1. [Define the match order and rules](match-entities.md) for cross-entity matching.
+1. [Define the match order and rules](data-unification-match-tables.md) for cross-table matching.
 
 1. Select **Next**.
 
 ## Unify contact fields
 
-1. [Combine and exclude contact fields](merge-entities.md).
+1. [Combine and exclude contact fields](data-unification-merge-tables.md).
 
 1. Select **Next**.
 
@@ -76,12 +74,12 @@ This step in the unification process maps your unified contact fields to semanti
 
 This step in the unification process connects your contact data to its corresponding account data.
 
-1. For each entity, enter the following information:
+1. For each table, enter the following information:
 
-   - **Foreign key from contact entity**: Choose the attribute that connects your contact entity to the account.
-   - **To account entity**: Choose the account entity associated with the contact.
+   - **Foreign key from contact table**: Choose the attribute that connects your contact table to the account.
+   - **To account table**: Choose the account table associated with the contact.
 
-   :::image type="content" source="media/contact_relationship.png" alt-text="Screenshot of Relationship page to connect the contact and account entities.":::
+   :::image type="content" source="media/contact_relationship.png" alt-text="Screenshot of Relationship page to connect the contact and account tables.":::
 
 1. Select **Next**.
 
@@ -112,26 +110,26 @@ After unification completes, the **Data** > **Unify** page shows the number of u
 :::image type="content" source="media/unified_contacts.png" alt-text="Screenshot of the Data Unify page after contacts are unified.":::
 
 > [!TIP]
-> The **Matching conditions** tile displays only if multiple entities were selected.
+> The **Matching conditions** tile displays only if multiple tables were selected.
 
 We recommend you review the results, particularly the quality of your [match rules](data-unification-update.md#manage-match-rules) and refine them if necessary.
 
 When needed, [make changes to the contact unification settings](data-unification-update.md) and rerun the unified profile.
 
-### Verify output entities from data unification
+### Verify output tables from data unification
 
-Go to **Data** > **Entities** to verify the output entities.
+Go to **Data** > **Tables** to verify the output tables.
 
-The unified contact profile entity, called *ContactProfile*, displays in the **Semantic entities** section. The first successful unification run creates the unified *ContactProfile* entity. All subsequent runs expand that entity.
+The unified contact profile table, called *ContactProfile*, displays in the **Semantic tables** section. The first successful unification run creates the unified *ContactProfile* table. All subsequent runs expand that table.
 
-The *ContactsCustomer* entity (preview) is created and displays in the **Profiles** section. This entity contains the contact data without the links to the accounts. This entity is used as input into the semantic mapping and relationship steps of contact unification.
+The *ContactsCustomer* table (preview) is created and displays in the **Profiles** section. This table contains the contact data without the links to the accounts. This table is used as input into the semantic mapping and relationship steps of contact unification.
 
-Deduplication and conflation entities are created and display in the **System** section. A deduplicated entity for each of the source entities is created with the name **Deduplication_DataSource_Entity**. The **ContactsConflationMatchPairs** entity contains information about cross-entity matches.
+Deduplication and conflation tables are created and display in the **System** section. A deduplicated table for each of the source tables is created with the name **Deduplication_DataSource_Tablename**. The **ContactsConflationMatchPairs** table contains information about cross-table matches.
 
-A deduplication output entity contains the following information:
+A deduplication output table contains the following information:
 - IDs / Keys
   - Primary key and Alternate ID fields. Alternate ID field consists of all the alternate IDs identified for a record.
-  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
+  - Deduplication_GroupId field shows the group or cluster identified within a table that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output table.
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.

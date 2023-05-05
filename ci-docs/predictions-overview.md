@@ -1,14 +1,12 @@
 ---
 title: Predictions overview
 description: "Prediction scenarios and options covered by the Dynamics 365 Customer Insights application."
-ms.date: 09/29/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: overview
 author: zacookmsft
 ms.author: zacook
-manager: shellyha
 
 ---
 
@@ -45,7 +43,7 @@ If an organization already uses machine learning scenarios based on Azure Machin
 
 ## Manage existing predictions
 
-Go to the **Intelligence** > **Predictions** page. On the **My predictions** tab, view the predictions you created, their prediction type, output entity name, status, the last time the prediction was edited, and the last time the data was refreshed. You can sort the list of predictions by any column.
+Go to the **Insights** > **Predictions** page. On the **My predictions** tab, view the predictions you created, their prediction type, output table name, status, the last time the prediction was edited, and the last time the data was refreshed. You can sort the list of predictions by any column.
 
 Select a prediction to view available actions.
 
@@ -59,7 +57,7 @@ Select a prediction to view available actions.
 
 ### Refresh a prediction
 
-Predictions can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh all predictions, select **Refresh all**. To manually refresh a prediction, select it and select **Refresh**. To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**.
+Predictions can be refreshed on an automatic schedule or refreshed manually on demand. To manually refresh all predictions, select **Refresh all**. To manually refresh a prediction, select it and select **Refresh**. To [schedule an automatic refresh](schedule-refresh.md), go to **Settings** > **System** > **Schedule**.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
@@ -78,8 +76,8 @@ The report includes:
 - **Name:** Descriptive name of the error, warning, or recommendation.
 - **Step:** Model phase, train or score, the information refers to.
 - **State:** Severity of the information (error, warning, recommendation).
-- **Column name:** Column in an entity that needs to be modified to improve the model performance.
-- **Entity name:** Name of the entity that needs to be modified to improve the model performance.
+- **Column name:** Column in a table that needs to be modified to improve the model performance.
+- **Table:** Name of the table that needs to be modified to improve the model performance.
 - **Details:** Details about the error, warning, or recommendation.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

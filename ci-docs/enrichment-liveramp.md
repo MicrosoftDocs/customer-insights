@@ -1,14 +1,12 @@
 ---
 title: "Enrich customer profiles with identity data from LiveRamp (preview)"
 description: "Enrich customer profiles with LiveRamp data."
-ms.date: 08/08/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
-manager: shellyha
 ---
 
 # Enrich customer profiles with identity data from LiveRamp (preview)
@@ -31,7 +29,7 @@ We currently support enriching customer profiles with LiveRamp data in the Unite
 
 You must be an [administrator](permissions.md#admin) in Customer Insights and have an active LiveRamp client ID and secret.
 
-1. Select **Add connection** when configuring an enrichment, or go to **Admin** > **Connections** and select **Set up** on the LiveRamp tile.
+1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the LiveRamp tile.
 
    :::image type="content" source="media/liveramp-connection.png" alt-text="Configuration pane to set up the connection to the LiveRamp AbiliTec service. ":::
 
@@ -55,7 +53,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Next**.
 
-1. Select the **Customer data set** and choose the profile or segment you want to enrich with identity data from LiveRamp. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich with identity data from LiveRamp. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
 1. Define which type of fields from your unified profiles to use for matching identity data from LiveRamp. At least one of the fields **Name and address**, **E-mail**, or **Phone** is required. For higher match accuracy, add other fields. Select **Next**.
 
@@ -65,7 +63,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a **Name** for the enrichment and the **Output entity name**.
+1. Provide a **Name** for the enrichment and the **Output table name**.
 
 1. Select **Save enrichment** after reviewing your choices.
 

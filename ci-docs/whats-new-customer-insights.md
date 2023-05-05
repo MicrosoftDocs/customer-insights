@@ -1,13 +1,11 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 08/31/2022
-ms.subservice: audience-insights
+ms.date: 05/03/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
-manager: shellyha
 ---
 
 # What's new in Dynamics 365 Customer Insights
@@ -19,6 +17,43 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## April 2023
+
+We're enhancing our delete and reset environment capabilities to make them easier to work with at scale. For example, admins can delete or reset solutions associated with your environment.
+
+Because Customer Insights environments are associated with a Dataverse environment, they are always in sync. Environment owners have access to these capabilities from the Power Platform admin center solutions page and can delegate these permissions.
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/do-more-advanced-application-lifecycle-management)
+
+<!-- 
+## March 2023
+
+### Generate insights in minutes with first run experience
+
+This first run experience (FRE) feature helps you recognize the value of Dynamics 365 Customer Insights faster. Onboarding a new application can be time-consuming and tricky, leaving room for error and leaving you questioning the value it can bring. This feature saves you precious time and takes the guesswork out of setting up your data correctly the first time you use Customer Insights. It works in trial and paid environments and allows you to get valuable insights faster and use those insights to fuel better customer experiences and drive a higher return on investment.
+
+After successfully provisioning your initial Customer Insights environment, the FRE guides you through three easy steps:
+
+1. Provide data: You'll be prompted to upload your data file (must be a CSV file containing more than 100 rows and 5 columns).
+2. Get data checked: Using AI-driven models, your data is automatically validated and quality-checked—no manual configuration required.
+3. Receive insights: Customer Insights identifies business value by deriving patterns and insights from your data file, such as segments and measures.
+
+This FRE works with a single CSV file only. If you have multiple data files, or different data sources, [Customer Insights provides connections to a broad set of sources](data-sources.md).
+
+- [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/generate-insights-minutes-first-run-experience)
+- [Documentation](data-sources-single.md) 
+-->
+
+## January 2023
+
+### Achieve business scenarios with application lifecycle management
+
+Dynamics 365 Customer Insights starts supporting application and environment lifecycle management capabilities for common enterprise-grade requirements. For example, you can copy, reset, or delete your Customer Insights environments. Additionally, the system ensures your Customer Insights environment and the associated Dataverse environment are always in sync.
+
+- [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/achieve-business-scenarios-application-lifetime-management)
+- [Documentation](create-environment.md#copy-the-environment-configuration)
+
+<!--
 ## September 2022 updates
 
 The updates in September 2022 include new features, performance upgrades, and bug fixes.
@@ -29,9 +64,9 @@ Export segments of unified customer profiles to HubSpot and use them for email m
 
 For more information, see [Export segments to HubSpot](export-hubspot.md).
 
-### Remove a unified field or entity from data unification
+### Remove a unified field or table from data unification
 
-You can remove fields and entities from the data unification process.
+You can remove fields and tables from the data unification process.
 
 For more information, see [Remove a unified field](data-unification-update.md#remove-a-unified-field).
 
@@ -123,7 +158,7 @@ The updates in May 2022 include new features, performance upgrades, and bug fixe
 
 ### Updated data unification experience
 
- Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. Data can be unified on a single entity or multiple entities. First, you [select entities and source fields](map-entities.md), [remove duplicate records](remove-duplicates.md), specify rules for [matching conditions](match-entities.md), and define which [fields to include in the unified customer profiles](merge-entities.md).
+ Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. Data can be unified on a single table or multiple tables. First, you [select tables and source fields](data-unification-map-tables.md), [remove duplicate records](data-unification-duplicates.md), specify rules for [matching conditions](data-unification-match-tables.md), and define which [fields to include in the unified customer profiles](data-unification-merge-tables.md).
 
 For more information, see [Data unification overview](data-unification.md).
 
@@ -168,8 +203,6 @@ For more information, see [Use measure builder to create measures from scratch](
 ### Consolidation of Customer Insights documentation
 
 We've revisited our documentation articles and removed mentions of engagement insights and audience insights capabilities. Moving forward, we'll refer consistently to the product name Customer Insights when we write about the core features of the application. This change also leads to significant restructuring of the table of contents, the URL structure, and the file paths in the underlying documentation repository. All your bookmarks or existing links continue to work and redirect to the updated URLs.
-
-If you want to let us know how you perceive that change or spot something not working as expected, tell us by [submitting feedback for this page](https://github.com/MicrosoftDocs/customer-insights/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20docs.microsoft.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Version%20Independent%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Content%3A%20%5BNew%20and%20upcoming%20features%20-%20Dynamics%20365%20Customer%20Insights%5D(https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fcustomer-insights%2Fwhats-new-customer-insights)%0A*%20Content%20Source%3A%20%5Bci-docs%2Fwhats-new-customer-insights.md%5D(https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fcustomer-insights%2Fblob%2Fmain%2Fci-docs%2Fwhats-new-customer-insights.md)%0A*%20Service%3A%20**customer-insights**%0A*%20Sub-service%3A%20**audience-insights**%0A*%20GitHub%20Login%3A%20%40m-hartmann%0A*%20Microsoft%20Alias%3A%20**mhart**).
 
 ## March 2022 updates
 
@@ -273,7 +306,7 @@ The updates in January 2022 include new features, performance upgrades, and bug 
 
 Customer Insights provides a new AI-powered feature to synthesize customer sentiment and identify specific business aspects as opportunities for targeted improvements. By analyzing the written feedback of your customers, you can get accurate insights at low cost. Sentiment analysis powered by Natural Language Processing (NLP) models that generate two derived insights for each customer ID. A sentiment score (of –5 to 5) and list of applicable business aspects. 
 
-For more information, see [Analyze sentiment in customer feedback (Preview)](sentiment-analysis.md).
-
+For more information, see [Analyze sentiment in customer feedback (Preview)](sentiment-analysis.md). 
+-->
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

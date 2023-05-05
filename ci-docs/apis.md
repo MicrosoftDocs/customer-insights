@@ -4,11 +4,9 @@ description: Use APIs and understand limitations.
 ms.date: 08/31/2022
 ms.reviewer: wimohabb
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
-manager: shellyha
 searchScope: 
   - ci-system-api-usage
   - customerInsights
@@ -29,7 +27,7 @@ Enable Customer Insights APIs and try them out. A Customer Insights admin must e
 
 1. [Sign in](https://home.ci.ai.dynamics.com) to Customer Insights. If you don't have a subscription yet, [sign up for a trial of Customer Insights](https://aka.ms/tryci).
 
-1. Go to **Admin** > **Security** and select the **APIs** tab.
+1. Go to **Settings** > **Permissions** and select the **APIs** tab.
 
 1. If API access to the environment has not been set up, select **Enable**.
 
@@ -105,7 +103,7 @@ Create an app registration that doesn't need user interaction and can be run on 
 
 1. Add the name of the app registration as a user in Customer Insights.
 
-   1. Open Customer Insights, go to **Admin** > **Security** and select **Add users**.
+   1. Open Customer Insights, go to **Settings** > **Permissions** and select **Add users**.
 
    1. Search for the name of your app registration, select it from the search results, and select **Save**.
 

@@ -1,14 +1,11 @@
 ---
 title: "Export data to Azure Synapse Analytics (preview)"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
-ms.date: 07/25/2022
+ms.date: 03/20/2023
 ms.reviewer: mhart
-
-ms.subservice: audience-insights
 ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
-manager: shellyha
+author: Nils-2m
+ms.author: nikeller
 ---
 
 # Export data to Azure Synapse Analytics (preview)
@@ -26,9 +23,11 @@ In Azure:
 
 - An active Azure subscription.
 
+- A user with an **Administrator** role in Customer Insights needs the **User Access Administrator** role in the Azure subscription to grant the *service principal* access to Azure resources in the Customer Insights UI. Otherwise, a user in Azure who has the **User Access Administrator** role must set following permissions. Learn more about the [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) role and how to choose between [Owner vs User Access Administrator](/azure/role-based-access-control/role-assignments-steps#step-2-select-the-appropriate-role). The **Owner** implicitly has the **User Access Administrator** role.
+
 - If using a new Azure Data Lake Storage Gen2 account, the [service principal for Customer Insights](connect-service-principal.md) has **Storage Blob Data Contributor** permissions. The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
 
-- On the resource group where the Azure Synapse workspace is located, the *service principal* and the *Azure AD user with admin permissions in Customer Insights* must be assigned at least **Reader** [permissions](/azure/role-based-access-control/role-assignments-portal).
+- On the resource group with the Azure Synapse workspace, the *service principal* and the *Azure AD user with admin permissions in Customer Insights* needs at least **Reader** [permissions](/azure/role-based-access-control/role-assignments-portal).
 
 - The *Azure AD user with admin permissions in Customer Insights* has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more about [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
@@ -38,11 +37,16 @@ In Azure:
 
 - If your Customer Insights environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md), the user who sets up the connection to Azure Synapse Analytics needs at least the built-in **Reader** role on the Data Lake Storage account. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
+## Known limitation
+
+- Azure Synapse export doesn't support incremental refresh for data sources if an environment uses a custom Azure Data Lake for data storage.
+- Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link only works if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
+
 ## Set up connection to Azure Synapse
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Azure Synapse Analytics**.
 
@@ -50,7 +54,7 @@ In Azure:
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Select or search for the subscription you want to use the Customer Insights data in. As soon as a subscription is selected, you can also select **Workspace**, **Storage account**, and **Container**.
+1. Select or search for the subscription you want to use the Customer Insights data in. As soon as you select a subscription, you can also select **Workspace**, **Storage account**, and **Container**.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
@@ -68,7 +72,7 @@ In Azure:
 
 1. Provide a recognizable **Display name** for your export and a **Database name**. The export will create a new [Azure Synapse lake database](/azure/synapse-analytics/database-designer/concepts-lake-database) in the workspace defined in the connection.
 
-1. Select which entities you want to export to Azure Synapse Analytics.
+1. Select which tables you want to export to Azure Synapse Analytics.
    > [!NOTE]
    > Data sources based on a [Common Data Model folder](connect-common-data-model.md) aren't supported.
 
@@ -76,7 +80,7 @@ In Azure:
 
 [!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-To query data that was exported to Synapse Analytics, you need **Storage Blob Data Reader** access to the destination storage on the workspace of exports.
+To query data in Synapse Analytics, you need **Storage Blob Data Reader** access to the destination storage on the workspace of exports.
 
 ## Update an export
 
@@ -84,8 +88,8 @@ To query data that was exported to Synapse Analytics, you need **Storage Blob Da
 
 1. Select **Edit** on the export you want to update.
 
-   - **Add** or **Remove** entities from the selection. If entities are removed from the selection, they aren't deleted from the Synapse Analytics database. However, future data refreshes won't update the removed entities in that database.
+   - **Add** or **Remove** tables from the selection. If you remove tables from the selection, they stay in the Synapse Analytics database. However, future data refreshes won't update the removed tables in that database.
 
-   - **Changing the Database Name** creates a new Synapse Analytics database. The database with the name that was configured before won't receive any updates in future refreshes.
+   - **Changing the Database Name** creates a new Synapse Analytics database. The old database won't receive any updates in future refreshes.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

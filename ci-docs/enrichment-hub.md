@@ -1,14 +1,12 @@
 ---
 title: "Data enrichment (preview) overview"
 description: "Use capabilities from Microsoft and other third-party services to enrich your customer data."
-ms.date: 06/10/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
-manager: shellyha
 ms.custom: intro-internal
 searchScope: 
   - ci-enrichments
@@ -23,7 +21,7 @@ Use data from sources like Microsoft and other partners to enrich your customer 
 
 ## Multiple enrichments of the same type
 
-The entity to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For example, enrich data only for a specific segment. You can configure several enrichments of the same type and reuse the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on each tile on the **Discover** tab of the **Enrichment** page.
+The table to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For example, enrich data only for a specific segment. You can configure several enrichments of the same type and reuse the same connection. Some enrichments will have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on each tile on the **Discover** tab of the **Enrichment** page.
 
 ## Enrich data sources before unification
 
@@ -81,7 +79,7 @@ You can also create [segments](segments.md) or [measures](measures.md) from enri
 
 Once run, enrichments can be refreshed on an automatic schedule or refreshed manually on demand.
 
-1. To manually refresh one or more enrichments, select them and choose **Run**. To [schedule an automatic refresh](schedule-refresh.md), go to **Admin** > **System** > **Schedule**. The processing time depends on the size of your customer data.
+1. To manually refresh one or more enrichments, select them and choose **Run**. To [schedule an automatic refresh](schedule-refresh.md), go to **Settings** > **System** > **Schedule**. The processing time depends on the size of your customer data.
 
 1. Optionally, [see the progress of the enrichment process](#see-the-progress-of-the-enrichment-process).
 
@@ -108,7 +106,7 @@ After a completed enrichment run, review the enrichment results.
 1. Go to **Data** > **Enrichment**.
 1. In the **My enrichments** tab, select the enrichment that you want to view.
 
-All enrichments show basic information such as the number of enriched profiles and the number of enriched profiles over time. The **Enriched customers preview** tile shows a sample of the generated enrichment entity. To see a detailed view, select **See more** and select the **Data** tab.
+All enrichments show basic information such as the number of enriched profiles and the number of enriched profiles over time. The **Enriched customers preview** tile shows a sample of the generated enrichment table. To see a detailed view, select **See more** and select the **Data** tab.
 
 :::image type="content" source="media/enrichments-results.png" alt-text="Enrichments results page.":::
 

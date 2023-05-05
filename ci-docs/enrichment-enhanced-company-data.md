@@ -1,14 +1,12 @@
 ---
 title: "Enrich company profiles with enhanced company data"
 description: "Enrich and normalize company data with Microsoft's models."
-ms.date: 06/10/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
-manager: shellyha
 ---
 
 # Enrich company profiles with enhanced company data
@@ -62,7 +60,7 @@ The model doesn't:
 
 1. Review the overview and then select **Next**.
 
-1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
 1. Select which type of fields from your company profiles to use for matching with Microsoft’s compiled company data. This selection will affect the mapping fields you have access to in the next step.
 
@@ -74,7 +72,7 @@ The model doesn't:
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a **Name** for the enrichment and the **Output entity**.
+1. Provide a **Name** for the enrichment and the **Output table**.
 
 1. Select **Save enrichment** after reviewing your choices.
 

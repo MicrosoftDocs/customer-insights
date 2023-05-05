@@ -1,14 +1,12 @@
 ---
 title: "Review data unification"
 description: "Review the data unification steps, create unified customer profiles, and review the results"
-ms.date: 08/12/2022
+ms.date: 11/15/2022
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
 ms.author: adkuppa
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-match
   - ci-merge
@@ -45,24 +43,24 @@ After unification, the **Data** > **Unify** page shows the number of unified cus
 :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
 
 > [!TIP]
-> The **Matching conditions** tile displays only if multiple entities were selected.
+> The **Matching conditions** tile displays only if multiple tables were selected.
 
 We recommend you review the results, particularly the quality of your [match rules](data-unification-update.md#manage-match-rules) and refine them if necessary.
 
 When needed, [make changes to the unification settings](data-unification-update.md) and rerun the unified profile.
 
-### Verify output entities from data unification
+### Verify output tables from data unification
 
-Go to **Data** > **Entities** to verify the output entities.
+Go to **Data** > **Tables** to verify the output tables.
 
-The unified customer profile entity, called *Customer*, displays in the **Profiles** section. The first successful unification run creates the unified *Customer* entity. All subsequent runs expand that entity.
+The unified customer profile table, called *Customer*, displays in the **Profiles** section. The first successful unification run creates the unified *Customer* table. All subsequent runs expand that table.
 
-Deduplication and conflation entities are created and display in the **System** section. A deduplicated entity for each of the source entities is created with the name **Deduplication_DataSource_Entity**. The **ConflationMatchPairs** entity contains information about cross-entity matches.
+Deduplication and conflation tables are created and display in the **System** section. A deduplicated table for each of the source tables is created with the name **Deduplication_DataSource_Table**. The **ConflationMatchPairs** table contains information about cross-table matches.
 
-A deduplication output entity contains the following information:
+A deduplication output table contains the following information:
 - IDs / Keys
   - Primary key and Alternate ID fields. Alternate ID field consists of all the alternate IDs identified for a record.
-  - Deduplication_GroupId field shows the group or cluster identified within an entity that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output entity.
+  - Deduplication_GroupId field shows the group or cluster identified within a table that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output table.
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.

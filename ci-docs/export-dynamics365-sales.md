@@ -1,14 +1,12 @@
 ---
 title: "Export segments to Dynamics 365 Sales (preview)"
 description: "Learn how to configure the connection and export to Dynamics 365 Sales."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 searchScope: 
   - ci-export
   - customerInsights
@@ -23,7 +21,7 @@ Use your customer data to create marketing lists, follow up workflows, and send 
 Contact records must be present in Dynamics 365 Sales before you can export a segment from Customer Insights to Sales. Read more on how to ingest contacts from [Dynamics 365 Sales using Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
    > [!NOTE]
-   > Exporting segments from Customer Insights to Sales will not create new contact records in the Sales instances. The contact records from Sales must be ingested in Customer Insights and used as a data source. They also need to be included in the unified Customer entity to map customer IDs to contact IDs before segments can be exported.
+   > Exporting segments from Customer Insights to Sales will not create new contact records in the Sales instances. The contact records from Sales must be ingested in Customer Insights and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.
 
 ## Known limitations
 
@@ -33,7 +31,7 @@ Exports to Dynamics 365 Sales is limited to 100,000 contacts per segment, which 
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Dynamics 365 Sales**.
 
@@ -63,7 +61,7 @@ Exports to Dynamics 365 Sales is limited to 100,000 contacts per segment, which 
 
 1. Enter a name for the export.
 
-1. Select the Contact ID field in the Customer entity that matches the Dynamics 365 Contact ID.
+1. Select the Contact ID field in the Customer table that matches the Dynamics 365 Contact ID.
 
 1. Select the segments you want to export.
 

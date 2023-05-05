@@ -3,12 +3,10 @@ title: "Schedule system refresh"
 description: "Schedule the time when the system should be refreshed"
 ms.date: 11/28/2022
 
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
-manager: shellyha
 searchScope: 
   - ci-system-schedule
   - customerInsights
@@ -24,7 +22,7 @@ Schedule automatic refreshes of all your [ingested data sources](data-sources.md
 
 ## Set system refresh schedule
 
-1. Go to **Admin** > **System** and select the **Schedule** tab.
+1. Go to **Settings** > **System** and select the **Schedule** tab.
 
    :::image type="content" source="media/schedule_refresh.png" alt-text="Schedule refresh tab from System page.":::
 

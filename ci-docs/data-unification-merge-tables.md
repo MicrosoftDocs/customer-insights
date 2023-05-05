@@ -1,15 +1,14 @@
 ---
 title: "Unify customer fields for data unification"
-description: "Merge entities to create unified customer profiles."
+description: "Merge tables to create unified customer profiles."
 recommendations: false
-ms.date: 12/6/2022
+ms.date: 01/13/2023
 
-ms.subservice: audience-insights
-ms.topic: tutorial
+ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-merge
   - ci-match
@@ -19,7 +18,7 @@ searchScope:
 
 # Unify customer fields
 
-In this step of the unification process, choose and exclude attributes to merge within your unified profile entity. For example, if three entities had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Some attributes are automatically combined by the system.
+In this step of the unification process, choose and exclude attributes to merge within your unified profile table. For example, if three tables had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Customer Insights automatically combines some attributes.
 
 In this step, you can create stable and unique customer IDs and for individual customers, group related profiles into a cluster.
 
@@ -58,15 +57,15 @@ In this step, you can create stable and unique customer IDs and for individual c
     - **Importance**: Identifies the winner value based on importance rank specified for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
 
       > [!NOTE]
-      > Customer Insights uses the first non-null value. For example, given entities A, B, and C ranked in that order, if A.Name and B.Name are null, then the value from C.Name is used.
+      > Customer Insights uses the first non-null value. For example, given tables A, B, and C ranked in that order, if A.Name and B.Name are null, then the value from C.Name is used.
 
       :::image type="content" source="media/importance-merge-option.png" alt-text="Importance option in the merge fields dialog.":::
 
-    - **Most recent**: Identifies the winner value based on the most recency. Requires a date or a numeric field for every participating entity in the merge fields scope to define the recency.
+    - **Most recent**: Identifies the winner value based on the most recency. Requires a date or a numeric field for every participating table in the merge fields scope to define the recency.
 
       :::image type="content" source="media/recency-merge-option.png" alt-text="Recency option in the merge fields dialog.":::
 
-    - **Least recent**: Identifies the winner value based on the least recency. Requires a date or a numeric field for every participating entity in the merge fields scope to define the recency.
+    - **Least recent**: Identifies the winner value based on the least recency. Requires a date or a numeric field for every participating table in the merge fields scope to define the recency.
 
 1. You can add more fields to participate in the merge process.
 
@@ -76,7 +75,7 @@ In this step, you can create stable and unique customer IDs and for individual c
 
 ### Rename fields
 
-Change the display name of merged or separate fields. You can't change the name of the output entity.
+Change the display name of merged or separate fields. You can't change the name of the output table.
 
 1. Select the field and choose **Rename**.
 
@@ -104,7 +103,7 @@ To see the list of all excluded fields, select **Excluded fields**. If necessary
 
 ### Change the order of fields
 
-Some entities contain more details than others. If an entity includes the latest data about a field, you can prioritize it over other entities when merging values.
+Some tables contain more details than others. If a table includes the latest data about a field, you can prioritize it over other tables when merging values.
 
 1. Select the field.
   
@@ -126,10 +125,10 @@ Combine separated fields to create a merged attribute.
 
 ### Combine a group of fields
 
-When you combine a group of fields, Customer Insights treats the group as a single unit, and chooses the winner record based on a merge policy. When merging fields without combining them into a group, Customer Insights chooses the winner record for each field based on the entity order ranking set up in the **Match conditions** step. If a field has a null value, Customer Insights continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
+When you combine a group of fields, Customer Insights treats the group as a single unit, and chooses the winner record based on a merge policy. When merging fields without combining them into a group, Customer Insights chooses the winner record for each field based on the table order ranking set up in the **Match conditions** step. If a field has a null value, Customer Insights continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
 
 #### Example
-Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in a less than ideal mailing address (200 Cedar Springs Road, Suite 950, Dallas, TX 75255). To ensure data  integrity, combine the address fields into a group.
+Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in an incorrect mix of address fields (200 Cedar Springs Road, Suite 950, Dallas, TX 75255). To ensure data  integrity, combine the address fields into a group.
 
 **Table1 - Loyalty**
 
@@ -155,11 +154,11 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
 
    :::image type="content" source="media/merge-combine-group.png" alt-text="Combine group of fields screen.":::
 
-1. Specify the merge winner policy in the **Rank groups by** dropdown. The same merge policy is used for all the fields that make up the group.
+1. Specify which group of fields to select as the winner in the **Rank groups by** dropdown. The same merge policy is used for all the fields that make up the group.
 
-   - **Importance**: Identifies the winner record as the group of fields with the highest ranking. The highest ranking is the data source you select for Group 1. Importance is the default value.
-   - **Most recent**: Identifies the winner record as the group of fields with the most recency. Requires a date to define the recency.
-   - **Least recent**: Identifies the winner record as the group of fields with the least recency. Requires a date to define the recency.
+   - **Importance**: Identifies the winner group by looking at the groups in order starting with Group 1. If all fields are null, the next group is considered. Importance is the default value.
+   - **Most recent**: Identifies the winner group by referencing a field in the group you select to indicate recency. The field can be a date, time, or numeric as long as it can be ranked largest to smallest.
+   - **Least recent**: Identifies the winner group by referencing a field in the group you select to indicate recency. The field can be a date, time, or numeric as long as it can be ranked smallest to largest.
 
 1. To add more than two fields for your combined group, select **Add** > **Field**. Add as many as 10 fields.
 
@@ -185,9 +184,9 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
 
 ## Configure customer ID generation
 
-Define how to generate customer ID values, the unique customer profile identifiers. The unify fields step in the data unification process generates the unique customer profile identifier. The identifier is the *CustomerId* in the *Customer* entity that results from the data unification process.
+Define how to generate customer ID values, the unique customer profile identifiers. The unify fields step in the data unification process generates the unique customer profile identifier. The identifier is the *CustomerId* in the *Customer* table that results from the data unification process.
 
-The *CustomerId* is based on a hash of the first value of the non-null winner primary keys. These keys come from the entities used in data unification and are influenced by the match order. So the generated customer ID can change when a primary key value changes in the primary entity of the match order. The primary key value might not always represent the same customer.
+The *CustomerId* is based on a hash of the first value of the non-null winner primary keys. These keys come from the tables used in data unification and are influenced by the match order. So the generated customer ID can change when a primary key value changes in the primary table of the match order. The primary key value might not always represent the same customer.
 
 Configuring a stable customer ID enables you to avoid that behavior.
 
@@ -202,13 +201,13 @@ Configuring a stable customer ID enables you to avoid that behavior.
 
 ## Group profiles into households or clusters
 
-For individual customers, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* entity contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](match-entities.md#define-rules-for-match-pairs).
+For individual customers, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* table contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](data-unification-match-tables.md#define-rules-for-match-pairs).
 
 1. Select **Advanced** > **Create cluster**.
 
    :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
 
-1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* entity, household is automatically selected.
+1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* table, household is automatically selected.
 
 1. Provide a name for the cluster and select **Done**.
 
@@ -216,7 +215,7 @@ For individual customers, you can define rules to group related profiles into a 
 
 1. Specify the rules and conditions to define your cluster.
 
-1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* entity.
+1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* table.
 
 > [!div class="nextstepaction"]
 > [Next step: Review unification](review-unification.md)

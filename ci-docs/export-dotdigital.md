@@ -1,14 +1,12 @@
 ---
 title: "Export segments to DotDigital (preview)"
 description: "Learn how to configure the connection and export to DotDigital."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export segments to DotDigital (preview)
@@ -32,7 +30,7 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **DotDigital**.
 

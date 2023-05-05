@@ -1,13 +1,12 @@
 ---
 title: "OData query examples for Customer Insights APIs"
 description: "Commonly used examples of for the Open Data Protocol (OData) to query the Customer Insights APIs to review data."
-ms.date: 08/30/2022
-ms.subservice: audience-insights
+ms.date: 01/16/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
-manager: shellyha
+ms.custom: bap-template
 ---
 
 # OData query examples for Customer Insights APIs
@@ -21,27 +20,27 @@ Modify the query samples to make them work on the target environments:
 - {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` where {instanceId} is the GUID of the Customer Insights environment you want to query. The [ListAllInstances operation](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) lets you find the {InstanceId} you have access to.
 - {CID}: GUID of a unified customer record. Example: `ce759201f786d590bf2134bff576c369`.
 - {AlternateKey}: Identifier of the primary key of a customer record in a data source. Example: `CNTID_1002`
-- {DSname}: String with the entity name of a data source that gets ingested to Customer Insights. Example: `Website_contacts`.
-- {SegmentName}: String with the output entity name of a segment in Customer Insights. Example: `Male_under_40`.
+- {DSname}: String with the table name of a data source that gets ingested to Customer Insights. Example: `Website_contacts`.
+- {SegmentName}: String with the output table name of a segment in Customer Insights. Example: `Male_under_40`.
 
 ## Customer
 
-Sample queries for the *Customer* entity.
+Sample queries for the *Customer* table.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
 |Single customer ID     | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'`          |  |
-|Alternate key    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Alternate keys persist in the unified customer entity       |
+|Alternate key    | `{serviceRoot}/Customer?$filter={DSname_TableName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Alternate keys persist in the unified customer table       |
 |Select   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |In    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
-|Alternate Key + In   | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|Alternate Key + In   | `{serviceRoot}/Customer?$filter={DSname_TableName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |Search  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Returns top 10 results for a search string      |
-|Segment membership  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Returns a preset number of rows from the segmentation entity.      |
+|Segment membership  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Returns a preset number of rows from the segmentation table.      |
 |Segment membership for a customer | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | Returns the customer profile if they're a member of the given segment     |
 
 ## Unified activity
 
-Sample queries for the *UnifiedActivity* entity.
+Sample queries for the *UnifiedActivity* table.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
@@ -50,11 +49,11 @@ Sample queries for the *UnifiedActivity* entity.
 |Activity type    |   `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'`        |         |
 |Activity by display name     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’`        | |
 |Activity sorting    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  Sort activities ascending or descending       |
-|Activity expanded from segment membership  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     |         |
+|All activities and measures for a customer  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     | Activities and measures are additional key/value pairs on the returned customer profile       |
 
 ## Other examples
 
-Sample queries for other entities.
+Sample queries for other tables.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
@@ -63,12 +62,19 @@ Sample queries for other entities.
 |Enriched interests of CID    |   `{serviceRoot}/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`       |         |
 |In-Clause + Expand     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
 
-## Not supported OData queries
+## Limitations
+- Customer Insights API returns a maximum of 100 objects by default. You can parse through more than the 100 returned objects by using standard pagination techniques. Alternatively, you can [export your data](export-destinations.md).
+- The following queries aren't supported by Customer Insights:
+  - `$filter` on ingested source tables. You can only run $filter queries on system tables that Customer Insights creates.
+  - `$expand` from a `$search` query. Example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
+  - `$expand` from `$select` if only a subset of attributes is selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
+  - `$expand` enriched brand or interest affinities for a given customer. Example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
+  - Query prediction model output tables through alternate key. Example: `OOBModelOutputTable?$filter=HotelCustomerID eq '{AK}'`
 
 The following queries aren't supported by Customer Insights:
 
-- `$filter` on ingested source entities. You can only run $filter queries on system entities that Customer Insights creates.
+- `$filter` on ingested source tables. You can only run $filter queries on system tables that Customer Insights creates.
 - `$expand` from a `$search` query. Example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
 - `$expand` from `$select` if only a subset of attributes is selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
 - `$expand` enriched brand or interest affinities for a given customer. Example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
-- Query prediction model output entities through alternate key. Example: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`
+- Query prediction model output tables through alternate key. Example: `OOBModelOutputTable?$filter=HotelCustomerID eq '{AK}'`

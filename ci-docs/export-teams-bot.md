@@ -1,14 +1,12 @@
 ---
 title: "Teams bot for Dynamics 365 Customer Insights (preview)"
 description: "Look up unified customer profiles in Microsoft Teams with the help of a bot."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
-manager: shellyha
+author: Nils-2m
+ms.author: nikeller
 ---
 
 # Teams bot for Dynamics 365 Customer Insights (preview)
@@ -30,7 +28,7 @@ Connect with Microsoft Teams to let a bot look up unified customer profiles in T
 
 ## Configure the bot
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 1. On the Microsoft Teams tile, select **Set up**.
 1. You're redirected to the **Apps** area in Teams. You can also open Teams and select **Apps** in the bottom-left corner or [get it from AppSource](https://go.microsoft.com/fwlink/?linkid=2124104) directly.
 1. Search for **Customer Insights** and select the app.

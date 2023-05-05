@@ -1,14 +1,11 @@
 ---
 title: "Export data to SFTP hosts (preview) (contains video)"
 description: "Learn how to configure the connection and export to an SFTP location."
-ms.date: 07/25/2022
+ms.date: 04/03/2023
 ms.reviewer: mhart
-
-ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export data to SFTP hosts (preview)
@@ -36,7 +33,7 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **SFTP**.
 
@@ -50,7 +47,7 @@ Use your customer data in third-party applications by exporting them to a Secure
    - ECDSA 256/384/521 in OpenSSL PEM format
    - ED25519 and RSA in OpenSSH key format
 
-1. Select **Verify** to test the connection.
+1. Enter the **Hostname** and specify the **Export folder** on the FTP server. The export folder must be lowercase. The system is not case-sensitive and will create folder names in lowercase even if you use capital letters in the folder name.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
@@ -70,16 +67,17 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 1. Choose if you want to export your data **Gzipped** or **Unzipped** and the **field delimiter** for the exported files.
 
-1. Select the entities, for example segments, that you want to export.
+1. Select the tables, for example segments, that you want to export.
+2. Choose **Next** and determine if you want to send all fields in the selected tables. By default, all fields in your selected tables are exported. Clear the checkox next to the fields you don't want to export.
 
    > [!NOTE]
-   > Each selected entity will be split into a maximum of five output files when exported.
+   > Each selected table is split into a maximum of five output files when exported.
 
 1. Select **Save**.
 
 [!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 > [!TIP]
-> Export of entities that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
+> Export of tables that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

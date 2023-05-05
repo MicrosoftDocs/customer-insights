@@ -4,11 +4,9 @@ description: "Learn how to configure the connection and export to Facebook Ads M
 ms.date: 12/16/2022
 ms.reviewer: mhart
 
-ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-manager: shellyha
 ---
 
 # Export segments to Facebook Ads Manager (preview)
@@ -36,7 +34,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Facebook Ads Manager**.
 
@@ -72,7 +70,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager.
 
-1. Map the corresponding attributes from your unified customer entity for the selected key identifier.
+1. Map the corresponding attributes from your unified customer table for the selected key identifier.
    > [!TIP]
    > The best chances for a match occur if you select **Email** as key identifier. Adding additional identifiers may improve the matching.
 

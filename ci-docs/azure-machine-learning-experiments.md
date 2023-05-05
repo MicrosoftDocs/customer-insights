@@ -1,14 +1,12 @@
 ---
 title: "Use Azure Machine Learning-based models"
 description: "Use Azure Machine Learning-based models in Dynamics 365 Customer Insights."
-ms.date: 09/22/2022
+ms.date: 11/15/2022
 
-ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
 ms.author: naravill
 ms.reviewer: mhart
-manager: shellyha
 ---
 
 # Use Azure Machine Learning-based models
@@ -20,7 +18,7 @@ The unified data in Dynamics 365 Customer Insights is a source for building mach
 - Access to Customer Insights
 - Active Azure Enterprise subscription
 - [Unified customer profiles](data-unification.md)
-- [Entity export to Azure Blob storage](export-azure-blob-storage.md) configured
+- [Table export to Azure Blob storage](export-azure-blob-storage.md) configured
 
 ## Set up Azure Machine Learning workspace
 
@@ -40,7 +38,7 @@ Data scientists and AI developers use the [Azure Machine Learning SDK](/python/a
 
 ### Dataset configuration
 
-Create datasets to use entity data from Customer Insights for your batch inference pipeline. Register these datasets in the workspace. Currently, we only support [tabular datasets](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) in .csv format. Parameterize the datasets that correspond to entity data as a pipeline parameter.
+Create datasets to use table data from Customer Insights for your batch inference pipeline. Register these datasets in the workspace. Currently, we only support [tabular datasets](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) in .csv format. Parameterize the datasets that correspond to table data as a pipeline parameter.
 
 - Dataset parameters in Designer
 

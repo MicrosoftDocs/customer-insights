@@ -1,14 +1,12 @@
 ---
 title: Get started with Dynamics 365 Customer Insights
-description: An overview of Customer Insights help resources to get started quickly. 
+description: An overview of Customer Insights helps resources to get started quickly. 
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 08/31/2021
-ms.subservice: audience-insights 
-ms.topic: conceptual
-ms.manager: shellyha
-ms.custom: intro-internal
+ms.date: 03/15/2023
+ms.topic: how-to
+ms.custom: bap-template
 searchScope: 
   - ci-home
   - customerInsights
@@ -20,25 +18,30 @@ Customer Insights can help you build a deeper understanding of your customers. C
 
 ## Step 1: Create an environment
 
-First, create an environment to work in. If your organization already purchased a license, see [Create an environment](create-environment.md). To start a trial for Customer Insights, see [Set up a trial environment](trial-signup.md).
+1. Sign up for a [free trial](trial-signup.md) or [purchase a license](paid-license.md).
 
-## Step 2: Explore Customer Insights
+1. [Create an environment](create-environment.md). After the environment is created, the **Getting Started** screen displays.
 
-The first time you sign in to Customer Insights, configure settings and explore the product.
+   :::image type="content" source="media/get-started.png" alt-text="Screenshot of the Getting Started screen with Insights in minutes.":::
 
-1. [Sign in to Customer Insights](https://home.ci.ai.dynamics.com) using your Microsoft Azure Active Directory (AAD) user account.
+## Step 2: Import data
+<!--
+> [!TIP]
+> To quickly get started and have Customer Insights automatically generate insights, upload your own data from a single CSV file. Go to [Get started with Customer Insights using a single data source](data-sources-single.md). -->
 
-1. Change the environment to see demo data and [explore Customer Insights](home.md).
+1. To get started with data from multiple sources, select **Not now** on the **Getting started** screen. On the **Home** screen, change Get insights in mins to **Step-by-step guide**.
 
-## Step 3: Ingest, unify, and set up relationships for your data
+   :::image type="content" source="media/home-step-by-step.png" alt-text="Screenshot of the Getting Started screen with Step-by-step guide selected.":::
 
-Unified profiles are the foundation to get insights and take action on the data. Bring in data from various sources and run the data unification process to combine unified profiles. Specify relationships between the ingested entities and use enrichment features to add information to the profiles.
+1. Import your data. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md), or  [Power Query connectors](connect-power-query.md).
 
-1. Ingest data by creating data sources from multiple options. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md), or  [Power Query connectors](connect-power-query.md).
+## Step 3: Unify the data and set up relationships
 
-1. Run the [data unification process](data-unification.md) by identifying the [source fields](map-entities.md), removing [duplicates](remove-duplicates.md), [matching conditions](match-entities.md), and [unifying fields](merge-entities.md).
+Run the data unification process to combine unified profiles. Unified profiles are the foundation to get insights and take action on the data. Specify relationships between the ingested tables and use enrichment features to add information to the profiles.
 
-1. Get familiar with the [entities the system creates](entities.md) and create [relationships between the ingested entities](relationships.md).
+1. Run the [data unification process](data-unification.md) by identifying the [source fields](data-unification-map-tables.md), removing [duplicates](data-unification-duplicates.md), [matching conditions](data-unification-match-tables.md), and [unifying fields](data-unification-merge-tables.md).
+
+1. Get familiar with the [tables the system creates](tables.md) and create [relationships between the ingested tables](relationships.md).
 
 ## Step 4: Enhance unified profiles with predictions, activities, and measures
 
@@ -61,6 +64,5 @@ Now that your data is complete and contains a wide range of information about yo
 1. Browse the expanding catalog of [export options](export-destinations.md) where you can use customer data. For example, you can use data to manage promotions and reach out with digital marketing.
 
 1. Review integration options, for example to other Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md).  
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

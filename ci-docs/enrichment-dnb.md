@@ -1,14 +1,11 @@
 ---
 title: "Enrich company profiles with Dun & Bradstreet (preview)"
 description: "General information about the Dun & Bradstreet third-party enrichment."
-ms.date: 08/08/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
-ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
-manager: shellyha
 ---
 
 # Enrich company profiles with Dun & Bradstreet (preview)
@@ -44,7 +41,7 @@ As a licensed user of Dun & Bradstreet, you can set up a project in [Dun & Brads
 
 You must be an [administrator](permissions.md#admin) in Customer Insights and have the credentials from Dun & Bradstreet Connect.
 
-1. Select **Add connection** when configuring an enrichment or go to **Admin** > **Connections** and select **Set up** on the Dun & Bradstreet tile.
+1. Select **Add connection** when configuring an enrichment or go to **Settings** > **Connections** and select **Set up** on the Dun & Bradstreet tile.
 
 1. Enter a name for the connection.
 
@@ -74,7 +71,7 @@ We currently support the following country/region options: Canada (English) or U
 
 1. Select **Next**.
 
-1. Select the **Customer data set** and choose the profile or segment you want to enrich with company data from Dun & Bradstreet. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich with company data from Dun & Bradstreet. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
 1. Define which type of fields from your unified profiles to use for matching company data from Dun & Bradstreet. At least one of the fields **Name and address**, **Phone**, or **Email** is required.
 
@@ -86,7 +83,7 @@ We currently support the following country/region options: Canada (English) or U
 
 1. Select **Next** to complete the field mapping.
 
-1. Provide a **Name** for the enrichment and the **Output entity name**.
+1. Provide a **Name** for the enrichment and the **Output table name**.
 
 1. Select **Save enrichment** after reviewing your choices.
 

@@ -1,14 +1,11 @@
 ---
 title: "Export data to Azure Data Lake Storage Gen2 (preview)"
 description: "Learn how to configure the connection to Azure Data Lake Storage Gen2."
-ms.date: 07/25/2022
+ms.date: 03/20/2023
 ms.reviewer: mhart
-
-ms.subservice: audience-insights
 ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
-manager: shellyha
+author: Nils-2m
+ms.author: nikeller
 ---
 
 # Export data to Azure Data Lake Storage Gen2 (preview)
@@ -23,12 +20,13 @@ Store your Customer Insights data in a Data Lake Storage Gen2 account or use it 
 ## Known limitations
 
 - For Azure Data Lake Storage Gen2, choose between [Standard performance and Premium performance tier](/azure/storage/blobs/create-data-lake-storage-account). If you choose the Premium performance tier, select the [premium block blobs as account type](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
+- Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 
 ## Set up connection to Azure Data Lake Storage Gen2
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Azure Data Lake Gen 2**.
 
@@ -56,7 +54,7 @@ Store your Customer Insights data in a Data Lake Storage Gen2 account or use it 
 
 1. Enter the folder name for the Azure Data Lake Storage Gen2 storage.
 
-1. Select the box next to each of the entities you want to export to this destination.
+1. Select the box next to each of the tables you want to export to this destination.
 
 1. Select **Save**.
 
@@ -65,6 +63,6 @@ Store your Customer Insights data in a Data Lake Storage Gen2 account or use it 
 Exported data is stored in the Azure Data Lake Gen 2 storage container you configured.
 
 > [!TIP]
-> Export of entities that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
+> Export of tables that contain a large amount of data can lead to multiple CSV files in the same folder for each export. Splitting exports happens for performance reasons to minimize the time it takes for an export to complete.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

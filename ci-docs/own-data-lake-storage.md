@@ -3,9 +3,8 @@ title: Use your own Azure Data Lake Storage Gen2 account
 author: mukeshpo
 description: Learn about the requirements to use your own Azure Data Lake Storage account to store Customer Insights data.
 ms.author: mukeshpo
-ms.date: 08/15/2022
+ms.date: 03/20/2023
 ms.topic: conceptual
-ms.manager: shellyha
 ms.custom: intro-internal
 ms.reviewer: mhart
 ---
@@ -18,7 +17,7 @@ Administrators in Customer Insights can [create environments](create-environment
 
 ## Prerequisites
 
-- Azure Data Lake Storage accounts must be in the same Azure region that you selected when creating the Customer Insights environment. To know the region of the environment, go to **Admin** > **System** > **About** in Customer Insights.
+- Azure Data Lake Storage accounts must be in the same Azure region that you selected when creating the Customer Insights environment. To know the region of the environment, go to **Settings** > **System** > **About** in Customer Insights.
 - The Data Lake Storage account must be Gen2. Azure Data Lake Gen1 storage accounts are not supported.
 - The Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
 - A container named `customerinsights` has to exist on the storage account. Create it before you use your own Data Lake Storage in Customer Insights.
@@ -32,8 +31,8 @@ When you create a new environment, make sure the Data Lake Storage account exist
 1. Choose how to **Connect your storage**. You can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using an Azure Service Principal](connect-service-principal.md).
    - For **Azure subscription**, choose the **Subscription**, **Resource group**, and **Storage account** that contains the `customerinsights` container.
    - For **Account key**, provide the **Account name** and the **Account key** for the Data Lake Storage account. Using this authentication method implies that you're informed if your organization rotates the keys. You must [update the environment configuration](manage-environments.md#edit-an-existing-environment) with the new key when it's rotated.
-1. Choose if you want to use Azure Private Link to connect to the storage account and [create the connection to Private Link](security-overview.md#set-up-an-azure-private-link).
+1. Choose if you want to use Azure Private Link to connect to the storage account and [create the connection to Private Link](private-link.md).
 
 When system processes like data ingestion complete, the system creates corresponding folders in the storage account. Data files and model.json files are created and added to folders based on the process name.
 
-If you create multiple environments of Customer Insights and choose to save the output entities from those environments to your storage account, Customer Insights creates separate folders for each environment with `ci_environmentID` in the container.
+If you create multiple environments of Customer Insights and choose to save the output tables from those environments to your storage account, Customer Insights creates separate folders for each environment with `ci_environmentID` in the container.
