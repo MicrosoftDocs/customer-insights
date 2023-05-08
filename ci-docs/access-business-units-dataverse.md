@@ -1,5 +1,5 @@
 ---
-title: "Access Customer Insights data in Dataverse (preview)"
+title: "Customer Insights data in Dataverse (preview)"
 description: "Learn how to use business units in Dataverse applications to separate data."
 ms.date: 05/05/2023
 ms.reviewer: mhart
@@ -10,7 +10,7 @@ ms.author: jodahl
 ms.custom: bap-template
 ---
 
-# Access Customer Insights data in Dataverse
+# Customer Insights data in Dataverse
 
 Customer Insights belongs to the Microsoft Dynamics 365 ecosystem and it uses the [security model of Microsoft Dataverse](/power-platform/admin/wp-security-cds).
 
@@ -19,3 +19,5 @@ Customer Insights belongs to the Microsoft Dynamics 365 ecosystem and it uses th
 To access any data from Customer Insights in Dataverse, a user needs to have the *Customer Insights Data Read Access* security role in Dataverse. This role cannot be modified. If different access is needed, for example, access to all profiles irrespectively of business unit, create a custom security role and assign it.
 
 [Learn more about Dataverse security roles.](/power-platform/admin/database-security)
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

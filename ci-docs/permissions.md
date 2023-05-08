@@ -1,16 +1,11 @@
 ---
 title: "Assign user permissions"
 description: "Learn about permissions and user roles."
-ms.date: 11/15/2022
+ms.date: 05/08/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
-searchScope: 
-  - ci-permissions
-  - ci-system-security
-  - customerInsights
 ---
 
 # Assign user permissions
@@ -27,16 +22,15 @@ Access to Customer Insights is restricted to users in your organization that are
 - View exports in the **Exports** page.
 - Install and use the **Power BI Customer Insights** dashboard.
 
-## Marketing Contributor (Public preview)
+## Marketing contributor (Preview)
 
 - Can only access customer profiles that belong to the business unit of the user if business unit data separation is enabled on the environment.
 - Create segments using the **Segments** page (only *Build your own*, no projected attributes).
 - Create measures using the **Measures** page (only *Build your own*). Can only create measures on tables that have a relationship path to customer profiles.
 
 > [!NOTE]
-   > * The marketing contributor role must only be granted on business unit enabled enviornments.
-   > * The marketing contributor role can only access entities that have a relationship with customer profiles.
-   
+> The marketing contributor role is only available in business unit enabled environments. Users can only access tables that have a relationship with customer profiles.
+
 ## Contributor
 
 - All permissions available to the Viewer.
