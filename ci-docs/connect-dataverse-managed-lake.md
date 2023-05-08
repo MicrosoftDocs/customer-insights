@@ -1,7 +1,7 @@
 ---
 title: "Connect to data in a Microsoft Dataverse managed data lake"
 description: "Import data from a Microsoft Dataverse managed data lake."
-ms.date: 03/20/2023
+ms.date: 05/05/2023
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
@@ -18,13 +18,15 @@ Microsoft Dataverse users can quickly connect to analytical tables in a Microsof
 Only one data source of an environment can simultaneously use the same Dataverse managed lake.
 
 > [!NOTE]
-> You must be an admin on the Dataverse organization to proceed and view the list of tables available in the managed lake.
+> To support performance requirements, data from the Dataverse SQL tables sync to the Dataverse Managed Data lake for up to 2 years, based on record creation time. Contact Dataverse support for more information. This does not apply to the data sync of Dataverse SQL tables to your own Azure Data Lake storage.
 
 ## Prerequisites
 
 - Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 - Only Dataverse tables with [change tracking](/power-platform/admin/enable-change-tracking-control-data-synchronization) enabled are visible. These tables can be exported to the Dataverse-managed data lake and used in Customer Insights. Out-of-box Dataverse tables have change tracking enabled by default. You need to turn change tracking on for custom tables. To check if a Dataverse table is enabled for change tracking, go to [Power Apps](https://make.powerapps.com) > **Data** > **Tables**. Find the table of your interest and select it. Go to **Settings** > **Advanced options** and review the **Track changes** setting.
+
+- You must be an admin on the Dataverse organization to proceed and view the list of tables available in the managed lake.
 
 ## Connect to a Dataverse managed lake
 
