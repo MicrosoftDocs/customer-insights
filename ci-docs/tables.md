@@ -84,11 +84,12 @@ A UnifiedContact contains unified information about a contact. Contacts are [ind
 |  BirthDate            | DateTime       |  Date of birth of the contact               |
 |  City                 | Text |  City of the contact address               |
 |  ContactId            | Text |  ID of the contact profile               |
-|  UnifiedContactId     | Unique identifier   |  GUID for the contact               |
 |  CountryOrRegion      | Text |  Country/Region of the contact address               |
 |  CustomerId           | Text |  ID of the account the contact is mapped to               |
 |  TableName            | Text |  Name of the table               |
 |  FirstName            | Text |  First name of the contact               |
+|  FK_AccountID         | Text |  GUID representing the unified account  |
+|  FK_ContactToAccountID| Text |  Unified source value for the contact's associated account |
 |  Gender               | Text |  Gender of the contact               |
 |  Id                   | Text |  Deterministic GUID based on `Identifier`               |
 |  Identifier           | Text |  Internal ID of the contact profile: `UnifiedContact|CustomerId|ContactId`               |
@@ -99,6 +100,7 @@ A UnifiedContact contains unified information about a contact. Contacts are [ind
 |  PrimaryPhone         | Text |  Telephone number of the contact               |
 |  StateOrProvince      | Text |  State or province of the contact address               |
 |  StreetAddress        | Text |  Street of the contact address               |
+|  UnifiedContactId     | Unique identifier   |  GUID for the contact               |
 
 ### AlternateKey
 

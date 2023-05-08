@@ -1,7 +1,7 @@
 ---
 title: "Create a B-to-B unified contact profile (preview)"
 description: "Go through the data unification process to create a single master dataset of business contacts."
-ms.date: 04/28/2023
+ms.date: 05/08/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -105,7 +105,14 @@ When needed, [make changes to the contact unification settings](data-unification
 
 Go to **Data** > **Tables** to verify the output tables.
 
-The unified contact profile table, called *UnifiedContact*, displays in the **Profiles** section. The first successful unification run creates the unified *UnifiedContact* table. All subsequent runs expand that table.
+The unified contact profile table, called *UnifiedContact*, displays in the **Profiles** section. The first successful unification run creates the *UnifiedContact* table. All subsequent runs expand that table.
+
+Key columns in the *UnifiedContact* table include:
+- **UnifiedContactId**: Unique identifier assigned by Customer Insights to this unified profile.
+- **FK_ContactToAccountId**: Winner value resulting from the merging of the account foreign keys for this contact. This value is the primary key from a data source, and is used to look up the unified account’s unique CustomerID.
+- **FK_CustomerId**: Unique CustomerID of the contact’s unified accounts. This is a foreign key reference to the Customer table’s CustomerID column. If it is null, the contact does not have an account.
+- **{ContactSourceTable1}{PrimaryKeyColumn}**: Primary key of the winner source record from the named table involved in the unification of the profile.
+- **{ContactSourceTable1}{PrimaryKeyColumn}_Alternate**: A semicolon separated list of all source records from the named table involved in unification of the profile.
 
 Deduplication and conflation tables are created and display in the **System** section. A deduplicated table for each of the source tables is created with the name **Deduplication_DataSource_Tablename**. The **ContactsConflationMatchPairs** table contains information about cross-table matches.
 
