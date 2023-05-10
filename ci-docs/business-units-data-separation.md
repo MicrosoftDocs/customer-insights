@@ -25,11 +25,11 @@ Business unit data separation and role-based access control (RBAC) allow adminis
 > [!NOTE]
 >
 > - B-to-B (business accounts) environments are not supported.
-> - It is not possible to disable business unit data separation on an environment after it has been enabled.
+> - **It is not possible to disable business unit data separation on an environment after it has been enabled.**
 > - Parent-child scope is currently not supported.
 > - Synonyms in the business unit mappings aren't supported. The string that identifies the business unit must be identical for the same business unit. The system considers synonyms as different business units.
-> - [Modernized business units](/power-platform/admin/wp-security-cds#matrix-data-access-structure-modernized-business-units) aren't supported.
-> - Field-level security isn't supported.
+> - [Modernized business units](/power-platform/admin/wp-security-cds#matrix-data-access-structure-modernized-business-units) are not supported.
+> - Field-level security is not supported.
 
 ## Access controls in Customer Insights
 
