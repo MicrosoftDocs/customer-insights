@@ -10,7 +10,7 @@ ms.author: jodahl
 ms.custom: bap-template
 ---
 
-# Customer Insights data in Dataverse
+# Customer Insights data in Dataverse (preview)
 
 Customer Insights belongs to the Microsoft Dynamics 365 ecosystem and it uses the [security model of Microsoft Dataverse](/power-platform/admin/wp-security-cds).
 
