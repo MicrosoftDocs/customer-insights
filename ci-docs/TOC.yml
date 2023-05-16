@@ -12,6 +12,8 @@
         href: trial-signup.md
       - name: Trial FAQ
         href: trial-FAQ.md
+    - name: Buy
+      href: paid-license.md
     - name: Access your environment
       href: https://home.ci.ai.dynamics.com/
     - name: Quickstart guide
