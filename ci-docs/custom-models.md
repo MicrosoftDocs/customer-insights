@@ -1,13 +1,12 @@
 ---
 title: "Custom machine learning models from Azure Machine Learning"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
-ms.date: 11/15/2022
+ms.date: 05/30/2023
 ms.reviewer: mhart
-
-ms.topic: tutorial
+ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju
-manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-custom-models
   - customerInsights
@@ -36,7 +35,7 @@ searchScope:
 
 ## Set up an AML connection
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Scroll to **Miscellaneous connections**.
 

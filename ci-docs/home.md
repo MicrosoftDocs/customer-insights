@@ -55,7 +55,7 @@ This section contains cards that help you walk through the process of setting up
 
 1. The **Add data** card assists you with your data import. Customer Insights supports [several options to bring in data about your customers](data-sources.md). Select **Add a data sources** to get started.
 1. Once the initial data import successfully completes, you can use the **Unify data** card to harmonize the data and [create unified customer profiles](data-unification.md) from disparate sources. 
-1. With unified customer profiles in place, it's time to review the **Analyze data** options and get additional insights. Give it a try to create [business measures](measures.md) to track KPIs, [define segments](segments.md) to reach specific audiences, or [configure predictions](predictions-overview.md) with the help of AI.
+1. With unified customer profiles in place, it's time to review the **Analyze data** options and get additional insights. Give it a try to create [business measures](measures.md) to track KPIs, [define segments](segments.md) to reach specific audiences, or [configure predictions](predictions.md) with the help of AI.
 1. Now that your customer data is imported, unified, and neatly structured, you use our [various export destinations](export-destinations.md) to take action on the data. Select **Add connections** to connect your favorite services. For example, export the data to Dynamics 365 Marketing to create outbound marketing campaigns or build customer journeys. 
 
 ## Your customer insights section

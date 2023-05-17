@@ -248,7 +248,7 @@ The updates in February 2022 include new features, performance upgrades, and bug
 
 Out-of-the-box prediction models, including **subscription churn**, **transactional churn**, and **customer lifetime value (CLV)** become generally available as a part of Customer Insights. 
 
-For more information, see [Predictions overview](predictions-overview.md).
+For more information, see [Predictions](predictions.md).
 
 ### New data source: Integration with Azure Synapse Analytics (Preview)
 

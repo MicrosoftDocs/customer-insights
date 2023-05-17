@@ -250,8 +250,8 @@
   items:
     - name: Predict data with the help of AI
       items: 
-        - name: Prediction models overview
-          href: predictions-overview.md
+        - name: Create and manage predictions
+          href: predictions.md
         - name: Predict customer lifetime value (CLV)
           href: predict-customer-lifetime-value.md
         - name: Predict product recommendations
@@ -266,8 +266,11 @@
           href: custom-models.md
         - name: Use custom models from Azure Synapse Analytics
           href: custom-models-synapse.md
+        - name: Custom models FAQ
+          href: custom-models-faq.md
         - name: Create segments based on predictions
           href: prediction-based-segment.md
+
 
     - name: Sample guides
       items:    

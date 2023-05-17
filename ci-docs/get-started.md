@@ -49,7 +49,7 @@ With unified profiles set up, enhance your data and further increase the informa
 
 1. Choose from an expanding library of enrichment providers to [enrich your customer data](enrichment-hub.md).
 
-1. Use [out-of-box models](predictions-overview.md) to predict churn likelihood or expected revenues.
+1. Use [out-of-box models](predictions.md) to predict churn likelihood or expected revenues.
 
 1. [Configure activities](activities.md) based on ingested data and visualize interactions with your customers in a chronological timeline.
 

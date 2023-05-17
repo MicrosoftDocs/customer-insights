@@ -1,14 +1,12 @@
 ---
 title: "Custom machine learning models from Azure Synapse"
 description: "Work with custom models from Azure Synapse in Dynamics 365 Customer Insights."
-ms.date: 11/9/2022
+ms.date: 05/30/2023
 ms.reviewer: v-wendysmith
-
-ms.subservice: audience-insights
-ms.topic: tutorial
+ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju
-manager: shellyha
+ms.custom: bap-template
 searchScope: 
   - ci-custom-models
   - customerInsights
@@ -36,7 +34,7 @@ Manage workflows based on Azure Synapse Analytics models. Workflows help you cho
 
 ## Set up a Synapse connection
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Scroll to **Miscellaneous connections**.
 
@@ -59,7 +57,7 @@ Manage workflows based on Azure Synapse Analytics models. Workflows help you cho
 
 ## Add a new workflow
 
-1. Go to the **Intelligence** page.
+1. Go to **Insights** > **Predictions**.
 
 1. On the **Create** tab, select **Use model** on the **Custom model (Azure Machine Learning v2)** tile.
 
