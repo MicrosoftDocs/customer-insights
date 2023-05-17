@@ -47,6 +47,8 @@
       href: connect-power-query.md
     - name: Manage existing data sources
       href: data-sources-manage.md
+    - name: Connect to an Azure Data Lake Storage account by using an Azure service principal
+      href: connect-service-principal.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
     - name: Incremental refresh for data sources
@@ -220,20 +222,24 @@
 
 - name: Segments
   items:
-    - name: Segments overview
+    - name: Create and manage segments
       href: segments.md
     - name: Create with segment builder
       href: segment-builder.md
+    - name: Aspects of segment builder
+      href: segment-builder-aspects.md
     - name: Create with quick segments
       href: segment-quick.md
-    - name: Suggested segments based on measures
+    - name: Suggested segments
       href: suggested-segments.md
-    - name: Suggested segments based on activity
+    - name: Generate and manage segments based on activity
       href: suggested-segments-activity-generate.md
-    - name: Generate suggested segments
+    - name: Generate and manage segments based on measures
       href: suggested-segments-generate.md
     - name: Get insights on segments
       href: segment-insights.md
+    - name: Schedule segments
+      href: segments-schedule.md
     - name: Track usage of a segment
       href: segments-track-usage.md
     - name: Find similar customers
@@ -241,12 +247,14 @@
 
 - name: Measures
   items: 
-    - name: Measures overview
+    - name: Create and manage measures
       href: measures.md
     - name: Create with measure builder
       href: measure-builder.md
     - name: Create with templates
       href: measure-templates.md
+    - name: Schedule measures
+      href: measures-schedule.md
           
 - name: Predictions and custom models
   items:
