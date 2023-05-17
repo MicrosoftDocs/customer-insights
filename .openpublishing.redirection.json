@@ -1547,11 +1547,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/predictions.md",
-      "redirect_url": "/dynamics365/customer-insights/predictions",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "ci-docs/manage-predictions.md",
       "redirect_url": "/dynamics365/customer-insights/predictions",
       "redirect_document_id": false
