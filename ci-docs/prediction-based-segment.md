@@ -1,7 +1,7 @@
 ---
 title: Create a segment based on a prediction model
-description: "Create segments based on the output entity of a prediction model."
-ms.date: 09/19/2022
+description: "Create segments based on the output table of a prediction model."
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: how-to
@@ -26,7 +26,7 @@ The results of predictions sometimes only apply to a subset of your customers. I
 
 ## Create a customer segment based on predictions
 
-1. Go to **Intelligence** > **Predictions** and select the **My predictions** tab.
+1. Go to **Insights** > **Predictions** and select the **My predictions** tab.
 
 1. Select the model you want to review and select **View**.
 
@@ -34,9 +34,9 @@ The results of predictions sometimes only apply to a subset of your customers. I
 
    :::image type="content" source="media/prediction-create-segment.png" alt-text="Screenshot of the prediction results page with highlight on the Create segment action.":::
 
-1. Create a new segment using attributes from the output entity of the selected model. For more information, see [Create and manage segments](segments.md).
+1. Create a new segment using attributes from the output table of the selected model. For more information, see [Create and manage segments](segments.md).
 
 > [!TIP]
-> You can also create a segment for a prediction model from the **Segments** page by selecting **New** and choosing **Create from** > **Intelligence**. For more information, see [Create a new segment with quick segments](segment-quick.md).
+> You can also create a segment for a prediction model from the **Segments** page by selecting **New** and choosing **Create from** > **Insights**. For more information, see [Create a new segment with quick segments](segment-quick.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

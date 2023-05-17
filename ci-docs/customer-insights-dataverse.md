@@ -1,6 +1,6 @@
 ---
 title: Work with Customer Insights data in Microsoft Dataverse
-description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output entities that are exported to Dataverse.
+description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output tables that are exported to Dataverse.
 ms.date: 01/16/2023
 ms.topic: conceptual
 author: mukeshpo
@@ -13,7 +13,7 @@ searchScope:
 
 # Work with Customer Insights data in Microsoft Dataverse
 
-Customer Insights makes its output entities available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The [output entities](#output-entities) are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps.
+Customer Insights makes its output tables available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The output tables are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps.
 
 You can also [ingest data from on-premises data sources using Power Platform dataflows and gateways](connect-power-query.md#add-data-from-on-premises-data-sources) into your Dataverse environment.
 
@@ -21,6 +21,7 @@ You can also [ingest data from on-premises data sources using Power Platform dat
 
 - Customer Insights and Dataverse environments must be hosted in the same region.
 - A global administrator role set up in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you're added to those security groups.
+- A Common Data Service/Dataverse [license is assigned](/power-platform/admin/create-users#to-assign-a-license) to you to get Read-Write access mode. Unlicensed administrators get Administrative access mode only.
 - No other Customer Insights environment already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
 - A Microsoft Dataverse environment connected to a single storage account if you configure the environment to [use your Azure Data Lake Storage](own-data-lake-storage.md).
 
@@ -117,19 +118,19 @@ When connecting to a Dataverse environment, the error message **This CDS organiz
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select the environment from the environment picker.
 1. Go to **Solutions**.
-1. Uninstall or delete the solution named **Dynamics 365 Customer Insights Customer Card Add-in (Preview)**.
-
-OR
-
-1. Open your Dataverse environment.
-1. Go to **Advanced Settings** > **Solutions**.
-1. Uninstall the **CustomerInsightsCustomerCard** solution.
+1. Uninstall the following Customer Insights solutions:
+   - Dynamics 365 Customer Insights Base (*msdyn_CustomerInsightsAnchor*)
+   - Dynamics 365 Customer Insights Data Tables (*msdyn_CustomerInsightsDataTables*)
+   - Dynamics 365 Customer Insights (*msdyn_CustomerInsights*)
+   - Dynamics 365 Customer Insights Customer Card (*CustomerInsightsCustomerCard*)
+   - Dynamics 365 Customer Insights Prod First Party App User Management (*msdyn_CustomerInsightsAppUserManagementProd*)
 
 If the removal of the connection fails due to dependencies, you need to remove the dependencies too. For more information, see [Removing dependencies](/power-platform/alm/removing-dependencies).
 
-## Output entities
+## Output tables in Dataverse
 
-Some output entities from Customer Insights are available as tables in Dataverse. The sections below describe the expected schema of these tables.
+Some Customer Insights tables are available in Dataverse. For more information, see [Customer Insights tables in Dataverse](tables.md#customer-insights-tables-in-dataverse).
+Some output tables from Customer Insights are available as tables in Dataverse. The sections below describe the expected schema of these tables.
 
 - [CustomerProfile](#customerprofile)
 - [ContactProfile](#contactprofile)
@@ -142,7 +143,7 @@ Some output entities from Customer Insights are available as tables in Dataverse
 
 ### CustomerProfile
 
-This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile depends on the entities and attributes used in the data unification process. A customer profile schema usually contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile). For the B-to-B scenario, the customer profile contains unified accounts, and the schema usually contains a subset of the attributes from the [Common Data Model definition of Account](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account).
+This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile depends on the tables and attributes used in the data unification process. A customer profile schema usually contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile). For the B-to-B scenario, the customer profile contains unified accounts, and the schema usually contains a subset of the attributes from the [Common Data Model definition of Account](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account).
 
 ### ContactProfile
 
@@ -156,7 +157,7 @@ A ContactProfile contains unified information about a contact. Contacts are [ind
 |  ContactProfileId     | Unique identifier   |  GUID for the contact               |
 |  CountryOrRegion      | Text |  Country/Region of the contact address               |
 |  CustomerId           | Text |  ID of the account the contact is mapped to               |
-|  EntityName           | Text |  Name of the entity               |
+|  TableName           | Text |  Name of the table               |
 |  FirstName            | Text |  First name of the contact               |
 |  Gender               | Text |  Gender of the contact               |
 |  Id                   | Text |  Deterministic GUID based on `Identifier`               |
@@ -171,17 +172,17 @@ A ContactProfile contains unified information about a contact. Contacts are [ind
 
 ### AlternateKey
 
-The AlternateKey table contains keys of the entities, which participated in the unify process.
+The AlternateKey table contains keys of the tables, which participated in the unify process.
 
 |Column  |Type  |Description  |
 |---------|---------|---------|
 |DataSourceName    |Text         | Name of the data source. For example: `datasource5`        |
-|EntityName        | Text        | Name of the entity in Customer Insights. For example: `contact1`        |
+|TableName        | Text        | Name of the table in Customer Insights. For example: `contact1`        |
 |AlternateValue    |Text         |Alternative ID that is mapped to the customer ID. Example: `cntid_1078`         |
-|KeyRing           | Text        | JSON value  </br> Sample: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
+|KeyRing           | Text        | JSON value  </br> Sample: [{"dataSourceName":" datasource5 ",</br>"tableName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
 |CustomerId         | Text        | ID of the unified customer profile.         |
 |AlternateKeyId     | Unique identifier        |  AlternateKey deterministic GUID based on `Identifier`      |
-|Identifier |   Text      |   `DataSourceName|EntityName|AlternateValue`  </br> Sample: `testdatasource|contact1|cntid_1078`    |
+|Identifier |   Text      |   `DataSourceName|TableName|AlternateValue`  </br> Sample: `testdatasource|contact1|cntid_1078`    |
 
 ### UnifiedActivity
 
@@ -194,9 +195,9 @@ This table contains activities by users that are available in Customer Insights.
 | ExternalUrl       | Text      | Link to an external URL for this activity. Usually denotes the URL of the website visited by a customer.     |
 | ActivityTime      | DateTime  | Activity time stamp. Usually denotes when the activity occurred. For example: `2021-12-24T21:00:00Z`  |
 | ActivityId        | Text      | Internal ID of the customer activity (primary key)                                       |
-| ActualActivityId  | Text      | Internal ID of the activity row in the source entity/table                                       |
+| ActualActivityId  | Text      | Internal ID of the activity row in the source table/table                                       |
 | Title             | Text      | Title or name of the activity                                                               |
-| EntityName        | Text      | Name of the source entity/table used for this activity                                            |
+| TableName        | Text      | Name of the source entity/table used for this activity                                            |
 | ActivityName      | Text      | The event that happened for this activity. For example: `webpage view`                        |
 
 ### CustomerMeasure

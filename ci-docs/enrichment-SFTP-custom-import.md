@@ -1,7 +1,7 @@
 ---
 title: Enrich customer profiles with SFTP custom import (preview)
 description: General information about the SFTP custom import enrichment.
-ms.date: 08/08/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: how-to
@@ -29,7 +29,7 @@ The directory that contains the file to be imported on the SFTP server must also
 {
 	"name": "EnrichmentFromMicrosoft",
 	"description": "Model containing data enrichment",
-	"entities": [
+	"tables": [
 		{
 			"name": "CustomImport",
 			"attributes": [
@@ -71,7 +71,7 @@ The directory that contains the file to be imported on the SFTP server must also
 
 You must be an [administrator](permissions.md#admin) in Customer Insights and have the user credentials, URL, and port number for the SFTP location where you want to import data from.
 
-1. Select **Add connection** when configuring an enrichment or go to **Admin** > **Connections** and select **Set up** on the Custom Import tile.
+1. Select **Add connection** when configuring an enrichment or go to **Settings** > **Connections** and select **Set up** on the Custom Import tile.
 
    :::image type="content" source="media/enrichment-SFTP-connection.png" alt-text="Custom Import connection configuration page.":::
 
@@ -95,7 +95,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select the connection. Contact an administrator if no connection is available.
 
-1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* entity enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
+1. Select the **Customer data set** and choose the profile or segment you want to enrich. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
 1. Select **Next**.
 
@@ -103,7 +103,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Next**.
 
-1. Provide a **Name** for the enrichment and the **Output entity name**.
+1. Provide a **Name** for the enrichment and the **Output table name**.
 
 1. Select **Save enrichment** after reviewing your choices.
 

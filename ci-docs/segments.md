@@ -1,11 +1,12 @@
 ---
-title: "Segments overview"
-description: "Overview on segments and how to create and manage them."
-ms.date: 01/13/2023
-ms.topic: overview
+title: "Create and manage segments"
+description: "How to create and manage a group of customers called segments."
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
+ms.topic: how-to
+ms.date: 04/13/2023
+ms.custom: bap-template
 searchScope: 
   - ci-customers-page
   - ci-enrichment-details
@@ -14,17 +15,13 @@ searchScope:
   - customerInsights
 ---
 
-<!-- Observations from editor: I usually see B2B and B2C, rather than B-to-B and B-to-C, although I don't find any specific guidance. Also, it's clever how the Create a Segment table is set up. -->
-
-
-
-# Segments overview
+# Create and manage segments
 
 Segments let you group your customers based on demographic, transactional, or behavioral attributes. Use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
 
 Customer or contact profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
-## Create a segment
+## Create segments
 
 Choose how to create a segment based on your target audience.
 
@@ -33,8 +30,8 @@ Choose how to create a segment based on your target audience.
 - Complex segments with segment builder: [Build your own](segment-builder.md)
 - Simple segments with one operator: [Quick segment](segment-quick.md)
 - AI-powered way to find similar customers: [Similar customers](find-similar-customer-segments.md)
-- AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md)
-- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments-activity.md)
+- AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md#suggested-segments-based-on-measures-preview)
+- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments.md#suggested-segments-based-on-activity-preview)
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
@@ -47,7 +44,7 @@ Segment of accounts or segment of contacts (preview) with segment builder: [Buil
 
 ## Manage existing segments
 
-Go to the **Segments** page to view the segments you created, their status and state, the last time the data was refreshed, and their refresh schedule. You can sort the list of segments by any column or use the search box to find the segment you want to manage. In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
+Go to the **Insights** > **Segments** page to view the segments you created, their status and state, the last time the data was refreshed, and their refresh schedule. You can sort the list of segments by any column or use the search box to find the segment you want to manage. In B-to-B environments, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
 
 Select next to a segment to view available actions.
 
@@ -77,9 +74,11 @@ Select next to a segment to view available actions.
 
 The smaller the number of segments and measures that need to be refreshed daily, the quicker the overall system refresh takes. To lower the number of segments refreshed daily, consider the following tips:
 
-- When a campaign is over and you no longer need a segment, **Deactivate** it. Deactivate saves the segment configuration, but stops the automatic refresh.
+- When a campaign is over and you no longer need a segment, **Delete** it. If a campaign runs more than once, you can deactivate the segment. Deactivating it saves the segment configuration, but stops the automatic refresh.
 
 - [Schedule](segments-schedule.md) segments on a slower cadence so they are not refreshed daily.
+
+- We recommend setting up a recurring audit process to review segments and measures and delete the ones that are not needed anymore. To help you with this process, [use tags](work-with-tags-columns.md) with campaign and end date information. During the audit process you can search for tags and delete segments and measures in bulk.
 
 ## View segment details
 
@@ -92,21 +91,21 @@ The upper part of the page includes a trend graph that visualizes changes in mem
 The lower part contains a list of the segment members.
 
 > [!NOTE]
-> Fields that appear in this list are based on the attributes of your segment's entities.
+> Fields that appear in this list are based on the attributes of your segment's tables.
 >
-> The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Entities**](entities.md) page or [export the segment](export-destinations.md).
+> The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Tables**](tables.md) page or [export the segment](export-destinations.md).
 
 ## Export segments
 
-Export segments to other apps to further use the data. Export a segment from the segments page or the [exports page](export-destinations.md).
+Export segments to other apps to further use the data. Export a segment from the segments page or the [exports page](export-manage.md).
 
-1. Go to the **Segments** page and select the segment you want to export.
+1. Go to the **Insights** > **Segments** page and select the segment you want to export.
 
 1. Select **Manage exports**. The page **Exports (preview) for segment** opens. View all configured exports grouped by whether they contain the current segment or not.
 
-   1. To add the selected segment to an export, **Edit** the respective export to select the corresponding segment, then save. In environments for individual customers, select the export in the list and select **Add segment** to achieve the same outcome.
+   - To add the selected segment to an export, **Edit** the respective export to select the corresponding segment, then save. In environments for individual customers, select the export in the list and select **Add segment** to achieve the same outcome.
 
-   1. To create a new export with the selected segment, select **Add export**. For more information about creating exports, see [Set up a new export](export-destinations.md#set-up-a-new-export).
+   - To create a new export with the selected segment, select **Add export**. For more information about creating exports, see [Set up a new export](export-manage.md#set-up-a-new-export).
 
 1. Select **Back** to return to the main page for segments.
 
@@ -120,7 +119,7 @@ When you approach or exceed the number of active segments based on the [service 
 
 The complexity of your segments can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active segments. These messages display on the **Segments** list page. If you encounter these messages or symptoms, see the following recommendations.
 
-1. Delete old or no longer relevant segments even if they are static or inactive.
+1. Delete old or no longer relevant segments even if they are static or inactive. When a campaign ends, deactivate associated segments for recurring campaigns.
 1. [Schedule individual segments](segments-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

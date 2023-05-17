@@ -1,47 +1,21 @@
-- name: Dynamics 365 Customer Insights
-  href: index.yml
-
-- name: Product overview
+- name: Welcome to Dynamics 365 Customer Insights
   href: overview.md
     
-- name: New and updated features
-  href: whats-new-customer-insights.md
-
-- name: Learning catalog
-  items:
-    - name: Certify as Microsoft Customer Data Platform Specialist
-      href: /certifications/exams/mb-260?tab=tab-instructor-led
-    - name: Get started with Customer Insights
-      href: /training/modules/get-started-customer-data-platform/
-    - name: Ingest data
-      href: /training/modules/ingest-data-customer-insights/
-    - name: Create a unified customer profile
-      href: /training/modules/unified-customer-profile/
-    - name: Work with Customer Insights
-      href: /training/modules/working-with-customer-insights/
-    - name: Enrich data and make predictions
-      href: /training/modules/enrich-data/
-    - name: Manage external connections
-      href: /training/modules/configure-third-party-connections/
-    - name: Administer Customer Insights
-      href: /training/modules/administer-customer-data-platform/
-
-- name: Free trial
-  items:
-    - name: Sign up for a free trial
-      href: trial-signup.md
-    - name: Trial FAQ
-      href: trial-FAQ.md
-
-- name: Access your environment
-  href: https://home.ci.ai.dynamics.com/
+- name: Customer Insights documentation
+  href: index.yml
 
 - name: Get started
   items: 
+    - name: Free trial
+      items:
+      - name: Sign up for a free trial
+        href: trial-signup.md
+      - name: Trial FAQ
+        href: trial-FAQ.md
+    - name: Access your environment
+      href: https://home.ci.ai.dynamics.com/
     - name: Quickstart guide
       href: get-started.md
-    - name: Start with a paid license
-      href: paid-license.md
     - name: Explore Customer Insights
       href: home.md
     - name: Work with tags and columns
@@ -50,6 +24,12 @@
       href: work-with-business-accounts.md
     - name: Integrate with Dynamics 365 Marketing
       href: marketing-get-started.md
+
+- name: Troubleshooting
+  href: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
+
+- name: What's new
+  href: whats-new-customer-insights.md
 
 - name: Data sources
   items:
@@ -61,35 +41,39 @@
       href: connect-synapse.md
     - name: Connect to data in a Microsoft Dataverse managed data lake
       href: connect-dataverse-managed-lake.md
-    - name: Add data sources via Power Query connectors
+    - name: Add a data sources via Power Query connectors
       href: connect-power-query.md
+    - name: Manage existing data sources
+      href: data-sources-manage.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
     - name: Incremental refresh for data sources
       href: incremental-refresh-data-sources.md
     - name: Real-time data ingestion
       href: real-time-data-ingestion.md
+    - name: Common reasons for ingestion errors
+      href: common-data-ingestion-errors.md
 
-- name: Data unification
+- name: Unification
   items:
     - name: Data unification overview
       href: data-unification.md
     - name: Select source fields
-      href: map-entities.md
+      href: data-unification-map-tables.md
     - name: Remove duplicate records
-      href: remove-duplicates.md
+      href: data-unification-duplicates.md
     - name: Match conditions
-      href: match-entities.md
+      href: data-unification-match-tables.md
     - name: Unify customer fields
-      href: merge-entities.md
+      href: data-unification-merge-tables.md
     - name: Review data unification
       href: review-unification.md
     - name: Create a unified contact profile 
       href: data-unification-contacts.md
     - name: Update unification settings
       href: data-unification-update.md  
-
-- name: Data enrichment
+ 
+- name: Enrichment
   items:
     - name: Data enrichment overview
       href: enrichment-hub.md
@@ -131,80 +115,25 @@
     - name: Manage unknown customer profiles
       href: manage-unknown-profiles.md
 
-- name: Segments
+- name: Tables
   items:
-    - name: Segments overview
-      href: segments.md
-    - name: Create with segment builder
-      href: segment-builder.md
-    - name: Create with quick segments
-      href: segment-quick.md
-    - name: Suggested segments based on measures
-      href: suggested-segments.md
-    - name: Suggested segments based on activity
-      href: suggested-segments-activity.md
-    - name: Get insights on segments
-      href: segment-insights.md
-    - name: Find similar customers
-      href: find-similar-customer-segments.md
-    - name: Schedule segments
-      href: segments-schedule.md
-    - name: Track usage of a segment
-      href: segments-track-usage.md
+    - name: Understand tables
+      href: tables.md
+    - name: Review the table schemas in Common Data Model
+      href: table-schemas.md
+    - name: Build relationships and connected tables
+      href: relationships.md
+    - name: Define semantic mappings
+      href: semantic-mappings.md
 
-- name: Measures
-  items: 
-    - name: Measures overview
-      href: measures.md
-    - name: Create with measure builder
-      href: measure-builder.md
-    - name: Create with templates
-      href: measure-templates.md
-    - name: Schedule measures
-      href: measures-schedule.md
-          
-- name: Predictions
+- name: Exports
   items:
-    - name: Predict data with the help of AI
-      items: 
-        - name: Prediction models overview
-          href: predictions-overview.md
-        - name: Predict customer lifetime value (CLV)
-          href: predict-customer-lifetime-value.md
-        - name: Predict product recommendations
-          href: predict-product-recommendation.md
-        - name: Predict subscription churn
-          href: predict-subscription-churn.md
-        - name: Predict transaction churn
-          href: predict-transactional-churn.md
-        - name: Analyze sentiment in customer feedback
-          href: sentiment-analysis.md
-        - name: Use custom models from Azure Machine Learning
-          href: custom-models.md
-        - name: Use custom models from Azure Synapse Analytics
-          href: custom-models-synapse.md
-        - name: Create segments based on predictions
-          href: prediction-based-segment.md
-
-    - name: Sample guides
-      items:    
-        - name: Sample guide for CLV prediction
-          href: sample-guide-predict-clv.md
-        - name: Sample guide for subscription churn prediction
-          href: sample-guide-predict-subscription-churn.md
-        - name: Sample guide for transaction churn prediction
-          href: sample-guide-predict-transactional-churn.md
-        - name: Sample guide for product recommendation prediction
-          href: sample-guide-predict-product-recommendation.md
-        - name: Experiments with Azure Machine learning
-          href: azure-machine-learning-experiments.md
-
-- name: Export options
-  items:
-    - name: Exports
+    - name: Export options
       items:
         - name: Exports overview
           href: export-destinations.md
+        - name: Set up and manage exports
+          href: export-manage.md
         - name: Active Campaign
           href: export-active-campaign.md
         - name: Adobe Campaign Standard
@@ -287,17 +216,92 @@
         - name: Power BI
           href: export-power-bi.md
 
-- name: Entities
+- name: Segments
   items:
-    - name: Understand entities
-      href: entities.md
-    - name: Review the entity schemas in Common Data Model
-      href: entity-schemas.md
+    - name: Segments overview
+      href: segments.md
+    - name: Create with segment builder
+      href: segment-builder.md
+    - name: Create with quick segments
+      href: segment-quick.md
+    - name: Suggested segments based on measures
+      href: suggested-segments.md
+    - name: Suggested segments based on activity
+      href: suggested-segments-activity-generate.md
+    - name: Generate suggested segments
+      href: suggested-segments-generate.md
+    - name: Get insights on segments
+      href: segment-insights.md
+    - name: Track usage of a segment
+      href: segments-track-usage.md
+    - name: Find similar customers
+      href: find-similar-customer-segments.md
 
-    - name: Build relationships and connected entities
-      href: relationships.md
-    - name: Define semantic mappings
-      href: semantic-mappings.md
+- name: Measures
+  items: 
+    - name: Measures overview
+      href: measures.md
+    - name: Create with measure builder
+      href: measure-builder.md
+    - name: Create with templates
+      href: measure-templates.md
+          
+- name: Predictions and custom models
+  items:
+    - name: Predict data with the help of AI
+      items: 
+        - name: Prediction models overview
+          href: predictions-overview.md
+        - name: Predict customer lifetime value (CLV)
+          href: predict-customer-lifetime-value.md
+        - name: Predict product recommendations
+          href: predict-product-recommendation.md
+        - name: Predict subscription churn
+          href: predict-subscription-churn.md
+        - name: Predict transaction churn
+          href: predict-transactional-churn.md
+        - name: Analyze sentiment in customer feedback
+          href: sentiment-analysis.md
+        - name: Use custom models from Azure Machine Learning
+          href: custom-models.md
+        - name: Use custom models from Azure Synapse Analytics
+          href: custom-models-synapse.md
+        - name: Create segments based on predictions
+          href: prediction-based-segment.md
+
+    - name: Sample guides
+      items:    
+        - name: Sample guide for CLV prediction
+          href: sample-guide-predict-clv.md
+        - name: Sample guide for subscription churn prediction
+          href: sample-guide-predict-subscription-churn.md
+        - name: Sample guide for transaction churn prediction
+          href: sample-guide-predict-transactional-churn.md
+        - name: Sample guide for product recommendation prediction
+          href: sample-guide-predict-product-recommendation.md
+        - name: Experiments with Azure Machine learning
+          href: azure-machine-learning-experiments.md
+
+- name: Settings
+  items:
+    - name: Security overview
+      href: security-overview.md
+    - name: Assign user permissions
+      href: permissions.md
+    - name: Bring your own Key Vault
+      href: use-azure-key-vault.md
+    - name: Securely access customer data with Customer Lockbox
+      href: security-lockbox.md
+    - name: Set up an Azure Private Link
+      href: private-link.md
+    - name: Export diagnostic logs
+      href: diagnostics.md
+    - name: Manage connections
+      href: connections.md
+    - name: Schedule system refresh
+      href: schedule-refresh.md
+    - name: View system configuration
+      href: system.md
 
 - name: Environments
   items: 
@@ -312,29 +316,14 @@
     - name: Connect to a storage account using Service Principal
       href: connect-service-principal.md
 
-- name: Administration
-  items:
-    - name: Assign user permissions
-      href: permissions.md
-    - name: Bring your own Key Vault
-      href: use-azure-key-vault.md
-    - name: Configure security settings
-      href: security-overview.md
-    - name: Export diagnostic logs
-      href: diagnostics.md
-    - name: Manage connections
-      href: connections.md
-    - name: Schedule system refresh
-      href: schedule-refresh.md
-    - name: View system configuration
-      href: system.md
-
 - name: APIs
   items:
     - name: Work with APIs
       href: apis.md 
     - name: API references
       href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
+    - name: Manage APIs
+      href: apis-manage.md
     - name: OData sample queries
       href: odata-examples.md
 
@@ -344,5 +333,25 @@
 - name: DSR rights and requests
   href: dsr-rights-requests.md
 
-- name: Get support
-  href: /power-platform/admin/get-help-support
+- name: More resources
+  items: 
+  - name: Learning catalog
+    items:
+      - name: Certify as Microsoft Customer Data Platform Specialist
+        href: /certifications/exams/mb-260?tab=tab-instructor-led
+      - name: Get started with Customer Insights
+        href: /training/modules/get-started-customer-data-platform/
+      - name: Ingest data
+        href: /training/modules/ingest-data-customer-insights/
+      - name: Create a unified customer profile
+        href: /training/modules/unified-customer-profile/
+      - name: Work with Customer Insights
+        href: /training/modules/working-with-customer-insights/
+      - name: Enrich data and make predictions
+        href: /training/modules/enrich-data/
+      - name: Manage external connections
+        href: /training/modules/configure-third-party-connections/
+      - name: Administer Customer Insights
+        href: /training/modules/administer-customer-data-platform/
+  - name: Get support
+    href: /power-platform/admin/get-help-support

@@ -1,7 +1,7 @@
 ---
 title: "Export data to Salesforce Marketing Cloud (preview)"
 description: "Learn how to configure the connection and export to Salesforce Marketing Cloud."
-ms.date: 07/25/2022
+ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: how-to
@@ -21,7 +21,7 @@ Use your customer data in Salesforce Marketing Cloud by exporting them through a
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Salesforce Marketing Cloud**.
 
@@ -49,10 +49,10 @@ Use your customer data in Salesforce Marketing Cloud by exporting them through a
 
 1. Choose if you want to export your data **Gzipped** or **Unzipped** and the **field delimiter** for the exported files.
 
-1. Select the entities, for example segments, that you want to export.
+1. Select the tables, for example segments, that you want to export.
 
    > [!NOTE]
-   > Each selected entity will be split into a maximum of five output files when exported.
+   > Each selected table will be split into a maximum of five output files when exported.
 
 1. Select **Save**.
 

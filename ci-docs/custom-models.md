@@ -1,8 +1,8 @@
 ---
 title: "Custom machine learning models from Azure Machine Learning"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
-ms.date: 11/9/2022
-ms.reviewer: v-wendysmith
+ms.date: 11/15/2022
+ms.reviewer: mhart
 
 ms.topic: tutorial
 author: radsay01
@@ -29,6 +29,7 @@ searchScope:
   - AML workspace with pipeline: Owner or User Access administrator privileges. For more information, see [Azure roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
   - Customer Insights environment: Admin or Contributor privileges.
 - Storage account: An [Azure Data Lake Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) associated with your Azure Studio instance.
+- Custom models in Customer Insights don't support data sources that are updated with incremental refresh.
 
   > [!NOTE]
   > Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
@@ -55,7 +56,7 @@ searchScope:
 
 ## Add a new workflow
 
-1. Go to the **Intelligence** page.
+1. Go to **Insights** > **Custom models** and select **New workflow**.
 
 1. On the **Create** tab, select **Use model** on the **Custom model (Azure Machine Learning v2)** tile.
 

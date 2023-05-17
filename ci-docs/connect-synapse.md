@@ -1,11 +1,12 @@
 ---
 title: Connect an Azure Synapse Analytics data source (preview)
 description: Use a database in Azure Synapse as a data source in Dynamics 365 Customer Insights.
-ms.date: 02/17/2023
+ms.date: 03/20/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
+ms.custom: bap-template
 ---
 
 # Connect an Azure Synapse Analytics data source (preview)
@@ -17,7 +18,9 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 ## Prerequisites
 
 > [!NOTE]
-> Synapse Workspaces which have [firewall enabled](/azure/synapse-analytics/security/synapse-workspace-ip-firewall) are currently not supported.
+> - Azure Synapse workspaces which have [firewall enabled](/azure/synapse-analytics/security/synapse-workspace-ip-firewall) are currently not supported.
+> - The Azure Synapse workspace used as data source must be in the same tenant as the Customer Insights environment. Cross-tenant scenarios are not supported by Customer Insights.
+
 > [!IMPORTANT]
 > Make sure to set all **role assignments** as described.  
 
@@ -31,7 +34,7 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
   
 - A user with an **Administrator** role in Customer Insights needs the **User Access Administrator** role in the Azure subscription to grant the *service principal* access to Azure resources in the Customer Insights UI. Otherwise, a user in Azure who has the **User Access Administrator** role must set following permissions. Learn more about the [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) role and how to choose between [Owner vs User Access Administrator](/azure/role-based-access-control/role-assignments-steps#step-2-select-the-appropriate-role). The **Owner** implicitly has the **User Access Administrator** role.
 
-- If using a new Azure Data Lake Storage Gen2 account, the *service principal for Customer Insights that is "Dynamics 365 AI for Customer Insights" needs **Storage Blob Data Contributor** permissions. Learn more about [connecting to an Azure Data Lake Storage with a service principal for Customer Insights](connect-service-principal.md). The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
+- If using a new Azure Data Lake Storage Gen2 account, the *service principal* for Customer Insights that is "Dynamics 365 AI for Customer Insights" needs **Storage Blob Data Contributor** permissions. Learn more about [connecting to an Azure Data Lake Storage with a service principal for Customer Insights](connect-service-principal.md). The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
 
 - On the resource group the Azure Synapse workspace is located, the *service principal that is "Dynamics 365 AI for Customer Insights" and the *user for Customer Insights* needs at least **Reader** permissions. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
@@ -47,7 +50,7 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 1. Go to **Data** > **Data sources**.
 
-1. Select **Add data source**.
+1. Select **Add a data source**.
 
 1. Choose the **Azure Synapse Analytics (Preview)** method.
 
@@ -59,14 +62,14 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 1. Choose a **Database** from the workspace connected in the selected Azure Synapse Analytics connection and select **Next**. Currently, we only support the database type *Lake database*.
 
-1. Select the entities to ingest from the connected database and select **Next**.
+1. Select the tables to ingest from the connected database and select **Next**.
 
-1. Optionally, choose the data entities to allow data profiling on.
+1. Optionally, choose the data tables to allow data profiling on.
 
 1. Select **Save** to apply your selection and start the ingestion of the data from your newly created data source linked to the Lake database tables in Azure Synapse Analytics. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-Loading data can take time. After a successful refresh, review the ingested data from the [**Entities**](entities.md) page.
+Loading data can take time. After a successful refresh, review the ingested data from the [**Data** > **Tables**](tables.md) page.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

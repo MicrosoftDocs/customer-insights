@@ -1,11 +1,12 @@
 ---
 title: "Enrichment for data sources (preview)"
 description: "Enrich data sources before going through the data unification process."
-ms.date: 05/20/2022
+ms.date: 03/20/2023
 ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 ---
 
 # Enrichment for data sources (preview)
@@ -16,11 +17,11 @@ Use data from sources like Microsoft and other partners to enrich your customer 
 
 You must have Contributor or Administrator [permissions](permissions.md) to create or edit enrichments.  
 
-1. Go to **Data** > **Unify**. Select the entity you want to enrich and select one attribute as a [primary key](map-entities.md#select-primary-key-and-semantic-type-for-attributes) for the entity.
+1. Go to **Data** > **Unify**. Select the table you want to enrich and select one attribute as a [primary key](data-unification-map-tables.md#select-primary-key-and-semantic-type-for-attributes) for the table.
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the vertical ellipsis (&vellip;) next to the data source you want to enrich and select **Enrich**.
+1. Select the data source you want to enrich and select **Enrich**.
 
    :::image type="content" source="media/data_sources_enrich.png" alt-text="Data sources page with Enrich highlighted":::
 
@@ -28,7 +29,7 @@ You must have Contributor or Administrator [permissions](permissions.md) to crea
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Data sources enrichment page.":::
 
-1. Select **Enrich my data** to configure a data source enrichment. The output entity name is automatically populated.
+1. Select **Enrich my data** to configure a data source enrichment. The output table name is automatically populated.
 
 ## Supported data source enrichments
 
