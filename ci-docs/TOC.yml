@@ -225,17 +225,21 @@
     - name: Create and manage segments
       href: segments.md
     - name: Create with segment builder
-      href: segment-builder.md
-    - name: Aspects of segment builder
-      href: segment-builder-aspects.md
+      items: 
+        - name: Create complex segments with segment builder
+          href: segment-builder.md
+        - name: Aspects of segment builder
+          href: segment-builder-aspects.md
     - name: Create with quick segments
       href: segment-quick.md
     - name: Suggested segments
-      href: suggested-segments.md
-    - name: Generate and manage segments based on activity
-      href: suggested-segments-activity-generate.md
-    - name: Generate and manage segments based on measures
-      href: suggested-segments-generate.md
+      items: 
+        - name: Suggested segments overview
+          href: suggested-segments.md
+        - name: Generate and manage segments based on activity
+          href: suggested-segments-activity-generate.md
+        - name: Generate and manage segments based on measures
+          href: suggested-segments-generate.md
     - name: Get insights on segments
       href: segment-insights.md
     - name: Schedule segments
