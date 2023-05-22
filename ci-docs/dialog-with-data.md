@@ -24,7 +24,7 @@ Dynamics 365 Customer Insights lets you use copilot capabilities to generate ins
 1. In Customer Insights, go to **Insights** > **Discovery**.
 1. A pop-up dialog explains the feature and asks for your consent to share your prompts to continuously improve the quality of the results or answers generated. Choose your preference. You can always change your using a toggle on the Discovery page later.
 
-   :::image type="content" source="media/copilot-customer-insights.svg" alt-text="Screnshot of the dialog with data feature with copilot answering a user question.":::
+   :::image type="content" source="media/copilot-customer-insights.svg" alt-text="Screenshot of the dialog with data feature with copilot answering a user question.":::
 
 1. The **Discover insights about your customers in natural language (preview)** page contains four key components:
 
