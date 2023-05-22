@@ -1,7 +1,7 @@
 ---
 title: Have a dialog with data using Copilot in Customer Insights
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 05/04/2023
+ms.date: 05/22/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: wmelewong
@@ -28,8 +28,14 @@ Dynamics 365 Customer Insights lets you use copilot capabilities to generate ins
 
 1. The **Discover insights about your customers in natural language (preview)** page contains four key components:
 
-    - **Prompt box**: Enter your question in natural language. For example: ‘How many customers are in my loyalty program and have more than 100 rewards points?’ Copilot in Customer Insights currently supports English questions with up to 2000 characters. This section also contains the consent setting for sharing your prompts.
+    - **Prompt box**: Enter your question in natural language. For example: ‘How many customers in my loyalty program have more than 100 reward points?’ Copilot in Customer Insights currently supports English questions with up to 2000 characters. This section also contains the consent setting for sharing your prompts.
     Ask a specific and relevant question about your customers and make sure you have corresponding data imported to answer the question asked. Avoid asking questions that are too ambiguous or contain inappropriate content.
+
+      > [!TIP]
+      >
+      > - Ask one question at a time and don't combine multiple questions in one prompt. Add clarifying information, for example when using abbreviations.
+      > - Enter questions about your customer data and make them as specific as possible by referring to names of tables and columns.
+      > - Don't enter SQL statements as questions. Use conversational language.
 
     - **Results**: Answers and results generated to your question show in this section. It also includes other insights related to your question. Responses use content filter and moderator solutions in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai).
 
