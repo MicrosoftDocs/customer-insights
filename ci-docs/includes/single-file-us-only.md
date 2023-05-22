@@ -1,0 +1,1 @@
+Currently, this feature is available for US customers only.
