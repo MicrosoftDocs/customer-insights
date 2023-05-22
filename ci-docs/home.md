@@ -45,7 +45,7 @@ Your profile picture opens the **Account manager** for your Microsoft 365 profil
 
 The cards that display on the **Home** page depend on the selection: **Get insights in mins** or **Step-by-step guide**.
 
-### Get insights in minutes (for US customers)
+### Get insights in minutes
 
 > [!NOTE]
 > [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
