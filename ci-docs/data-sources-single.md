@@ -17,6 +17,9 @@ searchScope:
 
 Dynamics 365 Customer Insights provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv file or choose sample data. Customer Insights uploads and unifies the data creating a customer profile, and then automatically generates insights on the data.
 
+> [!NOTE]
+> [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
+
 ## Prerequisites
 
 - File must be a CSV file with only letters, numbers, and _ in the file name
