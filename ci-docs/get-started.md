@@ -25,9 +25,10 @@ Customer Insights can help you build a deeper understanding of your customers. C
    :::image type="content" source="media/get-started.png" alt-text="Screenshot of the Getting Started screen with Insights in minutes.":::
 
 ## Step 2: Import data
-<!--
+
 > [!TIP]
-> To quickly get started and have Customer Insights automatically generate insights, upload your own data from a single CSV file. Go to [Get started with Customer Insights using a single data source](data-sources-single.md). -->
+> To quickly get started and have Customer Insights automatically generate insights, upload your own data from a single CSV file. Go to [Get started with Customer Insights using a single data source](data-sources-single.md).
+> [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
 
 1. To get started with data from multiple sources, select **Not now** on the **Getting started** screen. On the **Home** screen, change Get insights in mins to **Step-by-step guide**.
 
