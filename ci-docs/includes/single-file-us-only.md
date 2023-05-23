@@ -1,1 +1,1 @@
-Currently, this feature is available for US customers only.
+Currently, this feature is available for customers in the United States only.
