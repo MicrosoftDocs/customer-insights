@@ -1,6 +1,6 @@
 ---
 title: Have a dialog with data using Copilot in Customer Insights
-description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
+description: "Use copilot in Dynamics 365 Customer Insights to ask questions about your unified data." 
 ms.date: 05/22/2023
 ms.reviewer: mhart
 ms.topic: how-to
