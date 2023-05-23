@@ -1,7 +1,7 @@
 ---
 title: "Get started with Customer Insights using a single data source"
 description: "Learn how to ingest data from a single file or from sample data"
-ms.date: 03/15/2023
+ms.date: 05/23/2023
 ms.topic: overview
 author: wmelewong
 ms.author: wameng
@@ -46,7 +46,7 @@ In a newly provisioned environment, the **Getting Started** page displays. If th
 1. Select **Yes** to verify the primary key or choose another field as the primary key for your data source. Select **Next**. Customer Insights checks the data quality.
 
    > [!TIP]
-   > If an error occurs during data processing, Customer Insights explains the issue in a message and provides an action to take. For example, if required attributes needed to generate insights are not identified, click [**Map data**](#map-required-data).
+   > If an error occurs during data processing, Customer Insights explains the issue in a message and provides an action to take. For example, if required attributes needed to generate insights are not identified, select [**Map data**](#map-required-data).
 
    After the data quality checks, Customer Insights removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
 
