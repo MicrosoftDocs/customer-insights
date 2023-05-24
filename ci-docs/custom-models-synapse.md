@@ -71,8 +71,8 @@ Manage workflows based on Azure Synapse Analytics models. Workflows help you cho
 1. In the **Model name** step, enter the following information:
 
    - **Name**: A recognizable name for the model.
-   - **Output entity name**: An output entity name for the pipeline output results.
-   - **Primary key**: The attribute you want as the primary key for your output entity.
+   - **Output table name**: An output table name for the pipeline output results.
+   - **Primary key**: The attribute you want as the primary key for your output table.
    - **Customer ID**: The matching attribute that corresponds to the Customer Insights Customer ID.
 
    :::image type="content" source="media/custom-model-AML-wizard1.png" alt-text="Screenshot of the Azure Synapse Model page.":::
