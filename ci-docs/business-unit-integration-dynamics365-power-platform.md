@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 Customer Insights and Dynamics 365 Marketing are tightly integrated for a delightful activation journey.
 
-Marketing contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Dynamics 365 Marketing. In Dynamics 365 Marketing, they have access to customer profiles and segments that belong to their business unit.
+Marketing contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Dynamics 365 Marketing. In Dynamics 365 Marketing, they have access to customer profiles and segments that belong to their business unit. The *Marketing Professional (BU level)* role also needs to be granted to the business unit teams that the profiles are mapped to in the unification configuration. 
 
  > [!NOTE]
 > Dynamics 365 Marketing can only process segments that contain members that belong to one business unit and has an owner that belongs to the same business unit.
