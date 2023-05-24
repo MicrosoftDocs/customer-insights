@@ -5,18 +5,18 @@
 
 # Remove all comments and capitalized text in this template before you sign off or merge to the main branch
 
-title:  Dynamics 365 Customer Insights # < 60 chars
-summary: Deliver personalized customer experiences with the ultimate 360-degree view of your customers. # < 160 chars
+title:  Dynamics 365 Customer Insights documentation # < 60 chars
+summary: Learn how to deliver personalized customer experiences with a 360-degree view of your customers. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
-  title: Dynamics 365 Customer Insights # Required; page title displayed in search results. Include the brand. For example, Dynamics 365 Commerce < 60 chars.
-  description: Deliver personalized customer experiences with the ultimate 360-degree view of your customers. # Required; product description that is displayed in search results. < 160 chars. 
+  title: Dynamics 365 Customer Insights documentation # Required; page title displayed in search results. Include the brand. For example, Dynamics 365 Commerce < 60 chars.
+  description: Learn how to deliver personalized customer experiences with a 360-degree view of your customers. # Required; product description that is displayed in search results. < 160 chars. 
   ms.topic: hub-page # Required
   author: m-hartmann #Required; your GitHub user alias, with correct capitalization.
   ms.author: mhart #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/20/2023 #Required; mm/dd/yyyy format.
+  ms.date: 05/08/2023 #Required; mm/dd/yyyy format.
   ms.custom: bap-template
   hide_bc: true
 

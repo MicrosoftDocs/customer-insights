@@ -27,6 +27,7 @@ Custom models lets you manage workflows based on Azure Machine Learning models. 
 - Pipeline must be published under a [pipeline endpoint](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 - An [Azure Data Lake Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) associated with your Azure Studio instance.
 - For Azure Machine Learning workspaces with pipelines, Owner or User Access Administrator permissions to the Azure Machine Learning Workspace.
+- Custom models in Customer Insights don't support data sources that are updated with incremental refresh.
 
   > [!NOTE]
   > Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.

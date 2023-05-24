@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 04/13/2023
+ms.date: 05/03/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -16,10 +16,22 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
-<!-- 
+
+## April 2023
+
+We're enhancing our delete and reset environment capabilities to make them easier to work with at scale. For example, admins can delete or reset solutions associated with your environment.
+
+Because Customer Insights environments are associated with a Dataverse environment, they are always in sync. Environment owners have access to these capabilities from the Power Platform admin center solutions page and can delegate these permissions.
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/do-more-advanced-application-lifecycle-management)
+
+ 
 ## March 2023
 
 ### Generate insights in minutes with first run experience
+
+> [!NOTE]
+> [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
 
 This first run experience (FRE) feature helps you recognize the value of Dynamics 365 Customer Insights faster. Onboarding a new application can be time-consuming and tricky, leaving room for error and leaving you questioning the value it can bring. This feature saves you precious time and takes the guesswork out of setting up your data correctly the first time you use Customer Insights. It works in trial and paid environments and allows you to get valuable insights faster and use those insights to fuel better customer experiences and drive a higher return on investment.
 
@@ -33,7 +45,6 @@ This FRE works with a single CSV file only. If you have multiple data files, or 
 
 - [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/generate-insights-minutes-first-run-experience)
 - [Documentation](data-sources-single.md) 
--->
 
 ## January 2023
 
