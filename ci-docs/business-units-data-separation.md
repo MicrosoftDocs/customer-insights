@@ -82,5 +82,6 @@ Segments and measures belong to the business unit of the user that created them.
 >
 > - Segments and measures are owned by only one business unit and not shared with other business units.
 > - Only *build your own* segments and measures and no projected attributes are supported for the marketing contributor role.
+> - For building segments and measures the Marketing contributor role only has access to Customer profiles, Unified activities, Segments, and Customer measures. 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
