@@ -7,7 +7,7 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
-ms.custom: intro-internal
+ms.collection: get-started
 searchScope: 
   - ci-enrichments
   - ci-enrichment-details
