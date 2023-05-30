@@ -104,7 +104,7 @@ additionalContent:
         text: Create segments
       - url: measures.md
         text: Create measures
-      - url: predictions-overview.md
+      - url: predictions.md
         text: Predict data
     - title: Export data
       links:
