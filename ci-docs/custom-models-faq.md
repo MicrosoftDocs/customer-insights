@@ -20,7 +20,7 @@ This issue is frequently caused by a configuration issue in the pipeline. Ensure
 
 ## What does the error "Couldn't save intelligence workflow" mean?
 
-Users usually see this error message if they don't have Owner or User Access Administrator privileges on the workspace. The user needs a higher level of permissions to enable Customer Insights to process the workflow as a service rather than using the user credentials for subsequent runs of the workflow.
+This error message typically occurs because the user doesn't have Owner, Admin, or Contributor privileges on the workspace. The user initially needs a higher level of permissions to enable Customer Insights to process the workflow as a service.
 
 ## Can I use a private endpoint with my custom model from Azure Machine Learning?
   
