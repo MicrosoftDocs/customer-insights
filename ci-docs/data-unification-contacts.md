@@ -1,7 +1,7 @@
 ---
-title: "Create a B-to-B unified contact profile (preview)"
+title: "Create a B-to-B unified contact profile"
 description: "Go through the data unification process to create a single master dataset of business contacts."
-ms.date: 05/08/2023
+ms.date: 05/30/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -15,10 +15,9 @@ searchScope:
   - customerInsights
 ---
 
-# Create a unified B-to-B contact profile (preview)
+# Create a unified B-to-B contact profile
 
-After [unifying business accounts](data-unification-map-tables.md), you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile.
-An account can have multiple contacts, but a contact is linked to a single account. Contacts without accounts are also included in the contact profile.
+After [unifying business accounts](data-unification-map-tables.md), you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. Customer Insights B-to-B supports a one-to-many account to contact relationship.  The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
@@ -31,7 +30,7 @@ The first few steps are identical to the unifying accounts steps.
 
 ## Select source fields
 
-1. Under **Unify contacts (preview)**, select **Get started**.
+1. Under **Unify contacts**, select **Get started**.
 
 1. [Select the tables and fields](data-unification-map-tables.md) for your contact data sources, including the primary keys and attribute types.
 
@@ -51,9 +50,15 @@ The first few steps are identical to the unifying accounts steps.
 
 ## Set the relationship between contacts and accounts
 
-This step in the unification process connects your contact data to its corresponding account data.
+This step in the unification process connects your contact data to its corresponding account data. At least one contact table must have a relationship to an account table.
 
-1. For each table, enter the following information:
+1. For each table, select **Yes** or **No** for **Add contact to account relationship?**.
+
+   - If the table contains one or more contacts with known accounts, select **Yes**.
+
+   - If the table does not contain any contact to account relationships, meaning all the contacts are orphans, select **No**. Select **Next** and go to [Unify contact fields](#unify-contact-fields).
+
+1. If you selected **Yes** to **Add contact to account relationship?**, enter the following information:
 
    - **Foreign key from contact table**: Choose the attribute that connects your contact table to the account.
    - **To account table**: Choose the account table associated with the contact.

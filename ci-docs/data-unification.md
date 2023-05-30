@@ -1,7 +1,7 @@
 ---
 title: "Data unification overview"
 description: "Go through the data unification process with your data to create a single master dataset of account or customer profiles."
-ms.date: 05/08/2023
+ms.date: 05/30/2023
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
@@ -20,7 +20,7 @@ Data can be unified on a single table or multiple tables. Tables were previously
 
 For **individual consumers (B-to-C)** where the data is centered around individuals, unification provides a unified view of your customers.
 
-For **business accounts (B-to-B)** where the data is centered around accounts, unification provides a unified view of your accounts. [Contact unification (preview)](data-unification-contacts.md) allows contacts for those accounts to be separately unified and associated with the accounts. Contact unification (preview) also allows contacts without an account to be included in the unified contact profile.
+For **business accounts (B-to-B)** where the data is centered around accounts, unification provides a unified view of your accounts. [Contact unification](data-unification-contacts.md) allows contacts for those accounts to be separately unified and associated with the accounts. Contact unification also allows contacts without an account to be included in the unified contact profile.
 
 ## Data unification process
 
@@ -37,7 +37,7 @@ The unification process maps customer or account data from your data sources, re
 1. [Review](data-unification-review.md) and create the unified profile.
 
 > [!NOTE]
-> In B-to-B, after unifying accounts you can optionally [unify contacts (preview)](data-unification-contacts.md) for those accounts and link the unified contacts to the unified accounts.
+> In B-to-B, after unifying accounts you can optionally [unify contacts](data-unification-contacts.md) for those accounts and link the unified contacts to the unified accounts.
 
 ## Next steps
 

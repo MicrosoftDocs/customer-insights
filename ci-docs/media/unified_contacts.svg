@@ -541,7 +541,7 @@ src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAB54AA4AAAAANDQAA4AAAAA
                   </g>
                  </g>
                  <g class="ms-OverflowSet-item item-298" aria-owns="ms-Button11" data-stacking-context="true" data-tag="div" data-z-index="auto" role="none">
-                  <g class="ms-Button ms-Button--commandBar ms-Button--hasMenu ms-CommandBarItem-link root-335" aria-expanded="false" aria-haspopup="true" aria-label="Unify contacts (preview)" aria-labelledby="" aria-owns="ms-Button-flexContainer11" data-stacking-context="true" data-tag="button" data-z-index="auto" role="menuitem" tabindex="0">
+                  <g class="ms-Button ms-Button--commandBar ms-Button--hasMenu ms-CommandBarItem-link root-335" aria-expanded="false" aria-haspopup="true" aria-label="Unify contacts" aria-labelledby="" aria-owns="ms-Button-flexContainer11" data-stacking-context="true" data-tag="button" data-z-index="auto" role="menuitem" tabindex="0">
                    <g class="ms-Button-flexContainer flexContainer-131" aria-owns="ms-Icon14 ms-Button-textContainer3 ms-Icon15" data-stacking-context="true" data-tag="span" data-z-index="auto">
                     <g class="ms-Icon root-89 css-195 ms-Button-icon icon-336" aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
                      <text color="rgb(34, 102, 227)" dominant-baseline="text-after-edge" fill="rgb(34, 102, 227)" font-family="FabricMDL2Icons-1" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(34, 102, 227)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"/>
@@ -844,7 +844,7 @@ src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAB54AA4AAAAANDQAA4AAAAA
               <g class="ms-Stack css-273" aria-owns="ms-Stack54 ms-Stack55" data-stacking-context="true" data-tag="div" data-z-index="auto">
                <g class="ms-Stack css-274" aria-owns="css-2752" data-stacking-context="true" data-tag="div" data-z-index="auto">
                 <g class="css-275" aria-level="1" data-stacking-context="true" data-tag="h1" data-z-index="auto" role="heading">
-                 <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family='"Segoe UI", helvetica, arial, sans-serif' font-size="24px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="82" y="376" lengthAdjust="spacingAndGlyphs" textLength="263.546875" xml:space="preserve">Unify contacts (preview)</tspan></text>
+                 <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family='"Segoe UI", helvetica, arial, sans-serif' font-size="24px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="82" y="376" lengthAdjust="spacingAndGlyphs" textLength="263.546875" xml:space="preserve">Unify contacts</tspan></text>
                 </g>
                </g>
               </g>

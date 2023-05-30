@@ -1448,7 +1448,7 @@
     },
     {
       "source_path": "ci-docs/audience-insights/semantic-mappings.md",
-      "redirect_url": "/dynamics365/customer-insights/semantic-mappings",
+      "redirect_url": "/dynamics365/customer-insights/data-unification-contacts",
       "redirect_document_id": false
     },
     {

@@ -132,8 +132,6 @@
       href: table-schemas.md
     - name: Build relationships and connected tables
       href: relationships.md
-    - name: Define semantic mappings
-      href: semantic-mappings.md
 
 - name: Exports
   items:
