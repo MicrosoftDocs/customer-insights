@@ -61,7 +61,7 @@ searchScope:
 
 1. Select the information about the connection:
 
-   - **Connection**: A connection to your Azure Machine Learning workspace or select [**Add connection**](#set-up-an-aml-connection) to set up a new one.
+   - **Connection**: A connection to your Azure Machine Learning workspace or select [**Add connection**](#set-up-an-azure-machine-learning-connection) to set up a new one.
    - **Pipeline**: A pipeline linked to your Azure Machine Learning workspace.
    - **Output Path**: The output path linked to your pipeline.
    - **Output Datastore**: The output datastore linked to your pipeline.
