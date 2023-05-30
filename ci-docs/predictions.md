@@ -1,22 +1,25 @@
 ---
-title: Predictions overview
-description: "Prediction scenarios and options covered by the Dynamics 365 Customer Insights application."
-ms.date: 11/15/2022
+title: Create and manage predictions
+description: Learn how to create and manage predictions in Dynamics 365 Customer Insights application."
+ms.date: 05/30/2023
 ms.reviewer: mhart
-
-ms.topic: overview
+ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
-
+ms.custom: bap-template
 ---
 
-# Predictions overview
+# Create and manage predictions
 
 Dynamics 365 Customer Insights comes with a variety of options that leverage AI and machine learning to predict data.
 
-## Out-of-box models
+Predictions offer capabilities to create better customer experiences, improve business capabilities, and revenue streams. We strongly recommend you balance the value of your prediction against the impact it has and biases that may be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6).
 
-The easiest way to start with predicting data are predefined models, often referred to as out-of-box models. They only require certain data and structure to generate insights quickly. The following models are available:
+## Generate insights using out-of-box prediction models
+
+The easiest way to start with predicting data are predefined models, often referred to as out-of-box models. They only require certain data and structure to generate insights quickly.
+
+The following models are available:
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 
@@ -36,10 +39,6 @@ The easiest way to start with predicting data are predefined models, often refer
 > We recommend that you regularly refresh out-of-the box models with updated data to ensure they accurately inform your business use case. Data is refreshed ad-hoc when the system ingests new or updated data sources. However, models will only rescore in this case and continue to use the existing training data.
 >
 > Configure an **Update schedule** by setting the model retraining schedule during configuration. The model will retrain and rescore on this schedule, which you can change at any time.
-
-## Azure Machine Learning integration
-
-If an organization already uses machine learning scenarios based on Azure Machine Learning experiments, the custom models feature in Customer Insights helps to connect the dots. Create workflows that help you choose the data you want to generate insights from and map the results to your unified customer profiles. For more information, see [Custom machine learning models](custom-models.md).
 
 ## Manage existing predictions
 

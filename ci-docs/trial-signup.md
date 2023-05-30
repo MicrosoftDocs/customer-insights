@@ -28,7 +28,7 @@ Your trial environment includes the same features as the paid version. The links
 - [Get started with Customer Insights.](get-started.md)
 - [Add more users and assign permissions.](permissions.md)
 - [Ingest your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
-- [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions-overview.md).
+- [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions.md).
 - Create [segments](segments.md) to group customers and [measures](measures.md) to review KPIs.
 - Set up [connections](connections.md) and [exports](export-manage.md) to process subsets of your data in other applications.
 
