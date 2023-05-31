@@ -198,7 +198,6 @@ src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAB54AA4AAAAANDQAA4AAAAA
                </g>
               </g>
              </g>
-             <g id="al" class="_2mBDn0rQL2ydXWUGzuMkG-" aria-owns="Control_5_container" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
              <g id="an" class="_2mBDn0rQL2ydXWUGzuMkG-" aria-owns="shellHeaderSwitcherButton_container feedback_container settings_container help_container" data-stacking-context="true" data-tag="div" data-z-index="auto">
               <g id="ao" class="_3tMIPlDhtt_BfUWurbsxvD" aria-owns="_2snzFD6PQiLt7Zw71oYsJL1" data-stacking-context="true" data-tag="div" data-z-index="auto">
                <g class="_2snzFD6PQiLt7Zw71oYsJL" aria-owns="shellHeaderSwitcherButton" data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -223,8 +222,8 @@ src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAB54AA4AAAAANDQAA4AAAAA
                       </mask>
                       <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="Arial" font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
                      </g>
-                     <g mask="url(#bi)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                      <mask id="bi">
+                     <g mask="url(#a)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+                      <mask id="a">
                        <rect width="0" height="0" fill="#fff"/>
                       </mask>
                      </g>
@@ -500,7 +499,6 @@ src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAB54AA4AAAAANDQAA4AAAAA
        <mask id="i">
         <rect x="50" y="48" width="1094" height="763" fill="#fff"/>
        </mask>
-       <g aria-owns="div17" data-stacking-context="true" data-tag="div" data-z-index="auto" role="complementary"></g>
        <g id="bf" class="pageContainer-137" mask="url(#k)" aria-owns="div19" data-stacking-context="true" data-tag="div" data-z-index="auto">
         <g data-stacking-layer="rootBackgroundAndBorders">
          <rect x="50" y="48" width="1094" height="763" fill="#fff"/>
@@ -694,9 +692,7 @@ src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAB54AA4AAAAANDQAA4AAAAA
                  <g class="ms-Stack css-629" aria-owns="ms-Button14" data-stacking-context="true" data-tag="div" data-z-index="auto">
                   <g class="ms-Button ms-Button--action ms-Button--command root-630" aria-label="Refreshing" aria-labelledby="" aria-owns="ms-Button-flexContainer14" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
                    <g class="ms-Button-flexContainer flexContainer-538" aria-owns="ms-Spinner1 ms-Button-textContainer6" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                    <g data-stacking-layer="childStackingContextsWithStackLevelZeroAndPositionedDescendantsWithStackLevelZero">
-                     <g class="ms-Spinner spinner-small root-633" aria-label="Refreshing" aria-owns="ms-Spinner-circle1" data-stacking-context="true" data-tag="div" data-z-index="0" role="alert"></g>
-                    </g>
+                    <g data-stacking-layer="childStackingContextsWithStackLevelZeroAndPositionedDescendantsWithStackLevelZero"></g>
                     <g class="ms-Button-textContainer textContainer-539" aria-owns="id__1494" data-stacking-context="true" data-tag="span" data-z-index="auto">
                      <g class="ms-Button-label label-632" data-stacking-context="true" data-tag="span" data-z-index="auto">
                       <text color="rgb(96, 94, 92)" dominant-baseline="text-after-edge" fill="rgb(96, 94, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(96, 94, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"/>
@@ -754,9 +750,7 @@ src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAB54AA4AAAAANDQAA4AAAAA
                  <g class="ms-Stack css-629" aria-owns="ms-Button16" data-stacking-context="true" data-tag="div" data-z-index="auto">
                   <g class="ms-Button ms-Button--action ms-Button--command root-630" aria-label="Refreshing" aria-labelledby="" aria-owns="ms-Button-flexContainer16" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
                    <g class="ms-Button-flexContainer flexContainer-538" aria-owns="ms-Spinner2 ms-Button-textContainer8" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                    <g data-stacking-layer="childStackingContextsWithStackLevelZeroAndPositionedDescendantsWithStackLevelZero">
-                     <g class="ms-Spinner spinner-small root-633" aria-label="Refreshing" aria-owns="ms-Spinner-circle2" data-stacking-context="true" data-tag="div" data-z-index="0" role="alert"></g>
-                    </g>
+                    <g data-stacking-layer="childStackingContextsWithStackLevelZeroAndPositionedDescendantsWithStackLevelZero"></g>
                     <g class="ms-Button-textContainer textContainer-539" aria-owns="id__1500" data-stacking-context="true" data-tag="span" data-z-index="auto">
                      <g class="ms-Button-label label-632" data-stacking-context="true" data-tag="span" data-z-index="auto">
                       <text color="rgb(96, 94, 92)" dominant-baseline="text-after-edge" fill="rgb(96, 94, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(96, 94, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"/>
@@ -846,7 +840,7 @@ src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAB54AA4AAAAANDQAA4AAAAA
               <g class="ms-Stack css-273" aria-owns="ms-Stack56 ms-Stack57" data-stacking-context="true" data-tag="div" data-z-index="auto">
                <g class="ms-Stack css-274" aria-owns="css-2752" data-stacking-context="true" data-tag="div" data-z-index="auto">
                 <g class="css-275" aria-level="1" data-stacking-context="true" data-tag="h1" data-z-index="auto" role="heading">
-                 <text color="#323130" dominant-baseline="text-after-edge" fill="#323130" font-family="'Segoe UI', helvetica, arial, sans-serif" font-size="21.333px" font-stretch="100%" font-weight="600" text-rendering="auto" word-spacing="0px" style="text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid" user-select="auto"><tspan x="82" y="376" font-family="'Segoe UI'" font-size="21.333px" font-stretch="normal" font-weight="bold" textLength="263.54688" xml:space="preserve">Unify contacts</tspan></text>
+                 <text color="#323130" dominant-baseline="text-after-edge" fill="#323130" font-family="'Segoe UI', helvetica, arial, sans-serif" font-size="21.333px" font-stretch="100%" font-weight="600" text-rendering="auto" word-spacing="0px" style="text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid" user-select="auto"><tspan x="82" y="376" font-family="'Segoe UI'" font-size="21.333px" font-stretch="normal" font-weight="bold" xml:space="preserve">Unify contacts</tspan></text>
                 </g>
                </g>
               </g>
@@ -1222,7 +1216,6 @@ src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAB54AA4AAAAANDQAA4AAAAA
      </g>
     </g>
    </g>
-   <g id="bg" aria-owns="ms-Stack114" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
    <g id="bh" mask="url(#l)" data-stacking-context="true" data-tag="iframe" data-z-index="auto">
     <mask id="l">
      <rect width="0" height="0" fill="#fff"/>

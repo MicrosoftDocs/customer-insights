@@ -27,7 +27,7 @@ To review or change any unification settings once a unified profile has been cre
    > [!NOTE]
    > For business accounts (B-to-B), the **Unify** page displays the number of unified account profiles and tiles for each of the account unification steps. If contacts were unified, the number of unified contact profiles and tiles for each of the contact unification steps display. Choose the appropriate tile under **Unify Accounts** or **Unify Contacts (preview)** depending on what you want to update.
    > 
-   > :::image type="content" source="media/b2b_unified.svg" alt-text="Screenshot of the Data Unify page after account and contact data is unified." lightbox="media/b2b_unified.svg":::
+   > :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified." lightbox="media/b2b_unified.png":::
 
 1. Choose what you want to update:
    - [Source fields](#edit-source-fields) to add attributes or tables or change attribute types. To remove an attribute, see [Remove a unified field](#remove-a-unified-field). To remove a table, see [Remove a unified table](#remove-a-unified-table).
@@ -203,6 +203,9 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
    - **Foreign key from contact table**: Choose the attribute that connects your contact table to the account.
    - **To account table**: Choose the account table associated with the contact.
+
+   > [!NOTE]
+   > If you select **No** for **Add contact to account relationship?**, you remove the relationship between contacts and accounts.
 
 1. Select **Next** to make changes to unified fields, or select **Save and close** and return to [Update unification settings](#update-unification-settings).
 
