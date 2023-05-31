@@ -1452,6 +1452,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "ci-docs/semantic-mappings.md",
+      "redirect_url": "/dynamics365/customer-insights/data-unification-contacts",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "ci-docs/audience-insights/sentiment-analysis.md",
       "redirect_url": "/dynamics365/customer-insights/sentiment-analysis",
       "redirect_document_id": false
