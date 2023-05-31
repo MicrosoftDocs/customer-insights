@@ -35,7 +35,7 @@ Choose how to create a segment based on your target audience.
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-Segment of accounts or segment of contacts (preview) with segment builder: [Build your own](segment-builder.md)
+Segment of accounts or segment of contacts with segment builder: [Build your own](segment-builder.md)
 
 > [!NOTE]
 > Most export destinations require contact information for marketing purposes. Therefore, create segments of contacts to use for those exports.

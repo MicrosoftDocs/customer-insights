@@ -1,12 +1,12 @@
 ---
 title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
-ms.date: 11/15/2022
-
-ms.topic: tutorial
+ms.date: 05/30/2023
+ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 searchScope: 
   - ci-match
   - ci-merge
@@ -24,26 +24,26 @@ To review or change any unification settings once a unified profile has been cre
 
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified." lightbox="media/m3_unified.png":::
 
-   For business accounts (B-to-B), the **Unify** page displays the number of unified account profiles and tiles for each of the account unification steps. If contacts were unified, the number of unified contact profiles and tiles for each of the contact unification steps display. Choose the appropriate tile under **Unify Accounts** or **Unify Contacts (preview)** depending on what you want to update.
-
-   :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified." lightbox="media/b2b_unified.png":::
-
-   > [!TIP]
-   > The **Matching conditions** tile displays only if multiple tables were selected.
+   > [!NOTE]
+   > For business accounts (B-to-B), the **Unify** page displays the number of unified account profiles and tiles for each of the account unification steps. If contacts were unified, the number of unified contact profiles and tiles for each of the contact unification steps display. Choose the appropriate tile under **Unify Accounts** or **Unify Contacts (preview)** depending on what you want to update.
+   > 
+   > :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified." lightbox="media/b2b_unified.png":::
 
 1. Choose what you want to update:
    - [Source fields](#edit-source-fields) to add attributes or tables or change attribute types. To remove an attribute, see [Remove a unified field](#remove-a-unified-field). To remove a table, see [Remove a unified table](#remove-a-unified-table).
    - [Duplicate records](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
    - [Matching conditions](#manage-match-rules) to update matching rules across two or more tables.
    - [Unified customer fields](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
-   - [Semantic fields](#manage-semantic-fields-for-unified-contacts) to manage semantic types for unified contact fields.
-   - [Relationships](#manage-contact-and-account-relationships) to manage the contact to account relationship.
+   - [Relationships](#manage-contact-and-account-relationships) to manage the B-to-B contact to account relationship.
+
+   > [!TIP]
+   > The **Matching conditions** tile displays only if multiple tables were selected.
 
 1. After making your changes, choose your next option:
 
    - [Run matching conditions](#run-matching-conditions) to quickly evaluate the quality of your matching conditions (deduplication and match rules) without updating the unified profile. The **Run matching conditions only** option doesn't display for a single table.
-   - [Unify profiles](#run-updates-to-the-unified-profile) to run matching conditions and update the unified profile table without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
-   - [Unify profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions, update the unified profile table, and update all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically. In B-to-B, unification is run on both the account and contact tables updating the unified profiles.
+   - [Unify profiles](#run-updates-to-the-unified-profile) to run matching conditions and update the unified profile table without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md). In B-to-B, unification is run on both the account and contact tables updating the unified profiles.
+   - [Unify profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions, update the unified profile table, and update all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically.
 
 ## Edit source fields
 
@@ -190,6 +190,23 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
    - **Duplicate a rule**: Select the rule and then **Duplicate** to create a similar rule with modifications.
    - **Delete a rule**: Select the rule and then **Delete**.
 
+> [!NOTE]
+> For B-to-C, select **Next** to [make changes to unified fields](#manage-unified-fields), or select **Save and close** and return to [Update unification settings](#update-unification-settings).
+>
+> For B-to-B, select **Next** to manage the account and contact relationship, or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
+
+## Manage contact and account relationships
+
+1. Select **Edit** on the **Relationships** tile.
+
+1. To change the contact and account relationship, change any of the following information:
+
+   - **Foreign key from contact table**: Choose the attribute that connects your contact table to the account.
+   - **To account table**: Choose the account table associated with the contact.
+
+   > [!NOTE]
+   > If you select **No** for **Add contact to account relationship?**, you remove the relationship between contacts and accounts.
+
 1. Select **Next** to make changes to unified fields, or select **Save and close** and return to [Update unification settings](#update-unification-settings).
 
 ## Manage unified fields
@@ -202,26 +219,7 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 1. For customers or accounts, select **Next** to review and [update the unified profile and dependencies](#run-updates-to-the-unified-profile). Or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
 
-   For contacts, select **Next** to manage semantic fields. Or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
-
-## Manage semantic fields for unified contacts
-
-1. Select **Edit** on the **Semantic fields** tile.
-
-1. To change the semantic type for a unified field, select a new type. For more information, see [Define the semantic fields for unified contacts](data-unification-contacts.md#define-the-semantic-fields-for-unified-contacts).
-
-1. Select **Next** to manage the account and contact relationship, or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
-
-## Manage contact and account relationships
-
-1. Select **Edit** on the **Relationships** tile.
-
-1. To change the contact and account relationship, change any of the following information:
-
-   - **Foreign key from contact table**: Choose the attribute that connects your contact table to the account.
-   - **To account table**: Choose the account table associated with the contact.
-
-1. Select **Next** to review the unification settings and [update the unified profile and dependencies](#run-updates-to-the-unified-profile), or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
+   For B-to-B contacts, select **Next** to review and [update the unified profile and dependencies](#run-updates-to-the-unified-profile). Or select **Save and close** and return to [Update unification settings](#update-unification-settings) to make more changes.
 
 ## Run matching conditions
 
@@ -243,7 +241,7 @@ Run matching conditions runs deduplication and match rules only and updates the 
 
 ## Run updates to the unified profile
 
-- To run matching conditions and update the unified profile table *without* impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts (preview)** > **Unify profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
+- To run matching conditions and update the unified profile table *without* impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. For accounts, select **Unify accounts** > **Unify profiles**. For contacts, select **Unify contacts** > **Unify profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
 - To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically. For accounts and contacts, select **Unify accounts** > **Unify profiles and dependencies**. Matching conditions are run for both accounts and contacts updating both unified profiles and all other dependencies are run.
 
 All tiles except **Source fields** show **Queued** or **Refreshing**.
