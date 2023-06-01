@@ -24,6 +24,8 @@ To increase scalability, reliability, and performance, some Power Query-based da
 A notification in Customer Insights indicates that there are data sources for which you need to take action.
 We recommend following the steps for trial and sandbox environments before updating the data sources on the production environment.  
 
+:::image type="content" source="media/migrade-data-sources.png" alt-text="Screenshot of a notificaiton to migrate data sources. ":::
+
 1. Sign in to Customer Insights and open the environment to upgrade.
 
 1. Go to **Data** > **Data sources**.  
