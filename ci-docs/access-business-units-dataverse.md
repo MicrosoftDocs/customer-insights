@@ -16,7 +16,7 @@ Customer Insights belongs to the Microsoft Dynamics 365 ecosystem and it uses th
 
 ## Dataverse security roles
 
-To access any data from Customer Insights in Dataverse, a user needs to have the *Customer Insights Data Read Access* security role in Dataverse. You can't modify this role. If different access is needed, for example, access to all profiles irrespectively of business unit, create a custom security role and assign it.
+To access any data from Customer Insights in Dataverse, a user needs to have the *Customer Insights Data Read Access* and *Customer Insights Data Configuration Viewer* security roles in Dataverse. You can't modify these roles. If different access is needed, for example, access to all profiles irrespectively of business unit, create a custom security role and assign it.
 
 [Learn more about Dataverse security roles.](/power-platform/admin/database-security)
 
