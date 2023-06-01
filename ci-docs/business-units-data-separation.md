@@ -37,7 +37,7 @@ Business unit data separation and role-based access control (RBAC) allow adminis
 
 Access to a customer profile in Customer Insights depends on the business unit team that owns the profile and the Customer Insights role of the user. The *Administrator*, *Contributor*, and *Viewer* roles have access to all profiles regardless of the owning business unit team. The *Marketing contributor* role has access only to customer profiles that belong to their business unit.
 
-The *Marketing contributor* role has access to segments and measures in the Customer Insights user interface. [Learn more about user roles in Customer Insights](permissions.md)
+The *Marketing contributor* role only has access to the customers, segments, and measures views in the Customer Insights user interface. [Learn more about user roles in Customer Insights](permissions.md)
 
 > [!NOTE]
 >
