@@ -16,7 +16,7 @@ metadata:
   ms.topic: hub-page # Required
   author: m-hartmann #Required; your GitHub user alias, with correct capitalization.
   ms.author: mhart #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/08/2023 #Required; mm/dd/yyyy format.
+  ms.date: 06/02/2023 #Required; mm/dd/yyyy format.
   ms.custom: bap-template
   hide_bc: true
 
@@ -36,7 +36,7 @@ highlightedContent:
 
     - title: Training
       itemType: training
-      url: /training/browse/?expanded=dynamics-365&products=dynamics-cust-insights
+      url: /training/browse/?expanded=dynamics-365&products=dynamics-cust-insights&resource_type=learning%20path
 
     - title: Troubleshoot
       itemType: concept
