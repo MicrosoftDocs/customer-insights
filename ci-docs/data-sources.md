@@ -1,7 +1,7 @@
 ---
 title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
-ms.date: 03/15/2023
+ms.date: 06/07/2023
 ms.topic: overview
 author: mukeshpo
 ms.author: mukeshpo
@@ -40,16 +40,13 @@ If you use on-premises data sources, Microsoft, or third-party data, import and 
 
 ## Data sources page
 
-If your environment was configured to use Customer Insights storage and you use on-premises data sources, you use Power Platform dataflows. With Power Platform dataflows, you can view shared data sources and data sources managed by others. The **Data Sources** page lists the data sources in three sections:
+If your environment was configured to use Customer Insights storage and you use on-premises data sources, you use Power Platform dataflows. The **Data Sources** page lists the data sources in two sections:
 
-- **Shared**: Data sources that can be managed by all Customer Insights admins. Power Platform dataflows, your own storage account, and attaching to a Dataverse-managed data lake are examples of shared data sources.
 - **Managed by me**: Power Platform dataflows created and managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.
 - **Managed by others**: Power Platform dataflows created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.
 
 > [!NOTE]
 > All tables can be viewed and used by other users. While data sources are owned by the user who created them, the resulting tables from the data ingestion can be used by every user of Customer Insights.
-
-If your environment does not use Power Platform dataflows, the **Data Sources** page contains only a list of all data sources. No sections display.
 
 ## Next steps
 
