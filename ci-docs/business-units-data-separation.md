@@ -1,5 +1,5 @@
 ---
-title: "Business unit data separation and role-based access control (preview)"
+title: "Business unit support (preview)"
 description: "Learn how to use business units in Customer Insights to separate data."
 ms.date: 05/05/2023
 ms.reviewer: mhart
@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Business unit data separation and role-based access control (preview)
 
-Business unit data separation and role-based access control (RBAC) allow administrators to regulate access to customer profiles, segments, and measures based on business units. [Learn more about business units and role-based access control in Dataverse](/power-platform/admin/wp-security-cds).
+Business unit support allows administrators to regulate access to customer profiles, segments, and measures based on business units. [Learn more about business units and role-based access control in Dataverse](/power-platform/admin/wp-security-cds).
 
 ## Prerequisites
 
