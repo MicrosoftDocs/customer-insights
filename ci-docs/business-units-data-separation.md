@@ -1,5 +1,5 @@
 ---
-title: "Business unit support (preview)"
+title: "Business unit support and role-based access control (preview)"
 description: "Learn how to use business units in Customer Insights to separate data."
 ms.date: 05/05/2023
 ms.reviewer: mhart
