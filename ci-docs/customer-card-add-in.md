@@ -29,7 +29,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 - Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control isn't available due to the selected environment type. This error will show within the control when rendering it. Learn more about [environment use cases](work-with-business-accounts.md).
 - Each add-in control relies on specific data in Customer Insights.
   - **Measure control** requires [configured customer attribute measures](measures.md).
-  - **Intelligence control** requires data generated using [predictions or custom models](predictions-overview.md).
+  - **Intelligence control** requires data generated using [predictions or custom models](predictions.md).
   - **Customer details control** shows all fields from the profile available in the unified customer profile.
   - **Enrichment control** requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft, [Interests](enrichment-microsoft.md) provided by Microsoft, and [Office engagement data](enrichment-office.md) provided by Microsoft.
   - **Contacts control** requires a contact semantic table type.

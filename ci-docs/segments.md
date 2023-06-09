@@ -5,7 +5,7 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-ms.date: 03/20/2023
+ms.date: 04/13/2023
 ms.custom: bap-template
 searchScope: 
   - ci-customers-page
@@ -35,7 +35,7 @@ Choose how to create a segment based on your target audience.
 
 # [Business accounts (B-to-B)](#tab/b2b)
 
-Segment of accounts or segment of contacts (preview) with segment builder: [Build your own](segment-builder.md)
+Segment of accounts or segment of contacts with segment builder: [Build your own](segment-builder.md)
 
 > [!NOTE]
 > Most export destinations require contact information for marketing purposes. Therefore, create segments of contacts to use for those exports.
@@ -74,9 +74,11 @@ Select next to a segment to view available actions.
 
 The smaller the number of segments and measures that need to be refreshed daily, the quicker the overall system refresh takes. To lower the number of segments refreshed daily, consider the following tips:
 
-- When a campaign is over and you no longer need a segment, **Deactivate** it. Deactivate saves the segment configuration, but stops the automatic refresh.
+- When a campaign is over and you no longer need a segment, **Delete** it. If a campaign runs more than once, you can deactivate the segment. Deactivating it saves the segment configuration, but stops the automatic refresh.
 
 - [Schedule](segments-schedule.md) segments on a slower cadence so they are not refreshed daily.
+
+- We recommend setting up a recurring audit process to review segments and measures and delete the ones that are not needed anymore. To help you with this process, [use tags](work-with-tags-columns.md) with campaign and end date information. During the audit process you can search for tags and delete segments and measures in bulk.
 
 ## View segment details
 
@@ -117,7 +119,7 @@ When you approach or exceed the number of active segments based on the [service 
 
 The complexity of your segments can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active segments. These messages display on the **Segments** list page. If you encounter these messages or symptoms, see the following recommendations.
 
-1. Delete old or no longer relevant segments even if they are static or inactive.
+1. Delete old or no longer relevant segments even if they are static or inactive. When a campaign ends, deactivate associated segments for recurring campaigns.
 1. [Schedule individual segments](segments-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

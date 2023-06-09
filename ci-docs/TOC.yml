@@ -12,6 +12,8 @@
         href: trial-signup.md
       - name: Trial FAQ
         href: trial-FAQ.md
+    - name: Buy
+      href: paid-license.md
     - name: Access your environment
       href: https://home.ci.ai.dynamics.com/
     - name: Quickstart guide
@@ -35,7 +37,7 @@
   items:
     - name: Data sources overview
       href: data-sources.md
-    - name: Get started using a single data source
+    - name: Get started with Customer Insights using a single data source
       href: data-sources-single.md
     - name: Connect to data in Azure Data Lake Storage
       href: connect-common-data-model.md
@@ -47,6 +49,8 @@
       href: connect-power-query.md
     - name: Manage existing data sources
       href: data-sources-manage.md
+    - name: Connect to an Azure Data Lake Storage account by using an Azure service principal
+      href: connect-service-principal.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
     - name: Incremental refresh for data sources
@@ -75,8 +79,8 @@
     - name: Unify customer fields
       href: data-unification-merge-tables.md
     - name: Review data unification
-      href: review-unification.md
-    - name: Create a unified contact profile 
+      href: data-unification-review.md
+    - name: Create a unified B-to-B contact profile 
       href: data-unification-contacts.md
     - name: Update unification settings
       href: data-unification-update.md  
@@ -123,6 +127,9 @@
     - name: Manage unknown customer profiles
       href: manage-unknown-profiles.md
 
+- name: Copilot in Customer Insights
+  href: dialog-with-data.md
+
 - name: Tables
   items:
     - name: Understand tables
@@ -131,8 +138,6 @@
       href: table-schemas.md
     - name: Build relationships and connected tables
       href: relationships.md
-    - name: Define semantic mappings
-      href: semantic-mappings.md
 
 - name: Exports
   items:
@@ -226,36 +231,50 @@
 
 - name: Segments
   items:
-    - name: Segments overview
+    - name: Create and manage segments
       href: segments.md
     - name: Create with segment builder
-      href: segment-builder.md
+      items: 
+        - name: Create complex segments with segment builder
+          href: segment-builder.md
+        - name: Aspects of segment builder
+          href: segment-builder-aspects.md
     - name: Create with quick segments
       href: segment-quick.md
-    - name: Suggested segments based on measures
-      href: suggested-segments.md
-    - name: Suggested segments based on activity
-      href: suggested-segments-activity.md
+    - name: Suggested segments
+      items: 
+        - name: Suggested segments overview
+          href: suggested-segments.md
+        - name: Generate and manage segments based on activity
+          href: suggested-segments-activity-generate.md
+        - name: Generate and manage segments based on measures
+          href: suggested-segments-generate.md
     - name: Get insights on segments
       href: segment-insights.md
+    - name: Schedule segments
+      href: segments-schedule.md
+    - name: Track usage of a segment
+      href: segments-track-usage.md
     - name: Find similar customers
       href: find-similar-customer-segments.md
 
 - name: Measures
   items: 
-    - name: Measures overview
+    - name: Create and manage measures
       href: measures.md
     - name: Create with measure builder
       href: measure-builder.md
     - name: Create with templates
       href: measure-templates.md
+    - name: Schedule measures
+      href: measures-schedule.md
           
 - name: Predictions and custom models
   items:
     - name: Predict data with the help of AI
       items: 
-        - name: Prediction models overview
-          href: predictions-overview.md
+        - name: Create and manage predictions
+          href: predictions.md
         - name: Predict customer lifetime value (CLV)
           href: predict-customer-lifetime-value.md
         - name: Predict product recommendations
@@ -268,8 +287,13 @@
           href: sentiment-analysis.md
         - name: Use custom models from Azure Machine Learning
           href: custom-models.md
+        - name: Use custom models from Azure Synapse Analytics
+          href: custom-models-synapse.md
+        - name: Custom models FAQ
+          href: custom-models-faq.md
         - name: Create segments based on predictions
           href: prediction-based-segment.md
+
 
     - name: Sample guides
       items:    

@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 02/09/2023
+ms.date: 06/07/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -12,10 +12,72 @@ ms.reviewer: skumm
 
 We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
 
-We roll out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action, we'll update the app automatically with no downtime.
+We roll out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action, we update the app automatically with no downtime.
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## May 2023
+
+### Generate insights by asking questions in natural language with Copilot in Customer Insights
+
+Copilot in Dynamics 365 Customer Insights is powered by AI to provide you with insights that answer your questions. In an easy and accelerated manner, you can have a dialogue with your data. Ask questions using natural language to explore, analyze, and understand customer segment sizes and preferences. Analysts and marketers can engage directly with customer data and discover new information that they may not have been aware of.
+
+This feature democratizes access to insights, allowing analysts, marketers, and sellers to ask questions using conversational language and receive instant answers, without needing to have the knowledge of SQL programming. Copilot removes the barriers to getting a deeper understanding of customers, enabling users to speed up and scale the delivery of hyper-personalized experiences that customers expect.
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/generate-insights-asking-questions-natural-language-copilot-customer-insights)
+- [Documentation](dialog-with-data.md)
+
+### Unify your B2B account and contact data into easy to work with related tables that also support commercial contacts with unknown accounts  
+
+Get a 360-degree view of your B2B contacts by creating unified contact profiles. With this release, your B2B contacts can be unified just like accounts and customers in Dynamics 365 Customer Insights. The unified accounts table and unified contacts table share a simple relationship, allowing you to easily create segments of contacts that have specific account attributes. In addition, you can now identify and engage business contacts where the account is unknown, to discover and create new account relationships
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/gain-360-degree-view-b2b-contacts-leveraging-all-fields-unified-contacts)
+- [Documentation](data-unification-contacts.md)
+
+### Bring your custom prediction models from Azure Synapse Analytics into Dynamics 365 Customer Insights, using our Synapse pipeline integration
+
+Now you can utilize your existing custom models in Synapse with routinely refreshed, high-quality unified customer and transaction data from Customer Insights to supercharge your next marketing or sales campaign.
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/easily-connect-custom-prediction-models-guided-steps)
+- [Documentation](custom-models.md)
+
+### Get an enhanced experience for custom prediction models in Dynamics 365 Customer Insights with a user-friendly wizard
+
+Now even business end users can easily and quickly bring custom prediction models from Azure Machine Learning or Azure Synapse Analytics into Customer Insights with a simple 5-step wizard that walks them through establishing a connection, addition of an AI/ML workflow, configuration of model parameters, setup of required data, and reviewing and running the model.
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/connect-custom-machine-learning-models-azure-synapse-analytics)
+- [Documentation](custom-models.md)
+
+## April 2023
+
+### Advanced application lifecycle management
+
+We're enhancing our delete and reset environment capabilities to make them easier to work with at scale. For example, admins can delete or reset solutions associated with your environment.
+
+Because Customer Insights environments are associated with a Dataverse environment, they're always in sync. Environment owners have access to these capabilities from the Power Platform admin center solutions page and can delegate these permissions.
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/do-more-advanced-application-lifecycle-management)
+
+## March 2023
+
+### Generate insights in minutes with first run experience
+
+> [!NOTE]
+> [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
+
+This first run experience (FRE) feature helps you recognize the value of Dynamics 365 Customer Insights faster. Onboarding a new application can be time-consuming and tricky, leaving room for error and leaving you questioning the value it can bring. This feature saves you precious time and takes the guesswork out of setting up your data correctly the first time you use Customer Insights. It works in trial and paid environments and allows you to get valuable insights faster and use those insights to fuel better customer experiences and drive a higher return on investment.
+
+After successfully provisioning your initial Customer Insights environment, the FRE guides you through three easy steps:
+
+1. Provide data: You are prompted to upload your data file (must be a CSV file containing more than 100 rows and 5 columns).
+2. Get data checked: Using AI-driven models, your data is automatically validated and quality-checked—no manual configuration required.
+3. Receive insights: Customer Insights identifies business value by deriving patterns and insights from your data file, such as segments and measures.
+
+This FRE works with a single CSV file only. If you have multiple data files, or different data sources, [Customer Insights provides connections to a broad set of sources](data-sources.md).
+
+- [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/generate-insights-minutes-first-run-experience)
+- [Documentation](data-sources-single.md) 
 
 ## January 2023
 
@@ -221,7 +283,7 @@ The updates in February 2022 include new features, performance upgrades, and bug
 
 Out-of-the-box prediction models, including **subscription churn**, **transactional churn**, and **customer lifetime value (CLV)** become generally available as a part of Customer Insights. 
 
-For more information, see [Predictions overview](predictions-overview.md).
+For more information, see [Predictions](predictions.md).
 
 ### New data source: Integration with Azure Synapse Analytics (Preview)
 

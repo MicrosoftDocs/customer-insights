@@ -40,7 +40,7 @@ If your organization maintains environments for individual customers and busines
 - [Data ingestion](data-sources.md): All features in this area are the same for business accounts and individual customers.
 - B-to-B data unification is very similar to B-to-C data unification but has an additional step to unify contacts after account unification. See [Business accounts (B-to-B)](data-unification.md).
 - [Enrichment](enrichment-hub.md): Some enrichment types are available only for individual customer scenarios while others are exclusively available for business accounts.
-- [Predictions and out-of-box models](predictions-overview.md): Transactional churn prediction contains additional steps for business accounts. Other predictions are only available for individual customers.
+- [Predictions and out-of-box models](predictions.md): Transactional churn prediction contains additional steps for business accounts. Other predictions are only available for individual customers.
 - [Activation and export](export-manage.md): Exports are available for business accounts and individual customers. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts.
 - [System settings](system.md) and [user management](permissions.md): All features in this area are the same for business accounts and individual customers.
 

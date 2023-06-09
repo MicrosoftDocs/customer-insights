@@ -3,7 +3,7 @@ title: Product overview for Dynamics 365 Customer Insights
 author: m-hartmann
 description: Get an overview for Dynamics 365 Customer Insights and its main features.
 ms.author: mhart
-ms.date: 04/12/2022
+ms.date: 04/11/2023
 ms.topic: overview
 ---
 
@@ -15,7 +15,7 @@ Customer Insights helps you transform your business into a customer-centric orga
 
 Connect data from transactional, behavioral, and demographic data sources to create 360-degree customer views. Derive out-of-the-box insights with prebuilt AI models or rapidly build, test, and deploy custom AI/ML models using advanced analytics solutions at limitless scale.
 
-Maintain full control over your customer data to ensure the highest level of data governance and compliance with a self-service, enterprise grade CDP built on Microsoft Azure. Support the General Data Protection Regulation (GDPR) and other legislative requirements and industry standards through built-in privacy, security, and governance tools.
+Maintain full control over your customer data to ensure the highest level of data governance and compliance with a self-service, enterprise grade CDP built on Microsoft Azure. Support privacy laws and regulations and other legislative requirements and industry standards through built-in privacy, security, and governance tools.
 
 ## Pricing and licensing
 

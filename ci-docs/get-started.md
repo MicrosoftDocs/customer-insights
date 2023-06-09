@@ -28,6 +28,7 @@ Customer Insights can help you build a deeper understanding of your customers. C
 
 > [!TIP]
 > To quickly get started and have Customer Insights automatically generate insights, upload your own data from a single CSV file. Go to [Get started with Customer Insights using a single data source](data-sources-single.md).
+> [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
 
 1. To get started with data from multiple sources, select **Not now** on the **Getting started** screen. On the **Home** screen, change Get insights in mins to **Step-by-step guide**.
 
@@ -49,7 +50,7 @@ With unified profiles set up, enhance your data and further increase the informa
 
 1. Choose from an expanding library of enrichment providers to [enrich your customer data](enrichment-hub.md).
 
-1. Use [out-of-box models](predictions-overview.md) to predict churn likelihood or expected revenues.
+1. Use [out-of-box models](predictions.md) to predict churn likelihood or expected revenues.
 
 1. [Configure activities](activities.md) based on ingested data and visualize interactions with your customers in a chronological timeline.
 
