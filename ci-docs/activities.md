@@ -1,7 +1,7 @@
 ---
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 03/13/2023
+ms.date: 06/05/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: srivas15
@@ -20,7 +20,7 @@ searchScope:
 
 # Customer or business contact activities
 
-Customer activities are actions or events performed by customers or business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card Add-in](customer-card-add-in.md) solution.
+Customer activities are actions or events performed by customers or business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Insights Timeline Integration](activities-in-d365-timeline.md) or the [Customer Card Add-in](customer-card-add-in.md) solution.
 
 ## Prerequisites
 
