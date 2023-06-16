@@ -1,5 +1,5 @@
 ---
-title: Data preparation report FAQ
+title: Data prep report FAQ
 description: "Review frequently asked questions about the data preparation report in Customer Insights."
 ms.date: 04/17/2023
 ms.reviewer: v-wendysmith
@@ -9,7 +9,7 @@ ms.author: rsayyaparaju
 ms.custom: bap-template
 ---
 
-# Data preparation report FAQ
+# Data prep report FAQ
 
 ## Who can access the data preparation report?
 

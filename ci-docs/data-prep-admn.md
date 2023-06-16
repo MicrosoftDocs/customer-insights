@@ -1,7 +1,7 @@
 ---
 title: Turn off the data preparation report
 description: "Learn how to turn off the data preparation report."
-ms.date: 04/17/2023
+ms.date: 06/30/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: radsay01
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 By default, the data preparation report capability is turned on.
 
-1. Go to **Settings** > **System** and select the **Data prep report** tab.
+1. Go to **Settings** > **System** and select the **Data prep report** tab. <!--- Don't see this in dev yet --->
 
 1. Toggle the switch off.
 
