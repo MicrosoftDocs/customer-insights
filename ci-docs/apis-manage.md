@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights APIs
 description: Manage the Customer Insights API keys and view API usage.
-ms.date: 03/20/2023
+ms.date: 06/16/2023
 ms.topic: how-to
 author: wimohabb
 ms.author: wimohabb
