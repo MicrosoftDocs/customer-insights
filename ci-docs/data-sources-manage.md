@@ -28,7 +28,7 @@ Data sources can be refreshed on an automatic schedule or refreshed manually on 
 
 For attached data sources, data ingestion consumes the latest data available from that data source.
 
-Go to **Admin** > **System** > [**Schedule**](schedule-refresh.md) to configure system-scheduled refreshes of your ingested data sources.
+Go to **Settings** > **System** > [**Schedule**](schedule-refresh.md) to configure system-scheduled refreshes of your ingested data sources.
 
 To refresh a data source on demand:
 

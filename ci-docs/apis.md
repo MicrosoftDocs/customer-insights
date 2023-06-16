@@ -1,9 +1,8 @@
 ---
 title: Work with Customer Insights APIs
 description: Use APIs and understand limitations.
-ms.date: 08/31/2022
+ms.date: 06/16/2023
 ms.reviewer: wimohabb
-
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
@@ -91,7 +90,7 @@ Create an app registration that doesn't need user interaction and can be run on 
 
 1. Select the **APIs my organization uses** tab and choose **Dynamics 365 AI for Customer Insights** from the list.
 
-1. For **Permission type**, select **Application permissions** and then select the **CustomerInsights.Api.All** permission.
+1. For **Permission type**, select **Application permissions** and then select the **api.access** permission.
 
 1. Select **Add permissions**.
 

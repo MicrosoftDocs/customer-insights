@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights APIs
 description: Manage the Customer Insights API keys and view API usage.
-ms.date: 03/20/2023
+ms.date: 06/16/2023
 ms.topic: how-to
 author: wimohabb
 ms.author: wimohabb
@@ -16,7 +16,7 @@ Set up the keys to use the Customer Insights APIs and view the API usage.
 
 View and manage the keys to use the [Customer Insights APIs](apis.md) with the data in your environment.
 
-1. Go to **Admin** > **Security** and select the **APIs** tab.
+1. Go to **Settings** > **Permissions** and select the **APIs** tab.
 
 1. If API access to the environment has not been set up, select **Enable**. Or, to block API access to the environment, select **Disable** and confirm.
 
@@ -32,7 +32,7 @@ View and manage the keys to use the [Customer Insights APIs](apis.md) with the d
 
 View details about the real-time API usage and see which events happened in a given time frame.
 
-1. Go to **Admin** > **System** and select the **API usage** tab.
+1. Go to **Settings** > **System** and select the **API usage** tab.
 
 1. **Select a time frame** to view.
 
