@@ -11,17 +11,17 @@ ms.custom: bap-template
 
 # Integrate Customer Insights activities with Dynamics 365 timelines
 
-If you use Customer Insights and another Dynamics 365 app such as Dynamics 365 Sales, Marketing, or Customer Service, you can integrate Customer Insights activity so that they display on Dynamics 365 activity timelines.
+If you use Customer Insights and other Dynamics 365 apps such as Dynamics 365 Sales, Marketing, or Customer Service, you can integrate Customer Insights activity so that they display on Dynamics 365 activity timelines.
 
-Once enabled by a Dynamics 365 administrator, sellers and representatives can view activities such as notes, posts, emails, and appointments as well as transactional and behavior data for a customer.
+Once enabled by a Dynamics 365 administrator, sellers and representatives can view activities such as notes, posts, emails, and appointments as well as transactional and behavior data for a customer. They can search and filter activity records within the shared timeline.
 
 ## Prerequisites
 
-- Customer Insights and other Dynamics 365 apps operate on the same [Dataverse organization](customer-insights-dataverse.md).
+- Customer Insights and your other Dynamics 365 apps operate on the same [Dataverse organization](customer-insights-dataverse.md).
 - The Dynamics 365 Customer Insights Timeline Integration (*msdyn_CustomerInsightsTimelineIntegration*) solution is installed on the Power Apps environment. It is included with version 1.0.3.38 of the Dynamics 365 Customer Insights Base (*msdyn_CustomerInsightsAnchor*) solution. To check your version, go to Power Apps and select **Solutions**. For more information, see [Work with solutions](/power-apps/maker/data-platform/solutions-overview#search-and-filter-in-a-solution).
+- A B-to-C (individual customers) Customer Insights environment
 - Customer data is ingested into Customer Insights through a [Microsoft Dataverse managed data lake](connect-dataverse-managed-lake.md). The data is then [unified](data-unification.md).
-- [Customer activities are defined](activities.md).
-- An Admin role in Dynamics 365.
+- [Customer activities are defined](activities.md). These activities are stored in Dataverse in the *UnifiedActivity* table.
 
 ## Enable the Dynamics 365 Customer Insights Timeline Integration
 
