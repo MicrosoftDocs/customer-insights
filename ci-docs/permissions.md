@@ -29,7 +29,8 @@ Access to Customer Insights is restricted to users in your organization that are
 - Create measures using the **Measures** page (only *Build your own*). Can only create measures on tables that have a relationship path to customer profiles.
 
 > [!NOTE]
-> The marketing contributor role is only available in business unit enabled environments. Users can only access tables that have a relationship with customer profiles.
+> The marketing contributor role is only available in business unit enabled environments. Users can only create segments and measures from tables that have a direct relationship with customer profiles.
+> Note that the marketing contributor role has limited functionality in some areas compared to the contributor role.
 
 ## Contributor
 
