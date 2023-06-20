@@ -18,7 +18,7 @@ Once enabled by a Dynamics 365 administrator, sellers and representatives can vi
 ## Prerequisites
 
 - Customer Insights and your other Dynamics 365 apps operate on the same [Dataverse organization](customer-insights-dataverse.md).
-- The Dynamics 365 Customer Insights Timeline Integration (*msdyn_CustomerInsightsTimelineIntegration*) solution is installed on the Power Apps environment. It is included with version 1.0.3.38 of the Dynamics 365 Customer Insights Base (*msdyn_CustomerInsightsAnchor*) solution. To check your version, go to Power Apps and select **Solutions**. For more information, see [Work with solutions](/power-apps/maker/data-platform/solutions-overview#search-and-filter-in-a-solution).
+- The Dynamics 365 Customer Insights Timeline Integration (*msdyn_CustomerInsightsTimelineIntegration*) solution is installed on the Power Apps environment. It's included with version 1.0.3.38 of the Dynamics 365 Customer Insights Base (*msdyn_CustomerInsightsAnchor*) solution. To check your version, go to Power Apps and select **Solutions**. For more information, see [Work with solutions](/power-apps/maker/data-platform/solutions-overview#search-and-filter-in-a-solution).
 - A B-to-C (individual customers) Customer Insights environment.
 - Contact or account data is ingested into Customer Insights through a [Microsoft Dataverse managed data lake](connect-dataverse-managed-lake.md). The data is then [unified](data-unification.md).
 - [Customer activities are defined](activities.md). These activities are stored in Dataverse in the *UnifiedActivity* table.
