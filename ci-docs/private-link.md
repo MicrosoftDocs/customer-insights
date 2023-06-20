@@ -24,9 +24,9 @@ In Customers Insights you can create private links in the following ways:
 
    - When creating a new Customer Insights environment for which you would like to [Use your own Azure Data Lake Storage account](own-data-lake-storage.md) that is protected by your virtual network.
    - When creating a [data source](connect-common-data-model.md) for which the data is stored in your protected account.
-   - Directly from the **Admin** > **Security** > **Private Links** page in Customer Insights.
+   - Directly from the **Settings** > **Permissions** > **Private Links** page in Customer Insights.
 
-Regardless of the method you use to create the Private Link, it shows under the **Admin** > **Security** > **Private Links** tab in Customer Insights.
+Regardless of the method you use to create the Private Link, it shows under the **Settings** > **Permissions** > **Private Links** tab in Customer Insights.
 
 ## Set up a Private Link when creating a Customer Insights environment
 
@@ -48,7 +48,7 @@ When creating an [Azure Data Lake Storage data source](connect-common-data-model
 
 ## Set up a Private Link directly from the Private Links page in Customer Insights
 
-1. In Customer Insights, go to **Admin** > **Security** and select the **Private Links** tab.
+1. In Customer Insights, go to **Settings** > **Permissions** and select the **Private Links** tab.
 
 1. Select **Add Private Link**.
 
@@ -73,13 +73,13 @@ After configuring the Private Link between Customer Insights and your virtual ne
 
     :::image type="content" source="media/Private-Endpoint-Approval.png" alt-text="Description for the private endpoint approval step.":::
 
-1. In Customer Insights, go to **Admin** > **Security** and select the **Private Links** tab. The Private Links in Customer Insights now show the status **Approved**. 
+1. In Customer Insights, go to **Settings** > **Permissions** and select the **Private Links** tab. The Private Links in Customer Insights now show the status **Approved**. 
 
 1. Continue to add your [data sources](connect-common-data-model.md) that are linked to your protected storage.
 
 ## Delete an Azure Private link
 
-1. In Customer Insights, go to **Admin** > **Security** and select the **Private Links** tab.
+1. In Customer Insights, go to **Settings** > **Permissions** and select the **Private Links** tab.
 
 1. Select the storage account name for which you would like to delete the Private Links.
 
