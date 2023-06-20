@@ -11,9 +11,9 @@ ms.custom: bap-template
 
 # Integrate Customer Insights activities with Dynamics 365 timelines
 
-If you use Customer Insights and other Dynamics 365 apps such as Dynamics 365 Sales, Marketing, or Customer Service, you can integrate Customer Insights activity so that they display on Dynamics 365 activity timelines.
+If you use Customer Insights and other Dynamics 365 apps such as Dynamics 365 Sales, Marketing, or Customer Service, you can integrate Customer Insights activities so that they display on Dynamics 365 activity timelines.
 
-Once enabled by a Dynamics 365 administrator, sellers and representatives can view activities such as notes, posts, emails, and appointments as well as transactional and behavior data for a customer. They can search and filter activity records within the shared timeline.
+Once enabled by a Dynamics 365 administrator, sellers and representatives can view activities such as notes, posts, emails, and appointments as well as transactional and behavioral data for a customer. They can search and filter activity records within the shared timeline.
 
 ## Prerequisites
 
