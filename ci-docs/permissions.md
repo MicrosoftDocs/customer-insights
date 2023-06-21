@@ -22,8 +22,9 @@ Access to Customer Insights is restricted to users in your organization that are
 - View exports in the **Exports** page.
 - Install and use the **Power BI Customer Insights** dashboard.
 
-## Marketing contributor (Preview - only available in [business unit enabled environments](business-units-data-separation.md))
+## Marketing contributor (Preview)
 
+- The Marketing contributor role is only available in [business unit enabled environments](business-units-data-separation.md)
 - Can only access customer profiles that belong to the business unit of the user.
 - Create segments using the **Segments** page (only *Build your own*, no projected attributes).
 - Create measures using the **Measures** page (only *Build your own*). Can only create measures on tables that have a relationship path to customer profiles.
