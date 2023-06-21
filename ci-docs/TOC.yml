@@ -114,6 +114,8 @@
       href: search-filter-index.md
     - name: Define customer activities
       href: activities.md
+    - name: Integrate activities with Dynamics 365 timelines
+      href: activities-in-d365-timeline.md
     - name: Use consent management
       href: consent-management.md
     - name: Use web data for personalization
