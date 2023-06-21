@@ -1,14 +1,11 @@
 ---
 title: Work with Customer Insights data in Microsoft Dataverse
 description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output tables that are exported to Dataverse.
-ms.date: 01/16/2023
+ms.date: 06/21/2023
 ms.topic: conceptual
-author: mukeshpo
-ms.author: mukeshpo
+author: kishorem
+ms.author: kishorem
 ms.custom: bap-template
-searchScope: 
-  - ci-system-diagnostic
-  - customerInsights
 ---
 
 # Work with Customer Insights data in Microsoft Dataverse
@@ -117,6 +114,16 @@ When connecting to a Dataverse environment, the error message **This CDS organiz
 
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select the environment from the environment picker.
+1. If you have Dynamics 365 Marketing installed on the Dataverse environment, and you have [it connected to your Customer Insights environment](/dynamics365/marketing/real-time-marketing-ci-profile), remove this connection first. Otherwise, skip this step and proceed to step 4.
+    1. Go to **Tables**.
+    1. Find the table *msdynmkt_configuration*.
+    1. Go to the *CXPConfig* row in this table.
+    1. Go to the *Customer Insights Status* column and change the value from *Configured* to *NotConfigured*.
+    1. Go to **Solutions**.
+    1. Uninstall the following Dynamics 365 Marketing solutions:
+        - DynamicsMKT_AttachCIApplicationUser (*DynamicsMKT_AttachCIApplicationUser*)
+        - Dynamics Marketing Consent For Customer Insights (*DynamicsMKT_ConsentAttachCI*)
+        - DynamicsMKT_OrchestrationEngineAttachCI (*DynamicsMKT_OrchestrationEngineAttachCI*)
 1. Go to **Solutions**.
 1. Uninstall the following Customer Insights solutions:
    - Dynamics 365 Customer Insights Base (*msdyn_CustomerInsightsAnchor*)
