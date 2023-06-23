@@ -5,8 +5,8 @@ ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: how-to
-author: Nils-2m
-ms.author: nikeller
+author: pkieffer
+ms.author: philk
 ---
 
 # Power Apps connector (preview)
