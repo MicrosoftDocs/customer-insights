@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights APIs
 description: Manage the Customer Insights API keys and view API usage.
-ms.date: 06/16/2023
+ms.date: 06/26/2023
 ms.topic: how-to
 author: wimohabb
 ms.author: wimohabb
@@ -11,7 +11,7 @@ ms.reviewer: v-wendysmith
 # Manage Customer Insights APIs
 
 > [!NOTE]
-> Customer Insights APIs will be deprecated on January 31st, 2024. You're recommended to use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md)
+> Customer Insights APIs will be deprecated on January 31st, 2024. Customer Insights recommends you use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md).
 
 Set up the keys to use the Customer Insights APIs and view the API usage.
 

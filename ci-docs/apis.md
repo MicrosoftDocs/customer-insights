@@ -1,11 +1,12 @@
 ---
 title: Work with Customer Insights APIs
 description: Use APIs and understand limitations.
-ms.date: 06/16/2023
+ms.date: 06/26/2023
 ms.reviewer: wimohabb
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: wimohabb
+ms.custom: baptemplate
 searchScope: 
   - ci-system-api-usage
   - customerInsights
@@ -14,14 +15,9 @@ searchScope:
 # Work with Customer Insights APIs
 
 > [!NOTE]
-> Customer Insights APIs will be deprecated on January 31st, 2024. You're recommended to use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md)
+> Customer Insights APIs will be deprecated on January 31st, 2024. Customer Insights recommends you use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md).
 
-Dynamics 365 Customer Insights provides APIs to build your own applications based on your data in Customer Insights.
-
-> [!IMPORTANT]
-> Details of these APIs are listed on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.
-
-Try Customer Insights APIs, create an Azure App Registration, and get started with client libraries.
+Dynamics 365 Customer Insights provides APIs to build your own applications based on your data in Customer Insights. Details of these APIs are listed on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.
 
 ## Get started trying the Customer Insights APIs
 
@@ -83,7 +79,7 @@ You can use the Application/Client ID for this app registration with the [Micros
 
 For information on using the APIs in our client libraries, see [Customer Insights client libraries](#customer-insights-client-libraries).
 
-### Server-to-server application permissions
+### Set server-to-server application permissions
 
 Create an app registration that doesn't need user interaction and can be run on a server.
 

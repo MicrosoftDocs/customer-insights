@@ -1,7 +1,7 @@
 ---
 title: "OData query examples for Customer Insights APIs"
 description: "Commonly used examples of for the Open Data Protocol (OData) to query the Customer Insights APIs to review data."
-ms.date: 01/16/2023
+ms.date: 06/26/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -12,7 +12,7 @@ ms.custom: bap-template
 # OData query examples for Customer Insights APIs
 
 > [!NOTE]
-> Customer Insights APIs will be deprecated on January 31st, 2024. You're recommended to use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md)
+> Customer Insights APIs will be deprecated on January 31st, 2024. You're recommended to use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md).
 
 The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP. It uses commonly accepted methodologies like REST for the web. There are various kinds of libraries and tools that can be used to consume OData services.
 
@@ -66,18 +66,14 @@ Sample queries for other tables.
 |In-Clause + Expand     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
 
 ## Limitations
+
 - Customer Insights API returns a maximum of 100 objects by default. You can parse through more than the 100 returned objects by using standard pagination techniques. Alternatively, you can [export your data](export-destinations.md).
+
 - The following queries aren't supported by Customer Insights:
   - `$filter` on ingested source tables. You can only run $filter queries on system tables that Customer Insights creates.
-  - `$expand` from a `$search` query. Example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
-  - `$expand` from `$select` if only a subset of attributes is selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
-  - `$expand` enriched brand or interest affinities for a given customer. Example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
-  - Query prediction model output tables through alternate key. Example: `OOBModelOutputTable?$filter=HotelCustomerID eq '{AK}'`
+  - `$expand` from a `$search` query. For example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`.
+  - `$expand` from `$select` if only a subset of attributes is selected. For example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`.
+  - `$expand` enriched brand or interest affinities for a given customer. For example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`.
+  - Query prediction model output tables through alternate key. For example: `OOBModelOutputTable?$filter=HotelCustomerID eq '{AK}'`.
 
-The following queries aren't supported by Customer Insights:
-
-- `$filter` on ingested source tables. You can only run $filter queries on system tables that Customer Insights creates.
-- `$expand` from a `$search` query. Example: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
-- `$expand` from `$select` if only a subset of attributes is selected. Example: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
-- `$expand` enriched brand or interest affinities for a given customer. Example: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
-- Query prediction model output tables through alternate key. Example: `OOBModelOutputTable?$filter=HotelCustomerID eq '{AK}'`
+[!INCLUDE [footer-include](includes/footer-banner.md)]
