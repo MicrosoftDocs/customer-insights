@@ -71,7 +71,7 @@ Create a new [app registration](/graph/auth-register-app-v2) to use the Customer
 
 1. Select **Grant admin consent for...** to complete the app registration.
 
-1. To access the API without a user signing in, go to [Server-to-server application permissions](#server-to-server-application-permissions).
+1. To access the API without a user signing in, go to [Set server-to-server application permissions](#set-server-to-server-application-permissions).
 
 You can use the Application/Client ID for this app registration with the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) to obtain a bearer token to send with your request to the API.
 
