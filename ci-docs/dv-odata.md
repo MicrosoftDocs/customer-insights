@@ -30,7 +30,7 @@ Dataverse APIs have the following advantages over Customer Insights APIs:
 
 ## Sample queries
 
-To get started using Dataverse APIs, [create an application registration in Azure and request permissions for Dataverse](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory) and [grant your AAD app Viewer permissions](permissions.md) on Customer Insights.
+To get started using Dataverse APIs, [create an application registration in Azure and request permissions for Dataverse](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory) and [grant your Azure Active Directory app Viewer permissions](permissions.md) on Customer Insights.
 
 Modify the query samples to make them work on the target environments:
 
@@ -88,10 +88,10 @@ Sample queries for other tables.
 
 - Most Customer Insights tables are available in Dataverse. For more information, see [Customer Insights tables in Dataverse](tables.md#customer-insights-tables-in-dataverse).
 
-- Dataverse offers extensive support for testing their APIs, for example via Postman. For more information see [Set up a Postman environment](/power-apps/developer/data-platform/webapi/setup-postman-environment)
+- Dataverse offers extensive support for testing their APIs, for example via Postman. For more information see [Set up a Postman environment](/power-apps/developer/data-platform/webapi/setup-postman-environment).
 
-- For more information on Dataverse API service limits, see [Microsoft Dataverse API limits overview](/power-apps/maker/data-platform/api-limits-overview)
+- For more information on Dataverse API service limits, see [Microsoft Dataverse API limits overview](/power-apps/maker/data-platform/api-limits-overview).
 
-- For more information on how to use Dataverse APIs, see [Query data using the Web API](/power-apps/developer/data-platform/webapi/query-data-web-api#filter-results)
+- For more information on how to use Dataverse APIs, see [Query data using the Web API](/power-apps/developer/data-platform/webapi/query-data-web-api#filter-results).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

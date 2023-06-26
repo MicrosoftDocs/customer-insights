@@ -6,6 +6,7 @@ ms.topic: how-to
 author: wimohabb
 ms.author: wimohabb
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 ---
 
 # Manage Customer Insights APIs
