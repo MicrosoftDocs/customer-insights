@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 06/07/2023
+ms.date: 07/03/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -16,6 +16,21 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## June 2023
+
+### Display Customer Insights activities in a Dynamics 365 activity timeline
+
+A single view of all interactions enables a complete understanding of customer activity. With that context, sellers and representatives can create deeply personalized experiences for digital and non-digital channels. In Dynamics 365 Sales, Customer Service, and Marketing, users can see all Customer Insights activities in the unified activity timeline.
+
+Once enabled by a Dynamics 365 administrator, sellers and representatives can view Customer Insights activities directly in the activity timeline. Dynamics 365 apps and Customer Insights must share a Dataverse instance.
+
+Customer Insights activity data can appear within the same activity timeline already used today to add or view activities such as notes, posts, emails, and appointments. The unified activity timeline will be available across *Accounts* and *Contacts*.
+
+Customer Insights activities within the Dynamics 365 activity timeline can be filtered, searched, and updated dynamically.
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/display-customer-insights-activities-dynamics-365-activity-timeline)
+- [Documentation](activities-in-d365-timeline.md)
 
 ## May 2023
 
