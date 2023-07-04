@@ -11,6 +11,8 @@ ms.author: philk
 
 # Power Apps connector (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Bring unified customer profiles into your personalized apps with Microsoft Power Apps.
 
 ## Connect Power Apps and Dynamics 365 Customer Insights

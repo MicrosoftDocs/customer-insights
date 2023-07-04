@@ -10,6 +10,8 @@ ms.author: philk
 
 # Export segments to Klaviyo (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export segments of unified customer profiles to Klaviyo and use them for marketing activities.
 
 ## Prerequisites

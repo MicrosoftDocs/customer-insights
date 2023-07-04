@@ -15,6 +15,8 @@ searchScope:
 
 # Get started with Customer Insights using a single data source
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Dynamics 365 Customer Insights provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv file or choose sample data. Customer Insights uploads and unifies the data creating a customer profile, and then automatically generates insights on the data.
 
 > [!NOTE]

@@ -15,6 +15,8 @@ searchScope:
 
 # Suggested segments (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Customer Insights can suggest segments based on activity or measures.
 
 :::image type="content" source="media/suggested-segments-tab.png" alt-text="Suggested segments tab showing segment suggestions for activity-based and attribute-based segments.":::

@@ -14,6 +14,8 @@ searchScope:
 
 # Create measures with measure builder
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Measure builder lets you define calculations using math operators, aggregation functions, and filters. Define measures using attributes from tables that are related to the unified *Customer* table.
 
 Creating measures in B-to-C and B-to-B environments works the same way. However, if your B-to-B environment [uses accounts with hierarchies](relationships.md#set-up-account-hierarchies), choose whether to aggregate the measure across related sub-accounts.

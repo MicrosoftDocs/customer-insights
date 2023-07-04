@@ -13,6 +13,8 @@ searchScope:
 
 # Connect to an Azure Data Lake Storage account by using an Azure service principal
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Dynamics 365 Customer Insights provides an option to connect to an Azure Data Lake Storage account by using an Azure service principal.
 
 Automated tools that use Azure services must have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. Use service principals to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create or update an environment](create-environment.md).

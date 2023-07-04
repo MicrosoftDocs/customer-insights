@@ -14,6 +14,8 @@ searchScope:
 
 # Custom machine learning models from Azure Synapse
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Manage workflows based on Azure Synapse Analytics models. Workflows help you choose the data you want to generate insights from and map the results to your unified customer data. For more information, see [Machine learning in Azure Synapse Analytics](/azure/synapse-analytics/machine-learning/what-is-machine-learning).
 
 ## Prerequisites

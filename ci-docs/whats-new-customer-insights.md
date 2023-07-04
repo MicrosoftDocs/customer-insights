@@ -10,6 +10,8 @@ ms.reviewer: skumm
 
 # What's new in Dynamics 365 Customer Insights
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
 
 We roll out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action, we update the app automatically with no downtime.

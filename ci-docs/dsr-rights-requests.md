@@ -11,6 +11,8 @@ ms.custom: bap-template
 
 # Respond to Data Subject Rights (DSR) requests
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
 [!INCLUDE [gdpr-dsr-delete-note](~/../shared-content/shared/privacy-includes/gdpr-dsr-delete-export-note.md)]

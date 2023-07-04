@@ -16,6 +16,8 @@ searchScope:
 
 # Connect to data in Azure Data Lake Storage
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Storage Gen2 account. Data ingestion can be full or incremental.
 
 ## Prerequisites

@@ -13,6 +13,8 @@ searchScope:
 
 # Work with Customer Insights APIs
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Dynamics 365 Customer Insights provides APIs to build your own applications based on your data in Customer Insights.
 
 > [!IMPORTANT]
