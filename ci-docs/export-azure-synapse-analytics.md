@@ -5,7 +5,7 @@ ms.date: 03/20/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
-ms.author: philkr
+ms.author: philk
 ---
 
 # Export data to Azure Synapse Analytics (preview)
