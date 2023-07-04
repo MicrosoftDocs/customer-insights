@@ -11,6 +11,8 @@ ms.author: zacook
 
 # Predict subscription churn
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Predict whether a customer is at risk for no longer using your company’s subscription products or services. Subscription data includes active and inactive subscriptions for each customer so there are multiple entries per customer ID.
 
 You must have business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription has ended.

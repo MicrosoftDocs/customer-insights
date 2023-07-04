@@ -12,6 +12,8 @@ ms.reviewer: jeffhar
 
 # Dynamics 365 Customer Insights trial FAQ
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 ## Sign-up
 
 ### What are the system requirements for the trial?

@@ -14,6 +14,8 @@ searchScope:
 
 # Get started with Dynamics 365 Customer Insights
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Customer Insights can help you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
 
 ## Step 1: Create an environment

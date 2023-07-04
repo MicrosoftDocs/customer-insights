@@ -11,6 +11,8 @@ ms.author: philk
 
 # Power Automate connector (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Trigger specific events to occur automatically when your data changes and manage more complex flows directly in [Microsoft Power Automate](https://flow.microsoft.com/).
 
 ## Known limitations

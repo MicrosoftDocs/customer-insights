@@ -14,6 +14,8 @@ searchScope:
 
 # Export segments to Dynamics 365 Marketing (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Use [segments](segments.md) to generate campaigns and contact specific groups of customers with [Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).
 
 Customer Insights recommends using the capabilities of Dynamics 365 Marketing for real-time customer journey orchestration because you don't need to create exports to Dynamics 365 Marketing. Contacts and segments from Customer Insights are available directly in Dynamics 365 Marketing after connecting Marketing and Customer Insights. Before you delete existing exports, review the documentation on [how to connect Customer Insights and Dynamics 365 Marketing customer journey orchestration](/dynamics365/marketing/real-time-marketing-ci-profile). If you are using Marketing outbound, [learn more about the transition to Marketing real time](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10).

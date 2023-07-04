@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export Customer Insights segments to Adobe Campaign Standard (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export segments that target relevant audiences to Adobe Campaign Standard.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="Process diagram of the steps outlined in this article.":::
