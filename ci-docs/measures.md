@@ -17,6 +17,8 @@ searchScope:
 
 # Create and manage measures
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Measures help you to better understand customer behaviors and business performance. They look at relevant values from [unified profiles](data-unification.md). For example, a business wants to see the *total spend per customer* to understand an individual customer’s purchase history or measure *total sales of the company* to understand the aggregate-level revenue in the whole business. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
 
 ## Create measures

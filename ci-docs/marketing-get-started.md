@@ -9,6 +9,8 @@ ms.author: mhart
 
 # Use unified customer profiles in Dynamics 365 Marketing
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 [Dynamics 365 Marketing](/dynamics365/marketing/overview) elevates customer experiences, allowing you to orchestrate personalized journeys across all touchpoints to strengthen relationships and earn loyalty. The Dynamics 365 Marketing app works seamlessly with Dynamics 365 Sales, Dynamics 365 Customer Insights, Microsoft Teams, and other products and allows you to make faster and better decisions using the power of data and AI.
 
 By connecting Customer Insights data with Marketing, you can:

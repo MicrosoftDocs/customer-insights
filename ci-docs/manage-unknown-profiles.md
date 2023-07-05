@@ -10,6 +10,8 @@ ms.author: andreatapia
 
 # Manage unknown profiles with Customer Insights
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Internet users are often unidentified or anonymous online. Even the most loyal customers may appear to be “unknown” if they aren't signed in across different devices. For many brands, known or authenticated users are the minority despite growing customer expectations around personalization. With the future of third-party cookies in question, managing user preferences based on first-party data instead, is crucial for achieving personalized experiences.
 
 Memorable personalization depends on how well you know your customer and Customer Insights helps you do that by tracking all of your customers.  You don't have to limit or stop the use of data collected at the start of the customer journey. Customer Insights lets you bring your own data to create a customer profile for unknown users. You can then use that profile for further actions, despite missing contact information. Import first-party data from sources such as web, mobile, or CRM systems into Customer Insights to enrich customer profiles continuously. As you unify more interactions, [turn the *unknown* customer into a *known* customer](unknown-to-known.md).

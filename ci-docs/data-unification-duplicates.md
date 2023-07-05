@@ -16,6 +16,8 @@ searchScope:
 
 # Remove duplicates before unifying data
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 This optional step in unification enables you to set up rules for eliminating duplicate records **within** a table. Deduplication identifies multiple records for a customer and selects the best record to keep (based on basic merge preferences) or merges the records into one (based on advanced merge preferences). Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
 
 Deduplication of customer records in each table is important to improve unification results and performance. Defining your own deduplication rules gives you flexibility and control. However, if you do not define any custom deduplication rules for a table, Customer Insights performs default deduplication.

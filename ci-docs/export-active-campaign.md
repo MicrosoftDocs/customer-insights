@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export segments to ActiveCampaign (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export segments of unified customer profiles to ActiveCampaign and use them for marketing activities.
 
 ## Prerequisites

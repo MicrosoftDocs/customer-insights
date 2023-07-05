@@ -10,6 +10,8 @@ ms.author: zacook
 
 # Predict transaction churn
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window.
 
 You must have business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.

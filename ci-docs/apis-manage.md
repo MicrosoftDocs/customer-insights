@@ -10,6 +10,8 @@ ms.reviewer: v-wendysmith
 
 # Manage Customer Insights APIs
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Set up the keys to use the Customer Insights APIs and view the API usage.
 
 ## Manage API keys

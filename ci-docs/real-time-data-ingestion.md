@@ -13,6 +13,8 @@ searchScope:
 
 # Real-time data ingestion (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 The near real-time functionality lets you see, within seconds, the latest interactions that your customers have made with your products or services.
 
 [Scheduled refreshes](schedule-refresh.md) include large numbers of records and several complex operations. First, data is pulled from the data source. Next, the data is unified, and then enriched with additional information. Every run of this process can take minutes to hours.

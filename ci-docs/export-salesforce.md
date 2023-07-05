@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export data to Salesforce Marketing Cloud (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Use your customer data in Salesforce Marketing Cloud by exporting them through a Secure File Transfer Protocol (SFTP) location.
 
 ## Prerequisites

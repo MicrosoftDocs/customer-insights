@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export segments to RollWorks (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export segments of unified customer profiles to RollWorks and use them for advertising.
 
 ## Prerequisites
