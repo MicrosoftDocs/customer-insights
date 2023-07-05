@@ -13,7 +13,8 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-[!INCLUDE [api-deprecate](./includes/api-deprecate.md)]
+> [!NOTE]
+> Customer Insights APIs will be deprecated on August 31st, 2024. Customer Insights recommends you use the [Web API to interact with data in Microsoft Dataverse and query Customer Insights data](/power-apps/developer/data-platform/webapi/perform-operations-web-api).
 
 If you're already using Customer Insights APIs to query data, such as query a Customer Profile or get segment memberships, we recommend you migrate your APIs to Dataverse APIs instead. Support for querying metadata, such as get segment definition and workflow management, is coming soon to Dataverse APIs.
 
