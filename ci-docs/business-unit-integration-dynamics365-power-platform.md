@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Customer Insights business unit integration with Dynamics 365 applications and Power Platform (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 ## Customer Insights with Dynamics 365 Marketing
 
 Customer Insights and Dynamics 365 Marketing are tightly integrated for a streamlined activation journey.

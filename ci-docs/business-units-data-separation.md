@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Business unit support and role-based access control (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Business unit support allows administrators to regulate access to customer profiles, segments, and measures based on business units. [Learn more about business units and role-based access control in Dataverse](/power-platform/admin/wp-security-cds).
 
 ## Prerequisites

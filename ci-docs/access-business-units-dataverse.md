@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Customer Insights data and security roles in Dataverse (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Customer Insights belongs to the Microsoft Dynamics 365 ecosystem and it uses the [security model of Microsoft Dataverse](/power-platform/admin/wp-security-cds).
 
 ## Dataverse security roles
