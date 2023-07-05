@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights APIs
 description: Manage the Customer Insights API keys and view API usage.
-ms.date: 06/26/2023
+ms.date: 07/06/2023
 ms.topic: how-to
 author: wimohabb
 ms.author: wimohabb
@@ -13,8 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-> [!NOTE]
-> Customer Insights APIs will be deprecated on August 31st, 2024. Customer Insights recommends you use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md).
+[!INCLUDE [api-deprecate](./includes/api-deprecate.md)]
 
 Set up the keys to use the Customer Insights APIs and view the API usage.
 
@@ -36,7 +35,7 @@ View and manage the keys to use the [Customer Insights APIs](apis.md) with the d
 
 ## View API usage
 
-View details about the real-time API usage and see which events happened in a given time frame.
+View details about the real-time Customer Insights API usage and see which events happened in a given time frame.
 
 1. Go to **Settings** > **System** and select the **API usage** tab.
 

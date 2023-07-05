@@ -1,7 +1,7 @@
 ---
 title: Work with Customer Insights APIs
 description: Use APIs and understand limitations.
-ms.date: 06/26/2023
+ms.date: 07/06/2023
 ms.reviewer: wimohabb
 ms.topic: how-to
 author: m-hartmann
@@ -16,8 +16,7 @@ searchScope:
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-> [!NOTE]
-> Customer Insights APIs will be deprecated on August 31st, 2024. Customer Insights recommends you use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md).
+[!INCLUDE [api-deprecate](./includes/api-deprecate.md)]
 
 Dynamics 365 Customer Insights provides APIs to build your own applications based on your data in Customer Insights. Details of these APIs are listed on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.
 

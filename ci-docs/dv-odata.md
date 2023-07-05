@@ -1,17 +1,19 @@
 ---
 title: "Dataverse APIs for Customer Insights"
 description: "Overview and examples of Dataverse Open Data Protocol (OData) APIs to query Customer Insights data."
-ms.date: 06/26/2023
+ms.date: 07/06/2023
 ms.topic: conceptual
 author: srivas15
 ms.author: shsri
 ms.reviewer: mhart
 ms.custom: bap-template
 ---
+
 # Dataverse APIs for Customer Insights
 
-> [!NOTE]
-> [Customer Insights APIs](apis.md) will be deprecated on January 31st, 2024. Customer Insights recommends you use [Dataverse APIs](/power-apps/developer/data-platform/webapi/perform-operations-web-api) to query Customer Insights data.
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
+[!INCLUDE [api-deprecate](./includes/api-deprecate.md)]
 
 If you're already using Customer Insights APIs to query data, such as query a Customer Profile or get segment memberships, we recommend you migrate your APIs to Dataverse APIs instead. Support for querying metadata, such as get segment definition and workflow management, is coming soon to Dataverse APIs.
 
@@ -34,7 +36,7 @@ To get started using Dataverse APIs, [create an application registration in Azur
 
 Modify the query samples to make them work on the target environments:
 
-- {serviceRoot}: `{Organization URI}/api/data/v9.2/` where {Organization URI} is the URI of the [Dataverse org](customer-insights-dataverse.md) associated to your Customer Insights environment. For example: https://mydvorg.crm.dynamics.com
+- {serviceRoot}: `{Organization URI}/api/data/v9.2/` where {Organization URI} is the URI of the [Dataverse org](customer-insights-dataverse.md) associated to your Customer Insights environment. For example: `https://{mydvorg}.crm.dynamics.com`
 
 - {CID}: GUID of a unified customer record. For example: `ce759201f786d590bf2134bff576c369`.
 
