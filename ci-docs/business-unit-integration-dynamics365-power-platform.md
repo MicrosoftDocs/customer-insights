@@ -1,7 +1,7 @@
 ---
-title: "Customer Insights business unit integration with Dynamics 365 applications and Power Platform (preview)"
+title: Customer Insights business unit integration with Dynamics 365 applications and Power Platform (preview)
 description: "Learn how to use business units with Dynamics 365 applications and Power Platform."
-ms.date: 05/05/2023
+ms.date: 07/05/2023
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.topic: concept
@@ -14,11 +14,11 @@ ms.custom: bap-template
 
 ## Customer Insights with Dynamics 365 Marketing
 
-Customer Insights and Dynamics 365 Marketing are tightly integrated for a delightful activation journey.
+Customer Insights and Dynamics 365 Marketing are tightly integrated for a streamlined activation journey.
 
-Marketing contributors in Customer Insights should be given the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Dynamics 365 Marketing. In Dynamics 365 Marketing, they have access to customer profiles and segments that belong to their business unit. The *Marketing Professional (BU level)* role also needs to be granted to the business unit teams that the profiles are mapped to in the unification configuration. 
+Marketing contributors in Customer Insights should get the *Marketing Professional (BU level)* role in Dataverse to govern their access to data from Dynamics 365 Marketing. In Dynamics 365 Marketing, they have access to customer profiles and segments that belong to their business unit. The *Marketing Professional (BU level)* role also needs to be granted to the business unit teams that the profiles are mapped to in the unification configuration.
 
- > [!NOTE]
+> [!NOTE]
 > Dynamics 365 Marketing can only process segments that contain members that belong to one business unit and has an owner that belongs to the same business unit.
 
 ## Customer Insights extensibility with Dataverse
@@ -30,5 +30,10 @@ Currently, business unit ownership from the associated customer profile is appli
 ## Customer Insights data consumption APIs
 
 To maintain business unit data separation, all API based data consumption scenarios must call [Dataverse APIs](/power-apps/developer/data-platform/webapi/overview). Customer Insights APIs aren't supported for these scenarios.
+
+## Next steps
+
+- [Business unit support and role-based access control (preview)](business-units-data-separation.md)
+- [Customer Insights data and security roles in Dataverse (preview)](access-business-units-dataverse.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

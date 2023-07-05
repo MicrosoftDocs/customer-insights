@@ -1,7 +1,7 @@
 ---
-title: "Business unit support and role-based access control (preview)"
-description: "Learn how to use business units in Customer Insights to separate data."
-ms.date: 05/05/2023
+title: Business unit support and role-based access control (preview)
+description: Learn how business unit support and role-based access control regulate access to customer profiles, segments, and measures in Dataverse.
+ms.date: 07/05/2023
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.topic: concept
@@ -45,7 +45,7 @@ The *Marketing contributor* role only has access to the *customers*, *tables*, *
 Ownership of the customer profiles is determined based on mappings that are configured on the [Unify](data-unification.md) page:
 
 1. Go to **Data** > **Unify** > **Business units**
-2. Under **Business unit data separation**, select the column that identifies the business unit for each entity that contributes to unification. Note that unification rules cannot be added on the selected columns.
+2. Under **Business unit data separation**, select the column that identifies the business unit for each entity that contributes to unification. Unification rules can't be added on the selected columns.
 3. Under **Associate customer profiles with business units**, specify the mapping between the values in the selected columns and business unit teams. Only teams that have the *Customer Insights Data Read Access* role are available for selection. For example, 'A' maps to the business unit A team and 'B' maps to the business unit B team.
 
 ![Screenshot of business unit mappings.](media/BU_mappings.png)
@@ -62,7 +62,7 @@ Teams within business units (not business units directly) own customer profiles 
 > [!NOTE]
 > Any changes to the business unit data separation configuration triggers a full refresh. If your data sources use incremental updates, a [full refresh](incremental-refresh-data-sources.md#run-a-one-time-full-refresh-for-azure-data-lake-data-sources) needs to be triggered manually after changes have been made.
 
-Data that is tied to a customer profile, for example, activities, customer measures, intelligence output, and enrichments inherit the business unit ownership from the associated profile.
+Data relates to a customer profile, for example activities, inherit the business unit ownership from the associated profile.
 
 Intelligence models are trained on all data, regardless of business unit data separation.
 
@@ -75,12 +75,17 @@ The following diagram shows a typical business unit structure. Marketing contrib
 
 ### Segments and business measures
 
-Segments and measures belong to the business unit of the user that created them. For example, if a user is a member of business unit *A* then any segment and measure that user creates belongs to business unit *A*. RBAC settings in Dataverse control access on the segment and measure definitions tables in Dataverse. By default, segments and measures are available to other users that belong to the same business unit.
+Segments and measures belong to the business unit of the user that created them. For example, if a user is a member of business unit *A* then any segment and measure that user creates belongs to business unit *A*. Access settings in Dataverse control access on the segment and measure definitions tables in Dataverse. By default, segments and measures are available to other users that belong to the same business unit.
 
 > [!NOTE]
 >
 > - Segments and measures are owned by only one business unit and cannot be shared with other business units.
 > - Only *build your own* segments and measures and no projected attributes are supported for the marketing contributor role.
-> - For building segments and measures the Marketing contributor role only has access to Customer profiles, Unified activities, Segments, and Customer measures. 
+> - For building segments and measures the Marketing contributor role only has access to Customer profiles, Unified activities, Segments, and Customer measures.
+
+## Next steps
+
+- [Work with Customer Insights data in Microsoft Dataverse](customer-insights-dataverse.md)
+- [Customer Insights business unit integration with Dynamics 365 applications and Power Platform (preview)](business-unit-integration-dynamics365-power-platform.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
