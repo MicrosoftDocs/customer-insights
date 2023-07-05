@@ -15,6 +15,8 @@ searchScope:
 
 # Data unification overview
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. 
 Data can be unified on a single table or multiple tables. Tables were previously called entities.
 

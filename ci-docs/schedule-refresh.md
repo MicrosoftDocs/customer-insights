@@ -14,6 +14,8 @@ searchScope:
 
 # Schedule system refresh
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Schedule automatic refreshes of all your [ingested data sources](data-sources.md). Automatic refreshes help ensure that updates from your data sources are reflected in your unified customer profiles.
 
 > [!NOTE]

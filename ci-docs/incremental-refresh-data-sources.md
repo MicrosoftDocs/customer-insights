@@ -14,6 +14,8 @@ searchScope:
 
 # Incremental refresh for Power Query and Azure Data Lake data sources
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Incremental refresh for data sources based on Power Query (preview) or Azure Data Lake provides the following advantages:
 
 - **Faster refreshes** - Only data that has changed gets refreshed. For example, you might refresh only the past five days of a historical dataset.

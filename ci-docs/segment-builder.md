@@ -16,6 +16,8 @@ searchScope:
 
 # Create complex segments with segment builder
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Define complex filters around the unified customer or unified contact and its related tables. Each segment, after processing, creates a set of customer or contact records that you can export and take action on.
 
 > [!TIP]

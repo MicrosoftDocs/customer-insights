@@ -11,6 +11,8 @@ ms.author: kishorem
 
 # Enrich customer profiles with demographics from Experian (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Experian is a global leader in consumer and business credit reporting and marketing services. With Experian’s data enrichment services, you can build a deeper understanding of your customers by enriching your customer profiles with demographic data such as household size, income, and more.
 
 ## Supported countries/regions

@@ -16,6 +16,8 @@ searchScope:
 
 # Match conditions for data unification
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 This step in unification defines the match order and rules for cross-table matching. This step requires at least two tables.
 
 > [!NOTE]
