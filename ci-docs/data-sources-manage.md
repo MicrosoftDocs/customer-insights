@@ -11,6 +11,8 @@ ms.custom: bap-template
 
 # Manage data sources
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Go to **Data** > **Data sources** to view the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by any column or use the search box to find the data source you want to manage.
 
 Select a data source to view available actions.

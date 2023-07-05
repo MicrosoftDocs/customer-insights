@@ -11,8 +11,10 @@ ms.custom: bap-template
 
 # OData query examples for Customer Insights APIs
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 > [!NOTE]
-> Customer Insights APIs will be deprecated on January 31st, 2024. You're recommended to use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md).
+> Customer Insights APIs will be deprecated on August 31st, 2024. You're recommended to use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md).
 
 The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP. It uses commonly accepted methodologies like REST for the web. There are various kinds of libraries and tools that can be used to consume OData services.
 

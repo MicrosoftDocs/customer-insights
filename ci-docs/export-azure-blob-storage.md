@@ -10,6 +10,8 @@ ms.author: philk
 
 # Export data to an Azure Blob Storage (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Store your Customer Insights data in a Blob storage or use it to transfer your data to other applications.
 
 ## Prerequisites

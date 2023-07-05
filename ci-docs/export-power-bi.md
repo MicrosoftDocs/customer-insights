@@ -10,6 +10,8 @@ ms.author: philk
 
 # Power BI connector (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Create visualizations for your data with the Microsoft Power BI Desktop. Generate additional insights and build reports with your unified customer data.
 
 ## Prerequisites

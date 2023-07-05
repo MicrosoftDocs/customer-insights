@@ -1,21 +1,18 @@
 ---
 title: "Assign user permissions"
 description: "Learn about permissions and user roles."
-ms.date: 11/15/2022
+ms.date: 07/05/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
-searchScope: 
-  - ci-permissions
-  - ci-system-security
-  - customerInsights
 ---
 
 # Assign user permissions
 
-Access to Customer Insights is restricted to users in your organization that are added to the application by an admin. An admin can add, edit, or remove users. A user can be a single user, group, or application. There are three types of roles a user can have:
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
+Access to Customer Insights is restricted to users in your organization that are added to the application by an admin. An admin can add, edit, or remove users. A user can be a single user, group, or application. There are different types of roles a user can have:
 
 ## Viewer
 
@@ -26,6 +23,17 @@ Access to Customer Insights is restricted to users in your organization that are
 - View the status of system processes using the **System** page.
 - View exports in the **Exports** page.
 - Install and use the **Power BI Customer Insights** dashboard.
+
+## Marketing contributor (preview)
+
+- The Marketing contributor role is only available in [business unit enabled environments](business-units-data-separation.md)
+- Can only access customer profiles that belong to the business unit of the user.
+- Create segments using the **Segments** page (only *Build your own*, no projected attributes).
+- Create measures using the **Measures** page (only *Build your own*). Can only create measures on tables that have a relationship path to customer profiles.
+
+> [!NOTE]
+> Marketing contributors can only create segments and measures from customer profiles, unified activities, segments, and customer measures. This permission has limited functionality in some areas compared to the Contributor role.
+> Marketing contributors can't search for customers in the *customers* view.
 
 ## Contributor
 

@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export segments to Constant Contact (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export segments of unified customer profiles to Constant Contact and use them for marketing activities.
 
 ## Prerequisites

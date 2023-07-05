@@ -14,6 +14,8 @@ searchScope:
 
 # Create a new environment
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 After [purchasing a subscription license for Dynamics 365 Customer Insights](paid-license.md), the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started. In this scenario, start with [Step 1: Provide basic information](#step-1-provide-basic-information).
 
 After the first environment is created, the global administrator of the Microsoft 365 tenant can [add users from their organization as administrators](permissions.md). These administrators can then manage users and environments. If your organization purchases more than one license for Customer Insights, [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, review the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544). Once you have the ability to create additional environments, go to [Start the environment creation process](#start-the-environment-creation-process).

@@ -10,6 +10,8 @@ ms.author: philk
 
 # Export data to Azure Data Lake Storage Gen2 (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Store your Customer Insights data in a Data Lake Storage Gen2 account or use it to transfer your data to other applications.
 
 ## Prerequisites

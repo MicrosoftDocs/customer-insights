@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export segments to Campaign Monitor (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export segments of unified customer profiles to Campaign Monitor and use them for marketing activities.
 
 ## Prerequisites

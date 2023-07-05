@@ -14,6 +14,8 @@ searchScope:
 
 # Get insights on existing segments (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Discover additional information and insights around your existing segments. Find out what differentiates two segments or what they have in common.
 
 ## Segment differentiators

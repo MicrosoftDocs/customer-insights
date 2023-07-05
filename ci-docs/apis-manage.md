@@ -11,8 +11,10 @@ ms.custom: bap-template
 
 # Manage Customer Insights APIs
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 > [!NOTE]
-> Customer Insights APIs will be deprecated on January 31st, 2024. Customer Insights recommends you use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md).
+> Customer Insights APIs will be deprecated on August 31st, 2024. Customer Insights recommends you use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](dv-odata.md).
 
 Set up the keys to use the Customer Insights APIs and view the API usage.
 

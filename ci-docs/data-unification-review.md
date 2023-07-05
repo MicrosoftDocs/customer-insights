@@ -16,6 +16,8 @@ searchScope:
 
 # Review data unification
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Review the summary of changes, create the unified profile, and review the results.
 
 ## Review and create customer profiles

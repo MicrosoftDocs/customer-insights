@@ -15,6 +15,8 @@ searchScope:
 
 # Predict customer lifetime value (CLV)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This prediction helps you:
 
 - Identify high-value customers and process this insight.

@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export segments to Microsoft Advertising (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export Customer Insights segments to Microsoft Advertising to create Customer Match audiences. Use these audiences for your ad campaigns.
 
 ## Prerequisites

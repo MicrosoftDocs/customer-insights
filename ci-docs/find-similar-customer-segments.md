@@ -14,6 +14,8 @@ searchScope:
 
 # Find similar customers with AI (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Find similar customers in your customer base using artificial intelligence. You need at least one segment created to use this feature. Expanding the criteria of an existing segment helps find customers that are similar to that segment.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOFou]

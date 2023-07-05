@@ -11,6 +11,8 @@ ms.custom: bap-template
 
 # Migrate dataflows for Power Query-based data sources
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 To increase scalability, reliability, and performance, some Power Query-based data sources need to get updated. [Dataflows](/power-query/dataflows/understanding-differences-between-analytical-standard-dataflows) are cloud-based data preparation technologies that use Power Query to extract, transform, and load data. A system job scans for data sources that qualify for upgrade and migrates them as new dataflows.
 
 ## Prerequisites

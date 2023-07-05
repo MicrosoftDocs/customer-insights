@@ -10,6 +10,8 @@ ms.author: philk
 
 # Export Customer Insights data to InMobi (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export segment lists or other data from your Customer Insights instance to [InMobi](https://www.inmobi.com/).
 
 ## Prerequisites

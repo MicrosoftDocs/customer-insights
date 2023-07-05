@@ -11,6 +11,8 @@ ms.author: kishorem
 
 # Enrich company profiles with enhanced company data
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Use Microsoft’s models and compiled company data to correct, supplement, and standardize your company profiles. We'll use the [Common Data Model format](/common-data-model/schema/core/applicationcommon/account) for better accuracy and insights.
 
 You can also [enhance company data on data sources](data-sources-enrichment.md) to improve the match accuracy in the data unification process.
