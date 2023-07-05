@@ -1,10 +1,10 @@
 ---
 title: "Create measures with measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 03/20/2023
+ms.date: 04/28/2023
 ms.topic: how-to
-author: v-wendysmith
-ms.author: wameng
+author: JimsonChalissery
+ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 searchScope: 
@@ -145,8 +145,8 @@ Create measures on the level of individual accounts (customer measure) or on the
 1. If there are values in your data that must be replaced with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
 
 1. If you [use accounts with hierarchies](relationships.md#set-up-account-hierarchies), review **Roll up sub-accounts**.
-   - If it's set to **Off**, the measure is calculated for every account. Every account gets its own result.
-   - If it's set to **On**, select **Edit** to choose the account hierarchy according to the ingested hierarchies. The measure will yield only one result because it's aggregated with sub-accounts.
+   - To calculate the measure for every account, select **No**. Every account gets its own result.
+   - To calculate one result, select **Yes**. Select **Edit** to choose the account hierarchy according to the ingested hierarchies and select **Apply**. The measure yields only one result because it's aggregated with sub-accounts.
 
 1. If there are multiple paths between the data table you mapped and the *Customer* table, choose one of the identified [relationship paths](relationships.md). Measure results can vary depending on the selected path.
 

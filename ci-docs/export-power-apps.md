@@ -5,8 +5,8 @@ ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: how-to
-author: Nils-2m
-ms.author: nikeller
+author: pkieffer
+ms.author: philk
 ---
 
 # Power Apps connector (preview)
@@ -25,13 +25,13 @@ After adding Customer Insights as a data connection, choose the following tables
 
 - **Customer**: to use data from the [unified customer profile](customer-profiles.md).
 - **UnifiedActivity**: to display the [activity timeline](activities.md) in the app.
-- **ContactProfile**: to display the contacts of a customer. This table is only available in Customer Insights environments for business accounts.
+- **UnifiedContact**: to display the contacts of a customer. This table is only available in Customer Insights environments for business accounts.
 
 ## Limitations
 
 ### Retrievable tables
 
-You can only retrieve the **Customer**, **UnifiedActivity**, **Segments**, and **ContactProfile** tables through the Power Apps connector. ContactProfile is only available in Customer Insights environments for business accounts. Other tables are shown because the underlying connector supports them through triggers in Power Automate.
+You can only retrieve the **Customer**, **UnifiedActivity**, **Segments**, and **UnifiedContact** tables through the Power Apps connector. UnifiedContact is only available in Customer Insights environments for business accounts. Other tables are shown because the underlying connector supports them through triggers in Power Automate.
 
 You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint multiple times by using the $skip parameter. [Learn more about the $skip parameter](/connectors/customerinsights/#get-items-from-a-table).
 
@@ -41,7 +41,7 @@ Delegation works for the **Customer** table and **UnifiedActivity** table.
 
 - Delegation for **Customer** table: To use delegation for this table, the fields need to be indexed in [search & filter index](search-filter-index.md).  
 - Delegation for **UnifiedActivity**: Delegation for this table only works for the fields **ActivityId** and **CustomerId**.  
-- Delegation for **ContactProfile**: Delegation for this table only works for the fields **ContactId** and **CustomerId**. ContactProfile is only available in Customer Insights environments for business accounts.
+- Delegation for **UnifiedContact**: Delegation for this table only works for the fields **ContactId** and **CustomerId**. UnifiedContact is only available in Customer Insights environments for business accounts.
 
 For more information about delegation, go to [Power Apps delegable functions and operations](/powerapps/maker/canvas-apps/delegation-overview).
 

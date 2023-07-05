@@ -6,7 +6,7 @@ ms.author: mhart
 ms.date: 10/05/2021
 
 ms.topic: conceptual
-ms.ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # Purchase a license of Dynamics 365 Customer Insights

@@ -1,7 +1,7 @@
 ---
 title: "Customer or business contact activities"
 description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
-ms.date: 03/13/2023
+ms.date: 06/19/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: srivas15
@@ -20,7 +20,7 @@ searchScope:
 
 # Customer or business contact activities
 
-Customer activities are actions or events performed by customers or business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Card Add-in](customer-card-add-in.md) solution.
+Customer activities are actions or events performed by customers or business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your customer activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Insights Timeline Integration](activities-in-d365-timeline.md) or the [Customer Card Add-in](customer-card-add-in.md) solution.
 
 ## Prerequisites
 
@@ -112,10 +112,10 @@ Select an activity to rename or delete the activity. To edit activities, select 
 
 ## Define contact activities (preview)
 
-For business accounts (B-to-B), use a *ContactProfile* table to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
+For business accounts (B-to-B), use a *UnifiedContact* table to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
 
    > [!NOTE]
-   > To define contact-level activities, a *ContactProfile* table must be created, either as a [unified contact profile](data-unification-contacts.md) or through [semantic mapping](semantic-mappings.md#define-a-contactprofile-semantic-table-mapping).
+   > To define contact-level activities, a [*UnifiedContact*](data-unification-contacts.md) table must be created.
    >
    > You must have both **AccountID** and **ContactID** attributes for each record within your activity data.
   
@@ -174,7 +174,7 @@ For business accounts (B-to-B), use a *ContactProfile* table to capture activiti
 
 ## Contact-level activity timeline filtering
 
-After configuring a contact-level activity mapping and running it, the activity timeline for your customers will be updated. It includes their IDs or names, depending on your *ContactProfile* configuration, for the activities they acted on. You can filter activities by contacts in the timeline to see specific contacts that you're interested in. Additionally, you can see all activities that aren't assigned to a specific contact by selecting **Activities not mapped to a Contact**.
+After configuring a contact-level activity mapping and running it, the activity timeline for your customers will be updated. It includes their IDs or names, depending on your *UnifiedContact* configuration, for the activities they acted on. You can filter activities by contacts in the timeline to see specific contacts that you're interested in. Additionally, you can see all activities that aren't assigned to a specific contact by selecting **Activities not mapped to a Contact**.
 
    :::image type="content" source="media/Contact_Activities3.png" alt-text="Filtering options available for Contact-level activities.":::
 

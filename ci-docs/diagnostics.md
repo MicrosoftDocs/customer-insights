@@ -188,9 +188,9 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 | Measures          | [Segments and Measures](segments.md)      |
 | Segmentation      | [Segments and Measures](segments.md)      |
 | Enrichment        | [Enrichment](enrichment-hub.md)                                          |
-| Intelligence      | [Predictions](predictions-overview.md)                                          |
-| AiBuilder         | [Predictions](predictions-overview.md)                                          |
-| Insights          | [Predictions](predictions-overview.md)                                          |
+| Intelligence      | [Predictions](predictions.md)                                          |
+| AiBuilder         | [Predictions](predictions.md)                                          |
+| Insights          | [Predictions](predictions.md)                                          |
 | Export            | [Exports](export-manage.md)                                          |
 | ModelManagement   | [Predictions](custom-models.md)                                           |
 | Relationship      | [Data unification](relationships.md)                                           |

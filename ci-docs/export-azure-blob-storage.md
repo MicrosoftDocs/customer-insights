@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to Blob storage."
 ms.date: 03/20/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: Nils-2m
-ms.author: nikeller
+author: pkieffer
+ms.author: philk
 ---
 
 # Export data to an Azure Blob Storage (preview)
@@ -26,7 +26,7 @@ Store your Customer Insights data in a Blob storage or use it to transfer your d
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Admin** > **Connections**.
+1. Go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Azure Blob Storage**.
 
