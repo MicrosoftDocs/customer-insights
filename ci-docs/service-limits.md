@@ -10,6 +10,8 @@ ms.reviewer: mhart
 
 # Service limits in Customer Insights
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
  Customer Insights has built-in limits designed to ensure the reliability and stability of the service. Any requests for changes can be made through the [Ideas forum](https://go.microsoft.com/fwlink/?linkid=2074172).
 
 ## Customer Insights

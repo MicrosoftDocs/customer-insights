@@ -13,6 +13,8 @@ searchScope:
 
 # Explore Customer Insights
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 You can access [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 
 The **Home** page guides you through the configuration process for key features and provides an overview of segments, measures, and enrichment data. The default home page shows how to get insights in minutes by adding data in a single file.

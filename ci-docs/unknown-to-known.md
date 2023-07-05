@@ -13,6 +13,8 @@ searchScope:
 
 # Personalize your customer experiences with data for unknown and known users
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Managing data gets increasingly challenging as customers interact with brands across different digital touchpoints. **Known users** (customer profiles with contact information) are often **signed in** or **authenticated** in one channel but **unknown users** (without contact information) and **unauthenticated** in others. This leads to disjointed customer experiences instead of seamless personalization across channels. Personalization becomes even more challenging for unknown customers who do not have unique identifiers.
 
 Dynamics 365 Customer Insights helps collect meaningful profile attributes and create unified customer profiles for unknown and known users. With Customer Insights, you can import data to generate insights and create seamless experiences for all your customers. Over time, with the collection of historical transactions, behaviors, and demographics, unknown customers can become known customers. Their identities can be merged into one complete 360° view. Customer Insights allows you to unify customer activity across channels, including websites, loyalty programs, CRM systems, and more.

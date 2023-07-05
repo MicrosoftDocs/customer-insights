@@ -10,6 +10,8 @@ ms.author: philk
 
 # Export segments to Criteo (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export segments of unified customer profiles to generate campaigns, provide email marketing and use specific groups of customers with Criteo.
 
 ## Prerequisites

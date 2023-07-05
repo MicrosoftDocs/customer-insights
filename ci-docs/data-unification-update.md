@@ -16,6 +16,8 @@ searchScope:
 
 # Update unification settings
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 To review or change any unification settings once a unified profile has been created, perform the following steps.
 
 1. Go to **Data** > **Unify**.

@@ -14,6 +14,8 @@ searchScope:
 
 # Product recommendation prediction sample guide
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 This guide walks you through an end-to-end example of product recommendation prediction using sample data. We recommend that you try this prediction [in a new environment](manage-environments.md).
 
 ## Scenario
