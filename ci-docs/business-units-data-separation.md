@@ -20,7 +20,7 @@ Business unit support allows administrators to regulate access to customer profi
 
 - Business units and associated teams are defined in Dataverse. [Learn more about setting up business units in Dataverse.](/power-platform/admin/create-edit-business-units)
 - Users are assigned to appropriate business units and teams. [Learn more about managing users and teams in Dataverse.](/power-platform/admin/users-settings)
-- Teams need to have the *Customer Insights Data Read Access* role assigned
+- Teams used in Customer Insights need to have the role *Customer Insights Data Read Access* assigned.
 - Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**.
 - All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row of data.
 - A B-to-C (individual customers) Customer Insights environment.
