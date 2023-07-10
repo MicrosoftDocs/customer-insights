@@ -348,11 +348,13 @@
 
 - name: APIs
   items:
-    - name: Work with APIs
+    - name: Dataverse APIs for Customer Insights
+      href: dv-odata.md
+    - name: Work with Customer Insights APIs
       href: apis.md 
-    - name: API references
+    - name: Customer Insights API references
       href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
-    - name: Manage APIs
+    - name: Manage Customer Insights APIs
       href: apis-manage.md
     - name: OData sample queries
       href: odata-examples.md
