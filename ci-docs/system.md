@@ -1,7 +1,7 @@
 ---
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights."
-ms.date: 03/20/2023
+ms.date: 07/13/2023
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
@@ -101,5 +101,23 @@ Refresh for tasks and processes is run according to the [configured schedule](sc
 
 Select the status of a process to see the progress details of the entire job it was in. The refresh processes above can help to understand what you can do to address a **Skipped** or **Queued** task or process.
 
+## Environment Status Summary
+
+The Environment Status Summary is designed to help you quickly understand the status of your environment based on the business impact of what you’ve configured. The summary reviews jobs in the following order:
+
+- If exports are configured, the system summarizes export job statuses.
+- If exports are not configured, the system summarizes segment job statuses for segments configured for Customer Journey Orchestrator.
+- If you have not configured any segments for Customer Journey Orchestrator, the system summarizes job statuses for jobs that put data into Dataverse.
+- If you haven’t configured any features that move data into Dataverse, the system reviews the unification (merge) job to help indicate if your unification is running normally.
+
+Use the summary to help you determine if your environment is running normally or if there is a problem. If the system detects one of the jobs has been skipped or failed, the summary shows the earliest dependency area for the job, so you know where to investigate first and get things running again quickly. Click on the presented links to go to the respective areas, like data sources, and investigate the failure.
+
+### View the Environment Status Summary
+
+- Go to **Settings** > **System** and select the **Environment Status Summary** tab.
+
+  - To copy the summary to your clipboard, select **Copy**.
+  - To refresh the summary if you’re waiting for a job to finish, select **Refresh**.
+  - To provide Customer Insights with your feedback, select **Feedback** and select “thumbs up” or “thumbs down”.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
