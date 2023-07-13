@@ -4,11 +4,13 @@ description: "Learn how to configure the connection to Azure Data Lake Storage G
 ms.date: 03/20/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: Nils-2m
-ms.author: nikeller
+author: pkieffer
+ms.author: philk
 ---
 
 # Export data to Azure Data Lake Storage Gen2 (preview)
+
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Store your Customer Insights data in a Data Lake Storage Gen2 account or use it to transfer your data to other applications.
 

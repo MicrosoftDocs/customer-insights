@@ -14,6 +14,8 @@ searchScope:
 
 # Custom machine learning models from Azure Machine Learning
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 > [!NOTE]
 > Support for Machine Learning Studio (classic) will end on August 31, 2024. We recommend you transition to [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning) by that date.
 >

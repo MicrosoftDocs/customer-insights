@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export segments to Autopilot (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export segments of unified customer profiles to Autopilot and use them for email marketing in Autopilot.
 
 ## Prerequisites for a connection

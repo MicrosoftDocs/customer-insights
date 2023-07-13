@@ -11,6 +11,8 @@ ms.author: wameng
 
 # Predict product recommendations
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 The product recommendation model creates sets of predictive product recommendations. Recommendations are based on previous purchase behavior and customers with similar purchase patterns. This model is for individual consumers (B-to-C).
 
 You must have business knowledge on the different types of products for your business and how your customers interact with them. We support recommending products that have been previously purchased by your customers or recommendations for new products.

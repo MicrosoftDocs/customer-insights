@@ -17,6 +17,8 @@ searchScope:
 
 # Create and manage segments
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Segments let you group your customers based on demographic, transactional, or behavioral attributes. Use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
 
 Customer or contact profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.

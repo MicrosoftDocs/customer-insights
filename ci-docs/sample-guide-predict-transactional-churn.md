@@ -12,6 +12,8 @@ ms.author: mhart
 
 # Transactional churn prediction sample guide
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 This guide will walk you through an end-to-end example of transactional churn prediction using sample data. We recommend that you try this prediction [in a new environment](manage-environments.md).
 
 ## Scenario

@@ -5,11 +5,13 @@ ms.date: 11/15/2022
 ms.reviewer: mhart
 
 ms.topic: how-to
-author: Nils-2m
-ms.author: nikeller
+author: pkieffer
+ms.author: philk
 ---
 
 # Power Apps connector (preview)
+
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Bring unified customer profiles into your personalized apps with Microsoft Power Apps.
 

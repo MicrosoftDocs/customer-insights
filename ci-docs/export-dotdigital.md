@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export segments to DotDigital (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export segments of unified customer profiles to DotDigital address books and use them for campaigns, email marketing, and to build customer segments with DotDigital.
 
 ## Prerequisites

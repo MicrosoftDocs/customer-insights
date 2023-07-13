@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export segments to Snapchat (preview)
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Export segments of unified customer profiles to Snapchat and use them for advertising.
 
 ## Prerequisites

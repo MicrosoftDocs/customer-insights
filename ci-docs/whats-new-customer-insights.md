@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 06/07/2023
+ms.date: 07/03/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -10,12 +10,29 @@ ms.reviewer: skumm
 
 # What's new in Dynamics 365 Customer Insights
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
 
 We roll out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action, we update the app automatically with no downtime.
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## June 2023
+
+### Display Customer Insights activities in a Dynamics 365 activity timeline
+
+A single view of all interactions enables a complete understanding of customer activity. With that context, sellers and representatives can create deeply personalized experiences for digital and nondigital channels. In Dynamics 365 Sales, Customer Service, and Marketing, users can see all Customer Insights activities in the unified activity timeline.
+
+After a Dynamics 365 administrator enables the feature, sellers and representatives can view Customer Insights activities directly in the activity timeline. Dynamics 365 apps and Customer Insights must share a Dataverse instance.
+
+Customer Insights activity data can appear within the same activity timeline already used today to add or view activities such as notes, posts, emails, and appointments. The unified activity timeline is available across *Accounts* and *Contacts*.
+
+Customer Insights activities within the Dynamics 365 activity timeline can be filtered, searched, and updated dynamically.
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/display-customer-insights-activities-dynamics-365-activity-timeline)
+- [Documentation](activities-in-d365-timeline.md)
 
 ## May 2023
 
@@ -44,7 +61,7 @@ Now you can utilize your existing custom models in Synapse with routinely refres
 
 ### Get an enhanced experience for custom prediction models in Dynamics 365 Customer Insights with a user-friendly wizard
 
-Now even business end users can easily and quickly bring custom prediction models from Azure Machine Learning or Azure Synapse Analytics into Customer Insights with a simple 5-step wizard that walks them through establishing a connection, addition of an AI/ML workflow, configuration of model parameters, setup of required data, and reviewing and running the model.
+Users can easily and quickly bring custom prediction models from Azure Machine Learning or Azure Synapse Analytics into Customer Insights with a simple 5-step wizard that walks them through establishing a connection, addition of an AI/ML workflow, configuration of model parameters, setup of required data, and reviewing and running the model.
 
 - [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/connect-custom-machine-learning-models-azure-synapse-analytics)
 - [Documentation](custom-models.md)
@@ -66,12 +83,12 @@ Because Customer Insights environments are associated with a Dataverse environme
 > [!NOTE]
 > [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
 
-This first run experience (FRE) feature helps you recognize the value of Dynamics 365 Customer Insights faster. Onboarding a new application can be time-consuming and tricky, leaving room for error and leaving you questioning the value it can bring. This feature saves you precious time and takes the guesswork out of setting up your data correctly the first time you use Customer Insights. It works in trial and paid environments and allows you to get valuable insights faster and use those insights to fuel better customer experiences and drive a higher return on investment.
+This first run experience (FRE) feature helps you recognize the value of Dynamics 365 Customer Insights faster. Onboarding a new application can be time-consuming and tricky, leaving room for error and leaving you questioning the value it can bring. This feature saves you precious time and takes the guesswork out of setting up your data correctly the first time you use Customer Insights. It works in trial and paid environments and allows you to get valuable insights faster. Use those insights to fuel better customer experiences and drive a higher return on investment.
 
-After successfully provisioning your initial Customer Insights environment, the FRE guides you through three easy steps:
+After an admin successfully provisions your initial Customer Insights environment, the FRE guides you through three easy steps:
 
-1. Provide data: You are prompted to upload your data file (must be a CSV file containing more than 100 rows and 5 columns).
-2. Get data checked: Using AI-driven models, your data is automatically validated and quality-checked—no manual configuration required.
+1. Provide data: You're prompted to upload your data file (must be a CSV file containing more than 100 rows and 5 columns).
+2. Get data checked: Use AI-driven models, your data is automatically validated and quality-checked—no manual configuration required.
 3. Receive insights: Customer Insights identifies business value by deriving patterns and insights from your data file, such as segments and measures.
 
 This FRE works with a single CSV file only. If you have multiple data files, or different data sources, [Customer Insights provides connections to a broad set of sources](data-sources.md).

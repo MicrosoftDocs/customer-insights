@@ -15,6 +15,8 @@ searchScope:
 
 # Common reasons for ingestion errors or corrupt data
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 There are several common reasons that can cause data ingestion errors to occur.
 
 ## Common reasons for ingestion errors or corrupt data with Azure Data Lake Storage

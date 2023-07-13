@@ -24,6 +24,8 @@ searchScope:
 
 # Relationships between tables and table paths
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Relationships connect tables and define a graph of your data when tables share a common identifier, a foreign key. This foreign key can be referenced from one table to another. Connected tables enable the definition of segments and measures based on multiple data sources.
 
 There are three types of relationships: 

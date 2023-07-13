@@ -14,6 +14,8 @@ searchScope:
 
 # Create measures from templates
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Use predefined templates of commonly used [measures](measures.md) to create them. Templates build on mapped data from the *Unified Activity* table. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
 
 Measure templates are only supported in environments for **individual customers**. To create custom measures or create measures for B-to-B, see [Use measure builder](measure-builder.md).

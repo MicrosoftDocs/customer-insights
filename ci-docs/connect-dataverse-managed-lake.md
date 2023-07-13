@@ -14,6 +14,8 @@ searchScope:
 
 # Connect to data in a Microsoft Dataverse managed data lake
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Microsoft Dataverse users can quickly connect to analytical tables in a Microsoft Dataverse managed lake. 
 Only one data source of an environment can simultaneously use the same Dataverse managed lake.
 
