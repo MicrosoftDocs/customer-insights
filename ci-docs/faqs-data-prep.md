@@ -42,4 +42,4 @@ These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Cu
 
 - [Data prep report](data-prep-overview.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

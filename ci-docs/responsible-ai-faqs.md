@@ -12,8 +12,8 @@ ms.reviewer: radsay01
 
 # Responsible AI FAQs for Dynamics 365 Customer Insights
 
-[!INCLUDE[rai-faq-overview](../includes/faqs-overview.md)]
+[!INCLUDE[rai-faq-overview](includes/faqs-overview.md)]
 
-[!INCLUDE[rai-faq-features](../includes/faqs-feature.md)]
+[!INCLUDE[rai-faq-features](includes/faqs-feature.md)]
 
 - [Data prep report](faqs-data-prep.md)
