@@ -101,7 +101,9 @@ Refresh for tasks and processes is run according to the [configured schedule](sc
 
 Select the status of a process to see the progress details of the entire job it was in. The refresh processes above can help to understand what you can do to address a **Skipped** or **Queued** task or process.
 
-## Environment Status Summary
+## Environment status summary (preview)
+
+[!INCLUDE[public-preview-banner](includes/public-preview-banner.md)]
 
 The Environment Status Summary is designed to help you quickly understand the status of your environment based on the business impact of what you’ve configured. The summary reviews jobs in the following order:
 
@@ -110,14 +112,20 @@ The Environment Status Summary is designed to help you quickly understand the st
 - If you have not configured any segments for Customer Journey Orchestrator, the system summarizes job statuses for jobs that put data into Dataverse.
 - If you haven’t configured any features that move data into Dataverse, the system reviews the unification (merge) job to help indicate if your unification is running normally.
 
-Use the summary to help you determine if your environment is running normally or if there is a problem. If the system detects one of the jobs has been skipped or failed, the summary shows the earliest dependency area for the job, so you know where to investigate first and get things running again quickly. Click on the presented links to go to the respective areas, like data sources, and investigate the failure.
+Use the summary to help you determine if your environment is running normally or if there is a problem. If the system detects one of the jobs has been skipped or failed, the summary shows the earliest dependency area for the job, so you know where to investigate first and get things running again quickly. Click on the links to go to the respective areas, like data sources, and investigate the failure.
+
+[!INCLUDE[public-preview-note](includes/public-preview-note.md)]
+
+This feature adheres to responsible AI guidelines.
 
 ### View the Environment Status Summary
 
-- Go to **Settings** > **System** and select the **Environment Status Summary** tab.
+- Go to **Settings** > **System**.
+
+  :::image type="content" source="media/environment-status-summary.svg" alt-text="Screenshot of Environment status summary dialog box.":::
 
   - To copy the summary to your clipboard, select **Copy**.
   - To refresh the summary if you’re waiting for a job to finish, select **Refresh**.
-  - To provide Customer Insights with your feedback, select **Feedback** and select “thumbs up” or “thumbs down”.
+  - To provide Customer Insights with your feedback, select “thumbs up” or “thumbs down”.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
