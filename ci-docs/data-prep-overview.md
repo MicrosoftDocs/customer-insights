@@ -55,5 +55,7 @@ In addition to the data preparation report, Customer Insights provides contextua
 
 - [Data prep report FAQ](Data-prep-faq.md)
 - [Predictions overview](predictions-overview.md)
+- [Responsible AI FAQs for Data prep report](faqs-data-prep.md)
+- [Responsible AI FAQs for Customer Insights](responsible-ai-overview.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
