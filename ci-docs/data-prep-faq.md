@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Data prep report FAQ
 
-[!INCLUDE[public-preview-banner](../../includes/public-preview-banner.md)]
+[!INCLUDE[public-preview-banner](includes/public-preview-banner.md)]
 
 ## Who can access the data preparation report?
 

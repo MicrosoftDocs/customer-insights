@@ -11,11 +11,11 @@ ms.custom: bap-template
 
 # Data preparation overview (preview)
 
-[!INCLUDE[public-preview-banner](../../includes/public-preview-banner.md)]
+[!INCLUDE[public-preview-banner](includes/public-preview-banner.md)]
 
 The data preparation model in Customer Insights helps you understand the overall data quality, the readiness of your data to produce insights, and helps you improve your data to unlock more and better predictions for whatever sales or marketing strategy you have in mind. It includes an automated data preparation report as well as contextual information on your data to support you during scenarios and tasks across the product.
 
-[!INCLUDE[public-preview-note](../../includes/public-preview-note.md)]
+[!INCLUDE[public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 

@@ -11,11 +11,11 @@ ms.custom: bap-template
 
 # Turn off the data preparation report (preview)
 
-[!INCLUDE[public-preview-banner](../../includes/public-preview-banner.md)]
+[!INCLUDE[public-preview-banner](includes/public-preview-banner.md)]
 
 By default, the data preparation report capability is turned on.
 
-1. Go to **Settings** > **System** and select the **Data prep report** tab. 
+1. Go to **Settings** > **System** and select the **Data prep report** tab.
 
 1. Toggle the switch off.
 
