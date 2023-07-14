@@ -1,7 +1,7 @@
 ---
 title: Data preparation overview
 description: "Discover the overall quality of ingested and unified data and if it can generate predictions."
-ms.date: 06/30/2023
+ms.date: 07/14/2023
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: radsay01
@@ -11,7 +11,11 @@ ms.custom: bap-template
 
 # Data preparation overview (preview)
 
+[!INCLUDE[public-preview-banner](../../includes/public-preview-banner.md)]
+
 The data preparation model in Customer Insights helps you understand the overall data quality, the readiness of your data to produce insights, and helps you improve your data to unlock more and better predictions for whatever sales or marketing strategy you have in mind. It includes an automated data preparation report as well as contextual information on your data to support you during scenarios and tasks across the product.
+
+[!INCLUDE[public-preview-note](../../includes/public-preview-note.md)]
 
 ## Prerequisites
 
@@ -41,13 +45,11 @@ There are three primary sections within the data preparation report.
 - **Data quality issues and recommendations**: These issues and recommendations provide comprehensive guidance on the issues surfaced in your data, including severity, which insights are impacted, and what recommendations for remediation to act upon. Issues are derived from the data quality rules within the same seven industry-standard data quality pillars as the data quality grade. Any violation of these rules results in an issue. The less issues present, especially critical severity issues, the more likely you are to have a high data quality grade and have all insights labeled as ready to use.
 
   > [!TIP]
-  > The default view provides the most critical issues present in your data. To see all issues, organized by severity, turn off **Showing critical issues**. To alter the view to show issues organized by other options, select **Group by**.
+  > The default view provides the most critical issues present in your data. To see all issues, organized by severity, turn off **Show critical issues**. To alter the view to show issues organized by other options, select **Group by** and make a selection.
 
 ## Contextual information on your data
 
-In addition to the data preparation report, Customer Insights provides contextual information related to the prediction models. Use this information to understand which prediction models are best suited to your data, before you go through the time and effort of configuration and running the model. On the **Predictions** page under **Create** tab, models labeled as **Use this model** are most suited to your data while those labeled as **Not ready to use** are not. For any **Not ready to use** models, click the model card to see more contextual information, review the full data preparation report, and make the necessary fixes to your data per the guidance of the Issues and recommendations section. <!---Is this still true? --->
-
-Details on which prediction models are ready or not to use are available in each out-of-box model card. Information on the data quality impacting each prediction model is available in the right-side pane when a model is selected. The header shows a data quality grade specific to prediction models with a link to the full data preparation report.
+In addition to the data preparation report, Customer Insights provides contextual information related to the prediction models. Use this information to understand which prediction models are best suited to your data, before you go through the time and effort of configuration and running the model. On the **Predictions** page under **Create** tab, models labeled as **Use this model** are most suited to your data while those labeled as **Not ready to use** are not. For any **Not ready to use** models, review the full data preparation report and make the necessary fixes to your data per the guidance of the Issues and recommendations section.
 
 ## Next steps
 
