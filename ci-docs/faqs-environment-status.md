@@ -42,4 +42,4 @@ These frequently asked questions (FAQ) describe the AI impact of [Product]'s [Fe
 
 - [Environment status summary](system.md#environment-status-summary-preview)
 
-[!INCLUDE [footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]
