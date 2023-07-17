@@ -1,5 +1,5 @@
 ---
-title: Recreate the private links for the upgrade of the new compute infrastructure
+title: Recreate your private links for the upgrade to the new compute infrastructure
 description: Learn how to update the private links for the upgrade of the compute infrastructure
 ms.date: 7/25/2023
 ms.reviewer: mhart
@@ -9,7 +9,7 @@ ms.author: mamihail
 ms.custom: bap-template
 ---
 
-# Recreate the private links for the upgrade of the new compute infrastructure
+# Recreate your private links for the upgrade to the new compute infrastructure
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -21,11 +21,11 @@ A notification in Customer Insights indicates that there are private links for w
 
 ## Required action
 
- Recreate the private links for the customer storage protected by private networks and firewalls used in Customer Insights. 
+Recreate the private links for all the customer storage protected by private networks and firewalls used in Customer Insights. 
 
 ## Due date
 
- It is important to note that the due date for creating the required private links is September 1, 2023. Not creating the private links by that date will result in errors when performing operations such as data ingestion, segment refreshing, measures, activities, and other tasks.
+It is important to note that the due date for creating the required private links is September 1, 2023. Not creating the private links by that date will result in errors when performing operations such as data ingestion, segment refreshing, measures, activities, and other tasks.
 
 ## Prerequisites
 
@@ -39,9 +39,9 @@ A notification in Customer Insights indicates that there are private links for w
 
 2. Go to **Settings** > **Permissions**  and select the  **Private links** tab.  
 
-3. Recreate the private links for all the used storages that are protected by private links 
+4. For all the used storages
 
-4. Click Add Private Link button.
+ - Click Add Private Link button.
 
  - The Add Private Link pane lists storage accounts in your tenant that you can see.
 
@@ -55,17 +55,17 @@ A notification in Customer Insights indicates that there are private links for w
 
 5. Approve the Private Links in the Azure portal
 
-After configuring the Private Links between Customer Insights and your virtual network protected storage, four Private Links show on the Private Links tab in Customer Insights with a status of Pending.
+After configuring the Private Links between Customer Insights and your virtual network protected storage, four Private Links show on the Private Links tab in Customer Insights with a status of Pending. Observation: In case you previously configured the private links through the same Ui, you will see only 2 new private links in Pending. 
 
-In the Azure portal, go to your Data Lake Storage account, and select Networking > Private endpoints connections to see the four new Private Links.
+- In the Azure portal, go to your Data Lake Storage account, and select Networking > Private endpoints connections to see the four new Private Links.
 
 :::image type="content" source="media/compute-migration-create-private-links-pending.png" alt-text="Screenshot of private links in pending approval. ":::
 
-Select all and click Approve.
+- Select all and click Approve. The private links now show the status Approved.
 
 :::image type="content" source="media/compute-migration-create-private-links-approve.png" alt-text="Screenshot of private links in pending approved ":::
 
-6. In Customer Insights, go to Settings > Permissions and select the Private Links tab. The Private Links in Customer Insights now show the status Approved.
+6. In Customer Insights, go to Settings > Permissions and select the Private Links tab. All four Private Links in Customer Insights now show the status Approved.
 
 :::image type="content" source="media/compute-migration-create-private-links-CI-approved.png" alt-text="Screenshot of private links in approved in Customer Insights ":::
 
@@ -76,5 +76,5 @@ It's important to approve all four private links for each storage.
 
 All the jobs should continue to run normally.
 
-At the due date we will perform the migration of the instances on the new compute infrastucture. 
+At the due date we will perform the migration of the instances on the new compute infrastructure. 
 
