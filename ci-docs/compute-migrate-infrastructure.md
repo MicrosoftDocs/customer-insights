@@ -1,5 +1,5 @@
 ---
-title: Recreate the private links for the upgrade of the new compute infrastructure
+title: Recreate your private links for the upgrade to the new compute infrastructure
 description: Learn how to update the private links for the upgrade of the compute infrastructure
 ms.date: 7/25/2023
 ms.reviewer: mhart
@@ -9,7 +9,7 @@ ms.author: mamihail
 ms.custom: bap-template
 ---
 
-# Recreate the private links for the upgrade of the new compute infrastructure
+# Recreate your private links for the upgrade to the new compute infrastructure
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
