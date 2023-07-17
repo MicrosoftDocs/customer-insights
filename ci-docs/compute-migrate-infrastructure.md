@@ -1,7 +1,7 @@
 ---
 title: Recreate the private links for the upgrade of the new compute infrastructure
 description: Learn how to update the private links for the upgrade of the compute infrastructure
-ms.date: 25/07/2023
+ms.date: 25/7/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: mamihail
@@ -14,6 +14,10 @@ ms.custom: bap-template
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Dynamics Customer Insights is upgrading the compute infrastructure to newer technology, aiming to increase the reliability and performance of the big data computation we do for our customers. The new solution needs to obtain access to customer storage protected by private networks and firewalls, through Private Links. The private links created historically in the Customer Insights for security reasons are not transferable to the new infrastructure.
+
+A notification in Customer Insights indicates that there are private links for which you need to take action.
+
+:::image type="content" source="media/compute-migration-notification-CI.png" alt-text="Screenshot of a notification to update private links in Customer Insights.":::
 
 ## Required action
 
@@ -30,10 +34,6 @@ Dynamics Customer Insights is upgrading the compute infrastructure to newer tech
 - Permissions for custom Azure role: Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action
 
 ## How to update your private links 
-
-A notification in Customer Insights indicates that there are private links for which you need to take action.
-
-:::image type="content" source="media/compute-migration-notification-CI.png" alt-text="Screenshot of a notification to update private links in Customer Insights.":::
 
 1. Sign in to Customer Insights and open the environment to upgrade.
 
