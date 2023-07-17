@@ -17,7 +17,11 @@ Dynamics Customer Insights is upgrading the compute infrastructure to newer tech
 
 ## Required action
 
- Recreate the private links for the customer storages used in Customer Insights 
+ Recreate the private links for the customer storage protected by private networks and firewalls used in Customer Insights. 
+
+## Due date
+
+ It is important to note that the due date for creating the required private links is September 1, 2023. Not creating the private links by that date will result in errors when performing operations such as data ingestion, segment refreshing, measures, activities, and other tasks.
 
 ## Prerequisites
 
