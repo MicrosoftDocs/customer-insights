@@ -13,68 +13,36 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Dynamics Customer Insights is upgrading the compute infrastructure to newer technology, aiming to increase the reliability and performance of the big data computation we do for our customers. The new solution needs to obtain access to customer storage protected by private networks and firewalls, through Private Links. The private links created historically in the Customer Insights for security reasons are not transferable to the new infrastructure.
+Dynamics 365 Customer Insights is upgrading the compute infrastructure to newer technology, designed to increase the reliability and performance of the big data computation Customer Insights performs. The new solution requires access to customer storage protected by private networks and firewalls through Azure Private Links. The private links created historically in the Customer Insights for security reasons are not transferable to the new infrastructure.
 
-A notification in Customer Insights indicates that there are private links for which you need to take action.
+A notification in Customer Insights indicates if you have private links you need to recreate.
 
 :::image type="content" source="media/compute-migration-notification-CI.png" alt-text="Screenshot of a notification to update private links in Customer Insights.":::
 
-## Required action
-
- Recreate the private links for the customer storage protected by private networks and firewalls used in Customer Insights. 
-
-## Due date
-
- It is important to note that the due date for creating the required private links is September 1, 2023. Not creating the private links by that date will result in errors when performing operations such as data ingestion, segment refreshing, measures, activities, and other tasks.
+> [!IMPORTANT]
+> The due date for creating the required private links is September 1, 2023. If the private links are not recreated by this date, errors occur when performing operations such as data ingestion, segment refreshing, measures, activities, and other tasks.
 
 ## Prerequisites
 
-- Customer Insights: Administrator
-- Azure built-in role: Storage Account Contributor
-- Permissions for custom Azure role: Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action
+- Customer Insights role: Administrator
+- Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
+- Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
 
-## How to update your private links 
+## Update your private links
 
 1. Sign in to Customer Insights and open the environment to upgrade.
 
-2. Go to **Settings** > **Permissions**  and select the  **Private links** tab.  
+1. [Recreate the private links](private-link.md#set-up-a-private-link-directly-from-the-private-links-page-in-customer-insights) for all the used storage that are protected by private links.
 
-3. Recreate the private links for all the used storages that are protected by private links 
+   :::image type="content" source="media/compute-migration-create-private-links-CI.png" alt-text="Screenshot of creating private links in Customer Insights. ":::
 
-4. Click Add Private Link button.
+## Approve the Private Links in the Azure portal
 
- - The Add Private Link pane lists storage accounts in your tenant that you can see.
+After configuring the Private Links between Customer Insights and your virtual network protected storage, four Private Links show on the **Private Links** tab in Customer Insights with a status of **Pending**.
 
- - Select the subscription, resource group, and storage account.
+[Approve the Private Links](private-link.md#approve-your-private-link-in-the-azure-portal).
 
- - Review the data privacy and compliance and select I agree.
+It's important to approve all four private links for each storage.
 
- - Select Save.
-
-:::image type="content" source="media/compute-migration-create-private-links-CI.png" alt-text="Screenshot of a creating private links in Customer Insights. ":::
-
-5. Approve the Private Links in the Azure portal
-
-After configuring the Private Links between Customer Insights and your virtual network protected storage, four Private Links show on the Private Links tab in Customer Insights with a status of Pending.
-
-In the Azure portal, go to your Data Lake Storage account, and select Networking > Private endpoints connections to see the four new Private Links.
-
-:::image type="content" source="media/compute-migration-create-private-links-pending.png" alt-text="Screenshot of private links in pending approval. ":::
-
-Select all and click Approve.
-
-:::image type="content" source="media/compute-migration-create-private-links-approve.png" alt-text="Screenshot of private links in pending approved ":::
-
-6. In Customer Insights, go to Settings > Permissions and select the Private Links tab. The Private Links in Customer Insights now show the status Approved.
-
-:::image type="content" source="media/compute-migration-create-private-links-CI-approved.png" alt-text="Screenshot of private links in approved in Customer Insights ":::
-
-It's important to approve all four private links for each storage. 
-
-
-## What to expect after the recreating the private links
-
-All the jobs should continue to run normally.
-
-At the due date we will perform the migration of the instances on the new compute infrastucture. 
+After recreating the private links, all jobs should continue to run normally. At the due date Customer Insights will perform the migration of the instances on the new compute infrastructure.
 
