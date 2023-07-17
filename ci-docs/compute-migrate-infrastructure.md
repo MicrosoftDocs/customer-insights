@@ -1,7 +1,7 @@
 ---
 title: Recreate the private links for the upgrade of the new compute infrastructure
 description: Learn how to update the private links for the upgrade of the compute infrastructure
-ms.date: 13/07/2023
+ms.date: 25/07/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: mamihail
@@ -33,7 +33,7 @@ Dynamics Customer Insights is upgrading the compute infrastructure to newer tech
 
 A notification in Customer Insights indicates that there are private links for which you need to take action.
 
-:::image type="content" source="media/compute-migration-create-private-links.png" alt-text="Screenshot of a notification to update private links. ":::
+:::image type="content" source="media/compute-migration-notification-CI.png" alt-text="Screenshot of a notification to update private links in Customer Insights.":::
 
 1. Sign in to Customer Insights and open the environment to upgrade.
 
@@ -51,7 +51,7 @@ A notification in Customer Insights indicates that there are private links for w
 
  - Select Save.
 
-:::image type="content" source="media/compute-migration-create-private-links-CI.png" alt-text="Screenshot of a notification to update private links. ":::
+:::image type="content" source="media/compute-migration-create-private-links-CI.png" alt-text="Screenshot of a creating private links in Customer Insights. ":::
 
 1. Approve the Private Links in the Azure portal
 
@@ -59,15 +59,15 @@ After configuring the Private Links between Customer Insights and your virtual n
 
 - In the Azure portal, go to your Data Lake Storage account, and select Networking > Private endpoints connections to see the four new Private Links.
 
-:::image type="content" source="media/compute-migration-create-private-links-pending.png" alt-text="Screenshot of a notification to update private links. ":::
+:::image type="content" source="media/compute-migration-create-private-links-pending.png" alt-text="Screenshot of private links in pending approval. ":::
 
 - Select all and click Approve.
 
-:::image type="content" source="media/compute-migration-create-private-links-approve.png" alt-text="Screenshot of a notification to update private links. ":::
+:::image type="content" source="media/compute-migration-create-private-links-approve.png" alt-text="Screenshot of private links in pending approved ":::
 
 - In Customer Insights, go to Settings > Permissions and select the Private Links tab. The Private Links in Customer Insights now show the status Approved.
 
-:::image type="content" source="media/compute-migration-create-private-links-CI-approved.png" alt-text="Screenshot of a notification to update private links. ":::
+:::image type="content" source="media/compute-migration-create-private-links-CI-approved.png" alt-text="Screenshot of private links in approved in Customer Insights ":::
 
 It's important to approve all four private links for each storage. 
 
