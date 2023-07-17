@@ -103,7 +103,7 @@ Select the status of a process to see the progress details of the entire job it 
 
 ## Environment status summary (preview)
 
-[!INCLUDE[public-preview-banner](includes/public-preview-banner.md)]
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 The Environment Status Summary is designed to help you quickly understand the status of your environment based on the business impact of what you’ve configured. The summary reviews jobs in the following order:
 
@@ -114,9 +114,9 @@ The Environment Status Summary is designed to help you quickly understand the st
 
 Use the summary to help you determine if your environment is running normally or if there is a problem. If the system detects one of the jobs has been skipped or failed, the summary shows the earliest dependency area for the job, so you know where to investigate first and get things running again quickly. Click on the links to go to the respective areas, like data sources, and investigate the failure.
 
-[!INCLUDE[public-preview-note](includes/public-preview-note.md)]
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
-This feature adheres to responsible AI guidelines.
+This feature adheres to [responsible AI](faqs-environment-status.md) guidelines.
 
 ### View the Environment Status Summary
 

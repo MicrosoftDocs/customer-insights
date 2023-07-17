@@ -365,6 +365,11 @@
 - name: DSR rights and requests
   href: dsr-rights-requests.md
 
+- name: Responsible AI
+  items:
+    - name: FAQ for Environment status summary
+      href: faqs-environment-status.md
+
 - name: More resources
   items: 
   - name: Learning catalog

@@ -12,8 +12,8 @@ ms.reviewer: jacohen
 
 # Responsible AI FAQs for Dynamics 365 Field Service
 
-[!INCLUDE[rai-faq-overview](faqs-overview.md)]
+[!INCLUDE [rai-faq-overview](./includes/faqs-overview.md)]
 
-[!INCLUDE[rai-faq-features](faqs-feature.md)]
+[!INCLUDE [rai-faq-features](./includes/faqs-feature.md)]
 
-- 
+- [Environment status summary](system.md#environment-status-summary-preview)
