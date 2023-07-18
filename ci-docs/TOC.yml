@@ -367,6 +367,8 @@
 
 - name: Responsible AI
   items:
+    - name: Overview
+      href: responsible-ai-overview.md
     - name: FAQ for Environment status summary
       href: faqs-environment-status.md
 
