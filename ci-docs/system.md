@@ -105,20 +105,22 @@ Select the status of a process to see the progress details of the entire job it 
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-The Environment Status Summary is designed to help you quickly understand the status of your environment based on the business impact of what you’ve configured. The summary reviews jobs in the following order:
+The Environment status summary is designed to help you quickly understand the status of your environment based on the business impact of what you’ve configured. The summary reviews jobs in the following order:
 
 - If exports are configured, the system summarizes export job statuses.
 - If exports are not configured, the system summarizes segment job statuses for segments configured for Customer Journey Orchestrator.
 - If you have not configured any segments for Customer Journey Orchestrator, the system summarizes job statuses for jobs that put data into Dataverse.
 - If you haven’t configured any features that move data into Dataverse, the system reviews the unification (merge) job to help indicate if your unification is running normally.
 
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+This feature is available only in the United States.
 
 This feature adheres to [responsible AI](faqs-environment-status.md) guidelines.
 
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
 ### View the Environment Status Summary
 
-Use the summary to help you determine if your environment is running normally or if there is a problem. If the system detects one of the jobs has been skipped or failed, the summary shows the earliest dependency area for the job, so you know where to investigate first and get things running again quickly. Select the link to go to the respective area and investigate the failure.
+Use the summary to help you determine if your environment is running normally or if there is a problem. If the system detects one of the jobs has been skipped or failed, the summary shows the earliest dependency area for the job, so you know where to investigate first and get things running again quickly. Select the link to go to the respective area and investigate the issue.
 
 - Go to **Settings** > **System**.
 

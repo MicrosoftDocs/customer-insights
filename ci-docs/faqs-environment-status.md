@@ -10,33 +10,43 @@ ms.author: mhart
 ms.reviewer: wameng
 ---
 
-# FAQ for [Feature]
+# FAQ for Environment status summary (preview)
 
-These frequently asked questions (FAQ) describe the AI impact of [Product]'s [Feature] feature.
+These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights Environment status summary feature.
 
-## What is [Feature]?
+## What is Environment status summary?
 
-[Describe the system in plain English. What type of system or feature is this? What does it do? At a high level, what does the system or feature take as input? What kind of outputs does the system or feature produce?]
+This AI-powered feature is designed to summarize business impacting jobs in the system and surface the root failure, if any, so you can quickly investigate the issue. This feature helps eliminate the need to review hundreds of jobs to identify if your environment is processing normally.
 
-## What are [the feature]’s capabilities?
+## What are the feature’s capabilities?
 
-[Building on the previous question, provide semi-technical, high-level information on how the system or feature offers functionality for various uses.]
+The Environment status summary detects if a key job has been skipped or failed, based on job priority order. A link to the job is provided so you can quickly access the issue.
 
-## What is [the feature]’s intended use?
+## What is the feature’s intended use?
 
-[Explain intended use(s), as identified in your Impact Assessment.]
+The intention is to aid administrators in determining the status of their Customer Insights environment in less time and with less manual effort.
 
-## How was [Feature] evaluated? What metrics are used to measure performance?
+## How was Environment status summary evaluated? What metrics are used to measure performance?
 
 [Provide evidence of system or feature accuracy and performance, and, when applicable, a description of the extent to which these results are generalizable across use cases that were not part of the evaluation.]
 
-## What are the limitations of [Feature]? How can users minimize the impact of the [Feature] limitations when using the system?
+## What are the limitations of Environment status summary? How can users minimize the impact of the Environment status summary limitations when using the system?
 
-[See Impact Assessment. Describe the known limitations of the system or feature including uses for which the system was not designed or evaluated. Discuss steps that the user can take to minimize errors and the impact of trade-offs for the user.]
+The feature reviews jobs in the following order, if they are configured:
+
+- Exports
+- Segments used in Customer Journey Orchestrator
+- Dataverse hydration jobs
+- Merge in data unification
+
+The feature reports only on these jobs and one at a time based on the priority order. For example, if exports are configured, then the feature only identifies if there is an issue with an export.
+
+The feature is available only in the United States.
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-[Describe the operational factors and ranges within which the system is expected to perform reliably and safely. List the choices that end users can make (e.g., customization, settings, etc.), with a description of how those choices may impact system behavior in the real world.]
+- On the Environment status summary, users are reminded that AI-generated content can be inaccurate.
+- Users should be mindful when adding data sources, creating segments, measures, and other insights that the names are used in processing the jobs. Users should use responsible, appropriate names.
 
 ## See also
 
