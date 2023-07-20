@@ -11,11 +11,11 @@ ms.custom: bap-template
 
 # Data prep report overview (preview)
 
-[!INCLUDE[public-preview-banner](includes/public-preview-banner.md)]
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 The data prep report in Customer Insights helps you understand the overall data quality, the readiness of your data to produce insights, and helps you improve your data to unlock more and better insights for whatever sales or marketing strategy you have in mind.
 
-[!INCLUDE[public-preview-note](includes/public-preview-note.md)]
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 
