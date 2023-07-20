@@ -1,7 +1,7 @@
 ---
-title: FAQ for Data prep report
+title: FAQ for Data prep report (preview)
 description: This FAQ provides information about the AI technology used in Dynamics 365 Customer Insights Data prep report (preview), along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 07/14/2023
+ms.date: 07/20/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -10,33 +10,43 @@ ms.author: rsayyaparaju
 ms.reviewer: m-hartmann
 ---
 
-# FAQ for Data prep report (preview)
+# FAQ for the data prep report (preview)
 
-These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights Data prep report (preview) feature.
+These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights data prep report (preview) feature.
 
-## What is Data prep report?
+## What is the data prep report?
 
-[Describe the system in plain English. What type of system or feature is this? What does it do? At a high level, what does the system or feature take as input? What kind of outputs does the system or feature produce?]
+The data prep report gives you information you need to understand the overall quality of your data, which insights are suited to your data, and what you need to do to improve your data. It includes an AI-generated summary to help you get a concise overview of your data quality and a comprehensive report to help you act to improve your data quality to get more and better insights about your customers.
 
 ## What are the feature’s capabilities?
 
-[Building on the previous question, provide semi-technical, high-level information on how the system or feature offers functionality for various uses.]
+The data prep report provides the following components or capabilities:
+
+- An AI-generated summary of your data quality.
+
+- An overall data quality grade.
+
+- A determination of insight readiness for each type of insight offered before you attempt to generate it.
+
+- Detailed information on data quality issues, categorized by data quality pillar, severity of impact, and impacted insights.
+
+- Actionable suggestions on how you can improve your data quality to leverage all the insights  offered in Customer Insights.
 
 ## What is the feature’s intended use?
 
-[Explain intended use(s), as identified in your Impact Assessment.]
+The data prep report is strictly intended to be used to understand and act on your data quality.
 
-## How was Data prep report evaluated? What metrics are used to measure performance?
+## How was the data prep report evaluated? What metrics are used to measure performance?
 
-[Provide evidence of system or feature accuracy and performance, and, when applicable, a description of the extent to which these results are generalizable across use cases that were not part of the evaluation.]
+The performance of the data prep report is determined by the successful generation of the AI-generated summary and the comprehensive report and by the improved data quality and more and better insights generated. The feedback provided through the thumbs up or thumbs down is tracked to understand customers satisfaction with the feature.
 
-## What are the limitations of [Feature]? How can users minimize the impact of the [Feature] limitations when using the system?
+## What are the limitations of the data prep report? How can users minimize the impact of the the data prep report limitations when using the system?
 
-[See Impact Assessment. Describe the known limitations of the system or feature including uses for which the system was not designed or evaluated. Discuss steps that the user can take to minimize errors and the impact of trade-offs for the user.]
+Customer Insights recommends that customers adhere to the intended use for the data prep report for the Dynamics 365 Customer Insights product only. Other products and services have different requirements for data quality that the report won't adequately address. We recommend that customers review the comprehensive data report and not rely solely on the data quality summary before taking action to improve their data quality.
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-[Describe the operational factors and ranges within which the system is expected to perform reliably and safely. List the choices that end users can make (e.g., customization, settings, etc.), with a description of how those choices may impact system behavior in the real world.]
+The data prep report has monitoring in place to ensure reliability and performance. It doesn't allow for any user input and relies solely on aggregated data quality content created by evaluating customers’ data. There is no ability to use or generate content that could lead to harm. Opt-in consent to the data prep report is provided in the **Settings** page and managed by the Admin role for Customer Insights. Consent can be revoked at any time to turn off the feature.
 
 ## See also
 

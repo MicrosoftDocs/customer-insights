@@ -61,10 +61,12 @@
       href: real-time-data-ingestion.md
     - name: Data quality and preparation 
       items:
-        - name: Data preparation overview
+        - name: Data prep report overview
           href: data-prep-overview.md
-        - name: Data preparation FAQ
+        - name: Data prep report FAQ
           href: data-prep-faq.md
+        - name: Turn off the data prep report
+          href: data-prep-admn.md
     - name: Common reasons for ingestion errors
       href: common-data-ingestion-errors.md
 
@@ -338,8 +340,6 @@
       href: connections.md
     - name: Schedule system refresh
       href: schedule-refresh.md
-    - name: Turn off the data preparation report
-      href: data-prep-admn.md
     - name: View system configuration
       href: system.md
 
@@ -379,7 +379,7 @@
   items:
     - name: Overview
       href: responsible-ai-overview.md
-    - name: FAQs for Data prep report
+    - name: FAQs for the data prep report
       href: faqs-data-prep.md
 
 - name: More resources

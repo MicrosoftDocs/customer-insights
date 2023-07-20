@@ -84,7 +84,7 @@ Refresh for tasks and processes is run according to the [configured schedule](sc
 |Activity  |Runs manually (single time refresh). Depends on merge process. Insights depend on its processing.|
 |Analysis linking |Runs manually (single time refresh). Depends on segments.  |
 |Analysis preparation |Runs manually (single time refresh). Depends on segments.  |
-|Data preparation   |Needs a table to run on. Data source tables depend on ingestion. Enriched tables depends on enrichments. The Customer table depends on merge.  |
+|Data prep report   |Needs a table to run on. Data source tables depend on ingestion. Enriched tables depends on enrichments. The Customer table depends on merge.  |
 |Data sources   |Doesn't depend on any other process. Match depends on the successful completion of this process.  |
 |Enrichments   |Runs manually (single time refresh). Depends on merge process. |
 |Exports destinations |Runs manually (single time refresh). Depends on segments.  |
