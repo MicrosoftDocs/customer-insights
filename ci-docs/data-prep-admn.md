@@ -19,6 +19,6 @@ By default, the data prep report capability is turned on. A Customer Insights ad
 
    :::image type="content" source="media/setting-data-prep.svg" alt-text="Screenshot of Data prep report consent setting.":::
 
-1. Toggle the switch off.
+1. Toggle the setting off.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
