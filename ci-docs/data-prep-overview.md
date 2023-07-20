@@ -32,7 +32,7 @@ The data prep report automatically runs if the following prerequisites are met:
 
 ## Data prep report
 
-After unification is completed, Customer Insights automatically generates the data prep report and analyzes contextual information on your data. This information is updated anytime you run unification. You can access the **Data prep report** from the **Home** page, the **Data sources** page, and the **Predictions** page.
+After unification is completed, Customer Insights automatically generates a data prep report based on your ingested and unified data and analyzes contextual information on your data. This information is updated anytime you run unification. You can access the **Data prep report** from the **Home** page, the **Data sources** page, and the **Predictions** page.
 
 :::image type="content" source="media/data-prep-report.svg" alt-text="Screenshot of the data prep report (preview).":::
 
