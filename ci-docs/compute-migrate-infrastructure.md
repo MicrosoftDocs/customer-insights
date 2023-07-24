@@ -7,6 +7,7 @@ ms.topic: how-to
 author: mamihail
 ms.author: mamihail
 ms.custom: bap-template
+ROBOTS: NOINDEX
 ---
 
 # Recreate your private links for the upgrade to the new compute infrastructure
