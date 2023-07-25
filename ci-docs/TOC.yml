@@ -66,7 +66,7 @@
         - name: Data prep report FAQ
           href: data-prep-faq.md
         - name: Turn off the data prep report
-          href: data-prep-admn.md
+          href: data-prep-admin.md
     - name: Common reasons for ingestion errors
       href: common-data-ingestion-errors.md
 
