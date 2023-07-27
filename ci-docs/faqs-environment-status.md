@@ -20,7 +20,7 @@ This AI-powered feature is designed to summarize business impacting jobs in the 
 
 ## What are the feature’s capabilities?
 
-The Environment status summary detects if a key job has been skipped or failed, based on job priority order. A link to the job are is provided so you can quickly access the issue.
+The Environment status summary detects if a key job has been skipped or failed, based on job priority order. A link to the job is provided so you can quickly access the issue.
 
 ## What is the feature’s intended use?
 
