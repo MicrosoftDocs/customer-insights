@@ -1,7 +1,7 @@
 ---
 title: FAQ for Environment status summary
-description: This FAQ provides information about the AI technology used in Dynamics 365 Customer Insights Environment status summary, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 07/17/2023
+description: This FAQ provides information about the AI technology used in Dynamics 365 Customer Insights Environment status summary. It includes key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
+ms.date: 07/27/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -16,7 +16,7 @@ These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Cu
 
 ## What is Environment status summary?
 
-This AI-powered feature is designed to summarize business impacting jobs in the system and surface the root failure, if any, so you can quickly investigate the issue. This feature helps eliminate the need to review hundreds of jobs to identify if your environment is processing normally.
+This AI-powered feature is designed to summarize business impacting jobs in the system and surface the root failure jobs, if any, so you can quickly investigate the issue. This feature helps eliminate the need to review hundreds of jobs to identify if your environment is processing normally.
 
 ## What are the feature’s capabilities?
 
@@ -28,18 +28,20 @@ The intention is to aid administrators in determining the status of their Custom
 
 ## How was Environment status summary evaluated? What metrics are used to measure performance?
 
-[Provide evidence of system or feature accuracy and performance, and, when applicable, a description of the extent to which these results are generalizable across use cases that were not part of the evaluation.]
+This feature has only been evaluated in English at this time. 
+
+The Environment status summary is evaluated from dimensions of accuracy of result and performance of generation. In addition, it's evaluated with embedded monitoring for Responsible AI. Specifically, this feature has been tested with an array of scenarios to ensure it captures and mitigates accordingly, including inappropriate language used, malicious intention of jail break, and data fabrication.
 
 ## What are the limitations of Environment status summary? How can users minimize the impact of the Environment status summary limitations when using the system?
 
-The feature reviews jobs in the following order, if they are configured:
+The feature reviews jobs in the following order, if they're configured:
 
 - Exports
 - Segments used in Customer Journey Orchestrator
 - Dataverse hydration jobs
 - Merge in data unification
 
-The feature reports only on these jobs and one at a time based on the priority order. For example, if exports are configured, then the feature only identifies if there is an issue with an export.
+The feature reports only on these jobs and one at a time based on the priority order. For example, if exports are configured, then the feature only identifies if there's an issue with an export.
 
 The feature is available only in the United States.
 
