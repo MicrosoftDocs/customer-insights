@@ -181,8 +181,8 @@ src: local("arial");
        </mask>
        <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="Arial" font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
       </g>
-      <g mask="url(#a)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-       <mask id="a">
+      <g mask="url(#ex)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+       <mask id="ex">
         <rect width="0" height="0" fill="#fff"/>
        </mask>
       </g>
@@ -326,26 +326,26 @@ src: local("arial");
            <rect x="281.22" y="242.14" width="20" height="20" fill="#fff"/>
           </mask>
           <g class="svg-content" transform="matrix(.71429 0 0 .71429 281.22 242.14)" data-height="20" data-view-box="0 0 28 28" data-width="20">
-           <path d="m11.65 1.4194-0.1348 0.08152s2.3186 0.15966 3.0832 0.15966l0.5998 4.5416-2.9989 2.9989-2.9989 2.0844v2.4037c0 1.6787 0.87744 3.2355 2.3136 4.1048l3.157 1.911-6.6702 3.8909h-1.2865l-2.3978-1.4513c-1.4362-0.8694-2.3136-2.4261-2.3136-4.1049v-8.0826c0-1.6793 0.87796-3.2364 2.3149-4.1056l7.1974-4.3535c0.0446-0.02698 0.0896-0.05317 0.1348-0.07857z" color="rgb(50, 49, 48)" fill="url(#ds)"/>
-           <path d="m11.65 1.4194-0.1348 0.08152s2.3186 0.15966 3.0832 0.15966l0.5998 4.5416-2.9989 2.9989-2.9989 2.0844v2.4037c0 1.6787 0.87744 3.2355 2.3136 4.1048l3.157 1.911-6.6702 3.8909h-1.2865l-2.3978-1.4513c-1.4362-0.8694-2.3136-2.4261-2.3136-4.1049v-8.0826c0-1.6793 0.87796-3.2364 2.3149-4.1056l7.1974-4.3535c0.0446-0.02698 0.0896-0.05317 0.1348-0.07857z" color="rgb(50, 49, 48)" fill="url(#dr)"/>
-           <path d="m18.795 11v2.6872c0 1.6788-0.8774 3.2355-2.3136 4.1048l-7.1974 4.3566c-1.4723 0.8912-3.3043 0.9233-4.8025 0.0965l7.0306 4.2556c1.5275 0.9245 3.4419 0.9245 4.9694 0l7.1974-4.3566c1.4362-0.8694 2.3136-2.4261 2.3136-4.1049v-1.9411l-0.5998-0.8997-6.5976-4.1984z" color="rgb(50, 49, 48)" fill="url(#dq)"/>
-           <path d="m18.795 11v2.6872c0 1.6788-0.8774 3.2355-2.3136 4.1048l-7.1974 4.3566c-1.4723 0.8912-3.3043 0.9233-4.8025 0.0965l7.0306 4.2556c1.5275 0.9245 3.4419 0.9245 4.9694 0l7.1974-4.3566c1.4362-0.8694 2.3136-2.4261 2.3136-4.1049v-1.9411l-0.5998-0.8997-6.5976-4.1984z" color="rgb(50, 49, 48)" fill="url(#dp)"/>
+           <path d="m11.65 1.4194-0.1348 0.08152s2.3186 0.15966 3.0832 0.15966l0.5998 4.5416-2.9989 2.9989-2.9989 2.0844v2.4037c0 1.6787 0.87744 3.2355 2.3136 4.1048l3.157 1.911-6.6702 3.8909h-1.2865l-2.3978-1.4513c-1.4362-0.8694-2.3136-2.4261-2.3136-4.1049v-8.0826c0-1.6793 0.87796-3.2364 2.3149-4.1056l7.1974-4.3535c0.0446-0.02698 0.0896-0.05317 0.1348-0.07857z" color="rgb(50, 49, 48)" fill="url(#eq)"/>
+           <path d="m11.65 1.4194-0.1348 0.08152s2.3186 0.15966 3.0832 0.15966l0.5998 4.5416-2.9989 2.9989-2.9989 2.0844v2.4037c0 1.6787 0.87744 3.2355 2.3136 4.1048l3.157 1.911-6.6702 3.8909h-1.2865l-2.3978-1.4513c-1.4362-0.8694-2.3136-2.4261-2.3136-4.1049v-8.0826c0-1.6793 0.87796-3.2364 2.3149-4.1056l7.1974-4.3535c0.0446-0.02698 0.0896-0.05317 0.1348-0.07857z" color="rgb(50, 49, 48)" fill="url(#er)"/>
+           <path d="m18.795 11v2.6872c0 1.6788-0.8774 3.2355-2.3136 4.1048l-7.1974 4.3566c-1.4723 0.8912-3.3043 0.9233-4.8025 0.0965l7.0306 4.2556c1.5275 0.9245 3.4419 0.9245 4.9694 0l7.1974-4.3566c1.4362-0.8694 2.3136-2.4261 2.3136-4.1049v-1.9411l-0.5998-0.8997-6.5976-4.1984z" color="rgb(50, 49, 48)" fill="url(#es)"/>
+           <path d="m18.795 11v2.6872c0 1.6788-0.8774 3.2355-2.3136 4.1048l-7.1974 4.3566c-1.4723 0.8912-3.3043 0.9233-4.8025 0.0965l7.0306 4.2556c1.5275 0.9245 3.4419 0.9245 4.9694 0l7.1974-4.3566c1.4362-0.8694 2.3136-2.4261 2.3136-4.1049v-1.9411l-0.5998-0.8997-6.5976-4.1984z" color="rgb(50, 49, 48)" fill="url(#et)"/>
            <path d="m23.68 5.8516-7.1974-4.3535c-1.4796-0.89491-3.3219-0.92263-4.8239-0.08317l-0.1429 0.08649c-1.437 0.86915-2.3149 2.4263-2.3149 4.1056v5.6882l2.3149-1.4002c1.5268-0.92352 3.4399-0.92352 4.9668 0l7.1974 4.3535c1.392 0.842 2.2594 2.3296 2.3123 3.9485 0.0017-0.0523 0.0026-0.1047 0.0026-0.1572v-8.0826c0-1.6793-0.878-3.2364-2.3149-4.1056z" color="rgb(50, 49, 48)" fill="url(#do)"/>
            <path d="m23.68 5.8516-7.1974-4.3535c-1.4796-0.89491-3.3219-0.92263-4.8239-0.08317l-0.1429 0.08649c-1.437 0.86915-2.3149 2.4263-2.3149 4.1056v5.6882l2.3149-1.4002c1.5268-0.92352 3.4399-0.92352 4.9668 0l7.1974 4.3535c1.392 0.842 2.2594 2.3296 2.3123 3.9485 0.0017-0.0523 0.0026-0.1047 0.0026-0.1572v-8.0826c0-1.6793-0.878-3.2364-2.3149-4.1056z" color="rgb(50, 49, 48)" fill="url(#dn)"/>
            <defs color="rgb(50, 49, 48)" fill="none">
-            <linearGradient id="ds" x1="13.366" x2="7.1541" y1="7.2911" y2="26.562" gradientUnits="userSpaceOnUse">
+            <linearGradient id="eq" x1="13.366" x2="7.1541" y1="7.2911" y2="26.562" gradientUnits="userSpaceOnUse">
              <stop stop-color="#AE7FE2" offset="0"/>
              <stop stop-color="#0078D4" offset="1"/>
             </linearGradient>
-            <linearGradient id="dr" x1="10.722" x2="9.6292" y1="21.41" y2="19.355" gradientUnits="userSpaceOnUse">
+            <linearGradient id="er" x1="10.722" x2="9.6292" y1="21.41" y2="19.355" gradientUnits="userSpaceOnUse">
              <stop stop-color="#114A8B" offset=".9999"/>
              <stop stop-color="#0078D4" stop-opacity="0" offset="1"/>
             </linearGradient>
-            <radialGradient id="dq" cx="0" cy="0" r="1" gradientTransform="translate(7.3161 21.476) rotate(-13.187) scale(18.576 14.429)" gradientUnits="userSpaceOnUse">
+            <radialGradient id="es" cx="0" cy="0" r="1" gradientTransform="translate(7.3161 21.476) rotate(-13.187) scale(18.576 14.429)" gradientUnits="userSpaceOnUse">
              <stop stop-color="#D59DFF" offset=".14003"/>
              <stop stop-color="#5E438F" offset="1"/>
             </radialGradient>
-            <linearGradient id="dp" x1="22.835" x2="21.775" y1="14.274" y2="15.959" gradientUnits="userSpaceOnUse">
+            <linearGradient id="et" x1="22.835" x2="21.775" y1="14.274" y2="15.959" gradientUnits="userSpaceOnUse">
              <stop stop-color="#493474" offset=".9999"/>
              <stop stop-color="#8C66BA" stop-opacity="0" offset="1"/>
             </linearGradient>
@@ -365,14 +365,14 @@ src: local("arial");
           <rect x="496.58" y="241.65" width="51.892" height="20.972" rx="8" ry="8" fill="#f3f2f1"/>
          </g>
          <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="10px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="502.5694580078125" y="257.96875" lengthAdjust="spacingAndGlyphs" textLength="39.9132080078125" xml:space="preserve">PREVIEW</tspan></text>
-         <g mask="url(#b)" aria-owns="ms-Stack6" data-stacking-context="true" data-tag="div" data-z-index="auto">
-          <mask id="b">
+         <g mask="url(#ew)" aria-owns="ms-Stack6" data-stacking-context="true" data-tag="div" data-z-index="auto">
+          <mask id="ew">
            <rect width="0" height="0" fill="#fff"/>
           </mask>
          </g>
          <text color="rgb(96, 94, 92)" dominant-baseline="text-after-edge" fill="rgb(96, 94, 92)" font-family="FabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(96, 94, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="561.4583740234375" y="259.7048645019531" lengthAdjust="spacingAndGlyphs" textLength="16.0069580078125" xml:space="preserve"></tspan></text>
          <g font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
-          <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-weight="400" text-decoration="none solid rgb(50, 49, 48)" user-select="auto"><tspan x="281.2153015136719" y="303.0208435058594" lengthAdjust="spacingAndGlyphs" textLength="506.1458435058594" xml:space="preserve">1 Customer profiles job have skipped and are dependent on Match job that failed.</tspan></text>
+          <text color="#323130" dominant-baseline="text-after-edge" fill="#323130" font-weight="400" style="text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid" user-select="auto"><tspan x="281.2153" y="303.02084" lengthAdjust="spacingAndGlyphs" xml:space="preserve">1 Customer profiles job has skipped and are dependent on Match job that failed.</tspan></text>
           <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-weight="700" text-decoration="none solid rgb(50, 49, 48)" user-select="auto"><tspan x="281.2153015136719" y="340.0173645019531" lengthAdjust="spacingAndGlyphs" textLength="40.12152099609375" xml:space="preserve">Go to:</tspan></text>
           <text color="rgb(34, 102, 227)" dominant-baseline="text-after-edge" fill="rgb(34, 102, 227)" font-weight="400" text-decoration="none solid rgb(34, 102, 227)" user-select="text"><tspan x="327.326416015625" y="340.0173645019531" lengthAdjust="spacingAndGlyphs" textLength="38.8367919921875" xml:space="preserve">Match</tspan></text>
          </g>
@@ -384,19 +384,19 @@ src: local("arial");
          <g data-stacking-layer="rootBackgroundAndBorders">
           <rect x="367.2" y="367.1" width="80" height="23.993" rx="4" ry="4" fill="#fff" stroke="#d1d1d1" stroke-width="1.1111px"/>
          </g>
-         <g fill="rgb(50, 49, 48)" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+         <g fill="#323130" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
           <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-family="FabricMDL2Icons-0" font-size="14px" user-select="none"><tspan x="377.29168701171875" y="385.4340515136719" lengthAdjust="spacingAndGlyphs" textLength="14.010406494140625" xml:space="preserve"></tspan></text>
           <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" user-select="none"><tspan x="395.607666015625" y="386.6493225097656" lengthAdjust="spacingAndGlyphs" textLength="39.166656494140625" xml:space="preserve">Refresh</tspan></text>
           <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="10px" user-select="auto"><tspan x="546.6493530273438" y="384.9305725097656" lengthAdjust="spacingAndGlyphs" textLength="171.3541259765625" xml:space="preserve">AI-generated content may be incorrect</tspan></text>
          </g>
-         <g mask="url(#d)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-          <mask id="d">
+         <g mask="url(#eu)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+          <mask id="eu">
            <rect width="0" height="0" fill="#fff"/>
           </mask>
          </g>
          <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family="FabricMDL2Icons-2" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="733.9757080078125" y="386.66668701171875" lengthAdjust="spacingAndGlyphs" textLength="16.0069580078125" xml:space="preserve"></tspan></text>
-         <g mask="url(#c)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-          <mask id="c">
+         <g mask="url(#ev)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+          <mask id="ev">
            <rect width="0" height="0" fill="#fff"/>
           </mask>
          </g>
@@ -490,7 +490,7 @@ src: local("arial");
            <mask id="dl">
             <rect x="296.09" y="497.17" width="129.91" height="24.01" fill="#fff"/>
            </mask>
-           <g fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+           <g fill="#323130" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>
@@ -516,7 +516,7 @@ src: local("arial");
             </g>
            </g>
           </g>
-          <g class="ms-DetailsRow-cell cell-375 cellUnpadded-373" fill="rgb(96, 94, 92)" font-stretch="100%" font-weight="400" mask="url(#bi)" text-decoration="none solid rgb(96, 94, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" aria-owns="ms-Stack13" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
+          <g class="ms-DetailsRow-cell cell-375 cellUnpadded-373" fill="#605e5c" font-stretch="100%" font-weight="400" mask="url(#bi)" text-decoration="none solid rgb(96, 94, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" aria-owns="ms-Stack13" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
            <mask id="bi">
             <rect x="566.09" y="535.4" width="270" height="41.997" fill="#fff"/>
            </mask>
@@ -543,7 +543,7 @@ src: local("arial");
            <mask id="dk">
             <rect x="296.09" y="589.38" width="166.15" height="24.01" fill="#fff"/>
            </mask>
-           <g fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+           <g fill="#323130" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>
@@ -716,7 +716,7 @@ src: local("arial");
            <mask id="dj">
             <rect x="296.09" y="810.9" width="162.71" height="24.01" fill="#fff"/>
            </mask>
-           <g fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+           <g fill="#323130" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>
@@ -782,7 +782,7 @@ src: local("arial");
             </g>
            </g>
           </g>
-          <g class="ms-DetailsRow-cell cell-375 cellUnpadded-373" fill="rgb(96, 94, 92)" font-stretch="100%" font-weight="400" mask="url(#bf)" text-decoration="none solid rgb(96, 94, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" aria-owns="ms-Stack19" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
+          <g class="ms-DetailsRow-cell cell-375 cellUnpadded-373" fill="#605e5c" font-stretch="100%" font-weight="400" mask="url(#bf)" text-decoration="none solid rgb(96, 94, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" aria-owns="ms-Stack19" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
            <mask id="bf">
             <rect x="566.09" y="892.24" width="270" height="41.997" fill="#fff"/>
            </mask>
@@ -809,7 +809,7 @@ src: local("arial");
            <mask id="di">
             <rect x="296.09" y="946.22" width="165.45" height="24.01" fill="#fff"/>
            </mask>
-           <g fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+           <g fill="#323130" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>
             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" user-select="none"/>

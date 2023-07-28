@@ -118,7 +118,7 @@ This feature adheres to [responsible AI](faqs-environment-status.md) guidelines.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
-### View the Environment Status Summary
+### View the Environment status summary
 
 Use the summary to help you determine if your environment is running normally or if there's a problem. If the system detects one of the jobs has been skipped or failed, the summary shows the earliest dependency area for the job, so you know where to investigate first and get things running again quickly. Select the link to go to the respective area and investigate the issue.
 
@@ -129,6 +129,6 @@ Use the summary to help you determine if your environment is running normally or
   - To research the skipped or failed job, select the link.
   - To copy the summary to your clipboard, select **Copy**.
   - To refresh the summary if you’re waiting for a job to finish, select **Refresh**.
-  - To provide Customer Insights with your feedback, select “thumbs up” or “thumbs down”.
+  - To provide Customer Insights with your feedback, select the thumbs up or thumbs down icons.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
