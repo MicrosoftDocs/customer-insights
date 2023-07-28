@@ -3,7 +3,7 @@ title: Use your own Azure Data Lake Storage Gen2 account
 author: mukeshpo
 description: Learn about the requirements to use your own Azure Data Lake Storage account to store Customer Insights data.
 ms.author: mukeshpo
-ms.date: 03/20/2023
+ms.date: 07/28/2023
 ms.topic: conceptual
 ms.collection: get-started
 ms.reviewer: mhart
@@ -13,7 +13,8 @@ ms.reviewer: mhart
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Dynamics 365 Customer Insights gives you the option to store all your data in [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction). By saving data to Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account. For more information, see [Microsoft Trust Center](https://www.microsoft.com/trust-center).
+Dynamics 365 Customer Insights gives you the option to store your imported data in [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction). Only the data that you import to Customer Insights gets stored in Data Lake Storage. [Output data tables](tables.md#customer-insights-tables-in-dataverse), metadata like match rules or segment configuration, and search information is always stored in Microosft Dataverse.
+By saving data to Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account. For more information, see [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 Administrators in Customer Insights can [create environments](create-environment.md) and [specify the data storage option](create-environment.md#step-2-configure-data-storage) in the process.
 
