@@ -365,6 +365,13 @@
 - name: DSR rights and requests
   href: dsr-rights-requests.md
 
+- name: Responsible AI
+  items:
+    - name: Overview
+      href: responsible-ai-overview.md
+    - name: FAQs for dialog with data
+      href: faqs-dialog-data.md
+
 - name: More resources
   items: 
   - name: Learning catalog

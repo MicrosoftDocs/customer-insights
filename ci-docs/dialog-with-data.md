@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 Dynamics 365 Customer Insights uses copilot AI capabilities, powered by [Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service) models, to generate insights about your customers. Ask questions in natural language to have a dialog with your data to explore, assess, and better understand the profiles, behavior, and activity of your customers. With these insights, you can create optimal personalized experiences and engage with your customers through the most effective channels.
 
-Responses are generated in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai).
+Responses are generated in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai). For more information, see [FAQ for dialog with data](faqs-dialog-data.md)
 
 ## Prerequisites
 
@@ -57,5 +57,6 @@ We want to hear your feedback so we can continually enhance the relevancy, preci
 [Create complex segments with segment builder](segment-builder.md)  
 [Create measures with measure builder](measure-builder.md)  
 [Predictions overview](predictions-overview.md)
+[Responsible AI FAQs for Dynamics 365 Customer Insights](responsible-ai-overview.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
