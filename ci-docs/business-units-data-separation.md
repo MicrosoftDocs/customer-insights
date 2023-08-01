@@ -1,7 +1,7 @@
 ---
 title: Business unit support and role-based access control (preview)
 description: Learn how business unit support and role-based access control regulate access to customer profiles, segments, and measures in Dataverse.
-ms.date: 07/05/2023
+ms.date: 07/13/2023
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.topic: concept
@@ -20,6 +20,7 @@ Business unit support allows administrators to regulate access to customer profi
 
 - Business units and associated teams are defined in Dataverse. [Learn more about setting up business units in Dataverse.](/power-platform/admin/create-edit-business-units)
 - Users are assigned to appropriate business units and teams. [Learn more about managing users and teams in Dataverse.](/power-platform/admin/users-settings)
+- Teams used in Customer Insights must have the role *Customer Insights Data Read Access* assigned. [Learn more about assigning roles in Dataverse.](/power-platform/admin/manage-teams#manage-the-security-roles-of-a-team)
 - Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**.
 - All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row of data.
 - A B-to-C (individual customers) Customer Insights environment.
