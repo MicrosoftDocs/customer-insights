@@ -14,7 +14,7 @@ ms.reviewer: m-hartmann
 
 These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights dialog with data (preview) feature.
 
-## What is Dialog with data?
+## What is dialog with data?
 
 This AI-powered feature helps generate insights about your customer data estate using natural language, which empowers you to design personalized and high-ROI business actions.
 
