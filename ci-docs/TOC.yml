@@ -369,7 +369,7 @@
   items:
     - name: Overview
       href: responsible-ai-overview.md
-    - name: FAQs for the data prep report
+    - name: FAQs for dialog with data
       href: faqs-dialog-data.md
 
 - name: More resources

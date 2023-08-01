@@ -1,6 +1,6 @@
 ---
-title: FAQ for Data prep report (preview)
-description: This FAQ provides information about the AI technology used in Dynamics 365 Customer Insights data prep report (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
+title: FAQ for dialog with data (preview)
+description: This FAQ provides information about the AI technology used in Dynamics 365 Customer Insights dialog with data (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 08/01/2023
 ms.custom: 
   - responsible-ai-faqs
@@ -10,7 +10,7 @@ ms.author: wameng
 ms.reviewer: m-hartmann
 ---
 
-# FAQ for the data prep report (preview)
+# FAQ for dialog with data (preview)
 
 These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights dialog with data (preview) feature.
 
