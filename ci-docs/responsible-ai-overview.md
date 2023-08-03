@@ -17,3 +17,4 @@ ms.reviewer: radsay01
 [!INCLUDE[rai-faq-features](includes/faqs-feature.md)]
 
 - [Dialog with data](faqs-dialog-data.md)
+- [Environment status summary](system.md#environment-status-summary-preview)
