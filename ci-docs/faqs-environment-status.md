@@ -16,7 +16,7 @@ These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Cu
 
 ## What is Environment status summary?
 
-This AI-powered feature is designed to summarize business impacting jobs in the system and surface the root failure jobs, if any, so you can quickly investigate the issue. This feature helps eliminate the need to review hundreds of jobs to identify if your environment is processing normally.
+This AI-powered feature is designed to summarize business impacting jobs in the system and surface the root failure jobs, if any, so you can quickly investigate the issue. This feature helps eliminate the need to review hundreds of jobs to identify if your environment is processing normally. The Environment status summary uses Azure OpenAI and passes information about the job statuses, as well as other information like job names, to allow the model to create a summary. To learn more about how Azure OpenAI handles your data, see [Data, privacy, and security for Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
 
 ## What are the feature’s capabilities?
 
