@@ -369,6 +369,8 @@
   items:
     - name: Overview
       href: responsible-ai-overview.md
+    - name: FAQ for Environment status summary
+      href: faqs-environment-status.md
     - name: FAQs for dialog with data
       href: faqs-dialog-data.md
 
