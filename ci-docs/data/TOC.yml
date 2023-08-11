@@ -37,16 +37,18 @@
   items:
     - name: Data sources overview
       href: data-sources.md
-    - name: Get started with Customer Insights using a single data source
-      href: data-sources-single.md
-    - name: Connect to data in Azure Data Lake Storage
-      href: connect-common-data-model.md
-    - name: Connect to Azure Synapse Analytics
-      href: connect-synapse.md
-    - name: Connect to data in a Microsoft Dataverse managed data lake
-      href: connect-dataverse-managed-lake.md
-    - name: Add a data sources via Power Query connectors
-      href: connect-power-query.md
+    - name: Add a data source
+      items:
+       - name: Get started with Customer Insights using a single data source
+         href: data-sources-single.md
+       - name: Connect to data in Azure Data Lake Storage
+         href: connect-common-data-model.md
+       - name: Connect to Azure Synapse Analytics
+         href: connect-synapse.md
+       - name: Connect to data in a Microsoft Dataverse managed data lake
+         href: connect-dataverse-managed-lake.md
+       - name: Add a data sources via Power Query connectors
+         href: connect-power-query.md
     - name: Manage existing data sources
       href: data-sources-manage.md
     - name: Connect to an Azure Data Lake Storage account by using an Azure service principal
@@ -57,6 +59,12 @@
       href: incremental-refresh-data-sources.md
     - name: Real-time data ingestion
       href: real-time-data-ingestion.md
+    - name: Data quality and preparation 
+      items:
+        - name: Data prep report overview
+          href: data-prep-overview.md
+        - name: Turn off the data prep report
+          href: data-prep-admin.md
     - name: Common reasons for ingestion errors
       href: common-data-ingestion-errors.md
 
@@ -369,6 +377,8 @@
   items:
     - name: Overview
       href: responsible-ai-overview.md
+    - name: FAQs for the data prep report
+      href: faqs-data-prep.md
     - name: FAQ for Environment status summary
       href: faqs-environment-status.md
     - name: FAQs for dialog with data
