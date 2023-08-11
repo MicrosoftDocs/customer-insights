@@ -1,7 +1,7 @@
 ---
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights."
-ms.date: 03/20/2023
+ms.date: 07/27/2023
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
@@ -70,7 +70,7 @@ The system uses the following statuses for tasks and processes:
 |Failure  |Task or process has failed.  |
 |Not started   |Data source has no data ingested yet or the task is still in draft mode.         |
 |Processing  |Task or process is in progress.  |
-|Refreshing    |Task or process is in progress. To cancel this operation, select **Refreshing** and **Cancel job**. Stopping the refresh of a task or process will revert it to its last refresh state.       |
+|Refreshing    |Task or process is in progress. To cancel this operation, select **Refreshing** and **Cancel job**. Stopping the refresh of a task or process reverts it to its last refresh state.       |
 |Skipped  |Task or process got skipped. One or more of the downstream processes this task depends on are failing or got skipped.|
 |Successful  |Task or process completed successfully. For data sources, indicates the data has been successfully ingested if a time is mentioned in the **Refreshed** column.|
 |Queued | Processing is queued and will start once all the upstream tasks and processes are completed. For more information, see [Refresh processes](#refresh-processes).|
@@ -99,7 +99,36 @@ Refresh for tasks and processes is run according to the [configured schedule](sc
 |System   |Depends on the completion of the match process. Segments, measures, enrichment, search, activities, predictions, and data preparation depend on the successful completion of this process.   |
 |User  |Runs manually (single time refresh). Depends on tables.  |
 
-Select the status of a process to see the progress details of the entire job it was in. The refresh processes above can help to understand what you can do to address a **Skipped** or **Queued** task or process.
+Select the status of a process to see the progress details of the entire job it was in. The refresh processes can help to understand what you can do to address a **Skipped** or **Queued** task or process.
 
+## Environment status summary (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
+The Environment status summary is designed to help you quickly understand the status of your environment based on the business impact of what you’ve configured. The summary reviews jobs in the following order:
+
+- If exports are configured, the system summarizes export job statuses.
+- If exports aren't configured, the system summarizes segment job statuses for segments configured for Customer Journey Orchestrator.
+- If you haven't configured any segments for Customer Journey Orchestrator, the system summarizes job statuses for jobs that put data into Dataverse.
+- If you haven’t configured any features that move data into Dataverse, the system reviews the unification (merge) job to help indicate if your unification is running normally.
+
+This feature is available only in the United States.
+
+This feature adheres to [responsible AI](faqs-environment-status.md) guidelines.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
+### View the Environment status summary
+
+Use the summary to help you determine if your environment is running normally or if there's a problem. If the system detects one of the jobs has been skipped or failed, the summary shows the earliest dependency area for the job, so you know where to investigate first and get things running again quickly. Select the link to go to the respective area and investigate the issue.
+
+- Go to **Settings** > **System**.
+
+  :::image type="content" source="media/environment-status-summary.svg" alt-text="Screenshot of Environment status summary dialog box.":::
+
+  - To research the skipped or failed job, select the link.
+  - To copy the summary to your clipboard, select **Copy**.
+  - To refresh the summary if you’re waiting for a job to finish, select **Refresh**.
+  - To provide Customer Insights with your feedback, select the thumbs up or thumbs down icons.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
