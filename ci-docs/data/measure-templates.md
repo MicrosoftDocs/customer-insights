@@ -1,8 +1,7 @@
 ---
 title: "Create measures from templates"
 description: "Define measures using templates for common use cases."
-ms.date: 11/28/2022
-
+ms.date: 08/30/2023
 ms.topic: conceptual
 author: v-wendysmith
 ms.author: wameng
@@ -17,8 +16,6 @@ searchScope:
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Use predefined templates of commonly used [measures](measures.md) to create them. Templates build on mapped data from the *Unified Activity* table. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
-
-Measure templates are only supported in environments for **individual customers**. To create custom measures or create measures for B-to-B, see [Use measure builder](measure-builder.md).
 
 Available measure templates:
 - Average transaction value (ATV)

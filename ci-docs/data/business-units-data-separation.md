@@ -23,11 +23,9 @@ Business unit support allows administrators to regulate access to customer profi
 - Teams used in Customer Insights must have the role *Customer Insights Data Read Access* assigned. [Learn more about assigning roles in Dataverse.](/power-platform/admin/manage-teams#manage-the-security-roles-of-a-team)
 - Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**.
 - All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row of data.
-- A B-to-C (individual customers) Customer Insights environment.
 
 > [!NOTE]
 >
-> - B-to-B (business accounts) environments are not supported.
 > - Parent-child scope is currently not supported.
 > - [Modernized business units](/power-platform/admin/wp-security-cds#matrix-data-access-structure-modernized-business-units) are not supported.
 > - Field-level security is not supported.

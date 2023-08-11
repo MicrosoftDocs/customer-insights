@@ -1,7 +1,7 @@
 ---
 title: "Explore Customer Insights"
 description: "Start exploring the app on the Home page."
-ms.date: 12/6/2022
+ms.date: 08/30/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong
@@ -28,8 +28,6 @@ If you have multiple data sources, select **Step-by-step guide**.
 ## Left side pane
 
 Use the left pane to navigate between different areas of Customer Insights.
-
-If you work with business accounts and individual consumers, you can select your primary audience to set your focus accordingly.
 
 ## Application header
 
