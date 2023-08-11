@@ -1,9 +1,8 @@
 ---
 title: Customer lifetime value (CLV) prediction sample guide
 description: Use this sample guide to try out the customer lifetime value prediction model.
-ms.date: 11/15/2022
+ms.date: 08/11/2023
 ms.reviewer: v-wendysmith
-
 ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia        
@@ -114,13 +113,15 @@ Review the article [about customer activities](activities.md). The following inf
 
 1. Run the activity.
 
-1. Add another activity and map its fields names to the corresponding fields:
+1. Add another activity called **webReviews** and map its fields names to the corresponding fields:
    - **Activity table**: Reviews:Website
    - **Primary key**: ReviewId
    - **Timestamp**: ReviewDate
    - **Event activity**: ActivityTypeDisplay
    - **Additional detail**: ReviewRating
    - **Activity type**: Review
+
+1. Create a relationship between *Website* and *eCommerceContacts* with **UserId** as the foreign key.
 
 1. Run the activity.
 
