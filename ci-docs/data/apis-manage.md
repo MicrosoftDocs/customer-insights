@@ -1,7 +1,7 @@
 ---
-title: Manage Customer Insights APIs
-description: Manage the Customer Insights API keys and view API usage.
-ms.date: 07/06/2023
+title: Manage Customer Insights - Data APIs
+description: Manage the Customer Insights - Data API keys and view API usage.
+ms.date: 09/01/2023
 ms.topic: how-to
 author: wimohabb
 ms.author: wimohabb
@@ -9,17 +9,17 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Manage Customer Insights APIs
+# Manage Customer Insights - Data APIs
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 [!INCLUDE [api-deprecate](./includes/api-deprecate.md)]
 
-Set up the keys to use the Customer Insights APIs and view the API usage.
+Set up the keys to use the Dynamics 365 Customer Insights - Data APIs and view the API usage.
 
 ## Manage API keys
 
-View and manage the keys to use the [Customer Insights APIs](apis.md) with the data in your environment.
+View and manage the keys to use the [Customer Insights - Data APIs](apis.md) with the data in your environment.
 
 1. Go to **Settings** > **Permissions** and select the **APIs** tab.
 
@@ -35,7 +35,7 @@ View and manage the keys to use the [Customer Insights APIs](apis.md) with the d
 
 ## View API usage
 
-View details about the real-time Customer Insights API usage and see which events happened in a given time frame.
+View details about the real-time Customer Insights - Data API usage and see which events happened in a given time frame.
 
 1. Go to **Settings** > **System** and select the **API usage** tab.
 
