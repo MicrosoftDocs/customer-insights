@@ -1,0 +1,39 @@
+### YamlMime:Hub
+
+title:  Dynamics 365 Customer Insights documentation
+summary: Quickly access documentation for Dynamics 365 Customer Insights - Journeys and Dynamics 365 Customer Insights - Data. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
+brand: dynamics
+
+metadata:
+  title: Dynamics 365 Customer Insights documentation # Required; page title displayed in search results. Include the brand. For example, Dynamics 365 Commerce < 60 chars.
+  description: Quickly access documentation for Dynamics 365 Customer Insights - Journeys and Dynamics 365 Customer Insights - Data. # Required; product description that is displayed in search results. < 160 chars. 
+  ms.topic: hub-page # Required
+  author: m-hartmann #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mhart #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/01/2023 #Required; mm/dd/yyyy format.
+  ms.custom: bap-template
+  hide_bc: true
+
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+# Do not change the following cards. You should only need to update the URLs to provide the correct links to your product documentation.
+
+  items:
+
+    - title: Customer Insights overview
+      itemType: overview
+      url: overview.md
+
+    - title: Customer Insights FAQ
+      itemType: concept
+      url: journeys/ci-faq.md
+
+    - title: Customer Insights - Journeys
+      itemType: quickstart
+      url: journeys/index.yml
+
+    - title: Customer Insights - Data
+      itemType: quickstart
+      url: data/index.yml     
