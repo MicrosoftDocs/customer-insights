@@ -82,8 +82,6 @@
           href: business-unit-integration-dynamics365-power-platform.md
     - name: Review data unification
       href: data-unification-review.md
-    - name: Create a unified B-to-B contact profile 
-      href: data-unification-contacts.md
     - name: Update unification settings
       href: data-unification-update.md  
  
@@ -91,20 +89,12 @@
   items:
     - name: Data enrichment overview
       href: enrichment-hub.md
-    - name: Accounts from Office 365 data
-      href: enrichment-office.md
     - name: Brands and interests
       href: enrichment-microsoft.md
-    - name: Company data from Dun & Bradstreet
-      href: enrichment-dnb.md
-    - name: Company data from Leadspace
-      href: enrichment-leadspace.md
     - name: Demographics with Experian
       href: enrichment-experian.md
     - name: Enhanced addresses
       href: enrichment-enhanced-addresses.md
-    - name: Enhanced company data
-      href: enrichment-enhanced-company-data.md
     - name: Identity with LiveRamp
       href: enrichment-liveramp.md
     - name: Location from Azure Maps

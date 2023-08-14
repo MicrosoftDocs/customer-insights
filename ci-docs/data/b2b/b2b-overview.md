@@ -1,7 +1,7 @@
 ---
 title: "Business acounts overview in Customer Insights"
 description: "Learn about business accounts (B2B) in Dynamics 365 Customer Insights" 
-ms.date: 08/11/2023
+ms.date: 08/30/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -18,15 +18,15 @@ With Dynamics 365 Customer Insights, business accounts (B2B) aren't supported. H
 ## Supported feature areas
 
 - Activities: Support for [accounts](../activities.md) and related [contacts](activities-contacts.md) to create activities and show them in a timeline.
-- [Relationships](../relationships.mdrelationships.md): The activity wizard helps creating relationships between the tables so the account view can show all activities from contacts. Contacts can drill up to see contact view and [hierarchies](account-hierarchies.md) can be used for account activity aggregations.
+- [Relationships](../relationships.md): The activity wizard helps creating relationships between the tables so the account view can show all activities from contacts. Contacts can drill up to see contact view and [hierarchies](account-hierarchies.md) can be used for account activity aggregations.
 - [Measures](../measures.md): Supports measures created from the [measure builder](measure-builder-b2b.md) with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.
 - [Segments](segments.md): Supports segments that are created from scratch with the [segment builder](segment-builder-b2b.md). Segments can be based on accounts or contacts.
 - [Data ingestion](../data-sources.md)
 - B2B data unification is very similar to B2C [data unification](../data-unification.md) but has an additional step to [unify contacts](data-unification-contacts.md) after account unification.
 - [Enrichment](#enrichments): Some enrichment types are available only for business accounts.
-- [Predictions and out-of-box models](predictions.md): Transactional churn prediction contains additional steps for business accounts. Other predictions are only available for individual customers.
+- [Predictions and out-of-box models](../predictions.md): Transactional churn prediction contains additional steps for business accounts. Other predictions are only available for individual customers.
 - [Activation and export](export-manage.md): Exports are available for business accounts. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts. See [Segment exports](#segment-exports) for more information.
-- [System settings](system.md) and [user management](permissions.md): All features in this area are the same for business accounts.
+- [System settings](../system.md) and [user management](../permissions.md): All features in this area are the same for business accounts.
 
 
 

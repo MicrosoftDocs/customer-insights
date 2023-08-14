@@ -41,8 +41,6 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
 
 1. If a rule uses other tables than the *Customer* table or *UnifiedContact* table, select **Set relationship path** to map the selected table to the unified customer table. If there's only one possible relationship path, the system selects it automatically. Different [relationship paths](../relationships.md#relationship-paths) can yield different results. Every rule can have its own relationship path.
 
-   :::image type="content" source="media/relationship-path.png" alt-text="Potential relationship path when creating a rule based on a table mapped to the unified customer table.":::
-
 1. If you have multiple conditions in a rule, choose which logical operator connects them.  
    - **AND** operator: All conditions must be met to include a record in the segment. Use this option when you define conditions across different tables.
    - **OR** operator: Either one of the conditions must be met to include a record in the segment. Use this option when you define multiple conditions for the same table.
@@ -53,7 +51,7 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
 
 1. To create different sets of customer records, create multiple rules. To include the customers required for your business case, combine groups. Specifically, if you can't include a table in a rule because of the specified relationship path, create a new rule to choose attributes from it.
 
-      :::image type="content" source="media/segment-rule-grouping.png" alt-text="Add a new rule to a segment and choose the set operator.":::
+      :::image type="content" source="../media/segment-rule-grouping.png" alt-text="Add a new rule to a segment and choose the set operator.":::
 
    1. Select **Add rule**.
    1. Select one of the set operators: **Union**, **Intersect**, or **Except**.
@@ -83,4 +81,5 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
    > [!TIP]
    > When viewing segments on the **Segments** page, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
 
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]
+

@@ -11,9 +11,9 @@ ms.custom: bap-template
 
 # Business contact activities
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
-Business contact activities are actions or events performed by business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your contact activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Insights Timeline Integration](activities-in-d365-timeline.md) or the [Customer Card Add-in](customer-card-add-in.md) solution.
+Business contact activities are actions or events performed by business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your contact activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Insights Timeline Integration](../activities-in-d365-timeline.md) or the [Customer Card Add-in](../customer-card-add-in.md) solution.
 
 > [!TIP]
 > In B-to-B environments, you can select between account tables and other tables. If you select an account table, the relationship path is automatically set. For other tables, you have to define the relationship path over one or more intermediate tables until you reach an account table.
@@ -53,11 +53,11 @@ For business accounts (B-to-B), use a *UnifiedContact* table to capture activiti
    - **Activity name**: Unique name for your activity.
    - **Timestamp**: Field that represents the start time or date of your activity.
    - **Event activity**: Field that is the event for this activity.
-   - **Web address** (optional): Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* table, which can be consumed downstream using [APIs](apis.md).
+   - **Web address** (optional): Field containing a URL with information about this activity. For example, the transactional system that sources this activity. This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation. The URL data will be stored in the *Unified Activity* table, which can be consumed downstream using [APIs](../apis.md).
    - **Additional detail** (optional): Field with relevant information for this activity.
    - **Show this activity in the timeline on your customer profile?**: **Yes** to show the activity in the timeline or **No** to hide it.
      > [!NOTE]
-     > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
+     > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](../apis.md) either.
    
    - **Map field types for your activity's attributes?**: **Yes** to help the system better understand the relevance of your activity data or **No** do not map.
 
@@ -65,13 +65,13 @@ For business accounts (B-to-B), use a *UnifiedContact* table to capture activiti
 
 1. Select **Next**.
 
-1. In the **Relationship** step, select **Add relationship** and create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary table. For more information, see [direct and indirect relationship paths](relationships.md#relationship-paths).
+1. In the **Relationship** step, select **Add relationship** and create an indirect relationship between your activity source data to accounts, using your contact data as an intermediary table. For more information, see [direct and indirect relationship paths](../relationships.md#relationship-paths).
 
    - Example relationship for an activity called *Purchases*:
       - **Purchases Source Activity Data** > **Contact Data** on the attribute **ContactID**
       - **Contact Data** > **Account Data** on the attribute **AccountID**
      > [!NOTE]
-     > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships).
+     > Activities can't be configured using [inherited relationships](../relationships.md#non-editable-system-relationships).
 
    :::image type="content" source="media/Contact_Activities1.png" alt-text="Example relationship setup.":::
 
@@ -91,5 +91,4 @@ After configuring a contact-level activity mapping and running it, the activity 
 
    :::image type="content" source="media/Contact_Activities3.png" alt-text="Filtering options available for Contact-level activities.":::
 
-
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

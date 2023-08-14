@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 ## Set up account hierarchies
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
 Environments that are configured to use business accounts (B2B) as the primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units.
 
@@ -31,4 +31,4 @@ Organizations create account hierarchies to better manage accounts and their rel
 
 1. Select **Save** to finalize the account hierarchy.
 
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

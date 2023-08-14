@@ -1,13 +1,12 @@
 ---
-title: "Create a B-to-B unified contact profile"
-description: "Go through the data unification process to create a single master dataset of business contacts."
-ms.date: 05/30/2023
-ms.reviewer: v-wendysmith
+title: "Create a unified business contact profile"
+description: "Learn how to use the data unification process in Microsoft Dynamics 365 Customer Insights to create a profile of your business contacts that combines data from multiple sources."
+ms.date: 08/30/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
+ms.reviewer: v-wendysmith
 ms.custom: bap-template
-
 searchScope: 
   - ci-map
   - ci-match
@@ -15,15 +14,20 @@ searchScope:
   - customerInsights
 ---
 
-# Create a unified B-to-B contact profile
+# Create a unified business contact profile
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-After [unifying business accounts](data-unification-map-tables.md), you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. Customer Insights B-to-B supports a one-to-many account to contact relationship.  The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
+For **business accounts (B-to-B)** where the data is centered around accounts, unification provides a unified view of your accounts. Contact unification allows contacts for those accounts to be separately unified and associated with the accounts. Contact unification also allows contacts without an account to be included in the unified contact profile.
+
+After unifying business accounts, you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. Customer Insights B-to-B supports a one-to-many account to contact relationship.  The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
-The first few steps are identical to the unifying accounts steps.
+The first few steps to unify contacts are the same as the steps to [unify accounts](../data-unification.md).
+
+> [!TIP]
+> The terms *field* and *column* are used interchangeably in this article to refer to data in a table row, or record.
 
 ## Prerequisites
 
@@ -32,21 +36,25 @@ The first few steps are identical to the unifying accounts steps.
 
 ## Select source fields
 
+1. Sign in to Dynamics 365 Customer Insights.
+
+1. In the left side panel under **Data**, select **Unify**.
+
 1. Under **Unify contacts**, select **Get started**.
 
-1. [Select the tables and fields](data-unification-map-tables.md) for your contact data sources, including the primary keys and attribute types.
+1. [Select the tables and columns](../data-unification-map-tables.md) for your contact data sources, including the primary keys and attribute types.
 
 1. Select **Next**.
 
 ## Remove duplicate records
 
-1. Optionally, [define deduplication rules](data-unification-duplicates.md) for your selected tables.
+1. Optionally, [define deduplication rules](../data-unification-duplicates.md) for your selected tables.
 
 1. Select **Next**.
 
 ## Match conditions
 
-1. [Define the match order and rules](data-unification-match-tables.md) for cross-table matching.
+1. [Define the match order and rules](../data-unification-match-tables.md) for cross-table matching.
 
 1. Select **Next**.
 
@@ -58,12 +66,12 @@ This step in the unification process connects your contact data to its correspon
 
    - If the table contains one or more contacts with known accounts, select **Yes**.
 
-   - If the table does not contain any contact to account relationships, meaning all the contacts are orphans, select **No**. Select **Next** and go to [Unify contact fields](#unify-contact-fields).
+   - If the table doesn't contain any contact to account relationships, meaning all the contacts are orphans, select **No**. Select **Next** and go to [Unify contact fields](#unify-contact-fields).
 
 1. If you selected **Yes** to **Add contact to account relationship?**, enter the following information:
 
    - **Foreign key from contact table**: Choose the attribute that connects your contact table to the account.
-   - **To account table**: Choose the account table associated with the contact.
+   - **To account table**: Choose the account table that's associated with the contact.
 
    :::image type="content" source="media/b2b-contact-relationship.svg" alt-text="Screenshot of Relationship page to connect the contact and account tables.":::
 
@@ -71,7 +79,7 @@ This step in the unification process connects your contact data to its correspon
 
 ## Unify contact fields
 
-1. [Combine and exclude contact fields](data-unification-merge-tables.md).
+1. [Combine and exclude contact columns](../data-unification-merge-tables.md).
 
 1. Select **Next**.
 
@@ -97,40 +105,45 @@ The unification algorithm takes some time to complete and you can't change the c
 
 ### View the results of contact unification
 
-After unification completes, the **Data** > **Unify** page shows the number of unified contact profiles. The results of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
+After unification completes, the **Data** > **Unify** page shows the number of unified contact profiles. The result of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes, or columns, and **Duplicate records** shows the number of duplicate records that were found. The **Matching conditions** tile displays only if multiple tables were selected.
 
 :::image type="content" source="media/b2b-unified-contacts.svg" alt-text="Screenshot of the Data Unify page after contacts are unified.":::
 
-> [!TIP]
-> The **Matching conditions** tile displays only if multiple tables were selected.
-
-We recommend you review the results, particularly the quality of your [match rules](data-unification-update.md#manage-match-rules) and refine them if necessary.
-
-When needed, [make changes to the contact unification settings](data-unification-update.md) and rerun the unified profile.
+We recommend that you review the results, particularly the quality of your [match rules](../data-unification-update.md#manage-match-rules) and refine them if necessary. If needed, [make changes to the contact unification settings](../data-unification-update.md) and rerun the unified profile.
 
 ### Verify output tables from data unification
 
 Go to **Data** > **Tables** to verify the output tables.
 
-The unified contact profile table, called *UnifiedContact*, displays in the **Profiles** section. The first successful unification run creates the *UnifiedContact* table. All subsequent runs expand that table.
+The unified contact profile table, called *UnifiedContact*, appears in the **Profiles** section. The first successful unification run creates the the table. All subsequent runs expand it.
 
 Key columns in the *UnifiedContact* table include:
-- **UnifiedContactId**: Unique identifier assigned by Customer Insights to this unified profile.
-- **FK_ContactToAccountId**: Winner value resulting from the merging of the account foreign keys for this contact. This value is the primary key from a data source, and is used to look up the unified account’s unique CustomerID.
-- **FK_CustomerId**: Unique CustomerID of the contact’s unified accounts. This is a foreign key reference to the Customer table’s CustomerID column. If it is null, the contact does not have an account.
-- **{ContactSourceTable1}{PrimaryKeyColumn}**: Primary key of the winner source record from the named table involved in the unification of the profile.
-- **{ContactSourceTable1}{PrimaryKeyColumn}_Alternate**: A semicolon separated list of all source records from the named table involved in unification of the profile.
 
-Deduplication and conflation tables are created and display in the **System** section. A deduplicated table for each of the source tables is created with the name **Deduplication_DataSource_Tablename**. The **ContactsConflationMatchPairs** table contains information about cross-table matches.
+- **UnifiedContactId**: Uniquely identifies the unified profile. Assigned by Customer Insights.
+
+- **FK_ContactToAccountId**: The primary key from a data source, this value is used to look up he unified account’s unique CustomerID. It's the winner value that results from merging the account foreign keys for the contact.
+
+- **FK_CustomerId**: Uniquely identifies the contact’s unified accounts. This value is a foreign key reference to the 'Customer' table’s 'CustomerID' column. If it's null, the contact doesn't have an account.
+
+- **{ContactSourceTable1}{PrimaryKeyColumn}**: This value is the primary key of the winner source record from the named table that's involved in the unification of the profile.
+
+- **{ContactSourceTable1}{PrimaryKeyColumn}_Alternate**: This value is a semicolon-separated list of all source records from the named table involved in unification of the profile.
+
+Deduplication and conflation tables are created and appear in the **System** section. A deduplicated table for each of the source tables is created with the name **Deduplication_DataSource_Tablename**. The **ContactsConflationMatchPairs** table contains information about cross-table matches.
 
 A deduplication output table contains the following information:
 - IDs / Keys
-  - Primary key and Alternate ID fields. Alternate ID field consists of all the alternate IDs identified for a record.
-  - Deduplication_GroupId field shows the group or cluster identified within a table that groups all the similar records based on the specified deduplication fields. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output table.
-  - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
-- Fields used to define the deduplication rules.
-- Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
 
-## Next Step
+  - Primary key and Alternate ID columns, which consist of all the alternate IDs identified for a record.
 
-Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your contacts.
+  - Deduplication_GroupId column shows the group or cluster that's identified in a table and groups similar records based on the specified deduplication columns. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output table.
+
+  - Deduplication_WinnerId column contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the primary key value for a record, it means that the record is the winner record.
+
+- Columns that are used to define the deduplication rules.
+
+- Rule and Score columns that denote which of the deduplication rules got applied and the score that's returned by the matching algorithm.
+
+## Next step
+
+Configure [activities](activities-contacts.md), [enrichment](b2b-overview.md#enrichments), and [relationships](../relationships.md) to gain more insights about your contacts.

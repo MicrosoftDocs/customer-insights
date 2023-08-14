@@ -72,7 +72,7 @@ A deduplication output table contains the following information:
 
 ## Next Step
 
-- For B-to-B, optionally perform [contact unification](data-unification-contacts.md).
+- For B-to-B, optionally perform [contact unification](b2b/data-unification-contacts.md).
 
 - For B-to-C, configure [activities](activities.md), [enrichments](enrichment-hub.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
 

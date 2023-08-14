@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Create business account (B2B) measures with measure builder
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
 Create measures on the level of individual accounts (customer measure) or on the level of all accounts (business measure).
 
@@ -20,7 +20,7 @@ Create measures on the level of individual accounts (customer measure) or on the
 - Business measure: Generates output as its own table and shows on the home page of your Customer Insights environment.
 
 > [!TIP]
-> If your B2B environment [uses accounts with hierarchies](relationships.md#set-up-account-hierarchies), choose whether to aggregate the measure across related sub-accounts.
+> If your B2B environment [uses accounts with hierarchies](../relationships.md#set-up-account-hierarchies), choose whether to aggregate the measure across related sub-accounts.
 
 1. Go to **Insights** > **Measures**.
 
@@ -29,7 +29,8 @@ Create measures on the level of individual accounts (customer measure) or on the
    :::image type="content" source="media/measure-b2b.png" alt-text="Empty configuration screen for a B2B measure. ":::
 
 1. Select **Edit details** next to Untitled measure. Provide a name for the measure. Optionally, add [tags](work-with-tags-columns.md#manage-tags) to the measure. 
-   :::image type="content" source="media/measures_edit_details.png" alt-text="Edit details dialog box.":::
+
+   :::image type="content" source="../media/measures_edit_details.png" alt-text="Edit details dialog box.":::
 
 1. Select **Done**.
 
@@ -68,11 +69,11 @@ Create measures on the level of individual accounts (customer measure) or on the
 
 1. If there are values in your data that must be replaced with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
 
-1. If you [use accounts with hierarchies](relationships.md#set-up-account-hierarchies), review **Roll up sub-accounts**.
+1. If you [use accounts with hierarchies](../relationships.md#set-up-account-hierarchies), review **Roll up sub-accounts**.
    - To calculate the measure for every account, select **No**. Every account gets its own result.
    - To calculate one result, select **Yes**. Select **Edit** to choose the account hierarchy according to the ingested hierarchies and select **Apply**. The measure yields only one result because it's aggregated with sub-accounts.
 
-1. If there are multiple paths between the data table you mapped and the *Customer* table, choose one of the identified [relationship paths](relationships.md). Measure results can vary depending on the selected path.
+1. If there are multiple paths between the data table you mapped and the *Customer* table, choose one of the identified [relationship paths](../relationships.md). Measure results can vary depending on the selected path.
 
    1. Select **Relationship path** and choose the path that should be used to identify your measure. If there's only a single path to the *Customer* table, this control won't show.
    1. Select **Done** to apply your selection.
@@ -83,9 +84,4 @@ Create measures on the level of individual accounts (customer measure) or on the
 
 1. Select **Run** to calculate results for the configured measure. Select **Save and close** if you want to keep the current configuration and run the measure later. The **Measures** page displays.
 
-## Next steps
-
-- [Schedule a measure](measures-schedule.md).
-- Use existing measures to create [a customer segment](segments.md).
-
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

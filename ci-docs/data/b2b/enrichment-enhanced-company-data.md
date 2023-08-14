@@ -1,21 +1,21 @@
 ---
 title: "Enrich company profiles with enhanced company data"
 description: "Enrich and normalize company data with Microsoft's models."
-ms.date: 11/15/2022
+ms.date: 08/30/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
+ms.custom: bap-template
 ---
 
 # Enrich company profiles with enhanced company data
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
 Use Microsoft’s models and compiled company data to correct, supplement, and standardize your company profiles. We'll use the [Common Data Model format](/common-data-model/schema/core/applicationcommon/account) for better accuracy and insights.
 
-You can also [enhance company data on data sources](data-sources-enrichment.md) to improve the match accuracy in the data unification process.
+You can also [enhance company data on data sources](../data-sources-enrichment.md) to improve the match accuracy in the data unification process.
 
 For public companies in the United States, information such as revenue, stock ticker, industry, and more is available.  
 
@@ -82,7 +82,7 @@ The model doesn't:
 
 ## View enrichment results
 
-[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
+[!INCLUDE [enrichment-results](../includes/enrichment-results.md)]
 
 ### Overview card
 
@@ -94,6 +94,6 @@ The **Customers changes overview** tile shows details about the coverage of the 
 
 ## Next steps
 
-[!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]
