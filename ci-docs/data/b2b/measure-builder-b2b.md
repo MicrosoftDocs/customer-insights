@@ -1,6 +1,6 @@
 ---
-title: "Create B2B measures with measure builder"
-description: "Build measures from scratch to analyze key metrics about your business."
+title: "Create business account (B2B) measures with measure builder"
+description: "Build measures from scratch to analyze key metrics about your business in Dynamics 365 Customer Insights."
 ms.date: 08/30/2023
 ms.topic: how-to
 author: JimsonChalissery
@@ -9,7 +9,9 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Create B2B measures with measure builder
+# Create business account (B2B) measures with measure builder
+
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Create measures on the level of individual accounts (customer measure) or on the level of all accounts (business measure).
 

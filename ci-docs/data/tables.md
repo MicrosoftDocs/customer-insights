@@ -65,7 +65,6 @@ For more information about the **Relationships** tab, see [Relationships](relati
 Some Customer Insights tables are available in Dataverse. The sections below describe the expected schema of these tables.
 
 - [CustomerProfile](#customerprofile)
-- [UnifiedContact](#unifiedcontact)
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
 - [CustomerMeasure](#customermeasure)
@@ -75,34 +74,7 @@ Some Customer Insights tables are available in Dataverse. The sections below des
 
 ### CustomerProfile
 
-This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile depends on the tables and attributes used in the data unification process. A customer profile schema usually contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile). For the B-to-B scenario, the customer profile contains unified accounts, and the schema usually contains a subset of the attributes from the [Common Data Model definition of Account](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account).
-
-### UnifiedContact
-
-A UnifiedContact contains unified information about a contact. Contacts are [individuals that are mapped to an account](data-unification-contacts.md) in a B-to-B scenario.
-
-| Column                       | Type                | Description     |
-| ---------------------------- | ------------------- | --------------- |
-|  BirthDate            | DateTime       |  Date of birth of the contact               |
-|  City                 | Text |  City of the contact address               |
-|  ContactId            | Text |  ID of the contact profile               |
-|  CountryOrRegion      | Text |  Country/Region of the contact address               |
-|  CustomerId           | Text |  ID of the account the contact is mapped to               |
-|  TableName            | Text |  Name of the table               |
-|  FirstName            | Text |  First name of the contact               |
-|  FK_AccountID         | Text |  GUID representing the unified account  |
-|  FK_ContactToAccountID| Text |  Unified source value for the contact's associated account |
-|  Gender               | Text |  Gender of the contact               |
-|  Id                   | Text |  Deterministic GUID based on `Identifier`               |
-|  Identifier           | Text |  Internal ID of the contact profile: `UnifiedContact|CustomerId|ContactId`               |
-|  JobTitle             | Text |  Job title of the contact               |
-|  LastName             | Text |  Last name of the contact               |
-|  PostalCode           | Text |  ZIP code of the contact address               |
-|  PrimaryEmail         | Text |  Email address of the contact               |
-|  PrimaryPhone         | Text |  Telephone number of the contact               |
-|  StateOrProvince      | Text |  State or province of the contact address               |
-|  StreetAddress        | Text |  Street of the contact address               |
-|  UnifiedContactId     | Unique identifier   |  GUID for the contact               |
+This table contains the unified customer profile from Customer Insights. The schema for a unified customer profile depends on the tables and attributes used in the data unification process. A customer profile schema usually contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
 
 ### AlternateKey
 
