@@ -17,38 +17,29 @@ With Dynamics 365 Customer Insights, business accounts (B2B) aren't supported. H
 
 ## Supported feature areas
 
-- Activities: Support for [accounts](../activities.md) and related [contacts](activities-contacts.md) to create activities and show them in a timeline.
-- [Relationships](../relationships.md): The activity wizard helps creating relationships between the tables so the account view can show all activities from contacts. Contacts can drill up to see contact view and [hierarchies](account-hierarchies.md) can be used for account activity aggregations.
-- [Measures](../measures.md): Supports measures created from the [measure builder](measure-builder-b2b.md) with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.
-- [Segments](../segments.md): Supports segments that are created from scratch with the [segment builder](segment-builder-b2b.md). Segments can be based on accounts or contacts.
+- Activities: Supports activities for [accounts](../activities.md) and related [contacts](activities-contacts.md) and shows them in a timeline.
+- [Customer profiles](../customer-profiles.md): In addition to the customer profile, **Contacts for this customer** display. Each contact is shown with their fields. Empty fields are hidden. For more information, see [View customer profiles](../customer-profiles.md). Learn how to [filter contact activities within the timeline](activities-contacts.md#contact-level-activity-timeline-filtering).
 - [Data ingestion](../data-sources.md)
 - [Data unification](data-unification-b2b.md)
 - [Enrichment](#enrichments): Some enrichment types are available only for business accounts.
+- [Exports](#exports)
+- [Measures](../measures.md): Supports measures created from the [measure builder](measure-builder-b2b.md) with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.
 - [Predictions](../predictions.md): Supports [transactional churn predictions](predict-transactional-b2b.md).
-- [Activation and export](#exports)
+- [Relationships](../relationships.md): Supports creating relationships between the tables so the account view can show all activities from contacts. Contacts can drill up to see contact view and [hierarchies](account-hierarchies.md) can be used for account activity aggregations.
+- [Segments](../segments.md): Supports segments that are created from scratch with the [segment builder](segment-builder-b2b.md). Segments can be based on accounts or contacts.
 - [System settings](../system.md) and [user management](../permissions.md): All features in this area are the same for business accounts.
-
-## Environment
-
-To create an environment, see [Create a new environment.](../create-environment.md) When creating the environment, select your business type: business accounts.
-
-## Dataverse storage capacity entitlement
-
-A Customer Insights subscription entitles you to extra capacity for your organization's existing [Dataverse storage capacity](/power-platform/admin/capacity-storage). The added capacity depends on the number of profiles that your subscription uses.
-
-For example, if you have a B2B subscription with 30,000 accounts, your total storage capacity is 45 GB (3 x 15 GB) database storage, and 60-GB file storage (3 x 20 GB).
-
-## Customer profiles
-
-On the **Customers** page, select a customer tile to view details for the selected customer. For business accounts, in addition to the customer profile, **Contacts for this customer** display. Each contact is shown with their fields. Empty fields are hidden. For more information, see [View customer profiles.](../customer-profiles.md)
-
-Learn how to [filter contact activities within the timeline](activities-contacts.md#contact-level-activity-timeline-filtering).
 
 ## Customer Card Add-in
 
 If you install the [Customer Card Add-in](../customer-card-add-in.md) and want to add the Customer Card controls to forms, we recommend adding the controls to the Account form. In that case, replace "contact" with "account" in the steps. See [Add Customer Card controls to forms](../customer-card-add-in.md#add-customer-card-controls-to-forms).
 
 The **Enrichment control** requires active enrichments. The card add-in supports [Office engagement data](enrichment-office.md) provided by Microsoft.
+
+## Dataverse storage capacity entitlement
+
+A Customer Insights subscription entitles you to extra capacity for your organization's existing [Dataverse storage capacity](/power-platform/admin/capacity-storage). The added capacity depends on the number of profiles that your subscription uses.
+
+For example, if you have a B2B subscription with 30,000 accounts, your total storage capacity is 45 GB (3 x 15 GB) database storage, and 60-GB file storage (3 x 20 GB).
 
 ## Enrichments
 
@@ -69,13 +60,17 @@ For more information, see [data enrichment (preview) overview](../enrichment-hub
 
 [Enhanced company data](enrichment-enhanced-company-data.md) is supported for enriching your customer data before data unification.
 
+## Environment
+
+To create an environment, see [Create a new environment.](../create-environment.md) When creating the environment, select your business type: business accounts.
+
 ## Exports
 
-Most exports are available for business accounts. Go to [Set up and manage exports](export-manage.md). Business accounts aren't supported for Microsoft Teams bot.
+Most exports are available for business accounts. Go to [Set up and manage exports](../export-manage.md). Business accounts aren't supported for Microsoft Teams bot.
 
 Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts. See [Segment exports](#segment-exports) for more information.
 
-## Segment exports
+### Segment exports
 
 You can export segment tables from Customer Insights. Segments can represent a list of accounts or contacts. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](../export-linkedin-ads.md) when you choose the **company** option while defining the export.
 
@@ -85,7 +80,7 @@ With two segment types (contacts and accounts), Customer Insights automatically 
 
 When configuring the export, you select the included data fields, depending on the target system you are exporting data to.
 
-### Limits on segment exports
+#### Limits on segment exports
 
 - Third-party target systems may limit the number of customer profiles that you can export.
 - For business accounts, you'll see the number of accounts or contacts depending on the segment. You will get a warning if the segment is too large. Exceeding the limits of the target systems results will skip the export.
@@ -98,11 +93,11 @@ Delegation for **UnifiedContact** only works for the fields **ContactId** and **
 
 ## Tables
 
-For the B2B scenario, the customer profile contains unified accounts, and the schema usually contains a subset of the attributes from the [Common Data Model definition of Account](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account).
+For the B2B scenario, the customer profile contains unified accounts, and the schema usually contains a subset of the attributes from the [Common Data Model definition of Account](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account). An additional table, *UnifiedContact* is created if contact data is unified.
 
 ### UnifiedContact
 
-A UnifiedContact contains unified information about a contact. Contacts are [individuals that are mapped to an account](data-unification-contacts.md) in a B2B scenario.
+The *UnifiedContact* table contains unified information about a contact. Contacts are [individuals that are mapped to an account](data-unification-contacts.md) in a B2B scenario.
 
 | Column                       | Type                | Description     |
 | ---------------------------- | ------------------- | --------------- |
