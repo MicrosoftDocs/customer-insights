@@ -30,7 +30,7 @@ Once enabled by a Dynamics 365 administrator, sellers and representatives can vi
 
 1. Enable the setting **Enable Customer Insights Timeline Integration** (*msdyn_IsTimelineIntegrationEnabled*). For more information, see [Adding an existing setting definition](/power-apps/maker/data-platform/create-edit-configure-settings#adding-an-existing-setting-definition).
 
-1. Attach the **Customer Insights Timeline Connector** (*msdyn_CustomerInsightsTimelineConnector*) to the Dynamics Timeline control on Account or Contact forms. For more information, see [Configure the custom connector for the timeline control](/power-apps/maker/model-driven-apps/custom-connectors-timeline-control#configure-the-custom-connector-for-the-timeline-control).
+1. Attach the **Customer Insights - Data Timeline Connector** (*msdyn_CustomerInsightsTimelineConnector*) to the Dynamics Timeline control on Account or Contact forms. For more information, see [Configure the custom connector for the timeline control](/power-apps/maker/model-driven-apps/custom-connectors-timeline-control#configure-the-custom-connector-for-the-timeline-control).
 
    > [!TIP]
    > By default, the connector is automatically attached to the Dynamics Timeline control on the main Contact and main Account forms.
