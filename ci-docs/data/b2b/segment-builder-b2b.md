@@ -25,7 +25,7 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
 
 1. Select **New** > **Segment of Accounts** or **Segment of Contacts (preview)** based on the type of segment you want to create. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
 
-1. If an [account hierarchy](../relationships.md#set-up-account-hierarchies) has been defined and you want to create rules to filter out data based on child and parent relationship, select **Use hierarchy? (preview)**, select the hierarchy, and then **Apply**.
+1. If an [account hierarchy](account-hierarchies.md) has been defined and you want to create rules to filter out data based on child and parent relationship, select **Use hierarchy? (preview)**, select the hierarchy, and then **Apply**.
 
    :::image type="content" source="media/segment_acct_hierarchy.png" alt-text="Segment select account hierarchy pane.":::
 

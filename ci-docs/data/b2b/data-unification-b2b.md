@@ -32,6 +32,9 @@ Unification is performed in the following order:
 
 1. [Unified customer fields](../data-unification-merge-tables.md) (previously called Merge): In the unified customer fields step, determine which source fields should be included, excluded, or merged into a unified customer profile.  
 
+   > [!NOTE]
+   > Group profiles into households or clusters is not supported.
+
 1. [Review](../data-unification-review.md) and select **Create account profiles** to create the unified profile.
 
    After unification, the **Data** > **Unify** page shows the number of unified customer (account) profiles. The unified account profile table is called *Customer* and displays in the **Profiles** section of the **Data** > **Tables** page.

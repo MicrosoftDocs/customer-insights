@@ -1,7 +1,7 @@
 ---
 title: "Teams bot for Dynamics 365 Customer Insights (preview)"
 description: "Look up unified customer profiles in Microsoft Teams with the help of a bot."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -22,8 +22,6 @@ Connect with Microsoft Teams to let a bot look up unified customer profiles in T
 - The [unification process](data-unification.md) is complete.
 - Fields are added to the [search & filter index](search-filter-index.md).
 - Customer Insights and Teams are in the same organization.
-- Your environment has the primary target audience set to individual customers. Business accounts aren't supported.
-
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 

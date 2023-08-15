@@ -13,7 +13,7 @@ ms.reviewer: v-wendysmith
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Dynamics 365 Customer Insights lets you configure your environment for different primary target audiences: individual consumers (B-to-C) and business accounts (B-to-B). In B-to-C scenarios, the data is centered around individuals. For B-to-B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in Customer Insights, depending on your environment focus. For more information about differences, review the docs of the feature areas. 
+Dynamics 365 Customer Insights lets you configure your environment for different primary target audiences: individual consumers (B2C) and business accounts (B2B). In B2C scenarios, the data is centered around individuals. For B2B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in Customer Insights, depending on your environment focus. For more information about differences, review the docs of the feature areas. 
 
 ## Create an environment for business accounts
 

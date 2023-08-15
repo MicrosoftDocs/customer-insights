@@ -25,7 +25,7 @@ With Dynamics 365 Customer Insights, business accounts (B2B) aren't supported. H
 - [Data unification](data-unification-b2b.md)
 - [Enrichment](#enrichments): Some enrichment types are available only for business accounts.
 - [Predictions](../predictions.md): Supports [transactional churn predictions](predict-transactional-b2b.md).
-- [Activation and export](../export-manage.md): Exports are available for business accounts. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts. See [Segment exports](#segment-exports) for more information.
+- [Activation and export](#exports)
 - [System settings](../system.md) and [user management](../permissions.md): All features in this area are the same for business accounts.
 
 ## Environment
@@ -69,11 +69,11 @@ For more information, see [data enrichment (preview) overview](../enrichment-hub
 
 [Enhanced company data](enrichment-enhanced-company-data.md) is supported for enriching your customer data before data unification.
 
-## Power Apps
+## Exports
 
-With a [Power Apps connector](../export-power-apps.md), you can choose the **UnifiedContact** table to display the contacts of a customer.
+Most exports are available for business accounts. Go to [Set up and manage exports](export-manage.md). Business accounts aren't supported for Microsoft Teams bot.
 
-Delegation for **UnifiedContact** only works for the fields **ContactId** and **CustomerId**.
+Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts. See [Segment exports](#segment-exports) for more information.
 
 ## Segment exports
 
@@ -90,13 +90,19 @@ When configuring the export, you select the included data fields, depending on t
 - Third-party target systems may limit the number of customer profiles that you can export.
 - For business accounts, you'll see the number of accounts or contacts depending on the segment. You will get a warning if the segment is too large. Exceeding the limits of the target systems results will skip the export.
 
+### Power Apps connector
+
+With a [Power Apps connector](../export-power-apps.md), you can choose the **UnifiedContact** table to display the contacts of a customer.
+
+Delegation for **UnifiedContact** only works for the fields **ContactId** and **CustomerId**.
+
 ## Tables
 
 For the B2B scenario, the customer profile contains unified accounts, and the schema usually contains a subset of the attributes from the [Common Data Model definition of Account](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account).
 
 ### UnifiedContact
 
-A UnifiedContact contains unified information about a contact. Contacts are [individuals that are mapped to an account](data-unification-contacts.md) in a B-to-B scenario.
+A UnifiedContact contains unified information about a contact. Contacts are [individuals that are mapped to an account](data-unification-contacts.md) in a B2B scenario.
 
 | Column                       | Type                | Description     |
 | ---------------------------- | ------------------- | --------------- |

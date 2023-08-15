@@ -16,7 +16,7 @@ ms.custom: bap-template
 Business contact activities are actions or events performed by business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your contact activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Insights Timeline Integration](../activities-in-d365-timeline.md) or the [Customer Card Add-in](../customer-card-add-in.md) solution.
 
 > [!TIP]
-> In B-to-B environments, you can select between account tables and other tables. If you select an account table, the relationship path is automatically set. For other tables, you have to define the relationship path over one or more intermediate tables until you reach an account table.
+> In B2B environments, you can select between account tables and other tables. If you select an account table, the relationship path is automatically set. For other tables, you have to define the relationship path over one or more intermediate tables until you reach an account table.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ Business contact activities are actions or events performed by business contacts
 
 ## Define contact activities (preview)
 
-For business accounts (B-to-B), use a *UnifiedContact* table to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
+For business accounts (B2B), use a *UnifiedContact* table to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
 
 > [!NOTE]
 > To define contact-level activities, a [*UnifiedContact*](data-unification-contacts.md) table must be created.
