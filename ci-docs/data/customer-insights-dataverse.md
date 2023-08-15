@@ -1,18 +1,18 @@
 ---
-title: Work with Customer Insights data in Microsoft Dataverse
+title: Work with Customer Insights - Data and Microsoft Dataverse
 description: Learn how to connect Customer Insights and Microsoft Dataverse and understand the output tables that are exported to Dataverse.
-ms.date: 07/17/2023
+ms.date: 09/01/2023
 ms.topic: conceptual
 author: kishorem
 ms.author: kishorem
 ms.custom: bap-template
 ---
 
-# Work with Customer Insights data in Microsoft Dataverse
+# Work with Customer Insights - Data and Microsoft Dataverse
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Customer Insights makes its output tables available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The output tables are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps.
+Dynamics 365 Customer Insights - Data makes its output tables available in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). This integration enables easy data sharing and custom development through a low code/no code approach. The output tables are available as tables in a Dataverse environment. You can use the data for any other application based on Dataverse tables. These tables enable scenarios like automated workflows through Power Automate or building apps with Power Apps.
 
 You can also [ingest data from on-premises data sources using Power Platform dataflows and gateways](connect-power-query.md#add-data-from-on-premises-data-sources) into your Dataverse environment.
 
@@ -21,12 +21,12 @@ You can also [ingest data from on-premises data sources using Power Platform dat
 - Customer Insights and Dataverse environments must be hosted in the same region.
 - A global administrator role set up in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you're added to those security groups.
 - A Common Data Service/Dataverse [license is assigned](/power-platform/admin/create-users#to-assign-a-license) to you to get Read-Write access mode. Unlicensed administrators get Administrative access mode only.
-- No other Customer Insights environment already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
+- No other Customer Insights - Data environment already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
 - A Microsoft Dataverse environment connected to a single storage account if you configure the environment to [use your Azure Data Lake Storage](own-data-lake-storage.md).
 
 ## Dataverse storage capacity entitlement
 
-A Customer Insights subscription entitles you to extra capacity for your organization's existing [Dataverse storage capacity](/power-platform/admin/capacity-storage). The added capacity depends on the number of profiles that your subscription uses.
+A Customer Insights - Data subscription entitles you to extra capacity for your organization's existing [Dataverse storage capacity](/power-platform/admin/capacity-storage). The added capacity depends on the number of profiles that your subscription uses.
 
 **Example:**
 
@@ -36,15 +36,15 @@ Log capacity isn't incremental and fixed for your organization.
 
 For more information about the detailed capacity entitlements, see [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-## Connect a Dataverse environment to Customer Insights
+## Connect a Dataverse environment to Customer Insights - Data
 
-The **Microsoft Dataverse** step lets you connect Customer Insights with your Dataverse environment while [creating a Customer Insights environment](create-environment.md).
+The **Microsoft Dataverse** step lets you connect Customer Insights - Data with your Dataverse environment while [creating an environment](create-environment.md).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto-enabled for new environments.":::
 
 1. Provide the URL to your Dataverse environment or leave blank to have one created for you.
 
-   [Power Platform admins can control who can create a new Dataverse environments](/power-platform/admin/control-environment-creation). If you're trying to set up a new Customer Insights environment and can't, the admin might have disabled the creation of Dataverse environments for everyone except admins.
+   [Power Platform admins can control who can create a new Dataverse environments](/power-platform/admin/control-environment-creation). If you're trying to set up a new environment and can't, the admin might have disabled the creation of Dataverse environments for everyone except admins.
 
 1. If you're using your own Data Lake Storage account:
    1. Select **Enable data sharing** with Dataverse.
@@ -52,10 +52,10 @@ The **Microsoft Dataverse** step lets you connect Customer Insights with your Da
 
 ## Enable data sharing with Dataverse from your own Azure Data Lake Storage (preview)
 
-In [your own Azure Data Lake Storage account](own-data-lake-storage.md), verify the user setting up the Customer Insights environment has at least **Storage Blob Data Reader** permissions on the `customerinsights` container in the storage account.
+In [your own Azure Data Lake Storage account](own-data-lake-storage.md), verify the user who sets up the Customer Insights - Data environment has at least **Storage Blob Data Reader** permissions on the `customerinsights` container in the storage account.
 
 > [!NOTE]
-> Data sharing is applicable only if you use your own Azure Data Lake Storage account. This setting isn't available if the Customer Insights environment uses the default Dataverse storage.
+> Data sharing is applicable only if you use your own Azure Data Lake Storage account. This setting isn't available if the environment uses the default Dataverse storage.
 
 ### Limitations
 
@@ -109,11 +109,11 @@ Set up PowerShell to execute PowerShell scripts.
 
 ## Remove an existing connection to a Dataverse environment
 
-When connecting to a Dataverse environment, the error message **This CDS organization is already attached to another Customer Insights instance** means that the Dataverse environment is already used in a Customer Insights environment. You can remove the existing connection as a global administrator on the Dataverse environment. It can take a couple of hours to populate the changes.
+When connecting to a Dataverse environment, the error message **This CDS organization is already attached to another Customer Insights instance** means that the Dataverse environment is already used in a Customer Insights - Data environment. You can remove the existing connection as a global administrator on the Dataverse environment. It can take a couple of hours to populate the changes.
 
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select the environment from the environment picker.
-1. If you have Dynamics 365 Marketing installed on the Dataverse environment, and you have [it connected to your Customer Insights environment](/dynamics365/marketing/real-time-marketing-ci-profile), remove this connection first. Otherwise, skip this step and proceed to step 4.
+1. If you have Dynamics 365 Customer Insights - Journeys installed on the Dataverse environment, and you have [it connected to your Customer Insights - Data environment](/dynamics365/marketing/real-time-marketing-ci-profile), remove this connection first. Otherwise, skip this step and proceed to step 4.
     1. Go to **Tables**.
     1. Find the table *msdynmkt_configuration*.
     1. Go to the *CXPConfig* row in this table.
@@ -135,6 +135,6 @@ If the removal of the connection fails due to dependencies, you need to remove t
 
 ## Output tables in Dataverse
 
-Some Customer Insights tables are available in Dataverse. For more information, see [Customer Insights tables in Dataverse](tables.md#customer-insights-tables-in-dataverse).
+Some output tables are available in Dataverse. For more information, see [Customer Insights - Data tables in Dataverse](tables.md#customer-insights-tables-in-dataverse).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,15 +1,12 @@
 ---
 title: "Connect to data in a Microsoft Dataverse managed data lake"
 description: "Import data from a Microsoft Dataverse managed data lake."
-ms.date: 05/05/2023
+ms.date: 09/01/2023
 ms.topic: how-to
-author: adkuppa
-ms.author: adkuppa
+author: mukeshpo
+ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
-searchScope: 
-  - ci-dataverse
-  - customerInsights
 ---
 
 # Connect to data in a Microsoft Dataverse managed data lake
@@ -26,7 +23,7 @@ Only one data source of an environment can simultaneously use the same Dataverse
 
 - Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-- Only Dataverse tables with [change tracking](/power-platform/admin/enable-change-tracking-control-data-synchronization) enabled are visible. These tables can be exported to the Dataverse-managed data lake and used in Customer Insights. Out-of-box Dataverse tables have change tracking enabled by default. You need to turn change tracking on for custom tables. To check if a Dataverse table is enabled for change tracking, go to [Power Apps](https://make.powerapps.com) > **Data** > **Tables**. Find the table of your interest and select it. Go to **Settings** > **Advanced options** and review the **Track changes** setting.
+- Only Dataverse tables with [change tracking](/power-platform/admin/enable-change-tracking-control-data-synchronization) enabled are visible. These tables can be exported to the Dataverse-managed data lake and used in Customer Insights - Data. Out-of-box Dataverse tables have change tracking enabled by default. You need to turn change tracking on for custom tables. To check if a Dataverse table is enabled for change tracking, go to [Power Apps](https://make.powerapps.com) > **Data** > **Tables**. Find the table of your interest and select it. Go to **Settings** > **Advanced options** and review the **Track changes** setting.
 
 - You must be an admin on the Dataverse organization to proceed and view the list of tables available in the managed lake.
 
@@ -42,7 +39,7 @@ Only one data source of an environment can simultaneously use the same Dataverse
 
 1. Provide the **Server address** for the Dataverse organization, and select **Sign in**.
 
-1. Select the tables you want to ingest to Customer Insights from the available list.
+1. Select the tables you want to import from the list.
 
    > [!NOTE]
    > If some tables are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights). You can't change the selection. These tables will be available once the data source is created.

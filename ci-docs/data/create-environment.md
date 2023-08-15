@@ -1,15 +1,12 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 ms.custom: bap-template
-searchScope: 
-  - ci-home
-  - customerInsights
 ---
 
 # Create a new environment
@@ -25,7 +22,7 @@ After the first environment is created, the global administrator of the Microsof
 
 ## Prerequisites
 
-[Administrator permissions](permissions.md) in Customer Insights
+[Administrator permissions](permissions.md) in Customer Insights - Data.
 
 ## Start the environment creation process
 
@@ -39,20 +36,20 @@ After the first environment is created, the global administrator of the Microsof
 
 1. Choose whether you want to create an environment from scratch or copy data from another environment. [Copying data from another environment](#copy-the-environment-configuration) requires additional steps.
 
-   :::image type="content" source="media/environment-settings-dialog.png" alt-text="Dialog to create a new Customer Insights environment.":::
+   :::image type="content" source="media/environment-settings-dialog.png" alt-text="Dialog to create a new environment.":::
 
 1. Provide the following details:
 
    - **Name**: Name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
    - **Choose your business**: Primary audience for the new environment: individual consumers (B-to-C) or [business accounts](work-with-business-accounts.md) (B-to-B). If your organization mainly does business with individuals, such as a retailer or a coffee shop, choose individual consumers. If your main audience is other companies, such as a car manufacturer or a paper company, choose business accounts.
    - **Type**: Type of environment: production or sandbox. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
-   - **Region**: Region into which the service is deployed and hosted. To [use your own Azure Data Lake Storage account](own-data-lake-storage.md) or [connect to an existing Microsoft Dataverse organization](customer-insights-dataverse.md), the Customer Insights environment must be in the same region.
+   - **Region**: Region into which the service is deployed and hosted. To [use your own Azure Data Lake Storage account](own-data-lake-storage.md) or [connect to an existing Microsoft Dataverse organization](customer-insights-dataverse.md), all environments must be in the same region.
 
 1. Select **Next**.
 
 ## Step 2: Configure data storage
 
-1. Choose where to store the Customer Insights data:
+1. Choose where to store the data:
 
    - **Customer Insights storage**: Data storage is managed automatically. It's the default option and unless there are specific requirements to store data in your own storage account, we recommend using this option.
    - **Azure Data Lake Storage Gen2**: Your own Azure Data Lake Storage account to store the data so you have full control where the data is stored. Follow the steps in [Use your own Azure Data Lake Storage account](own-data-lake-storage.md).
@@ -63,9 +60,9 @@ After the first environment is created, the global administrator of the Microsof
 
 ## Step 3: Connect to Microsoft Dataverse
 
-Your Customer Insights environment requires a Microsoft Dataverse environment attached to it. Select an existing Dataverse environment that doesn't already have a Customer Insights environment attached to it. Or you can choose to have a new Microsoft Dataverse environment created and attached. Additionally, if you chose to use your own Azure Data Lake storage in the previous step, you can enable data sharing with Dataverse to use it with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps.
+Your environment requires a Microsoft Dataverse environment attached to it. Select an existing Dataverse environment that doesn't already have a Customer Insights - Data environment attached to it. Or you can choose to have a new Microsoft Dataverse environment created and attached. Additionally, if you chose to use your own Azure Data Lake storage in the previous step, you can enable data sharing with Dataverse to use it with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps.
 
-1. Follow the steps in [Work with Customer Insights data in Microsoft Dataverse](customer-insights-dataverse.md).
+1. Follow the steps in [Work with data in Microsoft Dataverse](customer-insights-dataverse.md).
 
    :::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto-enabled for net new environments.":::
 
@@ -79,9 +76,9 @@ To change some of the settings later, see [Manage environments](manage-environme
 
 ## Work with your new environment
 
-Review the following articles to help you get started with configuring Customer Insights:
+Review the following articles to help you get started:
 
-- [Get started with Customer Insights in minutes with a single CSV file](data-sources-single.md).
+- [Get started in minutes with a single CSV file](data-sources-single.md).
 
   > [!NOTE]
   > [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
