@@ -7,15 +7,6 @@ ms.topic: how-to
 author: srivas15
 ms.author:  shsri
 ms.custom: bap-template
-searchScope: 
-  - ci-entities
-  - ci-customer-card
-  - ci-relationships
-  - ci-activities
-  - ci-activities-wizard
-  - ci-measures
-  - ci-segment-suggestions
-  - customerInsights
 ---
 
 # Customer contact activities
@@ -31,7 +22,7 @@ Customer activities are actions or events performed by customers. For example, t
 
 ## Define customer activities
 
-Customer Insights helps you with simple steps to define all activities at once.
+Follow these steps to define all activities at once.
 
 1. Go to **Data** > **Activities**. Select **Configure activities**.
 
@@ -43,7 +34,7 @@ Customer Insights helps you with simple steps to define all activities at once.
    - **Primary key**: The primary key uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    > [!NOTE]
-   > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, Customer Insights must delete all old rows and insert all new rows, causing an increase in processing time.
+   > The primary key for each row should remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, the system deletes all old rows and inserts all new rows, causing an increase in processing time.
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with table and primary key.":::
 
@@ -60,7 +51,7 @@ Customer Insights helps you with simple steps to define all activities at once.
    - **Additional detail** (optional): Field with relevant information for this activity.
    - **Show this activity in the timeline on your customer profile?**: **Yes** to show the activity in the timeline or **No** to hide it. Optionally, choose an icon to represent the activity on the timeline.
      > [!NOTE]
-     > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](apis.md) either.
+     > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [API](apis.md) either.
    
    - **Map field types for your activity's attributes?**: **Yes** to help the system better understand the relevance of your activity data or **No** do not map.
 

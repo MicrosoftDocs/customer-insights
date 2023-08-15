@@ -1,24 +1,19 @@
 ---
 title: "Connect to data in Azure Data Lake Storage"
-description: "Work with Common Data Model data using Azure Data Lake Storage."
-ms.date: 04/07/2023
+description: "Work with data from Azure Data Lake Storage."
+ms.date: 09/01/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
-searchScope: 
-  - ci-data-sources
-  - ci-create-data-source
-  - ci-attach-cdm
-  - customerInsights
 ---
 
 # Connect to data in Azure Data Lake Storage
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Storage Gen2 account. Data ingestion can be full or incremental.
+Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lake Storage Gen2 account. Data ingestion can be full or incremental.
 
 ## Prerequisites
 
@@ -28,11 +23,11 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 
 - To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
-- The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights environment and the subscriptions must be in the same tenant. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Settings** > **System** > **About** in Customer Insights.
+- The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights environment and the subscriptions must be in the same tenant. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Settings** > **System** > **About** in Customer Insights - Data.
 
-- Data stored in online services may be stored in a different location than where data is processed or stored in Customer Insights. By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Customer Insights. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+- Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-- The Customer Insights service principal must be in one of the following roles to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
+- The Customer Insights - Data service principal must be in one of the following roles to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
   - Storage Blob Data Reader
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
@@ -42,11 +37,11 @@ Ingest data into Dynamics 365 Customer Insights using your Azure Data Lake Stora
 - Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the tables such as table columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
   > [!NOTE]
-  > If any of the fields in the .parquet files have data type Int96, the data may not display on the **Tables** page. Customer Insights recommends using standard data types, such as the Unix timestamp format (which represents time as the number of seconds since January 1, 1970, at midnight UTC).
+  > If any of the fields in the .parquet files have data type Int96, the data may not display on the **Tables** page. We recommend using standard data types, such as the Unix timestamp format (which represents time as the number of seconds since January 1, 1970, at midnight UTC).
 
 ## Recommendations
 
-For optimal performance, Customer Insights recommends the size of a partition be 1 GB or less and the number of partition files in a folder must not exceed 1000.
+For optimal performance, the size of a partition should be 1 GB or less and the number of partition files in a folder must not exceed 1000.
 
 ## Connect to Azure Data Lake Storage
 
@@ -60,7 +55,7 @@ For optimal performance, Customer Insights recommends the size of a partition be
 
 1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
 
-1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
+1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
 
    - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
@@ -68,8 +63,8 @@ For optimal performance, Customer Insights recommends the size of a partition be
    > [!NOTE]
    > You need one of the following roles either to the container or the storage account to create the data source:
    >
-   >  - Storage Blob Data Reader is sufficient to read from a storage account and ingest the data to Customer Insights.
-   >  - Storage Blob Data Contributor or Owner is required if you want to edit the manifest files directly in Customer Insights.  
+   >  - Storage Blob Data Reader is sufficient to read from a storage account and ingest the data to Customer Insights - Data.
+   >  - Storage Blob Data Contributor or Owner is required if you want to edit the manifest files directly in Customer Insights - Data.  
   
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
    > [!NOTE]
@@ -164,7 +159,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 ## Edit an Azure Data Lake Storage data source
 
-You can update the *Connect to storage account using* option. For more information, see [Connect Customer Insights to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
+You can update the *Connect to storage account using* option. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
 
 1. Go to **Data** > **Data sources**. Next to the data source you'd like to update, select  **Edit**.
 
@@ -192,13 +187,12 @@ You can update the *Connect to storage account using* option. For more informati
    - Only change the table name to match the table name in the .json file.
 
      > [!NOTE]
-     > Always keep the table name in Customer Insights the same as the table name inside the model.json or manifest.json file after ingestion. Customer Insights validates all table names with the model.json or manifest.json during every system refresh. If a table name is changed either inside Customer Insights or outside, an error occurs because Customer Insights cannot find the new table name in the .json file. If an ingested table name was accidentally changed, edit the table name in Customer Insights to match the name in the .json file.
+     > Always keep the table name in the same as the table name in the model.json or manifest.json file after ingestion. Customer Insights - Data validates all table names with the model.json or manifest.json during every system refresh. If a table name changes, an error occurs because Customer Insights - Data cannot find the new table name in the .json file. If an ingested table name was accidentally changed, edit the table name to match the name in the .json file.
 
 1. Select **Columns** to add or change them, or to enable data profiling. Then select **Done**.
 
 1. Select**Save** to apply your changes and return to the **Data sources** page.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

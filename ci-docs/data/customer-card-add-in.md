@@ -3,33 +3,27 @@ title: "Customer Card Add-in for Dynamics 365 apps (preview) (contains video)"
 description: "Show customer profile data from Customer Insights in Dynamics 365 apps with this add-in."
 ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual    
-author: Nils-2m
-ms.author: nikeller
-searchScope: 
-  - ci-customers-page
-  - ci-search-filter
-  - ci-customer-card
-  - customerInsights
+author: pkieffer
+ms.author: philk
 ---
 
 # Customer Card Add-in for Dynamics 365 apps (preview)
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Get a 360-degree view of your customers directly in Dynamics 365 apps. With the Customer Card Add-in installed in a supported Dynamics 365 app, you can choose to display customer profile fields, insights, and activity timeline. The add-in will retrieve data from Customer Insights without affecting the data in the connected Dynamics 365 app.
+Get a 360-degree view of your customers directly in Dynamics 365 apps. With the Customer Card Add-in installed in a supported Dynamics 365 app, you can choose to display customer profile fields, insights, and activity timeline. The add-in will retrieve data from Dynamics 365 Customer Insights without affecting the data in the connected Dynamics 365 app.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN1qv]
 
 ## Prerequisites
 
 - Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
-- For your Dynamics 365 data to map to the Customer Insights customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source during the data unification process](data-unification-map-tables.md#select-primary-key-and-semantic-type-for-attributes).
-- All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in Customer Insights to see the data.
-- [Configured search and filter capabilities](search-filter-index.md) in Customer Insights.
+- For your Dynamics 365 data to map to the unified customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source during the data unification process](data-unification-map-tables.md#select-primary-key-and-semantic-type-for-attributes).
+- All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in Customer Insights - Data.
+- [Configured search and filter capabilities](search-filter-index.md).
 - Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control isn't available due to the selected environment type. This error will show within the control when rendering it. Learn more about [environment use cases](work-with-business-accounts.md).
-- Each add-in control relies on specific data in Customer Insights.
+- Each add-in control relies on specific data:
   - **Measure control** requires [configured customer attribute measures](measures.md).
   - **Intelligence control** requires data generated using [predictions or custom models](predictions.md).
   - **Customer details control** shows all fields from the profile available in the unified customer profile.
@@ -56,14 +50,14 @@ You may need to sign in with your admin credentials for the Dynamics 365 app to 
    > [!div class="mx-imgBorder"]
    > ![Select display name.](media/select-display-name.png "Select display name.")
 
-1. Select **Sign in** and enter the credentials for the admin account you use to configure Customer Insights.
+1. Select **Sign in** and enter the credentials for the admin account you use to configure Customer Insights - Data.
 
    > [!NOTE]
    > Check that the browser pop-up blocker does not block the authentication window when you select the **Sign in** button.
 
-1. Select the Customer Insights environment you want to fetch data from.
+1. Select the environment you want to fetch data from.
 
-1. Define the field mapping to records in the Dynamics 365 app. Depending on your data in Customer Insights, you can choose to map the following options:
+1. Define the field mapping to records in the Dynamics 365 app. Depending on your data, you can choose to map the following options:
    - To map with a contact, select the field in the Customer table that matches the ID of your contact table.
    - To map with an account, select the field in the Customer table that matches the ID of your account table.
 
