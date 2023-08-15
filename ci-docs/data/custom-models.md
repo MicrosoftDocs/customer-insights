@@ -1,15 +1,12 @@
 ---
 title: "Custom machine learning models from Azure Machine Learning"
 description: "Work with custom models from Azure Machine Learning in Dynamics 365 Customer Insights."
-ms.date: 05/30/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju
 ms.custom: bap-template
-searchScope: 
-  - ci-custom-models
-  - customerInsights
 ---
 
 # Custom machine learning models from Azure Machine Learning
@@ -28,12 +25,12 @@ searchScope:
 - Workspace: An [Azure Machine Learning workspace with pipeline](/azure/machine-learning/concept-ml-pipelines). Obtain the Tenant, Workspace, Pipeline, Output Path, and Output Datasource name.
 - Access privileges:
   - Azure Machine Learning workspace with pipeline: Owner or User Access administrator privileges. For more information, see [Azure roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
-  - Customer Insights environment: Admin or Contributor privileges.
+  - Customer Insights - Data environment: Admin or Contributor privileges.
 - Storage account: An [Azure Data Lake Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) associated with your Azure Studio instance.
 - Custom models in Customer Insights don't support data sources that are updated with incremental refresh.
 
   > [!NOTE]
-  > Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
+  > Data is transferred between your environment and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
 
 ## Set up an Azure Machine Learning connection
 
@@ -77,7 +74,7 @@ searchScope:
    - **Name**: A recognizable name for the model.
    - **Output table name**: An output table name for the pipeline output results.
    - **Primary key**: The attribute you want as the primary key for your output table.
-   - **Customer ID**: The matching attribute that corresponds to the Customer Insights Customer ID.
+   - **Customer ID**: The matching attribute that corresponds to the unified customer ID.
 
    :::image type="content" source="media/custom-model-AML-wizard1.svg" alt-text="Custom model Azure Machine Learning Model name page.":::
 

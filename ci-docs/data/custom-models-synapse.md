@@ -22,17 +22,17 @@ Manage workflows based on Azure Synapse Analytics models. Workflows help you cho
 
 - Workspace: An [Azure Synapse workspace](/azure/synapse-analytics/get-started-create-workspace). Obtain the Tenant, Workspace, Pipeline, Output Path, and Output Datasource name.
 - Subscription: An active Azure subscription.
-- Access privileges for Customer Insights environment and Azure Synapse workspace:
-  - Admin or Contributor privileges for your Customer Insights environment
+- Access privileges for Customer Insights - Data environment and Azure Synapse workspace:
+  - Admin or Contributor privileges for your Customer Insights - Data environment
   - On the resource group where the Azure Synapse workspace is located, the service principal and the Azure AD user with Admin permissions in Customer Insights must be assigned at least **Reader** [permissions](/azure/role-based-access-control/role-assignments-portal).
-  - The Azure AD user with Admin permissions in Customer Insights has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more about [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+  - The user with Administrator permissions in Customer Insights - Data has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more about [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
   - The [Azure Synapse workspace managed identity](/azure/synapse-analytics/security/synapse-workspace-managed-identity) has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace.
   - On the Azure Synapse workspace, the service principal for Customer Insights has **Synapse Administrator** role assigned.
-  - If your Customer Insights environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md), the user who sets up the connection to Azure Synapse Analytics has at least the built-in **Reader** role on the Data Lake Storage account. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
+  - If your Customer Insights - Data environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md), the user who sets up the connection to Azure Synapse Analytics has at least the built-in **Reader** role on the Data Lake Storage account. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 - Storage account: An [Azure Data Lake Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) associated with your Azure Synapse workspace.
 
 > [!NOTE]
-> Data is transferred between your Customer Insights instances and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
+> Data is transferred between Customer Insights and the selected Azure web services or pipelines in the workflow. When you transfer data to an Azure service, please ensure that service is configured to process data in the manner and location necessary to comply with any legal or regulatory requirements for that data for your organization.
 
 ## Set up a Synapse connection
 
@@ -75,7 +75,7 @@ Manage workflows based on Azure Synapse Analytics models. Workflows help you cho
    - **Name**: A recognizable name for the model.
    - **Output table name**: An output table name for the pipeline output results.
    - **Primary key**: The attribute you want as the primary key for your output table.
-   - **Customer ID**: The matching attribute that corresponds to the Customer Insights Customer ID.
+   - **Customer ID**: The matching attribute that corresponds to the unified customer ID.
 
    :::image type="content" source="media/custom-model-AML-wizard1.png" alt-text="Screenshot of the Azure Synapse Model page.":::
   

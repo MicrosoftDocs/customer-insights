@@ -1,8 +1,7 @@
 ---
 title: "Use Azure Machine Learning-based models"
-description: "Use Azure Machine Learning-based models in Dynamics 365 Customer Insights."
-ms.date: 11/15/2022
-
+description: "Use Azure Machine Learning-based models in Dynamics 365 Customer Insights - Data."
+ms.date: 09/01/2023
 ms.topic: tutorial
 author: naravill
 ms.author: naravill
@@ -13,11 +12,11 @@ ms.reviewer: mhart
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-The unified data in Dynamics 365 Customer Insights is a source for building machine learning models that can generate additional business insights. Customer Insights integrates with Azure Machine Learning to use your own custom models.
+The unified data in Dynamics 365 Customer Insights- Data is a source for building machine learning models that can generate additional business insights. Customer Insights - Data integrates with Azure Machine Learning to use your own custom models.
 
 ## Prerequisites
 
-- Access to Customer Insights
+- Access to Customer Insights - Data
 - Active Azure Enterprise subscription
 - [Unified customer profiles](data-unification.md)
 - [Table export to Azure Blob storage](export-azure-blob-storage.md) configured
@@ -30,13 +29,13 @@ The unified data in Dynamics 365 Customer Insights is a source for building mach
 
 ## Work with Azure Machine Learning designer
 
-Azure Machine Learning designer provides a visual canvas where you can drag and drop datasets and modules. A batch pipeline created from the designer can be integrated into Customer Insights if they are configured accordingly. 
+Azure Machine Learning designer provides a visual canvas where you can drag and drop datasets and modules. A batch pipeline created from the designer can be integrated into Customer Insights - Data if they are configured accordingly.
 
 ## Working with Azure Machine Learning SDK
 
-Data scientists and AI developers use the [Azure Machine Learning SDK](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) to build machine learning workflows. Currently, models trained using the SDK can't be integrated directly with Customer Insights. A batch inference pipeline that consumes that model is required for integration with Customer Insights.
+Data scientists and AI developers use the [Azure Machine Learning SDK](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) to build machine learning workflows. Currently, models trained using the SDK can't be integrated directly. A batch inference pipeline that consumes that model is required for integration with Customer Insights - Data.
 
-## Batch pipeline requirements to integrate with Customer Insights
+## Batch pipeline requirements to integrate with Customer Insights - Data
 
 ### Dataset configuration
 
@@ -60,7 +59,7 @@ Create datasets to use table data from Customer Insights for your batch inferenc
   
 - In the designer, use a training pipeline to create or update an inference pipeline. Currently, only batch inference pipelines are supported.
 
-- Using the SDK, publish the pipeline to an endpoint. Currently, Customer Insights integrates with the default pipeline in a batch pipeline endpoint in the Machine Learning workspace.
+- Using the SDK, publish the pipeline to an endpoint. Currently, Customer Insights - Data integrates with the default pipeline in a batch pipeline endpoint in the Machine Learning workspace.
 
    ```python
    published_pipeline = pipeline.publish(name="ChurnInferencePipeline", description="Published Churn Inference pipeline")
@@ -68,13 +67,13 @@ Create datasets to use table data from Customer Insights for your batch inferenc
    pipeline_endpoint.add_default(pipeline=published_pipeline)
    ```
 
-### Import pipeline data into Customer Insights
+### Import pipeline data
 
-- The designer provides the [Export Data module](/azure/machine-learning/algorithm-module-reference/export-data) that allows the output of a pipeline to be exported to Azure storage. Currently, the module must use the datastore type **Azure Blob Storage** and parameterize the **Datastore** and relative **Path**. Customer Insights overrides both these parameters during pipeline execution with a datastore and path that is accessible to the product.
+- The designer provides the [Export Data module](/azure/machine-learning/algorithm-module-reference/export-data) that allows the output of a pipeline to be exported to Azure storage. Currently, the module must use the datastore type **Azure Blob Storage** and parameterize the **Datastore** and relative **Path**. The system overrides both these parameters during pipeline execution with a datastore and path that is accessible to the application.
 
   :::image type="content" source="media/intelligence-designer-importdata.png" alt-text="Export Data Module Configuration.":::
 
-- When writing the inference output using code, upload the output to a path within a *registered datastore* in the workspace. If the path and datastore are parameterized in the pipeline, Customer insights will be able to read and import the inference output. Currently, a single tabular output in csv format is supported. The path must include the directory and filename.
+- When writing the inference output using code, upload the output to a path within a *registered datastore* in the workspace. If the path and datastore are parameterized in the pipeline, Customer Insights can read and import the inference output. Currently, a single tabular output in csv format is supported. The path must include the directory and filename.
 
    ```python
    # In Pipeline setup script
@@ -91,6 +90,5 @@ Create datasets to use table data from Customer Insights for your batch inferenc
       # datastore.upload(src_dir=<<working directory>>, target_path=directory_name, overwrite=False, show_progress=True)
       output_dataset = Dataset.File.upload_directory(src_dir=<<working directory>>, target = (datastore, directory_name)) # Remove trailing "/" from directory_name
    ```
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
