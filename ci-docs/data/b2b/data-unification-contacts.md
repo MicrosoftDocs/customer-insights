@@ -18,9 +18,9 @@ searchScope:
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-For **business accounts (B-to-B)** where the data is centered around accounts, unification provides a unified view of your accounts. Contact unification allows contacts for those accounts to be separately unified and associated with the accounts. Contact unification also allows contacts without an account to be included in the unified contact profile.
+For business accounts (B2B) where the data is centered around accounts, unification provides a unified view of your accounts. Contact unification allows contacts for those accounts to be separately unified and associated with the accounts. Contact unification also allows contacts without an account to be included in the unified contact profile.
 
-After unifying business accounts, you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. Customer Insights B-to-B supports a one-to-many account to contact relationship.  The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
+First, [unify accounts. Then, you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. Customer Insights B-to-B supports a one-to-many account to contact relationship.  The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 

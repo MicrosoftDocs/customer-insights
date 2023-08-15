@@ -28,13 +28,6 @@ With Dynamics 365 Customer Insights, business accounts (B2B) aren't supported. H
 - [Activation and export](export-manage.md): Exports are available for business accounts. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts. See [Segment exports](#segment-exports) for more information.
 - [System settings](../system.md) and [user management](../permissions.md): All features in this area are the same for business accounts.
 
-
-
-
-
-
-
-
 ## Environment
 
 To create an environment, see [Create a new environment.](../create-environment.md) When creating the environment, select your business type:
@@ -117,9 +110,6 @@ A UnifiedContact contains unified information about a contact. Contacts are [ind
 |  StateOrProvince      | Text |  State or province of the contact address               |
 |  StreetAddress        | Text |  Street of the contact address               |
 |  UnifiedContactId     | Unique identifier   |  GUID for the contact               |
-
-
-
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

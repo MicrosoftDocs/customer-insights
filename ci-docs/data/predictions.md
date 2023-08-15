@@ -1,7 +1,7 @@
 ---
 title: Create and manage predictions
 description: Learn how to create and manage predictions in Dynamics 365 Customer Insights application."
-ms.date: 05/30/2023
+ms.date: 08/30/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: zacookmsft
