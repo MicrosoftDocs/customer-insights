@@ -29,6 +29,8 @@ The following models are available:
 - [Transactional churn](predict-transactional-churn.md): Predicts if an individual customer will no longer purchase your products or services in a certain time frame.
 - [Sentiment analysis](sentiment-analysis.md): Analyzes sentiment of customer feedback and identifies business aspects that are frequently mentioned.
 
+To understand the readiness of your data to produce insights, see [Data prep report overview](data-prep-overview.md).
+
 > [!TIP]
 > We recommend that you regularly refresh out-of-the box models with updated data to ensure they accurately inform your business use case. Data is refreshed ad-hoc when the system ingests new or updated data sources. However, models will only rescore in this case and continue to use the existing training data.
 >

@@ -79,7 +79,7 @@ searchScope:
    - **Primary key**: The attribute you want as the primary key for your output table.
    - **Customer ID**: The matching attribute that corresponds to the Customer Insights Customer ID.
 
-   :::image type="content" source="media/custom-model-AML-wizard1.png" alt-text="Custom model Azure Machine Learning Model name page.":::
+   :::image type="content" source="media/custom-model-AML-wizard1.svg" alt-text="Custom model Azure Machine Learning Model name page.":::
 
 1. Select **Next**.
 
