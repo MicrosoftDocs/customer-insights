@@ -1,7 +1,7 @@
 ---
 title: "Customer Card Add-in for Dynamics 365 apps (preview) (contains video)"
 description: "Show customer profile data from Customer Insights in Dynamics 365 apps with this add-in."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
 
 ms.topic: conceptual    
@@ -33,7 +33,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
   - **Measure control** requires [configured customer attribute measures](measures.md).
   - **Intelligence control** requires data generated using [predictions or custom models](predictions.md).
   - **Customer details control** shows all fields from the profile available in the unified customer profile.
-  - **Enrichment control** requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft, [Interests](enrichment-microsoft.md) provided by Microsoft, and [Office engagement data](enrichment-office.md) provided by Microsoft.
+  - **Enrichment control** requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft and [Interests](enrichment-microsoft.md) provided by Microsoft.
   - **Contacts control** requires a contact semantic table type.
   - **Timeline control** requires [configured activities](activities.md).
 
@@ -78,7 +78,7 @@ You may need to sign in with your admin credentials for the Dynamics 365 app to 
 
 ## Add Customer Card controls to forms
 
-Depending on your scenario, you can choose to add controls to either the **Contact** form or **Account** form. If your Customer Insights environment is for business accounts, we recommended adding the controls to the Account form. In that case, replace "contact" in the below steps with "account."
+Depending on your scenario, you can choose to add controls to either the **Contact** form or **Account** form.
 
 1. To add the Customer Card controls to your Contact form, go to the **Settings** > **Customizations** in Dynamics 365.
 

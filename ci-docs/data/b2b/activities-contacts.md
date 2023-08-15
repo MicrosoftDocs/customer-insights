@@ -1,7 +1,7 @@
 ---
 title: "Business contact activities"
 description: "Define business contact activities and view them in a timeline on customer profiles in Dynamics 365 Customer Insights." 
-ms.date: 08/30/2023
+ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: srivas15

@@ -1,18 +1,12 @@
 ---
 title: "View customer profiles"
-description: "View your unified customer data including using search and filter"
-ms.date: 08/30/2023
+description: "View your unified customer data including using search and filter in Dynamics 365 Customer Insights"
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
-searchScope: 
-  - ci-customers-page
-  - ci-customer-card
-  - ci-activities
-  - ci-activities-wizard
-  - customerInsights
+ms.custom: bap-template
 ---
 
 # View customer profiles
@@ -77,7 +71,7 @@ Customer details include:
 - **Additional fields** shows the remaining fields of the selected customer, except IDs.
 - **IDs** lists all IDs under their corresponding table name. Fields are identified as IDs by their semantics.
 
-**Activity timeline** shows data if you have configured [activities](activities.md). The timeline view contains chronologically sorted activities of the selected customer, starting with the most recent activity. Learn how to [filter activities within the timeline](activities.md#contact-level-activity-timeline-filtering).
+**Activity timeline** shows data if you have configured [activities](activities.md). The timeline view contains chronologically sorted activities of the selected customer, starting with the most recent activity.
 
 **Insights**:
 

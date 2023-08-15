@@ -38,7 +38,6 @@ You must have Contributor or Administrator [permissions](permissions.md) to crea
 The following enrichments are currently available for data sources. Review the detailed steps for the enrichment to learn how to configure it.
 
 - [Enhanced addresses](enrichment-enhanced-addresses.md)
-- [Enhanced company data](enrichment-enhanced-company-data.md)
 - [Identity data from LiveRamp](enrichment-liveramp.md)
 
 ## Manage existing data source enrichments

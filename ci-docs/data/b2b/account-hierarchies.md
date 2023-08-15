@@ -9,7 +9,7 @@ ms.author:  cadesantha
 ms.custom: bap-template
 ---
 
-## Set up account hierarchies
+# Set up account hierarchies
 
 [!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 

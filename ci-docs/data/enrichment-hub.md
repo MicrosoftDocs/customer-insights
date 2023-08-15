@@ -1,7 +1,7 @@
 ---
 title: "Data enrichment (preview) overview"
 description: "Use capabilities from Microsoft and other third-party services to enrich your customer data."
-ms.date: 08/30/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 
 ms.topic: conceptual

@@ -1,7 +1,7 @@
 ---
 title: "Explore Customer Insights"
 description: "Start exploring the app on the Home page."
-ms.date: 08/30/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong

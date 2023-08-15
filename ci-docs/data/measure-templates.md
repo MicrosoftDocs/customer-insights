@@ -1,7 +1,7 @@
 ---
 title: "Create measures from templates"
 description: "Define measures using templates for common use cases."
-ms.date: 08/30/2023
+ms.date: 09/01/2023
 ms.topic: conceptual
 author: v-wendysmith
 ms.author: wameng

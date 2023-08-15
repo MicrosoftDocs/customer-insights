@@ -1,7 +1,7 @@
 ---
-title: "Create business account (B2B) measures with measure builder"
+title: "Create business account measures with measure builder"
 description: "Build measures from scratch to analyze key metrics about your business in Dynamics 365 Customer Insights."
-ms.date: 08/30/2023
+ms.date: 09/01/2023
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
@@ -9,7 +9,7 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Create business account (B2B) measures with measure builder
+# Create business account measures with measure builder
 
 [!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
@@ -20,7 +20,7 @@ Create measures on the level of individual accounts (customer measure) or on the
 - Business measure: Generates output as its own table and shows on the home page of your Customer Insights environment.
 
 > [!TIP]
-> If your B2B environment [uses accounts with hierarchies](../relationships.md#set-up-account-hierarchies), choose whether to aggregate the measure across related sub-accounts.
+> If your B2B environment [uses accounts with hierarchies](account-hierarchies.md), choose whether to aggregate the measure across related sub-accounts.
 
 1. Go to **Insights** > **Measures**.
 
@@ -28,7 +28,7 @@ Create measures on the level of individual accounts (customer measure) or on the
 
    :::image type="content" source="media/measure-b2b.png" alt-text="Empty configuration screen for a B2B measure. ":::
 
-1. Select **Edit details** next to Untitled measure. Provide a name for the measure. Optionally, add [tags](work-with-tags-columns.md#manage-tags) to the measure. 
+1. Select **Edit details** next to Untitled measure. Provide a name for the measure. Optionally, add [tags](../work-with-tags-columns.md#manage-tags) to the measure. 
 
    :::image type="content" source="../media/measures_edit_details.png" alt-text="Edit details dialog box.":::
 
@@ -69,7 +69,7 @@ Create measures on the level of individual accounts (customer measure) or on the
 
 1. If there are values in your data that must be replaced with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
 
-1. If you [use accounts with hierarchies](../relationships.md#set-up-account-hierarchies), review **Roll up sub-accounts**.
+1. If you [use accounts with hierarchies](account-hierarchies.md), review **Roll up sub-accounts**.
    - To calculate the measure for every account, select **No**. Every account gets its own result.
    - To calculate one result, select **Yes**. Select **Edit** to choose the account hierarchy according to the ingested hierarchies and select **Apply**. The measure yields only one result because it's aggregated with sub-accounts.
 

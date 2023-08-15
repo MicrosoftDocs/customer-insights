@@ -26,7 +26,7 @@ searchScope:
 There are two main types of exports:  
 
 - **Data-out exports** let you export any type of table available in Customer Insights. The tables that you select for export are exported with all data fields, metadata, schemas, and mapping details.
-- **Segment exports** let you export segment tables from Customer Insights. For individual consumers (B-to-C), segments represent a list of customer profiles. For businesses (B-to-B), [segments can represent a list of accounts or contacts](segment-builder.md#create-a-new-segment-with-segment-builder). When configuring the export, you select the included data fields, depending on the target system you are exporting data to.
+- **Segment exports** let you export segment tables from Customer Insights. Segments represent a list of customer profiles.
 
 ### Segment exports
 

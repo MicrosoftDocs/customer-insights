@@ -1,30 +1,25 @@
 ---
 title: "Create a unified business contact profile"
 description: "Learn how to use the data unification process in Microsoft Dynamics 365 Customer Insights to create a profile of your business contacts that combines data from multiple sources."
-ms.date: 08/30/2023
+ms.date: 09/01/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
-searchScope: 
-  - ci-map
-  - ci-match
-  - ci-merge
-  - customerInsights
 ---
 
 # Create a unified business contact profile
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
-For business accounts (B2B) where the data is centered around accounts, unification provides a unified view of your accounts. Contact unification allows contacts for those accounts to be separately unified and associated with the accounts. Contact unification also allows contacts without an account to be included in the unified contact profile.
+Contact unification allows contacts for unified accounts to be separately unified and associated with the accounts. Contact unification also allows contacts without an account to be included in the unified contact profile.
 
-First, [unify accounts. Then, you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. Customer Insights B-to-B supports a one-to-many account to contact relationship.  The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
+The contact unification process maps contact data from multiple sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. Customer Insights B2B supports a one-to-many account to contact relationship. The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
 
-[!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
+[!INCLUDE [m3-first-run-note](../includes/m3-first-run-note.md)]
 
-The first few steps to unify contacts are the same as the steps to [unify accounts](../data-unification.md).
+The first few steps to unify contacts are the same as the steps to [unify accounts](data-unification-b2b.md).
 
 > [!TIP]
 > The terms *field* and *column* are used interchangeably in this article to refer to data in a table row, or record.
@@ -99,7 +94,7 @@ This last step in the unification process shows a summary of the steps in the pr
   
    :::image type="content" source="media/b2b_unify_refreshing.svg" alt-text="Screenshot of Unify Contacts page with tiles showing Queued or Refreshing.":::
 
-   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
+   [!INCLUDE [progress-details-pane-include](../includes/progress-details-pane.md)]
 
 The unification algorithm takes some time to complete and you can't change the configuration until it completes.
 

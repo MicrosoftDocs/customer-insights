@@ -1,7 +1,7 @@
 ---
 title: "Business acounts overview in Customer Insights"
 description: "Learn about business accounts (B2B) in Dynamics 365 Customer Insights" 
-ms.date: 08/30/2023
+ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Business accounts overview in Customer Insights
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
 With Dynamics 365 Customer Insights, business accounts (B2B) aren't supported. However, current customers with B2B data are still supported. This article describes information specific to B2B environments. For all other informtion related to Customer Insights, see [Dynamics 365 Customer Insights documentation.](../index.yml)
 
@@ -20,19 +20,17 @@ With Dynamics 365 Customer Insights, business accounts (B2B) aren't supported. H
 - Activities: Support for [accounts](../activities.md) and related [contacts](activities-contacts.md) to create activities and show them in a timeline.
 - [Relationships](../relationships.md): The activity wizard helps creating relationships between the tables so the account view can show all activities from contacts. Contacts can drill up to see contact view and [hierarchies](account-hierarchies.md) can be used for account activity aggregations.
 - [Measures](../measures.md): Supports measures created from the [measure builder](measure-builder-b2b.md) with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.
-- [Segments](segments.md): Supports segments that are created from scratch with the [segment builder](segment-builder-b2b.md). Segments can be based on accounts or contacts.
+- [Segments](../segments.md): Supports segments that are created from scratch with the [segment builder](segment-builder-b2b.md). Segments can be based on accounts or contacts.
 - [Data ingestion](../data-sources.md)
-- B2B data unification is very similar to B2C [data unification](../data-unification.md) but has an additional step to [unify contacts](data-unification-contacts.md) after account unification.
+- [Data unification](data-unification-b2b.md)
 - [Enrichment](#enrichments): Some enrichment types are available only for business accounts.
-- [Predictions and out-of-box models](../predictions.md): Transactional churn prediction contains additional steps for business accounts. Other predictions are only available for individual customers.
-- [Activation and export](export-manage.md): Exports are available for business accounts. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts. See [Segment exports](#segment-exports) for more information.
+- [Predictions](../predictions.md): Supports [transactional churn predictions](predict-transactional-b2b.md).
+- [Activation and export](../export-manage.md): Exports are available for business accounts. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts. See [Segment exports](#segment-exports) for more information.
 - [System settings](../system.md) and [user management](../permissions.md): All features in this area are the same for business accounts.
 
 ## Environment
 
-To create an environment, see [Create a new environment.](../create-environment.md) When creating the environment, select your business type:
-
-**Choose your business**: Primary audience for the new environment: individual consumers (B2C) or [business accounts](work-with-business-accounts.md) (B2B). If your organization mainly does business with individuals, such as a retailer or a coffee shop, choose individual consumers. If your main audience is other companies, such as a car manufacturer or a paper company, choose business accounts.
+To create an environment, see [Create a new environment.](../create-environment.md) When creating the environment, select your business type: business accounts.
 
 ## Dataverse storage capacity entitlement
 
@@ -43,6 +41,14 @@ For example, if you have a B2B subscription with 30,000 accounts, your total sto
 ## Customer profiles
 
 On the **Customers** page, select a customer tile to view details for the selected customer. For business accounts, in addition to the customer profile, **Contacts for this customer** display. Each contact is shown with their fields. Empty fields are hidden. For more information, see [View customer profiles.](../customer-profiles.md)
+
+Learn how to [filter contact activities within the timeline](activities-contacts.md#contact-level-activity-timeline-filtering).
+
+## Customer Card Add-in
+
+If you install the [Customer Card Add-in](../customer-card-add-in.md) and want to add the Customer Card controls to forms, we recommend adding the controls to the Account form. In that case, replace "contact" with "account" in the steps. See [Add Customer Card controls to forms](../customer-card-add-in.md#add-customer-card-controls-to-forms).
+
+The **Enrichment control** requires active enrichments. The card add-in supports [Office engagement data](enrichment-office.md) provided by Microsoft.
 
 ## Enrichments
 
@@ -59,6 +65,10 @@ Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrich
 
 For more information, see [data enrichment (preview) overview](../enrichment-hub.md)
 
+### Enrichment for data sources (preview)
+
+[Enhanced company data](enrichment-enhanced-company-data.md) is supported for enriching your customer data before data unification.
+
 ## Power Apps
 
 With a [Power Apps connector](../export-power-apps.md), you can choose the **UnifiedContact** table to display the contacts of a customer.
@@ -67,7 +77,7 @@ Delegation for **UnifiedContact** only works for the fields **ContactId** and **
 
 ## Segment exports
 
-You can export segment tables from Customer Insights. Segments are built on the *account* table or the *contact* table. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](../export-linkedin-ads.md) when you choose the **company** option while defining the export.
+You can export segment tables from Customer Insights. Segments can represent a list of accounts or contacts. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](../export-linkedin-ads.md) when you choose the **company** option while defining the export.
 
 All other target systems require fields from the contact table.
 
@@ -112,4 +122,4 @@ A UnifiedContact contains unified information about a contact. Contacts are [ind
 |  UnifiedContactId     | Unique identifier   |  GUID for the contact               |
 
 
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

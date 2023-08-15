@@ -1,0 +1,16 @@
+- At least [Contributor permissions](permissions.md).
+- At least 10 customer profiles, preferably more than 1,000 unique customers.
+- Customer Identifier, a unique identifier to match transactions to your customers.
+- Transaction data for at least double the selected time window such as two to three years of transaction history. Ideally at least two transactions per customer. Transaction history must include:
+  - **Transaction ID**: Unique identifier of a purchase or transaction.
+  - **Transaction Date**: Date of the purchase or transaction.
+  - **Value of the transaction**: Currency or numerical value amount of the transaction.
+  - **Unique product ID**: ID of the product or service purchased if your data is at a line item level.
+  - **Whether this transaction was a return**: A true/false field that identifies if the transaction was a return or not. If the **Value of the transaction** is negative, we infer a return.
+- Customer activity data:
+  - Customer Identifier, a unique identifier to map activities to your customers.
+  - **Primary key:** Unique identifier for an activity. For example, a website visit or a usage record showing the customer tried a sample of your product.
+  - **Timestamp:** Date and time of the event identified by the primary key.
+  - **Event:** Name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
+  - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
+- Less than 20% of missing values in the data field of the table provided

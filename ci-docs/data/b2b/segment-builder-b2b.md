@@ -1,7 +1,7 @@
 ---
 title: "Create business account or contact segments with segment builder"
 description: "Use segment builder to create complex segments of account or contact by grouping them based on various attributes."
-ms.date: 08/30/2023
+ms.date: 09/01/2023
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
@@ -11,11 +11,11 @@ ms.custom: bap-template
 
 # Create business account or contact segments with segment builder
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
 Define complex filters around the unified customer or unified contact and its related tables. Each segment, after processing, creates a set of customer or contact records that you can export and take action on.
 
-In **business accounts**, if you [unified](data-unification.md) both accounts and contacts, choose whether the segment is based on accounts or business contacts. To export to a destination expecting contact information, use a segment of contacts. To export to a destination expecting account information, use a segment of accounts.
+In **business accounts**, if you [unified](../data-unification.md) both accounts and contacts, choose whether the segment is based on accounts or business contacts. To export to a destination expecting contact information, use a segment of contacts. To export to a destination expecting account information, use a segment of accounts.
 
 ## Create a new segment with segment builder
 
@@ -25,7 +25,7 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
 
 1. Select **New** > **Segment of Accounts** or **Segment of Contacts (preview)** based on the type of segment you want to create. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
 
-1. If an [account hierarchy](relationships.md#set-up-account-hierarchies) has been defined and you want to create rules to filter out data based on child and parent relationship, select **Use hierarchy? (preview)**, select the hierarchy, and then **Apply**.
+1. If an [account hierarchy](../relationships.md#set-up-account-hierarchies) has been defined and you want to create rules to filter out data based on child and parent relationship, select **Use hierarchy? (preview)**, select the hierarchy, and then **Apply**.
 
    :::image type="content" source="media/segment_acct_hierarchy.png" alt-text="Segment select account hierarchy pane.":::
 
