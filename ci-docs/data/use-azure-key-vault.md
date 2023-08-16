@@ -1,6 +1,6 @@
 ---
 title: "Bring your own Azure key vault (preview)"
-description: "Learn how to configure Customer Insights - Data to use your own Azure key vault to manage secrets."
+description: "Learn how to configure Dynamics 365 Customer Insights - Data to use your own Azure key vault to manage secrets."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
@@ -12,7 +12,7 @@ ms.author: bkief
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Linking a dedicated [Azure key vault](/azure/key-vault/general/basic-concepts) to a Customer Insights - Data environment helps organizations to meet compliance requirements.
+Linking a dedicated [Azure key vault](/azure/key-vault/general/basic-concepts) to a Dynamics 365 Customer Insights - Data environment helps organizations to meet compliance requirements.
 
 ## Link the key vault to the Customer Insights - Data environment
 

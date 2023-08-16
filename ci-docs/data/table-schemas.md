@@ -21,7 +21,7 @@ Multiple systems and platforms implement the Common Data Model today, including 
 
 ## Customer Insights - Data table schemas
 
-To establish a 360-degree view of the customer and make Customer Insights - Data models available in Common Data Model for extensibility, we've published the following table schemas:
+To establish a 360-degree view of the customer and make Dynamics 365 Customer Insights - Data models available in Common Data Model for extensibility, we've published the following table schemas:
 
 | Table | Description |
 |---------|---------|
