@@ -1,18 +1,11 @@
 ---
 title: "View customer profiles"
 description: "View your unified customer data including using search and filter"
-ms.date: 11/15/2022
+ms.date: 09/01/2022
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
-searchScope: 
-  - ci-customers-page
-  - ci-customer-card
-  - ci-activities
-  - ci-activities-wizard
-  - customerInsights
 ---
 
 # View customer profiles
