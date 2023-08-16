@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 07/03/2023
+ms.date: 08/16/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -19,6 +19,30 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## July 2023
+
+### Identify and eliminate data quality issues effortlessly with Copilot
+
+The data prep report reduces the time and effort encountered by turning your data into rich insights about your customers, such as segments, measures, and predictions. With actionable recommendations based on an AI-driven quality analysis, you can improve your data quality proactively. Analysts and business users can spend more time generating and using accurate insights and less time on data hygiene, empowering them to elevate customer experiences and optimize business outcomes.
+
+- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/identify-eliminate-data-quality-issues-effortlessly-copilot)
+- [Documentation](data-prep-overview.md)
+
+### Address issues with environment status summary
+
+The System Status page in Customer Insights is an indispensable tool for admins to keep a frequent tab to ensure all jobs are running smoothly. However, when there are errors/issues, the current process of checking through a large table of active jobs can be time-consuming and confusing, especially when there are complex relationships between jobs. Copilot in Customer Insights provides a simple, natural language summary of the environment, prominently highlighting the most important jobs tied to key activation events like exports. Armed with this summary, admins can focus on quickly taking the actions required.
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/address-issues-environment-status-summary-copilot)
+- [Documentation](system.md#environment-status-summary-preview)
+
+### Monthly enhancements
+
+[Marketing Contributor role](permissions.md#marketing-contributor-preview):
+
+- can search for segments by name and only get results from their BU
+- can filter by tags and tags honor BU.Tags created in a BU aren't visible and searchable in other BUs
+- can customize the columns they see in their BU-specific view of the segment list
+- can download a segment
 ## June 2023
 
 ### Display Customer Insights activities in a Dynamics 365 activity timeline
