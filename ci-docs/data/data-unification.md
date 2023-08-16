@@ -7,10 +7,6 @@ ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.custom: bap-template
-
-searchScope: 
-  - ci-map
-  - customerInsights
 ---
 
 # Data unification overview
