@@ -1,6 +1,6 @@
 ---
-title: "Business acounts overview in Customer Insights"
-description: "Learn about business accounts (B2B) in Dynamics 365 Customer Insights" 
+title: "Work with business accounts"
+description: "Learn about business accounts (B2B) in Dynamics 365 Customer Insights - Data" 
 ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
@@ -9,11 +9,11 @@ ms.author:  sstabbert
 ms.custom: bap-template
 ---
 
-# Business accounts overview in Customer Insights
+# Work with business accounts
 
 [!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
-With Dynamics 365 Customer Insights, business accounts (B2B) aren't supported. However, current customers with B2B data are still supported. This article describes information specific to B2B environments. For all other informtion related to Customer Insights, see [Dynamics 365 Customer Insights documentation.](../index.yml)
+With Dynamics 365 Customer Insights - Data, business accounts (B2B) aren't supported. However, current customers with B2B data are still supported. This article describes information specific to B2B environments. For all other informtion related to Customer Insights, see [Dynamics 365 Customer Insights documentation.](../index.yml)
 
 ## Supported feature areas
 
@@ -34,12 +34,6 @@ With Dynamics 365 Customer Insights, business accounts (B2B) aren't supported. H
 If you install the [Customer Card Add-in](../customer-card-add-in.md) and want to add the Customer Card controls to forms, we recommend adding the controls to the Account form. In that case, replace "contact" with "account" in the steps. See [Add Customer Card controls to forms](../customer-card-add-in.md#add-customer-card-controls-to-forms).
 
 The **Enrichment control** requires active enrichments. The card add-in supports [Office engagement data](enrichment-office.md) provided by Microsoft.
-
-## Dataverse storage capacity entitlement
-
-A Customer Insights subscription entitles you to extra capacity for your organization's existing [Dataverse storage capacity](/power-platform/admin/capacity-storage). The added capacity depends on the number of profiles that your subscription uses.
-
-For example, if you have a B2B subscription with 30,000 accounts, your total storage capacity is 45 GB (3 x 15 GB) database storage, and 60-GB file storage (3 x 20 GB).
 
 ## Enrichments
 
@@ -62,7 +56,15 @@ For more information, see [data enrichment (preview) overview](../enrichment-hub
 
 ## Environment
 
-To create an environment, see [Create a new environment.](../create-environment.md) When creating the environment, select your business type: business accounts.
+Administrators can [create an environment in an existing organization.](../create-environment.md) When creating the environment, select your business type: individual consumers (B2C) or business accounts (B2B).
+
+For B2B, ou can then [ingest data](../data-sources.md) for business accounts and related contacts as data sources from all supported sources. [Unify](data-unification-b2b.md) your account data followed by your contact data to connect contact and account tables.
+
+### Switch between primary target audience
+
+If your organization maintains environments for B2C and B2B, you can use the switcher in the left pane to choose the primary target audience.
+
+:::image type="content" source="media/switch-primary-target-audience.png" alt-text="Switcher to change the primary target audience between individual customers and business accounts.":::
 
 ## Exports
 

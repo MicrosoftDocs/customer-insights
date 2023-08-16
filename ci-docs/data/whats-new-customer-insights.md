@@ -43,6 +43,7 @@ The System Status page in Customer Insights is an indispensable tool for admins 
 - can filter by tags and tags honor BU.Tags created in a BU aren't visible and searchable in other BUs
 - can customize the columns they see in their BU-specific view of the segment list
 - can download a segment
+
 ## June 2023
 
 ### Display Customer Insights activities in a Dynamics 365 activity timeline
@@ -68,13 +69,6 @@ This feature democratizes access to insights, allowing analysts, marketers, and 
 
 - [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/generate-insights-asking-questions-natural-language-copilot-customer-insights)
 - [Documentation](dialog-with-data.md)
-
-### Unify your B2B account and contact data into easy to work with related tables that also support commercial contacts with unknown accounts  
-
-Get a 360-degree view of your B2B contacts by creating unified contact profiles. With this release, your B2B contacts can be unified just like accounts and customers in Dynamics 365 Customer Insights. The unified accounts table and unified contacts table share a simple relationship, allowing you to easily create segments of contacts that have specific account attributes. In addition, you can now identify and engage business contacts where the account is unknown, to discover and create new account relationships
-
-- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/gain-360-degree-view-b2b-contacts-leveraging-all-fields-unified-contacts)
-- [Documentation](./b2b/data-unification-contacts.md)
 
 ### Bring your custom prediction models from Azure Synapse Analytics into Dynamics 365 Customer Insights, using our Synapse pipeline integration
 

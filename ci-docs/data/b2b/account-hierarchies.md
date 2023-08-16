@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 Environments that are configured to use business accounts (B2B) as the primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units.
 
-Organizations create account hierarchies to better manage accounts and their relationships with each other. Customer Insights supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page.
+Organizations create account hierarchies to better manage accounts and their relationships with each other. Customer Insights supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales.
 
 1. Go to **Data** > **Tables**.
 

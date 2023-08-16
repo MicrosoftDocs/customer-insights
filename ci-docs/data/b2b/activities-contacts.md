@@ -1,5 +1,5 @@
 ---
-title: "Business contact activities"
+title: "Set up business contact activities"
 description: "Define business contact activities and view them in a timeline on customer profiles in Dynamics 365 Customer Insights." 
 ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
@@ -9,7 +9,7 @@ ms.author:  shsri
 ms.custom: bap-template
 ---
 
-# Business contact activities
+# Set up business contact activities
 
 [!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 

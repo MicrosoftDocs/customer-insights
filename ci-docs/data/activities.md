@@ -1,6 +1,6 @@
 ---
-title: "Customer or business contact activities"
-description: "Define customer or business contact activities and view them in a timeline on customer profiles." 
+title: "Set up customer activities"
+description: "Define customer activities and view them in a timeline on customer profiles." 
 ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
@@ -9,7 +9,7 @@ ms.author:  shsri
 ms.custom: bap-template
 ---
 
-# Customer contact activities
+# Set up customer activities
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
