@@ -27,7 +27,7 @@ To review or change any unification settings once a unified profile has been cre
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified." lightbox="media/m3_unified.png":::
 
    > [!NOTE]
-   > For business accounts (B-to-B), the **Unify** page displays the number of unified account profiles and tiles for each of the account unification steps. If contacts were unified, the number of unified contact profiles and tiles for each of the contact unification steps display. Choose the appropriate tile under **Unify Accounts** or **Unify Contacts (preview)** depending on what you want to update.
+   > For business accounts (B-to-B), the **Unify** page displays the number of unified account profiles and tiles for each of the account unification steps. If contacts were unified, the number of unified contact profiles and tiles for each of the contact unification steps display. Choose the appropriate tile under **Unify Accounts** or **Unify Contacts** depending on what you want to update.
    > 
    > :::image type="content" source="media/b2b_unified.png" alt-text="Screenshot of the Data Unify page after account and contact data is unified." lightbox="media/b2b_unified.png":::
 

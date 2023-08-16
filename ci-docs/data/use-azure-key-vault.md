@@ -14,9 +14,13 @@ searchScope:
 
 # Bring your own Azure key vault (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Linking a dedicated [Azure key vault](/azure/key-vault/general/basic-concepts) to a Customer Insights environment helps organizations to meet compliance requirements.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Link the key vault to the Customer Insights environment
 

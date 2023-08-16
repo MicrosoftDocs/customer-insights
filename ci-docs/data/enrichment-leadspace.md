@@ -11,6 +11,8 @@ ms.author: jodahl
 
 # Enrich company profiles with Leadspace (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Leadspace is a data science company that provides a B-to-B Customer Data Platform. It enables environments with unified customer profiles based on accounts to enrich their data. Enrich *Customer profiles* with attributes such as company size, location, or industry. Enrich *Contact profiles* with attributes such as title, persona, or email verification.

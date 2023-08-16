@@ -14,6 +14,8 @@ searchScope:
 
 # Export segments to Dynamics 365 Marketing (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Use [segments](segments.md) to generate campaigns and contact specific groups of customers with [Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).

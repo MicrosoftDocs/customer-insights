@@ -12,7 +12,11 @@ ms.reviewer: m-hartmann
 
 # FAQ for the data prep report (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights data prep report (preview) feature.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## What is the data prep report?
 

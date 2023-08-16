@@ -13,6 +13,8 @@ searchScope:
 
 # Export diagnostic logs (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Forward logs from Customer Insights using Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
@@ -24,6 +26,8 @@ Customer Insights sends the following event logs:
 - **Operational Events**
   - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-manage.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that trigger the unification process, which will pull in enrichments and export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
   - **APIEvent** - sends all API calls of the customers instance to Dynamics 365 Customer Insights. For more information, see the [APIEvent Schema](#api-event-schema).
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Set up the diagnostic settings
 
