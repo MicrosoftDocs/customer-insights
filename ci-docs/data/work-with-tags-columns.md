@@ -1,18 +1,12 @@
 ---
 title: "Work with tags and columns"
 description: "How to work with tags and columns to organize list views"
-ms.date: 11/15/2022
-
+ms.date: 09/01/2023
 ms.topic: overview
 author: v-wendysmith
 ms.author: v-wendysmith
 ms.reviewer: v-wendysmith
-searchScope: 
-  - ci-customers-page
-  - ci-enrichment-details
-  - ci-segments
-  - ci-segment-details
-  - customerInsights
+ms.custom: bap-template
 ---
 
 # Work with tags and columns

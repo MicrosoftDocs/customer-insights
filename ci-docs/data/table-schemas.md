@@ -1,12 +1,12 @@
 ---
 title: "Table schemas in Common Data Model"
 description: "Work with tables in Common Data Model."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
+ms.custom: bap-template
 ---
 
 # Table schemas in Common Data Model
@@ -19,9 +19,9 @@ This shared data model allows applications and data integrators to collaborate m
 
 Multiple systems and platforms implement the Common Data Model today, including Power BI dataflows and Azure Data Services. It's already supported in Microsoft Dataverse, Dynamics 365, Power Apps, Power BI, and upcoming Azure data services, directly accruing value towards the [Open Data Initiative](https://dynamics.microsoft.com/en-us/open-data-initiative/).
 
-## Customer Insights table schemas
+## Customer Insights - Data table schemas
 
-To establish a 360-degree view of the customer and make Customer Insights models available in Common Data Model for extensibility, we've published the following table schemas:
+To establish a 360-degree view of the customer and make Customer Insights - Data models available in Common Data Model for extensibility, we've published the following table schemas:
 
 | Table | Description |
 |---------|---------|
@@ -31,11 +31,11 @@ To establish a 360-degree view of the customer and make Customer Insights models
 |[Segment](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segment) | Defines a group of members with common traits. |
 |[SegmentMembership](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segmentmembership) | Members participating in a given segment. |
 
-For more information, see the documentation about the [Customer Insights table schemas in Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/overview).
+For more information, see the documentation about the [Customer Insights - Data table schemas in Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/overview).
 
 ## View tables using the Common Data Model Table Navigator
 
-View tables in the [Common Data Model Table Navigator](https://microsoft.github.io/CDM/). Select a table from the Insights Application section to get the list of Customer Insights tables and their definitions.
+View tables in the [Common Data Model Table Navigator](https://microsoft.github.io/CDM/). Select a table from the Insights Application section to get the list of Customer Insights - Data tables and their definitions.
 
 :::image type="content" source="media/CDM-table-navigator.png" alt-text="CDM Table Navigator showing CustomerActivity table.":::
 
