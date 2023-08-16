@@ -37,7 +37,7 @@ The System Status page in Customer Insights is an indispensable tool for admins 
 
 ### Monthly enhancements
 
-Marketing Contributor role:
+[Marketing Contributor role](permissions.md#marketing-contributor-preview):
 
 - can search for segments by name and only get results from their BU
 - can filter by tags and tags honor BU.Tags created in a BU aren't visible and searchable in other BUs
