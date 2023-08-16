@@ -89,7 +89,7 @@ Sample queries for other tables.
 
 ## Next steps
 
-- Most Customer Insights tables are available in Dataverse. For more information, see [Customer Insights tables in Dataverse](tables.md#customer-insights-tables-in-dataverse).
+- Most Customer Insights tables are available in Dataverse. For more information, see [Customer Insights tables in Dataverse](tables.md#customer-insights---data-tables-in-dataverse).
 
 - Dataverse offers extensive support for testing their APIs, for example via Postman. For more information see [Set up a Postman environment](/power-apps/developer/data-platform/webapi/setup-postman-environment).
 

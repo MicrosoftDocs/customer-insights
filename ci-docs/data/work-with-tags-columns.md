@@ -3,8 +3,8 @@ title: "Work with tags and columns"
 description: "How to work with tags and columns to organize list views"
 ms.date: 09/01/2023
 ms.topic: overview
-author: v-wendysmith
-ms.author: v-wendysmith
+author: m-hartmann
+ms.author: mhart
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---

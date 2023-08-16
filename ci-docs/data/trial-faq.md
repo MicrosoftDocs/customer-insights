@@ -71,7 +71,7 @@ After signing in to your paid instance of Customer Insights for the first time, 
 
 ### How do I start using the trial?
 
-After you sign up for the trial, you will arrive on the app's main screen. The main screen provides links to user guides and tutorials. To learn more, visit the links in the [Additional resources](trial-signup.md#additional-resources) on the trial sign-up page.
+After you sign up for the trial, you will arrive on the app's main screen. The main screen provides links to user guides and tutorials. To learn more, visit the links in the [What to try](trial-signup.md#what-to-try) on the trial sign-up page.
 
 ### What features are available in the trial?
 
