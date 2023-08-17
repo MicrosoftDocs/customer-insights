@@ -140,7 +140,11 @@
       href: manage-unknown-profiles.md
 
 - name: Copilot in Customer Insights
-  href: dialog-with-data.md
+  items:
+    - name: Dialog with data
+      href: dialog-with-data.md
+    - name: Data prep report overview
+      href: data-prep-overview.md
 
 - name: Tables
   items:
