@@ -53,15 +53,15 @@ Sample queries for the *CustomerProfile* table and segment memberships.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Get all customers | ` {serviceRoot}/msdynci_customerprofiles`  |          |  
-|Get a customer by ID | ` {serviceRoot}/msdynci_customerprofiles?$filter=msdynci_customerid eq '{CID}'`  |          |
-|Get a customer by Alternate Key | ` {serviceRoot}/msdynci_customerprofiles?$filter={msdynci_alternate_column} eq '{AK}'`  |  Alternate keys persist in the unified customer table in the format msdynci_DSname_TableName_PrimaryKeyColumnName  |
-|Get selected attributes for a customer | ` {serviceRoot}/msdynci_customerprofiles?$select=msdynci_fullname&$filter=msdynci_customerid eq '{CID}'`  |    |
+|Get all customers | `{serviceRoot}/msdynci_customerprofiles`  |          |  
+|Get a customer by ID | `{serviceRoot}/msdynci_customerprofiles?$filter=msdynci_customerid eq '{CID}'`  |          |
+|Get a customer by Alternate Key | `{serviceRoot}/msdynci_customerprofiles?$filter={msdynci_alternate_column} eq '{AK}'`  |  Alternate keys persist in the unified customer table in the format msdynci_DSname_TableName_PrimaryKeyColumnName  |
+|Get selected attributes for a customer | `{serviceRoot}/msdynci_customerprofiles?$select=msdynci_fullname&$filter=msdynci_customerid eq '{CID}'`  |    |
 |Get customers by IDs (In) | `{serviceRoot}/msdynci_customerprofiles?$filter=msdynci_customerid eq '{CID1}' or msdynci_customerid eq '{CID2}'`  |          |
 |Get customers by Alternate Keys (In) | `{serviceRoot}/msdynci_customerprofiles?$filter={msdynci_alternate_column} eq '{AK1}' or {msdynci_alternate_column} eq '{AK2}'`  |          |
 |Search for customers| `{serviceRoot}/msdynci_customerprofiles?$filter=contains(msdynci_lastname,'string')&$top=10`  |          |
 |Get all customers that are members of a segment| `{serviceRoot}/msdynci_segmentmemberships?$filter=contains(msdynci_segments,'\"{SegmentName}\"')&$select=msdynci_customerid`  |          |
-|Get a customer if they're a member of a segment| `{serviceRoot}/msdynci_segmentmemberships?$filter=contains(msdynci_segments,'\"{SegmentName}\"') and msdynci_customerid eq '{CID}'&$select=msdynci_customerid `  |   |
+|Get a customer if they're a member of a segment| `{serviceRoot}/msdynci_segmentmemberships?$filter=contains(msdynci_segments,'\"{SegmentName}\"') and msdynci_customerid eq '{CID}'&$select=msdynci_customerid`  |   |
 |Get all segment memberships of a customer| `{serviceRoot}/msdynci_segmentmemberships?$filter=msdynci_customerid eq '{CID}'&$select=msdynci_segments`  |      |
 
 ### Unified activity
@@ -89,7 +89,7 @@ Sample queries for other tables.
 
 ## Next steps
 
-- Most Customer Insights - Data tables are available in Dataverse. For more information, see [Tables in Dataverse](tables.md#customer-insights-tables-in-dataverse).
+- Most Customer Insights - Data tables are available in Dataverse. For more information, see [Tables in Dataverse](tables.md#customer-insights-data-tables-in-dataverse).
 
 - Dataverse offers extensive support for testing their APIs, for example via Postman. For more information see [Set up a Postman environment](/power-apps/developer/data-platform/webapi/setup-postman-environment).
 

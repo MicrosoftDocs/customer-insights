@@ -46,7 +46,7 @@ In a newly provisioned environment, the **Getting Started** page displays. If th
    > [!TIP]
    > If an error occurs during data processing, you get an explanation of the issue and suggested actions to take. For example, if required attributes needed to generate insights are not identified, select [**Map data**](#map-required-data).
 
-   After the data quality checks, thr system removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
+   After the data quality checks, the system removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
 
 1. Upon a successful completion, the **Results** page displays results from your file:
    - Unique number of customers

@@ -64,7 +64,6 @@ On the **Predictions** page under the **Create** tab, models labeled as **Use th
 
 ## Next steps
 
-- [Predictions overview](predictions-overview.md)
 - [Responsible AI FAQs for the data prep report](faqs-data-prep.md)
 - [Responsible AI FAQs for Customer Insights - Data](responsible-ai-overview.md)
 

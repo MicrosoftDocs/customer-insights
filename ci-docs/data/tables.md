@@ -60,7 +60,7 @@ For more information about the **Relationships** tab, see [Relationships](relati
   - **Edited by**: Name of the person who modified the table.
   - **Edited**: Date and time of the table modification.
 
-## Tables in Dataverse
+## Customer Insights - Data tables in Dataverse
 
 Some Customer Insights tables are available in Dataverse. The sections below describe the expected schema of these tables.
 
