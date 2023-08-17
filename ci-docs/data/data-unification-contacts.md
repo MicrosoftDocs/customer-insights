@@ -1,5 +1,5 @@
 ---
-title: "Create a B-to-B unified contact profile"
+title: "Create a unified business contact profile"
 description: "Go through the data unification process to create a single master dataset of business contacts."
 ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
@@ -9,11 +9,11 @@ ms.author: sstabbert
 ms.custom: bap-template
 ---
 
-# Create a unified B-to-B contact profile
+# Create a unified business contact profile
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-After [unifying business accounts](data-unification-map-tables.md), you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. Dynamics 365 Customer Insights - Data B-to-B supports a one-to-many account to contact relationship.  The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
+After [unifying business accounts](data-unification-map-tables.md), you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. The system supports a one-to-many account to contact relationship.  The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 

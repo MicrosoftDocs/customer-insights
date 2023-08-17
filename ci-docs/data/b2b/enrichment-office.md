@@ -11,9 +11,9 @@ ms.custom: bap-template
 
 # Enrich customer profiles with data from Microsoft Office 365 (preview)
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+[!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
 Use data from Microsoft Office 365 to enrich your customer account profiles with insights about engagements through Office 365 apps. The engagement data consists of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users are made available.
 
@@ -26,7 +26,7 @@ We currently support the following regions: UK, Europe, North America.
 - An active Office 365 cloud license. Content encrypted with [Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) isn't supported.
 - [Unified customer profiles](../customer-profiles.md) based on business accounts.
 - A [Microsoft Dataverse organization attached](../create-environment.md#step-3-connect-to-microsoft-dataverse) in your Customer Insights environment.
-- [Administrator](../permissions.md#admin) permissions.
+- [Administrator](../permissions.md#admin) permissions in Customer Insights - Data.
 - Consent from your Office 365 tenant administrator to use Office 365 data to provide **Insights for the Organization** within Dynamics 365 applications.
 
 ## Configure the enrichment

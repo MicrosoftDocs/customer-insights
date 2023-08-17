@@ -11,9 +11,9 @@ ms.custom: bap-template
 
 # Enrich company profiles with Leadspace (preview)
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+[!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
 Leadspace is a data science company that provides a B2B Customer Data Platform. It enables environments with unified customer profiles based on accounts to enrich their data. Enrich *Customer profiles* with attributes such as company size, location, or industry. Enrich *Contact profiles* with attributes such as title, persona, or email verification.
 
@@ -25,7 +25,7 @@ Leadspace is a data science company that provides a B2B Customer Data Platform. 
 
 ## Configure the connection for Leadspace
 
-You must be an [administrator](../permissions.md#admin) in Customer Insights and have the “perpetual key” (referred to as **Leadspace token**).
+You must be an [administrator](../permissions.md#admin) in Customer Insights - Data and have the “perpetual key” (referred to as **Leadspace token**).
 
 1. Select **Add connection** when configuring an enrichment or go to **Settings** > **Connections** and select **Set up** on the Leadspace tile.
 
@@ -63,7 +63,7 @@ You must be an [administrator](../permissions.md#admin) in Customer Insights and
 
 1. Select **Next** to complete the field mapping.
 
-1. Select the checkbox if you have *Contact profiles* that you would like to enrich. Customer Insights will automatically map the required fields.
+1. Select the checkbox if you have *Contact profiles* that you would like to enrich. The system automatically maps the required fields.
 
    :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace contact records enrichment.":::
 

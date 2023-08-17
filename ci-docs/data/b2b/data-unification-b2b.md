@@ -1,6 +1,6 @@
 ---
 title: "Unify data for business accounts"
-description: "Learn how to unify your data to create a single master dataset of account profiles in Dynamics 365 Customer Insights."
+description: "Learn how to unify your data to create a single master dataset of account profiles."
 ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
