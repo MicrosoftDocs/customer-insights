@@ -1,7 +1,7 @@
 ---
 title: Data prep report overview
 description: "Discover the overall quality of ingested and unified data and if it can generate predictions."
-ms.date: 07/20/2023
+ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: radsay01
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-The data prep report in Customer Insights helps you understand the overall data quality, the readiness of your data to produce insights, and helps you improve your data to unlock more and better insights for whatever sales or marketing strategy you have in mind.
+The data prep report in Dynamics 365 Customer Insights - Data helps you understand the overall data quality, the readiness of your data to produce insights, and helps you improve your data to unlock more and better insights for whatever sales or marketing strategy you have in mind.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
@@ -32,7 +32,7 @@ The data prep report automatically runs if the following prerequisites are met:
 
 ## Data prep report
 
-After unification is completed, Customer Insights automatically generates a data prep report based on your ingested and unified data, and analyzes contextual information on your data. This information is updated anytime you run unification. 
+After unification is completed, the system automatically generates a data prep report based on your ingested and unified data, and analyzes contextual information on your data. This information is updated anytime you run unification.
 
 Access the **Data prep report** from the **Home** page, the **Data sources** page, or the **Predictions** page.
 
@@ -58,7 +58,7 @@ There are four primary sections within the data prep report.
 
 ## Contextual information on your data
 
-In addition to the data prep report, Customer Insights provides contextual information related to insights, specifically prediction models. Use this information to understand which prediction models are best suited to your data before you go through the time and effort of configuration and running the model.
+In addition to the data prep report, you get contextual information related to insights, specifically prediction models. Use this information to understand which prediction models are best suited to your data before you go through the time and effort of configuration and running the model.
 
 On the **Predictions** page under the **Create** tab, models labeled as **Use this model** are most suited to your data while models labeled as **Not ready to use** aren't. For any **Not ready to use** models, review the full data prep report and make the necessary fixes to your data per the guidance of the Issues and recommendations section.
 
@@ -66,6 +66,6 @@ On the **Predictions** page under the **Create** tab, models labeled as **Use th
 
 - [Create and manage predictions](predictions.md)
 - [Responsible AI FAQs for the data prep report](faqs-data-prep.md)
-- [Responsible AI FAQs for Customer Insights](responsible-ai-overview.md)
+- [Responsible AI FAQs for Customer Insights - Data](responsible-ai-overview.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

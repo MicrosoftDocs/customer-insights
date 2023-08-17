@@ -1,7 +1,7 @@
 ---
 title: "Enrichment for data sources (preview)"
 description: "Enrich data sources before going through the data unification process."
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
