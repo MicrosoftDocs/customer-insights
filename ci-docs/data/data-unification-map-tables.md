@@ -1,16 +1,11 @@
 ---
 title: "Select source fields for data unification"
 description: "The first step in the unification process is selecting tables, attributes, primary keys, and semantic types to map data to the unified customer profile."
-recommendations: false
 ms.date: 05/08/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-searchScope: 
-  - ci-map
-  - ci-match
-  - customerInsights
 ---
 
 # Select source fields for data unification

@@ -12,10 +12,11 @@ ms.custom: bap-template
 
 # Generate and manage suggested segments based on measures (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Find suggested segments based on measures or customer attributes. For more information, see [Suggested segments based on measures](suggested-segments.md).
-
 
 ## Generate suggested segments based on measures
 

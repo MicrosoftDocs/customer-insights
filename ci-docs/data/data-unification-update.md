@@ -7,11 +7,6 @@ author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
-searchScope: 
-  - ci-match
-  - ci-merge
-  - ci-relationships
-  - customerInsights
 ---
 
 # Update unification settings

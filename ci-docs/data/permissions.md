@@ -26,6 +26,8 @@ Access to Customer Insights is restricted to users in your organization that are
 
 ## Marketing contributor (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 - The Marketing contributor role is only available in [business unit enabled environments](business-units-data-separation.md)
 - Can only access customer profiles that belong to the business unit of the user.
 - Create segments using the **Segments** page (only *Build your own*, no projected attributes).
@@ -34,6 +36,8 @@ Access to Customer Insights is restricted to users in your organization that are
 > [!NOTE]
 > Marketing contributors can only create segments and measures from customer profiles, unified activities, segments, and customer measures. This permission has limited functionality in some areas compared to the Contributor role.
 > Marketing contributors can't search for customers in the *customers* view.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Contributor
 

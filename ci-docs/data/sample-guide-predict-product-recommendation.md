@@ -12,11 +12,15 @@ searchScope:
   - customerInsights
 ---
 
-# Product recommendation prediction sample guide
+# Product recommendation prediction (preview) sample guide
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 This guide walks you through an end-to-end example of product recommendation prediction using sample data. We recommend that you try this prediction [in a new environment](manage-environments.md).
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Scenario
 

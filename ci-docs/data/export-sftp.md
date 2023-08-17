@@ -10,6 +10,8 @@ ms.author: philk
 
 # Export data to SFTP hosts (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol (SFTP) location.

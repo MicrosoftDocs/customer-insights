@@ -1,7 +1,7 @@
 ---
 title: Respond to Data Subject Rights (DSR) requests
-description: Learn how to respond to Data Subject Requests with Dynamics 365 Customer Insights.
-ms.date: 04/11/2023
+description: Learn how to respond to Data Subject Requests with Dynamics 365 Customer Insights - Data.
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: m-hartmann
@@ -17,43 +17,43 @@ ms.custom: bap-template
 
 [!INCLUDE [gdpr-dsr-delete-note](~/../shared-content/shared/privacy-includes/gdpr-dsr-delete-export-note.md)]
 
-## Respond to data subject delete requests for Customer Insights
+## Respond to data subject delete requests
 
 The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in many privacy laws and regulations. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
 
 ### Manage data subject delete requests
 
-Customer Insights offers the following in-product experiences to delete personal data for a specific customer or user:
+Dynamics 365 Customer Insights - Data offers the following in-product experiences to delete personal data for a specific customer or user:
 
-- **Manage delete requests for customer data**: Customer data in Customer Insights is ingested from original data sources external to Customer Insights. Perform data delete requests in the original data source first.
-- **Manage delete requests for Customer Insights user data**: Data for users is created by Customer Insights. Perform all data delete requests in Customer Insights.
+- **Manage delete requests for customer data**: Customer data gets imported from original external data sources. Perform data delete requests in the original data source first.
+- **Manage delete requests for user data**: Data for application users is created by Customer Insights - Data. Perform all data delete requests in the application.
 
 #### Manage requests to delete customer data
 
-As a Customer Insights admin, remove Customer Insights customer data that was deleted in the data source. Verify the data delete requests were performed in the original data source.
+As an admin, remove customer data that was deleted in the data source. Verify the data delete requests were performed in the original data source.
 
-1. Sign in to Dynamics 365 Customer Insights.
+1. Sign in to Customer Insights - Data.
 
 1. Go to **Data** > **Data sources**.
 
 1. For each data source in the list that contains deleted customer data:
    1. Select the data source and then select **Refresh**.
-   1. Check the status of the data source under **Status**. A check mark means the refresh was successful. A warning triangle means something went wrong. If a warning triangle is displayed, contact D365CI@microsoft.com.
+   1. Check the status of the data source under **Status**.
 
-   :::image type="content" source="media/gdpr-data-sources.png" alt-text="Handling data delete requests for customer data.":::<!-- EDITOR'S NOTE: Please change the name of the image file to remove "gdpr." -->
+   :::image type="content" source="media/data-sources.png" alt-text="Handling data delete requests for customer data.":::
 
-1. After a successful data source refresh, run the downstream refreshes too, especially if you don't have a recurring full refresh of Customer Insights scheduled.
+1. After a successful data source refresh, run the downstream refreshes too, especially if you don't have a recurring full refresh scheduled.
 
    > [!IMPORTANT]
    > Static segments are not included in a full refresh nor downstream refreshes. In order to comply with the delete request for customer data, recreate the static segments with the refreshed source data.
    >
-   > Inactive segments are not refreshed (neither manually, nor a scheduled refresh, nor other refreshes). They have a **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. If a segment was executed successfully before changing to an **Inactive** status, a table with the customer data was created by Customer Insights. In order to comply with the delete request for customer data, either periodically activate the segment and run it with the latest Customer Insights data *or* delete the segment.
+   > Inactive segments are not refreshed (neither manually, nor a scheduled refresh, nor other refreshes). They have a **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. If a segment was executed successfully before changing to an **Inactive** status, a table with the customer data was created by Customer Insights - Data. In order to comply with the delete request for customer data, either activate the segment and run it with the latest data *or* delete the segment.
 
 #### Manage delete requests for user data
 
-As a Customer Insights admin, delete Customer Insights user data.
+As an admin, delete application user data.
 
-1. Sign in to Dynamics 365 Customer Insights.
+1. Sign in to Customer Insights - Data.
 
 1. Go to **Settings** > **Permissions** > and select the **Users** tab.
 
@@ -87,10 +87,10 @@ As a tenant administrator, export user data.
 1. Acknowledge the confirmation to export the data for the requested user.
 1. Receive the exported data through the tenant admin email address.
 
-## Data deletion handling in Dynamics 365 Customer Insights
+## Data deletion handling
 
 Data is deleted (data partitions and data snapshots) if the data partitions and data snapshots are inactive for more than 30 days, meaning they have been replaced by a new data partition and snapshot through a refresh of data sources.
 
-Not all data and snapshots are deleted. The most recent data partition and data snapshot are active because they're used in Customer Insights. For the most recent data, it doesn't matter if the data sources weren't refreshed within the last 30 days.
+Not all data and snapshots are deleted. The most recent data partition and data snapshot are active because they're used in Customer Insights - Data. For the most recent data, it doesn't matter if the data sources weren't refreshed within the last 30 days.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

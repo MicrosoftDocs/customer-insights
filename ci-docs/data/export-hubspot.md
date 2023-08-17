@@ -10,6 +10,8 @@ ms.author: philk
 
 # Export segments to HubSpot (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Export segments of unified customer profiles to HubSpot and use them for email marketing.

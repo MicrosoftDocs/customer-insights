@@ -12,9 +12,13 @@ ms.custom: bap-template
 
 # Data and security roles in Dataverse (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Dynamics 365 Customer Insights - Data uses the [security model of Microsoft Dataverse](/power-platform/admin/wp-security-cds).
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Dataverse security roles
 

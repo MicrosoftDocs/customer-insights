@@ -10,6 +10,8 @@ ms.author: jodahl
 
 # Enrich customer profiles with SFTP custom import (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Secure File Transfer Protocol (SFTP) custom import enables you to import data that doesn't have to go through the process of data unification. It's a flexible, secure, and easy way to bring in your data. SFTP custom import can be used in combination with [SFTP export](export-sftp.md) that lets you export the customer profile data that is needed for enrichment. The data can then be processed and enriched, and SFTP custom import can be used to bring the enriched data back to Dynamics 365 Customer Insights.
