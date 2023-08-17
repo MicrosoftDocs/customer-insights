@@ -1,9 +1,8 @@
 ---
 title: "Export segments to Facebook Ads Manager (preview) (contains video)"
 description: "Learn how to configure the connection and export to Facebook Ads Manager."
-ms.date: 12/16/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
@@ -23,7 +22,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 - A [Facebook Ads Account](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) that includes a [Facebook Business Account](https://business.facebook.com/).
 - Administrator privileges on the [Facebook Ads Account](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
-- Custom Audience Terms need to be accepted by the user setting up the connection in Customer Insights.
+- Custom Audience Terms need to be accepted by the user setting up the connection in Dynamics 365 Customer Insights - Data.
 
 ## Known limitations
 

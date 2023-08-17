@@ -1,18 +1,12 @@
 ---
 title: "Data enrichment (preview) overview"
 description: "Use capabilities from Microsoft and other third-party services to enrich your customer data."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 ms.collection: get-started
-searchScope: 
-  - ci-enrichments
-  - ci-enrichment-details
-  - ci-enrichment-wizard
-  - customerInsights
 ---
 
 # Data enrichment (preview) overview
@@ -21,7 +15,7 @@ searchScope:
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Use data from sources like Microsoft and other partners to enrich your customer data. Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections can be used by administrators and contributors to configure enrichments.  
+Use data from sources like Microsoft and other partners to enrich your customer data in Dynamics 365 Customer Insights - Data. Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections can be used by administrators and contributors to configure enrichments.  
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 

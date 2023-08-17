@@ -1,9 +1,8 @@
 ---
 title: "Export segments to Adobe Experience Platform (preview)"
-description: "Learn how to use Customer Insights segments in Adobe Experience Platform."
-ms.date: 11/15/2022
+description: "Learn how to use Customer Insights - Data segments in Adobe Experience Platform."
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
@@ -28,7 +27,7 @@ Export segments that target relevant audiences to Adobe Experience Platform.
 
 ## Campaign Overview
 
-To better understand how you can use segments from Customer Insights in Adobe Experience Platform, let’s look at a fictitious sample campaign.
+To better understand how you can use segments from Dynamics 365 Customer Insights - Data in Adobe Experience Platform, let’s look at a fictitious sample campaign.
 
 Let’s assume that your company offers a monthly, subscription-based service to your customers in the United States. You want to identify customers whose subscriptions are due for renewal in the next eight days but haven't yet renewed their subscription. To keep these customers, you want to send them a promotional offer via email, using Adobe Experience Platform.
 
@@ -36,9 +35,9 @@ In this example, we want to run the promotional email campaign once. This articl
 
 ## Identify your target audience
 
-In our scenario, we assume that the email addresses of the customers are available in Customer Insights and their promotional preferences were analyzed to identify members of the segment.
+In our scenario, we assume that the email addresses of the customers are available in Customer Insights - Data and their promotional preferences were analyzed to identify members of the segment.
 
-The [segment you defined in Customer Insights](segments.md) is called **ChurnProneCustomers** and you plan to send these customers the email promotion.
+The [segment you defined](segments.md) is called **ChurnProneCustomers** and you plan to send these customers the email promotion.
 
 :::image type="content" source="media/churn-prone-customers-segment.png" alt-text="Screenshot of the segments page with the ChurnProneCustomers segment created.":::
 
@@ -46,7 +45,7 @@ The offer email that you want to send out will contain the first name, last name
 
 ## Export your target audience
 
-We'll configure the export from Customer Insights to an Azure Blob Storage account.
+We'll configure the export to an Azure Blob Storage account.
 
 ### Set up connection to Azure Blob Storage
 
@@ -105,17 +104,17 @@ Exported data is stored in the Azure Blob Storage container you configured. The 
 
 ## Define Experience Data Model (XDM) in Adobe Experience Platform
 
-Before the exported data from Customer Insights can be used within Adobe Experience Platform, define the Experience Data Model schema and [configure the data for the Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
+Before the exported data from Customer Insights - Data can be used within Adobe Experience Platform, define the Experience Data Model schema and [configure the data for the Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
 
 Learn [what XDM is](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) and understand the [basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema).
 
 ## Import data into Adobe Experience Platform
 
-Import the prepared audience data from Customer Insights into Adobe Experience Platform.
+Import the prepared audience data from Customer Insights - Data into Adobe Experience Platform.
 
 1. [Create an Azure Blob Storage source connection](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).
 
-1. [Configure a dataflow](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) for a cloud storage batch connection to import the segment output from Customer Insights into Adobe Experience Platform.
+1. [Configure a dataflow](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) for a cloud storage batch connection to import the segment output into Adobe Experience Platform.
 
 ## Create an audience in Adobe Campaign Standard
 

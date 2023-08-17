@@ -1,7 +1,7 @@
 ---
 title: "Power BI connector (preview)"
 description: "Learn how to use the Dynamics 365 Customer Insights connector in Power BI."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -29,9 +29,9 @@ Create visualizations for your data with the Microsoft Power BI Desktop. Generat
 
 1. Select **Connect**.
 
-1. **Sign in** with the same organizational account you use for Customer Insights and select **Connect**.
+1. **Sign in** with the same organizational account you use for Customer Insights- Data and select **Connect**.
    > [!NOTE]
-   > The account you indicate in this step is used to fetch data from Customer Insights and doesn't need to be the same you are signed in to Power BI. To reset the account that is used for data fetching, open Power BI and go to **File** > **Options** > **Settings** > **Data source settings**. In the list of data sources, select **Dynamics 365 Customer Insights Login** and select **Clear permissions**.  
+   > The account you indicate in this step is used to fetch data from Customer Insights - Data and doesn't need to be the same you are signed in to Power BI. To reset the account that is used for data fetching, open Power BI and go to **File** > **Options** > **Settings** > **Data source settings**. In the list of data sources, select **Dynamics 365 Customer Insights Login** and select **Clear permissions**.  
 
 1. In the **Navigator** dialog box, view the list of all environments you have access to. Expand an environment and open any of the folders. For example, open the **Segments** folder, to see all tables you can import.
 
@@ -41,13 +41,13 @@ Create visualizations for your data with the Microsoft Power BI Desktop. Generat
 
 ## Large data sets
 
-The Customer Insights connector for Power BI is designed to work for data sets that contain up to 1 million customer profiles. Importing larger data sets may work, but takes a long time and could time-out because of Power BI limitations. For more information, see [Power BI: Recommendations for large data sets](/power-bi/admin/service-premium-what-is#large-datasets).
+The Customer Insights - Data connector for Power BI is designed to work for data sets that contain up to 1 million customer profiles. Importing larger data sets may work, but takes a long time and could time-out because of Power BI limitations. For more information, see [Power BI: Recommendations for large data sets](/power-bi/admin/service-premium-what-is#large-datasets).
 
 ### Work with a subset of data
 
 Consider working with a subset of your data. For example, create [segments](segments.md) instead of exporting all customer records to Power BI.
 
 > [!TIP]
-> For troubleshooting information, go to [Microsoft Dynamics 365 Customer Insights troubleshooting](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights).
+> For troubleshooting information, go to [Microsoft Dynamics 365 Customer Insights - Data troubleshooting](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

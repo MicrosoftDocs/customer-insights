@@ -1,9 +1,8 @@
 ---
 title: "Export segments to RollWorks (preview)"
 description: "Learn how to configure the connection and export to RollWorks."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
@@ -21,7 +20,7 @@ Export segments of unified customer profiles to RollWorks and use them for adver
 
 - A [RollWorks account](https://www.rollworks.com/) and corresponding administrator credentials.
 - A [RollWorks Advertiser ID](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -48,7 +47,7 @@ Export segments of unified customer profiles to RollWorks and use them for adver
 
 1. Select **Authenticate with RollWorks** and provide your admin credentials for RollWorks.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

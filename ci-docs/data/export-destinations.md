@@ -1,16 +1,12 @@
 ---
 title: "Exports (preview) overview"
-description: "Overview on exports in Customer Insights"
+description: "Overview on exports in Dynamics 365 Customer Insights - Data."
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.topic: overview
 ms.custom: bap-template
-searchScope: 
-  - ci-export
-  - ci-connections
-  - customerInsights
 ---
 
 # Exports (preview) overview
@@ -29,8 +25,8 @@ searchScope:
 
 There are two main types of exports:  
 
-- **Data-out exports** let you export any type of table available in Customer Insights. The tables that you select for export are exported with all data fields, metadata, schemas, and mapping details.
-- **Segment exports** let you export segment tables from Customer Insights. For individual consumers (B-to-C), segments represent a list of customer profiles. For businesses (B-to-B), [segments can represent a list of accounts or contacts](segment-builder.md#create-a-new-segment-with-segment-builder). When configuring the export, you select the included data fields, depending on the target system you are exporting data to.
+- **Data-out exports** let you export any type of table available in Dynamics 365 Customer Insights - Data. The tables that you select for export are exported with all data fields, metadata, schemas, and mapping details.
+- **Segment exports** let you export segment tables from Customer Insights - Data. For individual consumers (B-to-C), segments represent a list of customer profiles. For businesses (B-to-B), [segments can represent a list of accounts or contacts](segment-builder.md#create-a-new-segment-with-segment-builder). When configuring the export, you select the included data fields, depending on the target system you are exporting data to.
 
 ### Segment exports
 
@@ -43,7 +39,7 @@ Most export options support both types of environments. Exporting segments to va
 **Segment exports in environments for business accounts (B-to-B)**  
 - Segments in the context of environments for business accounts are built on the *account* table or the *contact* table. To export account segments as is, the target system needs to support pure account segments. This is the case for [LinkedIn](export-linkedin-ads.md) when you choose the **company** option while defining the export.
 - All other target systems require fields from the contact table.
-- With two segment types (contacts and accounts), Customer Insights automatically identifies which type of segments are eligible for export based on the target system. For example, for a contact-focused target system like Mailchimp, Customer Insights only allows you to choose contact segments to export.
+- With two segment types (contacts and accounts), Customer Insights - Data automatically identifies which type of segments are eligible for export based on the target system. For example, for a contact-focused target system like Mailchimp, Customer Insights - Data only allows you to choose contact segments to export.
 
 **Limits on segment exports**  
 - Third-party target systems may limit the number of customer profiles that you can export. 
