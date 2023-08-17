@@ -1,7 +1,7 @@
-- name: Welcome to Dynamics 365 Customer Insights
+- name: Welcome to Dynamics 365 Customer Insights - Data
   href: overview.md
     
-- name: Customer Insights documentation
+- name: Customer Insights - Data documentation
   href: index.yml
 
 - name: Get started
@@ -18,7 +18,7 @@
       href: https://home.ci.ai.dynamics.com/
     - name: Quickstart guide
       href: get-started.md
-    - name: Explore Customer Insights
+    - name: Explore Customer Insights - Data
       href: home.md
     - name: Work with tags and columns
       href: work-with-tags-columns.md
@@ -39,7 +39,7 @@
       href: data-sources.md
     - name: Add a data source
       items:
-       - name: Get started with Customer Insights using a single data source
+       - name: Get started with using a single data source
          href: data-sources-single.md
        - name: Connect to data in Azure Data Lake Storage
          href: connect-common-data-model.md
@@ -86,7 +86,7 @@
           href: business-units-data-separation.md
         - name: Access business unit data in Dataverse
           href: access-business-units-dataverse.md
-        - name: Customer Insights business unit integrations
+        - name: Customer Insights - Data business unit integrations
           href: business-unit-integration-dynamics365-power-platform.md
     - name: Review data unification
       href: data-unification-review.md
@@ -360,13 +360,13 @@
 
 - name: APIs
   items:
-    - name: Dataverse APIs for Customer Insights
+    - name: Dataverse APIs for Customer Insights - Data
       href: dv-odata.md
-    - name: Work with Customer Insights APIs
+    - name: Work with Customer Insights - Data APIs
       href: apis.md 
-    - name: Customer Insights API references
+    - name: Customer Insights - Data API references
       href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
-    - name: Manage Customer Insights APIs
+    - name: Manage Customer Insights - Data APIs
       href: apis-manage.md
     - name: OData sample queries
       href: odata-examples.md
@@ -394,19 +394,19 @@
     items:
       - name: Certify as Microsoft Customer Data Platform Specialist
         href: /certifications/exams/mb-260?tab=tab-instructor-led
-      - name: Get started with Customer Insights
+      - name: Get started with Customer Insights - Data
         href: /training/modules/get-started-customer-data-platform/
       - name: Ingest data
         href: /training/modules/ingest-data-customer-insights/
       - name: Create a unified customer profile
         href: /training/modules/unified-customer-profile/
-      - name: Work with Customer Insights
+      - name: Work with Customer Insights - Data
         href: /training/modules/working-with-customer-insights/
       - name: Enrich data and make predictions
         href: /training/modules/enrich-data/
       - name: Manage external connections
         href: /training/modules/configure-third-party-connections/
-      - name: Administer Customer Insights
+      - name: Administer Customer Insights - Data
         href: /training/modules/administer-customer-data-platform/
   - name: Get support
     href: /power-platform/admin/get-help-support

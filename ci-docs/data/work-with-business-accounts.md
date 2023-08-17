@@ -1,6 +1,6 @@
 ---
 title: "Work with business accounts"
-description: "Learn about business accounts as primary target audience in Dynamics 365 Customer Insights."
+description: "Learn about business accounts as primary target audience in Dynamics 365 Customer Insights - Data."
 ms.date: 03/20/2023
 ms.topic: conceptual
 author: v-wendysmith
@@ -17,7 +17,7 @@ searchScope:
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-The Dynamics 365 Customer Insights lets you configure your environment for different primary target audiences: individual consumers (B-to-C) and business accounts (B-to-B). In B-to-C scenarios, the data is centered around individuals. For B-to-B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in Customer Insights, depending on your environment focus. For more information about differences, review the docs of the feature areas. 
+Dynamics 365 Customer Insights - Data lets you configure your environment for different primary target audiences: individual consumers (B2C) and business accounts (B2B). In B2C scenarios, the data is centered around individuals. For B2B, the primary target audiences are accounts - organizations or companies - and contacts. This article helps you to get started with an environment for business accounts. It lists the differences for the feature areas in Customer Insights - Data, depending on your environment focus. For more information about differences, review the docs of the feature areas. 
 
 ## Create an environment for business accounts
 
@@ -40,7 +40,7 @@ If your organization maintains environments for individual customers and busines
 - [Measures](measures.md): Supports measures created from the measure builder with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.
 - [Segments](segments.md): Supports segments that are created from scratch with the segment builder. Segments can be based on accounts or contacts.
 - [Data ingestion](data-sources.md): All features in this area are the same for business accounts and individual customers.
-- B-to-B data unification is very similar to B-to-C data unification but has an additional step to unify contacts after account unification. See [Business accounts (B-to-B)](data-unification.md).
+- B2B data unification is very similar to B-to-C data unification but has an additional step to unify contacts after account unification. See [Business accounts (B2B)](data-unification.md).
 - [Enrichment](enrichment-hub.md): Some enrichment types are available only for individual customer scenarios while others are exclusively available for business accounts.
 - [Predictions and out-of-box models](predictions.md): Transactional churn prediction contains additional steps for business accounts. Other predictions are only available for individual customers.
 - [Activation and export](export-manage.md): Exports are available for business accounts and individual customers. Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts.

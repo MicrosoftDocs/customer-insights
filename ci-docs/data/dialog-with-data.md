@@ -54,8 +54,8 @@ We want to hear your feedback so we can continually enhance the relevancy, preci
 
 ## Next steps
 
-[Create complex segments with segment builder](segment-builder.md)  
-[Create measures with measure builder](measure-builder.md)  
-[Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)
+- [Create complex segments with segment builder](segment-builder.md)  
+- [Create measures with measure builder](measure-builder.md)  
+- [Responsible AI FAQs for Dynamics 365 Customer Insights](responsible-ai-overview.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
