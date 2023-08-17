@@ -1,6 +1,6 @@
 ---
 title: "Create business account measures with measure builder"
-description: "Build measures from scratch to analyze key metrics about your business."
+description: "Build measures from scratch to analyze key metrics about your business accounts."
 ms.date: 09/01/2023
 ms.topic: how-to
 author: JimsonChalissery
