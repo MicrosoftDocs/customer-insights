@@ -1,5 +1,5 @@
 ---
-title: "Predict product recommendations"
+title: "Predict product recommendations (preview)"
 description: "Predict the products a customer is likely to purchase or interact with."
 ms.date: 11/15/2022
 ms.reviewer: mhart
@@ -9,7 +9,9 @@ author: wmelewong
 ms.author: wameng
 ---
 
-# Predict product recommendations
+# Predict product recommendations (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -23,6 +25,8 @@ The output of this model provides recommendations based on the product ID. Your 
 
 > [!TIP]
 > Try the product recommendation prediction using sample data: [Product recommendation prediction sample guide](sample-guide-predict-product-recommendation.md).
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 

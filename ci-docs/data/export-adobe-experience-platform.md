@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export segments to Adobe Experience Platform (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Export segments that target relevant audiences to Adobe Experience Platform.

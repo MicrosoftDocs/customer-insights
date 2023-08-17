@@ -43,6 +43,7 @@ The System Status page in Customer Insights is an indispensable tool for admins 
 - can filter by tags and tags honor BU.Tags created in a BU aren't visible and searchable in other BUs
 - can customize the columns they see in their BU-specific view of the segment list
 - can download a segment
+
 ## June 2023
 
 ### Display activities in a Dynamics 365 activity timeline

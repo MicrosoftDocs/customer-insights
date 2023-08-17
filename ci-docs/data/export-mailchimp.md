@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export segments to Mailchimp (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Export segments of unified customer profiles to Mailchimp to create newsletters and email campaigns.

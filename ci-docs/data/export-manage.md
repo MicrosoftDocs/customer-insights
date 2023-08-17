@@ -15,6 +15,8 @@ searchScope:
 
 # Set up and manage exports (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 All exports follow the same general set up and management process. You can also schedule exports.

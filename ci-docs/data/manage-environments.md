@@ -56,7 +56,11 @@ We recommend to have at least one other user with admin permissions in addition 
 
 ## Reset an existing environment (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 As the owner of an environment, reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 1. Select the **Environment** picker in the header of the app.
 

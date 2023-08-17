@@ -105,12 +105,16 @@ Select an activity to rename or delete the activity. To edit activities, select 
 
 ## Define contact activities (preview)
 
-For business accounts (B-to-B), use a *UnifiedContact* table to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-   > [!NOTE]
-   > To define contact-level activities, a [*UnifiedContact*](data-unification-contacts.md) table must be created.
-   >
-   > You must have both **AccountID** and **ContactID** attributes for each record within your activity data.
+For business accounts (B2B), use a *UnifiedContact* table to capture activities of contacts. You can see in the activity timeline for an account which contact was responsible for each activity. Most steps follow the customer activity mapping configuration.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
+> [!NOTE]
+> To define contact-level activities, a [*UnifiedContact*](data-unification-contacts.md) table must be created.
+>
+> You must have both **AccountID** and **ContactID** attributes for each record within your activity data.
   
 1. Go to **Data** > **Activities**. Select **Configure activities**.
 

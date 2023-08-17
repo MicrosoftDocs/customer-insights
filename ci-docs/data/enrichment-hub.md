@@ -17,9 +17,13 @@ searchScope:
 
 # Data enrichment (preview) overview
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Use data from sources like Microsoft and other partners to enrich your customer data. Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections can be used by administrators and contributors to configure enrichments.  
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Multiple enrichments of the same type
 

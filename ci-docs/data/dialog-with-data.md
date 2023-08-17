@@ -11,11 +11,15 @@ ms.custom: bap-template
 
 # Have a dialog with data using Copilot in Customer Insights (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Dynamics 365 Customer Insights - Data uses copilot AI capabilities, powered by [Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service) models, to generate insights about your customers. Ask questions in natural language to have a dialog with your data to explore, assess, and better understand the profiles, behavior, and activity of your customers. With these insights, you can create optimal personalized experiences and engage with your customers through the most effective channels.
 
 Responses are generated in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai). For more information, see [FAQ for dialog with data](faqs-dialog-data.md)
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 

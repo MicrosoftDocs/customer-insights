@@ -10,6 +10,8 @@ ms.author: bkief
 
 # Bring your own Azure key vault (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Linking a dedicated [Azure key vault](/azure/key-vault/general/basic-concepts) to a Dynamics 365 Customer Insights - Data environment helps organizations to meet compliance requirements.
