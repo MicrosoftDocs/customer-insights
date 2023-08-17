@@ -1,7 +1,7 @@
 ---
 title: Turn off the data prep report
 description: "Learn how to turn off the data prep report."
-ms.date: 07/20/2023
+ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: radsay01
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE[public-preview-banner](includes/public-preview-banner.md)]
 
-By default, the data prep report capability is turned on. A Customer Insights admin role is required to change the setting.
+By default, the data prep report capability is turned on. A Dynamics 365 Customer Insights - Data admin role is required to change the setting.
 
 1. Go to **Settings** > **System** and select the **Data prep report** tab.
 

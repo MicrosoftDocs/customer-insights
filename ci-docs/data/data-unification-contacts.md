@@ -1,25 +1,19 @@
 ---
 title: "Create a B-to-B unified contact profile"
 description: "Go through the data unification process to create a single master dataset of business contacts."
-ms.date: 05/30/2023
+ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.custom: bap-template
-
-searchScope: 
-  - ci-map
-  - ci-match
-  - ci-merge
-  - customerInsights
 ---
 
 # Create a unified B-to-B contact profile
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-After [unifying business accounts](data-unification-map-tables.md), you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. Customer Insights B-to-B supports a one-to-many account to contact relationship.  The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
+After [unifying business accounts](data-unification-map-tables.md), you can optionally unify business contacts for those accounts and link the unified contacts to the unified accounts. The contact unification process maps contact data from multiple data sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. Dynamics 365 Customer Insights - Data B-to-B supports a one-to-many account to contact relationship.  The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
@@ -115,7 +109,7 @@ Go to **Data** > **Tables** to verify the output tables.
 The unified contact profile table, called *UnifiedContact*, displays in the **Profiles** section. The first successful unification run creates the *UnifiedContact* table. All subsequent runs expand that table.
 
 Key columns in the *UnifiedContact* table include:
-- **UnifiedContactId**: Unique identifier assigned by Customer Insights to this unified profile.
+- **UnifiedContactId**: Unique identifier assigned by the system to this unified profile.
 - **FK_ContactToAccountId**: Winner value resulting from the merging of the account foreign keys for this contact. This value is the primary key from a data source, and is used to look up the unified account’s unique CustomerID.
 - **FK_CustomerId**: Unique CustomerID of the contact’s unified accounts. This is a foreign key reference to the Customer table’s CustomerID column. If it is null, the contact does not have an account.
 - **{ContactSourceTable1}{PrimaryKeyColumn}**: Primary key of the winner source record from the named table involved in the unification of the profile.
