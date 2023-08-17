@@ -24,7 +24,11 @@ Incremental refresh for data sources based on Power Query (preview) or Azure Dat
 
 ## Configure incremental refresh for data sources based on Power Query (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 Customer Insights allows incremental refresh for data sources imported through Power Query that support incremental ingestion. For example, Azure SQL databases with date and time fields which indicate when data records were last updated.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 1. [Create a new data source based on Power Query](connect-power-query.md).
 

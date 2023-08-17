@@ -10,6 +10,8 @@ ms.author: philk
 
 # Teams bot for Dynamics 365 Customer Insights (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Connect with Microsoft Teams to let a bot look up unified customer profiles in Teams channels.

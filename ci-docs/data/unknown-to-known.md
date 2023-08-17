@@ -1,14 +1,11 @@
 ---
 title: Personalize your experiences with data about known and unknown users
 description: Incorporate the information about formerly unknown users when you know their identity.
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: andtapia
 ms.author: andreatapia
-searchScope: 
-  - ci-system-diagnostic
-  - customerInsights
 ---
 
 # Personalize your customer experiences with data for unknown and known users
@@ -17,13 +14,13 @@ searchScope:
 
 Managing data gets increasingly challenging as customers interact with brands across different digital touchpoints. **Known users** (customer profiles with contact information) are often **signed in** or **authenticated** in one channel but **unknown users** (without contact information) and **unauthenticated** in others. This leads to disjointed customer experiences instead of seamless personalization across channels. Personalization becomes even more challenging for unknown customers who do not have unique identifiers.
 
-Dynamics 365 Customer Insights helps collect meaningful profile attributes and create unified customer profiles for unknown and known users. With Customer Insights, you can import data to generate insights and create seamless experiences for all your customers. Over time, with the collection of historical transactions, behaviors, and demographics, unknown customers can become known customers. Their identities can be merged into one complete 360° view. Customer Insights allows you to unify customer activity across channels, including websites, loyalty programs, CRM systems, and more.
+Dynamics 365 Customer Insights - Data helps collect meaningful profile attributes and create unified customer profiles for unknown and known users. You can import data to generate insights and create seamless experiences for all your customers. Over time, with the collection of historical transactions, behaviors, and demographics, unknown customers can become known customers. Their identities can be merged into one complete 360° view. The system allows you to unify customer activity across channels, including websites, loyalty programs, CRM systems, and more.
 
 ## Sample scenario
 
 Let's think about a coffee chain that has a broad customer base, which purchases coffee and food in stores and online. Some web visitors are not signed into their accounts while browsing for decaffeinated coffee beans. So the are "unknown users". It is difficult for the coffee chain to deliver personalized offers if the user is unknown. However, with the coffee chain being able to identify this visitor is unknown, the company can extend a personalized offer to receive 15% off the next order. If the unknown users signs up for the offer, the unknown user becomes known, and now the coffee chain can email the customer with a newsletter about decaffeinated coffee.
 
-With Customer Insights, the company can combine customer profiles with activity data from unauthenticated (unknown) sessions after the offer is activated. The coffee chain can import their data from other sources using out of the box connectors to merge identities for customers across all channels.
+With Customer Insights - Data, the company can combine customer profiles with activity data from unauthenticated (unknown) sessions after the offer is activated. The coffee chain can import their data from other sources using out of the box connectors to merge identities for customers across all channels.
 
 ## Prerequisites
 
@@ -54,7 +51,7 @@ For more information about the available options for data ingestion, see [Data s
 
 Converging unknown identities with known identities helps enable personalization based on user behaviors, irrespective of their profile state (known or unknown). Personalized content for all users helps customers quickly get to the most relevant products or services that they're interested in at that moment.
 
-Since some of the users in our data are known, we can use Customer Insights to combine that data with the user's profile. For more information about unifying customer profiles, see [Data unification overview](data-unification.md).
+Since some of the users in our data are known, we can use the system to combine that data with the user's profile. For more information about unifying customer profiles, see [Data unification overview](data-unification.md).
 
 1. Select the source fields from the web data table. Use the profile data that is stored in your web data and select the fields that represent Ids with demographic data.
 

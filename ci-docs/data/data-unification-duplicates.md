@@ -1,17 +1,11 @@
 ---
 title: "Remove duplicates before unifying data"
 description: "The second step in the unification process is selecting which record to keep when duplicates are found."
-recommendations: false
-ms.date: 11/18/2022
-
+ms.date: 09/01/2023
 ms.topic: tutorial
 author: v-wendysmith
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-searchScope: 
-  - ci-map
-  - ci-match
-  - customerInsights
 ---
 
 # Remove duplicates before unifying data
@@ -20,7 +14,7 @@ searchScope:
 
 This optional step in unification enables you to set up rules for eliminating duplicate records **within** a table. Deduplication identifies multiple records for a customer and selects the best record to keep (based on basic merge preferences) or merges the records into one (based on advanced merge preferences). Source records get linked to the merged record with alternate IDs. If rules are not configured, system-defined rules are applied.
 
-Deduplication of customer records in each table is important to improve unification results and performance. Defining your own deduplication rules gives you flexibility and control. However, if you do not define any custom deduplication rules for a table, Customer Insights performs default deduplication.
+Deduplication of customer records in each table is important to improve unification results and performance. Defining your own deduplication rules gives you flexibility and control. However, if you do not define any custom deduplication rules for a table, Dynamics 365 Customer Insights - Data runs default deduplication rules.
 
 ## Default deduplication rules
 
@@ -28,15 +22,15 @@ The system-defined rules apply if no deduplication rules are added.
 
 1. Deduplicate on primary keys
 
-   First, Customer Insights matches records that have the same primary key and keeps the first record in the table.  For example, if four records are found with primary key “12345”, the first of those four records found in the table are kept as the winner record.
+   First, the system matches records that have the same primary key and keeps the first record in the table. For example, if four records are found with primary key “12345”, the first of those four records found in the table are kept as the winner record.
 
 1. Deduplicate on fields used in Matching conditions
 
-   Next, Customer Insights deduplicates on all fields that are used in matching rules for the table. For example, in Matching conditions, if Table1 has rule 1 which matches on *Name+Email* and rule 2 which matches on *Name+Phone*, Customer Insights deduplicates Table1 by doing an exact match on *Name+Email+Phone*. If several records are found with an exact match on *Name+Email+Phone*, then the first record in the table is kept as the winner. Use of normalization or precision in the match rules is not used in default deduplication.
+   Next, the system deduplicates on all fields that are used in matching rules for the table. For example, in Matching conditions, if Table1 has rule 1 which matches on *Name+Email* and rule 2 which matches on *Name+Phone*, Customer Insights - Data deduplicates Table1 by doing an exact match on *Name+Email+Phone*. If several records are found with an exact match on *Name+Email+Phone*, then the first record in the table is kept as the winner. Use of normalization or precision in the match rules is not used in default deduplication.
 
-If you define your own deduplication rules, Customer Insights runs those rules first. Then, deduplicates the tables on the primary key. If duplicate primary keys are found, instead of picking the first record as the winner, Customer Insights uses a winner record (if any)  as defined by your custom deduplication rules.
+If you define your own deduplication rules, the system runs those rules first. Then, deduplicates the tables on the primary key. If duplicate primary keys are found, instead of picking the first record as the winner, it uses a winner record (if any) as defined by your custom deduplication rules.
 
-For example, six records have primary key “20”. Three of these records are deduplicated by a custom rule and a winner selected. Customer Insights then deduplicates on the primary key finding the winner record and the three remaining records. Customer Insights uses the previously defined winner record as the final winner. If there is no winner record in the set of records, or if there are multiple winner records defined by different deduplication rules, then the usual rule of using the first record as the winner applies.
+For example, six records have primary key “20”. Three of these records are deduplicated by a custom rule and a winner selected. Customer Insights - Data then deduplicates on the primary key finding the winner record and the three remaining records. The system uses the previously defined winner record as the final winner. If there is no winner record in the set of records, or if there are multiple winner records defined by different deduplication rules, then the usual rule of using the first record as the winner applies.
 
 ## Include enriched tables (preview)
 

@@ -11,9 +11,13 @@ ms.author: zacook
 
 # Create a segment based on a prediction model (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 The results of predictions sometimes only apply to a subset of your customers. Increase the personalization of recommendations by creating segments from results of prediction models. For example, you may want to give specific recommendations to customers that prefer a certain type of service.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 

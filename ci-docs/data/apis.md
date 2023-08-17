@@ -1,5 +1,5 @@
 ---
-title: Work with Customer Insights APIs
+title: Work with Customer Insights - Data APIs
 description: Use APIs and understand limitations.
 ms.date: 07/06/2023
 ms.reviewer: wimohabb
@@ -12,19 +12,19 @@ searchScope:
   - customerInsights
 ---
 
-# Work with Customer Insights APIs
+# Work with Customer Insights - Data APIs
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 [!INCLUDE [api-deprecate](./includes/api-deprecate.md)]
 
-Dynamics 365 Customer Insights provides APIs to build your own applications based on your data in Customer Insights. Details of these APIs are listed on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.
+Dynamics 365 Customer Insights - Data provides APIs to build your own applications based on your data in Customer Insights. Details of these APIs are listed on the [API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.
 
-## Get started trying the Customer Insights APIs
+## Get started trying the APIs
 
-Enable Customer Insights APIs and try them out. A Customer Insights admin must enable API access to Customer Insights. Once access is enabled, any user can use API with the subscription key.
+An admin must enable API access to your data. Once access is enabled, any user can use API with the subscription key.
 
-1. [Sign in](https://home.ci.ai.dynamics.com) to Customer Insights. If you don't have a subscription yet, [sign up for a trial of Customer Insights](https://aka.ms/tryci).
+1. [Sign in](https://home.ci.ai.dynamics.com) to Customer Insights - Data or [sign up for a trial of Customer Insights](https://aka.ms/tryci).
 
 1. Go to **Settings** > **Permissions** and select the **APIs** tab.
 
@@ -48,9 +48,9 @@ Enable Customer Insights APIs and try them out. A Customer Insights admin must e
 
 ## Create a new app registration in the Azure portal
 
-Create a new [app registration](/graph/auth-register-app-v2) to use the Customer Insights APIs in an Azure application using delegated permissions.
+Create a new [app registration](/graph/auth-register-app-v2) to use the APIs in an Azure application using delegated permissions.
 
-1. Complete the [Getting started section](#get-started-trying-the-customer-insights-apis).
+1. Complete the [Getting started section](#get-started-trying-the-apis).
 
 1. Sign in to the [Azure portal](https://portal.azure.com) with the account that can access the Customer Insights data.
 
@@ -100,9 +100,9 @@ Create an app registration that doesn't need user interaction and can be run on 
 
    <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
-1. Add the name of the app registration as a user in Customer Insights.
+1. Add the name of the app registration as a user in Customer Insights - Data.
 
-   1. Open Customer Insights, go to **Settings** > **Permissions** and select **Add users**.
+   1. Open Customer Insights - Data, go to **Settings** > **Permissions** and select **Add users**.
 
    1. Search for the name of your app registration, select it from the search results, and select **Save**.
 
@@ -112,7 +112,7 @@ For a short list of OData sample queries to work with the APIs, see [OData query
 
 ## Customer Insights client libraries
 
-Get started using the client libraries available for the Customer Insights APIs. All library source code and sample applications can be found on the [Customer Insights GitHub page](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries).
+Get started using the client libraries available for the Customer Insights - Data APIs. All library source code and sample applications can be found on a [GitHub repo](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries).
 
 ### C# NuGet
 
@@ -134,7 +134,7 @@ Use the C# client libraries from NuGet.org. Currently, the package targets the n
 
 1. Use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) to get an `AccessToken` using your existing [Azure app registration](#create-a-new-app-registration-in-the-azure-portal).
 
-1. After successfully authenticating and acquiring a token, construct a new or use an existing `HttpClient` with the **DefaultRequestHeaders "Authorization"** set to **Bearer "access token"** and **Ocp-Apim-Subscription-Key** set to the [**subscription key** from your Customer Insights environment](#get-started-trying-the-customer-insights-apis).   
+1. After successfully authenticating and acquiring a token, construct a new or use an existing `HttpClient` with the **DefaultRequestHeaders "Authorization"** set to **Bearer "access token"** and **Ocp-Apim-Subscription-Key** set to the [**subscription key** from your Customer Insights - Data environment](#get-started-trying-the-apis).
 
    Reset the **Authorization** header when appropriate. For example, when the token expired.
 

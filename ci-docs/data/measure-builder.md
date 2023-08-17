@@ -18,7 +18,7 @@ searchScope:
 
 Measure builder lets you define calculations using math operators, aggregation functions, and filters. Define measures using attributes from tables that are related to the unified *Customer* table.
 
-Creating measures in B-to-C and B-to-B environments works the same way. However, if your B-to-B environment [uses accounts with hierarchies](relationships.md#set-up-account-hierarchies), choose whether to aggregate the measure across related sub-accounts.
+Creating measures in B-to-C and B-to-B environments works the same way. However, if your B-to-B environment [uses accounts with hierarchies](relationships.md#set-up-account-hierarchies-preview), choose whether to aggregate the measure across related sub-accounts.
 
 # [Individual consumers (B-to-C)](#tab/b2c)
 
@@ -146,7 +146,7 @@ Create measures on the level of individual accounts (customer measure) or on the
 
 1. If there are values in your data that must be replaced with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
 
-1. If you [use accounts with hierarchies](relationships.md#set-up-account-hierarchies), review **Roll up sub-accounts**.
+1. If you [use accounts with hierarchies](relationships.md#set-up-account-hierarchies-preview), review **Roll up sub-accounts**.
    - To calculate the measure for every account, select **No**. Every account gets its own result.
    - To calculate one result, select **Yes**. Select **Edit** to choose the account hierarchy according to the ingested hierarchies and select **Apply**. The measure yields only one result because it's aggregated with sub-accounts.
 

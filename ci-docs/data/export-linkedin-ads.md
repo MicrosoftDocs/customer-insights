@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export segments to LinkedIn Ads (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Export segments of unified customer profiles to LinkedIn Ads to create matched audiences. Use the matched audiences for company targeting and contact targeting.

@@ -3,7 +3,7 @@ title: "Sign up for a free Dynamics 365 Customer Insights trial"
 description: "Learn how to quickly sign up for and start a free Customer Insights trial. Explore the app and find additional learning resources."
 author: m-hartmann
 ms.author: mhart
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.topic: get-started
 ms.custom: bap-template 
 ms.reviewer: jeffhar
@@ -13,7 +13,7 @@ ms.reviewer: jeffhar
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Customer Insights offers a free 30-day trial. After a quick sign-up, you'll have access to many of the app's key features. The trial allows you to test the app with sample data and even try out your own customer data. [Learn more about Customer Insights features.](overview.md)
+Customer Insights offers a free 30-day trial of two applications: Customer Insights - Data and Customer Insights - Journeys. After a quick sign-up, you'll have access to many of the apps' key features. The trial allows you to test the apps with sample data and even try out your own customer data.
 
 **To sign up for the trial**:
 
@@ -25,17 +25,22 @@ The trial takes a few moments to load, and then you can start using the app. You
 
 ## What to try
 
-Your trial environment includes the same features as the paid version. The links below guide you through some of the key features.
+Your trial environment includes the same features as the paid version.
 
-- [Get started with Customer Insights.](get-started.md)
+### Customer Insights - Data
+
+The links below guide you through some of the key features and other resources.
+
+- [Get started with Customer Insights - Data.](get-started.md)
 - [Add more users and assign permissions.](permissions.md)
 - [Ingest your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
 - [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions.md).
 - Create [segments](segments.md) to group customers and [measures](measures.md) to review KPIs.
 - Set up [connections](connections.md) and [exports](export-manage.md) to process subsets of your data in other applications.
+- [Explore learning paths and modules.](/training/browse/?products=dynamics-cust-insights)
+- [Trial FAQ.](trial-faq.md)
+- [Customer Insights - Data product details.](https://dynamics.microsoft.com/ai/customer-insights/)
 
-## Additional resources
+### Customer Insights - Journeys
 
-- [Explore learning paths and modules for Customer Insights](/training/browse/?products=dynamics-cust-insights)
-- [Trial FAQ](trial-faq.md)
-- [Dynamics 365 Customer Insights product details](https://dynamics.microsoft.com/ai/customer-insights/)
+The links below guide you through some of the key features and other resources.

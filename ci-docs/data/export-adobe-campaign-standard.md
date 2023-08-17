@@ -11,6 +11,8 @@ ms.author: philk
 
 # Export Customer Insights segments to Adobe Campaign Standard (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Export segments that target relevant audiences to Adobe Campaign Standard.
