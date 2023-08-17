@@ -13,16 +13,16 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
-With Dynamics 365 Customer Insights - Data, business accounts (B2B) aren't supported. However, current customers with B2B data are still supported. This article describes information specific to B2B environments. For all other informtion related to Customer Insights - Data, see [Dynamics 365 Customer Insights - Data documentation.](../index.yml)
+Microsoft is improving Customer Insights to provide both individual customers (B2C) as well as business accounts (B2B) in a single environment that seamlessly integrates with Dynamics 365 account data. The initial release of Dynamics 365 Customer Insights - Data supports B2C functionality. B2B functionality will be added over the next few months. Current B2B customers can still use their current Customer Insights environment. This article describes information specific to B2B environments. For all other informtion related to Customer Insights - Data, see [Dynamics 365 Customer Insights - Data documentation.](../index.yml)
 
 ## Supported feature areas
 
 - Activities: Supports activities for [accounts](../activities.md) and related [contacts](activities-contacts.md) and shows them in a timeline.
-- [Customer profiles](../customer-profiles.md): In addition to the customer profile, **Contacts for this customer** display. Each contact is shown with their fields. Empty fields are hidden. For more information, see [View customer profiles](../customer-profiles.md). Learn how to [filter contact activities within the timeline](activities-contacts.md#contact-level-activity-timeline-filtering).
-- [Data ingestion](../data-sources.md)
-- [Data unification](data-unification-b2b.md)
+- [Customer profiles](../customer-profiles.md): In addition to the customer profile, **Contacts for this customer** display. Each contact is shown with their fields. Empty fields are hidden. For more information, see [View customer profiles](../customer-profiles.md). Learn how to [filter contact activities within the timeline.](activities-contacts.md#contact-level-activity-timeline-filtering)
+- [Data ingestion.](../data-sources.md)
+- [Data unification.](data-unification-b2b.md)
 - [Enrichment](#enrichments): Some enrichment types are available only for business accounts.
-- [Exports](#exports)
+- [Exports.](#exports)
 - [Measures](../measures.md): Supports measures created from the [measure builder](measure-builder-b2b.md) with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.
 - Predictions: Supports [transactional churn predictions](#predict-transactional-churn).
 - [Relationships](../relationships.md): Supports creating relationships between the tables so the account view can show all activities from contacts. Contacts can drill up to see contact view and [hierarchies](account-hierarchies.md) can be used for account activity aggregations.
@@ -58,7 +58,7 @@ For more information, see [data enrichment (preview) overview](../enrichment-hub
 
 Administrators can [create an environment in an existing organization.](../create-environment.md) When creating the environment, select your business type: individual consumers (B2C) or business accounts (B2B).
 
-For B2B, ou can then [ingest data](../data-sources.md) for business accounts and related contacts as data sources from all supported sources. [Unify](data-unification-b2b.md) your account data followed by your contact data to connect contact and account tables.
+For B2B, you can then [ingest data](../data-sources.md) for business accounts and related contacts as data sources from all supported sources. [Unify](data-unification-b2b.md) your account data followed by your contact data to connect contact and account tables.
 
 ### Switch between primary target audience
 
