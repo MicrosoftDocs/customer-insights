@@ -17,6 +17,8 @@ ms.custom: bap-template
 
 Use data from Microsoft Office 365 to enrich your customer account profiles with insights about engagements through Office 365 apps. The engagement data consists of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users are made available.
 
+[!INCLUDE [public-preview-note](../includes/public-preview-note.md)]
+
 ## Supported countries or regions
 
 We currently support the following regions: UK, Europe, North America.

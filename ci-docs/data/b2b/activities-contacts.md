@@ -9,7 +9,9 @@ ms.author:  shsri
 ms.custom: bap-template
 ---
 
-# Set up business contact activities
+# Set up business contact activities (preview)
+
+[!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
@@ -17,6 +19,8 @@ Business contact activities are actions or events performed by business contacts
 
 > [!TIP]
 > In B2B environments, you can select between account tables and other tables. If you select an account table, the relationship path is automatically set. For other tables, you have to define the relationship path over one or more intermediate tables until you reach an account table.
+
+[!INCLUDE [public-preview-note](../includes/public-preview-note.md)]
 
 ## Prerequisites
 

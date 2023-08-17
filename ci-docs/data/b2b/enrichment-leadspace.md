@@ -17,6 +17,8 @@ ms.custom: bap-template
 
 Leadspace is a data science company that provides a B2B Customer Data Platform. It enables environments with unified customer profiles based on accounts to enrich their data. Enrich *Customer profiles* with attributes such as company size, location, or industry. Enrich *Contact profiles* with attributes such as title, persona, or email verification.
 
+[!INCLUDE [public-preview-note](../includes/public-preview-note.md)]
+
 ## Prerequisites
 
 - An active Leadspace license.
