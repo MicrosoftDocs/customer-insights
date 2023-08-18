@@ -27,10 +27,10 @@ Contact records must be present in Customer Insights - Journeys before you can e
 
 ## Recommendations
 Consider the following restrictions before exporting to Customer Insights - Journeys outbound:
-- In Customer Insights - Journeys outbound, you can send a limited number of interactions per month and per day. Your segments for Marketing should have no more than one million members. [Check the service limits of Customer Insights - Journeys outbound for more details](/dynamics365/marketing/fair-use-policy).
+- In Customer Insights - Journeys outbound, you can send a limited number of interactions per month and per day. Your segments for Customer Insights - Journeys should have no more than one million members. [Check the service limits of Customer Insights - Journeys outbound for more details](/dynamics365/marketing/fair-use-policy).
 - Exports to Customer Insights - Journeys outbound takes longer when you update multiple segments to the same environment. For better performance and stability, set up only one export that includes all the segments you need.
 
-## Set up connection to Marketing
+## Set up connection to Customer Insights - Journeys
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
@@ -42,7 +42,7 @@ Consider the following restrictions before exporting to Customer Insights - Jour
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your organization's Marketing URL in the **Server address** field.
+1. Enter your organization's Customer Insights - Journeys URL in the **Server address** field.
 
 1. In the **Server admin account** section, select **Sign in** and choose a Customer Insights - Journeys account.
 

@@ -131,7 +131,7 @@ additionalContent:
           url: /dynamics365/customer-insights/journeys
         - title: Dynamics 365 Sales
           summary: Build strong relationships with your customers, take actions based on insights, and close deals faster.
-          url: /dynamics365/marketing
+          url: /dynamics365/sales
         - title: Microsoft Dataverse
           summary: Securely store and manage data that's used by business applications
           url: /power-apps/maker/data-platform
