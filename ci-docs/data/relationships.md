@@ -1,25 +1,11 @@
 ---
 title: "Relationships between tables and table paths"
 description: "Create and manage relationships between tables from multiple data sources."
-ms.date: 12/7/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
-searchScope: 
-  - ci-semantic-mapping
-  - ci-entities
-  - ci-relationships
-  - ci-activities
-  - ci-activities-wizard
-  - ci-measures
-  - ci-segments
-  - ci-segment-builder
-  - ci-measure-builder
-  - ci-measure-template
-  - ci-permissions
-  - customerInsights
 ---
 
 # Relationships between tables and table paths

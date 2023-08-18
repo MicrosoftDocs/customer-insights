@@ -7,12 +7,6 @@ ms.reviewer: v-wendysmith
 ms.topic: how-to
 ms.date: 09/01/2023
 ms.custom: bap-template
-searchScope: 
-  - ci-measures
-  - ci-measure-builder
-  - ci-measure-template
-  - ci-enrichment-details
-  - customerInsights
 ---
 
 # Create and manage measures
@@ -60,10 +54,9 @@ When you approach or exceed the number of active measures based on the [service 
 - Running or refreshing individual measures is slower
 - Refresh failures indicating out of memory
 
-The complexity of your measures can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active measures. These messages display on the **Measures** list page. If you encounter these messages or symptoms, see the following recommendations.
+The complexity of your measures can also impact performance. To help you prevent performance issues, you get notifications or warnings when you approach, reach, or exceed the total number of active measures. These messages display on the **Measures** list page. If you encounter these messages or symptoms, see the following recommendations.
 
 1. Delete old or no longer relevant measures even if they are static or inactive.
 1. [Schedule individual measures](measures-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

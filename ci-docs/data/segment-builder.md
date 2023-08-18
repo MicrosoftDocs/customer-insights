@@ -7,11 +7,6 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
-searchScope: 
-  - ci-segments
-  - ci-segment-builder
-  - ci-segment-details
-  - customerInsights
 ---
 
 # Create complex segments with segment builder

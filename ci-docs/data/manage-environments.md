@@ -1,15 +1,12 @@
 ---
 title: "Manage environments"
-description: Learn how to to manage existing Customer Insights environments as an admin.
-ms.date: 03/01/2023
+description: Learn how to to manage environments as an admin.
+ms.date: 09/01/2023
 ms.topic: how-to
 ms.reviewer: mhart
 author: mukeshpo
 ms.author: mukeshpo
 ms.custom: bap-template
-searchScope: 
-  - ci-system-about
-  - customerInsights
 ---
 
 # Manage environments
@@ -50,7 +47,7 @@ Several users can have admin permissions but only one user is the owner of an en
 
 If the user account of the owner is deleted or suspended, the environment won't have an owner. Any admin user can claim the ownership and become the new owner. The owner admin can continue to own the environment or [change the ownership to another admin](#change-the-owner-of-an-environment).
 
-To claim ownership, select the **Take ownership** button that shows at the top of every page in Customer Insights when the original owner left the organization.
+To claim ownership, select the **Take ownership** button that shows at the top of every page in Dynamics 365 Customer Insights - Data when the original owner left the organization.
 
 We recommend to have at least one other user with admin permissions in addition to the owner to enable smooth ownership transfer if the owner leaves the organization.
 
@@ -79,7 +76,7 @@ As the owner of an environment, reset an environment to an empty state if you wa
 As the owner of an environment, you can delete it.
 
 > [!IMPORTANT]
-> Deleting an environment does not remove the connection to a Dataverse environment. If you plan to connect the same Dataverse environment to a new Customer Insights environment in the future, you must [remove that connection to the Dataverse environment](customer-insights-dataverse.md#remove-an-existing-connection-to-a-dataverse-environment).
+> Deleting an environment does not remove the connection to a Dataverse environment. If you plan to connect the same Dataverse environment to a new Customer Insights - Data environment in the future, you must [remove that connection to the Dataverse environment](customer-insights-dataverse.md#remove-an-existing-connection-to-a-dataverse-environment).
 
 1. Select the **Environment** picker in the header of the app.
 

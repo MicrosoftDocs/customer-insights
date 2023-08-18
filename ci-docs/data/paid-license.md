@@ -3,8 +3,7 @@ title: Purchase a license of Dynamics 365 Customer Insights
 author: m-hartmann
 description: Purchase a license of Dynamics 365 Customer Insights, sign in, and get familiar with the app.
 ms.author: mhart
-ms.date: 10/05/2021
-
+ms.date: 09/01/2023
 ms.topic: conceptual
 ms.collection: get-started
 ---
@@ -23,8 +22,8 @@ Customer Insights is licensed per tenant and includes multiple capabilities. You
 
 ## Sign in for the first time
 
-1. Go to the [Customer Insights app URL](https://home.ci.ai.dynamics.com).
+1. Go to the [Customer Insights - Data app URL](https://home.ci.ai.dynamics.com).
 1. Sign in with your school or work account.
-1. Agree to the terms of service and set the content preferences for your Customer Insights environment.
+1. Agree to the terms of service and set the content preferences for your environment.
 
 After your first sign-in, you'll see an environment with sample data. You can use that data to explore features and get familiar with the app. To use your own data, [create an environment](create-environment.md).
