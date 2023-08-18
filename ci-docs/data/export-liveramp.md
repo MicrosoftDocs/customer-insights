@@ -3,13 +3,14 @@ title: "Export segments to LiveRamp (preview)"
 description: "Learn how to configure the connection and the export to LiveRamp."
 ms.date: 11/15/2022
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 ---
 
 # Export segments to LiveRamp&reg; (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 

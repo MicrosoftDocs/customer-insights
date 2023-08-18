@@ -1,19 +1,17 @@
 ---
 title: "Exports (preview) overview"
-description: "Overview on exports in Customer Insights"
+description: "Overview on exports in Dynamics 365 Customer Insights - Data."
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.topic: overview
 ms.custom: bap-template
-searchScope: 
-  - ci-export
-  - ci-connections
-  - customerInsights
 ---
 
 # Exports (preview) overview
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -21,12 +19,14 @@ searchScope:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dsVH]
 
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
 ## Export types
 
 There are two main types of exports:  
 
-- **Data-out exports** let you export any type of table available in Customer Insights. The tables that you select for export are exported with all data fields, metadata, schemas, and mapping details.
-- **Segment exports** let you export segment tables from Customer Insights. Segments represent a list of customer profiles.
+- **Data-out exports** let you export any type of table available in Dynamics 365 Customer Insights - Data. The tables that you select for export are exported with all data fields, metadata, schemas, and mapping details.
+- **Segment exports** let you export segment tables from Customer Insights - Data. Segments represent a list of customer profiles.
 
 ### Segment exports
 

@@ -1,17 +1,12 @@
 ---
 title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
-ms.date: 05/30/2023
+ms.date: 09/01/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
-searchScope: 
-  - ci-match
-  - ci-merge
-  - ci-relationships
-  - customerInsights
 ---
 
 # Update unification settings

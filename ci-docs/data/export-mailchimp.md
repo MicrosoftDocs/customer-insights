@@ -1,15 +1,16 @@
 ---
 title: "Export segments to Mailchimp (preview)"
 description: "Learn how to configure the connection and export to Mailchimp."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ---
 
 # Export segments to Mailchimp (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -46,7 +47,7 @@ Export segments of unified customer profiles to Mailchimp to create newsletters 
 
 1. Select **Authenticate with Mailchimp** and provide your Mailchimp credentials.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

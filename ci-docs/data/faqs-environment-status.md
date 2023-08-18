@@ -1,7 +1,7 @@
 ---
 title: FAQ for Environment status summary
-description: This FAQ provides information about the AI technology used in Dynamics 365 Customer Insights Environment status summary. It includes key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 07/27/2023
+description: This FAQ provides information about the AI technology used in the environment status summary. It includes key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
+ms.date: 09/01/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -12,7 +12,11 @@ ms.reviewer: wameng
 
 # FAQ for Environment status summary (preview)
 
-These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights Environment status summary feature.
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
+These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights - Data environment status summary feature.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## What is Environment status summary?
 
@@ -24,11 +28,11 @@ The Environment status summary detects if a key job has been skipped or failed, 
 
 ## What is the feature’s intended use?
 
-The intention is to aid administrators in determining the status of their Customer Insights environment in less time and with less manual effort.
+The intention is to aid administrators in determining the status of their Customer Insights - Data environment in less time and with less manual effort.
 
 ## How was Environment status summary evaluated? What metrics are used to measure performance?
 
-This feature has only been evaluated in English at this time. 
+This feature has only been evaluated in English at this time.
 
 The Environment status summary is evaluated from dimensions of accuracy of result and performance of generation. In addition, it's evaluated with embedded monitoring for Responsible AI. Specifically, this feature has been tested with an array of scenarios to ensure it captures and mitigates accordingly, including inappropriate language used, malicious intention of jail break, and data fabrication.
 

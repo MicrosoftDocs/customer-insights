@@ -1,15 +1,16 @@
 ---
-title: "Export Customer Insights segments to Adobe Campaign Standard (preview)"
-description: "Learn how use Customer Insights segments in Adobe Campaign Standard."
-ms.date: 11/15/2022
+title: "Export segments to Adobe Campaign Standard (preview)"
+description: "Learn how use Customer Insights - Data segments in Adobe Campaign Standard."
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ---
 
-# Export Customer Insights segments to Adobe Campaign Standard (preview)
+# Export segments to Adobe Campaign Standard (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -25,17 +26,17 @@ Export segments that target relevant audiences to Adobe Campaign Standard.
 
 ## Campaign overview
 
-To better understand how you can use segments from Customer Insights in Adobe Experience Platform, let’s look at a fictitious sample campaign.
+To better understand how you can use segments from Dynamics 365 Customer Insights - Data in Adobe Experience Platform, let’s look at a fictitious sample campaign.
 
 Let’s assume that your company offers a monthly, subscription-based service to your customers in the United States. You want to identify customers whose subscriptions are due for renewal in the next eight days but haven't yet renewed their subscription. To keep these customers, you want to send them a promotional offer via email, using Adobe Campaign Standard.
 
-In this example, we want to run the promotional email campaign once. This article doesn’t cover the use-case of running the campaign more than once. However, Customer Insights and Adobe Campaign Standard can be configured to work for a recurring campaign scenario too.
+In this example, we want to run the promotional email campaign once. This article doesn’t cover the use-case of running the campaign more than once. However, Customer Insights - Data and Adobe Campaign Standard can be configured to work for a recurring campaign scenario too.
 
 ## Identify your target audience
 
-In our scenario, we assume that the email addresses of the customers are available in Customer Insights and their promotional preferences were analyzed to identify members of the segment.
+In our scenario, we assume that the email addresses of the customers are available in Customer Insights - Data and their promotional preferences were analyzed to identify members of the segment.
 
-The [segment you defined in Customer Insights](segments.md) is called **ChurnProneCustomers** and you plan to send these customers the email promotion.
+The [segment you defined in Customer Insights - Data](segments.md) is called **ChurnProneCustomers** and you plan to send these customers the email promotion.
 
 :::image type="content" source="media/churn-prone-customers-segment.png" alt-text="Screenshot of the segments page with the ChurnProneCustomers segment created.":::
 
@@ -81,11 +82,11 @@ The offer email that you want to send out will contain the first name, last name
 
 1. Select **Next**.
 
-1. Map the **Source** fields from the Customer Insights segment to the **Target** field names in the Adobe Campaign Standard profile schema.
+1. Map the **Source** fields from the segment to the **Target** field names in the Adobe Campaign Standard profile schema.
 
    :::image type="content" source="media/ACS-field-mapping.png" alt-text="Field mapping for the Adobe Campaign Standard connector.":::
 
-   If you want to add more attributes, select **Add attribute**. The target name can be different from the source field name so you can still map segment output from Customer Insights to Adobe Campaign Standard if the fields don’t have the same name in the two systems.
+   If you want to add more attributes, select **Add attribute**. The target name can be different from the source field name so you can still map segment output from Customer Insights - Data to Adobe Campaign Standard if the fields don’t have the same name in the two systems.
 
    > [!NOTE]
    > Email address is used as an identity field but you can use any other identifier from the customer profile to map data to Adobe Campaign Standard.
@@ -116,7 +117,7 @@ If there are no other records in Adobe Campaign Standard, other than what you ar
 
 Import the prepared audience data from Customer Insights into Adobe Campaign Standard to [create profiles using a workflow](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences).
 
-The import workflow in the image below has been configured to run every eight hours and look for exported Customer Insights segments (.csv file in Azure Blob Storage). The workflow extracts the .csv file content in a specified column order. This workflow has been built to perform basic error handling and ensure that each record has an email address before hydrating the data in Adobe Campaign Standard. The workflow also extracts the segment name from the filename before upserting into Adobe Campaign Standard profile data.
+The import workflow in the image below has been configured to run every eight hours and look for exported segments (.csv file in Azure Blob Storage). The workflow extracts the .csv file content in a specified column order. This workflow has been built to perform basic error handling and ensure that each record has an email address before hydrating the data in Adobe Campaign Standard. The workflow also extracts the segment name from the filename before upserting into Adobe Campaign Standard profile data.
 
 :::image type="content" source="media/ACS-import-workflow.png" alt-text="Screenshot of an import workflow in the Adobe Campaign Standard user interface.":::
 

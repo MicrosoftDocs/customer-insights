@@ -1,7 +1,7 @@
 ---
 title: "Enrich customer profiles with HERE Technologies (preview)"
 description: "General information about the HERE Technologies third-party enrichment."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: jodahlMSFT
@@ -9,6 +9,8 @@ ms.author: jodahl
 ---
 
 # Enrich customer profiles with HERE Technologies (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -22,7 +24,7 @@ HERE Technologies is a location platform company that provides location-centric 
 
 ## Configure the connection for HERE Technologies
 
-You must be an [administrator](permissions.md#admin) in Customer Insights and have an active HERE Technologies API key.
+You must be an [administrator](permissions.md#admin) in Customer Insights - Data and have an active HERE Technologies API key.
 
 1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the HERE Technologies tile.
 

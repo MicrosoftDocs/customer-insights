@@ -1,23 +1,20 @@
 ---
-title: "Tables in Customer Insights"
+title: "Tables in Customer Insights - Data"
 description: "View data on the Tables page."
-ms.date: 12/7/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
-searchScope: 
-  - ci-entities
-  - customerInsight
 ---
 
-# Tables in Customer Insights
+# Tables in Customer Insights - Data
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-After [configuring your data sources](data-sources.md), evaluate the quality of the ingested data on the **Tables** page. Multiple capabilities of Dynamics 365 Customer Insights are built around these tables. Reviewing them closely can help you validate the output of those capabilities.
+After [configuring your data sources](data-sources.md), evaluate the quality of the ingested data on the **Tables** page. Multiple capabilities of Dynamics 365 Customer Insights - Data are built around these tables. Reviewing them closely can help you validate the output of those capabilities.
 
-As you work in Customer Insights enriching your data or creating segments, measures, and activities, the tables that are created from those actions display on the **Tables** page.
+As you work in Customer Insights - Data enriching your data or creating segments, measures, and activities, the tables that are created from those actions display on the **Tables** page.
 
 > [!TIP]
 > Tables were previously called entities.
@@ -60,9 +57,9 @@ For more information about the **Relationships** tab, see [Relationships](relati
   - **Edited by**: Name of the person who modified the table.
   - **Edited**: Date and time of the table modification.
 
-## Customer Insights tables in Dataverse
+## Customer Insights - Data tables in Dataverse
 
-Some Customer Insights tables are available in Dataverse. The sections below describe the expected schema of these tables.
+Some Customer Insights - Data tables are available in Dataverse. The sections below describe the expected schema of these tables.
 
 - [CustomerProfile](#customerprofile)
 - [AlternateKey](#alternatekey)
@@ -83,7 +80,7 @@ The AlternateKey table contains keys of the tables, which participated in the un
 |Column  |Type  |Description  |
 |---------|---------|---------|
 |DataSourceName    |Text         | Name of the data source. For example: `datasource5`        |
-|TableName        | Text        | Name of the table in Customer Insights. For example: `contact1`        |
+|TableName        | Text        | Name of the table in Customer Insights - Data. For example: `contact1`        |
 |AlternateValue    |Text         |Alternative ID that is mapped to the customer ID. Example: `cntid_1078`         |
 |KeyRing           | Text        | JSON value  </br> Sample: [{"dataSourceName":" datasource5 ",</br>"tableName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
 |CustomerId         | Text        | ID of the unified customer profile.         |
@@ -92,7 +89,7 @@ The AlternateKey table contains keys of the tables, which participated in the un
 
 ### UnifiedActivity
 
-This table contains activities by users that are available in Customer Insights.
+This table contains activities by users that are available in Customer Insights - Data.
 
 | Column            | Type        | Description                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|

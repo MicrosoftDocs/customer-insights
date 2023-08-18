@@ -13,6 +13,8 @@ searchScope:
 
 # Real-time data ingestion (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 The near real-time functionality lets you see, within seconds, the latest interactions that your customers have made with your products or services.
@@ -30,6 +32,8 @@ These values are API call parameters that you can change. They aim to ensure tha
 
  > [!TIP]
  > Any ingested or modified data using these APIs reflects directly in the corresponding Dataverse tables. This allows you to leverage the rest of the Dataverse ecosystem and functionalities to achieve end-to-end business scenarios.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Real-time update of the unified customer profile fields
 

@@ -1,15 +1,16 @@
 ---
 title: "Export segments to DotDigital (preview)"
 description: "Learn how to configure the connection and export to DotDigital."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ---
 
 # Export segments to DotDigital (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -19,7 +20,7 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 - A [DotDigital account](https://dotdigital.com/) and  an [API user](https://support.dotdigital.com/hc/articles/115001718730-How-do-I-create-an-API-user).
 - A DotDigital ID from a [new](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book) or existing address book in DotDigital. The ID can be found in the URL when you select and open an address book.
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -48,7 +49,7 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 1. Select **Connect** to initialize the connection.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

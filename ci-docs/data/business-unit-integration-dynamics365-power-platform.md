@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Customer Insights business unit integration with Dynamics 365 applications and Power Platform (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 ## Customer Insights - Data with Customer Insights - Journeys

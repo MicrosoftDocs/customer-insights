@@ -1,15 +1,16 @@
 ---
 title: "Export segments to Campaign Monitor (preview)"
 description: "Learn how to configure the connection and export to Campaign Monitor."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ---
 
 # Export segments to Campaign Monitor (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -20,7 +21,7 @@ Export segments of unified customer profiles to Campaign Monitor and use them fo
 - A [Campaign Monitor account](https://www.campaignmonitor.com/) and corresponding administrator credentials.
 - A [Campaign Monitor List ID](https://www.campaignmonitor.com/api/getting-started/#your-list-id).
 - A [Generated API key](https://www.campaignmonitor.com/api/getting-started/) from **Account Settings** in Campaign Monitor to obtain the API list ID.
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -47,7 +48,7 @@ Export segments of unified customer profiles to Campaign Monitor and use them fo
 
 1. Select **Authenticate with Campaign Monitor** and provide your admin credentials for Campaign Monitor.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

@@ -1,15 +1,16 @@
 ---
 title: "Enrich customer profiles with identity data from LiveRamp (preview)"
 description: "Enrich customer profiles with LiveRamp data."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 ---
 
 # Enrich customer profiles with identity data from LiveRamp (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -29,7 +30,7 @@ We currently support enriching customer profiles with LiveRamp data in the Unite
 
 ## Configure the connection for LiveRamp
 
-You must be an [administrator](permissions.md#admin) in Customer Insights and have an active LiveRamp client ID and secret.
+You must be an [administrator](permissions.md#admin) in Customer Insights - Data and have an active LiveRamp client ID and secret.
 
 1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the LiveRamp tile.
 

@@ -1,15 +1,16 @@
 ---
 title: "Export segments to Snapchat (preview)"
 description: "Learn how to configure the connection and export to Snapchat."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ---
 
 # Export segments to Snapchat (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -20,7 +21,7 @@ Export segments of unified customer profiles to Snapchat and use them for advert
 - A [Snapchat Business account](https://business.snapchat.com/), a [Snapchat Ads account](https://ads.snapchat.com/), and corresponding administrator credentials. You must at least be a member of an Organization Account and a Data Manager of a specific Ad Account.
 - At least one audience in Snapchat Audience manager of the type SAM (Snap Audience Match).
 - The [Snapchat Segment/Audience ID](https://businesshelp.snapchat.com/s/article/custom-audiences). The ID of the audience can be found in the URL after selecting the audience in Snapchat Audience Manager.
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -46,7 +47,7 @@ Export segments of unified customer profiles to Snapchat and use them for advert
 
 1. Select **Authenticate with Snapchat** and provide your admin credentials for Snapchat.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

@@ -1,7 +1,7 @@
 ---
 title: "Export data to Azure Data Lake Storage Gen2 (preview)"
 description: "Learn how to configure the connection to Azure Data Lake Storage Gen2."
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -10,9 +10,11 @@ ms.author: philk
 
 # Export data to Azure Data Lake Storage Gen2 (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Store your Customer Insights data in a Data Lake Storage Gen2 account or use it to transfer your data to other applications.
+Store your data from Dynamics 365 Customer Insights - Data in a Data Lake Storage Gen2 account or use it to transfer your data to other applications.
 
 ## Prerequisites
 

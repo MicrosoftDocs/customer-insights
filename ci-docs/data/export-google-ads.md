@@ -1,8 +1,7 @@
 ---
 title: "Export segments to Google Ads (preview)"
 description: "Learn how to configure the connection and export to Google Ads."
-ms.date: 11/15/2022
-
+ms.date: 09/01/2023
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
@@ -10,6 +9,8 @@ ms.reviewer: mhart
 ---
 
 # Export segments to Google Ads (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -48,7 +49,7 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 
 1. Select **Authenticate with Google Ads** and provide your Google Ads credentials.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 
@@ -66,9 +67,9 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 
 1. Choose whether to use an existing audience or create a new one:
    - To update an existing Google Ads audience, enter your [Google Ads audience ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns).
-   - To create a new audience, leave the Google Audience ID field blank. Customer Insights will automatically create a new audience in your Google Ads account and use the name of the exported segment.
+   - To create a new audience, leave the Google Audience ID field blank. Customer Insights - Data will automatically create a new audience in your Google Ads account and use the name of the exported segment.
 
-1. In the **Data matching** section, select one or more data fields to export, and select the field that represents the corresponding data fields in Customer Insights.
+1. In the **Data matching** section, select one or more data fields to export, and select the field that represents the corresponding data fields in Customer Insights - Data.
 
    > [!NOTE]
    > All personal data is sent as a hashed value to Google.
