@@ -24,7 +24,7 @@ This last step in the unification process shows a summary of the steps in the pr
 
 1. Select **Edit** on any of the data unification steps to review and make any changes.
 
-1. If you are satisfied with your selections, select **Create customer profiles** (or **Create account profiles** for B-to-B). The **Unify** page displays while the unified customer profile is being created.
+1. If you are satisfied with your selections, select **Create customer profiles**. The **Unify** page displays while the unified customer profile is being created.
 
    :::image type="content" source="media/m3_unify_refreshing.png" alt-text="Screenshot of Unify page with tiles showing Queued or Refreshing.":::
 
@@ -34,7 +34,7 @@ The unification algorithm takes some time to complete and you can't change the c
 
 ## View the results of data unification
 
-After unification, the **Data** > **Unify** page shows the number of unified customer profiles (or account profiles for B-to-B). The results of each step in the unification process display on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
+After unification, the **Data** > **Unify** page shows the number of unified customer profiles. The results of each step in the unification process display on each tile. For example, **Source fields** shows the number of mapped attributes (fields) and **Duplicate records** shows the number of duplicate records found.
 
 :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
 
@@ -51,9 +51,6 @@ Go to **Data** > **Tables** to verify the output tables.
 
 The unified customer profile table, called *Customer*, displays in the **Profiles** section. The first successful unification run creates the unified *Customer* table. All subsequent runs expand that table.
 
-> [!TIP]
-> For B-to-B, the unified account profile table is called *Customer* and displays in the **Profiles** section.
-
 Deduplication and conflation tables are created and display in the **System** section. A deduplicated table for each of the source tables is created with the name **Deduplication_DataSource_Table**. The **ConflationMatchPairs** table contains information about cross-table matches.
 
 A deduplication output table contains the following information:
@@ -64,10 +61,8 @@ A deduplication output table contains the following information:
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
 
-## Next Step
+## Next steps
 
-- For B-to-B, optionally perform [contact unification](data-unification-contacts.md).
-
-- For B-to-C, configure [activities](activities.md), [enrichments](enrichment-hub.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
+Configure [activities](activities.md), [enrichments](enrichment-hub.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -41,7 +41,6 @@ After the first environment is created, the global administrator of the Microsof
 1. Provide the following details:
 
    - **Name**: Name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
-   - **Choose your business**: Primary audience for the new environment: individual consumers (B-to-C) or [business accounts](work-with-business-accounts.md) (B-to-B). If your organization mainly does business with individuals, such as a retailer or a coffee shop, choose individual consumers. If your main audience is other companies, such as a car manufacturer or a paper company, choose business accounts.
    - **Type**: Type of environment: production or sandbox. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
    - **Region**: Region into which the service is deployed and hosted. To [use your own Azure Data Lake Storage account](own-data-lake-storage.md) or [connect to an existing Microsoft Dataverse organization](customer-insights-dataverse.md), all environments must be in the same region.
 
@@ -121,9 +120,6 @@ When you copy the environment configuration, a confirmation message displays whe
 1. Edit the data sources and enter the credentials to refresh them. Data sources from the Common Data Model folder and Dataverse must be created manually with the same name as in the source environment.
 
 1. After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer table.
-
-   > [!TIP]
-   > For accounts and contacts, select **Unify accounts** > **Unify profiles and dependencies**.
 
 1. When the data unification is complete, go to **Insights** > **Measures** and **Insights** > **Segments** to refresh them.
 

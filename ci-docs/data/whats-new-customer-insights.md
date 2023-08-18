@@ -83,7 +83,7 @@ This feature democratizes access to insights, allowing analysts, marketers, and 
 Get a 360-degree view of your B2B contacts by creating unified contact profiles. With this release, your B2B contacts can be unified just like accounts and customers. The unified accounts table and unified contacts table share a simple relationship, allowing you to easily create segments of contacts that have specific account attributes. In addition, you can now identify and engage business contacts where the account is unknown, to discover and create new account relationships
 
 - [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/gain-360-degree-view-b2b-contacts-leveraging-all-fields-unified-contacts)
-- [Documentation](data-unification-contacts.md)
+- [Documentation](b2b/data-unification-contacts.md)
 
 ### Bring your custom prediction models from Azure Synapse Analytics into Dynamics 365 Customer Insights - Data, using our Synapse pipeline integration
 

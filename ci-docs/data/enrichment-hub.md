@@ -35,8 +35,6 @@ Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrich
 
 :::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page.":::
 
-# [Individual consumers (B-to-C)](#tab/b2c)
-
 - [AbiliTec Identity](enrichment-liveramp.md) provided by LiveRamp AbiliTec
 - [Brands](enrichment-microsoft.md) provided by Microsoft
 - [Demographics](enrichment-experian.md) provided by Experian
@@ -45,19 +43,6 @@ Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrich
 - [Location data](enrichment-azure-maps.md) provided by Microsoft Azure Maps
 - [Location data](enrichment-here.md) provided by HERE Technologies
 - [SFTP custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
-
-# [Business accounts (B-to-B)](#tab/b2b)
-
-- [Account engagement data](enrichment-office.md) provided by Microsoft
-- [Company data](enrichment-dnb.md) provided by Dun & Bradstreet
-- [Company data](enrichment-leadspace.md) provided by Leadspace
-- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
-- [Enhanced company data](enrichment-enhanced-company-data.md) provided by Microsoft
-- [Location data](enrichment-azure-maps.md) provided by Microsoft Azure Maps
-- [Location data](enrichment-here.md) provided by HERE Technologies
-- [SFTP custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
-
----
 
 ## Manage existing enrichments
 

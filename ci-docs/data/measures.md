@@ -19,18 +19,10 @@ Measures help you to better understand customer behaviors and business performan
 
 Create measures to plan business activities by querying customer data and extract insights. For example, create a measure of *total spend per customer* and *total return per customer* to help identify a group of customers with high spend yet high return. Then, [create a segment](segments.md) based on these measures to drive next best actions.
 
-Choose how to create a measure based on your target audience.
-
-# [Individual consumers (B-to-C)](#tab/b2c)
+Choose how to create a measure.
 
 - From scratch with measure builder: [Build your own](measure-builder.md).
 - From commonly used measures: [Use predefined templates](measure-templates.md).
-
-# [Business accounts (B-to-B)](#tab/b2b)
-
-From scratch with measure builder: [Build your own](measure-builder.md).
-
----
 
 ## Manage existing measures
 

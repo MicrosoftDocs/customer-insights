@@ -26,8 +26,6 @@ If you have multiple data sources, select **Step-by-step guide**.
 
 Use the left pane to navigate between different areas of Customer Insights - Data.
 
-If you work with business accounts and individual consumers, you can select your primary audience to set your focus accordingly.
-
 ## Application header
 
 The **Environment** picker shows the environment you work in and lets you create or manage environments as an administrator.
