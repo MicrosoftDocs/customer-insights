@@ -17,7 +17,7 @@ If you use segments in apps which are based on the same Microsoft Dataverse orga
 
 ## Identify the dependencies of a tracked segment
 
-1. When editing a segment that is being used within the Customer Insights - Data environment, or in a customer journey in Marketing, a banner in the [segment builder](segment-builder.md) informs you about the dependencies.
+1. When editing a segment that is being used within the Customer Insights - Data environment, or in a customer journey in Customer Insights - Journeys, a banner in the [segment builder](segment-builder.md) informs you about the dependencies.
 
 1. Inspect the dependency details directly from the banner or select **Usage** in the segment builder.
 
