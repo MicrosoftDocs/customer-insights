@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
-Microsoft is improving Customer Insights to provide both individual customers (B2C) as well as business accounts (B2B) in a single environment that seamlessly integrates with Dynamics 365 account data. The initial release of Dynamics 365 Customer Insights - Data supports B2C functionality. B2B functionality will be added over the next few months. Current B2B customers can still use their current Customer Insights environment. This article describes information specific to B2B environments. For all other informtion related to Customer Insights - Data, see [Dynamics 365 Customer Insights - Data documentation.](../index.yml)
+Microsoft is improving Dynamics 365 Customer Insights to provide functionality for both individual customers (B2C) as well as business accounts (B2B) in a single environment that seamlessly integrates with Dynamics 365 account data. The initial release of Dynamics 365 Customer Insights - Data supports B2C functionality. B2B functionality will be added gradually. Current B2B customers can still use their existing Customer Insights environment. This article describes information specific to B2B environments. For all other information related to Customer Insights - Data, see [Dynamics 365 Customer Insights - Data documentation.](../index.yml)
 
 ## Supported feature areas
 
@@ -153,6 +153,5 @@ The *UnifiedContact* table contains unified information about a contact. Contact
 |  StateOrProvince      | Text |  State or province of the contact address               |
 |  StreetAddress        | Text |  Street of the contact address               |
 |  UnifiedContactId     | Unique identifier   |  GUID for the contact               |
-
 
 [!INCLUDE [footer-include](../includes/footer-banner.md)]
