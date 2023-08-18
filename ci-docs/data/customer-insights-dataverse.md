@@ -71,7 +71,7 @@ In [your own Azure Data Lake Storage account](own-data-lake-storage.md), verify 
 1. Create two security groups on your Azure subscription - one **Reader** security group and one **Contributor** security group and set the Microsoft Dataverse service as the owner for both security groups.
 
 1. Manage the Access Control List (ACL) on the `customerinsights` container in your storage account through these security groups.
-   1. Add the Microsoft Dataverse service and any Dataverse-based business applications like Dynamics 365 Marketing to the **Reader** security group with **read-only** permissions.
+   1. Add the Microsoft Dataverse service and any Dataverse-based business applications like Dynamics 365 Sales to the **Reader** security group with **read-only** permissions.
    1. Add *only* the Customers Insights application to the **Contributor** security group to grant both **read and write** permissions to write profiles and insights.
 
 ### Set up PowerShell
@@ -123,12 +123,12 @@ When connecting to a Dataverse environment, the error message **This CDS organiz
     1. Go to the *CXPConfig* row in this table.
     1. Go to the *Customer Insights Status* column and change the value from *Configured* to *NotConfigured*.
     1. Go to **Solutions**.
-    1. Uninstall the following Dynamics 365 Marketing solutions:
+    1. Uninstall the following Dynamics 365 Customer Insights - Journeys solutions:
         - DynamicsMKT_AttachCIApplicationUser (*DynamicsMKT_AttachCIApplicationUser*)
         - Dynamics Marketing Consent For Customer Insights (*DynamicsMKT_ConsentAttachCI*)
         - DynamicsMKT_OrchestrationEngineAttachCI (*DynamicsMKT_OrchestrationEngineAttachCI*)
 1. Go to **Solutions**.
-1. Uninstall the following Customer Insights solutions:
+1. Uninstall the following Customer Insights - Data solutions:
    - Dynamics 365 Customer Insights Base (*msdyn_CustomerInsightsAnchor*)
    - Dynamics 365 Customer Insights Data Tables (*msdyn_CustomerInsightsDataTables*)
    - Dynamics 365 Customer Insights (*msdyn_CustomerInsights*)

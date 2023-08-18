@@ -60,7 +60,7 @@ After the first environment is created, the global administrator of the Microsof
 
 ## Step 3: Connect to Microsoft Dataverse
 
-Your environment requires a Microsoft Dataverse environment attached to it. Select an existing Dataverse environment that doesn't already have a Customer Insights - Data environment attached to it. Or you can choose to have a new Microsoft Dataverse environment created and attached. Additionally, if you chose to use your own Azure Data Lake storage in the previous step, you can enable data sharing with Dataverse to use it with business applications based on Dataverse, like Dynamics 365 Marketing or model-driven applications in Power Apps.
+Your environment requires a Microsoft Dataverse environment attached to it. Select an existing Dataverse environment that doesn't already have a Customer Insights - Data environment attached to it. Or you can choose to have a new Microsoft Dataverse environment created and attached. Additionally, if you chose to use your own Azure Data Lake storage in the previous step, you can enable data sharing with Dataverse to use it with business applications based on Dataverse or model-driven applications in Power Apps.
 
 1. Follow the steps in [Work with data in Microsoft Dataverse](customer-insights-dataverse.md).
 
