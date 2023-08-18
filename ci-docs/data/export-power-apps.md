@@ -28,13 +28,12 @@ After adding Customer Insights - Data as a data connection, choose the following
 
 - **Customer**: to use data from the [unified customer profile](customer-profiles.md).
 - **UnifiedActivity**: to display the [activity timeline](activities.md) in the app.
-- **UnifiedContact**: to display the contacts of a customer. This table is only available in Customer Insights - Data environments for business accounts.
 
 ## Limitations
 
 ### Retrievable tables
 
-You can only retrieve the **Customer**, **UnifiedActivity**, **Segments**, and **UnifiedContact** tables through the Power Apps connector. UnifiedContact is only available in Customer Insights - Data environments for business accounts. Other tables are shown because the underlying connector supports them through triggers in Power Automate.
+You can only retrieve the **Customer**, **UnifiedActivity**, and **Segments** tables through the Power Apps connector. Other tables are shown because the underlying connector supports them through triggers in Power Automate.
 
 You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint multiple times by using the $skip parameter. [Learn more about the $skip parameter](/connectors/customerinsights/#get-items-from-a-table).
 
@@ -44,7 +43,6 @@ Delegation works for the **Customer** table and **UnifiedActivity** table.
 
 - Delegation for **Customer** table: To use delegation for this table, the fields need to be indexed in [search & filter index](search-filter-index.md).  
 - Delegation for **UnifiedActivity**: Delegation for this table only works for the fields **ActivityId** and **CustomerId**.  
-- Delegation for **UnifiedContact**: Delegation for this table only works for the fields **ContactId** and **CustomerId**. UnifiedContact is only available in Customer Insights - Data environments for business accounts.
 
 For more information about delegation, go to [Power Apps delegable functions and operations](/powerapps/maker/canvas-apps/delegation-overview).
 

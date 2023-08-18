@@ -6,15 +6,18 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: jodahl
 ms.author: jodahl
+ms.custom: bap-template
 ---
 
 # Enrich customer profiles with data from Microsoft Office 365 (preview)
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+[!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
 Use data from Microsoft Office 365 to enrich your customer account profiles with insights about engagements through Office 365 apps. The engagement data consists of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users are made available.
+
+[!INCLUDE [public-preview-note](../includes/public-preview-note.md)]
 
 ## Supported countries or regions
 
@@ -23,9 +26,9 @@ We currently support the following regions: UK, Europe, North America.
 ## Prerequisites
 
 - An active Office 365 cloud license. Content encrypted with [Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) isn't supported.
-- [Unified customer profiles](customer-profiles.md) based on [business accounts](work-with-business-accounts.md).
-- A [Microsoft Dataverse organization attached](create-environment.md#step-3-connect-to-microsoft-dataverse) to your Dynamics 365 Customer Insights - Data environment.
-- [Administrator](permissions.md#admin) permissions in Customer Insights - Data.
+- [Unified customer profiles](../customer-profiles.md) based on business accounts.
+- A [Microsoft Dataverse organization attached](../create-environment.md#step-3-connect-to-microsoft-dataverse) to your Customer Insights environment.
+- [Administrator](../permissions.md#admin) permissions in Customer Insights - Data.
 - Consent from your Office 365 tenant administrator to use Office 365 data to provide **Insights for the Organization** within Dynamics 365 applications.
 
 ## Configure the enrichment
@@ -70,11 +73,11 @@ When you run an enrichment, Microsoft will process the data within the Office 36
 
 Select **Run** to start the enrichment process.
 
-[!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-pane](../includes/progress-details-pane.md)]
 
 ## View enrichment results
 
-[!INCLUDE [enrichment-results](includes/enrichment-results.md)] This is the *Office* table. The *Office_UserTable* contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration.
+[!INCLUDE [enrichment-results](../includes/enrichment-results.md)] This is the *Office* table. The *Office_UserTable* contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration.
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
@@ -107,7 +110,7 @@ Account engagement can also be viewed on individual customer cards. Go to **Cust
 
 ## Next steps
 
-[!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 For example, a segment that contains all the customers that have a value over 60 for *days since last email* and *days since last meeting*. That segment contains stale accounts that you can try to reactivate.
 
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

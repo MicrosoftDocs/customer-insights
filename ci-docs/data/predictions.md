@@ -1,7 +1,7 @@
 ---
 title: Create and manage predictions
 description: Learn how to create and manage predictions in Dynamics 365 Customer Insights application."
-ms.date: 05/30/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: zacookmsft
@@ -23,19 +23,11 @@ The easiest way to start with predicting data are predefined models, often refer
 
 The following models are available:
 
-# [Individual consumers (B-to-C)](#tab/b2c)
-
 - [Customer lifetime value](predict-customer-lifetime-value.md): Predicts the potential revenue of a customer throughout the entire interaction with a business.
 - [Product recommendation](predict-product-recommendation.md): Suggests sets of predictive product recommendations based on purchase behavior and customers with similar purchase patterns.
 - [Subscription churn](predict-subscription-churn.md): Predicts whether a customer is at risk for no longer using your company’s subscription products or services.
 - [Transactional churn](predict-transactional-churn.md): Predicts if an individual customer will no longer purchase your products or services in a certain time frame.
 - [Sentiment analysis](sentiment-analysis.md): Analyzes sentiment of customer feedback and identifies business aspects that are frequently mentioned.
-
-# [Business accounts (B-to-B)](#tab/b2b)
-
-- [Transactional churn](predict-transactional-churn.md): Predicts if a customer account will no longer purchase your products or services in a certain time frame.
-
----
 
 To understand the readiness of your data to produce insights, see [Data prep report overview](data-prep-overview.md).
 

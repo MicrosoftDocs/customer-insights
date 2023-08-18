@@ -39,7 +39,7 @@ In this step, you can create stable and unique customer IDs and for individual c
 
 1. Optionally, [generate the customer ID configuration](#configure-customer-id-generation).
 
-1. Optionally for B-to-C, [group profiles into households or clusters](#group-profiles-into-households-or-clusters).
+1. Optionally, [group profiles into households or clusters](#group-profiles-into-households-or-clusters).
 
 > [!div class="nextstepaction"]
 > [Next step: Review unification](data-unification-review.md)

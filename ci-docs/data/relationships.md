@@ -78,30 +78,6 @@ Relationship consists of a *source table* containing the foreign key and a *targ
 
 1. Select **Save** to create the custom relationship.
 
-## Set up account hierarchies (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-Environments that are configured to use business accounts (B-to-B) as the primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units.
-
-Organizations create account hierarchies to better manage accounts and their relationships with each other. Customer Insights supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
-
-1. Go to **Data** > **Tables**.
-
-1. Select the **Account hierarchy (preview)** tab.
-
-1. Select **New account hierarchy**.
-
-1. In the **Account hierarchy** pane, provide a name for the hierarchy. The system creates a name for the output table, but you can change it.
-
-1. Select the table that contains your account hierarchy. It's usually in the same table that contains the accounts.
-
-1. Select the **Account UID** and **Parent UID** from the selected table.
-
-1. Select **Save** to finalize the account hierarchy.
-
 ## Manage existing relationships
 
 Go to **Data** > **Tables** and the **Relationships** tab to view all the relationships that have been created, their source table, the target table, and the cardinality.

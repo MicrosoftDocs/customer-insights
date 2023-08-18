@@ -24,8 +24,6 @@ Connect with Microsoft Teams to let a bot look up unified customer profiles in T
 - The [unification process](data-unification.md) is complete.
 - Fields are added to the [search & filter index](search-filter-index.md).
 - Customer Insights - Data and Teams are in the same organization.
-- Your environment has the primary target audience set to individual customers. Business accounts aren't supported.
-
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 
