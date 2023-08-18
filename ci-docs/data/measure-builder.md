@@ -1,15 +1,12 @@
 ---
 title: "Create measures with measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 04/28/2023
+ms.date: 09/01/2023
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
-searchScope: 
-  - ci-measure-builder
-  - customerInsights
 ---
 
 # Create measures with measure builder
@@ -26,7 +23,7 @@ Creating measures in B-to-C and B-to-B environments works the same way. However,
 
 - Customer measure: Generates output as its own table named after the name of the measure you define. You can't change it to a customer attribute once run or saved. Customer measures don't show in the customer profile card. Customer measures have a direct relationship to the unified customer profile.
 
-- Business measure: Generates output as its own table and shows on the home page of your Customer Insights environment. Business measures don't have a direct relationship to individual customer profiles. Business measures look across all customer profiles or are grouped by another attribute. For example, a calculation for all customers in a specific state.
+- Business measure: Generates output as its own table and shows on the home page of your Dynamics 365 Customer Insights - Data environment. Business measures don't have a direct relationship to individual customer profiles. Business measures look across all customer profiles or are grouped by another attribute. For example, a calculation for all customers in a specific state.
 
 1. Go to **Insights** > **Measures**.
 
@@ -98,7 +95,7 @@ Create measures on the level of individual accounts (customer measure) or on the
 
 - Customer measure: Generates output as its own table. Customer measures don't show in the customer profile card.
 
-- Business measure: Generates output as its own table and shows on the home page of your Customer Insights environment.
+- Business measure: Generates output as its own table and shows on the home page of your Customer Insights - Data environment.
 
 1. Go to **Insights** > **Measures**.
 
