@@ -198,6 +198,8 @@ Configuring a stable customer ID enables you to avoid that behavior.
 
 For individual customers, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* table contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](data-unification-match-tables.md#define-rules-for-match-pairs).
 
+Anyone in a shared group (same last name and address) gets a common cluster ID added to their profile. After unification, you can search on the cluster ID to easily find other members of the same household. Clusters aren't the same as segments. Cluster IDs identify a relationship between a few people. Segments group large sets of people. A given customer can belong to many different segments.
+
 1. Select **Advanced** > **Create cluster**.
 
    :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
