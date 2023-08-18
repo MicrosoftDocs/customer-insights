@@ -1,22 +1,19 @@
 ---
-title: Get started with Dynamics 365 Customer Insights
-description: An overview of Customer Insights helps resources to get started quickly. 
+title: Get started with Dynamics 365 Customer Insights - Data
+description: An overview of help resources to get started quickly. 
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 03/15/2023
+ms.date: 09/01/2023
 ms.topic: how-to
 ms.custom: bap-template
-searchScope: 
-  - ci-home
-  - customerInsights
 ---
 
-# Get started with Dynamics 365 Customer Insights
+# Get started with Dynamics 365 Customer Insights - Data
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Customer Insights can help you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
+Customer Insights - Data can help you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
 
 ## Step 1: Create an environment
 
@@ -29,7 +26,7 @@ Customer Insights can help you build a deeper understanding of your customers. C
 ## Step 2: Import data
 
 > [!TIP]
-> To quickly get started and have Customer Insights automatically generate insights, upload your own data from a single CSV file. Go to [Get started with Customer Insights using a single data source](data-sources-single.md).
+> To quickly get started and have Customer Insights - Data automatically generate insights, upload your own data from a single CSV file. Go to [Get started using a single data source](data-sources-single.md).
 > [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
 
 1. To get started with data from multiple sources, select **Not now** on the **Getting started** screen. On the **Home** screen, change Get insights in mins to **Step-by-step guide**.

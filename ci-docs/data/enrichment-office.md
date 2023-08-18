@@ -1,9 +1,8 @@
 ---
 title: "Enrich customer profiles with data from Microsoft Office 365 (preview)"
 description: "Use proprietary data from Microsoft Office to enrich your customer profiles with engagement data."
-ms.date: 03/21/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: jodahl
 ms.author: jodahl
@@ -25,8 +24,8 @@ We currently support the following regions: UK, Europe, North America.
 
 - An active Office 365 cloud license. Content encrypted with [Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) isn't supported.
 - [Unified customer profiles](customer-profiles.md) based on [business accounts](work-with-business-accounts.md).
-- A [Microsoft Dataverse organization attached](create-environment.md#step-3-connect-to-microsoft-dataverse) in your Customer Insights environment.
-- [Administrator](permissions.md#admin) permissions.
+- A [Microsoft Dataverse organization attached](create-environment.md#step-3-connect-to-microsoft-dataverse) to your Dynamics 365 Customer Insights - Data environment.
+- [Administrator](permissions.md#admin) permissions in Customer Insights - Data.
 - Consent from your Office 365 tenant administrator to use Office 365 data to provide **Insights for the Organization** within Dynamics 365 applications.
 
 ## Configure the enrichment
@@ -67,7 +66,7 @@ When the enrichment is started for the first time, after the Office 365 tenant a
 
 Depending on the size of your Office data, it may take several hours for an enrichment run to complete.
 
-When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to create aggregated insights, which are then added to your Customer Insights environment. No data at an individual level (for example, the body of any e-mail or calendar invite) becomes available to users of Customer Insights.
+When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to create aggregated insights, which are then added to your environment. No data at an individual level (for example, the body of any e-mail or calendar invite) becomes available to users of Customer Insights - Data.
 
 Select **Run** to start the enrichment process.
 

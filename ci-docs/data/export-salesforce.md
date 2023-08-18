@@ -1,9 +1,8 @@
 ---
 title: "Export data to Salesforce Marketing Cloud (preview)"
 description: "Learn how to configure the connection and export to Salesforce Marketing Cloud."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
@@ -62,9 +61,9 @@ Use your customer data in Salesforce Marketing Cloud by exporting them through a
 
 [!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-## Import Customer Insights data from SFTP location to Salesforce Marketing Cloud
+## Import data from Dynamics 365 Customer Insights - Data from SFTP location to Salesforce Marketing Cloud
 
-1. Create [data extensions in Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_create_data_extension.htm&type=5) to import the Customer Insights data file from the SFTP location.
+1. Create [data extensions in Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_create_data_extension.htm&type=5) to import the data file from Customer Insights - Data from the SFTP location.
 
 2. [Import the data from the SFTP location](https://help.salesforce.com/articleView?id=sf.mc_es_import_data_extension_classic.htm&type=5) into the Salesforce Marketing Cloud data extension.
 

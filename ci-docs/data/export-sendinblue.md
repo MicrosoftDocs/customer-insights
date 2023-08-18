@@ -1,9 +1,8 @@
 ---
 title: "Export segments to Sendinblue (preview)"
 description: "Learn how to configure the connection and export to Sendinblue."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
@@ -49,7 +48,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 1. Select **Connect** to initialize the connection.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

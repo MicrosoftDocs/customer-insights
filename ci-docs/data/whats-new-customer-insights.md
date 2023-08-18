@@ -30,7 +30,7 @@ The data prep report reduces the time and effort encountered by turning your dat
 
 ### Address issues with environment status summary
 
-The System Status page in Customer Insights is an indispensable tool for admins to keep a frequent tab to ensure all jobs are running smoothly. However, when there are errors/issues, the current process of checking through a large table of active jobs can be time-consuming and confusing, especially when there are complex relationships between jobs. Copilot in Customer Insights provides a simple, natural language summary of the environment, prominently highlighting the most important jobs tied to key activation events like exports. Armed with this summary, admins can focus on quickly taking the actions required.
+The System Status page in Customer Insights - Data is an indispensable tool for admins to keep a frequent tab to ensure all jobs are running smoothly. However, when there are errors/issues, the current process of checking through a large table of active jobs can be time-consuming and confusing, especially when there are complex relationships between jobs. Copilot in Dynamics 365 Customer Insights provides a simple, natural language summary of the environment, prominently highlighting the most important jobs tied to key activation events like exports. Armed with this summary, admins can focus on quickly taking the actions required.
 
 - [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/address-issues-environment-status-summary-copilot)
 - [Documentation](system.md#environment-status-summary-preview)
@@ -43,6 +43,14 @@ The System Status page in Customer Insights is an indispensable tool for admins 
 - can filter by tags and tags honor BU.Tags created in a BU aren't visible and searchable in other BUs
 - can customize the columns they see in their BU-specific view of the segment list
 - can download a segment
+
+### New blogs and scenario docs
+
+- [Advanced unification scenario: Create unified customer profiles from functionally unrelated sources](https://community.dynamics.com/blogs/post/?postid=cbf1def2-2a94-4a4d-9535-0489e647157c)
+
+- [Unlocking the power of Dynamics 365 Customer Insights: Best practices for data modelling and data quality](https://community.dynamics.com/blogs/post/?postid=988fae7a-3f37-ee11-bdf4-6045bdebe084)
+
+- [Navigating the data platform landscape: Azure Synapse or Microsoft Fabric](https://community.dynamics.com/blogs/post/?postid=4c923e38-8738-ee11-bdf4-000d3a4e511f)
 
 ## June 2023
 

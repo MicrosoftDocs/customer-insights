@@ -4,13 +4,9 @@ description: "Manage exports to share data."
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.topic: how-to
 ms.custom: bap-template
-searchScope: 
-  - ci-export
-  - ci-connections
-  - customerInsights
 ---
 
 # Set up and manage exports (preview)
@@ -34,7 +30,7 @@ To set up or edit an export, you need the right connections available to you. Co
 
 1. In the **Set up export** pane, select which [connection](connections.md) to use.
 
-1. Provide the required details and select **Save** to create the export. For the required details, review the Customer Insights documentation for the specific export.
+1. Provide the required details and select **Save** to create the export. For the required details, review the Dynamics 365 Customer Insights - Data documentation for the specific export.
 
 ## Manage existing exports
 
@@ -57,7 +53,7 @@ Each export you configure has a refresh schedule. During a refresh, the system l
 
 > [!TIP]
 > Minimize the processing time of segment exports with the following best practices:
-> - Distribute segment tables across mutiple exports.
+> - Distribute segment tables across multiple exports.
 > - Avoid scheduling all exports at the same time. Leave 30 minutes or one hour between the scheduled time of each export.
 
 Export schedules depend on the state of your environment. If there are updates in progress on [dependencies](system.md#refresh-processes) when a scheduled export should start, the system will first complete the updates and then run the export. The **Refreshed** column shows when an export was last refreshed.

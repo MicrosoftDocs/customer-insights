@@ -1,9 +1,8 @@
 ---
 title: "Enrich company profiles with Leadspace (preview)"
 description: "General information about the Leadspace third-party enrichment."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
@@ -25,7 +24,7 @@ Leadspace is a data science company that provides a B-to-B Customer Data Platfor
 
 ## Configure the connection for Leadspace
 
-You must be an [administrator](permissions.md#admin) in Customer Insights and have the “perpetual key” (referred to as **Leadspace token**).
+You must be an [administrator](permissions.md#admin) in Customer Insights - Data and have the “perpetual key” (referred to as **Leadspace token**).
 
 1. Select **Add connection** when configuring an enrichment or go to **Settings** > **Connections** and select **Set up** on the Leadspace tile.
 
@@ -63,7 +62,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Next** to complete the field mapping.
 
-1. Select the checkbox if you have *Contact profiles* that you would like to enrich. Customer Insights will automatically map the required fields.
+1. Select the checkbox if you have *Contact profiles* that you would like to enrich. Customer Insights - Data will automatically map the required fields.
 
    :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace contact records enrichment.":::
 

@@ -1,9 +1,8 @@
 ---
 title: "Export segments to LinkedIn Ads (preview)"
 description: "Learn how to configure the connection and export to LinkedIn Ads."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
@@ -21,7 +20,7 @@ Export segments of unified customer profiles to LinkedIn Ads to create matched a
 
 - A [LinkedIn Campaign Manager account](https://business.linkedin.com/marketing-solutions/ads) and corresponding administrator credentials.
 - A [LinkedIn Campaign Manager Account ID](https://www.linkedin.com/help/lms/answer/a424270).
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 - The exported segments need at least one specific field depending whether you choose [contact targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) or [company targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) on LinkedIn. The possible fields are listed in the **Data matching** step when [configuring the export](#configure-an-export).
 
 ## Known limitations
@@ -49,7 +48,7 @@ Export segments of unified customer profiles to LinkedIn Ads to create matched a
 
 1. Select **Authenticate with LinkedIn** and provide your admin credentials for LinkedIn Campaign Manager.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 
