@@ -3,13 +3,9 @@ title: "Manage the search & filter index for customer profiles"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
 ms.date: 11/15/2022
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
-searchScope: 
-  - ci-search-filter
-  - customerInsights
 ---
 
 # Manage the search & filter index for customer profiles

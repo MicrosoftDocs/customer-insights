@@ -5,14 +5,8 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-ms.date: 04/13/2023
+ms.date: 09/01/2023
 ms.custom: bap-template
-searchScope: 
-  - ci-customers-page
-  - ci-enrichment-details
-  - ci-segments
-  - ci-segment-details
-  - customerInsights
 ---
 
 # Create and manage segments
@@ -119,7 +113,7 @@ When you approach or exceed the number of active segments based on the [service 
 - Running or refreshing individual segments is slower.
 - Refresh failures indicating out of memory.
 
-The complexity of your segments can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active segments. These messages display on the **Segments** list page. If you encounter these messages or symptoms, see the following recommendations.
+The complexity of your segments can also impact performance. To help you prevent performance issues, Dynamics 365 Customer Insights - Data provides messages or warnings when you approach, reach, or exceed the total number of active segments. These messages display on the **Segments** list page. If you encounter these messages or symptoms, see the following recommendations.
 
 1. Delete old or no longer relevant segments even if they are static or inactive. When a campaign ends, deactivate associated segments for recurring campaigns.
 1. [Schedule individual segments](segments-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.

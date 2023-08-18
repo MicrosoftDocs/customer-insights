@@ -5,7 +5,7 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.custom: bap-template
 ---
 
@@ -27,7 +27,7 @@ Suggestions are generated based on the selected input data.
 
 - Activity type: purchases, retail transactions, online transactions, customer support cases, subscriptions, and so on.  
 
-- Table in Customer Insights that contains the activity data: The UnifiedActivity table or the table for a specific activity.
+- Table in Dynamics 365 Customer Insights - Data that contains the activity data: The UnifiedActivity table or the table for a specific activity.
 
 - Dimensions to include: Recency, frequency, or monetary dimension, depending on your business requirements.
 
