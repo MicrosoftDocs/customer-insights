@@ -1,6 +1,6 @@
 ---
 title: "Set up business contact activities"
-description: "Define business contact activities and view them in a timeline on customer profiles in Dynamics 365 Customer Insights." 
+description: "Define business contact activities and view them in a timeline on customer profiles." 
 ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
@@ -9,14 +9,18 @@ ms.author:  shsri
 ms.custom: bap-template
 ---
 
-# Set up business contact activities
+# Set up business contact activities (preview)
+
+[!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
-Business contact activities are actions or events performed by business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your contact activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Insights Timeline Integration](../activities-in-d365-timeline.md) or the [Customer Card Add-in](../customer-card-add-in.md) solution.
+Business contact activities are actions or events performed by business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your contact activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Insights - Data Timeline Integration](../activities-in-d365-timeline.md) or the [Customer Card Add-in](../customer-card-add-in.md) solution.
 
 > [!TIP]
 > In B2B environments, you can select between account tables and other tables. If you select an account table, the relationship path is automatically set. For other tables, you have to define the relationship path over one or more intermediate tables until you reach an account table.
+
+[!INCLUDE [public-preview-note](../includes/public-preview-note.md)]
 
 ## Prerequisites
 
@@ -42,7 +46,7 @@ For business accounts (B2B), use a *UnifiedContact* table to capture activities 
    - **Primary key**: The primary key uniquely identifies a record. It shouldn't contain any duplicate values, empty values, or missing values.
 
    > [!NOTE]
-   > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, Customer Insights must delete all old rows and insert all new rows, causing an increase in processing time.
+   > The primary key for each row must remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, the system deletes all old rows and inserts all new rows, causing an increase in processing time.
 
 1. Select **Next** for the **Activity fields** step.
 
@@ -57,7 +61,7 @@ For business accounts (B2B), use a *UnifiedContact* table to capture activities 
    - **Additional detail** (optional): Field with relevant information for this activity.
    - **Show this activity in the timeline on your customer profile?**: **Yes** to show the activity in the timeline or **No** to hide it.
      > [!NOTE]
-     > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights API](../apis.md) either.
+     > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [Customer Insights - Data API](../apis.md) either.
    
    - **Map field types for your activity's attributes?**: **Yes** to help the system better understand the relevance of your activity data or **No** do not map.
 

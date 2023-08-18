@@ -17,6 +17,8 @@ ms.custom: bap-template
 
 Leadspace is a data science company that provides a B2B Customer Data Platform. It enables environments with unified customer profiles based on accounts to enrich their data. Enrich *Customer profiles* with attributes such as company size, location, or industry. Enrich *Contact profiles* with attributes such as title, persona, or email verification.
 
+[!INCLUDE [public-preview-note](../includes/public-preview-note.md)]
+
 ## Prerequisites
 
 - An active Leadspace license.
@@ -63,7 +65,7 @@ You must be an [administrator](../permissions.md#admin) in Customer Insights - D
 
 1. Select **Next** to complete the field mapping.
 
-1. Select the checkbox if you have *Contact profiles* that you would like to enrich. Customer Insights - Data will automatically map the required fields.
+1. Select the checkbox if you have *Contact profiles* that you would like to enrich. The system automatically maps the required fields.
 
    :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace contact records enrichment.":::
 

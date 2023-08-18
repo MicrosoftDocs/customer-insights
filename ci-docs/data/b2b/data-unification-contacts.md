@@ -1,6 +1,6 @@
 ---
 title: "Create a unified business contact profile"
-description: "Learn how to use the data unification process in Microsoft Dynamics 365 Customer Insights to create a profile of your business contacts that combines data from multiple sources."
+description: "Learn how to use the data unification process to create a profile of your business contacts that combines data from multiple sources."
 ms.date: 09/01/2023
 ms.topic: how-to
 author: Scott-Stabbert
@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 Contact unification allows contacts for unified accounts to be separately unified and associated with the accounts. Contact unification also allows contacts without an account to be included in the unified contact profile.
 
-The contact unification process maps contact data from multiple sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. Customer Insights B2B supports a one-to-many account to contact relationship. The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
+The contact unification process maps contact data from multiple sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. The system supports a one-to-many account to contact relationship. The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
 
 [!INCLUDE [m3-first-run-note](../includes/m3-first-run-note.md)]
 
@@ -31,7 +31,7 @@ The first few steps to unify contacts are the same as the steps to [unify accoun
 
 ## Select source fields
 
-1. Sign in to Dynamics 365 Customer Insights.
+1. Sign in to Dynamics 365 Customer Insights - Data.
 
 1. In the left side panel under **Data**, select **Unify**.
 
@@ -114,7 +114,7 @@ The unified contact profile table, called *UnifiedContact*, appears in the **Pro
 
 Key columns in the *UnifiedContact* table include:
 
-- **UnifiedContactId**: Uniquely identifies the unified profile. Assigned by Customer Insights.
+- **UnifiedContactId**: Uniquely identifies the unified profile. Assigned by the system.
 
 - **FK_ContactToAccountId**: The primary key from a data source, this value is used to look up he unified account’s unique CustomerID. It's the winner value that results from merging the account foreign keys for the contact.
 
@@ -141,4 +141,6 @@ A deduplication output table contains the following information:
 
 ## Next step
 
-Configure [activities](activities-contacts.md), [enrichment](b2b-overview.md#enrichments), and [relationships](../relationships.md) to gain more insights about your contacts.
+Configure [activities](activities-contacts.md), [enrichment](work-with-business-accounts.md#enrichments), and [relationships](../relationships.md) to gain more insights about your contacts.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
