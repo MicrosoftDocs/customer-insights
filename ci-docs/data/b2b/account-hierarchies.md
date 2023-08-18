@@ -1,7 +1,7 @@
 ---
 title: "Set up account hierarchies"
 description: "Learn how to set up account hierarchies for business accounts" 
-ms.date: 08/14/2023
+ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: CadeSanthaMSFT

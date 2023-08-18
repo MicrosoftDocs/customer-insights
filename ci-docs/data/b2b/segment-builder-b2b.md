@@ -69,6 +69,7 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
    |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, Procurement manager]
 
    > [!NOTE]
+   >
    > - **Project attributes** only work for tables that have a one-to-many relationship with the *Customer* or *UnifiedContact* table. For example, one customer can have multiple subscriptions.
    > - If the attribute you want to project is more than one hop away from the *Customer* or *UnifiedContact* table, as defined by the relationship, that attribute should be used in every rule of the segment query you are building.
    > - If the attribute you want to project is just one hop away from the *Customer* or *UnifiedContact* table, that attribute doesn't need to be present in every rule of the segment query you are building.
@@ -82,4 +83,3 @@ For an illustration of the key aspects of segment builder, see [Aspects of segme
    > When viewing segments on the **Segments** page, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
 
 [!INCLUDE [footer-include](../includes/footer-banner.md)]
-

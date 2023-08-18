@@ -17,7 +17,7 @@ Create measures on the level of individual accounts (customer measure) or on the
 
 - Customer measure: Generates output as its own table. Customer measures don't show in the customer profile card.
 
-- Business measure: Generates output as its own table and shows on the home page of your Customer Insights - Data environment.
+- Business measure: Generates output as its own table and shows on the home page of your Dynamics 365 Customer Insights - Data environment.
 
 > [!TIP]
 > If your B2B environment [uses accounts with hierarchies](account-hierarchies.md), choose whether to aggregate the measure across related sub-accounts.
