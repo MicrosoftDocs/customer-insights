@@ -12,9 +12,9 @@ ms.reviewer: v-wendysmith
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-This optional step in unification enables you to set up rules for eliminating duplicate records **within** a table. Deduplication identifies multiple records for a customer and selects the best record to keep (based on the selected merge policy) or merges the records into one (based on advanced merge preferences). Source records get linked to the merged record with alternate IDs. Nonwinner records are called alternate rows. Ideally, each individual table has a single row for each customer prior to matching records between tables.
+This optional step in unification enables you to set up rules for eliminating duplicate records **within** a table. Deduplication identifies multiple records for a customer and selects the best record to keep (based on the selected merge policy) or merges the records into one (based on advanced merge preferences). Source records get linked to the merged record with alternate IDs. Nonwinner records are called alternate rows. See [match conditions](data-unification-match-tables.md) for how alternate rows are used when matching across tables.
 
-Deduplication of customer records in each table is important to improve unification results and performance. Defining your own deduplication rules gives you flexibility and control. However, if you don't define any custom deduplication rules for a table, Dynamics 365 Customer Insights - Data runs default deduplication rules.
+Deduplication of customer records in each table is important to improve unification results and performance. Defining your own deduplication rules gives you flexibility and control. However, if you don't define any custom deduplication rules for a table, Dynamics 365 Customer Insights - Data runs default deduplication rules. Ideally, each individual table has a single row for each customer prior to matching records between tables.
 
 ## Default deduplication rules
 
