@@ -58,7 +58,7 @@ The real-time API lets you publish a new activity from your source system (an in
 
 There are two ways to connect to the real-time API:
 
-- [Indirectly](#dynamics-365-customer-insights-connection), using the [Dynamics 365 Customer Insights connector](/connectors/customerinsights/)
+- [Indirectly](#dynamics-365-customer-insights---data-connection), using the [Dynamics 365 Customer Insights connector](/connectors/customerinsights/)
 - [Directly](#direct-connection-to-the-real-time-api), with code
 
 Both ways share the following prerequisites:

@@ -33,7 +33,7 @@ A notification in the application indicates if you have private links you need t
 
 1. Sign in to Customer Insights - Data and open the environment to upgrade.
 
-1. [Recreate the private links](private-link.md#set-up-a-private-link-directly-from-the-private-links-page-in-customer-insights) for all the used storage that are protected by private links.
+1. [Recreate the private links](private-link.md#set-up-a-private-link-directly-from-the-private-links-page-in-customer-insights---data) for all the used storage that are protected by private links.
 
    :::image type="content" source="media/compute-migration-create-private-links-CI.png" alt-text="Screenshot of creating private links in Customer Insights. ":::
 
