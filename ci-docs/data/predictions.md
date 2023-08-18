@@ -1,6 +1,6 @@
 ---
 title: Create and manage predictions
-description: Learn how to create and manage predictions in Dynamics 365 Customer Insights application."
+description: Learn how to create and manage predictions in Dynamics 365 Customer Insights - Data."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Dynamics 365 Customer Insights comes with a variety of options that leverage AI and machine learning to predict data.
+Dynamics 365 Customer Insights - Data comes with a variety of options that leverage AI and machine learning to predict data.
 
 Predictions offer capabilities to create better customer experiences, improve business capabilities, and revenue streams. We strongly recommend you balance the value of your prediction against the impact it has and biases that may be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6).
 

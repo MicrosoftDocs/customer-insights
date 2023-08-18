@@ -1,9 +1,8 @@
 ---
 title: "Predict subscription churn (contains video)"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
@@ -92,7 +91,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 ### Set update schedule
 
-1. Choose the frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested in Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. Choose the frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 

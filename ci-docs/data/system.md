@@ -1,18 +1,12 @@
 ---
 title: "View system configuration"
-description: "Learn about system settings in Dynamics 365 Customer Insights."
-ms.date: 07/27/2023
+description: "Learn about system settings in Dynamics 365 Customer Insights - Data."
+ms.date: 09/01/2023
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 ms.custom: bap-template
-searchScope: 
-  - ci-system-status
-  - ci-system-about
-  - ci-system-general
-  - ci-system-api-usage
-  - customerInsights
 ---
 
 # View system configuration
@@ -31,7 +25,7 @@ View the environment display name, ID, region, type and session ID.
 
 ### Update preferred language or country/region
 
-Customer Insights [supports many languages](/dynamics365/get-started/availability). The app uses your language preference to display elements like the menu, label text, and system messages in your preferred language.
+Dynamics 365 Customer Insights - Data [supports many languages](/dynamics365/get-started/availability). The app uses your language preference to display elements like the menu, label text, and system messages in your preferred language.
 
 Imported data and information you entered manually aren't translated.
 
@@ -129,6 +123,6 @@ Use the summary to help you determine if your environment is running normally or
   - To research the skipped or failed job, select the link.
   - To copy the summary to your clipboard, select **Copy**.
   - To refresh the summary if you’re waiting for a job to finish, select **Refresh**.
-  - To provide Customer Insights with your feedback, select the thumbs up or thumbs down icons.
+  - To provide your feedback, select the thumbs up or thumbs down icons.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

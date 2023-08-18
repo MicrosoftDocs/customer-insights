@@ -2,17 +2,10 @@
 title: "Schedule measures"
 description: "How to create custom schedules for measures."
 ms.date: 11/28/2022
-
 ms.topic: how-to
 author: v-wendysmith
 ms.author: wameng
 ms.reviewer: v-wendysmith
-searchScope: 
-  - ci-measures
-  - ci-measure-builder
-  - ci-measure-template
-  - ci-enrichment-details
-  - customerInsights
 ---
 
 # Schedule measures

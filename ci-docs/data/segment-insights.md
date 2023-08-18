@@ -7,9 +7,6 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 ms.custom: bap-template
-searchScope: 
-  - ci-segment-insights
-  - customerInsights
 ---
 
 # Get insights on existing segments (preview)

@@ -6,9 +6,6 @@ ms.topic: conceptual
 author: v-wendysmith
 ms.author: wameng
 ms.reviewer: v-wendysmith
-searchScope: 
-  - ci-measure-template
-  - customerInsights
 ---
 
 # Create measures from templates

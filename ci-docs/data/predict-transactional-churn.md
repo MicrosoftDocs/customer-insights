@@ -91,7 +91,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 ### Set update schedule
 
-1. For the **Data updates** step, choose a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. For the **Data updates** step, choose a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 
