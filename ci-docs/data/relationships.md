@@ -1,25 +1,11 @@
 ---
 title: "Relationships between tables and table paths"
 description: "Create and manage relationships between tables from multiple data sources."
-ms.date: 12/7/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
-searchScope: 
-  - ci-semantic-mapping
-  - ci-entities
-  - ci-relationships
-  - ci-activities
-  - ci-activities-wizard
-  - ci-measures
-  - ci-segments
-  - ci-segment-builder
-  - ci-measure-builder
-  - ci-measure-template
-  - ci-permissions
-  - customerInsights
 ---
 
 # Relationships between tables and table paths
@@ -84,7 +70,7 @@ Relationship consists of a *source table* containing the foreign key and a *targ
 
 Environments that are configured to use business accounts (B-to-B) as the primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units.
 
-Organizations create account hierarchies to better manage accounts and their relationships with each other. Customer Insights supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page.
+Organizations create account hierarchies to better manage accounts and their relationships with each other. Dynamics 365 Customer Insights - Data supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales. These hierarchies can be configured on the **Relationships** page.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 

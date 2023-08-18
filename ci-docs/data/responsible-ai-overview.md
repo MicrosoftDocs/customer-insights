@@ -1,7 +1,7 @@
 ---
-title: Responsible AI FAQs for Dynamics 365 Customer Insights
-description: Responsible AI FAQs provide information about the AI technology used in Dynamics 365 Customer Insights, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 07/14/2023
+title: Responsible AI FAQs for Dynamics 365 Customer Insights - Data
+description: Responsible AI FAQs provide information about the AI technology used in Dynamics 365 Customer Insights - Data, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+ms.date: 09/01/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -10,7 +10,7 @@ ms.author: mhart
 ms.reviewer: radsay01
 ---
 
-# Responsible AI FAQs for Dynamics 365 Customer Insights
+# Responsible AI FAQs for Dynamics 365 Customer Insights - Data
 
 [!INCLUDE[rai-faq-overview](includes/faqs-overview.md)]
 

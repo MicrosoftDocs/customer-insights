@@ -1,9 +1,9 @@
 ---
 title: Use your own Azure Data Lake Storage Gen2 account
 author: mukeshpo
-description: Learn about the requirements to use your own Azure Data Lake Storage account to store Customer Insights data.
+description: Learn about the requirements to use your own Azure Data Lake Storage account in Customer Insights - Data.
 ms.author: mukeshpo
-ms.date: 07/28/2023
+ms.date: 09/01/2023
 ms.topic: conceptual
 ms.collection: get-started
 ms.reviewer: mhart
@@ -13,19 +13,19 @@ ms.reviewer: mhart
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Dynamics 365 Customer Insights gives you the option to store your customer data in [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction). Customer data includes data that you import into Customer Insights and the output data like unified profiles and segments. [Some of the output data](tables.md#customer-insights---data-tables-in-dataverse) is also stored as tables in Microsoft Dataverse along with metadata like match rules or segment configuration, and search index. By saving data to Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account. For more information, see [Microsoft Trust Center](https://www.microsoft.com/trust-center).
+Dynamics 365 Customer Insights - Data gives you the option to store your customer data in [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction). Customer data includes data that you import and the output data like unified profiles and segments. [Some of the output data](tables.md#customer-insights---data-tables-in-dataverse) is also stored as tables in Microsoft Dataverse along with metadata like match rules or segment configuration, and search index. By saving data to Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account. For more information, see [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-Administrators in Customer Insights can [create environments](create-environment.md) and [specify the data storage option](create-environment.md#step-2-configure-data-storage) in the process.
+Administrators in Customer Insights - Data can [create environments](create-environment.md) and [specify the data storage option](create-environment.md#step-2-configure-data-storage) in the process.
 
 ## Prerequisites
 
-- Azure Data Lake Storage accounts must be in the same Azure region that you selected when creating the Customer Insights environment. To know the region of the environment, go to **Settings** > **System** > **About** in Customer Insights.
+- Azure Data Lake Storage accounts must be in the same Azure region that you selected when creating the Customer Insights - Data environment. To know the region of the environment, go to **Settings** > **System** > **About**.
 - The Data Lake Storage account must be Gen2. Azure Data Lake Gen1 storage accounts are not supported.
 - The Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
-- A container named `customerinsights` has to exist on the storage account. Create it before you use your own Data Lake Storage in Customer Insights.
-- The administrator setting up the Customer Insights environment needs the Storage Blob Data Contributor or Storage Blob Data Owner role on the storage account or the `customerinsights` container. For more information on assigning permission in a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
+- A container named `customerinsights` has to exist on the storage account. Create it before you use your own Data Lake Storage in Customer Insights - Data.
+- The administrator setting up the Customer Insights - Data environment needs the Storage Blob Data Contributor or Storage Blob Data Owner role on the storage account or the `customerinsights` container. For more information on assigning permission in a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
 
-## Connect Customer Insights with your storage account
+## Connect Customer Insights - Data with your storage account
 
 When you create a new environment, make sure the Data Lake Storage account exists and all prerequisites are met.
 
@@ -37,4 +37,4 @@ When you create a new environment, make sure the Data Lake Storage account exist
 
 When system processes like data ingestion complete, the system creates corresponding folders in the storage account. Data files and model.json files are created and added to folders based on the process name.
 
-If you create multiple environments of Customer Insights and choose to save the output tables from those environments to your storage account, Customer Insights creates separate folders for each environment with `ci_environmentID` in the container.
+If you create multiple environments and choose to save the output tables from those environments to your storage account, the system creates separate folders for each environment with `ci_environmentID` in the container.

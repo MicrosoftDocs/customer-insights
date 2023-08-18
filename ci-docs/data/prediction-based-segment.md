@@ -1,9 +1,8 @@
 ---
 title: Create a segment based on a prediction model
 description: "Create segments based on the output table of a prediction model."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
@@ -21,9 +20,9 @@ The results of predictions sometimes only apply to a subset of your customers. I
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md) in Customer Insights.
+- At least [Contributor permissions](permissions.md) in Dynamics 365 Customer Insights - Data
 
-- A product recommendation, transactional churn, subscription churn, or customer lifetime value model configured in Customer Insights. Review the requirements to set up the different models:
+- A product recommendation, transactional churn, subscription churn, or customer lifetime value model configured in Customer Insights - Data. Review the requirements to set up the different models:
 
   - [Product recommendation model](predict-product-recommendation.md)
   - [Subscription churn model](predict-subscription-churn.md)

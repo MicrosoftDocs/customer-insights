@@ -1,7 +1,7 @@
 ---
 title: Transaction churn prediction (contains video)
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: zacookmsft
@@ -158,7 +158,7 @@ Add a list of your business customers and accounts that you want to use as bench
 
 ### Set update schedule
 
-1. For the **Data updates** step, choose a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. For the **Data updates** step, choose a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 

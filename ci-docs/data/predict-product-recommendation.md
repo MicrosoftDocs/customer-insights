@@ -1,9 +1,8 @@
 ---
 title: "Predict product recommendations (preview)"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: wmelewong 
 ms.author: wameng
@@ -110,7 +109,7 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
 
 ### Set update schedule
 
-1. Choose a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. Choose a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 
