@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 <svg width="1309" height="715" aria-owns="html1" data-stacking-context="true" version="1.1" viewBox="5 6 1309 715" xmlns="http://www.w3.org/2000/svg">
 =======
@@ -7,6 +8,17 @@
 <svg width="1309" height="715" aria-owns="html1" data-stacking-context="true" version="1.1" viewBox="5 6 1309 715" xmlns="http://www.w3.org/2000/svg">
 >>>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+<<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+<svg width="1309" height="715" aria-owns="html1" data-stacking-context="true" version="1.1" viewBox="5 6 1309 715" xmlns="http://www.w3.org/2000/svg">
+========
+<svg width="1178" height="775" aria-owns="html1" data-stacking-context="true" version="1.1" viewBox="240 65 1178 775" xmlns="http://www.w3.org/2000/svg">
+>>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/custom-model-AML-wizard1.svg
+=======
+<svg width="1309" height="715" aria-owns="html1" data-stacking-context="true" version="1.1" viewBox="5 6 1309 715" xmlns="http://www.w3.org/2000/svg">
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
  <style>@font-face {			
 font-family: "Segoe UI";			
 src: local("Segoe UI");			
@@ -168,6 +180,7 @@ src: local("SegoeUI");
 }</style>
  <g aria-owns="head1 c360-theme1" data-stacking-context="true" data-tag="html" data-z-index="auto">
   <g data-stacking-layer="rootBackgroundAndBorders">
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
 <<<<<<<< HEAD:ci-docs/media/custom-model-AML-wizard1.svg
@@ -196,6 +209,12 @@ src: local("SegoeUI");
        <mask id="a">
 ========
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+<<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
    <rect width="1551.1" height="946.67" fill="#faf9f8"/>
   </g>
   <g class="c360-app" mask="url(#br)" aria-owns="office-header c360-app__mainContentResponsive1" data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -232,14 +251,46 @@ src: local("SegoeUI");
       </g>
       <g mask="url(#z)" data-stacking-context="true" data-tag="div" data-z-index="auto">
        <mask id="z">
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
 >>>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+========
+   <rect width="1439" height="848" fill="#faf9f8"/>
+  </g>
+  <g class="c360-app" mask="url(#ah)" aria-owns="office-header c360-app__mainContentResponsive1" data-stacking-context="true" data-tag="div" data-z-index="auto">
+   <g data-stacking-layer="rootBackgroundAndBorders">
+    <rect width="1439" height="848" fill="#faf9f8"/>
+   </g>
+   <g data-stacking-layer="childStackingContextsWithPositiveStackLevels">
+    <g id="at" class="c360-app__officeHeader" aria-owns="O365_NavHeader o365cs-flexpane-overlay" data-stacking-context="true" data-tag="div" data-z-index="2">
+     <title>App launcher</title>
+     <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
+     <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family='SegoeUI-SemiBold-final, "Segoe UI Semibold", SegoeUI-Regular-final, "Segoe UI", "Segoe UI Web (West European)", Segoe, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Tahoma, Helvetica, Arial, sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
+     <g class="textArea-250" mask="url(#c)" aria-owns="ms-TooltipHost1" data-stacking-context="true" data-tag="div" data-z-index="auto">
+      <mask id="c">
+       <rect x="1007" y="16" width="158" height="16" fill="#fff"/>
+      </mask>
+      <g class="text-252" mask="url(#d)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+       <mask id="d">
+        <rect x="1007" y="16" width="158" height="16" fill="#fff"/>
+       </mask>
+       <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="Arial" font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
+      </g>
+      <g mask="url(#a)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+       <mask id="a">
+>>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/custom-model-AML-wizard1.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
         <rect width="0" height="0" fill="#fff"/>
        </mask>
       </g>
      </g>
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
 <<<<<<<< HEAD:ci-docs/media/custom-model-AML-wizard1.svg
@@ -251,6 +302,12 @@ src: local("SegoeUI");
      <title>Feedback</title>
 ========
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+<<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
      <g mask="url(#ae)" data-stacking-context="true" data-tag="svg" data-z-index="auto">
       <mask id="ae">
        <rect x="1087.2" y="14.323" width="15.99" height="15.99" fill="#fff"/>
@@ -261,10 +318,24 @@ src: local("SegoeUI");
      <g data-stacking-layer="rootBackgroundAndBorders">
       <rect x="1311.2" width="47.986" height="47.986" fill="#001433"/>
      </g>
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
 >>>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+========
+     <g mask="url(#e)" aria-owns="g1" data-stacking-context="true" data-tag="svg" data-z-index="auto">
+      <mask id="e">
+       <rect x="975" y="14" width="16" height="16" fill="#fff"/>
+      </mask>
+     </g>
+     <title>Feedback</title>
+>>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/custom-model-AML-wizard1.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
      <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
      <title>Settings</title>
      <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
@@ -273,6 +344,7 @@ src: local("SegoeUI");
      <title>Help</title>
      <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
      <title>Account manager for Wendy Smith (Aquent LLC)</title>
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
 <<<<<<<< HEAD:ci-docs/media/custom-model-AML-wizard1.svg
@@ -296,6 +368,12 @@ src: local("SegoeUI");
         <mask id="u">
 ========
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+<<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
      <g class="_2r3tGOSyvyUola8y7ahgJG undefined" mask="url(#bt)" aria-owns="span4" data-stacking-context="true" data-tag="div" data-z-index="auto">
       <mask id="bt">
        <rect x="1503.1" width="0" height="47.986" fill="#fff"/>
@@ -314,15 +392,42 @@ src: local("SegoeUI");
        <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family='SegoeUI-Regular-final, "Segoe UI", "Segoe UI Web (West European)", Segoe, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Tahoma, Helvetica, Arial, sans-serif' font-size="13px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
        <g mask="url(#ay)" aria-label="WS" data-stacking-context="true" data-tag="img" data-z-index="auto" role="img">
         <mask id="ay">
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
 >>>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+========
+     <g class="_2r3tGOSyvyUola8y7ahgJG undefined" mask="url(#am)" aria-owns="span4" data-stacking-context="true" data-tag="div" data-z-index="auto">
+      <mask id="am">
+       <rect x="1391" width="0" height="48" fill="#fff"/>
+      </mask>
+     </g>
+     <g id="au" class="_1vuKzsQNhg5QNnJlA2a5Co" mask="url(#ap)" aria-owns="div7" data-stacking-context="true" data-tag="div" data-z-index="auto">
+      <mask id="ap">
+       <rect x="1399" y="8" width="32" height="32" fill="#fff"/>
+      </mask>
+      <g class="_2Evhc1Nj0AOSMKq6j11gui" mask="url(#an)" aria-owns="meInitialsButton nvEhuDKzSmREBsqaIaOhu1" data-stacking-context="true" data-tag="div" data-z-index="auto">
+       <mask id="an">
+        <rect x="1399" y="8" width="32" height="32" fill="#fff"/>
+        <rect x="1399" y="8" width="32" height="32" fill="#fff"/>
+        <rect x="1399" y="8" width="32" height="32" fill="#fff"/>
+       </mask>
+       <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family='SegoeUI-Regular-final, "Segoe UI", "Segoe UI Web (West European)", Segoe, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Tahoma, Helvetica, Arial, sans-serif' font-size="13px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
+       <g mask="url(#u)" aria-label="WS" data-stacking-context="true" data-tag="img" data-z-index="auto" role="img">
+        <mask id="u">
+>>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/custom-model-AML-wizard1.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
          <rect width="0" height="0" fill="#fff"/>
         </mask>
        </g>
       </g>
      </g>
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
 <<<<<<<< HEAD:ci-docs/media/custom-model-AML-wizard1.svg
@@ -335,6 +440,12 @@ src: local("SegoeUI");
       <mask id="ao">
 ========
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+<<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
      <g class="E_F_OxQg1uGSuqY-R5dwP undefined" mask="url(#bx)" aria-owns="span5" data-stacking-context="true" data-tag="div" data-z-index="auto">
       <mask id="bx">
        <rect width="0" height="0" fill="#fff"/>
@@ -342,15 +453,31 @@ src: local("SegoeUI");
      </g>
      <g id="ca" class="_1TdybwJwBVv9HbLUWUPtp9" mask="url(#bv)" aria-owns="ms-Icon--Contact1" data-stacking-context="true" data-tag="div" data-z-index="auto">
       <mask id="bv">
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
 >>>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+========
+     <g class="E_F_OxQg1uGSuqY-R5dwP undefined" mask="url(#aq)" aria-owns="span5" data-stacking-context="true" data-tag="div" data-z-index="auto">
+      <mask id="aq">
+       <rect width="0" height="0" fill="#fff"/>
+      </mask>
+     </g>
+     <g id="av" class="_1TdybwJwBVv9HbLUWUPtp9" mask="url(#ao)" aria-owns="ms-Icon--Contact1" data-stacking-context="true" data-tag="div" data-z-index="auto">
+      <mask id="ao">
+>>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/custom-model-AML-wizard1.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
        <rect width="0" height="0" fill="#fff"/>
       </mask>
      </g>
     </g>
    </g>
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
 <<<<<<<< HEAD:ci-docs/media/custom-model-AML-wizard1.svg
@@ -529,6 +656,12 @@ src: local("SegoeUI");
              <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1336.140625" y="821.5" lengthAdjust="spacingAndGlyphs" textLength="41.859375" xml:space="preserve">Cancel</tspan></text>
 ========
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+<<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
    <mask id="br">
     <rect width="1551.1" height="946.67" fill="#fff"/>
    </mask>
@@ -934,10 +1067,191 @@ src: local("SegoeUI");
              <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" user-select="auto"/>
              <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" user-select="auto"/>
              <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" user-select="auto"/>
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
 >>>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+========
+   <mask id="ah">
+    <rect width="1439" height="848" fill="#fff"/>
+   </mask>
+   <g class="c360-app__mainContentResponsive" mask="url(#ag)" aria-owns="leftNavContainer reactApp panelLayerHostId" data-stacking-context="true" data-tag="div" data-z-index="auto">
+    <mask id="ag">
+     <rect y="48" width="1439" height="800" fill="#fff"/>
+    </mask>
+    <g id="aw" class="c360-app__reactPageContainerResponsive" mask="url(#k)" aria-owns="root-1101" data-stacking-context="true" data-tag="div" data-z-index="auto">
+     <mask id="k">
+      <rect x="229" y="48" width="1210" height="800" fill="#fff"/>
+     </mask>
+     <g class="root-110 body-111 ms-Fabric--isFocusHidden" mask="url(#j)" aria-owns="div20 div22 pageContainer div23" data-stacking-context="true" data-tag="div" data-z-index="auto">
+      <g data-stacking-layer="rootBackgroundAndBorders">
+       <rect x="229" y="48" width="1210" height="800" fill="#fff"/>
+      </g>
+      <mask id="j">
+       <rect x="229" y="48" width="1210" height="800" fill="#fff"/>
+      </mask>
+      <g id="ax" class="pageContainer-137" mask="url(#l)" aria-owns="root-3981" data-stacking-context="true" data-tag="div" data-z-index="auto">
+       <g data-stacking-layer="rootBackgroundAndBorders">
+        <rect x="229" y="48" width="1210" height="800" fill="#fff"/>
+       </g>
+       <mask id="l">
+        <rect x="229" y="48" width="1210" height="800" fill="#fff"/>
+       </mask>
+       <g class="root-398" mask="url(#i)" aria-owns="topBar-2601 belowTopBar-3991" data-stacking-context="true" data-tag="main" data-z-index="auto" role="main">
+        <g data-stacking-layer="rootBackgroundAndBorders">
+         <rect x="229" y="48" width="1210" height="800" fill="#faf9f8"/>
+        </g>
+        <mask id="i">
+         <rect x="229" y="48" width="1210" height="800" fill="#fff"/>
+        </mask>
+        <g class="belowTopBar-399" mask="url(#aj)" aria-owns="ba-wizard1" data-stacking-context="true" data-tag="section" data-z-index="auto" role="region">
+         <mask id="aj">
+          <rect x="229" y="110" width="1210" height="738" fill="#fff"/>
+         </mask>
+         <g class="ba-wizard root-406" mask="url(#ak)" aria-owns="ba-wizard-progress1 bodyWrapper-4071" data-stacking-context="true" data-tag="div" data-z-index="auto">
+          <g data-stacking-layer="rootBackgroundAndBorders">
+           <rect x="229" y="110" width="1210" height="738" fill="#fff"/>
+          </g>
+          <mask id="ak">
+           <rect x="229" y="110" width="1210" height="738" fill="#fff"/>
+          </mask>
+          <g class="ba-wizard-progress root-415 is-collapsed" mask="url(#al)" aria-owns="list-4161 toggle-4291" data-stacking-context="true" data-tag="nav" data-z-index="auto" role="navigation">
+           <g data-stacking-layer="rootBackgroundAndBorders">
+            <rect x="229" y="110" width="280" height="738" fill="#fff"/>
+            <line x1="509" x2="509" y1="110" y2="848" stroke="#edebe9" stroke-linecap="square" stroke-width="1px"/>
+           </g>
+           <mask id="al">
+            <rect x="229" y="110" width="280" height="738" fill="#fff"/>
+           </mask>
+           <title>Model name</title>
+           <g class="ms-Icon-placeHolder currentEmptyIcon-432" mask="url(#s)" aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
+            <g data-stacking-layer="rootBackgroundAndBorders">
+             <rect x="256" y="147" width="16" height="16" rx="8" ry="8" fill="#2266e3"/>
+            </g>
+            <mask id="s">
+             <rect x="256" y="147" width="16" height="16" fill="#fff"/>
+            </mask>
+           </g>
+           <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="284" y="165" lengthAdjust="spacingAndGlyphs" textLength="80" xml:space="preserve">Model name</tspan></text>
+           <g data-stacking-layer="rootBackgroundAndBorders">
+            <rect x="263" y="167" width="2" height="34" fill="rgba(0, 0, 0, 0)" stroke="#edebe9" stroke-width="1px"/>
+           </g>
+           <title>Required data</title>
+           <g class="ms-Icon-placeHolder emptyIcon-433" mask="url(#r)" aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
+            <g data-stacking-layer="rootBackgroundAndBorders">
+             <rect x="256" y="211" width="16" height="16" rx="8" ry="8" fill="rgba(0, 0, 0, 0)" stroke="#8a8886" stroke-width="2px"/>
+            </g>
+            <mask id="r">
+             <rect x="256" y="211" width="16" height="16" fill="#fff"/>
+            </mask>
+           </g>
+           <text color="rgb(96, 94, 92)" dominant-baseline="text-after-edge" fill="rgb(96, 94, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(96, 94, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="284" y="229" lengthAdjust="spacingAndGlyphs" textLength="86.359375" xml:space="preserve">Required data</tspan></text>
+           <g data-stacking-layer="rootBackgroundAndBorders">
+            <rect x="263" y="231" width="2" height="34" fill="rgba(0, 0, 0, 0)" stroke="#edebe9" stroke-width="1px"/>
+           </g>
+           <title>Review and run</title>
+           <g class="ms-Icon-placeHolder emptyIcon-433" mask="url(#q)" aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
+            <g data-stacking-layer="rootBackgroundAndBorders">
+             <rect x="256" y="275" width="16" height="16" rx="8" ry="8" fill="rgba(0, 0, 0, 0)" stroke="#8a8886" stroke-width="2px"/>
+            </g>
+            <mask id="q">
+             <rect x="256" y="275" width="16" height="16" fill="#fff"/>
+            </mask>
+           </g>
+           <text color="rgb(96, 94, 92)" dominant-baseline="text-after-edge" fill="rgb(96, 94, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(96, 94, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="284" y="293" lengthAdjust="spacingAndGlyphs" textLength="94.5" xml:space="preserve">Review and run</tspan></text>
+           <title>Wizard progress expand button</title>
+          </g>
+          <g class="bodyWrapper-407" mask="url(#ai)" aria-owns="section-4121" data-stacking-context="true" data-tag="div" data-z-index="auto">
+           <mask id="ai">
+            <rect x="509" y="110" width="930" height="738" fill="#fff"/>
+           </mask>
+           <g class="section-412" mask="url(#h)" aria-owns="stepContainer-4131" data-stacking-context="true" data-tag="section" data-z-index="auto" role="region">
+            <mask id="h">
+             <rect x="509" y="110" width="930" height="738" fill="#fff"/>
+            </mask>
+            <g class="stepContainer-413" mask="url(#f)" aria-owns="stepBody-4141 ba-wizard-footer1" data-stacking-context="true" data-tag="div" data-z-index="auto">
+             <mask id="f">
+              <rect x="509" y="110" width="930" height="738" fill="#fff"/>
+             </mask>
+             <g class="stepBody-414" mask="url(#g)" aria-owns="ms-Stack3" data-stacking-context="true" data-tag="div" data-z-index="auto">
+              <mask id="g">
+               <rect x="509" y="110" width="930" height="666" fill="#fff"/>
+              </mask>
+              <g fill="rgb(50, 49, 48)" font-stretch="100%" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+               <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-family='"Segoe UI", helvetica, arial, sans-serif' font-size="24px" font-weight="600" user-select="auto"><tspan x="541" y="174" lengthAdjust="spacingAndGlyphs" textLength="137.140625" xml:space="preserve">Model name</tspan></text>
+               <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-weight="400" user-select="auto"><tspan x="541" y="198" lengthAdjust="spacingAndGlyphs" textLength="200.65625" xml:space="preserve">Select the names for your model</tspan></text>
+               <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-weight="600" user-select="auto"><tspan x="541" y="248" lengthAdjust="spacingAndGlyphs" textLength="37.890625" xml:space="preserve">Name</tspan></text>
+              </g>
+              <g stroke="#2266e3" data-stacking-layer="rootBackgroundAndBorders">
+               <rect x="541" y="254" width="365" height="32" rx="2" ry="2" fill="#fff" stroke-width="1px"/>
+               <rect x="541" y="254" width="365" height="32" rx="2" ry="2" fill="rgba(0, 0, 0, 0)" stroke-width="2px"/>
+              </g>
+              <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="541" y="335" lengthAdjust="spacingAndGlyphs" textLength="120.390625" xml:space="preserve">Output table name</tspan></text>
+              <g id="ay" mask="url(#b)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+               <mask id="b">
+                <rect width="0" height="0" fill="#fff"/>
+               </mask>
+              </g>
+              <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family="FabricMDL2Icons" font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="665.390625" y="333" lengthAdjust="spacingAndGlyphs" textLength="14" xml:space="preserve"></tspan></text>
+              <g stroke-width="1px" data-stacking-layer="rootBackgroundAndBorders">
+               <rect x="541" y="341" width="365" height="32" rx="2" ry="2" fill="#fff" stroke="#605e5c"/>
+               <line x1="541" x2="1407" y1="397" y2="397" stroke="#edebe9" stroke-linecap="square"/>
+              </g>
+              <g fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-stretch="100%" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+               <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-size="14px" font-weight="400" user-select="auto"/>
+               <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-size="16px" font-weight="600" user-select="auto"><tspan x="541" y="441" lengthAdjust="spacingAndGlyphs" textLength="133.703125" xml:space="preserve">Select primary key</tspan></text>
+               <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-size="14px" font-weight="600" user-select="auto"><tspan x="541" y="473" lengthAdjust="spacingAndGlyphs" textLength="451.734375" xml:space="preserve">Select which of these attributes is the primary key on your output table</tspan></text>
+              </g>
+              <g id="az" class="ms-Dropdown-title title-490" mask="url(#as)" aria-invalid="false" data-stacking-context="true" data-tag="span" data-z-index="auto">
+               <g data-stacking-layer="rootBackgroundAndBorders">
+                <rect x="541" y="487" width="365" height="32" rx="2" ry="2" fill="#fff" stroke="#605e5c" stroke-width="1px"/>
+               </g>
+               <mask id="as">
+                <rect x="541" y="487" width="365" height="32" fill="#fff"/>
+               </mask>
+               <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="550" y="512" lengthAdjust="spacingAndGlyphs" textLength="55.71875" xml:space="preserve">Column1</tspan></text>
+              </g>
+              <text color="rgb(96, 94, 92)" dominant-baseline="text-after-edge" fill="rgb(96, 94, 92)" font-family="FabricMDL2Icons" font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(96, 94, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="886" y="509" lengthAdjust="spacingAndGlyphs" textLength="12" xml:space="preserve"></tspan></text>
+              <g data-stacking-layer="rootBackgroundAndBorders">
+               <line x1="541" x2="1407" y1="543" y2="543" stroke="#edebe9" stroke-linecap="square" stroke-width="1px"/>
+              </g>
+              <g fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-stretch="100%" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+               <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-size="14px" font-weight="400" user-select="auto"/>
+               <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-size="16px" font-weight="600" user-select="auto"><tspan x="541" y="587" lengthAdjust="spacingAndGlyphs" textLength="138.140625" xml:space="preserve">Select Customer ID</tspan></text>
+               <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" font-size="14px" font-weight="600" user-select="auto"><tspan x="541" y="619" lengthAdjust="spacingAndGlyphs" textLength="634.5625" xml:space="preserve">Select which of these attributes corresponds to CI's Customer:CustomerId attribute, so we can relate </tspan><tspan x="541" y="640" lengthAdjust="spacingAndGlyphs" textLength="231.65625" xml:space="preserve">these results back to your customers</tspan></text>
+              </g>
+              <g id="ba" class="ms-Dropdown-title title-490" mask="url(#ar)" aria-invalid="false" data-stacking-context="true" data-tag="span" data-z-index="auto">
+               <g data-stacking-layer="rootBackgroundAndBorders">
+                <rect x="541" y="654" width="365" height="32" rx="2" ry="2" fill="#fff" stroke="#605e5c" stroke-width="1px"/>
+               </g>
+               <mask id="ar">
+                <rect x="541" y="654" width="365" height="32" fill="#fff"/>
+               </mask>
+               <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="550" y="679" lengthAdjust="spacingAndGlyphs" textLength="65.328125" xml:space="preserve">RoomType</tspan></text>
+              </g>
+              <text color="rgb(96, 94, 92)" dominant-baseline="text-after-edge" fill="rgb(96, 94, 92)" font-family="FabricMDL2Icons" font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(96, 94, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="886" y="676" lengthAdjust="spacingAndGlyphs" textLength="12" xml:space="preserve"></tspan></text>
+             </g>
+             <g data-stacking-layer="rootBackgroundAndBorders">
+              <rect x="509" y="776" width="930" height="72" fill="#fff"/>
+              <line x1="509" x2="1439" y1="776" y2="776" stroke="#edebe9" stroke-linecap="square" stroke-width="1px"/>
+              <rect x="533" y="796.5" width="80" height="32" rx="2" ry="2" fill="#2266e3" stroke="#2266e3" stroke-width="1px"/>
+             </g>
+             <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="557.875" y="821.5" lengthAdjust="spacingAndGlyphs" textLength="30.25" xml:space="preserve">Next</tspan></text>
+             <g data-stacking-layer="rootBackgroundAndBorders">
+              <rect x="1192.9" y="796.5" width="106.28" height="32" rx="2" ry="2" fill="#f3f2f1" stroke="#f3f2f1" stroke-width="1px"/>
+             </g>
+             <text color="rgb(161, 159, 157)" dominant-baseline="text-after-edge" fill="rgb(161, 159, 157)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(161, 159, 157)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1213.859375" y="821.5" lengthAdjust="spacingAndGlyphs" textLength="64.28125" xml:space="preserve">Save draft</tspan></text>
+             <g data-stacking-layer="rootBackgroundAndBorders">
+              <rect x="1315.1" y="796.5" width="83.859" height="32" rx="2" ry="2" fill="#fff" stroke="#8a8886" stroke-width="1px"/>
+             </g>
+             <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1336.140625" y="821.5" lengthAdjust="spacingAndGlyphs" textLength="41.859375" xml:space="preserve">Cancel</tspan></text>
+>>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/custom-model-AML-wizard1.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
             </g>
            </g>
           </g>
@@ -1029,8 +1343,12 @@ src: local("SegoeUI");
           </mask>
          </g>
         </g>
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
         <g stroke-linecap="square" stroke-width="1px" data-stacking-layer="rootBackgroundAndBorders">
          <line x1="229" x2="1439" y1="110" y2="110" stroke="#e1dfdd"/>
          <line x1="229" x2="1439" y1="109" y2="109" stroke="#edebe9"/>
@@ -1040,7 +1358,12 @@ src: local("SegoeUI");
          <text color="rgb(96, 94, 92)" dominant-baseline="text-after-edge" fill="rgb(96, 94, 92)" font-family="FabricMDL2Icons" font-size="12px" font-weight="400" text-decoration="none solid rgb(96, 94, 92)" user-select="auto"><tspan x="356.859375" y="84" lengthAdjust="spacingAndGlyphs" textLength="12" xml:space="preserve"></tspan></text>
          <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="18px" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" user-select="auto"><tspan x="376.859375" y="90" lengthAdjust="spacingAndGlyphs" textLength="159.078125" xml:space="preserve">HotelChurnPipeline</tspan></text>
         </g>
+<<<<<<< HEAD
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
        </g>
        <mask id="av">
         <rect x="1514.2" y="47.986" width="26.875" height="874.69" fill="#fff"/>
@@ -1049,9 +1372,28 @@ src: local("SegoeUI");
       </g>
      </g>
     </g>
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
 =======
 <<<<<<<< HEAD:ci-docs/media/custom-model-AML-wizard1.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+<<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+    <title>Open Copilot chat</title>
+    <g mask="url(#ad)" aria-owns="path1 path2 path3 path4 path5 path6 defs1" data-stacking-context="true" data-tag="svg" data-z-index="auto">
+     <mask id="ad">
+      <rect x="1515.7" y="55.434" width="23.993" height="23.993" fill="#fff"/>
+     </mask>
+    </g>
+   </g>
+  </g>
+  <g id="cg" mask="url(#as)" data-stacking-context="true" data-tag="iframe" data-z-index="auto">
+   <mask id="as">
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+========
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
     <g class="navbarContainer-164" mask="url(#n)" aria-owns="appSwitcher-1621 ba-Sidebar1" data-stacking-context="true" data-tag="div" data-z-index="auto">
      <g data-stacking-layer="childStackingContextsWithPositiveStackLevels">
       <g class="appSwitcher-162" font-stretch="100%" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" aria-owns="ms-Stack1" data-stacking-context="true" data-tag="div" data-z-index="999">
@@ -1192,6 +1534,7 @@ src: local("SegoeUI");
   </g>
   <g id="bb" mask="url(#m)" data-stacking-context="true" data-tag="iframe" data-z-index="auto">
    <mask id="m">
+<<<<<<< HEAD
 ========
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
     <title>Open Copilot chat</title>
@@ -1208,10 +1551,16 @@ src: local("SegoeUI");
 =======
 >>>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+>>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/custom-model-AML-wizard1.svg
+=======
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
     <rect width="0" height="0" fill="#fff"/>
    </mask>
   </g>
   <g data-stacking-layer="childStackingContextsWithNegativeStackLevels">
+<<<<<<< HEAD
 <<<<<<< HEAD:ci-docs/media/setting-data-prep.svg
    <g class="ms-Button ms-Button--default root-131" mask="url(#ax)" aria-labelledby="" aria-owns="ms-Button-flexContainer1" data-stacking-context="true" data-tag="button" data-z-index="-999" role="button">
     <mask id="ax">
@@ -1227,6 +1576,23 @@ src: local("SegoeUI");
      <rect x="-998.99" width="80" height="2.2222" fill="#fff"/>
 >>>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
 >>>>>>> 98c7423804199909a399f4fbe1e8af8d09f09bdc:ci-docs/data/media/setting-data-prep.svg
+=======
+<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+<<<<<<<< HEAD:ci-docs/data/media/setting-data-prep.svg
+   <g class="ms-Button ms-Button--default root-131" mask="url(#ax)" aria-labelledby="" aria-owns="ms-Button-flexContainer1" data-stacking-context="true" data-tag="button" data-z-index="-999" role="button">
+    <mask id="ax">
+     <rect x="-998.99" width="80" height="2.2222" fill="#fff"/>
+========
+   <g class="ms-Button ms-Button--default root-130" mask="url(#t)" aria-labelledby="" aria-owns="ms-Button-flexContainer1" data-stacking-context="true" data-tag="button" data-z-index="-999" role="button">
+    <mask id="t">
+     <rect x="-999" width="80" height="2" fill="#fff"/>
+>>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/custom-model-AML-wizard1.svg
+=======
+   <g class="ms-Button ms-Button--default root-131" mask="url(#ax)" aria-labelledby="" aria-owns="ms-Button-flexContainer1" data-stacking-context="true" data-tag="button" data-z-index="-999" role="button">
+    <mask id="ax">
+     <rect x="-998.99" width="80" height="2.2222" fill="#fff"/>
+>>>>>>> b14910fb3d7c08b1f21b43af71a92831a5a6824c:ci-docs/media/setting-data-prep.svg
+>>>>>>> e624c6dffa859dccb5300d584904b73edde3b7ac
     </mask>
     <text color="rgb(50, 49, 48)" dominant-baseline="text-after-edge" fill="rgb(50, 49, 48)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(50, 49, 48)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"/>
    </g>
