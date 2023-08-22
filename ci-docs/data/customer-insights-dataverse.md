@@ -111,31 +111,7 @@ Set up PowerShell to execute PowerShell scripts.
 
    :::image type="content" source="media/dataverse-enable-datasharing-BYODL.png" alt-text="Configuration options to enable data sharing from your own Azure Data Lake Storage with Microsoft Dataverse.":::
 
-## Remove an existing connection to a Dataverse environment
 
-When connecting to a Dataverse environment, the error message **This CDS organization is already attached to another Customer Insights instance** means that the Dataverse environment is already used in a Customer Insights - Data environment. You can remove the existing connection as a global administrator on the Dataverse environment. It can take a couple of hours to populate the changes.
-
-1. Go to [Power Apps](https://make.powerapps.com).
-1. Select the environment from the environment picker.
-1. If you have Dynamics 365 Customer Insights - Journeys installed on the Dataverse environment, and you have [it connected to your Customer Insights - Data environment](/dynamics365/marketing/real-time-marketing-ci-profile), remove this connection first. Otherwise, skip this step and proceed to step 4.
-    1. Go to **Tables**.
-    1. Find the table *msdynmkt_configuration*.
-    1. Go to the *CXPConfig* row in this table.
-    1. Go to the *Customer Insights Status* column and change the value from *Configured* to *NotConfigured*.
-    1. Go to **Solutions**.
-    1. Uninstall the following Dynamics 365 Customer Insights - Journeys solutions:
-        - DynamicsMKT_AttachCIApplicationUser (*DynamicsMKT_AttachCIApplicationUser*)
-        - Dynamics Marketing Consent For Customer Insights (*DynamicsMKT_ConsentAttachCI*)
-        - DynamicsMKT_OrchestrationEngineAttachCI (*DynamicsMKT_OrchestrationEngineAttachCI*)
-1. Go to **Solutions**.
-1. Uninstall the following Customer Insights - Data solutions:
-   - Dynamics 365 Customer Insights Base (*msdyn_CustomerInsightsAnchor*)
-   - Dynamics 365 Customer Insights Data Tables (*msdyn_CustomerInsightsDataTables*)
-   - Dynamics 365 Customer Insights (*msdyn_CustomerInsights*)
-   - Dynamics 365 Customer Insights Customer Card (*CustomerInsightsCustomerCard*)
-   - Dynamics 365 Customer Insights Prod First Party App User Management (*msdyn_CustomerInsightsAppUserManagementProd*)
-
-If the removal of the connection fails due to dependencies, you need to remove the dependencies too. For more information, see [Removing dependencies](/power-platform/alm/removing-dependencies).
 
 ## Output tables in Dataverse
 
