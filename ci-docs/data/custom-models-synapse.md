@@ -24,7 +24,7 @@ Manage workflows based on Azure Synapse Analytics models. Workflows help you cho
 - Subscription: An active Azure subscription.
 - Access privileges for Customer Insights - Data environment and Azure Synapse workspace:
   - Admin or Contributor privileges for your Customer Insights - Data environment
-  - On the resource group where the Azure Synapse workspace is located, the service principal and the Azure AD user with Admin permissions in Customer Insights must be assigned at least **Reader** [permissions](/azure/role-based-access-control/role-assignments-portal).
+  - On the resource group where the Azure Synapse workspace is located, the service principal and the user with Admin permissions in Customer Insights must be assigned at least **Reader** [permissions](/azure/role-based-access-control/role-assignments-portal).
   - The user with Administrator permissions in Customer Insights - Data has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more about [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
   - The [Azure Synapse workspace managed identity](/azure/synapse-analytics/security/synapse-workspace-managed-identity) has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace.
   - On the Azure Synapse workspace, the service principal for Customer Insights has **Synapse Administrator** role assigned.

@@ -30,7 +30,7 @@ Administrators in Customer Insights - Data can [create environments](create-envi
 When you create a new environment, make sure the Data Lake Storage account exists and all prerequisites are met.
 
 1. In the **Data storage** step during environment creation, set **Save output data** to **Azure Data Lake Storage Gen2**.
-1. Choose how to **Connect your storage**. You can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using an Azure Service Principal](connect-service-principal.md).
+1. Choose how to **Connect your storage**. You can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal](connect-service-principal.md).
    - For **Azure subscription**, choose the **Subscription**, **Resource group**, and **Storage account** that contains the `customerinsights` container.
    - For **Account key**, provide the **Account name** and the **Account key** for the Data Lake Storage account. Using this authentication method implies that you're informed if your organization rotates the keys. You must [update the environment configuration](manage-environments.md#edit-an-existing-environment) with the new key when it's rotated.
 1. Choose if you want to use Azure Private Link to connect to the storage account and [create the connection to Private Link](private-link.md).

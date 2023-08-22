@@ -151,7 +151,7 @@ The `identity` JSON object has the following structure
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `Authorization.UserRole`      | Assigned role for the user or app. For more information, see [user permissions](permissions.md).                                     |
 | `Authorization.RequiredRoles` | Required roles to do the operation. `Admin` role is allowed to do all operations.                                                    |
-| `Claims`                      | Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration. |
+| `Claims`                      | Claims of the user or app JSON web token (JWT). Claim properties vary per organization. |
 
 #### API properties schema
 
@@ -167,7 +167,7 @@ The `identity` JSON object has the following structure
 | `properties.operationStatus` | `Success` for HTTP Status code < 400 <br> `ClientError` for HTTP Status code < 500 <br> `Error` for HTTP Status >= 500 |
 | `properties.tenantId`        | Organization ID                                                                                                        |
 | `properties.tenantName`      | Name of the organization.                                                                                              |
-| `properties.callerObjectId`  | Azure Active Directory ObjectId of the caller.                                                                         |
+| `properties.callerObjectId`  | Microsoft Entra ID ObjectId of the caller.                                                                         |
 | `properties.instanceId`      | Customer Insights `instanceId`                                                                                         |
 
 ### Workflow event schema
@@ -221,7 +221,7 @@ Workflow events have following properties.
 | `properties.workflowJobId`                   | Yes      | Yes  | Identifier of the workflow run. All workflow and task events within the workflow execution have the same `workflowJobId`.                                                                                                                                   |
 | `properties.operationType`                   | Yes      | Yes  | Identifier of the operation, see [Operation types](#operation-types).                                                                                                                                                                               |
 | `properties.tasksCount`                      | Yes      | No   | Workflow only. Number of tasks the workflow triggers.                                                                                                                                                                                                       |
-| `properties.submittedBy`                     | Yes      | No   | Optional. Workflow events only. The Azure Active Directory [objectId of the user](/azure/marketplace/find-tenant-object-id#find-user-object-id) who triggered the workflow, see also `properties.workflowSubmissionKind`.                                   |
+| `properties.submittedBy`                     | Yes      | No   | Optional. Workflow events only. Microsoft Entra ID [objectId of the user](/azure/marketplace/find-tenant-object-id#find-user-object-id) who triggered the workflow, see also `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | Yes      | No   | `full` or `incremental` refresh.                                                                                                                                                                                                                            |
 | `properties.workflowSubmissionKind`          | Yes      | No   | `OnDemand` or `Scheduled`.                                                                                                                                                                                                                                  |
 | `properties.workflowStatus`                  | Yes      | No   | `Running` or  `Successful`.                                                                                                                                                                                                                                 |
