@@ -43,7 +43,7 @@ If you create multiple environments and choose to save the output tables from th
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-You can connect your own Data Lake Storage Account with a Dataverse environment to enable data sharing. The user who sets up the Customer Insights - Data environment needs at least **Storage Blob Data Reader** permissions on the `customerinsights` container in the storage account.
+Dynamics 365 Customer Insights - Data can write output tables to [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). You can enable data sharing to make output tables available in your Dataverse environment. Dataverse tables enable custom development with a low code approach. The user who sets up the Customer Insights - Data environment needs at least **Storage Blob Data Reader** permissions on the `customerinsights` container in the storage account.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 

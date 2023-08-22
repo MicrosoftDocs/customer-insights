@@ -22,9 +22,33 @@ After the first environment is created, the global administrator of the Microsof
 
 ## Prerequisites
 
-[Administrator permissions](permissions.md) in Customer Insights - Data.
+- [Administrator permissions](permissions.md) in Customer Insights - Data.
+- A global administrator role set up in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you're added to those security groups.
+- A Dataverse [license is assigned](/power-platform/admin/create-users#to-assign-a-license) to you to get Read-Write access mode. Unlicensed administrators get Administrative access mode only.
+- No other Customer Insights - Data environment already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](manage-environment.md#remove-an-existing-connection-to-a-dataverse-environment).
+- A Microsoft Dataverse environment connected to a single storage account if you configure the environment to [use your Azure Data Lake Storage](own-data-lake-storage.md).
 
-## Start the environment creation process
+## Dataverse storage capacity entitlement
+
+A Customer Insights - Data subscription entitles you to extra capacity for your organization's existing [Dataverse storage capacity](/power-platform/admin/capacity-storage). The added capacity depends on the number of profiles that your subscription uses. Customer Insights - Data writes some output tables to Dataverse. For more information, see [Customer Insights - Data tables in Dataverse](tables.md#customer-insights---data-tables-in-dataverse).
+
+**Example:**
+
+Assuming you get 15-GB database storage and 20-GB file storage per 100,000 customer profiles. If your subscription includes 300,000 customer profiles, your total storage capacity is 45 GB (3 x 15 GB) database storage and 60-GB file storage (3 x 20 GB).
+
+Log capacity isn't incremental and fixed for your organization.
+
+For more information about the detailed capacity entitlements, see [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+
+## Create an environment in Customer Insights - Data
+
+We recommend to use the consolidated environment manager for Customer Insights to create new environment by default.
+
+Use the environments creation experience in Customer Insights - Data for the following scenarios:
+
+- Use your [own Azure Data Lake Storage Account](own-data-lake-storage.md) AND [Azure Private Link](private-link.md)
+- [Enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) between your own Data Lake Storage Account and Microsoft Dataverse
+- [Create a copy of an existing environment configuration](#copy-the-environment-configuration)
 
 1. Open the environment picker and select **+ New**.
   
@@ -32,7 +56,7 @@ After the first environment is created, the global administrator of the Microsof
 
 1. Follow the guided experience outlined in the following sections to provide all required information for a new environment.
 
-## Step 1: Provide basic information
+### Step 1: Provide basic information
 
 1. Choose whether you want to create an environment from scratch or copy data from another environment. [Copying data from another environment](#copy-the-environment-configuration) requires additional steps.
 
@@ -46,7 +70,7 @@ After the first environment is created, the global administrator of the Microsof
 
 1. Select **Next**.
 
-## Step 2: Configure data storage
+### Step 2: Configure data storage
 
 1. Choose where to store the data:
 
@@ -57,7 +81,7 @@ After the first environment is created, the global administrator of the Microsof
 
 1. Select **Next**.
 
-## Step 3: Connect to Microsoft Dataverse
+### Step 3: Connect to Microsoft Dataverse
 
 Your environment requires a Microsoft Dataverse environment attached to it. Select an existing Dataverse environment that doesn't already have a Customer Insights - Data environment attached to it. Or you can choose to have a new Microsoft Dataverse environment created and attached. Additionally, if you chose to use your own Azure Data Lake storage in the previous step, you can enable data sharing with Dataverse to use it with business applications based on Dataverse or model-driven applications in Power Apps.
 
@@ -69,9 +93,9 @@ Your environment requires a Microsoft Dataverse environment attached to it. Sele
 
 1. If you're using your own Data Lake Storage account:
    1. Select **Enable data sharing** with Dataverse.
-   1. Enter the **Permissions identifier**. To get the permission identifier, [enable data sharing with Dataverse from your own Azure Data Lake Storage](#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
+   1. Enter the **Permissions identifier**. To get the permission identifier, [enable data sharing with Dataverse from your own Azure Data Lake Storage](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
-## Step 4: Finalize the settings
+### Step 4: Finalize the settings
 
 Review the specified settings. When everything looks complete, select **Create** to set up the environment.
 
