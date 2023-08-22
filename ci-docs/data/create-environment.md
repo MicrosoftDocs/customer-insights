@@ -61,11 +61,15 @@ After the first environment is created, the global administrator of the Microsof
 
 Your environment requires a Microsoft Dataverse environment attached to it. Select an existing Dataverse environment that doesn't already have a Customer Insights - Data environment attached to it. Or you can choose to have a new Microsoft Dataverse environment created and attached. Additionally, if you chose to use your own Azure Data Lake storage in the previous step, you can enable data sharing with Dataverse to use it with business applications based on Dataverse or model-driven applications in Power Apps.
 
-1. Follow the steps in [Work with data in Microsoft Dataverse](customer-insights-dataverse.md).
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto-enabled for new environments.":::
 
-   :::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto-enabled for net new environments.":::
+1. Provide the URL to your Dataverse environment or leave blank to have one created for you.
 
-1. Select **Next**.
+   [Power Platform admins can control who can create a new Dataverse environments](/power-platform/admin/control-environment-creation). If you're trying to set up a new environment and can't, the admin might have disabled the creation of Dataverse environments for everyone except admins.
+
+1. If you're using your own Data Lake Storage account:
+   1. Select **Enable data sharing** with Dataverse.
+   1. Enter the **Permissions identifier**. To get the permission identifier, [enable data sharing with Dataverse from your own Azure Data Lake Storage](#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ## Step 4: Finalize the settings
 

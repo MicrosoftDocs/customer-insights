@@ -40,15 +40,7 @@ For more information about the detailed capacity entitlements, see [Dynamics 365
 
 The **Microsoft Dataverse** step lets you connect Customer Insights - Data with your Dataverse environment while [creating an environment](create-environment.md).
 
-:::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto-enabled for new environments.":::
 
-1. Provide the URL to your Dataverse environment or leave blank to have one created for you.
-
-   [Power Platform admins can control who can create a new Dataverse environments](/power-platform/admin/control-environment-creation). If you're trying to set up a new environment and can't, the admin might have disabled the creation of Dataverse environments for everyone except admins.
-
-1. If you're using your own Data Lake Storage account:
-   1. Select **Enable data sharing** with Dataverse.
-   1. Enter the **Permissions identifier**. To get the permission identifier, [enable data sharing with Dataverse from your own Azure Data Lake Storage](#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ## Enable data sharing with Dataverse from your own Azure Data Lake Storage (preview)
 
