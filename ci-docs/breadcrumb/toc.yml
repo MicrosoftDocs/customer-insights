@@ -8,15 +8,15 @@
     items:
     - name: Customer Insights
       tocHref: /dynamics365/customer-insights/
-      topicHref: /dynamics365/customer-insights/
+      topicHref: /dynamics365/customer-insights/index
       items:
       - name: Customer Insights - Data
         tocHref: /dynamics365/customer-insights/data/
-        topicHref: /dynamics365/customer-insights/data/
+        topicHref: /dynamics365/customer-insights/data/index
         items:
         - name: B2B
           tocHref: /dynamics365/customer-insights/data/b2b/
-          topicHref: /dynamics365/customer-insights/data/b2b/
+          topicHref: /dynamics365/customer-insights/data/b2b/work-with-business-accounts
       - name: Customer Insights - Journeys
         tocHref: /dynamics365/customer-insights/journeys/
-        topicHref: /dynamics365/customer-insights/journeys/
+        topicHref: /dynamics365/customer-insights/journeys/index
