@@ -3,13 +3,9 @@ title: Subscription churn prediction sample guide
 description: Use this sample guide to try out the out of box subscription churn prediction model.
 ms.date: 11/15/2022
 ms.reviewer: v-wendysmith
-
 ms.topic: tutorial
 author: m-hartmann
-ms.author: wameng
-searchScope: 
-  - ci-create-prediction
-  - customerInsights
+ms.author: joytaylor
 ---
 
 # Subscription churn prediction sample guide

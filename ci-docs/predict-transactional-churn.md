@@ -5,7 +5,7 @@ ms.date: 03/20/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: zacookmsft
-ms.author: zacook
+ms.author: joytaylor
 ---
 
 # Predict transaction churn
@@ -26,7 +26,7 @@ For environments based on business accounts, we can predict transactional churn 
 ## Prerequisites
 
 - At least [Contributor permissions](permissions.md).
-- At least 10 customer profiles, preferably more than 1,000 unique customers.
+- At least 1,000 customer profiles within the desired prediction window.
 - Customer Identifier, a unique identifier to match transactions to your customers.
 - Transaction data for at least double the selected time window such as two to three years of transaction history. Ideally at least two transactions per customer. Transaction history must include:
   - **Transaction ID**: Unique identifier of a purchase or transaction.

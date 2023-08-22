@@ -27,7 +27,7 @@ The output of this model provides recommendations based on the product ID. Your 
 ## Prerequisites
 
 - At least [Contributor permissions](permissions.md)
-- At least 100 customers, preferably more than 10,000 customers.
+- At least 1,000 customer profiles within the desired prediction window
 - Customer Identifier, a unique identifier to match transactions to an individual customer
 - At least one year of transactional data, preferably two to three years to include some seasonality. Ideally, at least three or more transactions per Customer ID. Transaction history must include:
   - **Transaction ID**: Unique identifier of a purchase or transaction.

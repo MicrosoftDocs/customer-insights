@@ -5,11 +5,7 @@ ms.date: 11/15/2022
 ms.reviewer: mhart
 ms.topic: tutorial
 author: m-hartmann
-ms.author: wameng
-searchScope: 
-  - ci-predictions
-  - ci-create-prediction
-  - customerInsights
+ms.author: joytaylor
 ---
 
 # Product recommendation prediction sample guide
