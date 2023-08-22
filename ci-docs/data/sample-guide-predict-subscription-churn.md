@@ -4,7 +4,7 @@ description: Use this sample guide to try out the out of box subscription churn 
 ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: tutorial
-author: m-hartmann
+author: joytaylor
 ms.author: joytaylor
 ---
 

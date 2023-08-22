@@ -4,7 +4,7 @@ description: "Predict revenue potential for active customers in the future."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: m-hartmann
+author: joytaylor
 ms.author: joytaylor
 ---
 
