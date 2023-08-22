@@ -74,7 +74,7 @@ Access to Dynamics 365 Customer Insights - Data is restricted to users in your o
 
 1. Select **Add users** to open the **Add/Edit permissions** pane.
 
-1. Use the **Search** field to find the Azure Active Directory user or group you want to add. Select a **Role** to assign to that user or group.
+1. Use the **Search** field to find the user or group you want to add. Select a **Role** to assign to that user or group.
 
 1. Select **Save**. The current environment is automatically shared with the user or members of the group. Users can access the app and work according to their specified role.
 

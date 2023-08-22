@@ -21,7 +21,7 @@ Azure Synapse is an analytics service that accelerates time to insight across da
 > [!NOTE]
 > Make sure to set all **role assignments** as described.
 
-- In Customer Insights - Data, your Azure Active Directory (AD) user account must have an [Administrator role](permissions.md#add-users).
+- In Customer Insights - Data, your Microsoft Entra ID  account must have an [Administrator role](permissions.md#add-users).
 
 In Azure:
 
@@ -31,9 +31,9 @@ In Azure:
 
 - If using a new Azure Data Lake Storage Gen2 account, the [service principal for Customer Insights - Data](connect-service-principal.md) has **Storage Blob Data Contributor** permissions. The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
 
-- On the resource group with the Azure Synapse workspace, the *service principal* and the *Azure AD user with admin permissions in Customer Insights - Data* needs at least **Reader** [permissions](/azure/role-based-access-control/role-assignments-portal).
+- On the resource group with the Azure Synapse workspace, the *service principal* and the *user with admin permissions in Customer Insights - Data* needs at least **Reader** [permissions](/azure/role-based-access-control/role-assignments-portal).
 
-- The *Azure AD user with admin permissions in Customer Insights - Data* has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more about [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- The *user with admin permissions in Customer Insights - Data* has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more about [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - The *[Azure Synapse workspace managed identity](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more on [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 

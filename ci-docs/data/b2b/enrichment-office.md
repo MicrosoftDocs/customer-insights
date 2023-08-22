@@ -77,7 +77,7 @@ Select **Run** to start the enrichment process.
 
 ## View enrichment results
 
-[!INCLUDE [enrichment-results](../includes/enrichment-results.md)] This is the *Office* table. The *Office_UserTable* contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration.
+[!INCLUDE [enrichment-results](../includes/enrichment-results.md)] This is the *Office* table. The *Office_UserTable* contains the Microsoft Entra IDs for the email addresses that were chosen during enrichment configuration.
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
