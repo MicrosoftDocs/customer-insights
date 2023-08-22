@@ -4,8 +4,8 @@ description: Use this sample guide to try out the customer lifetime value predic
 ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: tutorial
-author: yashlundia
-ms.author: yalundia        
+author: joytaylor
+ms.author: joytaylor        
 ---
 
 # Customer lifetime value (CLV) prediction sample guide
