@@ -13,12 +13,18 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-After [purchasing a subscription license for Dynamics 365 Customer Insights](paid-license.md), the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment. Go to [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) to get started. In this scenario, start with [Step 1: Provide basic information](#step-1-provide-basic-information).
+After [purchasing a subscription license for Dynamics 365 Customer Insights](paid-license.md), the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment.
 
-After the first environment is created, the global administrator of the Microsoft 365 tenant can [add users from their organization as administrators](permissions.md). These administrators can then manage users and environments. If your organization purchases more than one license for Customer Insights, [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, review the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544). Once you have the ability to create additional environments, go to [Start the environment creation process](#start-the-environment-creation-process).
+After the first environment is created, the global administrator of the Microsoft 365 tenant can [add users from their organization as administrators](permissions.md). These administrators can then manage users and environments. If your organization purchases more than one license for Customer Insights, [contact our support team](https://go.microsoft.com/fwlink/?linkid=2079641) to increase the number of available environments. For more information about capacity and add-on capacity, review the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-> [!TIP]
-> If you're looking to try the service, see [Set up a trial environment](trial-signup.md).
+> [!IMPORTANT]
+> In most cases, creating an environment or installing Customer Insights - Data on an existing environment should be done with the consolidated provisioning experience.  <!-- link to SPA doc-->
+
+Use the environments creation experience in Customer Insights - Data for the following scenarios:
+
+- Use your [own Azure Data Lake Storage Account](own-data-lake-storage.md) AND [Azure Private Link](private-link.md)
+- [Enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) between your own Data Lake Storage Account and Microsoft Dataverse
+- [Create a copy of an existing environment configuration](#copy-the-environment-configuration)
 
 ## Prerequisites
 
@@ -43,12 +49,7 @@ For more information about the detailed capacity entitlements, see [Dynamics 365
 ## Create an environment in Customer Insights - Data
 
 We recommend to use the consolidated environment manager for Customer Insights to create new environment by default.
-
-Use the environments creation experience in Customer Insights - Data for the following scenarios:
-
-- Use your [own Azure Data Lake Storage Account](own-data-lake-storage.md) AND [Azure Private Link](private-link.md)
-- [Enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) between your own Data Lake Storage Account and Microsoft Dataverse
-- [Create a copy of an existing environment configuration](#copy-the-environment-configuration)
+<!-- add link to SPA doc-->
 
 1. Open the environment picker and select **+ New**.
   
@@ -66,7 +67,7 @@ Use the environments creation experience in Customer Insights - Data for the fol
 
    - **Name**: Name for this environment. This field is already filled in if you've copied an existing environment, but you can change it.
    - **Type**: Type of environment: production or sandbox. Sandbox environments don't allow scheduled data refresh and are intended for pre-implementation and testing. Sandbox environments use the same primary audience as the production environment that's currently selected.
-   - **Region**: Region into which the service is deployed and hosted. To [use your own Azure Data Lake Storage account](own-data-lake-storage.md) or [connect to an existing Microsoft Dataverse organization](customer-insights-dataverse.md), all environments must be in the same region.
+   - **Region**: Region into which the service is deployed and hosted. To [use your own Azure Data Lake Storage account](own-data-lake-storage.md) or connect to an existing Microsoft Dataverse organization, all environments must be in the same region.
 
 1. Select **Next**.
 
@@ -83,7 +84,7 @@ Use the environments creation experience in Customer Insights - Data for the fol
 
 ### Step 3: Connect to Microsoft Dataverse
 
-Your environment requires a Microsoft Dataverse environment attached to it. Select an existing Dataverse environment that doesn't already have a Customer Insights - Data environment attached to it. Or you can choose to have a new Microsoft Dataverse environment created and attached. Additionally, if you chose to use your own Azure Data Lake storage in the previous step, you can enable data sharing with Dataverse to use it with business applications based on Dataverse or model-driven applications in Power Apps.
+Select an existing Dataverse environment that doesn't already have a Customer Insights - Data environment attached to it. Or you can choose to have a new Microsoft Dataverse environment created and attached. Additionally, if you chose to use your own Azure Data Lake storage in the previous step, you can enable data sharing with Dataverse to use it with business applications based on Dataverse or model-driven applications in Power Apps.
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto-enabled for new environments.":::
 
@@ -154,5 +155,11 @@ When you copy the environment configuration, a confirmation message displays whe
 1. Go to **Settings** > **Connections** to reauthenticate the connections in your new environment.
 
 1. Go to **Data** > **Enrichment** and **Data** > **Exports** to reactivate them.
+
+## Next steps
+
+- [Assign user permissions](permissions.md)
+- [Data sources overview](data-sources.md)
+- [Data unification overview](data-unification.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
