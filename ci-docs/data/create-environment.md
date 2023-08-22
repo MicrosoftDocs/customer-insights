@@ -4,8 +4,8 @@ description: Steps to create environments in Dynamics 365 Customer Insights.
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: mukeshpo
-ms.author: mukeshpo
+author: kishorem-ms
+ms.author: kishorem
 ms.custom: bap-template
 ---
 
@@ -31,7 +31,7 @@ Use the environments creation experience in Customer Insights - Data for the fol
 - [Administrator permissions](permissions.md) in Customer Insights - Data.
 - A global administrator role set up in the Dataverse environment. Verify if this [Dataverse environment is associated](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) to certain security groups and make sure you're added to those security groups.
 - A Dataverse [license is assigned](/power-platform/admin/create-users#to-assign-a-license) to you to get Read-Write access mode. Unlicensed administrators get Administrative access mode only.
-- No other Customer Insights - Data environment already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](manage-environment.md#remove-an-existing-connection-to-a-dataverse-environment).
+- No other Customer Insights - Data environment already associated with the Dataverse environment you want to connect. Learn how to [remove an existing connection to a Dataverse environment](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment).
 - A Microsoft Dataverse environment connected to a single storage account if you configure the environment to [use your Azure Data Lake Storage](own-data-lake-storage.md).
 
 ## Dataverse storage capacity entitlement
