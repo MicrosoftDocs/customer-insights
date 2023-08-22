@@ -4,8 +4,8 @@ description: "Predict the products a customer is likely to purchase or interact 
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
-author: wmelewong 
-ms.author: wameng
+author: joytaylor
+ms.author: joytaylor
 ---
 
 # Predict product recommendations (preview)
