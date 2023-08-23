@@ -30,7 +30,7 @@ An admin must enable API access to your data. Once access is enabled, any user c
 
 1. If API access to the environment has not been set up, select **Enable**.
 
-   Enabling the APIs creates a primary and secondary subscription key for your instance that gets used in the API requests. To regenerate the keys, select the **Regenerate primary** or **Regenerate secondary** on the **APIs** tab.
+   Enabling the APIs creates a primary and secondary subscription key for your environment that gets used in the API requests. To regenerate the keys, select the **Regenerate primary** or **Regenerate secondary** on the **APIs** tab.
 
 1. Select [**Explore our APIs**](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) to try out the APIs.
 
