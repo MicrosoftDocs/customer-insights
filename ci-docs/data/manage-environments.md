@@ -29,6 +29,45 @@ Edit details of an existing environment such as the name or setting the default 
 
 1. Select **Review and finish**, then **Update** to apply the changes.
 
+## Copy the environment configuration
+
+You can copy the configuration of an existing environment when [creating a new one](create-environment.md). Select the source from the list of all available environments in your organization.
+
+:::image type="content" source="media/environment-settings-dialog.png" alt-text="Screenshot of the settings options in the environment settings.":::
+
+The following configuration settings are copied:
+
+- Data sources imported via Power Query
+- Data unification configuration
+- Segments
+- Measures
+- Relationships
+- Activities
+- Search & filter index
+- Exports
+- Refresh schedule
+- Enrichments
+- Prediction models
+- Role assignments
+
+### Set up a copied environment
+
+When you copy the environment configuration, a confirmation message displays when the copied environment has been created. Perform the following steps to confirm credentials.
+
+1. Select **Go to data sources** to see the list of data sources. All the data sources show **Credentials Required** status.
+
+   :::image type="content" source="media/data-sources-copied.png" alt-text="List of data sources that were copied and need authentication.":::
+
+1. Edit the data sources and enter the credentials to refresh them. Data sources from the Common Data Model folder and Dataverse must be created manually with the same name as in the source environment.
+
+1. After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer table.
+
+1. When the data unification is complete, go to **Insights** > **Measures** and **Insights** > **Segments** to refresh them.
+
+1. Go to **Settings** > **Connections** to reauthenticate the connections in your new environment.
+
+1. Go to **Data** > **Enrichment** and **Data** > **Exports** to reactivate them.
+
 ## Change the owner of an environment
 
 Several users can have admin permissions but only one user is the owner of an environment. By default, it's the admin who creates an environment initially. As an admin of an environment, you can assign ownership to another user with admin permissions.
