@@ -27,7 +27,6 @@ We currently support the following regions: UK, Europe, North America.
 
 - An active Office 365 cloud license. Content encrypted with [Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) isn't supported.
 - [Unified customer profiles](../customer-profiles.md) based on business accounts.
-- A [Microsoft Dataverse organization attached](../create-environment.md#step-3-connect-to-microsoft-dataverse) to your Customer Insights environment.
 - [Administrator](../permissions.md#admin) permissions in Customer Insights - Data.
 - Consent from your Office 365 tenant administrator to use Office 365 data to provide **Insights for the Organization** within Dynamics 365 applications.
 

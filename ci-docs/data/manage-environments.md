@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Administrators [create](create-environment.md) and manage environments. They can change some settings in existing environments. Business, type, region, storage option, and Dataverse settings are fixed after creating the environment. If you want to change these settings, [reset the environment](#reset-an-existing-environment-preview) or [create a new environment](create-environment.md).
+Administrators [create](create-environment.md) and manage environments. They can change some settings in existing environments. Region, storage option, and Dataverse settings are fixed after creating the environment. If you want to change these settings, [reset the environment](#reset-an-existing-environment-preview) or [create a new environment](create-environment.md).
 
 ## Edit an existing environment
 
@@ -110,9 +110,29 @@ As the owner of an environment, reset an environment to an empty state if you wa
 
 1. To confirm, enter the environment name and select **Reset**.
 
-## Remove an existing connection to a Dataverse environment
+## Delete an existing environment
 
-When connecting to a Dataverse environment, the error message **This CDS organization is already attached to another Customer Insights instance** means that the Dataverse environment is already used in a Customer Insights - Data environment. You can remove the existing connection as a global administrator on the Dataverse environment. It can take a couple of hours to populate the changes.
+As the owner of an environment, you can delete it. We recommend to [use the **Uninstall** option in the consolidated Customer Insights provisioning experience](tbd.md) to decommission a Customer Insights - Data environment.
+
+> [!IMPORTANT]
+> Deleting a Customer Insights - Data environment does not remove the Customer Insights dependencies from the Dataverse environment. If you plan to use same Dataverse environment to install Customer Insights - Data in the future, you must [remove all dependencies to the Dataverse environment](#remove-customer-insights-dependencies-from-a-dataverse-environment).
+
+1. Select the **Environment** picker in the header of the app.
+
+1. Select the environment you want to delete and select the vertical ellipsis (&vellip;).
+
+1. Choose **Delete**.
+
+   :::image type="content" source="media/delete-environment.png" alt-text="Control to delete the environment.":::
+
+1. To confirm the deletion, enter the environment name and select **Delete**.
+
+## Remove Customer Insights dependencies from a Dataverse environment
+
+Deleting a Customer Insights - Data environment does not remove dependencies from the Dataverse environment. Before you can reinstall Customer Insights - Data on a Dataverse environment, all dependencies must be removed.
+
+> [!NOTE]
+> You must be a global administrator on the Dataverse environment. It can take a couple of hours for the dependencies removal to take effect.
 
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select the environment from the environment picker.
@@ -134,23 +154,6 @@ When connecting to a Dataverse environment, the error message **This CDS organiz
    - Dynamics 365 Customer Insights Customer Card (*CustomerInsightsCustomerCard*)
    - Dynamics 365 Customer Insights Prod First Party App User Management (*msdyn_CustomerInsightsAppUserManagementProd*)
 
-If the removal of the connection fails due to dependencies, you need to remove the dependencies too. For more information, see [Removing dependencies](/power-platform/alm/removing-dependencies).
-
-## Delete an existing environment
-
-As the owner of an environment, you can delete it.
-
-> [!IMPORTANT]
-> Deleting an environment does not remove the connection to a Dataverse environment. If you plan to connect the same Dataverse environment to a new Customer Insights - Data environment in the future, you must [remove that connection to the Dataverse environment](#remove-an-existing-connection-to-a-dataverse-environment).
-
-1. Select the **Environment** picker in the header of the app.
-
-1. Select the environment you want to delete and select the vertical ellipsis (&vellip;).
-
-1. Choose **Delete**.
-
-   :::image type="content" source="media/delete-environment.png" alt-text="Control to delete the environment.":::
-
-1. To confirm the deletion, enter the environment name and select **Delete**.
+If the removal of the connection fails due to other dependencies, you need to remove these dependencies too. For more information, see [Removing dependencies](/power-platform/alm/removing-dependencies).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
