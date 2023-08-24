@@ -45,5 +45,5 @@ After configuring the Private Links between Customer Insights and your virtual n
 
 It's important to approve all four private links for each storage.
 
-After recreating the private links, all jobs should continue to run normally. At the due date, we'll perform the migration of the instances on the new compute infrastructure.
+After recreating the private links, all jobs should continue to run normally. At the due date, we'll perform the migration of the environments on the new compute infrastructure.
 

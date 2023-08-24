@@ -21,7 +21,7 @@ Use your customer data to create marketing lists, follow up workflows, and send 
 Contact records must be present in Dynamics 365 Sales before you can export a segment from Customer Insights - Data to Sales. Read more on how to ingest contacts from [Dynamics 365 Sales using Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
    > [!NOTE]
-   > Exporting segments from Customer Insights - Data to Sales will not create new contact records in the Sales instances. The contact records from Sales must be ingested in Customer Insights - Data and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.
+   > Exporting segments from Customer Insights - Data to Sales will not create new contact records in the Sales environments. The contact records from Sales must be ingested in Customer Insights - Data and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.
 
 ## Known limitations
 

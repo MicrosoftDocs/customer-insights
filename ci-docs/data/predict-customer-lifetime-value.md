@@ -4,8 +4,8 @@ description: "Predict revenue potential for active customers in the future."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: m-hartmann
-ms.author: wameng
+author: joytaylor
+ms.author: joytaylor
 ---
 
 # Predict customer lifetime value (CLV)
@@ -28,7 +28,7 @@ Determine what CLV means for your business. We support transaction-based CLV pre
 ## Prerequisites
 
 - At least [Contributor](permissions.md) permissions
-- At least 100 unique customers, preferably more than 10,000 customers
+- At least 1,000 customer profiles within the desired prediction window
 - Customer Identifier, a unique identifier to match transactions to an individual customer
 - At least one year of transaction history, preferably two to three years. Ideally, at least two to three transactions per customer ID, preferably across multiple dates. Transaction history must include:
   - **Transaction ID**: Unique identifier of each transaction

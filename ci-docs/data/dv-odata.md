@@ -33,7 +33,7 @@ Dataverse APIs have the following advantages:
 
 ## Sample queries
 
-To get started using Dataverse APIs, [create an application registration in Azure and request permissions for Dataverse](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory) and [grant your Azure Active Directory app Viewer permissions](permissions.md) on Customer Insights - Data.
+To get started using Dataverse APIs, [create an application registration in Azure and request permissions for Dataverse](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory) and [grant your app Viewer permissions](permissions.md) on Customer Insights - Data.
 
 Modify the query samples to make them work on the target environments:
 

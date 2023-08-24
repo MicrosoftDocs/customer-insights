@@ -50,7 +50,7 @@
          href: connect-power-query.md
     - name: Manage existing data sources
       href: data-sources-manage.md
-    - name: Connect to an Azure Data Lake Storage account by using an Azure service principal
+    - name: Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal
       href: connect-service-principal.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md

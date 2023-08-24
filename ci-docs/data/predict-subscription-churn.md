@@ -4,8 +4,8 @@ description: "Predict whether a customer is at risk for no longer using your com
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: zacookmsft
-ms.author: zacook
+author: joytaylor
+ms.author: joytaylor
 ---
 
 # Predict subscription churn
@@ -24,7 +24,7 @@ You must have business knowledge to understand what churn means for your busines
 ## Prerequisites
 
 - At least [Contributor permissions](permissions.md).
-- At least 10 customer profiles, preferably more than 1,000 unique customers.
+- At least 1,000 customer profiles within the desired prediction window.
 - Customer Identifier, a unique identifier to match subscriptions to your customers.
 - Subscription data for at least double the selected time window. Preferably, two to three years of subscription data. Subscription history must include:
   - **Subscription ID:** Unique identifier of a subscription.
