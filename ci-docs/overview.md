@@ -16,9 +16,9 @@ Dynamics 365 Customer Insights helps your organization deliver exceptional custo
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW17thC]
 
-The combined customer data platform and real-time journey orchestration empowers your teams to uncover new insights and deliver personalized customer experiences. Say goodbye to fragmented data and time consuming manual content creation. Boost your creativity with recommended content ideas from Copilot in Customer Insights. Break down barriers for your teams with access to data and target segments.
+The combined customer data platform and real-time journey orchestration empower your teams to uncover new insights and deliver personalized customer experiences. Say goodbye to fragmented data and time consuming manual content creation. Boost your creativity with recommended content ideas from Copilot in Customer Insights. Break down barriers for your teams with access to data and target segments.
 
-Data analysts can unify transactional, demographic, and behavioral data to get a holistic view of your customers. Enrich your customer data to find out more about your customers interests, product usage, or to layer on market data. Copilot in Customer Insights lets them use natural language to explore, analyze, and understand customer data and discover new insights.
+Data analysts can unify transactional, demographic, and behavioral data to get a holistic view of your customers. Enrich your customer data to find out more about your customers' interests, product usage, or to layer on market data. Copilot in Customer Insights lets them use natural language to explore, analyze, and understand customer data and discover new insights.
 
 Marketers can describe their desired outcomes in their own words and let Copilot seamlessly create new customer segments and journeys. They can also simplify content creation with text and image recommendations that can be tailored to suit your brand and audience.
 
@@ -34,7 +34,7 @@ Customer service agents can prioritize and personalize the service level to prov
 
 ## Pricing and licensing
 
-Customer Insights is licensed per tenant. You can purchase additional capacity to meet your needs.
+Customer Insights is licensed per tenant. You can purchase more capacity to meet your needs.
 
 - [Pricing overview](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 - Capacity and entitlements: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
