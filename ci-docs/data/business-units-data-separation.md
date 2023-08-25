@@ -90,7 +90,6 @@ Segments and measures belong to the business unit of the user that created them.
 
 ## Next steps
 
-- [Work with data in Microsoft Dataverse](customer-insights-dataverse.md)
 - [Business unit integration with Dynamics 365 applications and Power Platform (preview)](business-unit-integration-dynamics365-power-platform.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

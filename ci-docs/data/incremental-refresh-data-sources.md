@@ -1,6 +1,6 @@
 ---
-title: "Incremental refresh for Power Query and Azure Data Lake data sources"
-description: "Refresh new and updated data for large data sources based on Power Query or Azure data lake data sources."
+title: "Incremental refresh for Power Query and Data Lake Storage data sources"
+description: "Refresh new and updated data for large data sources based on Power Query or Azure Data Lake Storage data sources."
 ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
@@ -9,11 +9,11 @@ ms.author: mukeshpo
 ms.custom: bap-template
 ---
 
-# Incremental refresh for Power Query and Azure Data Lake data sources
+# Incremental refresh for Power Query and Data Lake Storage data sources
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Incremental refresh for data sources based on Power Query (preview) or Azure Data Lake provides the following advantages:
+Incremental refresh for data sources based on Power Query (preview) or Azure Data Lake Storage Gen2 provides the following advantages:
 
 - **Faster refreshes** - Only data that has changed gets refreshed. For example, you might refresh only the past five days of a historical dataset.
 - **Increased reliability** - With smaller refreshes, you don't need to maintain connections to volatile source systems for as long, reducing the risk of connection issues.
@@ -51,7 +51,7 @@ Dynamics 365 Customer Insights - Data allows incremental refresh for data source
 
 1. Select **Save** to complete the creation of the data source. The initial data refresh will be a full refresh. Afterwards, the incremental data refresh happens as configured in the previous step.
 
-## Configure incremental refresh for Azure Data Lake data sources
+## Configure incremental refresh for Azure Data Lake Storage data sources
 
 Customer Insights - Data allows incremental refresh for data sources connected to Azure Data Lake Storage. To use incremental ingestion and refresh for a table, configure that table when adding the Azure Data Lake data source or later when editing the data source. The table data folder must contain the following folders:
 
@@ -89,7 +89,7 @@ If there are two records for a primary key, an upsert and delete, Customer Insig
 
 ## Run a one-time full refresh for Azure Data Lake data sources
 
-After [configuring an incremental refresh for Azure Data Lake data sources](#configure-incremental-refresh-for-azure-data-lake-data-sources), there are times when data needs to be processed with a full refresh. The full data folder set up for the incremental refresh must contain the location of the full data.
+After [configuring an incremental refresh for Azure Data Lake data sources](#configure-the-incremental-refresh-for-azure-data-lake-data-sources), there are times when data needs to be processed with a full refresh. The full data folder set up for the incremental refresh must contain the location of the full data.
 
 1. When editing the data source, navigate to the **Select tables** pane and edit the table you want to refresh.
 

@@ -85,7 +85,7 @@ It can take up to 15 minutes to propagate the changes.
 
 ## Enter the Azure resource ID or the Azure subscription details in the storage account attachment to Customer Insights -Data
 
-Attach a Data Lake Storage account in Customer Insights - Data to [store output data](manage-environments.md) or [use it as a data source](connect-dataverse-managed-lake.md). Choose between a [resource-based](#resource-based-storage-account-connection) or a [subscription-based](#subscription-based-storage-account-connection) approach and follow those steps.
+Attach a Data Lake Storage account in Customer Insights - Data to [store output data](manage-environments.md) or [use it as a data source](connect-dataverse.md). Choose between a [resource-based](#resource-based-storage-account-connection) or a [subscription-based](#subscription-based-storage-account-connection) approach and follow those steps.
 
 ### Resource-based storage account connection
 
