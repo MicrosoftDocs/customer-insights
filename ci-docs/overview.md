@@ -14,6 +14,8 @@ ms.topic: overview
 
 Dynamics 365 Customer Insights helps your organization deliver exceptional customer experiences. It lays the foundation to create truly personalized, responsive, and connected customer journeys across sales, marketing, and service teams.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW17thC]
+
 The combined customer data platform and real-time journey orchestration empowers your teams to uncover new insights and deliver personalized customer experiences. Say goodbye to fragmented data and time consuming manual content creation. Boost your creativity with recommended content ideas from Copilot in Customer Insights. Break down barriers for your teams with access to data and target segments.
 
 Data analysts can unify transactional, demographic, and behavioral data to get a holistic view of your customers. Enrich your customer data to find out more about your customers interests, product usage, or to layer on market data. Copilot in Customer Insights lets them use natural language to explore, analyze, and understand customer data and discover new insights.
@@ -24,7 +26,7 @@ Sellers receive a seamless handoff from their marketing team with a unified time
 
 Customer service agents can prioritize and personalize the service level to provide the best support experience with visibility into a predicted customer lifetime value.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW17thC]
+## Product documentation
 
 [Dynamics 365 Customer Insights - Data](data/overview.md) is Microsoft's customer data platform (CDP) that helps deliver personalized customer experiences.
 
