@@ -24,7 +24,7 @@ Use the environments creation experience in Customer Insights - Data for the fol
 
 - Use your [own Azure Data Lake Storage Account](own-data-lake-storage.md) AND [Azure Private Link](private-link.md)
 - [Enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) between your own Data Lake Storage Account and Microsoft Dataverse
-- [Create a copy of an existing environment configuration](manage-enviornments.md#copy-the-environment-configuration)
+- [Create a copy of an existing environment configuration](manage-environments.md#copy-the-environment-configuration)
 
 ## Prerequisites
 

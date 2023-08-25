@@ -94,7 +94,7 @@ Set up PowerShell to execute PowerShell scripts.
 
 1. Copy the output string that looks like: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
 
-1. Enter the copied output string into the **Permissions identifier** field of the [environment configuration step for Microsoft Dataverse](create-environment.md#step-3-connect-to-microsoft-dataverse).
+1. Enter the copied output string into the **Permissions identifier** field during [environment configuration  for Microsoft Dataverse](create-environment.md#step-3-choose-dataverse-environment).
 
    :::image type="content" source="media/dataverse-enable-datasharing-BYODL.png" alt-text="Configuration options to enable data sharing from your own Azure Data Lake Storage with Microsoft Dataverse.":::
 
