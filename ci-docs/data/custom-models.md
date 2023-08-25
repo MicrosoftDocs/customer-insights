@@ -67,8 +67,6 @@ Data is transferred between your Customer Insights - Data environment and the se
    - **Output Path**: Select the output path that's linked to your pipeline.
    - **Output Datastore**: Select the output datastore that's linked to your pipeline.
 
-   :::image type="content" source="media/custom-model-AML.png" alt-text="Screenshot of the Custom model Azure Machine Learning connection input pane.":::<!-- EDITOR'S NOTE: Please crop this screenshot IAW our new screenshot guidelines, https://review.learn.microsoft.com/en-us/bacx/screenshots-for-bap?branch=main. -->
-
 1. Select **Get started**.
 
 1. In the **Model name** step, enter or select the following information:

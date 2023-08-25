@@ -2,7 +2,6 @@
 title: Custom models FAQ
 description: Learn answers to frequently asked questions about using custom machine learning models in Dynamics 365 Customer Insights - Data.
 ms.date: 09/01/2023
-ms.reviewer: v-wendysmith
 ms.topic: faq
 author: radsay01
 ms.author: rsayyaparaju
@@ -16,7 +15,7 @@ ms.custom: bap-template
 
 ## Why can't I see my pipeline when I'm setting up a custom model workflow?
 
-If you can't see a pipeline when you set up a workflow with a custom machine learning model, the cause is often an issue with the pipeline's configuration. Make sure the [input parameter](azure-machine-learning-experiments.md#dataset-configuration) and the [output datastore and path parameters](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) are configured.
+If you can't see a pipeline when you set up a workflow with a custom machine learning model, the cause is often an issue with the pipeline's configuration. Make sure the [input parameter](azure-machine-learning-experiments.md#dataset-configuration) and the [output datastore and path parameters](azure-machine-learning-experiments.md) are configured.
 
 ## What does the error "Couldn't save intelligence workflow" mean?
 
