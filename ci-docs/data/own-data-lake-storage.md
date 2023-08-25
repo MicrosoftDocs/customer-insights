@@ -4,9 +4,10 @@ author: mukeshpo
 description: Learn about the requirements to use your own Azure Data Lake Storage account in Customer Insights - Data.
 ms.author: mukeshpo
 ms.date: 09/01/2023
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: get-started
 ms.reviewer: mhart
+ms.custom: bap-template
 ---
 
 # Use your own Azure Data Lake Storage Gen2 account
@@ -43,7 +44,7 @@ If you create multiple environments and choose to save the output tables from th
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Dynamics 365 Customer Insights - Data can write output tables to [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). You can enable data sharing to make output tables available in your Dataverse environment. Dataverse tables enable custom development with a low code approach. The user who sets up the Customer Insights - Data environment needs at least **Storage Blob Data Reader** permissions on the `customerinsights` container in the storage account.
+Dynamics 365 Customer Insights - Data writes output data like unified profiles and segments to your Azure Data Lake Storage. You can enable data sharing to make output data in your Azure Data Lake Storage available to your [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro) environment. The user who sets up the Customer Insights - Data environment needs at least **Storage Blob Data Reader** permissions on the `customerinsights` container in the storage account.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 

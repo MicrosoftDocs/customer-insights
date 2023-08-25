@@ -4,8 +4,8 @@ description: Learn how to to manage environments as an admin.
 ms.date: 09/01/2023
 ms.topic: how-to
 ms.reviewer: mhart
-author: mukeshpo
-ms.author: mukeshpo
+author: kishorem-ms
+ms.author: kishorem
 ms.custom: bap-template
 ---
 
@@ -60,7 +60,7 @@ When you copy the environment configuration, a confirmation message displays whe
 
 1. Edit the data sources and enter the credentials to refresh them. Data sources from the Common Data Model folder and Dataverse must be created manually with the same name as in the source environment.
 
-1. After refreshing the data sources, go to **Data** > **Unify**. Here you'll find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer table.
+1. After refreshing the data sources, go to **Data** > **Unify**. Here you find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer table.
 
 1. When the data unification is complete, go to **Insights** > **Measures** and **Insights** > **Segments** to refresh them.
 
@@ -84,11 +84,11 @@ Several users can have admin permissions but only one user is the owner of an en
 
 ## Claim ownership of an environment
 
-If the user account of the owner is deleted or suspended, the environment won't have an owner. Any admin user can claim the ownership and become the new owner. The owner admin can continue to own the environment or [change the ownership to another admin](#change-the-owner-of-an-environment).
+If the user account of the owner is deleted or suspended, the environment has no owner. Any admin user can claim the ownership and become the new owner. The owner admin can continue to own the environment or [change the ownership to another admin](#change-the-owner-of-an-environment).
 
 To claim ownership, select the **Take ownership** button that shows at the top of every page in Dynamics 365 Customer Insights - Data when the original owner left the organization.
 
-We recommend to have at least one other user with admin permissions in addition to the owner to enable smooth ownership transfer if the owner leaves the organization.
+We recommend having at least one other user with admin permissions in addition to the owner to enable smooth ownership transfer if the owner leaves the organization.
 
 ## Reset an existing environment (preview)
 
@@ -115,7 +115,7 @@ As the owner of an environment, reset an environment to an empty state if you wa
 As the owner of an environment, you can delete it. We recommend to [use the **Uninstall** option in the consolidated Customer Insights provisioning experience](tbd.md) to decommission a Customer Insights - Data environment.
 
 > [!IMPORTANT]
-> Deleting a Customer Insights - Data environment does not remove the Customer Insights dependencies from the Dataverse environment. If you plan to use same Dataverse environment to install Customer Insights - Data in the future, you must [remove all dependencies to the Dataverse environment](#remove-customer-insights-dependencies-from-a-dataverse-environment).
+> Deleting a Customer Insights - Data environment does not remove the Customer Insights dependencies from the Dataverse environment. If you plan to use same Dataverse environment to install Customer Insights - Data in the future, you must [remove all dependencies to the Dataverse environment](#remove-customer-insights---data-dependencies-from-a-dataverse-environment).
 
 1. Select the **Environment** picker in the header of the app.
 
@@ -127,9 +127,9 @@ As the owner of an environment, you can delete it. We recommend to [use the **Un
 
 1. To confirm the deletion, enter the environment name and select **Delete**.
 
-## Remove Customer Insights dependencies from a Dataverse environment
+## Remove Customer Insights - Data dependencies from a Dataverse environment
 
-Deleting a Customer Insights - Data environment does not remove dependencies from the Dataverse environment. Before you can reinstall Customer Insights - Data on a Dataverse environment, all dependencies must be removed.
+Deleting a Customer Insights - Data environment doesn't remove dependencies from the Dataverse environment. Before you can reinstall Customer Insights - Data on a Dataverse environment, all dependencies must be removed.
 
 > [!NOTE]
 > You must be a global administrator on the Dataverse environment. It can take a couple of hours for the dependencies removal to take effect.
@@ -155,5 +155,11 @@ Deleting a Customer Insights - Data environment does not remove dependencies fro
    - Dynamics 365 Customer Insights Prod First Party App User Management (*msdyn_CustomerInsightsAppUserManagementProd*)
 
 If the removal of the connection fails due to other dependencies, you need to remove these dependencies too. For more information, see [Removing dependencies](/power-platform/alm/removing-dependencies).
+
+## Next steps
+
+- [Create a new environment](create-environment.md)
+- [Data sources overview](data-sources.md)
+- [Data unification overview](data-unification.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-After [purchasing a subscription license for Dynamics 365 Customer Insights](paid-license.md), the global administrator of the Microsoft 365 tenant receives an email that invites them to create the environment.
+After [your organization purchased a license for Dynamics 365 Customer Insights](paid-license.md), the global administrator of the Microsoft 365 tenant receives an email that invites them to create an environment.
 
 After the first environment is created, the global administrator of the Microsoft 365 tenant can [add users from their organization as administrators](permissions.md). These administrators can then manage users and environments.
 
@@ -33,14 +33,14 @@ Use the environments creation experience in Customer Insights - Data for the fol
 To install Customer Insights - Data on an existing Dataverse environment:
 
 - A global administrator role is set up in the Dataverse environment.
-- Verify if the Dataverse environment is associated to certain security groups and make sure you are added to those security groups.
+- Verify if the Dataverse environment is associated to certain security groups and make sure you're added to those security groups.
 - A Dataverse license is assigned to you to get Read-Write access mode. Unlicensed administrators get Administrative access mode only.
-- Customer Insights - Data is not already installed. [Learn how to delete an existing environment](manage-environments.md#delete-an-existing-environment).
+- Customer Insights - Data isn't already installed. [Learn how to delete an existing environment](manage-environments.md#delete-an-existing-environment).
 
 To create a new Dataverse environment when installing Customer Insights - Data:
 
 - You have the [required license and role in Power Platform](/power-platform/admin/create-environment#who-can-create-environments).
-- Your Power Platform admin has not [disabled the creation of Dataverse environments](/power-platform/admin/control-environment-creation) for everyone except admins.
+- Your Power Platform admin hasn't [disabled the creation of Dataverse environments](/power-platform/admin/control-environment-creation) for everyone except admins.
 
 ## Create an environment in Customer Insights - Data
 
@@ -54,7 +54,7 @@ We recommend to [use the consolidated environment manager for Customer Insights]
 
 ### Step 1: Provide basic information
 
-1. Choose whether you want to create an environment from scratch or copy data from another environment. [Copying data from another environment](manage-environments.md#copy-the-environment-configuration) requires additional steps.
+1. Choose whether you want to create an environment from scratch or copy data from another environment. [Copying data from another environment](manage-environments.md#copy-the-environment-configuration) requires extra steps.
 
 1. Provide the following details:
 
