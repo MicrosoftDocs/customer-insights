@@ -10,7 +10,7 @@ ms.topic: overview
 
 # Product overview for Dynamics 365 Customer Insights
 
-[!INCLUDE [consolidated-sku](date/includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](data/includes/consolidated-sku.md)]
 
 Dynamics 365 Customer Insights helps your organization deliver exceptional customer experiences. It lays the foundation to create truly personalized, responsive, and connected customer journeys across sales, marketing, and service teams.
 
@@ -42,4 +42,4 @@ Customer Insights is licensed per tenant. You can purchase additional capacity t
 
 Start a [free Customer Insights trial](https://dynamics.microsoft.com/ai/customer-insights/) today. Find out how you can quickly access and explore many of the application’s key features in [Customer Insights - Data](data/trial-signup.md) and [Customer Insights - Journeys](journeys/trial-signup.md).
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](data/includes/footer-banner.md)]
