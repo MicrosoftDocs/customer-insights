@@ -36,4 +36,70 @@ highlightedContent:
 
     - title: Customer Insights - Data
       itemType: quickstart
-      url: data/index.yml     
+      url: data/index.yml
+
+additionalContent: 
+  sections:
+  - title: Get started with Customer Insights - Data
+    items:
+    - title: Set up
+      links:
+      - url: create-environment.md
+        text: Create a new environment
+      - url: permissions.md
+        text: Assign users
+      - url: home.md
+        text: Explore the user interface
+    - title: Add and unify data
+      links:
+      - url: data-sources.md
+        text: Data sources overview
+      - url: data-unification.md
+        text: Data unification overview
+      - url: customer-profiles.md
+        text: Review unified profiles
+    - title: Get and activate insights
+      links:
+      - url: segments.md
+        text: Create segments
+      - url: measures.md
+        text: Create measures
+      - url: export-destinations.md
+        text: Exports overview
+  - title: Get started with Customer Insights - Journeys
+    items:
+      - title: Email marketing and automation
+        links:
+        - url: real-time-marketing-email.md
+          text: Email marketing overview
+        - url: content-ideas.md
+          text: Use AI to create email content        
+        - url: real-time-marketing-email-get-started.md
+          text: Send a targeted email blast
+      - title: Real-time journeys
+        links:
+        - url: real-time-marketing-trigger-based-journey.md
+          text: Trigger-based journeys
+        - url: real-time-marketing-natural-language.md
+          text: Use AI to create segments
+        - url: real-time-marketing-build-segments.md
+          text: Segment-based journeys
+      - title: Event planning
+        links:
+        - url: event-management.md
+          text: Event planning overview
+        - url: set-up-event.md
+          text: Event setup
+        - url: event-management-dashboard.md
+          text: Manage events
+  - title: Related products
+    items:
+        - title: Dynamics 365 Sales
+          summary: Build strong relationships with your customers, take actions based on insights, and close deals faster.
+          url: /dynamics365/sales
+        - title: Microsoft Dataverse
+          summary: Securely store and manage data that's used by business applications
+          url: /power-apps/maker/data-platform
+        - title: Azure Synapse Analytics
+          summary: Azure Synapse is a limitless analytics service that brings together enterprise data warehousing and Big Data analytics.
+          url: /azure/synapse-analytics/
