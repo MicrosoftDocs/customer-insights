@@ -1842,8 +1842,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "https://learn.microsoft.com/en-us/dynamics365/customer-insights/enrichment-leadspace.md",
-      "redirect_url": "https://learn.microsoft.com/en-us/dynamics365/customer-insights/data/b2b/enrichment-leadspace",
+      "source_path": "ci-docs/enrichment-leadspace.md",
+      "redirect_url": "/dynamics365/customer-insights/data/b2b/enrichment-leadspace",
       "redirect_document_id": false
     },
     {
