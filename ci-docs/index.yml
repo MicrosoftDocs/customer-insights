@@ -28,11 +28,11 @@ highlightedContent:
 
     - title: Customer Insights FAQ
       itemType: concept
-      url: journeys/ci-faq.md
+      url: /dynamics365/marketing/ci-faq.md
 
     - title: Customer Insights - Journeys
       itemType: quickstart
-      url: journeys/index.yml
+      url: /dynamics365/marketing/
 
     - title: Customer Insights - Data
       itemType: quickstart
