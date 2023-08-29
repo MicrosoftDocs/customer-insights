@@ -4,8 +4,8 @@ description: Use this sample guide to try out the out of box transactional churn
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
+author: joytaylor
+ms.author: joytaylor
 ---
 
 # Transactional churn prediction sample guide

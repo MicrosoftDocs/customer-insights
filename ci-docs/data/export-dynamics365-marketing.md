@@ -20,7 +20,7 @@ Dynamics 365 Customer Insights - Data recommends using the capabilities of Custo
 
 ## Prerequisite
 
-Contact records must be present in Customer Insights - Journeys before you can export a segment from Customer Insights - Data to Customer Insights - Journeys. Read more on how to ingest contacts in [Customer Insights - Journeys using Microsoft Dataverse](connect-dataverse-managed-lake.md).
+Contact records must be present in Customer Insights - Journeys before you can export a segment from Customer Insights - Data to Customer Insights - Journeys. Read more on how to ingest contacts in [Customer Insights - Journeys using Microsoft Dataverse](connect-dataverse.md).
 
 > [!NOTE]
 > Exporting segments from Customer Insights - Data to Customer Insights - Journeys will not create new contact records. The contact records must be ingested in Customer Insights - Data and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.

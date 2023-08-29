@@ -4,8 +4,8 @@ description: "Learn about permissions and user roles."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
-author: NimrodMagen
-ms.author: nimagen
+author: pkieffer
+ms.author: philk
 ---
 
 # Assign user permissions
@@ -74,7 +74,7 @@ Access to Dynamics 365 Customer Insights - Data is restricted to users in your o
 
 1. Select **Add users** to open the **Add/Edit permissions** pane.
 
-1. Use the **Search** field to find the Azure Active Directory user or group you want to add. Select a **Role** to assign to that user or group.
+1. Use the **Search** field to find the user or group you want to add. Select a **Role** to assign to that user or group.
 
 1. Select **Save**. The current environment is automatically shared with the user or members of the group. Users can access the app and work according to their specified role.
 
@@ -90,5 +90,7 @@ Select a user to view available actions.
 
 - **Edit** to edit the user's role in Customer Insights - Data. Select **Save** to confirm the change.
 - **Remove** to revoke the user's access. Select **Delete** to confirm the deletion.
+
+It can take up to 15 minutes to fully propagate the changes to permissions. To see changes reflected in the user interface, users should refresh the browser window that runs the application.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -13,6 +13,10 @@
       - name: Customer Insights - Data
         tocHref: /dynamics365/customer-insights/data/
         topicHref: /dynamics365/customer-insights/data/
+        items:
+        - name: B2B
+          tocHref: /dynamics365/customer-insights/data/b2b/
+          topicHref: /dynamics365/customer-insights/data/b2b/
       - name: Customer Insights - Journeys
         tocHref: /dynamics365/customer-insights/journeys/
         topicHref: /dynamics365/customer-insights/journeys/

@@ -29,6 +29,5 @@ To access any data from Customer Insights - Data in Dataverse, a user needs to h
 ## Next steps
 
 - [Business unit support and role-based access control (preview)](business-units-data-separation.md)
-- [Work with Customer Insights data in Microsoft Dataverse](customer-insights-dataverse.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

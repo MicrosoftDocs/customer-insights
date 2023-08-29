@@ -58,7 +58,7 @@ The System Status page in Customer Insights - Data is an indispensable tool for 
 
 A single view of all interactions enables a complete understanding of customer activity. With that context, sellers and representatives can create deeply personalized experiences for digital and nondigital channels. In Dynamics 365 Sales, Customer Service, and Customer Insights - Journeys, users can see all activities in the unified activity timeline.
 
-After a Dynamics 365 administrator enables the feature, sellers and representatives can view activities directly in the activity timeline. Dynamics 365 apps and Customer Insights - Data must share a Dataverse instance.
+After a Dynamics 365 administrator enables the feature, sellers and representatives can view activities directly in the activity timeline. Dynamics 365 apps and Customer Insights - Data must share a Dataverse environment.
 
 Activity data can appear within the same activity timeline already used today to add or view activities such as notes, posts, emails, and appointments. The unified activity timeline is available across *Accounts* and *Contacts*.
 
@@ -136,7 +136,7 @@ This FRE works with a single CSV file only. If you have multiple data files, or 
 Dynamics 365 Customer Insights - Data starts supporting application and environment lifecycle management capabilities for common enterprise-grade requirements. For example, you can copy, reset, or delete your Customer Insights - Data environments. Additionally, the system ensures your Customer Insights - Data environment and the associated Dataverse environment are always in sync.
 
 - [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/achieve-business-scenarios-application-lifetime-management)
-- [Documentation](create-environment.md#copy-the-environment-configuration)
+- [Documentation](manage-environments.md#copy-the-environment-configuration)
 
 <!--
 ## September 2022 updates
