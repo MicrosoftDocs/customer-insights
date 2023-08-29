@@ -1,16 +1,11 @@
 ---
 title: "Select source fields for data unification"
 description: "The first step in the unification process is selecting tables, attributes, primary keys, and semantic types to map data to the unified customer profile."
-recommendations: false
 ms.date: 05/08/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-searchScope: 
-  - ci-map
-  - ci-match
-  - customerInsights
 ---
 
 # Select source fields for data unification
@@ -25,14 +20,7 @@ The first step in unification is selecting the tables and fields within your dat
 
 1. Go to **Data** > **Unify**.
 
-   For individual customers (B-to-C), the **Unify** landing page displays showing **Get started** on the first step, **Source fields**.
-
    :::image type="content" source="media/m3_unify_land.png" alt-text="Screenshot of unify landing page for first run experience for individual customers.":::
-
-   > [!NOTE]
-   > For business accounts (B-to-B), the **Unify** landing page displays **Unify accounts** showing **Get started** on the first step, **Source fields**. The **Unify contacts** steps are optional and pending completion of account unification.
-   >
-   >:::image type="content" source="media/b2b_unify_land.png" alt-text="Screenshot of unify landing page for first run experience for business accounts.":::
 
 1. Select **Get started**.
 
@@ -61,13 +49,11 @@ For each table, perform the following steps.
 1. For each attribute, choose a semantic **Type** that best describes that attribute, such as name, city, or email address.
 
    > [!NOTE]
-   > In B-to-C, one field should map to the semantic type *Person.FullName* to populate the customer name in the customer card. In B-to-B, the account name should map to *Organization.Name*. Otherwise, the customer cards will appear nameless.
+   > One field should map to the semantic type *Person.FullName* to populate the customer name in the customer card.
 
    1. To override an attribute type identified by the system, select another option. If the type doesn't exist, create a custom semantic type by selecting the **Type** field for the attribute and entering your custom semantic type name.
 
-   1. To add an attribute that contains a URL to publicly available profile images or logos, select the table and field that contains the URL. In the **Type** field, enter the following:
-      - For a person: Person.ProfileImage
-      - For an organization: Organization.LogoImage
+   1. To add an attribute that contains a URL to publicly available profile images or logos, select the table and field that contains the URL. In the **Type** field, enter *Person.ProfileImage*.
 
 1. Review the attributes where a semantic type is automatically identified. These attributes are listed under **Review mapped fields**. Only attributes with the same type can be combined in the **Unify customer fields** step. Semantic types are used to automatically suggest insights. Ensure the types you chose are consistent across all the selected tables.
 

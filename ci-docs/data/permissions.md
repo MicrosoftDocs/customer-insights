@@ -1,18 +1,18 @@
 ---
 title: "Assign user permissions"
 description: "Learn about permissions and user roles."
-ms.date: 07/05/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
-author: NimrodMagen
-ms.author: nimagen
+author: pkieffer
+ms.author: philk
 ---
 
 # Assign user permissions
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Access to Customer Insights is restricted to users in your organization that are added to the application by an admin. An admin can add, edit, or remove users. A user can be a single user, group, or application. There are different types of roles a user can have:
+Access to Dynamics 365 Customer Insights - Data is restricted to users in your organization that are added to the application by an admin. An admin can add, edit, or remove users. A user can be a single user, group, or application. There are different types of roles a user can have:
 
 ## Viewer
 
@@ -22,9 +22,10 @@ Access to Customer Insights is restricted to users in your organization that are
 - Explore and export tables using the **Tables** page.
 - View the status of system processes using the **System** page.
 - View exports in the **Exports** page.
-- Install and use the **Power BI Customer Insights** dashboard.
 
 ## Marketing contributor (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 - The Marketing contributor role is only available in [business unit enabled environments](business-units-data-separation.md)
 - Can only access customer profiles that belong to the business unit of the user.
@@ -34,6 +35,8 @@ Access to Customer Insights is restricted to users in your organization that are
 > [!NOTE]
 > Marketing contributors can only create segments and measures from customer profiles, unified activities, segments, and customer measures. This permission has limited functionality in some areas compared to the Contributor role.
 > Marketing contributors can't search for customers in the *customers* view.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Contributor
 
@@ -57,7 +60,7 @@ Access to Customer Insights is restricted to users in your organization that are
 - Manage and create exports on the **Exports** page.
 - Install and use the **Customer Card Add-in**.
 - Add and use the **Power Apps connector**.
-- Enable usage of [Customer Insights APIs](apis.md).
+- Enable usage of [APIs](apis.md).
 - [Assign environment ownership](manage-environments.md#change-the-owner-of-an-environment) to another admin.
 
 ## Admin (owner)
@@ -71,9 +74,9 @@ Access to Customer Insights is restricted to users in your organization that are
 
 1. Select **Add users** to open the **Add/Edit permissions** pane.
 
-1. Use the **Search** field to find the Azure Active Directory user or group you want to add. Select a **Role** to assign to that user or group.
+1. Use the **Search** field to find the user or group you want to add. Select a **Role** to assign to that user or group.
 
-1. Select **Save**. The current environment is automatically shared with the user or members of the group. Users can access the Customer Insights app and work according to their specified role.
+1. Select **Save**. The current environment is automatically shared with the user or members of the group. Users can access the app and work according to their specified role.
 
 ## View current permissions
 
@@ -85,7 +88,9 @@ Go to **Settings** > **Permissions** and select the **Users** tab. You can sort 
 
 Select a user to view available actions.
 
-- **Edit** to edit the user's role in Customer Insights. Select **Save** to confirm the change.
-- **Remove** to remove the user from having access to Customer Insights. Select **Delete** to confirm the deletion.
+- **Edit** to edit the user's role in Customer Insights - Data. Select **Save** to confirm the change.
+- **Remove** to revoke the user's access. Select **Delete** to confirm the deletion.
+
+It can take up to 15 minutes to fully propagate the changes to permissions. To see changes reflected in the user interface, users should refresh the browser window that runs the application.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

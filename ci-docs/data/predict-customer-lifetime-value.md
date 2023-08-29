@@ -1,16 +1,11 @@
 ---
 title: Predict customer lifetime value (CLV)
 description: "Predict revenue potential for active customers in the future."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: m-hartmann
-ms.author: wameng
-searchScope: 
-  - ci-predictions
-  - ci-create-prediction
-  - ci-custom-models
-  - customerInsights
+author: joytaylor
+ms.author: joytaylor
 ---
 
 # Predict customer lifetime value (CLV)
@@ -33,7 +28,7 @@ Determine what CLV means for your business. We support transaction-based CLV pre
 ## Prerequisites
 
 - At least [Contributor](permissions.md) permissions
-- At least 100 unique customers, preferably more than 10,000 customers
+- At least 1,000 customer profiles within the desired prediction window
 - Customer Identifier, a unique identifier to match transactions to an individual customer
 - At least one year of transaction history, preferably two to three years. Ideally, at least two to three transactions per customer ID, preferably across multiple dates. Transaction history must include:
   - **Transaction ID**: Unique identifier of each transaction
@@ -144,7 +139,7 @@ With this information, they organize a local event for the launch of the espress
 
 ### Set update schedule
 
-1. Choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. Choose the frequency to retrain your model based on the latest data. This setting is important to update the accuracy of predictions as new data is ingested. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 
@@ -170,7 +165,7 @@ There are three primary sections of data within the results page.
   
   :::image type="content" source="media/clv-model-score.png" alt-text="Image of the model score information box with the grade A.":::
 
-  Customer Insights assesses how the AI model performed in predicting the high value customers as compared to a baseline model.
+  The system assesses how the AI model performed in predicting the high value customers as compared to a baseline model.
 
   Grades are determined based on the following rules:
   - **A** when the model accurately predicted at least 5% more high-value customers as compared to the baseline model.

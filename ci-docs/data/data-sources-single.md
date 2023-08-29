@@ -1,23 +1,19 @@
 ---
-title: "Get started with Customer Insights using a single data source"
+title: "Get started using a single data source"
 description: "Learn how to ingest data from a single file or from sample data"
-ms.date: 05/23/2023
+ms.date: 09/01/2023
 ms.topic: overview
 author: wmelewong
 ms.author: wameng
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
-searchScope: 
-  - ci-data-sources
-  - ci-create-data-source
-  - customerInsights
 ---
 
-# Get started with Customer Insights using a single data source
+# Get started using a single data source
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Dynamics 365 Customer Insights provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv file or choose sample data. Customer Insights uploads and unifies the data creating a customer profile, and then automatically generates insights on the data.
+Dynamics 365 Customer Insights - Data provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv file or choose sample data. Customer Insights - Data uploads and unifies the data to create a customer profile, and then automatically generates insights on the data.
 
 > [!NOTE]
 > [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
@@ -43,14 +39,14 @@ In a newly provisioned environment, the **Getting Started** page displays. If th
 
    :::image type="content" source="media/get-started-add-data.png" alt-text="Screenshot of Getting Started - Add Data to add your single CSV file.":::
 
-1. Select **Next**. Customer Insights identifies a unique key for your data source called the primary key.
+1. Select **Next**. The system identifies a unique key for your data source called the primary key.
 
-1. Select **Yes** to verify the primary key or choose another field as the primary key for your data source. Select **Next**. Customer Insights checks the data quality.
+1. Select **Yes** to verify the primary key or choose another field as the primary key for your data source. Select **Next**. The system checks the data quality.
 
    > [!TIP]
-   > If an error occurs during data processing, Customer Insights explains the issue in a message and provides an action to take. For example, if required attributes needed to generate insights are not identified, select [**Map data**](#map-required-data).
+   > If an error occurs during data processing, you get an explanation of the issue and suggested actions to take. For example, if required attributes needed to generate insights are not identified, select [**Map data**](#map-required-data).
 
-   After the data quality checks, Customer Insights removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
+   After the data quality checks, the system removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
 
 1. Upon a successful completion, the **Results** page displays results from your file:
    - Unique number of customers

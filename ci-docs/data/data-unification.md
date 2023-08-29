@@ -1,32 +1,25 @@
 ---
 title: "Data unification overview"
-description: "Go through the data unification process with your data to create a single master dataset of account or customer profiles."
-ms.date: 05/30/2023
+description: "Learn how to unify your data to create a single master dataset of customer profiles."
+ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.custom: bap-template
-
-searchScope: 
-  - ci-map
-  - customerInsights
 ---
 
 # Data unification overview
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of that data. 
+After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of your customers.
+
 Data can be unified on a single table or multiple tables. Tables were previously called entities.
-
-For **individual consumers (B-to-C)** where the data is centered around individuals, unification provides a unified view of your customers.
-
-For **business accounts (B-to-B)** where the data is centered around accounts, unification provides a unified view of your accounts. [Contact unification](data-unification-contacts.md) allows contacts for those accounts to be separately unified and associated with the accounts. Contact unification also allows contacts without an account to be included in the unified contact profile.
 
 ## Data unification process
 
-The unification process maps customer or account data from your data sources, removes duplicates, matches the data across tables, and creates a unified profile. Unification is performed in the following order:
+The unification process maps customer data from your data sources, removes duplicates, matches the data across tables, and creates a unified profile. Unification is performed in the following order:
 
 1. [Source fields](data-unification-map-tables.md) (previously called Map): In the source fields step, select tables and fields to include in the unify process. Map fields to a common semantic type that describes the purpose of the field.
 
@@ -37,9 +30,6 @@ The unification process maps customer or account data from your data sources, re
 1. [Unified customer fields](data-unification-merge-tables.md) (previously called Merge): In the unified customer fields step, determine which source fields should be included, excluded, or merged into a unified customer profile.  
 
 1. [Review](data-unification-review.md) and create the unified profile.
-
-> [!NOTE]
-> In B-to-B, after unifying accounts you can optionally [unify contacts](data-unification-contacts.md) for those accounts and link the unified contacts to the unified accounts.
 
 ## Next steps
 

@@ -1,21 +1,22 @@
 ---
 title: "Connections (preview) overview"
-description: "Connections to other services from Customer Insights."
-ms.date: 03/20/2023
+description: "Connections to other services from Customer Insights - Data."
+ms.date: 09/01/2023
 ms.reviewer: nikeller
 ms.topic: overview
 author: m-hartmann
 ms.author: mhart
-searchScope: 
-  - ci-connections
-  - customerInsights
 ---
 
 # Connections (preview) overview
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Connections are the key to enable data sharing to and from Customer Insights. Each connection establishes data sharing with a specific service. Use connections to [configure third-party enrichments](enrichment-hub.md) and [configure exports](export-manage.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Marketing works for multiple exports and one Leadspace connection can be used for several enrichments.
+Connections are the key to enable data sharing to and from Dynamics 365 Customer Insights - Data. Each connection establishes data sharing with a specific service. Use connections to [configure third-party enrichments](enrichment-hub.md) and [configure exports](export-manage.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Customer Insights - Journeys works for multiple exports and one Leadspace connection can be used for several enrichments.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Export connections
 
@@ -48,9 +49,9 @@ Only administrators can configure new connections, but the created connections a
 
 ### Data privacy and compliance
 
-When you enable Dynamics 365 Customer Insights to transmit data to third parties or other Microsoft products, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that the third party meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
+When you enable Customer Insights - Data to transmit data to third parties or other Microsoft products, you allow transfer of data outside of the compliance boundary for Customer Insights, including potentially sensitive data such as Personal Data. Microsoft will transfer such data at your instruction, but you are responsible for ensuring that the third party meets any privacy or security obligations you may have. For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).
 
-Your Dynamics 365 Customer Insights administrator can remove the connection at any time to discontinue use of the functionality.
+An administrator can remove the connection at any time to discontinue use of the functionality.
 
 ## Allow contributors to use a connection for exports
 
@@ -95,6 +96,6 @@ If the connection you're removing is used by enrichments or exports, first detac
 
 ## Set up connections with secrets managed by your own Key Vault
 
-Some connections need secrets like API keys or passwords. Some connections support secrets stored in your own Key Vault. Learn more about supported connections and how to set up on [your own Key Vault for Customer Insights](use-azure-key-vault.md).
+Some connections need secrets like API keys or passwords. Some connections support secrets stored in your own Key Vault. Learn more about supported connections and how to set up on [your own Key Vault](use-azure-key-vault.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

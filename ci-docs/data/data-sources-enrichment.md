@@ -1,7 +1,7 @@
 ---
 title: "Enrichment for data sources (preview)"
 description: "Enrich data sources before going through the data unification process."
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
@@ -11,9 +11,13 @@ ms.custom: bap-template
 
 # Enrichment for data sources (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Use data from sources like Microsoft and other partners to enrich your customer data before data unification. Data source enrichments help produce higher data completeness and quality that can help achieve better results once you unify your data. For example, using a normalized and standardized format for addresses increases the quality of the match results. For a list of supported enrichments, see [supported data source enrichment options](#supported-data-source-enrichments).
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Enrich a data source
 
@@ -38,7 +42,6 @@ You must have Contributor or Administrator [permissions](permissions.md) to crea
 The following enrichments are currently available for data sources. Review the detailed steps for the enrichment to learn how to configure it.
 
 - [Enhanced addresses](enrichment-enhanced-addresses.md)
-- [Enhanced company data](enrichment-enhanced-company-data.md)
 - [Identity data from LiveRamp](enrichment-liveramp.md)
 
 ## Manage existing data source enrichments

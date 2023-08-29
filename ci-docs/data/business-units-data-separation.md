@@ -1,7 +1,7 @@
 ---
 title: Business unit support and role-based access control (preview)
 description: Learn how business unit support and role-based access control regulate access to customer profiles, segments, and measures in Dataverse.
-ms.date: 07/13/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.topic: concept
@@ -12,9 +12,13 @@ ms.custom: bap-template
 
 # Business unit support and role-based access control (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Business unit support allows administrators to regulate access to customer profiles, segments, and measures based on business units. [Learn more about business units and role-based access control in Dataverse](/power-platform/admin/wp-security-cds).
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 
@@ -23,23 +27,21 @@ Business unit support allows administrators to regulate access to customer profi
 - Teams used in Customer Insights must have the role *Customer Insights Data Read Access* assigned. [Learn more about assigning roles in Dataverse.](/power-platform/admin/manage-teams#manage-the-security-roles-of-a-team)
 - Business unit data separation is enabled by an admin in **Settings** > **System** > **Business unit data separation**.
 - All data sources that contribute to unification must have a column that holds a value that identifies the business unit for every row of data.
-- A B-to-C (individual customers) Customer Insights environment.
 
 > [!NOTE]
 >
-> - B-to-B (business accounts) environments are not supported.
 > - Parent-child scope is currently not supported.
 > - [Modernized business units](/power-platform/admin/wp-security-cds#matrix-data-access-structure-modernized-business-units) are not supported.
 > - Field-level security is not supported.
 > - **It is not possible to disable business unit data separation on an environment after it has been enabled.**
 
-## Access controls in Customer Insights
+## Access controls in Customer Insights - Data
 
 ### Customer profiles, activities, customer measures, intelligence, enrichments
 
-Access to a customer profile in Customer Insights depends on the business unit team that owns the profile, the business unit team of the user, and the Customer Insights role of the user. The *Administrator*, *Contributor*, and *Viewer* roles have access to all profiles regardless of the owning business unit team. The *Marketing contributor* role has access only to customer profiles that belong to their business unit.
+Access to a customer profile in Customer Insights - Data depends on the business unit team that owns the profile, the business unit team of the user, and the application permissions of the user. The *Administrator*, *Contributor*, and *Viewer* roles have access to all profiles regardless of the owning business unit team. The *Marketing contributor* role has access only to customer profiles that belong to their business unit.
 
-The *Marketing contributor* role only has access to the *customers*, *tables*, *segments*, and *measures* views in the Customer Insights user interface. The Marketing contributor role has a limited set of functionality. [Learn more about user roles in Customer Insights](permissions.md).
+The *Marketing contributor* role only has access to the *customers*, *tables*, *segments*, and *measures* views in the Customer Insights - Data user interface. The Marketing contributor role has a limited set of functionality. [Learn more about user roles](permissions.md).
 
 > [!NOTE]
 >
@@ -88,7 +90,6 @@ Segments and measures belong to the business unit of the user that created them.
 
 ## Next steps
 
-- [Work with Customer Insights data in Microsoft Dataverse](customer-insights-dataverse.md)
-- [Customer Insights business unit integration with Dynamics 365 applications and Power Platform (preview)](business-unit-integration-dynamics365-power-platform.md)
+- [Business unit integration with Dynamics 365 applications and Power Platform (preview)](business-unit-integration-dynamics365-power-platform.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

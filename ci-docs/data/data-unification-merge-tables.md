@@ -1,26 +1,19 @@
 ---
 title: "Unify customer fields for data unification"
 description: "Merge tables to create unified customer profiles."
-recommendations: false
-ms.date: 01/13/2023
-
+ms.date: 09/01/2023
 ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
-searchScope: 
-  - ci-merge
-  - ci-match
-  - ci-relationships
-  - customerInsights
 ---
 
 # Unify customer fields
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-In this step of the unification process, choose and exclude attributes to merge within your unified profile table. For example, if three tables had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Customer Insights automatically combines some attributes.
+In this step of the unification process, choose and exclude attributes to merge within your unified profile table. For example, if three tables had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Dynamics 365 Customer Insights - Data automatically combines some attributes.
 
 In this step, you can create stable and unique customer IDs and for individual customers, group related profiles into a cluster.
 
@@ -46,7 +39,7 @@ In this step, you can create stable and unique customer IDs and for individual c
 
 1. Optionally, [generate the customer ID configuration](#configure-customer-id-generation).
 
-1. Optionally for B-to-C, [group profiles into households or clusters](#group-profiles-into-households-or-clusters).
+1. Optionally, [group profiles into households or clusters](#group-profiles-into-households-or-clusters).
 
 > [!div class="nextstepaction"]
 > [Next step: Review unification](data-unification-review.md)
@@ -59,7 +52,7 @@ In this step, you can create stable and unique customer IDs and for individual c
     - **Importance**: Identifies the winner value based on importance rank specified for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
 
       > [!NOTE]
-      > Customer Insights uses the first non-null value. For example, given tables A, B, and C ranked in that order, if A.Name and B.Name are null, then the value from C.Name is used.
+      > The system uses the first non-null value. For example, given tables A, B, and C ranked in that order, if A.Name and B.Name are null, then the value from C.Name is used.
 
       :::image type="content" source="media/importance-merge-option.png" alt-text="Importance option in the merge fields dialog.":::
 
@@ -127,7 +120,7 @@ Combine separated fields to create a merged attribute.
 
 ### Combine a group of fields
 
-When you combine a group of fields, Customer Insights treats the group as a single unit, and chooses the winner record based on a merge policy. When merging fields without combining them into a group, Customer Insights chooses the winner record for each field based on the table order ranking set up in the **Match conditions** step. If a field has a null value, Customer Insights continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
+When you combine a group of fields, Customer Insights - Data treats the group as a single unit, and chooses the winner record based on a merge policy. When merging fields without combining them into a group, the system chooses the winner record for each field based on the table order ranking set up in the **Match conditions** step. If a field has a null value, Customer Insights - Data continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
 
 #### Example
 Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in an incorrect mix of address fields (200 Cedar Springs Road, Suite 950, Dallas, TX 75255). To ensure data  integrity, combine the address fields into a group.

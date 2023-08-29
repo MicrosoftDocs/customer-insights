@@ -5,14 +5,8 @@ author: v-wendysmith
 ms.author: wameng
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.custom: bap-template
-searchScope: 
-  - ci-measures
-  - ci-measure-builder
-  - ci-measure-template
-  - ci-enrichment-details
-  - customerInsights
 ---
 
 # Create and manage measures
@@ -25,18 +19,10 @@ Measures help you to better understand customer behaviors and business performan
 
 Create measures to plan business activities by querying customer data and extract insights. For example, create a measure of *total spend per customer* and *total return per customer* to help identify a group of customers with high spend yet high return. Then, [create a segment](segments.md) based on these measures to drive next best actions.
 
-Choose how to create a measure based on your target audience.
-
-# [Individual consumers (B-to-C)](#tab/b2c)
+Choose how to create a measure.
 
 - From scratch with measure builder: [Build your own](measure-builder.md).
 - From commonly used measures: [Use predefined templates](measure-templates.md).
-
-# [Business accounts (B-to-B)](#tab/b2b)
-
-From scratch with measure builder: [Build your own](measure-builder.md).
-
----
 
 ## Manage existing measures
 
@@ -68,10 +54,9 @@ When you approach or exceed the number of active measures based on the [service 
 - Running or refreshing individual measures is slower
 - Refresh failures indicating out of memory
 
-The complexity of your measures can also impact performance. To help you prevent performance issues, Customer Insights provides messages or warnings when you approach, reach, or exceed the total number of active measures. These messages display on the **Measures** list page. If you encounter these messages or symptoms, see the following recommendations.
+The complexity of your measures can also impact performance. To help you prevent performance issues, you get notifications or warnings when you approach, reach, or exceed the total number of active measures. These messages display on the **Measures** list page. If you encounter these messages or symptoms, see the following recommendations.
 
 1. Delete old or no longer relevant measures even if they are static or inactive.
 1. [Schedule individual measures](measures-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

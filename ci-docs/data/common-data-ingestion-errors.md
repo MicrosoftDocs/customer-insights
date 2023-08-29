@@ -1,16 +1,12 @@
 ---
 title: "Common reasons for ingestion errors or corrupt data"
 description: "Understand some common reasons for ingestion errors or corrupt data when using Data Lake Storage or Power Query"
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
-searchScope: 
-  - ci-data-sources
-  - ci-create-data-source
-  - customerInsights
 ---
 
 # Common reasons for ingestion errors or corrupt data
@@ -37,11 +33,11 @@ If the data doesn't conform to the schema, the ingestion process completes with 
 
 - If ingestion was successful without any corrupt records, but you can't see any data, edit your model.json or manifest.json file to make sure partitions are specified. Then, [refresh the data source](data-sources-manage.md#refresh-data-sources).
 
-- If data ingestion occurs at the same time as data sources are being refreshed during an automatic schedule refresh, the partition files may be empty or not available for Customer Insights to process. To align with the upstream refresh schedule, change the [system refresh schedule](schedule-refresh.md) or the refresh schedule for the data source. Align the timing so that refreshes don't all occur at once and provides the latest data to be processed in Customer Insights.
+- If data ingestion occurs at the same time as data sources are being refreshed during an automatic schedule refresh, the partition files may be empty or not available to the system process. To align with the upstream refresh schedule, change the [system refresh schedule](schedule-refresh.md) or the refresh schedule for the data source. Align the timing so that refreshes don't all occur at once.
 
 ## Datetime fields in the wrong format
 
-The datetime fields in the table aren't in ISO 8601 or en-US formats. The default datetime format in Customer Insights is en-US format. All the datetime fields in a table should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or table level in the model or manifest.json. For example:
+The datetime fields in the table aren't in ISO 8601 or en-US formats. The default datetime format in Dynamics 365 Customer Insights - Data is en-US format. All the datetime fields in a table should be in the same format. Customer Insights supports other formats provided annotations or traits are made at the source or table level in the model or manifest.json. For example:
 
 **Model.json**
 
@@ -121,7 +117,7 @@ The datetime fields in the table aren't in ISO 8601 or en-US formats. The defaul
 
 The most common data type mismatch occurs when a date field isn't set to the correct date format.
 
-The data can be fixed at the source and re-ingested. Or fix the transformation within Customer Insights. To fix the transformation:
+The data can be fixed at the source and re-ingested. Or fix the transformation within Customer Insights - Data. To fix the transformation:
 
 1. Go to **Data** > **Data sources**.
 

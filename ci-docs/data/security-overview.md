@@ -1,7 +1,7 @@
 ---
 title: Security overview
-description: Learn about security settings in Dynamics 365 Customer Insights.
-ms.date: 03/20/2023
+description: Learn about security settings in Dynamics 365 Customer Insights - Data.
+ms.date: 09/01/2023
 ms.topic: overview
 author: AndreaAczel
 ms.author: anaczel
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Keeping your data secure is essential to your business. Dynamics 365 Customer Insights restricts access to only the users in your organization that are added by an admin. A dedicated key vault can be used to help meet your organization's compliance requirements. To review data access requests, Customer Insights uses the Power Platform Customer Lockbox capability. Use the following links to learn more about security and compliance in Customer Insights.
+Keeping your data secure is essential to your business. Dynamics 365 Customer Insights - Data restricts access to only the users in your organization that are added by an admin. A dedicated key vault can be used to help meet your organization's compliance requirements. To review data access requests, Customer Insights - Data uses the Power Platform Customer Lockbox capability. Use the following links to learn more about security and compliance in Customer Insights - Data.
 
 - [Assign user permissions](permissions.md)
 - [Bring your own Key Vault](use-azure-key-vault.md)

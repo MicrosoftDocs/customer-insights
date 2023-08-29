@@ -1,22 +1,22 @@
 ---
 title: Product recommendation prediction sample guide
 description: Use this sample guide to try out the out of box product recommendation prediction model.
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: tutorial
-author: m-hartmann
-ms.author: wameng
-searchScope: 
-  - ci-predictions
-  - ci-create-prediction
-  - customerInsights
+author: joytaylor
+ms.author: joytaylor
 ---
 
-# Product recommendation prediction sample guide
+# Product recommendation prediction (preview) sample guide
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 This guide walks you through an end-to-end example of product recommendation prediction using sample data. We recommend that you try this prediction [in a new environment](manage-environments.md).
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Scenario
 
@@ -24,7 +24,7 @@ Contoso is a company that produces high-quality coffee and coffee machines. They
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md) in Customer Insights.
+- At least [Contributor permissions](permissions.md) in Dynamics 365 Customer Insights - Data.
 
 ## Task 1 - Ingest data
 

@@ -1,25 +1,23 @@
 ---
 title: "Data enrichment (preview) overview"
 description: "Use capabilities from Microsoft and other third-party services to enrich your customer data."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 ms.collection: get-started
-searchScope: 
-  - ci-enrichments
-  - ci-enrichment-details
-  - ci-enrichment-wizard
-  - customerInsights
 ---
 
 # Data enrichment (preview) overview
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Use data from sources like Microsoft and other partners to enrich your customer data. Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections can be used by administrators and contributors to configure enrichments.  
+Use data from sources like Microsoft and other partners to enrich your customer data in Dynamics 365 Customer Insights - Data. Third-party enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections can be used by administrators and contributors to configure enrichments.  
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Multiple enrichments of the same type
 
@@ -37,8 +35,6 @@ Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrich
 
 :::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page.":::
 
-# [Individual consumers (B-to-C)](#tab/b2c)
-
 - [AbiliTec Identity](enrichment-liveramp.md) provided by LiveRamp AbiliTec
 - [Brands](enrichment-microsoft.md) provided by Microsoft
 - [Demographics](enrichment-experian.md) provided by Experian
@@ -47,19 +43,6 @@ Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrich
 - [Location data](enrichment-azure-maps.md) provided by Microsoft Azure Maps
 - [Location data](enrichment-here.md) provided by HERE Technologies
 - [SFTP custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
-
-# [Business accounts (B-to-B)](#tab/b2b)
-
-- [Account engagement data](enrichment-office.md) provided by Microsoft
-- [Company data](enrichment-dnb.md) provided by Dun & Bradstreet
-- [Company data](enrichment-leadspace.md) provided by Leadspace
-- [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
-- [Enhanced company data](enrichment-enhanced-company-data.md) provided by Microsoft
-- [Location data](enrichment-azure-maps.md) provided by Microsoft Azure Maps
-- [Location data](enrichment-here.md) provided by HERE Technologies
-- [SFTP custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
-
----
 
 ## Manage existing enrichments
 

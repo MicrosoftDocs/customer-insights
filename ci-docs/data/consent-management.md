@@ -1,7 +1,7 @@
 ---
 title: Use customer consent
 description: "Honor you customers' consent preferences in Customer Insights by importing consent data."
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: m-hartmann
@@ -24,7 +24,7 @@ If consent data is stored separately from your customer profiles, [add your cons
 
 The following information must be available in your source data to unify consent data with other customer profiles:
 
-- Alternate key to map the consent information to user profiles in Customer Insights. For example, an email address or a phone number.
+- Alternate key to map the consent information to user profiles in Customer Insights - Data. For example, an email address or a phone number.
 - Consent value to determine the status of the customer's consent.
 
 Consider adding the following *optional* information:
@@ -44,13 +44,13 @@ Example table of a simple consent database with multiple consent options:
 
 ## Import and unify consent data
 
-Import consent data the same way that you ingest other data sources to Customer Insights. For more information about supported data sources and how to import them, see [Data sources overview](data-sources.md).
+Import consent data the same way that you ingest other data sources to Customer Insights - Data. For more information about supported data sources and how to import them, see [Data sources overview](data-sources.md).
 
 For more information about unifying your data sources, see [Data unification overview](data-unification.md).
 
 ## Use consent data
 
-Once your consent data is part of your unified customer profiles, you can use it in Customer Insights. For example, create a segment with a rule to ensure you honor your customers’ privacy and data protection preferences. Rules supporting consent preferences are used to exclude users from a segment based on profile attributes. Add a rule to a segment that excludes customer profiles that didn't provide consent to contact.
+Once your consent data is part of your unified customer profiles, you can use it in Customer Insights - Data. For example, create a segment with a rule to ensure you honor your customers’ privacy and data protection preferences. Rules supporting consent preferences are used to exclude users from a segment based on profile attributes. Add a rule to a segment that excludes customer profiles that didn't provide consent to contact.
 
 Referring to the sample table above, a segment could contain this rule: `Consent option=Newsletter & Consent value=True`. This configuration results in a segment that honors contact preferences to send a newsletter.
 
@@ -60,9 +60,9 @@ Once the segment is created, you can use one of the many [export options](export
 
 ## Ensure updated consent status
 
-It's important to keep the consent status for your customers updated. The scheduled refresh in Customer Insights always imports the latest state of your data sources. This information is then processed through data unification and results in updated customer profiles. These updated profiles are then used to refresh segments to make sure you work with the most up-to-date information.
+It's important to keep the consent status for your customers updated. The scheduled refresh always imports the latest state of your data sources. This information is then processed through data unification and results in updated customer profiles. These updated profiles are then used to refresh segments to make sure you work with the most up-to-date information.
 
-In other words, make sure the source data that gets imported to Customer Insights always has the latest information.
+In other words, make sure the source data that gets imported always has the latest information.
 
 For more information, see [Refresh segments manually or schedule segments](segments-schedule.md).
 

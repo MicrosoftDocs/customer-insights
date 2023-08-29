@@ -1,19 +1,23 @@
 ---
 title: "Enrich customer profiles with data from Microsoft Office 365 (preview)"
 description: "Use proprietary data from Microsoft Office to enrich your customer profiles with engagement data."
-ms.date: 03/21/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: jodahl
 ms.author: jodahl
+ms.custom: bap-template
 ---
 
 # Enrich customer profiles with data from Microsoft Office 365 (preview)
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
+
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
 Use data from Microsoft Office 365 to enrich your customer account profiles with insights about engagements through Office 365 apps. The engagement data consists of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users are made available.
+
+[!INCLUDE [public-preview-note](../includes/public-preview-note.md)]
 
 ## Supported countries or regions
 
@@ -22,9 +26,8 @@ We currently support the following regions: UK, Europe, North America.
 ## Prerequisites
 
 - An active Office 365 cloud license. Content encrypted with [Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) isn't supported.
-- [Unified customer profiles](customer-profiles.md) based on [business accounts](work-with-business-accounts.md).
-- A [Microsoft Dataverse organization attached](create-environment.md#step-3-connect-to-microsoft-dataverse) in your Customer Insights environment.
-- [Administrator](permissions.md#admin) permissions.
+- [Unified customer profiles](../customer-profiles.md) based on business accounts.
+- [Administrator](../permissions.md#admin) permissions in Customer Insights - Data.
 - Consent from your Office 365 tenant administrator to use Office 365 data to provide **Insights for the Organization** within Dynamics 365 applications.
 
 ## Configure the enrichment
@@ -65,15 +68,15 @@ When the enrichment is started for the first time, after the Office 365 tenant a
 
 Depending on the size of your Office data, it may take several hours for an enrichment run to complete.
 
-When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to create aggregated insights, which are then added to your Customer Insights environment. No data at an individual level (for example, the body of any e-mail or calendar invite) becomes available to users of Customer Insights.
+When you run an enrichment, Microsoft will process the data within the Office 365 compliance boundary to create aggregated insights, which are then added to your environment. No data at an individual level (for example, the body of any e-mail or calendar invite) becomes available to users of Customer Insights - Data.
 
 Select **Run** to start the enrichment process.
 
-[!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
+[!INCLUDE [progress-details-pane](../includes/progress-details-pane.md)]
 
 ## View enrichment results
 
-[!INCLUDE [enrichment-results](includes/enrichment-results.md)] This is the *Office* table. The *Office_UserTable* contains the Active Directory IDs for the email addresses that were chosen during enrichment configuration.
+[!INCLUDE [enrichment-results](../includes/enrichment-results.md)] This is the *Office* table. The *Office_UserTable* contains the Microsoft Entra IDs for the email addresses that were chosen during enrichment configuration.
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Preview of results after running the enrichment process.":::
 
@@ -106,7 +109,7 @@ Account engagement can also be viewed on individual customer cards. Go to **Cust
 
 ## Next steps
 
-[!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 For example, a segment that contains all the customers that have a value over 60 for *days since last email* and *days since last meeting*. That segment contains stale accounts that you can try to reactivate.
 
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

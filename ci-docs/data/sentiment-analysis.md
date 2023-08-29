@@ -1,7 +1,7 @@
 ---
 title: Analyze sentiment for customer feedback (preview)
-description: Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights."
-ms.date: 04/11/2023
+description: Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights - Data."
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong 
@@ -10,9 +10,13 @@ ms.author: wameng
 
 # Analyze sentiment in customer feedback (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Sentiment analysis enables you to synthesize customer sentiment and identify business aspects as opportunities for improvement. This Customer Insights feature helps you understand what works well and what you need to address. It can help you drive business actions that enable experiences that result in high customer satisfaction and loyalty.
+Sentiment analysis enables you to synthesize customer sentiment and identify business aspects as opportunities for improvement. This feature helps you understand what works well and what you need to address. It can help you drive business actions that enable experiences that result in high customer satisfaction and loyalty.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Overview
 
@@ -57,7 +61,7 @@ Pre-defined business aspects for the model to associate with feedback data inclu
 - Feedback timestamp
 - Feedback text
 
-Customer Insights can process up to 10 million feedback records for a single model run. The model can analyze feedback comments up to 128 words. If a feedback comment is longer, the analysis considers only the first 128 words.
+Dynamics 365 Customer Insights - Data can process up to 10 million feedback records for a single model run. The model can analyze feedback comments up to 128 words. If a feedback comment is longer, the analysis considers only the first 128 words.
 
 > [!NOTE]
 > Only one feedback table can be configured. If there are multiple feedback tables, combine them in Power Query before data ingestion.
@@ -82,7 +86,7 @@ Customer Insights can process up to 10 million feedback records for a single mod
 
 1. Select the activities to use for this sentiment analysis, then select **Next**.
 
-1. Map the attributes in your data to the model attributes. 
+1. Map the attributes in your data to the model attributes.
 
 1. Select **Save**.
 
@@ -157,7 +161,6 @@ To create new segments of customers from the sentiment analysis results, select 
 
 As with any feature that uses predictive artificial intelligence, there could be potential bias in the data you use to predict customer sentiment. For example, if you only collect feedback digitally, you might miss feedback from customers who primarily conduct business with you in person, which affect the feature’s output.
 
-As this feature uses automated means to evaluate data and make predictions based on that data, it therefore has the capability to be used as a method of profiling, as that term is defined by privacy laws and regulations. Your use of this feature to process data may be subject to those laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including sentiment analysis, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
+As this feature uses automated means to evaluate data and make predictions based on that data, it therefore has the capability to be used as a method of profiling, as that term is defined by privacy laws and regulations. Your use of this feature to process data may be subject to those laws or regulations. You are responsible for ensuring that your use of Customer Insights - Data, including sentiment analysis, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
-

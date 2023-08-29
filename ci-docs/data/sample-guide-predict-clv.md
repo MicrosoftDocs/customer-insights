@@ -1,19 +1,18 @@
 ---
 title: Customer lifetime value (CLV) prediction sample guide
 description: Use this sample guide to try out the customer lifetime value prediction model.
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
-
 ms.topic: tutorial
-author: yashlundia
-ms.author: yalundia        
+author: joytaylor
+ms.author: joytaylor        
 ---
 
 # Customer lifetime value (CLV) prediction sample guide
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-This guide walks you through an end-to-end example of Customer lifetime value (CLV) prediction in Customer Insights using sample data. We recommend that you try this prediction [in a new environment](manage-environments.md).
+This guide walks you through an end-to-end example of Customer lifetime value (CLV) prediction in Dynamics 365 Customer Insights - Data using sample data. We recommend that you try this prediction [in a new environment](manage-environments.md).
 
 ## Scenario
 

@@ -3,9 +3,8 @@ title: "Dynamics 365 Customer Insights trial FAQ"
 description: "Solutions to common questions related to Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues."
 author: m-hartmann
 ms.author: mhart
-ms.date: 02/10/2022
+ms.date: 09/01/2023
 ms.topic: get-started
-
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 ---
@@ -24,7 +23,7 @@ This app is a cloud-based service that doesn't require special software other th
 
 You can enter a non-work email address and we will create an account and tenant for you.
 
-### Can I sign up for multiple Dynamics 365 apps such as Sales, Marketing, and Customer Service?
+### Can I sign up for multiple Dynamics 365 apps such as Sales and Customer Service?
 
 Yes, you can. To view all available trials, [visit the trial hub page](https://dynamics.microsoft.com/dynamics-365-free-trial). You can use the same email account to sign up for different trials. However, it is not possible to have multiple apps on the same trial site. Each trial will be on a different org and URL. The trial data won’t be shared across apps.
 
@@ -57,11 +56,11 @@ You can extend the trial in the app directly. You can extend your trial once.
 
 ### Can I convert the trial to a paid license?
 
-Generally, we recommend starting fresh with your own data when upgrading to the paid version of Customer Insights. 
+Generally, we recommend starting fresh with your own data when upgrading to the paid version of Customer Insights.
 
 Optionally, if you only use Customer Insights, you can copy your data from a trial environment if you purchase Customer Insights. You must be the administrator of the Customer Insights trial and the global admin of your Microsoft 365 tenant, or the Dynamics 365 administrator in your organization to migrate the settings from a trial environment to a paid environment.
 
-After signing in to your paid instance of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration](create-environment.md#copy-the-environment-configuration).
+After signing in to your paid environment of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration](manage-environments.md#copy-the-environment-configuration).
 
 ### What are the trial limits and quotas?
 
@@ -72,7 +71,7 @@ After signing in to your paid instance of Customer Insights for the first time, 
 
 ### How do I start using the trial?
 
-After you sign up for the trial, you will arrive on the app's main screen. The main screen provides links to user guides and tutorials. To learn more, visit the links in the [Additional resources](trial-signup.md#additional-resources) on the trial sign-up page.
+After you sign up for the trial, you will arrive on the app's main screen. The main screen provides links to user guides and tutorials. To learn more, visit the links in the [What to try](trial-signup.md#what-to-try) on the trial sign-up page.
 
 ### What features are available in the trial?
 

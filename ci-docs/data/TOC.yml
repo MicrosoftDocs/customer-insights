@@ -1,7 +1,7 @@
-- name: Welcome to Dynamics 365 Customer Insights
+- name: Welcome to Dynamics 365 Customer Insights - Data
   href: overview.md
     
-- name: Customer Insights documentation
+- name: Customer Insights - Data documentation
   href: index.yml
 
 - name: Get started
@@ -18,12 +18,11 @@
       href: https://home.ci.ai.dynamics.com/
     - name: Quickstart guide
       href: get-started.md
-    - name: Explore Customer Insights
+    - name: Explore Customer Insights - Data
       href: home.md
     - name: Work with tags and columns
       href: work-with-tags-columns.md
-    - name: Work with business accounts
-      href: work-with-business-accounts.md
+    - name: Integrate with Customer Insights - Journeys
     - name: Integrate with Dynamics 365 Marketing
       href: marketing-get-started.md
 
@@ -39,19 +38,19 @@
       href: data-sources.md
     - name: Add a data source
       items:
-       - name: Get started with Customer Insights using a single data source
+       - name: Get started with using a single data source
          href: data-sources-single.md
        - name: Connect to data in Azure Data Lake Storage
          href: connect-common-data-model.md
        - name: Connect to Azure Synapse Analytics
          href: connect-synapse.md
-       - name: Connect to data in a Microsoft Dataverse managed data lake
-         href: connect-dataverse-managed-lake.md
+       - name: Connect to data in Microsoft Dataverse
+         href: connect-dataverse.md
        - name: Add a data sources via Power Query connectors
          href: connect-power-query.md
     - name: Manage existing data sources
       href: data-sources-manage.md
-    - name: Connect to an Azure Data Lake Storage account by using an Azure service principal
+    - name: Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal
       href: connect-service-principal.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
@@ -86,12 +85,10 @@
           href: business-units-data-separation.md
         - name: Access business unit data in Dataverse
           href: access-business-units-dataverse.md
-        - name: Customer Insights business unit integrations
+        - name: Customer Insights - Data business unit integrations
           href: business-unit-integration-dynamics365-power-platform.md
     - name: Review data unification
       href: data-unification-review.md
-    - name: Create a unified B-to-B contact profile 
-      href: data-unification-contacts.md
     - name: Update unification settings
       href: data-unification-update.md  
  
@@ -99,20 +96,12 @@
   items:
     - name: Data enrichment overview
       href: enrichment-hub.md
-    - name: Accounts from Office 365 data
-      href: enrichment-office.md
     - name: Brands and interests
       href: enrichment-microsoft.md
-    - name: Company data from Dun & Bradstreet
-      href: enrichment-dnb.md
-    - name: Company data from Leadspace
-      href: enrichment-leadspace.md
     - name: Demographics with Experian
       href: enrichment-experian.md
     - name: Enhanced addresses
       href: enrichment-enhanced-addresses.md
-    - name: Enhanced company data
-      href: enrichment-enhanced-company-data.md
     - name: Identity with LiveRamp
       href: enrichment-liveramp.md
     - name: Location from Azure Maps
@@ -140,7 +129,11 @@
       href: manage-unknown-profiles.md
 
 - name: Copilot in Customer Insights
-  href: dialog-with-data.md
+  items:
+    - name: Dialog with data
+      href: dialog-with-data.md
+    - name: Data prep report overview
+      href: data-prep-overview.md
 
 - name: Tables
   items:
@@ -345,24 +338,22 @@
   items: 
     - name: Create a new environment
       href: create-environment.md
-    - name: Connect to Microsoft Dataverse
-      href: customer-insights-dataverse.md
     - name: Use your own Azure Data Lake Storage
       href: own-data-lake-storage.md
+    - name: Connect to a storage account using a service principal
+      href: connect-service-principal.md
     - name: Manage environment settings
       href: manage-environments.md
-    - name: Connect to a storage account using Service Principal
-      href: connect-service-principal.md
 
 - name: APIs
   items:
-    - name: Dataverse APIs for Customer Insights
+    - name: Dataverse APIs for Customer Insights - Data
       href: dv-odata.md
-    - name: Work with Customer Insights APIs
+    - name: Work with Customer Insights - Data APIs
       href: apis.md 
-    - name: Customer Insights API references
+    - name: Customer Insights - Data API references
       href: https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights
-    - name: Manage Customer Insights APIs
+    - name: Manage Customer Insights - Data APIs
       href: apis-manage.md
     - name: OData sample queries
       href: odata-examples.md
@@ -390,19 +381,19 @@
     items:
       - name: Certify as Microsoft Customer Data Platform Specialist
         href: /certifications/exams/mb-260?tab=tab-instructor-led
-      - name: Get started with Customer Insights
+      - name: Get started with Customer Insights - Data
         href: /training/modules/get-started-customer-data-platform/
       - name: Ingest data
         href: /training/modules/ingest-data-customer-insights/
       - name: Create a unified customer profile
         href: /training/modules/unified-customer-profile/
-      - name: Work with Customer Insights
+      - name: Work with Customer Insights - Data
         href: /training/modules/working-with-customer-insights/
       - name: Enrich data and make predictions
         href: /training/modules/enrich-data/
       - name: Manage external connections
         href: /training/modules/configure-third-party-connections/
-      - name: Administer Customer Insights
+      - name: Administer Customer Insights - Data
         href: /training/modules/administer-customer-data-platform/
   - name: Get support
     href: /power-platform/admin/get-help-support

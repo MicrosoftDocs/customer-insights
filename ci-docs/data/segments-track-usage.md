@@ -1,29 +1,23 @@
 ---
 title: "Track usage of a segment"
 description: "Track the usage of a segment in other apps."
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
-searchScope: 
-  - ci-customers-page
-  - ci-enrichment-details
-  - ci-segments
-  - ci-segment-details
-  - customerInsights
 ---
 
 # Track usage of a segment
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-If you use segments in apps which are based on the same Microsoft Dataverse organization that is connected with Customer Insights, you can track the usage of a segment. For [Customer Insights segments used in customer journeys of Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
+If you use segments in apps which are based on the same Microsoft Dataverse organization that is connected with Dynamics 365 Customer Insights - Data, you can track the usage of a segment. For [Customer Insights - Data segments used in customer journeys](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
 
 ## Identify the dependencies of a tracked segment
 
-1. When editing a segment that is being used within the Customer Insights environment, or in a customer journey in Marketing, a banner in the [segment builder](segment-builder.md) informs you about the dependencies.
+1. When editing a segment that is being used within the Customer Insights - Data environment, or in a customer journey in Customer Insights - Journeys, a banner in the [segment builder](segment-builder.md) informs you about the dependencies.
 
 1. Inspect the dependency details directly from the banner or select **Usage** in the segment builder.
 

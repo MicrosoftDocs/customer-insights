@@ -1,7 +1,7 @@
 ---
 title: "Manage data sources"
-description: "Learn how to manage data sources attached or imported to Customer Insights"
-ms.date: 03/20/2023
+description: "Learn how to manage data sources attached or imported to Dynamics 365 Customer Insights - Data"
+ms.date: 09/01/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -64,11 +64,11 @@ Corrupt records are shown in system-created tables.
    :::image type="content" source="media/corruption-reason.png" alt-text="Corruption reason." lightbox="media/corruption-reason.png":::
 
    > [!NOTE]
-   > **Data** > **Tables** only show a portion of the corrupt records. To view all the corrupt records, export the files to a container in the storage account using the [Customer Insights export process](export-destinations.md). If you used your own storage account, you can also look at the Customer Insights folder in your storage account.
+   > **Data** > **Tables** only show a portion of the corrupt records. To view all the corrupt records, export the files to a container in the storage account using the [export process](export-destinations.md). If you used your own storage account, you can also look at the Customer Insights folder in your storage account.
 
 1. Fix the corrupted data. For example, for Azure Data Lake data sources, [fix the data in the Data Lake Storage or update the data types in the manifest/model.json file](common-data-ingestion-errors.md#common-reasons-for-ingestion-errors-or-corrupt-data-with-azure-data-lake-storage). For Power Query data sources, fix the data in the source file and [correct the data type in the transformation step](common-data-ingestion-errors.md#common-reasons-for-ingestion-errors-or-corrupt-data-with-power-query) on the **Power Query - Edit queries** page.
 
-After the next refresh of the data source, the corrected records are ingested to Customer Insights and passed on to downstream processes.
+After the next refresh of the data source, the corrected records are ingested to Customer Insights - Data and passed on to downstream processes.
 
 For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system flags this record as corrupt. Change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record is removed from the corrupted table.
 

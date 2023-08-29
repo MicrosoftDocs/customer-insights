@@ -1,52 +1,50 @@
 ---
-title: "Export segments to Dynamics 365 Marketing (preview)"
-description: "Learn how to configure the connection and export to Dynamics 365 Marketing."
-ms.date: 03/31/2023
+title: "Export segments to Customer Insights - Journeys (preview)"
+description: "Learn how to configure the connection and export to Dynamics 365 Customer Insights - Journeys."
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
-searchScope: 
-  - ci-export
-  - customerInsights
 ---
 
-# Export segments to Dynamics 365 Marketing (preview)
+# Export segments to Customer Insights - Journeys (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Use [segments](segments.md) to generate campaigns and contact specific groups of customers with [Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).
+Use [segments](segments.md) to generate campaigns and contact specific groups of customers with [Dynamics 365 Customer Insights - Journeys](/dynamics365/marketing/customer-insights-segments).
 
-Customer Insights recommends using the capabilities of Dynamics 365 Marketing for real-time customer journey orchestration because you don't need to create exports to Dynamics 365 Marketing. Contacts and segments from Customer Insights are available directly in Dynamics 365 Marketing after connecting Marketing and Customer Insights. Before you delete existing exports, review the documentation on [how to connect Customer Insights and Dynamics 365 Marketing customer journey orchestration](/dynamics365/marketing/real-time-marketing-ci-profile). If you are using Marketing outbound, [learn more about the transition to Marketing real time](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10).
+Dynamics 365 Customer Insights - Data recommends using the capabilities of Customer Insights - Journeys for real-time customer journey orchestration because you don't need to create exports to Customer Insights - Journeys. Contacts and segments from Customer Insights - Data are available directly in Customer Insights - Journeys after connecting it with Customer Insights - Data. Before you delete existing exports, review the documentation on [how to connect Customer Insights and Customer Insights - Journeys customer journey orchestration](/dynamics365/marketing/real-time-marketing-ci-profile). If you are using Customer Insights - Journeys outbound, [learn more about the transition to real time](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10).
 
 ## Prerequisite
 
-Contact records must be present in Dynamics 365 Marketing before you can export a segment from Customer Insights to Marketing. Read more on how to ingest contacts in [Dynamics 365 Marketing using Microsoft Dataverse](connect-dataverse-managed-lake.md).
+Contact records must be present in Customer Insights - Journeys before you can export a segment from Customer Insights - Data to Customer Insights - Journeys. Read more on how to ingest contacts in [Customer Insights - Journeys using Microsoft Dataverse](connect-dataverse.md).
 
 > [!NOTE]
-> Exporting segments from Customer Insights to Marketing will not create new contact records in the Marketing instances. The contact records from Marketing must be ingested in Customer Insights and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.
+> Exporting segments from Customer Insights - Data to Customer Insights - Journeys will not create new contact records. The contact records must be ingested in Customer Insights - Data and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.
 
 ## Recommendations
-Consider the following restrictions before exporting to Dynamics 365 Marketing outbound:
-- In Dynamics 365 Marketing outbound, you can send a limited number of interactions per month and per day. Your segments for Marketing should have no more than one million members. [Check the service limits of Dynamics 365 Marketing outbound for more details](/dynamics365/marketing/fair-use-policy).
-- Exports to Dynamics 365 Marketing outbound takes longer when you update multiple segments to the same environment. For better performance and stability, set up only one export that includes all the segments you need.
+Consider the following restrictions before exporting to Customer Insights - Journeys outbound:
+- In Customer Insights - Journeys outbound, you can send a limited number of interactions per month and per day. Your segments for Customer Insights - Journeys should have no more than one million members. [Check the service limits of Customer Insights - Journeys outbound for more details](/dynamics365/marketing/fair-use-policy).
+- Exports to Customer Insights - Journeys outbound takes longer when you update multiple segments to the same environment. For better performance and stability, set up only one export that includes all the segments you need.
 
-## Set up connection to Marketing
+## Set up connection to Customer Insights - Journeys
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Go to **Settings** > **Connections**.
 
-1. Select **Add connection** and choose **Dynamics 365 Marketing**.
+1. Select **Add connection** and choose **Customer Insights - Journeys**.
 
 1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your organization's Marketing URL in the **Server address** field.
+1. Enter your organization's Customer Insights - Journeys URL in the **Server address** field.
 
-1. In the **Server admin account** section, select **Sign in** and choose a Dynamics 365 Marketing account.
+1. In the **Server admin account** section, select **Sign in** and choose a Customer Insights - Journeys account.
 
 1. Map the Contact ID field in the Customer table to the Dynamics 365 Contact ID.
 
@@ -62,7 +60,7 @@ Consider the following restrictions before exporting to Dynamics 365 Marketing o
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Dynamics 365 Marketing section. Contact an administrator if no connection is available.
+1. In the **Connection for export** field, choose a connection from the Customer Insights - Journeys section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

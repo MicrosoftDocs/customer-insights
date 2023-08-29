@@ -1,15 +1,16 @@
 ---
 title: "Export segments to SendGrid (preview)"
 description: "Learn how to configure the connection and export to SendGrid."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ---
 
 # Export segments to SendGrid (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -20,7 +21,7 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 - A [SendGrid account](https://sendgrid.com/) and corresponding administrator credentials.
 - [Existing contact lists in SendGrid](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts) and the corresponding IDs.
 - A [SendGrid API key](https://sendgrid.com/docs/ui/account-and-settings/api-keys/).
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -47,7 +48,7 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 
 1. Select **Connect** to initialize the connection.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

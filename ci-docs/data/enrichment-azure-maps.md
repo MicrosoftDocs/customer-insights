@@ -1,9 +1,8 @@
 ---
 title: "Enrich customer profiles with location data from Azure Maps (preview)"
 description: "General information about the Azure Maps first-party enrichment."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
@@ -11,9 +10,11 @@ ms.author: jodahl
 
 # Enrich customer profiles with location data from Azure Maps (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Azure Maps provide location-centric data and services to deliver experiences based on geospatial data with built-in location intelligence. Azure Maps data enrichment services improve the precision of location information about your customers. It brings capabilities like address normalization and latitude and longitude extraction to Dynamics 365 Customer Insights.
+Azure Maps provide location-centric data and services to deliver experiences based on geospatial data with built-in location intelligence. Azure Maps data enrichment services improve the precision of location information about your customers. It brings capabilities like address normalization and latitude and longitude extraction to Dynamics 365 Customer Insights - Data.
 
 ## Prerequisites
 
@@ -23,7 +24,7 @@ Azure Maps provide location-centric data and services to deliver experiences bas
 
 ## Configure the connection for Azure Maps
 
-You must be an [administrator](permissions.md#admin) in Customer Insights and have an active Azure Maps API key.
+You must be an [administrator](permissions.md#admin) in Customer Insights - Data and have an active Azure Maps API key.
 
 1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the Azure Maps tile.
 

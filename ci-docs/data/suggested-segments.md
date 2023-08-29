@@ -1,38 +1,39 @@
 ---
 title: "Suggested segments (preview)"
-description: "Let Customer Insights help you find new and interesting segments based on customer attributes."
+description: "Let Dynamics 365 Customer Insights - Data help you find new and interesting segments based on customer attributes."
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
-ms.date: 04/11/2023
+ms.date: 09/01/2023
 ms.topic: conceptual
 ms.custom: bap-template
-searchScope: 
-  - ci-segment-suggestions
-  - customerInsights
 ---
 
 # Suggested segments (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Customer Insights can suggest segments based on activity or measures.
+Dynamics 365 Customer Insights - Data can suggest segments based on activity or measures.
 
 :::image type="content" source="media/suggested-segments-tab.png" alt-text="Suggested segments tab showing segment suggestions for activity-based and attribute-based segments.":::
 
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
 ## Suggested segments based on activity (preview)
 
-Discover interesting segments of your customers based on customer activity data that is ingested to Customer Insights. Examples of activity data are transactions, support call duration, purchases, or returns. To suggest segments, activity data gets analyzed for recency, frequency, and monetary value (or duration).
+Discover interesting segments of your customers based on customer activity data that is ingested to Customer Insights - Data. Examples of activity data are transactions, support call duration, purchases, or returns. To suggest segments, activity data gets analyzed for recency, frequency, and monetary value (or duration).
 
 ### Categorize customers by activity
 
-With [activity data](activities.md) available in Customer Insights, we can generate suggestions that represent customer groups:
+With [activity data](activities.md) available in Customer Insights - Data, we can generate suggestions that represent customer groups:
 
-- most active customers 
-- customers that have made the most purchases 
-- customers that generated the most revenue 
-- customers who haven’t been active lately 
+- most active customers
+- customers that have made the most purchases
+- customers that generated the most revenue
+- customers who haven’t been active lately
 - customers who frequently interact with your business  
 
 If you have a retail business, you could find out which customers generate the most revenue and reward them with a coupon. Or you can identify occasional customers and offer them to join a rewards program so they visit your business more often.
@@ -43,7 +44,7 @@ If you provide public healthcare and your goal is to minimize the expenses for i
 Discover interesting segments of your customers with the help of an AI model. This machine learning powered feature suggests segments based on measures or customer attributes. It can help improve your Key Performance Indicators (KPIs) or better understand the influence of attributes in context of other attributes.
 
 > [!NOTE]
-> The suggested segments feature uses automated means to evaluate data and make predictions based on that data. Therefore, it has the capability to be used as a method of profiling, as that term is defined by privacy laws and regulations. Your use of this feature to process data may be subject to those laws or regulations. You are responsible for ensuring that your use of Dynamics 365 Customer Insights, including this feature, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
+> The suggested segments feature uses automated means to evaluate data and make predictions based on that data. Therefore, it has the capability to be used as a method of profiling, as that term is defined by privacy laws and regulations. Your use of this feature to process data may be subject to those laws or regulations. You are responsible for ensuring that your use of Customer Insights - Data, including this feature, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 
 :::image type="content" source="media/suggested-segments.png" alt-text="Suggested segments page that shows details of a suggestion in a side pane.":::
 
@@ -51,7 +52,7 @@ Discover interesting segments of your customers with the help of an AI model. Th
 
 If you use [measures created](measures.md) to help track your KPIs, create segments to view the influences on the KPI. You can use this information to run a highly targeted campaign.
 
-For example, you track a measure called *TotalSpendPerCustomer*. As a business, you’d like to see this number grow. Choosing a measure as primary attribute, select the attributes that you want to assess for influence. Let's say *membership tier*, *membership period*, and *occupation*. Customer Insights can then suggest a segment that tells you who are the biggest influence of that measure. For example, *Accountants* who are *Gold* members, and who have been with your business for *at least five years* are the biggest influencer of *TotalSpendPerCustomer*. You’ll get an estimated segment size for every suggestion. You can use this information to create campaigns for the targeted audiences.
+For example, you track a measure called *TotalSpendPerCustomer*. As a business, you’d like to see this number grow. Choosing a measure as primary attribute, select the attributes that you want to assess for influence. Let's say *membership tier*, *membership period*, and *occupation*. Customer Insights - Data can then suggest a segment that tells you who are the biggest influence of that measure. For example, *Accountants* who are *Gold* members, and who have been with your business for *at least five years* are the biggest influencer of *TotalSpendPerCustomer*. You’ll get an estimated segment size for every suggestion. You can use this information to create campaigns for the targeted audiences.
 
 ### Understand what influences a customer attribute
 

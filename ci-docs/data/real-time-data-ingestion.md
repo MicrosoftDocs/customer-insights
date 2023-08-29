@@ -1,7 +1,7 @@
 ---
 title: "Real-time data ingestion (preview)"
-description: "General information about real-time capabilities in Customer Insights."
-ms.date: 03/20/2023
+description: "General information about real-time capabilities in Dynamics 365 Customer Insights - Data."
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: Nils-2m
@@ -12,6 +12,8 @@ searchScope:
 ---
 
 # Real-time data ingestion (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -30,6 +32,8 @@ These values are API call parameters that you can change. They aim to ensure tha
 
  > [!TIP]
  > Any ingested or modified data using these APIs reflects directly in the corresponding Dataverse tables. This allows you to leverage the rest of the Dataverse ecosystem and functionalities to achieve end-to-end business scenarios.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Real-time update of the unified customer profile fields
 
@@ -54,17 +58,17 @@ The real-time API lets you publish a new activity from your source system (an in
 
 There are two ways to connect to the real-time API:
 
-- [Indirectly](#dynamics-365-customer-insights-connection), using the [Dynamics 365 Customer Insights connector](/connectors/customerinsights/)
+- [Indirectly](#dynamics-365-customer-insights---data-connection), using the [Dynamics 365 Customer Insights connector](/connectors/customerinsights/)
 - [Directly](#direct-connection-to-the-real-time-api), with code
 
 Both ways share the following prerequisites:
 
-- A Customer Insights environment
+- A Customer Insights - Data environment
 - Unified customer profiles
 - Activities configured and run
 - Contributor or Administrator permissions to authenticate your account
 
-## Dynamics 365 Customer Insights connection
+## Dynamics 365 Customer Insights - Data connection
 
 The real-time API can ingest data from a dedicated Power Platform connector, the [Dynamics 365 Customer Insights connector](/connectors/customerinsights/), without the need to write and deploy any code.
 The connector can do the same real-time actions as the API. You need a valid license for premium connectors. For more information, see [Power Apps and Power Automate licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq).
@@ -76,9 +80,9 @@ For details about creating flows, see the [Power Automate documentation](/power-
 
 ## Direct connection to the real-time API
 
-You can use the real-time capabilities by building your own pipeline and connecting directly to the real-time API. 
+You can use the real-time capabilities by building your own pipeline and connecting directly to the real-time API.
 You can post an activity in the format of your source system or in the UnifiedActivity format. Get the format by making an API call to /api/instances/{instanceId}/manage/tables/UnifiedActivity.
 
-Details of this API, including parameters and responses, can be found in the **TableData** section on the [Customer Insights APIs reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). For more information, see [Work with Customer Insights APIs](apis.md).
+Details of this API, including parameters and responses, can be found in the **TableData** section on the [API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). For more information, see [Work with APIs](apis.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,43 +1,44 @@
 ---
 title: "Export diagnostic logs (preview)"
 description: "Learn how to send logs to Microsoft Azure Monitor."
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: article
 author: brndkfr
 ms.author: bkief
-searchScope: 
-  - ci-system-diagnostic
-  - customerInsights
 ---
 
 # Export diagnostic logs (preview)
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Forward logs from Customer Insights using Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
+Forward logs from Dynamics 365 Customer Insights - Data using Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
 
 Customer Insights sends the following event logs:
 
 - **Audit Events**
-  - **APIEvent** - enables change tracking via the Dynamics 365 Customer Insights UI.
+  - **APIEvent** - enables change tracking via the Customer Insights - Data UI.
 - **Operational Events**
   - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-manage.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that trigger the unification process, which will pull in enrichments and export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
-  - **APIEvent** - sends all API calls of the customers instance to Dynamics 365 Customer Insights. For more information, see the [APIEvent Schema](#api-event-schema).
+  - **APIEvent** - sends all API calls of the environment. For more information, see the [APIEvent Schema](#api-event-schema).
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Set up the diagnostic settings
 
 ### Prerequisites
 
 - An active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
-- [Administrator](permissions.md#admin) permissions in Customer Insights.
+- [Administrator](permissions.md#admin) permissions in Customer Insights - Data.
 - A valid resource on Azure that follows the [destination requirements](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics.
-- [Contributor and User Access Administrator role](/azure/role-based-access-control/role-assignments-portal) on the destination resource on Azure. The resource can be an Azure Data Lake Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. This permission is necessary while configuring diagnostic settings in Customer Insights, but it can be changed after successful setup.
+- [Contributor and User Access Administrator role](/azure/role-based-access-control/role-assignments-portal) on the destination resource on Azure. The resource can be an Azure Data Lake Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. This permission is necessary while configuring diagnostic settings, but it can be changed after successful setup.
 - At least the **Reader** role on the resource group the resource belongs to.
 
 ### Set up diagnostics with Azure Monitor
 
-1. In Customer Insights, go to **Settings** > **System** and select the **Diagnostics** tab.
+1. In Customer Insights - Data, go to **Settings** > **System** and select the **Diagnostics** tab.
 
 1. Select **Add destination**.
 
@@ -100,7 +101,7 @@ The log schema follows the [Azure Monitor common schema](/azure/azure-monitor/pl
 
 ### Categories
 
-Customer Insights provides two categories:
+There are two categories:
 
 - **Audit events**: [API events](#api-event-schema) to track the configuration changes on the service. `POST|PUT|DELETE|PATCH` operations go into this category.
 - **Operational events**: [API events](#api-event-schema) or [workflow events](#workflow-event-schema) generated while using the service.  For example, `GET` requests or the execution events of a workflow.
@@ -114,7 +115,7 @@ API events and workflow events have a common structure, but with a few differenc
 | Field             | DataType  | Required/Optional | Description       | Example        |
 | ----------------- | --------- | ----------------- | --------------------- | ------------------------ |
 | `time`            | Timestamp | Required          | Timestamp of the event (UTC)       | `2020-09-08T09:48:14.8050869Z`         |
-| `resourceId`      | String    | Required          | ResourceId of the instance that emitted the event         | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX`  |
+| `resourceId`      | String    | Required          | ResourceId of the environment that emitted the event         | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX`  |
 | `operationName`   | String    | Required          | Name of the operation represented by this event.                                                                                                                | `Workflows.GetWorkFlowStatusAsync`                                                                                                                                       |
 | `category`        | String    | Required          | Log category of the event. Either `Operational` or `Audit`. All POST/PUT/PATCH/DELETE HTTP Requests are tagged with `Audit`, everything else with `Operational` | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resultType`      | String    | Required          | Status of the event. `Success`, `ClientError`, `Failure`                                                                                                        |                                                                                                                                                                          |
@@ -150,7 +151,7 @@ The `identity` JSON object has the following structure
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `Authorization.UserRole`      | Assigned role for the user or app. For more information, see [user permissions](permissions.md).                                     |
 | `Authorization.RequiredRoles` | Required roles to do the operation. `Admin` role is allowed to do all operations.                                                    |
-| `Claims`                      | Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration. |
+| `Claims`                      | Claims of the user or app JSON web token (JWT). Claim properties vary per organization. |
 
 #### API properties schema
 
@@ -166,7 +167,7 @@ The `identity` JSON object has the following structure
 | `properties.operationStatus` | `Success` for HTTP Status code < 400 <br> `ClientError` for HTTP Status code < 500 <br> `Error` for HTTP Status >= 500 |
 | `properties.tenantId`        | Organization ID                                                                                                        |
 | `properties.tenantName`      | Name of the organization.                                                                                              |
-| `properties.callerObjectId`  | Azure Active Directory ObjectId of the caller.                                                                         |
+| `properties.callerObjectId`  | Microsoft Entra ID ObjectId of the caller.                                                                         |
 | `properties.instanceId`      | Customer Insights `instanceId`                                                                                         |
 
 ### Workflow event schema
@@ -202,7 +203,7 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 | Field           | DataType  | Required/Optional | Description                                                                                                                                                   | Example                                                                                                                                                                  |
 | --------------- | --------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `time`          | Timestamp | Required          | Timestamp of the event (UTC).                                                                                                                                 | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
-| `resourceId`    | String    | Required          | ResourceId of the instance that emitted the event.                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
+| `resourceId`    | String    | Required          | ResourceId of the environment that emitted the event.                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
 | `operationName` | String    | Required          | Name of the operation represented by this event. `{OperationType}.[WorkFlow|Task][Started|Completed]`. See [Operation Types](#operation-types) for reference. | `Segmentation.WorkflowStarted`,<br> `Segmentation.TaskStarted`, <br> `Segmentation.TaskCompleted`, <br> `Segmentation.WorkflowCompleted`                                 |
 | `category`      | String    | Required          | Log category of the event. Always `Operational` for Workflow events                                                                                           | `Operational`                                                                                                                                                            |
 | `resultType`    | String    | Required          | Status of the event. `Running`, `Skipped`, `Successful`, `Failure`                                                                                            |                                                                                                                                                                          |
@@ -220,14 +221,14 @@ Workflow events have following properties.
 | `properties.workflowJobId`                   | Yes      | Yes  | Identifier of the workflow run. All workflow and task events within the workflow execution have the same `workflowJobId`.                                                                                                                                   |
 | `properties.operationType`                   | Yes      | Yes  | Identifier of the operation, see [Operation types](#operation-types).                                                                                                                                                                               |
 | `properties.tasksCount`                      | Yes      | No   | Workflow only. Number of tasks the workflow triggers.                                                                                                                                                                                                       |
-| `properties.submittedBy`                     | Yes      | No   | Optional. Workflow events only. The Azure Active Directory [objectId of the user](/azure/marketplace/find-tenant-object-id#find-user-object-id) who triggered the workflow, see also `properties.workflowSubmissionKind`.                                   |
+| `properties.submittedBy`                     | Yes      | No   | Optional. Workflow events only. Microsoft Entra ID [objectId of the user](/azure/marketplace/find-tenant-object-id#find-user-object-id) who triggered the workflow, see also `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | Yes      | No   | `full` or `incremental` refresh.                                                                                                                                                                                                                            |
 | `properties.workflowSubmissionKind`          | Yes      | No   | `OnDemand` or `Scheduled`.                                                                                                                                                                                                                                  |
 | `properties.workflowStatus`                  | Yes      | No   | `Running` or  `Successful`.                                                                                                                                                                                                                                 |
 | `properties.startTimestamp`                  | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.endTimestamp`                    | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.submittedTimestamp`              | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.instanceId`                      | Yes      | Yes  | Customer Insights `instanceId`                                                                                                                                                                                                                              |  
+| `properties.instanceId`                      | Yes      | Yes  | Environment ID                                                                                                                                                                                                                              |  
 | `properties.identifier`                      | No       | Yes  | - For OperationType = `Export`, the identifier is the guid of the export configuration. <br> - For OperationType = `Enrichment`, it's the guid of the enrichment <br> - For OperationType `Measures` and `Segmentation`, the identifier is the table name. |
 | `properties.friendlyName`                    | No       | Yes  | User-friendly name of the export or the table that is processed.                                                                                                                                                                                           |
 | `properties.error`                           | No       | Yes  | Optional. Error message with more details.                                                                                                                                                                                                                  |

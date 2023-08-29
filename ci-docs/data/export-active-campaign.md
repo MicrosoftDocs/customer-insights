@@ -1,15 +1,16 @@
 ---
 title: "Export segments to ActiveCampaign"
 description: "Learn how to configure the connection and export to ActiveCampaign."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ---
 
 # Export segments to ActiveCampaign (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -20,7 +21,7 @@ Export segments of unified customer profiles to ActiveCampaign and use them for 
 - An [ActiveCampaign account](https://www.activecampaign.com/) and corresponding administrator credentials.
 - An [ActiveCampaign List ID](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).
 - An [ActiveCampaign API Key](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key) and REST Endpoint Hostname.
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -47,7 +48,7 @@ Export segments of unified customer profiles to ActiveCampaign and use them for 
 
 1. Select **Connect** to initialize the connection.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

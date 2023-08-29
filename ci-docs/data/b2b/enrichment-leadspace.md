@@ -1,29 +1,33 @@
 ---
 title: "Enrich company profiles with Leadspace (preview)"
 description: "General information about the Leadspace third-party enrichment."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
+ms.custom: bap-template
 ---
 
 # Enrich company profiles with Leadspace (preview)
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
-Leadspace is a data science company that provides a B-to-B Customer Data Platform. It enables environments with unified customer profiles based on accounts to enrich their data. Enrich *Customer profiles* with attributes such as company size, location, or industry. Enrich *Contact profiles* with attributes such as title, persona, or email verification.
+[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
+
+Leadspace is a data science company that provides a B2B Customer Data Platform. It enables environments with unified customer profiles based on accounts to enrich their data. Enrich *Customer profiles* with attributes such as company size, location, or industry. Enrich *Contact profiles* with attributes such as title, persona, or email verification.
+
+[!INCLUDE [public-preview-note](../includes/public-preview-note.md)]
 
 ## Prerequisites
 
 - An active Leadspace license.
-- [Unified customer profiles](customer-profiles.md) based on accounts.
-- A Leadspace [connection](connections.md) is [configured](#configure-the-connection-for-leadspace) by an administrator. Contact [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) directly for details about their product.
+- [Unified customer profiles](../customer-profiles.md) based on accounts.
+- A Leadspace [connection](../connections.md) is [configured](#configure-the-connection-for-leadspace) by an administrator. Contact [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) directly for details about their product.
 
 ## Configure the connection for Leadspace
 
-You must be an [administrator](permissions.md#admin) in Customer Insights and have the “perpetual key” (referred to as **Leadspace token**).
+You must be an [administrator](../permissions.md#admin) in Customer Insights - Data and have the “perpetual key” (referred to as **Leadspace token**).
 
 1. Select **Add connection** when configuring an enrichment or go to **Settings** > **Connections** and select **Set up** on the Leadspace tile.
 
@@ -31,7 +35,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Enter a name for the connection and a valid Leadspace token.
 
-1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
+1. Review the [data privacy and compliance](../connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Verify** to validate the configuration and then select **Save**.
 
@@ -61,7 +65,7 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 1. Select **Next** to complete the field mapping.
 
-1. Select the checkbox if you have *Contact profiles* that you would like to enrich. Customer Insights will automatically map the required fields.
+1. Select the checkbox if you have *Contact profiles* that you would like to enrich. The system automatically maps the required fields.
 
    :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace contact records enrichment.":::
 
@@ -75,12 +79,12 @@ You must be an [administrator](permissions.md#admin) in Customer Insights and ha
 
 ## View enrichment results
 
-[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
+[!INCLUDE [enrichment-results](../includes/enrichment-results.md)]
 
 For more information, see [Leadspace APIs](https://support.leadspace.com/hc/en-us/sections/201997649-API).
 
 ## Next steps
 
-[!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

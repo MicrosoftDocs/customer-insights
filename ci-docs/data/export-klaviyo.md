@@ -1,7 +1,7 @@
 ---
 title: "Export segments to Klaviyo (preview)"
 description: "Learn how to configure the connection and export to Klaviyo."
-ms.date: 05/04/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: pkieffer
@@ -9,6 +9,8 @@ ms.author: philk
 ---
 
 # Export segments to Klaviyo (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -19,7 +21,7 @@ Export segments of unified customer profiles to Klaviyo and use them for marketi
 - A [Klaviyo account](https://www.klaviyo.com/) and corresponding administrator credentials.
 - A [Klaviyo API key](https://help.klaviyo.com/hc/en-us/articles/115005062267).
 - A [Klaviyo List ID](https://help.klaviyo.com/hc/en-us/articles/115005078647).
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -48,7 +50,7 @@ Export segments of unified customer profiles to Klaviyo and use them for marketi
 
 1. Select **Authenticate with Klaviyo** and provide your admin credentials for Klaviyo.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

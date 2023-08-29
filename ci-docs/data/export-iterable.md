@@ -1,15 +1,16 @@
 ---
 title: "Export segments to Iterable (preview)"
 description: "Learn how to configure the connection and export to Iterable."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ---
 
 # Export segments to Iterable (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -19,7 +20,7 @@ Export segments of unified customer profiles to Iterable and use them for market
 
 - An [Iterable account](https://iterable.com/) and corresponding administrator credentials.
 - An [Iterable API key](https://support.iterable.com/hc/en-us/articles/360043464871)
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -45,7 +46,7 @@ Export segments of unified customer profiles to Iterable and use them for market
 
 1. Select **Connect** to initialize the connection.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 
@@ -61,7 +62,7 @@ Export segments of unified customer profiles to Iterable and use them for market
 
 1. Enter a name for the export.
 
-1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. The list created in Iterable will receive the exact same name as your segment name in Dynamics 365 Customer Insights.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. The list created in Iterable will receive the exact same name as your segment name in Customer Insights - Data.
 
 1. Select the segments you want to export.
 
